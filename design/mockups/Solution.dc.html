@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Step-by-step solution with narration</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Caveat:wght@500;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1d4ed8}a:hover{color:#1e3a8a}
+@keyframes dcwrite{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes dcfade{from{opacity:0}to{opacity:1}}
+.dc-write{animation:dcwrite 1.8s steps(30,end) both}
+.dc-fade{animation:dcfade 0.5s ease 1.6s both}
+</style>
+</helmet>
+<div style="width: 390px; height: 1240px; box-sizing: border-box; background: #ffffff; font-family: Inter, system-ui, sans-serif; color: #111827; display: flex; flex-direction: column">
+
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 20px 20px 12px 20px; border-bottom: 1px solid #e5e7eb">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 12px; font-weight: 600; color: #4b5563; letter-spacing: 0.04em; text-transform: uppercase">Chemistry · Mole calculations</span>
+<span style="font-size: 15px; font-weight: 600">Question 13 of 50</span>
+</div>
+<span style="font-size: 12px; font-weight: 600; color: #374151; background: #f3f4f6; padding: 6px 10px; border-radius: 999px">6-day streak</span>
+</div>
+<div style="height: 6px; background: #f3f4f6; border-radius: 999px; overflow: hidden">
+<div style="width: 28%; height: 6px; background: #1d4ed8; border-radius: 999px"></div>
+</div>
+</div>
+
+<div style="flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 20px 20px 24px 20px">
+
+<p style="margin: 0; font-size: 16px; line-height: 1.45; font-weight: 600">What mass of iron is produced when 80 g of Fe₂O₃ is completely reduced by CO in the blast furnace? (Fe = 56, O = 16)</p>
+
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; background: #f0fdf4; border: 2px solid #15803d; border-radius: 12px">
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="flex: none; width: 26px; height: 26px; border-radius: 999px; background: #15803d; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: #ffffff">B</span>
+<span style="font-size: 15px; font-weight: 600; color: #14532d">56 g</span>
+</div>
+<span style="font-size: 13px; line-height: 1.45; padding-left: 36px; color: #166534">Your answer. Correct. Half a mole of Fe₂O₃ gives one mole of iron, which weighs 56 g.</span>
+</div>
+
+<div style="display: flex; flex-direction: column; border: 1px solid #d1d5db; border-radius: 14px; overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f9fafb; border-bottom: 1px solid #e5e7eb">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #374151">WATCH IT SOLVED</span>
+<span style="font-size: 12px; font-weight: 600; color: #4b5563">{{ stepLabel }}</span>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px; min-height: 250px; box-sizing: border-box; padding: 18px 16px 22px 16px; background: #ffffff; background-image: repeating-linear-gradient(#ffffff 0px, #ffffff 31px, #e0ecff 32px); font-family: Caveat, cursive; color: #1e293b">
+<sc-for list="{{ shown }}" as="s" hint-placeholder-count="2">
+<div style="{{ s.rowStyle }}">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+<span class="dc-write" style="{{ s.textStyle }}">{{ s.text }}</span>
+<span class="dc-fade" style="flex: none; font-family: Inter, sans-serif; font-size: 11px; font-weight: 600; color: #4b5563">{{ s.tag }}</span>
+</div>
+</div>
+</sc-for>
+<sc-if value="{{ notStarted }}" hint-placeholder-val="{{ false }}">
+<span style="font-family: Inter, sans-serif; font-size: 14px; color: #4b5563">Tap play to watch the working, one step at a time.</span>
+</sc-if>
+</div>
+
+<div style="min-height: 64px; box-sizing: border-box; padding: 12px 14px; background: #f9fafb; border-top: 1px solid #e5e7eb">
+<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #1f2937">{{ caption }}</p>
+</div>
+
+<div style="display: flex; align-items: center; gap: 8px; padding: 12px 14px; border-top: 1px solid #e5e7eb">
+<button onClick="{{ togglePlay }}" aria-label="{{ playLabel }}" style="flex: none; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #1d4ed8; border: none; border-radius: 999px; color: #ffffff; cursor: pointer">
+<sc-if value="{{ playing }}" hint-placeholder-val="{{ true }}">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+</sc-if>
+<sc-if value="{{ paused }}" hint-placeholder-val="{{ false }}">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+</sc-if>
+</button>
+<button onClick="{{ replayStep }}" aria-label="Replay this step" style="flex: none; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1px solid #d1d5db; border-radius: 10px; color: #374151; cursor: pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+</button>
+<button style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 8px 10px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; font-family: inherit; font-size: 13px; font-weight: 600; color: #1e40af; cursor: pointer">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>
+Play with voice · 180 KB
+</button>
+</div>
+<div style="display: flex; gap: 4px; padding: 0 14px 14px 14px">
+<sc-for list="{{ bars }}" as="b" hint-placeholder-count="4">
+<div style="{{ b.style }}"></div>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #eff6ff; border-radius: 12px">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #1e40af">THE WORKING</span>
+<ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.5; color: #1f2937">
+<li>Molar mass of Fe₂O₃ = 2(56) + 3(16) = 160 g/mol</li>
+<li>Moles of Fe₂O₃ = 80 ÷ 160 = 0.5 mol</li>
+<li>Fe₂O₃ + 3CO → 2Fe + 3CO₂, so 0.5 mol gives 1 mol Fe</li>
+<li>Mass of iron = 1 × 56 = 56 g</li>
+</ol>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px; background: #fff7ed; border-radius: 12px">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #9a3412">THE TRAP</span>
+<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #1f2937">28 g is the most common wrong answer. It comes from forgetting that one Fe₂O₃ gives two Fe atoms.</p>
+</div>
+</div>
+
+<div style="display: flex; gap: 8px; padding: 12px 16px 24px 16px; border-top: 1px solid #e5e7eb; background: #ffffff">
+<button style="flex: none; display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 52px; padding: 0 14px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; font-family: inherit; font-size: 15px; font-weight: 600; color: #1e40af; cursor: pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+Ask
+</button>
+<button style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; background: #ffffff; border: 1.5px solid #15803d; border-radius: 12px; font-family: inherit; font-size: 15px; font-weight: 600; color: #15803d; cursor: pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m15.4 6.5-6.8 4"/></svg>
+Share
+</button>
+<button style="flex: 1; min-height: 52px; background: #1d4ed8; border: none; border-radius: 12px; font-family: inherit; font-size: 15px; font-weight: 600; color: #ffffff; cursor: pointer">Next question</button>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"ink":{"editor":"color","default":"#1d4ed8","options":["#1d4ed8","#1e293b","#b91c1c"]},"stepSeconds":{"editor":"range","default":3,"min":2,"max":6,"step":0.5,"unit":"s"},"$preview":{"width":390,"height":1240}}'>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { step: 1, playing: true };
+}
+componentDidMount() {
+var self = this;
+var ms = (this.props.stepSeconds ?? 3) * 1000;
+this.timer = setInterval(function () {
+var s = self.state;
+if (s.playing && s.step < 4) {
+self.setState({ step: s.step + 1, playing: s.step + 1 < 4 });
+}
+}, ms);
+}
+componentWillUnmount() {
+clearInterval(this.timer);
+}
+renderVals() {
+var self = this;
+var ink = this.props.ink ?? '#1d4ed8';
+var steps = [
+{ text: 'M(Fe₂O₃) = 2(56) + 3(16) = 160', tag: 'molar mass', say: '"First find the molar mass. Two irons at 56 and three oxygens at 16 give 160."' },
+{ text: 'n = 80 ÷ 160 = 0.5 mol', tag: 'mass to moles', say: '"Divide the mass by the molar mass. 80 over 160 is half a mole."' },
+{ text: '0.5 mol Fe₂O₃ → 1 mol Fe', tag: 'ratio 1 : 2', say: '"Each Fe₂O₃ holds two iron atoms, so half a mole gives one whole mole of iron."' },
+{ text: 'mass = 1 × 56 = 56 g', tag: 'moles to mass', say: '"Multiply by 56. One mole of iron weighs 56 grams. That is answer B."' }
+];
+var step = this.state.step;
+var shown = steps.slice(0, step).map(function (s, i) {
+var current = i === step - 1;
+return {
+text: s.text,
+tag: s.tag,
+rowStyle: current ? 'padding: 4px 8px; margin: 0 -8px; background: #fef9c3; border-radius: 8px;' : 'padding: 4px 0;',
+textStyle: 'display: inline-block; font-size: 24px; font-weight: ' + (current ? '700; color: ' + ink : '500; color: #1e293b') + ';'
+};
+});
+var bars = [0, 1, 2, 3].map(function (i) {
+return { style: 'flex: 1; height: 4px; border-radius: 999px; background: ' + (i < step ? '#1d4ed8' : '#e5e7eb') + ';' };
+});
+var playing = this.state.playing;
+return {
+shown: shown,
+bars: bars,
+notStarted: step === 0,
+stepLabel: step === 0 ? '4 steps' : 'Step ' + step + ' of 4',
+caption: step === 0 ? 'The narration line for each step appears here, so it works with the sound off.' : steps[step - 1].say,
+playing: playing,
+paused: !playing,
+playLabel: playing ? 'Pause' : 'Play',
+togglePlay: function () {
+if (playing) { self.setState({ playing: false }); return; }
+if (self.state.step >= 4) {
+self.setState({ step: 0, playing: true }, function () {
+setTimeout(function () { self.setState({ step: 1 }); }, 60);
+});
+return;
+}
+self.setState({ playing: true });
+},
+replayStep: function () {
+var s = self.state.step;
+if (s === 0) return;
+self.setState({ step: s - 1, playing: false }, function () {
+setTimeout(function () { self.setState({ step: s }); }, 60);
+});
+}
+};
+}
+}
+</script>
+</body>
+</html>

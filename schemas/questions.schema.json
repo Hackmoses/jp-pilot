@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "JP questions file",
+  "type": "object",
+  "required": [
+    "version",
+    "subject",
+    "count",
+    "questions"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "subject": {
+      "const": "chemistry"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "subject",
+          "topic",
+          "type",
+          "difficulty",
+          "stem",
+          "options",
+          "answerId",
+          "removeOrder",
+          "hint",
+          "explanation",
+          "trap",
+          "mnemonic",
+          "askPresets",
+          "animationId",
+          "lockedOptions",
+          "source",
+          "reviewed"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^chem-[0-9]{3}$"
+          },
+          "subject": {
+            "const": "chemistry"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "recall",
+              "calculation"
+            ]
+          },
+          "difficulty": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "stem": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "text",
+                "why"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "enum": [
+                    "a",
+                    "b",
+                    "c",
+                    "d"
+                  ]
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "why": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "answerId": {
+            "enum": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ]
+          },
+          "removeOrder": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ]
+            },
+            "description": "Wrong options removed first, then second, by Remove a wrong option. Never the answer, never the trap option."
+          },
+          "hint": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "trap": {
+            "type": "string"
+          },
+          "mnemonic": {
+            "type": "string"
+          },
+          "askPresets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "answer"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "enum": [
+                    "simpler",
+                    "whynot",
+                    "similar"
+                  ]
+                },
+                "label": {
+                  "type": "string"
+                },
+                "optionId": {
+                  "enum": [
+                    "a",
+                    "b",
+                    "c",
+                    "d"
+                  ]
+                },
+                "answer": {
+                  "type": "string"
+                },
+                "similarAnswer": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "animationId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lockedOptions": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ]
+            },
+            "description": "Options that must not be shuffled, such as All of the above. Empty for the pilot set."
+          },
+          "source": {
+            "type": "string"
+          },
+          "reviewed": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

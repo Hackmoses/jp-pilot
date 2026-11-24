@@ -1,0 +1,229 @@
+body:has(.jp-ask-sheet[open]) {
+  overflow: hidden;
+}
+
+.jp-ask-sheet {
+  position: fixed;
+  inset: auto 0 0;
+  width: min(100%, 520px);
+  max-width: none;
+  max-height: none;
+  height: 78vh;
+  height: 78dvh;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: var(--space-5) var(--space-5) 0 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.jp-ask-sheet::backdrop {
+  background: rgb(17 24 39 / 62%);
+}
+
+.jp-ask-surface, .jp-ask-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font: 14px/1.5 var(--font-system);
+}
+
+.jp-ask-panel {
+  box-sizing: border-box;
+  height: min(660px, 85vh);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.jp-ask-sheet p, .jp-ask-panel p, .jp-ask-header h2 {
+  margin: 0;
+}
+
+.jp-ask-handle {
+  flex: none;
+  width: 40px;
+  height: 5px;
+  margin: 10px auto 0;
+  border-radius: var(--radius-pill);
+  background: var(--option-line);
+}
+
+.jp-ask-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-3) var(--space-5);
+  border-bottom: 1px solid var(--line);
+}
+
+.jp-ask-header h2 {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.jp-ask-header p, .jp-ask-reply small {
+  color: var(--ink-2);
+  font-size: 12px;
+}
+
+.jp-ask-close, .jp-ask-presets button {
+  min-width: var(--tap-min);
+  min-height: var(--tap-min);
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.jp-ask-close {
+  display: grid;
+  flex: none;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-small);
+  background: transparent;
+}
+
+.jp-ask-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-4) var(--space-5);
+}
+
+.jp-ask-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.jp-ask-body--chat {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.jp-ask-body--chat .jp-ask-presets {
+  flex: none;
+  padding: var(--space-4) var(--space-5) var(--space-3);
+}
+
+.jp-ask-presets button {
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--option-line);
+  border-radius: var(--radius-pill);
+  background: var(--bg);
+  font-size: 13px;
+}
+
+.jp-ask-sheet :focus-visible, .jp-ask-panel :focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.jp-ask-chat, .jp-ask-turn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.jp-ask-chat {
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 0 var(--space-5) var(--space-4);
+}
+
+.jp-ask-sheet .jp-ask-prompt, .jp-ask-panel .jp-ask-prompt, .jp-ask-bubble {
+  padding: 10px 14px;
+  overflow-wrap: anywhere;
+}
+
+.jp-ask-sheet .jp-ask-prompt, .jp-ask-panel .jp-ask-prompt {
+  align-self: flex-end;
+  max-width: 80%;
+  border-radius: var(--space-4) var(--space-4) var(--space-1) var(--space-4);
+  background: var(--brand);
+  color: var(--bg);
+}
+
+.jp-ask-reply {
+  align-self: flex-start;
+  max-width: 88%;
+}
+
+.jp-ask-bubble {
+  border-radius: var(--space-4) var(--space-4) var(--space-4) var(--space-1);
+  background: #f3f4f6;
+}
+
+.jp-ask-reply small {
+  display: block;
+  margin-top: var(--space-1);
+}
+
+.jp-ask-bubble summary {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap-min);
+  color: var(--brand);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.jp-ask-bubble summary::-webkit-details-marker {
+  display: none;
+}
+
+.jp-ask-hide, .jp-ask-bubble details[open] .jp-ask-show {
+  display: none;
+}
+
+.jp-ask-bubble details[open] .jp-ask-hide {
+  display: inline;
+}
+
+.jp-ask-hint {
+  padding: var(--space-3);
+  border-radius: var(--radius-card);
+  background: var(--hint-soft);
+}
+
+.jp-ask-hint p + p {
+  margin-top: var(--space-2);
+  color: var(--ink-2);
+  font-size: 13px;
+}
+
+.jp-ask-footer {
+  padding: var(--space-3) var(--space-4) max(var(--space-4), env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line);
+}
+
+.jp-ask-footer input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 48px;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--option-line);
+  border-radius: var(--radius-card);
+  background: var(--bg);
+  color: var(--ink-2);
+  font: inherit;
+  opacity: 1;
+}
+
+.jp-ask-footer input::placeholder {
+  color: var(--ink-2);
+  opacity: 1;
+}
+
+.jp-dev-ask button, .jp-dev-ask select {
+  min-height: var(--tap-min);
+  max-width: 100%;
+}

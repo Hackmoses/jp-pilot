@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "JP animations file",
+  "type": "object",
+  "required": [
+    "version",
+    "count",
+    "animations"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "count": {
+      "type": "integer"
+    },
+    "animations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "questionId",
+          "stepSeconds",
+          "steps"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "questionId": {
+            "type": "string"
+          },
+          "stepSeconds": {
+            "type": "number"
+          },
+          "steps": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": [
+                "n",
+                "display",
+                "tag",
+                "narration"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "n": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "display": {
+                  "type": "string",
+                  "description": "What is handwritten on the paper. May contain subscripts and symbols."
+                },
+                "tag": {
+                  "type": "string",
+                  "description": "Small label beside the line"
+                },
+                "narration": {
+                  "type": "string",
+                  "description": "Spoken line and caption. Written as words, never symbols, so a voice can read it."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

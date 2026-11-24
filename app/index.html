@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>JP · JAMB Chemistry Practice</title>
+    <style>
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 1rem/1.5 var(--font-system);
+      }
+
+      .placeholder {
+        max-width: 36rem;
+        margin-inline: auto;
+        padding: var(--space-6);
+      }
+
+      .placeholder p {
+        color: var(--ink-2);
+      }
+
+      .placeholder a {
+        display: inline-flex;
+        align-items: center;
+        min-height: var(--tap-min);
+        padding-inline: var(--space-4);
+        border-radius: var(--radius-small);
+        background: var(--brand);
+        color: var(--bg);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .placeholder a:focus-visible {
+        outline: 2px solid var(--brand);
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

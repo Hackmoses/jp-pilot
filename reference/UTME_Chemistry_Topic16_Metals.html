@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic 16 — Metals &amp; Their Compounds | UTME Chemistry</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#09080c;--s1:#0f0d14;--s2:#141219;--bd:#1e1b28;
+  --gold:#d4a843;--gold2:#f0c860;--silver:#9baab8;--copper:#c87941;--iron:#7a8a9a;
+  --grn:#52d68a;--red:#f05a6e;--blu:#5aa8f0;--pur:#a87ef0;--org:#f0884a;
+  --txt:#cbc8da;--muted:#524e6a;--dim:#282440;--head:#faf8ff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--txt);font-family:'Outfit',sans-serif;font-size:15px;line-height:1.8;}
+
+/* ── HEADER ── */
+header{
+  background:linear-gradient(160deg,#0d0a08 0%,#16120a 40%,#0a0c10 100%);
+  border-bottom:1px solid rgba(212,168,67,.4);
+  padding:52px 0 36px;position:relative;overflow:hidden;
+}
+header::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 600px 300px at 15% 60%,rgba(212,168,67,.08) 0%,transparent 70%),
+    radial-gradient(ellipse 400px 400px at 85% 30%,rgba(90,168,240,.05) 0%,transparent 70%);
+}
+header::after{
+  content:'Pb · Fe · Cu · Al · Na · Sn · Ca · K';
+  position:absolute;bottom:10px;right:24px;
+  font-family:'JetBrains Mono',monospace;font-size:11px;
+  color:rgba(212,168,67,.15);letter-spacing:3px;
+}
+.hi{max-width:1000px;margin:0 auto;padding:0 28px;position:relative;z-index:1;}
+.bc{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;}
+.bc span{color:var(--gold);}
+h1{font-family:'DM Serif Display',serif;font-size:clamp(30px,5.5vw,52px);color:var(--head);line-height:1.05;margin-bottom:12px;letter-spacing:-.5px;}
+h1 em{color:var(--gold);font-style:italic;}
+.sub{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);letter-spacing:1px;}
+
+/* ── TOC ── */
+.toc{max-width:1000px;margin:28px auto 0;padding:0 28px;}
+.toc-inner{background:var(--s1);border:1px solid var(--bd);border-top:3px solid var(--gold);border-radius:2px;padding:22px 26px;}
+.toc-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px;}
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;}
+.toc ol{padding-left:18px;}.toc li{margin:4px 0;}
+.toc a{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);text-decoration:none;transition:color .2s;}
+.toc a:hover{color:var(--gold);}
+
+/* ── MAIN ── */
+main{max-width:1000px;margin:0 auto;padding:0 28px 80px;}
+.sec{margin:52px 0 0;}
+.sec-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:12px;}
+.sec-tag::after{content:'';flex:1;height:1px;background:var(--bd);}
+h2{font-family:'DM Serif Display',serif;font-size:clamp(22px,3.5vw,32px);color:var(--head);margin-bottom:20px;line-height:1.15;}
+h3{font-family:'Outfit',sans-serif;font-size:16px;font-weight:700;color:var(--gold);margin:28px 0 12px;display:flex;align-items:center;gap:10px;}
+h3::before{content:'';display:block;width:4px;height:16px;background:var(--gold);border-radius:2px;flex-shrink:0;}
+h4{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--silver);margin:20px 0 8px;letter-spacing:1px;text-transform:uppercase;}
+p{margin-bottom:14px;}ul,ol{padding-left:22px;margin-bottom:14px;}li{margin:6px 0;}
+
+/* ── METAL ELEMENT CARDS ── */
+.metal-card{border-radius:4px;padding:20px 24px;margin:20px 0;position:relative;overflow:hidden;}
+.metal-card::before{content:'';position:absolute;top:0;right:0;width:80px;height:80px;opacity:.07;border-radius:0 4px 0 80px;}
+.metal-card.sodium{background:linear-gradient(135deg,#0e0e06,#131200);border:1px solid rgba(212,168,67,.3);border-left:4px solid var(--gold);}
+.metal-card.sodium::before{background:var(--gold);}
+.metal-card.calcium{background:linear-gradient(135deg,#060e10,#08141a);border:1px solid rgba(90,168,240,.25);border-left:4px solid var(--blu);}
+.metal-card.calcium::before{background:var(--blu);}
+.metal-card.aluminium{background:linear-gradient(135deg,#0a0c10,#0d1018);border:1px solid rgba(155,170,184,.2);border-left:4px solid var(--silver);}
+.metal-card.aluminium::before{background:var(--silver);}
+.metal-card.tin{background:linear-gradient(135deg,#0c0c0e,#101016);border:1px solid rgba(168,126,240,.2);border-left:4px solid var(--pur);}
+.metal-card.iron{background:linear-gradient(135deg,#080c10,#0a1014);border:1px solid rgba(122,138,154,.25);border-left:4px solid var(--iron);}
+.metal-card.copper{background:linear-gradient(135deg,#0e0a06,#14100a);border:1px solid rgba(200,121,65,.3);border-left:4px solid var(--copper);}
+.metal-card.copper::before{background:var(--copper);}
+.metal-symbol{position:absolute;top:14px;right:20px;font-family:'DM Serif Display',serif;font-size:42px;color:rgba(255,255,255,.04);line-height:1;}
+.metal-name{font-family:'DM Serif Display',serif;font-size:20px;color:var(--head);margin-bottom:4px;}
+.metal-meta{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:1px;}
+
+/* ── BLOCKS ── */
+.def{background:var(--s2);border:1px solid var(--bd);border-left:4px solid var(--gold);border-radius:2px;padding:14px 18px;margin:14px 0;font-style:italic;color:#c8c0d8;font-family:'DM Serif Display',serif;font-size:14px;}
+.def b{display:block;font-family:'JetBrains Mono',monospace;font-style:normal;font-size:10px;letter-spacing:2px;color:var(--gold);margin-bottom:5px;}
+.trap{background:#100808;border:1px solid rgba(240,90,110,.25);border-left:4px solid var(--red);border-radius:2px;padding:14px 18px;margin:12px 0;font-size:13.5px;}
+.trap-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--red);display:block;margin-bottom:4px;}
+.ex{background:#080610;border:1px solid rgba(212,168,67,.15);border-left:4px solid var(--gold);border-radius:2px;padding:16px 20px;margin:14px 0;}
+.ex-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--gold);display:block;margin-bottom:10px;}
+.step{margin:5px 0;padding-left:16px;font-size:14px;line-height:1.75;}
+.eq{background:#030408;border:1px solid rgba(90,168,240,.18);border-radius:2px;padding:10px 16px;margin:8px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:#7abfef;overflow-x:auto;}
+
+/* ── TABLE ── */
+.tw{overflow-x:auto;margin:14px 0;}
+table{width:100%;border-collapse:collapse;font-size:13.5px;}
+th{background:var(--s2);color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1px;padding:10px 14px;text-align:left;border-bottom:2px solid var(--bd);white-space:nowrap;}
+td{padding:9px 14px;border-bottom:1px solid var(--bd);vertical-align:top;}
+tr:nth-child(even) td{background:rgba(255,255,255,.015);}
+tr:hover td{background:rgba(212,168,67,.025);}
+
+/* ── HIGHLIGHTS ── */
+.hg{color:var(--gold);font-weight:600;}
+.hb{color:var(--blu);font-weight:600;}
+.hr{color:var(--red);font-weight:600;}
+.hg2{color:var(--grn);font-weight:600;}
+.hp{color:var(--pur);font-weight:600;}
+.hc{color:var(--copper);font-weight:600;}
+
+/* ── REACTIVITY SERIES ── */
+.rs-strip{background:linear-gradient(135deg,#0d0a04,#0f0d06);border:1px solid rgba(212,168,67,.25);border-radius:4px;padding:18px 22px;margin:18px 0;}
+.rs-title{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;}
+.rs-metals{display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.rs-item{font-family:'JetBrains Mono',monospace;font-size:13px;padding:5px 12px;border-radius:2px;font-weight:600;}
+.rs-item.very-high{background:rgba(240,90,110,.15);color:var(--red);border:1px solid rgba(240,90,110,.25);}
+.rs-item.high{background:rgba(240,136,74,.15);color:var(--org);border:1px solid rgba(240,136,74,.25);}
+.rs-item.mid{background:rgba(90,168,240,.12);color:var(--blu);border:1px solid rgba(90,168,240,.22);}
+.rs-item.low{background:rgba(82,214,138,.12);color:var(--grn);border:1px solid rgba(82,214,138,.22);}
+.rs-item.h{background:rgba(155,170,184,.1);color:var(--silver);border:1px solid rgba(155,170,184,.2);}
+.rs-arrow{color:var(--muted);font-size:20px;font-weight:300;}
+
+/* ── PROCESS BOX ── */
+.process{background:#030b08;border:2px solid rgba(82,214,138,.2);border-radius:4px;padding:20px 24px;margin:18px 0;}
+.process-title{font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;color:var(--grn);margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+.process-title::before{content:'🏭';}
+
+/* ── TEST BADGE ── */
+.tbadge{display:inline-block;background:rgba(240,90,110,.12);color:var(--red);font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;border:1px solid rgba(240,90,110,.25);border-radius:2px;padding:2px 7px;margin-left:8px;letter-spacing:1px;vertical-align:middle;}
+.ibadge{display:inline-block;background:rgba(82,214,138,.1);color:var(--grn);font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;border:1px solid rgba(82,214,138,.2);border-radius:2px;padding:2px 7px;margin-left:8px;letter-spacing:1px;vertical-align:middle;}
+
+/* ── ALLOY GRID ── */
+.alloy-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin:16px 0;}
+.alloy-card{background:var(--s1);border:1px solid var(--bd);border-radius:3px;padding:14px 16px;}
+.alloy-name{font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;color:var(--head);margin-bottom:4px;}
+.alloy-comp{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold);margin-bottom:6px;}
+
+/* ── TRANSITION TABLE ── */
+.trans-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin:16px 0;}
+.trans-cell{background:var(--s2);border:1px solid var(--bd);border-radius:2px;padding:8px 4px;text-align:center;}
+.trans-sym{font-family:'DM Serif Display',serif;font-size:16px;font-weight:400;color:var(--head);}
+.trans-num{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);}
+.trans-name{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--gold);}
+
+/* ── LIGHTNING ── */
+.lightning{background:#0e0c06;border:1px solid rgba(212,168,67,.25);border-radius:4px;padding:26px 30px;margin:32px 0;}
+.lt{font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;}
+.lightning ul{list-style:none;padding:0;}
+.lightning li{padding:7px 0 7px 26px;position:relative;font-size:13.5px;border-bottom:1px solid rgba(212,168,67,.07);line-height:1.65;}
+.lightning li:last-child{border-bottom:none;}
+.lightning li::before{content:'⚡';position:absolute;left:0;font-size:11px;}
+
+/* ── SELF TEST ── */
+.selftest{background:#0c0b06;border:1px solid rgba(212,168,67,.18);border-radius:4px;padding:26px 30px;margin:32px 0;}
+.stt{font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;}
+.selftest ol{padding-left:20px;}.selftest li{margin:9px 0;font-size:14px;}
+.ans{background:#040302;border:1px solid var(--bd);border-radius:2px;padding:18px 22px;margin-top:20px;}
+.ans-title{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--blu);cursor:pointer;display:flex;align-items:center;gap:8px;user-select:none;}
+.ans-title::before{content:'▶';transition:transform .2s;}
+.ans-title.open::before{transform:rotate(90deg);}
+.ans-body{display:none;margin-top:14px;}
+.ans-body.show{display:block;}
+.ans-body ol{padding-left:20px;}.ans-body li{margin:9px 0;font-size:13.5px;}
+
+/* ── DEFS ── */
+.defs{display:grid;gap:10px;margin:14px 0;}
+.dc{background:var(--s1);border:1px solid var(--bd);border-radius:2px;padding:11px 15px;display:grid;grid-template-columns:190px 1fr;gap:14px;align-items:start;font-size:13.5px;}
+.dt{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--gold);font-weight:500;line-height:1.5;}
+
+/* ── ION COLOURS ── */
+.ion-colours{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin:14px 0;}
+.ion-colour-card{border-radius:3px;padding:12px;text-align:center;}
+.ic-ion{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:600;margin-bottom:3px;}
+.ic-name{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);}
+
+hr.dv{border:none;height:1px;background:linear-gradient(to right,transparent,var(--bd),transparent);margin:44px 0;}
+footer{border-top:1px solid var(--bd);padding:22px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);letter-spacing:2px;}
+
+@media(max-width:640px){
+  .toc-grid,.ion-colours{grid-template-columns:1fr;}
+  .dc{grid-template-columns:1fr;gap:4px;}
+  .rs-metals{gap:6px;}
+  .trans-grid{grid-template-columns:repeat(5,1fr);}
+}
+@media print{body{background:white;color:black;}header{background:white;border-bottom:2px solid black;}h1,h2,h3{color:black;}.ans-body{display:block!important;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hi">
+    <div class="bc">UTME Chemistry &nbsp;/&nbsp; <span>Topic 16</span></div>
+    <h1>Metals &amp; <em>Their Compounds</em></h1>
+    <div class="sub">Na · Ca · Al · Sn · Fe · Cu · Transition Metals · Extraction · Alloys · Ion Tests</div>
+  </div>
+</header>
+
+<div class="toc">
+  <div class="toc-inner">
+    <div class="toc-label">Contents</div>
+    <div class="toc-grid">
+      <ol>
+        <li><a href="#s1">General Properties of Metals</a></li>
+        <li><a href="#s2">Reactivity Series &amp; Methods of Extraction</a></li>
+        <li><a href="#s3">Alkali Metals — Sodium (Na)</a></li>
+        <li><a href="#s4">Sodium Hydroxide (NaOH)</a></li>
+        <li><a href="#s5">Sodium Carbonate — Solvay Process</a></li>
+        <li><a href="#s6">Sodium Chloride (NaCl)</a></li>
+        <li><a href="#s7">Alkaline Earth Metals — Calcium (Ca)</a></li>
+        <li><a href="#s8">Calcium Compounds &amp; Cement</a></li>
+        <li><a href="#s9">Aluminium — Extraction &amp; Properties</a></li>
+      </ol>
+      <ol start="10">
+        <li><a href="#s10">Tin — Extraction &amp; Uses</a></li>
+        <li><a href="#s11">Transition Metals — General Properties</a></li>
+        <li><a href="#s12">Iron — Extraction &amp; Forms</a></li>
+        <li><a href="#s13">Copper — Extraction &amp; CuSO₄</a></li>
+        <li><a href="#s14">Alloys — All UTME Alloys</a></li>
+        <li><a href="#s15">Ion Tests — Complete Reference</a></li>
+        <li><a href="#s16">Lightning Round &amp; Traps</a></li>
+        <li><a href="#s17">Key Definitions &amp; Self-Test</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ══ S1 ══ -->
+<div class="sec" id="s1">
+  <div class="sec-tag">Section 1</div>
+  <h2>General Properties of Metals</h2>
+
+  <div class="tw">
+    <table>
+      <tr><th>Property</th><th>Detail</th><th>Notable Exception</th></tr>
+      <tr><td><strong>Physical state</strong></td><td>Solid at room temperature</td><td>Mercury (Hg) — liquid at room temp</td></tr>
+      <tr><td><strong>Lustre</strong></td><td>Shiny/lustrous when freshly cut</td><td>Lead dulls quickly (PbO surface)</td></tr>
+      <tr><td><strong>Malleability</strong></td><td>Can be hammered into sheets</td><td>—</td></tr>
+      <tr><td><strong>Ductility</strong></td><td>Can be drawn into wires</td><td>—</td></tr>
+      <tr><td><strong>Electrical conductivity</strong></td><td>Good conductors — free (delocalised) electrons</td><td>Graphite (non-metal) also conducts</td></tr>
+      <tr><td><strong>Thermal conductivity</strong></td><td>Good heat conductors</td><td>Bismuth is a poor thermal conductor</td></tr>
+      <tr><td><strong>High melting/boiling points</strong></td><td>Strong metallic bonding</td><td>Hg (MP −39°C), Cs (MP 28.5°C), Ga (MP 30°C)</td></tr>
+      <tr><td><strong>High density</strong></td><td>Closely packed metal atoms</td><td>Na, K, Li — float on water (less dense)</td></tr>
+      <tr><td><strong>Oxide type</strong></td><td>Form basic oxides (react with acids to give salt + water)</td><td>Al, Zn, Pb form amphoteric oxides</td></tr>
+      <tr><td><strong>Ion formation</strong></td><td>Lose electrons → cations (positive ions)</td><td>—</td></tr>
+      <tr><td><strong>Bonding</strong></td><td>Metallic bonding — lattice of cations in sea of delocalised electrons</td><td>—</td></tr>
+    </table>
+  </div>
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — AMPHOTERIC METALS</span>
+    Most metals form only <strong>basic oxides</strong>. But <strong>Al, Zn, Pb (and Sn)</strong> form <strong>amphoteric oxides</strong> — they react with BOTH acids and bases. Al₂O₃ + 3H₂SO₄ → Al₂(SO₄)₃ + 3H₂O; Al₂O₃ + 2NaOH → 2NaAlO₂ + H₂O. JAMB tests this regularly.
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S2 ══ -->
+<div class="sec" id="s2">
+  <div class="sec-tag">Section 2</div>
+  <h2>Reactivity Series &amp; Methods of Extraction</h2>
+
+  <div class="rs-strip">
+    <div class="rs-title">Reactivity Series — Most to Least Reactive</div>
+    <div class="rs-metals">
+      <span class="rs-item very-high">K</span>
+      <span class="rs-item very-high">Na</span>
+      <span class="rs-item very-high">Ca</span>
+      <span class="rs-item very-high">Mg</span>
+      <span class="rs-item high">Al</span>
+      <span class="rs-item high">Zn</span>
+      <span class="rs-item high">Fe</span>
+      <span class="rs-item mid">Ni</span>
+      <span class="rs-item mid">Sn</span>
+      <span class="rs-item mid">Pb</span>
+      <span class="rs-item h">[H]</span>
+      <span class="rs-item low">Cu</span>
+      <span class="rs-item low">Ag</span>
+      <span class="rs-item low">Au</span>
+      <span class="rs-arrow">← decreasing reactivity</span>
+    </div>
+  </div>
+
+  <h3>Extraction Method Linked to Reactivity</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Group</th><th>Metals</th><th>Extraction method</th><th>Reason</th></tr>
+      <tr>
+        <td><strong>Very reactive</strong></td>
+        <td>K, Na, Ca, Mg, Al</td>
+        <td><span class="hb">Electrolysis</span> of molten ore/salt</td>
+        <td>Too reactive to be reduced by carbon or CO; need electrical energy to reduce ions</td>
+      </tr>
+      <tr>
+        <td><strong>Moderately reactive</strong></td>
+        <td>Zn, Fe, Sn, Pb, Ni</td>
+        <td><span class="hg2">Reduction by carbon/CO</span> (smelting, blast furnace)</td>
+        <td>C or CO can reduce these oxides at high temperatures; cheaper than electrolysis</td>
+      </tr>
+      <tr>
+        <td><strong>Less reactive</strong></td>
+        <td>Cu</td>
+        <td>Reduction by C/H₂, or roasting sulphide ore, or electrolytic refining</td>
+        <td>Some Cu compounds can be reduced by heat alone; electrolysis for high purity</td>
+      </tr>
+      <tr>
+        <td><strong>Unreactive</strong></td>
+        <td>Ag, Au, Pt</td>
+        <td><span class="hg">Found free/native</span>, or by simple heating</td>
+        <td>Do not combine readily with other elements; occur as free metals in nature</td>
+      </tr>
+    </table>
+  </div>
+
+  <h3>General Reactions of Metals by Reactivity</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Metal group</th><th>With water</th><th>With dilute acid</th><th>With O₂</th></tr>
+      <tr><td><strong>K, Na, Ca</strong></td><td>Vigorous/explosive; H₂ + metal hydroxide</td><td>Very violent (dangerous)</td><td>Burns vigorously</td></tr>
+      <tr><td><strong>Mg</strong></td><td>Very slowly cold; rapidly with steam</td><td>Rapidly</td><td>Burns brilliantly (white flame)</td></tr>
+      <tr><td><strong>Al, Zn</strong></td><td>Slow/no reaction (protective oxide layer)</td><td>Steadily</td><td>Burns on heating</td></tr>
+      <tr><td><strong>Fe</strong></td><td>Reacts with steam only (hot)</td><td>Slowly</td><td>Burns in O₂; rusts in air + water</td></tr>
+      <tr><td><strong>Sn, Pb</strong></td><td>No reaction</td><td>Very slowly</td><td>Tarnishes (surface oxide only)</td></tr>
+      <tr><td><strong>Cu</strong></td><td>No reaction</td><td>No reaction (below H in series)</td><td>Forms CuO (black) on heating</td></tr>
+      <tr><td><strong>Ag, Au</strong></td><td>No reaction</td><td>No reaction</td><td>No reaction at normal T</td></tr>
+    </table>
+  </div>
+
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — ALUMINIUM AND PASSIVATION</span>
+    Aluminium is high in the reactivity series yet <strong>appears unreactive in practice</strong>. This is because Al reacts instantly with O₂ in air to form a thin, hard, impermeable layer of Al₂O₃ (aluminium oxide) that protects the surface from further attack. This is called <strong>passivation</strong>. Remove the oxide layer (with NaOH or amalgamation with mercury) and Al is extremely reactive. JAMB tests: "Why doesn't Al corrode easily despite being reactive?"
+  </div>
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — IRON RUSTING REQUIRES BOTH O₂ AND H₂O</span>
+    Iron rusting requires the simultaneous presence of both oxygen AND water. Neither alone causes rusting. Rust = hydrated iron(III) oxide: Fe₂O₃·xH₂O. This is different from iron reacting with steam (Fe + 4H₂O → Fe₃O₄ + 4H₂) which is a clean, reversible reaction.
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S3 ══ -->
+<div class="sec" id="s3">
+  <div class="sec-tag">Section 3</div>
+  <h2>Alkali Metals — Sodium (Na)</h2>
+
+  <div class="metal-card sodium">
+    <div class="metal-symbol">Na</div>
+    <div class="metal-name">Sodium</div>
+    <div class="metal-meta">Group I · Atomic no. 11 · M = 23 g/mol · Soft, silvery metal · Stored under oil</div>
+  </div>
+
+  <h3>Properties of Sodium</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Property</th><th>Observation / Equation</th></tr>
+      <tr><td>Physical</td><td>Soft (cut with knife), silvery, lustrous when freshly cut; dulls rapidly in air; stored under oil; density less than water (floats!)</td></tr>
+      <tr><td>With water</td><td>2Na + 2H₂O → 2NaOH + H₂↑ (vigorous, melts to silvery ball, skims on surface, may ignite H₂ — lilac flame)</td></tr>
+      <tr><td>With O₂ (air)</td><td>4Na + O₂ → 2Na₂O (sodium oxide); also: 2Na + O₂ → Na₂O₂ (sodium peroxide, in excess O₂)</td></tr>
+      <tr><td>With Cl₂</td><td>2Na + Cl₂ → 2NaCl</td></tr>
+      <tr><td>With H₂</td><td>2Na + H₂ → 2NaH (sodium hydride) — reactive metal hydride where H is −1</td></tr>
+      <tr><td>Flame test</td><td>Persistent <span class="hg">golden-yellow</span> flame</td></tr>
+    </table>
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S4 ══ -->
+<div class="sec" id="s4">
+  <div class="sec-tag">Section 4</div>
+  <h2>Sodium Hydroxide (NaOH)</h2>
+
+  <h3>Industrial Production — Chlor-Alkali Process <span class="ibadge">INDUSTRIAL</span></h3>
+  <div class="process">
+    <div class="process-title">Electrolysis of Brine (Concentrated NaCl solution)</div>
+    <div class="eq">At cathode: 2H₂O + 2e⁻ → H₂↑ + 2OH⁻ (H₂ gas produced)</div>
+    <div class="eq">At anode: 2Cl⁻ → Cl₂↑ + 2e⁻ (Cl₂ gas produced)</div>
+    <div class="eq">Overall: 2NaCl + 2H₂O → Cl₂ + H₂ + 2NaOH</div>
+    <p style="font-size:13.5px; margin-top:8px;">Three valuable products: <strong>Cl₂(g)</strong>, <strong>H₂(g)</strong>, and <strong>NaOH(aq)</strong>. They must be kept separate — Cl₂ + NaOH → bleach; H₂ + Cl₂ = explosive!</p>
+  </div>
+
+  <h3>Properties and Reactions of NaOH</h3>
+  <ul>
+    <li>White, waxy solid; highly soluble in water; strongly alkaline (pH ~14)</li>
+    <li>Deliquescent — absorbs moisture from air and dissolves</li>
+    <li>Reacts with acids: NaOH + HCl → NaCl + H₂O</li>
+    <li>Reacts with amphoteric metals (Al, Zn, Pb): 2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂↑ <span class="hr">(unusual — most metals don't dissolve in alkali!)</span></li>
+    <li>Precipitates metal hydroxides: NaOH + metal salt → metal hydroxide ppt + sodium salt</li>
+    <li>Reacts with CO₂: NaOH + CO₂ → Na₂CO₃ + H₂O (excess NaOH); NaOH + CO₂ → NaHCO₃ (excess CO₂)</li>
+    <li>Saponification: NaOH + fat/oil → soap (sodium salt of fatty acid) + glycerol</li>
+    <li>Reacts with aluminium ions in water: Al³⁺ + 3OH⁻ → Al(OH)₃↓; excess OH⁻: Al(OH)₃ + OH⁻ → [Al(OH)₄]⁻</li>
+  </ul>
+
+  <h3>Uses of NaOH</h3>
+  <ul>
+    <li>Manufacture of soap (saponification of fats/oils)</li>
+    <li>Paper and pulp industry (dissolves lignin)</li>
+    <li>Manufacture of rayon and artificial silk</li>
+    <li>Cleaning agent and drain unblocker (dissolves grease and aluminium)</li>
+    <li>Precipitation of metal hydroxides in qualitative analysis</li>
+    <li>Manufacture of detergents, textiles, dyes</li>
+  </ul>
+
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — NaOH DISSOLVES ALUMINIUM, ZINC, AND LEAD IONS</span>
+    NaOH precipitates most metal hydroxides. But with <strong>Al³⁺, Zn²⁺, and Pb²⁺</strong>, excess NaOH dissolves the precipitate:
+    <ul style="padding-left:16px; margin-top:6px;">
+      <li>Al(OH)₃↓ + OH⁻ → [Al(OH)₄]⁻ (aluminate — dissolves, colourless)</li>
+      <li>Zn(OH)₂↓ + 2OH⁻ → [Zn(OH)₄]²⁻ (zincate — dissolves, colourless)</li>
+      <li>Pb(OH)₂↓ + 2OH⁻ → [Pb(OH)₄]²⁻ (plumbate — dissolves)</li>
+    </ul>
+    So: NaOH(aq) + Al³⁺: white precipitate forms, then <strong>dissolves in excess</strong>. NaOH(aq) + Fe³⁺: reddish-brown precipitate forms, <strong>does NOT dissolve in excess</strong>. This is a key distinction JAMB tests.
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S5 ══ -->
+<div class="sec" id="s5">
+  <div class="sec-tag">Section 5</div>
+  <h2>Sodium Carbonate &amp; Sodium Hydrogencarbonate — Solvay Process</h2>
+
+  <h3>Solvay (Ammonia-Soda) Process <span class="ibadge">INDUSTRIAL</span></h3>
+  <div class="process">
+    <div class="process-title">Solvay Process — Making Na₂CO₃</div>
+    <p style="font-size:13.5px; margin-bottom:10px;"><strong>Raw materials:</strong> NaCl (brine), CaCO₃ (limestone), NH₃ (recycled)</p>
+    <div class="eq">Step 1: CO₂ from limestone: CaCO₃ → CaO + CO₂ [heat]</div>
+    <div class="eq">Step 2: Dissolve NH₃ in brine: NaCl(aq) + NH₃(g) → saturated ammoniated brine</div>
+    <div class="eq">Step 3: Pass CO₂ through: NH₃ + CO₂ + H₂O → NH₄HCO₃</div>
+    <div class="eq">Step 4: NaHCO₃ precipitates: NaCl + NH₄HCO₃ → NaHCO₃↓ + NH₄Cl</div>
+    <div class="eq">Step 5: Filter and heat NaHCO₃: 2NaHCO₃ → Na₂CO₃ + H₂O + CO₂ [heat]</div>
+    <div class="eq">Step 6: Recover NH₃: 2NH₄Cl + Ca(OH)₂ → CaCl₂ + 2NH₃ + 2H₂O [ammonia recycled!]</div>
+    <p style="font-size:13.5px; margin-top:8px;">The CaO from step 1 is slaked (CaO + H₂O → Ca(OH)₂) for step 6. NH₃ is recycled — so the only true raw materials consumed are NaCl and CaCO₃.</p>
+  </div>
+
+  <h3>Na₂CO₃ vs NaHCO₃ — Properties Compared</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Property</th><th>Na₂CO₃ (washing soda)</th><th>NaHCO₃ (baking soda)</th></tr>
+      <tr><td>Action of heat</td><td>Stable to heat (no decomposition)</td><td>2NaHCO₃ → Na₂CO₃ + H₂O + CO₂ (decomposes ~50°C)</td></tr>
+      <tr><td>pH in solution</td><td>~11 (strongly alkaline — CO₃²⁻ hydrolyses)</td><td>~8.3 (mildly alkaline)</td></tr>
+      <tr><td>With acid</td><td>Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑</td><td>NaHCO₃ + HCl → NaCl + H₂O + CO₂↑</td></tr>
+      <tr><td>Hydration</td><td>Na₂CO₃·10H₂O (decahydrate, washing soda) — effloresces</td><td>No hydrate at room temp</td></tr>
+      <tr><td>Common name</td><td>Washing soda / soda ash</td><td>Baking soda / bicarbonate of soda</td></tr>
+    </table>
+  </div>
+
+  <h3>Uses of Sodium Carbonate (Na₂CO₃)</h3>
+  <ul>
+    <li>Manufacture of <strong>glass</strong> (Na₂CO₃ + SiO₂ + CaCO₃ → soda-lime glass when heated)</li>
+    <li>Water softening (removes temporary and permanent hardness: Ca²⁺ + CO₃²⁻ → CaCO₃↓)</li>
+    <li>Manufacture of soap, detergents, paper</li>
+    <li>Cleaning agent — domestic soda crystals</li>
+    <li>Neutralising acid spills</li>
+  </ul>
+
+  <h3>Uses of Sodium Hydrogencarbonate (NaHCO₃)</h3>
+  <ul>
+    <li>Baking powder (releases CO₂ when heated or acidified → makes dough rise)</li>
+    <li>Antacid (neutralises excess stomach acid: NaHCO₃ + HCl → NaCl + H₂O + CO₂)</li>
+    <li>Fire extinguisher powder (CO₂ released smothers fire)</li>
+    <li>Manufacture of effervescent tablets and drinks</li>
+  </ul>
+
+  <h3>Sodium Chloride (NaCl) <span class="ibadge">OCCURRENCE</span></h3>
+  <ul>
+    <li>Occurs in sea water (~3.5% by mass); in underground rock salt deposits (halite); brine springs</li>
+    <li>Recovered by: <strong>solar evaporation</strong> (in warm countries), <strong>solution mining</strong> (pump water into deposits, pump brine out), <strong>mining</strong> (rock salt)</li>
+    <li><strong>Economic importance of seawater:</strong> NaCl, Mg (from MgCl₂), Br₂ (from bromides), KCl, CaCl₂, desalination for freshwater</li>
+  </ul>
+  <h4>Uses of Sodium Chloride</h4>
+  <ul>
+    <li>Food preservation and seasoning</li>
+    <li>Manufacture of NaOH, Cl₂, H₂ (chlor-alkali process)</li>
+    <li>Manufacture of Na₂CO₃ (Solvay process)</li>
+    <li>Gritting roads (lowers freezing point of water)</li>
+    <li>Manufacture of HCl (NaCl + H₂SO₄)</li>
+    <li>Preserving hides and fish</li>
+  </ul>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S7 — CALCIUM ══ -->
+<div class="sec" id="s7">
+  <div class="sec-tag">Section 7</div>
+  <h2>Alkaline Earth Metals — Calcium (Ca)</h2>
+
+  <div class="metal-card calcium">
+    <div class="metal-symbol">Ca</div>
+    <div class="metal-name">Calcium</div>
+    <div class="metal-meta">Group II · Atomic no. 20 · M = 40 g/mol · Silvery-white metal · Less reactive than Na</div>
+  </div>
+
+  <h3>Properties of Calcium</h3>
+  <div class="eq">Ca + 2H₂O → Ca(OH)₂ + H₂↑ (reacts with cold water — less vigorously than Na/K)</div>
+  <div class="eq">Ca + 2HCl → CaCl₂ + H₂↑ (reacts with dilute acids)</div>
+  <div class="eq">2Ca + O₂ → 2CaO (burns in oxygen — bright red/orange flame; flame test = brick red)</div>
+  <div class="eq">Ca + Cl₂ → CaCl₂</div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S8 — Ca COMPOUNDS ══ -->
+<div class="sec" id="s8">
+  <div class="sec-tag">Section 8</div>
+  <h2>Calcium Compounds, Cement &amp; Mortar</h2>
+
+  <div class="tw">
+    <table>
+      <tr><th>Compound</th><th>Common name</th><th>Formula</th><th>Preparation / Source</th><th>Key reactions / properties</th></tr>
+      <tr>
+        <td><strong>Calcium carbonate</strong></td><td>Limestone, marble, chalk</td><td>CaCO₃</td>
+        <td>Natural mineral (sea shells, coral, limestone)</td>
+        <td>Decomposes on heating: CaCO₃ → CaO + CO₂ (800°C). Reacts with acids → CO₂↑. Insoluble in water.</td>
+      </tr>
+      <tr>
+        <td><strong>Calcium oxide</strong></td><td>Quicklime</td><td>CaO</td>
+        <td>Heat CaCO₃: CaCO₃ → CaO + CO₂ [calcination]<br>From sea shells: same process</td>
+        <td>White solid; basic oxide; very exothermic with water: CaO + H₂O → Ca(OH)₂ + heat ("slaking"). Used to dry NH₃ (basic drying agent).</td>
+      </tr>
+      <tr>
+        <td><strong>Calcium hydroxide</strong></td><td>Slaked lime</td><td>Ca(OH)₂</td>
+        <td>CaO + H₂O → Ca(OH)₂ ("slaking quicklime")</td>
+        <td>Slightly soluble; solution = limewater. CO₂ test: limewater + CO₂ → CaCO₃↓ (milky). Excess CO₂: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂ (clear again).</td>
+      </tr>
+      <tr>
+        <td><strong>Calcium chloride</strong></td><td>—</td><td>CaCl₂</td>
+        <td>By-product of Solvay process</td>
+        <td>Anhydrous CaCl₂ is a drying agent (NOT for NH₃ — reacts: CaCl₂ + 8NH₃ → CaCl₂·8NH₃)</td>
+      </tr>
+      <tr>
+        <td><strong>Calcium sulphate hemihydrate</strong></td><td>Plaster of Paris</td><td>CaSO₄·½H₂O</td>
+        <td>Heat gypsum (CaSO₄·2H₂O) to ~150°C</td>
+        <td>Sets hard when water added: CaSO₄·½H₂O + 1½H₂O → CaSO₄·2H₂O (expands slightly — used in casts)</td>
+      </tr>
+      <tr>
+        <td><strong>Calcium sulphate dihydrate</strong></td><td>Gypsum</td><td>CaSO₄·2H₂O</td>
+        <td>Natural mineral</td>
+        <td>Used in cement; source of Plaster of Paris</td>
+      </tr>
+    </table>
+  </div>
+
+  <h3>Cement — Composition and Setting</h3>
+  <div class="def">
+    <b>Cement — Composition</b>
+    Cement is made by heating a mixture of <strong>limestone (CaCO₃)</strong> and <strong>clay</strong> (containing SiO₂ and Al₂O₃) in a rotary kiln at ~1450°C. The product, called <strong>clinker</strong>, is ground with a small amount of gypsum (CaSO₄·2H₂O) to make Portland cement. Main components: calcium silicates (Ca₃SiO₅, Ca₂SiO₄), calcium aluminates (Ca₃Al₂O₆).
+  </div>
+  <div class="def">
+    <b>Setting of Mortar</b>
+    Mortar = cement + sand + water. Setting (hardening) involves <strong>two stages</strong>: (1) Hydration — calcium silicates and aluminates react with water to form a rigid interlocking gel. (2) Carbonation — Ca(OH)₂ produced absorbs CO₂ from air: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O (long-term hardening). Concrete = cement + sand + gravel. Reinforced concrete = concrete + steel rods.
+  </div>
+
+  <h3>Test for Ca²⁺ <span class="tbadge">TEST</span></h3>
+  <div class="ex">
+    <span class="ex-lbl">✅ CONFIRMATORY TEST FOR Ca²⁺</span>
+    <p class="step"><strong>Flame test:</strong> Dip platinum wire in sample, hold in blue Bunsen flame.</p>
+    <p class="step">Result: <span class="hg">Brick-red/orange-red</span> flame colour indicates Ca²⁺.</p>
+    <p class="step"><strong>Precipitation test:</strong> Add Na₂SO₄(aq) or dilute H₂SO₄ to the solution.</p>
+    <p class="step">Result: <span class="hr">White precipitate</span> of CaSO₄ (slightly soluble — may be slow to form, especially in cold dilute solutions).</p>
+    <p class="step">OR add Na₂CO₃: Ca²⁺ + CO₃²⁻ → CaCO₃↓ (white ppt, soluble in dilute HCl).</p>
+  </div>
+
+  <h3>Uses of Calcium Compounds</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Compound</th><th>Uses</th></tr>
+      <tr><td>CaCO₃ (limestone)</td><td>Building material; manufacture of CaO; glass (with Na₂CO₃ + SiO₂); road-making; in blast furnace (removes impurities as slag)</td></tr>
+      <tr><td>CaO (quicklime)</td><td>Manufacture of Ca(OH)₂; blast furnace (flux); mortar; drying agent; treating acidic soils</td></tr>
+      <tr><td>Ca(OH)₂ (slaked lime)</td><td>Limewater (CO₂ test); mortar; treating acidic soil (liming); whitewash; manufacture of bleaching powder</td></tr>
+      <tr><td>CaSO₄·½H₂O (Plaster of Paris)</td><td>Plaster casts (medical); moulds; building work; sculpture</td></tr>
+    </table>
+  </div>
+
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — LIMEWATER AND EXCESS CO₂</span>
+    Limewater + CO₂ → milky (CaCO₃ precipitates). But if you <strong>keep passing CO₂</strong>: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂ (calcium hydrogencarbonate — soluble → milkiness clears). So: "milky then clears on excess CO₂" = calcium compound confirmed. This also explains temporary hardness in water (CaCO₃ dissolved by CO₂ → Ca(HCO₃)₂).
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S9 — ALUMINIUM ══ -->
+<div class="sec" id="s9">
+  <div class="sec-tag">Section 9</div>
+  <h2>Aluminium — Extraction, Properties &amp; Uses</h2>
+
+  <div class="metal-card aluminium">
+    <div class="metal-symbol">Al</div>
+    <div class="metal-name">Aluminium</div>
+    <div class="metal-meta">Group III · Atomic no. 13 · M = 27 g/mol · Light, silvery metal · Most abundant metal in Earth's crust</div>
+  </div>
+
+  <h3>Ore and Purification — Bayer Process</h3>
+  <p><strong>Ore: Bauxite</strong> (Al₂O₃·2H₂O, a hydrated aluminium oxide, also called gibbsite/diaspore) — impurities: Fe₂O₃ (red), SiO₂, TiO₂.</p>
+  <div class="process">
+    <div class="process-title">Bayer Process — Purification of Bauxite</div>
+    <div class="eq">Step 1 (Dissolve Al₂O₃): Al₂O₃ + 2NaOH → 2NaAlO₂(aq) + H₂O [bauxite dissolved in hot conc. NaOH — Al₂O₃ is amphoteric; Fe₂O₃ and SiO₂ impurities don't dissolve]</div>
+    <div class="eq">Step 2 (Filter): Fe₂O₃ (red mud) filtered off</div>
+    <div class="eq">Step 3 (Precipitate): NaAlO₂ + 2H₂O → Al(OH)₃↓ + NaOH [dilute and seed with Al(OH)₃ crystals]</div>
+    <div class="eq">Step 4 (Calcine): 2Al(OH)₃ → Al₂O₃ + 3H₂O [heat — gives pure alumina/corundum]</div>
+  </div>
+
+  <h3>Extraction — Hall-Héroult Process <span class="ibadge">INDUSTRIAL</span></h3>
+  <div class="process">
+    <div class="process-title">Hall-Héroult Process — Electrolytic Extraction of Al</div>
+    <p style="font-size:13.5px; margin-bottom:10px;"><strong>Electrolyte:</strong> Al₂O₃ dissolved in molten cryolite (Na₃AlF₆) at ~960°C. Cryolite lowers the melting point of Al₂O₃ from ~2050°C to ~960°C (economical!).</p>
+    <div class="eq">At cathode (−): Al³⁺ + 3e⁻ → Al [liquid Al sinks to bottom, tapped off]</div>
+    <div class="eq">At anode (+): 2O²⁻ → O₂ + 4e⁻ [but carbon anodes burn in O₂: C + O₂ → CO₂; anodes must be replaced regularly]</div>
+    <p style="font-size:13.5px; margin-top:8px;">The <strong>carbon anodes are consumed</strong> and must be periodically replaced. This is a significant operating cost. The steel cell is lined with graphite (cathode lining).</p>
+  </div>
+
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — WHY CRYOLITE?</span>
+    Pure Al₂O₃ melts at ~2050°C — too high to be practical for electrolysis. Cryolite (Na₃AlF₆) is used as a <strong>solvent</strong> for Al₂O₃, reducing the operating temperature to ~960°C. This saves enormous amounts of energy and makes the process economical. JAMB often asks "why is cryolite used?" Answer: to <strong>lower the melting point</strong> (not to increase purity, not as an electrode).
+  </div>
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — ANODES ARE CONSUMED IN Hall-Héroult</span>
+    In the Hall-Héroult process, the <strong>carbon (graphite) anodes are gradually consumed</strong> because the O₂ produced at the anode reacts with the hot carbon: C + O₂ → CO₂. This is why anodes must be regularly replaced. In contrast, in the electrolysis of copper, the anode is impure copper that dissolves but is "consumed" differently (it is electrochemically dissolved, not oxidised by O₂).
+  </div>
+
+  <h3>Properties of Aluminium</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Property</th><th>Detail</th></tr>
+      <tr><td>Low density</td><td>2.7 g/cm³ (about ⅓ that of steel/iron ~7.9)</td></tr>
+      <tr><td>High strength-to-weight ratio</td><td>Especially in alloys (duralumin)</td></tr>
+      <tr><td>Corrosion resistance</td><td>Oxide layer Al₂O₃ passivates surface (anodising makes this layer thicker)</td></tr>
+      <tr><td>Amphoteric</td><td>Reacts with acids: 2Al + 3H₂SO₄ → Al₂(SO₄)₃ + 3H₂↑; AND with bases: 2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂↑</td></tr>
+      <tr><td>Good electrical conductor</td><td>Used in power cables (lighter than Cu cables)</td></tr>
+      <tr><td>Thermite reaction</td><td>2Al + Fe₂O₃ → Al₂O₃ + 2Fe (highly exothermic — used for welding railway tracks)</td></tr>
+    </table>
+  </div>
+
+  <h3>Uses of Aluminium</h3>
+  <ul>
+    <li>Aircraft and aerospace (low density + high strength in alloys)</li>
+    <li>Overhead power cables (light, good conductor)</li>
+    <li>Food packaging (foil, cans)</li>
+    <li>Kitchen utensils and cookware</li>
+    <li>Building and construction (window frames, roofing)</li>
+    <li>Mirrors and reflectors (highly reflective)</li>
+    <li>Thermite welding of railway lines</li>
+    <li>Sacrificial anode for cathodic protection</li>
+  </ul>
+
+  <h3>Test for Al³⁺ <span class="tbadge">TEST</span></h3>
+  <div class="ex">
+    <span class="ex-lbl">✅ CONFIRMATORY TEST FOR Al³⁺</span>
+    <p class="step">Add <strong>NaOH(aq)</strong> to the solution.</p>
+    <p class="step">Result: <span class="hr">White gelatinous precipitate</span> of Al(OH)₃ forms initially.</p>
+    <p class="step">Key: Al(OH)₃ <span class="hg2">dissolves in excess NaOH</span> → colourless solution of [Al(OH)₄]⁻ (aluminate).</p>
+    <p class="step">This distinguishes Al³⁺ from Fe³⁺ (reddish-brown, does NOT dissolve in excess NaOH) and from Ca²⁺ (no precipitate with NaOH).</p>
+    <p class="step">Flame test: Al³⁺ gives NO characteristic flame colour (colourless/dull).</p>
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S10 — TIN ══ -->
+<div class="sec" id="s10">
+  <div class="sec-tag">Section 10</div>
+  <h2>Tin — Extraction &amp; Uses</h2>
+
+  <div class="metal-card tin">
+    <div class="metal-symbol">Sn</div>
+    <div class="metal-name">Tin</div>
+    <div class="metal-meta">Group IV · Atomic no. 50 · M = 118.7 g/mol · Silvery-white, ductile metal</div>
+  </div>
+
+  <h3>Ores of Tin</h3>
+  <ul>
+    <li><strong>Cassiterite</strong> (tinstone) — SnO₂ (tin(IV) oxide) — main ore</li>
+    <li>Also: stannite (Cu₂FeSnS₄) — less common</li>
+  </ul>
+
+  <h3>Extraction of Tin — Smelting <span class="ibadge">INDUSTRIAL</span></h3>
+  <div class="eq">Ore crushed, washed, and concentrated (gravity separation — SnO₂ is dense)</div>
+  <div class="eq">SnO₂(s) + 2C(s) → Sn(l) + 2CO(g) [reduction by carbon/coke at ~1200°C in a reverberatory furnace]</div>
+  <div class="eq">Molten tin (MP = 232°C) flows to base; impurities removed by poling (stirring with green wood)</div>
+  <p>Note: Unlike iron, tin smelting uses a reverberatory furnace (not a blast furnace) because Sn is lower-melting and the process is simpler.</p>
+
+  <h3>Properties and Uses of Tin</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Property</th><th>Detail</th></tr>
+      <tr><td>Low melting point</td><td>232°C (useful for solders)</td></tr>
+      <tr><td>Corrosion resistant</td><td>Thin SnO₂ layer — used to coat steel (tinplate)</td></tr>
+      <tr><td>Allotropes</td><td>White tin (β, stable above 13.2°C, metallic); grey tin (α, stable below 13.2°C, brittle powder — "tin pest")</td></tr>
+      <tr><td>Non-toxic</td><td>Safe for food contact</td></tr>
+      <tr><td>Amphoteric oxide</td><td>SnO and SnO₂ are amphoteric — react with both acids and bases</td></tr>
+    </table>
+  </div>
+
+  <h4>Key Uses of Tin</h4>
+  <ul>
+    <li><strong>Tinplating (tinning)</strong> — coating steel food cans (corrosion protection for food storage)</li>
+    <li><strong>Solder</strong> — Sn + Pb alloy (joins electrical connections)</li>
+    <li><strong>Bronze</strong> — Cu + Sn alloy</li>
+    <li><strong>Type metal</strong> — Sn + Pb + Sb alloy</li>
+    <li>Glass production — float glass process (molten glass floated on liquid tin)</li>
+  </ul>
+
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — TINNING vs GALVANISING: WHICH IS SAFER WHEN SCRATCHED?</span>
+    <strong>Galvanising</strong> (zinc coating on steel): Zn is <em>above</em> Fe in reactivity series → Zn is sacrificed instead of Fe (cathodic/sacrificial protection). Even when scratched, Fe is protected. <strong>Tinning</strong> (tin coating on steel): Sn is <em>below</em> Fe in reactivity series → Fe is the anode, Sn is the cathode. When scratched, Fe corrodes <em>faster</em> than uncoated iron (galvanic corrosion accelerated). For food cans this is acceptable (Sn layer intact, content is acidic/anaerobic). But tinning is less safe than galvanising when the coating is broken.
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S11 — TRANSITION METALS ══ -->
+<div class="sec" id="s11">
+  <div class="sec-tag">Section 11</div>
+  <h2>Transition Metals — Characteristic Properties</h2>
+
+  <div class="def">
+    <b>Transition metals</b>
+    Transition metals are d-block elements with incomplete d-subshells in their atoms or common ions. They occupy the middle of the periodic table (groups 3–12), Period 4 series: Sc, Ti, V, Cr, Mn, Fe, Co, Ni, Cu, Zn (though Zn is sometimes excluded).
+  </div>
+
+  <h3>(i) Electron Configuration</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Element</th><th>Symbol</th><th>Config</th><th>Notable anomaly</th></tr>
+      <tr><td>Scandium</td><td>Sc</td><td>[Ar] 3d¹ 4s²</td><td>—</td></tr>
+      <tr><td>Titanium</td><td>Ti</td><td>[Ar] 3d² 4s²</td><td>—</td></tr>
+      <tr><td>Vanadium</td><td>V</td><td>[Ar] 3d³ 4s²</td><td>—</td></tr>
+      <tr><td>Chromium</td><td>Cr</td><td>[Ar] 3d⁵ 4s¹</td><td><span class="hr">Half-filled 3d is extra stable → 4s¹ not 4s²</span></td></tr>
+      <tr><td>Manganese</td><td>Mn</td><td>[Ar] 3d⁵ 4s²</td><td>—</td></tr>
+      <tr><td>Iron</td><td>Fe</td><td>[Ar] 3d⁶ 4s²</td><td>—</td></tr>
+      <tr><td>Cobalt</td><td>Co</td><td>[Ar] 3d⁷ 4s²</td><td>—</td></tr>
+      <tr><td>Nickel</td><td>Ni</td><td>[Ar] 3d⁸ 4s²</td><td>—</td></tr>
+      <tr><td>Copper</td><td>Cu</td><td>[Ar] 3d¹⁰ 4s¹</td><td><span class="hr">Fully filled 3d is extra stable → 4s¹ not 4s²</span></td></tr>
+      <tr><td>Zinc</td><td>Zn</td><td>[Ar] 3d¹⁰ 4s²</td><td>Full 3d — not always classed as transition</td></tr>
+    </table>
+  </div>
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — 4s FILLS BEFORE 3d, BUT 4s IS LOST FIRST</span>
+    Order of filling: 1s, 2s, 2p, 3s, 3p, <strong>4s, 3d</strong>. So 4s is filled before 3d. BUT when transition metals form ions, they lose <strong>4s electrons first</strong>: Fe → Fe²⁺ loses both 4s electrons. Fe²⁺ = [Ar]3d⁶ (not [Ar]3d⁴4s²). Fe³⁺ = [Ar]3d⁵. This is the most common electron configuration trap in JAMB.
+  </div>
+
+  <h3>(ii) Variable Oxidation States</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Element</th><th>Common oxidation states</th><th>Key compounds</th></tr>
+      <tr><td>Cr</td><td>+2, +3, <strong>+6</strong></td><td>Cr²⁺ (blue), Cr³⁺ (green), Cr₂O₇²⁻ / CrO₄²⁻ (orange/yellow, +6)</td></tr>
+      <tr><td>Mn</td><td>+2, +3, +4, +6, <strong>+7</strong></td><td>Mn²⁺ (pale pink), MnO₂ (+4), MnO₄²⁻ (+6), MnO₄⁻ (purple, +7)</td></tr>
+      <tr><td>Fe</td><td><strong>+2</strong>, <strong>+3</strong></td><td>Fe²⁺ (pale green), Fe³⁺ (yellow-brown)</td></tr>
+      <tr><td>Co</td><td>+2, +3</td><td>Co²⁺ (pink), Co³⁺ (complexes)</td></tr>
+      <tr><td>Ni</td><td>+2</td><td>Ni²⁺ (green)</td></tr>
+      <tr><td>Cu</td><td>+1, <strong>+2</strong></td><td>Cu⁺ (colourless in solution), Cu²⁺ (blue)</td></tr>
+      <tr><td>V</td><td>+2, +3, +4, <strong>+5</strong></td><td>V₂O₅ (+5, yellow/orange) used in Contact process as catalyst</td></tr>
+    </table>
+  </div>
+
+  <h3>(iii) Complex Ion Formation</h3>
+  <p>Transition metal ions have empty d-orbitals and can accept electron pairs from <strong>ligands</strong> (Lewis bases) to form <strong>complex ions</strong>:</p>
+  <div class="tw">
+    <table>
+      <tr><th>Complex ion</th><th>Name</th><th>Colour</th><th>Notes</th></tr>
+      <tr><td>[Cu(NH₃)₄]²⁺</td><td>Tetraamminecopper(II)</td><td>Deep blue</td><td>Forms when excess NH₃ added to Cu²⁺ solution</td></tr>
+      <tr><td>[Fe(CN)₆]³⁻</td><td>Hexacyanoferrate(III)</td><td>Yellow</td><td>Used in Prussian blue reaction to test for Fe²⁺</td></tr>
+      <tr><td>[Fe(CN)₆]⁴⁻</td><td>Hexacyanoferrate(II)</td><td>Pale yellow</td><td>Used to test for Fe³⁺ (Turnbull's blue)</td></tr>
+      <tr><td>[Ag(NH₃)₂]⁺</td><td>Diamminesilver(I)</td><td>Colourless</td><td>Tollens' reagent; dissolves AgCl</td></tr>
+      <tr><td>[Fe(H₂O)₆]²⁺</td><td>Hexaaquairon(II)</td><td>Pale green</td><td>Fe²⁺ in water</td></tr>
+      <tr><td>[Fe(H₂O)₆]³⁺</td><td>Hexaaquairon(III)</td><td>Pale violet/yellow</td><td>Fe³⁺ in water (acidic solution)</td></tr>
+    </table>
+  </div>
+
+  <h3>(iv) Formation of Coloured Ions</h3>
+  <div class="ion-colours">
+    <div class="ion-colour-card" style="background:rgba(90,168,240,.12);border:1px solid rgba(90,168,240,.25);">
+      <div class="ic-ion" style="color:#5aa8f0;">Cu²⁺</div>
+      <div class="ic-name">Blue</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(122,138,154,.12);border:1px solid rgba(122,138,154,.25);">
+      <div class="ic-ion" style="color:#9baab8;">Fe²⁺</div>
+      <div class="ic-name">Pale green</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(200,121,65,.15);border:1px solid rgba(200,121,65,.3);">
+      <div class="ic-ion" style="color:#c87941;">Fe³⁺</div>
+      <div class="ic-name">Yellow-brown</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(168,126,240,.12);border:1px solid rgba(168,126,240,.25);">
+      <div class="ic-ion" style="color:#a87ef0;">MnO₄⁻</div>
+      <div class="ic-name">Purple</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(240,136,74,.12);border:1px solid rgba(240,136,74,.25);">
+      <div class="ic-ion" style="color:#f0884a;">Cr₂O₇²⁻</div>
+      <div class="ic-name">Orange</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(212,168,67,.12);border:1px solid rgba(212,168,67,.25);">
+      <div class="ic-ion" style="color:#d4a843;">CrO₄²⁻</div>
+      <div class="ic-name">Yellow</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(82,214,138,.1);border:1px solid rgba(82,214,138,.2);">
+      <div class="ic-ion" style="color:#52d68a;">Ni²⁺</div>
+      <div class="ic-name">Green</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(240,90,110,.1);border:1px solid rgba(240,90,110,.2);">
+      <div class="ic-ion" style="color:#f05a6e;">Co²⁺</div>
+      <div class="ic-name">Pink (hydrated)</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(90,168,240,.08);border:1px solid rgba(90,168,240,.15);">
+      <div class="ic-ion" style="color:#3b8fd4;">[Cu(NH₃)₄]²⁺</div>
+      <div class="ic-name">Deep blue</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(155,170,184,.08);border:1px solid rgba(155,170,184,.15);">
+      <div class="ic-ion" style="color:#9baab8;">Zn²⁺</div>
+      <div class="ic-name">Colourless</div>
+    </div>
+  </div>
+  <p style="font-size:13px; color:var(--muted); margin-top:4px;">Coloured ions result from d-d electron transitions when visible light is absorbed. Ions with empty or full d-orbitals (e.g. Zn²⁺ with 3d¹⁰, Sc³⁺ with 3d⁰) are colourless.</p>
+
+  <h3>(v) Catalytic Activity</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Reaction</th><th>Catalyst used</th></tr>
+      <tr><td>Haber process (N₂ + 3H₂ → 2NH₃)</td><td>Fe (iron)</td></tr>
+      <tr><td>Contact process (2SO₂ + O₂ → 2SO₃)</td><td>V₂O₅ (vanadium(V) oxide)</td></tr>
+      <tr><td>Ostwald process (4NH₃ + 5O₂ → 4NO + 6H₂O)</td><td>Pt/Rh gauze (platinum/rhodium)</td></tr>
+      <tr><td>Catalytic converters (CO + NO → CO₂ + N₂)</td><td>Pt, Pd, Rh</td></tr>
+      <tr><td>Hydrogenation of alkenes (alkene + H₂ → alkane)</td><td>Ni (nickel)</td></tr>
+      <tr><td>Decomposition of H₂O₂ → H₂O + O₂</td><td>MnO₂ (manganese dioxide)</td></tr>
+    </table>
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S12 — IRON ══ -->
+<div class="sec" id="s12">
+  <div class="sec-tag">Section 12</div>
+  <h2>Iron — Extraction, Forms &amp; Uses</h2>
+
+  <div class="metal-card iron">
+    <div class="metal-symbol">Fe</div>
+    <div class="metal-name">Iron</div>
+    <div class="metal-meta">Group 8 (VIII B) · Atomic no. 26 · M = 56 g/mol · Most widely used metal · Config [Ar]3d⁶4s²</div>
+  </div>
+
+  <h3>Ores of Iron</h3>
+  <ul>
+    <li><strong>Haematite</strong> — Fe₂O₃ (main ore; rich, ~70% Fe)</li>
+    <li><strong>Magnetite</strong> — Fe₃O₄ (magnetic iron ore)</li>
+    <li><strong>Limonite</strong> — Fe₂O₃·3H₂O (hydrated iron(III) oxide)</li>
+    <li><strong>Iron pyrite (fool's gold)</strong> — FeS₂ (sulphide ore; must be roasted to oxide first)</li>
+    <li><strong>Siderite</strong> — FeCO₃ (iron carbonate)</li>
+  </ul>
+
+  <h3>Extraction — Blast Furnace <span class="ibadge">INDUSTRIAL</span></h3>
+  <div class="process">
+    <div class="process-title">Blast Furnace — Iron Extraction</div>
+    <p style="font-size:13.5px; margin-bottom:10px;"><strong>Charge:</strong> Iron ore (haematite Fe₂O₃) + coke (C) + limestone (CaCO₃). Hot air blast from bottom.</p>
+    <div class="eq">Zone 1 (bottom, ~1900°C): C + O₂ → CO₂ [coke burns in hot air blast]</div>
+    <div class="eq">Zone 2 (just above): CO₂ + C → 2CO [CO₂ reduced to CO — this is the main reducing agent!]</div>
+    <div class="eq">Zone 3 (middle): Fe₂O₃ + 3CO → 2Fe + 3CO₂ [iron ore reduced by CO]</div>
+    <div class="eq">Also: Fe₃O₄ + 4CO → 3Fe + 4CO₂; FeO + CO → Fe + CO₂</div>
+    <div class="eq">Zone 4 (limestone decomposes): CaCO₃ → CaO + CO₂ [at ~800°C]</div>
+    <div class="eq">Zone 5 (slag formation): CaO + SiO₂ → CaSiO₃ [calcium silicate — molten slag floats on iron]</div>
+    <p style="font-size:13.5px; margin-top:10px;"><strong>Products:</strong> Molten iron (pig iron) tapped from the bottom; molten slag (CaSiO₃) tapped separately (used in road-making, cement); exhaust gas (mostly CO, CO₂, N₂) used as fuel to pre-heat the air blast.</p>
+  </div>
+
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — CO IS THE MAIN REDUCING AGENT IN BLAST FURNACE, NOT C</span>
+    Although coke (C) is added to the blast furnace, the actual reducing agent that reduces the iron ore is <strong>CO</strong> (carbon monoxide), not C directly. C → CO₂ → CO → reduces Fe₂O₃ → CO₂. Carbon directly reduces iron only at very high temperatures near the base. The key equation to remember: Fe₂O₃ + 3CO → 2Fe + 3CO₂.
+  </div>
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — ROLE OF LIMESTONE IN BLAST FURNACE</span>
+    Limestone (CaCO₃) is added as a <strong>flux</strong>. Its role is to remove silica (SiO₂) impurities from the ore as slag: CaCO₃ → CaO + CO₂; CaO + SiO₂ → CaSiO₃ (slag). Without limestone, silica impurities would clog the furnace. Slag is also used as a by-product (road-making, cement).
+  </div>
+
+  <h3>Forms of Iron — Cast Iron, Wrought Iron, Steel</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Form</th><th>% Carbon</th><th>Properties</th><th>Uses</th></tr>
+      <tr>
+        <td><strong>Pig iron (cast iron)</strong></td>
+        <td>~4% C (also S, P, Mn, Si impurities)</td>
+        <td>Hard but brittle; poor tensile strength; cannot be welded; rusts quickly</td>
+        <td>Engine blocks, manhole covers, pipes, cooking pots, ornamental work</td>
+      </tr>
+      <tr>
+        <td><strong>Wrought iron (malleable iron)</strong></td>
+        <td>&lt;0.1% C (nearly pure Fe)</td>
+        <td>Soft, malleable, ductile; tough; can be welded; not hardened by heat treatment</td>
+        <td>Decorative ironwork, chains, hooks, horse-shoes; historical uses</td>
+      </tr>
+      <tr>
+        <td><strong>Steel (mild/carbon steel)</strong></td>
+        <td>0.1–1.5% C</td>
+        <td>Strong, malleable, can be hardened; better tensile strength than cast iron; can be welded</td>
+        <td>Structural steel (buildings, bridges, ships), car bodies, tools, railway tracks</td>
+      </tr>
+      <tr>
+        <td><strong>Stainless steel</strong></td>
+        <td>~0.1% C + 11–18% Cr + ~8% Ni</td>
+        <td>Corrosion resistant; hard; attractive appearance; no rusting</td>
+        <td>Cutlery, surgical instruments, kitchen sinks, food processing equipment</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — ADVANTAGES OF STEEL OVER CAST IRON</span>
+    Steel vs cast iron: Steel is <strong>stronger in tension</strong>, <strong>less brittle</strong>, <strong>can be welded</strong>, <strong>harder</strong>, and <strong>more versatile</strong> than cast iron. Cast iron is harder than mild steel but shatters under impact (brittle). The key advantage of steel is its combination of strength and malleability due to the controlled carbon content (0.1–1.5%).
+  </div>
+
+  <h3>Test for Fe²⁺ and Fe³⁺ <span class="tbadge">TEST</span></h3>
+  <div class="ex">
+    <span class="ex-lbl">✅ CONFIRMATORY TESTS FOR IRON IONS</span>
+    <p class="step"><strong>Fe²⁺ (iron(II)):</strong></p>
+    <p class="step">• Add NaOH(aq) → <span class="hg2">green gelatinous precipitate</span> of Fe(OH)₂ (turns brown/rust on standing in air)</p>
+    <p class="step">• Add potassium hexacyanoferrate(III) solution, K₃[Fe(CN)₆] → <span class="hb">dark blue (Turnbull's blue)</span></p>
+    <p class="step">• Add acidified KMnO₄ → purple decolourises (Fe²⁺ is a reducing agent)</p>
+    <p class="step"><strong>Fe³⁺ (iron(III)):</strong></p>
+    <p class="step">• Add NaOH(aq) → <span class="hc">reddish-brown/rust precipitate</span> of Fe(OH)₃ (does NOT dissolve in excess NaOH)</p>
+    <p class="step">• Add KSCN (potassium thiocyanate) → <span class="hr">blood-red colouration</span> of [Fe(SCN)]²⁺</p>
+    <p class="step">• Add potassium hexacyanoferrate(II) solution, K₄[Fe(CN)₆] → <span class="hb">dark blue (Prussian blue)</span></p>
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S13 — COPPER ══ -->
+<div class="sec" id="s13">
+  <div class="sec-tag">Section 13</div>
+  <h2>Copper — Extraction &amp; Copper(II) Sulphate</h2>
+
+  <div class="metal-card copper">
+    <div class="metal-symbol">Cu</div>
+    <div class="metal-name">Copper</div>
+    <div class="metal-meta">Group 11 · Atomic no. 29 · M = 63.5 g/mol · Reddish-brown metal · Config [Ar]3d¹⁰4s¹</div>
+  </div>
+
+  <h3>Ores of Copper</h3>
+  <ul>
+    <li><strong>Sulphide ores (primary):</strong> Chalcopyrite (CuFeS₂), chalcocite (Cu₂S), covellite (CuS) — most common</li>
+    <li><strong>Oxide ores (secondary):</strong> Malachite (Cu₂(OH)₂CO₃), cuprite (Cu₂O), azurite (Cu₃(CO₃)₂(OH)₂)</li>
+    <li>Also found as native/free copper metal in some deposits</li>
+  </ul>
+
+  <h3>Extraction from Sulphide Ore <span class="ibadge">INDUSTRIAL</span></h3>
+  <div class="process">
+    <div class="process-title">Pyrometallurgy — Extraction of Cu from CuFeS₂</div>
+    <div class="eq">Step 1 (Roasting): 4CuFeS₂ + 13O₂ → 4CuO + 4FeO + 8SO₂ [partial roast at ~500°C]</div>
+    <div class="eq">Step 2 (Smelting): CuO + C → Cu + CO₂; FeO + SiO₂ → FeSiO₃ (slag removed)</div>
+    <div class="eq">OR: 2CuFeS₂ + 5O₂ → 2Cu + 2FeO + 4SO₂ [direct smelting — "blister copper", ~99% pure]</div>
+    <div class="eq">Step 3 (Electrolytic refining): Impure Cu as ANODE; pure Cu cathode; CuSO₄/H₂SO₄ electrolyte</div>
+    <div class="eq">Anode: Cu → Cu²⁺ + 2e⁻ [Cu dissolves]; Cathode: Cu²⁺ + 2e⁻ → Cu [pure Cu deposited]</div>
+    <p style="font-size:13.5px; margin-top:8px;">Noble metal impurities (Ag, Au, Pt) don't dissolve — collect as <strong>anode sludge/mud</strong> (valuable by-product). Less noble metals (Fe, Zn, Ni) dissolve but stay in solution as ions (won't deposit at cathode if voltage is controlled).</p>
+  </div>
+
+  <h3>Extraction from Oxide Ore</h3>
+  <div class="eq">CuO is easily reduced by carbon or H₂: CuO + C → Cu + CO; CuO + H₂ → Cu + H₂O</div>
+  <div class="eq">Malachite dissolved in H₂SO₄: Cu₂(OH)₂CO₃ + 2H₂SO₄ → 2CuSO₄ + 3H₂O + CO₂ → then electrolytic refining</div>
+
+  <h3>Properties of Copper</h3>
+  <ul>
+    <li>Reddish-brown, lustrous; second best electrical conductor after silver</li>
+    <li>Below H in reactivity — does NOT react with dilute H₂SO₄ or dilute HCl</li>
+    <li>Reacts with oxidising acids: Cu + 4HNO₃(conc.) → Cu(NO₃)₂ + 2NO₂ + 2H₂O</li>
+    <li>Reacts with hot conc. H₂SO₄: Cu + 2H₂SO₄(conc., hot) → CuSO₄ + SO₂ + 2H₂O</li>
+    <li>Turns black with O₂: 2Cu + O₂ → 2CuO (black)</li>
+    <li>Forms green patina (verdigris) with CO₂ + moisture: basic copper carbonate Cu₂(OH)₂CO₃</li>
+  </ul>
+
+  <h3>Preparation and Properties of CuSO₄ (Copper(II) Sulphate)</h3>
+  <div class="tw">
+    <table>
+      <tr><th>Method of preparation</th><th>Equation</th></tr>
+      <tr><td>Cu + hot conc. H₂SO₄</td><td>Cu + 2H₂SO₄(conc., hot) → CuSO₄ + SO₂ + 2H₂O</td></tr>
+      <tr><td>CuO + dilute H₂SO₄</td><td>CuO + H₂SO₄ → CuSO₄ + H₂O (preferred — no toxic gas)</td></tr>
+      <tr><td>Cu(OH)₂ + dilute H₂SO₄</td><td>Cu(OH)₂ + H₂SO₄ → CuSO₄ + 2H₂O</td></tr>
+      <tr><td>Cu₂(OH)₂CO₃ + H₂SO₄</td><td>Cu₂(OH)₂CO₃ + 2H₂SO₄ → 2CuSO₄ + 3H₂O + CO₂</td></tr>
+    </table>
+  </div>
+  <p><strong>CuSO₄·5H₂O</strong> (blue vitriol) — blue crystals. Anhydrous CuSO₄ = white powder (test for water: white → blue). Used in Bordeaux mixture (fungicide), electroplating, electrolytic refining of copper, as a catalyst, in fireworks (green/blue colour).</p>
+
+  <h3>Uses of Copper</h3>
+  <ul>
+    <li>Electrical wiring and cables (best conductor after Ag — cheaper)</li>
+    <li>Plumbing pipes and water fittings</li>
+    <li>Coinage (Cu alloys)</li>
+    <li>Alloys: brass (Cu + Zn), bronze (Cu + Sn), cupronickel (Cu + Ni, coins)</li>
+    <li>Heat exchangers and radiators</li>
+    <li>CuSO₄ as fungicide (Bordeaux mixture)</li>
+  </ul>
+
+  <h3>Test for Cu²⁺ <span class="tbadge">TEST</span></h3>
+  <div class="ex">
+    <span class="ex-lbl">✅ CONFIRMATORY TESTS FOR Cu²⁺</span>
+    <p class="step">• Add NaOH(aq) → <span class="hb">pale blue gelatinous precipitate</span> of Cu(OH)₂ (does NOT dissolve in excess NaOH)</p>
+    <p class="step">• Add excess NH₃(aq) → pale blue ppt dissolves → <span class="hb">deep blue solution</span> of [Cu(NH₃)₄]²⁺ (tetraamminecopper(II) complex)</p>
+    <p class="step">• Flame test: Cu gives <span class="hg2">green/blue-green</span> flame</p>
+    <p class="step">• Blue colour of solution, or blue CuSO₄·5H₂O crystals are characteristic</p>
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S14 — ALLOYS ══ -->
+<div class="sec" id="s14">
+  <div class="sec-tag">Section 14</div>
+  <h2>Alloys — Constituents &amp; Uses</h2>
+
+  <div class="def">
+    <b>Alloy</b>
+    An <strong>alloy</strong> is a mixture of a metal with one or more other elements (usually metals or carbon), made to improve properties such as hardness, strength, corrosion resistance, or appearance. Alloys are not compounds — they have no fixed composition and are mixed in the molten state.
+  </div>
+
+  <div class="alloy-grid">
+    <div class="alloy-card">
+      <div class="alloy-name">Steel (carbon steel)</div>
+      <div class="alloy-comp">Fe + 0.1–1.5% C</div>
+      <p style="font-size:13px;">Stronger and harder than pure iron. Used in construction, car bodies, tools, machinery, bridges.</p>
+    </div>
+    <div class="alloy-card">
+      <div class="alloy-name">Stainless Steel</div>
+      <div class="alloy-comp">Fe + ~11–18% Cr + ~8% Ni + trace C</div>
+      <p style="font-size:13px;">Corrosion resistant (Cr₂O₃ layer). Cutlery, surgical instruments, kitchen equipment.</p>
+    </div>
+    <div class="alloy-card">
+      <div class="alloy-name">Brass</div>
+      <div class="alloy-comp">Cu + 20–45% Zn</div>
+      <p style="font-size:13px;">Attractive gold colour; harder than Cu; more corrosion resistant than Zn. Musical instruments, coins, taps, screws, door fittings.</p>
+    </div>
+    <div class="alloy-card">
+      <div class="alloy-name">Bronze</div>
+      <div class="alloy-comp">Cu + 10–20% Sn (sometimes + small % Al or P)</div>
+      <p style="font-size:13px;">Harder than brass; corrosion resistant; good for casting. Statues, bells, medals, bearings, springs, coins.</p>
+    </div>
+    <div class="alloy-card">
+      <div class="alloy-name">Duralumin</div>
+      <div class="alloy-comp">Al + 4% Cu + small amounts Mg and Mn</div>
+      <p style="font-size:13px;">Light but strong — combines low density of Al with extra strength. Aircraft frames, bicycles, lightweight machinery.</p>
+    </div>
+    <div class="alloy-card">
+      <div class="alloy-name">Soft Solder</div>
+      <div class="alloy-comp">Sn + Pb (typically 60% Sn, 40% Pb; or 50:50)</div>
+      <p style="font-size:13px;">Low melting point (180–230°C). Joining electrical components; plumbing. Lead-free solders now preferred (Sn + Cu/Ag).</p>
+    </div>
+    <div class="alloy-card">
+      <div class="alloy-name">Type Metal</div>
+      <div class="alloy-comp">Pb + Sn + Sb (antimony)</div>
+      <p style="font-size:13px;">Expands slightly on solidifying → crisp print impression. Historically used for printing type in letterpress printing.</p>
+    </div>
+    <div class="alloy-card">
+      <div class="alloy-name">Permalloy</div>
+      <div class="alloy-comp">Fe + ~78–80% Ni</div>
+      <p style="font-size:13px;">Highly magnetic (high magnetic permeability). Magnetic shielding, transformer cores, telephone cables.</p>
+    </div>
+    <div class="alloy-card">
+      <div class="alloy-name">Alnico</div>
+      <div class="alloy-comp">Fe + Al + Ni + Co (+ traces Cu, Ti)</div>
+      <p style="font-size:13px;">Permanent magnet alloy. Loudspeakers, microphones, sensors, electric motors, guitar pickups.</p>
+    </div>
+  </div>
+
+  <h3>Why Are Alloys Better Than Pure Metals?</h3>
+  <ul>
+    <li><strong>Harder</strong> — foreign atoms disrupt the regular lattice, preventing layers from sliding (no easy dislocation movement)</li>
+    <li><strong>Stronger</strong> — improved tensile strength</li>
+    <li><strong>More corrosion resistant</strong> — e.g. Cr in stainless steel forms protective Cr₂O₃</li>
+    <li><strong>Better appearance</strong> — e.g. brass is gold-coloured</li>
+    <li><strong>Controlled melting point</strong> — e.g. solder has low MP for ease of use</li>
+    <li><strong>Magnetic properties</strong> — e.g. alnico, permalloy</li>
+  </ul>
+
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — ALLOY COMPOSITION MEMORY AID</span>
+    <ul style="padding-left:16px; margin-top:6px;">
+      <li><strong>Brass</strong> = <strong>B</strong>rass → <strong>C</strong>u + <strong>Z</strong>n ("Cu-Zn brass")</li>
+      <li><strong>Bronze</strong> = Cu + Sn ("Bronze Age = copper + tin")</li>
+      <li><strong>Duralumin</strong> = Al + Cu (aircraft — dura = durable, Al = light)</li>
+      <li><strong>Solder</strong> = Sn + Pb (low melting — tin + lead)</li>
+      <li><strong>Stainless steel</strong> = Fe + Cr + Ni (stain-LESS = corrosion resistant due to Cr)</li>
+      <li><strong>Alnico</strong> = Al + Ni + Co (spelled in the name: Al-Ni-Co)</li>
+      <li><strong>Type metal</strong> = Pb + Sn + Sb (type = printing type)</li>
+      <li><strong>Permalloy</strong> = Fe + Ni (PERMAnent magnet + alloy)</li>
+    </ul>
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S15 — ION TESTS ══ -->
+<div class="sec" id="s15">
+  <div class="sec-tag">Section 15</div>
+  <h2>Ion Tests — Complete Metal Ion Reference</h2>
+
+  <div class="tw">
+    <table>
+      <tr><th>Ion</th><th>Test reagent</th><th>Observation (positive)</th><th>Extra confirmation</th></tr>
+      <tr><td><strong>Na⁺</strong></td><td>Flame test</td><td><span class="hg">Persistent golden-yellow flame</span></td><td>—</td></tr>
+      <tr><td><strong>K⁺</strong></td><td>Flame test</td><td><span class="hp">Lilac / violet flame</span> (seen through blue glass — masks yellow of Na)</td><td>—</td></tr>
+      <tr><td><strong>Ca²⁺</strong></td><td>Flame test + Na₂SO₄ or Na₂CO₃</td><td><span class="hc">Brick-red/orange flame</span>; white ppt with SO₄²⁻ or CO₃²⁻</td><td>CaSO₄ ppt insoluble in HCl</td></tr>
+      <tr><td><strong>Ba²⁺</strong></td><td>Flame test + H₂SO₄/Na₂SO₄</td><td><span class="hg2">Apple-green flame</span>; white ppt BaSO₄ insoluble in HCl</td><td>BaSO₄ ppt — key test for Ba²⁺ AND for SO₄²⁻</td></tr>
+      <tr><td><strong>Al³⁺</strong></td><td>NaOH(aq)</td><td>White ppt Al(OH)₃ → <span class="hg2">dissolves in excess NaOH</span></td><td>No flame colour; ppt soluble in dilute acid too (amphoteric)</td></tr>
+      <tr><td><strong>Fe²⁺</strong></td><td>NaOH(aq) or K₃[Fe(CN)₆]</td><td><span class="hg2">Green ppt</span> Fe(OH)₂ (→ brown on standing); dark blue with K₃[Fe(CN)₆]</td><td>Acidified KMnO₄ decolourised</td></tr>
+      <tr><td><strong>Fe³⁺</strong></td><td>NaOH(aq) or KSCN</td><td><span class="hc">Reddish-brown ppt</span> Fe(OH)₃ (insoluble in excess NaOH); blood-red with KSCN</td><td>Dark blue with K₄[Fe(CN)₆] (Prussian blue)</td></tr>
+      <tr><td><strong>Cu²⁺</strong></td><td>NaOH(aq) or excess NH₃(aq)</td><td><span class="hb">Pale blue ppt</span> Cu(OH)₂; deep blue complex with excess NH₃</td><td>Green/blue flame; blue colour of solution</td></tr>
+      <tr><td><strong>Zn²⁺</strong></td><td>NaOH(aq)</td><td>White ppt Zn(OH)₂ → <span class="hg2">dissolves in excess NaOH</span> (amphoteric, like Al³⁺)</td><td>Also dissolves in excess NH₃ (colourless complex); no flame colour</td></tr>
+      <tr><td><strong>Pb²⁺</strong></td><td>NaOH(aq) or H₂SO₄</td><td>White ppt Pb(OH)₂ dissolves in excess NaOH; white PbSO₄ with H₂SO₄</td><td>White ppt PbCl₂ with HCl (soluble in hot water — distinguishes from AgCl)</td></tr>
+      <tr><td><strong>NH₄⁺</strong></td><td>NaOH + heat</td><td>NH₃ gas evolved (pungent; damp red litmus → blue)</td><td>NH₃ + HCl → white fumes NH₄Cl</td></tr>
+      <tr><td><strong>Mg²⁺</strong></td><td>NaOH(aq)</td><td>White ppt Mg(OH)₂ — <span class="hr">does NOT dissolve in excess NaOH</span></td><td>Flame test: Mg burns with blinding white light (but Mg²⁺ ion gives no flame colour)</td></tr>
+    </table>
+  </div>
+
+  <h3>Flame Colours — Summary</h3>
+  <div class="ion-colours">
+    <div class="ion-colour-card" style="background:rgba(212,168,67,.12);border:1px solid rgba(212,168,67,.3);">
+      <div class="ic-ion" style="color:#d4a843;">Na⁺</div>
+      <div class="ic-name">Golden yellow</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(168,126,240,.12);border:1px solid rgba(168,126,240,.3);">
+      <div class="ic-ion" style="color:#a87ef0;">K⁺</div>
+      <div class="ic-name">Lilac / violet</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(240,88,50,.12);border:1px solid rgba(240,88,50,.3);">
+      <div class="ic-ion" style="color:#f05a28;">Ca²⁺</div>
+      <div class="ic-name">Brick red</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(82,214,138,.12);border:1px solid rgba(82,214,138,.3);">
+      <div class="ic-ion" style="color:#52d68a;">Ba²⁺</div>
+      <div class="ic-name">Apple green</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(82,214,138,.08);border:1px solid rgba(82,214,138,.2);">
+      <div class="ic-ion" style="color:#3db877;">Cu²⁺</div>
+      <div class="ic-name">Blue-green</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(240,90,110,.1);border:1px solid rgba(240,90,110,.2);">
+      <div class="ic-ion" style="color:#f05a6e;">Li⁺</div>
+      <div class="ic-name">Crimson red</div>
+    </div>
+    <div class="ion-colour-card" style="background:rgba(240,136,74,.1);border:1px solid rgba(240,136,74,.2);">
+      <div class="ic-ion" style="color:#f0884a;">Sr²⁺</div>
+      <div class="ic-name">Scarlet red</div>
+    </div>
+  </div>
+  <div class="trap">
+    <span class="trap-lbl">⚠ JAMB TRAP — RED FLAME COLOURS</span>
+    Multiple cations give red flames — JAMB loves to exploit this: Li⁺ = crimson red; Ca²⁺ = brick/orange-red; Sr²⁺ = scarlet red. These look similar — the intensity and shade differ. In JAMB exam context: "orange-red / brick red = Ca²⁺"; "brilliant crimson = Li⁺"; "scarlet = Sr²⁺". K⁺ gives lilac which is easily masked by Na⁺ impurities — use a blue cobalt glass to filter out yellow and see K⁺'s lilac.
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S16 — LIGHTNING ══ -->
+<div class="sec" id="s16">
+  <div class="sec-tag">Section 16</div>
+  <h2>⚡ Lightning Round — All Major JAMB Traps</h2>
+
+  <div class="lightning">
+    <div class="lt">⚡ Master Trap List — Topic 16</div>
+    <ul>
+      <li><strong>Reactivity series extraction rule:</strong> Very reactive metals (K, Na, Ca, Mg, Al) → <strong>electrolysis of molten compound</strong>. Moderately reactive (Zn, Fe, Sn, Pb) → <strong>reduction by carbon/CO</strong>. Unreactive (Ag, Au) → found free or simple heating.</li>
+      <li><strong>Aluminium passivation:</strong> Al appears unreactive because a self-forming Al₂O₃ layer protects the surface. It is actually very reactive (high in series). Remove oxide layer with NaOH and Al reacts vigorously.</li>
+      <li><strong>Rusting requires BOTH O₂ AND H₂O simultaneously.</strong> Neither alone causes rusting of iron.</li>
+      <li><strong>Cryolite in Hall-Héroult:</strong> Used to lower melting point of Al₂O₃ from ~2050°C to ~960°C. NOT to purify Al, NOT as electrode material.</li>
+      <li><strong>Carbon anodes in Hall-Héroult are consumed:</strong> O₂ from electrolysis burns them (C + O₂ → CO₂). They must be periodically replaced. This is a major operating cost.</li>
+      <li><strong>Blast furnace reducing agent is CO, not C directly:</strong> C + O₂ → CO₂ → CO₂ + C → 2CO → CO reduces Fe₂O₃. The key reduction: Fe₂O₃ + 3CO → 2Fe + 3CO₂.</li>
+      <li><strong>Limestone in blast furnace = flux</strong>, not a fuel or reducing agent. It removes SiO₂ as slag CaSiO₃. Without it, silica clogs the furnace.</li>
+      <li><strong>Al³⁺ and Zn²⁺ precipitates dissolve in excess NaOH</strong> (amphoteric hydroxides). Fe²⁺ (green), Fe³⁺ (rust-brown), Cu²⁺ (pale blue) precipitates do NOT dissolve in excess NaOH.</li>
+      <li><strong>Fe²⁺ turns green ppt → brown on standing</strong> because Fe(OH)₂ is oxidised by air to Fe(OH)₃. So if you see green ppt turning brown → Fe²⁺ not Fe³⁺ was originally present.</li>
+      <li><strong>KSCN test for Fe³⁺</strong> gives blood-red [Fe(SCN)]²⁺. K₃[Fe(CN)₆] + Fe²⁺ → Turnbull's blue. K₄[Fe(CN)₆] + Fe³⁺ → Prussian blue. Don't mix up these reagents!</li>
+      <li><strong>Cu²⁺ + excess NH₃ → deep blue complex</strong> [Cu(NH₃)₄]²⁺. This dissolves the pale blue Cu(OH)₂ precipitate. This is different from excess NaOH (which does NOT dissolve Cu(OH)₂).</li>
+      <li><strong>Steel vs cast iron:</strong> Steel is less brittle, stronger in tension, can be welded. Cast iron is very hard but brittle. The difference is carbon content.</li>
+      <li><strong>Galvanising (Zn) protects Fe even when scratched</strong> — sacrificial protection. Tinning (Sn) — Fe corrodes faster when scratched because Fe is above Sn in reactivity.</li>
+      <li><strong>Transition metal 4s electrons lost first:</strong> Fe → Fe²⁺: loses 2 × 4s → [Ar]3d⁶. Fe³⁺: loses 2 × 4s + 1 × 3d → [Ar]3d⁵. NEVER [Ar]3d⁴4s².</li>
+      <li><strong>Cr and Cu anomalous configs:</strong> Cr = [Ar]3d⁵4s¹ (half-filled 3d); Cu = [Ar]3d¹⁰4s¹ (full 3d). Both more stable than the "expected" config.</li>
+      <li><strong>Solvay process — only NaCl and CaCO₃ are consumed.</strong> NH₃ is recycled. NaHCO₃ precipitates (not Na₂CO₃) because NaHCO₃ is less soluble. Then heated to give Na₂CO₃.</li>
+      <li><strong>Na₂CO₃ uses:</strong> glass making (with SiO₂ + CaCO₃), water softening, soap/detergent manufacture. NaHCO₃ uses: baking (CO₂ release), antacid, fire extinguisher.</li>
+      <li><strong>CaO + H₂O → Ca(OH)₂ + heat</strong> (slaking). This is highly exothermic — can cause burns.</li>
+      <li><strong>Limewater + CO₂ → milky (CaCO₃). Excess CO₂ → milkiness clears</strong> (Ca(HCO₃)₂ forms — soluble). "Milky then clears" = hallmark of calcium chemistry with CO₂.</li>
+      <li><strong>Alloy compositions to memorise:</strong> Brass = Cu+Zn; Bronze = Cu+Sn; Duralumin = Al+Cu; Solder = Sn+Pb; Type metal = Pb+Sn+Sb; Alnico = Fe+Al+Ni+Co; Permalloy = Fe+Ni; Stainless = Fe+Cr+Ni.</li>
+      <li><strong>Anhydrous CuSO₄ = white → blue with water:</strong> test for water. CuSO₄·5H₂O = blue vitriol.</li>
+      <li><strong>In electrolytic refining of Cu:</strong> impure Cu anode dissolves; pure Cu deposits at cathode. Noble metals (Au, Ag) sink as anode sludge. Less noble impurities (Fe, Zn, Ni) stay in solution.</li>
+      <li><strong>Na reacts with cold water vigorously:</strong> 2Na + 2H₂O → 2NaOH + H₂↑ (fizzes, skims, may catch fire — lilac flame). Ca reacts more slowly and steadily. K is more violent than Na.</li>
+      <li><strong>Amphoteric metals Al, Zn, Pb react with NaOH to give H₂:</strong> 2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂↑. Most metals do NOT react with NaOH.</li>
+      <li><strong>Thermite reaction</strong> — Al reduces Fe₂O₃: 2Al + Fe₂O₃ → Al₂O₃ + 2Fe (extremely exothermic, ~2500°C). Used to weld railway tracks. Demonstrates Al is more reactive than Fe.</li>
+    </ul>
+  </div>
+</div>
+
+<hr class="dv">
+
+<!-- ══ S17 — DEFS + SELF TEST ══ -->
+<div class="sec" id="s17">
+  <div class="sec-tag">Section 17</div>
+  <h2>Key Definitions &amp; Self-Test</h2>
+
+  <div class="defs">
+    <div class="dc"><div class="dt">Alloy</div><div>A mixture of a metal with one or more other elements (metals or non-metals) to improve properties; no fixed composition; made by mixing in molten state.</div></div>
+    <div class="dc"><div class="dt">Passivation</div><div>Formation of a thin, adherent, impermeable oxide layer on a metal surface that prevents further corrosion; e.g. Al₂O₃ on aluminium, Cr₂O₃ on chromium/stainless steel.</div></div>
+    <div class="dc"><div class="dt">Flux (blast furnace)</div><div>Limestone (CaCO₃) added to the blast furnace; decomposes to CaO which reacts with silica impurities to form molten slag (CaSiO₃), allowing it to be removed.</div></div>
+    <div class="dc"><div class="dt">Slag</div><div>Calcium silicate (CaSiO₃) — waste product from the blast furnace; floats on molten iron and is tapped off separately. Used in road-making and cement.</div></div>
+    <div class="dc"><div class="dt">Electrolytic refining</div><div>Process of purifying an impure metal using electrolysis; impure metal is the anode (dissolves), pure metal deposits at cathode; used for Cu, Al (from electrolytic extraction).</div></div>
+    <div class="dc"><div class="dt">Sacrificial protection</div><div>Corrosion protection by connecting the metal to a more reactive metal (e.g. Zn block on ship hull); the reactive metal corrodes preferentially ("sacrificed"), protecting the less reactive metal.</div></div>
+    <div class="dc"><div class="dt">Galvanising</div><div>Coating iron/steel with zinc to prevent corrosion; even if coating is scratched, Zn (above Fe in series) is sacrificed to protect Fe.</div></div>
+    <div class="dc"><div class="dt">Calcination</div><div>Heating a metal carbonate or hydroxide strongly to decompose it; e.g. CaCO₃ → CaO + CO₂; Al(OH)₃ → Al₂O₃ + H₂O.</div></div>
+    <div class="dc"><div class="dt">Transition metal</div><div>d-block element with incomplete d-subshells; characterised by variable oxidation states, complex ion formation, coloured ions, and catalytic activity.</div></div>
+    <div class="dc"><div class="dt">Complex ion / ligand</div><div>Complex ion: transition metal ion bonded to ligands; Ligand: molecule or ion that donates an electron pair to the metal (Lewis base); e.g. NH₃, CN⁻, H₂O, SCN⁻.</div></div>
+    <div class="dc"><div class="dt">Solvay process</div><div>Industrial method for producing Na₂CO₃ from NaCl and CaCO₃ via ammoniated brine and NaHCO₃ precipitation; NH₃ is recycled; only NaCl and CaCO₃ consumed.</div></div>
+    <div class="dc"><div class="dt">Wrought iron</div><div>Nearly pure iron (&lt;0.1% C); soft, malleable, easily welded; made by puddling or removing carbon from pig iron; less used commercially now (replaced by mild steel).</div></div>
+  </div>
+
+  <div class="selftest">
+    <div class="stt">Self-Test Questions</div>
+    <ol>
+      <li>Explain why aluminium is high in the reactivity series yet appears resistant to corrosion in everyday use. What happens when aluminium is treated with NaOH solution?</li>
+      <li>Give the method of extraction for each: (a) potassium; (b) aluminium; (c) iron; (d) copper from oxide ore; (e) silver. Justify each method by reference to reactivity.</li>
+      <li>Describe the Hall-Héroult process for extracting aluminium. Include: ore, electrolyte, role of cryolite, electrode reactions, and why carbon anodes must be replaced.</li>
+      <li>Write equations for all stages of the blast furnace, and state the role of: (a) coke; (b) limestone; (c) hot air blast.</li>
+      <li>Compare cast iron, wrought iron, and mild steel in terms of: carbon content, hardness/brittleness, and TWO uses of each.</li>
+      <li>Write equations for: (a) Na reacting with water; (b) Al reacting with NaOH solution; (c) Cu reacting with concentrated HNO₃; (d) Fe₂O₃ reduced by CO in blast furnace; (e) the thermite reaction.</li>
+      <li>Outline the Solvay process for manufacturing Na₂CO₃. State which raw materials are actually consumed and explain how NH₃ is recovered.</li>
+      <li>Give the electron configurations of: Fe, Fe²⁺, Fe³⁺, Cu, Cu²⁺, Cr. Explain why Cu and Cr deviate from the expected configuration.</li>
+      <li>For each of the following, state the reagent added, the observation, and write an ionic equation: (a) Testing for Fe²⁺ with NaOH; (b) Testing for Fe³⁺ with KSCN; (c) Testing for Cu²⁺ with excess NH₃; (d) Testing for Al³⁺ with NaOH; (e) Flame test for Ca²⁺.</li>
+      <li>Give the constituents and ONE key use for each: brass, bronze, duralumin, stainless steel, solder, alnico.</li>
+    </ol>
+
+    <div class="ans">
+      <div class="ans-title" onclick="toggleAnswers(this)">Show / Hide Full Answers</div>
+      <div class="ans-body">
+        <ol>
+          <li>Aluminium reacts immediately with atmospheric oxygen to form a thin, hard, impermeable layer of Al₂O₃ (aluminium oxide). This layer adheres strongly to the surface and prevents O₂ and moisture from reaching the metal below (passivation). Despite being in Group III and highly reactive, the oxide layer makes Al appear unreactive. With NaOH: Al₂O₃ + 2NaOH → 2NaAlO₂ + H₂O (oxide dissolved); then bare Al reacts vigorously: 2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂↑. Al(OH)₃ precipitate dissolves in excess NaOH → colourless aluminate solution.</li>
+          <li>(a) K — electrolysis of molten KCl or KOH (too reactive for carbon reduction; C cannot reduce K₂O). (b) Al — electrolysis of molten Al₂O₃ in cryolite (too reactive for carbon reduction; C reduces Al₂O₃ only at impractical temperatures). (c) Fe — reduction by CO/C in blast furnace (reactive enough for C/CO to reduce at high T, cheaper than electrolysis). (d) Cu oxide ore — reduction by C or H₂, or dissolve in H₂SO₄ then electrolyse (relatively low reactivity; C/H₂ can reduce CuO easily). (e) Ag — found free (native silver) or by simple heating of Ag₂O → 2Ag + ½O₂ (very unreactive, low in series).</li>
+          <li>Ore: Bauxite (Al₂O₃·2H₂O), purified by Bayer process to give pure Al₂O₃. Electrolyte: Al₂O₃ dissolved in molten cryolite (Na₃AlF₆). Role of cryolite: lowers operating temperature from ~2050°C (MP of pure Al₂O₃) to ~960°C — saves enormous energy costs. Electrode reactions: Cathode (−): Al³⁺ + 3e⁻ → Al (liquid Al sinks, tapped off). Anode (+): 2O²⁻ → O₂ + 4e⁻. Carbon anodes consumed: O₂ produced at anode reacts with hot carbon electrodes: C + O₂ → CO₂. Carbon anodes erode away and must be periodically replaced (significant operational cost).</li>
+          <li>C + O₂ → CO₂ (bottom); CO₂ + C → 2CO (main reducing agent formed); Fe₂O₃ + 3CO → 2Fe + 3CO₂ (iron ore reduced); CaCO₃ → CaO + CO₂ (limestone decomposes); CaO + SiO₂ → CaSiO₃ (slag). Roles: (a) Coke — fuel (burns to give heat and CO₂), then forms CO as the main reducing agent. (b) Limestone — flux; decomposes to CaO which removes SiO₂ impurities as slag (CaSiO₃). (c) Hot air blast — provides O₂ to burn coke; creates the high temperatures and convection current needed in the furnace.</li>
+          <li>Cast iron: ~4% C; very hard but brittle (shatters under impact); used for engine blocks, manhole covers, pipes. Wrought iron: &lt;0.1% C; soft, malleable, can be welded; used for decorative ironwork, chains. Mild/carbon steel: 0.1–1.5% C; strong and relatively ductile, can be welded and hardened; used for structural steel (buildings, bridges), car bodies, tools.</li>
+          <li>(a) 2Na + 2H₂O → 2NaOH + H₂↑. (b) 2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂↑. (c) Cu + 4HNO₃(conc.) → Cu(NO₃)₂ + 2NO₂↑ + 2H₂O. (d) Fe₂O₃ + 3CO → 2Fe + 3CO₂. (e) 2Al + Fe₂O₃ → Al₂O₃ + 2Fe + heat (thermite reaction).</li>
+          <li>Solvay process: saturate brine with NH₃; pass in CO₂: NaCl + NH₄HCO₃ → NaHCO₃↓ + NH₄Cl; filter off NaHCO₃; heat to give Na₂CO₃: 2NaHCO₃ → Na₂CO₃ + H₂O + CO₂. NH₃ recovery: 2NH₄Cl + Ca(OH)₂ → CaCl₂ + 2NH₃ + 2H₂O (Ca(OH)₂ from slaking CaO produced when CaCO₃ decomposed for CO₂). Only NaCl and CaCO₃ are consumed; NH₃ is recycled continuously.</li>
+          <li>Fe: [Ar]3d⁶4s². Fe²⁺: [Ar]3d⁶ (loses 4s² electrons first). Fe³⁺: [Ar]3d⁵ (loses 4s² then one 3d). Cu: [Ar]3d¹⁰4s¹ (anomalous — fully filled 3d is extra stable; 4s¹ instead of expected 4s²). Cu²⁺: [Ar]3d⁹. Cr: [Ar]3d⁵4s¹ (anomalous — half-filled 3d is extra stable; 4s¹ instead of expected 4s²). Both Cu and Cr deviate from expected configs because half-filled (3d⁵) and fully filled (3d¹⁰) d-subshells have extra exchange energy stability.</li>
+          <li>(a) Fe²⁺ + NaOH: add NaOH(aq); green gelatinous precipitate of Fe(OH)₂; Fe²⁺ + 2OH⁻ → Fe(OH)₂↓ (green; turns brown on standing in air). (b) Fe³⁺ + KSCN: add KSCN(aq); blood-red colouration; Fe³⁺ + SCN⁻ → [Fe(SCN)]²⁺ (blood red). (c) Cu²⁺ + excess NH₃: first pale blue ppt Cu(OH)₂, then dissolves in excess to give deep blue solution; Cu(OH)₂ + 4NH₃ → [Cu(NH₃)₄]²⁺ + 2OH⁻ (deep blue). (d) Al³⁺ + NaOH: white ppt forms then dissolves in excess; Al³⁺ + 3OH⁻ → Al(OH)₃↓; Al(OH)₃ + OH⁻ → [Al(OH)₄]⁻ (colourless). (e) Ca²⁺ flame test: dip clean Pt wire, hold in blue Bunsen flame; brick red / orange-red flame (Ca²⁺ characteristic).</li>
+          <li>Brass (Cu + Zn): musical instruments/taps. Bronze (Cu + Sn): statues/bells. Duralumin (Al + Cu + Mg + Mn): aircraft frames. Stainless steel (Fe + Cr + Ni): cutlery/surgical instruments. Solder (Sn + Pb): joining electrical components. Alnico (Fe + Al + Ni + Co): permanent magnets/loudspeakers.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  UTME Chemistry &nbsp;·&nbsp; Topic 16: Metals &amp; Their Compounds &nbsp;·&nbsp; For offline study
+</footer>
+
+<script>
+function toggleAnswers(el){
+  el.classList.toggle('open');
+  el.nextElementSibling.classList.toggle('show');
+}
+</script>
+</body>
+</html>

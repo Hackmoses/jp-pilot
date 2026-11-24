@@ -1,0 +1,599 @@
+.jp-screen {
+  min-height: 100dvh;
+  max-width: 480px;
+  margin-inline: auto;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-system);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.jp-screen *,
+.jp-screen *::before,
+.jp-screen *::after {
+  box-sizing: border-box;
+}
+
+.jp-topbar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5) var(--space-5) var(--space-3);
+  border-bottom: 1px solid var(--line);
+}
+
+.jp-topbar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.jp-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.jp-topic {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-2);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.jp-counter {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.jp-pills {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.jp-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  line-height: 1.2;
+}
+
+.jp-pill--practice {
+  color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.jp-pill--streak {
+  color: #374151;
+  background: #f3f4f6;
+}
+
+.jp-pill--review {
+  align-self: flex-start;
+}
+
+.jp-progress-track {
+  height: 6px;
+  background: #f3f4f6;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.jp-progress-fill {
+  height: 100%;
+  background: var(--brand);
+  border-radius: var(--radius-pill);
+  transition: width 0.2s ease;
+}
+
+.jp-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 22px var(--space-5) var(--space-6);
+}
+
+.jp-result {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) 14px;
+  border-radius: var(--radius-card);
+}
+
+.jp-result--good {
+  background: var(--good-soft);
+  color: #14532d;
+}
+
+.jp-result--bad {
+  background: var(--bad-soft);
+  color: #7f1d1d;
+}
+
+.jp-result-icon {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg);
+}
+
+.jp-result--good .jp-result-icon {
+  background: var(--good);
+}
+
+.jp-result--bad .jp-result-icon {
+  background: var(--bad);
+}
+
+.jp-result-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.jp-result-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.jp-result-sub {
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.jp-result--good .jp-result-sub {
+  color: #166534;
+}
+
+.jp-result--bad .jp-result-sub {
+  color: #991b1b;
+}
+
+.jp-stem {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.jp-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jp-option {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: 100%;
+  min-height: 56px;
+  padding: var(--space-3) 14px;
+  border-radius: var(--radius-card);
+  border: 1.5px solid var(--option-line);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.jp-option:hover:not(:disabled) {
+  border-color: var(--brand);
+}
+
+.jp-option:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.jp-option:focus-visible,
+.jp-btn:focus-visible,
+.jp-link-btn:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.jp-option-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.jp-badge {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.jp-option-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.jp-option-note {
+  font-size: 13px;
+  line-height: 1.45;
+  padding-left: 44px;
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+
+.jp-option--correct {
+  background: var(--good-soft);
+  border: 2px solid var(--good);
+}
+
+.jp-option--correct .jp-badge {
+  background: var(--good);
+  color: var(--bg);
+}
+
+.jp-option--correct .jp-option-text {
+  font-weight: 600;
+  color: #14532d;
+}
+
+.jp-option--correct .jp-option-note {
+  color: #166534;
+}
+
+.jp-option--wrong {
+  background: var(--bad-soft);
+  border: 2px solid var(--bad);
+}
+
+.jp-option--wrong .jp-badge {
+  background: var(--bad);
+  color: var(--bg);
+}
+
+.jp-option--wrong .jp-option-text {
+  font-weight: 600;
+  color: #7f1d1d;
+}
+
+.jp-option--wrong .jp-option-note {
+  color: #991b1b;
+}
+
+.jp-option--neutral {
+  border: 1px solid var(--line);
+}
+
+.jp-option--neutral .jp-option-text {
+  color: #374151;
+}
+
+.jp-option--removed {
+  background: #f9fafb;
+  border: 1.5px dashed var(--option-line);
+}
+
+.jp-option--removed .jp-option-text {
+  color: var(--ink-2);
+  text-decoration: line-through;
+}
+
+.jp-option--removed .jp-option-note {
+  color: var(--ink-2);
+}
+
+.jp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.jp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: var(--tap-min);
+  padding: 10px 14px;
+  border-radius: var(--radius-small);
+  border: 1px solid var(--option-line);
+  background: var(--bg);
+  color: #1f2937;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.jp-btn:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.jp-btn--muted,
+.jp-btn--remove:disabled {
+  background: #f9fafb;
+  border-color: var(--line);
+  color: var(--ink-2);
+}
+
+.jp-btn--hint {
+  background: var(--hint-soft);
+  border-color: #fde68a;
+  color: var(--hint);
+}
+
+.jp-btn--ask {
+  background: var(--brand-soft);
+  border-color: #bfdbfe;
+  color: #1e40af;
+}
+
+.jp-btn--primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--bg);
+}
+
+.jp-btn--full {
+  width: 100%;
+  min-height: 50px;
+  font-size: 16px;
+}
+
+.jp-hint-box {
+  padding: 14px var(--space-4);
+  background: var(--hint-soft);
+  border: 1px solid #fde68a;
+  border-radius: var(--radius-card);
+  color: #78350f;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.jp-hint-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hint);
+  margin-bottom: var(--space-1);
+}
+
+.jp-hint-box p {
+  margin: 0;
+}
+
+.jp-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.jp-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: var(--space-4);
+  border-radius: var(--radius-card);
+}
+
+.jp-block-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.jp-block p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #1f2937;
+  overflow-wrap: anywhere;
+}
+
+.jp-block--explain {
+  background: var(--brand-soft);
+}
+
+.jp-block--explain .jp-block-label {
+  color: #1e40af;
+}
+
+.jp-block--trap {
+  background: var(--trap-soft);
+}
+
+.jp-block--trap .jp-block-label {
+  color: var(--trap);
+}
+
+.jp-block--memo {
+  background: var(--memo-soft);
+}
+
+.jp-block--memo .jp-block-label {
+  color: var(--memo);
+}
+
+.jp-block--memo p {
+  font-weight: 600;
+}
+
+.jp-footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4) var(--space-5);
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.jp-footer-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.jp-footer-grow {
+  flex: 1;
+}
+
+.jp-home,
+.jp-summary {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-5);
+  padding: var(--space-6) var(--space-5);
+}
+
+.jp-app-title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.jp-pitch {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.jp-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.jp-stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--bg);
+}
+
+.jp-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.jp-stat-label {
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.jp-summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border-radius: var(--radius-card);
+  background: var(--brand-soft);
+}
+
+.jp-summary-score {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e40af;
+  line-height: 1.15;
+}
+
+.jp-summary-sub {
+  margin: 0;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.jp-revisit {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+}
+
+.jp-revisit-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.jp-revisit-list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.jp-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap-min);
+  color: var(--brand);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.jp-player-slot:empty {
+  display: none;
+}
