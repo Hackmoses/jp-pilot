@@ -1,21 +1,25 @@
 import { useState } from 'preact/hooks'
+import { getQuestion } from '../../lib/data'
 import { logEvent } from '../../lib/store'
+import { getSubject } from '../../lib/subjects'
 import './share.css'
 
 type ShareButtonProps =
   | { questionId: string; correct?: boolean }
-  | { score: { correct: number; total: number } }
+  | { score: { correct: number; total: number }; subject?: string }
 
 export function ShareButton(props: ShareButtonProps) {
   const [fallbackFor, setFallbackFor] = useState<string>()
   const url = new URL(window.location.href)
   const isQuestion = 'questionId' in props
+  const subjectId = isQuestion ? getQuestion(props.questionId)?.subject : props.subject
+  const subjectLabel = (getSubject(subjectId)?.name ?? 'practice').toLowerCase()
   url.hash = isQuestion ? `/q?id=${encodeURIComponent(props.questionId)}` : '/'
   const shareText = isQuestion
     ? props.correct
-      ? 'I got this JAMB chemistry question right. Can you?'
-      : 'Can you answer this JAMB chemistry question?'
-    : `I got ${props.score.correct} out of ${props.score.total} in JAMB chemistry practice. Try a session!`
+      ? `I got this JAMB ${subjectLabel} question right. Can you?`
+      : `Can you answer this JAMB ${subjectLabel} question?`
+    : `I got ${props.score.correct} out of ${props.score.total} in JAMB ${subjectLabel} practice. Try a session!`
   const link = url.href
   const whatsAppUrl = `https://wa.me/?text=${encodeURIComponent(`${shareText} ${link}`)}`
 

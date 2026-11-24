@@ -1,4 +1,6 @@
-const CACHE_NAME = 'jp-pilot-v7'
+const CACHE_NAME = 'jp-pilot-v8'
+const CALCULATION_AUDIO_CACHE = 'jp-calculation-audio-v1'
+const CALCULATION_AUDIO_PATH = new URL('./audio/', self.location.href).pathname
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -31,7 +33,7 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     (async () => {
       const keys = await caches.keys()
-      await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
+      await Promise.all(keys.filter((key) => key !== CACHE_NAME && key !== CALCULATION_AUDIO_CACHE).map((key) => caches.delete(key)))
       await self.clients.claim()
     })(),
   )
@@ -42,6 +44,15 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return
   const url = new URL(request.url)
   if (url.origin !== self.location.origin) return
+
+  if (url.pathname.startsWith(CALCULATION_AUDIO_PATH)) {
+    // The player writes to this cache once playback starts. Preloads only read it.
+    event.respondWith(
+      caches.open(CALCULATION_AUDIO_CACHE).then((cache) => cache.match(request))
+        .catch(() => undefined).then((cached) => cached || fetch(request)),
+    )
+    return
+  }
 
   if (request.mode === 'navigate') {
     event.respondWith(

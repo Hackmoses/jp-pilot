@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
+import { loadManifest } from '../lib/data'
 import {
   SUBJECTS,
   type SubjectIconName,
   type SubjectInfo,
   getSubjectQuestionCount,
+  isSubjectAvailable,
 } from '../lib/subjects'
 import '../styles/subjects.css'
 
@@ -36,9 +38,14 @@ function SubjectIcon({ name }: { name: SubjectIconName }) {
 
 export function Subjects() {
   const [query, setQuery] = useState('')
+  const [, setManifestReady] = useState(false)
   const [dialogState, setDialogState] = useState<{ kind: 'email' } | { kind: 'subject'; subject: SubjectInfo } | null>(null)
   const dialogRef = useRef<HTMLDialogElement>(null)
   const triggerRef = useRef<HTMLElement | null>(null)
+
+  useEffect(() => {
+    void loadManifest().then(() => setManifestReady(true))
+  }, [])
 
   useEffect(() => {
     const dialog = dialogRef.current
@@ -127,7 +134,7 @@ export function Subjects() {
         ) : (
           <div class="jp-subjects-grid" role="list">
             {filteredSubjects.map((subject) => {
-              if (subject.available) {
+              if (isSubjectAvailable(subject.id)) {
                 const count = getSubjectQuestionCount(subject.id)
                 return (
                   <a

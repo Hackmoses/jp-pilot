@@ -37,13 +37,29 @@ export function QuestionCard({
   const isCorrect = answered && pickedId === question.answerId
   const result = answered ? getResultCopy(isCorrect, removedIds.length) : null
   const [explainOpen, setExplainOpen] = useState(true)
+  const [otherWrongOpen, setOtherWrongOpen] = useState(true)
   const explainBodyId = useId()
+  const otherWrongBodyId = useId()
 
   useEffect(() => {
     setExplainOpen(true)
+    setOtherWrongOpen(true)
   }, [question.id])
 
   const toggleExplain = () => setExplainOpen((prev) => !prev)
+  const toggleOtherWrong = () => setOtherWrongOpen((prev) => !prev)
+
+  const otherWrongOptions = answered
+    ? options
+        .map((option, index) => ({ option, letter: OPTION_LETTERS[index] ?? 'A' }))
+        .filter(
+          ({ option }) =>
+            option.id !== question.answerId &&
+            option.id !== pickedId &&
+            typeof option.whyWrong === 'string' &&
+            option.whyWrong.trim().length > 0,
+        )
+    : []
 
   const pickedIdx = pickedId ? options.findIndex((option) => option.id === pickedId) : -1
   const pickedOption = pickedIdx >= 0 ? options[pickedIdx] : undefined
@@ -98,7 +114,14 @@ export function QuestionCard({
       )}
 
       <section class="jp-card jp-question-card" aria-label="Question">
-        {review && <span class="jp-pill jp-pill--streak jp-pill--review">Review</span>}
+        {(review || question.id.includes('-api-') || /^SdashAPI/i.test(question.source)) && (
+          <div class="jp-pills">
+            {review && <span class="jp-pill jp-pill--streak jp-pill--review">Review</span>}
+            {(question.id.includes('-api-') || /^SdashAPI/i.test(question.source)) && (
+              <span class="jp-pill jp-pill--practice jp-pill--review">JAMB-style practice</span>
+            )}
+          </div>
+        )}
         <p class="jp-stem">{question.stem}</p>
 
         <div class="jp-options" role="group" aria-label="Answer options">
@@ -258,15 +281,80 @@ export function QuestionCard({
           </div>
           <div id={explainBodyId} class="jp-explain-content" hidden={!explainOpen}>
             <p class="jp-explain-body">{question.explanation}</p>
-            <div class="jp-explain-subgrid">
-              <div class="jp-subbox jp-subbox--trap">
-                <span class="jp-subbox-label">The trap</span>
-                <p>{question.trap}</p>
+          </div>
+        </section>
+      )}
+
+      {answered && otherWrongOptions.length > 0 && (
+        <section
+          class="jp-card jp-other-wrong-card"
+          data-open={otherWrongOpen ? 'true' : 'false'}
+          aria-label="Why the other options are wrong"
+        >
+          <div class="jp-explain-head">
+            <button
+              type="button"
+              class="jp-explain-title-btn jp-other-wrong-title-btn"
+              aria-expanded={otherWrongOpen}
+              aria-controls={otherWrongBodyId}
+              onClick={toggleOtherWrong}
+            >
+              WHY THE OTHER OPTIONS ARE WRONG
+            </button>
+            <ReadAloudButton
+              questionId={question.id}
+              target="otherWrong"
+              options={options}
+              pickedId={pickedId}
+            />
+            <button
+              type="button"
+              class="jp-explain-toggle-btn jp-other-wrong-toggle-btn"
+              aria-expanded={otherWrongOpen}
+              aria-controls={otherWrongBodyId}
+              onClick={toggleOtherWrong}
+            >
+              <span>{otherWrongOpen ? 'Hide' : 'Show'}</span>
+              <span class="jp-explain-chev" data-open={otherWrongOpen ? 'true' : 'false'} aria-hidden="true">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d={otherWrongOpen ? 'm18 15-6-6-6 6' : 'm6 9 6 6 6-6'} />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div id={otherWrongBodyId} class="jp-other-wrong-list" hidden={!otherWrongOpen}>
+            {otherWrongOptions.map(({ option, letter }) => (
+              <div key={option.id} class="jp-other-wrong-row">
+                <div class="jp-other-wrong-row-head">
+                  <span class="jp-other-wrong-letter" aria-hidden="true">{letter}</span>
+                  <span class="jp-other-wrong-opt">{option.text}</span>
+                </div>
+                <p class="jp-other-wrong-reason">{option.whyWrong}</p>
               </div>
-              <div class="jp-subbox jp-subbox--memo">
-                <span class="jp-subbox-label">Remember it</span>
-                <p>{question.mnemonic}</p>
-              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {answered && (
+        <section class="jp-card jp-notes-card" aria-label="The trap and how to remember it">
+          <div class="jp-explain-subgrid">
+            <div class="jp-subbox jp-subbox--trap">
+              <span class="jp-subbox-label">The trap</span>
+              <p>{question.trap}</p>
+            </div>
+            <div class="jp-subbox jp-subbox--memo">
+              <span class="jp-subbox-label">Remember it</span>
+              <p>{question.mnemonic}</p>
             </div>
           </div>
         </section>

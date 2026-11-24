@@ -12,6 +12,7 @@ export interface MissedTopic {
 }
 
 export interface SessionSummary {
+  subject?: string
   total: number
   answered: number
   correct: number

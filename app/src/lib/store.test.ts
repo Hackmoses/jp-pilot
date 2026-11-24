@@ -1,5 +1,14 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { getQuestion } from './data'
+import questionsFile from '../../../data/questions.json'
+import animationsFile from '../../../data/animations.json'
+import { getQuestion, registerSubjectData } from './data'
+import type { Animation, Question } from './types'
+
+registerSubjectData(
+  'chemistry',
+  questionsFile.questions as unknown as Question[],
+  animationsFile.animations as unknown as Animation[],
+)
 
 let store: typeof import('./store')
 const storage = new Map<string, string>()
@@ -26,6 +35,12 @@ beforeEach(async () => {
     getItem: (key: string) => storage.get(key) ?? null,
     setItem: (key: string, value: string) => storage.set(key, value),
   })
+  const data = await import('./data')
+  data.registerSubjectData(
+    'chemistry',
+    questionsFile.questions as unknown as Question[],
+    animationsFile.animations as unknown as Animation[],
+  )
   store = await import('./store')
 })
 
@@ -42,6 +57,12 @@ describe('progress', () => {
     answer('chem-004', true, 0, 9)
 
     vi.resetModules()
+    const data2 = await import('./data')
+    data2.registerSubjectData(
+      'chemistry',
+      questionsFile.questions as unknown as Question[],
+      animationsFile.animations as unknown as Animation[],
+    )
     store = await import('./store')
     expect(store.getProgress()).toEqual({
       answered: 4, correct: 3, streakDays: 3, lastActiveDay: '2026-03-09',
@@ -57,6 +78,12 @@ describe('progress', () => {
       setItem() { throw new Error('Storage blocked') },
     })
     vi.resetModules()
+    const data2 = await import('./data')
+    data2.registerSubjectData(
+      'chemistry',
+      questionsFile.questions as unknown as Question[],
+      animationsFile.animations as unknown as Animation[],
+    )
     store = await import('./store')
 
     store.logEvent('session_start')
@@ -94,7 +121,9 @@ describe('question memory', () => {
     expect(cleanEntry()?.review).toBe(true)
     store.logEvent('session_start')
     expect(cleanEntry()?.review).toBe(false)
-    expect(store.getDueQuestionIds(3)[2]).toEqual({ id: 'chem-001', review: false })
+    const thirdItem = store.getDueQuestionIds(3)[2]
+    expect(thirdItem.review).toBe(false)
+    expect(getQuestion(thirdItem.id)?.type).toBe('recall')
   })
 
   it('uses the most recent answer to schedule the next review', () => {
@@ -149,6 +178,12 @@ describe('question memory', () => {
     expect(second.every(({ id }) => !first.some((item) => item.id === id))).toBe(true)
 
     vi.resetModules()
+    const data2 = await import('./data')
+    data2.registerSubjectData(
+      'chemistry',
+      questionsFile.questions as unknown as Question[],
+      animationsFile.animations as unknown as Animation[],
+    )
     store = await import('./store')
     const third = store.getDueQuestionIds(25)
     expect(third.slice(0, 15).every(({ id }) => !second.some((item) => item.id === id))).toBe(true)
@@ -157,6 +192,28 @@ describe('question memory', () => {
     const short = store.getDueQuestionIds(30)
     expect(short).toHaveLength(25)
   })
+
+  it('covers all unseen questions in a subject without repeating before exhausting the pool', () => {
+    const seen = new Set<string>()
+    for (let s = 0; s < 3; s++) {
+      const queue = store.getDueQuestionIds(10, 'chemistry')
+      store.logEvent('session_start', { questionIds: queue.map(({ id }) => id).join(',') })
+      for (const { id, review } of queue) {
+        if (!review) {
+          expect(seen.has(id)).toBe(false)
+          seen.add(id)
+        }
+        store.recordAnswer({
+          questionId: id,
+          pickedId: 'a',
+          correct: true,
+          removedCount: 0,
+          at: Date.now(),
+        })
+      }
+    }
+    expect(seen.size).toBe(25)
+  })
 })
 
 describe('event log', () => {
@@ -164,6 +221,12 @@ describe('event log', () => {
     for (let i = 0; i < 502; i++) store.logEvent('hint_open', { i })
 
     vi.resetModules()
+    const data2 = await import('./data')
+    data2.registerSubjectData(
+      'chemistry',
+      questionsFile.questions as unknown as Question[],
+      animationsFile.animations as unknown as Animation[],
+    )
     store = await import('./store')
     const events = JSON.parse(store.exportLog())
     expect(events).toHaveLength(500)

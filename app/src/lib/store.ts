@@ -159,6 +159,14 @@ export function getProgress(): {
   return { answered: state.answered, correct: state.correct, streakDays, lastActiveDay }
 }
 
+function shuffleInPlace<T>(items: T[]): T[] {
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[items[i], items[j]] = [items[j], items[i]]
+  }
+  return items
+}
+
 export function getDueQuestionIds(limit: number, subject?: string): QueueItem[] {
   if (!(limit > 0)) return []
 
@@ -182,6 +190,10 @@ export function getDueQuestionIds(limit: number, subject?: string): QueueItem[] 
     }
   }
 
+  shuffleInPlace(recall)
+  shuffleInPlace(calculation)
+  shuffleInPlace(due)
+  shuffleInPlace(reviews)
   due.sort((a, b) => a.session - b.session)
   reviews.sort((a, b) => a.session - b.session)
   const candidates: QueueItem[] = []

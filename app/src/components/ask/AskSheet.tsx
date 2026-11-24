@@ -3,6 +3,7 @@ import { getQuestion } from '../../lib/data'
 import { logEvent } from '../../lib/store'
 import type { AskPreset, OptionId } from '../../lib/types'
 import { renderFormattedText } from './formatFormula'
+import { ReplyFeedback, useTypedAsk, type AskHistory, type AskReply } from './TypedAsk'
 import './ask.css'
 
 type AskProps = {
@@ -10,6 +11,8 @@ type AskProps = {
   answered: boolean
   letterFor: (optionId: OptionId) => string
 }
+
+type Turn = { preset: AskPreset; label: string } | { label: string; reply: AskReply; id: string }
 
 export type AskPanelProps = AskProps & { onClose?: () => void }
 export type AskSheetProps = AskProps & { onClose: () => void }
@@ -60,9 +63,14 @@ function AskContent({
   titleId: string
 }) {
   const question = getQuestion(questionId)
-  const [turns, setTurns] = useState<{ preset: AskPreset; label: string }[]>([])
+  const [turns, setTurns] = useState<Turn[]>([])
   const [activePresetId, setActivePresetId] = useState<AskPreset['id'] | null>(null)
   const chat = useRef<HTMLDivElement>(null)
+  const typed = import.meta.env.DEV
+    ? useTypedAsk(questionId, answered && !!question, letterFor, (label, reply, id) => {
+        setTurns(previous => [...previous, { label, reply, id }])
+      })
+    : null
 
   useLayoutEffect(() => {
     if (turns.length && chat.current) chat.current.scrollTop = chat.current.scrollHeight
@@ -135,28 +143,80 @@ function AskContent({
                 })}
               </div>
             </div>
-            <div class="jp-ask-chat" ref={chat} role="log" aria-label="Saved answers">
+            <div class="jp-ask-chat" ref={chat} role="log" aria-label={typed ? 'Ask conversation' : 'Saved answers'}>
               {turns.length === 0 && (
                 <div class="jp-ask-welcome">
                   <div class="jp-ask-bubble jp-ask-bubble--welcome">
-                    <p>Tap a suggested question above for a simpler breakdown, why another option misses, or a quick follow-up.</p>
+                    <p>{typed
+                      ? 'Ask about this question, or tap a suggestion.'
+                      : 'Tap a suggested question above for a simpler breakdown, why another option misses, or a quick follow-up.'}</p>
                   </div>
                 </div>
               )}
-              {turns.map(({ preset, label }, index) => (
-                <PresetReply key={index} preset={preset} label={label} />
-              ))}
+              {turns.map((turn, index) => 'preset' in turn ? (
+                <PresetReply key={index} preset={turn.preset} label={turn.label} />
+              ) : import.meta.env.DEV ? (
+                <div class="jp-ask-turn" key={turn.id}>
+                  <p class="jp-ask-prompt">{turn.label}</p>
+                  <div class="jp-ask-reply">
+                    <div class="jp-ask-bubble">
+                      <div class="jp-ask-bubble-head">
+                        <span class="jp-ask-tutor-dot" aria-hidden="true" />
+                        <span>JP Tutor</span>
+                      </div>
+                      <p>{turn.reply.ok ? renderFormattedText(turn.reply.answer) : turn.reply.message}</p>
+                    </div>
+                    {turn.reply.ok && (
+                      <>
+                        {turn.reply.source !== 'ai' && <small>From saved answers</small>}
+                        {turn.reply.source !== 'seed' && <small>Trial answer, may contain mistakes</small>}
+                        <ReplyFeedback questionId={questionId} message={turn.label} reply={turn.reply} id={turn.id} />
+                      </>
+                    )}
+                  </div>
+                </div>
+              ) : null)}
             </div>
           </>
         )}
       </div>
 
       <footer class="jp-ask-footer">
-        <div class="jp-ask-composer">
+        {typed && answered && question ? (
+          <>
+            <form class="jp-ask-composer jp-ask-composer--trial" onSubmit={event => {
+              event.preventDefault()
+              const history: AskHistory = turns.slice(-2).flatMap(turn => {
+                const answer = 'preset' in turn ? turn.preset.answer : turn.reply.ok ? turn.reply.answer : ''
+                return answer ? [{ role: 'student', text: turn.label }, { role: 'tutor', text: answer }] : []
+              })
+              void typed.submit(history)
+            }}>
+              <input
+                type="text"
+                aria-label="Ask about this question"
+                placeholder="Type your question"
+                value={typed.draft}
+                onInput={event => typed.setDraft(event.currentTarget.value)}
+                enterKeyHint="send"
+              />
+              <button type="submit" class="jp-ask-send" aria-label="Send question"
+                disabled={!typed.draft.trim() || typed.pending}>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </button>
+            </form>
+            <p class="jp-ask-quota" role="status">
+              {typed.pending ? 'Thinking…' : `${typed.left} of 2 free questions left today`}
+            </p>
+          </>
+        ) : <div class="jp-ask-composer">
           <input
             type="text"
-            aria-label="Typed questions are coming soon"
-            placeholder="Typed questions are coming soon"
+            aria-label={import.meta.env.DEV ? 'Answer the question to try typed Ask' : 'Ask tutor is coming soon'}
+            placeholder={import.meta.env.DEV ? 'Answer the question to try typed Ask' : 'Ask tutor is coming soon'}
             disabled
           />
           <button
@@ -170,7 +230,7 @@ function AskContent({
               <path d="M5 12h14m-6-6 6 6-6 6" />
             </svg>
           </button>
-        </div>
+        </div>}
       </footer>
     </>
   )

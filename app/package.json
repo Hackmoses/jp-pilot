@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "dev": "node scripts/sync-data.mjs && vite",
+    "build": "node scripts/sync-data.mjs && tsc --noEmit && vite build",
     "preview": "vite preview",
+    "sync-data": "node scripts/sync-data.mjs",
     "validate": "node scripts/validate-data.mjs",
     "test": "vitest run"
   },

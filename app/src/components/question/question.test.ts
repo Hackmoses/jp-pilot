@@ -1,7 +1,10 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { getQuestions } from '../../lib/data'
+import questionsFile from '../../../../data/questions.json'
+import animationsFile from '../../../../data/animations.json'
+import { getQuestions, registerSubjectData } from '../../lib/data'
 import { shuffleOptions } from '../../lib/shuffle'
-import { SUBJECTS } from '../../lib/subjects'
+import { SUBJECTS, getSubjectByQuestionId } from '../../lib/subjects'
+import type { Animation, Question } from '../../lib/types'
 import {
   OPTION_LETTERS,
   buildSessionQueue,
@@ -14,6 +17,12 @@ import {
   parseSubjectFromHash,
   summarizeSession,
 } from './logic'
+
+registerSubjectData(
+  'chemistry',
+  questionsFile.questions as unknown as Question[],
+  animationsFile.animations as unknown as Animation[],
+)
 
 const questions = getQuestions()
 
@@ -137,13 +146,19 @@ describe('remove a wrong option logic (M2)', () => {
 describe('session flow and memory (M5)', () => {
   const storage = new Map<string, string>()
 
-  beforeEach(() => {
+  beforeEach(async () => {
     storage.clear()
     vi.resetModules()
     vi.stubGlobal('localStorage', {
       getItem: (key: string) => storage.get(key) ?? null,
       setItem: (key: string, value: string) => storage.set(key, value),
     })
+    const data = await import('../../lib/data')
+    data.registerSubjectData(
+      'chemistry',
+      questionsFile.questions as unknown as Question[],
+      animationsFile.animations as unknown as Animation[],
+    )
   })
 
   afterEach(() => {
@@ -261,6 +276,8 @@ describe('subject picker and whyWrong requirements (M11 & M12)', () => {
   it('lists all 15 UTME subjects with only Chemistry available', () => {
     expect(SUBJECTS).toHaveLength(15)
     expect(SUBJECTS.filter((s) => s.available).map((s) => s.id)).toEqual(['chemistry'])
+    expect(getSubjectByQuestionId('math-api-0001')?.id).toBe('mathematics')
+    expect(getSubjectByQuestionId('chem-016')?.id).toBe('chemistry')
   })
 
   it('parses ?subject= from hash routes cleanly', () => {

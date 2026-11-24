@@ -19,18 +19,31 @@ import {
   type SessionRecord,
   setLastSessionSummary,
 } from '../components/question/sessionState'
+import { isSubjectLoaded, loadSubject } from '../lib/data'
 import { shuffleOptions } from '../lib/shuffle'
 import { getProgress, logEvent, recordAnswer } from '../lib/store'
-import { getSubject } from '../lib/subjects'
+import { getSubject, getSubjectByQuestionId, isSubjectAvailable } from '../lib/subjects'
 import type { OptionId } from '../lib/types'
 
 interface SessionInit {
   queue: ReturnType<typeof buildSessionQueue>
   requestedSubject: string | null
   startedAt: number
+  loading: boolean
+}
+
+function resolveTargetSubject(requestedId: string | null, requestedSubject: string | null): string {
+  if (requestedId) {
+    return getSubjectByQuestionId(requestedId)?.id ?? requestedSubject ?? 'chemistry'
+  }
+  return requestedSubject ?? 'chemistry'
 }
 
 function startSession(requestedId: string | null, requestedSubject: string | null): SessionInit {
+  const targetSubject = resolveTargetSubject(requestedId, requestedSubject)
+  if (!isSubjectLoaded(targetSubject)) {
+    return { queue: [], requestedSubject, startedAt: Date.now(), loading: true }
+  }
   const queue = buildSessionQueue(requestedId, 10, requestedSubject)
   if (queue.length > 0) {
     logEvent('session_start', {
@@ -38,11 +51,11 @@ function startSession(requestedId: string | null, requestedSubject: string | nul
       questionIds: queue.map(({ question }) => question.id).join(','),
     })
   }
-  return { queue, requestedSubject, startedAt: Date.now() }
+  return { queue, requestedSubject, startedAt: Date.now(), loading: false }
 }
 
 export function Session() {
-  const [{ queue, requestedSubject, startedAt }, setSession] = useState<SessionInit>(
+  const [{ queue, requestedSubject, startedAt, loading }, setSession] = useState<SessionInit>(
     () =>
       startSession(
         parseQuestionIdFromHash(window.location.hash),
@@ -78,6 +91,35 @@ export function Session() {
     mq.addEventListener('change', update)
     return () => mq.removeEventListener('change', update)
   }, [])
+
+  useEffect(() => {
+    if (!loading) return
+    let cancelled = false
+    const requestedId = parseQuestionIdFromHash(window.location.hash)
+    const nextSubject = parseSubjectFromHash(window.location.hash)
+    const targetSubject = resolveTargetSubject(requestedId, nextSubject)
+
+    void loadSubject(targetSubject).then(() => {
+      if (cancelled) return
+      const nextQueue = buildSessionQueue(requestedId, 10, nextSubject)
+      if (nextQueue.length > 0) {
+        logEvent('session_start', {
+          count: nextQueue.length,
+          questionIds: nextQueue.map(({ question }) => question.id).join(','),
+        })
+      }
+      setSession({
+        queue: nextQueue,
+        requestedSubject: nextSubject,
+        startedAt: Date.now(),
+        loading: false,
+      })
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [loading])
 
   useEffect(() => {
     const onHashChange = () => {
@@ -164,6 +206,7 @@ export function Session() {
 
     if (index + 1 >= queue.length) {
       const summary = summarizeSession(nextRecords)
+      summary.subject = question.subject
       setLastSessionSummary(summary)
       logEvent('session_end', {
         answered: summary.answered,
@@ -251,9 +294,20 @@ export function Session() {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [question, answered, options, removedIds, handlePick, handleToggleHint, advance])
 
+  if (loading) {
+    return (
+      <main class="jp-screen">
+        <div class="jp-home">
+          <h1 class="jp-app-title">Loading questions…</h1>
+          <p class="jp-pitch">Getting your practice session ready.</p>
+        </div>
+      </main>
+    )
+  }
+
   if (!question) {
     const blockedSubject = requestedSubject ? getSubject(requestedSubject) : undefined
-    const isComingSoon = Boolean(blockedSubject && !blockedSubject.available)
+    const isComingSoon = Boolean(blockedSubject && !isSubjectAvailable(blockedSubject.id))
     return (
       <main class="jp-screen">
         <div class="jp-home">

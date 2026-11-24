@@ -4,8 +4,9 @@ import './share.css'
 
 const reasons = [
   ['wrong_answer', 'Wrong answer'],
-  ['confusing_explanation', 'Confusing explanation'],
+  ['unclear', 'Unclear'],
   ['typo', 'Typo'],
+  ['other', 'Other'],
 ] as const
 
 function ReportForm({ questionId, onClose, onSaved }: {
@@ -74,7 +75,7 @@ export function ReportButton({ questionId }: { questionId: string }) {
         class="jp-wsd-button jp-report-trigger"
         ref={trigger}
         type="button"
-        aria-label="Report a problem"
+        aria-label="Report this question"
         onClick={() => {
           setSavedFor(undefined)
           setOpenFor(questionId)
@@ -85,7 +86,7 @@ export function ReportButton({ questionId }: { questionId: string }) {
           <path d="M4 22V4" />
           <path d="M4 4h12l-2 4 2 4H4" />
         </svg>
-        <span class="jp-hide-sm">Report a problem</span>
+        <span class="jp-hide-sm">Report this question</span>
       </button>
       {savedFor === questionId && <span class="jp-report-status" role="status">Saved</span>}
       {openFor === questionId && <ReportForm questionId={questionId} onClose={close}

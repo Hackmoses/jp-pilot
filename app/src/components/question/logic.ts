@@ -1,6 +1,6 @@
 import { getQuestion, getQuestionsBySubject } from '../../lib/data'
 import { getDueQuestionIds } from '../../lib/store'
-import { getSubject } from '../../lib/subjects'
+import { getSubject, getSubjectByQuestionId, isSubjectAvailable } from '../../lib/subjects'
 import type { Option, OptionId, Question } from '../../lib/types'
 import type { SessionRecord, SessionSummary } from './sessionState'
 
@@ -146,9 +146,13 @@ export function buildSessionQueue(
 ): { question: Question; review: boolean }[] {
   if (!(limit > 0)) return []
   const requestedQuestion = requestedId ? getQuestion(requestedId) : undefined
-  const activeSubject = requestedQuestion?.subject ?? subject ?? 'chemistry'
+  const activeSubject =
+    requestedQuestion?.subject ??
+    (requestedId ? getSubjectByQuestionId(requestedId)?.id : undefined) ??
+    subject ??
+    'chemistry'
   const subjectInfo = getSubject(activeSubject)
-  if (!subjectInfo || !subjectInfo.available) return []
+  if (!subjectInfo || !isSubjectAvailable(subjectInfo.id)) return []
 
   const subjectQuestions = getQuestionsBySubject(subjectInfo.id)
   if (subjectQuestions.length === 0) return []

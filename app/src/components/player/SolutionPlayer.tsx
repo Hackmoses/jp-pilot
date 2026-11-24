@@ -9,6 +9,8 @@ import {
 } from '../../lib/speech'
 import { logEvent } from '../../lib/store'
 import type { Animation } from '../../lib/types'
+import { calculationAudio } from './calculationAudio'
+import { CalculationPlayback, type PlaybackState } from './CalculationPlayback'
 import './player.css'
 
 export interface SolutionPlayerProps {
@@ -58,13 +60,22 @@ function Player({
   const isOpen = controlledOpen ?? internalOpen
   const [expanded, setExpanded] = useState(false)
   const [animatedMode, setAnimatedMode] = useState(false)
-  const [index, setIndex] = useState(-1)
-  const [playing, setPlaying] = useState(false)
+  const [legacyIndex, setIndex] = useState(-1)
+  const [legacyPlaying, setPlaying] = useState(false)
   const [finished, setFinished] = useState(false)
   const [replay, setReplay] = useState(0)
   const [replaying, setReplaying] = useState(false)
   const [speechAvailable, setSpeechAvailable] = useState(false)
   const [activeKey, setActiveKey] = useState<string | null>(getActiveSpeechKey)
+  const paperRef = useRef<HTMLDivElement>(null)
+  const [recorded] = useState(() => calculationAudio(id))
+  const [audioState, setAudioState] = useState<PlaybackState>({ index: -1, playing: false, sound: false, speed: 1 })
+  const [playback] = useState(() => recorded && new CalculationPlayback(
+    steps.map((step) => recorded.clips.get(step.n)), duration, setAudioState,
+    (progress) => paperRef.current?.style.setProperty('--jp-pen-cover', `${(1 - progress) * 100}%`),
+  ))
+  const index = playback ? audioState.index : legacyIndex
+  const playing = playback ? audioState.playing : legacyPlaying
   const speechKey = `player:${id}`
   const speaking = activeKey === speechKey
   const current = steps[index]
@@ -95,8 +106,8 @@ function Player({
     }
   }, [expanded])
 
-  useEffect(() => subscribeToSpeechAvailability(setSpeechAvailable), [])
-  useEffect(() => subscribeToSpeechState(setActiveKey), [])
+  useEffect(() => playback ? undefined : subscribeToSpeechAvailability(setSpeechAvailable), [playback])
+  useEffect(() => playback ? undefined : subscribeToSpeechState(setActiveKey), [playback])
   useEffect(
     () => () => {
       if (getActiveSpeechKey() === speechKey) cancelSpeech()
@@ -104,31 +115,44 @@ function Player({
     [speechKey],
   )
 
+  useEffect(() => () => playback?.dispose(), [playback])
+  useLayoutEffect(() => {
+    if (!isOpen && !expanded) playback?.pause()
+  }, [expanded, isOpen, playback])
+  useLayoutEffect(() => {
+    if (playback) paperRef.current?.style.setProperty('--jp-pen-cover', `${(1 - playback.progress) * 100}%`)
+  }, [animatedMode, expanded, playback])
+
   useEffect(() => {
     if (playSignal <= 0) return
-    remaining.current = duration
     setAnimatedMode(true)
+    if (playback) {
+      playback.start()
+      logEvent('player_play', { animationId: id, questionId })
+      return
+    }
+    remaining.current = duration
     setIndex(0)
     setFinished(false)
     setReplaying(false)
     setReplay((prev) => prev + 1)
     setPlaying(true)
     logEvent('player_play', { animationId: id, questionId })
-  }, [playSignal, duration, id, questionId])
+  }, [playSignal, duration, id, questionId, playback])
 
   useLayoutEffect(() => {
-    if (!playing || index < 0) return
+    if (playback || !legacyPlaying || legacyIndex < 0) return
 
     const startedAt = performance.now()
     let elapsed = false
     const timer = window.setTimeout(() => {
       elapsed = true
       remaining.current = duration
-      if (index === steps.length - 1) {
+      if (legacyIndex === steps.length - 1) {
         setFinished(true)
         setPlaying(false)
       } else {
-        setIndex(index + 1)
+        setIndex(legacyIndex + 1)
       }
     }, remaining.current)
 
@@ -138,10 +162,13 @@ function Player({
         remaining.current = Math.max(0, remaining.current - (performance.now() - startedAt))
       }
     }
-  }, [playing, index, duration, steps.length])
+  }, [playback, legacyPlaying, legacyIndex, duration, steps.length])
 
   function handleToggleOpen() {
-    if (isOpen) setPlaying(false)
+    if (isOpen) {
+      playback?.pause()
+      setPlaying(false)
+    }
     if (onToggleOpen) {
       onToggleOpen()
     } else {
@@ -150,17 +177,26 @@ function Player({
   }
 
   function startAnimatedFromStepOne() {
-    remaining.current = duration
     setAnimatedMode(true)
+    logEvent('player_play', { animationId: id, questionId })
+    if (playback) {
+      playback.start()
+      return
+    }
+    remaining.current = duration
     setIndex(0)
     setFinished(false)
     setReplaying(false)
     setReplay((prev) => prev + 1)
     setPlaying(true)
-    logEvent('player_play', { animationId: id, questionId })
   }
 
   function togglePlay() {
+    if (playback) {
+      if (!playing) logEvent('player_play', { animationId: id, questionId })
+      playback.toggle()
+      return
+    }
     if (playing) {
       setPlaying(false)
       return
@@ -176,13 +212,18 @@ function Player({
     logEvent('player_play', { animationId: id, questionId })
   }
 
-  function replayStep() {
-    if (!current) return
+  function replayStep(position: number) {
+    const step = steps[position]
+    if (!step) return
 
+    logEvent('player_replay_step', { animationId: id, questionId, step: step.n })
+    if (playback) {
+      playback.start(position, true)
+      return
+    }
     setPlaying(false)
     setReplaying(true)
     setReplay((prev) => prev + 1)
-    logEvent('player_replay_step', { animationId: id, questionId, step: current.n })
   }
 
   function readSteps() {
@@ -193,6 +234,39 @@ function Player({
     const narration = steps.map((step) => step.narration).join(' ')
     if (speak(narration, speechKey)) logEvent('read_aloud', { animationId: id, questionId })
   }
+
+  const speaker = playback && (
+    <button
+      type="button"
+      class="jp-player__speaker"
+      aria-label="Calculation narration"
+      aria-pressed={audioState.sound}
+      title={audioState.sound ? 'Turn narration off' : 'Turn narration on'}
+      onClick={() => playback.setSound(!audioState.sound)}
+    >
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M11 5 6 9H2v6h4l5 4z" />
+        {audioState.sound
+          ? <path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" />
+          : <path d="m16 9 6 6m0-6-6 6" />}
+      </svg>
+    </button>
+  )
+
+  const speedControl = playback && (
+    <select
+      class="jp-player__speed"
+      aria-label="Playback speed"
+      value={audioState.speed}
+      onChange={(event) => playback.setSpeed(Number(event.currentTarget.value))}
+    >
+      <option value={0.75}>0.75×</option>
+      <option value={1}>1×</option>
+      <option value={1.25}>1.25×</option>
+    </select>
+  )
+
+  const StepRow = playback ? 'button' : 'div'
 
   const calculationBody = !animatedMode ? (
     <>
@@ -224,7 +298,9 @@ function Player({
           </svg>
           Play step by step
         </button>
-        {speechAvailable && (
+        {speaker}
+        {speedControl}
+        {!playback && speechAvailable && (
           <button
             type="button"
             class="jp-calc-voice-btn"
@@ -253,6 +329,7 @@ function Player({
           type="button"
           class="jp-player__all-btn"
           onClick={() => {
+            playback?.stop()
             setPlaying(false)
             setAnimatedMode(false)
           }}
@@ -261,25 +338,28 @@ function Player({
         </button>
       </div>
 
-      <div class="jp-player__paper" data-running={playing || replaying}>
+      <div class="jp-player__paper" ref={paperRef} data-timed={playback ? 'true' : undefined} data-running={playing || replaying}>
         {!current && (
           <p class="jp-player__prompt">Tap play to watch the working, one step at a time.</p>
         )}
         {steps.map((step, position) => (
-          <div
+          <StepRow
             key={position === index ? `${position}-${replay}` : position}
             class="jp-player__row"
             data-current={position === index}
             aria-hidden={position > index ? true : undefined}
+            type={playback ? 'button' : undefined}
+            aria-label={playback ? `Replay step ${position + 1}: ${step.display}` : undefined}
+            onClick={playback ? () => replayStep(position) : undefined}
           >
             <span class="jp-player__line">{step.display}</span>
             <span class="jp-player__tag">{step.tag}</span>
-          </div>
+          </StepRow>
         ))}
       </div>
 
       <p class="jp-player__caption" aria-live="polite" aria-atomic="true">
-        {current ? `“${current.narration}”` : 'A caption appears for each step.'}
+        {current ? `“${recorded?.captions?.[index] ?? current.narration}”` : 'A caption appears for each step.'}
       </p>
 
       <div class="jp-player__controls">
@@ -290,12 +370,14 @@ function Player({
               : <path d="M7 4.5v15l13-7.5z" />}
           </svg>
         </button>
-        <button type="button" class="jp-player__replay" onClick={replayStep} disabled={!current} aria-label="Replay this step" title="Replay this step">
+        <button type="button" class="jp-player__replay" onClick={() => replayStep(index)} disabled={!current} aria-label="Replay this step" title="Replay this step">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5" />
           </svg>
         </button>
-        {speechAvailable && (
+        {speaker}
+        {speedControl}
+        {!playback && speechAvailable && (
           <button type="button" class="jp-player__voice" aria-pressed={speaking} onClick={readSteps}>
             {speaking ? (
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

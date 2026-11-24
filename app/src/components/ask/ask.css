@@ -437,3 +437,75 @@ body:has(.jp-ask-sheet[open]) {
   color: #64748b;
   cursor: default;
 }
+
+.jp-ask-composer--trial {
+  padding: 0 var(--space-1) 0 var(--space-3);
+}
+
+.jp-ask-composer--trial input,
+.jp-ask-composer--trial .jp-ask-send {
+  min-height: var(--tap-min);
+}
+
+.jp-ask-composer--trial input {
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.jp-ask-composer--trial:focus-within {
+  border-color: var(--brand);
+}
+
+.jp-ask-composer--trial .jp-ask-send {
+  width: var(--tap-min);
+  color: var(--bg);
+  background: var(--brand);
+  cursor: pointer;
+}
+
+.jp-ask-composer--trial .jp-ask-send:disabled {
+  color: #475569;
+  background: #e2e8f0;
+  cursor: default;
+}
+
+.jp-ask-footer .jp-ask-quota {
+  margin: var(--space-1) 0 0;
+  color: var(--ink-2);
+  font-size: 12px;
+}
+
+.jp-ask-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.jp-ask-feedback button {
+  min-width: var(--tap-min);
+  min-height: var(--tap-min);
+  padding: 0 var(--space-2);
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: var(--bg);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.jp-ask-feedback button[aria-pressed='true'] {
+  color: var(--brand);
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.jp-ask-feedback button:disabled {
+  cursor: default;
+}
+
+.jp-ask-feedback button:focus-visible,
+.jp-ask-composer--trial .jp-ask-send:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 1px;
+}

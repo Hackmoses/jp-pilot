@@ -17,7 +17,7 @@ export interface AskPreset {
 
 export interface Question {
   id: string
-  subject: 'chemistry'
+  subject: string
   topic: string
   type: 'recall' | 'calculation'
   difficulty: 1 | 2 | 3
@@ -38,7 +38,7 @@ export interface Question {
 
 export interface QuestionsFile {
   version: 1
-  subject: 'chemistry'
+  subject: string
   count: number
   questions: Question[]
 }
@@ -59,6 +59,7 @@ export interface Animation {
 
 export interface AnimationsFile {
   version: 1
+  subject?: string
   count: number
   animations: Animation[]
 }

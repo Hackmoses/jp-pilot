@@ -1,7 +1,10 @@
 import { describe, expect, it } from 'vitest'
-import { getQuestions } from './data'
+import questionsFile from '../../../data/questions.json'
+import { getQuestions, registerSubjectData } from './data'
 import { shuffleOptions } from './shuffle'
+import type { Question } from './types'
 
+registerSubjectData('chemistry', questionsFile.questions as unknown as Question[])
 const question = getQuestions()[0]
 
 describe('shuffleOptions', () => {

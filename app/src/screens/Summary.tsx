@@ -60,7 +60,7 @@ export function Summary() {
               )}
             </section>
 
-            <ShareButton score={{ correct: summary.correct, total: summary.total }} />
+            <ShareButton score={{ correct: summary.correct, total: summary.total }} subject={summary.subject} />
           </>
         ) : (
           <section class="jp-summary-card" aria-label="Overall progress">
@@ -73,7 +73,10 @@ export function Summary() {
           </section>
         )}
 
-        <a class="jp-btn jp-btn--primary jp-btn--full" href="#/q?subject=chemistry">
+        <a
+          class="jp-btn jp-btn--primary jp-btn--full"
+          href={summary?.subject ? `#/q?subject=${encodeURIComponent(summary.subject)}` : '#/subjects'}
+        >
           {summary ? 'Practice again' : 'Start practice'}
         </a>
 

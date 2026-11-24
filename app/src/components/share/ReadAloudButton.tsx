@@ -10,6 +10,7 @@ import {
 } from '../../lib/speech'
 import { logEvent } from '../../lib/store'
 import type { Option, OptionId } from '../../lib/types'
+import { OPTION_LETTERS } from '../question/logic'
 import './share.css'
 
 type ReadAloudProps = {
@@ -18,6 +19,7 @@ type ReadAloudProps = {
   | { target: 'question'; options: readonly Option[] }
   | { target: 'explanation' }
   | { target: 'whyWrong'; optionId: OptionId }
+  | { target: 'otherWrong'; options: readonly Option[]; pickedId: OptionId | null }
 )
 
 export function ReadAloudButton(props: ReadAloudProps) {
@@ -45,7 +47,18 @@ export function ReadAloudButton(props: ReadAloudProps) {
     ? [question.stem, ...props.options.map((option, index) => `Option ${'ABCD'[index]}. ${option.text}`)].join(' ')
     : props.target === 'whyWrong'
       ? (question.options.find((option) => option.id === props.optionId)?.whyWrong ?? '')
-      : question.explanation
+      : props.target === 'otherWrong'
+        ? props.options
+            .map((option, index) => ({ option, letter: OPTION_LETTERS[index] ?? 'A' }))
+            .filter(({ option }) =>
+              option.id !== question.answerId &&
+              option.id !== props.pickedId &&
+              typeof option.whyWrong === 'string' &&
+              option.whyWrong.trim().length > 0,
+            )
+            .map(({ option, letter }) => `Option ${letter}, ${option.text}. ${option.whyWrong}`)
+            .join(' ')
+        : question.explanation
 
   if (!words.trim()) return null
 
@@ -53,10 +66,12 @@ export function ReadAloudButton(props: ReadAloudProps) {
     ? 'Read question aloud'
     : target === 'whyWrong'
       ? 'Read why your answer is wrong aloud'
-      : 'Read explanation aloud'
+      : target === 'otherWrong'
+        ? 'Read why other options are wrong aloud'
+        : 'Read explanation aloud'
   const stopLabel = target === 'question'
     ? 'Stop reading question'
-    : target === 'whyWrong'
+    : target === 'whyWrong' || target === 'otherWrong'
       ? 'Stop reading'
       : 'Stop reading explanation'
 

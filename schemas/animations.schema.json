@@ -11,6 +11,10 @@
     "version": {
       "const": 1
     },
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
     "count": {
       "type": "integer"
     },
@@ -27,10 +31,12 @@
         ],
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^[a-z]+-(?:[a-z0-9]+-)*[0-9]{3,}$"
           },
           "questionId": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^[a-z]+-(?:[a-z0-9]+-)*[0-9]{3,}$"
           },
           "stepSeconds": {
             "type": "number"

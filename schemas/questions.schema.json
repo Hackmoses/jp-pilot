@@ -13,7 +13,8 @@
       "const": 1
     },
     "subject": {
-      "const": "chemistry"
+      "type": "string",
+      "minLength": 1
     },
     "count": {
       "type": "integer"
@@ -46,10 +47,11 @@
         "properties": {
           "id": {
             "type": "string",
-            "pattern": "^chem-[0-9]{3}$"
+            "pattern": "^[a-z]+-(?:[a-z0-9]+-)*[0-9]{3,}$"
           },
           "subject": {
-            "const": "chemistry"
+            "type": "string",
+            "minLength": 1
           },
           "topic": {
             "type": "string"
