@@ -56,8 +56,7 @@ export function Home() {
             </button>
             <a class="landing-action" href="#/q">Try free without an account</a>
           </div>
-          <p class="landing-note">easy sign-up, just your email</p>
-          <p class="landing-details">No download · Works on one bar of signal · 10 free questions a day</p>
+          <p class="landing-details">No download · Email-only sign-up · Works on one bar of signal · 10 free questions a day</p>
         </div>
 
         <FeatureCarousel paused={activeNotice !== null} />

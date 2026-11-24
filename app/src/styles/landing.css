@@ -160,7 +160,7 @@
   grid-column: 1;
   grid-row: 1;
   align-self: center;
-  gap: var(--landing-gap);
+  gap: 0;
   min-width: 0;
 }
 
@@ -184,6 +184,7 @@
 }
 
 .landing h1 {
+  margin-top: 10px;
   font-family: var(--font-display);
   font-size: clamp(26px, 3.6vw, 52px);
   line-height: 1.07;
@@ -194,10 +195,15 @@
 }
 
 .landing-pitch {
+  margin-top: 16px;
   max-width: 50ch;
   color: var(--landing-muted);
   font-size: clamp(14.5px, 1.15vw, 17.5px);
   line-height: 1.5;
+}
+
+.landing-intro .landing-actions {
+  margin-top: 26px;
 }
 
 /* Compact buttons across landing */
@@ -276,17 +282,12 @@
   outline-offset: 2px;
 }
 
-.landing-note {
-  color: var(--landing-amber);
-  font: 600 18px/1.15 var(--font-handwriting);
-  letter-spacing: 0.01em;
-}
-
 .landing-details {
+  margin-top: 16px;
   color: var(--landing-subtle);
   font-size: 12.5px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 /* Feature list (desktop selector) */
@@ -298,11 +299,30 @@
   display: none;
 }
 
-.landing-green  { --feature-ink: var(--good); --feature-bg: var(--good-soft); }
-.landing-red    { --feature-ink: var(--bad); --feature-bg: var(--bad-soft); }
-.landing-blue   { --feature-ink: var(--brand); --feature-bg: var(--brand-soft); }
-.landing-purple { --feature-ink: #6d28d9; --feature-bg: var(--memo-soft); }
-.landing-amber  { --feature-ink: var(--landing-amber); --feature-bg: var(--trap-soft); }
+.landing-green {
+  --feature-ink: var(--good);
+  --feature-bg: var(--good-soft);
+}
+
+.landing-red {
+  --feature-ink: var(--bad);
+  --feature-bg: var(--bad-soft);
+}
+
+.landing-blue {
+  --feature-ink: var(--brand);
+  --feature-bg: var(--brand-soft);
+}
+
+.landing-purple {
+  --feature-ink: #6d28d9;
+  --feature-bg: var(--memo-soft);
+}
+
+.landing-amber {
+  --feature-ink: var(--landing-amber);
+  --feature-bg: var(--trap-soft);
+}
 
 .landing-feature {
   display: flex;
@@ -504,7 +524,7 @@
   gap: 6px;
 }
 
-.landing-options > * {
+.landing-options>* {
   padding: 7px 11px;
   border: 1px solid var(--landing-border);
   border-radius: 10px;
@@ -752,20 +772,21 @@
 }
 
 /* Header & Footer responsive links */
-@media (width >= 820px) {
+@media (width >=820px) {
   .landing-nav {
     display: flex;
   }
 }
 
-@media (width >= 960px) {
+@media (width >=960px) {
   .landing-footer-meta {
     display: inline;
   }
 }
 
 /* Desktop & landscape two-column layout */
-@media (width >= 920px), (width >= 680px) and (height < 820px) {
+@media (width >=920px),
+(width >=680px) and (height < 820px) {
   .landing-main {
     grid-template-columns: minmax(0, 1.25fr) minmax(304px, 0.85fr);
     align-content: center;
@@ -784,19 +805,36 @@
 }
 
 /* Desktop feature selector cards + wide-screen fill */
-@media (width >= 920px) and (height >= 660px) {
+@media (width >=920px) and (height >=660px) {
+  .landing-main {
+    align-content: start;
+    padding-top: clamp(24px, 5.2dvh, 64px);
+    padding-bottom: clamp(16px, 3.5dvh, 40px);
+  }
+
   .landing-intro {
-    gap: clamp(12px, 2dvh, 22px);
+    align-self: start;
   }
 
   .landing h1 {
+    margin-top: clamp(8px, 1.2dvh, 14px);
     max-width: 18ch;
     font-size: clamp(34px, 3.85vw, 62px);
   }
 
   .landing-pitch {
+    margin-top: clamp(12px, 1.8dvh, 20px);
     max-width: 52ch;
     font-size: clamp(15px, 1.2vw, 19px);
+  }
+
+  .landing-intro .landing-actions {
+    margin-top: clamp(18px, 2.8dvh, 32px);
+    gap: 10px;
+  }
+
+  .landing-details {
+    margin-top: clamp(12px, 1.8dvh, 20px);
   }
 
   .landing-feature-list {
@@ -804,12 +842,12 @@
     grid-column: 1;
     grid-row: 2;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(8px, 1.2dvh, 12px);
-    margin-top: clamp(18px, 3.2dvh, 36px);
+    gap: clamp(9px, 1.4dvh, 14px);
+    margin-top: clamp(22px, 4dvh, 48px);
   }
 
   .landing-feature {
-    padding: clamp(7px, 1.1dvh, 12px) clamp(10px, 1vw, 14px);
+    padding: clamp(8px, 1.3dvh, 14px) clamp(11px, 1.1vw, 15px);
   }
 
   .landing-feature-copy {
@@ -821,13 +859,13 @@
   }
 
   .landing-demo {
-    padding: 12px 0;
+    padding: 8px 0;
     background: radial-gradient(ellipse 72% 66% at 50% 48%, rgb(29 78 216 / 0.08), transparent 72%);
   }
 
   .landing-phone {
-    width: min(100%, clamp(336px, 26vw, 430px));
-    height: clamp(344px, 56dvh, 530px);
+    width: min(100%, clamp(340px, 27vw, 440px));
+    height: clamp(350px, 60dvh, 570px);
   }
 
   .landing-slide {
@@ -845,7 +883,7 @@
 }
 
 /* Large desktop scaling inside phone mockup */
-@media (width >= 1280px) and (height >= 840px) {
+@media (width >=1280px) and (height >=840px) {
   .landing-slide {
     padding: 26px 22px 20px;
     gap: 14px;
@@ -869,7 +907,7 @@
     font-size: 14.5px;
   }
 
-  .landing-options > * {
+  .landing-options>* {
     padding: 10px 13px;
     font-size: 14.5px;
   }
@@ -899,7 +937,7 @@
 }
 
 /* Wide short viewports (e.g. 1024x640 or landscape tablet) */
-@media (width >= 680px) and (height < 660px) {
+@media (width >=680px) and (height < 660px) {
   .landing {
     --landing-gap: 9px;
     --landing-phone-height: clamp(230px, 58dvh, 340px);
@@ -915,9 +953,9 @@
 }
 
 /* Tablet portrait */
-@media (640px <= width < 920px) and (height >= 820px) {
+@media (640px <=width < 920px) and (height >=820px) {
   .landing {
-    --landing-phone-height: clamp(330px, 43dvh, 450px);
+    --landing-phone-height: clamp(350px, 48dvh, 500px);
   }
 
   .landing-header-inner,
@@ -927,9 +965,9 @@
 
   .landing-main {
     grid-template-columns: minmax(0, 620px);
-    align-content: center;
-    row-gap: clamp(20px, 3.2dvh, 34px);
-    padding: 12px 24px;
+    align-content: start;
+    padding: clamp(28px, 5dvh, 56px) 24px 20px;
+    row-gap: clamp(26px, 4dvh, 42px);
   }
 
   .landing h1 {
@@ -943,7 +981,7 @@
   }
 
   .landing-phone {
-    width: min(100%, 420px);
+    width: min(100%, 440px);
   }
 
   .landing-slide {
@@ -972,8 +1010,7 @@
 /* Mobile (< 640px) */
 @media (width < 640px) {
   .landing {
-    --landing-gap: 9px;
-    --landing-phone-height: clamp(220px, calc(100dvh - 405px), 340px);
+    --landing-phone-height: clamp(236px, calc(100dvh - 365px), 390px);
   }
 
   .landing-header-inner,
@@ -987,8 +1024,10 @@
   }
 
   .landing-main {
-    row-gap: 12px;
-    padding-block: 6px;
+    align-content: start;
+    row-gap: 16px;
+    padding-top: clamp(14px, 3dvh, 28px);
+    padding-bottom: 10px;
   }
 
   .landing-pilot,
@@ -999,13 +1038,19 @@
   }
 
   .landing h1 {
+    margin-top: 8px;
     font-size: clamp(24px, 7vw, 34px);
   }
 
   .landing-intro .landing-actions {
+    margin-top: 16px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 7px;
+    gap: 8px;
+  }
+
+  .landing-details {
+    margin-top: 12px;
   }
 
   .landing-intro .landing-action {
@@ -1054,8 +1099,7 @@
 /* Compact phones (e.g. 360x640, 320x568) */
 @media (width < 640px) and (height < 720px) {
   .landing {
-    --landing-gap: 6px;
-    --landing-phone-height: clamp(202px, calc(100dvh - 344px), 270px);
+    --landing-phone-height: clamp(212px, calc(100dvh - 320px), 295px);
   }
 
   .landing-header-inner {
@@ -1063,16 +1107,19 @@
   }
 
   .landing-main {
-    row-gap: 8px;
-    padding-block: 4px;
+    row-gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 6px;
   }
 
   .landing h1 {
+    margin-top: 6px;
     font-size: 22px;
     line-height: 1.08;
   }
 
   .landing-intro .landing-actions {
+    margin-top: 11px;
     grid-template-columns: 1fr 1fr;
     gap: 6px;
   }
@@ -1086,11 +1133,8 @@
     white-space: normal;
   }
 
-  .landing-note {
-    font-size: 16px;
-  }
-
   .landing-details {
+    margin-top: 8px;
     font-size: 11.5px;
     line-height: 1.3;
   }
@@ -1133,7 +1177,7 @@
     font-size: 11.5px;
   }
 
-  .landing-options > * {
+  .landing-options>* {
     padding: 5px 9px;
     font-size: 11.5px;
   }
@@ -1174,6 +1218,7 @@
 
 /* Extra-narrow / extra-short compact (320x568) */
 @media (width < 350px) {
+
   .landing-header-inner,
   .landing-main,
   .landing-footer-inner {
@@ -1196,12 +1241,12 @@
 
 @media (width < 640px) and (height < 600px) {
   .landing {
-    --landing-gap: 5px;
-    --landing-phone-height: clamp(188px, calc(100dvh - 308px), 230px);
+    --landing-phone-height: clamp(196px, calc(100dvh - 292px), 245px);
   }
 
   .landing-main {
-    row-gap: 6px;
+    padding-top: 8px;
+    row-gap: 8px;
   }
 
   .landing-slide {
@@ -1222,7 +1267,7 @@
     font-size: 10px;
   }
 
-  .landing-options > * {
+  .landing-options>* {
     padding: 4px 8px;
     font-size: 11px;
   }
@@ -1243,6 +1288,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .landing-track,
   .landing-action,
   .landing-feature,
