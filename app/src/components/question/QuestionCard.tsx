@@ -285,6 +285,21 @@ export function QuestionCard({
         </section>
       )}
 
+      {answered && (
+        <section class="jp-card jp-notes-card" aria-label="The trap and how to remember it">
+          <div class="jp-explain-subgrid">
+            <div class="jp-subbox jp-subbox--trap">
+              <span class="jp-subbox-label">The trap</span>
+              <p>{question.trap}</p>
+            </div>
+            <div class="jp-subbox jp-subbox--memo">
+              <span class="jp-subbox-label">Remember it</span>
+              <p>{question.mnemonic}</p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {answered && otherWrongOptions.length > 0 && (
         <section
           class="jp-card jp-other-wrong-card"
@@ -341,21 +356,6 @@ export function QuestionCard({
                 <p class="jp-other-wrong-reason">{option.whyWrong}</p>
               </div>
             ))}
-          </div>
-        </section>
-      )}
-
-      {answered && (
-        <section class="jp-card jp-notes-card" aria-label="The trap and how to remember it">
-          <div class="jp-explain-subgrid">
-            <div class="jp-subbox jp-subbox--trap">
-              <span class="jp-subbox-label">The trap</span>
-              <p>{question.trap}</p>
-            </div>
-            <div class="jp-subbox jp-subbox--memo">
-              <span class="jp-subbox-label">Remember it</span>
-              <p>{question.mnemonic}</p>
-            </div>
           </div>
         </section>
       )}

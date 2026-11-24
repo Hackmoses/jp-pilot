@@ -428,13 +428,36 @@ button.jp-player__row:focus-visible,
 }
 
 .jp-player__speed {
-  padding-inline: var(--space-2);
+  padding-inline: var(--space-1);
   font-variant-numeric: tabular-nums;
 }
 
+/* Compact visual size; an invisible ring keeps the 44px tap target. */
+.jp-player__controls button,
+.jp-player__controls .jp-player__speed {
+  position: relative;
+}
+
+.jp-player__controls button::after,
+.jp-player__controls .jp-player__speed::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+}
+
 .jp-player:has([data-timed="true"]) .jp-player__controls button {
-  min-inline-size: var(--tap-min);
-  min-block-size: var(--tap-min);
+  inline-size: 36px;
+  block-size: 36px;
+}
+
+.jp-player__controls .jp-player__speaker,
+.jp-player__controls .jp-player__speed {
+  min-block-size: 36px;
+  block-size: 36px;
+}
+
+.jp-player__controls .jp-player__speaker {
+  min-inline-size: 36px;
 }
 
 .jp-player__controls .jp-player__voice {

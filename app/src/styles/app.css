@@ -744,3 +744,20 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Answer card titles stay on one line on small phones. */
+.jp-wrong-title,
+.jp-explain-title-btn {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 400px) {
+  .jp-wrong-title,
+  .jp-explain-title-btn {
+    gap: 6px;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+  }
+}

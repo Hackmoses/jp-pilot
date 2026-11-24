@@ -69,7 +69,7 @@ function Player({
   const [activeKey, setActiveKey] = useState<string | null>(getActiveSpeechKey)
   const paperRef = useRef<HTMLDivElement>(null)
   const [recorded] = useState(() => calculationAudio(id))
-  const [audioState, setAudioState] = useState<PlaybackState>({ index: -1, playing: false, sound: false, speed: 1 })
+  const [audioState, setAudioState] = useState<PlaybackState>({ index: -1, playing: false, sound: true, speed: 1 })
   const [playback] = useState(() => recorded && new CalculationPlayback(
     steps.map((step) => recorded.clips.get(step.n)), duration, setAudioState,
     (progress) => paperRef.current?.style.setProperty('--jp-pen-cover', `${(1 - progress) * 100}%`),
@@ -370,7 +370,7 @@ function Player({
               : <path d="M7 4.5v15l13-7.5z" />}
           </svg>
         </button>
-        <button type="button" class="jp-player__replay" onClick={() => replayStep(index)} disabled={!current} aria-label="Replay this step" title="Replay this step">
+        <button type="button" class="jp-player__replay" onClick={() => (playback ? playback.rewind(3) : replayStep(index))} disabled={!current} aria-label={playback ? 'Back 3 seconds' : 'Replay this step'} title={playback ? 'Back 3 seconds' : 'Replay this step'}>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5" />
           </svg>

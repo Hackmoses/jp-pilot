@@ -18,8 +18,12 @@ const SILENT_WRITE = 1800
 // A silent sample lets the speaker gesture authorize this media element on mobile.
 const SILENCE = 'data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQIAAAAAAA=='
 
+// Narration is on by default; the student's mute choice lasts for the session.
+let soundPreference = true
+
 export class CalculationPlayback {
-  private state: PlaybackState = { index: -1, playing: false, sound: false, speed: 1 }
+  private state: PlaybackState = { index: -1, playing: false, sound: soundPreference, speed: 1 }
+  private unlocked = false
   private phase: Phase = 'idle'
   private audio?: HTMLAudioElement
   private source?: string
@@ -64,6 +68,7 @@ export class CalculationPlayback {
   }
 
   setSound(enabled: boolean) {
+    soundPreference = enabled
     if (enabled === this.state.sound) return
     this.update({ sound: enabled })
     if (!enabled) {
@@ -78,12 +83,35 @@ export class CalculationPlayback {
       return
     }
 
+    this.unlock()
+    if (this.phase === 'silent') this.start(this.state.index, this.single, this.state.playing)
+  }
+
+  // A silent sample played inside a tap authorises this media element on mobile.
+  private unlock() {
+    if (this.unlocked) return
+    this.unlocked = true
     const audio = this.media()
     audio.src = SILENCE
     void audio.play().then(() => {
       if (audio.src === SILENCE) audio.pause()
-    }).catch(() => {})
-    if (this.phase === 'silent') this.start(this.state.index, this.single, this.state.playing)
+    }).catch(() => { this.unlocked = false })
+  }
+
+  // Step back a few seconds within the current step; near its start, replay the step.
+  rewind(seconds = 3) {
+    if (this.state.index < 0) return
+    if (this.phase === 'voice' && this.audio && this.audio.currentTime > 0.5) {
+      this.audio.currentTime = Math.max(0, this.audio.currentTime - seconds)
+      this.write((this.writtenMs + this.audio.currentTime * 1000) / this.clipMs)
+      return
+    }
+    if (this.phase === 'silent' && this.elapsed > 500) {
+      this.elapsed = Math.max(0, this.elapsed - seconds * 1000)
+      this.write(this.elapsed / SILENT_WRITE)
+      return
+    }
+    this.start(this.state.index, this.single, this.state.playing)
   }
 
   setSpeed(speed: number) {
@@ -95,6 +123,7 @@ export class CalculationPlayback {
   }
 
   start(index = 0, single = false, playing = true) {
+    if (playing && this.state.sound) this.unlock()
     this.releaseClip()
     this.single = single
     this.elapsed = 0
