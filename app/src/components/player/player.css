@@ -1,3 +1,7 @@
+body:has(.jp-calc-modal[open]) {
+  overflow: hidden;
+}
+
 .jp-calc-card {
   display: flex;
   flex-direction: column;
@@ -9,13 +13,22 @@
   min-width: 0;
 }
 
+.jp-calc-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-right: 10px;
+  background: var(--bg);
+}
+
 .jp-calc-toggle {
   display: flex;
   align-items: center;
   gap: 12px;
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   min-height: 48px;
-  padding: 10px 14px;
+  padding: 10px 6px 10px 14px;
   background: var(--bg);
   border: 0;
   font-family: inherit;
@@ -23,7 +36,37 @@
   cursor: pointer;
 }
 
+.jp-calc-expand-btn,
+.jp-calc-modal-close {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #475569;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.jp-calc-modal-close {
+  margin-left: auto;
+}
+
+.jp-calc-expand-btn:hover,
+.jp-calc-modal-close:hover {
+  background: var(--brand-soft);
+  border-color: #bfdbfe;
+  color: var(--brand);
+}
+
 .jp-calc-toggle:focus-visible,
+.jp-calc-expand-btn:focus-visible,
+.jp-calc-modal-close:focus-visible,
 .jp-calc-play-btn:focus-visible,
 .jp-calc-voice-btn:focus-visible,
 .jp-player__all-btn:focus-visible {
@@ -371,4 +414,136 @@
 
 .jp-player__progress span[data-reached="true"] {
   background: var(--brand);
+}
+
+.jp-calc-paper[data-expandable="true"] {
+  cursor: zoom-in;
+}
+
+/* Expanded calculation modal */
+.jp-calc-modal {
+  width: min(920px, calc(100vw - 32px));
+  max-width: none;
+  min-height: min(560px, calc(100dvh - 48px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: var(--bg);
+  color: var(--ink);
+  box-shadow: 0 24px 64px -20px rgb(15 23 42 / 0.45);
+  overflow: hidden;
+}
+
+.jp-calc-modal::backdrop {
+  background: rgb(15 23 42 / 0.56);
+  backdrop-filter: blur(2px);
+}
+
+.jp-calc-modal-surface {
+  display: flex;
+  flex-direction: column;
+  min-height: min(560px, calc(100dvh - 48px));
+  max-height: calc(100dvh - 32px);
+}
+
+.jp-calc-modal-head {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  background: var(--bg);
+}
+
+.jp-calc-modal-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.jp-calc-modal .jp-calc-paper {
+  flex: 1;
+  padding: 28px 32px;
+  gap: 20px;
+  border-top: 0;
+  font-size: clamp(30px, 3.2vw, 38px);
+  line-height: 1.45;
+  background: repeating-linear-gradient(var(--bg) 0px, var(--bg) 55px, var(--paper-line) 56px);
+}
+
+.jp-calc-modal .jp-calc-line-tag {
+  font-size: 14px;
+}
+
+.jp-calc-modal .jp-player {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-top: 0;
+}
+
+.jp-calc-modal .jp-calc-bar,
+.jp-calc-modal .jp-player__header,
+.jp-calc-modal .jp-player__controls,
+.jp-calc-modal .jp-player__progress {
+  padding-inline: 32px;
+}
+
+.jp-calc-modal .jp-player__paper {
+  flex: 1;
+  min-height: 320px;
+  padding: 28px 32px;
+  gap: 20px;
+  background: repeating-linear-gradient(var(--bg) 0 55px, var(--paper-line) 56px);
+}
+
+.jp-calc-modal .jp-player__line {
+  font-size: clamp(2rem, 3vw, 2.4rem);
+}
+
+.jp-calc-modal .jp-player__tag {
+  font-size: 13.5px;
+}
+
+.jp-calc-modal .jp-player__caption {
+  padding: 12px 32px;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .jp-calc-modal {
+    width: calc(100vw - 16px);
+    min-height: min(540px, calc(100dvh - 24px));
+    max-height: calc(100dvh - 16px);
+  }
+
+  .jp-calc-modal-surface {
+    min-height: min(540px, calc(100dvh - 24px));
+    max-height: calc(100dvh - 16px);
+  }
+
+  .jp-calc-modal-head {
+    padding: 12px 16px;
+  }
+
+  .jp-calc-modal .jp-calc-paper,
+  .jp-calc-modal .jp-player__paper {
+    padding: 18px 16px;
+    gap: 14px;
+    font-size: 25px;
+    background: repeating-linear-gradient(var(--bg) 0px, var(--bg) 42px, var(--paper-line) 43px);
+  }
+
+  .jp-calc-modal .jp-calc-bar,
+  .jp-calc-modal .jp-player__header,
+  .jp-calc-modal .jp-player__controls,
+  .jp-calc-modal .jp-player__progress,
+  .jp-calc-modal .jp-player__caption {
+    padding-inline: 16px;
+  }
 }

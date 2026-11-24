@@ -260,6 +260,11 @@ body {
   border-color: #bbf7d0;
 }
 
+.jp-explain-card[data-open="false"] {
+  gap: 0;
+  padding-block: 11px;
+}
+
 .jp-explain-head {
   display: flex;
   justify-content: space-between;
@@ -268,18 +273,72 @@ body {
   min-width: 0;
 }
 
-.jp-explain-title {
+.jp-explain-title-btn {
+  flex: 1;
+  min-width: 0;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
-  font-weight: 700;
+  padding: 2px 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  font: 700 12px/1.2 var(--font-system);
   letter-spacing: 0.06em;
   color: #166534;
+  text-align: left;
+  cursor: pointer;
 }
 
-.jp-explain-title svg {
+.jp-explain-title-btn svg {
   flex: none;
+}
+
+.jp-explain-toggle-btn {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 28px;
+  padding: 3px 8px;
+  border: 1px solid #bbf7d0;
+  border-radius: 7px;
+  background: var(--good-soft);
+  color: #166534;
+  font: 600 12px/1.2 var(--font-system);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.jp-explain-toggle-btn:hover {
+  background: #dcfce7;
+  border-color: #86efac;
+}
+
+.jp-explain-title-btn:focus-visible,
+.jp-explain-toggle-btn:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.jp-explain-chev {
+  flex: none;
+  transition: transform 0.2s ease;
+}
+
+.jp-explain-chev[data-open="true"] {
+  transform: rotate(180deg);
+}
+
+.jp-explain-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jp-explain-content[hidden] {
+  display: none;
 }
 
 .jp-explain-body {

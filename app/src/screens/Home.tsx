@@ -17,21 +17,34 @@ export function Home() {
   return (
     <div class="landing">
       <header class="landing-header">
-        <div class="landing-brand">
-          <a class="landing-logo" href="#/" aria-label="JP home">JP</a>
-          <span class="landing-pilot">Chemistry pilot</span>
+        <div class="landing-header-inner">
+          <div class="landing-brand">
+            <a class="landing-logo" href="#/" aria-label="JP home">JP</a>
+            <a class="landing-brand-name" href="#/">JAMB Practice</a>
+            <span class="landing-pilot">Chemistry pilot</span>
+          </div>
+          <nav class="landing-nav" aria-label="Primary">
+            <a class="landing-nav-link" href="#/q">Practice</a>
+            <a class="landing-nav-link" href="#/done">Progress</a>
+            <button type="button" class="landing-nav-link" onClick={() => setActiveNotice('copyright')}>
+              About
+            </button>
+          </nav>
+          <div class="landing-header-actions">
+            <button type="button" class="landing-action landing-sign-in" onClick={() => setActiveNotice('email')}>
+              Sign in
+            </button>
+            <a class="landing-action landing-primary landing-header-cta" href="#/q">Try free</a>
+          </div>
         </div>
-        <button type="button" class="landing-action landing-sign-in" onClick={() => setActiveNotice('email')}>
-          Sign in
-        </button>
       </header>
 
       <main class="landing-main">
         <div class="landing-intro">
           <div class="landing-eyebrow">For UTME candidates</div>
-          <h1>JAMB practice without installing anything.</h1>
+          <h1>Don’t just cram JAMB — understand every step.</h1>
           <p class="landing-pitch">
-            Open it from a WhatsApp link, answer one question at a time, and learn why every option is right or wrong.
+            Every JAMB past question explained step by step — open it from a WhatsApp link and learn why every option is right or wrong.
           </p>
           <div class="landing-actions">
             <button type="button" class="landing-action landing-primary" onClick={() => setActiveNotice('email')}>
@@ -51,10 +64,22 @@ export function Home() {
       </main>
 
       <footer class="landing-footer">
-        <button type="button" class="landing-copyright" aria-haspopup="dialog"
-          onClick={() => setActiveNotice('copyright')}>
-          {copyright}
-        </button>
+        <div class="landing-footer-inner">
+          <span class="landing-footer-brand">
+            <strong>JP</strong> <span aria-hidden="true">·</span> UTME Chemistry Practice
+          </span>
+          <span class="landing-footer-meta">
+            Works offline · Zero install · Free daily practice
+          </span>
+          <div class="landing-footer-links">
+            <a class="landing-footer-link" href="#/q">Practice</a>
+            <a class="landing-footer-link" href="#/done">Progress</a>
+            <button type="button" class="landing-copyright" aria-haspopup="dialog"
+              onClick={() => setActiveNotice('copyright')}>
+              {copyright}
+            </button>
+          </div>
+        </div>
       </footer>
 
       <dialog class="landing-notice" ref={notice} onClose={() => setActiveNotice(null)}

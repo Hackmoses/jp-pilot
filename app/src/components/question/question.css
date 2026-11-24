@@ -305,17 +305,25 @@
 }
 
 .jp-option--removed {
-  background: #f9fafb;
-  border: 1.5px dashed var(--option-line);
+  background: #fcfafb;
+  border: 1.5px dashed #fca5a5;
+}
+
+.jp-screen--session .jp-option--removed .jp-badge,
+.jp-option--removed .jp-badge {
+  background: var(--bad-soft);
+  color: var(--bad);
 }
 
 .jp-option--removed .jp-option-text {
   color: var(--ink-2);
   text-decoration: line-through;
+  text-decoration-color: var(--bad);
+  text-decoration-thickness: 2px;
 }
 
 .jp-option--removed .jp-option-note {
-  color: var(--ink-2);
+  color: var(--bad);
 }
 
 .jp-actions {

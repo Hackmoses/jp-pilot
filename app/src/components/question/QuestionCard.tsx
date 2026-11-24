@@ -1,4 +1,5 @@
 import type { ComponentChildren } from 'preact'
+import { useEffect, useId, useState } from 'preact/hooks'
 import type { Option, OptionId, Question } from '../../lib/types'
 import { ReadAloudButton } from '../share/ReadAloudButton'
 import { OPTION_LETTERS, getOptionViewState, getRemoveButtonLabel, getResultCopy } from './logic'
@@ -35,6 +36,14 @@ export function QuestionCard({
   const answered = pickedId !== null
   const isCorrect = answered && pickedId === question.answerId
   const result = answered ? getResultCopy(isCorrect, removedIds.length) : null
+  const [explainOpen, setExplainOpen] = useState(true)
+  const explainBodyId = useId()
+
+  useEffect(() => {
+    setExplainOpen(true)
+  }, [question.id])
+
+  const toggleExplain = () => setExplainOpen((prev) => !prev)
 
   const pickedIdx = pickedId ? options.findIndex((option) => option.id === pickedId) : -1
   const pickedLetter = pickedIdx >= 0 ? OPTION_LETTERS[pickedIdx] : ''
@@ -182,26 +191,61 @@ export function QuestionCard({
       {answered && calculationSlot}
 
       {answered && (
-        <section class="jp-card jp-explain-card" aria-label={`Why ${correctLetter} is correct`}>
+        <section
+          class="jp-card jp-explain-card"
+          data-open={explainOpen ? 'true' : 'false'}
+          aria-label={`Why ${correctLetter} is correct`}
+        >
           <div class="jp-explain-head">
-            <span class="jp-explain-title">
+            <button
+              type="button"
+              class="jp-explain-title-btn"
+              aria-expanded={explainOpen}
+              aria-controls={explainBodyId}
+              onClick={toggleExplain}
+            >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M20 6 9 17l-5-5" />
               </svg>
               WHY {correctLetter} IS CORRECT
-            </span>
+            </button>
             <ReadAloudButton questionId={question.id} target="explanation" />
+            <button
+              type="button"
+              class="jp-explain-toggle-btn"
+              aria-expanded={explainOpen}
+              aria-controls={explainBodyId}
+              onClick={toggleExplain}
+            >
+              <span>{explainOpen ? 'Hide' : 'Show'}</span>
+              <span class="jp-explain-chev" data-open={explainOpen ? 'true' : 'false'} aria-hidden="true">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d={explainOpen ? 'm18 15-6-6-6 6' : 'm6 9 6 6 6-6'} />
+                </svg>
+              </span>
+            </button>
           </div>
-          <p class="jp-explain-body">{question.explanation}</p>
-          <div class="jp-explain-subgrid">
-            <div class="jp-subbox jp-subbox--trap">
-              <span class="jp-subbox-label">The trap</span>
-              <p>{question.trap}</p>
-            </div>
-            <div class="jp-subbox jp-subbox--memo">
-              <span class="jp-subbox-label">Remember it</span>
-              <p>{question.mnemonic}</p>
+          <div id={explainBodyId} class="jp-explain-content" hidden={!explainOpen}>
+            <p class="jp-explain-body">{question.explanation}</p>
+            <div class="jp-explain-subgrid">
+              <div class="jp-subbox jp-subbox--trap">
+                <span class="jp-subbox-label">The trap</span>
+                <p>{question.trap}</p>
+              </div>
+              <div class="jp-subbox jp-subbox--memo">
+                <span class="jp-subbox-label">Remember it</span>
+                <p>{question.mnemonic}</p>
+              </div>
             </div>
           </div>
         </section>
