@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jp-pilot-v8'
+const CACHE_NAME = 'jp-pilot-v9'
 const CALCULATION_AUDIO_CACHE = 'jp-calculation-audio-v1'
 const CALCULATION_AUDIO_PATH = new URL('./audio/', self.location.href).pathname
 
@@ -65,6 +65,22 @@ self.addEventListener('fetch', (event) => {
           return response
         })
         .catch(async () => (await caches.match('./index.html')) || (await caches.match('./'))),
+    )
+    return
+  }
+
+  // Question data changes between releases: try the network first, use the saved copy offline.
+  if (url.pathname.includes('/data/') && url.pathname.endsWith('.json')) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (response.ok) {
+            const copy = response.clone()
+            void caches.open(CACHE_NAME).then((cache) => cache.put(request, copy))
+          }
+          return response
+        })
+        .catch(async () => (await caches.match(request)) || Response.error()),
     )
     return
   }
