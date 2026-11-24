@@ -38,7 +38,24 @@ export function ShareButton(props: ShareButtonProps) {
 
   return (
     <div class="jp-share-control">
-      <button class="jp-wsd-button" type="button" onClick={share}>{isQuestion ? 'Share' : 'Share my score'}</button>
+      <button
+        class={isQuestion ? 'jp-wsd-button jp-share-btn' : 'jp-wsd-button'}
+        type="button"
+        aria-label={isQuestion ? 'Share' : undefined}
+        onClick={share}
+      >
+        {isQuestion ? (
+          <>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7" />
+              <path d="m16 6-4-4-4 4" />
+              <path d="M12 2v13" />
+            </svg>
+            <span class="jp-hide-sm">Share</span>
+          </>
+        ) : 'Share my score'}
+      </button>
       {fallbackFor === link && (
         <a class="jp-wsd-button" href={whatsAppUrl} target="_blank" rel="noopener noreferrer">
           Share on WhatsApp

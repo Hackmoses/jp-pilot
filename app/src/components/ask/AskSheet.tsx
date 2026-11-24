@@ -10,6 +10,7 @@ type AskProps = {
   letterFor: (optionId: OptionId) => string
 }
 
+export type AskPanelProps = AskProps & { onClose?: () => void }
 export type AskSheetProps = AskProps & { onClose: () => void }
 
 const presetLabels = {
@@ -41,12 +42,21 @@ function PresetReply({ preset, label }: { preset: AskPreset; label: string }) {
   )
 }
 
-function AskContent({ questionId, answered, letterFor, onClose, titleId }: AskProps & {
+function AskContent({
+  questionId,
+  answered,
+  letterFor,
+  onClose,
+  isSheet = false,
+  titleId,
+}: AskProps & {
   onClose?: () => void
+  isSheet?: boolean
   titleId: string
 }) {
   const question = getQuestion(questionId)
   const [turns, setTurns] = useState<{ preset: AskPreset; label: string }[]>([])
+  const [activePresetId, setActivePresetId] = useState<AskPreset['id'] | null>(null)
   const chat = useRef<HTMLDivElement>(null)
 
   useLayoutEffect(() => {
@@ -55,16 +65,29 @@ function AskContent({ questionId, answered, letterFor, onClose, titleId }: AskPr
 
   return (
     <>
-      {onClose && <div class="jp-ask-handle" aria-hidden="true" />}
+      {isSheet && <div class="jp-ask-handle" aria-hidden="true" />}
       <header class="jp-ask-header">
-        <div>
-          <h2 id={titleId}>Ask about this question</h2>
-          {question && <p>{question.id} · {question.topic}</p>}
+        <div class="jp-ask-title-row">
+          {!isSheet && (
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6d28d9"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z" />
+            </svg>
+          )}
+          <div>
+            <h2 id={titleId}>Ask about this question</h2>
+            {isSheet && question && <p>{question.id} · {question.topic}</p>}
+          </div>
         </div>
         {onClose && (
-          <button class="jp-ask-close" type="button" aria-label="Close Ask" onClick={onClose}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <button
+            class="jp-ask-close"
+            type="button"
+            aria-label={isSheet ? 'Close Ask' : 'Close Ask panel'}
+            onClick={onClose}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m6 6 12 12M18 6 6 18" />
             </svg>
           </button>
@@ -86,10 +109,18 @@ function AskContent({ questionId, answered, letterFor, onClose, titleId }: AskPr
                   ? `Why not ${letterFor(preset.optionId)}?`
                   : preset.label ?? presetLabels[preset.id]
                 return (
-                  <button type="button" key={preset.id} onClick={() => {
-                    logEvent('ask_preset', { questionId, presetId: preset.id })
-                    setTurns((previous) => [...previous, { preset, label }])
-                  }}>{label}</button>
+                  <button
+                    type="button"
+                    key={preset.id}
+                    data-active={activePresetId === preset.id ? 'true' : undefined}
+                    onClick={() => {
+                      logEvent('ask_preset', { questionId, presetId: preset.id })
+                      setActivePresetId(preset.id)
+                      setTurns((previous) => [...previous, { preset, label }])
+                    }}
+                  >
+                    {label}
+                  </button>
                 )
               })}
             </div>
@@ -101,19 +132,27 @@ function AskContent({ questionId, answered, letterFor, onClose, titleId }: AskPr
           </>
         )}
       </div>
-      <footer class="jp-ask-footer">
-        <input type="text" aria-label="Typed questions are coming soon"
-          placeholder="Typed questions are coming soon" disabled />
-      </footer>
+      {isSheet && (
+        <footer class="jp-ask-footer">
+          <input type="text" aria-label="Typed questions are coming soon"
+            placeholder="Typed questions are coming soon" disabled />
+        </footer>
+      )}
     </>
   )
 }
 
-export function AskPanel(props: AskProps) {
+export function AskPanel({ onClose, ...props }: AskPanelProps) {
   const titleId = useId()
   return (
     <section class="jp-ask-panel" aria-labelledby={titleId}>
-      <AskContent key={props.questionId + props.answered} {...props} titleId={titleId} />
+      <AskContent
+        key={props.questionId + props.answered}
+        {...props}
+        onClose={onClose}
+        isSheet={false}
+        titleId={titleId}
+      />
     </section>
   )
 }
@@ -153,8 +192,13 @@ export function AskSheet({ onClose, ...props }: AskSheetProps) {
         pointerStartedOnBackdrop.current = false
       }}>
       <div class="jp-ask-surface">
-        <AskContent key={props.questionId + props.answered} {...props} onClose={onClose}
-          titleId={titleId} />
+        <AskContent
+          key={props.questionId + props.answered}
+          {...props}
+          onClose={onClose}
+          isSheet={true}
+          titleId={titleId}
+        />
       </div>
     </dialog>
   )

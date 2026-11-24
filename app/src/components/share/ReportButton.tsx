@@ -70,11 +70,24 @@ export function ReportButton({ questionId }: { questionId: string }) {
 
   return (
     <div class="jp-report-control">
-      <button class="jp-wsd-button" ref={trigger} type="button" onClick={() => {
-        setSavedFor(undefined)
-        setOpenFor(questionId)
-      }}>This answer looks wrong</button>
-      <span role="status">{savedFor === questionId ? 'Report saved on this device.' : ''}</span>
+      <button
+        class="jp-wsd-button jp-report-trigger"
+        ref={trigger}
+        type="button"
+        aria-label="Report a problem"
+        onClick={() => {
+          setSavedFor(undefined)
+          setOpenFor(questionId)
+        }}
+      >
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 22V4" />
+          <path d="M4 4h12l-2 4 2 4H4" />
+        </svg>
+        <span class="jp-hide-sm">Report a problem</span>
+      </button>
+      {savedFor === questionId && <span class="jp-report-status" role="status">Saved</span>}
       {openFor === questionId && <ReportForm questionId={questionId} onClose={close}
         onSaved={() => {
           setSavedFor(questionId)

@@ -1,8 +1,6 @@
 import type { Option, OptionId, Question } from '../../lib/types'
-import { SolutionPlayer } from '../player/SolutionPlayer'
 import { ReadAloudButton } from '../share/ReadAloudButton'
-import { ReportButton } from '../share/ReportButton'
-import { getOptionViewState, getRemoveButtonLabel, getResultCopy } from './logic'
+import { OPTION_LETTERS, getOptionViewState, getRemoveButtonLabel, getResultCopy } from './logic'
 
 export interface QuestionCardProps {
   question: Question
@@ -35,52 +33,58 @@ export function QuestionCard({
   const isCorrect = answered && pickedId === question.answerId
   const result = answered ? getResultCopy(isCorrect, removedIds.length) : null
 
+  const pickedIdx = pickedId ? options.findIndex((option) => option.id === pickedId) : -1
+  const pickedLetter = pickedIdx >= 0 ? OPTION_LETTERS[pickedIdx] : ''
+  const correctIdx = options.findIndex((option) => option.id === question.answerId)
+  const correctLetter = correctIdx >= 0 ? OPTION_LETTERS[correctIdx] : ''
+
   return (
     <>
-      <div class="jp-question-col">
-        {result && (
-          <div
-            class={`jp-result ${isCorrect ? 'jp-result--good' : 'jp-result--bad'}`}
-            role="status"
-            aria-live="polite"
-          >
-            <span class="jp-result-icon" aria-hidden="true">
-              {isCorrect ? (
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M20 6 9 17l-5-5" />
-                </svg>
-              ) : (
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M18 6 6 18" />
-                  <path d="m6 6 12 12" />
-                </svg>
-              )}
+      {result && (
+        <div
+          class={`jp-result ${isCorrect ? 'jp-result--good' : 'jp-result--bad'}`}
+          role="status"
+          aria-live="polite"
+        >
+          <span class="jp-result-icon" aria-hidden="true">
+            {isCorrect ? (
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            ) : (
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            )}
+          </span>
+          <div class="jp-result-copy">
+            <span class="jp-result-title">
+              {isCorrect ? 'Correct.' : `Not quite. You chose ${pickedLetter}.`}
             </span>
-            <div class="jp-result-copy">
-              <span class="jp-result-title">{result.title}</span>
-              <span class="jp-result-sub">{result.subtitle}</span>
-            </div>
+            <span class="jp-result-sub">{result.subtitle}</span>
           </div>
-        )}
+        </div>
+      )}
 
+      <section class="jp-card jp-question-card" aria-label="Question">
         {review && <span class="jp-pill jp-pill--streak jp-pill--review">Review</span>}
         <p class="jp-stem">{question.stem}</p>
 
@@ -170,42 +174,32 @@ export function QuestionCard({
             )}
           </>
         )}
-
-        {answered && <ReportButton questionId={question.id} />}
-      </div>
+      </section>
 
       {answered && (
-        <div class="jp-explain-col">
-          {question.animationId && (
-            <div
-              class="jp-player-slot"
-              data-slot="solution-player"
-              data-animation-id={question.animationId}
-            >
-              <SolutionPlayer animationId={question.animationId} />
-            </div>
-          )}
-
-          <div class="jp-blocks">
-            <section class="jp-block jp-block--explain" aria-label="Why it is correct">
-              <span class="jp-block-label">Why it is correct</span>
-              <p>{question.explanation}</p>
-              <ReadAloudButton questionId={question.id} target="explanation" />
-            </section>
-
-            {!question.animationId && (
-              <section class="jp-block jp-block--trap" aria-label="The trap">
-                <span class="jp-block-label">The trap</span>
-                <p>{question.trap}</p>
-              </section>
-            )}
-
-            <section class="jp-block jp-block--memo" aria-label="Remember it">
-              <span class="jp-block-label">Remember it</span>
-              <p>{question.mnemonic}</p>
-            </section>
+        <section class="jp-card jp-explain-card" aria-label={`Why ${correctLetter} is correct`}>
+          <div class="jp-explain-head">
+            <span class="jp-explain-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              WHY {correctLetter} IS CORRECT
+            </span>
+            <ReadAloudButton questionId={question.id} target="explanation" />
           </div>
-        </div>
+          <p class="jp-explain-body">{question.explanation}</p>
+          <div class="jp-explain-subgrid">
+            <div class="jp-subbox jp-subbox--trap">
+              <span class="jp-subbox-label">The trap</span>
+              <p>{question.trap}</p>
+            </div>
+            <div class="jp-subbox jp-subbox--memo">
+              <span class="jp-subbox-label">Remember it</span>
+              <p>{question.mnemonic}</p>
+            </div>
+          </div>
+        </section>
       )}
     </>
   )
