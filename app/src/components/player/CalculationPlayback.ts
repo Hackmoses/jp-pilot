@@ -24,6 +24,7 @@ let soundPreference = true
 export class CalculationPlayback {
   private state: PlaybackState = { index: -1, playing: false, sound: soundPreference, speed: 1 }
   private unlocked = false
+  private seekMs = 0
   private phase: Phase = 'idle'
   private audio?: HTMLAudioElement
   private source?: string
@@ -98,20 +99,54 @@ export class CalculationPlayback {
     }).catch(() => { this.unlocked = false })
   }
 
-  // Step back a few seconds within the current step; near its start, replay the step.
+  // Step back a number of seconds through the whole calculation, crossing into earlier steps.
   rewind(seconds = 3) {
     if (this.state.index < 0) return
-    if (this.phase === 'voice' && this.audio && this.audio.currentTime > 0.5) {
-      this.audio.currentTime = Math.max(0, this.audio.currentTime - seconds)
-      this.write((this.writtenMs + this.audio.currentTime * 1000) / this.clipMs)
+    let remaining = seconds * 1000
+    let index = this.state.index
+    const position = this.positionMs()
+    if (position >= remaining && this.phase !== 'done' && this.phase !== 'gap') {
+      this.seekWithin(position - remaining)
       return
     }
-    if (this.phase === 'silent' && this.elapsed > 500) {
-      this.elapsed = Math.max(0, this.elapsed - seconds * 1000)
-      this.write(this.elapsed / SILENT_WRITE)
-      return
+    remaining -= position
+    while (index > 0) {
+      index--
+      const length = this.stepMs(index)
+      if (length >= remaining) {
+        this.start(index, this.single, this.state.playing, length - remaining)
+        return
+      }
+      remaining -= length
     }
-    this.start(this.state.index, this.single, this.state.playing)
+    this.start(0, this.single, this.state.playing)
+  }
+
+  private stepMs(index: number) {
+    const clip = this.state.sound ? this.clips[index] : undefined
+    return clip ? clip.durationMs : this.silentMs
+  }
+
+  private positionMs() {
+    switch (this.phase) {
+      case 'voice': return (this.audio?.currentTime ?? 0) * 1000
+      case 'silent': return this.elapsed
+      case 'gap':
+      case 'done': return this.stepMs(this.state.index)
+      default: return 0
+    }
+  }
+
+  private seekWithin(ms: number) {
+    if (this.phase === 'voice' && this.audio) {
+      this.audio.currentTime = ms / 1000
+      this.write((this.writtenMs + ms) / this.clipMs)
+    } else if (this.phase === 'silent') {
+      this.elapsed = ms
+      this.write(ms / SILENT_WRITE)
+    } else {
+      this.start(this.state.index, this.single, this.state.playing)
+    }
   }
 
   setSpeed(speed: number) {
@@ -122,7 +157,8 @@ export class CalculationPlayback {
     this.update({ speed })
   }
 
-  start(index = 0, single = false, playing = true) {
+  start(index = 0, single = false, playing = true, offsetMs = 0) {
+    this.seekMs = offsetMs
     if (playing && this.state.sound) this.unlock()
     this.releaseClip()
     this.single = single
@@ -135,7 +171,13 @@ export class CalculationPlayback {
     this.next = undefined
     if (preloaded?.clip !== clip) preloaded?.abort()
     if (clip) this.load(preloaded?.clip === clip ? preloaded : requestClip(clip))
-    else this.phase = 'silent'
+    else {
+      this.phase = 'silent'
+      if (offsetMs) {
+        this.elapsed = offsetMs
+        this.write(offsetMs / SILENT_WRITE)
+      }
+    }
     this.schedule()
   }
 
@@ -235,8 +277,18 @@ export class CalculationPlayback {
         this.pending = undefined
         this.saveClip = () => request.saveAfterPlay(blob)
         this.clipMs = request.clip.durationMs
-        this.phase = 'lead'
         this.preload()
+        if (this.seekMs > 0) {
+          // Rewound into this step: start the voice part-way through, pen in step.
+          audio.currentTime = this.seekMs / 1000
+          this.seekMs = 0
+          this.writtenMs = 0
+          this.write(audio.currentTime * 1000 / this.clipMs)
+          this.phase = 'voice'
+          if (this.state.playing) this.playVoice()
+        } else {
+          this.phase = 'lead'
+        }
         this.schedule()
       }
       this.source = URL.createObjectURL(blob)
