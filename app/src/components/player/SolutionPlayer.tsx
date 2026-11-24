@@ -66,7 +66,13 @@ function Player({
   const current = steps[index]
 
   useEffect(() => {
-    if (!isOpen || document.getElementById('jp-caveat-font')) return
+    if (
+      !isOpen ||
+      document.getElementById('jp-caveat-font') ||
+      document.querySelector('link[href*="Caveat"]')
+    ) {
+      return
+    }
 
     const font = document.createElement('link')
     font.id = 'jp-caveat-font'

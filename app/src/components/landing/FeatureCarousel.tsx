@@ -129,6 +129,7 @@ export function FeatureCarousel({ paused }: { paused: boolean }) {
       <div class="landing-demo">
         <div class="landing-phone">
           <div class="landing-phone-screen">
+            <div class="landing-phone-notch" aria-hidden="true" />
             <div class="landing-track" style={{ transform: `translateX(-${index * 100}%)` }}>
               {features.map((feature, position) => (
                 <div class={`landing-slide landing-${feature.color}`} key={feature.name} role="group"

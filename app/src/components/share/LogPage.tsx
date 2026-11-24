@@ -20,7 +20,10 @@ export function LogPage() {
 
   return (
     <main class="jp-log-page">
-      <h1>Pilot event log</h1>
+      <header class="jp-log-header">
+        <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
+        <h1>Pilot event log</h1>
+      </header>
       <textarea ref={text} aria-label="Pilot event log JSON" readOnly value={snapshot} rows={12} />
       <button class="jp-wsd-button jp-wsd-primary" type="button" onClick={copy}>Copy</button>
       <p role="status">{status}</p>

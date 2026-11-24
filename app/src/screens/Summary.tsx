@@ -10,6 +10,10 @@ export function Summary() {
   return (
     <main class="jp-screen">
       <div class="jp-summary">
+        <div class="jp-summary-brand">
+          <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
+          <span class="jp-topic">JAMB Chemistry</span>
+        </div>
         <div class="jp-pills">
           <span class="jp-pill jp-pill--practice">Session complete</span>
           {progress.streakDays > 0 && (

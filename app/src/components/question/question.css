@@ -152,6 +152,7 @@
 }
 
 .jp-result-title {
+  font-family: var(--font-display);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -173,9 +174,11 @@
 
 .jp-stem {
   margin: 0;
+  font-family: var(--font-display);
   font-size: 19px;
   line-height: 1.45;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   color: var(--ink);
   overflow-wrap: anywhere;
 }
@@ -191,8 +194,8 @@
   flex-direction: column;
   gap: var(--space-2);
   width: 100%;
-  min-height: 56px;
-  padding: var(--space-3) 14px;
+  min-height: 44px;
+  padding: 9px 12px;
   border-radius: var(--radius-card);
   border: 1.5px solid var(--option-line);
   background: var(--bg);
@@ -325,19 +328,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-2);
-  min-height: var(--tap-min);
-  padding: 10px 14px;
-  border-radius: var(--radius-small);
+  gap: 6px;
+  min-height: 34px;
+  padding: 5px 10px;
+  border-radius: 8px;
   border: 1px solid var(--option-line);
   background: var(--bg);
   color: #1f2937;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 1.25;
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.jp-btn:hover:not(:disabled) {
+  background: #f8fafc;
+  border-color: #94a3b8;
 }
 
 .jp-btn:disabled {
@@ -358,10 +367,20 @@
   color: var(--hint);
 }
 
+.jp-btn--hint:hover:not(:disabled) {
+  background: #fef3c7;
+  border-color: #fcd34d;
+}
+
 .jp-btn--ask {
   background: var(--brand-soft);
   border-color: #bfdbfe;
   color: #1e40af;
+}
+
+.jp-btn--ask:hover:not(:disabled) {
+  background: #dbeafe;
+  border-color: #93c5fd;
 }
 
 .jp-btn--primary {
@@ -370,10 +389,16 @@
   color: var(--bg);
 }
 
+.jp-btn--primary:hover:not(:disabled) {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
 .jp-btn--full {
   width: 100%;
-  min-height: 50px;
-  font-size: 16px;
+  min-height: 38px;
+  padding: 7px 14px;
+  font-size: 14px;
 }
 
 .jp-hint-box {
@@ -493,9 +518,11 @@
 
 .jp-app-title {
   margin: 0;
+  font-family: var(--font-display);
   font-size: 28px;
   line-height: 1.2;
   font-weight: 700;
+  letter-spacing: -0.02em;
   color: var(--ink);
 }
 
@@ -523,8 +550,10 @@
 }
 
 .jp-stat-value {
+  font-family: var(--font-display);
   font-size: 24px;
   font-weight: 700;
+  font-variant-numeric: tabular-nums;
   color: var(--ink);
 }
 
@@ -543,8 +572,11 @@
 }
 
 .jp-summary-score {
+  font-family: var(--font-display);
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
   color: #1e40af;
   line-height: 1.15;
 }
@@ -587,11 +619,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: var(--tap-min);
+  align-self: center;
+  min-height: 32px;
+  padding: 4px 10px;
+  border-radius: 8px;
   color: var(--brand);
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 600;
   text-decoration: none;
+}
+
+.jp-link-btn:hover {
+  background: var(--brand-soft);
 }
 
 .jp-player-slot:empty {

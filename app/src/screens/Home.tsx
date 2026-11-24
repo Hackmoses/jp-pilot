@@ -18,7 +18,7 @@ export function Home() {
     <div class="landing">
       <header class="landing-header">
         <div class="landing-brand">
-          <span class="landing-logo">JP</span>
+          <a class="landing-logo" href="#/" aria-label="JP home">JP</a>
           <span class="landing-pilot">Chemistry pilot</span>
         </div>
         <button type="button" class="landing-action landing-sign-in" onClick={() => setActiveNotice('email')}>

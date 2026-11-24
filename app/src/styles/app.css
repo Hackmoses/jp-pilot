@@ -3,6 +3,7 @@ body {
   background: #f8fafc;
   color: #0f172a;
   font-family: var(--font-system);
+  -webkit-font-smoothing: antialiased;
   overflow-x: clip;
 }
 
@@ -55,9 +56,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-display);
   font-weight: 800;
   font-size: 12px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
   flex: none;
+  transition: background-color 0.15s ease, transform 0.12s ease;
+}
+
+.jp-logo:hover {
+  background: #1e40af;
+}
+
+.jp-logo:active {
+  transform: scale(0.96);
+}
+
+.jp-logo:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
 }
 
 .jp-screen--session .jp-topic {
@@ -81,6 +99,7 @@ body {
   flex: none;
   font-size: 13px;
   font-weight: 600;
+  font-variant-numeric: tabular-nums;
   color: #0f172a;
   white-space: nowrap;
 }
@@ -111,6 +130,7 @@ body {
 .jp-pill--score {
   color: #14532d;
   background: var(--good-soft);
+  font-variant-numeric: tabular-nums;
 }
 
 .jp-screen--session .jp-pill--streak {
@@ -164,10 +184,11 @@ body {
 }
 
 .jp-screen--session .jp-result-title {
+  font-family: var(--font-display);
   font-size: 15px;
 }
 
-/* Question & Explanation cards (16px inner padding) */
+/* Question & Explanation cards */
 .jp-card {
   display: flex;
   flex-direction: column;
@@ -175,6 +196,7 @@ body {
   background: var(--bg);
   border: 1px solid #e2e8f0;
   border-radius: 14px;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.04);
   min-width: 0;
 }
 
@@ -184,9 +206,11 @@ body {
 
 .jp-screen--session .jp-stem {
   margin: 0;
+  font-family: var(--font-display);
   font-size: 18px;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   color: #0f172a;
 }
 
@@ -326,9 +350,9 @@ body {
 
 .jp-screen--session .jp-btn {
   gap: 6px;
-  min-height: var(--tap-min);
-  padding: 0 12px;
-  border-radius: 10px;
+  min-height: 32px;
+  padding: 5px 10px;
+  border-radius: 8px;
   font-size: 13px;
 }
 
@@ -345,8 +369,8 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 10px 16px;
-  padding-bottom: max(10px, env(safe-area-inset-bottom));
+  padding: 8px 16px;
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
   display: flex;
   align-items: center;
   gap: 8px;
@@ -357,14 +381,20 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: var(--tap-min);
-  height: var(--tap-min);
+  width: 34px;
+  height: 34px;
   padding: 0;
   background: #f5f3ff;
   border: 1px solid #c4b5fd;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #6d28d9;
   cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.jp-ask-icon-btn:hover {
+  background: #ede9fe;
+  border-color: #a78bfa;
 }
 
 .jp-ask-icon-btn:focus-visible {
@@ -373,21 +403,21 @@ body {
 }
 
 .jp-footer-bar .jp-share-btn {
-  min-height: var(--tap-min);
-  padding: 0 12px;
+  min-height: 34px;
+  padding: 5px 10px;
   border: 1.5px solid var(--good);
-  border-radius: 10px;
+  border-radius: 8px;
   color: var(--good);
   font-size: 13px;
 }
 
 .jp-footer-bar .jp-report-trigger {
-  min-height: var(--tap-min);
-  padding: 0 10px;
+  min-height: 34px;
+  padding: 5px 8px;
   border: 0;
   background: transparent;
   color: #475569;
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 500;
 }
 
@@ -405,7 +435,7 @@ body {
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex: none;
 }
 
@@ -417,26 +447,26 @@ body {
 
 .jp-footer-bar .jp-next-btn,
 .jp-footer-bar .jp-skip-btn {
-  min-height: var(--tap-min);
-  padding: 0 16px;
-  border-radius: 12px;
-  font-size: 15px;
-  font-weight: 700;
+  min-height: 34px;
+  padding: 5px 12px;
+  border-radius: 9px;
+  font-size: 13.5px;
+  font-weight: 600;
 }
 
 .jp-kbd {
   font-size: 11px;
   font-weight: 600;
-  padding: 2px 6px;
+  padding: 2px 5px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.22);
 }
 
 .jp-read-aloud--explain {
-  min-height: 36px;
-  padding: 0 10px;
+  min-height: 28px;
+  padding: 3px 8px;
   border: 1px solid #cbd5e1;
-  border-radius: 8px;
+  border-radius: 7px;
   color: #334155;
   font-size: 12px;
 }
@@ -451,7 +481,7 @@ body {
   }
 
   .jp-topbar-inner {
-    padding: 10px 12px;
+    padding: 9px 12px;
     gap: 8px;
   }
 
@@ -461,20 +491,23 @@ body {
   }
 
   .jp-read-aloud--explain {
-    min-height: var(--tap-min);
+    min-height: 28px;
+    padding: 3px 8px;
   }
 
   .jp-footer-bar .jp-share-btn,
   .jp-footer-bar .jp-report-trigger {
-    width: var(--tap-min);
+    width: 34px;
+    height: 34px;
+    min-height: 34px;
     padding: 0;
   }
 }
 
 @media (min-width: 761px) {
   .jp-screen--session .jp-btn:not(.jp-next-btn):not(.jp-skip-btn) {
-    min-height: 36px;
-    padding: 0 12px;
+    min-height: 32px;
+    padding: 4px 10px;
   }
 
   .jp-ask-icon-btn,
@@ -482,24 +515,32 @@ body {
   .jp-footer-bar .jp-report-trigger,
   .jp-footer-bar .jp-next-btn,
   .jp-footer-bar .jp-skip-btn {
-    min-height: 40px;
+    min-height: 34px;
   }
 
   .jp-ask-icon-btn {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
   }
 }
 
 /* Summary screen card on wider screens */
+.jp-summary-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: -4px;
+}
+
 .jp-summary .jp-share-control {
   width: 100%;
 }
 
-.jp-summary .jp-share-control > .jp-wsd-button {
+.jp-summary .jp-share-control>.jp-wsd-button {
   width: 100%;
-  min-height: var(--tap-min);
-  font-size: 15px;
+  min-height: 36px;
+  padding: 6px 12px;
+  font-size: 13.5px;
 }
 
 @media (min-width: 600px) {
@@ -513,6 +554,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

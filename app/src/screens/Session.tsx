@@ -317,7 +317,7 @@ export function Session() {
       <header class="jp-topbar">
         <div class="jp-topbar-inner">
           <div class="jp-brand-group">
-            <span class="jp-logo" aria-hidden="true">JP</span>
+            <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
             <span class="jp-topic jp-hide-sm">Chemistry · {question.topic}</span>
           </div>
           <div class="jp-progress-group">

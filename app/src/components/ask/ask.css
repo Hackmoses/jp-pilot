@@ -37,6 +37,7 @@ body:has(.jp-ask-sheet[open]) {
   border-radius: 14px;
   background: var(--bg);
   color: #0f172a;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.04);
   overflow: hidden;
 }
 
@@ -74,6 +75,7 @@ body:has(.jp-ask-sheet[open]) {
 }
 
 .jp-ask-header h2 {
+  font-family: var(--font-display);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.3;
@@ -95,8 +97,8 @@ body:has(.jp-ask-sheet[open]) {
   display: grid;
   flex: none;
   place-items: center;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   padding: 0;
   border: 0;
   border-radius: 8px;
@@ -130,13 +132,13 @@ body:has(.jp-ask-sheet[open]) {
 }
 
 .jp-ask-presets button {
-  min-height: 36px;
-  padding: 0 12px;
+  min-height: 30px;
+  padding: 4px 10px;
   border: 1px solid #cbd5e1;
   border-radius: var(--radius-pill);
   background: var(--bg);
   color: #0f172a;
-  font-size: 13px;
+  font-size: 12.5px;
 }
 
 .jp-ask-presets button[data-active="true"] {
@@ -147,12 +149,13 @@ body:has(.jp-ask-sheet[open]) {
 
 @media (max-width: 760px) {
   .jp-ask-close {
-    min-width: var(--tap-min);
-    min-height: var(--tap-min);
+    width: 32px;
+    height: 32px;
   }
 
   .jp-ask-presets button {
-    min-height: var(--tap-min);
+    min-height: 32px;
+    padding: 4px 10px;
   }
 }
 
@@ -206,7 +209,8 @@ body:has(.jp-ask-sheet[open]) {
 .jp-ask-bubble summary {
   display: flex;
   align-items: center;
-  min-height: var(--tap-min);
+  min-height: 30px;
+  padding: 3px 0;
   color: var(--brand);
   font-weight: 600;
   cursor: pointer;
@@ -244,8 +248,8 @@ body:has(.jp-ask-sheet[open]) {
 .jp-ask-footer input {
   box-sizing: border-box;
   width: 100%;
-  min-height: 48px;
-  padding: 0 var(--space-3);
+  min-height: 38px;
+  padding: 0 11px;
   border: 1px solid var(--option-line);
   border-radius: var(--radius-card);
   background: var(--bg);
