@@ -200,9 +200,45 @@
             "description": "Options that must not be shuffled, such as All of the above. Empty for the pilot set."
           },
           "source": {
-            "type": "string"
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "provider",
+                  "id"
+                ],
+                "properties": {
+                  "provider": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "id": {
+                    "type": "integer"
+                  },
+                  "yearLabel": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            ]
           },
           "reviewed": {
+            "type": "boolean"
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "JAMB-style practice"
+            ]
+          },
+          "yearVerified": {
             "type": "boolean"
           }
         }

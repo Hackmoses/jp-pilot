@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "subject": "irs",
+  "count": 12,
+  "questions": [
+    {
+      "id": "irs-api-0012",
+      "subject": "irs",
+      "topic": "The Glorious Qur'an",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is 'Asbab al-Nuzul' in Islamic studies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rules of interpretation",
+          "why": "Rules of interpretation belong to Usul al-Tafsir, not Asbab al-Nuzul.",
+          "whyWrong": "Rules and principles for interpreting the Qur'an are studied under Usul al-Tafsir. Asbab al-Nuzul is narrower and refers specifically to the occasions or events that prompted particular verses to be revealed."
+        },
+        {
+          "id": "b",
+          "text": "Context of revelation",
+          "why": "Asbab al-Nuzul means the occasions and historical circumstances behind Qur'anic revelations.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Compilation methods",
+          "why": "Compilation of the Qur'an into one volume is Jam' al-Qur'an, not Asbab al-Nuzul.",
+          "whyWrong": "How the Qur'an was collected and compiled into a single text is known as Jam' al-Qur'an. Asbab al-Nuzul deals with why and when specific verses were sent down during the Prophet's mission."
+        },
+        {
+          "id": "d",
+          "text": "Types of angels",
+          "why": "Nuzul refers to revelation coming down, not categories of angels.",
+          "whyWrong": "The word Nuzul refers to the descent or sending down of revelation, even though Jibril conveyed it. Studying the roles of angels falls under Iman bi'l-Mala'ikah, not Asbab al-Nuzul."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Break down the Arabic words: 'asbab' means causes or occasions, and 'nuzul' means descent of revelation.",
+      "explanation": "Asbab al-Nuzul literally means 'occasions of revelation'. It records the specific questions, incidents, or historical situations in Makkah and Madinah that led to the revelation of particular Qur'anic verses, helping scholars understand their precise meaning.",
+      "trap": "Students often pick 'Rules of interpretation' because Asbab al-Nuzul is used in Tafsir. Knowing the context supports Tafsir, but the term itself means the occasions of revelation.",
+      "mnemonic": "Asbab = causes, Nuzul = sent down. Causes behind what was sent down.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Many verses of the Qur'an were revealed to answer a real question or respond to an event. Asbab al-Nuzul is the study of those real-life events behind the verses."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Rules of interpretation belong to Usul al-Tafsir. Asbab al-Nuzul only supplies the historical background of a verse so those rules can be applied accurately."
+        },
+        {
+          "id": "simpler",
+          "label": "Key principle to remember",
+          "answer": "Whenever you see 'Nuzul' in Qur'anic sciences, connect it to the revelation coming down—never to compilation or angelology."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which Qur'anic science explains the meanings and messages of verses in detail?",
+          "similarAnswer": "Tafsir (Qur'anic exegesis or interpretation)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 120010,
+        "yearLabel": "2002"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0041",
+      "subject": "irs",
+      "topic": "Hadith and Sunnah",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The Sunnah refers primarily to the Prophet Muhammad's",
+      "options": [
+        {
+          "id": "a",
+          "text": "teachings, practices and approvals",
+          "why": "Sunnah encompasses the Prophet's sayings, actions, and silent approvals.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "tribal genealogy only",
+          "why": "Genealogy traces lineage, whereas Sunnah is the Prophet's normative religious way of life.",
+          "whyWrong": "Tribal genealogy records family ancestry, such as the Prophet's descent from Banu Hashim and Quraysh. While studied in Sirah, it does not define the Sunnah, which consists of his guidance in words, deeds, and approvals."
+        },
+        {
+          "id": "c",
+          "text": "business records only",
+          "why": "Sunnah covers all religious and moral guidance, not commercial accounts.",
+          "whyWrong": "Although Prophet Muhammad was known for honesty in trade before prophethood, Sunnah does not mean commercial ledgers. It refers to his authoritative example in worship, character, and law."
+        },
+        {
+          "id": "d",
+          "text": "private property",
+          "why": "Sunnah is a prophetic model of conduct, not personal possessions.",
+          "whyWrong": "Private property refers to material belongings, which the Prophet held modestly and did not leave as inherited wealth. Sunnah is the spiritual and legal legacy of his teachings and example."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Scholars group the Prophet's normative example into three parts: what he said, what he did, and what he approved.",
+      "explanation": "In Islamic scholarship, the Sunnah is the Prophet Muhammad's established way and normative example, consisting of his sayings (Qawl), actions (Fi'l), and tacit approvals (Taqrir). Together with the Qur'an, it forms the primary foundation of Islamic guidance.",
+      "trap": "Tribal genealogy sounds like an authentic historical topic from Sirah, which can distract students who mix up biography details with the legal meaning of Sunnah.",
+      "mnemonic": "Sunnah = Sayings, Actions, Approvals (Qawl, Fi'l, Taqrir).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The Sunnah is the example Prophet Muhammad left for Muslims to follow—through what he taught, how he lived, and what he agreed with when others did it."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Knowing the Prophet's family line is part of his biography, not his Sunnah. Sunnah is about the teachings and conduct Muslims are called to follow."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Notice the word 'only' in two of the wrong options—Sunnah is broad and covers the Prophet's sayings, practices, and approvals, not a narrow personal record."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What are the two main parts of a Hadith report?",
+          "similarAnswer": "The Isnad (chain of narrators) and the Matn (text of the report)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 196178,
+        "yearLabel": "2020"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0026",
+      "subject": "irs",
+      "topic": "Tawhid and articles of faith",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The angel associated with blowing the trumpet on the Last Day is",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israfil",
+          "why": "Israfil is the angel appointed to blow the Trumpet (as-Sur) to herald the Last Day.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Jibril",
+          "why": "Jibril's primary duty is delivering Allah's revelation to the prophets, not blowing the Trumpet.",
+          "whyWrong": "Jibril is the most frequently mentioned angel because he brought the Qur'an to Prophet Muhammad. However, his role is conveying divine revelation, whereas blowing the Trumpet on the Last Day belongs to Israfil."
+        },
+        {
+          "id": "c",
+          "text": "Mikail",
+          "why": "Mikail is entrusted with rain and provisions by Allah's command, not the Trumpet.",
+          "whyWrong": "Mikail is associated with natural sustenance such as rain and vegetation by Allah's permission. He is distinct from Israfil, who is charged with sounding the Trumpet at the end of time."
+        },
+        {
+          "id": "d",
+          "text": "Malik",
+          "why": "Malik is the keeper of Hellfire, not the angel of the Trumpet.",
+          "whyWrong": "Malik is named in the Qur'an as the chief guardian of Hellfire. He has no role in blowing the Trumpet on the Day of Resurrection."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Think of the four best-known archangels: revelation, rain, death, and the Trumpet.",
+      "explanation": "In Islamic belief regarding angels (al-Mala'ikah), each major angel has a specific duty assigned by Allah. Israfil is charged with blowing the Trumpet (as-Sur) to signal the end of the world and the resurrection of all creatures for judgement.",
+      "trap": "Because Jibril is the most familiar angel name, students who are unsure often pick him by default. Match each angel strictly to his specific assignment.",
+      "mnemonic": "Jibril = Revelation, Mikail = Rain, Israfil = Sur (Trumpet), Malik = Hellfire.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Allah gave different angels specific jobs. Israfil is the angel waiting for Allah's command to blow the Trumpet on the Last Day."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Jibril is famous for bringing the Qur'an to Prophet Muhammad, not for the Trumpet. Remember Jibril = message, Israfil = Trumpet."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Link the 'S' in Israfil with the 'S' in Sur (the Arabic word for the Trumpet)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which angel is entrusted with delivering divine revelation to the prophets?",
+          "similarAnswer": "Angel Jibril."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 195873,
+        "yearLabel": "2016"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0040",
+      "subject": "irs",
+      "topic": "Tawhid and articles of faith",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Tawhid al-Rububiyyah affirms that Allah alone is the",
+      "options": [
+        {
+          "id": "a",
+          "text": "recipient of Zakah",
+          "why": "Zakah is distributed to eight specified categories of people, not to Allah.",
+          "whyWrong": "According to the Qur'an (9:60), Zakah goes to eligible human recipients such as the poor and needy. Tawhid al-Rububiyyah is a theological belief about Allah's sole Lordship over creation, not charity distribution."
+        },
+        {
+          "id": "b",
+          "text": "final Prophet",
+          "why": "Prophethood belongs to human messengers; Prophet Muhammad is the final Prophet, not Allah.",
+          "whyWrong": "Being the final Prophet (Khatam an-Nabiyyin) is the status of Prophet Muhammad, which belongs to belief in messengers (Risalah). Tawhid al-Rububiyyah is about Allah's absolute Lordship as Creator and Sustainer."
+        },
+        {
+          "id": "c",
+          "text": "Creator and Sustainer",
+          "why": "Rububiyyah derives from 'Rabb' (Lord), affirming Allah alone creates, owns, and sustains all things.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "first Caliph",
+          "why": "Abu Bakr al-Siddiq was the first Caliph, a human political and religious successor.",
+          "whyWrong": "Caliph (Khalifah) refers to a human successor who led the Muslim community after the Prophet's death, starting with Abu Bakr. Tawhid al-Rububiyyah describes Allah's exclusive Lordship over the universe."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "The root of 'Rububiyyah' is 'Rabb' (Lord), as in 'Rabb al-Alamin'—Lord of all worlds.",
+      "explanation": "Tawhid al-Rububiyyah (Oneness of Lordship) affirms that Allah alone is the Rabb—the Creator, Owner, Sustainer, and Controller of the entire universe. Nothing shares in His power to create life, give provision, or govern creation.",
+      "trap": "Students sometimes confuse the articles of faith—mixing up attributes of Allah (Tawhid) with the role of the final Prophet (Risalah). Always check whether the statement describes Allah or a human messenger.",
+      "mnemonic": "Rububiyyah comes from Rabb (Lord) = Creator, Ruler, Sustainer.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Tawhid al-Rububiyyah means believing that only Allah made the universe, keeps everything alive, and controls what happens in it."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Allah is not a prophet—He is the One who sends prophets. 'Final Prophet' describes Prophet Muhammad, whereas Tawhid al-Rububiyyah describes Allah as Creator and Sustainer."
+        },
+        {
+          "id": "simpler",
+          "label": "Key principle to remember",
+          "answer": "Scholars summarize Tawhid in three aspects: Rububiyyah (Allah's Lordship), Uluhiyyah (worshipping Allah alone), and Asma' wa Sifat (His unique Names and Attributes)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which category of Tawhid means directing all acts of worship to Allah alone?",
+          "similarAnswer": "Tawhid al-Uluhiyyah (Oneness of Worship)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 196168,
+        "yearLabel": "2020"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0031",
+      "subject": "irs",
+      "topic": "Ibadah / pillars of Islam",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which spiritual quality is fasting in Ramadan intended to cultivate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Political influence",
+          "why": "Fasting is an act of personal devotion to Allah, not a means of gaining political power.",
+          "whyWrong": "Ramadan fasting is an inward act of worship meant to purify the heart rather than build political clout. Its goal stated in the Qur'an is spiritual consciousness of Allah, not worldly authority."
+        },
+        {
+          "id": "b",
+          "text": "Material wealth",
+          "why": "Fasting involves abstaining from food and drink, not accumulating riches.",
+          "whyWrong": "Fasting asks Muslims to restrain worldly desires and share generously with the poor, rather than pursue wealth. The Qur'an states that its true purpose is attaining Taqwa."
+        },
+        {
+          "id": "c",
+          "text": "Taqwa",
+          "why": "Qur'an 2:183 explicitly states fasting is prescribed 'so that you may attain Taqwa' (God-consciousness).",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Social status",
+          "why": "Fasting is observed sincerely for Allah alone, not to raise one's social standing.",
+          "whyWrong": "Unlike public displays, fasting is largely hidden between the believer and Allah, leaving no room for seeking prestige. Doing worship for social status is Riya' (showing off), the opposite of Taqwa."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Recall the ending of Qur'an 2:183: 'O you who believe, fasting is prescribed for you... so that you may attain...'",
+      "explanation": "In Qur'an 2:183, Allah explains the central purpose of Sawm (fasting) in Ramadan: 'la'allakum tattaqun'—so that believers may attain Taqwa (God-consciousness, piety, and self-restraint). By giving up lawful food and drink out of obedience, a Muslim trains the soul to avoid sin at all times.",
+      "trap": "Social status can sound plausible if someone thinks of Ramadan community gatherings, but worship done for prestige destroys sincerity; the Qur'anic aim is Taqwa.",
+      "mnemonic": "Ramadan trains restraint -> Taqwa (Qur'an 2:183).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When you skip food and water all day even when nobody is watching, you practice being mindful of Allah. That awareness of Allah is called Taqwa."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Fasting is private between you and Allah, so it is not meant to earn status or praise from people. Its goal is inner God-consciousness (Taqwa)."
+        },
+        {
+          "id": "simpler",
+          "label": "Key principle to remember",
+          "answer": "Taqwa means staying mindful of Allah—doing what He commands and guarding yourself against what He forbids."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In which month of the Islamic lunar calendar is obligatory fasting observed?",
+          "similarAnswer": "Ramadan (the ninth month of the Hijri calendar)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 120306,
+        "yearLabel": "2018"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0036",
+      "subject": "irs",
+      "topic": "Ibadah / pillars of Islam",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which feature distinguishes Zakah from voluntary Sadaqah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zakah is a daily prayer",
+          "why": "Daily prayer is Salat, whereas Zakah is obligatory almsgiving.",
+          "whyWrong": "The five daily ritual prayers are called Salat, which is the second pillar of Islam. Zakah is the third pillar and involves giving a fixed share of qualifying wealth, not performing prayer."
+        },
+        {
+          "id": "b",
+          "text": "Zakah is fasting",
+          "why": "Fasting is Sawm, not Zakah.",
+          "whyWrong": "Fasting during Ramadan is Sawm, the fourth pillar of Islam. Zakah is a financial obligation paid from surplus wealth that meets the Nisab threshold."
+        },
+        {
+          "id": "c",
+          "text": "Zakah is obligatory on qualifying wealth under specified conditions",
+          "why": "Unlike voluntary Sadaqah, Zakah is a mandatory duty once wealth reaches Nisab for one lunar year.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Zakah is pilgrimage",
+          "why": "Pilgrimage to Makkah is Hajj, not Zakah.",
+          "whyWrong": "Pilgrimage to Makkah is Hajj, the fifth pillar of Islam. Zakah is the obligatory annual purification of wealth paid to eligible recipients."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "One is a compulsory pillar with a minimum threshold (Nisab) and fixed recipients; the other can be given in any amount at any time.",
+      "explanation": "Both Zakah and Sadaqah involve giving charity, but Zakah is an obligatory pillar of Islam (Fard) required from Muslims whose qualifying wealth reaches the minimum threshold (Nisab) and is held for a full lunar year (Hawl). Voluntary Sadaqah has no fixed minimum, schedule, or restricted list of recipients.",
+      "trap": "Students sometimes confuse the Arabic names of the Five Pillars—mixing up Zakah with Salat, Sawm, or Hajj—instead of focusing on what sets Zakah apart from voluntary charity.",
+      "mnemonic": "Zakah = Compulsory + Nisab + Hawl; Sadaqah = Spontaneous and voluntary.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Sadaqah is any kind act or charity you choose to give whenever you want. Zakah is a required religious tax on savings and certain assets once you have enough for a full year."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Salat is the five daily prayers. Zakah is about purifying your wealth by giving a required share to eligible people in need."
+        },
+        {
+          "id": "simpler",
+          "label": "Key principle to remember",
+          "answer": "Zakah requires two main conditions on savings: reaching the Nisab (minimum amount) and passing one lunar year (Hawl)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the minimum threshold of wealth that makes Zakah obligatory?",
+          "similarAnswer": "Nisab."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 120188,
+        "yearLabel": "2019"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0020",
+      "subject": "irs",
+      "topic": "Sirah / life of the Prophet",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the significance of the Hijrah in Islamic history?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Battle of Badr",
+          "why": "The Battle of Badr took place in 2 AH, after the Hijrah had already occurred.",
+          "whyWrong": "The Battle of Badr happened in the second year after the Hijrah, when the Muslims had already settled in Madinah. Hijrah itself was the earlier migration from Makkah to Madinah in 622 CE."
+        },
+        {
+          "id": "b",
+          "text": "Migration to Madinah",
+          "why": "Hijrah is the 622 CE migration of the Prophet and Muslims from Makkah to Madinah.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "First revelation",
+          "why": "The first revelation occurred in Cave Hira near Makkah, about 13 years before the Hijrah.",
+          "whyWrong": "The first revelation ('Iqra') took place in Cave Hira at the very start of the Prophet's mission in Makkah. Hijrah came thirteen years later when persecution forced the Muslims to leave Makkah for Madinah."
+        },
+        {
+          "id": "d",
+          "text": "Death of the Prophet",
+          "why": "The Prophet passed away in 11 AH (632 CE), ten years after the Hijrah.",
+          "whyWrong": "Prophet Muhammad died in Madinah in 11 AH, a decade after migrating there. Hijrah marks the beginning of the Madinan era and the Islamic calendar, not the end of his life."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "The Arabic word 'Hijrah' means migration or departure to a place of safety.",
+      "explanation": "The Hijrah (622 CE) was the migration of Prophet Muhammad and his followers from persecution in Makkah to Yathrib (later Madinah). It allowed the Muslims to establish an organized, free community and became the starting point (Year 1 AH) of the Islamic calendar.",
+      "trap": "Because both the Hijrah and the Battle of Badr are major Madinan milestones, students sometimes confuse the migration itself with the first battle fought afterward.",
+      "mnemonic": "Hijrah = Here to Madinah (622 CE = Year 1 AH).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Hijrah means 'migration'. In 622 CE, Prophet Muhammad and the Muslims moved from Makkah to Madinah to escape persecution and build a safe community."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The Battle of Badr happened two years later, in 2 AH. The Hijrah was the peaceful migration to Madinah that started the Islamic calendar."
+        },
+        {
+          "id": "simpler",
+          "label": "Key principle to remember",
+          "answer": "Remember the timeline: First revelation in Makkah -> 13 years later, Hijrah to Madinah -> 2 years later, Battle of Badr."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What was the city of Madinah called before the Prophet Muhammad migrated there?",
+          "similarAnswer": "Yathrib."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 120005,
+        "yearLabel": "2007"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0046",
+      "subject": "irs",
+      "topic": "Sirah / life of the Prophet",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the significance of the Battle of Badr in Islamic history?",
+      "options": [
+        {
+          "id": "a",
+          "text": "First prayer established",
+          "why": "Salat was prescribed during the Isra' and Mi'raj in Makkah, well before Badr.",
+          "whyWrong": "The five daily prayers were commanded during the Prophet's night journey and ascension (Isra' and Mi'raj) in the Makkan period. Badr took place in 2 AH after the migration to Madinah."
+        },
+        {
+          "id": "b",
+          "text": "Victory against Quraysh",
+          "why": "Badr (2 AH) was the Muslims' first decisive military victory over the Quraysh of Makkah.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "First revelation",
+          "why": "The first revelation occurred in Cave Hira in Makkah, long before Badr.",
+          "whyWrong": "The first revelation came to Prophet Muhammad in Cave Hira at the beginning of prophethood, not at Badr. Badr was an armed confrontation in the second year after the Hijrah."
+        },
+        {
+          "id": "d",
+          "text": "Building of the mosque",
+          "why": "Masjid al-Nabawi was built immediately upon arrival in Madinah (1 AH), before Badr.",
+          "whyWrong": "When the Prophet reached Madinah in 1 AH, one of his very first acts was building Masjid al-Nabawi (and earlier Quba). The Battle of Badr occurred later, in Ramadan 2 AH."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Think of the first major armed encounter between the small Muslim force of Madinah and the Makkan army in 2 AH.",
+      "explanation": "Fought in Ramadan 2 AH (624 CE), the Battle of Badr was the first major military battle in Islam. Although the Muslim force of around 313 was vastly outnumbered by roughly 1,000 Quraysh fighters from Makkah, the Muslims achieved a decisive victory that strengthened the young Madinan state.",
+      "trap": "Students sometimes mix up early Madinan milestones—building the Prophet's Mosque in 1 AH versus the Battle of Badr in 2 AH.",
+      "mnemonic": "Badr = Battle won in 2 AH (313 Muslims vs ~1,000 Quraysh).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "At Badr, a small group of Muslims faced a much larger Quraysh army from Makkah and won. That victory showed that the new Muslim community in Madinah could defend itself."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Building Masjid al-Nabawi happened right after the Prophet arrived in Madinah in 1 AH. Badr was a military victory over Quraysh in 2 AH."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Notice the word 'Battle' in the question—only one option describes a military clash and victory."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In which Islamic month did the Battle of Badr take place?",
+          "similarAnswer": "Ramadan (2 AH)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 120263,
+        "yearLabel": "2022"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0034",
+      "subject": "irs",
+      "topic": "Khulafa'ur-Rashidun",
+      "type": "recall",
+      "difficulty": 3,
+      "stem": "Abu Bakr's determination to confront those who refused established obligations after the Prophet's death aimed mainly to preserve",
+      "options": [
+        {
+          "id": "a",
+          "text": "the unity and authority of the Muslim community",
+          "why": "Confronting apostasy and refusal of Zakah protected the integrity and unity of the Ummah.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "tribal independence",
+          "why": "Abu Bakr opposed tribal breakaways, not defended them, so the Ummah would not fragment.",
+          "whyWrong": "Some Arabian tribes wanted to break away from Madinah's authority after the Prophet died and stop paying Zakah. Abu Bakr fought those rebellions specifically to prevent tribal fragmentation and preserve Islamic unity."
+        },
+        {
+          "id": "c",
+          "text": "Roman authority",
+          "why": "Abu Bakr led the Muslim Caliphate, not the Roman Empire.",
+          "whyWrong": "The Roman (Byzantine) Empire was a separate foreign power to the north, not the state Abu Bakr governed. His internal campaigns in Arabia were meant to safeguard Islam and the Muslim community."
+        },
+        {
+          "id": "d",
+          "text": "Byzantine taxation",
+          "why": "The obligation at stake was Zakah under Islamic law, not Byzantine taxes.",
+          "whyWrong": "The rebels refused Zakah—a pillar of Islam—not taxes imposed by Byzantium. Abu Bakr famously refused to separate Zakah from Salat and acted to uphold Islamic obligations and state unity."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Remember the Riddah (apostasy) crisis: if tribes could drop Zakah after the Prophet's death, what would happen to the Ummah?",
+      "explanation": "Right after Prophet Muhammad passed away in 11 AH, some tribes renounced Islam or refused to pay Zakah while claiming to keep Salat. Caliph Abu Bakr al-Siddiq launched the Riddah campaigns to defend the completeness of Islamic obligations and hold the young Muslim community together under unified leadership.",
+      "trap": "Students sometimes misread the conflict and pick 'tribal independence', forgetting that tribal independence was what the rebels wanted—and what Abu Bakr refused to allow.",
+      "mnemonic": "Abu Bakr stood firm in Riddah: No splitting Salat from Zakah, no splitting the Ummah.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When the Prophet died, some tribes refused to pay Zakah or obey Madinah. Abu Bakr acted firmly so the Muslim community would not break apart or drop a pillar of Islam."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The rebels were trying to claim tribal independence from Madinah. Abu Bakr opposed that breakaway in order to keep the Muslim community united."
+        },
+        {
+          "id": "simpler",
+          "label": "Key principle to remember",
+          "answer": "Abu Bakr's core stance during the Riddah wars was that Islamic pillars like Salat and Zakah cannot be separated or cancelled after the Prophet's death."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which major Islamic obligation did several rebellious tribes refuse to pay during Abu Bakr's caliphate?",
+          "similarAnswer": "Zakah."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 196076,
+        "yearLabel": "2018"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0038",
+      "subject": "irs",
+      "topic": "Khulafa'ur-Rashidun",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "One major reason for establishing the Hijri calendar during Umar's caliphate was to improve",
+      "options": [
+        {
+          "id": "a",
+          "text": "administrative dating and record keeping",
+          "why": "Governors needed a consistent year system for official letters, treaties, and treasury records.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "agricultural production",
+          "why": "The Hijri calendar is purely lunar and shifts across seasons, so it is not an agricultural calendar.",
+          "whyWrong": "Because the Islamic calendar follows the 12 lunar months (about 354 days a year), its months move through all seasons and are not fixed to planting cycles. Caliph Umar introduced it to solve confusion in dating official documents, not farming."
+        },
+        {
+          "id": "c",
+          "text": "military uniforms",
+          "why": "A calendar tracks dates and years, not soldiers' clothing.",
+          "whyWrong": "Military uniforms have nothing to do with establishing a dating system. While Umar organized army registers (Diwan), the Hijri calendar was created to date official state correspondence accurately."
+        },
+        {
+          "id": "d",
+          "text": "Qur'anic revelation",
+          "why": "Qur'anic revelation ended with the Prophet's death before Umar became Caliph.",
+          "whyWrong": "The revelation of the Qur'an was completed during the lifetime of Prophet Muhammad. Umar became the second Caliph after Abu Bakr, so the calendar could not affect revelation."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about governors sending letters dated only with a month name like 'Sha'ban'—how would Madinah know which year?",
+      "explanation": "During the caliphate of Umar ibn al-Khattab (around 17 AH), provincial governors such as Abu Musa al-Ash'ari complained that official letters carried only a month without a year, making record keeping confusing. After consulting the Companions, Umar adopted the year of the Hijrah as Year 1 of the Islamic calendar.",
+      "trap": "Students often associate calendars with farming seasons, forgetting that the lunar Hijri calendar rotates across seasons and was created for state administration.",
+      "mnemonic": "Umar's Hijri calendar fixed undated state letters -> better records.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "As the Muslim state grew, governors sent letters that only wrote the month, not the year, so officials could not tell old letters from new ones. Umar set up the Hijri year system to organize records."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Farming follows the solar seasons, whereas the Hijri calendar is lunar and shifts every year. Its purpose under Umar was clear dating for government letters and records."
+        },
+        {
+          "id": "simpler",
+          "label": "Key principle to remember",
+          "answer": "Umar chose the Hijrah—not the Prophet's birth or first revelation—as the starting point of the Islamic calendar because it marked the birth of the Muslim community and state."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which event was chosen as the starting year of the Islamic calendar under Caliph Umar?",
+          "similarAnswer": "The Hijrah (migration of Prophet Muhammad from Makkah to Madinah)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 196144,
+        "yearLabel": "2019"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0035",
+      "subject": "irs",
+      "topic": "Islamic law and morals",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A farmer who works carefully, takes reasonable precautions and then trusts Allah regarding the harvest demonstrates",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tawakkul",
+          "why": "Tawakkul means taking practical means and then relying wholeheartedly on Allah for the outcome.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Riya'",
+          "why": "Riya' means showing off good deeds to impress people, which is condemned in Islam.",
+          "whyWrong": "Riya' is performing acts of worship or charity to gain praise from others rather than Allah's pleasure. Working diligently and trusting Allah for the harvest is sincere reliance on Allah (Tawakkul), not showing off."
+        },
+        {
+          "id": "c",
+          "text": "Israf",
+          "why": "Israf means extravagance or wastefulness, the opposite of careful farming.",
+          "whyWrong": "Israf refers to excessive spending or wasting resources, which the Qur'an forbids. The farmer here works carefully and takes precautions, showing responsibility rather than waste."
+        },
+        {
+          "id": "d",
+          "text": "Nifaq",
+          "why": "Nifaq means hypocrisy—pretending faith outwardly while hiding disbelief or deceit.",
+          "whyWrong": "Nifaq is hypocrisy, where outward faith masks inner rejection or insincerity. Trusting Allah after honest effort is a sign of sincere faith, not hypocrisy."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Recall the Prophetic advice: 'Tie your camel first, and then place your trust in Allah.'",
+      "explanation": "Tawakkul in Islam is not laziness or ignoring precautions; it is combining diligent human effort with complete reliance on Allah for the result. The farmer illustrates this balance by planting carefully, protecting the crop, and trusting Allah for the harvest.",
+      "trap": "Students who do not know the Arabic vocabulary may guess another Islamic term like Riya', even though Riya', Israf, and Nifaq are all moral faults rather than virtues.",
+      "mnemonic": "Tawakkul = Take action + Trust Allah.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Tawakkul means doing your part properly and then leaving the final result to Allah. You do not sit idle, and you do not panic."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Riya' is showing off so people praise you. It is a spiritual fault, whereas Tawakkul is a praiseworthy virtue of trusting Allah after hard work."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "All three wrong options (Riya', Israf, Nifaq) are negative traits in Islamic ethics, while Tawakkul is the only positive virtue."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What does 'Israf' mean in Islamic moral teachings?",
+          "similarAnswer": "Extravagance or wasteful excess."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 196090,
+        "yearLabel": "2018"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "irs-api-0039",
+      "subject": "irs",
+      "topic": "Islamic law and morals",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Makruh generally refers to something that is",
+      "options": [
+        {
+          "id": "a",
+          "text": "disliked or discouraged",
+          "why": "Makruh describes an act that is discouraged in Islamic law: avoiding it earns reward, though doing it is not sinful like Haram.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "obligatory",
+          "why": "Obligatory acts are Wajib or Fard, not Makruh.",
+          "whyWrong": "Acts that are compulsory for a Muslim—such as the five daily prayers—are called Fard or Wajib. Makruh stands near the opposite end of the scale as something better avoided."
+        },
+        {
+          "id": "c",
+          "text": "a pillar of Islam",
+          "why": "The five pillars of Islam are core obligatory duties (Fard), not Makruh.",
+          "whyWrong": "The five pillars (Shahadah, Salat, Zakah, Sawm, Hajj) are the highest obligatory foundations of Islam. Makruh refers to disliked actions that a Muslim is encouraged to leave."
+        },
+        {
+          "id": "d",
+          "text": "always equivalent to Haram",
+          "why": "Haram is strictly forbidden and sinful, whereas Makruh is discouraged without carrying the same prohibition.",
+          "whyWrong": "Haram refers to acts strictly prohibited by Allah that incur sin if committed, such as consuming alcohol or stealing. Makruh is discouraged—a person is rewarded for avoiding it out of obedience, but it is not ranked as strictly Haram."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "b"
+      ],
+      "hint": "Think of the five categories of Islamic rulings (al-Ahkam al-Khamsah): Fard, Mustahabb, Mubah, Makruh, and Haram.",
+      "explanation": "In Islamic jurisprudence (Fiqh), actions are classified into five rulings: obligatory (Fard/Wajib), recommended (Mustahabb/Mandub), neutral/permissible (Mubah), disliked/discouraged (Makruh), and strictly forbidden (Haram). Avoiding a Makruh act brings reward, while committing it does not carry the penalty of a Haram act.",
+      "trap": "Because Makruh acts are discouraged, students often think Makruh is just another word for Haram. Remember that Makruh sits one step below Haram on the legal scale.",
+      "mnemonic": "5 Fiqh steps: Wajib (do) -> Mandub (nice) -> Mubah (neutral) -> Makruh (avoid) -> Haram (forbidden).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Makruh means something Islam discourages you from doing. It is not strictly forbidden like Haram, but Allah rewards you if you stay away from it."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Haram means strictly forbidden and sinful. Makruh is milder—it means disliked or discouraged, so avoiding it is better and rewarded."
+        },
+        {
+          "id": "simpler",
+          "label": "Key principle to remember",
+          "answer": "Do not confuse Makruh (discouraged) with Haram (forbidden); in Fiqh, Haram is a sin while Makruh is better avoided."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which Islamic legal term describes an act that is recommended and rewarded when performed, though not obligatory?",
+          "similarAnswer": "Mustahabb (or Mandub / Sunnah)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 196160,
+        "yearLabel": "2019"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

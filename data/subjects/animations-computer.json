@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "count": 2,
+  "animations": [
+    {
+      "id": "anim-comp-api-0017",
+      "questionId": "comp-api-0017",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "13 ÷ 2 = 6 r 1",
+          "tag": "divide by 2",
+          "narration": "Divide 13 by 2. You get 6 with a remainder of 1."
+        },
+        {
+          "n": 2,
+          "display": "6 ÷ 2 = 3 r 0",
+          "tag": "divide again",
+          "narration": "Divide 6 by 2. You get 3 with a remainder of 0."
+        },
+        {
+          "n": 3,
+          "display": "3 ÷ 2 = 1 r 1,  1 ÷ 2 = 0 r 1",
+          "tag": "finish dividing",
+          "narration": "Divide 3 by 2 to get 1 remainder 1, then divide 1 by 2 to get 0 remainder 1."
+        },
+        {
+          "n": 4,
+          "display": "Remainders bottom → top: 1101",
+          "tag": "read upwards",
+          "narration": "Read the remainders from bottom to top to get 1101 in base 2."
+        }
+      ]
+    },
+    {
+      "id": "anim-comp-api-0048",
+      "questionId": "comp-api-0048",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Hex base = 16",
+          "tag": "base 16",
+          "narration": "Hexadecimal uses base 16, where digits run from 0 to 9 and A to F."
+        },
+        {
+          "n": 2,
+          "display": "255 ÷ 16 = 15 r 15",
+          "tag": "divide by 16",
+          "narration": "Divide 255 by 16. The quotient is 15 and the remainder is 15."
+        },
+        {
+          "n": 3,
+          "display": "15 in hex = F",
+          "tag": "map 15 to F",
+          "narration": "In hexadecimal, 10 is A up to 15, which is F."
+        },
+        {
+          "n": 4,
+          "display": "255₁₀ = FF₁₆",
+          "tag": "write result",
+          "narration": "Put the quotient and remainder together as F followed by F, giving FF."
+        }
+      ]
+    }
+  ]
+}

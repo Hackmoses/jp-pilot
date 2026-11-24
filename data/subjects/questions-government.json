@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "subject": "government",
+  "count": 12,
+  "questions": [
+    {
+      "id": "govt-api-0003",
+      "subject": "government",
+      "topic": "Electoral systems and political parties",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The officer responsible for announcing the result of an election is known as",
+      "options": [
+        {
+          "id": "a",
+          "text": "returning officer",
+          "why": "The returning officer collates ward or constituency tallies and formally declares the election result.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "electoral officer",
+          "why": "The electoral officer oversees election logistics in a local government area, not final result declaration.",
+          "whyWrong": "The electoral officer manages election materials, staff deployment, and general administration within a local government area. That officer coordinates the process rather than formally declaring the final winner of a constituency or election."
+        },
+        {
+          "id": "c",
+          "text": "ballot officer",
+          "why": "Ballot officer is not the official title for the officer who declares election results.",
+          "whyWrong": "Electoral bodies do not assign the duty of announcing final results to a 'ballot officer.' Counting and announcing results are handled in stages by presiding officers at polling units and returning officers at collation centres."
+        },
+        {
+          "id": "d",
+          "text": "presiding officer",
+          "why": "The presiding officer runs a single polling unit and counts votes there, not the overall election.",
+          "whyWrong": "A presiding officer is in charge of one polling unit only, supervising accreditation, voting, and unit-level vote counting. After counting, the unit tally is sent up to the returning officer, who announces the overall result."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the official who 'returns' the winner's name after votes from all units are collated.",
+      "explanation": "In Nigerian and Commonwealth electoral administration, the returning officer collates results from polling units and wards and formally announces the winner. Presiding officers run individual polling units, while electoral officers coordinate local administration.",
+      "trap": "Electoral officer sounds like the top boss of the whole election, so many candidates pick it. In practice, the electoral officer handles administration, whereas the returning officer declares the result.",
+      "mnemonic": "Returning officer Returns the winner's name.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "After everyone votes at small polling units, the numbers are added together at a collation centre. The returning officer is the official who reads out the final total and announces who won."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The electoral officer is in charge of organizing the election in a local government area, such as distributing ballot boxes and deploying staff. Announcing the official result is the specific job of the returning officer."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "Election duties are split: the presiding officer manages one polling unit, the electoral officer coordinates logistics in an area, and the returning officer collates and declares the final result."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which election official is directly in charge of maintaining order and supervising voting at an individual polling unit?",
+          "similarAnswer": "The presiding officer."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 152404,
+        "yearLabel": "2023"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0005",
+      "subject": "government",
+      "topic": "Basic concepts of government",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In a democratic government, political sovereignty is vested in the",
+      "options": [
+        {
+          "id": "a",
+          "text": "legislature",
+          "why": "The legislature may hold legal supremacy in some systems, not ultimate political sovereignty.",
+          "whyWrong": "In parliamentary systems like Britain, the legislature holds legal sovereignty because it can pass or repeal any law. However, political sovereignty rests with the voters, who can vote lawmakers out at the next election."
+        },
+        {
+          "id": "b",
+          "text": "elite",
+          "why": "Rule by a small privileged group is oligarchy or elitism, not democracy.",
+          "whyWrong": "When supreme political power sits with a narrow elite class, the system is an oligarchy rather than a democracy. Democracy requires ultimate authority to belong to the general voting public."
+        },
+        {
+          "id": "c",
+          "text": "executive",
+          "why": "The executive carries out laws on behalf of the people and is accountable to them.",
+          "whyWrong": "Although the president or prime minister exercises day-to-day state authority, that power is delegated rather than supreme. In a democracy, the electorate can withdraw its mandate from the executive through elections."
+        },
+        {
+          "id": "d",
+          "text": "electorate.",
+          "why": "Voters hold ultimate political sovereignty because they choose and remove officeholders.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Ask who holds the final say at the ballot box in a democracy.",
+      "explanation": "Constitutional theorists distinguish legal sovereignty (the power to make binding laws) from political sovereignty (the ultimate power behind the state). In a democracy, political sovereignty resides in the electorate because citizens elect and replace their leaders.",
+      "trap": "Because parliaments make supreme laws in some countries, students often pick the legislature. That describes legal sovereignty, whereas political sovereignty always belongs to the electorate.",
+      "mnemonic": "Political power belongs to the People at the Polls.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In a democracy, leaders only borrow power for a term. The voters—the electorate—are the real bosses because they decide who gets hired and who gets voted out."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The legislature makes laws, so it holds legal sovereignty in parliamentary systems. Even there, lawmakers must obey the wishes of the voters if they want to keep their seats, which means political sovereignty stays with the electorate."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "Legal sovereignty means supreme law-making authority (often in parliament or a constitution), while political sovereignty means the ultimate power of the electorate to choose the government."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Under the British parliamentary tradition, where is legal sovereignty vested?",
+          "similarAnswer": "In Parliament (the legislature)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 7406,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0011",
+      "subject": "government",
+      "topic": "Constitutions and constitutionalism",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Where the constitution is supreme, unconstitutional acts of the executive and legislature can be checked by the courts through",
+      "options": [
+        {
+          "id": "a",
+          "text": "recall",
+          "why": "Recall is a voter-initiated removal of an elected lawmaker, not a court process.",
+          "whyWrong": "Recall allows constituents to petition to remove their representative from the legislature before the end of a term. It is exercised by voters, not by judges reviewing unconstitutional acts."
+        },
+        {
+          "id": "b",
+          "text": "judicial review",
+          "why": "Judicial review lets courts strike down laws or executive actions that violate the constitution.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "vote of no confidence",
+          "why": "A vote of no confidence is passed by parliament to remove a cabinet in a parliamentary system.",
+          "whyWrong": "A vote of no confidence is a legislative tool used in parliamentary systems to dismiss the prime minister and cabinet when they lose majority support. Courts do not pass votes of no confidence."
+        },
+        {
+          "id": "d",
+          "text": "impeachment",
+          "why": "Impeachment is a legislative proceeding to remove an officeholder, not a court check on laws.",
+          "whyWrong": "Impeachment is carried out by the legislature to remove a president, governor, or judge for gross misconduct. It is not the judicial mechanism by which courts invalidate unconstitutional laws or executive acts."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Look for the phrase that specifically names a power exercised by judges.",
+      "explanation": "Under constitutional supremacy, any law or executive order that conflicts with the constitution is void. Courts enforce that supremacy through judicial review, examining challenged acts and declaring unconstitutional ones null and void.",
+      "trap": "Impeachment is a well-known check on executive abuse, so students sometimes pick it. However, impeachment is conducted by the legislature, whereas checking unconstitutional acts through the courts is judicial review.",
+      "mnemonic": "Judges judge laws against the constitution: Judicial review.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If the president or parliament does something the constitution forbids, someone can take the matter to court. Judges check the act against the constitution and cancel it if it breaks the rules—that is judicial review."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Impeachment is a political process carried out by lawmakers to remove an executive leader from office for gross misconduct. It does not let courts strike down unconstitutional laws, which is what judicial review does."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Match the actor to the tool: voters use recall, parliament uses vote of no confidence or impeachment, and the courts use judicial review."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which constitutional check allows voters in a constituency to remove their legislator before the end of a tenure?",
+          "similarAnswer": "Recall."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 197643,
+        "yearLabel": "2001"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0012",
+      "subject": "government",
+      "topic": "Nigerian constitutional development",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Nigeria's central legislature first became bicameral in",
+      "options": [
+        {
+          "id": "a",
+          "text": "1945",
+          "why": "In 1945 Nigeria was still under the unicameral 1922 Clifford Legislative Council.",
+          "whyWrong": "In 1945 the 1922 Clifford Constitution was still in force, and its Legislative Council had only a single chamber. Even the 1946 Richards Constitution that followed kept the central legislature unicameral."
+        },
+        {
+          "id": "b",
+          "text": "1951",
+          "why": "The 1951 Macpherson Constitution made the Western Region bicameral, while the centre stayed unicameral.",
+          "whyWrong": "The 1951 Macpherson Constitution created a unicameral central House of Representatives. While the Northern and Western regions had two chambers each, the central legislature itself did not gain a second chamber until 1959."
+        },
+        {
+          "id": "c",
+          "text": "1959",
+          "why": "Following the 1957-1958 conferences, a Senate was added alongside the House of Representatives in 1959.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "1963",
+          "why": "The 1963 Republican Constitution retained the bicameral parliament that already existed from 1959.",
+          "whyWrong": "By the time Nigeria became a republic in 1963, the central legislature already consisted of the Senate and the House of Representatives. The 1963 Constitution replaced the Queen with a Nigerian president rather than introducing bicameralism."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "It happened just before independence in 1960, as a result of the 1957–1958 constitutional conferences.",
+      "explanation": "Under the Clifford (1922), Richards (1946), Macpherson (1951), and Lyttelton (1954) constitutions, Nigeria's central legislature was unicameral. Implementing the 1957–1958 constitutional conference agreements, a Senate was added to join the House of Representatives in 1959.",
+      "trap": "Students often pick 1951 because the Macpherson Constitution expanded bicameralism at the regional level by giving the West a House of Chiefs. At the central level, however, the House of Representatives remained unicameral until 1959.",
+      "mnemonic": "Fifty-Nine gave the centre a Senate for the first time.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "For decades, Nigeria's national lawmaking body had only one house. In 1959, right before independence, a second upper chamber—the Senate—was created alongside the House of Representatives, making it bicameral."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The 1951 Macpherson Constitution gave the Western Region a House of Chiefs alongside its House of Assembly, joining the North as a bicameral region. The central House of Representatives stayed single-chambered until the Senate was created in 1959."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "Bicameral means having two legislative chambers (Senate + House of Representatives). Nigeria tested bicameralism in the North (1946) and West (1951) before adopting it at the federal centre in 1959."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Under the 1946 Richards Constitution, which region of Nigeria had a bicameral legislature?",
+          "similarAnswer": "The Northern Region (House of Chiefs and House of Assembly)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 197666,
+        "yearLabel": "2001"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0020",
+      "subject": "government",
+      "topic": "Colonial administration",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The French colonial policy of assimilation aimed in principle to",
+      "options": [
+        {
+          "id": "a",
+          "text": "make qualified colonial subjects culturally and politically French",
+          "why": "Assimilation sought to turn eligible Africans into French citizens in culture, law, and politics.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "create more French citizens in the colonies than in France",
+          "why": "France never aimed for colonial citizens to outnumber metropolitan French citizens.",
+          "whyWrong": "In reality, citizenship under assimilation was tightly restricted to educated elites and residents of the Four Communes of Senegal. France never intended colonial citizens to outnumber the population of mainland France."
+        },
+        {
+          "id": "c",
+          "text": "preserve traditional African institutions unchanged",
+          "why": "Preserving local institutions was a hallmark of British indirect rule, not French assimilation.",
+          "whyWrong": "Assimilation treated French culture as superior and aimed to replace indigenous customs with French law, language, and administration. Preserving traditional rulers and institutions was characteristic of British indirect rule."
+        },
+        {
+          "id": "d",
+          "text": "produce dependent intermediaries as its declared objective",
+          "why": "Assimilation's declared goal was full integration into French civilization, not merely creating intermediaries.",
+          "whyWrong": "While colonial rule in practice relied on local clerks and chiefs as intermediaries, that was not the stated ideal of assimilation. Its declared principle was to absorb qualified subjects into French cultural and political life."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look at the word 'assimilation'—it means absorbing people into another culture and political system.",
+      "explanation": "French assimilation was based on the belief in universal French civilization. In principle, Africans who met strict educational and cultural criteria—most notably in Senegal's Four Communes—could become French citizens with representation in the French parliament.",
+      "trap": "Because assimilation granted French citizenship, students sometimes assume France wanted vast numbers of colonial citizens exceeding France's own population. In truth, strict qualifications kept the number of citizens small.",
+      "mnemonic": "Assimilate means Absorb into French culture and citizenship.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Assimilation meant turning selected Africans into 'Black Frenchmen'—teaching them French culture, law, and language so they could qualify as French citizens."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Although assimilation promised French citizenship, the requirements—such as French education, monogamy, and military service—were so strict that very few Africans qualified outside Senegal's Four Communes. It was never meant to outnumber citizens in France."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "British indirect rule worked through existing local rulers, whereas French assimilation aimed to replace local systems with French culture and institutions for qualified subjects."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In which four Senegalese coastal towns was the French policy of assimilation most fully applied?",
+          "similarAnswer": "The Four Communes: Dakar, Gorée, Rufisque, and Saint-Louis."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 197534,
+        "yearLabel": "2005"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0025",
+      "subject": "government",
+      "topic": "Foreign policy and international organizations",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which organ of the U.N.O. can impose mandatory sanctions on any of its members?",
+      "options": [
+        {
+          "id": "a",
+          "text": "General Assembly",
+          "why": "The General Assembly passes recommendations, not legally binding sanctions.",
+          "whyWrong": "The General Assembly includes every UN member state, so it debates global issues and passes resolutions. However, its resolutions are generally recommendatory and cannot impose legally binding sanctions."
+        },
+        {
+          "id": "b",
+          "text": "Security Council",
+          "why": "Under Chapter VII of the UN Charter, the Security Council can order binding sanctions.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Secretariat",
+          "why": "The Secretariat handles daily UN administration under the Secretary-General, not enforcement.",
+          "whyWrong": "Headed by the Secretary-General, the Secretariat carries out the day-to-day administrative work of the United Nations. It has no authority to punish member states with mandatory sanctions."
+        },
+        {
+          "id": "d",
+          "text": "Economic and Social Council",
+          "why": "ECOSOC coordinates economic, social, and humanitarian agencies rather than enforcing sanctions.",
+          "whyWrong": "The Economic and Social Council (ECOSOC) coordinates UN work on development, human rights, and specialized agencies. It does not possess enforcement powers to impose mandatory sanctions."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Which UN organ has primary responsibility for maintaining international peace and security?",
+      "explanation": "Under Chapter VII of the UN Charter, the Security Council determines threats to peace and can impose binding economic, diplomatic, or arms sanctions that all UN member states are legally obliged to obey.",
+      "trap": "Because all countries sit in the General Assembly, students often assume it has the final enforcement power. In the UN Charter, binding enforcement powers belong solely to the Security Council.",
+      "mnemonic": "Security Council Sends binding Sanctions.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The Security Council is the UN's peace-and-security body. Unlike the General Assembly, whose votes are only advice, the Security Council can make rules and sanctions that every UN country must follow."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The General Assembly is the main debating chamber where every member state has one vote, so it looks supreme. Yet under the UN Charter its resolutions are recommendations, while only the Security Council can impose mandatory sanctions."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "The UN Security Council has 15 members—5 permanent members with veto power (US, UK, France, Russia, China) and 10 elected non-permanent members—and holds binding authority under Chapter VII."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which organ of the United Nations serves as its principal judicial body for settling disputes between states?",
+          "similarAnswer": "The International Court of Justice (ICJ)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 16736,
+        "yearLabel": "2008"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0026",
+      "subject": "government",
+      "topic": "Nigerian constitutional development",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The Richards Constitution in Nigeria provided for",
+      "options": [
+        {
+          "id": "a",
+          "text": "an unofficial majority in the Legislative Council",
+          "why": "The 1946 Richards Constitution gave the central Legislative Council 28 unofficials to 16 officials.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "appointment of Nigerians as Chief Judges",
+          "why": "The Richards Constitution did not introduce Nigerian Chief Judges or Chief Justices.",
+          "whyWrong": "The 1946 Richards Constitution reorganized legislative councils and regional assemblies rather than Africanizing the top judiciary. Sir Adetokunbo Ademola only became Nigeria's first indigenous Chief Justice later, in 1958."
+        },
+        {
+          "id": "c",
+          "text": "a House of Chiefs in the Western Region",
+          "why": "Under Richards only the North had a House of Chiefs; the West got one in 1951.",
+          "whyWrong": "Under the 1946 Richards Constitution, only the Northern Region had a bicameral legislature with a House of Chiefs. The Western Region did not get a House of Chiefs until the 1951 Macpherson Constitution."
+        },
+        {
+          "id": "d",
+          "text": "a House of Chiefs in the Eastern Region",
+          "why": "The Eastern Region remained unicameral under Richards and did not get a House of Chiefs until 1959.",
+          "whyWrong": "The Eastern Region had no traditional emirate or centralized chieftaincy structure comparable to the North, so Richards gave it only a unicameral House of Assembly. Its House of Chiefs was introduced much later, just before independence."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare the balance of official versus unofficial members in the central Legislative Council from 1922 to 1946.",
+      "explanation": "The 1946 Richards Constitution expanded Nigerian representation by replacing the official majority of the 1922 Clifford Constitution with an unofficial majority in the central Legislative Council (28 unofficial members alongside 16 official members and the Governor).",
+      "trap": "Students know Richards created regional assemblies and a House of Chiefs, so they mistakenly think the Western Region received a House of Chiefs in 1946. Only the North got a House of Chiefs under Richards; the West got its own in 1951.",
+      "mnemonic": "Richards Reversed the majority: Official (Clifford) became Unofficial (Richards).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Before 1946, British colonial officials held more seats than unofficial members in Nigeria's Legislative Council. The Richards Constitution flipped that so unofficial members outnumbered British officials for the first time."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The Richards Constitution created three Regional Assemblies, but it gave a House of Chiefs only to the Northern Region. The Western Region had to wait until the 1951 Macpherson Constitution for its House of Chiefs."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "Three hallmarks of the 1946 Richards Constitution: bringing the North into the central Legislative Council, creating three regions (North, West, East), and introducing an unofficial majority at the centre."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which colonial constitution first introduced the elective principle into Nigeria's Legislative Council?",
+          "similarAnswer": "The 1922 Clifford Constitution (four elected seats: three for Lagos and one for Calabar)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 197333,
+        "yearLabel": "2009"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0034",
+      "subject": "government",
+      "topic": "Colonial administration",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The system of 'Indirect Rule' introduced by Lord Lugard in Northern Nigeria relied heavily on:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Directly imposing British officials in every village",
+          "why": "Placing colonial officials directly at every local level describes direct rule, not indirect rule.",
+          "whyWrong": "Britain lacked enough European officers and funds to station administrators in every town and village. Putting European officials in direct day-to-day charge of every community describes direct rule rather than Lugard's indirect rule."
+        },
+        {
+          "id": "b",
+          "text": "Destroying the traditional institutions",
+          "why": "Indirect rule preserved and worked through existing emirate institutions rather than destroying them.",
+          "whyWrong": "Lugard deliberately kept the emirate hierarchy, Islamic courts, and local tax structures intact under British supervision. Destroying those institutions would have provoked mass resistance and made administration far more expensive."
+        },
+        {
+          "id": "c",
+          "text": "Using existing traditional rulers (Emirs) to govern the people and collect taxes on behalf of the British",
+          "why": "Emirs served as Native Authorities, enforcing order and collecting taxes under British Residents.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Ruling from London via telegram",
+          "why": "Local governance required on-the-ground Native Authorities supervised by British Residents in Nigeria.",
+          "whyWrong": "While major colonial policies were approved by the Colonial Office in London, day-to-day governance in Northern Nigeria could not happen by telegram. It depended on local Emirs executing orders under British Residents and District Officers."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Why did Lugard call the system 'indirect' instead of 'direct'?",
+      "explanation": "Lord Lugard's Indirect Rule governed Northern Nigeria through existing Emirs, Native Courts, and Native Treasuries. The Emirs maintained law and order and collected direct taxes on behalf of the British Crown, supervised by British Residents.",
+      "trap": "Students sometimes confuse indirect rule with direct rule and choose placing British officials in every village. Remember that Britain used indirect rule precisely because it lacked the staff to rule every village directly.",
+      "mnemonic": "Indirect rule = British Residents behind Indigenous Rulers.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Instead of removing the Northern Emirs and running every town themselves, the British let the Emirs stay in charge of daily rule and tax collection while taking orders from British officers."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Stationing British officers in every village would have been direct rule, which Britain could not afford in money or manpower. Indirect rule succeeded in the North because Emirs already had organized tax and court systems the British could use."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "Indirect rule succeeded most in Northern Nigeria (centralized Emirates), was partly successful in the West (checks on Obas), and faced strong resistance in the East (acephalous Igbo societies and the Warrant Chief crisis)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Why did Indirect Rule face its greatest difficulty in Eastern Nigeria?",
+          "similarAnswer": "Traditional society in the East was largely decentralized (acephalous), so British-appointed Warrant Chiefs lacked traditional legitimacy."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 76717,
+        "yearLabel": "2012"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0035",
+      "subject": "government",
+      "topic": "Systems of government",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The head of state in the First Republic of Nigeria was",
+      "options": [
+        {
+          "id": "a",
+          "text": "an executive president",
+          "why": "Nigeria did not adopt an executive presidency until the Second Republic in 1979.",
+          "whyWrong": "An executive president combines the roles of head of state and head of government, which Nigeria introduced under the 1979 Constitution. In the First Republic (1963–1966), Nigeria used the parliamentary model where those two offices were split."
+        },
+        {
+          "id": "b",
+          "text": "a nominee of the whole country",
+          "why": "The First Republic President was elected indirectly by parliament, not by nationwide popular vote.",
+          "whyWrong": "Under the 1963 Republican Constitution, the President was chosen by an electoral college of members of both houses of the federal parliament rather than by nationwide popular election. Being chosen by the whole electorate applies to later presidential elections."
+        },
+        {
+          "id": "c",
+          "text": "a nominal president",
+          "why": "Dr. Nnamdi Azikiwe served as ceremonial Head of State while Prime Minister Balewa held executive power.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "a party leader",
+          "why": "The Prime Minister led the ruling coalition in parliament, whereas the President stood above party politics.",
+          "whyWrong": "In a parliamentary system, the Prime Minister is the leader of the majority party or coalition in parliament and heads the government. The ceremonial Head of State is expected to remain non-partisan once in office."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "What system of government did Nigeria operate under the 1963 Republican Constitution?",
+      "explanation": "Nigeria's First Republic (1963–1966) operated a Westminster parliamentary system. Executive power lay with Prime Minister Abubakar Tafawa Balewa as Head of Government, while President Nnamdi Azikiwe served as a ceremonial or nominal Head of State.",
+      "trap": "Because Nigeria has used an executive presidential system since 1979 and 1999, many candidates assume the First Republic also had an executive president. In 1963, the President was strictly nominal.",
+      "mnemonic": "First Republic = Parliamentary split: Nominal President, Prime Minister with Power.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In the First Republic, Nigeria copied the British style of government: one person (the Prime Minister) ran the government, while another person (the President) held a ceremonial title as head of state without day-to-day executive power."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Nigeria's first executive president was Shehu Shagari in 1979 under the Second Republic. During the First Republic (1963–1966), executive authority belonged to Prime Minister Balewa, leaving President Azikiwe as a nominal head of state."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "A parliamentary system has a bicephalous (two-headed) executive: a ceremonial Head of State (monarch or nominal president) and a political Head of Government (Prime Minister)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which Nigerian constitution first replaced the parliamentary system with an executive presidential system?",
+          "similarAnswer": "The 1979 Constitution (Second Republic)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 196981,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0038",
+      "subject": "government",
+      "topic": "Systems of government",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The major advantage of the principle of separation of powers is that it provides for",
+      "options": [
+        {
+          "id": "a",
+          "text": "an executive premier",
+          "why": "An executive premier belongs to parliamentary governance, which actually fuses executive and legislature.",
+          "whyWrong": "In a parliamentary system with a premier or prime minister, ministers sit inside the legislature, meaning powers are fused rather than strictly separated. Separation of powers does not exist to create an executive premier."
+        },
+        {
+          "id": "b",
+          "text": "a powerful legislature",
+          "why": "Separation of powers prevents any single branch, including the legislature, from dominating the others.",
+          "whyWrong": "The goal of separating the legislature, executive, and judiciary is not to make parliament supreme over the other two organs. Instead, each branch is kept distinct so no one organ holds unchecked power."
+        },
+        {
+          "id": "c",
+          "text": "a very strong executive",
+          "why": "Separation of powers limits executive dominance rather than concentrating strength in the executive.",
+          "whyWrong": "Montesquieu argued for separation of powers specifically to stop rulers from abusing unchecked authority. Giving the executive overwhelming strength would defeat the purpose of dividing state power."
+        },
+        {
+          "id": "d",
+          "text": "checks and balances",
+          "why": "Dividing authority across three branches allows each branch to restrain the others from tyranny.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Why did Montesquieu warn against putting lawmaking, execution, and judging in the same hands?",
+      "explanation": "Separation of powers divides government into legislature, executive, and judiciary with distinct personnel and functions. Its chief benefit is enabling checks and balances so each branch can limit excesses by the others and protect citizens' liberty.",
+      "trap": "Students sometimes think separation of powers exists to build a powerful legislature against the king or president. In reality, its core purpose is mutual restraint—checks and balances across all three arms.",
+      "mnemonic": "Separate the three arms so they Check and Balance each other.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If one person makes the rules, enforces them, and judges who broke them, they become a dictator. Splitting those three jobs among different branches lets each branch keep the others honest—that is checks and balances."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Making the legislature overly powerful without limits would create legislative tyranny. Separation of powers balances the legislature, executive, and judiciary equally through checks and balances."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "Separation of powers splits who makes laws (legislature), enforces them (executive), and interprets them (judiciary), while checks and balances give each branch tools (veto, confirmation, judicial review) to restrain the others."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which French political philosopher is most famously associated with formulating the modern theory of separation of powers?",
+          "similarAnswer": "Baron de Montesquieu (in 'The Spirit of the Laws')."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 16958,
+        "yearLabel": "2015"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0039",
+      "subject": "government",
+      "topic": "Public administration and civil service",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The Ombudsman in Nigeria is known as the",
+      "options": [
+        {
+          "id": "a",
+          "text": "Public Complaints Commission",
+          "why": "Established in 1975, the Public Complaints Commission investigates citizens' complaints of maladministration.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Code of Conduct Bureau",
+          "why": "The Code of Conduct Bureau handles asset declarations and ethical rules for public officers, not citizen maladministration complaints.",
+          "whyWrong": "The Code of Conduct Bureau monitors compliance with ethical standards and asset declarations by public officials, referring breaches to the Code of Conduct Tribunal. It is not the Ombudsman agency set up to redress citizens' administrative grievances."
+        },
+        {
+          "id": "c",
+          "text": "Public Service Commission",
+          "why": "The Public or Civil Service Commission handles recruitment, promotion, and discipline of civil servants.",
+          "whyWrong": "A Public Service Commission manages personnel matters within the civil service—such as hiring, promoting, and disciplining staff. It does not serve as an independent Ombudsman investigating public complaints against agencies."
+        },
+        {
+          "id": "d",
+          "text": "Political Bureau",
+          "why": "The Political Bureau was a 1986 ad-hoc body that coordinated debate on Nigeria's future political system.",
+          "whyWrong": "Set up in 1986 under General Babangida, the Political Bureau was a temporary panel tasked with gathering public proposals for a transition to civil rule. It has nothing to do with the permanent Ombudsman institution."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "An Ombudsman receives and investigates citizens' grievances against public officials.",
+      "explanation": "An Ombudsman is an independent public official or body that investigates citizens' complaints of unfair treatment or maladministration by government agencies. Nigeria created its Ombudsman in 1975 under the name Public Complaints Commission (PCC).",
+      "trap": "Because the Code of Conduct Bureau also polices public officials, students often confuse the two. Remember: asset declarations go to the Code of Conduct Bureau, while citizen complaints against administrative injustice go to the Public Complaints Commission.",
+      "mnemonic": "Ombudsman hears public complaints = Public Complaints Commission.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "An Ombudsman is like a referee citizens can complain to when a government office treats them unfairly. In Nigeria, that office is called the Public Complaints Commission."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The Code of Conduct Bureau checks whether public officials declare their assets and avoid conflicts of interest. By contrast, the Public Complaints Commission is Nigeria's Ombudsman, helping ordinary citizens resolve administrative injustices."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "Established by decree in 1975 during the Murtala Mohammed administration, the Public Complaints Commission handles grievances against federal, state, local, and private corporate bodies free of charge."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which Nigerian agency is responsible for verifying the asset declarations of public officeholders?",
+          "similarAnswer": "The Code of Conduct Bureau."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 16996,
+        "yearLabel": "2016"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "govt-api-0048",
+      "subject": "government",
+      "topic": "Federalism and revenue allocation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The philosophy behind Nigerian federalism is",
+      "options": [
+        {
+          "id": "a",
+          "text": "unity in diversity",
+          "why": "Federalism lets Nigeria's varied ethnic, religious, and regional groups stay united while keeping local autonomy.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "sectional development",
+          "why": "Federalism aims to balance national cohesion with regional progress, not promote narrow sectionalism.",
+          "whyWrong": "Focusing purely on sectional development encourages rivalry and division among regions rather than national integration. Federalism gives states room to develop locally only as part of keeping one united nation together."
+        },
+        {
+          "id": "c",
+          "text": "review of sectionalism",
+          "why": "The goal is accommodating diversity within one federation, not an abstract 'review of sectionalism.'",
+          "whyWrong": "'Review of sectionalism' is not an established constitutional principle behind Nigerian federalism. Nigeria adopted a federal structure to reconcile ethnic and regional differences inside a single sovereign state."
+        },
+        {
+          "id": "d",
+          "text": "colonial rule",
+          "why": "Colonial administration centralized or divided territories for imperial control, not as federalism's guiding philosophy.",
+          "whyWrong": "Although British colonial constitutions (especially Lyttelton in 1954) shaped the early federal structure, colonial rule itself is a system of foreign domination, not the philosophical goal of Nigerian federalism."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Nigeria has hundreds of ethnic groups—why choose federalism over a unitary state?",
+      "explanation": "Nigeria adopted federalism because it is a large, multi-ethnic, multi-religious society. By sharing power between a central government and constituent states, federalism promotes 'unity in diversity'—preserving national unity while respecting local differences.",
+      "trap": "Because states manage local affairs under federalism, candidates sometimes pick 'sectional development.' However, the core principle is balancing local differences with national togetherness—unity in diversity.",
+      "mnemonic": "Federalism fits many folks together: Unity in Diversity.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Nigeria has many different languages, cultures, and regions. Federalism lets each state handle its own local needs while everyone remains part of one country—that idea is called unity in diversity."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "If every region cared only about sectional development, the country would pull apart. Federalism uses shared power so states can grow locally without breaking national unity."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept",
+          "answer": "Countries with large size and cultural diversity choose federalism over a unitary system to prevent fear of domination by one group and foster unity in diversity."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which colonial constitution formally established Nigeria as a federation of three regions?",
+          "similarAnswer": "The 1954 Lyttelton Constitution."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 7769,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "subject": "geography",
+  "count": 12,
+  "questions": [
+    {
+      "id": "geog-api-0002",
+      "subject": "geography",
+      "topic": "Weather and climate",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which type of winds are associated with high-pressure systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Converging winds",
+          "why": "Converging winds flow inward toward low-pressure centres, not away from high pressure.",
+          "whyWrong": "Converging winds blow inward toward a low-pressure system (cyclone), where air rises. In a high-pressure system, air sinks and spreads outward instead."
+        },
+        {
+          "id": "b",
+          "text": "Diverging winds",
+          "why": "Sinking air in a high-pressure system spreads outward at the surface as diverging winds.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Trade winds",
+          "why": "Trade winds are a planetary wind belt blowing toward the Equator, not a general term for all high-pressure outflow.",
+          "whyWrong": "Trade winds are steady tropical winds blowing from the subtropical highs toward the equatorial low. They are one global wind belt rather than the general wind pattern of every high-pressure system."
+        },
+        {
+          "id": "d",
+          "text": "Prevailing winds",
+          "why": "Prevailing winds simply mean the usual wind direction in an area, regardless of pressure type.",
+          "whyWrong": "Prevailing winds describe whichever wind direction is most common over a region over time. The term does not tell you whether air is spiralling into a low or spreading out from a high."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "In a high-pressure cell, air sinks downward to the ground. Which way must it go once it hits the surface?",
+      "explanation": "In a high-pressure system (anticyclone), heavy air sinks toward the Earth's surface and spreads outward in all directions. This outward surface flow creates diverging winds, usually bringing calm, dry weather.",
+      "trap": "Converging winds is the direct opposite: it belongs to low-pressure systems where air rushes inward and rises.",
+      "mnemonic": "High pressure pushes air out — Highs Diverge, Lows Converge.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "High pressure means air is pressing down onto the ground. When air hits the ground, it spreads outward — that spreading is called diverging winds."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Converging winds happen at low-pressure centres, where air gets pulled inward and rises to form clouds and rain. High pressure does the reverse."
+        },
+        {
+          "id": "simpler",
+          "label": "What weather do high-pressure systems bring?",
+          "answer": "Because air is sinking and warming as it drops, clouds do not easily form. High-pressure systems usually bring clear skies and settled, dry weather."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What vertical air movement occurs at the centre of a low-pressure system (cyclone)?",
+          "similarAnswer": "Rising (ascending) air, fed by converging surface winds."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 121568,
+        "yearLabel": "1994"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0010",
+      "subject": "geography",
+      "topic": "Vegetation and soils",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the main component of soil?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Water",
+          "why": "Soil water makes up about a quarter of a typical soil by volume, far less than mineral matter.",
+          "whyWrong": "Soil water fills part of the pore spaces and normally accounts for around 25% of soil volume. It is essential for plant roots, but it is not the largest fraction."
+        },
+        {
+          "id": "b",
+          "text": "Mineral particles",
+          "why": "Weathered rock fragments (mineral particles) make up about 45% of a typical soil.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Organic matter",
+          "why": "Organic matter (humus) is vital for fertility, yet it forms only about 5% of most soils.",
+          "whyWrong": "Although organic matter (humus) gives topsoil its dark colour and holds nutrients, it typically makes up only about 5% of soil volume. The solid bulk of soil comes from weathered rock minerals."
+        },
+        {
+          "id": "d",
+          "text": "Air",
+          "why": "Soil air fills pore spaces (about 25% of volume), well behind mineral particles.",
+          "whyWrong": "Soil air shares the pore spaces with water and usually makes up around 25% of a well-drained soil. Nearly half the soil is solid mineral particles."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Think of the four parts of an ideal loam soil: minerals, water, air, and humus. Which comes directly from parent rock?",
+      "explanation": "A typical fertile soil is roughly 45% mineral particles (sand, silt, and clay from weathered rock), 25% water, 25% air, and 5% organic matter. Mineral particles therefore form the main component.",
+      "trap": "Organic matter sounds important because it makes soil fertile, so students often pick it, even though it is actually the smallest of the four parts.",
+      "mnemonic": "45 Minerals, 25 Water, 25 Air, 5 Humus — Minerals make nearly half.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Soil is mostly tiny crushed pieces of rock called mineral particles. Air, water, and decayed plant matter fill the smaller spaces around them."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Organic matter (humus) is very important for feeding crops, but by volume it is only around 5% of most soils. Mineral particles make up about 45%."
+        },
+        {
+          "id": "simpler",
+          "label": "What are the three sizes of mineral particles?",
+          "answer": "From largest to smallest, mineral particles in soil are classified as sand, silt, and clay. Their mix determines soil texture."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which component of soil typically makes up the smallest percentage by volume (~5%)?",
+          "similarAnswer": "Organic matter (humus)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 121358,
+        "yearLabel": "2009"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0014",
+      "subject": "geography",
+      "topic": "Weathering and rivers",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The wearing away of a river bed by the force of flowing water itself is known as",
+      "options": [
+        {
+          "id": "a",
+          "text": "attrition",
+          "why": "Attrition is the knocking together of rock fragments in the river, not the water wearing the bed directly.",
+          "whyWrong": "Attrition happens when pebbles and stones carried by the river collide with one another and break into smaller, rounder pieces. It wears down the load itself rather than the river bed."
+        },
+        {
+          "id": "b",
+          "text": "hydraulic action",
+          "why": "Hydraulic action is the sheer force of moving water and trapped air breaking rock from the bed and banks.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "abrasion",
+          "why": "Abrasion needs stones and sand scraping the bed like sandpaper, not water alone.",
+          "whyWrong": "Abrasion (or corrasion) is when the river uses its load of sand and pebbles to scrape and grind the bed and banks. Look closely at the stem: it says 'by the force of flowing water itself'."
+        },
+        {
+          "id": "d",
+          "text": "solution",
+          "why": "Solution is chemical dissolving of soluble minerals, not mechanical force.",
+          "whyWrong": "Solution (corrosion) is a chemical process in which slightly acidic river water dissolves rocks such as limestone. It does not depend on the physical force of fast-flowing water."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Notice the words 'by the force of flowing water itself' — no stones or chemicals are mentioned.",
+      "explanation": "Hydraulic action occurs when fast-moving water surges into cracks in the river bed and banks, compressing trapped air and dislodging rock purely by the water's own force. Abrasion uses rocks as tools, attrition grinds stones against each other, and solution dissolves soluble rock.",
+      "trap": "Abrasion also wears away the river bed and banks, but it relies on the river's rock load scraping like sandpaper rather than water alone.",
+      "mnemonic": "Hydraulic = H₂O alone; Abrasion = stones Act as sandpaper; Attrition = pebbles Attack each other.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Hydraulic action is just the push and slam of fast water hitting cracks in the rock and breaking pieces loose, without using stones to scrape."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Abrasion wears down the bed too, but it requires sand and pebbles scraping against the rock. Here, the question specifies the force of the water itself."
+        },
+        {
+          "id": "simpler",
+          "label": "Where in a river is hydraulic action strongest?",
+          "answer": "It is strongest in the upper course and at waterfalls or rapids, where steep gradients make the river flow fast and turbulent."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which river erosion process makes pebbles smaller and rounder as they bump into one another downstream?",
+          "similarAnswer": "Attrition."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 195468,
+        "yearLabel": "2015"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0020",
+      "subject": "geography",
+      "topic": "Economic geography",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The cultivation of a single crop over a large area is known as",
+      "options": [
+        {
+          "id": "a",
+          "text": "monoculture",
+          "why": "'Mono-' means one: growing a single crop across a large stretch of farmland.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "mixed cropping",
+          "why": "Mixed cropping grows two or more different crops together on the same plot at the same time.",
+          "whyWrong": "Mixed cropping is the practice of planting two or more crops on the same piece of land in the same season, such as maize alongside cowpea. That is the opposite of growing just one crop."
+        },
+        {
+          "id": "c",
+          "text": "crop rotation",
+          "why": "Crop rotation changes which crop is planted on a plot from season to season.",
+          "whyWrong": "Crop rotation involves growing different crops in a planned sequence on the same land over successive seasons to preserve soil fertility. It does not mean specializing in one crop continuously."
+        },
+        {
+          "id": "d",
+          "text": "pastoralism",
+          "why": "Pastoralism is the rearing of livestock such as cattle, sheep, or goats, not growing crops.",
+          "whyWrong": "Pastoralism focuses on herding grazing animals rather than cultivating crops. Commercial single-crop farming is instead called monoculture."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Break down the word prefix: 'mono-' means one or single.",
+      "explanation": "Monoculture is the practice of growing a single crop species (such as oil palm, cocoa, or wheat) over a large area, often on plantations or mechanized commercial farms. While it simplifies planting and harvesting, it can deplete specific soil nutrients and increase pest risk.",
+      "trap": "Mixed cropping and crop rotation both involve multiple crops; students sometimes confuse the farming terms under exam pressure.",
+      "mnemonic": "Mono = One. Monoculture = one crop on the land.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If a giant farm grows only rubber trees or only maize across the whole estate, that is monoculture — 'mono' means one."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Mixed cropping puts two or more different crops on the same field at once, whereas monoculture sticks to just one crop."
+        },
+        {
+          "id": "simpler",
+          "label": "What is one disadvantage of monoculture?",
+          "answer": "Because every plant has the same needs and weaknesses, pests or plant diseases can spread rapidly across the whole farm, and the soil loses the same nutrients repeatedly."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Growing different crops in a planned sequence on the same plot from year to year is called what?",
+          "similarAnswer": "Crop rotation."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 195611,
+        "yearLabel": "2017"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0022",
+      "subject": "geography",
+      "topic": "Rocks and landforms",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What geological process is primarily responsible for the formation of sedimentary rocks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cooling and solidification",
+          "why": "Cooling and solidification of magma or lava forms igneous rocks, not sedimentary rocks.",
+          "whyWrong": "When molten magma cools underground or lava solidifies on the surface, it forms igneous rocks such as granite or basalt. Sedimentary rocks form at or near the surface from accumulated rock fragments or remains."
+        },
+        {
+          "id": "b",
+          "text": "Erosion and deposition",
+          "why": "Sediments are worn away by erosion, laid down by deposition, and compacted into layered rock.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Metamorphism",
+          "why": "Metamorphism alters existing rocks through intense heat and pressure to form metamorphic rocks.",
+          "whyWrong": "Metamorphism changes pre-existing rocks into metamorphic rocks like marble or slate using great heat and pressure without melting them. It does not build sedimentary rocks from loose sediments."
+        },
+        {
+          "id": "d",
+          "text": "Volcanic activity",
+          "why": "Volcanic activity produces extrusive igneous rocks from erupted magma and ash.",
+          "whyWrong": "Volcanic eruptions bring molten magma to the surface to form igneous rocks. Sedimentary rocks instead build up slowly in layers as weathered material is transported and deposited."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Think about what 'sediment' is — mud, sand, and pebbles carried by water or wind and laid down in layers.",
+      "explanation": "Weathering and erosion break older rocks into fragments that rivers, wind, or ice transport and deposit in layers. Over time, compaction and cementation turn those deposited sediments into sedimentary rocks such as sandstone and shale.",
+      "trap": "Cooling and solidification sounds like a neat formation step, but that is how molten magma turns into igneous rock.",
+      "mnemonic": "Igneous = Ignited (melted); Sedimentary = Settled layers from erosion and deposition.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Rain, wind, and rivers wear rocks down into sand and mud, drop them in layers on sea or river beds, and squeeze those layers into solid sedimentary rock."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Cooling and solidification happens to hot melted rock (magma or lava), which makes igneous rocks like basalt and granite, not sedimentary rocks."
+        },
+        {
+          "id": "simpler",
+          "label": "Give two examples of sedimentary rocks",
+          "answer": "Sandstone and limestone (along with shale and coal) are classic sedimentary rocks, and they often contain fossils and clear bedding planes."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which rock type is formed when existing rock is transformed by intense heat and pressure without melting?",
+          "similarAnswer": "Metamorphic rock."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 121466,
+        "yearLabel": "2018"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0033",
+      "subject": "geography",
+      "topic": "Weather and climate",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The Namib Desert's extreme aridity is reinforced by the",
+      "options": [
+        {
+          "id": "a",
+          "text": "warm Guinea Current",
+          "why": "The warm Guinea Current flows along West Africa's Gulf of Guinea coast, bringing moisture rather than desert conditions.",
+          "whyWrong": "The warm Guinea Current washes the coast of West Africa from Senegal toward the Bight of Biafra and supplies warm, moist air that supports heavy rainfall. It does not flow past Namibia or cause aridity."
+        },
+        {
+          "id": "b",
+          "text": "cold Benguela Current",
+          "why": "The cold Benguela Current chills coastal air off southwestern Africa, suppressing rain clouds over the Namib.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "warm Mozambique Current only",
+          "why": "The warm Mozambique Current flows along Africa's southeastern Indian Ocean coast, opposite the Namib.",
+          "whyWrong": "The Mozambique Current is a warm current on the eastern side of southern Africa, where it increases coastal rainfall. The Namib Desert sits on the Atlantic (western) coast beside a cold current."
+        },
+        {
+          "id": "d",
+          "text": "Nile flood",
+          "why": "The Nile River flows through northeastern Africa, thousands of kilometres from the Namib Desert.",
+          "whyWrong": "The seasonal Nile flood affects Egypt and Sudan in northeastern Africa and has no influence on the climate of southwestern Africa's Namib coast."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Cold ocean currents along western continental coasts chill the air above them and stop rain clouds from rising.",
+      "explanation": "The cold Benguela Current flows northward along the Atlantic coast of Namibia and Angola. It cools the overlying onshore air, creating a stable temperature inversion that produces coastal fog rather than rainfall and reinforces the Namib Desert's dryness.",
+      "trap": "The Guinea Current also flows on Africa's Atlantic side, but it is a warm current near the Equator that brings rain rather than desert aridity.",
+      "mnemonic": "Benguela chills the West coast — Cold currents create Coastal deserts (Namib, Atacama).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Cold ocean water chills the air above it so the air stays heavy and cannot rise to make rain clouds. That cold Benguela Current keeps the Namib coast dry."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The Guinea Current is a warm current along the Gulf of Guinea in West Africa, where warm air rises easily and brings abundant rain, not desert conditions."
+        },
+        {
+          "id": "simpler",
+          "label": "Why do coastal deserts often form on western coasts?",
+          "answer": "Subtropical high pressure already keeps air sinking around 20°–30° latitude, and cold upwelling currents on western coasts (like the Benguela and Humboldt) cool the air further, locking out rain."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which cold ocean current contributes to the extreme aridity of the Atacama Desert in South America?",
+          "similarAnswer": "The Peru (Humboldt) Current."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 183023,
+        "yearLabel": "2022"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0036",
+      "subject": "geography",
+      "topic": "Map reading",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A hill rises from 300 m to 540 m over a horizontal distance of 4.8 km. Its average gradient is",
+      "options": [
+        {
+          "id": "a",
+          "text": "1:2",
+          "why": "1:2 drops a factor of ten when converting 4.8 km to metres (480 m instead of 4800 m).",
+          "whyWrong": "1:2 comes from writing 4.8 km as 480 m instead of 4800 m before dividing 240 by the horizontal distance. One kilometre equals 1000 metres, so 4.8 km is 4800 m."
+        },
+        {
+          "id": "b",
+          "text": "1:5",
+          "why": "1:5 treats the rise as 960 m or miscalculates 240 ÷ 4800.",
+          "whyWrong": "1:5 would mean the land rises 1 m for every 5 m across, which is far steeper than 240 m over 4800 m. Dividing 4800 by 240 gives 20, not 5."
+        },
+        {
+          "id": "c",
+          "text": "1:200",
+          "why": "1:200 adds an extra zero when dividing 4800 by 240 (getting 200 instead of 20).",
+          "whyWrong": "1:200 comes from misplacing a zero in 4800 ÷ 240 (or converting 4.8 km to 48,000 m). Since 240 × 20 = 4800, the simplified ratio is 1:20."
+        },
+        {
+          "id": "d",
+          "text": "1:20",
+          "why": "Vertical rise is 540 − 300 = 240 m, horizontal distance is 4800 m, and 240 ÷ 4800 = 1:20.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "a"
+      ],
+      "hint": "Gradient = Vertical Interval ÷ Horizontal Equivalent. Make sure both distances are in metres first.",
+      "explanation": "First find the vertical interval: 540 m − 300 m = 240 m. Convert the horizontal distance to metres: 4.8 km × 1000 = 4800 m. Divide both by 240: 240 : 4800 = 1 : 20.",
+      "trap": "1:200 is a classic zero-slip when dividing 4800 by 240, or from converting kilometres to metres incorrectly.",
+      "mnemonic": "Gradient = Rise over Run, in the Same Unit.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The hill climbs 240 m upward while covering 4800 m across. Since 4800 is 20 times 240, the slope rises 1 m for every 20 m forward, or 1:20."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "1:200 slips in an extra zero. Cross out the zeros in 240 ÷ 4800 to get 24 ÷ 480, and 480 ÷ 24 is 20, not 200."
+        },
+        {
+          "id": "simpler",
+          "label": "Why must kilometres be changed to metres first?",
+          "answer": "A gradient ratio like 1:20 compares two lengths directly, so both numbers must use the same unit; mixing metres and kilometres gives a wrong answer."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A slope rises from 120 m to 270 m over a horizontal distance of 3 km. What is its average gradient?",
+          "similarAnswer": "1:20"
+        }
+      ],
+      "animationId": "anim-geog-api-0036",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 182772,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0038",
+      "subject": "geography",
+      "topic": "Regional geography of Nigeria",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The extensive lowland surrounding the lower Niger-Benue system is interrupted near central Nigeria by the",
+      "options": [
+        {
+          "id": "a",
+          "text": "Drakensberg",
+          "why": "The Drakensberg is a mountain range in southern Africa (South Africa and Lesotho), not Nigeria.",
+          "whyWrong": "The Drakensberg lies at the southeastern edge of southern Africa, far away from Nigeria. Central Nigeria's major upland rising above the Niger-Benue trough is the Jos Plateau."
+        },
+        {
+          "id": "b",
+          "text": "Atlas Mountains",
+          "why": "The Atlas Mountains stretch across northwestern Africa (Morocco, Algeria, Tunisia), not central Nigeria.",
+          "whyWrong": "The Atlas Mountains are young fold mountains in the Maghreb region of North Africa. They are nowhere near the Niger-Benue basin in Nigeria."
+        },
+        {
+          "id": "c",
+          "text": "Jos Plateau",
+          "why": "The Jos Plateau rises sharply in central Nigeria above the surrounding Niger-Benue plains.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Fouta Djallon",
+          "why": "The Fouta Djallon highlands are located in Guinea, not inside central Nigeria.",
+          "whyWrong": "Although the Fouta Djallon highland in Guinea is famous in West African geography as the source region of major rivers like the Senegal and Gambia (near the Niger's headwaters), it lies far west of Nigeria."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Only one of the four highland features is actually inside Nigeria.",
+      "explanation": "The Jos Plateau in central Nigeria is an upland massif rising over 1,200 m above sea level, breaking the broad lowlands of the Niger-Benue trough and acting as a radial drainage centre for several Nigerian rivers.",
+      "trap": "Fouta Djallon is a familiar West African highland name from river-source topics, so students sometimes pick it without checking which country it sits in.",
+      "mnemonic": "Jos is in central Nigeria; Fouta Djallon is in Guinea; Atlas is North; Drakensberg is South.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Around the Niger and Benue rivers, Nigeria is mostly low plains, except in the middle of the country where the high, cool Jos Plateau rises up."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Fouta Djallon is in West Africa (Guinea), not Nigeria. Inside central Nigeria, the highland that rises above the Niger-Benue lowlands is the Jos Plateau."
+        },
+        {
+          "id": "simpler",
+          "label": "Why is the Jos Plateau important in Nigerian geography?",
+          "answer": "Its altitude gives it cooler temperatures than surrounding lowlands, it is a major tin-mining and agricultural area, and rivers flow outward from it in a radial pattern."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which Nigerian plateau acts as a major radial drainage centre for rivers such as the Kaduna and Gongola?",
+          "similarAnswer": "The Jos Plateau."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 182805,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0041",
+      "subject": "geography",
+      "topic": "Weathering and rivers",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The upper surface of the saturated zone beneath the ground is called the",
+      "options": [
+        {
+          "id": "a",
+          "text": "spring line",
+          "why": "A spring line is a row of springs where groundwater emerges along a slope, not the underground surface itself.",
+          "whyWrong": "A spring line marks points at the ground surface where the water table intersects a hillside, often above an impermeable rock layer. The top surface of the underground saturated rock is the water table."
+        },
+        {
+          "id": "b",
+          "text": "water table",
+          "why": "The water table is the boundary separating saturated rock below from unsaturated soil and rock above.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "watershed",
+          "why": "A watershed (drainage divide) is high ground on the surface separating two river basins.",
+          "whyWrong": "A watershed is an upland ridge at the surface that divides rainwater between neighbouring drainage basins. It is a surface relief feature, not an underground water level."
+        },
+        {
+          "id": "d",
+          "text": "aquiclude",
+          "why": "An aquiclude is an impermeable rock layer that blocks groundwater flow, not the top of the saturated zone.",
+          "whyWrong": "An aquiclude (such as clay or unfractured shale) prevents water from passing through it, often trapping water above it. The level to which pores are completely filled with water is the water table."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "When you dig a well, you have to reach this underground level before water fills the hole.",
+      "explanation": "Rainwater percolates downward until it reaches impermeable rock and fills all rock pores, forming the zone of saturation. The upper boundary of this saturated zone is the water table, which rises during wet seasons and drops during droughts.",
+      "trap": "Spring line sounds close because springs are fed by groundwater, but a spring line is where groundwater meets the surface on a slope, not the top of the saturated zone everywhere underground.",
+      "mnemonic": "Water Table = Top of the underground water.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Underground, there is a depth below which every tiny crack and pore in the rock is full of water. The top edge of that wet zone is the water table."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A spring line is where groundwater flows out onto a hillside at the surface. The underground boundary at the top of the saturated zone itself is called the water table."
+        },
+        {
+          "id": "simpler",
+          "label": "What is the rock layer that holds usable groundwater called?",
+          "answer": "A permeable rock layer that stores and transmits groundwater — like sandstone or limestone — is called an aquifer."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is an impermeable rock layer that prevents groundwater from passing through it called?",
+          "similarAnswer": "An aquiclude (or impermeable stratum)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 182645,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0045",
+      "subject": "geography",
+      "topic": "Earth and solar system",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Places near the Equator generally receive more intense solar radiation than places near the poles because",
+      "options": [
+        {
+          "id": "a",
+          "text": "the Sun's rays strike the Equator more nearly vertically",
+          "why": "High-angle (nearly vertical) rays concentrate energy onto a smaller surface area and pass through less atmosphere.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "the Earth rotates faster at the Equator",
+          "why": "Rotational speed causes the Coriolis deflection of winds, not stronger solar heating.",
+          "whyWrong": "While surface points at the Equator do move faster in linear speed as the Earth spins, rotation speed does not increase how much sunlight energy falls per square metre."
+        },
+        {
+          "id": "c",
+          "text": "the atmosphere is absent at the Equator",
+          "why": "The Earth's atmosphere covers the entire globe, including the Equator.",
+          "whyWrong": "The Equator has a thick, warm, moisture-rich atmosphere (the troposphere is actually thickest near the Equator). Sunlight is intense there because of the high angle of incidence, not because air is missing."
+        },
+        {
+          "id": "d",
+          "text": "the Equator is much closer to the Sun",
+          "why": "Earth's radius (~6,371 km) is tiny compared with the ~150 million km distance to the Sun, so proximity is negligible.",
+          "whyWrong": "Compared with the 150 million km separating Earth and the Sun, the Equator being a few thousand kilometres closer than the poles makes virtually no difference to heating. What matters is the angle at which sunlight strikes the curved Earth."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "b"
+      ],
+      "hint": "Shine a torch straight down at a floor versus at a low slant. Which beam is concentrated on a smaller spot?",
+      "explanation": "Because the Earth is curved, sunlight hits the Equator at a high angle (nearly 90°), concentrating solar energy on a small surface area and passing through a shorter path of atmosphere. Near the poles, low-angle rays spread the same energy over a much wider area.",
+      "trap": "Many students guess the Equator is hotter because it bulges slightly closer to the Sun, forgetting how tiny Earth's radius is beside the 150 million km Earth–Sun distance.",
+      "mnemonic": "Straight-on Sun = Small spot, Strong heat; Slanted Sun = Spread out, Cool.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "At the Equator, the Sun shines almost straight overhead, packing its heat into a tight spot. Near the poles, the Sun sits low and spreads the same heat thinly."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Earth is about 150 million km from the Sun, so the Equator being ~6,000 km closer than a pole is tiny and has almost zero effect. The real reason is the angle of the Sun's rays."
+        },
+        {
+          "id": "simpler",
+          "label": "How does the atmosphere also affect slanted polar rays?",
+          "answer": "Low-angle rays near the poles travel diagonally through a thicker slice of atmosphere, so more sunlight is scattered or reflected before reaching the ground."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Why is midday sunlight much warmer than late-afternoon sunlight at the same place?",
+          "similarAnswer": "Midday rays strike the ground at a steeper angle, concentrating energy onto a smaller area."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 182529,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0046",
+      "subject": "geography",
+      "topic": "Rocks and landforms",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which characteristic is most typical of a shield volcano?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a narrow summit produced only by folding",
+          "why": "Volcanoes are built by erupted magma and pyroclasts, not by rock folding.",
+          "whyWrong": "Folding creates fold mountains through horizontal crustal compression, not volcanoes. Shield volcanoes are volcanic landforms built by repeated lava flows."
+        },
+        {
+          "id": "b",
+          "text": "steep sides formed entirely from ash",
+          "why": "Steep-sided cones built from ash and cinders are cinder/ash cones, not shield volcanoes.",
+          "whyWrong": "Volcanoes made mainly of explosive ash and cinders build small, steep-sided cones. A shield volcano is the opposite: it erupts runny lava quietly and spreads wide with gentle slopes."
+        },
+        {
+          "id": "c",
+          "text": "broad gentle slopes built mainly by fluid lava",
+          "why": "Runny basaltic lava travels far before cooling, creating wide, gently sloping shield cones.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "absence of lava flows",
+          "why": "Shield volcanoes are built almost entirely from successive layers of lava flows.",
+          "whyWrong": "Lava flows are the main building material of a shield volcano. Without fluid lava spreading outward from the vent, the broad shield shape could not form."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Think of a warrior's round shield lying flat on the ground — what kind of slope does it have?",
+      "explanation": "Shield volcanoes form where low-viscosity (fluid) basic basaltic lava erupts effusively and flows long distances before solidifying. Repeated eruptions build a wide base with broad, gentle slopes resembling a flat shield.",
+      "trap": "Students often picture all volcanoes as steep cones, so they pick the steep ash-cone description by mistake.",
+      "mnemonic": "Shield = Runny lava spreads Wide and Gentle (like a shield lying flat).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Because the lava is thin and runny like warm syrup, it flows far sideways instead of piling up high. That makes a wide, low volcano shaped like a shield."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Steep sides made of ash describe a cinder cone or explosive composite volcano. Shield volcanoes have gentle slopes because fluid basaltic lava spreads far before hardening."
+        },
+        {
+          "id": "simpler",
+          "label": "What is a famous real-world example of a shield volcano?",
+          "answer": "Mauna Loa in Hawaii is the classic example — it is huge in width but rises with very gentle slopes built from fluid basaltic lava."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What kind of magma (acidic/viscous or basic/fluid) builds steep-sided lava domes and explosive composite volcanoes?",
+          "similarAnswer": "Acidic (silica-rich, viscous) magma."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 182533,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "geog-api-0047",
+      "subject": "geography",
+      "topic": "Population and settlement",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A nucleated rural settlement is one in which houses are",
+      "options": [
+        {
+          "id": "a",
+          "text": "widely scattered over farmland",
+          "why": "Widely scattered farmsteads describe a dispersed settlement, not a nucleated one.",
+          "whyWrong": "When houses and farmsteads sit far apart across individual plots of farmland, that pattern is called a dispersed settlement. Nucleated settlements pull dwellings together."
+        },
+        {
+          "id": "b",
+          "text": "clustered closely together",
+          "why": "Nucleated settlements group buildings tightly around a central point such as a crossroad or water source.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "arranged only along a road",
+          "why": "Houses lined up in a strip along a road or river form a linear settlement.",
+          "whyWrong": "Buildings stretched in a long line along a road, railway, or river valley form a linear (ribbon) settlement. A nucleated village instead clusters tightly in a compact group."
+        },
+        {
+          "id": "d",
+          "text": "built exclusively on hilltops",
+          "why": "Hilltop siting is a defensive location factor, not the definition of a nucleated pattern.",
+          "whyWrong": "Some settlements are built on hilltops for defence or flood avoidance, which describes their site rather than their spatial pattern. A nucleated settlement can sit on flat land, a valley, or a hill as long as its houses are clustered together."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Think of the word 'nucleus' — the tightly packed centre of a cell or atom.",
+      "explanation": "In a nucleated (clustered) settlement, houses and community buildings are grouped closely together, often around a market square, road junction, or reliable water source, with surrounding farmland lying outside the village.",
+      "trap": "Linear and dispersed are the other two classic rural settlement patterns; students sometimes mix up nucleated with linear road-side ribbons.",
+      "mnemonic": "Nucleated = like a Nucleus, houses packed close together.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Nucleated means bunched together: all the houses sit close to each other in one tight village cluster instead of being spread out over fields."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Houses stretched in a row along a road or river make a linear settlement. Nucleated means grouped tightly together in a compact cluster."
+        },
+        {
+          "id": "simpler",
+          "label": "Why do rural villages often become nucleated?",
+          "answer": "People cluster together for shared water (like a single well or stream), mutual defence, social life, and easy access to a village market or road junction."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What settlement pattern consists of isolated farmhouses scattered widely across agricultural land?",
+          "similarAnswer": "Dispersed settlement."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 182590,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

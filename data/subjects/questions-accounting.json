@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "subject": "accounting",
+  "count": 12,
+  "questions": [
+    {
+      "id": "acct-api-0001",
+      "subject": "accounting",
+      "topic": "Partnership accounts",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In the context of partnership accounts, what is the treatment of goodwill upon the admission of a new partner?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Goodwill is not considered in partnership accounts.",
+          "why": "Goodwill must be accounted for whenever the profit-sharing ratio changes.",
+          "whyWrong": "Goodwill is a key item in partnership accounting whenever a new partner joins or an old one leaves. Ignoring it would hand the incoming partner a share of reputation built up before they joined without compensating existing partners."
+        },
+        {
+          "id": "b",
+          "text": "Goodwill is calculated and shared among existing partners.",
+          "why": "Existing partners built the goodwill before admission, so it is credited to them in their old profit-sharing ratio.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Goodwill is automatically included in the new partner's capital account.",
+          "why": "The new partner pays for a share of goodwill; it is not credited as a gift to their capital.",
+          "whyWrong": "Crediting goodwill to the new partner's capital account gives them credit for reputation they did not help create. Instead, goodwill is valued and credited to the existing partners' capital accounts in their old profit-sharing ratio."
+        },
+        {
+          "id": "d",
+          "text": "Goodwill is written off immediately against the revenue.",
+          "why": "Goodwill adjustments affect partners' capital accounts, not the revenue account.",
+          "whyWrong": "Goodwill on admission is an equity adjustment among partners, not an operating expense of the business. Writing it off against revenue would wrongly reduce reported profit for the year."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Who built the business's reputation before the new partner arrived?",
+      "explanation": "Before a new partner joins, the existing partners built up the firm's goodwill. On admission, goodwill is valued and credited to the existing partners' capital accounts in their old profit-sharing ratio.",
+      "trap": "Students often think goodwill goes straight into the new partner's capital account. In fact, the new partner pays for their share so the old partners are compensated.",
+      "mnemonic": "Old partners earned the goodwill, so old partners share it first.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If two people build a popular shop and a third joins later, the reputation already earned belongs to the first two. So we value that goodwill and give it to the existing partners."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The new partner did not create the existing goodwill, so it cannot be added as free capital for them. Existing partners get the credit in their old ratio."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "On admission, value goodwill and credit the existing partners' capital accounts in their old profit-sharing ratio. If goodwill is not kept in the books, write it off against all partners in the new ratio."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In which ratio is goodwill credited to existing partners when a new partner is admitted?",
+          "similarAnswer": "The old profit-sharing ratio."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 171402,
+        "yearLabel": "1990"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0003",
+      "subject": "accounting",
+      "topic": "Trial balance and errors",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A company has a trial balance showing total debits of ₦150,000 and total credits of ₦145,000. What is the most appropriate action to take next?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prepare a profit and loss account",
+          "why": "Preparing final accounts from an unbalanced trial balance will produce wrong profit figures.",
+          "whyWrong": "You cannot prepare a reliable profit and loss account while debits exceed credits by ₦5,000. The imbalance means at least one posting or casting error exists and must be traced first."
+        },
+        {
+          "id": "b",
+          "text": "Investigate the discrepancy and correct errors",
+          "why": "A ₦5,000 mismatch proves there is an error that must be found and corrected before preparing final accounts.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Issue financial statements",
+          "why": "Financial statements cannot be issued when the books do not balance.",
+          "whyWrong": "Issuing financial statements with an unresolved ₦5,000 difference would publish inaccurate assets, liabilities, or profit. Errors must be located and corrected before any statements are released."
+        },
+        {
+          "id": "d",
+          "text": "Close the books for the period",
+          "why": "Closing the books locks in the error instead of fixing it.",
+          "whyWrong": "Closing entries transfer income and expense balances to profit and loss, which should only happen after the trial balance agrees. Closing early leaves the ₦5,000 discrepancy unresolved."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Under double entry, total debits must always equal total credits.",
+      "explanation": "A trial balance checks the arithmetical accuracy of double-entry postings. Because debits (₦150,000) do not equal credits (₦145,000), there is a ₦5,000 error that must be investigated and corrected before final accounts are drawn up.",
+      "trap": "Going straight to the profit and loss account seems like the normal next step after a trial balance, but that only applies when the trial balance agrees.",
+      "mnemonic": "Debits must match credits before final accounts begin.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Debits and credits should be equal like two sides of a scale. Here one side is ₦5,000 heavier, so you must find the mistake before doing anything else."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "You only move on to the profit and loss account after the trial balance agrees. With a ₦5,000 gap, the profit figure itself could be wrong."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "When a trial balance disagrees, check castings, balance extractions, and one-sided postings. If needed urgently, place the difference temporarily in a suspense account while investigating."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which temporary account is opened when a trial balance fails to agree while errors are still being traced?",
+          "similarAnswer": "A suspense account."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 171518,
+        "yearLabel": "1991"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0006",
+      "subject": "accounting",
+      "topic": "Double entry and books of original entry",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following accounting records are considered source documents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Journals and ledgers",
+          "why": "Journals are books of original entry and ledgers are principal books, not source documents.",
+          "whyWrong": "Journals and ledgers are accounting books where transactions are recorded after looking at the paperwork. Source documents are the original vouchers, such as invoices and receipts, that provide evidence for those entries."
+        },
+        {
+          "id": "b",
+          "text": "Sales invoice and debit note",
+          "why": "Both a sales invoice and a debit note are original business vouchers used to record transactions.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Sales invoice and cashbook",
+          "why": "A sales invoice is a source document, but the cashbook is a book of original entry and ledger.",
+          "whyWrong": "While a sales invoice is indeed a source document, the cashbook is not—it is both a book of original entry and a ledger account for cash and bank. Every item in the correct pair must be a source document."
+        },
+        {
+          "id": "d",
+          "text": "Cashbook and debit note",
+          "why": "A debit note is a source document, but the cashbook is an accounting book.",
+          "whyWrong": "A debit note is a valid source document, yet the cashbook is a book of account where cash receipts and payments are recorded. Both items in the choice must be source documents."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Source documents are the original pieces of paper proving a transaction happened—not the books you write them into.",
+      "explanation": "Source documents are original transaction vouchers such as invoices, receipts, credit notes, and debit notes. Journals, ledgers, and the cashbook are books of account prepared from those documents.",
+      "trap": "Seeing 'sales invoice' at the start makes 'Sales invoice and cashbook' tempting, but the cashbook is a book of original entry and ledger, not a source document.",
+      "mnemonic": "Documents come first (invoices, notes, receipts); Books record them later (journals, cashbook, ledgers).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Source documents are the actual slips and papers from a deal—like a bill (sales invoice) or a note asking for an adjustment (debit note). A cashbook is a notebook you copy them into."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "A sales invoice is a source document, so the first half is right, but the cashbook is a book of account. Both items in the pair have to be source documents."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "Common source documents include invoices, receipts, credit notes, debit notes, petty cash vouchers, and bank paying-in slips. They are entered first into books of original entry, then posted to the ledger."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which source document is issued by a seller to reduce the amount owed by a customer who returned damaged goods?",
+          "similarAnswer": "A credit note."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 1701,
+        "yearLabel": "1993"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0009",
+      "subject": "accounting",
+      "topic": "Principles and concepts",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A company has total liabilities of ₦200,000 and total assets of ₦500,000. What is the owner's equity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦300,000",
+          "why": "Owner's equity = Assets − Liabilities = ₦500,000 − ₦200,000 = ₦300,000.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "₦500,000",
+          "why": "₦500,000 is total assets, before deducting liabilities.",
+          "whyWrong": "₦500,000 is the total value of all assets. Because outsiders have a claim of ₦200,000 in liabilities, the owner's residual claim is only the remaining ₦300,000."
+        },
+        {
+          "id": "c",
+          "text": "₦200,000",
+          "why": "₦200,000 is the total liabilities, not equity.",
+          "whyWrong": "₦200,000 is what the business owes to outsiders (liabilities). Subtracting those liabilities from ₦500,000 of assets gives owner's equity of ₦300,000."
+        },
+        {
+          "id": "d",
+          "text": "₦700,000",
+          "why": "This adds assets and liabilities together instead of subtracting.",
+          "whyWrong": "₦700,000 comes from adding ₦500,000 and ₦200,000. Since Assets = Liabilities + Equity, you must subtract liabilities from assets to find equity."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Use the accounting equation: Assets = Liabilities + Owner's Equity.",
+      "explanation": "By the accounting equation, Assets = Liabilities + Equity. Rearranging gives Equity = Assets − Liabilities = ₦500,000 − ₦200,000 = ₦300,000.",
+      "trap": "Adding assets and liabilities to get ₦700,000 is a common slip when students forget that assets are on the opposite side of the equation from liabilities and equity.",
+      "mnemonic": "A = L + E, so E = A − L.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If the company owns things worth ₦500,000 and owes outsiders ₦200,000, what is left for the owner is ₦500,000 minus ₦200,000, which is ₦300,000."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "₦700,000 comes from adding assets and liabilities. Equity cannot be bigger than total assets when liabilities are positive—you subtract liabilities from assets."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "The fundamental accounting equation states that Total Assets = Liabilities + Owner's Equity (Capital). Every asset is financed either by debt (liabilities) or by the owner (equity)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If a business has owner's equity of ₦450,000 and liabilities of ₦150,000, what are its total assets?",
+          "similarAnswer": "₦600,000"
+        }
+      ],
+      "animationId": "anim-acct-api-0009",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 172424,
+        "yearLabel": "1994"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0012",
+      "subject": "accounting",
+      "topic": "Manufacturing accounts",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A manufacturing company has a total production cost of ₦1,000,000, with direct materials costing ₦600,000 and direct labor costing ₦300,000. What is the amount of manufacturing overhead?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦100,000",
+          "why": "Total production cost (₦1,000,000) minus prime cost (₦600,000 + ₦300,000) equals ₦100,000.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "₦200,000",
+          "why": "Subtracting ₦900,000 from ₦1,000,000 leaves ₦100,000, not ₦200,000.",
+          "whyWrong": "₦200,000 is an arithmetic slip. Direct materials (₦600,000) and direct labour (₦300,000) already sum to ₦900,000, leaving only ₦100,000 out of ₦1,000,000 for overhead."
+        },
+        {
+          "id": "c",
+          "text": "₦300,000",
+          "why": "₦300,000 is the direct labour cost, not the manufacturing overhead.",
+          "whyWrong": "₦300,000 simply repeats the direct labour figure given in the question. Manufacturing overhead is the remaining balance after subtracting both direct materials and direct labour."
+        },
+        {
+          "id": "d",
+          "text": "₦400,000",
+          "why": "This subtracts only direct materials (₦600,000) and forgets to subtract direct labour (₦300,000).",
+          "whyWrong": "₦400,000 comes from taking ₦1,000,000 minus ₦600,000 alone. That figure still includes direct labour of ₦300,000, so subtracting direct labour leaves ₦100,000."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Total production cost = Direct materials + Direct labour + Manufacturing overhead.",
+      "explanation": "Prime cost is Direct materials + Direct labour = ₦600,000 + ₦300,000 = ₦900,000. Manufacturing overhead = Total production cost − Prime cost = ₦1,000,000 − ₦900,000 = ₦100,000.",
+      "trap": "Subtracting only direct materials from total production cost gives ₦400,000. Remember that direct labour must also be deducted.",
+      "mnemonic": "Production cost = Prime cost + Factory overhead.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "All factory costs together are ₦1,000,000. Materials and workers take ₦600,000 + ₦300,000 = ₦900,000, so the leftover ₦100,000 is overhead."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "₦400,000 only takes away direct materials. You also have to subtract the ₦300,000 spent on direct labour, leaving ₦100,000."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "In a manufacturing account, Direct Materials + Direct Labour (+ Direct Expenses) = Prime Cost. Adding Factory (Manufacturing) Overhead to Prime Cost gives Total Production Cost."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If direct materials are ₦250,000, direct labour is ₦150,000, and factory overhead is ₦80,000, what is the total production cost?",
+          "similarAnswer": "₦480,000"
+        }
+      ],
+      "animationId": "anim-acct-api-0012",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 171430,
+        "yearLabel": "2001"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0015",
+      "subject": "accounting",
+      "topic": "Cash flow statement",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "In preparing a cash flow statement, if a company reports cash inflow from operating activities of N150,000 and cash outflow from investing activities of N80,000, what is the net cash flow from these activities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N70,000",
+          "why": "Cash inflow of N150,000 minus cash outflow of N80,000 gives a net cash inflow of N70,000.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "N80,000",
+          "why": "N80,000 is only the investing outflow, not the net cash flow.",
+          "whyWrong": "N80,000 is just the cash paid out for investing activities. To find net cash flow from both activities, subtract the N80,000 outflow from the N150,000 operating inflow."
+        },
+        {
+          "id": "c",
+          "text": "N150,000",
+          "why": "N150,000 ignores the N80,000 cash outflow from investing.",
+          "whyWrong": "N150,000 is only the operating cash inflow before deducting investing payments. Net cash flow combines both inflows and outflows."
+        },
+        {
+          "id": "d",
+          "text": "N230,000",
+          "why": "This adds the cash outflow instead of subtracting it.",
+          "whyWrong": "N230,000 comes from adding N150,000 and N80,000 together. Because N80,000 is an outflow (cash going out), it reduces cash and must be subtracted."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Inflows add cash; outflows take cash away.",
+      "explanation": "Net cash flow combines cash inflows (positive) and cash outflows (negative): N150,000 − N80,000 = N70,000 net cash inflow.",
+      "trap": "Adding N150,000 and N80,000 to get N230,000 ignores the word 'outflow'. Outflows always carry a minus sign.",
+      "mnemonic": "Inflow adds, Outflow subtracts.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "N150,000 came into the business from operations and N80,000 went out for investments, so N70,000 remained as net cash."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "N230,000 treats an outflow as an inflow. Money spent on investing activities leaves the company, so you subtract N80,000 from N150,000."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "A cash flow statement groups cash movements into operating, investing, and financing activities. Cash inflows are added and cash outflows are subtracted to find the net change in cash."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If operating cash inflow is N200,000 and investing cash outflow is N120,000, what is the net cash flow from both?",
+          "similarAnswer": "N80,000"
+        }
+      ],
+      "animationId": "anim-acct-api-0015",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 172682,
+        "yearLabel": "2009"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0016",
+      "subject": "accounting",
+      "topic": "Partnership accounts",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A partnership agreement states that profits are to be shared in the ratio of 3:2 between Partner A and Partner B. If the total profit for the year is ₦50,000, how much will Partner A receive?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦20,000",
+          "why": "₦20,000 is Partner B's share (2/5), not Partner A's.",
+          "whyWrong": "₦20,000 is 2/5 of ₦50,000, which belongs to Partner B. Because the ratio 3:2 lists Partner A first, Partner A gets the larger 3/5 share (₦30,000)."
+        },
+        {
+          "id": "b",
+          "text": "₦30,000",
+          "why": "Total ratio parts = 3 + 2 = 5, so Partner A receives (3/5) × ₦50,000 = ₦30,000.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "₦40,000",
+          "why": "3/5 of ₦50,000 is ₦30,000, not ₦40,000.",
+          "whyWrong": "₦40,000 would be 4/5 of the profit, leaving only ₦10,000 for Partner B, which is a 4:1 ratio rather than 3:2."
+        },
+        {
+          "id": "d",
+          "text": "₦15,000",
+          "why": "This divides ₦50,000 into 10 parts instead of 5 parts.",
+          "whyWrong": "₦15,000 is 3/10 of ₦50,000, which would leave ₦35,000 unallocated or miscalculated. The ratio 3:2 sums to 5 parts, giving ₦10,000 per part."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Add the two numbers in the ratio (3 + 2) to find how many equal parts the profit is split into.",
+      "explanation": "The ratio 3:2 has 3 + 2 = 5 total parts. Each part is ₦50,000 ÷ 5 = ₦10,000. Partner A takes 3 parts: 3 × ₦10,000 = ₦30,000.",
+      "trap": "₦20,000 is Partner B's share. Always check the order of names in the ratio—Partner A is first, so Partner A gets 3 parts.",
+      "mnemonic": "Add the parts, divide the profit, multiply by your share.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Cut the ₦50,000 profit into 5 equal slices (3 + 2). Each slice is ₦10,000, and Partner A gets 3 slices, making ₦30,000."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "₦20,000 is 2/5 of ₦50,000, which is Partner B's share. Partner A is named first in 3:2, so A receives 3/5 (₦30,000)."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "In a partnership appropriation account, residual profit is shared in the agreed profit-sharing ratio. If no ratio is agreed, the Partnership Act shares profits equally."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Profits of ₦80,000 are shared 5:3 between X and Y. How much does X receive?",
+          "similarAnswer": "₦50,000"
+        }
+      ],
+      "animationId": "anim-acct-api-0016",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 172291,
+        "yearLabel": "2010"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0017",
+      "subject": "accounting",
+      "topic": "Depreciation and accruals",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "If a vehicle costs ₦120,000, has a scrap value of ₦20,000, and a lifespan of 4 years, what is the annual depreciation using the straight-line method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦25,000",
+          "why": "(₦120,000 − ₦20,000) ÷ 4 = ₦100,000 ÷ 4 = ₦25,000 per year.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "₦30,000",
+          "why": "This divides ₦120,000 by 4 without subtracting the ₦20,000 scrap value.",
+          "whyWrong": "₦30,000 comes from dividing the full cost (₦120,000) by 4 years and ignoring the scrap value. Under straight-line depreciation, you first subtract scrap value to get the ₦100,000 depreciable amount."
+        },
+        {
+          "id": "c",
+          "text": "₦20,000",
+          "why": "₦20,000 is the scrap value, not the annual depreciation.",
+          "whyWrong": "₦20,000 is simply the residual value expected at the end of 4 years. Dividing the ₦100,000 loss in value by 4 years gives ₦25,000 per year."
+        },
+        {
+          "id": "d",
+          "text": "₦35,000",
+          "why": "This adds the scrap value to cost instead of subtracting it.",
+          "whyWrong": "₦35,000 comes from adding ₦20,000 to ₦120,000 before dividing by 4. Scrap value is recovered at disposal, so it reduces the amount depreciated."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Subtract the scrap value from the cost before dividing by the useful life.",
+      "explanation": "Straight-line depreciation = (Cost − Scrap value) ÷ Useful life = (₦120,000 − ₦20,000) ÷ 4 = ₦100,000 ÷ 4 = ₦25,000 per year.",
+      "trap": "Dividing ₦120,000 straight by 4 gives ₦30,000. Always deduct scrap (residual) value first.",
+      "mnemonic": "Cost minus Scrap, divided by Years.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The vehicle starts at ₦120,000 and ends up worth ₦20,000, so it loses ₦100,000 in value over 4 years—that is ₦25,000 each year."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "₦30,000 forgets the ₦20,000 you still get back when selling the vehicle as scrap. Only the net cost of ₦100,000 is spread over 4 years."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "Annual straight-line depreciation is constant every year: (Original Cost − Residual/Scrap Value) ÷ Estimated Useful Life."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A machine costs ₦90,000, has a scrap value of ₦10,000, and lasts 5 years. What is the annual straight-line depreciation?",
+          "similarAnswer": "₦16,000"
+        }
+      ],
+      "animationId": "anim-acct-api-0017",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 11191,
+        "yearLabel": "2011"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0018",
+      "subject": "accounting",
+      "topic": "Final accounts and adjustments",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The balance sheet reflects",
+      "options": [
+        {
+          "id": "a",
+          "text": "net profit for the period",
+          "why": "Net profit for a period is shown by the profit and loss account, not the balance sheet.",
+          "whyWrong": "The profit and loss account (income statement) measures performance over an accounting period and reports net profit. The balance sheet is a snapshot of assets, liabilities, and capital on one specific date."
+        },
+        {
+          "id": "b",
+          "text": "financial position at a point in time",
+          "why": "A balance sheet lists assets, liabilities, and equity on a specific date.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "cash flow movements",
+          "why": "Cash inflows and outflows over a period are reported in the cash flow statement.",
+          "whyWrong": "Cash receipts and payments during the year are summarised in the cash flow statement. The balance sheet shows only the closing cash balance at the reporting date alongside other assets and liabilities."
+        },
+        {
+          "id": "d",
+          "text": "cost of goods sold",
+          "why": "Cost of goods sold is calculated in the trading account.",
+          "whyWrong": "Cost of goods sold belongs to the trading section of the income statement, where gross profit is calculated. The balance sheet reports closing inventory, not cost of goods sold."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the difference between a movie (over a period) and a photograph (at one date).",
+      "explanation": "The balance sheet (statement of financial position) is headed 'as at' a specific date because it shows the business's assets, liabilities, and capital at that exact point in time.",
+      "trap": "Students confuse the balance sheet with the profit and loss account. Profit is measured 'for the year ended', whereas the balance sheet is 'as at' a date.",
+      "mnemonic": "Balance sheet = Snapshot at a single date ('as at').",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A balance sheet is like a snapshot taken on the last day of the year showing what the business owns, owes, and is worth at that moment."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Net profit for the period is calculated in the profit and loss account. Only the closing capital figure (after adding profit) appears on the balance sheet."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "Income statements cover a period ('for the year ended 31 December'), while the balance sheet shows financial position at a point in time ('as at 31 December')."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which final account shows a business's gross profit for a trading period?",
+          "similarAnswer": "The trading account."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 11095,
+        "yearLabel": "2014"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0019",
+      "subject": "accounting",
+      "topic": "Bank reconciliation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In preparing a bank reconciliation statement, which of the following items would NOT be considered a reconciling item?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Outstanding cheques",
+          "why": "Unpresented (outstanding) cheques cause the bank balance to differ from the cash book.",
+          "whyWrong": "Outstanding cheques have been deducted in the cash book but have not yet cleared the bank, so they are one of the most common reconciling items."
+        },
+        {
+          "id": "b",
+          "text": "Deposits in transit",
+          "why": "Uncredited deposits appear in the cash book before the bank statement, so they are a reconciling item.",
+          "whyWrong": "Deposits in transit (uncredited lodgements) have been added to the cash book but not yet credited by the bank, which makes them a standard reconciling item."
+        },
+        {
+          "id": "c",
+          "text": "Bank charges not yet recorded",
+          "why": "Unrecorded bank charges appear on the bank statement before the cash book, causing a difference to reconcile.",
+          "whyWrong": "Bank charges not yet recorded in the cash book create a gap between the bank statement and the cash book, so they must be accounted for during bank reconciliation (by updating the adjusted cash book)."
+        },
+        {
+          "id": "d",
+          "text": "Credit sales for the month",
+          "why": "Credit sales involve no cash or bank movement yet, so they do not affect bank reconciliation.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Bank reconciliation only deals with items that go through the bank column of the cash book or the bank statement.",
+      "explanation": "A bank reconciliation explains differences between the cash book bank balance and the bank statement. Credit sales go to the sales day book and debtors' accounts—no bank receipt occurs until the customer later pays.",
+      "trap": "Bank charges are adjusted in the cash book rather than left on the reconciliation statement itself, which tricks students into picking them. Still, they DO explain the difference, whereas credit sales have nothing to do with bank balances.",
+      "mnemonic": "No cash or bank entry? Not in bank reconciliation.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When you sell on credit, no money enters the bank yet. Because the bank knows nothing about an unpaid invoice, credit sales cannot cause a difference between your cash book and bank statement."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Unrecorded bank charges are on the bank statement but missing from your cash book, so they DO cause a difference you must reconcile by updating the cash book."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "Bank reconciliation deals with timing differences (unpresented cheques, uncredited deposits) and items on the bank statement not yet in the cash book (bank charges, standing orders, direct credits, dishonoured cheques)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A cheque issued to a supplier that has not yet been presented to the bank for payment is called what?",
+          "similarAnswer": "An unpresented (or outstanding) cheque."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 171183,
+        "yearLabel": "2014"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0025",
+      "subject": "accounting",
+      "topic": "Double entry and books of original entry",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Fiyinfoluwa Motors bought three Toyota Hilux vans on cash at the cost of ₦6,000,000. On debiting the vehicle account, the corresponding credit for the purchase will appear in the",
+      "options": [
+        {
+          "id": "a",
+          "text": "sales day book",
+          "why": "The sales day book records credit sales of goods, not cash purchases of vehicles.",
+          "whyWrong": "The sales day book is strictly for credit sales of trading goods. Paying cash for delivery vans is a cash payment for a fixed asset, not a credit sale."
+        },
+        {
+          "id": "b",
+          "text": "cash book",
+          "why": "Cash paid out is credited in the cash book, completing the double entry with the debit to the vehicle account.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "sales subsidiary book",
+          "why": "A sales subsidiary book records sales on credit, not cash purchases.",
+          "whyWrong": "Sales subsidiary books hold details of credit sales to customers. Here the business is buying vehicles for cash, so cash is going out through the cash book."
+        },
+        {
+          "id": "d",
+          "text": "purchase day book",
+          "why": "The purchase day book is only for credit purchases of goods meant for resale, not cash purchases of fixed assets.",
+          "whyWrong": "Students often pick purchase day book because of the word 'bought', but the purchase day book only records credit purchases of inventory for resale. Cash payments for fixed assets are credited in the cash book."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Look at how the vans were paid for: 'on cash'. Which book records cash going out?",
+      "explanation": "Buying vehicles for cash increases the Vehicle asset account (Debit Vehicle) and reduces Cash (Credit Cash). Because the cash book is the ledger account for cash, the credit entry appears in the cash book.",
+      "trap": "Seeing the word 'bought' makes 'purchase day book' tempting, but the purchase day book is only for credit purchases of goods for resale.",
+      "mnemonic": "Cash paid out? Credit the Cash Book.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Cash left the business to pay for the vans. Every cash payment goes on the credit side of the cash book."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "The purchase day book only records goods bought on credit for resale. These vans were bought for cash as fixed assets, so the credit goes in the cash book."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "Cash transactions always go through the cash book. The purchases day book is strictly for credit purchases of trading stock, while credit purchases of fixed assets go through the general journal."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If a firm buys office furniture on credit from a supplier, which book of original entry records the transaction?",
+          "similarAnswer": "The general journal (journal proper)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 1730,
+        "yearLabel": "2020"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "acct-api-0028",
+      "subject": "accounting",
+      "topic": "Company accounts",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A company issues shares at a premium of 20% over the nominal value of ₦5. If the company issues 10,000 shares, what will be the total amount received from the share issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦50,000",
+          "why": "₦50,000 is only the nominal value (10,000 × ₦5) and omits the 20% share premium.",
+          "whyWrong": "₦50,000 multiplies 10,000 shares by the ₦5 nominal value and leaves out the 20% premium. Because the shares are issued at a premium, each share brings in ₦6, making ₦60,000 in total."
+        },
+        {
+          "id": "b",
+          "text": "₦60,000",
+          "why": "Issue price is ₦5 + (20% of ₦5) = ₦6 per share, so 10,000 × ₦6 = ₦60,000.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "₦70,000",
+          "why": "₦70,000 corresponds to a 40% premium (₦7 per share), not 20%.",
+          "whyWrong": "₦70,000 overstates the issue price at ₦7 per share. A 20% premium on ₦5 is ₦1, giving an issue price of ₦6 and total proceeds of ₦60,000."
+        },
+        {
+          "id": "d",
+          "text": "₦80,000",
+          "why": "₦80,000 would require an issue price of ₦8 per share.",
+          "whyWrong": "₦80,000 assumes a 60% premium above the ₦5 nominal value. With a 20% premium, each share sells for ₦6, so 10,000 shares raise ₦60,000."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find 20% of ₦5 first, add it to ₦5 to get the issue price per share, then multiply by 10,000.",
+      "explanation": "The premium per share is 20% of ₦5 = ₦1, so each share is issued at ₦5 + ₦1 = ₦6. Issuing 10,000 shares raises 10,000 × ₦6 = ₦60,000 (₦50,000 share capital plus ₦10,000 share premium).",
+      "trap": "₦50,000 is the par value alone. Don't forget to add the 20% share premium before multiplying by the number of shares.",
+      "mnemonic": "Issue price = Nominal value + Premium.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Each ₦5 share is sold for 20% extra (₦1 more), so buyers pay ₦6 per share. Selling 10,000 shares at ₦6 each brings in ₦60,000."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "₦50,000 is what the company would get if the shares were issued at par (₦5 each). The 20% premium adds an extra ₦10,000, making ₦60,000."
+        },
+        {
+          "id": "simpler",
+          "label": "Key accounting rule",
+          "answer": "When shares are issued at a premium, total cash received is debited to Bank, the nominal value is credited to Share Capital, and the excess is credited to Share Premium."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A company issues 5,000 shares of ₦10 nominal value at a 10% premium. How much cash is received in total?",
+          "similarAnswer": "₦55,000"
+        }
+      ],
+      "animationId": "anim-acct-api-0028",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 171836,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

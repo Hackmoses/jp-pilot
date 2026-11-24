@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "subject": "economics",
+  "count": 3,
+  "animations": [
+    {
+      "id": "anim-econ-api-0008",
+      "questionId": "econ-api-0008",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "CS = Planned spend − Actual spend",
+          "tag": "the rule",
+          "narration": "Consumer surplus is what you planned to pay minus what you actually paid."
+        },
+        {
+          "n": 2,
+          "display": "CS = 120k − 80k = 40k",
+          "tag": "subtract",
+          "narration": "Subtract eighty kobo from one hundred and twenty kobo to get forty kobo."
+        },
+        {
+          "n": 3,
+          "display": "40k ÷ 100 = ₦0.40",
+          "tag": "to naira",
+          "narration": "Divide forty kobo by one hundred to convert to naira, giving zero point four zero naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-econ-api-0020",
+      "questionId": "econ-api-0020",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "%ΔQ = (1500 − 1000) ÷ 1000 = 50%",
+          "tag": "% change in Q",
+          "narration": "Find the percentage change in quantity from the initial one thousand kilograms, which is fifty percent."
+        },
+        {
+          "n": 2,
+          "display": "%ΔP = (5 − 10) ÷ 10 = −50%",
+          "tag": "% change in P",
+          "narration": "Find the percentage change in price from the initial ten kobo, which is minus fifty percent."
+        },
+        {
+          "n": 3,
+          "display": "|PED| = |%ΔQ ÷ %ΔP|",
+          "tag": "the rule",
+          "narration": "Price elasticity of demand is the percentage change in quantity over the percentage change in price."
+        },
+        {
+          "n": 4,
+          "display": "|50% ÷ (−50%)| = 1.00",
+          "tag": "answer",
+          "narration": "Fifty percent divided by minus fifty percent has an absolute value of one point zero zero."
+        }
+      ]
+    },
+    {
+      "id": "anim-econ-api-0061",
+      "questionId": "econ-api-0061",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Growth rate = Birth rate − Death rate",
+          "tag": "the rule",
+          "narration": "Population growth rate equals birth rate minus death rate."
+        },
+        {
+          "n": 2,
+          "display": "12% = Birth rate − 52%",
+          "tag": "substitute",
+          "narration": "Put in twelve percent for the growth rate and fifty-two percent for the death rate."
+        },
+        {
+          "n": 3,
+          "display": "Birth rate = 12% + 52% = 64%",
+          "tag": "answer",
+          "narration": "Add fifty-two percent to twelve percent to get a birth rate of sixty-four percent."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2367 @@
+{
+  "version": 1,
+  "subject": "chemistry",
+  "count": 30,
+  "questions": [
+    {
+      "id": "chem-api-0007",
+      "subject": "chemistry",
+      "topic": "Gas laws",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A gas X diffuses twice as fast as gas Y under the same conditions. If the relative molecular mass of X is 28. Calculate the relative molecular mass of Y",
+      "options": [
+        {
+          "id": "a",
+          "text": "120",
+          "why": "120 comes from miscalculating 4 × 28.",
+          "whyWrong": "120 is close to 112 but does not follow from multiplying 28 by 4. By Graham's law, doubling the diffusion rate requires four times the molar mass, and 4 × 28 = 112."
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "why": "14 halves 28 instead of multiplying by 4.",
+          "whyWrong": "14 assumes the faster gas is heavier, or divides 28 by 2. A gas that diffuses twice as fast must be lighter than gas Y, so gas Y has a larger molar mass than 28."
+        },
+        {
+          "id": "c",
+          "text": "56",
+          "why": "56 forgets to square the rate ratio.",
+          "whyWrong": "56 comes from multiplying 28 by 2 instead of 2². Graham's law compares rates with the square root of molar mass, so you must square the factor of 2 to get 4."
+        },
+        {
+          "id": "d",
+          "text": "112",
+          "why": "r_X ÷ r_Y = √(M_Y ÷ M_X) = 2, so M_Y = 4 × 28 = 112.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Use Graham's law of diffusion: the rate is inversely proportional to the square root of relative molecular mass.",
+      "explanation": "By Graham's law, r_X / r_Y = √(M_Y / M_X). Since gas X diffuses twice as fast as Y, 2 = √(M_Y / 28). Squaring both sides gives 4 = M_Y / 28, so M_Y = 4 × 28 = 112.",
+      "trap": "56 is the most tempting mistake because students multiply 28 by 2 and forget to square the ratio from the square root.",
+      "mnemonic": "Rate squared flips the mass ratio: double speed means four times lighter.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Lighter gases move faster. Because gas X moves twice as fast as Y, Y must be 2² = 4 times as heavy as X, so 4 × 28 = 112."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "56 comes from 2 × 28, forgetting the square root in Graham's law. When you square 2, you multiply 28 by 4 to get 112."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Graham's law of diffusion: r₁ / r₂ = √(M₂ / M₁) at the same temperature and pressure."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Square the speed ratio before multiplying the mass: twice as fast means 2² = 4 times the molar mass."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Gas A diffuses three times as fast as gas B. If the relative molecular mass of A is 4, what is the relative molecular mass of B?",
+          "similarAnswer": "36 (since 3² × 4 = 9 × 4 = 36)."
+        }
+      ],
+      "animationId": "anim-chem-api-0007",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 62,
+        "yearLabel": "2002"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0031",
+      "subject": "chemistry",
+      "topic": "Gas laws",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The partial pressure of oxygen in a sample of air is 452mmHg and the total pressure is 780mmHg. What is the mole fraction of oxygen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.203",
+          "why": "0.203 is near the usual fraction of oxygen in dry air (0.21), not 452 ÷ 780.",
+          "whyWrong": "0.203 comes from recalling that normal air is about 21% oxygen rather than using the pressures given in the question. Always calculate from the numbers supplied: 452 ÷ 780 = 0.579."
+        },
+        {
+          "id": "b",
+          "text": "0.579",
+          "why": "Mole fraction of O₂ = P(O₂) ÷ P_total = 452 ÷ 780 = 0.579.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "2.030",
+          "why": "A mole fraction cannot exceed 1.",
+          "whyWrong": "2.030 is greater than 1, which is impossible for a mole fraction of a component in a mixture. Every mole fraction lies between 0 and 1."
+        },
+        {
+          "id": "d",
+          "text": "5.790",
+          "why": "5.790 shifts the decimal point one place too far right.",
+          "whyWrong": "5.790 is ten times 0.579 and exceeds 1. Because 452 is smaller than 780, dividing 452 by 780 must give a value less than 1."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Partial pressure equals mole fraction multiplied by total pressure.",
+      "explanation": "According to Dalton's law of partial pressures, P(O₂) = χ(O₂) × P_total. Therefore, χ(O₂) = 452 ÷ 780 ≈ 0.579.",
+      "trap": "0.203 tempts students because dry air is roughly 21% oxygen, so some pick it from memory without dividing 452 by 780.",
+      "mnemonic": "Mole fraction = Part over Total, always under 1.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The mole fraction is simply the share of the total pressure that comes from oxygen: 452 out of 780, which is 0.579."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "0.203 is close to normal air's 21% oxygen, but this sample has a much higher oxygen pressure (452 out of 780 mmHg), giving 0.579."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Dalton's partial pressure relation: mole fraction χ = P_component ÷ P_total."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Part divided by whole gives a fraction between 0 and 1."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If the partial pressure of nitrogen in a gas cylinder is 600 mmHg and the total pressure is 800 mmHg, what is the mole fraction of nitrogen?",
+          "similarAnswer": "0.75 (600 ÷ 800)."
+        }
+      ],
+      "animationId": "anim-chem-api-0031",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151403,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0110",
+      "subject": "chemistry",
+      "topic": "Gas laws",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A gaseous mixture of of 80g of oxygen and 56.0g of nitrogen has a total pressure of 1.8atm. The partial pressure of oxygen in the mixture is",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.8atm",
+          "why": "0.8 atm is the partial pressure of nitrogen, not oxygen.",
+          "whyWrong": "0.8 atm corresponds to the 2.0 mol of nitrogen (2.0 ÷ 4.5 × 1.8 = 0.8 atm). The question asks for the partial pressure of oxygen, which is 1.0 atm."
+        },
+        {
+          "id": "b",
+          "text": "1.0atm",
+          "why": "n(O₂) = 2.5 mol, n(N₂) = 2.0 mol, so P(O₂) = (2.5 ÷ 4.5) × 1.8 = 1.0 atm.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "1.2atm",
+          "why": "1.2 atm uses the wrong mole ratio for oxygen.",
+          "whyWrong": "1.2 atm comes from miscounting the moles of oxygen or nitrogen. With 80 g of O₂ (2.5 mol) and 56 g of N₂ (2.0 mol), oxygen's fraction is 2.5 ÷ 4.5, which gives 1.0 atm."
+        },
+        {
+          "id": "d",
+          "text": "1.4atm",
+          "why": "1.4 atm overestimates oxygen's mole fraction.",
+          "whyWrong": "1.4 atm would mean oxygen makes up nearly 78% of the moles in the vessel. In fact, 2.5 mol out of 4.5 mol is 5/9, and 5/9 × 1.8 = 1.0 atm."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Convert both masses (80 g O₂ and 56 g N₂) into moles first using O₂ = 32 and N₂ = 28.",
+      "explanation": "Moles of O₂ = 80 ÷ 32 = 2.5 mol. Moles of N₂ = 56 ÷ 28 = 2.0 mol. Total moles = 4.5 mol. Partial pressure of O₂ = (2.5 ÷ 4.5) × 1.8 atm = 1.0 atm.",
+      "trap": "0.8 atm is the partial pressure of the other gas in the container (nitrogen), which students often select if they pick the wrong gas at the last step.",
+      "mnemonic": "Mass to moles first, then part-over-total times total pressure.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "80 g of O₂ is 2.5 moles and 56 g of N₂ is 2 moles, making 4.5 moles altogether. Oxygen's share of the 1.8 atm total pressure is (2.5 ÷ 4.5) × 1.8 = 1.0 atm."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "0.8 atm is nitrogen's partial pressure because (2.0 ÷ 4.5) × 1.8 = 0.8 atm. Subtracting 0.8 from 1.8 leaves 1.0 atm for oxygen."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Dalton's law of partial pressures: P_A = (n_A ÷ n_total) × P_total."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Never use mass ratios directly for gases; change grams to moles using O₂ = 32 and N₂ = 28 first."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A vessel holds 32 g of O₂ and 28 g of N₂ at a total pressure of 2.0 atm. What is the partial pressure of O₂?",
+          "similarAnswer": "1.0 atm (1 mol O₂ and 1 mol N₂ split 2.0 atm equally)."
+        }
+      ],
+      "animationId": "anim-chem-api-0110",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151648,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0124",
+      "subject": "chemistry",
+      "topic": "Gas laws",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A sample of a gas exerts a pressure of 8.2atm when confined in a 2.93dm 3 container at 20°C. The number of moles of gas in the sample is {R= 0.082 litre atm/deg. mole}",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.00",
+          "why": "n = PV ÷ RT = (8.2 × 2.93) ÷ (0.082 × 293) = 1.00 mol.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "2.00",
+          "why": "2.00 doubles the true mole count.",
+          "whyWrong": "2.00 comes from misplacing a factor of 2 in the division. Notice that 8.2 ÷ 0.082 = 100 and 2.93 ÷ 293 = 0.01, so 100 × 0.01 = 1.00."
+        },
+        {
+          "id": "c",
+          "text": "3.00",
+          "why": "3.00 does not match PV ÷ RT.",
+          "whyWrong": "3.00 is three times the true number of moles. Checking powers of ten carefully shows (8.2 × 2.93) ÷ (0.082 × 293) simplifies cleanly to 1.00."
+        },
+        {
+          "id": "d",
+          "text": "4.00",
+          "why": "4.00 is four times too large.",
+          "whyWrong": "4.00 could come from using 20 °C instead of 293 K or miscalculating the ratio. Temperature in PV = nRT must be in kelvin: 20 + 273 = 293 K."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Change 20 °C to kelvin first (add 273), then use PV = nRT.",
+      "explanation": "Using PV = nRT with T = 20 + 273 = 293 K gives n = (8.2 × 2.93) ÷ (0.082 × 293). Since 8.2 ÷ 0.082 = 100 and 2.93 ÷ 293 = 0.01, n = 100 × 0.01 = 1.00 mol.",
+      "trap": "Students sometimes forget to convert 20 °C to 293 K or struggle with decimals, missing the neat cancellation of 8.2 with 0.082 and 2.93 with 293.",
+      "mnemonic": "PV = nRT, and Celsius adds 273.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "First change 20 °C to 293 K. Then rearrange PV = nRT to n = (8.2 × 2.93) ÷ (0.082 × 293). Notice 8.2 is 100 times 0.082 and 2.93 is 1/100 of 293, so they multiply to 1.00."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Pairing 8.2 ÷ 0.082 (= 100) with 2.93 ÷ 293 (= 0.01) shows immediately that the product is 1.00, not 2.00."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Ideal gas equation: PV = nRT, with T in kelvin (K = °C + 273) and V in dm³ (litres) when R = 0.082 atm·dm³/(mol·K)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Spot the matching digits before multiplying: 8.2 matches 0.082 and 2.93 matches 293."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "How many moles of gas occupy 24.6 dm³ at 1.0 atm and 27 °C? (R = 0.082 dm³ atm/K mol)",
+          "similarAnswer": "1.00 mol (since 27 + 273 = 300 K and 24.6 ÷ (0.082 × 300) = 1.00)."
+        }
+      ],
+      "animationId": "anim-chem-api-0124",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151599,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0028",
+      "subject": "chemistry",
+      "topic": "Stoichiometry and mole concept",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Determine the mass of sulphur(IV) oxide obtained when 91.0g of oxygen reacts with sulphur according to the following equation? S (S) + O 2(g) ---- SO 2(g) (S=32; O=16)",
+      "options": [
+        {
+          "id": "a",
+          "text": "123g",
+          "why": "123 g comes from adding 32 to 91 instead of using moles.",
+          "whyWrong": "123 g simply adds the atomic mass of sulfur (32) to 91 g of oxygen. Chemical equations relate moles, not raw grams added together."
+        },
+        {
+          "id": "b",
+          "text": "139g",
+          "why": "139 g adds 48 to 91 instead of using the molar mass ratio.",
+          "whyWrong": "139 g does not match the mole stoichiometry of S + O₂ → SO₂. Convert 91.0 g of O₂ to moles first, then multiply by the molar mass of SO₂ (64 g/mol)."
+        },
+        {
+          "id": "c",
+          "text": "155g",
+          "why": "155 g comes from using 16 as the molar mass of O₂ instead of 32.",
+          "whyWrong": "Using O = 16 instead of O₂ = 32 miscalculates the moles of oxygen gas. Oxygen gas is diatomic (O₂ = 32 g/mol), and 1 mol O₂ produces 1 mol SO₂ (64 g/mol), doubling the mass from 91 g to 182 g."
+        },
+        {
+          "id": "d",
+          "text": "182g",
+          "why": "M(O₂) = 32 and M(SO₂) = 64, so 91.0 g O₂ doubles in mass to 182 g SO₂.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Find the molar mass of O₂ (32) and SO₂ (64). Every 32 g of O₂ produces 64 g of SO₂.",
+      "explanation": "From S + O₂ → SO₂, 1 mol O₂ (32 g) produces 1 mol SO₂ (32 + 2×16 = 64 g). So 91.0 g of O₂ (91.0 ÷ 32 mol) yields (91.0 ÷ 32) × 64 = 91.0 × 2 = 182 g of SO₂.",
+      "trap": "123 g catches students who add the atomic mass of sulfur (32 g) directly to 91 g of oxygen instead of working through moles.",
+      "mnemonic": "32 g of O₂ turns into 64 g of SO₂ — mass doubles.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "O₂ weighs 32 per mole and SO₂ weighs 64 per mole — twice as much. Since 1 mole of O₂ makes 1 mole of SO₂, the mass simply doubles: 91 × 2 = 182 g."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "123 g adds 32 directly to 91. That only works if you had exactly 1 mole (32 g) of oxygen, not 91 g."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Stoichiometric mass ratio: mass(SO₂) = [mass(O₂) ÷ M(O₂)] × M(SO₂)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Compare molar masses after checking the 1:1 mole ratio: 32 g O₂ → 64 g SO₂."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What mass of SO₂ is formed when 16.0 g of O₂ reacts completely with excess sulfur? (S = 32, O = 16)",
+          "similarAnswer": "32.0 g."
+        }
+      ],
+      "animationId": "anim-chem-api-0028",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151383,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0033",
+      "subject": "chemistry",
+      "topic": "Stoichiometry and mole concept",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "If a solution contains 4.9g of tetraoxosulphate(VI) acid, calculate the amount of copper II oxide that will react with it. [ Cu=64 ; O=16 ; S=32 ; H=1 ].",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.8g",
+          "why": "0.8 g is ten times too small.",
+          "whyWrong": "0.8 g comes from misplacing the decimal point when multiplying 0.05 mol by 80 g/mol. Half of 80 is 40, so 0.05 × 80 = 4.0 g."
+        },
+        {
+          "id": "b",
+          "text": "4.0g",
+          "why": "n(H₂SO₄) = 4.9 ÷ 98 = 0.05 mol, which reacts 1:1 with CuO: 0.05 × 80 = 4.0 g.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "40.0g",
+          "why": "40.0 g uses 0.5 mol instead of 0.05 mol.",
+          "whyWrong": "40.0 g corresponds to 0.5 mol of CuO, which would require 49 g of H₂SO₄, not 4.9 g. Watch the decimal place in 4.9 ÷ 98 = 0.05 mol."
+        },
+        {
+          "id": "d",
+          "text": "80.0g",
+          "why": "80.0 g is one full mole of CuO.",
+          "whyWrong": "80.0 g is the mass of 1 mole of CuO, which reacts with 98 g of H₂SO₄. Here you only have 4.9 g of acid (0.05 mol)."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Write the balanced equation CuO + H₂SO₄ → CuSO₄ + H₂O and find the moles in 4.9 g of H₂SO₄.",
+      "explanation": "M(H₂SO₄) = 2(1) + 32 + 4(16) = 98 g/mol, so n = 4.9 ÷ 98 = 0.05 mol. From CuO + H₂SO₄ → CuSO₄ + H₂O, 0.05 mol CuO reacts. M(CuO) = 64 + 16 = 80 g/mol, so mass = 0.05 × 80 = 4.0 g.",
+      "trap": "40.0 g comes from treating 4.9 ÷ 98 as 0.5 instead of 0.05 — a classic decimal-place slip.",
+      "mnemonic": "4.9 over 98 is 0.05, then times 80 gives 4.0.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "98 g of H₂SO₄ reacts with 80 g of CuO. Here you have 4.9 g of acid, which is 1/20 of 98 g, so you need 1/20 of 80 g, which is 4.0 g."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "40.0 g would need 49 g of H₂SO₄ (0.5 mol). Because the question gives 4.9 g (0.05 mol), the CuO mass is ten times smaller: 4.0 g."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Neutralization stoichiometry: CuO + H₂SO₄ → CuSO₄ + H₂O has a 1:1 mole ratio, and mass = n × M."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Check 49 ÷ 98 = 0.5 first, then shift one decimal left for 4.9 ÷ 98 = 0.05."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What mass of MgO reacts completely with 9.8 g of H₂SO₄? (Mg = 24, O = 16, H = 1, S = 32)",
+          "similarAnswer": "4.0 g (0.1 mol H₂SO₄ × 40 g/mol MgO)."
+        }
+      ],
+      "animationId": "anim-chem-api-0033",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151412,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0089",
+      "subject": "chemistry",
+      "topic": "Stoichiometry and mole concept",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Ethane of volume 400 cm³ was completely burnt in excess oxygen according to the equation: 2C₂H₆(g) + 7O₂(g) → 6H₂O(g) + 4CO₂(g). Calculate the volume of steam produced at the same temperature and pressure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 cm³",
+          "why": "200 cm³ halves the ethane volume instead of multiplying by 3.",
+          "whyWrong": "200 cm³ divides 400 by 2, which matches neither the 2:6 (1:3) ethane-to-steam ratio nor the coefficient of steam in the equation."
+        },
+        {
+          "id": "b",
+          "text": "400 cm³",
+          "why": "400 cm³ treats ethane and steam as a 1:1 ratio.",
+          "whyWrong": "400 cm³ assumes 1 volume of ethane gives 1 volume of steam. Look at the equation: 2 volumes of C₂H₆ produce 6 volumes of H₂O(g), which is three times as much."
+        },
+        {
+          "id": "c",
+          "text": "600 cm³",
+          "why": "600 cm³ multiplies by 6/4 instead of 6/2.",
+          "whyWrong": "600 cm³ uses the wrong mole ratio. From 2C₂H₆ → 6H₂O, every 2 volumes of ethane yield 6 volumes of steam, so multiply 400 by 6/2 = 3 to get 1200 cm³."
+        },
+        {
+          "id": "d",
+          "text": "1200 cm³",
+          "why": "By Gay-Lussac's law, 2 vol C₂H₆ gives 6 vol H₂O(g), so 400 × 3 = 1200 cm³.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "At the same temperature and pressure, gas volumes follow the mole ratio in the balanced equation: 2 volumes of C₂H₆ give 6 volumes of H₂O(g).",
+      "explanation": "By Gay-Lussac's law of combining volumes, 2 volumes of C₂H₆ produce 6 volumes of steam (ratio 1:3). Therefore, 400 cm³ of ethane produces 400 × (6 ÷ 2) = 1200 cm³ of steam.",
+      "trap": "600 cm³ often traps students who glance at the 6 in front of H₂O or multiply 400 by 1.5 instead of 6 ÷ 2 = 3.",
+      "mnemonic": "Gas volumes match equation coefficients: 2 to 6 means times 3.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The equation shows 2 parts ethane make 6 parts steam — three times the volume. Three times 400 cm³ is 1200 cm³."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "600 cm³ would come from a 2:3 ratio. The equation says 2 C₂H₆ → 6 H₂O, so the volume triples from 400 cm³ to 1200 cm³."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Gay-Lussac's law of combining volumes: at constant temperature and pressure, gas volume ratios equal their stoichiometric coefficients."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Divide target coefficient by given coefficient (6 ÷ 2 = 3), then multiply the given volume."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Using the same equation, what volume of CO₂ is formed when 400 cm³ of ethane burns completely?",
+          "similarAnswer": "800 cm³ (ratio 2:4 = 1:2, so 400 × 2)."
+        }
+      ],
+      "animationId": "anim-chem-api-0089",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 184801,
+        "yearLabel": "2018"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0155",
+      "subject": "chemistry",
+      "topic": "Stoichiometry and mole concept",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The empirical mass of C6H12O6 is [H = 1, C = 12, O = 16]",
+      "options": [
+        {
+          "id": "a",
+          "text": "90",
+          "why": "90 is half of the molecular mass, not the empirical mass.",
+          "whyWrong": "90 divides the molecular mass 180 by 2, which corresponds to C₃H₆O₃. Dividing 6, 12, and 6 by their greatest common factor (6) gives CH₂O, whose mass is 30."
+        },
+        {
+          "id": "b",
+          "text": "180",
+          "why": "180 is the molecular mass of glucose, not its empirical mass.",
+          "whyWrong": "180 is the sum for the full molecular formula C₆H₁₂O₆. The question asks for the empirical mass, which uses the simplest whole-number formula CH₂O."
+        },
+        {
+          "id": "c",
+          "text": "45",
+          "why": "45 divides 180 by 4 instead of 6.",
+          "whyWrong": "45 divides the molecular mass by 4, which does not give whole-number subscripts for C₆H₁₂O₆. The greatest common divisor of 6, 12, and 6 is 6, leaving CH₂O with mass 30."
+        },
+        {
+          "id": "d",
+          "text": "30",
+          "why": "Dividing C₆H₁₂O₆ by 6 gives empirical formula CH₂O, with mass 12 + 2(1) + 16 = 30.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "First reduce C₆H₁₂O₆ to its simplest whole-number ratio (empirical formula), then add the atomic masses.",
+      "explanation": "Dividing the subscripts of C₆H₁₂O₆ by their highest common factor, 6, gives the empirical formula CH₂O. Its empirical mass is 12 + 2(1) + 16 = 30.",
+      "trap": "180 is the relative molecular mass of C₆H₁₂O₆, so students who forget to simplify the formula first pick 180 straight away.",
+      "mnemonic": "Empirical = Simplest ratio first, then add the masses.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Shrink C₆H₁₂O₆ by dividing all subscripts by 6 to get CH₂O. Then add: 12 + 2 + 16 = 30."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "180 is the molecular mass for C₆H₁₂O₆. Empirical mass uses the simplest formula CH₂O, which is one-sixth of 180, or 30."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Empirical formula divides molecular subscripts by their greatest common divisor; empirical mass is the formula mass of that simplest unit."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Molecular is the full molecule (180); Empirical is the reduced unit (30)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the empirical mass of ethanoic acid, C₂H₄O₂? (C = 12, H = 1, O = 16)",
+          "similarAnswer": "30 (its empirical formula is also CH₂O)."
+        }
+      ],
+      "animationId": "anim-chem-api-0155",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 304,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0165",
+      "subject": "chemistry",
+      "topic": "Chemical formulas and composition",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Calculate the percentage by mass of nitrogen in calcium nitrate, Ca(NO3)2 (Ca = 40, N = 14, O = 16).",
+      "options": [
+        {
+          "id": "a",
+          "text": "13.10%",
+          "why": "13.10% uses the wrong formula mass.",
+          "whyWrong": "13.10% does not come from 28 ÷ 164 × 100. Check each atom count in Ca(NO₃)₂: 1 Ca (40), 2 N (28), and 6 O (96), giving 164."
+        },
+        {
+          "id": "b",
+          "text": "17.10%",
+          "why": "M(Ca(NO₃)₂) = 40 + 28 + 96 = 164, so %N = (28 ÷ 164) × 100 ≈ 17.10%.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "27.60%",
+          "why": "27.60% miscounts the atoms inside the bracket.",
+          "whyWrong": "27.60% comes from counting only one NO₃⁻ group (40 + 14 + 48 = 102, giving 28 ÷ 102 or 14 ÷ 51). The subscript 2 outside (NO₃)₂ multiplies both N and O₃."
+        },
+        {
+          "id": "d",
+          "text": "8.5",
+          "why": "8.5% counts only one nitrogen atom instead of two.",
+          "whyWrong": "8.5% comes from dividing 14 by 164 instead of 28 by 164. The 2 outside the bracket means there are two nitrogen atoms in Ca(NO₃)₂."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Remember that the subscript 2 outside (NO₃)₂ multiplies both nitrogen and oxygen.",
+      "explanation": "Formula mass of Ca(NO₃)₂ = 40 + 2[14 + 3(16)] = 40 + 2(62) = 164. Mass of nitrogen = 2 × 14 = 28. Percentage of N = (28 ÷ 164) × 100 ≈ 17.07%, which rounds to 17.10%.",
+      "trap": "27.60% traps students who forget to double the NO₃⁻ group in the denominator while counting nitrogen.",
+      "mnemonic": "Bracket subscript 2 multiplies everything inside: 2 N and 6 O.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Ca(NO₃)₂ has 1 calcium (40), 2 nitrogens (28), and 6 oxygens (96), totalling 164. Nitrogen's share is 28 out of 164, which is about 17.1%."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "27.60% comes from undercounting the oxygen atoms in the formula mass. With two NO₃ groups, there are 6 oxygens (96), making the total 164 and %N = 17.1%."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Percentage composition by mass = (mass of element in formula ÷ relative formula mass) × 100%."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Expand brackets first: Ca(NO₃)₂ = CaN₂O₆ before adding atomic masses."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the percentage by mass of nitrogen in sodium nitrate, NaNO₃? (Na = 23, N = 14, O = 16)",
+          "similarAnswer": "16.5% (14 ÷ 85 × 100)."
+        }
+      ],
+      "animationId": "anim-chem-api-0165",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 343,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0034",
+      "subject": "chemistry",
+      "topic": "Chemical reactions and limiting reagent",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What is the volume of oxygen will remain after reacting 8 cm 3 of hydrogen with 20 cm 3 of oxygen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 cm 3",
+          "why": "10 cm³ uses the wrong reacting ratio for oxygen.",
+          "whyWrong": "10 cm³ subtracts 10 instead of 4 from 20 cm³, ignoring the 2:1 ratio between H₂ and O₂. Only 4 cm³ of O₂ is needed to react with 8 cm³ of H₂."
+        },
+        {
+          "id": "b",
+          "text": "12 cm 3",
+          "why": "12 cm³ subtracts all 8 cm³ of hydrogen from 20 cm³ of oxygen.",
+          "whyWrong": "12 cm³ comes from subtracting 8 directly from 20, assuming a 1:1 reaction. In 2H₂ + O₂ → 2H₂O, two volumes of hydrogen react with only one volume of oxygen."
+        },
+        {
+          "id": "c",
+          "text": "14cm 3",
+          "why": "14 cm³ subtracts 6 instead of 4.",
+          "whyWrong": "14 cm³ does not match the 2:1 reacting ratio of hydrogen to oxygen. Half of 8 cm³ is 4 cm³, leaving 20 − 4 = 16 cm³ of oxygen unused."
+        },
+        {
+          "id": "d",
+          "text": "16 cm 3",
+          "why": "2H₂ + O₂ → 2H₂O, so 8 cm³ H₂ uses 4 cm³ O₂, leaving 20 − 4 = 16 cm³.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Write the equation 2H₂(g) + O₂(g) → 2H₂O(g) to find how many cm³ of O₂ react with 8 cm³ of H₂.",
+      "explanation": "From 2H₂ + O₂ → 2H₂O, hydrogen and oxygen react in a 2:1 volume ratio. So 8 cm³ of H₂ reacts with 4 cm³ of O₂. The excess oxygen left is 20 − 4 = 16 cm³.",
+      "trap": "12 cm³ is the classic 1:1 trap — subtracting 8 from 20 without halving the hydrogen volume first.",
+      "mnemonic": "Water needs 2 H₂ per 1 O₂ — oxygen used is half of hydrogen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Hydrogen needs half its volume of oxygen to make water. Half of 8 cm³ is 4 cm³ used, so out of 20 cm³ of oxygen, 16 cm³ is left over."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "12 cm³ comes from 20 − 8, which assumes 1 cm³ of H₂ uses 1 cm³ of O₂. Because 2H₂ reacts with 1O₂, only 4 cm³ of oxygen is used, leaving 16 cm³."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Gay-Lussac's law and limiting reagent: excess gas = initial volume − reacted volume from the balanced equation."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Remember H₂O has two hydrogens per oxygen, so O₂ used = H₂ ÷ 2."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What volume of oxygen remains when 10 cm³ of hydrogen reacts with 12 cm³ of oxygen?",
+          "similarAnswer": "7 cm³ (10 cm³ H₂ uses 5 cm³ O₂, leaving 12 − 5 = 7 cm³)."
+        }
+      ],
+      "animationId": "anim-chem-api-0034",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151425,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0060",
+      "subject": "chemistry",
+      "topic": "Solutions and colligative properties",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "What is the freezing point depression of a solution with a molality of 1.5 m and a cryoscopic constant of 1.86 °C kg/mol?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.79 °C",
+          "why": "ΔTf = Kf × m = 1.86 × 1.5 = 2.79 °C.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "1.5 °C",
+          "why": "1.5 °C is just the molality, without multiplying by Kf.",
+          "whyWrong": "1.5 °C ignores the cryoscopic constant (1.86 °C kg/mol). Freezing point depression equals Kf multiplied by molality."
+        },
+        {
+          "id": "c",
+          "text": "3.12 °C",
+          "why": "3.12 °C does not equal 1.86 × 1.5.",
+          "whyWrong": "3.12 °C comes from an arithmetic error when multiplying 1.86 by 1.5. Notice 1.86 plus half of 1.86 (0.93) equals 2.79 °C."
+        },
+        {
+          "id": "d",
+          "text": "4.65 °C",
+          "why": "4.65 °C multiplies 1.86 by 2.5 instead of 1.5.",
+          "whyWrong": "4.65 °C equals 1.86 × 2.5, which is 1 unit too high on the molality. For m = 1.5, the product is 1.86 + 0.93 = 2.79 °C."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Multiply the cryoscopic constant (Kf) by the molality (m).",
+      "explanation": "Freezing point depression is given by ΔTf = Kf × m = 1.86 °C kg/mol × 1.5 mol/kg = 2.79 °C.",
+      "trap": "3.12 °C catches students who slip while multiplying decimals by 1.5 instead of adding 1.86 and half of 1.86 (0.93).",
+      "mnemonic": "Times 1.5 = whole plus half: 1.86 + 0.93 = 2.79.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "To find how much the freezing point drops, multiply 1.86 by 1.5. One 1.86 plus half of 1.86 (0.93) gives 2.79 °C."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "3.12 °C comes from mis-multiplying 1.86 × 1.5. Breaking 1.5 into 1 + 0.5 makes it easy: 1.86 + 0.93 = 2.79 °C."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Freezing point depression formula: ΔTf = Kf × m (for a non-electrolyte)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "ΔTf = Kf × m — Constant times Molality."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the freezing point depression of a 2.0 m aqueous solution if Kf = 1.86 °C kg/mol?",
+          "similarAnswer": "3.72 °C (1.86 × 2.0)."
+        }
+      ],
+      "animationId": "anim-chem-api-0060",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 131884,
+        "yearLabel": "1994"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0153",
+      "subject": "chemistry",
+      "topic": "Acids, bases and salts",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Calculate the pH of 0.001 M KOH solution.",
+      "options": [
+        {
+          "id": "a",
+          "text": "11",
+          "why": "KOH is a strong base: [OH⁻] = 10⁻³, so pOH = 3 and pH = 14 − 3 = 11.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "why": "pH 14 corresponds to 1 M strong base, not 0.001 M.",
+          "whyWrong": "pH 14 would require [OH⁻] = 1.0 M (pOH = 0). Here [OH⁻] is 0.001 M, so pOH is 3 and pH is 11."
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "why": "pH 12 corresponds to 0.01 M KOH, not 0.001 M.",
+          "whyWrong": "pH 12 matches [OH⁻] = 0.01 = 10⁻² M (pOH = 2). Here the concentration is 0.001 = 10⁻³ M, so pOH = 3 and pH = 11."
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "why": "3 is the pOH, not the pH.",
+          "whyWrong": "3 is the pOH (−log 0.001), which would be the pH of a 0.001 M strong acid. Because KOH is a strong alkali, subtract pOH from 14 to get pH = 11."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "KOH is a base, so 0.001 M gives [OH⁻] and pOH first, not pH directly.",
+      "explanation": "KOH dissociates completely: [OH⁻] = 0.001 M = 10⁻³ M. Thus pOH = −log(10⁻³) = 3, and pH = 14 − pOH = 14 − 3 = 11.",
+      "trap": "3 is the classic trap because −log(0.001) = 3, which is the pOH of KOH — students forget to subtract from 14 for an alkali.",
+      "mnemonic": "For a base, find pOH first, then 14 minus pOH.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "0.001 is 10⁻³, so the base gives pOH = 3. Since pH + pOH = 14 in water, pH = 14 − 3 = 11."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "pH 3 is strongly acidic, which makes no sense for potassium hydroxide (KOH). 3 is the pOH; subtracting from 14 gives pH 11."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "pOH = −log[OH⁻] and pH + pOH = 14 at 25 °C."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Ask acid or base first: bases must end above 7, so subtract from 14."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the pH of 0.01 M NaOH solution?",
+          "similarAnswer": "12 (pOH = 2, pH = 14 − 2 = 12)."
+        }
+      ],
+      "animationId": "anim-chem-api-0153",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 271,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0154",
+      "subject": "chemistry",
+      "topic": "Electrolysis",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What quantity of aluminium is deposited when a current of 10A is passed through a solution of an aluminium salt for 1930s {AI = 27, F = 96500 C mol-}",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.8g",
+          "why": "Q = 10 × 1930 = 19,300 C = 0.2 F; Al³⁺ needs 3 F/mol, so 0.2/3 × 27 = 1.8 g.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "5.4g",
+          "why": "5.4 g forgets to divide by the 3+ charge on Al³⁺.",
+          "whyWrong": "5.4 g multiplies 0.2 mol by 27 g/mol directly, treating aluminium as +1 instead of +3. Each Al³⁺ ion needs 3 electrons, so divide 5.4 by 3 to get 1.8 g."
+        },
+        {
+          "id": "c",
+          "text": "14.2g",
+          "why": "14.2 g does not follow Faraday's law for Al³⁺.",
+          "whyWrong": "14.2 g comes from a miscalculation of Q ÷ F or molar mass. With Q = 19,300 C = 0.2 F and 3 electrons per Al³⁺, only (0.2 ÷ 3) × 27 = 1.8 g deposits."
+        },
+        {
+          "id": "d",
+          "text": "0.2g",
+          "why": "0.2 is the number of faradays, not the mass in grams.",
+          "whyWrong": "0.2 is the quantity of electricity in faradays (19,300 ÷ 96,500 = 0.2 F). You still need to divide by 3 (for Al³⁺) and multiply by 27 g/mol to get 1.8 g."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find Q = I × t, convert coulombs to faradays (÷ 96,500), and remember Al³⁺ needs 3 faradays per mole.",
+      "explanation": "Q = I × t = 10 × 1930 = 19,300 C. In faradays, 19,300 ÷ 96,500 = 0.2 F. Since Al³⁺ + 3e⁻ → Al, 3 F deposits 27 g of Al. Thus 0.2 F deposits (0.2 ÷ 3) × 27 = 1.8 g.",
+      "trap": "5.4 g catches students who find 0.2 F × 27 = 5.4 g and forget that Al³⁺ has a +3 charge requiring 3 electrons per atom.",
+      "mnemonic": "Al³⁺ takes 3 F for 27 g — so 1 F gives 9 g.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "10 A for 1930 s is 19,300 C, which is 0.2 faradays. Because Al³⁺ needs 3 electrons, 1 faraday deposits 27 ÷ 3 = 9 g of Al, so 0.2 faradays gives 0.2 × 9 = 1.8 g."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "5.4 g assumes 1 electron deposits 1 aluminium atom. Aluminium is Al³⁺, so divide 5.4 by 3 to get 1.8 g."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Faraday's first law of electrolysis: m = (I × t × M) ÷ (z × F), where z = 3 for Al³⁺."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Equivalent weight of Al = 27 ÷ 3 = 9 g per faraday."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What mass of aluminium is deposited when 0.5 F of electricity passes through molten Al₂O₃? (Al = 27)",
+          "similarAnswer": "4.5 g (0.5 × 9 g)."
+        }
+      ],
+      "animationId": "anim-chem-api-0154",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 281,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0018",
+      "subject": "chemistry",
+      "topic": "Electrolysis",
+      "type": "calculation",
+      "difficulty": 3,
+      "stem": "How many faradays of electricity are required to deposit 0. 20 mol of nickel , if 0.10 faradays of elecrticity deposited 2.98g of nickel during electrolysis of its aqueous solution",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.20",
+          "why": "0.20 assumes Ni⁺ (1 faraday per mole) instead of Ni²⁺.",
+          "whyWrong": "0.20 faradays for 0.20 mol of nickel would mean 1 faraday deposits 1 mole. Here 0.10 F deposited 2.98 g (about 0.05 mol), meaning 2 faradays are needed per mole, so 0.20 mol needs 0.40 F."
+        },
+        {
+          "id": "b",
+          "text": "0.30",
+          "why": "0.30 does not match the 2 F per mole ratio.",
+          "whyWrong": "0.30 F would imply a 1.5+ ion charge, which does not fit. Since 2.98 g of Ni (atomic mass ≈ 58.7–59.6) is about 0.05 mol deposited by 0.10 F, 0.20 mol is four times as much and needs 4 × 0.10 = 0.40 F."
+        },
+        {
+          "id": "c",
+          "text": "0.40",
+          "why": "Ni²⁺ needs 2 F per mole (0.10 F deposits ~0.05 mol = 2.98 g), so 0.20 mol needs 0.40 F.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "0.50",
+          "why": "0.50 overestimates the faradays needed for 0.20 mol of Ni²⁺.",
+          "whyWrong": "0.50 F would deposit 0.25 mol of Ni²⁺ (since 2 F deposits 1 mol). For 0.20 mol of Ni²⁺, multiply 0.20 by 2 to get 0.40 F."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Recall that nickel in aqueous salt solution is Ni²⁺ (molar mass ≈ 58.7 g/mol), so 2.98 g is about 0.05 mol.",
+      "explanation": "In aqueous nickel salt, nickel exists as Ni²⁺ (molar mass ≈ 58.7 g/mol). Here 2.98 g is ~0.05 mol deposited by 0.10 F, confirming 2 F per mole of nickel. Therefore, 0.20 mol requires 0.20 × 2 = 0.40 F.",
+      "trap": "0.20 tempts students who assume 1 mole of metal needs 1 faraday, forgetting that nickel is divalent (Ni²⁺).",
+      "mnemonic": "Ni²⁺ takes 2 F per mole — double the moles.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Nickel forms Ni²⁺ ions, so each mole needs 2 faradays of electricity. To deposit 0.20 moles of nickel, you need twice as many faradays: 0.40 F."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "0.20 F would only deposit 0.20 mol of a 1+ metal like Ag⁺. Because nickel is Ni²⁺, each atom takes two electrons, doubling the faradays to 0.40 F."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Faraday's second law / ion charge relation: F needed = moles × ion charge (2 for Ni²⁺)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Check 2.98 g ≈ 0.05 mol (since Ni ≈ 59), and 0.20 mol is 4 × 0.05 mol, so 4 × 0.10 F = 0.40 F."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "How many faradays are needed to deposit 0.25 mol of copper from CuSO₄ solution?",
+          "similarAnswer": "0.50 F (since Cu²⁺ requires 2 F per mole)."
+        }
+      ],
+      "animationId": "anim-chem-api-0018",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151482,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0054",
+      "subject": "chemistry",
+      "topic": "Redox reactions",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Cr₂O₇²⁻ + 6Fe²⁺ + 14H⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O. In the reaction chromium changes from",
+      "options": [
+        {
+          "id": "a",
+          "text": "+7 to +3",
+          "why": "+7 is the oxidation state of Mn in MnO₄⁻, not Cr in Cr₂O₇²⁻.",
+          "whyWrong": "+7 is manganese in permanganate (MnO₄⁻). In Cr₂O₇²⁻, two chromiums share the charge: 2x + 7(−2) = −2, which gives x = +6."
+        },
+        {
+          "id": "b",
+          "text": "+6 to +3",
+          "why": "In Cr₂O₇²⁻, 2x − 14 = −2 gives x = +6, and in Cr³⁺ it is +3.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "+5 to +3",
+          "why": "+5 ignores the −2 overall charge or miscounts oxygen.",
+          "whyWrong": "+5 comes from solving 2x − 14 = −4 or miscounting oxygens. With seven oxygens at −2 and total charge −2, 2x = +12, so x = +6."
+        },
+        {
+          "id": "d",
+          "text": "−2 to +3",
+          "why": "−2 is the overall charge of the dichromate ion, not chromium's oxidation number.",
+          "whyWrong": "−2 is the net charge on the entire Cr₂O₇²⁻ ion, not the oxidation state of chromium alone. Set 2Cr + 7(−2) = −2 to find Cr = +6."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Set the sum of oxidation numbers in Cr₂O₇²⁻ equal to −2, using O = −2.",
+      "explanation": "In Cr₂O₇²⁻, let Cr have oxidation state x: 2x + 7(−2) = −2, so 2x − 14 = −2, 2x = +12, and x = +6. On the right-hand side, Cr³⁺ has oxidation state +3. Thus chromium changes from +6 to +3.",
+      "trap": "+7 to +3 traps students who confuse orange dichromate(VI) (Cr₂O₇²⁻) with purple manganate(VII) (MnO₄⁻).",
+      "mnemonic": "Dichromate(VI) is +6; Permanganate(VII) is +7.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In Cr₂O₇²⁻, 7 oxygens give −14. To end at −2 overall, the 2 chromiums must add +12, which is +6 each. It becomes Cr³⁺ (+3)."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "+7 belongs to manganese in MnO₄⁻. Chromium in dichromate(VI) has oxidation number +6."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Sum of oxidation numbers in a polyatomic ion equals its overall charge: 2(Cr) + 7(O) = −2."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Always divide by 2 when there are 2 chromium atoms: +12 ÷ 2 = +6."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the oxidation state of manganese in MnO₄⁻?",
+          "similarAnswer": "+7 (since x + 4(−2) = −1)."
+        }
+      ],
+      "animationId": "anim-chem-api-0054",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 193803,
+        "yearLabel": "1990"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0123",
+      "subject": "chemistry",
+      "topic": "Redox reactions",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "The common oxidation state of nitrogen in ammonia (NH3) is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "-3",
+          "why": "With H = +1 in NH₃, x + 3(+1) = 0 gives x = −3.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "+3",
+          "why": "+3 gets the sign backwards.",
+          "whyWrong": "+3 gives x + 3 = +6 instead of 0. Because hydrogen is +1 in non-metal hydrides, nitrogen must be negative (−3) to balance +3 to zero."
+        },
+        {
+          "id": "c",
+          "text": "+1",
+          "why": "+1 is the oxidation state of each hydrogen atom, not nitrogen.",
+          "whyWrong": "+1 belongs to each hydrogen in NH₃. Three hydrogens add +3, so nitrogen must be −3 to make the neutral molecule sum to 0."
+        },
+        {
+          "id": "d",
+          "text": "0",
+          "why": "0 is the oxidation state of nitrogen in N₂ gas, not in NH₃.",
+          "whyWrong": "Free elements like N₂ have an oxidation state of 0, and 0 is the total sum of NH₃, not nitrogen's individual state. Solve x + 3(+1) = 0 to get −3."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "In neutral NH₃, the oxidation numbers add up to 0, and each H is +1.",
+      "explanation": "Ammonia (NH₃) is a neutral molecule, so the sum of oxidation states is 0. With H = +1, x + 3(+1) = 0, giving x = −3.",
+      "trap": "+3 is the classic sign slip — adding +1 three times and forgetting to flip the sign when solving x + 3 = 0.",
+      "mnemonic": "Neutral molecule sums to zero; flip the sign when moving +3 across.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Each of the 3 hydrogens has +1, making +3 in total. To balance to 0 in neutral NH₃, nitrogen must be −3."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "If N were +3 and three H atoms were +1 each, the molecule would carry a +6 charge. Neutral NH₃ requires N = −3."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "For any neutral compound, the sum of oxidation states of all atoms equals 0."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Nitrogen is more electronegative than hydrogen, so it takes the negative state (−3)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the oxidation state of nitrogen in the ammonium ion, NH₄⁺?",
+          "similarAnswer": "−3 (since x + 4(+1) = +1 gives x = −3)."
+        }
+      ],
+      "animationId": "anim-chem-api-0123",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 134308,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0056",
+      "subject": "chemistry",
+      "topic": "Acids, bases and salts",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which gas is produced during the reaction of an acid with a carbonate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oxygen",
+          "why": "Oxygen is released by thermal decomposition of KClO₃ or H₂O₂, not acid + carbonate.",
+          "whyWrong": "Oxygen gas is typically produced by decomposing hydrogen peroxide or potassium trioxochlorate(V), not when an acid reacts with a trioxocarbonate(IV) salt."
+        },
+        {
+          "id": "b",
+          "text": "Hydrogen",
+          "why": "Hydrogen is released when reactive metals react with acids, not carbonates.",
+          "whyWrong": "Hydrogen gas is evolved when an acid reacts with a reactive metal like zinc or magnesium. Carbonates react with acids to release carbon(IV) oxide instead."
+        },
+        {
+          "id": "c",
+          "text": "Carbon dioxide",
+          "why": "Acid + carbonate → salt + water + CO₂(g).",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Nitrogen",
+          "why": "Nitrogen is not released from standard acid-carbonate reactions.",
+          "whyWrong": "Nitrogen gas is not a product of an acid reacting with a carbonate. Look at the CO₃²⁻ group: it breaks down to form CO₂ and water."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Look at the CO₃²⁻ ion inside a carbonate. Which gas forms when it reacts with H⁺?",
+      "explanation": "Acids react with carbonates (trioxocarbonates(IV)) to form a salt, water, and carbon(IV) oxide (carbon dioxide) gas with brisk effervescence: CO₃²⁻ + 2H⁺ → H₂O + CO₂(g).",
+      "trap": "Hydrogen traps students who mix up acid + metal (which gives H₂) with acid + carbonate (which gives CO₂).",
+      "mnemonic": "Acid + Metal = H₂; Acid + Carbonate = CO₂ (think C for Carbonate and CO₂).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A carbonate has CO₃ in it. When acid hits it, the CO₃ breaks up to release bubbles of carbon dioxide gas (CO₂) and water."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Hydrogen gas comes from acid + metal (like Zn + HCl). Carbonates contain carbon and oxygen, so they give CO₂."
+        },
+        {
+          "id": "simpler",
+          "label": "How do you test for this gas?",
+          "answer": "Pass the gas into limewater (aqueous Ca(OH)₂); carbon dioxide turns limewater milky due to insoluble CaCO₃."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which gas is evolved when dilute hydrochloric acid reacts with zinc granules?",
+          "similarAnswer": "Hydrogen gas (H₂)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 133995,
+        "yearLabel": "1992"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0074",
+      "subject": "chemistry",
+      "topic": "Acids, bases and salts",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "When a buffer solution containing acetic acid and sodium acetate is added to a strong acid, what is the primary action of the buffer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It increases the concentration of H+ ions.",
+          "why": "A buffer works to prevent sharp increases in [H⁺], not cause them.",
+          "whyWrong": "If a buffer increased [H⁺], the pH would drop sharply instead of staying steady. Buffers resist pH change by mopping up added H⁺."
+        },
+        {
+          "id": "b",
+          "text": "It neutralizes the strong acid completely.",
+          "why": "Buffers resist pH change by shifting equilibrium, not complete neutralization in the titration sense.",
+          "whyWrong": "A buffer does not act like a strong base neutralizing everything; instead, its weak base component (acetate ions) reacts with the added H⁺ to form weak ethanoic acid."
+        },
+        {
+          "id": "c",
+          "text": "It resists changes in pH by consuming excess H+ ions.",
+          "why": "Acetate ions (CH₃COO⁻) react with added H⁺ to form weak CH₃COOH, keeping pH nearly steady.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It forms a new weak acid from the strong acid.",
+          "why": "No new acid is created; existing acetate ions reform ethanoic acid already in the buffer.",
+          "whyWrong": "Added H⁺ does not invent a brand-new weak acid; the acetate ions (CH₃COO⁻) combine with H⁺ to form more of the buffer's own weak ethanoic acid (CH₃COOH)."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "In an acetic acid / sodium acetate buffer, which ion acts as the conjugate base to absorb added H⁺?",
+      "explanation": "An ethanoic acid / sodium ethanoate buffer contains both CH₃COOH and abundant CH₃COO⁻ ions. When a small amount of strong acid adds H⁺, CH₃COO⁻ reacts with H⁺ to form unionised CH₃COOH, resisting a sharp drop in pH.",
+      "trap": "Students sometimes pick 'neutralizes completely', but the key chemical action of a buffer is resisting pH change by consuming excess H⁺ via its conjugate base.",
+      "mnemonic": "Buffer = Base (CH₃COO⁻) catches added H⁺; Acid (CH₃COOH) catches added OH⁻.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Think of acetate ions as a sponge for extra H⁺. When strong acid pours in, acetate grabs the extra H⁺ so the acidity barely changes."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Buffers keep pH steady within limits rather than running a full neutralization reaction; if too much strong acid is added, the buffer capacity runs out."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "An acidic buffer pairs a weak acid (CH₃COOH) with its conjugate base salt (CH₃COONa) to absorb both added H⁺ and added OH⁻."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which species in an NH₃ / NH₄Cl buffer consumes added OH⁻ ions?",
+          "similarAnswer": "NH₄⁺ (forming NH₃ and H₂O)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 173458,
+        "yearLabel": "2009"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0045",
+      "subject": "chemistry",
+      "topic": "Acids, bases and salts",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which of the following substance would you use as an indicator in the titration of sodium carbonate solution against hydro acid (completion neutralization)",
+      "options": [
+        {
+          "id": "a",
+          "text": "litmus paper",
+          "why": "Litmus paper is not used for sharp volumetric end-point detection in burette titrations.",
+          "whyWrong": "Litmus has a wide transition range and is usually used as strips to test acidity/alkalinity rather than for accurate acid-base titrations."
+        },
+        {
+          "id": "b",
+          "text": "phenolphthalein",
+          "why": "Phenolphthalein changes colour in the alkaline range (pH 8.3–10), missing the acidic end point of HCl + Na₂CO₃.",
+          "whyWrong": "Phenolphthalein only signals the halfway point (carbonate to hydrogencarbonate) in alkaline pH. Complete neutralization with strong acid HCl ends below pH 7, where phenolphthalein stays colourless too early."
+        },
+        {
+          "id": "c",
+          "text": "methyl orange",
+          "why": "Complete titration of weak base Na₂CO₃ with strong acid HCl ends at acidic pH (3–4.5), matching methyl orange.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "universal indicator",
+          "why": "Universal indicator shifts gradually across many colours and cannot show a sharp end point.",
+          "whyWrong": "Universal indicator is a mixture of dyes for estimating pH across 1–14, not for spotting a sharp single-drop titration end point."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "At complete neutralization of Na₂CO₃ (weak base) with HCl (strong acid), CO₂ dissolves to make the end point acidic.",
+      "explanation": "Sodium trioxocarbonate(IV) is a weak base being titrated to completion with a strong acid (HCl). At the equivalence point, dissolved CO₂ makes the solution slightly acidic (pH ~3.5–4), which lies right inside methyl orange's colour-change range (3.1–4.4).",
+      "trap": "Phenolphthalein is used in strong acid–strong base titrations or only for the first stage of carbonate neutralization, so it traps students who miss 'completion neutralization'.",
+      "mnemonic": "Strong Acid + Weak Base → Acidic end point → Methyl Orange.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "HCl is strong and Na₂CO₃ is weak, so at the finish line the flask is slightly acidic. Methyl orange changes colour in acid, whereas phenolphthalein needs alkali."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Phenolphthalein changes colour around pH 8.3–10 (alkaline), so it turns colourless at the halfway NaHCO₃ stage before complete neutralization."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Match the indicator's pH range to the salt at equivalence: methyl orange (pH 3.1–4.4) for strong acid + weak base."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which indicator is best for titrating ethanoic acid (weak acid) against sodium hydroxide (strong base)?",
+          "similarAnswer": "Phenolphthalein (alkaline end point)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151561,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0051",
+      "subject": "chemistry",
+      "topic": "Atomic structure",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The nucleus of the isotope tritium contains",
+      "options": [
+        {
+          "id": "a",
+          "text": "two neutrons with no protons",
+          "why": "Every hydrogen atom must have 1 proton; zero protons is not hydrogen.",
+          "whyWrong": "An atom's identity comes from its proton number. Hydrogen always has atomic number 1 (one proton), so a hydrogen nucleus cannot have zero protons."
+        },
+        {
+          "id": "b",
+          "text": "one neutron and one proton",
+          "why": "One proton and one neutron is deuterium (²H), not tritium (³H).",
+          "whyWrong": "One proton and one neutron gives mass number 2, which is deuterium (²₁H). Tritium is the heavier isotope ³₁H with mass number 3."
+        },
+        {
+          "id": "c",
+          "text": "two neutrons and one proton",
+          "why": "Tritium (³₁H) has atomic number 1 (1 proton) and mass number 3 (3 − 1 = 2 neutrons).",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "two neutrons, one proton and one electron",
+          "why": "Electrons orbit outside the nucleus; they are not inside the nucleus.",
+          "whyWrong": "Although a neutral tritium atom has one electron, the question specifically asks what its nucleus contains. Only protons and neutrons (nucleons) live in the nucleus."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Tritium is hydrogen-3 (³₁H), and the question asks strictly about the nucleus.",
+      "explanation": "Hydrogen has three isotopes: protium (¹H, 0 neutrons), deuterium (²H, 1 neutron), and tritium (³H). Since tritium has 1 proton and mass number 3, its nucleus holds 1 proton and 3 − 1 = 2 neutrons (no electrons).",
+      "trap": "'two neutrons, one proton and one electron' catches students who forget that electrons are outside the nucleus.",
+      "mnemonic": "Tri = 3 nucleons in tritium: 1 proton + 2 neutrons.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Tritium is hydrogen-3. Like all hydrogen, it has 1 proton. To make a total weight of 3, it needs 2 neutrons in its centre (nucleus). Electrons stay outside."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "A tritium atom does have 1 electron, but electrons orbit outside in shells — the nucleus contains only protons and neutrons."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Isotopes of hydrogen: ¹H (protium, 0 n), ²H (deuterium, 1 n), ³H (tritium, 2 n)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "How many neutrons are in the nucleus of deuterium (²₁H)?",
+          "similarAnswer": "1 neutron (2 − 1 = 1)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151625,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0130",
+      "subject": "chemistry",
+      "topic": "Atomic structure",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the principal quantum number (n) for the outermost electron in potassium (K)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "why": "n = 3 holds potassium's inner 3s and 3p electrons, not its outer 4s¹ electron.",
+          "whyWrong": "Potassium (Z = 19) fills shells 2, 8, 8, 1. The 8 electrons in n = 3 are full inner electrons; the single valence electron sits in the fourth shell, n = 4."
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "why": "Potassium (Z = 19) has configuration 2, 8, 8, 1 (ending in 4s¹), so outermost n = 4.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "why": "n = 2 is the second shell (8 electrons), well inside potassium's valence shell.",
+          "whyWrong": "The second shell (n = 2) holds 8 core electrons in potassium. The outermost electron goes into shell 4 (4s¹)."
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "why": "1 is the number of valence electrons in potassium, not the shell number n.",
+          "whyWrong": "Potassium has 1 outermost electron, which can trick students into picking 1. The principal quantum number n counts the shell level (Period 4 → n = 4)."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Potassium has atomic number 19 (2, 8, 8, 1) and sits in Period 4 of the periodic table.",
+      "explanation": "Potassium (Z = 19) has electron configuration 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ (or 2, 8, 8, 1). Because its single valence electron occupies the fourth shell (4s), its principal quantum number is n = 4.",
+      "trap": "1 is tempting because potassium has 1 outer electron, but principal quantum number n means the shell number (4), not the electron count.",
+      "mnemonic": "Period number = outermost shell n: K is in Period 4, so n = 4.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Potassium has 19 electrons arranged as 2, 8, 8, 1. That last electron sits in the 4th shell, so n = 4."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "1 is how many outer electrons potassium has, not which shell it is in. The shell number n is 4."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "The principal quantum number (n = 1, 2, 3, 4...) tells you the main energy shell; for Period 4 elements, the valence shell is n = 4."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the principal quantum number n for the outermost electron in sodium (Z = 11)?",
+          "similarAnswer": "3 (configuration 2, 8, 1 → 3s¹)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 131114,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0066",
+      "subject": "chemistry",
+      "topic": "Chemical bonding",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following describes the molecular geometry of methane (CH4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Linear",
+          "why": "Linear molecules have two bonding regions at 180°, such as CO₂ or BeCl₂.",
+          "whyWrong": "A linear shape occurs when there are only two bonding regions around the central atom (180°). Methane has four C–H single bonds, not two."
+        },
+        {
+          "id": "b",
+          "text": "Trigonal planar",
+          "why": "Trigonal planar molecules have three bonding pairs at 120°, like BF₃.",
+          "whyWrong": "Trigonal planar geometry arises from three electron pairs arranged flat at 120°. Methane has four C–H bonds pointing to the corners of a tetrahedron."
+        },
+        {
+          "id": "c",
+          "text": "Tetrahedral",
+          "why": "Four equal C–H bonding pairs repel symmetrically to 109.5° in a tetrahedron.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Octahedral",
+          "why": "Octahedral geometry requires six bonding pairs around the central atom, like SF₆.",
+          "whyWrong": "Octahedral shape has six bonds at 90° (such as SF₆). Carbon in methane forms four bonds, giving a tetrahedral shape."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Carbon in CH₄ has 4 bonding pairs and 0 lone pairs around it.",
+      "explanation": "In methane (CH₄), carbon shares four single covalent bonds with four hydrogen atoms and has no lone pairs. To minimize repulsion (VSEPR), the four bond pairs point toward the corners of a regular tetrahedron at 109.5°.",
+      "trap": "Trigonal planar can confuse students who picture CH₄ drawn flat on paper with 90° angles instead of 3D tetrahedral geometry.",
+      "mnemonic": "Four bonds, zero lone pairs → Tetrahedral (109.5°).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Methane's four C–H bonds push away from each other equally in 3D space, forming a pyramid-like 4-corner shape called a tetrahedron."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Trigonal planar is a flat triangle with 3 bonds (like BF₃). Methane has 4 bonds in 3D, making it tetrahedral."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "VSEPR shapes: 2 pairs = linear, 3 pairs = trigonal planar, 4 pairs (0 lone) = tetrahedral."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the shape of an ammonia molecule (NH₃), which has 3 bond pairs and 1 lone pair?",
+          "similarAnswer": "Trigonal pyramidal (about 107°)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 131505,
+        "yearLabel": "1998"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0138",
+      "subject": "chemistry",
+      "topic": "Chemical bonding",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Chemical Bonding and Molecular Geometry\n\nWhat type of bond is formed when two atoms share electrons equally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ionic bond",
+          "why": "Ionic bonds form by electron transfer between metals and non-metals, not equal sharing.",
+          "whyWrong": "Ionic bonding involves complete transfer of electrons from one atom to another to form positive and negative ions, rather than equal electron sharing."
+        },
+        {
+          "id": "b",
+          "text": "Polar covalent bond",
+          "why": "Polar covalent bonds involve unequal sharing between atoms of different electronegativity.",
+          "whyWrong": "In a polar covalent bond (like H–Cl), one atom pulls the shared electrons closer than the other, creating partial charges instead of equal sharing."
+        },
+        {
+          "id": "c",
+          "text": "Nonpolar covalent bond",
+          "why": "Equal electronegativity means the shared electron pair sits symmetrically between both atoms.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Metallic bond",
+          "why": "Metallic bonds involve delocalised electrons around metal cations, not localised shared pairs.",
+          "whyWrong": "Metallic bonding consists of a lattice of positive metal ions in a sea of delocalised electrons, rather than a pair shared equally between two atoms."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Sharing electrons means covalent; equal sharing means there are no poles.",
+      "explanation": "A covalent bond shares electrons between two atoms. When both atoms have the same (or virtually equal) electronegativity—such as in H₂ or Cl₂—they pull equally on the bonding pair, forming a nonpolar covalent bond.",
+      "trap": "Polar covalent bond also involves sharing electrons, so students who overlook the word 'equally' pick it by mistake.",
+      "mnemonic": "Equal pull = No poles = Nonpolar covalent.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When two identical atoms like Cl–Cl share electrons, neither side wins the tug-of-war. That balanced share is a nonpolar covalent bond."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A polar covalent bond happens when sharing is unequal (like in H₂O or HCl), giving one side a slight negative charge."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Equal sharing → nonpolar covalent; unequal sharing → polar covalent; electron transfer → ionic."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which type of bond joins the two atoms in a nitrogen molecule, N₂?",
+          "similarAnswer": "Nonpolar covalent bond (triple bond)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 132008,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0142",
+      "subject": "chemistry",
+      "topic": "Chemical bonding",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What type of bond is primarily found in coordination compounds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ionic bonds",
+          "why": "Counter-ions outside the bracket may bind ionically, but ligands attach to the metal via coordinate bonds.",
+          "whyWrong": "While a complex salt may have ionic attraction to outer counter-ions, the bond between each ligand and the central metal ion is a coordinate (dative) covalent bond."
+        },
+        {
+          "id": "b",
+          "text": "Covalent bonds",
+          "why": "Ordinary covalent bonds share one electron from each atom; ligands donate both electrons.",
+          "whyWrong": "In a standard covalent bond each atom contributes one electron, whereas in a coordination complex the ligand supplies the whole lone pair to the metal."
+        },
+        {
+          "id": "c",
+          "text": "Metallic bonds",
+          "why": "Metallic bonds hold bulk metal atoms together, not metal-ligand complexes.",
+          "whyWrong": "Metallic bonding occurs in solid or molten metals with delocalised electrons, not between discrete ligands and a central metal cation."
+        },
+        {
+          "id": "d",
+          "text": "Coordinate covalent bonds",
+          "why": "Each ligand donates a lone pair of electrons into an empty orbital of the central metal ion.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "In a coordination complex, does the metal ion donate an electron, or does the ligand supply the entire electron pair?",
+      "explanation": "In coordination compounds (such as [Cu(NH₃)₄]²⁺), ligands act as Lewis bases by donating an entire lone pair of electrons to an empty orbital on the central metal ion. A covalent bond where both electrons come from one atom is a coordinate (dative) covalent bond.",
+      "trap": "'Covalent bonds' is close, but coordinate covalent (dative) is the precise term because only the ligand supplies the electron pair.",
+      "mnemonic": "Ligand donates BOTH electrons → Dative / Coordinate covalent.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In complexes like [Cu(NH₃)₄]²⁺, ammonia brings both electrons for the bond while copper provides an empty seat. That one-sided sharing is a coordinate covalent bond."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Normal covalent bonds are 50-50 sharing (one electron each). Coordination complexes rely on coordinate covalent bonds where the ligand brings both electrons."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Coordinate (dative) covalent bond = Lewis base (ligand lone-pair donor) + Lewis acid (metal acceptor)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What type of bond forms when NH₃ accepts an H⁺ ion to become NH₄⁺?",
+          "similarAnswer": "Coordinate (dative) covalent bond."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 133799,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0078",
+      "subject": "chemistry",
+      "topic": "Organic chemistry",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which of the following reagents is used to test for the presence of an aldehyde?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bromine water",
+          "why": "Bromine water tests for unsaturation (alkenes/alkynes), not aldehydes.",
+          "whyWrong": "Bromine water is decolorised by C=C double or C≡C triple bonds in unsaturated hydrocarbons. It is not the classic specific test for an aldehyde."
+        },
+        {
+          "id": "b",
+          "text": "Fehling’s solution",
+          "why": "Aldehydes reduce blue Cu²⁺ in Fehling's solution to a brick-red Cu₂O precipitate on warming.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Iodine solution",
+          "why": "Iodine solution tests for starch (blue-black), not an aldehyde group.",
+          "whyWrong": "Iodine in KI turns blue-black with starch; it is not the standard reagent used to identify an aldehyde functional group."
+        },
+        {
+          "id": "d",
+          "text": "Litmus paper",
+          "why": "Aldehydes are neutral compounds and do not change litmus colour.",
+          "whyWrong": "Aldehydes like ethanal are neutral to litmus, so litmus paper cannot distinguish them from alkanes, alcohols, or ketones."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Aldehydes are easily oxidised to carboxylic acids and reduce Cu²⁺ complexes on gentle heating.",
+      "explanation": "Fehling's solution contains alkaline Cu²⁺ ions (deep blue). When warmed with an aldehyde (alkanal), the aldehyde reduces Cu²⁺ to copper(I) oxide (Cu₂O), giving a brick-red precipitate. Ketones do not give this reaction.",
+      "trap": "Bromine water is another famous organic test reagent, so students sometimes confuse the alkene test with the aldehyde test.",
+      "mnemonic": "Fehling's Finds aldehydes — blue to brick-red Cu₂O.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Warm an aldehyde with blue Fehling's solution and it turns brick-red because the aldehyde reduces copper(II) to copper(I) oxide."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Bromine water tests for double or triple carbon bonds (unsaturation). Fehling's solution (or Tollens' reagent) tests specifically for aldehydes."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Both Fehling's solution (brick-red Cu₂O) and Tollens' reagent (silver mirror) distinguish aldehydes from ketones."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What colour precipitate forms when ethanal is warmed with Fehling's solution?",
+          "similarAnswer": "Brick-red precipitate (Cu₂O)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 13250,
+        "yearLabel": "2012"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0103",
+      "subject": "chemistry",
+      "topic": "Organic chemistry",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the product of the hydrolysis of esters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alcohol and ketone",
+          "why": "Hydrolysis of an ester yields a carboxylic acid and an alcohol, not a ketone.",
+          "whyWrong": "Esters have the –COO– linkage made from an acid and an alcohol, so breaking that bond with water regenerates a carboxylic acid and an alcohol, never a ketone."
+        },
+        {
+          "id": "b",
+          "text": "Carboxylic acid and alcohol",
+          "why": "Ester hydrolysis is the reverse of esterification: ester + water ⇌ carboxylic acid + alcohol.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Aldehyde and water",
+          "why": "Water is a reactant in hydrolysis, and esters do not hydrolyse into aldehydes.",
+          "whyWrong": "Hydrolysis uses water to split the ester; it does not produce water or an aldehyde."
+        },
+        {
+          "id": "d",
+          "text": "Amine and water",
+          "why": "Esters contain only C, H, and O, so they cannot produce nitrogen-containing amines.",
+          "whyWrong": "Amines contain nitrogen, whereas esters contain no nitrogen at all (RCOOR'). Hydrolysis splits an ester into RCOOH and R'OH."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Esterification combines a carboxylic acid and an alcohol. Hydrolysis simply runs that reaction backwards.",
+      "explanation": "Hydrolysis of an ester (RCOOR') splits the ester bond using water in the presence of an acid or alkali catalyst, regenerating the parent carboxylic acid (RCOOH) and alcohol (R'OH).",
+      "trap": "Students sometimes mix up carbonyl classes like ketones and aldehydes with carboxylic acids when breaking the –COO– group.",
+      "mnemonic": "Acid + Alcohol ↔ Ester + Water (forward is esterification, backward is hydrolysis).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "An ester is built by joining an acid and an alcohol. Adding water (hydrolysis) splits it right back into that carboxylic acid and alcohol."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Ketones are made by oxidising secondary alcohols. Breaking an ester's –COO– bond always returns the –COOH acid and –OH alcohol."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Acid hydrolysis of an ester gives carboxylic acid + alcohol; alkaline hydrolysis (saponification) gives carboxylate salt + alcohol."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What two products are obtained by acid hydrolysis of ethyl ethanoate?",
+          "similarAnswer": "Ethanoic acid and ethanol."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 132371,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0125",
+      "subject": "chemistry",
+      "topic": "Organic chemistry",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which of the following are isomers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ethanol and dimethyl ether",
+          "why": "Both CH₃CH₂OH and CH₃OCH₃ share the molecular formula C₂H₆O.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "benzene and methylbenzene",
+          "why": "Benzene is C₆H₆ and methylbenzene is C₇H₈ — different formulas.",
+          "whyWrong": "Isomers must have the exact same molecular formula. Methylbenzene has one extra CH₂ unit compared with benzene, making it the next homologue, not an isomer."
+        },
+        {
+          "id": "c",
+          "text": "ethanol and propanone",
+          "why": "Ethanol is C₂H₆O while propanone is C₃H₆O — different carbon counts.",
+          "whyWrong": "Ethanol has 2 carbons (C₂H₆O) and propanone has 3 carbons (C₃H₆O), so their molecular formulas do not match."
+        },
+        {
+          "id": "d",
+          "text": "trichloromethane and tetrachloromethane",
+          "why": "CHCl₃ and CCl₄ differ in both H and Cl counts.",
+          "whyWrong": "Trichloromethane is CHCl₃ while tetrachloromethane is CCl₄. Since they do not have the same molecular formula, they cannot be isomers."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Count the C, H, and O atoms in each pair: true isomers have the exact same molecular formula.",
+      "explanation": "Isomers are compounds with the same molecular formula but different structural arrangements. Ethanol (CH₃CH₂OH) and dimethyl ether (methoxymethane, CH₃OCH₃) both have the formula C₂H₆O, making them functional group isomers.",
+      "trap": "Ethanol and propanone are both oxygen-containing organic molecules, which can fool students who do not count the carbons (2 vs 3).",
+      "mnemonic": "Isomers = Identical atom count, Different structure (Alkanol ↔ Ether).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Count the atoms: ethanol (CH₃CH₂OH) has 2 C, 6 H, 1 O. Dimethyl ether (CH₃OCH₃) also has 2 C, 6 H, 1 O. Same formula, different arrangement = isomers."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Ethanol has 2 carbons (C₂H₆O), whereas propanone ('prop-' = 3) has 3 carbons (C₃H₆O), so they cannot be isomers."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Functional group isomer pairs to know: alkanols & ethers (CₙH₂ₙ₊₂O), alkanals & alkanones (CₙH₂ₙO), alkanoic acids & esters (CₙH₂ₙO₂)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which pair are functional group isomers: propanal and propanone, or ethanol and ethanoic acid?",
+          "similarAnswer": "Propanal and propanone (both C₃H₆O)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 151643,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0158",
+      "subject": "chemistry",
+      "topic": "Organic chemistry",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "One of the major uses of Alkanes is",
+      "options": [
+        {
+          "id": "a",
+          "text": "In the hydrogenation of oils",
+          "why": "Hydrogen (not alkanes) is added to vegetable oils to make margarine.",
+          "whyWrong": "Hardening vegetable oils uses hydrogen gas (H₂) with a nickel catalyst to saturate double bonds, not alkanes."
+        },
+        {
+          "id": "b",
+          "text": "In the textile industries",
+          "why": "Synthetic textiles rely mainly on polymers made from alkenes, esters, or amides, not alkanes.",
+          "whyWrong": "Alkanes are relatively unreactive saturated hydrocarbons, so they are not the primary monomers for textile fibres."
+        },
+        {
+          "id": "c",
+          "text": "In the production of plastics",
+          "why": "Plastics are made by polymerising unsaturated alkenes like ethene and propene, not saturated alkanes.",
+          "whyWrong": "Alkanes lack the C=C double bonds needed for addition polymerisation, so plastics are made from alkenes rather than alkanes."
+        },
+        {
+          "id": "d",
+          "text": "As domestic and industrial fuels",
+          "why": "Alkanes burn exothermically in oxygen (e.g., methane, LPG, petrol, kerosene), making them prime fuels.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Think of methane (natural gas), propane/butane (cooking gas), petrol, and diesel — what are they used for?",
+      "explanation": "Alkanes are saturated hydrocarbons whose main reaction is clean, strongly exothermic combustion. Consequently, alkanes such as methane, propane, butane (LPG), petrol, kerosene, and diesel are chiefly used as domestic and industrial fuels.",
+      "trap": "Plastics and textiles are major petrochemical products, but they come from reactive alkenes rather than saturated alkanes.",
+      "mnemonic": "Alkanes burn cleanly → Fuels (LPG, petrol, diesel).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Alkanes release a lot of heat when they burn — cooking gas (propane/butane) and petrol are alkanes, so their main use is as fuels."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Plastics like polythene are made from alkenes (which have double bonds that open up to link together), not unreactive alkanes."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Alkanes = fuels (combustion); Alkenes = plastics and ethanol (addition reactions)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which hydrocarbon family is the main starting material for making polythene?",
+          "similarAnswer": "Alkenes (specifically ethene)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 316,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0128",
+      "subject": "chemistry",
+      "topic": "Rates and equilibrium",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In a chemical equilibrium represented by the equation N2(g) + 3H2(g) ⇌ 2NH3(g), what will happen to the equilibrium position if the pressure is increased?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The equilibrium will shift to the left, favoring the reactants.",
+          "why": "The left side has 4 gas moles (1 + 3), whereas higher pressure favours fewer gas moles.",
+          "whyWrong": "Shifting left produces 4 moles of gas from 2 moles, which would raise pressure even further instead of relieving it."
+        },
+        {
+          "id": "b",
+          "text": "The equilibrium will shift to the right, favoring the products.",
+          "why": "4 moles of reactant gases form 2 moles of NH₃, so higher pressure shifts right to reduce gas moles.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The equilibrium will remain unchanged.",
+          "why": "Pressure stays unchanged only when both sides have equal numbers of gas moles.",
+          "whyWrong": "Here the left side has 1 + 3 = 4 moles of gas and the right side has 2 moles. Since the gas mole counts differ, changing pressure definitely shifts equilibrium."
+        },
+        {
+          "id": "d",
+          "text": "The reaction will proceed to completion.",
+          "why": "Reversible reactions reach a new equilibrium position; pressure changes do not force 100% completion.",
+          "whyWrong": "Even at high pressure, the Haber process remains an equilibrium reaction and never goes 100% to completion."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Count the total gas molecules on each side: N₂ + 3H₂ (4) versus 2NH₃ (2).",
+      "explanation": "By Le Chatelier's principle, increasing pressure shifts a gas equilibrium toward the side with fewer moles of gas. In N₂(g) + 3H₂(g) ⇌ 2NH₃(g), 4 moles of gas react to form 2 moles of gas, so the equilibrium shifts to the right, favouring ammonia.",
+      "trap": "Students sometimes think shifting left relieves pressure, or forget to add the coefficients 1 + 3 = 4 on the reactant side.",
+      "mnemonic": "More pressure squeezes to fewer gas moles: 4 → 2 shifts right.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Squeezing the container makes the gases pack into fewer molecules. Since 4 molecules on the left shrink into 2 molecules on the right, more NH₃ forms."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Moving left turns 2 gas molecules into 4, taking up more space and pushing pressure even higher. The system relieves high pressure by moving right (4 → 2)."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Le Chatelier's principle for pressure: increasing pressure favours the side with fewer total moles of gas."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), what happens to the yield of SO₃ when pressure is increased?",
+          "similarAnswer": "It increases (shifts right, from 3 gas moles to 2)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 173365,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "chem-api-0081",
+      "subject": "chemistry",
+      "topic": "Ion tests",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A few drops of NaOH solution were added to an unknown salt forming a white precipitate which is insoluble in excess solution. The cation likely present is",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zn²⁺",
+          "why": "Zn(OH)₂ is amphoteric and dissolves in excess NaOH.",
+          "whyWrong": "Zn²⁺ gives a white precipitate with NaOH, but zinc hydroxide is amphoteric and dissolves completely when excess NaOH is added."
+        },
+        {
+          "id": "b",
+          "text": "Pb²⁺",
+          "why": "Pb(OH)₂ is amphoteric and dissolves in excess NaOH.",
+          "whyWrong": "Pb²⁺ forms a white precipitate that dissolves in excess NaOH to form plumbate(II) ions. Here the precipitate stays insoluble."
+        },
+        {
+          "id": "c",
+          "text": "Ca²⁺",
+          "why": "Ca(OH)₂ is a white precipitate that does not dissolve in excess NaOH.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Al³⁺",
+          "why": "Al(OH)₃ is amphoteric and dissolves in excess NaOH.",
+          "whyWrong": "Al³⁺ forms white Al(OH)₃, which dissolves in excess NaOH because aluminium hydroxide is amphoteric."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Zn²⁺, Pb²⁺, and Al³⁺ all have amphoteric hydroxides. Which cation's hydroxide is NOT amphoteric?",
+      "explanation": "Adding NaOH to Ca²⁺ produces a white precipitate of calcium hydroxide, Ca(OH)₂. Unlike Zn(OH)₂, Pb(OH)₂, and Al(OH)₃ (which are amphoteric and dissolve in excess NaOH), Ca(OH)₂ is strictly basic and remains insoluble in excess NaOH.",
+      "trap": "All four cations give white precipitates with a few drops of NaOH, so students who miss 'insoluble in excess' easily pick Zn²⁺, Pb²⁺, or Al³⁺.",
+      "mnemonic": "ZAP dissolves in excess NaOH (Zn²⁺, Al³⁺, Pb²⁺); Ca²⁺ stays chalky white.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Four common ions give a white precipitate with a little NaOH, but Zn²⁺, Al³⁺, and Pb²⁺ redissolve if you pour in excess NaOH. Ca²⁺ stays behind as a white solid."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Pb²⁺ behaves like Zn²⁺ and Al³⁺: its white hydroxide is amphoteric and dissolves in excess NaOH. Ca(OH)₂ is not amphoteric, so it stays insoluble."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "With NaOH: ZAP (Zn²⁺, Al³⁺, Pb²⁺) = white ppt soluble in excess; Ca²⁺ = white ppt insoluble in excess (and no ppt with NH₃)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is observed when aqueous ammonia (NH₃) is added to a solution containing Ca²⁺ ions?",
+          "similarAnswer": "No precipitate (or at most very faint turbidity in very concentrated solution), unlike Pb²⁺ and Al³⁺."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 194620,
+        "yearLabel": "2014"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "count": 6,
+  "animations": [
+    {
+      "id": "anim-acct-api-0009",
+      "questionId": "acct-api-0009",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Assets = Liabilities + Equity",
+          "tag": "accounting equation",
+          "narration": "Start with the accounting equation. Assets equal liabilities plus equity."
+        },
+        {
+          "n": 2,
+          "display": "Equity = ₦500,000 − ₦200,000",
+          "tag": "rearrange",
+          "narration": "Subtract liabilities from total assets. Five hundred thousand minus two hundred thousand."
+        },
+        {
+          "n": 3,
+          "display": "Equity = ₦300,000",
+          "tag": "answer",
+          "narration": "The owner's equity is three hundred thousand naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-acct-api-0012",
+      "questionId": "acct-api-0012",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Prime cost = ₦600,000 + ₦300,000 = ₦900,000",
+          "tag": "prime cost",
+          "narration": "First add direct materials and direct labour to get prime cost, nine hundred thousand naira."
+        },
+        {
+          "n": 2,
+          "display": "Production cost = Prime cost + Overhead",
+          "tag": "the rule",
+          "narration": "Total production cost equals prime cost plus manufacturing overhead."
+        },
+        {
+          "n": 3,
+          "display": "Overhead = ₦1,000,000 − ₦900,000",
+          "tag": "subtract",
+          "narration": "Subtract prime cost of nine hundred thousand from total production cost of one million."
+        },
+        {
+          "n": 4,
+          "display": "Overhead = ₦100,000",
+          "tag": "answer",
+          "narration": "Manufacturing overhead is one hundred thousand naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-acct-api-0015",
+      "questionId": "acct-api-0015",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Net cash flow = Inflows − Outflows",
+          "tag": "the rule",
+          "narration": "Net cash flow equals cash inflows minus cash outflows."
+        },
+        {
+          "n": 2,
+          "display": "Net cash flow = N150,000 − N80,000",
+          "tag": "substitute",
+          "narration": "Subtract the investing outflow of eighty thousand from the operating inflow of one hundred and fifty thousand."
+        },
+        {
+          "n": 3,
+          "display": "Net cash flow = N70,000",
+          "tag": "answer",
+          "narration": "The net cash flow is seventy thousand naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-acct-api-0016",
+      "questionId": "acct-api-0016",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Total ratio parts = 3 + 2 = 5",
+          "tag": "add ratios",
+          "narration": "Add the ratio parts. Three plus two equals five parts in total."
+        },
+        {
+          "n": 2,
+          "display": "Partner A's fraction = 3 ÷ 5",
+          "tag": "A's share",
+          "narration": "Partner A gets three out of five parts."
+        },
+        {
+          "n": 3,
+          "display": "Share = (3 ÷ 5) × ₦50,000",
+          "tag": "multiply",
+          "narration": "Multiply three fifths by the total profit of fifty thousand naira."
+        },
+        {
+          "n": 4,
+          "display": "Partner A's share = ₦30,000",
+          "tag": "answer",
+          "narration": "Fifty thousand divided by five is ten thousand, times three gives thirty thousand naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-acct-api-0017",
+      "questionId": "acct-api-0017",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Depreciable amount = Cost − Scrap value",
+          "tag": "the rule",
+          "narration": "First subtract scrap value from cost to find the depreciable amount."
+        },
+        {
+          "n": 2,
+          "display": "₦120,000 − ₦20,000 = ₦100,000",
+          "tag": "subtract",
+          "narration": "One hundred and twenty thousand minus twenty thousand gives one hundred thousand naira."
+        },
+        {
+          "n": 3,
+          "display": "Annual depreciation = ₦100,000 ÷ 4",
+          "tag": "divide by life",
+          "narration": "Divide the depreciable amount by the four year lifespan."
+        },
+        {
+          "n": 4,
+          "display": "Annual depreciation = ₦25,000",
+          "tag": "answer",
+          "narration": "One hundred thousand divided by four is twenty-five thousand naira per year."
+        }
+      ]
+    },
+    {
+      "id": "anim-acct-api-0028",
+      "questionId": "acct-api-0028",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Premium per share = 20% × ₦5 = ₦1",
+          "tag": "find premium",
+          "narration": "Find twenty percent of the five naira nominal value. That gives a one naira premium per share."
+        },
+        {
+          "n": 2,
+          "display": "Issue price = ₦5 + ₦1 = ₦6",
+          "tag": "issue price",
+          "narration": "Add the one naira premium to the five naira nominal value to get six naira per share."
+        },
+        {
+          "n": 3,
+          "display": "Total received = 10,000 × ₦6",
+          "tag": "multiply",
+          "narration": "Multiply ten thousand shares by the issue price of six naira."
+        },
+        {
+          "n": 4,
+          "display": "Total received = ₦60,000",
+          "tag": "answer",
+          "narration": "The company receives sixty thousand naira in total."
+        }
+      ]
+    }
+  ]
+}

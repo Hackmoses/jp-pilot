@@ -1,0 +1,537 @@
+{
+  "version": 1,
+  "count": 21,
+  "animations": [
+    {
+      "id": "anim-phys-api-0005",
+      "questionId": "phys-api-0005",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "|A| = √(x² + y²)",
+          "tag": "magnitude rule",
+          "narration": "Magnitude equals the square root of x squared plus y squared."
+        },
+        {
+          "n": 2,
+          "display": "|A| = √(3² + 4²) = √(9 + 16)",
+          "tag": "substitute",
+          "narration": "Square 3 and 4 to get 9 plus 16."
+        },
+        {
+          "n": 3,
+          "display": "|A| = √25 = 5",
+          "tag": "answer",
+          "narration": "The square root of 25 is 5."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0094",
+      "questionId": "phys-api-0094",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "W = F · d = Fₓdₓ + Fᵧdᵧ",
+          "tag": "dot product",
+          "narration": "Work equals the dot product of force and displacement."
+        },
+        {
+          "n": 2,
+          "display": "W = (3 × 2) + (4 × 5)",
+          "tag": "substitute",
+          "narration": "Multiply 3 by 2 and 4 by 5."
+        },
+        {
+          "n": 3,
+          "display": "W = 6 + 20 = 26 J",
+          "tag": "answer",
+          "narration": "6 plus 20 equals 26 joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0027",
+      "questionId": "phys-api-0027",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v = u + at",
+          "tag": "equation of motion",
+          "narration": "Use final velocity equals initial velocity plus acceleration times time."
+        },
+        {
+          "n": 2,
+          "display": "v = 0 + 2 × 5",
+          "tag": "substitute",
+          "narration": "Initial velocity is 0, acceleration is 2, and time is 5."
+        },
+        {
+          "n": 3,
+          "display": "v = 10 m s⁻¹",
+          "tag": "answer",
+          "narration": "Two times five is 10 metres per second."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0046",
+      "questionId": "phys-api-0046",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = (v − u) ÷ t",
+          "tag": "acceleration",
+          "narration": "Acceleration equals final velocity minus initial velocity over time."
+        },
+        {
+          "n": 2,
+          "display": "a = (0 − 20) ÷ 5",
+          "tag": "substitute",
+          "narration": "Put in final velocity 0, initial velocity 20, and time 5."
+        },
+        {
+          "n": 3,
+          "display": "a = −20 ÷ 5 = −4 m s⁻²",
+          "tag": "answer",
+          "narration": "Minus 20 divided by 5 is minus 4 metres per second squared."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0127",
+      "questionId": "phys-api-0127",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v² = u² + 2as",
+          "tag": "third equation",
+          "narration": "Use v squared equals u squared plus 2 a s."
+        },
+        {
+          "n": 2,
+          "display": "0 = 30² + 2(−0.1)s",
+          "tag": "substitute",
+          "narration": "Put in v equals 0, u equals 30, and acceleration minus 0.1."
+        },
+        {
+          "n": 3,
+          "display": "0.2s = 900",
+          "tag": "rearrange",
+          "narration": "0.2 s equals 900."
+        },
+        {
+          "n": 4,
+          "display": "s = 900 ÷ 0.2 = 4500 m",
+          "tag": "solve",
+          "narration": "Divide 900 by 0.2 to get 4500 metres."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0099",
+      "questionId": "phys-api-0099",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = mv² ÷ r",
+          "tag": "centripetal force",
+          "narration": "Centripetal force equals mass times speed squared divided by radius."
+        },
+        {
+          "n": 2,
+          "display": "F = (2 × 10²) ÷ 4",
+          "tag": "substitute",
+          "narration": "Put in mass 2, speed 10, and radius 4."
+        },
+        {
+          "n": 3,
+          "display": "F = 200 ÷ 4 = 50 N",
+          "tag": "answer",
+          "narration": "200 divided by 4 gives 50 newtons."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0144",
+      "questionId": "phys-api-0144",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v = 7000 m/s, r = 8 × 10⁶ m",
+          "tag": "SI units",
+          "narration": "Convert kilometres to metres: speed is 7000 metres per second, radius is 8 million metres."
+        },
+        {
+          "n": 2,
+          "display": "a = v² ÷ r = (49 × 10⁶) ÷ (8 × 10⁶)",
+          "tag": "substitute",
+          "narration": "Square 7000 to get 49 million, then divide by 8 million."
+        },
+        {
+          "n": 3,
+          "display": "a = 49 ÷ 8 = 6.125 m/s²",
+          "tag": "answer",
+          "narration": "49 divided by 8 gives 6.125 metres per second squared."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0042",
+      "questionId": "phys-api-0042",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E = ½ × F × e",
+          "tag": "elastic energy",
+          "narration": "Elastic energy equals half times force times extension."
+        },
+        {
+          "n": 2,
+          "display": "E = 0.5 × 12 × 0.04",
+          "tag": "substitute",
+          "narration": "Put in half of 12 times 0.04."
+        },
+        {
+          "n": 3,
+          "display": "E = 6 × 0.04 = 0.24 J",
+          "tag": "answer",
+          "narration": "6 times 0.04 gives 0.24 joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0122",
+      "questionId": "phys-api-0122",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "KE_bottom = PE_top = mgh",
+          "tag": "conservation",
+          "narration": "Kinetic energy at the bottom equals potential energy at the top, m g h."
+        },
+        {
+          "n": 2,
+          "display": "KE = 1.5 × 10 × 20",
+          "tag": "substitute",
+          "narration": "Multiply 1.5 by 10 by 20."
+        },
+        {
+          "n": 3,
+          "display": "KE = 15 × 20 = 300 J",
+          "tag": "answer",
+          "narration": "15 times 20 gives 300 joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0149",
+      "questionId": "phys-api-0149",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = mg = 20 × 10 = 200 N",
+          "tag": "weight",
+          "narration": "Find the weight: 20 kilograms times 10 gives 200 newtons."
+        },
+        {
+          "n": 2,
+          "display": "P = F × v = 200 × 5",
+          "tag": "power formula",
+          "narration": "Power equals force times velocity: 200 times 5."
+        },
+        {
+          "n": 3,
+          "display": "P = 1000 W",
+          "tag": "answer",
+          "narration": "200 times 5 gives 1000 watts."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0086",
+      "questionId": "phys-api-0086",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "MA = Efficiency × VR",
+          "tag": "mechanical advantage",
+          "narration": "Mechanical advantage equals efficiency times velocity ratio."
+        },
+        {
+          "n": 2,
+          "display": "MA = 0.60 × 2 = 1.2",
+          "tag": "substitute",
+          "narration": "0.60 times 2 gives a mechanical advantage of 1.2."
+        },
+        {
+          "n": 3,
+          "display": "Effort = Load ÷ MA = 300 ÷ 1.2 = 250 N",
+          "tag": "solve",
+          "narration": "Divide the 300 newton load by 1.2 to get 250 newtons."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0089",
+      "questionId": "phys-api-0089",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "c = Q ÷ (m × ΔT)",
+          "tag": "rearrange",
+          "narration": "Specific heat capacity equals heat divided by mass times temperature change."
+        },
+        {
+          "n": 2,
+          "display": "c = 4200 ÷ (0.5 × 10)",
+          "tag": "substitute",
+          "narration": "Put in 4200 over 0.5 times 10."
+        },
+        {
+          "n": 3,
+          "display": "c = 4200 ÷ 5 = 840 J/kg·K",
+          "tag": "answer",
+          "narration": "4200 divided by 5 gives 840 joules per kilogram kelvin."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0120",
+      "questionId": "phys-api-0120",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "t = 5 × 60 = 300 s",
+          "tag": "to seconds",
+          "narration": "Convert 5 minutes to 300 seconds."
+        },
+        {
+          "n": 2,
+          "display": "Q = P × t = 30 × 300 = 9000 J",
+          "tag": "heat supplied",
+          "narration": "Multiply 30 watts by 300 seconds to get 9000 joules."
+        },
+        {
+          "n": 3,
+          "display": "C = Q ÷ ΔT = 9000 ÷ 10 = 900 J K⁻¹",
+          "tag": "answer",
+          "narration": "Divide 9000 by 10 to get 900 joules per kelvin."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0187",
+      "questionId": "phys-api-0187",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "RH = (P_actual ÷ SVP) × 100%",
+          "tag": "the rule",
+          "narration": "Relative humidity equals actual vapour pressure over saturated vapour pressure times 100 percent."
+        },
+        {
+          "n": 2,
+          "display": "RH = (18 ÷ 24) × 100%",
+          "tag": "substitute",
+          "narration": "Put in 18 over 24 times 100 percent."
+        },
+        {
+          "n": 3,
+          "display": "RH = (3 ÷ 4) × 100% = 75%",
+          "tag": "answer",
+          "narration": "18 over 24 simplifies to three quarters, which is 75 percent."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0018",
+      "questionId": "phys-api-0018",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T = 1 ÷ f",
+          "tag": "period formula",
+          "narration": "Period equals 1 divided by frequency."
+        },
+        {
+          "n": 2,
+          "display": "T = 1 ÷ 250 = 4 ÷ 1000",
+          "tag": "scale to 1000",
+          "narration": "Put in 250, which equals 4 over 1000."
+        },
+        {
+          "n": 3,
+          "display": "T = 0.004 s",
+          "tag": "answer",
+          "narration": "Four thousandths is 0.004 seconds."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0081",
+      "questionId": "phys-api-0081",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "λ = 0.25 m, f = 4 Hz",
+          "tag": "identify values",
+          "narration": "Wavelength is 0.25 metres and frequency is 4 hertz."
+        },
+        {
+          "n": 2,
+          "display": "v = f × λ = 4 × 0.25",
+          "tag": "wave equation",
+          "narration": "Wave speed equals frequency times wavelength: 4 times 0.25."
+        },
+        {
+          "n": 3,
+          "display": "v = 1 m s⁻¹",
+          "tag": "answer",
+          "narration": "Four quarters equal 1 metre per second."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0107",
+      "questionId": "phys-api-0107",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "hᵢ ÷ hₒ = v ÷ u",
+          "tag": "magnification",
+          "narration": "Image height over object height equals image distance over object distance."
+        },
+        {
+          "n": 2,
+          "display": "hᵢ = (0.1 ÷ 3) × 1.5",
+          "tag": "substitute",
+          "narration": "Multiply 0.1 by 1.5 and divide by 3."
+        },
+        {
+          "n": 3,
+          "display": "hᵢ = 0.15 ÷ 3 = 0.05 m",
+          "tag": "answer",
+          "narration": "0.15 divided by 3 gives 0.05 metres."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0007",
+      "questionId": "phys-api-0007",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E = I(R + r) → R + r = E ÷ I",
+          "tag": "circuit law",
+          "narration": "Total resistance equals electromotive force divided by current."
+        },
+        {
+          "n": 2,
+          "display": "R + r = 1.5 ÷ 0.3 = 5.0 Ω",
+          "tag": "total resistance",
+          "narration": "1.5 divided by 0.3 gives 5.0 ohms total."
+        },
+        {
+          "n": 3,
+          "display": "r = 5.0 − 1.0 = 4.0 Ω",
+          "tag": "subtract R",
+          "narration": "Subtract the 1 ohm external resistor to leave 4.0 ohms."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0140",
+      "questionId": "phys-api-0140",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = 10(40) + 5(100) = 900 W = 0.9 kW",
+          "tag": "total power",
+          "narration": "Total power is 400 plus 500, which is 900 watts, or 0.9 kilowatts."
+        },
+        {
+          "n": 2,
+          "display": "E = 0.9 kW × 10 h = 9 kWh",
+          "tag": "energy in units",
+          "narration": "Multiply 0.9 kilowatts by 10 hours to get 9 kilowatt-hours."
+        },
+        {
+          "n": 3,
+          "display": "Cost = 9 × ₦5 = ₦45",
+          "tag": "answer",
+          "narration": "Multiply 9 units by 5 naira to get 45 naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0097",
+      "questionId": "phys-api-0097",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "C = Q ÷ V",
+          "tag": "capacitance",
+          "narration": "Capacitance equals charge divided by voltage."
+        },
+        {
+          "n": 2,
+          "display": "C = 30 ÷ 5",
+          "tag": "substitute",
+          "narration": "Put in 30 coulombs over 5 volts."
+        },
+        {
+          "n": 3,
+          "display": "C = 6 F",
+          "tag": "answer",
+          "narration": "30 divided by 5 gives 6 farads."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-api-0170",
+      "questionId": "phys-api-0170",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "n = 20 ÷ 5 = 4 half-lives",
+          "tag": "count half-lives",
+          "narration": "Divide 20 years by the 5-year half-life to get 4 half-lives."
+        },
+        {
+          "n": 2,
+          "display": "100% → 50% → 25% → 12.5% → 6.25%",
+          "tag": "halve 4 times",
+          "narration": "Halve 100 percent four times: 50, 25, 12.5, and 6.25 percent."
+        },
+        {
+          "n": 3,
+          "display": "remaining = 6.25%",
+          "tag": "answer",
+          "narration": "So 6.25 percent remains."
+        }
+      ]
+    }
+  ]
+}

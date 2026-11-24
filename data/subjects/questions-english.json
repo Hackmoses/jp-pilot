@@ -1,0 +1,979 @@
+{
+  "version": 1,
+  "subject": "english",
+  "count": 12,
+  "questions": [
+    {
+      "id": "engl-api-0011",
+      "subject": "english",
+      "topic": "Oral English",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Select the word that has the same pattern of stress as the given word.\n\nQUALITY",
+      "options": [
+        {
+          "id": "a",
+          "text": "accepted",
+          "why": "Accepted is stressed on the second syllable: ac-CEP-ted.",
+          "whyWrong": "Accepted has three syllables, but its primary stress falls on the second syllable (ac-CEP-ted), not the first. QUALITY is stressed on its first syllable (QUA-li-ty)."
+        },
+        {
+          "id": "b",
+          "text": "bachelor",
+          "why": "Both QUALITY (QUA-li-ty) and bachelor (BACH-e-lor) carry primary stress on the first syllable.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "guarantee",
+          "why": "Guarantee is stressed on the third syllable: gua-ran-TEE.",
+          "whyWrong": "Words ending in -ee usually carry primary stress on that final syllable, giving gua-ran-TEE. That places the stress on the third syllable instead of the first."
+        },
+        {
+          "id": "d",
+          "text": "relation",
+          "why": "Relation is stressed on the second syllable: re-LA-tion.",
+          "whyWrong": "Words ending in -tion place primary stress on the syllable just before -tion, so relation is pronounced re-LA-tion. That is second-syllable stress, whereas QUA-li-ty has first-syllable stress."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Break QUALITY into three syllables and notice which one sounds loudest: QUA-li-ty.",
+      "explanation": "QUALITY has three syllables with primary stress on the first syllable: QUA-li-ty (OOo). Bachelor follows the same first-syllable stress pattern: BACH-e-lor (OOo). Accepted (ac-CEP-ted) and relation (re-LA-tion) take stress on the second syllable, while guarantee (gua-ran-TEE) takes stress on the third.",
+      "trap": "Relation is a common trap because students forget the -tion rule. The suffix -tion pulls stress onto the syllable right before it (re-LA-tion), not the first syllable.",
+      "mnemonic": "QUA-li-ty and BACH-e-lor both hit hard on syllable one; -tion pulls back to the syllable before it, and -ee keeps the stress at the end.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Say QUALITY out loud: the strong beat is on QUA at the start (QUA-li-ty). Among the options, only BACH-e-lor also has its strong beat at the very start."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Relation ends in -tion, and words ending in -tion almost always put stress on the syllable right before -tion. So we say re-LA-tion (second syllable), which does not match QUA-li-ty (first syllable)."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "In English word stress, match both the stressed syllable position and the syllable count when possible: -tion/-sion pull stress to the penultimate syllable, while -ee/-eer/-ese take stress on the final syllable."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Tap the beat on your desk: QUA-li-ty (TAP-tap-tap) matches BACH-e-lor (TAP-tap-tap), while re-LA-tion goes tap-TAP-tap and gua-ran-TEE goes tap-tap-TAP."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which word has the same stress pattern as EDUCATION (ooOo): duplicity, economics, or elaborate?",
+          "similarAnswer": "Economics (ec-o-NOM-ics), because both have primary stress on the third of four syllables."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 155895,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0165",
+      "subject": "english",
+      "topic": "Oral English",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "the word in capital letters has the emphatic stress. Choose the option to which the given sentence relates.\n\nMy bag is made of LEATHER.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whose bag is made of leather?",
+          "why": "This question asks about the owner of the bag, which would stress MY.",
+          "whyWrong": "The question 'Whose bag is made of leather?' focuses on who owns the bag, so the answer would stress MY ('MY bag is made of leather'). Here, the stress is on LEATHER instead."
+        },
+        {
+          "id": "b",
+          "text": "Is my bag made of polythene?",
+          "why": "Polythene directly contrasts with LEATHER, so the answer stresses LEATHER to correct it.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Is Abu's bag made of leather?",
+          "why": "Replacing my with Abu's contrasts the owner, which would stress MY.",
+          "whyWrong": "This question puts Abu's in contrast with my, so the corrective reply would be 'No, MY bag is made of leather.' It does not test the material LEATHER."
+        },
+        {
+          "id": "d",
+          "text": "Is my bag made of leather?",
+          "why": "This repeats leather without contrasting it, so it does not trigger emphatic stress on LEATHER.",
+          "whyWrong": "In emphatic stress questions, the stressed word corrects or contrasts a different word in the question. Because this question already says 'leather', there is no contrasting material to correct."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Emphatic stress highlights the word that corrects a wrong detail in the question.",
+      "explanation": "Emphatic stress is placed on a word to contrast it with an alternative or correct a false assumption. Because LEATHER is capitalised, the matching question must mention a different material—polythene—so the speaker replies, 'No, my bag is made of LEATHER.'",
+      "trap": "Many students pick 'Is my bag made of leather?' because it looks like an exact match. In emphatic stress items, the correct question contains a contrasting wrong word, not the capitalised word itself.",
+      "mnemonic": "Spot the swap: the stressed word in the answer is the one that replaces a wrong word in the question.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When a word is in ALL CAPS, the speaker is correcting someone. Since LEATHER is in caps, the other person must have guessed a different material, like polythene."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "If someone already asked 'Is my bag made of leather?', you would simply say 'Yes, it is.' You only shout or stress LEATHER to correct a wrong guess such as polythene."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "In emphatic stress, the capitalised word answers a question that either asks specifically about that element or offers a contrasting substitute for it—never a yes/no question using the same word."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Never pick the option that repeats the CAPS word in a yes/no question; look for the option that swaps it out."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which question matches the emphatic stress: 'Uche LOVES Toyota cars'?",
+          "similarAnswer": "'Does Uche hate Toyota cars?' because 'hate' contrasts with 'LOVES'."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 5169,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0020",
+      "subject": "english",
+      "topic": "Idioms and figurative usage",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Select the option that best explains the information conveyed in the sentence. Tolu and Chinedu live in each other's pockets",
+      "options": [
+        {
+          "id": "a",
+          "text": "they steal from each other",
+          "why": "Taking 'pockets' literally as pickpocketing misses the figurative idiom.",
+          "whyWrong": "The word 'pockets' makes some learners think of pickpocketing or stealing, but the idiom has nothing to do with theft. It describes closeness and constant company."
+        },
+        {
+          "id": "b",
+          "text": "they blackmail each other",
+          "why": "Blackmail implies hostility and secrets, the opposite of this idiom.",
+          "whyWrong": "To live in someone's pocket describes spending nearly all your time with them or knowing all their affairs closely, not blackmailing or threatening them."
+        },
+        {
+          "id": "c",
+          "text": "they are very close to each other",
+          "why": "Living in each other's pockets means being inseparable or extremely close.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "they are long-term business partners",
+          "why": "The idiom refers to personal closeness and constant company, not business.",
+          "whyWrong": "Even though 'pocket' is often linked with money, this expression does not mean sharing finances or running a business together. It describes two people who are constantly together."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "a"
+      ],
+      "hint": "Imagine two friends who are so inseparable it feels as if one could fit inside the other's pocket.",
+      "explanation": "The idiom 'live in each other's pockets' means two people are so close that they spend nearly all their time together and are deeply involved in each other's lives.",
+      "trap": "Because pockets hold money, learners sometimes assume the idiom refers to business partners or stealing. In idioms, picture the physical closeness implied rather than the literal money meaning.",
+      "mnemonic": "In each other's pockets = always side by side, practically inseparable.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If two friends 'live in each other's pockets', they are always together and super close, almost like one never leaves the other's side."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Thinking of 'pocket' as money leads to 'business partners', but the idiom is about physical and personal closeness—being together all the time—not trade or finance."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "Idioms carry a fixed figurative meaning as a whole phrase; translating key nouns like 'pocket' literally into money or theft usually leads to a distractor."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Picture someone so close to you that they are practically tucked inside your pocket wherever you go."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What does it mean when two people 'get on like a house on fire'?",
+          "similarAnswer": "They become very friendly and get along enthusiastically right away."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 156146,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0082",
+      "subject": "english",
+      "topic": "Idioms and figurative usage",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Choose the interpretation that most appropriately expresses the meaning of the sentence.\n\nAfter the argument, he decided to bury the hatchet. This means he decided to",
+      "options": [
+        {
+          "id": "a",
+          "text": "hide the truth",
+          "why": "'Bury' can mean hide in other contexts, but 'bury the hatchet' specifically means making peace.",
+          "whyWrong": "While burying something physically hides it, the idiom 'bury the hatchet' does not mean covering up facts or hiding the truth. Notice the context 'After the argument', which points to reconciliation."
+        },
+        {
+          "id": "b",
+          "text": "end the quarrel",
+          "why": "Burying the hatchet means putting away weapons of conflict to make peace.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "fight harder",
+          "why": "Burying a weapon means stopping the fight, not intensifying it.",
+          "whyWrong": "If someone wanted to fight harder, they would pick up the hatchet, not bury it. Burying it signals that the hostility is over."
+        },
+        {
+          "id": "d",
+          "text": "leave the place",
+          "why": "The idiom refers to reconciliation after a dispute, not departing.",
+          "whyWrong": "Nothing in 'bury the hatchet' suggests walking away or leaving a place. It describes settling a disagreement and restoring peace."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "A hatchet is an axe used as a weapon. What happens after an argument if you put a weapon into the ground?",
+      "explanation": "To 'bury the hatchet' means to stop fighting, forgive past grievances, and end a quarrel. The image comes from putting weapons away in the ground as a sign of peace.",
+      "trap": "Students often see the word 'bury' and jump to 'hide the truth'. The clue 'After the argument' shows the idiom is about resolving a conflict, not concealing a secret.",
+      "mnemonic": "Hatchet in the ground = fight is over, peace is found.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A hatchet is a small axe. Putting it in the ground after an argument means putting conflict away and making peace—ending the quarrel."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "In everyday speech, 'bury' can mean hide, which makes 'hide the truth' tempting. Here, 'After the argument' tells you the hatchet represents fighting, so burying it means ending the quarrel."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "Use the surrounding sentence context—here, 'After the argument'—to confirm the figurative sense of an idiom instead of guessing from a single word."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Think: bury the axe, drop the beef—no more fighting."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What does 'extend an olive branch' mean after a disagreement?",
+          "similarAnswer": "To make a gesture of peace or reconciliation."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 176804,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0075",
+      "subject": "english",
+      "topic": "Antonyms",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Choose the option that is most nearly opposite in meaning to the key word or expression and correctly fits the sentence.\n\nSome workers were quite affable at the meeting but their leader was rather ...............",
+      "options": [
+        {
+          "id": "a",
+          "text": "mindful",
+          "why": "Mindful means attentive or careful, which does not contrast with affable.",
+          "whyWrong": "Mindful describes someone who pays close attention or remembers others' feelings, which is positive. The conjunction 'but' requires a negative trait opposite to 'affable'."
+        },
+        {
+          "id": "b",
+          "text": "discreet",
+          "why": "Discreet means careful and tactful in speech, not unfriendly or hostile.",
+          "whyWrong": "Someone who is discreet avoids causing offence or leaking secrets. That does not stand in direct opposition to being affable (warm and friendly)."
+        },
+        {
+          "id": "c",
+          "text": "suspicious",
+          "why": "Suspicious means distrustful, which opposes trusting rather than affable.",
+          "whyWrong": "Being suspicious means doubting others' motives, which is the opposite of trusting or naive. Affable means friendly and easy to talk to, so its true opposite is hostile or antagonistic."
+        },
+        {
+          "id": "d",
+          "text": "antagonistic",
+          "why": "Affable means friendly and warm, and antagonistic means actively hostile or unfriendly.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "The word 'but' sets up a contrast. If affable workers are warm and friendly, what would an unfriendly leader be?",
+      "explanation": "Affable means friendly, pleasant, and easy to talk to. Because 'but' signals contrast, the blank needs its opposite: antagonistic, which means hostile, cold, or actively opposed.",
+      "trap": "Suspicious is a tempting trap because it is clearly negative. However, suspicious contrasts with trusting, whereas affable (warm and welcoming) contrasts directly with antagonistic (hostile).",
+      "mnemonic": "Affable = Approachable and Friendly; Antagonistic = Acting Against you.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Affable people are warm and easy to approach. The opposite of warm and friendly is hostile—and that is what 'antagonistic' means."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Suspicious is a negative word, so it fits the 'but' mood, yet it means distrustful rather than hostile. A suspicious person is the opposite of a trusting person, not an affable one."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "In antonym-in-context sentences, contrast words like 'but', 'while', or 'whereas' require an exact semantic opposite—not just any negative word."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Link 'antagonist' in literature (the character fighting the hero) to 'antagonistic' (hostile), the direct opposite of 'affable' (friendly)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Choose the opposite of 'amiable' in: 'The host was amiable, unlike his ___ guest.' (polite / hostile / quiet)",
+          "similarAnswer": "Hostile, because amiable means friendly and pleasant."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 176782,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0107",
+      "subject": "english",
+      "topic": "Antonyms",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In each sentence, choose the option that is most nearly opposite in meaning to the key word and that correctly fills the gap.\n\nI prefer the bustle of city to the ............... of the village.",
+      "options": [
+        {
+          "id": "a",
+          "text": "hustle",
+          "why": "Hustle means busy, energetic activity, which is a synonym of bustle, not its opposite.",
+          "whyWrong": "Because 'hustle and bustle' is a common pair, it is easy to pick hustle automatically. However, hustle means the same noisy busyness as bustle, whereas the question asks for the opposite."
+        },
+        {
+          "id": "b",
+          "text": "atmosphere",
+          "why": "Atmosphere is neutral and can describe either a noisy city or a quiet village.",
+          "whyWrong": "Atmosphere simply means the general mood or feeling of a place. It does not contrast with the noisy activity expressed by 'bustle'."
+        },
+        {
+          "id": "c",
+          "text": "surroundings",
+          "why": "Surroundings just means the environment around a place, not calmness.",
+          "whyWrong": "Surroundings refers to physical things around you in any location, city or village. It is not opposite in meaning to 'bustle'."
+        },
+        {
+          "id": "d",
+          "text": "tranquillity",
+          "why": "Bustle means busy, noisy activity, and tranquillity means calm peacefulness.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think of what makes a quiet village different from the busy, noisy movement of a big city.",
+      "explanation": "Bustle refers to busy, noisy, energetic activity. Its direct opposite in the contrast between city and village life is tranquillity—calmness and peaceful quiet.",
+      "trap": "Hustle is a classic trap because 'hustle and bustle' often appear together. That makes hustle a near-synonym of bustle, not its opposite.",
+      "mnemonic": "Bustle = Busy and loud; Tranquillity = Tranquil, calm, and quiet.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "City 'bustle' means lots of noise, crowds, and rushing around. The opposite of that in a village is peace and quiet, which is 'tranquillity'."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "We often hear the phrase 'hustle and bustle', so 'hustle' feels familiar right next to 'bustle'. But phrases like that pair words with similar meanings, while this question needs the opposite."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "In 'prefer X to Y' antonym items, check whether the candidate word reverses the exact quality of X rather than merely associating with it."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Think 'tranquil water' = still and calm; so 'tranquillity' is the still calm that contrasts with city bustle."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Choose the opposite of 'turmoil' in: 'After weeks of turmoil, the town finally enjoyed ___.' (chaos / serenity / noise)",
+          "similarAnswer": "Serenity, because turmoil means noisy confusion and serenity means peaceful calm."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 176717,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0083",
+      "subject": "english",
+      "topic": "Synonyms",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Choose the word or group of words nearest in meaning to the key word as used in the sentence.\n\nThe old man's condition deteriorated rapidly.",
+      "options": [
+        {
+          "id": "a",
+          "text": "improved",
+          "why": "Improved means got better, which is the opposite of deteriorated.",
+          "whyWrong": "Improved is an antonym, not a synonym, of deteriorated. When a patient's condition deteriorates, their health gets worse rather than better."
+        },
+        {
+          "id": "b",
+          "text": "worsened",
+          "why": "Deteriorated means became progressively worse, which matches worsened.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "changed",
+          "why": "Changed is too vague because it does not say whether the condition got better or worse.",
+          "whyWrong": "Although getting worse is a kind of change, 'changed' could also mean improved or shifted sideways. 'Worsened' captures the exact downward direction of 'deteriorated'."
+        },
+        {
+          "id": "d",
+          "text": "stabilized",
+          "why": "Stabilized means stopped changing and became steady, which opposes rapid decline.",
+          "whyWrong": "If a condition stabilized, it stopped getting worse or fluctuating and held steady. Deteriorated means it continued to decline."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "When doctors say a patient's condition is deteriorating, is the news good or bad?",
+      "explanation": "To deteriorate means to become progressively worse in quality, health, or state. Therefore, 'worsened' is the option nearest in meaning.",
+      "trap": "Changed looks safe because worsening is a change, yet it misses the crucial meaning of decline. Always pick the synonym that preserves the specific direction—upward or downward.",
+      "mnemonic": "Deteriorate = go Downhill = Worsen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "'Deteriorated' simply means got worse. So saying the old man's condition deteriorated rapidly means his health worsened quickly."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "'Changed' is too general: a patient's condition can change for the better or for the worse. 'Deteriorated' specifically tells us the change is for the worse, which matches 'worsened'."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "The best synonym preserves both the core meaning and the evaluative direction (positive vs. negative) of the original word."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "D-for-Deteriorate, D-for-Decline, D-for-Down: it always moves downward (worsens)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Choose the word nearest in meaning to 'aggravated' in: 'The delay aggravated the problem.' (solved / worsened / ignored)",
+          "similarAnswer": "Worsened, because to aggravate means to make a bad situation worse."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 176813,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0112",
+      "subject": "english",
+      "topic": "Synonyms",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Choose the word or group of words that is nearest in meaning to the key word as used in the sentence.\n\nThe headmaster advised his pupils to exhibit some amount of decorum.",
+      "options": [
+        {
+          "id": "a",
+          "text": "decency",
+          "why": "Decorum means proper, polite, and dignified behaviour, closest to decency.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "gentility",
+          "why": "Gentility refers to upper-class refinement or birth, whereas decorum means proper conduct.",
+          "whyWrong": "Gentility sounds formal and polite, so it is a tempting choice, yet it mainly refers to aristocratic status or polished social breeding. A headmaster asking pupils for decorum is asking for decency and proper behaviour."
+        },
+        {
+          "id": "c",
+          "text": "intellect",
+          "why": "Intellect means mental ability or cleverness, not good manners.",
+          "whyWrong": "Intellect relates to reasoning and academic intelligence. Decorum is about how pupils behave and conduct themselves, not how clever they are."
+        },
+        {
+          "id": "d",
+          "text": "smartness",
+          "why": "Smartness means neat appearance or quickness of mind, not polite conduct.",
+          "whyWrong": "Smartness can refer to neat dressing or cleverness, neither of which captures the moral and behavioural propriety meant by decorum."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about how a headmaster wants students to behave in public—orderly, respectful, and proper.",
+      "explanation": "Decorum means behaviour that follows accepted standards of politeness, propriety, and good taste. Among the options, 'decency' best expresses proper and respectful conduct.",
+      "trap": "Gentility looks attractive because it sounds polite and formal. However, gentility focuses on refined upper-class manners or status, while decorum in a school setting means orderly, decent behaviour.",
+      "mnemonic": "Decorum and Decency both start with DEC- and both mean proper, respectful behaviour.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Decorum means behaving properly and respectfully—showing good manners. 'Decency' is the closest match for proper behaviour here."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Gentility usually points to high social class or aristocratic polish rather than basic school discipline. Decorum is about respectful, proper conduct, which matches 'decency' better."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "Check the social context of the sentence: a headmaster advising pupils is talking about discipline and propriety (decency), not aristocratic breeding (gentility)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Match the shared root: DEC-orum = DEC-ency (both trace back to what is fitting and proper)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Choose the word nearest in meaning to 'propriety' in: 'Guests were expected to observe strict propriety.' (wealth / proper behaviour / silence)",
+          "similarAnswer": "Proper behaviour, because propriety—like decorum—means conforming to accepted standards of conduct."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 176748,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0085",
+      "subject": "english",
+      "topic": "Concord and grammar",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Choose the word or group of words that best completes the sentence.\n\nNeither the teacher nor the students ............... ready for the programme.",
+      "options": [
+        {
+          "id": "a",
+          "text": "is",
+          "why": "Is is singular, but the nearer subject 'the students' is plural.",
+          "whyWrong": "With 'neither ... nor', the verb does not always stay singular—it agrees with the subject closer to the verb. Since 'the students' is plural, singular 'is' is incorrect."
+        },
+        {
+          "id": "b",
+          "text": "are",
+          "why": "With 'neither ... nor', the verb agrees with the nearer subject 'the students', which is plural.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "was",
+          "why": "Was is singular, whereas the nearer subject 'the students' requires a plural verb.",
+          "whyWrong": "Even if the sentence were in the past tense, 'the students' is plural and would require 'were', not singular 'was'. The plural subject nearest the blank rules out 'was'."
+        },
+        {
+          "id": "d",
+          "text": "has",
+          "why": "Has is singular and cannot link directly to the adjective 'ready'.",
+          "whyWrong": "First, 'has' is singular while 'the students' is plural. Second, 'ready' is an adjective that needs a linking verb such as 'be' (are), not 'has'."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "With 'neither ... nor', look at the noun sitting right next to the blank: is 'students' singular or plural?",
+      "explanation": "Under the rule of proximity for 'neither ... nor' (and 'either ... or'), the verb agrees with the subject closest to it. Here, 'the students' is closest to the blank and is plural, so 'are' is required.",
+      "trap": "Many learners memorise that 'neither' is singular and automatically pick 'is'. That applies to 'neither of the students', not to 'neither X nor Y', where the nearer subject controls the verb.",
+      "mnemonic": "Neither/Nor obeys the Neighbour: match the verb to the noun right next to it.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When a sentence uses 'neither ... nor', check the noun closest to the verb. 'The students' is right before the blank and it is plural, so we use 'are'."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "It is true that 'neither' on its own takes a singular verb (as in 'Neither of them is ready'). But in 'neither A nor B', the verb matches B—here, plural 'the students'—so 'is' is wrong."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "Rule of proximity: in compound subjects joined by 'either ... or' or 'neither ... nor', the verb agrees in number with the nearer subject."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Neither/Nor checks its Next-door Neighbour: if the neighbour ('the students') is plural, the verb ('are') is plural."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Complete the sentence: 'Neither the students nor the teacher ___ ready for the programme.' (is / are)",
+          "similarAnswer": "'is', because the nearer subject ('the teacher') is now singular."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 176819,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0090",
+      "subject": "english",
+      "topic": "Concord and grammar",
+      "type": "recall",
+      "difficulty": 3,
+      "stem": "Choose the word or group of words that best completes the sentence.\n\nHe is one of the best players who ............... ever represented the school.",
+      "options": [
+        {
+          "id": "a",
+          "text": "has",
+          "why": "Has agrees with a singular subject, but 'who' refers to 'players' (plural), not 'one'.",
+          "whyWrong": "Many students match the verb to 'one' at the front, choosing 'has'. However, the relative clause 'who ... ever represented the school' modifies 'the best players', which is plural."
+        },
+        {
+          "id": "b",
+          "text": "have",
+          "why": "The relative pronoun 'who' refers to the plural noun 'players', requiring the plural verb 'have'.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "had",
+          "why": "Had shifts to past perfect tense, clashing with 'He is' and 'ever'.",
+          "whyWrong": "The main clause is in the present ('He is'), and 'ever represented' expresses experience up to the present. Using past perfect 'had' breaks that present-time link."
+        },
+        {
+          "id": "d",
+          "text": "is",
+          "why": "Is forms a passive meaning ('is represented'), which does not fit active 'represented the school'.",
+          "whyWrong": "First, 'is' is singular while 'players' is plural. Second, 'is represented' would mean someone represented the players, whereas the players are the ones doing the representing."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Ask yourself: who has ever represented the school—just 'one', or 'the best players' as a group?",
+      "explanation": "In the pattern 'one of the + plural noun + who/that + verb', the relative pronoun refers to the plural noun ('the best players'), not to 'one'. Because multiple best players have represented the school and he is one of them, the verb must be plural: 'have'.",
+      "trap": "Students see 'He' and 'one' earlier in the sentence and choose 'has'. Remember that a relative pronoun takes its number from the noun directly before it ('players'), unless 'the only one of...' is used.",
+      "mnemonic": "'One of the PLURALS who HAVE' — match 'who' to the plural noun right in front of it.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Read the sentence in two parts: many good players have represented the school, and he is one of them. Since 'who' stands for 'players', we say 'players who have'."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "You would use 'has' in 'One of the players HAS arrived' (no 'who' clause), or 'He is THE ONLY one of the players who HAS...'. Here, without 'only', 'who' refers to all 'the best players', so it takes 'have'."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "In 'one of the [plural noun] who/that + verb', the verb in the relative clause is plural because its antecedent is the plural noun; only 'the ONLY one of the [plural noun] who...' takes a singular verb."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Cover 'He is one of' with your thumb: you are left with 'the best players who ___ ever represented the school'—clearly 'have'!"
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Complete the sentence: 'She is the only one of the girls who ___ passed the test.' (has / have)",
+          "similarAnswer": "'has', because 'the only one' makes the singular 'one' the real focus of the relative clause."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 176829,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0089",
+      "subject": "english",
+      "topic": "Lexis and structure",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Choose the word or group of words that best completes the sentence.\n\nHardly had he arrived ............... the rain started.",
+      "options": [
+        {
+          "id": "a",
+          "text": "than",
+          "why": "Than pairs with 'no sooner', not with 'hardly'.",
+          "whyWrong": "'Than' is used after comparative forms such as 'no sooner ... than'. Pairing 'hardly' with 'than' is a common grammar error; 'hardly' requires 'when'."
+        },
+        {
+          "id": "b",
+          "text": "when",
+          "why": "Hardly and scarcely always pair with 'when' to link two closely timed past events.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "then",
+          "why": "Then is an adverb of sequence, not the correlative conjunction paired with 'hardly'.",
+          "whyWrong": "In casual speech people sometimes say 'then' to show the next event, but in standard formal grammar 'hardly ... when' is the fixed correlative structure."
+        },
+        {
+          "id": "d",
+          "text": "that",
+          "why": "That does not pair with 'hardly' to introduce the second clause.",
+          "whyWrong": "Unlike 'so ... that' or 'such ... that', the negative adverb 'hardly' does not take 'that' to mark time. It takes 'when'."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Two time expressions get mixed up here: 'No sooner ... than' versus 'Hardly ... ___'.",
+      "explanation": "In standard English, 'hardly' and 'scarcely' pair with 'when' ('Hardly had he arrived when the rain started'). By contrast, 'no sooner' contains a comparative (-er), so it pairs with 'than'.",
+      "trap": "Students constantly mix up 'Hardly ... when' and 'No sooner ... than' and choose 'than'. Check for a comparative word like 'sooner' before ever picking 'than'.",
+      "mnemonic": "Sooner has -er so it takes Than; Hardly/Scarcely take When.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Certain pairs in English always go together. 'Hardly' always partners with 'when' ('Hardly had he arrived when...'), while 'no sooner' partners with 'than'."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "'Than' belongs to comparisons—like 'taller than' or 'no sooner than'. Because 'hardly' is not a comparative word, it cannot take 'than'; it takes 'when'."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "Correlative time pairs: use 'Hardly/Scarcely/Barely ... when', and reserve 'No sooner ... than' for the comparative 'sooner'."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "No soonER -> Than (comparative pair). HardlY / Scarcely -> When (think 'W' for 'when' right after arrival)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Complete the sentence: 'No sooner had the bell rung ___ the pupils rushed out.' (when / than / then)",
+          "similarAnswer": "'than', because 'no sooner' is a comparative form."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 176827,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "engl-api-0123",
+      "subject": "english",
+      "topic": "Lexis and structure",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Choose the word or group of words that best completes each sentence.\n\nThe teacher punished the students with a view ............... them.",
+      "options": [
+        {
+          "id": "a",
+          "text": "to correct",
+          "why": "In 'with a view to', 'to' is a preposition, so it cannot take the bare verb 'correct'.",
+          "whyWrong": "Students often see 'to' and treat it like an infinitive ('to correct'). In the fixed phrase 'with a view to', however, 'to' is a preposition and must be followed by a gerund (-ing form)."
+        },
+        {
+          "id": "b",
+          "text": "to correcting",
+          "why": "'With a view to' ends in a preposition ('to'), so it takes the gerund 'correcting'.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "on correcting",
+          "why": "The fixed expression uses the preposition 'to', never 'on'.",
+          "whyWrong": "Although 'correcting' is the right verb form, the idiom is 'with a view to', not 'with a view on'. Changing the preposition breaks the standard expression."
+        },
+        {
+          "id": "d",
+          "text": "to have corrected",
+          "why": "This uses a perfect infinitive instead of the required gerund after the preposition 'to'.",
+          "whyWrong": "'To have corrected' refers to an action already completed before the punishment and treats 'to' as an infinitive marker. Here, 'with a view to' requires the -ing form 'correcting'."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Test if a noun fits after 'with a view to' (for example, 'with a view to improvement'). If a noun fits, you need the -ing noun form (gerund).",
+      "explanation": "In the expression 'with a view to', the word 'to' acts as a preposition, not part of a to-infinitive. Prepositions are followed by nouns or gerunds (-ing verbs), so the correct form is 'with a view to correcting'.",
+      "trap": "Nearly everyone is tempted by 'to correct' because 'to + base verb' feels natural. Whenever you see 'with a view to', 'look forward to', or 'be used to', test with a noun—if a noun works, use -ing.",
+      "mnemonic": "With a view TO + -ING: just like 'look forward TO seeing you'.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In 'with a view to', the word 'to' works like 'for' or 'about'—you put a noun or an -ing word after it. That is why we say 'with a view to correcting', not 'to correct'."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Normally 'to' goes before a base verb like 'to correct'. Here, 'to' is glued to 'with a view' as a preposition (meaning 'for the purpose of'), so the verb after it must end in -ing."
+        },
+        {
+          "id": "simpler",
+          "label": "Key grammar or usage rule",
+          "answer": "Phrases ending in the preposition 'to'—such as 'with a view to', 'look forward to', 'object to', and 'be accustomed to'—must be followed by a noun or gerund (-ing), never a bare infinitive."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Swap the verb for 'it': 'with a view to IT' makes sense, so 'to' is a preposition and demands '-ing' ('with a view to correcting')."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Complete the sentence: 'I look forward to ___ from you soon.' (hear / hearing)",
+          "similarAnswer": "'hearing', because 'to' in 'look forward to' is a preposition followed by a gerund."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 176773,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

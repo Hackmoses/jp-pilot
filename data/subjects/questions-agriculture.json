@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "subject": "agriculture",
+  "count": 12,
+  "questions": [
+    {
+      "id": "agri-api-0001",
+      "subject": "agriculture",
+      "topic": "Crop production",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which of the following plants is not a pasture grass?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pennisetum purpureum",
+          "why": "Pennisetum purpureum is elephant grass, a tall tropical pasture grass.",
+          "whyWrong": "Pennisetum purpureum is commonly known as elephant grass or Napier grass, and it belongs to the grass family (Poaceae). Because it is a true pasture grass, it cannot be the exception."
+        },
+        {
+          "id": "b",
+          "text": "Axonopus compressus",
+          "why": "Axonopus compressus is carpet grass, a low-growing pasture grass.",
+          "whyWrong": "Axonopus compressus is carpet grass, a creeping perennial pasture grass widely used for grazing and lawns. Even though it grows low to the ground instead of tall like elephant grass, it is still a true grass."
+        },
+        {
+          "id": "c",
+          "text": "Stylosanthes gracilis",
+          "why": "Stylosanthes gracilis (stylo) is a pasture legume, not a grass.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Panicum maximum",
+          "why": "Panicum maximum is guinea grass, a widely grown pasture grass.",
+          "whyWrong": "Panicum maximum is guinea grass, one of the most common tropical pasture grasses fed to ruminants. Since it is a grass, it is not the exception asked for."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Three of these botanical names belong to the grass family, while one is a protein-rich pasture legume.",
+      "explanation": "Stylosanthes gracilis, commonly called stylo, is a forage legume rather than a grass. Pennisetum purpureum (elephant grass), Axonopus compressus (carpet grass), and Panicum maximum (guinea grass) are all true pasture grasses.",
+      "trap": "Axonopus compressus (carpet grass) looks very different from tall tufted grasses like guinea grass, which can make it seem like the odd one out. Always check whether a forage species is a grass or a legume like stylo.",
+      "mnemonic": "Stylo = Legume, not Lawn or Pasture Grass (PG = Pennisetum, Panicum).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Pastures mix grasses for energy and legumes for protein. Elephant grass, carpet grass, and guinea grass are all grasses, while stylo (Stylosanthes gracilis) is a legume."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Axonopus compressus is carpet grass. Even though it spreads close to the ground, it is still a true member of the grass family, unlike Stylosanthes gracilis."
+        },
+        {
+          "id": "simpler",
+          "label": "List common pasture legumes",
+          "answer": "Besides Stylosanthes gracilis (stylo), common tropical pasture legumes include Centrosema pubescens (centro), Pueraria phaseoloides (tropical kudzu), and Calopogonium mucunoides (calopo)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which of these forage species is a pasture legume: Panicum maximum, Cynodon dactylon, or Centrosema pubescens?",
+          "similarAnswer": "Centrosema pubescens (centro), while the other two are guinea grass and Bermuda/star grass."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 154282,
+        "yearLabel": "2022"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0002",
+      "subject": "agriculture",
+      "topic": "Animal production and nutrition",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Vitamin K deficiency in farm animal causes",
+      "options": [
+        {
+          "id": "a",
+          "text": "night blindness",
+          "why": "Night blindness is caused by Vitamin A deficiency.",
+          "whyWrong": "Night blindness happens when the retina lacks visual pigments made from Vitamin A, not Vitamin K. Look for the vitamin role linked directly to blood."
+        },
+        {
+          "id": "b",
+          "text": "sterility in both sexes",
+          "why": "Reproductive sterility is associated with Vitamin E deficiency.",
+          "whyWrong": "Sterility and reproductive failure in livestock are classic signs of Vitamin E deficiency. Vitamin K works in the liver on blood proteins rather than reproductive organs."
+        },
+        {
+          "id": "c",
+          "text": "delayed blood clotting",
+          "why": "Vitamin K is required to make clotting factors, so its lack slows blood clotting.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "delayed ovulation",
+          "why": "Delayed ovulation is linked to hormonal or energy/mineral imbalances, not Vitamin K.",
+          "whyWrong": "Delayed ovulation usually points to hormonal disorders or overall energy, phosphorus, or Vitamin A/E deficits. It is not the signature symptom of Vitamin K deficiency."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Recall the fat-soluble vitamin nicknamed the coagulation vitamin.",
+      "explanation": "Vitamin K is essential for synthesizing prothrombin and other blood-clotting factors in the liver. When farm animals lack Vitamin K, minor cuts or internal bruises bleed longer because blood clots slowly.",
+      "trap": "Fat-soluble vitamin deficiencies get mixed up easily, especially Vitamin E (sterility) and Vitamin A (night blindness). Remember that K stands for 'Koagulation'—blood clotting.",
+      "mnemonic": "K for Koagulation (clotting); A for Eyes; E for Embryos/reproduction.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Your animal's blood needs Vitamin K to plug up cuts and stop bleeding. Without enough Vitamin K, blood takes too long to clot."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Sterility in males and females is a classic sign of Vitamin E deficiency, not Vitamin K. Vitamin K specifically helps blood clot."
+        },
+        {
+          "id": "simpler",
+          "label": "Where do livestock get Vitamin K?",
+          "answer": "Animals get Vitamin K from green leafy forages and from beneficial bacteria living in the gut, especially in ruminants."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Deficiency of which vitamin causes rickets and soft bones in young farm animals?",
+          "similarAnswer": "Vitamin D, because it is needed for calcium and phosphorus absorption."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 154291,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0004",
+      "subject": "agriculture",
+      "topic": "Agricultural economics and extension",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which extension teaching method reaches the largest number of farmers simultaneously?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Farm visits",
+          "why": "Farm visits are an individual method reaching one farmer or household at a time.",
+          "whyWrong": "Farm visits are individual extension contacts where an agent speaks with one farmer on their farm. They give deep personal advice, but they reach the smallest number of people at once."
+        },
+        {
+          "id": "b",
+          "text": "Method demonstration",
+          "why": "Method demonstrations are group methods limited to farmers who attend in person.",
+          "whyWrong": "A method demonstration shows a group of farmers how to carry out a skill, such as pruning or spraying. While it reaches more people than a single farm visit, it is still limited to whoever can gather in one place."
+        },
+        {
+          "id": "c",
+          "text": "Mass media (Radio/TV)",
+          "why": "Mass media broadcasts reach thousands or millions of farmers across wide areas at once.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Result demonstration",
+          "why": "Result demonstrations are group methods comparing outcomes on a local plot.",
+          "whyWrong": "Result demonstrations let a local group of farmers compare an improved practice against a traditional one over a season. Attendance is limited to nearby farmers who visit the demonstration plot."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Extension methods are grouped into individual, group, and mass contacts.",
+      "explanation": "Extension teaching methods fall into three reach tiers: individual (farm visits), group (method and result demonstrations), and mass (radio, television, and print). Mass media broadcasts reach the widest audience simultaneously at the lowest cost per farmer.",
+      "trap": "Method demonstrations teach many farmers together, which makes them sound large-scale. However, they are still group contacts and cannot match the simultaneous reach of radio or television.",
+      "mnemonic": "Individual = 1 farm, Group = 1 village demo, Mass = Radio/TV everywhere.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "An agent visiting farms talks to one farmer at a time, and a demo reaches one village group. A radio or TV programme speaks to farmers across whole regions at the exact same moment."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A method demonstration only reaches the group of farmers physically present at the training site. Radio and television reach far more farmers at the same time."
+        },
+        {
+          "id": "simpler",
+          "label": "Compare method vs result demos",
+          "answer": "A method demonstration shows how to do a practice step by step (like grafting), whereas a result demonstration shows proof that the practice works better (like comparing yields at harvest)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which extension teaching method gives the highest individual feedback between an agent and a single farmer?",
+          "similarAnswer": "Farm and home visits (individual contact method)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 55315,
+        "yearLabel": "1989"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0012",
+      "subject": "agriculture",
+      "topic": "Soil science",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which nutrient is considered a macronutrient essential for plant growth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iron",
+          "why": "Iron is a micronutrient needed only in trace quantities.",
+          "whyWrong": "Iron is essential for making chlorophyll, yet plants need it in very small trace amounts. That makes iron a micronutrient rather than a macronutrient."
+        },
+        {
+          "id": "b",
+          "text": "Zinc",
+          "why": "Zinc is a micronutrient required in trace amounts for enzyme activity.",
+          "whyWrong": "Zinc activates plant enzymes and growth hormones, but crops require only tiny quantities of it. It belongs to the micronutrient (trace element) group."
+        },
+        {
+          "id": "c",
+          "text": "Nitrogen",
+          "why": "Nitrogen is a primary macronutrient needed in large amounts for leaves and proteins.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Copper",
+          "why": "Copper is a micronutrient needed in minute amounts.",
+          "whyWrong": "Copper helps in plant respiration and enzyme function, but only trace amounts are needed. Excess copper actually harms plants, confirming it is a micronutrient."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "b"
+      ],
+      "hint": "Think of the three main letters printed on every NPK fertilizer bag.",
+      "explanation": "Plant macronutrients are elements required in large quantities, led by the primary macronutrients nitrogen (N), phosphorus (P), and potassium (K), along with calcium, magnesium, and sulfur. Iron, zinc, and copper are all micronutrients needed in trace amounts.",
+      "trap": "Because iron deficiency causes noticeable leaf yellowing (chlorosis), students sometimes assume iron is a macronutrient. Importance does not equal quantity—iron is still a trace element.",
+      "mnemonic": "Macronutrients = N-P-K + Ca-Mg-S; Micronutrients = Fe, Zn, Cu, Mn, B, Mo, Cl.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Plants need huge amounts of nitrogen (the N in NPK fertilizer) to grow green leaves, so it is a macronutrient. Iron, zinc, and copper are only needed in tiny pinches."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Iron is vital for green leaves, so its shortage shows up fast, but plants still only need a tiny trace of it compared to nitrogen. Only nutrients needed in large amounts are macronutrients."
+        },
+        {
+          "id": "simpler",
+          "label": "What are the 6 soil macronutrients?",
+          "answer": "The three primary macronutrients are nitrogen (N), phosphorus (P), and potassium (K); the three secondary macronutrients are calcium (Ca), magnesium (Mg), and sulfur (S)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which of these is a plant micronutrient: phosphorus, magnesium, or manganese?",
+          "similarAnswer": "Manganese, because phosphorus and magnesium are macronutrients."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 125975,
+        "yearLabel": "1997"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0015",
+      "subject": "agriculture",
+      "topic": "Animal production and nutrition",
+      "type": "recall",
+      "difficulty": 3,
+      "stem": "What is the term for the period when a female animal is not receptive to mating?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oestrus",
+          "why": "Oestrus is the heat period when the female is receptive to mating.",
+          "whyWrong": "Oestrus (heat) is the exact opposite—it is the fertile window when the female stands to be mounted and accepts mating. The question asks for the non-receptive period."
+        },
+        {
+          "id": "b",
+          "text": "Anoestrus",
+          "why": "Anoestrus is the sexually inactive period when the female shows no oestrus and rejects mating.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Proestrus",
+          "why": "Proestrus is the short preparatory phase just before oestrus begins.",
+          "whyWrong": "Proestrus is the brief follicle-ripening phase immediately before heat, when reproductive hormones are rising toward oestrus. The standard term for the state of not cycling or not being receptive to mating is anoestrus."
+        },
+        {
+          "id": "d",
+          "text": "Estrous",
+          "why": "Estrous is an adjective describing the reproductive cycle, not the non-receptive phase.",
+          "whyWrong": "Estrous is the adjective used in phrases like 'estrous cycle' or 'estrous behaviour'. It does not name the period when mating receptivity is absent."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Look at the prefix that means 'without' or 'not' placed in front of oestrus.",
+      "explanation": "In livestock reproduction, oestrus is the period of sexual receptivity (heat), while the prefix 'an-' means without. Anoestrus therefore describes the resting or inactive phase—such as during pregnancy, lactation, or poor nutrition—when a female does not come into heat or accept mating.",
+      "trap": "Proestrus occurs right before heat, so students may pick it because the female is not yet receptive. However, anoestrus is the specific term for the non-cycling, non-receptive period.",
+      "mnemonic": "An-oestrus = 'A-no' to mating (the 'an-' prefix means without heat).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Oestrus means a female animal is in heat and ready to mate. Put 'an-' in front—anoestrus—and it means she is not in heat and will not accept a male."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Proestrus is only the quick warm-up stage right before heat begins. Anoestrus is the actual resting period when oestrus is absent and the female is not receptive."
+        },
+        {
+          "id": "simpler",
+          "label": "What causes anoestrus on farms?",
+          "answer": "Normal anoestrus happens during pregnancy or right after birth, while abnormal anoestrus often comes from underfeeding, mineral deficiency, heat stress, or disease."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the period of sexual receptivity ('heat') in female farm animals called?",
+          "similarAnswer": "Oestrus."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 127397,
+        "yearLabel": "1997"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0017",
+      "subject": "agriculture",
+      "topic": "Animal production and nutrition",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A facility used for the artificial hatching of fish eggs is called a:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pond",
+          "why": "Ponds are outdoor water bodies used mainly for rearing and growing out fish.",
+          "whyWrong": "Ponds are used to culture and grow fingerlings to market size rather than for controlled artificial egg incubation. Leaving delicate eggs in an open pond exposes them to predators and poor water quality."
+        },
+        {
+          "id": "b",
+          "text": "Hatchery",
+          "why": "A hatchery is built specifically to incubate and hatch fertilized fish eggs under controlled conditions.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Aquarium",
+          "why": "An aquarium is a tank for keeping or displaying live aquatic organisms, not an incubation facility.",
+          "whyWrong": "An aquarium is mainly for ornamental display or small-scale observation of live fish. It lacks the specialized spawning trays, aeration lines, and incubation troughs of a commercial hatchery."
+        },
+        {
+          "id": "d",
+          "text": "Silo",
+          "why": "A silo is a storage structure for dry grains or silage, not fish.",
+          "whyWrong": "Silos are tall structures on crop and livestock farms used to store harvested grain or fermented silage fodder. They have nothing to do with fish breeding."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "The same word is used in poultry farming for the building where eggs are incubated.",
+      "explanation": "A fish hatchery provides controlled water temperature, oxygen, and clean flow so fertilized fish eggs can hatch safely and survive to the fry stage. Afterward, the young fish are transferred to nursery or grow-out ponds.",
+      "trap": "Because almost all fish farming is associated with fish ponds, students often jump straight to 'Pond'. Ponds are for rearing young and adult fish, whereas artificial egg hatching takes place in a hatchery.",
+      "mnemonic": "Eggs hatch in a Hatchery; fish grow fat in a Pond.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Just as chicks hatch in a poultry hatchery before moving to a coop, fish eggs are hatched safely indoors in a fish hatchery before moving to a pond."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Fish ponds are for growing fish to table size. Open ponds have frogs, insects, and shifting temperatures that kill eggs, so farmers hatch eggs inside a controlled hatchery first."
+        },
+        {
+          "id": "simpler",
+          "label": "What are young hatched fish called?",
+          "answer": "Newly hatched fish are called larvae or fry; once they grow larger and develop scales and fins, they are called fingerlings and stocked into grow-out ponds."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the term for young fish about the size of a finger ready for stocking into grow-out ponds?",
+          "similarAnswer": "Fingerlings."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 55085,
+        "yearLabel": "2000"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0021",
+      "subject": "agriculture",
+      "topic": "Crop protection and pests",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which pest management strategy involves the use of natural predators?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cultural control",
+          "why": "Cultural control modifies farming practices such as crop rotation and planting dates.",
+          "whyWrong": "Cultural control uses routine agronomic practices—like crop rotation, clean weeding, and early planting—to make the field less favourable to pests. It does not involve releasing or using natural predators."
+        },
+        {
+          "id": "b",
+          "text": "Mechanical control",
+          "why": "Mechanical control relies on physical tools, traps, barriers, or handpicking.",
+          "whyWrong": "Mechanical (or physical) control uses direct force or equipment such as traps, scarecrows, nets, or handpicking to remove pests. It does not rely on living predators."
+        },
+        {
+          "id": "c",
+          "text": "Biological control",
+          "why": "Biological control uses living organisms—predators, parasites, or pathogens—to suppress pests.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Chemical control",
+          "why": "Chemical control uses synthetic or natural pesticides to kill pests.",
+          "whyWrong": "Chemical control relies on spraying insecticides, herbicides, or fungicides rather than using living enemies. In fact, broad chemical sprays often harm the natural predators used in biological control."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "b"
+      ],
+      "hint": "Using one living organism to keep another living pest in check falls under 'bio-'.",
+      "explanation": "Biological control uses natural enemies—such as ladybird beetles eating aphids, cats hunting farm rodents, or parasitic wasps—to reduce pest populations below damaging levels without relying on toxic chemicals.",
+      "trap": "The word 'natural' can tempt students toward 'Cultural control', confusing traditional farming habits with nature. Remember that living predators and parasites always mean biological control.",
+      "mnemonic": "Bio = living beings eating pests (ladybirds vs aphids).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Biological control fights pests with living creatures—like using ladybirds to eat aphids or owls to catch field rats—instead of spraying chemicals."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Cultural control means changing how you farm, such as rotating crops or burning infected crop residues. Using living predators to eat pests is always biological control."
+        },
+        {
+          "id": "simpler",
+          "label": "Give examples of cultural control",
+          "answer": "Common cultural controls include crop rotation, adjusting planting dates, proper spacing, timely weeding, and clearing crop residues after harvest."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Handpicking caterpillars off cabbage leaves and setting rat traps are examples of which pest control method?",
+          "similarAnswer": "Mechanical (or physical) control."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 127006,
+        "yearLabel": "2005"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0022",
+      "subject": "agriculture",
+      "topic": "Crop production",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which irrigation method is characterized by delivering water directly to the root zone of plants?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surface Irrigation",
+          "why": "Surface irrigation flows water across the soil surface by gravity in furrows or basins.",
+          "whyWrong": "Surface irrigation lets water flow over the ground through furrows or borders, wetting large areas between crop rows. Much of the water is lost to evaporation and deep percolation rather than targeted straight to each root zone."
+        },
+        {
+          "id": "b",
+          "text": "Drip Irrigation",
+          "why": "Drip irrigation releases water slowly through emitters right at each plant's root zone.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Flood Irrigation",
+          "why": "Flood irrigation covers the entire field surface with standing water.",
+          "whyWrong": "Flood irrigation submerges the whole field surface, as in paddy rice cultivation. It uses huge volumes of water instead of precision delivery to the root zone."
+        },
+        {
+          "id": "d",
+          "text": "Sprinkler Irrigation",
+          "why": "Sprinkler irrigation sprays water into the air like rain over both crops and bare soil.",
+          "whyWrong": "Sprinkler irrigation sprays water overhead across the canopy and soil surface, mimicking rainfall. Some water evaporates in the air or wets weeds between rows instead of going straight to the roots."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Think of the water-saving system that uses narrow pipes and tiny emitters beside each stem.",
+      "explanation": "Drip (or trickle) irrigation delivers water drop by drop through narrow tubing and emitters positioned right at the base of each plant. Because water enters directly into the root zone, losses from evaporation, runoff, and weed growth are minimized.",
+      "trap": "Sprinkler irrigation is another modern pressurized system, so students sometimes confuse the two. Sprinklers rain water over the whole crop area, whereas only drip irrigation targets the root zone drop by drop.",
+      "mnemonic": "Drip = Drops Direct to the Roots.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Drip irrigation runs thin hoses along the crop rows with tiny holes next to each plant, dripping water straight onto the soil above the roots without wasting a drop."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Sprinklers throw water into the air like artificial rain, wetting leaves and pathways too. Drip irrigation sends water straight to the root zone at the base of the plant."
+        },
+        {
+          "id": "simpler",
+          "label": "Where is drip irrigation best used?",
+          "answer": "Drip irrigation is ideal for dry regions, high-value horticultural crops like tomatoes and peppers, orchards, and sandy soils where water drains quickly."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which irrigation method imitates natural rainfall by spraying water overhead through nozzles?",
+          "similarAnswer": "Sprinkler irrigation."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 114178,
+        "yearLabel": "2008"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0024",
+      "subject": "agriculture",
+      "topic": "Agricultural ecology",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What ecological effect can overgrazing have on agricultural lands?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increased biodiversity",
+          "why": "Overgrazing reduces plant species diversity rather than increasing it.",
+          "whyWrong": "When livestock graze pasture too heavily, palatable plant species disappear and only tough weeds or bare soil remain. That lowers biodiversity instead of increasing it."
+        },
+        {
+          "id": "b",
+          "text": "Soil erosion",
+          "why": "Stripping grass cover and trampling soil exposes topsoil to wind and rain erosion.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Improved crop yields",
+          "why": "Overgrazing degrades soil structure and fertility, hurting later crop yields.",
+          "whyWrong": "Overgrazing compacts the topsoil and removes protective organic cover, making the land poorer for future crops. It lowers productivity rather than improving yields."
+        },
+        {
+          "id": "d",
+          "text": "Water retention",
+          "why": "Overgrazing compacts soil and speeds up runoff, reducing water retention.",
+          "whyWrong": "Without grass roots and plant litter to slow down rain, water runs off compacted pasture instead of soaking into the soil. Overgrazing therefore reduces water retention."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "What happens to bare topsoil when livestock eat all the grass cover and trample the ground?",
+      "explanation": "Overgrazing strips away the vegetative cover that shields soil from raindrops and wind, while heavy hooves compact the surface. Rainwater then runs off rapidly instead of soaking in, washing away fertile topsoil in severe soil erosion.",
+      "trap": "Students sometimes think livestock hooves pressing the soil down helps hold water, choosing 'Water retention'. In reality, compaction blocks water entry and triggers runoff and erosion.",
+      "mnemonic": "Overgrazing = No grass cover + Hard hooves = Soil washes away (Erosion).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Grass roots hold soil in place like a net. When too many animals eat all the grass down to bare earth, rain and wind easily wash and blow the topsoil away."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Trampled, bare soil actually repels rainwater so it rushes off the surface instead of soaking in. That loss of vegetation and soaking capacity leads to soil erosion, not water retention."
+        },
+        {
+          "id": "simpler",
+          "label": "How do farmers prevent overgrazing?",
+          "answer": "Farmers prevent overgrazing by practising rotational grazing (moving animals between paddocks), matching stocking rate to pasture carrying capacity, and providing supplementary feed in dry seasons."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which grazing management practice moves livestock regularly between fenced paddocks so grass can recover?",
+          "similarAnswer": "Rotational grazing."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 126619,
+        "yearLabel": "2009"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0025",
+      "subject": "agriculture",
+      "topic": "Agricultural ecology",
+      "type": "recall",
+      "difficulty": 3,
+      "stem": "A system of farming where food crops are grown alongside forest trees during the early years of the plantation is the:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crop rotation",
+          "why": "Crop rotation grows different arable crops sequentially on the same land, not with forest trees.",
+          "whyWrong": "Crop rotation changes arable crops from season to season on the same plot to break pest cycles and balance nutrients. It does not involve establishing a forest tree plantation."
+        },
+        {
+          "id": "b",
+          "text": "Mixed farming",
+          "why": "Mixed farming combines raising crops and keeping livestock on the same farm.",
+          "whyWrong": "Mixed farming integrates crop cultivation with animal husbandry on the same farm so manure feeds crops and crop residues feed livestock. It does not specifically describe growing food crops inside a young forest plantation."
+        },
+        {
+          "id": "c",
+          "text": "Taungya system",
+          "why": "In the Taungya system, farmers grow food crops between young forest tree seedlings until canopy closure.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Agroforestry",
+          "why": "Agroforestry is the broad umbrella term, whereas Taungya specifically refers to cropping during early plantation establishment.",
+          "whyWrong": "Agroforestry covers all systems that combine trees with crops or livestock, such as alley cropping and shelterbelts. However, the specific textbook term for growing food crops only during the early years of a forest plantation before the canopy closes is the Taungya system."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Look for the specific named agroforestry system used when establishing new timber plantations.",
+      "explanation": "The Taungya system allows farmers to cultivate short-term food crops like maize, yam, or cassava in the open spaces between newly planted forest tree seedlings. Once the trees grow tall enough for their canopy to shade the ground, food cropping stops and the land becomes a pure forest stand.",
+      "trap": "Agroforestry looks right because Taungya is indeed a type of agroforestry. Always pick 'Taungya system' when the question mentions growing food crops specifically during the early years of a forest plantation.",
+      "mnemonic": "Taungya = Trees + Arable food crops while the Timber is Tiny.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When new forest trees are still tiny, there is plenty of sunny space between them. Under the Taungya system, farmers grow food crops in those gaps for the first few years until the trees grow big and shade the soil."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Agroforestry is the general family name for mixing trees and farming. Taungya is the exact system where food crops share land with forest seedlings only during the plantation's early years."
+        },
+        {
+          "id": "simpler",
+          "label": "Why do forestry departments use Taungya?",
+          "answer": "As farmers weed and tend their food crops, they automatically weed and protect the young forest trees at little cost, while producing food for local communities."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the farming system that combines growing crops and rearing livestock on the same farm called?",
+          "similarAnswer": "Mixed farming."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 55475,
+        "yearLabel": "2009"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0026",
+      "subject": "agriculture",
+      "topic": "Soil science",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The process of downward movement of nutrients beyond the root zone by water is called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Percolation",
+          "why": "Percolation is the downward movement of water itself through soil pores, not specifically nutrients.",
+          "whyWrong": "Percolation describes water moving downward through saturated soil layers under gravity. While percolating water carries dissolved salts, the specific loss of nutrients below the root zone is called leaching."
+        },
+        {
+          "id": "b",
+          "text": "Infiltration",
+          "why": "Infiltration is the entry of surface water into the topsoil.",
+          "whyWrong": "Infiltration happens right at the ground surface when rainwater or irrigation soaks into the soil. It refers to water entering the soil, not nutrients washing past the roots."
+        },
+        {
+          "id": "c",
+          "text": "Leaching",
+          "why": "Leaching is the washing down of soluble nutrients below the crop root zone by water.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Erosion",
+          "why": "Erosion is the physical wearing away and transport of topsoil across the surface.",
+          "whyWrong": "Erosion removes entire soil particles across the surface using wind or flowing water. Nutrients lost downward inside the soil profile are lost through leaching, not erosion."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "b"
+      ],
+      "hint": "Think of rainwater dissolving nitrates and washing them deeper than crop roots can reach.",
+      "explanation": "Leaching occurs when heavy rainfall or over-irrigation dissolves soluble plant nutrients—such as nitrates—and carries them downward beyond the crop root zone. It is most severe in porous sandy soils and leaves crops nutrient-deficient.",
+      "trap": "Percolation and leaching both describe downward movement in soil. Remember the difference: water percolates downward, whereas dissolved nutrients leach downward out of reach of roots.",
+      "mnemonic": "Water Percolates; Nutrients Leach below the roots.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When heavy rain soaks deep into loose soil, it dissolves plant food like nitrogen and washes it too far down for roots to reach. That nutrient loss is called leaching."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Percolation means the water itself trickling down through soil spaces. When the question asks about nutrients being washed below the root zone, the exact term is leaching."
+        },
+        {
+          "id": "simpler",
+          "label": "How can farmers reduce leaching?",
+          "answer": "Adding organic matter (compost or manure), splitting fertilizer applications into smaller doses, growing cover crops, and avoiding over-irrigation all reduce nutrient leaching."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which soil texture is most prone to rapid nutrient leaching: clay, loam, or sand?",
+          "similarAnswer": "Sand, because its large pores let water drain rapidly."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 55737,
+        "yearLabel": "2010"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "agri-api-0041",
+      "subject": "agriculture",
+      "topic": "Crop production",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which type of cropping involves growing multiple crops simultaneously?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mono cropping",
+          "why": "Mono cropping grows only a single crop species on a piece of land at a time.",
+          "whyWrong": "The prefix 'mono-' means one, so mono cropping is planting just one crop species across a field. Growing multiple crops at the same time is the opposite."
+        },
+        {
+          "id": "b",
+          "text": "Mixed cropping",
+          "why": "Mixed cropping grows two or more crops on the same piece of land at the same time.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Relay cropping",
+          "why": "Relay cropping plants a second crop shortly before the first is harvested, so their cycles only overlap briefly.",
+          "whyWrong": "In relay cropping, the second crop is sown into a standing first crop shortly before harvest, like passing a baton in a relay race. The two crops share the field only during that brief overlap rather than growing together throughout the season."
+        },
+        {
+          "id": "d",
+          "text": "Sequential cropping",
+          "why": "Sequential cropping grows crops one after another in the same year, not at the same time.",
+          "whyWrong": "Sequential cropping means harvesting the first crop completely before planting the next one in the same field. Because they are grown one after another, they do not grow simultaneously."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Distinguish between crops growing together on the field at once versus one after another.",
+      "explanation": "Mixed cropping is the cultivation of two or more crops—such as maize and cowpea—simultaneously on the same plot during the same growing season. It reduces total crop failure risk, improves soil cover, and makes better use of nutrients and sunlight.",
+      "trap": "Relay cropping involves two crops on the same plot for a short overlap, which makes it look similar. Remember that relay cropping passes the land like a baton near harvest, whereas mixed cropping grows multiple crops together simultaneously.",
+      "mnemonic": "Mixed = Multiple crops together; Sequential = one after another; Relay = hand-off near harvest.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If you plant maize and beans together on the same farm during the same rainy season, that is mixed cropping—two crops sharing the field at once."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Relay cropping only overlaps two crops briefly at the end of the first crop's life, just like a relay runner handing over a baton. Mixed cropping grows multiple crops side by side from the start."
+        },
+        {
+          "id": "simpler",
+          "label": "Why do farmers use mixed cropping?",
+          "answer": "If one crop fails due to pests or drought, the farmer can still harvest the other crop, and combining a cereal with a legume helps maintain soil fertility."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the practice of growing a single crop species on the same piece of land year after year called?",
+          "similarAnswer": "Monoculture (or continuous mono cropping)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 125317,
+        "yearLabel": "2021"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

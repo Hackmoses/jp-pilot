@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "count": 2,
+  "animations": [
+    {
+      "id": "anim-comm-api-0020",
+      "questionId": "comm-api-0020",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Initial = £2,000 × ₦600 = ₦1,200,000",
+          "tag": "initial value",
+          "narration": "First find the initial value in naira. Multiply 2,000 pounds by 600 naira to get 1,200,000 naira."
+        },
+        {
+          "n": 2,
+          "display": "New = £2,000 × ₦620 = ₦1,240,000",
+          "tag": "new value",
+          "narration": "Next find the new value at the higher rate. Multiply 2,000 pounds by 620 naira to get 1,240,000 naira."
+        },
+        {
+          "n": 3,
+          "display": "Increase = ₦1,240,000 − ₦1,200,000 = ₦40,000",
+          "tag": "difference",
+          "narration": "Subtract the initial value from the new value. 1,240,000 minus 1,200,000 leaves an increase of 40,000 naira."
+        },
+        {
+          "n": 4,
+          "display": "Check: £2,000 × (₦620 − ₦600) = ₦40,000",
+          "tag": "quick check",
+          "narration": "As a quick check, multiply 2,000 pounds by the 20 naira rate rise. That also gives 40,000 naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-comm-api-0024",
+      "questionId": "comm-api-0024",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Capital = 5,000 × ₦20 = ₦100,000",
+          "tag": "share value",
+          "narration": "First find the total value of the preference shares. Multiply 5,000 shares by 20 naira each to get 100,000 naira."
+        },
+        {
+          "n": 2,
+          "display": "Dividend = 8% of ₦100,000",
+          "tag": "apply rate",
+          "narration": "Now take 8 percent of the total share value of 100,000 naira."
+        },
+        {
+          "n": 3,
+          "display": "(8 ÷ 100) × ₦100,000 = ₦8,000",
+          "tag": "payout",
+          "narration": "Eight hundredths of 100,000 is 8,000. So the annual dividend payout is 8,000 naira."
+        }
+      ]
+    }
+  ]
+}

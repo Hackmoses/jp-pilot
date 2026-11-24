@@ -1,0 +1,817 @@
+{
+  "version": 1,
+  "subject": "biology",
+  "count": 10,
+  "questions": [
+    {
+      "id": "biol-api-0167",
+      "subject": "biology",
+      "topic": "Cell biology",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A plant cell was placed in a concentrated sugar solution. After some time, the cell membrane pulled away from the cell wall. This condition is known as",
+      "options": [
+        {
+          "id": "a",
+          "text": "Turgidity",
+          "why": "Turgidity happens when a cell takes in water and swells, not when it shrinks.",
+          "whyWrong": "Turgidity occurs when a plant cell is placed in pure water or a dilute solution and absorbs water by osmosis. The swollen vacuole pushes the cell membrane tightly against the cell wall instead of pulling away from it."
+        },
+        {
+          "id": "b",
+          "text": "Plasmolysis",
+          "why": "Water leaves the cell by osmosis into the concentrated solution, so the membrane pulls away from the wall.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Diffusion",
+          "why": "Diffusion is general particle movement down a concentration gradient, not this cell shrinkage.",
+          "whyWrong": "Diffusion describes the net movement of solute or gas molecules from higher to lower concentration. Although osmosis is a special case of water movement across a membrane, the resulting shrinkage of the plant protoplast away from the cell wall is specifically called plasmolysis."
+        },
+        {
+          "id": "d",
+          "text": "Imbibition",
+          "why": "Imbibition is water uptake by dry solids like seeds, not water loss from a cell.",
+          "whyWrong": "Imbibition is the absorption of water by dry hydrophilic materials, such as dry seeds swelling when soaked before germination. Here the living cell is losing water to a concentrated sugar solution, which causes shrinkage rather than swelling."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Think about which direction water moves by osmosis when the outside sugar solution is more concentrated than the cell sap.",
+      "explanation": "A concentrated sugar solution has a lower water potential than the plant cell sap, so water moves out of the cell by osmosis across the semi-permeable cell membrane. As the vacuole and cytoplasm shrink, the cell membrane pulls away from the rigid cell wall, a condition called plasmolysis.",
+      "trap": "Turgidity sounds like another classic plant water-relations term, so students often mix the two up. Remember that turgid cells are full and firm from taking in water, whereas plasmolysed cells have lost water and shrunk.",
+      "mnemonic": "Plasmolysis = Plasma membrane Pulls away.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Strong sugar water pulls water out of the plant cell. The soft inside of the cell shrinks like a deflating balloon and pulls away from its stiff outer box, the cell wall."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Turgidity is the opposite state. A cell becomes turgid when water enters it in a dilute solution, pressing the membrane firmly against the cell wall."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "In a hypertonic (concentrated) solution, water leaves a plant cell by osmosis, shrinking the protoplast so the plasma membrane detaches from the cell wall. That condition is plasmolysis."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Link the letter P in Plasmolysis with 'Pulls away' from the cell wall, and T in Turgidity with 'Tight and full'."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What happens to a plasmolysed plant cell when it is quickly transferred into distilled water?",
+          "similarAnswer": "Water enters by osmosis and the cell recovers its turgor (deplasmolysis)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 175386,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "biol-api-0127",
+      "subject": "biology",
+      "topic": "Genetics & heredity",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Haemophilia is more common in males because the gene is",
+      "options": [
+        {
+          "id": "a",
+          "text": "Y-linked dominant",
+          "why": "Haemophilia genes sit on the X chromosome, and affected fathers do not pass them to sons.",
+          "whyWrong": "If the gene were Y-linked, an affected father would pass it to every one of his sons and females would not carry it. In reality, haemophilia is carried on the X chromosome, so sons inherit the allele from their mothers."
+        },
+        {
+          "id": "b",
+          "text": "X-linked recessive",
+          "why": "Males have only one X chromosome, so a single recessive allele on it causes haemophilia.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "autosomal dominant",
+          "why": "Autosomal traits occur on non-sex chromosomes and affect both sexes roughly equally.",
+          "whyWrong": "Autosomal genes are located on chromosomes 1 to 22, which both males and females inherit in pairs. An autosomal dominant condition therefore appears in males and females at similar rates rather than predominantly in males."
+        },
+        {
+          "id": "d",
+          "text": "carried only on mitochondria",
+          "why": "Mitochondrial traits pass from mothers to both sons and daughters alike, not mostly males.",
+          "whyWrong": "Mitochondrial DNA is inherited from the mother by all of her children, regardless of sex. Haemophilia is caused by nuclear genes on the X chromosome that code for blood clotting factors."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Compare the sex chromosomes of males (XY) and females (XX) when a trait is carried on the X chromosome.",
+      "explanation": "Haemophilia is controlled by a recessive allele on the X chromosome. Because males are XY and have only one X chromosome, inheriting one recessive allele is enough to express the condition, whereas XX females need two recessive alleles (one from each parent) to show it rather than just being carriers.",
+      "trap": "Seeing 'more common in males' often tricks students into picking Y-linked. Haemophilia is X-linked recessive, which is why mothers pass it to sons while fathers pass their Y chromosome to sons.",
+      "mnemonic": "XY males have No backup X for X-linked recessive traits.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Women have two X chromosomes, so one healthy X can cover up a faulty haemophilia gene. Men only have one X chromosome (their other is Y), so if that single X carries the faulty gene, they get haemophilia."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A Y-linked trait would pass straight from father to every son and could not be carried by women. Haemophilia is carried on the X chromosome, so carrier mothers pass it to their sons."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "For X-linked recessive conditions like haemophilia and red-green colour blindness, males are affected more often because they have only one X chromosome (hemizygous)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Remember: X-linked recessive = eXtra risk for XY males, because Y does not carry a matching clotting gene."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If a carrier mother (XᴴXʰ) and an unaffected father (XᴴY) have a son, what is the probability that the son has haemophilia?",
+          "similarAnswer": "50% (1 in 2), because the son gets Y from his father and has an equal chance of getting Xᴴ or Xʰ from his mother."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 188752,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "biol-api-0174",
+      "subject": "biology",
+      "topic": "Ecology",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A forest ecosystem contains green plants, caterpillars, grasshoppers, birds, snakes, hawks, fungi and bacteria. The green plants form the base of several food chains within the ecosystem.\n\nIn a community, organisms occupy different feeding levels and depend on one another for food. If all the producers were suddenly removed, which group would be affected first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decomposers",
+          "why": "Decomposers feed on dead organic matter from all levels, so they do not starve first.",
+          "whyWrong": "Fungi and bacteria break down dead leaves, wood and animal remains from every trophic level. Even if living plants vanish, dead organic material remains in the forest for a while, so decomposers are not the first group to lose food."
+        },
+        {
+          "id": "b",
+          "text": "Primary consumers",
+          "why": "Primary consumers eat producers directly, so their food disappears immediately.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Secondary consumers",
+          "why": "Secondary consumers eat primary consumers, so they feel the loss a step later.",
+          "whyWrong": "Secondary consumers such as insect-eating birds depend on herbivores like caterpillars and grasshoppers. They still have prey to eat until the primary consumer population begins to fall."
+        },
+        {
+          "id": "d",
+          "text": "Tertiary consumers",
+          "why": "Tertiary consumers sit higher up the food chain and are affected after lower levels decline.",
+          "whyWrong": "Tertiary consumers such as snakes and hawks feed on secondary or primary consumers higher up the food web. Because energy and food pass upward step by step, the impact reaches them after the herbivores."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Ask yourself which animals feed directly on the green plants listed in the ecosystem.",
+      "explanation": "Green plants are the producers at the base of the food chain. Primary consumers (herbivores like caterpillars and grasshoppers) feed directly on those plants, so removing producers cuts off their food supply first, before predators higher up the chain are affected.",
+      "trap": "Decomposers are mentioned in the list (fungi and bacteria), so some students pick them thinking they sit close to plants. However, decomposers feed on dead organic matter across all levels, whereas primary consumers rely directly on living producers.",
+      "mnemonic": "Producers feed Primary consumers first, then Secondary, then Tertiary.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Caterpillars and grasshoppers eat plants directly. If the plants disappear, the plant-eaters run out of food straight away, before the birds, snakes and hawks that eat them."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Decomposers (fungi and bacteria) break down dead remains from all organisms. They do not depend directly on living plants the way caterpillars and grasshoppers do."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "In a food chain, energy flows from producers to primary consumers, then to secondary and tertiary consumers. Any collapse at the producer level hits primary consumers (herbivores) first."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Follow the feeding order: Plants (Producers) -> Plant-eaters (Primary) -> Predators (Secondary and Tertiary). Who touches the plants first gets hit first."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In the food chain grass -> grasshopper -> frog -> snake, which organism is the secondary consumer?",
+          "similarAnswer": "The frog, because it eats the grasshopper (the primary consumer)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 175407,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "biol-api-0169",
+      "subject": "biology",
+      "topic": "Nutrition",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which of the following organisms obtains nutrients mainly by secreting digestive enzymes onto its food and subsequently absorbing the soluble products?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amoeba",
+          "why": "Amoeba engulfs food into its body and digests it inside a food vacuole.",
+          "whyWrong": "Amoeba uses holozoic nutrition, surrounding solid food particles with pseudopodia to take them inside the cell by phagocytosis. Digestion happens internally within a food vacuole, not outside the organism."
+        },
+        {
+          "id": "b",
+          "text": "Mushroom",
+          "why": "Mushrooms are saprophytic fungi that digest dead organic matter externally and absorb the nutrients.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Paramecium",
+          "why": "Paramecium sweeps food inside through its oral groove and digests it in food vacuoles.",
+          "whyWrong": "Paramecium also feeds holozoically by using cilia to sweep bacteria and tiny particles into its oral groove. The food is enclosed and digested inside internal food vacuoles."
+        },
+        {
+          "id": "d",
+          "text": "Euglena",
+          "why": "Euglena mainly makes its own food by photosynthesis using chloroplasts when light is available.",
+          "whyWrong": "Euglena contains chloroplasts and carries out autotrophic (holophytic) nutrition in sunlight. Even when absorbing dissolved organic substances in darkness, it does not feed primarily by extracellular enzyme secretion onto solid substrates like a fungus."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Look for the fungus in the list—fungi feed saprophytically by extracellular digestion.",
+      "explanation": "A mushroom is a saprophytic fungus. Its thread-like hyphae secrete digestive enzymes onto dead organic matter outside its body, break large molecules into simple soluble ones, and then absorb the dissolved nutrients through the hyphal walls.",
+      "trap": "Amoeba is a classic unicellular organism in nutrition questions, so students sometimes confuse its phagocytosis with external digestion. Remember that Amoeba brings food inside first, while a mushroom digests outside first.",
+      "mnemonic": "Fungi Feed Outside: Secrete enzymes, then Suck up soluble food.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A mushroom has no mouth or stomach. Instead, it pours digestive juices onto dead wood or leaves, waits for the food to dissolve, and soaks up the liquid nutrients."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Amoeba actually wraps around food particles and pulls them inside its cell to digest them in a food vacuole. It does not digest solid food outside its body."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Saprophytic (saprotrophic) nutrition involves extracellular digestion: organisms like fungi (mushrooms, Rhizopus) and many bacteria secrete enzymes onto dead organic matter and absorb the soluble products."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Think of bread mould or mushrooms growing right on stale bread or rotting logs—they digest what they sit on from the outside, then absorb it."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What mode of nutrition is shown by Rhizopus (bread mould) growing on moist bread?",
+          "similarAnswer": "Saprophytic nutrition."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 175390,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "biol-api-0024",
+      "subject": "biology",
+      "topic": "Transport",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The chamber of the mammalian heart with the thickest wall is the",
+      "options": [
+        {
+          "id": "a",
+          "text": "right ventricle",
+          "why": "The right ventricle pumps blood only to the nearby lungs, so it needs less force.",
+          "whyWrong": "The right ventricle pushes deoxygenated blood through the pulmonary artery to the lungs, which lie right beside the heart. Because that circuit offers low resistance, its muscular wall is noticeably thinner than that of the left ventricle."
+        },
+        {
+          "id": "b",
+          "text": "left ventricle",
+          "why": "The left ventricle pumps blood at high pressure to the entire body, requiring the thickest muscle wall.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "right auricle",
+          "why": "The right auricle (atrium) only receives blood from veins and pushes it into the right ventricle below.",
+          "whyWrong": "Auricles (atria) are receiving chambers that only move blood a short distance down into the ventricles right beneath them. As a result, the right auricle has a thin muscular wall."
+        },
+        {
+          "id": "d",
+          "text": "left auricle",
+          "why": "The left auricle (atrium) only pushes blood from the lungs' veins down into the left ventricle.",
+          "whyWrong": "Like the right auricle, the left auricle only transfers incoming blood from the pulmonary veins into the neighbouring left ventricle. It does not generate high systemic pressure, so its wall is thin."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Which heart chamber has to pump blood the farthest—out through the aorta to the head, arms, trunk and legs?",
+      "explanation": "The left ventricle pumps oxygenated blood into the aorta to reach every part of the body (systemic circulation). Generating enough pressure to overcome the resistance of the whole body requires a much thicker muscular wall than pumping to the nearby lungs or into an adjacent chamber.",
+      "trap": "Students easily remember that ventricles are thicker than auricles, then guess between left and right. Think of distance: the right ventricle only reaches the lungs next door, while the left ventricle reaches from head to toe.",
+      "mnemonic": "Left ventricle = Long journey to the whole body, so Largest muscle wall.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The left ventricle has the hardest job in the heart: it pushes blood all the way to your head and toes. Just like an arm that lifts heavier weights builds thicker muscle, the left ventricle has the thickest wall."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The right ventricle only pumps blood a short distance to the lungs right beside the heart. High pressure there would actually damage delicate lung capillaries, so its wall is thinner than the left ventricle's."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "In the mammalian heart, wall thickness matches workload: thin-walled atria (auricles) push blood into ventricles, the thicker right ventricle pumps to the lungs, and the thickest left ventricle pumps to the whole body."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "L for Left ventricle, L for Long systemic loop and Largest wall."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which blood vessel receives oxygenated blood directly from the left ventricle?",
+          "similarAnswer": "The aorta."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 154579,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "biol-api-0105",
+      "subject": "biology",
+      "topic": "Respiration",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The site of the Krebs (TCA) cycle in a eukaryotic cell is the",
+      "options": [
+        {
+          "id": "a",
+          "text": "cytoplasm",
+          "why": "Glycolysis takes place in the cytoplasm, before the Krebs cycle runs inside mitochondria.",
+          "whyWrong": "In eukaryotic cells, the cytoplasm (cytosol) is where glycolysis splits glucose into pyruvate without requiring oxygen. The pyruvate must then enter the mitochondrion before the Krebs cycle takes place."
+        },
+        {
+          "id": "b",
+          "text": "mitochondrial matrix",
+          "why": "The enzymes for the Krebs (TCA) cycle are located inside the mitochondrial matrix.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "grana",
+          "why": "Grana are stacks of thylakoids in chloroplasts used for photosynthesis, not respiration.",
+          "whyWrong": "Grana belong to chloroplasts in plant and algal cells, where they trap light energy for the light-dependent stage of photosynthesis. They play no part in the Krebs cycle of cellular respiration."
+        },
+        {
+          "id": "d",
+          "text": "ribosome",
+          "why": "Ribosomes build proteins from amino acids rather than running respiratory cycles.",
+          "whyWrong": "Ribosomes are the cell's protein-making structures that translate mRNA into polypeptides. They do not carry the respiratory enzymes needed for the Krebs cycle."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Cellular respiration starts in the cytoplasm (glycolysis), then moves into the cell's powerhouse for the aerobic stages.",
+      "explanation": "In aerobic respiration of eukaryotes, glycolysis occurs in the cytoplasm, producing pyruvate that enters the mitochondrion. The Krebs (tricarboxylic acid, TCA) cycle then runs in the fluid-filled mitochondrial matrix, while the electron transport chain sits on the inner mitochondrial membrane (cristae).",
+      "trap": "Students often pick cytoplasm because they remember respiration begins there. Only glycolysis occurs in the cytoplasm; the Krebs cycle happens inside the mitochondrial matrix.",
+      "mnemonic": "Glycolysis in Cytoplasm; Krebs in the Matrix; Electron chain on Cristae.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Respiration happens in steps. Step 1 (glycolysis) happens outside in the cytoplasm, then the fuel moves into the mitochondrion's inner fluid—the mitochondrial matrix—where the Krebs cycle runs."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The cytoplasm is where glycolysis happens (turning glucose into pyruvate). Once pyruvate enters the mitochondrion, the Krebs cycle runs inside the mitochondrial matrix."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Know the three locations of eukaryotic aerobic respiration: glycolysis in the cytoplasm, the Krebs (TCA) cycle in the mitochondrial matrix, and oxidative phosphorylation on the inner mitochondrial membrane (cristae)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Think 'K-M': Krebs happens in the Matrix (both inside the mitochondrion, the cell's powerhouse)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Where in a eukaryotic cell does glycolysis take place?",
+          "similarAnswer": "In the cytoplasm (cytosol)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 188779,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "biol-api-0175",
+      "subject": "biology",
+      "topic": "Excretion",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following substances is normally absent from the urine of a healthy person in significant amounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Urea",
+          "why": "Urea is the main nitrogenous waste removed by the kidneys and is normally present in urine.",
+          "whyWrong": "Urea is produced in the liver from excess amino acids and carried in blood to the kidneys for excretion. Removing urea is one of the main jobs of urine formation."
+        },
+        {
+          "id": "b",
+          "text": "Water",
+          "why": "Water makes up most of urine and carries dissolved wastes out of the body.",
+          "whyWrong": "Water is the primary solvent in urine, accounting for well over 90% of its volume. The kidneys adjust how much water leaves in urine to keep body fluids balanced."
+        },
+        {
+          "id": "c",
+          "text": "Mineral salts",
+          "why": "Excess mineral salts are routinely excreted in urine to maintain salt balance.",
+          "whyWrong": "Although the body needs mineral salts, any surplus ions such as sodium, potassium and chloride are excreted in urine by the kidneys. Seeing mineral salts in normal urine is expected."
+        },
+        {
+          "id": "d",
+          "text": "Glucose",
+          "why": "Filtered glucose is completely reabsorbed by the kidney tubules in a healthy person.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "a"
+      ],
+      "hint": "Think about what useful fuel molecule is filtered at the glomerulus and then completely reclaimed in the proximal convoluted tubule—and what condition occurs if it spills into urine.",
+      "explanation": "During ultrafiltration in the kidney, small molecules including water, urea, salts and glucose enter the Bowman's capsule. In a healthy person, all the filtered glucose is selectively reabsorbed back into the blood along the proximal convoluted tubule, so significant glucose only appears in urine when blood sugar is abnormally high (such as in diabetes mellitus).",
+      "trap": "Students sometimes rule out mineral salts because the body needs salts. However, the kidneys routinely excrete excess salts in urine, whereas useful glucose is kept back in full under healthy conditions.",
+      "mnemonic": "Good Glucose Gets Grabbed back; Wastes (Urea, excess Water & Salts) Go out.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Your kidneys filter out waste like urea, extra water and extra salts into urine. Glucose is precious energy, so healthy kidneys pull all of it back into the blood before urine leaves."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Mineral salts are needed by the body, yet we regularly take in more than we need. The kidneys excrete that surplus in urine, whereas glucose is completely reabsorbed in healthy kidneys."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Normal human urine contains water, urea and excess mineral salts, but not glucose or large plasma proteins. Significant glucose in urine (glycosuria) signals that blood glucose has exceeded the kidney's reabsorption capacity."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Remember Benedict's test on urine: in a healthy person it stays blue (no sugar), because healthy kidney tubules keep all the glucose."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In which part of the nephron does selective reabsorption of all glucose normally occur?",
+          "similarAnswer": "The proximal convoluted tubule."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 175408,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "biol-api-0165",
+      "subject": "biology",
+      "topic": "Coordination",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following structures is responsible for the regulation of the amount of light entering the mammalian eye?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retina",
+          "why": "The retina detects light and sends nerve impulses to the brain; it does not control entry.",
+          "whyWrong": "The retina is the inner light-sensitive layer containing rod and cone cells that convert light into electrical signals. It receives the image rather than adjusting how much light passes into the eye."
+        },
+        {
+          "id": "b",
+          "text": "Cornea",
+          "why": "The cornea bends incoming light rays into the eye but cannot widen or narrow.",
+          "whyWrong": "The cornea is the transparent, curved front window of the eye that does most of the initial refraction of light. Because it has a fixed opening and no iris muscles, it cannot regulate light intensity."
+        },
+        {
+          "id": "c",
+          "text": "Iris",
+          "why": "The iris's circular and radial muscles change pupil size to control how much light enters.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Lens",
+          "why": "The lens changes shape to focus light onto the retina, not to control light amount.",
+          "whyWrong": "The lens adjusts its thickness during accommodation so near or distant objects focus sharply on the retina. Controlling how much light enters is the job of the iris and pupil, not the lens."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "This is the coloured ring around the pupil whose muscles constrict in bright light and dilate in dim light.",
+      "explanation": "The iris is the coloured muscular ring surrounding the pupil. In bright light, its circular muscles contract to shrink the pupil and reduce incoming light; in dim light, its radial muscles contract to widen the pupil and let more light reach the retina.",
+      "trap": "Students often mix up the lens (which adjusts focus) and the iris (which adjusts brightness). Focus belongs to the lens and ciliary body; light amount belongs to the iris and pupil.",
+      "mnemonic": "Iris = Intensity of light; Lens = Landing sharp focus.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The iris is the coloured part around the black hole (pupil) in your eye. It acts like a curtain—closing slightly in bright sun so you are not dazzled, and opening wider in the dark so you can see."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "The lens bends light so images look sharp, just like focusing a camera. Adjusting how bright the image is—how much light gets in—is done by the iris changing the size of the pupil."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "The iris regulates light entry via a reflex: circular muscles contract in bright light (pupil constricts), and radial muscles contract in dim light (pupil dilates)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Connect Iris with Intensity (light amount), and think of your eye's black pupil getting tiny in sunlight because the coloured iris closes in."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which muscles of the iris contract when a person steps from a dark room into bright sunlight?",
+          "similarAnswer": "The circular muscles contract (while the radial muscles relax), making the pupil smaller."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 175382,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "biol-api-0128",
+      "subject": "biology",
+      "topic": "Reproduction",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Double fertilisation in flowering plants produces",
+      "options": [
+        {
+          "id": "a",
+          "text": "two diploid embryos",
+          "why": "Only one male gamete fuses with the egg; the second fuses with the two polar nuclei.",
+          "whyWrong": "Although two male nuclei enter the embryo sac, there is only one egg cell to form an embryo. The second male nucleus fuses with the two polar nuclei to build nutritive endosperm tissue rather than a second embryo."
+        },
+        {
+          "id": "b",
+          "text": "a diploid zygote and a triploid endosperm nucleus",
+          "why": "One sperm nucleus fuses with the egg (2n zygote) and the other with two polar nuclei (3n endosperm).",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "four haploid spores",
+          "why": "Four haploid spores are formed earlier by meiosis in the anther, not by fertilisation.",
+          "whyWrong": "Meiosis of pollen mother cells inside the anther produces four haploid microspores before pollination even takes place. Fertilisation joins gametes to raise chromosome number, rather than splitting cells into haploid spores."
+        },
+        {
+          "id": "d",
+          "text": "only a pollen tube",
+          "why": "The pollen tube grows before fertilisation to carry the male nuclei down to the ovule.",
+          "whyWrong": "The pollen tube is a structure grown by the pollen grain down the style so the two male gametes can reach the embryo sac. It is the delivery pathway, not the outcome of double fertilisation."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Two male gametes (each haploid, n) enter the embryo sac: one meets the egg (n), and one meets two polar nuclei (n + n).",
+      "explanation": "In flowering plants (angiosperms), the pollen tube delivers two haploid male gametes into the embryo sac. One fuses with the haploid egg cell to form a diploid (2n) zygote that grows into the embryo, while the second fuses with the two haploid polar nuclei to form a triploid (3n) primary endosperm nucleus that develops into food storage tissue.",
+      "trap": "The phrase 'double fertilisation' makes it sound like two identical embryos are produced. In fact, the second fusion creates the triploid endosperm that feeds the single diploid embryo.",
+      "mnemonic": "1+1 = 2n Zygote (baby plant); 1+2 = 3n Endosperm (baby's food).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Two sperm cells travel down the pollen tube. The first joins the egg to make the baby plant (diploid zygote), and the second joins two helper nuclei to make the seed's packed lunch (triploid endosperm)."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Double fertilisation means two fusion events inside one ovule, not twin embryos. Only one egg cell is fertilised to make the embryo; the other fusion builds the triploid endosperm food store."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Double fertilisation is unique to angiosperms (flowering plants): male gamete (n) + egg (n) -> diploid zygote (2n); second male gamete (n) + two polar nuclei (n + n) -> triploid endosperm nucleus (3n)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Count the nuclei: Egg fusion = 1 + 1 = 2n (diploid zygote). Polar fusion = 1 + 2 = 3n (triploid endosperm)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the role of the endosperm formed after double fertilisation in a flowering plant?",
+          "similarAnswer": "It stores nutrients to nourish the developing embryo."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 188758,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "biol-api-0073",
+      "subject": "biology",
+      "topic": "Evolution & classification",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The flippers of a whale and the fins of a fish are examples of",
+      "options": [
+        {
+          "id": "a",
+          "text": "divergent evolution",
+          "why": "Divergent evolution gives related species different traits from a shared ancestor, unlike whales and fish.",
+          "whyWrong": "Divergent evolution explains homologous structures, where closely related organisms evolve different limb shapes from one ancestral plan (like a whale flipper, a bat wing and a human arm). Here whales (mammals) and fish do not share a swimming-fin ancestor."
+        },
+        {
+          "id": "b",
+          "text": "coevolution",
+          "why": "Coevolution happens when two interacting species shape each other's evolution, like flowers and bees.",
+          "whyWrong": "Coevolution occurs between ecological partners—such as a predator and prey, or a flower and its pollinator—evolving in response to one another. Whale flippers and fish fins instead evolved separately in response to living in water."
+        },
+        {
+          "id": "c",
+          "text": "continuous variation",
+          "why": "Continuous variation describes smooth trait differences like height inside one species, not evolution patterns.",
+          "whyWrong": "Continuous variation refers to measurable differences such as human height or mass showing a range within a population. It is a pattern of genetic and environmental variation, not the evolutionary similarity between two distinct animal groups."
+        },
+        {
+          "id": "d",
+          "text": "convergent evolution",
+          "why": "Unrelated groups (mammals and fishes) evolved similar swimming structures for the same aquatic habitat.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "c",
+        "b"
+      ],
+      "hint": "Whales are mammals (from land-living tetrapod ancestors) while fish are fishes, yet both ended up with paddle-like swimming limbs.",
+      "explanation": "Whales are mammals whose ancestors had five-fingered forelimbs, while fishes evolved fins independently. Facing the same challenge of moving through water, these unrelated lineages developed similar streamlined shapes (analogous structures)—a classic example of convergent evolution.",
+      "trap": "Students very often mix up convergent and divergent evolution. Check whether the two examples are unrelated groups growing similar (convergent) or related groups splitting into different forms (divergent).",
+      "mnemonic": "Convergent = Come together to a similar shape from different ancestors.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Whales are mammals and fish are not closely related to them, yet both live in the sea. Because water pushes against any swimmer the same way, both ended up with flat paddle shapes—different paths leading to the same look."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Divergent evolution is when one family branches out into different shapes—for example, the mammalian forelimb becoming a human hand, a bat wing and a whale flipper. Whale flippers and fish fins come from separate vertebrate groups becoming alike."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Convergent evolution produces analogous structures (similar function and outward form, different evolutionary origin) when unrelated organisms adapt to similar environments."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Converge means 'come together': unrelated animals (whale + fish, or bird + butterfly wings) come together on a similar design."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "The pentadactyl forelimbs of a human, a bat and a whale are examples of which evolutionary pattern?",
+          "similarAnswer": "Divergent evolution (homologous structures from a common mammalian ancestor)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 12707,
+        "yearLabel": "2018"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

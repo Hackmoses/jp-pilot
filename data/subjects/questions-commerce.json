@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "subject": "commerce",
+  "count": 12,
+  "questions": [
+    {
+      "id": "comm-api-0003",
+      "subject": "commerce",
+      "topic": "Occupation and production",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The creation of utilities to satisfy human wants is referred to as",
+      "options": [
+        {
+          "id": "a",
+          "text": "production",
+          "why": "Production creates form, place, time, and possession utilities that satisfy human wants.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "consumption",
+          "why": "Consumption uses up goods and services rather than creating utility.",
+          "whyWrong": "Consumption is the final using up of goods and services by consumers to satisfy their wants. It destroys or uses utility instead of creating it, so it sits at the opposite end from production."
+        },
+        {
+          "id": "c",
+          "text": "industrialization",
+          "why": "Industrialization is the growth of manufacturing industries in an economy, not the general creation of utility.",
+          "whyWrong": "Industrialization describes a country's shift toward large-scale manufacturing and factory output. It is a narrower economic process, whereas production covers all activities—extractive, manufacturing, commercial, and direct services—that create utility."
+        },
+        {
+          "id": "d",
+          "text": "occupation.",
+          "why": "Occupation is a person's regular work to earn a living, whereas production is the creation of utility itself.",
+          "whyWrong": "An occupation is the specific job or trade a person engages in to earn a livelihood, such as farming, teaching, or trading. While workers in an occupation may take part in producing goods or services, the creation of utility itself is defined as production."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "b"
+      ],
+      "hint": "Think of the economic activity that turns raw materials or services into something useful to buyers.",
+      "explanation": "In commerce, production is not limited to factory manufacturing; it means creating any form of utility—form, place, time, or possession—so that goods and services can satisfy human wants.",
+      "trap": "Occupation sounds close because people work in occupations to produce things, but occupation refers to a person's job, whereas production is the process of creating utility.",
+      "mnemonic": "Production Produces Utility; Consumption Consumes it.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Any activity that makes something useful or gets it to someone who needs it—from baking bread to transporting it—is called production."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "An occupation is what a person does to earn a living, like being a tailor or a driver. Production is the creation of usefulness (utility) itself."
+        },
+        {
+          "id": "simpler",
+          "label": "What are the types of utility?",
+          "answer": "Form utility (turning wood into furniture), place utility (transporting goods to market), time utility (warehousing until needed), and possession utility (transferring ownership through trade)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which type of utility is created when a wholesaler stores seasonal crops in a warehouse until consumers need them?",
+          "similarAnswer": "Time utility."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 3312,
+        "yearLabel": "2007"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0008",
+      "subject": "commerce",
+      "topic": "Marketing and advertising",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which pricing strategy is most appropriate where a new firm wants rapid market acceptance and customers are highly price-sensitive?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Penetration pricing",
+          "why": "Setting a low initial price attracts price-sensitive buyers quickly and builds market share fast.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Skimming",
+          "why": "Price skimming starts with a high price, which drives away price-sensitive customers.",
+          "whyWrong": "Price skimming involves launching a product at a high initial price to maximize revenue from buyers willing to pay more before lowering it later. Because customers here are highly price-sensitive, a high launch price would block rapid market acceptance."
+        },
+        {
+          "id": "c",
+          "text": "Premium pricing",
+          "why": "Premium pricing keeps prices high to signal luxury, which clashes with price-sensitive demand.",
+          "whyWrong": "Premium pricing deliberately charges an above-average price to create an image of exclusivity or superior quality. It targets status-conscious buyers rather than highly price-sensitive mass markets."
+        },
+        {
+          "id": "d",
+          "text": "Auction pricing only",
+          "why": "Auction pricing lets buyers bid prices per sale and does not provide steady low-price mass entry.",
+          "whyWrong": "Auction pricing relies on competitive bidding for individual items or lots, which makes prices unpredictable for everyday shoppers. A new firm seeking rapid acceptance needs a clear, low introductory price across the market."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "When buyers care strongly about low prices, should the newcomer start high or low?",
+      "explanation": "Penetration pricing sets a low initial price when entering a market. This appeals to price-sensitive buyers, encourages quick trial, and helps a new firm capture market share rapidly.",
+      "trap": "Skimming is the other famous new-product pricing strategy, so students often mix the two up. Remember: skimming starts high, while penetration starts low.",
+      "mnemonic": "Penetrate = Push in with low Prices; Skim = Start high and Skim the cream.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If customers watch every naira and you are the new brand on the shelf, charging a low starter price gets people to try your product fast—that is penetration pricing."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Skimming does the exact opposite: a firm launches at a high price (like a brand-new phone) for buyers who do not mind paying extra, then cuts the price later."
+        },
+        {
+          "id": "simpler",
+          "label": "When does penetration pricing work best?",
+          "answer": "It works best when demand is elastic (price-sensitive), competitors can enter easily, and higher sales volume helps lower unit production costs."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which pricing strategy involves charging a high initial price for an innovative product before gradually reducing it?",
+          "similarAnswer": "Price skimming."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 185470,
+        "yearLabel": "1989"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0013",
+      "subject": "commerce",
+      "topic": "Business environment",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which of the following is a key principle of sustainable development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Balancing economic, social, and environmental considerations",
+          "why": "Sustainable development integrates economic growth, social well-being, and environmental protection.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Prioritizing economic growth at all costs",
+          "why": "Pursuing growth at all costs damages ecosystems and communities, breaking sustainability.",
+          "whyWrong": "Chasing economic output regardless of pollution or resource depletion leads to environmental collapse and social harm. Sustainable development requires weighing profit alongside ecological and human impacts."
+        },
+        {
+          "id": "c",
+          "text": "Ignoring the environmental impact of economic activities",
+          "why": "Protecting the environment is one of the core pillars of sustainability.",
+          "whyWrong": "Commercial activities that ignore waste, emissions, and resource depletion undermine the natural base future businesses depend on. Environmental stewardship is central to sustainable development."
+        },
+        {
+          "id": "d",
+          "text": "Focusing solely on meeting the needs of the present generation",
+          "why": "Sustainable development protects future generations' needs too, not solely the present.",
+          "whyWrong": "The classic definition of sustainable development is meeting present needs without compromising the ability of future generations to meet theirs. The word 'solely' leaves out future generations, which turns a true-sounding phrase into a false statement."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "b"
+      ],
+      "hint": "Look for the option that treats people, profit, and the planet together rather than choosing only one.",
+      "explanation": "Sustainable development rests on balancing three linked pillars—economic viability, social equity, and environmental protection—so today's business growth does not ruin tomorrow's resources.",
+      "trap": "Option d mimics the famous definition about meeting the needs of the present generation, but adding 'solely' drops the crucial second half about protecting future generations.",
+      "mnemonic": "Three Ps of Sustainability: People, Planet, Profit—all in balance.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Sustainable development means growing businesses in a way that helps people earn a living today without polluting the air, water, or land for tomorrow's children."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Sustainable development is about both the present AND future generations. Saying 'solely' the present generation ignores the long-term responsibility."
+        },
+        {
+          "id": "simpler",
+          "label": "How does this apply to a business?",
+          "answer": "A factory that earns a profit (economic), treats workers and neighbours fairly (social), and recycles or treats its waste (environmental) is practising sustainable development."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What are the three main pillars balanced in sustainable business development?",
+          "similarAnswer": "Economic, social, and environmental considerations."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 14496,
+        "yearLabel": "2003"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0017",
+      "subject": "commerce",
+      "topic": "Business units",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is a characteristic of a small-scale business?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Requires massive capital to start",
+          "why": "Small-scale businesses typically start with modest personal or family capital, not massive capital.",
+          "whyWrong": "Large public companies and heavy industries need massive capital raised through share issues or large bank syndicates. A small-scale business is attractive precisely because it requires relatively low startup capital."
+        },
+        {
+          "id": "b",
+          "text": "Has thousands of employees",
+          "why": "Having thousands of employees is a feature of large enterprises, not small-scale firms.",
+          "whyWrong": "Small-scale businesses operate with a small workforce—often the owner, family members, or a handful of staff. Employing thousands of people puts a firm firmly in the large-scale category."
+        },
+        {
+          "id": "c",
+          "text": "Is usually owned and managed by one person or a few people",
+          "why": "Small-scale enterprises are typically sole proprietorships or small partnerships run directly by their owners.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Dominates the national market",
+          "why": "Small-scale businesses normally serve a local community or niche rather than dominating the whole nation.",
+          "whyWrong": "Because of limited capital, staff, and output, a small-scale firm usually holds only a small share of the local market. National market dominance belongs to large corporations or monopolies."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Picture a neighbourhood tailoring shop or corner provision store—who owns and runs it?",
+      "explanation": "A small-scale business typically has modest capital, few employees, and direct owner-management, with one person or a small group making everyday decisions.",
+      "trap": "Some students assume every business requires massive startup capital, confusing small enterprises like sole traders with large limited liability companies.",
+      "mnemonic": "Small-scale = Small capital, Small staff, Single (or few) owners.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Think of a local bakery or barbershop: one owner or two partners put in modest savings, hire a few workers, and manage the shop themselves."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Massive startup capital belongs to large factories and public limited companies. Low capital requirement is one reason small-scale businesses are easy to start."
+        },
+        {
+          "id": "simpler",
+          "label": "Examples of small-scale businesses",
+          "answer": "Sole proprietorships, corner retail shops, hair salons, small farms, and family-run partnerships are classic examples of small-scale businesses."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which form of business unit is owned, financed, and controlled by a single individual?",
+          "similarAnswer": "Sole proprietorship (one-man business)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 60509,
+        "yearLabel": "2007"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0020",
+      "subject": "commerce",
+      "topic": "Trade and retail",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An exporter sells goods worth £2,000 at ₦600/£1. If the exchange rate becomes ₦620/£1 at payment, calculate the Naira increase in sales value.",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦80,000",
+          "why": "This comes from doubling the ₦20 rate rise to ₦40 per pound.",
+          "whyWrong": "The exchange rate rose from ₦600 to ₦620, which is an increase of ₦20 per pound, not ₦40. Multiplying £2,000 by ₦20 gives ₦40,000, not ₦80,000."
+        },
+        {
+          "id": "b",
+          "text": "₦40,000",
+          "why": "£2,000 × (₦620 − ₦600) = £2,000 × ₦20 = ₦40,000.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "₦1,200,000",
+          "why": "₦1,200,000 is the initial sales value at ₦600/£1, not the increase.",
+          "whyWrong": "Multiplying £2,000 by the original rate of ₦600/£1 gives ₦1,200,000, which is the starting Naira value of the export. The question asks only for the increase caused by the rate change."
+        },
+        {
+          "id": "d",
+          "text": "₦1,240,000",
+          "why": "₦1,240,000 is the new total sales value at ₦620/£1, not the increase.",
+          "whyWrong": "Multiplying £2,000 by the new rate of ₦620/£1 gives ₦1,240,000, the updated total revenue. You must subtract the original ₦1,200,000 to find the increase of ₦40,000."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find how many extra Naira the exporter earns on each pound, then multiply by £2,000.",
+      "explanation": "At ₦600/£1, £2,000 equals ₦1,200,000. At ₦620/£1, £2,000 equals ₦1,240,000. Subtracting gives ₦1,240,000 − ₦1,200,000 = ₦40,000 (or simply £2,000 × ₦20 = ₦40,000).",
+      "trap": "After finding ₦40,000 or ₦1,240,000, careless subtraction or doubling the ₦20 rise can lead to ₦80,000.",
+      "mnemonic": "Increase = Pounds × Change in Rate.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Each pound used to bring in ₦600, and now it brings in ₦620—that is ₦20 extra per pound. Across 2,000 pounds, 2,000 × 20 gives ₦40,000 extra."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "₦80,000 would mean the exchange rate rose by ₦40 per pound. From ₦600 to ₦620 is a ₦20 rise, so 2,000 × 20 = ₦40,000."
+        },
+        {
+          "id": "simpler",
+          "label": "Show the two-step method",
+          "answer": "Initial value: 2,000 × ₦600 = ₦1,200,000. New value: 2,000 × ₦620 = ₦1,240,000. Increase = ₦1,240,000 − ₦1,200,000 = ₦40,000."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "An exporter sells goods worth £1,500 at ₦700/£1, and the rate rises to ₦730/£1 at payment. What is the Naira increase in sales value?",
+          "similarAnswer": "₦45,000 (1,500 × ₦30)."
+        }
+      ],
+      "animationId": "anim-comm-api-0020",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 14718,
+        "yearLabel": "2009"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0021",
+      "subject": "commerce",
+      "topic": "Trade and retail",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A department store differs from a multiple-shop organization mainly because a department store",
+      "options": [
+        {
+          "id": "a",
+          "text": "concentrates many specialized departments in one large establishment",
+          "why": "A department store houses many distinct product departments under one roof.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "must have branches in many towns",
+          "why": "Having many scattered branches is the defining feature of a multiple-shop organization, not a department store.",
+          "whyWrong": "Multiple shops (chain stores) operate many uniform branches spread across different towns and cities. A department store, by contrast, usually operates from a single large building in a central shopping area."
+        },
+        {
+          "id": "c",
+          "text": "sells only one narrow product line",
+          "why": "Department stores sell a wide variety of goods across separate departments, unlike specialty chains.",
+          "whyWrong": "Selling a narrow or standardized product line across branches is typical of multiple shops and specialty stores. A department store brings clothing, electronics, cosmetics, groceries, and homeware together under one roof."
+        },
+        {
+          "id": "d",
+          "text": "operates without centralized management",
+          "why": "A department store still has an overarching central management coordinating its departments.",
+          "whyWrong": "Although each department in a department store has its own manager, overall administration, accounting, and store policy are centrally coordinated. Lack of central management is not what separates it from multiple shops."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Think 'many shops under one roof' versus 'one shop copied in many towns'.",
+      "explanation": "A department store brings many distinct, specialized departments together inside one large building, whereas a multiple-shop (chain store) organization spreads many standardized branches across different locations.",
+      "trap": "Students often swap the two retail formats and pick 'branches in many towns', which describes multiple shops rather than a department store.",
+      "mnemonic": "Department store = Many departments, One roof. Multiple shops = One line, Many towns.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A department store is one big building divided into sections—shoes on floor one, electronics on floor two. A multiple-shop business opens lots of similar branches in different neighbourhoods."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Having branches in many towns describes multiple shops (chain stores). A department store pulls many departments into one large site."
+        },
+        {
+          "id": "simpler",
+          "label": "Compare buying and stock in both",
+          "answer": "Department stores carry wide variety under one roof with departmental buyers, while multiple shops do centralized bulk buying of a narrower line for all their branches."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which large-scale retail outlet operates many standardized branches across different towns under central control?",
+          "similarAnswer": "Multiple-shop organization (chain store)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 185264,
+        "yearLabel": "2009"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0022",
+      "subject": "commerce",
+      "topic": "Insurance",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which best describes the principle of uberrimae fidei in insurance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The insurer pursues a third party for the loss",
+          "why": "Pursuing a third party after paying a claim describes subrogation, not uberrimae fidei.",
+          "whyWrong": "When an insurance company steps into the insured's shoes to recover compensation from a negligent third party, that is the principle of subrogation. Uberrimae fidei deals with honesty when forming the contract."
+        },
+        {
+          "id": "b",
+          "text": "The insured needs a financial interest in the subject",
+          "why": "Requiring a financial stake in what is insured describes insurable interest, not uberrimae fidei.",
+          "whyWrong": "The rule that you must suffer a financial loss if the insured property or life is harmed is insurable interest. Uberrimae fidei is a separate principle requiring complete truthfulness."
+        },
+        {
+          "id": "c",
+          "text": "Both parties disclose all material facts",
+          "why": "Uberrimae fidei means utmost good faith: full disclosure of all material facts by both sides.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The insured is compensated for actual loss",
+          "why": "Compensating only up to the actual loss describes indemnity, not uberrimae fidei.",
+          "whyWrong": "Restoring the insured to the same financial position as before the loss—without making a profit—is the principle of indemnity. Uberrimae fidei literally means utmost good faith, requiring full disclosure of material facts."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "The Latin phrase translates to 'utmost good faith'—what does good faith require on an application form?",
+      "explanation": "Uberrimae fidei (utmost good faith) obliges both the proposer and the insurer to disclose all material facts truthfully so the risk can be fairly assessed; hiding a key fact can void the policy.",
+      "trap": "Indemnity ('compensated for actual loss') is the most famous insurance principle, so students who forget the Latin translation often pick it by default.",
+      "mnemonic": "Uberrimae Fidei = Utmost Faith = Full Facts disclosed.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Uberrimae fidei means 'utmost good faith.' Both you and the insurance company must tell the whole truth about important facts before signing the policy."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Compensating the insured for actual financial loss is the principle of indemnity, not uberrimae fidei."
+        },
+        {
+          "id": "simpler",
+          "label": "What is a material fact?",
+          "answer": "Any detail that would influence an insurer's decision to accept the risk or set the premium—for example, a pre-existing illness in life insurance or storing petrol in a shop."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which insurance principle states that an insured person cannot make a profit from a loss, but is only restored to their previous financial position?",
+          "similarAnswer": "Principle of indemnity."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 14755,
+        "yearLabel": "2010"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0024",
+      "subject": "commerce",
+      "topic": "Banking and finance",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A company issues 5,000 preference shares at ₦20 each with an 8% dividend. Calculate the annual dividend payout.",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦100,000",
+          "why": "₦100,000 is the total value of the shares, before multiplying by the 8% dividend rate.",
+          "whyWrong": "Multiplying 5,000 shares by ₦20 gives ₦100,000, which is the total preference share capital issued. You still need to take 8% of ₦100,000 to find the annual dividend payout."
+        },
+        {
+          "id": "b",
+          "text": "₦8,000",
+          "why": "Total share value is 5,000 × ₦20 = ₦100,000, and 8% of ₦100,000 is ₦8,000.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "₦1,000",
+          "why": "₦1,000 treats ₦20 as 20% of 5,000 instead of calculating 8% of ₦100,000.",
+          "whyWrong": "To find the annual dividend, first multiply the number of shares (5,000) by the price per share (₦20) to get ₦100,000, then take 8% of that capital. ₦1,000 is only 1% of ₦100,000, not 8%."
+        },
+        {
+          "id": "d",
+          "text": "₦80,000",
+          "why": "₦80,000 is 80% of ₦100,000 rather than 8%—one extra zero slipped in.",
+          "whyWrong": "8% means 8 divided by 100 (0.08), whereas ₦80,000 comes from multiplying ₦100,000 by 0.8 (80%). Dropping one zero by dividing properly by 100 gives ₦8,000."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "First find the total Naira value of all 5,000 shares, then take 8% of that amount.",
+      "explanation": "Total preference share capital = 5,000 × ₦20 = ₦100,000. Annual dividend = 8% of ₦100,000 = (8 ÷ 100) × ₦100,000 = ₦8,000.",
+      "trap": "Students often compute ₦100,000 accurately and then slip a decimal place, turning 8% into 80% (₦80,000).",
+      "mnemonic": "Capital first (Shares × Price), then Percent (Rate × Capital).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "First find how much all the shares are worth together: 5,000 × ₦20 = ₦100,000. Then take 8 out of every 100 naira: 8% of ₦100,000 = ₦8,000."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "₦80,000 would be an 80% dividend! Because the rate is 8% (8 per 100), 0.08 × ₦100,000 equals ₦8,000."
+        },
+        {
+          "id": "simpler",
+          "label": "Can you find dividend per share first?",
+          "answer": "Yes: 8% of ₦20 per share is ₦1.60 per share. Multiply ₦1.60 by 5,000 shares to get ₦8,000."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A company issues 4,000 preference shares at ₦25 each with a 6% dividend. What is the annual dividend payout?",
+          "similarAnswer": "₦6,000 (4,000 × ₦25 = ₦100,000; 6% of ₦100,000 = ₦6,000)."
+        }
+      ],
+      "animationId": "anim-comm-api-0024",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 14785,
+        "yearLabel": "2010"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0027",
+      "subject": "commerce",
+      "topic": "Banking and finance",
+      "type": "recall",
+      "difficulty": 3,
+      "stem": "The principal reason a firm may prefer retained earnings to issuing new shares for financing expansion is that retained earnings",
+      "options": [
+        {
+          "id": "a",
+          "text": "do not normally dilute existing ownership through the issue of additional shares",
+          "why": "Ploughing back profits avoids bringing in new shareholders who would dilute existing owners' control.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "must be repaid at a fixed maturity date",
+          "why": "A fixed repayment date applies to loans or debentures, not retained earnings.",
+          "whyWrong": "Retained earnings belong to the company itself, so there is no lender demanding repayment on a fixed maturity date. Fixed maturity dates apply to external debt such as bonds, debentures, and term loans."
+        },
+        {
+          "id": "c",
+          "text": "carry compulsory interest charges",
+          "why": "Debt carries compulsory interest; retained earnings do not require interest payments.",
+          "whyWrong": "Compulsory interest charges are paid on borrowed funds like bank loans and debentures, even when profits are low. Using retained earnings saves the firm from fixed interest obligations."
+        },
+        {
+          "id": "d",
+          "text": "increase the number of external creditors",
+          "why": "Retained earnings are internal equity, so they add zero external creditors.",
+          "whyWrong": "Borrowing from banks or suppliers increases external creditors, whereas retained earnings come from undistributed profits already inside the business. Far from creating creditors, retained earnings keep control and financing internal."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "What happens to current shareholders' percentage of voting control if new shares are sold to outsiders?",
+      "explanation": "Retained earnings (ploughed-back profit) are an internal source of finance. Unlike issuing new ordinary shares, using retained profits funds growth without diluting existing shareholders' ownership or voting power.",
+      "trap": "Students sometimes confuse equity financing with borrowing and assume retained earnings create external creditors, when in fact they are purely internal funds.",
+      "mnemonic": "Retained profits = Retain control (no dilution).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If a company prints and sells new shares to outsiders, the current owners own a smaller slice of the business. Using saved profits avoids sharing ownership."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "External creditors only increase when a firm borrows money or buys on credit. Retained earnings are the company's own saved profits, not a loan."
+        },
+        {
+          "id": "simpler",
+          "label": "Other benefits of retained earnings",
+          "answer": "Besides avoiding ownership dilution, retained earnings carry no interest charges, require no collateral, and avoid the flotation costs of issuing new shares."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which internal source of long-term business finance consists of undistributed profits kept in the business?",
+          "similarAnswer": "Retained earnings (ploughing back profits)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 185118,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0029",
+      "subject": "commerce",
+      "topic": "Transport and warehousing",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which warehouse is primarily established by customs authorities for storing imported goods on which import duties have not yet been paid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Private warehouse",
+          "why": "A private warehouse is owned by a trader or firm for its own duty-paid stock, not by customs for unpaid duties.",
+          "whyWrong": "Private warehouses are owned or leased by wholesalers, manufacturers, or large retailers to store their own inventory after goods have cleared customs. Customs authorities do not operate private warehouses to hold uncleared dutiable imports."
+        },
+        {
+          "id": "b",
+          "text": "Bonded warehouse",
+          "why": "A bonded warehouse holds dutiable imported goods under customs control until import duties are paid.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Manufacturer's warehouse",
+          "why": "A manufacturer's warehouse stores raw materials or finished factory output, not uncleared imports under customs bond.",
+          "whyWrong": "Manufacturers use their warehouses near factories to hold raw materials and finished goods awaiting distribution. They are not customs-controlled facilities for deferring import duty."
+        },
+        {
+          "id": "d",
+          "text": "Retail warehouse",
+          "why": "A retail warehouse stores stock for retail shops rather than holding dutiable goods for customs.",
+          "whyWrong": "Retail warehouses supply retail outlets or sell bulk goods directly to shoppers. Goods placed there have already cleared customs and had any applicable duties settled."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "The importer signs a bond promising not to remove the goods until customs duty is settled.",
+      "explanation": "A bonded warehouse is supervised by customs authorities so importers can store dutiable goods safely until they pay the import duty—or re-export the goods without paying domestic duty.",
+      "trap": "Private warehouse sounds plausible if you forget the customs-duty rule, because private firms own warehouses too—but customs control over unpaid duties defines a bonded warehouse.",
+      "mnemonic": "Bonded = held under Customs Bond until duties are Paid.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When imported goods arrive at a port and the importer is not ready to pay customs tax yet, customs locks them in a bonded warehouse until the duty is paid."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A private warehouse belongs to an individual business for its own cleared goods. Only a bonded warehouse holds goods under customs supervision while duty remains unpaid."
+        },
+        {
+          "id": "simpler",
+          "label": "Why do importers use bonded warehouses?",
+          "answer": "Importers can defer paying duty until they actually sell or remove batches of goods, and if they re-export the goods to another country, they avoid paying local import duty."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What happens if goods stored in a bonded warehouse are re-exported without entering the domestic market?",
+          "similarAnswer": "The importer does not pay local import duty on them."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 185140,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0032",
+      "subject": "commerce",
+      "topic": "Consumer protection",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What does consumer protection aim to address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Market monopolies",
+          "why": "Controlling monopolies is primarily the job of competition policy, whereas consumer protection tackles unfair trade practices.",
+          "whyWrong": "Regulating or breaking up monopolies falls mainly under competition or antitrust law, which focuses on market structure. Consumer protection directly guards buyers against deceptive advertising, unsafe products, short weights, and other unfair trade practices."
+        },
+        {
+          "id": "b",
+          "text": "Unfair trade practices",
+          "why": "Consumer protection shields buyers from exploitation, unsafe goods, misleading claims, and unfair trade practices.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Corporate profits",
+          "why": "Consumer protection does not aim to ban or manage legitimate business profits.",
+          "whyWrong": "Businesses are entitled to earn fair profits in a market economy. Consumer protection only steps in when sellers use deceit, substandard goods, or abusive terms to cheat buyers."
+        },
+        {
+          "id": "d",
+          "text": "Government regulations",
+          "why": "Consumer protection uses government regulations as tools rather than trying to eliminate them.",
+          "whyWrong": "Laws and agencies such as product safety standards and weights-and-measures rules are the instruments of consumer protection, not the problem it tries to solve."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about fake goods, false adverts, and tampered scales—what category do those abuses belong to?",
+      "explanation": "Consumer protection exists to safeguard buyers against unfair trade practices such as adulterated goods, false weights and measures, misleading advertising, hoarding, and unsafe products.",
+      "trap": "Market monopolies can hurt consumers through high prices, so option a looks tempting, but consumer protection specifically targets unfair trade practices against buyers.",
+      "mnemonic": "Consumer Protection = Shielding buyers from Unfair Practices.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Consumer protection stops sellers from cheating shoppers—like selling expired food, faking labels, or using rigged scales."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Monopolies are handled mainly by competition laws that stop one company controlling an entire industry. Consumer protection focuses directly on unfair treatment of buyers."
+        },
+        {
+          "id": "simpler",
+          "label": "Examples of unfair trade practices",
+          "answer": "False advertising, selling expired or counterfeit goods, hidden charges, inaccurate weights and measures, and refusing valid warranty rights."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Why are weights and measures laws enforced as part of consumer protection?",
+          "similarAnswer": "To ensure buyers receive the exact quantity of goods they pay for."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 115910,
+        "yearLabel": "2016"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comm-api-0040",
+      "subject": "commerce",
+      "topic": "Business units",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is a common legal document required for company formation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Memorandum of Association",
+          "why": "The Memorandum of Association is a core incorporation document defining a company's external scope and constitution.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Partnership Agreement",
+          "why": "A Partnership Agreement governs a partnership, not an incorporated company.",
+          "whyWrong": "A Partnership Agreement (or partnership deed) sets out profit-sharing and duties among partners in an unincorporated partnership. Forming a limited liability company requires statutory registration documents like the Memorandum and Articles of Association."
+        },
+        {
+          "id": "c",
+          "text": "Sales Contract",
+          "why": "A sales contract covers buying and selling goods during operations, not forming a company.",
+          "whyWrong": "A sales contract is an everyday commercial agreement between a buyer and seller for goods or services. It is not a constitutional document filed to incorporate a company."
+        },
+        {
+          "id": "d",
+          "text": "Insurance Policy",
+          "why": "An insurance policy covers business risks after setup, not legal incorporation.",
+          "whyWrong": "An insurance policy is a contract transferring risk such as fire or theft to an insurer. While helpful for protecting assets, it is not a legal requirement for registering a company."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Which document goes with the Articles of Association when registering a limited company?",
+      "explanation": "To incorporate a company, promoters prepare key formation documents—principally the Memorandum of Association (setting out the company's name, registered office, objects, and capital) and the Articles of Association (internal rules).",
+      "trap": "Partnership Agreement sounds like a business formation document, which is true for partnerships—but a company uses a Memorandum of Association.",
+      "mnemonic": "Memorandum = company's External charter; Partnership deed = Partners only.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Before a company can legally exist, its founders file its rulebook with the corporate registry. The Memorandum of Association is the main document stating who the company is and what it does."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A Partnership Agreement applies to a partnership business, not a registered company. Companies require a Memorandum of Association."
+        },
+        {
+          "id": "simpler",
+          "label": "Memorandum vs Articles of Association",
+          "answer": "The Memorandum defines the company's relationship with the outside world (name, objects, capital, liability), while the Articles set the internal rules for directors, meetings, and dividends."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which company formation document sets out the internal rules and regulations for managing the company?",
+          "similarAnswer": "Articles of Association."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 116139,
+        "yearLabel": "2021"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

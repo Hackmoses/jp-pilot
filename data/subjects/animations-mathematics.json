@@ -1,0 +1,624 @@
+{
+  "version": 1,
+  "count": 24,
+  "animations": [
+    {
+      "id": "anim-math-api-0001",
+      "questionId": "math-api-0001",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "dy/dx = 4(2 + 3x)³ × 3",
+          "tag": "chain rule",
+          "narration": "Differentiate the fourth power and multiply by 3, the derivative inside."
+        },
+        {
+          "n": 2,
+          "display": "dy/dx = 12(2 + 3x)³",
+          "tag": "simplify",
+          "narration": "4 times 3 gives 12 times 2 plus 3 x cubed."
+        },
+        {
+          "n": 3,
+          "display": "at x = −1: 12(2 − 3)³ = 12(−1)³ = −12",
+          "tag": "substitute",
+          "narration": "Put in x equals minus 1 to get 12 times minus 1 cubed, which is minus 12."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0029",
+      "questionId": "math-api-0029",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "dy/dx = −2 − 6x = 0",
+          "tag": "turning point",
+          "narration": "Differentiate y and set the derivative equal to zero."
+        },
+        {
+          "n": 2,
+          "display": "−6x = 2 → x = −1/3",
+          "tag": "find x",
+          "narration": "Solve for x to get minus one third."
+        },
+        {
+          "n": 3,
+          "display": "y = 1 − 2(−1/3) − 3(1/9)",
+          "tag": "substitute",
+          "narration": "Substitute x equals minus one third into y."
+        },
+        {
+          "n": 4,
+          "display": "y = 1 + 2/3 − 1/3 = 4/3",
+          "tag": "answer",
+          "narration": "1 plus two thirds minus one third gives four thirds."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0159",
+      "questionId": "math-api-0159",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "(2x + 1)(3x + 1) = 6x² + 2x + 3x + 1",
+          "tag": "expand",
+          "narration": "Expand the product of the two brackets."
+        },
+        {
+          "n": 2,
+          "display": "= 6x² + 5x + 1",
+          "tag": "collect terms",
+          "narration": "Combine like terms to get 6 x squared plus 5 x plus 1."
+        },
+        {
+          "n": 3,
+          "display": "dy/dx = 12x + 5",
+          "tag": "differentiate",
+          "narration": "Differentiate term by term to get 12 x plus 5."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0020",
+      "questionId": "math-api-0020",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "log₁₀(10³) = 3",
+          "tag": "first term",
+          "narration": "Log base 10 of 10 cubed is 3."
+        },
+        {
+          "n": 2,
+          "display": "log₁₀(10) = 1",
+          "tag": "second term",
+          "narration": "Log base 10 of 10 is 1."
+        },
+        {
+          "n": 3,
+          "display": "3 + 1 = 4",
+          "tag": "add",
+          "narration": "3 plus 1 equals 4."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0091",
+      "questionId": "math-api-0091",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x² = 3⁻⁸",
+          "tag": "index form",
+          "narration": "Convert the logarithm to index form: x squared equals 3 to the minus 8."
+        },
+        {
+          "n": 2,
+          "display": "x = 3⁻⁴",
+          "tag": "take positive root",
+          "narration": "Halve the exponent to get x equals 3 to the minus 4."
+        },
+        {
+          "n": 3,
+          "display": "x = 1 ÷ 3⁴ = 1/81",
+          "tag": "evaluate",
+          "narration": "1 over 3 to the fourth power is 1 over 81."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0117",
+      "questionId": "math-api-0117",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "log₁₀(4^(1/3)) = (1/3) log₁₀ 4",
+          "tag": "power law",
+          "narration": "Bring the power one third to the front of the log."
+        },
+        {
+          "n": 2,
+          "display": "= 0.6021 ÷ 3",
+          "tag": "substitute",
+          "narration": "Substitute 0.6021 and divide by 3."
+        },
+        {
+          "n": 3,
+          "display": "= 0.2007",
+          "tag": "answer",
+          "narration": "0.6021 divided by 3 gives 0.2007."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0129",
+      "questionId": "math-api-0129",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "log(4²) + log(5³) − log 2",
+          "tag": "move powers",
+          "narration": "Move the 2 and 3 up as powers: log 16 plus log 125 minus log 2."
+        },
+        {
+          "n": 2,
+          "display": "= log((16 × 125) ÷ 2)",
+          "tag": "combine",
+          "narration": "Multiply 16 by 125 and divide by 2 inside one log."
+        },
+        {
+          "n": 3,
+          "display": "= log(1000) = 3",
+          "tag": "evaluate",
+          "narration": "16 times 125 over 2 is 1000, and log base 10 of 1000 is 3."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0005",
+      "questionId": "math-api-0005",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x + 3y = 0 → x = −3y",
+          "tag": "isolate x",
+          "narration": "From the second equation, x equals minus 3 y."
+        },
+        {
+          "n": 2,
+          "display": "−2(−3y) − 5y = 3 → 6y − 5y = 3",
+          "tag": "substitute",
+          "narration": "Put minus 3 y into the first equation to get 6 y minus 5 y equals 3."
+        },
+        {
+          "n": 3,
+          "display": "y = 3",
+          "tag": "find y",
+          "narration": "So y equals 3."
+        },
+        {
+          "n": 4,
+          "display": "x = −3(3) = −9",
+          "tag": "find x",
+          "narration": "Substitute back: x equals minus 3 times 3, which is minus 9."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0079",
+      "questionId": "math-api-0079",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "(1 + x) ÷ (5 + x) = 1/2",
+          "tag": "set up equation",
+          "narration": "Write 1 plus x over 5 plus x equals one half."
+        },
+        {
+          "n": 2,
+          "display": "2(1 + x) = 5 + x",
+          "tag": "cross-multiply",
+          "narration": "Cross-multiply to get 2 times 1 plus x equals 5 plus x."
+        },
+        {
+          "n": 3,
+          "display": "2 + 2x = 5 + x → x = 3",
+          "tag": "solve",
+          "narration": "2 plus 2 x equals 5 plus x, so x equals 3."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0107",
+      "questionId": "math-api-0107",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "d² − 4d − 96 = 0",
+          "tag": "find factors",
+          "narration": "Find two numbers that multiply to minus 96 and add to minus 4: minus 12 and 8."
+        },
+        {
+          "n": 2,
+          "display": "(d − 12)(d + 8) = 0",
+          "tag": "factorise",
+          "narration": "Write d minus 12 times d plus 8 equals zero."
+        },
+        {
+          "n": 3,
+          "display": "d = 12 or d = −8",
+          "tag": "solve",
+          "narration": "So d equals minus 8 or 12."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0120",
+      "questionId": "math-api-0120",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "−6 ≤ 4 − 2x → 2x ≤ 10 → x ≤ 5",
+          "tag": "left half",
+          "narration": "Solve the left half: add 2 x and add 6 to get 2 x less than or equal to 10, so x is at most 5."
+        },
+        {
+          "n": 2,
+          "display": "4 − 2x < 5 − x → −1 < x",
+          "tag": "right half",
+          "narration": "Solve the right half: add 2 x and subtract 5 to get minus 1 is less than x."
+        },
+        {
+          "n": 3,
+          "display": "−1 < x ≤ 5",
+          "tag": "combine",
+          "narration": "Combine both parts: minus 1 is less than x, which is less than or equal to 5."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0145",
+      "questionId": "math-api-0145",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "3x + 6 > 6x + 18",
+          "tag": "expand",
+          "narration": "Expand both brackets: 3 x plus 6 is greater than 6 x plus 18."
+        },
+        {
+          "n": 2,
+          "display": "6 − 18 > 6x − 3x → −12 > 3x",
+          "tag": "collect terms",
+          "narration": "Subtract 18 and 3 x to get minus 12 is greater than 3 x."
+        },
+        {
+          "n": 3,
+          "display": "−4 > x → x < −4",
+          "tag": "divide by 3",
+          "narration": "Divide by 3 to get x is less than minus 4."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0057",
+      "questionId": "math-api-0057",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "d = √((6 − (−6))² + (6 − 1)²)",
+          "tag": "distance formula",
+          "narration": "Find the diameter using the distance formula between P and Q."
+        },
+        {
+          "n": 2,
+          "display": "d = √(12² + 5²) = √169 = 13",
+          "tag": "diameter",
+          "narration": "12 squared plus 5 squared is 169, whose square root is 13."
+        },
+        {
+          "n": 3,
+          "display": "r = 13 ÷ 2 = 6.5 units",
+          "tag": "halve for radius",
+          "narration": "Divide the diameter 13 by 2 to get a radius of 6.5 units."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0119",
+      "questionId": "math-api-0119",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = (y₂ − y₁) ÷ (x₂ − x₁)",
+          "tag": "gradient formula",
+          "narration": "Gradient equals change in y divided by change in x."
+        },
+        {
+          "n": 2,
+          "display": "m = (5 − 1) ÷ (2 − 1)",
+          "tag": "substitute",
+          "narration": "Put in 5 minus 1 over 2 minus 1."
+        },
+        {
+          "n": 3,
+          "display": "m = 4 ÷ 1 = 4",
+          "tag": "answer",
+          "narration": "4 divided by 1 equals 4."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0023",
+      "questionId": "math-api-0023",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a + ar = 3,  r(a + ar) = −6",
+          "tag": "factor r",
+          "narration": "Factor r out of the sum of the second and third terms."
+        },
+        {
+          "n": 2,
+          "display": "3r = −6 → r = −2",
+          "tag": "find r",
+          "narration": "Substitute 3 to get 3 r equals minus 6, so r equals minus 2."
+        },
+        {
+          "n": 3,
+          "display": "a(1 − 2) = 3 → a = −3",
+          "tag": "find a",
+          "narration": "Put r equals minus 2 into a plus a r equals 3 to get a equals minus 3."
+        },
+        {
+          "n": 4,
+          "display": "a + r = −3 + (−2) = −5",
+          "tag": "answer",
+          "narration": "Add a and r: minus 3 plus minus 2 gives minus 5."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0093",
+      "questionId": "math-api-0093",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "S∞ = a ÷ (1 − r)",
+          "tag": "infinite sum",
+          "narration": "Sum to infinity equals a divided by 1 minus r."
+        },
+        {
+          "n": 2,
+          "display": "1 − r = (−1/8) ÷ (−1/10) = 10/8 = 5/4",
+          "tag": "solve for 1 − r",
+          "narration": "1 minus r equals minus one eighth over minus one tenth, which is five fourths."
+        },
+        {
+          "n": 3,
+          "display": "r = 1 − 5/4 = −1/4",
+          "tag": "answer",
+          "narration": "1 minus five fourths gives r equals minus one fourth."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0018",
+      "questionId": "math-api-0018",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "CSA = π × r × l",
+          "tag": "cone formula",
+          "narration": "Curved surface area equals pi times radius times slant height."
+        },
+        {
+          "n": 2,
+          "display": "CSA = (22/7) × 3 × 7",
+          "tag": "substitute",
+          "narration": "Substitute 22 over 7, radius 3, and slant height 7."
+        },
+        {
+          "n": 3,
+          "display": "CSA = 22 × 3 = 66 cm²",
+          "tag": "cancel and solve",
+          "narration": "The 7s cancel, leaving 22 times 3, which is 66 square centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0051",
+      "questionId": "math-api-0051",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ext = 180° − 140° = 40°",
+          "tag": "exterior angle",
+          "narration": "Subtract 140 degrees from 180 to get an exterior angle of 40 degrees."
+        },
+        {
+          "n": 2,
+          "display": "n = 360° ÷ 40°",
+          "tag": "divide 360",
+          "narration": "Divide 360 degrees by 40 degrees."
+        },
+        {
+          "n": 3,
+          "display": "n = 9 sides",
+          "tag": "answer",
+          "narration": "360 divided by 40 gives 9 sides."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0110",
+      "questionId": "math-api-0110",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "L = (θ ÷ 360°) × 2πr",
+          "tag": "arc length",
+          "narration": "Arc length equals angle over 360 times 2 pi r."
+        },
+        {
+          "n": 2,
+          "display": "L = (120/360) × 2 × (22/7) × 21",
+          "tag": "substitute",
+          "narration": "Put in 120 over 360 times 2 times 22 sevenths times 21."
+        },
+        {
+          "n": 3,
+          "display": "L = (1/3) × 2 × 22 × 3 = 44 cm",
+          "tag": "cancel and solve",
+          "narration": "Cancel the 3s to get 2 times 22, which is 44 centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0033",
+      "questionId": "math-api-0033",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Total outcomes = 2³ = 8",
+          "tag": "sample space",
+          "narration": "Three coin tosses give 2 cubed, or 8, equally likely outcomes."
+        },
+        {
+          "n": 2,
+          "display": "2 heads: HHT, HTH, THH (3 ways)",
+          "tag": "count favourable",
+          "narration": "Exactly two heads occur in 3 outcomes: HHT, HTH, and THH."
+        },
+        {
+          "n": 3,
+          "display": "P = 3/8",
+          "tag": "probability",
+          "narration": "Divide 3 by 8 to get three eighths."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0121",
+      "questionId": "math-api-0121",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "⁵C₂ = (5 × 4) ÷ 2 = 10",
+          "tag": "choose women",
+          "narration": "Ways to choose 2 women from 5 is 5 times 4 over 2, which is 10."
+        },
+        {
+          "n": 2,
+          "display": "⁶C₃ = (6 × 5 × 4) ÷ 6 = 20",
+          "tag": "choose men",
+          "narration": "Ways to choose 3 men from 6 is 6 times 5 times 4 over 6, which is 20."
+        },
+        {
+          "n": 3,
+          "display": "10 × 20 = 200",
+          "tag": "multiply",
+          "narration": "Multiply 10 by 20 to get 200 committees."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0031",
+      "questionId": "math-api-0031",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "mean = (1 + 3 + 5 + 7) ÷ 4 = 4",
+          "tag": "find mean",
+          "narration": "Find the mean: 16 divided by 4 is 4."
+        },
+        {
+          "n": 2,
+          "display": "|x − 4| → 3, 1, 1, 3",
+          "tag": "distances",
+          "narration": "Find each distance from 4: 3, 1, 1, and 3."
+        },
+        {
+          "n": 3,
+          "display": "MD = (3 + 1 + 1 + 3) ÷ 4 = 8 ÷ 4 = 2",
+          "tag": "average",
+          "narration": "Add the distances to get 8, then divide by 4 to get 2."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0111",
+      "questionId": "math-api-0111",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "mean = (2 + 5 + 7 + 10) ÷ 4 = 6",
+          "tag": "find mean",
+          "narration": "Find the mean: 24 divided by 4 is 6."
+        },
+        {
+          "n": 2,
+          "display": "(x − 6)² → 16, 1, 1, 16",
+          "tag": "square differences",
+          "narration": "Subtract 6 and square each difference: 16, 1, 1, and 16."
+        },
+        {
+          "n": 3,
+          "display": "σ² = (16 + 1 + 1 + 16) ÷ 4 = 34 ÷ 4 = 8.5",
+          "tag": "average",
+          "narration": "Sum to 34 and divide by 4 to get 8.5."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-api-0055",
+      "questionId": "math-api-0055",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "A = P(1 + r/100)ⁿ",
+          "tag": "compound formula",
+          "narration": "Amount equals principal times 1 plus r over 100 to the power n."
+        },
+        {
+          "n": 2,
+          "display": "121,000 = P(1.1)² = 1.21P",
+          "tag": "substitute",
+          "narration": "Put in 121,000, rate 10 percent, and 2 years: 1.1 squared is 1.21."
+        },
+        {
+          "n": 3,
+          "display": "P = 121,000 ÷ 1.21 = ₦100,000",
+          "tag": "solve",
+          "narration": "Divide 121,000 by 1.21 to get 100,000 naira."
+        }
+      ]
+    }
+  ]
+}

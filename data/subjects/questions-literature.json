@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "subject": "literature",
+  "count": 12,
+  "questions": [
+    {
+      "id": "lit-api-0003",
+      "subject": "literature",
+      "topic": "Literary terms and devices",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Caricature is used to",
+      "options": [
+        {
+          "id": "a",
+          "text": "ridicule a person by distorting his most prominent features",
+          "why": "Caricature exaggerates and distorts distinctive traits to mock or poke fun at someone.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "censure an individual by emphasizing his weakness",
+          "why": "Emphasizing moral flaws to criticize someone describes satire or invective, not distortion of traits.",
+          "whyWrong": "Pointing out someone's moral flaws to rebuke them is the work of satire or invective rather than caricature. Caricature specifically relies on comic distortion or overstatement of a person's standout features, whether physical or behavioural."
+        },
+        {
+          "id": "c",
+          "text": "expose the folly in literature",
+          "why": "Exposing general human or social folly is the broader aim of satire, not caricature alone.",
+          "whyWrong": "Exposing folly across society or human behaviour is the broad goal of satire. Caricature is a narrower technique focused on exaggerating an individual's conspicuous traits."
+        },
+        {
+          "id": "d",
+          "text": "elicit the artistic potential of dramatists.",
+          "why": "Caricature is a technique of characterization, not a way to inspire playwrights.",
+          "whyWrong": "Caricature appears in prose, journalism, and cartooning as well as drama, and it targets a character or public figure for mockery. It has nothing to do with drawing out a dramatist's artistic potential."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Picture a political cartoon where a leader's big nose or trademark habit is blown wildly out of proportion.",
+      "explanation": "Caricature comes from the Italian word meaning 'to load or exaggerate.' In both literature and visual art, it mocks a person by magnifying and distorting their most noticeable features or mannerisms.",
+      "trap": "Censuring weakness sounds close because caricature is often critical, but the defining mechanism of caricature is distortion of prominent features, whereas moral rebuke belongs to satire.",
+      "mnemonic": "Caricature = Cartoonish exaggeration of standout features.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Caricature makes fun of someone by blowing up their most noticeable traits—like a giant grin, a shrill voice, or a greedy habit—until they look ridiculous."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Censuring someone's weakness focuses on moral criticism, which is closer to satire or lampooning. Caricature specifically works by distorting and exaggerating a person's most prominent features."
+        },
+        {
+          "id": "simpler",
+          "label": "Key literary rule",
+          "answer": "Look for two keywords whenever caricature is tested: distortion (or exaggeration) and prominent features used for ridicule."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What literary device uses humour, irony, or ridicule to expose and criticize society's vices and follies?",
+          "similarAnswer": "Satire, which critiques broader human or social foolishness rather than just distorting one person's features."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 153451,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0008",
+      "subject": "literature",
+      "topic": "Drama elements",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Based on General Literary Principles: A play that combines elements of both comedy and tragedy, balancing serious and humorous tones, is called",
+      "options": [
+        {
+          "id": "a",
+          "text": "tragi-comedy",
+          "why": "Tragi-comedy blends tragic seriousness and comic relief within a single play.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "melodrama",
+          "why": "Melodrama relies on sensational plots and heightened emotion rather than balancing tragedy and comedy.",
+          "whyWrong": "Melodrama exaggerates emotions and pits clear-cut heroes against villains in a suspenseful plot, often with a happy ending. It does not specifically balance tragic depth with comedy the way tragi-comedy does."
+        },
+        {
+          "id": "c",
+          "text": "farce",
+          "why": "Farce is purely comic, using slapstick and absurd situations to provoke laughter.",
+          "whyWrong": "Farce aims strictly for boisterous laughter through improbable plots, mistaken identities, and physical humour. It lacks the serious tragic dimension described in the question."
+        },
+        {
+          "id": "d",
+          "text": "satire",
+          "why": "Satire mocks human folly or social institutions rather than merging tragedy and comedy.",
+          "whyWrong": "Satire uses wit and irony to criticize vices or social abuses across prose, poetry, or drama. Combining serious tragic stakes with humour is the defining feature of tragi-comedy, not satire."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Notice the two dramatic genres named right inside the stem.",
+      "explanation": "A tragi-comedy deliberately weaves together serious, potentially tragic conflict and lighter comic elements. It often moves through grave danger or sorrow before ending with relief, reconciliation, or mixed emotions.",
+      "trap": "Melodrama also ends happily after intense crisis, so students sometimes pick it by mistake. However, melodrama is defined by sensationalism and moral extremes, whereas tragi-comedy blends tragedy and comedy.",
+      "mnemonic": "Tragi-comedy = Tragedy + Comedy side by side.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If a play makes you feel tense or sad in one moment and laugh in the next, mixing tragic moments with comedy, it is a tragi-comedy."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Melodrama focuses on exaggerated emotion, clear heroes and villains, and thrilling rescues rather than blending the genres of tragedy and comedy."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Split the word in two: 'tragi-' (serious or tragic elements) + 'comedy' (humorous or hopeful elements), just like the question says."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which dramatic subgenre relies on absurd situations, mistaken identity, and slapstick solely to provoke loud laughter?",
+          "similarAnswer": "Farce."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 17280,
+        "yearLabel": "2002"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0011",
+      "subject": "literature",
+      "topic": "Literary appreciation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The atmosphere or emotional effect created by a literary work is the",
+      "options": [
+        {
+          "id": "a",
+          "text": "tone",
+          "why": "Tone is the writer's or speaker's attitude toward the subject, not the emotional atmosphere felt by the reader.",
+          "whyWrong": "Tone reflects the author's or speaker's attitude toward a subject or audience—such as sarcastic, solemn, or playful. The overall atmosphere or emotional feeling evoked in the reader is called mood."
+        },
+        {
+          "id": "b",
+          "text": "mood",
+          "why": "Mood is the prevailing atmosphere or emotional feeling a work evokes in the reader.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "theme",
+          "why": "Theme is the central idea or message of the work, not its emotional atmosphere.",
+          "whyWrong": "Theme is the underlying idea or insight about life that a story or poem explores, such as betrayal or ambition. It is an intellectual concept rather than the emotional atmosphere created for the audience."
+        },
+        {
+          "id": "d",
+          "text": "point of view",
+          "why": "Point of view is the narrative vantage point from which the story is told.",
+          "whyWrong": "Point of view refers to who tells the story—such as first-person 'I' or third-person omniscient. It shapes perspective, not the emotional atmosphere itself."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Separate the speaker's attitude from the feeling the setting and imagery create in the reader.",
+      "explanation": "Mood is the emotional atmosphere—such as gloom, suspense, or warmth—that a literary work creates for the reader through setting, imagery, and diction. While tone shapes mood, the two terms name different sides of that experience.",
+      "trap": "Tone and mood are easily swapped under exam pressure. Remember that tone belongs to the speaker's attitude, whereas mood is the emotional climate the reader steps into.",
+      "mnemonic": "Tone = Talker's attitude; Mood = My feeling as a reader.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Mood is the overall vibe or feeling of a story or poem—like spooky, peaceful, or tense—that the reader experiences."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Tone is how the author or speaker feels and sounds toward the subject (for example, bitter or admiring). Mood is the emotional atmosphere created for the reader."
+        },
+        {
+          "id": "simpler",
+          "label": "Key literary rule",
+          "answer": "Whenever a question asks for the 'atmosphere' or 'emotional effect on the reader,' the answer is mood; when it asks for the 'author's or speaker's attitude,' the answer is tone."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What term describes a writer's or speaker's attitude toward the subject or audience in a literary text?",
+          "similarAnswer": "Tone."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 17376,
+        "yearLabel": "2004"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0012",
+      "subject": "literature",
+      "topic": "African and Nigerian literature",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Meka’s acceptance of the medal in Ferdinand Oyono’s The Old Man and the Medal reflects his",
+      "options": [
+        {
+          "id": "a",
+          "text": "naive trust in colonial intentions",
+          "why": "Meka genuinely believes the French medal honours his sacrifices as a loyal friend.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "rejection of village traditions",
+          "why": "Meka remains deeply rooted in his village community and kinship ties throughout the novel.",
+          "whyWrong": "Far from abandoning his community, Meka celebrates with his kinsmen and stays anchored in village life. Accepting the medal shows his gullibility toward colonial praise, not a rejection of African customs."
+        },
+        {
+          "id": "c",
+          "text": "desire for economic gain",
+          "why": "The medal brings honour on paper rather than money, and Meka is motivated by pride and faith, not profit.",
+          "whyWrong": "Meka has already given his land to the Catholic mission and lost two sons in the war without receiving wealth in return. He accepts the medal out of pride and sincere belief in colonial goodwill, not out of greed."
+        },
+        {
+          "id": "d",
+          "text": "commitment to resistance",
+          "why": "At the start of the ceremony, Meka is loyal and submissive rather than rebellious.",
+          "whyWrong": "Disillusionment only hits Meka after the ceremony, when he is humiliated, stranded in the rain, and arrested by colonial guards. At the moment he accepts the medal, he trusts the colonial authorities completely."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "b"
+      ],
+      "hint": "Remember how Meka feels before his humiliation in the rain and the police cell.",
+      "explanation": "In Ferdinand Oyono's novel, Meka takes the French High Commissioner's invitation and medal at face value, believing the colonial rulers truly respect him for giving up his land and losing his two sons in the war. That naive trust makes his later betrayal and arrest all the more stinging.",
+      "trap": "Because Meka suffers poverty and later grows bitter, desire for economic gain can look plausible. Yet Oyono portrays Meka as driven by sincere pride and misplaced faith in colonial brotherhood, not money.",
+      "mnemonic": "Meka's Medal = Misplaced trust before harsh awakening.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Meka believes the French rulers are genuinely thanking him like an equal friend, which shows how blindly he trusts them before they humiliate him."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The medal is a symbolic trinket, not a cash prize. Meka wants recognition and genuinely believes in the colonial promise of friendship, rather than chasing wealth."
+        },
+        {
+          "id": "simpler",
+          "label": "Key literary rule",
+          "answer": "In anti-colonial African novels like Oyono's, early loyalty from an elder often serves as dramatic irony before colonial hypocrisy is exposed."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What triggers Meka's final disillusionment with French colonial rule in The Old Man and the Medal?",
+          "similarAnswer": "Being left out in the storm after the reception and beaten and arrested by colonial police despite his medal."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 17537,
+        "yearLabel": "2008"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0014",
+      "subject": "literature",
+      "topic": "Drama elements",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The French term 'Denouement' refers to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The very beginning of the play",
+          "why": "The opening background of a play is the exposition or prologue, not the denouement.",
+          "whyWrong": "The beginning of a play where characters and setting are introduced is called the exposition (or prologue). Denouement happens at the opposite end of the plot, after the climax."
+        },
+        {
+          "id": "b",
+          "text": "The highest point of tension",
+          "why": "The peak of tension is the climax, which occurs before the denouement.",
+          "whyWrong": "The moment of greatest tension or turning point in a plot is the climax. The denouement comes afterward, as the conflict settles and its consequences play out."
+        },
+        {
+          "id": "c",
+          "text": "The final resolution or unraveling of the plot where loose ends are tied up",
+          "why": "Denouement literally means 'unknotting'—the closing stage where conflicts are resolved.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The main character's fatal flaw",
+          "why": "A tragic hero's fatal flaw is hamartia, not denouement.",
+          "whyWrong": "A character's tragic flaw or error in judgement is known by the Greek term hamartia. Denouement is a French structural term for the end of the plot, not a character trait."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Think of the French verb 'dénouer', meaning to untie a knot.",
+      "explanation": "Denouement comes from the French word for 'unknotting.' After the climax and falling action, the denouement untangles the remaining mysteries, resolves the central conflict, and shows the final outcome for the characters.",
+      "trap": "Because both climax and denouement are major plot milestones, students sometimes confuse the peak of tension with the ending. Climax is the knot pulled tightest; denouement is untying the knot afterward.",
+      "mnemonic": "Denouement = Done and untied (the knot is undone at the end).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The denouement is the wrapping-up part at the end of a story or play where questions are answered and loose ends are settled."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The highest point of tension is the climax. The denouement happens after the climax, once the main crisis has passed and the plot winds down to its final outcome."
+        },
+        {
+          "id": "simpler",
+          "label": "Key literary rule",
+          "answer": "Remember the five-part plot arc in order: Exposition -> Rising Action -> Climax -> Falling Action -> Denouement."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What Greek term describes a tragic protagonist's fatal flaw or error in judgement?",
+          "similarAnswer": "Hamartia."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 72744,
+        "yearLabel": "2010"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0015",
+      "subject": "literature",
+      "topic": "Non-African literature",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In Shakespeare’s Romeo and Juliet, 'star-crossed lovers' in the prologue suggests the tragedy is",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoidable",
+          "why": "The prologue explicitly warns from the start that the lovers' deaths are doomed to happen.",
+          "whyWrong": "Shakespeare tells the audience in the opening lines that the pair will take their own lives. Calling them 'star-crossed' reinforces inevitability, not an easily avoided outcome."
+        },
+        {
+          "id": "b",
+          "text": "Fated",
+          "why": "'Star-crossed' means thwarted by the stars—destined for doom from the beginning.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Caused by enmity",
+          "why": "The family feud drives the plot, but the phrase 'star-crossed' specifically points to fate and astrology.",
+          "whyWrong": "Although the Montague–Capulet feud fuels the tragedy in the play, the specific expression 'star-crossed' refers to celestial destiny, meaning the stars are aligned against the lovers. It points to fate rather than family hatred alone."
+        },
+        {
+          "id": "d",
+          "text": "A misfortune",
+          "why": "'Misfortune' suggests mere bad luck rather than cosmic destiny written in the stars.",
+          "whyWrong": "A misfortune is an unlucky accident, whereas 'star-crossed' carries the Renaissance idea that fate and the stars govern human lives. It portrays their doom as predetermined, not random."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "In Elizabethan belief, the alignment of the stars was thought to control a person's destiny.",
+      "explanation": "In the Prologue to Romeo and Juliet, Shakespeare calls the couple 'star-crossed lovers'—meaning the stars are crossed against them. This frames their tragic death as fated and inescapable from the very opening lines.",
+      "trap": "Because the Montagues and Capulets' hatred clearly causes much of the conflict, 'Caused by enmity' is tempting. Look closely at the quoted phrase itself: 'star-crossed' specifically expresses fate.",
+      "mnemonic": "Star-crossed = Written in the stars = Fated.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "People used to believe the stars decided your destiny. Calling Romeo and Juliet 'star-crossed' means fate is working against them and their tragedy is fated."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The feud between the two families is definitely part of the story, and the prologue mentions 'ancient grudge' too. However, the question asks specifically what 'star-crossed lovers' means, and that image refers to fate."
+        },
+        {
+          "id": "simpler",
+          "label": "Key literary rule",
+          "answer": "When a question quotes a specific phrase in a play, anchor your answer in the literal metaphor of those exact words."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What dramatic purpose does the Prologue serve at the start of Shakespeare's Romeo and Juliet?",
+          "similarAnswer": "It foreshadows the ending and establishes the themes of fate and family feud."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 17676,
+        "yearLabel": "2012"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0017",
+      "subject": "literature",
+      "topic": "Non-African literature",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The primary conflict in Ernest Hemingway's 'The Old Man and the Sea' is between:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two rival fishermen",
+          "why": "Other fishermen pity or mock Santiago's bad luck, but the main struggle is out on the open ocean.",
+          "whyWrong": "While younger fishermen tease Santiago about his 84-day streak without a catch, he never fights a rival fisherman. The core drama happens far out at sea when he hooks a giant fish."
+        },
+        {
+          "id": "b",
+          "text": "Santiago and a giant marlin (Man vs. Nature)",
+          "why": "Santiago's gruelling three-day battle with the huge marlin forms the heart of the novella.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Santiago and the Cuban government",
+          "why": "Politics and government play no role in Santiago's struggle at sea.",
+          "whyWrong": "Hemingway sets the novella in a small Cuban fishing village, yet the Cuban government never opposes Santiago. His central conflict is physical and spiritual endurance against the natural world."
+        },
+        {
+          "id": "d",
+          "text": "A shark and a whale",
+          "why": "Sharks attack the dead marlin later, not a whale, and Santiago is the human protagonist.",
+          "whyWrong": "Sharks do appear near the end to strip the marlin's carcass as Santiago sails home, which makes this option sound vaguely familiar. However, there is no whale in the main conflict, and the central struggle is between Santiago and the giant marlin."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Think of the title: an aging fisherman alone in his skiff against a creature of the deep.",
+      "explanation": "In Hemingway's novella, the aging fisherman Santiago sails far out into the Gulf Stream and hooks an enormous marlin. His three-day endurance match against the marlin—and later the sharks—embodies the classic Man vs. Nature conflict.",
+      "trap": "Because sharks devour the marlin on the return trip, any option mentioning a shark can catch your eye. Read the whole option carefully: the protagonist is Santiago, and his central opponent is the giant marlin.",
+      "mnemonic": "Old Man + Sea = Santiago vs. the giant Marlin (Man vs. Nature).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Most of the story is about old Santiago fighting to hold onto and reel in a massive marlin far out at sea, showing a human testing himself against nature."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Sharks really do show up later in the story to eat the marlin, so the word 'shark' can trick you. But there is no shark-versus-whale fight; the main conflict is Santiago against the giant marlin."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Match the title directly: 'The Old Man' is Santiago, and 'the Sea' brings the giant marlin—Man versus Nature."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In literature, what type of conflict is shown when a character struggles to survive against storms, wild animals, or the open ocean?",
+          "similarAnswer": "External conflict (specifically Man vs. Nature)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 71372,
+        "yearLabel": "2012"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0018",
+      "subject": "literature",
+      "topic": "Poetry and prosody",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is a key characteristic of an Epic poem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is very short and humorous.",
+          "why": "Epics are long and elevated in tone, unlike short comic verse such as limericks or epigrams.",
+          "whyWrong": "Short, humorous poems belong to forms like the limerick or epigram. An epic is vast in scope, serious in tone, and often spans thousands of lines or multiple books."
+        },
+        {
+          "id": "b",
+          "text": "It is a long narrative poem detailing the heroic deeds of a person of unusual courage and unparalleled bravery.",
+          "why": "Epics are grand, book-length narrative poems celebrating larger-than-life heroes.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It only has four lines.",
+          "why": "A four-line poem or stanza is a quatrain, far too brief for an epic.",
+          "whyWrong": "A four-line unit in poetry is called a quatrain, not an epic. Classic epics like Homer's Odyssey or African oral epics like Sundiata tell sweeping stories across long narratives."
+        },
+        {
+          "id": "d",
+          "text": "It focuses entirely on the poet's personal feelings.",
+          "why": "Expressing personal feelings rather than telling a heroic story is the hallmark of a lyric poem.",
+          "whyWrong": "A poem centered on the poet's private emotions and reflections is a lyric poem, such as an ode or sonnet. An epic is a narrative poem focused on heroic action and the fate of a people or nation."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Remember the three main kinds of poetry: narrative, dramatic, and lyric. Which one tells a grand heroic story?",
+      "explanation": "An epic is a long narrative poem written in an elevated style that recounts the extraordinary deeds of a legendary or national hero. Famous examples include Homer's Iliad and Odyssey and the West African Epic of Sundiata.",
+      "trap": "Personal feelings describe lyric poetry, which students sometimes mix up with epic poetry when revising poetic genres. Keep narrative (story) separate from lyric (emotion).",
+      "mnemonic": "Epic = Extended poem of Extraordinary heroic exploits.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "An epic is like a huge adventure movie in poem form—a very long story about a brave hero doing extraordinary things."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Poems focused on personal emotions and inner thoughts are lyric poems, not epics. An epic tells a grand story about a hero's deeds."
+        },
+        {
+          "id": "simpler",
+          "label": "Key literary rule",
+          "answer": "Always tie 'epic' to three traits: long length, narrative plot (storytelling), and a heroic figure of great courage."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which type of poetry expresses a speaker's personal emotions and feelings rather than telling a long heroic story?",
+          "similarAnswer": "Lyric poetry."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 71989,
+        "yearLabel": "2012"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0019",
+      "subject": "literature",
+      "topic": "African and Nigerian literature",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The 'Negritude' movement was founded by Francophone African and Caribbean intellectuals primarily to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assimilate into French culture",
+          "why": "Negritude arose directly against French assimilation policy, not to support it.",
+          "whyWrong": "French colonial policy pressured colonized elites to assimilate into French culture and look down on African traditions. Negritude was created specifically to resist that assimilation and reclaim Black cultural pride."
+        },
+        {
+          "id": "b",
+          "text": "Reject colonialism and proudly celebrate African heritage, culture, and aesthetics",
+          "why": "Negritude affirmed Black identity, African history, and artistic dignity against colonial racism.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Promote Marxist revolution",
+          "why": "While some members engaged with socialist ideas, the core purpose of Negritude was cultural and racial affirmation.",
+          "whyWrong": "Although individual writers held varied political views, Negritude was primarily a literary and cultural movement rather than a purely Marxist party program. Its defining aim was asserting African dignity and rejecting colonial cultural domination."
+        },
+        {
+          "id": "d",
+          "text": "Write plays in English",
+          "why": "Negritude was founded by French-speaking (Francophone) writers and focused largely on poetry and essays.",
+          "whyWrong": "The founders—Léopold Sédar Senghor, Aimé Césaire, and Léon-Gontran Damas—wrote in French, not English. Their movement flourished mainly through poetry and cultural essays rather than English drama."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Think of Léopold Sédar Senghor and Aimé Césaire responding to French colonial rule in 1930s Paris.",
+      "explanation": "Founded in the 1930s by Francophone thinkers including Léopold Sédar Senghor, Aimé Césaire, and Léon-Gontran Damas, Negritude challenged colonial racism and French cultural assimilation. It celebrated African heritage, rhythm, history, and Black identity with pride.",
+      "trap": "Students who remember 'French assimilation policy' from history sometimes pick 'Assimilate into French culture.' Remember that Negritude was the exact opposite—a rebellion against assimilation.",
+      "mnemonic": "Negritude = Pride in African roots, NOT French assimilation.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Negritude was a movement started by French-speaking African and Caribbean writers to push back against colonial rule and proudly celebrate African culture and Black identity."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Assimilation was what the French colonial government wanted colonized people to do. Negritude writers rejected assimilation and insisted that African heritage had its own greatness."
+        },
+        {
+          "id": "simpler",
+          "label": "Key literary rule",
+          "answer": "Connect Negritude to three names—Senghor, Césaire, and Damas—and two ideas: anti-colonial resistance and pride in African heritage."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Name two key founders of the Francophone Negritude literary movement.",
+          "similarAnswer": "Léopold Sédar Senghor and Aimé Césaire (along with Léon-Gontran Damas)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 71452,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0020",
+      "subject": "literature",
+      "topic": "Poetry and prosody",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The continuation of a sentence without a pause beyond the end of a line, couplet, or stanza is called:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Caesura",
+          "why": "A caesura is a deliberate pause inside the middle of a poetic line, not a run-on across line breaks.",
+          "whyWrong": "Caesura names a noticeable pause or break within a single line of poetry, often marked by punctuation like a comma or dash. It interrupts a line internally rather than carrying a sentence smoothly over into the next line."
+        },
+        {
+          "id": "b",
+          "text": "Enjambment",
+          "why": "Enjambment (run-on line) carries a grammatical sentence across a line break without pausing.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Elision",
+          "why": "Elision is omitting a sound or syllable (like 'o'er' for 'over') to fit meter, not running a sentence across lines.",
+          "whyWrong": "Elision happens when a poet drops a vowel or syllable—such as writing 'ne'er' for 'never'—to keep a steady rhythm. It deals with pronunciation inside a word rather than sentence flow between lines."
+        },
+        {
+          "id": "d",
+          "text": "End-stopped line",
+          "why": "An end-stopped line finishes a thought with punctuation at the line break, the exact opposite of enjambment.",
+          "whyWrong": "An end-stopped line ends with a pause and punctuation such as a period, comma, or semicolon so the phrase stops at the line's end. The question asks for a sentence continuing without a pause, which is the opposite."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Think of the French root 'enjamber', meaning to stride or step over a boundary.",
+      "explanation": "Enjambment occurs when a phrase or sentence flows past the end of a poetic line, couplet, or stanza into the next without terminal punctuation or a pause. Poets use it to create momentum, urgency, or surprise.",
+      "trap": "End-stopped line sits right beside enjambment in prosody notes, so it is easy to confuse the two. Check whether the sentence pauses at the line break (end-stopped) or strides right over it (enjambment).",
+      "mnemonic": "Enjambment = Jump over the line end without stopping.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "When a sentence in a poem does not stop at the end of a line and keeps flowing straight into the next line, that is enjambment."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "An end-stopped line is the direct opposite: it has punctuation or a natural pause right at the end of the line. Enjambment keeps the sentence moving across the break."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Contrast three prosody terms: Caesura = pause inside a line; End-stopped = pause at the end of a line; Enjambment = no pause, keep flowing."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What prosodic term describes a noticeable rhythmic pause occurring in the middle of a line of poetry?",
+          "similarAnswer": "Caesura."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 71699,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0021",
+      "subject": "literature",
+      "topic": "Prose elements",
+      "type": "recall",
+      "difficulty": 3,
+      "stem": "Comparing the use of 'the journey' in Homer's 'Odyssey' and Mark Twain's 'Huckleberry Finn' examines the use of a common:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Motif / Archetype",
+          "why": "A recurring narrative pattern like the quest or journey across works is a motif or archetype.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Rhyme scheme",
+          "why": "Rhyme scheme is the pattern of end rhymes in poetry, and Huckleberry Finn is a prose novel.",
+          "whyWrong": "Rhyme scheme describes how end sounds repeat at the ends of lines in a poem, such as ABAB. Mark Twain's Huckleberry Finn is a prose novel, and 'the journey' is a story pattern rather than a rhyme pattern."
+        },
+        {
+          "id": "c",
+          "text": "Stage direction",
+          "why": "Stage directions are performance notes in drama scripts, not shared story patterns in epics and novels.",
+          "whyWrong": "Stage directions tell actors how to move or speak in a play script. Neither Homer's Odyssey nor Twain's Huckleberry Finn is a stage play, and 'the journey' is a narrative element."
+        },
+        {
+          "id": "d",
+          "text": "Poetic meter",
+          "why": "Meter measures stressed syllables in verse, not recurring symbolic plot patterns.",
+          "whyWrong": "Poetic meter refers to the rhythmic pattern of stressed and unstressed syllables in verse, such as iambic pentameter or dactylic hexameter. Comparing a shared 'journey' across two narratives focuses on meaning and structure, not syllable rhythm."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the term that names a universal, recurring story pattern found across different cultures and eras.",
+      "explanation": "A motif is a recurring element, image, or pattern that helps develop a work's theme, while an archetype is a universal pattern—such as the hero's journey—shared across world literature. Both the Odyssey and Huckleberry Finn use a physical voyage as a transformative journey.",
+      "trap": "Because Homer's Odyssey is an epic poem, terms like rhyme scheme or poetic meter might sound relevant to Homer. However, the question compares a shared narrative pattern across Homer and a prose novel, pointing straight to motif / archetype.",
+      "mnemonic": "Journey = recurring pattern = Motif / Archetype.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Both stories use a long trip where the main character grows and faces tests along the way. A classic, repeated story pattern like that is called a motif or archetype."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Rhyme scheme only applies to sound patterns at the ends of lines in rhyming poetry. Huckleberry Finn is a prose novel, and 'the journey' is a recurring story pattern, not a rhyme."
+        },
+        {
+          "id": "simpler",
+          "label": "Key literary rule",
+          "answer": "When two very different works share a universal character type, symbol, or plot pattern (like a quest or journey), literary criticism calls it an archetype or motif."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A wise older mentor who guides a young hero across many different stories is an example of what literary concept?",
+          "similarAnswer": "An archetype (the wise mentor archetype)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 71750,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "lit-api-0033",
+      "subject": "literature",
+      "topic": "Literary terms and devices",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The use of an object to represent an abstract idea is called",
+      "options": [
+        {
+          "id": "a",
+          "text": "metonymy",
+          "why": "Metonymy substitutes a closely associated item (like 'crown' for king) rather than an abstract idea.",
+          "whyWrong": "Metonymy replaces a thing's name with something closely linked to it, such as saying 'the pen' for writing or 'the crown' for the monarchy. Symbolism goes further by using a concrete object—like a dove or a chain—to represent an abstract concept such as peace or oppression."
+        },
+        {
+          "id": "b",
+          "text": "symbolism",
+          "why": "Symbolism uses a concrete object, person, or image to stand for an abstract idea.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "allusion",
+          "why": "Allusion is a brief reference to another text, person, or historical event.",
+          "whyWrong": "Allusion points indirectly to a well-known person, place, myth, or literary work—such as calling a traitor a 'Judas.' It does not mean using a physical object to stand for an abstract idea."
+        },
+        {
+          "id": "d",
+          "text": "irony",
+          "why": "Irony involves a contrast between appearance and reality, or between what is expected and what happens.",
+          "whyWrong": "Irony highlights a gap between what is said and meant, or between expected outcomes and actual events. It is a contrast in meaning or situation rather than an object representing an idea."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Think of a white dove standing for peace or a broken chain standing for freedom.",
+      "explanation": "Symbolism uses a tangible object, action, or image to carry a deeper, abstract meaning beyond its literal sense. For example, a storm may symbolize inner turmoil, or a dawn may symbolize hope.",
+      "trap": "Metonymy also lets one thing stand for another, so it is the most common distractor here. The key difference is that symbolism represents an abstract idea (like justice or freedom), whereas metonymy swaps in a closely associated concrete thing.",
+      "mnemonic": "Symbol = Solid object standing for an abstract idea.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Symbolism is when a real thing in a story—like a rose, a ring, or a storm—stands for a bigger idea like love, loyalty, or trouble."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Metonymy uses a related object as a shortcut name for something concrete—like 'the White House' for the U.S. president. Symbolism uses an object to stand for an abstract idea, like scales for justice."
+        },
+        {
+          "id": "simpler",
+          "label": "Key literary rule",
+          "answer": "Ask yourself: is the object standing for a closely associated title/institution (metonymy), or for a broad abstract concept like peace or guilt (symbolism)?"
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Referring to the monarch simply as 'the crown' is an example of which figure of speech?",
+          "similarAnswer": "Metonymy."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 17960,
+        "yearLabel": "2019"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

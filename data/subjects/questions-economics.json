@@ -1,0 +1,979 @@
+{
+  "version": 1,
+  "subject": "economics",
+  "count": 12,
+  "questions": [
+    {
+      "id": "econ-api-0001",
+      "subject": "economics",
+      "topic": "Money and banking",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "One of the functions of commercial banks is",
+      "options": [
+        {
+          "id": "a",
+          "text": "maintaining stable price in the economy",
+          "why": "Price stability is a Central Bank goal, not a commercial bank function.",
+          "whyWrong": "Controlling overall inflation and maintaining price stability is a macroeconomic duty of the Central Bank. Commercial banks are private financial institutions that serve individuals and businesses, not the whole economy's price level."
+        },
+        {
+          "id": "b",
+          "text": "granting loans to customers",
+          "why": "Commercial banks accept deposits from savers and lend money out to borrowers.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "regulating monetary policies",
+          "why": "The Central Bank designs and regulates monetary policy, while commercial banks follow it.",
+          "whyWrong": "Monetary policy tools such as interest rates and reserve requirements are set by the Central Bank to guide the economy. Commercial banks must obey those rules rather than regulate them."
+        },
+        {
+          "id": "d",
+          "text": "issuing bank notes and coins",
+          "why": "Only the Central Bank has the legal right to print and issue currency.",
+          "whyWrong": "Commercial banks handle and dispense cash to customers, which makes it look as if they issue it. However, the sole legal authority to print bank notes and mint coins belongs to the Central Bank."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Think about what ordinary people and businesses go to a high-street bank for.",
+      "explanation": "Commercial banks accept deposits, safeguard valuables, and grant loans and overdrafts to individuals and businesses. The other three roles—maintaining price stability, regulating monetary policy, and issuing currency—belong to the Central Bank.",
+      "trap": "Issuing bank notes and coins sounds close because you collect cash at commercial bank counters, but only the Central Bank creates legal tender.",
+      "mnemonic": "Commercial banks serve Customers (deposits and loans); the Central bank controls Currency and policy.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Think of commercial banks as shops for money: people keep savings there, and the bank lends some of that money out to borrowers for interest."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "You withdraw naira notes from a commercial bank, but the bank does not print them. Only the Central Bank of Nigeria has the legal power to issue bank notes and coins."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Commercial banks handle retail banking (accepting deposits, granting loans, acting as payment agents), whereas the Central Bank handles currency issuance, monetary policy, and banking regulation."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Pair the C's: Commercial = Customers (loans and deposits); Central = Currency and Control."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which institution serves as the lender of last resort to commercial banks?",
+          "similarAnswer": "The Central Bank."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 4333,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0005",
+      "subject": "economics",
+      "topic": "Elasticity",
+      "type": "recall",
+      "difficulty": 3,
+      "stem": "If the demand for a good is more elastic than its supply, the tax burden is borne",
+      "options": [
+        {
+          "id": "a",
+          "text": "equally by consumers and producers",
+          "why": "Tax is shared equally only when demand and supply have the same elasticity.",
+          "whyWrong": "An equal split of a tax burden happens only when price elasticity of demand equals price elasticity of supply. Here, demand is more elastic than supply, so the shares cannot be equal."
+        },
+        {
+          "id": "b",
+          "text": "more by consumers",
+          "why": "Elastic buyers walk away easily when prices rise, so sellers cannot push most of the tax onto them.",
+          "whyWrong": "When demand is relatively elastic, consumers have good substitutes and cut back sharply if the price rises. Because buyers can easily walk away, producers end up absorbing the larger share of the tax."
+        },
+        {
+          "id": "c",
+          "text": "more by producers",
+          "why": "The more inelastic side bears more tax; here supply is less elastic than demand.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "more by retailers and producers",
+          "why": "Tax incidence analysis compares buyers (consumers) and sellers (producers), not a split with retailers.",
+          "whyWrong": "Standard tax incidence divides the burden between consumers on the demand side and producers on the supply side. Adding retailers as a separate group blurs that supply-versus-demand comparison."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Whoever finds it harder to walk away from the market pays the bigger share of the tax.",
+      "explanation": "Tax incidence depends on relative elasticity: the less elastic (more inelastic) side of the market bears the larger share of an indirect tax. Since demand is more elastic than supply, supply is relatively inelastic, so producers bear more of the tax burden.",
+      "trap": "Students often pick consumers automatically because firms collect sales taxes, forgetting that elastic buyers simply switch away if price rises too much.",
+      "mnemonic": "Inelastic pays more: whoever cannot run away takes the bigger tax hit.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If buyers can easily stop buying when a good gets dearer (elastic demand), the seller cannot raise the price much. So the seller has to swallow most of the tax."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Consumers bear most of the tax only when demand is less elastic than supply—like salt or fuel with few substitutes. Here demand is more elastic, so buyers resist price hikes and producers pay more."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Rule of tax incidence: the side of the market with lower price elasticity (more inelastic) bears the greater share of a unit tax."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Think 'Inelastic = Stuck'. Whoever is more stuck in the market (here, producers with less elastic supply) bears more of the tax."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "When demand for a commodity is perfectly inelastic, who bears the entire burden of a specific tax?",
+          "similarAnswer": "The consumers bear the entire tax burden."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 4456,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0008",
+      "subject": "economics",
+      "topic": "Consumer behaviour",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "If a consumer plans to spend 120k on four oranges but spent 80k, his consumer surplus is",
+      "options": [
+        {
+          "id": "a",
+          "text": "N = 1.50",
+          "why": "This divides 120k by 80k instead of subtracting.",
+          "whyWrong": "1.50 comes from dividing 120 by 80, which gives a ratio rather than a money saving. Consumer surplus is the difference between willingness to pay and actual payment, so you subtract."
+        },
+        {
+          "id": "b",
+          "text": "N = 1.00",
+          "why": "This does not match the difference between 120k and 80k.",
+          "whyWrong": "One naira is 100 kobo, which is neither the planned spending (120k) nor the saving left over. Subtracting 80k from 120k leaves 40k, which is ₦0.40."
+        },
+        {
+          "id": "c",
+          "text": "N = 0.40",
+          "why": "120k minus 80k gives 40k, which equals ₦0.40.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "N = 2.0",
+          "why": "This adds 120k and 80k to get 200k (₦2.00) instead of subtracting.",
+          "whyWrong": "Adding 120k and 80k gives 200k, or ₦2.00, which treats both amounts as spending. Consumer surplus measures what the buyer saved by paying less than planned."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Subtract what the consumer actually paid from what he was willing to pay, then convert kobo to naira.",
+      "explanation": "Consumer surplus equals the maximum amount a consumer is willing to pay minus the actual amount spent: 120k − 80k = 40k. Since 100 kobo = ₦1.00, 40k equals ₦0.40 (written as N = 0.40).",
+      "trap": "Dividing 120 by 80 gives 1.50, or forgetting to convert 40 kobo into naira makes students hesitate on 0.40.",
+      "mnemonic": "Consumer Surplus = Willing minus Paid; 100 kobo makes 1 naira.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "You budgeted 120 kobo for oranges, reached the market, and paid only 80 kobo. The extra 40 kobo you saved is your consumer surplus, and 40 kobo is ₦0.40."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "N = 1.50 comes from dividing 120 by 80. Consumer surplus is a difference (subtraction), not a ratio."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Consumer surplus = Total willingness to pay − Actual expenditure, with 100 kobo = ₦1.00."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Surplus means leftover benefit: Budget minus Bill, then divide kobo by 100 to get naira."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A buyer is willing to pay ₦500 for a book but buys it for ₦350. What is his consumer surplus?",
+          "similarAnswer": "₦150"
+        }
+      ],
+      "animationId": "anim-econ-api-0008",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 4520,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0020",
+      "subject": "economics",
+      "topic": "Elasticity",
+      "type": "calculation",
+      "difficulty": 3,
+      "stem": "At a price of 10 kobo per kg, 1,000 kg of yam are demanded. When the price falls to 5 kobo, quantity demanded rises to 1,500 kg. Using the initial point, the absolute value of point price elasticity of demand is",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.33",
+          "why": "This uses the new price and quantity as the base instead of the initial point.",
+          "whyWrong": "0.33 comes from dividing the 500 kg change by the new quantity (1,500) and the 5 kobo change by the new price (5). The question specifies using the initial point (1,000 kg and 10 kobo) as the base."
+        },
+        {
+          "id": "b",
+          "text": "0.0001",
+          "why": "This puts raw change in price over raw change in quantity without using percentages.",
+          "whyWrong": "Price elasticity uses percentage changes, not raw unit changes, and quantity goes in the numerator while price goes in the denominator. Mixing those up produces a tiny number like 0.0001."
+        },
+        {
+          "id": "c",
+          "text": "1.00",
+          "why": "Quantity rose by 50% and price fell by 50%, so |50% ÷ (−50%)| = 1.00.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "10,000",
+          "why": "This forgets to divide by initial quantity and initial price to get percentages.",
+          "whyWrong": "10,000 treats raw quantity and price figures without converting them to percentage changes from the initial point. Elasticity is always unit-free because it compares percentage changes."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Find the percentage change in quantity from 1,000 kg and the percentage change in price from 10 kobo, then divide.",
+      "explanation": "Using the initial point (P₁ = 10, Q₁ = 1,000): %ΔQ = (1,500 − 1,000) ÷ 1,000 = +50%, and %ΔP = (5 − 10) ÷ 10 = −50%. Therefore, |PED| = |+50% ÷ (−50%)| = 1.00 (unitary elastic).",
+      "trap": "0.33 comes from dividing by the new point (1,500 kg and 5 kobo) instead of the initial point (1,000 kg and 10 kobo).",
+      "mnemonic": "Q over P in percentages: New minus Old over Old.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Price was cut in half (a 50% drop from 10 kobo to 5 kobo), and quantity demanded grew by half (a 50% rise from 1,000 kg to 1,500 kg). Same percentage change on top and bottom gives 1.00."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "0.33 uses the final point (5 kobo and 1,500 kg) as the denominator: (500 ÷ 1,500) ÷ (5 ÷ 5) = 0.33. Because the question says 'using the initial point', you must divide by 1,000 kg and 10 kobo."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Point PED (initial point) = |(ΔQ ÷ Q₁) ÷ (ΔP ÷ P₁)|, where Q₁ and P₁ are the starting quantity and price."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Quantity is always on top of Price (Alphabetical reverse: Q before P? No—remember 'Quickly Price' = Q over P, using Old values at the bottom)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "When price rises from ₦20 to ₦25, quantity demanded falls from 200 units to 180 units. Using the initial point, what is the absolute price elasticity of demand?",
+          "similarAnswer": "0.40"
+        }
+      ],
+      "animationId": "anim-econ-api-0020",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 196349,
+        "yearLabel": "1989"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0021",
+      "subject": "economics",
+      "topic": "Public finance",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A balanced budget is a situation in which",
+      "options": [
+        {
+          "id": "a",
+          "text": "the balance of payments is zero",
+          "why": "Balance of payments tracks international transactions, not the government's fiscal budget.",
+          "whyWrong": "The balance of payments records all financial flows between a country and the rest of the world. A balanced government budget is purely about domestic public revenue and public spending."
+        },
+        {
+          "id": "b",
+          "text": "aggregate demand equals aggregate supply",
+          "why": "AD = AS describes macroeconomic output equilibrium, not the government budget.",
+          "whyWrong": "When aggregate demand equals aggregate supply, the whole economy is in macroeconomic equilibrium. A government budget can still be in surplus or deficit even when AD equals AS."
+        },
+        {
+          "id": "c",
+          "text": "planned government revenue equals planned government expenditure",
+          "why": "A budget balances when expected public revenue matches planned public spending.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "planned exports equal planned imports",
+          "why": "Exports equalling imports describes a balanced trade account, not the fiscal budget.",
+          "whyWrong": "When exports equal imports, the balance of trade is zero. That concerns foreign trade rather than how much tax revenue the government plans to raise and spend."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "b"
+      ],
+      "hint": "A government budget compares expected money coming in (taxes) with planned money going out (spending).",
+      "explanation": "A government budget is an estimate of revenue and expenditure for a fiscal year. It is balanced when planned government revenue equals planned government expenditure (unlike a surplus where revenue exceeds spending, or a deficit where spending exceeds revenue).",
+      "trap": "Seeing the word 'balance' tempts students toward balance of payments, which is about international transactions rather than the government's own budget.",
+      "mnemonic": "Balanced Budget = Taxes In equals Spending Out.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Just like a household budget balances when what you plan to earn equals what you plan to spend, a government budget balances when planned revenue equals planned expenditure."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Balance of payments is a country's record of trade and capital flows with other nations. A balanced budget is strictly about the government's planned revenue and spending."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Balanced budget: Planned Revenue = Planned Expenditure. Surplus: Revenue > Expenditure. Deficit: Expenditure > Revenue."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Budget = Government purse (Revenue vs Expenditure); Balance of Payments = Foreign purse (Inflows vs Outflows)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is it called when planned government expenditure exceeds planned government revenue?",
+          "similarAnswer": "A budget deficit."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 196378,
+        "yearLabel": "1989"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0032",
+      "subject": "economics",
+      "topic": "Demand and supply",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What distinguishes a change in quantity demanded from a change in demand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Change in quantity demanded results from price changes.",
+          "why": "A change in the good's own price moves buyers along the same curve (change in quantity demanded).",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Change in demand is caused by price changes.",
+          "why": "This swaps the two concepts: a change in demand is caused by non-price factors.",
+          "whyWrong": "A change in demand shifts the entire demand curve and is caused by non-price factors such as income, tastes, population, or prices of related goods. A change in the good's own price causes a movement along the curve, called a change in quantity demanded."
+        },
+        {
+          "id": "c",
+          "text": "Quantity demanded and demand are identical concepts.",
+          "why": "They describe different things: a single point versus the whole curve.",
+          "whyWrong": "Demand refers to the entire schedule or curve showing quantities bought at every price, whereas quantity demanded is the specific amount bought at one given price. Treating them as identical confuses shifts with movements."
+        },
+        {
+          "id": "d",
+          "text": "Change in demand only occurs in elastic markets.",
+          "why": "Non-price factors can shift demand in any market, whether elastic or inelastic.",
+          "whyWrong": "Shifts in demand happen in both elastic and inelastic markets whenever income, preferences, or related goods' prices change. Elasticity measures price responsiveness, not whether demand can shift."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "One is caused by the good's own price; the other is caused by outside factors like income and taste.",
+      "explanation": "A change in quantity demanded is a movement along a fixed demand curve caused solely by a change in the commodity's own price. A change in demand is a shift of the entire demand curve caused by non-price factors such as income, tastes, or prices of related goods.",
+      "trap": "Students often swap the definitions and think a 'change in demand' comes from a change in the good's own price.",
+      "mnemonic": "Own Price moves Quantity along the curve; Non-price shifts the Demand curve.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If garri itself gets cheaper and you buy more, that is a change in quantity demanded. If your salary rises and you buy more garri at every price, that is a change in demand."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A change in the good's own price never shifts its demand curve—it only moves you from one point to another on the same curve (change in quantity demanded). Change in demand comes from non-price factors."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Own price change → movement along the curve (change in quantity demanded). Non-price factor → shift of the whole curve (change in demand)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Price stays on the axis, so Price keeps you ON the curve (quantity demanded). Anything off the axis shifts the whole curve (demand)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "An increase in consumers' income causes the demand curve for a normal good to",
+          "similarAnswer": "Shift to the right (an increase in demand)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 111571,
+        "yearLabel": "1996"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0042",
+      "subject": "economics",
+      "topic": "Basic economic concepts",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following best defines opportunity cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The cost of the next best alternative foregone when a choice is made.",
+          "why": "Opportunity cost is the real cost measured by the best option you gave up.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The total cost incurred in producing goods and services.",
+          "why": "Total cost is the sum of fixed and variable production costs, not the alternative given up.",
+          "whyWrong": "Total cost adds up all expenses paid to produce a given output, such as rent, wages, and raw materials. Opportunity cost specifically measures the next best choice sacrificed."
+        },
+        {
+          "id": "c",
+          "text": "The monetary cost associated with an economic decision.",
+          "why": "Money spent is money cost (explicit cost), whereas opportunity cost is real cost.",
+          "whyWrong": "Monetary cost counts only the cash paid out for something. Opportunity cost is the real economic cost—the value of the next best alternative you could have chosen instead."
+        },
+        {
+          "id": "d",
+          "text": "The amount of resources saved in production.",
+          "why": "Opportunity cost measures a sacrifice made when choosing, not resources saved.",
+          "whyWrong": "Because resources are scarce, picking one option forces you to sacrifice another. Opportunity cost captures what was sacrificed, not what was saved."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "b"
+      ],
+      "hint": "Every time you choose one thing with limited money or time, what do you give up?",
+      "explanation": "Because resources are scarce, choosing one option means giving up others. Opportunity cost (or real cost) is the value of the next best alternative foregone when a choice is made.",
+      "trap": "Students often confuse opportunity cost with money cost, which is only the cash paid rather than the next best alternative sacrificed.",
+      "mnemonic": "Opportunity cost = the Best option Left behind.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Suppose you have ₦2,000 and want either a textbook or a pair of shoes. If you buy the textbook, the pair of shoes you gave up is your opportunity cost."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Monetary cost is just the naira figure on a receipt. Even when something has no cash price—like spending an hour studying—it still has an opportunity cost (the hour of sleep or work you gave up)."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Opportunity cost = value of the single next best alternative foregone (not the sum of all other options)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Think 'Choice means Sacrifice': the opportunity you lost is your opportunity cost."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A student uses her last ₦1,000 to buy data instead of lunch. What is the opportunity cost of the data?",
+          "similarAnswer": "The lunch she gave up."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 110979,
+        "yearLabel": "2010"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0043",
+      "subject": "economics",
+      "topic": "International trade",
+      "type": "recall",
+      "difficulty": 3,
+      "stem": "The lowest level of economic integration, where member countries eliminate internal trade barriers but keep their own external tariffs, is a:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Customs Union",
+          "why": "A Customs Union adds a common external tariff against non-members, making it a deeper stage.",
+          "whyWrong": "Both a Free Trade Area and a Customs Union remove tariffs among members. However, a Customs Union goes one step further by setting a shared external tariff on non-members, whereas here countries keep their own external tariffs."
+        },
+        {
+          "id": "b",
+          "text": "Free Trade Area",
+          "why": "A Free Trade Area removes internal tariffs between members while each country keeps its own external tariffs.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Common Market",
+          "why": "A Common Market adds free movement of labour and capital on top of a Customs Union.",
+          "whyWrong": "A Common Market is much deeper than a Free Trade Area: it includes free internal trade, a common external tariff, and free movement of labour and capital across borders."
+        },
+        {
+          "id": "d",
+          "text": "Economic Union",
+          "why": "An Economic Union harmonizes fiscal and monetary policies (and may share a currency).",
+          "whyWrong": "An Economic Union is the deepest form listed here, combining a Common Market with shared economic policies and sometimes a single currency. It is far beyond a basic free trade agreement."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Recall the ladder of economic integration from loosest to deepest: which comes first?",
+      "explanation": "Economic integration moves in stages: (1) Free Trade Area (no internal tariffs, independent external tariffs), (2) Customs Union (adds a common external tariff), (3) Common Market (adds free movement of labour and capital), and (4) Economic Union (harmonized fiscal/monetary policies).",
+      "trap": "Customs Union is the classic trap because it also removes internal tariffs, but it requires a common external tariff whereas a Free Trade Area lets each member set its own.",
+      "mnemonic": "F-C-C-E: Free trade first, Customs adds common external tariff, Common adds factors, Economic unifies policy.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In a Free Trade Area, neighbours drop tariffs when trading with each other, but each country still sets whatever tariff it likes on goods coming from outside the group."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A Customs Union removes internal barriers AND forces members to charge the same external tariff on outside countries. The stem explicitly says members 'keep their own external tariffs', which points to a Free Trade Area."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Integration ladder: Free Trade Area → Customs Union (+ common external tariff) → Common Market (+ free factor mobility) → Economic Union (+ unified policies)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Remember 'Free Comes First': Free Trade Area is stage 1; Customs Union adds the 'C' for Common external tariff."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which stage of economic integration allows free movement of labour and capital among member states in addition to a common external tariff?",
+          "similarAnswer": "A Common Market."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 68655,
+        "yearLabel": "2010"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0049",
+      "subject": "economics",
+      "topic": "Market structures",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which barrier to entry is typically created by government intervention?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Economies of scale",
+          "why": "Economies of scale arise from large-scale production efficiency, not government laws.",
+          "whyWrong": "Economies of scale occur naturally when large firms produce at lower average cost than small newcomers. That is a cost advantage created by size, not a legal barrier imposed by government."
+        },
+        {
+          "id": "b",
+          "text": "High start-up costs",
+          "why": "High start-up costs come from capital requirements of the industry, not direct government rules.",
+          "whyWrong": "Needing huge capital to build a factory or telecom network is an economic or financial barrier inherent to the industry. While challenging for new entrants, it is not created by government law."
+        },
+        {
+          "id": "c",
+          "text": "Patents and copyrights",
+          "why": "Patents and copyrights are legal monopolies granted by government law.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Brand loyalty",
+          "why": "Brand loyalty comes from marketing and customer habit, not government action.",
+          "whyWrong": "Firms build brand loyalty through advertising, product quality, and reputation over time. No government statute stops rivals from competing against a popular brand."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Look for the barrier that exists only because the law enforces it.",
+      "explanation": "Patents, copyrights, and licences are legal barriers to entry created and enforced by government to protect inventors and creators, temporarily stopping rivals from copying a product or process.",
+      "trap": "High start-up costs are a very common barrier in real business, so students pick them, forgetting they come from capital needs rather than government law.",
+      "mnemonic": "Government creates Legal barriers: Patents, Copyrights, Licences.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A patent or copyright is a government certificate that says 'only this creator can sell this invention or book for a set period.' Without government law, anyone could copy it."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "High start-up costs happen naturally in heavy industries like oil refining or aviation because equipment is expensive—not because the government passed a law."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Barriers to entry fall into natural/economic barriers (economies of scale, high capital cost, brand loyalty) and legal/government barriers (patents, copyrights, franchises, licences)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Ask: 'Can a firm build this without Parliament or a court?' Size, cash, and brand need no law; patents and copyrights exist only by law."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A firm that controls the sole legal right to supply electricity in a region is an example of",
+          "similarAnswer": "A legal (or statutory) monopoly."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 68352,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0051",
+      "subject": "economics",
+      "topic": "Demand and supply",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the primary outcome of a price floor in a market?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shortage of goods",
+          "why": "A shortage results from a price ceiling set below equilibrium, not a price floor.",
+          "whyWrong": "A shortage happens when government sets a maximum price (price ceiling) below equilibrium, making buyers want more than sellers will supply. A binding price floor works the opposite way by keeping price high."
+        },
+        {
+          "id": "b",
+          "text": "Equilibrium price adjustment",
+          "why": "A binding price floor blocks the price from falling back down to equilibrium.",
+          "whyWrong": "In a free market, prices adjust to clear surpluses or shortages. A legal price floor stops the price from falling to equilibrium, so the imbalance persists."
+        },
+        {
+          "id": "c",
+          "text": "Surplus of goods if set above equilibrium price",
+          "why": "A higher legal minimum price encourages supply while discouraging demand, creating a surplus.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Increased demand for goods",
+          "why": "A higher minimum price lowers quantity demanded rather than increasing demand.",
+          "whyWrong": "When a binding price floor raises the market price above equilibrium, buyers cut back on how much they buy. It does not increase demand."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "b"
+      ],
+      "hint": "Think of a price floor as a minimum price—like a minimum farm price—set above the market price.",
+      "explanation": "A price floor is a legal minimum price. When set above the equilibrium price, producers supply more while consumers buy less, so quantity supplied exceeds quantity demanded, creating a surplus.",
+      "trap": "Students mix up price floors and price ceilings and pick 'shortage', which is actually caused by a binding price ceiling below equilibrium.",
+      "mnemonic": "Floor = High above equilibrium → Surplus; Ceiling = Low below equilibrium → Shortage.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If the government forces a minimum price above the normal market price, farmers bring more produce to sell, but shoppers buy less. Leftover unsold goods pile up as a surplus."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Shortage happens under a price ceiling (a legal maximum price set below equilibrium). Under a price floor set above equilibrium, sellers offer more than buyers want, creating a surplus."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Binding price floor (above equilibrium): Qs > Qd → Surplus. Binding price ceiling (below equilibrium): Qd > Qs → Shortage."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "In economics diagrams, the effective Floor sits ABOVE equilibrium (think: keeps price from falling through the floor), and anything piled high creates a Surplus."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What happens when a government imposes an effective maximum price (price ceiling) below equilibrium?",
+          "similarAnswer": "Excess demand (a shortage of goods)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 111708,
+        "yearLabel": "2015"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0061",
+      "subject": "economics",
+      "topic": "Population and labour",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "If the death rate of a country is 52% and the growth rate is 12%. What is the birth rate of the country?",
+      "options": [
+        {
+          "id": "a",
+          "text": "48%",
+          "why": "This does not satisfy Birth rate minus Death rate equals Growth rate.",
+          "whyWrong": "If the birth rate were 48% and the death rate were 52%, the population would shrink by 4% instead of growing by 12%. To grow despite deaths, the birth rate must exceed the death rate."
+        },
+        {
+          "id": "b",
+          "text": "64%",
+          "why": "Birth rate = Growth rate + Death rate = 12% + 52% = 64%.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "40%",
+          "why": "This subtracts 12% from 52% instead of adding them.",
+          "whyWrong": "40% comes from calculating 52% − 12%. If the birth rate were 40% and the death rate were 52%, more people would die than be born, giving negative growth (−12%) instead of +12%."
+        },
+        {
+          "id": "d",
+          "text": "52%",
+          "why": "If birth rate equalled the 52% death rate, the natural growth rate would be 0%.",
+          "whyWrong": "When birth rate equals death rate, births only replace deaths and natural population growth is zero. Since the country grew by 12%, births must be 12% higher than deaths."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Natural population growth equals birth rate minus death rate.",
+      "explanation": "Using the natural population growth formula (ignoring net migration): Growth rate = Birth rate − Death rate. Substituting the given figures: 12% = Birth rate − 52%, so Birth rate = 12% + 52% = 64%.",
+      "trap": "40% is the main trap from subtracting 12% from 52%, forgetting that a positive growth rate requires births to be greater than deaths.",
+      "mnemonic": "Births add, Deaths subtract: Birth rate = Growth rate + Death rate.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "For the population to grow by 12% after 52% die, enough babies must be born to replace all 52% who died AND add another 12%. That makes 52% + 12% = 64%."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "40% comes from 52% − 12%. Check it backwards: a 40% birth rate minus a 52% death rate gives −12% growth, not +12%."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Natural Growth Rate = Birth Rate − Death Rate, therefore Birth Rate = Growth Rate + Death Rate."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Always check the sign: positive growth means Births > Deaths, so Birth rate must be the biggest number here."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If a country's birth rate is 35 per thousand and its death rate is 15 per thousand, what is its natural growth rate?",
+          "similarAnswer": "20 per thousand (or 2%)."
+        }
+      ],
+      "animationId": "anim-econ-api-0061",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 155303,
+        "yearLabel": "2022"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "econ-api-0082",
+      "subject": "economics",
+      "topic": "Production and costs",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In a textile factory, the cost of cotton used is a typical example of",
+      "options": [
+        {
+          "id": "a",
+          "text": "an average cost",
+          "why": "Average cost is total cost divided by quantity produced, not a specific input like cotton.",
+          "whyWrong": "Average cost means cost per unit of output (Total Cost ÷ Output). Cotton is a direct raw-material input whose total spending rises as more cloth is woven, making it a variable cost."
+        },
+        {
+          "id": "b",
+          "text": "a fixed cost",
+          "why": "Fixed costs like factory rent do not change with output, whereas cotton use rises with output.",
+          "whyWrong": "Fixed costs stay the same whether the factory weaves 10 metres or 1,000 metres of cloth (for example, rent on the building). Cotton is used up in each metre of cloth, so spending on cotton changes directly with output."
+        },
+        {
+          "id": "c",
+          "text": "a total cost",
+          "why": "Total cost is the sum of all fixed and variable costs, not just cotton alone.",
+          "whyWrong": "Total cost includes every expense in the factory—building rent, machinery, electricity, wages, and raw materials combined. Cotton on its own is only the raw-material part, which varies with production."
+        },
+        {
+          "id": "d",
+          "text": "a variable cost",
+          "why": "The more cloth produced, the more cotton is needed, so its cost varies directly with output.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Ask yourself: if the factory doubles the amount of cloth it produces, does the amount of cotton needed double too?",
+      "explanation": "A variable cost changes directly with the level of output. Because weaving more textiles requires buying more cotton—and producing zero cloth requires zero cotton—cotton is a classic variable cost.",
+      "trap": "Students sometimes confuse essential factory expenses with fixed costs, forgetting that fixed costs stay constant even when output is zero.",
+      "mnemonic": "Variable cost Varies with output; Fixed cost stays Flat.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If the textile factory shuts down for a week, it still has to pay rent (fixed cost), but it buys no cotton (variable cost). When orders double, cotton spending doubles."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Fixed costs—like factory rent or insurance—do not change when production rises or falls. Cotton is a raw material built into every piece of fabric, so its cost goes up and down with output."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule or formula",
+          "answer": "Total Cost = Fixed Cost + Variable Cost. Variable costs (raw materials, piece-rate wages) change with output; fixed costs (rent, salaried managers) do not in the short run."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Think 'Zero output test': if producing zero means you spend zero on it (like cotton), it is a variable cost."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In a bakery, the monthly rent paid for the shop building is an example of",
+          "similarAnswer": "A fixed cost."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 155266,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

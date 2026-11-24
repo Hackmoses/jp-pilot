@@ -1,0 +1,2407 @@
+{
+  "version": 1,
+  "subject": "mathematics",
+  "count": 30,
+  "questions": [
+    {
+      "id": "math-api-0001",
+      "subject": "mathematics",
+      "topic": "Calculus",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The first derivative of y = (2+3x) 4 at x = - 1 is",
+      "options": [
+        {
+          "id": "a",
+          "text": "12",
+          "why": "12 forgets the negative sign from (−1)³ = −1.",
+          "whyWrong": "When x = −1, 2 + 3(−1) = −1, and (−1)³ = −1, not +1. Multiplying 12 by −1 gives −12, not 12."
+        },
+        {
+          "id": "b",
+          "text": "-12",
+          "why": "By the chain rule, dy/dx = 12(2 + 3x)³; at x = −1, 12(−1)³ = −12.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "why": "4 forgets the chain rule factor of 3 and drops the sign.",
+          "whyWrong": "4 only uses the outer power 4 without multiplying by the inner derivative 3, and also misses the negative value (−1)³ = −1."
+        },
+        {
+          "id": "d",
+          "text": "-4",
+          "why": "−4 forgets to multiply by the derivative of (2 + 3x), which is 3.",
+          "whyWrong": "−4 differentiates the outer power to get 4(2 + 3x)³ = −4 at x = −1, but forgets the chain rule factor d/dx(2 + 3x) = 3. Multiplying −4 by 3 gives −12."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Use the chain rule: differentiate the power 4, then multiply by the derivative of the inside (2 + 3x).",
+      "explanation": "Using the chain rule on y = (2 + 3x)⁴, dy/dx = 4(2 + 3x)³ × 3 = 12(2 + 3x)³. Substituting x = −1 gives 12(2 − 3)³ = 12(−1)³ = −12.",
+      "trap": "−4 is the classic chain-rule trap: differentiating the outside power 4 and forgetting to multiply by the inside derivative 3.",
+      "mnemonic": "Chain rule = Outside derivative × Inside derivative.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Bring the power 4 down to get 4(2 + 3x)³, then multiply by 3 (the slope of 2 + 3x) to get 12(2 + 3x)³. Put x = −1: 12(−1)³ = −12."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "−4 forgets the chain rule factor from inside the bracket. Since d/dx(2 + 3x) = 3, multiply −4 by 3 to get −12."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Chain rule for powers: d/dx[(ax + b)ⁿ] = n · a · (ax + b)ⁿ⁻¹."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Never stop at the bracket power — always multiply by the derivative of what is inside."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Find dy/dx for y = (1 + 2x)³ at x = −1.",
+          "similarAnswer": "6 (since 6(1 − 2)² = 6(−1)² = 6)."
+        }
+      ],
+      "animationId": "anim-math-api-0001",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 156292,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0029",
+      "subject": "mathematics",
+      "topic": "Calculus",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Find the maximum value of y in the equation y = 1 - 2x - 3x^2.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/4",
+          "why": "3/4 swaps the numerator and denominator of 4/3.",
+          "whyWrong": "3/4 is the reciprocal of the true maximum value 4/3. Substituting x = −1/3 into 1 − 2x − 3x² gives 1 + 2/3 − 1/3 = 4/3."
+        },
+        {
+          "id": "b",
+          "text": "4/3",
+          "why": "dy/dx = −2 − 6x = 0 gives x = −1/3, and y(−1/3) = 1 + 2/3 − 1/3 = 4/3.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "5/3",
+          "why": "5/3 uses the wrong sign on −3x² when substituting x = −1/3.",
+          "whyWrong": "5/3 comes from adding +1/3 instead of subtracting 3(−1/3)² = 1/3. Because (−1/3)² = +1/9, −3(1/9) = −1/3, giving 1 + 2/3 − 1/3 = 4/3."
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "why": "2 comes from substituting x = −1/3 incorrectly or using x = 0 with a sign error.",
+          "whyWrong": "At x = 0, y is only 1, and at x = −1/3, y reaches its peak of 4/3 ≈ 1.33, never 2."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Set dy/dx = 0 to find the turning-point x, then plug that x back into y to get the maximum value.",
+      "explanation": "Differentiate y = 1 − 2x − 3x²: dy/dx = −2 − 6x. Setting −2 − 6x = 0 gives x = −1/3 (and d²y/dx² = −6 < 0, confirming a maximum). Substitute x = −1/3 into y: 1 − 2(−1/3) − 3(1/9) = 1 + 2/3 − 1/3 = 4/3.",
+      "trap": "5/3 catches students who turn −3(−1/3)² into +1/3 by cancelling the minus signs instead of squaring −1/3 to +1/9 first.",
+      "mnemonic": "Set dy/dx = 0 for x, plug x back into y for the max value.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "At the top of the curve, the slope dy/dx is 0. Solving −2 − 6x = 0 gives x = −1/3. Plugging −1/3 into 1 − 2x − 3x² gives 1 + 2/3 − 1/3 = 4/3."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Remember (−1/3)² = +1/9, so −3(−1/3)² stays negative (−1/3). That gives 1 + 2/3 − 1/3 = 4/3, not 5/3."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Stationary (maximum) value: solve dy/dx = 0 for x, then evaluate y(x)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Square the negative x before multiplying by −3."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Find the maximum value of y = 5 + 4x − x².",
+          "similarAnswer": "9 (at x = 2: 5 + 8 − 4 = 9)."
+        }
+      ],
+      "animationId": "anim-math-api-0029",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 18182,
+        "yearLabel": "2002"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0159",
+      "subject": "mathematics",
+      "topic": "Calculus",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "The derivatives of (2x + 1)(3x + 1) is",
+      "options": [
+        {
+          "id": "a",
+          "text": "12x + 1",
+          "why": "12x + 1 differentiates 2x(3x) but drops the middle 5x term.",
+          "whyWrong": "Expanding (2x + 1)(3x + 1) gives 6x² + 5x + 1, not 6x² + x + 1. Differentiating 5x gives 5, so dy/dx = 12x + 5."
+        },
+        {
+          "id": "b",
+          "text": "6x + 5",
+          "why": "6x + 5 forgets to multiply 6 by 2 when differentiating 6x².",
+          "whyWrong": "Differentiating 6x² brings down the power 2: 2 × 6x = 12x, not 6x. Thus the derivative is 12x + 5."
+        },
+        {
+          "id": "c",
+          "text": "6x + 1",
+          "why": "6x + 1 wrongly differentiates each bracket separately and multiplies (2 × 3x + 1).",
+          "whyWrong": "You cannot differentiate a product by multiplying the derivatives of the two brackets. Either expand to 6x² + 5x + 1 first or use the product rule to get 12x + 5."
+        },
+        {
+          "id": "d",
+          "text": "12x + 5",
+          "why": "(2x + 1)(3x + 1) = 6x² + 5x + 1, whose derivative is 12x + 5.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Expand (2x + 1)(3x + 1) into a quadratic first, then differentiate term by term.",
+      "explanation": "Expanding (2x + 1)(3x + 1) gives 6x² + 2x + 3x + 1 = 6x² + 5x + 1. Differentiating term by term gives 12x + 5.",
+      "trap": "6x + 5 traps students who expand correctly to 6x² + 5x + 1 and forget to double the 6 when differentiating x².",
+      "mnemonic": "Expand brackets first, then apply power rule to each term.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Multiply out the brackets: (2x + 1)(3x + 1) = 6x² + 5x + 1. Now differentiate each piece: 6x² becomes 12x, 5x becomes 5, and 1 vanishes."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "6x + 5 misses the power rule on 6x². Bring down the exponent 2: 2 × 6x = 12x, giving 12x + 5."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Power rule after expansion (or product rule: u'v + uv' = 2(3x+1) + 3(2x+1) = 12x + 5)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "You can double-check by product rule: 2(3x + 1) + 3(2x + 1) = 12x + 5."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Find the derivative of (x + 4)(2x − 1).",
+          "similarAnswer": "4x + 7 (since (x + 4)(2x − 1) = 2x² + 7x − 4)."
+        }
+      ],
+      "animationId": "anim-math-api-0159",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 8916,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0020",
+      "subject": "mathematics",
+      "topic": "Indices and logarithms",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "simplify log 10103 +log 1010",
+      "options": [
+        {
+          "id": "a",
+          "text": "61",
+          "why": "61 misreads the powers and base-10 notation completely.",
+          "whyWrong": "In log₁₀(10³) + log₁₀(10), the base is 10, so log₁₀(10³) = 3 and log₁₀(10) = 1, summing to 4."
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "why": "3 comes from multiplying 3 × 1 instead of adding 3 + 1.",
+          "whyWrong": "3 would be log₁₀(10³) alone, or 3 × 1. Notice the plus sign: 3 + 1 = 4."
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "why": "5 does not equal 3 + 1.",
+          "whyWrong": "Since log₁₀(10³) = 3 and log₁₀(10¹) = 1, adding them gives 3 + 1 = 4, not 5."
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "why": "log₁₀(10³) + log₁₀(10) = 3 + 1 = 4.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Remember logₐ(aⁿ) = n, so what are log₁₀(10³) and log₁₀(10)?",
+      "explanation": "Note that the expression means log₁₀(10³) + log₁₀(10¹). Using logₐ(aⁿ) = n, log₁₀(10³) = 3 and log₁₀(10) = 1, so 3 + 1 = 4 (equivalently, log₁₀(10³ × 10) = log₁₀(10⁴) = 4).",
+      "trap": "3 catches students who forget to add +1 from log₁₀(10) = 1 (treating log₁₀(10) as 0).",
+      "mnemonic": "log₁₀(10ⁿ) = n; log of the base itself is always 1.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "log₁₀ asks 'what power of 10 is this?' 10³ has power 3, and 10 is 10¹ so power 1. Add 3 + 1 = 4."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "log₁₀(10) equals 1, not 0. Adding 3 + 1 gives 4, not 3."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Logarithm identities: logₐ(aⁿ) = n, logₐ(a) = 1, and log(AB) = log A + log B."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "You can merge first: 10³ × 10 = 10⁴, and log₁₀(10⁴) = 4."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Simplify log₂(2⁵) + log₂(2).",
+          "similarAnswer": "6 (5 + 1 = 6)."
+        }
+      ],
+      "animationId": "anim-math-api-0020",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 156231,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0091",
+      "subject": "mathematics",
+      "topic": "Indices and logarithms",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "If log3 x^2 = -8, what is x?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3",
+          "why": "1/3 would give log₃((1/3)²) = −2, not −8.",
+          "whyWrong": "If x = 1/3, then x² = 1/9 = 3⁻², so log₃(x²) = −2 rather than −8."
+        },
+        {
+          "id": "b",
+          "text": "1/9",
+          "why": "1/9 would give log₃((1/9)²) = −4, not −8.",
+          "whyWrong": "If x = 1/9, then x² = 3⁻⁴, giving log = −4. You need x² = 3⁻⁸, so x = 3⁻⁴ = 1/81."
+        },
+        {
+          "id": "c",
+          "text": "1/27",
+          "why": "1/27 = 3⁻³, whose square is 3⁻⁶ (log = −6, not −8).",
+          "whyWrong": "For x = 1/27, x² = 3⁻⁶, which gives −6 instead of −8."
+        },
+        {
+          "id": "d",
+          "text": "1/81",
+          "why": "log₃(x²) = −8 means x² = 3⁻⁸, so x = 3⁻⁴ = 1/81 (positive root).",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Use 2 log₃(x) = −8 first, or rewrite log₃(x²) = −8 in index form as x² = 3⁻⁸.",
+      "explanation": "Rewriting log₃(x²) = −8 in index form gives x² = 3⁻⁸. Taking the square root (or dividing the exponent by 2) gives x = 3⁻⁴ = 1/3⁴ = 1/81 (among the positive options).",
+      "trap": "1/9 traps students who confuse 3⁻² with 3⁻⁴, or compute 3² instead of 3⁴.",
+      "mnemonic": "Log to Index: base^result = argument; divide power by 2 for x.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Pull the 2 in front: 2 log₃(x) = −8, so log₃(x) = −4. That means x = 3⁻⁴ = 1/3⁴ = 1/81."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "1/9 is 1/3², which only solves log₃(x) = −2. Half of −8 is −4, and 3⁻⁴ = 1/81."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Logarithm power rule: log_b(xⁿ) = n log_b(x), and b⁻ⁿ = 1/bⁿ."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Powers of 3: 3¹=3, 3²=9, 3³=27, 3⁴=81."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If log₂(x²) = −6 and x > 0, what is x?",
+          "similarAnswer": "1/8 (since log₂(x) = −3 → x = 2⁻³ = 1/8)."
+        }
+      ],
+      "animationId": "anim-math-api-0091",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 8983,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0117",
+      "subject": "mathematics",
+      "topic": "Indices and logarithms",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "If log10 4 = 0.6021, evaluate log10 4^1/3",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.3011",
+          "why": "0.3011 divides by 2 instead of 3.",
+          "whyWrong": "0.3011 is roughly half of 0.6021 (which would be log₁₀ 4^(1/2)). The exponent is 1/3, so divide 0.6021 by 3 to get 0.2007."
+        },
+        {
+          "id": "b",
+          "text": "0.9021",
+          "why": "0.9021 adds 0.3 instead of multiplying by 1/3.",
+          "whyWrong": "Exponent 1/3 inside a logarithm multiplies the log by 1/3, it does not add 0.3. Divide 0.6021 by 3 to get 0.2007."
+        },
+        {
+          "id": "c",
+          "text": "1.8063",
+          "why": "1.8063 multiplies by 3 instead of dividing by 3.",
+          "whyWrong": "1.8063 is 3 × 0.6021, which is log₁₀(4³). For 4^(1/3), bring 1/3 in front and divide by 3: 0.6021 ÷ 3 = 0.2007."
+        },
+        {
+          "id": "d",
+          "text": "0.2007",
+          "why": "log₁₀(4^(1/3)) = (1/3) log₁₀ 4 = 0.6021 ÷ 3 = 0.2007.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Use the log power rule: log(aⁿ) = n log(a), with n = 1/3.",
+      "explanation": "By the power rule for logarithms, log₁₀(4^(1/3)) = (1/3) × log₁₀ 4 = 0.6021 ÷ 3 = 0.2007.",
+      "trap": "1.8063 traps students who multiply 0.6021 by 3 instead of dividing by 3.",
+      "mnemonic": "Log power drops to the front: 1/3 times log 4.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In logarithms, an exponent moves to the front as a multiplier: 1/3 × 0.6021 = 0.6021 ÷ 3 = 0.2007."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "1.8063 is 3 × 0.6021, which equals log₁₀(4³). Here the power is 1/3, so divide by 3 instead to get 0.2007."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Power law of logarithms: log(x^p) = p log(x)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Cube root = power 1/3 = divide the log by 3."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If log₁₀ 9 = 0.9542, evaluate log₁₀(9^(1/2)).",
+          "similarAnswer": "0.4771 (0.9542 ÷ 2)."
+        }
+      ],
+      "animationId": "anim-math-api-0117",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 9002,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0129",
+      "subject": "mathematics",
+      "topic": "Indices and logarithms",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Evaluate: 2log 4 + 3log 5 − log 2.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "why": "1 corresponds to log 10, not log 1000.",
+          "whyWrong": "Combining 2 log 4 + 3 log 5 − log 2 gives log(4² × 5³ ÷ 2) = log(1000), which equals 3, not 1."
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "why": "4 corresponds to log 10,000, not log 1000.",
+          "whyWrong": "4 would require an argument of 10⁴ = 10,000. Here (16 × 125) ÷ 2 = 2000 ÷ 2 = 1000 = 10³, so the log is 3."
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "why": "log(4² × 5³ ÷ 2) = log(16 × 125 ÷ 2) = log(1000) = 3.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "why": "2 corresponds to log 100, forgetting one factor of 10.",
+          "whyWrong": "2 would match log 100, whereas (16 × 125) ÷ 2 = 1000 = 10³, whose base-10 logarithm is 3."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Move coefficients up as powers first, then combine + as × and − as ÷ inside a single log₁₀.",
+      "explanation": "Rewrite using log laws: 2 log 4 + 3 log 5 − log 2 = log(4²) + log(5³) − log(2) = log((16 × 125) ÷ 2) = log(2000 ÷ 2) = log(1000) = log(10³) = 3.",
+      "trap": "Students sometimes forget to move the 2 and 3 into exponents before multiplying and dividing, or miscompute 16 × 125 = 2000.",
+      "mnemonic": "Plus multiplies, Minus divides, Coefficients become Powers.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Turn 2 log 4 into log(4²) = log 16, and 3 log 5 into log(5³) = log 125. Then merge: log(16 × 125 ÷ 2) = log(1000) = 3."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "2 is log 100, but 16 × 125 ÷ 2 equals 1000, and log₁₀(1000) = 3."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Logarithm combination laws: a log x + b log y − log z = log(xᵃyᵇ / z)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "In base 10, log of 1 followed by k zeros equals k (log 1000 = 3)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Evaluate 2 log 5 + log 4.",
+          "similarAnswer": "2 (log(25 × 4) = log 100 = 2)."
+        }
+      ],
+      "animationId": "anim-math-api-0129",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181040,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0005",
+      "subject": "mathematics",
+      "topic": "Algebra and equations",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Solve for x and y respectively in the simultaneous equations -2x - 5y = 3. x + 3y = 0",
+      "options": [
+        {
+          "id": "a",
+          "text": "-3, -9",
+          "why": "−3, −9 swaps x and y and gets the sign of y wrong.",
+          "whyWrong": "Check x + 3y = 0: if x = −3 and y = −9, −3 + 3(−9) = −30 ≠ 0. Substituting x = −3y into −2x − 5y = 3 gives x = −9 and y = 3."
+        },
+        {
+          "id": "b",
+          "text": "9, -3",
+          "why": "9, −3 flips both signs in −2x − 5y = 3.",
+          "whyWrong": "Test (9, −3) in −2x − 5y = 3: −2(9) − 5(−3) = −18 + 15 = −3, not +3. Flipping the signs gives x = −9, y = 3."
+        },
+        {
+          "id": "c",
+          "text": "-9,3",
+          "why": "From x = −3y, −2(−3y) − 5y = 3 gives y = 3 and x = −9.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "3, -9",
+          "why": "3, −9 puts y first and x second; the question asks for x and y respectively.",
+          "whyWrong": "Test (3, −9) in x + 3y = 0: 3 + 3(−9) = −24 ≠ 0. Because x = −3y and y = 3, x = −9 and y = 3 in order."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Use the simpler equation x + 3y = 0 to write x = −3y, then substitute into −2x − 5y = 3.",
+      "explanation": "From x + 3y = 0, x = −3y. Substituting into −2x − 5y = 3 gives −2(−3y) − 5y = 3, so 6y − 5y = 3, giving y = 3. Then x = −3(3) = −9. So (x, y) = (−9, 3).",
+      "trap": "(9, −3) satisfies x + 3y = 0 too, so students who miss a minus sign in −2(−3y) = +6y often pick (9, −3).",
+      "mnemonic": "Substitute x = −3y, watch double minus, and check both equations.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "x + 3y = 0 tells you x = −3y. Put −3y in place of x in the first equation: −2(−3y) − 5y = 3 → 6y − 5y = 3 → y = 3. Then x = −3(3) = −9."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Checking (9, −3) in the first equation gives −2(9) − 5(−3) = −18 + 15 = −3 instead of +3. The true pair is (−9, 3)."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Simultaneous linear equations solved by substitution (and verified by plugging back into both equations)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "'Respectively' means x first, y second — always plug your chosen option back into both equations."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Solve for x and y respectively: x − 2y = 0 and 3x − 5y = 4.",
+          "similarAnswer": "x = 8, y = 4."
+        }
+      ],
+      "animationId": "anim-math-api-0005",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 8378,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0079",
+      "subject": "mathematics",
+      "topic": "Algebra and equations",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A number is added to both the numerator and denominator of the fraction 1/5. If the result is 1/2, find the number.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "why": "(1 + 3) ÷ (5 + 3) = 4 ÷ 8 = 1/2.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "why": "Adding 4 gives (1 + 4)/(5 + 4) = 5/9 ≠ 1/2.",
+          "whyWrong": "If you add 4 to top and bottom, 1/5 becomes 5/9, which is not 1/2. Adding 3 gives 4/8 = 1/2."
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "why": "Adding 5 gives (1 + 5)/(5 + 5) = 6/10 = 3/5 ≠ 1/2.",
+          "whyWrong": "Adding 5 turns 1/5 into 6/10 = 3/5, which is larger than 1/2."
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "why": "Adding 6 gives (1 + 6)/(5 + 6) = 7/11 ≠ 1/2.",
+          "whyWrong": "Adding 6 gives 7/11, not 1/2. Solving (1 + n)/(5 + n) = 1/2 gives n = 3."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Write (1 + x) ÷ (5 + x) = 1/2 and cross-multiply (or test the options directly).",
+      "explanation": "Let the number be x. Then (1 + x) / (5 + x) = 1 / 2. Cross-multiplying gives 2(1 + x) = 5 + x, so 2 + 2x = 5 + x, giving x = 3. Check: (1 + 3) / (5 + 3) = 4 / 8 = 1/2.",
+      "trap": "4 is close to 3/5 vs 1/2, so checking by substitution after solving prevents any slip.",
+      "mnemonic": "Set up (1 + x)/(5 + x) = 1/2 and cross-multiply.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Try adding each option to both 1 and 5: adding 3 gives (1 + 3)/(5 + 3) = 4/8, which simplifies right down to 1/2."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Adding 4 gives (1 + 4)/(5 + 4) = 5/9, which is a bit more than half (4.5/9). Adding 3 gives 4/8 = 1/2."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Linear fraction equation: (a + x)/(b + x) = c/d solved by cross-multiplying."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "With multiple-choice fractions, always check by plugging your answer back into (1+x)/(5+x)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What number must be added to both numerator and denominator of 2/7 to obtain 1/2?",
+          "similarAnswer": "3 (gives 5/10 = 1/2)."
+        }
+      ],
+      "animationId": "anim-math-api-0079",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181145,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0043",
+      "subject": "mathematics",
+      "topic": "Algebra and equations",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Factorize: ax + ay + bx + by.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a+b)(x+y)",
+          "why": "Grouping gives a(x + y) + b(x + y) = (a + b)(x + y).",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "(a+y)(b+x)",
+          "why": "Expanding (a + y)(b + x) gives ab + ax + by + xy, which does not match.",
+          "whyWrong": "(a + y)(b + x) produces ab and xy terms that are missing from ax + ay + bx + by."
+        },
+        {
+          "id": "c",
+          "text": "(ax)(by)",
+          "why": "(ax)(by) is a single product abxy, not a sum of four terms.",
+          "whyWrong": "Multiplying ax by by gives abxy, whereas ax + ay + bx + by is a sum of four separate terms."
+        },
+        {
+          "id": "d",
+          "text": "(a-b)(x-y)",
+          "why": "Minus signs produce −ay and −bx instead of all positive terms.",
+          "whyWrong": "All four terms in ax + ay + bx + by are positive, so the factors cannot contain minus signs like (a − b)(x − y)."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Factor by grouping in pairs: take 'a' out of the first two terms and 'b' out of the last two.",
+      "explanation": "Factorise by grouping: ax + ay + bx + by = a(x + y) + b(x + y). Since (x + y) is common to both groups, factoring it out gives (a + b)(x + y).",
+      "trap": "(a + y)(b + x) pairs the wrong letters together; always expand mentally to double-check.",
+      "mnemonic": "Group in twos, pull out the common bracket.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Split into two pairs: (ax + ay) + (bx + by). Pull 'a' from the first pair to get a(x + y), and 'b' from the second to get b(x + y). Together that makes (a + b)(x + y)."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Expanding (a + y)(b + x) gives ab + ax + by + xy, which misses ay and bx and adds ab and xy."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule to know",
+          "answer": "Four-term factorisation by grouping: ax + ay + bx + by = (a + b)(x + y)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Factorise 2x + 2y + mx + my.",
+          "similarAnswer": "(2 + m)(x + y)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 87211,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0107",
+      "subject": "mathematics",
+      "topic": "Quadratic equations and inequalities",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Solve d² − 4d − 96 = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "d = 8, 12",
+          "why": "Both roots positive would give d² − 20d + 96 = 0, not d² − 4d − 96 = 0.",
+          "whyWrong": "If both roots were positive (8 and 12), their product would be +96 instead of −96."
+        },
+        {
+          "id": "b",
+          "text": "d = −8, −12",
+          "why": "Two negative roots would give a positive constant +96 and +20d.",
+          "whyWrong": "Both roots cannot be negative because (−8)(−12) = +96, whereas the equation has −96."
+        },
+        {
+          "id": "c",
+          "text": "d = −8, 12",
+          "why": "(d − 12)(d + 8) = 0 gives d = 12 or d = −8 (sum = +4, product = −96).",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "d = 8, −12",
+          "why": "d = 8 and −12 sums to −4, matching d² + 4d − 96 = 0 instead of −4d.",
+          "whyWrong": "8 and −12 satisfy (d − 8)(d + 12) = d² + 4d − 96 = 0, which has +4d instead of −4d. Here the bigger number (12) must be positive so 12 + (−8) = +4 (middle term −4d)."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Find two numbers that multiply to −96 and add to −4: think 12 and 8.",
+      "explanation": "Factorise d² − 4d − 96 = 0. Since (−12) × 8 = −96 and −12 + 8 = −4, the equation factors as (d − 12)(d + 8) = 0. Therefore d = 12 or d = −8.",
+      "trap": "d = 8, −12 flips the signs of the two factors, giving +4d instead of −4d.",
+      "mnemonic": "Bigger factor takes the middle sign: −12 and +8, then flip signs for roots (+12, −8).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Find two numbers multiplying to −96 that are 4 apart: 12 and 8. To get −4d, write (d − 12)(d + 8) = 0. Setting each bracket to 0 flips the signs to d = 12 and d = −8."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Plug d = 8 into d² − 4d − 96: 64 − 32 − 96 = −64 ≠ 0. Plugging d = 12 gives 144 − 48 − 96 = 0."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Quadratic factorisation: (d − r₁)(d − r₂) = d² − (r₁ + r₂)d + r₁r₂."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Roots have the OPPOSITE signs to the numbers inside the brackets."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Solve x² − 5x − 24 = 0.",
+          "similarAnswer": "x = −3, 8 (since (x − 8)(x + 3) = 0)."
+        }
+      ],
+      "animationId": "anim-math-api-0107",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181087,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0120",
+      "subject": "mathematics",
+      "topic": "Quadratic equations and inequalities",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Solve the inequalities -6 ≤ 4 - 2x < 5 - x",
+      "options": [
+        {
+          "id": "a",
+          "text": "-1 < x < 5",
+          "why": "The left inequality −6 ≤ 4 − 2x includes equality, so x ≤ 5 (not x < 5).",
+          "whyWrong": "−6 ≤ 4 − 2x has a ≤ sign, so x = 5 satisfies it (−6 ≤ 4 − 10 = −6). Dropping the equals sign gives −1 < x < 5 incorrectly."
+        },
+        {
+          "id": "b",
+          "text": "-1 < x ≤ 5",
+          "why": "−6 ≤ 4 − 2x gives x ≤ 5, and 4 − 2x < 5 − x gives x > −1, so −1 < x ≤ 5.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "-1 ≤ x ≤ 6",
+          "why": "−1 ≤ x ≤ 6 has the wrong bound (6 instead of 5) and wrong equality at −1.",
+          "whyWrong": "At x = 6, 4 − 2(6) = −8, which is NOT ≥ −6. Also 4 − 2x < 5 − x is strict (<), so −1 cannot be included."
+        },
+        {
+          "id": "d",
+          "text": "-1 ≤ x < 6",
+          "why": "−1 ≤ x < 6 reverses which end is strict and miscalculates 5 as 6.",
+          "whyWrong": "Notice which inequality has ≤ (−6 ≤ 4 − 2x gives x ≤ 5) and which has < (4 − 2x < 5 − x gives −1 < x)."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Split the double inequality into two parts: −6 ≤ 4 − 2x AND 4 − 2x < 5 − x.",
+      "explanation": "Solve in two halves: (1) −6 ≤ 4 − 2x → 2x ≤ 10 → x ≤ 5. (2) 4 − 2x < 5 − x → −1 < x (so x > −1). Combining both gives −1 < x ≤ 5.",
+      "trap": "−1 < x < 5 catches students who forget to carry the ≤ symbol through when solving −6 ≤ 4 − 2x.",
+      "mnemonic": "Split a double inequality into Left pair and Right pair, and guard < vs ≤.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Break it in two: first −6 ≤ 4 − 2x gives x ≤ 5. Second, 4 − 2x < 5 − x gives x > −1. Put them together: −1 < x ≤ 5."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Test x = 5 in −6 ≤ 4 − 2x: 4 − 10 = −6, and −6 ≤ −6 is true! So 5 must be included (x ≤ 5)."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Compound linear inequality: A ≤ B < C means both A ≤ B and B < C hold simultaneously."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Keep track of which end has the equals bar: ≤ stays ≤ (at 5), < stays < (at −1)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Solve −3 ≤ 1 − 2x < 5.",
+          "similarAnswer": "−2 < x ≤ 2."
+        }
+      ],
+      "animationId": "anim-math-api-0120",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 9392,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0145",
+      "subject": "mathematics",
+      "topic": "Quadratic equations and inequalities",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Evaluate 3(x + 2) > 6(x + 3)",
+      "options": [
+        {
+          "id": "a",
+          "text": "x < 4",
+          "why": "x < 4 drops the minus sign on −4.",
+          "whyWrong": "Checking 3(x + 2) > 6(x + 3) gives −12 > 3x, so x < −4, not +4."
+        },
+        {
+          "id": "b",
+          "text": "x > -4",
+          "why": "x > −4 forgets to flip the inequality sign when dividing by −3.",
+          "whyWrong": "If you write −3x > 12 and divide by −3 without reversing > to <, you get x > −4. Test x = 0: 3(2) = 6 is NOT greater than 6(3) = 18!"
+        },
+        {
+          "id": "c",
+          "text": "x < -4",
+          "why": "3x + 6 > 6x + 18 gives −12 > 3x, so x < −4.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "x > 4",
+          "why": "x > 4 gets both the sign of 4 and the inequality direction wrong.",
+          "whyWrong": "Test x = 5: 3(7) = 21 is less than 6(8) = 48, so x > 4 fails."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Expand both brackets first, and remember to flip the inequality sign if you divide by a negative number.",
+      "explanation": "Expand both sides: 3x + 6 > 6x + 18. Subtract 3x and 18 from both sides: −12 > 3x. Divide by 3: −4 > x, which means x < −4.",
+      "trap": "x > −4 is the classic inequality trap — dividing −3x > 12 by −3 and forgetting to flip > to <.",
+      "mnemonic": "Divide or multiply by a minus → Flip the inequality sign!",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Expand: 3x + 6 > 6x + 18. Move x to the right so its coefficient stays positive: 6 − 18 > 6x − 3x → −12 > 3x → −4 > x, which reads x < −4."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Test x = 0 (which satisfies x > −4): 3(0 + 2) = 6, while 6(0 + 3) = 18. Since 6 is not greater than 18, x > −4 is false."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Linear inequality rule: multiplying or dividing both sides by a negative number reverses the inequality sign."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Move x to whichever side keeps it positive, then no sign-flip mistake can happen!"
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Solve 2(x − 1) > 5(x + 2).",
+          "similarAnswer": "x < −4 (2x − 2 > 5x + 10 → −12 > 3x)."
+        }
+      ],
+      "animationId": "anim-math-api-0145",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 8398,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0080",
+      "subject": "mathematics",
+      "topic": "Quadratic equations and inequalities",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Find the quadratic equation whose roots are 1/3 and −1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3x²+2x−1=0",
+          "why": "(3x − 1)(x + 1) = 3x² + 2x − 1 = 0 has roots 1/3 and −1.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "3x²−x−2=0",
+          "why": "(3x + 2)(x − 1) = 0 has roots −2/3 and 1, not 1/3 and −1.",
+          "whyWrong": "Sum of roots here is 1/3 and product is −2/3, whereas 1/3 and −1 have sum −2/3 and product −1/3."
+        },
+        {
+          "id": "c",
+          "text": "3x²+x+2=0",
+          "why": "This equation has no real roots (discriminant 1 − 24 < 0).",
+          "whyWrong": "For 3x² + x + 2 = 0, plugging x = −1 gives 3 − 1 + 2 = 4 ≠ 0."
+        },
+        {
+          "id": "d",
+          "text": "3x²+x−1=0",
+          "why": "Plugging x = −1 gives 3 − 1 − 1 = 1 ≠ 0.",
+          "whyWrong": "Plugging x = −1 into 3x² + x − 1 gives 1, not 0. The middle coefficient must be +2x, not +x."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Form the factors (x − 1/3)(x + 1) = 0, or multiply (3x − 1)(x + 1) = 0.",
+      "explanation": "If the roots are 1/3 and −1, then (x − 1/3)(x + 1) = 0. Multiplying the first factor by 3 gives (3x − 1)(x + 1) = 0. Expanding gives 3x² + 3x − x − 1 = 3x² + 2x − 1 = 0.",
+      "trap": "3x² − x − 2 = 0 mixes up the coefficients of sum and product of roots.",
+      "mnemonic": "x² − (sum of roots)x + (product of roots) = 0.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Turn each root into a bracket with the opposite sign: root 1/3 gives (3x − 1) and root −1 gives (x + 1). Multiply them: (3x − 1)(x + 1) = 3x² + 2x − 1 = 0."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Plug x = −1 into 3x² − x − 2: 3(1) − (−1) − 2 = 2 ≠ 0, so −1 is not a root."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Quadratic from roots α, β: x² − (α + β)x + αβ = 0. Here α + β = −2/3 and αβ = −1/3, times 3 gives 3x² + 2x − 1 = 0."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Find the quadratic equation whose roots are 1/2 and −3.",
+          "similarAnswer": "2x² + 5x − 3 = 0."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181147,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0003",
+      "subject": "mathematics",
+      "topic": "Coordinate geometry",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following points lies on the line 3x − 8y = 11?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1,1)",
+          "why": "3(1) − 8(1) = −5 ≠ 11.",
+          "whyWrong": "Substituting x = 1, y = 1 gives 3 − 8 = −5 instead of 11."
+        },
+        {
+          "id": "b",
+          "text": "(1,−1)",
+          "why": "3(1) − 8(−1) = 3 + 8 = 11, which satisfies the equation.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "(−1,1)",
+          "why": "3(−1) − 8(1) = −11 ≠ 11.",
+          "whyWrong": "Substituting (−1, 1) gives −3 − 8 = −11, which is the negative of 11."
+        },
+        {
+          "id": "d",
+          "text": "(−1,−1)",
+          "why": "3(−1) − 8(−1) = 5 ≠ 11.",
+          "whyWrong": "Substituting (−1, −1) gives −3 + 8 = 5, not 11."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Plug each (x, y) pair into 3x − 8y and see which one equals +11.",
+      "explanation": "A point lies on a line if its coordinates satisfy the line's equation. Testing (1, −1) in 3x − 8y = 11 gives 3(1) − 8(−1) = 3 + 8 = 11.",
+      "trap": "(−1, 1) gives −11, catching students who lose track of the minus signs.",
+      "mnemonic": "Point on a line = Plug (x, y) in and match both sides.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Put the first number for x and the second for y in 3x − 8y. With (1, −1), 3(1) − 8(−1) = 3 + 8 = 11, which matches!"
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Testing (−1, 1) gives 3(−1) − 8(1) = −3 − 8 = −11, not +11."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule to know",
+          "answer": "A point (x₀, y₀) lies on ax + by = c if and only if ax₀ + by₀ = c."
+        },
+        {
+          "similarAnswer": "(2, 1) since 2(2) + 5(1) = 9.",
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which point lies on 2x + 5y = 9: (1, 2) or (2, 1)?"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181175,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0057",
+      "subject": "mathematics",
+      "topic": "Coordinate geometry",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "P(-6, 1) and Q(6, 6) are the two ends of the diameter of a given circle. Calculate the radius",
+      "options": [
+        {
+          "id": "a",
+          "text": "6.5 units",
+          "why": "Diameter PQ = √((6 − (−6))² + (6 − 1)²) = √(12² + 5²) = 13, so radius = 13 ÷ 2 = 6.5.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "13.0 units",
+          "why": "13.0 is the diameter PQ, forgetting to divide by 2 for the radius.",
+          "whyWrong": "13.0 units is the full distance between P and Q (the diameter). Because radius is half of the diameter, divide 13 by 2 to get 6.5 units."
+        },
+        {
+          "id": "c",
+          "text": "3.5 units",
+          "why": "3.5 units miscalculates the distance or uses √(12² − 5²) wrongly.",
+          "whyWrong": "3.5 units does not match half of √(12² + 5²). The horizontal span is 12 and vertical span is 5, giving diameter 13 and radius 6.5."
+        },
+        {
+          "id": "d",
+          "text": "7.0 units",
+          "why": "7.0 units comes from miscomputing the square root or coordinate difference.",
+          "whyWrong": "Check the differences carefully: x goes from −6 to 6 (12 units) and y goes from 1 to 6 (5 units), so diameter = 13 and radius = 6.5."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the length of the diameter PQ using the distance formula, then halve it to get the radius.",
+      "explanation": "Distance PQ (diameter) = √((6 − (−6))² + (6 − 1)²) = √(12² + 5²) = √(144 + 25) = √169 = 13 units. Radius = diameter ÷ 2 = 13 ÷ 2 = 6.5 units.",
+      "trap": "13.0 units is the classic trap — finding the diameter PQ accurately and forgetting the last step of dividing by 2 for the radius.",
+      "mnemonic": "5-12-13 triangle gives diameter; halve it for radius.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "From (−6, 1) to (6, 6) is 12 across and 5 up. Using Pythagoras, the diameter is √(12² + 5²) = 13. Half of 13 is radius 6.5."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "13.0 is the full diameter PQ. The question asks for the radius, which is 13 ÷ 2 = 6.5 units."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Distance formula d = √((x₂ − x₁)² + (y₂ − y₁)²), and radius r = d ÷ 2."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Spot the 5-12-13 right-triangle triple, then divide by 2."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A(−3, 2) and B(5, 8) are the endpoints of a circle's diameter. What is the radius?",
+          "similarAnswer": "5 units (diameter = √(8² + 6²) = 10; radius = 5)."
+        }
+      ],
+      "animationId": "anim-math-api-0057",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 9211,
+        "yearLabel": "2021"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0119",
+      "subject": "mathematics",
+      "topic": "Coordinate geometry",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Find the gradient of the line passing through the points P(1, 1) and Q(2, 5).",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "why": "3 subtracts 2 from 5 without dividing correctly, or miscomputes y₂ − y₁.",
+          "whyWrong": "Check the rise: 5 − 1 = 4, and the run: 2 − 1 = 1. Dividing 4 by 1 gives 4, not 3."
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "why": "2 mixes up the coordinates in (y₂ − y₁) ÷ (x₂ − x₁).",
+          "whyWrong": "Gradient is rise over run = (5 − 1) ÷ (2 − 1) = 4 ÷ 1 = 4, not 2."
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "why": "5 uses y₂ directly instead of y₂ − y₁ = 5 − 1 = 4.",
+          "whyWrong": "Don't forget to subtract y₁ = 1 from y₂ = 5 before dividing by x₂ − x₁ = 2 − 1."
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "why": "Gradient m = (5 − 1) ÷ (2 − 1) = 4 ÷ 1 = 4.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Gradient m = (y₂ − y₁) ÷ (x₂ − x₁).",
+      "explanation": "Gradient of the line joining P(1, 1) and Q(2, 5) is m = (5 − 1) ÷ (2 − 1) = 4 ÷ 1 = 4.",
+      "trap": "Students sometimes forget to subtract y₁ = 1 from 5, picking 5 instead of 4.",
+      "mnemonic": "Rise over Run: (y₂ − y₁) ÷ (x₂ − x₁).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "As x goes from 1 to 2 (1 step right), y goes from 1 to 5 (4 steps up). So gradient = 4 ÷ 1 = 4."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "5 is just the y-value of Q. Gradient measures how much y changes (5 − 1 = 4) per step in x (2 − 1 = 1), giving 4."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Gradient formula: m = (y₂ − y₁) ÷ (x₂ − x₁)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Y rises on top, X runs below."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Find the gradient of the line passing through (2, 3) and (5, 15).",
+          "similarAnswer": "4 ((15 − 3) ÷ (5 − 2) = 12 ÷ 3 = 4)."
+        }
+      ],
+      "animationId": "anim-math-api-0119",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 9261,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0023",
+      "subject": "mathematics",
+      "topic": "Sequences and series",
+      "type": "calculation",
+      "difficulty": 3,
+      "stem": "If the sum of the first two terms of a G.P. is 3 and the sum of the second and the third terms is -6, find the sum of the first term and the common ratio",
+      "options": [
+        {
+          "id": "a",
+          "text": "-5",
+          "why": "a + ar = 3 and r(a + ar) = −6 give r = −2 and a = −3, so a + r = −5.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "why": "5 flips both signs on a and r.",
+          "whyWrong": "If a = 3 and r = 2, then a + ar = 3 + 6 = 9 ≠ 3. Here r = −2 and a = −3, so a + r = −5."
+        },
+        {
+          "id": "c",
+          "text": "-2",
+          "why": "−2 is just the common ratio r, forgetting to add the first term a = −3.",
+          "whyWrong": "−2 is only the common ratio r = −6 ÷ 3. The question asks for a + r: since a(1 − 2) = 3 gives a = −3, a + r = −3 + (−2) = −5."
+        },
+        {
+          "id": "d",
+          "text": "-3",
+          "why": "−3 is just the first term a, forgetting to add r = −2.",
+          "whyWrong": "−3 is the first term a alone. Adding the common ratio r = −2 gives a + r = −5."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Notice that T₂ + T₃ = r(T₁ + T₂), so dividing −6 by 3 gives r immediately!",
+      "explanation": "Let the G.P. be a, ar, ar². Given a + ar = 3 and ar + ar² = −6. Factoring r from the second equation gives r(a + ar) = −6, so 3r = −6 and r = −2. Substituting r = −2 into a(1 + r) = 3 gives a(−1) = 3, so a = −3. Therefore a + r = −3 + (−2) = −5.",
+      "trap": "−2 or −3 catches students who solve for r or a correctly and stop without computing a + r.",
+      "mnemonic": "Divide consecutive pair sums in a G.P. to get r in one step.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The second sum (T₂ + T₃ = −6) is simply r times the first sum (T₁ + T₂ = 3), so r = −6 ÷ 3 = −2. Then a(1 − 2) = 3 gives a = −3. Finally, a + r = −3 + (−2) = −5."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "−2 is only the common ratio r. Don't stop early: find a = −3 as well, then add a + r = −3 + (−2) = −5."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Geometric progression terms: T₁ = a, T₂ = ar, T₃ = ar², so T₂ + T₃ = r(T₁ + T₂)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Read the last line of the prompt carefully: it asks for a + r, not r alone."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In a G.P., T₁ + T₂ = 6 and T₂ + T₃ = 12. Find a + r.",
+          "similarAnswer": "4 (r = 12 ÷ 6 = 2, a(1 + 2) = 6 → a = 2, so a + r = 4)."
+        }
+      ],
+      "animationId": "anim-math-api-0023",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 156437,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0093",
+      "subject": "mathematics",
+      "topic": "Sequences and series",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The sum to infinity of a geometric progression is −1/10 and the first term is −1/8 . Find the common ratio of the progression.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/5",
+          "why": "−1/5 does not satisfy a ÷ (1 − r) = −1/10.",
+          "whyWrong": "If r = −1/5 and a = −1/8, then S∞ = (−1/8) ÷ (6/5) = −5/48 ≠ −1/10."
+        },
+        {
+          "id": "b",
+          "text": "−1/4",
+          "why": "S∞ = a ÷ (1 − r) → −1/10 = (−1/8) ÷ (1 − r) → 1 − r = 5/4 → r = −1/4.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "−1/3",
+          "why": "−1/3 gives S∞ = (−1/8) ÷ (4/3) = −3/32 ≠ −1/10.",
+          "whyWrong": "Test r = −1/3: (−1/8) ÷ (1 + 1/3) = −3/32, which is not −1/10."
+        },
+        {
+          "id": "d",
+          "text": "−1/2",
+          "why": "−1/2 gives S∞ = (−1/8) ÷ (3/2) = −1/12 ≠ −1/10.",
+          "whyWrong": "Test r = −1/2: (−1/8) ÷ (1 + 1/2) = −1/12, whereas the given sum is −1/10."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Use S∞ = a ÷ (1 − r) and solve carefully for r.",
+      "explanation": "For a convergent G.P., S∞ = a ÷ (1 − r). Substituting S∞ = −1/10 and a = −1/8 gives −1/10 = (−1/8) ÷ (1 − r), so 1 − r = (−1/8) ÷ (−1/10) = 10/8 = 5/4. Thus r = 1 − 5/4 = −1/4.",
+      "trap": "Students often slip on the negative fractions when rearranging 1 − r = 5/4, getting +1/4 or picking −1/2.",
+      "mnemonic": "S∞ = a ÷ (1 − r), so 1 − r = a ÷ S∞.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Rearrange S∞ = a ÷ (1 − r) to 1 − r = a ÷ S∞. Divide −1/8 by −1/10 to get +10/8 = 5/4. Since 1 − r = 5/4, r = 1 − 5/4 = −1/4."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "If r were −1/2, then 1 − r = 3/2 and S∞ = (−1/8) ÷ (3/2) = −1/12, not −1/10."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Sum to infinity of a G.P. (|r| < 1): S∞ = a ÷ (1 − r)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Dividing two negatives (−1/8 ÷ −1/10) makes a positive (+5/4)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "The sum to infinity of a G.P. is 12 and its first term is 9. Find the common ratio.",
+          "similarAnswer": "1/4 (1 − r = 9/12 = 3/4 → r = 1/4)."
+        }
+      ],
+      "animationId": "anim-math-api-0093",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 8988,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0018",
+      "subject": "mathematics",
+      "topic": "Mensuration and geometry",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Find the curved surface area of a cone of radius 3cm and slant height 7cm. (Take π = 22/7)",
+      "options": [
+        {
+          "id": "a",
+          "text": "22cm2",
+          "why": "22 cm² forgets the radius r = 3.",
+          "whyWrong": "22 cm² equals πl = (22/7) × 7 without multiplying by r = 3 cm."
+        },
+        {
+          "id": "b",
+          "text": "44cm2",
+          "why": "44 cm² uses 2πl or r = 2 instead of r = 3.",
+          "whyWrong": "44 cm² comes from using r = 2 instead of r = 3 (or computing 2πr ≈ 19). With r = 3 and l = 7, πrl = 22 × 3 = 66 cm²."
+        },
+        {
+          "id": "c",
+          "text": "198cm2",
+          "why": "198 cm² multiplies by 3 twice (πr²l).",
+          "whyWrong": "198 cm² equals 3 × 66, squaring the radius by mistake. Curved surface area of a cone is πrl (linear in r), not πr²l."
+        },
+        {
+          "id": "d",
+          "text": "66cm2",
+          "why": "CSA = πrl = (22/7) × 3 × 7 = 22 × 3 = 66 cm².",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Use the curved surface area of a cone: πrl, and notice the 7s cancel neatly!",
+      "explanation": "The curved surface area of a cone is πrl. Substituting π = 22/7, r = 3 cm, and l = 7 cm gives (22/7) × 3 × 7 = 22 × 3 = 66 cm².",
+      "trap": "44 cm² or 22 cm² catches students who mix up πrl with 2πr or forget to multiply by r = 3 after cancelling 7.",
+      "mnemonic": "Cone CSA = πrl (only one r, one l).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The curved side area of a cone is π × radius × slant height. The 7 in 22/7 cancels the slant height 7, leaving 22 × 3 = 66 cm²."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "44 cm² would be for a cone with radius 2 cm, not 3 cm. Here 22 × 3 = 66 cm²."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Curved surface area of a cone: A = πrl (total surface area adds πr²)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Think 'pi-r-l' for the slanted part of a cone."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Find the curved surface area of a cone of radius 7 cm and slant height 5 cm. (Take π = 22/7)",
+          "similarAnswer": "110 cm² ((22/7) × 7 × 5)."
+        }
+      ],
+      "animationId": "anim-math-api-0018",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 156195,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0051",
+      "subject": "mathematics",
+      "topic": "Mensuration and geometry",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Each of the interior angles of a regular polygon is 140°. How many sides does the polygon have?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7",
+          "why": "360° ÷ 7 is not a whole number and gives interior angle ~128.6°.",
+          "whyWrong": "A regular 7-sided polygon has exterior angle 360°/7 ≈ 51.4°, giving interior angle ~128.6°, not 140°."
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "why": "An octagon has exterior angle 360° ÷ 8 = 45° and interior angle 135°.",
+          "whyWrong": "An 8-sided regular polygon has interior angle 180° − 45° = 135°, which is smaller than 140°."
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "why": "Exterior angle = 180° − 140° = 40°, so sides n = 360° ÷ 40° = 9.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "10",
+          "why": "A decagon has exterior angle 360° ÷ 10 = 36° and interior angle 144°.",
+          "whyWrong": "A 10-sided regular polygon has interior angle 180° − 36° = 144°, not 140°."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Find one exterior angle first: Exterior = 180° − 140°. Then divide 360° by that exterior angle!",
+      "explanation": "At any vertex, interior + exterior = 180°, so each exterior angle is 180° − 140° = 40°. Since the exterior angles of any convex polygon sum to 360°, the number of sides is n = 360° ÷ 40° = 9 (a nonagon).",
+      "trap": "8 (135°) or 10 (144°) catches students who guess instead of subtracting 140° from 180° first.",
+      "mnemonic": "Exterior = 180 − Interior; Sides = 360 ÷ Exterior.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Every exterior angle is 180° − 140° = 40°. Because all exterior angles around a polygon add up to 360°, there must be 360 ÷ 40 = 9 sides."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "An 8-sided polygon has exterior angle 360° ÷ 8 = 45°, making its interior angle 180° − 45° = 135°, not 140°."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Regular polygon sides: n = 360° ÷ (180° − interior angle)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Never wrestle with (n−2)×180/n when you can go straight to exterior = 180 − interior!"
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Each interior angle of a regular polygon is 150°. How many sides does it have?",
+          "similarAnswer": "12 (exterior = 30°, 360 ÷ 30 = 12)."
+        }
+      ],
+      "animationId": "anim-math-api-0051",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 18824,
+        "yearLabel": "2018"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0110",
+      "subject": "mathematics",
+      "topic": "Mensuration and geometry",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A sector of a circle of radius 21 cm subtends an angle of 120° at the centre. Find the length of the arc of the sector. [Take π = 22/7]",
+      "options": [
+        {
+          "id": "a",
+          "text": "11 cm",
+          "why": "11 cm is a quarter of the arc length.",
+          "whyWrong": "11 cm would correspond to a 30° angle, not 120°. A 120° arc is 1/3 of the circle's circumference: (1/3) × 132 = 44 cm."
+        },
+        {
+          "id": "b",
+          "text": "22 cm",
+          "why": "22 cm uses πr instead of 2πr (forgetting the factor of 2 in circumference).",
+          "whyWrong": "22 cm computes (120/360) × (22/7) × 21, forgetting the 2 in 2πr! Circumference of a circle is 2πr, giving 44 cm."
+        },
+        {
+          "id": "c",
+          "text": "44 cm",
+          "why": "Arc length = (120/360) × 2 × (22/7) × 21 = (1/3) × 132 = 44 cm.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "66 cm",
+          "why": "66 cm uses 180° (half circle) instead of 120° (one third).",
+          "whyWrong": "66 cm is half the circumference (180°), whereas 120° is 120/360 = 1/3 of the circle, giving 132 ÷ 3 = 44 cm."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Arc length is the fraction (θ/360°) of the full circumference 2πr.",
+      "explanation": "Arc length = (θ / 360°) × 2πr = (120 / 360) × 2 × (22/7) × 21. Since 120/360 = 1/3 and 21/7 = 3, the 3s cancel, leaving 2 × 22 = 44 cm.",
+      "trap": "22 cm is the classic trap — using πr instead of 2πr (dropping the 2 in circumference).",
+      "mnemonic": "Arc length = (θ/360) × 2πr; Sector area = (θ/360) × πr².",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "120° is 1/3 of a full 360° circle. Full circumference = 2 × (22/7) × 21 = 132 cm, and 1/3 of 132 cm is 44 cm."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "22 cm drops the 2 from 2πr. Keep the 2 in circumference: (1/3) × 2 × (22/7) × 21 = 44 cm."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Length of a circular arc: L = (θ ÷ 360°) × 2πr."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Circumference has a 2 (2πr); cancel 7 into 21 (= 3) with 1/3 right away!"
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Find the arc length of a sector of radius 14 cm and angle 90°. (Take π = 22/7)",
+          "similarAnswer": "22 cm ((90/360) × 2 × (22/7) × 14)."
+        }
+      ],
+      "animationId": "anim-math-api-0110",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181110,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0033",
+      "subject": "mathematics",
+      "topic": "Probability and combinatorics",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A fair coin is tossed three times. What is the probability of getting exactly two heads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/8",
+          "why": "1/8 is the probability of a single sequence like HHT, or 3 heads (HHH).",
+          "whyWrong": "1/8 counts only one arrangement such as HHT. Three different toss orders give two heads: HHT, HTH, and THH, so the probability is 3/8."
+        },
+        {
+          "id": "b",
+          "text": "3/8",
+          "why": "Out of 2³ = 8 outcomes, 3 have two heads (HHT, HTH, THH), so P = 3/8.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "1/2",
+          "why": "1/2 is 4/8 (for example, 'at least 2 heads'), not 'exactly 2 heads'.",
+          "whyWrong": "Counting HHH along with HHT, HTH, THH gives 4/8 = 1/2, which is 'at least 2 heads'. 'Exactly 2 heads' excludes HHH, leaving 3/8."
+        },
+        {
+          "id": "d",
+          "text": "3/4",
+          "why": "3/4 equals 6/8, which counts too many outcomes.",
+          "whyWrong": "There are 8 equally likely outcomes when tossing 3 fair coins, and only 3 of them contain exactly two heads, giving 3/8."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "List all 8 outcomes of 3 coin tosses (HHH, HHT, ...) and count how many have two Hs and one T.",
+      "explanation": "A fair coin tossed 3 times has 2³ = 8 equally likely outcomes: {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}. Exactly three of these (HHT, HTH, THH) have two heads, so P = 3/8.",
+      "trap": "1/8 catches students who write down HHT and forget that the tail can land in any of the 3 positions.",
+      "mnemonic": "3 coins = 8 outcomes; ways to place 1 Tail among 3 spots = 3 → 3/8.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "There are 8 total ways 3 coins can land. Two heads and one tail can happen 3 ways (T last: HHT, T middle: HTH, T first: THH), so the chance is 3/8."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "1/8 is only one specific order like HHT. Because HHT, HTH, and THH all have two heads, there are 3 winning outcomes out of 8: 3/8."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Binomial probability: ³C₂ × (1/2)² × (1/2)¹ = 3 × (1/8) = 3/8."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Think 'which toss is the Tail?': 1st, 2nd, or 3rd → 3 ways out of 8."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A fair coin is tossed three times. What is the probability of getting at least two heads?",
+          "similarAnswer": "1/2 (4/8: HHH, HHT, HTH, THH)."
+        }
+      ],
+      "animationId": "anim-math-api-0033",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 18353,
+        "yearLabel": "2007"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0121",
+      "subject": "mathematics",
+      "topic": "Probability and combinatorics",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "In how many ways can a committee of 2 women and 3 men be chosen from 6 men and 5 women?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100",
+          "why": "100 uses ⁵C₂ × ⁶C₁ or divides 200 by 2.",
+          "whyWrong": "⁵C₂ = 10 and ⁶C₃ = 20. Multiplying 10 by 20 gives 200, not 100."
+        },
+        {
+          "id": "b",
+          "text": "200",
+          "why": "⁵C₂ × ⁶C₃ = 10 × 20 = 200.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "30",
+          "why": "30 adds 10 + 20 instead of multiplying them.",
+          "whyWrong": "Because the committee needs BOTH 2 women AND 3 men, multiply the two choices (10 × 20 = 200) rather than adding 10 + 20."
+        },
+        {
+          "id": "d",
+          "text": "50",
+          "why": "50 does not match ⁵C₂ × ⁶C₃.",
+          "whyWrong": "Compute each combination carefully: ⁵C₂ = (5×4)/2 = 10 and ⁶C₃ = (6×5×4)/6 = 20, so 10 × 20 = 200."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Find ⁵C₂ (ways to pick 2 women from 5) and ⁶C₃ (ways to pick 3 men from 6), then multiply them.",
+      "explanation": "Number of ways to choose 2 women from 5 = ⁵C₂ = (5 × 4) ÷ 2 = 10. Number of ways to choose 3 men from 6 = ⁶C₃ = (6 × 5 × 4) ÷ (3 × 2 × 1) = 20. By the multiplication rule, total committees = 10 × 20 = 200.",
+      "trap": "30 is the classic combinatorics trap — computing 10 and 20 correctly and then adding them (10 + 20) instead of multiplying (10 × 20).",
+      "mnemonic": "AND multiplies (10 × 20 = 200); OR adds.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "You can pick 2 women from 5 in 10 ways, and 3 men from 6 in 20 ways. Every group of women can pair with every group of men, giving 10 × 20 = 200 committees."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "30 adds 10 + 20. Because you choose 2 women AND 3 men together, multiply: 10 × 20 = 200."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Combinations with multiplication principle: ⁵C₂ × ⁶C₃."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Watch the order in the prompt: 2 women from 5 women (⁵C₂) and 3 men from 6 men (⁶C₃)!"
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In how many ways can 2 boys and 2 girls be chosen from 4 boys and 5 girls?",
+          "similarAnswer": "60 (⁴C₂ × ⁵C₂ = 6 × 10 = 60)."
+        }
+      ],
+      "animationId": "anim-math-api-0121",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 9393,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0011",
+      "subject": "mathematics",
+      "topic": "Probability and combinatorics",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In how many ways can a team of 3 girls be selected from 7 girls?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7!/2!5!",
+          "why": "7!/(2!5!) is the formula for choosing 2 (or 5) girls from 7, not 3.",
+          "whyWrong": "Selecting r items from n gives n!/(r!(n−r)!). With n = 7 and r = 3, the denominator is 3!4!, not 2!5!."
+        },
+        {
+          "id": "b",
+          "text": "7!/3!",
+          "why": "7!/3! omits the (7 − 3)! = 4! factor for the 4 unselected girls.",
+          "whyWrong": "7!/3! divides by only 3!, failing to remove the order among the 4 unselected girls."
+        },
+        {
+          "id": "c",
+          "text": "7!/4!",
+          "why": "7!/4! = ⁷P₃ = 210, which counts ordered arrangements (permutations), not unordered teams.",
+          "whyWrong": "7!/4! treats the order of picking the 3 girls as different teams (permutations). For a team (combination), divide by 3! as well."
+        },
+        {
+          "id": "d",
+          "text": "7!/3!4!",
+          "why": "Choosing 3 from 7 gives ⁷C₃ = 7! ÷ (3!(7 − 3)!) = 7! ÷ (3!4!).",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Order does not matter in a team, so use the combination formula ⁿCᵣ = n! ÷ [r!(n − r)!].",
+      "explanation": "Selecting a team of 3 girls from 7 without regard to order is a combination: ⁷C₃ = 7! ÷ [3!(7 − 3)!] = 7! / (3!4!).",
+      "trap": "7!/4! is the permutation formula ⁷P₃, catching students who forget to divide by r! = 3! when order does not matter.",
+      "mnemonic": "Combination has BOTH factorials underneath: r! and (n − r)!.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In ⁿCᵣ, put n! on top and both r! and (n − r)! on the bottom. With n = 7 and r = 3, 7 − 3 = 4, so you get 7!/(3!4!)."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "7!/4! is ⁷P₃ (permutations), where picking Ada-Bola-Chi counts separately from Chi-Bola-Ada. Teams have no order, so divide by 3! too."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule to know",
+          "answer": "ⁿCᵣ = n! ÷ [r!(n − r)!] for selection without order; ⁿPᵣ = n! ÷ (n − r)! when order matters."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Write the factorial expression for choosing 4 books from 9.",
+          "similarAnswer": "9!/(4!5!)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 156428,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0031",
+      "subject": "mathematics",
+      "topic": "Statistics",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Find the mean deviation of the numbers 1, 3, 5, 7.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "why": "Mean = 4; absolute deviations |−3|, |−1|, |1|, |3| sum to 8; 8 ÷ 4 = 2.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "why": "3 does not equal the average distance from the mean 4.",
+          "whyWrong": "The distances of 1, 3, 5, 7 from their mean 4 are 3, 1, 1, 3. Their average is (3 + 1 + 1 + 3) ÷ 4 = 8 ÷ 4 = 2."
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "why": "4 is the mean of the numbers, not their mean deviation.",
+          "whyWrong": "4 is the arithmetic mean (16 ÷ 4). Mean deviation is the average distance from 4, which is 2."
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "why": "5 is the median or variance? No, variance is 5, while mean deviation is 2.",
+          "whyWrong": "Notice 5 is the variance ((9 + 1 + 1 + 9) ÷ 4 = 20 ÷ 4 = 5)! Mean deviation uses absolute values |x − x̄| without squaring, giving 8 ÷ 4 = 2."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Find the mean first, take the positive distance of each number from the mean, then average those distances.",
+      "explanation": "Mean x̄ = (1 + 3 + 5 + 7) ÷ 4 = 16 ÷ 4 = 4. Absolute deviations |x − 4| are |1 − 4| = 3, |3 − 4| = 1, |5 − 4| = 1, |7 − 4| = 3. Mean deviation = (3 + 1 + 1 + 3) ÷ 4 = 8 ÷ 4 = 2.",
+      "trap": "5 is actually the variance of 1, 3, 5, 7 — catching students who square the deviations instead of taking absolute values.",
+      "mnemonic": "Mean deviation = average of |x − mean| (NO squaring!).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "First find the middle average: (1 + 3 + 5 + 7) ÷ 4 = 4. How far is each number from 4? Distances are 3, 1, 1, 3. Average those distances: (3 + 1 + 1 + 3) ÷ 4 = 2."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "5 is the variance (where you square 3² + 1² + 1² + 3² = 20 and divide by 4). Mean deviation just adds the plain distances 3 + 1 + 1 + 3 = 8 and divides by 4 to get 2."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Mean deviation: MD = Σ|x − x̄| ÷ n."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Variance squares; Mean deviation just takes absolute distances."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Find the mean deviation of 2, 4, 6, 8.",
+          "similarAnswer": "2 (mean = 5; |−3|+|−1|+|1|+|3| = 8; 8 ÷ 4 = 2)."
+        }
+      ],
+      "animationId": "anim-math-api-0031",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 18307,
+        "yearLabel": "2005"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0111",
+      "subject": "mathematics",
+      "topic": "Statistics",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The heights of 4 oranges are 2 cm, 5 cm, 7 cm and 10 cm. Calculate the variance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7.2",
+          "why": "7.2 does not equal Σ(x − 6)² ÷ 4.",
+          "whyWrong": "Check the squared deviations from mean 6: 16 + 1 + 1 + 16 = 34, and 34 ÷ 4 = 8.5."
+        },
+        {
+          "id": "b",
+          "text": "6.0",
+          "why": "6.0 is the mean of the heights, not the variance.",
+          "whyWrong": "6.0 cm is the arithmetic mean (24 ÷ 4). Variance is the average of the squared deviations from 6, which is 8.5."
+        },
+        {
+          "id": "c",
+          "text": "8.5",
+          "why": "Mean = 6; squared deviations 16 + 1 + 1 + 16 = 34; variance = 34 ÷ 4 = 8.5.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "9.1",
+          "why": "9.1 overestimates 34 ÷ 4.",
+          "whyWrong": "34 ÷ 4 = 8.5 exactly, not 9.1."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Find the mean (6), square each difference from 6, sum them, and divide by 4.",
+      "explanation": "Mean x̄ = (2 + 5 + 7 + 10) ÷ 4 = 24 ÷ 4 = 6. Deviations from 6 are −4, −1, 1, 4. Squaring gives 16, 1, 1, 16, whose sum is 34. Variance = 34 ÷ 4 = 8.5.",
+      "trap": "6.0 is the mean itself — students sometimes stop after step 1 or confuse mean with variance.",
+      "mnemonic": "Variance = average of SQUARED deviations from the mean.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Average of 2, 5, 7, 10 is 6. Differences from 6 are −4, −1, 1, 4. Square them: 16, 1, 1, 16. Add them up (34) and divide by 4: 34 ÷ 4 = 8.5."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "6.0 is just the mean of the 4 numbers. To get the variance, square each difference from 6 (16 + 1 + 1 + 16 = 34) and divide by 4 to get 8.5."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Population variance: σ² = Σ(x − x̄)² ÷ n."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Mean → Subtract → Square → Average."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Calculate the variance of 1, 3, 5, 7.",
+          "similarAnswer": "5.0 ((9 + 1 + 1 + 9) ÷ 4 = 20 ÷ 4 = 5)."
+        }
+      ],
+      "animationId": "anim-math-api-0111",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181111,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0072",
+      "subject": "mathematics",
+      "topic": "Sets and logic",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Given that P = {p: 1 < p < 20, where p is an integer} and R = {r: 0 ≤ r ≤ 25, where r is a multiple of 4}, find P ∩ R.",
+      "options": [
+        {
+          "id": "a",
+          "text": "{4,8,12,16}",
+          "why": "P has integers strictly between 1 and 20 (2 to 19); multiples of 4 inside that range are 4, 8, 12, 16.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "{4,8,12}",
+          "why": "{4, 8, 12} leaves out 16, which is strictly less than 20.",
+          "whyWrong": "16 satisfies 1 < 16 < 20 and is a multiple of 4, so it must be in P ∩ R."
+        },
+        {
+          "id": "c",
+          "text": "{4,8,12,16,20}",
+          "why": "20 is in R, not in P, because 1 < p < 20 is strict (< 20).",
+          "whyWrong": "P requires p < 20 strictly, so 20 is excluded from P and cannot appear in P ∩ R."
+        },
+        {
+          "id": "d",
+          "text": "{4,8,12,16,20,24}",
+          "why": "20 and 24 are both outside P (p < 20).",
+          "whyWrong": "Neither 20 nor 24 is strictly less than 20, so neither belongs to P."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Check the inequality signs carefully: 1 < p < 20 does NOT include 20, whereas 0 ≤ r ≤ 25 includes 0 and 24.",
+      "explanation": "Set P contains integers from 2 to 19 (since 1 < p < 20 is strict). Set R contains multiples of 4 from 0 to 24: {0, 4, 8, 12, 16, 20, 24}. Their intersection P ∩ R keeps only elements in both sets: {4, 8, 12, 16}.",
+      "trap": "{4, 8, 12, 16, 20} catches students who glance at 20 without noticing the strict inequality p < 20.",
+      "mnemonic": "Intersection (∩) = in BOTH sets; strict < excludes the endpoint.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "P holds whole numbers between 2 and 19 (20 is NOT allowed because it says p < 20). Multiples of 4 in R up to 25 are 0, 4, 8, 12, 16, 20, 24. Only 4, 8, 12, and 16 are in both."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "20 is in R, but P says 1 < p < 20 (strictly less than 20), so 20 is not in P."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule to know",
+          "answer": "Intersection A ∩ B contains only elements belonging to both A and B."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If A = {x : 1 ≤ x < 10} and B = {multiples of 3 up to 12}, find A ∩ B.",
+          "similarAnswer": "{3, 6, 9}."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181130,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0078",
+      "subject": "mathematics",
+      "topic": "Sets and logic",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Consider the statements m: Edna is respectful; n: Edna is brilliant. If m ⇒ n, which of the following is valid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "¬m ⇒ ¬n",
+          "why": "¬m ⇒ ¬n is the inverse, which is NOT logically equivalent to m ⇒ n.",
+          "whyWrong": "Being not respectful does not guarantee Edna is not brilliant. Only the contrapositive (¬n ⇒ ¬m) is always equivalent to m ⇒ n."
+        },
+        {
+          "id": "b",
+          "text": "n ⇒ ¬m",
+          "why": "n ⇒ ¬m contradicts m ⇒ n whenever m is true.",
+          "whyWrong": "If respectful implies brilliant, brilliant cannot imply not respectful."
+        },
+        {
+          "id": "c",
+          "text": "¬n ⇒ ¬m",
+          "why": "The contrapositive ¬n ⇒ ¬m is always logically equivalent to m ⇒ n.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "n ⇒ m",
+          "why": "n ⇒ m is the converse, which is not guaranteed by m ⇒ n.",
+          "whyWrong": "Knowing 'if respectful then brilliant' does not tell you whether every brilliant person is respectful (the converse)."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "a"
+      ],
+      "hint": "Recall which logical form is equivalent to 'If m then n': flip both sides AND negate both sides.",
+      "explanation": "An implication m ⇒ n ('If Edna is respectful, then she is brilliant') is always logically equivalent to its contrapositive ¬n ⇒ ¬m ('If Edna is not brilliant, then she is not respectful'). Neither the converse (n ⇒ m) nor the inverse (¬m ⇒ ¬n) follows automatically.",
+      "trap": "n ⇒ m (the converse) and ¬m ⇒ ¬n (the inverse) are classic logic fallacies when people assume an 'if–then' statement works backwards.",
+      "mnemonic": "Contrapositive = Flip AND Negate: (m ⇒ n) ≡ (¬n ⇒ ¬m).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If 'respectful' guarantees 'brilliant', then someone who is NOT brilliant cannot possibly be respectful — otherwise she would have to be brilliant! That is ¬n ⇒ ¬m."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "n ⇒ m ('if brilliant then respectful') is the converse. Someone might be brilliant for another reason without being respectful."
+        },
+        {
+          "id": "simpler",
+          "label": "Key rule to know",
+          "answer": "Implication m ⇒ n is equivalent to its contrapositive ¬n ⇒ ¬m, NOT its converse (n ⇒ m) or inverse (¬m ⇒ ¬n)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the contrapositive of 'If it rains (p), the ground gets wet (q)'?",
+          "similarAnswer": "¬q ⇒ ¬p ('If the ground is not wet, it did not rain')."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181144,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "math-api-0055",
+      "subject": "mathematics",
+      "topic": "Financial arithmetic",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A sum amounts to ₦121,000 at 10% compound interest per annum for 2 years. Find the principal.",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦90,000",
+          "why": "₦90,000 is too low (90,000 × 1.21 = ₦108,900 ≠ ₦121,000).",
+          "whyWrong": "At 10% compound interest for 2 years, the multiplier is 1.1² = 1.21. Dividing 121,000 by 1.21 gives ₦100,000, not ₦90,000."
+        },
+        {
+          "id": "b",
+          "text": "₦95,000",
+          "why": "₦95,000 × 1.21 = ₦114,950 ≠ ₦121,000.",
+          "whyWrong": "Check by compounding forward: ₦95,000 × 1.21 = ₦114,950, which falls short of ₦121,000."
+        },
+        {
+          "id": "c",
+          "text": "₦100,000",
+          "why": "A = P(1 + 0.10)² = 1.21P = 121,000, so P = 121,000 ÷ 1.21 = ₦100,000.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "₦110,000",
+          "why": "₦110,000 is the amount after 1 year (or uses 10% simple-interest confusion).",
+          "whyWrong": "₦110,000 compounded for 2 years at 10% grows to 110,000 × 1.21 = ₦133,100. ₦110,000 is actually the value after just 1 year on a ₦100,000 principal, not the starting principal."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Use the compound amount formula A = P(1 + r/100)ⁿ with A = 121,000, r = 10%, and n = 2.",
+      "explanation": "Compound amount A = P(1 + r/100)ⁿ gives 121,000 = P(1.10)² = 1.21P. Dividing 121,000 by 1.21 gives P = ₦100,000.",
+      "trap": "₦110,000 is the amount after 1 year (121,000 ÷ 1.10), tempting students who only divide by 1.10 once instead of 1.21.",
+      "mnemonic": "10% for 2 years = × 1.21; divide amount by 1.21 to go back to P.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Growing by 10% twice multiplies the principal by 1.1 × 1.1 = 1.21. Notice 121,000 ÷ 1.21 = 100,000, so the principal is ₦100,000."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "₦110,000 is what ₦100,000 becomes after 1 year (100,000 × 1.1), before the second year raises it by another 10% to ₦121,000."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Compound interest formula: A = P(1 + r/100)ⁿ."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Spot 121 = 11² right away: 121,000 ÷ 1.21 = 100,000."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A principal amounts to ₦72,600 at 10% compound interest per annum for 2 years. Find the principal.",
+          "similarAnswer": "₦60,000 (72,600 ÷ 1.21)."
+        }
+      ],
+      "animationId": "anim-math-api-0055",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181785,
+        "yearLabel": "2020"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

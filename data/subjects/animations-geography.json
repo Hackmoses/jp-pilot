@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "subject": "geography",
+  "count": 1,
+  "animations": [
+    {
+      "id": "anim-geog-api-0036",
+      "questionId": "geog-api-0036",
+      "stepSeconds": 3,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Vertical rise = 540 m − 300 m = 240 m",
+          "tag": "vertical rise",
+          "narration": "First find the vertical rise by subtracting 300 metres from 540 metres, giving 240 metres."
+        },
+        {
+          "n": 2,
+          "display": "Horizontal distance = 4.8 × 1000 = 4800 m",
+          "tag": "match units",
+          "narration": "Convert the horizontal distance to metres. 4.8 kilometres times 1000 gives 4800 metres."
+        },
+        {
+          "n": 3,
+          "display": "Gradient = 240 ÷ 4800",
+          "tag": "rise over run",
+          "narration": "Gradient is vertical rise divided by horizontal distance, which is 240 over 4800."
+        },
+        {
+          "n": 4,
+          "display": "Gradient = 1 / 20 = 1 : 20",
+          "tag": "simplify ratio",
+          "narration": "Divide both numbers by 240 to get 1 over 20, or a ratio of 1 to 20."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "subject": "computer",
+  "count": 12,
+  "questions": [
+    {
+      "id": "comp-api-0049",
+      "subject": "computer",
+      "topic": "Computer evolution and classification",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is a characteristic of a tablet computer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "High processing power",
+          "why": "Tablets prioritise portability and battery life over peak desktop or server processing power.",
+          "whyWrong": "While modern tablets can run everyday apps smoothly, high raw processing power is characteristic of workstations, gaming desktops, or supercomputers rather than tablets. Tablets use power-efficient mobile processors to stay thin and run long on battery."
+        },
+        {
+          "id": "b",
+          "text": "Touchscreen interface",
+          "why": "A tablet is a portable, flat microcomputer operated primarily through a touchscreen.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Multi-user support",
+          "why": "Simultaneous multi-user support is a feature of servers and mainframes, not personal tablets.",
+          "whyWrong": "Tablets are single-user personal microcomputers designed for one person holding the screen at a time. Multi-user support for dozens or thousands of concurrent users belongs to minicomputers, mainframes, and network servers."
+        },
+        {
+          "id": "d",
+          "text": "Large physical size",
+          "why": "Tablets are compact, lightweight mobile devices designed to be held in the hand.",
+          "whyWrong": "A defining goal of a tablet computer is portability, making it much smaller and lighter than a desktop or mainframe. Large physical size describes mainframe or supercomputer installations, not handheld mobile devices."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Think about how you type and tap on a tablet when there is no physical keyboard attached.",
+      "explanation": "A tablet computer is a portable, slate-style microcomputer whose primary input and display surface is a touchscreen interface. Unlike desktops, mainframes, or servers, tablets are built for single-user mobility rather than large physical size or heavy multi-user workloads.",
+      "trap": "Students sometimes pick high processing power because modern tablets feel fast, but compared with desktops, workstations, and servers, a tablet's defining trait is its touchscreen interface.",
+      "mnemonic": "Tablet = Touch and Travel. No bulky case, just a touch screen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A tablet is like a large smartphone. You control it by tapping and swiping directly on the screen instead of using a mouse and keyboard."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Tablets use low-power mobile chips so the battery lasts all day. Workstations and servers are the machines built for high processing power."
+        },
+        {
+          "id": "simpler",
+          "label": "How does a tablet compare to a laptop?",
+          "answer": "A laptop comes with an attached physical keyboard and clamshell screen, while a tablet puts everything into one flat touchscreen slate."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which class of computers is built to serve hundreds of users at the same time in banks and large organisations?",
+          "similarAnswer": "Mainframe computer"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 15788,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0005",
+      "subject": "computer",
+      "topic": "Hardware and peripherals",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What type of connector is commonly used for video output?",
+      "options": [
+        {
+          "id": "a",
+          "text": "USB",
+          "why": "USB is a general-purpose peripheral data bus, not the standard dedicated video output port.",
+          "whyWrong": "USB is designed mainly to connect peripherals such as flash drives, keyboards, mice, and printers for general data transfer. Although newer USB-C ports can carry video via alternate modes, the dedicated video output connector on monitors, TVs, and projectors is HDMI."
+        },
+        {
+          "id": "b",
+          "text": "HDMI",
+          "why": "HDMI carries high-definition digital video and audio to monitors, TVs, and projectors.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Ethernet",
+          "why": "Ethernet (RJ-45) connects computers to wired local networks, not video displays.",
+          "whyWrong": "An Ethernet cable plugs into an RJ-45 network port to carry internet and local network traffic. It does not output a video signal directly to a monitor or projector."
+        },
+        {
+          "id": "d",
+          "text": "Audio Jack",
+          "why": "An audio jack carries analog sound to headphones or speakers, not video.",
+          "whyWrong": "A 3.5 mm audio jack only transmits analog audio signals for microphones, headphones, or speakers. It cannot carry picture frames for a display screen."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Which cable plugs from a laptop or decoder straight into a modern television or projector for picture and sound?",
+      "explanation": "HDMI (High-Definition Multimedia Interface) is the standard digital connector used to transmit uncompressed video and audio signals from a computer or media device to a monitor, television, or projector.",
+      "trap": "USB looks tempting because almost every device has a USB port, and modern USB-C can carry display signals, but standard USB is a general peripheral port whereas HDMI is built specifically for video output.",
+      "mnemonic": "HDMI = High-Definition Monitor Interface (picture + sound on one cable).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "HDMI is the flat plug that sends the picture and sound from your computer to a TV, monitor, or projector."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "USB is mainly for connecting accessories like flash drives, mice, and keyboards. When you want to output video to a screen, HDMI is the standard connector."
+        },
+        {
+          "id": "simpler",
+          "label": "Name other video connectors",
+          "answer": "Older computers often used blue 15-pin VGA ports for analog video, while modern monitors use HDMI or DisplayPort for digital video."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which port uses an RJ-45 connector to link a computer to a wired local area network?",
+          "similarAnswer": "Ethernet port"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 141219,
+        "yearLabel": "1993"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0035",
+      "subject": "computer",
+      "topic": "Hardware and peripherals",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The memory located closest to the CPU that stores frequently used data is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Main Memory (RAM)",
+          "why": "RAM holds active programs and data, but it sits farther from the CPU and is slower than cache.",
+          "whyWrong": "Main Memory (RAM) sits on the motherboard outside the CPU chip and holds currently running programs. Because RAM is slower than the processor, the CPU keeps an even faster, smaller memory right beside its cores—cache memory."
+        },
+        {
+          "id": "b",
+          "text": "Virtual Memory",
+          "why": "Virtual memory uses slow secondary storage (disk/SSD) when RAM is full.",
+          "whyWrong": "Virtual memory is not fast on-chip hardware; it is an operating system technique that borrows space on a hard drive or SSD as overflow for RAM. Accessing it is far slower than accessing RAM or cache."
+        },
+        {
+          "id": "c",
+          "text": "Cache Memory",
+          "why": "Cache is high-speed SRAM built inside or right next to the CPU for frequently accessed instructions and data.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Secondary Storage",
+          "why": "Secondary storage (HDD/SSD) holds permanent files and is the farthest and slowest tier listed.",
+          "whyWrong": "Secondary storage devices like hard drives and SSDs keep files permanently when power is off, making them much slower than RAM and cache. They sit on storage buses far from the CPU execution units."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "b"
+      ],
+      "hint": "Think of the tiny, ultra-fast memory buffer placed between the CPU and RAM.",
+      "explanation": "Cache memory (L1, L2, and L3) is ultra-fast static RAM (SRAM) located on or immediately adjacent to the CPU. It stores copies of frequently used instructions and data so the processor does not have to wait for slower main memory (RAM).",
+      "trap": "Main Memory (RAM) is the usual trap because students know RAM is primary memory. However, cache memory sits even closer to the CPU specifically to speed up repeated lookups.",
+      "mnemonic": "CPU → Cache → RAM → Disk. Closest and fastest is Cache.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Think of RAM as a bookshelf across the room and cache as a small notepad right on the CPU's desk. Things you need often stay on the notepad so you can grab them instantly."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "RAM is fast compared to a hard drive, but still too slow for a modern CPU to wait on every time. Cache memory sits right inside the processor to bridge that speed gap."
+        },
+        {
+          "id": "simpler",
+          "label": "Order the memory hierarchy",
+          "answer": "From fastest and closest to the CPU down to slowest: CPU registers, Cache memory (L1/L2/L3), Main memory (RAM), and Secondary storage (SSD/HDD)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which type of memory loses its stored data as soon as electrical power is turned off?",
+          "similarAnswer": "Volatile memory (such as RAM and cache)"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 62715,
+        "yearLabel": "2010"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0023",
+      "subject": "computer",
+      "topic": "Software and operating systems",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the primary purpose of an operating system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To run applications",
+          "why": "Applications run on top of the OS, but the OS's core job is managing hardware resources for them.",
+          "whyWrong": "Running tasks for the user is the job of application software such as word processors and browsers. The operating system sits underneath those apps to allocate CPU time, memory, and devices so they can run without clashing."
+        },
+        {
+          "id": "b",
+          "text": "To manage hardware resources",
+          "why": "The OS controls and allocates CPU, memory, storage, and I/O devices across programs and users.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "To protect user data",
+          "why": "Data protection is mainly the focus of backup tools, encryption, and antivirus utilities.",
+          "whyWrong": "While operating systems include basic file permissions, protecting user data from malware or accidental loss is primarily handled by security and backup utility software. The core purpose of an OS is resource management."
+        },
+        {
+          "id": "d",
+          "text": "To provide internet connectivity",
+          "why": "Internet connectivity depends on network hardware, ISP links, and browsers or network clients.",
+          "whyWrong": "A computer can run an operating system perfectly well with no internet connection at all. Network hardware and communication software provide internet access, whereas the OS coordinates all hardware resources."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Ask what coordinates the CPU, RAM, keyboard, and hard drive so software can work at all.",
+      "explanation": "An operating system (such as Windows, Linux, or macOS) is system software that acts as the intermediary between users, applications, and hardware. Its primary responsibility is managing hardware resources—scheduling the CPU, allocating memory, and controlling input/output devices and files.",
+      "trap": "Many students pick 'To run applications' because they see apps open inside Windows or Android. Technically, the OS provides the platform by managing hardware resources so applications can run safely.",
+      "mnemonic": "OS = Overall Supervisor of hardware resources (CPU, RAM, Disk, I/O).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "An operating system is like a traffic controller inside the computer. It decides which program gets to use the processor, memory, and printer and when."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Saying 'to run applications' focuses on the user's apps, not the OS's core role. Without the OS managing memory, CPU time, and devices, applications would fight over the hardware and crash."
+        },
+        {
+          "id": "simpler",
+          "label": "List the main OS functions",
+          "answer": "Key operating system functions are process management, memory management, file management, device (I/O) management, and providing a user interface."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Software such as Microsoft Excel and Adobe Photoshop belongs to which main category of software?",
+          "similarAnswer": "Application software"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 141404,
+        "yearLabel": "2003"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0017",
+      "subject": "computer",
+      "topic": "Number systems and logic gates",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "What is the binary equivalent of the decimal number 13?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1010",
+          "why": "1010 in binary equals 8 + 0 + 2 + 0 = 10, not 13.",
+          "whyWrong": "In binary place values (8, 4, 2, 1), 1010 adds 8 and 2 to give 10 in decimal. To reach 13, you need the 4 and 1 bits turned on instead of 2."
+        },
+        {
+          "id": "b",
+          "text": "1100",
+          "why": "1100 in binary equals 8 + 4 + 0 + 0 = 12, missing the 1 bit.",
+          "whyWrong": "1100 adds 8 + 4 = 12 in decimal. Because 13 is an odd number, its binary form must end in 1, not 0."
+        },
+        {
+          "id": "c",
+          "text": "1101",
+          "why": "1101 in base 2 equals 1(8) + 1(4) + 0(2) + 1(1) = 13.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "1110",
+          "why": "1110 in binary equals 8 + 4 + 2 + 0 = 14, which is one too high.",
+          "whyWrong": "1110 sums to 8 + 4 + 2 = 14, not 13. Swapping the last two bits (10 instead of 01) changes an odd number into an even one."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Divide 13 repeatedly by 2 and read the remainders from bottom to top, or add powers of 2 (8, 4, 2, 1).",
+      "explanation": "Divide 13 by 2 repeatedly: 13 ÷ 2 = 6 remainder 1; 6 ÷ 2 = 3 remainder 0; 3 ÷ 2 = 1 remainder 1; 1 ÷ 2 = 0 remainder 1. Reading the remainders from bottom to top gives 1101₂. Checking with place values: 8 + 4 + 0 + 1 = 13.",
+      "trap": "1110 (which is 14) is a common slip when students swap the last two remainders or misread them top-to-bottom. Quick check: odd decimal numbers always end in 1 in binary.",
+      "mnemonic": "8-4-2-1 weights: 8 + 4 + 1 = 13, so 1-1-0-1.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Binary positions count 8, 4, 2, 1. To make 13, pick 8 + 4 + 1 and skip 2. Put a 1 under the numbers you picked and 0 under 2: 1101."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "1110 turns on 8, 4, and 2, which adds up to 14. You only need 8, 4, and 1 to make 13, which gives 1101."
+        },
+        {
+          "id": "simpler",
+          "label": "Show the division-by-2 method",
+          "answer": "13 ÷ 2 = 6 r 1; 6 ÷ 2 = 3 r 0; 3 ÷ 2 = 1 r 1; 1 ÷ 2 = 0 r 1. Reading the remainders upwards gives 1101."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the binary equivalent of the decimal number 11?",
+          "similarAnswer": "1011"
+        }
+      ],
+      "animationId": "anim-comp-api-0017",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 142399,
+        "yearLabel": "2001"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0048",
+      "subject": "computer",
+      "topic": "Number systems and logic gates",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What is the hexadecimal equivalent of the decimal number 255?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FF",
+          "why": "255 ÷ 16 = 15 remainder 15, and 15 in hexadecimal is F, giving FF.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "EE",
+          "why": "EE in hexadecimal equals 14(16) + 14 = 238, not 255.",
+          "whyWrong": "In hexadecimal, E represents 14, so EE equals 14 × 16 + 14 = 238. Since 255 is one less than 256 (16²), both hex digits take the maximum value F (15)."
+        },
+        {
+          "id": "c",
+          "text": "F0",
+          "why": "F0 in hexadecimal equals 15(16) + 0 = 240, dropping the remainder 15.",
+          "whyWrong": "F0 represents 15 × 16 + 0 = 240. When dividing 255 by 16, you get a quotient of 15 (F) and a remainder of 15 (F), not 0."
+        },
+        {
+          "id": "d",
+          "text": "100",
+          "why": "100 in hexadecimal equals 1 × 16² = 256, which is one too high.",
+          "whyWrong": "100₁₆ equals 256 in decimal because the third hex column has a place value of 16² = 256. 255 is the largest value that fits in two hex digits (FF)."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Divide 255 by 16, and remember that hexadecimal represents 10 to 15 with the letters A to F.",
+      "explanation": "Divide 255 by 16: 255 ÷ 16 = 15 remainder 15 (since 15 × 16 = 240, and 255 − 240 = 15). In hexadecimal, 15 is written as F, so 255₁₀ = FF₁₆. Check: 15(16) + 15(1) = 240 + 15 = 255.",
+      "trap": "Students often pick 100 because they associate 8 bits (1 byte) with 256 values and forget that counting from 0 makes the maximum value 255 = FF₁₆, while 256 = 100₁₆.",
+      "mnemonic": "A=10, B=11, C=12, D=13, E=14, F=15. Max byte 255 = FF.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In hex (base 16), F stands for 15. One F in the 16s place is 15 × 16 = 240, plus F (15) in the 1s place makes 255. So 255 is FF."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "100 in base 16 means 1 × 256 = 256, which is one larger than 255. One step below 100₁₆ is FF₁₆ = 255."
+        },
+        {
+          "id": "simpler",
+          "label": "Convert via binary",
+          "answer": "255 in 8-bit binary is 11111111. Split into two 4-bit nibbles: 1111 (15 = F) and 1111 (15 = F), giving FF."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the hexadecimal equivalent of the decimal number 175?",
+          "similarAnswer": "AF"
+        }
+      ],
+      "animationId": "anim-comp-api-0048",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 62421,
+        "yearLabel": "2022"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0033",
+      "subject": "computer",
+      "topic": "Data representation and storage",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In the context of computer science, which file format is widely used for highly compressed digital audio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AVI",
+          "why": "AVI is a multimedia video container format, not a compressed audio-only format.",
+          "whyWrong": "AVI (Audio Video Interleave) is a Microsoft container format designed mainly to store video together with audio streams. It is not a standard standalone format for highly compressed music files."
+        },
+        {
+          "id": "b",
+          "text": "MP3",
+          "why": "MP3 (MPEG-1 Audio Layer III) uses lossy compression to shrink digital audio files.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "BMP",
+          "why": "BMP is an uncompressed raster image format, not an audio format.",
+          "whyWrong": "BMP (Bitmap) stores pixel grids for still images, usually without compression. It does not store digital audio."
+        },
+        {
+          "id": "d",
+          "text": "DOCX",
+          "why": "DOCX is a word-processing document format, not an audio format.",
+          "whyWrong": "DOCX is the XML-based file format used by Microsoft Word for formatted text documents. It is unrelated to digital audio compression."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "Think of the popular music file extension that shrinks CD audio to roughly a tenth of its size.",
+      "explanation": "MP3 (MPEG-1 Audio Layer III) is a widely adopted lossy audio compression format. It removes sound frequencies that the human ear barely notices, making audio files much smaller while keeping acceptable listening quality.",
+      "trap": "AVI includes the word 'Audio' in its full name (Audio Video Interleave), which can mislead students, but AVI is a video container rather than a compressed audio format like MP3.",
+      "mnemonic": "MP3 = Music Plays in 3 letters (compressed audio). AVI = Video, BMP = Bitmap image, DOCX = Document.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "MP3 is the classic small music file format. It trims out tiny sound details humans hardly hear so songs take up much less storage space."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "AVI is mainly for video files (movies and clips), even though it carries sound alongside the video. MP3 is the standard format specifically for compressed audio."
+        },
+        {
+          "id": "simpler",
+          "label": "Contrast with WAV audio",
+          "answer": "WAV typically stores uncompressed CD-quality audio and produces very large files, whereas MP3 compresses the audio so it streams and stores easily."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which file format is widely used for compressed photographs on the web?",
+          "similarAnswer": "JPEG (or JPG)"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 61213,
+        "yearLabel": "2009"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0024",
+      "subject": "computer",
+      "topic": "Computer networks and internet",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What device is used to convert digital signals into analog signals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modem",
+          "why": "A modem modulates digital data into analog signals and demodulates analog signals back to digital.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Router",
+          "why": "A router forwards data packets between different networks; it does not perform modulation itself.",
+          "whyWrong": "A router directs data packets between separate networks (such as your home LAN and the internet) using IP addresses. Although many home boxes combine a router and modem in one casing, converting between digital and analog signals is the modem's job."
+        },
+        {
+          "id": "c",
+          "text": "Switch",
+          "why": "A switch forwards digital frames between devices on a LAN using MAC addresses.",
+          "whyWrong": "A network switch operates digitally within a local area network, sending Ethernet frames directly to the target port based on MAC addresses. It does not convert digital signals into analog waveforms."
+        },
+        {
+          "id": "d",
+          "text": "Hub",
+          "why": "A hub simply broadcasts incoming digital signals to all connected LAN ports.",
+          "whyWrong": "A hub is a basic LAN repeater that copies incoming electrical signals out to every connected port. It does not modulate digital signals into analog carrier waves for telephone or cable lines."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "d",
+        "c"
+      ],
+      "hint": "The device's name is a blend of the words MOdulator and DEModulator.",
+      "explanation": "A modem (MOdulator-DEModulator) converts digital signals from a computer into analog signals (modulation) for transmission over telephone or analog lines, and converts incoming analog signals back into digital data (demodulation).",
+      "trap": "Students often pick Router because home internet boxes are commonly called 'Wi-Fi routers', forgetting that the modem part is what converts between digital and analog signals.",
+      "mnemonic": "MODEM = MOdulate (digital → analog) + DEModulate (analog → digital).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Computers speak digital (1s and 0s), while old phone lines carry smooth analog waves. A modem translates between the two so data can travel over the line."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A router chooses the best path for data packets between networks, like a postal sorting office. Converting digital bits to analog waves is done by the modem."
+        },
+        {
+          "id": "simpler",
+          "label": "Break down the word MODEM",
+          "answer": "MO comes from Modulator (digital to analog when sending) and DEM comes from Demodulator (analog back to digital when receiving)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which network device forwards data packets between different networks using IP addresses?",
+          "similarAnswer": "Router"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 53060,
+        "yearLabel": "2004"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0047",
+      "subject": "computer",
+      "topic": "Computer networks and internet",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following describes a WAN?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network in a single building",
+          "why": "A network within a single building or office is a Local Area Network (LAN).",
+          "whyWrong": "A network restricted to one room, office, or building is a LAN (Local Area Network), not a WAN. WAN stands for Wide Area Network and spans much larger distances."
+        },
+        {
+          "id": "b",
+          "text": "Network across a city",
+          "why": "A network spanning a city or metropolitan area is a Metropolitan Area Network (MAN).",
+          "whyWrong": "A network linking buildings across a city or town is classified as a MAN (Metropolitan Area Network). A WAN goes beyond a single city to connect regions, countries, or continents."
+        },
+        {
+          "id": "c",
+          "text": "Network across countries",
+          "why": "A Wide Area Network (WAN) spans huge geographic distances such as across countries or continents.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Network in a home",
+          "why": "A small network inside a home is a home LAN (and around one person is a PAN).",
+          "whyWrong": "Connecting phones, laptops, and a router inside one house forms a small Local Area Network (LAN), not a Wide Area Network. A WAN links distant networks across countries."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "WAN stands for Wide Area Network—the largest geographic scale among PAN, LAN, MAN, and WAN.",
+      "explanation": "A WAN (Wide Area Network) covers a broad geographic area spanning cities, countries, or even continents—the Internet is the largest example. Smaller scopes correspond to PAN (around a person), LAN (a home or building), and MAN (a city).",
+      "trap": "'Network across a city' is the main distractor because a city feels big, yet city-wide networks are specifically defined as MANs (Metropolitan Area Networks), leaving WAN for country- and global-scale networks.",
+      "mnemonic": "PAN (Person) < LAN (Location/building) < MAN (Metro/city) < WAN (World/countries).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "WAN means Wide Area Network—think wide across the country or the whole world, like the Internet connecting offices in different countries."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A network across one city is called a MAN (Metropolitan Area Network). When a network stretches across countries or continents, it is a WAN."
+        },
+        {
+          "id": "simpler",
+          "label": "Compare PAN, LAN, MAN, and WAN",
+          "answer": "PAN covers a few metres (Bluetooth), LAN covers a home or school building, MAN covers a city, and WAN covers countries and continents."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which type of network connects computers within a single school building or office?",
+          "similarAnswer": "LAN (Local Area Network)"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 144573,
+        "yearLabel": "2022"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0038",
+      "subject": "computer",
+      "topic": "Databases and spreadsheets",
+      "type": "recall",
+      "difficulty": 3,
+      "stem": "An open-source database management system is",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oracle",
+          "why": "Oracle Database is proprietary commercial software, not open-source.",
+          "whyWrong": "Oracle Database is a commercial, closed-source relational database management system owned by Oracle Corporation. Its core source code is proprietary and requires commercial licensing for full enterprise use."
+        },
+        {
+          "id": "b",
+          "text": "PostgreSQL",
+          "why": "PostgreSQL is a free, open-source object-relational database management system.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "SQL Server",
+          "why": "Microsoft SQL Server is a proprietary commercial DBMS, not open-source.",
+          "whyWrong": "SQL Server is a proprietary relational database management system developed by Microsoft. Having 'SQL' in its name only refers to the query language it uses, not an open-source license."
+        },
+        {
+          "id": "d",
+          "text": "DB2",
+          "why": "IBM Db2 is proprietary commercial database software, not open-source.",
+          "whyWrong": "DB2 is a proprietary family of data management products developed and sold by IBM. Its source code is closed and commercially licensed."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Three of these are proprietary enterprise databases from Oracle, Microsoft, and IBM.",
+      "explanation": "PostgreSQL is a widely used free and open-source object-relational database management system (ORDBMS) whose source code is publicly available under the permissive PostgreSQL License. Oracle, Microsoft SQL Server, and IBM DB2 are proprietary commercial DBMS products.",
+      "trap": "Students often pick 'SQL Server' because SQL is a standard language used everywhere, forgetting that 'Microsoft SQL Server' is a closed-source commercial product.",
+      "mnemonic": "Open-source DBMS examples: PostgreSQL, MySQL, MariaDB, SQLite. Proprietary: Oracle, SQL Server, DB2.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Open-source means anyone can download, inspect, and use the software's code freely. PostgreSQL is free and open-source, while Oracle, Microsoft SQL Server, and IBM DB2 are paid proprietary products."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Even though SQL is an open standard language, 'SQL Server' is Microsoft's closed-source commercial product. PostgreSQL is the open-source option here."
+        },
+        {
+          "id": "simpler",
+          "label": "Give other open-source DBMS examples",
+          "answer": "Besides PostgreSQL, other common open-source database systems include MySQL, MariaDB, and SQLite."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "In a relational database table, what is a single column that stores one attribute called?",
+          "similarAnswer": "A field (or attribute)"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 15311,
+        "yearLabel": "2012"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0018",
+      "subject": "computer",
+      "topic": "Programming and algorithms",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In flowcharts, which symbol is used to represent a decision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rectangle",
+          "why": "A rectangle represents a processing step or calculation, not a decision.",
+          "whyWrong": "In standard flowcharts, a rectangle stands for a process—such as assigning a variable or performing arithmetic. It has one flow out rather than a Yes/No branch."
+        },
+        {
+          "id": "b",
+          "text": "Oval",
+          "why": "An oval (rounded terminator) marks the Start or Stop of a flowchart.",
+          "whyWrong": "The oval (terminator symbol) shows where an algorithm begins (Start) or ends (Stop). It never tests a condition or splits the flow into branches."
+        },
+        {
+          "id": "c",
+          "text": "Diamond",
+          "why": "A diamond represents a decision point with a condition that branches Yes/No or True/False.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Parallelogram",
+          "why": "A parallelogram represents input or output operations, not a decision.",
+          "whyWrong": "A slanted parallelogram is used for input/output actions such as 'Read X' or 'Print Result'. Decision branching uses a diamond shape instead."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "a"
+      ],
+      "hint": "Think of the pointed shape with left/right/bottom corners where a flow splits into Yes and No.",
+      "explanation": "In standard flowchart notation, a diamond symbol represents a decision or conditional branch (such as 'Is x > 10?'), with outgoing arrows labelled Yes/No or True/False. Rectangles represent processes, ovals represent Start/Stop, and parallelograms represent Input/Output.",
+      "trap": "Students frequently mix up the Diamond and the Parallelogram because both have angled sides, but Parallelogram is for Input/Output while Diamond is for Decision.",
+      "mnemonic": "Diamond = Decision (both start with D). Oval = Open/Over, Rectangle = wRite/process, Parallelogram = Print/input.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A diamond has sharp points on the sides, which makes it easy to draw a 'Yes' arrow out of one side and a 'No' arrow out of the other. That is why it stands for a decision."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "A parallelogram is only for Input/Output—like asking the user for a number or displaying an answer. A diamond is used when the program has to choose between Yes and No."
+        },
+        {
+          "id": "simpler",
+          "label": "Recap all 4 core flowchart shapes",
+          "answer": "Oval = Start/Stop; Parallelogram = Input/Output; Rectangle = Process; Diamond = Decision."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which flowchart symbol is used to represent reading input from the keyboard or printing output?",
+          "similarAnswer": "Parallelogram"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 142555,
+        "yearLabel": "2001"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "comp-api-0046",
+      "subject": "computer",
+      "topic": "ICT ethics and security",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the purpose of a firewall in a network?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To increase internet speed",
+          "why": "Inspecting traffic does not speed up a connection; firewalls exist for security, not bandwidth.",
+          "whyWrong": "A firewall checks incoming and outgoing traffic against security rules, which adds security rather than speed. Increasing bandwidth depends on your ISP plan and network hardware."
+        },
+        {
+          "id": "b",
+          "text": "To protect against unauthorized access",
+          "why": "A firewall monitors and filters network traffic to block unauthorized access to or from a private network.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "To store network data",
+          "why": "Storing network files and backups is the role of file servers or NAS devices, not a firewall.",
+          "whyWrong": "A firewall inspects packets in transit; it is not a data storage repository. File servers, databases, and backup drives handle network data storage."
+        },
+        {
+          "id": "d",
+          "text": "To connect multiple networks",
+          "why": "Connecting separate networks is the job of a router, whereas a firewall controls who is allowed through.",
+          "whyWrong": "Routers and gateways are responsible for linking multiple networks and forwarding packets between them. A firewall sits at the boundary to enforce access rules and block unauthorized traffic."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "a"
+      ],
+      "hint": "Think of a security guard standing at the gate of a building checking who has permission to enter.",
+      "explanation": "A firewall is a network security system (hardware or software) that monitors incoming and outgoing network traffic and allows or blocks packets based on defined security rules, protecting a private network from unauthorized access.",
+      "trap": "'To connect multiple networks' sounds plausible because firewalls sit between your LAN and the internet, but connecting networks is the router's job—the firewall's job is access protection.",
+      "mnemonic": "Firewall = Fire wall keeping intruders out. Filter traffic, block unauthorized access.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A firewall is like a security gate at a compound entrance. It checks every piece of data trying to enter or leave your network and blocks anything suspicious or unapproved."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Connecting networks together is what a router does. A firewall sits on that connection to filter out intruders and protect against unauthorized access."
+        },
+        {
+          "id": "simpler",
+          "label": "Contrast firewall vs antivirus",
+          "answer": "A firewall guards the network door by filtering incoming and outgoing traffic, while antivirus software scans files already on your computer for malware."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which security process converts readable plaintext into unreadable ciphertext to protect data?",
+          "similarAnswer": "Encryption"
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 15575,
+        "yearLabel": "2020"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

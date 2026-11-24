@@ -1,0 +1,2392 @@
+{
+  "version": 1,
+  "subject": "physics",
+  "count": 30,
+  "questions": [
+    {
+      "id": "phys-api-0005",
+      "subject": "physics",
+      "topic": "Vectors and scalars",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "If vector A = 3i + 4j, what is its magnitude?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5",
+          "why": "|A| = √(3² + 4²) = √25 = 5.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "why": "7 adds 3 and 4 directly instead of using Pythagoras' theorem.",
+          "whyWrong": "7 comes from adding 3 + 4 directly, which only works when two vectors point in the exact same direction. Because i and j are perpendicular, use Pythagoras' theorem: √(3² + 4²) = 5."
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "why": "1 subtracts 3 from 4 instead of finding the vector magnitude.",
+          "whyWrong": "1 is 4 − 3, which treats perpendicular components as opposing along one line. Perpendicular i and j components combine via √(3² + 4²) = 5."
+        },
+        {
+          "id": "d",
+          "text": "25",
+          "why": "25 is the squared magnitude (3² + 4²), forgetting the square root.",
+          "whyWrong": "25 equals 3² + 4², which is |A|² rather than |A|. Remember to take the square root of 25 to get 5."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "The unit vectors i and j are at 90° to each other, so use Pythagoras' theorem.",
+      "explanation": "For a vector A = x i + y j, its magnitude is |A| = √(x² + y²). Here |A| = √(3² + 4²) = √(9 + 16) = √25 = 5.",
+      "trap": "7 catches students who simply add the components 3 + 4 without remembering that perpendicular components form a right-angled triangle.",
+      "mnemonic": "3-4-5 right triangle: perpendicular components use Pythagoras.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "3 steps east (i) and 4 steps north (j) make two sides of a right triangle. The straight-line length is √(3² + 4²) = √25 = 5."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "You only add 3 + 4 = 7 if both parts point the same way. Since i and j are at right angles, use √(3² + 4²) = 5."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Magnitude of a 2D vector: |A| = √(Aₓ² + Aᵧ²)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Spot the classic 3-4-5 Pythagorean triple right away."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the magnitude of vector B = 6i + 8j?",
+          "similarAnswer": "10 (since √(36 + 64) = √100 = 10)."
+        }
+      ],
+      "animationId": "anim-phys-api-0005",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 90156,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0094",
+      "subject": "physics",
+      "topic": "Vectors and scalars",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Vectors and Scalars\n\nA force F = (3i + 4j) N acts on an object causing a displacement d = (2i + 5j) m. Calculate the work done by the force.",
+      "options": [
+        {
+          "id": "a",
+          "text": "26 J",
+          "why": "W = F · d = (3 × 2) + (4 × 5) = 6 + 20 = 26 J.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "14 J",
+          "why": "14 J subtracts instead of adding, or crosses i and j components.",
+          "whyWrong": "14 J comes from 20 − 6 instead of 20 + 6, or mixing up components. In a dot product, multiply i with i and j with j, then add: 6 + 20 = 26 J."
+        },
+        {
+          "id": "c",
+          "text": "20 J",
+          "why": "20 J only counts the j-component product (4 × 5) and ignores the i-component.",
+          "whyWrong": "20 J is just 4 × 5 from the j direction alone. The force also pushes 3 N along the i direction for 2 m (6 J), so total work is 6 + 20 = 26 J."
+        },
+        {
+          "id": "d",
+          "text": "35 J",
+          "why": "35 J comes from multiplying the sums (3+4) × (2+5) or wrong pairing.",
+          "whyWrong": "35 J multiplies (3 + 4) by (2 + 5) = 7 × 5, which wrongly mixes perpendicular components. Work is the scalar dot product: (3 × 2) + (4 × 5) = 26 J."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Work done in vector form is the dot product W = F · d: multiply matching i and j parts and add.",
+      "explanation": "Work done is the dot product of force and displacement: W = F · d = (3i + 4j) · (2i + 5j) = (3 × 2) + (4 × 5) = 6 + 20 = 26 J.",
+      "trap": "14 J traps students who subtract 20 − 6 (mixing dot product up with cross product) instead of adding the i and j products.",
+      "mnemonic": "Dot product: i with i, j with j, then add.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Multiply the matching directions separately: x-part (3 × 2 = 6) and y-part (4 × 5 = 20). Add them up: 6 + 20 = 26 J."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Subtracting (20 − 6 = 14) happens in a 2D cross product. Work is a dot product, so you add the matching products: 6 + 20 = 26 J."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Scalar (dot) product for work: W = F · d = Fₓdₓ + Fᵧdᵧ."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Work is a scalar, so use the dot product and sum the matching components."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A force F = (4i + 2j) N moves an object through d = (3i + 5j) m. Find the work done.",
+          "similarAnswer": "22 J (since 4×3 + 2×5 = 12 + 10 = 22 J)."
+        }
+      ],
+      "animationId": "anim-phys-api-0094",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 146581,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0027",
+      "subject": "physics",
+      "topic": "Kinematics",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A body accelerates uniformly from rest at 2ms⁻² for 5s. What is its final velocity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10ms⁻¹",
+          "why": "v = u + at = 0 + (2 × 5) = 10 m s⁻¹.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "12ms⁻¹",
+          "why": "12 m/s adds 2 instead of multiplying, or uses the wrong initial speed.",
+          "whyWrong": "12 m/s does not follow v = u + at when starting from rest (u = 0). Multiplying acceleration (2) by time (5) gives 10 m s⁻¹."
+        },
+        {
+          "id": "c",
+          "text": "8ms⁻¹",
+          "why": "8 m/s comes from subtracting or miscalculating 2 × 5.",
+          "whyWrong": "8 m/s does not equal 2 × 5. Starting from rest and adding 2 m/s every second for 5 seconds reaches 10 m s⁻¹."
+        },
+        {
+          "id": "d",
+          "text": "15ms⁻¹",
+          "why": "15 m/s uses 3 m/s² or 5 + 10.",
+          "whyWrong": "15 m/s would need an acceleration of 3 m s⁻² over 5 s. At 2 m s⁻² from rest, v = 2 × 5 = 10 m s⁻¹."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "'From rest' means initial velocity u = 0. Use v = u + at.",
+      "explanation": "Using the first equation of motion v = u + at with u = 0, a = 2 m s⁻², and t = 5 s gives v = 0 + 2 × 5 = 10 m s⁻¹.",
+      "trap": "Students sometimes misread 'from rest' or slip on simple mental addition instead of multiplying acceleration by time.",
+      "mnemonic": "v = u + at — starting from rest means v = at.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Accelerating at 2 m/s² means the speed grows by 2 m/s every second. Starting from 0, after 5 seconds it reaches 2 × 5 = 10 m/s."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Starting from rest makes u = 0, so v = 0 + 2 × 5 = 10 m s⁻¹, not 12 m s⁻¹."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "First equation of uniformly accelerated motion: v = u + at."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Acceleration × time = change in velocity."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A car starts from rest and accelerates uniformly at 3 m s⁻² for 4 s. What is its final velocity?",
+          "similarAnswer": "12 m s⁻¹ (3 × 4)."
+        }
+      ],
+      "animationId": "anim-phys-api-0027",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 19342,
+        "yearLabel": "2013"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0046",
+      "subject": "physics",
+      "topic": "Kinematics",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A car moving at 20 m s⁻¹ comes to rest uniformly in 5 s. What is its acceleration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "-4 m s⁻²",
+          "why": "a = (v − u) ÷ t = (0 − 20) ÷ 5 = −4 m s⁻².",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "-2 m s⁻²",
+          "why": "−2 m s⁻² divides 20 by 10 instead of 5.",
+          "whyWrong": "−2 m s⁻² would take 10 seconds to stop from 20 m s⁻¹. Stopping in 5 seconds gives (0 − 20) ÷ 5 = −4 m s⁻²."
+        },
+        {
+          "id": "c",
+          "text": "4 m s⁻²",
+          "why": "4 m s⁻² has the wrong sign because the car is slowing down, not speeding up.",
+          "whyWrong": "4 m s⁻² is the magnitude of the retardation, but acceleration uses (v − u) ÷ t = (0 − 20) ÷ 5 = −4 m s⁻². The negative sign shows deceleration."
+        },
+        {
+          "id": "d",
+          "text": "10 m s⁻²",
+          "why": "10 m s⁻² divides by 2 instead of 5.",
+          "whyWrong": "10 m s⁻² divides 20 by 2 and drops the minus sign. Divide −20 by 5 s to get −4 m s⁻²."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Coming to rest means final velocity v = 0, so check the sign in a = (v − u) ÷ t.",
+      "explanation": "Here u = 20 m s⁻¹, v = 0, and t = 5 s. Acceleration a = (v − u) ÷ t = (0 − 20) ÷ 5 = −4 m s⁻² (negative because the car decelerates).",
+      "trap": "4 m s⁻² is very tempting because 20 ÷ 5 = 4, but slowing down gives negative acceleration (−4 m s⁻²).",
+      "mnemonic": "Final minus Initial: slowing down always gives a minus sign.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The car drops from 20 m/s to 0 in 5 seconds. Each second it loses 20 ÷ 5 = 4 m/s, so its acceleration is −4 m s⁻²."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "+4 m s⁻² means speeding up by 4 m/s every second. Because the car slows to rest, v − u is negative, giving −4 m s⁻²."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Acceleration a = (v − u) ÷ t."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Always write (v − u), never (u − v), so decelerations keep their minus sign."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A cyclist moving at 15 m s⁻¹ brakes uniformly to rest in 3 s. What is the acceleration?",
+          "similarAnswer": "−5 m s⁻²."
+        }
+      ],
+      "animationId": "anim-phys-api-0046",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 184552,
+        "yearLabel": "2020"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0127",
+      "subject": "physics",
+      "topic": "Kinematics",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Calculate the total distance covered by a train before coming to rest if its initial speed is 30ms⁻¹ with a constant retardation of 0.1ms⁻²",
+      "options": [
+        {
+          "id": "a",
+          "text": "5500m",
+          "why": "5500 m does not follow s = u² ÷ (2a).",
+          "whyWrong": "5500 m overestimates the stopping distance. Using v² = u² + 2as with v = 0 and a = −0.1 gives s = 900 ÷ 0.2 = 4500 m."
+        },
+        {
+          "id": "b",
+          "text": "4500m",
+          "why": "v² = u² + 2as gives 0 = 30² − 2(0.1)s, so s = 900 ÷ 0.2 = 4500 m.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "4200m",
+          "why": "4200 m is close to 4500 m but miscalculates 900 ÷ 0.2.",
+          "whyWrong": "4200 m comes from a division slip. Since 0.2 = 1/5, dividing 900 by 0.2 is the same as 900 × 5 = 4500 m."
+        },
+        {
+          "id": "d",
+          "text": "3000m",
+          "why": "3000 m forgets to square u or drops the factor of 2.",
+          "whyWrong": "3000 m comes from misapplying the equation, such as dividing 300 by 0.1. In v² = u² + 2as, u² is 900 and 2a is 0.2, giving 4500 m."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Notice time is not given! Use v² = u² + 2as with v = 0 and a = −0.1 m s⁻².",
+      "explanation": "With u = 30 m s⁻¹, v = 0, and a = −0.1 m s⁻², substitute into v² = u² + 2as: 0 = 30² + 2(−0.1)s, so 0.2s = 900, giving s = 900 ÷ 0.2 = 4500 m.",
+      "trap": "3000 m traps students who confuse the numbers or forget the factor of 2 in 2as.",
+      "mnemonic": "No time given? Pick v² = u² + 2as.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Use v² = u² + 2as. Square 30 to get 900, then divide by 2 × 0.1 (= 0.2). Dividing by 0.2 multiplies by 5: 900 × 5 = 4500 m."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "3000 m leaves out part of u² ÷ (2a). With u² = 900 and 2a = 0.2, 900 ÷ 0.2 = 4500 m."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Third equation of motion: v² = u² + 2as (useful when time t is unknown)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Dividing by 0.2 is the same as multiplying by 5."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A car moving at 20 m s⁻¹ decelerates at 2 m s⁻² until it stops. How far does it travel?",
+          "similarAnswer": "100 m (400 ÷ 4)."
+        }
+      ],
+      "animationId": "anim-phys-api-0127",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10491,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0099",
+      "subject": "physics",
+      "topic": "Circular motion and gravitation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An object of mass 2 kg moves with a velocity of 10 ms⁻¹ round a circle of radius 4 m. Calculate the centripetal force on the object",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 N",
+          "why": "25 N is v² ÷ r (the centripetal acceleration), forgetting to multiply by mass m = 2 kg.",
+          "whyWrong": "25 m s⁻² is the centripetal acceleration (10² ÷ 4 = 25), not the centripetal force. Multiply by the mass 2 kg to get F = 2 × 25 = 50 N."
+        },
+        {
+          "id": "b",
+          "text": "100 N",
+          "why": "100 N doubles the force or forgets to divide by radius 4 m (using 2 m instead).",
+          "whyWrong": "100 N comes from dividing by 2 instead of 4 (or multiplying by 2 twice). In F = mv² ÷ r, divide 2 × 100 by 4 to get 50 N."
+        },
+        {
+          "id": "c",
+          "text": "50 N",
+          "why": "F = mv² ÷ r = (2 × 10²) ÷ 4 = 200 ÷ 4 = 50 N.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "40 N",
+          "why": "40 N does not match mv² ÷ r.",
+          "whyWrong": "40 N could come from using v instead of v² or miscalculating. Remember velocity is squared: 2 × 10² ÷ 4 = 50 N."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Use the centripetal force formula F = mv² ÷ r.",
+      "explanation": "Centripetal force is F = mv² / r. Substituting m = 2 kg, v = 10 m s⁻¹, and r = 4 m gives F = (2 × 10²) ÷ 4 = 200 ÷ 4 = 50 N.",
+      "trap": "25 N is a classic trap because v² ÷ r = 25 is the centripetal acceleration — students forget to multiply by mass m = 2 kg.",
+      "mnemonic": "F = mv²/r — don't forget to square v and multiply by m.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Square the speed (10² = 100), multiply by mass (2 × 100 = 200), then divide by the radius (200 ÷ 4 = 50 N)."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "25 is only v² ÷ r, which is acceleration in m/s². Force needs mass too: 2 kg × 25 m/s² = 50 N."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Centripetal force: F = mv² ÷ r."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "F = ma where circular acceleration a = v²/r."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A 3 kg mass moves at 4 m s⁻¹ in a circle of radius 2 m. What is the centripetal force?",
+          "similarAnswer": "24 N (3 × 16 ÷ 2)."
+        }
+      ],
+      "animationId": "anim-phys-api-0099",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10348,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0144",
+      "subject": "physics",
+      "topic": "Circular motion and gravitation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Gravitational Field\n\nA satellite orbits Earth at a height where orbital velocity is 7.0 km/s. If the orbit is circular with radius 8000 km, calculate its centripetal acceleration.",
+      "options": [
+        {
+          "id": "a",
+          "text": "6.125 m/s²",
+          "why": "v = 7000 m/s and r = 8 × 10⁶ m, so a = v² ÷ r = (4.9 × 10⁷) ÷ (8 × 10⁶) = 6.125 m/s².",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "8.750 m/s²",
+          "why": "8.750 m/s² divides 70,000 by 8000 without squaring v properly.",
+          "whyWrong": "8.750 comes from 70 ÷ 8 instead of 7² ÷ 8 (49 ÷ 8). Centripetal acceleration uses v², not v: 49 ÷ 8 = 6.125 m/s²."
+        },
+        {
+          "id": "c",
+          "text": "9.800 m/s²",
+          "why": "9.8 m/s² is Earth's surface gravity, whereas the satellite is higher up at radius 8000 km.",
+          "whyWrong": "9.8 m/s² applies at Earth's surface (radius ~6400 km), not at an orbital radius of 8000 km. Compute a = v² ÷ r directly to get 6.125 m/s²."
+        },
+        {
+          "id": "d",
+          "text": "5.600 m/s²",
+          "why": "5.600 m/s² comes from multiplying 7 × 8 instead of dividing 49 by 8.",
+          "whyWrong": "5.600 multiplies 7 by 0.8 instead of computing v² ÷ r. Squaring 7000 m/s and dividing by 8,000,000 m gives 49 ÷ 8 = 6.125 m/s²."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Convert km/s to m/s and km to m first, then use a = v² ÷ r.",
+      "explanation": "Convert to SI units: v = 7.0 km/s = 7000 m/s = 7 × 10³ m/s, and r = 8000 km = 8 × 10⁶ m. Centripetal acceleration a = v² / r = (49 × 10⁶) ÷ (8 × 10⁶) = 49 ÷ 8 = 6.125 m/s².",
+      "trap": "8.750 m/s² traps students who forget to square the velocity (7 ÷ 8 × 10 instead of 49 ÷ 8).",
+      "mnemonic": "Change km to m first, then v² over r.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "7 km/s is 7000 m/s, and 8000 km is 8,000,000 m. Notice 7000² = 49,000,000. Dividing by 8,000,000 cancels the zeros, leaving 49 ÷ 8 = 6.125 m/s²."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "8.750 uses v instead of v². Squaring 7 gives 49, and 49 ÷ 8 = 6.125 m/s²."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Centripetal acceleration: a = v² ÷ r."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "In km units: (km/s)² ÷ km gives 10⁶ ÷ 10³ = 10³ m/s², so 49 ÷ 8000 × 1000 = 49 ÷ 8."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A satellite orbits in a circle of radius 10,000 km at 8.0 km/s. Find its centripetal acceleration.",
+          "similarAnswer": "6.4 m/s² (64 ÷ 10)."
+        }
+      ],
+      "animationId": "anim-phys-api-0144",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 146504,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0042",
+      "subject": "physics",
+      "topic": "Work, energy and power",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A force of 12 N causes an extension of 0.04 m in a spring. What elastic energy is stored?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.12 J",
+          "why": "0.12 J divides by 4 instead of 2.",
+          "whyWrong": "0.12 J is a quarter of 12 × 0.04, halving the energy twice. Elastic potential energy is ½Fe = 0.5 × 12 × 0.04 = 0.24 J."
+        },
+        {
+          "id": "b",
+          "text": "0.24 J",
+          "why": "E = ½Fe = ½ × 12 × 0.04 = 0.24 J.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "0.48 J",
+          "why": "0.48 J forgets the ½ in ½Fe.",
+          "whyWrong": "0.48 J equals 12 × 0.04, treating the force as constant at 12 N from start to finish. Because the spring force grows from 0 to 12 N, use the average force (½ × 12 N), giving 0.24 J."
+        },
+        {
+          "id": "d",
+          "text": "3.0 J",
+          "why": "3.0 J comes from dividing or misplacing the decimal in 12 × 0.04.",
+          "whyWrong": "3.0 J equals 12 × 0.25 or 12 ÷ 4, which does not match ½Fe. With e = 0.04 m, ½ × 12 × 0.04 = 0.24 J."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Elastic energy stored in a stretched spring is ½ × Force × extension, not F × e.",
+      "explanation": "The elastic potential energy stored in a spring obeys E = ½Fe. Substituting F = 12 N and e = 0.04 m gives E = 0.5 × 12 × 0.04 = 6 × 0.04 = 0.24 J.",
+      "trap": "0.48 J is the classic mistake — computing F × e = 12 × 0.04 and forgetting the ½ factor for average force.",
+      "mnemonic": "Spring energy is a triangle area: ½ × F × e.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "As you pull the spring, force starts at 0 and rises to 12 N, so the average force is 6 N. Multiply 6 N by 0.04 m to get 0.24 J."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "0.48 J is F × e, which forgets the ½. Because the force grows linearly from 0 to 12 N, the energy stored is half of 0.48 J, or 0.24 J."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Elastic potential energy: E = ½Fe = ½ke²."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Area under the force-extension triangle is ½ × base × height = ½Fe."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A force of 20 N stretches a spring by 0.05 m. How much elastic energy is stored?",
+          "similarAnswer": "0.50 J (0.5 × 20 × 0.05)."
+        }
+      ],
+      "animationId": "anim-phys-api-0042",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 184641,
+        "yearLabel": "2019"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0122",
+      "subject": "physics",
+      "topic": "Work, energy and power",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A carpenter on top of a roof of 20.0m high dropped a hammer of mass 1.5 kg and it fell directly to the ground. The kinetic energy of the hammer just before hitting the ground is? [g = 10 ms⁻²]",
+      "options": [
+        {
+          "id": "a",
+          "text": "600 J",
+          "why": "600 J doubles the potential energy.",
+          "whyWrong": "600 J is twice mgh. By conservation of energy, all potential energy (1.5 × 10 × 20 = 300 J) turns into 300 J of kinetic energy."
+        },
+        {
+          "id": "b",
+          "text": "150 J",
+          "why": "150 J halves the potential energy.",
+          "whyWrong": "150 J is only half of mgh. Just before hitting the ground, all 300 J of gravitational potential energy has converted to kinetic energy."
+        },
+        {
+          "id": "c",
+          "text": "300 J",
+          "why": "By conservation of energy, KE at ground = mgh = 1.5 × 10 × 20 = 300 J.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "450 J",
+          "why": "450 J adds an extra 150 J instead of computing mgh.",
+          "whyWrong": "450 J equals 1.5 × 10 × 30 rather than height 20 m. At 20 m, mgh = 1.5 × 10 × 20 = 300 J."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Use conservation of mechanical energy: potential energy at the top equals kinetic energy just before impact.",
+      "explanation": "Ignoring air resistance, all gravitational potential energy at height 20.0 m converts into kinetic energy just before hitting the ground: KE = mgh = 1.5 × 10 × 20.0 = 300 J.",
+      "trap": "Students sometimes try to find v first using v² = 2gh and make an arithmetic slip when plugging into ½mv², instead of using KE = mgh directly.",
+      "mnemonic": "Drop from height h → KE at bottom = mgh.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Energy cannot be lost if air resistance is ignored. The hammer starts with mgh = 1.5 × 10 × 20 = 300 J of height energy, so it hits the bottom with 300 J of moving energy."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "150 J would happen if you stopped halfway down or forgot to multiply 1.5 by 20 properly. At the bottom, all 300 J of potential energy is now kinetic energy."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Conservation of mechanical energy: ΔKE = ΔPE = mgh."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Skip finding speed first when energy is asked — PE top = KE bottom."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A 2 kg stone falls freely from a 15 m cliff. What is its kinetic energy just before hitting the ground? (g = 10 m s⁻²)",
+          "similarAnswer": "300 J (2 × 10 × 15)."
+        }
+      ],
+      "animationId": "anim-phys-api-0122",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10476,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0149",
+      "subject": "physics",
+      "topic": "Work, energy and power",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A boy uses a single string pulley system to lift a mass of 20 kg moving with a velocity of 5 m s⁻¹. What is the power developed by the boy if g = 10 m s⁻²?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 W",
+          "why": "100 W computes 20 × 5 and forgets to multiply by g = 10.",
+          "whyWrong": "100 W multiplies mass (20 kg) by velocity (5 m/s), which is momentum, not power. Power requires force (weight = mg = 200 N) times velocity: 200 × 5 = 1000 W."
+        },
+        {
+          "id": "b",
+          "text": "1000 W",
+          "why": "Weight F = mg = 20 × 10 = 200 N, so P = F × v = 200 × 5 = 1000 W.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "250 W",
+          "why": "250 W uses ½mv² = 0.5 × 20 × 25 = 250 J, which is kinetic energy, not power.",
+          "whyWrong": "250 is the kinetic energy ½mv² in joules, not the power needed to lift the weight steadily against gravity. Use P = Fv = mgv = 20 × 10 × 5 = 1000 W."
+        },
+        {
+          "id": "d",
+          "text": "40 W",
+          "why": "40 W divides 200 by 5 instead of multiplying.",
+          "whyWrong": "40 W divides weight (200 N) by speed (5 m/s). Power equals force times speed, not force divided by speed: 200 × 5 = 1000 W."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Power equals Force × velocity, and the lifting force must equal the weight mg.",
+      "explanation": "To lift a 20 kg mass steadily, the upward force equals its weight: F = mg = 20 × 10 = 200 N. Power developed is P = F × v = 200 × 5 = 1000 W.",
+      "trap": "100 W is the classic trap — multiplying mass 20 by velocity 5 without converting mass to weight (× 10) first.",
+      "mnemonic": "Power = Force × velocity, and Weight = mg (don't use mass alone).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A 20 kg mass weighs 20 × 10 = 200 N. Lifting 200 N at 5 m/s takes 200 × 5 = 1000 W of power."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "100 uses mass (20 kg) instead of weight (200 N). Always multiply kg by g = 10 to get newtons before finding work or power."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Mechanical power: P = Work ÷ time = F × v = mgv."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "P = Fv — Force in newtons, not mass in kg!"
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A crane lifts a 50 kg load vertically at a steady speed of 2 m s⁻¹. What power does it develop? (g = 10 m s⁻²)",
+          "similarAnswer": "1000 W (50 × 10 × 2)."
+        }
+      ],
+      "animationId": "anim-phys-api-0149",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10301,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0086",
+      "subject": "physics",
+      "topic": "Machines",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A load of 300N is to be lifted by a machine with a velocity ratio of 2 and an efficiency of 60%. What effort will be applied to lift the load?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100N",
+          "why": "100 N assumes 150% efficiency or uses effort = load ÷ (VR × 1.5).",
+          "whyWrong": "100 N would mean MA = 3, which is impossible when VR = 2 (efficiency would exceed 100%). With 60% efficiency and VR = 2, MA = 1.2, so Effort = 300 ÷ 1.2 = 250 N."
+        },
+        {
+          "id": "b",
+          "text": "150N",
+          "why": "150 N ignores the 60% efficiency and assumes an ideal 100% machine.",
+          "whyWrong": "150 N equals 300 ÷ 2, which would be the effort if the machine were 100% efficient (MA = VR = 2). At 60% efficiency, friction forces you to pull harder: 250 N."
+        },
+        {
+          "id": "c",
+          "text": "250N",
+          "why": "MA = Efficiency × VR = 0.60 × 2 = 1.2, so Effort = Load ÷ MA = 300 ÷ 1.2 = 250 N.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "400N",
+          "why": "400 N exceeds the load and miscalculates 300 ÷ 1.2.",
+          "whyWrong": "400 N would give MA < 1 (300 ÷ 400 = 0.75). Here MA = 0.60 × 2 = 1.2, so Effort = 300 ÷ 1.2 = 250 N."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Use Efficiency = (MA ÷ VR) × 100% to find MA first, then Effort = Load ÷ MA.",
+      "explanation": "Efficiency = (MA / VR) × 100%, so 60% = MA / 2, giving MA = 0.60 × 2 = 1.2. Since MA = Load / Effort, Effort = 300 ÷ 1.2 = 250 N.",
+      "trap": "150 N is the ideal-machine answer (300 ÷ 2), catching students who forget to apply the 60% efficiency.",
+      "mnemonic": "Efficiency = MA / VR; real effort is always bigger than ideal effort.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Ideally, VR = 2 means you only pull half the load (150 N). Because the machine is only 60% efficient, divide 150 N by 0.60 to get 250 N."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "150 N is what you would pull if there were zero friction (100% efficiency). At 60% efficiency, MA drops from 2 to 1.2, raising the effort to 300 ÷ 1.2 = 250 N."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Efficiency = (MA ÷ VR) × 100% and MA = Load ÷ Effort."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Find MA = efficiency × VR first, then Effort = Load ÷ MA."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A machine with VR = 4 and efficiency 75% lifts a 600 N load. What effort is required?",
+          "similarAnswer": "200 N (MA = 0.75 × 4 = 3; Effort = 600 ÷ 3 = 200 N)."
+        }
+      ],
+      "animationId": "anim-phys-api-0086",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10335,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0089",
+      "subject": "physics",
+      "topic": "Heat and thermometry",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Thermal Physics\n\nCalculate the specific heat capacity of a substance if 4200 J of heat energy raises the temperature of 0.5 kg of the substance by 10°C.",
+      "options": [
+        {
+          "id": "a",
+          "text": "840 J/kg·K",
+          "why": "c = Q ÷ (mΔT) = 4200 ÷ (0.5 × 10) = 4200 ÷ 5 = 840 J/kg·K.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "420 J/kg·K",
+          "why": "420 J/kg·K multiplies by 2 in the denominator instead of 0.5.",
+          "whyWrong": "420 J/kg·K comes from dividing 4200 by 10 instead of 5 (treating mass as 1 kg rather than 0.5 kg). Dividing 4200 by 0.5 × 10 = 5 gives 840 J/kg·K."
+        },
+        {
+          "id": "c",
+          "text": "2100 J/kg·K",
+          "why": "2100 J/kg·K forgets to divide by ΔT = 10 °C, or uses wrong factors.",
+          "whyWrong": "2100 is 4200 ÷ 2, which does not match mΔT = 0.5 × 10 = 5. Divide 4200 by 5 to get 840 J/kg·K."
+        },
+        {
+          "id": "d",
+          "text": "8400 J/kg·K",
+          "why": "8400 J/kg·K forgets to divide by ΔT = 10 °C (computing 4200 ÷ 0.5).",
+          "whyWrong": "8400 J/kg·K divides 4200 by 0.5 kg alone, forgetting the 10 °C temperature rise. Divide 8400 by 10 to get 840 J/kg·K."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use Q = mcΔT and note that a temperature change of 10 °C equals 10 K.",
+      "explanation": "From Q = mcΔT, specific heat capacity c = Q ÷ (mΔT). With Q = 4200 J, m = 0.5 kg, and ΔT = 10 °C (= 10 K), c = 4200 ÷ (0.5 × 10) = 4200 ÷ 5 = 840 J/kg·K.",
+      "trap": "420 J/kg·K traps students who divide 4200 by 10 and forget the 0.5 kg mass in the denominator.",
+      "mnemonic": "Q = mcΔT, so c = Q over (m × ΔT).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Multiply mass (0.5 kg) by temperature rise (10 °C) to get 5. Then divide the heat (4200 J) by 5: 4200 ÷ 5 = 840 J/kg·K."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "420 is 4200 ÷ 10, which forgets to divide by 0.5 kg. Dividing by 0.5 doubles 420 to 840 J/kg·K."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Specific heat capacity formula: Q = mcΔT, with ΔT in °C equal to ΔT in K."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Work out m × ΔT first (0.5 × 10 = 5) so the division stays clean."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "If 6000 J raises the temperature of 2.0 kg of a metal by 10 K, what is its specific heat capacity?",
+          "similarAnswer": "300 J/kg·K (6000 ÷ 20)."
+        }
+      ],
+      "animationId": "anim-phys-api-0089",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 146312,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0120",
+      "subject": "physics",
+      "topic": "Heat and thermometry",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A block of aluminum is heated electrically by a 30W heater. If the temperature rises by 10°C in 5 minutes, the heat capacity of the aluminum is",
+      "options": [
+        {
+          "id": "a",
+          "text": "900 JK⁻¹",
+          "why": "Q = Pt = 30 × (5 × 60) = 9000 J, so heat capacity C = Q ÷ ΔT = 9000 ÷ 10 = 900 J K⁻¹.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "90 JK⁻¹",
+          "why": "90 J K⁻¹ drops a factor of 10 (such as using 30 s instead of 300 s).",
+          "whyWrong": "90 J K⁻¹ is ten times too small, usually from misconverting 5 minutes or dividing by 10 twice. Since 5 minutes = 300 s, Q = 30 × 300 = 9000 J, and 9000 ÷ 10 = 900 J K⁻¹."
+        },
+        {
+          "id": "c",
+          "text": "100 JK⁻¹",
+          "why": "100 J K⁻¹ does not match Pt ÷ ΔT.",
+          "whyWrong": "100 J K⁻¹ does not follow from 30 W × 300 s ÷ 10 K. Multiply power by seconds first to get 9000 J, then divide by 10 K for 900 J K⁻¹."
+        },
+        {
+          "id": "d",
+          "text": "200 JK⁻¹",
+          "why": "200 J K⁻¹ does not use 5 minutes = 300 seconds.",
+          "whyWrong": "200 J K⁻¹ miscalculates the energy supplied. Convert 5 minutes to 300 seconds first: Q = 30 × 300 = 9000 J, then divide by 10 K to get 900 J K⁻¹."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Convert 5 minutes to seconds first, find Q = P × t, then divide by ΔT = 10 K.",
+      "explanation": "Time t = 5 × 60 = 300 s. Electrical heat supplied Q = P × t = 30 × 300 = 9000 J. Heat capacity C = Q ÷ ΔT = 9000 ÷ 10 = 900 J K⁻¹.",
+      "trap": "90 J K⁻¹ traps students who drop a zero when converting minutes to seconds or dividing by ΔT = 10.",
+      "mnemonic": "Watts × Seconds = Joules; Heat capacity = Joules ÷ Kelvin.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "5 minutes is 300 seconds. A 30 W heater delivers 30 × 300 = 9000 J of heat. Divide 9000 J by the 10 °C rise to get 900 J/K."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "90 J/K is ten times too small. Check the zeros: 30 × 300 = 9000 J, and 9000 ÷ 10 = 900 J K⁻¹."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Electrical heating and heat capacity: Pt = CΔT (with t in seconds)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Always turn minutes into seconds before multiplying by watts."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A 50 W heater raises the temperature of a metal block by 20 K in 2 minutes. Find the heat capacity of the block.",
+          "similarAnswer": "300 J K⁻¹ (50 × 120 ÷ 20)."
+        }
+      ],
+      "animationId": "anim-phys-api-0120",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10470,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0187",
+      "subject": "physics",
+      "topic": "Heat and thermometry",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "If the partial pressure of water vapour at 27°C is 18 mm Hg and the saturated vapour pressure of the atmosphere at the same temperature is 24 mm Hg, the relative humidity at this temperature is?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25%",
+          "why": "25% is the missing percentage (100% − 75%), not the relative humidity.",
+          "whyWrong": "25% represents how far below saturation the air is (6 ÷ 24), whereas relative humidity compares the actual vapour pressure (18) to the saturated vapour pressure (24): 18 ÷ 24 = 75%."
+        },
+        {
+          "id": "b",
+          "text": "33%",
+          "why": "33% compares the difference (6) to 18 instead of 18 to 24.",
+          "whyWrong": "33% is 6 ÷ 18, which is not the definition of relative humidity. Divide partial vapour pressure (18) by saturated vapour pressure (24) and multiply by 100% to get 75%."
+        },
+        {
+          "id": "c",
+          "text": "75%",
+          "why": "RH = (actual vapour pressure ÷ SVP) × 100% = (18 ÷ 24) × 100% = 75%.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "82%",
+          "why": "82% does not equal 18 ÷ 24 × 100%.",
+          "whyWrong": "82% does not follow from 18 ÷ 24. Simplify 18/24 by dividing top and bottom by 6 to get 3/4, which is 75%."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Relative humidity is the ratio of actual water vapour pressure to saturated vapour pressure at the same temperature, as a percentage.",
+      "explanation": "Relative humidity (RH) = (Partial pressure of water vapour ÷ Saturated vapour pressure) × 100% = (18 ÷ 24) × 100% = (3 ÷ 4) × 100% = 75%.",
+      "trap": "25% is the complement (what is missing to reach saturation), tempting students who subtract 18 from 24 first.",
+      "mnemonic": "RH = Actual over Saturated, times 100%.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The air can hold up to 24 mm Hg of water vapour, and it currently holds 18 mm Hg. Since 18/24 = 3/4, the air is 75% full."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "25% is how much room is still empty (6 out of 24). Relative humidity measures how full the air already is: 18 out of 24 = 75%."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Relative humidity = (SVP at dew point ÷ SVP at air temperature) × 100% = (actual vapour pressure ÷ SVP) × 100%."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Divide smaller (actual) by larger (saturated) — relative humidity cannot exceed 100%."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "At 25 °C, the saturated vapour pressure is 20 mm Hg and the actual vapour pressure is 12 mm Hg. What is the relative humidity?",
+          "similarAnswer": "60% (12 ÷ 20 × 100%)."
+        }
+      ],
+      "animationId": "anim-phys-api-0187",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 9582,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0018",
+      "subject": "physics",
+      "topic": "Waves and sound",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Waves and Sound\n\nFind the period of a wave whose frequency is 250 Hz.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.004 s",
+          "why": "T = 1 ÷ f = 1 ÷ 250 = 0.004 s.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "0.040 s",
+          "why": "0.040 s corresponds to 25 Hz, missing one decimal zero.",
+          "whyWrong": "0.040 s is 1 ÷ 25 rather than 1 ÷ 250. Since 250 is ten times larger than 25, the period is ten times smaller: 0.004 s."
+        },
+        {
+          "id": "c",
+          "text": "250 s",
+          "why": "250 is the frequency in hertz, not the period in seconds.",
+          "whyWrong": "250 is the frequency given in the question. Period is the reciprocal T = 1 ÷ f, which is 0.004 s."
+        },
+        {
+          "id": "d",
+          "text": "0.025 s",
+          "why": "0.025 s divides 25 by 1000 instead of computing 1 ÷ 250.",
+          "whyWrong": "0.025 s is 1 ÷ 40, not 1 ÷ 250. Multiply top and bottom of 1/250 by 4 to get 4/1000 = 0.004 s."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Period T is the time for one complete wave: T = 1 ÷ f.",
+      "explanation": "Period and frequency are reciprocals: T = 1 ÷ f = 1 ÷ 250 = 4 ÷ 1000 = 0.004 s.",
+      "trap": "0.040 s catches students who do 1 ÷ 25 = 0.04 and forget the extra zero in 250.",
+      "mnemonic": "Make denominator 1000: 1/250 = 4/1000 = 0.004.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "250 waves happen in 1 second, so one wave takes 1 ÷ 250 of a second. Multiply top and bottom by 4 to get 4/1000 = 0.004 s."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "0.040 s × 250 = 10, not 1. Check by multiplying back: 0.004 × 250 = 1."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Wave period-frequency relation: T = 1 ÷ f."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Multiply your answer back by f; it must equal 1."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What is the period of a 50 Hz mains AC wave?",
+          "similarAnswer": "0.02 s (1 ÷ 50)."
+        }
+      ],
+      "animationId": "anim-phys-api-0018",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 146470,
+        "yearLabel": "2008"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0081",
+      "subject": "physics",
+      "topic": "Waves and sound",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "The distance between two successive crests of a water wave is 0.25m. If a particle on the surface of the water makes four complete vertical oscillations in one second. Calculate the speed of the wave.",
+      "options": [
+        {
+          "id": "a",
+          "text": "4ms⁻¹",
+          "why": "4 m s⁻¹ is the frequency numerically, forgetting to multiply by λ = 0.25 m.",
+          "whyWrong": "4 is the frequency (4 oscillations per second), not the wave speed. Multiply frequency 4 Hz by wavelength 0.25 m to get v = 1 m s⁻¹."
+        },
+        {
+          "id": "b",
+          "text": "3ms⁻¹",
+          "why": "3 m s⁻¹ does not follow v = fλ.",
+          "whyWrong": "3 m s⁻¹ does not come from multiplying 4 by 0.25. Four quarters (4 × 0.25) equal 1 m s⁻¹."
+        },
+        {
+          "id": "c",
+          "text": "2ms⁻¹",
+          "why": "2 m s⁻¹ doubles the true speed.",
+          "whyWrong": "2 m s⁻¹ would require a wavelength of 0.50 m at 4 Hz. With crest-to-crest wavelength 0.25 m, v = 4 × 0.25 = 1 m s⁻¹."
+        },
+        {
+          "id": "d",
+          "text": "1ms⁻¹",
+          "why": "Crest-to-crest λ = 0.25 m and f = 4 Hz, so v = fλ = 4 × 0.25 = 1 m s⁻¹.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "The distance between two successive crests is one wavelength (λ), and oscillations per second is frequency (f).",
+      "explanation": "Distance between two successive crests = λ = 0.25 m. Four complete oscillations in 1 second means f = 4 Hz. By the wave equation, v = fλ = 4 × 0.25 = 1 m s⁻¹.",
+      "trap": "4 m s⁻¹ traps students who spot '4 oscillations in one second' and forget to multiply by the 0.25 m wavelength.",
+      "mnemonic": "Crest to next crest = λ; oscillations per second = f; v = fλ.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Each wave is 0.25 m long, and 4 waves pass every second. In one second, the wave covers 4 × 0.25 = 1 metre."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "4 is the frequency (4 waves per second), not the speed. Since each wave is only 0.25 m long, the speed is 4 × 0.25 = 1 m s⁻¹."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Wave speed equation: v = fλ."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Crest-to-crest is one wavelength; multiply by Hz to get m/s."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Two successive crests on a ripple tank are 0.15 m apart, and a float bobs up and down 6 times per second. Find the wave speed.",
+          "similarAnswer": "0.9 m s⁻¹ (6 × 0.15)."
+        }
+      ],
+      "animationId": "anim-phys-api-0081",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10287,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0107",
+      "subject": "physics",
+      "topic": "Optics",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A man 1.5m tall is standing 3m in front of a pinhole camera whose distance between the hole and the screen is 0.1m. What is the height of the image of the man on the screen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.05m",
+          "why": "h_i ÷ h_o = v ÷ u, so h_i = (0.1 ÷ 3) × 1.5 = 0.05 m.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "0.15m",
+          "why": "0.15 m multiplies 1.5 by 0.1 without dividing by 3 m.",
+          "whyWrong": "0.15 m forgets to divide by the object distance u = 3 m. By similar triangles, h_i = (1.5 × 0.1) ÷ 3 = 0.05 m."
+        },
+        {
+          "id": "c",
+          "text": "0.30m",
+          "why": "0.30 m misplaces the division by 3 or multiplies by 2.",
+          "whyWrong": "0.30 m comes from dividing 0.15 by 0.5 instead of 3. Using v/u = 0.1/3 gives h_i = 1.5 × 0.1 ÷ 3 = 0.05 m."
+        },
+        {
+          "id": "d",
+          "text": "1.00m",
+          "why": "1.00 m does not satisfy the pinhole camera magnification ratio.",
+          "whyWrong": "1.00 m would require the screen to be 2 m behind the pinhole. Because the screen is only 0.1 m behind the pinhole, the image is tiny: 0.05 m."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "In a pinhole camera, image height ÷ object height = image distance ÷ object distance.",
+      "explanation": "By similar triangles in a pinhole camera, h_i / h_o = v / u. Here h_o = 1.5 m, u = 3 m, and v = 0.1 m, so h_i = (0.1 ÷ 3) × 1.5 = 0.15 ÷ 3 = 0.05 m.",
+      "trap": "0.15 m catches students who multiply 1.5 × 0.1 and forget to divide by the 3 m object distance.",
+      "mnemonic": "Pinhole magnification: Image over Object = v over u.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "The screen distance (0.1 m) is 30 times smaller than the man's distance (3 m), so the image is 30 times smaller than 1.5 m: 1.5 ÷ 30 = 0.05 m."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "0.15 m equals 1.5 × 0.1, stopping before dividing by u = 3 m. Dividing 0.15 by 3 gives 0.05 m."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Pinhole camera magnification: m = h_i ÷ h_o = v ÷ u."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Check units and scale: a tiny 0.1 m box must make a tiny image (0.05 m = 5 cm)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A tree 6 m tall stands 12 m in front of a pinhole camera of length 0.2 m. What is the height of the image?",
+          "similarAnswer": "0.10 m (10 cm)."
+        }
+      ],
+      "animationId": "anim-phys-api-0107",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10417,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0007",
+      "subject": "physics",
+      "topic": "Current electricity",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A cell of emf 1.5V is connected in series with a 1Ω resistor and a current of 0.3A flows through the resistor. Find the internal resistance of the cell",
+      "options": [
+        {
+          "id": "a",
+          "text": "4.0Ω",
+          "why": "Total R + r = E ÷ I = 1.5 ÷ 0.3 = 5.0 Ω, so r = 5.0 − 1.0 = 4.0 Ω.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "3.0Ω",
+          "why": "3.0 Ω miscalculates E ÷ I − R.",
+          "whyWrong": "3.0 Ω would make total resistance 4.0 Ω, giving a current of 1.5 ÷ 4 = 0.375 A instead of 0.3 A. Since 1.5 ÷ 0.3 = 5.0 Ω total, subtracting R = 1 Ω leaves r = 4.0 Ω."
+        },
+        {
+          "id": "c",
+          "text": "1.5Ω",
+          "why": "1.5 is the cell's e.m.f. in volts, not its internal resistance.",
+          "whyWrong": "1.5 is the e.m.f. (1.5 V) copied from the question. Use E = I(R + r) to find r = 4.0 Ω."
+        },
+        {
+          "id": "d",
+          "text": "1.0Ω",
+          "why": "1.0 Ω is the external resistor R, not the internal resistance r.",
+          "whyWrong": "1.0 Ω is the external resistor already stated in the stem. Solving 1.5 = 0.3(1 + r) gives r = 4.0 Ω."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use E = I(R + r) to find the total resistance (R + r) first, then subtract R.",
+      "explanation": "From Ohm's law for a complete circuit, E = I(R + r), so R + r = E ÷ I = 1.5 ÷ 0.3 = 5.0 Ω. Subtracting the external resistance R = 1 Ω gives internal resistance r = 5.0 − 1.0 = 4.0 Ω.",
+      "trap": "Students sometimes forget to subtract the 1 Ω external resistor after finding total resistance 5 Ω, or slip on 1.5 ÷ 0.3.",
+      "mnemonic": "Total resistance = E ÷ I; subtract external R to get internal r.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Total resistance in the whole loop is V ÷ I = 1.5 ÷ 0.3 = 5 Ω. Since 1 Ω is outside the cell, the other 4 Ω must be inside the cell."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "If r were 3.0 Ω, total resistance would be 1 + 3 = 4 Ω, giving current 1.5 ÷ 4 = 0.375 A. For 0.3 A, total resistance must be 5 Ω, so r = 4.0 Ω."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Complete circuit equation: E = I(R + r)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "E ÷ I gives total R + r; always subtract R at the end."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A 3.0 V cell drives 0.5 A through a 4.0 Ω resistor. Find its internal resistance.",
+          "similarAnswer": "2.0 Ω (total = 3.0 ÷ 0.5 = 6.0 Ω; r = 6.0 − 4.0 = 2.0 Ω)."
+        }
+      ],
+      "animationId": "anim-phys-api-0007",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10517,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0140",
+      "subject": "physics",
+      "topic": "Current electricity",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A house has ten 40W and five 100W bulbs. How much will it cost the owner of the house to keep them lit for 10 hours if the cost of a unit is 5N?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N90",
+          "why": "₦90 doubles the cost, as if there were 18 kWh instead of 9 kWh.",
+          "whyWrong": "₦90 comes from miscounting the total watts (for example 1800 W instead of 900 W). Ten 40 W bulbs (400 W) plus five 100 W bulbs (500 W) total 900 W = 0.9 kW, which uses 9 kWh in 10 hours."
+        },
+        {
+          "id": "b",
+          "text": "N50",
+          "why": "₦50 counts only the five 100 W bulbs or uses 1 kW instead of 0.9 kW.",
+          "whyWrong": "₦50 would come from 10 units (1 kW × 10 h × ₦5). Actually total power is 400 W + 500 W = 900 W = 0.9 kW, giving 9 units × ₦5 = ₦45."
+        },
+        {
+          "id": "c",
+          "text": "N45",
+          "why": "Total power = 10(40) + 5(100) = 900 W = 0.9 kW; energy = 0.9 × 10 = 9 kWh; cost = 9 × 5 = ₦45.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "N5",
+          "why": "₦5 is the cost of just 1 kWh (1 unit), not all 9 kWh used in 10 hours.",
+          "whyWrong": "₦5 is the price of a single unit (1 kWh). The house uses 0.9 kW for 10 hours = 9 units, costing 9 × ₦5 = ₦45."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Add the total power in watts, divide by 1000 to get kilowatts (kW), multiply by hours for kWh, then multiply by ₦5.",
+      "explanation": "Total power = (10 × 40 W) + (5 × 100 W) = 400 + 500 = 900 W = 0.9 kW. Energy used in 10 hours = 0.9 kW × 10 h = 9 kWh (9 units). Total cost = 9 × ₦5 = ₦45.",
+      "trap": "₦50 catches students who round 900 W up to 1 kW or forget the exact 0.9 kW conversion.",
+      "mnemonic": "Watts ÷ 1000 = kW; kW × hours = units (kWh).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Ten 40 W bulbs give 400 W and five 100 W bulbs give 500 W, so 900 W in total (0.9 kW). Running 0.9 kW for 10 hours uses 9 units. At ₦5 per unit, 9 × 5 = ₦45."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "₦50 would require 10 units (1000 W for 10 hours). Here the bulbs total 900 W (0.9 kW), so 9 units × ₦5 = ₦45."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Electrical billing: Energy (kWh) = Power (kW) × Time (h); Cost = Energy × tariff."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "A 'unit' on a Nigerian electricity meter is 1 kilowatt-hour (kWh)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "How much does it cost to run a 2 kW pressing iron for 3 hours if 1 kWh costs ₦10?",
+          "similarAnswer": "₦60 (2 × 3 × ₦10)."
+        }
+      ],
+      "animationId": "anim-phys-api-0140",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10528,
+        "yearLabel": "2025"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0097",
+      "subject": "physics",
+      "topic": "Electrostatics and electromagnetism",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Find the value of a capacitor with voltage 5V and 30C.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7f",
+          "why": "7 F subtracts or miscalculates 30 ÷ 5.",
+          "whyWrong": "7 F does not equal 30 ÷ 5. Capacitance is charge divided by voltage: 30 C ÷ 5 V = 6 F."
+        },
+        {
+          "id": "b",
+          "text": "6f",
+          "why": "C = Q ÷ V = 30 ÷ 5 = 6 F.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "15f",
+          "why": "15 F divides 30 by 2 instead of 5.",
+          "whyWrong": "15 F does not follow C = Q ÷ V with V = 5 V. Divide 30 coulombs by 5 volts to get 6 farads."
+        },
+        {
+          "id": "d",
+          "text": "0.17f",
+          "why": "0.17 F is V ÷ Q (5 ÷ 30), which is upside down.",
+          "whyWrong": "0.17 comes from dividing voltage by charge (5 ÷ 30). Capacitance is charge per volt: C = Q ÷ V = 30 ÷ 5 = 6 F."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Capacitance is the charge stored per unit voltage: C = Q ÷ V.",
+      "explanation": "Capacitance is defined by C = Q ÷ V. With charge Q = 30 C and potential difference V = 5 V, C = 30 ÷ 5 = 6 F.",
+      "trap": "0.17 F traps students who flip the ratio and divide voltage by charge (5 ÷ 30) instead of Q ÷ V.",
+      "mnemonic": "Q = CV, so C = Q on top, V below.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Capacitance tells you how many coulombs fit per volt. Dividing 30 C by 5 V gives 6 F."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "0.17 comes from 5 ÷ 30 (upside down). Remember Q = CV, so C = Q ÷ V = 30 ÷ 5 = 6 F."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Capacitance definition: C = Q ÷ V (farads = coulombs ÷ volts)."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Q = CV (Quickly Count Volts) keeps Q on top when solving for C."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A capacitor holds 24 C of charge at a potential difference of 8 V. What is its capacitance?",
+          "similarAnswer": "3 F (24 ÷ 8)."
+        }
+      ],
+      "animationId": "anim-phys-api-0097",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 9846,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0170",
+      "subject": "physics",
+      "topic": "Atomic and nuclear physics",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The half-life of a radioactive substance is 5 years. What percentage of an original sample of the substance will remain after 20 years?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.50%",
+          "why": "2.50% does not equal any power of (1/2) × 100%.",
+          "whyWrong": "Radioactive decay halves the remaining amount every half-life: 100% → 50% → 25% → 12.5% → 6.25%. 2.50% is not part of this halving chain."
+        },
+        {
+          "id": "b",
+          "text": "5.00%",
+          "why": "5.00% does not match 4 half-lives of halving from 100%.",
+          "whyWrong": "Four halvings of 100% give 100 ÷ 16 = 6.25%, not 5.00%."
+        },
+        {
+          "id": "c",
+          "text": "6.25%",
+          "why": "20 years ÷ 5 years = 4 half-lives, so (1/2)⁴ × 100% = 6.25%.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "10.25%",
+          "why": "10.25% overestimates what remains after 4 half-lives.",
+          "whyWrong": "After 3 half-lives (15 years), 12.5% remains; after the 4th half-life (20 years), that halves again to 6.25%."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Find how many 5-year half-lives fit into 20 years, then halve 100% that many times.",
+      "explanation": "Number of half-lives n = 20 ÷ 5 = 4. Remaining percentage = 100% × (1/2)⁴ = 100% ÷ 16 = 6.25% (100 → 50 → 25 → 12.5 → 6.25%).",
+      "trap": "5.00% or 10.25% can tempt students who guess instead of halving step by step four times.",
+      "mnemonic": "Count half-lives first, then halve: 100 → 50 → 25 → 12.5 → 6.25.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Every 5 years, half disappears. In 20 years that happens 4 times: 100% → 50% (5 yrs) → 25% (10 yrs) → 12.5% (15 yrs) → 6.25% (20 yrs)."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "5.00% is not a power-of-two fraction of 100%. Halving four times gives 100 ÷ 16 = 6.25%."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Radioactive decay: N = N₀(1/2)ⁿ, where n = total time ÷ half-life."
+        },
+        {
+          "id": "simpler",
+          "label": "How do I remember this?",
+          "answer": "Halving on your fingers is fast and foolproof for small numbers of half-lives."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "A sample has a half-life of 4 days. What percentage remains after 12 days?",
+          "similarAnswer": "12.5% (3 half-lives: 100 → 50 → 25 → 12.5%)."
+        }
+      ],
+      "animationId": "anim-phys-api-0170",
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 181870,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0039",
+      "subject": "physics",
+      "topic": "Vectors and scalars",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which physical quantity is a vector?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Displacement",
+          "why": "Displacement has both magnitude and direction, making it a vector quantity.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Distance",
+          "why": "Distance is how far an object moves regardless of direction, so it is a scalar.",
+          "whyWrong": "Distance only tells you the length of the path travelled, with no direction specified. Displacement specifies both distance and direction from start to finish."
+        },
+        {
+          "id": "c",
+          "text": "Energy",
+          "why": "Energy has magnitude (in joules) and no direction, so it is a scalar.",
+          "whyWrong": "Energy is measured purely by size in joules; you cannot have 10 J pointing north. Quantities without direction are scalars."
+        },
+        {
+          "id": "d",
+          "text": "Speed",
+          "why": "Speed is distance per unit time without direction, so it is a scalar.",
+          "whyWrong": "Speed tells you how fast something moves, not which way it moves. Velocity (speed with direction) is the vector counterpart."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "b"
+      ],
+      "hint": "A vector requires both a size (magnitude) and a specific direction.",
+      "explanation": "Vector quantities have both magnitude and direction (such as displacement, velocity, force, and acceleration). Distance, energy, and speed have magnitude only, so they are scalars.",
+      "trap": "Distance and speed sound just like displacement and velocity, so students who read too fast often pick one of those scalars.",
+      "mnemonic": "D for Direction: Displacement is the vector; Distance is scalar.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If you say 'walk 5 metres', that is distance (scalar). If you say 'walk 5 metres east', that is displacement (vector)."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Speed only tells you how fast (like 60 km/h). Adding a direction turns speed into velocity, which is the vector."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Common vectors: displacement, velocity, acceleration, force, momentum, weight. Common scalars: distance, speed, mass, energy, time, temperature."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which of these is a scalar quantity: momentum, force, temperature, or acceleration?",
+          "similarAnswer": "Temperature."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 184316,
+        "yearLabel": "2019"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0063",
+      "subject": "physics",
+      "topic": "Work, energy and power",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Under which conditions is work done",
+      "options": [
+        {
+          "id": "a",
+          "text": "A man supports a heavy load on his head with hands.",
+          "why": "With no vertical movement of the load, displacement is zero, so zero mechanical work is done on it.",
+          "whyWrong": "Supporting a stationary load feels tiring to muscles, but because the load does not move in the direction of the upward force (displacement = 0), physics work W = Fd = 0."
+        },
+        {
+          "id": "b",
+          "text": "A woman holds a pot of water",
+          "why": "Holding a stationary pot involves zero displacement, so no physics work is done on the pot.",
+          "whyWrong": "If the pot does not move, displacement is zero and W = F × d = 0, regardless of how heavy the pot feels."
+        },
+        {
+          "id": "c",
+          "text": "A boy climbs onto a table",
+          "why": "The boy exerts an upward force and moves upward through a height, so W = mgh > 0.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "A man pushes against a stationary petrol tanker",
+          "why": "Because the tanker stays stationary, displacement is zero and no mechanical work is done.",
+          "whyWrong": "Even a huge push does zero mechanical work when the object fails to move (d = 0)."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "In physics, mechanical work is Force × distance moved in the direction of the force (W = F d cos θ).",
+      "explanation": "Mechanical work requires both a force and a displacement in the direction of the force (W = Fd cos θ). When a boy climbs onto a table, he raises his body weight upward against gravity through the table's height, doing positive work mgh.",
+      "trap": "Holding a heavy load on the head feels like hard work in everyday life, tempting students who forget that zero displacement means zero physics work.",
+      "mnemonic": "No movement in force direction = Zero physics work.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "In physics, work means moving something with a force. Only the boy climbing onto the table actually moves his weight upward."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Standing still with a load on your head tires your muscles, yet the load does not rise or move forward, so mechanical work done on the load is zero."
+        },
+        {
+          "id": "simpler",
+          "label": "What rule or formula is this?",
+          "answer": "Mechanical work: W = F × d × cos θ (zero if d = 0 or θ = 90°)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "How much mechanical work does a porter do against gravity while walking steadily 20 m along a flat road carrying a 100 N box on his head?",
+          "similarAnswer": "0 J (force is upward, motion is horizontal, so θ = 90° and cos 90° = 0)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10267,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0030",
+      "subject": "physics",
+      "topic": "Machines",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following statements is correct about a machine?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Efficiency of a machine is always greater than I",
+          "why": "By conservation of energy, real efficiency is always less than 1 (or 100%), never greater.",
+          "whyWrong": "A machine cannot output more useful energy than the energy put into it. Friction ensures efficiency stays below 1 (100%)."
+        },
+        {
+          "id": "b",
+          "text": "Efficiency decreases with an increase in friction",
+          "why": "More friction wastes more input work as heat, reducing useful output and lowering efficiency.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Velocity ratio depends on friction",
+          "why": "Velocity ratio depends purely on the machine's geometry (distance ratios), not on friction.",
+          "whyWrong": "Velocity ratio (VR = effort distance ÷ load distance) is fixed by the machine's design — such as gear teeth or pulley strands — and does not change when friction changes."
+        },
+        {
+          "id": "d",
+          "text": "Mechanical advantage increases with an increase in friction",
+          "why": "Higher friction forces you to apply a larger effort for the same load, which reduces mechanical advantage.",
+          "whyWrong": "Since MA = Load ÷ Effort, extra friction increases the effort needed and lowers MA rather than increasing it."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Think about what friction wastes inside a real machine, versus what stays fixed by its geometry.",
+      "explanation": "Friction opposes motion in moving parts and converts part of the input work into heat. As friction rises, useful work output drops for the same work input, so efficiency decreases. Meanwhile, velocity ratio depends solely on the machine's dimensions.",
+      "trap": "Students sometimes confuse mechanical advantage (which depends on friction) with velocity ratio (which depends only on geometry).",
+      "mnemonic": "VR = geometry (fixed); Friction steals MA and Efficiency.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Friction wastes energy as heat, so the more friction a machine has, the less efficient it becomes. Oiling a machine cuts friction and boosts efficiency."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Velocity ratio only compares how far the effort moves to how far the load moves (e.g., 4 ropes on a pulley = VR 4), so friction does not change VR."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "In any real machine: Efficiency = (MA ÷ VR) × 100% < 100% because of friction and moving machine parts."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "How does lubricating the axle of a pulley system affect its mechanical advantage and velocity ratio?",
+          "similarAnswer": "Mechanical advantage (and efficiency) increases, while velocity ratio remains unchanged."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10545,
+        "yearLabel": "2016"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0031",
+      "subject": "physics",
+      "topic": "Heat and thermometry",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Thermal equilibrium between two objects exists when",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heat capacities are equal",
+          "why": "Two bodies at the same temperature can have completely different heat capacities and still be in thermal equilibrium.",
+          "whyWrong": "A small cup of tea and a huge pot of water can be in thermal equilibrium at 25 °C even though their heat capacities are vastly different."
+        },
+        {
+          "id": "b",
+          "text": "Heat quantities are equal",
+          "why": "Objects do not 'contain' equal heat; thermal equilibrium means zero net heat flow, which happens at equal temperature.",
+          "whyWrong": "Internal energy depends on mass and material as well as temperature, so two bodies in thermal equilibrium need not hold equal thermal energy."
+        },
+        {
+          "id": "c",
+          "text": "Temperatures are equal",
+          "why": "When two objects reach the same temperature, there is no net heat transfer between them.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Heat flows continuously",
+          "why": "Thermal equilibrium specifically means net heat flow between the two objects has stopped.",
+          "whyWrong": "If net heat flows continuously from one body to another, they are at different temperatures and not yet in thermal equilibrium."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "d",
+        "a"
+      ],
+      "hint": "Heat naturally flows from hotter to cooler objects until what property matches?",
+      "explanation": "Thermal equilibrium between two objects in thermal contact exists when they are at the same temperature, so there is no net flow of heat energy from one to the other (zeroth law of thermodynamics).",
+      "trap": "Heat quantities are equal tempts students who think heat spreads out equally by amount rather than until temperatures equalize.",
+      "mnemonic": "Thermal Equilibrium = Equal Temperature, zero net heat flow.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "If you drop a hot spoon into cool water, heat flows from spoon to water until both reach the exact same temperature. That balanced state is thermal equilibrium."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A swimming pool at 25 °C holds far more thermal energy than a spoon at 25 °C, yet no net heat flows between them because their temperatures are equal."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Zeroth law of thermodynamics: temperature determines the direction of net heat flow; equal T means thermal equilibrium."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Why do we wait a short time after placing a clinical thermometer under the tongue before reading it?",
+          "similarAnswer": "To allow the thermometer and the body to reach thermal equilibrium (the same temperature)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 19448,
+        "yearLabel": "2016"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0034",
+      "subject": "physics",
+      "topic": "Waves and sound",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is not a mechanical wave?",
+      "options": [
+        {
+          "id": "a",
+          "text": "wave in closed pipe",
+          "why": "Sound waves in an air pipe require air molecules to vibrate, so they are mechanical.",
+          "whyWrong": "A standing wave in a closed pipe is a sound wave travelling through air — without air, it cannot propagate."
+        },
+        {
+          "id": "b",
+          "text": "radio waves",
+          "why": "Radio waves are electromagnetic waves and can travel through a vacuum without any material medium.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "water waves",
+          "why": "Water waves require water as their medium, so they are mechanical.",
+          "whyWrong": "Surface ripples need water particles oscillating up and down, making them mechanical waves."
+        },
+        {
+          "id": "d",
+          "text": "sound waves",
+          "why": "Sound waves require a solid, liquid, or gas medium and cannot travel in a vacuum.",
+          "whyWrong": "Sound needs colliding particles of a medium to travel, which is the defining trait of a mechanical wave."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Mechanical waves need a material medium (solid, liquid, or gas); electromagnetic waves can cross empty space.",
+      "explanation": "Mechanical waves (like sound, waves in pipes, strings, and water waves) require a material medium to travel. Radio waves belong to the electromagnetic spectrum and travel through a vacuum at the speed of light.",
+      "trap": "Students sometimes forget that radio signals carry sound information yet are electromagnetic waves, not mechanical sound waves.",
+      "mnemonic": "EM waves need no medium: Radio, Micro, IR, Light, UV, X-ray, Gamma.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Mechanical waves need 'stuff' (air, water, or string) to shake. Radio waves travel cleanly through empty outer space to reach satellites, so they are electromagnetic, not mechanical."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A wave in a closed pipe is a sound wave vibrating inside a column of air, so it definitely needs a medium (air) and is mechanical."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Mechanical = needs a medium (sound, water, seismic, string); Electromagnetic = travels in vacuum (radio to gamma)."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Which of the following can travel through a vacuum: ultrasound, seismic P-waves, or infrared rays?",
+          "similarAnswer": "Infrared rays (an electromagnetic wave)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 9999,
+        "yearLabel": "2017"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0029",
+      "subject": "physics",
+      "topic": "Optics",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In an astronomical telescope, the objective lens has a",
+      "options": [
+        {
+          "id": "a",
+          "text": "Short focal length and the eyepiece a long focal length",
+          "why": "That describes neither an astronomical telescope nor standard magnification M = fₒ / fₑ.",
+          "whyWrong": "In normal adjustment, angular magnification of a telescope is fₒ ÷ fₑ. Having a short objective fₒ and long eyepiece fₑ would shrink distant objects instead of magnifying them."
+        },
+        {
+          "id": "b",
+          "text": "Long focal length and the eyepiece a short focal length",
+          "why": "Magnification in normal adjustment is M = fₒ ÷ fₑ, so fₒ must be large and fₑ small.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Short focal length for both lenses",
+          "why": "Short focal lengths for both lenses describes a compound microscope, not a telescope.",
+          "whyWrong": "A compound microscope uses a short-focal-length objective to view tiny close objects, whereas an astronomical telescope needs a long-focal-length objective for distant stars."
+        },
+        {
+          "id": "d",
+          "text": "Long focal length for both lenses",
+          "why": "Two long focal lengths give a magnification near 1 unless fₒ is much greater than fₑ.",
+          "whyWrong": "To achieve high angular magnification M = fₒ ÷ fₑ, the eyepiece must have a short focal length compared with the objective."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Telescope magnification in normal adjustment is M = f_objective ÷ f_eyepiece. How do you make M large?",
+      "explanation": "An astronomical refracting telescope forms a magnified image of distant objects when its objective lens has a long focal length (fₒ) and its eyepiece has a short focal length (fₑ), giving angular magnification M = fₒ / fₑ.",
+      "trap": "Short focal length for both lenses describes a compound microscope, which students often mix up with an astronomical telescope.",
+      "mnemonic": "Telescope M = fₒ / fₑ → Long Objective on top, Short Eyepiece below.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Telescope magnification is f_objective divided by f_eyepiece. To get a big number, make the top (objective) long and the bottom (eyepiece) short."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Short focal lengths for both lenses belong to a compound microscope (viewing tiny objects up close), not a telescope for distant stars."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "In normal adjustment, telescope length L = fₒ + fₑ and magnification M = fₒ / fₑ."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "An astronomical telescope in normal adjustment has an objective of focal length 80 cm and an eyepiece of focal length 4 cm. Find its angular magnification.",
+          "similarAnswer": "20 (80 ÷ 4)."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 19394,
+        "yearLabel": "2015"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0190",
+      "subject": "physics",
+      "topic": "Optics",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Total internal reflection will not occur when light travels from",
+      "options": [
+        {
+          "id": "a",
+          "text": "water to air",
+          "why": "Water (n ≈ 1.33) to air (n ≈ 1.00) goes from denser to less dense medium, so TIR can occur.",
+          "whyWrong": "Light moving from water into air travels from optically denser to optically less dense medium, so total internal reflection occurs beyond the critical angle."
+        },
+        {
+          "id": "b",
+          "text": "water into glass",
+          "why": "Water (n ≈ 1.33) to glass (n ≈ 1.50) goes from optically less dense to denser, so TIR cannot happen.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "glass to air",
+          "why": "Glass (n ≈ 1.50) to air (n ≈ 1.00) goes from denser to less dense, so TIR can occur.",
+          "whyWrong": "Glass has a higher refractive index than air, so rays hitting the boundary above ~42° undergo total internal reflection."
+        },
+        {
+          "id": "d",
+          "text": "glass into water",
+          "why": "Glass (n ≈ 1.50) to water (n ≈ 1.33) goes from denser to less dense, so TIR can occur.",
+          "whyWrong": "Because glass is optically denser than water, light travelling from glass toward water bends away from the normal and can undergo total internal reflection."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Total internal reflection ONLY happens when light tries to pass from a HIGHER refractive index medium into a LOWER refractive index medium.",
+      "explanation": "Two conditions are required for total internal reflection: (1) light must travel from an optically denser medium to a less dense one, and (2) the angle of incidence must exceed the critical angle. Going from water (n ≈ 1.33) into glass (n ≈ 1.50) moves from less dense to denser, so light bends toward the normal and TIR cannot occur.",
+      "trap": "Glass into water and water into glass look similar at a glance; students must check which medium has the higher refractive index (glass > water > air).",
+      "mnemonic": "TIR goes Dense → Less dense (Glass → Water → Air; never reverse!).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Total internal reflection only happens when light tries to speed up into a lighter (lower-index) material. Going from water into denser glass slows light down and bends it inward, so it always passes through."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Glass (n ≈ 1.5) is denser than water (n ≈ 1.33), so glass into water DOES satisfy the denser-to-less-dense rule for TIR. Water into glass goes the wrong way."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Order of refractive indices: diamond (~2.4) > glass (~1.5) > water (~1.33) > air (~1.0). TIR only moves down this ladder."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What two conditions are necessary for total internal reflection to occur?",
+          "similarAnswer": "Light must travel from a denser to a less dense medium, and the angle of incidence must exceed the critical angle."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 9837,
+        "yearLabel": "2026"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0052",
+      "subject": "physics",
+      "topic": "Current electricity",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In voltage measurement, the potentiometer is preferred to voltmeter because it",
+      "options": [
+        {
+          "id": "a",
+          "text": "has a wider range",
+          "why": "A voltmeter can be scaled to any range with multipliers; range is not why potentiometers are more accurate.",
+          "whyWrong": "Standard voltmeters can measure high or low voltages using multiplier resistors. The potentiometer's key advantage is drawing zero current at balance."
+        },
+        {
+          "id": "b",
+          "text": "consumes negligible current",
+          "why": "At the null balance point, the potentiometer draws zero current from the test cell, measuring its true e.m.f.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "is bulky",
+          "why": "Being bulky is a disadvantage of a potentiometer, not a reason to prefer it.",
+          "whyWrong": "A metre-long potentiometer board is actually less convenient to carry than a handheld voltmeter; it is chosen for precision, not size."
+        },
+        {
+          "id": "d",
+          "text": "responds faster than voltmeter",
+          "why": "Sliding a jockey to find a null point is slower than reading a voltmeter dial.",
+          "whyWrong": "A digital or moving-coil voltmeter gives an instant reading, whereas a potentiometer takes time to balance."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "When measuring a cell's e.m.f., any current drawn through its internal resistance r causes a voltage drop Ir.",
+      "explanation": "A regular voltmeter draws a small current, which causes an internal voltage drop (Ir) inside the cell, so it reads terminal p.d. (E − Ir) rather than true e.m.f. At its null balance point, a potentiometer draws zero (negligible) current from the cell, giving an accurate e.m.f. reading.",
+      "trap": "Students sometimes guess 'wider range' if they forget the null-deflection principle that makes a potentiometer an ideal voltmeter.",
+      "mnemonic": "Potentiometer = Null point = Zero current drawn = True e.m.f.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "A normal voltmeter steals a tiny bit of current to move its needle, slightly lowering the cell's voltage. A balanced potentiometer draws zero current, so it measures the cell's exact e.m.f."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Voltmeters actually come in wide ranges. The potentiometer wins on accuracy because it takes no current from the circuit at balance."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Null method: when the galvanometer reads zero, I = 0 through the test cell, so V = E − Ir = E."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "Why does a voltmeter connected across a cell usually read slightly less than the cell's true e.m.f.?",
+          "similarAnswer": "Because the voltmeter draws a small current, causing a potential drop Ir across the cell's internal resistance."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 10254,
+        "yearLabel": "2024"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "phys-api-0038",
+      "subject": "physics",
+      "topic": "Electrostatics and electromagnetism",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the purpose of the split-ring commutator in a d.c. motor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To store electrical charge",
+          "why": "Capacitors store electric charge, not commutators.",
+          "whyWrong": "Storing electric charge is the job of a capacitor. A split-ring commutator is a rotating mechanical switch on a motor shaft."
+        },
+        {
+          "id": "b",
+          "text": "To increase the supply voltage",
+          "why": "Transformers step AC voltage up or down; a commutator does not change voltage magnitude.",
+          "whyWrong": "A commutator only switches current direction in the rotating coil; it cannot boost the supply voltage."
+        },
+        {
+          "id": "c",
+          "text": "To reduce the magnetic field to zero",
+          "why": "A motor needs the magnetic field continuously to keep producing torque.",
+          "whyWrong": "If the magnetic field dropped to zero, the motor force F = BIL would vanish and the coil would stop."
+        },
+        {
+          "id": "d",
+          "text": "To reverse current in the armature every half-turn",
+          "why": "Reversing the coil current every 180° keeps the torque pushing the coil in the same rotation direction.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "After half a turn, the left and right sides of the motor coil swap places. What must happen to the current so the coil keeps spinning the same way?",
+      "explanation": "In a D.C. electric motor, the split-ring commutator reverses the direction of current in the armature coil every half-revolution (180°) as the coil passes the vertical position. This ensures the magnetic forces on the coil sides always turn it in the same direction.",
+      "trap": "Students sometimes confuse the split-ring commutator (D.C. motor/generator) with slip rings (A.C. generator) or transformers.",
+      "mnemonic": "Split-ring swaps current every half-spin so the motor keeps one direction.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "label": "Explain more simply",
+          "answer": "Every half-turn, the wires in the spinning coil swap sides. The split-ring commutator flips the current at that exact moment so the motor keeps spinning forward instead of rocking back and forth."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Increasing voltage is done by a step-up transformer. The split-ring commutator reverses current direction every half-turn to keep the motor turning continuously."
+        },
+        {
+          "id": "simpler",
+          "label": "Key concept to remember",
+          "answer": "Split-ring commutator = D.C. motor (reverses armature current every half-turn) and D.C. generator; Slip rings = A.C. generator."
+        },
+        {
+          "id": "similar",
+          "label": "Give me a similar question",
+          "answer": "What component replaces the split-ring commutator in an A.C. generator?",
+          "similarAnswer": "Slip rings."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "sdashapi",
+        "id": 184278,
+        "yearLabel": "2019"
+      },
+      "yearVerified": false,
+      "reviewed": false,
+      "label": "JAMB-style practice"
+    }
+  ]
+}
