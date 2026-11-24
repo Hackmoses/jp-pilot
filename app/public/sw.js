@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jp-pilot-v5'
+const CACHE_NAME = 'jp-pilot-v6'
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
