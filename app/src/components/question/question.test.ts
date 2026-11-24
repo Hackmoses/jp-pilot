@@ -204,7 +204,8 @@ describe('session flow and memory (M5)', () => {
 
     const session2 = logic.buildSessionQueue(null, 10)
     expect(session2).toHaveLength(10)
-    expect(session2.slice(0, 2).map(({ question }) => question.id)).toEqual([wrongQ.id, assistedQ.id])
+    // Priority items come first; their order within the group is randomised.
+    expect(session2.slice(0, 2).map(({ question }) => question.id).sort()).toEqual([wrongQ.id, assistedQ.id].sort())
     expect(session2.some(({ question }) => question.id === cleanQ.id)).toBe(false)
 
     store.logEvent('session_start', { count: session2.length })

@@ -111,7 +111,8 @@ describe('question memory', () => {
     answer('chem-020', true, 1)
     answer('chem-017', true)
 
-    expect(store.getDueQuestionIds(2)).toEqual([
+    // Priority items come first; their order within the group is randomised.
+    expect([...store.getDueQuestionIds(2)].sort((a, b) => a.id.localeCompare(b.id))).toEqual([
       { id: 'chem-009', review: false },
       { id: 'chem-020', review: false },
     ])
