@@ -13,6 +13,11 @@ export function getQuestions(): Question[] {
   return questions.slice()
 }
 
+export function getQuestionsBySubject(subject: string): Question[] {
+  const normalized = subject.trim().toLowerCase()
+  return questions.filter((question) => question.subject === normalized)
+}
+
 export function getQuestion(id: string): Question | undefined {
   return questionsById.get(id)
 }

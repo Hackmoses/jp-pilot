@@ -46,6 +46,7 @@ export function QuestionCard({
   const toggleExplain = () => setExplainOpen((prev) => !prev)
 
   const pickedIdx = pickedId ? options.findIndex((option) => option.id === pickedId) : -1
+  const pickedOption = pickedIdx >= 0 ? options[pickedIdx] : undefined
   const pickedLetter = pickedIdx >= 0 ? OPTION_LETTERS[pickedIdx] : ''
   const correctIdx = options.findIndex((option) => option.id === question.answerId)
   const correctLetter = correctIdx >= 0 ? OPTION_LETTERS[correctIdx] : ''
@@ -189,6 +190,26 @@ export function QuestionCard({
       </section>
 
       {answered && calculationSlot}
+
+      {answered && !isCorrect && pickedOption?.whyWrong && (
+        <section
+          class="jp-card jp-wrong-card"
+          aria-label={`Why ${pickedLetter} is wrong`}
+        >
+          <div class="jp-wrong-head">
+            <h2 class="jp-wrong-title">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+              WHY {pickedLetter} IS WRONG
+            </h2>
+            <ReadAloudButton questionId={question.id} target="whyWrong" optionId={pickedOption.id} />
+          </div>
+          <p class="jp-explain-body">{pickedOption.whyWrong}</p>
+        </section>
+      )}
 
       {answered && (
         <section

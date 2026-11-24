@@ -1,14 +1,17 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { getQuestions } from '../../lib/data'
 import { shuffleOptions } from '../../lib/shuffle'
+import { SUBJECTS } from '../../lib/subjects'
 import {
   OPTION_LETTERS,
+  buildSessionQueue,
   getNextRemovalId,
   getOptionViewState,
   getRemoveButtonLabel,
   getResultCopy,
   makeOptionSeed,
   parseQuestionIdFromHash,
+  parseSubjectFromHash,
   summarizeSession,
 } from './logic'
 
@@ -251,5 +254,38 @@ describe('session flow and memory (M5)', () => {
         { topic: 'Non-metals', count: 1 },
       ],
     })
+  })
+})
+
+describe('subject picker and whyWrong requirements (M11 & M12)', () => {
+  it('lists all 15 UTME subjects with only Chemistry available', () => {
+    expect(SUBJECTS).toHaveLength(15)
+    expect(SUBJECTS.filter((s) => s.available).map((s) => s.id)).toEqual(['chemistry'])
+  })
+
+  it('parses ?subject= from hash routes cleanly', () => {
+    expect(parseSubjectFromHash('#/q?subject=chemistry')).toBe('chemistry')
+    expect(parseSubjectFromHash('#/q?subject=Physics')).toBe('physics')
+    expect(parseSubjectFromHash('#/q')).toBeNull()
+  })
+
+  it('builds a 10-question queue for chemistry and never starts an empty session for closed or unknown subjects', () => {
+    expect(buildSessionQueue(null, 10, 'chemistry')).toHaveLength(10)
+    expect(buildSessionQueue(null, 10, 'physics')).toEqual([])
+    expect(buildSessionQueue(null, 10, 'mathematics')).toEqual([])
+    expect(buildSessionQueue(null, 10, 'unknown')).toEqual([])
+  })
+
+  it('provides non-empty whyWrong for every wrong option and null for the answer across all 25 questions', () => {
+    for (const q of questions) {
+      for (const opt of q.options) {
+        if (opt.id === q.answerId) {
+          expect(opt.whyWrong).toBeNull()
+        } else {
+          expect(typeof opt.whyWrong).toBe('string')
+          expect(opt.whyWrong!.trim().length).toBeGreaterThan(0)
+        }
+      }
+    }
   })
 })

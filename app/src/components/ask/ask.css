@@ -22,17 +22,18 @@ body:has(.jp-ask-sheet[open]) {
   background: rgb(17 24 39 / 62%);
 }
 
-.jp-ask-surface, .jp-ask-panel {
+.jp-ask-surface,
+.jp-ask-panel {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font: 13px/1.5 var(--font-system);
+  font: 13.5px/1.5 var(--font-system);
 }
 
 .jp-ask-panel {
   box-sizing: border-box;
   height: auto;
-  max-height: 540px;
+  max-height: 560px;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
   background: var(--bg);
@@ -41,7 +42,9 @@ body:has(.jp-ask-sheet[open]) {
   overflow: hidden;
 }
 
-.jp-ask-sheet p, .jp-ask-panel p, .jp-ask-header h2 {
+.jp-ask-sheet p,
+.jp-ask-panel p,
+.jp-ask-header h2 {
   margin: 0;
 }
 
@@ -66,27 +69,44 @@ body:has(.jp-ask-sheet[open]) {
 .jp-ask-title-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   min-width: 0;
 }
 
-.jp-ask-title-row svg {
+.jp-ask-badge {
   flex: none;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--memo-soft);
+  color: #6d28d9;
+}
+
+.jp-ask-title-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
 }
 
 .jp-ask-header h2 {
   font-family: var(--font-display);
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.25;
+  color: #0f172a;
 }
 
-.jp-ask-header p, .jp-ask-reply small {
+.jp-ask-header p,
+.jp-ask-reply small {
   color: #475569;
-  font-size: 11px;
+  font-size: 11.5px;
 }
 
-.jp-ask-close, .jp-ask-presets button {
+.jp-ask-close,
+.jp-ask-presets button {
   font: inherit;
   color: inherit;
   white-space: nowrap;
@@ -97,13 +117,19 @@ body:has(.jp-ask-sheet[open]) {
   display: grid;
   flex: none;
   place-items: center;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   border: 0;
   border-radius: 8px;
   color: #475569;
   background: transparent;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.jp-ask-close:hover {
+  background: #f1f5f9;
+  color: #0f172a;
 }
 
 .jp-ask-body {
@@ -111,13 +137,7 @@ body:has(.jp-ask-sheet[open]) {
   min-height: 0;
   overflow: auto;
   overscroll-behavior: contain;
-  padding: 12px 16px 16px;
-}
-
-.jp-ask-presets {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  padding: 14px 16px 16px;
 }
 
 .jp-ask-body--chat {
@@ -126,45 +146,91 @@ body:has(.jp-ask-sheet[open]) {
   padding: 0;
 }
 
-.jp-ask-body--chat .jp-ask-presets {
+.jp-ask-starters {
   flex: none;
-  padding: 12px 16px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  background: #fcfdff;
+}
+
+.jp-ask-kicker {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.jp-ask-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .jp-ask-presets button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   min-height: 30px;
   padding: 4px 10px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #e2e8f0;
   border-radius: var(--radius-pill);
   background: var(--bg);
   color: #0f172a;
   font-size: 12.5px;
+  font-weight: 500;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.jp-ask-presets button:hover {
+  border-color: #c4b5fd;
+  background: #faf5ff;
+  color: #4c1d95;
 }
 
 .jp-ask-presets button[data-active="true"] {
   background: #f5f3ff;
   border-color: #c4b5fd;
   color: #4c1d95;
+  font-weight: 600;
+}
+
+.jp-ask-chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #7c3aed;
+  opacity: 0.65;
+  flex: none;
+}
+
+.jp-ask-presets button[data-active="true"] .jp-ask-chip-dot {
+  opacity: 1;
 }
 
 @media (max-width: 760px) {
   .jp-ask-close {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
   }
 
   .jp-ask-presets button {
     min-height: 32px;
-    padding: 4px 10px;
+    padding: 5px 11px;
   }
 }
 
-.jp-ask-sheet :focus-visible, .jp-ask-panel :focus-visible {
+.jp-ask-sheet :focus-visible,
+.jp-ask-panel :focus-visible {
   outline: 2px solid var(--brand);
   outline-offset: 2px;
 }
 
-.jp-ask-chat, .jp-ask-turn {
+.jp-ask-chat,
+.jp-ask-turn {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -174,44 +240,87 @@ body:has(.jp-ask-sheet[open]) {
   min-height: 0;
   overflow: auto;
   overscroll-behavior: contain;
-  padding: 0 16px 16px;
+  padding: 12px 16px 16px;
+  gap: 12px;
 }
 
-.jp-ask-sheet .jp-ask-prompt, .jp-ask-panel .jp-ask-prompt, .jp-ask-bubble {
-  padding: 9px 12px;
+.jp-ask-welcome {
+  display: flex;
+}
+
+.jp-ask-sheet .jp-ask-prompt,
+.jp-ask-panel .jp-ask-prompt,
+.jp-ask-bubble {
+  padding: 10px 12px;
   overflow-wrap: anywhere;
 }
 
-.jp-ask-sheet .jp-ask-prompt, .jp-ask-panel .jp-ask-prompt {
+.jp-ask-sheet .jp-ask-prompt,
+.jp-ask-panel .jp-ask-prompt {
   align-self: flex-end;
-  max-width: 80%;
+  max-width: 82%;
   border-radius: 14px 14px 4px 14px;
   background: var(--brand);
   color: var(--bg);
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .jp-ask-reply {
   align-self: flex-start;
-  max-width: 92%;
+  max-width: 94%;
 }
 
 .jp-ask-bubble {
+  border: 1px solid #e2e8f0;
   border-radius: 14px 14px 14px 4px;
-  background: #f1f5f9;
-  line-height: 1.5;
+  background: #f8fafc;
+  color: #0f172a;
+  line-height: 1.55;
+}
+
+.jp-ask-bubble--welcome {
+  background: #faf5ff;
+  border-color: #e9d5ff;
+  color: #3b0764;
+  font-size: 13px;
+}
+
+.jp-ask-bubble-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #5b21b6;
+}
+
+.jp-ask-tutor-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #6d28d9;
 }
 
 .jp-ask-reply small {
   display: block;
   margin-top: 4px;
+  padding-left: 2px;
 }
 
 .jp-ask-bubble summary {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  min-height: 30px;
-  padding: 3px 0;
-  color: var(--brand);
+  min-height: 28px;
+  margin-top: 6px;
+  padding: 3px 10px;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-pill);
+  background: var(--brand-soft);
+  color: #1e40af;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -220,7 +329,18 @@ body:has(.jp-ask-sheet[open]) {
   display: none;
 }
 
-.jp-ask-hide, .jp-ask-bubble details[open] .jp-ask-show {
+.jp-ask-similar-answer {
+  margin-top: 8px !important;
+  padding: 8px 10px;
+  border-radius: 9px;
+  background: var(--bg);
+  border: 1px solid #e2e8f0;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.jp-ask-hide,
+.jp-ask-bubble details[open] .jp-ask-show {
   display: none;
 }
 
@@ -228,37 +348,92 @@ body:has(.jp-ask-sheet[open]) {
   display: inline;
 }
 
-.jp-ask-hint {
-  padding: var(--space-3);
-  border-radius: var(--radius-card);
-  background: var(--hint-soft);
+.jp-formula {
+  font-variant-numeric: tabular-nums;
 }
 
-.jp-ask-hint p + p {
-  margin-top: var(--space-2);
-  color: var(--ink-2);
-  font-size: 13px;
+.jp-formula sub,
+.jp-formula sup {
+  font-size: 0.74em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.jp-formula sup {
+  top: -0.42em;
+}
+
+.jp-formula sub {
+  bottom: -0.22em;
+}
+
+.jp-ask-hint {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: var(--space-3);
+  border: 1px solid #fde68a;
+  border-radius: var(--radius-card);
+  background: var(--hint-soft);
+  color: #78350f;
+}
+
+.jp-ask-hint .jp-ask-kicker {
+  color: var(--hint);
+}
+
+.jp-ask-hint-note {
+  color: #92400e;
+  font-size: 12.5px;
 }
 
 .jp-ask-footer {
-  padding: var(--space-3) var(--space-4) max(var(--space-4), env(safe-area-inset-bottom));
-  border-top: 1px solid var(--line);
-}
-
-.jp-ask-footer input {
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 38px;
-  padding: 0 11px;
-  border: 1px solid var(--option-line);
-  border-radius: var(--radius-card);
+  flex: none;
+  padding: 10px 14px;
+  padding-bottom: max(10px, env(safe-area-inset-bottom));
+  border-top: 1px solid #e2e8f0;
   background: var(--bg);
-  color: var(--ink-2);
+}
+
+.jp-ask-composer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 4px 5px 4px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.jp-ask-composer input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #475569;
   font: inherit;
+  font-size: 12.5px;
   opacity: 1;
 }
 
-.jp-ask-footer input::placeholder {
-  color: var(--ink-2);
+.jp-ask-composer input::placeholder {
+  color: #64748b;
   opacity: 1;
+}
+
+.jp-ask-send {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  background: #e2e8f0;
+  color: #64748b;
+  cursor: default;
 }

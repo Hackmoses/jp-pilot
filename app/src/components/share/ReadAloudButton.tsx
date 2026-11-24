@@ -9,7 +9,7 @@ import {
   subscribeToSpeechState,
 } from '../../lib/speech'
 import { logEvent } from '../../lib/store'
-import type { Option } from '../../lib/types'
+import type { Option, OptionId } from '../../lib/types'
 import './share.css'
 
 type ReadAloudProps = {
@@ -17,11 +17,14 @@ type ReadAloudProps = {
 } & (
   | { target: 'question'; options: readonly Option[] }
   | { target: 'explanation' }
+  | { target: 'whyWrong'; optionId: OptionId }
 )
 
 export function ReadAloudButton(props: ReadAloudProps) {
   const { questionId, target } = props
-  const speechKey = `${questionId}:${target}`
+  const speechKey = props.target === 'whyWrong'
+    ? `${questionId}:whyWrong:${props.optionId}`
+    : `${questionId}:${target}`
   const [available, setAvailable] = useState(isSpeechAvailable)
   const [activeKey, setActiveKey] = useState<string | null>(getActiveSpeechKey)
   const question = getQuestion(questionId)
@@ -40,13 +43,32 @@ export function ReadAloudButton(props: ReadAloudProps) {
 
   const words = props.target === 'question'
     ? [question.stem, ...props.options.map((option, index) => `Option ${'ABCD'[index]}. ${option.text}`)].join(' ')
-    : question.explanation
-  const idleLabel = target === 'question' ? 'Read question aloud' : 'Read explanation aloud'
-  const stopLabel = target === 'question' ? 'Stop reading question' : 'Stop reading explanation'
+    : props.target === 'whyWrong'
+      ? (question.options.find((option) => option.id === props.optionId)?.whyWrong ?? '')
+      : question.explanation
+
+  if (!words.trim()) return null
+
+  const idleLabel = target === 'question'
+    ? 'Read question aloud'
+    : target === 'whyWrong'
+      ? 'Read why your answer is wrong aloud'
+      : 'Read explanation aloud'
+  const stopLabel = target === 'question'
+    ? 'Stop reading question'
+    : target === 'whyWrong'
+      ? 'Stop reading'
+      : 'Stop reading explanation'
+
+  const buttonClass = target === 'question'
+    ? 'jp-wsd-button jp-read-aloud'
+    : target === 'whyWrong'
+      ? 'jp-wsd-button jp-read-aloud jp-read-aloud--explain jp-read-aloud--wrong'
+      : 'jp-wsd-button jp-read-aloud jp-read-aloud--explain'
 
   return (
     <button
-      class={target === 'question' ? 'jp-wsd-button jp-read-aloud' : 'jp-wsd-button jp-read-aloud jp-read-aloud--explain'}
+      class={buttonClass}
       type="button"
       aria-label={speaking ? stopLabel : idleLabel}
       aria-pressed={speaking}
@@ -69,7 +91,7 @@ export function ReadAloudButton(props: ReadAloudProps) {
           {target === 'question' && <path d="M19 5a10 10 0 0 1 0 14" />}
         </svg>
       )}
-      {target === 'explanation' && (speaking ? 'Stop reading' : 'Read aloud')}
+      {target !== 'question' && (speaking ? 'Stop reading' : 'Read aloud')}
     </button>
   )
 }

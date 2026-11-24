@@ -2,6 +2,7 @@ import { useId, useLayoutEffect, useRef, useState } from 'preact/hooks'
 import { getQuestion } from '../../lib/data'
 import { logEvent } from '../../lib/store'
 import type { AskPreset, OptionId } from '../../lib/types'
+import { renderFormattedText } from './formatFormula'
 import './ask.css'
 
 type AskProps = {
@@ -25,14 +26,18 @@ function PresetReply({ preset, label }: { preset: AskPreset; label: string }) {
       <p class="jp-ask-prompt">{label}</p>
       <div class="jp-ask-reply">
         <div class="jp-ask-bubble">
-          <p>{preset.answer}</p>
+          <div class="jp-ask-bubble-head">
+            <span class="jp-ask-tutor-dot" aria-hidden="true" />
+            <span>JP Tutor</span>
+          </div>
+          <p>{renderFormattedText(preset.answer)}</p>
           {preset.id === 'similar' && preset.similarAnswer && (
             <details>
               <summary>
                 <span class="jp-ask-show">Show answer</span>
                 <span class="jp-ask-hide">Hide answer</span>
               </summary>
-              <p>{preset.similarAnswer}</p>
+              <p class="jp-ask-similar-answer">{renderFormattedText(preset.similarAnswer)}</p>
             </details>
           )}
         </div>
@@ -68,15 +73,15 @@ function AskContent({
       {isSheet && <div class="jp-ask-handle" aria-hidden="true" />}
       <header class="jp-ask-header">
         <div class="jp-ask-title-row">
-          {!isSheet && (
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6d28d9"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <span class="jp-ask-badge" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z" />
             </svg>
-          )}
-          <div>
+          </span>
+          <div class="jp-ask-title-copy">
             <h2 id={titleId}>Ask about this question</h2>
-            {isSheet && question && <p>{question.id} · {question.topic}</p>}
+            {question && <p>{question.topic}</p>}
           </div>
         </div>
         {onClose && (
@@ -93,38 +98,51 @@ function AskContent({
           </button>
         )}
       </header>
+
       <div class={answered ? 'jp-ask-body jp-ask-body--chat' : 'jp-ask-body'}>
         {!question && <p>Question unavailable.</p>}
         {question && !answered && (
           <div class="jp-ask-hint">
-            <p>{question.hint}</p>
-            <p>Saved answers unlock after you answer the question.</p>
+            <span class="jp-ask-kicker">Hint</span>
+            <p>{renderFormattedText(question.hint)}</p>
+            <p class="jp-ask-hint-note">Saved answers unlock after you answer the question.</p>
           </div>
         )}
         {question && answered && (
           <>
-            <div class="jp-ask-presets">
-              {question.askPresets.map((preset) => {
-                const label = preset.id === 'whynot' && preset.optionId
-                  ? `Why not ${letterFor(preset.optionId)}?`
-                  : preset.label ?? presetLabels[preset.id]
-                return (
-                  <button
-                    type="button"
-                    key={preset.id}
-                    data-active={activePresetId === preset.id ? 'true' : undefined}
-                    onClick={() => {
-                      logEvent('ask_preset', { questionId, presetId: preset.id })
-                      setActivePresetId(preset.id)
-                      setTurns((previous) => [...previous, { preset, label }])
-                    }}
-                  >
-                    {label}
-                  </button>
-                )
-              })}
+            <div class="jp-ask-starters">
+              <span class="jp-ask-kicker">Suggested questions</span>
+              <div class="jp-ask-presets">
+                {question.askPresets.map((preset) => {
+                  const label = preset.id === 'whynot' && preset.optionId
+                    ? `Why not ${letterFor(preset.optionId)}?`
+                    : preset.label ?? presetLabels[preset.id]
+                  return (
+                    <button
+                      type="button"
+                      key={preset.id}
+                      data-active={activePresetId === preset.id ? 'true' : undefined}
+                      onClick={() => {
+                        logEvent('ask_preset', { questionId, presetId: preset.id })
+                        setActivePresetId(preset.id)
+                        setTurns((previous) => [...previous, { preset, label }])
+                      }}
+                    >
+                      <span class="jp-ask-chip-dot" aria-hidden="true" />
+                      {label}
+                    </button>
+                  )
+                })}
+              </div>
             </div>
             <div class="jp-ask-chat" ref={chat} role="log" aria-label="Saved answers">
+              {turns.length === 0 && (
+                <div class="jp-ask-welcome">
+                  <div class="jp-ask-bubble jp-ask-bubble--welcome">
+                    <p>Tap a suggested question above for a simpler breakdown, why another option misses, or a quick follow-up.</p>
+                  </div>
+                </div>
+              )}
               {turns.map(({ preset, label }, index) => (
                 <PresetReply key={index} preset={preset} label={label} />
               ))}
@@ -132,12 +150,28 @@ function AskContent({
           </>
         )}
       </div>
-      {isSheet && (
-        <footer class="jp-ask-footer">
-          <input type="text" aria-label="Typed questions are coming soon"
-            placeholder="Typed questions are coming soon" disabled />
-        </footer>
-      )}
+
+      <footer class="jp-ask-footer">
+        <div class="jp-ask-composer">
+          <input
+            type="text"
+            aria-label="Typed questions are coming soon"
+            placeholder="Typed questions are coming soon"
+            disabled
+          />
+          <button
+            type="button"
+            class="jp-ask-send"
+            aria-label="Send (coming soon)"
+            disabled
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14m-6-6 6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+      </footer>
     </>
   )
 }

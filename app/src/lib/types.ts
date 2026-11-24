@@ -4,6 +4,7 @@ export interface Option {
   id: OptionId
   text: string
   why: string
+  whyWrong: string | null
 }
 
 export interface AskPreset {

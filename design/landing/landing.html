@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[APP NAME] · JAMB practice without installing anything</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Caveat:wght@600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1d4ed8}a:hover{color:#1e3a8a}
+.lp-track{transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion: reduce){.lp-track{transition:none}}
+@media (max-width: 640px){.lp-sm-hide{display:none !important}}
+@media (max-width: 900px), (max-height: 680px){.lp-md-hide{display:none !important}}
+
+.feat{display:flex;align-items:center;gap:8px;min-height:46px;padding:5px 8px;border-radius:10px;font-family:inherit;text-align:left;cursor:pointer;background:rgba(255,255,255,.85);border:2px solid #e2e8f0;transition:background .3s,border-color .3s,box-shadow .3s}
+.feat-ic{flex:none;width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--c)}
+.feat-t{font-size:13px;font-weight:600;color:#0f172a;line-height:1.25}
+.feat.on{background:#fff;border-color:var(--c);box-shadow:0 8px 20px -12px var(--c)}
+.feat.on .feat-ic{background:var(--c);color:#fff}
+.feat.on .feat-t{font-weight:800}
+.dot{height:10px;width:10px;padding:0;border:none;border-radius:999px;cursor:pointer;background:#cbd5e1;transition:width .3s}
+.dot.on{width:26px;background:#1d4ed8}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; height: 100vh; box-sizing: border-box; display: flex; flex-direction: column; overflow: hidden; background: #ffffff; background-image: repeating-linear-gradient(#ffffff 0px, #ffffff 39px, #eef3fc 40px); font-family: Inter, system-ui, sans-serif; color: #0f172a">
+
+<header style="width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<div style="display: flex; align-items: center; gap: 10px">
+<span aria-hidden="true" style="width: 34px; height: 34px; border-radius: 10px; background: #1d4ed8; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 800; font-size: 14px">JP</span>
+<span style="font-size: 17px; font-weight: 700">[APP NAME]</span>
+<span class="lp-sm-hide" style="font-size: 12px; font-weight: 600; color: #1e40af; background: #eff6ff; padding: 5px 10px; border-radius: 999px">15 UTME subjects</span>
+</div>
+<a href="#signin" style="display: flex; align-items: center; min-height: 40px; padding: 0 12px; border: 1.5px solid #1d4ed8; border-radius: 9px; font-size: 14px; font-weight: 600; color: #1d4ed8; text-decoration: none; background: #ffffff">Sign in</a>
+</header>
+
+<main style="flex: 1; min-height: 0; width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 0 24px 12px 24px; display: flex; flex-wrap: wrap; align-items: center; align-content: center; justify-content: center; column-gap: 48px; row-gap: 14px">
+
+<div style="flex: 1 1 400px; max-width: 520px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #1e40af">For UTME candidates</span>
+<h1 style="margin: 0; font-size: clamp(28px, 3.4vw, 44px); line-height: 1.08; letter-spacing: -0.02em; font-weight: 800">JAMB practice without installing anything.</h1>
+<p class="lp-sm-hide" style="margin: 0; font-size: clamp(15px, 1.15vw, 16px); line-height: 1.55; color: #334155">Open it from a WhatsApp link, answer one question at a time, and learn why every option is right or wrong.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px">
+<a id="start" href="#signup" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; background: #1d4ed8; border-radius: 10px; font-size: 15px; font-weight: 700; color: #ffffff; text-decoration: none">
+Start free with your email
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+</a>
+<a href="#/subjects" style="display: flex; align-items: center; min-height: 44px; padding: 0 14px; background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 10px; font-size: 15px; font-weight: 600; color: #0f172a; text-decoration: none">Try free without an account</a>
+</div>
+<span style="font-family: Caveat, cursive; font-size: 22px; font-weight: 700; line-height: 1; color: #b45309; transform: rotate(-2deg); transform-origin: left center">easy sign-up, just your email</span>
+<span style="font-size: 13px; font-weight: 500; color: #475569">No download · Works on one bar of signal · 10 free questions a day</span>
+
+<div class="lp-md-hide" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 2px">
+<button class="feat" data-i="0" style="--c:#15803d;--bg:#f0fdf4;" aria-pressed="false"><span class="feat-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/></svg></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span class="feat-t">Reasons under every answer</span><span style="font-size:11.5px;line-height:1.3;color:#475569">Right or wrong, you see why</span></span></button><button class="feat" data-i="1" style="--c:#b91c1c;--bg:#fef2f2;" aria-pressed="false"><span class="feat-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8 12h8"/></svg></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span class="feat-t">Remove a wrong option</span><span style="font-size:11.5px;line-height:1.3;color:#475569">Narrow it to two when stuck</span></span></button><button class="feat" data-i="2" style="--c:#1d4ed8;--bg:#eff6ff;" aria-pressed="false"><span class="feat-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span class="feat-t">Step-by-step solutions</span><span style="font-size:11.5px;line-height:1.3;color:#475569">Watch calculations being written</span></span></button><button class="feat" data-i="3" style="--c:#6d28d9;--bg:#f5f3ff;" aria-pressed="false"><span class="feat-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span class="feat-t">Ask about any question</span><span style="font-size:11.5px;line-height:1.3;color:#475569">Simpler, why not, or a similar one</span></span></button><button class="feat" data-i="4" style="--c:#b45309;--bg:#fff7ed;grid-column: span 2;" aria-pressed="false"><span class="feat-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13"/></svg></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span class="feat-t">Share your wins on Status</span><span style="font-size:11.5px;line-height:1.3;color:#475569">Friends try the same question in one tap</span></span></button>
+</div>
+</div>
+
+<div style="flex: 0 1 340px; display: flex; flex-direction: column; align-items: center; gap: 12px">
+<div role="region" aria-roledescription="carousel" aria-label="App features" style="width: clamp(250px, 23vw, 290px); height: clamp(290px, 48vh, 500px); box-sizing: border-box; padding: 10px; background: #0f172a; border-radius: 34px; box-shadow: 0 24px 60px -24px rgba(15, 23, 42, 0.45)">
+<div style="width: 100%; height: 100%; overflow: hidden; border-radius: 26px; background: #ffffff">
+<div id="track" class="lp-track" style="display: flex; width: 100%; height: 100%; transform: translateX(0%)">
+
+<div style="flex: 0 0 100%; box-sizing: border-box; height: 100%; padding: 18px 16px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #64748b">01 / 05</span>
+<span style="display: flex; align-items: center; gap: 10px"><span style="flex: none; width: 34px; height: 34px; border-radius: 10px; background: #f0fdf4; color: #15803d; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/></svg></span><span style="font-size: 17px; font-weight: 800; line-height: 1.2">See why, under every answer</span></span>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="padding: 10px 12px; background: #fef2f2; border: 2px solid #b91c1c; border-radius: 12px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; font-weight: 700; color: #7f1d1d">C · Remove iron oxide</span>
+<span style="font-size: 11px; line-height: 1.4; color: #991b1b">Your answer. That happens earlier, in the Bayer process.</span>
+</div>
+<div style="padding: 10px 12px; background: #f0fdf4; border: 2px solid #15803d; border-radius: 12px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; font-weight: 700; color: #14532d">B · Lower the melting point</span>
+<span style="font-size: 11px; line-height: 1.4; color: #166534">Correct answer. 2050 °C down to 960 °C.</span>
+</div>
+</div>
+<span style="margin-top: auto; font-size: 12px; line-height: 1.45; color: #475569">Every option tells you why it is right or wrong.</span>
+</div>
+
+<div style="flex: 0 0 100%; box-sizing: border-box; height: 100%; padding: 18px 16px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #64748b">02 / 05</span>
+<span style="display: flex; align-items: center; gap: 10px"><span style="flex: none; width: 34px; height: 34px; border-radius: 10px; background: #fef2f2; color: #b91c1c; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8 12h8"/></svg></span><span style="font-size: 17px; font-weight: 800; line-height: 1.2">Remove a wrong option</span></span>
+<div style="display: flex; flex-direction: column; gap: 7px">
+<div style="padding: 9px 12px; border: 1.5px dashed #cbd5e1; border-radius: 12px; font-size: 13px; color: #64748b; text-decoration: line-through; background: #f8fafc">A · Act as the anode</div>
+<div style="padding: 9px 12px; border: 1.5px solid #cbd5e1; border-radius: 12px; font-size: 13px; color: #0f172a">B · Lower the melting point</div>
+<div style="padding: 9px 12px; border: 1.5px solid #cbd5e1; border-radius: 12px; font-size: 13px; color: #0f172a">C · Remove iron oxide</div>
+<div style="padding: 9px 12px; border: 1.5px dashed #cbd5e1; border-radius: 12px; font-size: 13px; color: #64748b; text-decoration: line-through; background: #f8fafc">D · Reduce Al³⁺ ions</div>
+</div>
+<span style="margin-top: auto; font-size: 12px; line-height: 1.45; color: #475569">Stuck? Narrow it to two and think it through.</span>
+</div>
+
+<div style="flex: 0 0 100%; box-sizing: border-box; height: 100%; padding: 18px 16px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #64748b">03 / 05</span>
+<span style="display: flex; align-items: center; gap: 10px"><span style="flex: none; width: 34px; height: 34px; border-radius: 10px; background: #eff6ff; color: #1d4ed8; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><span style="font-size: 17px; font-weight: 800; line-height: 1.2">Watch it solved, step by step</span></span>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 12px; background: #ffffff; background-image: repeating-linear-gradient(#ffffff 0px, #ffffff 27px, #dbe7fb 28px); font-family: Caveat, cursive; font-size: 20px; line-height: 1.3; color: #1e293b">
+<span>n = 80 ÷ 160 = 0.5 mol</span>
+<span style="padding: 0 6px; margin: 0 -6px; background: #fef9c3; border-radius: 6px; color: #1d4ed8; font-weight: 700">0.5 mol → 1 mol Fe</span>
+<span style="color: #cbd5e1">mass = 56 g</span>
+</div>
+<span style="margin-top: auto; font-size: 12px; line-height: 1.45; color: #475569">A hand writes the working, with a voice if you want it.</span>
+</div>
+
+<div style="flex: 0 0 100%; box-sizing: border-box; height: 100%; padding: 18px 16px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #64748b">04 / 05</span>
+<span style="display: flex; align-items: center; gap: 10px"><span style="flex: none; width: 34px; height: 34px; border-radius: 10px; background: #f5f3ff; color: #6d28d9; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><span style="font-size: 17px; font-weight: 800; line-height: 1.2">Ask about any question</span></span>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="align-self: flex-end; max-width: 85%; padding: 8px 12px; background: #1d4ed8; color: #ffffff; border-radius: 14px 14px 4px 14px; font-size: 12px; line-height: 1.4">Why not C?</span>
+<span style="align-self: flex-start; max-width: 92%; padding: 8px 12px; background: #f1f5f9; border-radius: 14px 14px 14px 4px; font-size: 12px; line-height: 1.45">Iron oxide is filtered out as red mud before the alumina reaches the cell.</span>
+<span style="align-self: flex-start; font-size: 10px; color: #64748b">Saved answer · free</span>
+</div>
+<span style="margin-top: auto; font-size: 12px; line-height: 1.45; color: #475569">Explain more simply, why not, or a similar question.</span>
+</div>
+
+<div style="flex: 0 0 100%; box-sizing: border-box; height: 100%; padding: 18px 16px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #64748b">05 / 05</span>
+<span style="display: flex; align-items: center; gap: 10px"><span style="flex: none; width: 34px; height: 34px; border-radius: 10px; background: #fff7ed; color: #b45309; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13"/></svg></span><span style="font-size: 17px; font-weight: 800; line-height: 1.2">Share your wins on Status</span></span>
+<div style="padding: 14px; border-radius: 14px; background: #0f172a; color: #ffffff; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #93c5fd">JAMB CHEMISTRY</span>
+<span style="font-size: 16px; font-weight: 800; line-height: 1.3">I got this one. 68% didn't. Can you?</span>
+<span style="align-self: flex-start; padding: 6px 10px; border-radius: 999px; background: #ffffff; color: #0f172a; font-size: 11px; font-weight: 700">Tap to try it</span>
+</div>
+<span style="margin-top: auto; font-size: 12px; line-height: 1.45; color: #475569">Your friends open the same question in one tap.</span>
+</div>
+
+</div>
+</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px">
+<button id="prev" aria-label="Previous feature" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 999px; color: #0f172a; cursor: pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+</button>
+<div style="display: flex; gap: 6px">
+<button class="dot" data-i="0" aria-label="Show feature 1"></button><button class="dot" data-i="1" aria-label="Show feature 2"></button><button class="dot" data-i="2" aria-label="Show feature 3"></button><button class="dot" data-i="3" aria-label="Show feature 4"></button><button class="dot" data-i="4" aria-label="Show feature 5"></button>
+</div>
+<button id="next" aria-label="Next feature" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 999px; color: #0f172a; cursor: pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+</button>
+</div>
+</div>
+
+</main>
+</div>
+
+<script>
+(function(){
+  var idx=0, n=5, ms=3500, timer;
+  var track=document.getElementById('track');
+  var feats=[].slice.call(document.querySelectorAll('.feat'));
+  var dots=[].slice.call(document.querySelectorAll('.dot'));
+  function show(i){
+    idx=(i+n)%n;
+    track.style.transform='translateX('+(-idx*100)+'%)';
+    feats.forEach(function(f,k){f.classList.toggle('on',k===idx);f.setAttribute('aria-pressed',k===idx);});
+    dots.forEach(function(d,k){d.classList.toggle('on',k===idx);});
+  }
+  function restart(){clearInterval(timer);timer=setInterval(function(){show(idx+1);},ms);}
+  function go(i){show(i);restart();}
+  feats.concat(dots).forEach(function(el){el.addEventListener('click',function(){go(+el.dataset.i);});});
+  document.getElementById('prev').addEventListener('click',function(){go(idx-1);});
+  document.getElementById('next').addEventListener('click',function(){go(idx+1);});
+  show(0);restart();
+})();
+</script>
+</body></html>

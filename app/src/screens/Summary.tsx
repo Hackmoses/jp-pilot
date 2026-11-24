@@ -12,7 +12,7 @@ export function Summary() {
       <div class="jp-summary">
         <div class="jp-summary-brand">
           <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
-          <span class="jp-topic">JAMB Chemistry</span>
+          <span class="jp-topic">JAMB UTME</span>
         </div>
         <div class="jp-pills">
           <span class="jp-pill jp-pill--practice">Session complete</span>
@@ -73,8 +73,12 @@ export function Summary() {
           </section>
         )}
 
-        <a class="jp-btn jp-btn--primary jp-btn--full" href="#/q">
+        <a class="jp-btn jp-btn--primary jp-btn--full" href="#/q?subject=chemistry">
           {summary ? 'Practice again' : 'Start practice'}
+        </a>
+
+        <a class="jp-link-btn" href="#/subjects">
+          Choose a subject
         </a>
 
         <a class="jp-link-btn" href="#/">

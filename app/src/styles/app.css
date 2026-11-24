@@ -255,6 +255,46 @@ body {
   font-size: 13px;
 }
 
+.jp-wrong-card {
+  gap: 10px;
+  border-color: #fecaca;
+}
+
+.jp-wrong-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.jp-wrong-title {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 700 12px/1.2 var(--font-system);
+  letter-spacing: 0.06em;
+  color: var(--bad);
+}
+
+.jp-wrong-title svg {
+  flex: none;
+}
+
+.jp-read-aloud--wrong {
+  border-color: #fecaca;
+  background: var(--bad-soft);
+  color: #991b1b;
+}
+
+.jp-read-aloud--wrong:hover:not(:disabled) {
+  border-color: #fca5a5;
+  background: #fee2e2;
+}
+
 .jp-explain-card {
   gap: 10px;
   border-color: #bbf7d0;

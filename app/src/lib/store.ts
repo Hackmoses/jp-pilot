@@ -1,4 +1,4 @@
-import { getQuestions } from './data'
+import { getQuestions, getQuestionsBySubject } from './data'
 
 export type EventName =
   | 'session_start'
@@ -159,7 +159,7 @@ export function getProgress(): {
   return { answered: state.answered, correct: state.correct, streakDays, lastActiveDay }
 }
 
-export function getDueQuestionIds(limit: number): QueueItem[] {
+export function getDueQuestionIds(limit: number, subject?: string): QueueItem[] {
   if (!(limit > 0)) return []
 
   // Select the next session's questions before logging its session_start.
@@ -168,8 +168,9 @@ export function getDueQuestionIds(limit: number): QueueItem[] {
   const reviews: { id: string; session: number }[] = []
   const recall: string[] = []
   const calculation: string[] = []
+  const pool = subject ? getQuestionsBySubject(subject) : getQuestions()
 
-  for (const question of getQuestions()) {
+  for (const question of pool) {
     const session = state.dueByQuestion[question.id]
     if (session === undefined) {
       const unseen = question.type === 'recall' ? recall : calculation

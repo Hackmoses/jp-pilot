@@ -14,22 +14,26 @@
         {
           "id": "a",
           "text": "To act as the anode",
-          "why": "The anodes are carbon blocks, which burn away in the oxygen produced."
+          "why": "The anodes are carbon blocks, which burn away in the oxygen produced.",
+          "whyWrong": "Cryolite is the solvent for the alumina, not an electrode. The anodes are carbon blocks that slowly burn away as oxygen forms on them, which is why they are replaced."
         },
         {
           "id": "b",
           "text": "To lower the melting point of alumina",
-          "why": "Cryolite dissolves alumina, so electrolysis runs at about 960 °C instead of about 2050 °C."
+          "why": "Cryolite dissolves alumina, so electrolysis runs at about 960 °C instead of about 2050 °C.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "To remove iron oxide impurities",
-          "why": "Iron oxide is removed earlier, in the Bayer process."
+          "why": "Iron oxide is removed earlier, in the Bayer process.",
+          "whyWrong": "Removing impurities is purification, and that happens before electrolysis in the Bayer process, where iron oxide is filtered off as red mud. By the time alumina meets cryolite it is already pure."
         },
         {
           "id": "d",
           "text": "To reduce Al³⁺ ions to aluminium",
-          "why": "Electrons at the cathode reduce Al³⁺. Cryolite does not."
+          "why": "Electrons at the cathode reduce Al³⁺. Cryolite does not.",
+          "whyWrong": "Reduction means gaining electrons, and in electrolysis the electrons come from the cathode. Cryolite only dissolves the alumina so its ions can move."
         }
       ],
       "answerId": "b",
@@ -75,22 +79,26 @@
         {
           "id": "a",
           "text": "Calcium sulfate",
-          "why": "Calcium sulfate causes permanent hardness. Boiling does not remove it."
+          "why": "Calcium sulfate causes permanent hardness. Boiling does not remove it.",
+          "whyWrong": "Calcium sulfate does make water hard, but sulfates do not break down when water is boiled. That makes it permanent hardness, not temporary."
         },
         {
           "id": "b",
           "text": "Magnesium chloride",
-          "why": "Magnesium chloride causes permanent hardness."
+          "why": "Magnesium chloride causes permanent hardness.",
+          "whyWrong": "Magnesium chloride makes water hard, but boiling cannot remove it, so the hardness it causes is permanent."
         },
         {
           "id": "c",
           "text": "Calcium hydrogencarbonate",
-          "why": "Ca(HCO₃)₂ breaks down on boiling, so the hardness it causes is temporary."
+          "why": "Ca(HCO₃)₂ breaks down on boiling, so the hardness it causes is temporary.",
+          "whyWrong": null
         },
         {
           "id": "d",
           "text": "Sodium carbonate",
-          "why": "Washing soda softens water. It does not cause hardness."
+          "why": "Washing soda softens water. It does not cause hardness.",
+          "whyWrong": "Sodium carbonate (washing soda) removes hardness by precipitating calcium as calcium carbonate. A softener cannot be the cause."
         }
       ],
       "answerId": "c",
@@ -136,22 +144,26 @@
         {
           "id": "a",
           "text": "Oxygen",
-          "why": "Oxygen causes the oxidation that makes fats rancid."
+          "why": "Oxygen causes the oxidation that makes fats rancid.",
+          "whyWrong": "Oxygen is what attacks fats and oils and makes them rancid. Adding more would speed up spoiling, not prevent it."
         },
         {
           "id": "b",
           "text": "Neon",
-          "why": "Neon is unreactive but far too expensive for packaging."
+          "why": "Neon is unreactive but far too expensive for packaging.",
+          "whyWrong": "Neon is unreactive, so it would work chemically, but it is rare and far too expensive for food packs. Nitrogen does the same job cheaply."
         },
         {
           "id": "c",
           "text": "Nitrogen",
-          "why": "Nitrogen is unreactive, cheap and plentiful, and pushes oxygen out of the pack."
+          "why": "Nitrogen is unreactive, cheap and plentiful, and pushes oxygen out of the pack.",
+          "whyWrong": null
         },
         {
           "id": "d",
           "text": "Carbon(IV) oxide",
-          "why": "CO₂ is used mainly to slow microbes, not to stop oxidation."
+          "why": "CO₂ is used mainly to slow microbes, not to stop oxidation.",
+          "whyWrong": "Carbon(IV) oxide is used mainly to slow the growth of microbes in some foods. For stopping oxidation of fats, the expected answer is nitrogen."
         }
       ],
       "answerId": "c",
@@ -197,22 +209,26 @@
         {
           "id": "a",
           "text": "Coke (carbon)",
-          "why": "Coke is the fuel. It burns to make CO, which does most of the reducing."
+          "why": "Coke is the fuel. It burns to make CO, which does most of the reducing.",
+          "whyWrong": "Coke is the fuel. It burns to CO₂, which reacts with more coke to make CO, and that gas does most of the reducing."
         },
         {
           "id": "b",
           "text": "Carbon(II) oxide",
-          "why": "CO reduces Fe₂O₃ to iron. Fe₂O₃ + 3CO → 2Fe + 3CO₂."
+          "why": "CO reduces Fe₂O₃ to iron. Fe₂O₃ + 3CO → 2Fe + 3CO₂.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "Limestone",
-          "why": "Limestone is the flux that removes silica as slag."
+          "why": "Limestone is the flux that removes silica as slag.",
+          "whyWrong": "Limestone is the flux. It breaks down to CaO, which removes sandy silica as slag. It does not take oxygen from the ore."
         },
         {
           "id": "d",
           "text": "Hot air",
-          "why": "Hot air supplies oxygen to burn the coke."
+          "why": "Hot air supplies oxygen to burn the coke.",
+          "whyWrong": "Hot air supplies oxygen to burn the coke. Something that adds oxygen cannot be the agent that removes oxygen from iron ore."
         }
       ],
       "answerId": "b",
@@ -258,22 +274,26 @@
         {
           "id": "a",
           "text": "It reduces the iron ore",
-          "why": "CO reduces the iron ore, not limestone."
+          "why": "CO reduces the iron ore, not limestone.",
+          "whyWrong": "The ore is reduced by carbon monoxide made from coke. Limestone contains carbon, but it acts as a flux, not a reducing agent."
         },
         {
           "id": "b",
           "text": "It is the main fuel",
-          "why": "Coke is the fuel."
+          "why": "Coke is the fuel.",
+          "whyWrong": "Coke is the fuel that heats the furnace. Limestone actually absorbs heat as it breaks down into CaO."
         },
         {
           "id": "c",
           "text": "It removes silica impurities as slag",
-          "why": "Limestone gives CaO, which reacts with SiO₂ to form molten slag, CaSiO₃."
+          "why": "Limestone gives CaO, which reacts with SiO₂ to form molten slag, CaSiO₃.",
+          "whyWrong": null
         },
         {
           "id": "d",
           "text": "It makes the iron harder",
-          "why": "Hardness depends on carbon content, not limestone."
+          "why": "Hardness depends on carbon content, not limestone.",
+          "whyWrong": "How hard iron is depends on how much carbon it holds. Limestone ends up in the slag, not in the iron."
         }
       ],
       "answerId": "c",
@@ -319,22 +339,26 @@
         {
           "id": "a",
           "text": "Fe³⁺",
-          "why": "Fe³⁺ gives a reddish-brown precipitate that does not dissolve in excess."
+          "why": "Fe³⁺ gives a reddish-brown precipitate that does not dissolve in excess.",
+          "whyWrong": "Fe³⁺ gives a reddish-brown precipitate of Fe(OH)₃, not a white one, and it stays in excess NaOH."
         },
         {
           "id": "b",
           "text": "Cu²⁺",
-          "why": "Cu²⁺ gives a pale blue precipitate that does not dissolve in excess NaOH."
+          "why": "Cu²⁺ gives a pale blue precipitate that does not dissolve in excess NaOH.",
+          "whyWrong": "Cu²⁺ gives a pale blue precipitate of Cu(OH)₂. It does not dissolve in excess NaOH, only in excess ammonia."
         },
         {
           "id": "c",
           "text": "Al³⁺",
-          "why": "Al(OH)₃ is white and amphoteric, so it dissolves in excess NaOH."
+          "why": "Al(OH)₃ is white and amphoteric, so it dissolves in excess NaOH.",
+          "whyWrong": null
         },
         {
           "id": "d",
           "text": "Mg²⁺",
-          "why": "Mg(OH)₂ is white but does not dissolve in excess NaOH."
+          "why": "Mg(OH)₂ is white but does not dissolve in excess NaOH.",
+          "whyWrong": "Mg²⁺ does give a white precipitate, but Mg(OH)₂ is not amphoteric, so it stays when more NaOH is added. The word excess rules it out."
         }
       ],
       "answerId": "c",
@@ -380,22 +404,26 @@
         {
           "id": "a",
           "text": "copper and tin",
-          "why": "Copper and tin make bronze."
+          "why": "Copper and tin make bronze.",
+          "whyWrong": "Copper and tin make bronze, the metal of statues, bells and medals. Brass uses zinc instead of tin."
         },
         {
           "id": "b",
           "text": "copper and zinc",
-          "why": "Brass is copper with zinc."
+          "why": "Brass is copper with zinc.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "iron and carbon",
-          "why": "Iron and carbon make steel."
+          "why": "Iron and carbon make steel.",
+          "whyWrong": "Iron and carbon make steel. Brass contains no iron."
         },
         {
           "id": "d",
           "text": "tin and lead",
-          "why": "Tin and lead make solder."
+          "why": "Tin and lead make solder.",
+          "whyWrong": "Tin and lead make soft solder, used for joining wires. It contains no copper at all."
         }
       ],
       "answerId": "b",
@@ -441,22 +469,26 @@
         {
           "id": "a",
           "text": "Na⁺",
-          "why": "Na⁺ gives a golden-yellow flame."
+          "why": "Na⁺ gives a golden-yellow flame.",
+          "whyWrong": "Sodium gives a strong golden-yellow flame, like street lamps, not red."
         },
         {
           "id": "b",
           "text": "K⁺",
-          "why": "K⁺ gives a lilac flame."
+          "why": "K⁺ gives a lilac flame.",
+          "whyWrong": "Potassium gives a lilac flame, best seen through blue cobalt glass."
         },
         {
           "id": "c",
           "text": "Ca²⁺",
-          "why": "Ca²⁺ gives a brick-red or orange-red flame."
+          "why": "Ca²⁺ gives a brick-red or orange-red flame.",
+          "whyWrong": null
         },
         {
           "id": "d",
           "text": "Ba²⁺",
-          "why": "Ba²⁺ gives an apple-green flame."
+          "why": "Ba²⁺ gives an apple-green flame.",
+          "whyWrong": "Barium gives an apple-green flame."
         }
       ],
       "answerId": "c",
@@ -502,22 +534,26 @@
         {
           "id": "a",
           "text": "it is a noble metal",
-          "why": "Aluminium is very reactive, not noble."
+          "why": "Aluminium is very reactive, not noble.",
+          "whyWrong": "Noble metals such as gold are unreactive. Aluminium is high in the reactivity series, so it is very reactive."
         },
         {
           "id": "b",
           "text": "it forms a protective oxide layer",
-          "why": "A thin, tough Al₂O₃ layer seals the surface."
+          "why": "A thin, tough Al₂O₃ layer seals the surface.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "it does not react with oxygen",
-          "why": "It reacts with oxygen instantly. That reaction forms the protective layer."
+          "why": "It reacts with oxygen instantly. That reaction forms the protective layer.",
+          "whyWrong": "Aluminium reacts with oxygen almost instantly. That very reaction forms the thin Al₂O₃ layer that then protects it."
         },
         {
           "id": "d",
           "text": "it is always alloyed with zinc",
-          "why": "Pure aluminium also resists corrosion."
+          "why": "Pure aluminium also resists corrosion.",
+          "whyWrong": "Pure aluminium also resists corrosion, so zinc cannot be the reason. The protection comes from its own oxide layer."
         }
       ],
       "answerId": "b",
@@ -563,22 +599,26 @@
         {
           "id": "a",
           "text": "oxygen only",
-          "why": "Dry oxygen alone does not rust iron."
+          "why": "Dry oxygen alone does not rust iron.",
+          "whyWrong": "Iron kept in dry air stays shiny. Rust is a hydrated oxide, Fe₂O₃·xH₂O, so water must be present too."
         },
         {
           "id": "b",
           "text": "water only",
-          "why": "Water without dissolved oxygen does not rust iron."
+          "why": "Water without dissolved oxygen does not rust iron.",
+          "whyWrong": "Iron in boiled water with no dissolved air does not rust. Oxygen must also be there."
         },
         {
           "id": "c",
           "text": "both oxygen and water",
-          "why": "Rusting needs oxygen and water together."
+          "why": "Rusting needs oxygen and water together.",
+          "whyWrong": null
         },
         {
           "id": "d",
           "text": "carbon dioxide only",
-          "why": "CO₂ alone does not cause rusting."
+          "why": "CO₂ alone does not cause rusting.",
+          "whyWrong": "Carbon(IV) oxide is not needed for rusting. The two essentials are oxygen and water together."
         }
       ],
       "answerId": "c",
@@ -624,22 +664,26 @@
         {
           "id": "a",
           "text": "[Ar] 3d⁴ 4s²",
-          "why": "Electrons were removed from 3d, but 4s electrons are lost first."
+          "why": "Electrons were removed from 3d, but 4s electrons are lost first.",
+          "whyWrong": "This removes the two electrons from 3d. When transition metals form ions they lose their 4s electrons first, so 3d⁶ stays."
         },
         {
           "id": "b",
           "text": "[Ar] 3d⁶",
-          "why": "Fe loses its two 4s electrons to form Fe²⁺."
+          "why": "Fe loses its two 4s electrons to form Fe²⁺.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "[Ar] 3d⁵",
-          "why": "This is Fe³⁺."
+          "why": "This is Fe³⁺.",
+          "whyWrong": "[Ar] 3d⁵ is Fe³⁺, which has lost three electrons. Fe²⁺ has lost only two."
         },
         {
           "id": "d",
           "text": "[Ar] 3d⁶ 4s²",
-          "why": "This is the neutral Fe atom."
+          "why": "This is the neutral Fe atom.",
+          "whyWrong": "This is the neutral iron atom. Fe²⁺ has lost two electrons, so the 4s² must be gone."
         }
       ],
       "answerId": "b",
@@ -685,22 +729,26 @@
         {
           "id": "a",
           "text": "tin",
-          "why": "Coating with tin is tin-plating."
+          "why": "Coating with tin is tin-plating.",
+          "whyWrong": "Coating iron with tin is tin-plating, used for food cans. Tin is less reactive than iron, so it does not protect a scratched surface."
         },
         {
           "id": "b",
           "text": "zinc",
-          "why": "Galvanising uses zinc, which corrodes in place of iron."
+          "why": "Galvanising uses zinc, which corrodes in place of iron.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "chromium",
-          "why": "Chromium is used in electroplating and stainless steel."
+          "why": "Chromium is used in electroplating and stainless steel.",
+          "whyWrong": "Chromium is used for chrome plating and in stainless steel, not for galvanising."
         },
         {
           "id": "d",
           "text": "copper",
-          "why": "Copper is below iron and would speed up rusting at a scratch."
+          "why": "Copper is below iron and would speed up rusting at a scratch.",
+          "whyWrong": "Copper is less reactive than iron. If the coating were scratched, the iron would corrode faster, not slower."
         }
       ],
       "answerId": "b",
@@ -746,22 +794,26 @@
         {
           "id": "a",
           "text": "Fe²⁺",
-          "why": "Fe²⁺ gives a green precipitate."
+          "why": "Fe²⁺ gives a green precipitate.",
+          "whyWrong": "Fe²⁺ gives a dirty green precipitate with ammonia, and it never forms a deep blue solution."
         },
         {
           "id": "b",
           "text": "Zn²⁺",
-          "why": "Zn²⁺ gives a white precipitate that dissolves to a colourless solution."
+          "why": "Zn²⁺ gives a white precipitate that dissolves to a colourless solution.",
+          "whyWrong": "Zn²⁺ gives a white precipitate that dissolves in excess ammonia, but the solution is colourless, not deep blue."
         },
         {
           "id": "c",
           "text": "Cu²⁺",
-          "why": "Cu²⁺ forms deep blue [Cu(NH₃)₄]²⁺ in excess ammonia."
+          "why": "Cu²⁺ forms deep blue [Cu(NH₃)₄]²⁺ in excess ammonia.",
+          "whyWrong": null
         },
         {
           "id": "d",
           "text": "Al³⁺",
-          "why": "Al³⁺ gives a white precipitate that does not dissolve in excess ammonia."
+          "why": "Al³⁺ gives a white precipitate that does not dissolve in excess ammonia.",
+          "whyWrong": "Al³⁺ gives a white precipitate that does not dissolve in excess ammonia."
         }
       ],
       "answerId": "c",
@@ -807,22 +859,26 @@
         {
           "id": "a",
           "text": "sodium chloride and calcium carbonate",
-          "why": "Ammonia is recycled, so only brine and limestone are used up."
+          "why": "Ammonia is recycled, so only brine and limestone are used up.",
+          "whyWrong": null
         },
         {
           "id": "b",
           "text": "sodium chloride and ammonia",
-          "why": "Ammonia is recovered and recycled."
+          "why": "Ammonia is recovered and recycled.",
+          "whyWrong": "Ammonia is used in the process, but it is recovered from ammonium chloride and sent back in, so it is not used up."
         },
         {
           "id": "c",
           "text": "ammonia and carbon(IV) oxide",
-          "why": "CO₂ comes from limestone and ammonia is recycled."
+          "why": "CO₂ comes from limestone and ammonia is recycled.",
+          "whyWrong": "Ammonia is recycled, and CO₂ is made inside the process by heating limestone. Neither is a raw material that runs out."
         },
         {
           "id": "d",
           "text": "sodium hydroxide and limestone",
-          "why": "NaOH is not a raw material in the Solvay process."
+          "why": "NaOH is not a raw material in the Solvay process.",
+          "whyWrong": "Sodium hydroxide is not used in the Solvay process. The sodium comes from brine, which is sodium chloride."
         }
       ],
       "answerId": "a",
@@ -868,22 +924,26 @@
         {
           "id": "a",
           "text": "carbon(IV) oxide",
-          "why": "CO₂ is tested with limewater."
+          "why": "CO₂ is tested with limewater.",
+          "whyWrong": "Carbon(IV) oxide is tested with limewater, which turns milky. It does not change copper(II) sulfate."
         },
         {
           "id": "b",
           "text": "water",
-          "why": "White anhydrous CuSO₄ turns blue when it absorbs water."
+          "why": "White anhydrous CuSO₄ turns blue when it absorbs water.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "oxygen",
-          "why": "Oxygen relights a glowing splint."
+          "why": "Oxygen relights a glowing splint.",
+          "whyWrong": "Oxygen is tested with a glowing splint, which relights."
         },
         {
           "id": "d",
           "text": "hydrogen",
-          "why": "Hydrogen gives a pop with a lighted splint."
+          "why": "Hydrogen gives a pop with a lighted splint.",
+          "whyWrong": "Hydrogen is tested with a lighted splint, which gives a squeaky pop."
         }
       ],
       "answerId": "b",
@@ -929,22 +989,26 @@
         {
           "id": "a",
           "text": "28 g",
-          "why": "This forgets that one Fe₂O₃ gives two Fe atoms."
+          "why": "This forgets that one Fe₂O₃ gives two Fe atoms.",
+          "whyWrong": "28 g treats one Fe₂O₃ as giving one Fe. The formula has two iron atoms, so 0.5 mol of Fe₂O₃ gives 1 mol of Fe, which is 56 g."
         },
         {
           "id": "b",
           "text": "56 g",
-          "why": "0.5 mol Fe₂O₃ gives 1 mol Fe, which is 56 g."
+          "why": "0.5 mol Fe₂O₃ gives 1 mol Fe, which is 56 g.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "112 g",
-          "why": "This doubles the moles of Fe twice."
+          "why": "This doubles the moles of Fe twice.",
+          "whyWrong": "112 g is 2 mol of iron. That would need 1 mol of Fe₂O₃ (160 g), but only 80 g was used."
         },
         {
           "id": "d",
           "text": "40 g",
-          "why": "This halves the mass instead of working in moles."
+          "why": "This halves the mass instead of working in moles.",
+          "whyWrong": "40 g comes from simply halving 80 g. Masses of different substances cannot be compared directly. Change grams to moles first, then use the ratio."
         }
       ],
       "answerId": "b",
@@ -990,22 +1054,26 @@
         {
           "id": "a",
           "text": "0.1 mol",
-          "why": "This uses the wrong molar mass."
+          "why": "This uses the wrong molar mass.",
+          "whyWrong": "0.1 mol would be 2.3 g of sodium. It usually comes from using 46 as the molar mass instead of 23."
         },
         {
           "id": "b",
           "text": "0.2 mol",
-          "why": "4.6 ÷ 23 = 0.2 mol."
+          "why": "4.6 ÷ 23 = 0.2 mol.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "2.0 mol",
-          "why": "This divides 46 by 23. Check the decimal point."
+          "why": "This divides 46 by 23. Check the decimal point.",
+          "whyWrong": "2.0 mol would be 46 g of sodium. It comes from reading 4.6 as 46, so check the decimal point."
         },
         {
           "id": "d",
           "text": "5.0 mol",
-          "why": "This divides 23 by 4.6, which is upside down."
+          "why": "This divides 23 by 4.6, which is upside down.",
+          "whyWrong": "5.0 comes from dividing 23 by 4.6, which is upside down. Moles = mass ÷ molar mass, so 4.6 goes on top."
         }
       ],
       "answerId": "b",
@@ -1051,22 +1119,26 @@
         {
           "id": "a",
           "text": "68",
-          "why": "This counts only one oxygen."
+          "why": "This counts only one oxygen.",
+          "whyWrong": "68 counts only one oxygen, 40 + 12 + 16. The 3 in CaCO₃ means three oxygens."
         },
         {
           "id": "b",
           "text": "84",
-          "why": "This counts two oxygens. CaCO₃ has three."
+          "why": "This counts two oxygens. CaCO₃ has three.",
+          "whyWrong": "84 counts two oxygens. CaCO₃ has three, which add 48, not 32."
         },
         {
           "id": "c",
           "text": "100",
-          "why": "40 + 12 + 3(16) = 100."
+          "why": "40 + 12 + 3(16) = 100.",
+          "whyWrong": null
         },
         {
           "id": "d",
           "text": "116",
-          "why": "This counts four oxygens."
+          "why": "This counts four oxygens.",
+          "whyWrong": "116 counts four oxygens. CaCO₃ has only three."
         }
       ],
       "answerId": "c",
@@ -1112,22 +1184,26 @@
         {
           "id": "a",
           "text": "2.24 dm³",
-          "why": "This is the volume of 0.1 mol."
+          "why": "This is the volume of 0.1 mol.",
+          "whyWrong": "2.24 dm³ is the volume of 0.1 mol. Here there is 0.25 mol, so multiply 0.25 by 22.4."
         },
         {
           "id": "b",
           "text": "5.6 dm³",
-          "why": "0.25 × 22.4 = 5.6 dm³."
+          "why": "0.25 × 22.4 = 5.6 dm³.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "11.2 dm³",
-          "why": "This is the volume of 0.5 mol."
+          "why": "This is the volume of 0.5 mol.",
+          "whyWrong": "11.2 dm³ is the volume of 0.5 mol, twice the amount given."
         },
         {
           "id": "d",
           "text": "89.6 dm³",
-          "why": "This divides 22.4 by 0.25 instead of multiplying."
+          "why": "This divides 22.4 by 0.25 instead of multiplying.",
+          "whyWrong": "89.6 comes from dividing 22.4 by 0.25. Less gas must take up less space, so multiply instead."
         }
       ],
       "answerId": "b",
@@ -1173,22 +1249,26 @@
         {
           "id": "a",
           "text": "22 g",
-          "why": "22 g is the mass of CO₂ given off, not CaO."
+          "why": "22 g is the mass of CO₂ given off, not CaO.",
+          "whyWrong": "22 g is the mass of carbon(IV) oxide given off. The question asks for calcium oxide, the solid left behind."
         },
         {
           "id": "b",
           "text": "28 g",
-          "why": "0.5 mol CaCO₃ gives 0.5 mol CaO, which is 28 g."
+          "why": "0.5 mol CaCO₃ gives 0.5 mol CaO, which is 28 g.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "50 g",
-          "why": "Mass is lost as CO₂, so CaO must be less than 50 g."
+          "why": "Mass is lost as CO₂, so CaO must be less than 50 g.",
+          "whyWrong": "Heating releases CO₂ gas, so the solid left must weigh less than the original 50 g."
         },
         {
           "id": "d",
           "text": "56 g",
-          "why": "56 g is one whole mole of CaO."
+          "why": "56 g is one whole mole of CaO.",
+          "whyWrong": "56 g is one whole mole of CaO. Only half a mole of CaCO₃ was heated, so only half a mole of CaO forms."
         }
       ],
       "answerId": "b",
@@ -1234,22 +1314,26 @@
         {
           "id": "a",
           "text": "0.1 mol/dm³",
-          "why": "0.1 mol is the amount, not the concentration. Divide by the volume."
+          "why": "0.1 mol is the amount, not the concentration. Divide by the volume.",
+          "whyWrong": "0.1 mol is the amount of NaOH, not its concentration. Divide by the volume, 0.5 dm³, to get mol/dm³."
         },
         {
           "id": "b",
           "text": "0.2 mol/dm³",
-          "why": "0.1 mol ÷ 0.5 dm³ = 0.2 mol/dm³."
+          "why": "0.1 mol ÷ 0.5 dm³ = 0.2 mol/dm³.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "2.0 mol/dm³",
-          "why": "Check the volume conversion. 500 cm³ is 0.5 dm³."
+          "why": "Check the volume conversion. 500 cm³ is 0.5 dm³.",
+          "whyWrong": "2.0 comes from dividing by 0.05 instead of 0.5. 500 cm³ is 0.5 dm³."
         },
         {
           "id": "d",
           "text": "8.0 mol/dm³",
-          "why": "This divides grams by dm³ without finding moles."
+          "why": "This divides grams by dm³ without finding moles.",
+          "whyWrong": "8.0 divides grams by volume without changing to moles first. Concentration in mol/dm³ needs moles on top."
         }
       ],
       "answerId": "b",
@@ -1295,22 +1379,26 @@
         {
           "id": "a",
           "text": "17.5%",
-          "why": "This counts only one nitrogen. NH₄NO₃ has two."
+          "why": "This counts only one nitrogen. NH₄NO₃ has two.",
+          "whyWrong": "17.5% counts only one nitrogen. NH₄NO₃ has one N in the ammonium part and another in the nitrate part."
         },
         {
           "id": "b",
           "text": "35%",
-          "why": "28 ÷ 80 × 100 = 35%."
+          "why": "28 ÷ 80 × 100 = 35%.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "60%",
-          "why": "This is the percentage of oxygen."
+          "why": "This is the percentage of oxygen.",
+          "whyWrong": "60% is the percentage of oxygen (48 ÷ 80), not nitrogen."
         },
         {
           "id": "d",
           "text": "46.7%",
-          "why": "This uses a wrong molar mass."
+          "why": "This uses a wrong molar mass.",
+          "whyWrong": "46.7% is the percentage of nitrogen in urea. For ammonium nitrate the molar mass is 80, which gives 35%."
         }
       ],
       "answerId": "b",
@@ -1356,22 +1444,26 @@
         {
           "id": "a",
           "text": "3.2 g",
-          "why": "This uses 4 electrons per Cu²⁺."
+          "why": "This uses 4 electrons per Cu²⁺.",
+          "whyWrong": "3.2 g treats each Cu²⁺ as needing four electrons. It needs two, so 0.2 mol of electrons deposits 0.1 mol of copper."
         },
         {
           "id": "b",
           "text": "6.4 g",
-          "why": "Cu²⁺ + 2e⁻ → Cu, so 0.2 mol e⁻ gives 0.1 mol Cu, which is 6.4 g."
+          "why": "Cu²⁺ + 2e⁻ → Cu, so 0.2 mol e⁻ gives 0.1 mol Cu, which is 6.4 g.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "12.8 g",
-          "why": "This forgets that each Cu²⁺ needs two electrons."
+          "why": "This forgets that each Cu²⁺ needs two electrons.",
+          "whyWrong": "12.8 g assumes one electron deposits one copper atom. Cu²⁺ has a 2+ charge, so each atom needs two electrons."
         },
         {
           "id": "d",
           "text": "64 g",
-          "why": "This is one whole mole of copper."
+          "why": "This is one whole mole of copper.",
+          "whyWrong": "64 g is a whole mole of copper, which needs 2 mol of electrons. Only 0.2 mol passed."
         }
       ],
       "answerId": "b",
@@ -1417,22 +1509,26 @@
         {
           "id": "a",
           "text": "50 cm³",
-          "why": "This divides by 4 instead of 2."
+          "why": "This divides by 4 instead of 2.",
+          "whyWrong": "50 cm³ divides by 4 instead of 2. Doubling the pressure only halves the volume."
         },
         {
           "id": "b",
           "text": "100 cm³",
-          "why": "Boyle's law. P₁V₁ = P₂V₂, so V₂ = 1 × 200 ÷ 2 = 100 cm³."
+          "why": "Boyle's law. P₁V₁ = P₂V₂, so V₂ = 1 × 200 ÷ 2 = 100 cm³.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "200 cm³",
-          "why": "The volume must change when the pressure changes."
+          "why": "The volume must change when the pressure changes.",
+          "whyWrong": "At constant temperature the volume must change when the pressure changes. Keeping it the same ignores Boyle's law."
         },
         {
           "id": "d",
           "text": "400 cm³",
-          "why": "This multiplies by the pressure. Higher pressure squeezes the gas smaller."
+          "why": "This multiplies by the pressure. Higher pressure squeezes the gas smaller.",
+          "whyWrong": "400 cm³ means the gas grew when squeezed harder. Pressure and volume are inversely related, so more pressure means less volume."
         }
       ],
       "answerId": "b",
@@ -1478,22 +1574,26 @@
         {
           "id": "a",
           "text": "1",
-          "why": "pH 1 matches 0.1 mol/dm³ H⁺."
+          "why": "pH 1 matches 0.1 mol/dm³ H⁺.",
+          "whyWrong": "pH 1 is for 0.1 mol/dm³ acid, which is 10⁻¹. This acid is ten times weaker, 0.01 = 10⁻², so the pH is 2."
         },
         {
           "id": "b",
           "text": "2",
-          "why": "[H⁺] = 0.01 = 10⁻², so pH = 2."
+          "why": "[H⁺] = 0.01 = 10⁻², so pH = 2.",
+          "whyWrong": null
         },
         {
           "id": "c",
           "text": "12",
-          "why": "pH 12 is alkaline. HCl is an acid."
+          "why": "pH 12 is alkaline. HCl is an acid.",
+          "whyWrong": "pH 12 is alkaline. It is the pH of 0.01 mol/dm³ sodium hydroxide, not hydrochloric acid."
         },
         {
           "id": "d",
           "text": "0.01",
-          "why": "pH is the negative log, not the concentration itself."
+          "why": "pH is the negative log, not the concentration itself.",
+          "whyWrong": "0.01 is the hydrogen ion concentration, not the pH. pH is the negative log of that number."
         }
       ],
       "answerId": "b",

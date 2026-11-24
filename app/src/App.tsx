@@ -2,6 +2,7 @@ import { useEffect, useState } from 'preact/hooks'
 import { LogPage } from './components/share/LogPage'
 import { Home } from './screens/Home'
 import { Session } from './screens/Session'
+import { Subjects } from './screens/Subjects'
 import { Summary } from './screens/Summary'
 
 function readRoute() {
@@ -18,6 +19,8 @@ export function App() {
   }, [])
 
   switch (route) {
+    case '#/subjects':
+      return <Subjects />
     case '#/q':
       return <Session />
     case '#/done':

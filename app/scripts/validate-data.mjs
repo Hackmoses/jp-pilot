@@ -30,6 +30,15 @@ if (questionsFile) {
     if (!optionIds.has(question.answerId)) {
       errors.push(`${question.id}: answerId ${question.answerId} is missing from options`)
     }
+    for (const option of question.options) {
+      if (option.id === question.answerId) {
+        if (option.whyWrong !== null) {
+          errors.push(`${question.id}: correct option ${option.id} must have whyWrong: null`)
+        }
+      } else if (typeof option.whyWrong !== 'string' || option.whyWrong.trim().length === 0) {
+        errors.push(`${question.id}: wrong option ${option.id} must have non-empty whyWrong text`)
+      }
+    }
     if (question.removeOrder.includes(question.answerId)) {
       errors.push(`${question.id}: removeOrder contains the answer`)
     }

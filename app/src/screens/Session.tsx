@@ -12,6 +12,7 @@ import {
   getNextRemovalId,
   makeOptionSeed,
   parseQuestionIdFromHash,
+  parseSubjectFromHash,
   summarizeSession,
 } from '../components/question/logic'
 import {
@@ -20,25 +21,33 @@ import {
 } from '../components/question/sessionState'
 import { shuffleOptions } from '../lib/shuffle'
 import { getProgress, logEvent, recordAnswer } from '../lib/store'
+import { getSubject } from '../lib/subjects'
 import type { OptionId } from '../lib/types'
 
 interface SessionInit {
   queue: ReturnType<typeof buildSessionQueue>
+  requestedSubject: string | null
   startedAt: number
 }
 
-function startSession(requestedId: string | null): SessionInit {
-  const queue = buildSessionQueue(requestedId, 10)
-  logEvent('session_start', {
-    count: queue.length,
-    questionIds: queue.map(({ question }) => question.id).join(','),
-  })
-  return { queue, startedAt: Date.now() }
+function startSession(requestedId: string | null, requestedSubject: string | null): SessionInit {
+  const queue = buildSessionQueue(requestedId, 10, requestedSubject)
+  if (queue.length > 0) {
+    logEvent('session_start', {
+      count: queue.length,
+      questionIds: queue.map(({ question }) => question.id).join(','),
+    })
+  }
+  return { queue, requestedSubject, startedAt: Date.now() }
 }
 
 export function Session() {
-  const [{ queue, startedAt }, setSession] = useState<SessionInit>(
-    () => startSession(parseQuestionIdFromHash(window.location.hash)),
+  const [{ queue, requestedSubject, startedAt }, setSession] = useState<SessionInit>(
+    () =>
+      startSession(
+        parseQuestionIdFromHash(window.location.hash),
+        parseSubjectFromHash(window.location.hash),
+      ),
   )
   const [index, setIndex] = useState(0)
   const [records, setRecords] = useState<SessionRecord[]>([])
@@ -73,11 +82,13 @@ export function Session() {
   useEffect(() => {
     const onHashChange = () => {
       const requestedId = parseQuestionIdFromHash(window.location.hash)
-      if (!requestedId) return
+      const nextSubject = parseSubjectFromHash(window.location.hash)
+      if (!requestedId && !nextSubject) return
       const current = queue[index]?.question
-      if (current && current.id === requestedId) return
+      if (requestedId && current?.id === requestedId) return
+      if (!requestedId && nextSubject && nextSubject === requestedSubject && queue.length > 0) return
 
-      setSession(startSession(requestedId))
+      setSession(startSession(requestedId, nextSubject))
       setIndex(0)
       setRecords([])
       setPickedId(null)
@@ -91,7 +102,7 @@ export function Session() {
 
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
-  }, [queue, index])
+  }, [queue, index, requestedSubject])
 
   const entry = queue[index]
   const question = entry?.question
@@ -241,19 +252,31 @@ export function Session() {
   }, [question, answered, options, removedIds, handlePick, handleToggleHint, advance])
 
   if (!question) {
+    const blockedSubject = requestedSubject ? getSubject(requestedSubject) : undefined
+    const isComingSoon = Boolean(blockedSubject && !blockedSubject.available)
     return (
       <main class="jp-screen">
         <div class="jp-home">
-          <h1 class="jp-app-title">No questions found</h1>
-          <p class="jp-pitch">Please return home to start a new practice session.</p>
-          <a class="jp-btn jp-btn--primary jp-btn--full" href="#/">
-            Back home
+          <h1 class="jp-app-title">
+            {isComingSoon ? `${blockedSubject!.name} is coming soon` : 'No questions found'}
+          </h1>
+          <p class="jp-pitch">
+            {isComingSoon
+              ? 'This subject is coming soon. Chemistry is ready now.'
+              : 'Pick an open subject to start a 10-question practice session.'}
+          </p>
+          <a class="jp-btn jp-btn--primary jp-btn--full" href="#/q?subject=chemistry">
+            Start Chemistry
+          </a>
+          <a class="jp-link-btn" href="#/subjects">
+            Choose a subject
           </a>
         </div>
       </main>
     )
   }
 
+  const subjectName = getSubject(question.subject)?.name ?? 'Chemistry'
   const sessionAnswered =
     records.filter((record) => !record.skipped).length + (answered ? 1 : 0)
   const sessionCorrect =
@@ -318,7 +341,7 @@ export function Session() {
         <div class="jp-topbar-inner">
           <div class="jp-brand-group">
             <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
-            <span class="jp-topic jp-hide-sm">Chemistry · {question.topic}</span>
+            <span class="jp-topic jp-hide-sm">{subjectName} · {question.topic}</span>
           </div>
           <div class="jp-progress-group">
             <span class="jp-counter">

@@ -1,5 +1,6 @@
-import { getQuestion, getQuestions } from '../../lib/data'
+import { getQuestion, getQuestionsBySubject } from '../../lib/data'
 import { getDueQuestionIds } from '../../lib/store'
+import { getSubject } from '../../lib/subjects'
 import type { Option, OptionId, Question } from '../../lib/types'
 import type { SessionRecord, SessionSummary } from './sessionState'
 
@@ -130,12 +131,32 @@ export function parseQuestionIdFromHash(hash: string): string | null {
   return id && id.trim().length > 0 ? id.trim() : null
 }
 
+export function parseSubjectFromHash(hash: string): string | null {
+  const queryIndex = hash.indexOf('?')
+  if (queryIndex === -1) return null
+  const params = new URLSearchParams(hash.slice(queryIndex + 1))
+  const subject = params.get('subject')
+  return subject && subject.trim().length > 0 ? subject.trim().toLowerCase() : null
+}
+
 export function buildSessionQueue(
   requestedId: string | null,
   limit = 10,
+  subject?: string | null,
 ): { question: Question; review: boolean }[] {
   if (!(limit > 0)) return []
-  const entries = getDueQuestionIds(requestedId ? getQuestions().length : limit)
+  const requestedQuestion = requestedId ? getQuestion(requestedId) : undefined
+  const activeSubject = requestedQuestion?.subject ?? subject ?? 'chemistry'
+  const subjectInfo = getSubject(activeSubject)
+  if (!subjectInfo || !subjectInfo.available) return []
+
+  const subjectQuestions = getQuestionsBySubject(subjectInfo.id)
+  if (subjectQuestions.length === 0) return []
+
+  const entries = getDueQuestionIds(
+    requestedId ? subjectQuestions.length : limit,
+    subjectInfo.id,
+  )
   const pinnedIndex = entries.findIndex(({ id }) => id === requestedId)
   if (pinnedIndex > 0) {
     const [pinned] = entries.splice(pinnedIndex, 1)
