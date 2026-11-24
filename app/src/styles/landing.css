@@ -24,7 +24,7 @@
   box-sizing: border-box;
 }
 
-.landing :is(h1, h2, p) {
+:where(.landing) :where(h1, h2, p) {
   margin: 0;
 }
 
@@ -187,7 +187,7 @@
   margin-top: 10px;
   font-family: var(--font-display);
   font-size: clamp(26px, 3.6vw, 52px);
-  line-height: 1.07;
+  line-height: 1.12;
   letter-spacing: -0.03em;
   font-weight: 800;
   text-wrap: balance;
@@ -199,7 +199,7 @@
   max-width: 50ch;
   color: var(--landing-muted);
   font-size: clamp(14.5px, 1.15vw, 17.5px);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .landing-intro .landing-actions {
@@ -817,24 +817,24 @@
   }
 
   .landing h1 {
-    margin-top: clamp(8px, 1.2dvh, 14px);
+    margin-top: clamp(10px, 1.5dvh, 16px);
     max-width: 18ch;
     font-size: clamp(34px, 3.85vw, 62px);
   }
 
   .landing-pitch {
-    margin-top: clamp(12px, 1.8dvh, 20px);
+    margin-top: clamp(14px, 2.2dvh, 22px);
     max-width: 52ch;
     font-size: clamp(15px, 1.2vw, 19px);
   }
 
   .landing-intro .landing-actions {
-    margin-top: clamp(18px, 2.8dvh, 32px);
+    margin-top: clamp(20px, 3dvh, 32px);
     gap: 10px;
   }
 
   .landing-details {
-    margin-top: clamp(12px, 1.8dvh, 20px);
+    margin-top: clamp(14px, 2dvh, 20px);
   }
 
   .landing-feature-list {
