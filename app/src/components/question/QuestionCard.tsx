@@ -1,3 +1,4 @@
+import type { ComponentChildren } from 'preact'
 import type { Option, OptionId, Question } from '../../lib/types'
 import { ReadAloudButton } from '../share/ReadAloudButton'
 import { OPTION_LETTERS, getOptionViewState, getRemoveButtonLabel, getResultCopy } from './logic'
@@ -14,6 +15,7 @@ export interface QuestionCardProps {
   onRemoveOption?: () => void
   removalsLeft?: number
   showRemoveButton?: boolean
+  calculationSlot?: ComponentChildren
 }
 
 export function QuestionCard({
@@ -28,6 +30,7 @@ export function QuestionCard({
   onRemoveOption,
   removalsLeft = 0,
   showRemoveButton = false,
+  calculationSlot,
 }: QuestionCardProps) {
   const answered = pickedId !== null
   const isCorrect = answered && pickedId === question.answerId
@@ -175,6 +178,8 @@ export function QuestionCard({
           </>
         )}
       </section>
+
+      {answered && calculationSlot}
 
       {answered && (
         <section class="jp-card jp-explain-card" aria-label={`Why ${correctLetter} is correct`}>

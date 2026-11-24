@@ -261,7 +261,15 @@ export function Session() {
     (answered && pickedId === question.answerId ? 1 : 0)
   const removalsLeft = Math.max(0, question.removeOrder.length - removedIds.length)
   const progressPercent = Math.round(((index + 1) / queue.length) * 100)
-  const showRightCol = answered && (Boolean(question.animationId) || (isWide && desktopAskOpen))
+  const showRightCol = answered && isWide && (Boolean(question.animationId) || desktopAskOpen)
+  const calculationPlayer = question.animationId ? (
+    <SolutionPlayer
+      animationId={question.animationId}
+      open={calcOpen}
+      onToggleOpen={() => setCalcOpen((prev) => !prev)}
+      playSignal={playSignal}
+    />
+  ) : null
 
   const handleRemoveOption = () => {
     if (pickedId !== null) return
@@ -346,19 +354,13 @@ export function Session() {
             onRemoveOption={handleRemoveOption}
             removalsLeft={removalsLeft}
             showRemoveButton={true}
+            calculationSlot={!isWide ? calculationPlayer : undefined}
           />
         </div>
 
         {showRightCol && (
           <div class="jp-right-col">
-            {question.animationId && (
-              <SolutionPlayer
-                animationId={question.animationId}
-                open={calcOpen}
-                onToggleOpen={() => setCalcOpen((prev) => !prev)}
-                playSignal={playSignal}
-              />
-            )}
+            {isWide && calculationPlayer}
             {isWide && desktopAskOpen && (
               <AskPanel
                 questionId={question.id}
