@@ -42,11 +42,6 @@
   gap: 10px;
 }
 
-.landing-brand {
-  font-size: 17px;
-  font-weight: 700;
-}
-
 .landing-logo {
   display: grid;
   place-items: center;
@@ -120,10 +115,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-2);
+  gap: 6px;
   min-width: var(--tap-min);
   min-height: var(--tap-min);
-  padding: 4px 10px;
+  padding: 2px 8px;
   border: 1px solid var(--landing-border);
   border-radius: var(--radius-small);
   background: var(--bg);
@@ -149,7 +144,7 @@
 
 .landing-sign-in {
   flex: none;
-  padding-inline: var(--space-3);
+  padding-inline: 8px;
   color: var(--brand);
   font-size: 14px;
 }
@@ -503,6 +498,34 @@
   margin-block: var(--space-2) var(--space-5);
 }
 
+.landing-footer {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1376px;
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+  border-top: 1px solid #e2e8f0;
+}
+
+.landing-copyright {
+  min-width: var(--tap-min);
+  min-height: var(--tap-min);
+  padding: 0 10px;
+  border: 0;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--landing-muted);
+  font: 500 13px/1.4 var(--font-system);
+  cursor: pointer;
+}
+
+.landing-copyright:hover {
+  color: var(--brand);
+  text-decoration: underline;
+}
+
 @media (width >= 900px), (width >= 680px) and (height < 820px) {
   .landing-main {
     grid-template-columns: minmax(0, 520px) minmax(308px, 340px);
@@ -546,7 +569,7 @@
     align-content: stretch;
     gap: 0 clamp(32px, 4vw, 72px);
     min-height: 0;
-    padding-block: 16px 20px;
+    padding-block: 12px;
   }
 
   .landing-demo {
@@ -597,7 +620,7 @@
 
   .landing-phone {
     width: min(100%, 440px);
-    height: clamp(400px, 65dvh, 700px);
+    height: clamp(380px, 53dvh, 590px);
   }
 
   .landing-slide {
@@ -630,7 +653,7 @@
 
 @media (width < 640px) {
   .landing {
-    --landing-phone-height: clamp(270px, calc(100dvh - 470px), 520px);
+    --landing-phone-height: clamp(270px, calc(100dvh - 522px), 400px);
   }
 
   .landing-header, .landing-main {
@@ -647,6 +670,52 @@
 
   .landing-pilot, .landing-pitch {
     display: none;
+  }
+}
+
+@media (640px <= width < 900px) and (height >= 820px) {
+  .landing {
+    --landing-phone-height: clamp(320px, calc(48dvh - 70px), 420px);
+  }
+
+  .landing-main {
+    grid-template-columns: minmax(0, 600px);
+    align-content: start;
+    row-gap: var(--space-6);
+    padding-top: var(--space-5);
+  }
+
+  .landing-phone {
+    width: min(100%, 480px);
+  }
+
+  .landing h1 {
+    font-size: clamp(32px, 5.3vw, 40px);
+    max-width: 23ch;
+  }
+
+  .landing-pitch {
+    font-size: 16px;
+  }
+
+  .landing-slide h2 {
+    font-size: 20px;
+  }
+}
+
+@media (width < 900px) and (height >= 820px) {
+  .landing-main {
+    flex: none;
+    align-content: start;
+    padding-top: var(--space-3);
+  }
+
+  .landing-slide {
+    justify-content: center;
+  }
+
+  .landing-slide .landing-caption {
+    margin-top: 0;
   }
 }
 
@@ -773,8 +842,8 @@
   }
 
   .landing-intro .landing-actions {
-    align-items: stretch;
-    flex-direction: column;
+    display: grid;
+    justify-content: start;
     gap: var(--space-3);
   }
 
