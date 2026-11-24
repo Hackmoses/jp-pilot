@@ -528,6 +528,95 @@
   }
 }
 
+@media (width >= 1024px) and (height >= 680px) {
+  .landing {
+    --landing-desktop-gutter: clamp(24px, 3vw, 44px);
+    --landing-phone-height: clamp(336px, 44dvh, 460px);
+  }
+
+  .landing-header, .landing-main {
+    max-width: 1376px;
+    padding-inline: var(--landing-desktop-gutter);
+  }
+
+  .landing-main {
+    grid-template-columns: minmax(0, 1.65fr) minmax(320px, 1fr);
+    align-content: start;
+    column-gap: clamp(40px, 5vw, 88px);
+    row-gap: clamp(20px, 3dvh, 32px);
+    padding-top: clamp(32px, 7dvh, 84px);
+  }
+
+  .landing-intro, .landing-demo {
+    align-self: start;
+  }
+
+  .landing-intro {
+    gap: clamp(14px, 2dvh, 20px);
+  }
+
+  .landing h1 {
+    max-width: 20ch;
+    font-size: clamp(40px, 3.65vw, 62px);
+  }
+
+  .landing-pitch {
+    max-width: 55ch;
+    font-size: clamp(16px, 1.25vw, 19px);
+  }
+
+  .landing-intro .landing-actions {
+    gap: 12px;
+  }
+
+  .landing-intro .landing-action {
+    min-height: 48px;
+    padding-inline: 16px;
+  }
+
+  .landing-feature-list {
+    gap: 10px;
+  }
+
+  .landing-feature {
+    gap: 10px;
+    min-height: 54px;
+    padding: 7px 10px;
+  }
+
+  .landing-feature-copy {
+    font-size: 12px;
+  }
+
+  .landing-feature-copy strong {
+    font-size: clamp(14px, 1.05vw, 16px);
+  }
+
+  .landing-phone {
+    width: min(100%, clamp(310px, 25vw, 380px));
+  }
+
+  .landing-slide {
+    padding-inline: clamp(18px, 1.6vw, 24px);
+  }
+
+  .landing-slide h2 {
+    font-size: 19px;
+  }
+
+  .landing-answer {
+    font-size: clamp(11px, .8vw, 13px);
+  }
+
+  .landing-answer strong, .landing-options > * {
+    font-size: clamp(13px, .9vw, 15px);
+  }
+
+  .landing-slide .landing-caption {
+    font-size: 13px;
+  }
+}
+
 @media (width < 640px) {
   .landing {
     --landing-phone-height: clamp(270px, calc(100dvh - 452px), 500px);
