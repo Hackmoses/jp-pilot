@@ -10,6 +10,12 @@ export type SubjectManifest = Record<string, SubjectManifestEntry>
 
 export const COMPLETE_QUESTIONS_ONLY = true
 
+// Pilot switch: limit a subject to these questions while a new design is tested.
+// Delete a subject's line to show all of its complete questions again.
+export const PILOT_QUESTION_IDS: Record<string, string[]> = {
+  mathematics: ['math-jamb-0005', 'math-jamb-0007', 'math-jamb-0010'],
+}
+
 export function isCompleteQuestion(question: Question, animation?: Animation): boolean {
   // Complete = has a Teach me lesson: a concept lesson, or a calculation with both Teach me and Quick.
   // A chapter tag is optional; untagged questions are grouped by topic. Must match sync-data.mjs.
@@ -119,8 +125,14 @@ export async function loadSubject(subject: string): Promise<boolean> {
       const source = qFile.questions ?? []
       const byId = new Map(anims.map((animation) => [animation.id, animation]))
       for (const question of source) sharedQuestionsById.set(question.id, question)
-      registerSubjectData(normalized, COMPLETE_QUESTIONS_ONLY ? source.filter((question) =>
-        isCompleteQuestion(question, byId.get(question.animationId ?? ''))) : source, anims)
+      let shown = COMPLETE_QUESTIONS_ONLY ? source.filter((question) =>
+        isCompleteQuestion(question, byId.get(question.animationId ?? ''))) : source
+      const pilot = PILOT_QUESTION_IDS[normalized]
+      if (pilot) {
+        const kept = shown.filter((question) => pilot.includes(question.id))
+        if (kept.length) shown = kept
+      }
+      registerSubjectData(normalized, shown, anims)
       return true
     } catch {
       return false
