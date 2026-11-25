@@ -110,11 +110,7 @@ function AskContent({
       <div class={answered ? 'jp-ask-body jp-ask-body--chat' : 'jp-ask-body'}>
         {!question && <p>Question unavailable.</p>}
         {question && !answered && (
-          <div class="jp-ask-hint">
-            <span class="jp-ask-kicker">Hint</span>
-            <p>{renderFormattedText(question.hint)}</p>
-            <p class="jp-ask-hint-note">Saved answers unlock after you answer the question.</p>
-          </div>
+          <p class="jp-ask-hint-note">Saved answers unlock after you answer the question.</p>
         )}
         {question && answered && (
           <>

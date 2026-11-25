@@ -3,7 +3,6 @@ export interface SessionRecord {
   topic: string
   correct: boolean
   skipped: boolean
-  removedCount: number
 }
 
 export interface MissedTopic {

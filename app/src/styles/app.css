@@ -503,11 +503,20 @@ body {
 }
 
 .jp-subbox--trap {
-  background: var(--trap-soft);
+  background: var(--bad-soft);
+  border: 2px solid var(--bad);
 }
 
 .jp-subbox--trap .jp-subbox-label {
-  color: var(--trap);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: var(--bad);
+}
+
+.jp-subbox--trap .jp-subbox-label svg {
+  flex: none;
 }
 
 .jp-subbox--memo {

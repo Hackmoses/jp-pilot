@@ -13,12 +13,11 @@ registerSubjectData(
 let store: typeof import('./store')
 const storage = new Map<string, string>()
 
-function answer(questionId: string, correct: boolean, removedCount = 0, day = 7) {
+function answer(questionId: string, correct: boolean, day = 7) {
   store.recordAnswer({
     questionId,
     pickedId: 'a',
     correct,
-    removedCount,
     at: new Date(2026, 2, day, 12).getTime(),
   })
 }
@@ -52,9 +51,9 @@ describe('progress', () => {
       answered: 0, correct: 0, streakDays: 0, lastActiveDay: null,
     })
     answer('chem-001', true)
-    answer('chem-002', false, 0, 8)
-    answer('chem-003', true, 1, 8)
-    answer('chem-004', true, 0, 9)
+    answer('chem-002', false, 8)
+    answer('chem-003', true, 8)
+    answer('chem-004', true, 9)
 
     vi.resetModules()
     const data2 = await import('./data')
@@ -68,7 +67,7 @@ describe('progress', () => {
       answered: 4, correct: 3, streakDays: 3, lastActiveDay: '2026-03-09',
     })
 
-    answer('chem-001', true, 0, 11)
+    answer('chem-001', true, 11)
     expect(store.getProgress().streakDays).toBe(1)
   })
 
@@ -105,16 +104,13 @@ describe('question memory', () => {
     expect(store.getDueQuestionIds(0)).toEqual([])
   })
 
-  it('prioritizes wrong and assisted answers in the next session over unseen questions', () => {
+  it('prioritizes wrong answers in the next session over unseen questions', () => {
     store.logEvent('session_start')
     answer('chem-009', false)
-    answer('chem-020', true, 1)
     answer('chem-017', true)
 
-    // Priority items come first; their order within the group is randomised.
-    expect([...store.getDueQuestionIds(2)].sort((a, b) => a.id.localeCompare(b.id))).toEqual([
+    expect(store.getDueQuestionIds(1)).toEqual([
       { id: 'chem-009', review: false },
-      { id: 'chem-020', review: false },
     ])
     const cleanEntry = () => store.getDueQuestionIds(25).find(({ id }) => id === 'chem-017')
     expect(cleanEntry()?.review).toBe(true)
@@ -122,9 +118,9 @@ describe('question memory', () => {
     expect(cleanEntry()?.review).toBe(true)
     store.logEvent('session_start')
     expect(cleanEntry()?.review).toBe(false)
-    const thirdItem = store.getDueQuestionIds(3)[2]
-    expect(thirdItem.review).toBe(false)
-    expect(getQuestion(thirdItem.id)?.type).toBe('recall')
+    const secondItem = store.getDueQuestionIds(2)[1]
+    expect(secondItem.review).toBe(false)
+    expect(getQuestion(secondItem.id)?.type).toBe('recall')
   })
 
   it('uses the most recent answer to schedule the next review', () => {
@@ -161,7 +157,7 @@ describe('question memory', () => {
     answer('chem-001', true)
     answer('chem-002', true)
     startSession(store.getDueQuestionIds(25))
-    answer('chem-001', true, 1)
+    answer('chem-001', true)
     answer('chem-002', false)
 
     const third = store.getDueQuestionIds(25)
@@ -208,7 +204,6 @@ describe('question memory', () => {
           questionId: id,
           pickedId: 'a',
           correct: true,
-          removedCount: 0,
           at: Date.now(),
         })
       }
@@ -219,7 +214,7 @@ describe('question memory', () => {
 
 describe('event log', () => {
   it('persists the newest 500 events in order', async () => {
-    for (let i = 0; i < 502; i++) store.logEvent('hint_open', { i })
+    for (let i = 0; i < 502; i++) store.logEvent('ask_open', { i })
 
     vi.resetModules()
     const data2 = await import('./data')
@@ -231,7 +226,7 @@ describe('event log', () => {
     store = await import('./store')
     const events = JSON.parse(store.exportLog())
     expect(events).toHaveLength(500)
-    expect(events[0]).toMatchObject({ name: 'hint_open', data: { i: 2 } })
-    expect(events[499]).toMatchObject({ name: 'hint_open', data: { i: 501 } })
+    expect(events[0]).toMatchObject({ name: 'ask_open', data: { i: 2 } })
+    expect(events[499]).toMatchObject({ name: 'ask_open', data: { i: 501 } })
   })
 })

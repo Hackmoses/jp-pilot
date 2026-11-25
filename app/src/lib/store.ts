@@ -3,8 +3,6 @@ import { getQuestions, getQuestionsBySubject } from './data'
 export type EventName =
   | 'session_start'
   | 'answer'
-  | 'remove_option'
-  | 'hint_open'
   | 'player_play'
   | 'player_replay_step'
   | 'ask_open'
@@ -20,7 +18,6 @@ interface Answer {
   questionId: string
   pickedId: string
   correct: boolean
-  removedCount: number
   at: number
 }
 
@@ -89,7 +86,7 @@ function restoreRemediation(events: LoggedEvent[]): Record<string, boolean> {
   const remediation: Record<string, boolean> = {}
   for (const event of events) {
     if (event.name !== 'answer' || typeof event.data?.questionId !== 'string') continue
-    remediation[event.data.questionId] = event.data.correct === false || Number(event.data.removedCount) > 0
+    remediation[event.data.questionId] = event.data.correct === false
   }
   return remediation
 }
@@ -131,7 +128,7 @@ export function recordAnswer(e: Answer): void {
   const earlyReview = scheduled !== undefined && scheduled > state.sessionsStarted &&
     !state.remediationByQuestion[e.questionId]
   if (!e.correct || !earlyReview) {
-    const needsRemediation = !e.correct || e.removedCount > 0
+    const needsRemediation = !e.correct
     state.remediationByQuestion[e.questionId] = needsRemediation
     state.dueByQuestion[e.questionId] = state.sessionsStarted + (needsRemediation ? 1 : 3)
   }
@@ -205,7 +202,7 @@ export function getDueQuestionIds(limit: number, subject?: string): QueueItem[] 
     candidates.push({ id, review: session > nextSession })
   }
 
-  // Due mistakes and assisted answers must return even if they appeared last session.
+  // Due mistakes must return even if they appeared last session.
   const previous = new Set(state.lastSessionQuestionIds)
   return [
     ...due.map(({ id }) => ({ id, review: false })),

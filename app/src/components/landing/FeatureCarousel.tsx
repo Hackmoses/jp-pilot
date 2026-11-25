@@ -22,22 +22,6 @@ const features = [
     ),
   },
   {
-    color: 'red',
-    icon: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8 12h8',
-    name: 'Remove a wrong option',
-    description: 'Narrow it to two when stuck',
-    title: 'Remove a wrong option',
-    caption: 'Stuck? Narrow it to two and think it through.',
-    preview: (
-      <div class="landing-example landing-options">
-        <del>A · Act as the anode</del>
-        <span>B · Lower the melting point</span>
-        <span>C · Remove iron oxide</span>
-        <del>D · Reduce Al³⁺ ions</del>
-      </div>
-    ),
-  },
-  {
     color: 'blue',
     icon: 'M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z',
     name: 'Step-by-step solutions',

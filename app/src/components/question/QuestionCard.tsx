@@ -2,20 +2,14 @@ import type { ComponentChildren } from 'preact'
 import { useEffect, useId, useState } from 'preact/hooks'
 import type { Option, OptionId, Question } from '../../lib/types'
 import { ReadAloudButton } from '../share/ReadAloudButton'
-import { OPTION_LETTERS, getOptionViewState, getRemoveButtonLabel, getResultCopy } from './logic'
+import { OPTION_LETTERS, getOptionViewState, getResultCopy } from './logic'
 
 export interface QuestionCardProps {
   question: Question
   review: boolean
   options: readonly Option[]
   pickedId: OptionId | null
-  removedIds: readonly OptionId[]
-  hintOpen: boolean
   onPick: (optionId: OptionId) => void
-  onToggleHint: () => void
-  onRemoveOption?: () => void
-  removalsLeft?: number
-  showRemoveButton?: boolean
   calculationSlot?: ComponentChildren
   conceptSlot?: ComponentChildren
 }
@@ -25,19 +19,13 @@ export function QuestionCard({
   review,
   options,
   pickedId,
-  removedIds,
-  hintOpen,
   onPick,
-  onToggleHint,
-  onRemoveOption,
-  removalsLeft = 0,
-  showRemoveButton = false,
   calculationSlot,
   conceptSlot,
 }: QuestionCardProps) {
   const answered = pickedId !== null
   const isCorrect = answered && pickedId === question.answerId
-  const result = answered ? getResultCopy(isCorrect, removedIds.length) : null
+  const result = answered ? getResultCopy(isCorrect) : null
   // All explanation cards start collapsed; the student opens what they need.
   const [explainOpen, setExplainOpen] = useState(false)
   const [otherWrongOpen, setOtherWrongOpen] = useState(false)
@@ -133,7 +121,7 @@ export function QuestionCard({
 
         <div class="jp-options" role="group" aria-label="Answer options">
           {options.map((option, index) => {
-            const view = getOptionViewState(option, index, question, pickedId, removedIds)
+            const view = getOptionViewState(option, index, question, pickedId)
             const statusClass = view.status === 'idle' ? '' : ` jp-option--${view.status}`
 
             return (
@@ -156,67 +144,6 @@ export function QuestionCard({
             )
           })}
         </div>
-
-        {!answered && (
-          <>
-            <div class="jp-actions">
-              {showRemoveButton && onRemoveOption && (
-                <button
-                  type="button"
-                  class="jp-btn jp-btn--remove"
-                  disabled={removalsLeft === 0}
-                  onClick={onRemoveOption}
-                >
-                  <svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M8 12h8" />
-                  </svg>
-                  {getRemoveButtonLabel(removalsLeft)}
-                </button>
-              )}
-              <button
-                type="button"
-                class="jp-btn jp-btn--hint"
-                aria-expanded={hintOpen}
-                onClick={onToggleHint}
-              >
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M9 18h6" />
-                  <path d="M10 22h4" />
-                  <path d="M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2z" />
-                </svg>
-                {hintOpen ? 'Hide hint' : 'Show a hint'}
-              </button>
-            </div>
-
-            {hintOpen && (
-              <div class="jp-hint-box" role="region" aria-label="Hint">
-                <span class="jp-hint-label">Hint</span>
-                <p>{question.hint}</p>
-              </div>
-            )}
-          </>
-        )}
       </section>
 
       {answered && calculationSlot}
@@ -304,7 +231,24 @@ export function QuestionCard({
             <div class="jp-explain-notes">
               <div class="jp-explain-subgrid">
                 <div class="jp-subbox jp-subbox--trap">
-                  <span class="jp-subbox-label">The trap</span>
+                  <span class="jp-subbox-label">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                      <path d="M12 9v4" />
+                      <path d="M12 17h.01" />
+                    </svg>
+                    WATCH OUT: THE TRAP
+                  </span>
                   <p>{question.trap}</p>
                 </div>
                 <div class="jp-subbox jp-subbox--memo">

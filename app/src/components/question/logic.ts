@@ -6,7 +6,7 @@ import type { SessionRecord, SessionSummary } from './sessionState'
 
 export const OPTION_LETTERS = ['A', 'B', 'C', 'D'] as const
 
-export type OptionStatus = 'idle' | 'correct' | 'wrong' | 'neutral' | 'removed'
+export type OptionStatus = 'idle' | 'correct' | 'wrong' | 'neutral'
 
 export interface OptionViewState {
   letter: (typeof OPTION_LETTERS)[number]
@@ -29,27 +29,16 @@ export function getOptionViewState(
   index: number,
   question: Question,
   pickedId: OptionId | null,
-  removedIds: readonly OptionId[],
 ): OptionViewState {
   const letter = OPTION_LETTERS[index] ?? 'A'
-  const isRemoved = removedIds.includes(option.id)
   const answered = pickedId !== null
 
   if (!answered) {
     return {
       letter,
-      status: isRemoved ? 'removed' : 'idle',
-      disabled: isRemoved,
-      note: isRemoved ? 'Removed' : null,
-    }
-  }
-
-  if (isRemoved) {
-    return {
-      letter,
-      status: 'removed',
-      disabled: true,
-      note: `Removed. ${option.why}`,
+      status: 'idle',
+      disabled: false,
+      note: null,
     }
   }
 
@@ -84,7 +73,6 @@ export function getOptionViewState(
 
 export function getResultCopy(
   correct: boolean,
-  removedCount: number,
 ): { title: string; subtitle: string } {
   if (!correct) {
     return {
@@ -93,34 +81,10 @@ export function getResultCopy(
     }
   }
 
-  if (removedCount > 0) {
-    const noun = removedCount === 1 ? 'option' : 'options'
-    return {
-      title: 'Correct',
-      subtitle: `Correct after removing ${removedCount} ${noun}. This question will come back sooner.`,
-    }
-  }
-
   return {
     title: 'Correct',
     subtitle: 'Read why the other options are wrong.',
   }
-}
-
-export function getNextRemovalId(
-  question: Question,
-  removedIds: readonly OptionId[],
-): OptionId | null {
-  const nextId = question.removeOrder[removedIds.length]
-  if (!nextId) return null
-  if (nextId === question.answerId || removedIds.includes(nextId)) return null
-  return nextId
-}
-
-export function getRemoveButtonLabel(removalsLeft: number): string {
-  return removalsLeft > 0
-    ? `Remove a wrong option · ${removalsLeft} left`
-    : 'No removals left'
 }
 
 export function parseQuestionIdFromHash(hash: string): string | null {

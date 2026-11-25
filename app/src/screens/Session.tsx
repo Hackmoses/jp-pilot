@@ -9,7 +9,6 @@ import { ShareButton } from '../components/share/ShareButton'
 import {
   OPTION_LETTERS,
   buildSessionQueue,
-  getNextRemovalId,
   makeOptionSeed,
   parseQuestionIdFromHash,
   parseSubjectFromHash,
@@ -65,9 +64,6 @@ export function Session() {
   const [index, setIndex] = useState(0)
   const [records, setRecords] = useState<SessionRecord[]>([])
   const [pickedId, setPickedId] = useState<OptionId | null>(null)
-  const [removedIds, setRemovedIds] = useState<OptionId[]>([])
-  const [hintOpen, setHintOpen] = useState(false)
-  const [hintLoggedFor, setHintLoggedFor] = useState<string | null>(null)
   const [calcOpen, setCalcOpen] = useState(false)
   const [playSignal, setPlaySignal] = useState(0)
   const [askOpen, setAskOpen] = useState(false)
@@ -134,9 +130,6 @@ export function Session() {
       setIndex(0)
       setRecords([])
       setPickedId(null)
-      setRemovedIds([])
-      setHintOpen(false)
-      setHintLoggedFor(null)
       setCalcOpen(false)
       setPlaySignal(0)
       setAskOpen(false)
@@ -158,9 +151,8 @@ export function Session() {
 
   const handlePick = useCallback(
     (optionId: OptionId) => {
-      if (!question || pickedId !== null || removedIds.includes(optionId)) return
+      if (!question || pickedId !== null) return
       const correct = optionId === question.answerId
-      const removedCount = removedIds.length
       const at = Date.now()
 
       setPickedId(optionId)
@@ -168,29 +160,17 @@ export function Session() {
         questionId: question.id,
         pickedId: optionId,
         correct,
-        removedCount,
         at,
       })
       logEvent('answer', {
         questionId: question.id,
         pickedId: optionId,
         correct,
-        removedCount,
       })
       setProgress(getProgress())
     },
-    [question, pickedId, removedIds],
+    [question, pickedId],
   )
-
-  const handleToggleHint = useCallback(() => {
-    if (!question) return
-    const nextOpen = !hintOpen
-    setHintOpen(nextOpen)
-    if (nextOpen && hintLoggedFor !== question.id) {
-      logEvent('hint_open', { questionId: question.id })
-      setHintLoggedFor(question.id)
-    }
-  }, [question, hintOpen, hintLoggedFor])
 
   const advance = useCallback(() => {
     if (!question) return
@@ -200,7 +180,6 @@ export function Session() {
       topic: question.topic,
       correct: !skipped && pickedId === question.answerId,
       skipped,
-      removedCount: removedIds.length,
     }
     const nextRecords = [...records, nextRecord]
 
@@ -220,16 +199,13 @@ export function Session() {
     setRecords(nextRecords)
     setIndex(index + 1)
     setPickedId(null)
-    setRemovedIds([])
-    setHintOpen(false)
-    setHintLoggedFor(null)
     setCalcOpen(false)
     setPlaySignal(0)
     setAskOpen(false)
     if (typeof window.scrollTo === 'function') {
       window.scrollTo({ top: 0 })
     }
-  }, [question, pickedId, removedIds.length, records, index, queue.length])
+  }, [question, pickedId, records, index, queue.length])
 
   useEffect(() => {
     if (!question) return
@@ -262,15 +238,11 @@ export function Session() {
                   : -1
         if (idx >= 0) {
           const option = options[idx]
-          if (option && !removedIds.includes(option.id)) {
+          if (option) {
             event.preventDefault()
             handlePick(option.id)
           }
           return
-        }
-        if (key === 'h') {
-          event.preventDefault()
-          handleToggleHint()
         }
         return
       }
@@ -292,7 +264,7 @@ export function Session() {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [question, answered, options, removedIds, handlePick, handleToggleHint, advance])
+  }, [question, answered, options, handlePick, advance])
 
   if (loading) {
     return (
@@ -336,7 +308,6 @@ export function Session() {
   const sessionCorrect =
     records.filter((record) => !record.skipped && record.correct).length +
     (answered && pickedId === question.answerId ? 1 : 0)
-  const removalsLeft = Math.max(0, question.removeOrder.length - removedIds.length)
   const progressPercent = Math.round(((index + 1) / queue.length) * 100)
   const animationKind = question.animationId ? getAnimation(question.animationId)?.kind : undefined
   const isConceptAnimation = animationKind === 'concept'
@@ -351,22 +322,8 @@ export function Session() {
     />
   ) : null
 
-  const handleRemoveOption = () => {
-    if (pickedId !== null) return
-    const nextId = getNextRemovalId(question, removedIds)
-    if (!nextId) return
-    const nextRemoved = [...removedIds, nextId]
-    setRemovedIds(nextRemoved)
-    logEvent('remove_option', {
-      questionId: question.id,
-      removedId: nextId,
-      removedCount: nextRemoved.length,
-    })
-  }
-
   const handleAskButton = () => {
     if (!answered) {
-      if (!hintOpen) handleToggleHint()
       setAskOpen(true)
       return
     }
@@ -427,13 +384,7 @@ export function Session() {
             review={entry.review}
             options={options}
             pickedId={pickedId}
-            removedIds={removedIds}
-            hintOpen={hintOpen}
             onPick={handlePick}
-            onToggleHint={handleToggleHint}
-            onRemoveOption={handleRemoveOption}
-            removalsLeft={removalsLeft}
-            showRemoveButton={true}
             calculationSlot={!isWide && !isConceptAnimation ? calculationPlayer : undefined}
             conceptSlot={!isWide && isConceptAnimation ? calculationPlayer : undefined}
           />
@@ -459,20 +410,8 @@ export function Session() {
           {!answered ? (
             <>
               <ReadAloudButton questionId={question.id} target="question" options={options} />
-              <button
-                ref={askTriggerRef}
-                type="button"
-                class="jp-ask-icon-btn"
-                aria-label="Ask for a hint"
-                onClick={handleAskButton}
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z" />
-                </svg>
-              </button>
               <div class="jp-footer-right">
-                <span class="jp-kbd-hints jp-hide-sm">1–4 to answer · H hint</span>
+                <span class="jp-kbd-hints jp-hide-sm">1–4 to answer</span>
                 <button type="button" class="jp-btn jp-skip-btn" onClick={advance}>
                   Skip
                 </button>
@@ -498,8 +437,8 @@ export function Session() {
               <div class="jp-footer-right">
                 <span class="jp-kbd-hints jp-hide-sm">
                   {question.animationId
-                    ? '1–4 to answer · H hint · Space play'
-                    : '1–4 to answer · H hint'}
+                    ? 'Enter next · Space play'
+                    : 'Enter next'}
                 </span>
                 <button
                   type="button"

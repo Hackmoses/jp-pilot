@@ -8,9 +8,7 @@ import type { Animation, Question } from '../../lib/types'
 import {
   OPTION_LETTERS,
   buildSessionQueue,
-  getNextRemovalId,
   getOptionViewState,
-  getRemoveButtonLabel,
   getResultCopy,
   makeOptionSeed,
   parseQuestionIdFromHash,
@@ -39,11 +37,11 @@ describe('question screen logic (M1)', () => {
     const wrongOption = shuffled.find((o) => o.id !== q.answerId)!
     const correctOption = shuffled.find((o) => o.id === q.answerId)!
 
-    const before = shuffled.map((o, i) => getOptionViewState(o, i, q, null, []))
+    const before = shuffled.map((o, i) => getOptionViewState(o, i, q, null))
     expect(before.every((s) => s.status === 'idle' && !s.disabled && s.note === null)).toBe(true)
     expect(before.map((s) => s.letter)).toEqual([...OPTION_LETTERS])
 
-    const afterRight = shuffled.map((o, i) => getOptionViewState(o, i, q, correctOption.id, []))
+    const afterRight = shuffled.map((o, i) => getOptionViewState(o, i, q, correctOption.id))
     for (const [i, state] of afterRight.entries()) {
       expect(state.disabled).toBe(true)
       if (shuffled[i].id === q.answerId) {
@@ -55,7 +53,7 @@ describe('question screen logic (M1)', () => {
       }
     }
 
-    const afterWrong = shuffled.map((o, i) => getOptionViewState(o, i, q, wrongOption.id, []))
+    const afterWrong = shuffled.map((o, i) => getOptionViewState(o, i, q, wrongOption.id))
     for (const [i, state] of afterWrong.entries()) {
       expect(state.disabled).toBe(true)
       if (shuffled[i].id === wrongOption.id) {
@@ -76,7 +74,6 @@ describe('question screen logic (M1)', () => {
     for (const q of questions) {
       const shuffled = shuffleOptions(q, makeOptionSeed(q.id, 999))
       expect(shuffled).toHaveLength(4)
-      expect(q.hint.trim().length).toBeGreaterThan(0)
       expect(q.explanation.trim().length).toBeGreaterThan(0)
       expect(q.trap.trim().length).toBeGreaterThan(0)
       expect(q.mnemonic.trim().length).toBeGreaterThan(0)
@@ -93,53 +90,9 @@ describe('question screen logic (M1)', () => {
   })
 
   it('returns accurate result copy without fabricated percentages', () => {
-    expect(getResultCopy(true, 0).title).toBe('Correct')
-    expect(getResultCopy(true, 0).subtitle).not.toMatch(/%/)
-    expect(getResultCopy(false, 0).title).toBe('Not quite')
-  })
-})
-
-describe('remove a wrong option logic (M2)', () => {
-  it('follows removeOrder strictly across all 25 questions and never removes the answer', () => {
-    for (const q of questions) {
-      const first = getNextRemovalId(q, [])
-      expect(first).toBe(q.removeOrder[0])
-      expect(first).not.toBe(q.answerId)
-
-      const second = getNextRemovalId(q, [first!])
-      expect(second).toBe(q.removeOrder[1])
-      expect(second).not.toBe(q.answerId)
-      expect(second).not.toBe(first)
-
-      expect(getNextRemovalId(q, [first!, second!])).toBeNull()
-    }
-  })
-
-  it('marks removed options disabled with Removed label before and after answering', () => {
-    const q = questions[0]
-    const shuffled = shuffleOptions(q, makeOptionSeed(q.id, 42))
-    const removedId = getNextRemovalId(q, [])!
-
-    const before = shuffled.map((o, i) => getOptionViewState(o, i, q, null, [removedId]))
-    const removedBefore = before[shuffled.findIndex((o) => o.id === removedId)]
-    expect(removedBefore.status).toBe('removed')
-    expect(removedBefore.disabled).toBe(true)
-    expect(removedBefore.note).toBe('Removed')
-
-    const after = shuffled.map((o, i) => getOptionViewState(o, i, q, q.answerId, [removedId]))
-    const removedAfter = after[shuffled.findIndex((o) => o.id === removedId)]
-    expect(removedAfter.status).toBe('removed')
-    expect(removedAfter.disabled).toBe(true)
-    expect(removedAfter.note).toContain('Removed.')
-  })
-
-  it('formats remove button labels and assisted-correct result copy', () => {
-    expect(getRemoveButtonLabel(2)).toBe('Remove a wrong option · 2 left')
-    expect(getRemoveButtonLabel(1)).toBe('Remove a wrong option · 1 left')
-    expect(getRemoveButtonLabel(0)).toBe('No removals left')
-
-    expect(getResultCopy(true, 1).subtitle).toContain('come back sooner')
-    expect(getResultCopy(true, 2).subtitle).toContain('come back sooner')
+    expect(getResultCopy(true).title).toBe('Correct')
+    expect(getResultCopy(true).subtitle).not.toMatch(/%/)
+    expect(getResultCopy(false).title).toBe('Not quite')
   })
 })
 
@@ -165,7 +118,7 @@ describe('session flow and memory (M5)', () => {
     vi.unstubAllGlobals()
   })
 
-  it('builds 10-question queues and brings wrong or assisted questions back in the next session', async () => {
+  it('builds 10-question queues and brings wrong answers back in the next session', async () => {
     const store = await import('../../lib/store')
     const logic = await import('./logic')
 
@@ -174,38 +127,27 @@ describe('session flow and memory (M5)', () => {
     store.logEvent('session_start', { count: session1.length })
 
     const { question: wrongQ } = session1[0]
-    const { question: assistedQ } = session1[1]
-    const { question: cleanQ } = session1[2]
+    const { question: cleanQ } = session1[1]
 
     store.recordAnswer({
       questionId: wrongQ.id,
-      pickedId: wrongQ.removeOrder[0],
+      pickedId: wrongQ.options.find((o) => o.id !== wrongQ.answerId)!.id,
       correct: false,
-      removedCount: 0,
-      at: Date.now(),
-    })
-    store.recordAnswer({
-      questionId: assistedQ.id,
-      pickedId: assistedQ.answerId,
-      correct: true,
-      removedCount: 1,
       at: Date.now(),
     })
     store.recordAnswer({
       questionId: cleanQ.id,
       pickedId: cleanQ.answerId,
       correct: true,
-      removedCount: 0,
       at: Date.now(),
     })
 
-    // Skip remaining questions (no recordAnswer call) -> answered count stays 3
-    expect(store.getProgress().answered).toBe(3)
+    // Skip remaining questions (no recordAnswer call) -> answered count stays 2
+    expect(store.getProgress().answered).toBe(2)
 
     const session2 = logic.buildSessionQueue(null, 10)
     expect(session2).toHaveLength(10)
-    // Priority items come first; their order within the group is randomised.
-    expect(session2.slice(0, 2).map(({ question }) => question.id).sort()).toEqual([wrongQ.id, assistedQ.id].sort())
+    expect(session2[0].question.id).toBe(wrongQ.id)
     expect(session2.some(({ question }) => question.id === cleanQ.id)).toBe(false)
 
     store.logEvent('session_start', { count: session2.length })
@@ -238,7 +180,6 @@ describe('session flow and memory (M5)', () => {
           questionId: question.id,
           pickedId: question.answerId,
           correct: true,
-          removedCount: 0,
           at: Date.now(),
         })
       }
@@ -253,11 +194,11 @@ describe('session flow and memory (M5)', () => {
 
   it('summarizes session score, skips, and missed topics in descending frequency order', () => {
     const summary = summarizeSession([
-      { questionId: 'chem-001', topic: 'Metals', correct: false, skipped: false, removedCount: 0 },
-      { questionId: 'chem-002', topic: 'Water', correct: true, skipped: false, removedCount: 0 },
-      { questionId: 'chem-003', topic: 'Non-metals', correct: false, skipped: false, removedCount: 1 },
-      { questionId: 'chem-004', topic: 'Metals', correct: false, skipped: false, removedCount: 0 },
-      { questionId: 'chem-005', topic: 'Acids', correct: false, skipped: true, removedCount: 0 },
+      { questionId: 'chem-001', topic: 'Metals', correct: false, skipped: false },
+      { questionId: 'chem-002', topic: 'Water', correct: true, skipped: false },
+      { questionId: 'chem-003', topic: 'Non-metals', correct: false, skipped: false },
+      { questionId: 'chem-004', topic: 'Metals', correct: false, skipped: false },
+      { questionId: 'chem-005', topic: 'Acids', correct: false, skipped: true },
     ])
 
     expect(summary).toEqual({
