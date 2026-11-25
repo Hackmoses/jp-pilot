@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
-import { loadManifest } from '../lib/data'
+import { COMPLETE_QUESTIONS_ONLY, getManifestSync, isSubjectLoaded, loadSubject } from '../lib/data'
 import {
   SUBJECTS,
   type SubjectIconName,
@@ -45,7 +45,7 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
 
   useEffect(() => {
     let active = true
-    void loadManifest().then(() => { if (active) setManifestReady(true) })
+    void loadSubject('chemistry').then(() => { if (active) setManifestReady(true) })
     return () => { active = false }
   }, [])
 
@@ -122,7 +122,7 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
           </span>
           <span class="jp-subjects-strip-copy">
             <strong>Ready now · Chemistry</strong>
-            <span>{chemistryCount > 0 ? `${chemistryCount} questions` : 'Tap to start'}</span>
+            <span>{isSubjectLoaded('chemistry') ? `${chemistryCount} questions` : 'Tap to start'}</span>
           </span>
           <span class="jp-subjects-strip-go" aria-hidden="true">Start →</span>
         </a>
@@ -137,7 +137,8 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
         ) : (
           <div class="jp-subjects-grid" role="list">
             {filteredSubjects.map((subject) => {
-              if (isSubjectAvailable(subject.id)) {
+              if (isSubjectAvailable(subject.id) && (!COMPLETE_QUESTIONS_ONLY ||
+                subject.id === 'chemistry' || getManifestSync()?.[subject.id]?.hasAnimations)) {
                 const count = getSubjectQuestionCount(subject.id)
                 return (
                   <a
@@ -153,8 +154,8 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
                     <span class="jp-subject-body">
                       <strong class="jp-subject-name">{subject.name}</strong>
                       <span class="jp-subject-meta jp-subject-meta--open">
-                        <span>{count} questions</span>
-                        <span aria-hidden="true">·</span>
+                        {(!COMPLETE_QUESTIONS_ONLY || isSubjectLoaded(subject.id)) &&
+                          <><span>{count} questions</span><span aria-hidden="true">·</span></>}
                         <span class="jp-subject-start">Start →</span>
                       </span>
                     </span>

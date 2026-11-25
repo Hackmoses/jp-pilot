@@ -1,17 +1,30 @@
-import manifest from '../../../../audio/manifest.json'
 import spoken from '../../../../audio/spoken.json'
+import audioIndex from './audioIndex.json'
 
 export type NarrationMode = 'quick' | 'teach'
 
-type Clip = (typeof manifest.clips)[number]
+type IndexedClip = [step: number, durationMs: number, signature: string, voice?: number, path?: string]
+type Clip = { path: string; durationMs: number; lineSha256: string; voice: string }
+
+const tracks = audioIndex.tracks as unknown as Record<string, IndexedClip[] | undefined>
 
 export function calculationAudio(id: string, mode: NarrationMode = 'quick') {
   const isTeach = mode === 'teach'
-  const clips = new Map(
-    manifest.clips
-      .filter((clip) => clip.animationId === id && clip.path.startsWith('audio/teach/') === isTeach)
-      .map((clip) => [clip.step, clip]),
-  )
+  const track = tracks[isTeach ? id + '/teach' : id]
+  if (!track) return undefined
+  const clips = new Map<number, Clip>()
+  const prefix = isTeach ? 'audio/teach/' : 'audio/'
+  for (const [step, durationMs, signature, voice = 0, path] of track) {
+    // Restore the published checksum so existing cache keys still match.
+    const lineSha256 = Array.from(atob(signature), (byte) =>
+      byte.charCodeAt(0).toString(16).padStart(2, '0')).join('')
+    clips.set(step, {
+      durationMs,
+      lineSha256,
+      voice: audioIndex.voices[voice],
+      path: path ?? `${prefix}${id}/${step}.webm`,
+    })
+  }
   return clips.size
     ? { clips, captions: isTeach ? undefined : (spoken as Record<string, string[]>)[id] }
     : undefined

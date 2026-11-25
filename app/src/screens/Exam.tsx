@@ -22,11 +22,8 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
   useEffect(() => {
     let active = true
     void loadManifest().then(async (manifest) => {
-      const candidates = SUBJECTS.filter(({ id }) => {
-        const entry = manifest[id]
-        const count = COMPLETE_QUESTIONS_ONLY ? (entry?.completeCount ?? entry?.count ?? 0) : (entry?.count ?? 0)
-        return count > 0
-      })
+      const candidates = SUBJECTS.filter(({ id }) => manifest[id]?.count &&
+        (!COMPLETE_QUESTIONS_ONLY || manifest[id]?.hasAnimations))
       const loaded = await Promise.all(candidates.map(({ id }) => loadSubject(id)))
       if (!active) return
       setFailed(candidates.length === 0 || loaded.includes(false))
@@ -36,12 +33,8 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
   }, [])
 
   const pilot = !failed && available?.length === 1 && available[0] === 'chemistry'
-  const hasEnglish = Boolean(available?.includes('english'))
   const subjects = pilot ? ['chemistry'] : selected.filter((id) => available?.includes(id))
-  const ready = !failed && (
-    pilot ||
-    (hasEnglish ? subjects.length === 4 && subjects.includes('english') : subjects.length >= 1 && subjects.length <= 4)
-  )
+  const ready = !failed && (pilot || (subjects.length === 4 && subjects.includes('english')))
   const choose = (id: string) => {
     const next = selected.includes(id) ? selected.filter((subject) => subject !== id) : [...selected, id]
     setSelected(next)
@@ -71,8 +64,7 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
     <Panel title="Exam setup">
       <p class="jp-summary-sub">
         {pilot ? 'Chemistry-only pilot. The other subjects have no complete questions yet.'
-          : hasEnglish ? 'Choose English Language and three other subjects.'
-            : 'Choose up to 4 available subjects (English Language coming soon).'}
+          : 'Choose three subjects alongside English Language.'}
       </p>
       {available === null ? <p class="jp-summary-sub">Checking available subjects…</p> : <>
         <fieldset class="jp-revisit">
@@ -80,10 +72,10 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
           {SUBJECTS.filter(({ id }) => id === 'english' || available.includes(id)).map(({ id, name }) => {
             const english = id === 'english'
             const enabled = available.includes(id)
-            const checked = (english && hasEnglish) || (pilot && id === 'chemistry') || (enabled && selected.includes(id))
+            const checked = english || (pilot && id === 'chemistry') || (enabled && selected.includes(id))
             return <label class="jp-mode-check" key={id}>
               <input type="checkbox" checked={checked}
-                disabled={(english && hasEnglish) || pilot || !enabled || (!checked && subjects.length >= 4)}
+                disabled={english || pilot || !enabled || (!checked && subjects.length >= 4)}
                 onChange={() => choose(id)} />
               <span>{name}{!enabled && <span class="jp-summary-sub"> · Coming soon</span>}</span>
             </label>

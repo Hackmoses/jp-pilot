@@ -13,11 +13,11 @@ const q4 = { ...q1, id: 'q4', subject: 'physics' }
 const qMath = { id: 'qm', subject: 'mathematics', topic: 'Indices', animationId: 'anim-m', answerId: 'a' } as Question
 
 describe('complete questions', () => {
-  it('requires a Teach me calculation animation or a concept lesson, without requiring chapter', () => {
+  it('requires a chapter and a matching animation with Teach me and Quick steps', () => {
     expect(isCompleteQuestion(q1, animation)).toBe(true)
-    expect(isCompleteQuestion({ ...q1, chapter: undefined }, animation)).toBe(true)
-    expect(isCompleteQuestion({ ...q1, chapter: ' ' }, animation)).toBe(true)
-    expect(isCompleteQuestion({ id: 'qc', subject: 'biology', topic: 'Cells', animationId: 'anim-c', answerId: 'a' } as Question, conceptAnim)).toBe(true)
+    expect(isCompleteQuestion({ ...q1, chapter: undefined }, animation)).toBe(false)
+    expect(isCompleteQuestion({ ...q1, chapter: ' ' }, animation)).toBe(false)
+    expect(isCompleteQuestion({ ...q1, id: 'qc', animationId: 'anim-c' }, conceptAnim)).toBe(false)
     expect(isCompleteQuestion(q1)).toBe(false)
     expect(isCompleteQuestion(q2, animation)).toBe(false)
     expect(isCompleteQuestion(q1, { ...animation, teach: undefined })).toBe(false)

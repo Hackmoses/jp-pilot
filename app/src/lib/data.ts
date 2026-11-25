@@ -11,13 +11,9 @@ export type SubjectManifest = Record<string, SubjectManifestEntry>
 export const COMPLETE_QUESTIONS_ONLY = true
 
 export function isCompleteQuestion(question: Question, animation?: Animation): boolean {
-  if (!question.animationId || animation?.id !== question.animationId || animation.questionId !== question.id) {
-    return false
-  }
-  if (animation.kind === 'concept') {
-    return animation.steps.length > 0 || Boolean(animation.teach?.length)
-  }
-  return Boolean(animation.teach?.length && animation.steps.length)
+  return Boolean(question.chapter?.trim() && question.animationId &&
+    animation?.id === question.animationId && animation.questionId === question.id &&
+    animation.teach?.length && animation.steps.length)
 }
 
 const questions: Question[] = []
