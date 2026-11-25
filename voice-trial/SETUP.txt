@@ -1,0 +1,69 @@
+JP Voice Trial — Mac Environment & Setup Log
+============================================
+
+Machine & OS
+------------
+- Hardware: Apple Silicon MacBook Air (arm64, T8142)
+- OS: macOS 26.6 (Build 25G72)
+
+Pre-installed Tools
+-------------------
+- Homebrew 7.0.16 (/opt/homebrew/bin/brew)
+- git version 2.50.1 (Apple Git-155) (/usr/bin/git)
+
+Reference Voice Retrieval (not committed)
+-----------------------------------------
+git fetch origin voice-transfer
+git show origin/voice-transfer:voice-samples/candidate-charon.wav > voice-samples/reference.wav
+(Equivalent to checking out voice-samples/candidate-charon.wav, restoring staged index, and moving to voice-samples/reference.wav; 1,028,684 bytes, 24000 Hz mono pcm_s16le, 21.43 s.)
+
+System Packages Installed via Homebrew
+--------------------------------------
+brew install python@3.11 ffmpeg node
+
+Installed versions:
+- python@3.11: Python 3.11.18 (/opt/homebrew/bin/python3.11)
+- ffmpeg / ffprobe: 9.1 (with libopus)
+- node: v26.13.1
+
+Python Virtual Environment (outside repo)
+-----------------------------------------
+mkdir -p ~/venvs
+/opt/homebrew/bin/python3.11 -m venv ~/venvs/chatterbox
+~/venvs/chatterbox/bin/pip install --upgrade pip "setuptools<81" wheel
+~/venvs/chatterbox/bin/pip install numpy
+~/venvs/chatterbox/bin/pip install chatterbox-tts soundfile openai-whisper
+
+Note: setuptools 82+ removed pkg_resources, which resemble-perth imports via
+`from pkg_resources import resource_filename`. Pinning `setuptools<81` resolves
+`TypeError: 'NoneType' object is not callable` in PerthImplicitWatermarker().
+
+Key Installed Python Packages
+-----------------------------
+- chatterbox-tts 0.1.7
+- torch 2.6.0 (MPS available: True, MPS built: True)
+- torchaudio 2.6.0
+- transformers 5.2.0
+- diffusers 0.29.0
+- safetensors 0.5.3
+- soundfile 0.14.0
+- openai-whisper 20250625
+- numpy 1.26.4
+
+Opus WebM Encoding Settings (matched to app/public/audio/**/*.webm)
+--------------------------------------------------------------------
+Reference app clips inspected with ffprobe:
+- Container: matroska,webm
+- Codec: opus (libopus), mono (1 channel), 48000 Hz, ~34-37 kbps
+
+Encoding command used:
+ffmpeg -y -i <input.wav> -c:a libopus -b:a 32k -ac 1 -ar 48000 -vbr on -application voip <output.webm>
+
+Runtime & Inference Notes
+-------------------------
+- Device used: Apple GPU (MPS) — `PYTORCH_ENABLE_MPS_FALLBACK=1` (no CPU fallback required)
+- Model load time: 6.18s (`ResembleAI/chatterbox` downloaded anonymously via HuggingFace Hub)
+- Whisper verification model: `small.en` (run on CPU with `fp16=False`)
+- Generation timing across 18 clips: 210.77s total, 11.71s/clip average (10.18s/clip warm excluding clip #1 MPS warmup of 37.65s)
+- Full corpus estimate (744 clips in audio/manifest.json): ~145.2 min (2.42 hr) overall / ~126.3 min (2.10 hr) warm
+

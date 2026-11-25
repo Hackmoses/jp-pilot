@@ -1,0 +1,59 @@
+{
+  "note": "6 audition lines for Chatterbox voice trial. audio/spoken.json only contains Chemistry anim-016 to anim-025, so Physics lines are taken from data/subjects/animations-physics-jamb.json (all verified exact lineSha256 matches with audio/manifest.json).",
+  "lines": [
+    {
+      "id": "chem1",
+      "category": "Chemistry",
+      "source": "audio/spoken.json",
+      "animId": "anim-016",
+      "step": 1,
+      "text": "Iron three oxide’s molar mass is two times fifty-six plus three times sixteen, giving one hundred and sixty.",
+      "afHeartPath": "app/public/audio/anim-016/1.webm"
+    },
+    {
+      "id": "chem2",
+      "category": "Chemistry",
+      "source": "audio/spoken.json",
+      "animId": "anim-022",
+      "step": 1,
+      "text": "Ammonium nitrate contains two nitrogen, four hydrogen, and three oxygen atoms.",
+      "afHeartPath": "app/public/audio/anim-022/1.webm"
+    },
+    {
+      "id": "phys1",
+      "category": "Physics",
+      "source": "data/subjects/animations-physics-jamb.json",
+      "animId": "anim-phys-jamb-0004",
+      "step": 1,
+      "text": "Carry a sealed bag of rice from Lagos to Jos: the number of rice grains inside stays identical, even if the ground pulls slightly differently.",
+      "afHeartPath": "app/public/audio/anim-phys-jamb-0004/1.webm"
+    },
+    {
+      "id": "phys2",
+      "category": "Physics",
+      "source": "data/subjects/animations-physics-jamb.json",
+      "animId": "anim-phys-jamb-0003",
+      "step": 3,
+      "text": "Forty-five minus twenty-five gives twenty, and dividing by ten gives two metres per second squared.",
+      "afHeartPath": "app/public/audio/anim-phys-jamb-0003/3.webm"
+    },
+    {
+      "id": "short1",
+      "category": "Short",
+      "source": "audio/spoken.json",
+      "animId": "anim-017",
+      "step": 3,
+      "text": "That gives zero point two moles.",
+      "afHeartPath": "app/public/audio/anim-017/3.webm"
+    },
+    {
+      "id": "decimal1",
+      "category": "Decimal (4.6 g)",
+      "source": "audio/spoken.json",
+      "animId": "anim-017",
+      "step": 2,
+      "text": "The number of moles is four point six divided by twenty-three.",
+      "afHeartPath": "app/public/audio/anim-017/2.webm"
+    }
+  ]
+}

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JP Voice Trial — Chatterbox Nigerian Teacher Audition</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #182028;
+      --card2: #1f2933;
+      --border: #2c3a47;
+      --text: #f0f4f8;
+      --muted: #9fb3c8;
+      --accent: #38bdf8;
+      --ok-bg: #0f3d2e;
+      --ok-fg: #6ee7b7;
+      --flag-bg: #4c1d24;
+      --flag-fg: #fda4af;
+      --warn-bg: #3b2f13;
+      --warn-fg: #fcd34d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .wrap { max-width: 1200px; margin: 0 auto; }
+    header {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+    }
+    h1 { margin: 0 0 6px; font-size: 1.25rem; }
+    .sub { color: var(--muted); font-size: 0.9rem; margin: 0 0 12px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 10px;
+    }
+    .stat {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 10px;
+    }
+    .stat .k { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+    .stat .v { font-size: 1rem; font-weight: 600; margin-top: 2px; }
+    .line-row {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+    .line-header { margin-bottom: 12px; }
+    .line-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+    .tag {
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--card2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .tag.cat { color: var(--accent); border-color: #1e4e68; font-weight: 600; }
+    .line-text { margin: 0; font-size: 1.02rem; font-weight: 600; }
+    .clips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+    }
+    .clip-card {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .clip-card.ref { border-color: #2f4b5e; }
+    .clip-card.flagged { border-color: #7f2936; }
+    .clip-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+    }
+    .clip-label { font-size: 0.85rem; font-weight: 600; }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 6px;
+      letter-spacing: 0.03em;
+    }
+    .badge.ok { background: var(--ok-bg); color: var(--ok-fg); }
+    .badge.flag { background: var(--flag-bg); color: var(--flag-fg); }
+    .badge.warn { background: var(--warn-bg); color: var(--warn-fg); }
+    .badge.neutral { background: #22303c; color: var(--muted); }
+    audio { width: 100%; height: 38px; }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+    .whisper {
+      font-size: 0.8rem;
+      background: rgba(0, 0, 0, 0.22);
+      border-radius: 6px;
+      padding: 7px 8px;
+    }
+    .w-head { color: var(--muted); font-size: 0.72rem; margin-bottom: 2px; }
+    .w-text { color: var(--text); }
+    .diff { color: var(--flag-fg); font-size: 0.74rem; margin-top: 4px; word-break: break-word; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>JP Voice Trial — Chatterbox Audition (Stage 1)</h1>
+      <p class="sub">Offline audition comparing existing Kokoro <code>af_heart</code> against Chatterbox cloning <code>reference.wav</code> across 3 settings.</p>
+      <div class="stats">
+        <div class="stat"><div class="k">Device</div><div class="v">MPS</div></div>
+        <div class="stat"><div class="k">Clips</div><div class="v">18 Chatterbox + 6 af_heart</div></div>
+        <div class="stat"><div class="k">Avg Speed</div><div class="v">11.71s / clip</div></div>
+        <div class="stat"><div class="k">Full Corpus (744 clips)</div><div class="v">~145.2 min (2.42 hr)</div></div>
+        <div class="stat"><div class="k">Whisper Matches</div><div class="v">13 / 18 exact</div></div>
+        <div class="stat"><div class="k">Opus Profile</div><div class="v">libopus 32k mono 48kHz</div></div>
+      </div>
+    </header>
+    
+        <section class="line-row">
+          <div class="line-header">
+            <div class="line-tags">
+              <span class="tag cat">Chemistry</span>
+              <span class="tag id">anim-016 &middot; step 1</span>
+              <span class="tag src">audio/spoken.json</span>
+            </div>
+            <p class="line-text">Iron three oxide’s molar mass is two times fifty-six plus three times sixteen, giving one hundred and sixty.</p>
+          </div>
+          <div class="clips-grid">
+            
+        <div class="clip-card ref">
+          <div class="clip-head">
+            <span class="clip-label">af_heart (current)</span>
+            <span class="badge neutral">REF</span>
+          </div>
+          <audio controls preload="none" src="clips/chem1_af_heart.webm"></audio>
+          <div class="meta">
+            <span>30.0 KB (30,765 B)</span>
+            <span>7.11s</span>
+            <span>~34.6 kbps</span>
+          </div>
+          <div class="whisper">
+            <div class="w-head"><span class="badge ok">OK</span> Whisper:</div>
+            <div class="w-text">Iron 3 oxide&#x27;s molar mass is 2 times 56 plus 3 times 16, giving 160.</div>
+            
+          </div>
+        </div>
+            <div class="clip-card flagged">
+              <div class="clip-head">
+                <span class="clip-label">Default (exag 0.5, cfg 0.5)</span>
+                <span class="badge flag">FLAG</span>
+              </div>
+              <audio controls preload="none" src="clips/chem1_default.webm"></audio>
+              <div class="meta">
+                <span>31.2 KB (104% vs af_heart)</span>
+                <span>7.41s</span>
+                <span>gen 37.65s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">3O molar mass is 2 times 56 plus 3 times 16 giving 160.</div>
+                <div class="diff">replace: [iron three oxide&#x27;s] -&gt; [3o]</div>
+              </div>
+            </div>
+            <div class="clip-card flagged">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.35</span>
+                <span class="badge flag">FLAG</span>
+              </div>
+              <audio controls preload="none" src="clips/chem1_exag035.webm"></audio>
+              <div class="meta">
+                <span>32.8 KB (109% vs af_heart)</span>
+                <span>7.97s</span>
+                <span>gen 12.93s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">Iron 3 oxide molar mass is 2 times 56 plus 3 times 16 giving 160.</div>
+                <div class="diff">replace: [oxide&#x27;s] -&gt; [oxide]</div>
+              </div>
+            </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.6, CFG 0.4</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/chem1_exag060_cfg040.webm"></audio>
+              <div class="meta">
+                <span>28.8 KB (96% vs af_heart)</span>
+                <span>6.81s</span>
+                <span>gen 9.65s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">Iron 3 oxides molar mass is 2 times 56 plus 3 times 16 giving 160.</div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="line-row">
+          <div class="line-header">
+            <div class="line-tags">
+              <span class="tag cat">Chemistry</span>
+              <span class="tag id">anim-022 &middot; step 1</span>
+              <span class="tag src">audio/spoken.json</span>
+            </div>
+            <p class="line-text">Ammonium nitrate contains two nitrogen, four hydrogen, and three oxygen atoms.</p>
+          </div>
+          <div class="clips-grid">
+            
+        <div class="clip-card ref">
+          <div class="clip-head">
+            <span class="clip-label">af_heart (current)</span>
+            <span class="badge neutral">REF</span>
+          </div>
+          <audio controls preload="none" src="clips/chem2_af_heart.webm"></audio>
+          <div class="meta">
+            <span>23.1 KB (23,627 B)</span>
+            <span>5.41s</span>
+            <span>~35.0 kbps</span>
+          </div>
+          <div class="whisper">
+            <div class="w-head"><span class="badge ok">OK</span> Whisper:</div>
+            <div class="w-text">Ammonium nitrate contains 2-nitrogen, 4-hydrogen, and 3-oxygen atoms.</div>
+            
+          </div>
+        </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Default (exag 0.5, cfg 0.5)</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/chem2_default.webm"></audio>
+              <div class="meta">
+                <span>22.4 KB (97% vs af_heart)</span>
+                <span>5.25s</span>
+                <span>gen 7.92s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">Ammonium nitrate contains 2-nitrogen, 4-hydrogen and 3-oxygen atoms.</div>
+                
+              </div>
+            </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.35</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/chem2_exag035.webm"></audio>
+              <div class="meta">
+                <span>24.4 KB (106% vs af_heart)</span>
+                <span>5.81s</span>
+                <span>gen 8.50s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">Ammonium nitrate contains 2-nitrogen, 4-hydrogen and 3-oxygen atoms.</div>
+                
+              </div>
+            </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.6, CFG 0.4</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/chem2_exag060_cfg040.webm"></audio>
+              <div class="meta">
+                <span>21.9 KB (95% vs af_heart)</span>
+                <span>5.21s</span>
+                <span>gen 7.60s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">Ammonium nitrate contains 2-nitrogen, 4-hydrogen and 3-oxygen atoms.</div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="line-row">
+          <div class="line-header">
+            <div class="line-tags">
+              <span class="tag cat">Physics</span>
+              <span class="tag id">anim-phys-jamb-0004 &middot; step 1</span>
+              <span class="tag src">data/subjects/animations-physics-jamb.json</span>
+            </div>
+            <p class="line-text">Carry a sealed bag of rice from Lagos to Jos: the number of rice grains inside stays identical, even if the ground pulls slightly differently.</p>
+          </div>
+          <div class="clips-grid">
+            
+        <div class="clip-card ref">
+          <div class="clip-head">
+            <span class="clip-label">af_heart (current)</span>
+            <span class="badge neutral">REF</span>
+          </div>
+          <audio controls preload="none" src="clips/phys1_af_heart.webm"></audio>
+          <div class="meta">
+            <span>38.9 KB (39,882 B)</span>
+            <span>9.21s</span>
+            <span>~34.6 kbps</span>
+          </div>
+          <div class="whisper">
+            <div class="w-head"><span class="badge warn">DIFF</span> Whisper:</div>
+            <div class="w-text">carry a sealed bag of rice from Lagos to Joss. The number of rice grains inside stays identical, even if the ground pulls slightly differently.</div>
+            <div class="diff">replace: [jos] -&gt; [joss]</div>
+          </div>
+        </div>
+            <div class="clip-card flagged">
+              <div class="clip-head">
+                <span class="clip-label">Default (exag 0.5, cfg 0.5)</span>
+                <span class="badge flag">FLAG</span>
+              </div>
+              <audio controls preload="none" src="clips/phys1_default.webm"></audio>
+              <div class="meta">
+                <span>35.1 KB (90% vs af_heart)</span>
+                <span>8.21s</span>
+                <span>gen 14.33s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">Carry a sealed bag of rice from legos to joists, the number of rice grains inside stays identical, even if the ground pulls slightly differently.</div>
+                <div class="diff">replace: [lagos] -&gt; [legos]; replace: [jos] -&gt; [joists]</div>
+              </div>
+            </div>
+            <div class="clip-card flagged">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.35</span>
+                <span class="badge flag">FLAG</span>
+              </div>
+              <audio controls preload="none" src="clips/phys1_exag035.webm"></audio>
+              <div class="meta">
+                <span>37.8 KB (97% vs af_heart)</span>
+                <span>8.81s</span>
+                <span>gen 19.01s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">carry a sealed bag of rice from Lagos to Joes. The number of rice grains inside stays identical, even if the ground pours slightly differently.</div>
+                <div class="diff">replace: [jos] -&gt; [joes]; replace: [pulls] -&gt; [pours]</div>
+              </div>
+            </div>
+            <div class="clip-card flagged">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.6, CFG 0.4</span>
+                <span class="badge flag">FLAG</span>
+              </div>
+              <audio controls preload="none" src="clips/phys1_exag060_cfg040.webm"></audio>
+              <div class="meta">
+                <span>37.0 KB (95% vs af_heart)</span>
+                <span>8.61s</span>
+                <span>gen 16.38s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">carry a sealed bag of rice from Lagos to Joss. The number of rice grains inside stays identical, even if the ground pulls slightly differently.</div>
+                <div class="diff">replace: [jos] -&gt; [joss]</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="line-row">
+          <div class="line-header">
+            <div class="line-tags">
+              <span class="tag cat">Physics</span>
+              <span class="tag id">anim-phys-jamb-0003 &middot; step 3</span>
+              <span class="tag src">data/subjects/animations-physics-jamb.json</span>
+            </div>
+            <p class="line-text">Forty-five minus twenty-five gives twenty, and dividing by ten gives two metres per second squared.</p>
+          </div>
+          <div class="clips-grid">
+            
+        <div class="clip-card ref">
+          <div class="clip-head">
+            <span class="clip-label">af_heart (current)</span>
+            <span class="badge neutral">REF</span>
+          </div>
+          <audio controls preload="none" src="clips/phys2_af_heart.webm"></audio>
+          <div class="meta">
+            <span>26.2 KB (26,809 B)</span>
+            <span>6.11s</span>
+            <span>~35.1 kbps</span>
+          </div>
+          <div class="whisper">
+            <div class="w-head"><span class="badge ok">OK</span> Whisper:</div>
+            <div class="w-text">45 minus 25 gives 20, and dividing by 10 gives 2 meters per second squared.</div>
+            
+          </div>
+        </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Default (exag 0.5, cfg 0.5)</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/phys2_default.webm"></audio>
+              <div class="meta">
+                <span>26.0 KB (99% vs af_heart)</span>
+                <span>6.05s</span>
+                <span>gen 13.53s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">45 minus 25 gives 20 and dividing by 10 gives 2 meters per second squared.</div>
+                
+              </div>
+            </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.35</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/phys2_exag035.webm"></audio>
+              <div class="meta">
+                <span>27.0 KB (103% vs af_heart)</span>
+                <span>6.33s</span>
+                <span>gen 9.95s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">45 minus 25 gives 20 and dividing by 10 gives 2 meters per second squared.</div>
+                
+              </div>
+            </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.6, CFG 0.4</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/phys2_exag060_cfg040.webm"></audio>
+              <div class="meta">
+                <span>28.2 KB (108% vs af_heart)</span>
+                <span>6.69s</span>
+                <span>gen 12.48s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">45 minus 25 gives 20, and dividing by 10 gives 2 meters per second squared.</div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="line-row">
+          <div class="line-header">
+            <div class="line-tags">
+              <span class="tag cat">Short</span>
+              <span class="tag id">anim-017 &middot; step 3</span>
+              <span class="tag src">audio/spoken.json</span>
+            </div>
+            <p class="line-text">That gives zero point two moles.</p>
+          </div>
+          <div class="clips-grid">
+            
+        <div class="clip-card ref">
+          <div class="clip-head">
+            <span class="clip-label">af_heart (current)</span>
+            <span class="badge neutral">REF</span>
+          </div>
+          <audio controls preload="none" src="clips/short1_af_heart.webm"></audio>
+          <div class="meta">
+            <span>8.1 KB (8,290 B)</span>
+            <span>1.80s</span>
+            <span>~36.9 kbps</span>
+          </div>
+          <div class="whisper">
+            <div class="w-head"><span class="badge ok">OK</span> Whisper:</div>
+            <div class="w-text">That gives 0.2 moles.</div>
+            
+          </div>
+        </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Default (exag 0.5, cfg 0.5)</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/short1_default.webm"></audio>
+              <div class="meta">
+                <span>10.0 KB (123% vs af_heart)</span>
+                <span>2.29s</span>
+                <span>gen 6.08s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">That gives 0.2 moles.</div>
+                
+              </div>
+            </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.35</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/short1_exag035.webm"></audio>
+              <div class="meta">
+                <span>12.1 KB (149% vs af_heart)</span>
+                <span>2.89s</span>
+                <span>gen 5.77s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">That gives 0.2 moles.</div>
+                
+              </div>
+            </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.6, CFG 0.4</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/short1_exag060_cfg040.webm"></audio>
+              <div class="meta">
+                <span>9.6 KB (119% vs af_heart)</span>
+                <span>2.25s</span>
+                <span>gen 5.11s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">That gives 0.2 moles.</div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="line-row">
+          <div class="line-header">
+            <div class="line-tags">
+              <span class="tag cat">Decimal (4.6 g)</span>
+              <span class="tag id">anim-017 &middot; step 2</span>
+              <span class="tag src">audio/spoken.json</span>
+            </div>
+            <p class="line-text">The number of moles is four point six divided by twenty-three.</p>
+          </div>
+          <div class="clips-grid">
+            
+        <div class="clip-card ref">
+          <div class="clip-head">
+            <span class="clip-label">af_heart (current)</span>
+            <span class="badge neutral">REF</span>
+          </div>
+          <audio controls preload="none" src="clips/decimal1_af_heart.webm"></audio>
+          <div class="meta">
+            <span>15.7 KB (16,030 B)</span>
+            <span>3.60s</span>
+            <span>~35.6 kbps</span>
+          </div>
+          <div class="whisper">
+            <div class="w-head"><span class="badge ok">OK</span> Whisper:</div>
+            <div class="w-text">The number of moles is 4.6 divided by 23.</div>
+            
+          </div>
+        </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Default (exag 0.5, cfg 0.5)</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/decimal1_default.webm"></audio>
+              <div class="meta">
+                <span>17.9 KB (115% vs af_heart)</span>
+                <span>4.29s</span>
+                <span>gen 7.92s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">The number of moles is 4.6 divided by 23.</div>
+                
+              </div>
+            </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.35</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/decimal1_exag035.webm"></audio>
+              <div class="meta">
+                <span>19.7 KB (126% vs af_heart)</span>
+                <span>4.73s</span>
+                <span>gen 8.58s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">The number of moles is 4.6 divided by 23.</div>
+                
+              </div>
+            </div>
+            <div class="clip-card ">
+              <div class="clip-head">
+                <span class="clip-label">Exaggeration 0.6, CFG 0.4</span>
+                <span class="badge ok">MATCH</span>
+              </div>
+              <audio controls preload="none" src="clips/decimal1_exag060_cfg040.webm"></audio>
+              <div class="meta">
+                <span>17.9 KB (114% vs af_heart)</span>
+                <span>4.17s</span>
+                <span>gen 7.37s</span>
+              </div>
+              <div class="whisper">
+                <div class="w-head">Whisper:</div>
+                <div class="w-text">The number of moles is 4.6 divided by 23.</div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+  </div>
+  <script>
+    const players = Array.from(document.querySelectorAll('audio'));
+    for (const p of players) {
+      p.addEventListener('play', () => {
+        for (const other of players) {
+          if (other !== p && !other.paused) other.pause();
+        }
+      });
+    }
+  </script>
+</body>
+</html>
