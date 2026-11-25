@@ -97,7 +97,7 @@ const questions = bank.questions as unknown as Question[]
 function PreviewQuestion({ question }: { question: Question }) {
   const [pickedId, setPickedId] = useState<OptionId | null>(null)
   return (
-    <section aria-label={'JAMB 2010 question ' + (typeof question.source === 'object' && question.source.id)}>
+    <section class="jp-mode-list" aria-label={'JAMB 2010 question ' + (typeof question.source === 'object' && question.source.id)}>
       <h3 class="jp-revisit-title">2010 · Question {typeof question.source === 'object' && question.source.id}</h3>
       <QuestionCard question={question} review={false} options={question.options} pickedId={pickedId} onPick={setPickedId} />
     </section>

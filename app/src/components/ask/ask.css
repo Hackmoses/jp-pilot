@@ -503,11 +503,23 @@ body:has(.jp-ask-sheet[open]) {
 }
 
 .jp-ask-figures {
+  flex: none;
   max-height: 14rem;
   overflow: auto;
-  padding: var(--space-2);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-small);
+  margin: 10px 16px 0;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
 }
 
-.jp-ask-figures > summary { cursor: pointer; }
+.jp-ask-body:not(.jp-ask-body--chat) .jp-ask-figures {
+  margin: 0 0 10px;
+}
+
+.jp-ask-figures > summary {
+  cursor: pointer;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #334155;
+}

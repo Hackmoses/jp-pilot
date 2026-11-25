@@ -44,8 +44,9 @@
 .jp-figure-caption {
   display: block;
   margin-top: var(--space-1);
-  font-size: .875rem;
-  color: var(--ink-2);
+  font-size: 13px;
+  line-height: 1.45;
+  color: #475569;
 }
 
 .jp-figure-math {

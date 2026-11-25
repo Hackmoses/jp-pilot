@@ -76,54 +76,61 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
 
   return (
     <div ref={body} class="jp-try-body">
-      <p class="jp-mode-lead">{context}</p>
-      <div class="jp-try-instruction">
-        <div>
-          <p class="jp-mode-lead"><strong>Predict.</strong> {renderMathText(prediction.question)}</p>
-          <Choices label="Prediction" choices={prediction.choices} picked={picked} onPick={setPicked} locked={unlocked} />
+      <p class="jp-try-context">{context}</p>
+      <div class="jp-try-predict">
+        <div class="jp-try-instruction">
+          <div>
+            <span class="jp-try-kicker">Predict</span>
+            <p class="jp-try-question">{renderMathText(prediction.question)}</p>
+            <Choices label="Prediction" choices={prediction.choices} picked={picked} onPick={setPicked} locked={unlocked} />
+          </div>
+          <ReadInstruction text={instruction} />
         </div>
-        <ReadInstruction text={instruction} />
+        {!unlocked && <p class="jp-try-prompt">Choose a prediction to unlock the controls.</p>}
+        {unlocked && !observed && <p class="jp-try-prompt">{renderMathText(prediction.action)}</p>}
+        {observed && <p class={'jp-try-outcome ' + (picked === prediction.correct ? 'jp-try-outcome--good' : 'jp-try-outcome--info')} role="status">
+          You predicted “{renderMathText(prediction.choices[picked!])}”. It turned out “{renderMathText(prediction.choices[prediction.correct])}”. {prediction.why}
+        </p>}
       </div>
-      {!unlocked && <p class="jp-mode-lead">Choose a prediction to unlock the controls.</p>}
-      {unlocked && !observed && <p class="jp-mode-lead">{renderMathText(prediction.action)}</p>}
-      {observed && <p class="jp-mode-lead" role="status">
-        You predicted “{renderMathText(prediction.choices[picked!])}”. It turned out “{renderMathText(prediction.choices[prediction.correct])}”. {prediction.why}
-      </p>}
       {mission && <div class="jp-try-mission">
-        <p class="jp-mode-lead"><strong>Mission {phase + 1} of 3</strong>
+        <p class="jp-try-kicker jp-try-kicker--mission">Mission {phase + 1} of 3
           {' '}<span class="jp-mode-studied" aria-label={phase + Number(passed) + ' missions complete'}>{'✓ '.repeat(phase + Number(passed))}</span>
         </p>
-        <p class="jp-mode-lead">{renderMathText(mission.goal)}</p>
+        <p class="jp-try-text">{renderMathText(mission.goal)}</p>
       </div>}
       <Playback unlocked={unlocked}>{children(unlocked)}</Playback>
-      <div class="jp-try-formulas">
-        {formulas.map((formula) => <span key={formula}>{renderMathText(formula)}</span>)}
-      </div>
+      {formulas.length > 0 && <div class="jp-try-formulas-box">
+        <span class="jp-try-formulas-label">Key formulas</span>
+        <div class="jp-try-formulas">
+          {formulas.map((formula) => <span key={formula}>{renderMathText(formula)}</span>)}
+        </div>
+      </div>}
       {observed && phase === -1 && <div class="jp-try-explain">
-        <p class="jp-mode-lead"><strong>Free play.</strong> Change the controls and watch what happens.</p>
-        <button type="button" class="jp-btn" onClick={advance}>Start missions</button>
+        <p class="jp-try-text"><strong>Free play.</strong> Change the controls and watch what happens.</p>
+        <button type="button" class="jp-btn jp-btn--primary" onClick={advance}>Start missions</button>
       </div>}
       {mission && <div class="jp-try-explain">
         {choice && (reached || passed) && <>
-          <p class="jp-mode-lead">{renderMathText(choice.question)}</p>
+          <p class="jp-try-question">{renderMathText(choice.question)}</p>
           <Choices label={phase === 1 ? 'Mission reason' : 'Mission answer'} choices={choice.choices} picked={reasonPick} onPick={setReasonPick} locked={passed} />
         </>}
         {passed ? <>
           <p class="jp-mode-studied" role="status"><span class="jp-try-tick">✓</span> Well done. Mission complete.</p>
-          {phase === 2 && <p class="jp-mode-lead"><strong>Common trap.</strong> {missions[2].trap}</p>}
-          <button type="button" class="jp-btn" onClick={advance}>{phase === 2 ? 'Explain why' : 'Next mission'}</button>
+          {phase === 2 && <p class="jp-try-trap"><strong>Common trap.</strong> {missions[2].trap}</p>}
+          <button type="button" class="jp-btn jp-btn--primary" onClick={advance}>{phase === 2 ? 'Explain why' : 'Next mission'}</button>
         </> : <>
-          {attempts > 0 && <p class="jp-mode-lead" role="status">{failure}</p>}
-          <button type="button" class="jp-btn" onClick={checkMission}
+          {attempts > 0 && <p class="jp-try-hint" role="status">{failure}</p>}
+          <button type="button" class="jp-btn jp-btn--primary" onClick={checkMission}
             disabled={Boolean(choice && reached && reasonPick === null)}>Check mission</button>
         </>}
       </div>}
       {phase === 3 && <div class="jp-try-explain">
         <p class="jp-mode-studied">✓ All three missions complete</p>
-        <p class="jp-mode-lead"><strong>Explain why.</strong> {renderMathText(explain.question)}</p>
+        <span class="jp-try-kicker">Explain why</span>
+        <p class="jp-try-question">{renderMathText(explain.question)}</p>
         <Choices label="Explain why" choices={explain.choices} picked={explainPick} onPick={setExplainPick} />
         {explainPick !== null && <>
-          <p class="jp-mode-lead" role="status">{renderMathText(explain.feedback[explainPick])}</p>
+          <p class="jp-try-outcome jp-try-outcome--info" role="status">{renderMathText(explain.feedback[explainPick])}</p>
           <a class="jp-btn jp-btn--primary" href={practiceHref}>Practise this</a>
         </>}
       </div>}
@@ -186,7 +193,7 @@ function Playback({ children, unlocked }: { children: ComponentChildren; unlocke
     }
   }
   return <div class="jp-try-motion" ref={root}>
-    <div class="jp-pills" role="group" aria-label="Animation controls">
+    <div class="jp-pills jp-try-playback-bar" role="group" aria-label="Animation controls">
       <button type="button" class="jp-btn" data-continuous onClick={() => play(!playing)}>{playing ? 'Pause' : 'Play'}</button>
       <button type="button" class="jp-btn" data-continuous aria-label="Slow motion 0.25 times" aria-pressed={slow}
         onClick={() => { motion.current?.rate(slow ? 1 : 0.25); setSlow(!slow) }}>0.25×</button>

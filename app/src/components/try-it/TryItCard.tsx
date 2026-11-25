@@ -77,7 +77,7 @@ export function TryItCard({ interactive, subject, chapter }: {
   }
 
   return (
-    <section class="jp-card jp-try-card" aria-labelledby={id + '-title'}>
+    <section class="jp-card jp-try-card" data-open={open ? 'true' : 'false'} aria-labelledby={id + '-title'}>
       <div class="jp-try-header">
         <h3 id={id + '-title'} class="jp-mode-card-title">{interactive.title}</h3>
         {completed && <span class="jp-mode-studied">✓ Completed</span>}
@@ -87,7 +87,7 @@ export function TryItCard({ interactive, subject, chapter }: {
             if (!open && !Demo && status === 'idle') void load()
           }}>{open ? 'Close' : 'Try it'}</button>
       </div>
-      <div id={id} hidden={!open}>
+      <div id={id} class="jp-try-panel" hidden={!open}>
         {open && Demo && <Demo practiceHref={'#/practice?' + new URLSearchParams({ subject, chapter })}
           onComplete={() => {
             markInteractiveCompleted(subject, chapter, interactive.id)
