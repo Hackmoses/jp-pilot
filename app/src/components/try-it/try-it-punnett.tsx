@@ -1,6 +1,6 @@
 import { useRef, useState } from 'preact/hooks'
 import { renderMathText } from '../../lib/mathText'
-import { Select, TryIt, Values } from './TryIt'
+import { Scene, Select, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 type Mother = 'HH' | 'Hh' | 'hh'
@@ -117,6 +117,14 @@ export default function Punnett(props: InteractiveProps) {
           </div>
         })}
       </div>
+      <Scene label="Two gametes meet to give an example offspring" height={42}>
+        <path d="M62 27H158M258 27H162" stroke="var(--option-line)" />
+        <Travel points={[62, 27, 151, 27]} seconds={2.3}><circle r="4" fill="var(--brand)" /></Travel>
+        <Travel points={[258, 27, 169, 27]} seconds={2.3}><circle r="4" fill="var(--memo)" /></Travel>
+        <text x="60" y="15" text-anchor="middle">Egg</text>
+        <text x="160" y="15" text-anchor="middle">Offspring</text>
+        <text x="260" y="15" text-anchor="middle">Sperm</text>
+      </Scene>
       <table class="jp-try-square" aria-label="Punnett square. Mother in rows, father in columns.">
         <thead><tr><td />{sperm.map((allele) => <th key={allele} scope="col">{renderMathText(gene(allele))}</th>)}</tr></thead>
         <tbody>{eggs.map((egg, row) => <tr key={row}>
@@ -128,7 +136,7 @@ export default function Punnett(props: InteractiveProps) {
             return <td key={allele}><button class={'jp-btn' + (result === 'Carrier' ? ' jp-try-balanced' : '')} type="button"
               aria-label={`Row ${row + 1} column ${column + 1}${result ? ' ' + result : ''}`} data-punnett-cell={i} onClick={() => place(i, selected)}>
               {filled ? renderMathText((filled & 1 ? gene(egg) : '□') + (filled & 2 ? gene(allele) : '□')) : 'Add alleles'}
-              {result && <small>{result}</small>}
+              {result && <small class="jp-try-tick">{result}</small>}
             </button></td>
           })}
         </tr>)}</tbody>

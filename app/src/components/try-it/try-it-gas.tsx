@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { DragHandle, near, Slider, TryIt, Values } from './TryIt'
+import { DragHandle, ease, near, Slider, Trace, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 const initial = { volume: 2, pressure: 100, kelvin: 300 }
@@ -15,13 +15,6 @@ const dots = [
   [10, 16], [18, 40], [28, 26], [36, 58], [48, 13], [54, 37],
   [64, 51], [73, 23], [79, 58], [87, 38], [91, 13], [9, 60],
 ]
-const graphX = (volume: number) => 215 + (volume - minVolume) * 27
-const graphY = (pressure: number) => 86 - pressure * 0.33
-const pressureCurve = Array.from({ length: 31 }, (_, index) => {
-  const volume = minVolume + index / 10
-  return [graphX(volume), graphY(boylePressure(volume))].join(',')
-}).join(' ')
-
 export default function GasLaws(props: InteractiveProps) {
   const [law, setLaw] = useState<'boyle' | 'charles'>('boyle')
   const [compressedVolume, setVolume] = useState(initial.volume)
@@ -61,36 +54,29 @@ export default function GasLaws(props: InteractiveProps) {
               onClick={() => setLaw('charles')}>Charles’ law</button>
           </div>
           <div class="jp-try-scene">
-            <svg viewBox="0 0 320 120" role="img" aria-label={boyle
-              ? 'Piston and a pressure against volume curve' : 'Gas molecules and a movable piston'}>
-              <rect x="22" y="22" width={piston - 22} height="68" fill="var(--brand-soft)" />
+            <svg viewBox="0 0 320 120" role="img" aria-label="Gas particles bouncing in a cylinder with a movable piston">
+              <rect x="22" y="22" width={piston - 22} {...ease({ width: piston - 22 })} height="68" fill="var(--brand-soft)" />
               <path d="M194 22H22V90H194" fill="none" stroke="var(--ink-2)" stroke-width="2" />
-              <path d={'M' + piston + ' 23v66m0-33h' + Math.min(21, 212 - piston)} fill="none"
-                stroke={boyle ? 'var(--brand)' : 'var(--ink-2)'} stroke-width="5" stroke-linecap="round" />
-              <svg x="25" y="24" width={piston - 28} height="64" viewBox="0 0 100 68" preserveAspectRatio="none">
-                <g class={unlocked ? 'jp-try-still' : undefined} fill="var(--brand)">
-                  {dots.map(([x, y]) => <circle key={x} cx={x} cy={y} r="2" />)}
-                </g>
-                {unlocked && <g class="jp-try-moving" fill="var(--brand)">
-                  {dots.map(([x, y], index) => <circle key={x} r="2">
-                    <animateMotion dur={(1.5 + index % 4 * 0.32) / molecularSpeedRatio(boyle ? initial.kelvin : kelvin) + 's'} repeatCount="indefinite"
-                      {...{ path: 'M' + x + ',' + y + ' L96,' + (68 - y) + ' L' + (100 - x) + ',4 L4,' + y + ' Z' }} />
-                  </circle>)}
-                </g>}
+              <g transform={`translate(${piston} 0)`} {...ease({ transform: `translate(${piston} 0)` })}>
+                <path d="M0 23v66m0-33h21" fill="none" stroke="var(--brand)" stroke-width="5" stroke-linecap="round" />
+              </g>
+              <svg x="25" y="24" width={piston - 28} {...ease({ width: piston - 28 })} height="64" viewBox="0 0 100 68" preserveAspectRatio="none">
+                {dots.map(([x, y], i) => <Travel key={x}
+                  seconds={(1.5 + i % 4 * 0.32) / molecularSpeedRatio(boyle ? initial.kelvin : kelvin)}
+                  points={[x, y, 96, 68 - y, 100 - x, 4, 4, y, x, y]} offset={i / dots.length}>
+                  <circle r="2" fill="var(--brand)" />
+                </Travel>)}
               </svg>
-              {boyle && <g>
-                <path d="M215 13V86H306" fill="none" stroke="var(--ink-2)" />
-                <polyline points={pressureCurve} fill="none" stroke="var(--brand)" stroke-width="2" />
-                <circle cx={graphX(volume)} cy={graphY(pressure)} r="4" fill="var(--brand)" />
-                <text x="224" y="17">P (kPa)</text>
-                <text x="278" y="104">V (L)</text>
-              </g>}
+              <text x="260" y="57" text-anchor="middle">Piston</text>
             </svg>
             {unlocked && boyle && <DragHandle x={piston / 320} y={56 / 120} onDrag={(fraction) =>
               adjustPiston(Math.min(maxVolume, Math.max(minVolume, Math.round((fraction * 320 - 22) / 42 * 10) / 10)))} />}
           </div>
-          {boyle ? <Slider label="Piston volume (L)" value={volume} min={minVolume} max={maxVolume} step={0.1} onChange={adjustPiston} />
-            : <Slider label="Heat the gas (K)" value={kelvin} min={150} max={600} step={5} onChange={setKelvin} />}
+          {boyle ? <Slider label={'Piston volume (L) · ' + volume.toFixed(2)} value={volume} min={minVolume} max={maxVolume} step={0.1} onChange={adjustPiston} />
+            : <Slider label={'Heat the gas (K) · ' + kelvin} value={kelvin} min={150} max={600} step={5} onChange={setKelvin} />}
+          <Trace x={boyle ? (volume - 1) / 3 : (kelvin - 150) / 450}
+            y={boyle ? pressure / 200 : volume / 4} series={law}
+            labels={boyle ? ['Volume (L)', 'Pressure (kPa)'] : ['Temperature (K)', 'Volume (L)']} />
           <Values items={{ 'P': pressure.toFixed(1) + ' kPa', 'V': volume.toFixed(2) + ' L', 'T': (boyle ? initial.kelvin : kelvin) + ' K' }} />
         </>
       }}

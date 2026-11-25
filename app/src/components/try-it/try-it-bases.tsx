@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { Select, TryIt, Values } from './TryIt'
+import { ease, Select, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 export function placeValues(base: number, digits: readonly number[]) {
@@ -49,12 +49,15 @@ export default function NumberBases(props: InteractiveProps) {
       </div>
       <div class="jp-try-scene">
         <svg viewBox="0 0 320 104" role="img" aria-label="Three place-value columns for the digits and their contributions">
+          <Travel points={[60, 92, 160, 92, 260, 92]} seconds={2.6}><circle r="3" fill="var(--brand)" /></Travel>
           {digits.map((digit, index) => {
             const x = 60 + index * 100
             return <g key={index} text-anchor="middle">
               <rect x={x - 41} y="13" width="82" height="78" rx="8" fill="none" stroke="var(--brand)" />
               <text x={x} y="37">{digit} × {base ** (2 - index)}</text>
-              <text x={x} y="65">{values[index]}</text>
+              <rect x={x - 32} y="75" {...ease({ width: 64 * values[index] / Math.max(1, sum) })}
+                width={64 * values[index] / Math.max(1, sum)} height="4" rx="2" fill="var(--memo)" />
+              <text x={x} y="65" {...ease({ '#': values[index] })}>{values[index]}</text>
             </g>
           })}
         </svg>

@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { Select, TryIt, Values } from './TryIt'
+import { ease, Select, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 const solutions = ['Dilute', 'Equal', 'Concentrated'] as const
@@ -13,6 +13,8 @@ export function osmosis(outside: Solution) {
 export default function OsmosisCell(props: InteractiveProps) {
   const [outside, setOutside] = useState<Solution>('Equal')
   const { water, cell, inset } = osmosis(outside)
+  const [before, setBefore] = useState(11)
+  const geometry = { x: 84 + inset, y: 18 + inset, width: 152 - 2 * inset, height: 94 - 2 * inset }
   const equal = outside === 'Equal'
   const inward = outside === 'Dilute'
   return <TryIt {...props} context="Salt draws water out of sliced vegetables, such as ugu, as they sit."
@@ -34,23 +36,24 @@ export default function OsmosisCell(props: InteractiveProps) {
       choices: ['Water moves towards lower water potential', 'The wall pushes the water out'], correct: 0,
       feedback: ['The partially permeable membrane allows water to move down the water-potential gradient.', 'The wall holds its shape. Water leaves through the membrane because water potential is lower outside.'] }}
     formulas={['Net water flow: higher → lower water potential']}>
-    {(unlocked) => <>
+    {() => <>
       <Select label="Outside solution" value={outside} options={solutions.map((name) => [name, name])}
-        onChange={(value) => setOutside(value as Solution)} />
+        onChange={(value) => { setBefore(inset); setOutside(value as Solution) }} />
       <div class="jp-try-scene">
         <svg viewBox="0 0 320 134" role="img" aria-label={cell + '. Water movement: ' + water}>
           <rect x="84" y="18" width="152" height="94" rx="12" fill="none" stroke="var(--ink-2)" stroke-width="3" />
-          <rect x={84 + inset} y={18 + inset} width={152 - 2 * inset} height={94 - 2 * inset}
-            rx="11" class="jp-try-membrane" fill="var(--memo-soft)" stroke="var(--memo)" stroke-width="2" />
+          <rect {...geometry} {...ease(geometry)} rx="11" fill="var(--memo-soft)" stroke="var(--memo)" stroke-width="2" />
+          {before !== inset && <rect x={84 + before} y={18 + before} width={152 - 2 * before} height={94 - 2 * before}
+            rx="11" fill="none" stroke="var(--ink-2)" stroke-opacity="0.4" stroke-dasharray="4 4" />}
           <text x="160" y="69" text-anchor="middle">{cell}</text>
           {[43, 84].map((y, index) => <g key={y} stroke="var(--brand)" fill="none" stroke-width="2">
             {[false, true].map((right) => {
               const reverse = equal ? index === 1 : !inward
               return <g key={String(right)} transform={right ? 'translate(320 0) scale(-1 1)' : undefined}>
                 <path d={reverse ? `M123 ${y}H50m6-5-6 5 6 5` : `M50 ${y}H123m-6-5 6 5-6 5`} />
-                {unlocked && <circle class="jp-try-moving" r="3" fill="var(--brand)">
-                  <animateMotion key={outside} {...{ path: reverse ? `M123 ${y}H50` : `M50 ${y}H123` }} dur="1.7s" repeatCount="indefinite" />
-                </circle>}
+                <Travel points={reverse ? [123, y, 50, y] : [50, y, 123, y]} seconds={1.7} offset={right ? 0.5 : 0}>
+                  <circle r="3" fill="var(--brand)" />
+                </Travel>
               </g>
             })}
           </g>)}

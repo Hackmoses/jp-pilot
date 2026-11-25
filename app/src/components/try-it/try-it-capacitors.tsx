@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Scene, Select, Slider, TryIt, Values } from './TryIt'
+import { ease, near, Scene, Select, Slider, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 export function capacitance(parts: number[], parallel: boolean, voltage: number) {
@@ -42,12 +42,15 @@ export default function Capacitors(props: InteractiveProps) {
           const x = parallel ? 160 : (i + 0.5) * 320 / count
           const y = parallel ? 23 + 34 * i : 55
           const signs = Math.min(4, Math.ceil((parallel ? part * voltage : charge) / 15))
-          return <g key={i} transform={`translate(${x} ${y})`}>
+          return <g key={i} transform={`translate(${x} ${y})`} {...ease({ transform: `translate(${x} ${y})` })}>
             <path d={parallel ? 'M-138 0H-7M7 0H138' : `M-${160 / count} 0H-7M7 0H${160 / count}`} stroke="var(--ink-2)" />
             <path d="M-7-11V11M7-11V11" stroke="var(--brand)" stroke-width="3" />
             <text x="0" y="24" text-anchor="middle">{part} μF</text>
             <text x="-13" y="-5" text-anchor="end" style={{ fill: 'var(--bad)' }}>{'+'.repeat(signs)}</text>
             <text x="13" y="-5" style={{ fill: 'var(--memo)' }}>{'−'.repeat(signs)}</text>
+            {voltage > 0 && <Travel points={[-7, -10, -7, 10, -7, -10]} seconds={7 / voltage}>
+              <circle r="2" fill="var(--bad)" />
+            </Travel>}
           </g>
         })}
       </Scene>

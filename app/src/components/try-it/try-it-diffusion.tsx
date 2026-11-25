@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Scene, Select, TryIt, Values } from './TryIt'
+import { ease, near, Scene, Select, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 const masses = { 'H₂': 2, He: 4, 'NH₃': 17, 'O₂': 32, HCl: 36.5, 'CO₂': 44, 'CH₄': 16 }
@@ -35,17 +35,16 @@ export default function DiffusionRace(props: InteractiveProps) {
       choices: ['Their diffusion rates are equal', 'Both gases stop moving in the middle'], correct: 0,
       feedback: ['At equal temperature, equal molar masses give equal rates and travel distances.', 'The gas particles still move. Both fronts reach the midpoint at the same time.'] }}
     formulas={['\\frac{r_{1}}{r_{2}} = \\sqrt{\\frac{M_{2}}{M_{1}}}']}>
-    {(unlocked) => <>
+    {() => <>
       <Scene label={'Gas fronts meet ' + Math.round(100 * meet) + '% of the way from the left'} height={91}>
         <rect x="15" y="24" width="290" height="42" rx="16" fill="none" stroke="var(--ink-2)" />
         <path d="M160 24v42" stroke="var(--option-line)" stroke-dasharray="3 3" />
-        <path d={`M${point} 20v50`} stroke="var(--good)" stroke-width="2" />
+        <path d={`M${point} 20v50`} {...ease({ d: `M${point} 20v50` })} stroke="var(--good)" stroke-width="2" />
         {[20, 300].map((x, side) => <g key={x} fill={side ? 'var(--memo)' : 'var(--brand)'}>
           <circle cx={x} cy="45" r="3" />
-          {unlocked && [34, 45, 56].map((y, index) => <circle key={y} class="jp-try-moving" cx={x} cy={y} r="3">
-            <animate key={left + right} attributeName="cx" from={x} to={point}
-              begin={index * 0.2 + 's'} dur={duration + 's'} repeatCount="indefinite" />
-          </circle>)}
+          <Travel points={[x, 45, point, 45]} seconds={duration}>
+            <circle cx="-7" cy="-11" r="3" /><circle r="3" /><circle cx="6" cy="11" r="3" />
+          </Travel>
         </g>)}
         <text x="18" y="84">{left}</text><text x="302" y="84" text-anchor="end">{right}</text>
       </Scene>

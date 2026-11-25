@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Scene, Slider, TryIt, Values } from './TryIt'
+import { ease, near, Scene, Slider, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 const factor = 380
@@ -36,10 +36,14 @@ export default function PartialPressures(props: InteractiveProps) {
       <Scene label="Gas particles in a fixed vessel and stacked bars for partial pressure">
         <rect x="15" y="10" width="290" height="54" rx="8" fill="none" stroke="var(--ink-2)" />
         {moles.map((amount, gas) => <g key={gas} fill={colours[gas]}>
-          {Array.from({ length: 4 * amount }, (_, dot) => <circle key={dot} r="3"
-            cx={28 + 21 * ((gas + dot * 3) % 13)} cy={20 + 8 * ((dot + gas * 3) % 5)} />)}
+          {[0, 1].map((group) => <Travel key={group} points={[0, 0, 8, 5, -6, -4, 0, 0]}
+            seconds={1.5 + gas * 0.15} offset={group * 0.5 + gas * 0.16}>
+            {Array.from({ length: Math.max(0, Math.ceil(amount - group * 0.5)) }, (_, dot) => <circle key={dot} r="3"
+              cx={29 + 19 * ((gas + dot * 4 + group * 3) % 14)} cy={24 + 7 * ((dot + gas * 3 + group) % 5)} />)}
+          </Travel>)}
           <rect x={15 + partials.slice(0, gas).reduce((sum, p) => sum + p, 0) / 12}
-            y="73" width={partials[gas] / 12} height="16" />
+            y="73" width={partials[gas] / 12}
+            {...ease({ x: 15 + partials.slice(0, gas).reduce((sum, p) => sum + p, 0) / 12, width: partials[gas] / 12 })} height="16" />
           <text x={24 + 55 * gas} y="105" style={{ fill: colours[gas] }}>{gases[gas]}</text>
         </g>)}
       </Scene>

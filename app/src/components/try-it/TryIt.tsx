@@ -1,7 +1,9 @@
 import type { ComponentChildren } from 'preact'
-import { useEffect, useId, useRef, useState } from 'preact/hooks'
+import { useEffect, useId, useLayoutEffect, useRef, useState } from 'preact/hooks'
 import { renderMathText, mathToSpeech } from '../../lib/mathText'
 import { cancelSpeech, getActiveSpeechKey, speak, subscribeToSpeechAvailability, subscribeToSpeechState } from '../../lib/speech'
+import { mountMotion, pulse } from './motion'
+import './motion.css'
 import type { InteractiveProps } from './TryItCard'
 
 type Reason = {
@@ -25,6 +27,7 @@ export function near(value: number, target: number, tolerance = 0) {
 }
 
 export function TryIt({ context, prediction, missions, explain, formulas, practiceHref, onComplete, children }: TryItProps) {
+  const body = useRef<HTMLDivElement>(null)
   const [picked, setPicked] = useState<number | null>(null)
   const [observed, setObserved] = useState(false)
   const [phase, setPhase] = useState(-1)
@@ -57,6 +60,7 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
     if (!mission) return
     if (reached && (!choice || reasonPick === choice.correct)) {
       setPassed(true)
+      body.current?.querySelectorAll<HTMLElement>('.jp-try-values').forEach((reading) => pulse(reading, 'confirmed'))
       if (phase === 2) onComplete()
     } else {
       setAttempts(attempts + 1)
@@ -71,7 +75,7 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
   }
 
   return (
-    <div class="jp-try-body">
+    <div ref={body} class="jp-try-body">
       <p class="jp-mode-lead">{context}</p>
       <div class="jp-try-instruction">
         <div>
@@ -91,9 +95,7 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
         </p>
         <p class="jp-mode-lead">{renderMathText(mission.goal)}</p>
       </div>}
-      <fieldset class="jp-try-controls" disabled={!unlocked} aria-label="Try it controls">
-        {children(unlocked)}
-      </fieldset>
+      <Playback unlocked={unlocked}>{children(unlocked)}</Playback>
       <div class="jp-try-formulas">
         {formulas.map((formula) => <span key={formula}>{renderMathText(formula)}</span>)}
       </div>
@@ -107,7 +109,7 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
           <Choices label={phase === 1 ? 'Mission reason' : 'Mission answer'} choices={choice.choices} picked={reasonPick} onPick={setReasonPick} locked={passed} />
         </>}
         {passed ? <>
-          <p class="jp-mode-studied" role="status">✓ Well done. Mission complete.</p>
+          <p class="jp-mode-studied" role="status"><span class="jp-try-tick">✓</span> Well done. Mission complete.</p>
           {phase === 2 && <p class="jp-mode-lead"><strong>Common trap.</strong> {missions[2].trap}</p>}
           <button type="button" class="jp-btn" onClick={advance}>{phase === 2 ? 'Explain why' : 'Next mission'}</button>
         </> : <>
@@ -156,19 +158,103 @@ function ReadInstruction({ text }: { text: string }) {
   </button>
 }
 
-export function Values({ items, balanced = false }: { items: Record<string, string>; balanced?: boolean }) {
-  const previous = useRef(items)
-  const [changed, setChanged] = useState<string[]>([])
-  useEffect(() => {
-    const next = Object.keys(items).filter((label) => previous.current[label] !== items[label])
-    previous.current = items
-    if (next.length) setChanged(next)
-  }, [items])
+function Playback({ children, unlocked }: { children: ComponentChildren; unlocked: boolean }) {
+  const root = useRef<HTMLDivElement>(null)
+  const motion = useRef<ReturnType<typeof mountMotion> | null>(null)
+  const [playing, setPlaying] = useState(true)
+  const [slow, setSlow] = useState(false)
+  function play(value: boolean) {
+    motion.current?.play(value)
+    setPlaying(value)
+  }
+  useLayoutEffect(() => {
+    const node = root.current!
+    const controller = mountMotion(node)
+    motion.current = controller
+    const start = () => play(true)
+    node.addEventListener('try-play', start)
+    return () => {
+      controller.stop()
+      node.removeEventListener('try-play', start)
+    }
+  }, [])
+  function cause(event: Event) {
+    const target = event.target as HTMLElement
+    const control = target.closest<HTMLElement>('button, input, select, [data-try-handle]')
+    if (control && (event.type !== 'click' || control.matches('button'))) {
+      pulse(control.closest('label') ?? control, 'cause')
+    }
+  }
+  return <div class="jp-try-motion" ref={root}>
+    <div class="jp-pills" role="group" aria-label="Animation controls">
+      <button type="button" class="jp-btn" data-continuous onClick={() => play(!playing)}>{playing ? 'Pause' : 'Play'}</button>
+      <button type="button" class="jp-btn" data-continuous aria-label="Slow motion 0.25 times" aria-pressed={slow}
+        onClick={() => { motion.current?.rate(slow ? 1 : 0.25); setSlow(!slow) }}>0.25×</button>
+      <button type="button" class="jp-btn" aria-label="Step forward" onClick={() => { play(false); motion.current?.step() }}>Step</button>
+      <button type="button" class="jp-btn" onClick={() => { motion.current?.replay(); play(true) }}>Replay</button>
+    </div>
+    <fieldset class="jp-try-controls" disabled={!unlocked} aria-label="Try it controls"
+      onInputCapture={cause} onChangeCapture={cause} onClickCapture={cause}>
+      {children}
+    </fieldset>
+  </div>
+}
+
+function Reading({ value, live }: { value: string; live: boolean }) {
+  const initial = useRef(value)
+  const previous = useRef(value)
+  const node = useRef<HTMLElement>(null)
+  const canCount = !live && /[0-9]/.test(value) && !/[{}]/.test(value)
+  useLayoutEffect(() => {
+    if (!live && previous.current !== value) {
+      node.current?.classList.add('jp-try-changed')
+      pulse(node.current!, 'effect')
+    }
+    previous.current = value
+  }, [value, live])
+  return <strong ref={node} onAnimationEnd={(event) => event.currentTarget.classList.remove('jp-try-changed')}>
+    {canCount ? <><span class="jp-try-spoken">{value}</span><span aria-hidden="true" {...ease({ '#': value })}>{initial.current}</span></>
+      : renderMathText(value)}
+  </strong>
+}
+
+export function Values({ items, balanced = false, live = false }: { items: Record<string, string>; balanced?: boolean; live?: boolean }) {
   return <div class={'jp-try-values jp-try-readings' + (balanced ? ' jp-try-balanced' : '')}>
     {Object.entries(items).map(([label, value]) => <span key={label}>
-      {renderMathText(label)} <strong class={changed.includes(label) ? 'jp-try-changed' : undefined}>{renderMathText(value)}</strong>
+      {renderMathText(label)} <Reading value={value} live={live} />
     </span>)}
   </div>
+}
+
+export function ease(attrs: Record<string, number | string>) {
+  return { 'data-ease': JSON.stringify(Object.fromEntries(Object.entries(attrs).map(([key, value]) => [key, String(value)]))) }
+}
+
+export function Travel({ points, seconds, offset = 0, children }: {
+  points: readonly number[]; seconds: number; offset?: number; children: ComponentChildren
+}) {
+  return <g data-flow={[seconds, offset, ...points].join(',')} transform={`translate(${points[0]} ${points[1]})`} aria-hidden="true">{children}</g>
+}
+
+export function Trace({ x, y, series = '', labels }: {
+  x: number; y: number; series?: string; labels: readonly [string, string]
+}) {
+  const history = useRef({ series, points: [[x, y]] })
+  if (history.current.series !== series) history.current = { series, points: [[x, y]] }
+  const points = history.current.points
+  const [lastX, lastY] = points[points.length - 1]
+  if (x !== lastX || y !== lastY) {
+    points.push([x, y])
+    if (points.length > 32) points.shift()
+  }
+  return <Scene height={100} label={labels[1] + ' plotted against ' + labels[0]}>
+    <path d="M31 10v62h268" fill="none" stroke="var(--option-line)" />
+    <polyline points={points.map(([px, py]) => [31 + 260 * px, 72 - 58 * py].join(',')).join(' ')}
+      fill="none" stroke="var(--brand)" stroke-width="2" />
+    {points.map(([px, py], i) => <circle key={i} cx={31 + 260 * px} cy={72 - 58 * py} r="2" fill="var(--brand)" />)}
+    <circle cx={31 + 260 * x} cy={72 - 58 * y} {...ease({ cx: 31 + 260 * x, cy: 72 - 58 * y })} r="4" fill="var(--memo)" />
+    <text x="38" y="13">{labels[1]}</text><text x="295" y="91" text-anchor="end">{labels[0]}</text>
+  </Scene>
 }
 
 export function Select({ label, value, options, onChange }: {
@@ -203,7 +289,7 @@ export function Slider({ label, value, valueText, min, max, step, onChange }: {
 export function DragHandle({ x, y, onDrag }: { x: number; y: number; onDrag: (fraction: number) => void }) {
   const drag = useRef<{ pointer: number; start: number; x: number; width: number } | null>(null)
   return (
-    <span class="jp-try-handle" aria-hidden="true" style={{ left: `${x * 100}%`, top: `${y * 100}%` }}
+    <span class="jp-try-handle" data-try-handle aria-hidden="true" style={{ left: `${x * 100}%`, top: `${y * 100}%` }}
       onPointerDown={(event) => {
         if (!event.isPrimary || event.button !== 0) return
         const handle = event.currentTarget
@@ -213,7 +299,10 @@ export function DragHandle({ x, y, onDrag }: { x: number; y: number; onDrag: (fr
       }}
       onPointerMove={(event) => {
         const active = drag.current
-        if (active?.pointer === event.pointerId) onDrag(active.x + (event.clientX - active.start) / active.width)
+        if (active?.pointer === event.pointerId) {
+          pulse(event.currentTarget, 'cause')
+          onDrag(active.x + (event.clientX - active.start) / active.width)
+        }
       }}
       onLostPointerCapture={() => { drag.current = null }} />
   )

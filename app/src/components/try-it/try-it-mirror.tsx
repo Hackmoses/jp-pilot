@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { DragHandle, near, Slider, TryIt, Values } from './TryIt'
+import { DragHandle, ease, near, Slider, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 const focalLength = 5
@@ -70,25 +70,29 @@ export default function ConcaveMirror(props: InteractiveProps) {
             <svg viewBox="0 0 320 168" role="img" aria-label="Concave mirror ray diagram. Solid lines show light rays and dashed lines show backward extensions.">
               <path d="M8 84H312" stroke="var(--option-line)" />
               <path d="M183 25Q201 84 183 143" fill="none" stroke="var(--ink-2)" stroke-width="2" />
-              {rays.map(({ mirrorY, slope }, index) => (
-                <g key={mirrorY} stroke={rayColours[index]} fill="none" stroke-width="1.5">
-                  <polyline points={[[objectX, tip], [pole, mirrorY], [8, mirrorY + slope * (8 - pole)]]
-                    .map((point) => point.join(',')).join(' ')} />
+              {rays.map(({ mirrorY, slope }, index) => {
+                const reflectedY = mirrorY + slope * (8 - pole)
+                const points = [objectX, tip, pole, mirrorY, 8, reflectedY]
+                const line = points.join(' ')
+                return <g key={mirrorY} stroke={rayColours[index]} fill="none" stroke-width="1.5">
+                  <polyline points={line} {...ease({ points: line })} />
                   {virtual && <line x1={pole} y1={mirrorY} x2="312" y2={mirrorY + slope * (312 - pole)} stroke-dasharray="4 4" />}
+                  <Travel points={points} seconds={1.8} offset={index * 0.5}><circle r="2.5" fill={rayColours[index]} /></Travel>
                 </g>
-              ))}
+              })}
               {[[pole - 2 * scale * focalLength, 'C'], [focusX, 'F'], [pole, 'P']].map(([x, label]) =>
                 <g key={label}><circle cx={x} cy={axis} r="2.5" fill="var(--ink-2)" />
                   <text x={x} y={axis + 18} text-anchor="middle">{label}</text></g>)}
-              <path d={arrow(objectX, tip)} fill="none" stroke="var(--brand)" stroke-width="2.5" />
-              {image && inFrame && <path d={arrow(imageX, imageY)} fill="none" stroke="var(--memo)" stroke-width="2.5" />}
+              <path d={arrow(objectX, tip)} {...ease({ d: arrow(objectX, tip) })} fill="none" stroke="var(--brand)" stroke-width="2.5" />
+              {image && <path d={arrow(imageX, imageY)} opacity={Number(inFrame)}
+                {...ease({ d: arrow(imageX, imageY), opacity: Number(inFrame) })} fill="none" stroke="var(--memo)" stroke-width="2.5" />}
               <text x="12" y="19" style={{ fill: 'var(--brand)' }}>Object</text>
               <text x="312" y="19" text-anchor="end" style={{ fill: 'var(--memo)' }}>Image</text>
             </svg>
             {unlocked && <DragHandle x={objectX / diagramWidth} y={(axis + tip) / 2 / diagramHeight} onDrag={(fraction) =>
               moveObject(Math.max(minDistance, Math.min(maxDistance, Math.round((pole - fraction * diagramWidth) / scale * 2) / 2)))} />}
           </div>
-          <Slider label="Object distance (cm)" value={u} min={minDistance} max={maxDistance} step={0.5} onChange={moveObject} />
+          <Slider label={'Object distance (cm) · ' + u} value={u} min={minDistance} max={maxDistance} step={0.5} onChange={moveObject} />
           <Values items={{ 'u': u + ' cm', 'v': image ? image.v.toFixed(2) + ' cm' : '∞', 'f': focalLength + ' cm',
             'm': image ? image.magnification.toFixed(2) : '—', 'Image height': image ? Math.abs(4 * image.magnification).toFixed(2) + ' cm' : '—',
             'Image': image ? (virtual ? 'Virtual, upright' : 'Real, inverted') + (!inFrame ? ' · Outside diagram' : '') : 'At infinity. Reflected rays are parallel.' }} />

@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Select, Slider, TryIt, Values } from './TryIt'
+import { near, Select, Slider, Trace, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 type Layout = 'series' | 'parallel'
@@ -59,12 +59,15 @@ export default function CircuitLab(props: InteractiveProps) {
               <text x={x + 25} y={y + 4} text-anchor="middle">{r} Ω</text>
             </g>
           })}
-          {current > 0 && [0, 1, 2].map((dot) => <circle key={dot} class="jp-try-moving" r="3" fill="var(--brand)">
-            <animateMotion {...{ path: "M150 22H28V124H292V22H171" }} dur={Math.max(0.7, 9 / current) + 's'}
-              key={current} begin={-dot * Math.max(0.7, 9 / current) / 3 + 's'} repeatCount="indefinite" />
-          </circle>)}
+          {current > 0 && [0, 1, 2].map((dot) => <Travel key={dot} offset={dot / 3}
+            points={[150, 22, 28, 22, 28, 124, 292, 124, 292, 22, 171, 22]}
+            seconds={9 / current}>
+            <circle r="3" fill="var(--brand)" />
+          </Travel>)}
         </svg>
       </div>
+      <Trace x={(total + internal) / 41} y={current / 60} series={String(emf)}
+        labels={['Total resistance (Ω)', 'Current (A)']} />
       <Values items={{ 'External R': total.toFixed(2) + ' Ω', 'Current': current.toFixed(2) + ' A', 'Terminal voltage': terminal.toFixed(2) + ' V' }} />
       <div class="jp-try-sliders">
         {resistors.slice(0, count).map((r, index) => <Slider key={index} label={`Resistor ${index + 1} (Ω)`} value={r} min={1} max={12} step={1}

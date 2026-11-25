@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Scene, Slider, TryIt, Values } from './TryIt'
+import { ease, near, Scene, Slider, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 export function reaction(hydrogen: number, oxygen: number) {
@@ -39,19 +39,21 @@ export default function LimitingReagent(props: InteractiveProps) {
       choices: ['The reaction uses two volumes of hydrogen per volume of oxygen', 'It uses more oxygen than hydrogen per batch'], correct: 0,
       feedback: ['Six volumes of hydrogen need only three of oxygen, leaving one oxygen volume.', 'The coefficients are 2 for hydrogen and 1 for oxygen.'] }}
     formulas={['2H_{2} + O_{2} → 2H_{2}O', 'Gas volumes at the same temperature and pressure: 2 : 1 : 2']}>
-    {(unlocked) => <>
+    {() => <>
       <Scene label="Dots group into hydrogen, oxygen and water molecules. The rows show what is left and what is made." height={124}>
-        {rows.map(([label, value, colour], row) => <g key={label} transform={`translate(0 ${row * 36})`}>
+        {rows.map(([label, value, colour], row) => <g key={label} transform={`translate(0 ${row * 36})`}
+          data-replay-from={row === 2 ? '{"opacity":"0"}' : undefined} {...ease({ opacity: 1 })}>
           <text x="9" y="25">{label}</text>
           {Array.from({ length: Math.ceil(value) }, (_, i) => <g key={i} transform={`translate(${107 + 24 * (i % 9)} ${19 + 10 * Math.floor(i / 9)})`}
-            opacity={Math.min(1, value - i)}>
+            opacity={Math.min(1, value - i)} {...ease({ opacity: Math.min(1, value - i) })}>
             <circle cx="-4" r="3" fill={colour} /><circle cx="4" r="3" fill={colour} />
             {row === 2 && <circle cy="-4" r="3" fill="var(--memo)" />}
           </g>)}
         </g>)}
-        {unlocked && water > 0 && <circle class="jp-try-moving" r="3" fill="var(--brand)">
-          <animateMotion {...{ path: 'M86 22Q103 44 107 83' }} dur="1.8s" repeatCount="indefinite" />
-        </circle>}
+        {water > 0 && <>
+          <Travel points={[85, 14, 99, 53, 108, 89]} seconds={1.8}><circle r="2.5" fill="var(--brand)" /></Travel>
+          <Travel points={[86, 49, 99, 53, 108, 85]} seconds={1.8}><circle r="2.5" fill="var(--memo)" /></Travel>
+        </>}
       </Scene>
       <Values items={{ 'Water made': water.toFixed(1) + ' cm³', 'Hydrogen left': hydrogenLeft.toFixed(1) + ' cm³', 'Oxygen left': oxygenLeft.toFixed(1) + ' cm³' }} />
       <div class="jp-try-sliders">

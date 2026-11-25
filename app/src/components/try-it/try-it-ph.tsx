@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Select, TryIt, Values } from './TryIt'
+import { ease, near, Select, Trace, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 type Solute = 'HCl' | 'NaOH'
@@ -48,12 +48,20 @@ export default function PHScale(props: InteractiveProps) {
         <svg viewBox="0 0 320 102" role="img" aria-label={'pH scale from 0 to 14. Marker at ' + pH}>
           <path d="M20 37h140" stroke="var(--bad)" stroke-width="5" />
           <path d="M160 37h140" stroke="var(--brand)" stroke-width="5" />
-          <circle cx={marker} cy="37" r="8" fill="var(--bg)" stroke={colour} stroke-width="3" />
+          <circle cx={marker} {...ease({ cx: marker })} cy="37" r="8" fill="var(--bg)" stroke={colour} stroke-width="3" />
           <text x="17" y="57">0</text><text x="147" y="57">7</text><text x="289" y="57">14</text>
-          {Array.from({ length: 12 - 3 * dilutions }, (_, index) => <circle key={index}
-            cx={45 + 21 * index} cy="78" r="4" fill={colour} />)}
+          {Array.from({ length: 12 }, (_, i) => {
+            const x = 45 + 21 * i
+            const opacity = Number(i < 12 - 3 * dilutions)
+            return <g key={i} opacity={opacity} {...ease({ opacity })}>
+              <Travel points={[x, 76, x + 6, 83, x - 1, 87, x, 76]} seconds={1.3} offset={i / 12}>
+                <circle r="4" fill={colour} />
+              </Travel>
+            </g>
+          })}
         </svg>
       </div>
+      <Trace x={dilutions / 3} y={pH / 14} series={solute} labels={['Tenfold dilutions', 'pH']} />
       <Values items={{ 'pH': String(pH), 'pOH': String(14 - pH), [acid ? 'Acid indicator (litmus) · [H⁺]' : 'Base indicator (litmus) · [OH⁻]']: concentration + ' mol/dm³' }} />
     </>}
   </TryIt>

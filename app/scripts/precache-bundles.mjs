@@ -11,7 +11,6 @@ const sources = [
   'src/screens/PracticeRun.tsx',
   'src/screens/Results.tsx',
   'src/screens/Summary.tsx',
-  ...Object.keys(manifest).filter((key) => key.startsWith('src/components/try-it/try-it-')),
 ]
 const visited = new Set()
 const studySubjects = ['chemistry', 'physics', 'biology', 'mathematics']

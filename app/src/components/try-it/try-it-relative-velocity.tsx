@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Scene, Select, Slider, TryIt, Values } from './TryIt'
+import { ease, near, Scene, Select, Slider, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 export const relativeVelocity = (a: number, b: number, opposite: boolean) => (opposite ? -b : b) - a
@@ -31,12 +31,12 @@ export default function RelativeVelocity(props: InteractiveProps) {
       choices: ['A’s velocity relative to itself is zero', 'A’s ground speed becomes zero'], correct: 0,
       feedback: ['The reference frame moves with A. Subtract A’s ground velocity from every object.', 'Its ground speed is unchanged. Only the frame of reference changed.'] }}
     formulas={['v_{B/A} = v_{B} − v_{A}', 'Relative speed = |v_{B/A}|']}>
-    {(unlocked) => <>
+    {() => <>
       <Scene label={inA ? 'Car A stationary in its own frame and B moving relative to it' : 'Both cars seen from the road'}>
         <path d="M12 54H308" stroke="var(--option-line)" stroke-dasharray="7 4" />
         {displayed.map((v, i) => {
           const direction = Math.sign(v)
-          const moves = unlocked && v !== 0
+          const moves = v !== 0
           const colour = i ? 'var(--memo)' : 'var(--brand)'
           const car = <>
             <rect x="139" y="12" width="42" height="21" rx="5" fill="var(--bg)" stroke={colour} />
@@ -44,14 +44,11 @@ export default function RelativeVelocity(props: InteractiveProps) {
             <text x="160" y="27" text-anchor="middle">{i ? 'B' : 'A'}</text>
           </>
           return <g key={i} transform={`translate(0 ${i * 50})`}>
-            <g class={moves ? 'jp-try-still' : undefined}>{car}</g>
-            {moves && <g class="jp-try-moving">
-              {car}
-              <animateTransform key={v} attributeName="transform" type="translate"
-                from={-direction * 52 + ' 0'} to={direction * 52 + ' 0'} dur={170 / Math.abs(v) + 's'} repeatCount="indefinite" />
-            </g>}
-            {v !== 0 && <path transform={`translate(160 46) scale(${direction} 1)`}
-              d={`M0 0h${16 + Math.abs(v) * 0.31}m-6-4 6 4-6 4`} fill="none" stroke={colour} stroke-width="2" />}
+            {moves ? <Travel points={[-direction * 52, 0, direction * 52, 0]} seconds={170 / Math.abs(v)}>{car}</Travel> : car}
+            <path transform={`translate(160 46) scale(${direction || 1} 1)`}
+              d={`M0 0h${16 + Math.abs(v) * 0.31}m-6-4 6 4-6 4`}
+              {...ease({ d: `M0 0h${16 + Math.abs(v) * 0.31}m-6-4 6 4-6 4`, opacity: Number(moves) })}
+              opacity={Number(moves)} fill="none" stroke={colour} stroke-width="2" />
           </g>
         })}
       </Scene>

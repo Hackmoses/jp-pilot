@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { Select, TryIt, Values } from './TryIt'
+import { ease, Select, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 const compounds = {
@@ -53,8 +53,10 @@ export default function OxidationFinder(props: InteractiveProps) {
       <div class="jp-try-scene">
         <svg viewBox="0 0 320 102" role="img" aria-label={balanced ? 'Total and overall charge balance' : 'Balance tilted towards the larger number'}>
           <path d="M160 49l-16 41h32z" fill="var(--ink-2)" />
-          <g transform={`rotate(${Math.max(-18, Math.min(18, (charge - total) * 3))} 160 48)`}>
+          <g transform={`rotate(${Math.max(-18, Math.min(18, (charge - total) * 3))} 160 48)`}
+            {...ease({ transform: `rotate(${Math.max(-18, Math.min(18, (charge - total) * 3))} 160 48)` })}>
             <path d="M59 48h202m-187 0-12 20h24zm172 0-12 20h24z" fill="none" stroke={balanced ? 'var(--good)' : 'var(--brand)'} stroke-width="3" />
+            <Travel points={[115, 48, 75, 48, 75, 59]} seconds={1.8}><circle r="3" fill="var(--memo)" /></Travel>
             <text x="74" y="38" text-anchor="middle">Total {total}</text><text x="246" y="38" text-anchor="middle">Charge {charge}</text>
           </g>
         </svg>

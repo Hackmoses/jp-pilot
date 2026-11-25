@@ -1,6 +1,7 @@
 import type { ComponentType } from 'preact'
 import { useId, useState } from 'preact/hooks'
 import { getQuestion } from '../../lib/data'
+import { waitForOfflineControl } from '../../lib/offline'
 import { getQuestionChapter, hasCompletedInteractive, markInteractiveCompleted } from '../../lib/modes'
 
 export type InteractiveProps = { practiceHref: string; onComplete: () => void }
@@ -61,6 +62,7 @@ export function TryItCard({ interactive, subject, chapter }: {
   async function load() {
     setStatus('loading')
     try {
+      await waitForOfflineControl()
       const { default: component } = await interactive.load()
       setDemo(() => component)
       setStatus('idle')

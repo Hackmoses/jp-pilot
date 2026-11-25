@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Select, Slider, TryIt, Values } from './TryIt'
+import { ease, near, Select, Slider, Trace, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 export const faradayConstant = 96500
@@ -48,17 +48,18 @@ export default function Electrolysis(props: InteractiveProps) {
         choices: ['Positive metal ions gain electrons there', 'Positive metal ions lose electrons there'], correct: 0,
         feedback: ['Gaining electrons reduces the metal ions to neutral atoms.', 'Reduction takes place at the cathode. The metal ions gain electrons.'] }}
       formulas={['Q = It', 'n_{e} = \\frac{Q}{F}', 'm = \\frac{ItM}{zF}']}>
-      {(unlocked) => <>
+      {() => <>
         <div class="jp-try-scene">
           <svg viewBox="0 0 320 114" role="img" aria-label="Electrolysis cell with the metal deposit shown in blue on the cathode">
             <path d="M70 50H250V100H70Z" fill="var(--brand-soft)" />
             <path d="M70 42V100H250V42 M112 45V16H151 M169 16H208V45 M151 7V25 M169 11V21"
               fill="none" stroke="var(--ink-2)" stroke-width="2" />
             <path d="M112 44V80 M208 44V80" fill="none" stroke="var(--ink)" stroke-width="8" />
-            <rect x={204 - thickness / 2} y="50" width={8 + thickness} height="32" fill="var(--brand)" opacity={mass > 0 ? 1 : 0} />
-            {unlocked && current > 0 && [57, 71, 85].map((y) => <circle key={y} r="3" class="jp-try-moving" fill="var(--memo)">
-              <animateMotion key={current} {...{ path: `M125 ${y}L200 ${Math.min(y, 77)}` }} dur={4 / current + 's'} repeatCount="indefinite" />
-            </circle>)}
+            <rect data-replay-from='{"x":"204","width":"8","opacity":"0"}' x={204 - thickness / 2} y="50" width={8 + thickness} {...ease({ x: 204 - thickness / 2, width: 8 + thickness, opacity: Number(mass > 0) })} height="32" fill="var(--brand)" opacity={mass > 0 ? 1 : 0} />
+            {current > 0 && [57, 71, 85].map((y, i) => <Travel key={y} seconds={4 / current}
+              offset={i / 3} points={[125, y, 200, Math.min(y, 77)]}>
+              <circle r="3" fill="var(--memo)" />
+            </Travel>)}
             <text x="127" y="97">Metal ions →</text>
             <text x="79" y="39">Anode +</text>
             <text x="215" y="39">Cathode −</text>
@@ -67,9 +68,11 @@ export default function Electrolysis(props: InteractiveProps) {
         <Select label="Metal ion" value={metal} options={Object.entries(metals).map(([key, item]) => [key, item.name])}
           onChange={(value) => setMetal(value as Metal)} />
         <div class="jp-try-sliders">
-          <Slider label="Current (A)" value={current} min={0} max={5} step={0.1} onChange={setCurrent} />
-          <Slider label="Time (s)" value={seconds} min={0} max={1930} step={5} onChange={setSeconds} />
+          <Slider label={'Current (A) · ' + current.toFixed(1)} value={current} min={0} max={5} step={0.1} onChange={setCurrent} />
+          <Slider label={'Time (s) · ' + seconds} value={seconds} min={0} max={1930} step={5} onChange={setSeconds} />
         </div>
+        <Trace x={seconds / 1930} y={mass / Math.max(0.001, deposition(current, 1930, metal).mass)}
+          series={metal + current} labels={['Time (s)', 'Deposited mass (g)']} />
         <Values items={{ 'I': current.toFixed(1) + ' A', 't': seconds + ' s', 'Q': charge.toFixed(1) + ' C',
           'Electrons': electronMoles.toFixed(4) + ' mol', 'Mass': mass.toFixed(3) + ' g' }} />
         <p class="jp-mode-lead">F = 96,500 C/mol · M = {molarMass} g/mol · z = {electrons} electrons per ion</p>

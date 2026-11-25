@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Scene, Slider, TryIt, Values } from './TryIt'
+import { ease, near, Scene, Slider, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 export function pulley(segments: number, load: number, lostPercent: number) {
@@ -40,9 +40,14 @@ export default function Pulley(props: InteractiveProps) {
         {Array.from({ length: segments }, (_, i) => <path key={i} d={`M${39 + i * 22} 16V87`} stroke="var(--brand)" stroke-width="2" />)}
         {Array.from({ length: Math.floor(segments / 2) }, (_, i) => <circle key={i} cx={50 + 44 * i} cy="82" r="10"
           fill="var(--brand-soft)" stroke="var(--ink-2)" />)}
-        <rect x="68" y="91" width="55" height="22" rx="4" fill="var(--memo-soft)" stroke="var(--memo)" />
-        <text x="95" y="106" text-anchor="middle">{load} N</text>
-        <text x="185" y="25">Rope pulled</text><path d={`M188 43h${rope * 18}`} stroke="var(--brand)" stroke-width="6" />
+        <Travel points={[0, 0, 0, -22, 0, 0]} seconds={2.8}>
+          <rect x="68" y="91" width="55" height="22" rx="4" fill="var(--memo-soft)" stroke="var(--memo)" />
+          <text x="95" y="106" text-anchor="middle">{load} N</text>
+        </Travel>
+        <Travel points={[151, 30, 151, 30 + 9 * segments, 151, 30]} seconds={2.8}>
+          <circle r="3" fill="var(--brand)" />
+        </Travel>
+        <text x="185" y="25">Rope pulled</text><path d={`M188 43h${rope * 18}`} {...ease({ d: `M188 43h${rope * 18}` })} stroke="var(--brand)" stroke-width="6" />
         <text x="185" y="72">Load raised</text><path d="M188 90h18" stroke="var(--memo)" stroke-width="6" />
       </Scene>
       <Values items={{ 'Effort': effort.toFixed(1) + ' N', 'MA': advantage.toFixed(2), 'VR': String(segments), 'Efficiency': efficiency.toFixed(1) + '%',

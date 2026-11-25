@@ -277,21 +277,6 @@
   justify-self: start;
 }
 
-.jp-try-still {
-  display: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .jp-try-moving {
-    display: none;
-  }
-
-  .jp-try-still {
-    display: inline;
-  }
-}
-
-
 .jp-try-card {
   min-width: 0;
 }
@@ -403,12 +388,6 @@
 
 .jp-try-square small {
   display: block;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .jp-try-membrane {
-    transition: x 220ms, y 220ms, width 220ms, height 220ms;
-  }
 }
 
 .jp-mode-card {

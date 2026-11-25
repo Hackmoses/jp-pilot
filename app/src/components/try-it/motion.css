@@ -1,0 +1,71 @@
+.jp-try-motion {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.jp-try-spoken {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.jp-try-readings {
+  font-variant-numeric: tabular-nums;
+}
+
+.jp-try-motion [data-cause="a"], .jp-try-motion [data-effect="a"], .jp-try-motion [data-confirmed="a"] {
+  animation-name: jp-try-pulse-a;
+}
+
+.jp-try-motion [data-cause="b"], .jp-try-motion [data-effect="b"], .jp-try-motion [data-confirmed="b"] {
+  animation-name: jp-try-pulse-b;
+}
+
+.jp-try-motion [data-cause],
+.jp-try-motion [data-effect],
+.jp-try-motion [data-confirmed] {
+  animation-duration: 440ms;
+  animation-timing-function: ease-out;
+  --try-glow: var(--brand);
+  border-radius: var(--radius-small);
+}
+
+.jp-try-motion [data-effect] {
+  animation-delay: 240ms;
+  --try-glow: var(--memo);
+}
+
+.jp-try-motion [data-confirmed] {
+  --try-glow: var(--good);
+}
+
+.jp-try-motion[data-visible="false"] [data-cause],
+.jp-try-motion[data-visible="false"] [data-effect],
+.jp-try-motion[data-visible="false"] [data-confirmed] {
+  animation-play-state: paused;
+}
+
+@keyframes jp-try-pulse-a {
+  35% { box-shadow: 0 0 0 2px var(--try-glow); }
+}
+
+@keyframes jp-try-pulse-b {
+  35% { box-shadow: 0 0 0 2px var(--try-glow); }
+}
+
+.jp-try-tick {
+  display: inline-block;
+  animation: jp-try-tick 440ms ease-out;
+}
+
+@keyframes jp-try-tick {
+  45% { transform: scale(1.3); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jp-try-tick { animation: none; }
+  .jp-try-motion [data-continuous] { display: none; }
+}

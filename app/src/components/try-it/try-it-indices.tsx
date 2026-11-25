@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Scene, Select, Slider, TryIt, Values } from './TryIt'
+import { ease, near, Scene, Select, Slider, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 const powers = [-2, -1, -0.5, -0.25, 0.25, 0.5, 2, 3]
@@ -25,6 +25,7 @@ export default function Indices(props: InteractiveProps) {
   const root = Math.abs(power) < 1
   const workingBase = flipped ? frac(denominator, numerator) : frac(numerator, denominator)
   const simpleFour = base === 'integer' && integer === 4
+  const radius = 4 + Math.min(7, Math.sqrt(result) * 2)
   const solved = base === 'reciprocal' && power === -0.25
   return <TryIt {...props} context="Indices show up in JAMB. Use the steps to see what each part of an index does."
     prediction={{ question: 'What is 4^{−\\frac{1}{2}}?', choices: ['−2', '\\frac{1}{2}', '2'], correct: 1,
@@ -53,8 +54,9 @@ export default function Indices(props: InteractiveProps) {
     {() => <>
       <Scene label="Steps for evaluating the chosen index" height={75}>
         <path d="M12 36h296" stroke="var(--option-line)" />
+        <Travel points={[40, 25, 120, 25, 200, 25, 280, 25]} seconds={2.7}><circle r="3" fill="var(--memo)" /></Travel>
         {['Base', flipped ? 'Reciprocal' : 'Keep base', root ? 'Take root' : 'Multiply', 'Result'].map((step, i) => <g key={i}>
-          <circle cx={40 + i * 80} cy="36" r="5" fill={i === 1 && flipped ? 'var(--memo)' : 'var(--brand)'} />
+          <circle cx={40 + i * 80} cy="36" r={i === 3 ? radius : 5} {...ease({ r: i === 3 ? radius : 5 })} fill={i === 1 && flipped ? 'var(--memo)' : 'var(--brand)'} />
           <text x={40 + i * 80} y="60" text-anchor="middle">{step}</text>
         </g>)}
       </Scene>

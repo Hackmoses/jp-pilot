@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { near, Scene, Select, Slider, TryIt, Values } from './TryIt'
+import { ease, near, Scene, Select, Slider, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 export const freezingDrop = (molality: number, salt: boolean) => 1.86 * molality * (salt ? 2 : 1)
@@ -31,14 +31,20 @@ export default function FreezingPoint(props: InteractiveProps) {
     {() => <>
       <Scene label="Thermometer and dissolved particles">
         <rect x="38" y="15" width="9" height="72" rx="4" fill="var(--bg)" stroke="var(--ink-2)" />
-        <path d={`M42.5 ${marker}V88`} stroke="var(--brand)" stroke-width="6" />
+        <path d={`M42.5 ${marker}V88`} {...ease({ d: `M42.5 ${marker}V88` })} stroke="var(--brand)" stroke-width="6" />
         <circle cx="42.5" cy="91" r="10" fill="var(--brand)" />
         <text x="15" y="24">0°</text><text x="9" y="75">−6°</text>
         <rect x="105" y="12" width="194" height="84" rx="8" fill="none" stroke="var(--option-line)" />
-        {Array.from({ length: Math.round(8 * molality) }, (_, i) => <g key={i} transform={`translate(${120 + 23 * (i % 8)} ${27 + 19 * Math.floor(i / 8)})`}>
-          <circle r="4" fill="var(--brand)" />
-          {salt && <circle cx="8" cy="5" r="3" fill="var(--memo)" />}
-        </g>)}
+        {Array.from({ length: 16 }, (_, i) => {
+          const x = 120 + 23 * (i % 8), y = 27 + 19 * Math.floor(i / 8)
+          const opacity = Number(i < Math.round(8 * molality))
+          return <g key={i} opacity={opacity} {...ease({ opacity })}>
+            <Travel points={[x, y, x - 6, y + 10, x + 5, y + 7, x, y]} seconds={2} offset={i / 16}>
+              <circle r="4" fill="var(--brand)" />
+              {salt && <circle cx="8" cy="5" r="3" fill="var(--memo)" />}
+            </Travel>
+          </g>
+        })}
       </Scene>
       <Values items={{ 'Freezing point': (drop ? -drop : 0).toFixed(2) + ' °C', 'Drop': drop.toFixed(2) + ' °C',
         'Particles per solute unit': salt ? '2' : '1' }} />

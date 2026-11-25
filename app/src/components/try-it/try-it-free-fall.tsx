@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'preact/hooks'
-import { near, Scene, Slider, TryIt, Values } from './TryIt'
+import { useLayoutEffect, useRef, useState } from 'preact/hooks'
+import { ease, near, Scene, Slider, Travel, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 const g = 10
@@ -24,29 +24,52 @@ export default function FreeFall(props: InteractiveProps) {
   const [height, setHeight] = useState(10)
   const [air, setAir] = useState(true)
   const [time, setTime] = useState(0)
-  const [run, setRun] = useState(0)
+  const [running, setRunning] = useState(false)
+  const clock = useRef<SVGGElement>(null)
+  const elapsed = useRef(0)
+  const rendered = useRef(0)
   const stoneT = air ? 22 : Infinity
   const featherT = air ? 3 : Infinity
   const stoneLanding = arrival(height, stoneT)
   const featherLanding = arrival(height, featherT)
   const stone = falling(Math.min(time, stoneLanding), stoneT)
   const feather = falling(Math.min(time, featherLanding), featherT)
+  const stoneY = 84 - (height - Math.min(height, stone.distance)) * 70 / 30
+  const featherTransform = `translate(238 ${84 - (height - Math.min(height, feather.distance)) * 70 / 30})`
+  const atRest = !running && time === 0
   const landed = time >= featherLanding
 
-  useEffect(() => {
-    if (!run) return
-    const start = performance.now()
-    const ticker = window.setInterval(() => {
-      const elapsed = (performance.now() - start) / 1000
-      setTime(Math.min(elapsed, featherLanding))
-      if (elapsed >= featherLanding) window.clearInterval(ticker)
-    }, 70)
-    return () => window.clearInterval(ticker)
-  }, [run, featherLanding])
+  useLayoutEffect(() => {
+    const node = clock.current!
+    const frame = (event: Event) => {
+      elapsed.current = Math.min(featherLanding, elapsed.current + (event as CustomEvent<number>).detail)
+      if (elapsed.current - rendered.current >= 1 / 30 || elapsed.current === featherLanding) {
+        rendered.current = elapsed.current
+        setTime(elapsed.current)
+      }
+      if (elapsed.current === featherLanding) setRunning(false)
+    }
+    node.addEventListener('try-frame', frame)
+    node.addEventListener('try-replay', drop)
+    return () => {
+      node.removeEventListener('try-frame', frame)
+      node.removeEventListener('try-replay', drop)
+    }
+  }, [featherLanding])
+
+  function showTime(next: number) {
+    elapsed.current = rendered.current = next
+    setTime(next)
+  }
+
+  function drop() {
+    showTime(0)
+    setRunning(true)
+  }
 
   function reset() {
-    setRun(0)
-    setTime(0)
+    setRunning(false)
+    showTime(0)
   }
 
   return <TryIt {...props} context="A mango and a leaf can fall from the same tree. In air the leaf usually arrives later."
@@ -70,23 +93,27 @@ export default function FreeFall(props: InteractiveProps) {
     formulas={['Without air: v = gt', 's = \\frac{1}{2}gt^{2}', air ? 'Air on: simplified drag model' : 'g = 10 m/s^{2}']}>
     {() => <>
       <Scene label="Stone and feather dropping in two lanes">
+        <g ref={clock} data-process={running ? 'running' : 'idle'} />
+        {air && [0, 1].map((i) => <Travel key={i} seconds={1.8} offset={i / 2} points={[260, 79, 260, 11]}>
+          <path d="M0 3v-7m-2 3 2-3 2 3" stroke="var(--memo)" opacity="0.5" fill="none" />
+        </Travel>)}
         <path d="M24 92H296M160 10V92" stroke="var(--option-line)" />
         <text x="62" y="106">Stone</text><text x="221" y="106">Feather</text>
-        <circle cx="77" cy={14 + 70 * Math.min(1, stone.distance / height)} r="7" fill="var(--ink-2)" />
-        <path transform={`translate(238 ${14 + 70 * Math.min(1, feather.distance / height)})`}
+        <circle cx="77" cy={stoneY} {...(atRest ? ease({ cy: stoneY }) : {})} r="7" fill="var(--ink-2)" />
+        <path transform={featherTransform} {...(atRest ? ease({ transform: featherTransform }) : {})}
           d="M-6 6Q-7-6 8-7Q6 5-6 6L4-3" fill="var(--memo-soft)" stroke="var(--memo)" stroke-width="2" />
       </Scene>
-      <Values items={{ 'Timer': time.toFixed(2) + ' s', 'Stone fall': stone.distance.toFixed(1) + ' m · ' + stone.speed.toFixed(1) + ' m/s',
-        'Feather fall': feather.distance.toFixed(1) + ' m · ' + feather.speed.toFixed(1) + ' m/s',
-        'Landing times': stoneLanding.toFixed(2) + ' s / ' + featherLanding.toFixed(2) + ' s' }} />
+      <Values live items={{ 'Timer': time.toFixed(2) + ' s', 'Stone fall': stone.distance.toFixed(1) + ' m · ' + stone.speed.toFixed(1) + ' m/s',
+        'Feather fall': feather.distance.toFixed(1) + ' m · ' + feather.speed.toFixed(1) + ' m/s' }} />
+      <Values items={{ 'Landing times': stoneLanding.toFixed(2) + ' s / ' + featherLanding.toFixed(2) + ' s' }} />
       <Slider label={'Height (m) · ' + height} value={height} min={5} max={30} step={1} onChange={(value) => { setHeight(value); reset() }} />
       <div class="jp-pills">
         <button type="button" class="jp-btn" aria-pressed={air} onClick={() => { setAir(!air); reset() }}>Air resistance {air ? 'on' : 'off'}</button>
-        <button type="button" class="jp-btn jp-btn--primary" onClick={() => { setTime(0); setRun(performance.now()) }}>Drop</button>
+        <button type="button" class="jp-btn jp-btn--primary" onClick={(event) => { drop(); event.currentTarget.dispatchEvent(new Event('try-play', { bubbles: true })) }}>Drop</button>
       </div>
       <Slider label="Scrub time (s)" value={time} min={0} max={featherLanding} step={0.01} onChange={(value) => {
-        setRun(0)
-        setTime(featherLanding - value < 0.015 ? featherLanding : value)
+        setRunning(false)
+        showTime(featherLanding - value < 0.015 ? featherLanding : value)
       }} />
     </>}
   </TryIt>
