@@ -14,7 +14,7 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
     const saved = getPracticeSettings(subject)
     return chapter ? { ...saved, chapters: [chapter] } : saved
   })
-  const questions = getQuestionsBySubject(subject, 'practice')
+  const questions = getQuestionsBySubject(subject)
   const hasSyllabus = getSections(subject).length > 0
   const chapters = getChapters(subject, questions)
   const eligible = practicePool(questions, settings).length

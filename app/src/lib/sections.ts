@@ -106,3 +106,12 @@ export function chapterForTopic(subject: string, topic: string): string | undefi
 export function subtopicLabel(topic: string): string | undefined {
   return topic.match(/\(([^)]+)\)\s*$/)?.[1]
 }
+
+// Topics that have Study content (Try it now, concept lessons next). Kept in step with
+// the Try it list by a test, so Practice can link to Study without loading that code.
+export const STUDY_TOPICS: Record<string, string[]> = {
+  chemistry: ['2', '3', '11', '13', '14', '15'],
+  physics: ['2', '5', '17', '14', '18', '12'],
+  biology: ['1', '10'],
+  mathematics: ['1', '3'],
+}

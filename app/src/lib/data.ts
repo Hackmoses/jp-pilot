@@ -8,9 +8,6 @@ export interface SubjectManifestEntry {
 
 export type SubjectManifest = Record<string, SubjectManifestEntry>
 
-// Study shows questions with a full Teach me lesson as worked examples.
-// Practice and the exam use every other question, so a question is never in both.
-export type QuestionPool = 'study' | 'practice' | 'all'
 
 export function isCompleteQuestion(question: Question, animation?: Animation): boolean {
   // Complete = has a Teach me lesson: a concept lesson, or a calculation with both Teach me and Quick.
@@ -24,7 +21,6 @@ export function isCompleteQuestion(question: Question, animation?: Animation): b
 const questions: Question[] = []
 const questionsById = new Map<string, Question>()
 const sharedQuestionsById = new Map<string, Question>()
-const studyIds = new Set<string>()
 const animationsById = new Map<string, Animation>()
 const loadedSubjects = new Set<string>()
 const inflightSubjects = new Map<string, Promise<boolean>>()
@@ -122,9 +118,7 @@ export async function loadSubject(subject: string): Promise<boolean> {
       const source = qFile.questions ?? []
       const byId = new Map(anims.map((animation) => [animation.id, animation]))
       for (const question of source) sharedQuestionsById.set(question.id, question)
-      for (const question of source) {
-        if (isCompleteQuestion(question, byId.get(question.animationId ?? ''))) studyIds.add(question.id)
-      }
+      // Every question is practice material. Study is concept lessons and Try it, not questions.
       registerSubjectData(normalized, source, anims)
       return true
     } catch {
@@ -142,22 +136,14 @@ export function getQuestions(): Question[] {
   return questions.slice()
 }
 
-export function isStudyQuestion(id: string): boolean {
-  return studyIds.has(id)
-}
-
-export function getQuestionsBySubject(subject: string, pool: QuestionPool = 'all'): Question[] {
+export function getQuestionsBySubject(subject: string): Question[] {
   const normalized = subject.trim().toLowerCase()
-  return questions.filter((question) => question.subject === normalized &&
-    (pool === 'all' || (pool === 'study') === studyIds.has(question.id)))
+  return questions.filter((question) => question.subject === normalized)
 }
 
 // Counts from the manifest, so subject lists need no question downloads.
-export function manifestPoolCount(subject: string, pool: QuestionPool): number {
-  const entry = manifestCache?.[subject.trim().toLowerCase()]
-  if (!entry) return 0
-  const study = entry.completeCount ?? 0
-  return pool === 'study' ? study : pool === 'practice' ? Math.max(0, entry.count - study) : entry.count
+export function manifestCount(subject: string): number {
+  return manifestCache?.[subject.trim().toLowerCase()]?.count ?? 0
 }
 
 export function getQuestion(id: string): Question | undefined {

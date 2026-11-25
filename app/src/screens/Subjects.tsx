@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { getManifestSync, loadSubject } from '../lib/data'
+import { STUDY_TOPICS } from '../lib/sections'
 import {
   SUBJECTS,
   type SubjectIconName,
@@ -66,7 +67,7 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
     return SUBJECTS.filter((subject) => subject.name.toLowerCase().includes(term))
   }, [query])
 
-  const chemistryCount = getSubjectQuestionCount('chemistry', mode)
+  const chemistryCount = mode === 'study' ? STUDY_TOPICS.chemistry.length : getSubjectQuestionCount('chemistry')
   const destination = (id: string) => `#/${mode}?subject=${encodeURIComponent(id)}`
 
   return (
@@ -122,7 +123,7 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
           </span>
           <span class="jp-subjects-strip-copy">
             <strong>Ready now · Chemistry</strong>
-            <span>{getManifestSync() ? `${chemistryCount} ${mode === 'study' ? 'examples' : 'questions'}` : 'Tap to start'}</span>
+            <span>{mode === 'study' ? `${chemistryCount} topics` : getManifestSync() ? `${chemistryCount} questions` : 'Tap to start'}</span>
           </span>
           <span class="jp-subjects-strip-go" aria-hidden="true">Start →</span>
         </a>
@@ -137,8 +138,9 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
         ) : (
           <div class="jp-subjects-grid" role="list">
             {filteredSubjects.map((subject) => {
-              if (isSubjectAvailable(subject.id, mode)) {
-                const count = getSubjectQuestionCount(subject.id, mode)
+              const studyTopics = STUDY_TOPICS[subject.id]?.length ?? 0
+              if (mode === 'study' ? studyTopics > 0 : isSubjectAvailable(subject.id)) {
+                const count = mode === 'study' ? studyTopics : getSubjectQuestionCount(subject.id)
                 return (
                   <a
                     key={subject.id}
@@ -153,8 +155,8 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
                     <span class="jp-subject-body">
                       <strong class="jp-subject-name">{subject.name}</strong>
                       <span class="jp-subject-meta jp-subject-meta--open">
-                        {getManifestSync() &&
-                          <><span>{count} {mode === 'study' ? 'examples' : 'questions'}</span><span aria-hidden="true">·</span></>}
+                        {(mode === 'study' || getManifestSync()) &&
+                          <><span>{count} {mode === 'study' ? (count === 1 ? 'topic' : 'topics') : 'questions'}</span><span aria-hidden="true">·</span></>}
                         <span class="jp-subject-start">Start →</span>
                       </span>
                     </span>

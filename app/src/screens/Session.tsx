@@ -18,7 +18,8 @@ import {
 import {
   setLastSessionSummary,
 } from '../components/question/sessionState'
-import { getAnimation, getQuestion, getQuestionsBySubject, isSubjectLoaded, loadSubject } from '../lib/data'
+import { getAnimation, getQuestion, isSubjectLoaded, loadSubject } from '../lib/data'
+import { STUDY_TOPICS } from '../lib/sections'
 import { finishAttempt, getAttemptQuestions, getQuestionChapter, getStudyAnswer, markStudied, remember, saveAttempt, studyLink, type Attempt, type TestResult } from '../lib/modes'
 import { shuffleOptions } from '../lib/shuffle'
 import { getProgress, logEvent, recordAnswer } from '../lib/store'
@@ -333,8 +334,7 @@ export function Session({ attempt, study, review }: SessionProps) {
   const compact = !study
   const detailed = !compact || full
   const chapterId = getQuestionChapter(question)
-  const learnHref = compact && getQuestionsBySubject(question.subject, 'study')
-    .some((item) => getQuestionChapter(item) === chapterId) ? studyLink(question.subject, chapterId) : undefined
+  const learnHref = compact && STUDY_TOPICS[question.subject]?.includes(chapterId) ? studyLink(question.subject, chapterId) : undefined
   const exitHref = back ?? (attempt ? (attempt.mode === 'exam' ? '#/exam'
     : '#/practice?subject=' + encodeURIComponent(question.subject)) : '#/modes')
   const canPause = attempt?.mode === 'practice' && deadline !== null
@@ -403,7 +403,7 @@ export function Session({ attempt, study, review }: SessionProps) {
                 <path d="m15 18-6-6 6-6" />
               </svg>
             </a>
-            <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
+            <a class="jp-logo" href="#/modes" aria-label="Main menu">JP</a>
             <span class="jp-topic jp-hide-sm">{subjectName} · {question.topic}</span>
           </div>
           <div class="jp-progress-group">
@@ -417,6 +417,11 @@ export function Session({ attempt, study, review }: SessionProps) {
           <span class="jp-pill jp-pill--practice jp-hide-sm">{study ? 'Study' : review ? 'Exam review' : 'Practice'}</span>
           {deadline !== null && pausedAt === null && <Countdown deadline={deadline}
             onExpire={() => finishAttempt(savedAttempt.current!, Date.now())} />}
+          <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" /></svg>
+            <span>Menu</span>
+          </a>
           {canPause && pausedAt === null && <button type="button" class="jp-btn" onClick={pause}>Pause</button>}
           {!study && !review && <span class="jp-pill jp-pill--score" aria-live="polite">
             Score {sessionCorrect}/{sessionAnswered}

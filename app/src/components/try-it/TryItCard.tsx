@@ -1,15 +1,15 @@
 import type { ComponentType } from 'preact'
 import { useId, useState } from 'preact/hooks'
-import { getQuestion } from '../../lib/data'
 import { waitForOfflineControl } from '../../lib/offline'
-import { getQuestionChapter, hasCompletedInteractive, markInteractiveCompleted } from '../../lib/modes'
+import { hasCompletedInteractive, markInteractiveCompleted } from '../../lib/modes'
 
 export type InteractiveProps = { practiceHref: string; onComplete: () => void; onRestart?: () => void }
 type Interactive = {
   title: string
   id?: string
   load: () => Promise<{ default: ComponentType<InteractiveProps> }>
-} & ({ chapter: string } | { question: string })
+  chapter: string
+}
 
 const lessons: Record<string, Interactive[]> = {
   chemistry: [
@@ -24,30 +24,31 @@ const lessons: Record<string, Interactive[]> = {
     { chapter: '15', title: 'Electrolysis', load: () => import('./try-it-electrolysis') },
   ],
   physics: [
-    { id: 'relative-velocity', question: 'phys-jamb-0001', title: 'Relative velocity', load: () => import('./try-it-relative-velocity') },
-    { id: 'free-fall', question: 'phys-jamb-0002', title: 'Free fall', load: () => import('./try-it-free-fall') },
-    { id: 'pulley', question: 'phys-jamb-0007', title: 'Pulley and machine efficiency', load: () => import('./try-it-pulley') },
-    { id: 'capacitors', question: 'phys-jamb-0023', title: 'Capacitors', load: () => import('./try-it-capacitors') },
-    { question: 'phys-jamb-0019', title: 'Concave mirror', load: () => import('./try-it-mirror') },
-    { question: 'phys-jamb-0025', title: 'Circuit lab', load: () => import('./try-it-circuit') },
-    { question: 'phys-jamb-0016', title: 'Wave on a string', load: () => import('./try-it-wave') },
+    { id: 'relative-velocity', chapter: '2', title: 'Relative velocity', load: () => import('./try-it-relative-velocity') },
+    { id: 'free-fall', chapter: '2', title: 'Free fall', load: () => import('./try-it-free-fall') },
+    { id: 'pulley', chapter: '5', title: 'Pulley and machine efficiency', load: () => import('./try-it-pulley') },
+    { id: 'capacitors', chapter: '17', title: 'Capacitors', load: () => import('./try-it-capacitors') },
+    { chapter: '14', title: 'Concave mirror', load: () => import('./try-it-mirror') },
+    { chapter: '18', title: 'Circuit lab', load: () => import('./try-it-circuit') },
+    { chapter: '12', title: 'Wave on a string', load: () => import('./try-it-wave') },
   ],
   biology: [
-    { question: 'biol-api-0167', title: 'Osmosis cell', load: () => import('./try-it-osmosis') },
-    { id: 'punnett', question: 'biol-api-0127', title: 'Punnett square', load: () => import('./try-it-punnett') },
+    { chapter: '1', title: 'Osmosis cell', load: () => import('./try-it-osmosis') },
+    { id: 'punnett', chapter: '10', title: 'Punnett square', load: () => import('./try-it-punnett') },
   ],
   mathematics: [
-    { question: 'math-jamb-0001', title: 'Number base converter', load: () => import('./try-it-bases') },
-    { id: 'indices', question: 'math-jamb-0005', title: 'Indices explorer', load: () => import('./try-it-indices') },
+    { chapter: '1', title: 'Number base converter', load: () => import('./try-it-bases') },
+    { id: 'indices', chapter: '3', title: 'Indices explorer', load: () => import('./try-it-indices') },
   ],
 }
 
+// Try it lessons are pinned to syllabus topics, so Study needs no question download.
 export function studyInteractives(subject: string, chapter: string) {
-  return (lessons[subject] ?? []).filter((lesson) => {
-    if ('chapter' in lesson) return chapter === lesson.chapter
-    const question = getQuestion(lesson.question)
-    return question && chapter === getQuestionChapter(question)
-  })
+  return (lessons[subject] ?? []).filter((lesson) => lesson.chapter === chapter)
+}
+
+export function studyChapterIds(subject: string) {
+  return new Set((lessons[subject] ?? []).map((lesson) => lesson.chapter))
 }
 
 export function TryItCard({ interactive, subject, chapter }: {

@@ -1,3 +1,4 @@
+import { STUDY_TOPICS } from '../lib/sections'
 import { useState } from 'preact/hooks'
 import { getQuestionSourceLabel } from '../components/question/logic'
 import { Feedback } from '../components/share/Feedback'
@@ -50,7 +51,7 @@ export function Results({ mode, params }: { mode: TestMode; params: URLSearchPar
         {needsStudy.length ? needsStudy.map((row) => (
           <div class="jp-mode-action-row" key={row.subject + row.chapter}>
             <span>{chapterName(row.subject, row.chapter)} · {isExam ? `${row.correct}/${row.total}` : `${row.mistakes} missed`}</span>
-            {row.chapter && <a href={studyLink(row.subject, row.chapter)} class="jp-btn"
+            {row.chapter && STUDY_TOPICS[row.subject]?.includes(row.chapter) && <a href={studyLink(row.subject, row.chapter)} class="jp-btn"
               aria-label={'Study this: ' + chapterName(row.subject, row.chapter)}>Study this</a>}
           </div>
         )) : <p class="jp-summary-sub">{isExam ? 'Every chapter reached 70%.' : 'No incorrect answers.'}</p>}

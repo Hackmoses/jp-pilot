@@ -1,3 +1,4 @@
+import { STUDY_TOPICS } from '../lib/sections'
 import '../components/question/question.css'
 import { getLastSessionSummary } from '../components/question/sessionState'
 import { ShareButton } from '../components/share/ShareButton'
@@ -56,7 +57,7 @@ export function Summary() {
             {[...chapters.values()].map(({ subject, chapter }) => (
               <div key={subject + chapter} class="jp-mode-action-row">
                 <span>{chapterName(subject, chapter)}</span>
-                <a class="jp-btn" href={studyLink(subject, chapter)}>Study this</a>
+                {STUDY_TOPICS[subject]?.includes(chapter) && <a class="jp-btn" href={studyLink(subject, chapter)}>Study this</a>}
               </div>
             ))}
           </section>}

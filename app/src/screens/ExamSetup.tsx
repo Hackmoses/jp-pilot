@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'preact/hooks'
-import { getQuestionsBySubject, loadManifest, loadSubject, manifestPoolCount } from '../lib/data'
+import { getQuestionsBySubject, loadManifest, loadSubject, manifestCount } from '../lib/data'
 import {
   EXAM_MINUTES, continueExam, getAttempt, getAttemptQuestions, getExamHistory, getExamSubjects,
   saveExamSubjects, scoreAttempt, startAttempt,
@@ -29,7 +29,7 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
     let active = true
     void loadManifest().then((manifest) => {
       if (!active) return
-      const ids = SUBJECTS.filter(({ id }) => manifestPoolCount(id, 'practice') > 0).map(({ id }) => id)
+      const ids = SUBJECTS.filter(({ id }) => manifestCount(id) > 0).map(({ id }) => id)
       setFailed(Object.keys(manifest).length === 0)
       setAvailable(ids)
     })
@@ -69,7 +69,7 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
 
   if (rules && ready) {
     const minutes = pilot ? EXAM_MINUTES.pilot : EXAM_MINUTES.full
-    const queue = subjects.flatMap((id) => getQuestionsBySubject(id, 'practice').map(({ id }) => ({ id })))
+    const queue = subjects.flatMap((id) => getQuestionsBySubject(id).map(({ id }) => ({ id })))
     return (
       <Panel title="Exam rules" back="#/exam">
         <section class="jp-card">

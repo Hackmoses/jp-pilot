@@ -25,8 +25,8 @@ function ModeIcon({ accent }: { accent: ModeAccent }) {
   )
 }
 
-export function Panel({ title, subtitle, back = '#/modes', children }: {
-  title: string; subtitle?: string; back?: string; children?: ComponentChildren
+export function Panel({ title, subtitle, back = '#/modes', menu = true, children }: {
+  title: string; subtitle?: string; back?: string; menu?: boolean; children?: ComponentChildren
 }) {
   return (
     <div class="jp-mode-page">
@@ -42,6 +42,11 @@ export function Panel({ title, subtitle, back = '#/modes', children }: {
             <a class="jp-logo" href="#/modes" aria-label="JP modes">JP</a>
             <a class="jp-mode-wordmark" href="#/">JAMB Practice</a>
           </div>
+          {menu && <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" /></svg>
+              <span>Menu</span>
+            </a>}
         </div>
       </header>
       <main class="jp-mode-main">
@@ -77,7 +82,7 @@ export function ModeCard({ href, title, pill, accent, children }: {
 export function ModeHome() {
   const recent = getRecent()
   return (
-    <Panel title="How do you want to learn?" subtitle="Choose a study path built for JAMB UTME." back="#/">
+    <Panel title="How do you want to learn?" subtitle="Choose a study path built for JAMB UTME." back="#/" menu={false}>
       <div class="jp-mode-grid">
         <ModeCard href="#/subjects?mode=study" title="Study" accent="study">Learn it chapter by chapter</ModeCard>
         <ModeCard href="#/subjects?mode=practice" title="Practice" accent="practice">Drill questions your way</ModeCard>
