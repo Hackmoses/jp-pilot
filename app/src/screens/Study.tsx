@@ -31,7 +31,7 @@ export function Study({ params }: { params: URLSearchParams }) {
           {file ? <LessonList key={file} file={file} subject={subject} chapter={chapter} />
             : <p class="jp-mode-lead">Short animated lessons for this topic are coming soon.</p>}
           {interactives.length > 0 && <>
-            <h2 class="jp-revisit-title">Try it yourself</h2>
+            <h2 class="jp-revisit-title">{file ? 'Try it after the lesson' : 'Try it yourself'}</h2>
             {interactives.map((interactive) => <TryItCard key={interactive.id ?? interactive.title}
               interactive={interactive} subject={subject} chapter={chapter} />)}
           </>}
