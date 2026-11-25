@@ -1,0 +1,695 @@
+{
+  "subject": "chemistry",
+  "topicId": "2",
+  "lessons": [
+    {
+      "id": "mole-1",
+      "title": "What is a mole?",
+      "hook": "At the market, eggs can be counted in trays. Chemists count tiny particles in groups too.",
+      "idea": "A mole is an amount that tells you the number of specified particles in a sample. One mole contains about 6.02 × 10²³ of those particles.",
+      "scenes": [
+        {
+          "id": "mole-1-s1",
+          "show": "Egg-shaped counters drop into two trays in equal groups.",
+          "say": "At the market, you can ask for eggs by the tray. A tray with a fixed number gives the seller a quicker way to count. In chemistry we use a much larger group because individual atoms and molecules are so small.",
+          "visual": "market",
+          "beats": [
+            {
+              "word": "tray.",
+              "action": "Show equal rows of counters filling the two trays.",
+              "label": "Count in groups"
+            }
+          ]
+        },
+        {
+          "id": "mole-1-s2",
+          "show": "The tray counters turn into moving particle groups labelled with a mole count.",
+          "say": "That chemistry group is called a mole. One mole contains about six point zero two times ten to the power of twenty three particles. The number of particles per mole is called the Avogadro constant. The dots here stand for groups of particles.",
+          "visual": "particles",
+          "beats": [
+            {
+              "word": "mole.",
+              "action": "Show the rounded count alongside the two groups.",
+              "label": "1 mol ≈ 6.02 × 10²³ particles"
+            }
+          ]
+        },
+        {
+          "id": "mole-1-s3",
+          "show": "Atoms move into oxygen molecules and each whole oxygen molecule is counted once.",
+          "say": "Always name the particle you are counting. A mole of oxygen atoms counts single oxygen atoms. A mole of oxygen molecules counts whole oxygen molecules. Each oxygen molecule contains two atoms, so that second group has twice as many oxygen atoms as the first group.",
+          "visual": "pairs",
+          "beats": [
+            {
+              "word": "particle",
+              "action": "Bring the atoms together into pairs and highlight each whole molecule.",
+              "label": "Name the particle first"
+            },
+            {
+              "word": "twice",
+              "action": "Show the two atom counts for each oxygen molecule.",
+              "label": "1 mol O₂ molecules contains 2 mol O atoms"
+            }
+          ]
+        },
+        {
+          "id": "mole-1-s4",
+          "show": "Two equal particle counts settle onto a scale with different mass labels.",
+          "say": "A mole tells you how many particles you have. The mass of that group can change from one substance to another. Picture equal groups of light and heavy particles on a scale. Both groups have the same count, and the heavier particles give the larger mass.",
+          "visual": "mass",
+          "beats": [
+            {
+              "word": "mass",
+              "action": "Make the particles on the heavier side larger as the label changes.",
+              "label": "Same particle count, different mass"
+            }
+          ]
+        }
+      ],
+      "formula": {
+        "equation": "N = nNₐ",
+        "symbols": {
+          "N": "number of specified particles (count)",
+          "n": "amount (mol)",
+          "Nₐ": "Avogadro constant (≈ 6.02 × 10²³ mol⁻¹)"
+        }
+      },
+      "misconception": {
+        "wrong": "A mole is a fixed mass in grams.",
+        "correction": "It is a fixed particle count. The mass depends on the substance."
+      },
+      "pastQuestion": {
+        "year": 2017,
+        "number": 32,
+        "source": {
+          "file": "JAMB-CHEMISTRY-PAST-QUESTIONS.pdf",
+          "page": 73,
+          "keyPage": 75
+        },
+        "prompt": "Which quantity gives the number of atoms in one mole when atoms are the particles being counted?",
+        "options": [
+          "Atomic number",
+          "Avogadro number",
+          "Gas constant",
+          "Number of electrons"
+        ],
+        "answer": "B",
+        "scenes": [
+          {
+            "id": "mole-1-q1",
+            "show": "Show the question and the four options, then fill a group of atoms.",
+            "say": "This came in JAMB twenty seventeen. The question is counting atoms. Picture one complete mole of separate atoms. That group has the Avogadro number of atoms. Think of the number that tells you the size of the group, whichever element the atoms belong to.",
+            "visual": "particles",
+            "beats": [
+              {
+                "word": "Avogadro",
+                "action": "Write the group size as the dots fill the tray.",
+                "label": "One mole of atoms → Avogadro number of atoms"
+              }
+            ]
+          },
+          {
+            "id": "mole-1-q2",
+            "show": "Let the two equal-sized groups move and write the answer below the options.",
+            "say": "Choose option B. Atomic number may look tempting because the question says atoms. Atomic number tells you the number of protons in one atom of an element. We need the number of whole atoms in a mole, which is a different count.",
+            "visual": "particles",
+            "beats": [
+              {
+                "word": "option",
+                "action": "Write B and highlight the option.",
+                "label": "B · Avogadro number"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Compare two samples by converting each mass to moles."
+      ],
+      "tryIt": "mole-bridge",
+      "syllabus": "Perform simple calculations with the mole concept and Avogadro’s number.",
+      "check": true,
+      "checkNote": "2017 Q32 uses “a substance”. The display clarifies that atoms are the entities counted, as the answer does not generalise to the total atoms in a mole of molecules."
+    },
+    {
+      "id": "mole-2",
+      "title": "Molar mass",
+      "hook": "A market seller can count two equal piles and still get different readings on the scale.",
+      "idea": "Molar mass is the mass per mole of a substance. Use the chemical formula to work out how much a mole of the specified particles weighs.",
+      "scenes": [
+        {
+          "id": "mole-2-s1",
+          "show": "Equal groups of light and heavy counters move into view above a scale.",
+          "say": "Imagine two equal piles at a market stall. One pile is made of light items and the other has heavier items. The piles contain the same number of items. If you put each pile on a scale, the mass can be different.",
+          "visual": "mass",
+          "beats": [
+            {
+              "word": "scale,",
+              "action": "Bring the two groups down towards the scale.",
+              "label": "Equal counts can have different masses"
+            }
+          ]
+        },
+        {
+          "id": "mole-2-s2",
+          "show": "Gather the same number of dots into two boxes and label the mass of each group per mole.",
+          "say": "Now make the groups one mole each. The mass of a mole is the molar mass. The unit is grams per mole. It answers a simple question. How many grams are in one mole of this particular substance?",
+          "visual": "particles",
+          "beats": [
+            {
+              "word": "grams",
+              "action": "Reveal the unit below the two groups.",
+              "label": "Molar mass · grams per mole (g/mol)"
+            }
+          ]
+        },
+        {
+          "id": "mole-2-s3",
+          "show": "Join two small hydrogen atoms to one oxygen atom and display the sum.",
+          "say": "Read the formula for water. Each molecule has two hydrogen atoms and one oxygen atom. Using the rounded atomic values, add one for each hydrogen and sixteen for the oxygen. That gives a molar mass of eighteen grams per mole for water.",
+          "visual": "water",
+          "beats": [
+            {
+              "word": "two",
+              "action": "Show two small dots joining the oxygen dot.",
+              "label": "H₂O · two H atoms and one O atom"
+            },
+            {
+              "word": "eighteen",
+              "action": "Reveal the completed sum.",
+              "label": "M(H₂O) = (2 × 1 + 16) g/mol = 18 g/mol"
+            }
+          ]
+        },
+        {
+          "id": "mole-2-s4",
+          "show": "Pair off oxygen atoms before revealing the molar mass of oxygen molecules.",
+          "say": "A common slip is to read oxygen gas as single oxygen atoms. Its formula has two oxygen atoms in each molecule. Use the mass contribution of both atoms when you calculate the molar mass of oxygen gas. Check the small number in the formula before you add.",
+          "visual": "pairs",
+          "beats": [
+            {
+              "word": "both",
+              "action": "Join matching oxygen atoms and show the sum.",
+              "label": "M(O₂) = 2 × 16 g/mol = 32 g/mol"
+            }
+          ]
+        }
+      ],
+      "formula": {
+        "equation": "M = m/n",
+        "symbols": {
+          "M": "molar mass (g/mol)",
+          "m": "mass (g)",
+          "n": "amount (mol)"
+        }
+      },
+      "misconception": {
+        "wrong": "Oxygen gas has a molar mass of 16 g/mol.",
+        "correction": "O₂ contains two oxygen atoms per molecule and has a rounded molar mass of 32 g/mol."
+      },
+      "pastQuestion": {
+        "year": 2016,
+        "number": 23,
+        "source": {
+          "file": "JAMB-CHEMISTRY-PAST-QUESTIONS.pdf",
+          "page": 63,
+          "keyPage": 66
+        },
+        "prompt": "Which sample contains as many molecules as there are atoms in 24 g of magnesium? Use rounded atomic values.",
+        "options": [
+          "1 g of hydrogen molecules",
+          "16 g of oxygen molecules",
+          "32 g of oxygen molecules",
+          "35.5 g of chlorine molecules"
+        ],
+        "answer": "C",
+        "scenes": [
+          {
+            "id": "mole-2-q1",
+            "show": "Show the options and move magnesium counters onto the scale.",
+            "say": "This came in JAMB twenty sixteen. With the rounded atomic mass, twenty four grams of magnesium makes one mole of magnesium atoms. We are looking for a group with the same count. That means we need one mole of molecules of whichever gas we choose.",
+            "visual": "mass",
+            "beats": [
+              {
+                "word": "count.",
+                "action": "Write the magnesium amount beside the scale.",
+                "label": "24 g Mg ÷ 24 g/mol = 1 mol Mg atoms"
+              }
+            ]
+          },
+          {
+            "id": "mole-2-q2",
+            "show": "Pair the oxygen atoms and write the sum under the options.",
+            "say": "Each oxygen molecule has two oxygen atoms. Two times sixteen gives thirty two grams per mole. So option C gives one mole of oxygen molecules. Sixteen grams is tempting because of the atomic mass of oxygen. For oxygen gas, that mass is only half a mole of molecules.",
+            "visual": "pairs",
+            "beats": [
+              {
+                "word": "sixteen",
+                "action": "Write the molar mass as dots pair.",
+                "label": "M(O₂) = 2 × 16 g/mol = 32 g/mol"
+              },
+              {
+                "word": "option",
+                "action": "Write the result and highlight C.",
+                "label": "C · 32 g of O₂ molecules"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Work out the formula mass before comparing amounts."
+      ],
+      "tryIt": "mole-bridge",
+      "syllabus": "Use chemical formulae and relative atomic masses in mole calculations."
+    },
+    {
+      "id": "mole-3",
+      "title": "Finding moles from mass",
+      "hook": "Think of a market scale showing the total mass in a bag. How many equal portions could you make from it?",
+      "idea": "To get an amount in moles, divide the sample’s mass by its molar mass. The grams cancel and moles remain.",
+      "scenes": [
+        {
+          "id": "mole-3-s1",
+          "show": "Counters drop onto a market scale and group into equal portions.",
+          "say": "At the market, you may know the total mass of a bag before you divide it into portions. If you know the mass of each portion, divide the total by that mass to find how many portions the bag can give.",
+          "visual": "scale",
+          "beats": [
+            {
+              "word": "divide",
+              "action": "Show the two groups settling on the scale.",
+              "label": "Total mass ÷ mass per portion"
+            }
+          ]
+        },
+        {
+          "id": "mole-3-s2",
+          "show": "Move a marker from mass to moles, with the molar mass on the connecting arrow.",
+          "say": "For a chemical sample, one portion is one mole. Its mass in grams comes from the molar mass. Write the sample mass at the top and the molar mass underneath. The amount of substance is the mass divided by the molar mass.",
+          "visual": "bridge",
+          "beats": [
+            {
+              "word": "divided",
+              "action": "Move from the mass box to the moles box.",
+              "label": "n = m/M"
+            }
+          ]
+        },
+        {
+          "id": "mole-3-s3",
+          "show": "Drop groups onto a scale and reveal the water calculation line by line.",
+          "say": "Take thirty six grams of water. Water has a rounded molar mass of eighteen grams per mole. Divide thirty six grams by eighteen grams per mole. The sample contains two moles of water molecules. It has twice the mass of one mole.",
+          "visual": "divide",
+          "beats": [
+            {
+              "word": "Divide",
+              "action": "Reveal the division below the scale.",
+              "label": "36 g ÷ (18 g/mol) = 2 mol"
+            }
+          ]
+        },
+        {
+          "id": "mole-3-s4",
+          "show": "Reverse the bridge and change the arithmetic direction.",
+          "say": "Check the units before you move on. A mass in grams divided by grams per mole leaves moles. If the question gives moles and asks for mass, you go the other way and multiply by the molar mass. Keep the direction of the conversion clear.",
+          "visual": "bridge",
+          "beats": [
+            {
+              "word": "units",
+              "action": "Show the division and the remaining unit.",
+              "label": "g ÷ (g/mol) = mol"
+            },
+            {
+              "word": "multiply",
+              "action": "Return the marker towards the mass box.",
+              "label": "mol × (g/mol) = g"
+            }
+          ]
+        }
+      ],
+      "formula": {
+        "equation": "n = m/M",
+        "symbols": {
+          "n": "amount (mol)",
+          "m": "sample mass (g)",
+          "M": "molar mass (g/mol)"
+        }
+      },
+      "misconception": {
+        "wrong": "Multiply by molar mass to convert grams to moles.",
+        "correction": "Divide by molar mass when going from grams to moles."
+      },
+      "pastQuestion": {
+        "year": 2015,
+        "number": 16,
+        "source": {
+          "file": "JAMB-CHEMISTRY-PAST-QUESTIONS.pdf",
+          "page": 54,
+          "keyPage": 58
+        },
+        "prompt": "What is the molar concentration when 4.0 g of sodium hydroxide is present in 250 cm³ of solution?",
+        "options": [
+          "0.40 mol/dm³",
+          "0.10 mol/dm³",
+          "0.04 mol/dm³",
+          "0.02 mol/dm³"
+        ],
+        "answer": "A",
+        "scenes": [
+          {
+            "id": "mole-3-q1",
+            "show": "Show the four choices and calculate the amount of sodium hydroxide beneath the scale.",
+            "say": "This came in JAMB twenty fifteen. Start with four grams of sodium hydroxide. Its rounded molar mass is forty grams per mole. Divide the mass by that molar mass. We have zero point one mole of sodium hydroxide in the sample.",
+            "visual": "divide",
+            "beats": [
+              {
+                "word": "Divide",
+                "action": "Write the amount and cancel grams.",
+                "label": "M(NaOH) = 40 g/mol. n = 4.0 g ÷ (40 g/mol) = 0.10 mol"
+              }
+            ]
+          },
+          {
+            "id": "mole-3-q2",
+            "show": "Move the amount along the bridge and convert solution volume to cubic decimetres.",
+            "say": "The question wants moles per cubic decimetre. Convert two hundred and fifty cubic centimetres to zero point two five cubic decimetres. Divide zero point one mole by that volume. Choose option A, zero point four zero moles per cubic decimetre.",
+            "visual": "bridge",
+            "beats": [
+              {
+                "word": "Convert",
+                "action": "Write the solution volume in the requested unit.",
+                "label": "250 cm³ ÷ 1000 = 0.250 dm³"
+              },
+              {
+                "word": "Choose",
+                "action": "Write the concentration and highlight A.",
+                "label": "A · 0.10 mol ÷ 0.250 dm³ = 0.40 mol/dm³"
+              }
+            ]
+          },
+          {
+            "id": "mole-3-q3",
+            "show": "Move the marker past the moles stage to a final concentration box.",
+            "say": "Option B uses the amount in the sample. It is tempting to stop at that step. The sample is only a quarter of a cubic decimetre, so the concentration per cubic decimetre is larger than that amount.",
+            "visual": "route",
+            "beats": [
+              {
+                "word": "larger",
+                "action": "Move the marker past the amount to the concentration result.",
+                "label": "Amount and concentration have different units"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Track mass and molar mass separately in equal-particle questions."
+      ],
+      "tryIt": "mole-bridge",
+      "syllabus": "Convert mass to amount, then apply a mole calculation to solution concentration."
+    },
+    {
+      "id": "mole-4",
+      "title": "Molar volume of a gas at s.t.p.",
+      "hook": "Picture two party balloons held at the same temperature and pressure.",
+      "idea": "At the s.t.p. used here, a mole of ideal gas occupies about 22.4 dm³. Multiply moles by that molar volume to find the volume at s.t.p.",
+      "scenes": [
+        {
+          "id": "mole-4-s1",
+          "show": "Show gas particles moving inside an expanding balloon outline.",
+          "say": "Think of a balloon at a birthday party. When you put more gas into it, it can take up more space. For a fair chemistry comparison, hold temperature and pressure the same. Then the volume of an ideal gas increases in proportion to its amount.",
+          "visual": "balloon",
+          "beats": [
+            {
+              "word": "pressure",
+              "action": "Show the gas-filled space expand as particles are added.",
+              "label": "Compare at the same temperature and pressure"
+            }
+          ]
+        },
+        {
+          "id": "mole-4-s2",
+          "show": "Move particles inside a container and show the standard temperature and pressure.",
+          "say": "Chemists agree on reference conditions so they can compare gas volumes. For this lesson, standard temperature and pressure means zero degrees Celsius and one atmosphere. We call it s t p. Write those conditions beside the volume so you know when the shortcut applies.",
+          "visual": "stp",
+          "beats": [
+            {
+              "word": "zero",
+              "action": "Reveal the temperature and pressure under the container.",
+              "label": "s.t.p. here · 0 °C and 1 atm"
+            }
+          ]
+        },
+        {
+          "id": "mole-4-s3",
+          "show": "Label the first gas volume, then add an equal count and expand the gas space.",
+          "say": "At these conditions, one mole of an ideal gas takes up about twenty two point four cubic decimetres. That is the molar volume. If there are two moles at the same conditions, there is twice the volume. The gas is spread over a larger space.",
+          "visual": "gas",
+          "beats": [
+            {
+              "word": "about",
+              "action": "Mark the first gas volume.",
+              "label": "1 mol → about 22.4 dm³ at s.t.p."
+            },
+            {
+              "word": "twice",
+              "action": "Extend the gas space to twice the marked volume.",
+              "label": "2 mol → about 44.8 dm³ at s.t.p."
+            }
+          ]
+        },
+        {
+          "id": "mole-4-s4",
+          "show": "Move gas particles and reveal volume and amount as separate quantities.",
+          "say": "To get volume at s t p, multiply the amount by the molar volume. Moles times cubic decimetres per mole leave cubic decimetres. If the temperature or pressure is different, use the gas law or the molar volume stated for those conditions.",
+          "visual": "volume",
+          "beats": [
+            {
+              "word": "multiply",
+              "action": "Show the multiplication as the gas volume changes.",
+              "label": "V = nVₘ"
+            },
+            {
+              "word": "different,",
+              "action": "Highlight the conditions attached to the volume.",
+              "label": "At other conditions, check P and T"
+            }
+          ]
+        }
+      ],
+      "formula": {
+        "equation": "V = nVₘ at s.t.p.",
+        "symbols": {
+          "V": "gas volume (dm³)",
+          "n": "amount (mol)",
+          "Vₘ": "molar volume (≈ 22.4 dm³/mol at 0 °C and 1 atm)"
+        }
+      },
+      "misconception": {
+        "wrong": "22.4 dm³/mol works at every temperature and pressure.",
+        "correction": "Use it for the stated s.t.p. convention and an ideal gas."
+      },
+      "pastQuestion": {
+        "year": 2012,
+        "number": 21,
+        "source": {
+          "file": "JAMB-CHEMISTRY-PAST-QUESTIONS.pdf",
+          "page": 25,
+          "keyPage": 31
+        },
+        "prompt": "An experiment releases 0.05 mol of carbon dioxide. What is its volume? Use s.t.p. for the calculation.",
+        "options": [
+          "22.40 dm³",
+          "11.20 dm³",
+          "2.24 dm³",
+          "1.12 dm³"
+        ],
+        "answer": "D",
+        "scenes": [
+          {
+            "id": "mole-4-q1",
+            "show": "Show the question and options above moving particles, then label the s.t.p. assumption.",
+            "say": "This came in JAMB twenty twelve. We have zero point zero five moles of carbon dioxide. The printed question leaves out the temperature and pressure. Its options use the standard value, so we solve it at s t p and state that assumption.",
+            "visual": "gas",
+            "beats": [
+              {
+                "word": "standard",
+                "action": "Write the assumption beside the moving particles.",
+                "label": "Assume s.t.p. · Vₘ = 22.4 dm³/mol"
+              }
+            ]
+          },
+          {
+            "id": "mole-4-q2",
+            "show": "Shrink the marked volume to the sample amount and write the calculation.",
+            "say": "Multiply zero point zero five moles by twenty two point four cubic decimetres per mole. The mole units cancel. That leaves one point one two cubic decimetres, option D. Two point two four is tempting, but it would be the volume for zero point one mole.",
+            "visual": "volume",
+            "beats": [
+              {
+                "word": "Multiply",
+                "action": "Write the multiplication and cancellation.",
+                "label": "V = 0.05 mol × 22.4 dm³/mol = 1.12 dm³"
+              },
+              {
+                "word": "option",
+                "action": "Write the result and highlight D.",
+                "label": "D · 1.12 dm³"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "If pressure and temperature are given away from s.t.p., use the ideal gas law."
+      ],
+      "tryIt": "gas-laws",
+      "syllabus": "Use the molar volume of a gas under stated conditions.",
+      "check": true,
+      "checkNote": "2012 Q21 omits temperature and pressure. The display and narration state the assumption at s.t.p. that reproduces the key."
+    },
+    {
+      "id": "mole-5",
+      "title": "How JAMB tests the mole",
+      "hook": "A scale at the market gives mass, while a bottle label gives volume. Start with what the measurement actually tells you.",
+      "idea": "Choose a route to moles from the unit you are given. Then use the requested unit to decide where to go next.",
+      "scenes": [
+        {
+          "id": "mole-5-s1",
+          "show": "Move a marker from mass to moles and show a separate path to particles.",
+          "say": "At a market stall, a scale gives a mass. A label on a bottle gives a volume. In a mole question, underline what you start with. If the question gives grams, divide by molar mass to reach moles. From there you can get a particle count.",
+          "visual": "route",
+          "beats": [
+            {
+              "word": "grams,",
+              "action": "Move the marker through the conversion route.",
+              "label": "Grams → moles → particles"
+            }
+          ]
+        },
+        {
+          "id": "mole-5-s2",
+          "show": "Advance the marker from moles to particles and then reverse to moles.",
+          "say": "To get the number of particles from moles, multiply by the Avogadro constant. To go back, divide the count by that constant. Name your particle first. A count of oxygen atoms and a count of oxygen molecules answer different questions.",
+          "visual": "bridge",
+          "beats": [
+            {
+              "word": "multiply",
+              "action": "Move the marker to the particles box.",
+              "label": "Moles × Nₐ → particle count"
+            },
+            {
+              "word": "back,",
+              "action": "Move the marker back to the moles box.",
+              "label": "Particle count ÷ Nₐ → moles"
+            }
+          ]
+        },
+        {
+          "id": "mole-5-s3",
+          "show": "Move the gas particles as the conditions switch from s.t.p. to a different pressure and temperature.",
+          "say": "For a gas volume, look at the conditions first. At s t p, divide by the standard molar volume to get moles. At a different pressure or temperature, use the ideal gas equation. Write pressure times volume divided by the gas constant times absolute temperature.",
+          "visual": "gas",
+          "beats": [
+            {
+              "word": "conditions",
+              "action": "Mark the volume for the s.t.p. route.",
+              "label": "At s.t.p. · n = V/Vₘ"
+            },
+            {
+              "word": "ideal",
+              "action": "Show the gas-law route.",
+              "label": "At other conditions · n = PV/(RT)"
+            }
+          ]
+        },
+        {
+          "id": "mole-5-s4",
+          "show": "Show gas particles moving as the temperature readout changes from Celsius to kelvin.",
+          "say": "A common mistake is to put the Celsius number straight into the gas equation. The equation needs kelvin. Add about two hundred and seventy three to the Celsius value. Check the units of the gas constant against the pressure and volume in the question.",
+          "visual": "stp",
+          "beats": [
+            {
+              "word": "kelvin.",
+              "action": "Switch the temperature readout to kelvin.",
+              "label": "T(K) ≈ t(°C) + 273"
+            },
+            {
+              "word": "units",
+              "action": "Show the compatible units.",
+              "label": "atm · dm³ · K"
+            }
+          ]
+        }
+      ],
+      "formula": {
+        "equation": "n = PV/(RT)",
+        "symbols": {
+          "n": "amount (mol)",
+          "P": "pressure (atm)",
+          "V": "volume (dm³)",
+          "R": "gas constant (0.08206 dm³·atm·mol⁻¹·K⁻¹)",
+          "T": "temperature (K)"
+        }
+      },
+      "misconception": {
+        "wrong": "Use the s.t.p. shortcut or a Celsius temperature in any gas question.",
+        "correction": "At stated nonstandard conditions, use the gas law with temperature in kelvin."
+      },
+      "pastQuestion": {
+        "year": 2018,
+        "number": 29,
+        "source": {
+          "file": "JAMB-CHEMISTRY-PAST-QUESTIONS.pdf",
+          "page": 81,
+          "keyPage": 83
+        },
+        "prompt": "A gas occupies 10.0 dm³ at 4 atm and 273 °C. How many moles are present? (Molar volume at s.t.p. = 22.4 dm³/mol.)",
+        "options": [
+          "0.89 mol",
+          "1.90 mol",
+          "3.80 mol",
+          "5.70 mol"
+        ],
+        "answer": "A",
+        "scenes": [
+          {
+            "id": "mole-5-q1",
+            "show": "Display the paper’s values and options, with the temperature changing to kelvin.",
+            "say": "This came in JAMB twenty eighteen. The gas is at four atmospheres and two hundred and seventy three degrees Celsius. That temperature is about five hundred and forty six kelvin. The gas is away from s t p, so use the ideal gas equation.",
+            "visual": "stp",
+            "beats": [
+              {
+                "word": "kelvin.",
+                "action": "Write the Kelvin conversion below the options.",
+                "label": "273 °C ≈ 546 K"
+              }
+            ]
+          },
+          {
+            "id": "mole-5-q2",
+            "show": "Move the gas particles while the substitution is written and the answer is revealed.",
+            "say": "Divide pressure times volume by the gas constant times the Kelvin temperature. The pressure, volume and temperature units cancel, leaving about zero point eight nine moles. Choose option A. Option B is too large. Using the Celsius reading makes the denominator too small, which also gives an answer that is too large.",
+            "visual": "volume",
+            "beats": [
+              {
+                "word": "cancel,",
+                "action": "Write the substitution with units.",
+                "label": "(4 atm × 10.0 dm³) ÷ (0.08206 dm³·atm·mol⁻¹·K⁻¹ × 546 K)"
+              },
+              {
+                "word": "Choose",
+                "action": "Write the result and highlight A.",
+                "label": "A · 0.89 mol"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Distinguish simple particle counts, mass conversions and volumes at s.t.p."
+      ],
+      "tryIt": "mole-bridge",
+      "syllabus": "Select and apply mole relationships and the ideal gas equation from the units given."
+    }
+  ]
+}

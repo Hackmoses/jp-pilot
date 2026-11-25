@@ -7,15 +7,16 @@ export type InteractiveProps = { practiceHref: string; onComplete: () => void; o
 type Interactive = {
   title: string
   id?: string
+  anchor?: string
   load: () => Promise<{ default: ComponentType<InteractiveProps> }>
   chapter: string
 }
 
 const lessons: Record<string, Interactive[]> = {
   chemistry: [
-    { chapter: '2', title: 'Mole bridge', load: () => import('./try-it-moles') },
+    { chapter: '2', anchor: 'mole-bridge', title: 'Mole bridge', load: () => import('./try-it-moles') },
     { id: 'limiting', chapter: '2', title: 'Limiting reagent', load: () => import('./try-it-limiting') },
-    { chapter: '3', title: 'Gas laws', load: () => import('./try-it-gas') },
+    { chapter: '3', anchor: 'gas-laws', title: 'Gas laws', load: () => import('./try-it-gas') },
     { id: 'diffusion', chapter: '3', title: 'Diffusion race', load: () => import('./try-it-diffusion') },
     { id: 'partial-pressure', chapter: '3', title: 'Partial pressures', load: () => import('./try-it-partial-pressure') },
     { id: 'freezing', chapter: '11', title: 'Freezing point depression', load: () => import('./try-it-freezing') },
@@ -30,7 +31,7 @@ const lessons: Record<string, Interactive[]> = {
     { id: 'capacitors', chapter: '17', title: 'Capacitors', load: () => import('./try-it-capacitors') },
     { chapter: '14', title: 'Concave mirror', load: () => import('./try-it-mirror') },
     { chapter: '18', title: 'Circuit lab', load: () => import('./try-it-circuit') },
-    { chapter: '12', title: 'Wave on a string', load: () => import('./try-it-wave') },
+    { chapter: '12', anchor: 'wave-on-a-string', title: 'Wave on a string', load: () => import('./try-it-wave') },
   ],
   biology: [
     { chapter: '1', title: 'Osmosis cell', load: () => import('./try-it-osmosis') },
@@ -80,7 +81,7 @@ export function TryItCard({ interactive, subject, chapter }: {
   }
 
   return (
-    <section class="jp-card jp-try-card" data-open={open ? 'true' : 'false'} aria-labelledby={id + '-title'}>
+    <section id={interactive.anchor ?? interactive.id} class="jp-card jp-try-card" data-open={open ? 'true' : 'false'} aria-labelledby={id + '-title'}>
       <div class="jp-try-header">
         <h3 id={id + '-title'} class="jp-mode-card-title">{interactive.title}</h3>
         {completed && <span class="jp-mode-studied">✓ Completed</span>}

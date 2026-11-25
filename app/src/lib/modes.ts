@@ -1,4 +1,4 @@
-import { chapterForTopic, syllabusSections } from './sections'
+import { chapterForTopic, conceptLessonTopic, syllabusSections } from './sections'
 import { getAnimation, getQuestion, registerSavedQuestions } from './data'
 import { getDueQuestionIds } from './store'
 import type { Animation, OptionId, Question } from './types'
@@ -135,6 +135,8 @@ function read() {
 interface ModeState {
   recent: { href: string; label: string } | null
   studied: Record<string, boolean>
+  completedConceptLessons: Record<string, boolean>
+  studiedConceptTopics: Record<string, boolean>
   completedInteractives: Record<string, boolean>
   studyAnswers: Partial<Record<string, OptionId>>
   practice: Record<string, PracticeSettings>
@@ -149,6 +151,8 @@ const saved = read()
 const state: ModeState = {
   recent: saved?.recent ?? null,
   studied: saved?.studied ?? {},
+  completedConceptLessons: saved?.completedConceptLessons ?? {},
+  studiedConceptTopics: saved?.studiedConceptTopics ?? {},
   completedInteractives: saved?.completedInteractives ?? {},
   studyAnswers: saved?.studyAnswers ?? {},
   practice: saved?.practice ?? {},
@@ -182,7 +186,16 @@ export function markInteractiveCompleted(subject: string, chapter: string, lesso
   state.studied[subject + '/' + chapter] = true
   save()
 }
+export function hasCompletedConceptLesson(id: string) {
+  return Boolean(state.completedConceptLessons[id])
+}
+export function completeConceptLesson(subject: string, chapter: string, id: string, all: string[]) {
+  state.completedConceptLessons[id] = true
+  if (all.every(hasCompletedConceptLesson)) state.studiedConceptTopics[subject + '/' + chapter] = true
+  save()
+}
 export function hasStudied(subject: string, chapter: string) {
+  if (conceptLessonTopic(subject, chapter)) return Boolean(state.studiedConceptTopics[subject + '/' + chapter])
   return Boolean(state.studied[subject + '/' + chapter]) || hasCompletedInteractive(subject, chapter)
 }
 export function getStudyAnswer(id: string) { return state.studyAnswers[id] }
