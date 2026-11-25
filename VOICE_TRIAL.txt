@@ -1,0 +1,50 @@
+JP voice trial on the Mac (Stage 1, audition only)
+
+Goal
+Replace the Kokoro af_heart narration with Chatterbox cloning a synthetic Nigerian male
+teacher voice. This stage only auditions the voice. Do not regenerate the app audio yet.
+
+Where things are
+- You are on branch voice/chatterbox-trial. Work and push only here. Never push to main.
+- The reference voice is on branch voice-transfer. Get it with
+    git fetch origin voice-transfer
+    git checkout origin/voice-transfer -- voice-samples/candidate-charon.wav
+    git restore --staged voice-samples/candidate-charon.wav
+    mv voice-samples/candidate-charon.wav voice-samples/reference.wav
+  voice-samples/ is gitignored. Never commit it.
+- Narration text is in audio/spoken.json (animId -> list of step lines).
+- Current clips are listed in audio/manifest.json and live under app/public/audio/
+  (Opus in .webm). Match their encoding when you encode new clips.
+
+Steps
+1. Make sure the Mac has Homebrew, git, Python 3.11, ffmpeg and Node 20+. Install what is
+   missing. Install Chatterbox in its own venv outside the repo (~/venvs/chatterbox).
+   Use the Apple GPU (MPS), fall back to CPU only if MPS fails. Record every install
+   command in voice-trial/SETUP.txt.
+2. Pick 6 lines from audio/spoken.json. 2 Chemistry, 2 Physics, 1 short line, and 1 line
+   with a decimal (like 4.6 g) or a naira amount. Save them in voice-trial/lines.json
+   with animId and step number.
+3. Generate each line with reference.wav in 3 settings (default, exaggeration 0.35,
+   exaggeration 0.6 with cfg 0.4). 18 clips.
+4. Encode each clip to Opus .webm with the same settings as the current app clips.
+   Note each file size.
+5. Run Whisper on every clip. Flag any clip whose words do not match the line.
+6. Build voice-trial/index.html, an offline page that plays on a phone. One row per
+   line with the current af_heart clip first, then the 3 Chatterbox versions, with
+   size and Whisper result under each.
+7. Time the generation. Report seconds per clip and an estimate for regenerating
+   every clip in audio/manifest.json.
+
+Rules
+- Commit only by file name, never git add -A.
+- Commit voice-trial/SETUP.txt, voice-trial/lines.json, voice-trial/index.html, the
+  generated .webm clips (small) and any script you write. Never commit .wav files,
+  voice-samples/ or .env.
+- Never print or copy keys from .env. This stage needs no API keys.
+- Do not change app/public/audio, data/ or schemas/.
+- Push to origin voice/chatterbox-trial when done.
+
+Report
+The setting that sounds most Nigerian and clear in your view (the owner confirms by
+ear), Whisper mismatches, Opus size compared with af_heart, and the full
+regeneration time estimate.
