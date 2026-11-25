@@ -94,7 +94,14 @@ export async function loadSubject(subject: string): Promise<boolean> {
         anims = aFile.animations ?? []
       }
 
-      registerSubjectData(normalized, qFile.questions ?? [], anims)
+      let subjectQuestions = qFile.questions ?? []
+      if (TEACH_ONLY_SUBJECTS.has(normalized)) {
+        // Temporary pilot filter: show only questions whose animation has Teach me steps.
+        const teachIds = new Set(anims.filter((anim) => (anim.teach?.length ?? 0) > 0).map((anim) => anim.id))
+        const filtered = subjectQuestions.filter((question) => question.animationId && teachIds.has(question.animationId))
+        if (filtered.length > 0) subjectQuestions = filtered
+      }
+      registerSubjectData(normalized, subjectQuestions, anims)
       return true
     } catch {
       return false
@@ -106,6 +113,10 @@ export async function loadSubject(subject: string): Promise<boolean> {
   inflightSubjects.set(normalized, promise)
   return promise
 }
+
+// Pilot switch: subjects listed here show only questions that have Teach me narration.
+// Remove a subject from this set to show all of its questions again.
+const TEACH_ONLY_SUBJECTS = new Set<string>(['chemistry'])
 
 export function getQuestions(): Question[] {
   return questions.slice()
