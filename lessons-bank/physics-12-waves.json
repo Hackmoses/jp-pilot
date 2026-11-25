@@ -1,0 +1,665 @@
+{
+  "subject": "physics",
+  "topicId": "12",
+  "lessons": [
+    {
+      "id": "waves-1",
+      "title": "What a wave carries",
+      "hook": "Drop a pebble into a water tank and watch a leaf near the side.",
+      "idea": "A wave is a disturbance that travels. It transfers energy while the material can move about its usual position.",
+      "scenes": [
+        {
+          "id": "waves-1-s1",
+          "show": "A ripple crosses a tank in side view. A leaf bobs as the ripple passes.",
+          "say": "Drop a small stone into a water tank. Watch the ripples spread towards the side. Pick a leaf floating near the edge and keep your eyes on it. The ripple reaches the leaf, lifts it, then moves on towards the wall.",
+          "visual": "tank",
+          "beats": [
+            {
+              "word": "ripples",
+              "action": "Reveal the pulse label above the advancing ripple.",
+              "label": "A disturbance spreads"
+            }
+          ]
+        },
+        {
+          "id": "waves-1-s2",
+          "show": "A pulse travels along a rope. A marked knot moves up and down at a fixed horizontal position.",
+          "say": "Now send a single flick down a washing line. Follow the knot we marked on the rope. The knot rises as the bump reaches it and comes back down after the bump leaves. The bump moves along the rope.",
+          "visual": "pulse",
+          "beats": [
+            {
+              "word": "knot",
+              "action": "Emphasise the fixed guide through the knot as the bump approaches.",
+              "label": "Track one part of the rope"
+            }
+          ]
+        },
+        {
+          "id": "waves-1-s3",
+          "show": "Show a moving bump and an energy arrow above the crest.",
+          "say": "That moving disturbance is a wave. The hand supplies energy when it flicks the line. The disturbance passes that energy along the rope, so a part of the rope far from your hand can move even though your hand stays where it is.",
+          "visual": "energy",
+          "beats": [
+            {
+              "word": "energy",
+              "action": "Show the energy label travelling with the bump.",
+              "label": "The wave transfers energy"
+            }
+          ]
+        },
+        {
+          "id": "waves-1-s4",
+          "show": "Replay the movement with a stationary horizontal reference through the knot.",
+          "say": "It is easy to think the knot is carried along with the wave. Watch its position against the mark underneath it. It moves around its starting position as the disturbance travels past. The motion of the knot and the motion of the wave are different.",
+          "visual": "pulse",
+          "beats": [
+            {
+              "word": "starting",
+              "action": "Highlight the knot’s vertical guide and the passing pulse.",
+              "label": "Local motion and travelling motion"
+            }
+          ]
+        }
+      ],
+      "formula": null,
+      "misconception": {
+        "wrong": "The knot travels along with the pulse.",
+        "correction": "The knot moves about its starting position while the pulse transfers energy along the rope."
+      },
+      "pastQuestion": {
+        "year": 2013,
+        "number": 25,
+        "source": {
+          "file": "JAMB-PHYSICS-PAST-QUESTIONS.pdf",
+          "page": 37,
+          "keyPage": 42
+        },
+        "prompt": "How is a wave travelling along a stretched string classified?",
+        "options": [
+          "Electromagnetic wave",
+          "Microwave",
+          "Mechanical wave",
+          "Seismic wave"
+        ],
+        "answer": "C",
+        "scenes": [
+          {
+            "id": "waves-1-q1",
+            "show": "Show the question and four options above a travelling pulse on a string.",
+            "say": "This came in JAMB twenty thirteen. Look at the stretched string in the question. Think of the string as a row of nearby parts. A flick moves one part of the string, and that motion affects the part next to it.",
+            "visual": "pulse",
+            "beats": [
+              {
+                "word": "string",
+                "action": "Write the first line as the pulse moves along the string.",
+                "label": "The string is the material medium"
+              }
+            ]
+          },
+          {
+            "id": "waves-1-q2",
+            "show": "Keep the options visible and move the energy label with the pulse.",
+            "say": "The disturbance here needs the material of the string to pass the energy along. That makes it a mechanical wave, so choose option C. A microwave is tempting because it can travel too. It is electromagnetic and can travel through a vacuum.",
+            "visual": "energy",
+            "beats": [
+              {
+                "word": "mechanical",
+                "action": "Write the conclusion and highlight C.",
+                "label": "C · Mechanical wave"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Distinguish waves that require a material medium."
+      ],
+      "tryIt": "wave-on-a-string",
+      "syllabus": "Interpret wave motion, distinguish particle motion and identify energy transfer."
+    },
+    {
+      "id": "waves-2",
+      "title": "Transverse and longitudinal waves",
+      "hook": "Imagine flicking a washing line, then pushing the end of a spring.",
+      "idea": "Compare how one part of the material vibrates with the direction in which the wave travels. This comparison gives the wave its name.",
+      "scenes": [
+        {
+          "id": "waves-2-s1",
+          "show": "A wave travels right along a line while a marked point on it moves vertically.",
+          "say": "Hold a washing line stretched out and flick your end up and down. The wave travels along the line towards the other end. Keep your eye on the marked spot. That spot moves up and down as the wave goes past.",
+          "visual": "string",
+          "beats": [
+            {
+              "word": "spot",
+              "action": "Show the vertical motion arrow beside the moving marker.",
+              "label": "The spot moves up and down"
+            }
+          ]
+        },
+        {
+          "id": "waves-2-s2",
+          "show": "Add a rightward travel arrow to the moving wave beside the vertical arrow.",
+          "say": "Compare those directions. The wave travels to the right and the spot moves vertically. They are at right angles. We call this a transverse wave. Turn the picture on its side in your mind. The directions are still at right angles, so it is still transverse.",
+          "visual": "string",
+          "beats": [
+            {
+              "word": "transverse",
+              "action": "Show both direction arrows together.",
+              "label": "Transverse · motion across the travel direction"
+            }
+          ]
+        },
+        {
+          "id": "waves-2-s3",
+          "show": "Moving dots bunch and spread as the spring disturbance travels horizontally.",
+          "say": "Now stretch a spring out on the ground. Push its end forwards and pull it back along its length. The crowded parts move along the spring. Each marked coil moves back and forth along that same line. We call this a longitudinal wave.",
+          "visual": "spring",
+          "beats": [
+            {
+              "word": "longitudinal",
+              "action": "Show a horizontal vibration arrow under the highlighted coil.",
+              "label": "Longitudinal · motion along the travel direction"
+            }
+          ]
+        },
+        {
+          "id": "waves-2-s4",
+          "show": "Show the moving string and spring stacked with their travel and vibration arrows.",
+          "say": "Both waves in the picture move to the right. Here is the difference to remember. On the string, the spot moves across the direction of travel. In the spring, the coil moves along it. Sound in air is longitudinal as well.",
+          "visual": "compare",
+          "beats": [
+            {
+              "word": "across",
+              "action": "Reveal the contrasting vibration arrows beside the two moving models.",
+              "label": "Compare the arrows for particle motion"
+            }
+          ]
+        }
+      ],
+      "formula": null,
+      "misconception": {
+        "wrong": "Waves moving in the same direction must be the same type.",
+        "correction": "Classify by the particle vibration relative to the direction of travel."
+      },
+      "pastQuestion": {
+        "year": 2013,
+        "number": 26,
+        "source": {
+          "file": "JAMB-PHYSICS-PAST-QUESTIONS.pdf",
+          "page": 37,
+          "keyPage": 42
+        },
+        "prompt": "What distinguishes a transverse wave from a longitudinal wave when both travel in the same direction in a medium?",
+        "options": [
+          "Frequency",
+          "Amplitude",
+          "Direction in which the particles vibrate",
+          "Period of particle vibration"
+        ],
+        "answer": "C",
+        "scenes": [
+          {
+            "id": "waves-2-q1",
+            "show": "Show the options and move both waves to the right.",
+            "say": "This came in JAMB twenty thirteen. The question sends both waves in the same direction. Start with that shared arrow. Now compare the arrows for the particles. The spot on the string goes across the direction of travel. The spring coil moves along it.",
+            "visual": "compare",
+            "beats": [
+              {
+                "word": "particles.",
+                "action": "Write the comparison while the two marked particles move.",
+                "label": "Same travel direction, different particle motion"
+              }
+            ]
+          },
+          {
+            "id": "waves-2-q2",
+            "show": "Emphasise the two vibration arrows and reveal the answer.",
+            "say": "Choose option C, the direction in which the particles vibrate. Frequency can look like the answer if you notice one wave shaking quickly. It only tells you how often the particles vibrate. Even if the two frequencies match, the directions of vibration can still differ.",
+            "visual": "compare",
+            "beats": [
+              {
+                "word": "option",
+                "action": "Write C and highlight the matching option.",
+                "label": "C · Direction of particle vibration"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Distinguish transverse and longitudinal waves by polarization."
+      ],
+      "tryIt": "wave-on-a-string",
+      "syllabus": "Differentiate transverse and longitudinal waves."
+    },
+    {
+      "id": "waves-3",
+      "title": "Amplitude, wavelength, frequency and period",
+      "hook": "Imagine a drummer at a school assembly. Watch what changes when the beat or the size of the vibration changes.",
+      "idea": "Amplitude is a displacement from rest. Wavelength measures distance, frequency counts cycles per second, and period measures time per cycle.",
+      "scenes": [
+        {
+          "id": "waves-3-s1",
+          "show": "A wave oscillates. Measure from the rest line to a crest and then show the full crest-to-trough height.",
+          "say": "Imagine a drummer at assembly. A stronger hit can make the skin move farther. On this wave drawing, the middle line is the rest position. The farthest displacement from that line is the amplitude. If you measure from top to bottom, you get twice the amplitude.",
+          "visual": "amplitude",
+          "beats": [
+            {
+              "word": "amplitude.",
+              "action": "Draw the amplitude bracket.",
+              "label": "Amplitude · rest position to crest"
+            },
+            {
+              "word": "twice",
+              "action": "Add a second bracket showing the full height.",
+              "label": "Crest to trough = 2A"
+            }
+          ]
+        },
+        {
+          "id": "waves-3-s2",
+          "show": "Follow two consecutive crests with a horizontal spacing bracket.",
+          "say": "Now look along the rope in one snapshot. Start at a crest and go to the next crest. That horizontal distance is one wavelength. You could go from one trough to the next trough instead. For wavelength, use a matching point on the next cycle.",
+          "visual": "wavelength",
+          "beats": [
+            {
+              "word": "wavelength.",
+              "action": "Draw a horizontal bracket between adjacent crests.",
+              "label": "Wavelength · crest to next crest"
+            }
+          ]
+        },
+        {
+          "id": "waves-3-s3",
+          "show": "A marker stays fixed while crests pass, then the source runs faster in a separate view.",
+          "say": "Pick a spot and watch the crests pass it. Frequency says how many full cycles pass in one second. We measure it in hertz. Watch the marker as the source repeats faster. More crests now pass the spot in the same amount of time.",
+          "visual": "frequency",
+          "beats": [
+            {
+              "word": "hertz.",
+              "action": "Show a bar timing the passage of a cycle.",
+              "label": "Frequency · cycles per second (Hz)"
+            },
+            {
+              "word": "faster.",
+              "action": "Increase the rate at which crests pass.",
+              "label": "More cycles pass per second"
+            }
+          ]
+        },
+        {
+          "id": "waves-3-s4",
+          "show": "A bar measures one oscillation of a marked spot.",
+          "say": "Period asks a different question. How many seconds does one cycle take? Start the clock when the spot reaches the top and stop at the next top. A higher frequency means less time for each cycle. Divide one by the frequency to get the period.",
+          "visual": "period",
+          "beats": [
+            {
+              "word": "clock",
+              "action": "Reveal the cycle timer under the marker.",
+              "label": "Period · seconds for one cycle (s)"
+            },
+            {
+              "word": "Divide",
+              "action": "Replace the label with the reciprocal equation.",
+              "label": "T = 1/f"
+            }
+          ]
+        }
+      ],
+      "formula": {
+        "equation": "T = 1/f",
+        "symbols": {
+          "T": "period (s)",
+          "f": "frequency (Hz or s⁻¹)",
+          "A": "amplitude of displacement (m)",
+          "λ": "wavelength (m)"
+        }
+      },
+      "misconception": {
+        "wrong": "Amplitude is the whole height from crest to trough.",
+        "correction": "For a symmetric wave the whole height is twice the amplitude measured from equilibrium."
+      },
+      "pastQuestion": {
+        "year": 2012,
+        "number": 29,
+        "source": {
+          "file": "JAMB-PHYSICS-PAST-QUESTIONS.pdf",
+          "page": 28,
+          "keyPage": 32
+        },
+        "prompt": "Which characteristic of a vibration determines its intensity?",
+        "options": [
+          "Frequency",
+          "Overtone",
+          "Wavelength",
+          "Amplitude"
+        ],
+        "answer": "D",
+        "scenes": [
+          {
+            "id": "waves-3-q1",
+            "show": "Show the question and measure the vibration from its centre line.",
+            "say": "This came in JAMB twenty twelve. Think of comparing waves of the same kind under the same conditions. Look at how far the vibration goes from the middle line. That distance is the amplitude. A greater amplitude means greater intensity in this comparison.",
+            "visual": "amplitude",
+            "beats": [
+              {
+                "word": "amplitude",
+                "action": "Write the relationship beside the amplitude arrow.",
+                "label": "Greater amplitude → greater intensity"
+              }
+            ]
+          },
+          {
+            "id": "waves-3-q2",
+            "show": "Keep the answer visible while successive crests cross a fixed marker.",
+            "say": "Choose option D, amplitude. Frequency is a tempting choice because a fast vibration looks busy. But frequency counts repeats each second. Two sounds can have the same frequency and different amplitudes, so the frequency alone does not tell you which sound is more intense.",
+            "visual": "frequency",
+            "beats": [
+              {
+                "word": "option",
+                "action": "Write the answer and highlight D.",
+                "label": "D · Amplitude"
+              },
+              {
+                "word": "counts",
+                "action": "Draw attention to the crossings at the fixed marker.",
+                "label": "Frequency counts cycles"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Read the separation between successive crests as wavelength."
+      ],
+      "tryIt": "wave-on-a-string",
+      "syllabus": "Identify and interpret the basic parameters of a progressive wave."
+    },
+    {
+      "id": "waves-4",
+      "title": "The wave equation",
+      "hook": "Watch ripples pass a mark on the side of a water tank.",
+      "idea": "In one period a travelling wave advances one wavelength. Frequency tells you how many wavelengths pass in a second, so speed equals frequency times wavelength.",
+      "scenes": [
+        {
+          "id": "waves-4-s1",
+          "show": "Show moving crests with the distance between adjacent crests bracketed.",
+          "say": "Picture a water tank where ripples are passing a mark. Follow one crest while the next one approaches the mark. By the time the next crest reaches it, the first crest has travelled one wavelength. The time that took is one period.",
+          "visual": "wavelength",
+          "beats": [
+            {
+              "word": "wavelength.",
+              "action": "Draw the spacing bracket and track it with the crests.",
+              "label": "One period → one wavelength of travel"
+            }
+          ]
+        },
+        {
+          "id": "waves-4-s2",
+          "show": "Track the crest and label the wavelength and the period relationship.",
+          "say": "Speed is distance divided by time. For this wave, use the wavelength for distance and the period for the time. The frequency is one divided by the period. So the wave speed is also the frequency multiplied by the wavelength.",
+          "visual": "speed",
+          "beats": [
+            {
+              "word": "frequency",
+              "action": "Reveal the equation while the spacing bracket advances.",
+              "label": "v = λ/T = fλ"
+            }
+          ]
+        },
+        {
+          "id": "waves-4-s3",
+          "show": "Move the wave under a label that combines the units for frequency and wavelength.",
+          "say": "In the calculation, write frequency in hertz and wavelength in metres. Hertz means per second. Metres multiplied by per second give metres per second, the unit for speed. If your wavelength is given in centimetres, convert it to metres before using a speed in metres per second.",
+          "visual": "units",
+          "beats": [
+            {
+              "word": "Hertz",
+              "action": "Show the per-second unit above the wave.",
+              "label": "Hz = s⁻¹"
+            },
+            {
+              "word": "centimetres,",
+              "action": "Display the consistent units next to the bracket.",
+              "label": "m × s⁻¹ = m/s"
+            }
+          ]
+        },
+        {
+          "id": "waves-4-s4",
+          "show": "Show a moving crest and a single marker while the requested unit changes to seconds.",
+          "say": "A common wrong move is to multiply the two numbers in every wave question. First check which quantity the question asks for. If you want the period, you need seconds. Wavelength divided by speed leaves seconds because the metres cancel.",
+          "visual": "choose",
+          "beats": [
+            {
+              "word": "period,",
+              "action": "Show the equation beside the travelling wave.",
+              "label": "T = λ/v"
+            },
+            {
+              "word": "cancel.",
+              "action": "Reveal the units with the metres cancelled.",
+              "label": "m ÷ (m/s) = s"
+            }
+          ]
+        }
+      ],
+      "formula": {
+        "equation": "v = fλ; T = λ/v",
+        "symbols": {
+          "v": "wave speed (m/s)",
+          "f": "frequency (Hz)",
+          "λ": "wavelength (m)",
+          "T": "period (s)"
+        }
+      },
+      "misconception": {
+        "wrong": "Multiply whatever two quantities are given.",
+        "correction": "Choose the relation whose result has the unit the question asks for."
+      },
+      "pastQuestion": {
+        "year": 2010,
+        "number": 24,
+        "source": {
+          "file": "JAMB-PHYSICS-PAST-QUESTIONS.pdf",
+          "page": 6,
+          "keyPage": 11
+        },
+        "prompt": "A wave travels at 420 m/s and has a wavelength of 42 m. What is its period?",
+        "options": [
+          "1.0 s",
+          "0.1 s",
+          "0.5 s",
+          "1.2 s"
+        ],
+        "answer": "B",
+        "scenes": [
+          {
+            "id": "waves-4-q1",
+            "show": "Show the options and place the wavelength on a bracket travelling between crests.",
+            "say": "This came in JAMB twenty ten. The wave moves at four hundred and twenty metres per second. Its wavelength is forty two metres. The period is the time to travel one wavelength, so start with distance divided by speed.",
+            "visual": "wavelength",
+            "beats": [
+              {
+                "word": "distance",
+                "action": "Write the expression for the period.",
+                "label": "T = λ/v"
+              }
+            ]
+          },
+          {
+            "id": "waves-4-q2",
+            "show": "Track the moving bracket while the calculation is revealed below.",
+            "say": "Divide forty two metres by four hundred and twenty metres per second. The metres cancel, leaving seconds. The result is zero point one seconds, option B. One second is tempting, but at this speed the wave would travel four hundred and twenty metres in that time.",
+            "visual": "write",
+            "beats": [
+              {
+                "word": "Divide",
+                "action": "Write the substitution with units.",
+                "label": "42 m ÷ (420 m/s) = 0.1 s"
+              },
+              {
+                "word": "option",
+                "action": "Highlight B and reveal the answer line.",
+                "label": "B · 0.1 s"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Convert centimetres and distinguish half a wavelength from a full one."
+      ],
+      "tryIt": "wave-on-a-string",
+      "syllabus": "Relate frequency and wavelength to wave speed and compute period."
+    },
+    {
+      "id": "waves-5",
+      "title": "How JAMB tests waves",
+      "hook": "Stand at a roadside bus stop and imagine the sound of a danfo horn reaching you.",
+      "idea": "Read what the question measures. Check which points repeat, convert the units, then pick the equation.",
+      "scenes": [
+        {
+          "id": "waves-5-s1",
+          "show": "Send compressions and rarefactions past a fixed point.",
+          "say": "A danfo horn sends sound through the air. Air particles move back and forth as the sound passes. Look at the dots in the drawing. They bunch in a compression and spread in a rarefaction. The crowded and spaced patterns move along towards your ear.",
+          "visual": "spring",
+          "beats": [
+            {
+              "word": "compression",
+              "action": "Reveal the horizontal motion arrow with the moving dots.",
+              "label": "Compression · crowded air"
+            }
+          ]
+        },
+        {
+          "id": "waves-5-s2",
+          "show": "Draw a half wavelength from a crowded region to a spaced region, then extend it to the next crowded region.",
+          "say": "JAMB can name two different points and ask for a wavelength. Start at a compression. The next rarefaction is halfway to the next compression. The distance you need for one full wavelength is between matching points, from compression to compression or rarefaction to rarefaction.",
+          "visual": "gaps",
+          "beats": [
+            {
+              "word": "halfway",
+              "action": "Show the bracket across half a cycle.",
+              "label": "Adjacent compression to rarefaction = λ/2"
+            },
+            {
+              "word": "matching",
+              "action": "Extend the bracket to the following compression.",
+              "label": "Compression to next compression = λ"
+            }
+          ]
+        },
+        {
+          "id": "waves-5-s3",
+          "show": "Place a measurement bracket above the wave and change its label from centimetres to metres.",
+          "say": "Another trap is the unit. If the question gives centimetres for the gap but metres per second for speed, first work out what the gap means. Then express the full wavelength in metres. The frequency is the speed divided by that full wavelength.",
+          "visual": "units",
+          "beats": [
+            {
+              "word": "metres.",
+              "action": "Show the converted wavelength unit beside the bracket.",
+              "label": "Use metres for λ when speed is in m/s"
+            },
+            {
+              "word": "frequency",
+              "action": "Reveal the frequency equation.",
+              "label": "f = v/λ"
+            }
+          ]
+        },
+        {
+          "id": "waves-5-s4",
+          "show": "Run both wave models with distinct motion arrows and a fixed spot for comparisons.",
+          "say": "Some questions ask about directions. Compare the motion of the material with the direction of travel. Others give measurements, so decide whether you need a distance, a time or a rate. Write the unit you want before you choose a formula.",
+          "visual": "compare",
+          "beats": [
+            {
+              "word": "directions.",
+              "action": "Show both particle arrows.",
+              "label": "Direction question · compare arrows"
+            },
+            {
+              "word": "unit",
+              "action": "Show the unit-check label.",
+              "label": "Calculation question · check the answer unit"
+            }
+          ]
+        }
+      ],
+      "formula": {
+        "equation": "λ = 2d; f = v/λ",
+        "symbols": {
+          "λ": "wavelength (m)",
+          "d": "distance from a compression to its adjacent rarefaction (m)",
+          "f": "frequency (Hz)",
+          "v": "wave speed (m/s)"
+        }
+      },
+      "misconception": {
+        "wrong": "An adjacent compression and rarefaction are a full wavelength apart.",
+        "correction": "They are half a wavelength apart. Match two adjacent compressions or two adjacent rarefactions."
+      },
+      "pastQuestion": {
+        "year": 2017,
+        "number": 28,
+        "source": {
+          "file": "JAMB-PHYSICS-PAST-QUESTIONS.pdf",
+          "page": 76,
+          "keyPage": 79
+        },
+        "prompt": "Adjacent compressions and rarefactions in a sound wave are 17 cm apart. The wave speed is 340 m/s. What is the frequency?",
+        "options": [
+          "10 Hz",
+          "20 Hz",
+          "5780 Hz",
+          "1000 Hz"
+        ],
+        "answer": "D",
+        "scenes": [
+          {
+            "id": "waves-5-q1",
+            "show": "Show the options and change a half wavelength bracket to a full wavelength bracket.",
+            "say": "This came in JAMB twenty seventeen. Seventeen centimetres is the gap between a compression and its nearest rarefaction. That is half a wavelength. Double it to get thirty four centimetres, or zero point three four metres. Write that distance down first.",
+            "visual": "gaps",
+            "beats": [
+              {
+                "word": "half",
+                "action": "Write the doubling step and show the short bracket.",
+                "label": "λ = 2 × 17 cm"
+              },
+              {
+                "word": "Double",
+                "action": "Extend the bracket and write the full wavelength in metres.",
+                "label": "λ = 34 cm = 0.34 m"
+              }
+            ]
+          },
+          {
+            "id": "waves-5-q2",
+            "show": "Write the frequency calculation as the spacing bracket moves.",
+            "say": "Now divide three hundred and forty metres per second by zero point three four metres. The metres cancel, leaving one thousand hertz. Choose D. Ten hertz looks tempting if you divide by thirty four directly. That mixes centimetres with metres per second.",
+            "visual": "write",
+            "beats": [
+              {
+                "word": "divide",
+                "action": "Write the frequency substitution.",
+                "label": "f = (340 m/s) ÷ 0.34 m"
+              },
+              {
+                "word": "Choose",
+                "action": "Write the result and highlight D.",
+                "label": "D · 1000 Hz"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Identify a polarization question as a transverse versus longitudinal comparison."
+      ],
+      "tryIt": "wave-on-a-string",
+      "syllabus": "Distinguish particle and wave motion and use the relationship between speed, frequency and wavelength."
+    }
+  ]
+}

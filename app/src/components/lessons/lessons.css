@@ -1,0 +1,17 @@
+.jp-concept-player { min-width: 0; margin-top: 12px; }
+.jp-concept-paper { overflow-wrap: anywhere; min-width: 0; }
+.jp-concept-svg { display: block; width: 100%; max-width: 440px; height: auto; margin: 0 auto; color: var(--ink); }
+.jp-concept-svg text { fill: currentColor; font: 13px var(--font-system); }
+.jp-concept-svg .accent { stroke: var(--brand); }
+.jp-concept-svg .accent-fill { fill: var(--brand); }
+.jp-concept-svg .guide { stroke: currentColor; opacity: .35; stroke-dasharray: 3 4; }
+.jp-concept-question p { margin: 8px 0; }
+.jp-concept-question ol { margin: 0; padding-inline-start: 26px; }
+.jp-concept-question li { padding: 3px 6px; }
+.jp-concept-question [data-answer="true"] { font-weight: 700; text-decoration: underline; }
+.jp-concept-steps { margin: 0; padding: 0; list-style: none; }
+.jp-concept-beat { text-align: center; font-weight: 650; min-height: 1.5em; }
+.jp-concept-player .jp-concept-controls { flex-wrap: wrap; justify-content: center; gap: 4px; }
+.jp-concept-player .jp-concept-controls button { min-inline-size: 44px; min-block-size: 44px; padding-inline: 6px; white-space: nowrap; }
+.jp-concept-player .jp-concept-controls [aria-pressed="true"] { text-decoration: underline; }
+.jp-concept-player > progress { inline-size: 100%; block-size: 5px; }

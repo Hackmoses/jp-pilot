@@ -7,6 +7,7 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.endsWith('/try-it/motion.ts')) return 'try-it-motion'
+          if (id.endsWith('/lessons/lesson.ts')) return 'lesson-timing'
         },
       },
     },

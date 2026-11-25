@@ -60,8 +60,8 @@ self.addEventListener('fetch', (event) => {
     return
   }
 
-  // Question data changes between releases: try the network first, use the saved copy offline.
-  if (url.pathname.includes('/data/') && url.pathname.endsWith('.json')) {
+  // Topic and question data change between releases: try the network first, use the saved copy offline.
+  if ((url.pathname.includes('/data/') || url.pathname.startsWith(new URL('./lessons/', self.location.href).pathname)) && url.pathname.endsWith('.json')) {
     event.respondWith(
       fetch(request)
         .then(async (response) => {
