@@ -1,3 +1,5 @@
+import type { Animation, Question } from '../../lib/types'
+
 export interface SessionRecord {
   questionId: string
   topic: string
@@ -19,6 +21,8 @@ export interface SessionSummary {
   skipped: number
   missedTopics: MissedTopic[]
   missedQuestionIds?: string[]
+  missedQuestions?: Question[]
+  animations?: Animation[]
 }
 
 const summaryKey = 'jp.shared-practice-summary.v1'

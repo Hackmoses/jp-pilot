@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import { isCompleteQuestion } from './data'
-import { chapterName, getChapters, practicePool, scoreAttempt } from './modes'
+import { chapterName, getChapters, mistakeIds, practicePool, scoreAttempt, type Attempt } from './modes'
 import type { Animation, Question } from './types'
 
 const step = { n: 1, display: '', tag: '', narration: '' }
@@ -11,6 +11,27 @@ const q2 = { ...q1, id: 'q2', chapter: '3' }
 const q3 = { ...q1, id: 'q3' }
 const q4 = { ...q1, id: 'q4', subject: 'physics' }
 const qMath = { id: 'qm', subject: 'mathematics', topic: 'Indices', animationId: 'anim-m', answerId: 'a' } as Question
+
+const savedExam: Attempt = {
+  id: 'exam-1000', mode: 'exam', subjects: ['chemistry'], ids: ['q1', 'q2'],
+  reviewIds: [], index: 1, startedAt: 1000, deadline: 61_000,
+  answers: { q1: 'b' }, flagged: { q2: true }, time: { q1: 2000 },
+}
+
+function stubStorage(initial = '{}') {
+  let text = initial
+  vi.stubGlobal('localStorage', {
+    getItem: () => text,
+    setItem: (_key: string, value: string) => { text = value },
+  })
+  vi.stubGlobal('window', { location: { hash: '' } })
+  vi.resetModules()
+}
+
+afterEach(() => {
+  vi.unstubAllGlobals()
+  vi.useRealTimers()
+})
 
 describe('complete questions', () => {
   it('requires a chapter and a matching animation with Teach me and Quick steps', () => {
@@ -50,5 +71,49 @@ describe('exam scoring', () => {
         { subject: 'mathematics', chapter: 'Indices', total: 1, correct: 1, mistakes: 0 },
       ],
     })
+  })
+
+  it('selects only answered mistakes for a retry, in session order', () => {
+    expect(mistakeIds([q1, q2, q3, q4], { q1: 'b', q2: 'a', q4: 'd' })).toEqual(['q1', 'q4'])
+  })
+})
+
+describe('saved exams', () => {
+  it('restores position, answers, flags and questions and keeps the original deadline', async () => {
+    stubStorage()
+    vi.useFakeTimers()
+    vi.setSystemTime(1000)
+    const modes = await import('./modes')
+    const { registerSubjectData } = await import('./data')
+    registerSubjectData('chemistry', [q1, q2], [animation])
+    modes.startAttempt('exam', ['chemistry'], [{ id: 'q1' }, { id: 'q2' }], 1)
+    const attempt = modes.getAttempt('exam')!
+    Object.assign(attempt, savedExam)
+    modes.saveAttempt(attempt)
+
+    vi.resetModules()
+    const resumed = await import('./modes')
+    const restored = resumed.getAttempt('exam')!
+    expect(restored).toMatchObject(savedExam)
+    expect(resumed.getAttemptQuestions(restored)).toEqual([q1, q2])
+    expect(resumed.restoreAttemptQuestions(restored)).toBe(true)
+    expect(resumed.remainingTime(restored, 31_000)).toBe(30_000)
+    resumed.submitExpiredExam(60_999)
+    expect(resumed.getAttempt('exam')).toBeDefined()
+
+    resumed.submitExpiredExam(80_000)
+    resumed.submitExpiredExam(90_000)
+    expect(resumed.getAttempt('exam')).toBeUndefined()
+    expect(resumed.getExamHistory()).toEqual([expect.objectContaining({ finishedAt: 61_000, answers: { q1: 'b' } })])
+    expect(window.location.hash).toBe('#/exam/results?id=exam-1000')
+  })
+
+  it('lists the ten most recent exams by finish time', async () => {
+    const order = [1, 12, 3, 10, 6, 9, 2, 4, 5, 8, 7, 11]
+    stubStorage(JSON.stringify({
+      exams: order.map((finishedAt) => ({ ...savedExam, id: String(finishedAt), finishedAt })),
+    }))
+    const modes = await import('./modes')
+    expect(modes.getExamHistory().map(({ finishedAt }) => finishedAt)).toEqual([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])
   })
 })

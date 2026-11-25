@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'preact/hooks'
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'preact/hooks'
 import '../components/question/question.css'
 import { AskPanel, AskSheet } from '../components/ask/AskSheet'
 import { SolutionPlayer } from '../components/player/SolutionPlayer'
@@ -12,14 +12,14 @@ import {
   makeOptionSeed,
   parseQuestionIdFromHash,
   parseSubjectFromHash,
+  shortcutKey,
   summarizeSession,
 } from '../components/question/logic'
 import {
-  type SessionRecord,
   setLastSessionSummary,
 } from '../components/question/sessionState'
 import { getAnimation, getQuestion, isSubjectLoaded, loadSubject } from '../lib/data'
-import { finishAttempt, getStudyAnswer, markStudied, remember, saveAttempt, studyLink, type Attempt, type TestResult } from '../lib/modes'
+import { finishAttempt, getAttemptQuestions, getStudyAnswer, markStudied, remember, saveAttempt, studyLink, type Attempt, type TestResult } from '../lib/modes'
 import { shuffleOptions } from '../lib/shuffle'
 import { getProgress, logEvent, recordAnswer } from '../lib/store'
 import { getSubject, getSubjectByQuestionId, isSubjectAvailable } from '../lib/subjects'
@@ -66,12 +66,12 @@ export function Session({ attempt, study, review }: SessionProps) {
     () => {
       const id = study?.id ?? review?.id
       if (attempt || id) {
-        const ids = attempt?.ids ?? (id ? [id] : [])
+        const questions = attempt ? getAttemptQuestions(attempt)
+          : review ? getAttemptQuestions(review.result).filter((question) => question.id === review.id)
+            : id ? [getQuestion(id)] : []
         return {
-          queue: ids.flatMap((id) => {
-            const question = getQuestion(id)
-            return question ? [{ question, review: attempt?.reviewIds.includes(id) ?? false }] : []
-          }),
+          queue: questions.flatMap((question) => question
+            ? [{ question, review: attempt?.reviewIds.includes(question.id) ?? false }] : []),
           requestedSubject: attempt?.subjects[0] ?? study?.subject ?? null,
           startedAt: attempt?.startedAt ?? review?.result.startedAt ?? Date.now(),
           loading: false,
@@ -85,17 +85,8 @@ export function Session({ attempt, study, review }: SessionProps) {
   )
   const savedAttempt = useRef(attempt)
   const [index, setIndex] = useState(attempt?.index ?? 0)
-  const [records, setRecords] = useState<SessionRecord[]>(() => queue.slice(0, index).map(({ question }) => ({
-    questionId: question.id,
-    topic: question.topic,
-    correct: attempt?.answers[question.id] === question.answerId,
-    skipped: !attempt?.answers[question.id],
-  })))
-  const [pickedId, setPickedId] = useState<OptionId | null>(() => {
-    if (review) return review.result.answers[review.id] ?? null
-    if (study) return getStudyAnswer(study.id) ?? null
-    return attempt && queue[index] ? attempt.answers[queue[index].question.id] ?? null : null
-  })
+  const [picks, setPicks] = useState<Attempt['answers']>(() =>
+    attempt?.answers ?? review?.result.answers ?? (study ? { [study.id]: getStudyAnswer(study.id) } : {}))
   const [calcOpen, setCalcOpen] = useState(false)
   const [playSignal, setPlaySignal] = useState(0)
   const [askOpen, setAskOpen] = useState(false)
@@ -151,6 +142,7 @@ export function Session({ attempt, study, review }: SessionProps) {
 
   const entry = queue[index]
   const question = entry?.question
+  const pickedId = question ? picks[question.id] ?? null : null
 
   const options = useMemo(() => {
     if (!question) return []
@@ -177,13 +169,14 @@ export function Session({ attempt, study, review }: SessionProps) {
         finishAttempt(run, at)
         return
       }
+      const nextPicks = { ...picks, [question.id]: optionId }
       if (run) {
-        run.answers[question.id] = optionId
+        run.answers = nextPicks
         saveAttempt(run)
       }
       if (study) markStudied(study.subject, study.chapter, question.id, optionId)
 
-      setPickedId(optionId)
+      setPicks(nextPicks)
       recordAnswer({
         questionId: question.id,
         pickedId: optionId,
@@ -197,8 +190,21 @@ export function Session({ attempt, study, review }: SessionProps) {
       })
       setProgress(getProgress())
     },
-    [question, pickedId, review, study],
+    [question, pickedId, picks, review, study],
   )
+
+  const move = useCallback((next: number) => {
+    const run = savedAttempt.current
+    if (run) {
+      run.index = next
+      saveAttempt(run)
+    }
+    setIndex(next)
+    setCalcOpen(false)
+    setPlaySignal(0)
+    setAskOpen(false)
+    window.scrollTo({ top: 0 })
+  }, [])
 
   const advance = useCallback(() => {
     if (!question) return
@@ -212,21 +218,20 @@ export function Session({ attempt, study, review }: SessionProps) {
       finishAttempt(run, now)
       return
     }
-    const skipped = pickedId === null
-    const nextRecord: SessionRecord = {
-      questionId: question.id,
-      topic: question.topic,
-      correct: !skipped && pickedId === question.answerId,
-      skipped,
-    }
-    const nextRecords = [...records, nextRecord]
-
     if (index + 1 >= queue.length) {
-      const summary = summarizeSession(nextRecords)
+      const summary = summarizeSession(queue.map(({ question }) => ({
+        questionId: question.id,
+        topic: question.topic,
+        correct: picks[question.id] === question.answerId,
+        skipped: !picks[question.id],
+      })))
       summary.subject = question.subject
       summary.elapsedMs = now - startedAt
-      summary.missedQuestionIds = nextRecords.filter((record) => !record.correct && !record.skipped)
-        .map((record) => record.questionId)
+      summary.missedQuestions = queue.flatMap(({ question }) =>
+        picks[question.id] && picks[question.id] !== question.answerId ? [question] : [])
+      summary.missedQuestionIds = summary.missedQuestions.map(({ id }) => id)
+      summary.animations = summary.missedQuestions.flatMap(({ animationId }) =>
+        animationId ? getAnimation(animationId) ?? [] : [])
       setLastSessionSummary(summary)
       remember('#/done', 'Practice summary')
       logEvent('session_end', {
@@ -238,57 +243,28 @@ export function Session({ attempt, study, review }: SessionProps) {
       return
     }
 
-    setRecords(nextRecords)
-    if (run) {
-      run.index = index + 1
-      saveAttempt(run)
-    }
-    setIndex(index + 1)
-    setPickedId(null)
-    setCalcOpen(false)
-    setPlaySignal(0)
-    setAskOpen(false)
-    if (typeof window.scrollTo === 'function') {
-      window.scrollTo({ top: 0 })
-    }
-  }, [question, pickedId, records, index, queue.length, back, startedAt])
+    move(index + 1)
+  }, [question, picks, index, queue, back, startedAt, move])
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!question) return
 
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.metaKey || event.ctrlKey || event.altKey) return
-      if (document.querySelector('dialog[open]')) return
-      const target = event.target
-      if (
-        target instanceof HTMLElement &&
-        (target.tagName === 'INPUT' ||
-          target.tagName === 'TEXTAREA' ||
-          target.tagName === 'SELECT' ||
-          target.isContentEditable)
-      ) {
+      const key = shortcutKey(event)
+      if (!key) return
+      if (!back && (key === 'n' || (key === 'p' && index > 0))) {
+        event.preventDefault()
+        if (key === 'n') advance()
+        else move(index - 1)
         return
       }
-
-      const key = event.key.toLowerCase()
+      const target = event.target
       if (!answered) {
-        const idx =
-          key === '1' || key === 'a'
-            ? 0
-            : key === '2' || key === 'b'
-              ? 1
-              : key === '3' || key === 'c'
-                ? 2
-                : key === '4' || key === 'd'
-                  ? 3
-                  : -1
-        if (idx >= 0) {
-          const option = options[idx]
-          if (option) {
-            event.preventDefault()
-            handlePick(option.id)
-          }
-          return
+        const idx = key.length === 1 ? Math.max('abcd'.indexOf(key), '1234'.indexOf(key)) : -1
+        const option = options[idx]
+        if (option) {
+          event.preventDefault()
+          handlePick(option.id)
         }
         return
       }
@@ -310,7 +286,7 @@ export function Session({ attempt, study, review }: SessionProps) {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [question, answered, options, handlePick, advance])
+  }, [question, answered, options, handlePick, advance, back, index, move])
 
   if (loading) {
     return (
@@ -349,11 +325,8 @@ export function Session({ attempt, study, review }: SessionProps) {
   }
 
   const subjectName = getSubject(question.subject)?.name ?? 'Chemistry'
-  const sessionAnswered =
-    records.filter((record) => !record.skipped).length + (answered ? 1 : 0)
-  const sessionCorrect =
-    records.filter((record) => !record.skipped && record.correct).length +
-    (answered && pickedId === question.answerId ? 1 : 0)
+  const sessionAnswered = Object.keys(picks).length
+  const sessionCorrect = queue.filter(({ question }) => picks[question.id] === question.answerId).length
   const progressPercent = Math.round(((index + 1) / queue.length) * 100)
   const animationKind = question.animationId ? getAnimation(question.animationId)?.kind : undefined
   const isConceptAnimation = animationKind === 'concept'
@@ -461,7 +434,7 @@ export function Session({ attempt, study, review }: SessionProps) {
             <>
               <ReadAloudButton questionId={question.id} target="question" options={options} />
               <div class="jp-footer-right">
-                <span class="jp-kbd-hints jp-hide-sm">1–4 to answer</span>
+                {!back && <span class="jp-kbd-hints jp-hide-sm">Shortcuts · A–D choose · N next · P previous</span>}
                 <button type="button" class="jp-btn jp-skip-btn" onClick={advance}>
                   {study ? 'Back to chapter' : 'Skip'}
                 </button>
@@ -486,7 +459,7 @@ export function Session({ attempt, study, review }: SessionProps) {
               <ReportButton questionId={question.id} />
               <div class="jp-footer-right">
                 <span class="jp-kbd-hints jp-hide-sm">
-                  {question.animationId
+                  {!back ? 'Shortcuts · A–D choose · N next · P previous' : question.animationId
                     ? 'Enter next · Space play'
                     : 'Enter next'}
                 </span>

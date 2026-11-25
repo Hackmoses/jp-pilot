@@ -1,6 +1,7 @@
 import syllabus from '../../../data/syllabus/chemistry.json'
+import { getAnimation, getQuestion, registerSavedQuestions } from './data'
 import { getDueQuestionIds } from './store'
-import type { OptionId, Question } from './types'
+import type { Animation, OptionId, Question } from './types'
 
 export type Mode = 'study' | 'practice' | 'exam'
 export type TestMode = Exclude<Mode, 'study'>
@@ -70,9 +71,11 @@ export type Attempt = {
   answers: Partial<Record<string, OptionId>>
   flagged: Partial<Record<string, boolean>>
   time: Record<string, number>
+  snapshotId?: string
 }
 
 export type TestResult = Attempt & { finishedAt: number }
+type Snapshot = { questions: Question[]; animations: Animation[] }
 
 const defaults: PracticeSettings = { chapters: [], count: 10, minutes: 0 }
 const key = 'jp.modes.v1'
@@ -94,6 +97,7 @@ interface ModeState {
   attempts: Partial<Record<TestMode, Attempt>>
   practiceResult: TestResult | null
   exams: TestResult[]
+  snapshots: Record<string, Snapshot>
 }
 
 const saved = read()
@@ -106,6 +110,7 @@ const state: ModeState = {
   attempts: saved?.attempts ?? {},
   practiceResult: saved?.practiceResult ?? null,
   exams: saved?.exams ?? [],
+  snapshots: saved?.snapshots ?? {},
 }
 
 function save() {
@@ -131,7 +136,52 @@ export function getExamSubjects() { return state.examSubjects }
 export function saveExamSubjects(subjects: string[]) { state.examSubjects = subjects; save() }
 export function getAttempt(mode: TestMode) { return state.attempts[mode] }
 export function getPracticeResult() { return state.practiceResult }
-export function getExamHistory() { return state.exams }
+export function getExamHistory() {
+  return [...state.exams].sort((a, b) => b.finishedAt - a.finishedAt).slice(0, 10)
+}
+
+function getSnapshot({ snapshotId }: Attempt) {
+  return snapshotId ? state.snapshots[snapshotId] : undefined
+}
+
+export function getAttemptQuestions(attempt: Attempt) {
+  return getSnapshot(attempt)?.questions ?? attempt.ids.flatMap((id) => getQuestion(id) ?? [])
+}
+
+export function restoreAttemptQuestions(attempt?: Attempt | null) {
+  const snapshot = attempt && getSnapshot(attempt)
+  if (!snapshot) return false
+  registerSavedQuestions(snapshot.questions, snapshot.animations)
+  return true
+}
+
+export function remainingTime(attempt: Attempt, now = Date.now()) {
+  return attempt.deadline === null ? null : Math.max(0, attempt.deadline - now)
+}
+
+export function submitExpiredExam(now = Date.now()) {
+  const attempt = getAttempt('exam')
+  if (attempt && remainingTime(attempt, now) === 0) finishAttempt(attempt, now)
+}
+
+let enteringExam = false
+
+export function continueExam() {
+  enteringExam = true
+  window.location.hash = '#/exam/run'
+}
+
+export function takeExamEntry() {
+  const entering = enteringExam
+  enteringExam = false
+  return entering
+}
+
+function pruneSnapshots() {
+  const used = new Set([...state.exams, state.practiceResult, ...Object.values(state.attempts)]
+    .map((attempt) => attempt?.snapshotId))
+  for (const id of Object.keys(state.snapshots)) if (!used.has(id)) delete state.snapshots[id]
+}
 
 export function saveAttempt(attempt: Attempt) {
   state.attempts[attempt.mode] = attempt
@@ -147,15 +197,41 @@ export function startAttempt(mode: TestMode, subjects: string[], queue: { id: st
     index: 0, startedAt, deadline: minutes ? startedAt + minutes * 60_000 : null,
     answers: {}, flagged: {}, time: {},
   }
+  const questions = attempt.ids.flatMap((id) => getQuestion(id) ?? [])
+  if (questions.length === attempt.ids.length) {
+    const animations = questions.flatMap(({ animationId }) => animationId ? getAnimation(animationId) ?? [] : [])
+    const snapshot = { questions, animations }
+    const content = JSON.stringify(snapshot)
+    attempt.snapshotId = Object.keys(state.snapshots).find((id) =>
+      JSON.stringify(state.snapshots[id]) === content) ?? attempt.id
+    state.snapshots[attempt.snapshotId] = snapshot
+  }
+  state.attempts[mode] = attempt
+  pruneSnapshots()
   saveAttempt(attempt)
+}
+
+export function mistakeIds(questions: readonly Question[], answers: Attempt['answers']) {
+  return questions.filter(({ id, answerId }) => answers[id] && answers[id] !== answerId).map(({ id }) => id)
+}
+
+export function retryMistakes(ids: readonly string[]) {
+  const questions = ids.flatMap((id) => getQuestion(id) ?? [])
+  if (questions.length !== ids.length || !questions.length) return
+  startAttempt('practice', [...new Set(questions.map(({ subject }) => subject))], ids.map((id) => ({ id })), 0)
+  window.location.hash = '#/practice/run'
 }
 
 export function finishAttempt(attempt: Attempt, now: number) {
   if (state.attempts[attempt.mode]?.id !== attempt.id) return
   const result: TestResult = { ...attempt, finishedAt: Math.min(now, attempt.deadline ?? now) }
   delete state.attempts[attempt.mode]
-  if (attempt.mode === 'exam') state.exams = [result, ...state.exams].slice(0, 5)
+  if (attempt.mode === 'exam') {
+    state.exams.push(result)
+    state.exams = getExamHistory()
+  }
   else state.practiceResult = result
+  pruneSnapshots()
   const href = '#/' + attempt.mode + '/results?id=' + result.id
   remember(href, attempt.mode === 'exam' ? 'Exam results' : 'Practice summary')
   window.location.hash = href

@@ -26,6 +26,15 @@ const inflightSubjects = new Map<string, Promise<boolean>>()
 let manifestCache: SubjectManifest | null = null
 let inflightManifest: Promise<SubjectManifest> | null = null
 
+export function registerSavedQuestions(items: readonly Question[], animations: readonly Animation[]) {
+  for (const question of items) {
+    if (!getQuestion(question.id)) sharedQuestionsById.set(question.id, question)
+  }
+  for (const animation of animations) {
+    if (!getAnimation(animation.id)) animationsById.set(animation.id, animation)
+  }
+}
+
 export function registerSubjectData(
   subject: string,
   subjectQuestions: readonly Question[],

@@ -1,15 +1,18 @@
 import '../components/question/question.css'
 import { getLastSessionSummary } from '../components/question/sessionState'
 import { ShareButton } from '../components/share/ShareButton'
-import { getQuestion } from '../lib/data'
-import { chapterName, formatTime, getQuestionChapter, studyLink } from '../lib/modes'
+import { Feedback } from '../components/share/Feedback'
+import { getQuestion, registerSavedQuestions } from '../lib/data'
+import { chapterName, formatTime, getQuestionChapter, retryMistakes, studyLink } from '../lib/modes'
 import { getProgress } from '../lib/store'
 
 export function Summary() {
   const summary = getLastSessionSummary()
   const progress = getProgress()
+  if (summary?.missedQuestions) registerSavedQuestions(summary.missedQuestions, summary.animations ?? [])
+  const mistakes = summary?.missedQuestionIds ?? []
   const chapters = new Map<string, { subject: string; chapter: string }>()
-  for (const id of summary?.missedQuestionIds ?? []) {
+  for (const id of mistakes) {
     const question = getQuestion(id)
     if (question) {
       const chapter = getQuestionChapter(question)
@@ -94,6 +97,8 @@ export function Summary() {
           </section>
         )}
 
+        {mistakes.length > 0 && mistakes.every((id) => getQuestion(id)) &&
+          <button class="jp-btn jp-btn--primary" onClick={() => retryMistakes(mistakes)}>Retry my mistakes</button>}
         <a
           class="jp-btn jp-btn--primary jp-btn--full"
           href={summary?.subject ? `#/practice?subject=${encodeURIComponent(summary.subject)}` : '#/subjects?mode=practice'}
@@ -108,6 +113,7 @@ export function Summary() {
         <a class="jp-link-btn" href="#/">
           Back home
         </a>
+        <Feedback screen="Practice summary" />
       </div>
     </main>
   )

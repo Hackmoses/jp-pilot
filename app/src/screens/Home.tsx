@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks'
 import { FeatureCarousel } from '../components/landing/FeatureCarousel'
+import { Feedback } from '../components/share/Feedback'
+import { continueExam, getAttempt } from '../lib/modes'
 import '../styles/landing.css'
 
 export function Home() {
@@ -55,6 +57,9 @@ export function Home() {
               </svg>
             </button>
             <a class="landing-action" href="#/modes">Try free without an account</a>
+            {getAttempt('exam') && <button type="button" class="landing-action" onClick={continueExam}>
+              Continue your exam
+            </button>}
           </div>
           <p class="landing-details">No download · Email-only sign-up · Works on one bar of signal · 10 free questions a day</p>
         </div>
@@ -73,6 +78,7 @@ export function Home() {
           <div class="landing-footer-links">
             <a class="landing-footer-link" href="#/modes">Practice</a>
             <a class="landing-footer-link" href="#/done">Progress</a>
+            <Feedback screen="Home" className="landing-footer-link" />
             <button type="button" class="landing-copyright" aria-haspopup="dialog"
               onClick={() => setActiveNotice('copyright')}>
               {copyright}

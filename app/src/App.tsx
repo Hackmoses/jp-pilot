@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'preact/hooks'
 import { LogPage } from './components/share/LogPage'
+import { submitExpiredExam } from './lib/modes'
 import { ExamSetup, Results, Run } from './screens/Exam'
 import { Home } from './screens/Home'
 import { ModeHome, PracticeSetup, Study } from './screens/Modes'
@@ -22,6 +23,17 @@ export function App() {
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
+
+  useEffect(() => {
+    const check = () => { if (!document.hidden) submitExpiredExam() }
+    check()
+    document.addEventListener('visibilitychange', check)
+    window.addEventListener('pageshow', check)
+    return () => {
+      document.removeEventListener('visibilitychange', check)
+      window.removeEventListener('pageshow', check)
+    }
+  }, [route])
 
   const [screen, query] = route.split('?')
   const params = new URLSearchParams(query)

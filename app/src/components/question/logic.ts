@@ -6,6 +6,15 @@ import type { SessionRecord, SessionSummary } from './sessionState'
 
 export const OPTION_LETTERS = ['A', 'B', 'C', 'D'] as const
 
+export function shortcutKey(event: KeyboardEvent) {
+  if (event.defaultPrevented || event.isComposing || event.metaKey || event.ctrlKey || event.altKey ||
+    document.querySelector('dialog[open]')) return ''
+  const target = event.target
+  if (target instanceof HTMLElement &&
+    (target.isContentEditable || target.closest('input, textarea, select'))) return ''
+  return event.key.toLowerCase()
+}
+
 export function getQuestionSourceLabel(question: Question): string | null {
   const { source } = question
   if (question.label === 'JAMB-style practice' || question.id.includes('-api-') ||

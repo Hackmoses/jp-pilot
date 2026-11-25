@@ -1,8 +1,9 @@
 import type { ComponentChildren } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
+import { Feedback } from '../components/share/Feedback'
 import { getQuestionsBySubject, isSubjectLoaded, loadSubject } from '../lib/data'
 import {
-  chapterName, getAttempt, getChapters, getPracticeSettings, getQuestionChapter, getRecent,
+  chapterName, continueExam, getAttempt, getChapters, getPracticeSettings, getQuestionChapter, getRecent,
   getSections, hasStudied, practicePool, practiceQueue, remember, savePracticeSettings,
   startAttempt, studyLink, type PracticeSettings,
 } from '../lib/modes'
@@ -49,7 +50,10 @@ export function ModeHome() {
         <ModeCard href="#/subjects?mode=practice" title="Practice">Drill questions your way</ModeCard>
         <ModeCard href="#/exam" title="Exam">Sit a timed JAMB-style test</ModeCard>
       </div>
-      {recent && <ModeCard href={recent.href} title="Continue where you stopped">{recent.label}</ModeCard>}
+      {getAttempt('exam') && <button class="jp-btn" onClick={continueExam}>Continue your exam</button>}
+      {recent && recent.href !== '#/exam/run' &&
+        <ModeCard href={recent.href} title="Continue where you stopped">{recent.label}</ModeCard>}
+      <Feedback screen="Mode selection" />
     </Panel>
   )
 }
@@ -109,8 +113,16 @@ export function Study({ params }: { params: URLSearchParams }) {
     ...section, chapters: section.chapters.filter((entry) => visible.has(entry.id)),
   })).filter((section) => section.chapters.length)
   const topicChapters = sections.length === 0 ? getChapters(subject, questions) : []
+  const chapters = sections.length ? sections.flatMap((section) => section.chapters) : topicChapters
+  const studied = chapters.filter(({ id }) => hasStudied(subject, id)).length
   return (
     <Panel title={subjectName + ' study'} back="#/subjects?mode=study">
+      <div class="jp-options">
+        <p class="jp-summary-sub">{studied} of {chapters.length} chapters studied</p>
+        <div class="jp-progress-track" aria-hidden="true">
+          <div class="jp-progress-fill" style={{ width: chapters.length ? studied * 100 / chapters.length + '%' : '0%' }} />
+        </div>
+      </div>
       {sections.length === 0 && topicChapters.length === 0 ? (
         <p class="jp-summary-sub">No study chapters are available for this subject yet.</p>
       ) : sections.length === 0 ? (
