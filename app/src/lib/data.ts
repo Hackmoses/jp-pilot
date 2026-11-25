@@ -11,9 +11,12 @@ export type SubjectManifest = Record<string, SubjectManifestEntry>
 export const COMPLETE_QUESTIONS_ONLY = true
 
 export function isCompleteQuestion(question: Question, animation?: Animation): boolean {
-  return Boolean(question.chapter?.trim() && question.animationId &&
-    animation?.id === question.animationId && animation.questionId === question.id &&
-    animation.teach?.length && animation.steps.length)
+  // Complete = has a Teach me lesson: a concept lesson, or a calculation with both Teach me and Quick.
+  // A chapter tag is optional; untagged questions are grouped by topic. Must match sync-data.mjs.
+  if (!question.animationId || !animation || animation.id !== question.animationId) return false
+  if (animation.questionId && animation.questionId !== question.id) return false
+  if (animation.kind === 'concept') return (animation.steps?.length ?? 0) > 0 || (animation.teach?.length ?? 0) > 0
+  return (animation.teach?.length ?? 0) > 0 && (animation.steps?.length ?? 0) > 0
 }
 
 const questions: Question[] = []

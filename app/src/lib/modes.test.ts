@@ -34,11 +34,11 @@ afterEach(() => {
 })
 
 describe('complete questions', () => {
-  it('requires a chapter and a matching animation with Teach me and Quick steps', () => {
+  it('needs a matching animation with Teach me and Quick steps, or a concept lesson', () => {
     expect(isCompleteQuestion(q1, animation)).toBe(true)
-    expect(isCompleteQuestion({ ...q1, chapter: undefined }, animation)).toBe(false)
-    expect(isCompleteQuestion({ ...q1, chapter: ' ' }, animation)).toBe(false)
-    expect(isCompleteQuestion({ ...q1, id: 'qc', animationId: 'anim-c' }, conceptAnim)).toBe(false)
+    // Chapter is optional (grouped by topic), and concept lessons count as complete.
+    expect(isCompleteQuestion({ ...q1, chapter: undefined }, animation)).toBe(true)
+    expect(isCompleteQuestion({ ...q1, chapter: ' ' }, animation)).toBe(true)
     expect(isCompleteQuestion(q1)).toBe(false)
     expect(isCompleteQuestion(q2, animation)).toBe(false)
     expect(isCompleteQuestion(q1, { ...animation, teach: undefined })).toBe(false)
