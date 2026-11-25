@@ -27,7 +27,7 @@ export default function Indices(props: InteractiveProps) {
   const simpleFour = base === 'integer' && integer === 4
   const radius = 4 + Math.min(7, Math.sqrt(result) * 2)
   const solved = base === 'reciprocal' && power === -0.25
-  return <TryIt {...props} context="Indices show up in JAMB. Use the steps to see what each part of an index does."
+  return <TryIt {...props} aim="Find out what a negative or a fractional index does to a number." context="Indices show up in JAMB. Use the steps to see what each part of an index does."
     prediction={{ question: 'What is 4^{−\\frac{1}{2}}?', choices: ['−2', '\\frac{1}{2}', '2'], correct: 1,
       action: 'Keep the base at 4 and set the power to −½.', observed: simpleFour && power === -0.5,
       why: 'Take the square root and then its reciprocal. The result is positive.' }}

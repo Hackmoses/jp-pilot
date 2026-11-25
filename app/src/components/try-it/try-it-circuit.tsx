@@ -20,7 +20,7 @@ export default function CircuitLab(props: InteractiveProps) {
   const parallel = layout === 'parallel'
   const { total, current, terminal } = circuit(resistors.slice(0, count), layout, emf, internal)
   const paired = count === 2 && resistors[0] === 4 && resistors[1] === 4 && emf === 8
-  return <TryIt {...props} context="House lights on the NEPA supply are wired in parallel so each can work on its own."
+  return <TryIt {...props} aim="See how series and parallel wiring change the total resistance, the current and the cell's lost volts." context="House lights on the NEPA supply are wired in parallel so each can work on its own."
     prediction={{ question: 'Switch two 4 Ω resistors from series to parallel. What happens to total resistance?',
       choices: ['It falls', 'It rises', 'It stays the same'], correct: 0,
       action: 'Keep the two 4 Ω resistors and switch to parallel.',

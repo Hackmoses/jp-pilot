@@ -26,7 +26,7 @@ export default function Electrolysis(props: InteractiveProps) {
   const { molarMass, electrons } = metals[metal]
 
   return (
-    <TryIt {...props} context="Think of a shiny plated tap sold at a Nigerian market. Electrolysis can deposit the thin metal coating."
+    <TryIt {...props} aim="See how the current and the time decide how much metal is deposited at the cathode." context="Think of a shiny plated tap sold at a Nigerian market. Electrolysis can deposit the thin metal coating."
       prediction={{ question: 'At the same current, what happens to deposited mass if you double the time?',
         choices: ['It doubles', 'It halves', 'It stays the same'], correct: 0,
         action: 'Keep copper at 2 A and double the starting time of 965 s.',

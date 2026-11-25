@@ -20,7 +20,7 @@ export default function MoleBridge(props: InteractiveProps) {
   const valid = Number.isFinite(mass) && mass >= 0 && mass <= 1000
   const { moles, particles, volume } = moleBridge(substance, mass)
   const bead = 2 + (valid ? Math.min(6, 3 * Math.sqrt(moles)) : 0)
-  return <TryIt {...props} context="The carbon dioxide in generator exhaust has mass and contains molecules."
+  return <TryIt {...props} aim="Turn a mass into moles and particles, and see why equal moles hold equal numbers of particles." context="The carbon dioxide in generator exhaust has mass and contains molecules."
     prediction={{ question: 'Twice the mass of the same substance gives how many moles?', choices: ['Twice the moles', 'Half', 'The same'],
       correct: 0, why: 'The molar mass stays fixed, so twice the mass gives twice the amount.',
       action: 'Keep Na selected and double the starting mass of 2.3 g.', observed: substance === 'Na' && near(mass, 4.6) }}

@@ -10,7 +10,7 @@ export default function FreezingPoint(props: InteractiveProps) {
   const [molality, setMolality] = useState(1)
   const drop = freezingDrop(molality, salt)
   const marker = 22 + 8.2 * drop
-  return <TryIt {...props} context="In a market cooler, adding salt to ice lowers the temperature at which the mixture freezes."
+  return <TryIt {...props} aim="See how dissolving more particles in water lowers its freezing point." context="In a market cooler, adding salt to ice lowers the temperature at which the mixture freezes."
     prediction={{ question: 'At equal molality, which lowers water’s freezing point more?',
       choices: ['Both equally', 'Salt', 'Sugar'], correct: 1, action: 'Switch from sugar to salt at 1 mol/kg.',
       observed: salt && molality === 1, why: 'In this ideal model, each unit of salt gives two ions. Sugar stays as whole molecules.' }}

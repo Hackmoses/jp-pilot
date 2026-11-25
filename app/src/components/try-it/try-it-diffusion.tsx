@@ -17,7 +17,7 @@ export default function DiffusionRace(props: InteractiveProps) {
   const point = 20 + 280 * meet
   const duration = 0.85 / (1 / Math.sqrt(masses[left]) + 1 / Math.sqrt(masses[right]))
   const options = Object.keys(masses).map((gas) => [gas, gas] as const)
-  return <TryIt {...props} context="The smell of pepper soup can reach you before you see the pot."
+  return <TryIt {...props} aim="See why a lighter gas spreads faster, and predict where two gases meet in a tube." context="The smell of pepper soup can reach you before you see the pot."
     prediction={{ question: 'At equal temperature, which gas reaches the middle of the tube first?',
       choices: ['The lighter gas', 'The heavier gas'], correct: 0, action: 'Set hydrogen (H₂) on the left and oxygen (O₂) on the right.',
       observed: left === 'H₂' && right === 'O₂', why: 'Hydrogen has a lower molar mass, so it spreads faster at the same temperature.' }}

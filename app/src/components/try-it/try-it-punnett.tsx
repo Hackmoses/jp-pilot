@@ -59,7 +59,7 @@ export default function Punnett(props: InteractiveProps) {
     select(null)
   }
 
-  return <TryIt {...props} context="Family health history can help frame questions about inheritance when couples seek genetic counselling in Nigeria."
+  return <TryIt {...props} aim="Use a Punnett square to predict which children can inherit a sex-linked trait." context="Family health history can help frame questions about inheritance when couples seek genetic counselling in Nigeria."
     prediction={{ question: 'A carrier mother and unaffected father have children. Who can inherit haemophilia in this model?',
       choices: ['Sons', 'Daughters', 'Both'], correct: 0,
       action: 'Drag or tap the mother’s Xʰ and the father’s Y into the bottom-right box.',

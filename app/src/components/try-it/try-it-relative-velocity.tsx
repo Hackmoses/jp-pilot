@@ -12,7 +12,7 @@ export default function RelativeVelocity(props: InteractiveProps) {
   const relative = relativeVelocity(a, b, opposite)
   const displayed = inA ? [0, relative] : [a, opposite ? -b : b]
   const initialSpeeds = a === 100 && b === 130
-  return <TryIt {...props} context="From one moving danfo bus, the next bus on the expressway may look slow."
+  return <TryIt {...props} aim="See how fast one moving car looks from another, going the same way or towards each other." context="From one moving danfo bus, the next bus on the expressway may look slow."
     prediction={{ question: 'Two cars travel the same way at 100 and 130 km/h. How fast does B look from A?',
       choices: ['230 km/h', '30 km/h', '130 km/h'], correct: 1, action: 'Keep the starting speeds and switch to “View from car A”.',
       observed: inA && initialSpeeds && !opposite, why: 'From A, subtract A’s velocity from both cars. B is 30 km/h faster.' }}

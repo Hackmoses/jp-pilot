@@ -14,6 +14,8 @@ type Reason = {
 
 type Mission = { goal: string; reached: boolean; hint: string }
 type TryItProps = InteractiveProps & {
+  // One line: what the student will find out by doing this practical.
+  aim: string
   context: string
   prediction: { question: string; choices: readonly string[]; correct: number; why: string; action: string; observed: boolean }
   missions: readonly [Mission, Mission & { baseline: boolean; reason: Reason }, Mission & { trap: string; answer?: Reason }]
@@ -26,7 +28,7 @@ export function near(value: number, target: number, tolerance = 0) {
   return Math.abs(value - target) <= tolerance + Number.EPSILON * Math.max(1, Math.abs(target))
 }
 
-export function TryIt({ context, prediction, missions, explain, formulas, practiceHref, onComplete, onRestart, children }: TryItProps) {
+export function TryIt({ aim, context, prediction, missions, explain, formulas, practiceHref, onComplete, onRestart, children }: TryItProps) {
   const body = useRef<HTMLDivElement>(null)
   const [picked, setPicked] = useState<number | null>(null)
   const [observed, setObserved] = useState(false)
@@ -47,6 +49,21 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
   const instruction = !unlocked ? prediction.question : !observed ? prediction.action
     : mission ? (passed ? 'Well done. Mission complete.' : mission.goal + (choice && reached ? ' ' + choice.question : ''))
       : phase === 3 ? explain.question : 'Free play. Change the controls and watch what happens.'
+
+  // One clear next action, always in the same place, and the part of the screen it points at.
+  const step = !unlocked ? 0 : !observed ? 1 : phase < 3 ? 2 : 3
+  const now: { label: string; text: string; target: 'choices' | 'controls' | 'button' | 'reason' | 'explain' | null } =
+    !unlocked ? { label: 'Step 1 · Predict', text: 'Pick what you think will happen. Being wrong is fine, that is how you learn.', target: 'choices' }
+      : !observed ? { label: 'Step 2 · Watch', text: prediction.action, target: 'controls' }
+        : phase === -1 ? { label: 'Step 2 · Explore', text: 'Try the controls freely and watch what changes. When you are ready, press Start missions.', target: 'button' }
+          : mission && passed ? { label: `Mission ${phase + 1} of 3 · Done`, text: phase === 2 ? 'All three missions done. Press Explain why to finish.' : 'Well done. Press Next mission.', target: 'button' }
+            : mission ? {
+              label: `Step 3 · Mission ${phase + 1} of 3`,
+              text: mission.goal + (!reached ? '' : choice && reasonPick === null ? ' Now answer the question below.' : ' Now press Check mission.'),
+              target: !reached ? 'controls' : choice && reasonPick === null ? 'reason' : 'button',
+            }
+              : explainPick === null ? { label: 'Step 4 · Explain', text: 'Choose the reason that explains what you saw.', target: 'explain' }
+                : { label: 'Finished', text: 'You have done this practical. Practise the topic, or try it again to see it once more.', target: null }
 
   useEffect(() => {
     if (unlocked && prediction.observed) setObserved(true)
@@ -75,7 +92,15 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
   }
 
   return (
-    <div ref={body} class="jp-try-body">
+    <div ref={body} class="jp-try-body" data-attention={now.target ?? undefined}>
+      <p class="jp-try-aim"><span class="jp-try-kicker">Your goal</span> {renderMathText(aim)}</p>
+      <ol class="jp-try-steps" aria-label="Steps">
+        {['Predict', 'Watch', 'Missions', 'Explain'].map((name, index) => <li key={name}
+          data-state={index < step || (index === 3 && explainPick !== null) ? 'done' : index === step ? 'now' : 'next'}
+          aria-current={index === step ? 'step' : undefined}>
+          {name}{index === 2 && phase >= 0 && phase < 3 ? ` ${Math.min(phase + Number(passed), 3)}/3` : ''}
+        </li>)}
+      </ol>
       <p class="jp-try-context">{context}</p>
       <details class="jp-try-guide">
         <summary>ⓘ How to use this</summary>
@@ -96,20 +121,18 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
             <p class="jp-try-question">{renderMathText(prediction.question)}</p>
             <Choices label="Prediction" choices={prediction.choices} picked={picked} onPick={setPicked} locked={unlocked} />
           </div>
-          <ReadInstruction text={instruction} />
         </div>
-        {!unlocked && <p class="jp-try-prompt">Choose a prediction to unlock the controls.</p>}
-        {unlocked && !observed && <p class="jp-try-prompt">{renderMathText(prediction.action)}</p>}
         {observed && <p class={'jp-try-outcome ' + (picked === prediction.correct ? 'jp-try-outcome--good' : 'jp-try-outcome--info')} role="status">
           You predicted “{renderMathText(prediction.choices[picked!])}”. It turned out “{renderMathText(prediction.choices[prediction.correct])}”. {prediction.why}
         </p>}
       </div>
-      {mission && <div class="jp-try-mission">
-        <p class="jp-try-kicker jp-try-kicker--mission">Mission {phase + 1} of 3
-          {' '}<span class="jp-mode-studied" aria-label={phase + Number(passed) + ' missions complete'}>{'✓ '.repeat(phase + Number(passed))}</span>
-        </p>
-        <p class="jp-try-text">{renderMathText(mission.goal)}</p>
-      </div>}
+      <div class="jp-try-now" role="status" aria-live="polite">
+        <div>
+          <span class="jp-try-kicker">{now.label}</span>
+          <p class="jp-try-now-text">{renderMathText(now.text)}</p>
+        </div>
+        <ReadInstruction text={now.text || instruction} />
+      </div>
       <Playback unlocked={unlocked}>{children(unlocked)}</Playback>
       {formulas.length > 0 && <div class="jp-try-formulas-box">
         <span class="jp-try-formulas-label">Key formulas</span>
@@ -136,7 +159,7 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
             disabled={Boolean(choice && reached && reasonPick === null)}>Check mission</button>
         </>}
       </div>}
-      {phase === 3 && <div class="jp-try-explain">
+      {phase === 3 && <div class="jp-try-explain jp-try-explain--final">
         <p class="jp-mode-studied">✓ All three missions complete</p>
         <span class="jp-try-kicker">Explain why</span>
         <p class="jp-try-question">{renderMathText(explain.question)}</p>

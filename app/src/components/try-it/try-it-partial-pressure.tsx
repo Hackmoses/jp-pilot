@@ -14,7 +14,7 @@ export default function PartialPressures(props: InteractiveProps) {
   const [moles, setMoles] = useState([1, 0.5, 0])
   const [oxygen, nitrogen, carbonDioxide] = moles
   const { total, partials, fractions } = gasPressures(moles)
-  return <TryIt {...props} context="The air in a tyre contains several gases. Each one contributes to the pressure."
+  return <TryIt {...props} aim="See how each gas in a mixture adds its own share to the total pressure." context="The air in a tyre contains several gases. Each one contributes to the pressure."
     prediction={{ question: 'At fixed temperature and volume, what does adding nitrogen do to oxygen’s partial pressure?',
       choices: ['It rises', 'It falls', 'It stays the same'], correct: 2, action: 'Raise nitrogen from 0.5 to 2 mol. Leave oxygen at 1 mol and CO₂ at zero.',
       observed: oxygen === 1 && nitrogen === 2 && carbonDioxide === 0, why: 'The same amount of oxygen occupies the same space at the same temperature.' }}

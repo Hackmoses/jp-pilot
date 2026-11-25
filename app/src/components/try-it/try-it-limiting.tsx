@@ -21,7 +21,7 @@ export default function LimitingReagent(props: InteractiveProps) {
     ['O₂ left', oxygenLeft, 'var(--memo)'],
     ['H₂O made', water, 'var(--good)'],
   ] as const
-  return <TryIt {...props} context="Extra rice cannot make more pots of jollof if you have already used all the tomatoes."
+  return <TryIt {...props} aim="Find out which reactant runs out first and how it limits the amount of product." context="Extra rice cannot make more pots of jollof if you have already used all the tomatoes."
     prediction={{ question: 'If all the oxygen has reacted, what does adding more hydrogen do to the amount of water?',
       choices: ['It increases', 'It stays the same'], correct: 1, action: 'Increase hydrogen from 6 to 8 cm³, keeping oxygen at 2 cm³.',
       observed: h === 8 && o === 2, why: 'The recipe needs oxygen too. Once it is used up, extra hydrogen is left over.' }}

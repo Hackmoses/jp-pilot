@@ -26,7 +26,7 @@ export default function OxidationFinder(props: InteractiveProps) {
   const [element, count, known, knownTotal, charge] = compounds[compound]
   const total = oxidationTotal(compound, unknown)
   const balanced = unknown === oxidationNumber(compound)
-  return <TryIt {...props} context="Potassium permanganate is an oxidising agent used in some water-treatment systems in Nigeria."
+  return <TryIt {...props} aim="Work out oxidation numbers step by step in compounds and ions." context="Potassium permanganate is an oxidising agent used in some water-treatment systems in Nigeria."
     prediction={{ question: 'In neutral NH₃, is nitrogen’s oxidation number positive, zero or negative?',
       choices: ['Positive', 'Zero', 'Negative'], correct: 2, action: 'Use the stepper to balance NH₃.',
       observed: compound === 'NH₃' && balanced, why: 'The three H atoms contribute +3, so nitrogen must contribute −3 to make zero.' }}

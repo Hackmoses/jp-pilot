@@ -14,7 +14,7 @@ export default function Pulley(props: InteractiveProps) {
   const [load, setLoad] = useState(800)
   const [loss, setLoss] = useState(25)
   const { effort, advantage, efficiency, rope, workIn } = pulley(segments, load, loss)
-  return <TryIt {...props} context="Builders can use a pulley to lift blocks on a site by pulling a longer length of rope."
+  return <TryIt {...props} aim="See how more supporting rope segments reduce the effort, and how friction lowers efficiency." context="Builders can use a pulley to lift blocks on a site by pulling a longer length of rope."
     prediction={{ question: 'For the same load and friction loss, what happens to effort when more rope segments support the load?',
       choices: ['It gets smaller', 'It gets larger', 'It stays the same'], correct: 0, action: 'Raise the number of supporting segments from 2 to 4.',
       observed: segments === 4 && load === 800 && loss === 25, why: 'More rope segments share the load. You pull more rope for each metre raised.' }}

@@ -72,7 +72,7 @@ export default function FreeFall(props: InteractiveProps) {
     showTime(0)
   }
 
-  return <TryIt {...props} context="A mango and a leaf can fall from the same tree. In air the leaf usually arrives later."
+  return <TryIt {...props} aim="See why, without air, a heavy and a light object fall together and land at the same time." context="A mango and a leaf can fall from the same tree. In air the leaf usually arrives later."
     prediction={{ question: 'Without air, when does the heavier object land if both start from the same height?',
       choices: ['First', 'At the same time', 'Last'], correct: 1, action: 'Turn air resistance off and press Drop. Watch both objects land.',
       observed: !air && landed, why: 'Gravity gives both objects the same acceleration when drag is absent.' }}

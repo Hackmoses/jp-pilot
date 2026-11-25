@@ -20,7 +20,7 @@ export default function NumberBases(props: InteractiveProps) {
   const [left, middle, right] = digits
   const values = placeValues(base, digits)
   const sum = toDecimal(base, digits)
-  return <TryIt {...props} context="Counting pads of exercise books in groups of ten uses the same place-value idea as counting in groups of two."
+  return <TryIt {...props} aim="Find out what each digit is worth in base two and base ten, and convert between them." context="Counting pads of exercise books in groups of ten uses the same place-value idea as counting in groups of two."
     prediction={{ question: 'In base two, what is the value of a 1 two places left of the units digit?',
       choices: ['2', '4', '10'], correct: 1, why: 'Each move to the left multiplies the place value by two.',
       action: 'Keep base 2 and make 100₂ to check the left place.', observed: base === 2 && sum === 4 }}

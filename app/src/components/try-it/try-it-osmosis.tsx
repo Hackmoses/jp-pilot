@@ -17,7 +17,7 @@ export default function OsmosisCell(props: InteractiveProps) {
   const geometry = { x: 84 + inset, y: 18 + inset, width: 152 - 2 * inset, height: 94 - 2 * inset }
   const equal = outside === 'Equal'
   const inward = outside === 'Dilute'
-  return <TryIt {...props} context="Salt draws water out of sliced vegetables, such as ugu, as they sit."
+  return <TryIt {...props} aim="See which way water moves into or out of a cell, and what happens to the cell." context="Salt draws water out of sliced vegetables, such as ugu, as they sit."
     prediction={{ question: 'What happens to a plant cell in concentrated sugar solution?',
       choices: ['It swells', 'Its membrane pulls from the wall', 'It stays the same'], correct: 1,
       action: 'Choose a concentrated outside solution.', observed: outside === 'Concentrated',

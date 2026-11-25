@@ -21,7 +21,7 @@ export default function WaveOnString(props: InteractiveProps) {
     <path d={`M32 ${y}v-5h${width}v5`} {...ease({ d: `M32 ${y}v-5h${width}v5` })} fill="none" stroke="var(--memo)" />
     <text x={32 + width / 2} y={y - 9} {...ease({ x: 32 + width / 2, y: y - 9 })} text-anchor="middle">λ</text>
   </>
-  return <TryIt {...props} context="A vibrating talking-drum skin makes waves. Here a string carries a transverse wave."
+  return <TryIt {...props} aim="See how frequency and wavelength are linked at a fixed wave speed, and what amplitude changes." context="A vibrating talking-drum skin makes waves. Here a string carries a transverse wave."
     prediction={{ question: 'At fixed wave speed, what happens to wavelength if frequency doubles?',
       choices: ['It doubles', 'It halves', 'It stays the same'], correct: 1,
       action: 'Raise the frequency from 5 Hz to 10 Hz.', observed: frequency === 10,

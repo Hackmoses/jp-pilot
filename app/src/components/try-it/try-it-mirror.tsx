@@ -43,7 +43,7 @@ export default function ConcaveMirror(props: InteractiveProps) {
   ]
 
   return (
-    <TryIt {...props} context="A concave mirror in a barber’s shop can magnify a face when the face is close to it."
+    <TryIt {...props} aim="See where a concave mirror forms an image, and how the image changes as the object moves." context="A concave mirror in a barber’s shop can magnify a face when the face is close to it."
       prediction={{ question: 'When the object is beyond the centre of curvature, how large is its image?',
         choices: ['Larger', 'Smaller', 'Same size'], correct: 1,
         action: 'Move the object to 20 cm. Compare the image arrow with the object arrow.',

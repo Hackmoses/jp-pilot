@@ -16,7 +16,7 @@ export default function Capacitors(props: InteractiveProps) {
   const shown = parts.slice(0, count)
   const { total, charge, energy } = capacitance(shown, parallel, voltage)
   const examParts = count === 3 && parts.every((part, index) => part === 2 ** (index + 1))
-  return <TryIt {...props} context="A ceiling fan uses a capacitor to help start its motor and keep it turning."
+  return <TryIt {...props} aim="See how joining capacitors in series or in parallel changes the total capacitance and the energy stored." context="A ceiling fan uses a capacitor to help start its motor and keep it turning."
     prediction={{ question: 'When two capacitors are connected in parallel, how does the total compare with either one alone?',
       choices: ['It is bigger', 'It is smaller', 'It is the same'], correct: 0, action: 'Change the two starting capacitors from series to parallel.',
       observed: parallel && count === 2 && parts[0] === 2 && parts[1] === 4, why: 'Each capacitor adds charge at the same voltage, so the total capacitance increases.' }}

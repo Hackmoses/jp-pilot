@@ -17,7 +17,7 @@ export default function PHScale(props: InteractiveProps) {
   const pH = strongPH(solute, concentration)
   const marker = 20 + 20 * pH
   const colour = acid ? 'var(--bad)' : 'var(--brand)'
-  return <TryIt {...props} context="Adding water to a sour zobo drink dilutes its acids. Here we model a strong acid and base."
+  return <TryIt {...props} aim="See how diluting an acid or a base moves its pH towards 7." context="Adding water to a sour zobo drink dilutes its acids. Here we model a strong acid and base."
     prediction={{ question: 'How does the pH of HCl change when you dilute it tenfold?',
       choices: ['Goes up by 1', 'Goes down by 1', 'Stays the same'], correct: 0,
       action: 'Set HCl to 1 mol/dm³, then dilute it tenfold.',

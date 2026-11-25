@@ -25,7 +25,7 @@ export default function GasLaws(props: InteractiveProps) {
   const piston = pistonX(volume)
 
   return (
-    <TryIt {...props} context="Air in a bicycle pump warms as you compress it. Boyle’s law models slow compression at constant temperature."
+    <TryIt {...props} aim="See how the pressure, volume and temperature of a gas change together." context="Air in a bicycle pump warms as you compress it. Boyle’s law models slow compression at constant temperature."
       prediction={{ question: 'What happens to pressure when you halve the volume at constant temperature?',
         choices: ['It halves', 'It stays the same', 'It doubles'], correct: 2,
         action: 'Compress the 2 L gas to half its volume using Boyle’s law.',
