@@ -55,12 +55,12 @@ export default function RelativeVelocity(props: InteractiveProps) {
       <Values items={{ 'A in this view': displayed[0] + ' km/h', 'B in this view': displayed[1] + ' km/h',
         'B relative to A': relative + ' km/h', 'Relative speed': Math.abs(relative) + ' km/h' }} />
       <div class="jp-try-sliders">
-        <Select label="Direction of B" value={opposite ? 'opposite' : 'same'} options={ [['same', 'Same'], ['opposite', 'Opposite']] } onChange={(value) => setOpposite(value === 'opposite')} />
+        <Select info="Whether car B moves the same way as car A or towards it." label="Direction of B" value={opposite ? 'opposite' : 'same'} options={ [['same', 'Same'], ['opposite', 'Opposite']] } onChange={(value) => setOpposite(value === 'opposite')} />
         <button type="button" class={'jp-btn ' + (inA ? 'jp-btn--primary' : '')} aria-pressed={inA} onClick={() => setInA(!inA)}>View from car A</button>
       </div>
       <div class="jp-try-sliders">
-        <Slider label={'Car A speed (km/h) · ' + a} value={a} min={0} max={150} step={5} onChange={setA} />
-        <Slider label={'Car B speed (km/h) · ' + b} value={b} min={0} max={150} step={5} onChange={setB} />
+        <Slider info="How fast car A is moving." label={'Car A speed (km/h) · ' + a} value={a} min={0} max={150} step={5} onChange={setA} />
+        <Slider info="How fast car B is moving." label={'Car B speed (km/h) · ' + b} value={b} min={0} max={150} step={5} onChange={setB} />
       </div>
     </>}
   </TryIt>

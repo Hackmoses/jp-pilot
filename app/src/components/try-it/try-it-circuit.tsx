@@ -43,8 +43,8 @@ export default function CircuitLab(props: InteractiveProps) {
       'I = \\frac{ε}{R + r}', 'V = ε − Ir']}>
     {() => <>
       <div class="jp-try-sliders">
-        <Select label="Layout" value={layout} options={ [['series', 'Series'], ['parallel', 'Parallel']] } onChange={(value) => setLayout(value as Layout)} />
-        <Select label="Resistors" value={String(count)} options={ [['1', '1'], ['2', '2'], ['3', '3']] } onChange={(value) => setCount(Number(value))} />
+        <Select info="Series joins the resistors end to end. Parallel gives the current more than one path." label="Layout" value={layout} options={ [['series', 'Series'], ['parallel', 'Parallel']] } onChange={(value) => setLayout(value as Layout)} />
+        <Select info="How many resistors are in the circuit." label="Resistors" value={String(count)} options={ [['1', '1'], ['2', '2'], ['3', '3']] } onChange={(value) => setCount(Number(value))} />
       </div>
       <div class="jp-try-scene">
         <svg viewBox="0 0 320 145" role="img" aria-label={'Circuit in ' + layout + '. Dots represent moving electrons.'}>
@@ -72,8 +72,8 @@ export default function CircuitLab(props: InteractiveProps) {
       <div class="jp-try-sliders">
         {resistors.slice(0, count).map((r, index) => <Slider key={index} label={`Resistor ${index + 1} (Ω)`} value={r} min={1} max={12} step={1}
           onChange={(next) => setResistors(resistors.map((old, i) => i === index ? next : old))} />)}
-        <Slider label={'Cell e.m.f. (V) · ' + emf} value={emf} min={0} max={20} step={1} onChange={setEmf} />
-        <Slider label={'Internal resistance (Ω) · ' + internal} value={internal} min={0} max={5} step={0.5} onChange={setInternal} />
+        <Slider info="The e.m.f. is the energy the cell gives each coulomb of charge." label={'Cell e.m.f. (V) · ' + emf} value={emf} min={0} max={20} step={1} onChange={setEmf} />
+        <Slider info="Resistance inside the cell itself. It uses up some voltage, the lost volts." label={'Internal resistance (Ω) · ' + internal} value={internal} min={0} max={5} step={0.5} onChange={setInternal} />
       </div>
     </>}
   </TryIt>

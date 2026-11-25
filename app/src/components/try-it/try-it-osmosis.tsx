@@ -37,7 +37,7 @@ export default function OsmosisCell(props: InteractiveProps) {
       feedback: ['The partially permeable membrane allows water to move down the water-potential gradient.', 'The wall holds its shape. Water leaves through the membrane because water potential is lower outside.'] }}
     formulas={['Net water flow: higher → lower water potential']}>
     {() => <>
-      <Select label="Outside solution" value={outside} options={solutions.map((name) => [name, name])}
+      <Select info="The solution around the cell. Water moves from the weaker solution into the stronger one." label="Outside solution" value={outside} options={solutions.map((name) => [name, name])}
         onChange={(value) => { setBefore(inset); setOutside(value as Solution) }} />
       <div class="jp-try-scene">
         <svg viewBox="0 0 320 134" role="img" aria-label={cell + '. Water movement: ' + water}>

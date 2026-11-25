@@ -65,11 +65,11 @@ export default function Electrolysis(props: InteractiveProps) {
             <text x="215" y="39">Cathode −</text>
           </svg>
         </div>
-        <Select label="Metal ion" value={metal} options={Object.entries(metals).map(([key, item]) => [key, item.name])}
+        <Select info="The metal ion in the solution. Its charge tells you how many electrons each atom needs." label="Metal ion" value={metal} options={Object.entries(metals).map(([key, item]) => [key, item.name])}
           onChange={(value) => setMetal(value as Metal)} />
         <div class="jp-try-sliders">
-          <Slider label={'Current (A) · ' + current.toFixed(1)} value={current} min={0} max={5} step={0.1} onChange={setCurrent} />
-          <Slider label={'Time (s) · ' + seconds} value={seconds} min={0} max={1930} step={5} onChange={setSeconds} />
+          <Slider info="The current through the cell. More current deposits metal faster." label={'Current (A) · ' + current.toFixed(1)} value={current} min={0} max={5} step={0.1} onChange={setCurrent} />
+          <Slider info="How long the current flows. Charge passed is Q = It." label={'Time (s) · ' + seconds} value={seconds} min={0} max={1930} step={5} onChange={setSeconds} />
         </div>
         <Trace x={seconds / 1930} y={mass / Math.max(0.001, deposition(current, 1930, metal).mass)}
           series={metal + current} labels={['Time (s)', 'Deposited mass (g)']} />

@@ -57,8 +57,8 @@ export default function LimitingReagent(props: InteractiveProps) {
       </Scene>
       <Values items={{ 'Water made': water.toFixed(1) + ' cm³', 'Hydrogen left': hydrogenLeft.toFixed(1) + ' cm³', 'Oxygen left': oxygenLeft.toFixed(1) + ' cm³' }} />
       <div class="jp-try-sliders">
-        <Slider label={'Hydrogen (cm³) · ' + h} value={h} min={0} max={16} step={0.1} onChange={setH} />
-        <Slider label={'Oxygen (cm³) · ' + o} value={o} min={0} max={20} step={0.1} onChange={setO} />
+        <Slider info="Volume of hydrogen available to react." label={'Hydrogen (cm³) · ' + h} value={h} min={0} max={16} step={0.1} onChange={setH} />
+        <Slider info="Volume of oxygen available. Two volumes of hydrogen react with one of oxygen." label={'Oxygen (cm³) · ' + o} value={o} min={0} max={20} step={0.1} onChange={setO} />
       </div>
     </>}
   </TryIt>

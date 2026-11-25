@@ -51,8 +51,8 @@ export default function DiffusionRace(props: InteractiveProps) {
       <Values items={{ 'Left mass': masses[left] + ' g/mol', 'Right mass': masses[right] + ' g/mol', 'Left ÷ right rate': ratio.toFixed(2),
         'Meeting point from left': (100 * meet).toFixed(1) + '%' }} />
       <div class="jp-try-sliders">
-        <Select label="Left gas" value={left} options={options} onChange={(value) => setLeft(value as Gas)} />
-        <Select label="Right gas" value={right} options={options} onChange={(value) => setRight(value as Gas)} />
+        <Select info="The gas released at the left end. A lighter gas diffuses faster (Graham's law)." label="Left gas" value={left} options={options} onChange={(value) => setLeft(value as Gas)} />
+        <Select info="The gas released at the right end. Compare its molar mass with the left gas." label="Right gas" value={right} options={options} onChange={(value) => setRight(value as Gas)} />
       </div>
     </>}
   </TryIt>

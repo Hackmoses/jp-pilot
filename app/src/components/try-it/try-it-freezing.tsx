@@ -48,8 +48,8 @@ export default function FreezingPoint(props: InteractiveProps) {
       </Scene>
       <Values items={{ 'Freezing point': (drop ? -drop : 0).toFixed(2) + ' °C', 'Drop': drop.toFixed(2) + ' °C',
         'Particles per solute unit': salt ? '2' : '1' }} />
-      <Select label="Solute" value={salt ? 'salt' : 'sugar'} options={ [['sugar', 'Sugar'], ['salt', 'Salt']] } onChange={(value) => setSalt(value === 'salt')} />
-      <Slider label={'Molality (mol/kg) · ' + molality} min={0} max={2} step={0.02} value={molality} onChange={setMolality} />
+      <Select info="The substance dissolved in water. Ionic solutes split into more than one particle." label="Solute" value={salt ? 'salt' : 'sugar'} options={ [['sugar', 'Sugar'], ['salt', 'Salt']] } onChange={(value) => setSalt(value === 'salt')} />
+      <Slider info="Moles of solute in each kilogram of water. More particles lower the freezing point more." label={'Molality (mol/kg) · ' + molality} min={0} max={2} step={0.02} value={molality} onChange={setMolality} />
     </>}
   </TryIt>
 }

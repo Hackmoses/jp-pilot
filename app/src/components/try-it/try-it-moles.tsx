@@ -38,7 +38,7 @@ export default function MoleBridge(props: InteractiveProps) {
       feedback: ['One mole always has 6.02 × 10²³ entities, here atoms or molecules.', 'Their molar masses differ. A mole is a fixed count of entities.'] }}
     formulas={['n = \\frac{m}{M}', 'N = n × 6.02 × 10^{23}', 'V = n × 22.4 dm^{3} (gas at s.t.p.)']}>
     {() => <>
-      <Select label="Substance" value={substance} options={Object.keys(substances).map((name) => [name, name])}
+      <Select info="Choose a substance. Each one has its own molar mass." label="Substance" value={substance} options={Object.keys(substances).map((name) => [name, name])}
         onChange={(value) => setSubstance(value as Substance)} />
       <label class="jp-try-select">Mass (g)
         <input class="jp-btn" type="number" min="0" max="1000" step="any" value={input} onInput={(event) => setInput(event.currentTarget.value)} />

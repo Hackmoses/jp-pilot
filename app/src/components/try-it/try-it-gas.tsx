@@ -72,8 +72,8 @@ export default function GasLaws(props: InteractiveProps) {
             {unlocked && boyle && <DragHandle x={piston / 320} y={56 / 120} onDrag={(fraction) =>
               adjustPiston(Math.min(maxVolume, Math.max(minVolume, Math.round((fraction * 320 - 22) / 42 * 10) / 10)))} />}
           </div>
-          {boyle ? <Slider label={'Piston volume (L) · ' + volume.toFixed(2)} value={volume} min={minVolume} max={maxVolume} step={0.1} onChange={adjustPiston} />
-            : <Slider label={'Heat the gas (K) · ' + kelvin} value={kelvin} min={150} max={600} step={5} onChange={setKelvin} />}
+          {boyle ? <Slider info="Push or pull the piston to change the space the gas fills." label={'Piston volume (L) · ' + volume.toFixed(2)} value={volume} min={minVolume} max={maxVolume} step={0.1} onChange={adjustPiston} />
+            : <Slider info="The gas temperature in kelvin. Gas laws always use kelvin, not °C." label={'Heat the gas (K) · ' + kelvin} value={kelvin} min={150} max={600} step={5} onChange={setKelvin} />}
           <Trace x={boyle ? (volume - 1) / 3 : (kelvin - 150) / 450}
             y={boyle ? pressure / 200 : volume / 4} series={law}
             labels={boyle ? ['Volume (L)', 'Pressure (kPa)'] : ['Temperature (K)', 'Volume (L)']} />

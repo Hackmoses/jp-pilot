@@ -61,9 +61,9 @@ export default function Indices(props: InteractiveProps) {
         </g>)}
       </Scene>
       <Values items={{ 'Base': frac(numerator, denominator), 'Power': labels[index], 'Working base': workingBase, 'Value': format(result) }} />
-      <Select label="Base type" value={base} options={ [['integer', 'Whole number'], ['ratio', '16/81'], ['reciprocal', '81/16']] } onChange={setBase} />
-      {base === 'integer' && <Slider label={'Base · ' + integer} value={integer} min={2} max={10} step={1} onChange={setInteger} />}
-      <Slider label={'Power · ' + labels[index]} value={index} valueText={labels[index]} min={0} max={powers.length - 1} step={1} onChange={setIndex} />
+      <Select info="Choose the kind of number to raise to a power." label="Base type" value={base} options={ [['integer', 'Whole number'], ['ratio', '16/81'], ['reciprocal', '81/16']] } onChange={setBase} />
+      {base === 'integer' && <Slider info="The number that is multiplied by itself." label={'Base · ' + integer} value={integer} min={2} max={10} step={1} onChange={setInteger} />}
+      <Slider info="The index. It tells you how many times the base is used." label={'Power · ' + labels[index]} value={index} valueText={labels[index]} min={0} max={powers.length - 1} step={1} onChange={setIndex} />
     </>}
   </TryIt>
 }

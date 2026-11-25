@@ -4,7 +4,7 @@ import { getQuestion } from '../../lib/data'
 import { waitForOfflineControl } from '../../lib/offline'
 import { getQuestionChapter, hasCompletedInteractive, markInteractiveCompleted } from '../../lib/modes'
 
-export type InteractiveProps = { practiceHref: string; onComplete: () => void }
+export type InteractiveProps = { practiceHref: string; onComplete: () => void; onRestart?: () => void }
 type Interactive = {
   title: string
   id?: string
@@ -58,6 +58,8 @@ export function TryItCard({ interactive, subject, chapter }: {
   const [completed, setCompleted] = useState(() => hasCompletedInteractive(subject, chapter, interactive.id))
   const [status, setStatus] = useState<'idle' | 'loading' | 'error'>('idle')
   const [Demo, setDemo] = useState<ComponentType<InteractiveProps> | null>(null)
+  const [run, setRun] = useState(0)
+  const restart = () => setRun(run + 1)
 
   async function load() {
     setStatus('loading')
@@ -81,6 +83,7 @@ export function TryItCard({ interactive, subject, chapter }: {
       <div class="jp-try-header">
         <h3 id={id + '-title'} class="jp-mode-card-title">{interactive.title}</h3>
         {completed && <span class="jp-mode-studied">✓ Completed</span>}
+        {open && Demo && <button type="button" class="jp-btn" aria-label={'Restart · ' + interactive.title} onClick={restart}>Restart</button>}
         <button type="button" class="jp-btn" aria-expanded={open} aria-controls={id}
           aria-label={(open ? 'Close' : 'Try it') + ' · ' + interactive.title} onClick={() => {
             setOpen(!open)
@@ -88,7 +91,7 @@ export function TryItCard({ interactive, subject, chapter }: {
           }}>{open ? 'Close' : 'Try it'}</button>
       </div>
       <div id={id} class="jp-try-panel" hidden={!open}>
-        {open && Demo && <Demo practiceHref={'#/practice?' + new URLSearchParams({ subject, chapter })}
+        {open && Demo && <Demo key={run} onRestart={restart} practiceHref={'#/practice?' + new URLSearchParams({ subject, chapter })}
           onComplete={() => {
             markInteractiveCompleted(subject, chapter, interactive.id)
             setCompleted(true)

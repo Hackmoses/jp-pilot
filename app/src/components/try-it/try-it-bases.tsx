@@ -38,7 +38,7 @@ export default function NumberBases(props: InteractiveProps) {
       feedback: ['Any allowed base raised to zero equals one.', 'Any allowed digit can go there. Its place has weight one because the exponent is zero.'] }}
     formulas={[`${left} × ${base}^{2} + ${middle} × ${base}^{1} + ${right} × ${base}^{0} = ${sum}_{10}`]}>
     {() => <>
-      <Select label="Base" value={String(base)} options={options(2, 10)} onChange={(value) => {
+      <Select info="Choose the number base. In any base, each place is worth the base times the place to its right." label="Base" value={String(base)} options={options(2, 10)} onChange={(value) => {
         const next = Number(value)
         setBase(next)
         setDigits(digits.map((digit) => Math.min(digit, next - 1)))

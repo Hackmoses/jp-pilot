@@ -1126,3 +1126,52 @@
 .jp-study-section[open] > summary::after { content: '▴'; }
 
 .jp-study-section > .jp-mode-list { margin-top: var(--space-3); }
+/* Try it info tips and guide */
+.jp-try-label-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.jp-try-tip > summary,
+.jp-try-guide > summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.jp-try-tip > summary::-webkit-details-marker,
+.jp-try-guide > summary::-webkit-details-marker { display: none; }
+
+.jp-try-tip > summary {
+  display: inline-grid;
+  place-items: center;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.jp-try-tip[open] {
+  flex-basis: 100%;
+  display: flex;
+  gap: var(--space-1);
+  align-items: flex-start;
+  padding: var(--space-1) var(--space-2);
+  border-radius: 8px;
+  background: var(--brand-soft);
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.jp-try-guide {
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.jp-try-guide ul {
+  margin: var(--space-2) 0 0;
+  padding-left: var(--space-5);
+  display: grid;
+  gap: 2px;
+}
