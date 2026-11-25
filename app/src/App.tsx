@@ -25,6 +25,10 @@ const ExamRun = screenView(examRun, 'Exam')
 const Results = screenView(results, 'Results')
 const Summary = screenView(lazyView(() => import('./screens/Summary').then(({ Summary }) => Summary)), 'Progress summary')
 
+const FiguresDemo = import.meta.env.DEV
+  ? screenView(lazyView(() => import('./screens/FiguresDemo').then(({ FiguresDemo }) => FiguresDemo)), 'Figures demo')
+  : null
+
 function readRoute() {
   return window.location.hash
 }
@@ -54,6 +58,7 @@ export function App() {
 
   const [screen, query] = route.split('?')
   const params = new URLSearchParams(query)
+  if (import.meta.env.DEV && screen === '#/figures-demo' && FiguresDemo) return <FiguresDemo />
   switch (screen) {
     case '#/modes':
       return <ModeHome />

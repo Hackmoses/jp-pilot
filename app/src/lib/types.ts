@@ -1,8 +1,11 @@
+import type { FigureData } from '../components/figures/spec'
+
 export type OptionId = 'a' | 'b' | 'c' | 'd'
 
 export interface Option {
   id: OptionId
   text: string
+  figure?: FigureData
   why: string
   whyWrong: string | null
 }
@@ -30,6 +33,7 @@ export interface Question {
   type: 'recall' | 'calculation'
   difficulty: 1 | 2 | 3
   stem: string
+  figure?: FigureData
   options: [Option, Option, Option, Option]
   answerId: OptionId
   removeOrder: [OptionId, OptionId]

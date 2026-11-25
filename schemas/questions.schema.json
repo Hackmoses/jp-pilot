@@ -72,6 +72,7 @@
           "stem": {
             "type": "string"
           },
+          "figure": { "$ref": "#/$defs/figure" },
           "options": {
             "type": "array",
             "minItems": 4,
@@ -85,7 +86,12 @@
                 "whyWrong"
               ],
               "additionalProperties": false,
+              "anyOf": [
+                { "required": ["figure"] },
+                { "properties": { "text": { "type": "string", "minLength": 1 } } }
+              ],
               "properties": {
+                "figure": { "$ref": "#/$defs/figure" },
                 "id": {
                   "enum": [
                     "a",
@@ -95,8 +101,7 @@
                   ]
                 },
                 "text": {
-                  "type": "string",
-                  "minLength": 1
+                  "type": "string"
                 },
                 "why": {
                   "type": "string",
@@ -244,6 +249,201 @@
             "type": "boolean"
           }
         }
+      }
+    }
+  },
+  "$defs": {
+    "figure": {
+      "type": "object",
+      "required": ["type", "alt"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "enum": ["venn", "graph", "chart", "table", "circuit", "rays", "geometry", "svg"] },
+        "alt": { "type": "string", "minLength": 1, "pattern": "\\S" },
+        "caption": { "type": "string" },
+        "spec": { "type": "object" },
+        "src": { "type": "string", "pattern": "^(?:/?figures/)?[a-z0-9][a-z0-9_-]*\\.svg$" }
+      },
+      "if": { "properties": { "type": { "const": "svg" } } },
+      "then": { "required": ["src"], "not": { "required": ["spec"] } },
+      "else": { "required": ["spec"], "not": { "required": ["src"] } },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "venn" } } },
+          "then": { "properties": { "spec": { "$ref": "#/$defs/vennSpec" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "graph" } } },
+          "then": { "properties": { "spec": { "$ref": "#/$defs/graphSpec" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "chart" } } },
+          "then": { "properties": { "spec": { "$ref": "#/$defs/chartSpec" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "table" } } },
+          "then": { "properties": { "spec": { "$ref": "#/$defs/tableSpec" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "circuit" } } },
+          "then": { "properties": { "spec": { "$ref": "#/$defs/circuitSpec" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "rays" } } },
+          "then": { "properties": { "spec": { "$ref": "#/$defs/raysSpec" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "geometry" } } },
+          "then": { "properties": { "spec": { "$ref": "#/$defs/geometrySpec" } } }
+        }
+      ]
+    },
+    "vennSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sets", "shaded"],
+      "properties": {
+        "sets": {
+          "type": "array", "minItems": 2, "maxItems": 3, "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "shaded": {
+          "description": "Exact regions listed by set membership. An empty membership list shades outside all sets.",
+          "type": "array", "maxItems": 8,
+          "items": {
+            "type": "array", "maxItems": 3, "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        },
+        "universe": { "type": "string" }
+      }
+    },
+    "point": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } },
+    "axis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["range", "label"],
+      "properties": {
+        "range": { "$ref": "#/$defs/point" },
+        "label": { "type": "string" },
+        "unit": { "type": "string" },
+        "ticks": { "type": "array", "items": { "type": "number" } }
+      }
+    },
+    "mark": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["at"],
+      "properties": {
+        "at": { "$ref": "#/$defs/point" },
+        "label": { "type": "string" },
+        "labelAt": { "$ref": "#/$defs/point" },
+        "marker": { "type": "boolean" }
+      }
+    },
+    "arrow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to"],
+      "properties": {
+        "from": { "$ref": "#/$defs/point" },
+        "to": { "$ref": "#/$defs/point" },
+        "label": { "type": "string" }
+      }
+    },
+    "graphSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": {
+        "x": { "$ref": "#/$defs/axis" },
+        "y": { "$ref": "#/$defs/axis" },
+        "grid": { "type": "boolean" },
+        "lines": { "type": "array", "items": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "$ref": "#/$defs/point" } } },
+        "curves": { "type": "array", "items": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/point" } } },
+        "points": { "type": "array", "items": { "$ref": "#/$defs/mark" } },
+        "shaded": { "type": "array", "items": { "type": "array", "minItems": 3, "items": { "$ref": "#/$defs/point" } } }
+      }
+    },
+    "chartSpec": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "bars"],
+          "properties": {
+            "kind": { "const": "bar" },
+            "bars": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["label", "value"], "properties": { "label": { "type": "string" }, "value": { "type": "number", "minimum": 0 } } } },
+            "xLabel": { "type": "string" },
+            "yLabel": { "type": "string" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "bins"],
+          "properties": {
+            "kind": { "const": "histogram" },
+            "bins": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["from", "to", "height"], "properties": { "from": { "type": "number" }, "to": { "type": "number" }, "height": { "type": "number", "minimum": 0 } } } },
+            "xLabel": { "type": "string" },
+            "yLabel": { "type": "string" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "unit", "slices"],
+          "properties": {
+            "kind": { "const": "pie" },
+            "unit": { "enum": ["%", "°"] },
+            "slices": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["label", "value"], "properties": { "label": { "type": "string" }, "value": { "type": "number", "exclusiveMinimum": 0 } } } }
+          }
+        }
+      ]
+    },
+    "tableSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["headers", "rows"],
+      "properties": {
+        "headers": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "rows": { "type": "array", "minItems": 1, "items": { "type": "array", "minItems": 1, "items": { "type": "string" } } }
+      }
+    },
+    "circuitSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["size", "wires", "parts"],
+      "properties": {
+        "size": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number", "exclusiveMinimum": 0 } },
+        "wires": { "type": "array", "items": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/point" } } },
+        "junctions": { "type": "array", "items": { "$ref": "#/$defs/point" } },
+        "parts": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["kind", "at"], "properties": { "kind": { "enum": ["cell", "resistor", "bulb", "ammeter", "voltmeter", "switch", "capacitor"] }, "at": { "$ref": "#/$defs/point" }, "vertical": { "type": "boolean" }, "closed": { "type": "boolean" }, "label": { "type": "string" } } } }
+      }
+    },
+    "raysSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["optic", "shape", "focalPoints", "object", "rays"],
+      "properties": {
+        "optic": { "enum": ["lens", "mirror"] },
+        "shape": { "enum": ["concave", "convex"] },
+        "focalPoints": { "type": "array", "items": { "$ref": "#/$defs/mark" } },
+        "object": { "$ref": "#/$defs/arrow" },
+        "rays": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["points"], "properties": { "points": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/point" } }, "dashed": { "type": "boolean" } } } },
+        "image": { "$ref": "#/$defs/arrow" }
+      }
+    },
+    "geometrySpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "points": { "type": "array", "items": { "$ref": "#/$defs/mark" } },
+        "lines": { "type": "array", "items": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "$ref": "#/$defs/point" } } },
+        "polygons": { "type": "array", "items": { "type": "array", "minItems": 3, "items": { "$ref": "#/$defs/point" } } },
+        "circles": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["centre", "radius"], "properties": { "centre": { "$ref": "#/$defs/point" }, "radius": { "type": "number", "exclusiveMinimum": 0 } } } },
+        "angles": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["vertex", "from", "to"], "properties": { "vertex": { "$ref": "#/$defs/point" }, "from": { "$ref": "#/$defs/point" }, "to": { "$ref": "#/$defs/point" }, "radius": { "type": "number", "exclusiveMinimum": 0 }, "label": { "type": "string" } } } },
+        "labels": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["at", "text"], "properties": { "at": { "$ref": "#/$defs/point" }, "text": { "type": "string" } } } }
       }
     }
   }

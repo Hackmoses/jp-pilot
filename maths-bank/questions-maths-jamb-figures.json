@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "subject": "mathematics",
+  "count": 2,
+  "questions": [
+    {
+      "id": "math-jamb-2010-025",
+      "subject": "mathematics",
+      "topic": "Matrices and determinants",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "If \\det{x,3;2,7} = 15, find the value of x.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "why": "It gives 7 × 3 − 6 = 15.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "why": "It gives 29.",
+          "whyWrong": "Substituting 5 gives 7 × 5 − 3 × 2 = 29. Set 7x − 6 equal to 15 before solving for x."
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "why": "It gives 22.",
+          "whyWrong": "Substituting 4 gives 7 × 4 − 3 × 2 = 22. After adding 6 to both sides, divide 21 by 7."
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "why": "It gives 8.",
+          "whyWrong": "Substituting 2 gives 7 × 2 − 3 × 2 = 8. The determinant must equal 15, so check the value in 7x − 6."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Multiply the two diagonals and take their difference.",
+      "explanation": "For a 2 × 2 determinant, multiply the main diagonal and subtract the other diagonal’s product. Here that gives 7x − 3 × 2 = 7x − 6. Set 7x − 6 = 15. Adding 6 gives 7x = 21. Dividing by 7 gives x = 3. Substitution checks it: 7 × 3 − 6 = 15.",
+      "trap": "Adding the diagonal products gives 7x + 6 and changes the equation. Subtract 3 × 2.",
+      "mnemonic": "Main diagonal product minus the other diagonal product.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The two products are 7x and 6. Their difference is 15, so 7x is 21 and x is 3."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Substituting 2 gives 7 × 2 − 3 × 2 = 8. The determinant must equal 15, so check the value in 7x − 6."
+        },
+        {
+          "id": "similar",
+          "answer": "If \\det{x,4;1,5} = 16, find x.",
+          "similarAnswer": "5x − 4 = 16, so 5x = 20 and x = 4."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "JAMB",
+        "id": 25,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": true
+    },
+    {
+      "id": "math-jamb-2010-026",
+      "subject": "mathematics",
+      "topic": "Matrices and determinants",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Evaluate \\det{2,0,5;4,6,3;8,9,1}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−42",
+          "why": "It is the first cofactor contribution alone.",
+          "whyWrong": "The contribution from the 2 is −42. The contribution from the 5 is also needed and equals −60."
+        },
+        {
+          "id": "b",
+          "text": "102",
+          "why": "It is the result with the sign reversed.",
+          "whyWrong": "Reversing the diagonal subtraction in both minors reverses the sign of the determinant. In each minor, use the top-left times bottom-right product first."
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "why": "It results from giving the third term a minus sign.",
+          "whyWrong": "First-row signs are +, −, +. The third minor is already negative, so its contribution is +5 × (−12) = −60."
+        },
+        {
+          "id": "d",
+          "text": "−102",
+          "why": "The nonzero contributions total −42 − 60.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Expand across the first row, which contains a zero.",
+      "explanation": "Expand across the top row using cofactor signs +, −, +. The middle entry contributes zero. The first term is 2 × \\det{6,3;9,1} = 2 × (6 − 27) = −42. The third term is 5 × \\det{4,6;8,9} = 5 × (36 − 48) = −60. The sum is −102.",
+      "trap": "The third cofactor has a plus sign. Its minor is negative, so the contribution stays negative.",
+      "mnemonic": "Expand along a row with zeroes and keep the alternating signs. Across the top row, use plus, minus, plus.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Only the 2 and 5 in the top row contribute. Multiply them by their minors, −21 and −12. The two products sum to −102."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Reversing the diagonal subtraction in both minors reverses the sign of the determinant. In each minor, use the top-left times bottom-right product first."
+        },
+        {
+          "id": "similar",
+          "answer": "Evaluate \\det{1,0,2;3,4,1;2,1,3}.",
+          "similarAnswer": "Expanding along the top row gives (12 − 1) + 2 × (3 − 8) = 11 − 10 = 1."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "JAMB",
+        "id": 26,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": true
+    }
+  ]
+}

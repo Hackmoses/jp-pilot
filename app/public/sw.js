@@ -1,5 +1,6 @@
 const CACHE_NAME = 'jp-pilot-v12'
 const PRECACHE_BUNDLES = []
+const FIGURE_BUNDLES = {}
 const CALCULATION_AUDIO_CACHE = 'jp-calculation-audio-v1'
 const CALCULATION_AUDIO_PATH = new URL('./audio/', self.location.href).pathname
 const BUNDLE_PATH = new URL('./assets/', self.location.href).pathname
@@ -9,6 +10,11 @@ self.addEventListener('install', (event) => {
     (async () => {
       const cache = await caches.open(CACHE_NAME)
       await cache.addAll(['./', './index.html', ...PRECACHE_BUNDLES])
+      await Promise.all(Object.entries(FIGURE_BUNDLES).map(([path, source]) =>
+        cache.put(path, new Response(source, {
+          headers: { 'Content-Type': path.endsWith('.css') ? 'text/css' : 'text/javascript' },
+        })),
+      ))
       await self.skipWaiting()
     })(),
   )

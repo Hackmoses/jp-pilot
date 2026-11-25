@@ -4,7 +4,7 @@ export default defineConfig({
   base: '/jp-pilot/',
   server: {
     fs: {
-      allow: ['.', '../data'],
+      allow: ['.', '../data', '../maths-bank'],
     },
   },
 })

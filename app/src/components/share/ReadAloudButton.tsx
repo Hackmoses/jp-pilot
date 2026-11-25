@@ -10,7 +10,7 @@ import {
   subscribeToSpeechState,
 } from '../../lib/speech'
 import { logEvent } from '../../lib/store'
-import type { Option, OptionId } from '../../lib/types'
+import type { Option, OptionId, Question } from '../../lib/types'
 import { OPTION_LETTERS } from '../question/logic'
 import './share.css'
 
@@ -22,6 +22,33 @@ type ReadAloudProps = {
   | { target: 'whyWrong'; optionId: OptionId }
   | { target: 'otherWrong'; options: readonly Option[]; pickedId: OptionId | null }
 )
+
+function describe(option: Option) {
+  return option.figure ? [option.text, option.figure.alt].filter(Boolean).join('. ') : option.text
+}
+
+function wordsForQuestion(question: Question, props: ReadAloudProps) {
+  switch (props.target) {
+    case 'question':
+      return [
+        question.stem,
+        question.figure?.alt,
+        ...props.options.map((option, index) => 'Option ' + OPTION_LETTERS[index] + '. ' + describe(option)),
+      ].filter(Boolean).join(' ')
+    case 'whyWrong': {
+      const option = question.options.find((item) => item.id === props.optionId)
+      return [option?.figure?.alt, option?.whyWrong].filter(Boolean).join(' ')
+    }
+    case 'otherWrong':
+      return props.options
+        .map((option, index) => ({ option, letter: OPTION_LETTERS[index] ?? 'A' }))
+        .filter(({ option }) => option.id !== question.answerId && option.id !== props.pickedId && option.whyWrong?.trim())
+        .map(({ option, letter }) => 'Option ' + letter + ', ' + describe(option) + '. ' + option.whyWrong)
+        .join(' ')
+    case 'explanation':
+      return question.explanation
+  }
+}
 
 export function ReadAloudButton(props: ReadAloudProps) {
   const { questionId, target } = props
@@ -44,22 +71,7 @@ export function ReadAloudButton(props: ReadAloudProps) {
 
   if (!available || !question) return null
 
-  const words = props.target === 'question'
-    ? [question.stem, ...props.options.map((option, index) => `Option ${'ABCD'[index]}. ${option.text}`)].join(' ')
-    : props.target === 'whyWrong'
-      ? (question.options.find((option) => option.id === props.optionId)?.whyWrong ?? '')
-      : props.target === 'otherWrong'
-        ? props.options
-            .map((option, index) => ({ option, letter: OPTION_LETTERS[index] ?? 'A' }))
-            .filter(({ option }) =>
-              option.id !== question.answerId &&
-              option.id !== props.pickedId &&
-              typeof option.whyWrong === 'string' &&
-              option.whyWrong.trim().length > 0,
-            )
-            .map(({ option, letter }) => `Option ${letter}, ${option.text}. ${option.whyWrong}`)
-            .join(' ')
-        : question.explanation
+  const words = wordsForQuestion(question, props)
 
   if (!words.trim()) return null
 

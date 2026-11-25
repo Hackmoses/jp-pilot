@@ -896,3 +896,31 @@ body {
   outline-offset: 2px;
 }
 
+
+.jp-math-matrix {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: stretch;
+  line-height: 1.15;
+}
+
+.jp-math-matrix::before,
+.jp-math-matrix::after {
+  content: "";
+  width: .25em;
+  border-block: .095em solid currentColor;
+}
+
+.jp-math-matrix::before { border-left: .095em solid currentColor; }
+.jp-math-matrix::after { border-right: .095em solid currentColor; }
+
+.jp-math-matrix--det::before,
+.jp-math-matrix--det::after { border-block: 0; }
+
+.jp-math-matrix-grid {
+  display: inline-grid;
+  padding: .08em .08em;
+  gap: .16em .5em;
+  align-items: center;
+  justify-items: center;
+}

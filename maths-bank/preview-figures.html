@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2010 JAMB Mathematics figures preview</title>
+  <style>
+    :root { font: 1rem/1.5 system-ui, sans-serif; color: #111827; background: #fff; }
+    body { max-width: 44rem; margin: 0 auto; padding: 16px; }
+    h1 { font-size: 1.375rem; }
+    h2 { font-size: 1.125rem; margin: 0; }
+    section { padding: 16px; border: 1px solid #e5e7eb; border-radius: 12px; margin-block: 12px; }
+    li + li { margin-top: 8px; }
+    a { color: #1d4ed8; }
+    .det { display: inline-flex; vertical-align: middle; border-inline: .095em solid; padding-inline: .25em; line-height: 1.15; }
+    .cells { display: inline-grid; grid-template-columns: repeat(var(--cols), auto); gap: .16em .5em; justify-items: center; }
+  </style>
+</head>
+<body>
+  <h1>2010 JAMB Mathematics figures preview</h1>
+  <p>Q25 has key A and Q26 has key D. Independent calculations match both.
+    Q11 was excluded because the keyed diagram shades inside P and the expression selects the region outside P, Q and R.
+    <a href="https://myexamcode.net/wp-content/uploads/2022/04/JAMB-MATHEMATICS-PAST-QUESTIONS.pdf">Paper and printed key</a></p>
+  <section>
+    <h2>Question 25</h2>
+    <p>If <span class="det" role="img" aria-label="The determinant with rows x, 3 and 2, 7"><span class="cells" aria-hidden="true" style="--cols:2"><span>x</span><span>3</span><span>2</span><span>7</span></span></span> = 15, find the value of x.</p>
+    <ol type="A">
+      <li><strong>3 ✓</strong><div>It gives 7 × 3 − 6 = 15.</div></li>
+      <li><strong>5</strong><div>It gives 29.</div><div>Substituting 5 gives 7 × 5 − 3 × 2 = 29. Set 7x − 6 equal to 15 before solving for x.</div></li>
+      <li><strong>4</strong><div>It gives 22.</div><div>Substituting 4 gives 7 × 4 − 3 × 2 = 22. After adding 6 to both sides, divide 21 by 7.</div></li>
+      <li><strong>2</strong><div>It gives 8.</div><div>Substituting 2 gives 7 × 2 − 3 × 2 = 8. The determinant must equal 15, so check the value in 7x − 6.</div></li>
+    </ol>
+    <p><strong>Answer A.</strong> For a 2 × 2 determinant, multiply the main diagonal and subtract the other diagonal’s product. Here that gives 7x − 3 × 2 = 7x − 6. Set 7x − 6 = 15. Adding 6 gives 7x = 21. Dividing by 7 gives x = 3. Substitution checks it: 7 × 3 − 6 = 15.</p>
+    <p><strong>Trap.</strong> Adding the diagonal products gives 7x + 6 and changes the equation. Subtract 3 × 2.</p>
+    <p><strong>Memory aid.</strong> Main diagonal product minus the other diagonal product.</p>
+  </section>
+  <section>
+    <h2>Question 26</h2>
+    <p>Evaluate <span class="det" role="img" aria-label="The determinant with rows 2, 0, 5 and 4, 6, 3 and 8, 9, 1"><span class="cells" aria-hidden="true" style="--cols:3"><span>2</span><span>0</span><span>5</span><span>4</span><span>6</span><span>3</span><span>8</span><span>9</span><span>1</span></span></span>.</p>
+    <ol type="A">
+      <li><strong>−42</strong><div>It is the first cofactor contribution alone.</div><div>The contribution from the 2 is −42. The contribution from the 5 is also needed and equals −60.</div></li>
+      <li><strong>102</strong><div>It is the result with the sign reversed.</div><div>Reversing the diagonal subtraction in both minors reverses the sign of the determinant. In each minor, use the top-left times bottom-right product first.</div></li>
+      <li><strong>18</strong><div>It results from giving the third term a minus sign.</div><div>First-row signs are +, −, +. The third minor is already negative, so its contribution is +5 × (−12) = −60.</div></li>
+      <li><strong>−102 ✓</strong><div>The nonzero contributions total −42 − 60.</div></li>
+    </ol>
+    <p><strong>Answer D.</strong> Expand across the top row using cofactor signs +, −, +. The middle entry contributes zero. The first term is 2 × <span class="det" role="img" aria-label="The determinant with rows 6, 3 and 9, 1"><span class="cells" aria-hidden="true" style="--cols:2"><span>6</span><span>3</span><span>9</span><span>1</span></span></span> = 2 × (6 − 27) = −42. The third term is 5 × <span class="det" role="img" aria-label="The determinant with rows 4, 6 and 8, 9"><span class="cells" aria-hidden="true" style="--cols:2"><span>4</span><span>6</span><span>8</span><span>9</span></span></span> = 5 × (36 − 48) = −60. The sum is −102.</p>
+    <p><strong>Trap.</strong> The third cofactor has a plus sign. Its minor is negative, so the contribution stays negative.</p>
+    <p><strong>Memory aid.</strong> Expand along a row with zeroes and keep the alternating signs. Across the top row, use plus, minus, plus.</p>
+  </section>
+</body>
+</html>

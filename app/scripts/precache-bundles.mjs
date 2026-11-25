@@ -28,9 +28,22 @@ function collect(key) {
 }
 for (const key of sources) collect(key)
 
+// Store renderer files in the worker itself and seed its cache during install.
+// The app imports only the renderer needed, and the cache serves it without a network round-trip.
+const regularFiles = new Set(files)
+for (const type of ['venn', 'graph', 'chart', 'table', 'circuit', 'rays', 'geometry', 'svg']) {
+  collect('src/components/figures/' + type + '.tsx')
+}
+
+const figureFiles = [...files].filter((file) => !regularFiles.has(file)).sort()
+const figureBundles = Object.fromEntries(await Promise.all(figureFiles.map(async (file) =>
+  [file, await readFile(new URL(file, dist), 'utf8')],
+)))
+
 const revision = createHash('sha256').update(JSON.stringify(manifest)).digest('hex').slice(0, 12)
 const worker = new URL('sw.js', dist)
 const source = await readFile(worker, 'utf8')
 await writeFile(worker, source
-  .replace("'jp-pilot-v11'", "'jp-pilot-v11-" + revision + "'")
-  .replace('const PRECACHE_BUNDLES = []', 'const PRECACHE_BUNDLES = ' + JSON.stringify([...files].sort())))
+  .replace(/const CACHE_NAME = '([^']+)'/, (_, name) => "const CACHE_NAME = '" + name + '-' + revision + "'")
+  .replace('const PRECACHE_BUNDLES = []', 'const PRECACHE_BUNDLES = ' + JSON.stringify([...regularFiles].sort()))
+  .replace('const FIGURE_BUNDLES = {}', () => 'const FIGURE_BUNDLES = ' + JSON.stringify(figureBundles)))

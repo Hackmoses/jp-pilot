@@ -1,13 +1,16 @@
 import { useId, useLayoutEffect, useRef, useState } from 'preact/hooks'
 import { getQuestion } from '../../lib/data'
 import { logEvent } from '../../lib/store'
-import type { AskPreset, OptionId } from '../../lib/types'
+import type { AskPreset, Option, OptionId } from '../../lib/types'
+import { Figure } from '../figures/Figure'
+import { ReadAloudButton } from '../share/ReadAloudButton'
 import { renderFormattedText } from './formatFormula'
 import { ReplyFeedback, useTypedAsk, type AskHistory, type AskReply } from './TypedAsk'
 import './ask.css'
 
 type AskProps = {
   questionId: string
+  options: readonly Option[]
   answered: boolean
   letterFor: (optionId: OptionId) => string
 }
@@ -52,6 +55,7 @@ function PresetReply({ preset, label }: { preset: AskPreset; label: string }) {
 
 function AskContent({
   questionId,
+  options,
   answered,
   letterFor,
   onClose,
@@ -109,6 +113,17 @@ function AskContent({
 
       <div class={answered ? 'jp-ask-body jp-ask-body--chat' : 'jp-ask-body'}>
         {!question && <p>Question unavailable.</p>}
+        {(question?.figure || options.some((option) => option.figure)) && (
+          <details class="jp-ask-figures">
+            <summary>Question diagrams</summary>
+            {question?.figure && <Figure data={question.figure} />}
+            {options.map((option) => option.figure && <div key={option.id}>
+              <strong>Option {letterFor(option.id)}</strong>
+              <Figure data={option.figure} />
+            </div>)}
+            <ReadAloudButton questionId={questionId} target="question" options={options} />
+          </details>
+        )}
         {question && !answered && (
           <p class="jp-ask-hint-note">Saved answers unlock after you answer the question.</p>
         )}

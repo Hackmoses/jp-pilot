@@ -1,7 +1,8 @@
 import type { ComponentChildren } from 'preact'
 import { useEffect, useId, useState } from 'preact/hooks'
-import { renderMathText } from '../../lib/mathText'
+import { hasMatrixNotation, mathToSpeech, renderMathText } from '../../lib/mathText'
 import type { Option, OptionId, Question } from '../../lib/types'
+import { Figure } from '../figures/Figure'
 import { ReadAloudButton } from '../share/ReadAloudButton'
 import { OPTION_LETTERS, getOptionViewState, getQuestionSourceLabel, getResultCopy } from './logic'
 
@@ -67,6 +68,8 @@ export function QuestionCard({
   const correctIdx = options.findIndex((option) => option.id === question.answerId)
   const correctLetter = correctIdx >= 0 ? OPTION_LETTERS[correctIdx] : ''
 
+  const hasVisual = question.figure || hasMatrixNotation(question.stem) ||
+    options.some((option) => option.figure || hasMatrixNotation(option.text))
   const sourceLabel = exam ? null : getQuestionSourceLabel(question)
 
   return (
@@ -125,6 +128,9 @@ export function QuestionCard({
           </div>
         )}
         <p class="jp-stem">{renderMathText(question.stem)}</p>
+        {question.figure && <Figure data={question.figure} />}
+        {hasVisual && (exam || answered) &&
+          <ReadAloudButton questionId={question.id} target="question" options={options} />}
 
         <div class="jp-options" role="group" aria-label="Answer options">
           {options.map((option, index) => {
@@ -138,6 +144,9 @@ export function QuestionCard({
                 class={`jp-option${statusClass}`}
                 disabled={view.disabled}
                 aria-disabled={view.disabled ? 'true' : undefined}
+                aria-label={option.figure
+                  ? [view.letter, mathToSpeech(option.text), option.figure.alt, view.note].filter(Boolean).join('. ')
+                  : undefined}
                 aria-pressed={exam ? pickedId === option.id : undefined}
                 onClick={() => onPick(option.id)}
               >
@@ -145,7 +154,10 @@ export function QuestionCard({
                   <span class="jp-badge" aria-hidden="true">
                     {view.letter}
                   </span>
-                  <span class="jp-option-text">{renderMathText(option.text)}</span>
+                  <span class="jp-option-text">
+                    {renderMathText(option.text)}
+                    {option.figure && <Figure data={option.figure} />}
+                  </span>
                 </span>
                 {view.note && <span class="jp-option-note">{renderMathText(view.note)}</span>}
               </button>
@@ -323,7 +335,10 @@ export function QuestionCard({
               <div key={option.id} class="jp-other-wrong-row">
                 <div class="jp-other-wrong-row-head">
                   <span class="jp-other-wrong-letter" aria-hidden="true">{letter}</span>
-                  <span class="jp-other-wrong-opt">{renderMathText(option.text)}</span>
+                  <span class="jp-other-wrong-opt">
+                    {renderMathText(option.text)}
+                    {option.figure && <Figure data={option.figure} />}
+                  </span>
                 </div>
                 <p class="jp-other-wrong-reason">{renderMathText(option.whyWrong ?? '')}</p>
               </div>

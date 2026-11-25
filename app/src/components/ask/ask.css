@@ -501,3 +501,13 @@ body:has(.jp-ask-sheet[open]) {
   outline: 2px solid var(--brand);
   outline-offset: 1px;
 }
+
+.jp-ask-figures {
+  max-height: 14rem;
+  overflow: auto;
+  padding: var(--space-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+}
+
+.jp-ask-figures > summary { cursor: pointer; }

@@ -419,6 +419,7 @@ export function Session({ attempt, study, review }: SessionProps) {
             {isWide && desktopAskOpen && (
               <AskPanel
                 questionId={question.id}
+                options={options}
                 answered={answered}
                 letterFor={letterFor}
                 onClose={handleCloseDesktopAsk}
@@ -480,6 +481,7 @@ export function Session({ attempt, study, review }: SessionProps) {
       {askOpen && (!isWide || !answered) && (
         <AskSheet
           questionId={question.id}
+          options={options}
           answered={answered}
           letterFor={letterFor}
           onClose={handleCloseSheet}

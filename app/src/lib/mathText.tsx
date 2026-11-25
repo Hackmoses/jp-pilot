@@ -1,6 +1,6 @@
 import type { ComponentChildren } from 'preact'
 
-const MATH_MARKER = /\\(?:frac|sqrt|left|right)|\^\{|_\{/
+const MATH_MARKER = /\\(?:frac|sqrt|left|right|matrix|det)|\^\{|_\{/
 
 export function hasMathNotation(text: string): boolean {
   return MATH_MARKER.test(text)
@@ -17,6 +17,40 @@ function readBalanced(text: string, start: number, open = '{', close = '}'): [st
     }
   }
   return null
+}
+
+export function hasMatrixNotation(text: string): boolean {
+  return /\\(?:matrix|det)\{/.test(text)
+}
+
+function readMatrix(text: string, start: number) {
+  const determinant = text.startsWith('\\det{', start)
+  if (!determinant && !text.startsWith('\\matrix{', start)) return null
+  const arg = readBalanced(text, start + (determinant ? 4 : 7))
+  if (!arg) return null
+
+  const rows: string[][] = [[]]
+  let depth = 0
+  let cellStart = 0
+  for (let i = 0; i < arg[0].length; i++) {
+    const char = arg[0][i]
+    if (char === '{') depth++
+    else if (char === '}') depth--
+    else if (depth === 0 && (char === ',' || char === ';')) {
+      rows[rows.length - 1].push(arg[0].slice(cellStart, i).trim())
+      if (char === ';') rows.push([])
+      cellStart = i + 1
+    }
+  }
+  rows[rows.length - 1].push(arg[0].slice(cellStart).trim())
+  if (![2, 3].includes(rows.length) || rows.some((row) => row.length !== rows.length || row.some((cell) => !cell))) return null
+  return { determinant, rows, end: arg[1] }
+}
+
+function matrixSpeech({ determinant, rows }: NonNullable<ReturnType<typeof readMatrix>>) {
+  const spoken = rows.map((row) => row.map(mathToSpeech).join(', '))
+  return 'the ' + (determinant ? 'determinant' : 'matrix') + ' with rows ' +
+    spoken.slice(0, -1).join('; ') + ' and ' + spoken[spoken.length - 1]
 }
 
 function findMatchingRight(text: string, start: number): number {
@@ -72,6 +106,23 @@ export function renderMathText(
   }
 
   while (i < text.length) {
+    const matrix = text[i] === '\\' ? readMatrix(text, i) : null
+    if (matrix) {
+      flush()
+      out.push(
+        <span class={'jp-math-matrix' + (matrix.determinant ? ' jp-math-matrix--det' : '')}
+          key={'m-' + key++} role="img" aria-label={matrixSpeech(matrix)}>
+          <span class="jp-math-matrix-grid" aria-hidden="true"
+            style={{ gridTemplateColumns: 'repeat(' + matrix.rows.length + ', auto)' }}>
+            {matrix.rows.flat().map((cell, index) =>
+              <span key={index}>{renderMathText(cell, plainFallback)}</span>)}
+          </span>
+        </span>,
+      )
+      i = matrix.end
+      continue
+    }
+
     if (text.startsWith('\\frac{', i)) {
       const num = readBalanced(text, i + 5)
       if (num) {
@@ -170,6 +221,13 @@ export function mathToSpeech(text: string): string {
   let i = 0
 
   while (i < text.length) {
+    const matrix = text[i] === '\\' ? readMatrix(text, i) : null
+    if (matrix) {
+      out += ' ' + matrixSpeech(matrix) + ' '
+      i = matrix.end
+      continue
+    }
+
     if (text.startsWith('\\frac{', i)) {
       const num = readBalanced(text, i + 5)
       if (num) {
