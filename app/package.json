@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/sync-data.mjs && vite",
-    "build": "node scripts/sync-data.mjs && tsc --noEmit && vite build",
+    "dev": "node scripts/sync-data.mjs && node src/components/player/generate-audio-index.mjs && vite",
+    "build": "node scripts/sync-data.mjs && node src/components/player/generate-audio-index.mjs && tsc --noEmit && vite build",
     "preview": "vite preview",
     "sync-data": "node scripts/sync-data.mjs",
     "validate": "node scripts/validate-data.mjs",

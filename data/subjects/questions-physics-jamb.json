@@ -1,0 +1,1897 @@
+{
+  "version": 1,
+  "subject": "physics",
+  "count": 30,
+  "questions": [
+    {
+      "id": "phys-jamb-0001",
+      "subject": "physics",
+      "topic": "Motion (relative velocity)",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Two cars move in the same direction with speeds of 100 km h⁻¹ and 130 km h⁻¹. What is the velocity of the faster car as measured by an observer in the slower car?",
+      "options": [
+        {
+          "id": "a",
+          "text": "130 km h⁻¹",
+          "why": "This is the faster car's speed relative to the ground, not relative to the slower car.",
+          "whyWrong": "130 km h⁻¹ is measured from the roadside. The observer is moving at 100 km h⁻¹ in the same direction, so subtract: 130 − 100 = 30 km h⁻¹."
+        },
+        {
+          "id": "b",
+          "text": "230 km h⁻¹",
+          "why": "This adds the speeds, which is only right when the cars move towards each other.",
+          "whyWrong": "230 km h⁻¹ adds the two speeds. You add only when the cars move in opposite directions. Here they move the same way, so subtract."
+        },
+        {
+          "id": "c",
+          "text": "200 km h⁻¹",
+          "why": "This matches no correct combination of the two speeds.",
+          "whyWrong": "200 km h⁻¹ does not come from adding or subtracting 100 and 130. Same direction means subtract: 30 km h⁻¹."
+        },
+        {
+          "id": "d",
+          "text": "30 km h⁻¹",
+          "why": "Same direction, so the relative velocity is the difference: 130 − 100 = 30 km h⁻¹.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Same direction means you subtract the speeds.",
+      "explanation": "When two bodies move in the same direction, the velocity of one as seen from the other is the difference of their velocities: 130 − 100 = 30 km h⁻¹.",
+      "trap": "230 km h⁻¹ catches students who add the speeds. Adding is only for bodies moving in opposite directions.",
+      "mnemonic": "Same way, subtract. Opposite way, add.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "If you drive at 100 and a friend passes you at 130, she only pulls away from you at 30 every hour."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "230 km h⁻¹ adds the two speeds. You add only when the cars move in opposite directions. Here they move the same way, so subtract."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0001",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 2,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0002",
+      "subject": "physics",
+      "topic": "Motion (free fall)",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A stone and a feather are dropped from the same height above the earth's surface. Ignoring air resistance, which of the following is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The stone and the feather will both reach the ground at the same time.",
+          "why": "Without air resistance, every body falls with the same acceleration, g.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The stone will reach the ground first.",
+          "why": "This is what we see in air, where air resistance slows the feather.",
+          "whyWrong": "In everyday life the stone lands first only because air slows the feather. The question removes air resistance, so both fall with the same acceleration g."
+        },
+        {
+          "id": "c",
+          "text": "The feather will reach the ground first.",
+          "why": "Nothing makes the lighter body fall faster.",
+          "whyWrong": "A feather has no advantage when falling. Without air resistance both accelerate at g and land together."
+        },
+        {
+          "id": "d",
+          "text": "The feather will be blown away by the wind while the stone drops steadily.",
+          "why": "Wind is air, and the question says to ignore air effects.",
+          "whyWrong": "Wind is moving air. The question says to ignore air resistance, so there is no wind effect at all."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Mass does not appear in the formula for the acceleration of free fall.",
+      "explanation": "In free fall the only force is weight, and acceleration = weight ÷ mass = g for every body. So the stone and the feather fall together. Air resistance is what normally slows the feather.",
+      "trap": "\"The stone lands first\" is what you see in real life. The question says to ignore air resistance, so heavier does not mean faster.",
+      "mnemonic": "No air, no race: everything falls at g.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "On the moon, with no air, a hammer and a feather dropped together land together."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "In everyday life the stone lands first only because air slows the feather. The question removes air resistance, so both fall with the same acceleration g."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0002",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 4,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0003",
+      "subject": "physics",
+      "topic": "Motion (acceleration)",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A car moves with an initial velocity of 25 m s⁻¹ and reaches a velocity of 45 m s⁻¹ in 10 s. What is the acceleration of the car?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 m s⁻²",
+          "why": "This divides only one of the velocities by the time.",
+          "whyWrong": "5 m s⁻² comes from dividing 45 or 25 by roughly 10 incorrectly. Acceleration uses the change in velocity: (45 − 25) ÷ 10 = 2 m s⁻²."
+        },
+        {
+          "id": "b",
+          "text": "25 m s⁻²",
+          "why": "This is the initial velocity, not an acceleration.",
+          "whyWrong": "25 is the starting velocity in m s⁻¹. Acceleration is the change in velocity per second: (45 − 25) ÷ 10 = 2 m s⁻²."
+        },
+        {
+          "id": "c",
+          "text": "20 m s⁻²",
+          "why": "This is the change in velocity, but it was not divided by the time.",
+          "whyWrong": "20 m s⁻¹ is the change in velocity. You still need to divide by the 10 s taken: 20 ÷ 10 = 2 m s⁻²."
+        },
+        {
+          "id": "d",
+          "text": "2 m s⁻²",
+          "why": "a = (v − u) ÷ t = (45 − 25) ÷ 10 = 2 m s⁻².",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Acceleration is change in velocity divided by time.",
+      "explanation": "Acceleration a = (v − u) ÷ t = (45 − 25) ÷ 10 = 20 ÷ 10 = 2 m s⁻².",
+      "trap": "20 m s⁻² is the change in velocity before dividing by time. Always finish by dividing by t.",
+      "mnemonic": "Acceleration = change ÷ time.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "If your speed grows by 20 over 10 seconds, it grows by 2 every second."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "20 m s⁻¹ is the change in velocity. You still need to divide by the 10 s taken: 20 ÷ 10 = 2 m s⁻²."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0003",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 5,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0004",
+      "subject": "physics",
+      "topic": "Gravitational field (mass and weight)",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "An object is weighed at different locations on the earth. What will be the right observation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both the mass and the weight vary.",
+          "why": "Mass is the amount of matter, which does not change with place.",
+          "whyWrong": "Mass is the quantity of matter in the object and stays the same everywhere. Only weight, which depends on g, changes."
+        },
+        {
+          "id": "b",
+          "text": "The weight is constant while the mass varies.",
+          "why": "This swaps the two quantities.",
+          "whyWrong": "This reverses the truth. Mass stays the same; weight changes because g is slightly different at different places on the earth."
+        },
+        {
+          "id": "c",
+          "text": "The mass is constant while the weight varies.",
+          "why": "Mass never changes; weight W = mg changes because g varies with location.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Both the mass and the weight are constant.",
+          "why": "g, and so weight, varies with latitude and height.",
+          "whyWrong": "g is larger at the poles and smaller at the equator and on high ground, so weight W = mg changes even though mass does not."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Which of the two depends on g?",
+      "explanation": "Mass is the amount of matter in a body and does not change with location. Weight is the force of gravity, W = mg, and g varies slightly over the earth's surface, so weight varies.",
+      "trap": "Option B swaps mass and weight. Students who think \"mass\" and \"weight\" mean the same thing fall for it.",
+      "mnemonic": "Mass stays, weight sways.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Your body does not change when you travel, but a sensitive spring balance would read slightly differently in Lagos and at the North Pole."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "This reverses the truth. Mass stays the same; weight changes because g is slightly different at different places on the earth."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0004",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 6,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0005",
+      "subject": "physics",
+      "topic": "Work, energy and power",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A bob of weight 0.1 N hangs from a massless string of length 50 cm. A variable horizontal force which increases from zero is applied to pull the bob slowly until the string makes an angle of 60° with the vertical. The work done is",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.250 J",
+          "why": "This uses the height in metres but forgets to multiply by the weight.",
+          "whyWrong": "0.25 m is the height the bob rises, not the work. Work done = weight × height = 0.1 × 0.25 = 0.025 J."
+        },
+        {
+          "id": "b",
+          "text": "0.025 J",
+          "why": "Work = gain in potential energy = 0.1 × 0.5(1 − cos 60°) = 0.1 × 0.25 = 0.025 J.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "0.050 J",
+          "why": "This uses the full string length instead of the rise in height.",
+          "whyWrong": "0.050 J uses 0.5 m, the string length, as the height. The bob only rises L(1 − cos 60°) = 0.25 m."
+        },
+        {
+          "id": "d",
+          "text": "0.500 J",
+          "why": "This uses the string length in centimetres or skips the weight.",
+          "whyWrong": "0.500 J comes from mixing units or skipping steps. The bob rises 0.25 m, so work = 0.1 × 0.25 = 0.025 J."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "How high does the bob rise when the string swings to 60°?",
+      "explanation": "Pulling slowly means the work done equals the gain in potential energy. The bob rises h = L(1 − cos θ) = 0.5 × (1 − 0.5) = 0.25 m. Work = weight × h = 0.1 × 0.25 = 0.025 J.",
+      "trap": "0.050 J catches students who take the whole string length as the height. The bob only rises L(1 − cos θ).",
+      "mnemonic": "Rise = L(1 − cos θ).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A swing seat pulled back to 60° rises only half its rope length, because cos 60° is one half."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "0.050 J uses 0.5 m, the string length, as the height. The bob only rises L(1 − cos 60°) = 0.25 m."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0005",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0006",
+      "subject": "physics",
+      "topic": "Friction",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The surfaces of conveyor belts are made rough so as to",
+      "options": [
+        {
+          "id": "a",
+          "text": "prevent the load from slipping",
+          "why": "Rough surfaces increase friction, which grips the load.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "make them stronger",
+          "why": "Roughness affects grip, not strength.",
+          "whyWrong": "Strength depends on the belt material, not on how rough its surface is. Roughness is about friction."
+        },
+        {
+          "id": "c",
+          "text": "enable them to carry more load",
+          "why": "The load a belt carries depends on its strength and motor, not its surface.",
+          "whyWrong": "Carrying capacity depends on the belt's strength and the motor. Roughness only increases friction so the load does not slide."
+        },
+        {
+          "id": "d",
+          "text": "protect them while carrying load",
+          "why": "Roughness does not protect the belt.",
+          "whyWrong": "A rough surface does not protect the belt. Its job is to increase friction so the load does not slip."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Think about what friction does between two surfaces.",
+      "explanation": "Friction opposes sliding between surfaces in contact. Making the belt rough increases friction between belt and load, so the load moves with the belt instead of slipping.",
+      "trap": "\"Carry more load\" sounds sensible, but surface roughness is about grip, not capacity.",
+      "mnemonic": "Rough means grip; grip stops slip.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Shoe soles are ridged for the same reason a conveyor belt is rough: to stop slipping."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Carrying capacity depends on the belt's strength and the motor. Roughness only increases friction so the load does not slide."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0006",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0007",
+      "subject": "physics",
+      "topic": "Simple machines",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A machine of velocity ratio 6 requires an effort of 400 N to raise a load of 800 N through 1 m. Find the efficiency of the machine.",
+      "options": [
+        {
+          "id": "a",
+          "text": "50%",
+          "why": "This uses the wrong ratio.",
+          "whyWrong": "50% would need MA = 3. Here MA = 800 ÷ 400 = 2, and efficiency = 2 ÷ 6 × 100% = 33.3%."
+        },
+        {
+          "id": "b",
+          "text": "22.2%",
+          "why": "This does not come from MA ÷ VR.",
+          "whyWrong": "22.2% does not follow from the figures. Efficiency = MA ÷ VR × 100% = 2 ÷ 6 × 100% = 33.3%."
+        },
+        {
+          "id": "c",
+          "text": "33.3%",
+          "why": "MA = 800 ÷ 400 = 2; efficiency = MA ÷ VR × 100% = 2 ÷ 6 × 100% = 33.3%.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "55.6%",
+          "why": "This does not come from MA ÷ VR.",
+          "whyWrong": "55.6% does not follow from the figures. MA = 2 and VR = 6, so efficiency = 33.3%."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "First find the mechanical advantage.",
+      "explanation": "Mechanical advantage MA = load ÷ effort = 800 ÷ 400 = 2. Efficiency = MA ÷ VR × 100% = 2 ÷ 6 × 100% = 33.3%.",
+      "trap": "50% catches students who divide effort by load, or use VR = 4. Always do MA ÷ VR.",
+      "mnemonic": "Efficiency = MA over VR.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A machine that is supposed to multiply your force by 6 but only multiplies it by 2 is working at one-third efficiency."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "50% would need MA = 3. Here MA = 800 ÷ 400 = 2, and efficiency = 2 ÷ 6 × 100% = 33.3%."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0007",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 10,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0008",
+      "subject": "physics",
+      "topic": "Elasticity",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A wire 30 cm long is extended to 30.5 cm by a force of 300 N. Find the strain energy of the wire.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7.50 J",
+          "why": "The extension was taken as 5 cm instead of 0.5 cm.",
+          "whyWrong": "7.50 J uses an extension of 0.05 m. The wire stretches from 30 cm to 30.5 cm, which is 0.5 cm = 0.005 m. Energy = ½ × 300 × 0.005 = 0.75 J."
+        },
+        {
+          "id": "b",
+          "text": "750.00 J",
+          "why": "The extension was used in centimetres instead of metres.",
+          "whyWrong": "750 J comes from using the extension in cm without converting, and other slips. Convert 0.5 cm to 0.005 m first."
+        },
+        {
+          "id": "c",
+          "text": "75.00 J",
+          "why": "The extension was used in centimetres and halved.",
+          "whyWrong": "75 J uses 0.5 cm as if it were 0.5 m. Convert to metres: 0.005 m, then energy = ½ × 300 × 0.005 = 0.75 J."
+        },
+        {
+          "id": "d",
+          "text": "0.75 J",
+          "why": "Strain energy = ½Fe = ½ × 300 × 0.005 = 0.75 J.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Extension is the change in length. Convert it to metres.",
+      "explanation": "Extension e = 30.5 − 30 = 0.5 cm = 0.005 m. Energy stored in a stretched wire = ½ × force × extension = ½ × 300 × 0.005 = 0.75 J.",
+      "trap": "75 J catches students who forget to convert centimetres to metres.",
+      "mnemonic": "Half F times e, in metres.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Stretching a catapult stores energy, and the stretch must always be measured in metres."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "75 J uses 0.5 cm as if it were 0.5 m. Convert to metres: 0.005 m, then energy = ½ × 300 × 0.005 = 0.75 J."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0008",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 11,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0009",
+      "subject": "physics",
+      "topic": "Pressure (hydraulic press)",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "In a hydraulic press, the pump piston exerts a pressure of 100 Pa on the liquid. What force is exerted on the second piston of cross-sectional area 3 m²?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 N",
+          "why": "This does not follow from F = PA.",
+          "whyWrong": "200 N does not come from the formula. Pressure is passed on equally, so F = P × A = 100 × 3 = 300 N."
+        },
+        {
+          "id": "b",
+          "text": "100 N",
+          "why": "This is the pressure, not the force.",
+          "whyWrong": "100 is the pressure in pascals. Force = pressure × area = 100 × 3 = 300 N."
+        },
+        {
+          "id": "c",
+          "text": "150 N",
+          "why": "This does not follow from F = PA.",
+          "whyWrong": "150 N does not come from the formula. F = 100 × 3 = 300 N."
+        },
+        {
+          "id": "d",
+          "text": "300 N",
+          "why": "Pressure is transmitted equally: F = P × A = 100 × 3 = 300 N.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Pascal's principle: the same pressure acts everywhere in the liquid.",
+      "explanation": "By Pascal's principle the pressure is transmitted equally through the liquid. Force on the second piston F = P × A = 100 Pa × 3 m² = 300 N.",
+      "trap": "100 N catches students who copy the pressure as the force. Pressure must be multiplied by the area.",
+      "mnemonic": "Force = pressure × area.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A car jack lifts a car because the same pressure acts on a much bigger piston."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "100 is the pressure in pascals. Force = pressure × area = 100 × 3 = 300 N."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0009",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0010",
+      "subject": "physics",
+      "topic": "Liquids at rest (density and relative density)",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The accurate measurement of the relative density of a substance in powdered form is done with a beam balance and",
+      "options": [
+        {
+          "id": "a",
+          "text": "a eureka can",
+          "why": "A eureka can measures the volume of irregular solids, not powders.",
+          "whyWrong": "A eureka can works for solid lumps that displace water. A powder is weighed in a density bottle instead."
+        },
+        {
+          "id": "b",
+          "text": "a burette",
+          "why": "A burette delivers measured volumes of liquid in titration.",
+          "whyWrong": "A burette is for delivering liquid volumes in titration, not for finding the density of a powder."
+        },
+        {
+          "id": "c",
+          "text": "a pipette",
+          "why": "A pipette transfers a fixed volume of liquid.",
+          "whyWrong": "A pipette transfers a fixed volume of liquid. It cannot hold a powder for weighing."
+        },
+        {
+          "id": "d",
+          "text": "a density bottle",
+          "why": "A density bottle holds a fixed volume, so a powder can be weighed with and without water.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Which container has a fixed, exact volume?",
+      "explanation": "A density (specific gravity) bottle holds an exact fixed volume. Weighing it empty, with the powder, with powder and water, and with water only lets you find the relative density of a powder accurately.",
+      "trap": "The eureka can is the familiar volume tool, but it only works for solid lumps, not powders.",
+      "mnemonic": "Powder? Use the bottle.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "You cannot drop flour into a eureka can and catch the overflow, so you use a bottle of fixed volume instead."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A eureka can works for solid lumps that displace water. A powder is weighed in a density bottle instead."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0010",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0011",
+      "subject": "physics",
+      "topic": "Thermal expansion",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Two metals P and Q of lengths l₁ and l₂ are heated through the same temperature difference. If the ratio of the linear expansivities of P to Q is 2:3 and the ratio of their lengths is 3:4, what is the ratio of the increase in lengths of P to Q?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5:7",
+          "why": "This adds the parts of the ratios.",
+          "whyWrong": "5:7 adds 2 + 3 and 3 + 4. Expansion is a product, ΔL = αLΔθ, so multiply: (2 × 3) : (3 × 4) = 1:2."
+        },
+        {
+          "id": "b",
+          "text": "2:1",
+          "why": "This is the correct ratio turned upside down.",
+          "whyWrong": "2:1 inverts the answer. ΔL_P : ΔL_Q = (2 × 3) : (3 × 4) = 6 : 12 = 1:2."
+        },
+        {
+          "id": "c",
+          "text": "1:2",
+          "why": "ΔL = αLΔθ, so the ratio is (2 × 3) : (3 × 4) = 6 : 12 = 1:2.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "7:5",
+          "why": "This adds the parts of the ratios and inverts them.",
+          "whyWrong": "7:5 adds the ratio parts and flips them. Multiply instead: (2 × 3) : (3 × 4) = 1:2."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Increase in length = expansivity × original length × temperature change.",
+      "explanation": "Increase in length ΔL = αLΔθ. With the same Δθ, ΔL_P : ΔL_Q = (α_P L_P) : (α_Q L_Q) = (2 × 3) : (3 × 4) = 6 : 12 = 1:2.",
+      "trap": "2:1 catches students who multiply correctly but write the ratio the wrong way round.",
+      "mnemonic": "Expansion multiplies: α times L.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A longer rod of the same metal grows more, and a more expansive metal grows more, so you multiply both effects."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "2:1 inverts the answer. ΔL_P : ΔL_Q = (2 × 3) : (3 × 4) = 6 : 12 = 1:2."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0011",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 16,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0012",
+      "subject": "physics",
+      "topic": "Heat transfer (radiation)",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Heat is radiated by all hot objects in the form of",
+      "options": [
+        {
+          "id": "a",
+          "text": "light energy",
+          "why": "Only very hot objects glow with visible light.",
+          "whyWrong": "Only very hot objects give out visible light. All warm and hot objects give out infrared radiation."
+        },
+        {
+          "id": "b",
+          "text": "solar energy",
+          "why": "Solar energy is energy from the sun specifically.",
+          "whyWrong": "Solar energy means energy from the sun. A hot iron or a human body radiates heat too, as infrared."
+        },
+        {
+          "id": "c",
+          "text": "infrared rays",
+          "why": "All hot objects emit infrared electromagnetic radiation.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "x-rays",
+          "why": "X-rays need very high energies, far beyond ordinary hot objects.",
+          "whyWrong": "X-rays are produced by high-energy processes, not by ordinary hot objects. Heat radiation is infrared."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "It is part of the electromagnetic spectrum just beyond red light.",
+      "explanation": "Radiation is heat transfer by electromagnetic waves. All hot objects emit infrared radiation, which needs no medium.",
+      "trap": "\"Light energy\" is tempting because very hot things glow, but most heat radiation is invisible infrared.",
+      "mnemonic": "Heat rays are infrared rays.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "You feel a hot pressing iron from a distance even though it does not glow. That is infrared."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Only very hot objects give out visible light. All warm and hot objects give out infrared radiation."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0012",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 18,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0013",
+      "subject": "physics",
+      "topic": "Thermal expansion (anomalous expansion of water)",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A container is filled with ice to the brim. What happens to the level of water when the ice completely melts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The water in the container overflows.",
+          "why": "Ice shrinks in volume when it melts, so it cannot overflow.",
+          "whyWrong": "Water takes up less space than the same mass of ice, so melting ice in a full container cannot overflow."
+        },
+        {
+          "id": "b",
+          "text": "The level of water drops.",
+          "why": "Ice is less dense than water, so the same mass of water takes up less volume.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The level of water remains unchanged.",
+          "why": "That happens for ice floating in water, not for a container filled with ice.",
+          "whyWrong": "\"Unchanged\" is true for ice floating in water. Here the container holds only ice, which shrinks as it melts."
+        },
+        {
+          "id": "d",
+          "text": "The level of water goes up.",
+          "why": "Melting reduces the volume.",
+          "whyWrong": "Water is denser than ice, so the same mass occupies less volume. The level falls."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Which is denser, ice or water?",
+      "explanation": "Water expands when it freezes, so ice is less dense than water. When the ice in a full container melts, the same mass of water occupies a smaller volume, so the level drops.",
+      "trap": "\"Remains unchanged\" is the answer for floating ice in a glass of water. This container holds only ice.",
+      "mnemonic": "Ice is bigger than its water.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A bottle of water left in the freezer can crack, because water grows when it freezes and shrinks back when it melts."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "\"Unchanged\" is true for ice floating in water. Here the container holds only ice, which shrinks as it melts."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0013",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 19,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0014",
+      "subject": "physics",
+      "topic": "Vapours and humidity",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The small droplets of water that form on the grass in the early hours of the morning are",
+      "options": [
+        {
+          "id": "a",
+          "text": "dew",
+          "why": "Water vapour condenses on cool grass when the air cools to its dew point.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "mist",
+          "why": "Mist is tiny droplets suspended in the air, not on surfaces.",
+          "whyWrong": "Mist forms in the air itself. Droplets that settle on grass and leaves are dew."
+        },
+        {
+          "id": "c",
+          "text": "fog",
+          "why": "Fog is thick mist in the air, near the ground.",
+          "whyWrong": "Fog is a cloud of droplets hanging in the air. Water collected on grass is dew."
+        },
+        {
+          "id": "d",
+          "text": "hail",
+          "why": "Hail is balls of ice falling from clouds.",
+          "whyWrong": "Hail is ice falling from storm clouds. Morning droplets on grass are dew."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "They form on surfaces, not in the air.",
+      "explanation": "At night the grass cools. When the air in contact with it cools below its dew point, water vapour condenses into droplets on the grass. This is dew.",
+      "trap": "Mist and fog are also water droplets, but they hang in the air. Dew forms on surfaces.",
+      "mnemonic": "Dew is on, mist is in.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The water on a cold bottle taken out of the fridge forms the same way as dew on grass."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Mist forms in the air itself. Droplets that settle on grass and leaves are dew."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0014",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 20,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0015",
+      "subject": "physics",
+      "topic": "Vapours (saturated vapour)",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A vapour is said to be saturated when",
+      "options": [
+        {
+          "id": "a",
+          "text": "a dynamic equilibrium exists such that more molecules return to the liquid than leave it",
+          "why": "In equilibrium the two rates are equal, not unequal.",
+          "whyWrong": "If more molecules returned than left, the vapour would be condensing, not in equilibrium. Saturation means the rates are equal."
+        },
+        {
+          "id": "b",
+          "text": "the vapour pressure is atmospheric",
+          "why": "That is the condition for boiling, not saturation.",
+          "whyWrong": "Vapour pressure equal to atmospheric pressure is the boiling condition. A vapour can be saturated at any temperature."
+        },
+        {
+          "id": "c",
+          "text": "the temperature of the vapour varies",
+          "why": "Saturation is not about changing temperature.",
+          "whyWrong": "Saturation is about a balance of molecules leaving and returning, not about temperature changing."
+        },
+        {
+          "id": "d",
+          "text": "a dynamic equilibrium exists between the liquid molecules and the vapour molecules",
+          "why": "Molecules leave and return at equal rates, so the vapour holds the most it can.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Saturated means balanced: as many leave as return.",
+      "explanation": "A vapour is saturated when, in a closed space above the liquid, molecules leave the liquid and return to it at the same rate. This dynamic equilibrium means the vapour holds the maximum amount at that temperature.",
+      "trap": "Option A also says \"dynamic equilibrium\" but then describes unequal rates, which is not equilibrium at all.",
+      "mnemonic": "Saturated = balanced traffic.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A crowded hall where people enter and leave at the same rate stays equally full. That is a saturated vapour."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "If more molecules returned than left, the vapour would be condensing, not in equilibrium. Saturation means the rates are equal."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0015",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0016",
+      "subject": "physics",
+      "topic": "Waves",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A wave travelling with a velocity of 420 m s⁻¹ has a wavelength of 42 m. What is its period?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.0 s",
+          "why": "This is not λ ÷ v.",
+          "whyWrong": "1.0 s does not follow from the figures. Period T = λ ÷ v = 42 ÷ 420 = 0.1 s."
+        },
+        {
+          "id": "b",
+          "text": "0.1 s",
+          "why": "T = λ ÷ v = 42 ÷ 420 = 0.1 s.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "0.5 s",
+          "why": "This is not λ ÷ v.",
+          "whyWrong": "0.5 s does not follow from the figures. T = 42 ÷ 420 = 0.1 s."
+        },
+        {
+          "id": "d",
+          "text": "1.2 s",
+          "why": "This is not λ ÷ v.",
+          "whyWrong": "1.2 s does not follow from the figures. T = 42 ÷ 420 = 0.1 s."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the frequency first, or use T = λ ÷ v directly.",
+      "explanation": "v = fλ, so f = v ÷ λ = 420 ÷ 42 = 10 Hz. Period T = 1 ÷ f = 0.1 s, which is the same as T = λ ÷ v = 42 ÷ 420.",
+      "trap": "1.0 s catches students who mix up which number to divide by which.",
+      "mnemonic": "T = λ over v.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "If 10 waves pass you every second, each one takes a tenth of a second."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "1.0 s does not follow from the figures. Period T = λ ÷ v = 42 ÷ 420 = 0.1 s."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0016",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 24,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0017",
+      "subject": "physics",
+      "topic": "Propagation of sound",
+      "type": "calculation",
+      "difficulty": 3,
+      "stem": "The velocity of sound in air at 16 °C is 340 m s⁻¹. What will it be when the pressure is doubled and the temperature is raised to 127 °C?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,000 m s⁻¹",
+          "why": "This uses Celsius temperatures and ignores the square root.",
+          "whyWrong": "4,000 m s⁻¹ uses °C instead of kelvin and drops the square root. v ∝ √T in kelvin."
+        },
+        {
+          "id": "b",
+          "text": "160,000 m s⁻¹",
+          "why": "This multiplies instead of using a square-root ratio.",
+          "whyWrong": "This number is far too large. Speed of sound changes with √T, and pressure has no effect."
+        },
+        {
+          "id": "c",
+          "text": "8,000 m s⁻¹",
+          "why": "This doubles for the pressure and uses Celsius.",
+          "whyWrong": "Pressure does not change the speed of sound in a gas, and temperatures must be in kelvin."
+        },
+        {
+          "id": "d",
+          "text": "400 m s⁻¹",
+          "why": "v ∝ √T (kelvin): 340 × √(400 ÷ 289) = 340 × 20/17 = 400 m s⁻¹. Pressure has no effect.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Pressure does not affect the speed of sound. Temperature does, in kelvin.",
+      "explanation": "The speed of sound in a gas is proportional to the square root of its absolute temperature and does not depend on pressure. 16 °C = 289 K, 127 °C = 400 K. v = 340 × √(400 ÷ 289) = 340 × 20 ÷ 17 = 400 m s⁻¹.",
+      "trap": "Doubling the pressure is the distraction. Pressure has no effect on the speed of sound in a gas.",
+      "mnemonic": "Sound speed: root T in kelvin, pressure ignored.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Sound travels a little faster on a hot afternoon than on a cold morning, whatever the air pressure."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Pressure does not change the speed of sound in a gas, and temperatures must be in kelvin."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0017",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 27,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0018",
+      "subject": "physics",
+      "topic": "Optical instruments (camera and eye)",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In comparing the camera and the human eye, the film of the camera functions as the",
+      "options": [
+        {
+          "id": "a",
+          "text": "iris",
+          "why": "The iris controls how much light enters, like the diaphragm.",
+          "whyWrong": "The iris adjusts the size of the opening, like the camera's diaphragm. The image forms on the retina."
+        },
+        {
+          "id": "b",
+          "text": "pupil",
+          "why": "The pupil is the opening, like the aperture.",
+          "whyWrong": "The pupil is the hole that lets light in, like the aperture. The image is recorded on the retina."
+        },
+        {
+          "id": "c",
+          "text": "cornea",
+          "why": "The cornea helps focus light, like a lens cover.",
+          "whyWrong": "The cornea helps bend light into the eye. The image is formed on the retina, like the film."
+        },
+        {
+          "id": "d",
+          "text": "retina",
+          "why": "The image is formed on the retina, just as it is formed on the film.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Where is the image formed in each?",
+      "explanation": "In a camera the image is formed and recorded on the film. In the eye the image is formed on the retina, so the film corresponds to the retina.",
+      "trap": "Iris and pupil are camera-like parts too, but they control light, not record the image.",
+      "mnemonic": "Film = retina: where the picture lands.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The retina is the eye's screen, just as the film is the camera's."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The iris adjusts the size of the opening, like the camera's diaphragm. The image forms on the retina."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0018",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0019",
+      "subject": "physics",
+      "topic": "Reflection (curved mirrors)",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An object 4 cm high is placed 15 cm from a concave mirror of focal length 5 cm. The size of the image is",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 cm",
+          "why": "This does not follow from the mirror formula.",
+          "whyWrong": "3 cm does not follow. 1/v = 1/5 − 1/15, so v = 7.5 cm, magnification = 7.5 ÷ 15 = 0.5, image = 2 cm."
+        },
+        {
+          "id": "b",
+          "text": "5 cm",
+          "why": "This confuses the focal length with the image size.",
+          "whyWrong": "5 cm is the focal length, not the image size. The image is 4 × 0.5 = 2 cm."
+        },
+        {
+          "id": "c",
+          "text": "4 cm",
+          "why": "This assumes the image is the same size as the object.",
+          "whyWrong": "The image is the same size only when the object is at the centre of curvature (10 cm here). At 15 cm the image is smaller: 2 cm."
+        },
+        {
+          "id": "d",
+          "text": "2 cm",
+          "why": "1/v = 1/5 − 1/15 gives v = 7.5 cm; m = 7.5 ÷ 15 = 0.5; image = 4 × 0.5 = 2 cm.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Find the image distance first, then the magnification.",
+      "explanation": "Mirror formula: 1/f = 1/u + 1/v, so 1/v = 1/5 − 1/15 = 2/15 and v = 7.5 cm. Magnification m = v ÷ u = 7.5 ÷ 15 = 0.5. Image height = 0.5 × 4 = 2 cm.",
+      "trap": "4 cm catches students who assume mirror images are always the same size as the object.",
+      "mnemonic": "m = v over u, then multiply by the object height.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Beyond the centre of curvature a concave mirror makes a smaller, upside-down image."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The image is the same size only when the object is at the centre of curvature (10 cm here). At 15 cm the image is smaller: 2 cm."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0019",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0020",
+      "subject": "physics",
+      "topic": "Optical instruments (defects of vision)",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is used for the correction of short-sightedness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Concave lens",
+          "why": "A diverging lens spreads the rays so they focus on the retina.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Concave mirror",
+          "why": "Mirrors are not used in spectacles.",
+          "whyWrong": "Spectacles use lenses, not mirrors. Short sight is corrected with a diverging (concave) lens."
+        },
+        {
+          "id": "c",
+          "text": "Convex mirror",
+          "why": "Mirrors are not used in spectacles.",
+          "whyWrong": "Spectacles use lenses, not mirrors. A concave lens corrects short sight."
+        },
+        {
+          "id": "d",
+          "text": "Convex lens",
+          "why": "A converging lens corrects long-sightedness, not short-sightedness.",
+          "whyWrong": "A convex lens corrects long sight. Short-sighted eyes focus too strongly, so they need a diverging concave lens."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "A short-sighted eye focuses light in front of the retina. Should the lens spread or gather light?",
+      "explanation": "In short sight, distant objects focus in front of the retina because the eye converges light too strongly. A concave (diverging) lens spreads the rays slightly so they focus on the retina.",
+      "trap": "Convex lens is the trap. It corrects long sight, the opposite defect.",
+      "mnemonic": "Short sight, concave; long sight, convex.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A short-sighted student squints at the board because the image lands too early, before the retina."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "A convex lens corrects long sight. Short-sighted eyes focus too strongly, so they need a diverging concave lens."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0020",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0021",
+      "subject": "physics",
+      "topic": "Dispersion of light",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Dispersion occurs when white light passes through a glass prism because of the",
+      "options": [
+        {
+          "id": "a",
+          "text": "different speeds of the colours in the glass",
+          "why": "Each colour travels at a different speed in glass, so each bends by a different amount.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "high density of the glass",
+          "why": "Density alone does not split the colours.",
+          "whyWrong": "Density does not separate colours. Colours separate because each travels at a different speed in glass and refracts by a different amount."
+        },
+        {
+          "id": "c",
+          "text": "defects in the glass",
+          "why": "A perfect prism still disperses light.",
+          "whyWrong": "Even flawless glass disperses light. It happens because each colour has a different speed in glass."
+        },
+        {
+          "id": "d",
+          "text": "different hidden colours in the glass",
+          "why": "The colours come from the white light, not from the glass.",
+          "whyWrong": "The glass does not contain colours. White light is already a mixture of colours, which the prism separates."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Refraction depends on how much the light slows down.",
+      "explanation": "White light is a mixture of colours. In glass, each colour travels at a slightly different speed, so each is refracted by a different amount and the colours spread out. Violet slows most and bends most.",
+      "trap": "\"Hidden colours in the glass\" sounds plausible, but the colours were in the white light all along.",
+      "mnemonic": "Different speeds, different bends.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A rainbow is dispersion in raindrops: each colour of sunlight bends by a different amount."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "The glass does not contain colours. White light is already a mixture of colours, which the prism separates."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0021",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0022",
+      "subject": "physics",
+      "topic": "Electrostatics (gold-leaf electroscope)",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "When a positively charged rod is brought near the cap of a positively charged electroscope, the divergence of the leaves will",
+      "options": [
+        {
+          "id": "a",
+          "text": "converge",
+          "why": "The leaves would close only if the rod had the opposite charge.",
+          "whyWrong": "Leaves close when an opposite charge is brought near. Like charges push more charge down to the leaves, so they open wider."
+        },
+        {
+          "id": "b",
+          "text": "remain constant",
+          "why": "The rod's charge does affect the leaves.",
+          "whyWrong": "The positive rod repels positive charge down onto the leaves, so the divergence changes. It increases."
+        },
+        {
+          "id": "c",
+          "text": "diverge more",
+          "why": "Like charges repel more positive charge down to the leaves, so they open wider.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "be induced",
+          "why": "\"Be induced\" does not describe how the leaves move.",
+          "whyWrong": "Induction is the process, not what the leaves do. The leaves diverge more because like charges repel."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Like charges repel. Where does the extra positive charge go?",
+      "explanation": "The positive rod repels positive charge from the cap down to the leaves. With more positive charge on the leaves, they repel each other more and diverge further. This is how an electroscope shows a like charge.",
+      "trap": "\"Converge\" is the result for an opposite charge. Check whether the charges are the same or different.",
+      "mnemonic": "Same charge, leaves open more.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Bringing a like charge near is like adding more people who dislike each other to a small room: they spread apart."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Leaves close when an opposite charge is brought near. Like charges push more charge down to the leaves, so they open wider."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0022",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 33,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0023",
+      "subject": "physics",
+      "topic": "Capacitors",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Three capacitors of capacitance 2 μF, 4 μF and 8 μF are connected in parallel and a p.d. of 6 V is maintained across each capacitor. The total energy stored is",
+      "options": [
+        {
+          "id": "a",
+          "text": "6.90 × 10⁻⁶ J",
+          "why": "This does not follow from ½CV².",
+          "whyWrong": "Energy = ½CV² = ½ × 14 × 10⁻⁶ × 36 = 2.52 × 10⁻⁴ J. 6.90 does not come from these figures."
+        },
+        {
+          "id": "b",
+          "text": "6.90 × 10⁻⁴ J",
+          "why": "This does not follow from ½CV².",
+          "whyWrong": "Energy = ½ × 14 × 10⁻⁶ × 6² = 2.52 × 10⁻⁴ J. 6.90 does not come from these figures."
+        },
+        {
+          "id": "c",
+          "text": "2.52 × 10⁻⁴ J",
+          "why": "Parallel: C = 14 μF; energy = ½CV² = ½ × 14 × 10⁻⁶ × 36 = 2.52 × 10⁻⁴ J.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "2.52 × 10⁻⁶ J",
+          "why": "The right digits but the wrong power of ten.",
+          "whyWrong": "2.52 × 10⁻⁶ J loses a factor of 100. With C = 14 × 10⁻⁶ F and V² = 36, energy = 2.52 × 10⁻⁴ J."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "In parallel, capacitances add.",
+      "explanation": "In parallel, C = 2 + 4 + 8 = 14 μF = 14 × 10⁻⁶ F. Energy stored = ½CV² = ½ × 14 × 10⁻⁶ × 6² = 2.52 × 10⁻⁴ J.",
+      "trap": "2.52 × 10⁻⁶ J has the right digits but the wrong power of ten. Check your micro (10⁻⁶) conversion.",
+      "mnemonic": "Parallel capacitors add; energy is half C V squared.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Capacitors side by side are like extra buckets: their capacities simply add up."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "2.52 × 10⁻⁶ J loses a factor of 100. With C = 14 × 10⁻⁶ F and V² = 36, energy = 2.52 × 10⁻⁴ J."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0023",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 34,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0024",
+      "subject": "physics",
+      "topic": "Electric cells (e.m.f. and internal resistance)",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A cell of e.m.f. 12 V and internal resistance 4 Ω is connected to an external resistor of resistance 2 Ω. Find the current flowing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 A",
+          "why": "This ignores the internal resistance.",
+          "whyWrong": "4 A doesn't fit either. Without internal resistance you would get 6 A. Include it: I = 12 ÷ (2 + 4) = 2 A."
+        },
+        {
+          "id": "b",
+          "text": "2 A",
+          "why": "I = E ÷ (R + r) = 12 ÷ (2 + 4) = 2 A.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "3 A",
+          "why": "This uses only the internal resistance.",
+          "whyWrong": "3 A divides 12 by the 4 Ω internal resistance only. The total resistance is 2 + 4 = 6 Ω, so I = 2 A."
+        },
+        {
+          "id": "d",
+          "text": "5 A",
+          "why": "This does not follow from E ÷ (R + r).",
+          "whyWrong": "5 A does not follow. I = E ÷ (R + r) = 12 ÷ 6 = 2 A."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "The current flows through both the external and the internal resistance.",
+      "explanation": "The total resistance in the circuit is the external resistance plus the internal resistance: 2 + 4 = 6 Ω. Current I = E ÷ (R + r) = 12 ÷ 6 = 2 A.",
+      "trap": "3 A uses only the internal resistance. Always add R and r.",
+      "mnemonic": "I = E over (R + r).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A battery's own internal resistance is like a narrow pipe inside the tank: the water must pass through it too."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "3 A divides 12 by the 4 Ω internal resistance only. The total resistance is 2 + 4 = 6 Ω, so I = 2 A."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0024",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 35,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0025",
+      "subject": "physics",
+      "topic": "Current electricity (resistors in parallel)",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Three 4 Ω resistors connected in parallel have a potential difference of 16 V applied across them. What is the total current in the circuit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 A",
+          "why": "Parallel: R = 4 ÷ 3 Ω; I = 16 ÷ (4/3) = 12 A.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "8 A",
+          "why": "This does not follow from V ÷ R.",
+          "whyWrong": "8 A does not follow. Each resistor carries 16 ÷ 4 = 4 A, and three of them carry 12 A."
+        },
+        {
+          "id": "c",
+          "text": "10 A",
+          "why": "This does not follow from V ÷ R.",
+          "whyWrong": "10 A does not follow. The combined resistance is 4/3 Ω, so I = 16 ÷ (4/3) = 12 A."
+        },
+        {
+          "id": "d",
+          "text": "14 A",
+          "why": "This does not follow from V ÷ R.",
+          "whyWrong": "14 A does not follow. Each of the three branches carries 4 A, giving 12 A in total."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Each branch has the full 16 V across it.",
+      "explanation": "Three equal 4 Ω resistors in parallel give R = 4 ÷ 3 Ω. Total current I = V ÷ R = 16 ÷ (4/3) = 12 A. Check: each branch carries 16 ÷ 4 = 4 A, and 3 × 4 = 12 A.",
+      "trap": "8 A is a guess for students who are unsure how parallel resistors combine. Work out each branch: 4 A each.",
+      "mnemonic": "Parallel branches each get the full voltage.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Three taps open from the same tank: each one flows fully, and the total flow is three times one tap."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "8 A does not follow. Each resistor carries 16 ÷ 4 = 4 A, and three of them carry 12 A."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0025",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 37,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0026",
+      "subject": "physics",
+      "topic": "Electrical energy and power",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 200 W bulb is lighted by a 240 V a.c. mains supply. If 1 kWh is sold at ₦40, the cost of keeping the bulb lighted for a day is",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦192.00",
+          "why": "Energy = 0.2 kW × 24 h = 4.8 kWh; cost = 4.8 × 40 = ₦192.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "₦1.92",
+          "why": "This loses a factor of 100.",
+          "whyWrong": "₦1.92 is 100 times too small. 0.2 kW × 24 h = 4.8 kWh, and 4.8 × ₦40 = ₦192."
+        },
+        {
+          "id": "c",
+          "text": "₦19.20",
+          "why": "This loses a factor of 10.",
+          "whyWrong": "₦19.20 is ten times too small, often from using 2.4 h. A day is 24 hours: 4.8 kWh × ₦40 = ₦192."
+        },
+        {
+          "id": "d",
+          "text": "₦1,920.00",
+          "why": "This uses watts as if they were kilowatts.",
+          "whyWrong": "₦1,920 comes from a unit slip. 200 W = 0.2 kW, so energy = 0.2 × 24 = 4.8 kWh, costing ₦192."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Convert watts to kilowatts, then multiply by hours.",
+      "explanation": "Energy used = power × time = 0.2 kW × 24 h = 4.8 kWh. Cost = 4.8 × ₦40 = ₦192. The 240 V is not needed.",
+      "trap": "The 240 V is extra information. Only power and time decide the energy used.",
+      "mnemonic": "kWh = kW × hours.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A 200 W bulb left on all day uses as much energy as a 4.8 kW appliance used for one hour."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "₦1,920 comes from a unit slip. 200 W = 0.2 kW, so energy = 0.2 × 24 = 4.8 kWh, costing ₦192."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0026",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 38,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0027",
+      "subject": "physics",
+      "topic": "Current electricity (converting a galvanometer)",
+      "type": "calculation",
+      "difficulty": 3,
+      "stem": "A galvanometer with full-scale deflection of 10 mA is to be converted to a voltmeter with full-scale deflection of 5 V. If a series resistance of 498 Ω is used for the conversion, the resistance of the galvanometer is",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 Ω",
+          "why": "Total resistance = 5 ÷ 0.01 = 500 Ω; galvanometer = 500 − 498 = 2 Ω.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "10 Ω",
+          "why": "This confuses the current in mA with resistance.",
+          "whyWrong": "10 is the full-scale current in mA, not a resistance. Total resistance = 5 ÷ 0.01 = 500 Ω, so G = 2 Ω."
+        },
+        {
+          "id": "c",
+          "text": "5 Ω",
+          "why": "This confuses the voltage with resistance.",
+          "whyWrong": "5 is the voltmeter range in volts. G = 500 − 498 = 2 Ω."
+        },
+        {
+          "id": "d",
+          "text": "1 Ω",
+          "why": "This does not follow from V ÷ I.",
+          "whyWrong": "1 Ω does not follow. Total resistance is 500 Ω, so the galvanometer is 500 − 498 = 2 Ω."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "At full scale, 10 mA flows through the galvanometer and the series resistor together.",
+      "explanation": "At full-scale deflection, 10 mA = 0.01 A flows when 5 V is applied. Total resistance = V ÷ I = 5 ÷ 0.01 = 500 Ω. The galvanometer resistance is 500 − 498 = 2 Ω.",
+      "trap": "10 Ω catches students who reuse the 10 from 10 mA. Convert mA to A first.",
+      "mnemonic": "Voltmeter: big resistor in series; total = V over I.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A voltmeter is a galvanometer wearing a large series resistor so it only lets a tiny current through."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "10 is the full-scale current in mA, not a resistance. Total resistance = 5 ÷ 0.01 = 500 Ω, so G = 2 Ω."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0027",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 41,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0028",
+      "subject": "physics",
+      "topic": "Conduction of electricity through liquids (electrolysis)",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In electrolysis, a graph of mass deposited against the quantity of electricity is plotted. The slope of the graph gives",
+      "options": [
+        {
+          "id": "a",
+          "text": "the electrochemical equivalent",
+          "why": "m = zQ, so slope = m ÷ Q = z, the electrochemical equivalent.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "the charge released",
+          "why": "Charge is on the horizontal axis, not the slope.",
+          "whyWrong": "Charge (Q) is plotted along the horizontal axis. The slope is mass per unit charge, the electrochemical equivalent."
+        },
+        {
+          "id": "c",
+          "text": "the current flowing",
+          "why": "Current would need time, which is not on the graph.",
+          "whyWrong": "Current is charge per second. This graph has no time axis; its slope is mass per coulomb."
+        },
+        {
+          "id": "d",
+          "text": "the energy released",
+          "why": "Energy is not plotted here.",
+          "whyWrong": "Energy is not on either axis. Slope = mass ÷ charge = electrochemical equivalent."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Faraday's first law: m = zQ.",
+      "explanation": "Faraday's first law says the mass deposited is proportional to the charge passed: m = zQ. A graph of m against Q is a straight line through the origin with slope z, the electrochemical equivalent.",
+      "trap": "\"The current flowing\" is tempting, but current needs time, which is not on this graph.",
+      "mnemonic": "Slope of m against Q is z.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Like price per item: the slope tells you how much mass you get for every coulomb you pay."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Current is charge per second. This graph has no time axis; its slope is mass per coulomb."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0028",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 44,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0029",
+      "subject": "physics",
+      "topic": "Introductory electronics (transistors)",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Transistors are used for the",
+      "options": [
+        {
+          "id": "a",
+          "text": "conversion of a.c. to d.c.",
+          "why": "That is rectification, done by diodes.",
+          "whyWrong": "Converting a.c. to d.c. is rectification, which is the job of diodes. Transistors amplify signals and act as switches."
+        },
+        {
+          "id": "b",
+          "text": "conversion of d.c. to a.c.",
+          "why": "That is done by inverter circuits, not single transistors.",
+          "whyWrong": "Changing d.c. to a.c. is done by inverters. The basic job of a transistor is amplification."
+        },
+        {
+          "id": "c",
+          "text": "amplification of signals",
+          "why": "A small base current controls a larger collector current, so signals are amplified.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "rectification of signals",
+          "why": "Rectification is done by diodes.",
+          "whyWrong": "Rectification is the diode's job. A transistor amplifies."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Think of a microphone signal being made louder.",
+      "explanation": "In a transistor, a small current at the base controls a much larger current through the collector and emitter. This lets it amplify weak signals, as in radios and amplifiers. It can also act as a switch.",
+      "trap": "Rectification (a.c. to d.c.) is the diode's job. Do not mix up diodes and transistors.",
+      "mnemonic": "Diode rectifies, transistor amplifies.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The amplifier at a church or concert uses transistors to turn a small voice signal into a loud sound."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Converting a.c. to d.c. is rectification, which is the job of diodes. Transistors amplify signals and act as switches."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0029",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 48,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-0030",
+      "subject": "physics",
+      "topic": "Introductory electronics (semiconductors)",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is a pure semiconductor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Silicon",
+          "why": "Pure silicon is an intrinsic semiconductor.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Phosphorus",
+          "why": "Phosphorus is used as a dopant, not as the semiconductor itself.",
+          "whyWrong": "Phosphorus is added to silicon to make n-type material. It is a dopant, not the pure semiconductor."
+        },
+        {
+          "id": "c",
+          "text": "Transistor",
+          "why": "A transistor is a device made from semiconductors, not a material.",
+          "whyWrong": "A transistor is a device built from doped semiconductors. The question asks for a pure semiconductor material."
+        },
+        {
+          "id": "d",
+          "text": "Carbon",
+          "why": "Carbon is not the standard semiconductor; diamond is an insulator and graphite conducts.",
+          "whyWrong": "Carbon in its usual forms is an insulator (diamond) or a conductor (graphite). Silicon and germanium are the pure semiconductors."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Which element is at the heart of computer chips?",
+      "explanation": "Pure (intrinsic) semiconductors are elements such as silicon and germanium. Their conductivity lies between that of conductors and insulators and rises with temperature. Phosphorus is a dopant, and a transistor is a device.",
+      "trap": "Phosphorus appears in semiconductor topics, but as a dopant added to silicon, not as the pure semiconductor.",
+      "mnemonic": "Silicon and germanium: the pure pair.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Silicon Valley got its name because of silicon semiconductor chips."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Phosphorus is added to silicon to make n-type material. It is a dopant, not the pure semiconductor."
+        }
+      ],
+      "animationId": "anim-phys-jamb-0030",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 50,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    }
+  ]
+}

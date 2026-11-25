@@ -1,0 +1,1503 @@
+{
+  "version": 1,
+  "count": 30,
+  "animations": [
+    {
+      "id": "anim-phys-jamb-0001",
+      "questionId": "phys-jamb-0001",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v_rel = v₂ − v₁",
+          "tag": "same direction",
+          "narration": "Write relative velocity equals faster speed minus slower speed, because both cars travel in the same direction."
+        },
+        {
+          "n": 2,
+          "display": "v_rel = 130 − 100",
+          "tag": "substitute",
+          "narration": "Put in one hundred and thirty minus one hundred, since the observer's forward motion cancels part of the faster speed."
+        },
+        {
+          "n": 3,
+          "display": "v_rel = 30 km h⁻¹",
+          "tag": "result",
+          "narration": "Subtract to get thirty kilometres per hour, which is how fast the faster car pulls ahead."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "v₁ = 100 km h⁻¹, v₂ = 130 km h⁻¹ (same way)",
+          "tag": "the goal",
+          "narration": "Let's find the faster car's speed as seen from the slower car. Because both cars move in the same direction, we subtract their speeds."
+        },
+        {
+          "n": 2,
+          "display": "v_rel = v₂ − v₁",
+          "tag": "formula",
+          "narration": "Write relative velocity equals v two minus v one. Moving forward yourself already matches part of the other car's speed."
+        },
+        {
+          "n": 3,
+          "display": "v_rel = 130 − 100",
+          "tag": "substitute",
+          "narration": "Now put in one hundred and thirty minus one hundred. Remember, we only add speeds when cars move toward each other."
+        },
+        {
+          "n": 4,
+          "display": "v_rel = 30 km h⁻¹",
+          "tag": "subtract",
+          "narration": "One hundred and thirty minus one hundred leaves thirty kilometres per hour."
+        },
+        {
+          "n": 5,
+          "display": "Relative velocity = 30 km h⁻¹",
+          "tag": "answer",
+          "narration": "So to the observer in the slower car, the faster car moves ahead at thirty kilometres per hour."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0002",
+      "questionId": "phys-jamb-0002",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Flat paper drifts · Crumpled ball drops fast",
+          "tag": "everyday hook",
+          "narration": "Drop a flat sheet of paper beside a stone, and air slows the paper; crumple the same paper tight, and both land together."
+        },
+        {
+          "n": 2,
+          "display": "No air → only gravity pulls every object",
+          "tag": "free fall",
+          "narration": "Without air pushing upward, only Earth's pull acts on a falling body, a pure downward motion called free fall."
+        },
+        {
+          "n": 3,
+          "display": "Heavier mass → stronger pull, same acceleration g",
+          "tag": "how it works",
+          "narration": "Earth pulls harder on a heavier stone, yet that extra heaviness resists motion equally, so every object speeds up at the same rate."
+        },
+        {
+          "n": 4,
+          "display": "Watch for 'ignoring air resistance' in JAMB",
+          "tag": "JAMB trap",
+          "narration": "Exams rely on your everyday memory of feathers floating slowly, hoping you miss the key phrase saying to ignore air resistance."
+        },
+        {
+          "n": 5,
+          "display": "Same height, no air → Both land together",
+          "tag": "this question",
+          "narration": "Because air resistance is ignored here, the stone and the feather reach the ground at the same time, not the stone landing first."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0003",
+      "questionId": "phys-jamb-0003",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = (v − u) ÷ t",
+          "tag": "formula",
+          "narration": "Write acceleration equals final velocity minus initial velocity divided by time, because acceleration is velocity change per second."
+        },
+        {
+          "n": 2,
+          "display": "a = (45 − 25) ÷ 10",
+          "tag": "substitute",
+          "narration": "Put in forty-five minus twenty-five divided by ten seconds so we match the speed rise to the time taken."
+        },
+        {
+          "n": 3,
+          "display": "a = 20 ÷ 10 = 2 m s⁻²",
+          "tag": "solve",
+          "narration": "Forty-five minus twenty-five gives twenty, and dividing by ten gives two metres per second squared."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "u = 25 m s⁻¹, v = 45 m s⁻¹, t = 10 s",
+          "tag": "the goal",
+          "narration": "Let's find the car's acceleration from its starting speed, final speed, and time. Acceleration measures how much velocity rises each second."
+        },
+        {
+          "n": 2,
+          "display": "a = (v − u) ÷ t",
+          "tag": "formula",
+          "narration": "Write a equals v minus u divided by t, because we need the total velocity change spread over the whole ten seconds."
+        },
+        {
+          "n": 3,
+          "display": "a = (45 − 25) ÷ 10",
+          "tag": "substitute",
+          "narration": "Put in forty-five for final speed, twenty-five for starting speed, and ten for time. All units are already in S I form."
+        },
+        {
+          "n": 4,
+          "display": "a = 20 ÷ 10 = 2 m s⁻²",
+          "tag": "divide",
+          "narration": "First subtract to get twenty metres per second, then divide by ten seconds to reach two metres per second squared."
+        },
+        {
+          "n": 5,
+          "display": "Acceleration = 2 m s⁻²",
+          "tag": "answer",
+          "narration": "So the acceleration of the car is two metres per second squared."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0004",
+      "questionId": "phys-jamb-0004",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Bag of rice in Lagos vs Jos → same grains inside",
+          "tag": "everyday hook",
+          "narration": "Carry a sealed bag of rice from Lagos to Jos: the number of rice grains inside stays identical, even if the ground pulls slightly differently."
+        },
+        {
+          "n": 2,
+          "display": "Amount of stuff = mass · Earth's pull = weight",
+          "tag": "core idea",
+          "narration": "The amount of matter packed inside an object is its mass, while Earth's downward pull on that object is its weight."
+        },
+        {
+          "n": 3,
+          "display": "Earth slightly flattened → g changes → weight changes",
+          "tag": "how it works",
+          "narration": "Because Earth bulges slightly at the equator and sits lower at the poles, gravity's strength shifts gently from place to place, changing weight."
+        },
+        {
+          "n": 4,
+          "display": "JAMB swaps mass & weight in one-word traps",
+          "tag": "JAMB trap",
+          "narration": "Question writers love swapping the two words, hoping you forget that market scales talk about weight when they actually want fixed mass."
+        },
+        {
+          "n": 5,
+          "display": "Different places on Earth → Mass constant, weight varies",
+          "tag": "this question",
+          "narration": "Moving around Earth never removes matter from the object, so the mass is constant while the weight varies, not the reverse."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0005",
+      "questionId": "phys-jamb-0005",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "L = 50 cm = 0.5 m",
+          "tag": "SI units",
+          "narration": "Convert fifty centimetres to zero point five metres, because joules require distances in metres."
+        },
+        {
+          "n": 2,
+          "display": "h = L(1 − cos 60°)",
+          "tag": "vertical rise",
+          "narration": "Write height raised equals L times one minus cosine sixty degrees, because pulling slowly turns all work into potential energy."
+        },
+        {
+          "n": 3,
+          "display": "h = 0.5 × (1 − 0.5) = 0.25 m",
+          "tag": "find height",
+          "narration": "Since cosine sixty degrees is zero point five, multiply zero point five by zero point five to get zero point two five metres."
+        },
+        {
+          "n": 4,
+          "display": "W = 0.1 × 0.25 = 0.025 J",
+          "tag": "work done",
+          "narration": "Multiply weight zero point one newton by height zero point two five metres to get zero point zero two five joules."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Weight = 0.1 N, L = 50 cm, θ = 60°",
+          "tag": "the goal",
+          "narration": "Let's find the work done pulling the bob slowly to sixty degrees. Because it moves slowly with no speed gain, work equals gravitational potential energy gained."
+        },
+        {
+          "n": 2,
+          "display": "L = 50 cm = 0.5 m",
+          "tag": "convert to metres",
+          "narration": "First convert the string length fifty centimetres to zero point five metres, because the energy formula needs S I units in metres."
+        },
+        {
+          "n": 3,
+          "display": "h = L(1 − cos 60°)",
+          "tag": "vertical rise",
+          "narration": "Next write vertical rise h equals L times one minus cosine sixty degrees. At sixty degrees, the bob sits closer to the support by L cosine sixty."
+        },
+        {
+          "n": 4,
+          "display": "h = 0.5 × (1 − 0.5) = 0.25 m",
+          "tag": "compute height",
+          "narration": "Cosine sixty degrees is zero point five, so one minus zero point five is zero point five, giving a rise of zero point two five metres."
+        },
+        {
+          "n": 5,
+          "display": "Work = 0.1 × 0.25 = 0.025 J",
+          "tag": "work done",
+          "narration": "Now multiply weight zero point one newton by rise zero point two five metres, because work against gravity equals weight times height, giving zero point zero two five joules."
+        },
+        {
+          "n": 6,
+          "display": "Work done = 0.025 J",
+          "tag": "answer",
+          "narration": "So the work done to pull the bob to sixty degrees is zero point zero two five joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0006",
+      "questionId": "phys-jamb-0006",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Smooth tiles: slippers slide · Rough treads: shoes grip",
+          "tag": "everyday hook",
+          "narration": "Walk across wet smooth tiles in worn slippers and you skid, whereas patterned soles on rough concrete grip firmly without sliding."
+        },
+        {
+          "n": 2,
+          "display": "Tiny bumps interlock → grip force (friction)",
+          "tag": "core idea",
+          "narration": "When two surfaces touch, tiny bumps catch against each other to resist sliding, creating a helpful gripping force called friction."
+        },
+        {
+          "n": 3,
+          "display": "Rough belt → stronger grip → load moves with belt",
+          "tag": "how it works",
+          "narration": "A moving factory belt pushes boxes forward only through that surface grip; if the belt turns smooth, packages stay behind and slip."
+        },
+        {
+          "n": 4,
+          "display": "Roughness adds grip, not engine power or strength",
+          "tag": "JAMB trap",
+          "narration": "Exams slip in tempting phrases like carrying more load or making belts stronger, hiding the fact that texture only controls surface grip."
+        },
+        {
+          "n": 5,
+          "display": "Rough conveyor belt → Prevent the load from slipping",
+          "tag": "this question",
+          "narration": "Making the surface rough raises friction to keep boxes moving steadily, so preventing the load from slipping fits, not enabling more load."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0007",
+      "questionId": "phys-jamb-0007",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "MA = Load ÷ Effort = 800 ÷ 400 = 2",
+          "tag": "mechanical advantage",
+          "narration": "Divide load eight hundred newtons by effort four hundred newtons to get mechanical advantage two, showing how much the machine multiplies force."
+        },
+        {
+          "n": 2,
+          "display": "Efficiency = (MA ÷ VR) × 100%",
+          "tag": "formula",
+          "narration": "Write efficiency equals mechanical advantage divided by velocity ratio times one hundred percent, comparing real gain to ideal gain."
+        },
+        {
+          "n": 3,
+          "display": "Efficiency = (2 ÷ 6) × 100% = 33.3%",
+          "tag": "solve",
+          "narration": "Divide two by velocity ratio six and multiply by one hundred percent to get thirty-three point three percent."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Load = 800 N, Effort = 400 N, VR = 6",
+          "tag": "the goal",
+          "narration": "Let's find the machine's efficiency from its load, effort, and velocity ratio. Efficiency compares mechanical advantage with velocity ratio."
+        },
+        {
+          "n": 2,
+          "display": "MA = Load ÷ Effort",
+          "tag": "mechanical advantage",
+          "narration": "First write mechanical advantage equals load divided by effort, because it tells us how many times the machine multiplies our push."
+        },
+        {
+          "n": 3,
+          "display": "MA = 800 ÷ 400 = 2",
+          "tag": "compute MA",
+          "narration": "Put in eight hundred divided by four hundred, giving a mechanical advantage of two. Notice the one metre distance cancels out anyway."
+        },
+        {
+          "n": 4,
+          "display": "Efficiency = (2 ÷ 6) × 100%",
+          "tag": "substitute",
+          "narration": "Next divide mechanical advantage two by velocity ratio six and multiply by one hundred percent to express efficiency as a percentage."
+        },
+        {
+          "n": 5,
+          "display": "Efficiency = 33.3%",
+          "tag": "answer",
+          "narration": "Two sixths is one third, so the efficiency of the machine is thirty-three point three percent."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0008",
+      "questionId": "phys-jamb-0008",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "e = 30.5 − 30 = 0.5 cm",
+          "tag": "extension",
+          "narration": "Subtract thirty centimetres from thirty point five centimetres to get zero point five centimetres, because strain energy depends on extension, not total length."
+        },
+        {
+          "n": 2,
+          "display": "e = 0.5 ÷ 100 = 0.005 m",
+          "tag": "SI units",
+          "narration": "Divide zero point five by one hundred to get zero point zero zero five metres, since joules require metres."
+        },
+        {
+          "n": 3,
+          "display": "E = ½ × F × e = ½ × 300 × 0.005",
+          "tag": "substitute",
+          "narration": "Use half force times extension with three hundred newtons and zero point zero zero five metres, because the stretching force rises steadily from zero."
+        },
+        {
+          "n": 4,
+          "display": "E = 150 × 0.005 = 0.75 J",
+          "tag": "result",
+          "narration": "Half of three hundred is one hundred and fifty, times zero point zero zero five gives zero point seven five joules."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L₀ = 30 cm → 30.5 cm, F = 300 N",
+          "tag": "the goal",
+          "narration": "Let's find the strain energy stored in the stretched wire. We use half force times extension because the pulling force grows steadily from zero."
+        },
+        {
+          "n": 2,
+          "display": "e = 30.5 − 30 = 0.5 cm",
+          "tag": "find extension",
+          "narration": "First subtract thirty from thirty point five to find the stretch, zero point five centimetres. Only the extra stretch stores elastic energy."
+        },
+        {
+          "n": 3,
+          "display": "e = 0.5 ÷ 100 = 0.005 m",
+          "tag": "convert to metres",
+          "narration": "Now convert zero point five centimetres to zero point zero zero five metres by dividing by one hundred, because the energy formula requires S I metres."
+        },
+        {
+          "n": 4,
+          "display": "E = ½ × 300 × 0.005",
+          "tag": "substitute",
+          "narration": "Next write energy equals half times three hundred newtons times zero point zero zero five metres."
+        },
+        {
+          "n": 5,
+          "display": "E = 150 × 0.005 = 0.75 J",
+          "tag": "multiply",
+          "narration": "Half of three hundred is one hundred and fifty, and one hundred and fifty times zero point zero zero five gives zero point seven five joules."
+        },
+        {
+          "n": 6,
+          "display": "Strain energy = 0.75 J",
+          "tag": "answer",
+          "narration": "So the strain energy stored in the wire is zero point seven five joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0009",
+      "questionId": "phys-jamb-0009",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P₂ = P₁ = 100 Pa",
+          "tag": "Pascal's principle",
+          "narration": "Keep pressure at one hundred pascals on the second piston, because enclosed liquid transmits pressure equally everywhere."
+        },
+        {
+          "n": 2,
+          "display": "F = P × A = 100 × 3",
+          "tag": "substitute",
+          "narration": "Write force equals pressure times area, putting in one hundred pascals times three square metres."
+        },
+        {
+          "n": 3,
+          "display": "F = 300 N",
+          "tag": "result",
+          "narration": "Multiply one hundred by three to get three hundred newtons pushing on the larger piston."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 100 Pa, A = 3 m²",
+          "tag": "the goal",
+          "narration": "Let's find the force pushing on the second piston of the hydraulic press. By Pascal's principle, the same pressure acts on every part of the liquid."
+        },
+        {
+          "n": 2,
+          "display": "F = P × A",
+          "tag": "formula",
+          "narration": "Since pressure equals force divided by area, rearrange to force equals pressure times area so we can solve directly for force."
+        },
+        {
+          "n": 3,
+          "display": "F = 100 × 3",
+          "tag": "substitute",
+          "narration": "Put in one hundred pascals times three square metres. Both quantities are already in standard S I units."
+        },
+        {
+          "n": 4,
+          "display": "F = 300 N",
+          "tag": "multiply",
+          "narration": "One hundred times three equals three hundred newtons, showing how a wider piston multiplies force."
+        },
+        {
+          "n": 5,
+          "display": "Force = 300 N",
+          "tag": "answer",
+          "narration": "So the force exerted on the second piston is three hundred newtons."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0010",
+      "questionId": "phys-jamb-0010",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Drop a stone in water: easy · Pour sand in spout: messy",
+          "tag": "everyday hook",
+          "narration": "Dropping one solid stone into a cup measures its volume easily, while dry powder floats, clumps, and sticks all over a pouring spout."
+        },
+        {
+          "n": 2,
+          "display": "Fixed-volume bottle + balance → accurate powder density",
+          "tag": "core idea",
+          "narration": "To compare a powder's heaviness with water accurately, you use a tiny glass vessel with a fixed stopper volume, called a density bottle."
+        },
+        {
+          "n": 3,
+          "display": "Weigh empty, with powder, topped with water, water only",
+          "tag": "how it works",
+          "narration": "Weighing the bottle empty, with powder, topped up with water, and with pure water lets you find the exact water weight the powder displaced."
+        },
+        {
+          "n": 4,
+          "display": "Eureka can: solid lumps · Density bottle: powders",
+          "tag": "JAMB trap",
+          "narration": "Students quickly pick the familiar eureka can because it finds irregular volumes, forgetting that powders scatter and trap air in its spout."
+        },
+        {
+          "n": 5,
+          "display": "Powdered substance + beam balance → A density bottle",
+          "tag": "this question",
+          "narration": "Because the substance is powdered and needs high accuracy with a balance, a density bottle fits, whereas a eureka can suits solid lumps."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0011",
+      "questionId": "phys-jamb-0011",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ΔL = α L Δθ",
+          "tag": "expansion formula",
+          "narration": "Write increase in length equals linear expansivity times original length times temperature rise, which governs both metals."
+        },
+        {
+          "n": 2,
+          "display": "ΔL_P : ΔL_Q = (α_P L_P) : (α_Q L_Q)",
+          "tag": "cancel Δθ",
+          "narration": "Drop temperature difference from the ratio, because both metals are heated through the same temperature rise."
+        },
+        {
+          "n": 3,
+          "display": "ΔL_P : ΔL_Q = (2 × 3) : (3 × 4)",
+          "tag": "substitute ratios",
+          "narration": "Put in two times three for P and three times four for Q, matching each metal's expansivity with its length."
+        },
+        {
+          "n": 4,
+          "display": "= 6 : 12 = 1 : 2",
+          "tag": "simplify",
+          "narration": "Six to twelve divides by six on both sides to simplify cleanly to one to two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "α_P:α_Q = 2:3, L_P:L_Q = 3:4, same Δθ",
+          "tag": "the goal",
+          "narration": "Let's find the ratio of length increases for metals P and Q. Expansion depends on expansivity, starting length, and temperature rise."
+        },
+        {
+          "n": 2,
+          "display": "ΔL = α L Δθ",
+          "tag": "formula",
+          "narration": "Write change in length equals alpha times L times delta theta. Because both bars share the same temperature rise, delta theta cancels in a ratio."
+        },
+        {
+          "n": 3,
+          "display": "ΔL_P : ΔL_Q = (α_P L_P) : (α_Q L_Q)",
+          "tag": "ratio form",
+          "narration": "So the expansion ratio of P to Q equals alpha P times L P compared with alpha Q times L Q, keeping P first."
+        },
+        {
+          "n": 4,
+          "display": "= (2 × 3) : (3 × 4) = 6 : 12",
+          "tag": "substitute",
+          "narration": "Put in two times three for P and three times four for Q, which gives six to twelve."
+        },
+        {
+          "n": 5,
+          "display": "6 : 12 = 1 : 2",
+          "tag": "simplify",
+          "narration": "Divide both parts of six to twelve by six to reduce it to one to two."
+        },
+        {
+          "n": 6,
+          "display": "Ratio of increase = 1 : 2",
+          "tag": "answer",
+          "narration": "So the ratio of the increase in length of P to Q is one to two."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0012",
+      "questionId": "phys-jamb-0012",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Hold hand near hot pressing iron → feel warmth across air",
+          "tag": "everyday hook",
+          "narration": "Hold your palm a short gap from a hot pressing iron: you feel strong warmth jump across the gap even though the iron never glows."
+        },
+        {
+          "n": 2,
+          "display": "Heat travels as invisible waves without touching (radiation)",
+          "tag": "core idea",
+          "narration": "Every warm object sends heat outward across empty space as invisible energy waves, a heat transfer method called radiation."
+        },
+        {
+          "n": 3,
+          "display": "All hot bodies emit invisible infrared rays",
+          "tag": "how it works",
+          "narration": "Those heat-carrying waves sit just below visible red light and are called infrared rays, which travel straight from charcoal, kettles, or your skin."
+        },
+        {
+          "n": 4,
+          "display": "Glowing fire shows light · All hot bodies emit infrared",
+          "tag": "JAMB trap",
+          "narration": "Because blazing firewood shines brightly, exams tempt you with light energy, forgetting that boiling water radiates heat while staying completely dark."
+        },
+        {
+          "n": 5,
+          "display": "Heat radiated by all hot objects → Infrared rays",
+          "tag": "this question",
+          "narration": "Every hot body radiates heat as invisible heat waves, so infrared rays fits, whereas light energy appears only when objects get red-hot."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0013",
+      "questionId": "phys-jamb-0013",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Full plastic water bottle in freezer → bulges tight",
+          "tag": "everyday hook",
+          "narration": "Put a brim-full plastic water bottle in the freezer overnight, and the frozen block bulges the bottle because ice takes up extra space."
+        },
+        {
+          "n": 2,
+          "display": "Freezing expands water · Melting shrinks ice back down",
+          "tag": "anomalous expansion",
+          "narration": "Unlike most liquids, water spreads out when it freezes into open crystal spaces, a rare behaviour called the anomalous expansion of water."
+        },
+        {
+          "n": 3,
+          "display": "Ice melts → open crystal collapses → smaller liquid volume",
+          "tag": "how it works",
+          "narration": "When solid ice melts back into liquid water, those open gaps collapse so the exact same water packs tightly into a smaller space."
+        },
+        {
+          "n": 4,
+          "display": "Floating ice in water: same level · Cup full of ice: drops",
+          "tag": "JAMB trap",
+          "narration": "Exams love crossing wires with ice floating in a glass of water, where the level stays unchanged, whereas here the container holds only ice."
+        },
+        {
+          "n": 5,
+          "display": "Container brim-full of ice melts → Level drops",
+          "tag": "this question",
+          "narration": "Because liquid water occupies less volume than the ice that filled the container, the level of water drops, rather than remaining unchanged."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0014",
+      "questionId": "phys-jamb-0014",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Cold drink bottle on humid table → drops form on glass",
+          "tag": "everyday hook",
+          "narration": "Set a chilled soft-drink bottle on a warm table, and tiny beads of water quickly coat the outside from invisible moisture in the air."
+        },
+        {
+          "n": 2,
+          "display": "Cool surface chills nearby air → vapour turns to droplets",
+          "tag": "condensation",
+          "narration": "When moist air touches a cold surface, invisible water gas cools down and turns back into liquid droplets, a change called condensation."
+        },
+        {
+          "n": 3,
+          "display": "Overnight grass cools below dew point → dew on blades",
+          "tag": "how it works",
+          "narration": "Over clear cool nights, grass blades lose heat fast, so touching air drops below its dew point and leaves liquid droplets called dew."
+        },
+        {
+          "n": 4,
+          "display": "Mist & fog float in air · Dew sits on surfaces",
+          "tag": "JAMB trap",
+          "narration": "Question writers place mist and fog beside dew because all three are morning water droplets, hoping you overlook where those droplets sit."
+        },
+        {
+          "n": 5,
+          "display": "Morning droplets resting on grass → Dew",
+          "tag": "this question",
+          "narration": "Because these droplets form directly on cool grass blades rather than hanging in the air, dew is right, while mist floats above ground."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0015",
+      "questionId": "phys-jamb-0015",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Full bus park: 2 people leave = 2 people enter",
+          "tag": "everyday hook",
+          "narration": "Picture a full waiting room where every time two people walk in, two others walk out, so the crowd stays steady despite constant motion."
+        },
+        {
+          "n": 2,
+          "display": "Closed space holds maximum vapour at that temperature",
+          "tag": "saturated vapour",
+          "narration": "When trapped air above a liquid holds all the evaporated gas it can carry at that temperature, we call it a saturated vapour."
+        },
+        {
+          "n": 3,
+          "display": "Rate leaving liquid = rate returning → dynamic equilibrium",
+          "tag": "how it works",
+          "narration": "Molecules never stop moving; instead, liquid molecules escape into gas at the exact same rate gas molecules return, called dynamic equilibrium."
+        },
+        {
+          "n": 4,
+          "display": "Read past 'dynamic equilibrium' — check equal rates",
+          "tag": "JAMB trap",
+          "narration": "Exams start a wrong choice with the buzzword dynamic equilibrium, then sneak in unequal rates where more molecules return than leave."
+        },
+        {
+          "n": 5,
+          "display": "Equal leaving and returning rates → Saturated vapour",
+          "tag": "this question",
+          "narration": "True balance requires equal exchange rates, so dynamic equilibrium between liquid and vapour molecules fits, not an option where more molecules return."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0016",
+      "questionId": "phys-jamb-0016",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v = f λ  →  f = v ÷ λ",
+          "tag": "wave equation",
+          "narration": "Rearrange v equals f lambda into frequency equals speed divided by wavelength, so we can find waves per second first."
+        },
+        {
+          "n": 2,
+          "display": "f = 420 ÷ 42 = 10 Hz",
+          "tag": "frequency",
+          "narration": "Divide four hundred and twenty by forty-two to get ten hertz, meaning ten complete waves pass each second."
+        },
+        {
+          "n": 3,
+          "display": "T = 1 ÷ f = 1 ÷ 10 = 0.1 s",
+          "tag": "period",
+          "narration": "Take one divided by ten hertz to get zero point one seconds, because period is the time for one single wave."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "v = 420 m s⁻¹, λ = 42 m",
+          "tag": "the goal",
+          "narration": "Let's find the period of this wave from its speed and wavelength. First we use the wave equation to find frequency, then flip it for period."
+        },
+        {
+          "n": 2,
+          "display": "f = v ÷ λ",
+          "tag": "find frequency",
+          "narration": "Start from speed equals frequency times wavelength, and divide both sides by wavelength to isolate frequency."
+        },
+        {
+          "n": 3,
+          "display": "f = 420 ÷ 42 = 10 Hz",
+          "tag": "substitute",
+          "narration": "Put in four hundred and twenty divided by forty-two, which simplifies neatly to ten hertz."
+        },
+        {
+          "n": 4,
+          "display": "T = 1 ÷ f = 1 ÷ 10 = 0.1 s",
+          "tag": "find period",
+          "narration": "Now period T equals one divided by frequency, because if ten waves pass in one second, one wave takes one tenth, or zero point one seconds."
+        },
+        {
+          "n": 5,
+          "display": "Period = 0.1 s",
+          "tag": "answer",
+          "narration": "So the period of the wave is zero point one seconds."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0017",
+      "questionId": "phys-jamb-0017",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T₁ = 16 + 273 = 289 K; T₂ = 127 + 273 = 400 K",
+          "tag": "kelvin scale",
+          "narration": "Add two hundred and seventy-three to get two hundred and eighty-nine kelvin and four hundred kelvin, because sound speed uses absolute temperature."
+        },
+        {
+          "n": 2,
+          "display": "v₂ ÷ v₁ = √(T₂ ÷ T₁)",
+          "tag": "ignore pressure",
+          "narration": "Use speed proportional to the square root of kelvin temperature, ignoring the doubled pressure because pressure does not change sound speed in air."
+        },
+        {
+          "n": 3,
+          "display": "v₂ = 340 × √(400 ÷ 289) = 340 × 20 ÷ 17",
+          "tag": "square roots",
+          "narration": "Take the square roots of four hundred and two hundred and eighty-nine to get twenty over seventeen times three hundred and forty."
+        },
+        {
+          "n": 4,
+          "display": "v₂ = 20 × 20 = 400 m s⁻¹",
+          "tag": "result",
+          "narration": "Three hundred and forty divided by seventeen is twenty, and twenty times twenty gives four hundred metres per second."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "v₁ = 340 m s⁻¹ at 16 °C → 127 °C (2P ignored)",
+          "tag": "the goal",
+          "narration": "Let's find the new speed of sound at one hundred and twenty-seven degrees Celsius. Remember, doubling pressure has no effect on sound speed in a gas."
+        },
+        {
+          "n": 2,
+          "display": "T₁ = 289 K,  T₂ = 400 K",
+          "tag": "convert to kelvin",
+          "narration": "First add two hundred and seventy-three to each Celsius value, because gas formulas need kelvin. Sixteen becomes two hundred and eighty-nine, and one hundred and twenty-seven becomes four hundred."
+        },
+        {
+          "n": 3,
+          "display": "v₂ = v₁ × √(T₂ ÷ T₁)",
+          "tag": "formula",
+          "narration": "Write v two equals v one times the square root of T two over T one, since sound speed grows with the square root of kelvin temperature."
+        },
+        {
+          "n": 4,
+          "display": "v₂ = 340 × √(400 ÷ 289) = 340 × (20 ÷ 17)",
+          "tag": "take roots",
+          "narration": "Notice both numbers are exact squares: root four hundred is twenty, and root two hundred and eighty-nine is seventeen."
+        },
+        {
+          "n": 5,
+          "display": "v₂ = 20 × 20 = 400 m s⁻¹",
+          "tag": "simplify",
+          "narration": "Divide three hundred and forty by seventeen to get twenty, then multiply twenty by twenty to get four hundred metres per second."
+        },
+        {
+          "n": 6,
+          "display": "New velocity = 400 m s⁻¹",
+          "tag": "answer",
+          "narration": "So at one hundred and twenty-seven degrees Celsius, the velocity of sound in air is four hundred metres per second."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0018",
+      "questionId": "phys-jamb-0018",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Cinema projector shines picture onto the white screen",
+          "tag": "everyday hook",
+          "narration": "In a dark cinema hall, the front lens bends the beam, while the white screen at the back actually catches the sharp picture."
+        },
+        {
+          "n": 2,
+          "display": "Camera and eye share matching light-handling parts",
+          "tag": "core idea",
+          "narration": "Both a camera and the human eye let light through a front opening, focus it with a lens, and capture the picture at the back."
+        },
+        {
+          "n": 3,
+          "display": "Camera film = image recorder · Eye retina = image screen",
+          "tag": "how it works",
+          "narration": "Just as camera film records the focused light image, the light-sensing back lining of the eyeball, called the retina, catches your vision."
+        },
+        {
+          "n": 4,
+          "display": "Iris / diaphragm = light size · Retina / film = image",
+          "tag": "JAMB trap",
+          "narration": "Exams list the iris right beside the retina because the iris also matches a camera part, the diaphragm, which controls brightness instead."
+        },
+        {
+          "n": 5,
+          "display": "Camera film records image → Eye's retina",
+          "tag": "this question",
+          "narration": "Because film is the image-recording surface at the back, retina matches it directly, whereas the iris only adjusts how much light enters."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0019",
+      "questionId": "phys-jamb-0019",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "1/v = 1/f − 1/u = 1/5 − 1/15",
+          "tag": "mirror formula",
+          "narration": "Rearrange the mirror formula to one over v equals one over five minus one over fifteen so we can locate the image first."
+        },
+        {
+          "n": 2,
+          "display": "1/v = 3/15 − 1/15 = 2/15  →  v = 7.5 cm",
+          "tag": "image distance",
+          "narration": "Subtract to get two fifteenths, then flip the fraction to find image distance seven point five centimetres."
+        },
+        {
+          "n": 3,
+          "display": "m = v ÷ u = 7.5 ÷ 15 = 0.5",
+          "tag": "magnification",
+          "narration": "Divide image distance seven point five by object distance fifteen to get magnification zero point five."
+        },
+        {
+          "n": 4,
+          "display": "h_i = 0.5 × 4 = 2 cm",
+          "tag": "image size",
+          "narration": "Multiply magnification zero point five by object height four centimetres to get an image size of two centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "h_o = 4 cm, u = 15 cm, f = 5 cm (concave)",
+          "tag": "the goal",
+          "narration": "Let's find the image height for this concave mirror. We first use the mirror formula to locate the image, then use magnification to scale the height."
+        },
+        {
+          "n": 2,
+          "display": "1/v = 1/f − 1/u = 1/5 − 1/15",
+          "tag": "mirror formula",
+          "narration": "Write one over v equals one over f minus one over u, using positive five for a concave mirror's real focus and fifteen for the object distance."
+        },
+        {
+          "n": 3,
+          "display": "1/v = 2/15  →  v = 7.5 cm",
+          "tag": "find v",
+          "narration": "One fifth is three fifteenths, minus one fifteenth leaves two fifteenths. Flip it to get v equals fifteen over two, or seven point five centimetres."
+        },
+        {
+          "n": 4,
+          "display": "m = v ÷ u = 7.5 ÷ 15 = 0.5",
+          "tag": "magnification",
+          "narration": "Next find magnification by dividing v by u. Seven point five divided by fifteen is zero point five, so the image is half as tall."
+        },
+        {
+          "n": 5,
+          "display": "h_i = 0.5 × 4 = 2 cm",
+          "tag": "image height",
+          "narration": "Multiply zero point five by the four centimetre object height to get two centimetres."
+        },
+        {
+          "n": 6,
+          "display": "Image size = 2 cm",
+          "tag": "answer",
+          "narration": "So the size of the image formed by the concave mirror is two centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0020",
+      "questionId": "phys-jamb-0020",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Football pass lands too short → kick it slightly farther",
+          "tag": "everyday hook",
+          "narration": "If your football pass keeps landing short of your teammate, you need a gentle extra push outward so the ball reaches their feet."
+        },
+        {
+          "n": 2,
+          "display": "Short-sightedness = distant rays meet before retina",
+          "tag": "myopia",
+          "narration": "In short-sightedness, also called myopia, your eye bends distant light too strongly, so the focused picture lands short in front of the retina."
+        },
+        {
+          "n": 3,
+          "display": "Concave lens spreads rays slightly → focus moves back",
+          "tag": "how it works",
+          "narration": "Placing a thinner-in-the-middle glass, called a concave lens, spreads incoming rays apart slightly so the eye lands the sharp focus on the retina."
+        },
+        {
+          "n": 4,
+          "display": "Concave: short sight · Convex: long sight",
+          "tag": "JAMB trap",
+          "narration": "Exams always place convex lens in the choices to catch students mixing up short sight with long sight, which needs extra inward bending."
+        },
+        {
+          "n": 5,
+          "display": "Short-sightedness needs spreading → Concave lens",
+          "tag": "this question",
+          "narration": "Because rays must spread slightly to reach the retina, a concave lens corrects short-sightedness, whereas a convex lens fixes long-sightedness."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0021",
+      "questionId": "phys-jamb-0021",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Runners enter deep mud together → slower ones turn more",
+          "tag": "everyday hook",
+          "narration": "Imagine seven runners jogging side by side onto muddy ground at an angle: the runners who slow down most veer off sharply and separate."
+        },
+        {
+          "n": 2,
+          "display": "White light = rainbow colours bundled together",
+          "tag": "dispersion",
+          "narration": "White sunlight already contains every rainbow colour travelling together, and splitting those colours apart through a glass prism is called dispersion."
+        },
+        {
+          "n": 3,
+          "display": "Different speeds in glass → different bending angles",
+          "tag": "how it works",
+          "narration": "Inside glass, red travels fastest and bends least while violet slows down most and bends most, fanning the hidden bundle into a rainbow."
+        },
+        {
+          "n": 4,
+          "display": "Colours come from white light, not hidden inside glass",
+          "tag": "JAMB trap",
+          "narration": "A clever wrong option claims glass hides colours inside itself, testing whether you know glass only separates colours already inside white light."
+        },
+        {
+          "n": 5,
+          "display": "Prism splits white light → Different speeds in glass",
+          "tag": "this question",
+          "narration": "Each colour slows by a different amount in glass and refracts differently, so different speeds of the colours in glass fits, not hidden colours."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0022",
+      "questionId": "phys-jamb-0022",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Like poles of two magnets push each other farther apart",
+          "tag": "everyday hook",
+          "narration": "Bring two matching ends of bar magnets close together and they shove each other away; electric charges of the same kind push apart too."
+        },
+        {
+          "n": 2,
+          "display": "Electroscope leaves spread when extra charge fills them",
+          "tag": "electroscope",
+          "narration": "A charge detector with thin hanging metal flaps, called a gold-leaf electroscope, opens wider whenever more matching charge gathers on its leaves."
+        },
+        {
+          "n": 3,
+          "display": "Positive rod near positive cap → pushes more + to leaves",
+          "tag": "how it works",
+          "narration": "Bringing a positive rod near the positive cap repels more positive charge down to the leaves, making the leaves repel harder and spread wider."
+        },
+        {
+          "n": 4,
+          "display": "Same sign: diverge more · Opposite sign: converge",
+          "tag": "JAMB trap",
+          "narration": "Exams check whether you flip the rule: bringing a negative rod pulls charge upward so leaves converge, whereas a matching charge pushes wider."
+        },
+        {
+          "n": 5,
+          "display": "Positive rod + positive electroscope → Diverge more",
+          "tag": "this question",
+          "narration": "Because both rod and electroscope carry positive charge, extra positive charge pushes down onto the leaves so they diverge more, not converge."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0023",
+      "questionId": "phys-jamb-0023",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "C = 2 + 4 + 8 = 14 μF",
+          "tag": "parallel sum",
+          "narration": "Add two, four, and eight to get fourteen microfarads, because parallel capacitors share the same voltage and add directly."
+        },
+        {
+          "n": 2,
+          "display": "C = 14 × 10⁻⁶ F",
+          "tag": "convert micro",
+          "narration": "Rewrite fourteen microfarads as fourteen times ten to the minus six farads, because energy in joules needs farads."
+        },
+        {
+          "n": 3,
+          "display": "E = ½ C V² = ½ × 14 × 10⁻⁶ × 6²",
+          "tag": "substitute",
+          "narration": "Substitute into half C V squared with fourteen times ten to the minus six and six squared."
+        },
+        {
+          "n": 4,
+          "display": "E = 7 × 36 × 10⁻⁶ = 2.52 × 10⁻⁴ J",
+          "tag": "standard form",
+          "narration": "Seven times thirty-six is two hundred and fifty-two times ten to the minus six, which shifts two places to two point five two times ten to the minus four joules."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2 μF, 4 μF, 8 μF in parallel; V = 6 V",
+          "tag": "the goal",
+          "narration": "Let's find the total energy stored in three parallel capacitors at six volts. We add parallel capacitances first, then apply half C V squared."
+        },
+        {
+          "n": 2,
+          "display": "C = 2 + 4 + 8 = 14 μF",
+          "tag": "total capacitance",
+          "narration": "In parallel, all plates add their charge storage, so total capacitance is two plus four plus eight, giving fourteen microfarads."
+        },
+        {
+          "n": 3,
+          "display": "C = 14 × 10⁻⁶ F",
+          "tag": "convert to farads",
+          "narration": "Next convert microfarads to farads by writing fourteen times ten to the minus six farads, because joules require S I farads."
+        },
+        {
+          "n": 4,
+          "display": "E = ½ × 14 × 10⁻⁶ × 6²",
+          "tag": "energy formula",
+          "narration": "Put C and six volts into energy equals half C V squared. Half of fourteen is seven, and six squared is thirty-six."
+        },
+        {
+          "n": 5,
+          "display": "E = 252 × 10⁻⁶ = 2.52 × 10⁻⁴ J",
+          "tag": "standard form",
+          "narration": "Seven times thirty-six gives two hundred and fifty-two times ten to the minus six. Moving the decimal left two places raises the power to ten to the minus four."
+        },
+        {
+          "n": 6,
+          "display": "Total energy = 2.52 × 10⁻⁴ J",
+          "tag": "answer",
+          "narration": "So the total energy stored by the three capacitors is two point five two times ten to the minus four joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0024",
+      "questionId": "phys-jamb-0024",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R_total = R + r = 2 + 4 = 6 Ω",
+          "tag": "total resistance",
+          "narration": "Add external resistance two ohms and internal resistance four ohms to get six ohms, because current flows through both in series."
+        },
+        {
+          "n": 2,
+          "display": "I = E ÷ (R + r) = 12 ÷ 6",
+          "tag": "Ohm's law",
+          "narration": "Divide twelve volts by total resistance six ohms, since the cell's e m f drives current around the full loop."
+        },
+        {
+          "n": 3,
+          "display": "I = 2 A",
+          "tag": "result",
+          "narration": "Twelve divided by six equals two amperes flowing through the circuit."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "E = 12 V, r = 4 Ω, R = 2 Ω",
+          "tag": "the goal",
+          "narration": "Let's find the current flowing from this cell. Remember, current passes through both the outside resistor and the cell's own internal resistance."
+        },
+        {
+          "n": 2,
+          "display": "R_total = R + r = 2 + 4 = 6 Ω",
+          "tag": "add resistances",
+          "narration": "First add two ohms and four ohms to get six ohms, because internal and external resistances sit in series along the same loop."
+        },
+        {
+          "n": 3,
+          "display": "I = E ÷ (R + r) = 12 ÷ 6",
+          "tag": "divide e.m.f.",
+          "narration": "Now apply I equals E divided by R plus r, putting twelve volts over six ohms."
+        },
+        {
+          "n": 4,
+          "display": "I = 2 A",
+          "tag": "solve",
+          "narration": "Twelve divided by six gives two amperes."
+        },
+        {
+          "n": 5,
+          "display": "Current = 2 A",
+          "tag": "answer",
+          "narration": "So the current flowing in the circuit is two amperes."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0025",
+      "questionId": "phys-jamb-0025",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "I_branch = V ÷ R = 16 ÷ 4 = 4 A",
+          "tag": "one branch",
+          "narration": "Divide sixteen volts by four ohms to get four amperes in one resistor, because every parallel branch gets the full sixteen volts."
+        },
+        {
+          "n": 2,
+          "display": "I_total = 3 × 4 A",
+          "tag": "three branches",
+          "narration": "Multiply four amperes by three, since three identical branches draw equal current side by side."
+        },
+        {
+          "n": 3,
+          "display": "I_total = 12 A",
+          "tag": "result",
+          "narration": "Three times four gives twelve amperes as the total current in the circuit."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Three 4 Ω resistors in parallel, V = 16 V",
+          "tag": "the goal",
+          "narration": "Let's find the total current through three four-ohm resistors in parallel. In parallel, each branch receives the full sixteen volts on its own."
+        },
+        {
+          "n": 2,
+          "display": "I_branch = V ÷ R = 16 ÷ 4 = 4 A",
+          "tag": "each branch",
+          "narration": "First find one branch's current using Ohm's law: sixteen volts divided by four ohms gives four amperes in each resistor."
+        },
+        {
+          "n": 3,
+          "display": "I_total = 4 + 4 + 4 = 12 A",
+          "tag": "add branches",
+          "narration": "Next add the currents from all three equal branches, because total current splits across parallel paths: four plus four plus four equals twelve amperes."
+        },
+        {
+          "n": 4,
+          "display": "Check: R_p = 4/3 Ω  →  I = 16 ÷ (4/3) = 12 A",
+          "tag": "quick check",
+          "narration": "As a check, combined resistance is four thirds of an ohm, and sixteen divided by four thirds also gives twelve amperes."
+        },
+        {
+          "n": 5,
+          "display": "Total current = 12 A",
+          "tag": "answer",
+          "narration": "So the total current flowing in the circuit is twelve amperes."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0026",
+      "questionId": "phys-jamb-0026",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = 200 W = 0.2 kW",
+          "tag": "kilowatts",
+          "narration": "Divide two hundred watts by one thousand to get zero point two kilowatts, because electricity bills charge per kilowatt-hour."
+        },
+        {
+          "n": 2,
+          "display": "E = P × t = 0.2 × 24 = 4.8 kWh",
+          "tag": "energy used",
+          "narration": "Multiply zero point two kilowatts by twenty-four hours in a day to get four point eight kilowatt-hours, ignoring the extra two hundred and forty volts."
+        },
+        {
+          "n": 3,
+          "display": "Cost = 4.8 × ₦40 = ₦192.00",
+          "tag": "total cost",
+          "narration": "Multiply four point eight units by forty naira per unit to get one hundred and ninety-two naira."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 200 W, t = 1 day (24 h), ₦40 / kWh",
+          "tag": "the goal",
+          "narration": "Let's find the daily cost of running this two hundred watt bulb. Notice the two hundred and forty volt supply is extra information we do not need."
+        },
+        {
+          "n": 2,
+          "display": "P = 200 ÷ 1000 = 0.2 kW",
+          "tag": "convert to kW",
+          "narration": "First convert two hundred watts to kilowatts by dividing by one thousand, giving zero point two kilowatts to match kilowatt-hours."
+        },
+        {
+          "n": 3,
+          "display": "E = 0.2 × 24 = 4.8 kWh",
+          "tag": "energy in a day",
+          "narration": "Next multiply zero point two kilowatts by twenty-four hours in one full day, giving four point eight kilowatt-hours of energy."
+        },
+        {
+          "n": 4,
+          "display": "Cost = 4.8 × ₦40 = ₦192.00",
+          "tag": "multiply by rate",
+          "narration": "Now multiply four point eight kilowatt-hours by forty naira per unit to get one hundred and ninety-two naira."
+        },
+        {
+          "n": 5,
+          "display": "Daily cost = ₦192.00",
+          "tag": "answer",
+          "narration": "So keeping the bulb lighted for a full day costs one hundred and ninety-two naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0027",
+      "questionId": "phys-jamb-0027",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "I = 10 mA = 0.01 A",
+          "tag": "SI units",
+          "narration": "Divide ten milliamperes by one thousand to get zero point zero one amperes, because Ohm's law needs amperes."
+        },
+        {
+          "n": 2,
+          "display": "R_total = V ÷ I = 5 ÷ 0.01 = 500 Ω",
+          "tag": "total resistance",
+          "narration": "Divide five volts by zero point zero one amperes to get five hundred ohms for the whole voltmeter branch."
+        },
+        {
+          "n": 3,
+          "display": "R_g = 500 − 498 = 2 Ω",
+          "tag": "galvanometer",
+          "narration": "Subtract the four hundred and ninety-eight ohm series multiplier from five hundred ohms to leave two ohms for the galvanometer."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I = 10 mA, V = 5 V, R_s = 498 Ω",
+          "tag": "the goal",
+          "narration": "Let's find the galvanometer's own resistance. Because the multiplier resistor sits in series with the meter, their resistances add up to total resistance."
+        },
+        {
+          "n": 2,
+          "display": "I = 10 ÷ 1000 = 0.01 A",
+          "tag": "convert mA to A",
+          "narration": "First convert ten milliamperes to amperes by dividing by one thousand, giving zero point zero one amperes for S I units."
+        },
+        {
+          "n": 3,
+          "display": "R_total = V ÷ I = 5 ÷ 0.01 = 500 Ω",
+          "tag": "total resistance",
+          "narration": "Next use Ohm's law: five volts divided by zero point zero one amperes equals five hundred ohms for the entire voltmeter."
+        },
+        {
+          "n": 4,
+          "display": "R_g = 500 − 498 = 2 Ω",
+          "tag": "subtract multiplier",
+          "narration": "Since the series resistor already provides four hundred and ninety-eight ohms, subtract four hundred and ninety-eight from five hundred to get two ohms."
+        },
+        {
+          "n": 5,
+          "display": "Galvanometer resistance = 2 Ω",
+          "tag": "answer",
+          "narration": "So the resistance of the galvanometer is two ohms."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0028",
+      "questionId": "phys-jamb-0028",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Total price ÷ bags bought = price per single bag",
+          "tag": "everyday hook",
+          "narration": "Plot total money spent against bags of cement bought, and the steepness of that straight line simply gives the fixed price of one bag."
+        },
+        {
+          "n": 2,
+          "display": "More electric charge → proportionally more metal plated",
+          "tag": "Faraday's first law",
+          "narration": "During liquid plating, passing twice as much electric charge deposits twice as much metal, a direct link called Faraday's first law."
+        },
+        {
+          "n": 3,
+          "display": "m = z Q  →  slope (m ÷ Q) = z",
+          "tag": "how it works",
+          "narration": "We write mass equals z times charge Q, so dividing mass by charge on the graph's slope gives z, the electrochemical equivalent."
+        },
+        {
+          "n": 4,
+          "display": "Current needs time (I = Q ÷ t) — no time on graph",
+          "tag": "JAMB trap",
+          "narration": "Students spot electricity and jump to current flowing, forgetting that current requires dividing charge by time, and time is nowhere on this graph."
+        },
+        {
+          "n": 5,
+          "display": "Slope of mass vs charge graph → Electrochemical equivalent",
+          "tag": "this question",
+          "narration": "Because rise over run is mass divided by quantity of electricity, the slope gives the electrochemical equivalent, not the current flowing."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0029",
+      "questionId": "phys-jamb-0029",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Tiny turn of tap handle → huge gush of water flows",
+          "tag": "everyday hook",
+          "narration": "A light twist of a water tap handle controls a powerful rushing stream, letting a small effort copy itself into a much bigger flow."
+        },
+        {
+          "n": 2,
+          "display": "Tiny signal controls big current → transistor",
+          "tag": "core idea",
+          "narration": "In electronics, a tiny three-legged component uses a weak signal to control a much stronger current, a device called a transistor."
+        },
+        {
+          "n": 3,
+          "display": "Small base current → large collector current (amplification)",
+          "tag": "how it works",
+          "narration": "Feeding a faint microphone or radio signal into the transistor's middle leg makes a strong matching copy flow out, called amplification of signals."
+        },
+        {
+          "n": 4,
+          "display": "Diode: rectifies a.c. to d.c. · Transistor: amplifies",
+          "tag": "JAMB trap",
+          "narration": "Exams love pairing transistors with converting alternating current to direct current, hoping you confuse transistors with one-way valves called diodes."
+        },
+        {
+          "n": 5,
+          "display": "Main role of transistors → Amplification of signals",
+          "tag": "this question",
+          "narration": "Because transistors turn weak signals into strong ones in radios and speakers, amplification of signals fits, whereas diodes handle alternating to direct conversion."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-0030",
+      "questionId": "phys-jamb-0030",
+      "kind": "concept",
+      "stepSeconds": 7,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Copper wire: open road · Plastic: wall · Silicon: controlled gate",
+          "tag": "everyday hook",
+          "narration": "Copper lets electricity race freely like an open highway and plastic blocks it like a wall, while some crystals sit right in between."
+        },
+        {
+          "n": 2,
+          "display": "Halfway conductor that improves with heat → semiconductor",
+          "tag": "core idea",
+          "narration": "A pure element whose electricity flow sits between metals and insulators, and improves as it warms up, is called an intrinsic semiconductor."
+        },
+        {
+          "n": 3,
+          "display": "Classic pure semiconductors: Silicon & Germanium",
+          "tag": "how it works",
+          "narration": "Elements with four outer bonding electrons, especially silicon and germanium, form neat crystal lattices that power computer chips and solar panels."
+        },
+        {
+          "n": 4,
+          "display": "Silicon: pure base · Phosphorus: added impurity (dopant)",
+          "tag": "JAMB trap",
+          "narration": "Because phosphorus is mixed into chips to add extra electrons, exams plant it as a trap even though phosphorus is only an added impurity."
+        },
+        {
+          "n": 5,
+          "display": "Pure semiconductor element → Silicon",
+          "tag": "this question",
+          "narration": "Among the choices, silicon is a pure intrinsic semiconductor element, whereas phosphorus is merely a dopant added into silicon."
+        }
+      ]
+    }
+  ]
+}
