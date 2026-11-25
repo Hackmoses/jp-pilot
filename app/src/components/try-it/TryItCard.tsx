@@ -63,10 +63,15 @@ export function TryItCard({ interactive, subject, chapter }: {
     setStatus('loading')
     try {
       await waitForOfflineControl()
-      const { default: component } = await interactive.load()
+      const { default: component } = await withTimeout(interactive.load(), 10000)
       setDemo(() => component)
       setStatus('idle')
-    } catch {
+    } catch (error) {
+      // A new deploy renames chunks; reload once so the page picks up the current files.
+      if (isStaleChunk(error) && !sessionStorageFlag('jp-chunk-reload')) {
+        location.reload()
+        return
+      }
       setStatus('error')
     }
   }
@@ -93,4 +98,23 @@ export function TryItCard({ interactive, subject, chapter }: {
       </div>
     </section>
   )
+}
+
+function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
+  return Promise.race([
+    promise,
+    new Promise<T>((_, reject) => setTimeout(() => reject(new Error('timeout')), ms)),
+  ])
+}
+
+function isStaleChunk(error: unknown) {
+  return error instanceof Error && /dynamically imported module|Importing a module script failed|error loading dynamically/i.test(error.message)
+}
+
+function sessionStorageFlag(key: string) {
+  try {
+    if (sessionStorage.getItem(key)) return true
+    sessionStorage.setItem(key, '1')
+  } catch { /* storage blocked: skip reload loop guard by not reloading */ return true }
+  return false
 }

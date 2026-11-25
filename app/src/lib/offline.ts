@@ -6,7 +6,15 @@ export function registerOfflineWorker() {
     : Promise.resolve(null)
 }
 
-export async function waitForOfflineControl() {
+export function waitForOfflineControl(maxWaitMs = 1500): Promise<void> {
+  // Never block content on the offline worker: give it a short head start, then load anyway.
+  return Promise.race([
+    waitForControl().catch(() => undefined),
+    new Promise<void>((resolve) => setTimeout(resolve, maxWaitMs)),
+  ])
+}
+
+async function waitForControl() {
   const registered = await registerOfflineWorker()
   if (!registered) return
   const serviceWorker = navigator.serviceWorker
