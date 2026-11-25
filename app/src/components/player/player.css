@@ -436,6 +436,10 @@ button.jp-player__row:focus-visible,
 .jp-player__modes {
   display: inline-flex;
   align-items: center;
+  flex: none;
+  gap: 2px;
+  block-size: 36px;
+  box-sizing: border-box;
   padding: 2px;
   border: 1px solid var(--option-line);
   border-radius: var(--radius-pill);
@@ -448,9 +452,10 @@ button.jp-player__row:focus-visible,
   align-items: center;
   justify-content: center;
   inline-size: auto;
-  block-size: 32px;
-  min-block-size: 32px;
-  padding: 0 10px;
+  block-size: 30px;
+  min-block-size: 30px;
+  min-inline-size: 0;
+  padding: 0 var(--space-2);
   border: 0;
   border-radius: var(--radius-pill);
   background: transparent;
@@ -483,7 +488,7 @@ button.jp-player__row:focus-visible,
   inset: -4px;
 }
 
-.jp-player:has([data-timed="true"]) .jp-player__controls button {
+.jp-player:has([data-timed="true"]) .jp-player__controls button:not(.jp-player__mode-btn) {
   inline-size: 36px;
   block-size: 36px;
 }

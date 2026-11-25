@@ -25,7 +25,9 @@ let modePreference: NarrationMode | null = null
 
 export function getInitialNarrationMode(hasTeach: boolean, isCorrect?: boolean): NarrationMode {
   if (!hasTeach) return 'quick'
-  return modePreference ?? (isCorrect === false ? 'teach' : 'quick')
+  // Teach me is the default; a manual switch is remembered for the session.
+  void isCorrect
+  return modePreference ?? 'teach'
 }
 
 export function setSessionNarrationMode(mode: NarrationMode) {

@@ -35,7 +35,7 @@ describe('Quick | Teach me playback', () => {
   it('defaults to Teach me after wrong pick, Quick after right pick, and remembers manual choice', () => {
     expect(getInitialNarrationMode(false, false)).toBe('quick')
     expect(getInitialNarrationMode(true, false)).toBe('teach')
-    expect(getInitialNarrationMode(true, true)).toBe('quick')
+    expect(getInitialNarrationMode(true, true)).toBe('teach')
 
     setSessionNarrationMode('quick')
     expect(getInitialNarrationMode(true, false)).toBe('quick')
