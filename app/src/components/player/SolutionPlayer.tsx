@@ -9,7 +9,7 @@ import {
   subscribeToSpeechState,
 } from '../../lib/speech'
 import { logEvent } from '../../lib/store'
-import type { Animation } from '../../lib/types'
+import type { Animation, AnimationStep } from '../../lib/types'
 import { calculationAudio, type NarrationMode } from './calculationAudio'
 import {
   CalculationPlayback,
@@ -19,6 +19,78 @@ import {
   type PlaybackState,
 } from './CalculationPlayback'
 import './player.css'
+
+export function hasStructuredStepFields(step: AnimationStep): boolean {
+  return Boolean(step.title || step.reason || (step.working && step.working.length > 0))
+}
+
+export function renderStaticStepRow(step: AnimationStep, isFinal: boolean) {
+  if (!hasStructuredStepFields(step)) {
+    return (
+      <div
+        key={step.n}
+        class="jp-calc-line-row"
+        data-final={isFinal ? 'true' : 'false'}
+      >
+        <span class="jp-calc-line-text">{renderMathText(step.display)}</span>
+        <span class="jp-calc-line-tag">{step.tag}</span>
+      </div>
+    )
+  }
+
+  return (
+    <div
+      key={step.n}
+      class="jp-calc-line-row jp-calc-line-row--step"
+      data-final={isFinal ? 'true' : 'false'}
+    >
+      <span class="jp-step__title">{renderMathText(step.title ?? step.tag)}</span>
+      {step.reason && <span class="jp-step__reason">{renderMathText(step.reason)}</span>}
+      {step.working && step.working.length > 0 && (
+        <span class="jp-step__working" role="list">
+          {step.working.map((line, i) => (
+            <span key={i} class="jp-step__work-item" role="listitem">
+              {renderMathText(line)}
+            </span>
+          ))}
+        </span>
+      )}
+      <span class="jp-step__display-wrap">
+        <span class="jp-calc-line-text">{renderMathText(step.display)}</span>
+      </span>
+    </div>
+  )
+}
+
+export function renderAnimatedStepContent(step: AnimationStep) {
+  if (!hasStructuredStepFields(step)) {
+    return (
+      <>
+        <span class="jp-player__line">{renderMathText(step.display)}</span>
+        <span class="jp-player__tag">{step.tag}</span>
+      </>
+    )
+  }
+
+  return (
+    <>
+      <span class="jp-step__title">{renderMathText(step.title ?? step.tag)}</span>
+      {step.reason && <span class="jp-step__reason">{renderMathText(step.reason)}</span>}
+      {step.working && step.working.length > 0 && (
+        <span class="jp-step__working" role="list">
+          {step.working.map((line, i) => (
+            <span key={i} class="jp-step__work-item" role="listitem">
+              {renderMathText(line)}
+            </span>
+          ))}
+        </span>
+      )}
+      <span class="jp-step__display-wrap">
+        <span class="jp-player__line">{renderMathText(step.display)}</span>
+      </span>
+    </>
+  )
+}
 
 export interface SolutionPlayerProps {
   animationId: string
@@ -66,6 +138,7 @@ function Player({
   const hasTeach = !isConcept && Boolean(animation.teach && animation.teach.length > 0)
   const [mode, setMode] = useState<NarrationMode>(() => getInitialNarrationMode(hasTeach, isCorrect))
   const steps = mode === 'teach' && animation.teach ? animation.teach : animation.steps
+  const hasStructuredSteps = steps.some(hasStructuredStepFields)
   const toggleTitle = isConcept ? 'Teach me' : 'See the calculation'
   const toggleSubtitle = isConcept ? `${steps.length} steps, explained simply` : `${steps.length} steps, written out by hand`
   const toggleIcon = isConcept ? (
@@ -364,21 +437,12 @@ function Player({
   const calculationBody = !animatedMode ? (
     <>
       <div
-        class="jp-calc-paper"
+        class={hasStructuredSteps ? 'jp-calc-paper jp-calc-paper--steps' : 'jp-calc-paper'}
         data-expandable={!expanded ? 'true' : undefined}
         title={!expanded ? 'Click to expand calculation' : undefined}
         onClick={!expanded ? () => setExpanded(true) : undefined}
       >
-        {steps.map((step, position) => (
-          <div
-            key={step.n}
-            class="jp-calc-line-row"
-            data-final={position === steps.length - 1 ? 'true' : 'false'}
-          >
-            <span class="jp-calc-line-text">{renderMathText(step.display)}</span>
-            <span class="jp-calc-line-tag">{step.tag}</span>
-          </div>
-        ))}
+        {steps.map((step, position) => renderStaticStepRow(step, position === steps.length - 1))}
       </div>
       <div class="jp-calc-bar">
         <button
@@ -432,7 +496,12 @@ function Player({
         </button>
       </div>
 
-      <div class="jp-player__paper" ref={paperRef} data-timed={playback ? 'true' : undefined} data-running={playing || replaying}>
+      <div
+        class={hasStructuredSteps ? 'jp-player__paper jp-player__paper--steps' : 'jp-player__paper'}
+        ref={paperRef}
+        data-timed={playback ? 'true' : undefined}
+        data-running={playing || replaying}
+      >
         {!current && (
           <p class="jp-player__prompt">
             {isConcept
@@ -440,20 +509,24 @@ function Player({
               : 'Tap play to watch the working, one step at a time.'}
           </p>
         )}
-        {steps.map((step, position) => (
-          <StepRow
-            key={position === index ? `${position}-${replay}` : position}
-            class="jp-player__row"
-            data-current={position === index}
-            aria-hidden={position > index ? true : undefined}
-            type={playback ? 'button' : undefined}
-            aria-label={playback ? `Replay step ${position + 1}: ${step.display}` : undefined}
-            onClick={playback ? () => replayStep(position) : undefined}
-          >
-            <span class="jp-player__line">{renderMathText(step.display)}</span>
-            <span class="jp-player__tag">{step.tag}</span>
-          </StepRow>
-        ))}
+        {steps.map((step, position) => {
+          const structured = hasStructuredStepFields(step)
+          const isFinal = position === steps.length - 1
+          return (
+            <StepRow
+              key={position === index ? `${position}-${replay}` : position}
+              class={structured ? 'jp-player__row jp-player__row--step' : 'jp-player__row'}
+              data-current={position === index}
+              data-final={isFinal ? 'true' : 'false'}
+              aria-hidden={position > index ? true : undefined}
+              type={playback ? 'button' : undefined}
+              aria-label={playback ? `Replay step ${position + 1}: ${structured ? (step.title ?? step.tag) : step.display}` : undefined}
+              onClick={playback ? () => replayStep(position) : undefined}
+            >
+              {renderAnimatedStepContent(step)}
+            </StepRow>
+          )
+        })}
       </div>
 
       <p class="jp-player__caption" aria-live="polite" aria-atomic="true">

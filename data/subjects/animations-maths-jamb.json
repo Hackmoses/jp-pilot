@@ -264,33 +264,58 @@
       "teach": [
         {
           "n": 1,
+          "title": "Start · Negative indices",
+          "reason": "We want to evaluate this indices expression. A negative power flips a base into its reciprocal.",
           "display": "\\left(\\frac{81}{16}\\right)^{-\\frac{1}{4}} × 2^{-1}",
-          "tag": "the goal",
-          "narration": "We need to evaluate this indices expression. Both powers are negative, which tells us to flip each base before taking any roots."
+          "tag": "goal",
+          "narration": "Let's evaluate eighty one over sixteen to the power of minus one quarter, times two to the power of minus one. Remember, a negative power tells us to flip the base first."
         },
         {
           "n": 2,
-          "display": "\\left(\\frac{81}{16}\\right)^{-\\frac{1}{4}} = \\left(\\frac{16}{81}\\right)^{\\frac{1}{4}}",
-          "tag": "flip first",
-          "narration": "Flip eighty one over sixteen to sixteen over eighty one so the negative sign leaves the exponent one over four."
+          "title": "1) Flip for the negative power",
+          "reason": "Flip \\frac{81}{16} upside down to \\frac{16}{81} so the power becomes positive \\frac{1}{4}.",
+          "display": "\\left(\\frac{16}{81}\\right)^{\\frac{1}{4}} × 2^{-1}",
+          "tag": "flip base",
+          "narration": "First, flip eighty one over sixteen to sixteen over eighty one. That clears the minus sign from the power, leaving positive one quarter."
         },
         {
           "n": 3,
-          "display": "\\left(\\frac{16}{81}\\right)^{\\frac{1}{4}} = \\frac{2}{3}",
+          "title": "2) Take the fourth root",
+          "reason": "A power of \\frac{1}{4} means the fourth root of the top and the bottom.",
+          "working": [
+            "2^{4} = 16, so fourth root of 16 is 2",
+            "3^{4} = 81, so fourth root of 81 is 3"
+          ],
+          "display": "\\frac{2}{3} × 2^{-1}",
           "tag": "fourth root",
-          "narration": "A power of one over four means the fourth root. Two to the fourth is sixteen and three to the fourth is eighty one, so this gives two over three."
+          "narration": "Next, a power of one quarter means the fourth root. Two to the fourth is sixteen and three to the fourth is eighty one, so the first part becomes two over three."
         },
         {
           "n": 4,
-          "display": "2^{-1} = \\frac{1}{2}",
-          "tag": "second part",
-          "narration": "For the second factor, two to the power of minus one flips two to one over two."
+          "title": "3) Change 2^{-1} to \\frac{1}{2}",
+          "reason": "A power of −1 turns a number into its reciprocal, so 2^{-1} becomes \\frac{1}{2}.",
+          "display": "\\frac{2}{3} × \\frac{1}{2}",
+          "tag": "reciprocal",
+          "narration": "Now change two to the power of minus one into one over two, because any base to the power of minus one is one over that base."
         },
         {
           "n": 5,
+          "title": "4) Multiply the fractions",
+          "reason": "Cancel the common factor of 2 on top and bottom, then multiply what remains.",
+          "working": [
+            "\\frac{2 × 1}{3 × 2} = \\frac{1}{3}"
+          ],
           "display": "\\frac{2}{3} × \\frac{1}{2} = \\frac{1}{3}",
+          "tag": "multiply",
+          "narration": "Now multiply two over three by one over two. The two on top cancels the two below, leaving one over three."
+        },
+        {
+          "n": 6,
+          "title": "Final answer",
+          "reason": "The whole indices expression simplifies to \\frac{1}{3}.",
+          "display": "\\frac{1}{3}",
           "tag": "answer",
-          "narration": "Now multiply two over three by one over two. The two on top cancels the two below, leaving one over three as the final value."
+          "narration": "So the value of the whole expression is one over three."
         }
       ]
     },
@@ -390,33 +415,51 @@
       "teach": [
         {
           "n": 1,
+          "title": "Start · Rationalise the denominator",
+          "reason": "We want to clear the square roots from the bottom using its conjugate, \\sqrt{5} + \\sqrt{3}.",
           "display": "\\frac{2\\sqrt{3} + \\sqrt{5}}{\\sqrt{5} − \\sqrt{3}}",
-          "tag": "the goal",
-          "narration": "To rationalise this fraction, we remove the square roots from the denominator using its conjugate, which flips the minus sign to a plus."
+          "tag": "goal",
+          "narration": "Let's rationalise this surd fraction. Because the bottom has root five minus root three, we use its conjugate, root five plus root three, to clear the roots below."
         },
         {
           "n": 2,
-          "display": "× \\frac{\\sqrt{5} + \\sqrt{3}}{\\sqrt{5} + \\sqrt{3}}",
+          "title": "1) Multiply by the conjugate",
+          "reason": "The bottom has a surd, so we multiply top and bottom by \\sqrt{5} + \\sqrt{3} to clear it without changing the value.",
+          "display": "\\frac{(2\\sqrt{3} + \\sqrt{5})(\\sqrt{5} + \\sqrt{3})}{(\\sqrt{5} − \\sqrt{3})(\\sqrt{5} + \\sqrt{3})}",
           "tag": "conjugate",
-          "narration": "Multiply both top and bottom by the square root of five plus the square root of three so the value of the fraction stays unchanged."
+          "narration": "First, multiply both the top and the bottom by root five plus root three. Doing the same to top and bottom keeps the fraction equal."
         },
         {
           "n": 3,
-          "display": "Top = 2\\sqrt{15} + 6 + 5 + \\sqrt{15} = 3\\sqrt{15} + 11",
+          "title": "2) Expand the top",
+          "reason": "Multiply each term in the first bracket by each term in the second, then collect like terms.",
+          "working": [
+            "2\\sqrt{3} × \\sqrt{5} = 2\\sqrt{15} and 2\\sqrt{3} × \\sqrt{3} = 6",
+            "\\sqrt{5} × \\sqrt{5} = 5 and \\sqrt{5} × \\sqrt{3} = \\sqrt{15}",
+            "2\\sqrt{15} + \\sqrt{15} + 6 + 5 = 3\\sqrt{15} + 11"
+          ],
+          "display": "\\frac{3\\sqrt{15} + 11}{(\\sqrt{5} − \\sqrt{3})(\\sqrt{5} + \\sqrt{3})}",
           "tag": "expand top",
-          "narration": "Expand the numerator carefully: two times root three times root three is six, and root five times root five is five, giving three root fifteen plus eleven."
+          "narration": "Next, expand the top term by term. Two root fifteen plus one root fifteen gives three root fifteen, and six plus five gives eleven."
         },
         {
           "n": 4,
-          "display": "Bottom = (\\sqrt{5})^{2} − (\\sqrt{3})^{2} = 5 − 3 = 2",
-          "tag": "denominator",
-          "narration": "In the denominator, difference of two squares removes the middle terms, leaving five minus three, which is two."
+          "title": "3) Simplify the bottom",
+          "reason": "Difference of two squares removes the middle surd terms on the bottom.",
+          "working": [
+            "(\\sqrt{5})^{2} − (\\sqrt{3})^{2} = 5 − 3 = 2"
+          ],
+          "display": "\\frac{3\\sqrt{15} + 11}{5 − 3}",
+          "tag": "simplify bottom",
+          "narration": "Now simplify the bottom using difference of two squares. Root five squared minus root three squared gives five minus three, which is two."
         },
         {
           "n": 5,
+          "title": "Final fraction",
+          "reason": "No surd remains in the denominator, so the fraction is fully rationalised.",
           "display": "\\frac{3\\sqrt{15} + 11}{2}",
           "tag": "answer",
-          "narration": "Putting top over bottom gives three times the square root of fifteen plus eleven, all over two, with no surd left below."
+          "narration": "So the rationalised fraction is three root fifteen plus eleven, all over two."
         }
       ]
     },
@@ -555,33 +598,62 @@
       "teach": [
         {
           "n": 1,
+          "title": "Start · Make Q the subject",
+          "reason": "We want Q alone on one side, so we undo the outer operations around Q in reverse order.",
           "display": "P = \\frac{M}{5}(X + Q) + 1",
-          "tag": "the goal",
-          "narration": "We want to make Q the subject of this formula. We peel off the outer operations in reverse order until Q stands alone."
+          "tag": "goal",
+          "narration": "Let's make Q the subject of this formula. To get Q alone, we peel off the outer operations in reverse order, starting with the plus one."
         },
         {
           "n": 2,
+          "title": "1) Subtract 1 from both sides",
+          "reason": "Take away 1 from both sides so the fraction term stands alone on the right.",
           "display": "P − 1 = \\frac{M}{5}(X + Q)",
-          "tag": "undo +1",
-          "narration": "First subtract one from both sides to isolate the fraction term on the right."
+          "tag": "subtract 1",
+          "narration": "First, subtract one from both sides. That leaves P minus one equal to M over five times X plus Q."
         },
         {
           "n": 3,
-          "display": "5P − 5 = MX + MQ",
-          "tag": "clear 5",
-          "narration": "Multiply both sides by five to clear the denominator, and expand M times X plus Q into M X plus M Q."
+          "title": "2) Multiply both sides by 5",
+          "reason": "Multiply every term on the left by 5 to clear the denominator 5 on the right.",
+          "working": [
+            "5(P − 1) = 5P − 5"
+          ],
+          "display": "5P − 5 = M(X + Q)",
+          "tag": "multiply by 5",
+          "narration": "Next, multiply both sides by five to clear the fraction. Five times P minus one gives five P minus five, equal to M times X plus Q."
         },
         {
           "n": 4,
-          "display": "MQ = 5P − MX − 5",
-          "tag": "isolate MQ",
-          "narration": "Move M X across the equals sign so it becomes minus M X, leaving M Q by itself."
+          "title": "3) Expand the bracket",
+          "reason": "Multiply M into both X and Q so we can separate the Q term.",
+          "display": "5P − 5 = MX + MQ",
+          "tag": "expand",
+          "narration": "Now expand the bracket by multiplying M into X and Q, giving M X plus M Q."
         },
         {
           "n": 5,
+          "title": "4) Isolate MQ",
+          "reason": "Subtract MX from both sides so the term with Q stands by itself.",
+          "display": "MQ = 5P − MX − 5",
+          "tag": "isolate MQ",
+          "narration": "Subtract M X from both sides so M Q stands alone, equal to five P minus M X minus five."
+        },
+        {
+          "n": 6,
+          "title": "5) Divide both sides by M",
+          "reason": "Divide the entire right side by M to undo multiplying Q by M.",
+          "display": "\\frac{MQ}{M} = \\frac{5P − MX − 5}{M}",
+          "tag": "divide by M",
+          "narration": "Now divide both sides by M so the M in front of Q cancels out."
+        },
+        {
+          "n": 7,
+          "title": "Final formula",
+          "reason": "Q now stands alone as the subject of the formula.",
           "display": "Q = \\frac{5P − MX − 5}{M}",
           "tag": "answer",
-          "narration": "Finally divide the whole right side by M to get Q equals five P minus M X minus five, all over M."
+          "narration": "So making Q the subject gives Q equals five P minus M X minus five, all over M."
         }
       ]
     },

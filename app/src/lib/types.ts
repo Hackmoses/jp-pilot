@@ -57,6 +57,9 @@ export interface AnimationStep {
   n: number
   display: string
   tag: string
+  title?: string
+  reason?: string
+  working?: string[]
   narration: string
 }
 

@@ -1,4 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import type { VNode } from 'preact'
 import {
   CalculationPlayback,
   getInitialNarrationMode,
@@ -6,6 +7,34 @@ import {
   setSessionNarrationMode,
   type PlaybackState,
 } from './CalculationPlayback'
+import {
+  hasStructuredStepFields,
+  renderAnimatedStepContent,
+  renderStaticStepRow,
+} from './SolutionPlayer'
+
+function collectClasses(node: unknown, out: string[] = []): string[] {
+  if (!node || typeof node !== 'object') return out
+  if (Array.isArray(node)) {
+    for (const item of node) collectClasses(item, out)
+    return out
+  }
+  const vnode = node as VNode<{ class?: string; children?: unknown }>
+  if (typeof vnode.props?.class === 'string') out.push(vnode.props.class)
+  if (vnode.props?.children !== undefined) collectClasses(vnode.props.children, out)
+  return out
+}
+
+function collectText(node: unknown): string {
+  if (node == null || typeof node === 'boolean') return ''
+  if (typeof node === 'string' || typeof node === 'number') return String(node)
+  if (Array.isArray(node)) return node.map(collectText).join('')
+  if (typeof node === 'object') {
+    const vnode = node as VNode<{ children?: unknown }>
+    return collectText(vnode.props?.children)
+  }
+  return ''
+}
 
 const makeClip = (animationId: string, step: number, path: string, durationMs: number) => ({
   animationId,
@@ -106,5 +135,44 @@ describe('Quick | Teach me playback', () => {
     expect(states[states.length - 1]).toEqual({ index: 0, playing: true, sound: false, speed: 1.25 })
 
     playback.dispose()
+  })
+
+  it('renders steps without title, reason, or working identically to legacy layout', () => {
+    const legacyStep = {
+      n: 1,
+      display: '2^{-1} = \\frac{1}{2}',
+      tag: 'reciprocal',
+      narration: 'Rewrite two to the power of minus one as one over two.',
+    }
+    expect(hasStructuredStepFields(legacyStep)).toBe(false)
+
+    const staticRow = renderStaticStepRow(legacyStep, false)
+    const staticClasses = collectClasses(staticRow).filter((c) => !c.startsWith('jp-math-'))
+    expect(staticClasses).toEqual(['jp-calc-line-row', 'jp-calc-line-text', 'jp-calc-line-tag'])
+    expect(staticClasses.some((c) => c.startsWith('jp-step__'))).toBe(false)
+
+    const animContent = renderAnimatedStepContent(legacyStep)
+    const animClasses = collectClasses(animContent).filter((c) => !c.startsWith('jp-math-'))
+    expect(animClasses).toEqual(['jp-player__line', 'jp-player__tag'])
+    expect(animClasses.some((c) => c.startsWith('jp-step__'))).toBe(false)
+
+    const structuredStep = {
+      ...legacyStep,
+      title: '1) Multiply by the conjugate',
+      reason: 'Multiply top and bottom by \\sqrt{5} + \\sqrt{3}.',
+      working: ['5 - 3 = 2'],
+    }
+    expect(hasStructuredStepFields(structuredStep)).toBe(true)
+    const structuredClasses = collectClasses(renderAnimatedStepContent(structuredStep))
+    expect(structuredClasses).toContain('jp-step__title')
+    expect(structuredClasses).toContain('jp-step__reason')
+    expect(structuredClasses).toContain('jp-step__working')
+    expect(structuredClasses).toContain('jp-step__work-item')
+    expect(structuredClasses).toContain('jp-step__display-wrap')
+    expect(structuredClasses).toContain('jp-player__line')
+
+    const fallbackTitleStep = { ...legacyStep, reason: 'Flip upside down.' }
+    const fallbackText = collectText(renderStaticStepRow(fallbackTitleStep, true))
+    expect(fallbackText).toContain('reciprocal')
   })
 })

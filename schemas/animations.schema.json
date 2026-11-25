@@ -79,6 +79,24 @@
             "type": "string",
             "description": "Small label beside the line"
           },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Optional numbered bold heading saying what is done in this step. Falls back to tag when omitted."
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Optional one-sentence plain reason explaining what we do and why. May include maths notation."
+          },
+          "working": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "Optional compact list of side-working lines for small sums. May include maths notation."
+          },
           "narration": {
             "type": "string",
             "description": "Spoken line and caption. Written as words, never symbols, so a voice can read it."

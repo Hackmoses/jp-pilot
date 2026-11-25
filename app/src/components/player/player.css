@@ -326,7 +326,8 @@ button.jp-player__row:focus-visible,
     animation: jp-player-fade 0.4s ease 1.4s both;
   }
 
-  .jp-player__paper[data-running="false"] .jp-player__row[data-current="true"] > span {
+  .jp-player__paper[data-running="false"] .jp-player__row[data-current="true"] > span,
+  .jp-player__paper[data-running="false"] .jp-player__row[data-current="true"] .jp-player__line {
     animation-play-state: paused;
   }
 
@@ -699,5 +700,142 @@ button.jp-player__row:focus-visible,
   .jp-calc-modal .jp-player__progress,
   .jp-calc-modal .jp-player__caption {
     padding-inline: 16px;
+  }
+}
+
+/* Structured calculation step cards (used when title/reason/working are present) */
+.jp-calc-paper--steps,
+.jp-player__paper--steps {
+  background: var(--bg);
+  padding: 10px 14px;
+  gap: 8px;
+  font-family: var(--font-system);
+}
+
+.jp-calc-line-row--step,
+.jp-player__row--step {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+  padding: 8px 10px;
+  margin-inline: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-small);
+  background: var(--bg);
+  text-align: start;
+}
+
+.jp-player__row--step[aria-hidden="true"] {
+  display: none;
+}
+
+.jp-player__row--step[data-current="true"] {
+  background: var(--highlight);
+  border-color: #cbd5e1;
+}
+
+.jp-step__title {
+  display: block;
+  font: 700 13px/1.35 var(--font-system);
+  color: #0f172a;
+}
+
+.jp-step__reason {
+  display: block;
+  font: 400 12.5px/1.45 var(--font-system);
+  color: var(--ink-2);
+}
+
+.jp-step__working {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 2px 0;
+  padding: 5px 10px;
+  border-left: 2px solid #cbd5e1;
+  border-radius: 6px;
+  background: #f8fafc;
+  font: 500 12.5px/1.45 var(--font-system);
+  color: #334155;
+}
+
+.jp-step__work-item {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+}
+
+.jp-step__work-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--ink-2);
+}
+
+.jp-step__display-wrap {
+  display: block;
+  text-align: center;
+  padding: 4px 6px 2px;
+}
+
+.jp-calc-line-row--step .jp-calc-line-text,
+.jp-player__row--step .jp-player__line {
+  display: inline-block;
+  max-width: 100%;
+  font: 500 26px/1.3 var(--font-handwriting);
+  color: #1e293b;
+}
+
+.jp-player__row--step[data-current="true"] .jp-player__line {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.jp-calc-line-row--step[data-final="true"],
+.jp-player__row--step[data-final="true"] {
+  background: var(--good-soft);
+  border: 1.5px solid var(--good);
+}
+
+.jp-calc-line-row--step[data-final="true"] .jp-step__title,
+.jp-player__row--step[data-final="true"] .jp-step__title {
+  color: #14532d;
+}
+
+.jp-calc-line-row--step[data-final="true"] .jp-calc-line-text,
+.jp-player__row--step[data-final="true"] .jp-player__line {
+  color: #14532d;
+  font-weight: 700;
+}
+
+.jp-calc-modal .jp-calc-paper--steps,
+.jp-calc-modal .jp-player__paper--steps {
+  background: var(--bg);
+  padding: 20px 24px;
+  gap: 12px;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.jp-calc-modal .jp-step__title {
+  font-size: 14px;
+}
+
+.jp-calc-modal .jp-step__reason,
+.jp-calc-modal .jp-step__working {
+  font-size: 13.5px;
+}
+
+.jp-calc-modal .jp-calc-line-row--step .jp-calc-line-text,
+.jp-calc-modal .jp-player__row--step .jp-player__line {
+  font-size: clamp(1.9rem, 2.8vw, 2.3rem);
+}
+
+@media (max-width: 640px) {
+  .jp-calc-modal .jp-calc-paper--steps,
+  .jp-calc-modal .jp-player__paper--steps {
+    padding: 14px 16px;
+    gap: 8px;
   }
 }
