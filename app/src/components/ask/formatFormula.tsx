@@ -1,4 +1,5 @@
 import type { ComponentChildren } from 'preact'
+import { hasMathNotation, renderMathText } from '../../lib/mathText'
 
 const TOKEN_PATTERN =
   /->|\b10\^-?\d+|\b(?:mol\s+dm\^-?\d+|dm\^-?\d+|(?:cm|dm|mm|km|m|s|m\/s)(?:2|3|-1|-2|-3))\b|\b(?:[A-Z][a-z]?\d*(?:\([A-Za-z0-9]+\)\d*)*(?:[A-Z][a-z]?\d*|\([A-Za-z0-9]+\)\d*)+(?:\^\d*[+-]|[+-])?|[A-Z][a-z]?(?:[23][+-]|\^\d*[+-]|[+-])|[A-Z][a-z]?\d+)(?![A-Za-z0-9])/g
@@ -81,7 +82,7 @@ function formatToken(token: string, key: number): ComponentChildren {
   )
 }
 
-export function renderFormattedText(text: string): ComponentChildren {
+function formatChemistryText(text: string): ComponentChildren {
   const output: ComponentChildren[] = []
   let lastIndex = 0
   let key = 0
@@ -110,4 +111,13 @@ export function renderFormattedText(text: string): ComponentChildren {
   }
 
   return output.length > 0 ? output : text
+}
+
+export function renderFormattedText(text: string): ComponentChildren {
+  if (hasMathNotation(text)) {
+    return renderMathText(text, (chunk, keyOffset) => (
+      <span key={`c-${keyOffset}`}>{formatChemistryText(chunk)}</span>
+    ))
+  }
+  return formatChemistryText(text)
 }

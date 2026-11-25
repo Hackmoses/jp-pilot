@@ -338,6 +338,35 @@ button.jp-player__row:focus-visible,
   .jp-player__paper[data-timed="true"] .jp-player__row[data-current="true"] .jp-player__tag {
     animation: none;
   }
+
+  .jp-player__row[data-current="true"] .jp-math-bar {
+    transform-origin: left;
+    animation: jp-math-bar-draw 0.4s linear 0.65s both;
+  }
+
+  .jp-player__row[data-current="true"] .jp-math-den {
+    animation: jp-player-write 0.65s steps(20, end) 1.05s both;
+  }
+
+  .jp-player__paper[data-timed="true"] .jp-player__row[data-current="true"] .jp-math-bar {
+    animation: none;
+    transform: scaleX(clamp(0, (var(--jp-pen-p, 1) - 0.38) * 4, 1));
+  }
+
+  .jp-player__paper[data-timed="true"] .jp-player__row[data-current="true"] .jp-math-den {
+    animation: none;
+    clip-path: inset(0 calc(clamp(0, 1 - (var(--jp-pen-p, 1) - 0.60) * 2.8, 1) * 100%) 0 0);
+  }
+}
+
+@keyframes jp-math-bar-draw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.jp-calc-paper .jp-math-bar,
+.jp-player__line .jp-math-bar {
+  height: 1.5px;
 }
 
 @keyframes jp-player-write {

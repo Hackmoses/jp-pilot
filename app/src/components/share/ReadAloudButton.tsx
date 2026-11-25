@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'preact/hooks'
 import { getQuestion } from '../../lib/data'
+import { mathToSpeech } from '../../lib/mathText'
 import {
   cancelSpeech,
   getActiveSpeechKey,
@@ -90,7 +91,7 @@ export function ReadAloudButton(props: ReadAloudProps) {
       onClick={() => {
         if (speaking) {
           cancelSpeech()
-        } else if (speak(words, speechKey)) {
+        } else if (speak(mathToSpeech(words), speechKey)) {
           logEvent('read_aloud', { questionId, target })
         }
       }}

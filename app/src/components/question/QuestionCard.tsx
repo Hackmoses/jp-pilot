@@ -1,5 +1,6 @@
 import type { ComponentChildren } from 'preact'
 import { useEffect, useId, useState } from 'preact/hooks'
+import { renderMathText } from '../../lib/mathText'
 import type { Option, OptionId, Question } from '../../lib/types'
 import { ReadAloudButton } from '../share/ReadAloudButton'
 import { OPTION_LETTERS, getOptionViewState, getResultCopy } from './logic'
@@ -9,6 +10,8 @@ export interface QuestionCardProps {
   review: boolean
   options: readonly Option[]
   pickedId: OptionId | null
+  reveal?: boolean
+  exam?: boolean
   onPick: (optionId: OptionId) => void
   calculationSlot?: ComponentChildren
   conceptSlot?: ComponentChildren
@@ -19,13 +22,15 @@ export function QuestionCard({
   review,
   options,
   pickedId,
+  reveal = false,
+  exam = false,
   onPick,
   calculationSlot,
   conceptSlot,
 }: QuestionCardProps) {
-  const answered = pickedId !== null
+  const answered = !exam && (pickedId !== null || reveal)
   const isCorrect = answered && pickedId === question.answerId
-  const result = answered ? getResultCopy(isCorrect) : null
+  const result = answered && pickedId !== null ? getResultCopy(isCorrect) : null
   // All explanation cards start collapsed; the student opens what they need.
   const [explainOpen, setExplainOpen] = useState(false)
   const [otherWrongOpen, setOtherWrongOpen] = useState(false)
@@ -61,6 +66,11 @@ export function QuestionCard({
   const pickedLetter = pickedIdx >= 0 ? OPTION_LETTERS[pickedIdx] : ''
   const correctIdx = options.findIndex((option) => option.id === question.answerId)
   const correctLetter = correctIdx >= 0 ? OPTION_LETTERS[correctIdx] : ''
+
+  const isApiQuestion =
+    question.label === 'JAMB-style practice' ||
+    question.id.includes('-api-') ||
+    (typeof question.source === 'string' && /^SdashAPI/i.test(question.source))
 
   return (
     <>
@@ -103,25 +113,25 @@ export function QuestionCard({
             <span class="jp-result-title">
               {isCorrect ? 'Correct.' : `Not quite. You chose ${pickedLetter}.`}
             </span>
-            <span class="jp-result-sub">{result.subtitle}</span>
+            <span class="jp-result-sub">{reveal && !isCorrect ? 'Read why under your answer.' : result.subtitle}</span>
           </div>
         </div>
       )}
 
       <section class="jp-card jp-question-card" aria-label="Question">
-        {(review || question.id.includes('-api-') || /^SdashAPI/i.test(question.source)) && (
+        {!exam && (review || isApiQuestion) && (
           <div class="jp-pills">
             {review && <span class="jp-pill jp-pill--streak jp-pill--review">Review</span>}
-            {(question.id.includes('-api-') || /^SdashAPI/i.test(question.source)) && (
+            {isApiQuestion && (
               <span class="jp-pill jp-pill--practice jp-pill--review">JAMB-style practice</span>
             )}
           </div>
         )}
-        <p class="jp-stem">{question.stem}</p>
+        <p class="jp-stem">{renderMathText(question.stem)}</p>
 
         <div class="jp-options" role="group" aria-label="Answer options">
           {options.map((option, index) => {
-            const view = getOptionViewState(option, index, question, pickedId)
+            const view = getOptionViewState(option, index, question, exam ? null : pickedId, reveal)
             const statusClass = view.status === 'idle' ? '' : ` jp-option--${view.status}`
 
             return (
@@ -131,15 +141,16 @@ export function QuestionCard({
                 class={`jp-option${statusClass}`}
                 disabled={view.disabled}
                 aria-disabled={view.disabled ? 'true' : undefined}
+                aria-pressed={exam ? pickedId === option.id : undefined}
                 onClick={() => onPick(option.id)}
               >
                 <span class="jp-option-main">
                   <span class="jp-badge" aria-hidden="true">
                     {view.letter}
                   </span>
-                  <span class="jp-option-text">{option.text}</span>
+                  <span class="jp-option-text">{renderMathText(option.text)}</span>
                 </span>
-                {view.note && <span class="jp-option-note">{view.note}</span>}
+                {view.note && <span class="jp-option-note">{renderMathText(view.note)}</span>}
               </button>
             )
           })}
@@ -176,7 +187,7 @@ export function QuestionCard({
             </button>
           </div>
           <div id={wrongBodyId} hidden={!wrongOpen}>
-            <p class="jp-explain-body">{pickedOption.whyWrong}</p>
+            <p class="jp-explain-body">{renderMathText(pickedOption.whyWrong)}</p>
           </div>
         </section>
       )}
@@ -227,7 +238,7 @@ export function QuestionCard({
             </button>
           </div>
           <div id={explainBodyId} class="jp-explain-content" hidden={!explainOpen}>
-            <p class="jp-explain-body">{question.explanation}</p>
+            <p class="jp-explain-body">{renderMathText(question.explanation)}</p>
             <div class="jp-explain-notes">
               <div class="jp-explain-subgrid">
                 <div class="jp-subbox jp-subbox--trap">
@@ -249,11 +260,11 @@ export function QuestionCard({
                     </svg>
                     WATCH OUT: THE TRAP
                   </span>
-                  <p>{question.trap}</p>
+                  <p>{renderMathText(question.trap)}</p>
                 </div>
                 <div class="jp-subbox jp-subbox--memo">
                   <span class="jp-subbox-label">Remember it</span>
-                  <p>{question.mnemonic}</p>
+                  <p>{renderMathText(question.mnemonic)}</p>
                 </div>
               </div>
             </div>
@@ -315,9 +326,9 @@ export function QuestionCard({
               <div key={option.id} class="jp-other-wrong-row">
                 <div class="jp-other-wrong-row-head">
                   <span class="jp-other-wrong-letter" aria-hidden="true">{letter}</span>
-                  <span class="jp-other-wrong-opt">{option.text}</span>
+                  <span class="jp-other-wrong-opt">{renderMathText(option.text)}</span>
                 </div>
-                <p class="jp-other-wrong-reason">{option.whyWrong}</p>
+                <p class="jp-other-wrong-reason">{renderMathText(option.whyWrong ?? '')}</p>
               </div>
             ))}
           </div>

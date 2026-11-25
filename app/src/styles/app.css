@@ -754,6 +754,75 @@ body {
   }
 }
 
+.jp-math-frac {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 2px;
+  font-size: 0.9em;
+  line-height: 1.15;
+}
+
+.jp-math-sup .jp-math-frac,
+.jp-math-sub .jp-math-frac {
+  font-size: 0.8em;
+}
+
+.jp-math-num,
+.jp-math-den {
+  padding: 0 3px;
+}
+
+.jp-math-bar {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+}
+
+.jp-math-sqrt {
+  display: inline-flex;
+  align-items: stretch;
+  vertical-align: baseline;
+}
+
+.jp-math-radical {
+  line-height: 1.05;
+  margin-right: 1px;
+}
+
+.jp-math-radicand {
+  border-top: 1.4px solid currentColor;
+  padding: 0 2px;
+  line-height: 1.15;
+}
+
+.jp-math-paren {
+  display: inline-flex;
+  align-items: stretch;
+  vertical-align: middle;
+}
+
+.jp-math-bracket {
+  width: 0.36em;
+  height: auto;
+  align-self: stretch;
+  flex: none;
+}
+
+.jp-math-paren-inner {
+  display: inline-flex;
+  align-items: center;
+  padding-inline: 1px;
+}
+
+.jp-math-sup,
+.jp-math-sub {
+  font-size: 0.75em;
+  line-height: 1;
+}
+
 /* Answer card titles stay on one line on small phones. */
 .jp-wrong-title,
 .jp-explain-title-btn {

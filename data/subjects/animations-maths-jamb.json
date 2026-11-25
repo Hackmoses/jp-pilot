@@ -1,0 +1,862 @@
+{
+  "version": 1,
+  "subject": "mathematics",
+  "count": 15,
+  "animations": [
+    {
+      "id": "anim-math-jamb-0001",
+      "questionId": "math-jamb-0001",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "511_{9} = 5(81) + 1(9) + 1 = 415",
+          "tag": "base ten",
+          "narration": "Convert five one one base nine to base ten using powers of nine, which gives four hundred and fifteen."
+        },
+        {
+          "n": 2,
+          "display": "6r7_{8} = 6(64) + 8r + 7 = 391 + 8r",
+          "tag": "expand",
+          "narration": "Expand six r seven base eight using powers of eight, giving three hundred and ninety one plus eight r."
+        },
+        {
+          "n": 3,
+          "display": "391 + 8r = 415 → 8r = 24",
+          "tag": "balance",
+          "narration": "Set three hundred and ninety one plus eight r equal to four hundred and fifteen, then subtract to get eight r equals twenty four."
+        },
+        {
+          "n": 4,
+          "display": "r = \\frac{24}{8} = 3",
+          "tag": "result",
+          "narration": "Divide twenty four by eight to find r equals three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "6r7_{8} = 511_{9}",
+          "tag": "the goal",
+          "narration": "We want to find the missing digit r. Since the two numbers are in different bases, we convert both sides to base ten so we can compare them."
+        },
+        {
+          "n": 2,
+          "display": "511_{9} = 5 × 81 + 1 × 9 + 1 = 415",
+          "tag": "right side",
+          "narration": "Start with five one one base nine. Multiply each digit by its place value, eighty one, nine, and one, to get four hundred and fifteen."
+        },
+        {
+          "n": 3,
+          "display": "6r7_{8} = 6 × 64 + 8r + 7 = 391 + 8r",
+          "tag": "left side",
+          "narration": "Now expand six r seven base eight. The middle digit sits in the eights place, so it is worth eight r, giving three hundred and ninety one plus eight r."
+        },
+        {
+          "n": 4,
+          "display": "391 + 8r = 415 → 8r = 24",
+          "tag": "solve",
+          "narration": "Set both base ten expressions equal, then subtract three hundred and ninety one from four hundred and fifteen to leave eight r equals twenty four."
+        },
+        {
+          "n": 5,
+          "display": "r = \\frac{24}{8} = 3",
+          "tag": "answer",
+          "narration": "Divide twenty four by eight to get r equals three. So the missing digit in six r seven base eight is three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0002",
+      "questionId": "math-jamb-0002",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Error = 1.26 − 1.25 = 0.01 m",
+          "tag": "difference",
+          "narration": "Subtract the actual length from the measured length to get an error of zero point zero one metres."
+        },
+        {
+          "n": 2,
+          "display": "% error = \\frac{0.01}{1.25} × 100",
+          "tag": "formula",
+          "narration": "Divide the error zero point zero one by the actual length one point two five, and multiply by one hundred for percentage error."
+        },
+        {
+          "n": 3,
+          "display": "= \\frac{1}{1.25} = 0.80%",
+          "tag": "result",
+          "narration": "Multiply zero point zero one by one hundred to get one, then divide by one point two five for zero point eight zero percent."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Measured = 1.26 m, Actual = 1.25 m",
+          "tag": "the goal",
+          "narration": "We want the percentage error in measuring the rope. First we find how far off the measurement is, then compare that error against the true length."
+        },
+        {
+          "n": 2,
+          "display": "Error = 1.26 − 1.25 = 0.01 m",
+          "tag": "find error",
+          "narration": "Subtract one point two five from one point two six. The measurement is off by zero point zero one metres."
+        },
+        {
+          "n": 3,
+          "display": "% error = \\frac{0.01}{1.25} × 100",
+          "tag": "formula",
+          "narration": "Always divide by the actual length, not the measured one, then multiply by one hundred to turn the fraction into a percentage."
+        },
+        {
+          "n": 4,
+          "display": "% error = \\frac{1}{1.25} = 0.80%",
+          "tag": "answer",
+          "narration": "Zero point zero one times one hundred is one, and one divided by one point two five is zero point eight zero percent. That is the percentage error."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0003",
+      "questionId": "math-jamb-0003",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R = \\frac{100I}{PT}",
+          "tag": "rearrange",
+          "narration": "Rearrange the simple interest formula to make the rate R equal one hundred times interest over principal times time."
+        },
+        {
+          "n": 2,
+          "display": "R = \\frac{100 × 24}{400 × 3}",
+          "tag": "substitute",
+          "narration": "Substitute twenty four for the interest, four hundred for the principal, and three for the time in years."
+        },
+        {
+          "n": 3,
+          "display": "R = \\frac{2400}{1200} = 2%",
+          "tag": "result",
+          "narration": "Simplify two thousand four hundred over one thousand two hundred to get a rate of two percent."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = ₦400, I = ₦24, T = 3 yrs",
+          "tag": "the goal",
+          "narration": "We need the annual rate of simple interest. We start from the simple interest formula I equals P R T over one hundred."
+        },
+        {
+          "n": 2,
+          "display": "R = \\frac{100I}{PT}",
+          "tag": "rearrange",
+          "narration": "Make R the subject of the formula, giving one hundred times I over P times T, so we isolate the unknown rate."
+        },
+        {
+          "n": 3,
+          "display": "R = \\frac{100 × 24}{400 × 3}",
+          "tag": "substitute",
+          "narration": "Put in twenty four naira for interest, four hundred naira for principal, and three years for time."
+        },
+        {
+          "n": 4,
+          "display": "R = \\frac{2400}{1200} = 2%",
+          "tag": "answer",
+          "narration": "Multiply top and bottom to get two thousand four hundred over one thousand two hundred, which divides cleanly to two percent per year."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0004",
+      "questionId": "math-jamb-0004",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "p : q = \\frac{2}{3} : \\frac{5}{6} = 4 : 5",
+          "tag": "clear p:q",
+          "narration": "Multiply two over three and five over six by six to clear the denominators, giving p to q equals four to five."
+        },
+        {
+          "n": 2,
+          "display": "q : r = \\frac{3}{4} : \\frac{1}{2} = 3 : 2",
+          "tag": "clear q:r",
+          "narration": "Multiply three over four and one over two by four so q to r becomes whole numbers, three to two."
+        },
+        {
+          "n": 3,
+          "display": "p : q = 12 : 15, q : r = 15 : 10",
+          "tag": "match q",
+          "narration": "Scale both ratios so the shared term q reaches fifteen, giving twelve to fifteen and fifteen to ten."
+        },
+        {
+          "n": 4,
+          "display": "p : q : r = 12 : 15 : 10",
+          "tag": "result",
+          "narration": "Combine the two ratios at fifteen to get p to q to r equals twelve to fifteen to ten."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "p : q = \\frac{2}{3} : \\frac{5}{6}, q : r = \\frac{3}{4} : \\frac{1}{2}",
+          "tag": "the goal",
+          "narration": "We want to join two fraction ratios into one ratio p to q to r. First we clear the fractions, then make the shared middle term q match."
+        },
+        {
+          "n": 2,
+          "display": "p : q = 4 : 5",
+          "tag": "whole p:q",
+          "narration": "Multiply both parts of two over three to five over six by six, the common denominator, which simplifies p to q to four to five."
+        },
+        {
+          "n": 3,
+          "display": "q : r = 3 : 2",
+          "tag": "whole q:r",
+          "narration": "Multiply both parts of three over four to one over two by four so q to r becomes three to two."
+        },
+        {
+          "n": 4,
+          "display": "12 : 15 and 15 : 10",
+          "tag": "match q",
+          "narration": "Now q is five in one ratio and three in the other. Their lowest common multiple is fifteen, so scale the first ratio by three and the second by five."
+        },
+        {
+          "n": 5,
+          "display": "p : q : r = 12 : 15 : 10",
+          "tag": "answer",
+          "narration": "Since q is fifteen in both, we can join them straight across to get twelve to fifteen to ten."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0005",
+      "questionId": "math-jamb-0005",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\left(\\frac{81}{16}\\right)^{-\\frac{1}{4}} = \\left(\\frac{16}{81}\\right)^{\\frac{1}{4}}",
+          "tag": "flip base",
+          "narration": "Use the negative power rule to turn eighty one over sixteen upside down into sixteen over eighty one to the power of one over four."
+        },
+        {
+          "n": 2,
+          "display": "\\left(\\frac{16}{81}\\right)^{\\frac{1}{4}} = \\frac{2}{3}",
+          "tag": "fourth root",
+          "narration": "Take the fourth root of sixteen and eighty one, giving two over three."
+        },
+        {
+          "n": 3,
+          "display": "2^{-1} = \\frac{1}{2}",
+          "tag": "reciprocal",
+          "narration": "Rewrite two to the power of minus one as one over two."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{2}{3} × \\frac{1}{2} = \\frac{1}{3}",
+          "tag": "result",
+          "narration": "Multiply two over three by one over two and cancel the twos to get one over three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\left(\\frac{81}{16}\\right)^{-\\frac{1}{4}} × 2^{-1}",
+          "tag": "the goal",
+          "narration": "We need to evaluate this indices expression. Both powers are negative, which tells us to flip each base before taking any roots."
+        },
+        {
+          "n": 2,
+          "display": "\\left(\\frac{81}{16}\\right)^{-\\frac{1}{4}} = \\left(\\frac{16}{81}\\right)^{\\frac{1}{4}}",
+          "tag": "flip first",
+          "narration": "Flip eighty one over sixteen to sixteen over eighty one so the negative sign leaves the exponent one over four."
+        },
+        {
+          "n": 3,
+          "display": "\\left(\\frac{16}{81}\\right)^{\\frac{1}{4}} = \\frac{2}{3}",
+          "tag": "fourth root",
+          "narration": "A power of one over four means the fourth root. Two to the fourth is sixteen and three to the fourth is eighty one, so this gives two over three."
+        },
+        {
+          "n": 4,
+          "display": "2^{-1} = \\frac{1}{2}",
+          "tag": "second part",
+          "narration": "For the second factor, two to the power of minus one flips two to one over two."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{2}{3} × \\frac{1}{2} = \\frac{1}{3}",
+          "tag": "answer",
+          "narration": "Now multiply two over three by one over two. The two on top cancels the two below, leaving one over three as the final value."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0006",
+      "questionId": "math-jamb-0006",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "112 = 16 × 7 = 2^{4} × 7",
+          "tag": "factorise",
+          "narration": "Break one hundred and twelve into factors of two and seven, which gives two to the fourth times seven."
+        },
+        {
+          "n": 2,
+          "display": "log 112 = 4 log 2 + log 7",
+          "tag": "log laws",
+          "narration": "Apply the product and power rules of logarithms to split log one hundred and twelve into four log two plus log seven."
+        },
+        {
+          "n": 3,
+          "display": "= 4(0.3010) + 0.8451 = 1.2040 + 0.8451",
+          "tag": "substitute",
+          "narration": "Substitute the given logs and multiply four by zero point three zero one zero to get one point two zero four zero plus zero point eight four five one."
+        },
+        {
+          "n": 4,
+          "display": "= 2.0491",
+          "tag": "result",
+          "narration": "Add the two decimals carefully to get two point zero four nine one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "log 112 (log 2 = 0.3010, log 7 = 0.8451)",
+          "tag": "the goal",
+          "narration": "We want to find log one hundred and twelve using only log two and log seven. So we break one hundred and twelve down into twos and sevens."
+        },
+        {
+          "n": 2,
+          "display": "112 = 16 × 7 = 2^{4} × 7",
+          "tag": "factorise",
+          "narration": "Divide one hundred and twelve by seven to get sixteen, and sixteen is two to the power of four."
+        },
+        {
+          "n": 3,
+          "display": "log 112 = 4 log 2 + log 7",
+          "tag": "log laws",
+          "narration": "By the laws of logarithms, multiplication inside becomes addition outside, and the power four moves to the front of log two."
+        },
+        {
+          "n": 4,
+          "display": "= 4(0.3010) + 0.8451 = 1.2040 + 0.8451",
+          "tag": "substitute",
+          "narration": "Put in the values: four times zero point three zero one zero is one point two zero four zero, plus zero point eight four five one."
+        },
+        {
+          "n": 5,
+          "display": "log 112 = 2.0491",
+          "tag": "answer",
+          "narration": "Adding those two decimals gives two point zero four nine one, which is the value of log one hundred and twelve."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0007",
+      "questionId": "math-jamb-0007",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{2\\sqrt{3} + \\sqrt{5}}{\\sqrt{5} − \\sqrt{3}} × \\frac{\\sqrt{5} + \\sqrt{3}}{\\sqrt{5} + \\sqrt{3}}",
+          "tag": "conjugate",
+          "narration": "Multiply top and bottom by the conjugate, the square root of five plus the square root of three, to clear the surds below."
+        },
+        {
+          "n": 2,
+          "display": "Top = 2\\sqrt{15} + 6 + 5 + \\sqrt{15} = 3\\sqrt{15} + 11",
+          "tag": "expand top",
+          "narration": "Expand the numerator and combine like terms to get three times the square root of fifteen plus eleven."
+        },
+        {
+          "n": 3,
+          "display": "Bottom = (\\sqrt{5})^{2} − (\\sqrt{3})^{2} = 5 − 3 = 2",
+          "tag": "difference",
+          "narration": "Use difference of two squares on the denominator to get five minus three, which equals two."
+        },
+        {
+          "n": 4,
+          "display": "= \\frac{3\\sqrt{15} + 11}{2}",
+          "tag": "result",
+          "narration": "Write the simplified numerator over two to get three times the square root of fifteen plus eleven, all over two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{2\\sqrt{3} + \\sqrt{5}}{\\sqrt{5} − \\sqrt{3}}",
+          "tag": "the goal",
+          "narration": "To rationalise this fraction, we remove the square roots from the denominator using its conjugate, which flips the minus sign to a plus."
+        },
+        {
+          "n": 2,
+          "display": "× \\frac{\\sqrt{5} + \\sqrt{3}}{\\sqrt{5} + \\sqrt{3}}",
+          "tag": "conjugate",
+          "narration": "Multiply both top and bottom by the square root of five plus the square root of three so the value of the fraction stays unchanged."
+        },
+        {
+          "n": 3,
+          "display": "Top = 2\\sqrt{15} + 6 + 5 + \\sqrt{15} = 3\\sqrt{15} + 11",
+          "tag": "expand top",
+          "narration": "Expand the numerator carefully: two times root three times root three is six, and root five times root five is five, giving three root fifteen plus eleven."
+        },
+        {
+          "n": 4,
+          "display": "Bottom = (\\sqrt{5})^{2} − (\\sqrt{3})^{2} = 5 − 3 = 2",
+          "tag": "denominator",
+          "narration": "In the denominator, difference of two squares removes the middle terms, leaving five minus three, which is two."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{3\\sqrt{15} + 11}{2}",
+          "tag": "answer",
+          "narration": "Putting top over bottom gives three times the square root of fifteen plus eleven, all over two, with no surd left below."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0008",
+      "questionId": "math-jamb-0008",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "21 × 34 = 714",
+          "tag": "multiply",
+          "narration": "Multiply the whole numbers twenty one and thirty four first to get seven hundred and fourteen."
+        },
+        {
+          "n": 2,
+          "display": "0.21 × 0.34 = 0.0714",
+          "tag": "decimal places",
+          "narration": "Count four decimal places from both factors so the product becomes zero point zero seven one four."
+        },
+        {
+          "n": 3,
+          "display": "0.0714 = 7.14 × 10^{−2}",
+          "tag": "standard form",
+          "narration": "Move the decimal point two places right after the seven, giving seven point one four times ten to the minus two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "0.21 × 0.34",
+          "tag": "the goal",
+          "narration": "We want the product of zero point two one and zero point three four written in standard form, with one non-zero digit before the decimal point."
+        },
+        {
+          "n": 2,
+          "display": "21 × 34 = 714",
+          "tag": "digits",
+          "narration": "Ignore the decimal points first and multiply twenty one by thirty four, which gives seven hundred and fourteen."
+        },
+        {
+          "n": 3,
+          "display": "0.21 × 0.34 = 0.0714",
+          "tag": "place point",
+          "narration": "There are two decimal places in each number, making four in total, so we place the point to get zero point zero seven one four."
+        },
+        {
+          "n": 4,
+          "display": "7.14 × 10^{−2}",
+          "tag": "answer",
+          "narration": "Now shift the decimal point two places right to sit after the seven. Because the original number is less than one, the power is minus two, giving seven point one four times ten to the minus two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0009",
+      "questionId": "math-jamb-0009",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "n(C ∪ G) = n(C) + n(G) − n(C ∩ G)",
+          "tag": "formula",
+          "narration": "Write the two-set union formula so people reading both papers are not counted twice."
+        },
+        {
+          "n": 2,
+          "display": "50 = 40 + 30 − n(C ∩ G)",
+          "tag": "substitute",
+          "narration": "Put in fifty total readers, forty Champion readers, and thirty Guardian readers."
+        },
+        {
+          "n": 3,
+          "display": "n(C ∩ G) = 70 − 50 = 20",
+          "tag": "result",
+          "narration": "Subtract fifty from seventy to find twenty people read both papers."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Total = 50, Champion = 40, Guardian = 30",
+          "tag": "the goal",
+          "narration": "We want to find how many readers read both newspapers. Adding forty and thirty counts the overlap twice, so we use the two-set formula."
+        },
+        {
+          "n": 2,
+          "display": "n(C ∪ G) = n(C) + n(G) − n(C ∩ G)",
+          "tag": "formula",
+          "narration": "The total union equals the first group plus the second group minus their intersection, which corrects for double counting."
+        },
+        {
+          "n": 3,
+          "display": "50 = 40 + 30 − n(C ∩ G)",
+          "tag": "substitute",
+          "narration": "Substitute fifty for the union, forty for Champion, and thirty for Guardian."
+        },
+        {
+          "n": 4,
+          "display": "n(C ∩ G) = 70 − 50 = 20",
+          "tag": "answer",
+          "narration": "Forty plus thirty is seventy, which is twenty more than fifty. Those twenty extra counts are the twenty people who read both papers."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0010",
+      "questionId": "math-jamb-0010",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P − 1 = \\frac{M}{5}(X + Q)",
+          "tag": "subtract 1",
+          "narration": "Move plus one across the equals sign to get P minus one equals M over five times X plus Q."
+        },
+        {
+          "n": 2,
+          "display": "5P − 5 = MX + MQ",
+          "tag": "clear 5",
+          "narration": "Multiply both sides by five and expand the bracket to give five P minus five equals M X plus M Q."
+        },
+        {
+          "n": 3,
+          "display": "MQ = 5P − MX − 5",
+          "tag": "isolate MQ",
+          "narration": "Subtract M X from both sides so M Q stands alone as five P minus M X minus five."
+        },
+        {
+          "n": 4,
+          "display": "Q = \\frac{5P − MX − 5}{M}",
+          "tag": "result",
+          "narration": "Divide by M to get Q equals five P minus M X minus five, all over M."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = \\frac{M}{5}(X + Q) + 1",
+          "tag": "the goal",
+          "narration": "We want to make Q the subject of this formula. We peel off the outer operations in reverse order until Q stands alone."
+        },
+        {
+          "n": 2,
+          "display": "P − 1 = \\frac{M}{5}(X + Q)",
+          "tag": "undo +1",
+          "narration": "First subtract one from both sides to isolate the fraction term on the right."
+        },
+        {
+          "n": 3,
+          "display": "5P − 5 = MX + MQ",
+          "tag": "clear 5",
+          "narration": "Multiply both sides by five to clear the denominator, and expand M times X plus Q into M X plus M Q."
+        },
+        {
+          "n": 4,
+          "display": "MQ = 5P − MX − 5",
+          "tag": "isolate MQ",
+          "narration": "Move M X across the equals sign so it becomes minus M X, leaving M Q by itself."
+        },
+        {
+          "n": 5,
+          "display": "Q = \\frac{5P − MX − 5}{M}",
+          "tag": "answer",
+          "narration": "Finally divide the whole right side by M to get Q equals five P minus M X minus five, all over M."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0011",
+      "questionId": "math-jamb-0011",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "27x^{3} − 8y^{3} = (3x)^{3} − (2y)^{3}",
+          "tag": "spot cubes",
+          "narration": "Rewrite twenty seven x cubed minus eight y cubed as three x all cubed minus two y all cubed."
+        },
+        {
+          "n": 2,
+          "display": "a^{3} − b^{3} = (a − b)(a^{2} + ab + b^{2})",
+          "tag": "rule",
+          "narration": "Use the difference of two cubes identity, where the first bracket keeps the minus sign."
+        },
+        {
+          "n": 3,
+          "display": "= (3x − 2y)(9x^{2} + 6xy + 4y^{2})",
+          "tag": "result",
+          "narration": "Put a equals three x and b equals two y into the rule to find the other factor is three x minus two y."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "27x^{3} − 8y^{3}",
+          "tag": "the goal",
+          "narration": "We are given one factor of twenty seven x cubed minus eight y cubed and need the other factor. Notice both terms are perfect cubes."
+        },
+        {
+          "n": 2,
+          "display": "27x^{3} − 8y^{3} = (3x)^{3} − (2y)^{3}",
+          "tag": "spot cubes",
+          "narration": "Write twenty seven x cubed as three x all cubed, and eight y cubed as two y all cubed, so we can apply the difference of two cubes."
+        },
+        {
+          "n": 3,
+          "display": "a^{3} − b^{3} = (a − b)(a^{2} + ab + b^{2})",
+          "tag": "identity",
+          "narration": "In the difference of cubes formula, the short bracket keeps the minus sign while the long bracket has all plus signs."
+        },
+        {
+          "n": 4,
+          "display": "= (3x − 2y)(9x^{2} + 6xy + 4y^{2})",
+          "tag": "answer",
+          "narration": "With a equals three x and b equals two y, the long bracket matches the given factor, so the missing factor is three x minus two y."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0012",
+      "questionId": "math-jamb-0012",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x^{2} − y^{2} = (x − y)(x + y) = 8",
+          "tag": "factorise",
+          "narration": "Factorise x squared minus y squared as x minus y times x plus y equals eight."
+        },
+        {
+          "n": 2,
+          "display": "2(x + y) = 8 → x + y = 4",
+          "tag": "substitute",
+          "narration": "Replace x minus y with two and divide eight by two to get x plus y equals four."
+        },
+        {
+          "n": 3,
+          "display": "(x − y) + (x + y) = 2 + 4 → 2x = 6",
+          "tag": "add",
+          "narration": "Add the two linear equations to eliminate y, leaving two x equals six."
+        },
+        {
+          "n": 4,
+          "display": "x = 3, y = 1",
+          "tag": "result",
+          "narration": "Divide to get x equals three, then substitute back to find y equals one, giving the pair three, one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x − y = 2, x^{2} − y^{2} = 8",
+          "tag": "the goal",
+          "narration": "We need to find x and y from these two equations. Factorising x squared minus y squared turns the harder equation into a simple straight-line one."
+        },
+        {
+          "n": 2,
+          "display": "(x − y)(x + y) = 8",
+          "tag": "factorise",
+          "narration": "By the difference of two squares, x squared minus y squared splits into x minus y times x plus y."
+        },
+        {
+          "n": 3,
+          "display": "2(x + y) = 8 → x + y = 4",
+          "tag": "find x+y",
+          "narration": "Since x minus y is two, divide eight by two to get x plus y equals four."
+        },
+        {
+          "n": 4,
+          "display": "2x = 6 → x = 3",
+          "tag": "eliminate y",
+          "narration": "Add x minus y equals two and x plus y equals four together. The y terms cancel, leaving two x equals six, so x is three."
+        },
+        {
+          "n": 5,
+          "display": "3 − y = 2 → (x, y) = (3, 1)",
+          "tag": "answer",
+          "narration": "Put x equals three into x minus y equals two to find y equals one. So the solution pair is three, one."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0013",
+      "questionId": "math-jamb-0013",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = k\\sqrt{x}",
+          "tag": "relation",
+          "narration": "Write direct variation with the square root of x as y equals k times the square root of x."
+        },
+        {
+          "n": 2,
+          "display": "3 = k\\sqrt{16} = 4k → k = \\frac{3}{4}",
+          "tag": "find k",
+          "narration": "Substitute y equals three and x equals sixteen to get four k equals three, so k equals three over four."
+        },
+        {
+          "n": 3,
+          "display": "y = \\frac{3}{4} × \\sqrt{64} = \\frac{3}{4} × 8 = 6",
+          "tag": "result",
+          "narration": "Put x equals sixty four into the formula: three over four times eight gives y equals six."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "y ∝ \\sqrt{x}",
+          "tag": "the goal",
+          "narration": "We want to calculate y when x is sixty four. Notice y varies with the square root of x, not x itself, so we first find the constant k."
+        },
+        {
+          "n": 2,
+          "display": "y = k\\sqrt{x}",
+          "tag": "equation",
+          "narration": "Turn the variation statement into an equation by introducing a constant k: y equals k times the square root of x."
+        },
+        {
+          "n": 3,
+          "display": "3 = k\\sqrt{16} → k = \\frac{3}{4}",
+          "tag": "find k",
+          "narration": "When x is sixteen, its square root is four, and y is three. Dividing three by four gives k equals three over four."
+        },
+        {
+          "n": 4,
+          "display": "y = \\frac{3}{4} × \\sqrt{64} = \\frac{3}{4} × 8 = 6",
+          "tag": "answer",
+          "narration": "Now substitute x equals sixty four. The square root of sixty four is eight, and three over four times eight equals six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0014",
+      "questionId": "math-jamb-0014",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "12\\left(\\frac{1}{2}x + \\frac{1}{4}\\right) > 12\\left(\\frac{1}{3}x + \\frac{1}{2}\\right)",
+          "tag": "clear fractions",
+          "narration": "Multiply every term by twelve, the common denominator, to remove all fractions."
+        },
+        {
+          "n": 2,
+          "display": "6x + 3 > 4x + 6",
+          "tag": "simplify",
+          "narration": "Simplify each term to get six x plus three is greater than four x plus six."
+        },
+        {
+          "n": 3,
+          "display": "2x > 3",
+          "tag": "collect x",
+          "narration": "Subtract four x and three from both sides to leave two x is greater than three."
+        },
+        {
+          "n": 4,
+          "display": "x > \\frac{3}{2}",
+          "tag": "result",
+          "narration": "Divide by positive two, keeping the sign unchanged, to get x is greater than three over two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{1}{2}x + \\frac{1}{4} > \\frac{1}{3}x + \\frac{1}{2}",
+          "tag": "the goal",
+          "narration": "We want the range of x that satisfies this inequality. Clearing the fractions first makes the algebra much cleaner."
+        },
+        {
+          "n": 2,
+          "display": "6x + 3 > 4x + 6",
+          "tag": "multiply by 12",
+          "narration": "Multiply every term by twelve, the lowest common multiple of two, three, and four, giving six x plus three is greater than four x plus six."
+        },
+        {
+          "n": 3,
+          "display": "6x − 4x > 6 − 3 → 2x > 3",
+          "tag": "collect terms",
+          "narration": "Group x terms on the left and numbers on the right: six x minus four x is two x, and six minus three is three."
+        },
+        {
+          "n": 4,
+          "display": "x > \\frac{3}{2}",
+          "tag": "answer",
+          "narration": "Divide both sides by positive two. Because we divide by a positive number, the greater-than sign stays the same, giving x is greater than three over two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-0015",
+      "questionId": "math-jamb-0015",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = 0.5, r = \\frac{0.05}{0.5} = 0.1",
+          "tag": "find a and r",
+          "narration": "Read the first term a equals zero point five, and divide the second term by the first to get the common ratio r equals zero point one."
+        },
+        {
+          "n": 2,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "narration": "Use the sum to infinity formula, a over one minus r, since the ratio is smaller than one."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{0.5}{1 − 0.1} = \\frac{0.5}{0.9} = \\frac{5}{9}",
+          "tag": "result",
+          "narration": "Substitute zero point five and zero point one to get zero point five over zero point nine, which simplifies to five over nine."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "0.5 + 0.05 + 0.005 + …",
+          "tag": "the goal",
+          "narration": "We want the sum to infinity of this geometric series. Since each term shrinks by a tenth, the endless sum settles to one exact fraction."
+        },
+        {
+          "n": 2,
+          "display": "a = 0.5, r = \\frac{0.05}{0.5} = 0.1",
+          "tag": "find a and r",
+          "narration": "The first term a is zero point five. Dividing zero point zero five by zero point five gives the common ratio r equals zero point one."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "narration": "Because the size of r is less than one, we use the sum to infinity formula, S infinity equals a over one minus r."
+        },
+        {
+          "n": 4,
+          "display": "S_{∞} = \\frac{0.5}{1 − 0.1} = \\frac{0.5}{0.9} = \\frac{5}{9}",
+          "tag": "answer",
+          "narration": "Substitute zero point five and zero point one to get zero point five over zero point nine. Multiply top and bottom by ten to get five over nine."
+        }
+      ]
+    }
+  ]
+}

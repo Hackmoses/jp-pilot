@@ -1,0 +1,952 @@
+{
+  "version": 1,
+  "subject": "mathematics",
+  "count": 15,
+  "questions": [
+    {
+      "id": "math-jamb-0001",
+      "subject": "mathematics",
+      "topic": "Number bases",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Find r if 6r7_{8} = 511_{9}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "5",
+          "why": "Putting r = 5 gives 6r7_{8} = 431, not 415.",
+          "whyWrong": "With r = 5, 6r7_{8} = 6 × 64 + 5 × 8 + 7 = 431. We need 415, so r = 3."
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "why": "Putting r = 2 gives 6r7_{8} = 407, not 415.",
+          "whyWrong": "With r = 2, 6r7_{8} = 384 + 16 + 7 = 407. We need 415, so r = 3."
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "why": "511_{9} = 415, and 6 × 64 + 8r + 7 = 415 gives r = 3.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "why": "Putting r = 6 gives 6r7_{8} = 439, not 415.",
+          "whyWrong": "With r = 6, 6r7_{8} = 384 + 48 + 7 = 439. We need 415, so r = 3."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Change both sides to base ten first.",
+      "explanation": "Convert to base ten. 511_{9} = 5 × 81 + 1 × 9 + 1 = 415. 6r7_{8} = 6 × 64 + r × 8 + 7 = 391 + 8r. So 391 + 8r = 415, 8r = 24 and r = 3.",
+      "trap": "A common slip is to forget that the middle digit is worth 8r, not r. Each place in base 8 is worth 8 times the place to its right.",
+      "mnemonic": "Base change: multiply each digit by its place value, then add.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Each place in base 8 is worth eight times the place to its right, the way each place in our numbers is worth ten times more."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "With r = 2, 6r7_{8} = 384 + 16 + 7 = 407. We need 415, so r = 3."
+        }
+      ],
+      "animationId": "anim-math-jamb-0001",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 2,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0002",
+      "subject": "mathematics",
+      "topic": "Approximation (percentage error)",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "A student measures a piece of rope and finds it is 1.26 m long. If the actual length of the rope is 1.25 m, what is the percentage error in the measurement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.40%",
+          "why": "This halves the correct answer.",
+          "whyWrong": "0.40% is half the right value. Error ÷ actual × 100 = 0.01 ÷ 1.25 × 100 = 0.80%."
+        },
+        {
+          "id": "b",
+          "text": "0.01%",
+          "why": "This is the error in metres, not the percentage.",
+          "whyWrong": "0.01 is the error in metres. Turn it into a percentage of the actual length: 0.01 ÷ 1.25 × 100 = 0.80%."
+        },
+        {
+          "id": "c",
+          "text": "0.25%",
+          "why": "This does not follow from error ÷ actual.",
+          "whyWrong": "0.25% does not come from the formula. Percentage error = \\frac{0.01}{1.25} × 100 = 0.80%."
+        },
+        {
+          "id": "d",
+          "text": "0.80%",
+          "why": "Percentage error = \\frac{0.01}{1.25} × 100 = 0.80%.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Error is the difference between measured and actual. Compare it with the actual value.",
+      "explanation": "Error = 1.26 − 1.25 = 0.01 m. Percentage error = \\frac{error}{actual} × 100 = \\frac{0.01}{1.25} × 100 = 0.80%.",
+      "trap": "0.01% catches students who stop at the error in metres and forget to divide by the actual length.",
+      "mnemonic": "Percentage error = \\frac{error}{actual} × 100.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "If your tape is off by 1 cm on a 125 cm rope, that is 1 part in 125, which is 0.8 parts in 100."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "0.01 is the error in metres. Turn it into a percentage of the actual length: 0.01 ÷ 1.25 × 100 = 0.80%."
+        }
+      ],
+      "animationId": "anim-math-jamb-0002",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 4,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0003",
+      "subject": "mathematics",
+      "topic": "Simple interest",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "At what rate will the interest on ₦400 increase to ₦24 in 3 years, reckoning in simple interest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4%",
+          "why": "This doubles the correct rate.",
+          "whyWrong": "At 4% the interest in 3 years would be ₦48. R = \\frac{100 × 24}{400 × 3} = 2%."
+        },
+        {
+          "id": "b",
+          "text": "2%",
+          "why": "R = \\frac{100I}{PT} = \\frac{100 × 24}{400 × 3} = 2%.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "3%",
+          "why": "This uses the number of years as the rate.",
+          "whyWrong": "3 is the number of years, not the rate. R = \\frac{100 × 24}{400 × 3} = 2%."
+        },
+        {
+          "id": "d",
+          "text": "5%",
+          "why": "This does not follow from the formula.",
+          "whyWrong": "At 5% the interest would be ₦60. R = \\frac{100 × 24}{1200} = 2%."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Use I = \\frac{PRT}{100} and make R the subject.",
+      "explanation": "Simple interest I = \\frac{PRT}{100}, so R = \\frac{100I}{PT} = \\frac{100 × 24}{400 × 3} = \\frac{2400}{1200} = 2%.",
+      "trap": "3% catches students who mix up the time (3 years) with the rate.",
+      "mnemonic": "R = \\frac{100I}{PT}.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "₦24 over 3 years is ₦8 a year, and ₦8 out of ₦400 is 2 out of every 100."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "3 is the number of years, not the rate. R = \\frac{100 × 24}{400 × 3} = 2%."
+        }
+      ],
+      "animationId": "anim-math-jamb-0003",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 5,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0004",
+      "subject": "mathematics",
+      "topic": "Ratio",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "If p : q = \\frac{2}{3} : \\frac{5}{6} and q : r = \\frac{3}{4} : \\frac{1}{2}, find p : q : r.",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 : 10 : 15",
+          "why": "This does not match both ratios.",
+          "whyWrong": "9 : 10 : 15 gives p : q = 9 : 10, but p : q should be 4 : 5. The right answer is 12 : 15 : 10."
+        },
+        {
+          "id": "b",
+          "text": "12 : 15 : 16",
+          "why": "The first two parts are right, but q : r is wrong.",
+          "whyWrong": "12 : 15 is right for p : q, but q : r = 3 : 2 needs r = 10, not 16."
+        },
+        {
+          "id": "c",
+          "text": "12 : 15 : 10",
+          "why": "p : q = 4 : 5 = 12 : 15 and q : r = 3 : 2 = 15 : 10.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "10 : 15 : 24",
+          "why": "This does not match either ratio.",
+          "whyWrong": "10 : 15 gives p : q = 2 : 3, not 4 : 5. The right answer is 12 : 15 : 10."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Turn both ratios into whole numbers, then make q the same in both.",
+      "explanation": "p : q = \\frac{2}{3} : \\frac{5}{6} = 4 : 5 (multiply both by 6). q : r = \\frac{3}{4} : \\frac{1}{2} = 3 : 2 (multiply both by 4). Make q the same: the LCM of 5 and 3 is 15, so p : q = 12 : 15 and q : r = 15 : 10. Therefore p : q : r = 12 : 15 : 10.",
+      "trap": "12 : 15 : 16 gets the first part right, which makes it look correct. Always check the second ratio too.",
+      "mnemonic": "Match the shared middle term, then join.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Like joining two train timetables at the shared station: q must have the same value in both."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "12 : 15 is right for p : q, but q : r = 3 : 2 needs r = 10, not 16."
+        }
+      ],
+      "animationId": "anim-math-jamb-0004",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 6,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0005",
+      "subject": "mathematics",
+      "topic": "Indices",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Evaluate \\left(\\frac{81}{16}\\right)^{-\\frac{1}{4}} × 2^{-1}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "\\frac{1}{3}",
+          "why": "(\\frac{81}{16})^{-\\frac{1}{4}} = \\frac{2}{3}, and \\frac{2}{3} × \\frac{1}{2} = \\frac{1}{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "why": "This ignores the negative signs in the powers.",
+          "whyWrong": "6 comes from (\\frac{81}{16})^{\\frac{1}{4}} = \\frac{3}{2} times 2 and so on, ignoring the minus signs. A negative power means flip: the answer is \\frac{1}{3}."
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "why": "This flips one power but not the other.",
+          "whyWrong": "3 comes from treating only one negative power correctly. (\\frac{16}{81})^{\\frac{1}{4}} = \\frac{2}{3}, then × \\frac{1}{2} gives \\frac{1}{3}."
+        },
+        {
+          "id": "d",
+          "text": "\\frac{1}{6}",
+          "why": "This does not follow from the powers.",
+          "whyWrong": "\\frac{1}{6} is too small. \\frac{2}{3} × \\frac{1}{2} = \\frac{1}{3}."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "A negative power means turn the fraction upside down.",
+      "explanation": "A negative power flips the fraction: (\\frac{81}{16})^{-\\frac{1}{4}} = (\\frac{16}{81})^{\\frac{1}{4}}. The fourth root of 16 is 2 and of 81 is 3, giving \\frac{2}{3}. Also 2^{-1} = \\frac{1}{2}. So \\frac{2}{3} × \\frac{1}{2} = \\frac{1}{3}.",
+      "trap": "3 catches students who handle only one negative power. Both powers are negative, so both mean flipping.",
+      "mnemonic": "Negative power: flip it. Fraction power: take the root.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Think of a negative power as an instruction to turn the fraction over before doing anything else."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "3 comes from treating only one negative power correctly. (\\frac{16}{81})^{\\frac{1}{4}} = \\frac{2}{3}, then × \\frac{1}{2} gives \\frac{1}{3}."
+        }
+      ],
+      "animationId": "anim-math-jamb-0005",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 7,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0006",
+      "subject": "mathematics",
+      "topic": "Logarithms",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Given that log 2 = 0.3010 and log 7 = 0.8451, evaluate log 112.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.5441",
+          "why": "This uses the wrong power of 2.",
+          "whyWrong": "2.5441 does not match. 112 = 2^{4} × 7, so log 112 = 4(0.3010) + 0.8451 = 2.0491."
+        },
+        {
+          "id": "b",
+          "text": "2.0491",
+          "why": "112 = 2^{4} × 7, so log 112 = 4(0.3010) + 0.8451 = 2.0491.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "2.1461",
+          "why": "This does not follow from the given logs.",
+          "whyWrong": "2.1461 does not match. 4 × 0.3010 = 1.2040, plus 0.8451 = 2.0491."
+        },
+        {
+          "id": "d",
+          "text": "3.1461",
+          "why": "This does not follow from the given logs.",
+          "whyWrong": "3.1461 is too large. log 112 = 1.2040 + 0.8451 = 2.0491."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Write 112 as a product of 2s and 7.",
+      "explanation": "112 = 16 × 7 = 2^{4} × 7. Using the laws of logarithms, log 112 = 4 log 2 + log 7 = 4(0.3010) + 0.8451 = 1.2040 + 0.8451 = 2.0491.",
+      "trap": "2.1461 and 2.0491 look alike. Add carefully: 1.2040 + 0.8451 = 2.0491.",
+      "mnemonic": "log of a product = sum of the logs.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Logs turn multiplying into adding, so break 112 into small pieces you already know."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "2.1461 does not match. 4 × 0.3010 = 1.2040, plus 0.8451 = 2.0491."
+        }
+      ],
+      "animationId": "anim-math-jamb-0006",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0007",
+      "subject": "mathematics",
+      "topic": "Surds",
+      "type": "calculation",
+      "difficulty": 3,
+      "stem": "Rationalise \\frac{2\\sqrt{3} + \\sqrt{5}}{\\sqrt{5} − \\sqrt{3}}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "\\frac{3\\sqrt{15} + 11}{2}",
+          "why": "Multiply top and bottom by \\sqrt{5} + \\sqrt{3}: the top becomes 3\\sqrt{15} + 11 and the bottom 2.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "\\frac{3\\sqrt{15} − 11}{2}",
+          "why": "The sign of 11 is wrong.",
+          "whyWrong": "The 6 and 5 in the numerator both come out positive, so they add to +11, not −11."
+        },
+        {
+          "id": "c",
+          "text": "3\\sqrt{15} − 11",
+          "why": "The denominator 2 is missing and the sign is wrong.",
+          "whyWrong": "This drops the denominator (5 − 3 = 2) and gets the sign of 11 wrong."
+        },
+        {
+          "id": "d",
+          "text": "3\\sqrt{15} + 11",
+          "why": "The denominator 2 is missing.",
+          "whyWrong": "The top is right, but you must divide by (\\sqrt{5})^{2} − (\\sqrt{3})^{2} = 2."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Multiply top and bottom by the conjugate of the denominator.",
+      "explanation": "Multiply by \\frac{\\sqrt{5} + \\sqrt{3}}{\\sqrt{5} + \\sqrt{3}}. Top: (2\\sqrt{3} + \\sqrt{5})(\\sqrt{5} + \\sqrt{3}) = 2\\sqrt{15} + 6 + 5 + \\sqrt{15} = 3\\sqrt{15} + 11. Bottom: (\\sqrt{5})^{2} − (\\sqrt{3})^{2} = 5 − 3 = 2. Answer: \\frac{3\\sqrt{15} + 11}{2}.",
+      "trap": "3\\sqrt{15} + 11 has the right top but forgets to divide by 2. Always finish the denominator.",
+      "mnemonic": "Conjugate: change the middle sign.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Multiplying by the conjugate is like using (a − b)(a + b) = a^{2} − b^{2} to clear the roots from the bottom."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "The top is right, but you must divide by (\\sqrt{5})^{2} − (\\sqrt{3})^{2} = 2."
+        }
+      ],
+      "animationId": "anim-math-jamb-0007",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0008",
+      "subject": "mathematics",
+      "topic": "Standard form",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Express the product of 0.21 and 0.34 in standard form.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7.14 × 10^{−3}",
+          "why": "One place too far.",
+          "whyWrong": "0.21 × 0.34 = 0.0714, which is 7.14 × 10^{−2}. 10^{−3} would be 0.00714."
+        },
+        {
+          "id": "b",
+          "text": "7.14 × 10^{−1}",
+          "why": "One place too few.",
+          "whyWrong": "10^{−1} would mean 0.714. The product is 0.0714 = 7.14 × 10^{−2}."
+        },
+        {
+          "id": "c",
+          "text": "7.14 × 10^{−2}",
+          "why": "0.21 × 0.34 = 0.0714 = 7.14 × 10^{−2}.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "7.14 × 10^{−4}",
+          "why": "Two places too far.",
+          "whyWrong": "10^{−4} would mean 0.000714. The product is 0.0714 = 7.14 × 10^{−2}."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Multiply first, then count how far the decimal point moves.",
+      "explanation": "0.21 × 0.34 = 0.0714. Moving the decimal point 2 places to the right gives 7.14, so the number is 7.14 × 10^{−2}.",
+      "trap": "7.14 × 10^{−3} catches students who count the zeros wrongly. Count the places the point moves.",
+      "mnemonic": "Standard form: one digit before the point, then count the moves.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Two numbers less than 1 multiplied together give an even smaller number."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "0.21 × 0.34 = 0.0714, which is 7.14 × 10^{−2}. 10^{−3} would be 0.00714."
+        }
+      ],
+      "animationId": "anim-math-jamb-0008",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 10,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0009",
+      "subject": "mathematics",
+      "topic": "Sets",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "In a survey of 50 newspaper readers, 40 read Champion and 30 read Guardian. How many read both papers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15",
+          "why": "This does not follow from the totals.",
+          "whyWrong": "15 does not fit. 40 + 30 = 70 counts the both-readers twice; 70 − 50 = 20 read both."
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "why": "This does not follow from the totals.",
+          "whyWrong": "5 does not fit. 40 + 30 − 50 = 20."
+        },
+        {
+          "id": "c",
+          "text": "10",
+          "why": "This is the difference of 40 and 30.",
+          "whyWrong": "10 is 40 − 30, which does not count anything here. 40 + 30 − 50 = 20 read both."
+        },
+        {
+          "id": "d",
+          "text": "20",
+          "why": "40 + 30 = 70; the extra 70 − 50 = 20 people were counted twice, so 20 read both.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Everyone reads at least one paper. Who is counted twice?",
+      "explanation": "n(C ∪ G) = n(C) + n(G) − n(C ∩ G). So 50 = 40 + 30 − n(C ∩ G), giving n(C ∩ G) = 20. Twenty people read both papers.",
+      "trap": "10 is the difference between 40 and 30, which looks neat but has no meaning here.",
+      "mnemonic": "Both = total of the two groups − everyone.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "If 70 names are on two lists but only 50 people exist, 20 names must appear on both lists."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "10 is 40 − 30, which does not count anything here. 40 + 30 − 50 = 20 read both."
+        }
+      ],
+      "animationId": "anim-math-jamb-0009",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0010",
+      "subject": "mathematics",
+      "topic": "Change of subject of formula",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Make Q the subject of the formula P = \\frac{M}{5}(X + Q) + 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "\\frac{5P + MX − 5}{M}",
+          "why": "The sign of MX is wrong.",
+          "whyWrong": "When you move MX across, it becomes −MX, not +MX."
+        },
+        {
+          "id": "b",
+          "text": "\\frac{5P − MX − 5}{M}",
+          "why": "5P − 5 = MX + MQ, so Q = \\frac{5P − MX − 5}{M}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "\\frac{5P − MX + 5}{M}",
+          "why": "The sign of 5 is wrong.",
+          "whyWrong": "Moving the +1 across gives −1, which becomes −5 after multiplying by 5."
+        },
+        {
+          "id": "d",
+          "text": "\\frac{5P + MX + 5}{M}",
+          "why": "Both signs are wrong.",
+          "whyWrong": "Both MX and 5 change sign when moved across the equals sign."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Undo the operations in reverse order.",
+      "explanation": "P − 1 = \\frac{M}{5}(X + Q). Multiply by 5: 5P − 5 = M(X + Q) = MX + MQ. So MQ = 5P − MX − 5 and Q = \\frac{5P − MX − 5}{M}.",
+      "trap": "\\frac{5P + MX − 5}{M} is easy to pick if you forget that moving MX across changes its sign.",
+      "mnemonic": "Moving across the equals sign changes the sign.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Undoing a formula is like unwrapping a gift: take the outer wrapping off first."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "When you move MX across, it becomes −MX, not +MX."
+        }
+      ],
+      "animationId": "anim-math-jamb-0010",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0011",
+      "subject": "mathematics",
+      "topic": "Factorisation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "If 9x^{2} + 6xy + 4y^{2} is a factor of 27x^{3} − 8y^{3}, find the other factor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3x − 2y",
+          "why": "27x^{3} − 8y^{3} = (3x)^{3} − (2y)^{3} = (3x − 2y)(9x^{2} + 6xy + 4y^{2}).",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "2y − 3x",
+          "why": "This has the opposite sign.",
+          "whyWrong": "2y − 3x is −(3x − 2y). Multiplying it by the given factor gives 8y^{3} − 27x^{3}, the wrong sign."
+        },
+        {
+          "id": "c",
+          "text": "2y + 3x",
+          "why": "This would give a sum of cubes.",
+          "whyWrong": "A + sign belongs to a sum of cubes. A difference of cubes needs 3x − 2y."
+        },
+        {
+          "id": "d",
+          "text": "3x + 2y",
+          "why": "This would give a sum of cubes.",
+          "whyWrong": "(3x + 2y) pairs with 9x^{2} − 6xy + 4y^{2} for a sum of cubes. Here it is a difference, so 3x − 2y."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "27x^{3} = (3x)^{3} and 8y^{3} = (2y)^{3}.",
+      "explanation": "This is a difference of two cubes: a^{3} − b^{3} = (a − b)(a^{2} + ab + b^{2}) with a = 3x and b = 2y. So 27x^{3} − 8y^{3} = (3x − 2y)(9x^{2} + 6xy + 4y^{2}), and the other factor is 3x − 2y.",
+      "trap": "3x + 2y is tempting because the given factor has all plus signs. A difference of cubes keeps the minus in the first bracket.",
+      "mnemonic": "Difference of cubes: (a − b)(a^{2} + ab + b^{2}).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The minus in the original expression always stays in the short bracket."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "(3x + 2y) pairs with 9x^{2} − 6xy + 4y^{2} for a sum of cubes. Here it is a difference, so 3x − 2y."
+        }
+      ],
+      "animationId": "anim-math-jamb-0011",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0012",
+      "subject": "mathematics",
+      "topic": "Simultaneous equations",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "Solve for x and y if x − y = 2 and x^{2} − y^{2} = 8.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1, 3)",
+          "why": "x and y are swapped.",
+          "whyWrong": "(1, 3) gives x − y = −2, not 2. The right pair is x = 3, y = 1."
+        },
+        {
+          "id": "b",
+          "text": "(3, 1)",
+          "why": "x^{2} − y^{2} = (x − y)(x + y) gives x + y = 4, so x = 3 and y = 1.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "(−1, 3)",
+          "why": "This does not satisfy x − y = 2.",
+          "whyWrong": "−1 − 3 = −4, not 2."
+        },
+        {
+          "id": "d",
+          "text": "(−3, 1)",
+          "why": "This does not satisfy x − y = 2.",
+          "whyWrong": "−3 − 1 = −4, not 2."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Factorise x^{2} − y^{2}.",
+      "explanation": "x^{2} − y^{2} = (x − y)(x + y) = 8. Since x − y = 2, x + y = 4. Adding the two equations: 2x = 6, so x = 3 and y = 1.",
+      "trap": "(1, 3) uses the right numbers in the wrong order. Check x − y = 2.",
+      "mnemonic": "Difference of two squares: (x − y)(x + y).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Once you see x^{2} − y^{2} as (x − y)(x + y), the problem becomes two easy straight-line equations."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "(1, 3) gives x − y = −2, not 2. The right pair is x = 3, y = 1."
+        }
+      ],
+      "animationId": "anim-math-jamb-0012",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 16,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0013",
+      "subject": "mathematics",
+      "topic": "Variation",
+      "type": "calculation",
+      "difficulty": 1,
+      "stem": "If y varies directly as the square root of x, and y = 3 when x = 16, calculate y when x = 64.",
+      "options": [
+        {
+          "id": "a",
+          "text": "5",
+          "why": "This does not follow from y = k\\sqrt{x}.",
+          "whyWrong": "5 does not fit. k = \\frac{3}{4}, so y = \\frac{3}{4} × \\sqrt{64} = 6."
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "why": "This uses x instead of \\sqrt{x}.",
+          "whyWrong": "12 treats y as varying with x itself (64 is 4 times 16). It varies with \\sqrt{x}, which only doubles."
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "why": "y = k\\sqrt{x}; k = \\frac{3}{4}; y = \\frac{3}{4} × 8 = 6.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "why": "This keeps y unchanged.",
+          "whyWrong": "y must change when x changes. y = \\frac{3}{4} × 8 = 6."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Write y = k\\sqrt{x} and find k first.",
+      "explanation": "y = k\\sqrt{x}. When x = 16, 3 = k × 4, so k = \\frac{3}{4}. When x = 64, y = \\frac{3}{4} × \\sqrt{64} = \\frac{3}{4} × 8 = 6.",
+      "trap": "12 catches students who multiply y by 4 because x became 4 times bigger. Only \\sqrt{x} matters: \\sqrt{x} doubles, so y doubles.",
+      "mnemonic": "Direct variation: y = k × (what it varies with).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "When x grows 4 times, its square root grows only 2 times."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "12 treats y as varying with x itself (64 is 4 times 16). It varies with \\sqrt{x}, which only doubles."
+        }
+      ],
+      "animationId": "anim-math-jamb-0013",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0014",
+      "subject": "mathematics",
+      "topic": "Inequalities",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "For what range of values of x is \\frac{1}{2}x + \\frac{1}{4} > \\frac{1}{3}x + \\frac{1}{2}?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x > −\\frac{3}{2}",
+          "why": "The sign of the answer is wrong.",
+          "whyWrong": "x > −\\frac{3}{2} has a sign error. \\frac{1}{6}x > \\frac{1}{4} gives x > \\frac{3}{2}."
+        },
+        {
+          "id": "b",
+          "text": "x > \\frac{3}{2}",
+          "why": "\\frac{1}{6}x > \\frac{1}{4}, so x > \\frac{3}{2}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "x < \\frac{2}{3}",
+          "why": "The fraction is upside down and the sign is reversed.",
+          "whyWrong": "There is no negative division, so the sign stays >. And \\frac{1}{4} ÷ \\frac{1}{6} = \\frac{3}{2}, not \\frac{2}{3}."
+        },
+        {
+          "id": "d",
+          "text": "x > −\\frac{2}{3}",
+          "why": "The fraction is upside down and the sign is wrong.",
+          "whyWrong": "\\frac{1}{4} ÷ \\frac{1}{6} = \\frac{3}{2}, positive. So x > \\frac{3}{2}."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Multiply every term by 12 to clear the fractions.",
+      "explanation": "Multiply every term by 12: 6x + 3 > 4x + 6. So 2x > 3 and x > \\frac{3}{2}.",
+      "trap": "x > −\\frac{3}{2} is the right number with the wrong sign. Nothing here is divided by a negative.",
+      "mnemonic": "Clear fractions with the LCM first.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Multiplying through by 12 turns a messy inequality with fractions into a clean one with whole numbers."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "x > −\\frac{3}{2} has a sign error. \\frac{1}{6}x > \\frac{1}{4} gives x > \\frac{3}{2}."
+        }
+      ],
+      "animationId": "anim-math-jamb-0014",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 19,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "math-jamb-0015",
+      "subject": "mathematics",
+      "topic": "Sequences and series (geometric series)",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Find the sum to infinity of the series 0.5 + 0.05 + 0.005 + 0.0005 + ….",
+      "options": [
+        {
+          "id": "a",
+          "text": "\\frac{5}{9}",
+          "why": "S_{∞} = \\frac{a}{1 − r} = \\frac{0.5}{0.9} = \\frac{5}{9}.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "\\frac{5}{7}",
+          "why": "This does not follow from \\frac{a}{1 − r}.",
+          "whyWrong": "\\frac{5}{7} does not fit. r = 0.1, so S_{∞} = \\frac{0.5}{1 − 0.1} = \\frac{5}{9}."
+        },
+        {
+          "id": "c",
+          "text": "\\frac{5}{8}",
+          "why": "This does not follow from \\frac{a}{1 − r}.",
+          "whyWrong": "\\frac{5}{8} does not fit. S_{∞} = \\frac{0.5}{0.9} = \\frac{5}{9}."
+        },
+        {
+          "id": "d",
+          "text": "\\frac{5}{11}",
+          "why": "This adds r instead of subtracting it.",
+          "whyWrong": "\\frac{0.5}{1 + 0.1} = \\frac{5}{11} uses 1 + r. The formula is \\frac{a}{1 − r}."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "First term a = 0.5. What is the common ratio?",
+      "explanation": "This is a geometric series with first term a = 0.5 and common ratio r = 0.1. Since |r| < 1, S_{∞} = \\frac{a}{1 − r} = \\frac{0.5}{0.9} = \\frac{5}{9}. Check: 0.5555… = \\frac{5}{9}.",
+      "trap": "\\frac{5}{11} catches students who use 1 + r instead of 1 − r.",
+      "mnemonic": "Sum to infinity: \\frac{a}{1 − r}.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Adding 0.5, then 0.05, then 0.005 builds 0.5555…, which is \\frac{5}{9}."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "\\frac{0.5}{1 + 0.1} = \\frac{5}{11} uses 1 + r. The formula is \\frac{a}{1 − r}."
+        }
+      ],
+      "animationId": "anim-math-jamb-0015",
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    }
+  ]
+}

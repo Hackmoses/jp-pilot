@@ -15,10 +15,18 @@ export interface AskPreset {
   similarAnswer?: string
 }
 
+export interface QuestionSourceObject {
+  provider: string
+  id: number
+  yearLabel?: string | null
+}
+
 export interface Question {
   id: string
   subject: string
   topic: string
+  chapter?: string
+  concept?: string
   type: 'recall' | 'calculation'
   difficulty: 1 | 2 | 3
   stem: string
@@ -32,8 +40,10 @@ export interface Question {
   askPresets: AskPreset[]
   animationId: string | null
   lockedOptions: OptionId[]
-  source: string
+  source: string | QuestionSourceObject
   reviewed: boolean
+  label?: 'JAMB-style practice'
+  yearVerified?: boolean
 }
 
 export interface QuestionsFile {

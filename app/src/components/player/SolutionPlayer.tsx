@@ -1,5 +1,6 @@
 import { useEffect, useId, useLayoutEffect, useRef, useState } from 'preact/hooks'
 import { getAnimation } from '../../lib/data'
+import { mathToSpeech, renderMathText } from '../../lib/mathText'
 import {
   cancelSpeech,
   getActiveSpeechKey,
@@ -112,7 +113,12 @@ function Player({
       initialSteps.map((step) => initialAudio.clips.get(step.n)),
       duration,
       setAudioState,
-      (progress) => paperRef.current?.style.setProperty('--jp-pen-cover', `${(1 - progress) * 100}%`),
+      (progress) => {
+        const el = paperRef.current
+        if (!el) return
+        el.style.setProperty('--jp-pen-cover', `${(1 - progress) * 100}%`)
+        el.style.setProperty('--jp-pen-p', String(progress))
+      },
     )
   })
   const index = playback ? audioState.index : legacyIndex
@@ -161,7 +167,10 @@ function Player({
     if (!isOpen && !expanded) playback?.pause()
   }, [expanded, isOpen, playback])
   useLayoutEffect(() => {
-    if (playback) paperRef.current?.style.setProperty('--jp-pen-cover', `${(1 - playback.progress) * 100}%`)
+    if (playback) {
+      paperRef.current?.style.setProperty('--jp-pen-cover', `${(1 - playback.progress) * 100}%`)
+      paperRef.current?.style.setProperty('--jp-pen-p', String(playback.progress))
+    }
   }, [animatedMode, expanded, playback])
 
   useEffect(() => {
@@ -272,7 +281,7 @@ function Player({
       cancelSpeech()
       return
     }
-    const narration = steps.map((step) => step.narration).join(' ')
+    const narration = mathToSpeech(steps.map((step) => step.narration).join(' '))
     if (speak(narration, speechKey)) logEvent('read_aloud', { animationId: id, questionId })
   }
 
@@ -366,7 +375,7 @@ function Player({
             class="jp-calc-line-row"
             data-final={position === steps.length - 1 ? 'true' : 'false'}
           >
-            <span class="jp-calc-line-text">{step.display}</span>
+            <span class="jp-calc-line-text">{renderMathText(step.display)}</span>
             <span class="jp-calc-line-tag">{step.tag}</span>
           </div>
         ))}
@@ -441,7 +450,7 @@ function Player({
             aria-label={playback ? `Replay step ${position + 1}: ${step.display}` : undefined}
             onClick={playback ? () => replayStep(position) : undefined}
           >
-            <span class="jp-player__line">{step.display}</span>
+            <span class="jp-player__line">{renderMathText(step.display)}</span>
             <span class="jp-player__tag">{step.tag}</span>
           </StepRow>
         ))}
