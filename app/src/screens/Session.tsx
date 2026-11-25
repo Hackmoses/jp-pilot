@@ -19,7 +19,7 @@ import {
   type SessionRecord,
   setLastSessionSummary,
 } from '../components/question/sessionState'
-import { isSubjectLoaded, loadSubject } from '../lib/data'
+import { getAnimation, isSubjectLoaded, loadSubject } from '../lib/data'
 import { shuffleOptions } from '../lib/shuffle'
 import { getProgress, logEvent, recordAnswer } from '../lib/store'
 import { getSubject, getSubjectByQuestionId, isSubjectAvailable } from '../lib/subjects'
@@ -338,6 +338,8 @@ export function Session() {
     (answered && pickedId === question.answerId ? 1 : 0)
   const removalsLeft = Math.max(0, question.removeOrder.length - removedIds.length)
   const progressPercent = Math.round(((index + 1) / queue.length) * 100)
+  const animationKind = question.animationId ? getAnimation(question.animationId)?.kind : undefined
+  const isConceptAnimation = animationKind === 'concept'
   const showRightCol = answered && isWide && (Boolean(question.animationId) || desktopAskOpen)
   const calculationPlayer = question.animationId ? (
     <SolutionPlayer
@@ -432,7 +434,8 @@ export function Session() {
             onRemoveOption={handleRemoveOption}
             removalsLeft={removalsLeft}
             showRemoveButton={true}
-            calculationSlot={!isWide ? calculationPlayer : undefined}
+            calculationSlot={!isWide && !isConceptAnimation ? calculationPlayer : undefined}
+            conceptSlot={!isWide && isConceptAnimation ? calculationPlayer : undefined}
           />
         </div>
 

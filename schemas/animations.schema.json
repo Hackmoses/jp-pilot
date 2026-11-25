@@ -32,6 +32,13 @@
           "questionId": {
             "type": "string"
           },
+          "kind": {
+            "enum": [
+              "calculation",
+              "concept"
+            ],
+            "description": "Optional lesson style. Defaults to calculation when omitted."
+          },
           "stepSeconds": {
             "type": "number"
           },

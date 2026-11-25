@@ -50,9 +50,12 @@ export interface AnimationStep {
   narration: string
 }
 
+export type AnimationKind = 'calculation' | 'concept'
+
 export interface Animation {
   id: string
   questionId: string
+  kind?: AnimationKind
   stepSeconds: number
   steps: [AnimationStep, AnimationStep, ...AnimationStep[]]
   teach?: [AnimationStep, AnimationStep, ...AnimationStep[]]

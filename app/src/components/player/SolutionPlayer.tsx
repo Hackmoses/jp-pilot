@@ -61,9 +61,24 @@ function Player({
   isCorrect?: boolean
 }) {
   const { id, questionId, stepSeconds } = animation
-  const hasTeach = Boolean(animation.teach && animation.teach.length > 0)
+  const isConcept = animation.kind === 'concept'
+  const hasTeach = !isConcept && Boolean(animation.teach && animation.teach.length > 0)
   const [mode, setMode] = useState<NarrationMode>(() => getInitialNarrationMode(hasTeach, isCorrect))
   const steps = mode === 'teach' && animation.teach ? animation.teach : animation.steps
+  const toggleTitle = isConcept ? 'Teach me' : 'See the calculation'
+  const toggleSubtitle = isConcept ? `${steps.length} steps, explained simply` : `${steps.length} steps, written out by hand`
+  const toggleIcon = isConcept ? (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18h6" />
+      <path d="M10 22h4" />
+      <path d="M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2z" />
+    </svg>
+  ) : (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 20h9" />
+      <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+    </svg>
+  )
   const duration = stepSeconds * 1000
   const remaining = useRef(duration)
   const bodyId = useId()
@@ -308,7 +323,7 @@ function Player({
     <button
       type="button"
       class="jp-player__speaker"
-      aria-label="Calculation narration"
+      aria-label={isConcept ? 'Lesson narration' : 'Calculation narration'}
       aria-pressed={audioState.sound}
       title={audioState.sound ? 'Turn narration off' : 'Turn narration on'}
       onClick={() => playback.setSound(!audioState.sound)}
@@ -410,7 +425,11 @@ function Player({
 
       <div class="jp-player__paper" ref={paperRef} data-timed={playback ? 'true' : undefined} data-running={playing || replaying}>
         {!current && (
-          <p class="jp-player__prompt">Tap play to watch the working, one step at a time.</p>
+          <p class="jp-player__prompt">
+            {isConcept
+              ? 'Tap play to start the lesson, one step at a time.'
+              : 'Tap play to watch the working, one step at a time.'}
+          </p>
         )}
         {steps.map((step, position) => (
           <StepRow
@@ -471,7 +490,7 @@ function Player({
   )
 
   return (
-    <section class="jp-calc-card" aria-label="See the calculation">
+    <section class="jp-calc-card" aria-label={toggleTitle}>
       <div class="jp-calc-head">
         <button
           type="button"
@@ -481,14 +500,11 @@ function Player({
           onClick={handleToggleOpen}
         >
           <span class="jp-calc-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 20h9" />
-              <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
-            </svg>
+            {toggleIcon}
           </span>
           <span class="jp-calc-copy">
-            <span class="jp-calc-title">See the calculation</span>
-            <span class="jp-calc-sub">{steps.length} steps, written out by hand</span>
+            <span class="jp-calc-title">{toggleTitle}</span>
+            <span class="jp-calc-sub">{toggleSubtitle}</span>
           </span>
           <span class="jp-calc-chev" data-open={isOpen ? 'true' : 'false'} aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -500,8 +516,8 @@ function Player({
           ref={expandBtnRef}
           type="button"
           class="jp-calc-expand-btn"
-          aria-label="Expand calculation"
-          title="Expand calculation"
+          aria-label={isConcept ? 'Expand lesson' : 'Expand calculation'}
+          title={isConcept ? 'Expand lesson' : 'Expand calculation'}
           onClick={() => setExpanded(true)}
         >
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -519,7 +535,7 @@ function Player({
         <dialog
           class="jp-calc-modal"
           ref={modalRef}
-          aria-label="Expanded calculation"
+          aria-label={isConcept ? 'Expanded lesson' : 'Expanded calculation'}
           onCancel={(event) => {
             event.preventDefault()
             setExpanded(false)
@@ -537,19 +553,16 @@ function Player({
           <div class="jp-calc-modal-surface">
             <header class="jp-calc-modal-head">
               <span class="jp-calc-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 20h9" />
-                  <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
-                </svg>
+                {toggleIcon}
               </span>
               <div class="jp-calc-copy">
-                <span class="jp-calc-title">See the calculation</span>
-                <span class="jp-calc-sub">{steps.length} steps, written out by hand</span>
+                <span class="jp-calc-title">{toggleTitle}</span>
+                <span class="jp-calc-sub">{toggleSubtitle}</span>
               </div>
               <button
                 type="button"
                 class="jp-calc-modal-close"
-                aria-label="Close expanded calculation"
+                aria-label={isConcept ? 'Close expanded lesson' : 'Close expanded calculation'}
                 title="Close"
                 onClick={() => setExpanded(false)}
               >

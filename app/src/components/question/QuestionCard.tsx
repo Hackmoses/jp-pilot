@@ -17,6 +17,7 @@ export interface QuestionCardProps {
   removalsLeft?: number
   showRemoveButton?: boolean
   calculationSlot?: ComponentChildren
+  conceptSlot?: ComponentChildren
 }
 
 export function QuestionCard({
@@ -32,6 +33,7 @@ export function QuestionCard({
   removalsLeft = 0,
   showRemoveButton = false,
   calculationSlot,
+  conceptSlot,
 }: QuestionCardProps) {
   const answered = pickedId !== null
   const isCorrect = answered && pickedId === question.answerId
@@ -284,6 +286,8 @@ export function QuestionCard({
           </div>
         </section>
       )}
+
+      {answered && conceptSlot}
 
       {answered && (
         <section class="jp-card jp-notes-card" aria-label="The trap and how to remember it">

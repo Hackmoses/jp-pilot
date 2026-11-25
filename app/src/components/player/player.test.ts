@@ -79,4 +79,32 @@ describe('Quick | Teach me playback', () => {
 
     playback.dispose()
   })
+
+  it('keeps concept lessons free of teach-mode override and supports mute, speed, and 3s rewind', () => {
+    setSessionNarrationMode('teach')
+    // Concept animations pass hasTeach=false so Quick/Teach switch is hidden and Teach mode never overrides.
+    expect(getInitialNarrationMode(false, false)).toBe('quick')
+    expect(getInitialNarrationMode(false, true)).toBe('quick')
+
+    const states: PlaybackState[] = []
+    const conceptClips = [
+      makeClip('anim-biol-api-0167', 1, 'audio/anim-biol-api-0167/1.webm', 7200),
+      makeClip('anim-biol-api-0167', 2, 'audio/anim-biol-api-0167/2.webm', 7400),
+    ]
+    const playback = new CalculationPlayback(
+      conceptClips,
+      7000,
+      (s) => states.push(s),
+      () => {},
+    )
+    playback.setSound(false)
+    playback.setSpeed(1.25)
+    playback.start(1, false, true, 400)
+    expect(states[states.length - 1]).toEqual({ index: 1, playing: true, sound: false, speed: 1.25 })
+
+    playback.rewind(3)
+    expect(states[states.length - 1]).toEqual({ index: 0, playing: true, sound: false, speed: 1.25 })
+
+    playback.dispose()
+  })
 })
