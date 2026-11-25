@@ -21,5 +21,5 @@ export function Countdown({ deadline, onExpire }: { deadline: number; onExpire: 
     }
   }, [deadline])
 
-  return <span class="jp-pill jp-pill--score" role="timer" aria-label="Time remaining">{time}</span>
+  return <span class="jp-pill jp-pill--timer" role="timer" aria-label="Time remaining">{time}</span>
 }

@@ -55,13 +55,15 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
     const queue = subjects.flatMap((id) => getQuestionsBySubject(id).map(({ id }) => ({ id })))
     return (
       <Panel title="Exam rules" back="#/exam">
-        <ul class="jp-revisit-list">
-          <li>{queue.length} questions in {minutes} minutes.</li>
-          <li>Move between questions and flag any you want to revisit.</li>
-          <li>The timer keeps running if you leave. At zero, your answers are submitted automatically.</li>
-          <li>Scores and explanations appear after submission.</li>
-        </ul>
-        <button class="jp-btn jp-btn--primary" onClick={() => {
+        <section class="jp-card">
+          <ul class="jp-revisit-list">
+            <li>{queue.length} questions in {minutes} minutes.</li>
+            <li>Move between questions and flag any you want to revisit.</li>
+            <li>The timer keeps running if you leave. At zero, your answers are submitted automatically.</li>
+            <li>Scores and explanations appear after submission.</li>
+          </ul>
+        </section>
+        <button class="jp-btn jp-btn--primary jp-btn--full" onClick={() => {
           startAttempt('exam', subjects, queue, minutes)
           continueExam()
         }}>Start exam</button>
@@ -69,34 +71,38 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
     )
   }
 
+  const subtitle = pilot
+    ? 'Chemistry-only pilot. The other subjects have no complete questions yet.'
+    : 'Choose three subjects alongside English Language.'
+
   return (
-    <Panel title="Exam setup">
-      {getAttempt('exam') && <button class="jp-btn jp-btn--primary" onClick={continueExam}>Continue your exam</button>}
-      <p class="jp-summary-sub">
-        {pilot ? 'Chemistry-only pilot. The other subjects have no complete questions yet.'
-          : 'Choose three subjects alongside English Language.'}
-      </p>
-      {available === null ? <p class="jp-summary-sub">Checking available subjects…</p> : <>
-        <fieldset class="jp-revisit">
+    <Panel title="Exam setup" subtitle={subtitle}>
+      {getAttempt('exam') && <button class="jp-btn jp-btn--primary jp-btn--full" onClick={continueExam}>Continue your exam</button>}
+      {available === null ? <p class="jp-mode-lead">Checking available subjects…</p> : <>
+        <fieldset class="jp-mode-section">
           <legend class="jp-revisit-title">Subjects</legend>
-          {SUBJECTS.filter(({ id }) => id === 'english' || available.includes(id)).map(({ id, name }) => {
-            const english = id === 'english'
-            const enabled = available.includes(id)
-            const checked = english || (pilot && id === 'chemistry') || (enabled && selected.includes(id))
-            return <label class="jp-mode-check" key={id}>
-              <input type="checkbox" checked={checked}
-                disabled={english || pilot || !enabled || (!checked && subjects.length >= 4)}
-                onChange={() => choose(id)} />
-              <span>{name}{!enabled && <span class="jp-summary-sub"> · Coming soon</span>}</span>
-            </label>
-          })}
+          <div class="jp-mode-section-body">
+            <div class="jp-mode-checks">
+              {SUBJECTS.filter(({ id }) => id === 'english' || available.includes(id)).map(({ id, name }) => {
+                const english = id === 'english'
+                const enabled = available.includes(id)
+                const checked = english || (pilot && id === 'chemistry') || (enabled && selected.includes(id))
+                return <label class="jp-mode-check" key={id}>
+                  <input type="checkbox" checked={checked}
+                    disabled={english || pilot || !enabled || (!checked && subjects.length >= 4)}
+                    onChange={() => choose(id)} />
+                  <span>{name}{!enabled && <span class="jp-summary-sub"> · Coming soon</span>}</span>
+                </label>
+              })}
+            </div>
+          </div>
         </fieldset>
-        {failed && <p class="jp-summary-sub">Could not check all exam subjects.</p>}
-        {ready && <a href="#/exam/rules" class="jp-btn jp-btn--primary">Read exam rules</a>}
+        {failed && <p class="jp-mode-lead">Could not check all exam subjects.</p>}
+        {ready && <a href="#/exam/rules" class="jp-btn jp-btn--primary jp-btn--full">Read exam rules</a>}
       </>}
-      {history.length > 0 && <section class="jp-options">
+      {history.length > 0 && <section class="jp-mode-list">
         <h2 class="jp-revisit-title">Recent exams</h2>
-        {change !== null && <p class="jp-summary-sub">{change === 0 ? 'Latest score unchanged' :
+        {change !== null && <p class="jp-mode-lead">{change === 0 ? 'Latest score unchanged' :
           `Latest score ${change > 0 ? 'up' : 'down'} ${Math.abs(change)} percentage points`}</p>}
         {history.map(({ exam, score }) => <ModeCard key={exam.id} href={'#/exam/results?id=' + exam.id}
           title={new Date(exam.finishedAt).toLocaleString()}>
@@ -120,8 +126,10 @@ export function Run({ mode }: { mode: TestMode }) {
   } back={mode === 'exam' ? '#/exam' : '#/subjects?mode=practice'} />
   if (getAttemptQuestions(attempt).length !== attempt.ids.length) return <Panel title="Some questions are no longer available" />
   if (!entered) return <Panel title="Continue your exam" back="#/exam">
-    {attempt.deadline !== null && <Countdown deadline={attempt.deadline} onExpire={() => finishAttempt(attempt, Date.now())} />}
-    <button class="jp-btn jp-btn--primary" onClick={() => setEntered(true)}>Continue your exam</button>
+    <div class="jp-pills">
+      {attempt.deadline !== null && <Countdown deadline={attempt.deadline} onExpire={() => finishAttempt(attempt, Date.now())} />}
+    </div>
+    <button class="jp-btn jp-btn--primary jp-btn--full" onClick={() => setEntered(true)}>Continue your exam</button>
   </Panel>
   return mode === 'practice' ? <Session attempt={attempt} /> : <Exam attempt={attempt} />
 }
@@ -200,26 +208,20 @@ function Exam({ attempt }: { attempt: Attempt }) {
     <main class="jp-screen jp-screen--session" data-answered="false">
       <header class="jp-topbar jp-exam-topbar">
         <div class="jp-topbar-inner">
-          <a class="jp-logo" href="#/modes" aria-label="JP modes">JP</a>
-          <span class="jp-counter">{getSubject(question.subject)?.name} · {attempt.index + 1} of {attempt.ids.length}</span>
-          <Countdown deadline={deadline} onExpire={finish} />
-          <button class="jp-btn" onClick={submit}>Submit</button>
+          <div class="jp-brand-group">
+            <a class="jp-logo" href="#/modes" aria-label="JP modes">JP</a>
+            <span class="jp-counter">{getSubject(question.subject)?.name} · {attempt.index + 1} of {attempt.ids.length}</span>
+          </div>
+          <div class="jp-exam-topbar-right">
+            <Countdown deadline={deadline} onExpire={finish} />
+            <button type="button" class="jp-btn" onClick={submit}>Submit</button>
+          </div>
         </div>
       </header>
       <div class="jp-session-layout">
         <div class="jp-left-col">
           <QuestionCard exam question={question} review={false} options={options}
             pickedId={attempt.answers[question.id] ?? null} onPick={pick} />
-          <div class="jp-mode-action-row">
-            <button class="jp-btn" disabled={attempt.index === 0} onClick={() => go(attempt.index - 1)}>Previous</button>
-            <button class="jp-btn" aria-pressed={Boolean(attempt.flagged[question.id])}
-              onClick={flag}>
-              {attempt.flagged[question.id] ? 'Unflag' : 'Flag'}
-            </button>
-            <button class="jp-btn" onClick={() => calculator.current?.showModal()}>Calculator</button>
-            <button class="jp-btn jp-btn--primary" disabled={attempt.index + 1 === attempt.ids.length}
-              onClick={() => go(attempt.index + 1)}>Next</button>
-          </div>
           <span class="jp-kbd-hints jp-hide-sm">Shortcuts · A–D choose · N next · P previous · F flag · S submit</span>
           <section class="jp-revisit" aria-label="Question palette">
             <h2 class="jp-revisit-title">Question palette</h2>
@@ -228,7 +230,9 @@ function Exam({ attempt }: { attempt: Attempt }) {
               {attempt.ids.map((id, index) => {
                 const answered = Boolean(attempt.answers[id])
                 const flagged = Boolean(attempt.flagged[id])
+                const state = flagged ? 'flagged' : answered ? 'answered' : 'unanswered'
                 return <button key={id} type="button" class="jp-btn"
+                  data-state={state}
                   aria-label={`Question ${index + 1}, ${answered ? 'answered' : 'unanswered'}${flagged ? ', flagged' : ''}`}
                   aria-current={index === attempt.index ? 'step' : undefined} onClick={() => go(index)}>
                   {index + 1}{flagged ? ' ⚑' : answered ? ' ✓' : ' ○'}
@@ -238,15 +242,31 @@ function Exam({ attempt }: { attempt: Attempt }) {
           </section>
         </div>
       </div>
-      <dialog class="jp-subjects-dialog" ref={calculator} aria-labelledby="jp-calculator-title">
+      <footer class="jp-footer-bar jp-exam-footer">
+        <div class="jp-footer-inner">
+          <div class="jp-exam-footer-actions">
+            <button type="button" class="jp-btn" disabled={attempt.index === 0} onClick={() => go(attempt.index - 1)}>Previous</button>
+            <button type="button" class="jp-btn jp-exam-flag" aria-pressed={Boolean(attempt.flagged[question.id])}
+              onClick={flag}>
+              {attempt.flagged[question.id] ? 'Unflag' : 'Flag'}
+            </button>
+            <button type="button" class="jp-btn" onClick={() => calculator.current?.showModal()}>Calculator</button>
+            <div class="jp-exam-footer-nav">
+              <button type="button" class="jp-btn jp-btn--primary" disabled={attempt.index + 1 === attempt.ids.length}
+                onClick={() => go(attempt.index + 1)}>Next</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <dialog class="jp-dialog" ref={calculator} aria-labelledby="jp-calculator-title">
         <Calculator close={() => calculator.current?.close()} />
       </dialog>
-      <dialog class="jp-subjects-dialog" ref={dialog} aria-labelledby="jp-exam-submit-title">
+      <dialog class="jp-dialog" ref={dialog} aria-labelledby="jp-exam-submit-title">
         <h2 id="jp-exam-submit-title">Submit exam?</h2>
         <p>{remaining} {remaining === 1 ? 'question' : 'questions'} unanswered.</p>
-        <div class="jp-subjects-dialog-actions">
-          <button class="jp-btn" onClick={() => dialog.current?.close()}>Keep working</button>
-          <button class="jp-btn jp-btn--primary" onClick={finish}>Submit exam</button>
+        <div class="jp-dialog-actions">
+          <button type="button" class="jp-btn" onClick={() => dialog.current?.close()}>Keep working</button>
+          <button type="button" class="jp-btn jp-btn--primary" onClick={finish}>Submit exam</button>
         </div>
       </dialog>
     </main>
@@ -263,7 +283,7 @@ export function Results({ mode, params }: { mode: TestMode; params: URLSearchPar
   const title = isExam ? 'Exam results' : 'Practice summary'
   const back = isExam ? '#/exam' : '#/practice?subject=' + encodeURIComponent(result?.subjects[0] ?? 'chemistry')
   if (!result || (id && result.id !== id) || status !== 'ready') return <Panel title={title} back={back}>
-    <p class="jp-summary-sub">{status === 'loading' ? 'Loading questions…'
+    <p class="jp-mode-lead">{status === 'loading' ? 'Loading questions…'
       : status === 'error' ? 'Could not load questions.' : 'No saved result found.'}</p>
   </Panel>
   const href = '#/' + mode + '/results?id=' + result.id
@@ -281,7 +301,7 @@ export function Results({ mode, params }: { mode: TestMode; params: URLSearchPar
         <strong class="jp-summary-score">{score.correct} of {score.total}{isExam && ` · ${score.percent}%`}</strong>
         <p class="jp-summary-sub">{score.answered} answered · {formatTime(result.finishedAt - result.startedAt)} taken</p>
       </section>
-      {mistakes.length > 0 && <button class="jp-btn jp-btn--primary" onClick={() => retryMistakes(mistakes)}>
+      {mistakes.length > 0 && <button class="jp-btn jp-btn--primary jp-btn--full" onClick={() => retryMistakes(mistakes)}>
         Retry my mistakes
       </button>}
       {isExam && <section class="jp-revisit">
@@ -290,7 +310,6 @@ export function Results({ mode, params }: { mode: TestMode; params: URLSearchPar
           <li key={row.subject + row.chapter}>{chapterName(row.subject, row.chapter)} · {row.correct}/{row.total}</li>
         ))}</ul> : <p class="jp-summary-sub">No chapters reached 70%.</p>}
       </section>}
-      <Feedback screen={title} />
       <section class="jp-revisit">
         <h2 class="jp-revisit-title">{isExam ? 'Weak chapters' : 'Chapters with mistakes'}</h2>
         {needsStudy.length ? needsStudy.map((row) => (
@@ -301,7 +320,7 @@ export function Results({ mode, params }: { mode: TestMode; params: URLSearchPar
           </div>
         )) : <p class="jp-summary-sub">{isExam ? 'Every chapter reached 70%.' : 'No incorrect answers.'}</p>}
       </section>
-      {isExam && <section class="jp-options">
+      {isExam && <section class="jp-mode-list">
         <h2 class="jp-revisit-title">Review questions</h2>
         {questions.map((question, index) => <ModeCard key={question.id}
           href={href + '&review=' + encodeURIComponent(question.id)} title={`Review question ${index + 1}`}
@@ -310,6 +329,9 @@ export function Results({ mode, params }: { mode: TestMode; params: URLSearchPar
           {' · ' + formatTime(result.time[question.id] ?? 0)}
         </ModeCard>)}
       </section>}
+      <div class="jp-mode-footer-links">
+        <Feedback screen={title} />
+      </div>
     </Panel>
   )
 }

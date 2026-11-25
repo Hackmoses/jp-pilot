@@ -133,6 +133,14 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+.jp-pill--timer {
+  color: #1e293b;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 .jp-screen--session .jp-pill--streak {
   color: #334155;
   background: #f1f5f9;
@@ -258,6 +266,11 @@ body {
 .jp-wrong-card {
   gap: 10px;
   border-color: #fecaca;
+}
+
+.jp-wrong-card[data-open="false"] {
+  gap: 0;
+  padding-block: 11px;
 }
 
 .jp-wrong-head {
@@ -417,6 +430,17 @@ body {
 .jp-other-wrong-toggle-btn:hover {
   background: #f1f5f9;
   border-color: var(--option-line);
+}
+
+.jp-wrong-toggle-btn {
+  border-color: #fecaca;
+  background: var(--bad-soft);
+  color: #991b1b;
+}
+
+.jp-wrong-toggle-btn:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
 }
 
 .jp-other-wrong-list {
@@ -855,6 +879,7 @@ body {
   min-width: 0;
   padding: 2px 0;
   border: 0;
+  border-radius: 6px;
   background: transparent;
   font: inherit;
   letter-spacing: inherit;
@@ -866,7 +891,8 @@ body {
   cursor: pointer;
 }
 
-.jp-wrong-card[data-open="false"] .jp-wrong-head {
-  margin-bottom: 0;
+.jp-wrong-title-btn:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
 }
 

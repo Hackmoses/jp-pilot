@@ -5,6 +5,7 @@ const names: Record<string, string> = { '÷': 'Divide', '×': 'Multiply', '−':
 const operations: Record<string, (a: number, b: number) => number> = {
   '+': (a, b) => a + b, '−': (a, b) => a - b, '×': (a, b) => a * b, '÷': (a, b) => a / b,
 }
+const operatorKeys = new Set(['÷', '×', '−', '+', 'Clear', '%', '√'])
 const display = (n: number) => Number.isFinite(n) ? String(Number(n.toPrecision(12))) : 'Error'
 
 export function Calculator({ close }: { close: () => void }) {
@@ -36,14 +37,26 @@ export function Calculator({ close }: { close: () => void }) {
 
   return <>
     <h2 id="jp-calculator-title">Calculator</h2>
-    <output class="jp-summary-score" aria-label="Calculator display" aria-live="polite">{value}</output>
-    <table role="presentation"><tbody>
-      {Array.from({ length: 5 }, (_, row) => <tr key={row}>
-        {keys.slice(row * 4, row * 4 + 4).map((key) => <td key={key}>
-          <button type="button" class="jp-btn jp-btn--full" aria-label={names[key]} onClick={() => press(key)}>{key}</button>
-        </td>)}
-      </tr>)}
-    </tbody></table>
-    <div class="jp-subjects-dialog-actions"><button class="jp-btn" onClick={close}>Close</button></div>
+    <output class="jp-calc-display" aria-label="Calculator display" aria-live="polite">{value}</output>
+    <div class="jp-calc-pad" role="group" aria-label="Calculator keys">
+      {keys.map((key) => {
+        const variant = key === '=' ? 'jp-calc-key--eq' : operatorKeys.has(key) ? 'jp-calc-key--op' : ''
+        const wide = key === 'Clear' ? 'jp-calc-key--wide' : ''
+        return (
+          <button
+            key={key}
+            type="button"
+            class={`jp-btn jp-calc-key ${variant} ${wide}`.trim()}
+            aria-label={names[key]}
+            onClick={() => press(key)}
+          >
+            {key}
+          </button>
+        )
+      })}
+    </div>
+    <div class="jp-dialog-actions">
+      <button type="button" class="jp-btn" onClick={close}>Close</button>
+    </div>
   </>
 }

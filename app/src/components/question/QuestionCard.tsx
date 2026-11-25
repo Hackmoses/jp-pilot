@@ -174,7 +174,7 @@ export function QuestionCard({
               </button>
             </h2>
             <ReadAloudButton questionId={question.id} target="whyWrong" optionId={pickedOption.id} />
-            <button type="button" class="jp-explain-toggle-btn" aria-expanded={wrongOpen} aria-controls={wrongBodyId} onClick={toggleWrong}>
+            <button type="button" class="jp-explain-toggle-btn jp-wrong-toggle-btn" aria-expanded={wrongOpen} aria-controls={wrongBodyId} onClick={toggleWrong}>
               <span>{wrongOpen ? 'Hide' : 'Show'}</span>
               <span class="jp-explain-chev" data-open={wrongOpen ? 'true' : 'false'} aria-hidden="true">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
