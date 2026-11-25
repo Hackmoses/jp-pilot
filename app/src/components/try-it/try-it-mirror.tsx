@@ -92,7 +92,7 @@ export default function ConcaveMirror(props: InteractiveProps) {
             {unlocked && <DragHandle x={objectX / diagramWidth} y={(axis + tip) / 2 / diagramHeight} onDrag={(fraction) =>
               moveObject(Math.max(minDistance, Math.min(maxDistance, Math.round((pole - fraction * diagramWidth) / scale * 2) / 2)))} />}
           </div>
-          <Slider label={'Object distance (cm) · ' + u} value={u} min={minDistance} max={maxDistance} step={0.5} onChange={moveObject} />
+          <Slider info="How far the object is from the mirror. Compare it with the focal point F and the centre C." label={'Object distance (cm) · ' + u} value={u} min={minDistance} max={maxDistance} step={0.5} onChange={moveObject} />
           <Values items={{ 'u': u + ' cm', 'v': image ? image.v.toFixed(2) + ' cm' : '∞', 'f': focalLength + ' cm',
             'm': image ? image.magnification.toFixed(2) : '—', 'Image height': image ? Math.abs(4 * image.magnification).toFixed(2) + ' cm' : '—',
             'Image': image ? (virtual ? 'Virtual, upright' : 'Real, inverted') + (!inFrame ? ' · Outside diagram' : '') : 'At infinity. Reflected rays are parallel.' }} />

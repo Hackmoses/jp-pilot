@@ -26,7 +26,7 @@ export function near(value: number, target: number, tolerance = 0) {
   return Math.abs(value - target) <= tolerance + Number.EPSILON * Math.max(1, Math.abs(target))
 }
 
-export function TryIt({ context, prediction, missions, explain, formulas, practiceHref, onComplete, children }: TryItProps) {
+export function TryIt({ context, prediction, missions, explain, formulas, practiceHref, onComplete, onRestart, children }: TryItProps) {
   const body = useRef<HTMLDivElement>(null)
   const [picked, setPicked] = useState<number | null>(null)
   const [observed, setObserved] = useState(false)
@@ -77,6 +77,18 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
   return (
     <div ref={body} class="jp-try-body">
       <p class="jp-try-context">{context}</p>
+      <details class="jp-try-guide">
+        <summary>ⓘ How to use this</summary>
+        <ul>
+          <li><strong>Predict</strong> first. The controls unlock after you choose.</li>
+          <li><strong>Pause / Play</strong> stops or starts the animation.</li>
+          <li><strong>0.25×</strong> plays it in slow motion.</li>
+          <li><strong>Step</strong> moves one small step at a time.</li>
+          <li><strong>Replay</strong> runs the animation again from the start.</li>
+          <li><strong>ⓘ</strong> beside a control explains what it changes.</li>
+          <li><strong>Restart</strong> at the top clears everything so you can try again.</li>
+        </ul>
+      </details>
       <div class="jp-try-predict">
         <div class="jp-try-instruction">
           <div>
@@ -131,7 +143,10 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
         <Choices label="Explain why" choices={explain.choices} picked={explainPick} onPick={setExplainPick} />
         {explainPick !== null && <>
           <p class="jp-try-outcome jp-try-outcome--info" role="status">{renderMathText(explain.feedback[explainPick])}</p>
-          <a class="jp-btn jp-btn--primary" href={practiceHref}>Practise this</a>
+          <div class="jp-pills">
+            <a class="jp-btn jp-btn--primary" href={practiceHref}>Practise this</a>
+            {onRestart && <button type="button" class="jp-btn" onClick={onRestart}>Try it again</button>}
+          </div>
         </>}
       </div>}
     </div>
@@ -264,14 +279,22 @@ export function Trace({ x, y, series = '', labels }: {
   </Scene>
 }
 
-export function Select({ label, value, options, onChange }: {
-  label: string; value: string; options: readonly (readonly [string, string])[]; onChange: (value: string) => void
+export function Select({ label, value, options, onChange, info }: {
+  label: string; value: string; options: readonly (readonly [string, string])[]; onChange: (value: string) => void; info?: string
 }) {
-  return <label class="jp-try-select">{label}
+  return <label class="jp-try-select"><span class="jp-try-label-row">{label}{info && <Tip label={label} text={info} />}</span>
     <select class="jp-btn" value={value} onChange={(event) => onChange(event.currentTarget.value)}>
       {options.map(([key, text]) => <option key={key} value={key}>{text}</option>)}
     </select>
   </label>
+}
+
+// A details toggle keeps working while the controls are locked, so students can read tips before predicting.
+function Tip({ label, text }: { label: string; text: string }) {
+  return <details class="jp-try-tip">
+    <summary aria-label={'What is ' + label.split(' · ')[0] + '?'}>ⓘ</summary>
+    <span>{text}</span>
+  </details>
 }
 
 export function Scene({ label, children, height = 110 }: { label: string; children: ComponentChildren; height?: number }) {
@@ -280,12 +303,12 @@ export function Scene({ label, children, height = 110 }: { label: string; childr
   </div>
 }
 
-export function Slider({ label, value, valueText, min, max, step, onChange }: {
-  label: string; value: number; valueText?: string; min: number; max: number; step: number; onChange: (value: number) => void
+export function Slider({ label, value, valueText, min, max, step, onChange, info }: {
+  label: string; value: number; valueText?: string; min: number; max: number; step: number; onChange: (value: number) => void; info?: string
 }) {
   return (
     <label class="jp-try-slider">
-      {label}
+      <span class="jp-try-label-row">{label}{info && <Tip label={label} text={info} />}</span>
       <input type="range" min={min} max={max} step={step} value={value} aria-valuetext={valueText}
         onInput={(event) => onChange(event.currentTarget.valueAsNumber)} />
     </label>

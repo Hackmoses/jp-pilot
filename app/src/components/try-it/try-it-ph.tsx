@@ -38,8 +38,8 @@ export default function PHScale(props: InteractiveProps) {
     formulas={['pH = −log_{10}[H^{+}]', 'pOH = −log_{10}[OH^{−}]', 'pH + pOH = 14 (25 °C)']}>
     {() => <>
       <div class="jp-try-sliders">
-        <Select label="Solute" value={solute} options={ [['HCl', 'HCl'], ['NaOH', 'NaOH']] } onChange={(value) => setSolute(value as Solute)} />
-        <Select label="Concentration (mol/dm³)" value={String(dilutions)}
+        <Select info="The substance dissolved in water. Strong acids and bases ionise fully." label="Solute" value={solute} options={ [['HCl', 'HCl'], ['NaOH', 'NaOH']] } onChange={(value) => setSolute(value as Solute)} />
+        <Select info="How many moles of solute are in each dm³ of solution." label="Concentration (mol/dm³)" value={String(dilutions)}
           options={['1', '0.1', '0.01', '0.001'].map((text, index) => [String(index), text])}
           onChange={(value) => setDilutions(Number(value))} />
         <button type="button" class="jp-btn" disabled={dilutions === 3} onClick={() => setDilutions(dilutions + 1)}>Dilute × 10</button>

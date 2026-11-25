@@ -56,13 +56,13 @@ export default function Capacitors(props: InteractiveProps) {
       </Scene>
       <Values items={{ 'Total': total.toFixed(2) + ' μF', 'Charge': charge.toFixed(1) + ' μC', 'Energy': energy === 0 ? '0 J' : energy.toExponential(2).replace(/e(-?)(\d+)/, ' × 10^{$1$2}') + ' J' }} />
       <div class="jp-try-sliders">
-        <Select label="Layout" value={parallel ? 'parallel' : 'series'} options={ [['series', 'Series'], ['parallel', 'Parallel']] } onChange={(value) => setParallel(value === 'parallel')} />
-        <Select label="Capacitors" value={String(count)} options={ [['1', '1'], ['2', '2'], ['3', '3']] } onChange={(value) => setCount(Number(value))} />
+        <Select info="Series joins the capacitors in one line. Parallel gives each capacitor its own branch." label="Layout" value={parallel ? 'parallel' : 'series'} options={ [['series', 'Series'], ['parallel', 'Parallel']] } onChange={(value) => setParallel(value === 'parallel')} />
+        <Select info="How many identical capacitors are connected." label="Capacitors" value={String(count)} options={ [['1', '1'], ['2', '2'], ['3', '3']] } onChange={(value) => setCount(Number(value))} />
       </div>
       <div class="jp-try-sliders">
         {shown.map((part, i) => <Slider key={i} label={`C${i + 1} (μF) · ${part}`} value={part} min={1} max={10} step={0.1}
           onChange={(value) => setParts(parts.map((old, j) => i === j ? value : old))} />)}
-        <Slider label={'Voltage (V) · ' + voltage} value={voltage} min={0} max={12} step={0.5} onChange={setVoltage} />
+        <Slider info="The battery voltage across the arrangement. Charge stored is Q = CV." label={'Voltage (V) · ' + voltage} value={voltage} min={0} max={12} step={0.5} onChange={setVoltage} />
       </div>
     </>}
   </TryIt>

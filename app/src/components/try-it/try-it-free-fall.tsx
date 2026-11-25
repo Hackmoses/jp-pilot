@@ -106,12 +106,12 @@ export default function FreeFall(props: InteractiveProps) {
       <Values live items={{ 'Timer': time.toFixed(2) + ' s', 'Stone fall': stone.distance.toFixed(1) + ' m · ' + stone.speed.toFixed(1) + ' m/s',
         'Feather fall': feather.distance.toFixed(1) + ' m · ' + feather.speed.toFixed(1) + ' m/s' }} />
       <Values items={{ 'Landing times': stoneLanding.toFixed(2) + ' s / ' + featherLanding.toFixed(2) + ' s' }} />
-      <Slider label={'Height (m) · ' + height} value={height} min={5} max={30} step={1} onChange={(value) => { setHeight(value); reset() }} />
+      <Slider info="How high the stone and feather start above the ground." label={'Height (m) · ' + height} value={height} min={5} max={30} step={1} onChange={(value) => { setHeight(value); reset() }} />
       <div class="jp-pills">
         <button type="button" class="jp-btn" aria-pressed={air} onClick={() => { setAir(!air); reset() }}>Air resistance {air ? 'on' : 'off'}</button>
         <button type="button" class="jp-btn jp-btn--primary" onClick={(event) => { drop(); event.currentTarget.dispatchEvent(new Event('try-play', { bubbles: true })) }}>Drop</button>
       </div>
-      <Slider label="Scrub time (s)" value={time} min={0} max={featherLanding} step={0.01} onChange={(value) => {
+      <Slider info="Drag to move through the fall one moment at a time." label="Scrub time (s)" value={time} min={0} max={featherLanding} step={0.01} onChange={(value) => {
         setRunning(false)
         showTime(featherLanding - value < 0.015 ? featherLanding : value)
       }} />

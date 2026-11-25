@@ -44,7 +44,7 @@ export default function OxidationFinder(props: InteractiveProps) {
       feedback: ['Group 1 metals have oxidation number +1 in their compounds.', 'Neutrality sets the total to zero. Potassium’s +1 comes from its group.'] }}
     formulas={[`${known} + ${count}(${element}) = ${charge}`, 'Sum of oxidation numbers = overall charge']}>
     {() => <>
-      <Select label="Species" value={compound} options={Object.keys(compounds).map((name) => [name, name])}
+      <Select info="The compound or ion whose oxidation numbers you will work out." label="Species" value={compound} options={Object.keys(compounds).map((name) => [name, name])}
         onChange={(value) => setCompound(value as Compound)} />
       <div class="jp-pills" role="group" aria-label={'Set ' + element + ' oxidation number'}>
         <button class="jp-btn" type="button" aria-label="Decrease oxidation number" disabled={unknown <= -8} onClick={() => setUnknown(unknown - 1)}>−</button>

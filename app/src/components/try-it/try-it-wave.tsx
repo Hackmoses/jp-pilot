@@ -51,8 +51,8 @@ export default function WaveOnString(props: InteractiveProps) {
       <Values items={{ 'Speed': '420 m/s', 'Frequency': frequency + ' Hz', 'Wavelength': wavelength.toFixed(1) + ' m',
         'Period': period.toFixed(3) + ' s', 'Amplitude': amplitude + ' cm' }} />
       <div class="jp-try-sliders">
-        <Slider label={'Frequency (Hz) · ' + frequency} value={frequency} min={5} max={20} step={1} onChange={setFrequency} />
-        <Slider label={'Amplitude (cm) · ' + amplitude} value={amplitude} min={1} max={6} step={0.5} onChange={setAmplitude} />
+        <Slider info="How many waves are made each second. Speed = frequency × wavelength." label={'Frequency (Hz) · ' + frequency} value={frequency} min={5} max={20} step={1} onChange={setFrequency} />
+        <Slider info="How high the wave rises from the middle line. It does not change the speed." label={'Amplitude (cm) · ' + amplitude} value={amplitude} min={1} max={6} step={0.5} onChange={setAmplitude} />
       </div>
     </>}
   </TryIt>

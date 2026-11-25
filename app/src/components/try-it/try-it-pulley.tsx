@@ -53,9 +53,9 @@ export default function Pulley(props: InteractiveProps) {
       <Values items={{ 'Effort': effort.toFixed(1) + ' N', 'MA': advantage.toFixed(2), 'VR': String(segments), 'Efficiency': efficiency.toFixed(1) + '%',
         'Rope pulled': rope + ' m', 'Load raised': '1 m', 'Input work': workIn.toFixed(0) + ' J', 'Useful work': load + ' J' }} />
       <div class="jp-try-sliders">
-        <Slider label={'Supporting segments · ' + segments} value={segments} min={1} max={6} step={1} onChange={setSegments} />
-        <Slider label={'Load (N) · ' + load} value={load} min={200} max={1200} step={50} onChange={setLoad} />
-        <Slider label={'Friction loss (%) · ' + loss} value={loss} min={0} max={75} step={0.1} onChange={setLoss} />
+        <Slider info="Rope segments holding up the load. This number is the velocity ratio." label={'Supporting segments · ' + segments} value={segments} min={1} max={6} step={1} onChange={setSegments} />
+        <Slider info="The weight being lifted, in newtons." label={'Load (N) · ' + load} value={load} min={200} max={1200} step={50} onChange={setLoad} />
+        <Slider info="Energy lost to friction and moving parts. More loss means lower efficiency." label={'Friction loss (%) · ' + loss} value={loss} min={0} max={75} step={0.1} onChange={setLoss} />
       </div>
     </>}
   </TryIt>

@@ -82,9 +82,9 @@ export default function Punnett(props: InteractiveProps) {
     formulas={['P = \\frac{matching outcomes}{possible outcomes}', 'X^{H}: usual allele · X^{h}: recessive variant']}>
     {() => <>
       <div class="jp-try-sliders">
-        <Select label="Mother" value={mother} options={ [['HH', 'XᴴXᴴ'], ['Hh', 'XᴴXʰ (carrier)'], ['hh', 'XʰXʰ']] }
+        <Select info="The mother's genotype, her two alleles for this trait." label="Mother" value={mother} options={ [['HH', 'XᴴXᴴ'], ['Hh', 'XᴴXʰ (carrier)'], ['hh', 'XʰXʰ']] }
           onChange={(value) => { setMother(value as Mother); clearSquare() }} />
-        <Select label="Father" value={father} options={ [['H', 'XᴴY'], ['h', 'XʰY']] }
+        <Select info="The father's genotype, his two alleles for this trait." label="Father" value={father} options={ [['H', 'XᴴY'], ['h', 'XʰY']] }
           onChange={(value) => { setFather(value as Father); clearSquare() }} />
       </div>
       <div class="jp-try-sliders">
