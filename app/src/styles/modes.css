@@ -371,6 +371,40 @@
   background: var(--good-soft);
 }
 
+.jp-try-allele {
+  touch-action: none;
+  cursor: grab;
+}
+
+.jp-try-allele[aria-pressed="true"] {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.jp-try-square {
+  width: 100%;
+  max-width: 400px;
+  table-layout: fixed;
+  text-align: center;
+  color: var(--ink-2);
+  border-spacing: var(--space-1);
+}
+
+.jp-try-square thead td,
+.jp-try-square tbody th {
+  width: var(--tap-min);
+}
+
+.jp-try-square .jp-btn {
+  width: 100%;
+  flex-direction: column;
+  white-space: normal;
+}
+
+.jp-try-square small {
+  display: block;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .jp-try-membrane {
     transition: x 220ms, y 220ms, width 220ms, height 220ms;

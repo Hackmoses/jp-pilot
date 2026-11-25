@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'preact/hooks'
-import { TryItCard, studyInteractive } from '../components/try-it/TryItCard'
+import { TryItCard, studyInteractives } from '../components/try-it/TryItCard'
 import { getQuestionsBySubject } from '../lib/data'
 import { chapterName, getChapters, getQuestionChapter, getSections, hasStudied, remember, studyLink } from '../lib/modes'
 import { getSubject } from '../lib/subjects'
@@ -32,13 +32,14 @@ export function Study({ params }: { params: URLSearchParams }) {
     if (id && chapterQuestions.some((question) => question.id === id)) {
       return <Session study={{ subject, chapter, concept: concept ?? undefined, id }} />
     }
-    const interactive = !concept && studyInteractive(subject, chapter)
+    const interactives = concept ? [] : studyInteractives(subject, chapter)
     return (
       <Panel title={concept ?? chapterName(subject, chapter)} back={chaptersHref}>
         {chapterQuestions.length ? <div class="jp-mode-list">
-          {interactive && <>
+          {interactives.length > 0 && <>
             <h2 class="jp-revisit-title">Interactive</h2>
-            <TryItCard interactive={interactive} subject={subject} chapter={chapter} />
+            {interactives.map((interactive) => <TryItCard key={interactive.id ?? interactive.title}
+              interactive={interactive} subject={subject} chapter={chapter} />)}
             <h2 class="jp-revisit-title">Questions</h2>
           </>}
           {chapterQuestions.map((question, index) => (

@@ -83,7 +83,7 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
       {!unlocked && <p class="jp-mode-lead">Choose a prediction to unlock the controls.</p>}
       {unlocked && !observed && <p class="jp-mode-lead">{renderMathText(prediction.action)}</p>}
       {observed && <p class="jp-mode-lead" role="status">
-        You predicted “{prediction.choices[picked!]}”. It turned out “{prediction.choices[prediction.correct]}”. {prediction.why}
+        You predicted “{renderMathText(prediction.choices[picked!])}”. It turned out “{renderMathText(prediction.choices[prediction.correct])}”. {prediction.why}
       </p>}
       {mission && <div class="jp-try-mission">
         <p class="jp-mode-lead"><strong>Mission {phase + 1} of 3</strong>
@@ -103,7 +103,7 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
       </div>}
       {mission && <div class="jp-try-explain">
         {choice && (reached || passed) && <>
-          <p class="jp-mode-lead">{choice.question}</p>
+          <p class="jp-mode-lead">{renderMathText(choice.question)}</p>
           <Choices label={phase === 1 ? 'Mission reason' : 'Mission answer'} choices={choice.choices} picked={reasonPick} onPick={setReasonPick} locked={passed} />
         </>}
         {passed ? <>
@@ -118,10 +118,10 @@ export function TryIt({ context, prediction, missions, explain, formulas, practi
       </div>}
       {phase === 3 && <div class="jp-try-explain">
         <p class="jp-mode-studied">✓ All three missions complete</p>
-        <p class="jp-mode-lead"><strong>Explain why.</strong> {explain.question}</p>
+        <p class="jp-mode-lead"><strong>Explain why.</strong> {renderMathText(explain.question)}</p>
         <Choices label="Explain why" choices={explain.choices} picked={explainPick} onPick={setExplainPick} />
         {explainPick !== null && <>
-          <p class="jp-mode-lead" role="status">{explain.feedback[explainPick]}</p>
+          <p class="jp-mode-lead" role="status">{renderMathText(explain.feedback[explainPick])}</p>
           <a class="jp-btn jp-btn--primary" href={practiceHref}>Practise this</a>
         </>}
       </div>}
@@ -140,13 +140,13 @@ function Choices({ label, choices, picked, onPick, locked = false }: {
 }
 
 function ReadInstruction({ text }: { text: string }) {
-  const key = useId()
+  const key = useId() + ':' + text
   const [available, setAvailable] = useState(false)
   const [active, setActive] = useState<string | null>(null)
   const speaking = active === key
   useEffect(() => subscribeToSpeechAvailability(setAvailable), [])
   useEffect(() => subscribeToSpeechState(setActive), [])
-  useEffect(() => () => { if (getActiveSpeechKey() === key) cancelSpeech() }, [key, text])
+  useEffect(() => () => { if (getActiveSpeechKey() === key) cancelSpeech() }, [key])
   return <button type="button" class="jp-btn jp-try-speaker" disabled={!available}
     aria-label={speaking ? 'Stop reading' : 'Read instruction aloud'} aria-pressed={speaking}
     onClick={() => speaking ? cancelSpeech() : speak(mathToSpeech(text), key)}>
@@ -181,13 +181,19 @@ export function Select({ label, value, options, onChange }: {
   </label>
 }
 
-export function Slider({ label, value, min, max, step, onChange }: {
-  label: string; value: number; min: number; max: number; step: number; onChange: (value: number) => void
+export function Scene({ label, children, height = 110 }: { label: string; children: ComponentChildren; height?: number }) {
+  return <div class="jp-try-scene">
+    <svg viewBox={`0 0 320 ${height}`} role="img" aria-label={label}>{children}</svg>
+  </div>
+}
+
+export function Slider({ label, value, valueText, min, max, step, onChange }: {
+  label: string; value: number; valueText?: string; min: number; max: number; step: number; onChange: (value: number) => void
 }) {
   return (
     <label class="jp-try-slider">
       {label}
-      <input type="range" min={min} max={max} step={step} value={value}
+      <input type="range" min={min} max={max} step={step} value={value} aria-valuetext={valueText}
         onInput={(event) => onChange(event.currentTarget.valueAsNumber)} />
     </label>
   )

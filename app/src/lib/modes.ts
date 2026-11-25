@@ -169,11 +169,17 @@ function save() {
 
 export function getRecent() { return state.recent }
 export function remember(href: string, label: string) { state.recent = { href, label }; save() }
-export function hasCompletedInteractive(subject: string, chapter: string) {
-  return Boolean(state.completedInteractives[subject + '/' + chapter])
+function interactiveKey(subject: string, chapter: string, lesson?: string) {
+  const key = subject + '/' + chapter
+  // Previously saved cards use the chapter key. Additional cards use a separate key.
+  return lesson ? key + '/' + lesson : key
 }
-export function markInteractiveCompleted(subject: string, chapter: string) {
-  state.completedInteractives[subject + '/' + chapter] = true
+export function hasCompletedInteractive(subject: string, chapter: string, lesson?: string) {
+  return Boolean(state.completedInteractives[interactiveKey(subject, chapter, lesson)])
+}
+export function markInteractiveCompleted(subject: string, chapter: string, lesson?: string) {
+  state.completedInteractives[interactiveKey(subject, chapter, lesson)] = true
+  state.studied[subject + '/' + chapter] = true
   save()
 }
 export function hasStudied(subject: string, chapter: string) {

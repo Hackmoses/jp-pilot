@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { registerSavedQuestions } from '../../lib/data'
 import type { Question } from '../../lib/types'
-import { studyInteractive } from './TryItCard'
+import { studyInteractives } from './TryItCard'
 import { deposition, faradayConstant } from './try-it-electrolysis'
 import { boylePressure, charlesVolume, molecularSpeedRatio } from './try-it-gas'
 import { mirrorImage } from './try-it-mirror'
@@ -69,22 +69,36 @@ describe('concave mirror', () => {
   })
 })
 
-it('attaches interactives to the requested question topics and chemistry chapters', () => {
+it('attaches lessons to the named question topics and groups cards within a chapter', () => {
   registerSavedQuestions([
     { id: 'phys-jamb-0018', topic: 'Optical instruments (camera and eye)' },
     { id: 'phys-jamb-0019', topic: 'Reflection (curved mirrors)' },
     { id: 'phys-jamb-0025', topic: 'Current electricity (resistors in parallel)' },
     { id: 'phys-jamb-0016', topic: 'Waves' },
+    { id: 'phys-jamb-0001', topic: 'Motion (relative velocity)' },
+    { id: 'phys-jamb-0002', topic: 'Motion (free fall)' },
+    { id: 'phys-jamb-0007', topic: 'Simple machines' },
+    { id: 'phys-jamb-0023', topic: 'Capacitors' },
     { id: 'biol-api-0167', topic: 'Cell biology' },
+    { id: 'biol-api-0127', topic: 'Genetics & heredity' },
     { id: 'math-jamb-0001', topic: 'Number bases' },
+    { id: 'math-jamb-0005', topic: 'Indices' },
   ] as Question[], [])
-  expect(['2', '3', '13', '14', '15'].map((chapter) => studyInteractive('chemistry', chapter)?.title))
-    .toEqual(['Mole bridge', 'Gas laws', 'pH scale', 'Oxidation number finder', 'Electrolysis'])
-  expect(studyInteractive('chemistry', '1')).toBeUndefined()
-  expect(studyInteractive('physics', 'Optical instruments (camera and eye)')).toBeUndefined()
-  expect(studyInteractive('physics', 'Reflection (curved mirrors)')?.title).toBe('Concave mirror')
-  expect(studyInteractive('physics', 'Current electricity (resistors in parallel)')?.title).toBe('Circuit lab')
-  expect(studyInteractive('physics', 'Waves')?.title).toBe('Wave on a string')
-  expect(studyInteractive('biology', 'Cell biology')?.title).toBe('Osmosis cell')
-  expect(studyInteractive('mathematics', 'Number bases')?.title).toBe('Number base converter')
+  const titles = (subject: string, chapter: string) => studyInteractives(subject, chapter).map((lesson) => lesson.title)
+  expect(['1', '2', '3', '11', '13', '14', '15'].map((chapter) => titles('chemistry', chapter))).toEqual([
+    [], ['Mole bridge', 'Limiting reagent'], ['Gas laws', 'Diffusion race', 'Partial pressures'],
+    ['Freezing point depression'], ['pH scale'], ['Oxidation number finder'], ['Electrolysis'],
+  ])
+  expect(titles('physics', 'Optical instruments (camera and eye)')).toEqual([])
+  expect(titles('physics', 'Reflection (curved mirrors)')).toEqual(['Concave mirror'])
+  expect(titles('physics', 'Current electricity (resistors in parallel)')).toEqual(['Circuit lab'])
+  expect(titles('physics', 'Waves')).toEqual(['Wave on a string'])
+  expect(titles('physics', 'Motion (relative velocity)')).toEqual(['Relative velocity'])
+  expect(titles('physics', 'Motion (free fall)')).toEqual(['Free fall'])
+  expect(titles('physics', 'Simple machines')).toEqual(['Pulley and machine efficiency'])
+  expect(titles('physics', 'Capacitors')).toEqual(['Capacitors'])
+  expect(titles('biology', 'Cell biology')).toEqual(['Osmosis cell'])
+  expect(titles('biology', 'Genetics & heredity')).toEqual(['Punnett square'])
+  expect(titles('mathematics', 'Number bases')).toEqual(['Number base converter'])
+  expect(titles('mathematics', 'Indices')).toEqual(['Indices explorer'])
 })
