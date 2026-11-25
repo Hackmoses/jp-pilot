@@ -55,6 +55,7 @@ export interface Animation {
   questionId: string
   stepSeconds: number
   steps: [AnimationStep, AnimationStep, ...AnimationStep[]]
+  teach?: [AnimationStep, AnimationStep, ...AnimationStep[]]
 }
 
 export interface AnimationsFile {

@@ -1,11 +1,20 @@
 import manifest from '../../../../audio/manifest.json'
 import spoken from '../../../../audio/spoken.json'
 
+export type NarrationMode = 'quick' | 'teach'
+
 type Clip = (typeof manifest.clips)[number]
 
-export function calculationAudio(id: string) {
-  const clips = new Map(manifest.clips.filter((clip) => clip.animationId === id).map((clip) => [clip.step, clip]))
-  return clips.size ? { clips, captions: (spoken as Record<string, string[]>)[id] } : undefined
+export function calculationAudio(id: string, mode: NarrationMode = 'quick') {
+  const isTeach = mode === 'teach'
+  const clips = new Map(
+    manifest.clips
+      .filter((clip) => clip.animationId === id && clip.path.startsWith('audio/teach/') === isTeach)
+      .map((clip) => [clip.step, clip]),
+  )
+  return clips.size
+    ? { clips, captions: isTeach ? undefined : (spoken as Record<string, string[]>)[id] }
+    : undefined
 }
 
 const cacheName = 'jp-calculation-audio-v1'

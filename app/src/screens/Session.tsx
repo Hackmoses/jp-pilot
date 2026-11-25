@@ -345,6 +345,7 @@ export function Session() {
       open={calcOpen}
       onToggleOpen={() => setCalcOpen((prev) => !prev)}
       playSignal={playSignal}
+      isCorrect={answered ? pickedId === question.answerId : undefined}
     />
   ) : null
 

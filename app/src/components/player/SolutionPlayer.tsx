@@ -9,8 +9,14 @@ import {
 } from '../../lib/speech'
 import { logEvent } from '../../lib/store'
 import type { Animation } from '../../lib/types'
-import { calculationAudio } from './calculationAudio'
-import { CalculationPlayback, type PlaybackState } from './CalculationPlayback'
+import { calculationAudio, type NarrationMode } from './calculationAudio'
+import {
+  CalculationPlayback,
+  getInitialNarrationMode,
+  getSessionPlaybackPreferences,
+  setSessionNarrationMode,
+  type PlaybackState,
+} from './CalculationPlayback'
 import './player.css'
 
 export interface SolutionPlayerProps {
@@ -18,6 +24,7 @@ export interface SolutionPlayerProps {
   open?: boolean
   onToggleOpen?: () => void
   playSignal?: number
+  isCorrect?: boolean
 }
 
 export function SolutionPlayer({
@@ -25,6 +32,7 @@ export function SolutionPlayer({
   open,
   onToggleOpen,
   playSignal = 0,
+  isCorrect,
 }: SolutionPlayerProps) {
   const animation = getAnimation(animationId)
   return animation ? (
@@ -34,6 +42,7 @@ export function SolutionPlayer({
       controlledOpen={open}
       onToggleOpen={onToggleOpen}
       playSignal={playSignal}
+      isCorrect={isCorrect}
     />
   ) : null
 }
@@ -43,13 +52,18 @@ function Player({
   controlledOpen,
   onToggleOpen,
   playSignal,
+  isCorrect,
 }: {
   animation: Animation
   controlledOpen?: boolean
   onToggleOpen?: () => void
   playSignal: number
+  isCorrect?: boolean
 }) {
-  const { id, questionId, steps, stepSeconds } = animation
+  const { id, questionId, stepSeconds } = animation
+  const hasTeach = Boolean(animation.teach && animation.teach.length > 0)
+  const [mode, setMode] = useState<NarrationMode>(() => getInitialNarrationMode(hasTeach, isCorrect))
+  const steps = mode === 'teach' && animation.teach ? animation.teach : animation.steps
   const duration = stepSeconds * 1000
   const remaining = useRef(duration)
   const bodyId = useId()
@@ -68,12 +82,24 @@ function Player({
   const [speechAvailable, setSpeechAvailable] = useState(false)
   const [activeKey, setActiveKey] = useState<string | null>(getActiveSpeechKey)
   const paperRef = useRef<HTMLDivElement>(null)
-  const [recorded] = useState(() => calculationAudio(id))
-  const [audioState, setAudioState] = useState<PlaybackState>({ index: -1, playing: false, sound: true, speed: 1 })
-  const [playback] = useState(() => recorded && new CalculationPlayback(
-    steps.map((step) => recorded.clips.get(step.n)), duration, setAudioState,
-    (progress) => paperRef.current?.style.setProperty('--jp-pen-cover', `${(1 - progress) * 100}%`),
-  ))
+  const recorded = calculationAudio(id, mode)
+  const [audioState, setAudioState] = useState<PlaybackState>(() => ({
+    index: -1,
+    playing: false,
+    ...getSessionPlaybackPreferences(),
+  }))
+  const [playback] = useState(() => {
+    const initialAudio = calculationAudio(id, getInitialNarrationMode(hasTeach, isCorrect))
+    const initialSteps = getInitialNarrationMode(hasTeach, isCorrect) === 'teach' && animation.teach
+      ? animation.teach
+      : animation.steps
+    return initialAudio && new CalculationPlayback(
+      initialSteps.map((step) => initialAudio.clips.get(step.n)),
+      duration,
+      setAudioState,
+      (progress) => paperRef.current?.style.setProperty('--jp-pen-cover', `${(1 - progress) * 100}%`),
+    )
+  })
   const index = playback ? audioState.index : legacyIndex
   const playing = playback ? audioState.playing : legacyPlaying
   const speechKey = `player:${id}`
@@ -235,6 +261,49 @@ function Player({
     if (speak(narration, speechKey)) logEvent('read_aloud', { animationId: id, questionId })
   }
 
+  function switchMode(nextMode: NarrationMode) {
+    if (!hasTeach || nextMode === mode) return
+    setSessionNarrationMode(nextMode)
+    setMode(nextMode)
+    const nextSteps = nextMode === 'teach' && animation.teach ? animation.teach : animation.steps
+    const nextAudio = calculationAudio(id, nextMode)
+    if (playback) {
+      setAnimatedMode(true)
+      playback.setClips(nextSteps.map((step) => nextAudio?.clips.get(step.n)), true)
+      logEvent('player_play', { animationId: id, questionId, mode: nextMode })
+      return
+    }
+    setAnimatedMode(true)
+    remaining.current = duration
+    setIndex(0)
+    setFinished(false)
+    setReplaying(false)
+    setReplay((prev) => prev + 1)
+    setPlaying(true)
+    logEvent('player_play', { animationId: id, questionId, mode: nextMode })
+  }
+
+  const modeSwitch = hasTeach && (
+    <div class="jp-player__modes" role="group" aria-label="Narration style">
+      <button
+        type="button"
+        class="jp-player__mode-btn"
+        aria-pressed={mode === 'quick'}
+        onClick={() => switchMode('quick')}
+      >
+        Quick
+      </button>
+      <button
+        type="button"
+        class="jp-player__mode-btn"
+        aria-pressed={mode === 'teach'}
+        onClick={() => switchMode('teach')}
+      >
+        Teach me
+      </button>
+    </div>
+  )
+
   const speaker = playback && (
     <button
       type="button"
@@ -300,6 +369,7 @@ function Player({
         </button>
         {speaker}
         {speedControl}
+        {modeSwitch}
         {!playback && speechAvailable && (
           <button
             type="button"
@@ -377,6 +447,7 @@ function Player({
         </button>
         {speaker}
         {speedControl}
+        {modeSwitch}
         {!playback && speechAvailable && (
           <button type="button" class="jp-player__voice" aria-pressed={speaking} onClick={readSteps}>
             {speaking ? (

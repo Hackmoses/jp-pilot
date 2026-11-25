@@ -157,6 +157,7 @@ body:has(.jp-calc-modal[open]) {
 
 .jp-calc-bar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
@@ -430,6 +431,43 @@ button.jp-player__row:focus-visible,
 .jp-player__speed {
   padding-inline: var(--space-1);
   font-variant-numeric: tabular-nums;
+}
+
+.jp-player__modes {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  border: 1px solid var(--option-line);
+  border-radius: var(--radius-pill);
+  background: var(--bg);
+}
+
+.jp-player__controls .jp-player__modes button.jp-player__mode-btn,
+.jp-calc-bar .jp-player__modes button.jp-player__mode-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: auto;
+  block-size: 32px;
+  min-block-size: 32px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--ink-2);
+  font: 600 12px/1.2 var(--font-system);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.jp-player__controls .jp-player__modes button.jp-player__mode-btn::after {
+  inset: -6px 0;
+}
+
+.jp-player__controls .jp-player__modes button.jp-player__mode-btn[aria-pressed="true"],
+.jp-calc-bar .jp-player__modes button.jp-player__mode-btn[aria-pressed="true"] {
+  background: var(--brand-soft);
+  color: var(--brand);
 }
 
 /* Compact visual size; an invisible ring keeps the 44px tap target. */

@@ -31,6 +31,44 @@
           "tag": "solve",
           "narration": "Multiply 4 by 28 to get 112."
         }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "find Mᵧ when rₓ = 2rᵧ, Mₓ = 28",
+          "tag": "the goal",
+          "narration": "Use Graham's law to find the molar mass of gas Y."
+        },
+        {
+          "n": 2,
+          "display": "rₓ ÷ rᵧ = √(Mᵧ ÷ Mₓ)",
+          "tag": "Graham's law",
+          "narration": "By Graham's law, the rate ratio equals the square root of the inverse molar mass ratio."
+        },
+        {
+          "n": 3,
+          "display": "2 = √(Mᵧ ÷ 28)",
+          "tag": "substitute",
+          "narration": "Put in a rate ratio of 2 and 28 for the mass of gas X."
+        },
+        {
+          "n": 4,
+          "display": "4 = Mᵧ ÷ 28",
+          "tag": "square both sides",
+          "narration": "Square both sides. 2 squared is 4."
+        },
+        {
+          "n": 5,
+          "display": "Mᵧ = 4 × 28 = 112",
+          "tag": "solve",
+          "narration": "Multiply 4 by 28 to get 112."
+        },
+        {
+          "n": 6,
+          "display": "Mᵧ = 112",
+          "tag": "answer",
+          "narration": "The relative molecular mass of gas Y is 112."
+        }
       ]
     },
     {
@@ -55,6 +93,38 @@
           "display": "χ(O₂) ≈ 0.579",
           "tag": "answer",
           "narration": "452 divided by 780 gives 0.579."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P(O₂) = 452, P_total = 780 mmHg",
+          "tag": "given",
+          "narration": "Find the mole fraction of oxygen from its partial pressure."
+        },
+        {
+          "n": 2,
+          "display": "χ(O₂) = P(O₂) ÷ P_total",
+          "tag": "mole fraction",
+          "narration": "The mole fraction equals the partial pressure divided by the total pressure."
+        },
+        {
+          "n": 3,
+          "display": "χ(O₂) = 452 ÷ 780",
+          "tag": "substitute",
+          "narration": "Put in 452 millimetres of mercury over 780."
+        },
+        {
+          "n": 4,
+          "display": "χ(O₂) ≈ 0.579",
+          "tag": "answer",
+          "narration": "452 divided by 780 gives 0.579."
+        },
+        {
+          "n": 5,
+          "display": "mole fraction = 0.579",
+          "tag": "answer",
+          "narration": "The mole fraction of oxygen is 0.579."
         }
       ]
     },
@@ -87,6 +157,44 @@
           "tag": "partial pressure",
           "narration": "Multiply 2.5 over 4.5 by 1.8 atmospheres to get 1.0 atmosphere."
         }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P(O₂) = (n(O₂) ÷ n_total) × P_total",
+          "tag": "the rule",
+          "narration": "Convert masses to moles, then find oxygen's share of pressure."
+        },
+        {
+          "n": 2,
+          "display": "n(O₂) = 80 ÷ 32 = 2.5 mol",
+          "tag": "moles O₂",
+          "narration": "Find moles of oxygen. 80 divided by 32 is 2.5 moles."
+        },
+        {
+          "n": 3,
+          "display": "n(N₂) = 56 ÷ 28 = 2.0 mol",
+          "tag": "moles N₂",
+          "narration": "Find moles of nitrogen. 56 divided by 28 is 2 moles."
+        },
+        {
+          "n": 4,
+          "display": "n_total = 2.5 + 2.0 = 4.5 mol",
+          "tag": "total moles",
+          "narration": "Add them to get 4.5 total moles."
+        },
+        {
+          "n": 5,
+          "display": "P(O₂) = (2.5 ÷ 4.5) × 1.8 = 1.0 atm",
+          "tag": "partial pressure",
+          "narration": "Multiply 2.5 over 4.5 by 1.8 atmospheres to get 1.0 atmosphere."
+        },
+        {
+          "n": 6,
+          "display": "P(O₂) = 1.0 atm",
+          "tag": "answer",
+          "narration": "The partial pressure of oxygen is 1.0 atm."
+        }
       ]
     },
     {
@@ -117,6 +225,44 @@
           "display": "n = 100 × 0.01 = 1.00 mol",
           "tag": "cancel and solve",
           "narration": "8.2 over 0.082 is 100, and 2.93 over 293 is 0.01, giving 1.00 mole."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "PV = nRT",
+          "tag": "ideal gas law",
+          "narration": "Use the ideal gas equation to find moles."
+        },
+        {
+          "n": 2,
+          "display": "T = 20 + 273 = 293 K",
+          "tag": "to kelvin",
+          "narration": "Convert temperature to kelvin by adding 273 to 20, giving 293 kelvin."
+        },
+        {
+          "n": 3,
+          "display": "n = PV ÷ (RT)",
+          "tag": "rearrange",
+          "narration": "Rearrange the ideal gas law for moles n."
+        },
+        {
+          "n": 4,
+          "display": "n = (8.2 × 2.93) ÷ (0.082 × 293)",
+          "tag": "substitute",
+          "narration": "Substitute 8.2, 2.93, 0.082, and 293."
+        },
+        {
+          "n": 5,
+          "display": "n = 100 × 0.01 = 1.00 mol",
+          "tag": "cancel and solve",
+          "narration": "8.2 over 0.082 is 100, and 2.93 over 293 is 0.01, giving 1.00 mole."
+        },
+        {
+          "n": 6,
+          "display": "n = 1.00 mol",
+          "tag": "answer",
+          "narration": "There is 1.00 mole of gas in the sample."
         }
       ]
     },
@@ -149,6 +295,44 @@
           "tag": "solve",
           "narration": "64 over 32 is 2, and 91 times 2 gives 182 grams."
         }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "S + O₂ → SO₂ (1 : 1)",
+          "tag": "the plan",
+          "narration": "Convert 91 g of O₂ to moles, then find mass of SO₂."
+        },
+        {
+          "n": 2,
+          "display": "M(O₂) = 2(16) = 32 g/mol",
+          "tag": "molar mass O₂",
+          "narration": "Find the molar mass of oxygen gas. Two times 16 is 32."
+        },
+        {
+          "n": 3,
+          "display": "M(SO₂) = 32 + 2(16) = 64 g/mol",
+          "tag": "molar mass SO₂",
+          "narration": "Find the molar mass of sulfur four oxide. 32 plus 32 is 64."
+        },
+        {
+          "n": 4,
+          "display": "n(SO₂) = n(O₂) = 91.0 ÷ 32",
+          "tag": "1 : 1 ratio",
+          "narration": "One mole of oxygen gives one mole of sulfur four oxide."
+        },
+        {
+          "n": 5,
+          "display": "mass = (91.0 ÷ 32) × 64 = 182 g",
+          "tag": "solve",
+          "narration": "64 over 32 is 2, and 91 times 2 gives 182 grams."
+        },
+        {
+          "n": 6,
+          "display": "mass(SO₂) = 182 g",
+          "tag": "answer",
+          "narration": "182 g of sulfur(IV) oxide is obtained."
+        }
       ]
     },
     {
@@ -180,6 +364,44 @@
           "tag": "moles to mass",
           "narration": "Multiply 0.05 moles by 80 to get 4.0 grams."
         }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "mass → moles → ratio → mass",
+          "tag": "the plan",
+          "narration": "Find moles of acid, then mass of copper(II) oxide."
+        },
+        {
+          "n": 2,
+          "display": "M(H₂SO₄) = 2 + 32 + 64 = 98",
+          "tag": "molar mass",
+          "narration": "Find the molar mass of tetraoxosulfate six acid: 2 plus 32 plus 64 gives 98."
+        },
+        {
+          "n": 3,
+          "display": "n = 4.9 ÷ 98 = 0.05 mol",
+          "tag": "moles acid",
+          "narration": "Divide 4.9 by 98 to get 0.05 moles."
+        },
+        {
+          "n": 4,
+          "display": "CuO + H₂SO₄ → CuSO₄ + H₂O (1 : 1)",
+          "tag": "ratio",
+          "narration": "One mole of acid reacts with one mole of copper two oxide."
+        },
+        {
+          "n": 5,
+          "display": "mass = 0.05 × (64 + 16) = 4.0 g",
+          "tag": "moles to mass",
+          "narration": "Multiply 0.05 moles by 80 to get 4.0 grams."
+        },
+        {
+          "n": 6,
+          "display": "mass(CuO) = 4.0 g",
+          "tag": "answer",
+          "narration": "4.0 g of copper(II) oxide reacts completely."
+        }
       ]
     },
     {
@@ -204,6 +426,38 @@
           "display": "V(H₂O) = 400 × 3 = 1200 cm³",
           "tag": "multiply",
           "narration": "Multiply 400 by 3 to get 1200 cubic centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "gas volume ratio = mole ratio",
+          "tag": "Gay-Lussac's law",
+          "narration": "Use the equation coefficients to compare gas volumes."
+        },
+        {
+          "n": 2,
+          "display": "2 C₂H₆(g) → 6 H₂O(g)",
+          "tag": "volume ratio",
+          "narration": "From the equation, two volumes of ethane produce six volumes of steam."
+        },
+        {
+          "n": 3,
+          "display": "ratio = 6 ÷ 2 = 3",
+          "tag": "simplify ratio",
+          "narration": "Divide six by two to get a ratio of one to three."
+        },
+        {
+          "n": 4,
+          "display": "V(H₂O) = 400 × 3 = 1200 cm³",
+          "tag": "multiply",
+          "narration": "Multiply 400 by 3 to get 1200 cubic centimetres."
+        },
+        {
+          "n": 5,
+          "display": "V(H₂O) = 1200 cm³",
+          "tag": "answer",
+          "narration": "1200 cm³ of steam is produced."
         }
       ]
     },
@@ -230,6 +484,38 @@
           "tag": "answer",
           "narration": "12 plus 2 plus 16 equals 30."
         }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "empirical = simplest whole ratio",
+          "tag": "the rule",
+          "narration": "Reduce C₆H₁₂O₆ to its empirical formula, then sum masses."
+        },
+        {
+          "n": 2,
+          "display": "C₆H₁₂O₆ ÷ 6 → CH₂O",
+          "tag": "simplest ratio",
+          "narration": "Divide all subscripts by 6 to get the empirical formula C H two O."
+        },
+        {
+          "n": 3,
+          "display": "12 + 2(1) + 16",
+          "tag": "substitute masses",
+          "narration": "Add 12 for carbon, 2 times 1 for hydrogen, and 16 for oxygen."
+        },
+        {
+          "n": 4,
+          "display": "12 + 2 + 16 = 30",
+          "tag": "answer",
+          "narration": "12 plus 2 plus 16 equals 30."
+        },
+        {
+          "n": 5,
+          "display": "empirical mass = 30",
+          "tag": "answer",
+          "narration": "The empirical mass of C₆H₁₂O₆ is 30."
+        }
       ]
     },
     {
@@ -254,6 +540,38 @@
           "display": "% N = (28 ÷ 164) × 100 ≈ 17.10%",
           "tag": "percentage",
           "narration": "Divide 28 by 164 and multiply by 100, giving about 17.10 percent."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "% N = (mass of N ÷ M) × 100%",
+          "tag": "the rule",
+          "narration": "Find the formula mass of Ca(NO₃)₂, then nitrogen's percentage."
+        },
+        {
+          "n": 2,
+          "display": "Ca(NO₃)₂ → 1 Ca, 2 N, 6 O",
+          "tag": "expand bracket",
+          "narration": "Expand the bracket. There is one calcium, two nitrogens, and six oxygens."
+        },
+        {
+          "n": 3,
+          "display": "M = 40 + 2(14) + 6(16) = 164",
+          "tag": "formula mass",
+          "narration": "Add 40, 28, and 96 to get a formula mass of 164."
+        },
+        {
+          "n": 4,
+          "display": "% N = (28 ÷ 164) × 100 ≈ 17.10%",
+          "tag": "percentage",
+          "narration": "Divide 28 by 164 and multiply by 100, giving about 17.10 percent."
+        },
+        {
+          "n": 5,
+          "display": "% N = 17.10%",
+          "tag": "answer",
+          "narration": "Nitrogen makes up 17.10% by mass."
         }
       ]
     },
@@ -280,6 +598,38 @@
           "tag": "subtract",
           "narration": "Subtract 4 from 20 to leave 16 cubic centimetres of oxygen."
         }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "excess = initial − reacted",
+          "tag": "the plan",
+          "narration": "Find how much oxygen reacts with 8 cm³ of hydrogen."
+        },
+        {
+          "n": 2,
+          "display": "2H₂ + O₂ → 2H₂O",
+          "tag": "equation",
+          "narration": "Write the balanced equation. Two volumes of hydrogen use one volume of oxygen."
+        },
+        {
+          "n": 3,
+          "display": "O₂ used = 8 ÷ 2 = 4 cm³",
+          "tag": "volume used",
+          "narration": "So 8 cubic centimetres of hydrogen use half as much oxygen, 4 cubic centimetres."
+        },
+        {
+          "n": 4,
+          "display": "O₂ left = 20 − 4 = 16 cm³",
+          "tag": "subtract",
+          "narration": "Subtract 4 from 20 to leave 16 cubic centimetres of oxygen."
+        },
+        {
+          "n": 5,
+          "display": "O₂ remaining = 16 cm³",
+          "tag": "answer",
+          "narration": "16 cm³ of oxygen remains unreacted."
+        }
       ]
     },
     {
@@ -305,6 +655,38 @@
           "tag": "solve",
           "narration": "1.86 plus half of 1.86 is 2.79 degrees Celsius."
         }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 1.5 mol/kg, Kf = 1.86 °C kg/mol",
+          "tag": "given",
+          "narration": "Use ΔTf = Kf × m to find freezing point depression."
+        },
+        {
+          "n": 2,
+          "display": "ΔTf = Kf × m",
+          "tag": "the rule",
+          "narration": "Freezing point depression equals the cryoscopic constant times molality."
+        },
+        {
+          "n": 3,
+          "display": "ΔTf = 1.86 × 1.5",
+          "tag": "substitute",
+          "narration": "Put in 1.86 times 1.5."
+        },
+        {
+          "n": 4,
+          "display": "ΔTf = 1.86 + 0.93 = 2.79 °C",
+          "tag": "solve",
+          "narration": "1.86 plus half of 1.86 is 2.79 degrees Celsius."
+        },
+        {
+          "n": 5,
+          "display": "ΔTf = 2.79 °C",
+          "tag": "answer",
+          "narration": "The freezing point depression is 2.79 °C."
+        }
       ]
     },
     {
@@ -329,6 +711,38 @@
           "display": "pH = 14 − 3 = 11",
           "tag": "subtract from 14",
           "narration": "Subtract 3 from 14. The pH is 11."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "pOH = −log[OH⁻], pH = 14 − pOH",
+          "tag": "the rule",
+          "narration": "Find pOH from [OH⁻], then subtract from 14."
+        },
+        {
+          "n": 2,
+          "display": "[OH⁻] = 0.001 = 10⁻³ M",
+          "tag": "strong base",
+          "narration": "Potassium hydroxide ionises completely, so hydroxide concentration is 10 to the minus 3."
+        },
+        {
+          "n": 3,
+          "display": "pOH = −log(10⁻³) = 3",
+          "tag": "find pOH",
+          "narration": "Minus the log of 10 to the minus 3 gives a pOH of 3."
+        },
+        {
+          "n": 4,
+          "display": "pH = 14 − 3 = 11",
+          "tag": "subtract from 14",
+          "narration": "Subtract 3 from 14. The pH is 11."
+        },
+        {
+          "n": 5,
+          "display": "pH = 11",
+          "tag": "answer",
+          "narration": "The pH of the KOH solution is 11."
         }
       ]
     },
@@ -361,6 +775,44 @@
           "tag": "solve",
           "narration": "0.2 over 3 times 27 gives 1.8 grams."
         }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Q = I × t",
+          "tag": "the rule",
+          "narration": "Charge equals current times time."
+        },
+        {
+          "n": 2,
+          "display": "Q = 10 × 1930 = 19,300 C",
+          "tag": "charge",
+          "narration": "10 A times 1930 s is 19,300 C."
+        },
+        {
+          "n": 3,
+          "display": "F = 19,300 ÷ 96,500 = 0.2 F",
+          "tag": "to faradays",
+          "narration": "19,300 ÷ 96,500 gives 0.2 F."
+        },
+        {
+          "n": 4,
+          "display": "Al³⁺ + 3e⁻ → Al (3 F → 27 g)",
+          "tag": "ratio",
+          "narration": "3 faradays deposit 27 g of aluminium."
+        },
+        {
+          "n": 5,
+          "display": "m = (0.2 ÷ 3) × 27 = 1.8 g",
+          "tag": "solve",
+          "narration": "(0.2 ÷ 3) × 27 gives 1.8 g."
+        },
+        {
+          "n": 6,
+          "display": "m(Al) = 1.8 g",
+          "tag": "answer",
+          "narration": "1.8 g of aluminium is deposited."
+        }
       ]
     },
     {
@@ -385,6 +837,38 @@
           "display": "F = 0.20 × 2 = 0.40 F",
           "tag": "solve",
           "narration": "Multiply 0.20 moles by 2 to get 0.40 faradays."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "F needed = moles × ion charge",
+          "tag": "the rule",
+          "narration": "Use the deposit data to find faradays per mole of nickel."
+        },
+        {
+          "n": 2,
+          "display": "Ni²⁺ + 2e⁻ → Ni",
+          "tag": "cathode equation",
+          "narration": "A nickel two-plus ion gains two electrons to form nickel metal."
+        },
+        {
+          "n": 3,
+          "display": "n(Ni) ≈ 2.98 ÷ 59 ≈ 0.05 mol (at 0.10 F)",
+          "tag": "check ratio",
+          "narration": "2.98 grams is about 0.05 moles deposited by 0.10 faradays, confirming 2 faradays per mole."
+        },
+        {
+          "n": 4,
+          "display": "F = 0.20 × 2 = 0.40 F",
+          "tag": "solve",
+          "narration": "Multiply 0.20 moles by 2 to get 0.40 faradays."
+        },
+        {
+          "n": 5,
+          "display": "charge = 0.40 F",
+          "tag": "answer",
+          "narration": "0.40 faradays are required."
         }
       ]
     },
@@ -411,6 +895,38 @@
           "tag": "answer",
           "narration": "Divide by 2 to get plus 6, which reduces to plus 3 in the chromium three ion."
         }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "sum of ox. states = ion charge (−2)",
+          "tag": "the rule",
+          "narration": "Find chromium's oxidation state in Cr₂O₇²⁻ and Cr³⁺."
+        },
+        {
+          "n": 2,
+          "display": "2x + 7(−2) = −2",
+          "tag": "set up sum",
+          "narration": "Set the sum of oxidation states in dichromate equal to minus 2."
+        },
+        {
+          "n": 3,
+          "display": "2x − 14 = −2 → 2x = +12",
+          "tag": "simplify",
+          "narration": "Two x minus 14 equals minus 2, so two x equals plus 12."
+        },
+        {
+          "n": 4,
+          "display": "x = +6 → Cr³⁺ (+3)",
+          "tag": "answer",
+          "narration": "Divide by 2 to get plus 6, which reduces to plus 3 in the chromium three ion."
+        },
+        {
+          "n": 5,
+          "display": "Cr: +6 to +3",
+          "tag": "answer",
+          "narration": "Chromium changes from +6 to +3."
+        }
       ]
     },
     {
@@ -435,6 +951,38 @@
           "display": "x = −3",
           "tag": "solve",
           "narration": "So nitrogen has oxidation state minus three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "sum of ox. states in NH₃ = 0",
+          "tag": "the rule",
+          "narration": "Set the oxidation states in neutral NH₃ to zero."
+        },
+        {
+          "n": 2,
+          "display": "x + 3(+1) = 0",
+          "tag": "sum is zero",
+          "narration": "In neutral ammonia, nitrogen x plus three hydrogens at plus one equals zero."
+        },
+        {
+          "n": 3,
+          "display": "x + 3 = 0",
+          "tag": "simplify",
+          "narration": "x plus three equals zero."
+        },
+        {
+          "n": 4,
+          "display": "x = −3",
+          "tag": "solve",
+          "narration": "So nitrogen has oxidation state minus three."
+        },
+        {
+          "n": 5,
+          "display": "N = −3",
+          "tag": "answer",
+          "narration": "Nitrogen has oxidation state −3 in NH₃."
         }
       ]
     }

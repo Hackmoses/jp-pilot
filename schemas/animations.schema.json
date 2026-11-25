@@ -11,10 +11,6 @@
     "version": {
       "const": 1
     },
-    "subject": {
-      "type": "string",
-      "minLength": 1
-    },
     "count": {
       "type": "integer"
     },
@@ -31,47 +27,54 @@
         ],
         "properties": {
           "id": {
-            "type": "string",
-            "pattern": "^[a-z]+-(?:[a-z0-9]+-)*[0-9]{3,}$"
+            "type": "string"
           },
           "questionId": {
-            "type": "string",
-            "pattern": "^[a-z]+-(?:[a-z0-9]+-)*[0-9]{3,}$"
+            "type": "string"
           },
           "stepSeconds": {
             "type": "number"
           },
           "steps": {
-            "type": "array",
-            "minItems": 2,
-            "items": {
-              "type": "object",
-              "required": [
-                "n",
-                "display",
-                "tag",
-                "narration"
-              ],
-              "additionalProperties": false,
-              "properties": {
-                "n": {
-                  "type": "integer",
-                  "minimum": 1
-                },
-                "display": {
-                  "type": "string",
-                  "description": "What is handwritten on the paper. May contain subscripts and symbols."
-                },
-                "tag": {
-                  "type": "string",
-                  "description": "Small label beside the line"
-                },
-                "narration": {
-                  "type": "string",
-                  "description": "Spoken line and caption. Written as words, never symbols, so a voice can read it."
-                }
-              }
-            }
+            "$ref": "#/$defs/stepList"
+          },
+          "teach": {
+            "$ref": "#/$defs/stepList",
+            "description": "Optional expanded teaching-style steps shown in Teach me mode."
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "stepList": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "n",
+          "display",
+          "tag",
+          "narration"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "n": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "display": {
+            "type": "string",
+            "description": "What is handwritten on the paper. May contain subscripts and symbols."
+          },
+          "tag": {
+            "type": "string",
+            "description": "Small label beside the line"
+          },
+          "narration": {
+            "type": "string",
+            "description": "Spoken line and caption. Written as words, never symbols, so a voice can read it."
           }
         }
       }

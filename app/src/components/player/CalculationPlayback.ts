@@ -1,4 +1,4 @@
-import { requestClip } from './calculationAudio'
+import { requestClip, type NarrationMode } from './calculationAudio'
 
 type Request = ReturnType<typeof requestClip>
 type Clip = Request['clip']
@@ -18,11 +18,32 @@ const SILENT_WRITE = 1800
 // A silent sample lets the speaker gesture authorize this media element on mobile.
 const SILENCE = 'data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQIAAAAAAA=='
 
-// Narration is on by default; the student's mute choice lasts for the session.
+// Narration is on by default; the student's mute, speed, and mode choices last for the session.
 let soundPreference = true
+let speedPreference = 1
+let modePreference: NarrationMode | null = null
+
+export function getInitialNarrationMode(hasTeach: boolean, isCorrect?: boolean): NarrationMode {
+  if (!hasTeach) return 'quick'
+  return modePreference ?? (isCorrect === false ? 'teach' : 'quick')
+}
+
+export function setSessionNarrationMode(mode: NarrationMode) {
+  modePreference = mode
+}
+
+export function getSessionPlaybackPreferences() {
+  return { sound: soundPreference, speed: speedPreference }
+}
+
+export function resetSessionPlaybackPreferences() {
+  soundPreference = true
+  speedPreference = 1
+  modePreference = null
+}
 
 export class CalculationPlayback {
-  private state: PlaybackState = { index: -1, playing: false, sound: soundPreference, speed: 1 }
+  private state: PlaybackState = { index: -1, playing: false, sound: soundPreference, speed: speedPreference }
   private unlocked = false
   private seekMs = 0
   private phase: Phase = 'idle'
@@ -42,11 +63,20 @@ export class CalculationPlayback {
   progress = 0
 
   constructor(
-    private readonly clips: (Clip | undefined)[],
+    private clips: (Clip | undefined)[],
     private readonly silentMs: number,
     private readonly onState: (state: PlaybackState) => void,
     private readonly onPen: (progress: number) => void,
   ) {}
+
+  setClips(nextClips: (Clip | undefined)[], restart = false) {
+    this.clips = nextClips
+    if (restart) {
+      this.start(0, false, true)
+    } else {
+      this.stop()
+    }
+  }
 
   private update(update: Partial<PlaybackState>) {
     this.state = { ...this.state, ...update }
@@ -150,6 +180,7 @@ export class CalculationPlayback {
   }
 
   setSpeed(speed: number) {
+    speedPreference = speed
     if (this.audio) {
       this.audio.defaultPlaybackRate = speed
       this.audio.playbackRate = speed
