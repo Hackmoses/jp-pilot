@@ -1,4 +1,4 @@
-import { COMPLETE_QUESTIONS_ONLY, getManifestSync, getQuestionsBySubject, isSubjectLoaded } from './data'
+import { getManifestSync, getQuestionsBySubject, isSubjectLoaded, manifestPoolCount, type QuestionPool } from './data'
 
 export type SubjectIconName =
   | 'book'
@@ -59,25 +59,16 @@ export function getSubjectByQuestionId(questionId: string | null | undefined): S
   return subjectsByPrefix.get(prefix)
 }
 
-export function isSubjectAvailable(subjectId: string): boolean {
+export function isSubjectAvailable(subjectId: string, pool: QuestionPool = 'all'): boolean {
   const normalized = subjectId.trim().toLowerCase()
-  if (isSubjectLoaded(normalized)) return getQuestionsBySubject(normalized).length > 0
-  const manifest = getManifestSync()
-  if (manifest) {
-    const entry = manifest[normalized]
-    const count = COMPLETE_QUESTIONS_ONLY ? (entry?.completeCount ?? entry?.count ?? 0) : (entry?.count ?? 0)
-    return count > 0
-  }
+  if (isSubjectLoaded(normalized)) return getQuestionsBySubject(normalized, pool).length > 0
+  if (getManifestSync()) return manifestPoolCount(normalized, pool) > 0
   return getSubject(normalized)?.available ?? false
 }
 
-export function getSubjectQuestionCount(subjectId: string): number {
+export function getSubjectQuestionCount(subjectId: string, pool: QuestionPool = 'all'): number {
   const normalized = subjectId.trim().toLowerCase()
-  if (isSubjectLoaded(normalized)) return getQuestionsBySubject(normalized).length
-  const manifest = getManifestSync()
-  if (manifest?.[normalized]) {
-    const entry = manifest[normalized]
-    return COMPLETE_QUESTIONS_ONLY ? (entry.completeCount ?? entry.count) : entry.count
-  }
-  return getQuestionsBySubject(normalized).length
+  if (isSubjectLoaded(normalized)) return getQuestionsBySubject(normalized, pool).length
+  if (getManifestSync()?.[normalized]) return manifestPoolCount(normalized, pool)
+  return getQuestionsBySubject(normalized, pool).length
 }

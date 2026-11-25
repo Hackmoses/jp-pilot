@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'preact/hooks'
 import { TryItCard, studyInteractives } from '../components/try-it/TryItCard'
 import { getQuestionsBySubject } from '../lib/data'
+import { subtopicLabel } from '../lib/sections'
 import { chapterName, getChapters, getQuestionChapter, getSections, hasStudied, remember, studyLink } from '../lib/modes'
 import { getSubject } from '../lib/subjects'
 import { ModeCard, Panel, useSubjects } from './Modes'
@@ -13,7 +14,8 @@ export function Study({ params }: { params: URLSearchParams }) {
   const id = params.get('id')
   const status = useSubjects([subject])
   const [conceptView, setConceptView] = useState(false)
-  const questions = getQuestionsBySubject(subject)
+  const questions = getQuestionsBySubject(subject, 'study')
+  const practiceCount = (id: string) => getQuestionsBySubject(subject, 'practice').filter((question) => getQuestionChapter(question) === id).length
   const subjectName = getSubject(subject)?.name ?? subject
   const chaptersHref = '#/study?subject=' + encodeURIComponent(subject)
   const chapterQuestions = questions.filter((question) => getQuestionChapter(question) === chapter && (!concept || question.concept === concept))
@@ -40,13 +42,15 @@ export function Study({ params }: { params: URLSearchParams }) {
             <h2 class="jp-revisit-title">Interactive</h2>
             {interactives.map((interactive) => <TryItCard key={interactive.id ?? interactive.title}
               interactive={interactive} subject={subject} chapter={chapter} />)}
-            <h2 class="jp-revisit-title">Questions</h2>
           </>}
+          <h2 class="jp-revisit-title">How JAMB asks it</h2>
           {chapterQuestions.map((question, index) => (
             <ModeCard key={question.id} href={studyLink(subject, chapter, concept ?? undefined) + '&id=' + encodeURIComponent(question.id)}
-              title={`Question ${index + 1}`}>{question.concept ?? question.topic}</ModeCard>
+              title={`Example ${index + 1}${subtopicLabel(question.topic) ? ' · ' + subtopicLabel(question.topic) : ''}`}>{question.concept ?? question.topic}</ModeCard>
           ))}
-        </div> : <p class="jp-mode-lead">This chapter has no available questions.</p>}
+          {practiceCount(chapter) > 0 && <a class="jp-btn jp-btn--primary jp-btn--full"
+            href={'#/practice?' + new URLSearchParams({ subject, chapter })}>Practise this topic · {practiceCount(chapter)} questions</a>}
+        </div> : <p class="jp-mode-lead">This chapter has no lessons yet.</p>}
       </Panel>
     )
   }
@@ -60,7 +64,7 @@ export function Study({ params }: { params: URLSearchParams }) {
   return (
     <Panel title={subjectName + ' study'} back="#/subjects?mode=study">
       <section class="jp-card" aria-label="Study progress">
-        <p class="jp-summary-sub">{studied} of {chapters.length} chapters studied</p>
+        <p class="jp-summary-sub">{studied} of {chapters.length} topics studied</p>
         <div class="jp-progress-track" aria-hidden="true" style={{ marginTop: '8px' }}>
           <div class="jp-progress-fill" style={{ width: chapters.length ? studied * 100 / chapters.length + '%' : '0%' }} />
         </div>
@@ -85,13 +89,21 @@ export function Study({ params }: { params: URLSearchParams }) {
           {sections.flatMap((section) => section.chapters.flatMap((entry) => entry.concepts
             .filter((concept) => questions.some((question) => question.chapter === entry.id && question.concept === concept))
             .map((concept) => <ModeCard key={entry.id + concept} href={studyLink(subject, entry.id, concept)} title={concept}>{entry.title}</ModeCard>)))}
-        </div> : sections.map((section) => <section class="jp-mode-list" key={section.id}>
-          <h2 class="jp-revisit-title">{section.id} · {section.title}</h2>
-          {section.chapters.map((entry) => <ModeCard key={entry.id} href={studyLink(subject, entry.id)}
-            title={`${entry.number}. ${entry.title}`}>
-            {hasStudied(subject, entry.id) && <span class="jp-mode-studied" aria-label="Studied">✓ Studied</span>}
-          </ModeCard>)}
-        </section>)}
+        </div> : sections.map((section) => {
+          const done = section.chapters.filter((entry) => hasStudied(subject, entry.id)).length
+          return <details class="jp-card jp-study-section" key={section.id}>
+            <summary>
+              <span class="jp-mode-card-title">{section.title}</span>
+              <span class="jp-summary-sub">{section.chapters.length} {section.chapters.length === 1 ? 'topic' : 'topics'}{done ? ` · ${done} studied` : ''}</span>
+            </summary>
+            <div class="jp-mode-list">
+              {section.chapters.map((entry) => <ModeCard key={entry.id} href={studyLink(subject, entry.id)}
+                title={`${entry.number}. ${entry.title}`}>
+                {hasStudied(subject, entry.id) && <span class="jp-mode-studied" aria-label="Studied">✓ Studied</span>}
+              </ModeCard>)}
+            </div>
+          </details>
+        })}
       </>}
     </Panel>
   )

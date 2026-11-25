@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'preact/hooks'
-import { COMPLETE_QUESTIONS_ONLY, getQuestionsBySubject, loadManifest, loadSubject } from '../lib/data'
+import { getQuestionsBySubject, loadManifest, loadSubject, manifestPoolCount } from '../lib/data'
 import {
   EXAM_MINUTES, continueExam, getAttempt, getAttemptQuestions, getExamHistory, getExamSubjects,
   saveExamSubjects, scoreAttempt, startAttempt,
@@ -13,6 +13,7 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
   const [failed, setFailed] = useState(false)
   const [selected, setSelected] = useState(getExamSubjects)
   const [modules, setModules] = useState<'loading' | 'ready' | 'error'>('loading')
+  const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
     let active = true
@@ -23,15 +24,14 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
     return () => { active = false }
   }, [])
 
+  // Availability comes from the manifest. Only the chosen subjects are downloaded, when the rules open.
   useEffect(() => {
     let active = true
-    void loadManifest().then(async (manifest) => {
-      const candidates = SUBJECTS.filter(({ id }) => manifest[id]?.count &&
-        (!COMPLETE_QUESTIONS_ONLY || manifest[id]?.hasAnimations))
-      const loaded = await Promise.all(candidates.map(({ id }) => loadSubject(id)))
+    void loadManifest().then((manifest) => {
       if (!active) return
-      setFailed(candidates.length === 0 || loaded.includes(false))
-      setAvailable(candidates.filter(({ id }) => getQuestionsBySubject(id).length).map(({ id }) => id))
+      const ids = SUBJECTS.filter(({ id }) => manifestPoolCount(id, 'practice') > 0).map(({ id }) => id)
+      setFailed(Object.keys(manifest).length === 0)
+      setAvailable(ids)
     })
     return () => { active = false }
   }, [])
@@ -43,6 +43,18 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
     exam, score: scoreAttempt(getAttemptQuestions(exam), exam.answers),
   }))
   const latest = history[0]?.score
+  const subjectKey = subjects.join(',')
+  useEffect(() => {
+    if (!rules || !ready) return
+    let active = true
+    setLoaded(false)
+    void Promise.all(subjects.map((id) => loadSubject(id))).then((results) => {
+      if (!active) return
+      if (results.includes(false)) setFailed(true)
+      setLoaded(true)
+    })
+    return () => { active = false }
+  }, [rules, ready, subjectKey])
   const previous = history[1]?.score
   const change = latest?.total && previous?.total ? latest.percent - previous.percent : null
   const choose = (id: string) => {
@@ -51,9 +63,13 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
     saveExamSubjects(next)
   }
 
+  if (rules && ready && !loaded) {
+    return <Panel title="Exam rules" back="#/exam"><p class="jp-mode-lead" role="status">Loading questions…</p></Panel>
+  }
+
   if (rules && ready) {
     const minutes = pilot ? EXAM_MINUTES.pilot : EXAM_MINUTES.full
-    const queue = subjects.flatMap((id) => getQuestionsBySubject(id).map(({ id }) => ({ id })))
+    const queue = subjects.flatMap((id) => getQuestionsBySubject(id, 'practice').map(({ id }) => ({ id })))
     return (
       <Panel title="Exam rules" back="#/exam">
         <section class="jp-card">
@@ -75,7 +91,7 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
   }
 
   const subtitle = pilot
-    ? 'Chemistry-only pilot. The other subjects have no complete questions yet.'
+    ? 'Chemistry-only pilot. The other subjects have no practice questions yet.'
     : 'Choose three subjects alongside English Language.'
 
   return (

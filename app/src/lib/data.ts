@@ -8,13 +8,9 @@ export interface SubjectManifestEntry {
 
 export type SubjectManifest = Record<string, SubjectManifestEntry>
 
-export const COMPLETE_QUESTIONS_ONLY = true
-
-// Pilot switch: limit a subject to these questions while a new design is tested.
-// Delete a subject's line to show all of its complete questions again.
-export const PILOT_QUESTION_IDS: Record<string, string[]> = {
-  mathematics: ['math-jamb-0001', 'math-jamb-0005', 'math-jamb-0007', 'math-jamb-0010'],
-}
+// Study shows questions with a full Teach me lesson as worked examples.
+// Practice and the exam use every other question, so a question is never in both.
+export type QuestionPool = 'study' | 'practice' | 'all'
 
 export function isCompleteQuestion(question: Question, animation?: Animation): boolean {
   // Complete = has a Teach me lesson: a concept lesson, or a calculation with both Teach me and Quick.
@@ -28,6 +24,7 @@ export function isCompleteQuestion(question: Question, animation?: Animation): b
 const questions: Question[] = []
 const questionsById = new Map<string, Question>()
 const sharedQuestionsById = new Map<string, Question>()
+const studyIds = new Set<string>()
 const animationsById = new Map<string, Animation>()
 const loadedSubjects = new Set<string>()
 const inflightSubjects = new Map<string, Promise<boolean>>()
@@ -125,14 +122,10 @@ export async function loadSubject(subject: string): Promise<boolean> {
       const source = qFile.questions ?? []
       const byId = new Map(anims.map((animation) => [animation.id, animation]))
       for (const question of source) sharedQuestionsById.set(question.id, question)
-      let shown = COMPLETE_QUESTIONS_ONLY ? source.filter((question) =>
-        isCompleteQuestion(question, byId.get(question.animationId ?? ''))) : source
-      const pilot = PILOT_QUESTION_IDS[normalized]
-      if (pilot) {
-        const kept = shown.filter((question) => pilot.includes(question.id))
-        if (kept.length) shown = kept
+      for (const question of source) {
+        if (isCompleteQuestion(question, byId.get(question.animationId ?? ''))) studyIds.add(question.id)
       }
-      registerSubjectData(normalized, shown, anims)
+      registerSubjectData(normalized, source, anims)
       return true
     } catch {
       return false
@@ -149,9 +142,22 @@ export function getQuestions(): Question[] {
   return questions.slice()
 }
 
-export function getQuestionsBySubject(subject: string): Question[] {
+export function isStudyQuestion(id: string): boolean {
+  return studyIds.has(id)
+}
+
+export function getQuestionsBySubject(subject: string, pool: QuestionPool = 'all'): Question[] {
   const normalized = subject.trim().toLowerCase()
-  return questions.filter((question) => question.subject === normalized)
+  return questions.filter((question) => question.subject === normalized &&
+    (pool === 'all' || (pool === 'study') === studyIds.has(question.id)))
+}
+
+// Counts from the manifest, so subject lists need no question downloads.
+export function manifestPoolCount(subject: string, pool: QuestionPool): number {
+  const entry = manifestCache?.[subject.trim().toLowerCase()]
+  if (!entry) return 0
+  const study = entry.completeCount ?? 0
+  return pool === 'study' ? study : pool === 'practice' ? Math.max(0, entry.count - study) : entry.count
 }
 
 export function getQuestion(id: string): Question | undefined {

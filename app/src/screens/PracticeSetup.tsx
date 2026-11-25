@@ -14,7 +14,7 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
     const saved = getPracticeSettings(subject)
     return chapter ? { ...saved, chapters: [chapter] } : saved
   })
-  const questions = getQuestionsBySubject(subject)
+  const questions = getQuestionsBySubject(subject, 'practice')
   const hasSyllabus = getSections(subject).length > 0
   const chapters = getChapters(subject, questions)
   const eligible = practicePool(questions, settings).length
@@ -51,7 +51,7 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
   return (
     <Panel title={(getSubject(subject)?.name ?? subject) + ' practice'} back="#/subjects?mode=practice">
       {status !== 'ready' || !questions.length ? <p class="jp-mode-lead">
-        {status === 'loading' ? 'Loading questions…' : status === 'error' ? 'Could not load questions.' : 'No complete questions are available yet.'}
+        {status === 'loading' ? 'Loading questions…' : status === 'error' ? 'Could not load questions.' : 'No practice questions are available yet.'}
       </p> : <>
         {chapters.length > 0 && <fieldset class="jp-mode-section">
           <legend class="jp-revisit-title">{hasSyllabus ? 'Chapters' : 'Topics'}</legend>

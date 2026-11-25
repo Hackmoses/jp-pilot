@@ -51,11 +51,16 @@ describe('practice setup', () => {
     const questions = [q1, q2, q3, qMath]
     const settings = { chapters: ['2'], count: 5, minutes: 10 } as const
     expect(practicePool(questions, settings)).toEqual([q1, q3])
-    expect(practicePool(questions, { ...settings, chapters: ['Indices'] })).toEqual([qMath])
+    // Untagged maths topics are placed in their syllabus chapter: Indices is chapter 3.
+    expect(practicePool([qMath], { ...settings, chapters: ['3'] })).toEqual([qMath])
+    expect(practicePool(questions, { ...settings, chapters: ['3'] })).toEqual([q2, qMath])
     expect(practicePool(questions, { ...settings, chapters: [] })).toEqual(questions)
     expect(practicePool(questions, { ...settings, chapters: ['15'] })).toEqual([])
-    expect(getChapters('mathematics', [qMath])).toEqual([{ id: 'Indices', title: 'Indices' }])
-    expect(chapterName('mathematics', 'Indices')).toBe('Indices')
+    expect(getChapters('mathematics', [qMath])).toEqual([{ id: '3', title: 'Indices, Logarithms and Surds' }])
+    expect(chapterName('mathematics', '3')).toBe('Indices, Logarithms and Surds')
+    // Subjects without a syllabus still fall back to the topic.
+    const qEcon = { ...qMath, id: 'qe', subject: 'economics', topic: 'Demand' } as Question
+    expect(getChapters('economics', [qEcon])).toEqual([{ id: 'Demand', title: 'Demand' }])
   })
 
   it('validates custom question counts and timer limits cleanly', () => {
@@ -86,7 +91,7 @@ describe('practice setup', () => {
     registerSubjectData('mathematics', pool, [animation])
 
     modes.savePracticeSettings('mathematics', {
-      chapters: ['Indices'],
+      chapters: ['3'],
       count: 7,
       countMode: 'custom',
       customCount: '7',
@@ -99,7 +104,7 @@ describe('practice setup', () => {
     const reloaded = await import('./modes')
     const saved = reloaded.getPracticeSettings('mathematics')
     expect(saved).toEqual({
-      chapters: ['Indices'],
+      chapters: ['3'],
       count: 7,
       countMode: 'custom',
       customCount: '7',
@@ -122,7 +127,7 @@ describe('exam scoring', () => {
         { subject: 'chemistry', chapter: '2', total: 2, correct: 1, mistakes: 1 },
         { subject: 'chemistry', chapter: '3', total: 1, correct: 0, mistakes: 0 },
         { subject: 'physics', chapter: '2', total: 1, correct: 1, mistakes: 0 },
-        { subject: 'mathematics', chapter: 'Indices', total: 1, correct: 1, mistakes: 0 },
+        { subject: 'mathematics', chapter: '3', total: 1, correct: 1, mistakes: 0 },
       ],
     })
   })

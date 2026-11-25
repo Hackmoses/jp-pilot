@@ -1,4 +1,4 @@
-import syllabus from '../../../data/syllabus/chemistry.json'
+import { chapterForTopic, syllabusSections } from './sections'
 import { getAnimation, getQuestion, registerSavedQuestions } from './data'
 import { getDueQuestionIds } from './store'
 import type { Animation, OptionId, Question } from './types'
@@ -51,11 +51,11 @@ export function parseCustomWholeNumber(
 }
 
 export function getQuestionChapter(question: Question): string {
-  return question.chapter?.trim() || question.topic
+  return question.chapter?.trim() || chapterForTopic(question.subject, question.topic) || question.topic
 }
 
 export function getSections(subject: string) {
-  return subject === syllabus.subject ? syllabus.sections : []
+  return syllabusSections(subject)
 }
 
 export function getChapters(subject: string, questions: readonly Question[]) {
