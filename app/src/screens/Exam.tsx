@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'preact/hooks'
-import { makeOptionSeed } from '../components/question/logic'
+import { getQuestionSourceLabel, makeOptionSeed } from '../components/question/logic'
 import { QuestionCard } from '../components/question/QuestionCard'
 import { COMPLETE_QUESTIONS_ONLY, getQuestion, getQuestionsBySubject, loadManifest, loadSubject } from '../lib/data'
 import {
@@ -254,7 +254,8 @@ export function Results({ mode, params }: { mode: TestMode; params: URLSearchPar
       {isExam && <section class="jp-options">
         <h2 class="jp-revisit-title">Review questions</h2>
         {questions.map((question, index) => <ModeCard key={question.id}
-          href={href + '&review=' + encodeURIComponent(question.id)} title={`Review question ${index + 1}`}>
+          href={href + '&review=' + encodeURIComponent(question.id)} title={`Review question ${index + 1}`}
+          pill={getQuestionSourceLabel(question)}>
           {result.answers[question.id] === question.answerId ? 'Correct' : result.answers[question.id] ? 'Incorrect' : 'Unanswered'}
           {' · ' + formatTime(result.time[question.id] ?? 0)}
         </ModeCard>)}

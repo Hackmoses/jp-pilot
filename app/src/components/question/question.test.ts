@@ -9,6 +9,7 @@ import {
   OPTION_LETTERS,
   buildSessionQueue,
   getOptionViewState,
+  getQuestionSourceLabel,
   getResultCopy,
   makeOptionSeed,
   parseQuestionIdFromHash,
@@ -25,6 +26,16 @@ registerSubjectData(
 const questions = getQuestions()
 
 describe('question screen logic (M1)', () => {
+  it('shows verified years and keeps SdashAPI questions labelled as practice', () => {
+    const source = { provider: 'JAMB', id: 1, yearLabel: '2010' }
+    const question = { ...questions[0], id: 'phys-jamb-0001', source, yearVerified: true }
+    expect(getQuestionSourceLabel(question)).toBe('JAMB 2010')
+    expect(getQuestionSourceLabel({ ...question, yearVerified: false })).toBeNull()
+    expect(getQuestionSourceLabel({ ...question, source: { ...source, yearLabel: null } })).toBeNull()
+    expect(getQuestionSourceLabel({ ...question, label: 'JAMB-style practice' })).toBe('JAMB-style practice')
+    expect(getQuestionSourceLabel({ ...question, source: { ...source, provider: 'SdashAPI' } })).toBe('JAMB-style practice')
+  })
+
   it('produces deterministic seeds that vary across questions and sessions', () => {
     expect(makeOptionSeed('chem-001', 1000)).toBe(makeOptionSeed('chem-001', 1000))
     expect(makeOptionSeed('chem-001', 1000)).not.toBe(makeOptionSeed('chem-002', 1000))

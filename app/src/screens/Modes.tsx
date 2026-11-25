@@ -28,9 +28,12 @@ export function Panel({ title, back = '#/modes', children }: {
   )
 }
 
-export function ModeCard({ href, title, children }: { href: string; title: string; children?: ComponentChildren }) {
+export function ModeCard({ href, title, pill, children }: {
+  href: string; title: string; pill?: string | null; children?: ComponentChildren
+}) {
   return (
     <a class="jp-option jp-mode-card" href={href}>
+      {pill && <span class="jp-pill jp-pill--practice jp-pill--review">{pill}</span>}
       <strong class="jp-option-text">{title}</strong>
       {children && <span class="jp-summary-sub">{children}</span>}
     </a>

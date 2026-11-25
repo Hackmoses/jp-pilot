@@ -3,7 +3,7 @@ import { useEffect, useId, useState } from 'preact/hooks'
 import { renderMathText } from '../../lib/mathText'
 import type { Option, OptionId, Question } from '../../lib/types'
 import { ReadAloudButton } from '../share/ReadAloudButton'
-import { OPTION_LETTERS, getOptionViewState, getResultCopy } from './logic'
+import { OPTION_LETTERS, getOptionViewState, getQuestionSourceLabel, getResultCopy } from './logic'
 
 export interface QuestionCardProps {
   question: Question
@@ -67,10 +67,7 @@ export function QuestionCard({
   const correctIdx = options.findIndex((option) => option.id === question.answerId)
   const correctLetter = correctIdx >= 0 ? OPTION_LETTERS[correctIdx] : ''
 
-  const isApiQuestion =
-    question.label === 'JAMB-style practice' ||
-    question.id.includes('-api-') ||
-    (typeof question.source === 'string' && /^SdashAPI/i.test(question.source))
+  const sourceLabel = exam ? null : getQuestionSourceLabel(question)
 
   return (
     <>
@@ -119,11 +116,11 @@ export function QuestionCard({
       )}
 
       <section class="jp-card jp-question-card" aria-label="Question">
-        {!exam && (review || isApiQuestion) && (
+        {!exam && (review || sourceLabel) && (
           <div class="jp-pills">
             {review && <span class="jp-pill jp-pill--streak jp-pill--review">Review</span>}
-            {isApiQuestion && (
-              <span class="jp-pill jp-pill--practice jp-pill--review">JAMB-style practice</span>
+            {sourceLabel && (
+              <span class="jp-pill jp-pill--practice jp-pill--review">{sourceLabel}</span>
             )}
           </div>
         )}

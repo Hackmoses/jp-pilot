@@ -6,6 +6,17 @@ import type { SessionRecord, SessionSummary } from './sessionState'
 
 export const OPTION_LETTERS = ['A', 'B', 'C', 'D'] as const
 
+export function getQuestionSourceLabel(question: Question): string | null {
+  const { source } = question
+  if (question.label === 'JAMB-style practice' || question.id.includes('-api-') ||
+    /^SdashAPI/i.test(typeof source === 'string' ? source : source.provider)) {
+    return 'JAMB-style practice'
+  }
+
+  const year = typeof source === 'string' ? null : source.yearLabel?.trim()
+  return question.yearVerified === true && year ? `JAMB ${year}` : null
+}
+
 export type OptionStatus = 'idle' | 'correct' | 'wrong' | 'neutral'
 
 export interface OptionViewState {
