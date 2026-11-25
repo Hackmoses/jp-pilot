@@ -11,12 +11,16 @@ const sources = [
   'src/screens/PracticeRun.tsx',
   'src/screens/Results.tsx',
   'src/screens/Summary.tsx',
-  'src/components/try-it/try-it-gas.tsx',
-  'src/components/try-it/try-it-electrolysis.tsx',
-  'src/components/try-it/try-it-mirror.tsx',
 ]
 const visited = new Set()
-const files = new Set()
+const studySubjects = ['chemistry', 'physics', 'biology', 'mathematics']
+const files = new Set([
+  './data/manifest.json',
+  ...studySubjects.flatMap((subject) => [
+    './data/questions-' + subject + '.json',
+    './data/animations-' + subject + '.json',
+  ]),
+])
 function collect(key) {
   if (visited.has(key)) return
   const chunk = manifest[key]

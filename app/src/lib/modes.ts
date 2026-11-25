@@ -135,6 +135,7 @@ function read() {
 interface ModeState {
   recent: { href: string; label: string } | null
   studied: Record<string, boolean>
+  completedInteractives: Record<string, boolean>
   studyAnswers: Partial<Record<string, OptionId>>
   practice: Record<string, PracticeSettings>
   examSubjects: string[]
@@ -148,6 +149,7 @@ const saved = read()
 const state: ModeState = {
   recent: saved?.recent ?? null,
   studied: saved?.studied ?? {},
+  completedInteractives: saved?.completedInteractives ?? {},
   studyAnswers: saved?.studyAnswers ?? {},
   practice: saved?.practice ?? {},
   examSubjects: saved?.examSubjects ?? ['english', 'chemistry'],
@@ -167,7 +169,22 @@ function save() {
 
 export function getRecent() { return state.recent }
 export function remember(href: string, label: string) { state.recent = { href, label }; save() }
-export function hasStudied(subject: string, chapter: string) { return Boolean(state.studied[subject + '/' + chapter]) }
+function interactiveKey(subject: string, chapter: string, lesson?: string) {
+  const key = subject + '/' + chapter
+  // Previously saved cards use the chapter key. Additional cards use a separate key.
+  return lesson ? key + '/' + lesson : key
+}
+export function hasCompletedInteractive(subject: string, chapter: string, lesson?: string) {
+  return Boolean(state.completedInteractives[interactiveKey(subject, chapter, lesson)])
+}
+export function markInteractiveCompleted(subject: string, chapter: string, lesson?: string) {
+  state.completedInteractives[interactiveKey(subject, chapter, lesson)] = true
+  state.studied[subject + '/' + chapter] = true
+  save()
+}
+export function hasStudied(subject: string, chapter: string) {
+  return Boolean(state.studied[subject + '/' + chapter]) || hasCompletedInteractive(subject, chapter)
+}
 export function getStudyAnswer(id: string) { return state.studyAnswers[id] }
 export function markStudied(subject: string, chapter: string, id: string, answer: OptionId) {
   state.studied[subject + '/' + chapter] = true

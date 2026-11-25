@@ -13,7 +13,7 @@ export const COMPLETE_QUESTIONS_ONLY = true
 // Pilot switch: limit a subject to these questions while a new design is tested.
 // Delete a subject's line to show all of its complete questions again.
 export const PILOT_QUESTION_IDS: Record<string, string[]> = {
-  mathematics: ['math-jamb-0005', 'math-jamb-0007', 'math-jamb-0010'],
+  mathematics: ['math-jamb-0001', 'math-jamb-0005', 'math-jamb-0007', 'math-jamb-0010'],
 }
 
 export function isCompleteQuestion(question: Question, animation?: Animation): boolean {
