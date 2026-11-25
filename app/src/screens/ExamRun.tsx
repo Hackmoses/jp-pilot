@@ -155,7 +155,9 @@ function Exam({ attempt }: { attempt: Attempt }) {
         <h2 id="jp-calculator-title">Calculator</h2>
         {calculatorUsed && (Calculator ? <Calculator close={() => calculator.current?.close()} /> : <>
           <p class="jp-mode-lead" role="status">{calculatorFailed ? 'Could not open the calculator.' : 'Loading…'}</p>
-          <button type="button" class="jp-btn" onClick={() => calculator.current?.close()}>Close</button>
+          <div class="jp-dialog-actions">
+            <button type="button" class="jp-btn" onClick={() => calculator.current?.close()}>Close</button>
+          </div>
         </>)}
       </dialog>
       <dialog class="jp-dialog" ref={dialog} aria-labelledby="jp-exam-submit-title">

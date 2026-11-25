@@ -38,8 +38,9 @@ export function Study({ params }: { params: URLSearchParams }) {
       <Panel title={concept ?? chapterName(subject, chapter)} back={chaptersHref}>
         {chapterQuestions.length ? <div class="jp-mode-list">
           {interactive && <>
-            <h2 class="jp-revisit-title">Questions</h2>
+            <h2 class="jp-revisit-title">Interactive</h2>
             <TryItCard interactive={interactive} practiceHref={'#/practice?' + new URLSearchParams({ subject, chapter })} />
+            <h2 class="jp-revisit-title">Questions</h2>
           </>}
           {chapterQuestions.map((question, index) => (
             <ModeCard key={question.id} href={studyLink(subject, chapter, concept ?? undefined) + '&id=' + encodeURIComponent(question.id)}

@@ -169,8 +169,8 @@ body:has(.jp-calc-modal[open]) {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  min-height: 30px;
-  padding: 4px 10px;
+  min-height: 32px;
+  padding: 4px 12px;
   background: var(--brand);
   border: 0;
   border-radius: var(--radius-pill);
@@ -183,8 +183,8 @@ body:has(.jp-calc-modal[open]) {
 }
 
 .jp-calc-voice-btn {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   padding: 0;
   display: inline-flex;
   align-items: center;
@@ -194,18 +194,6 @@ body:has(.jp-calc-modal[open]) {
   border-radius: var(--radius-pill);
   color: #334155;
   cursor: pointer;
-}
-
-@media (max-width: 760px) {
-  .jp-calc-play-btn {
-    min-height: 32px;
-    padding: 4px 10px;
-  }
-
-  .jp-calc-voice-btn {
-    width: 32px;
-    height: 32px;
-  }
 }
 
 .jp-player {
@@ -436,11 +424,12 @@ button.jp-player__row:focus-visible,
 
 .jp-player__speaker,
 .jp-player__speed {
-  min-block-size: var(--tap-min);
-  border: 1px solid var(--option-line);
+  block-size: 32px;
+  min-block-size: 32px;
+  border: 1px solid #cbd5e1;
   border-radius: var(--radius-pill);
   background: var(--bg);
-  color: var(--ink-2);
+  color: #334155;
   font: 600 12px/1.2 var(--font-system);
   cursor: pointer;
 }
@@ -448,7 +437,8 @@ button.jp-player__row:focus-visible,
 .jp-player__speaker {
   display: inline-grid;
   place-items: center;
-  min-inline-size: var(--tap-min);
+  inline-size: 32px;
+  min-inline-size: 32px;
   padding: 0;
 }
 
@@ -459,7 +449,7 @@ button.jp-player__row:focus-visible,
 }
 
 .jp-player__speed {
-  padding-inline: var(--space-1);
+  padding-inline: 8px;
   font-variant-numeric: tabular-nums;
 }
 
@@ -468,10 +458,10 @@ button.jp-player__row:focus-visible,
   align-items: center;
   flex: none;
   gap: 2px;
-  block-size: 36px;
+  block-size: 32px;
   box-sizing: border-box;
   padding: 2px;
-  border: 1px solid var(--option-line);
+  border: 1px solid #cbd5e1;
   border-radius: var(--radius-pill);
   background: var(--bg);
 }
@@ -482,10 +472,10 @@ button.jp-player__row:focus-visible,
   align-items: center;
   justify-content: center;
   inline-size: auto;
-  block-size: 30px;
-  min-block-size: 30px;
+  block-size: 26px;
+  min-block-size: 26px;
   min-inline-size: 0;
-  padding: 0 var(--space-2);
+  padding: 0 9px;
   border: 0;
   border-radius: var(--radius-pill);
   background: transparent;
@@ -505,7 +495,7 @@ button.jp-player__row:focus-visible,
   color: var(--brand);
 }
 
-/* Compact visual size; an invisible ring keeps the 44px tap target. */
+/* Compact visual size; an invisible ring keeps the tap target accessible. */
 .jp-player__controls button,
 .jp-player__controls .jp-player__speed {
   position: relative;
@@ -518,19 +508,24 @@ button.jp-player__row:focus-visible,
   inset: -4px;
 }
 
-.jp-player:has([data-timed="true"]) .jp-player__controls button:not(.jp-player__mode-btn) {
-  inline-size: 36px;
-  block-size: 36px;
-}
-
-.jp-player__controls .jp-player__speaker,
-.jp-player__controls .jp-player__speed {
-  min-block-size: 36px;
-  block-size: 36px;
-}
-
+.jp-player__controls .jp-player__play,
+.jp-player__controls .jp-player__replay,
 .jp-player__controls .jp-player__speaker {
-  min-inline-size: 36px;
+  inline-size: 34px;
+  min-inline-size: 34px;
+  block-size: 34px;
+  min-block-size: 34px;
+}
+
+.jp-player__controls .jp-player__speed,
+.jp-player__controls .jp-player__modes {
+  min-block-size: 34px;
+  block-size: 34px;
+}
+
+.jp-player__controls .jp-player__modes button.jp-player__mode-btn {
+  block-size: 28px;
+  min-block-size: 28px;
 }
 
 .jp-player__controls .jp-player__voice {

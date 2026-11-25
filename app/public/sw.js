@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jp-pilot-v11'
+const CACHE_NAME = 'jp-pilot-v12'
 const PRECACHE_BUNDLES = []
 const CALCULATION_AUDIO_CACHE = 'jp-calculation-audio-v1'
 const CALCULATION_AUDIO_PATH = new URL('./audio/', self.location.href).pathname

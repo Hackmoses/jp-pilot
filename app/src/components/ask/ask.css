@@ -426,17 +426,19 @@ body:has(.jp-ask-sheet[open]) {
 }
 
 .jp-ask-composer--trial {
-  padding: 0 var(--space-1) 0 var(--space-3);
-}
-
-.jp-ask-composer--trial input,
-.jp-ask-composer--trial .jp-ask-send {
-  min-height: var(--tap-min);
+  padding: 4px 5px 4px 12px;
 }
 
 .jp-ask-composer--trial input {
-  font-size: 16px;
-  color: var(--ink);
+  min-height: 28px;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+@media (max-width: 760px) {
+  .jp-ask-composer--trial input {
+    font-size: 16px;
+  }
 }
 
 .jp-ask-composer--trial:focus-within {
@@ -444,7 +446,9 @@ body:has(.jp-ask-sheet[open]) {
 }
 
 .jp-ask-composer--trial .jp-ask-send {
-  width: var(--tap-min);
+  width: 28px;
+  height: 28px;
+  min-height: 28px;
   color: var(--bg);
   background: var(--brand);
   cursor: pointer;
@@ -465,20 +469,21 @@ body:has(.jp-ask-sheet[open]) {
 .jp-ask-feedback {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-1);
+  margin-top: 4px;
+  gap: 6px;
 }
 
 .jp-ask-feedback button {
-  min-width: var(--tap-min);
-  min-height: var(--tap-min);
-  padding: 0 var(--space-2);
-  border: 1px solid #cbd5e1;
-  border-radius: 7px;
+  min-width: 0;
+  min-height: 28px;
+  padding: 3px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-pill);
   background: var(--bg);
-  color: var(--ink-2);
-  font: inherit;
-  font-size: 12px;
+  color: #475569;
+  font: 500 12px/1.2 var(--font-system);
   cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 }
 
 .jp-ask-feedback button[aria-pressed='true'] {
