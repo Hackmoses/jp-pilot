@@ -1,0 +1,982 @@
+{
+  "version": 1,
+  "subject": "mathematics",
+  "count": 15,
+  "questions": [
+    {
+      "id": "math-jamb-0016",
+      "subject": "mathematics",
+      "topic": "Simple interest",
+      "type": "calculation",
+      "difficulty": "easy",
+      "stem": "A man invested ₦5,000 for 9 months at 4%. What is the simple interest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦150",
+          "why": "Nine months is three quarters of a year, so the interest is three quarters of ₦200.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "₦220",
+          "why": "This exceeds the interest for a full year.",
+          "whyWrong": "A full year earns ₦200. A 9-month investment at the same rate earns less."
+        },
+        {
+          "id": "c",
+          "text": "₦130",
+          "why": "This is too little for 9 months at the stated rate.",
+          "whyWrong": "Multiply ₦200 by 9/12 to get ₦150."
+        },
+        {
+          "id": "d",
+          "text": "₦250",
+          "why": "This is more than one year’s interest.",
+          "whyWrong": "₦250 would require 15 months at ₦200 per year."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Find one year’s interest, then take the fraction of a year invested.",
+      "explanation": "At 4% per year, ₦5,000 earns 5000 × \\frac{4}{100} = ₦200 in a year. For 9 months the interest is ₦200 × \\frac{9}{12} = ₦150.",
+      "trap": "Use the same time unit as the annual rate. Entering 9 as the number of years overstates the interest.",
+      "mnemonic": "Simple interest = principal × rate × time in years.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "One year earns ₦200. Nine months is three quarters of a year, and three quarters of ₦200 is ₦150."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "₦250 would require 15 months at ₦200 per year."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 4,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 2,
+      "concept": "Simple interest"
+    },
+    {
+      "id": "math-jamb-0017",
+      "subject": "mathematics",
+      "topic": "Equations",
+      "type": "calculation",
+      "difficulty": "medium",
+      "stem": "If log_{3} 18 + log_{3} 3 − log_{3} x = 3, find x.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "why": "This makes the combined logarithm log_{3} 54.",
+          "whyWrong": "With x = 1 the log argument is 54. It must be 27."
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "why": "Dividing 54 by 2 gives 27, whose logarithm to base 3 is 3.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "why": "The logarithm of zero is undefined.",
+          "whyWrong": "The term log_{3} x requires x > 0."
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "why": "This makes the combined logarithm log_{3} 18.",
+          "whyWrong": "54 ÷ 3 = 18, whereas 3^{3} = 27."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Combine the three logarithms into one before removing the logarithm.",
+      "explanation": "Use the log laws to write log_{3} \\left(\\frac{54}{x}\\right) = 3. Therefore \\frac{54}{x} = 3^{3} = 27, so x = 2. This satisfies x > 0.",
+      "trap": "Adding logs multiplies their arguments. Subtracting log_{3} x divides by x.",
+      "mnemonic": "Log plus means multiply. Log minus means divide.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The equation asks what you must divide 54 by to get 27. That number is 2."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "54 ÷ 3 = 18, whereas 3^{3} = 27."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 7,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 3,
+      "concept": "Equations"
+    },
+    {
+      "id": "math-jamb-0018",
+      "subject": "mathematics",
+      "topic": "Remainder theorem",
+      "type": "calculation",
+      "difficulty": "medium",
+      "stem": "Find the remainder when x^{3} − 2x^{2} + 3x − 3 is divided by x^{2} + 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x − 1",
+          "why": "Subtracting the product of the divisor and x − 2 leaves 2x − 1.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "x + 3",
+          "why": "The linear and constant terms both differ from the remainder.",
+          "whyWrong": "The divisor times x − 2 contributes x − 2 at degrees one and zero. Subtract those terms to get 2x − 1."
+        },
+        {
+          "id": "c",
+          "text": "2x + 1",
+          "why": "The x coefficient is right, but the constant has the wrong sign.",
+          "whyWrong": "The constant subtraction is −3 − (−2) = −1."
+        },
+        {
+          "id": "d",
+          "text": "x − 3",
+          "why": "This has the wrong linear and constant terms.",
+          "whyWrong": "Join the x terms as 3x − x = 2x and the constants as −3 + 2 = −1."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "First subtract x(x^{2} + 1), then clear the remaining x^{2} term.",
+      "explanation": "The quotient is x − 2. Multiplying it by x^{2} + 1 gives x^{3} − 2x^{2} + x − 2. Subtract this entire product from the dividend to get 2x − 1.",
+      "trap": "Keep the subtraction sign on the whole product. The last step is −3 − (−2).",
+      "mnemonic": "A quadratic divisor leaves a remainder of degree below two.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The divisor times x − 2 matches the two highest powers. What is left after subtraction is 2x − 1."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The constant subtraction is −3 − (−2) = −1."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 5,
+      "concept": "Remainder theorem"
+    },
+    {
+      "id": "math-jamb-0019",
+      "subject": "mathematics",
+      "topic": "Inverse variation",
+      "type": "calculation",
+      "difficulty": "medium",
+      "stem": "T varies inversely as the cube of R. When R = 3, T = \\frac{2}{81}. Find T when R = 2.",
+      "options": [
+        {
+          "id": "a",
+          "text": "\\frac{1}{18}",
+          "why": "This corresponds to squaring the change factor.",
+          "whyWrong": "Multiplying \\frac{2}{81} by \\left(\\frac{3}{2}\\right)^{2} gives \\frac{1}{18}. The question requires a cube."
+        },
+        {
+          "id": "b",
+          "text": "\\frac{1}{12}",
+          "why": "The constant TR^{3} is \\frac{2}{3}, so division by 8 gives \\frac{1}{12}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "\\frac{1}{24}",
+          "why": "This is half the value from the inverse-cube formula.",
+          "whyWrong": "For R = 2, divide \\frac{2}{3} by 2^{3} = 8 to get \\frac{1}{12}."
+        },
+        {
+          "id": "d",
+          "text": "\\frac{1}{6}",
+          "why": "This is twice the value from the inverse-cube formula.",
+          "whyWrong": "Dividing \\frac{2}{3} by 4 gives this result. The denominator should be 8."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the constant product TR^{3}.",
+      "explanation": "Write T = \\frac{k}{R^{3}}. The given values give k = \\frac{2}{81} × 27 = \\frac{2}{3}. At R = 2, T = \\frac{2}{3} ÷ 8 = \\frac{1}{12}.",
+      "trap": "The exponent is 3. Using an inverse square would produce \\frac{1}{18}.",
+      "mnemonic": "Inverse cube means TR^{3} stays constant.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "R^{3} drops from 27 to 8. T is therefore multiplied by \\frac{27}{8}, giving \\frac{1}{12}."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Multiplying \\frac{2}{81} by \\left(\\frac{3}{2}\\right)^{2} gives \\frac{1}{18}. The question requires a cube."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 6,
+      "concept": "Inverse variation"
+    },
+    {
+      "id": "math-jamb-0020",
+      "subject": "mathematics",
+      "topic": "Linear inequalities",
+      "type": "calculation",
+      "difficulty": "easy",
+      "stem": "Solve the inequality −6(x + 3) ≤ 4(x − 2).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≤ 2",
+          "why": "This uses the wrong direction and boundary.",
+          "whyWrong": "For example, x = −2 satisfies x ≤ 2 but fails the original inequality."
+        },
+        {
+          "id": "b",
+          "text": "x ≥ −1",
+          "why": "Expanding and rearranging gives −10 ≤ 10x.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "x ≥ −2",
+          "why": "This includes values below the true boundary.",
+          "whyWrong": "At x = −2 the left side is −6 and the right side is −16, so the inequality fails."
+        },
+        {
+          "id": "d",
+          "text": "x ≤ −1",
+          "why": "The boundary is right but the inequality faces the wrong way.",
+          "whyWrong": "At x = 0 the original inequality is true, and this choice excludes 0."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Collect the x terms on the right to get a positive coefficient.",
+      "explanation": "Expand to get −6x − 18 ≤ 4x − 8. Add 6x and 8 to both sides to obtain −10 ≤ 10x. Divide by positive 10 to get x ≥ −1.",
+      "trap": "The inequality reverses only when you multiply or divide by a negative number.",
+      "mnemonic": "Keep the x coefficient positive to avoid a sign flip.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "After rearranging, 10x is at least −10. Dividing by 10 gives x at least −1."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "At x = 0 the original inequality is true, and this choice excludes 0."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 19,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 7,
+      "concept": "Linear inequalities"
+    },
+    {
+      "id": "math-jamb-0021",
+      "subject": "mathematics",
+      "topic": "Closure",
+      "type": "calculation",
+      "difficulty": "easy",
+      "stem": "A binary operation ⊕ on real numbers is defined by x ⊕ y = xy + x + y. Find 3 ⊕ \\left(−\\frac{2}{3}\\right).",
+      "options": [
+        {
+          "id": "a",
+          "text": "−\\frac{1}{2}",
+          "why": "This does not equal the three-term sum.",
+          "whyWrong": "The positive remainder after adding −2 and 3 is 1. Subtracting \\frac{2}{3} leaves \\frac{1}{3}."
+        },
+        {
+          "id": "b",
+          "text": "\\frac{1}{3}",
+          "why": "The product is −2 and the remaining terms are 3 and −\\frac{2}{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "−1",
+          "why": "This has the wrong sign and magnitude.",
+          "whyWrong": "The sum −2 + 3 is positive 1, and subtracting \\frac{2}{3} still leaves a positive result."
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "why": "This is the magnitude of the product alone.",
+          "whyWrong": "Use the signed product −2 and include both input terms."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Substitute both inputs into xy, x and y separately.",
+      "explanation": "With x = 3 and y = −\\frac{2}{3}, the product xy is −2. Then xy + x + y = −2 + 3 − \\frac{2}{3} = \\frac{1}{3}.",
+      "trap": "The ⊕ symbol uses the rule in the question. Keep the minus sign on y in both places.",
+      "mnemonic": "For this rule, write three terms: product, first input, second input.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Start with −2, add 3 to get 1, then subtract two thirds."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Use the signed product −2 and include both input terms."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 23,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 9,
+      "concept": "Closure"
+    },
+    {
+      "id": "math-jamb-0022",
+      "subject": "mathematics",
+      "topic": "Polygons",
+      "type": "calculation",
+      "difficulty": "easy",
+      "stem": "What is the size of each interior angle of a 12-sided regular polygon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "120°",
+          "why": "A regular hexagon has this interior angle.",
+          "whyWrong": "A regular 12-sided polygon turns through 30° at each corner, leaving an interior angle of 150°."
+        },
+        {
+          "id": "b",
+          "text": "150°",
+          "why": "Subtract the 30° exterior angle from 180°.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "30°",
+          "why": "This is the exterior angle.",
+          "whyWrong": "The question asks for the interior angle, which is 180° − 30°."
+        },
+        {
+          "id": "d",
+          "text": "180°",
+          "why": "This is the sum of a matching interior and exterior angle.",
+          "whyWrong": "A straight angle includes both the interior angle and the 30° exterior angle."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Find the exterior angle by dividing a full turn by 12.",
+      "explanation": "The 12 equal exterior angles sum to 360°, so each is 30°. Each interior angle is supplementary to its exterior angle, giving 180° − 30° = 150°.",
+      "trap": "Dividing 360° by 12 gives the turn at a vertex, which is the exterior angle.",
+      "mnemonic": "Interior angle = 180° − exterior angle.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Each outside turn is 30°. The inside angle fills the rest of a straight angle."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The question asks for the interior angle, which is 180° − 30°."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 27,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 11,
+      "concept": "Polygons"
+    },
+    {
+      "id": "math-jamb-0023",
+      "subject": "mathematics",
+      "topic": "Volumes",
+      "type": "calculation",
+      "difficulty": "easy",
+      "stem": "A solid metal cube of side 3 cm is placed in a rectangular tank of dimensions 3 cm, 4 cm and 5 cm. What volume of water can the tank now hold?",
+      "options": [
+        {
+          "id": "a",
+          "text": "48 cm^{3}",
+          "why": "This subtracts only 12 cm^{3} from the tank volume.",
+          "whyWrong": "The cube’s volume is 3 × 3 × 3 = 27 cm^{3}."
+        },
+        {
+          "id": "b",
+          "text": "33 cm^{3}",
+          "why": "The cube occupies 27 cm^{3} of the 60 cm^{3} tank.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "60 cm^{3}",
+          "why": "This is the full volume of the empty tank.",
+          "whyWrong": "The cube takes up part of the space, so subtract its volume."
+        },
+        {
+          "id": "d",
+          "text": "27 cm^{3}",
+          "why": "This is the volume of the cube.",
+          "whyWrong": "The water fills the space left over after subtracting the cube from 60 cm^{3}."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Find the volumes of the tank and the cube separately.",
+      "explanation": "The tank’s volume is 3 × 4 × 5 = 60 cm^{3}. The cube fits inside and takes up 3^{3} = 27 cm^{3}. The remaining capacity is 60 − 27 = 33 cm^{3}.",
+      "trap": "The amount removed is 27 cm^{3}. The question asks how much space remains.",
+      "mnemonic": "Water capacity = tank volume − solid volume.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "There are 60 cubic centimetres of space at first. The cube uses up 27, leaving 33."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "The water fills the space left over after subtracting the cube from 60 cm^{3}."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 30,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 12,
+      "concept": "Volumes"
+    },
+    {
+      "id": "math-jamb-0024",
+      "subject": "mathematics",
+      "topic": "Loci",
+      "type": "recall",
+      "difficulty": "easy",
+      "stem": "The perpendicular bisector of a line segment XY is the locus of a point",
+      "options": [
+        {
+          "id": "a",
+          "text": "whose distance from X is always twice its distance from Y.",
+          "why": "This gives a 2:1 distance ratio.",
+          "whyWrong": "Every point on the perpendicular bisector has a 1:1 distance ratio to the endpoints."
+        },
+        {
+          "id": "b",
+          "text": "whose distance from Y is always twice its distance from X.",
+          "why": "This gives a 1:2 distance ratio.",
+          "whyWrong": "Even the midpoint of XY has equal distances to X and Y."
+        },
+        {
+          "id": "c",
+          "text": "which moves on the line XY.",
+          "why": "The perpendicular bisector crosses XY at its midpoint.",
+          "whyWrong": "The two lines meet at a single point. XY itself generally contains points closer to one endpoint."
+        },
+        {
+          "id": "d",
+          "text": "which is equidistant from the points X and Y.",
+          "why": "Equal distances to X and Y characterise the entire perpendicular bisector.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Start with the midpoint and consider points directly perpendicular to the segment there.",
+      "explanation": "Let M be the midpoint of XY. A point P on the perpendicular bisector forms right triangles PMX and PMY with equal legs PM and MX = MY. Their hypotenuses are equal, so PX = PY. Conversely, PX = PY places P on the perpendicular bisector.",
+      "trap": "The line XY joins the endpoints. Its perpendicular bisector crosses it at right angles at the midpoint.",
+      "mnemonic": "Perpendicular bisector means equal distances from the two endpoints.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Imagine X and Y as two posts. The perpendicular bisector traces every place where you are just as far from one post as the other."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The two lines meet at a single point. XY itself generally contains points closer to one endpoint."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 13,
+      "concept": "Loci"
+    },
+    {
+      "id": "math-jamb-0025",
+      "subject": "mathematics",
+      "topic": "Straight line",
+      "type": "calculation",
+      "difficulty": "easy",
+      "stem": "The midpoint of P(x, y) and Q(8, 6) is (5, 8). Find x and y.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2, 10)",
+          "why": "Averaging 2 with 8 gives 5, and averaging 10 with 6 gives 8.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "(2, 8)",
+          "why": "The x coordinate works but the y coordinate does not.",
+          "whyWrong": "Averaging 8 with 6 gives 7. To get 8 as the average, the missing y must be 10."
+        },
+        {
+          "id": "c",
+          "text": "(2, 12)",
+          "why": "The x coordinate works but the y coordinate gives a midpoint of 9.",
+          "whyWrong": "The y coordinates must sum to 16. Here 12 + 6 = 18."
+        },
+        {
+          "id": "d",
+          "text": "(2, 6)",
+          "why": "The y coordinates would both be 6.",
+          "whyWrong": "Two y coordinates of 6 have midpoint y = 6. The target is 8."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Double each midpoint coordinate and subtract the corresponding coordinate of Q.",
+      "explanation": "The midpoint formula gives \\frac{x + 8}{2} = 5 and \\frac{y + 6}{2} = 8. Thus x = 10 − 8 = 2 and y = 16 − 6 = 10.",
+      "trap": "The midpoint y coordinate belongs halfway between the endpoints. Copying 8 as the missing y coordinate gives the wrong average.",
+      "mnemonic": "Missing endpoint = twice the midpoint − known endpoint.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "From Q to the midpoint, move left 3 and up 2. Repeating the same move takes you to (2, 10)."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Averaging 8 with 6 gives 7. To get 8 as the average, the missing y must be 10."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 14,
+      "concept": "Straight line"
+    },
+    {
+      "id": "math-jamb-0026",
+      "subject": "mathematics",
+      "topic": "Bearings",
+      "type": "calculation",
+      "difficulty": "medium",
+      "stem": "A man walks 100 m due west from X to Y, then 100 m due north to Z. Find the bearing of X from Z.",
+      "options": [
+        {
+          "id": "a",
+          "text": "195°",
+          "why": "This bearing points west of south.",
+          "whyWrong": "X is east of Z, so the bearing is between 090° and 180°."
+        },
+        {
+          "id": "b",
+          "text": "135°",
+          "why": "The direction from Z to X is southeast with equal eastward and southward distances.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "225°",
+          "why": "This is southwest.",
+          "whyWrong": "To return toward X from Z you move right on a north-up map, not left."
+        },
+        {
+          "id": "d",
+          "text": "045°",
+          "why": "This is northeast.",
+          "whyWrong": "X is south of Z. An angle of 045° points north of east."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Put yourself at Z and work out which two compass directions take you back to X.",
+      "explanation": "From Z, X is 100 m east and 100 m south. Equal components make the direction 45° south of east. Bearings are measured clockwise from north, so add 45° to 90° to get 135°.",
+      "trap": "The bearing of X from Z starts at Z. Reversing the start and end points rotates the bearing through 180°.",
+      "mnemonic": "From tells you where to stand. Then turn clockwise from north.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "From Z you look halfway between east and south, so the bearing is halfway between 090° and 180°."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "To return toward X from Z you move right on a north-up map, not left."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 35,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 15,
+      "concept": "Bearings"
+    },
+    {
+      "id": "math-jamb-0027",
+      "subject": "mathematics",
+      "topic": "Quotient rule",
+      "type": "calculation",
+      "difficulty": "medium",
+      "stem": "Find the derivative with respect to θ of \\frac{sin θ}{cos θ}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "sec^{2} θ",
+          "why": "The quotient rule gives \\frac{sin^{2} θ + cos^{2} θ}{cos^{2} θ} = sec^{2} θ.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "tan θ cosec θ",
+          "why": "This simplifies to sec θ.",
+          "whyWrong": "The quotient rule leaves a squared cosine in the denominator, giving sec^{2} θ."
+        },
+        {
+          "id": "c",
+          "text": "cosec θ sec θ",
+          "why": "This has sin θ cos θ in the denominator.",
+          "whyWrong": "The denominator in the quotient rule is cos^{2} θ."
+        },
+        {
+          "id": "d",
+          "text": "cosec^{2} θ",
+          "why": "This has sin^{2} θ in the denominator.",
+          "whyWrong": "The original quotient is tan θ, whose derivative is sec^{2} θ. The derivative of cot θ is −cosec^{2} θ."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Apply the quotient rule with numerator sin θ and denominator cos θ.",
+      "explanation": "The quotient rule gives \\frac{cos θ · cos θ − sin θ · (−sin θ)}{cos^{2} θ}. The numerator is cos^{2} θ + sin^{2} θ = 1. The derivative is therefore sec^{2} θ where cos θ ≠ 0.",
+      "trap": "The derivative of cos θ is −sin θ. The quotient rule subtracts that term, so the numerator is a sum of squares.",
+      "mnemonic": "Quotient rule: denominator times numerator derivative minus numerator times denominator derivative, over denominator squared.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The fraction is tan θ. Its derivative is sec^{2} θ."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "The original quotient is tan θ, whose derivative is sec^{2} θ. The derivative of cot θ is −cosec^{2} θ."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 37,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 16,
+      "concept": "Quotient rule"
+    },
+    {
+      "id": "math-jamb-0028",
+      "subject": "mathematics",
+      "topic": "Definite integration",
+      "type": "calculation",
+      "difficulty": "easy",
+      "stem": "Evaluate ∫_{0}^{1}(3 − 2x) dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "why": "This is the contribution of the constant term alone.",
+          "whyWrong": "The integral of −2x over the same interval is −1. Include it to get 2."
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "why": "This exceeds the area under the line.",
+          "whyWrong": "The line’s height on [0, 1] never exceeds 3, so a unit-wide region cannot have area 5."
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "why": "The antiderivative 3x − x^{2} changes by 2 between the limits.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "why": "This exceeds the area of a rectangle of height 3 and width 1.",
+          "whyWrong": "The integrand drops from 3 to 1 over an interval of width 1, so its average height is 2."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Integrate both terms before substituting the upper and lower limits.",
+      "explanation": "An antiderivative is 3x − x^{2}. Its value at 1 is 3 − 1 = 2. Its value at 0 is 0. Subtract to get 2.",
+      "trap": "The integral includes the decreasing term −2x. Keeping only the constant term treats the graph as a rectangle of height 3.",
+      "mnemonic": "Definite integral = antiderivative at upper limit minus antiderivative at lower limit.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The graph is a straight line going from height 3 to height 1. Average height 2 times width 1 gives area 2."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The integral of −2x over the same interval is −1. Include it to get 2."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 39,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 18,
+      "concept": "Definite integration"
+    },
+    {
+      "id": "math-jamb-0029",
+      "subject": "mathematics",
+      "topic": "Permutation",
+      "type": "calculation",
+      "difficulty": "easy",
+      "stem": "In how many ways can the letters of the word ELATION be arranged?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6!",
+          "why": "This would count arrangements of six distinct letters.",
+          "whyWrong": "ELATION has seven distinct letters, so there are seven choices for the first position."
+        },
+        {
+          "id": "b",
+          "text": "7!",
+          "why": "All seven letters differ, giving 7 × 6 × 5 × 4 × 3 × 2 × 1 arrangements.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "5!",
+          "why": "This would arrange only five distinct letters.",
+          "whyWrong": "There are seven positions to fill, including the vowels and consonants."
+        },
+        {
+          "id": "d",
+          "text": "8!",
+          "why": "This would count arrangements of eight distinct letters.",
+          "whyWrong": "Count E, L, A, T, I, O and N. There are seven letters."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Count the letters and check for repeats.",
+      "explanation": "ELATION has seven distinct letters. The choices drop from 7 for the first slot to 6 for the next, and so on until one letter remains. Their product is 7!.",
+      "trap": "Count all seven letters before using a factorial. No repeated-letter division is needed here.",
+      "mnemonic": "Arrange n distinct objects in n! orders.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "There are seven choices for the first spot, six for the second, then five, down to one."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "ELATION has seven distinct letters, so there are seven choices for the first position."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 47,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 22,
+      "concept": "Permutation"
+    },
+    {
+      "id": "math-jamb-0030",
+      "subject": "mathematics",
+      "topic": "Probability",
+      "type": "calculation",
+      "difficulty": "easy",
+      "stem": "Find the probability that a number picked at random from the set {43, 44, 45, …, 60} is a prime number.",
+      "options": [
+        {
+          "id": "a",
+          "text": "\\frac{2}{3}",
+          "why": "This corresponds to 12 primes among the 18 integers.",
+          "whyWrong": "Only 43, 47, 53 and 59 are prime."
+        },
+        {
+          "id": "b",
+          "text": "\\frac{1}{3}",
+          "why": "This corresponds to six primes among the 18 integers.",
+          "whyWrong": "Test odd candidates for divisibility by 3, 5 and 7 before counting them."
+        },
+        {
+          "id": "c",
+          "text": "\\frac{2}{9}",
+          "why": "There are four prime numbers among the 18 possible choices.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "\\frac{7}{9}",
+          "why": "This is the probability of selecting a composite number.",
+          "whyWrong": "There are 14 composite choices, but the four primes are the favourable outcomes."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Count from 43 to 60 inclusive, then list the primes.",
+      "explanation": "There are 60 − 43 + 1 = 18 equally likely integers. The primes are 43, 47, 53 and 59. So the probability is \\frac{4}{18} = \\frac{2}{9}.",
+      "trap": "Include both endpoints. Count prime outcomes in the numerator and all outcomes in the denominator.",
+      "mnemonic": "Probability = favourable outcomes ÷ total equally likely outcomes.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Four of the 18 numbers are prime. Reduce four eighteenths to two ninths."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "There are 14 composite choices, but the four primes are the favourable outcomes."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 49,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "chapter": 23,
+      "concept": "Probability"
+    }
+  ]
+}
