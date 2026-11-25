@@ -761,3 +761,34 @@ body {
     letter-spacing: 0.03em;
   }
 }
+
+/* Trap and memory aid sit under the correct-answer explanation, after a divider. */
+.jp-explain-notes {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--option-line);
+}
+
+/* The wrong-answer title is the toggle, styled like the plain heading. */
+.jp-wrong-title-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: inherit;
+  min-width: 0;
+  padding: 2px 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.jp-wrong-card[data-open="false"] .jp-wrong-head {
+  margin-bottom: 0;
+}
+

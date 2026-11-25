@@ -38,18 +38,23 @@ export function QuestionCard({
   const answered = pickedId !== null
   const isCorrect = answered && pickedId === question.answerId
   const result = answered ? getResultCopy(isCorrect, removedIds.length) : null
-  const [explainOpen, setExplainOpen] = useState(true)
-  const [otherWrongOpen, setOtherWrongOpen] = useState(true)
+  // All explanation cards start collapsed; the student opens what they need.
+  const [explainOpen, setExplainOpen] = useState(false)
+  const [otherWrongOpen, setOtherWrongOpen] = useState(false)
+  const [wrongOpen, setWrongOpen] = useState(false)
+  const wrongBodyId = useId()
   const explainBodyId = useId()
   const otherWrongBodyId = useId()
 
   useEffect(() => {
-    setExplainOpen(true)
-    setOtherWrongOpen(true)
+    setExplainOpen(false)
+    setOtherWrongOpen(false)
+    setWrongOpen(false)
   }, [question.id])
 
   const toggleExplain = () => setExplainOpen((prev) => !prev)
   const toggleOtherWrong = () => setOtherWrongOpen((prev) => !prev)
+  const toggleWrong = () => setWrongOpen((prev) => !prev)
 
   const otherWrongOptions = answered
     ? options
@@ -219,20 +224,33 @@ export function QuestionCard({
       {answered && !isCorrect && pickedOption?.whyWrong && (
         <section
           class="jp-card jp-wrong-card"
+          data-open={wrongOpen ? 'true' : 'false'}
           aria-label={`Why ${pickedLetter} is wrong`}
         >
           <div class="jp-wrong-head">
             <h2 class="jp-wrong-title">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
-                <path d="M18 6 6 18" />
-                <path d="m6 6 12 12" />
-              </svg>
-              WHY {pickedLetter} IS WRONG
+              <button type="button" class="jp-wrong-title-btn" aria-expanded={wrongOpen} aria-controls={wrongBodyId} onClick={toggleWrong}>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
+                WHY {pickedLetter} IS WRONG
+              </button>
             </h2>
             <ReadAloudButton questionId={question.id} target="whyWrong" optionId={pickedOption.id} />
+            <button type="button" class="jp-explain-toggle-btn" aria-expanded={wrongOpen} aria-controls={wrongBodyId} onClick={toggleWrong}>
+              <span>{wrongOpen ? 'Hide' : 'Show'}</span>
+              <span class="jp-explain-chev" data-open={wrongOpen ? 'true' : 'false'} aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d={wrongOpen ? 'm18 15-6-6-6 6' : 'm6 9 6 6 6-6'} />
+                </svg>
+              </span>
+            </button>
           </div>
-          <p class="jp-explain-body">{pickedOption.whyWrong}</p>
+          <div id={wrongBodyId} hidden={!wrongOpen}>
+            <p class="jp-explain-body">{pickedOption.whyWrong}</p>
+          </div>
         </section>
       )}
 
@@ -283,26 +301,24 @@ export function QuestionCard({
           </div>
           <div id={explainBodyId} class="jp-explain-content" hidden={!explainOpen}>
             <p class="jp-explain-body">{question.explanation}</p>
+            <div class="jp-explain-notes">
+              <div class="jp-explain-subgrid">
+                <div class="jp-subbox jp-subbox--trap">
+                  <span class="jp-subbox-label">The trap</span>
+                  <p>{question.trap}</p>
+                </div>
+                <div class="jp-subbox jp-subbox--memo">
+                  <span class="jp-subbox-label">Remember it</span>
+                  <p>{question.mnemonic}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       )}
 
       {answered && conceptSlot}
 
-      {answered && (
-        <section class="jp-card jp-notes-card" aria-label="The trap and how to remember it">
-          <div class="jp-explain-subgrid">
-            <div class="jp-subbox jp-subbox--trap">
-              <span class="jp-subbox-label">The trap</span>
-              <p>{question.trap}</p>
-            </div>
-            <div class="jp-subbox jp-subbox--memo">
-              <span class="jp-subbox-label">Remember it</span>
-              <p>{question.mnemonic}</p>
-            </div>
-          </div>
-        </section>
-      )}
 
       {answered && otherWrongOptions.length > 0 && (
         <section
