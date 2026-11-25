@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/sync-data.mjs && node src/components/player/generate-audio-index.mjs && vite",
-    "build": "node scripts/sync-data.mjs && node src/components/player/generate-audio-index.mjs && tsc --noEmit && vite build",
+    "build": "node scripts/sync-data.mjs && node src/components/player/generate-audio-index.mjs && tsc --noEmit && vite build --manifest && node scripts/precache-bundles.mjs",
     "preview": "vite preview",
     "sync-data": "node scripts/sync-data.mjs",
     "validate": "node scripts/validate-data.mjs",

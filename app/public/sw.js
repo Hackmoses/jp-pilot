@@ -1,29 +1,14 @@
-const CACHE_NAME = 'jp-pilot-v10'
+const CACHE_NAME = 'jp-pilot-v11'
+const PRECACHE_BUNDLES = []
 const CALCULATION_AUDIO_CACHE = 'jp-calculation-audio-v1'
 const CALCULATION_AUDIO_PATH = new URL('./audio/', self.location.href).pathname
+const BUNDLE_PATH = new URL('./assets/', self.location.href).pathname
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME)
-      const assets = new Set(['./', './index.html'])
-      try {
-        const res = await fetch('./index.html', { cache: 'no-store' })
-        if (res.ok) {
-          const html = await res.text()
-          const matches = html.matchAll(/(?:src|href)=["']([^"']+)["']/g)
-          for (const [, raw] of matches) {
-            if (!raw || raw.startsWith('data:')) continue
-            const resolved = new URL(raw, self.location.href)
-            if (resolved.origin === self.location.origin) {
-              assets.add(resolved.href)
-            }
-          }
-        }
-      } catch {
-        // Offline during install; fall back to caching core shell URLs.
-      }
-      await Promise.allSettled([...assets].map((url) => cache.add(url)))
+      await cache.addAll(['./', './index.html', ...PRECACHE_BUNDLES])
       await self.skipWaiting()
     })(),
   )
@@ -73,10 +58,10 @@ self.addEventListener('fetch', (event) => {
   if (url.pathname.includes('/data/') && url.pathname.endsWith('.json')) {
     event.respondWith(
       fetch(request)
-        .then((response) => {
+        .then(async (response) => {
           if (response.ok) {
             const copy = response.clone()
-            void caches.open(CACHE_NAME).then((cache) => cache.put(request, copy))
+            await caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)).catch(() => {})
           }
           return response
         })
@@ -85,17 +70,13 @@ self.addEventListener('fetch', (event) => {
     return
   }
 
-  event.respondWith(
-    caches.match(request).then(
-      (cached) =>
-        cached ||
-        fetch(request).then((response) => {
-          if (response.ok) {
-            const copy = response.clone()
-            void caches.open(CACHE_NAME).then((cache) => cache.put(request, copy))
-          }
-          return response
-        }),
-    ),
-  )
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE_NAME)
+    // Precache and module requests can carry different Origin headers for the same hashed file.
+    const cached = await cache.match(request, { ignoreVary: url.pathname.startsWith(BUNDLE_PATH) })
+    if (cached) return cached
+    const response = await fetch(request)
+    if (response.ok) await cache.put(request, response.clone()).catch(() => {})
+    return response
+  })())
 })

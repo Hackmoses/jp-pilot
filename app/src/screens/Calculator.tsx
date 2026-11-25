@@ -36,7 +36,6 @@ export function Calculator({ close }: { close: () => void }) {
   }
 
   return <>
-    <h2 id="jp-calculator-title">Calculator</h2>
     <output class="jp-calc-display" aria-label="Calculator display" aria-live="polite">{value}</output>
     <div class="jp-calc-pad" role="group" aria-label="Calculator keys">
       {keys.map((key) => {
