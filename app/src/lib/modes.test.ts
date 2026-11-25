@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { isCompleteQuestion } from './data'
-import { chapterName, getChapters, mistakeIds, practicePool, scoreAttempt, type Attempt } from './modes'
+import { chapterName, getChapters, MAX_CUSTOM_MINUTES, mistakeIds, parseCustomWholeNumber, practicePool, practiceQueue, scoreAttempt, type Attempt } from './modes'
 import type { Animation, Question } from './types'
 
 const step = { n: 1, display: '', tag: '', narration: '' }
@@ -56,6 +56,60 @@ describe('practice setup', () => {
     expect(practicePool(questions, { ...settings, chapters: ['15'] })).toEqual([])
     expect(getChapters('mathematics', [qMath])).toEqual([{ id: 'Indices', title: 'Indices' }])
     expect(chapterName('mathematics', 'Indices')).toBe('Indices')
+  })
+
+  it('validates custom question counts and timer limits cleanly', () => {
+    expect(parseCustomWholeNumber('1', 1, 15, 'questions')).toEqual({ value: 1, error: null })
+    expect(parseCustomWholeNumber('15', 1, 15, 'questions')).toEqual({ value: 15, error: null })
+    expect(parseCustomWholeNumber('0', 1, 15, 'questions').value).toBeNull()
+    expect(parseCustomWholeNumber('16', 1, 15, 'questions').value).toBeNull()
+    expect(parseCustomWholeNumber('', 1, 15, 'questions').value).toBeNull()
+    expect(parseCustomWholeNumber('2.5', 1, 15, 'questions').value).toBeNull()
+    expect(parseCustomWholeNumber('-3', 1, 15, 'questions').value).toBeNull()
+    expect(parseCustomWholeNumber('abc', 1, 15, 'questions').value).toBeNull()
+
+    expect(parseCustomWholeNumber('1', 1, MAX_CUSTOM_MINUTES, 'minutes')).toEqual({ value: 1, error: null })
+    expect(parseCustomWholeNumber('180', 1, MAX_CUSTOM_MINUTES, 'minutes')).toEqual({ value: 180, error: null })
+    expect(parseCustomWholeNumber('0', 1, MAX_CUSTOM_MINUTES, 'minutes').value).toBeNull()
+    expect(parseCustomWholeNumber('181', 1, MAX_CUSTOM_MINUTES, 'minutes').value).toBeNull()
+    expect(parseCustomWholeNumber('', 1, MAX_CUSTOM_MINUTES, 'minutes').value).toBeNull()
+  })
+
+  it('remembers custom practice choices per subject across reloads', async () => {
+    stubStorage()
+    const modes = await import('./modes')
+    const { registerSubjectData } = await import('./data')
+    const pool = Array.from({ length: 12 }, (_, i) => ({
+      ...qMath,
+      id: `qm-${i + 1}`,
+    })) as Question[]
+    registerSubjectData('mathematics', pool, [animation])
+
+    modes.savePracticeSettings('mathematics', {
+      chapters: ['Indices'],
+      count: 7,
+      countMode: 'custom',
+      customCount: '7',
+      minutes: 45,
+      minutesMode: 'custom',
+      customMinutes: '45',
+    })
+
+    vi.resetModules()
+    const reloaded = await import('./modes')
+    const saved = reloaded.getPracticeSettings('mathematics')
+    expect(saved).toEqual({
+      chapters: ['Indices'],
+      count: 7,
+      countMode: 'custom',
+      customCount: '7',
+      minutes: 45,
+      minutesMode: 'custom',
+      customMinutes: '45',
+    })
+    const { registerSubjectData: reg2 } = await import('./data')
+    reg2('mathematics', pool, [animation])
+    expect(reloaded.practiceQueue('mathematics', pool, saved)).toHaveLength(7)
   })
 })
 

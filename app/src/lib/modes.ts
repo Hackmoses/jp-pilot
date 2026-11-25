@@ -5,7 +5,50 @@ import type { Animation, OptionId, Question } from './types'
 
 export type Mode = 'study' | 'practice' | 'exam'
 export type TestMode = Exclude<Mode, 'study'>
-export type PracticeSettings = { chapters: readonly string[]; count: 5 | 10 | 'all'; minutes: 0 | 10 | 20 | 30 }
+export type PracticeSettings = {
+  chapters: readonly string[]
+  count: number | 'all'
+  countMode?: 'custom'
+  customCount?: string
+  minutes: number
+  minutesMode?: 'custom'
+  customMinutes?: string
+}
+
+export const MAX_CUSTOM_MINUTES = 180
+
+export function parseCustomWholeNumber(
+  raw: string,
+  min: number,
+  max: number,
+  unit: 'questions' | 'minutes',
+): { value: number; error: null } | { value: null; error: string } {
+  const trimmed = raw.trim()
+  if (!trimmed) {
+    return {
+      value: null,
+      error: unit === 'questions'
+        ? (max < min ? 'No questions available in selected chapters.' : `Enter a whole number from ${min} to ${max}.`)
+        : `Enter minutes from ${min} to ${max}.`,
+    }
+  }
+  if (!/^\d+$/.test(trimmed)) {
+    return {
+      value: null,
+      error: `Use a whole number from ${min} to ${max}.`,
+    }
+  }
+  const parsed = Number(trimmed)
+  if (!Number.isSafeInteger(parsed) || parsed < min || parsed > max) {
+    return {
+      value: null,
+      error: unit === 'questions'
+        ? (max < min ? 'No questions available in selected chapters.' : `Choose between ${min} and ${max}.`)
+        : `Choose between ${min} and ${max} minutes.`,
+    }
+  }
+  return { value: parsed, error: null }
+}
 
 export function getQuestionChapter(question: Question): string {
   return question.chapter?.trim() || question.topic
@@ -52,9 +95,10 @@ export function practicePool(questions: readonly Question[], settings: PracticeS
 
 export function practiceQueue(subject: string, questions: readonly Question[], settings: PracticeSettings) {
   const eligible = new Set(practicePool(questions, settings).map((question) => question.id))
+  const limit = settings.count === 'all' ? undefined : Math.max(0, Math.floor(settings.count))
   return getDueQuestionIds(questions.length, subject)
     .filter(({ id }) => eligible.has(id))
-    .slice(0, settings.count === 'all' ? undefined : settings.count)
+    .slice(0, limit)
 }
 
 export const EXAM_MINUTES = { full: 120, pilot: 15 }
