@@ -18,8 +18,8 @@ import {
 import {
   setLastSessionSummary,
 } from '../components/question/sessionState'
-import { getAnimation, getQuestion, isSubjectLoaded, loadSubject } from '../lib/data'
-import { finishAttempt, getAttemptQuestions, getStudyAnswer, markStudied, remember, saveAttempt, studyLink, type Attempt, type TestResult } from '../lib/modes'
+import { getAnimation, getQuestion, getQuestionsBySubject, isSubjectLoaded, loadSubject } from '../lib/data'
+import { finishAttempt, getAttemptQuestions, getQuestionChapter, getStudyAnswer, markStudied, remember, saveAttempt, studyLink, type Attempt, type TestResult } from '../lib/modes'
 import { shuffleOptions } from '../lib/shuffle'
 import { getProgress, logEvent, recordAnswer } from '../lib/store'
 import { getSubject, getSubjectByQuestionId, isSubjectAvailable } from '../lib/subjects'
@@ -88,6 +88,9 @@ export function Session({ attempt, study, review }: SessionProps) {
   const [picks, setPicks] = useState<Attempt['answers']>(() =>
     attempt?.answers ?? review?.result.answers ?? (study ? { [study.id]: getStudyAnswer(study.id) } : {}))
   const [calcOpen, setCalcOpen] = useState(false)
+  const [full, setFull] = useState(false)
+  const [pausedAt, setPausedAt] = useState<number | null>(null)
+  const [deadline, setDeadline] = useState(attempt?.deadline ?? null)
   const [playSignal, setPlaySignal] = useState(0)
   const [askOpen, setAskOpen] = useState(false)
   const [desktopAskOpen, setDesktopAskOpen] = useState(true)
@@ -201,6 +204,7 @@ export function Session({ attempt, study, review }: SessionProps) {
     }
     setIndex(next)
     setCalcOpen(false)
+    setFull(false)
     setPlaySignal(0)
     setAskOpen(false)
     window.scrollTo({ top: 0 })
@@ -325,12 +329,31 @@ export function Session({ attempt, study, review }: SessionProps) {
   }
 
   const subjectName = getSubject(question.subject)?.name ?? 'Chemistry'
+  // Study keeps the full lesson. Practice and exam review show a short verdict first.
+  const compact = !study
+  const detailed = !compact || full
+  const chapterId = getQuestionChapter(question)
+  const learnHref = compact && getQuestionsBySubject(question.subject, 'study')
+    .some((item) => getQuestionChapter(item) === chapterId) ? studyLink(question.subject, chapterId) : undefined
+  const exitHref = back ?? (attempt ? (attempt.mode === 'exam' ? '#/exam'
+    : '#/practice?subject=' + encodeURIComponent(question.subject)) : '#/modes')
+  const canPause = attempt?.mode === 'practice' && deadline !== null
+  const pause = () => setPausedAt(Date.now())
+  const resume = () => {
+    const run = savedAttempt.current
+    if (run && run.deadline !== null && pausedAt !== null) {
+      run.deadline += Date.now() - pausedAt
+      saveAttempt(run)
+      setDeadline(run.deadline)
+    }
+    setPausedAt(null)
+  }
   const sessionAnswered = Object.keys(picks).length
   const sessionCorrect = queue.filter(({ question }) => picks[question.id] === question.answerId).length
   const progressPercent = Math.round(((index + 1) / queue.length) * 100)
   const animationKind = question.animationId ? getAnimation(question.animationId)?.kind : undefined
   const isConceptAnimation = animationKind === 'concept'
-  const showRightCol = answered && isWide && (Boolean(question.animationId) || desktopAskOpen)
+  const showRightCol = answered && detailed && isWide && (Boolean(question.animationId) || desktopAskOpen)
   const calculationPlayer = question.animationId ? (
     <SolutionPlayer
       animationId={question.animationId}
@@ -373,6 +396,13 @@ export function Session({ attempt, study, review }: SessionProps) {
       <header class="jp-topbar">
         <div class="jp-topbar-inner">
           <div class="jp-brand-group">
+            <a class="jp-session-back" href={exitHref}
+              aria-label={attempt?.mode === 'exam' ? 'Leave exam. The timer keeps running' : 'Back. Your place is saved'}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </a>
             <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
             <span class="jp-topic jp-hide-sm">{subjectName} · {question.topic}</span>
           </div>
@@ -385,8 +415,9 @@ export function Session({ attempt, study, review }: SessionProps) {
             </div>
           </div>
           <span class="jp-pill jp-pill--practice jp-hide-sm">{study ? 'Study' : review ? 'Exam review' : 'Practice'}</span>
-          {attempt?.deadline && <Countdown deadline={attempt.deadline}
+          {deadline !== null && pausedAt === null && <Countdown deadline={deadline}
             onExpire={() => finishAttempt(savedAttempt.current!, Date.now())} />}
+          {canPause && pausedAt === null && <button type="button" class="jp-btn" onClick={pause}>Pause</button>}
           {!study && !review && <span class="jp-pill jp-pill--score" aria-live="polite">
             Score {sessionCorrect}/{sessionAnswered}
           </span>}
@@ -408,6 +439,10 @@ export function Session({ attempt, study, review }: SessionProps) {
             pickedId={pickedId}
             reveal={Boolean(review)}
             onPick={handlePick}
+            compact={compact}
+            full={full}
+            onFull={() => setFull((prev) => !prev)}
+            learnHref={learnHref}
             calculationSlot={!isWide && !isConceptAnimation ? calculationPlayer : undefined}
             conceptSlot={!isWide && isConceptAnimation ? calculationPlayer : undefined}
           />
@@ -436,6 +471,7 @@ export function Session({ attempt, study, review }: SessionProps) {
               <ReadAloudButton questionId={question.id} target="question" options={options} />
               <div class="jp-footer-right">
                 {!back && <span class="jp-kbd-hints jp-hide-sm">Shortcuts · A–D choose · N next · P previous</span>}
+                {attempt && index > 0 && <button type="button" class="jp-btn" onClick={() => move(index - 1)}>Previous</button>}
                 <button type="button" class="jp-btn jp-skip-btn" onClick={advance}>
                   {study ? 'Back to chapter' : 'Skip'}
                 </button>
@@ -443,7 +479,7 @@ export function Session({ attempt, study, review }: SessionProps) {
             </>
           ) : (
             <>
-              <button
+              {detailed && <button
                 ref={askTriggerRef}
                 type="button"
                 class="jp-ask-icon-btn"
@@ -455,7 +491,7 @@ export function Session({ attempt, study, review }: SessionProps) {
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z" />
                 </svg>
-              </button>
+              </button>}
               <ShareButton questionId={question.id} correct={pickedId === question.answerId} />
               <ReportButton questionId={question.id} />
               <div class="jp-footer-right">
@@ -464,6 +500,7 @@ export function Session({ attempt, study, review }: SessionProps) {
                     ? 'Enter next · Space play'
                     : 'Enter next'}
                 </span>
+                {attempt && index > 0 && <button type="button" class="jp-btn" onClick={() => move(index - 1)}>Previous</button>}
                 <button
                   type="button"
                   class="jp-btn jp-btn--primary jp-next-btn"
@@ -477,6 +514,15 @@ export function Session({ attempt, study, review }: SessionProps) {
           )}
         </div>
       </footer>
+
+      {pausedAt !== null && <div class="jp-pause" role="dialog" aria-modal="true" aria-label="Paused">
+        <section class="jp-card">
+          <h2 class="jp-mode-card-title">Paused</h2>
+          <p class="jp-mode-lead">The timer has stopped. Your answers are saved.</p>
+          <button type="button" class="jp-btn jp-btn--primary jp-btn--full" onClick={resume}>Resume</button>
+          <a class="jp-link-btn" href={exitHref}>Leave practice</a>
+        </section>
+      </div>}
 
       {askOpen && (!isWide || !answered) && (
         <AskSheet

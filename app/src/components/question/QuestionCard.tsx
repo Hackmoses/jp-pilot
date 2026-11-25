@@ -16,6 +16,11 @@ export interface QuestionCardProps {
   onPick: (optionId: OptionId) => void
   calculationSlot?: ComponentChildren
   conceptSlot?: ComponentChildren
+  // Practice: a short verdict first; the full breakdown opens only when asked.
+  compact?: boolean
+  full?: boolean
+  onFull?: () => void
+  learnHref?: string
 }
 
 export function QuestionCard({
@@ -28,10 +33,15 @@ export function QuestionCard({
   onPick,
   calculationSlot,
   conceptSlot,
+  compact = false,
+  full = false,
+  onFull,
+  learnHref,
 }: QuestionCardProps) {
   const answered = !exam && (pickedId !== null || reveal)
   const isCorrect = answered && pickedId === question.answerId
   const result = answered && pickedId !== null ? getResultCopy(isCorrect) : null
+  const brief = compact && answered && !full
   // All explanation cards start collapsed; the student opens what they need.
   const [explainOpen, setExplainOpen] = useState(false)
   const [otherWrongOpen, setOtherWrongOpen] = useState(false)
@@ -111,9 +121,10 @@ export function QuestionCard({
           </span>
           <div class="jp-result-copy">
             <span class="jp-result-title">
-              {isCorrect ? 'Correct.' : `Not quite. You chose ${pickedLetter}.`}
+              {isCorrect ? 'Correct.' : compact ? `Not quite. The answer is ${correctLetter}.` : `Not quite. You chose ${pickedLetter}.`}
             </span>
-            <span class="jp-result-sub">{reveal && !isCorrect ? 'Read why under your answer.' : result.subtitle}</span>
+            <span class="jp-result-sub">{compact ? (isCorrect ? 'Well done. Keep going.' : 'This question comes back in your next session.')
+              : reveal && !isCorrect ? 'Read why under your answer.' : result.subtitle}</span>
           </div>
         </div>
       )}
@@ -159,16 +170,20 @@ export function QuestionCard({
                     {option.figure && <Figure data={option.figure} />}
                   </span>
                 </span>
-                {view.note && <span class="jp-option-note">{renderMathText(view.note)}</span>}
+                {view.note && (!brief || option.id === question.answerId || option.id === pickedId) &&
+                  <span class="jp-option-note">{renderMathText(view.note)}</span>}
               </button>
             )
           })}
         </div>
       </section>
 
-      {answered && calculationSlot}
-
-      {answered && !isCorrect && pickedOption?.whyWrong && (
+      {compact && answered && <div class="jp-practice-actions">
+        <button type="button" class="jp-btn" aria-expanded={full} onClick={onFull}>{full ? 'Hide full solution' : 'Full solution'}</button>
+        {learnHref && <a class="jp-btn" href={learnHref}>Learn this topic →</a>}
+      </div>}
+      {answered && !brief && calculationSlot}
+      {answered && !brief && !isCorrect && pickedOption?.whyWrong && (
         <section
           class="jp-card jp-wrong-card"
           data-open={wrongOpen ? 'true' : 'false'}
@@ -201,7 +216,7 @@ export function QuestionCard({
         </section>
       )}
 
-      {answered && (
+      {answered && !brief && (
         <section
           class="jp-card jp-explain-card"
           data-open={explainOpen ? 'true' : 'false'}
@@ -281,10 +296,10 @@ export function QuestionCard({
         </section>
       )}
 
-      {answered && conceptSlot}
+      {answered && !brief && conceptSlot}
 
 
-      {answered && otherWrongOptions.length > 0 && (
+      {answered && !brief && otherWrongOptions.length > 0 && (
         <section
           class="jp-card jp-other-wrong-card"
           data-open={otherWrongOpen ? 'true' : 'false'}
