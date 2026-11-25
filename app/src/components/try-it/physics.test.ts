@@ -1,4 +1,6 @@
 import { describe, expect, it } from 'vitest'
+import { registerSavedQuestions } from '../../lib/data'
+import type { Question } from '../../lib/types'
 import { studyInteractive } from './TryItCard'
 import { deposition, faradayConstant } from './try-it-electrolysis'
 import { boylePressure, charlesVolume, molecularSpeedRatio } from './try-it-gas'
@@ -67,10 +69,22 @@ describe('concave mirror', () => {
   })
 })
 
-it('offers interactives only for their study chapters', () => {
-  expect(studyInteractive('chemistry', '3')?.title).toBe('Gas laws')
-  expect(studyInteractive('chemistry', '15')?.title).toBe('Electrolysis')
+it('attaches interactives to the requested question topics and chemistry chapters', () => {
+  registerSavedQuestions([
+    { id: 'phys-jamb-0018', topic: 'Optical instruments (camera and eye)' },
+    { id: 'phys-jamb-0019', topic: 'Reflection (curved mirrors)' },
+    { id: 'phys-jamb-0025', topic: 'Current electricity (resistors in parallel)' },
+    { id: 'phys-jamb-0016', topic: 'Waves' },
+    { id: 'biol-api-0167', topic: 'Cell biology' },
+    { id: 'math-jamb-0001', topic: 'Number bases' },
+  ] as Question[], [])
+  expect(['2', '3', '13', '14', '15'].map((chapter) => studyInteractive('chemistry', chapter)?.title))
+    .toEqual(['Mole bridge', 'Gas laws', 'pH scale', 'Oxidation number finder', 'Electrolysis'])
   expect(studyInteractive('chemistry', '1')).toBeUndefined()
-  expect(studyInteractive('physics', 'Reflection', 'Optical instruments')).toBeUndefined()
-  expect(studyInteractive('physics', 'Optical instruments', 'Optical instruments')?.title).toBe('Concave mirror')
+  expect(studyInteractive('physics', 'Optical instruments (camera and eye)')).toBeUndefined()
+  expect(studyInteractive('physics', 'Reflection (curved mirrors)')?.title).toBe('Concave mirror')
+  expect(studyInteractive('physics', 'Current electricity (resistors in parallel)')?.title).toBe('Circuit lab')
+  expect(studyInteractive('physics', 'Waves')?.title).toBe('Wave on a string')
+  expect(studyInteractive('biology', 'Cell biology')?.title).toBe('Osmosis cell')
+  expect(studyInteractive('mathematics', 'Number bases')?.title).toBe('Number base converter')
 })

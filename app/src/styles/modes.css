@@ -291,6 +291,92 @@
   }
 }
 
+
+.jp-try-card {
+  min-width: 0;
+}
+
+.jp-try-header {
+  flex-wrap: wrap;
+}
+
+.jp-try-header > button {
+  margin-inline-start: auto;
+}
+
+.jp-try-card button,
+.jp-try-card select,
+.jp-try-card input,
+.jp-try-card a.jp-btn {
+  min-height: var(--tap-min);
+  min-width: var(--tap-min);
+}
+
+.jp-try-select input {
+  width: 7ch;
+}
+
+.jp-try-instruction {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.jp-try-instruction > div {
+  min-width: 0;
+}
+
+.jp-try-speaker {
+  flex: 0 0 var(--tap-min);
+  padding: 0;
+}
+
+.jp-try-choices {
+  margin-top: var(--space-2);
+}
+
+.jp-try-choices > button {
+  white-space: normal;
+  text-align: start;
+}
+
+.jp-try-mission {
+  display: grid;
+  gap: var(--space-2);
+  border-inline-start: 2px solid var(--brand);
+  padding-inline-start: var(--space-2);
+}
+
+.jp-try-explain > button {
+  justify-self: start;
+}
+
+.jp-try-readings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.jp-try-changed {
+  color: var(--brand);
+  background: var(--brand-soft);
+  border-radius: var(--radius-small);
+  font-weight: 800;
+}
+
+.jp-try-balanced,
+.jp-try-balanced .jp-try-changed {
+  color: var(--good);
+  background: var(--good-soft);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .jp-try-membrane {
+    transition: x 220ms, y 220ms, width 220ms, height 220ms;
+  }
+}
+
 .jp-mode-card {
   display: flex;
   align-items: flex-start;

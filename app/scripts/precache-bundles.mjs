@@ -11,12 +11,17 @@ const sources = [
   'src/screens/PracticeRun.tsx',
   'src/screens/Results.tsx',
   'src/screens/Summary.tsx',
-  'src/components/try-it/try-it-gas.tsx',
-  'src/components/try-it/try-it-electrolysis.tsx',
-  'src/components/try-it/try-it-mirror.tsx',
+  ...Object.keys(manifest).filter((key) => key.startsWith('src/components/try-it/try-it-')),
 ]
 const visited = new Set()
-const files = new Set()
+const studySubjects = ['chemistry', 'physics', 'biology', 'mathematics']
+const files = new Set([
+  './data/manifest.json',
+  ...studySubjects.flatMap((subject) => [
+    './data/questions-' + subject + '.json',
+    './data/animations-' + subject + '.json',
+  ]),
+])
 function collect(key) {
   if (visited.has(key)) return
   const chunk = manifest[key]
@@ -32,5 +37,5 @@ const revision = createHash('sha256').update(JSON.stringify(manifest)).digest('h
 const worker = new URL('sw.js', dist)
 const source = await readFile(worker, 'utf8')
 await writeFile(worker, source
-  .replace("'jp-pilot-v11'", "'jp-pilot-v11-" + revision + "'")
+  .replace(/(const CACHE_NAME = '[^']+)'/, '$1-' + revision + "'")
   .replace('const PRECACHE_BUNDLES = []', 'const PRECACHE_BUNDLES = ' + JSON.stringify([...files].sort())))

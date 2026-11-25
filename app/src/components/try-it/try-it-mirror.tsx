@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import { DragHandle, Slider, TryIt } from './TryIt'
+import { DragHandle, near, Slider, TryIt, Values } from './TryIt'
 import type { InteractiveProps } from './TryItCard'
 
 const focalLength = 5
@@ -12,7 +12,7 @@ export function mirrorImage(u: number, f: number) {
 
 const pole = 192
 const axis = 84
-const scale = 8
+const scale = 5.5
 const tip = 69
 const objectHeight = axis - tip
 const diagramWidth = 320
@@ -26,7 +26,7 @@ function arrow(x: number, y: number) {
   return ['M', x, axis, 'V', y, 'm-4', stem, 'l4', -stem, 'l4', stem].join(' ')
 }
 
-export default function ConcaveMirror({ practiceHref }: InteractiveProps) {
+export default function ConcaveMirror(props: InteractiveProps) {
   const [u, setDistance] = useState(15)
   const image = mirrorImage(u, focalLength)
   const objectX = pole - scale * u
@@ -43,17 +43,28 @@ export default function ConcaveMirror({ practiceHref }: InteractiveProps) {
   ]
 
   return (
-    <TryIt practiceHref={practiceHref}
-      prediction="If the object is beyond the centre of curvature, the image is:"
-      choices={['Larger', 'Smaller', 'Same size']} correct={1}
-      explanation="Beyond C, the reflected rays meet between F and C to form a smaller, inverted real image. Inside F, the rays spread out and their backward extensions meet behind the mirror, forming a larger, upright virtual image."
-      formulas={['\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}', 'm = -\\frac{v}{u}', '|m| = \\frac{|v|}{u}']}>
-      {(unlocked, tried) => {
-        const moveObject = (next: number) => {
-          if (next === u) return
-          setDistance(next)
-          tried()
-        }
+    <TryIt {...props} context="A concave mirror in a barber’s shop can magnify a face when the face is close to it."
+      prediction={{ question: 'When the object is beyond the centre of curvature, how large is its image?',
+        choices: ['Larger', 'Smaller', 'Same size'], correct: 1,
+        action: 'Move the object to 20 cm. Compare the image arrow with the object arrow.',
+        observed: u === 20, why: 'Reflected rays meet between C and F to form a smaller, inverted real image.' }}
+      missions={[
+        { goal: 'Get a real image the same size as the object.', reached: image !== null && near(image.magnification, -1, 0.04),
+          hint: 'Compare the lengths of the object and image arrows.' },
+        { goal: 'Compare the object at F (5 cm) and just inside F (4 cm). Leave it at 4 cm.',
+          baseline: u === 5, reached: u === 4, hint: 'Follow the dashed lines behind the mirror.',
+          reason: { question: 'Why is the image at 4 cm virtual?', choices: ['Only backward extensions of the rays meet', 'The reflected rays meet in front'], correct: 0 } },
+        { goal: 'A 4 cm object stands 15 cm from a mirror with f = 5 cm. Set the distance and use the size ratio to find the image height.',
+          reached: u === 15, hint: 'Multiply the object height by the magnitude of the magnification.',
+          answer: { question: 'What is the image height?', choices: ['−2 cm', '2 cm'], correct: 1 },
+        trap: 'A negative magnification shows inversion. Image height as a size is positive.' },
+      ]}
+      explain={{ question: 'Why is there no finite image when the object is at F?',
+        choices: ['The reflected rays are parallel', 'No light hits the mirror'], correct: 0,
+        feedback: ['Parallel rays do not meet at a finite distance.', 'Light still hits the mirror and reflects. The reflected rays leave parallel.'] }}
+      formulas={['\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}', 'm = -\\frac{v}{u}', 'Image height = 4 cm × |m|']}>
+      {(unlocked) => {
+        const moveObject = setDistance
         return <>
           <div class="jp-try-scene">
             <svg viewBox="0 0 320 168" role="img" aria-label="Concave mirror ray diagram. Solid lines show light rays and dashed lines show backward extensions.">
@@ -78,12 +89,9 @@ export default function ConcaveMirror({ practiceHref }: InteractiveProps) {
               moveObject(Math.max(minDistance, Math.min(maxDistance, Math.round((pole - fraction * diagramWidth) / scale * 2) / 2)))} />}
           </div>
           <Slider label="Object distance (cm)" value={u} min={minDistance} max={maxDistance} step={0.5} onChange={moveObject} />
-          <p class="jp-try-values">u = {u} cm · v = {image ? image.v.toFixed(2) + ' cm' : '∞'} · f = {focalLength} cm</p>
-          {image ? <p class="jp-try-values">
-            m = {image.magnification.toFixed(2)} · {virtual ? 'Virtual, upright' : 'Real, inverted'}
-            {' · '}{u === 2 * focalLength ? 'Same size' : u > 2 * focalLength ? 'Smaller' : 'Larger'}
-            {!inFrame && ' · Image outside diagram'}
-          </p> : <p class="jp-mode-lead">At F the reflected rays are parallel. The image is at infinity.</p>}
+          <Values items={{ 'u': u + ' cm', 'v': image ? image.v.toFixed(2) + ' cm' : '∞', 'f': focalLength + ' cm',
+            'm': image ? image.magnification.toFixed(2) : '—', 'Image height': image ? Math.abs(4 * image.magnification).toFixed(2) + ' cm' : '—',
+            'Image': image ? (virtual ? 'Virtual, upright' : 'Real, inverted') + (!inFrame ? ' · Outside diagram' : '') : 'At infinity. Reflected rays are parallel.' }} />
           <p class="jp-mode-lead">Real-is-positive convention. Here u and f are positive. Real images have positive v and virtual images have negative v.</p>
         </>
       }}
