@@ -5,7 +5,6 @@ import { submitExpiredExam } from './lib/modes'
 import { examRun, results } from './screens/examModules'
 import { Home } from './screens/Home'
 import { ModeHome, Panel } from './screens/Modes'
-import { Session } from './screens/Session'
 
 function screenView<Props extends object>(module: ReturnType<typeof lazyView<Props>>, title: string) {
   return function Screen(props: Props) {
@@ -23,6 +22,7 @@ const PracticeRun = screenView(lazyView(() => import('./screens/PracticeRun').th
 const ExamSetup = screenView(lazyView(() => import('./screens/ExamSetup').then(({ ExamSetup }) => ExamSetup)), 'Exam')
 const ExamRun = screenView(examRun, 'Exam')
 const Results = screenView(results, 'Results')
+const Session = screenView(lazyView(() => import('./screens/Session').then(({ Session }) => Session)), 'Questions')
 const Summary = screenView(lazyView(() => import('./screens/Summary').then(({ Summary }) => Summary)), 'Progress summary')
 
 const FiguresDemo = import.meta.env.DEV
