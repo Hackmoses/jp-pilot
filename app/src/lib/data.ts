@@ -2,13 +2,27 @@ import type { Animation, AnimationsFile, Question, QuestionsFile } from './types
 
 export interface SubjectManifestEntry {
   count: number
+  completeCount?: number
   hasAnimations: boolean
 }
 
 export type SubjectManifest = Record<string, SubjectManifestEntry>
 
+export const COMPLETE_QUESTIONS_ONLY = true
+
+export function isCompleteQuestion(question: Question, animation?: Animation): boolean {
+  if (!question.animationId || animation?.id !== question.animationId || animation.questionId !== question.id) {
+    return false
+  }
+  if (animation.kind === 'concept') {
+    return animation.steps.length > 0 || Boolean(animation.teach?.length)
+  }
+  return Boolean(animation.teach?.length && animation.steps.length)
+}
+
 const questions: Question[] = []
 const questionsById = new Map<string, Question>()
+const sharedQuestionsById = new Map<string, Question>()
 const animationsById = new Map<string, Animation>()
 const loadedSubjects = new Set<string>()
 const inflightSubjects = new Map<string, Promise<boolean>>()
@@ -94,14 +108,11 @@ export async function loadSubject(subject: string): Promise<boolean> {
         anims = aFile.animations ?? []
       }
 
-      let subjectQuestions = qFile.questions ?? []
-      if (TEACH_ONLY_SUBJECTS.has(normalized)) {
-        // Temporary pilot filter: show only questions whose animation has Teach me steps.
-        const teachIds = new Set(anims.filter((anim) => (anim.teach?.length ?? 0) > 0).map((anim) => anim.id))
-        const filtered = subjectQuestions.filter((question) => question.animationId && teachIds.has(question.animationId))
-        if (filtered.length > 0) subjectQuestions = filtered
-      }
-      registerSubjectData(normalized, subjectQuestions, anims)
+      const source = qFile.questions ?? []
+      const byId = new Map(anims.map((animation) => [animation.id, animation]))
+      for (const question of source) sharedQuestionsById.set(question.id, question)
+      registerSubjectData(normalized, COMPLETE_QUESTIONS_ONLY ? source.filter((question) =>
+        isCompleteQuestion(question, byId.get(question.animationId ?? ''))) : source, anims)
       return true
     } catch {
       return false
@@ -114,10 +125,6 @@ export async function loadSubject(subject: string): Promise<boolean> {
   return promise
 }
 
-// Pilot switch: subjects listed here show only questions that have Teach me narration.
-// Remove a subject from this set to show all of its questions again.
-const TEACH_ONLY_SUBJECTS = new Set<string>(['chemistry'])
-
 export function getQuestions(): Question[] {
   return questions.slice()
 }
@@ -128,7 +135,7 @@ export function getQuestionsBySubject(subject: string): Question[] {
 }
 
 export function getQuestion(id: string): Question | undefined {
-  return questionsById.get(id)
+  return questionsById.get(id) ?? sharedQuestionsById.get(id)
 }
 
 export function getAnimation(id: string): Animation | undefined {

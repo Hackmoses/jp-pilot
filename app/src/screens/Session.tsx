@@ -18,11 +18,19 @@ import {
   type SessionRecord,
   setLastSessionSummary,
 } from '../components/question/sessionState'
-import { getAnimation, isSubjectLoaded, loadSubject } from '../lib/data'
+import { getAnimation, getQuestion, isSubjectLoaded, loadSubject } from '../lib/data'
+import { finishAttempt, getStudyAnswer, markStudied, remember, saveAttempt, studyLink, type Attempt, type TestResult } from '../lib/modes'
 import { shuffleOptions } from '../lib/shuffle'
 import { getProgress, logEvent, recordAnswer } from '../lib/store'
 import { getSubject, getSubjectByQuestionId, isSubjectAvailable } from '../lib/subjects'
 import type { OptionId } from '../lib/types'
+import { Countdown } from './Countdown'
+
+interface SessionProps {
+  attempt?: Attempt
+  study?: { id: string; subject: string; chapter: string; concept?: string }
+  review?: { id: string; result: TestResult; href: string }
+}
 
 interface SessionInit {
   queue: ReturnType<typeof buildSessionQueue>
@@ -53,17 +61,41 @@ function startSession(requestedId: string | null, requestedSubject: string | nul
   return { queue, requestedSubject, startedAt: Date.now(), loading: false }
 }
 
-export function Session() {
+export function Session({ attempt, study, review }: SessionProps) {
   const [{ queue, requestedSubject, startedAt, loading }, setSession] = useState<SessionInit>(
-    () =>
-      startSession(
+    () => {
+      const id = study?.id ?? review?.id
+      if (attempt || id) {
+        const ids = attempt?.ids ?? (id ? [id] : [])
+        return {
+          queue: ids.flatMap((id) => {
+            const question = getQuestion(id)
+            return question ? [{ question, review: attempt?.reviewIds.includes(id) ?? false }] : []
+          }),
+          requestedSubject: attempt?.subjects[0] ?? study?.subject ?? null,
+          startedAt: attempt?.startedAt ?? review?.result.startedAt ?? Date.now(),
+          loading: false,
+        }
+      }
+      return startSession(
         parseQuestionIdFromHash(window.location.hash),
         parseSubjectFromHash(window.location.hash),
-      ),
+      )
+    },
   )
-  const [index, setIndex] = useState(0)
-  const [records, setRecords] = useState<SessionRecord[]>([])
-  const [pickedId, setPickedId] = useState<OptionId | null>(null)
+  const savedAttempt = useRef(attempt)
+  const [index, setIndex] = useState(attempt?.index ?? 0)
+  const [records, setRecords] = useState<SessionRecord[]>(() => queue.slice(0, index).map(({ question }) => ({
+    questionId: question.id,
+    topic: question.topic,
+    correct: attempt?.answers[question.id] === question.answerId,
+    skipped: !attempt?.answers[question.id],
+  })))
+  const [pickedId, setPickedId] = useState<OptionId | null>(() => {
+    if (review) return review.result.answers[review.id] ?? null
+    if (study) return getStudyAnswer(study.id) ?? null
+    return attempt && queue[index] ? attempt.answers[queue[index].question.id] ?? null : null
+  })
   const [calcOpen, setCalcOpen] = useState(false)
   const [playSignal, setPlaySignal] = useState(0)
   const [askOpen, setAskOpen] = useState(false)
@@ -117,28 +149,6 @@ export function Session() {
     }
   }, [loading])
 
-  useEffect(() => {
-    const onHashChange = () => {
-      const requestedId = parseQuestionIdFromHash(window.location.hash)
-      const nextSubject = parseSubjectFromHash(window.location.hash)
-      if (!requestedId && !nextSubject) return
-      const current = queue[index]?.question
-      if (requestedId && current?.id === requestedId) return
-      if (!requestedId && nextSubject && nextSubject === requestedSubject && queue.length > 0) return
-
-      setSession(startSession(requestedId, nextSubject))
-      setIndex(0)
-      setRecords([])
-      setPickedId(null)
-      setCalcOpen(false)
-      setPlaySignal(0)
-      setAskOpen(false)
-    }
-
-    window.addEventListener('hashchange', onHashChange)
-    return () => window.removeEventListener('hashchange', onHashChange)
-  }, [queue, index, requestedSubject])
-
   const entry = queue[index]
   const question = entry?.question
 
@@ -147,13 +157,31 @@ export function Session() {
     return shuffleOptions(question, makeOptionSeed(question.id, startedAt))
   }, [question, startedAt])
 
-  const answered = pickedId !== null
+  const answered = pickedId !== null || Boolean(review)
+  const back = study ? studyLink(study.subject, study.chapter, study.concept) : review?.href
+
+  useEffect(() => {
+    if (question && !attempt && !review) {
+      remember(study ? window.location.hash : '#/q?id=' + encodeURIComponent(question.id),
+        study ? 'Study · ' + (question.concept ?? question.topic) : 'Practice · ' + question.topic)
+    }
+  }, [question, attempt, review, study])
 
   const handlePick = useCallback(
     (optionId: OptionId) => {
-      if (!question || pickedId !== null) return
+      if (!question || pickedId !== null || review) return
       const correct = optionId === question.answerId
       const at = Date.now()
+      const run = savedAttempt.current
+      if (run?.deadline && at >= run.deadline) {
+        finishAttempt(run, at)
+        return
+      }
+      if (run) {
+        run.answers[question.id] = optionId
+        saveAttempt(run)
+      }
+      if (study) markStudied(study.subject, study.chapter, question.id, optionId)
 
       setPickedId(optionId)
       recordAnswer({
@@ -169,11 +197,21 @@ export function Session() {
       })
       setProgress(getProgress())
     },
-    [question, pickedId],
+    [question, pickedId, review, study],
   )
 
   const advance = useCallback(() => {
     if (!question) return
+    if (back) {
+      window.location.hash = back
+      return
+    }
+    const run = savedAttempt.current
+    const now = Date.now()
+    if (run && (index + 1 >= queue.length || (run.deadline !== null && now >= run.deadline))) {
+      finishAttempt(run, now)
+      return
+    }
     const skipped = pickedId === null
     const nextRecord: SessionRecord = {
       questionId: question.id,
@@ -186,7 +224,11 @@ export function Session() {
     if (index + 1 >= queue.length) {
       const summary = summarizeSession(nextRecords)
       summary.subject = question.subject
+      summary.elapsedMs = now - startedAt
+      summary.missedQuestionIds = nextRecords.filter((record) => !record.correct && !record.skipped)
+        .map((record) => record.questionId)
       setLastSessionSummary(summary)
+      remember('#/done', 'Practice summary')
       logEvent('session_end', {
         answered: summary.answered,
         correct: summary.correct,
@@ -197,6 +239,10 @@ export function Session() {
     }
 
     setRecords(nextRecords)
+    if (run) {
+      run.index = index + 1
+      saveAttempt(run)
+    }
     setIndex(index + 1)
     setPickedId(null)
     setCalcOpen(false)
@@ -205,7 +251,7 @@ export function Session() {
     if (typeof window.scrollTo === 'function') {
       window.scrollTo({ top: 0 })
     }
-  }, [question, pickedId, records, index, queue.length])
+  }, [question, pickedId, records, index, queue.length, back, startedAt])
 
   useEffect(() => {
     if (!question) return
@@ -365,11 +411,13 @@ export function Session() {
               <div class="jp-progress-fill" style={{ width: `${progressPercent}%` }} />
             </div>
           </div>
-          <span class="jp-pill jp-pill--practice jp-hide-sm">Practice</span>
-          <span class="jp-pill jp-pill--score" aria-live="polite">
+          <span class="jp-pill jp-pill--practice jp-hide-sm">{study ? 'Study' : review ? 'Exam review' : 'Practice'}</span>
+          {attempt?.deadline && <Countdown deadline={attempt.deadline}
+            onExpire={() => finishAttempt(savedAttempt.current!, Date.now())} />}
+          {!study && !review && <span class="jp-pill jp-pill--score" aria-live="polite">
             Score {sessionCorrect}/{sessionAnswered}
-          </span>
-          {progress.streakDays > 0 && (
+          </span>}
+          {!attempt?.deadline && !study && !review && progress.streakDays > 0 && (
             <span class="jp-pill jp-pill--streak">
               {progress.streakDays}-day streak
             </span>
@@ -379,11 +427,13 @@ export function Session() {
 
       <div class="jp-session-layout">
         <div class="jp-left-col">
+          {review && pickedId === null && <p class="jp-summary-sub">Unanswered</p>}
           <QuestionCard
             question={question}
             review={entry.review}
             options={options}
             pickedId={pickedId}
+            reveal={Boolean(review)}
             onPick={handlePick}
             calculationSlot={!isWide && !isConceptAnimation ? calculationPlayer : undefined}
             conceptSlot={!isWide && isConceptAnimation ? calculationPlayer : undefined}
@@ -413,7 +463,7 @@ export function Session() {
               <div class="jp-footer-right">
                 <span class="jp-kbd-hints jp-hide-sm">1–4 to answer</span>
                 <button type="button" class="jp-btn jp-skip-btn" onClick={advance}>
-                  Skip
+                  {study ? 'Back to chapter' : 'Skip'}
                 </button>
               </div>
             </>
@@ -445,7 +495,7 @@ export function Session() {
                   class="jp-btn jp-btn--primary jp-next-btn"
                   onClick={advance}
                 >
-                  {index + 1 >= queue.length ? 'See summary' : 'Next question'}
+                  {study ? 'Back to chapter' : review ? 'Back to results' : index + 1 >= queue.length ? 'See summary' : 'Next question'}
                   <span class="jp-kbd jp-hide-sm" aria-hidden="true">Enter</span>
                 </button>
               </div>

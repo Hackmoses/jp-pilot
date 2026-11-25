@@ -1,4 +1,4 @@
-import { getManifestSync, getQuestionsBySubject, isSubjectLoaded } from './data'
+import { COMPLETE_QUESTIONS_ONLY, getManifestSync, getQuestionsBySubject, isSubjectLoaded } from './data'
 
 export type SubjectIconName =
   | 'book'
@@ -61,21 +61,23 @@ export function getSubjectByQuestionId(questionId: string | null | undefined): S
 
 export function isSubjectAvailable(subjectId: string): boolean {
   const normalized = subjectId.trim().toLowerCase()
+  if (isSubjectLoaded(normalized)) return getQuestionsBySubject(normalized).length > 0
   const manifest = getManifestSync()
   if (manifest) {
-    return (manifest[normalized]?.count ?? 0) > 0
-  }
-  if (isSubjectLoaded(normalized)) {
-    return getQuestionsBySubject(normalized).length > 0
+    const entry = manifest[normalized]
+    const count = COMPLETE_QUESTIONS_ONLY ? (entry?.completeCount ?? entry?.count ?? 0) : (entry?.count ?? 0)
+    return count > 0
   }
   return getSubject(normalized)?.available ?? false
 }
 
 export function getSubjectQuestionCount(subjectId: string): number {
   const normalized = subjectId.trim().toLowerCase()
+  if (isSubjectLoaded(normalized)) return getQuestionsBySubject(normalized).length
   const manifest = getManifestSync()
   if (manifest?.[normalized]) {
-    return manifest[normalized].count
+    const entry = manifest[normalized]
+    return COMPLETE_QUESTIONS_ONLY ? (entry.completeCount ?? entry.count) : entry.count
   }
   return getQuestionsBySubject(normalized).length
 }

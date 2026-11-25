@@ -53,6 +53,8 @@
             "type": "string",
             "minLength": 1
           },
+          "chapter": { "type": "string", "minLength": 1 },
+          "concept": { "type": "string", "minLength": 1 },
           "topic": {
             "type": "string"
           },

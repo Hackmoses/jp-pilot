@@ -29,9 +29,10 @@ export function getOptionViewState(
   index: number,
   question: Question,
   pickedId: OptionId | null,
+  reveal = false,
 ): OptionViewState {
   const letter = OPTION_LETTERS[index] ?? 'A'
-  const answered = pickedId !== null
+  const answered = pickedId !== null || reveal
 
   if (!answered) {
     return {
@@ -116,10 +117,9 @@ export function buildSessionQueue(
     subject ??
     'chemistry'
   const subjectInfo = getSubject(activeSubject)
-  if (!subjectInfo || !isSubjectAvailable(subjectInfo.id)) return []
+  if (!subjectInfo || (!requestedQuestion && !isSubjectAvailable(subjectInfo.id))) return []
 
   const subjectQuestions = getQuestionsBySubject(subjectInfo.id)
-  if (subjectQuestions.length === 0) return []
 
   const entries = getDueQuestionIds(
     requestedId ? subjectQuestions.length : limit,
@@ -129,6 +129,8 @@ export function buildSessionQueue(
   if (pinnedIndex > 0) {
     const [pinned] = entries.splice(pinnedIndex, 1)
     entries.unshift(pinned)
+  } else if (pinnedIndex === -1 && requestedQuestion) {
+    entries.unshift({ id: requestedQuestion.id, review: false })
   }
 
   return entries.slice(0, limit).flatMap(({ id, review }) => {

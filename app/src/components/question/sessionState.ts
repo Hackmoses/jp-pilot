@@ -12,17 +12,34 @@ export interface MissedTopic {
 
 export interface SessionSummary {
   subject?: string
+  elapsedMs?: number
   total: number
   answered: number
   correct: number
   skipped: number
   missedTopics: MissedTopic[]
+  missedQuestionIds?: string[]
 }
 
-let lastSessionSummary: SessionSummary | null = null
+const summaryKey = 'jp.shared-practice-summary.v1'
+
+function readSummary(): SessionSummary | null {
+  try {
+    return JSON.parse(localStorage.getItem(summaryKey) ?? 'null') as SessionSummary | null
+  } catch {
+    return null
+  }
+}
+
+let lastSessionSummary = readSummary()
 
 export function setLastSessionSummary(summary: SessionSummary | null): void {
   lastSessionSummary = summary
+  try {
+    localStorage.setItem(summaryKey, JSON.stringify(summary))
+  } catch {
+    // The summary remains available in memory.
+  }
 }
 
 export function getLastSessionSummary(): SessionSummary | null {

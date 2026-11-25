@@ -24,7 +24,7 @@ export function Home() {
             <span class="landing-pilot">15 UTME subjects</span>
           </div>
           <nav class="landing-nav" aria-label="Primary">
-            <a class="landing-nav-link" href="#/subjects">Practice</a>
+            <a class="landing-nav-link" href="#/modes">Practice</a>
             <a class="landing-nav-link" href="#/done">Progress</a>
             <button type="button" class="landing-nav-link" onClick={() => setActiveNotice('copyright')}>
               About
@@ -34,7 +34,7 @@ export function Home() {
             <button type="button" class="landing-action landing-sign-in" onClick={() => setActiveNotice('email')}>
               Sign in
             </button>
-            <a class="landing-action landing-primary landing-header-cta" href="#/subjects">Try free</a>
+            <a class="landing-action landing-primary landing-header-cta" href="#/modes">Try free</a>
           </div>
         </div>
       </header>
@@ -54,7 +54,7 @@ export function Home() {
                 <path d="M5 12h14m-6-6 6 6-6 6" />
               </svg>
             </button>
-            <a class="landing-action" href="#/subjects">Try free without an account</a>
+            <a class="landing-action" href="#/modes">Try free without an account</a>
           </div>
           <p class="landing-details">No download · Email-only sign-up · Works on one bar of signal · 10 free questions a day</p>
         </div>
@@ -71,7 +71,7 @@ export function Home() {
             Works offline · Zero install · Free daily practice
           </span>
           <div class="landing-footer-links">
-            <a class="landing-footer-link" href="#/subjects">Practice</a>
+            <a class="landing-footer-link" href="#/modes">Practice</a>
             <a class="landing-footer-link" href="#/done">Progress</a>
             <button type="button" class="landing-copyright" aria-haspopup="dialog"
               onClick={() => setActiveNotice('copyright')}>
@@ -89,7 +89,7 @@ export function Home() {
         </p>
         <div class="landing-actions">
           {activeNotice === 'email' && (
-            <a class="landing-action landing-primary" href="#/subjects" onClick={() => notice.current?.close()}>
+            <a class="landing-action landing-primary" href="#/modes" onClick={() => notice.current?.close()}>
               Try free without an account
             </a>
           )}

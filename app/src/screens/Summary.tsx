@@ -1,11 +1,21 @@
 import '../components/question/question.css'
 import { getLastSessionSummary } from '../components/question/sessionState'
 import { ShareButton } from '../components/share/ShareButton'
+import { getQuestion } from '../lib/data'
+import { chapterName, formatTime, getQuestionChapter, studyLink } from '../lib/modes'
 import { getProgress } from '../lib/store'
 
 export function Summary() {
   const summary = getLastSessionSummary()
   const progress = getProgress()
+  const chapters = new Map<string, { subject: string; chapter: string }>()
+  for (const id of summary?.missedQuestionIds ?? []) {
+    const question = getQuestion(id)
+    if (question) {
+      const chapter = getQuestionChapter(question)
+      chapters.set(question.subject + '/' + chapter, { subject: question.subject, chapter })
+    }
+  }
 
   return (
     <main class="jp-screen">
@@ -37,8 +47,19 @@ export function Summary() {
               <p class="jp-summary-sub">
                 {summary.answered} answered
                 {summary.skipped > 0 ? ` · ${summary.skipped} skipped` : ''}
+                {summary.elapsedMs !== undefined && ` · ${formatTime(summary.elapsedMs)} taken`}
               </p>
             </section>
+
+            {chapters.size > 0 && <section class="jp-revisit" aria-label="Chapters with mistakes">
+              <h2 class="jp-revisit-title">Chapters with mistakes</h2>
+              {[...chapters.values()].map(({ subject, chapter }) => (
+                <div key={subject + chapter} class="jp-mode-action-row">
+                  <span>{chapterName(subject, chapter)}</span>
+                  <a class="jp-btn" href={studyLink(subject, chapter)}>Study this</a>
+                </div>
+              ))}
+            </section>}
 
             <section class="jp-revisit" aria-label="Topics to revisit">
               <h2 class="jp-revisit-title">Topics to revisit</h2>
@@ -75,7 +96,7 @@ export function Summary() {
 
         <a
           class="jp-btn jp-btn--primary jp-btn--full"
-          href={summary?.subject ? `#/q?subject=${encodeURIComponent(summary.subject)}` : '#/subjects'}
+          href={summary?.subject ? `#/practice?subject=${encodeURIComponent(summary.subject)}` : '#/subjects?mode=practice'}
         >
           {summary ? 'Practice again' : 'Start practice'}
         </a>

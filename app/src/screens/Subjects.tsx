@@ -36,7 +36,7 @@ function SubjectIcon({ name }: { name: SubjectIconName }) {
   )
 }
 
-export function Subjects() {
+export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
   const [query, setQuery] = useState('')
   const [, setManifestReady] = useState(false)
   const [dialogState, setDialogState] = useState<{ kind: 'email' } | { kind: 'subject'; subject: SubjectInfo } | null>(null)
@@ -44,7 +44,9 @@ export function Subjects() {
   const triggerRef = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
-    void loadManifest().then(() => setManifestReady(true))
+    let active = true
+    void loadManifest().then(() => { if (active) setManifestReady(true) })
+    return () => { active = false }
   }, [])
 
   useEffect(() => {
@@ -65,13 +67,14 @@ export function Subjects() {
   }, [query])
 
   const chemistryCount = getSubjectQuestionCount('chemistry')
+  const destination = (id: string) => `#/${mode}?subject=${encodeURIComponent(id)}`
 
   return (
     <div class="jp-subjects-page">
       <header class="jp-subjects-header">
         <div class="jp-subjects-header-inner">
           <div class="jp-subjects-brand">
-            <a class="jp-subjects-back" href="#/" aria-label="Back to home">
+            <a class="jp-subjects-back" href="#/modes" aria-label="Back to modes">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="m15 18-6-6 6-6" />
@@ -95,7 +98,7 @@ export function Subjects() {
         <div class="jp-subjects-head">
           <div class="jp-subjects-title-wrap">
             <h1>Choose a subject</h1>
-            <p>Pick a subject and start practising. No account needed.</p>
+            <p>{mode === 'study' ? 'Choose a subject to study.' : 'Choose a subject to set up your practice.'}</p>
           </div>
           <label class="jp-subjects-search">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -113,13 +116,13 @@ export function Subjects() {
           </label>
         </div>
 
-        <a class="jp-subjects-mobile-strip" href="#/q?subject=chemistry">
+        <a class="jp-subjects-mobile-strip" href={destination('chemistry')}>
           <span class="jp-subjects-strip-icon" aria-hidden="true">
             <SubjectIcon name="flask" />
           </span>
           <span class="jp-subjects-strip-copy">
             <strong>Ready now · Chemistry</strong>
-            <span>{chemistryCount} questions · Tap to start</span>
+            <span>{chemistryCount > 0 ? `${chemistryCount} questions` : 'Tap to start'}</span>
           </span>
           <span class="jp-subjects-strip-go" aria-hidden="true">Start →</span>
         </a>
@@ -141,7 +144,7 @@ export function Subjects() {
                     key={subject.id}
                     role="listitem"
                     class="jp-subject-card jp-subject-card--open"
-                    href={`#/q?subject=${encodeURIComponent(subject.id)}`}
+                    href={destination(subject.id)}
                     style={{ '--subj-color': subject.color, '--subj-soft': subject.soft } as Record<string, string>}
                   >
                     <span class="jp-subject-icon" aria-hidden="true">
@@ -206,7 +209,7 @@ export function Subjects() {
         <div class="jp-subjects-dialog-actions">
           <a
             class="jp-btn jp-btn--primary"
-            href="#/q?subject=chemistry"
+            href={destination('chemistry')}
             onClick={() => setDialogState(null)}
           >
             Start Chemistry

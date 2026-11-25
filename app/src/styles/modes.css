@@ -1,0 +1,88 @@
+.jp-screen.jp-mode-screen {
+  max-width: 760px;
+}
+
+.jp-mode-panel {
+  justify-content: flex-start;
+  gap: var(--space-4);
+}
+
+.jp-mode-grid {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.jp-mode-grid .jp-mode-card {
+  min-height: calc(var(--tap-min) + var(--space-6));
+  justify-content: center;
+}
+
+.jp-mode-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-height: var(--tap-min);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.jp-mode-check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--tap-min);
+  color: var(--ink);
+}
+
+.jp-mode-check input {
+  accent-color: var(--brand);
+  flex: none;
+}
+
+.jp-mode-screen .jp-btn,
+.jp-screen .jp-exam-topbar .jp-btn,
+.jp-mode-action-row .jp-btn,
+.jp-exam-palette .jp-btn {
+  min-height: var(--tap-min);
+}
+
+.jp-exam-palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--tap-min), 1fr));
+  gap: var(--space-1);
+}
+
+.jp-exam-palette .jp-btn {
+  padding-inline: var(--space-1);
+}
+
+.jp-exam-palette .jp-btn[aria-current="step"] {
+  outline: 2px solid var(--brand);
+  outline-offset: -2px;
+}
+
+.jp-question-card .jp-option[aria-pressed="true"] {
+  background: var(--brand-soft);
+  border-color: var(--brand);
+}
+
+.jp-mode-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.jp-exam-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--bg);
+}
+
+@media (min-width: 761px) {
+  .jp-mode-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
