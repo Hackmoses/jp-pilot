@@ -1,6 +1,8 @@
+import type { DrawingProps } from '../../lesson'
 import { processDrawing } from '../AnatomyBoard'
+import { Diagram, type Point } from '../Diagram'
 
-export default processDrawing("DNA, chromosomes and X-linked inheritance", [
+const Overview = processDrawing("DNA, chromosomes and X-linked inheritance", [
   {
     outline: [
       ["paper", "M29 72Q50 28 103 42Q169 40 179 92Q186 150 132 169Q66 191 33 151Q15 113 29 72Z"],
@@ -20,14 +22,6 @@ export default processDrawing("DNA, chromosomes and X-linked inheritance", [
         cue: 'part-1-0', label: "X chromosome", at: [21,209], tip: [105,101], align: 'start',
         flows: [
           ["blue", "M153 63Q181 41 220 69"],
-        ],
-      },
-      {
-        cue: 'part-1-1', label: "Colour blindness|2 of 4 expected", at: [308,253], tip: [251,198], align: 'end',
-        strokes: [
-          ["paper", "M208 156H280V229H208ZM244 157V229M208 193H280"],
-          ["red", "M209 194H243V227H209ZM245 194H279V227H245Z"],
-          ["ink", "M216 170l14 14m0-14l-14 14m35-14l14 14m0-14l-14 14m-35 18l9 9l8-9m-8 9v7m26-16l9 9l8-9m-8 9v7"],
         ],
       },
     ],
@@ -53,3 +47,47 @@ export default processDrawing("DNA, chromosomes and X-linked inheritance", [
     ],
   },
 ])
+
+const mother = ['Xᴺ', 'Xᶜ'] as const
+
+function Cross({ left, affectedFather }: { left: number; affectedFather: boolean }) {
+  const father = [affectedFather ? 'Xᶜ' : 'Xᴺ', 'Y'] as const
+  const center = left + 71
+  return <g text-anchor="middle">
+    <text x={center} y="74">{affectedFather ? 'Colour-blind father' : 'Unaffected father'}</text>
+    {father.map((sperm, col) => <text key={sperm} x={left + 49 + 48 * col} y="106">{sperm}</text>)}
+    {mother.map((egg, row) => <g key={egg}>
+      <text x={left + 11} y={138 + 38 * row}>{egg}</text>
+      {father.map((sperm, col) => {
+        const copies = Number(egg === 'Xᶜ') + Number(sperm === 'Xᶜ')
+        const affected = copies === (sperm === 'Y' ? 1 : 2)
+        const carrier = copies === 1 && sperm !== 'Y'
+        const trait = affected ? 'jp-biology-red-soft' : carrier ? 'jp-biology-yellow-seed' : 'jp-biology-anatomy'
+        const x = left + 25 + 48 * col
+        const y = 115 + 38 * row
+        return <g key={sperm}><rect class={trait} x={x} y={y} width="48" height="38" />
+          <text x={x + 24} y={y + 24}>{egg}{sperm}</text>
+        </g>
+      })}
+    </g>)}
+    <text x={center} y="219">{affectedFather ? '50% colour-blind' : '25% colour-blind'}</text>
+    <text x={center} y="239">1 carrier daughter</text>
+  </g>
+}
+
+export default function Chromosomes(props: DrawingProps) {
+  const { scene, frame } = props
+  if (scene.visual !== '1') return <Overview {...props} />
+
+  const cues = scene.beats.slice(0, frame.reached).map(({ action }) => action)
+  const active = cues[cues.length - 1]
+  const points: Record<string, Point> = {
+    'cross-mother': [159, 43], 'cross-unaffected': [104, 153], 'cross-affected': [242, 153],
+  }
+  return <Diagram label="Colour blindness crosses for a carrier mother with an unaffected or affected father"
+    viewBox="0 0 320 274" point={!frame.reduced && active ? points[active] : undefined}>
+    <text x="160" y="34" text-anchor="middle">Carrier mother · XᴺXᶜ</text>
+    {(frame.reduced || cues.includes('cross-unaffected')) && <Cross left={13} affectedFather={false} />}
+    {(frame.reduced || cues.includes('cross-affected')) && <Cross left={165} affectedFather />}
+  </Diagram>
+}

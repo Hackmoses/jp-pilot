@@ -57,7 +57,7 @@ export default processDrawing("Where and how photosynthesis happens", [
         ],
       },
       {
-        cue: 'part-1-1', label: "Sugar phosphate", at: [304,270], tip: [233,230], align: 'end',
+        cue: 'part-1-1', label: "Glucose / starch", at: [304,270], tip: [233,230], align: 'end',
         flows: [
           ["green", "M216 232L258 242"],
         ],

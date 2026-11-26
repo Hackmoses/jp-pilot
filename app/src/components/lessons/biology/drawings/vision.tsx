@@ -37,6 +37,7 @@ export default processDrawing("The eye, vision and common defects", [
         cue: 'part-1-1', label: "Convex lens", at: [16,256], tip: [48,124], align: 'start',
         strokes: [
           ["green", "M46 94Q25 122 46 154Q62 123 46 94Z"],
+          ["lead", "M51 242V173L46 153"],
         ],
         flows: [
           ["blue", "M15 102L44 102L110 114L278 125"],

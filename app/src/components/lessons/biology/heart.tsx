@@ -50,11 +50,14 @@ export default function Heart(props: DrawingProps) {
       <path class="jp-biology-leader" d="M109 163l-4 9 6 7M108 173L96 193H61" />
       <text x="12" y="208">Pulmonary valve</text>
     </>}
-    {shown('pa') && <text x="89" y="53">Pulmonary<tspan x="89" dy="14">artery</tspan></text>}
     {shown('lungs') && <g>
       <path class="jp-biology-anatomy" d="M187 28Q176 15 164 33Q149 55 164 57Q177 56 187 48ZM193 28Q204 15 216 33Q231 55 216 57Q203 56 193 48Z" />
       <text x="190" y="16" text-anchor="middle">Lungs</text>
     </g>}
+    {shown('pa') && <>
+      <path class="jp-biology-leader" d="M93 46V39" />
+      <text x="82" y="57">Pulmonary<tspan x="82" dy="15">artery</tspan></text>
+    </>}
     {shown('veins') && <>
       {flow('M221 36H285V113H245', 'jp-biology-red', 3, 'veins')}
       <text x="294" y="57">Pulmonary<tspan x="294" dy="14">veins</tspan></text>
