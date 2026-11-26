@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 20,
+  "count": 30,
   "animations": [
     {
       "id": "anim-chem-jamb-2010-005",
@@ -1368,6 +1368,680 @@
           "tag": "write standard form",
           "title": "Write standard form",
           "narration": "Move the decimal point one place left and increase the exponent to twenty-four to get one point two times ten to the twenty-four."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2018-029",
+      "questionId": "chem-jamb-2018-029",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 273 + 273 = 546 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Add two hundred and seventy-three to get five hundred and forty-six kelvin."
+        },
+        {
+          "n": 2,
+          "display": "V_{STP} = 10.0 × \\frac{4}{1} × \\frac{273}{546}",
+          "tag": "convert to STP volume",
+          "title": "Convert to STP volume",
+          "narration": "Use the combined gas law to find the volume at one atmosphere and two hundred and seventy-three kelvin."
+        },
+        {
+          "n": 3,
+          "display": "V_{STP} = 20.0 dm^{3}",
+          "tag": "simplify volume",
+          "title": "Simplify volume",
+          "narration": "The gas occupies twenty point zero cubic decimetres at STP."
+        },
+        {
+          "n": 4,
+          "display": "n = \\frac{20.0}{22.4} ≈ 0.89 mol",
+          "tag": "divide by molar volume",
+          "title": "Divide by molar volume",
+          "narration": "Divide twenty point zero by twenty-two point four to get zero point eight nine mole."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{1} = 10.0 dm^{3}, P_{1} = 4 atm, T_{1} = 273°C",
+          "tag": "list initial state",
+          "title": "List initial state",
+          "narration": "Write down the starting volume, pressure, and temperature, and recall that STP means zero degrees Celsius and one atmosphere."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = 273 + 273 = 546 K, T_{2} = 273 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Convert both temperatures to kelvin by adding two hundred and seventy-three because gas law ratios only work on the absolute scale."
+        },
+        {
+          "n": 3,
+          "display": "V_{STP} = V_{1} × \\frac{P_{1}}{P_{2}} × \\frac{T_{2}}{T_{1}}",
+          "tag": "state combined gas law",
+          "title": "State combined gas law",
+          "narration": "Find the gas volume at STP first so we can compare it directly with the STP molar volume."
+        },
+        {
+          "n": 4,
+          "display": "V_{STP} = 10.0 × \\frac{4}{1} × \\frac{273}{546} = 20.0 dm^{3}",
+          "tag": "find STP volume",
+          "title": "Find STP volume",
+          "narration": "Two hundred and seventy-three over five hundred and forty-six is half, and half of four times ten gives twenty point zero cubic decimetres."
+        },
+        {
+          "n": 5,
+          "display": "n = \\frac{V_{STP}}{22.4}",
+          "tag": "divide by molar volume",
+          "title": "Divide by molar volume",
+          "narration": "Divide by twenty-two point four cubic decimetres per mole because one mole of any gas occupies twenty-two point four cubic decimetres at STP."
+        },
+        {
+          "n": 6,
+          "display": "n = \\frac{20.0}{22.4} ≈ 0.89 mol",
+          "tag": "calculate moles",
+          "title": "Calculate moles",
+          "narration": "Twenty divided by twenty-two point four gives zero point eight nine mole."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2018-030",
+      "questionId": "chem-jamb-2018-030",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V ∝ T (T in kelvin)",
+          "tag": "state Charles's law",
+          "title": "State Charles's law",
+          "narration": "At constant pressure, ideal gas volume is proportional to kelvin temperature."
+        },
+        {
+          "n": 2,
+          "display": "V = 0 at T = 0 K",
+          "tag": "find zero-volume kelvin",
+          "title": "Find zero-volume kelvin",
+          "narration": "Extrapolating the line to zero volume reaches zero kelvin."
+        },
+        {
+          "n": 3,
+          "display": "t = 0 − 273 = −273°C",
+          "tag": "convert to Celsius",
+          "title": "Convert to Celsius",
+          "narration": "Subtract two hundred and seventy-three to get minus two hundred and seventy-three degrees Celsius."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V = kT (at constant P)",
+          "tag": "state Charles's law",
+          "title": "State Charles's law",
+          "narration": "By Charles's law, the volume of a fixed gas at constant pressure rises linearly with its absolute temperature in kelvin."
+        },
+        {
+          "n": 2,
+          "display": "V = 0 when T = 0 K",
+          "tag": "locate zero volume",
+          "title": "Locate zero volume",
+          "narration": "Extending that straight graph downward hits zero volume when the kelvin temperature reaches absolute zero, zero kelvin."
+        },
+        {
+          "n": 3,
+          "display": "t(°C) = T(K) − 273",
+          "tag": "recall Celsius conversion",
+          "title": "Recall Celsius conversion",
+          "narration": "Convert from kelvin back to degrees Celsius by subtracting two hundred and seventy-three."
+        },
+        {
+          "n": 4,
+          "display": "t = 0 − 273 = −273°C",
+          "tag": "state Celsius value",
+          "title": "State Celsius value",
+          "narration": "Zero minus two hundred and seventy-three gives minus two hundred and seventy-three degrees Celsius."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2018-033",
+      "questionId": "chem-jamb-2018-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "[OH^{−}] = 0.001 = 10^{-3} mol/dm^{3}",
+          "tag": "find hydroxide level",
+          "title": "Find hydroxide level",
+          "narration": "Complete dissociation gives a hydroxide concentration of ten to the minus three moles per cubic decimetre."
+        },
+        {
+          "n": 2,
+          "display": "pOH = −log(10^{-3}) = 3",
+          "tag": "calculate pOH",
+          "title": "Calculate pOH",
+          "narration": "Taking the negative base-ten log gives a pOH of three."
+        },
+        {
+          "n": 3,
+          "display": "pH + pOH = 14 (at 25°C)",
+          "tag": "link pH and pOH",
+          "title": "Link pH and pOH",
+          "narration": "At twenty-five degrees Celsius, pH plus pOH equals fourteen."
+        },
+        {
+          "n": 4,
+          "display": "pH = 14 − 3 = 11",
+          "tag": "calculate pH",
+          "title": "Calculate pH",
+          "narration": "Subtract three from fourteen to get a pH of eleven."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "NaOH → Na^{+} + OH^{−}",
+          "tag": "dissociate the base",
+          "title": "Dissociate the base",
+          "narration": "Sodium hydroxide dissociates completely in water, so every mole of base supplies one mole of hydroxide ions."
+        },
+        {
+          "n": 2,
+          "display": "[OH^{−}] = 0.001 = 10^{-3} mol/dm^{3}",
+          "tag": "write as power of ten",
+          "title": "Write as power of ten",
+          "narration": "Rewrite zero point zero zero one as ten to the minus three so its logarithm is easy to read."
+        },
+        {
+          "n": 3,
+          "display": "pOH = −log(10^{-3}) = 3",
+          "tag": "find pOH first",
+          "title": "Find pOH first",
+          "narration": "Compute pOH first because sodium hydroxide provides hydroxide ions rather than hydrogen ions directly."
+        },
+        {
+          "n": 4,
+          "display": "pH + pOH = 14 (at 25°C)",
+          "tag": "use water relation",
+          "title": "Use water relation",
+          "narration": "At twenty-five degrees Celsius, the ion product of water keeps pH plus pOH equal to fourteen."
+        },
+        {
+          "n": 5,
+          "display": "pH = 14 − 3 = 11",
+          "tag": "solve for pH",
+          "title": "Solve for pH",
+          "narration": "Subtract three from fourteen to get a pH of eleven."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2010-009",
+      "questionId": "chem-jamb-2010-009",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "L shell → n = 2",
+          "tag": "identify shell number",
+          "title": "Identify shell number",
+          "narration": "Counting K then L puts the L shell at principal number two."
+        },
+        {
+          "n": 2,
+          "display": "Max electrons = 2n^{2}",
+          "tag": "state capacity rule",
+          "title": "State capacity rule",
+          "narration": "The maximum electron capacity of shell n is two n squared."
+        },
+        {
+          "n": 3,
+          "display": "2 × 2^{2} = 8",
+          "tag": "calculate capacity",
+          "title": "Calculate capacity",
+          "narration": "Two times two squared equals eight electrons."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "K: n = 1, L: n = 2",
+          "tag": "identify shell number",
+          "title": "Identify shell number",
+          "narration": "Electron shells are labelled K, L, M, N outward from the nucleus, so the L shell corresponds to shell number two."
+        },
+        {
+          "n": 2,
+          "display": "Max capacity = 2n^{2}",
+          "tag": "state shell formula",
+          "title": "State shell formula",
+          "narration": "Use the two n squared rule because each orbital holds two electrons and shell n contains n squared orbitals."
+        },
+        {
+          "n": 3,
+          "display": "2 × 2^{2} = 2 × 4 = 8",
+          "tag": "substitute n = 2",
+          "title": "Substitute n = 2",
+          "narration": "Square two to get four, then multiply by two to get eight."
+        },
+        {
+          "n": 4,
+          "display": "Capacity = 8 (2s^{2} + 2p^{6})",
+          "tag": "confirm with subshells",
+          "title": "Confirm with subshells",
+          "narration": "Two electrons in 2s plus six electrons in 2p confirms a maximum capacity of eight electrons."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2010-019",
+      "questionId": "chem-jamb-2010-019",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "H_{2}SO_{4} + 2NaOH → Na_{2}SO_{4} + 2H_{2}O",
+          "tag": "balance equation",
+          "title": "Balance equation",
+          "narration": "One mole of sulfuric acid reacts with two moles of sodium hydroxide."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{C_{A}V_{A}}{C_{B}V_{B}} = \\frac{1}{2}",
+          "tag": "apply mole ratio",
+          "title": "Apply mole ratio",
+          "narration": "Use the one-to-two acid-to-base mole ratio."
+        },
+        {
+          "n": 3,
+          "display": "V_{A} = \\frac{0.1 × 25}{2 × 0.5}",
+          "tag": "substitute values",
+          "title": "Substitute values",
+          "narration": "Multiply zero point one by twenty-five, then divide by two times zero point five."
+        },
+        {
+          "n": 4,
+          "display": "V_{A} = 2.5 cm^{3}",
+          "tag": "calculate acid volume",
+          "title": "Calculate acid volume",
+          "narration": "Two point five divided by one gives two point five cubic centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "C_{A} = 0.5, C_{B} = 0.1 mol/dm^{3}, V_{B} = 25 cm^{3}",
+          "tag": "list given values",
+          "title": "List given values",
+          "narration": "Write down the acid molarity, base molarity, and base volume. Keeping volume in cubic centimetres gives the answer directly in cubic centimetres."
+        },
+        {
+          "n": 2,
+          "display": "H_{2}SO_{4} + 2NaOH → Na_{2}SO_{4} + 2H_{2}O",
+          "tag": "balance neutralization",
+          "title": "Balance neutralization",
+          "narration": "Balance the reaction first because each tetraoxosulfate six acid molecule supplies two protons and neutralizes two sodium hydroxide units."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{C_{A}V_{A}}{C_{B}V_{B}} = \\frac{1}{2}",
+          "tag": "state titration ratio",
+          "title": "State titration ratio",
+          "narration": "Use the titration ratio linking concentration, volume, and the balanced one-to-two mole ratio."
+        },
+        {
+          "n": 4,
+          "display": "V_{A} = \\frac{0.1 × 25}{2 × 0.5}",
+          "tag": "rearrange and substitute",
+          "title": "Rearrange and substitute",
+          "narration": "Rearrange for the acid volume and substitute zero point one, twenty-five, and zero point five."
+        },
+        {
+          "n": 5,
+          "display": "V_{A} = \\frac{2.5}{1.0} = 2.5 cm^{3}",
+          "tag": "calculate acid volume",
+          "title": "Calculate acid volume",
+          "narration": "The top gives two point five and the bottom gives one, so two point five cubic centimetres of acid is needed."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2013-003",
+      "questionId": "chem-jamb-2013-003",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "2C(s) + O_{2}(g) → 2CO(g)",
+          "tag": "balance equation",
+          "title": "Balance equation",
+          "narration": "One mole of oxygen gas produces two moles of carbon monoxide gas."
+        },
+        {
+          "n": 2,
+          "display": "1 vol O_{2} → 2 vol CO",
+          "tag": "read gas volume ratio",
+          "title": "Read gas volume ratio",
+          "narration": "At constant temperature and pressure, gas volumes follow the mole ratio one to two."
+        },
+        {
+          "n": 3,
+          "display": "V(CO) = 2 × 10 = 20 dm^{3}",
+          "tag": "calculate CO volume",
+          "title": "Calculate CO volume",
+          "narration": "Doubling ten cubic decimetres gives twenty cubic decimetres of carbon monoxide."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2C(s) + O_{2}(g) → 2CO(g)",
+          "tag": "balance the equation",
+          "title": "Balance the equation",
+          "narration": "Write the balanced reaction. Solid carbon is in excess, so oxygen limits the reaction and carbon does not enter the gas volume ratio."
+        },
+        {
+          "n": 2,
+          "display": "O_{2} : CO = 1 : 2 (same T, P)",
+          "tag": "apply Gay-Lussac's law",
+          "title": "Apply Gay-Lussac's law",
+          "narration": "At the same temperature and pressure, equal moles of gas occupy equal volumes, so one volume of oxygen forms two volumes of carbon monoxide."
+        },
+        {
+          "n": 3,
+          "display": "V(CO) = 2 × 10 dm^{3}",
+          "tag": "scale oxygen volume",
+          "title": "Scale oxygen volume",
+          "narration": "Multiply the ten cubic decimetres of oxygen by two according to the two-to-one gas ratio."
+        },
+        {
+          "n": 4,
+          "display": "V(CO) = 20 dm^{3}",
+          "tag": "state gas volume",
+          "title": "State gas volume",
+          "narration": "Twenty cubic decimetres of carbon monoxide is formed."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2013-018",
+      "questionId": "chem-jamb-2013-018",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "n = 2.0 × 2.5 = 5.0 mol",
+          "tag": "find moles of HCl",
+          "title": "Find moles of HCl",
+          "narration": "Multiply concentration by initial volume to get five point zero moles of acid."
+        },
+        {
+          "n": 2,
+          "display": "V_{2} = 2.5 + 10.0 = 12.5 dm^{3}",
+          "tag": "find total volume",
+          "title": "Find total volume",
+          "narration": "Add the ten point zero cubic decimetres of water to two point five to get twelve point five."
+        },
+        {
+          "n": 3,
+          "display": "C_{2} = \\frac{5.0}{12.5} = 0.4 mol/dm^{3}",
+          "tag": "calculate new molarity",
+          "title": "Calculate new molarity",
+          "narration": "Divide five point zero moles by twelve point five cubic decimetres to get zero point four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "C_{1} = 2.0 mol/dm^{3}, V_{1} = 2.5 dm^{3}, V_{water} = 10.0 dm^{3}",
+          "tag": "list given values",
+          "title": "List given values",
+          "narration": "Write down the starting molarity, acid volume, and added water volume."
+        },
+        {
+          "n": 2,
+          "display": "n = C_{1}V_{1} = 2.0 × 2.5 = 5.0 mol",
+          "tag": "find acid moles",
+          "title": "Find acid moles",
+          "narration": "Multiply molarity by initial volume to find the moles of acid, because adding pure water does not change the amount of dissolved acid."
+        },
+        {
+          "n": 3,
+          "display": "V_{2} = 2.5 + 10.0 = 12.5 dm^{3}",
+          "tag": "add the volumes",
+          "title": "Add the volumes",
+          "narration": "Add the original two point five cubic decimetres and the ten point zero cubic decimetres of water; dividing by ten alone is a common mistake."
+        },
+        {
+          "n": 4,
+          "display": "C_{2} = \\frac{n}{V_{2}} = \\frac{5.0}{12.5}",
+          "tag": "divide by total volume",
+          "title": "Divide by total volume",
+          "narration": "Divide the five point zero moles of hydrochloric acid by the total final volume of twelve point five cubic decimetres."
+        },
+        {
+          "n": 5,
+          "display": "C_{2} = 0.4 mol/dm^{3}",
+          "tag": "calculate concentration",
+          "title": "Calculate concentration",
+          "narration": "Five divided by twelve point five gives zero point four moles per cubic decimetre."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2013-050",
+      "questionId": "chem-jamb-2013-050",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "C: \\frac{60.0}{12} = 5, H: \\frac{13.3}{1} = 13.3, O: \\frac{26.7}{16} ≈ 1.67",
+          "tag": "find mole amounts",
+          "title": "Find mole amounts",
+          "narration": "Divide each percentage by its relative atomic mass."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{5}{1.67} : \\frac{13.3}{1.67} : \\frac{1.67}{1.67} ≈ 3 : 8 : 1",
+          "tag": "divide by smallest",
+          "title": "Divide by smallest",
+          "narration": "Divide all three mole amounts by one point six seven to get three to eight to one."
+        },
+        {
+          "n": 3,
+          "display": "C_{3}H_{8}O",
+          "tag": "write empirical formula",
+          "title": "Write empirical formula",
+          "narration": "The empirical formula is C3H8O."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "In 100 g: 60.0 g C, 13.3 g H, 26.7 g O",
+          "tag": "assume 100 g sample",
+          "title": "Assume 100 g sample",
+          "narration": "Treat the mass percentages as grams in a one-hundred-gram sample so we can convert masses to moles."
+        },
+        {
+          "n": 2,
+          "display": "C: \\frac{60.0}{12} = 5.0, H: \\frac{13.3}{1} = 13.3, O: \\frac{26.7}{16} ≈ 1.67",
+          "tag": "divide by atomic mass",
+          "title": "Divide by atomic mass",
+          "narration": "Divide each mass by its atomic mass because chemical formulas count atoms in moles rather than grams."
+        },
+        {
+          "n": 3,
+          "display": "Smallest = 1.67 mol (O)",
+          "tag": "pick smallest mole value",
+          "title": "Pick smallest mole value",
+          "narration": "Oxygen has the smallest mole amount, one point six seven, so divide every element by it to scale to whole numbers."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{5.0}{1.67} ≈ 3, \\frac{13.3}{1.67} ≈ 8, \\frac{1.67}{1.67} = 1",
+          "tag": "find whole-number ratio",
+          "title": "Find whole-number ratio",
+          "narration": "Dividing gives approximately three carbons, eight hydrogens, and one oxygen."
+        },
+        {
+          "n": 5,
+          "display": "Empirical formula = C_{3}H_{8}O",
+          "tag": "write empirical formula",
+          "title": "Write empirical formula",
+          "narration": "Place those whole numbers as subscripts to write the empirical formula, C3H8O."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2015-006",
+      "questionId": "chem-jamb-2015-006",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m(hydrate) = 14.98 − 10.00 = 4.98 g",
+          "tag": "find hydrate mass",
+          "title": "Find hydrate mass",
+          "narration": "Subtract the empty crucible mass to get four point nine eight grams of hydrate."
+        },
+        {
+          "n": 2,
+          "display": "m(H_{2}O) = 14.98 − 13.54 = 1.44 g",
+          "tag": "find water lost",
+          "title": "Find water lost",
+          "narration": "Subtract the heated mass to find one point four four grams of water lost."
+        },
+        {
+          "n": 3,
+          "display": "n(hydrate) ≈ 0.020, n(H_{2}O) = 0.080",
+          "tag": "convert to moles",
+          "title": "Convert to moles",
+          "narration": "Divide by molar masses two hundred and forty-nine point five and eighteen."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{0.080}{0.020} = 4",
+          "tag": "find waters lost",
+          "title": "Find waters lost",
+          "narration": "Dividing gives four water molecules lost per formula unit."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m(hydrate) = 14.98 − 10.00 = 4.98 g",
+          "tag": "subtract crucible mass",
+          "title": "Subtract crucible mass",
+          "narration": "Subtract the ten-gram crucible first so we only count the mass of the copper two tetraoxosulfate six hydrate."
+        },
+        {
+          "n": 2,
+          "display": "m(H_{2}O) = 14.98 − 13.54 = 1.44 g",
+          "tag": "find mass lost",
+          "title": "Find mass lost",
+          "narration": "Subtract the final mass from the starting mass because heating drives off water vapour, so the mass drop equals water lost."
+        },
+        {
+          "n": 3,
+          "display": "M(CuSO_{4}·5H_{2}O) = 249.5 g/mol",
+          "tag": "find hydrate molar mass",
+          "title": "Find hydrate molar mass",
+          "narration": "Add copper sixty-three point five, sulfur thirty-two, four oxygens sixty-four, and five waters ninety to get two hundred and forty-nine point five."
+        },
+        {
+          "n": 4,
+          "display": "n(hydrate) = \\frac{4.98}{249.5} ≈ 0.020 mol",
+          "tag": "find hydrate moles",
+          "title": "Find hydrate moles",
+          "narration": "Divide four point nine eight grams by two hundred and forty-nine point five to get zero point zero two zero moles of hydrate."
+        },
+        {
+          "n": 5,
+          "display": "n(H_{2}O) = \\frac{1.44}{18} = 0.080 mol",
+          "tag": "find water moles",
+          "title": "Find water moles",
+          "narration": "Divide one point four four grams of water by eighteen grams per mole to get zero point zero eight zero moles of water."
+        },
+        {
+          "n": 6,
+          "display": "Waters lost = \\frac{0.080}{0.020} = 4",
+          "tag": "find ratio per unit",
+          "title": "Find ratio per unit",
+          "narration": "Divide zero point zero eight zero by zero point zero two zero to see that four water molecules were lost per formula unit."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2015-010",
+      "questionId": "chem-jamb-2015-010",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "A_{r} = \\frac{90 × 16 + 10 × 18}{100}",
+          "tag": "set up weighted mean",
+          "title": "Set up weighted mean",
+          "narration": "Weight each isotope mass by its percentage abundance."
+        },
+        {
+          "n": 2,
+          "display": "A_{r} = \\frac{1440 + 180}{100}",
+          "tag": "multiply and add",
+          "title": "Multiply and add",
+          "narration": "Ninety times sixteen is one thousand four hundred and forty, plus one hundred and eighty."
+        },
+        {
+          "n": 3,
+          "display": "A_{r} = 16.2",
+          "tag": "divide by 100",
+          "title": "Divide by 100",
+          "narration": "One thousand six hundred and twenty divided by one hundred gives sixteen point two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "90% mass 16, 10% mass 18",
+          "tag": "list isotope abundances",
+          "title": "List isotope abundances",
+          "narration": "Write down the two isotopes and their percentages. Because ninety percent is mass sixteen, the average sits much closer to sixteen than eighteen."
+        },
+        {
+          "n": 2,
+          "display": "A_{r} = (0.90 × 16) + (0.10 × 18)",
+          "tag": "weight by abundance",
+          "title": "Weight by abundance",
+          "narration": "Multiply each isotope mass by its fractional abundance so more common isotopes carry greater weight in the average."
+        },
+        {
+          "n": 3,
+          "display": "A_{r} = 14.4 + 1.8",
+          "tag": "evaluate each term",
+          "title": "Evaluate each term",
+          "narration": "Ninety percent of sixteen is fourteen point four, and ten percent of eighteen is one point eight."
+        },
+        {
+          "n": 4,
+          "display": "A_{r} = 16.2",
+          "tag": "add the contributions",
+          "title": "Add the contributions",
+          "narration": "Add fourteen point four and one point eight to get a relative atomic mass of sixteen point two."
         }
       ]
     }
