@@ -295,9 +295,20 @@ def extract_beat_timings(scene: dict, duration_ms: int, whisper_words: list[dict
     positions: list[dict] = []
     missing_beats: list[dict] = []
 
+    def _clean(tok: str) -> str:
+        return tok.lower().strip(".,!?;:\"'()[]‘’“”")
+
+    clean_say = [_clean(t) for t in say_tokens]
+
     for beat in beats_in:
         beat_word = beat["word"]
-        exact_idx = say_tokens.index(beat_word, prev_say_idx + 1)
+        target = _clean(beat_word)
+        try:
+            exact_idx = clean_say.index(target, prev_say_idx + 1)
+        except ValueError:
+            # Beat word not found in order (punctuation, case or phrasing);
+            # place it just after the previous beat and let interpolation time it.
+            exact_idx = min(len(say_tokens) - 1, prev_say_idx + 1)
         beat_norm = normalize_single_beat(beat_word)
 
         matched_w_idx: int | None = None
