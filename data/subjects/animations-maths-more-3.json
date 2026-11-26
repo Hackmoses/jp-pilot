@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 40,
+  "count": 50,
   "animations": [
     {
       "id": "anim-math-jamb-2010-018",
@@ -2660,6 +2660,631 @@
           "tag": "factor check",
           "title": "Check by factorising",
           "narration": "Double check by factorising x squared minus x minus twelve: it factors into x minus four times x plus three, confirming k equals twelve."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-013",
+      "questionId": "math-jamb-2013-013",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "p − 3 = 0 ⇒ p = 3",
+          "tag": "remainder theorem",
+          "title": "Find root of divisor",
+          "narration": "Set the divisor p minus three equal to zero to get p equals three."
+        },
+        {
+          "n": 2,
+          "display": "f(3) = 6(3)^{3} − 3^{2} − 47(3) + 30",
+          "tag": "substitute 3",
+          "title": "Substitute p equals 3",
+          "narration": "Substitute p equals three into the polynomial using the remainder theorem."
+        },
+        {
+          "n": 3,
+          "display": "= 162 − 9 − 141 + 30 = 42 (option D)",
+          "tag": "evaluate",
+          "title": "Calculate the remainder",
+          "narration": "Evaluate each term to get one hundred and sixty two minus nine minus one hundred and forty one plus thirty, which equals forty two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Divisor p − 3 ⇒ Remainder = f(3)",
+          "tag": "remainder theorem",
+          "title": "Apply the remainder theorem",
+          "narration": "By the remainder theorem, dividing f of p by p minus three leaves remainder f of three, saving us from long division."
+        },
+        {
+          "n": 2,
+          "display": "f(3) = 6(3)^{3} − 3^{2} − 47(3) + 30",
+          "tag": "substitute",
+          "title": "Substitute p equals 3",
+          "narration": "Put three in place of every p in the expression."
+        },
+        {
+          "n": 3,
+          "display": "3^{3} = 27 ⇒ 6 × 27 = 162",
+          "tag": "first term",
+          "title": "Evaluate the cube term",
+          "narration": "Three cubed is twenty seven, and six times twenty seven equals one hundred and sixty two."
+        },
+        {
+          "n": 4,
+          "display": "162 − 9 − 141 + 30",
+          "tag": "other terms",
+          "title": "Evaluate remaining terms",
+          "narration": "Three squared is nine, and forty seven times three is one hundred and forty one."
+        },
+        {
+          "n": 5,
+          "display": "153 − 141 + 30 = 12 + 30 = 42 (option D)",
+          "tag": "combine left to right",
+          "title": "Add and subtract left to right",
+          "narration": "One hundred and sixty two minus nine is one hundred and fifty three, minus one hundred and forty one leaves twelve, plus thirty gives forty two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-022",
+      "questionId": "math-jamb-2013-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "2P = 2\\matrix{5,3;2,1} = \\matrix{10,6;4,2}",
+          "tag": "scalar multiply",
+          "title": "Multiply P by 2",
+          "narration": "Double every entry of matrix P to get ten, six in the top row and four, two in the bottom row."
+        },
+        {
+          "n": 2,
+          "display": "2P + Q = \\matrix{10+4,6+2;4+3,2+5}",
+          "tag": "add entries",
+          "title": "Add corresponding entries",
+          "narration": "Add each entry of two P to the matching position in matrix Q."
+        },
+        {
+          "n": 3,
+          "display": "= \\matrix{14,8;7,7} (option D)",
+          "tag": "result matrix",
+          "title": "Simplify the matrix",
+          "narration": "Add the pairs to get fourteen, eight in the first row and seven, seven in the second row."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = \\matrix{5,3;2,1},  Q = \\matrix{4,2;3,5}",
+          "tag": "given matrices",
+          "title": "Write matrices P and Q",
+          "narration": "Both P and Q are two by two matrices, so we can multiply P by two and add Q entry by entry."
+        },
+        {
+          "n": 2,
+          "display": "2P = \\matrix{2×5,2×3;2×2,2×1} = \\matrix{10,6;4,2}",
+          "tag": "scale P by 2",
+          "title": "Multiply every entry of P by 2",
+          "narration": "Scalar multiplication multiplies every single entry inside matrix P by two."
+        },
+        {
+          "n": 3,
+          "display": "2P + Q = \\matrix{10+4,6+2;4+3,2+5}",
+          "tag": "add positionally",
+          "title": "Add matching positions",
+          "narration": "Add top-left to top-left, top-right to top-right, bottom-left to bottom-left, and bottom-right to bottom-right."
+        },
+        {
+          "n": 4,
+          "display": "2P + Q = \\matrix{14,8;7,7} (option D)",
+          "tag": "final matrix",
+          "title": "Write the resulting matrix",
+          "narration": "Ten plus four is fourteen, six plus two is eight, four plus three is seven, and two plus five is seven, giving rows fourteen, eight and seven, seven."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-031",
+      "questionId": "math-jamb-2013-031",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "M = \\left(\\frac{−2 + x}{2}, \\frac{1 + y}{2}\\right) = (2, 3)",
+          "tag": "midpoint formula",
+          "title": "Set up midpoint equation",
+          "narration": "Set the average of P and Q's coordinates equal to the midpoint two comma three."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{−2 + x}{2} = 2 ⇒ x = 6",
+          "tag": "find x",
+          "title": "Solve for x",
+          "narration": "Multiply both sides by two to get minus two plus x equals four, then add two to get x equals six."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1 + y}{2} = 3 ⇒ y = 5 ⇒ Q = (6, 5) (option D)",
+          "tag": "find y",
+          "title": "Solve for y and state Q",
+          "narration": "Multiply both sides by two to get one plus y equals six, then subtract one to get y equals five, so Q is six comma five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "M = \\left(\\frac{x_{1} + x_{2}}{2}, \\frac{y_{1} + y_{2}}{2}\\right)",
+          "tag": "midpoint formula",
+          "title": "State the midpoint formula",
+          "narration": "The midpoint averages the x coordinates and averages the y coordinates of the two endpoints P and Q."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{−2 + x}{2} = 2 ⇒ −2 + x = 4",
+          "tag": "multiply by 2",
+          "title": "Equate x-coordinates",
+          "narration": "Set minus two plus x over two equal to two, then multiply both sides by two to clear the fraction."
+        },
+        {
+          "n": 3,
+          "display": "x = 4 + 2 = 6",
+          "tag": "add 2",
+          "title": "Add 2 to both sides",
+          "narration": "Add two to both sides so x equals six."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1 + y}{2} = 3 ⇒ 1 + y = 6 ⇒ y = 5",
+          "tag": "solve for y",
+          "title": "Equate y-coordinates",
+          "narration": "Set one plus y over two equal to three, multiply both sides by two to get six, and subtract one from both sides to get y equals five."
+        },
+        {
+          "n": 5,
+          "display": "Check: \\left(\\frac{−2+6}{2}, \\frac{1+5}{2}\\right) = (2, 3) ⇒ Q(6, 5) (option D)",
+          "tag": "verify midpoint",
+          "title": "Check midpoint and state Q",
+          "narration": "Check the midpoint of minus two comma one and six comma five: four over two is two, and six over two is three. So Q is six comma five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-036",
+      "questionId": "math-jamb-2013-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "u = x,  v = sin x",
+          "tag": "identify u and v",
+          "title": "Split into two factors",
+          "narration": "Let u equal x and v equal sine x so we can apply the product rule."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{du}{dx} = 1,  \\frac{dv}{dx} = cos x",
+          "tag": "differentiate parts",
+          "title": "Differentiate u and v",
+          "narration": "The derivative of x is one, and the derivative of sine x is cosine x."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{dy}{dx} = 1(sin x) + x(cos x) = sin x + x cos x (option B)",
+          "tag": "product rule",
+          "title": "Apply the product rule",
+          "narration": "Combine v d u d x plus u d v d x to get sine x plus x cosine x."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "y = u × v ⇒ \\frac{dy}{dx} = v\\frac{du}{dx} + u\\frac{dv}{dx}",
+          "tag": "product rule",
+          "title": "State the product rule",
+          "narration": "Because x and sine x are multiplied together, we cannot just differentiate them separately and multiply; we must use the product rule."
+        },
+        {
+          "n": 2,
+          "display": "u = x ⇒ \\frac{du}{dx} = 1",
+          "tag": "first factor",
+          "title": "Differentiate u equals x",
+          "narration": "Set u equals x, whose derivative with respect to x is one."
+        },
+        {
+          "n": 3,
+          "display": "v = sin x ⇒ \\frac{dv}{dx} = cos x",
+          "tag": "second factor",
+          "title": "Differentiate v equals sin x",
+          "narration": "Set v equals sine x, whose derivative with respect to x is cosine x."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{dy}{dx} = (sin x)(1) + (x)(cos x) = sin x + x cos x (option B)",
+          "tag": "combine terms",
+          "title": "Substitute into product rule",
+          "narration": "Put the four pieces into the product rule formula to get sine x plus x cosine x."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-038",
+      "questionId": "math-jamb-2013-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{1 + x}{x^{3}} = \\frac{1}{x^{3}} + \\frac{x}{x^{3}} = x^{-3} + x^{-2}",
+          "tag": "split fraction",
+          "title": "Split into negative powers",
+          "narration": "Split the fraction over x cubed and rewrite as x to the minus three plus x to the minus two."
+        },
+        {
+          "n": 2,
+          "display": "∫(x^{-3} + x^{-2}) dx = \\frac{x^{-2}}{−2} + \\frac{x^{-1}}{−1} + k",
+          "tag": "power rule",
+          "title": "Integrate each power",
+          "narration": "Add one to each exponent and divide by the new exponent, plus constant k."
+        },
+        {
+          "n": 3,
+          "display": "= −\\frac{1}{2x^{2}} − \\frac{1}{x} + k (option B)",
+          "tag": "positive powers",
+          "title": "Write with positive powers",
+          "narration": "Move the negative powers back to the denominator to get minus one over two x squared minus one over x plus k."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{1 + x}{x^{3}} = \\frac{1}{x^{3}} + \\frac{x}{x^{3}}",
+          "tag": "split numerator",
+          "title": "Divide each term by x³",
+          "narration": "Break the single fraction into two simpler terms by dividing both one and x by x cubed."
+        },
+        {
+          "n": 2,
+          "display": "= x^{-3} + x^{-2}",
+          "tag": "index notation",
+          "title": "Rewrite as negative powers",
+          "narration": "Cancel one x in the second term to get one over x squared, then write both terms with negative exponents so the power rule works."
+        },
+        {
+          "n": 3,
+          "display": "∫ x^{n} dx = \\frac{x^{n + 1}}{n + 1} + k",
+          "tag": "integration rule",
+          "title": "Apply integration power rule",
+          "narration": "Increase each exponent by one and divide by that new exponent."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{x^{-2}}{−2} + \\frac{x^{-1}}{−1} + k",
+          "tag": "evaluate exponents",
+          "title": "Add 1 to −3 and −2",
+          "narration": "Minus three plus one gives minus two, and minus two plus one gives minus one."
+        },
+        {
+          "n": 5,
+          "display": "−\\frac{1}{2x^{2}} − \\frac{1}{x} + k (option B)",
+          "tag": "check and tidy",
+          "title": "Tidy fractions and check",
+          "narration": "Move x to the minus two and x to the minus one down into the denominators. Differentiating back gives x to the minus three plus x to the minus two, confirming minus one over two x squared minus one over x plus k."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-043",
+      "questionId": "math-jamb-2013-043",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Total = 7 × 10 = 70",
+          "tag": "find total sum",
+          "title": "Multiply count by mean",
+          "narration": "Seven numbers with a mean of ten must add up to seventy."
+        },
+        {
+          "n": 2,
+          "display": "2 + 4 + 8 + 14 + 16 + 18 = 62",
+          "tag": "sum six numbers",
+          "title": "Add the six known numbers",
+          "narration": "Add the six given numbers to get sixty two."
+        },
+        {
+          "n": 3,
+          "display": "7th = 70 − 62 = 8 ⇒ Mode = 8 (option D)",
+          "tag": "missing and mode",
+          "title": "Find 7th number and mode",
+          "narration": "Subtract sixty two from seventy to find the seventh number is eight, making eight appear twice as the mode."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Mean = \\frac{Sum}{n} ⇒ Sum = Mean × n",
+          "tag": "mean formula",
+          "title": "Relate mean to total sum",
+          "narration": "To find the missing seventh number, multiply the mean by seven to get the required total of all seven numbers."
+        },
+        {
+          "n": 2,
+          "display": "Sum = 10 × 7 = 70",
+          "tag": "total sum",
+          "title": "Find total of 7 numbers",
+          "narration": "Ten times seven equals seventy."
+        },
+        {
+          "n": 3,
+          "display": "2 + 4 + 8 + 14 + 16 + 18 = 62",
+          "tag": "sum known six",
+          "title": "Add the six given values",
+          "narration": "Pair numbers that make tens: two plus eighteen is twenty, four plus sixteen is twenty, and eight plus fourteen is twenty two, giving sixty two."
+        },
+        {
+          "n": 4,
+          "display": "Missing number = 70 − 62 = 8",
+          "tag": "subtract",
+          "title": "Find the seventh number",
+          "narration": "Subtract sixty two from seventy to see that the missing seventh number is eight."
+        },
+        {
+          "n": 5,
+          "display": "2, 4, 8, 8, 14, 16, 18 ⇒ Mode = 8 (option D)",
+          "tag": "find mode",
+          "title": "Identify the most frequent value",
+          "narration": "Now the full list has eight appearing twice while every other number appears once, so the mode is eight."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-045",
+      "questionId": "math-jamb-2013-045",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Variance = σ^{2} = 4",
+          "tag": "given variance",
+          "title": "Read the given variance",
+          "narration": "The variance is four; the mean of five is not needed to convert variance to standard deviation."
+        },
+        {
+          "n": 2,
+          "display": "σ = \\sqrt{Variance}",
+          "tag": "SD formula",
+          "title": "State SD from variance",
+          "narration": "Standard deviation is always the positive square root of the variance."
+        },
+        {
+          "n": 3,
+          "display": "σ = \\sqrt{4} = 2 (option D)",
+          "tag": "take square root",
+          "title": "Take the square root",
+          "narration": "The positive square root of four is two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Variance = σ^{2} = 4,  Mean = 5 (extra)",
+          "tag": "identify what matters",
+          "title": "Spot the needed value",
+          "narration": "Variance already measures squared spread from the mean, so we do not need the mean of five to get the standard deviation."
+        },
+        {
+          "n": 2,
+          "display": "σ = \\sqrt{Variance}",
+          "tag": "relationship",
+          "title": "Relate SD and variance",
+          "narration": "By definition, variance is the square of the standard deviation, so taking the positive square root reverses the squaring."
+        },
+        {
+          "n": 3,
+          "display": "σ = \\sqrt{4}",
+          "tag": "substitute 4",
+          "title": "Substitute variance equals 4",
+          "narration": "Put four inside the square root."
+        },
+        {
+          "n": 4,
+          "display": "σ = 2 (option D)",
+          "tag": "answer",
+          "title": "Evaluate the root",
+          "narration": "Since standard deviation cannot be negative, the answer is positive two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-046",
+      "questionId": "math-jamb-2013-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Range = max score − min score",
+          "tag": "range formula",
+          "title": "State range of scores",
+          "narration": "Range uses the highest and lowest scores that actually occurred, not the frequencies."
+        },
+        {
+          "n": 2,
+          "display": "max = 10 (f = 1),  min = 3 (f = 1)",
+          "tag": "observed extremes",
+          "title": "Read highest and lowest scores",
+          "narration": "Both score three and score ten have non-zero frequency one, so they are the minimum and maximum scores."
+        },
+        {
+          "n": 3,
+          "display": "Range = 10 − 3 = 7 (option C)",
+          "tag": "subtract",
+          "title": "Subtract min from max",
+          "narration": "Subtract three from ten to get a range of seven."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Range = Highest score − Lowest score",
+          "tag": "use scores",
+          "title": "Use scores, not frequencies",
+          "narration": "In a frequency table, always find the range from the data scores themselves, never from the frequency counts."
+        },
+        {
+          "n": 2,
+          "display": "Scores with f > 0: 3, 5, 6, 7, 8, 9, 10",
+          "tag": "check frequencies",
+          "title": "Check which scores occurred",
+          "narration": "Check each score's frequency: score four has frequency zero so nobody scored four, while both three and ten occurred once."
+        },
+        {
+          "n": 3,
+          "display": "max = 10,  min = 3",
+          "tag": "extremes",
+          "title": "Pick highest and lowest scores",
+          "narration": "The highest observed score is ten and the lowest observed score is three."
+        },
+        {
+          "n": 4,
+          "display": "Range = 10 − 3 = 7 (option C)",
+          "tag": "subtract",
+          "title": "Calculate the range",
+          "narration": "Subtract three from ten to get seven."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-047",
+      "questionId": "math-jamb-2013-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "C(n, r) = \\frac{n!}{r!(n − r)!}",
+          "tag": "combination formula",
+          "title": "State combination formula",
+          "narration": "Order does not matter when choosing subjects, so use the combination formula."
+        },
+        {
+          "n": 2,
+          "display": "n = 5,  r = 2",
+          "tag": "identify n and r",
+          "title": "Identify n equals 5, r equals 2",
+          "narration": "We are choosing r equals two subjects out of n equals five."
+        },
+        {
+          "n": 3,
+          "display": "C(5, 2) = \\frac{5!}{2!(5 − 2)!} = \\frac{5!}{2!3!} (option A)",
+          "tag": "substitute",
+          "title": "Substitute into the formula",
+          "narration": "Substitute five and two to get five factorial over two factorial times three factorial."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Order does not matter ⇒ Combination",
+          "tag": "choose rule",
+          "title": "Recognise a combination",
+          "narration": "Picking Maths and Physics is the same pair of subjects as picking Physics and Maths. When order does not matter, we use combinations instead of permutations."
+        },
+        {
+          "n": 2,
+          "display": "C(n, r) = \\frac{n!}{r!(n − r)!}",
+          "tag": "combination formula",
+          "title": "Write the combination formula",
+          "narration": "The number of ways to choose r items from n items is n factorial divided by r factorial times n minus r factorial."
+        },
+        {
+          "n": 3,
+          "display": "C(5, 2) = \\frac{5!}{2!(5 − 2)!}",
+          "tag": "substitute",
+          "title": "Put n equals 5 and r equals 2",
+          "narration": "Substitute five for n and two for r into the formula."
+        },
+        {
+          "n": 4,
+          "display": "C(5, 2) = \\frac{5!}{2!3!} (option A)",
+          "tag": "simplify bracket",
+          "title": "Simplify 5 minus 2",
+          "narration": "Five minus two is three, leaving the factorial form five factorial over two factorial three factorial."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-004",
+      "questionId": "math-jamb-2014-004",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "0.00043 = 4.3 × 10^{-4},  2000 = 2 × 10^{3}",
+          "tag": "standard form",
+          "title": "Write each in standard form",
+          "narration": "Write zero point zero zero zero four three as four point three times ten to the minus four, and two thousand as two times ten cubed."
+        },
+        {
+          "n": 2,
+          "display": "(4.3 × 2) × 10^{-4 + 3}",
+          "tag": "group and add powers",
+          "title": "Multiply numbers and add powers",
+          "narration": "Multiply four point three by two and add the exponents minus four and three."
+        },
+        {
+          "n": 3,
+          "display": "= 8.6 × 10^{-1} (option D)",
+          "tag": "result",
+          "title": "Write final standard form",
+          "narration": "Four point three times two is eight point six, and minus four plus three is minus one, giving eight point six times ten to the minus one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Standard form: A × 10^{n},  1 ≤ A < 10",
+          "tag": "standard form rule",
+          "title": "Recall standard form rules",
+          "narration": "Standard form writes a number as A times a power of ten, where A is at least one and less than ten."
+        },
+        {
+          "n": 2,
+          "display": "0.00043 = 4.3 × 10^{-4}",
+          "tag": "convert first",
+          "title": "Convert 0.00043",
+          "narration": "Move the decimal point four places right to sit after the four, so the power of ten is minus four."
+        },
+        {
+          "n": 3,
+          "display": "2000 = 2 × 10^{3}",
+          "tag": "convert second",
+          "title": "Convert 2000",
+          "narration": "Move the decimal point three places left to sit after the two, giving two times ten cubed."
+        },
+        {
+          "n": 4,
+          "display": "(4.3 × 2) × 10^{-4 + 3} = 8.6 × 10^{-1}",
+          "tag": "multiply and add",
+          "title": "Multiply and add exponents",
+          "narration": "Multiply four point three by two to get eight point six, and use the index law for multiplication by adding minus four and three to get minus one."
+        },
+        {
+          "n": 5,
+          "display": "Check: 0.00043 × 2000 = 0.86 = 8.6 × 10^{-1} (option D)",
+          "tag": "verify decimal",
+          "title": "Check by direct decimal",
+          "narration": "Check directly: zero point zero zero zero four three times two thousand moves the decimal three places right to zero point eight six, which is eight point six times ten to the minus one."
         }
       ]
     }
