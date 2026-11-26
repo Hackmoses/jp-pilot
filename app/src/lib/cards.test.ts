@@ -150,3 +150,16 @@ it('feeds question answers and two-mode spelling progression into Leitner boxes 
   expect(spellingMode(afterWrong)).toBe('choice')
   expect(seededOrder(['a', 'b', 'c', 'd'], 'seed-1').sort()).toEqual(['a', 'b', 'c', 'd'])
 })
+
+it('shows each past question on only one card', () => {
+  for (const [name, deck] of Object.entries(decks)) {
+    const stems = deck.cards.flatMap((card) => card.question ? [card.question.stem.trim().toLowerCase()] : [])
+    expect(new Set(stems).size, name).toBe(stems.length)
+  }
+})
+
+it('never puts the same past question twice in one session', () => {
+  const question = { stem: 'Same gap ______ here', options: ['a', 'b', 'c', 'd'], answer: 'A', year: 2010, number: 1 }
+  const cards = [{ id: 'a', question }, { id: 'b', question }, { id: 'c' }]
+  expect(selectCards(cards, {}, 0).map(({ id }) => id)).toEqual(['a', 'c'])
+})

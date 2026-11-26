@@ -58,11 +58,19 @@ export function letterBank(target: string, misspellings: readonly string[], seed
   return seededOrder([...needed, ...distractors], seed)
 }
 
-export function selectCards<Card extends { id: string; check?: boolean }>(cards: readonly Card[], reviews: Reviews, now: number): Card[] {
+export function selectCards<Card extends { id: string; check?: boolean; question?: { stem: string } }>(cards: readonly Card[], reviews: Reviews, now: number): Card[] {
   const available = cards.filter(({ check }) => check !== true)
   const due = available.filter(({ id }) => reviews[id]?.due <= now)
     .sort((a, b) => reviews[a.id].due - reviews[b.id].due)
-  return due.concat(available.filter(({ id }) => !reviews[id])).slice(0, 20)
+  // One past question per session, even if two cards carry the same stem.
+  const seen = new Set<string>()
+  return due.concat(available.filter(({ id }) => !reviews[id])).filter(({ question }) => {
+    const stem = question?.stem.trim().toLowerCase()
+    if (!stem) return true
+    if (seen.has(stem)) return false
+    seen.add(stem)
+    return true
+  }).slice(0, 20)
 }
 
 const currentReviews = new Map<string, Reviews>()
