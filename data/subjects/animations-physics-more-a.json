@@ -1,0 +1,638 @@
+{
+  "version": 1,
+  "count": 10,
+  "animations": [
+    {
+      "id": "anim-phys-jamb-2012-022",
+      "questionId": "phys-jamb-2012-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Q = mcΔT",
+          "tag": "relate heat to temperature rise",
+          "title": "Relate heat to temperature rise",
+          "narration": "A larger mass or a larger specific heat needs more energy for the same rise in temperature."
+        },
+        {
+          "n": 2,
+          "display": "100 g = 0.100 kg, mc = 0.100 × 4200 = 420",
+          "tag": "convert the mass",
+          "title": "Convert the mass",
+          "narration": "Convert grams to kilograms because the given specific heat is measured per kilogram."
+        },
+        {
+          "n": 3,
+          "display": "ΔT = \\frac{500}{420} ≈ 1.2°C",
+          "tag": "find the temperature rise",
+          "title": "Find the temperature rise",
+          "narration": "Divide the heat supplied by the heat needed for a rise of one degree. A change of one kelvin equals a change of one Celsius degree. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Q = 500 J, m = 100 g",
+          "tag": "read the heat and mass",
+          "title": "Read the heat and mass",
+          "narration": "The water gains five hundred joules. Its mass and specific heat tell us how much its temperature rises."
+        },
+        {
+          "n": 2,
+          "display": "Q = mcΔT",
+          "tag": "relate heat to temperature rise",
+          "title": "Relate heat to temperature rise",
+          "narration": "A larger mass or a larger specific heat needs more energy for the same rise in temperature."
+        },
+        {
+          "n": 3,
+          "display": "100 g = 0.100 kg, mc = 0.100 × 4200 = 420",
+          "tag": "convert the mass",
+          "title": "Convert the mass",
+          "narration": "Convert grams to kilograms because the given specific heat is measured per kilogram."
+        },
+        {
+          "n": 4,
+          "display": "ΔT = \\frac{500}{420} ≈ 1.2°C",
+          "tag": "find the temperature rise",
+          "title": "Find the temperature rise",
+          "narration": "Divide the heat supplied by the heat needed for a rise of one degree. A change of one kelvin equals a change of one Celsius degree. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-031",
+      "questionId": "phys-jamb-2012-031",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{h_{o}}{d_{o}} = \\frac{h_{i}}{d_{i}}",
+          "tag": "use similar triangles",
+          "title": "Use similar triangles",
+          "narration": "The straight ray through the pinhole makes the same angle on both sides, so height divided by distance is the same for both triangles."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{h_{i}}{d_{i}} = \\frac{2.5}{5} = \\frac{1}{2}",
+          "tag": "compare the image measurements",
+          "title": "Compare the image measurements",
+          "narration": "The image height and distance are both in centimetres, so their units cancel. This gives the scale of the triangle."
+        },
+        {
+          "n": 3,
+          "display": "h_{o} = 300 × \\frac{1}{2} = 150 m",
+          "tag": "find the building's height",
+          "title": "Find the building's height",
+          "narration": "The building's height is half its distance from the pinhole. That gives one hundred and fifty metres. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "d_{o} = 300 m, d_{i} = 5 cm, h_{i} = 2.5 cm",
+          "tag": "locate the object and image",
+          "title": "Locate the object and image",
+          "narration": "The building and its image lie on opposite sides of the pinhole. We need the building's height."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{h_{o}}{d_{o}} = \\frac{h_{i}}{d_{i}}",
+          "tag": "use similar triangles",
+          "title": "Use similar triangles",
+          "narration": "The straight ray through the pinhole makes the same angle on both sides, so height divided by distance is the same for both triangles."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{h_{i}}{d_{i}} = \\frac{2.5}{5} = \\frac{1}{2}",
+          "tag": "compare the image measurements",
+          "title": "Compare the image measurements",
+          "narration": "The image height and distance are both in centimetres, so their units cancel. This gives the scale of the triangle."
+        },
+        {
+          "n": 4,
+          "display": "h_{o} = 300 × \\frac{1}{2} = 150 m",
+          "tag": "find the building's height",
+          "title": "Find the building's height",
+          "narration": "The building's height is half its distance from the pinhole. That gives one hundred and fifty metres. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-032",
+      "questionId": "phys-jamb-2012-032",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "h_{i} = h_{o} = 2 cm",
+          "tag": "find the image height",
+          "title": "Find the image height",
+          "narration": "A plane mirror gives an upright image the same size as the object, so the image height is also two centimetres."
+        },
+        {
+          "n": 2,
+          "display": "m = \\frac{h_{i}}{h_{o}}",
+          "tag": "write the size ratio",
+          "title": "Write the size ratio",
+          "narration": "Linear magnification compares image height with object height. The units cancel because both heights are measured in centimetres."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{2}{2} = 1.0",
+          "tag": "calculate magnification",
+          "title": "Calculate magnification",
+          "narration": "The two heights are equal, so the magnification is one point zero. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "h_{o} = 2 cm, d_{o} = 10 cm",
+          "tag": "read the mirror setup",
+          "title": "Read the mirror setup",
+          "narration": "The object is two centimetres tall. Its ten-centimetre distance tells us where the image forms but does not change its size in a plane mirror."
+        },
+        {
+          "n": 2,
+          "display": "h_{i} = h_{o} = 2 cm",
+          "tag": "find the image height",
+          "title": "Find the image height",
+          "narration": "A plane mirror gives an upright image the same size as the object, so the image height is also two centimetres."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{h_{i}}{h_{o}}",
+          "tag": "write the size ratio",
+          "title": "Write the size ratio",
+          "narration": "Linear magnification compares image height with object height. The units cancel because both heights are measured in centimetres."
+        },
+        {
+          "n": 4,
+          "display": "m = \\frac{2}{2} = 1.0",
+          "tag": "calculate magnification",
+          "title": "Calculate magnification",
+          "narration": "The two heights are equal, so the magnification is one point zero. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-044",
+      "questionId": "phys-jamb-2012-044",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ε = Bℓv sin θ",
+          "tag": "use the perpendicular speed",
+          "title": "Use the perpendicular speed",
+          "narration": "Only motion across the field lines produces the voltage. The sine gives the component of velocity across the field."
+        },
+        {
+          "n": 2,
+          "display": "v sin 30° = 50 × 0.5 = 25 m/s",
+          "tag": "evaluate the sine",
+          "title": "Evaluate the sine",
+          "narration": "At thirty degrees the perpendicular component is half the given speed."
+        },
+        {
+          "n": 3,
+          "display": "ε = 1.5 × 1 × 25 = 37.5 V",
+          "tag": "find the induced voltage",
+          "title": "Find the induced voltage",
+          "narration": "Multiply field strength, length and perpendicular speed to get thirty-seven point five volts. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "ℓ = 1 m, v = 50 m/s, B = 1.5 T, θ = 30°",
+          "tag": "identify the motion and field",
+          "title": "Identify the motion and field",
+          "narration": "The conductor moves at thirty degrees to the magnetic field. Its length is along the magnetic force direction, so we can use the full length."
+        },
+        {
+          "n": 2,
+          "display": "ε = Bℓv sin θ",
+          "tag": "use the perpendicular speed",
+          "title": "Use the perpendicular speed",
+          "narration": "Only motion across the field lines produces the voltage. The sine gives the component of velocity across the field."
+        },
+        {
+          "n": 3,
+          "display": "v sin 30° = 50 × 0.5 = 25 m/s",
+          "tag": "evaluate the sine",
+          "title": "Evaluate the sine",
+          "narration": "At thirty degrees the perpendicular component is half the given speed."
+        },
+        {
+          "n": 4,
+          "display": "ε = 1.5 × 1 × 25 = 37.5 V",
+          "tag": "find the induced voltage",
+          "title": "Find the induced voltage",
+          "narration": "Multiply field strength, length and perpendicular speed to get thirty-seven point five volts. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-047",
+      "questionId": "phys-jamb-2012-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "N = N_{0} × (\\frac{1}{2})^{n}",
+          "tag": "set up repeated halving",
+          "title": "Set up repeated halving",
+          "narration": "Raise one half to the number of half-lives because each interval halves whatever remains at that time."
+        },
+        {
+          "n": 2,
+          "display": "1000 → 500 → 250 → 125",
+          "tag": "count the halvings",
+          "title": "Count the halvings",
+          "narration": "It takes three halvings to reach one hundred and twenty-five atoms."
+        },
+        {
+          "n": 3,
+          "display": "t = 3 × 20 = 60 s",
+          "tag": "find the elapsed time",
+          "title": "Find the elapsed time",
+          "narration": "Each of the three intervals lasts twenty seconds, so sixty seconds have passed. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "N_{0} = 1000, N = 125, t_{half} = 20 s",
+          "tag": "read the count and half-life",
+          "title": "Read the count and half-life",
+          "narration": "The numbers count atoms still undecayed. Each twenty-second half-life halves that remaining count."
+        },
+        {
+          "n": 2,
+          "display": "N = N_{0} × (\\frac{1}{2})^{n}",
+          "tag": "set up repeated halving",
+          "title": "Set up repeated halving",
+          "narration": "Raise one half to the number of half-lives because each interval halves whatever remains at that time."
+        },
+        {
+          "n": 3,
+          "display": "1000 → 500 → 250 → 125",
+          "tag": "count the halvings",
+          "title": "Count the halvings",
+          "narration": "It takes three halvings to reach one hundred and twenty-five atoms."
+        },
+        {
+          "n": 4,
+          "display": "t = 3 × 20 = 60 s",
+          "tag": "find the elapsed time",
+          "title": "Find the elapsed time",
+          "narration": "Each of the three intervals lasts twenty seconds, so sixty seconds have passed. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-005",
+      "questionId": "phys-jamb-2013-005",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T = 2π\\sqrt{\\frac{L}{g}}",
+          "tag": "connect period and length",
+          "title": "Connect period and length",
+          "narration": "The period grows with the square root of length. We can compare periods without knowing the numerical value of gravity."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{T_{2}}{T_{1}} = \\sqrt{\\frac{L_{2}}{L_{1}}}",
+          "tag": "take the period ratio",
+          "title": "Take the period ratio",
+          "narration": "The common factor involving gravity and two pi cancels when we divide the periods."
+        },
+        {
+          "n": 3,
+          "display": "\\sqrt{\\frac{0.8}{0.4}} = \\sqrt{2}",
+          "tag": "find the scale factor",
+          "title": "Find the scale factor",
+          "narration": "The new length is double, so the new period is the old period times the square root of two."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = 2\\sqrt{2} s",
+          "tag": "find the new period",
+          "title": "Find the new period",
+          "narration": "Multiply the original two seconds by the square root of two. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L_{1} = 0.4 m, T_{1} = 2 s, L_{2} = 0.8 m",
+          "tag": "compare the two pendulums",
+          "title": "Compare the two pendulums",
+          "narration": "Both pendulums swing through small angles at the same place, so they experience the same gravitational acceleration."
+        },
+        {
+          "n": 2,
+          "display": "T = 2π\\sqrt{\\frac{L}{g}}",
+          "tag": "connect period and length",
+          "title": "Connect period and length",
+          "narration": "The period grows with the square root of length. We can compare periods without knowing the numerical value of gravity."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{T_{2}}{T_{1}} = \\sqrt{\\frac{L_{2}}{L_{1}}}",
+          "tag": "take the period ratio",
+          "title": "Take the period ratio",
+          "narration": "The common factor involving gravity and two pi cancels when we divide the periods."
+        },
+        {
+          "n": 4,
+          "display": "\\sqrt{\\frac{0.8}{0.4}} = \\sqrt{2}",
+          "tag": "find the scale factor",
+          "title": "Find the scale factor",
+          "narration": "The new length is double, so the new period is the old period times the square root of two."
+        },
+        {
+          "n": 5,
+          "display": "T_{2} = 2\\sqrt{2} s",
+          "tag": "find the new period",
+          "title": "Find the new period",
+          "narration": "Multiply the original two seconds by the square root of two. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-006",
+      "questionId": "phys-jamb-2013-006",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v = u + at",
+          "tag": "use constant acceleration",
+          "title": "Use constant acceleration",
+          "narration": "Uniform deceleration means the velocity changes by the same amount every second."
+        },
+        {
+          "n": 2,
+          "display": "0 = 20 − 2t",
+          "tag": "substitute the speeds",
+          "title": "Substitute the speeds",
+          "narration": "The train loses two metres per second of speed each second until its speed reaches zero."
+        },
+        {
+          "n": 3,
+          "display": "t = \\frac{20}{2} = 10 s",
+          "tag": "find the stopping time",
+          "title": "Find the stopping time",
+          "narration": "Divide the total speed lost by the amount lost each second. The train takes ten seconds. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "u = 20 m/s, v = 0, a = −2 m/s^{2}",
+          "tag": "read the speed change",
+          "title": "Read the speed change",
+          "narration": "Take the train's direction as positive. The train is slowing down, so its acceleration is negative and its final speed is zero."
+        },
+        {
+          "n": 2,
+          "display": "v = u + at",
+          "tag": "use constant acceleration",
+          "title": "Use constant acceleration",
+          "narration": "Uniform deceleration means the velocity changes by the same amount every second."
+        },
+        {
+          "n": 3,
+          "display": "0 = 20 − 2t",
+          "tag": "substitute the speeds",
+          "title": "Substitute the speeds",
+          "narration": "The train loses two metres per second of speed each second until its speed reaches zero."
+        },
+        {
+          "n": 4,
+          "display": "t = \\frac{20}{2} = 10 s",
+          "tag": "find the stopping time",
+          "title": "Find the stopping time",
+          "narration": "Divide the total speed lost by the amount lost each second. The train takes ten seconds. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-009",
+      "questionId": "phys-jamb-2013-009",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "mgh = \\frac{1}{2}mv^{2}",
+          "tag": "equate the energies",
+          "title": "Equate the energies",
+          "narration": "The two expressions describe stored energy from height and energy from motion, respectively."
+        },
+        {
+          "n": 2,
+          "display": "h = \\frac{v^{2}}{2g}",
+          "tag": "cancel the common mass",
+          "title": "Cancel the common mass",
+          "narration": "Both energies are proportional to the same mass, so we can divide it out before solving for height."
+        },
+        {
+          "n": 3,
+          "display": "h = \\frac{5^{2}}{2 × 10} = 1.25 m",
+          "tag": "use the given speed and gravity",
+          "title": "Use the given speed and gravity",
+          "narration": "Square the speed before dividing by twice the acceleration due to gravity."
+        },
+        {
+          "n": 4,
+          "display": "h ≈ 1.3 m",
+          "tag": "match the offered precision",
+          "title": "Match the offered precision",
+          "narration": "One point two five metres rounds to one point three metres to the nearest tenth. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "v = 5 m/s, g = 10 m/s^{2}",
+          "tag": "identify what is equal",
+          "title": "Identify what is equal",
+          "narration": "The masses are equal. We are looking for the height at which gravitational potential energy matches the moving object's kinetic energy."
+        },
+        {
+          "n": 2,
+          "display": "mgh = \\frac{1}{2}mv^{2}",
+          "tag": "equate the energies",
+          "title": "Equate the energies",
+          "narration": "The two expressions describe stored energy from height and energy from motion, respectively."
+        },
+        {
+          "n": 3,
+          "display": "h = \\frac{v^{2}}{2g}",
+          "tag": "cancel the common mass",
+          "title": "Cancel the common mass",
+          "narration": "Both energies are proportional to the same mass, so we can divide it out before solving for height."
+        },
+        {
+          "n": 4,
+          "display": "h = \\frac{5^{2}}{2 × 10} = 1.25 m",
+          "tag": "use the given speed and gravity",
+          "title": "Use the given speed and gravity",
+          "narration": "Square the speed before dividing by twice the acceleration due to gravity."
+        },
+        {
+          "n": 5,
+          "display": "h ≈ 1.3 m",
+          "tag": "match the offered precision",
+          "title": "Match the offered precision",
+          "narration": "One point two five metres rounds to one point three metres to the nearest tenth. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-012",
+      "questionId": "phys-jamb-2013-012",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "VR = \\frac{effort arm}{load arm} = 2",
+          "tag": "find the velocity ratio",
+          "title": "Find the velocity ratio",
+          "narration": "Both ends turn through the same angle, so the longer arm moves twice as far as the shorter arm."
+        },
+        {
+          "n": 2,
+          "display": "MA = η × VR = 0.90 × 2 = 1.8",
+          "tag": "find mechanical advantage",
+          "title": "Find mechanical advantage",
+          "narration": "Mechanical advantage is the actual force gain. Efficiency makes it smaller than the ideal velocity ratio."
+        },
+        {
+          "n": 3,
+          "display": "MA = \\frac{L}{E}",
+          "tag": "relate load and effort",
+          "title": "Relate load and effort",
+          "narration": "Mechanical advantage compares the load lifted with the effort applied, so the effort is the load divided by that gain."
+        },
+        {
+          "n": 4,
+          "display": "E = \\frac{180}{1.8} = 100 N",
+          "tag": "calculate the effort",
+          "title": "Calculate the effort",
+          "narration": "Divide one hundred and eighty newtons by one point eight to get one hundred newtons. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L = 180 N, η = 90% = 0.90",
+          "tag": "read the lever data",
+          "title": "Read the lever data",
+          "narration": "The lever lifts one hundred and eighty newtons. Its efficiency is nine tenths as a fraction."
+        },
+        {
+          "n": 2,
+          "display": "VR = \\frac{effort arm}{load arm} = 2",
+          "tag": "find the velocity ratio",
+          "title": "Find the velocity ratio",
+          "narration": "Both ends turn through the same angle, so the longer arm moves twice as far as the shorter arm."
+        },
+        {
+          "n": 3,
+          "display": "MA = η × VR = 0.90 × 2 = 1.8",
+          "tag": "find mechanical advantage",
+          "title": "Find mechanical advantage",
+          "narration": "Mechanical advantage is the actual force gain. Efficiency makes it smaller than the ideal velocity ratio."
+        },
+        {
+          "n": 4,
+          "display": "MA = \\frac{L}{E}",
+          "tag": "relate load and effort",
+          "title": "Relate load and effort",
+          "narration": "Mechanical advantage compares the load lifted with the effort applied, so the effort is the load divided by that gain."
+        },
+        {
+          "n": 5,
+          "display": "E = \\frac{180}{1.8} = 100 N",
+          "tag": "calculate the effort",
+          "title": "Calculate the effort",
+          "narration": "Divide one hundred and eighty newtons by one point eight to get one hundred newtons. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-016",
+      "questionId": "phys-jamb-2013-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{x}{400} = \\frac{20}{100}",
+          "tag": "set up the proportion",
+          "title": "Set up the proportion",
+          "narration": "The fraction of the length above the ice mark equals the fraction of the temperature range above zero degrees."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{20}{100} = \\frac{1}{5}",
+          "tag": "simplify the fraction",
+          "title": "Simplify the fraction",
+          "narration": "Twenty degrees is one fifth of the full Celsius range between these two marks."
+        },
+        {
+          "n": 3,
+          "display": "x = 400 × \\frac{1}{5} = 80 mm",
+          "tag": "find the distance",
+          "title": "Find the distance",
+          "narration": "One fifth of four hundred millimetres is eighty millimetres above the ice mark. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "0°C to 100°C spans 400 mm",
+          "tag": "read the fixed points",
+          "title": "Read the fixed points",
+          "narration": "The ice and steam marks set the full scale. On a linear thermometer, equal temperature rises take equal lengths."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{x}{400} = \\frac{20}{100}",
+          "tag": "set up the proportion",
+          "title": "Set up the proportion",
+          "narration": "The fraction of the length above the ice mark equals the fraction of the temperature range above zero degrees."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{20}{100} = \\frac{1}{5}",
+          "tag": "simplify the fraction",
+          "title": "Simplify the fraction",
+          "narration": "Twenty degrees is one fifth of the full Celsius range between these two marks."
+        },
+        {
+          "n": 4,
+          "display": "x = 400 × \\frac{1}{5} = 80 mm",
+          "tag": "find the distance",
+          "title": "Find the distance",
+          "narration": "One fifth of four hundred millimetres is eighty millimetres above the ice mark. Choose D."
+        }
+      ]
+    }
+  ]
+}
