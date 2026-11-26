@@ -1,54 +1,100 @@
-import { processDrawing } from '../ProcessBoard'
+import { processDrawing } from '../AnatomyBoard'
 
-export default processDrawing({
-  "label": "Breathing and gas exchange surfaces",
-  "rows": [
-    {
-      "parts": [
-        {
-          "label": "Trachea",
-          "shape": "M-9 -22V18H9V-22M-9 -13H9M-9 -4H9M-9 5H9M-9 14H9"
-        },
-        {
-          "label": "Bronchi",
-          "shape": "M0 -22V-6L-18 13M0 -6L18 13M-6 -22V-9L-24 10M6 -22V-9L24 10"
-        },
-        {
-          "label": "Bronchioles",
-          "shape": "M0 -19V-6L-13 8L-24 18M0 -6L13 8L26 20M-13 8L-8 22M13 8L4 21"
-        },
-        {
-          "label": "Alveoli",
-          "shape": "M-17 -13L-6 1M-6 1l-5 10m5 -10l9 2M-11 11a6 6 0 1 0 0 12a6 6 0 1 0 0 -12ZM3 3a7 7 0 1 0 0 14a7 7 0 1 0 0 -14Z"
-        }
-      ],
-      "links": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Diaphragm",
-          "shape": "M-25 11Q0 -17 25 11M-25 18Q0 12 25 18M-21 -7v-15m42 15v-15",
-          "motion": "M0 0V17"
-        },
-        {
-          "label": "Spiracle",
-          "shape": "M-24 -15V17M-22 -15V-5m0 8v14M-21 -1H2L20 -15M2 -1L20 14"
-        }
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Fish gill route",
-          "shape": "M-27 -4Q-7 -19 12 -7L24 -15V11L12 4Q-8 17 -27 -1ZM-4 -8Q-12 3 -4 9m6 -17q-8 10 0 15M-21 -5h1",
-          "motion": "M-31 0Q-14 -1 -7 2T14 7"
-        }
-      ]
-    }
-  ]
-})
+export default processDrawing("Breathing and gas exchange surfaces", [
+  {
+    outline: [
+      ["lead", "M117 12Q102 14 99 34L89 51L103 53L99 65Q107 81 134 73L133 87Q114 94 98 98Q70 105 59 134L55 207M161 14Q182 35 170 62L161 77L162 90Q173 96 193 99Q234 105 246 134L252 207"],
+      ["paper", "M96 49Q116 41 139 51L149 64L154 91H145L143 66Q130 57 107 55Z"],
+      ["red", "M133 103Q101 101 84 126Q70 145 73 179Q75 202 108 196Q137 188 140 159V112ZM165 109Q182 100 207 113Q238 135 232 182Q228 202 196 197Q162 193 160 163L160 118Z"],
+      ["blue", "M145 83L145 114Q140 122 117 134L106 150L111 155L124 143L151 126L175 142L192 165L199 161L181 134Q158 120 155 113V83Z"],
+    ],
+    parts: [
+      {
+        cue: 'part-0-0', label: "Nose", at: [13,43], tip: [109,50], align: 'start',
+        strokes: [
+          ["lead", "M51 43L93 50"],
+        ],
+        flows: [
+          ["blue", "M100 50Q128 49 143 60L150 84V115"],
+        ],
+      },
+      {
+        cue: 'part-0-1', label: "Bronchi", at: [272,102], tip: [167,130], align: 'end',
+        strokes: [
+          ["lead", "M213 103L168 128"],
+        ],
+        flows: [
+          ["blue", "M150 95V118L122 138L112 151"],
+        ],
+      },
+      {
+        cue: 'part-0-2', label: "Bronchioles", at: [12,163], tip: [111,155], align: 'start',
+        strokes: [
+          ["ink", "M124 140l-17 22m1-9l-14-3m19-3l-1-13m3 16l1 20m6-29l-2-13M179 143l23 26m-11-14l12-5m-17 2l-3 17"],
+          ["lead", "M86 159L101 153"],
+        ],
+        flows: [
+          ["blue", "M151 120L122 137L106 162"],
+        ],
+      },
+      {
+        cue: 'part-0-3', label: "Alveolus", at: [304,172], tip: [266,192], align: 'end',
+        strokes: [
+          ["zoom", "M198 163L242 183M209 170L247 218"],
+          ["paper", "M237 188Q247 192 253 181Q267 171 278 182Q297 180 303 195Q307 213 290 215Q275 231 261 215Q245 214 254 202L236 198Z"],
+          ["red", "M253 235Q270 219 283 221Q301 215 307 223V231Q285 228 264 244Z"],
+        ],
+        flows: [
+          ["blue", "M233 194L259 195Q277 192 286 202"],
+          ["green", "M279 204L288 226"],
+          ["amber", "M265 228L263 208"],
+        ],
+      },
+      {
+        cue: 'part-1-0', label: "Diaphragm", at: [25,230], tip: [146,196], align: 'start',
+        strokes: [
+          ["lead", "M105 222L138 202"],
+        ],
+        flows: [
+          ["blue", "M150 90V118Q176 130 194 160"],
+        ],
+        motion: [
+          ["red", "M69 208Q148 157 232 208L230 218Q148 172 71 218Z", "M69 214Q148 201 232 214L230 224Q148 217 71 224Z"],
+          ["ink", "M97 107Q62 122 62 166M91 119Q61 138 63 186M205 107Q241 122 240 166M211 119Q241 138 239 186", "M97 105Q54 115 53 156M91 116Q53 130 54 178M205 105Q249 115 250 156M211 116Q249 130 248 178"],
+        ],
+      },
+      {
+        cue: 'part-1-t', label: "Trachea", at: [40,92], tip: [148,91], align: 'start',
+        strokes: [
+          ["lead", "M96 91H143"],
+        ],
+      },
+    ],
+  },
+  {
+    scenes: [2],
+    outline: [
+      ["paper", "M34 104Q68 55 146 72Q186 75 220 108L276 56L267 103L283 140L224 124Q146 174 53 135L33 122L51 117Z"],
+      ["red", "M104 85Q90 105 104 139M115 83Q102 108 115 143M126 84Q112 110 126 144"],
+      ["ink", "M138 81Q157 112 137 145M57 103a4 4 0 1 0 8 0a4 4 0 1 0-8 0"],
+    ],
+    parts: [
+      {
+        cue: 'part-2-0', label: "Mouth → gills → operculum", at: [23,40], tip: [124,109], align: 'start',
+        flows: [
+          ["blue", "M24 120L65 116Q104 103 124 113Q144 126 149 153"],
+        ],
+      },
+      {
+        cue: 'part-2-1', label: "Insect spiracle", at: [31,218], tip: [152,206], align: 'start',
+        strokes: [
+          ["amber", "M143 178Q164 173 191 184Q222 196 204 214Q182 227 150 223Z"],
+          ["ink", "M153 198h54m-45 1l-2 14m17-14l1-17m16 17l-2 16"],
+        ],
+        flows: [
+          ["blue", "M131 204L156 199H193"],
+        ],
+      },
+    ],
+  },
+])

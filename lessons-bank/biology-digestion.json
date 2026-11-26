@@ -9,7 +9,7 @@
         {
           "id": "biology-digestion-1",
           "show": "",
-          "say": "Salivary amylase, also called ptyalin, enters the mouth in saliva and begins breaking starch into smaller carbohydrates. The stomach secretes hydrochloric acid. Strong acid stops salivary amylase and allows the protein-digesting enzyme pepsin to work.",
+          "say": "Salivary glands release ptyalin into the mouth, starting starch digestion. Swallowed food moves down the oesophagus into the stomach. Here acid inactivates ptyalin, and pepsin starts digesting proteins.",
           "visual": "0",
           "beats": [
             {
@@ -18,7 +18,7 @@
               "label": ""
             },
             {
-              "word": "The",
+              "word": "stomach",
               "action": "part-0-1",
               "label": ""
             }
@@ -27,17 +27,32 @@
         {
           "id": "biology-digestion-2",
           "show": "",
-          "say": "The pancreas lies behind the stomach. It sends enzymes that digest fats, proteins and starch into the small intestine. The small intestine is where much of digestion and absorption happens. Pancreatic enzymes act in the space inside it.",
+          "say": "The pancreas delivers enzymes into the duodenum. The liver makes bile, which helps disperse fat when it enters the duodenum. The small intestine absorbs nutrients. The colon receives the residue and the anus is its exit.",
           "visual": "1",
           "beats": [
             {
-              "word": "The",
+              "word": "pancreas",
               "action": "part-1-0",
               "label": ""
             },
             {
-              "word": "The",
+              "word": "liver",
+              "action": "part-1-b",
+              "label": ""
+            },
+            {
+              "word": "small",
               "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "colon",
+              "action": "part-1-e",
+              "label": ""
+            },
+            {
+              "word": "anus",
+              "action": "part-1-a",
               "label": ""
             }
           ]
@@ -45,16 +60,16 @@
         {
           "id": "biology-digestion-3",
           "show": "",
-          "say": "In a mushroom fungus, thread-like hyphae secrete enzymes onto organic matter and absorb the soluble products. Some plants digest trapped prey to supplement their mineral supply. They still make sugars by photosynthesis.",
+          "say": "Fungal hyphae secrete enzymes onto organic matter and absorb the products. A carnivorous plant digests captured prey to supplement minerals. It still makes sugars by photosynthesis.",
           "visual": "2",
           "beats": [
             {
-              "word": "In",
+              "word": "Fungal",
               "action": "part-2-0",
               "label": ""
             },
             {
-              "word": "Some",
+              "word": "carnivorous",
               "action": "part-2-1",
               "label": ""
             }
@@ -63,7 +78,7 @@
         {
           "id": "biology-digestion-4",
           "show": "",
-          "say": "For JAMB, match ptyalin to saliva and the stomach to strong acid. Know which food classes pancreatic enzymes digest. Blue arrows show food movement or secretion into the space where enzymes act.",
+          "say": "JAMB asks where ptyalin works, why acid stops it, and where pancreatic enzymes enter. The blue arrows follow the meal. Green shows secretions joining it.",
           "visual": "3",
           "beats": [
             {

@@ -9,12 +9,22 @@
         {
           "id": "biology-photosynthesis-1",
           "show": "",
-          "say": "A green leaf is usually the main photosynthetic organ. Carbon dioxide enters through stomata, and its cells contain chloroplasts. Chlorophyll and carotenoids in chloroplast membranes absorb light. Chlorophyll drives light reactions, while carotenoids also help protect against excess light.",
+          "say": "In a green leaf, carbon dioxide enters through stomata. Water arrives through the xylem. Zoom into a mesophyll cell. Chlorophyll and carotenoids in chloroplast membranes absorb light, and carotenoids also help protect against excess light.",
           "visual": "0",
           "beats": [
             {
-              "word": "A",
+              "word": "leaf",
               "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "carbon",
+              "action": "part-0-c",
+              "label": ""
+            },
+            {
+              "word": "xylem",
+              "action": "part-0-w",
               "label": ""
             },
             {
@@ -27,17 +37,22 @@
         {
           "id": "biology-photosynthesis-2",
           "show": "",
-          "say": "The Calvin cycle in the chloroplast stroma first incorporates carbon dioxide into an organic compound. Later steps use ATP and NADPH to make a small sugar phosphate. Plants can use it to make sugars and starch.",
+          "say": "The Calvin cycle in the chloroplast stroma incorporates carbon dioxide into an organic compound. ATP and NADPH help produce a small sugar phosphate that can build glucose and starch. The light reactions split water and release oxygen.",
           "visual": "1",
           "beats": [
             {
-              "word": "The",
+              "word": "Calvin",
               "action": "part-1-0",
               "label": ""
             },
             {
-              "word": "Later",
+              "word": "sugar",
               "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "oxygen",
+              "action": "part-1-o",
               "label": ""
             }
           ]
@@ -45,11 +60,11 @@
         {
           "id": "biology-photosynthesis-3",
           "show": "",
-          "say": "In the leaf starch test, a hot-water rinse softens the leaf after ethanol has removed its green colour. Iodine turns starch-containing areas blue-black. This shows where starch is present in the prepared leaf.",
+          "say": "Rinsing a decolourised leaf in warm water softens it for the starch test. Iodine turns starch-containing areas blue-black.",
           "visual": "2",
           "beats": [
             {
-              "word": "In",
+              "word": "Rinsing",
               "action": "part-2-0",
               "label": ""
             },
@@ -63,7 +78,7 @@
         {
           "id": "biology-photosynthesis-4",
           "show": "",
-          "say": "JAMB asks which pigments capture light, where carbon enters organic compounds and why water softens an ethanol-treated leaf before iodine is added. The blue arrows trace carbon dioxide entering the leaf and the sequence from fixing carbon to building sugar.",
+          "say": "JAMB asks which pigments absorb light, where carbon fixation happens, and what a blue-black iodine result means. Blue follows water and gases, gold shows light, and green follows sugar production.",
           "visual": "3",
           "beats": [
             {

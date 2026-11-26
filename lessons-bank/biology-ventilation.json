@@ -9,26 +9,26 @@
         {
           "id": "biology-ventilation-1",
           "show": "",
-          "say": "Air enters the trachea, a tube in the neck and chest. The trachea divides into two main bronchi, one entering each lung. Inside the lungs, bronchi branch into narrower bronchioles. Bronchioles lead to alveoli, tiny sacs where gases diffuse between air and blood.",
+          "say": "Air enters through the nose and travels down the trachea. The trachea branches into the bronchi. Inside the lungs these divide into smaller bronchioles. At the alveoli oxygen moves into capillary blood and carbon dioxide moves into the air.",
           "visual": "0",
           "beats": [
             {
-              "word": "Air",
+              "word": "nose",
               "action": "part-0-0",
               "label": ""
             },
             {
-              "word": "The",
+              "word": "bronchi",
               "action": "part-0-1",
               "label": ""
             },
             {
-              "word": "Inside",
+              "word": "bronchioles",
               "action": "part-0-2",
               "label": ""
             },
             {
-              "word": "Bronchioles",
+              "word": "alveoli",
               "action": "part-0-3",
               "label": ""
             }
@@ -37,17 +37,17 @@
         {
           "id": "biology-ventilation-2",
           "show": "",
-          "say": "The diaphragm separates chest from abdomen. During inhalation it contracts, flattens and expands the chest cavity. An insect spiracle is an outer opening into its air tubes. Like a leaf stoma, it lets gases pass through a surface.",
+          "say": "During inhalation the diaphragm contracts and flattens. The ribs lift outwards and the chest expands. Air travels down the trachea as pressure inside the lungs falls.",
           "visual": "1",
           "beats": [
             {
-              "word": "The",
+              "word": "diaphragm",
               "action": "part-1-0",
               "label": ""
             },
             {
-              "word": "An",
-              "action": "part-1-1",
+              "word": "trachea",
+              "action": "part-1-t",
               "label": ""
             }
           ]
@@ -55,12 +55,17 @@
         {
           "id": "biology-ventilation-3",
           "show": "",
-          "say": "In a typical bony fish, water enters the mouth, flows over the gills and leaves through the opercular openings under the gill covers.",
+          "say": "In a typical bony fish, water enters through the mouth, passes over the gills and leaves under the operculum. An insect spiracle admits air to the tracheal tubes.",
           "visual": "2",
           "beats": [
             {
-              "word": "In",
+              "word": "fish",
               "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "spiracle",
+              "action": "part-2-1",
               "label": ""
             }
           ]
@@ -68,7 +73,7 @@
         {
           "id": "biology-ventilation-4",
           "show": "",
-          "say": "JAMB asks for the airway order, the muscle that separates chest from abdomen, and the route of water through a bony fish. The blue arrows trace incoming air and the route taken by water.",
+          "say": "JAMB asks for the airway order, the muscle separating chest and abdomen, and the route water takes through a fish. Blue follows air or water, green marks oxygen and amber marks carbon dioxide.",
           "visual": "3",
           "beats": [
             {
@@ -77,7 +82,7 @@
               "label": ""
             },
             {
-              "word": "separates",
+              "word": "muscle",
               "action": "part-1-0",
               "label": ""
             },

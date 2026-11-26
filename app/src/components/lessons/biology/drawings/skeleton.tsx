@@ -1,40 +1,59 @@
-import { processDrawing } from '../ProcessBoard'
+import { processDrawing } from '../AnatomyBoard'
 
-export default processDrawing({
-  "label": "The mammalian skeleton and joints",
-  "rows": [
-    {
-      "parts": [
-        {
-          "label": "Skeleton",
-          "shape": "M0 -23a10 10 0 1 0 0 20a10 10 0 1 0 0 -20ZM0 -3V16M-16 4Q0 0 16 4M-14 10Q0 17 14 10M-8 17l-8 12m24 -12l8 12"
-        },
-        {
-          "label": "Skull suture",
-          "shape": "M-23 11V-4Q-20 -20 0 -20Q20 -20 23 -4V11ZM-4 -20l6 6l-5 5l6 6l-5 5l6 8"
-        }
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Pubic symphysis",
-          "shape": "M-23 -13Q-9 -19 -4 -4L-9 4L-4 10V17Q-24 11 -23 -13ZM23 -13Q9 -19 4 -4L9 4L4 10V17Q24 11 23 -13ZM-4 13H4"
-        },
-        {
-          "label": "Femur",
-          "shape": "M-10 -20Q-22 -20 -17 -10L-7 -4L6 16Q2 28 15 24Q29 24 19 14L4 -10Q4 -22 -10 -20Z"
-        }
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Skeletal muscle",
-          "shape": "M-24 -9Q-3 -24 19 -8L28 -4L16 -2Q-3 15 -22 3L-28 2ZM11 -1L4 15L22 24M4 15L-19 24",
-          "motion": "M17 -13H1"
-        }
-      ]
-    }
-  ]
-})
+export default processDrawing("The mammalian skeleton and joints", [
+  {
+    outline: [
+      ["paper", "M128 41Q129 10 159 10Q187 10 190 38L181 56L169 66H147L138 56Z"],
+      ["ink", "M135 43q8 8 16 4m15-1q8 6 15-4M153 52l4-8l6 9M148 58h22"],
+      ["paper", "M153 69H166L169 148H153Z"],
+      ["ink", "M157 77h9m-8 10h9m-9 10h10m-10 10h10m-10 10h10m-10 10h10m-10 10h10"],
+      ["paper", "M126 141Q145 135 161 150Q175 138 195 141Q207 151 198 174L184 181Q176 178 161 173Q145 179 137 181Q125 177 120 166Z"],
+      ["ink", "M134 156q7-5 17 2m21 0q9-8 19-4M152 168Q159 174 169 168"],
+      ["paper", "M130 171L139 175L135 208L124 225L116 221L123 204ZM183 173L193 169L205 218L195 224L188 208Z"],
+      ["paper", "M117 223L125 226L119 254L105 265L88 265L98 259L108 254Z"],
+    ],
+    parts: [
+      {
+        cue: 'part-0-0', label: "Rib cage", at: [19,114], tip: [132,110], align: 'start',
+        strokes: [
+          ["ink", "M151 83Q126 76 122 90Q124 100 151 100M168 82Q195 76 201 90Q199 101 168 100M151 92Q115 89 122 106Q133 114 151 113M168 92Q208 89 200 107Q187 117 168 113M151 106Q114 98 126 119Q134 126 153 123M168 106Q206 101 195 120Q189 128 168 124"],
+          ["paper", "M119 83L128 89L112 130L103 131ZM195 89L201 82L218 127L211 133ZM105 131L113 132L100 166L92 164ZM210 132L217 129L231 164L223 165Z"],
+          ["lead", "M76 115L120 112"],
+        ],
+      },
+      {
+        cue: 'part-0-1', label: "Skull|suture", at: [301,32], tip: [155,28], align: 'end',
+        strokes: [
+          ["ink", "M141 22L151 24L155 20L161 29L168 23L179 28"],
+          ["lead", "M259 31L178 29"],
+        ],
+      },
+      {
+        cue: 'part-1-0', label: "Pubic|symphysis", at: [13,160], tip: [159,172], align: 'start',
+        strokes: [
+          ["lead", "M60 174L157 172"],
+          ["red", "M158 164L164 165L164 175L157 176Z"],
+        ],
+      },
+      {
+        cue: 'part-1-1', label: "Femur", at: [300,191], tip: [192,195], align: 'end',
+        strokes: [
+          ["lead", "M253 190L196 193"],
+        ],
+      },
+      {
+        cue: 'part-2-0', label: "Skeletal muscle", at: [306,243], tip: [201,203], align: 'end',
+        strokes: [
+          ["lead", "M260 231L207 215"],
+        ],
+        flows: [
+          ["blue", "M208 215Q212 199 205 182"],
+        ],
+        motion: [
+          ["red", "M194 176Q205 174 210 192Q216 207 202 219Q195 210 194 198Z", "M194 176Q212 175 216 192Q219 204 202 212Q194 204 194 192Z"],
+          ["paper", "M197 224L206 219L222 251L236 258L235 265H218L212 254Z", "M197 224L206 219L229 241L245 244L248 251L233 254L219 247Z"],
+        ],
+      },
+    ],
+  },
+])

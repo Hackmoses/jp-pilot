@@ -395,15 +395,21 @@
   .jp-biology-player .jp-concept-btn { transition: none; }
 }
 
-.jp-biology-structure {
-  fill: var(--brand-soft);
-  stroke: var(--ink);
+.jp-biology-contour {
+  fill: none;
+  stroke: var(--ink-2);
   stroke-width: 1.5;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.jp-biology-svg[viewBox="0 0 320 258"] text {
+.jp-biology-shade {
+  fill: var(--ink-2);
+  stroke: var(--ink);
+  stroke-width: 1.25;
+}
+
+.jp-biology-svg[viewBox="0 0 320 274"] text {
   font-size: 13px;
 }
 
@@ -421,3 +427,6 @@
     font-size: 15.5px;
   }
 }
+
+.jp-biology-structure { fill: var(--brand-soft); stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.jp-biology-svg[viewBox='0 0 320 258'] text { font-size: 13px; }
