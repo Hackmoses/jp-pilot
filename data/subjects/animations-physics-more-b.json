@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 30,
+  "count": 41,
   "animations": [
     {
       "id": "anim-phys-jamb-2008-021",
@@ -1902,6 +1902,697 @@
           "tag": "subtract internal resistance",
           "title": "Subtract internal resistance",
           "narration": "Subtract the ten ohms of the galvanometer coil itself, leaving one thousand nine hundred and ninety ohms connected in series. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2004-029",
+      "questionId": "phys-jamb-2004-029",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "X = X_{L} − X_{C} = 16 − 10 = 6 Ω",
+          "tag": "find net reactance",
+          "title": "Find net reactance",
+          "narration": "Subtract the ten ohm capacitive reactance from the sixteen ohm inductive reactance to get six ohms."
+        },
+        {
+          "n": 2,
+          "display": "Z = \\sqrt{8^{2} + 6^{2}} = 10 Ω",
+          "tag": "calculate impedance",
+          "title": "Calculate impedance",
+          "narration": "Combine the eight ohm resistance and six ohm net reactance by Pythagoras to get ten ohms."
+        },
+        {
+          "n": 3,
+          "display": "I = \\frac{12}{10} = 1.2 A",
+          "tag": "find the current",
+          "title": "Find the current",
+          "narration": "Divide the twelve volt e.m.f. by the ten ohm impedance to get one point two amperes. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "E = 12 V, R = 8 Ω, X_{L} = 16 Ω, X_{C} = 10 Ω",
+          "tag": "list the circuit values",
+          "title": "List the circuit values",
+          "narration": "Write down the e.m.f., the resistance, and both reactances in the series alternating current circuit."
+        },
+        {
+          "n": 2,
+          "display": "X = X_{L} − X_{C} = 16 − 10 = 6 Ω",
+          "tag": "find net reactance",
+          "title": "Find net reactance",
+          "narration": "Inductive and capacitive reactances oppose each other, so subtract ten ohms from sixteen ohms to get a net reactance of six ohms."
+        },
+        {
+          "n": 3,
+          "display": "Z = \\sqrt{R^{2} + (X_{L} − X_{C})^{2}}",
+          "tag": "state impedance formula",
+          "title": "State impedance formula",
+          "narration": "Because resistance and net reactance are ninety degrees out of phase, combine them using Pythagoras' theorem to find impedance."
+        },
+        {
+          "n": 4,
+          "display": "Z = \\sqrt{8^{2} + 6^{2}} = \\sqrt{100} = 10 Ω",
+          "tag": "compute the impedance",
+          "title": "Compute the impedance",
+          "narration": "Eight squared plus six squared equals sixty-four plus thirty-six, or one hundred, whose square root is ten ohms."
+        },
+        {
+          "n": 5,
+          "display": "I = \\frac{E}{Z} = \\frac{12}{10} = 1.2 A",
+          "tag": "find circuit current",
+          "title": "Find circuit current",
+          "narration": "Divide the twelve volt e.m.f. by the ten ohm impedance to get one point two amperes. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-043",
+      "questionId": "phys-jamb-2008-043",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P_{in} = \\frac{50}{0.80} = 62.5 W",
+          "tag": "find primary input power",
+          "title": "Find primary input power",
+          "narration": "Divide the fifty watt output power by zero point eight zero efficiency to get sixty-two point five watts input."
+        },
+        {
+          "n": 2,
+          "display": "I_{p} = \\frac{P_{in}}{V_{p}} = \\frac{62.5}{200}",
+          "tag": "divide by primary voltage",
+          "title": "Divide by primary voltage",
+          "narration": "Divide sixty-two point five watts by the two hundred volt mains voltage."
+        },
+        {
+          "n": 3,
+          "display": "I_{p} = 0.3125 A ≈ 0.31 A",
+          "tag": "round primary current",
+          "title": "Round primary current",
+          "narration": "Sixty-two point five over two hundred gives zero point three one two five, or zero point three one amperes. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P_{out} = 50 W, η = 80%, V_{p} = 200 V",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the output power, the eighty percent efficiency, and the two hundred volt mains voltage on the primary side."
+        },
+        {
+          "n": 2,
+          "display": "η = \\frac{P_{out}}{P_{in}} ⇒ P_{in} = \\frac{P_{out}}{0.80}",
+          "tag": "link efficiency to input",
+          "title": "Link efficiency to input",
+          "narration": "Because the transformer is only eighty percent efficient, the primary coil draws more power than the fifty watts delivered out."
+        },
+        {
+          "n": 3,
+          "display": "P_{in} = \\frac{50}{0.80} = 62.5 W",
+          "tag": "calculate input power",
+          "title": "Calculate input power",
+          "narration": "Fifty divided by zero point eight zero equals five hundred divided by eight, which is sixty-two point five watts."
+        },
+        {
+          "n": 4,
+          "display": "P_{in} = I_{p}V_{p} ⇒ I_{p} = \\frac{62.5}{200}",
+          "tag": "use primary power formula",
+          "title": "Use primary power formula",
+          "narration": "Primary power equals primary current times primary voltage, so divide sixty-two point five watts by two hundred volts."
+        },
+        {
+          "n": 5,
+          "display": "I_{p} = 0.3125 A ≈ 0.31 A",
+          "tag": "divide and round",
+          "title": "Divide and round",
+          "narration": "Sixty-two point five divided by two hundred is zero point three one two five amperes, which rounds to zero point three one amperes. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1998-047",
+      "questionId": "phys-jamb-1998-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = zQ",
+          "tag": "state Faraday's first law",
+          "title": "State Faraday's first law",
+          "narration": "The mass deposited equals the electrochemical equivalent multiplied by the electric charge."
+        },
+        {
+          "n": 2,
+          "display": "m = (1.3 × 10^{-7}) × (2.0 × 10^{4})",
+          "tag": "substitute z and Q",
+          "title": "Substitute z and Q",
+          "narration": "Multiply one point three times ten to the minus seven by two point zero times ten to the four."
+        },
+        {
+          "n": 3,
+          "display": "m = 2.6 × 10^{-3} kg",
+          "tag": "simplify the answer",
+          "title": "Simplify the answer",
+          "narration": "One point three times two is two point six, and minus seven plus four gives ten to the minus three kilograms. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "z = 1.3 × 10^{-7} kg C^{-1}, Q = 2.0 × 10^{4} C",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the electrochemical equivalent in kilograms per coulomb and the charge in coulombs, both already in SI units."
+        },
+        {
+          "n": 2,
+          "display": "m = zQ",
+          "tag": "state Faraday's formula",
+          "title": "State Faraday's formula",
+          "narration": "By Faraday's first law of electrolysis, mass deposited is proportional to total charge passed, with z as the proportionality constant."
+        },
+        {
+          "n": 3,
+          "display": "m = (1.3 × 10^{-7}) × (2.0 × 10^{4})",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Multiply the given electrochemical equivalent by the charge in coulombs."
+        },
+        {
+          "n": 4,
+          "display": "m = 2.6 × 10^{-3} kg",
+          "tag": "multiply and add exponents",
+          "title": "Multiply and add exponents",
+          "narration": "Multiply one point three by two point zero to get two point six, and add exponents minus seven and four to get minus three kilograms. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2002-040",
+      "questionId": "phys-jamb-2002-040",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Q_{1} = 0.5 × 3 = 1.5 A h",
+          "tag": "find first charge",
+          "title": "Find first charge",
+          "narration": "Multiply zero point five amperes by three hours to get one point five ampere-hours."
+        },
+        {
+          "n": 2,
+          "display": "Q_{2} = 1.5 × 1 = 1.5 A h",
+          "tag": "find second charge",
+          "title": "Find second charge",
+          "narration": "Multiply one point five amperes by one hour to get one point five ampere-hours as well."
+        },
+        {
+          "n": 3,
+          "display": "Q_{2} = Q_{1} ⇒ m_{2} = 2 g",
+          "tag": "compare the charges",
+          "title": "Compare the charges",
+          "narration": "Because the same charge passes through the same metal, the mass deposited stays two grams. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I_{1} = 0.5 A, t_{1} = 3 h ⇒ m_{1} = 2 g",
+          "tag": "note the first case",
+          "title": "Note the first case",
+          "narration": "Record the first current and time that deposit two grams. Since both times are in hours, we can compare current times time directly without converting to seconds."
+        },
+        {
+          "n": 2,
+          "display": "m ∝ Q = It",
+          "tag": "state Faraday's first law",
+          "title": "State Faraday's first law",
+          "narration": "Faraday's first law states that mass deposited of the same metal depends only on total charge Q equals I t."
+        },
+        {
+          "n": 3,
+          "display": "Q_{1} = 0.5 × 3 = 1.5, Q_{2} = 1.5 × 1 = 1.5",
+          "tag": "compare both charges",
+          "title": "Compare both charges",
+          "narration": "Zero point five times three is one point five, and one point five times one is also one point five."
+        },
+        {
+          "n": 4,
+          "display": "m_{2} = m_{1} = 2 g",
+          "tag": "read deposited mass",
+          "title": "Read deposited mass",
+          "narration": "The current tripled while the time fell to a third, so the total charge is identical and two grams is deposited again. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2003-042",
+      "questionId": "phys-jamb-2003-042",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Δx Δp ≥ h ⇒ Δp = \\frac{h}{Δx}",
+          "tag": "use uncertainty principle",
+          "title": "Use uncertainty principle",
+          "narration": "Use Heisenberg's relation delta x times delta p equals h and divide by delta x."
+        },
+        {
+          "n": 2,
+          "display": "Δp = \\frac{6.6 × 10^{-34}}{5 × 10^{-10}}",
+          "tag": "substitute h and Δx",
+          "title": "Substitute h and Δx",
+          "narration": "Divide Planck's constant six point six times ten to the minus thirty-four by five times ten to the minus ten."
+        },
+        {
+          "n": 3,
+          "display": "Δp = 1.32 × 10^{-24} N s",
+          "tag": "find momentum uncertainty",
+          "title": "Find momentum uncertainty",
+          "narration": "Six point six over five is one point three two, and subtracting minus ten from minus thirty-four gives minus twenty-four. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Δx = 5 × 10^{-10} m, h = 6.6 × 10^{-34} J s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the position uncertainty in metres and Planck's constant in joule seconds."
+        },
+        {
+          "n": 2,
+          "display": "Δx Δp ≥ h ⇒ Δp = \\frac{h}{Δx}",
+          "tag": "state uncertainty relation",
+          "title": "State uncertainty relation",
+          "narration": "Heisenberg's uncertainty principle links position and momentum uncertainties through Planck's constant. Divide h by delta x to find the momentum uncertainty."
+        },
+        {
+          "n": 3,
+          "display": "Δp = \\frac{6.6 × 10^{-34}}{5 × 10^{-10}}",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Put six point six times ten to the minus thirty-four on top and five times ten to the minus ten below."
+        },
+        {
+          "n": 4,
+          "display": "Δp = 1.32 × 10^{-24} N s",
+          "tag": "divide and simplify powers",
+          "title": "Divide and simplify powers",
+          "narration": "Six point six divided by five equals one point three two, and minus thirty-four minus minus ten equals minus twenty-four newton seconds. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2006-008",
+      "questionId": "phys-jamb-2006-008",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E = 3.3 × 1.6 × 10^{-19} = 5.28 × 10^{-19} J",
+          "tag": "convert energy to joules",
+          "title": "Convert energy to joules",
+          "narration": "Multiply three point three electronvolts by one point six times ten to the minus nineteen to convert to joules."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{E}{h} = \\frac{5.28 × 10^{-19}}{6.6 × 10^{-34}}",
+          "tag": "use Planck's equation",
+          "title": "Use Planck's equation",
+          "narration": "Divide the energy in joules by Planck's constant."
+        },
+        {
+          "n": 3,
+          "display": "f = 8.0 × 10^{14} Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "Five point two eight over six point six is zero point eight, giving eight point zero times ten to the fourteen hertz. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "E = 3.3 eV, e = 1.6 × 10^{-19} C",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the photon energy in electronvolts, the electronic charge, and Planck's constant six point six times ten to the minus thirty-four joule seconds."
+        },
+        {
+          "n": 2,
+          "display": "E = 3.3 × 1.6 × 10^{-19} = 5.28 × 10^{-19} J",
+          "tag": "convert eV to joules",
+          "title": "Convert eV to joules",
+          "narration": "Multiply electronvolts by the electron charge to get joules because Planck's constant uses SI units of joule seconds."
+        },
+        {
+          "n": 3,
+          "display": "E = hf ⇒ f = \\frac{E}{h}",
+          "tag": "rearrange Planck's formula",
+          "title": "Rearrange Planck's formula",
+          "narration": "Photon energy equals Planck's constant times frequency, so divide energy by h to isolate frequency."
+        },
+        {
+          "n": 4,
+          "display": "f = \\frac{5.28 × 10^{-19}}{6.6 × 10^{-34}} = 0.8 × 10^{15}",
+          "tag": "substitute and divide",
+          "title": "Substitute and divide",
+          "narration": "Five point two eight divided by six point six is zero point eight, and subtracting minus thirty-four from minus nineteen gives ten to the fifteen."
+        },
+        {
+          "n": 5,
+          "display": "f = 8.0 × 10^{14} Hz",
+          "tag": "write in standard form",
+          "title": "Write in standard form",
+          "narration": "Rewrite zero point eight times ten to the fifteen as eight point zero times ten to the fourteen hertz. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-047",
+      "questionId": "phys-jamb-2008-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "hf = 6.6 × 10^{-34} × 6.7 × 10^{14}",
+          "tag": "find photon energy",
+          "title": "Find photon energy",
+          "narration": "Multiply Planck's constant by the light frequency to find each photon's energy."
+        },
+        {
+          "n": 2,
+          "display": "hf = 4.422 × 10^{-19} J",
+          "tag": "write in standard form",
+          "title": "Write in standard form",
+          "narration": "Six point six times six point seven is forty-four point two two, or four point four two two times ten to the minus nineteen joules."
+        },
+        {
+          "n": 3,
+          "display": "K_{max} = 4.422 × 10^{-19} − 3 × 10^{-19} ≈ 1.42 × 10^{-19} J",
+          "tag": "subtract work function",
+          "title": "Subtract work function",
+          "narration": "Subtract the three times ten to the minus nineteen joule work function to get one point four two times ten to the minus nineteen joules. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Φ = 3 × 10^{-19} J, f = 6.7 × 10^{14} Hz",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the work function of caesium, the frequency of light, and Planck's constant."
+        },
+        {
+          "n": 2,
+          "display": "hf = 6.6 × 10^{-34} × 6.7 × 10^{14}",
+          "tag": "compute photon energy",
+          "title": "Compute photon energy",
+          "narration": "Find the energy delivered by one photon by multiplying six point six times ten to the minus thirty-four by six point seven times ten to the fourteen."
+        },
+        {
+          "n": 3,
+          "display": "hf = 44.22 × 10^{-20} = 4.422 × 10^{-19} J",
+          "tag": "match the power of ten",
+          "title": "Match the power of ten",
+          "narration": "Express the photon energy using ten to the minus nineteen so it matches the work function's power of ten before subtracting."
+        },
+        {
+          "n": 4,
+          "display": "K_{max} = hf − Φ",
+          "tag": "state Einstein's equation",
+          "title": "State Einstein's equation",
+          "narration": "By Einstein's photoelectric equation, the work function frees the electron and the remaining photon energy becomes maximum kinetic energy."
+        },
+        {
+          "n": 5,
+          "display": "K_{max} = (4.422 − 3) × 10^{-19} ≈ 1.42 × 10^{-19} J",
+          "tag": "subtract work function",
+          "title": "Subtract work function",
+          "narration": "Subtract three from four point four two two to get one point four two times ten to the minus nineteen joules. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-046",
+      "questionId": "phys-jamb-2013-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E_{n} = \\frac{E_{1}}{n^{2}}",
+          "tag": "use energy level formula",
+          "title": "Use energy level formula",
+          "narration": "The energy of level n equals the ground state energy divided by n squared."
+        },
+        {
+          "n": 2,
+          "display": "E_{3} = \\frac{−24.8}{3^{2}} = \\frac{−24.8}{9}",
+          "tag": "substitute n = 3",
+          "title": "Substitute n = 3",
+          "narration": "For the third level, divide minus twenty-four point eight electronvolts by three squared, which is nine."
+        },
+        {
+          "n": 3,
+          "display": "E_{3} = −2.76 eV ≈ −2.75 eV",
+          "tag": "divide and match option",
+          "title": "Divide and match option",
+          "narration": "Minus twenty-four point eight over nine is minus two point seven six electronvolts, matching minus two point seven five electronvolts. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "E_{1} = −24.8 eV, n = 3",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the ground state energy at n equals one is minus twenty-four point eight electronvolts, and we need the third level where n equals three."
+        },
+        {
+          "n": 2,
+          "display": "E_{n} = \\frac{E_{1}}{n^{2}}",
+          "tag": "state Bohr level formula",
+          "title": "State Bohr level formula",
+          "narration": "In an atom's energy levels, energy scales inversely with the square of the level number n."
+        },
+        {
+          "n": 3,
+          "display": "E_{3} = \\frac{−24.8}{3^{2}} = \\frac{−24.8}{9}",
+          "tag": "substitute n = 3",
+          "title": "Substitute n = 3",
+          "narration": "Put minus twenty-four point eight on top and three squared, equal to nine, underneath."
+        },
+        {
+          "n": 4,
+          "display": "E_{3} = −2.755... eV ≈ −2.75 eV",
+          "tag": "divide and match option",
+          "title": "Divide and match option",
+          "narration": "Dividing minus twenty-four point eight by nine gives minus two point seven five five recurring electronvolts, which matches the keyed option minus two point seven five electronvolts. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2003-046",
+      "questionId": "phys-jamb-2003-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = 1.0 g = 1.0 × 10^{-3} kg",
+          "tag": "convert mass to kilograms",
+          "title": "Convert mass to kilograms",
+          "narration": "Change one point zero grams to one point zero times ten to the minus three kilograms."
+        },
+        {
+          "n": 2,
+          "display": "Δm = \\frac{0.01}{100} × 10^{-3} = 1.0 × 10^{-7} kg",
+          "tag": "find the mass defect",
+          "title": "Find the mass defect",
+          "narration": "Zero point zero one percent of the mass gives one point zero times ten to the minus seven kilograms converted to energy."
+        },
+        {
+          "n": 3,
+          "display": "E = Δmc^{2} = 9.0 × 10^{9} J",
+          "tag": "apply E = mc squared",
+          "title": "Apply E = mc squared",
+          "narration": "Multiply ten to the minus seven by three point zero times ten to the eight squared to get nine point zero times ten to the nine joules. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 1.0 g, loss = 0.01%, c = 3.0 × 10^{8} m/s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the one point zero gram sample, the zero point zero one percent mass decrease, and the speed of light."
+        },
+        {
+          "n": 2,
+          "display": "m = 1.0 × 10^{-3} kg",
+          "tag": "change grams to kilograms",
+          "title": "Change grams to kilograms",
+          "narration": "Divide one point zero grams by one thousand to convert to kilograms because energy in joules requires SI mass units."
+        },
+        {
+          "n": 3,
+          "display": "Δm = \\frac{0.01}{100} × 1.0 × 10^{-3} = 1.0 × 10^{-7} kg",
+          "tag": "calculate mass lost",
+          "title": "Calculate mass lost",
+          "narration": "Zero point zero one percent is ten to the minus four, so multiply ten to the minus four by ten to the minus three to get ten to the minus seven kilograms."
+        },
+        {
+          "n": 4,
+          "display": "E = Δmc^{2} = (1.0 × 10^{-7}) × (3.0 × 10^{8})^{2}",
+          "tag": "use Einstein's formula",
+          "title": "Use Einstein's formula",
+          "narration": "Substitute the lost mass and speed of light into E equals delta m c squared. Squaring three point zero times ten to the eight gives nine point zero times ten to the sixteen."
+        },
+        {
+          "n": 5,
+          "display": "E = 9.0 × 10^{9} J",
+          "tag": "simplify powers of ten",
+          "title": "Simplify powers of ten",
+          "narration": "Add the exponents minus seven and sixteen to get nine. The fission energy is nine point zero times ten to the nine joules, option A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2007-010",
+      "questionId": "phys-jamb-2007-010",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "n = \\frac{80}{20} = 4",
+          "tag": "count the half-lives",
+          "title": "Count the half-lives",
+          "narration": "Divide eighty days by the twenty-day half-life to get four half-lives."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{N}{N_{0}} = (\\frac{1}{2})^{4}",
+          "tag": "apply half-life decay",
+          "title": "Apply half-life decay",
+          "narration": "Each half-life halves the sample, so raise one half to the fourth power."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{N}{N_{0}} = \\frac{1}{16}",
+          "tag": "find remaining fraction",
+          "title": "Find remaining fraction",
+          "narration": "Two to the power of four is sixteen, so one sixteenth remains. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "t_{1/2} = 20 days, t = 80 days",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the half-life of twenty days and the total decay time of eighty days."
+        },
+        {
+          "n": 2,
+          "display": "n = \\frac{t}{t_{1/2}} = \\frac{80}{20} = 4",
+          "tag": "find number of half-lives",
+          "title": "Find number of half-lives",
+          "narration": "Divide total time by the half-life to see how many halving periods occur, which gives four half-lives."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{N}{N_{0}} = (\\frac{1}{2})^{4}",
+          "tag": "halve four times",
+          "title": "Halve four times",
+          "narration": "Each half-life leaves half of the remaining radioactive nuclei, so multiply by one half four times."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{N}{N_{0}} = \\frac{1}{16}",
+          "tag": "evaluate the power",
+          "title": "Evaluate the power",
+          "narration": "Raise one half to the fourth power to get one sixteenth of the original nuclei remaining. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2010-046",
+      "questionId": "phys-jamb-2010-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "A = 235 − 2(4) − 3(0) − 0 = 227",
+          "tag": "find new mass number",
+          "title": "Find new mass number",
+          "narration": "Two alpha particles subtract eight from mass number two hundred and thirty-five, leaving two hundred and twenty-seven."
+        },
+        {
+          "n": 2,
+          "display": "Z = 92 − 2(2) + 3(1) + 0 = 91",
+          "tag": "find new atomic number",
+          "title": "Find new atomic number",
+          "narration": "Two alphas subtract four and three betas add three to atomic number ninety-two, giving ninety-one."
+        },
+        {
+          "n": 3,
+          "display": "227 and 91",
+          "tag": "read both numbers",
+          "title": "Read both numbers",
+          "narration": "The daughter nucleus has mass number two hundred and twenty-seven and atomic number ninety-one. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2α (^{4}_{2}He), 3β (^{0}_{−1}e), 1γ (^{0}_{0}γ)",
+          "tag": "identify the emissions",
+          "title": "Identify the emissions",
+          "narration": "An alpha particle carries mass four and charge two, a beta particle carries mass zero and charge minus one, and the gamma ray carries zero mass and zero charge so it does not change either number."
+        },
+        {
+          "n": 2,
+          "display": "A = 235 − 2(4) − 3(0) − 0",
+          "tag": "balance the mass number",
+          "title": "Balance the mass number",
+          "narration": "Total mass number is conserved across the decay. Only the two alpha particles lower the mass number, each by four."
+        },
+        {
+          "n": 3,
+          "display": "A = 235 − 8 = 227",
+          "tag": "find daughter mass number",
+          "title": "Find daughter mass number",
+          "narration": "Subtract eight from two hundred and thirty-five to get a daughter mass number of two hundred and twenty-seven."
+        },
+        {
+          "n": 4,
+          "display": "Z = 92 − 2(2) − 3(−1) − 0",
+          "tag": "balance the atomic number",
+          "title": "Balance the atomic number",
+          "narration": "Total charge is conserved. Two alpha decays remove four protons, while three beta-minus decays increase the atomic number by three."
+        },
+        {
+          "n": 5,
+          "display": "Z = 92 − 4 + 3 = 91 ⇒ 227 and 91",
+          "tag": "read both numbers",
+          "title": "Read both numbers",
+          "narration": "Ninety-two minus four plus three equals ninety-one. So the mass and atomic numbers are two hundred and twenty-seven and ninety-one, option A."
         }
       ]
     }
