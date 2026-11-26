@@ -36,16 +36,22 @@
   touch-action: pan-y;
   cursor: pointer;
   perspective: 60rem;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color 0.15s ease;
 }
 
-.jp-word-card[data-flipped="false"] {
+.jp-word-card--interactive {
+  min-height: 0;
+  gap: 14px;
+  cursor: default;
+  perspective: none;
+}
+
+.jp-word-card[data-flipped="false"]:not(.jp-word-card--interactive) {
   justify-content: center;
 }
 
-.jp-word-card:hover {
+button.jp-word-card:hover {
   border-color: #94a3b8;
-  box-shadow: 0 4px 12px -6px rgb(15 23 42 / 0.12);
 }
 
 .jp-word-card-face {
@@ -96,6 +102,30 @@
   font-weight: 700;
   line-height: 1.25;
   color: #0f172a;
+}
+
+.jp-word-q-stem {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 16.5px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #0f172a;
+}
+
+.jp-word-reveal {
+  display: grid;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.jp-word-reveal-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .jp-word-jamb {
@@ -205,6 +235,102 @@
   color: var(--trap);
   font-size: 13.5px;
   line-height: 1.45;
+}
+
+.jp-word-spelling-answer {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 26px);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+}
+
+.jp-word-gap-hit {
+  padding: 0 3px;
+  border-radius: 4px;
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.jp-word-gap-box {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.jp-word-gap-display {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3.2vw, 26px);
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.jp-word-gap-slots {
+  display: inline-flex;
+  gap: 4px;
+  margin-inline: 2px;
+}
+
+.jp-word-gap-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 32px;
+  padding: 0 4px;
+  border-bottom: 2px solid var(--brand);
+  border-radius: 4px 4px 0 0;
+  background: var(--bg);
+  color: var(--brand);
+}
+
+.jp-word-gap-slot[data-filled="false"] {
+  color: #94a3b8;
+}
+
+.jp-word-gap-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.jp-word-gap-input {
+  width: 140px;
+  min-height: 34px;
+  padding: 5px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: var(--bg);
+  color: #0f172a;
+  font-family: var(--font-system);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.jp-word-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.jp-mode-page .jp-word-tile {
+  min-width: 36px;
+  min-height: 34px;
+  padding: 4px 10px;
+  font-size: 14px;
 }
 
 .jp-word-actions {
