@@ -1,0 +1,72 @@
+.jp-try-word-controls {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.jp-try-word-controls:disabled {
+  opacity: .65;
+}
+.jp-try-word-model {
+  display: grid;
+  gap: var(--space-2);
+}
+.jp-try-word-model [aria-pressed="true"] {
+  background: var(--brand-soft);
+  border-color: var(--brand);
+}
+.jp-try-word-model .jp-btn {
+  min-height: 44px;
+}
+.jp-try-letters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px;
+}
+.jp-try-word-model .jp-try-letter {
+  min-width: 36px;
+  padding-inline: 6px;
+}
+.jp-try-word-model .jp-try-cut {
+  min-width: 28px;
+  padding-inline: 4px;
+}
+.jp-try-drop-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.jp-try-drop-board > div {
+  flex: 1 1 74px;
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  min-width: 0;
+}
+.jp-try-word-model [data-over="true"] {
+  background: var(--brand-soft);
+}
+.jp-try-tile {
+  touch-action: none;
+}
+.jp-try-spelling-grid {
+  display: grid;
+  gap: 4px;
+  justify-items: start;
+}
+.jp-try-spelling-grid .jp-btn {
+  display: inline-flex;
+  width: auto;
+  font: 600 14px var(--font-mono, monospace);
+}
+.jp-try-spelling-grid .jp-try-column {
+  display: inline-grid;
+  text-align: center;
+  width: 1.1em;
+}
+.jp-try-spelling-grid mark {
+  color: inherit;
+  background: var(--brand-soft);
+  border-bottom: 2px solid var(--brand);
+}

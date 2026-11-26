@@ -1,0 +1,1744 @@
+{
+  "subject": "english",
+  "topicId": "foundations",
+  "title": "Spelling and Sounds",
+  "lessons": [
+    {
+      "id": "english-foundations-1",
+      "title": "Letters, sounds and the dictionary",
+      "hook": "How can one letter stand for two sounds?",
+      "idea": "Use a UK dictionary entry to check spelling, pronunciation and stress.",
+      "scenes": [
+        {
+          "id": "english-foundations-1-s1",
+          "show": "Count letters and sounds",
+          "say": "English has twenty-six letters. A common British teaching model counts forty-four sounds. Your accent may group a few of them differently. Say {{word:box}}. You write three letters, but hear four sounds because the last letter stands for /k/ followed by /s/. In {{word:ship}}, the first two letters together stand for /ʃ/.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "English",
+              "action": "Show the example for this step.",
+              "label": "Count letters and sounds"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-1-s2",
+          "show": "system /ˈsɪs.təm/",
+          "say": "Look up {{word:system}}. Check the headword first for its spelling, then find the pronunciation labelled UK. The symbols inside slashes are IPA, the International Phonetic Alphabet. They tell you which sounds to say in order. You can check unfamiliar symbols in the dictionary's pronunciation guide.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Look",
+              "action": "Show the example for this step.",
+              "label": "Find the UK entry"
+            }
+          ],
+          "display": "system /ˈsɪs.təm/"
+        },
+        {
+          "id": "english-foundations-1-s3",
+          "show": "ˈ = strongest stress   ˌ = secondary stress   . = syllable boundary",
+          "say": "The little dot divides {{word:system}} into two spoken syllables. The high mark goes just before the strongest syllable. In {{word:surprise}}, it comes between the two syllables and also marks their boundary. {{word:retell}} has a low mark before a weaker stress and a high mark before the strongest beat.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "The",
+              "action": "Show the example for this step.",
+              "label": "Read the syllable marks"
+            }
+          ],
+          "display": "ˈ = strongest stress   ˌ = secondary stress   . = syllable boundary"
+        },
+        {
+          "id": "english-foundations-1-s4",
+          "show": "Check the whole entry",
+          "say": "Use the definition or the part of speech to make sure you opened the word you meant. Compare your spelling with the headword, then trace the UK sounds from left to right. The dictionary's speaker button lets you check what those symbols represent when you have data.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Use",
+              "action": "Show the example for this step.",
+              "label": "Check the whole entry"
+            }
+          ]
+        }
+      ],
+      "misconception": {
+        "wrong": "I can count speech sounds by counting letters.",
+        "correction": "Several letters can share a sound, and a single letter can represent a sequence of sounds."
+      },
+      "pastQuestion": {
+        "year": 2010,
+        "number": 87,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 21,
+          "keyPage": 23,
+          "yearPage": 2,
+          "instructionsPage": 21
+        },
+        "instructions": "In each of questions 86 to 88, choose the option that has the same Vowel sound as the one represented by the letters underlined.",
+        "prompt": "Indict",
+        "options": [
+          "bright",
+          "fish",
+          "pick",
+          "brick"
+        ],
+        "optionLabels": [
+          "A.",
+          "B.",
+          "C.",
+          "D."
+        ],
+        "answer": "A",
+        "scenes": [
+          {
+            "id": "english-foundations-1-oral-2-q1",
+            "show": "Show the printed question and options. Keep the underline exactly where printed. One beat lights under the second syllable of the stem.",
+            "say": "This question is from JAMB twenty ten. Look up the headword and find the UK pronunciation before you compare the underlined vowel. Listen to {{word:indict}}. The printed underline covers two letters, but there is one vowel to match. It is in the second syllable. Hear {{word:indict}} again. The vowel starts open and glides upwards, as it did in {{word:time}}. We write that sound /aɪ/. Which option has the same glide?",
+            "visual": "vowel-glide",
+            "beats": [
+              {
+                "word": "option",
+                "action": "Flash a single beat under the target syllable.",
+                "label": "Hear the second vowel"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-1-oral-2-q2",
+            "show": "Play options in order while their vowel paths draw beneath them. The three steady vowels then dim.",
+            "say": "Try {{word:bright}}, {{word:fish}}, {{word:pick}} and {{word:brick}}. Hear how the mouth moves in the first option. The other three have the steady vowel /ɪ/. Listen once more to {{word:indict}} and {{word:bright}}. The opening consonants differ and the spellings look different, but the vowel matches. Choose A.",
+            "visual": "vowel-glide",
+            "beats": [
+              {
+                "word": "Choose",
+                "action": "Join the two /aɪ/ paths and highlight A.",
+                "label": "Match the glide"
+              }
+            ]
+          }
+        ],
+        "promptFormatting": [
+          {
+            "style": "underline",
+            "start": 3,
+            "end": 5
+          }
+        ]
+      },
+      "syllabus": "Use a pronunciation entry to read the sound represented by an underlined spelling.",
+      "tryIt": {
+        "prompt": "Where is the strongest beat in /səˈpraɪz/?",
+        "options": [
+          "The first syllable",
+          "The second syllable",
+          "Both equally"
+        ],
+        "answerIndex": 1,
+        "feedback": "The high mark ˈ sits immediately before the stressed second syllable."
+      }
+    },
+    {
+      "id": "english-foundations-2",
+      "title": "Hear and split syllables",
+      "hook": "Can your hands count the beats in a word?",
+      "idea": "Count spoken beats, then use a dictionary to check the split.",
+      "scenes": [
+        {
+          "id": "english-foundations-2-s1",
+          "show": "Clap the spoken word",
+          "say": "Say {{word:cake}} slowly and clap once. Say {{word:system}} and clap twice. Each syllable is built around one vowel beat. A glide like the vowel in {{word:cake}} moves through two positions within one beat. Some weak syllables can use a syllabic consonant. You can still feel that beat in {{word:little}}.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Say",
+              "action": "Show the example for this step.",
+              "label": "Clap the spoken word"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-2-s2",
+          "show": "/ˈsɪs.təm/   /dɪˈskraɪb/",
+          "say": "Say {{word:system}} again and stop just after /sɪs/. The second part starts with /t/. With two consonants between vowel beats, try splitting between them. Keep an ear out for groups that start a syllable together, as in {{word:describe}}. Check the dictionary when the split is uncertain.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Say",
+              "action": "Show the example for this step.",
+              "label": "Check the split"
+            }
+          ],
+          "display": "/ˈsɪs.təm/   /dɪˈskraɪb/"
+        },
+        {
+          "id": "english-foundations-2-s3",
+          "show": "Treat these endings as one beat",
+          "say": "Clap the two beats in {{word:action}}, {{word:vision}} and {{word:picture}}. Their endings, written tion, sion and ture, each add one spoken beat here. The sounds at the start of those endings differ. Slow the word down without pronouncing each printed letter on its own.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Clap",
+              "action": "Show the example for this step.",
+              "label": "Treat these endings as one beat"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-2-s4",
+          "show": "Watch the last e",
+          "say": "The silent e in {{word:cake}} adds no beat. The e in {{word:recipe}} is spoken, so count it. First count what you say, then check the UK entry. A stress mark can divide syllables even when you see no dot.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "The",
+              "action": "Show the example for this step.",
+              "label": "Watch the last e"
+            }
+          ]
+        }
+      ],
+      "misconception": {
+        "wrong": "Every written vowel adds another clap.",
+        "correction": "Count the beats you hear, including weak syllables."
+      },
+      "pastQuestion": {
+        "year": 2012,
+        "number": 95,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 66,
+          "keyPage": 68,
+          "yearPage": 46
+        },
+        "instructions": "In each of questions 95 to 97, choose the option that has the stress on the first syllable.",
+        "prompt": "",
+        "options": [
+          "madam",
+          "eighteen",
+          "invent",
+          "command"
+        ],
+        "answer": "A",
+        "scenes": [
+          {
+            "id": "english-foundations-2-q1",
+            "show": "Find what JAMB asks",
+            "say": "This is question ninety-five from JAMB twenty twelve. The instructions ask for stress on the first syllable. Count the beats before you decide which one is strongest. All four choices have two beats. Say {{word:madam}}, then repeat it and tap the stronger beat. You should tap the first one.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "This",
+                "action": "Show the example for this step.",
+                "label": "Find what JAMB asks"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-2-q2",
+            "show": "Check the printed answer",
+            "say": "Now try {{word:eighteen}}, {{word:invent}} and {{word:command}}. In each one, the strongest beat falls second in the UK dictionary entry. Some words have a weaker extra stress as well. Follow the high mark for the main stress. The printed key gives A, {{word:madam}}.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "Now",
+                "action": "Show the example for this step.",
+                "label": "Check the printed answer"
+              }
+            ]
+          }
+        ],
+        "optionLabels": [
+          "(a).",
+          "(b)",
+          "(c)",
+          "(d)"
+        ]
+      },
+      "syllabus": "Recognise syllable boundaries and use them to locate a stressed syllable.",
+      "tryIt": {
+        "prompt": "Which split follows the UK pronunciation of picture?",
+        "options": [
+          "pic · ture",
+          "pict · ure",
+          "pic · tu · re"
+        ],
+        "answerIndex": 0,
+        "feedback": "/ˈpɪk.tʃər/ has two beats. The second starts with /tʃ/."
+      }
+    },
+    {
+      "id": "english-foundations-3",
+      "title": "Vowel sounds and their spellings",
+      "hook": "How many ways can you write the vowel you hear in sea?",
+      "idea": "Compare the sound in the middle of each word and check it in IPA.",
+      "scenes": [
+        {
+          "id": "english-foundations-3-oral-1-s1",
+          "show": "The words bird, bed, nurse, shirt and red appear as the mouth diagram switches between two held positions.",
+          "say": "Compare {{word:bird}} and {{word:bed}}. {{word:nurse}} and {{word:shirt}} group with the first word. {{word:red}} groups with the second. Keep the tongue forward for /e/. Hold /ɜː/ in the centre. Both are steady pure vowels.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "steady",
+              "action": "Group the five cards under /ɜː/ or /e/.",
+              "label": "Hold a vowel steady"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-3-oral-1-s2",
+          "show": "Two word rows light up in turn as the tongue marker shifts down and back slightly.",
+          "say": "Hear {{word:seat}}, {{word:sheep}} and {{word:beat}}, then {{word:sit}}, {{word:ship}} and {{word:bit}}. The first row has /iː/. The second has /ɪ/. Relax the tongue and make the second vowel shorter.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "vowel",
+              "action": "Reveal /iː/ and /ɪ/ under the two rows.",
+              "label": "High front vowels"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-3-oral-1-s3",
+          "show": "A mouth diagram changes from tight rounding to looser rounding as cards switch columns.",
+          "say": "Hear {{word:fool}}, {{word:pool}} and {{word:food}}. Compare {{word:full}}, {{word:pull}} and {{word:good}}. If the vowels merge, keep /uː/ longer and use a shorter, more relaxed /ʊ/ in the second row.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "relaxed",
+              "action": "Reveal /uː/ and /ʊ/ on the sorted cards.",
+              "label": "Rounded vowels"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-3-oral-1-s4",
+          "show": "A jaw guide opens as paired cards swap places. Each card lights its middle vowel.",
+          "say": "Hear {{word:cup}} and {{word:cut}}. Now hear {{word:cap}} and {{word:cat}}. If /ʌ/ comes out like /æ/, open the jaw more and move the tongue forward for /æ/.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "forward",
+              "action": "Move the tongue marker forward as the jaw opens.",
+              "label": "Jaw opening"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-3-oral-1-s5",
+          "show": "Duration bars and lip shapes change as the three pairs play.",
+          "say": "Hear {{word:cot}} and {{word:caught}}, {{word:pot}} and {{word:port}}, then {{word:hot}} and {{word:heart}}. Keep /ɒ/ short and rounded. Hold rounded /ɔː/ longer in the first two pairs. Keep /ɑː/ open and unrounded in the last pair, even if you usually make these vowels alike.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "unrounded",
+              "action": "Open and unround the lips on the final word.",
+              "label": "Match back vowels"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-3-oral-1-s6",
+          "show": "A full-size vowel marker shrinks as the first syllable of each word plays.",
+          "say": "Hear {{word:about}}, {{word:ago}}, {{word:again}} and {{word:alone}}. The first vowel relaxes to /ə/. If you give it a full vowel, the weak syllable stands out. Keep it light.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "it",
+              "action": "Shrink the first-syllable bar on each card.",
+              "label": "Let a weak vowel relax"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-3-s1",
+          "show": "s[ee]   s[ea]   f[ie]ld   rec[ei]ve   th[e]m[e]",
+          "say": "Hear {{word:see}}, {{word:sea}}, {{word:field}}, {{word:receive}} and {{word:theme}}. All five have /iː/. The length mark /ː/ identifies long vowels here.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Hear",
+              "action": "Show the example for this step.",
+              "label": "Compare the spellings"
+            }
+          ],
+          "display": "s[ee]   s[ea]   f[ie]ld   rec[ei]ve   th[e]m[e]"
+        }
+      ],
+      "misconception": {
+        "wrong": "Pure vowels always sound alike if they are spelt alike, or if they are both short.",
+        "correction": "Match the sound you hear. The tongue, lips and length can all distinguish pure vowels."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 86,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 42,
+          "keyPage": 45,
+          "yearPage": 24,
+          "paperType": "D",
+          "instructionsPage": 42
+        },
+        "instructions": "In each of question 86 to 88, choose the option that has the same vowel sound as the one represented by the letter(s) underlined",
+        "prompt": "bubble",
+        "options": [
+          "guy",
+          "bull",
+          "bumper",
+          "gurgle"
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ],
+        "answer": "C",
+        "scenes": [
+          {
+            "id": "english-foundations-3-oral-1-q1",
+            "show": "Show the printed question and options. Keep the printed underline and light only the first vowel as the word plays.",
+            "say": "This question is from JAMB twenty eleven. Listen to {{word:bubble}}. The underlined letter points to the first vowel. Hear it again in {{word:bubble}}, then compare it with {{word:cup}}. Keep that same short, steady sound in your ear. It is /ʌ/. Now compare {{word:guy}} and {{word:bull}}. The first one has a glide. The second one has short /ʊ/.",
+            "visual": "vowel-mouth",
+            "beats": [
+              {
+                "word": "second",
+                "action": "Move the first two options away from the target row.",
+                "label": "Hear the target vowel"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-3-oral-1-q2",
+            "show": "Slide options C and D beside the stem and animate the vowel labels as each plays.",
+            "say": "Now listen to {{word:bumper}} and {{word:gurgle}}. Which first vowel matches the question word? Hear {{word:bubble}} and {{word:bumper}} together. Both begin with the same consonant and the same vowel. The exercise asks for that vowel even if the rest of the word changes. Choose C.",
+            "visual": "vowel-mouth",
+            "beats": [
+              {
+                "word": "Choose",
+                "action": "Bring the target and option C into the same group.",
+                "label": "Find the matching vowel"
+              }
+            ]
+          }
+        ],
+        "promptFormatting": [
+          {
+            "style": "underline",
+            "start": 1,
+            "end": 2
+          }
+        ]
+      },
+      "syllabus": "Distinguish pure vowels and recognise that one vowel sound can have different spellings.",
+      "tryIt": {
+        "prompt": "Which word has the same vowel as theme /θiːm/?",
+        "options": [
+          "ship /ʃɪp/",
+          "receive /rɪˈsiːv/",
+          "bed /bed/"
+        ],
+        "answerIndex": 1,
+        "feedback": "The stressed vowel of receive is /iː/, the vowel in theme."
+      },
+      "supplement": {
+        "title": "Diphthongs",
+        "scenes": [
+          {
+            "id": "english-foundations-3-oral-2-s1",
+            "show": "A single syllable bar stays in place while a dot travels forward on the mouth diagram.",
+            "say": "Hear {{word:day}}, {{word:rain}}, {{word:late}} and {{word:eight}}. The vowel moves towards the front and closes a little. We write it /eɪ/. If you hold the first sound steady, let the tongue rise before the syllable ends. Keep it all on one beat.",
+            "visual": "vowel-glide",
+            "beats": [
+              {
+                "word": "rise",
+                "action": "Move the dot smoothly through the single beat.",
+                "label": "Glide towards the front"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-3-oral-2-s2",
+            "show": "Four cards slide into each of two columns as the mouth diagrams animate distinct starting shapes.",
+            "say": "Hear {{word:my}}, {{word:time}}, {{word:light}} and {{word:bike}}. The glide /aɪ/ starts open. Hear {{word:boy}}, {{word:coin}}, {{word:voice}} and {{word:choice}}. For /ɔɪ/, start with rounded lips. If you flatten the first glide or give both groups the same start, watch how the two starting shapes differ.",
+            "visual": "vowel-glide",
+            "beats": [
+              {
+                "word": "start",
+                "action": "Circle each starting position and trace the two paths.",
+                "label": "Start wide or rounded"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-3-oral-2-s3",
+            "show": "Two rows of words roll in as lips go from relaxed or open to rounded.",
+            "say": "Hear {{word:go}}, {{word:home}}, {{word:boat}} and {{word:coat}}. Let the lips round as you move through /əʊ/. Hear {{word:now}}, {{word:cow}}, {{word:house}} and {{word:out}}. Start wider for /aʊ/. If the first row gets a steady vowel or the second gets two beats, make one smooth move.",
+            "visual": "vowel-glide",
+            "beats": [
+              {
+                "word": "smooth",
+                "action": "Sweep one arrow along each row in one beat.",
+                "label": "Glide towards rounded lips"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-3-oral-2-s4",
+            "show": "Word cards appear at the outer points of a vowel diagram. Their arrows converge on the centre.",
+            "say": "Listen to {{word:near}}, {{word:here}} and {{word:fear}}. Then hear {{word:hair}}, {{word:care}} and {{word:chair}}. The dictionary shows /ɪə/ and /eə/. If the starts blur together, listen for the higher start of the first group. Let both glides finish gently in the centre.",
+            "visual": "vowel-glide",
+            "beats": [
+              {
+                "word": "centre",
+                "action": "Let the two arrows meet at the centre.",
+                "label": "Glide towards the centre"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-3-oral-2-s5",
+            "show": "A dot travels from the rounded starting position to the centre as the symbol appears.",
+            "say": "Hear {{word:tour}}. The Cambridge UK clip uses /ʊə/. Start with rounded lips, then relax towards the centre in one beat. If you usually hold a rounded vowel here, follow the movement of the dot.",
+            "visual": "vowel-glide",
+            "beats": [
+              {
+                "word": "relax",
+                "action": "Trace the glide path in one beat.",
+                "label": "Recognise the variable glide"
+              }
+            ]
+          }
+        ],
+        "pastQuestion": {
+          "year": 2010,
+          "number": 87,
+          "source": {
+            "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+            "page": 21,
+            "keyPage": 23,
+            "yearPage": 2,
+            "instructionsPage": 21
+          },
+          "instructions": "In each of questions 86 to 88, choose the option that has the same Vowel sound as the one represented by the letters underlined.",
+          "prompt": "Indict",
+          "options": [
+            "bright",
+            "fish",
+            "pick",
+            "brick"
+          ],
+          "optionLabels": [
+            "A.",
+            "B.",
+            "C.",
+            "D."
+          ],
+          "answer": "A",
+          "scenes": [
+            {
+              "id": "english-foundations-3-oral-2-q1",
+              "show": "Show the printed question and options. Keep the underline exactly where printed. One beat lights under the second syllable of the stem.",
+              "say": "This question is from JAMB twenty ten. Listen to {{word:indict}}. The printed underline covers two letters, but there is one vowel to match. It is in the second syllable. Hear {{word:indict}} again. The vowel starts open and glides upwards, as it did in {{word:time}}. We write that sound /aɪ/. Which option has the same glide?",
+              "visual": "vowel-glide",
+              "beats": [
+                {
+                  "word": "option",
+                  "action": "Flash a single beat under the target syllable.",
+                  "label": "Hear the second vowel"
+                }
+              ]
+            },
+            {
+              "id": "english-foundations-3-oral-2-q2",
+              "show": "Play options in order while their vowel paths draw beneath them. The three steady vowels then dim.",
+              "say": "Try {{word:bright}}, {{word:fish}}, {{word:pick}} and {{word:brick}}. Hear how the mouth moves in the first option. The other three have the steady vowel /ɪ/. Listen once more to {{word:indict}} and {{word:bright}}. The opening consonants differ and the spellings look different, but the vowel matches. Choose A.",
+              "visual": "vowel-glide",
+              "beats": [
+                {
+                  "word": "Choose",
+                  "action": "Join the two /aɪ/ paths and highlight A.",
+                  "label": "Match the glide"
+                }
+              ]
+            }
+          ],
+          "promptFormatting": [
+            {
+              "style": "underline",
+              "start": 3,
+              "end": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "english-foundations-4",
+      "title": "Consonants and silent letters",
+      "hook": "What do the first letters of thin and then do differently?",
+      "idea": "Use the sound and the letters together to work out consonant spellings.",
+      "scenes": [
+        {
+          "id": "english-foundations-4-oral-3-s1",
+          "show": "The tongue moves from behind the teeth to the tooth edge and a continuous air line appears.",
+          "say": "Say {{word:thin}} beside {{word:tin}}, then {{word:three}} beside {{word:tree}}. For /θ/, let air pass the tongue at the teeth. For /t/, block the air and release it.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "release",
+              "action": "Extend the air line under both /θ/ words.",
+              "label": "Keep the air moving at the teeth"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-4-oral-3-s2",
+          "show": "A throat light pulses with the voiced examples. The airflow line stays visible.",
+          "say": "Compare {{word:then}} and {{word:den}}, then {{word:those}} and {{word:though}} with {{word:dough}}. For /ð/, let air through at the teeth and feel your voice buzzing. For /d/, briefly block the air. Try that buzz in {{word:breathe}} and {{word:bathe}}.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "and",
+              "action": "Turn on the throat light as the voiced air line continues.",
+              "label": "Turn the voice on"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-4-oral-3-s3",
+          "show": "The airflow line runs steadily for one row but shows a short closure and burst for the other.",
+          "say": "Compare {{word:shoe}} with {{word:chew}}, {{word:shop}} with {{word:chop}}, and {{word:shin}} with {{word:chin}}. Try {{word:wash}} and {{word:watch}}, then {{word:wish}} and {{word:witch}}. With /ʃ/, air continues. /tʃ/ begins with a short stop.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "short",
+              "action": "Animate one brief closure and release on the second row.",
+              "label": "Hiss or stop and release"
+            }
+          ],
+          "check": true
+        },
+        {
+          "id": "english-foundations-4-oral-3-s4",
+          "show": "Letters k, w, b and g fade from the words while the first or last audible consonant brightens.",
+          "say": "Try {{word:knee}}, {{word:knife}}, {{word:knock}} and {{word:know}} without k. Say {{word:write}}, {{word:wrong}} and {{word:wrist}} without w. The final b in {{word:lamb}}, {{word:comb}} and {{word:thumb}} stays silent. So does g in {{word:sign}}.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "in",
+              "action": "Fade the written letters and leave the audible consonants lit.",
+              "label": "Hear which consonant survives"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-4-oral-3-s5",
+          "show": "The audible parts of each card light up, skipping the silent letter.",
+          "say": "Start {{word:honest}} and {{word:hour}} on a vowel. The middle t in {{word:listen}}, {{word:castle}} and {{word:whistle}} stays silent.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "middle",
+              "action": "Skip the printed t on each of the last three cards.",
+              "label": "Check the middle as well"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-4-s1",
+          "show": "Check hard and soft letters",
+          "say": "Compare {{word:cat}} with {{word:city}} and {{word:goat}} with {{word:giant}}. Before e, i or y, c and g often soften. {{word:get}} and {{word:give}} keep hard g. Hear {{word:debt}} without b and {{word:psychology}} without the first p. In {{word:chef}}, ch is /ʃ/.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Compare",
+              "action": "Show the example for this step.",
+              "label": "Check hard and soft letters"
+            }
+          ]
+        }
+      ],
+      "misconception": {
+        "wrong": "Every letter must be sounded, and similar consonants are interchangeable.",
+        "correction": "Check airflow and voicing. A silent letter has no sound."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 89,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 43,
+          "keyPage": 45,
+          "yearPage": 24,
+          "paperType": "D",
+          "instructionsPage": 43
+        },
+        "instructions": "In each of question 89 to 91, choose the option that has the consonant sound as the one represented by the letter(s) underlined",
+        "prompt": "mention",
+        "options": [
+          "that",
+          "machine",
+          "church",
+          "test"
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ],
+        "answer": "B",
+        "scenes": [
+          {
+            "id": "english-foundations-4-oral-3-q1",
+            "show": "Show the printed question with its original underlining. Add a moving air line beneath the middle of the stem.",
+            "say": "This question is from JAMB twenty eleven. Hear {{word:mention}}. Focus on the consonant sound at the printed underline. Listen for the air before the last syllable ends. You can keep that hiss going. It is /ʃ/. Now hear {{word:that}} and {{word:machine}}. Listen past the spelling. One of these options has the same hiss in the middle.",
+            "visual": "consonant-mouth",
+            "beats": [
+              {
+                "word": "hiss",
+                "action": "Trace the same continuous-air line on option B.",
+                "label": "Isolate the target consonant"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-4-oral-3-q2",
+            "show": "Switch between a closure animation and a continuous-air animation, then highlight the answer.",
+            "say": "Listen to {{word:church}} and {{word:test}}. The first gives you a brief stop and release. The second has a different hiss and ends with a stop. Compare {{word:mention}} and {{word:machine}} once more. Neither adds that brief stop before the target hiss. Choose B.",
+            "visual": "consonant-mouth",
+            "beats": [
+              {
+                "word": "Choose",
+                "action": "Highlight B after the two continuous-air lines match.",
+                "label": "Check the other options"
+              }
+            ]
+          }
+        ],
+        "promptFormatting": [
+          {
+            "style": "underline",
+            "start": 3,
+            "end": 5
+          }
+        ]
+      },
+      "syllabus": "Recognise consonant contrasts and letter groups, including silent letters.",
+      "tryIt": {
+        "prompt": "Which word starts with the same consonant sound as gym /dʒɪm/?",
+        "options": [
+          "goat /ɡəʊt/",
+          "giant /ˈdʒaɪ.ənt/",
+          "get /ɡet/"
+        ],
+        "answerIndex": 1,
+        "feedback": "Gym and giant begin with /dʒ/. The g in goat and get sounds like /ɡ/."
+      }
+    },
+    {
+      "id": "english-foundations-5",
+      "title": "Build words from parts",
+      "hook": "Where do the two s letters in misspell come from?",
+      "idea": "Look at what each word part contributes and check what happens at the join.",
+      "scenes": [
+        {
+          "id": "english-foundations-5-s1",
+          "show": "Find the base",
+          "say": "A root carries a core meaning. A base is the form you add something to. A prefix goes at the front and a suffix goes at the end. In {{word:unsuccessful}}, the middle gives you {{word:success}}. The ending makes an adjective and the beginning reverses its meaning.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "A",
+              "action": "Show the example for this step.",
+              "label": "Find the base"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-5-s2",
+          "show": "dis + appoint   ·   un + necessary   ·   mis + spell",
+          "say": "Write dis plus appoint for {{word:disappoint}}, and un plus necessary for {{word:unnecessary}}. In {{word:misspell}}, mis ends in s and spell starts with s, so both stay. Some prefixes change shape. The negative in becomes im before p in {{word:impossible}}.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Write",
+              "action": "Show the example for this step.",
+              "label": "Join the parts"
+            }
+          ],
+          "display": "dis + appoint   ·   un + necessary   ·   mis + spell"
+        },
+        {
+          "id": "english-foundations-5-s3",
+          "show": "Use familiar roots",
+          "say": "Think of life in {{word:biology}}, writing or recording in {{word:autograph}}, carrying in {{word:transport-verb}}, writing in {{word:describe}}, and saying in {{word:dictate}}. See the root list for more clues. A root helps you make a first guess. Check the entry to see how that meaning works in the whole word.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Think",
+              "action": "Show the example for this step.",
+              "label": "Use familiar roots"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-5-s4",
+          "show": "ac + com + mod + ate   →   accommodate",
+          "say": "Split the spelling of {{word:accommodate}} on paper into ac, com, mod and ate. This spelling cue puts c beside c and m beside m. Those four chunks help you remember letters. For spoken syllables, use the UK entry and listen for the beats.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Split",
+              "action": "Show the example for this step.",
+              "label": "Remember a difficult join"
+            }
+          ],
+          "display": "ac + com + mod + ate   →   accommodate"
+        }
+      ],
+      "misconception": {
+        "wrong": "When two pieces contribute the same letter at the join, I should write it only once.",
+        "correction": "Check each piece. The two s letters in misspell come from different pieces."
+      },
+      "pastQuestion": {
+        "year": 2018,
+        "number": 35,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 163,
+          "keyPage": 167,
+          "yearPage": 157
+        },
+        "instructions": "From these questions, choose the options opposite in meaning to the words or phrases in italics.",
+        "prompt": "My father is a very prosperous businessman.",
+        "options": [
+          "ungrateful",
+          "unscrupulous",
+          "unskilled",
+          "unsuccessful"
+        ],
+        "answer": "D",
+        "scenes": [
+          {
+            "id": "english-foundations-5-q1",
+            "show": "Find what JAMB asks",
+            "say": "This is question thirty-five from JAMB twenty eighteen. You need the opposite of {{word:prosperous}}. In this sentence, that means doing well, especially financially. Start with the common prefix. Every choice begins with un, so you need to interpret the part that follows it before you can pick.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "This",
+                "action": "Show the example for this step.",
+                "label": "Find what JAMB asks"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-5-q2",
+            "show": "Check the printed answer",
+            "say": "In {{word:unsuccessful}}, notice {{word:success}} in the middle. The ending ful makes {{word:successful}}, and un reverses that meaning. The other bases are about gratitude, moral scruples and skill. None gives the opposite of doing well. Choose D. All the parts of that word contribute to its meaning.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "In",
+                "action": "Show the example for this step.",
+                "label": "Check the printed answer"
+              }
+            ]
+          }
+        ],
+        "promptFormatting": [
+          {
+            "style": "italic",
+            "start": 20,
+            "end": 30
+          }
+        ]
+      },
+      "syllabus": "Use prefixes, roots and suffixes to infer meaning and keep letters at joins.",
+      "tryIt": {
+        "prompt": "Which split shows why misspell has two s letters?",
+        "options": [
+          "mi + sspell",
+          "miss + pell",
+          "mis + spell"
+        ],
+        "answerIndex": 2,
+        "feedback": "Mis keeps its final s and spell keeps its initial s."
+      },
+      "roots": [
+        [
+          "bio",
+          "life"
+        ],
+        [
+          "graph",
+          "write or record"
+        ],
+        [
+          "port",
+          "carry"
+        ],
+        [
+          "scrib / script",
+          "write"
+        ],
+        [
+          "dict",
+          "say"
+        ],
+        [
+          "tele",
+          "far"
+        ],
+        [
+          "phon",
+          "sound"
+        ],
+        [
+          "geo",
+          "earth"
+        ],
+        [
+          "therm",
+          "heat"
+        ],
+        [
+          "micro",
+          "small"
+        ],
+        [
+          "scope",
+          "view"
+        ],
+        [
+          "bi",
+          "two"
+        ],
+        [
+          "tri",
+          "three"
+        ],
+        [
+          "aqua",
+          "water"
+        ],
+        [
+          "ped",
+          "foot"
+        ],
+        [
+          "spect",
+          "look"
+        ],
+        [
+          "manu",
+          "hand"
+        ],
+        [
+          "struct",
+          "build"
+        ],
+        [
+          "dent",
+          "tooth"
+        ],
+        [
+          "photo",
+          "light"
+        ]
+      ]
+    },
+    {
+      "id": "english-foundations-6",
+      "title": "Five spelling rules worth knowing",
+      "hook": "Why does visiting keep one t, while travelled uses two l letters?",
+      "idea": "Look at the end of the base word and the beginning of the suffix.",
+      "scenes": [
+        {
+          "id": "english-foundations-6-s1",
+          "show": "Double a final consonant",
+          "say": "Before a vowel suffix, a single consonant after one short vowel often doubles, as in {{word:run}} and {{word:running}}. In longer words, check for final stress. {{word:visiting}} keeps one t. British final l often doubles without final stress, as in {{word:travelled}}. Final w, x and y ordinarily stay single.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Before",
+              "action": "Show the example for this step.",
+              "label": "Double a final consonant"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-6-s2",
+          "show": "Drop a silent e",
+          "say": "See {{word:make}} become {{word:making}}. A vowel suffix often takes the place of a silent e. Keep e when it protects a soft sound, as in {{word:changeable}}, or distinguishes {{word:dyeing}} from {{word:dying}}. A consonant suffix usually keeps e, though {{word:truly}} drops it.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "See",
+              "action": "Show the example for this step.",
+              "label": "Drop a silent e"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-6-s3",
+          "show": "Change y to i",
+          "say": "A consonant before final y often signals a change to i, as in {{word:happy}} and {{word:happiness}}. Keep the y before ing, as in {{word:worrying}}, and in {{word:dryness}}. After a vowel, y usually stays, but {{word:daily}} changes it.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "A",
+              "action": "Show the example for this step.",
+              "label": "Change y to i"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-6-s4",
+          "show": "Check ie or ei, then -ful",
+          "say": "For /iː/, ie in {{word:brief}} and ei after c in {{word:receive}} are clues. {{word:seize}} and {{word:species}} break that pattern. {{word:weird}} and {{word:science}} have other vowel sounds, so a general rhyme misses them. The suffix ful uses one l, as in {{word:helpful}}. The separate word {{word:full}} uses two.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "For",
+              "action": "Show the example for this step.",
+              "label": "Check ie or ei, then -ful"
+            }
+          ]
+        }
+      ],
+      "misconception": {
+        "wrong": "The i-before-e rhyme tells me how to spell every word with ie or ei.",
+        "correction": "Use it as a clue for /iː/, and check exceptions and other vowel sounds."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 81,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 41,
+          "keyPage": 45,
+          "yearPage": 24,
+          "instructionsPage": 39,
+          "optionsPage": 42
+        },
+        "instructions": "In each of question 66 to 85, choose the option that best complete the gap",
+        "prompt": "I want to … his chance to acquaint you with the latest development",
+        "options": [
+          "size",
+          "seize",
+          "sieze",
+          "cease"
+        ],
+        "answer": "B",
+        "scenes": [
+          {
+            "id": "english-foundations-6-q1",
+            "show": "Find what JAMB asks",
+            "say": "This is question eighty-one from JAMB twenty eleven. The sentence needs a verb that means to take or use a chance. {{word:size}} and {{word:cease}} are real words, but their meanings do not fit. That leaves two choices that carry the same intended meaning and differ only in the order of two letters.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "This",
+                "action": "Show the example for this step.",
+                "label": "Find what JAMB asks"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-6-q2",
+            "show": "Check the printed answer",
+            "say": "Read B and C letter by letter. B places e before i. {{word:seize}} has the long /iː/ sound and no c before the vowel letters. This is an exception to the familiar rhyme. Give the meaning one final check and choose B, the option in the printed key.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "Read",
+                "action": "Show the example for this step.",
+                "label": "Check the printed answer"
+              }
+            ]
+          }
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ]
+      },
+      "syllabus": "Apply common suffix spelling rules and identify exceptions to ie/ei.",
+      "tryIt": {
+        "prompt": "Which spelling follows British usage?",
+        "options": [
+          "traveling",
+          "travelling",
+          "traveleing"
+        ],
+        "answerIndex": 1,
+        "feedback": "British English generally doubles final l in travelling and travelled."
+      }
+    },
+    {
+      "id": "english-foundations-7",
+      "title": "Tricky endings and British spelling",
+      "hook": "If two endings sound alike, where can you look for a clue?",
+      "idea": "Use a related word to make a spelling guess, then confirm the headword.",
+      "scenes": [
+        {
+          "id": "english-foundations-7-s1",
+          "show": "Check -able and -ible",
+          "say": "Try taking off the ending. If a whole base remains, able is more likely, as in {{word:drinkable}}. Think of {{word:flexible}} for ible. Some whole bases still take ible, as in {{word:sensible}}, and the base e can stay, as in {{word:agreeable}}.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Try",
+              "action": "Show the example for this step.",
+              "label": "Check -able and -ible"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-7-s2",
+          "show": "Check -ant, -ent, -ance and -ence",
+          "say": "Look for a related form. {{word:hesitant}} has the a found in {{word:hesitation}}. {{word:confident}} and {{word:confidence}} share e. After soft c, soft g or qu, ent or ence often fits. The clues can fail, as in {{word:assistant}} and {{word:assistance}}. Check the dictionary when unsure.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Look",
+              "action": "Show the example for this step.",
+              "label": "Check -ant, -ent, -ance and -ence"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-7-s3",
+          "show": "Check -tion, -sion and -cian",
+          "say": "A base ending in t often gives tion, as in {{word:invent}} and {{word:invention}}. A d often gives sion, as in {{word:decide}} and {{word:decision}}, but compare {{word:attend}} and {{word:attention}}. A base in mit can give ssion, as in {{word:permit}} and {{word:permission}}. A person linked to music is a {{word:musician}}, with cian.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "A",
+              "action": "Show the example for this step.",
+              "label": "Check -tion, -sion and -cian"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-7-s4",
+          "show": "Check the British form",
+          "say": "Use British forms such as {{word:colour}}, {{word:centre}}, {{word:travelled}} and {{word:programme}}. In computing, the UK spelling is usually {{word:program}}. British English allows {{word:organise}} and {{word:organize}}, but writes {{word:analyse}} and {{word:paralyse}} with yse. {{word:advise}} keeps ise.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Use",
+              "action": "Show the example for this step.",
+              "label": "Check the British form"
+            }
+          ]
+        }
+      ],
+      "misconception": {
+        "wrong": "If two endings sound alike, either spelling works.",
+        "correction": "Find a related form and then check the headword in a UK dictionary."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 76,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 41,
+          "keyPage": 45,
+          "yearPage": 24,
+          "instructionsPage": 39
+        },
+        "instructions": "In each of question 66 to 85, choose the option that best complete the gap",
+        "prompt": "Here is Mr. Odumusu who teaches English … in our school",
+        "options": [
+          "pronuntiation",
+          "pronounciation",
+          "pronunciation",
+          "pronountiation"
+        ],
+        "answer": "C",
+        "scenes": [
+          {
+            "id": "english-foundations-7-q1",
+            "show": "Find what JAMB asks",
+            "say": "This is question seventy-six from JAMB twenty eleven. The gap needs a noun for the way people say words. All four choices are close enough that a quick look may fool you. Start at the back. Check which options end in the letters c, i, a, t, i, o, n.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "This",
+                "action": "Show the example for this step.",
+                "label": "Find what JAMB asks"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-7-q2",
+            "show": "Check the printed answer",
+            "say": "Next, compare the middle with the dictionary spelling of {{word:pronunciation}}. There is no o before the u in that part of the noun. You may remember the o in {{word:pronounce}}. The form changes when you make the noun. Option C has the right middle and ending, and the printed key gives C.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "Next,",
+                "action": "Show the example for this step.",
+                "label": "Check the printed answer"
+              }
+            ]
+          }
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ]
+      },
+      "syllabus": "Compare common suffix spellings and recognise standard British forms.",
+      "tryIt": {
+        "prompt": "Which ending makes the British headword for someone who plays music?",
+        "options": [
+          "music → musicion",
+          "music → musician",
+          "music → musikian"
+        ],
+        "answerIndex": 1,
+        "feedback": "Music has a final c and the person is a musician, with -cian."
+      }
+    },
+    {
+      "id": "english-foundations-8",
+      "title": "Confusing pairs and homophones",
+      "hook": "If two words sound alike, which clue can help you choose?",
+      "idea": "Read the whole sentence and use the job or meaning of the word.",
+      "scenes": [
+        {
+          "id": "english-foundations-8-s1",
+          "show": "Think head or rule, still or paper",
+          "say": "A {{word:principal}} can be the head of a school. Think of the pal at assembly. A {{word:principle}} is a rule or belief. Think rule with the ending le. {{word:stationary}} means staying in one spot. Think parked for a. {{word:stationery}} means writing supplies. Think envelope for e.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "A",
+              "action": "Show the example for this step.",
+              "label": "Think head or rule, still or paper"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-8-s2",
+          "show": "Think action or result, owner or place",
+          "say": "Usually {{word:affect}} is the action of changing something. {{word:effect}} is the end result. As a verb, effect can also mean bring about. Use {{word:their}} for books that belong to them, {{word:there}} for a place or to introduce something, and {{word:they-re}} when you can expand it to they are. Find here inside the place word. Think of {{word:heir}} and ownership for {{word:their}}.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Usually",
+              "action": "Show the example for this step.",
+              "label": "Think action or result, owner or place"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-8-s3",
+          "show": "Think complete or praise",
+          "say": "Think of complete when you see {{word:complement}}. Two things complement each other when they go well together. In {{word:compliment}}, think of the i in kind. A compliment is praise, as when someone thanks you for doing something well.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Think",
+              "action": "Show the example for this step.",
+              "label": "Think complete or praise"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-8-s4",
+          "show": "Think noun or verb",
+          "say": "Use {{word:advice}} as the noun for a suggestion or guidance. Its last sound is /s/. Use {{word:advise}} as the verb for giving guidance. It ends with /z/. Try the sentence frame: I give {{word:advice}}, and I {{word:advise}} you. The word's role gives you the spelling.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Use",
+              "action": "Show the example for this step.",
+              "label": "Think noun or verb"
+            }
+          ]
+        }
+      ],
+      "misconception": {
+        "wrong": "Hearing the word is enough to choose the spelling.",
+        "correction": "Use the meaning or word class required by the sentence."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 40,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 36,
+          "keyPage": 45,
+          "yearPage": 24,
+          "instructionsPage": 35
+        },
+        "instructions": "In each of questions 36 to 50, choose the option nearest in meaning to the word or phrases in italics.",
+        "prompt": "He compliments me on my way of doing things.",
+        "options": [
+          "complements",
+          "imitates",
+          "disgusts",
+          "praises"
+        ],
+        "answer": "D",
+        "scenes": [
+          {
+            "id": "english-foundations-8-q1",
+            "show": "Find what JAMB asks",
+            "say": "This is question forty from JAMB twenty eleven. Choose the closest meaning of the word marked in the sentence. Read past the marked word to the rest of the line. He is saying something to the speaker about the way the speaker does things. Think about what kind of remark would fit.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "This",
+                "action": "Show the example for this step.",
+                "label": "Find what JAMB asks"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-8-q2",
+            "show": "Check the printed answer",
+            "say": "{{word:compliment}} means praise. {{word:complement}} means go well with or complete. Those spellings change by only one letter, so option A makes a convincing trap. Option B suggests copying. Option C suggests causing dislike. Option D gives the meaning of the marked word and agrees with the printed key.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "{{word:compliment}}",
+                "action": "Show the example for this step.",
+                "label": "Check the printed answer"
+              }
+            ]
+          }
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ],
+        "promptFormatting": [
+          {
+            "style": "italic",
+            "start": 3,
+            "end": 14
+          }
+        ]
+      },
+      "syllabus": "Use context and word class to distinguish homophones and easily confused words.",
+      "tryIt": {
+        "prompt": "Which word fits? The pens and envelopes are in the ___ cupboard.",
+        "options": [
+          "stationary",
+          "stationery"
+        ],
+        "answerIndex": 1,
+        "feedback": "Pens and envelopes are stationery. Stationary describes something that stays still."
+      }
+    },
+    {
+      "id": "english-foundations-9",
+      "title": "Spot a misspelt word",
+      "hook": "When all four options look almost right, what should you check first?",
+      "idea": "Compare options letter by letter and use a short checklist.",
+      "scenes": [
+        {
+          "id": "english-foundations-9-s1",
+          "show": "Check double letters",
+          "say": "Read the full sentence so you know which word you are trying to find. Start at the left of the choices and point to each letter in turn. For {{word:accommodate}}, circle both joins where the letters double. Check the number of each letter as you move.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Read",
+              "action": "Show the example for this step.",
+              "label": "Check double letters"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-9-s2",
+          "show": "Check silent letters and letter order",
+          "say": "Look for a silent letter that could drop out, such as the b in {{word:debt}}. Then find any ie or ei. Check their order against a word you have learnt, as in {{word:seize}}. An unusual order can still be the one you need.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Look",
+              "action": "Show the example for this step.",
+              "label": "Check silent letters and letter order"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-9-s3",
+          "show": "Check the ending and the weak vowel",
+          "say": "Compare the final letters of each choice. Say {{word:separate}} as an adjective, as in {{word:separate}} rooms. The final weak vowel sound is written with a. Build {{word:definitely}} from {{word:definite}} and ly. The weak uh sound just before t is written with i. Check the spelling with your eyes.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Compare",
+              "action": "Show the example for this step.",
+              "label": "Check the ending and the weak vowel"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-9-s4",
+          "show": "Run the five checks again",
+          "say": "Double letters, silent letters, ie or ei, the ending, and the hidden uh vowel. Look for the first position where the options differ. Decide which letter belongs there. Move on to the next difference and check that your last choice still fits the sentence.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "Double",
+              "action": "Show the example for this step.",
+              "label": "Run the five checks again"
+            }
+          ]
+        }
+      ],
+      "misconception": {
+        "wrong": "The option that looks familiar at a glance is usually right.",
+        "correction": "Compare each position where the available spellings differ."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 74,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 41,
+          "keyPage": 45,
+          "yearPage": 24,
+          "instructionsPage": 39
+        },
+        "instructions": "In each of question 66 to 85, choose the option that best complete the gap",
+        "prompt": "There are many ways to kill a rat, so we should be …. In our approach to the task ahead of us",
+        "options": [
+          "ecletic",
+          "eclectic",
+          "eclektic",
+          "eclectik"
+        ],
+        "answer": "B",
+        "scenes": [
+          {
+            "id": "english-foundations-9-q1",
+            "show": "Find what JAMB asks",
+            "say": "This is question seventy-four from JAMB twenty eleven. The four options have almost the same shape. Cover everything after the first few letters and uncover one letter at a time. We need {{word:eclectic}}, which describes an approach that draws from a range of ideas or methods. Find the spelling the dictionary would list.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "This",
+                "action": "Show the example for this step.",
+                "label": "Find what JAMB asks"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-9-q2",
+            "show": "Check the printed answer",
+            "say": "Option A drops the c before t. Option C puts k where that middle c belongs. Option D swaps the last c for k. The last part of the word sounds as if it could end with k. Check the spelling of the ending and keep the final c. The key gives B.",
+            "visual": "english-text",
+            "beats": [
+              {
+                "word": "Option",
+                "action": "Show the example for this step.",
+                "label": "Check the printed answer"
+              }
+            ]
+          }
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ]
+      },
+      "syllabus": "Identify the correctly spelt option when choices differ by only one or two letters.",
+      "tryIt": {
+        "prompt": "Which spelling keeps the whole base definite before -ly?",
+        "options": [
+          "definately",
+          "definitely",
+          "definitly"
+        ],
+        "answerIndex": 1,
+        "feedback": "Write definite + ly. The base keeps its middle i and its final e."
+      }
+    },
+    {
+      "id": "english-foundations-10",
+      "title": "From syllables to stress",
+      "hook": "What changes between a record and the verb record?",
+      "idea": "Find the strongest syllable in a word, then listen for the word a speaker stresses in a sentence.",
+      "scenes": [
+        {
+          "id": "english-foundations-10-oral-4-s1",
+          "show": "First syllables enlarge while the remaining syllables recede. Reveal the dictionary mark after the examples.",
+          "say": "Listen to {{word:table}}, {{word:window}}, {{word:doctor}}, {{word:morning}}, {{word:mother}} and {{word:teacher}}. Tap once when you hear the strongest beat. It comes first in these words. If you give both syllables equal weight, let the other beat fall away. That strong beat is the main stress. Look for the mark ˈ just before it.",
+          "visual": "syllable-stress",
+          "beats": [
+            {
+              "word": "mark",
+              "action": "Draw ˈ before the first syllable on each card.",
+              "label": "Hear the first beat"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-10-oral-4-s2",
+          "show": "Two-syllable cards appear. The highlight waits until the second syllable.",
+          "say": "Now hear {{word:begin}}, {{word:arrive}}, {{word:reply}} and {{word:asleep}}. Tap the stronger beat again. This time it comes second. Listen to {{word:banana}}, {{word:computer}}, {{word:tomorrow}} and {{word:remember}}. They also put the main stress on the second syllable. Count from the start before you place the mark.",
+          "visual": "syllable-stress",
+          "beats": [
+            {
+              "word": "second",
+              "action": "Move the highlight from the first beat to the second.",
+              "label": "Hear a later beat"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-10-oral-4-s3",
+          "show": "Matching word cards join in a row and the strongest highlight moves along the row.",
+          "say": "Listen to {{word:photograph}}, {{word:photography}} and {{word:photographic}}. Watch the strong beat move along the family. If the shared spelling makes you keep the stress in one place, tap again. Hear {{word:education}}, {{word:information}}, {{word:invitation}} and {{word:celebration}}. In these words the beat before the last syllable is strongest.",
+          "visual": "syllable-stress",
+          "beats": [
+            {
+              "word": "before",
+              "action": "Pulse the main beat on each card.",
+              "label": "Follow the word family"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-10-oral-4-s4",
+          "show": "The two printed record cards flip between a thing and an action. The strong beat moves.",
+          "say": "Hear {{word:record-noun}} as a thing you keep. Now hear {{word:record-verb}} as an action you do. Try {{word:present-noun}} as a gift and {{word:present-verb}} as an action. The spelling stays the same while the strong beat switches place. Use the meaning to pick the clip.",
+          "visual": "syllable-stress",
+          "beats": [
+            {
+              "word": "switches",
+              "action": "Move the main stress mark from the first syllable to the second.",
+              "label": "Let meaning guide the beat"
+            }
+          ]
+        },
+        {
+          "id": "english-foundations-10-s1",
+          "show": "Use stress patterns as clues",
+          "say": "The syllable before ic often takes stress, as in {{word:atomic}}, though {{word:catholic}} differs. Compound nouns usually stress the first part, as in {{word:blackboard}}. Stress a whole word to signal contrast. Compare the later stress in {{word:afternoon}}.",
+          "visual": "english-text",
+          "beats": [
+            {
+              "word": "The",
+              "action": "Show the example for this step.",
+              "label": "Use stress patterns as clues"
+            }
+          ]
+        }
+      ],
+      "misconception": {
+        "wrong": "Each syllable should get the same beat, or the last syllable is always strongest.",
+        "correction": "Listen for the strongest beat. The main stress depends on the word and sometimes its use."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 95,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 44,
+          "keyPage": 45,
+          "yearPage": 24,
+          "paperType": "D",
+          "instructionsPage": 44
+        },
+        "instructions": "In each of the question 95 to 97, choose the appropriate stress pattern from the option. The syllables are written in capital letters.",
+        "prompt": "Termination",
+        "options": [
+          "terminaTION",
+          "TERmination",
+          "termiNAtion",
+          "terMInation"
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ],
+        "answer": "C",
+        "scenes": [
+          {
+            "id": "english-foundations-10-oral-4-q1",
+            "show": "Show the printed stem and options, then add a separate four-part beat strip below them.",
+            "say": "This question is from JAMB twenty eleven. Listen to {{word:termination}}. Tap along as you hear four syllables. The first may sound a little strong, but keep listening for the strongest beat. Hear {{word:termination}} again. Your main tap falls on the third syllable. The last syllable follows it with a lighter beat.",
+            "visual": "syllable-stress",
+            "beats": [
+              {
+                "word": "third",
+                "action": "Expand the third block on the beat strip.",
+                "label": "Hear the strongest syllable"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-10-oral-4-q2",
+            "show": "A highlight steps through the four printed patterns, ending at the one matching the beat strip.",
+            "say": "Look at the capital letters in each option. A puts the strongest beat fourth. B puts it first. D puts it second. In C the third syllable is in capitals. That agrees with the clip and the primary stress mark in the dictionary. Choose C.",
+            "visual": "syllable-stress",
+            "beats": [
+              {
+                "word": "Choose",
+                "action": "Line up option C with the expanded third block.",
+                "label": "Match the capitals to the beat"
+              }
+            ]
+          }
+        ]
+      },
+      "syllabus": "Locate primary word stress and interpret the contrast carried by emphatic stress.",
+      "tryIt": {
+        "prompt": "Where does the main stress fall in the noun record?",
+        "options": [
+          "REcord",
+          "reCORD",
+          "Both syllables equally"
+        ],
+        "answerIndex": 0,
+        "feedback": "REcord names a thing. The verb reCORD puts the main stress on the second syllable."
+      },
+      "supplement": {
+        "title": "Emphatic stress",
+        "scenes": [
+          {
+            "id": "english-foundations-10-oral-5-s1",
+            "show": "Show “She will buy a book.” A pencil appears beside a book. BOOK grows while the other words stay the same size.",
+            "say": "Hear {{word:book}} and {{word:pencil}}. Read the line on screen. Say it back with the biggest beat on the first word you heard. You are correcting what the person will buy. That special weight on a whole word is emphatic stress. Let the surrounding words go by more lightly.",
+            "visual": "sentence-stress",
+            "beats": [
+              {
+                "word": "weight",
+                "action": "Make BOOK grow as the pencil fades.",
+                "label": "Spot the correction"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-10-oral-5-s2",
+            "show": "In “She will buy a book” the highlight moves between SHE and BUY. A different person icon and a book-sale card appear in turn.",
+            "say": "Hear {{word:she}}, {{word:buy}} and {{word:sell}}. The first clip can settle who will act. The second clip corrects the third because it changes the action. In the sentence on screen, move the big beat first to the person, then to the action. If every word is equally strong, the listener has to guess.",
+            "visual": "sentence-stress",
+            "beats": [
+              {
+                "word": "move",
+                "action": "Shift the beat between SHE and BUY.",
+                "label": "Move the strong beat"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-10-oral-5-s3",
+            "show": "Show “She will buy the blue bag.” Two colour cards appear next to the same bag. The colour highlight grows and the bag stays fixed.",
+            "say": "Hear {{word:blue}} and {{word:red}}, then {{word:bag}} and {{word:dress}}. Give the colour the strong beat on screen. A different colour would now be the right contrast. If you swap the item instead, you have changed a different part of the message. Keep the other details fixed while you test the contrast.",
+            "visual": "sentence-stress",
+            "beats": [
+              {
+                "word": "colour",
+                "action": "Replace red with blue while the bag remains.",
+                "label": "Test one contrast at a time"
+              }
+            ]
+          },
+          {
+            "id": "english-foundations-10-oral-5-s4",
+            "show": "Show “She will buy a book today.” Three answer cards slide in. Two keep the same day and one changes it. The changed day locks to the highlighted word.",
+            "say": "Hear {{word:today}}, {{word:yesterday}} and ~Monday. Now put the strong beat on the first of these in the sentence on screen. The other two times make sensible contrasts. If a question repeats the stressed time and asks about the thing for sale, the contrast goes in the wrong place.",
+            "visual": "sentence-stress",
+            "beats": [
+              {
+                "word": "wrong",
+                "action": "Move the card that changes the time under TODAY.",
+                "label": "Avoid the repeated-word trap"
+              }
+            ]
+          }
+        ],
+        "pastQuestion": {
+          "year": 2012,
+          "number": 100,
+          "source": {
+            "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+            "page": 67,
+            "keyPage": 68,
+            "yearPage": 46,
+            "paperType": "YELLOW",
+            "instructionsPage": 67
+          },
+          "instructions": "In each of questions 98 to 100, the word in capital letters has the emphatic stress. Choose the option to which the given sentence relates.",
+          "prompt": "The cat DEVOURED the rat.",
+          "options": [
+            "Did the rat devoured the cat?",
+            "What devoured the rat?",
+            "Did the cat pet the rat?",
+            "Is this the rat the cat devoured?"
+          ],
+          "optionLabels": [
+            "(a)",
+            "(b)",
+            "(c)",
+            "(d)"
+          ],
+          "answer": "C",
+          "scenes": [
+            {
+              "id": "english-foundations-10-oral-5-q1",
+              "show": "Show the full printed question and options. Keep DEVOURED bold and pulse it once while the rest stays still.",
+              "say": "This question is from JAMB twenty twelve. Look at the capital letters. The stress falls on the action. Hear {{word:cat}}, {{word:devoured}} and {{word:rat}} from the statement. Now hear the action in option C, {{word:pet}}. That option keeps the same animals and offers a different action. The statement corrects it by putting the strong beat on {{word:devoured}}.",
+              "visual": "sentence-stress",
+              "beats": [
+                {
+                  "word": "different",
+                  "action": "Link PET to DEVOURED with a single arrow.",
+                  "label": "Spot the action in capitals"
+                }
+              ]
+            },
+            {
+              "id": "english-foundations-10-oral-5-q2",
+              "show": "Dim A, B and D in turn, then highlight C and show a short action label beside it.",
+              "say": "A swaps the animals. B asks what did the action. D asks which rat it was. Each looks for a different detail. Ask what changed in the best option. Only C questions the action with the same animals. Choose C.",
+              "visual": "sentence-stress",
+              "beats": [
+                {
+                  "word": "Choose",
+                  "action": "Lock the arrow between the two actions and light C.",
+                  "label": "Reject changes to the animals"
+                }
+              ]
+            }
+          ],
+          "promptFormatting": [
+            {
+              "style": "bold",
+              "start": 8,
+              "end": 16
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

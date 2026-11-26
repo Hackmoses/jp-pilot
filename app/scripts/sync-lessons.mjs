@@ -17,15 +17,37 @@ const clips = new Map(list.map((clip) => {
 }))
 await mkdir(output, { recursive: true })
 const index = []
+const wordBank = JSON.parse(await readFile(new URL('english-oral-words.json', bank), 'utf8'))
+const audioWords = new Set(await readdir(new URL('../public/audio/words/', import.meta.url)).catch((error) => {
+  if (error.code === 'ENOENT') return []
+  throw error
+}))
+const sceneList = ({ scenes, pastQuestion }) => [...scenes, ...pastQuestion?.scenes ?? []]
 for (const name of (await readdir(bank)).filter((file) => file.endsWith('.json')).sort()) {
   const text = await readFile(new URL(name, bank), 'utf8')
   const topic = JSON.parse(text)
-  const lessons = topic.lessons.map(({ id, title, scenes, pastQuestion }) => ({
-    id, title, sceneIds: [...scenes, ...pastQuestion?.scenes ?? []].map((scene) => scene.id),
+  // The oral word bank is a pronunciation index, not a lesson topic.
+  if (Array.isArray(topic)) continue
+  const foundations = name === 'english-foundations.json'
+  const lessonScenes = (lesson) => [
+    ...sceneList(lesson),
+    ...lesson.supplement ? sceneList(lesson.supplement) : [],
+  ]
+  const lessons = topic.lessons.map((lesson) => ({
+    id: lesson.id, title: lesson.title, sceneIds: lessonScenes(lesson).map((scene) => scene.id),
   }))
   const entries = lessons.flatMap(({ sceneIds }) => sceneIds.flatMap((id) => clips.has(id) ? [[id, clips.get(id)]] : []))
   // Include only this topic's audio timings. The topic remains the only data request.
-  await writeFile(new URL(name, output), entries.length ? JSON.stringify({ ...topic, clips: Object.fromEntries(entries) }) : text)
+  const data = { ...topic }
+  if (entries.length) data.clips = Object.fromEntries(entries)
+  if (foundations) {
+    const pronunciations = new Set(topic.lessons.flatMap(lessonScenes).flatMap(({ say }) =>
+      Array.from(say.matchAll(/\{\{word:([\w-]+)\}\}/g), ([, id]) => id)))
+    data.words = Object.fromEntries(wordBank.filter(({ id }) => pronunciations.has(id)).map(({ id, word, ipa, stress }) =>
+      [id, { word, ipa, stress, ...(audioWords.has(id + '.webm') ? { audio: true } : {}) }]))
+    if (Object.keys(data.words).length !== pronunciations.size) throw new Error('Foundations references a missing pronunciation')
+  }
+  await writeFile(new URL(name, output), foundations || entries.length ? JSON.stringify(data) : text)
   index.push({ subject: topic.subject, topicId: topic.topicId, file: name, lessons })
 }
 await writeFile(new URL('index.json', output), JSON.stringify(index, null, 2) + '\n')

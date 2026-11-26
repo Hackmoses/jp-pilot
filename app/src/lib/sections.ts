@@ -138,3 +138,12 @@ export function conceptLessonTopic(subject: string, chapter: string) {
   if (subject === 'physics' && chapter === '12') return 'physics-12-waves'
   if (subject === 'chemistry' && chapter === '2') return 'chemistry-2-mole'
 }
+
+// Try it ids per topic (null is the first card, saved under the topic key). Kept in step with
+// the Try it list by a test, so the Study page can show progress without loading Try it code.
+export const STUDY_TRY_IDS: Record<string, Record<string, (string | null)[]>> = {
+  chemistry: { '2': [null, 'limiting'], '3': [null, 'diffusion', 'partial-pressure'], '11': ['freezing'], '13': [null], '14': [null], '15': [null] },
+  physics: { '2': ['relative-velocity', 'free-fall'], '5': ['pulley'], '17': ['capacitors'], '14': [null], '18': [null], '12': [null] },
+  biology: { '1': [null], '10': ['punnett'] },
+  mathematics: { '1': [null], '3': ['indices'] },
+}

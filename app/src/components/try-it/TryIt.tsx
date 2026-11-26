@@ -19,16 +19,18 @@ type TryItProps = InteractiveProps & {
   context: string
   prediction: { question: string; choices: readonly string[]; correct: number; why: string; action: string; observed: boolean }
   missions: readonly [Mission, Mission & { baseline: boolean; reason: Reason }, Mission & { trap: string; answer?: Reason }]
-  explain: Reason & { feedback: readonly [string, string] }
+  explain: { question: string; choices: readonly string[]; correct: number; feedback: readonly string[] }
+  mode?: 'simulation' | 'exercise'
   formulas: readonly string[]
-  children: (unlocked: boolean) => ComponentChildren
+  children: (unlocked: boolean, challenge: number) => ComponentChildren
 }
 
 export function near(value: number, target: number, tolerance = 0) {
   return Math.abs(value - target) <= tolerance + Number.EPSILON * Math.max(1, Math.abs(target))
 }
 
-export function TryIt({ aim, context, prediction, missions, explain, formulas, practiceHref, onComplete, onRestart, children }: TryItProps) {
+export function TryIt({ aim, context, prediction, missions, explain, formulas, practiceHref, onComplete, onRestart, mode = 'simulation', children }: TryItProps) {
+  const simulation = mode === 'simulation'
   const body = useRef<HTMLDivElement>(null)
   const [picked, setPicked] = useState<number | null>(null)
   const [observed, setObserved] = useState(false)
@@ -51,6 +53,7 @@ export function TryIt({ aim, context, prediction, missions, explain, formulas, p
       : phase === 3 ? explain.question : 'Free play. Change the controls and watch what happens.'
 
   // One clear next action, always in the same place, and the part of the screen it points at.
+  const explained = explainPick !== null && (simulation || explainPick === explain.correct)
   const step = !unlocked ? 0 : !observed ? 1 : phase < 3 ? 2 : 3
   const now: { label: string; text: string; target: 'choices' | 'controls' | 'button' | 'reason' | 'explain' | null } =
     !unlocked ? { label: 'Step 1 · Predict', text: 'Pick what you think will happen. Being wrong is fine, that is how you learn.', target: 'choices' }
@@ -62,7 +65,7 @@ export function TryIt({ aim, context, prediction, missions, explain, formulas, p
               text: mission.goal + (!reached ? '' : choice && reasonPick === null ? ' Now answer the question below.' : ' Now press Check mission.'),
               target: !reached ? 'controls' : choice && reasonPick === null ? 'reason' : 'button',
             }
-              : explainPick === null ? { label: 'Step 4 · Explain', text: 'Choose the reason that explains what you saw.', target: 'explain' }
+              : explainPick === null || !simulation && explainPick !== explain.correct ? { label: 'Step 4 · Explain', text: 'Choose the reason that explains what you saw.', target: 'explain' }
                 : { label: 'Finished', text: 'You have done this practical. Practise the topic, or try it again to see it once more.', target: null }
 
   useEffect(() => {
@@ -78,7 +81,7 @@ export function TryIt({ aim, context, prediction, missions, explain, formulas, p
     if (reached && (!choice || reasonPick === choice.correct)) {
       setPassed(true)
       body.current?.querySelectorAll<HTMLElement>('.jp-try-values').forEach((reading) => pulse(reading, 'confirmed'))
-      if (phase === 2) onComplete()
+      if (phase === 2 && simulation) onComplete()
     } else {
       setAttempts(attempts + 1)
     }
@@ -96,7 +99,7 @@ export function TryIt({ aim, context, prediction, missions, explain, formulas, p
       <p class="jp-try-aim"><span class="jp-try-kicker">Your goal</span> {renderMathText(aim)}</p>
       <ol class="jp-try-steps" aria-label="Steps">
         {['Predict', 'Watch', 'Missions', 'Explain'].map((name, index) => <li key={name}
-          data-state={index < step || (index === 3 && explainPick !== null) ? 'done' : index === step ? 'now' : 'next'}
+          data-state={index < step || (index === 3 && explained) ? 'done' : index === step ? 'now' : 'next'}
           aria-current={index === step ? 'step' : undefined}>
           {name}{index === 2 && phase >= 0 && phase < 3 ? ` ${Math.min(phase + Number(passed), 3)}/3` : ''}
         </li>)}
@@ -106,11 +109,11 @@ export function TryIt({ aim, context, prediction, missions, explain, formulas, p
         <summary>ⓘ How to use this</summary>
         <ul>
           <li><strong>Predict</strong> first. The controls unlock after you choose.</li>
-          <li><strong>Pause / Play</strong> stops or starts the animation.</li>
+          {simulation && <><li><strong>Pause / Play</strong> stops or starts the animation.</li>
           <li><strong>0.25×</strong> plays it in slow motion.</li>
           <li><strong>Step</strong> moves one small step at a time.</li>
           <li><strong>Replay</strong> runs the animation again from the start.</li>
-          <li><strong>ⓘ</strong> beside a control explains what it changes.</li>
+          <li><strong>ⓘ</strong> beside a control explains what it changes.</li></>}
           <li><strong>Restart</strong> at the top clears everything so you can try again.</li>
         </ul>
       </details>
@@ -133,7 +136,8 @@ export function TryIt({ aim, context, prediction, missions, explain, formulas, p
         </div>
         <ReadInstruction text={now.text || instruction} />
       </div>
-      <Playback unlocked={unlocked}>{children(unlocked)}</Playback>
+      {simulation ? <Playback unlocked={unlocked}>{children(unlocked, 0)}</Playback>
+        : <fieldset class="jp-try-word-controls" disabled={!unlocked}>{children(unlocked, Math.min(phase + 1, 3))}</fieldset>}
       {formulas.length > 0 && <div class="jp-try-formulas-box">
         <span class="jp-try-formulas-label">Key formulas</span>
         <div class="jp-try-formulas">
@@ -163,13 +167,16 @@ export function TryIt({ aim, context, prediction, missions, explain, formulas, p
         <p class="jp-mode-studied">✓ All three missions complete</p>
         <span class="jp-try-kicker">Explain why</span>
         <p class="jp-try-question">{renderMathText(explain.question)}</p>
-        <Choices label="Explain why" choices={explain.choices} picked={explainPick} onPick={setExplainPick} />
+        <Choices label="Explain why" choices={explain.choices} picked={explainPick} onPick={(choice) => {
+          setExplainPick(choice)
+          if (!simulation && choice === explain.correct && !explained) onComplete()
+        }} />
         {explainPick !== null && <>
           <p class="jp-try-outcome jp-try-outcome--info" role="status">{renderMathText(explain.feedback[explainPick])}</p>
-          <div class="jp-pills">
+          {explained && <div class="jp-pills">
             <a class="jp-btn jp-btn--primary" href={practiceHref}>Practise this</a>
             {onRestart && <button type="button" class="jp-btn" onClick={onRestart}>Try it again</button>}
-          </div>
+          </div>}
         </>}
       </div>}
     </div>

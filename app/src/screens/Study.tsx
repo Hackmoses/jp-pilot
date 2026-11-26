@@ -1,14 +1,15 @@
 import { useEffect } from 'preact/hooks'
-import { LessonList } from '../components/lessons/LessonList'
-import { TryItCard, studyInteractives } from '../components/try-it/TryItCard'
+import { foundationSection } from '../components/lessons/foundations-topics'
 import cardIndex from '../lib/card-index.json'
 import { cardReviews } from '../lib/leitner'
 import { lazyView } from '../lib/lazyView'
-import { conceptLessonTopic, ENGLISH_CARD_TOPICS, STUDY_TOPICS, syllabusSections } from '../lib/sections'
-import { chapterName, hasCompletedInteractive, hasStartedConceptTopic, hasStudied, remember, studyLink } from '../lib/modes'
+import { conceptLessonTopic, ENGLISH_CARD_TOPICS, STUDY_TOPICS, STUDY_TRY_IDS, syllabusSections } from '../lib/sections'
+import { chapterName, hasCompletedConceptLesson, hasCompletedInteractive, hasStartedConceptLesson, hasStartedConceptTopic, hasStudied, remember, studyLink } from '../lib/modes'
 import { getSubject } from '../lib/subjects'
 import { ModeCard, Panel } from './Modes'
 
+const foundationTopic = lazyView(() => import('../components/lessons/FoundationTopic').then(({ FoundationTopic }) => FoundationTopic))
+const chapterStudy = lazyView(() => import('./ChapterStudy').then(({ ChapterStudy }) => ChapterStudy))
 const cardViewer = lazyView(() => import('../components/cards/CardViewer').then(({ CardViewer }) => CardViewer))
 
 function EnglishCards({ deck, back, open }: { deck: string; back: string; open: boolean }) {
@@ -31,52 +32,52 @@ function EnglishCards({ deck, back, open }: { deck: string; back: string; open: 
 // Study uses lessons, Try it and word cards.
 export function Study({ params }: { params: URLSearchParams }) {
   const subject = params.get('subject') ?? 'chemistry'
-  const chapter = params.get('chapter')
+  const chapter = params.get('chapter') ?? (subject === 'english' ? params.get('unit') : null)
   const tryIt = params.get('try')
   const deck = subject === 'english' && chapter ? ENGLISH_CARD_TOPICS[chapter] : undefined
+  const foundation = subject === 'english' ? foundationSection.chapters.find(({ id }) => id === chapter) : undefined
+  const { View: Foundation, failed: foundationFailed } = foundationTopic.useView(Boolean(foundation))
+  const { View: Chapter, failed: chapterFailed } = chapterStudy.useView(Boolean(chapter && subject !== 'english'))
   const sectionsForSubject = syllabusSections(subject, true)
   const subjectName = getSubject(subject)?.name ?? subject
   const topics = new Set(STUDY_TOPICS[subject] ?? [])
   const subjectHref = '#/study?subject=' + encodeURIComponent(subject)
-  const practiceHref = (id?: string) => '#/practice?' + new URLSearchParams(id ? { subject, chapter: id } : { subject })
+  const practiceHref = '#/practice?' + new URLSearchParams({ subject })
 
   useEffect(() => {
     if (chapter && topics.has(chapter)) {
       const title = sectionsForSubject.flatMap(({ chapters }) => chapters).find(({ id }) => id === chapter)?.title
       remember(studyLink(subject, chapter), 'Study · ' + (title ?? chapterName(subject, chapter)))
     }
-    if (tryIt === 'gas-laws') document.getElementById(tryIt)?.scrollIntoView({ block: 'start' })
-  }, [subject, chapter, tryIt])
+  }, [subject, chapter])
+
+  if (foundation) return <Panel title={foundation.title} subtitle={foundationSection.title} back={subjectHref}>
+    {Foundation ? <Foundation chapter={foundation.id} title={foundation.title} />
+      : <p class="jp-mode-lead" role="status">{foundationFailed ? 'Could not open this topic. Reload to try again.' : 'Loading topic…'}</p>}
+  </Panel>
 
   if (chapter && deck) {
     return <EnglishCards deck={deck} back={studyLink(subject, chapter)} open={params.has('cards')} />
   }
 
-  if (chapter && subject !== 'english') {
-    const file = conceptLessonTopic(subject, chapter)
-    const interactives = studyInteractives(subject, chapter)
-    return (
-      <Panel title={chapterName(subject, chapter)} subtitle={subjectName} back={subjectHref}>
-        <div class="jp-mode-list">
-          <h2 class="jp-revisit-title">Concept lessons</h2>
-          {file ? <LessonList key={file} file={file} subject={subject} chapter={chapter} />
-            : <p class="jp-mode-lead">Short animated lessons for this topic are coming soon.</p>}
-          {interactives.length > 0 && <>
-            <h2 class="jp-revisit-title">{file ? 'Try it after the lesson' : 'Try it yourself'}</h2>
-            {interactives.map((interactive) => <TryItCard key={interactive.id ?? interactive.title}
-              interactive={interactive} subject={subject} chapter={chapter} />)}
-          </>}
-          <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref(chapter)}>Practise this topic →</a>
-        </div>
-      </Panel>
-    )
-  }
+  if (chapter && subject !== 'english') return <Panel title={chapterName(subject, chapter)} subtitle={subjectName} back={subjectHref}>
+    {Chapter ? <Chapter subject={subject} chapter={chapter} tryIt={tryIt} />
+      : <p class="jp-mode-lead" role="status">{chapterFailed ? 'Could not open this topic. Reload to try again.' : 'Loading topic…'}</p>}
+  </Panel>
 
   const sections = sectionsForSubject.map((section) => ({
     ...section, chapters: section.chapters.filter((entry) => topics.has(entry.id)),
   })).filter((section) => section.chapters.length)
+  if (subject === 'english') sections.unshift(foundationSection)
+  const foundationIds = new Set(foundationSection.chapters.map(({ id }) => id))
   // Completed only when everything in the topic is done; anything less that has begun is in progress.
   const progressOf = (id: string): 'none' | 'progress' | 'done' => {
+    if (subject === 'english' && foundationIds.has(id)) {
+      const lesson = hasCompletedConceptLesson(id)
+      const tryIt = hasCompletedInteractive(subject, id)
+      if (lesson && tryIt) return 'done'
+      return lesson || tryIt || hasStartedConceptLesson(id) ? 'progress' : 'none'
+    }
     if (subject === 'english') {
       const deck = ENGLISH_CARD_TOPICS[id]
       const reviews = Object.values(cardReviews(deck))
@@ -85,8 +86,8 @@ export function Study({ params }: { params: URLSearchParams }) {
       const needed = entry?.available ?? entry?.count ?? Infinity
       return reviews.filter(({ box }) => box > 1).length >= needed ? 'done' : 'progress'
     }
-    const tries = studyInteractives(subject, id)
-    const triesDone = tries.filter((item) => hasCompletedInteractive(subject, id, item.id)).length
+    const tries = STUDY_TRY_IDS[subject]?.[id] ?? []
+    const triesDone = tries.filter((tryId) => hasCompletedInteractive(subject, id, tryId ?? undefined)).length
     const hasLessons = Boolean(conceptLessonTopic(subject, id))
     const lessonsDone = !hasLessons || hasStudied(subject, id)
     if (lessonsDone && triesDone === tries.length && (hasLessons || tries.length > 0)) return 'done'
@@ -101,7 +102,7 @@ export function Study({ params }: { params: URLSearchParams }) {
     <Panel title={subjectName + ' study'} back="#/subjects?mode=study">
       {total === 0 ? <>
         <p class="jp-mode-lead">Lessons for {subjectName} are coming soon.</p>
-        <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref()}>Practise {subjectName} →</a>
+        <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref}>Practise {subjectName} →</a>
       </> : <>
         <section class="jp-card" aria-label="Study progress">
           <p class="jp-summary-sub">{studied} of {total} topics completed</p>

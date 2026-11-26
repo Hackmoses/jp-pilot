@@ -1,0 +1,711 @@
+{
+  "subject": "english",
+  "topicId": "C",
+  "lessons": [
+    {
+      "id": "english-oral-1",
+      "title": "Pure vowels",
+      "hook": "Listen to bird and bed. Can you hear what changes in the middle?",
+      "idea": "A pure vowel holds one sound quality. Listen to the middle of the word and keep the mouth shape steady.",
+      "scenes": [
+        {
+          "id": "english-oral-1-s1",
+          "show": "The words bird, bed, nurse, shirt and red appear as the mouth diagram switches between two held positions.",
+          "say": "Listen to {{word:bird}} and {{word:bed}}. Now hear {{word:nurse}} and {{word:shirt}}. They group with the first word. Hear {{word:red}}. They group with the second. If the two vowels sound alike in your speech, keep the tongue farther forward for /e/. Hold /ɜː/ in the centre. Both are pure vowels. The sound stays steady.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "steady",
+              "action": "Group the five cards under /ɜː/ or /e/.",
+              "label": "Hold a vowel steady"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-1-s2",
+          "show": "Two word rows light up in turn as the tongue marker shifts down and back slightly.",
+          "say": "Hear {{word:seat}}, {{word:sheep}} and {{word:beat}}. Now hear {{word:sit}}, {{word:ship}} and {{word:bit}}. The first row has /iː/. The second has /ɪ/. If you use the same vowel for both rows, relax the tongue and make the second vowel shorter.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "shorter",
+              "action": "Reveal /iː/ and /ɪ/ under the two rows.",
+              "label": "High front vowels"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-1-s3",
+          "show": "A mouth diagram changes from tight rounding to looser rounding as cards switch columns.",
+          "say": "Hear {{word:fool}}, {{word:pool}} and {{word:food}}. Compare {{word:full}}, {{word:pull}} and {{word:good}}. If the vowels merge, keep /uː/ longer and use a shorter, more relaxed /ʊ/ in the second row.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "relaxed",
+              "action": "Reveal /uː/ and /ʊ/ on the sorted cards.",
+              "label": "Rounded vowels"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-1-s4",
+          "show": "A jaw guide opens as paired cards swap places. Each card lights its middle vowel.",
+          "say": "Hear {{word:cup}} and {{word:cut}}. Now hear {{word:cap}} and {{word:cat}}. If /ʌ/ comes out like /æ/, open the jaw more and move the tongue forward for /æ/.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "forward",
+              "action": "Move the tongue marker forward as the jaw opens.",
+              "label": "Jaw opening"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-1-s5",
+          "show": "Duration bars and lip shapes change as the three pairs play.",
+          "say": "Hear {{word:cot}} and {{word:caught}}, {{word:pot}} and {{word:port}}, then {{word:hot}} and {{word:heart}}. Keep /ɒ/ short and rounded. Hold rounded /ɔː/ longer in the first two pairs. Keep /ɑː/ open and unrounded in the last pair, even if you usually make these vowels alike.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "unrounded",
+              "action": "Open and unround the lips on the final word.",
+              "label": "Match back vowels"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-1-s6",
+          "show": "A full-size vowel marker shrinks as the first syllable of each word plays.",
+          "say": "Hear {{word:about}}, {{word:ago}}, {{word:again}} and {{word:alone}}. The first vowel relaxes to /ə/. If you give it a full vowel, the weak syllable stands out. Keep it light.",
+          "visual": "vowel-mouth",
+          "beats": [
+            {
+              "word": "light",
+              "action": "Shrink the first-syllable bar on each card.",
+              "label": "Let a weak vowel relax"
+            }
+          ]
+        }
+      ],
+      "formula": null,
+      "misconception": {
+        "wrong": "Pure vowels always sound alike if they are spelt alike, or if they are both short.",
+        "correction": "Match the sound you hear. The tongue, lips and length can all distinguish pure vowels."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 86,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 42,
+          "keyPage": 45,
+          "yearPage": 24,
+          "paperType": "D",
+          "instructionsPage": 42
+        },
+        "instructions": "In each of question 86 to 88, choose the option that has the same vowel sound as the one represented by the letter(s) underlined",
+        "prompt": "bubble",
+        "options": [
+          "guy",
+          "bull",
+          "bumper",
+          "gurgle"
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ],
+        "answer": "C",
+        "scenes": [
+          {
+            "id": "english-oral-1-q1",
+            "show": "Show the printed question and options. Keep the printed underline and light only the first vowel as the word plays.",
+            "say": "Listen to {{word:bubble}}. The underlined letter points to the first vowel. Hear it again in {{word:bubble}}, then compare it with {{word:cup}}. Keep that same short, steady sound in your ear. It is /ʌ/. Now compare {{word:guy}} and {{word:bull}}. The first one has a glide. The second one has short /ʊ/.",
+            "visual": "vowel-mouth",
+            "beats": [
+              {
+                "word": "second",
+                "action": "Move the first two options away from the target row.",
+                "label": "Hear the target vowel"
+              }
+            ]
+          },
+          {
+            "id": "english-oral-1-q2",
+            "show": "Slide options C and D beside the stem and animate the vowel labels as each plays.",
+            "say": "Now listen to {{word:bumper}} and {{word:gurgle}}. Which first vowel matches the question word? Hear {{word:bubble}} and {{word:bumper}} together. Both begin with the same consonant and the same vowel. The exercise asks for that vowel even if the rest of the word changes. Choose C.",
+            "visual": "vowel-mouth",
+            "beats": [
+              {
+                "word": "Choose",
+                "action": "Bring the target and option C into the same group.",
+                "label": "Find the matching vowel"
+              }
+            ]
+          }
+        ],
+        "promptFormatting": [
+          {
+            "style": "underline",
+            "start": 1,
+            "end": 2
+          }
+        ]
+      },
+      "jamb": [
+        "Match the underlined vowel by sound."
+      ],
+      "tryIt": null,
+      "syllabus": "Distinguish pure vowel sounds in spoken words."
+    },
+    {
+      "id": "english-oral-2",
+      "title": "Diphthongs",
+      "hook": "Listen for the vowel moving in day and go.",
+      "idea": "A diphthong glides from one vowel position towards another in one syllable.",
+      "scenes": [
+        {
+          "id": "english-oral-2-s1",
+          "show": "A single syllable bar stays in place while a dot travels forward on the mouth diagram.",
+          "say": "Hear {{word:day}}, {{word:rain}}, {{word:late}} and {{word:eight}}. The vowel moves towards the front and closes a little. We write it /eɪ/. If you hold the first sound steady, let the tongue rise before the syllable ends. Keep it all on one beat.",
+          "visual": "vowel-glide",
+          "beats": [
+            {
+              "word": "rise",
+              "action": "Move the dot smoothly through the single beat.",
+              "label": "Glide towards the front"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-2-s2",
+          "show": "Four cards slide into each of two columns as the mouth diagrams animate distinct starting shapes.",
+          "say": "Hear {{word:my}}, {{word:time}}, {{word:light}} and {{word:bike}}. The glide /aɪ/ starts open. Hear {{word:boy}}, {{word:coin}}, {{word:voice}} and {{word:choice}}. For /ɔɪ/, start with rounded lips. If you flatten the first glide or give both groups the same start, watch how the two starting shapes differ.",
+          "visual": "vowel-glide",
+          "beats": [
+            {
+              "word": "start",
+              "action": "Circle each starting position and trace the two paths.",
+              "label": "Start wide or rounded"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-2-s3",
+          "show": "Two rows of words roll in as lips go from relaxed or open to rounded.",
+          "say": "Hear {{word:go}}, {{word:home}}, {{word:boat}} and {{word:coat}}. Let the lips round as you move through /əʊ/. Hear {{word:now}}, {{word:cow}}, {{word:house}} and {{word:out}}. Start wider for /aʊ/. If the first row gets a steady vowel or the second gets two beats, make one smooth move.",
+          "visual": "vowel-glide",
+          "beats": [
+            {
+              "word": "smooth",
+              "action": "Sweep one arrow along each row in one beat.",
+              "label": "Glide towards rounded lips"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-2-s4",
+          "show": "Word cards appear at the outer points of a vowel diagram. Their arrows converge on the centre.",
+          "say": "Listen to {{word:near}}, {{word:here}} and {{word:fear}}. Then hear {{word:hair}}, {{word:care}} and {{word:chair}}. The dictionary shows /ɪə/ and /eə/. If the starts blur together, listen for the higher start of the first group. Let both glides finish gently in the centre.",
+          "visual": "vowel-glide",
+          "beats": [
+            {
+              "word": "centre",
+              "action": "Let the two arrows meet at the centre.",
+              "label": "Glide towards the centre"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-2-s5",
+          "show": "A dot travels from the rounded starting position to the centre as the symbol appears.",
+          "say": "Hear {{word:tour}}. The Cambridge UK clip uses /ʊə/. Start with rounded lips, then relax towards the centre in one beat. If you usually hold a rounded vowel here, follow the movement of the dot.",
+          "visual": "vowel-glide",
+          "beats": [
+            {
+              "word": "relax",
+              "action": "Trace the glide path in one beat.",
+              "label": "Recognise the variable glide"
+            }
+          ]
+        }
+      ],
+      "formula": null,
+      "misconception": {
+        "wrong": "A glide is two syllables, or can always be replaced by one steady vowel.",
+        "correction": "Keep the vowel moving within one syllable and listen for the direction of the glide."
+      },
+      "pastQuestion": {
+        "year": 2010,
+        "number": 87,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 21,
+          "keyPage": 23,
+          "yearPage": 2,
+          "instructionsPage": 21
+        },
+        "instructions": "In each of questions 86 to 88, choose the option that has the same Vowel sound as the one represented by the letters underlined.",
+        "prompt": "Indict",
+        "options": [
+          "bright",
+          "fish",
+          "pick",
+          "brick"
+        ],
+        "optionLabels": [
+          "A.",
+          "B.",
+          "C.",
+          "D."
+        ],
+        "answer": "A",
+        "scenes": [
+          {
+            "id": "english-oral-2-q1",
+            "show": "Show the printed question and options. Keep the underline exactly where printed. One beat lights under the second syllable of the stem.",
+            "say": "Listen to {{word:indict}}. The printed underline covers two letters, but there is one vowel to match. It is in the second syllable. Hear {{word:indict}} again. The vowel starts open and glides upwards, as it did in {{word:time}}. We write that sound /aɪ/. Which option has the same glide?",
+            "visual": "vowel-glide",
+            "beats": [
+              {
+                "word": "option",
+                "action": "Flash a single beat under the target syllable.",
+                "label": "Hear the second vowel"
+              }
+            ]
+          },
+          {
+            "id": "english-oral-2-q2",
+            "show": "Play options in order while their vowel paths draw beneath them. The three steady vowels then dim.",
+            "say": "Try {{word:bright}}, {{word:fish}}, {{word:pick}} and {{word:brick}}. Hear how the mouth moves in the first option. The other three have the steady vowel /ɪ/. Listen once more to {{word:indict}} and {{word:bright}}. The opening consonants differ and the spellings look different, but the vowel matches. Choose A.",
+            "visual": "vowel-glide",
+            "beats": [
+              {
+                "word": "Choose",
+                "action": "Join the two /aɪ/ paths and highlight A.",
+                "label": "Match the glide"
+              }
+            ]
+          }
+        ],
+        "promptFormatting": [
+          {
+            "style": "underline",
+            "start": 3,
+            "end": 5
+          }
+        ]
+      },
+      "jamb": [
+        "Match a diphthong across different spellings."
+      ],
+      "tryIt": null,
+      "syllabus": "Recognise vowel glides in spoken words."
+    },
+    {
+      "id": "english-oral-3",
+      "title": "Consonant sounds and silent letters",
+      "hook": "Listen to thin and tin. A small change at the teeth changes the word.",
+      "idea": "Listen for airflow, voicing and any actual consonant sound before looking at the letters.",
+      "scenes": [
+        {
+          "id": "english-oral-3-s1",
+          "show": "The tongue moves from behind the teeth to the tooth edge and a continuous air line appears.",
+          "say": "Hear {{word:thin}} and {{word:tin}}. Then hear {{word:three}} and {{word:tree}}. If you start both words in a pair with /t/, move the tongue tip to the edge of the front teeth. Let air keep flowing. That first sound in each pair is /θ/.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "flowing",
+              "action": "Extend the air line under both /θ/ words.",
+              "label": "Keep the air moving at the teeth"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-3-s2",
+          "show": "A throat light pulses with the voiced examples. The airflow line stays visible.",
+          "say": "Hear {{word:then}} and {{word:den}}. Next hear {{word:those}}, {{word:though}} and {{word:dough}}. If you hear or use /d/ for both starts, keep the tongue at the teeth and let the sound continue while your throat buzzes. That sound is /ð/. Hear it at the end of {{word:breathe}} and {{word:bathe}} too.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "buzzes",
+              "action": "Turn on the throat light as the voiced air line continues.",
+              "label": "Turn the voice on"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-3-s3",
+          "show": "The airflow line runs steadily for one row but shows a short closure and burst for the other.",
+          "say": "Hear {{word:shoe}} and {{word:chew}}, {{word:shop}} and {{word:chop}}, {{word:shin}} and {{word:chin}}. Hear {{word:wash}} and {{word:watch}}, then {{word:wish}} and {{word:witch}}. If those sounds run together, stretch the hiss for /ʃ/. For /tʃ/, close the air path briefly and release it into the hiss.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "release",
+              "action": "Animate one brief closure and release on the second row.",
+              "label": "Hiss or stop and release"
+            }
+          ],
+          "check": true
+        },
+        {
+          "id": "english-oral-3-s4",
+          "show": "Letters k, w, b and g fade from the words while the first or last audible consonant brightens.",
+          "say": "Hear {{word:knee}}, {{word:knife}}, {{word:knock}} and {{word:know}}. Now hear {{word:write}}, {{word:wrong}} and {{word:wrist}}. If you sound out every letter, start these groups straight on the sound you hear. Try {{word:lamb}}, {{word:comb}} and {{word:thumb}}. The final b stays silent. In {{word:sign}}, the g stays silent too.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "silent",
+              "action": "Fade the written letters and leave the audible consonants lit.",
+              "label": "Hear which consonant survives"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-3-s5",
+          "show": "The audible parts of each card light up, skipping the silent letter.",
+          "say": "Hear {{word:honest}}, {{word:hour}}, {{word:listen}}, {{word:castle}} and {{word:whistle}}. If the spelling makes you add a sound, match the clip. The first two start with a vowel. Watch the middle of the last three. The written t stays silent.",
+          "visual": "consonant-mouth",
+          "beats": [
+            {
+              "word": "middle",
+              "action": "Skip the printed t on each of the last three cards.",
+              "label": "Check the middle as well"
+            }
+          ]
+        }
+      ],
+      "formula": null,
+      "misconception": {
+        "wrong": "Every letter must be sounded, and similar consonants are interchangeable.",
+        "correction": "Check airflow and voicing. A silent letter has no sound."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 89,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 43,
+          "keyPage": 45,
+          "yearPage": 24,
+          "paperType": "D",
+          "instructionsPage": 43
+        },
+        "instructions": "In each of question 89 to 91, choose the option that has the consonant sound as the one represented by the letter(s) underlined",
+        "prompt": "mention",
+        "options": [
+          "that",
+          "machine",
+          "church",
+          "test"
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ],
+        "answer": "B",
+        "scenes": [
+          {
+            "id": "english-oral-3-q1",
+            "show": "Show the printed question with its original underlining. Add a moving air line beneath the middle of the stem.",
+            "say": "Hear {{word:mention}}. Focus on the consonant sound at the printed underline. Listen for the air before the last syllable ends. You can keep that hiss going. It is /ʃ/. Now hear {{word:that}} and {{word:machine}}. Listen past the spelling. One of these options has the same hiss in the middle.",
+            "visual": "consonant-mouth",
+            "beats": [
+              {
+                "word": "hiss",
+                "action": "Trace the same continuous-air line on option B.",
+                "label": "Isolate the target consonant"
+              }
+            ]
+          },
+          {
+            "id": "english-oral-3-q2",
+            "show": "Switch between a closure animation and a continuous-air animation, then highlight the answer.",
+            "say": "Listen to {{word:church}} and {{word:test}}. The first gives you a brief stop and release. The second has a different hiss and ends with a stop. Compare {{word:mention}} and {{word:machine}} once more. Neither adds that brief stop before the target hiss. Choose B.",
+            "visual": "consonant-mouth",
+            "beats": [
+              {
+                "word": "Choose",
+                "action": "Highlight B after the two continuous-air lines match.",
+                "label": "Check the other options"
+              }
+            ]
+          }
+        ],
+        "promptFormatting": [
+          {
+            "style": "underline",
+            "start": 3,
+            "end": 5
+          }
+        ]
+      },
+      "jamb": [
+        "Find the matching consonant sound even when its spelling changes."
+      ],
+      "tryIt": null,
+      "syllabus": "Distinguish dental fricatives, sh and ch sounds, and silent letters."
+    },
+    {
+      "id": "english-oral-4",
+      "title": "Word stress",
+      "hook": "Listen to the strong beat inside a word.",
+      "idea": "One syllable carries the main stress in a multisyllable word. The dictionary shows it with ˈ.",
+      "scenes": [
+        {
+          "id": "english-oral-4-s1",
+          "show": "First syllables enlarge while the remaining syllables recede. Reveal the dictionary mark after the examples.",
+          "say": "Listen to {{word:table}}, {{word:window}}, {{word:doctor}}, {{word:morning}}, {{word:mother}} and {{word:teacher}}. Tap once when you hear the strongest beat. It comes first in these words. If you give both syllables equal weight, let the other beat fall away. That strong beat is the main stress. Look for the mark ˈ just before it.",
+          "visual": "syllable-stress",
+          "beats": [
+            {
+              "word": "mark",
+              "action": "Draw ˈ before the first syllable on each card.",
+              "label": "Hear the first beat"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-4-s2",
+          "show": "Two-syllable cards appear. The highlight waits until the second syllable.",
+          "say": "Now hear {{word:begin}}, {{word:arrive}}, {{word:reply}} and {{word:asleep}}. Tap the stronger beat again. This time it comes second. Listen to {{word:banana}}, {{word:computer}}, {{word:tomorrow}} and {{word:remember}}. They also put the main stress on the second syllable. Count from the start before you place the mark.",
+          "visual": "syllable-stress",
+          "beats": [
+            {
+              "word": "second",
+              "action": "Move the highlight from the first beat to the second.",
+              "label": "Hear a later beat"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-4-s3",
+          "show": "Matching word cards join in a row and the strongest highlight moves along the row.",
+          "say": "Listen to {{word:photograph}}, {{word:photography}} and {{word:photographic}}. Watch the strong beat move along the family. If the shared spelling makes you keep the stress in one place, tap again. Hear {{word:education}}, {{word:information}}, {{word:invitation}} and {{word:celebration}}. In these words the beat before the last syllable is strongest.",
+          "visual": "syllable-stress",
+          "beats": [
+            {
+              "word": "before",
+              "action": "Pulse the main beat on each card.",
+              "label": "Follow the word family"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-4-s4",
+          "show": "The two printed record cards flip between a thing and an action. The strong beat moves.",
+          "say": "Hear {{word:record-noun}} as a thing you keep. Now hear {{word:record-verb}} as an action you do. Try {{word:present-noun}} as a gift and {{word:present-verb}} as an action. The spelling stays the same while the strong beat switches place. Use the meaning to pick the clip.",
+          "visual": "syllable-stress",
+          "beats": [
+            {
+              "word": "switches",
+              "action": "Move the main stress mark from the first syllable to the second.",
+              "label": "Let meaning guide the beat"
+            }
+          ]
+        }
+      ],
+      "formula": null,
+      "misconception": {
+        "wrong": "Each syllable should get the same beat, or the last syllable is always strongest.",
+        "correction": "Listen for the strongest beat. The main stress depends on the word and sometimes its use."
+      },
+      "pastQuestion": {
+        "year": 2011,
+        "number": 95,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 44,
+          "keyPage": 45,
+          "yearPage": 24,
+          "paperType": "D",
+          "instructionsPage": 44
+        },
+        "instructions": "In each of the question 95 to 97, choose the appropriate stress pattern from the option. The syllables are written in capital letters.",
+        "prompt": "Termination",
+        "options": [
+          "terminaTION",
+          "TERmination",
+          "termiNAtion",
+          "terMInation"
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ],
+        "answer": "C",
+        "scenes": [
+          {
+            "id": "english-oral-4-q1",
+            "show": "Show the printed stem and options, then add a separate four-part beat strip below them.",
+            "say": "Listen to {{word:termination}}. Tap along as you hear four syllables. The first may sound a little strong, but keep listening for the strongest beat. Hear {{word:termination}} again. Your main tap falls on the third syllable. The last syllable follows it with a lighter beat.",
+            "visual": "syllable-stress",
+            "beats": [
+              {
+                "word": "third",
+                "action": "Expand the third block on the beat strip.",
+                "label": "Hear the strongest syllable"
+              }
+            ]
+          },
+          {
+            "id": "english-oral-4-q2",
+            "show": "A highlight steps through the four printed patterns, ending at the one matching the beat strip.",
+            "say": "Look at the capital letters in each option. A puts the strongest beat fourth. B puts it first. D puts it second. In C the third syllable is in capitals. That agrees with the clip and the primary stress mark in the dictionary. Choose C.",
+            "visual": "syllable-stress",
+            "beats": [
+              {
+                "word": "Choose",
+                "action": "Line up option C with the expanded third block.",
+                "label": "Match the capitals to the beat"
+              }
+            ]
+          }
+        ]
+      },
+      "jamb": [
+        "Identify the syllable carrying primary stress."
+      ],
+      "tryIt": null,
+      "syllabus": "Distinguish stressed and unstressed syllables in words."
+    },
+    {
+      "id": "english-oral-5",
+      "title": "Emphatic stress",
+      "hook": "One sentence can correct three different guesses. Listen for the word that changes the meaning.",
+      "idea": "Emphatic stress draws attention to a whole word so the listener knows what is being corrected or contrasted.",
+      "scenes": [
+        {
+          "id": "english-oral-5-s1",
+          "show": "Show “She will buy a book.” A pencil appears beside a book. BOOK grows while the other words stay the same size.",
+          "say": "Hear {{word:book}} and {{word:pencil}}. Read the line on screen. Say it back with the biggest beat on the first word you heard. You are correcting what the person will buy. That special weight on a whole word is emphatic stress. Let the surrounding words go by more lightly.",
+          "visual": "sentence-stress",
+          "beats": [
+            {
+              "word": "weight",
+              "action": "Make BOOK grow as the pencil fades.",
+              "label": "Spot the correction"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-5-s2",
+          "show": "In “She will buy a book” the highlight moves between SHE and BUY. A different person icon and a book-sale card appear in turn.",
+          "say": "Hear {{word:she}}, {{word:buy}} and {{word:sell}}. The first clip can settle who will act. The second clip corrects the third because it changes the action. In the sentence on screen, move the big beat first to the person, then to the action. If every word is equally strong, the listener has to guess.",
+          "visual": "sentence-stress",
+          "beats": [
+            {
+              "word": "move",
+              "action": "Shift the beat between SHE and BUY.",
+              "label": "Move the strong beat"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-5-s3",
+          "show": "Show “She will buy the blue bag.” Two colour cards appear next to the same bag. The colour highlight grows and the bag stays fixed.",
+          "say": "Hear {{word:blue}} and {{word:red}}, then {{word:bag}} and {{word:dress}}. Give the colour the strong beat on screen. A different colour would now be the right contrast. If you swap the item instead, you have changed a different part of the message. Keep the other details fixed while you test the contrast.",
+          "visual": "sentence-stress",
+          "beats": [
+            {
+              "word": "colour",
+              "action": "Replace red with blue while the bag remains.",
+              "label": "Test one contrast at a time"
+            }
+          ]
+        },
+        {
+          "id": "english-oral-5-s4",
+          "show": "Show “She will buy a book today.” Three answer cards slide in. Two keep the same day and one changes it. The changed day locks to the highlighted word.",
+          "say": "Hear {{word:today}}, {{word:yesterday}} and ~Monday. Now put the strong beat on the first of these in the sentence on screen. The other two times make sensible contrasts. If a question repeats the stressed time and asks about the thing for sale, the contrast goes in the wrong place.",
+          "visual": "sentence-stress",
+          "beats": [
+            {
+              "word": "wrong",
+              "action": "Move the card that changes the time under TODAY.",
+              "label": "Avoid the repeated-word trap"
+            }
+          ]
+        }
+      ],
+      "formula": null,
+      "misconception": {
+        "wrong": "The word in capitals should be repeated in the answer choice.",
+        "correction": "Find the choice that offers a different idea in the same place as the stressed word."
+      },
+      "pastQuestion": {
+        "year": 2012,
+        "number": 100,
+        "source": {
+          "file": "JAMB-USE-OF-ENGLISH-PAST-QUESTIONS.pdf",
+          "page": 67,
+          "keyPage": 68,
+          "yearPage": 46,
+          "paperType": "YELLOW",
+          "instructionsPage": 67
+        },
+        "instructions": "In each of questions 98 to 100, the word in capital letters has the emphatic stress. Choose the option to which the given sentence relates.",
+        "prompt": "The cat DEVOURED the rat.",
+        "options": [
+          "Did the rat devoured the cat?",
+          "What devoured the rat?",
+          "Did the cat pet the rat?",
+          "Is this the rat the cat devoured?"
+        ],
+        "optionLabels": [
+          "(a)",
+          "(b)",
+          "(c)",
+          "(d)"
+        ],
+        "answer": "C",
+        "scenes": [
+          {
+            "id": "english-oral-5-q1",
+            "show": "Show the full printed question and options. Keep DEVOURED bold and pulse it once while the rest stays still.",
+            "say": "Look at the capital letters. The stress falls on the action. Hear {{word:cat}}, {{word:devoured}} and {{word:rat}} from the statement. Now hear the action in option C, {{word:pet}}. That option keeps the same animals and offers a different action. The statement corrects it by putting the strong beat on {{word:devoured}}.",
+            "visual": "sentence-stress",
+            "beats": [
+              {
+                "word": "different",
+                "action": "Link PET to DEVOURED with a single arrow.",
+                "label": "Spot the action in capitals"
+              }
+            ]
+          },
+          {
+            "id": "english-oral-5-q2",
+            "show": "Dim A, B and D in turn, then highlight C and show a short action label beside it.",
+            "say": "A swaps the animals. B asks what did the action. D asks which rat it was. Each looks for a different detail. Ask what changed in the best option. Only C questions the action with the same animals. Choose C.",
+            "visual": "sentence-stress",
+            "beats": [
+              {
+                "word": "Choose",
+                "action": "Lock the arrow between the two actions and light C.",
+                "label": "Reject changes to the animals"
+              }
+            ]
+          }
+        ],
+        "promptFormatting": [
+          {
+            "style": "bold",
+            "start": 8,
+            "end": 16
+          }
+        ]
+      },
+      "jamb": [
+        "Choose the question whose contrast the capitalised word resolves."
+      ],
+      "tryIt": null,
+      "syllabus": "Recognise emphatic stress and the meaning it signals."
+    }
+  ]
+}
