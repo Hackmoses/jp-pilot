@@ -45,7 +45,7 @@ TENS = {
     "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50,
     "sixty": 60, "seventy": 70, "eighty": 80, "ninety": 90,
 }
-SCALE = {"hundred": 100, "thousand": 1000}
+SCALE = {"hundred": 100, "thousand": 1000, "million": 1_000_000}
 
 SPELLING_EQUIV = {
     "meters": "metres",
@@ -58,9 +58,19 @@ SPELLING_EQUIV = {
     "centimeter": "centimetre",
     "millimeters": "millimetres",
     "millimeter": "millimetre",
+    "kilometers": "kilometres",
+    "kilometer": "kilometre",
     "sulphur": "sulfur",
     "aluminium": "aluminum",
     "ionizes": "ionises",
+    "vapour": "vapor",
+    "vapours": "vapors",
+    "coloured": "colored",
+    "colour": "color",
+    "factorise": "factorize",
+    "factorising": "factorizing",
+    "rationalise": "rationalize",
+    "rationalising": "rationalizing",
     "oxide's": "oxide",
     "oxides": "oxide",
     "carbonate's": "carbonate",
@@ -74,6 +84,14 @@ SPELLING_EQUIV = {
     "g": "grams",
     "cm": "centimetres",
     "dm": "decimetres",
+    "km": "kilometres",
+    "kg": "kilograms",
+    "hz": "hertz",
+    "kw": "kilowatts",
+    "amps": "amperes",
+    "amp": "ampere",
+    "milliamps": "milliamperes",
+    "milliamp": "milliampere",
     "tetraoxosulphate": "tetraoxosulfate",
     "poh": "poh",
     "ph": "ph",
@@ -81,16 +99,35 @@ SPELLING_EQUIV = {
 
 UNIT_CANON = {
     "mole": "mole", "moles": "mole", "mol": "mole",
-    "gram": "gram", "grams": "gram",
+    "gram": "gram", "grams": "gram", "g": "gram",
+    "kilogram": "kilogram", "kilograms": "kilogram", "kg": "kilogram",
     "decimetre": "decimetre", "decimetres": "decimetre", "decimeter": "decimetre", "decimeters": "decimetre",
     "centimetre": "centimetre", "centimetres": "centimetre", "centimeter": "centimetre", "centimeters": "centimetre",
     "millimetre": "millimetre", "millimetres": "millimetre", "millimeter": "millimetre", "millimeters": "millimetre",
+    "kilometre": "kilometre", "kilometres": "kilometre", "kilometer": "kilometre", "kilometers": "kilometre", "km": "kilometre",
     "metre": "metre", "metres": "metre", "meter": "metre", "meters": "metre",
     "atmosphere": "atmosphere", "atmospheres": "atmosphere", "atm": "atmosphere",
     "kelvin": "kelvin", "kelvins": "kelvin",
     "coulomb": "coulomb", "coulombs": "coulomb",
     "amp": "amp", "amps": "amp", "ampere": "amp", "amperes": "amp",
+    "milliampere": "milliampere", "milliamperes": "milliampere", "milliamp": "milliampere", "milliamps": "milliampere",
+    "joule": "joule", "joules": "joule",
+    "newton": "newton", "newtons": "newton",
+    "watt": "watt", "watts": "watt",
+    "kilowatt": "kilowatt", "kilowatts": "kilowatt", "kw": "kilowatt",
+    "volt": "volt", "volts": "volt",
+    "ohm": "ohm", "ohms": "ohm",
+    "hertz": "hertz", "hz": "hertz",
+    "pascal": "pascal", "pascals": "pascal",
+    "farad": "farad", "farads": "farad",
+    "microfarad": "microfarad", "microfarads": "microfarad",
     "second": "second", "seconds": "second",
+    "minute": "minute", "minutes": "minute",
+    "hour": "hour", "hours": "hour",
+    "year": "year", "years": "year",
+    "degree": "degree", "degrees": "degree",
+    "naira": "naira",
+    "pound": "pound", "pounds": "pound",
     "faraday": "faraday", "faradays": "faraday", "faradies": "faraday", "faraday's": "faraday",
     "percent": "percent",
     "celsius": "celsius",
@@ -127,6 +164,10 @@ def tokenize_basic(text: str, keep_punct: bool = False) -> list[str]:
     s = s.replace("cm³", " cubic centimetres ").replace("dm³", " cubic decimetres ")
     s = s.replace("²", " squared ").replace("³", " cubed ")
     s = s.replace("ch2o", " c h 2 o ")
+    s = re.sub(r"\b7'?s\b", " sevens ", s)
+    s = re.sub(r"\b3'?s\b", " threes ", s)
+    s = re.sub(r"\bs\.i\.?\b", " s i ", s)
+    s = re.sub(r"\be\.m\.f\.?\b", " e m f ", s)
     s = re.sub(r"(\d+)\s*-\s*(\d+)", r"\1 \2", s)
     s = re.sub(r"(\d+):(\d+)", r"\1 \2", s)
     s = s.replace("-", " ")
@@ -183,6 +224,27 @@ def tokenize_basic(text: str, keep_punct: bool = False) -> list[str]:
         elif out[i] == "kf":
             merged.extend(["k", "f"])
             i += 1
+        elif out[i] == "si":
+            merged.extend(["s", "i"])
+            i += 1
+        elif out[i] == "emf":
+            merged.extend(["e", "m", "f"])
+            i += 1
+        elif out[i] == "mgh":
+            merged.extend(["m", "g", "h"])
+            i += 1
+        elif out[i] == "hht":
+            merged.extend(["h", "h", "t"])
+            i += 1
+        elif out[i] == "hth":
+            merged.extend(["h", "t", "h"])
+            i += 1
+        elif out[i] == "thh":
+            merged.extend(["t", "h", "h"])
+            i += 1
+        elif out[i] == "ff":
+            merged.extend(["f", "f"])
+            i += 1
         else:
             merged.append(out[i])
             i += 1
@@ -196,6 +258,15 @@ def parse_number_words_at(tokens: list[str], idx: int) -> tuple[str, int] | None
         return None
     t0 = tokens[idx]
     if re.fullmatch(r"\d+(?:,\d{3})*(?:\.\d+)?", t0):
+        if idx + 1 < n and tokens[idx + 1] in SCALE:
+            try:
+                scaled = Decimal(t0.replace(",", "")) * SCALE[tokens[idx + 1]]
+                norm = format(scaled.normalize(), "f")
+                if "." in norm:
+                    norm = norm.rstrip("0").rstrip(".")
+                return norm or "0", idx + 2
+            except InvalidOperation:
+                pass
         return canon_decimal(t0), idx + 1
 
     if t0 not in ONES and t0 not in TENS:
@@ -213,7 +284,12 @@ def parse_number_words_at(tokens: list[str], idx: int) -> tuple[str, int] | None
             j += 1
             continue
         if w in ONES:
-            can_append_ones = (not saw_word) or (current % 100 == 0) or (20 <= (current % 100) <= 90 and (current % 10 == 0) and 1 <= ONES[w] <= 9)
+            can_append_ones = (
+                (not saw_word)
+                or (current >= 100 and current % 100 == 0)
+                or (total > 0 and current == 0)
+                or (20 <= (current % 100) <= 90 and (current % 10 == 0) and 1 <= ONES[w] <= 9)
+            )
             if not can_append_ones:
                 break
             current += ONES[w]
@@ -228,8 +304,8 @@ def parse_number_words_at(tokens: list[str], idx: int) -> tuple[str, int] | None
         elif w == "hundred" and saw_word:
             current = (current or 1) * 100
             j += 1
-        elif w == "thousand" and saw_word:
-            total += (current or 1) * 1000
+        elif w in {"thousand", "million"} and saw_word:
+            total += (current or 1) * SCALE[w]
             current = 0
             j += 1
         else:
@@ -269,8 +345,27 @@ def extract_numbers(text: str) -> list[str]:
     return nums
 
 
-def extract_units(text: str) -> Counter:
+def merge_split_tokens(tokens: list[str], target_vocab: set[str]) -> list[str]:
+    """Merge adjacent word pairs [a, b] when a+b appears in target_vocab or known unit/spelling dicts."""
+    merged: list[str] = []
+    i = 0
+    while i < len(tokens):
+        if i + 1 < len(tokens) and tokens[i].isalpha() and tokens[i + 1].isalpha():
+            comb = tokens[i] + tokens[i + 1]
+            comb_canon = SPELLING_EQUIV.get(comb, comb)
+            if comb in target_vocab or comb_canon in target_vocab or comb in UNIT_CANON or comb_canon in UNIT_CANON or comb in SPELLING_EQUIV:
+                merged.append(comb_canon)
+                i += 2
+                continue
+        merged.append(tokens[i])
+        i += 1
+    return merged
+
+
+def extract_units(text: str, extra_vocab: set[str] | None = None) -> Counter:
     tokens = tokenize_basic(text)
+    if extra_vocab is not None:
+        tokens = merge_split_tokens(tokens, extra_vocab)
     c = Counter()
     for t in tokens:
         if t in UNIT_CANON:
@@ -289,8 +384,10 @@ def extract_chem_terms(text: str) -> set[str]:
     return found
 
 
-def normalize_words_for_diff(text: str) -> list[str]:
+def normalize_words_for_diff(text: str, other_vocab: set[str] | None = None) -> list[str]:
     tokens = tokenize_basic(text, keep_punct=True)
+    if other_vocab is not None:
+        tokens = merge_split_tokens(tokens, other_vocab)
     out: list[str] = []
     i = 0
     while i < len(tokens):
@@ -301,7 +398,7 @@ def normalize_words_for_diff(text: str) -> list[str]:
         if parsed:
             out.append(parsed[0])
             i = parsed[1]
-        elif tokens[i] == "and" and i > 0 and tokens[i - 1] in {"hundred", "thousand"}:
+        elif tokens[i] == "and" and i > 0 and tokens[i - 1] in {"hundred", "thousand", "million"}:
             i += 1
         else:
             out.append(tokens[i])
@@ -309,20 +406,45 @@ def normalize_words_for_diff(text: str) -> list[str]:
     return out
 
 
+def _normalize_binary_nums(exp_nums: list[str], heard_nums: list[str], step_text: str) -> list[str]:
+    """If step_text contains a binary literal like '1101 in base 2' and Whisper outputs '1101', expand to digits."""
+    m = re.search(r"\b([01]{3,})\s+in\s+base\s+2\b", step_text, flags=re.IGNORECASE)
+    if not m:
+        return heard_nums
+    bits_str = m.group(1)
+    bits_list = list(bits_str)
+    out: list[str] = []
+    for tok in heard_nums:
+        if tok == bits_str and bits_list == exp_nums[: len(bits_list)]:
+            out.extend(bits_list)
+        elif tok == bits_str:
+            # Check if bits_list appears as a contiguous slice of exp_nums
+            found = any(exp_nums[k : k + len(bits_list)] == bits_list for k in range(len(exp_nums) - len(bits_list) + 1))
+            if found:
+                out.extend(bits_list)
+            else:
+                out.append(tok)
+        else:
+            out.append(tok)
+    return out
+
+
 def strict_verify(spoken_line: str, step_text: str, heard_text: str) -> dict:
     exp_nums = extract_numbers(spoken_line)
     step_nums = extract_numbers(step_text)
-    # Sanity: spokenLine numbers must match stepText numbers (except if stepText used 'half' -> keep consistent)
-    heard_nums = extract_numbers(heard_text)
+    heard_nums = _normalize_binary_nums(exp_nums, extract_numbers(heard_text), step_text)
 
-    exp_units = extract_units(spoken_line)
-    heard_units = extract_units(heard_text)
+    exp_vocab = set(tokenize_basic(spoken_line))
+    heard_vocab = set(tokenize_basic(heard_text))
+
+    exp_units = extract_units(spoken_line, heard_vocab)
+    heard_units = extract_units(heard_text, exp_vocab)
 
     exp_chem = extract_chem_terms(spoken_line)
     heard_chem = extract_chem_terms(heard_text)
 
-    exp_words = normalize_words_for_diff(spoken_line)
-    heard_words = normalize_words_for_diff(heard_text)
+    exp_words = normalize_words_for_diff(spoken_line, heard_vocab)
+    heard_words = normalize_words_for_diff(heard_text, exp_vocab)
     ratio = difflib.SequenceMatcher(None, exp_words, heard_words).ratio()
 
     reasons = []
@@ -465,6 +587,13 @@ def generate_audio(
     return arr, gen_sec
 
 
+def sync_checkpoint(state_dir: Path, copy_dir: Path | None) -> None:
+    if copy_dir is None:
+        return
+    copy_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copytree(state_dir, copy_dir, dirs_exist_ok=True)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Resumable voice regenerator from clean spoken JSON")
     parser.add_argument("--subject", required=True, help="Target subject (e.g. chemistry)")
@@ -475,7 +604,10 @@ def main() -> int:
     parser.add_argument("--voice-name", default="chatterbox-charon")
     parser.add_argument("--base-seed", type=int, default=42)
     parser.add_argument("--retry-seed", type=int, default=1337)
-    parser.add_argument("--state-dir", default="/tmp/jp-regen-voice-v2")
+    parser.add_argument("--state-dir", default="/tmp/jp-regen-voice-all")
+    parser.add_argument("--checkpoint-copy-dir", default="")
+    parser.add_argument("--checkpoint-every", type=int, default=20)
+    parser.add_argument("--skip-needs-review", action="store_true")
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args()
@@ -501,11 +633,15 @@ def main() -> int:
 
     state_dir = Path(args.state_dir)
     state_dir.mkdir(parents=True, exist_ok=True)
+    copy_dir = Path(args.checkpoint_copy_dir).expanduser() if args.checkpoint_copy_dir else None
     state_path = state_dir / f"state_{subject}.json"
+    if not state_path.exists() and copy_dir is not None and (copy_dir / f"state_{subject}.json").exists():
+        shutil.copytree(copy_dir, state_dir, dirs_exist_ok=True)
+        print(f"Restored checkpoint from {copy_dir} into {state_dir}", flush=True)
     state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {"clips": {}}
     clips_state: dict[str, dict] = state.setdefault("clips", {})
 
-    # Restore origin/main lineSha256 and record beforeBytes; restore needsReview clips immediately
+    # Restore origin/main lineSha256 and record beforeBytes
     skipped_review = []
     clean_items = []
     for item in spoken_clips:
@@ -518,8 +654,10 @@ def main() -> int:
         if "beforeBytes" not in st:
             raw_orig = git_show_bytes(f"origin/main:app/public/{rel_path}")
             st["beforeBytes"] = len(raw_orig) if raw_orig is not None else 0
+        st["needsReview"] = bool(item.get("needsReview"))
+        st["issues"] = item.get("issues", [])
 
-        if item.get("needsReview"):
+        if args.skip_needs_review and item.get("needsReview"):
             after_b = restore_from_origin_main(rel_path, orig_entry, cur_entry)
             st.update({
                 "status": "skipped_text_needs_review",
@@ -536,7 +674,8 @@ def main() -> int:
     atomic_write_json(MANIFEST_PATH, manifest)
     atomic_write_json(state_path, state)
     print(
-        f"Subject '{subject}': total={len(spoken_clips)}, clean={len(clean_items)}, "
+        f"Subject '{subject}': total={len(spoken_clips)}, to_voice={len(clean_items)}, "
+        f"needs_review_flagged={sum(1 for i in spoken_clips if i.get('needsReview'))}, "
         f"skipped_needs_review={len(skipped_review)}",
         flush=True,
     )
@@ -558,12 +697,21 @@ def main() -> int:
             and out_path.stat().st_size > 0
             and cur_entry.get("voice") == args.voice_name
         )
+        already_rejected = (
+            not args.no_resume
+            and st.get("status") == "rejected_whisper_mismatch"
+            and out_path.exists()
+            and out_path.stat().st_size > 0
+            and cur_entry.get("voice") != args.voice_name
+        )
         if already_accepted:
             verified_cache.setdefault(item["spokenLine"], out_path)
+        elif already_rejected:
+            continue
         else:
             pending.append(item)
 
-    print(f"Pending clean clips to process: {len(pending)} / {len(clean_items)}", flush=True)
+    print(f"Pending clips to process: {len(pending)} / {len(clean_items)}", flush=True)
 
     gen_wav = state_dir / "gen.wav"
     tmp_webm_1 = state_dir / "attempt1.webm"
@@ -606,10 +754,14 @@ def main() -> int:
                     "afterBytes": after_bytes,
                     "durationMs": dur_ms,
                     "genSec": 0.0,
+                    "wordDiff": st.get("wordDiff", ""),
+                    "reasons": [],
                     "whisperText": st.get("whisperText", "(copied verified duplicate)"),
                 })
                 atomic_write_json(MANIFEST_PATH, manifest)
                 atomic_write_json(state_path, state)
+                if args.checkpoint_every > 0 and pos % args.checkpoint_every == 0:
+                    sync_checkpoint(state_dir, copy_dir)
                 print(f"[{pos}/{len(pending)}] {rel_path} DEDUP_OK dur={dur_ms}ms bytes={st['beforeBytes']}->{after_bytes}", flush=True)
                 continue
 
@@ -711,6 +863,13 @@ def main() -> int:
 
             atomic_write_json(MANIFEST_PATH, manifest)
             atomic_write_json(state_path, state)
+            if args.checkpoint_every > 0 and pos % args.checkpoint_every == 0:
+                sync_checkpoint(state_dir, copy_dir)
+                print(f"  -> Checkpoint synced to {copy_dir} ({pos}/{len(pending)})", flush=True)
+
+    sync_checkpoint(state_dir, copy_dir)
+    if copy_dir is not None:
+        print(f"Final subject checkpoint synced to {copy_dir}", flush=True)
 
     wall_sec = time.perf_counter() - batch_start
 
