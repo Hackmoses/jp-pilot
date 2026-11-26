@@ -1,15 +1,15 @@
 import { useEffect } from 'preact/hooks'
-import { EnglishFoundations, foundationsHref } from '../components/lessons/EnglishFoundations'
-import { LessonList } from '../components/lessons/LessonList'
-import { TryItCard, studyInteractives } from '../components/try-it/TryItCard'
+import { foundationSection } from '../components/lessons/foundations-topics'
 import cardIndex from '../lib/card-index.json'
 import { cardReviews } from '../lib/leitner'
 import { lazyView } from '../lib/lazyView'
-import { conceptLessonTopic, ENGLISH_CARD_TOPICS, STUDY_TOPICS, syllabusSections } from '../lib/sections'
-import { chapterName, hasStudied, remember, studyLink } from '../lib/modes'
+import { ENGLISH_CARD_TOPICS, STUDY_TOPICS, syllabusSections } from '../lib/sections'
+import { chapterName, hasCompletedConceptLesson, hasCompletedInteractive, hasStartedConceptLesson, hasStudied, remember, studyLink } from '../lib/modes'
 import { getSubject } from '../lib/subjects'
 import { ModeCard, Panel } from './Modes'
 
+const foundationTopic = lazyView(() => import('../components/lessons/FoundationTopic').then(({ FoundationTopic }) => FoundationTopic))
+const chapterStudy = lazyView(() => import('./ChapterStudy').then(({ ChapterStudy }) => ChapterStudy))
 const cardViewer = lazyView(() => import('../components/cards/CardViewer').then(({ CardViewer }) => CardViewer))
 
 function EnglishCards({ deck, back, open }: { deck: string; back: string; open: boolean }) {
@@ -32,56 +32,46 @@ function EnglishCards({ deck, back, open }: { deck: string; back: string; open: 
 // Study uses lessons, Try it and word cards.
 export function Study({ params }: { params: URLSearchParams }) {
   const subject = params.get('subject') ?? 'chemistry'
-  const chapter = params.get('chapter')
+  const chapter = params.get('chapter') ?? (subject === 'english' ? params.get('unit') : null)
   const tryIt = params.get('try')
   const deck = subject === 'english' && chapter ? ENGLISH_CARD_TOPICS[chapter] : undefined
+  const foundation = subject === 'english' ? foundationSection.chapters.find(({ id }) => id === chapter) : undefined
+  const { View: Foundation, failed: foundationFailed } = foundationTopic.useView(Boolean(foundation))
+  const { View: Chapter, failed: chapterFailed } = chapterStudy.useView(Boolean(chapter && subject !== 'english'))
   const sectionsForSubject = syllabusSections(subject, true)
   const subjectName = getSubject(subject)?.name ?? subject
   const topics = new Set(STUDY_TOPICS[subject] ?? [])
   const subjectHref = '#/study?subject=' + encodeURIComponent(subject)
-  const practiceHref = (id?: string) => '#/practice?' + new URLSearchParams(id ? { subject, chapter: id } : { subject })
+  const practiceHref = '#/practice?' + new URLSearchParams({ subject })
 
   useEffect(() => {
     if (chapter && topics.has(chapter)) {
       const title = sectionsForSubject.flatMap(({ chapters }) => chapters).find(({ id }) => id === chapter)?.title
       remember(studyLink(subject, chapter), 'Study · ' + (title ?? chapterName(subject, chapter)))
     }
-    if (tryIt === 'gas-laws') document.getElementById(tryIt)?.scrollIntoView({ block: 'start' })
-  }, [subject, chapter, tryIt])
+  }, [subject, chapter])
 
-  if (subject === 'english' && params.has('foundations')) {
-    return <EnglishFoundations unit={params.get('unit')} />
-  }
+  if (foundation) return <Panel title={foundation.title} subtitle={foundationSection.title} back={subjectHref}>
+    {Foundation ? <Foundation chapter={foundation.id} title={foundation.title} />
+      : <p class="jp-mode-lead" role="status">{foundationFailed ? 'Could not open this topic. Reload to try again.' : 'Loading topic…'}</p>}
+  </Panel>
 
   if (chapter && deck) {
     return <EnglishCards deck={deck} back={studyLink(subject, chapter)} open={params.has('cards')} />
   }
 
-  if (chapter && subject !== 'english') {
-    const file = conceptLessonTopic(subject, chapter)
-    const interactives = studyInteractives(subject, chapter)
-    return (
-      <Panel title={chapterName(subject, chapter)} subtitle={subjectName} back={subjectHref}>
-        <div class="jp-mode-list">
-          <h2 class="jp-revisit-title">Concept lessons</h2>
-          {file ? <LessonList key={file} file={file} subject={subject} chapter={chapter} />
-            : <p class="jp-mode-lead">Short animated lessons for this topic are coming soon.</p>}
-          {interactives.length > 0 && <>
-            <h2 class="jp-revisit-title">{file ? 'Try it after the lesson' : 'Try it yourself'}</h2>
-            {interactives.map((interactive) => <TryItCard key={interactive.id ?? interactive.title}
-              interactive={interactive} subject={subject} chapter={chapter} />)}
-          </>}
-          <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref(chapter)}>Practise this topic →</a>
-        </div>
-      </Panel>
-    )
-  }
+  if (chapter && subject !== 'english') return <Panel title={chapterName(subject, chapter)} subtitle={subjectName} back={subjectHref}>
+    {Chapter ? <Chapter subject={subject} chapter={chapter} tryIt={tryIt} />
+      : <p class="jp-mode-lead" role="status">{chapterFailed ? 'Could not open this topic. Reload to try again.' : 'Loading topic…'}</p>}
+  </Panel>
 
   const sections = sectionsForSubject.map((section) => ({
     ...section, chapters: section.chapters.filter((entry) => topics.has(entry.id)),
   })).filter((section) => section.chapters.length)
+  if (subject === 'english') sections.unshift(foundationSection)
   const studiedTopic = (id: string) => subject === 'english'
-    ? Object.keys(cardReviews(ENGLISH_CARD_TOPICS[id])).length > 0
+    ? ENGLISH_CARD_TOPICS[id] ? Object.keys(cardReviews(ENGLISH_CARD_TOPICS[id])).length > 0
+      : hasCompletedConceptLesson(id) && hasCompletedInteractive(subject, id)
     : hasStudied(subject, id)
   const total = sections.reduce((sum, section) => sum + section.chapters.length, 0)
   const studied = sections.reduce((sum, section) =>
@@ -89,12 +79,9 @@ export function Study({ params }: { params: URLSearchParams }) {
 
   return (
     <Panel title={subjectName + ' study'} back="#/subjects?mode=study">
-      {subject === 'english' && <ModeCard href={foundationsHref} title="Spelling and Sounds">
-        10 concept lessons with Try it activities
-      </ModeCard>}
       {total === 0 ? <>
         <p class="jp-mode-lead">Lessons for {subjectName} are coming soon.</p>
-        <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref()}>Practise {subjectName} →</a>
+        <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref}>Practise {subjectName} →</a>
       </> : <>
         <section class="jp-card" aria-label="Study progress">
           <p class="jp-summary-sub">{studied} of {total} topics studied</p>
@@ -107,12 +94,13 @@ export function Study({ params }: { params: URLSearchParams }) {
           return <details class="jp-card jp-study-section" key={section.id} open={subject === 'english' ? true : undefined}>
             <summary>
               <span class="jp-mode-card-title">{section.title}</span>
-              <span class="jp-summary-sub">{section.chapters.length} {section.chapters.length === 1 ? 'topic' : 'topics'}{done ? ` · ${done} studied` : ''}</span>
+              <span class="jp-summary-sub">{section.chapters.length} {section.chapters.length === 1 ? 'topic' : 'topics'}{done ? ` · ${done} ${section === foundationSection ? 'completed' : 'studied'}` : ''}</span>
             </summary>
             <div class="jp-mode-list">
               {section.chapters.map((entry) => <ModeCard key={entry.id} href={studyLink(subject, entry.id)}
                 title={subject === 'english' ? entry.title : `${entry.number}. ${entry.title}`}>
-                {studiedTopic(entry.id) && <span class="jp-mode-studied" aria-label="Studied">✓ Studied</span>}
+                {studiedTopic(entry.id) ? <span class="jp-mode-studied">✓ {section === foundationSection ? 'Completed' : 'Studied'}</span>
+                  : section === foundationSection && hasStartedConceptLesson(entry.id) && 'In progress'}
               </ModeCard>)}
             </div>
           </details>

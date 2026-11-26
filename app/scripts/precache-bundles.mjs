@@ -7,6 +7,7 @@ const sources = [
   'index.html',
   'src/screens/Subjects.tsx',
   'src/screens/Study.tsx',
+  'src/screens/ChapterStudy.tsx',
   'src/screens/PracticeSetup.tsx',
   'src/screens/PracticeRun.tsx',
   'src/screens/Results.tsx',

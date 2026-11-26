@@ -135,6 +135,7 @@ function read() {
 interface ModeState {
   recent: { href: string; label: string } | null
   studied: Record<string, boolean>
+  startedConceptLessons: Record<string, boolean>
   completedConceptLessons: Record<string, boolean>
   studiedConceptTopics: Record<string, boolean>
   completedInteractives: Record<string, boolean>
@@ -151,6 +152,7 @@ const saved = read()
 const state: ModeState = {
   recent: saved?.recent ?? null,
   studied: saved?.studied ?? {},
+  startedConceptLessons: saved?.startedConceptLessons ?? {},
   completedConceptLessons: saved?.completedConceptLessons ?? {},
   studiedConceptTopics: saved?.studiedConceptTopics ?? {},
   completedInteractives: saved?.completedInteractives ?? {},
@@ -184,6 +186,14 @@ export function hasCompletedInteractive(subject: string, chapter: string, lesson
 export function markInteractiveCompleted(subject: string, chapter: string, lesson?: string) {
   state.completedInteractives[interactiveKey(subject, chapter, lesson)] = true
   state.studied[subject + '/' + chapter] = true
+  save()
+}
+export function hasStartedConceptLesson(id: string) {
+  return Boolean(state.startedConceptLessons[id]) || hasCompletedConceptLesson(id)
+}
+export function startConceptLesson(id: string) {
+  if (hasStartedConceptLesson(id)) return
+  state.startedConceptLessons[id] = true
   save()
 }
 export function hasCompletedConceptLesson(id: string) {

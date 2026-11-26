@@ -1,10 +1,12 @@
 import type { ComponentType } from 'preact'
+import type { ExplainQuestion, WordBank } from '../lessons/lesson'
 import { useId, useState } from 'preact/hooks'
 import { waitForOfflineControl } from '../../lib/offline'
-import { hasCompletedInteractive, markInteractiveCompleted } from '../../lib/modes'
+import { hasCompletedInteractive, markInteractiveCompleted, startConceptLesson } from '../../lib/modes'
 
-export type InteractiveProps = { practiceHref: string; onComplete: () => void; onRestart?: () => void }
-type Interactive = {
+export type EnglishActivityData = { words: WordBank; explain: ExplainQuestion }
+export type InteractiveProps = { practiceHref: string; onComplete: () => void; onRestart?: () => void; english?: EnglishActivityData }
+export type Interactive = {
   title: string
   id?: string
   anchor?: string
@@ -52,8 +54,8 @@ export function studyChapterIds(subject: string) {
   return new Set((lessons[subject] ?? []).map((lesson) => lesson.chapter))
 }
 
-export function TryItCard({ interactive, subject, chapter }: {
-  interactive: Interactive; subject: string; chapter: string
+export function TryItCard({ interactive, subject, chapter, english }: {
+  interactive: Interactive; subject: string; chapter: string; english?: EnglishActivityData
 }) {
   const id = useId()
   const [open, setOpen] = useState(false)
@@ -89,13 +91,14 @@ export function TryItCard({ interactive, subject, chapter }: {
           {open && Demo && <button type="button" class="jp-btn" aria-label={'Restart · ' + interactive.title} onClick={restart}>Restart</button>}
           <button type="button" class="jp-btn" aria-expanded={open} aria-controls={id}
             aria-label={(open ? 'Close' : 'Try it') + ' · ' + interactive.title} onClick={() => {
+              if (!open && english) startConceptLesson(chapter)
               setOpen(!open)
               if (!open && !Demo && status === 'idle') void load()
             }}>{open ? 'Close' : 'Try it'}</button>
         </div>
       </div>
       <div id={id} class="jp-try-panel" hidden={!open}>
-        {open && Demo && <Demo key={run} onRestart={restart} practiceHref={'#/practice?' + new URLSearchParams({ subject, chapter })}
+        {open && Demo && <Demo key={run} english={english} onRestart={restart} practiceHref={'#/practice?' + new URLSearchParams(english ? { subject } : { subject, chapter })}
           onComplete={() => {
             markInteractiveCompleted(subject, chapter, interactive.id)
             setCompleted(true)

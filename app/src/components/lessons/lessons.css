@@ -90,6 +90,18 @@
   gap: 4px;
 }
 
+.jp-concept-word {
+  border: 0;
+  border-bottom: 1px solid var(--brand);
+  padding: 0;
+  background: transparent;
+  font: inherit;
+  color: var(--brand);
+}
+.jp-concept-question .jp-concept-printed-options {
+  list-style: none;
+  padding-inline-start: 0;
+}
 .jp-concept-question li {
   padding: 3px 8px;
   border-radius: 6px;
