@@ -17,17 +17,17 @@
         },
         {
           "n": 2,
-          "display": "100 g = 0.100 kg, mc = 0.100 × 4200 = 420",
+          "display": "100 g = 0.100 kg",
           "tag": "convert the mass",
           "title": "Convert the mass",
-          "narration": "Convert grams to kilograms because the given specific heat is measured per kilogram."
+          "narration": "Convert grams to kilograms because the given specific heat is measured per kilogram. Multiply zero point one kilograms by four thousand two hundred to get four hundred and twenty joules per kelvin."
         },
         {
           "n": 3,
           "display": "ΔT = \\frac{500}{420} ≈ 1.2°C (option C)",
           "tag": "find the temperature rise",
           "title": "Find the temperature rise",
-          "narration": "Divide the heat supplied by the heat needed for a rise of one degree. A change of one kelvin equals a change of one Celsius degree."
+          "narration": "Divide five hundred joules by four hundred and twenty joules per kelvin. The rise is about one point two kelvin, which is the same change in Celsius degrees."
         }
       ],
       "teach": [
@@ -47,17 +47,17 @@
         },
         {
           "n": 3,
-          "display": "100 g = 0.100 kg, mc = 0.100 × 4200 = 420",
+          "display": "100 g = 0.100 kg",
           "tag": "convert the mass",
           "title": "Convert the mass",
-          "narration": "Convert grams to kilograms because the given specific heat is measured per kilogram."
+          "narration": "Convert grams to kilograms because the given specific heat is measured per kilogram. Multiply zero point one kilograms by four thousand two hundred to get four hundred and twenty joules per kelvin."
         },
         {
           "n": 4,
           "display": "ΔT = \\frac{500}{420} ≈ 1.2°C (option C)",
           "tag": "find the temperature rise",
           "title": "Find the temperature rise",
-          "narration": "Divide the heat supplied by the heat needed for a rise of one degree. A change of one kelvin equals a change of one Celsius degree."
+          "narration": "Divide five hundred joules by four hundred and twenty joules per kelvin. The rise is about one point two kelvin, which is the same change in Celsius degrees."
         }
       ]
     },
@@ -833,14 +833,14 @@
       "steps": [
         {
           "n": 1,
-          "display": "P = 5 × 50 + 4 × 100 = 650 W = 0.65 kW",
+          "display": "P = 650 W = 0.65 kW",
           "tag": "combine and convert power",
           "title": "Combine and convert power",
-          "narration": "Add the powers for all nine lamps. Convert watts to kilowatts because the price is per kilowatt-hour."
+          "narration": "Five times fifty plus four times one hundred gives six hundred and fifty watts. Convert to kilowatts because the price is per kilowatt-hour."
         },
         {
           "n": 2,
-          "display": "E = Pt = 0.65 × 10 = 6.5 kWh",
+          "display": "E = 0.65 × 10 = 6.5 kWh",
           "tag": "find the energy bought",
           "title": "Find the energy bought",
           "narration": "Keep the time in hours so the energy is measured in the same unit used by the tariff."
@@ -863,21 +863,21 @@
       "teach": [
         {
           "n": 1,
-          "display": "5 lamps at 50 W, 4 lamps at 100 W",
+          "display": "5 × 50 W, 4 × 100 W",
           "tag": "read the lamp ratings",
           "title": "Read the lamp ratings",
           "narration": "The question gives the number of lamps in each group and the power of each lamp. All of them run for ten hours."
         },
         {
           "n": 2,
-          "display": "P = 5 × 50 + 4 × 100 = 650 W = 0.65 kW",
+          "display": "P = 650 W = 0.65 kW",
           "tag": "combine and convert power",
           "title": "Combine and convert power",
-          "narration": "Add the powers for all nine lamps. Convert watts to kilowatts because the price is per kilowatt-hour."
+          "narration": "Five times fifty plus four times one hundred gives six hundred and fifty watts. Convert to kilowatts because the price is per kilowatt-hour."
         },
         {
           "n": 3,
-          "display": "E = Pt = 0.65 × 10 = 6.5 kWh",
+          "display": "E = 0.65 × 10 = 6.5 kWh",
           "tag": "find the energy bought",
           "title": "Find the energy bought",
           "narration": "Keep the time in hours so the energy is measured in the same unit used by the tariff."
@@ -1236,14 +1236,14 @@
         },
         {
           "n": 2,
-          "display": "a = \\frac{80 − 0}{20 − 0} = 4.0 m/s²",
+          "display": "a = \\frac{80}{20} = 4.0 m/s²",
           "tag": "find the rising slope",
           "title": "Find the rising slope",
           "narration": "The vehicle gains eighty metres per second in the first twenty seconds."
         },
         {
           "n": 3,
-          "display": "a = \\frac{0 − 80}{90 − 50} = −2.0 m/s²",
+          "display": "a = \\frac{−80}{40} = −2.0 m/s²",
           "tag": "find the falling slope",
           "title": "Find the falling slope",
           "narration": "The vehicle loses eighty metres per second during the final forty seconds. The negative sign means it is slowing down."
@@ -1259,10 +1259,10 @@
       "teach": [
         {
           "n": 1,
-          "display": "0–20 s: 0 → 80 m/s, 50–90 s: 80 → 0 m/s",
+          "display": "0–20 s, 50–90 s",
           "tag": "read the graph's corners",
           "title": "Read the graph's corners",
-          "narration": "Read time on the horizontal axis and velocity on the vertical axis. The flat section starts at twenty seconds and ends at fifty seconds, where slowing begins."
+          "narration": "Read times along the bottom and speeds up the side. The vehicle rises from zero to eighty metres per second by twenty seconds, stays there until fifty seconds, then slows to zero at ninety seconds."
         },
         {
           "n": 2,
@@ -1273,14 +1273,14 @@
         },
         {
           "n": 3,
-          "display": "a = \\frac{80 − 0}{20 − 0} = 4.0 m/s²",
+          "display": "a = \\frac{80}{20} = 4.0 m/s²",
           "tag": "find the rising slope",
           "title": "Find the rising slope",
           "narration": "The vehicle gains eighty metres per second in the first twenty seconds."
         },
         {
           "n": 4,
-          "display": "a = \\frac{0 − 80}{90 − 50} = −2.0 m/s²",
+          "display": "a = \\frac{−80}{40} = −2.0 m/s²",
           "tag": "find the falling slope",
           "title": "Find the falling slope",
           "narration": "The vehicle loses eighty metres per second during the final forty seconds. The negative sign means it is slowing down."
@@ -1969,7 +1969,7 @@
         },
         {
           "n": 2,
-          "display": "ΔF = 120 − 0 = 120 N, Δx = 6 − 0 = 6 m",
+          "display": "ΔF = 120 N, Δx = 6 m",
           "tag": "find rise and run",
           "title": "Find rise and run",
           "narration": "Subtract the first reading from the second on each axis. We can use the two marked points without needing the intermediate readings."
@@ -1985,7 +1985,7 @@
       "teach": [
         {
           "n": 1,
-          "display": "(0 m, 0 N) and (6 m, 120 N)",
+          "display": "(0, 0) and (6, 120)",
           "tag": "read two points from the graph",
           "title": "Read two points from the graph",
           "narration": "The origin sits where both axes read zero. The rightmost marked point lines up with six metres on the extension axis and one hundred and twenty newtons on the force axis."
@@ -1999,7 +1999,7 @@
         },
         {
           "n": 3,
-          "display": "ΔF = 120 − 0 = 120 N, Δx = 6 − 0 = 6 m",
+          "display": "ΔF = 120 N, Δx = 6 m",
           "tag": "find rise and run",
           "title": "Find rise and run",
           "narration": "Subtract the first reading from the second on each axis. We can use the two marked points without needing the intermediate readings."
