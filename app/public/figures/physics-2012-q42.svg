@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" role="img" aria-labelledby="title desc">
+  <title id="title">Four candidate graphs of capacitive reactance against frequency</title>
+  <desc id="desc">Four labelled graphs A, B, C and D plotting capacitive reactance Xc against frequency f: A is a line through the origin, B has a negative slope, C curves upward and D curves downward as a rectangular hyperbola.</desc>
+  <rect width="600" height="280" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- A -->
+    <path d="M90 115 V30 M90 115 H230 M90 115 L205 42"/>
+    <!-- B -->
+    <path d="M360 115 V30 M360 115 H500 M360 40 L480 115"/>
+    <!-- C -->
+    <path d="M90 245 V160 M90 245 H230 M90 245 Q165 238 205 170"/>
+    <!-- D (hyperbola) -->
+    <path d="M360 245 V160 M360 245 H500 M372 168 Q382 228 492 235"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="16">
+    <text x="55" y="45" font-weight="700">A.</text>
+    <text x="78" y="38">Xc</text>
+    <text x="234" y="128">f</text>
+    <text x="325" y="45" font-weight="700">B.</text>
+    <text x="348" y="38">Xc</text>
+    <text x="504" y="128">f</text>
+    <text x="55" y="175" font-weight="700">C.</text>
+    <text x="78" y="168">Xc</text>
+    <text x="234" y="258">f</text>
+    <text x="325" y="175" font-weight="700">D.</text>
+    <text x="348" y="168">Xc</text>
+    <text x="504" y="258">f</text>
+  </g>
+</svg>

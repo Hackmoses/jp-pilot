@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" role="img" aria-labelledby="title desc">
+  <title id="title">Resistor network of three 2-ohm resistors</title>
+  <desc id="desc">Two 2 ohm resistors connected in parallel are connected in series with a third 2 ohm resistor between two terminals.</desc>
+  <rect width="600" height="220" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 110 H140 V62 H175 M265 62 H300 V110 H365 M140 110 V158 H175 M265 158 H300 V110 M455 110 H530"/>
+    <rect x="175" y="46" width="90" height="32" fill="#fff"/>
+    <rect x="175" y="142" width="90" height="32" fill="#fff"/>
+    <rect x="365" y="94" width="90" height="32" fill="#fff"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="17" text-anchor="middle">
+    <circle cx="70" cy="110" r="4"/>
+    <circle cx="530" cy="110" r="4"/>
+    <text x="220" y="36">2 Ω</text>
+    <text x="220" y="198">2 Ω</text>
+    <text x="410" y="82">2 Ω</text>
+  </g>
+</svg>

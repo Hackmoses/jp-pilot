@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" role="img" aria-labelledby="title desc">
+  <title id="title">Nine balls on an undulating surface</title>
+  <desc id="desc">An undulating wavy track with nine balls numbered I through IX: I, IV and VII sit on crests; II, V and VIII rest on descending slopes; III, VI and IX sit in valleys.</desc>
+  <rect width="600" height="220" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 140 Q85 45 130 125 T220 125 T310 125 T400 125 T490 125 Q535 190 565 130"/>
+    <!-- 9 balls: crests at x=85, 265, 445; slopes at x=112, 292, 472; valleys at x=175, 355, 535 -->
+    <circle cx="85" cy="79" r="9" fill="#fff"/>
+    <circle cx="115" cy="108" r="9" fill="#fff"/>
+    <circle cx="175" cy="158" r="9" fill="#fff"/>
+    <circle cx="265" cy="83" r="9" fill="#fff"/>
+    <circle cx="295" cy="110" r="9" fill="#fff"/>
+    <circle cx="355" cy="158" r="9" fill="#fff"/>
+    <circle cx="445" cy="83" r="9" fill="#fff"/>
+    <circle cx="475" cy="110" r="9" fill="#fff"/>
+    <circle cx="535" cy="151" r="9" fill="#fff"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="16" font-weight="600" text-anchor="middle">
+    <text x="85" y="60">I</text>
+    <text x="132" y="98">II</text>
+    <text x="175" y="138">III</text>
+    <text x="265" y="62">IV</text>
+    <text x="312" y="98">V</text>
+    <text x="355" y="138">VI</text>
+    <text x="445" y="62">VII</text>
+    <text x="492" y="98">VIII</text>
+    <text x="535" y="130">IX</text>
+  </g>
+</svg>

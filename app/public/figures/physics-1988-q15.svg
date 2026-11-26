@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" role="img" aria-labelledby="title desc">
+  <title id="title">U-tube mercury manometer</title>
+  <desc id="desc">An open-ended U-tube mercury manometer connected on its right arm to a gas supply. The mercury column in the open left arm stands 3.5 cm higher than in the right arm.</desc>
+  <rect width="560" height="280" rx="12" fill="#fff"/>
+  <!-- Mercury fill: left meniscus at y=70, right meniscus at y=155 -->
+  <path d="M132 70 H164 V210 A42 42 0 0 0 248 210 V155 H280 V210 A74 74 0 0 1 132 210 Z" fill="#64748b"/>
+  <!-- Glass U-tube outline -->
+  <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M132 45 V210 A74 74 0 0 0 280 210 V132 H345"/>
+    <path d="M164 45 V210 A42 42 0 0 0 248 210 V120 A16 16 0 0 1 264 104 H345"/>
+    <!-- Gas flow arrow -->
+    <path d="M295 118 H335 M325 112 L337 118 L325 124"/>
+    <!-- Height difference 3.5 cm cleanly inside the U-gap between arms (x=164..248) -->
+    <line x1="164" y1="70" x2="232" y2="70" stroke-dasharray="5,4" stroke-width="1.8"/>
+    <line x1="186" y1="155" x2="248" y2="155" stroke-dasharray="5,4" stroke-width="1.8"/>
+    <path d="M206 74 V151 M201 82 L206 72 L211 82 M201 143 L206 153 L211 143" stroke-width="2"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="16">
+    <text x="148" y="34" text-anchor="middle">Open to atmosphere</text>
+    <text x="355" y="114">To gas</text>
+    <text x="355" y="134">supply</text>
+    <text x="206" y="61" text-anchor="middle" font-weight="600">3.5 cm</text>
+    <text x="115" y="145" text-anchor="end">Mercury</text>
+  </g>
+</svg>

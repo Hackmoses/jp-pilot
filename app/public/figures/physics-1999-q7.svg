@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" role="img" aria-labelledby="title desc">
+  <title id="title">Velocity-time graph of a vehicle</title>
+  <desc id="desc">Velocity in m/s on vertical axis vs time in s on horizontal axis. Velocity rises linearly from 0 at 0 s to 80 m/s at 20 s, remains 80 m/s until 50 s, and falls linearly to 0 at 90 s.</desc>
+  <rect width="600" height="260" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 215 V35 M90 215 H530"/>
+    <path d="M84 45 L90 33 L96 45 M520 209 L532 215 L520 221"/>
+    <path d="M90 215 L178 75 H310 L486 215" stroke-width="3.2"/>
+    <line x1="90" y1="75" x2="178" y2="75" stroke-dasharray="5,4" stroke-width="1.8"/>
+    <line x1="178" y1="75" x2="178" y2="215" stroke-dasharray="5,4" stroke-width="1.8"/>
+    <line x1="310" y1="75" x2="310" y2="215" stroke-dasharray="5,4" stroke-width="1.8"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="16">
+    <text x="102" y="42" font-weight="600">V (m/s)</text>
+    <text x="78" y="81" text-anchor="end">80</text>
+    <text x="90" y="236" text-anchor="middle">0</text>
+    <text x="178" y="236" text-anchor="middle">20</text>
+    <text x="310" y="236" text-anchor="middle">50</text>
+    <text x="486" y="236" text-anchor="middle">90</text>
+    <text x="530" y="238" text-anchor="middle" font-weight="600">t (s)</text>
+  </g>
+</svg>

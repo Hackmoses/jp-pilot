@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" role="img" aria-labelledby="title desc">
+  <title id="title">Three capacitors in series with a 12 V supply</title>
+  <desc id="desc">A 12 V battery connected across a vertical branch containing three capacitors in series: C1 = 2 uF, C2 = 6 uF and C3 = 3 uF.</desc>
+  <rect width="560" height="280" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 128 V45 H380 V78 M380 94 V134 M380 150 V190 M380 206 V235 H160 V144"/>
+    <!-- Battery 12 V -->
+    <line x1="138" y1="128" x2="182" y2="128"/>
+    <line x1="148" y1="144" x2="172" y2="144" stroke-width="4.5"/>
+    <!-- C1, C2, C3 plates -->
+    <line x1="358" y1="78" x2="402" y2="78"/>
+    <line x1="358" y1="94" x2="402" y2="94"/>
+    <line x1="358" y1="134" x2="402" y2="134"/>
+    <line x1="358" y1="150" x2="402" y2="150"/>
+    <line x1="358" y1="190" x2="402" y2="190"/>
+    <line x1="358" y1="206" x2="402" y2="206"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="17">
+    <text x="128" y="142" text-anchor="end">12 V</text>
+    <text x="346" y="92" text-anchor="end">C₁</text>
+    <text x="414" y="92">2 μF</text>
+    <text x="346" y="148" text-anchor="end">C₂</text>
+    <text x="414" y="148">6 μF</text>
+    <text x="346" y="204" text-anchor="end">C₃</text>
+    <text x="414" y="204">3 μF</text>
+  </g>
+</svg>
