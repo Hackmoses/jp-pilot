@@ -1,0 +1,740 @@
+{
+  "version": 1,
+  "count": 10,
+  "animations": [
+    {
+      "id": "anim-math-jamb-2010-022",
+      "questionId": "math-jamb-2010-022",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "4d = −29 − (−9)",
+          "tag": "gap",
+          "title": "Find the change over four gaps",
+          "narration": "There are four gaps from term three to term seven. Subtract the third term from the seventh to find the change across them."
+        },
+        {
+          "n": 2,
+          "display": "d = −5",
+          "tag": "difference",
+          "title": "Divide both sides by four",
+          "narration": "Divide both sides by four because we want the change in just one gap."
+        },
+        {
+          "n": 3,
+          "display": "T_{10} = −44",
+          "tag": "answer",
+          "title": "Find the tenth term",
+          "narration": "Three drops of five take us down by fifteen, giving a tenth term of negative forty-four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "T_{3} = −9, T_{7} = −29",
+          "tag": "given",
+          "title": "Read the known terms",
+          "narration": "In an arithmetic progression each move changes the term by the same amount. We know the third and seventh terms."
+        },
+        {
+          "n": 2,
+          "display": "4d = −29 − (−9)",
+          "tag": "gap",
+          "title": "Find the change over four gaps",
+          "narration": "There are four gaps from term three to term seven. Subtract the third term from the seventh to find the change across them."
+        },
+        {
+          "n": 3,
+          "display": "4d = −20",
+          "tag": "change",
+          "title": "Work out the total change",
+          "narration": "Subtracting negative nine means adding nine, so the terms fall by twenty over four gaps."
+        },
+        {
+          "n": 4,
+          "display": "d = −5",
+          "tag": "difference",
+          "title": "Divide both sides by four",
+          "narration": "Divide both sides by four because we want the change in just one gap."
+        },
+        {
+          "n": 5,
+          "display": "T_{10} = −29 + 3(−5)",
+          "tag": "advance",
+          "title": "Move three more gaps",
+          "narration": "Term ten is three gaps after term seven, so add three copies of the common difference to negative twenty-nine."
+        },
+        {
+          "n": 6,
+          "display": "T_{10} = −44",
+          "tag": "answer",
+          "title": "Find the tenth term",
+          "narration": "Three drops of five take us down by fifteen, giving a tenth term of negative forty-four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-023",
+      "questionId": "math-jamb-2010-023",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "2 ∗ 3 = 2 + 3^{2}",
+          "tag": "inside",
+          "title": "Apply the rule inside the brackets",
+          "narration": "Three is on the right of the star, so square three and add two."
+        },
+        {
+          "n": 2,
+          "display": "11 ∗ 5 = 11 + 5^{2}",
+          "tag": "outside",
+          "title": "Apply the rule again",
+          "narration": "Use eleven on the left and five on the right, so this time it is five that gets squared."
+        },
+        {
+          "n": 3,
+          "display": "(2 ∗ 3) ∗ 5 = 36",
+          "tag": "answer",
+          "title": "Evaluate the outer operation",
+          "narration": "Five squared is twenty-five. Adding eleven gives thirty-six."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x ∗ y = x + y^{2}",
+          "tag": "rule",
+          "title": "Read the operation rule",
+          "narration": "The rule squares the number on the right, then adds the number on the left. Work inside the brackets first."
+        },
+        {
+          "n": 2,
+          "display": "2 ∗ 3 = 2 + 3^{2}",
+          "tag": "inside",
+          "title": "Apply the rule inside the brackets",
+          "narration": "Three is on the right of the star, so square three and add two."
+        },
+        {
+          "n": 3,
+          "display": "2 ∗ 3 = 11",
+          "tag": "replace",
+          "title": "Evaluate the inner operation",
+          "narration": "Three squared is nine. Adding two gives eleven for the whole bracket."
+        },
+        {
+          "n": 4,
+          "display": "11 ∗ 5 = 11 + 5^{2}",
+          "tag": "outside",
+          "title": "Apply the rule again",
+          "narration": "Use eleven on the left and five on the right, so this time it is five that gets squared."
+        },
+        {
+          "n": 5,
+          "display": "(2 ∗ 3) ∗ 5 = 36",
+          "tag": "answer",
+          "title": "Evaluate the outer operation",
+          "narration": "Five squared is twenty-five. Adding eleven gives thirty-six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-024",
+      "questionId": "math-jamb-2010-024",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "18p + 18q = 18q + pq",
+          "tag": "expand",
+          "title": "Distribute on both sides",
+          "narration": "Multiply each term on the left by eighteen. Multiply each term on the right by q."
+        },
+        {
+          "n": 2,
+          "display": "18p = pq",
+          "tag": "simplify",
+          "title": "Keep the remaining terms",
+          "narration": "The eighteen q terms cancel. Both remaining terms have a factor of p."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{18p}{p} = \\frac{pq}{p}",
+          "tag": "divide",
+          "title": "Divide both sides by p",
+          "narration": "The question says p is nonzero, so dividing both sides by p is allowed."
+        },
+        {
+          "n": 4,
+          "display": "q = 18",
+          "tag": "answer",
+          "title": "Read the value of q",
+          "narration": "The factors of p cancel, so q must equal eighteen."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "18(p + q) = (18 + p)q",
+          "tag": "given",
+          "title": "Start with the given equation",
+          "narration": "Expand the brackets so we can see which terms appear on both sides."
+        },
+        {
+          "n": 2,
+          "display": "18p + 18q = 18q + pq",
+          "tag": "expand",
+          "title": "Distribute on both sides",
+          "narration": "Multiply each term on the left by eighteen. Multiply each term on the right by q."
+        },
+        {
+          "n": 3,
+          "display": "18p + 18q − 18q = 18q + pq − 18q",
+          "tag": "balance",
+          "title": "Subtract eighteen q from both sides",
+          "narration": "Both sides contain eighteen q, so subtract it from both sides to keep the equation balanced."
+        },
+        {
+          "n": 4,
+          "display": "18p = pq",
+          "tag": "simplify",
+          "title": "Keep the remaining terms",
+          "narration": "The eighteen q terms cancel. Both remaining terms have a factor of p."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{18p}{p} = \\frac{pq}{p}",
+          "tag": "divide",
+          "title": "Divide both sides by p",
+          "narration": "The question says p is nonzero, so dividing both sides by p is allowed."
+        },
+        {
+          "n": 6,
+          "display": "q = 18",
+          "tag": "answer",
+          "title": "Read the value of q",
+          "narration": "The factors of p cancel, so q must equal eighteen."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-027",
+      "questionId": "math-jamb-2010-027",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\det P = 2(1) − (−3)(1)",
+          "tag": "determinant",
+          "title": "Subtract the diagonal products",
+          "narration": "For a two by two matrix, multiply down the main diagonal and subtract the product on the other diagonal."
+        },
+        {
+          "n": 2,
+          "display": "\\operatorname{adj} P = \\mat{1,3;-1,2}",
+          "tag": "adjugate",
+          "title": "Swap and change signs",
+          "narration": "Swap two and one on the main diagonal. Change negative three to positive three and the other one to negative one."
+        },
+        {
+          "n": 3,
+          "display": "P^{−1} = \\mat{\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
+          "tag": "answer",
+          "title": "Write the inverse matrix",
+          "narration": "The top row is one fifth and three fifths. The bottom row is negative one fifth and two fifths."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = \\mat{2,-3;1,1}",
+          "tag": "given",
+          "title": "Read the matrix entries",
+          "narration": "The top row is two and negative three. The bottom row is one and one."
+        },
+        {
+          "n": 2,
+          "display": "\\det P = 2(1) − (−3)(1)",
+          "tag": "determinant",
+          "title": "Subtract the diagonal products",
+          "narration": "For a two by two matrix, multiply down the main diagonal and subtract the product on the other diagonal."
+        },
+        {
+          "n": 3,
+          "display": "\\det P = 5",
+          "tag": "nonzero",
+          "title": "Check that the inverse exists",
+          "narration": "Two minus negative three equals five. The determinant is nonzero, so the matrix has an inverse."
+        },
+        {
+          "n": 4,
+          "display": "\\operatorname{adj} P = \\mat{1,3;-1,2}",
+          "tag": "adjugate",
+          "title": "Swap and change signs",
+          "narration": "Swap two and one on the main diagonal. Change negative three to positive three and the other one to negative one."
+        },
+        {
+          "n": 5,
+          "display": "P^{−1} = \\frac{1}{5}\\mat{1,3;-1,2}",
+          "tag": "scale",
+          "title": "Multiply by the reciprocal",
+          "narration": "The inverse formula divides every entry in the adjugate by the determinant, which is five."
+        },
+        {
+          "n": 6,
+          "display": "P^{−1} = \\mat{\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
+          "tag": "answer",
+          "title": "Write the inverse matrix",
+          "narration": "The top row is one fifth and three fifths. The bottom row is negative one fifth and two fifths."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-030",
+      "questionId": "math-jamb-2010-030",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "∠TUV = (3x + 20)°, ∠VWT = 88°",
+          "tag": "figure",
+          "title": "Read the opposite angles",
+          "narration": "The diagram gives three x plus twenty degrees at U and eighty-eight degrees at W. These vertices are opposite each other."
+        },
+        {
+          "n": 2,
+          "display": "3x + 20 + 88 = 180",
+          "tag": "theorem",
+          "title": "Use opposite angles of a cyclic quadrilateral",
+          "narration": "Opposite angles of a cyclic quadrilateral add to one hundred and eighty degrees."
+        },
+        {
+          "n": 3,
+          "display": "x = \\frac{72}{3}",
+          "tag": "divide",
+          "title": "Divide both sides by three",
+          "narration": "Divide both sides by three so that only x is left on the left."
+        },
+        {
+          "n": 4,
+          "display": "x = 24°",
+          "tag": "answer",
+          "title": "Read the value of x",
+          "narration": "Seventy-two divided by three gives twenty-four degrees for x."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "∠TUV = (3x + 20)°, ∠VWT = 88°",
+          "tag": "figure",
+          "title": "Read the opposite angles",
+          "narration": "The diagram gives three x plus twenty degrees at U and eighty-eight degrees at W. These vertices are opposite each other."
+        },
+        {
+          "n": 2,
+          "display": "3x + 20 + 88 = 180",
+          "tag": "theorem",
+          "title": "Use opposite angles of a cyclic quadrilateral",
+          "narration": "Opposite angles of a cyclic quadrilateral add to one hundred and eighty degrees."
+        },
+        {
+          "n": 3,
+          "display": "3x + 20 = 92",
+          "tag": "subtract",
+          "title": "Subtract eighty-eight from both sides",
+          "narration": "Take away the angle at W from both sides to find the angle at U."
+        },
+        {
+          "n": 4,
+          "display": "3x = 72",
+          "tag": "isolate",
+          "title": "Subtract twenty from both sides",
+          "narration": "Remove the constant twenty from both sides to leave three times x."
+        },
+        {
+          "n": 5,
+          "display": "x = \\frac{72}{3}",
+          "tag": "divide",
+          "title": "Divide both sides by three",
+          "narration": "Divide both sides by three so that only x is left on the left."
+        },
+        {
+          "n": 6,
+          "display": "x = 24°",
+          "tag": "answer",
+          "title": "Read the value of x",
+          "narration": "Seventy-two divided by three gives twenty-four degrees for x."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-035",
+      "questionId": "math-jamb-2010-035",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "d = \\sqrt{(x_{2} − x_{1})^{2} + (y_{2} − y_{1})^{2}}",
+          "tag": "formula",
+          "title": "Use Pythagoras' theorem",
+          "narration": "The horizontal and vertical changes form the legs of a right triangle. Use Pythagoras to find the straight-line distance."
+        },
+        {
+          "n": 2,
+          "display": "Δx = −\\frac{1}{2} − \\frac{1}{2} = −1",
+          "tag": "horizontal",
+          "title": "Find the horizontal change",
+          "narration": "The second x-coordinate is negative one half. Subtract the first x-coordinate, one half, to get negative one."
+        },
+        {
+          "n": 3,
+          "display": "d = \\sqrt{(−1)^{2} + (−1)^{2}}",
+          "tag": "substitute",
+          "title": "Square both coordinate changes",
+          "narration": "Squaring each change gives one. Add the squares before taking the root."
+        },
+        {
+          "n": 4,
+          "display": "d = \\sqrt{2}",
+          "tag": "answer",
+          "title": "Find the distance",
+          "narration": "The squares add to two, so the straight-line distance is the square root of two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "A = (\\frac{1}{2}, \\frac{1}{2})",
+          "tag": "point A",
+          "title": "Read the first point",
+          "narration": "Both coordinates of the first point are one half. We will compare them with the coordinates of the second point."
+        },
+        {
+          "n": 2,
+          "display": "d = \\sqrt{(x_{2} − x_{1})^{2} + (y_{2} − y_{1})^{2}}",
+          "tag": "formula",
+          "title": "Use Pythagoras' theorem",
+          "narration": "The horizontal and vertical changes form the legs of a right triangle. Use Pythagoras to find the straight-line distance."
+        },
+        {
+          "n": 3,
+          "display": "Δx = −\\frac{1}{2} − \\frac{1}{2} = −1",
+          "tag": "horizontal",
+          "title": "Find the horizontal change",
+          "narration": "The second x-coordinate is negative one half. Subtract the first x-coordinate, one half, to get negative one."
+        },
+        {
+          "n": 4,
+          "display": "Δy = −\\frac{1}{2} − \\frac{1}{2} = −1",
+          "tag": "vertical",
+          "title": "Find the vertical change",
+          "narration": "The y-coordinates are the same pair of values, so their difference is also negative one."
+        },
+        {
+          "n": 5,
+          "display": "d = \\sqrt{(−1)^{2} + (−1)^{2}}",
+          "tag": "substitute",
+          "title": "Square both coordinate changes",
+          "narration": "Squaring each change gives one. Add the squares before taking the root."
+        },
+        {
+          "n": 6,
+          "display": "d = \\sqrt{2}",
+          "tag": "answer",
+          "title": "Find the distance",
+          "narration": "The squares add to two, so the straight-line distance is the square root of two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-038",
+      "questionId": "math-jamb-2010-038",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "cot θ = \\frac{8}{15}",
+          "tag": "given",
+          "title": "Read the cotangent ratio",
+          "narration": "Cotangent is adjacent over opposite. Take the adjacent side as eight units and the opposite side as fifteen units."
+        },
+        {
+          "n": 2,
+          "display": "h^{2} = 64 + 225",
+          "tag": "squares",
+          "title": "Evaluate both squares",
+          "narration": "Eight squared is sixty-four and fifteen squared is two hundred and twenty-five."
+        },
+        {
+          "n": 3,
+          "display": "h = \\sqrt{289} = 17",
+          "tag": "length",
+          "title": "Take the positive square root",
+          "narration": "The squares add to two hundred and eighty-nine. A length is positive, so take the positive square root, seventeen."
+        },
+        {
+          "n": 4,
+          "display": "sin θ = \\frac{15}{17}",
+          "tag": "answer",
+          "title": "Divide opposite by hypotenuse",
+          "narration": "Sine is opposite over hypotenuse, giving fifteen seventeenths."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "cot θ = \\frac{8}{15}",
+          "tag": "given",
+          "title": "Read the cotangent ratio",
+          "narration": "Cotangent is adjacent over opposite. Take the adjacent side as eight units and the opposite side as fifteen units."
+        },
+        {
+          "n": 2,
+          "display": "h^{2} = 8^{2} + 15^{2}",
+          "tag": "theorem",
+          "title": "Apply Pythagoras' theorem",
+          "narration": "The two known sides meet at a right angle, so the square of the hypotenuse is the sum of their squares."
+        },
+        {
+          "n": 3,
+          "display": "h^{2} = 64 + 225",
+          "tag": "squares",
+          "title": "Evaluate both squares",
+          "narration": "Eight squared is sixty-four and fifteen squared is two hundred and twenty-five."
+        },
+        {
+          "n": 4,
+          "display": "h = \\sqrt{289} = 17",
+          "tag": "length",
+          "title": "Take the positive square root",
+          "narration": "The squares add to two hundred and eighty-nine. A length is positive, so take the positive square root, seventeen."
+        },
+        {
+          "n": 5,
+          "display": "sin θ = \\frac{15}{17}",
+          "tag": "answer",
+          "title": "Divide opposite by hypotenuse",
+          "narration": "Sine is opposite over hypotenuse, giving fifteen seventeenths."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-043",
+      "questionId": "math-jamb-2010-043",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "∫ x^{n} dx = \\frac{x^{n+1}}{n+1} + C",
+          "tag": "rule",
+          "title": "Use the integration power rule",
+          "narration": "For these powers, increase each exponent by one and divide by the new exponent to get an antiderivative."
+        },
+        {
+          "n": 2,
+          "display": "I = F(2) − F(0)",
+          "tag": "limits",
+          "title": "Subtract the lower value",
+          "narration": "For a definite integral, take the value of the antiderivative at the upper limit and subtract its value at the lower limit."
+        },
+        {
+          "n": 3,
+          "display": "I = \\frac{16}{4} + \\frac{8}{3}",
+          "tag": "upper limit",
+          "title": "Evaluate at two",
+          "narration": "Two to the fourth power is sixteen and two cubed is eight. Put these into the two fractions."
+        },
+        {
+          "n": 4,
+          "display": "I = 6\\frac{2}{3}",
+          "tag": "answer",
+          "title": "Add the values",
+          "narration": "Four plus two and two thirds gives six and two thirds."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "∫ x^{n} dx = \\frac{x^{n+1}}{n+1} + C",
+          "tag": "rule",
+          "title": "Use the integration power rule",
+          "narration": "For these powers, increase each exponent by one and divide by the new exponent to get an antiderivative."
+        },
+        {
+          "n": 2,
+          "display": "F(x) = \\frac{x^{4}}{4} + \\frac{x^{3}}{3}",
+          "tag": "integrate",
+          "title": "Integrate both terms",
+          "narration": "The cube gives the fourth power over four, and the square gives the cube over three. Any constant cancels between the limits."
+        },
+        {
+          "n": 3,
+          "display": "I = F(2) − F(0)",
+          "tag": "limits",
+          "title": "Subtract the lower value",
+          "narration": "For a definite integral, take the value of the antiderivative at the upper limit and subtract its value at the lower limit."
+        },
+        {
+          "n": 4,
+          "display": "F(0) = 0",
+          "tag": "lower limit",
+          "title": "Evaluate at zero",
+          "narration": "Both powers are zero at the lower limit, so there is nothing to subtract."
+        },
+        {
+          "n": 5,
+          "display": "I = \\frac{16}{4} + \\frac{8}{3}",
+          "tag": "upper limit",
+          "title": "Evaluate at two",
+          "narration": "Two to the fourth power is sixteen and two cubed is eight. Put these into the two fractions."
+        },
+        {
+          "n": 6,
+          "display": "I = 4 + 2\\frac{2}{3}",
+          "tag": "simplify",
+          "title": "Convert each term",
+          "narration": "Sixteen divided by four is four. Eight thirds makes two wholes with two thirds left."
+        },
+        {
+          "n": 7,
+          "display": "I = 6\\frac{2}{3}",
+          "tag": "answer",
+          "title": "Add the values",
+          "narration": "Four plus two and two thirds gives six and two thirds."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-045",
+      "questionId": "math-jamb-2010-045",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "N_{failed} = sum of frequencies below 5",
+          "tag": "rule",
+          "title": "Count marks below the pass mark",
+          "narration": "Add the frequencies for marks below five. A student who scored exactly five passed."
+        },
+        {
+          "n": 2,
+          "display": "N_{failed} = 3 + 1 + 5",
+          "tag": "frequencies",
+          "title": "Read the counts from the table",
+          "narration": "Three students scored two, one scored three, and five scored four. Each of these groups counts towards the total."
+        },
+        {
+          "n": 3,
+          "display": "N_{failed} = 9",
+          "tag": "answer",
+          "title": "Find how many failed",
+          "narration": "Add the five students who scored four to the subtotal of four. Nine students failed."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "N_{failed} = sum of frequencies below 5",
+          "tag": "rule",
+          "title": "Count marks below the pass mark",
+          "narration": "Add the frequencies for marks below five. A student who scored exactly five passed."
+        },
+        {
+          "n": 2,
+          "display": "2, 3, 4 < 5",
+          "tag": "read marks",
+          "title": "Identify the failing marks",
+          "narration": "The table shows three marks below five. They are two, three and four."
+        },
+        {
+          "n": 3,
+          "display": "N_{failed} = 3 + 1 + 5",
+          "tag": "frequencies",
+          "title": "Read the counts from the table",
+          "narration": "Three students scored two, one scored three, and five scored four. Each of these groups counts towards the total."
+        },
+        {
+          "n": 4,
+          "display": "N_{failed} = 4 + 5",
+          "tag": "subtotal",
+          "title": "Add the first two counts",
+          "narration": "Adding the counts for marks two and three gives four students so far."
+        },
+        {
+          "n": 5,
+          "display": "N_{failed} = 9",
+          "tag": "answer",
+          "title": "Find how many failed",
+          "narration": "Add the five students who scored four to the subtotal of four. Nine students failed."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-050",
+      "questionId": "math-jamb-2010-050",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P(HHH) = P(H_{1})P(H_{2})P(H_{3})",
+          "tag": "rule",
+          "title": "Multiply independent probabilities",
+          "narration": "All three heads must occur together. The tosses are independent, so multiply the three probabilities."
+        },
+        {
+          "n": 2,
+          "display": "P(HHH) = \\frac{1}{2} × \\frac{1}{2} × \\frac{1}{2}",
+          "tag": "substitute",
+          "title": "Use one half for each toss",
+          "narration": "Include one factor of one half for each of the three coins that must show heads."
+        },
+        {
+          "n": 3,
+          "display": "P(HHH) = \\frac{1}{8}",
+          "tag": "answer",
+          "title": "Find the probability of three heads",
+          "narration": "The numerator is one and the denominator is eight, so the probability is one eighth."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P(HHH) = P(H_{1})P(H_{2})P(H_{3})",
+          "tag": "rule",
+          "title": "Multiply independent probabilities",
+          "narration": "All three heads must occur together. The tosses are independent, so multiply the three probabilities."
+        },
+        {
+          "n": 2,
+          "display": "P(H_{1}) = P(H_{2}) = P(H_{3}) = \\frac{1}{2}",
+          "tag": "fair coins",
+          "title": "Find the chance on one coin",
+          "narration": "A fair coin has two equally likely faces, so heads has probability one half on every toss."
+        },
+        {
+          "n": 3,
+          "display": "P(HHH) = \\frac{1}{2} × \\frac{1}{2} × \\frac{1}{2}",
+          "tag": "substitute",
+          "title": "Use one half for each toss",
+          "narration": "Include one factor of one half for each of the three coins that must show heads."
+        },
+        {
+          "n": 4,
+          "display": "P(HHH) = \\frac{1 × 1 × 1}{2 × 2 × 2}",
+          "tag": "multiply",
+          "title": "Multiply the tops and bottoms",
+          "narration": "Multiply the numerators together and then multiply the denominators together."
+        },
+        {
+          "n": 5,
+          "display": "P(HHH) = \\frac{1}{8}",
+          "tag": "answer",
+          "title": "Find the probability of three heads",
+          "narration": "The numerator is one and the denominator is eight, so the probability is one eighth."
+        }
+      ]
+    }
+  ]
+}
