@@ -71,7 +71,7 @@
     {
       "id": "bio-jamb-2010-017",
       "subject": "biology",
-      "chapter": "5",
+      "chapter": "4",
       "topic": "Transport",
       "concept": "Systemic circulation",
       "type": "recall",
@@ -93,20 +93,20 @@
         {
           "id": "c",
           "text": "Arteries",
-          "why": "The left ventricle contracts and drives blood through the aorta to the body tissues.",
-          "whyWrong": null
+          "why": "Arteries carry blood away from the heart. The ventricle supplies the pumping force.",
+          "whyWrong": "Arteries carry blood away from the heart. The ventricle supplies the pumping force."
         },
         {
           "id": "d",
           "text": "Left ventricle",
-          "why": "Arteries carry blood from the pump.",
-          "whyWrong": "Arteries carry blood from the pump."
+          "why": "The left ventricle contracts and drives blood through the aorta to the body tissues.",
+          "whyWrong": null
         }
       ],
-      "answerId": "c",
+      "answerId": "d",
       "removeOrder": [
         "b",
-        "d"
+        "c"
       ],
       "hint": "Follow the aorta back to its chamber.",
       "explanation": "The left ventricle contracts and drives blood through the aorta to the body tissues.",
@@ -851,7 +851,7 @@
     {
       "id": "bio-jamb-2012-021",
       "subject": "biology",
-      "chapter": "7",
+      "chapter": "6",
       "topic": "Excretion",
       "concept": "Ultrafiltration in nephrons",
       "type": "recall",
@@ -1241,10 +1241,10 @@
     {
       "id": "bio-jamb-2012-041",
       "subject": "biology",
-      "chapter": "2",
+      "chapter": "10",
       "topic": "Genetics & heredity",
       "concept": "Monohybrid inheritance",
-      "type": "calculation",
+      "type": "recall",
       "difficulty": 2,
       "stem": "A cross between two yellow-seeded maize plants yields yellow and white seeds in a 3 to 1 ratio. What does that suggest about yellow in a simple monohybrid model?",
       "options": [
@@ -1269,7 +1269,7 @@
         {
           "id": "d",
           "text": "A dominant trait",
-          "why": "A cross between two heterozygotes gives 1 YY, 2 Yy and 1 yy. Three offspring classes carry the yellow allele and show the dominant phenotype.",
+          "why": "A cross between two heterozygotes gives one YY, two Yy and one yy combination. Three of the four combinations carry the dominant yellow allele.",
           "whyWrong": null
         }
       ],
@@ -1279,7 +1279,7 @@
         "c"
       ],
       "hint": "Put Y and y from each parent into a Punnett square.",
-      "explanation": "A cross between two heterozygotes gives 1 YY, 2 Yy and 1 yy. Three offspring classes carry the yellow allele and show the dominant phenotype.",
+      "explanation": "A cross between two heterozygotes gives one YY, two Yy and one yy combination. Three of the four combinations carry the dominant yellow allele.",
       "trap": "The consistent segregation indicates inheritance.",
       "mnemonic": "Three show the dominant phenotype. One shows the recessive phenotype.",
       "askPresets": [
@@ -1631,7 +1631,7 @@
     {
       "id": "bio-jamb-2013-024",
       "subject": "biology",
-      "chapter": "5",
+      "chapter": "4",
       "topic": "Transport",
       "concept": "Vertebrate circulation",
       "type": "recall",
@@ -3061,7 +3061,7 @@
     {
       "id": "bio-jamb-2018-013",
       "subject": "biology",
-      "chapter": "7",
+      "chapter": "6",
       "topic": "Excretion",
       "concept": "Vertebrate kidneys",
       "type": "recall",

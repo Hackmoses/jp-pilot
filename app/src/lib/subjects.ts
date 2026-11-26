@@ -56,7 +56,7 @@ export function getSubject(id: string | null | undefined): SubjectInfo | undefin
 export function getSubjectByQuestionId(questionId: string | null | undefined): SubjectInfo | undefined {
   if (!questionId) return undefined
   const prefix = questionId.trim().toLowerCase().split('-')[0]
-  return subjectsByPrefix.get(prefix)
+  return prefix === 'bio' ? getSubject('biology') : subjectsByPrefix.get(prefix)
 }
 
 export function isSubjectAvailable(subjectId: string): boolean {

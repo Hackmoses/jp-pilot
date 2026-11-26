@@ -1,0 +1,169 @@
+{
+  "subject": "biology",
+  "topicId": "6",
+  "lessons": [
+    {
+      "id": "biology-nephron",
+      "title": "The kidney and the nephron",
+      "scenes": [
+        {
+          "id": "biology-nephron-1",
+          "show": "",
+          "say": "Fish, amphibians, birds and mammals use kidneys to make urine. Zoom into its outer cortex to find the start of a nephron, the kidney's filtering unit.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "kidneys",
+              "action": "kidney",
+              "label": ""
+            },
+            {
+              "word": "cortex",
+              "action": "cortex",
+              "label": ""
+            },
+            {
+              "word": "nephron",
+              "action": "zoom",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-nephron-2",
+          "show": "",
+          "say": "Blood enters the glomerulus. Pressure forces water and small solutes into Bowman's capsule. Blood cells and most proteins stay in the blood.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "enters",
+              "action": "in",
+              "label": ""
+            },
+            {
+              "word": "glomerulus",
+              "action": "tuft",
+              "label": ""
+            },
+            {
+              "word": "forces",
+              "action": "filter",
+              "label": ""
+            },
+            {
+              "word": "capsule",
+              "action": "capsule",
+              "label": ""
+            },
+            {
+              "word": "cells",
+              "action": "tuft",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-nephron-3",
+          "show": "",
+          "say": "The proximal tubule reabsorbs glucose and other useful substances into the blood. Water leaves the descending limb of the loop of Henle and can leave the collecting duct.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "proximal",
+              "action": "prox",
+              "label": ""
+            },
+            {
+              "word": "glucose",
+              "action": "reabs",
+              "label": ""
+            },
+            {
+              "word": "blood",
+              "action": "blood",
+              "label": ""
+            },
+            {
+              "word": "descending",
+              "action": "down",
+              "label": ""
+            },
+            {
+              "word": "Henle",
+              "action": "loop",
+              "label": ""
+            },
+            {
+              "word": "collecting",
+              "action": "duct",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-nephron-4",
+          "show": "Filter first, then reabsorb.",
+          "say": "What remains leaves as urine through the ureter. Remember: pressure filters, then tubules take useful substances back.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "urine",
+              "action": "out",
+              "label": ""
+            },
+            {
+              "word": "ureter",
+              "action": "ureter",
+              "label": ""
+            },
+            {
+              "word": "filters",
+              "action": "filter",
+              "label": ""
+            },
+            {
+              "word": "tubules",
+              "action": "prox",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-nephron-5",
+          "show": "",
+          "say": "JAMB asks where filtrate collects, where glucose returns to the blood, and what healthy urine contains.",
+          "visual": "4",
+          "beats": [
+            {
+              "word": "collects",
+              "action": "capsule",
+              "label": ""
+            },
+            {
+              "word": "glucose",
+              "action": "reabs",
+              "label": ""
+            },
+            {
+              "word": "urine",
+              "action": "out",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Where does filtrate first collect?",
+        "options": [
+          "Bowman’s capsule",
+          "Collecting duct",
+          "Loop of Henle",
+          "Ureter"
+        ],
+        "answerIndex": 0,
+        "feedback": "Pressure pushes water and small solutes from the glomerulus into Bowman’s capsule."
+      }
+    }
+  ]
+}

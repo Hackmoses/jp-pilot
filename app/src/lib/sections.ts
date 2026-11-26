@@ -138,12 +138,13 @@ export function subtopicLabel(topic: string): string | undefined {
 export const STUDY_TOPICS: Record<string, string[]> = {
   chemistry: ['2', '3', '11', '13', '14', '15'],
   physics: ['2', '5', '17', '14', '18', '12'],
-  biology: ['1', '10'],
+  biology: ['1', '4', '6', '10'],
   mathematics: ['1', '3'],
   english: [...Object.keys(ENGLISH_CARD_TOPICS), ...Object.keys(ENGLISH_ORAL_LESSONS)],
 }
 
 export function conceptLessonTopic(subject: string, chapter: string) {
+  if (subject === 'biology') return ({ 4: 'biology-heart', 6: 'biology-nephron', 10: 'biology-inheritance' } as Record<string, string | undefined>)[chapter]
   if (subject === 'physics' && chapter === '12') return 'physics-12-waves'
   if (subject === 'chemistry' && chapter === '2') return 'chemistry-2-mole'
   if (subject === 'english' && ENGLISH_ORAL_LESSONS[chapter]) return 'english-oral'

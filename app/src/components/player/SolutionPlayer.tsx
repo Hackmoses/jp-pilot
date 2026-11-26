@@ -19,6 +19,7 @@ import {
   type PlaybackState,
 } from './CalculationPlayback'
 import { bindHandwriting } from './handwriting'
+import { WritingHand } from './WritingHand'
 import './player.css'
 
 export function hasStructuredStepFields(step: AnimationStep): boolean {
@@ -442,12 +443,7 @@ function Player({
               {renderAnimatedStepContent(step)}
               {!step.reason && <p class="jp-player__caption">{track.recorded?.captions?.[stepIndex] ?? step.narration}</p>}
               {active && index >= 0 && (
-                <svg ref={penRef} class="jp-player__pen" viewBox="0 0 24 24" aria-hidden="true"
-                  fill="var(--bg)" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m1 23 2-6L16 4l3 3L6 20z" />
-                  <path d="M3 17l3 3M13 7l3 3" fill="none" />
-                  <path d="M23 14l-4-5a2 2 0 0 0-3 2l1 2-5-3a2 2 0 0 0-2 3l4 3-2-1a2 2 0 0 0-2 3l4 3c2 2 5 2 7 1l2-1" />
-                </svg>
+                <WritingHand penRef={penRef} class="jp-player__pen" />
               )}
             </div>
           )
