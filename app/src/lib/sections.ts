@@ -28,6 +28,23 @@ const mathematics = fromRows([
   ['V', 'Statistics', [['Representation of Data', 19], ['Measures of Location', 20], ['Measures of Dispersion', 21], ['Permutation and Combination', 22], ['Probability', 23]]],
 ])
 
+// Slim list from english-bank/syllabus-english.json. The grammar deck covers chapters 7, 8 and 10.
+const english = fromRows([
+  ['B', 'Lexis and Structure', [
+    ['Synonyms', 4], ['Antonyms', 5], ['Idioms and Sentence Interpretation', 6],
+    ['Grammar Rules', 7], ['Tenses and Reported Speech', 8], ['Prepositions and Phrasal Verbs', 9],
+    ['Word Order, Pronouns and Possessives', 10], ['Confusable Words', 11], ['Spelling', 18],
+  ]],
+  ['C', 'Oral Forms', [
+    ['Vowel Sounds', 12], ['Consonant Sounds', 13], ['Rhymes', 14], ['Word Stress', 15], ['Emphatic Stress', 16],
+  ]],
+])
+
+export const ENGLISH_CARD_TOPICS: Record<string, string> = {
+  4: 'synonyms', 5: 'antonyms', 6: 'idioms', 7: 'grammar-rules',
+  9: 'phrasal-verbs-prepositions', 11: 'confusable-words', 18: 'spelling',
+}
+
 // Biology has no syllabus file yet, so its JAMB sections live here.
 const biology: { subject: string; sections: SyllabusSection[] } = {
   subject: 'biology',
@@ -55,7 +72,8 @@ const biology: { subject: string; sections: SyllabusSection[] } = {
 
 const syllabi: Record<string, { sections: SyllabusSection[] }> = { chemistry, physics, mathematics, biology }
 
-export function syllabusSections(subject: string): SyllabusSection[] {
+export function syllabusSections(subject: string, study = false): SyllabusSection[] {
+  if (study && subject === 'english') return english.sections
   return syllabi[subject]?.sections ?? []
 }
 
@@ -107,13 +125,13 @@ export function subtopicLabel(topic: string): string | undefined {
   return topic.match(/\(([^)]+)\)\s*$/)?.[1]
 }
 
-// Topics that have Study content (Try it and pilot concept lessons). Kept in step with
-// the Try it list by a test, so Practice can link to Study without loading that code.
+// Study routes with content. Tests keep the maps in step with the activities and decks.
 export const STUDY_TOPICS: Record<string, string[]> = {
   chemistry: ['2', '3', '11', '13', '14', '15'],
   physics: ['2', '5', '17', '14', '18', '12'],
   biology: ['1', '10'],
   mathematics: ['1', '3'],
+  english: Object.keys(ENGLISH_CARD_TOPICS),
 }
 
 export function conceptLessonTopic(subject: string, chapter: string) {

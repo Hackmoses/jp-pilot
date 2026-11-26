@@ -45,10 +45,11 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
   const triggerRef = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
+    if (mode === 'study') return
     let active = true
     void loadSubject('chemistry').then(() => { if (active) setManifestReady(true) })
     return () => { active = false }
-  }, [])
+  }, [mode])
 
   useEffect(() => {
     const dialog = dialogRef.current
