@@ -1,7 +1,7 @@
 {
   "version": 1,
   "subject": "physics",
-  "count": 50,
+  "count": 49,
   "questions": [
     {
       "id": "phys-jamb-2011-015",
@@ -1298,71 +1298,6 @@
       "source": {
         "provider": "jamb-past-paper",
         "id": 24,
-        "yearLabel": "2013"
-      },
-      "yearVerified": true,
-      "reviewed": false
-    },
-    {
-      "id": "phys-jamb-2013-034",
-      "subject": "physics",
-      "chapter": "15",
-      "topic": "Refraction, Lenses and Optical Instruments",
-      "concept": "Microscopes, telescopes and projectors",
-      "type": "calculation",
-      "difficulty": 2,
-      "stem": "If the linear magnification of the objective and eyepiece convex lenses of a compound microscope are 4 and 7 respectively, calculate the angular magnification of the microscope.",
-      "options": [
-        {
-          "id": "a",
-          "text": "2",
-          "why": "Dividing the magnifications misses the second stage’s multiplication.",
-          "whyWrong": "Dividing the magnifications misses the second stage’s multiplication."
-        },
-        {
-          "id": "b",
-          "text": "3",
-          "why": "Subtracting the two factors does not give the combined magnification.",
-          "whyWrong": "Subtracting the two factors does not give the combined magnification."
-        },
-        {
-          "id": "c",
-          "text": "11",
-          "why": "Adding 4 and 7 treats successive magnifications as additive.",
-          "whyWrong": "Adding 4 and 7 treats successive magnifications as additive."
-        },
-        {
-          "id": "d",
-          "text": "28",
-          "why": "In the usual school model, the compound microscope’s magnification is the product of the objective and eyepiece magnifications, 4 × 7 = 28.",
-          "whyWrong": null
-        }
-      ],
-      "answerId": "d",
-      "removeOrder": [
-        "a",
-        "b"
-      ],
-      "hint": "Apply the two magnifying stages in sequence.",
-      "explanation": "In the usual school model, the compound microscope’s magnification is the product of the objective and eyepiece magnifications, 4 × 7 = 28.",
-      "trap": "Adding 4 and 7 treats successive magnifications as additive.",
-      "mnemonic": "Compound microscope magnification is the product of the two stages.",
-      "askPresets": [
-        {
-          "id": "simpler",
-          "answer": "Compound microscope magnification is the product of the two stages."
-        },
-        {
-          "id": "whynot",
-          "optionId": "c",
-          "answer": "Adding 4 and 7 treats successive magnifications as additive."
-        }
-      ],
-      "animationId": null,
-      "lockedOptions": [],
-      "source": {
-        "provider": "jamb-past-paper",
-        "id": 34,
         "yearLabel": "2013"
       },
       "yearVerified": true,

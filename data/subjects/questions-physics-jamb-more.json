@@ -1,7 +1,7 @@
 {
   "version": 1,
   "subject": "physics",
-  "count": 100,
+  "count": 99,
   "questions": [
     {
       "id": "phys-jamb-1998-001",
@@ -1063,71 +1063,6 @@
         "provider": "jamb-past-paper",
         "id": 43,
         "yearLabel": "2007"
-      },
-      "yearVerified": true,
-      "reviewed": false
-    },
-    {
-      "id": "phys-jamb-2004-012",
-      "subject": "physics",
-      "chapter": "5",
-      "topic": "Work, Energy, Power and Simple Machines",
-      "concept": "Kinetic and potential energy",
-      "type": "calculation",
-      "difficulty": 2,
-      "stem": "A body of mass 4 kg is acted on by a constant force of 12 N for 3 seconds. The kinetic energy gained by the body at the end of the time is",
-      "options": [
-        {
-          "id": "a",
-          "text": "162 J",
-          "why": "Acceleration a = \\frac{12}{4} = 3 m/s². Velocity after 3 s from rest: v = 0 + 3 × 3 = 9 m/s. Kinetic energy = \\frac{1}{2} × 4 × 9^{2} = 2 × 81 = 162 J.",
-          "whyWrong": null
-        },
-        {
-          "id": "b",
-          "text": "144 J",
-          "why": "144 J confuses v^{2} with 2 v^{2} or omits the mass factor \\frac{1}{2} m.",
-          "whyWrong": "144 J confuses v^{2} with 2 v^{2} or omits the mass factor \\frac{1}{2} m."
-        },
-        {
-          "id": "c",
-          "text": "72 J",
-          "why": "72 J misses a factor when computing \\frac{1}{2} m v^{2}.",
-          "whyWrong": "72 J misses a factor when computing \\frac{1}{2} m v^{2}."
-        },
-        {
-          "id": "d",
-          "text": "81 J",
-          "why": "81 J equals v^{2} = 9^{2}, omitting \\frac{1}{2} m = 2.",
-          "whyWrong": "81 J equals v^{2} = 9^{2}, omitting \\frac{1}{2} m = 2."
-        }
-      ],
-      "answerId": "a",
-      "removeOrder": [
-        "b",
-        "c"
-      ],
-      "hint": "Find acceleration a = \\frac{F}{m}, final velocity v = a t from rest, then KE = \\frac{1}{2} m v^{2}.",
-      "explanation": "Acceleration a = \\frac{12}{4} = 3 m/s². Velocity after 3 s from rest: v = 0 + 3 × 3 = 9 m/s. Kinetic energy = \\frac{1}{2} × 4 × 9^{2} = 2 × 81 = 162 J.",
-      "trap": "Using F × t = 36 as velocity instead of momentum, or forgetting the \\frac{1}{2} in \\frac{1}{2} m v^{2}.",
-      "mnemonic": "Force gives acceleration, then velocity, then \\frac{1}{2} m v^{2}.",
-      "askPresets": [
-        {
-          "id": "simpler",
-          "answer": "Force gives acceleration, then velocity, then \\frac{1}{2} m v^{2}."
-        },
-        {
-          "id": "whynot",
-          "optionId": "d",
-          "answer": "81 J equals v^{2} = 9^{2}, omitting \\frac{1}{2} m = 2."
-        }
-      ],
-      "animationId": null,
-      "lockedOptions": [],
-      "source": {
-        "provider": "jamb-past-paper",
-        "id": 12,
-        "yearLabel": "2004"
       },
       "yearVerified": true,
       "reviewed": false
