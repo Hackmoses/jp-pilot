@@ -9,12 +9,17 @@
         {
           "id": "biology-energy-1",
           "show": "",
-          "say": "Catabolism is the breakdown of larger molecules into smaller ones. Some of the released energy can be captured rather than lost as heat. ATP is a short-term energy carrier made in cells. Its hydrolysis can drive processes such as movement and active transport.",
+          "say": "Catabolism breaks larger molecules into smaller ones. In the cytosol, glycolysis breaks glucose into pyruvate, which can enter the mitochondrion. ATP is a short-term energy carrier. Its hydrolysis can drive movement and active transport.",
           "visual": "0",
           "beats": [
             {
-              "word": "Catabolism",
+              "word": "glucose",
               "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "pyruvate",
+              "action": "part-0-p",
               "label": ""
             },
             {
@@ -51,6 +56,11 @@
             {
               "word": "During",
               "action": "part-2-1",
+              "label": ""
+            },
+            {
+              "word": "ethanol",
+              "action": "part-2-e",
               "label": ""
             }
           ]

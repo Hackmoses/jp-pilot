@@ -1,41 +1,55 @@
-import { processDrawing } from '../ProcessBoard'
+import { processDrawing } from '../AnatomyBoard'
 
-export default processDrawing({
-  "label": "Surviving dry conditions",
-  "rows": [
-    {
-      "parts": [
-        {
-          "label": "Sahel savanna",
-          "shape": "M-26 17H28M-9 17q0 -13 -13 -22m13 20Q-4 -4 4 -9m13 22q1 -14 11 -19M-16 -15l12 -5"
-        },
-        {
-          "label": "Xerophyte",
-          "shape": "M-7 21V-18Q1 -24 8 -18V5Q23 4 22 -8H29Q33 14 8 14V21ZM-6 -8l-10 -5m10 14l-9 1m17 -3l8 -5",
-          "motion": "M-8 -17L-25 -23"
-        }
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Aestivation",
-          "shape": "M-26 10q5 -4 11 0t12 0t12 0t15 0M-27 20h55M-25 -7Q-9 -18 7 -7L23 -11L19 1L7 0Q-9 6 -25 -7ZM-18 -8h1",
-          "motion": "M17 0Q26 3 18 17"
-        },
-        {
-          "label": "Diurnal activity",
-          "shape": "M-9 -13a9 9 0 1 0 18 0a9 9 0 1 0 -18 0ZM-25 18Q0 0 25 18H-25ZM-18 -16h-5m42 0h5M0 -23v-4"
-        }
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Hygrometer",
-          "shape": "M-20 17V-6a20 20 0 0 1 40 0v23ZM-15 -5l3 2m12 -15v5m14 3l-3 4M0 2L10 -9"
-        }
-      ]
-    }
-  ]
-})
+export default processDrawing("Surviving dry conditions", [
+  {
+    outline: [
+      ["amber", "M18 148Q86 133 125 150Q172 171 221 140Q258 125 301 139V253H18Z"],
+      ["ink", "M18 158Q77 146 126 166Q188 185 231 155Q270 143 301 157M18 208Q81 187 128 210Q179 232 236 209Q264 197 301 202"],
+    ],
+    parts: [
+      {
+        cue: 'part-0-0', label: "Sahel savanna", at: [18,104], tip: [57,145], align: 'start',
+        strokes: [
+          ["green", "M40 145L54 103L64 143M25 110Q29 101 42 100Q58 88 74 99Q88 98 94 108Q71 119 25 110Z"],
+          ["ink", "M73 148l5-15m5 16l6-8m-33 7l5-10"],
+        ],
+      },
+      {
+        cue: 'part-0-1', label: "Xerophyte", at: [301,41], tip: [241,100], align: 'end',
+        strokes: [
+          ["green", "M229 146L229 69Q231 47 242 57Q250 62 249 81L250 116Q263 104 262 82L271 82Q283 109 250 132L250 144Z"],
+          ["ink", "M230 79l-13-7m12 19l-12 4m34-20l10-6m3 31l10-3"],
+        ],
+        flows: [
+          ["blue", "M237 58L224 40"],
+        ],
+      },
+      {
+        cue: 'part-1-0', label: "Aestivating lungfish", at: [17,243], tip: [170,196], align: 'start',
+        strokes: [
+          ["paper", "M142 166Q183 156 220 170Q241 189 221 209Q200 223 159 215Q137 208 135 186Z"],
+          ["green", "M157 193Q155 176 179 179Q205 179 206 195Q193 211 178 202Q166 195 175 188L183 192Q196 198 197 193Q189 186 178 186Q168 186 169 197L163 204Z"],
+          ["lead", "M143 226L162 206"],
+        ],
+        flows: [
+          ["blue", "M190 159Q199 170 185 181"],
+        ],
+      },
+      {
+        cue: 'part-1-1', label: "Daylight activity", at: [17,41], tip: [113,68], align: 'start',
+        strokes: [
+          ["amber", "M104 62a15 15 0 1 0 30 0a15 15 0 1 0-30 0Z"],
+          ["ink", "M119 41V35m0 48v7M99 62h-7m47 0h8M105 47l-5-5m34 5l5-5"],
+        ],
+      },
+      {
+        cue: 'part-2-0', label: "Hygrometer", at: [302,247], tip: [277,182], align: 'end',
+        strokes: [
+          ["paper", "M269 169H288V194H269Z"],
+          ["ink", "M273 181q6-12 11 0m-6 0l4-5m-12 19h16"],
+          ["lead", "M270 231L278 194"],
+        ],
+      },
+    ],
+  },
+])

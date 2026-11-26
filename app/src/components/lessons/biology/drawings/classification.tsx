@@ -1,46 +1,64 @@
-import { processDrawing } from '../ProcessBoard'
+import { processDrawing } from '../AnatomyBoard'
 
-export default processDrawing({
-  "label": "How biologists classify animals",
-  "rows": [
-    {
-      "parts": [
-        {
-          "label": "Genus",
-          "shape": "M-22 17V-1H21V17M0 -1V-19M-22 18a3 3 0 1 0 0 5a3 3 0 1 0 0 -5M21 18a3 3 0 1 0 0 5a3 3 0 1 0 0 -5"
-        },
-        {
-          "label": "Species",
-          "shape": "M-24 8q10 -17 20 -11q-3 10 -12 11ZM4 7q6 -15 21 -14q-3 13 -12 15Z"
-        }
-      ],
-      "links": [
-        1
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Radial symmetry",
-          "shape": "M0 -20a20 20 0 1 0 0 40a20 20 0 1 0 0 -40ZM-22 0H22M0 -22V22M-15 -15L15 15M-15 15L15 -15"
-        },
-        {
-          "label": "Mammary glands",
-          "shape": "M-26 5Q-8 -15 13 -6L24 -14L25 -2L31 0L24 4L14 6Q-4 20 -26 5ZM-8 10q7 4 16 0"
-        }
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Reptile scales",
-          "shape": "M-24 -16q8 12 16 0q8 12 16 0q8 12 16 0M-24 -4q8 12 16 0q8 12 16 0q8 12 16 0M-24 8q8 12 16 0q8 12 16 0q8 12 16 0"
-        },
-        {
-          "label": "Scales on|bird feet",
-          "shape": "M-9 -20l4 19l-16 14m16 -14L3 17M-5 -1l24 10M-6 -13l7 -1m-6 6l7 -1m-5 5l7 -1"
-        }
-      ]
-    }
-  ]
-})
+export default processDrawing("How biologists classify animals", [
+  {
+    outline: [
+      ["ink", "M150 44V65M57 65H268M57 65V95M149 65V87M268 65V114M149 120V137M106 138H202M106 138V165M202 138V165"],
+      ["paper", "M111 17H194V45H111ZM96 87H201V121H96Z"],
+    ],
+    parts: [
+      {
+        cue: 'part-0-a', label: "Animals", at: [151, 36], tip: [151, 41],
+      },
+      {
+        cue: 'part-0-0', label: "Genus", at: [48,158], tip: [105,141],
+        strokes: [
+          ["lead", "M71 154L104 141"],
+          ["amber", "M81 169Q88 159 103 165L124 161Q145 164 150 177L138 186L115 176Q105 192 80 188Z"],
+        ],
+        flows: [
+          ["blue", "M148 116V137H108V162"],
+        ],
+      },
+      {
+        cue: 'part-0-1', label: "Species", at: [106,241], tip: [111,191],
+        strokes: [
+          ["ink", "M106 186V204M82 204H127M82 204V216M127 204V216"],
+          ["paper", "M66 216q14-12 28 1l-3 8H67ZM116 216q14-12 27 1l-3 8h-24Z"],
+        ],
+        flows: [
+          ["blue", "M106 188V205H127V216"],
+        ],
+      },
+      {
+        cue: 'part-1-0', label: "Radial|symmetry", at: [17,105], tip: [55,76], align: 'start',
+        strokes: [
+          ["red", "M56 64L67 86L90 85L75 103L82 126L57 114L37 127L41 104L22 89L46 88Z"],
+          ["ink", "M56 64V115M23 90L78 119M88 87L40 121"],
+        ],
+      },
+      {
+        cue: 'part-1-1', label: "Whale|mammary gland", at: [306,112], tip: [198,174], align: 'end',
+        strokes: [
+          ["paper", "M164 180Q187 161 225 168L246 154L243 172L252 183L223 179Q187 194 164 180Z"],
+          ["red", "M196 185q10 3 20-4"],
+          ["lead", "M274 130L215 173"],
+        ],
+      },
+      {
+        cue: 'part-2-0', label: "Lizard scales", at: [304,203], tip: [274,166], align: 'end',
+        strokes: [
+          ["green", "M245 153L263 144L285 149L298 137L285 155L269 168L254 170Z"],
+          ["ink", "M257 153l4 5l5-4l5 4l5-6m-9 8l4 3m3-11l4 3"],
+        ],
+      },
+      {
+        cue: 'part-2-1', label: "Bird foot scales", at: [306,258], tip: [252,221], align: 'end',
+        strokes: [
+          ["amber", "M253 185L260 224L284 234L281 238L259 234L246 245L242 241L252 226L242 190Z"],
+          ["ink", "M247 200l9-3m-8 10l10-2m-9 9l10-2m-8 9l9-2"],
+        ],
+      },
+    ],
+  },
+])
