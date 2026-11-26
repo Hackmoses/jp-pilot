@@ -1,0 +1,813 @@
+{
+  "version": 1,
+  "count": 10,
+  "animations": [
+    {
+      "id": "anim-math-jamb-2014-008",
+      "questionId": "math-jamb-2014-008",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{2\\sqrt{2} − \\sqrt{3}}{\\sqrt{3} + \\sqrt{2}} × \\frac{\\sqrt{3} − \\sqrt{2}}{\\sqrt{3} − \\sqrt{2}}",
+          "tag": "conjugate",
+          "title": "Multiply by conjugate",
+          "narration": "Multiply numerator and denominator by root three minus root two to rationalise the denominator."
+        },
+        {
+          "n": 2,
+          "display": "Denominator: (\\sqrt{3})^{2} − (\\sqrt{2})^{2} = 3 − 2 = 1",
+          "tag": "bottom",
+          "title": "Simplify denominator",
+          "narration": "Difference of squares turns the denominator into three minus two, which equals one."
+        },
+        {
+          "n": 3,
+          "display": "Numerator: 2\\sqrt{6} − 4 − 3 + \\sqrt{6} = 3\\sqrt{6} − 7",
+          "tag": "top",
+          "title": "Expand and collect numerator",
+          "narration": "Expand the top product and combine like surds and whole numbers to get three root six minus seven."
+        },
+        {
+          "n": 4,
+          "display": "3\\sqrt{6} − 7 (option B)",
+          "tag": "answer",
+          "title": "Simplified surd",
+          "narration": "Dividing by one leaves the simplified answer, three root six minus seven."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Conjugate of \\sqrt{3} + \\sqrt{2} is \\sqrt{3} − \\sqrt{2}",
+          "tag": "conjugate",
+          "title": "Choose the conjugate",
+          "narration": "Rewrite the sum in the denominator as root three plus root two so its conjugate root three minus root two gives a positive difference of squares."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{(2\\sqrt{2} − \\sqrt{3})(\\sqrt{3} − \\sqrt{2})}{(\\sqrt{3} + \\sqrt{2})(\\sqrt{3} − \\sqrt{2})}",
+          "tag": "multiply",
+          "title": "Multiply top and bottom",
+          "narration": "Multiply both top and bottom by the conjugate so the value of the fraction stays unchanged."
+        },
+        {
+          "n": 3,
+          "display": "Denominator: (\\sqrt{3})^{2} − (\\sqrt{2})^{2} = 3 − 2 = 1",
+          "tag": "denominator",
+          "title": "Clear roots in denominator",
+          "narration": "Using a plus b times a minus b equals a squared minus b squared reduces the denominator to three minus two, or one."
+        },
+        {
+          "n": 4,
+          "display": "Numerator: 2\\sqrt{2}(\\sqrt{3} − \\sqrt{2}) − \\sqrt{3}(\\sqrt{3} − \\sqrt{2})",
+          "tag": "distribute",
+          "title": "Expand numerator brackets",
+          "narration": "Multiply each term of two root two minus root three by root three minus root two."
+        },
+        {
+          "n": 5,
+          "display": "2\\sqrt{6} − 4 − 3 + \\sqrt{6} = 3\\sqrt{6} − 7",
+          "tag": "collect",
+          "title": "Collect like terms",
+          "narration": "Combine two root six plus root six into three root six, and subtract three from minus four to get minus seven."
+        },
+        {
+          "n": 6,
+          "display": "3\\sqrt{6} − 7 (option B)",
+          "tag": "answer",
+          "title": "Final expression",
+          "narration": "Because the denominator is one, the simplified expression is three root six minus seven."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-009",
+      "questionId": "math-jamb-2014-009",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "8 = 2^{3}, 16 = 2^{4}, 4 = 2^{2}",
+          "tag": "powers",
+          "title": "Write as powers of 2",
+          "narration": "Express eight, sixteen, and four as powers of the common base two."
+        },
+        {
+          "n": 2,
+          "display": "log_{2} 8 = 3, log_{2} 16 = 4, log_{2} 4 = 2",
+          "tag": "evaluate",
+          "title": "Read each logarithm",
+          "narration": "Because log base two of two to the k equals k, the three logs are three, four, and two."
+        },
+        {
+          "n": 3,
+          "display": "3 + 4 − 2 = 5",
+          "tag": "arithmetic",
+          "title": "Add and subtract values",
+          "narration": "Add three and four to get seven, then subtract two."
+        },
+        {
+          "n": 4,
+          "display": "5 (option D)",
+          "tag": "answer",
+          "title": "Final value",
+          "narration": "The value of the expression is five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "8 = 2^{3} ⇒ log_{2} 8 = 3",
+          "tag": "first log",
+          "title": "Evaluate log base 2 of 8",
+          "narration": "Write eight as two cubed so log base two of eight simplifies directly to three."
+        },
+        {
+          "n": 2,
+          "display": "16 = 2^{4} ⇒ log_{2} 16 = 4",
+          "tag": "second log",
+          "title": "Evaluate log base 2 of 16",
+          "narration": "Write sixteen as two to the fourth power, giving log base two of sixteen equal to four."
+        },
+        {
+          "n": 3,
+          "display": "4 = 2^{2} ⇒ log_{2} 4 = 2",
+          "tag": "third log",
+          "title": "Evaluate log base 2 of 4",
+          "narration": "Write four as two squared so log base two of four equals two."
+        },
+        {
+          "n": 4,
+          "display": "3 + 4 − 2 = 5",
+          "tag": "combine",
+          "title": "Substitute and simplify",
+          "narration": "Substitute the three numbers back in: three plus four minus two equals five."
+        },
+        {
+          "n": 5,
+          "display": "Check: log_{2}(\\frac{8 × 16}{4}) = log_{2} 32 = 5",
+          "tag": "check",
+          "title": "Check with log laws",
+          "narration": "Check using product and quotient laws: eight times sixteen divided by four is thirty-two, and two to the fifth is thirty-two."
+        },
+        {
+          "n": 6,
+          "display": "5 (option D)",
+          "tag": "answer",
+          "title": "Final result",
+          "narration": "Therefore the expression evaluates to five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-012",
+      "questionId": "math-jamb-2014-012",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "gt^{2} − k − w = 0",
+          "tag": "given",
+          "title": "Start with equation",
+          "narration": "We want to isolate g on one side of the equation."
+        },
+        {
+          "n": 2,
+          "display": "gt^{2} = k + w",
+          "tag": "add",
+          "title": "Add k and w to both sides",
+          "narration": "Add k and w to both sides so the term containing g stands alone."
+        },
+        {
+          "n": 3,
+          "display": "g = \\frac{k + w}{t^{2}}",
+          "tag": "divide",
+          "title": "Divide both sides by t^{2}",
+          "narration": "Since t is nonzero, divide both sides by t squared to leave g by itself."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{k + w}{t^{2}} (option B)",
+          "tag": "answer",
+          "title": "Subject of formula",
+          "narration": "Making g the subject gives k plus w all over t squared."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "gt^{2} − k − w = 0",
+          "tag": "given",
+          "title": "Write the given formula",
+          "narration": "Identify g inside the first term g t squared, with minus k and minus w subtracted from it."
+        },
+        {
+          "n": 2,
+          "display": "gt^{2} − k − w + k + w = k + w",
+          "tag": "add",
+          "title": "Add k and w to both sides",
+          "narration": "Add both k and w to each side to cancel the minus k and minus w on the left."
+        },
+        {
+          "n": 3,
+          "display": "gt^{2} = k + w",
+          "tag": "simplify",
+          "title": "Isolate the g term",
+          "narration": "This leaves g t squared equal to k plus w."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{gt^{2}}{t^{2}} = \\frac{k + w}{t^{2}}",
+          "tag": "divide",
+          "title": "Divide both sides by t^{2}",
+          "narration": "Divide both sides by t squared to undo multiplying g by t squared; this is valid because t is not zero."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{k + w}{t^{2}} (option B)",
+          "tag": "answer",
+          "title": "g in terms of k, w, t",
+          "narration": "So g equals k plus w divided by t squared."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-014",
+      "questionId": "math-jamb-2014-014",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y − 1 = 0 ⇒ y = 1",
+          "tag": "factor theorem",
+          "title": "Apply factor theorem",
+          "narration": "Because y minus one is a factor, substituting y equals one into the polynomial must give zero."
+        },
+        {
+          "n": 2,
+          "display": "1^{3} + 4(1)^{2} + k(1) − 6 = 0",
+          "tag": "substitute",
+          "title": "Evaluate at y = 1",
+          "narration": "Replace every y in the polynomial with one and equate to zero."
+        },
+        {
+          "n": 3,
+          "display": "1 + 4 + k − 6 = 0 ⇒ k − 1 = 0",
+          "tag": "simplify",
+          "title": "Collect constants",
+          "narration": "Combine one plus four minus six to get minus one, leaving k minus one equals zero."
+        },
+        {
+          "n": 4,
+          "display": "k = 1 (option D)",
+          "tag": "answer",
+          "title": "Value of k",
+          "narration": "Add one to both sides to get k equals one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f(y) = y^{3} + 4y^{2} + ky − 6, f(1) = 0",
+          "tag": "theorem",
+          "title": "State factor theorem",
+          "narration": "By the factor theorem, y minus one is a factor of f of y only if f of one equals zero."
+        },
+        {
+          "n": 2,
+          "display": "f(1) = (1)^{3} + 4(1)^{2} + k(1) − 6 = 0",
+          "tag": "substitute",
+          "title": "Substitute y = 1",
+          "narration": "Plug y equals one into each term and set the result equal to zero."
+        },
+        {
+          "n": 3,
+          "display": "1 + 4 + k − 6 = 0",
+          "tag": "evaluate",
+          "title": "Evaluate powers of 1",
+          "narration": "One cubed is one and four times one squared is four, leaving one plus four plus k minus six equals zero."
+        },
+        {
+          "n": 4,
+          "display": "k − 1 = 0 ⇒ k = 1",
+          "tag": "solve",
+          "title": "Add 1 to both sides",
+          "narration": "Five minus six is minus one; add one to both sides so k stands alone as one."
+        },
+        {
+          "n": 5,
+          "display": "Check: 1 + 4 + 1 − 6 = 0",
+          "tag": "check",
+          "title": "Check with k = 1",
+          "narration": "Check: substituting k equals one gives one plus four plus one minus six, which is zero."
+        },
+        {
+          "n": 6,
+          "display": "k = 1 (option D)",
+          "tag": "answer",
+          "title": "Final value of k",
+          "narration": "Therefore the value of k is one."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-016",
+      "questionId": "math-jamb-2014-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = \\frac{kQ}{R}",
+          "tag": "model",
+          "title": "Set up variation law",
+          "narration": "Put direct variable Q in the numerator and inverse variable R in the denominator with constant k."
+        },
+        {
+          "n": 2,
+          "display": "27 = \\frac{k(36)}{16}",
+          "tag": "substitute",
+          "title": "Plug in given values",
+          "narration": "Substitute P equals twenty-seven, Q equals thirty-six, and R equals sixteen."
+        },
+        {
+          "n": 3,
+          "display": "k = \\frac{27 × 16}{36} = 12",
+          "tag": "solve k",
+          "title": "Find constant k",
+          "narration": "Multiply both sides by sixteen and divide by thirty-six to obtain k equals twelve."
+        },
+        {
+          "n": 4,
+          "display": "P = \\frac{12Q}{R} (option C)",
+          "tag": "answer",
+          "title": "Formula connecting P, Q, R",
+          "narration": "Replacing k with twelve gives P equals twelve Q over R."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P ∝ \\frac{Q}{R} ⇒ P = \\frac{kQ}{R}",
+          "tag": "variation",
+          "title": "Write variation equation",
+          "narration": "Direct variation puts Q on top, inverse variation puts R underneath, and k is the constant of proportionality."
+        },
+        {
+          "n": 2,
+          "display": "27 = \\frac{36k}{16}",
+          "tag": "substitute",
+          "title": "Substitute P, Q, and R",
+          "narration": "Substitute the known triple twenty-seven, thirty-six, and sixteen into the equation."
+        },
+        {
+          "n": 3,
+          "display": "k = \\frac{27 × 16}{36}",
+          "tag": "rearrange",
+          "title": "Isolate constant k",
+          "narration": "Multiply both sides by sixteen and divide both sides by thirty-six to get k on its own."
+        },
+        {
+          "n": 4,
+          "display": "k = \\frac{3 × 16}{4} = 3 × 4 = 12",
+          "tag": "reduce",
+          "title": "Cancel common factors",
+          "narration": "Divide twenty-seven and thirty-six by nine to leave three and four, then divide sixteen by four to get three times four, or twelve."
+        },
+        {
+          "n": 5,
+          "display": "Check: P = \\frac{12 × 36}{16} = \\frac{12 × 9}{4} = 27",
+          "tag": "check",
+          "title": "Check with given values",
+          "narration": "Substitute thirty-six and sixteen back into twelve Q over R to confirm P equals twenty-seven."
+        },
+        {
+          "n": 6,
+          "display": "P = \\frac{12Q}{R} (option C)",
+          "tag": "answer",
+          "title": "Final formula",
+          "narration": "The formula relating the variables is P equals twelve Q over R."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-018",
+      "questionId": "math-jamb-2014-018",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "12(\\frac{x}{2} + \\frac{3}{4}) ≤ 12(\\frac{5x}{6} − \\frac{7}{12})",
+          "tag": "clear",
+          "title": "Multiply through by 12",
+          "narration": "Multiply both sides by the common denominator twelve; since twelve is positive, the inequality sign keeps its direction."
+        },
+        {
+          "n": 2,
+          "display": "6x + 9 ≤ 10x − 7",
+          "tag": "expand",
+          "title": "Clear all fractions",
+          "narration": "Simplify each fraction to obtain six x plus nine is less than or equal to ten x minus seven."
+        },
+        {
+          "n": 3,
+          "display": "16 ≤ 4x ⇒ 4 ≤ x",
+          "tag": "solve",
+          "title": "Collect x and constants",
+          "narration": "Add seven and subtract six x on both sides to get sixteen less than or equal to four x, then divide by four."
+        },
+        {
+          "n": 4,
+          "display": "x ≥ 4 (option B)",
+          "tag": "answer",
+          "title": "Solution inequality",
+          "narration": "Four less than or equal to x reads from x as x greater than or equal to four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "LCM(2, 4, 6, 12) = 12",
+          "tag": "lcm",
+          "title": "Find common denominator",
+          "narration": "Look at denominators two, four, six, and twelve; their least common multiple is twelve."
+        },
+        {
+          "n": 2,
+          "display": "6x + 9 ≤ 10x − 7",
+          "tag": "clear",
+          "title": "Multiply both sides by 12",
+          "narration": "Multiply every term on both sides by positive twelve so all fractions disappear without flipping the inequality."
+        },
+        {
+          "n": 3,
+          "display": "9 + 7 ≤ 10x − 6x",
+          "tag": "group",
+          "title": "Group constants and x terms",
+          "narration": "Add seven to both sides and subtract six x from both sides to put constants on the left and x terms on the right."
+        },
+        {
+          "n": 4,
+          "display": "16 ≤ 4x",
+          "tag": "simplify",
+          "title": "Simplify both sides",
+          "narration": "Combine nine plus seven into sixteen and ten x minus six x into four x."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{16}{4} ≤ \\frac{4x}{4} ⇒ x ≥ 4",
+          "tag": "divide",
+          "title": "Divide both sides by 4",
+          "narration": "Divide both sides by positive four to get four is less than or equal to x, which is x greater than or equal to four."
+        },
+        {
+          "n": 6,
+          "display": "Check x = 4: \\frac{4}{2} + \\frac{3}{4} = \\frac{11}{4}, \\frac{20}{6} − \\frac{7}{12} = \\frac{11}{4}",
+          "tag": "check",
+          "title": "Check boundary x = 4",
+          "narration": "Check at x equals four: both sides evaluate to eleven quarters, confirming four is the exact boundary."
+        },
+        {
+          "n": 7,
+          "display": "x ≥ 4 (option B)",
+          "tag": "answer",
+          "title": "Final solution set",
+          "narration": "The solution of the inequality is x greater than or equal to four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-019",
+      "questionId": "math-jamb-2014-019",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{10} − T_{4} = 6d = 31 − 13 = 18",
+          "tag": "difference",
+          "title": "Find common difference",
+          "narration": "From the fourth term to the tenth term is six equal steps totalling eighteen, so each step d is three."
+        },
+        {
+          "n": 2,
+          "display": "d = \\frac{18}{6} = 3",
+          "tag": "solve d",
+          "title": "Divide by 6 steps",
+          "narration": "Divide eighteen by six on both sides to get common difference three."
+        },
+        {
+          "n": 3,
+          "display": "T_{24} = T_{4} + 20d = 13 + 20(3)",
+          "tag": "step forward",
+          "title": "Step 20 terms past T_{4}",
+          "narration": "The twenty-fourth term is twenty steps ahead of the fourth term, so add twenty times three to thirteen."
+        },
+        {
+          "n": 4,
+          "display": "73 (option D)",
+          "tag": "answer",
+          "title": "Twenty-fourth term",
+          "narration": "Thirteen plus sixty gives seventy-three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "T_{n} = a + (n − 1)d",
+          "tag": "formula",
+          "title": "AP nth term formula",
+          "narration": "Recall the arithmetic progression formula T n equals first term a plus n minus one times common difference d."
+        },
+        {
+          "n": 2,
+          "display": "a + 9d = 31, a + 3d = 13",
+          "tag": "equations",
+          "title": "Write both given terms",
+          "narration": "Write equations for the tenth term with nine d and the fourth term with three d."
+        },
+        {
+          "n": 3,
+          "display": "6d = 31 − 13 = 18 ⇒ d = 3",
+          "tag": "eliminate a",
+          "title": "Subtract to find d",
+          "narration": "Subtract the first equation from the second to eliminate a, leaving six d equals eighteen, so d equals three."
+        },
+        {
+          "n": 4,
+          "display": "a + 3(3) = 13 ⇒ a = 13 − 9 = 4",
+          "tag": "find a",
+          "title": "Find first term a",
+          "narration": "Substitute d equals three into the fourth term equation and subtract nine from both sides to get a equals four."
+        },
+        {
+          "n": 5,
+          "display": "T_{24} = 4 + 23(3) = 4 + 69",
+          "tag": "substitute",
+          "title": "Compute 24th term",
+          "narration": "Put a equals four, n equals twenty-four, and d equals three into the nth term formula."
+        },
+        {
+          "n": 6,
+          "display": "73 (option D)",
+          "tag": "answer",
+          "title": "Final term",
+          "narration": "Four plus sixty-nine equals seventy-three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-020",
+      "questionId": "math-jamb-2014-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "r = \\frac{T_{2}}{T_{1}} = \\frac{\\sqrt{10} + 2\\sqrt{5}}{\\sqrt{10} + \\sqrt{5}}",
+          "tag": "ratio",
+          "title": "Write common ratio",
+          "narration": "In a geometric progression, the common ratio equals the second term divided by the first term."
+        },
+        {
+          "n": 2,
+          "display": "2\\sqrt{5} = \\sqrt{2} × \\sqrt{10}, \\sqrt{10} = \\sqrt{2} × \\sqrt{5}",
+          "tag": "factor",
+          "title": "Spot common factor \\sqrt{2}",
+          "narration": "Notice that root two times root ten gives two root five, and root two times root five gives root ten."
+        },
+        {
+          "n": 3,
+          "display": "r = \\frac{\\sqrt{2}(\\sqrt{10} + \\sqrt{5})}{\\sqrt{10} + \\sqrt{5}}",
+          "tag": "cancel",
+          "title": "Factor out \\sqrt{2} and cancel",
+          "narration": "Factor root two out of the numerator and cancel the shared bracket from top and bottom."
+        },
+        {
+          "n": 4,
+          "display": "\\sqrt{2} (option B)",
+          "tag": "answer",
+          "title": "Common ratio",
+          "narration": "Cancelling the matching factor leaves the common ratio as root two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "r = \\frac{T_{2}}{T_{1}} = \\frac{\\sqrt{10} + 2\\sqrt{5}}{\\sqrt{10} + \\sqrt{5}}",
+          "tag": "formula",
+          "title": "State GP ratio formula",
+          "narration": "The common ratio of any geometric progression is the second term divided by the first term."
+        },
+        {
+          "n": 2,
+          "display": "2\\sqrt{5} = \\sqrt{4 × 5} = \\sqrt{20} = \\sqrt{2} × \\sqrt{10}",
+          "tag": "rewrite 1",
+          "title": "Rewrite 2\\sqrt{5} under one root",
+          "narration": "Bring two inside the square root as four to see two root five equals root twenty, which splits into root two times root ten."
+        },
+        {
+          "n": 3,
+          "display": "\\sqrt{10} = \\sqrt{2} × \\sqrt{5}",
+          "tag": "rewrite 2",
+          "title": "Split \\sqrt{10}",
+          "narration": "Likewise, split root ten into root two times root five."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = \\sqrt{2}(\\sqrt{5} + \\sqrt{10}) = \\sqrt{2} T_{1}",
+          "tag": "factor",
+          "title": "Factor \\sqrt{2} from T_{2}",
+          "narration": "Taking out the common factor root two reveals that the second term is simply root two times the first term."
+        },
+        {
+          "n": 5,
+          "display": "r = \\frac{\\sqrt{2} T_{1}}{T_{1}} = \\sqrt{2}",
+          "tag": "cancel",
+          "title": "Divide and cancel T_{1}",
+          "narration": "Cancel the identical first-term expression from numerator and denominator."
+        },
+        {
+          "n": 6,
+          "display": "\\sqrt{2} (option B)",
+          "tag": "answer",
+          "title": "Final common ratio",
+          "narration": "Therefore the common ratio is root two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-022",
+      "questionId": "math-jamb-2014-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "5x − 6y = 7, 2x − 7y = −11",
+          "tag": "equations",
+          "title": "Expand matrix rows",
+          "narration": "Multiply each matrix row by column vector x, y to write two linear equations."
+        },
+        {
+          "n": 2,
+          "display": "10x − 12y = 14, 10x − 35y = −55",
+          "tag": "scale",
+          "title": "Match x coefficients",
+          "narration": "Multiply the first equation by two and the second by five so both start with ten x."
+        },
+        {
+          "n": 3,
+          "display": "(−12y + 35y) = 14 + 55 ⇒ 23y = 69",
+          "tag": "subtract",
+          "title": "Subtract equations",
+          "narration": "Subtract the second scaled equation from the first to eliminate x and get twenty-three y equals sixty-nine."
+        },
+        {
+          "n": 4,
+          "display": "y = \\frac{69}{23} = 3 (option D)",
+          "tag": "answer",
+          "title": "Value of y",
+          "narration": "Divide both sides by twenty-three to find y equals three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\matrix{5,−6;2,−7}\\matrix{x;y} = \\matrix{7;−11}",
+          "tag": "matrix",
+          "title": "Set up matrix product",
+          "narration": "Write the mapping as multiplying the two by two matrix by the column vector x, y."
+        },
+        {
+          "n": 2,
+          "display": "5x − 6y = 7 and 2x − 7y = −11",
+          "tag": "rows",
+          "title": "Read two equations",
+          "narration": "Each row gives one linear equation: five x minus six y equals seven, and two x minus seven y equals minus eleven."
+        },
+        {
+          "n": 3,
+          "display": "2×: 10x − 12y = 14; 5×: 10x − 35y = −55",
+          "tag": "eliminate",
+          "title": "Equalise x coefficients",
+          "narration": "Since we want y, multiply the first equation by two and the second by five so the x terms both become ten x."
+        },
+        {
+          "n": 4,
+          "display": "(10x − 12y) − (10x − 35y) = 14 − (−55)",
+          "tag": "subtract",
+          "title": "Subtract second from first",
+          "narration": "Subtract the second equation from the first carefully, watching the double minus signs on minus thirty-five y and minus fifty-five."
+        },
+        {
+          "n": 5,
+          "display": "23y = 69 ⇒ y = \\frac{69}{23} = 3",
+          "tag": "divide",
+          "title": "Divide both sides by 23",
+          "narration": "Subtracting leaves twenty-three y equals sixty-nine; divide both sides by twenty-three to get y equals three."
+        },
+        {
+          "n": 6,
+          "display": "Check: x = 5 ⇒ 2(5) − 7(3) = −11",
+          "tag": "check",
+          "title": "Verify in both rows",
+          "narration": "Putting y equals three into the first row gives x equals five, and two times five minus seven times three equals minus eleven."
+        },
+        {
+          "n": 7,
+          "display": "y = 3 (option D)",
+          "tag": "answer",
+          "title": "Final value of y",
+          "narration": "Therefore y equals three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-023",
+      "questionId": "math-jamb-2014-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\det{a,b;c,d} = ad − bc",
+          "tag": "formula",
+          "title": "Determinant formula",
+          "narration": "For a two by two matrix, subtract the off-diagonal product from the main diagonal product."
+        },
+        {
+          "n": 2,
+          "display": "(−x)(4) − (12)(−1) = −12",
+          "tag": "substitute",
+          "title": "Expand determinant",
+          "narration": "Multiply minus x by four and subtract twelve times minus one, setting it equal to minus twelve."
+        },
+        {
+          "n": 3,
+          "display": "−4x + 12 = −12 ⇒ −4x = −24",
+          "tag": "isolate",
+          "title": "Subtract 12 from both sides",
+          "narration": "Minus twelve times minus one becomes plus twelve; subtract twelve from both sides to get minus four x equals minus twenty-four."
+        },
+        {
+          "n": 4,
+          "display": "x = 6 (option A)",
+          "tag": "answer",
+          "title": "Value of x",
+          "narration": "Divide both sides by minus four to get x equals six."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\det{−x,12;−1,4} = (−x)(4) − (12)(−1)",
+          "tag": "expand",
+          "title": "Compute determinant products",
+          "narration": "Multiply down the main diagonal minus x times four, then subtract the reverse diagonal twelve times minus one."
+        },
+        {
+          "n": 2,
+          "display": "−4x + 12 = −12",
+          "tag": "equate",
+          "title": "Watch the double negative",
+          "narration": "Subtracting minus twelve adds twelve, so set minus four x plus twelve equal to minus twelve."
+        },
+        {
+          "n": 3,
+          "display": "−4x = −12 − 12 = −24",
+          "tag": "subtract",
+          "title": "Subtract 12 from both sides",
+          "narration": "Subtract twelve from both sides to get the x term on its own."
+        },
+        {
+          "n": 4,
+          "display": "x = \\frac{−24}{−4} = 6",
+          "tag": "divide",
+          "title": "Divide both sides by −4",
+          "narration": "Divide minus twenty-four by minus four; a negative divided by a negative gives positive six."
+        },
+        {
+          "n": 5,
+          "display": "Check: (−6)(4) − (−12) = −24 + 12 = −12",
+          "tag": "check",
+          "title": "Check determinant value",
+          "narration": "Check: replacing x with six gives minus twenty-four plus twelve, which equals minus twelve."
+        },
+        {
+          "n": 6,
+          "display": "x = 6 (option A)",
+          "tag": "answer",
+          "title": "Final value of x",
+          "narration": "Therefore x equals six."
+        }
+      ]
+    }
+  ]
+}
