@@ -345,7 +345,7 @@ export function CardViewer({ deck, title, back }: { deck: string; title: string;
               >
                 <div class="jp-word-card-head">
                   <span class="jp-try-kicker">{title}</span>
-                  <span class="jp-word-jamb">JAMB {card.question.year} · Q{card.question.number}</span>
+                  <span class="jp-word-jamb jp-jamb-badge">JAMB {card.question.year} · Q{card.question.number}</span>
                 </div>
                 <p class="jp-word-q-stem">{card.question.stem}</p>
                 <OptionButtons
@@ -380,7 +380,7 @@ export function CardViewer({ deck, title, back }: { deck: string; title: string;
               >
                 <div class="jp-word-card-head">
                   <span class="jp-try-kicker">{title}</span>
-                  {card.jamb && <span class="jp-word-jamb">JAMB {card.jamb.year} · Q{card.jamb.number}</span>}
+                  {card.jamb && <span class="jp-word-jamb jp-jamb-badge">JAMB {card.jamb.year} · Q{card.jamb.number}</span>}
                 </div>
                 {!flipped ? (
                   <>
@@ -535,7 +535,7 @@ export function CardViewer({ deck, title, back }: { deck: string; title: string;
                   <span class="jp-word-card-face jp-word-card-back" key={card.id + 'back'}>
                     <span class="jp-word-card-head">
                       <strong class="jp-word-back-term">{card.front}</strong>
-                      {card.jamb && <span class="jp-word-jamb">JAMB {card.jamb.year} · Q{card.jamb.number}</span>}
+                      {card.jamb && <span class="jp-word-jamb jp-jamb-badge">JAMB {card.jamb.year} · Q{card.jamb.number}</span>}
                     </span>
                     <CardBackDetails card={card} />
                   </span>

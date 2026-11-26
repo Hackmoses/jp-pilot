@@ -134,7 +134,7 @@ export function QuestionCard({
           <div class="jp-pills">
             {review && <span class="jp-pill jp-pill--streak jp-pill--review">Review</span>}
             {sourceLabel && (
-              <span class="jp-pill jp-pill--practice jp-pill--review">{sourceLabel}</span>
+              <span class={sourceLabel.startsWith('JAMB ') ? 'jp-pill jp-jamb-badge' : 'jp-pill jp-pill--practice jp-pill--review'}>{sourceLabel}</span>
             )}
           </div>
         )}

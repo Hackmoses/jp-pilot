@@ -5,7 +5,7 @@ import cardIndex from '../lib/card-index.json'
 import { cardReviews } from '../lib/leitner'
 import { lazyView } from '../lib/lazyView'
 import { conceptLessonTopic, ENGLISH_CARD_TOPICS, STUDY_TOPICS, syllabusSections } from '../lib/sections'
-import { chapterName, hasStudied, remember, studyLink } from '../lib/modes'
+import { chapterName, hasCompletedInteractive, hasStartedConceptTopic, hasStudied, remember, studyLink } from '../lib/modes'
 import { getSubject } from '../lib/subjects'
 import { ModeCard, Panel } from './Modes'
 
@@ -75,9 +75,24 @@ export function Study({ params }: { params: URLSearchParams }) {
   const sections = sectionsForSubject.map((section) => ({
     ...section, chapters: section.chapters.filter((entry) => topics.has(entry.id)),
   })).filter((section) => section.chapters.length)
-  const studiedTopic = (id: string) => subject === 'english'
-    ? Object.keys(cardReviews(ENGLISH_CARD_TOPICS[id])).length > 0
-    : hasStudied(subject, id)
+  // Completed only when everything in the topic is done; anything less that has begun is in progress.
+  const progressOf = (id: string): 'none' | 'progress' | 'done' => {
+    if (subject === 'english') {
+      const deck = ENGLISH_CARD_TOPICS[id]
+      const reviews = Object.values(cardReviews(deck))
+      if (!reviews.length) return 'none'
+      const entry = cardIndex.find((item) => item.id === deck) as { count: number; available?: number } | undefined
+      const needed = entry?.available ?? entry?.count ?? Infinity
+      return reviews.filter(({ box }) => box > 1).length >= needed ? 'done' : 'progress'
+    }
+    const tries = studyInteractives(subject, id)
+    const triesDone = tries.filter((item) => hasCompletedInteractive(subject, id, item.id)).length
+    const hasLessons = Boolean(conceptLessonTopic(subject, id))
+    const lessonsDone = !hasLessons || hasStudied(subject, id)
+    if (lessonsDone && triesDone === tries.length && (hasLessons || tries.length > 0)) return 'done'
+    return triesDone > 0 || (hasLessons && hasStartedConceptTopic(subject, id)) ? 'progress' : 'none'
+  }
+  const studiedTopic = (id: string) => progressOf(id) === 'done'
   const total = sections.reduce((sum, section) => sum + section.chapters.length, 0)
   const studied = sections.reduce((sum, section) =>
     sum + section.chapters.filter((entry) => studiedTopic(entry.id)).length, 0)
@@ -89,22 +104,24 @@ export function Study({ params }: { params: URLSearchParams }) {
         <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref()}>Practise {subjectName} →</a>
       </> : <>
         <section class="jp-card" aria-label="Study progress">
-          <p class="jp-summary-sub">{studied} of {total} topics studied</p>
+          <p class="jp-summary-sub">{studied} of {total} topics completed</p>
           <div class="jp-progress-track" aria-hidden="true" style={{ marginTop: '8px' }}>
             <div class="jp-progress-fill" style={{ width: studied * 100 / total + '%' }} />
           </div>
         </section>
         {sections.map((section) => {
           const done = section.chapters.filter((entry) => studiedTopic(entry.id)).length
+          const going = section.chapters.filter((entry) => progressOf(entry.id) === 'progress').length
           return <details class="jp-card jp-study-section" key={section.id} open={subject === 'english' ? true : undefined}>
             <summary>
               <span class="jp-mode-card-title">{section.title}</span>
-              <span class="jp-summary-sub">{section.chapters.length} {section.chapters.length === 1 ? 'topic' : 'topics'}{done ? ` · ${done} studied` : ''}</span>
+              <span class="jp-summary-sub">{section.chapters.length} {section.chapters.length === 1 ? 'topic' : 'topics'}{done ? ` · ${done} completed` : ''}{going ? ` · ${going} in progress` : ''}</span>
             </summary>
             <div class="jp-mode-list">
               {section.chapters.map((entry) => <ModeCard key={entry.id} href={studyLink(subject, entry.id)}
                 title={subject === 'english' ? entry.title : `${entry.number}. ${entry.title}`}>
-                {studiedTopic(entry.id) && <span class="jp-mode-studied" aria-label="Studied">✓ Studied</span>}
+                {progressOf(entry.id) === 'done' && <span class="jp-mode-studied" aria-label="Completed">✓ Completed</span>}
+                {progressOf(entry.id) === 'progress' && <span class="jp-mode-ongoing" aria-label="In progress">In progress</span>}
               </ModeCard>)}
             </div>
           </details>

@@ -136,6 +136,7 @@ interface ModeState {
   recent: { href: string; label: string } | null
   studied: Record<string, boolean>
   completedConceptLessons: Record<string, boolean>
+  startedConceptTopics: Record<string, boolean>
   studiedConceptTopics: Record<string, boolean>
   completedInteractives: Record<string, boolean>
   studyAnswers: Partial<Record<string, OptionId>>
@@ -152,6 +153,7 @@ const state: ModeState = {
   recent: saved?.recent ?? null,
   studied: saved?.studied ?? {},
   completedConceptLessons: saved?.completedConceptLessons ?? {},
+  startedConceptTopics: saved?.startedConceptTopics ?? {},
   studiedConceptTopics: saved?.studiedConceptTopics ?? {},
   completedInteractives: saved?.completedInteractives ?? {},
   studyAnswers: saved?.studyAnswers ?? {},
@@ -191,8 +193,12 @@ export function hasCompletedConceptLesson(id: string) {
 }
 export function completeConceptLesson(subject: string, chapter: string, id: string, all: string[]) {
   state.completedConceptLessons[id] = true
+  state.startedConceptTopics[subject + '/' + chapter] = true
   if (all.every(hasCompletedConceptLesson)) state.studiedConceptTopics[subject + '/' + chapter] = true
   save()
+}
+export function hasStartedConceptTopic(subject: string, chapter: string) {
+  return Boolean(state.startedConceptTopics[subject + '/' + chapter])
 }
 export function hasStudied(subject: string, chapter: string) {
   if (conceptLessonTopic(subject, chapter)) return Boolean(state.studiedConceptTopics[subject + '/' + chapter])

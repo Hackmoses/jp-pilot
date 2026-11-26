@@ -1260,3 +1260,18 @@ body {
   align-items: center;
   justify-items: center;
 }
+
+/* A real JAMB past question: green, the same family as Completed */
+.jp-jamb-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 2px 8px;
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius-pill);
+  background: var(--good-soft);
+  color: #166534;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}

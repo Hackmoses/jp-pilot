@@ -9,7 +9,7 @@ const index = []
 for (const name of files) {
   const id = name.slice(0, -5)
   const { title, cards } = JSON.parse(await readFile(new URL(name, bank), 'utf8'))
-  index.push({ id, title, count: cards.length })
+  index.push({ id, title, count: cards.length, available: cards.filter((card) => card.check !== true).length })
   await writeFile(new URL(name, output), JSON.stringify({ title, cards }))
 }
 for (const name of await readdir(output)) {

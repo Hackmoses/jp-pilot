@@ -208,7 +208,7 @@ export function LessonPlayer({ lesson, file, clips, onComplete }: {
     {!View && !failed && <p class="jp-mode-lead jp-concept-status" role="status">Loading animation…</p>}
     {View && <div class="jp-concept-paper">
       {question && <div class="jp-concept-question">
-        <span class="jp-try-kicker">JAMB {question.year} · Question {question.number}</span>
+        <span class="jp-jamb-badge">JAMB {question.year} · Question {question.number}</span>
         <p>{question.prompt}</p>
         <ol type="A">{question.options.map((option, i) =>
           <li key={optionIds[i]} data-answer={answerShown && question.answer === optionIds[i]}>{option}</li>,

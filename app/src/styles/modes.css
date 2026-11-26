@@ -579,6 +579,20 @@
   font-weight: 600;
 }
 
+.jp-mode-ongoing {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 2px;
+  padding: 2px 8px;
+  border: 1px solid var(--paper-line);
+  border-radius: var(--radius-pill);
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .jp-mode-studied:empty {
   display: none;
 }
