@@ -26,8 +26,8 @@ const sceneList = ({ scenes, pastQuestion }) => [...scenes, ...pastQuestion?.sce
 for (const name of (await readdir(bank)).filter((file) => file.endsWith('.json')).sort()) {
   const text = await readFile(new URL(name, bank), 'utf8')
   const topic = JSON.parse(text)
-  // The oral word bank is a pronunciation index, not a lesson topic.
-  if (Array.isArray(topic)) continue
+  // Word banks and other non-lesson files have no lessons array.
+  if (!Array.isArray(topic?.lessons)) continue
   const foundations = name === 'english-foundations.json'
   const lessonScenes = (lesson) => [
     ...sceneList(lesson),
