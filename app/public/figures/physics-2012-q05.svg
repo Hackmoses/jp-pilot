@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" role="img" aria-labelledby="title desc">
+  <title id="title">Velocity-time graph with constant velocity and deceleration</title>
+  <desc id="desc">Velocity-time graph showing a constant velocity of 60 m/s from 0 s to 20 s, followed by uniform deceleration to 0 m/s at 25 s.</desc>
+  <rect width="600" height="250" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110 205 V35 M110 205 H500"/>
+    <path d="M104 45 L110 33 L116 45 M490 199 L502 205 L490 211"/>
+    <path d="M110 85 H360 L440 205" stroke-width="3.2"/>
+    <line x1="360" y1="85" x2="360" y2="205" stroke-dasharray="5,4" stroke-width="1.8"/>
+    <polyline points="110,187 128,187 128,205" stroke-width="1.8"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="16">
+    <text x="122" y="42" font-weight="600">Velocity (m/s)</text>
+    <text x="98" y="91" text-anchor="end">60</text>
+    <text x="102" y="226" text-anchor="end">0</text>
+    <text x="360" y="228" text-anchor="middle">20</text>
+    <text x="440" y="228" text-anchor="middle">25</text>
+    <text x="515" y="228" font-weight="600">Time (s)</text>
+  </g>
+</svg>

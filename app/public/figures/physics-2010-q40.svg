@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" role="img" aria-labelledby="title desc">
+  <title id="title">Magnetisation by divided touch using two south poles</title>
+  <desc id="desc">A steel bar labelled T at the left end, U at the centre and V at the right end is stroked outward from U toward T and V by the south poles of two bar magnets.</desc>
+  <rect width="600" height="240" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="90" y="165" width="420" height="38" fill="#f8fafc"/>
+    <!-- Left magnet tilted / stroking left -->
+    <polygon points="170,65 192,48 288,150 266,164" fill="#fff"/>
+    <!-- Right magnet tilted / stroking right -->
+    <polygon points="430,65 408,48 312,150 334,164" fill="#fff"/>
+    <!-- Curved arrows showing outward stroking motion -->
+    <path d="M225 48 Q160 35 142 95" stroke-width="2.2"/>
+    <path d="M137 84 L142 97 L150 86" stroke-width="2.2"/>
+    <path d="M375 48 Q440 35 458 95" stroke-width="2.2"/>
+    <path d="M450 86 L458 97 L463 84" stroke-width="2.2"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="18" font-weight="600" text-anchor="middle">
+    <text x="272" y="151">S</text>
+    <text x="328" y="151">S</text>
+    <text x="120" y="191">T</text>
+    <text x="300" y="191">U</text>
+    <text x="480" y="191">V</text>
+  </g>
+</svg>

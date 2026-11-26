@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" role="img" aria-labelledby="title desc">
+  <title id="title">Series R-L-C alternating current circuit</title>
+  <desc id="desc">A 15 ohm resistor, a 5 microfarad capacitor, and an 8 millihenry inductor connected in series with an alternating e.m.f. source E = E_0 sin omega t.</desc>
+  <rect width="600" height="240" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 80 H130 M220 80 H275 M293 80 H355"/>
+    <!-- Resistor 15 ohm -->
+    <rect x="130" y="64" width="90" height="32" fill="#fff"/>
+    <!-- Capacitor 5 uF -->
+    <line x1="275" y1="58" x2="275" y2="102"/>
+    <line x1="293" y1="58" x2="293" y2="102"/>
+    <!-- Inductor 8 mH (4 loops) -->
+    <path d="M355 80 C363 54 379 54 385 80 C391 54 407 54 413 80 C419 54 435 54 441 80 C447 54 463 54 469 80 H510 V175 H322 M278 175 H90 V80"/>
+    <!-- AC source -->
+    <circle cx="300" cy="175" r="22" fill="#fff"/>
+    <path d="M288 175 Q294 163 300 175 T312 175" stroke-width="2.5"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="17" text-anchor="middle">
+    <text x="175" y="48">15 Ω</text>
+    <text x="284" y="48">5 μF</text>
+    <text x="412" y="48">8 mH</text>
+    <text x="300" y="138">E = E₀ sin ωt</text>
+  </g>
+</svg>

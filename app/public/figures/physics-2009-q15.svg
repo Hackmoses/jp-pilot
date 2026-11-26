@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" role="img" aria-labelledby="title desc">
+  <title id="title">Graph of force F against extension x</title>
+  <desc id="desc">A straight line through the origin plotting force F in N against extension x in m, passing through (2, 40), (4, 80) and (6, 120).</desc>
+  <rect width="560" height="300" rx="12" fill="#fff"/>
+  <!-- Grid: origin at (100, 240); x scale: 1 unit = 50 px -> x=6 at 400; y scale: 40 N = 50 px -> 120 N at 90 -->
+  <g stroke="#cbd5e1" stroke-width="1">
+    <path d="M100 90 H450 M100 115 H450 M100 140 H450 M100 165 H450 M100 190 H450 M100 215 H450"/>
+    <path d="M150 65 V240 M200 65 V240 M250 65 V240 M300 65 V240 M350 65 V240 M400 65 V240 M450 65 V240"/>
+  </g>
+  <g fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 240 V45 M100 240 H475"/>
+    <path d="M94 55 L100 43 L106 55 M465 234 L477 240 L465 246"/>
+    <line x1="100" y1="240" x2="400" y2="90" stroke-width="3.2"/>
+    <circle cx="200" cy="190" r="3.5" fill="#0f172a"/>
+    <circle cx="300" cy="140" r="3.5" fill="#0f172a"/>
+    <circle cx="400" cy="90" r="3.5" fill="#0f172a"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="16">
+    <text x="112" y="46" font-weight="600">F (N)</text>
+    <text x="90" y="96" text-anchor="end">120</text>
+    <text x="90" y="146" text-anchor="end">80</text>
+    <text x="90" y="196" text-anchor="end">40</text>
+    <text x="95" y="258" text-anchor="end">0</text>
+    <text x="200" y="262" text-anchor="middle">2</text>
+    <text x="300" y="262" text-anchor="middle">4</text>
+    <text x="400" y="262" text-anchor="middle">6</text>
+    <text x="484" y="245" font-weight="600">x (m)</text>
+  </g>
+</svg>
