@@ -1,0 +1,694 @@
+{
+  "version": 1,
+  "count": 10,
+  "animations": [
+    {
+      "id": "anim-math-jamb-2010-018",
+      "questionId": "math-jamb-2010-018",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x = \\frac{k}{y} ⇒ k = xy",
+          "tag": "variation law",
+          "title": "Relate x and y",
+          "narration": "Because x varies inversely as y, their product xy equals a constant k."
+        },
+        {
+          "n": 2,
+          "display": "k = 2\\frac{1}{2} × 2 = \\frac{5}{2} × 2 = 5",
+          "tag": "find constant",
+          "title": "Find the constant",
+          "narration": "Convert two and a half to five over two and multiply by two to get k equals five."
+        },
+        {
+          "n": 3,
+          "display": "x = \\frac{5}{4} = 1\\frac{1}{4} (option D)",
+          "tag": "solve for x",
+          "title": "Find x when y is 4",
+          "narration": "Divide the constant five by the new value y equals four to get one and one quarter."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x ∝ \\frac{1}{y} ⇒ x = \\frac{k}{y}",
+          "tag": "set up law",
+          "title": "Set up the inverse law",
+          "narration": "Inverse variation means as y gets larger, x gets smaller in the same ratio, so x equals a constant k divided by y."
+        },
+        {
+          "n": 2,
+          "display": "k = xy",
+          "tag": "isolate k",
+          "title": "Make k the subject",
+          "narration": "Multiply both sides by y so we can calculate the constant product k from the first pair of values."
+        },
+        {
+          "n": 3,
+          "display": "k = \\frac{5}{2} × 2 = 5",
+          "tag": "find constant",
+          "title": "Find the constant k",
+          "narration": "Change the mixed number two and a half into the improper fraction five over two, then multiply by two to get five."
+        },
+        {
+          "n": 4,
+          "display": "x = \\frac{5}{4} = 1\\frac{1}{4}",
+          "tag": "substitute y = 4",
+          "title": "Find x at y equals 4",
+          "narration": "Now put k equals five and y equals four into x equals k over y, giving five quarters, or one and a quarter."
+        },
+        {
+          "n": 5,
+          "display": "Check: 1\\frac{1}{4} × 4 = 5 (option D)",
+          "tag": "verify product",
+          "title": "Check the product",
+          "narration": "Double check by multiplying one and a quarter by four, which gives five again. So x equals one and one quarter."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-028",
+      "questionId": "math-jamb-2010-028",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "∠RTS = 90°",
+          "tag": "semicircle angle",
+          "title": "Angle in a semicircle",
+          "narration": "RS is a diameter, so angle R T S on the circumference is ninety degrees."
+        },
+        {
+          "n": 2,
+          "display": "∠RST = 180° − 90° − 25° = 65°",
+          "tag": "triangle sum",
+          "title": "Find angle RST",
+          "narration": "Subtract ninety degrees and twenty five degrees from one hundred and eighty degrees to get angle R S T equals sixty five degrees."
+        },
+        {
+          "n": 3,
+          "display": "x = ∠RST = 65° (option A)",
+          "tag": "alternate segment",
+          "title": "Apply alternate segment",
+          "narration": "By the alternate segment theorem, the angle between the tangent and chord T R equals sixty five degrees."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "RS is diameter, ∠TRS = 25°",
+          "tag": "read givens",
+          "title": "List what is given",
+          "narration": "First read what the question gives us: R S is a diameter, T lies on the circle, and angle T R S is twenty five degrees."
+        },
+        {
+          "n": 2,
+          "display": "∠RTS = 90°",
+          "tag": "angle in semicircle",
+          "title": "Use angle in a semicircle",
+          "narration": "Any angle at the circumference standing on a diameter is a right angle, so angle R T S inside triangle R T S is ninety degrees."
+        },
+        {
+          "n": 3,
+          "display": "∠RST = 180° − 90° − 25° = 65°",
+          "tag": "triangle angle sum",
+          "title": "Find the third angle",
+          "narration": "The three angles in triangle R T S add up to one hundred and eighty degrees, so subtract ninety and twenty five to leave sixty five degrees for angle R S T."
+        },
+        {
+          "n": 4,
+          "display": "x = ∠RST",
+          "tag": "alternate segment",
+          "title": "Use alternate segment theorem",
+          "narration": "By the alternate segment theorem, the acute angle x between the tangent at T and chord T R equals the angle subtended by T R in the opposite segment, which is angle R S T."
+        },
+        {
+          "n": 5,
+          "display": "x = 65° (option A)",
+          "tag": "state answer",
+          "title": "Read the value of x",
+          "narration": "Therefore the acute angle x is sixty five degrees."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-031",
+      "questionId": "math-jamb-2010-031",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "b = 4 cm, h = 5 cm",
+          "tag": "identify sides",
+          "title": "Identify base and height",
+          "narration": "The two shorter sides of a right-angled triangle meet at ninety degrees, so they are the base and height."
+        },
+        {
+          "n": 2,
+          "display": "Area = \\frac{1}{2} × b × h",
+          "tag": "area formula",
+          "title": "State the area formula",
+          "narration": "Use half times base times height for the area of a triangle."
+        },
+        {
+          "n": 3,
+          "display": "Area = \\frac{1}{2} × 4 × 5 = 10 cm^{2} (option A)",
+          "tag": "calculate area",
+          "title": "Calculate the area",
+          "narration": "Multiply half by four and five to get ten square centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Shorter sides: 4 cm, 5 cm",
+          "tag": "read the triangle",
+          "title": "Identify the shorter sides",
+          "narration": "In a right-angled triangle, the longest side is always the hypotenuse. That means the two shorter sides, four and five centimetres, form the right angle."
+        },
+        {
+          "n": 2,
+          "display": "Area = \\frac{1}{2} × base × height",
+          "tag": "triangle formula",
+          "title": "Write the area formula",
+          "narration": "Because the two shorter sides are perpendicular to each other, one serves as the base and the other as the height."
+        },
+        {
+          "n": 3,
+          "display": "Area = \\frac{1}{2} × 4 × 5",
+          "tag": "substitute values",
+          "title": "Substitute four and five",
+          "narration": "Put four centimetres for the base and five centimetres for the height into the formula."
+        },
+        {
+          "n": 4,
+          "display": "Area = 2 × 5 = 10 cm^{2} (option A)",
+          "tag": "simplify",
+          "title": "Evaluate the area",
+          "narration": "Half of four is two, and two times five gives ten square centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-032",
+      "questionId": "math-jamb-2010-032",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Area = \\frac{θ}{360°} × πr^{2}",
+          "tag": "sector formula",
+          "title": "State sector formula",
+          "narration": "A sector's area is the angle over three hundred and sixty degrees times pi r squared."
+        },
+        {
+          "n": 2,
+          "display": "Area = \\frac{50}{360} × \\frac{22}{7} × 6^{2}",
+          "tag": "substitute values",
+          "title": "Substitute given values",
+          "narration": "Put in fifty degrees for the angle, twenty two over seven for pi, and six for the radius."
+        },
+        {
+          "n": 3,
+          "display": "Area = \\frac{5}{36} × \\frac{22}{7} × 36 = \\frac{110}{7} cm^{2} (option B)",
+          "tag": "cancel and solve",
+          "title": "Cancel and simplify",
+          "narration": "Cancel thirty six top and bottom, then multiply five by twenty two over seven to get one hundred and ten over seven square centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "θ = 50°, r = 6 cm, π ≈ \\frac{22}{7}",
+          "tag": "read givens",
+          "title": "List what is given",
+          "narration": "Read the angle fifty degrees, radius six centimetres, and pi equals twenty two over seven from the question."
+        },
+        {
+          "n": 2,
+          "display": "Area = \\frac{θ}{360°} × πr^{2}",
+          "tag": "sector formula",
+          "title": "Write sector area formula",
+          "narration": "A sector is a fraction of the full circle, so multiply the full circle area pi r squared by the angle fraction over three hundred and sixty."
+        },
+        {
+          "n": 3,
+          "display": "Area = \\frac{50}{360} × \\frac{22}{7} × 6^{2}",
+          "tag": "substitute values",
+          "title": "Substitute the numbers",
+          "narration": "Replace theta with fifty, pi with twenty two over seven, and r with six."
+        },
+        {
+          "n": 4,
+          "display": "Area = \\frac{5}{36} × \\frac{22}{7} × 36",
+          "tag": "simplify fraction",
+          "title": "Simplify before multiplying",
+          "narration": "Reduce fifty over three hundred and sixty to five over thirty six, and evaluate six squared as thirty six."
+        },
+        {
+          "n": 5,
+          "display": "Area = 5 × \\frac{22}{7} = \\frac{110}{7} cm^{2} (option B)",
+          "tag": "cancel 36",
+          "title": "Cancel and finish",
+          "narration": "The thirty sixes cancel out cleanly, leaving five times twenty two over seven, which is one hundred and ten over seven square centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-037",
+      "questionId": "math-jamb-2010-037",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = −4x + 2 ⇒ m = −4",
+          "tag": "find gradient",
+          "title": "Read the gradient",
+          "narration": "Read the coefficient of x from y equals minus four x plus two to get gradient minus four."
+        },
+        {
+          "n": 2,
+          "display": "y = −4x + c at (2, 3)",
+          "tag": "parallel line",
+          "title": "Use parallel gradient",
+          "narration": "Parallel lines share the same gradient minus four, so substitute the point two comma three."
+        },
+        {
+          "n": 3,
+          "display": "3 = −4(2) + c ⇒ c = 11",
+          "tag": "find intercept",
+          "title": "Find the y-intercept",
+          "narration": "Multiply minus four by two to get minus eight, then add eight to both sides so c equals eleven."
+        },
+        {
+          "n": 4,
+          "display": "y + 4x − 11 = 0 (option D)",
+          "tag": "standard form",
+          "title": "Rearrange to zero form",
+          "narration": "Move minus four x and eleven to the left side to get y plus four x minus eleven equals zero."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "y = −4x + 2 ⇒ m = −4",
+          "tag": "read gradient",
+          "title": "Find the given gradient",
+          "narration": "In y equals m x plus c, the number in front of x is the gradient, so the given line has gradient minus four."
+        },
+        {
+          "n": 2,
+          "display": "Parallel line: m = −4",
+          "tag": "same gradient",
+          "title": "Keep the same gradient",
+          "narration": "Two lines are parallel only when they have the exact same slope, so our new line also uses m equals minus four."
+        },
+        {
+          "n": 3,
+          "display": "y = −4x + c",
+          "tag": "line template",
+          "title": "Write the new equation",
+          "narration": "Start with y equals minus four x plus c, where c is the unknown y-intercept we need to find."
+        },
+        {
+          "n": 4,
+          "display": "3 = −4(2) + c ⇒ 3 = −8 + c",
+          "tag": "substitute (2, 3)",
+          "title": "Substitute the point",
+          "narration": "Since the line passes through two comma three, put x equals two and y equals three into the equation."
+        },
+        {
+          "n": 5,
+          "display": "c = 3 + 8 = 11 ⇒ y = −4x + 11",
+          "tag": "solve for c",
+          "title": "Add eight to both sides",
+          "narration": "Add eight to both sides to isolate c, giving c equals eleven, so y equals minus four x plus eleven."
+        },
+        {
+          "n": 6,
+          "display": "y + 4x − 11 = 0 (option D)",
+          "tag": "check and rearrange",
+          "title": "Rearrange and check",
+          "narration": "Add four x and subtract eleven from both sides to write y plus four x minus eleven equals zero. Checking at two comma three gives three plus eight minus eleven equals zero."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-039",
+      "questionId": "math-jamb-2010-039",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Area = \\frac{1}{2} × PQ × PR × sin 60°",
+          "tag": "sine area rule",
+          "title": "Use sine area formula",
+          "narration": "Use half times the two sides times sine of the included angle sixty degrees."
+        },
+        {
+          "n": 2,
+          "display": "12\\sqrt{3} = \\frac{1}{2} × 8 × q × \\frac{\\sqrt{3}}{2}",
+          "tag": "substitute values",
+          "title": "Substitute values",
+          "narration": "Put in twelve root three for the area, eight for P Q, q for P R, and root three over two for sine sixty."
+        },
+        {
+          "n": 3,
+          "display": "12\\sqrt{3} = 2q\\sqrt{3} ⇒ q = 6 cm (option A)",
+          "tag": "solve for q",
+          "title": "Solve for q",
+          "narration": "Simplify the right side to two q root three, then divide both sides by two root three to get q equals six centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "PQ = 8, PR = q, ∠P = 60°, Area = 12\\sqrt{3}",
+          "tag": "read givens",
+          "title": "List what is given",
+          "narration": "Read the two sides meeting at P, eight and q, the included angle sixty degrees, and the area twelve root three."
+        },
+        {
+          "n": 2,
+          "display": "Area = \\frac{1}{2} × PQ × PR × sin P",
+          "tag": "area formula",
+          "title": "State the sine area rule",
+          "narration": "When we know two sides and the angle between them, the triangle area equals half a b sine C."
+        },
+        {
+          "n": 3,
+          "display": "12\\sqrt{3} = \\frac{1}{2} × 8 × q × \\frac{\\sqrt{3}}{2}",
+          "tag": "substitute values",
+          "title": "Substitute known values",
+          "narration": "Substitute twelve root three for the area, eight and q for the sides, and the exact value root three over two for sine sixty degrees."
+        },
+        {
+          "n": 4,
+          "display": "12\\sqrt{3} = 2q\\sqrt{3}",
+          "tag": "simplify right",
+          "title": "Simplify the right side",
+          "narration": "Multiply half by eight to get four, then divide by two to leave two q root three."
+        },
+        {
+          "n": 5,
+          "display": "q = \\frac{12\\sqrt{3}}{2\\sqrt{3}} = 6 cm (option A)",
+          "tag": "divide both sides",
+          "title": "Divide to find q",
+          "narration": "Divide both sides by two root three so the root three cancels out, leaving q equals six centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-040",
+      "questionId": "math-jamb-2010-040",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Let u = 2x + 1, y = u^{3}",
+          "tag": "chain rule setup",
+          "title": "Set up the chain rule",
+          "narration": "Let u equal the inner expression two x plus one, so y becomes u cubed."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{dy}{du} = 3u^{2}, \\frac{du}{dx} = 2",
+          "tag": "differentiate parts",
+          "title": "Differentiate outer and inner",
+          "narration": "Differentiate u cubed to get three u squared, and differentiate two x plus one to get two."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{dy}{dx} = 3(2x + 1)^{2} × 2 = 6(2x + 1)^{2} (option D)",
+          "tag": "multiply derivatives",
+          "title": "Multiply and substitute",
+          "narration": "Multiply the two derivatives together and replace u with two x plus one to get six times two x plus one all squared."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "y = (2x + 1)^{3}, let u = 2x + 1",
+          "tag": "identify inner",
+          "title": "Name the inner bracket",
+          "narration": "Because two x plus one is raised to a power, we use the chain rule. Call the inside bracket u."
+        },
+        {
+          "n": 2,
+          "display": "y = u^{3} ⇒ \\frac{dy}{du} = 3u^{2}",
+          "tag": "outer derivative",
+          "title": "Differentiate the outer power",
+          "narration": "Bring the power three to the front and reduce the power by one, giving three u squared."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{du}{dx} = 2",
+          "tag": "inner derivative",
+          "title": "Differentiate the bracket",
+          "narration": "Now differentiate the inside expression two x plus one with respect to x, which gives two."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{dy}{dx} = \\frac{dy}{du} × \\frac{du}{dx} = 3u^{2} × 2",
+          "tag": "apply chain rule",
+          "title": "Multiply the derivatives",
+          "narration": "The chain rule multiplies the outer derivative by the inner derivative."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{dy}{dx} = 6(2x + 1)^{2} (option D)",
+          "tag": "substitute back",
+          "title": "Substitute u back",
+          "narration": "Multiply three by two to get six, and put two x plus one back for u, giving six times two x plus one squared."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-044",
+      "questionId": "math-jamb-2010-044",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "∫ sin x dx = −cos x",
+          "tag": "integrate sine",
+          "title": "Integrate sine x",
+          "narration": "The integral of sine x is minus cosine x, since differentiating minus cosine x returns sine x."
+        },
+        {
+          "n": 2,
+          "display": "∫ 2 dx = 2x",
+          "tag": "integrate constant",
+          "title": "Integrate the constant",
+          "narration": "The integral of the constant two with respect to x is two x."
+        },
+        {
+          "n": 3,
+          "display": "−cos x + 2x + k (option C)",
+          "tag": "add constant k",
+          "title": "Combine and add k",
+          "narration": "Combine both terms and add the integration constant k to get minus cosine x plus two x plus k."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "∫ (sin x + 2) dx = ∫ sin x dx + ∫ 2 dx",
+          "tag": "split integral",
+          "title": "Split into two integrals",
+          "narration": "We can integrate a sum term by term, so handle sine x and two separately."
+        },
+        {
+          "n": 2,
+          "display": "∫ sin x dx = −cos x",
+          "tag": "integrate sine",
+          "title": "Integrate sine x",
+          "narration": "Remember that the derivative of cosine x is minus sine x, so going backwards, the integral of sine x is minus cosine x."
+        },
+        {
+          "n": 3,
+          "display": "∫ 2 dx = 2x",
+          "tag": "integrate 2",
+          "title": "Integrate two",
+          "narration": "Integrating a constant multiplies it by x, because the derivative of two x is two."
+        },
+        {
+          "n": 4,
+          "display": "−cos x + 2x + k (option C)",
+          "tag": "check and add k",
+          "title": "Add constant and check",
+          "narration": "Always add the arbitrary constant k for an indefinite integral. Differentiating minus cosine x plus two x plus k returns sine x plus two, confirming minus cosine x plus two x plus k."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2010-048",
+      "questionId": "math-jamb-2010-048",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "μ = \\frac{2 + 3 + 5 + 6}{4} = 4",
+          "tag": "find mean",
+          "title": "Find the mean",
+          "narration": "Add the four numbers to get sixteen and divide by four to get a mean of four."
+        },
+        {
+          "n": 2,
+          "display": "Σ(x − μ)^{2} = 4 + 1 + 1 + 4 = 10",
+          "tag": "squared deviations",
+          "title": "Sum squared deviations",
+          "narration": "Subtract four from each value, square the differences to get four, one, one, and four, and add them to get ten."
+        },
+        {
+          "n": 3,
+          "display": "σ^{2} = \\frac{10}{4} = \\frac{5}{2}",
+          "tag": "find variance",
+          "title": "Find the variance",
+          "narration": "Divide the sum ten by the four data values to get a variance of five over two."
+        },
+        {
+          "n": 4,
+          "display": "σ = \\sqrt{\\frac{5}{2}} (option A)",
+          "tag": "square root",
+          "title": "Take the square root",
+          "narration": "Take the square root of the variance to get the standard deviation, root five over two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "σ = \\sqrt{\\frac{Σ(x − μ)^{2}}{n}}",
+          "tag": "state formula",
+          "title": "State the SD formula",
+          "narration": "Population standard deviation is the square root of the average squared distance from the mean."
+        },
+        {
+          "n": 2,
+          "display": "μ = \\frac{2 + 3 + 5 + 6}{4} = \\frac{16}{4} = 4",
+          "tag": "find mean",
+          "title": "Calculate the mean",
+          "narration": "First find the mean by adding all four scores, giving sixteen, and dividing by four to get four."
+        },
+        {
+          "n": 3,
+          "display": "x − μ: −2, −1, 1, 2",
+          "tag": "deviations",
+          "title": "Find each deviation",
+          "narration": "Subtract the mean four from each number to see how far each value sits from the middle."
+        },
+        {
+          "n": 4,
+          "display": "(x − μ)^{2}: 4, 1, 1, 4 ⇒ sum = 10",
+          "tag": "square and sum",
+          "title": "Square and add",
+          "narration": "Square every deviation so negatives become positive, giving four, one, one, and four, which sum to ten."
+        },
+        {
+          "n": 5,
+          "display": "σ^{2} = \\frac{10}{4} = \\frac{5}{2}",
+          "tag": "variance",
+          "title": "Divide by n",
+          "narration": "Divide the sum ten by four, the number of values, and reduce the fraction to five over two for the variance."
+        },
+        {
+          "n": 6,
+          "display": "σ = \\sqrt{\\frac{5}{2}} (option A)",
+          "tag": "standard deviation",
+          "title": "Take the square root",
+          "narration": "Finally take the positive square root of the variance to obtain the standard deviation, the square root of five over two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-003",
+      "questionId": "math-jamb-2011-003",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "3\\frac{2}{3} = \\frac{11}{3}",
+          "tag": "improper fraction",
+          "title": "Convert mixed number",
+          "narration": "Convert three and two thirds into the improper fraction eleven over three."
+        },
+        {
+          "n": 2,
+          "display": "Top = \\frac{11}{3} × \\frac{5}{6} × \\frac{2}{3} = \\frac{55}{27}",
+          "tag": "simplify numerator",
+          "title": "Multiply the top",
+          "narration": "Cancel two with six to leave three, then multiply across the top to get fifty five over twenty seven."
+        },
+        {
+          "n": 3,
+          "display": "Bottom = \\frac{11}{15} × \\frac{3}{4} × \\frac{2}{27} = \\frac{11}{270}",
+          "tag": "simplify denominator",
+          "title": "Multiply the bottom",
+          "narration": "Cancel three into fifteen and two into four, leaving eleven over two hundred and seventy."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{55}{27} × \\frac{270}{11} = 5 × 10 = 50 (option D)",
+          "tag": "invert and multiply",
+          "title": "Divide the fractions",
+          "narration": "Flip the bottom fraction and multiply, cancelling eleven into fifty five and twenty seven into two hundred and seventy to get fifty."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "3\\frac{2}{3} = \\frac{3 × 3 + 2}{3} = \\frac{11}{3}",
+          "tag": "mixed to improper",
+          "title": "Convert the mixed number",
+          "narration": "Before multiplying fractions, change three and two thirds into an improper fraction by multiplying three by three and adding two to get eleven over three."
+        },
+        {
+          "n": 2,
+          "display": "Top = \\frac{11}{3} × \\frac{5}{6} × \\frac{2}{3}",
+          "tag": "write top",
+          "title": "Multiply the numerator",
+          "narration": "Now work out the top product separately so the expression stays clean."
+        },
+        {
+          "n": 3,
+          "display": "Top = \\frac{11 × 5 × 1}{3 × 3 × 3} = \\frac{55}{27}",
+          "tag": "cancel top",
+          "title": "Cancel and multiply top",
+          "narration": "Divide the two in the numerator and the six in the denominator by two, then multiply across to get fifty five over twenty seven."
+        },
+        {
+          "n": 4,
+          "display": "Bottom = \\frac{11}{15} × \\frac{3}{4} × \\frac{2}{27}",
+          "tag": "write bottom",
+          "title": "Multiply the denominator",
+          "narration": "Next simplify the bottom product by cancelling common factors before multiplying large numbers."
+        },
+        {
+          "n": 5,
+          "display": "Bottom = \\frac{11 × 1 × 1}{5 × 2 × 27} = \\frac{11}{270}",
+          "tag": "cancel bottom",
+          "title": "Cancel and multiply bottom",
+          "narration": "Three divides into fifteen five times and two divides into four two times, leaving eleven over five times two times twenty seven, which is eleven over two hundred and seventy."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{55}{27} × \\frac{270}{11} = 5 × 10 = 50 (option D)",
+          "tag": "keep change flip",
+          "title": "Flip and multiply",
+          "narration": "Dividing by a fraction means multiplying by its reciprocal. Fifty five divided by eleven is five, and two hundred and seventy divided by twenty seven is ten, giving five times ten equals fifty."
+        }
+      ]
+    }
+  ]
+}
