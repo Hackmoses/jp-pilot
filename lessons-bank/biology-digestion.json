@@ -1,0 +1,100 @@
+{
+  "subject": "biology",
+  "topicId": "3",
+  "lessons": [
+    {
+      "id": "biology-digestion",
+      "title": "Digestion and digestive enzymes",
+      "scenes": [
+        {
+          "id": "biology-digestion-1",
+          "show": "",
+          "say": "Salivary amylase, also called ptyalin, enters the mouth in saliva and begins breaking starch into smaller carbohydrates. The stomach secretes hydrochloric acid. Strong acid stops salivary amylase and allows the protein-digesting enzyme pepsin to work.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Salivary",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-digestion-2",
+          "show": "",
+          "say": "The pancreas lies behind the stomach. It sends enzymes that digest fats, proteins and starch into the small intestine. The small intestine is where much of digestion and absorption happens. Pancreatic enzymes act in the space inside it.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-digestion-3",
+          "show": "",
+          "say": "In a mushroom fungus, thread-like hyphae secrete enzymes onto organic matter and absorb the soluble products. Some plants digest trapped prey to supplement their mineral supply. They still make sugars by photosynthesis.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "In",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "Some",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-digestion-4",
+          "show": "",
+          "say": "For JAMB, match ptyalin to saliva and the stomach to strong acid. Know which food classes pancreatic enzymes digest. Blue arrows show food movement or secretion into the space where enzymes act.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "ptyalin",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "acid",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "pancreatic",
+              "action": "part-1-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Where does ptyalin normally begin acting on starch?",
+        "options": [
+          "Highly acidic stomach",
+          "Large intestine",
+          "Mouth"
+        ],
+        "answerIndex": 2,
+        "feedback": "Ptyalin is salivary amylase. It begins splitting starch during chewing."
+      }
+    }
+  ]
+}

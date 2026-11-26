@@ -1,0 +1,100 @@
+{
+  "subject": "biology",
+  "topicId": "3",
+  "lessons": [
+    {
+      "id": "biology-photosynthesis",
+      "title": "Where and how photosynthesis happens",
+      "scenes": [
+        {
+          "id": "biology-photosynthesis-1",
+          "show": "",
+          "say": "A green leaf is usually the main photosynthetic organ. Carbon dioxide enters through stomata, and its cells contain chloroplasts. Chlorophyll and carotenoids in chloroplast membranes absorb light. Chlorophyll drives light reactions, while carotenoids also help protect against excess light.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "Chlorophyll",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-photosynthesis-2",
+          "show": "",
+          "say": "The Calvin cycle in the chloroplast stroma first incorporates carbon dioxide into an organic compound. Later steps use ATP and NADPH to make a small sugar phosphate. Plants can use it to make sugars and starch.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "Later",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-photosynthesis-3",
+          "show": "",
+          "say": "In the leaf starch test, a hot-water rinse softens the leaf after ethanol has removed its green colour. Iodine turns starch-containing areas blue-black. This shows where starch is present in the prepared leaf.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "In",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "Iodine",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-photosynthesis-4",
+          "show": "",
+          "say": "JAMB asks which pigments capture light, where carbon enters organic compounds and why water softens an ethanol-treated leaf before iodine is added. The blue arrows trace carbon dioxide entering the leaf and the sequence from fixing carbon to building sugar.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "pigments",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "carbon",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "iodine",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which substance is added to detect starch in a prepared leaf?",
+        "options": [
+          "Iodine solution",
+          "Benedict’s solution",
+          "Water"
+        ],
+        "answerIndex": 0,
+        "feedback": "The presence of starch gives a blue-black colour with iodine."
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "subject": "biology",
+  "topicId": "4",
+  "lessons": [
+    {
+      "id": "biology-vascular",
+      "title": "Xylem, phloem and transpiration",
+      "scenes": [
+        {
+          "id": "biology-vascular-1",
+          "show": "",
+          "say": "Xylem forms tubes in roots, stems and leaves. It carries water and mineral ions mainly upwards from the roots. Phloem carries sugars from sources to sinks. A leaf can send sugars down to roots, or up to developing buds.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Xylem",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "Phloem",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-vascular-2",
+          "show": "",
+          "say": "In a typical dicot stem bundle, xylem faces the central pith and phloem faces outwards, towards the stem surface. Water evaporates inside the leaf and escapes as vapour through stomata, tiny pores. This loss is transpiration.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "In",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "Water",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-vascular-3",
+          "show": "",
+          "say": "Vascular cambium lies between xylem and phloem and makes secondary xylem inwards and secondary phloem outwards. Cork cambium develops nearer the outside and makes cork, part of the protective covering of a widening woody organ.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Vascular",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "Cork",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-vascular-4",
+          "show": "",
+          "say": "JAMB asks which tissue lies nearer the pith, which carries sugar and which meristems thicken a woody stem. Blue arrows mark the direction each material travels, including water vapour outside the leaf.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "pith",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "sugar",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "thicken",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which tissue carries sugars from a source to a sink?",
+        "options": [
+          "Cork",
+          "Phloem",
+          "Xylem"
+        ],
+        "answerIndex": 1,
+        "feedback": "Phloem moves sugars from a source such as a leaf to a sink such as a growing root."
+      }
+    }
+  ]
+}

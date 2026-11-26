@@ -1,0 +1,95 @@
+{
+  "subject": "biology",
+  "topicId": "5",
+  "lessons": [
+    {
+      "id": "biology-energy",
+      "title": "Cellular respiration and fermentation",
+      "scenes": [
+        {
+          "id": "biology-energy-1",
+          "show": "",
+          "say": "Catabolism is the breakdown of larger molecules into smaller ones. Some of the released energy can be captured rather than lost as heat. ATP is a short-term energy carrier made in cells. Its hydrolysis can drive processes such as movement and active transport.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Catabolism",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "ATP",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-energy-2",
+          "show": "",
+          "say": "In eukaryotes, the citric acid or Krebs cycle runs in the mitochondrial matrix, the fluid-filled space enclosed by the inner membrane.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "In",
+              "action": "part-1-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-energy-3",
+          "show": "",
+          "say": "Without oxygen, yeast can use alcoholic fermentation to regenerate the carrier needed for glycolysis to continue. During alcoholic fermentation yeast produces ethanol and carbon dioxide. The gas forms bubbles, while ethanol remains in the liquid.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Without",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "During",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-energy-4",
+          "show": "",
+          "say": "JAMB asks where the Krebs cycle takes place, which molecule makes usable energy available to the cell, and what yeast releases as well as carbon dioxide. Blue arrows show the direction of breakdown or use.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "Krebs",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "energy",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "yeast",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Where does the Krebs cycle mainly occur in a eukaryotic cell?",
+        "options": [
+          "Mitochondrial matrix",
+          "Cytoplasm outside mitochondria",
+          "Cell membrane"
+        ],
+        "answerIndex": 0,
+        "feedback": "The Krebs cycle occurs in the mitochondrial matrix. Glycolysis occurs in the cytoplasm."
+      }
+    }
+  ]
+}
