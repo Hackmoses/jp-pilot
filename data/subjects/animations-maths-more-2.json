@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 40,
+  "count": 50,
   "animations": [
     {
       "id": "anim-math-jamb-2015-002",
@@ -3262,6 +3262,841 @@
           "tag": "answer",
           "title": "X's speed",
           "narration": "Car X's average speed is seventy-two kilometres per hour."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-003",
+      "questionId": "math-jamb-2019-003",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m ∗ e = m",
+          "tag": "identity",
+          "title": "Identity condition",
+          "narration": "By definition, the identity element e leaves any number m unchanged under the operation."
+        },
+        {
+          "n": 2,
+          "display": "me + m + e = m",
+          "tag": "substitute",
+          "title": "Apply operation rule",
+          "narration": "Substitute n equals e into m n plus m plus n and set it equal to m."
+        },
+        {
+          "n": 3,
+          "display": "me + e = 0 ⇒ e(m + 1) = 0",
+          "tag": "simplify",
+          "title": "Subtract m and factor e",
+          "narration": "Subtract m from both sides and factor out e so e times m plus one equals zero for every m."
+        },
+        {
+          "n": 4,
+          "display": "e = 0 (option D)",
+          "tag": "answer",
+          "title": "Identity element",
+          "narration": "For this to hold for all real numbers m, the identity element e must be zero."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m ∗ e = m and e ∗ m = m",
+          "tag": "definition",
+          "title": "State identity property",
+          "narration": "An identity element e satisfies m star e equals m and e star m equals m for every real number m."
+        },
+        {
+          "n": 2,
+          "display": "m ∗ e = me + m + e = m",
+          "tag": "substitute",
+          "title": "Substitute e into the rule",
+          "narration": "Using the given formula m star n equals m n plus m plus n, replace n with e."
+        },
+        {
+          "n": 3,
+          "display": "me + e = m − m = 0",
+          "tag": "subtract m",
+          "title": "Subtract m from both sides",
+          "narration": "Subtract m from both sides of the equation so only terms containing e stay on the left."
+        },
+        {
+          "n": 4,
+          "display": "e(m + 1) = 0",
+          "tag": "factor",
+          "title": "Factor out e",
+          "narration": "Factor e out of m e plus e to get e times open bracket m plus one close bracket equal to zero."
+        },
+        {
+          "n": 5,
+          "display": "Since m + 1 ≠ 0 in general, e = 0",
+          "tag": "conclude",
+          "title": "Solve for e",
+          "narration": "Because m plus one is not zero for all values of m, e itself must equal zero."
+        },
+        {
+          "n": 6,
+          "display": "Check: m ∗ 0 = 0 + m + 0 = m, 0 ∗ m = m",
+          "tag": "check",
+          "title": "Check both sides",
+          "narration": "Check: both m star zero and zero star m simplify directly to m."
+        },
+        {
+          "n": 7,
+          "display": "e = 0 (option D)",
+          "tag": "answer",
+          "title": "Final identity element",
+          "narration": "Therefore the identity element is e equals zero."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-014",
+      "questionId": "math-jamb-2019-014",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\bar{x} = \\frac{7 + 8 + 9 + 10 + 11 + 12 + 13}{7} = 10",
+          "tag": "mean",
+          "title": "Find the mean",
+          "narration": "Add all seven evenly spaced numbers to get seventy and divide by seven to get a mean of ten."
+        },
+        {
+          "n": 2,
+          "display": "d^{2}: 9, 4, 1, 0, 1, 4, 9 ⇒ \\sum d^{2} = 28",
+          "tag": "deviations",
+          "title": "Sum squared deviations",
+          "narration": "Square each difference from ten to get nine, four, one, zero, one, four, nine, which add to twenty-eight."
+        },
+        {
+          "n": 3,
+          "display": "σ^{2} = \\frac{28}{7} = 4",
+          "tag": "variance",
+          "title": "Compute population variance",
+          "narration": "Divide the sum of squared deviations twenty-eight by seven values to get variance four."
+        },
+        {
+          "n": 4,
+          "display": "σ = \\sqrt{4} = 2 (option A)",
+          "tag": "answer",
+          "title": "Standard deviation",
+          "narration": "Take the square root of the variance four to get a standard deviation of two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "σ = \\sqrt{\\frac{\\sum (x − \\bar{x})^{2}}{N}}",
+          "tag": "formula",
+          "title": "Population standard deviation",
+          "narration": "State the population standard deviation formula: take the square root of the mean of squared deviations from the mean."
+        },
+        {
+          "n": 2,
+          "display": "\\bar{x} = \\frac{7 + 8 + 9 + 10 + 11 + 12 + 13}{7} = \\frac{70}{7} = 10",
+          "tag": "mean",
+          "title": "Calculate the mean",
+          "narration": "Sum the seven values to get seventy and divide by seven to find the mean is ten."
+        },
+        {
+          "n": 3,
+          "display": "x − 10: −3, −2, −1, 0, 1, 2, 3",
+          "tag": "subtract",
+          "title": "Find deviations from 10",
+          "narration": "Subtract ten from each data value to get the seven signed deviations."
+        },
+        {
+          "n": 4,
+          "display": "\\sum (x − 10)^{2} = 9 + 4 + 1 + 0 + 1 + 4 + 9 = 28",
+          "tag": "square",
+          "title": "Square and sum deviations",
+          "narration": "Square each deviation so all terms are positive, then add them to obtain twenty-eight."
+        },
+        {
+          "n": 5,
+          "display": "σ^{2} = \\frac{28}{7} = 4",
+          "tag": "variance",
+          "title": "Divide by N = 7",
+          "narration": "Divide twenty-eight by seven to find the population variance is four."
+        },
+        {
+          "n": 6,
+          "display": "σ = \\sqrt{4} = 2",
+          "tag": "root",
+          "title": "Take square root of variance",
+          "narration": "Take the square root of four so the measure returns to the original units."
+        },
+        {
+          "n": 7,
+          "display": "2 (option A)",
+          "tag": "answer",
+          "title": "Population standard deviation",
+          "narration": "The population standard deviation of the seven numbers is two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-018",
+      "questionId": "math-jamb-2019-018",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Arc = \\frac{45°}{360°} × 2π(8)",
+          "tag": "arc formula",
+          "title": "Find arc length",
+          "narration": "Multiply forty-five over three hundred and sixty by the full circumference two pi times eight."
+        },
+        {
+          "n": 2,
+          "display": "Arc = \\frac{1}{8} × 16π = 2π cm",
+          "tag": "simplify",
+          "title": "Simplify arc length",
+          "narration": "One eighth of sixteen pi gives an arc length of two pi centimetres."
+        },
+        {
+          "n": 3,
+          "display": "Perimeter = 2r + Arc = 8 + 8 + 2π",
+          "tag": "perimeter",
+          "title": "Add the two radii",
+          "narration": "Add both eight-centimetre straight radii to the curved arc to trace the whole boundary."
+        },
+        {
+          "n": 4,
+          "display": "(16 + 2π) cm (option C)",
+          "tag": "answer",
+          "title": "Perimeter of sector",
+          "narration": "The perimeter of the sector is sixteen plus two pi centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "θ = 45°, r = 8 cm",
+          "tag": "given",
+          "title": "List sector values",
+          "narration": "Note the sector has central angle forty-five degrees and radius eight centimetres."
+        },
+        {
+          "n": 2,
+          "display": "Arc = \\frac{θ}{360°} × 2πr",
+          "tag": "formula",
+          "title": "Arc length formula",
+          "narration": "A sector's curved arc is the angle's fraction of three hundred and sixty degrees multiplied by the circle circumference two pi r."
+        },
+        {
+          "n": 3,
+          "display": "Arc = \\frac{45°}{360°} × 2π(8) = \\frac{1}{8} × 16π = 2π cm",
+          "tag": "compute arc",
+          "title": "Calculate the arc length",
+          "narration": "Forty-five over three hundred and sixty reduces to one eighth, and one eighth of sixteen pi is two pi centimetres."
+        },
+        {
+          "n": 4,
+          "display": "Perimeter = r + r + Arc",
+          "tag": "boundary",
+          "title": "Include all boundary sides",
+          "narration": "Remember that a sector is enclosed by two straight radii as well as the curved arc."
+        },
+        {
+          "n": 5,
+          "display": "Perimeter = 8 + 8 + 2π = 16 + 2π",
+          "tag": "add",
+          "title": "Add the lengths",
+          "narration": "Add eight plus eight to get sixteen, then add two pi."
+        },
+        {
+          "n": 6,
+          "display": "(16 + 2π) cm (option C)",
+          "tag": "answer",
+          "title": "Final perimeter",
+          "narration": "The perimeter of the sector is sixteen plus two pi centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-022",
+      "questionId": "math-jamb-2019-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "N = 6 + 15 + 20 + 7 + 2 = 50 ⇒ \\frac{N}{2} = 25",
+          "tag": "total",
+          "title": "Find total frequency",
+          "narration": "Sum all five frequencies to get fifty observations, so the median lies at position twenty-five."
+        },
+        {
+          "n": 2,
+          "display": "CF: 6, 21, 41 ⇒ median class 11–15",
+          "tag": "median class",
+          "title": "Locate median class",
+          "narration": "Cumulative frequency reaches twenty-one before the eleven-to-fifteen class and forty-one after it, so eleven to fifteen is the median class."
+        },
+        {
+          "n": 3,
+          "display": "10.5 + \\frac{25 − 21}{20} × 5 = 10.5 + 1",
+          "tag": "interpolate",
+          "title": "Interpolate from 10.5",
+          "narration": "Start at lower class boundary ten point five and move four twentieths of width five into the class."
+        },
+        {
+          "n": 4,
+          "display": "11\\frac{1}{2} (option B)",
+          "tag": "answer",
+          "title": "Estimated median",
+          "narration": "Ten point five plus one gives eleven and a half."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "N = 6 + 15 + 20 + 7 + 2 = 50",
+          "tag": "total",
+          "title": "Sum the frequencies",
+          "narration": "Add the five frequencies from the table to find the total number of observations is fifty."
+        },
+        {
+          "n": 2,
+          "display": "Median = L + (\\frac{\\frac{N}{2} − F}{f}) × c",
+          "tag": "formula",
+          "title": "State grouped median formula",
+          "narration": "Recall the grouped median formula using lower class boundary L, half total N over two, previous cumulative frequency F, class frequency f, and class width c."
+        },
+        {
+          "n": 3,
+          "display": "CF: 6, 21, 41 ⇒ class 11–15 contains 25th value",
+          "tag": "locate",
+          "title": "Find median class",
+          "narration": "Half of fifty is twenty-five; since the first two classes reach twenty-one, the twenty-fifth value sits inside the eleven to fifteen class."
+        },
+        {
+          "n": 4,
+          "display": "L = 10.5, F = 21, f = 20, c = 5",
+          "tag": "values",
+          "title": "Read class parameters",
+          "narration": "The true lower boundary between ten and eleven is ten point five, F is twenty-one, class frequency f is twenty, and width c from ten point five to fifteen point five is five."
+        },
+        {
+          "n": 5,
+          "display": "Median = 10.5 + (\\frac{25 − 21}{20}) × 5 = 10.5 + \\frac{4}{20} × 5",
+          "tag": "substitute",
+          "title": "Substitute into formula",
+          "narration": "Subtract twenty-one from twenty-five to get four, divide by twenty, and multiply by five."
+        },
+        {
+          "n": 6,
+          "display": "10.5 + 1 = 11.5 = 11\\frac{1}{2}",
+          "tag": "simplify",
+          "title": "Add fraction step",
+          "narration": "Four twentieths times five equals twenty over twenty, which is one; adding one to ten point five gives eleven and a half."
+        },
+        {
+          "n": 7,
+          "display": "11\\frac{1}{2} (option B)",
+          "tag": "answer",
+          "title": "Grouped median",
+          "narration": "The estimated median is eleven and one half."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-023",
+      "questionId": "math-jamb-2019-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Error = |16.8 − 15| = 1.8 cm",
+          "tag": "error",
+          "title": "Find absolute error",
+          "narration": "Subtract the true length fifteen centimetres from the measured length sixteen point eight centimetres to get one point eight."
+        },
+        {
+          "n": 2,
+          "display": "\\% error = \\frac{error}{true value} × 100\\%",
+          "tag": "formula",
+          "title": "Percentage error formula",
+          "narration": "Divide the error by the true length, never the measured length, and multiply by one hundred percent."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1.8}{15} × 100\\% = 0.12 × 100\\%",
+          "tag": "compute",
+          "title": "Divide and multiply by 100",
+          "narration": "One point eight divided by fifteen is zero point one two, which times one hundred is twelve percent."
+        },
+        {
+          "n": 4,
+          "display": "12.00% (option A)",
+          "tag": "answer",
+          "title": "Percentage error",
+          "narration": "The percentage error is twelve percent."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Error = 16.8 − 15 = 1.8 cm",
+          "tag": "error",
+          "title": "Find measurement error",
+          "narration": "Take the positive difference between the measured value sixteen point eight and the true length fifteen to get one point eight centimetres."
+        },
+        {
+          "n": 2,
+          "display": "\\% error = \\frac{error}{true value} × 100\\%",
+          "tag": "formula",
+          "title": "State percentage error formula",
+          "narration": "Always divide by the true actual value in the denominator, then multiply by one hundred percent."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1.8}{15} × 100\\%",
+          "tag": "substitute",
+          "title": "Substitute error and true value",
+          "narration": "Put one point eight in the numerator and the true length fifteen in the denominator."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{180}{15}\\% = 12\\%",
+          "tag": "simplify",
+          "title": "Multiply numerator by 100",
+          "narration": "One point eight times one hundred is one hundred and eighty, and one hundred and eighty divided by fifteen equals twelve."
+        },
+        {
+          "n": 5,
+          "display": "12.00% (option A)",
+          "tag": "answer",
+          "title": "Final percentage error",
+          "narration": "The percentage error is twelve percent."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-024",
+      "questionId": "math-jamb-2019-024",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f(p) = 2(p)^{2} − p(p) + p = 6",
+          "tag": "remainder",
+          "title": "Apply remainder theorem",
+          "narration": "When dividing by x minus p, substitute x equals p into the polynomial and equate to six."
+        },
+        {
+          "n": 2,
+          "display": "2p^{2} − p^{2} + p = 6 ⇒ p^{2} + p − 6 = 0",
+          "tag": "quadratic",
+          "title": "Form quadratic equation",
+          "narration": "Simplify two p squared minus p squared to p squared, then subtract six from both sides."
+        },
+        {
+          "n": 3,
+          "display": "(p − 2)(p + 3) = 0 ⇒ p = 2 or −3",
+          "tag": "factorise",
+          "title": "Factorise quadratic",
+          "narration": "Factorise to get p equals two or p equals minus three."
+        },
+        {
+          "n": 4,
+          "display": "p = 2 (option B)",
+          "tag": "answer",
+          "title": "Positive value of p",
+          "narration": "Taking the positive value required gives p equals two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Divisor x − p ⇒ Remainder = f(p)",
+          "tag": "theorem",
+          "title": "Recall remainder theorem",
+          "narration": "By the remainder theorem, dividing a polynomial f of x by x minus p leaves remainder f of p."
+        },
+        {
+          "n": 2,
+          "display": "2(p)^{2} − p(p) + p = 6",
+          "tag": "substitute",
+          "title": "Evaluate at x = p",
+          "narration": "Replace every x in two x squared minus p x plus p with p, and set the expression equal to six."
+        },
+        {
+          "n": 3,
+          "display": "2p^{2} − p^{2} + p = p^{2} + p = 6",
+          "tag": "combine",
+          "title": "Combine like terms",
+          "narration": "Two p squared minus one p squared leaves p squared, giving p squared plus p equals six."
+        },
+        {
+          "n": 4,
+          "display": "p^{2} + p − 6 = 0",
+          "tag": "standard form",
+          "title": "Subtract 6 from both sides",
+          "narration": "Subtract six from both sides to put the quadratic equation into standard form equal to zero."
+        },
+        {
+          "n": 5,
+          "display": "(p − 2)(p + 3) = 0 ⇒ p = 2 or p = −3",
+          "tag": "factorise",
+          "title": "Factorise and solve",
+          "narration": "Since minus two times three is minus six and minus two plus three is one, factorise into p minus two times p plus three."
+        },
+        {
+          "n": 6,
+          "display": "Check p = 2: 2(2)^{2} − 2(2) + 2 = 8 − 4 + 2 = 6",
+          "tag": "check",
+          "title": "Verify positive root",
+          "narration": "Pick positive p equals two, and verify eight minus four plus two equals remainder six."
+        },
+        {
+          "n": 7,
+          "display": "p = 2 (option B)",
+          "tag": "answer",
+          "title": "Positive value of p",
+          "narration": "The positive value of p is two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-029",
+      "questionId": "math-jamb-2019-029",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "2x^{2} + 5x − 1 = 2x + 1",
+          "tag": "equate",
+          "title": "Set the two y values equal",
+          "narration": "At every point where the line and parabola cross in the graph, their y values are equal."
+        },
+        {
+          "n": 2,
+          "display": "2x^{2} + 3x − 2 = 0 ⇒ (2x − 1)(x + 2) = 0",
+          "tag": "factorise",
+          "title": "Rearrange and factorise",
+          "narration": "Subtract two x plus one from both sides and factorise to find x equals one half or minus two."
+        },
+        {
+          "n": 3,
+          "display": "x = −2 ⇒ y = −3; x = \\frac{1}{2} ⇒ y = 2",
+          "tag": "y values",
+          "title": "Find y coordinates",
+          "narration": "Substitute each x value into the simpler line equation y equals two x plus one to get y."
+        },
+        {
+          "n": 4,
+          "display": "(−2, −3) and (\\frac{1}{2}, 2) (option A)",
+          "tag": "answer",
+          "title": "Intersection points",
+          "narration": "The two points of intersection are minus two comma minus three and one half comma two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2x^{2} + 5x − 1 = 2x + 1",
+          "tag": "equate",
+          "title": "Equate the two equations",
+          "narration": "From the graph, the line and parabola meet at two points; at both points they share the same x and y, so equate their formulas for y."
+        },
+        {
+          "n": 2,
+          "display": "2x^{2} + 3x − 2 = 0",
+          "tag": "collect",
+          "title": "Subtract (2x + 1) from both sides",
+          "narration": "Subtract two x and one from both sides to collect everything into a standard quadratic equation."
+        },
+        {
+          "n": 3,
+          "display": "(2x − 1)(x + 2) = 0",
+          "tag": "factorise",
+          "title": "Factorise the quadratic",
+          "narration": "Factor two x squared plus three x minus two as two x minus one times x plus two."
+        },
+        {
+          "n": 4,
+          "display": "x = \\frac{1}{2} or x = −2",
+          "tag": "x values",
+          "title": "Solve for x",
+          "narration": "Setting each bracket to zero gives x equals one half and x equals minus two, matching the two crossings shown on the plot."
+        },
+        {
+          "n": 5,
+          "display": "y = 2(−2) + 1 = −3",
+          "tag": "first point",
+          "title": "Find y when x = −2",
+          "narration": "Plug x equals minus two into the line equation y equals two x plus one to get y equals minus three."
+        },
+        {
+          "n": 6,
+          "display": "y = 2(\\frac{1}{2}) + 1 = 2",
+          "tag": "second point",
+          "title": "Find y when x = \\frac{1}{2}",
+          "narration": "Plug x equals one half into two x plus one to get one plus one equals two."
+        },
+        {
+          "n": 7,
+          "display": "(−2, −3) and (\\frac{1}{2}, 2) (option A)",
+          "tag": "answer",
+          "title": "Both intersections",
+          "narration": "The line and parabola intersect at minus two comma minus three and one half comma two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-035",
+      "questionId": "math-jamb-2019-035",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Anambra = 185, Total = 900",
+          "tag": "given",
+          "title": "Read table values",
+          "narration": "From the table, Anambra has one hundred and eighty-five admissions out of nine hundred total."
+        },
+        {
+          "n": 2,
+          "display": "Angle = \\frac{part}{total} × 360°",
+          "tag": "formula",
+          "title": "Pie chart sector formula",
+          "narration": "A pie chart sector angle equals the state's share of the total multiplied by three hundred and sixty degrees."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{185}{900} × 360° = 185 × \\frac{2}{5} = 74°",
+          "tag": "simplify",
+          "title": "Simplify fraction and multiply",
+          "narration": "Reduce three hundred and sixty over nine hundred to two fifths, then multiply by one hundred and eighty-five."
+        },
+        {
+          "n": 4,
+          "display": "74° (option C)",
+          "tag": "answer",
+          "title": "Central angle for Anambra",
+          "narration": "The central angle representing Anambra is seventy-four degrees."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Anambra = 185, Total = 900",
+          "tag": "read table",
+          "title": "Read Anambra and total",
+          "narration": "Read Anambra's count from the table as one hundred and eighty-five, out of the stated total of nine hundred admissions."
+        },
+        {
+          "n": 2,
+          "display": "Angle = \\frac{185}{900} × 360°",
+          "tag": "formula",
+          "title": "Write sector angle formula",
+          "narration": "Because a full circle holds three hundred and sixty degrees, multiply Anambra's fraction of the total by three hundred and sixty degrees."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{360}{900} = \\frac{36}{90} = \\frac{2}{5}",
+          "tag": "reduce",
+          "title": "Simplify 360 and 900",
+          "narration": "Divide both three hundred and sixty and nine hundred by one hundred and eighty to simplify their ratio to two over five."
+        },
+        {
+          "n": 4,
+          "display": "185 × \\frac{2}{5} = 37 × 2 = 74°",
+          "tag": "compute",
+          "title": "Divide by 5, multiply by 2",
+          "narration": "Divide one hundred and eighty-five by five to get thirty-seven, then double thirty-seven to get seventy-four degrees."
+        },
+        {
+          "n": 5,
+          "display": "74° (option C)",
+          "tag": "answer",
+          "title": "Sector angle",
+          "narration": "Anambra should be represented by a central angle of seventy-four degrees."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-038",
+      "questionId": "math-jamb-2019-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Max = 10, Min = 4 ⇒ Range = 10 − 4 = 6",
+          "tag": "range",
+          "title": "Calculate the range",
+          "narration": "Subtract the smallest number four from the largest number ten to get a range of six."
+        },
+        {
+          "n": 2,
+          "display": "10 appears 7 times ⇒ Mode = 10",
+          "tag": "mode",
+          "title": "Find the mode",
+          "narration": "Count the repeats: ten occurs seven times, more than any other value, so ten is the mode."
+        },
+        {
+          "n": 3,
+          "display": "Range + Mode = 6 + 10",
+          "tag": "add",
+          "title": "Add range and mode",
+          "narration": "Add the range six and the mode ten together."
+        },
+        {
+          "n": 4,
+          "display": "16 (option A)",
+          "tag": "answer",
+          "title": "Sum of range and mode",
+          "narration": "The sum of the range and the mode is sixteen."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Range = Highest − Lowest",
+          "tag": "formula",
+          "title": "State range formula",
+          "narration": "Recall that the range of a dataset is the largest value minus the smallest value."
+        },
+        {
+          "n": 2,
+          "display": "Highest = 10, Lowest = 4 ⇒ Range = 10 − 4 = 6",
+          "tag": "range",
+          "title": "Find range from extremes",
+          "narration": "Scan the list: the largest number is ten and the smallest is four, so the range is six."
+        },
+        {
+          "n": 3,
+          "display": "Tally: 10(7), 9(4), 8(3), 7(3), 6(2), 5(2), 4(1)",
+          "tag": "tally",
+          "title": "Count each frequency",
+          "narration": "Tally how many times each score appears across all twenty-two values; ten leads with seven appearances."
+        },
+        {
+          "n": 4,
+          "display": "Mode = 10",
+          "tag": "mode",
+          "title": "Identify the mode",
+          "narration": "The mode is the most frequent observation, which is ten."
+        },
+        {
+          "n": 5,
+          "display": "Range + Mode = 6 + 10 = 16",
+          "tag": "add",
+          "title": "Sum the two statistics",
+          "narration": "Add the range six and the mode ten to get sixteen."
+        },
+        {
+          "n": 6,
+          "display": "16 (option A)",
+          "tag": "answer",
+          "title": "Final sum",
+          "narration": "The sum of the range and the mode is sixteen."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2019-040",
+      "questionId": "math-jamb-2019-040",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "EN = NG = \\frac{24}{2} = 12 cm",
+          "tag": "bisect",
+          "title": "Diameter bisects chord",
+          "narration": "A diameter perpendicular to a chord cuts it in half, so E N and N G are each twelve centimetres."
+        },
+        {
+          "n": 2,
+          "display": "FN × NH = EN × NG",
+          "tag": "theorem",
+          "title": "Intersecting chords rule",
+          "narration": "By the intersecting chords theorem, the product of segments along diameter F H equals the product along chord E G."
+        },
+        {
+          "n": 3,
+          "display": "8 × FN = 12 × 12 = 144 ⇒ FN = 18 cm",
+          "tag": "solve FN",
+          "title": "Find remaining segment FN",
+          "narration": "Divide one hundred and forty-four by eight to find F N equals eighteen centimetres."
+        },
+        {
+          "n": 4,
+          "display": "FH = 18 + 8 = 26 cm (option C)",
+          "tag": "answer",
+          "title": "Diameter FH",
+          "narration": "Add F N and N H to get twenty-six centimetres for diameter F H."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "EG = 24 cm, NH = 8 cm, ∠ENG = 90°",
+          "tag": "given",
+          "title": "Read diagram labels",
+          "narration": "From the diagram, chord E G is twenty-four centimetres, segment N H is eight centimetres, and diameter F H meets E G at right angles at N."
+        },
+        {
+          "n": 2,
+          "display": "EN = NG = \\frac{24}{2} = 12 cm",
+          "tag": "bisect",
+          "title": "Perpendicular bisects chord",
+          "narration": "A circle theorem states that a line from the centre perpendicular to a chord bisects it, so both halves are twelve centimetres."
+        },
+        {
+          "n": 3,
+          "display": "FN × NH = EN × NG",
+          "tag": "chords",
+          "title": "Intersecting chords theorem",
+          "narration": "Because chords F H and E G cross at N, the products of their two segments at N are equal."
+        },
+        {
+          "n": 4,
+          "display": "FN × 8 = 12 × 12 ⇒ 8 × FN = 144",
+          "tag": "substitute",
+          "title": "Substitute known segments",
+          "narration": "Plug eight for N H and twelve for both E N and N G to get eight F N equals one hundred and forty-four."
+        },
+        {
+          "n": 5,
+          "display": "FN = \\frac{144}{8} = 18 cm",
+          "tag": "divide",
+          "title": "Divide both sides by 8",
+          "narration": "Divide both sides by eight to obtain F N equals eighteen centimetres."
+        },
+        {
+          "n": 6,
+          "display": "FH = FN + NH = 18 + 8 = 26 cm",
+          "tag": "add",
+          "title": "Add segments of FH",
+          "narration": "Add the two parts F N and N H along the diameter: eighteen plus eight equals twenty-six centimetres."
+        },
+        {
+          "n": 7,
+          "display": "Check: r = 13, ON = 5 ⇒ 5^{2} + 12^{2} = 13^{2}",
+          "tag": "check",
+          "title": "Check with radius 13",
+          "narration": "Check: radius is thirteen, O N is thirteen minus eight equals five, and five, twelve, thirteen forms a right triangle."
+        },
+        {
+          "n": 8,
+          "display": "26 cm (option C)",
+          "tag": "answer",
+          "title": "Length of diameter FH",
+          "narration": "The diameter F H is twenty-six centimetres long."
         }
       ]
     }
