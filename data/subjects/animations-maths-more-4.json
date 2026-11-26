@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 20,
+  "count": 30,
   "animations": [
     {
       "id": "anim-math-jamb-2014-008",
@@ -1578,6 +1578,806 @@
           "tag": "answer",
           "title": "Cedis per remaining day",
           "narration": "So the trader can spend Y minus X x divided by y minus x cedis per day."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-013",
+      "questionId": "math-jamb-2015-013",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "−\\frac{2}{2}, +\\frac{2}{3}, −\\frac{2}{4}, +\\frac{2}{5}, …",
+          "tag": "pattern",
+          "title": "Rewrite with numerator 2",
+          "narration": "Write minus one as minus two halves and minus one half as minus two quarters so every numerator is two."
+        },
+        {
+          "n": 2,
+          "display": "Magnitude = \\frac{2}{n + 1}",
+          "tag": "denominator",
+          "title": "Match denominator to n",
+          "narration": "For n equals one, two, three, four, the denominators are two, three, four, five, which is always n plus one."
+        },
+        {
+          "n": 3,
+          "display": "Signs: −, +, −, + ⇒ (−1)^{n}",
+          "tag": "sign",
+          "title": "Match alternating signs",
+          "narration": "Odd terms are negative and even terms are positive, matching the factor minus one to the power n."
+        },
+        {
+          "n": 4,
+          "display": "(−1)^{n}\\frac{2}{n + 1} (option C)",
+          "tag": "answer",
+          "title": "General nth term",
+          "narration": "Combining sign and magnitude gives minus one to the n times two over n plus one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "−1 = −\\frac{2}{2}, −\\frac{1}{2} = −\\frac{2}{4}",
+          "tag": "unify",
+          "title": "Reveal common numerator 2",
+          "narration": "Notice the second and fourth terms already have numerator two, so rewrite minus one and minus one half with numerator two as well."
+        },
+        {
+          "n": 2,
+          "display": "n = 1, 2, 3, 4 → denominators 2, 3, 4, 5 = n + 1",
+          "tag": "magnitude",
+          "title": "Express denominator via n",
+          "narration": "Each denominator is one more than the term position n, giving fraction magnitude two over n plus one."
+        },
+        {
+          "n": 3,
+          "display": "n = 1: (−1)^{1} = −1; n = 2: (−1)^{2} = +1",
+          "tag": "alternating",
+          "title": "Capture alternating sign",
+          "narration": "Because the sequence starts negative at n equals one and flips every term, multiply by minus one to the power n."
+        },
+        {
+          "n": 4,
+          "display": "T_{n} = (−1)^{n} \\frac{2}{n + 1}",
+          "tag": "combine",
+          "title": "Form nth term formula",
+          "narration": "Combine the sign factor with the fraction magnitude to write the general term."
+        },
+        {
+          "n": 5,
+          "display": "Check n = 3: (−1)^{3} \\frac{2}{3 + 1} = −\\frac{2}{4} = −\\frac{1}{2}",
+          "tag": "check",
+          "title": "Check term 3",
+          "narration": "Check at n equals three: minus one cubed times two quarters gives minus one half, matching the list."
+        },
+        {
+          "n": 6,
+          "display": "(−1)^{n}\\frac{2}{n + 1} (option C)",
+          "tag": "answer",
+          "title": "Sequence formula",
+          "narration": "Therefore the nth term formula is minus one to the n times two over n plus one."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-016",
+      "questionId": "math-jamb-2015-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Area(QRST) = 4 × 7 = 28 cm^{2}",
+          "tag": "parallelogram",
+          "title": "Find parallelogram area",
+          "narration": "Parallelogram Q R S T has base S R equals four centimetres and perpendicular height P S equals seven centimetres, giving twenty-eight."
+        },
+        {
+          "n": 2,
+          "display": "Area(△PST) = \\frac{1}{2} × 7 × 7 = \\frac{49}{2} cm^{2}",
+          "tag": "triangle",
+          "title": "Find triangle area",
+          "narration": "Right triangle P S T has legs seven centimetres and seven centimetres, so its area is forty-nine halves."
+        },
+        {
+          "n": 3,
+          "display": "Area(PQRS) = 28 + \\frac{49}{2} = \\frac{105}{2} cm^{2}",
+          "tag": "trapezium",
+          "title": "Add areas for trapezium",
+          "narration": "Add the parallelogram and triangle areas to find trapezium P Q R S is one hundred and five halves square centimetres."
+        },
+        {
+          "n": 4,
+          "display": "28 : \\frac{105}{2} = 56 : 105 (option B)",
+          "tag": "answer",
+          "title": "Clear fraction in ratio",
+          "narration": "Multiply both sides of the ratio by two to get fifty-six to one hundred and five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "PS = PT = 7 cm, SR = 4 cm, PS ⊥ PQ",
+          "tag": "given",
+          "title": "Read lengths and parallel lines",
+          "narration": "Read the properties given: P Q is parallel to S R, S T is parallel to R Q, P S is perpendicular to both bases at seven centimetres, P T is seven, and S R is four."
+        },
+        {
+          "n": 2,
+          "display": "Area(QRST) = SR × PS = 4 × 7 = 28 cm^{2}",
+          "tag": "parallelogram",
+          "title": "Area of parallelogram QRST",
+          "narration": "Because both pairs of opposite sides are parallel, Q R S T is a parallelogram; multiply base four by perpendicular height seven to get twenty-eight."
+        },
+        {
+          "n": 3,
+          "display": "Area(△PST) = \\frac{1}{2} × PT × PS = \\frac{1}{2}(7)(7) = \\frac{49}{2}",
+          "tag": "triangle",
+          "title": "Area of right triangle PST",
+          "narration": "Because P S meets P Q at a right angle, triangle P S T has base seven and height seven, giving forty-nine over two square centimetres."
+        },
+        {
+          "n": 4,
+          "display": "Area(PQRS) = 28 + \\frac{49}{2} = \\frac{56 + 49}{2} = \\frac{105}{2}",
+          "tag": "combine",
+          "title": "Find total trapezium area",
+          "narration": "Combine the two non-overlapping pieces over denominator two: fifty-six plus forty-nine equals one hundred and five halves."
+        },
+        {
+          "n": 5,
+          "display": "Ratio = 28 : \\frac{105}{2} = 56 : 105",
+          "tag": "ratio",
+          "title": "Multiply ratio by 2",
+          "narration": "Double both numbers in twenty-eight to one hundred and five halves to write the ratio in whole numbers as fifty-six to one hundred and five."
+        },
+        {
+          "n": 6,
+          "display": "56 : 105 (option B)",
+          "tag": "answer",
+          "title": "Required area ratio",
+          "narration": "The ratio of area Q R S T to area P Q R S is fifty-six to one hundred and five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-019",
+      "questionId": "math-jamb-2015-019",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{XW}{WZ} = \\frac{XY}{YZ} = \\frac{3}{7}",
+          "tag": "theorem",
+          "title": "Angle bisector theorem",
+          "narration": "By the angle bisector theorem, the bisector of angle Y divides opposite side X Z in the ratio of sides X Y to Y Z, which is three to seven."
+        },
+        {
+          "n": 2,
+          "display": "Total parts = 3 + 7 = 10",
+          "tag": "parts",
+          "title": "Find XW fraction of XZ",
+          "narration": "Add three and seven to see X W occupies three tenths of side X Z."
+        },
+        {
+          "n": 3,
+          "display": "XW = \\frac{3}{10} × 5 = 1.5",
+          "tag": "multiply",
+          "title": "Multiply by XZ = 5 cm",
+          "narration": "Multiply three tenths by the five-centimetre length X Z."
+        },
+        {
+          "n": 4,
+          "display": "1.5 cm (option A)",
+          "tag": "answer",
+          "title": "Length of XW",
+          "narration": "The segment X W measures one point five centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "XY = 3 cm, YZ = 7 cm, XZ = 5 cm",
+          "tag": "given",
+          "title": "List side lengths",
+          "narration": "Write down the sides adjacent to angle Y, three and seven centimetres, and the opposite side X Z, five centimetres."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{XW}{WZ} = \\frac{XY}{YZ} = \\frac{3}{7}",
+          "tag": "theorem",
+          "title": "Apply angle bisector theorem",
+          "narration": "By the interior angle bisector theorem, segment X W over segment W Z equals adjacent side X Y over adjacent side Y Z."
+        },
+        {
+          "n": 3,
+          "display": "XW : WZ = 3 : 7 ⇒ XW = \\frac{3}{3 + 7} XZ",
+          "tag": "share",
+          "title": "Express XW as share of XZ",
+          "narration": "Out of three plus seven equals ten total ratio parts along X Z, segment X W gets three parts."
+        },
+        {
+          "n": 4,
+          "display": "XW = \\frac{3}{10} × 5 = \\frac{15}{10} = 1.5 cm",
+          "tag": "compute",
+          "title": "Calculate XW",
+          "narration": "Multiply three tenths by five centimetres to get fifteen tenths, which equals one point five centimetres."
+        },
+        {
+          "n": 5,
+          "display": "Check: WZ = 3.5 ⇒ \\frac{1.5}{3.5} = \\frac{3}{7}",
+          "tag": "check",
+          "title": "Check ratio XW : WZ",
+          "narration": "Check: W Z is three point five, and one point five over three point five reduces cleanly to three sevenths."
+        },
+        {
+          "n": 6,
+          "display": "1.5 cm (option A)",
+          "tag": "answer",
+          "title": "Final length of XW",
+          "narration": "Therefore X W is one point five centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-020",
+      "questionId": "math-jamb-2015-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Mean = \\frac{Σ x}{N}",
+          "tag": "formula",
+          "title": "Arithmetic mean formula",
+          "narration": "Recall that the arithmetic mean equals the sum of all numbers divided by how many numbers there are."
+        },
+        {
+          "n": 2,
+          "display": "Σ x = 100",
+          "tag": "sum",
+          "title": "Add all 20 values",
+          "narration": "Adding all twenty numbers carefully gives a total of one hundred."
+        },
+        {
+          "n": 3,
+          "display": "N = 20 ⇒ \\frac{100}{20} = 5",
+          "tag": "divide",
+          "title": "Divide total by 20",
+          "narration": "Include both zeros in the count of twenty values, then divide one hundred by twenty."
+        },
+        {
+          "n": 4,
+          "display": "5 (option B)",
+          "tag": "answer",
+          "title": "Arithmetic mean",
+          "narration": "The arithmetic mean is five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Mean = \\frac{Sum of values}{Number of values}",
+          "tag": "formula",
+          "title": "State arithmetic mean formula",
+          "narration": "State the formula first: divide the sum of every observation by the total number of observations."
+        },
+        {
+          "n": 2,
+          "display": "(5+3+6+9+4)+(7+8+6+2+7) = 27 + 30 = 57",
+          "tag": "sum part 1",
+          "title": "Sum first 10 values",
+          "narration": "Group and add the first ten marks five at a time to get twenty-seven plus thirty, which is fifty-seven."
+        },
+        {
+          "n": 3,
+          "display": "(8+4+5+2+1)+(0+6+9+0+8) = 20 + 23 = 43",
+          "tag": "sum part 2",
+          "title": "Sum remaining 10 values",
+          "narration": "Add the last ten marks five at a time to get twenty plus twenty-three, which is forty-three."
+        },
+        {
+          "n": 4,
+          "display": "Total = 57 + 43 = 100, N = 20",
+          "tag": "total",
+          "title": "Combine sum and count",
+          "narration": "Combine fifty-seven and forty-three to get one hundred, and count all twenty marks including both zeros."
+        },
+        {
+          "n": 5,
+          "display": "Mean = \\frac{100}{20} = 5",
+          "tag": "divide",
+          "title": "Divide 100 by 20",
+          "narration": "Divide one hundred by twenty to obtain five."
+        },
+        {
+          "n": 6,
+          "display": "5 (option B)",
+          "tag": "answer",
+          "title": "Final mean",
+          "narration": "The arithmetic mean of the twenty marks is five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-025",
+      "questionId": "math-jamb-2015-025",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Angle = \\frac{Asia}{Total} × 360°",
+          "tag": "formula",
+          "title": "Pie chart sector angle",
+          "narration": "Multiply Asia's fraction of all participants by three hundred and sixty degrees."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{150}{800} × 360°",
+          "tag": "substitute",
+          "title": "Substitute counts",
+          "narration": "Put one hundred and fifty over eight hundred and multiply by three hundred and sixty degrees."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{3}{16} × 360° = \\frac{135°}{2} = 67.5°",
+          "tag": "simplify",
+          "title": "Reduce fraction and multiply",
+          "narration": "Simplify one hundred and fifty over eight hundred to three sixteenths, then multiply by three hundred and sixty."
+        },
+        {
+          "n": 4,
+          "display": "67.5° (option B)",
+          "tag": "answer",
+          "title": "Angle for Asia",
+          "narration": "The angle representing Asia on the pie chart is sixty-seven point five degrees."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Asia = 150, Total = 800",
+          "tag": "given",
+          "title": "List given numbers",
+          "narration": "Identify the part for Asia as one hundred and fifty out of eight hundred total participants."
+        },
+        {
+          "n": 2,
+          "display": "Angle = \\frac{part}{total} × 360°",
+          "tag": "formula",
+          "title": "State pie chart formula",
+          "narration": "A full pie chart covers three hundred and sixty degrees, so multiply the category share by three hundred and sixty."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{150}{800} = \\frac{15}{80} = \\frac{3}{16}",
+          "tag": "reduce",
+          "title": "Simplify the fraction",
+          "narration": "Cancel a zero and divide both fifteen and eighty by five to simplify the fraction to three sixteenths."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{3}{16} × 360° = \\frac{3 × 45°}{2} = \\frac{135°}{2}",
+          "tag": "divide",
+          "title": "Divide 360 and 16 by 8",
+          "narration": "Divide both three hundred and sixty and sixteen by eight to leave three times forty-five over two, or one hundred and thirty-five halves."
+        },
+        {
+          "n": 5,
+          "display": "135° ÷ 2 = 67.5°",
+          "tag": "halve",
+          "title": "Divide by 2",
+          "narration": "Half of one hundred and thirty-five degrees gives sixty-seven point five degrees."
+        },
+        {
+          "n": 6,
+          "display": "67.5° (option B)",
+          "tag": "answer",
+          "title": "Final central angle",
+          "narration": "Asia is represented by sixty-seven point five degrees."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-026",
+      "questionId": "math-jamb-2015-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = 1, r = \\frac{9}{10}",
+          "tag": "parameters",
+          "title": "Find first term and ratio",
+          "narration": "Identify first term one and common ratio nine tenths, whose magnitude is less than one."
+        },
+        {
+          "n": 2,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "title": "Sum to infinity formula",
+          "narration": "Use the convergent infinite geometric series formula a divided by one minus r."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{1}{1 − \\frac{9}{10}} = \\frac{1}{\\frac{1}{10}}",
+          "tag": "substitute",
+          "title": "Subtract denominator",
+          "narration": "One minus nine tenths leaves one tenth in the denominator."
+        },
+        {
+          "n": 4,
+          "display": "10 (option D)",
+          "tag": "answer",
+          "title": "Infinite sum",
+          "narration": "One divided by one tenth gives ten."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "a = 1, r = \\frac{9}{10} (|r| < 1)",
+          "tag": "identify",
+          "title": "Identify GP parameters",
+          "narration": "Read first term a equals one and notice each term multiplies by nine tenths; since nine tenths is less than one, the infinite sum exists."
+        },
+        {
+          "n": 2,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "title": "State infinite sum formula",
+          "narration": "Recall the sum to infinity formula: first term a divided by one minus common ratio r."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{1}{1 − \\frac{9}{10}}",
+          "tag": "substitute",
+          "title": "Substitute a and r",
+          "narration": "Substitute one for a and nine tenths for r into the formula."
+        },
+        {
+          "n": 4,
+          "display": "1 − \\frac{9}{10} = \\frac{10}{10} − \\frac{9}{10} = \\frac{1}{10}",
+          "tag": "subtract",
+          "title": "Evaluate 1 − r",
+          "narration": "Write one as ten tenths and subtract nine tenths to leave one tenth in the denominator."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{1}{\\frac{1}{10}} = 1 × 10 = 10",
+          "tag": "invert",
+          "title": "Invert and multiply",
+          "narration": "Dividing one by one tenth multiplies one by ten to give ten."
+        },
+        {
+          "n": 6,
+          "display": "10 (option D)",
+          "tag": "answer",
+          "title": "Sum to infinity",
+          "narration": "The sum to infinity of the series is ten."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-029",
+      "questionId": "math-jamb-2015-029",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x + 1 = 0 ⇒ x = −1",
+          "tag": "factor theorem",
+          "title": "Find root of factor",
+          "narration": "Set the factor x plus one equal to zero to get x equals minus one."
+        },
+        {
+          "n": 2,
+          "display": "(−1)^{3} + 2(−1)^{2} + q(−1) − 6 = 0",
+          "tag": "substitute",
+          "title": "Evaluate at x = −1",
+          "narration": "By the factor theorem, substituting x equals minus one gives zero."
+        },
+        {
+          "n": 3,
+          "display": "−1 + 2 − q − 6 = 0 ⇒ −5 − q = 0",
+          "tag": "simplify",
+          "title": "Combine constants",
+          "narration": "Simplify minus one plus two minus six to get minus five minus q equals zero."
+        },
+        {
+          "n": 4,
+          "display": "q = −5 (option A)",
+          "tag": "answer",
+          "title": "Value of q",
+          "narration": "Add q to both sides to find q equals minus five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f(x) = x^{3} + 2x^{2} + qx − 6",
+          "tag": "define",
+          "title": "Name the polynomial",
+          "narration": "Call the cubic polynomial f of x; because x plus one is a factor, f of minus one must be zero."
+        },
+        {
+          "n": 2,
+          "display": "x + 1 = 0 ⇒ x = −1",
+          "tag": "root",
+          "title": "Solve factor = 0",
+          "narration": "Subtract one from both sides of x plus one equals zero to see we evaluate at x equals minus one."
+        },
+        {
+          "n": 3,
+          "display": "(−1)^{3} + 2(−1)^{2} + q(−1) − 6 = 0",
+          "tag": "substitute",
+          "title": "Substitute x = −1",
+          "narration": "Replace every x with minus one and equate the sum to zero."
+        },
+        {
+          "n": 4,
+          "display": "−1 + 2 − q − 6 = 0 ⇒ −5 − q = 0",
+          "tag": "collect",
+          "title": "Watch negative powers",
+          "narration": "Minus one cubed stays minus one, minus one squared becomes plus one times two is two, and minus one plus two minus six totals minus five."
+        },
+        {
+          "n": 5,
+          "display": "q = −5",
+          "tag": "solve q",
+          "title": "Add q to both sides",
+          "narration": "Add q to both sides to move q out of the negative sign, leaving q equal to minus five."
+        },
+        {
+          "n": 6,
+          "display": "Check: −1 + 2 − (−5) − 6 = 1 + 5 − 6 = 0",
+          "tag": "check",
+          "title": "Verify with q = −5",
+          "narration": "Check: replacing q with minus five gives one plus five minus six, which equals zero."
+        },
+        {
+          "n": 7,
+          "display": "q = −5 (option A)",
+          "tag": "answer",
+          "title": "Final value of q",
+          "narration": "Therefore q equals minus five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-031",
+      "questionId": "math-jamb-2015-031",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "A = \\frac{θ}{360°} × πr^{2}",
+          "tag": "formula",
+          "title": "Sector area formula",
+          "narration": "A sector's area is its central angle fraction of three hundred and sixty degrees times circle area pi r squared."
+        },
+        {
+          "n": 2,
+          "display": "A = \\frac{70°}{360°} × \\frac{22}{7} × 6^{2}",
+          "tag": "substitute",
+          "title": "Plug in 70°, 6 cm, and π",
+          "narration": "Substitute angle seventy degrees, radius six centimetres, and twenty-two sevenths for pi."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{7}{36} × \\frac{22}{7} × 36",
+          "tag": "cancel",
+          "title": "Cancel 7 and 36",
+          "narration": "Seventy over three hundred and sixty reduces to seven over thirty-six, cancelling both seven and thirty-six cleanly."
+        },
+        {
+          "n": 4,
+          "display": "22 cm^{2} (option A)",
+          "tag": "answer",
+          "title": "Area of sector",
+          "narration": "Cancelling leaves twenty-two square centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "θ = 70°, r = 6 cm, π ≈ \\frac{22}{7}",
+          "tag": "given",
+          "title": "List given values",
+          "narration": "Write down the central angle seventy degrees, radius six centimetres, and approximation twenty-two over seven for pi."
+        },
+        {
+          "n": 2,
+          "display": "A = \\frac{θ}{360°} × πr^{2}",
+          "tag": "formula",
+          "title": "State sector area formula",
+          "narration": "Multiply the circle's area pi r squared by the sector's angle divided by three hundred and sixty degrees."
+        },
+        {
+          "n": 3,
+          "display": "A = \\frac{70°}{360°} × \\frac{22}{7} × 6^{2}",
+          "tag": "substitute",
+          "title": "Substitute values into formula",
+          "narration": "Substitute the three given values into the sector area formula."
+        },
+        {
+          "n": 4,
+          "display": "A = \\frac{7}{36} × \\frac{22}{7} × 36",
+          "tag": "simplify",
+          "title": "Simplify angle fraction and 6^{2}",
+          "narration": "Cancel the trailing zeros in seventy over three hundred and sixty to get seven over thirty-six, and square six to get thirty-six."
+        },
+        {
+          "n": 5,
+          "display": "A = 22",
+          "tag": "cancel",
+          "title": "Cancel 7 with 7 and 36 with 36",
+          "narration": "Seven cancels seven and thirty-six cancels thirty-six, leaving only twenty-two."
+        },
+        {
+          "n": 6,
+          "display": "22 cm^{2} (option A)",
+          "tag": "answer",
+          "title": "Final sector area",
+          "narration": "The area of the sector is approximately twenty-two square centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-033",
+      "questionId": "math-jamb-2015-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "∫ \\frac{1}{x} dx + ∫ cos x dx",
+          "tag": "split",
+          "title": "Integrate term by term",
+          "narration": "Split the integral of the sum into the sum of two standard integrals."
+        },
+        {
+          "n": 2,
+          "display": "∫ \\frac{1}{x} dx = ln x (x > 0)",
+          "tag": "log term",
+          "title": "Integrate reciprocal x",
+          "narration": "For positive x, the antiderivative of one over x is natural logarithm ln x."
+        },
+        {
+          "n": 3,
+          "display": "∫ cos x dx = sin x",
+          "tag": "trig term",
+          "title": "Integrate cos x",
+          "narration": "The antiderivative of cosine x is sine x because sine x differentiates to cosine x."
+        },
+        {
+          "n": 4,
+          "display": "ln x + sin x + k (option B)",
+          "tag": "answer",
+          "title": "Add constant k",
+          "narration": "Adding the constant of integration k gives ln x plus sine x plus k."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "∫ (\\frac{1}{x} + cos x) dx = ∫ \\frac{1}{x} dx + ∫ cos x dx",
+          "tag": "linearity",
+          "title": "Separate the two terms",
+          "narration": "By linearity of integration, integrate one over x and cosine x separately."
+        },
+        {
+          "n": 2,
+          "display": "x > 0 ⇒ ∫ \\frac{1}{x} dx = ln x",
+          "tag": "reciprocal",
+          "title": "Antiderivative of reciprocal x",
+          "narration": "Remember the power rule fails for x to the minus one; instead, one over x integrates to ln x, and x greater than zero avoids an absolute value sign."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{d}{dx}(sin x) = cos x ⇒ ∫ cos x dx = sin x",
+          "tag": "cosine",
+          "title": "Antiderivative of cos x",
+          "narration": "Because the derivative of sine x is cosine x with no negative sign, cosine x integrates to positive sine x."
+        },
+        {
+          "n": 4,
+          "display": "Check: \\frac{d}{dx}(ln x + sin x + k) = \\frac{1}{x} + cos x",
+          "tag": "check",
+          "title": "Verify by differentiating",
+          "narration": "Differentiate ln x plus sine x plus k to confirm we recover one over x plus cosine x."
+        },
+        {
+          "n": 5,
+          "display": "ln x + sin x + k (option B)",
+          "tag": "answer",
+          "title": "Final integral",
+          "narration": "Including constant k gives ln x plus sine x plus k."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-036",
+      "questionId": "math-jamb-2015-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{0.0023}{0.00345} = \\frac{230}{345} = \\frac{2}{3}",
+          "tag": "pair 1",
+          "title": "Simplify first ratio",
+          "narration": "Shift the decimal point five places right to get two hundred and thirty over three hundred and forty-five, which divides by one hundred and fifteen to give two thirds."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{750}{1.25} = \\frac{75000}{125} = 600",
+          "tag": "pair 2",
+          "title": "Simplify second ratio",
+          "narration": "Divide seven hundred and fifty by one point two five to get six hundred."
+        },
+        {
+          "n": 3,
+          "display": "\\sqrt{\\frac{2}{3} × 600} = \\sqrt{400}",
+          "tag": "multiply",
+          "title": "Multiply inside root",
+          "narration": "Two thirds of six hundred equals four hundred inside the square root."
+        },
+        {
+          "n": 4,
+          "display": "20 (option B)",
+          "tag": "answer",
+          "title": "Square root",
+          "narration": "The square root of four hundred is twenty."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{0.0023}{0.00345} × \\frac{750}{1.25}",
+          "tag": "pair",
+          "title": "Pair matching decimals",
+          "narration": "Split the fraction inside the square root into two easier divisions so decimals cancel cleanly."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{0.0023}{0.00345} = \\frac{230}{345} = \\frac{2 × 115}{3 × 115} = \\frac{2}{3}",
+          "tag": "reduce 1",
+          "title": "Reduce first decimal ratio",
+          "narration": "Multiply top and bottom by one hundred thousand to clear decimals; both two hundred thirty and three hundred forty-five divide by one hundred fifteen, giving two thirds."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{750}{1.25} = \\frac{75000}{125} = 600",
+          "tag": "reduce 2",
+          "title": "Divide 750 by 1.25",
+          "narration": "Shift decimals two places right: since one hundred twenty-five times six is seven hundred fifty, dividing gives six hundred."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{2}{3} × 600 = 2 × 200 = 400",
+          "tag": "radicand",
+          "title": "Evaluate under the root",
+          "narration": "Multiply two thirds by six hundred to get four hundred inside the square root."
+        },
+        {
+          "n": 5,
+          "display": "\\sqrt{400} = 20",
+          "tag": "root",
+          "title": "Take square root",
+          "narration": "Twenty squared is four hundred, so the square root of four hundred is twenty."
+        },
+        {
+          "n": 6,
+          "display": "20 (option B)",
+          "tag": "answer",
+          "title": "Final simplified value",
+          "narration": "The simplified value is twenty."
         }
       ]
     }
