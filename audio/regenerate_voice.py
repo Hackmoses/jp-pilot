@@ -3,8 +3,9 @@
 Resumable per-subject voice regeneration script using Chatterbox TTS + strict Whisper verification.
 
 Usage:
+  python audio/regenerate_voice.py --subject chemistry --spoken-file audio/spoken-chemistry.json
   PYTORCH_ENABLE_MPS_FALLBACK=1 ~/venvs/chatterbox/bin/python audio/regenerate_voice.py \
-    --subject chemistry --spoken-file audio/spoken-chemistry.json
+    --subject chemistry --spoken-file audio/spoken-chemistry.json --device auto
 """
 
 from __future__ import annotations
@@ -21,8 +22,6 @@ import time
 from collections import Counter
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
-
-os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")
 
 import numpy as np
 import soundfile as sf
@@ -534,12 +533,38 @@ def set_seed(seed: int, device_used: str) -> None:
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
-    if device_used == "mps" and hasattr(torch, "mps") and hasattr(torch.mps, "manual_seed"):
+    if device_used == "cuda" and torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+    elif device_used == "mps" and hasattr(torch, "mps") and hasattr(torch.mps, "manual_seed"):
         torch.mps.manual_seed(seed)
 
 
-def load_chatterbox() -> tuple[ChatterboxTTS, str, float]:
+def resolve_device(requested: str) -> str:
+    req = requested.strip().lower()
+    if req == "auto":
+        if torch.cuda.is_available():
+            return "cuda"
+        if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+            return "mps"
+        return "cpu"
+    if req == "cuda":
+        if not torch.cuda.is_available():
+            raise RuntimeError("Requested --device cuda, but CUDA is not available.")
+        return "cuda"
+    if req == "mps":
+        if not (hasattr(torch.backends, "mps") and torch.backends.mps.is_available()):
+            raise RuntimeError("Requested --device mps, but MPS is not available.")
+        return "mps"
+    if req == "cpu":
+        return "cpu"
+    raise ValueError(f"Unsupported device: {requested!r}")
+
+
+def load_chatterbox(requested_device: str = "auto") -> tuple[ChatterboxTTS, str, float]:
     orig_load = torch.load
+    target = resolve_device(requested_device)
+    if target == "mps":
+        os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")
 
     def _load(device_str: str):
         def patched(*args, **kwargs):
@@ -556,14 +581,17 @@ def load_chatterbox() -> tuple[ChatterboxTTS, str, float]:
         finally:
             torch.load = orig_load
 
-    if torch.backends.mps.is_available():
+    if requested_device == "auto" and target in {"cuda", "mps"}:
         try:
-            model, sec = _load("mps")
-            return model, "mps", sec
+            model, sec = _load(target)
+            return model, target, sec
         except Exception as exc:
-            print(f"MPS load failed ({type(exc).__name__}: {exc}); falling back to CPU", flush=True)
-    model, sec = _load("cpu")
-    return model, "cpu", sec
+            print(f"{target.upper()} load failed ({type(exc).__name__}: {exc}); falling back to CPU", flush=True)
+        model, sec = _load("cpu")
+        return model, "cpu", sec
+
+    model, sec = _load(target)
+    return model, target, sec
 
 
 def generate_audio(
@@ -577,7 +605,9 @@ def generate_audio(
     set_seed(seed, device_used)
     t0 = time.perf_counter()
     wav = model.generate(text, exaggeration=exaggeration, cfg_weight=cfg_weight)
-    if device_used == "mps":
+    if device_used == "cuda":
+        torch.cuda.synchronize()
+    elif device_used == "mps":
         torch.mps.synchronize()
         torch.mps.empty_cache()
     gen_sec = time.perf_counter() - t0
@@ -610,6 +640,12 @@ def main() -> int:
     parser.add_argument("--skip-needs-review", action="store_true")
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument(
+        "--device",
+        choices=("auto", "cuda", "mps", "cpu"),
+        default="auto",
+        help="Torch device to use (auto picks cuda, then mps, then cpu)",
+    )
     args = parser.parse_args()
 
     subject = args.subject.strip().lower()
@@ -719,11 +755,12 @@ def main() -> int:
     batch_start = time.perf_counter()
 
     if pending:
-        print("Loading Whisper small.en on CPU...", flush=True)
-        whisper_model = whisper.load_model("small.en", device="cpu")
         print("Loading ChatterboxTTS...", flush=True)
-        model, device_used, load_sec = load_chatterbox()
+        model, device_used, load_sec = load_chatterbox(args.device)
         print(f"Chatterbox loaded on {device_used} in {load_sec:.2f}s (sr={model.sr})", flush=True)
+        whisper_device = "cuda" if device_used == "cuda" else "cpu"
+        print(f"Loading Whisper small.en on {whisper_device.upper()}...", flush=True)
+        whisper_model = whisper.load_model("small.en", device=whisper_device)
         print(f"Calling prepare_conditionals() ONCE for {ref_wav} (exaggeration={args.exaggeration})...", flush=True)
         model.prepare_conditionals(str(ref_wav), exaggeration=args.exaggeration)
         state["deviceUsed"] = device_used
