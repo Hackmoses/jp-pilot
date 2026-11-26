@@ -8,6 +8,7 @@ export default defineConfig({
         manualChunks(id) {
           if (id.endsWith('/try-it/motion.ts')) return 'try-it-motion'
           if (id.endsWith('/lessons/lesson.ts')) return 'lesson-timing'
+          if (id.endsWith('/lib/leitner.ts')) return 'card-reviews'
         },
       },
     },

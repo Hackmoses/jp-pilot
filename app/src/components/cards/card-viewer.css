@@ -1,0 +1,25 @@
+.jp-word-card {
+  font-family: var(--font-system);
+  font-size: inherit;
+  color: var(--ink);
+  text-align: start;
+  overflow-wrap: anywhere;
+  touch-action: pan-y;
+  cursor: pointer;
+  perspective: 60rem;
+}
+
+.jp-word-card-face {
+  display: grid;
+  gap: var(--space-3);
+  animation: jp-card-flip 160ms ease-out;
+}
+
+@keyframes jp-card-flip {
+  from { transform: rotateY(-40deg); }
+  to { transform: rotateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jp-word-card-face { animation: none; }
+}

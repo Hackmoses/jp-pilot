@@ -1,27 +1,58 @@
 import { useEffect } from 'preact/hooks'
 import { LessonList } from '../components/lessons/LessonList'
 import { TryItCard, studyInteractives } from '../components/try-it/TryItCard'
-import { conceptLessonTopic, STUDY_TOPICS, syllabusSections } from '../lib/sections'
+import cardIndex from '../lib/card-index.json'
+import { cardReviews } from '../lib/leitner'
+import { lazyView } from '../lib/lazyView'
+import { conceptLessonTopic, ENGLISH_CARD_TOPICS, STUDY_TOPICS, syllabusSections } from '../lib/sections'
 import { chapterName, hasStudied, remember, studyLink } from '../lib/modes'
 import { getSubject } from '../lib/subjects'
 import { ModeCard, Panel } from './Modes'
 
-// Study is concept lessons and Try it. It does not download practice question files.
+const cardViewer = lazyView(() => import('../components/cards/CardViewer').then(({ CardViewer }) => CardViewer))
+
+function EnglishCards({ deck, back, open }: { deck: string; back: string; open: boolean }) {
+  const { View, failed } = cardViewer.useView(open)
+  const entry = cardIndex.find(({ id }) => id === deck)
+  if (!entry) return <Panel title="Word cards" back={back}><p class="jp-mode-lead">This deck is unavailable.</p></Panel>
+  const { title, count } = entry
+  const known = Math.min(count, Object.values(cardReviews(deck)).filter(({ box }) => box > 1).length)
+
+  if (open && View) return <View deck={deck} title={title} back={back} />
+  return <Panel title={title} subtitle="English Language" back={open ? back : '#/study?subject=english'}>
+    {open ? <p class="jp-mode-lead" role="status">
+      {failed ? 'Could not open word cards. Reload the page to try again.' : 'Loading…'}
+    </p> : <ModeCard href={back + '&cards=1'} title={`Word cards · ${count} cards`}>
+      {known} known · {count - known} to review
+    </ModeCard>}
+  </Panel>
+}
+
+// Study uses lessons, Try it and word cards.
 export function Study({ params }: { params: URLSearchParams }) {
   const subject = params.get('subject') ?? 'chemistry'
   const chapter = params.get('chapter')
   const tryIt = params.get('try')
+  const deck = subject === 'english' && chapter ? ENGLISH_CARD_TOPICS[chapter] : undefined
+  const sectionsForSubject = syllabusSections(subject, true)
   const subjectName = getSubject(subject)?.name ?? subject
   const topics = new Set(STUDY_TOPICS[subject] ?? [])
   const subjectHref = '#/study?subject=' + encodeURIComponent(subject)
   const practiceHref = (id?: string) => '#/practice?' + new URLSearchParams(id ? { subject, chapter: id } : { subject })
 
   useEffect(() => {
-    if (chapter && topics.has(chapter)) remember(studyLink(subject, chapter), 'Study · ' + chapterName(subject, chapter))
+    if (chapter && topics.has(chapter)) {
+      const title = sectionsForSubject.flatMap(({ chapters }) => chapters).find(({ id }) => id === chapter)?.title
+      remember(studyLink(subject, chapter), 'Study · ' + (title ?? chapterName(subject, chapter)))
+    }
     if (tryIt === 'gas-laws') document.getElementById(tryIt)?.scrollIntoView({ block: 'start' })
   }, [subject, chapter, tryIt])
 
-  if (chapter) {
+  if (chapter && deck) {
+    return <EnglishCards deck={deck} back={studyLink(subject, chapter)} open={params.has('cards')} />
+  }
+
+  if (chapter && subject !== 'english') {
     const file = conceptLessonTopic(subject, chapter)
     const interactives = studyInteractives(subject, chapter)
     return (
@@ -41,10 +72,12 @@ export function Study({ params }: { params: URLSearchParams }) {
     )
   }
 
-  const sections = syllabusSections(subject).map((section) => ({
+  const sections = sectionsForSubject.map((section) => ({
     ...section, chapters: section.chapters.filter((entry) => topics.has(entry.id)),
   })).filter((section) => section.chapters.length)
-  const studiedTopic = (id: string) => hasStudied(subject, id)
+  const studiedTopic = (id: string) => subject === 'english'
+    ? Object.keys(cardReviews(ENGLISH_CARD_TOPICS[id])).length > 0
+    : hasStudied(subject, id)
   const total = sections.reduce((sum, section) => sum + section.chapters.length, 0)
   const studied = sections.reduce((sum, section) =>
     sum + section.chapters.filter((entry) => studiedTopic(entry.id)).length, 0)
@@ -63,14 +96,14 @@ export function Study({ params }: { params: URLSearchParams }) {
         </section>
         {sections.map((section) => {
           const done = section.chapters.filter((entry) => studiedTopic(entry.id)).length
-          return <details class="jp-card jp-study-section" key={section.id}>
+          return <details class="jp-card jp-study-section" key={section.id} open={subject === 'english' ? true : undefined}>
             <summary>
               <span class="jp-mode-card-title">{section.title}</span>
               <span class="jp-summary-sub">{section.chapters.length} {section.chapters.length === 1 ? 'topic' : 'topics'}{done ? ` · ${done} studied` : ''}</span>
             </summary>
             <div class="jp-mode-list">
               {section.chapters.map((entry) => <ModeCard key={entry.id} href={studyLink(subject, entry.id)}
-                title={`${entry.number}. ${entry.title}`}>
+                title={subject === 'english' ? entry.title : `${entry.number}. ${entry.title}`}>
                 {studiedTopic(entry.id) && <span class="jp-mode-studied" aria-label="Studied">✓ Studied</span>}
               </ModeCard>)}
             </div>
