@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" role="img" aria-labelledby="title desc">
+  <title id="title">Five-organism food chain</title>
+  <desc id="desc">Arrows point from P to Q, Q to R, R to S, and S to T.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect width="600" height="120" rx="12" fill="#f8fafc"/>
+  <g fill="#fff" stroke="#64748b" stroke-width="2">
+    <rect x="26" y="35" width="60" height="50" rx="9"/>
+    <rect x="148" y="35" width="60" height="50" rx="9"/>
+    <rect x="270" y="35" width="60" height="50" rx="9"/>
+    <rect x="392" y="35" width="60" height="50" rx="9"/>
+    <rect x="514" y="35" width="60" height="50" rx="9"/>
+  </g>
+  <g stroke="#334155" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M92 60h48"/>
+    <path d="M214 60h48"/>
+    <path d="M336 60h48"/>
+    <path d="M458 60h48"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui,sans-serif" font-size="23" text-anchor="middle">
+    <text x="56" y="68">P</text>
+    <text x="178" y="68">Q</text>
+    <text x="300" y="68">R</text>
+    <text x="422" y="68">S</text>
+    <text x="544" y="68">T</text>
+  </g>
+</svg>
