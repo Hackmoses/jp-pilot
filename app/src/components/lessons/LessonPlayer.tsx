@@ -213,6 +213,7 @@ export function LessonPlayer({ lesson, file, clips, onComplete }: {
         <ol type="A">{question.options.map((option, i) =>
           <li key={optionIds[i]} data-answer={answerShown && question.answer === optionIds[i]}>{option}</li>,
         )}</ol>
+        {question.afterOptions && <p>{question.afterOptions}</p>}
       </div>}
       {drawing && <View scene={scene} frame={drawing} />}
       {question ? <ol class="jp-concept-steps">

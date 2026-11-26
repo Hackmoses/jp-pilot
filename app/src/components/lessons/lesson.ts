@@ -12,6 +12,7 @@ export type Question = {
   source: { file: string; page: number; keyPage: number }
   prompt: string
   options: [string, string, string, string]
+  afterOptions?: string
   answer: 'A' | 'B' | 'C' | 'D'
   scenes: Scene[]
 }

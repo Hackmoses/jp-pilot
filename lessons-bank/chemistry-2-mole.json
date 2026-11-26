@@ -86,19 +86,19 @@
           "page": 73,
           "keyPage": 75
         },
-        "prompt": "Which quantity gives the number of atoms in one mole when atoms are the particles being counted?",
+        "prompt": "The number of atoms in one mole of a substance is equal to",
         "options": [
-          "Atomic number",
-          "Avogadro number",
-          "Gas constant",
-          "Number of electrons"
+          "the atomic number",
+          "the Avogadro number",
+          "the gas constant",
+          "the number of electrons."
         ],
         "answer": "B",
         "scenes": [
           {
             "id": "mole-1-q1",
             "show": "Show the question and the four options, then fill a group of atoms.",
-            "say": "This came in JAMB twenty seventeen. The question is counting atoms. Picture one complete mole of separate atoms. That group has the Avogadro number of atoms. Think of the number that tells you the size of the group, whichever element the atoms belong to.",
+            "say": "This came in JAMB twenty seventeen. Here the particles counted are atoms. Picture one complete mole of separate atoms. That group has the Avogadro number of atoms. Think of the number that tells you the size of the group, whichever element the atoms belong to.",
             "visual": "particles",
             "beats": [
               {
@@ -127,9 +127,7 @@
         "Compare two samples by converting each mass to moles."
       ],
       "tryIt": "mole-bridge",
-      "syllabus": "Perform simple calculations with the mole concept and Avogadro’s number.",
-      "check": true,
-      "checkNote": "2017 Q32 uses “a substance”. The display clarifies that atoms are the entities counted, as the answer does not generalise to the total atoms in a mole of molecules."
+      "syllabus": "Perform simple calculations with the mole concept and Avogadro’s number."
     },
     {
       "id": "mole-2",
@@ -215,12 +213,12 @@
           "page": 63,
           "keyPage": 66
         },
-        "prompt": "Which sample contains as many molecules as there are atoms in 24 g of magnesium? Use rounded atomic values.",
+        "prompt": "The Avogadro number of 24g of magnesium is the same as that of",
         "options": [
-          "1 g of hydrogen molecules",
-          "16 g of oxygen molecules",
-          "32 g of oxygen molecules",
-          "35.5 g of chlorine molecules"
+          "1g of hydrogen molecules",
+          "16g of oxygen molecules",
+          "32g of Oxygen molecules",
+          "35.5g of chlorine molecules."
         ],
         "answer": "C",
         "scenes": [
@@ -347,12 +345,12 @@
           "page": 54,
           "keyPage": 58
         },
-        "prompt": "What is the molar concentration when 4.0 g of sodium hydroxide is present in 250 cm³ of solution?",
+        "prompt": "4.0 g of sodium hydroxide in 250cm³ of solution contains",
         "options": [
-          "0.40 mol/dm³",
-          "0.10 mol/dm³",
-          "0.04 mol/dm³",
-          "0.02 mol/dm³"
+          "0.40 moles per dm³",
+          "0.10 moles per dm³",
+          "0.04 moles per dm³",
+          "0.02 moles per dm³"
         ],
         "answer": "A",
         "scenes": [
@@ -497,19 +495,19 @@
           "page": 25,
           "keyPage": 31
         },
-        "prompt": "An experiment releases 0.05 mol of carbon dioxide. What is its volume? Use s.t.p. for the calculation.",
+        "prompt": "During a titration experiment, 0.05 moles of carbon (IV) oxide is liberated. What is the volume of gas liberated?",
         "options": [
-          "22.40 dm³",
-          "11.20 dm³",
-          "2.24 dm³",
-          "1.12 dm³"
+          "22.40 dm3",
+          "11.20 dm3",
+          "2.24 dm3",
+          "1.12 dm3"
         ],
         "answer": "D",
         "scenes": [
           {
             "id": "mole-4-q1",
             "show": "Show the question and options above moving particles, then label the s.t.p. assumption.",
-            "say": "This came in JAMB twenty twelve. We have zero point zero five moles of carbon dioxide. The printed question leaves out the temperature and pressure. Its options use the standard value, so we solve it at s t p and state that assumption.",
+            "say": "This came in JAMB twenty twelve. We have zero point zero five moles of carbon dioxide. The printed question leaves out the temperature and pressure. JAMB expects you to assume s t p here, so we use the standard molar volume.",
             "visual": "gas",
             "beats": [
               {
@@ -543,9 +541,7 @@
         "If pressure and temperature are given away from s.t.p., use the ideal gas law."
       ],
       "tryIt": "gas-laws",
-      "syllabus": "Use the molar volume of a gas under stated conditions.",
-      "check": true,
-      "checkNote": "2012 Q21 omits temperature and pressure. The display and narration state the assumption at s.t.p. that reproduces the key."
+      "syllabus": "Use the molar volume of a gas under stated conditions."
     },
     {
       "id": "mole-5",
@@ -643,7 +639,7 @@
           "page": 81,
           "keyPage": 83
         },
-        "prompt": "A gas occupies 10.0 dm³ at 4 atm and 273 °C. How many moles are present? (Molar volume at s.t.p. = 22.4 dm³/mol.)",
+        "prompt": "A given amount of gas occupies 10.0 dm³ at 4 atm and 273°C. The number of moles of the gas present is",
         "options": [
           "0.89 mol",
           "1.90 mol",
@@ -683,7 +679,8 @@
               }
             ]
           }
-        ]
+        ],
+        "afterOptions": "[Molar volume of a gas at stp. = 22.4 dm³]"
       },
       "jamb": [
         "Distinguish simple particle counts, mass conversions and volumes at s.t.p."
