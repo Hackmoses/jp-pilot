@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "subject": "geography",
+  "total": 4,
+  "clean": 4,
+  "needsReview": 0,
+  "clips": [
+    {
+      "clipId": "anim-geog-api-0036/1",
+      "path": "audio/anim-geog-api-0036/1.webm",
+      "animationId": "anim-geog-api-0036",
+      "step": 1,
+      "mode": "quick",
+      "source": "data/subjects/animations-geography.json",
+      "stepText": "First find the vertical rise by subtracting 300 metres from 540 metres, giving 240 metres.",
+      "mathToSpeechText": "First find the vertical rise by subtracting 300 metres from 540 metres, giving 240 metres.",
+      "spokenLine": "First find the vertical rise by subtracting three hundred metres from five hundred and forty metres, giving two hundred and forty metres.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-geog-api-0036/2",
+      "path": "audio/anim-geog-api-0036/2.webm",
+      "animationId": "anim-geog-api-0036",
+      "step": 2,
+      "mode": "quick",
+      "source": "data/subjects/animations-geography.json",
+      "stepText": "Convert the horizontal distance to metres. 4.8 kilometres times 1000 gives 4800 metres.",
+      "mathToSpeechText": "Convert the horizontal distance to metres. 4.8 kilometres times 1000 gives 4800 metres.",
+      "spokenLine": "Convert the horizontal distance to metres. four point eight kilometres times one thousand gives four thousand eight hundred metres.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-geog-api-0036/3",
+      "path": "audio/anim-geog-api-0036/3.webm",
+      "animationId": "anim-geog-api-0036",
+      "step": 3,
+      "mode": "quick",
+      "source": "data/subjects/animations-geography.json",
+      "stepText": "Gradient is vertical rise divided by horizontal distance, which is 240 over 4800.",
+      "mathToSpeechText": "Gradient is vertical rise divided by horizontal distance, which is 240 over 4800.",
+      "spokenLine": "Gradient is vertical rise divided by horizontal distance, which is two hundred and forty over four thousand eight hundred.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-geog-api-0036/4",
+      "path": "audio/anim-geog-api-0036/4.webm",
+      "animationId": "anim-geog-api-0036",
+      "step": 4,
+      "mode": "quick",
+      "source": "data/subjects/animations-geography.json",
+      "stepText": "Divide both numbers by 240 to get 1 over 20, or a ratio of 1 to 20.",
+      "mathToSpeechText": "Divide both numbers by 240 to get 1 over 20, or a ratio of 1 to 20.",
+      "spokenLine": "Divide both numbers by two hundred and forty to get one over twenty, or a ratio of one to twenty.",
+      "needsReview": false,
+      "issues": []
+    }
+  ]
+}
