@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 30,
+  "count": 40,
   "animations": [
     {
       "id": "anim-math-jamb-2015-002",
@@ -2448,6 +2448,820 @@
           "tag": "answer",
           "title": "Volume of prism",
           "narration": "The volume of the triangular prism is forty-eight cubic centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-010",
+      "questionId": "math-jamb-2018-010",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "5 − 4 = 1 part = ₦5,000",
+          "tag": "difference",
+          "title": "Value of one ratio part",
+          "narration": "The ratio four to five differs by one part, so one part equals five thousand naira."
+        },
+        {
+          "n": 2,
+          "display": "Total parts = 4 + 5 = 9",
+          "tag": "total parts",
+          "title": "Add ratio parts",
+          "narration": "Add four and five to find that the total profit is divided into nine equal parts."
+        },
+        {
+          "n": 3,
+          "display": "Total profit = 9 × 5,000",
+          "tag": "multiply",
+          "title": "Multiply by value per part",
+          "narration": "Multiply nine parts by five thousand naira per part."
+        },
+        {
+          "n": 4,
+          "display": "₦45,000 (option D)",
+          "tag": "answer",
+          "title": "Total profit",
+          "narration": "The total profit shared by the partners is forty-five thousand naira."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Smaller = 4 parts, Larger = 5 parts",
+          "tag": "ratio",
+          "title": "Represent shares in parts",
+          "narration": "With a ratio of four to five, the smaller share takes four equal parts and the larger share takes five equal parts."
+        },
+        {
+          "n": 2,
+          "display": "5 parts − 4 parts = 1 part",
+          "tag": "difference",
+          "title": "Find difference in parts",
+          "narration": "Subtract four parts from five parts to see that the larger share has one extra part."
+        },
+        {
+          "n": 3,
+          "display": "1 part = ₦5,000",
+          "tag": "unit part",
+          "title": "Equate to ₦5,000",
+          "narration": "Because the larger share is five thousand naira more than the smaller, one part must equal five thousand naira."
+        },
+        {
+          "n": 4,
+          "display": "Total parts = 4 + 5 = 9",
+          "tag": "sum",
+          "title": "Total number of parts",
+          "narration": "Add the two share parts together to get nine equal parts for the whole profit."
+        },
+        {
+          "n": 5,
+          "display": "Total = 9 × ₦5,000 = ₦45,000",
+          "tag": "multiply",
+          "title": "Calculate total profit",
+          "narration": "Multiply nine parts by five thousand naira to find the full profit."
+        },
+        {
+          "n": 6,
+          "display": "Check: 25,000 − 20,000 = 5,000",
+          "tag": "check",
+          "title": "Verify the shares",
+          "narration": "Check: four parts is twenty thousand and five parts is twenty-five thousand, which differ by five thousand and add to forty-five thousand."
+        },
+        {
+          "n": 7,
+          "display": "₦45,000 (option D)",
+          "tag": "answer",
+          "title": "Final total profit",
+          "narration": "The total profit is forty-five thousand naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-011",
+      "questionId": "math-jamb-2018-011",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Root 1 ⇒ factor is (x − 1)",
+          "tag": "factor",
+          "title": "Write known factor",
+          "narration": "Because one is a root, x minus one is a linear factor of the cubic polynomial."
+        },
+        {
+          "n": 2,
+          "display": "(x^{3} − 2x^{2} − 5x + 6) ÷ (x − 1) = x^{2} − x − 6",
+          "tag": "divide",
+          "title": "Divide out (x − 1)",
+          "narration": "Divide the cubic by x minus one to reduce it to the quadratic x squared minus x minus six."
+        },
+        {
+          "n": 3,
+          "display": "x^{2} − x − 6 = (x − 3)(x + 2) = 0",
+          "tag": "factorise",
+          "title": "Factorise quadratic quotient",
+          "narration": "Factorise x squared minus x minus six into x minus three times x plus two."
+        },
+        {
+          "n": 4,
+          "display": "3 and −2 (option C)",
+          "tag": "answer",
+          "title": "Remaining roots",
+          "narration": "Setting each factor to zero gives the other two roots, three and minus two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x = 1 is a root ⇒ (x − 1) divides cubic",
+          "tag": "factor theorem",
+          "title": "Use the factor theorem",
+          "narration": "Since x equals one solves the equation, the factor theorem guarantees x minus one divides the polynomial evenly."
+        },
+        {
+          "n": 2,
+          "display": "x^{3} − 2x^{2} − 5x + 6 = (x − 1)(x^{2} + kx − 6)",
+          "tag": "match ends",
+          "title": "Set up quotient template",
+          "narration": "Matching the x cubed and constant terms gives x squared at the front and minus six at the end of the quadratic factor."
+        },
+        {
+          "n": 3,
+          "display": "x^{2} term: k − 1 = −2 ⇒ k = −1",
+          "tag": "coefficient",
+          "title": "Find middle term",
+          "narration": "Comparing the x squared terms gives k minus one equals minus two, so k equals minus one."
+        },
+        {
+          "n": 4,
+          "display": "x^{2} − x − 6 = 0",
+          "tag": "quadratic",
+          "title": "Solve quadratic quotient",
+          "narration": "Check the x term: minus six minus minus one is minus five, confirming the quotient is x squared minus x minus six."
+        },
+        {
+          "n": 5,
+          "display": "(x − 3)(x + 2) = 0",
+          "tag": "factorise",
+          "title": "Factorise quadratic",
+          "narration": "Find two numbers multiplying to minus six and adding to minus one: minus three and plus two."
+        },
+        {
+          "n": 6,
+          "display": "x = 3 or x = −2",
+          "tag": "solve",
+          "title": "Set brackets to zero",
+          "narration": "Setting x minus three and x plus two each equal to zero gives x equals three and x equals minus two."
+        },
+        {
+          "n": 7,
+          "display": "3 and −2 (option C)",
+          "tag": "answer",
+          "title": "Other two roots",
+          "narration": "The other two roots of the equation are three and minus two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-016",
+      "questionId": "math-jamb-2018-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "59.81798 ≈ 59.8, 0.0746829 ≈ 0.0747",
+          "tag": "round",
+          "title": "Round to 3 sig figs",
+          "narration": "Round both numbers to three significant figures first, starting count at the first nonzero digit."
+        },
+        {
+          "n": 2,
+          "display": "59.8 × 0.0747 = 4.46706",
+          "tag": "multiply",
+          "title": "Multiply rounded values",
+          "narration": "Multiply fifty-nine point eight by zero point zero seven four seven to obtain four point four six seven zero six."
+        },
+        {
+          "n": 3,
+          "display": "4.46706 ≈ 4.47",
+          "tag": "round result",
+          "title": "Round product to 3 sig figs",
+          "narration": "Because the fourth digit seven is at least five, round up to four point four seven."
+        },
+        {
+          "n": 4,
+          "display": "4.47 (option C)",
+          "tag": "answer",
+          "title": "Product to 3 s.f.",
+          "narration": "To three significant figures, the product is four point four seven."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "59.81798 → 59.8 (3 s.f.)",
+          "tag": "round first",
+          "title": "Round 59.81798 to 3 s.f.",
+          "narration": "The first three significant digits are five, nine, and eight; the next digit one is less than five, so keep fifty-nine point eight."
+        },
+        {
+          "n": 2,
+          "display": "0.0746829 → 0.0747 (3 s.f.)",
+          "tag": "round second",
+          "title": "Round 0.0746829 to 3 s.f.",
+          "narration": "Leading zeros do not count as significant figures, so count seven, four, six; the next digit eight rounds six up to seven."
+        },
+        {
+          "n": 3,
+          "display": "59.8 × 0.0747 = 4.46706",
+          "tag": "multiply",
+          "title": "Multiply the rounded numbers",
+          "narration": "Multiply the two rounded numbers: five hundred ninety-eight times seven hundred forty-seven gives four hundred forty-six thousand seven hundred six, placed at five decimal places."
+        },
+        {
+          "n": 4,
+          "display": "4.46|706 → 4.47",
+          "tag": "final round",
+          "title": "Round product to 3 s.f.",
+          "narration": "Keep the first three digits four, four, six; since the fourth digit is seven, round six up to seven."
+        },
+        {
+          "n": 5,
+          "display": "4.47 (option C)",
+          "tag": "answer",
+          "title": "Final product",
+          "narration": "Reporting the product to three significant figures gives four point four seven."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-017",
+      "questionId": "math-jamb-2018-017",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "(6 − 2) × 180° = 720°",
+          "tag": "sum",
+          "title": "Hexagon angle sum",
+          "narration": "For a six-sided hexagon, use n minus two times one hundred and eighty degrees to get seven hundred and twenty degrees."
+        },
+        {
+          "n": 2,
+          "display": "5x + 170° = 720°",
+          "tag": "equation",
+          "title": "Sum the six angles",
+          "narration": "Add the five equal angles x and the given one hundred and seventy degree angle to equal seven hundred and twenty degrees."
+        },
+        {
+          "n": 3,
+          "display": "5x = 550° ⇒ x = 110°",
+          "tag": "solve",
+          "title": "Solve for x",
+          "narration": "Subtract one hundred and seventy from both sides to get five hundred and fifty, then divide by five."
+        },
+        {
+          "n": 4,
+          "display": "110° (option B)",
+          "tag": "answer",
+          "title": "Each equal angle",
+          "narration": "Each of the five equal angles measures one hundred and ten degrees."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Sum = (n − 2) × 180° = (6 − 2) × 180° = 720°",
+          "tag": "formula",
+          "title": "Interior sum of a hexagon",
+          "narration": "A hexagon has six sides, so four triangles fit inside, giving a total interior angle sum of seven hundred and twenty degrees."
+        },
+        {
+          "n": 2,
+          "display": "5x + 170° = 720°",
+          "tag": "equation",
+          "title": "Write angle equation",
+          "narration": "Let each of the five equal angles be x; adding them to one hundred and seventy degrees must total seven hundred and twenty degrees."
+        },
+        {
+          "n": 3,
+          "display": "5x = 720° − 170° = 550°",
+          "tag": "subtract",
+          "title": "Subtract 170° from both sides",
+          "narration": "Subtract one hundred and seventy degrees from both sides to find what the five equal angles share."
+        },
+        {
+          "n": 4,
+          "display": "x = \\frac{550°}{5} = 110°",
+          "tag": "divide",
+          "title": "Divide both sides by 5",
+          "narration": "Divide five hundred and fifty degrees equally by five to get one hundred and ten degrees."
+        },
+        {
+          "n": 5,
+          "display": "Check: 5(110°) + 170° = 550° + 170° = 720°",
+          "tag": "check",
+          "title": "Verify total angle sum",
+          "narration": "Check by adding five angles of one hundred and ten degrees plus one hundred and seventy degrees to confirm seven hundred and twenty degrees."
+        },
+        {
+          "n": 6,
+          "display": "110° (option B)",
+          "tag": "answer",
+          "title": "Final angle",
+          "narration": "Each of those five equal angles is one hundred and ten degrees."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-019",
+      "questionId": "math-jamb-2018-019",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "241_{5} = 2(5^{2}) + 4(5^{1}) + 1 = 71_{10}",
+          "tag": "to base 10",
+          "title": "Convert to base ten",
+          "narration": "Expand two four one base five in powers of five to get fifty plus twenty plus one, which is seventy-one."
+        },
+        {
+          "n": 2,
+          "display": "71 ÷ 8 = 8 r 7, 8 ÷ 8 = 1 r 0, 1 ÷ 8 = 0 r 1",
+          "tag": "to base 8",
+          "title": "Divide repeatedly by 8",
+          "narration": "Divide seventy-one repeatedly by eight and record the remainders seven, zero, and one."
+        },
+        {
+          "n": 3,
+          "display": "Read remainders upwards: 1 0 7",
+          "tag": "collect",
+          "title": "Write base 8 digits",
+          "narration": "Read the remainders from bottom to top, keeping the zero in the eights column."
+        },
+        {
+          "n": 4,
+          "display": "107_{8} (option B)",
+          "tag": "answer",
+          "title": "Result in base 8",
+          "narration": "Two four one in base five equals one zero seven in base eight."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "241_{5} = 2 × 5^{2} + 4 × 5^{1} + 1 × 5^{0}",
+          "tag": "expand",
+          "title": "Expand using powers of 5",
+          "narration": "Convert from base five to base ten first as a bridge by multiplying each digit by its power of five."
+        },
+        {
+          "n": 2,
+          "display": "2(25) + 4(5) + 1 = 50 + 20 + 1 = 71_{10}",
+          "tag": "base 10",
+          "title": "Sum base-ten value",
+          "narration": "Evaluate the terms: fifty plus twenty plus one equals seventy-one in base ten."
+        },
+        {
+          "n": 3,
+          "display": "71 ÷ 8 = 8 remainder 7",
+          "tag": "div 1",
+          "title": "First division by 8",
+          "narration": "Now convert seventy-one to base eight by dividing repeatedly by eight; seventy-one divided by eight gives eight remainder seven."
+        },
+        {
+          "n": 4,
+          "display": "8 ÷ 8 = 1 r 0, 1 ÷ 8 = 0 r 1",
+          "tag": "div 2",
+          "title": "Continue dividing by 8",
+          "narration": "Eight divided by eight is one remainder zero, and one divided by eight is zero remainder one."
+        },
+        {
+          "n": 5,
+          "display": "Check: 1(64) + 0(8) + 7 = 71",
+          "tag": "check",
+          "title": "Verify in base 8",
+          "narration": "Read the remainders upwards as one zero seven, and verify one times sixty-four plus seven equals seventy-one."
+        },
+        {
+          "n": 6,
+          "display": "107_{8} (option B)",
+          "tag": "answer",
+          "title": "Base eight numeral",
+          "narration": "Converting two four one base five to base eight gives one zero seven base eight."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-025",
+      "questionId": "math-jamb-2018-025",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = 4 = 2^{2}, r = \\frac{8}{4} = 2",
+          "tag": "parameters",
+          "title": "Identify a and ratio r",
+          "narration": "Find the first term four and common ratio two by dividing eight by four."
+        },
+        {
+          "n": 2,
+          "display": "T_{n} = ar^{n − 1}",
+          "tag": "formula",
+          "title": "GP nth term formula",
+          "narration": "State the geometric progression nth term formula a times r to the power n minus one."
+        },
+        {
+          "n": 3,
+          "display": "T_{11} = 2^{2} × 2^{11 − 1} = 2^{2} × 2^{10}",
+          "tag": "substitute",
+          "title": "Substitute n = 11",
+          "narration": "For the eleventh term, multiply two squared by two to the tenth power."
+        },
+        {
+          "n": 4,
+          "display": "2^{12} (option B)",
+          "tag": "answer",
+          "title": "Eleventh term",
+          "narration": "Adding exponents two and ten gives two to the power twelve."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "a = 4, r = \\frac{8}{4} = 2",
+          "tag": "identify",
+          "title": "Find first term and ratio",
+          "narration": "Read the first term a equals four, and confirm each term doubles so the common ratio r is two."
+        },
+        {
+          "n": 2,
+          "display": "T_{n} = a r^{n − 1}",
+          "tag": "formula",
+          "title": "State GP term formula",
+          "narration": "To reach the nth term from the first term, multiply by the common ratio n minus one times."
+        },
+        {
+          "n": 3,
+          "display": "T_{11} = 4 × 2^{11 − 1} = 4 × 2^{10}",
+          "tag": "substitute",
+          "title": "Substitute n = 11",
+          "narration": "Put eleven into n minus one to see that we multiply four by two to the tenth power."
+        },
+        {
+          "n": 4,
+          "display": "4 = 2^{2} ⇒ T_{11} = 2^{2} × 2^{10}",
+          "tag": "same base",
+          "title": "Write 4 as a power of 2",
+          "narration": "Rewrite four as two squared so both factors share the same base two."
+        },
+        {
+          "n": 5,
+          "display": "2^{2 + 10} = 2^{12}",
+          "tag": "indices",
+          "title": "Add the exponents",
+          "narration": "By the multiplication law of indices, keep base two and add exponents two and ten."
+        },
+        {
+          "n": 6,
+          "display": "2^{12} (option B)",
+          "tag": "answer",
+          "title": "Eleventh term",
+          "narration": "The eleventh term of the geometric progression is two to the power twelve."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-027",
+      "questionId": "math-jamb-2018-027",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "^{10}C_{6} = \\frac{10!}{6! 4!}",
+          "tag": "formula",
+          "title": "Use combination formula",
+          "narration": "Order of subjects does not matter, so use ten choose six."
+        },
+        {
+          "n": 2,
+          "display": "= \\frac{10 × 9 × 8 × 7}{4 × 3 × 2 × 1}",
+          "tag": "cancel",
+          "title": "Cancel 6 factorial",
+          "narration": "Cancel six factorial from top and bottom, leaving ten times nine times eight times seven over four factorial."
+        },
+        {
+          "n": 3,
+          "display": "4 × 2 = 8, \\frac{9}{3} = 3 ⇒ 10 × 3 × 7",
+          "tag": "simplify",
+          "title": "Reduce factors",
+          "narration": "Cancel four times two with eight, and divide nine by three to leave ten times three times seven."
+        },
+        {
+          "n": 4,
+          "display": "210 (option D)",
+          "tag": "answer",
+          "title": "Number of ways",
+          "narration": "Ten times twenty-one equals two hundred and ten ways."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "^{n}C_{r} = \\frac{n!}{r!(n − r)!}",
+          "tag": "formula",
+          "title": "State combination formula",
+          "narration": "Because choosing a set of exam subjects has no ranking or order, apply the combination formula."
+        },
+        {
+          "n": 2,
+          "display": "^{10}C_{6} = \\frac{10!}{6! 4!}",
+          "tag": "substitute",
+          "title": "Substitute n = 10 and r = 6",
+          "narration": "Put ten for total subjects and six for chosen subjects, giving ten minus six equals four factorial too."
+        },
+        {
+          "n": 3,
+          "display": "= \\frac{10 × 9 × 8 × 7 × 6!}{6! × 4 × 3 × 2 × 1}",
+          "tag": "expand",
+          "title": "Expand to 6 factorial",
+          "narration": "Expand ten factorial down to six factorial so it cancels directly with six factorial in the denominator."
+        },
+        {
+          "n": 4,
+          "display": "= \\frac{10 × 9 × 8 × 7}{24} = 10 × 3 × 7",
+          "tag": "cancel",
+          "title": "Cancel before multiplying",
+          "narration": "Cancel four times two against eight, and divide nine by three to simplify cleanly to ten times three times seven."
+        },
+        {
+          "n": 5,
+          "display": "10 × 21 = 210",
+          "tag": "multiply",
+          "title": "Multiply remaining factors",
+          "narration": "Three times seven is twenty-one, and ten times twenty-one gives two hundred and ten."
+        },
+        {
+          "n": 6,
+          "display": "210 (option D)",
+          "tag": "answer",
+          "title": "Total selections",
+          "narration": "Six subjects can be selected from ten in two hundred and ten ways."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-036",
+      "questionId": "math-jamb-2018-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V = \\frac{2}{3}πr^{3} = 718\\frac{2}{3} = \\frac{2156}{3}",
+          "tag": "formula",
+          "title": "Hemisphere volume formula",
+          "narration": "Equate the hemisphere volume formula two thirds pi r cubed to the improper fraction two thousand one hundred and fifty-six over three."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{2}{3} × \\frac{22}{7} × r^{3} = \\frac{2156}{3}",
+          "tag": "substitute",
+          "title": "Substitute \\frac{22}{7} for π",
+          "narration": "Substitute twenty-two over seven for pi and cancel three from both denominators."
+        },
+        {
+          "n": 3,
+          "display": "r^{3} = \\frac{2156 × 7}{44} = 49 × 7 = 343",
+          "tag": "solve r3",
+          "title": "Isolate r cubed",
+          "narration": "Multiply by seven and divide by forty-four to find r cubed equals three hundred and forty-three."
+        },
+        {
+          "n": 4,
+          "display": "r = 7.0 cm (option C)",
+          "tag": "answer",
+          "title": "Cube root gives radius",
+          "narration": "Taking the cube root of three hundred and forty-three gives seven point zero centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "718\\frac{2}{3} = \\frac{718 × 3 + 2}{3} = \\frac{2156}{3}",
+          "tag": "improper",
+          "title": "Convert mixed number",
+          "narration": "First change seven hundred and eighteen and two thirds into an improper fraction so the denominator three matches the formula."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{2}{3}πr^{3} = \\frac{2156}{3}",
+          "tag": "formula",
+          "title": "Equate to hemisphere formula",
+          "narration": "A hemisphere is half a sphere, so its volume is two thirds pi r cubed."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2}{3} × \\frac{22}{7} × r^{3} = \\frac{2156}{3}",
+          "tag": "substitute",
+          "title": "Use \\frac{22}{7} for π",
+          "narration": "Put in twenty-two over seven for pi, and multiply both sides by three to clear the denominator three."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{44}{7} r^{3} = 2156 ⇒ r^{3} = \\frac{2156 × 7}{44}",
+          "tag": "isolate",
+          "title": "Solve for r cubed",
+          "narration": "Multiply both sides by seven and divide by forty-four to isolate r cubed."
+        },
+        {
+          "n": 5,
+          "display": "r^{3} = 49 × 7 = 343",
+          "tag": "simplify",
+          "title": "Divide 2156 by 44",
+          "narration": "Two thousand one hundred and fifty-six divided by forty-four is forty-nine, and forty-nine times seven is three hundred and forty-three."
+        },
+        {
+          "n": 6,
+          "display": "343 = 7^{3} ⇒ r = 7.0",
+          "tag": "cube root",
+          "title": "Take the cube root",
+          "narration": "Since seven cubed is three hundred and forty-three, the cube root gives seven point zero."
+        },
+        {
+          "n": 7,
+          "display": "7.0 cm (option C)",
+          "tag": "answer",
+          "title": "Radius to 1 decimal place",
+          "narration": "To one decimal place, the radius of the hemisphere is seven point zero centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-038",
+      "questionId": "math-jamb-2018-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Unit mixture = 2.5 + 4.5 = 7.0 kg",
+          "tag": "total",
+          "title": "Total mass per ratio unit",
+          "narration": "Add two point five kilograms of sugar and four point five kilograms of flour to get seven kilograms of total mixture."
+        },
+        {
+          "n": 2,
+          "display": "Sugar fraction = \\frac{2.5}{7}",
+          "tag": "fraction",
+          "title": "Sugar share of mixture",
+          "narration": "Write sugar as a fraction of the combined mixture, two point five over seven."
+        },
+        {
+          "n": 3,
+          "display": "Sugar = 24.5 × \\frac{2.5}{7} = 3.5 × 2.5",
+          "tag": "multiply",
+          "title": "Multiply by batch mass",
+          "narration": "Divide twenty-four point five by seven to get three point five batches, then multiply by two point five."
+        },
+        {
+          "n": 4,
+          "display": "8.75 kg (option C)",
+          "tag": "answer",
+          "title": "Mass of sugar",
+          "narration": "Three point five times two point five equals eight point seven five kilograms of sugar."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2.5 kg sugar + 4.5 kg flour = 7.0 kg mixture",
+          "tag": "combine",
+          "title": "Find total recipe unit",
+          "narration": "Because twenty-four point five kilograms is the whole mixture, add sugar and flour first to get seven kilograms per recipe unit."
+        },
+        {
+          "n": 2,
+          "display": "Number of units = \\frac{24.5}{7} = 3.5",
+          "tag": "scale",
+          "title": "Divide batch by 7 kg",
+          "narration": "Find how many seven-kilogram units make twenty-four point five kilograms: twenty-four point five divided by seven is three point five."
+        },
+        {
+          "n": 3,
+          "display": "Sugar = 3.5 × 2.5",
+          "tag": "multiply",
+          "title": "Scale up the sugar",
+          "narration": "Multiply each unit's two point five kilograms of sugar by the scale factor three point five."
+        },
+        {
+          "n": 4,
+          "display": "3.5 × 2.5 = 8.75 kg",
+          "tag": "compute",
+          "title": "Evaluate the product",
+          "narration": "Three point five times two is seven, plus half of three point five which is one point seven five, giving eight point seven five."
+        },
+        {
+          "n": 5,
+          "display": "Check: 3.5 × 4.5 = 15.75; 8.75 + 15.75 = 24.5",
+          "tag": "check",
+          "title": "Check flour plus sugar",
+          "narration": "Check: flour is three point five times four point five equals fifteen point seven five, and eight point seven five plus fifteen point seven five totals twenty-four point five."
+        },
+        {
+          "n": 6,
+          "display": "8.75 kg (option C)",
+          "tag": "answer",
+          "title": "Sugar in the batch",
+          "narration": "There are eight point seven five kilograms of sugar in the batch."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-039",
+      "questionId": "math-jamb-2018-039",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "t_{Y} = \\frac{150}{60} = 2.5 h = 150 min",
+          "tag": "time Y",
+          "title": "Find Y's travel time",
+          "narration": "Divide one hundred and fifty kilometres by sixty kilometres per hour to find Y took two and a half hours, or one hundred and fifty minutes."
+        },
+        {
+          "n": 2,
+          "display": "t_{X} = 150 − 25 = 125 min = \\frac{25}{12} h",
+          "tag": "time X",
+          "title": "Subtract 25 minutes for X",
+          "narration": "X arrived twenty-five minutes earlier, so X took one hundred and twenty-five minutes, which is twenty-five twelfths of an hour."
+        },
+        {
+          "n": 3,
+          "display": "v_{X} = \\frac{150}{\\frac{25}{12}} = 150 × \\frac{12}{25}",
+          "tag": "speed",
+          "title": "Distance divided by time",
+          "narration": "Divide one hundred and fifty kilometres by twenty-five twelfths by multiplying by twelve twenty-fifths."
+        },
+        {
+          "n": 4,
+          "display": "72 km/h (option B)",
+          "tag": "answer",
+          "title": "X's average speed",
+          "narration": "Six times twelve equals seventy-two kilometres per hour."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Time = \\frac{Distance}{Speed} ⇒ t_{Y} = \\frac{150}{60} = 2.5 h",
+          "tag": "time Y",
+          "title": "Calculate Y's time in hours",
+          "narration": "Start with Y because both distance and speed are known; dividing one hundred and fifty by sixty gives two point five hours."
+        },
+        {
+          "n": 2,
+          "display": "t_{Y} = 2.5 × 60 = 150 min",
+          "tag": "minutes",
+          "title": "Convert Y's time to minutes",
+          "narration": "Convert two point five hours to one hundred and fifty minutes so we can easily subtract twenty-five minutes."
+        },
+        {
+          "n": 3,
+          "display": "t_{X} = 150 − 25 = 125 min",
+          "tag": "subtract",
+          "title": "Find X's time in minutes",
+          "narration": "Since X arrived twenty-five minutes before Y, X travelled for one hundred and twenty-five minutes."
+        },
+        {
+          "n": 4,
+          "display": "t_{X} = \\frac{125}{60} = \\frac{25}{12} h",
+          "tag": "hours",
+          "title": "Convert back to hours",
+          "narration": "Divide by sixty and cancel five to express X's travel time in hours as twenty-five twelfths."
+        },
+        {
+          "n": 5,
+          "display": "v_{X} = \\frac{150}{\\frac{25}{12}} = 150 × \\frac{12}{25} = 6 × 12 = 72",
+          "tag": "divide",
+          "title": "Calculate X's average speed",
+          "narration": "Divide distance one hundred and fifty by X's time in hours; flipping the fraction lets one hundred and fifty divide by twenty-five to give six, times twelve equals seventy-two."
+        },
+        {
+          "n": 6,
+          "display": "72 km/h (option B)",
+          "tag": "answer",
+          "title": "X's speed",
+          "narration": "Car X's average speed is seventy-two kilometres per hour."
         }
       ]
     }
