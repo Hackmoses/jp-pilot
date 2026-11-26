@@ -18,6 +18,16 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
   const hasSyllabus = getSections(subject).length > 0
   const chapters = getChapters(subject, questions)
   const eligible = practicePool(questions, settings).length
+  // An empty list means every chapter. Ticking them all one by one lands on the same state.
+  const chapterIds = chapters.map(({ id }) => id)
+  const picked = settings.chapters.filter((id) => chapterIds.includes(id))
+  const allChapters = picked.length === 0 || picked.length === chapterIds.length
+  const toggleChapter = (id: string) => {
+    const current = allChapters ? chapterIds : picked
+    const next = current.includes(id) ? current.filter((c) => c !== id) : [...current, id]
+    if (!next.length) return current // keep at least one chapter ticked
+    return next.length === chapterIds.length ? [] : next
+  }
   const isCustomCount =
     settings.countMode === 'custom' ||
     (settings.count !== 5 && settings.count !== 10 && settings.count !== 'all')
@@ -57,16 +67,14 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
         {chapters.length > 0 && <fieldset class="jp-mode-section">
           <legend class="jp-revisit-title">{hasSyllabus ? 'Chapters' : 'Topics'}</legend>
           <div class="jp-mode-section-body">
-            <div><button class={`jp-btn ${settings.chapters.length ? '' : 'jp-btn--primary'}`}
-              aria-pressed={settings.chapters.length === 0} onClick={() => apply({ chapters: [] })}>
-              {hasSyllabus ? 'All chapters' : 'All topics'}
+            <div><button type="button" class={`jp-btn ${allChapters ? 'jp-btn--primary' : ''}`}
+              aria-pressed={allChapters} onClick={() => apply({ chapters: [] })}>
+              {allChapters ? (hasSyllabus ? 'All chapters ✓' : 'All topics ✓') : 'Select all'}
             </button></div>
             <div class="jp-mode-checks">
               {chapters.map((chapter) => <label key={chapter.id} class="jp-mode-check">
-                <input type="checkbox" checked={settings.chapters.includes(chapter.id)} onChange={() =>
-                  apply({ chapters: settings.chapters.includes(chapter.id)
-                    ? settings.chapters.filter((id) => id !== chapter.id)
-                    : [...settings.chapters, chapter.id] })} />
+                <input type="checkbox" checked={allChapters || settings.chapters.includes(chapter.id)} onChange={() =>
+                  apply({ chapters: toggleChapter(chapter.id) })} />
                 <span>{chapter.title}</span>
               </label>)}
             </div>
