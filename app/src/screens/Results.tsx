@@ -17,7 +17,7 @@ export function Results({ mode, params }: { mode: TestMode; params: URLSearchPar
   const status = useSubjects(offline ? [] : result?.subjects ?? [])
   const isExam = mode === 'exam'
   const title = isExam ? 'Exam results' : 'Practice summary'
-  const back = isExam ? '#/exam' : '#/practice?subject=' + encodeURIComponent(result?.subjects[0] ?? 'chemistry')
+  const back = result?.passageId ? '#/practice/passages' : isExam ? '#/exam' : '#/practice?subject=' + encodeURIComponent(result?.subjects[0] ?? 'chemistry')
   if (!result || (id && result.id !== id) || status !== 'ready') return <Panel title={title} back={back}>
     <p class="jp-mode-lead">{status === 'loading' ? 'Loading questions…'
       : status === 'error' ? 'Could not load questions.' : 'No saved result found.'}</p>
@@ -37,7 +37,10 @@ export function Results({ mode, params }: { mode: TestMode; params: URLSearchPar
         <strong class="jp-summary-score">{score.correct} of {score.total}{isExam && ` · ${score.percent}%`}</strong>
         <p class="jp-summary-sub">{score.answered} answered · {formatTime(result.finishedAt - result.startedAt)} taken</p>
       </section>
-      {mistakes.length > 0 && <button class="jp-btn jp-btn--primary jp-btn--full" onClick={() => retryMistakes(mistakes)}>
+      {mistakes.length > 0 && <button class="jp-btn jp-btn--primary jp-btn--full" onClick={() => {
+        if (result.passageId) window.location.hash = '#/practice/passages?set=' + result.passageId + '&retry=1'
+        else retryMistakes(mistakes)
+      }}>
         Retry my mistakes
       </button>}
       {isExam && <section class="jp-revisit">

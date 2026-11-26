@@ -18,6 +18,7 @@ function screenView<Props extends object>(module: ReturnType<typeof lazyView<Pro
 const Study = screenView(lazyView(() => import('./screens/Study').then(({ Study }) => Study)), 'Study')
 const Subjects = screenView(lazyView(() => import('./screens/Subjects').then(({ Subjects }) => Subjects)), 'Subjects')
 const PracticeSetup = screenView(lazyView(() => import('./screens/PracticeSetup').then(({ PracticeSetup }) => PracticeSetup)), 'Practice')
+const ReadingPassages = screenView(lazyView(() => import('./screens/ReadingPassages').then(({ ReadingPassages }) => ReadingPassages)), 'Reading passages')
 const PracticeRun = screenView(lazyView(() => import('./screens/PracticeRun').then(({ PracticeRun }) => PracticeRun)), 'Practice')
 const ExamSetup = screenView(lazyView(() => import('./screens/ExamSetup').then(({ ExamSetup }) => ExamSetup)), 'Exam')
 const ExamRun = screenView(examRun, 'Exam')
@@ -71,6 +72,8 @@ export function App() {
     case '#/exam':
     case '#/exam/rules':
       return <ExamSetup key={route} rules={screen === '#/exam/rules'} />
+    case '#/practice/passages':
+      return <ReadingPassages key={route} setId={params.get('set')} retry={params.has('retry')} />
     case '#/practice/run':
       return <PracticeRun key={route} />
     case '#/exam/run':

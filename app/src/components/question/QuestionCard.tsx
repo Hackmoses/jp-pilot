@@ -21,6 +21,8 @@ export interface QuestionCardProps {
   full?: boolean
   onFull?: () => void
   learnHref?: string
+  verdictReason?: string
+  sourceLabel?: string
 }
 
 export function QuestionCard({
@@ -37,6 +39,8 @@ export function QuestionCard({
   full = false,
   onFull,
   learnHref,
+  verdictReason,
+  sourceLabel: sourceOverride,
 }: QuestionCardProps) {
   const answered = !exam && (pickedId !== null || reveal)
   const isCorrect = answered && pickedId === question.answerId
@@ -80,7 +84,7 @@ export function QuestionCard({
 
   const hasVisual = question.figure || hasMatrixNotation(question.stem) ||
     options.some((option) => option.figure || hasMatrixNotation(option.text))
-  const sourceLabel = exam ? null : getQuestionSourceLabel(question)
+  const sourceLabel = exam ? null : (sourceOverride ?? getQuestionSourceLabel(question))
 
   return (
     <>
@@ -123,8 +127,8 @@ export function QuestionCard({
             <span class="jp-result-title">
               {isCorrect ? 'Correct.' : compact ? `Not quite. The answer is ${correctLetter}.` : `Not quite. You chose ${pickedLetter}.`}
             </span>
-            <span class="jp-result-sub">{compact ? (isCorrect ? 'Well done. Keep going.' : 'This question comes back in your next session.')
-              : reveal && !isCorrect ? 'Read why under your answer.' : result.subtitle}</span>
+            <span class="jp-result-sub">{verdictReason ?? (compact ? (isCorrect ? 'Well done. Keep going.' : 'This question comes back in your next session.')
+              : reveal && !isCorrect ? 'Read why under your answer.' : result.subtitle)}</span>
           </div>
         </div>
       )}
