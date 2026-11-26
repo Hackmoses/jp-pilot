@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 29,
+  "count": 39,
   "animations": [
     {
       "id": "anim-phys-jamb-2012-022",
@@ -1885,6 +1885,680 @@
           "tag": "calculate the coefficient",
           "title": "Calculate the coefficient",
           "narration": "Divide the friction force by the normal reaction. The newton units cancel."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-015",
+      "questionId": "phys-jamb-2008-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x = \\frac{5}{100} = 0.05 m",
+          "tag": "convert the compression",
+          "title": "Convert the compression",
+          "narration": "Use metres because the spring constant is measured in newtons per metre."
+        },
+        {
+          "n": 2,
+          "display": "E = \\frac{1}{2}kx^{2}",
+          "tag": "use the elastic energy formula",
+          "title": "Use the elastic energy formula",
+          "narration": "The force increases from zero as the spring compresses. The work done is the area of the triangle under the force-compression graph."
+        },
+        {
+          "n": 3,
+          "display": "E = \\frac{1}{2} × 500 × 0.0025 = 0.625 J (option A)",
+          "tag": "calculate the stored energy",
+          "title": "Calculate the stored energy",
+          "narration": "Multiply half the spring constant by the squared compression. The spring stores zero point six two five joules."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "k = 500 N/m, x = 5 cm",
+          "tag": "read the spring data",
+          "title": "Read the spring data",
+          "narration": "The five centimetres is how far the spring is compressed from its natural length. That change in length determines the elastic energy."
+        },
+        {
+          "n": 2,
+          "display": "x = \\frac{5}{100} = 0.05 m",
+          "tag": "convert the compression",
+          "title": "Convert the compression",
+          "narration": "Use metres because the spring constant is measured in newtons per metre."
+        },
+        {
+          "n": 3,
+          "display": "E = \\frac{1}{2}kx^{2}",
+          "tag": "use the elastic energy formula",
+          "title": "Use the elastic energy formula",
+          "narration": "The force increases from zero as the spring compresses. The work done is the area of the triangle under the force-compression graph."
+        },
+        {
+          "n": 4,
+          "display": "x^{2} = (0.05)^{2} = 0.0025 m^{2}",
+          "tag": "square the compression",
+          "title": "Square the compression",
+          "narration": "Square the compression in metres before multiplying by the spring constant."
+        },
+        {
+          "n": 5,
+          "display": "E = \\frac{1}{2} × 500 × 0.0025 = 0.625 J (option A)",
+          "tag": "calculate the stored energy",
+          "title": "Calculate the stored energy",
+          "narration": "Multiply half the spring constant by the squared compression. The spring stores zero point six two five joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-015",
+      "questionId": "phys-jamb-2009-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = kx ⇒ k = \\frac{ΔF}{Δx}",
+          "tag": "link the slope to hooke's law",
+          "title": "Link the slope to Hooke's law",
+          "narration": "The force is proportional to extension on the straight part of the graph, so the gradient is the spring constant."
+        },
+        {
+          "n": 2,
+          "display": "ΔF = 120 − 0 = 120 N, Δx = 6 − 0 = 6 m",
+          "tag": "find rise and run",
+          "title": "Find rise and run",
+          "narration": "Subtract the first reading from the second on each axis. We can use the two marked points without needing the intermediate readings."
+        },
+        {
+          "n": 3,
+          "display": "k = \\frac{120}{6} = 20 N/m (option A)",
+          "tag": "calculate the spring constant",
+          "title": "Calculate the spring constant",
+          "narration": "The force increases by twenty newtons for each metre of extension."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "(0 m, 0 N) and (6 m, 120 N)",
+          "tag": "read two points from the graph",
+          "title": "Read two points from the graph",
+          "narration": "The origin sits where both axes read zero. The rightmost marked point lines up with six metres on the extension axis and one hundred and twenty newtons on the force axis."
+        },
+        {
+          "n": 2,
+          "display": "F = kx ⇒ k = \\frac{ΔF}{Δx}",
+          "tag": "link the slope to hooke's law",
+          "title": "Link the slope to Hooke's law",
+          "narration": "The force is proportional to extension on the straight part of the graph, so the gradient is the spring constant."
+        },
+        {
+          "n": 3,
+          "display": "ΔF = 120 − 0 = 120 N, Δx = 6 − 0 = 6 m",
+          "tag": "find rise and run",
+          "title": "Find rise and run",
+          "narration": "Subtract the first reading from the second on each axis. We can use the two marked points without needing the intermediate readings."
+        },
+        {
+          "n": 4,
+          "display": "k = \\frac{120}{6} = 20 N/m (option A)",
+          "tag": "calculate the spring constant",
+          "title": "Calculate the spring constant",
+          "narration": "The force increases by twenty newtons for each metre of extension."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2005-046",
+      "questionId": "phys-jamb-2005-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = ρV",
+          "tag": "convert density to mass",
+          "title": "Convert density to mass",
+          "narration": "Density is mass per unit volume. Multiplying by volume gives the mass of each sample."
+        },
+        {
+          "n": 2,
+          "display": "m_{total} = 200 × 3 + 150 × 7 = 1650 kg",
+          "tag": "find and add the masses",
+          "title": "Find and add the masses",
+          "narration": "Liquid W contributes six hundred kilograms, and liquid L contributes one thousand and fifty kilograms."
+        },
+        {
+          "n": 3,
+          "display": "ρ = \\frac{1650}{10} = 165 kg/m³ (option B)",
+          "tag": "calculate mixture density",
+          "title": "Calculate mixture density",
+          "narration": "Divide total mass by total volume. This gives one hundred and sixty-five kilograms per cubic metre."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{W} = 3 m^{3}, V_{L} = 7 m^{3}",
+          "tag": "read both liquid samples",
+          "title": "Read both liquid samples",
+          "narration": "The liquids occupy different volumes and have different densities. Find each mass before adding them."
+        },
+        {
+          "n": 2,
+          "display": "m = ρV",
+          "tag": "convert density to mass",
+          "title": "Convert density to mass",
+          "narration": "Density is mass per unit volume. Multiplying by volume gives the mass of each sample."
+        },
+        {
+          "n": 3,
+          "display": "m_{total} = 200 × 3 + 150 × 7 = 1650 kg",
+          "tag": "find and add the masses",
+          "title": "Find and add the masses",
+          "narration": "Liquid W contributes six hundred kilograms, and liquid L contributes one thousand and fifty kilograms."
+        },
+        {
+          "n": 4,
+          "display": "V_{total} = 3 + 7 = 10 m^{3}",
+          "tag": "find the total volume",
+          "title": "Find the total volume",
+          "narration": "Use the usual question assumption that the volumes add when the liquids are mixed."
+        },
+        {
+          "n": 5,
+          "display": "ρ = \\frac{1650}{10} = 165 kg/m³ (option B)",
+          "tag": "calculate mixture density",
+          "title": "Calculate mixture density",
+          "narration": "Divide total mass by total volume. This gives one hundred and sixty-five kilograms per cubic metre."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-017",
+      "questionId": "phys-jamb-2009-017",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "1000 × 0.50Vg = ρ_{g} × 0.40Vg",
+          "tag": "equate the upthrusts",
+          "title": "Equate the upthrusts",
+          "narration": "In each liquid, the upthrust equals the sphere's unchanged weight. Use the weight of the displaced liquid for each upthrust."
+        },
+        {
+          "n": 2,
+          "display": "1000 × 0.50 = ρ_{g} × 0.40",
+          "tag": "cancel the common factors",
+          "title": "Cancel the common factors",
+          "narration": "Both expressions contain the total sphere volume and the same acceleration due to gravity, so neither value has to be known."
+        },
+        {
+          "n": 3,
+          "display": "ρ_{g} = \\frac{500}{0.40} = 1250 kg/m³ (option B)",
+          "tag": "find the density",
+          "title": "Find the density",
+          "narration": "Five hundred divided by zero point four gives one thousand two hundred and fifty kilograms per cubic metre."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Water: 50%, glycerine: 40%",
+          "tag": "read the submerged fractions",
+          "title": "Read the submerged fractions",
+          "narration": "The same sphere floats in both liquids. It displaces half its volume in water and four tenths of its volume in glycerine."
+        },
+        {
+          "n": 2,
+          "display": "1000 × 0.50Vg = ρ_{g} × 0.40Vg",
+          "tag": "equate the upthrusts",
+          "title": "Equate the upthrusts",
+          "narration": "In each liquid, the upthrust equals the sphere's unchanged weight. Use the weight of the displaced liquid for each upthrust."
+        },
+        {
+          "n": 3,
+          "display": "1000 × 0.50 = ρ_{g} × 0.40",
+          "tag": "cancel the common factors",
+          "title": "Cancel the common factors",
+          "narration": "Both expressions contain the total sphere volume and the same acceleration due to gravity, so neither value has to be known."
+        },
+        {
+          "n": 4,
+          "display": "ρ_{g} = \\frac{1000 × 0.50}{0.40}",
+          "tag": "isolate glycerine density",
+          "title": "Isolate glycerine density",
+          "narration": "Divide by the submerged fraction in glycerine. It must be denser because a smaller volume supports the same weight."
+        },
+        {
+          "n": 5,
+          "display": "ρ_{g} = \\frac{500}{0.40} = 1250 kg/m³ (option B)",
+          "tag": "find the density",
+          "title": "Find the density",
+          "narration": "Five hundred divided by zero point four gives one thousand two hundred and fifty kilograms per cubic metre."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-015",
+      "questionId": "phys-jamb-2013-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ρ_{a}V_{a} = ρ_{p}V_{p}",
+          "tag": "equate the masses",
+          "title": "Equate the masses",
+          "narration": "For each liquid, density times volume gives mass. Equal masses let us set the two products equal."
+        },
+        {
+          "n": 2,
+          "display": "V_{a} = \\frac{ρ_{p}}{ρ_{a}}V_{p}",
+          "tag": "rearrange for alcohol volume",
+          "title": "Rearrange for alcohol volume",
+          "narration": "Alcohol is denser than petrol, so we expect the same mass to occupy a smaller volume of alcohol."
+        },
+        {
+          "n": 3,
+          "display": "V_{a} = \\frac{7.2}{8.4} × 4.2",
+          "tag": "substitute the densities",
+          "title": "Substitute the densities",
+          "narration": "Both densities are expressed in kilograms per cubic metre and have the same factor of ten squared. That factor cancels in the ratio."
+        },
+        {
+          "n": 4,
+          "display": "V_{a} = 3.6 m^{3} (option C)",
+          "tag": "calculate the volume",
+          "title": "Calculate the volume",
+          "narration": "Four point two is half of eight point four, leaving half of seven point two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{p} = 4.2 m^{3}",
+          "tag": "identify the known volume",
+          "title": "Identify the known volume",
+          "narration": "The given volume is petrol. We need a volume of alcohol with the same mass."
+        },
+        {
+          "n": 2,
+          "display": "ρ_{a}V_{a} = ρ_{p}V_{p}",
+          "tag": "equate the masses",
+          "title": "Equate the masses",
+          "narration": "For each liquid, density times volume gives mass. Equal masses let us set the two products equal."
+        },
+        {
+          "n": 3,
+          "display": "V_{a} = \\frac{ρ_{p}}{ρ_{a}}V_{p}",
+          "tag": "rearrange for alcohol volume",
+          "title": "Rearrange for alcohol volume",
+          "narration": "Alcohol is denser than petrol, so we expect the same mass to occupy a smaller volume of alcohol."
+        },
+        {
+          "n": 4,
+          "display": "V_{a} = \\frac{7.2}{8.4} × 4.2",
+          "tag": "substitute the densities",
+          "title": "Substitute the densities",
+          "narration": "Both densities are expressed in kilograms per cubic metre and have the same factor of ten squared. That factor cancels in the ratio."
+        },
+        {
+          "n": 5,
+          "display": "V_{a} = 3.6 m^{3} (option C)",
+          "tag": "calculate the volume",
+          "title": "Calculate the volume",
+          "narration": "Four point two is half of eight point four, leaving half of seven point two."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1991-015",
+      "questionId": "phys-jamb-1991-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{C − 0}{100 − 0} = \\frac{60 − (−30)}{90 − (−30)}",
+          "tag": "write the calibration ratio",
+          "title": "Write the calibration ratio",
+          "narration": "Subtract the ice point from each reading and divide by the full span. Zero degrees on the S scale is not the ice point."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{90}{120} = 0.75",
+          "tag": "find the fraction",
+          "title": "Find the fraction",
+          "narration": "The reading sits ninety scale degrees above the ice point in a span of one hundred and twenty."
+        },
+        {
+          "n": 3,
+          "display": "C = 75.0°C (option D)",
+          "tag": "read the celsius result",
+          "title": "Read the Celsius result",
+          "narration": "Three quarters of the Celsius span above zero is seventy-five degrees Celsius."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "S_{ice} = −30°S, S_{steam} = 90°S, S = 60°S",
+          "tag": "read the thermometer marks",
+          "title": "Read the thermometer marks",
+          "narration": "The scale has equal divisions, so a reading takes up the same fraction of the ice-to-steam interval on both scales."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{C − 0}{100 − 0} = \\frac{60 − (−30)}{90 − (−30)}",
+          "tag": "write the calibration ratio",
+          "title": "Write the calibration ratio",
+          "narration": "Subtract the ice point from each reading and divide by the full span. Zero degrees on the S scale is not the ice point."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{90}{120} = 0.75",
+          "tag": "find the fraction",
+          "title": "Find the fraction",
+          "narration": "The reading sits ninety scale degrees above the ice point in a span of one hundred and twenty."
+        },
+        {
+          "n": 4,
+          "display": "C = 0.75 × 100",
+          "tag": "apply the same fraction in celsius",
+          "title": "Apply the same fraction in Celsius",
+          "narration": "The Celsius span runs from zero to one hundred degrees, so multiply the fraction by one hundred."
+        },
+        {
+          "n": 5,
+          "display": "C = 75.0°C (option D)",
+          "tag": "read the celsius result",
+          "title": "Read the Celsius result",
+          "narration": "Three quarters of the Celsius span above zero is seventy-five degrees Celsius."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1995-023",
+      "questionId": "phys-jamb-1995-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{x − 40}{200 − 40} = \\frac{60}{100}",
+          "tag": "set up the calibration ratio",
+          "title": "Set up the calibration ratio",
+          "narration": "Sixty degrees Celsius is six tenths of the way from ice to steam. Take the same fraction of the length between the two fixed points."
+        },
+        {
+          "n": 2,
+          "display": "x − 40 = 0.60 × 160 = 96 mm",
+          "tag": "find the rise above the lower point",
+          "title": "Find the rise above the lower point",
+          "narration": "The full span is one hundred and sixty millimetres, so the reading is ninety-six millimetres above the lower point."
+        },
+        {
+          "n": 3,
+          "display": "x = 136.0 mm (option D)",
+          "tag": "report the scale reading",
+          "title": "Report the scale reading",
+          "narration": "Forty plus ninety-six gives one hundred and thirty-six millimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x_{ice} = 40 mm, x_{steam} = 200 mm",
+          "tag": "read both fixed points",
+          "title": "Read both fixed points",
+          "narration": "The lower fixed point is forty millimetres, and the upper is two hundred millimetres. The reading we want corresponds to sixty degrees Celsius."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{x − 40}{200 − 40} = \\frac{60}{100}",
+          "tag": "set up the calibration ratio",
+          "title": "Set up the calibration ratio",
+          "narration": "Sixty degrees Celsius is six tenths of the way from ice to steam. Take the same fraction of the length between the two fixed points."
+        },
+        {
+          "n": 3,
+          "display": "x − 40 = 0.60 × 160 = 96 mm",
+          "tag": "find the rise above the lower point",
+          "title": "Find the rise above the lower point",
+          "narration": "The full span is one hundred and sixty millimetres, so the reading is ninety-six millimetres above the lower point."
+        },
+        {
+          "n": 4,
+          "display": "x = 40 + 96",
+          "tag": "add the lower point back",
+          "title": "Add the lower point back",
+          "narration": "We found a distance from the lower point. Add its forty-millimetre reading to get the reading on the scale itself."
+        },
+        {
+          "n": 5,
+          "display": "x = 136.0 mm (option D)",
+          "tag": "report the scale reading",
+          "title": "Report the scale reading",
+          "narration": "Forty plus ninety-six gives one hundred and thirty-six millimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2014-020",
+      "questionId": "phys-jamb-2014-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "γ ≈ 3α = 3 × 9 × 10^{-6} K^{-1}",
+          "tag": "convert to volume expansivity",
+          "title": "Convert to volume expansivity",
+          "narration": "Glass expands in three directions. For a small uniform expansion, volume expansivity is approximately three times the linear value."
+        },
+        {
+          "n": 2,
+          "display": "ΔV = V_{0}γΔT",
+          "tag": "use the volume expansion formula",
+          "title": "Use the volume expansion formula",
+          "narration": "The expansion depends on the original volume, the fractional expansion per kelvin and the rise in temperature."
+        },
+        {
+          "n": 3,
+          "display": "ΔV = 20000 × 2.7 × 10^{-5} × 30 = 16.2 cm^{3}",
+          "tag": "calculate the increase",
+          "title": "Calculate the increase",
+          "narration": "The bottle gains sixteen point two cubic centimetres, a small increase compared with its initial volume."
+        },
+        {
+          "n": 4,
+          "display": "V = 20000 + 16.2 = 20016.2 cm^{3} (option D)",
+          "tag": "find the final volume",
+          "title": "Find the final volume",
+          "narration": "Add the increase to the initial volume because the question asks for the final volume."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{0} = 2 × 10^{4} cm^{3}, ΔT = 50 − 20 = 30 K",
+          "tag": "read the bottle data",
+          "title": "Read the bottle data",
+          "narration": "The temperature rises by thirty Celsius degrees, the same interval as thirty kelvin. The volume calculation can stay in cubic centimetres."
+        },
+        {
+          "n": 2,
+          "display": "γ ≈ 3α = 3 × 9 × 10^{-6} K^{-1}",
+          "tag": "convert to volume expansivity",
+          "title": "Convert to volume expansivity",
+          "narration": "Glass expands in three directions. For a small uniform expansion, volume expansivity is approximately three times the linear value."
+        },
+        {
+          "n": 3,
+          "display": "ΔV = V_{0}γΔT",
+          "tag": "use the volume expansion formula",
+          "title": "Use the volume expansion formula",
+          "narration": "The expansion depends on the original volume, the fractional expansion per kelvin and the rise in temperature."
+        },
+        {
+          "n": 4,
+          "display": "ΔV = 20000 × 2.7 × 10^{-5} × 30 = 16.2 cm^{3}",
+          "tag": "calculate the increase",
+          "title": "Calculate the increase",
+          "narration": "The bottle gains sixteen point two cubic centimetres, a small increase compared with its initial volume."
+        },
+        {
+          "n": 5,
+          "display": "V = 20000 + 16.2 = 20016.2 cm^{3} (option D)",
+          "tag": "find the final volume",
+          "title": "Find the final volume",
+          "narration": "Add the increase to the initial volume because the question asks for the final volume."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1998-019",
+      "questionId": "phys-jamb-1998-019",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 27 + 273 = 300 K",
+          "tag": "convert the starting temperature",
+          "title": "Convert the starting temperature",
+          "narration": "Use kelvin in a gas-law ratio because direct proportionality starts at absolute zero."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{V_{1}}{T_{1}} = \\frac{V_{2}}{T_{2}}",
+          "tag": "use charles's law",
+          "title": "Use Charles's law",
+          "narration": "At constant pressure, the volume of a fixed amount of gas is proportional to its absolute temperature."
+        },
+        {
+          "n": 3,
+          "display": "T_{2} = 300 × \\frac{120}{100} = 360 K",
+          "tag": "find the new absolute temperature",
+          "title": "Find the new absolute temperature",
+          "narration": "The final volume is one point two times the original, so the absolute temperature increases by that same factor."
+        },
+        {
+          "n": 4,
+          "display": "T = 360 − 273 = 87°C (option C)",
+          "tag": "convert the result to celsius",
+          "title": "Convert the result to Celsius",
+          "narration": "Subtract two hundred and seventy-three to express the final reading in the units of the options."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{1} = 100 cm^{3}, V_{2} = 120 cm^{3}",
+          "tag": "read the gas data",
+          "title": "Read the gas data",
+          "narration": "The gas expands at constant pressure. We can compare the two volumes directly because they use the same units."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = 27 + 273 = 300 K",
+          "tag": "convert the starting temperature",
+          "title": "Convert the starting temperature",
+          "narration": "Use kelvin in a gas-law ratio because direct proportionality starts at absolute zero."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{V_{1}}{T_{1}} = \\frac{V_{2}}{T_{2}}",
+          "tag": "use charles's law",
+          "title": "Use Charles's law",
+          "narration": "At constant pressure, the volume of a fixed amount of gas is proportional to its absolute temperature."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = 300 × \\frac{120}{100} = 360 K",
+          "tag": "find the new absolute temperature",
+          "title": "Find the new absolute temperature",
+          "narration": "The final volume is one point two times the original, so the absolute temperature increases by that same factor."
+        },
+        {
+          "n": 5,
+          "display": "T = 360 − 273 = 87°C (option C)",
+          "tag": "convert the result to celsius",
+          "title": "Convert the result to Celsius",
+          "narration": "Subtract two hundred and seventy-three to express the final reading in the units of the options."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2001-016",
+      "questionId": "phys-jamb-2001-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 400 K, T_{2} = 200 K",
+          "tag": "convert both temperatures",
+          "title": "Convert both temperatures",
+          "narration": "Add two hundred and seventy-three to one hundred and twenty-seven and to minus seventy-three. Gas laws use absolute temperatures."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{P_{1}}{P_{2}} × \\frac{T_{2}}{T_{1}}",
+          "tag": "rearrange the combined gas law",
+          "title": "Rearrange the combined gas law",
+          "narration": "For a fixed amount of gas, pressure times volume divided by absolute temperature stays constant. Lower pressure increases volume and lower temperature decreases it."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{5}{2} × \\frac{1}{2} = \\frac{5}{4} (option B)",
+          "tag": "give the final-to-initial ratio",
+          "title": "Give the final-to-initial ratio",
+          "narration": "The final volume is five quarters of the starting volume. The ratio in the order asked is five to four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P_{1} = 300 N/m², P_{2} = 120 N/m²",
+          "tag": "read the two states",
+          "title": "Read the two states",
+          "narration": "The gas pressure and temperature both change. We want the final volume compared with the starting volume."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = 400 K, T_{2} = 200 K",
+          "tag": "convert both temperatures",
+          "title": "Convert both temperatures",
+          "narration": "Add two hundred and seventy-three to one hundred and twenty-seven and to minus seventy-three. Gas laws use absolute temperatures."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{P_{1}}{P_{2}} × \\frac{T_{2}}{T_{1}}",
+          "tag": "rearrange the combined gas law",
+          "title": "Rearrange the combined gas law",
+          "narration": "For a fixed amount of gas, pressure times volume divided by absolute temperature stays constant. Lower pressure increases volume and lower temperature decreases it."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{300}{120} × \\frac{200}{400}",
+          "tag": "substitute the two ratios",
+          "title": "Substitute the two ratios",
+          "narration": "The new pressure is lower, making the first factor larger than one. The new temperature is half the old value."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{5}{2} × \\frac{1}{2} = \\frac{5}{4} (option B)",
+          "tag": "give the final-to-initial ratio",
+          "title": "Give the final-to-initial ratio",
+          "narration": "The final volume is five quarters of the starting volume. The ratio in the order asked is five to four."
         }
       ]
     }
