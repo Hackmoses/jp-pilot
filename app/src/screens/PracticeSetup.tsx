@@ -19,11 +19,13 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
   const questions = getQuestionsBySubject(subject)
   const hasSyllabus = getSections(subject).length > 0
   const chapters = getChapters(subject, questions)
-  const eligible = practicePool(questions, settings).length
+  // Cleared means no topic ticked yet; it is not saved, so the next visit starts with all topics.
+  const [cleared, setCleared] = useState(false)
+  const eligible = cleared ? 0 : practicePool(questions, settings).length
   // An empty list means every chapter. Ticking them all one by one lands on the same state.
   const chapterIds = chapters.map(({ id }) => id)
   const picked = settings.chapters.filter((id) => chapterIds.includes(id))
-  const allChapters = picked.length === 0 || picked.length === chapterIds.length
+  const allChapters = !cleared && (picked.length === 0 || picked.length === chapterIds.length)
   const [showAllTopics, setShowAllTopics] = useState(() =>
     picked.some((id) => chapterIds.indexOf(id) >= TOPIC_PREVIEW_COUNT),
   )
@@ -32,10 +34,15 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
       ? chapters.slice(0, TOPIC_PREVIEW_COUNT)
       : chapters
   const toggleChapter = (id: string) => {
+    if (cleared) {
+      setCleared(false)
+      apply({ chapters: chapterIds.length === 1 ? [] : [id] })
+      return
+    }
     const current = allChapters ? chapterIds : picked
     const next = current.includes(id) ? current.filter((c) => c !== id) : [...current, id]
-    if (!next.length) return current // keep at least one chapter ticked
-    return next.length === chapterIds.length ? [] : next
+    if (!next.length) { setCleared(true); return }
+    apply({ chapters: next.length === chapterIds.length ? [] : next })
   }
   const isCustomCount =
     settings.countMode === 'custom' ||
@@ -76,14 +83,16 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
         {chapters.length > 0 && <fieldset class="jp-mode-section">
           <legend class="jp-revisit-title">{hasSyllabus ? 'Chapters' : 'Topics'}</legend>
           <div class="jp-mode-section-body">
-            <div><button type="button" class={`jp-btn ${allChapters ? 'jp-btn--primary' : ''}`}
-              aria-pressed={allChapters} onClick={() => apply({ chapters: [] })}>
+            <div class="jp-pills"><button type="button" class={`jp-btn ${allChapters ? 'jp-btn--primary' : ''}`}
+              aria-pressed={allChapters} onClick={() => { setCleared(false); apply({ chapters: [] }) }}>
               {allChapters ? (hasSyllabus ? 'All chapters ✓' : 'All topics ✓') : 'Select all'}
-            </button></div>
+            </button>
+            {!cleared && <button type="button" class="jp-btn" onClick={() => setCleared(true)}>Clear all</button>}</div>
+            {cleared && <p class="jp-mode-custom-hint" role="status">Tick the {hasSyllabus ? 'chapters' : 'topics'} you want to practise.</p>}
             <div class="jp-mode-checks">
               {visibleChapters.map((chapter) => <label key={chapter.id} class="jp-mode-check">
-                <input type="checkbox" checked={allChapters || settings.chapters.includes(chapter.id)} onChange={() =>
-                  apply({ chapters: toggleChapter(chapter.id) })} />
+                <input type="checkbox" checked={allChapters || (!cleared && settings.chapters.includes(chapter.id))}
+                  onChange={() => toggleChapter(chapter.id)} />
                 <span>{chapter.title}</span>
               </label>)}
             </div>
