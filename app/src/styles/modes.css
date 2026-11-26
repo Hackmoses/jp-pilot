@@ -134,12 +134,22 @@
   margin-top: 8px;
 }
 
-.jp-try-header,
+.jp-try-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
 .jp-try-select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-2);
+  gap: 8px;
+  width: 100%;
+  font: 600 13px/1.35 var(--font-system);
+  color: var(--ink);
 }
 
 .jp-try-header h3 {
@@ -150,7 +160,11 @@
   margin-top: 12px;
 }
 
-.jp-try-body,
+.jp-try-body {
+  display: grid;
+  gap: 8px;
+}
+
 .jp-try-controls,
 .jp-try-explain {
   display: grid;
@@ -170,11 +184,6 @@
 .jp-try-controls>.jp-pills,
 .jp-try-select {
   justify-self: start;
-}
-
-.jp-try-select {
-  font: 600 13px/1.35 var(--font-system);
-  color: #334155;
 }
 
 .jp-try-select select:focus-visible {
@@ -241,7 +250,19 @@
 .jp-try-formulas {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 16px;
+  align-items: flex-end;
+  gap: 8px 12px;
+}
+
+.jp-try-select select {
+  min-height: 30px;
+  max-width: 100%;
+  padding: 4px 8px;
+  border: 1px solid var(--option-line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font: 600 13px/1.25 var(--font-system);
 }
 
 .jp-try-formulas-box {
@@ -281,6 +302,12 @@
 
 .jp-try-sliders>label {
   flex: 1 1 160px;
+  min-width: 0;
+}
+
+.jp-try-sliders>.jp-btn {
+  flex: none;
+  align-self: flex-end;
 }
 
 .jp-try-values {
@@ -348,11 +375,12 @@
   min-width: 0;
 }
 
-.jp-try-speaker {
-  flex: 0 0 34px;
-  width: 34px;
-  height: 34px;
-  min-height: 34px;
+.jp-try-speaker,
+.jp-mode-page .jp-try-speaker {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  min-height: 32px;
   padding: 0;
   border-radius: var(--radius-pill);
 }
@@ -376,7 +404,7 @@
 }
 
 .jp-try-choices {
-  margin-top: var(--space-2);
+  margin-top: 0;
 }
 
 .jp-try-choices>button {
@@ -575,20 +603,6 @@
   border-radius: var(--radius-pill);
   background: var(--good-soft);
   color: #166534;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.jp-mode-ongoing {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  margin-top: 2px;
-  padding: 2px 8px;
-  border: 1px solid var(--paper-line);
-  border-radius: var(--radius-pill);
-  background: var(--brand-soft);
-  color: var(--brand);
   font-size: 12px;
   font-weight: 600;
 }
@@ -956,7 +970,7 @@
 }
 
 /* Try-It guided hierarchy & compact controls */
-.jp-mode-page .jp-btn:not(.jp-btn--full) {
+.jp-mode-page .jp-btn:not(.jp-btn--full):not(.jp-try-speaker) {
   min-height: 32px;
   padding: 5px 12px;
   font-size: 13px;
@@ -982,12 +996,26 @@
 
 .jp-try-predict {
   display: grid;
-  gap: 10px;
-  padding: 12px 14px;
+  gap: 8px;
+  padding: 10px 12px;
   border: 1px solid #cbd5e1;
   border-left: 3px solid var(--brand);
   border-radius: 10px;
   background: #f8fafc;
+}
+
+.jp-try-predict-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.jp-try-choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 6px;
 }
 
 .jp-try-kicker {
@@ -1006,7 +1034,7 @@
 }
 
 .jp-try-question {
-  margin: 0 0 8px;
+  margin: 0;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.45;
@@ -1121,6 +1149,7 @@
 .jp-try-header-copy {
   display: grid;
   gap: 2px;
+  flex: 1 1 150px;
   min-width: 0;
 }
 
@@ -1128,6 +1157,7 @@
   margin-inline-start: auto;
   display: inline-flex;
   align-items: center;
+  flex: none;
   flex-wrap: wrap;
   gap: 6px;
 }
@@ -1138,12 +1168,12 @@
   font-size: 13px;
 }
 
-.jp-card > .jp-summary-sub {
+.jp-card>.jp-summary-sub {
   margin: 0;
 }
 
 /* Study sections open in place */
-.jp-study-section > summary {
+.jp-study-section>summary {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1153,39 +1183,64 @@
   list-style: none;
 }
 
-.jp-study-section > summary > .jp-mode-card-title {
+.jp-study-section>summary>.jp-mode-card-title {
   margin-right: auto;
 }
 
-.jp-study-section > summary::-webkit-details-marker { display: none; }
+.jp-study-section>summary::-webkit-details-marker {
+  display: none;
+}
 
-.jp-study-section > summary::after {
+.jp-study-section>summary::after {
   content: '▾';
   color: var(--ink-2);
 }
 
-.jp-study-section[open] > summary::after { content: '▴'; }
+.jp-study-section[open]>summary::after {
+  content: '▴';
+}
 
-.jp-study-section > .jp-mode-list { margin-top: var(--space-3); }
+.jp-study-section>.jp-mode-list {
+  margin-top: var(--space-3);
+}
 
 /* One tap to the main menu from any screen */
-.jp-menu-btn {
+.jp-menu-btn,
+.jp-menu-btn:visited {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   min-height: var(--btn-h-sm);
   padding: 4px 10px;
+  border-color: var(--option-line);
+  background: var(--bg);
   font-size: 12.5px;
   font-weight: 600;
   color: #1e293b;
   white-space: nowrap;
   text-decoration: none;
 }
-
 /* One step back, named for where it goes. */
 .jp-mode-hero .jp-mode-crumb {
   align-self: flex-start;
   margin-left: -10px;
   font-size: 14px;
   font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .jp-mode-grid .jp-mode-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    height: auto;
+  }
+
+  .jp-mode-grid .jp-mode-card .jp-mode-card-arrow {
+    display: block;
+  }
+
+  .jp-mode-footer-links {
+    justify-content: flex-start;
+  }
 }

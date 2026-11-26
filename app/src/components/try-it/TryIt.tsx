@@ -118,24 +118,25 @@ export function TryIt({ aim, context, prediction, missions, explain, formulas, p
         </ul>
       </details>
       <div class="jp-try-predict">
-        <div class="jp-try-instruction">
+        <div class="jp-try-predict-head">
           <div>
             <span class="jp-try-kicker">Predict</span>
             <p class="jp-try-question">{renderMathText(prediction.question)}</p>
-            <Choices label="Prediction" choices={prediction.choices} picked={picked} onPick={setPicked} locked={unlocked} />
           </div>
+          {!unlocked && <ReadInstruction text={prediction.question} />}
         </div>
+        <Choices label="Prediction" choices={prediction.choices} picked={picked} onPick={setPicked} locked={unlocked} />
         {observed && <p class={'jp-try-outcome ' + (picked === prediction.correct ? 'jp-try-outcome--good' : 'jp-try-outcome--info')} role="status">
           You predicted “{renderMathText(prediction.choices[picked!])}”. It turned out “{renderMathText(prediction.choices[prediction.correct])}”. {prediction.why}
         </p>}
       </div>
-      <div class="jp-try-now" role="status" aria-live="polite">
+      {unlocked && <div class="jp-try-now" role="status" aria-live="polite">
         <div>
           <span class="jp-try-kicker">{now.label}</span>
           <p class="jp-try-now-text">{renderMathText(now.text)}</p>
         </div>
         <ReadInstruction text={now.text || instruction} />
-      </div>
+      </div>}
       {simulation ? <Playback unlocked={unlocked}>{children(unlocked, 0)}</Playback>
         : <fieldset class="jp-try-word-controls" disabled={!unlocked}>{children(unlocked, Math.min(phase + 1, 3))}</fieldset>}
       {formulas.length > 0 && <div class="jp-try-formulas-box">
