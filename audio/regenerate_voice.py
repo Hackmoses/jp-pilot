@@ -795,6 +795,7 @@ def main() -> int:
     parser.add_argument("--checkpoint-copy-dir", default="")
     parser.add_argument("--checkpoint-every", type=int, default=20)
     parser.add_argument("--skip-needs-review", action="store_true")
+    parser.add_argument("--only-new", action="store_true", help="Voice only clips with no audio yet (and Kokoro fallbacks); keep everything else")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
@@ -889,6 +890,20 @@ def main() -> int:
                 "durationMs": cur_entry["durationMs"],
                 "genSec": 0.0,
             })
+            already_charon_count += 1
+            continue
+
+        # --only-new keeps every clip that already has audio in a real voice. It voices only
+        # clips with no audio yet, plus old Kokoro fallbacks.
+        if (
+            args.only_new
+            and cur_entry is not None
+            and not str(cur_entry.get("voice", "")).startswith("kokoro")
+            and out_path.exists()
+            and out_path.stat().st_size > 0
+        ):
+            st.update({"status": "kept_existing", "stepText": item["stepText"], "spokenLine": item["spokenLine"],
+                       "afterBytes": out_path.stat().st_size, "durationMs": cur_entry.get("durationMs", 0), "genSec": 0.0})
             already_charon_count += 1
             continue
 
