@@ -19,6 +19,7 @@ import {
   setLastSessionSummary,
 } from '../components/question/sessionState'
 import { getAnimation, getQuestion, isSubjectLoaded, loadSubject } from '../lib/data'
+import { englishLearnLink } from '../lib/englishLearn'
 import { STUDY_TOPICS } from '../lib/sections'
 import { finishAttempt, getAttemptQuestions, getQuestionChapter, getStudyAnswer, markStudied, remember, saveAttempt, studyLink, type Attempt, type TestResult } from '../lib/modes'
 import { shuffleOptions } from '../lib/shuffle'
@@ -341,7 +342,9 @@ export function Session({ attempt, study, review }: SessionProps) {
   const compact = !study
   const detailed = !compact || full
   const chapterId = getQuestionChapter(question)
-  const learnHref = compact && STUDY_TOPICS[question.subject]?.includes(chapterId) ? studyLink(question.subject, chapterId) : undefined
+  const englishLearn = compact && question.subject === 'english' ? englishLearnLink(chapterId) : undefined
+  const learnHref = englishLearn?.href
+    ?? (compact && STUDY_TOPICS[question.subject]?.includes(chapterId) ? studyLink(question.subject, chapterId) : undefined)
   const exitHref = back ?? (attempt ? (attempt.mode === 'exam' ? '#/exam'
     : '#/practice?subject=' + encodeURIComponent(question.subject)) : '#/modes')
   const canPause = attempt?.mode === 'practice' && deadline !== null
@@ -464,6 +467,7 @@ export function Session({ attempt, study, review }: SessionProps) {
             full={full}
             onFull={() => setFull((prev) => !prev)}
             learnHref={learnHref}
+            learnLabel={englishLearn?.label}
             calculationSlot={!isWide && !isConceptAnimation ? calculationPlayer : undefined}
             conceptSlot={!isWide && isConceptAnimation ? calculationPlayer : undefined}
           />
