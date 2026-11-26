@@ -99,12 +99,6 @@ function PassageRun({ set, questions, initial }: { set: PassageSet; questions: Q
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
         </a>
         <a class="jp-logo" href="#/modes" aria-label="JP modes">JP</a>
-        <span class="jp-topic">English<span class="jp-hide-sm"> · {passageNames[set.type]}</span></span>
-      </div>
-      <div class="jp-topbar-status">
-        <div class="jp-progress-group"><span class="jp-counter">{attempt.index + 1} of {questions.length}</span>
-          <div class="jp-progress-track" aria-hidden="true"><div class="jp-progress-fill" style={{ width: (attempt.index + 1) * 100 / questions.length + '%' }} /></div>
-        </div>
       </div>
       <div class="jp-topbar-actions">
         <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
@@ -113,6 +107,16 @@ function PassageRun({ set, questions, initial }: { set: PassageSet; questions: Q
         </a>
       </div>
     </div></header>
+    <div class="jp-session-bar">
+      <div class="jp-session-bar-inner">
+        <span class="jp-session-topic">English · {passageNames[set.type]}</span>
+        <div class="jp-session-meta">
+          <div class="jp-progress-group"><span class="jp-counter">{attempt.index + 1} of {questions.length}</span>
+            <div class="jp-progress-track" aria-hidden="true"><div class="jp-progress-fill" style={{ width: (attempt.index + 1) * 100 / questions.length + '%' }} /></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="jp-session-layout"><div class="jp-left-col">
     <section ref={panel} class="jp-card jp-passage-panel" aria-label={set.title}>
       <button type="button" class="jp-btn" aria-expanded={open} aria-controls="jp-reading-panel"

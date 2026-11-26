@@ -8,6 +8,8 @@ import { logEvent } from '../lib/store'
 import { getSubject } from '../lib/subjects'
 import { Panel, useSubjects } from './Modes'
 
+const TOPIC_PREVIEW_COUNT = 6
+
 export function PracticeSetup({ subject, chapter }: { subject: string; chapter: string | null }) {
   const status = useSubjects([subject])
   const [settings, setSettings] = useState(() => {
@@ -22,6 +24,13 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
   const chapterIds = chapters.map(({ id }) => id)
   const picked = settings.chapters.filter((id) => chapterIds.includes(id))
   const allChapters = picked.length === 0 || picked.length === chapterIds.length
+  const [showAllTopics, setShowAllTopics] = useState(() =>
+    picked.some((id) => chapterIds.indexOf(id) >= TOPIC_PREVIEW_COUNT),
+  )
+  const visibleChapters =
+    chapters.length > TOPIC_PREVIEW_COUNT && !showAllTopics
+      ? chapters.slice(0, TOPIC_PREVIEW_COUNT)
+      : chapters
   const toggleChapter = (id: string) => {
     const current = allChapters ? chapterIds : picked
     const next = current.includes(id) ? current.filter((c) => c !== id) : [...current, id]
@@ -72,12 +81,24 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
               {allChapters ? (hasSyllabus ? 'All chapters ✓' : 'All topics ✓') : 'Select all'}
             </button></div>
             <div class="jp-mode-checks">
-              {chapters.map((chapter) => <label key={chapter.id} class="jp-mode-check">
+              {visibleChapters.map((chapter) => <label key={chapter.id} class="jp-mode-check">
                 <input type="checkbox" checked={allChapters || settings.chapters.includes(chapter.id)} onChange={() =>
                   apply({ chapters: toggleChapter(chapter.id) })} />
                 <span>{chapter.title}</span>
               </label>)}
             </div>
+            {chapters.length > TOPIC_PREVIEW_COUNT && (
+              <button
+                type="button"
+                class="jp-link-btn jp-topics-toggle"
+                aria-expanded={showAllTopics}
+                onClick={() => setShowAllTopics((open) => !open)}
+              >
+                {showAllTopics
+                  ? 'Show fewer'
+                  : `Show ${chapters.length - TOPIC_PREVIEW_COUNT} more`}
+              </button>
+            )}
           </div>
         </fieldset>}
         <fieldset class="jp-mode-section">

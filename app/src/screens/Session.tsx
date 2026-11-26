@@ -405,27 +405,10 @@ export function Session({ attempt, study, review }: SessionProps) {
               </svg>
             </a>
             <a class="jp-logo" href="#/modes" aria-label="Main menu">JP</a>
-            <span class="jp-topic">{subjectName}<span class="jp-hide-sm"> · {question.topic}</span></span>
           </div>
-          <div class="jp-topbar-status">
-            <div class="jp-progress-group">
-              <span class="jp-counter">
-                {index + 1} of {queue.length}
-              </span>
-              <div class="jp-progress-track" aria-hidden="true">
-                <div class="jp-progress-fill" style={{ width: `${progressPercent}%` }} />
-              </div>
-            </div>
-            <span class="jp-pill jp-pill--practice jp-hide-sm">{study ? 'Study' : review ? 'Exam review' : 'Practice'}</span>
-            {!study && !review && <span class="jp-pill jp-pill--score" aria-live="polite">
-              Score {sessionCorrect}/{sessionAnswered}
-            </span>}
-            {!attempt?.deadline && !study && !review && progress.streakDays > 0 && (
-              <span class="jp-pill jp-pill--streak">
-                {progress.streakDays}-day streak
-              </span>
-            )}
-          </div>
+          {!study && !review && <span class="jp-pill jp-pill--score" aria-live="polite">
+            Score {sessionCorrect}/{sessionAnswered}
+          </span>}
           <div class="jp-topbar-actions">
             {deadline !== null && pausedAt === null && <Countdown deadline={deadline}
               onExpire={() => finishAttempt(savedAttempt.current!, Date.now())} />}
@@ -438,6 +421,27 @@ export function Session({ attempt, study, review }: SessionProps) {
           </div>
         </div>
       </header>
+      <div class="jp-session-bar">
+        <div class="jp-session-bar-inner">
+          <span class="jp-session-topic">{subjectName} · {question.topic}</span>
+          <div class="jp-session-meta">
+            <span class="jp-pill jp-pill--practice jp-hide-sm">{study ? 'Study' : review ? 'Exam review' : 'Practice'}</span>
+            <div class="jp-progress-group">
+              <span class="jp-counter">
+                {index + 1} of {queue.length}
+              </span>
+              <div class="jp-progress-track" aria-hidden="true">
+                <div class="jp-progress-fill" style={{ width: `${progressPercent}%` }} />
+              </div>
+            </div>
+            {!attempt?.deadline && !study && !review && progress.streakDays > 0 && (
+              <span class="jp-pill jp-pill--streak">
+                {progress.streakDays}-day streak
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
 
       <div class="jp-session-layout">
         <div class="jp-left-col">

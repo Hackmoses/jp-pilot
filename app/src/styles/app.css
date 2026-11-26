@@ -393,6 +393,78 @@ body {
   align-items: center;
   gap: 10px;
   flex: none;
+  min-width: 0;
+}
+
+.jp-topbar-inner > .jp-pill--score {
+  margin-inline: auto;
+}
+
+.jp-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+}
+
+.jp-brand-group + .jp-topbar-actions {
+  margin-left: auto;
+}
+
+.jp-topbar-actions .jp-btn,
+.jp-menu-btn,
+.jp-menu-btn:visited {
+  min-height: var(--btn-h-sm);
+  padding: 4px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+  border-color: var(--option-line);
+  background: var(--bg);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.jp-session-bar {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.jp-session-bar-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 7px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.jp-session-topic {
+  flex: 1 1 80px;
+  min-width: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.jp-session-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+  margin-left: auto;
+  min-width: 0;
+}
+
+.jp-session-meta .jp-progress-group {
+  flex: 0 1 140px;
+  min-width: 0;
+  gap: 8px;
 }
 
 .jp-logo {
@@ -1044,8 +1116,35 @@ body {
   }
 
   .jp-topbar-inner {
-    padding: 9px 12px;
+    padding: 8px 12px;
     gap: 8px;
+  }
+
+  .jp-brand-group {
+    gap: 8px;
+  }
+
+  .jp-session-bar-inner {
+    padding: 6px 12px;
+    gap: 8px;
+  }
+
+  .jp-session-topic {
+    font-size: 12px;
+  }
+
+  .jp-session-meta {
+    gap: 6px;
+  }
+
+  .jp-session-meta .jp-counter {
+    font-size: 12px;
+  }
+
+  .jp-session-meta .jp-progress-track {
+    width: 44px;
+    min-width: 28px;
+    flex: 0 1 44px;
   }
 
   .jp-screen--session .jp-pill {
