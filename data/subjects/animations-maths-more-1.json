@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 20,
+  "count": 30,
   "animations": [
     {
       "id": "anim-math-jamb-2010-022",
@@ -1474,6 +1474,719 @@
           "tag": "answer",
           "title": "Add the two subtotals",
           "narration": "One hundred and five plus seventy-five gives one hundred and eighty students."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-005",
+      "questionId": "math-jamb-2012-005",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E = \\frac{15}{100} × ₦3,500",
+          "tag": "percentage",
+          "title": "Find the education cost",
+          "narration": "Fifteen percent means fifteen out of every hundred. Multiply that fraction by the monthly income."
+        },
+        {
+          "n": 2,
+          "display": "E = 15 × ₦35 = ₦525",
+          "tag": "education",
+          "title": "Find fifteen percent",
+          "narration": "Multiply the value of one percent by fifteen to get the education expense."
+        },
+        {
+          "n": 3,
+          "display": "Spent = ₦525 + ₦1,950 = ₦2,475",
+          "tag": "expenses",
+          "title": "Add education and food",
+          "narration": "These are the two expenses in the question, so add them before finding what remains."
+        },
+        {
+          "n": 4,
+          "display": "Left = ₦1,025",
+          "tag": "answer",
+          "title": "Find the amount left",
+          "narration": "Subtract two thousand four hundred and seventy-five naira from three thousand five hundred naira. That leaves one thousand and twenty-five naira."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "E = \\frac{15}{100} × ₦3,500",
+          "tag": "percentage",
+          "title": "Find the education cost",
+          "narration": "Fifteen percent means fifteen out of every hundred. Multiply that fraction by the monthly income."
+        },
+        {
+          "n": 2,
+          "display": "₦3,500 ÷ 100 = ₦35",
+          "tag": "one percent",
+          "title": "Find one percent of the income",
+          "narration": "Dividing the income by one hundred gives thirty-five naira for each percentage point."
+        },
+        {
+          "n": 3,
+          "display": "E = 15 × ₦35 = ₦525",
+          "tag": "education",
+          "title": "Find fifteen percent",
+          "narration": "Multiply the value of one percent by fifteen to get the education expense."
+        },
+        {
+          "n": 4,
+          "display": "Spent = ₦525 + ₦1,950 = ₦2,475",
+          "tag": "expenses",
+          "title": "Add education and food",
+          "narration": "These are the two expenses in the question, so add them before finding what remains."
+        },
+        {
+          "n": 5,
+          "display": "Left = ₦3,500 − ₦2,475",
+          "tag": "balance",
+          "title": "Subtract the total from the income",
+          "narration": "The balance is the income less everything spent that month."
+        },
+        {
+          "n": 6,
+          "display": "Left = ₦1,025",
+          "tag": "answer",
+          "title": "Find the amount left",
+          "narration": "Subtract two thousand four hundred and seventy-five naira from three thousand five hundred naira. That leaves one thousand and twenty-five naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-006",
+      "questionId": "math-jamb-2012-006",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "27 = 3^{3}, 9 = 3^{2}",
+          "tag": "common base",
+          "title": "Rewrite both bases as powers of three",
+          "narration": "The right side already has base three. Rewrite the other bases so we can use the index laws."
+        },
+        {
+          "n": 2,
+          "display": "3^{3(x+2) − 2(x+1)} = 3^{2x}",
+          "tag": "index laws",
+          "title": "Multiply and then subtract exponents",
+          "narration": "A power raised to another power multiplies the exponents. Dividing powers with the same base subtracts their exponents."
+        },
+        {
+          "n": 3,
+          "display": "x + 4 = 2x",
+          "tag": "expand",
+          "title": "Collect terms on the left",
+          "narration": "Expand to three x plus six minus two x minus two, which simplifies to x plus four."
+        },
+        {
+          "n": 4,
+          "display": "x = 4",
+          "tag": "answer",
+          "title": "Read and check the solution",
+          "narration": "At four, the left exponent is eighteen minus ten, which is eight. The right exponent is also eight, so x equals four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "27 = 3^{3}, 9 = 3^{2}",
+          "tag": "common base",
+          "title": "Rewrite both bases as powers of three",
+          "narration": "The right side already has base three. Rewrite the other bases so we can use the index laws."
+        },
+        {
+          "n": 2,
+          "display": "(3^{3})^{x+2} ÷ (3^{2})^{x+1} = 3^{2x}",
+          "tag": "substitute",
+          "title": "Put the new bases into the equation",
+          "narration": "Twenty-seven is three cubed and nine is three squared, so the equation has the same value after substitution."
+        },
+        {
+          "n": 3,
+          "display": "3^{3(x+2) − 2(x+1)} = 3^{2x}",
+          "tag": "index laws",
+          "title": "Multiply and then subtract exponents",
+          "narration": "A power raised to another power multiplies the exponents. Dividing powers with the same base subtracts their exponents."
+        },
+        {
+          "n": 4,
+          "display": "3(x + 2) − 2(x + 1) = 2x",
+          "tag": "equate",
+          "title": "Set the exponents equal",
+          "narration": "Equal powers of three have equal exponents, since raising three to a larger power gives a larger value."
+        },
+        {
+          "n": 5,
+          "display": "x + 4 = 2x",
+          "tag": "expand",
+          "title": "Collect terms on the left",
+          "narration": "Expand to three x plus six minus two x minus two, which simplifies to x plus four."
+        },
+        {
+          "n": 6,
+          "display": "4 = x",
+          "tag": "balance",
+          "title": "Subtract x from both sides",
+          "narration": "Subtract one x from each side to leave four on the left and x on the right."
+        },
+        {
+          "n": 7,
+          "display": "x = 4",
+          "tag": "answer",
+          "title": "Read and check the solution",
+          "narration": "At four, the left exponent is eighteen minus ten, which is eight. The right exponent is also eight, so x equals four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-009",
+      "questionId": "math-jamb-2012-009",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "30 = 2 × 3 × 5",
+          "tag": "prime factors",
+          "title": "Factorise thirty into primes",
+          "narration": "The prime factorisation identifies every possible member of P. The factors two, three and five are all prime."
+        },
+        {
+          "n": 2,
+          "display": "Q = {1, 2, 3, 6, 9}",
+          "tag": "set Q",
+          "title": "List factors of eighteen below ten",
+          "narration": "The factor pairs are one and eighteen, two and nine, and three and six. Eighteen is above the limit, so leave it out."
+        },
+        {
+          "n": 3,
+          "display": "P ∩ Q = {2, 3}",
+          "tag": "answer",
+          "title": "Keep only the common members",
+          "narration": "An intersection keeps a number only if it is in both sets. Two and three are the only shared numbers."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "30 = 2 × 3 × 5",
+          "tag": "prime factors",
+          "title": "Factorise thirty into primes",
+          "narration": "The prime factorisation identifies every possible member of P. The factors two, three and five are all prime."
+        },
+        {
+          "n": 2,
+          "display": "P = {2, 3, 5}",
+          "tag": "set P",
+          "title": "List the prime factors",
+          "narration": "Include each prime factor once because a set only records membership."
+        },
+        {
+          "n": 3,
+          "display": "Q = {1, 2, 3, 6, 9}",
+          "tag": "set Q",
+          "title": "List factors of eighteen below ten",
+          "narration": "The factor pairs are one and eighteen, two and nine, and three and six. Eighteen is above the limit, so leave it out."
+        },
+        {
+          "n": 4,
+          "display": "P ∩ Q = {2, 3}",
+          "tag": "answer",
+          "title": "Keep only the common members",
+          "narration": "An intersection keeps a number only if it is in both sets. Two and three are the only shared numbers."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-019",
+      "questionId": "math-jamb-2012-019",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{3} = 3^{2} − 6(3) − 4",
+          "tag": "third term",
+          "title": "Substitute three for n",
+          "narration": "Both occurrences of n must be replaced by three to calculate the third term."
+        },
+        {
+          "n": 2,
+          "display": "T_{4} = 4^{2} − 6(4) − 4",
+          "tag": "fourth term",
+          "title": "Substitute four for n",
+          "narration": "Both occurrences of n must now be replaced by four."
+        },
+        {
+          "n": 3,
+          "display": "T_{3} + T_{4} = −13 + (−12) = −25",
+          "tag": "answer",
+          "title": "Add the two terms",
+          "narration": "Adding a negative twelve takes us twelve lower than negative thirteen. The sum is negative twenty-five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "T_{n} = n^{2} − 6n − 4",
+          "tag": "rule",
+          "title": "Read the term formula",
+          "narration": "The index n tells us the position in the sequence. Use three and four to find the two terms requested."
+        },
+        {
+          "n": 2,
+          "display": "T_{3} = 3^{2} − 6(3) − 4",
+          "tag": "third term",
+          "title": "Substitute three for n",
+          "narration": "Both occurrences of n must be replaced by three to calculate the third term."
+        },
+        {
+          "n": 3,
+          "display": "T_{3} = 9 − 18 − 4 = −13",
+          "tag": "evaluate",
+          "title": "Find the third term",
+          "narration": "Three squared is nine and six threes make eighteen. Subtract eighteen and then four."
+        },
+        {
+          "n": 4,
+          "display": "T_{4} = 4^{2} − 6(4) − 4",
+          "tag": "fourth term",
+          "title": "Substitute four for n",
+          "narration": "Both occurrences of n must now be replaced by four."
+        },
+        {
+          "n": 5,
+          "display": "T_{4} = 16 − 24 − 4 = −12",
+          "tag": "evaluate",
+          "title": "Find the fourth term",
+          "narration": "Four squared is sixteen and six fours make twenty-four. Subtract twenty-four and then four."
+        },
+        {
+          "n": 6,
+          "display": "T_{3} + T_{4} = −13 + (−12) = −25",
+          "tag": "answer",
+          "title": "Add the two terms",
+          "narration": "Adding a negative twelve takes us twelve lower than negative thirteen. The sum is negative twenty-five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-024",
+      "questionId": "math-jamb-2012-024",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "I_{3} = \\matrix{1,0,0;0,1,0;0,0,1}",
+          "tag": "identity",
+          "title": "Write the identity matrix",
+          "narration": "An identity matrix has ones on the main diagonal and zeroes everywhere else."
+        },
+        {
+          "n": 2,
+          "display": "D = 1 × \\det{1,0;0,1}",
+          "tag": "minor",
+          "title": "Keep the first minor",
+          "narration": "The top-left entry has a positive cofactor sign. Delete its row and column to get the smaller determinant."
+        },
+        {
+          "n": 3,
+          "display": "D = 1",
+          "tag": "answer",
+          "title": "Find the determinant",
+          "narration": "The bracket is one minus zero, so the determinant of the identity matrix is one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I_{3} = \\matrix{1,0,0;0,1,0;0,0,1}",
+          "tag": "identity",
+          "title": "Write the identity matrix",
+          "narration": "An identity matrix has ones on the main diagonal and zeroes everywhere else."
+        },
+        {
+          "n": 2,
+          "display": "D = \\det{1,0,0;0,1,0;0,0,1}",
+          "tag": "determinant",
+          "title": "Set up the determinant",
+          "narration": "Expand down the first row. The second and third entries are zero, so their minors will contribute nothing."
+        },
+        {
+          "n": 3,
+          "display": "D = 1 × \\det{1,0;0,1}",
+          "tag": "minor",
+          "title": "Keep the first minor",
+          "narration": "The top-left entry has a positive cofactor sign. Delete its row and column to get the smaller determinant."
+        },
+        {
+          "n": 4,
+          "display": "D = 1 × [1(1) − 0(0)]",
+          "tag": "evaluate",
+          "title": "Subtract the diagonal products",
+          "narration": "For the two by two minor, subtract the off-diagonal product from the main diagonal product."
+        },
+        {
+          "n": 5,
+          "display": "D = 1",
+          "tag": "answer",
+          "title": "Find the determinant",
+          "narration": "The bracket is one minus zero, so the determinant of the identity matrix is one."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-025",
+      "questionId": "math-jamb-2012-025",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "QR ∥ TU",
+          "tag": "figure",
+          "title": "Read the parallel lines",
+          "narration": "The arrow marks show that QR and TU are parallel. The diagram gives eighty degrees at Q and ninety-five degrees at S."
+        },
+        {
+          "n": 2,
+          "display": "SX ∥ QR ∥ TU, ∠PSX = 80°",
+          "tag": "corresponding",
+          "title": "Draw a horizontal ray SX to the right",
+          "narration": "Draw the ray through S. Corresponding angles made by the transversal PS with QR and SX are equal, so angle PSX is eighty degrees."
+        },
+        {
+          "n": 3,
+          "display": "∠XSU = 95° − 80°",
+          "tag": "subtract",
+          "title": "Find the angle below the new ray",
+          "narration": "Ray SX splits the ninety-five-degree angle at S. Subtract the eighty-degree part above SX to find the part below it."
+        },
+        {
+          "n": 4,
+          "display": "∠SUT = 15°",
+          "tag": "answer",
+          "title": "Use alternate interior angles",
+          "narration": "SU crosses the parallel lines SX and TU. The alternate interior angles XSU and SUT are equal, so SUT is fifteen degrees."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "QR ∥ TU",
+          "tag": "figure",
+          "title": "Read the parallel lines",
+          "narration": "The arrow marks show that QR and TU are parallel. The diagram gives eighty degrees at Q and ninety-five degrees at S."
+        },
+        {
+          "n": 2,
+          "display": "∠PQR = 80°, ∠PSU = 95°",
+          "tag": "given",
+          "title": "Mark the two given angles",
+          "narration": "Both given angles are measured from the same slanted line through P, Q and S."
+        },
+        {
+          "n": 3,
+          "display": "SX ∥ QR ∥ TU, ∠PSX = 80°",
+          "tag": "corresponding",
+          "title": "Draw a horizontal ray SX to the right",
+          "narration": "Draw the ray through S. Corresponding angles made by the transversal PS with QR and SX are equal, so angle PSX is eighty degrees."
+        },
+        {
+          "n": 4,
+          "display": "∠XSU = 95° − 80°",
+          "tag": "subtract",
+          "title": "Find the angle below the new ray",
+          "narration": "Ray SX splits the ninety-five-degree angle at S. Subtract the eighty-degree part above SX to find the part below it."
+        },
+        {
+          "n": 5,
+          "display": "∠XSU = 15°",
+          "tag": "simplify",
+          "title": "Work out the difference",
+          "narration": "Ninety-five minus eighty leaves fifteen degrees between SX and SU."
+        },
+        {
+          "n": 6,
+          "display": "∠SUT = 15°",
+          "tag": "answer",
+          "title": "Use alternate interior angles",
+          "narration": "SU crosses the parallel lines SX and TU. The alternate interior angles XSU and SUT are equal, so SUT is fifteen degrees."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-029",
+      "questionId": "math-jamb-2012-029",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "A = \\frac{θ}{360°} × πr^{2}",
+          "tag": "formula",
+          "title": "Use the sector area formula",
+          "narration": "A sector covers the same fraction of the circle's area as its central angle does of a full turn."
+        },
+        {
+          "n": 2,
+          "display": "A = \\frac{150°}{360°} × π × 12^{2}",
+          "tag": "substitute",
+          "title": "Put the numbers into the formula",
+          "narration": "Divide the angle by the full turn, then multiply by pi times the radius squared."
+        },
+        {
+          "n": 3,
+          "display": "A = 60π cm^{2}",
+          "tag": "answer",
+          "title": "Find the area of the sector",
+          "narration": "One hundred and forty-four divided by twelve gives twelve. Multiply by five to get sixty pi square centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "A = \\frac{θ}{360°} × πr^{2}",
+          "tag": "formula",
+          "title": "Use the sector area formula",
+          "narration": "A sector covers the same fraction of the circle's area as its central angle does of a full turn."
+        },
+        {
+          "n": 2,
+          "display": "r = 12 cm, θ = 150°",
+          "tag": "given",
+          "title": "Read the radius and angle",
+          "narration": "Use twelve centimetres for the radius and one hundred and fifty degrees for the central angle."
+        },
+        {
+          "n": 3,
+          "display": "A = \\frac{150°}{360°} × π × 12^{2}",
+          "tag": "substitute",
+          "title": "Put the numbers into the formula",
+          "narration": "Divide the angle by the full turn, then multiply by pi times the radius squared."
+        },
+        {
+          "n": 4,
+          "display": "A = \\frac{5}{12} × 144π cm^{2}",
+          "tag": "simplify",
+          "title": "Reduce the fraction and square the radius",
+          "narration": "Divide the top and bottom of the angle fraction by thirty. Twelve squared is one hundred and forty-four."
+        },
+        {
+          "n": 5,
+          "display": "A = 60π cm^{2}",
+          "tag": "answer",
+          "title": "Find the area of the sector",
+          "narration": "One hundred and forty-four divided by twelve gives twelve. Multiply by five to get sixty pi square centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-035",
+      "questionId": "math-jamb-2012-035",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "180° − 135° = 45°",
+          "tag": "reference angle",
+          "title": "Find the acute reference angle",
+          "narration": "One hundred and thirty-five degrees is in the second quadrant. Subtract it from one hundred and eighty degrees to get forty-five degrees."
+        },
+        {
+          "n": 2,
+          "display": "cos 45° = \\frac{1}{\\sqrt{2}}",
+          "tag": "exact value",
+          "title": "Use an equal-legged right triangle",
+          "narration": "Take both legs to be one. Pythagoras gives the hypotenuse as the square root of two, so cosine is one over that length."
+        },
+        {
+          "n": 3,
+          "display": "cos 135° = −\\frac{\\sqrt{2}}{2}",
+          "tag": "answer",
+          "title": "Apply the negative sign",
+          "narration": "Give the forty-five-degree cosine the second-quadrant sign. The result is negative square root of two over two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "180° − 135° = 45°",
+          "tag": "reference angle",
+          "title": "Find the acute reference angle",
+          "narration": "One hundred and thirty-five degrees is in the second quadrant. Subtract it from one hundred and eighty degrees to get forty-five degrees."
+        },
+        {
+          "n": 2,
+          "display": "cos 135° = −cos 45°",
+          "tag": "sign",
+          "title": "Use the second-quadrant sign",
+          "narration": "Cosine is the horizontal coordinate on the unit circle. In the second quadrant that coordinate is negative."
+        },
+        {
+          "n": 3,
+          "display": "cos 45° = \\frac{1}{\\sqrt{2}}",
+          "tag": "exact value",
+          "title": "Use an equal-legged right triangle",
+          "narration": "Take both legs to be one. Pythagoras gives the hypotenuse as the square root of two, so cosine is one over that length."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}",
+          "tag": "rationalise",
+          "title": "Remove the root from the denominator",
+          "narration": "Multiply numerator and denominator by the square root of two. The denominator becomes two."
+        },
+        {
+          "n": 5,
+          "display": "cos 135° = −\\frac{\\sqrt{2}}{2}",
+          "tag": "answer",
+          "title": "Apply the negative sign",
+          "narration": "Give the forty-five-degree cosine the second-quadrant sign. The result is negative square root of two over two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-043",
+      "questionId": "math-jamb-2012-043",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Sum = mean × count",
+          "tag": "formula",
+          "title": "Recover the sum from the mean",
+          "narration": "The mean is the sum divided by how many values there are. Multiply by the count to get the sum back."
+        },
+        {
+          "n": 2,
+          "display": "S_{7} = 7 × 96 = 672",
+          "tag": "original total",
+          "title": "Find the sum of seven numbers",
+          "narration": "The seven numbers average ninety-six, so together they add up to six hundred and seventy-two."
+        },
+        {
+          "n": 3,
+          "display": "S_{8} = 896",
+          "tag": "evaluate",
+          "title": "Find the sum of eight numbers",
+          "narration": "Eight times one hundred and twelve is eight hundred and ninety-six."
+        },
+        {
+          "n": 4,
+          "display": "x = 224",
+          "tag": "answer",
+          "title": "Find the eighth number",
+          "narration": "Eight hundred and ninety-six minus six hundred and seventy-two gives two hundred and twenty-four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Sum = mean × count",
+          "tag": "formula",
+          "title": "Recover the sum from the mean",
+          "narration": "The mean is the sum divided by how many values there are. Multiply by the count to get the sum back."
+        },
+        {
+          "n": 2,
+          "display": "S_{7} = 7 × 96 = 672",
+          "tag": "original total",
+          "title": "Find the sum of seven numbers",
+          "narration": "The seven numbers average ninety-six, so together they add up to six hundred and seventy-two."
+        },
+        {
+          "n": 3,
+          "display": "S_{8} = 8 × 112",
+          "tag": "new total",
+          "title": "Use the new count and mean",
+          "narration": "There are now eight numbers, and their mean is one hundred and twelve. Use both new values."
+        },
+        {
+          "n": 4,
+          "display": "S_{8} = 896",
+          "tag": "evaluate",
+          "title": "Find the sum of eight numbers",
+          "narration": "Eight times one hundred and twelve is eight hundred and ninety-six."
+        },
+        {
+          "n": 5,
+          "display": "x = 896 − 672",
+          "tag": "difference",
+          "title": "Subtract the original sum",
+          "narration": "The first seven numbers are still included, so the difference between the two totals is exactly the added number."
+        },
+        {
+          "n": 6,
+          "display": "x = 224",
+          "tag": "answer",
+          "title": "Find the eighth number",
+          "narration": "Eight hundred and ninety-six minus six hundred and seventy-two gives two hundred and twenty-four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-048",
+      "questionId": "math-jamb-2012-048",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "N = \\frac{8!}{3!}",
+          "tag": "formula",
+          "title": "Divide out identical arrangements",
+          "narration": "Eight factorial treats every letter as different. Swapping the three identical Ts makes no new arrangement, so divide by three factorial."
+        },
+        {
+          "n": 2,
+          "display": "N = \\frac{40320}{6}",
+          "tag": "factorials",
+          "title": "Evaluate the factorials",
+          "narration": "Eight factorial is forty thousand three hundred and twenty, and three times two times one is six."
+        },
+        {
+          "n": 3,
+          "display": "N = 6720",
+          "tag": "answer",
+          "title": "Find the distinct arrangements",
+          "narration": "Dividing forty thousand three hundred and twenty by six gives six thousand seven hundred and twenty distinct arrangements."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "TOTALITY: 8 letters, 3 T's",
+          "tag": "count letters",
+          "title": "Count the letters and repeats",
+          "narration": "There are eight positions to fill. T occurs three times, and each other letter occurs once."
+        },
+        {
+          "n": 2,
+          "display": "N = \\frac{8!}{3!}",
+          "tag": "formula",
+          "title": "Divide out identical arrangements",
+          "narration": "Eight factorial treats every letter as different. Swapping the three identical Ts makes no new arrangement, so divide by three factorial."
+        },
+        {
+          "n": 3,
+          "display": "N = \\frac{40320}{6}",
+          "tag": "factorials",
+          "title": "Evaluate the factorials",
+          "narration": "Eight factorial is forty thousand three hundred and twenty, and three times two times one is six."
+        },
+        {
+          "n": 4,
+          "display": "6720 × 6 = 40320",
+          "tag": "check",
+          "title": "Check the quotient by multiplying back",
+          "narration": "Each distinct word arrangement accounts for six arrangements when the Ts are treated as different. The product gives the original total."
+        },
+        {
+          "n": 5,
+          "display": "N = 6720",
+          "tag": "answer",
+          "title": "Find the distinct arrangements",
+          "narration": "Dividing forty thousand three hundred and twenty by six gives six thousand seven hundred and twenty distinct arrangements."
         }
       ]
     }
