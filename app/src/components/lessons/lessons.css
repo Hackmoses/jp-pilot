@@ -394,3 +394,36 @@
   .jp-biology-hand,
   .jp-biology-player .jp-concept-btn { transition: none; }
 }
+
+.jp-biology-contour {
+  fill: none;
+  stroke: var(--ink-2);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.jp-biology-shade {
+  fill: var(--ink-2);
+  stroke: var(--ink);
+  stroke-width: 1.25;
+}
+
+.jp-biology-svg[viewBox="0 0 320 274"] text {
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .jp-biology-player .jp-concept-paper {
+    padding-inline: var(--space-2);
+  }
+
+  .jp-biology-player .jp-concept-controls {
+    gap: var(--space-1);
+    padding-inline: var(--space-2);
+  }
+
+  .jp-biology-svg[viewBox="0 0 380 248"] text {
+    font-size: 15.5px;
+  }
+}

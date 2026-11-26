@@ -1,0 +1,100 @@
+{
+  "subject": "biology",
+  "topicId": "7",
+  "lessons": [
+    {
+      "id": "biology-vision",
+      "title": "The eye, vision and common defects",
+      "scenes": [
+        {
+          "id": "biology-vision-1",
+          "show": "",
+          "say": "The iris is the ring at the front of the eye that changes pupil size and controls incoming light. Rods in the retina are photoreceptors that are especially sensitive in dim light.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "Rods",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-vision-2",
+          "show": "",
+          "say": "In long-sightedness, or hyperopia, rays from a near object would focus behind the retina without enough accommodation. A convex spectacle lens converges incoming rays before they enter the eye, helping the image focus on the retina.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "In",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-vision-3",
+          "show": "",
+          "say": "A cataract is clouding of the lens inside the eye, so light is scattered or blocked. In common astigmatism the cornea has different curvatures in different directions, giving unequal focusing power.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "In",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-vision-4",
+          "show": "",
+          "say": "JAMB asks which cells work in dim light, which lens corrects long-sightedness, and how cataract differs from astigmatism. Blue arrows trace the path of light.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "dim",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "lens",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "cataract",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which part of the eye regulates how much light enters?",
+        "options": [
+          "Retina",
+          "Optic nerve",
+          "Iris"
+        ],
+        "answerIndex": 2,
+        "feedback": "The iris changes the size of the pupil, the opening through which light enters."
+      }
+    }
+  ]
+}

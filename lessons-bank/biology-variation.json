@@ -1,0 +1,95 @@
+{
+  "subject": "biology",
+  "topicId": "10",
+  "lessons": [
+    {
+      "id": "biology-variation",
+      "title": "Variation, selection and adaptation",
+      "scenes": [
+        {
+          "id": "biology-variation-1",
+          "show": "",
+          "say": "When people are recorded as tasters or non-tasters of PTC, the categories represent discontinuous variation. Sensitivity itself can vary. Fingerprints vary in ridge patterns. Loops, whorls and arches are examples of categories used to describe them.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "When",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "Fingerprints",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-variation-2",
+          "show": "",
+          "say": "If an inherited variant improves survival or reproduction in an environment, it can become more frequent over generations. In a countershaded fish, a dark back and light underside can make its outline harder to detect against different backgrounds.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "If",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "In",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-variation-3",
+          "show": "",
+          "say": "Whale flippers and fish fins are similar in function. They illustrate convergent evolution of adaptations for swimming.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Whale",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-variation-4",
+          "show": "",
+          "say": "JAMB may ask you to recognise separate variation classes, explain why countershading can help, or identify convergence from unrelated structures with similar roles. In the centre, blue traces the change across generations.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "classes",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "countershading",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "convergence",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "What process increases the frequency of an inherited trait that improves reproductive success?",
+        "options": [
+          "Osmosis",
+          "Fertilisation",
+          "Natural selection"
+        ],
+        "answerIndex": 2,
+        "feedback": "Individuals with the trait tend to leave more offspring under those conditions."
+      }
+    }
+  ]
+}

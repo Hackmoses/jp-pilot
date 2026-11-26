@@ -1,0 +1,95 @@
+{
+  "subject": "biology",
+  "topicId": "9",
+  "lessons": [
+    {
+      "id": "biology-populations",
+      "title": "Populations, sampling and dispersal",
+      "scenes": [
+        {
+          "id": "biology-populations-1",
+          "show": "",
+          "say": "A population consists of members of one species in an area. Births and immigration add individuals; deaths and emigration remove them. Crowding can intensify competition for food or help disease spread. Effects that vary with density are density-dependent.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "Crowding",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-populations-2",
+          "show": "",
+          "say": "A quadrat marks a known area. Counts from several samples can estimate how many plants or slow animals live per unit area.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-1-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-populations-3",
+          "show": "",
+          "say": "Winged reproductive termites leave the nest in mating flights. Dispersers can establish new colonies after mating. In a large simultaneous swarm, predators may eat many termites but can only eat so many. Some reproductives escape and disperse.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Winged",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "In",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-populations-4",
+          "show": "",
+          "say": "JAMB asks what population dynamics studies, which effects increase when a population is crowded and why termite reproductives fly out together. The blue arrows show direction of movement or change over time.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "population",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "crowded",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "termite",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which tool samples plant abundance in a fixed area?",
+        "options": [
+          "Hygrometer",
+          "Thermometer",
+          "Quadrat"
+        ],
+        "answerIndex": 2,
+        "feedback": "A quadrat marks a known area so counts from different places can be compared."
+      }
+    }
+  ]
+}

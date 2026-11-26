@@ -9,7 +9,7 @@
         {
           "id": "biology-nephron-1",
           "show": "",
-          "say": "Fish, amphibians, birds and mammals use kidneys to make urine. Zoom into its outer cortex to find the start of a nephron, the kidney's filtering unit.",
+          "say": "Vertebrate kidneys remove wastes and help control water and salts. The cortex is the kidney's outer region, where each nephron begins.",
           "visual": "0",
           "beats": [
             {
@@ -32,11 +32,11 @@
         {
           "id": "biology-nephron-2",
           "show": "",
-          "say": "Blood enters the glomerulus. Pressure forces water and small solutes into Bowman's capsule. Blood cells and most proteins stay in the blood.",
+          "say": "Blood follows the red vessel into the glomerulus, a knot of capillaries. The blue arrow shows pressure filtering water and small solutes into Bowman's capsule, a cup around the glomerulus. Blood cells and most proteins stay in the vessels.",
           "visual": "1",
           "beats": [
             {
-              "word": "enters",
+              "word": "red",
               "action": "in",
               "label": ""
             },
@@ -46,7 +46,7 @@
               "label": ""
             },
             {
-              "word": "forces",
+              "word": "filtering",
               "action": "filter",
               "label": ""
             },
@@ -65,7 +65,7 @@
         {
           "id": "biology-nephron-3",
           "show": "",
-          "say": "The proximal tubule reabsorbs glucose and other useful substances into the blood. Water leaves the descending limb of the loop of Henle and can leave the collecting duct.",
+          "say": "The proximal convoluted tubule begins after the capsule and returns glucose to the blood along the green arrow. Water can leave the descending limb of the loop of Henle and the collecting duct, which receives filtrate from nephrons.",
           "visual": "2",
           "beats": [
             {
@@ -103,7 +103,7 @@
         {
           "id": "biology-nephron-4",
           "show": "Filter first, then reabsorb.",
-          "say": "What remains leaves as urine through the ureter. Remember: pressure filters, then tubules take useful substances back.",
+          "say": "The remaining fluid is urine. Amber arrows show urine leaving through the ureter. JAMB asks where filtrate collects, where glucose returns to blood and why healthy urine contains very little glucose.",
           "visual": "3",
           "beats": [
             {
@@ -117,24 +117,6 @@
               "label": ""
             },
             {
-              "word": "filters",
-              "action": "filter",
-              "label": ""
-            },
-            {
-              "word": "tubules",
-              "action": "prox",
-              "label": ""
-            }
-          ]
-        },
-        {
-          "id": "biology-nephron-5",
-          "show": "",
-          "say": "JAMB asks where filtrate collects, where glucose returns to the blood, and what healthy urine contains.",
-          "visual": "4",
-          "beats": [
-            {
               "word": "collects",
               "action": "capsule",
               "label": ""
@@ -142,11 +124,6 @@
             {
               "word": "glucose",
               "action": "reabs",
-              "label": ""
-            },
-            {
-              "word": "urine",
-              "action": "out",
               "label": ""
             }
           ]

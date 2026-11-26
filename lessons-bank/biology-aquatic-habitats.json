@@ -1,0 +1,105 @@
+{
+  "subject": "biology",
+  "topicId": "9",
+  "lessons": [
+    {
+      "id": "biology-aquatic-habitats",
+      "title": "Freshwater, marine and estuary habitats",
+      "scenes": [
+        {
+          "id": "biology-aquatic-habitats-1",
+          "show": "",
+          "say": "Terrestrial habitats are on land. Water availability affects which organisms live there. Aquatic habitats are water-based and include rivers, lakes, estuaries and oceans. Salinity measures dissolved salts.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Terrestrial",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "Aquatic",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-aquatic-habitats-2",
+          "show": "",
+          "say": "Freshwater rivers and lakes generally have low salinity compared with the sea. An estuary lies near a river mouth where freshwater mixes with seawater. Its saltiness often changes with the tide. The sea is normally much saltier than a river. Dogfish are sharks commonly found in marine habitats.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Freshwater",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "An",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-1-2",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-aquatic-habitats-3",
+          "show": "",
+          "say": "Tides are regular rises and falls in water level driven chiefly by the Moon’s gravity, with the Sun also contributing. Mangroves grow in many sheltered tropical shores. Some have stilt roots for support or specialised roots that obtain air in waterlogged mud.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Tides",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "Mangroves",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-aquatic-habitats-4",
+          "show": "",
+          "say": "JAMB asks how freshwater differs from seawater, what regularly changes in an estuary and where to find mangrove roots. Blue arrows trace both water sources into the estuary.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "freshwater",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "estuary",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "mangrove",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Where does river water regularly mix with seawater?",
+        "options": [
+          "Estuary",
+          "Inland freshwater pond",
+          "Desert"
+        ],
+        "answerIndex": 0,
+        "feedback": "Estuaries receive both freshwater and seawater. Tides can change their salinity."
+      }
+    }
+  ]
+}

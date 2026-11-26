@@ -1,0 +1,110 @@
+{
+  "subject": "biology",
+  "topicId": "5",
+  "lessons": [
+    {
+      "id": "biology-ventilation",
+      "title": "Breathing and gas exchange surfaces",
+      "scenes": [
+        {
+          "id": "biology-ventilation-1",
+          "show": "",
+          "say": "Air enters through the nose and travels down the trachea. The trachea branches into the bronchi. Inside the lungs these divide into smaller bronchioles. At the alveoli oxygen moves into capillary blood and carbon dioxide moves into the air.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "nose",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "bronchi",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "bronchioles",
+              "action": "part-0-2",
+              "label": ""
+            },
+            {
+              "word": "alveoli",
+              "action": "part-0-3",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-ventilation-2",
+          "show": "",
+          "say": "During inhalation the diaphragm contracts and flattens. The ribs lift outwards and the chest expands. Air travels down the trachea as pressure inside the lungs falls.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "diaphragm",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "trachea",
+              "action": "part-1-t",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-ventilation-3",
+          "show": "",
+          "say": "In a typical bony fish, water enters through the mouth, passes over the gills and leaves under the operculum. An insect spiracle admits air to the tracheal tubes.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "fish",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "spiracle",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-ventilation-4",
+          "show": "",
+          "say": "JAMB asks for the airway order, the muscle separating chest and abdomen, and the route water takes through a fish. Blue follows air or water, green marks oxygen and amber marks carbon dioxide.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "order",
+              "action": "part-0-2",
+              "label": ""
+            },
+            {
+              "word": "muscle",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "fish",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which airway connects the bronchi to the alveoli?",
+        "options": [
+          "Trachea",
+          "Oesophagus",
+          "Bronchioles"
+        ],
+        "answerIndex": 2,
+        "feedback": "The bronchi branch into bronchioles, which lead to the air sacs."
+      }
+    }
+  ]
+}

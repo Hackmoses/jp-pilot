@@ -1,0 +1,90 @@
+{
+  "subject": "biology",
+  "topicId": "9",
+  "lessons": [
+    {
+      "id": "biology-aquatic-adaptations",
+      "title": "Living and moving in water",
+      "scenes": [
+        {
+          "id": "biology-aquatic-adaptations-1",
+          "show": "",
+          "say": "Water supports a submerged shoot. It can take up water directly, so roots and xylem are often reduced in submerged species.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Water",
+              "action": "part-0-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-aquatic-adaptations-2",
+          "show": "",
+          "say": "A streamlined fish has a smooth tapered profile. As it swims, water moves past with less drag than around a blunt body.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-1-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-aquatic-adaptations-3",
+          "show": "",
+          "say": "An earthworm exchanges gases through its moist skin, called cutaneous respiration. Many amphibians can do this too. A thin surface lets oxygen diffuse into nearby blood vessels. Carbon dioxide can diffuse outward across the same surface.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "An",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-aquatic-adaptations-4",
+          "show": "",
+          "say": "JAMB asks which tissues are often reduced in submerged shoots, how streamlining helps fish and what makes skin suitable for gas exchange. The blue arrows show local water movement or oxygen entry.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "reduced",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "helps",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "oxygen",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "What feature reduces drag for a fish?",
+        "options": [
+          "Broad blunt front",
+          "Irregular raised surface",
+          "Streamlined shape"
+        ],
+        "answerIndex": 2,
+        "feedback": "Water flows past a streamlined profile with less resistance."
+      }
+    }
+  ]
+}

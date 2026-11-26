@@ -1,0 +1,105 @@
+{
+  "subject": "biology",
+  "topicId": "2",
+  "lessons": [
+    {
+      "id": "biology-insects",
+      "title": "Insect growth and feeding",
+      "scenes": [
+        {
+          "id": "biology-insects-1",
+          "show": "",
+          "say": "The egg is the stage in which the embryo develops before hatching. The larva hatches from the egg. In flies it feeds and grows and usually looks unlike the adult. The pupa is the stage between larva and adult, when many adult structures develop. The adult emerges from the pupa and is usually the reproductive stage. Mosquitoes, houseflies and blackflies follow this order.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-0-2",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-0-3",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-insects-2",
+          "show": "",
+          "say": "Ecdysis is the shedding of an old external cuticle so an arthropod can expand before its new cuticle hardens.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Ecdysis",
+              "action": "part-1-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-insects-3",
+          "show": "",
+          "say": "Chewing insects have mandibles near the mouth that cut or crush solid food. In a blood-feeding female mosquito, slender mouthparts at the head pierce skin and carry liquid inward.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Chewing",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "In",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-insects-4",
+          "show": "",
+          "say": "For JAMB, the blue arrows along the ground and into the air show development through four stages. Be ready to name the pupal stage, give the term for shedding the old cuticle, and identify piercing mouthparts.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "four",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "pupal",
+              "action": "part-0-2",
+              "label": ""
+            },
+            {
+              "word": "piercing",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "What stage follows the larva in complete metamorphosis?",
+        "options": [
+          "Adult",
+          "Pupa",
+          "Egg"
+        ],
+        "answerIndex": 1,
+        "feedback": "In complete metamorphosis the sequence is egg, larva, pupa and then adult."
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "subject": "biology",
+  "topicId": "1",
+  "lessons": [
+    {
+      "id": "biology-cell-structures",
+      "title": "Plant and microbial cells",
+      "scenes": [
+        {
+          "id": "biology-cell-structures-1",
+          "show": "",
+          "say": "Cellulose strengthens the wall outside the membrane of a typical plant cell and helps the cell keep its shape. Cytoplasm lies inside the cell membrane, surrounds the organelles and contains the fluid where many reactions occur.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Cellulose",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "Cytoplasm",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-cell-structures-2",
+          "show": "",
+          "say": "Mitochondria sit in the cytoplasm and carry out the main aerobic stages that make ATP. Chloroplasts in plant cells and many algae capture light to make sugars by photosynthesis.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Mitochondria",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "Chloroplasts",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-cell-structures-3",
+          "show": "",
+          "say": "A bacterial chromosome lies in a region of cytoplasm called the nucleoid, without a nuclear membrane. Spirogyra grows as a filament of cells. Spiral chloroplasts line the inside of each cell.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "Spirogyra",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-cell-structures-4",
+          "show": "",
+          "say": "JAMB may ask which cells have cellulose, which organelle captures light, or why a bacterial chromosome in the cytoplasm is described as being in a nucleoid. Blue arrows trace light into a chloroplast and the direction of filament extension.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "cellulose",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "captures",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "nucleoid",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Where is a typical bacterium’s chromosome?",
+        "options": [
+          "Nucleoid",
+          "Chloroplast",
+          "Membrane-bound nucleus"
+        ],
+        "answerIndex": 0,
+        "feedback": "The nucleoid is a region of cytoplasm without a nuclear envelope."
+      }
+    }
+  ]
+}

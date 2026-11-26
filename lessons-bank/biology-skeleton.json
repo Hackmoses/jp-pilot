@@ -1,0 +1,95 @@
+{
+  "subject": "biology",
+  "topicId": "2",
+  "lessons": [
+    {
+      "id": "biology-skeleton",
+      "title": "The mammalian skeleton and joints",
+      "scenes": [
+        {
+          "id": "biology-skeleton-1",
+          "show": "",
+          "say": "The skeleton supports the body. The skull encloses the brain and the rib cage protects the heart and lungs. A suture is a fibrous joint between bones of the skull. It usually moves very little in an adult.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-skeleton-2",
+          "show": "",
+          "say": "The pubic symphysis is the cartilaginous joint where the left and right pubic bones meet at the front of the pelvis. The femur runs from the hip to the knee. It is the longest bone in the human body.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-skeleton-3",
+          "show": "",
+          "say": "Skeletal muscle lies next to bones and pulls through tendons when it contracts. Bone and cartilage provide support.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Skeletal",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-skeleton-4",
+          "show": "",
+          "say": "For JAMB, locate the joint at the front of the pelvis, identify the longest bone, and distinguish contracting muscle from skeletal materials. The blue arrows show the direction of muscle pull across a joint.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "pelvis",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "longest",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "pull",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "What joins the two pubic bones at the front?",
+        "options": [
+          "Skull suture",
+          "Femur",
+          "Pubic symphysis"
+        ],
+        "answerIndex": 2,
+        "feedback": "The pubic symphysis is the cartilaginous joint at the front of the pelvic girdle."
+      }
+    }
+  ]
+}

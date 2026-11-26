@@ -1,0 +1,95 @@
+{
+  "subject": "biology",
+  "topicId": "2",
+  "lessons": [
+    {
+      "id": "biology-birds",
+      "title": "How birds fly and feed",
+      "scenes": [
+        {
+          "id": "biology-birds-1",
+          "show": "",
+          "say": "A bird’s wing is a modified forelimb. Its feathered surface helps generate lift and, during active flapping, thrust. A flight quill has a stiff shaft and an interlocking vane. Wing quills make much of the aerodynamic surface.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-birds-2",
+          "show": "",
+          "say": "A long narrow bill can reach nectar inside a tubular flower. Hummingbird bill shapes vary with the flowers they visit. A short stout bill can withstand the force needed to crack seeds, as in some finches.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-birds-3",
+          "show": "",
+          "say": "The curved talons on a hunting bird’s feet close around prey and hold it while the bird feeds.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-birds-4",
+          "show": "",
+          "say": "For JAMB, match the quill feather to flight, a narrow bill to reaching nectar, and a short stout bill to crushing seed. The blue arrows show the wing stroke, bill approach and grip.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "quill",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "nectar",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "grip",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which structure lets a raptor hold prey?",
+        "options": [
+          "Long sharp talons",
+          "Broad tail vanes",
+          "A thick seed-cracking bill"
+        ],
+        "answerIndex": 0,
+        "feedback": "The curved claws on a raptor’s feet grasp and hold prey."
+      }
+    }
+  ]
+}

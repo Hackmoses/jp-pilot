@@ -17,6 +17,7 @@ const clips = new Map(list.map((clip) => {
 }))
 await mkdir(output, { recursive: true })
 const index = []
+const biologyTopics = new Map()
 const wordBank = JSON.parse(await readFile(new URL('english-oral-words.json', bank), 'utf8'))
 const audioWords = new Set(await readdir(new URL('../public/audio/words/', import.meta.url)).catch((error) => {
   if (error.code === 'ENOENT') return []
@@ -49,6 +50,15 @@ for (const name of (await readdir(bank)).filter((file) => file.endsWith('.json')
     if (Object.keys(data.words).length !== pronunciations.size) throw new Error(name + ' references a missing pronunciation')
   }
   await writeFile(new URL(name, output), spokenWords || entries.length ? JSON.stringify(data) : text)
+  if (topic.subject === 'biology') {
+    const grouped = biologyTopics.get(topic.topicId) ?? { subject: 'biology', topicId: topic.topicId, lessons: [], clips: {} }
+    grouped.lessons.push(...topic.lessons)
+    Object.assign(grouped.clips, data.clips)
+    biologyTopics.set(topic.topicId, grouped)
+  }
   index.push({ subject: topic.subject, topicId: topic.topicId, file: name, lessons })
+}
+for (const [chapter, topic] of biologyTopics) {
+  await writeFile(new URL('biology-study-' + chapter + '.json', output), JSON.stringify(topic))
 }
 await writeFile(new URL('index.json', output), JSON.stringify(index, null, 2) + '\n')
