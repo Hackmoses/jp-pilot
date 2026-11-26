@@ -1,0 +1,3257 @@
+{
+  "version": 1,
+  "subject": "biology",
+  "count": 50,
+  "questions": [
+    {
+      "id": "bio-jamb-2010-011",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Dicot stem anatomy",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which statement correctly describes a transverse section of a typical dicot stem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The epidermis is completely encircled by the cortex",
+          "why": "The cortex is inside the epidermis.",
+          "whyWrong": "The cortex is inside the epidermis."
+        },
+        {
+          "id": "b",
+          "text": "The xylem is more interiorly located than the phloem",
+          "why": "In a dicot stem, xylem faces the pith and phloem faces the outside of each vascular bundle.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The cambium lies between the cortex and the vascular bundles",
+          "why": "The vascular cambium lies between xylem and phloem.",
+          "whyWrong": "The vascular cambium lies between xylem and phloem."
+        },
+        {
+          "id": "d",
+          "text": "The vascular bundles are randomly scattered within the cortex",
+          "why": "A typical dicot stem has its bundles in a ring.",
+          "whyWrong": "A typical dicot stem has its bundles in a ring."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the tissue on the pith side of the bundle.",
+      "explanation": "In a dicot stem, xylem faces the pith and phloem faces the outside of each vascular bundle.",
+      "trap": "The cortex is inside the epidermis.",
+      "mnemonic": "Xylem in, phloem out.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Xylem in, phloem out."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The cortex is inside the epidermis."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 11,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2010-017",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Systemic circulation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which chamber supplies the force that drives blood into the main body circulation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Veins",
+          "why": "Veins return blood to the heart.",
+          "whyWrong": "Veins return blood to the heart."
+        },
+        {
+          "id": "b",
+          "text": "Right atrium",
+          "why": "The right atrium empties into the right ventricle.",
+          "whyWrong": "The right atrium empties into the right ventricle."
+        },
+        {
+          "id": "c",
+          "text": "Arteries",
+          "why": "The left ventricle contracts and drives blood through the aorta to the body tissues.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Left ventricle",
+          "why": "Arteries carry blood from the pump.",
+          "whyWrong": "Arteries carry blood from the pump."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Follow the aorta back to its chamber.",
+      "explanation": "The left ventricle contracts and drives blood through the aorta to the body tissues.",
+      "trap": "Veins return blood to the heart.",
+      "mnemonic": "The left ventricle launches blood into the body.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The left ventricle launches blood into the body."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Veins return blood to the heart."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2010-026",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Nutrition",
+      "concept": "Stomach acidity",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed section of the human digestive tract normally holds strongly acidic contents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stomach",
+          "why": "The stomach secretes hydrochloric acid, providing the low pH required for pepsin activity.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Duodenum",
+          "why": "Bicarbonate buffers the duodenum.",
+          "whyWrong": "Bicarbonate buffers the duodenum."
+        },
+        {
+          "id": "c",
+          "text": "Ileum",
+          "why": "The ileum receives contents after most gastric acid has been neutralized.",
+          "whyWrong": "The ileum receives contents after most gastric acid has been neutralized."
+        },
+        {
+          "id": "d",
+          "text": "Colon",
+          "why": "The colon does not secrete gastric acid.",
+          "whyWrong": "The colon does not secrete gastric acid."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the organ that activates pepsin.",
+      "explanation": "The stomach secretes hydrochloric acid, providing the low pH required for pepsin activity.",
+      "trap": "Bicarbonate buffers the duodenum.",
+      "mnemonic": "Gastric juice makes the stomach acidic.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Gastric juice makes the stomach acidic."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Bicarbonate buffers the duodenum."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2010-029",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Nutrition",
+      "concept": "Mycorrhizal mineral uptake",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "How do mycorrhizal fungi help plant roots obtain nutrients?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Absorbing mineral ions from the soil",
+          "why": "Fungal hyphae extend beyond the root surface and absorb mineral ions such as phosphate from soil.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Protecting roots from infection",
+          "why": "Protection can occur, but it does not describe nutrient uptake.",
+          "whyWrong": "Protection can occur, but it does not describe nutrient uptake."
+        },
+        {
+          "id": "c",
+          "text": "Helping roots use atmospheric nitrogen",
+          "why": "Nitrogen fixation is carried out by certain microorganisms such as rhizobia.",
+          "whyWrong": "Nitrogen fixation is carried out by certain microorganisms such as rhizobia."
+        },
+        {
+          "id": "d",
+          "text": "Acting as a growth regulator",
+          "why": "A growth regulator is a signalling substance.",
+          "whyWrong": "A growth regulator is a signalling substance."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the extra surface area supplied by fungal threads.",
+      "explanation": "Fungal hyphae extend beyond the root surface and absorb mineral ions such as phosphate from soil.",
+      "trap": "Protection can occur, but it does not describe nutrient uptake.",
+      "mnemonic": "Mycorrhizae extend a root’s reach.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Mycorrhizae extend a root’s reach."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Protection can occur, but it does not describe nutrient uptake."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2010-030",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Placental exchange",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which structure forms the exchange surface separating maternal and fetal blood?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Placenta",
+          "why": "Maternal blood and fetal capillaries remain separate within the placenta, where gases and nutrients cross tissues between them.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Liver",
+          "why": "The liver processes substances within the fetus.",
+          "whyWrong": "The liver processes substances within the fetus."
+        },
+        {
+          "id": "c",
+          "text": "Umbilical cord",
+          "why": "The umbilical cord connects the fetus to the exchange organ.",
+          "whyWrong": "The umbilical cord connects the fetus to the exchange organ."
+        },
+        {
+          "id": "d",
+          "text": "Uterine wall",
+          "why": "The uterine wall supports implantation but the exchange barrier is placental tissue.",
+          "whyWrong": "The uterine wall supports implantation but the exchange barrier is placental tissue."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow the umbilical cord to its attachment.",
+      "explanation": "Maternal blood and fetal capillaries remain separate within the placenta, where gases and nutrients cross tissues between them.",
+      "trap": "The liver processes substances within the fetus.",
+      "mnemonic": "Placenta exchanges materials between two circulations.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Placenta exchanges materials between two circulations."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The liver processes substances within the fetus."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 30,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2010-032",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Marine habitat",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed animal lives mainly in the sea?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Achatina",
+          "why": "Achatina is a land snail.",
+          "whyWrong": "Achatina is a land snail."
+        },
+        {
+          "id": "b",
+          "text": "Tilapia",
+          "why": "Tilapia usually inhabit freshwater.",
+          "whyWrong": "Tilapia usually inhabit freshwater."
+        },
+        {
+          "id": "c",
+          "text": "Dogfish",
+          "why": "Dogfish are sharks found predominantly in marine waters.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Tortoise",
+          "why": "Tortoises are terrestrial reptiles.",
+          "whyWrong": "Tortoises are terrestrial reptiles."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify the small shark.",
+      "explanation": "Dogfish are sharks found predominantly in marine waters.",
+      "trap": "Achatina is a land snail.",
+      "mnemonic": "Dogfish are marine sharks.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Dogfish are marine sharks."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Achatina is a land snail."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2010-041",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Genetics & heredity",
+      "concept": "Discontinuous variation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Some people taste dilute phenylthiocarbamide as bitter. Others find it tasteless. Which kind of variation does the classification illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taste bud variation",
+          "why": "Taste buds are sensory structures and do not name the statistical pattern.",
+          "whyWrong": "Taste buds are sensory structures and do not name the statistical pattern."
+        },
+        {
+          "id": "b",
+          "text": "Discontinuous variation",
+          "why": "The reported outcomes form distinct taster and non-taster groups, so the classification is discontinuous.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Morphological variation",
+          "why": "The test describes a response, not visible anatomy.",
+          "whyWrong": "The test describes a response, not visible anatomy."
+        },
+        {
+          "id": "d",
+          "text": "Continuous variation",
+          "why": "Continuous variation would use a graded range.",
+          "whyWrong": "Continuous variation would use a graded range."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Sort the results into groups.",
+      "explanation": "The reported outcomes form distinct taster and non-taster groups, so the classification is discontinuous.",
+      "trap": "Taste buds are sensory structures and do not name the statistical pattern.",
+      "mnemonic": "Separate categories indicate discontinuous variation.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Separate categories indicate discontinuous variation."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Taste buds are sensory structures and do not name the statistical pattern."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 41,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2011-012",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Cell biology",
+      "concept": "Osmosis in cells",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which solution causes a living animal cell to lose water and shrink?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypotonic solution",
+          "why": "A hypotonic solution drives net water entry.",
+          "whyWrong": "A hypotonic solution drives net water entry."
+        },
+        {
+          "id": "b",
+          "text": "Isotonic solution",
+          "why": "An isotonic solution produces no net movement of water.",
+          "whyWrong": "An isotonic solution produces no net movement of water."
+        },
+        {
+          "id": "c",
+          "text": "Deionized water",
+          "why": "Deionized water is very dilute and drives water into the cell.",
+          "whyWrong": "Deionized water is very dilute and drives water into the cell."
+        },
+        {
+          "id": "d",
+          "text": "Hypertonic solution",
+          "why": "A hypertonic external solution draws water out of the cell by osmosis.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare the effective solute concentrations.",
+      "explanation": "A hypertonic external solution draws water out of the cell by osmosis.",
+      "trap": "A hypotonic solution drives net water entry.",
+      "mnemonic": "Hypertonic outside means water moves out.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Hypertonic outside means water moves out."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A hypotonic solution drives net water entry."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2011-036",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Habitat classification",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What are the two broad habitat classes based on whether organisms live on land or in water?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Biotic and abiotic",
+          "why": "Biotic and abiotic describe factors in a habitat.",
+          "whyWrong": "Biotic and abiotic describe factors in a habitat."
+        },
+        {
+          "id": "b",
+          "text": "Aquatic and terrestrial",
+          "why": "Aquatic habitats are water-based. Terrestrial habitats are land-based.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Arboreal and marine biomes",
+          "why": "Arboreal and marine describe particular habitat types.",
+          "whyWrong": "Arboreal and marine describe particular habitat types."
+        },
+        {
+          "id": "d",
+          "text": "Microhabitats and macrohabitats",
+          "why": "Microhabitat and macrohabitat distinguish spatial scale.",
+          "whyWrong": "Microhabitat and macrohabitat distinguish spatial scale."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use the environment’s main physical medium.",
+      "explanation": "Aquatic habitats are water-based. Terrestrial habitats are land-based.",
+      "trap": "Biotic and abiotic describe factors in a habitat.",
+      "mnemonic": "Aqua means water. Terra means land.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Aqua means water. Terra means land."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Biotic and abiotic describe factors in a habitat."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 36,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2011-040",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Nigerian forest zones",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of these biomes is characteristic of southwestern Nigeria’s humid belt?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Temperate forest",
+          "why": "Temperate forests occur outside the tropical belt.",
+          "whyWrong": "Temperate forests occur outside the tropical belt."
+        },
+        {
+          "id": "b",
+          "text": "Tropical rainforest",
+          "why": "The humid southwestern belt lies largely within the tropical rainforest zone.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Tropical woodland",
+          "why": "Tropical woodland is associated with a drier climate.",
+          "whyWrong": "Tropical woodland is associated with a drier climate."
+        },
+        {
+          "id": "d",
+          "text": "Desert",
+          "why": "Deserts have very low rainfall.",
+          "whyWrong": "Deserts have very low rainfall."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the vegetation that high seasonal rainfall supports.",
+      "explanation": "The humid southwestern belt lies largely within the tropical rainforest zone.",
+      "trap": "Temperate forests occur outside the tropical belt.",
+      "mnemonic": "Humid southwest means tropical rainforest.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Humid southwest means tropical rainforest."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Temperate forests occur outside the tropical belt."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 40,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-011",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Bird and reptile similarities",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed feature of the external covering occurs in both birds and reptiles such as lizards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Feathers",
+          "why": "Feathers characterize living birds among the groups compared.",
+          "whyWrong": "Feathers characterize living birds among the groups compared."
+        },
+        {
+          "id": "b",
+          "text": "Beak",
+          "why": "A typical lizard has jaws but no birdlike beak.",
+          "whyWrong": "A typical lizard has jaws but no birdlike beak."
+        },
+        {
+          "id": "c",
+          "text": "Skeleton",
+          "why": "An internal skeleton is shared by many vertebrate classes.",
+          "whyWrong": "An internal skeleton is shared by many vertebrate classes."
+        },
+        {
+          "id": "d",
+          "text": "Scales",
+          "why": "Birds retain scales, particularly on the legs and feet, and reptiles also have scales.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look at the lower leg of a bird.",
+      "explanation": "Birds retain scales, particularly on the legs and feet, and reptiles also have scales.",
+      "trap": "Feathers characterize living birds among the groups compared.",
+      "mnemonic": "Feathers above, scales below.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Feathers above, scales below."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Feathers characterize living birds among the groups compared."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 11,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-013",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Cell biology",
+      "concept": "Root epidermis",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed plant part normally lacks a waterproof cuticle at its absorptive surface?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leaf",
+          "why": "Aerial leaves usually have a cuticle that limits water loss.",
+          "whyWrong": "Aerial leaves usually have a cuticle that limits water loss."
+        },
+        {
+          "id": "b",
+          "text": "Stem",
+          "why": "Aerial stems typically have a protective surface.",
+          "whyWrong": "Aerial stems typically have a protective surface."
+        },
+        {
+          "id": "c",
+          "text": "Root",
+          "why": "Young roots absorb soil water and minerals through a permeable epidermis and root hairs.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Shoot",
+          "why": "Aerial shoots need protection from water loss.",
+          "whyWrong": "Aerial shoots need protection from water loss."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Find the organ that takes up soil water.",
+      "explanation": "Young roots absorb soil water and minerals through a permeable epidermis and root hairs.",
+      "trap": "Aerial leaves usually have a cuticle that limits water loss.",
+      "mnemonic": "Absorbing roots need a permeable surface.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Absorbing roots need a permeable surface."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Aerial leaves usually have a cuticle that limits water loss."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-014",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Male reproductive ducts",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which duct in a male mammal carries both urine and semen at different times?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Urethra",
+          "why": "The urethra opens outside the body and carries both streams at separate times.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Ureter",
+          "why": "The ureter takes urine from a kidney to the bladder.",
+          "whyWrong": "The ureter takes urine from a kidney to the bladder."
+        },
+        {
+          "id": "c",
+          "text": "Bladder",
+          "why": "The bladder stores urine.",
+          "whyWrong": "The bladder stores urine."
+        },
+        {
+          "id": "d",
+          "text": "Seminal vesicle",
+          "why": "A seminal vesicle contributes fluid to semen.",
+          "whyWrong": "A seminal vesicle contributes fluid to semen."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the shared final passage to the exterior.",
+      "explanation": "The urethra opens outside the body and carries both streams at separate times.",
+      "trap": "The ureter takes urine from a kidney to the bladder.",
+      "mnemonic": "Ureters reach the bladder. The urethra exits.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ureters reach the bladder. The urethra exits."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The ureter takes urine from a kidney to the bladder."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-021",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Excretion",
+      "concept": "Ultrafiltration in nephrons",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Where does the filtrate from the glomerulus first collect in a mammalian nephron?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uriniferous tubule",
+          "why": "Uriniferous tubule refers broadly to urine-forming structures.",
+          "whyWrong": "Uriniferous tubule refers broadly to urine-forming structures."
+        },
+        {
+          "id": "b",
+          "text": "Bowman's capsule",
+          "why": "Blood pressure drives small solutes and water across the glomerular filtration barrier into Bowman’s capsule.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Loop of Henle",
+          "why": "The loop of Henle changes the salt and water balance of existing filtrate.",
+          "whyWrong": "The loop of Henle changes the salt and water balance of existing filtrate."
+        },
+        {
+          "id": "d",
+          "text": "Renal tubule",
+          "why": "A renal tubule receives filtrate after the renal corpuscle.",
+          "whyWrong": "A renal tubule receives filtrate after the renal corpuscle."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow fluid immediately after it leaves glomerular capillaries.",
+      "explanation": "Blood pressure drives small solutes and water across the glomerular filtration barrier into Bowman’s capsule.",
+      "trap": "Uriniferous tubule refers broadly to urine-forming structures.",
+      "mnemonic": "Bowman’s capsule catches the filtrate.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Bowman’s capsule catches the filtrate."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Uriniferous tubule refers broadly to urine-forming structures."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-023",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Fruit development",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of these fruits develops from one carpel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Okra",
+          "why": "Okra has a compound ovary made of fused carpels.",
+          "whyWrong": "Okra has a compound ovary made of fused carpels."
+        },
+        {
+          "id": "b",
+          "text": "Tomato",
+          "why": "A tomato develops from fused carpels.",
+          "whyWrong": "A tomato develops from fused carpels."
+        },
+        {
+          "id": "c",
+          "text": "Bean",
+          "why": "A bean pod is a legume formed from a single carpel that opens along two seams.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Orange",
+          "why": "An orange has multiple segments corresponding to carpels.",
+          "whyWrong": "An orange has multiple segments corresponding to carpels."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify the legume pod.",
+      "explanation": "A bean pod is a legume formed from a single carpel that opens along two seams.",
+      "trap": "Okra has a compound ovary made of fused carpels.",
+      "mnemonic": "One bean pod comes from one carpel.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "One bean pod comes from one carpel."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Okra has a compound ovary made of fused carpels."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 23,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-027",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Coordination",
+      "concept": "Autonomic nervous system",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which activity listed is normally controlled by autonomic neurons?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voluntary muscles",
+          "why": "Voluntary skeletal muscles are controlled by somatic motor neurons.",
+          "whyWrong": "Voluntary skeletal muscles are controlled by somatic motor neurons."
+        },
+        {
+          "id": "b",
+          "text": "Heartbeat",
+          "why": "Autonomic nerves adjust heart rate without conscious effort.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Tongue movements",
+          "why": "Voluntary tongue movement is mainly somatic.",
+          "whyWrong": "Voluntary tongue movement is mainly somatic."
+        },
+        {
+          "id": "d",
+          "text": "Hand movements",
+          "why": "Voluntary hand movement is mainly somatic.",
+          "whyWrong": "Voluntary hand movement is mainly somatic."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Choose a function that continues without a conscious command.",
+      "explanation": "Autonomic nerves adjust heart rate without conscious effort.",
+      "trap": "Voluntary skeletal muscles are controlled by somatic motor neurons.",
+      "mnemonic": "Automatic heartbeat gets autonomic input.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Automatic heartbeat gets autonomic input."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Voluntary skeletal muscles are controlled by somatic motor neurons."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 27,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-029",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Water cycle",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which option names the two main physical processes cycling water between the ground and clouds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Evaporation alone",
+          "why": "Evaporation supplies vapour but leaves out cloud formation.",
+          "whyWrong": "Evaporation supplies vapour but leaves out cloud formation."
+        },
+        {
+          "id": "b",
+          "text": "Evaporation and condensation",
+          "why": "Evaporation moves water into the air. Condensation turns vapour into droplets that can later fall as precipitation.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Condensation alone",
+          "why": "Condensation acts on vapour already present in the air.",
+          "whyWrong": "Condensation acts on vapour already present in the air."
+        },
+        {
+          "id": "d",
+          "text": "Plant transpiration and respiration",
+          "why": "Transpiration supplies vapour but the pair omits condensation.",
+          "whyWrong": "Transpiration supplies vapour but the pair omits condensation."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow water up as vapour and back to droplets.",
+      "explanation": "Evaporation moves water into the air. Condensation turns vapour into droplets that can later fall as precipitation.",
+      "trap": "Evaporation supplies vapour but leaves out cloud formation.",
+      "mnemonic": "Evaporate up. Condense into clouds.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Evaporate up. Condense into clouds."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Evaporation supplies vapour but leaves out cloud formation."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-031",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Mangrove adaptations",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In which habitat do plants commonly show adaptations such as stilt roots, breathing roots and salt glands?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tropical rainforest",
+          "why": "Rainforests can have support roots, but ordinary soils there are not tidal and salty.",
+          "whyWrong": "Rainforests can have support roots, but ordinary soils there are not tidal and salty."
+        },
+        {
+          "id": "b",
+          "text": "Mangrove swamps",
+          "why": "Mangroves occupy salty, often waterlogged coastal soils. Specialized roots provide support or gas exchange, and some species excrete salt.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Grassland",
+          "why": "Grassland plants are adapted to open, seasonally dry ground.",
+          "whyWrong": "Grassland plants are adapted to open, seasonally dry ground."
+        },
+        {
+          "id": "d",
+          "text": "Montane forest",
+          "why": "Montane plants are adapted to highland conditions.",
+          "whyWrong": "Montane plants are adapted to highland conditions."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the habitat with salty, oxygen-poor mud.",
+      "explanation": "Mangroves occupy salty, often waterlogged coastal soils. Specialized roots provide support or gas exchange, and some species excrete salt.",
+      "trap": "Rainforests can have support roots, but ordinary soils there are not tidal and salty.",
+      "mnemonic": "Mangroves manage salt and mud.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Mangroves manage salt and mud."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Rainforests can have support roots, but ordinary soils there are not tidal and salty."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-036",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Soil conservation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which indigenous farming practices can restore soil fertility by alternating crops or letting land recover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clearing fields by burning",
+          "why": "Burning can add short-lived ash nutrients but consumes organic material.",
+          "whyWrong": "Burning can add short-lived ash nutrients but consumes organic material."
+        },
+        {
+          "id": "b",
+          "text": "Planting one type of crop",
+          "why": "Repeatedly planting one crop can deplete the same nutrients.",
+          "whyWrong": "Repeatedly planting one crop can deplete the same nutrients."
+        },
+        {
+          "id": "c",
+          "text": "Adding inorganic fertilizer annually",
+          "why": "Annual inorganic fertilization does not describe the indigenous practices named.",
+          "whyWrong": "Annual inorganic fertilization does not describe the indigenous practices named."
+        },
+        {
+          "id": "d",
+          "text": "Crop rotation and shifting cultivation",
+          "why": "Crop rotation changes nutrient demands and can include legumes. Fallow periods in shifting cultivation allow vegetation and organic matter to recover.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for changes over multiple seasons.",
+      "explanation": "Crop rotation changes nutrient demands and can include legumes. Fallow periods in shifting cultivation allow vegetation and organic matter to recover.",
+      "trap": "Burning can add short-lived ash nutrients but consumes organic material.",
+      "mnemonic": "Rotate crops and rest fields.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Rotate crops and rest fields."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Burning can add short-lived ash nutrients but consumes organic material."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 36,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-041",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Genetics & heredity",
+      "concept": "Monohybrid inheritance",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A cross between two yellow-seeded maize plants yields yellow and white seeds in a 3 to 1 ratio. What does that suggest about yellow in a simple monohybrid model?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-heritable",
+          "why": "The consistent segregation indicates inheritance.",
+          "whyWrong": "The consistent segregation indicates inheritance."
+        },
+        {
+          "id": "b",
+          "text": "Sex-linked",
+          "why": "This ratio alone does not require sex linkage.",
+          "whyWrong": "This ratio alone does not require sex linkage."
+        },
+        {
+          "id": "c",
+          "text": "A recessive trait",
+          "why": "A recessive yellow phenotype would occur in the one-quarter class.",
+          "whyWrong": "A recessive yellow phenotype would occur in the one-quarter class."
+        },
+        {
+          "id": "d",
+          "text": "A dominant trait",
+          "why": "A cross between two heterozygotes gives 1 YY, 2 Yy and 1 yy. Three offspring classes carry the yellow allele and show the dominant phenotype.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Put Y and y from each parent into a Punnett square.",
+      "explanation": "A cross between two heterozygotes gives 1 YY, 2 Yy and 1 yy. Three offspring classes carry the yellow allele and show the dominant phenotype.",
+      "trap": "The consistent segregation indicates inheritance.",
+      "mnemonic": "Three show the dominant phenotype. One shows the recessive phenotype.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Three show the dominant phenotype. One shows the recessive phenotype."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The consistent segregation indicates inheritance."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 41,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-046",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Bill adaptations",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What feeding task suits a bird with a short, thick bill?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crushing seeds",
+          "why": "A stout bill withstands the forces needed to crack or crush seeds.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Sucking nectar",
+          "why": "Nectar feeding commonly uses a longer, narrow bill or tongue.",
+          "whyWrong": "Nectar feeding commonly uses a longer, narrow bill or tongue."
+        },
+        {
+          "id": "c",
+          "text": "Tearing flesh",
+          "why": "Tearing flesh favours a hooked tip.",
+          "whyWrong": "Tearing flesh favours a hooked tip."
+        },
+        {
+          "id": "d",
+          "text": "Straining mud",
+          "why": "Straining mud requires filtering structures.",
+          "whyWrong": "Straining mud requires filtering structures."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of applying force to a hard seed coat.",
+      "explanation": "A stout bill withstands the forces needed to crack or crush seeds.",
+      "trap": "Nectar feeding commonly uses a longer, narrow bill or tongue.",
+      "mnemonic": "Short and stout cracks seeds.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Short and stout cracks seeds."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Nectar feeding commonly uses a longer, narrow bill or tongue."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 46,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-048",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Termite swarming",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "How does a very large termite mating swarm help the population persist when predators are present?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Providing food for birds",
+          "why": "Food for birds benefits the predator.",
+          "whyWrong": "Food for birds benefits the predator."
+        },
+        {
+          "id": "b",
+          "text": "Allowing enough termites to survive predation",
+          "why": "A simultaneous mass emergence can overwhelm predators, leaving survivors able to disperse and reproduce.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Seeking a suitable breeding site",
+          "why": "Moving to a suitable site does not explain the protective advantage of large numbers.",
+          "whyWrong": "Moving to a suitable site does not explain the protective advantage of large numbers."
+        },
+        {
+          "id": "d",
+          "text": "Guaranteeing every individual a mate",
+          "why": "Many individuals can still die or fail to mate.",
+          "whyWrong": "Many individuals can still die or fail to mate."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare predator capacity with the number of termites emerging.",
+      "explanation": "A simultaneous mass emergence can overwhelm predators, leaving survivors able to disperse and reproduce.",
+      "trap": "Food for birds benefits the predator.",
+      "mnemonic": "A mass swarm can swamp predators.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A mass swarm can swamp predators."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Food for birds benefits the predator."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 48,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-014",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Desert plant adaptations",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed leaf modification helps a desert plant conserve water?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Broad leaves with many stomata",
+          "why": "Broad leaves and many stomata increase the potential for water loss.",
+          "whyWrong": "Broad leaves and many stomata increase the potential for water loss."
+        },
+        {
+          "id": "b",
+          "text": "Spongy mesophyll",
+          "why": "Spongy mesophyll mainly facilitates internal gas movement.",
+          "whyWrong": "Spongy mesophyll mainly facilitates internal gas movement."
+        },
+        {
+          "id": "c",
+          "text": "Leaves reduced to spines",
+          "why": "Reducing leaves to spines greatly decreases the surface available for transpiration.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Conspicuous stomata in leaves",
+          "why": "Exposed stomata allow water vapour to escape readily.",
+          "whyWrong": "Exposed stomata allow water vapour to escape readily."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Choose the feature that reduces leaf area.",
+      "explanation": "Reducing leaves to spines greatly decreases the surface available for transpiration.",
+      "trap": "Broad leaves and many stomata increase the potential for water loss.",
+      "mnemonic": "Spines replace broad surfaces.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Spines replace broad surfaces."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Broad leaves and many stomata increase the potential for water loss."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-015",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Raptor feet",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What do a bird’s long, sharply clawed feet help it do when hunting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crushing seeds",
+          "why": "Seed crushing is usually done with a stout bill.",
+          "whyWrong": "Seed crushing is usually done with a stout bill."
+        },
+        {
+          "id": "b",
+          "text": "Scooping mud",
+          "why": "A mud-scooping task calls for a different shape.",
+          "whyWrong": "A mud-scooping task calls for a different shape."
+        },
+        {
+          "id": "c",
+          "text": "Tearing flesh",
+          "why": "Tearing flesh is mainly performed by a hooked bill.",
+          "whyWrong": "Tearing flesh is mainly performed by a hooked bill."
+        },
+        {
+          "id": "d",
+          "text": "Grasping prey",
+          "why": "Long, sharp talons catch and hold struggling prey.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Separate what feet do from what the bill does.",
+      "explanation": "Long, sharp talons catch and hold struggling prey.",
+      "trap": "Seed crushing is usually done with a stout bill.",
+      "mnemonic": "Talons grab. The bill tears.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Talons grab. The bill tears."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Seed crushing is usually done with a stout bill."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 15,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-019",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Nutrition",
+      "concept": "Insectivorous plants",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What name is given to plants that trap and digest insects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carnivorous",
+          "why": "Carnivorous plants digest trapped animals to supplement mineral nutrition, especially nitrogen.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Symbiotic",
+          "why": "Symbiosis is a broad term for close association.",
+          "whyWrong": "Symbiosis is a broad term for close association."
+        },
+        {
+          "id": "c",
+          "text": "Parasitic",
+          "why": "Parasitic plants draw resources from living hosts.",
+          "whyWrong": "Parasitic plants draw resources from living hosts."
+        },
+        {
+          "id": "d",
+          "text": "Saprophytic",
+          "why": "Saprophytic nutrition involves dead organic material.",
+          "whyWrong": "Saprophytic nutrition involves dead organic material."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Name the habit of capturing animal prey.",
+      "explanation": "Carnivorous plants digest trapped animals to supplement mineral nutrition, especially nitrogen.",
+      "trap": "Symbiosis is a broad term for close association.",
+      "mnemonic": "Carnivorous plants catch prey for minerals.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Carnivorous plants catch prey for minerals."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Symbiosis is a broad term for close association."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 19,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-024",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Vertebrate circulation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which list includes the pump and all three main categories of blood vessel in a vertebrate circulatory system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heart, arteries, capillaries and veins",
+          "why": "The heart pumps blood. Arteries carry blood away, capillaries permit exchange and veins carry blood back.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Heart, aorta, capillaries and veins",
+          "why": "The aorta is a particular artery, and the list omits arteries as a general category.",
+          "whyWrong": "The aorta is a particular artery, and the list omits arteries as a general category."
+        },
+        {
+          "id": "c",
+          "text": "Heart, aorta, arteries and veins",
+          "why": "The aorta is already an artery, and capillaries are missing.",
+          "whyWrong": "The aorta is already an artery, and capillaries are missing."
+        },
+        {
+          "id": "d",
+          "text": "Heart, vena cava, arteries and veins",
+          "why": "The vena cava is already a vein, and capillaries are missing.",
+          "whyWrong": "The vena cava is already a vein, and capillaries are missing."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Include the smallest exchange vessels as well as vessels in and out of the heart.",
+      "explanation": "The heart pumps blood. Arteries carry blood away, capillaries permit exchange and veins carry blood back.",
+      "trap": "The aorta is a particular artery, and the list omits arteries as a general category.",
+      "mnemonic": "Heart, arteries, capillaries, veins.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Heart, arteries, capillaries, veins."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The aorta is a particular artery, and the list omits arteries as a general category."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 24,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-027",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Composition of blood",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What component accounts for roughly 55 percent of a typical human blood sample by volume?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leucocytes",
+          "why": "Leucocytes are a small fraction of the sample.",
+          "whyWrong": "Leucocytes are a small fraction of the sample."
+        },
+        {
+          "id": "b",
+          "text": "Platelets",
+          "why": "Platelets occupy a very small volume.",
+          "whyWrong": "Platelets occupy a very small volume."
+        },
+        {
+          "id": "c",
+          "text": "Plasma",
+          "why": "Plasma is the liquid portion and normally makes up a little over half the blood volume.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Erythrocytes",
+          "why": "Erythrocytes make up most of the remaining volume.",
+          "whyWrong": "Erythrocytes make up most of the remaining volume."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Think of the straw-coloured liquid after separation.",
+      "explanation": "Plasma is the liquid portion and normally makes up a little over half the blood volume.",
+      "trap": "Leucocytes are a small fraction of the sample.",
+      "mnemonic": "A bit over half of blood is plasma.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A bit over half of blood is plasma."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Leucocytes are a small fraction of the sample."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 27,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-028",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Excretion",
+      "concept": "Skin excretion",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which skin structure carries water, salts and traces of urea out of the body?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sweat glands",
+          "why": "Sweat glands secrete sweat containing water, dissolved salts and small amounts of urea.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Malpighian layer",
+          "why": "The Malpighian layer supplies new epidermal cells.",
+          "whyWrong": "The Malpighian layer supplies new epidermal cells."
+        },
+        {
+          "id": "c",
+          "text": "Sebaceous gland",
+          "why": "Sebaceous glands secrete oily sebum.",
+          "whyWrong": "Sebaceous glands secrete oily sebum."
+        },
+        {
+          "id": "d",
+          "text": "Horny layer",
+          "why": "The horny layer forms a protective barrier.",
+          "whyWrong": "The horny layer forms a protective barrier."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the gland that empties onto the skin surface as sweat.",
+      "explanation": "Sweat glands secrete sweat containing water, dissolved salts and small amounts of urea.",
+      "trap": "The Malpighian layer supplies new epidermal cells.",
+      "mnemonic": "Sweat glands remove sweat.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Sweat glands remove sweat."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The Malpighian layer supplies new epidermal cells."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-030",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Vertebrate support",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What main structure supports a vertebrate’s body and protects organs such as the brain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Skeleton",
+          "why": "The skeleton bears weight, supports the body and protects organs. The skull surrounds the brain, and the rib cage protects structures in the chest.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Ligament",
+          "why": "Ligaments join bones at joints.",
+          "whyWrong": "Ligaments join bones at joints."
+        },
+        {
+          "id": "c",
+          "text": "Muscle",
+          "why": "Muscles generate force and move body parts.",
+          "whyWrong": "Muscles generate force and move body parts."
+        },
+        {
+          "id": "d",
+          "text": "Joint",
+          "why": "Joints are places where bones meet.",
+          "whyWrong": "Joints are places where bones meet."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Name the framework formed by the bones together.",
+      "explanation": "The skeleton bears weight, supports the body and protects organs. The skull surrounds the brain, and the rib cage protects structures in the chest.",
+      "trap": "Ligaments join bones at joints.",
+      "mnemonic": "The skeleton supports and shields.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The skeleton supports and shields."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Ligaments join bones at joints."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 30,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-033",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Flower structure",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the pollen-producing reproductive organ of a flower?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carpel",
+          "why": "A carpel contains ovules and receives pollen.",
+          "whyWrong": "A carpel contains ovules and receives pollen."
+        },
+        {
+          "id": "b",
+          "text": "Stamen",
+          "why": "A stamen consists of an anther and usually a supporting filament. The anther produces pollen.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Petal",
+          "why": "Petals often attract pollinators.",
+          "whyWrong": "Petals often attract pollinators."
+        },
+        {
+          "id": "d",
+          "text": "Sepal",
+          "why": "Sepals protect the developing bud.",
+          "whyWrong": "Sepals protect the developing bud."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of what supports the anther.",
+      "explanation": "A stamen consists of an anther and usually a supporting filament. The anther produces pollen.",
+      "trap": "A carpel contains ovules and receives pollen.",
+      "mnemonic": "Stamen means anther and filament.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Stamen means anther and filament."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A carpel contains ovules and receives pollen."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 33,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-039",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Coordination",
+      "concept": "Eye defects",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What eye condition results when the lens becomes cloudy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Presbyopia",
+          "why": "Presbyopia is age-related loss of near focusing.",
+          "whyWrong": "Presbyopia is age-related loss of near focusing."
+        },
+        {
+          "id": "b",
+          "text": "Glaucoma",
+          "why": "Glaucoma involves damage to the optic nerve.",
+          "whyWrong": "Glaucoma involves damage to the optic nerve."
+        },
+        {
+          "id": "c",
+          "text": "Cataract",
+          "why": "A cataract is an opacity in the eye lens that interferes with the passage of light.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Astigmatism",
+          "why": "Astigmatism involves uneven optical curvature.",
+          "whyWrong": "Astigmatism involves uneven optical curvature."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Find the disorder of lens transparency.",
+      "explanation": "A cataract is an opacity in the eye lens that interferes with the passage of light.",
+      "trap": "Presbyopia is age-related loss of near focusing.",
+      "mnemonic": "A cataract clouds the lens.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A cataract clouds the lens."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Presbyopia is age-related loss of near focusing."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 39,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-042",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Earth systems",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which term identifies Earth’s rigid solid outer layer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Atmosphere",
+          "why": "The atmosphere is the envelope of gases.",
+          "whyWrong": "The atmosphere is the envelope of gases."
+        },
+        {
+          "id": "b",
+          "text": "Hydrosphere",
+          "why": "The hydrosphere comprises Earth’s water.",
+          "whyWrong": "The hydrosphere comprises Earth’s water."
+        },
+        {
+          "id": "c",
+          "text": "Biosphere",
+          "why": "The biosphere encompasses areas with life.",
+          "whyWrong": "The biosphere encompasses areas with life."
+        },
+        {
+          "id": "d",
+          "text": "Lithosphere",
+          "why": "The lithosphere includes the crust and the rigid uppermost mantle.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Use the prefix meaning stone.",
+      "explanation": "The lithosphere includes the crust and the rigid uppermost mantle.",
+      "trap": "The atmosphere is the envelope of gases.",
+      "mnemonic": "Litho points to rock.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Litho points to rock."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The atmosphere is the envelope of gases."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 42,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-008",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Cell biology",
+      "concept": "Multicellularity",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed organism grows as a filament made of many cells?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chlamydomonas",
+          "why": "Chlamydomonas is typically a single-celled alga.",
+          "whyWrong": "Chlamydomonas is typically a single-celled alga."
+        },
+        {
+          "id": "b",
+          "text": "Spirogyra",
+          "why": "Spirogyra forms unbranched chains of cells with spiral chloroplasts.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Amoeba",
+          "why": "Amoeba is unicellular.",
+          "whyWrong": "Amoeba is unicellular."
+        },
+        {
+          "id": "d",
+          "text": "Euglena",
+          "why": "Euglena is unicellular.",
+          "whyWrong": "Euglena is unicellular."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Picture chains of cells with spiral chloroplasts.",
+      "explanation": "Spirogyra forms unbranched chains of cells with spiral chloroplasts.",
+      "trap": "Chlamydomonas is typically a single-celled alga.",
+      "mnemonic": "Spirogyra is a multicellular thread.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Spirogyra is a multicellular thread."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Chlamydomonas is typically a single-celled alga."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-032",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Population dynamics",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What term describes the study of how and why a population’s size changes over time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Population estimation",
+          "why": "Population estimation measures abundance at a chosen time.",
+          "whyWrong": "Population estimation measures abundance at a chosen time."
+        },
+        {
+          "id": "b",
+          "text": "Population dynamics",
+          "why": "Population dynamics follows changes caused by births, deaths, immigration and emigration.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Population ecology",
+          "why": "Population ecology has a wider scope, including interactions with the environment.",
+          "whyWrong": "Population ecology has a wider scope, including interactions with the environment."
+        },
+        {
+          "id": "d",
+          "text": "Population Cycle",
+          "why": "A population cycle is one possible pattern of change.",
+          "whyWrong": "A population cycle is one possible pattern of change."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Focus on changes over time.",
+      "explanation": "Population dynamics follows changes caused by births, deaths, immigration and emigration.",
+      "trap": "Population estimation measures abundance at a chosen time.",
+      "mnemonic": "Dynamics tracks population change.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Dynamics tracks population change."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Population estimation measures abundance at a chosen time."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-033",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Sahel vegetation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed vegetation zone has the longest and most severe dry season?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sahel Savanna",
+          "why": "The Sahel is a semi-arid zone bordering the Sahara, with a short rainy season.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Mangrove Swamps",
+          "why": "Mangroves grow in wet coastal soils.",
+          "whyWrong": "Mangroves grow in wet coastal soils."
+        },
+        {
+          "id": "c",
+          "text": "Sudan Savanna",
+          "why": "The Sudan savanna generally receives more rainfall.",
+          "whyWrong": "The Sudan savanna generally receives more rainfall."
+        },
+        {
+          "id": "d",
+          "text": "Guinea Savanna",
+          "why": "The Guinea savanna is wetter still.",
+          "whyWrong": "The Guinea savanna is wetter still."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Move towards the Sahara.",
+      "explanation": "The Sahel is a semi-arid zone bordering the Sahara, with a short rainy season.",
+      "trap": "Mangroves grow in wet coastal soils.",
+      "mnemonic": "Sahel means a long dry season.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Sahel means a long dry season."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Mangroves grow in wet coastal soils."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 33,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-041",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Conjugation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed protist can exchange nuclear genetic material by conjugation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paramecium",
+          "why": "Compatible Paramecium cells can pair and exchange micronuclear genetic material.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Euglena",
+          "why": "Euglena normally reproduces by longitudinal fission.",
+          "whyWrong": "Euglena normally reproduces by longitudinal fission."
+        },
+        {
+          "id": "c",
+          "text": "Amoeba",
+          "why": "Amoeba commonly multiplies by binary fission.",
+          "whyWrong": "Amoeba commonly multiplies by binary fission."
+        },
+        {
+          "id": "d",
+          "text": "Plasmodium",
+          "why": "Plasmodium has sexual stages that do not use Paramecium-style conjugation.",
+          "whyWrong": "Plasmodium has sexual stages that do not use Paramecium-style conjugation."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the ciliate with two kinds of nucleus.",
+      "explanation": "Compatible Paramecium cells can pair and exchange micronuclear genetic material.",
+      "trap": "Euglena normally reproduces by longitudinal fission.",
+      "mnemonic": "Paramecium can pair to exchange genes.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Paramecium can pair to exchange genes."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Euglena normally reproduces by longitudinal fission."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 41,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-047",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Aquatic locomotion",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the main locomotor benefit of a fish’s streamlined body?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Finding mates",
+          "why": "Mate recognition can depend on signals and behaviour.",
+          "whyWrong": "Mate recognition can depend on signals and behaviour."
+        },
+        {
+          "id": "b",
+          "text": "Moving easily in water",
+          "why": "A streamlined profile reduces drag so the fish can swim efficiently.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Obtaining food",
+          "why": "Food capture involves specialized feeding structures or behaviour.",
+          "whyWrong": "Food capture involves specialized feeding structures or behaviour."
+        },
+        {
+          "id": "d",
+          "text": "Defending against attack",
+          "why": "Defence may involve spines, toxins or camouflage.",
+          "whyWrong": "Defence may involve spines, toxins or camouflage."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of resistance as water flows past the body.",
+      "explanation": "A streamlined profile reduces drag so the fish can swim efficiently.",
+      "trap": "Mate recognition can depend on signals and behaviour.",
+      "mnemonic": "Streamlining cuts drag.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Streamlining cuts drag."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Mate recognition can depend on signals and behaviour."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 47,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-003",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Respiration",
+      "concept": "Cutaneous respiration",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed animal exchanges respiratory gases directly across its moist body surface as its principal method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grasshopper",
+          "why": "Grasshoppers exchange gases through a tracheal system.",
+          "whyWrong": "Grasshoppers exchange gases through a tracheal system."
+        },
+        {
+          "id": "b",
+          "text": "Rat",
+          "why": "Rats exchange gases in their lungs.",
+          "whyWrong": "Rats exchange gases in their lungs."
+        },
+        {
+          "id": "c",
+          "text": "Lizard",
+          "why": "Lizards use lungs as their main gas-exchange organs.",
+          "whyWrong": "Lizards use lungs as their main gas-exchange organs."
+        },
+        {
+          "id": "d",
+          "text": "Earthworm",
+          "why": "Oxygen diffuses across the earthworm’s moist skin into nearby blood vessels, while carbon dioxide diffuses out.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify the animal without lungs or tracheae.",
+      "explanation": "Oxygen diffuses across the earthworm’s moist skin into nearby blood vessels, while carbon dioxide diffuses out.",
+      "trap": "Grasshoppers exchange gases through a tracheal system.",
+      "mnemonic": "Earthworms breathe through moist skin.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Earthworms breathe through moist skin."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Grasshoppers exchange gases through a tracheal system."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 3,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-014",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Nutrition",
+      "concept": "Dietary fibre",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed dietary shortfall commonly contributes to constipation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lack of roughage",
+          "why": "Roughage adds bulk, holds water and supports regular movement of stool through the gut.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Vitamin B",
+          "why": "B vitamins assist metabolism and do not provide stool bulk.",
+          "whyWrong": "B vitamins assist metabolism and do not provide stool bulk."
+        },
+        {
+          "id": "c",
+          "text": "Vitamin E",
+          "why": "Vitamin E is a fat-soluble antioxidant.",
+          "whyWrong": "Vitamin E is a fat-soluble antioxidant."
+        },
+        {
+          "id": "d",
+          "text": "Lack of salts",
+          "why": "Mineral salts do not supply dietary fibre.",
+          "whyWrong": "Mineral salts do not supply dietary fibre."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the food component that adds stool bulk.",
+      "explanation": "Roughage adds bulk, holds water and supports regular movement of stool through the gut.",
+      "trap": "B vitamins assist metabolism and do not provide stool bulk.",
+      "mnemonic": "Fibre keeps contents moving.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Fibre keeps contents moving."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "B vitamins assist metabolism and do not provide stool bulk."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-022",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Excretion",
+      "concept": "Economic uses of plant products",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed plant product is used to tan hides into leather?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alkaloid",
+          "why": "Alkaloids are nitrogen-containing compounds with other uses.",
+          "whyWrong": "Alkaloids are nitrogen-containing compounds with other uses."
+        },
+        {
+          "id": "b",
+          "text": "Resin",
+          "why": "Resins are used in coatings and related materials.",
+          "whyWrong": "Resins are used in coatings and related materials."
+        },
+        {
+          "id": "c",
+          "text": "Tannin",
+          "why": "Tannins bind to proteins such as collagen in hides, helping turn them into stable leather.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Gum",
+          "why": "Gums often thicken or bind mixtures.",
+          "whyWrong": "Gums often thicken or bind mixtures."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "The name of the process points to the compound.",
+      "explanation": "Tannins bind to proteins such as collagen in hides, helping turn them into stable leather.",
+      "trap": "Alkaloids are nitrogen-containing compounds with other uses.",
+      "mnemonic": "Tanning uses tannins.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Tanning uses tannins."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Alkaloids are nitrogen-containing compounds with other uses."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 22,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-028",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Coordination",
+      "concept": "Astigmatism",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which visual defect can follow when the cornea curves differently in different directions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Astigmatism",
+          "why": "Unequal corneal curvature bends light differently along different axes, producing astigmatism.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Short-sightedness",
+          "why": "Short-sightedness typically brings distant images to a focus in front of the retina.",
+          "whyWrong": "Short-sightedness typically brings distant images to a focus in front of the retina."
+        },
+        {
+          "id": "c",
+          "text": "Long-sightedness",
+          "why": "Long-sightedness tends to bring light to a focus behind the retina.",
+          "whyWrong": "Long-sightedness tends to bring light to a focus behind the retina."
+        },
+        {
+          "id": "d",
+          "text": "Presbyopia",
+          "why": "Presbyopia involves reduced accommodation with age.",
+          "whyWrong": "Presbyopia involves reduced accommodation with age."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of different focal positions along two axes.",
+      "explanation": "Unequal corneal curvature bends light differently along different axes, producing astigmatism.",
+      "trap": "Short-sightedness typically brings distant images to a focus in front of the retina.",
+      "mnemonic": "Irregular curvature gives astigmatism.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Irregular curvature gives astigmatism."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Short-sightedness typically brings distant images to a focus in front of the retina."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2016-007",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Nutrition",
+      "concept": "Photosynthetic organs",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Where does most food manufacture occur in a typical green plant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Root hair",
+          "why": "Root hairs are primarily absorptive.",
+          "whyWrong": "Root hairs are primarily absorptive."
+        },
+        {
+          "id": "b",
+          "text": "Growing root",
+          "why": "Developing roots usually receive sugars made elsewhere.",
+          "whyWrong": "Developing roots usually receive sugars made elsewhere."
+        },
+        {
+          "id": "c",
+          "text": "Mature fruit",
+          "why": "Mature fruit primarily supports and disperses seeds.",
+          "whyWrong": "Mature fruit primarily supports and disperses seeds."
+        },
+        {
+          "id": "d",
+          "text": "Green leaf",
+          "why": "Green leaves expose chloroplast-rich cells to light and provide gas exchange for photosynthesis.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Choose the organ with broad, chloroplast-rich surfaces.",
+      "explanation": "Green leaves expose chloroplast-rich cells to light and provide gas exchange for photosynthesis.",
+      "trap": "Root hairs are primarily absorptive.",
+      "mnemonic": "Green leaves make sugars.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Green leaves make sugars."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Root hairs are primarily absorptive."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 7,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-008",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Platelets and clotting",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What role do mammalian platelets play in blood?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carrying oxygen",
+          "why": "Red cells transport most oxygen.",
+          "whyWrong": "Red cells transport most oxygen."
+        },
+        {
+          "id": "b",
+          "text": "Initiating blood clotting",
+          "why": "Platelets adhere to injured vessels and aggregate into a plug, helping trigger clotting.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Removing carbon dioxide",
+          "why": "Much carbon dioxide travels as bicarbonate in the blood.",
+          "whyWrong": "Much carbon dioxide travels as bicarbonate in the blood."
+        },
+        {
+          "id": "d",
+          "text": "Destroying microorganisms",
+          "why": "White blood cells carry out most cellular immune defence.",
+          "whyWrong": "White blood cells carry out most cellular immune defence."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the first plug at an injury.",
+      "explanation": "Platelets adhere to injured vessels and aggregate into a plug, helping trigger clotting.",
+      "trap": "Red cells transport most oxygen.",
+      "mnemonic": "Platelets plug a wound.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Platelets plug a wound."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Red cells transport most oxygen."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-026",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Xylem and phloem",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which tissues respectively carry water and manufactured food in a vascular plant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Xylem and phloem",
+          "why": "Xylem carries water and minerals, and phloem transports sugars and other organic solutes.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Phloem and tracheid",
+          "why": "Phloem does not carry the main upward water stream.",
+          "whyWrong": "Phloem does not carry the main upward water stream."
+        },
+        {
+          "id": "c",
+          "text": "Phloem and xylem",
+          "why": "This pair reverses the functions.",
+          "whyWrong": "This pair reverses the functions."
+        },
+        {
+          "id": "d",
+          "text": "Xylem and tracheid",
+          "why": "Tracheids are xylem cells and do not replace the phloem.",
+          "whyWrong": "Tracheids are xylem cells and do not replace the phloem."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Keep the required order, water first and sugar second.",
+      "explanation": "Xylem carries water and minerals, and phloem transports sugars and other organic solutes.",
+      "trap": "Phloem does not carry the main upward water stream.",
+      "mnemonic": "Xylem for water. Phloem for sugars.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Xylem for water. Phloem for sugars."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Phloem does not carry the main upward water stream."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-030",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Soil nutrient retention",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which soil listed generally holds mineral nutrients least effectively?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sandy loam",
+          "why": "Sandy loam contains finer material that improves retention.",
+          "whyWrong": "Sandy loam contains finer material that improves retention."
+        },
+        {
+          "id": "b",
+          "text": "Clay loam",
+          "why": "Clay loam has more surfaces that hold nutrient ions.",
+          "whyWrong": "Clay loam has more surfaces that hold nutrient ions."
+        },
+        {
+          "id": "c",
+          "text": "Loam",
+          "why": "Loam contains a mixture of fine particles and usually holds nutrients better than sand.",
+          "whyWrong": "Loam contains a mixture of fine particles and usually holds nutrients better than sand."
+        },
+        {
+          "id": "d",
+          "text": "Sand",
+          "why": "Sand has large particles and low surface area per unit mass. It drains freely and loses soluble nutrients readily.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for the coarsest soil with free drainage.",
+      "explanation": "Sand has large particles and low surface area per unit mass. It drains freely and loses soluble nutrients readily.",
+      "trap": "Sandy loam contains finer material that improves retention.",
+      "mnemonic": "Coarse sand drains and leaches quickly.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Coarse sand drains and leaches quickly."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Sandy loam contains finer material that improves retention."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 30,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-001",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Biological species concept",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which rank describes closely related organisms that can interbreed and produce fertile offspring?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kingdom",
+          "why": "A kingdom contains many distinct lineages.",
+          "whyWrong": "A kingdom contains many distinct lineages."
+        },
+        {
+          "id": "b",
+          "text": "Class",
+          "why": "A class includes multiple orders.",
+          "whyWrong": "A class includes multiple orders."
+        },
+        {
+          "id": "c",
+          "text": "Family",
+          "why": "A family groups related genera and species.",
+          "whyWrong": "A family groups related genera and species."
+        },
+        {
+          "id": "d",
+          "text": "Species",
+          "why": "Under the biological species concept, members of a species can interbreed and produce fertile offspring.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Choose the rank defined by successful interbreeding.",
+      "explanation": "Under the biological species concept, members of a species can interbreed and produce fertile offspring.",
+      "trap": "A kingdom contains many distinct lineages.",
+      "mnemonic": "Fertile offspring point to the same species.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Fertile offspring point to the same species."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A kingdom contains many distinct lineages."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 1,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-003",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Cell biology",
+      "concept": "Cytoplasm",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed function is performed by the cytoplasm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Regulates how much energy is in the cell",
+          "why": "Energy use is regulated by several cellular systems.",
+          "whyWrong": "Energy use is regulated by several cellular systems."
+        },
+        {
+          "id": "b",
+          "text": "Suspends the organelles",
+          "why": "The cytoplasm contains and supports organelles and provides a medium for many reactions.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Forms the cell’s outer boundary",
+          "why": "The cell membrane forms the outer boundary of the cytoplasm.",
+          "whyWrong": "The cell membrane forms the outer boundary of the cytoplasm."
+        },
+        {
+          "id": "d",
+          "text": "Performs cell division on its own",
+          "why": "Cell division also requires chromosomes and division machinery.",
+          "whyWrong": "Cell division also requires chromosomes and division machinery."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the medium surrounding organelles.",
+      "explanation": "The cytoplasm contains and supports organelles and provides a medium for many reactions.",
+      "trap": "Energy use is regulated by several cellular systems.",
+      "mnemonic": "Organelles sit within cytoplasm.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Organelles sit within cytoplasm."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Energy use is regulated by several cellular systems."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 3,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-013",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Excretion",
+      "concept": "Vertebrate kidneys",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which group consists entirely of animals that use kidneys as excretory organs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fish, amphibians, birds and humans",
+          "why": "Fishes, amphibians, birds and humans are vertebrates with kidneys.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Fish, amphibians, annelids and insects",
+          "why": "Annelids have nephridia and many insects have Malpighian tubules.",
+          "whyWrong": "Annelids have nephridia and many insects have Malpighian tubules."
+        },
+        {
+          "id": "c",
+          "text": "Fish, reptiles, birds and tapeworms",
+          "why": "Tapeworms use a system of flame cells and ducts.",
+          "whyWrong": "Tapeworms use a system of flame cells and ducts."
+        },
+        {
+          "id": "d",
+          "text": "Fish, protozoans, amphibians and humans",
+          "why": "Protozoans do not have multicellular organs such as kidneys.",
+          "whyWrong": "Protozoans do not have multicellular organs such as kidneys."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Check every animal in the proposed group.",
+      "explanation": "Fishes, amphibians, birds and humans are vertebrates with kidneys.",
+      "trap": "Annelids have nephridia and many insects have Malpighian tubules.",
+      "mnemonic": "Vertebrates have kidneys.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Vertebrates have kidneys."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Annelids have nephridia and many insects have Malpighian tubules."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-021",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Carbon fixation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which process takes carbon dioxide out of the air?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Putrefaction",
+          "why": "Decomposition commonly releases carbon dioxide.",
+          "whyWrong": "Decomposition commonly releases carbon dioxide."
+        },
+        {
+          "id": "b",
+          "text": "Photosynthesis",
+          "why": "Photosynthetic organisms use carbon dioxide to build organic compounds.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Volcanic eruption",
+          "why": "Volcanic activity adds carbon dioxide to the air.",
+          "whyWrong": "Volcanic activity adds carbon dioxide to the air."
+        },
+        {
+          "id": "d",
+          "text": "Burning fuels",
+          "why": "Combustion turns fuel carbon into gases including carbon dioxide.",
+          "whyWrong": "Combustion turns fuel carbon into gases including carbon dioxide."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the process that fixes carbon into sugars.",
+      "explanation": "Photosynthetic organisms use carbon dioxide to build organic compounds.",
+      "trap": "Decomposition commonly releases carbon dioxide.",
+      "mnemonic": "Photosynthesis takes carbon in.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Photosynthesis takes carbon in."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Decomposition commonly releases carbon dioxide."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-026",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Trophic levels",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed organism is a primary consumer in a simple grazing food chain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dog",
+          "why": "A dog in a simple grazing chain typically feeds at a higher level.",
+          "whyWrong": "A dog in a simple grazing chain typically feeds at a higher level."
+        },
+        {
+          "id": "b",
+          "text": "Sheep",
+          "why": "A sheep eats plants, so it feeds directly on producers at the primary consumer level.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Grass",
+          "why": "Grass is a producer.",
+          "whyWrong": "Grass is a producer."
+        },
+        {
+          "id": "d",
+          "text": "Fungus",
+          "why": "A fungus acting on dead matter is a decomposer.",
+          "whyWrong": "A fungus acting on dead matter is a decomposer."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Choose the herbivore in the list.",
+      "explanation": "A sheep eats plants, so it feeds directly on producers at the primary consumer level.",
+      "trap": "A dog in a simple grazing chain typically feeds at a higher level.",
+      "mnemonic": "Primary consumers eat producers.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Primary consumers eat producers."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A dog in a simple grazing chain typically feeds at a higher level."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    }
+  ]
+}

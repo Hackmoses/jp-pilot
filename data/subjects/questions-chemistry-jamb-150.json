@@ -1,0 +1,3257 @@
+{
+  "version": 1,
+  "subject": "chemistry",
+  "count": 50,
+  "questions": [
+    {
+      "id": "chem-jamb-2010-004",
+      "subject": "chemistry",
+      "chapter": "3",
+      "topic": "States of Matter, Kinetic Theory and Gas Laws",
+      "concept": "Changes of state",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Why do water droplets form on the outside of a cold milk bottle just removed from a refrigerator?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Water vapour gains energy from the bottle",
+          "why": "The vapour loses energy at the surface.",
+          "whyWrong": "The vapour loses energy at the surface."
+        },
+        {
+          "id": "b",
+          "text": "Milk cools further by losing heat to the surroundings",
+          "why": "This explanation puts the heat flow in the wrong direction.",
+          "whyWrong": "This explanation puts the heat flow in the wrong direction."
+        },
+        {
+          "id": "c",
+          "text": "The milk’s saturated vapour pressure equals atmospheric pressure",
+          "why": "The outside droplets come from surrounding air, independently of the vapour pressure of the milk.",
+          "whyWrong": "The outside droplets come from surrounding air, independently of the vapour pressure of the milk."
+        },
+        {
+          "id": "d",
+          "text": "Water vapour transfers energy to the bottle",
+          "why": "Nearby water vapour cools against the cold surface. Below its dew point some of it condenses into liquid droplets.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify where the water vapour comes from and which way heat moves.",
+      "explanation": "Nearby water vapour cools against the cold surface. Below its dew point some of it condenses into liquid droplets.",
+      "trap": "The vapour loses energy at the surface.",
+      "mnemonic": "Cooling water vapour can produce liquid.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Cooling water vapour can produce liquid."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The vapour loses energy at the surface."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 4,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-006",
+      "subject": "chemistry",
+      "chapter": "6",
+      "topic": "Periodicity",
+      "concept": "Periodic trends",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Why does first ionization energy generally rise across a period from left to right?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decrease in nuclear charge",
+          "why": "Proton number increases across a period.",
+          "whyWrong": "Proton number increases across a period."
+        },
+        {
+          "id": "b",
+          "text": "Increase in nuclear charge",
+          "why": "Proton number rises while added electrons enter the same principal shell. The resulting stronger effective attraction generally makes a valence electron harder to remove.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Decrease in screening effect",
+          "why": "Core-electron shielding changes little across the period.",
+          "whyWrong": "Core-electron shielding changes little across the period."
+        },
+        {
+          "id": "d",
+          "text": "Increase in screening effect",
+          "why": "Greater shielding would make removal easier.",
+          "whyWrong": "Greater shielding would make removal easier."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Track protons and the shell receiving the new electrons.",
+      "explanation": "Proton number rises while added electrons enter the same principal shell. The resulting stronger effective attraction generally makes a valence electron harder to remove.",
+      "trap": "Proton number increases across a period.",
+      "mnemonic": "Across a period, effective nuclear attraction generally rises.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Across a period, effective nuclear attraction generally rises."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Proton number increases across a period."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 6,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-008",
+      "subject": "chemistry",
+      "chapter": "6",
+      "topic": "Periodicity",
+      "concept": "Periodic trends",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which feature of noble-gas atoms explains their usual low chemical reactivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Have no electron in their outermost shells",
+          "why": "A stable outer shell is filled, not empty.",
+          "whyWrong": "A stable outer shell is filled, not empty."
+        },
+        {
+          "id": "b",
+          "text": "Have duplet or octet electron configurations",
+          "why": "Their outer shell is filled. Helium has two valence electrons and the heavier common noble gases have eight.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Belong to group zero of the periodic table",
+          "why": "Group membership describes their placement without explaining the cause.",
+          "whyWrong": "Group membership describes their placement without explaining the cause."
+        },
+        {
+          "id": "d",
+          "text": "Are volatile in nature",
+          "why": "Volatility describes a physical property.",
+          "whyWrong": "Volatility describes a physical property."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of how full the outer shell is.",
+      "explanation": "Their outer shell is filled. Helium has two valence electrons and the heavier common noble gases have eight.",
+      "trap": "A stable outer shell is filled, not empty.",
+      "mnemonic": "Helium has a duplet. Other common noble gases have an octet.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Helium has a duplet. Other common noble gases have an octet."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A stable outer shell is filled, not empty."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-009",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Electronic configuration",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What is the maximum electron capacity of the L shell?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "why": "Two is the capacity of the 2s subshell alone.",
+          "whyWrong": "Two is the capacity of the 2s subshell alone."
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "why": "The L shell has n = 2, with a 2s subshell holding 2 electrons and a 2p subshell holding 6. The total is 8.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "18",
+          "why": "Eighteen is the maximum for n = 3.",
+          "whyWrong": "Eighteen is the maximum for n = 3."
+        },
+        {
+          "id": "d",
+          "text": "32",
+          "why": "Thirty-two is the maximum for n = 4.",
+          "whyWrong": "Thirty-two is the maximum for n = 4."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Add the capacities of 2s and 2p.",
+      "explanation": "The L shell has n = 2, with a 2s subshell holding 2 electrons and a 2p subshell holding 6. The total is 8.",
+      "trap": "Two is the capacity of the 2s subshell alone.",
+      "mnemonic": "L is shell two.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "L is shell two."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Two is the capacity of the 2s subshell alone."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-017",
+      "subject": "chemistry",
+      "chapter": "12",
+      "topic": "Environmental Pollution",
+      "concept": "Air pollution",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the main reason carbon monoxide interferes with oxygen delivery to tissues?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It can injure the nervous system",
+          "why": "Nervous system injury is a possible consequence of poor oxygen delivery.",
+          "whyWrong": "Nervous system injury is a possible consequence of poor oxygen delivery."
+        },
+        {
+          "id": "b",
+          "text": "It competes with oxygen in the blood",
+          "why": "Carbon monoxide binds strongly to haemoglobin, occupying sites that would otherwise carry oxygen and impairing oxygen delivery.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It competes with carbon dioxide in the blood",
+          "why": "The central competition is for oxygen-binding sites.",
+          "whyWrong": "The central competition is for oxygen-binding sites."
+        },
+        {
+          "id": "d",
+          "text": "It can cause lung cancer",
+          "why": "Cancer is not the principal mechanism of carbon monoxide toxicity.",
+          "whyWrong": "Cancer is not the principal mechanism of carbon monoxide toxicity."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the oxygen carrier in red blood cells.",
+      "explanation": "Carbon monoxide binds strongly to haemoglobin, occupying sites that would otherwise carry oxygen and impairing oxygen delivery.",
+      "trap": "Nervous system injury is a possible consequence of poor oxygen delivery.",
+      "mnemonic": "Carbon monoxide occupies haemoglobin.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Carbon monoxide occupies haemoglobin."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Nervous system injury is a possible consequence of poor oxygen delivery."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-019",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "Neutralisation and salt preparation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What volume of 0.5 mol/dm^{3} H_{2}SO_{4} exactly neutralizes 25 cm^{3} of 0.1 mol/dm^{3} NaOH?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5.0 cm^{3}",
+          "why": "5.0 cm^{3} assumes equal moles of the two reactants.",
+          "whyWrong": "5.0 cm^{3} assumes equal moles of the two reactants."
+        },
+        {
+          "id": "b",
+          "text": "2.5 cm^{3}",
+          "why": "The base supplies 0.0025 mol OH^{-}. The 1 to 2 acid-to-base ratio requires 0.00125 mol acid. Dividing by 0.5 mol/dm^{3} gives 0.0025 dm^{3}, or 2.5 cm^{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "0.4 cm^{3}",
+          "why": "0.4 cm^{3} cannot supply sufficient acid.",
+          "whyWrong": "0.4 cm^{3} cannot supply sufficient acid."
+        },
+        {
+          "id": "d",
+          "text": "0.1 cm^{3}",
+          "why": "0.1 cm^{3} confuses a concentration with a volume.",
+          "whyWrong": "0.1 cm^{3} confuses a concentration with a volume."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Balance the acid and base before using concentration.",
+      "explanation": "The base supplies 0.0025 mol OH^{-}. The 1 to 2 acid-to-base ratio requires 0.00125 mol acid. Dividing by 0.5 mol/dm^{3} gives 0.0025 dm^{3}, or 2.5 cm^{3}.",
+      "trap": "5.0 cm^{3} assumes equal moles of the two reactants.",
+      "mnemonic": "One sulfuric acid takes two hydroxides.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "One sulfuric acid takes two hydroxides."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "5.0 cm^{3} assumes equal moles of the two reactants."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 19,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-020",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "pH",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What colour does methyl orange show in alkaline solution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yellow",
+          "why": "Methyl orange is yellow above its transition range, including in an alkaline solution.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Pink",
+          "why": "Pink is associated with indicators such as phenolphthalein in alkali.",
+          "whyWrong": "Pink is associated with indicators such as phenolphthalein in alkali."
+        },
+        {
+          "id": "c",
+          "text": "Orange",
+          "why": "Orange appears near the indicator transition.",
+          "whyWrong": "Orange appears near the indicator transition."
+        },
+        {
+          "id": "d",
+          "text": "Red",
+          "why": "Red is the acidic form of methyl orange.",
+          "whyWrong": "Red is the acidic form of methyl orange."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the high-pH colour.",
+      "explanation": "Methyl orange is yellow above its transition range, including in an alkaline solution.",
+      "trap": "Pink is associated with indicators such as phenolphthalein in alkali.",
+      "mnemonic": "Methyl orange turns yellow in alkali.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Methyl orange turns yellow in alkali."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Pink is associated with indicators such as phenolphthalein in alkali."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 20,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-028",
+      "subject": "chemistry",
+      "chapter": "8",
+      "topic": "Rates of Reaction",
+      "concept": "Catalysis",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Why can a catalysed decomposition start appreciably at a lower temperature?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lowering the pressure",
+          "why": "Changing pressure is not the catalyst’s role.",
+          "whyWrong": "Changing pressure is not the catalyst’s role."
+        },
+        {
+          "id": "b",
+          "text": "Increasing the reactant surface area",
+          "why": "A catalyst does not have to change the reactant’s surface area.",
+          "whyWrong": "A catalyst does not have to change the reactant’s surface area."
+        },
+        {
+          "id": "c",
+          "text": "Increasing the reaction rate",
+          "why": "A higher reaction rate is the effect of the lower barrier.",
+          "whyWrong": "A higher reaction rate is the effect of the lower barrier."
+        },
+        {
+          "id": "d",
+          "text": "Lowering the activation energy",
+          "why": "A catalyst provides a route with a lower activation energy, so more collisions can yield reaction at a given temperature.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think of the energy threshold for successful collisions.",
+      "explanation": "A catalyst provides a route with a lower activation energy, so more collisions can yield reaction at a given temperature.",
+      "trap": "Changing pressure is not the catalyst’s role.",
+      "mnemonic": "Catalysts lower the barrier.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Catalysts lower the barrier."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Changing pressure is not the catalyst’s role."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-035",
+      "subject": "chemistry",
+      "chapter": "17",
+      "topic": "Metals and their Compounds",
+      "concept": "Corrosion and alloys",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which element is a component of both traditional bronze and traditional soft solder?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lead",
+          "why": "Lead is characteristic of traditional solder but is not the defining addition in ordinary bronze.",
+          "whyWrong": "Lead is characteristic of traditional solder but is not the defining addition in ordinary bronze."
+        },
+        {
+          "id": "b",
+          "text": "Silver",
+          "why": "Silver is not shared by these traditional formulations.",
+          "whyWrong": "Silver is not shared by these traditional formulations."
+        },
+        {
+          "id": "c",
+          "text": "Copper",
+          "why": "Copper is the main metal in bronze and is absent from traditional lead–tin solder.",
+          "whyWrong": "Copper is the main metal in bronze and is absent from traditional lead–tin solder."
+        },
+        {
+          "id": "d",
+          "text": "Tin",
+          "why": "Bronze commonly contains copper and tin. Traditional soft solder contains lead and tin.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare copper–tin with lead–tin.",
+      "explanation": "Bronze commonly contains copper and tin. Traditional soft solder contains lead and tin.",
+      "trap": "Lead is characteristic of traditional solder but is not the defining addition in ordinary bronze.",
+      "mnemonic": "Tin is shared by bronze and soft solder.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Tin is shared by bronze and soft solder."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Lead is characteristic of traditional solder but is not the defining addition in ordinary bronze."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 35,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-036",
+      "subject": "chemistry",
+      "chapter": "17",
+      "topic": "Metals and their Compounds",
+      "concept": "Corrosion and alloys",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed substance best describes the reddish-brown rust that develops on iron in moist air?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hydrated iron(III) oxide",
+          "why": "Rust is commonly described as hydrated iron(III) oxide. In practice it includes hydrated iron oxides and oxyhydroxides.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Anhydrous iron(III) oxide",
+          "why": "Anhydrous iron(III) oxide omits water from the description of rust.",
+          "whyWrong": "Anhydrous iron(III) oxide omits water from the description of rust."
+        },
+        {
+          "id": "c",
+          "text": "Anhydrous iron(II) oxide",
+          "why": "Iron(II) oxide has a different oxidation state.",
+          "whyWrong": "Iron(II) oxide has a different oxidation state."
+        },
+        {
+          "id": "d",
+          "text": "Hydrated iron(II) oxide",
+          "why": "The typical rust description involves iron(III).",
+          "whyWrong": "The typical rust description involves iron(III)."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the hydrated product containing oxidized iron.",
+      "explanation": "Rust is commonly described as hydrated iron(III) oxide. In practice it includes hydrated iron oxides and oxyhydroxides.",
+      "trap": "Anhydrous iron(III) oxide omits water from the description of rust.",
+      "mnemonic": "Rust is hydrated and mainly iron(III).",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Rust is hydrated and mainly iron(III)."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Anhydrous iron(III) oxide omits water from the description of rust."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 36,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-042",
+      "subject": "chemistry",
+      "chapter": "20",
+      "topic": "Alkanols, Alkanoic Acids and Esters",
+      "concept": "Alkanoic acids",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed organic compound is highly soluble in water?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CH_{3}COOH",
+          "why": "Ethanoic acid has a polar carboxyl group that hydrogen bonds strongly with water, and its hydrocarbon portion is small.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "C_{2}H_{2}",
+          "why": "Ethyne is a small hydrocarbon with limited water solubility.",
+          "whyWrong": "Ethyne is a small hydrocarbon with limited water solubility."
+        },
+        {
+          "id": "c",
+          "text": "C_{2}H_{4}",
+          "why": "Ethene lacks a strongly polar functional group.",
+          "whyWrong": "Ethene lacks a strongly polar functional group."
+        },
+        {
+          "id": "d",
+          "text": "CH_{3}COOC_{2}H_{5}",
+          "why": "Ethyl ethanoate is only moderately soluble in water.",
+          "whyWrong": "Ethyl ethanoate is only moderately soluble in water."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the strength of interaction each functional group can form with water.",
+      "explanation": "Ethanoic acid has a polar carboxyl group that hydrogen bonds strongly with water, and its hydrocarbon portion is small.",
+      "trap": "Ethyne is a small hydrocarbon with limited water solubility.",
+      "mnemonic": "A small carboxylic acid mixes readily with water.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A small carboxylic acid mixes readily with water."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Ethyne is a small hydrocarbon with limited water solubility."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 42,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2010-044",
+      "subject": "chemistry",
+      "chapter": "19",
+      "topic": "Hydrocarbons",
+      "concept": "Alkenes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which naturally occurring plant hormone is used commercially to speed up fruit ripening?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ethene",
+          "why": "Ethene is a plant signalling molecule that triggers ripening in climacteric fruit.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Ethanol",
+          "why": "Ethanol is an alcohol and is not the standard ripening hormone.",
+          "whyWrong": "Ethanol is an alcohol and is not the standard ripening hormone."
+        },
+        {
+          "id": "c",
+          "text": "Ethyne",
+          "why": "Ethyne is not the naturally occurring ripening signal.",
+          "whyWrong": "Ethyne is not the naturally occurring ripening signal."
+        },
+        {
+          "id": "d",
+          "text": "Ethane",
+          "why": "Ethane lacks the characteristic biological role of ethene.",
+          "whyWrong": "Ethane lacks the characteristic biological role of ethene."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Choose the simple alkene that acts as a plant hormone.",
+      "explanation": "Ethene is a plant signalling molecule that triggers ripening in climacteric fruit.",
+      "trap": "Ethanol is an alcohol and is not the standard ripening hormone.",
+      "mnemonic": "Ethene encourages ripening.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ethene encourages ripening."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Ethanol is an alcohol and is not the standard ripening hormone."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 44,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-003",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Reacting masses and volumes",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Under the same temperature and pressure, what volume of carbon monoxide forms when excess carbon reacts with 10 dm^{3} of oxygen to produce CO?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 dm^{3}",
+          "why": "5 dm^{3} reverses the ratio.",
+          "whyWrong": "5 dm^{3} reverses the ratio."
+        },
+        {
+          "id": "b",
+          "text": "20 dm^{3}",
+          "why": "The equation 2C + O_{2} → 2CO gives twice as many gas molecules of CO as O_{2} consumed. The volume is 20 dm^{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "15 dm^{3}",
+          "why": "15 dm^{3} uses an unsupported 3 to 2 ratio.",
+          "whyWrong": "15 dm^{3} uses an unsupported 3 to 2 ratio."
+        },
+        {
+          "id": "d",
+          "text": "10 dm^{3}",
+          "why": "10 dm^{3} assumes equal gas volumes.",
+          "whyWrong": "10 dm^{3} assumes equal gas volumes."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Balance both oxygen atoms into CO molecules.",
+      "explanation": "The equation 2C + O_{2} → 2CO gives twice as many gas molecules of CO as O_{2} consumed. The volume is 20 dm^{3}.",
+      "trap": "5 dm^{3} reverses the ratio.",
+      "mnemonic": "One oxygen molecule makes two CO molecules.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "One oxygen molecule makes two CO molecules."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "5 dm^{3} reverses the ratio."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 3,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-009",
+      "subject": "chemistry",
+      "chapter": "5",
+      "topic": "Chemical Bonding",
+      "concept": "Covalent bonding",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the molecular shape of carbon dioxide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pyramidal",
+          "why": "A trigonal pyramid requires three bonds and a lone pair on the centre.",
+          "whyWrong": "A trigonal pyramid requires three bonds and a lone pair on the centre."
+        },
+        {
+          "id": "b",
+          "text": "Linear",
+          "why": "The carbon has two bonding regions and no lone pair. Those regions point in opposite directions and give a 180° bond angle.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Angular",
+          "why": "A bent structure would need a different arrangement of electron regions.",
+          "whyWrong": "A bent structure would need a different arrangement of electron regions."
+        },
+        {
+          "id": "d",
+          "text": "Tetrahedral",
+          "why": "Tetrahedral geometry requires four electron regions.",
+          "whyWrong": "Tetrahedral geometry requires four electron regions."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Count regions around the central atom, treating each double bond as one region.",
+      "explanation": "The carbon has two bonding regions and no lone pair. Those regions point in opposite directions and give a 180° bond angle.",
+      "trap": "A trigonal pyramid requires three bonds and a lone pair on the centre.",
+      "mnemonic": "Two bonding regions give a line.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Two bonding regions give a line."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A trigonal pyramid requires three bonds and a lone pair on the centre."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-011",
+      "subject": "chemistry",
+      "chapter": "5",
+      "topic": "Chemical Bonding",
+      "concept": "Ionic bonding",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What type of bond forms between Mg, with configuration 1s^{2} 2s^{2} 2p^{6} 3s^{2}, and O, with configuration 1s^{2} 2s^{2} 2p^{4}?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Metallic",
+          "why": "Metallic bonding involves a lattice of metal ions and delocalized electrons.",
+          "whyWrong": "Metallic bonding involves a lattice of metal ions and delocalized electrons."
+        },
+        {
+          "id": "b",
+          "text": "Covalent",
+          "why": "Covalent bonds involve shared electron pairs.",
+          "whyWrong": "Covalent bonds involve shared electron pairs."
+        },
+        {
+          "id": "c",
+          "text": "Dative",
+          "why": "A dative bond is a shared pair supplied by one partner.",
+          "whyWrong": "A dative bond is a shared pair supplied by one partner."
+        },
+        {
+          "id": "d",
+          "text": "Ionic",
+          "why": "Magnesium loses two electrons and oxygen gains two, forming Mg^{2+} and O^{2-}. Their electrostatic attraction is ionic bonding.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for a metal losing electrons to a non-metal.",
+      "explanation": "Magnesium loses two electrons and oxygen gains two, forming Mg^{2+} and O^{2-}. Their electrostatic attraction is ionic bonding.",
+      "trap": "Metallic bonding involves a lattice of metal ions and delocalized electrons.",
+      "mnemonic": "Magnesium gives two. Oxygen takes two.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Magnesium gives two. Oxygen takes two."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Metallic bonding involves a lattice of metal ions and delocalized electrons."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 11,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-012",
+      "subject": "chemistry",
+      "chapter": "10",
+      "topic": "Air",
+      "concept": "Composition of air",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which gas is the main diluent of oxygen in ordinary air?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nitrogen",
+          "why": "Nitrogen makes up around 78% of dry air and dilutes the oxygen present.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Carbon dioxide",
+          "why": "Carbon dioxide accounts for only a small fraction.",
+          "whyWrong": "Carbon dioxide accounts for only a small fraction."
+        },
+        {
+          "id": "c",
+          "text": "Noble gases",
+          "why": "Noble gases are minor components of air.",
+          "whyWrong": "Noble gases are minor components of air."
+        },
+        {
+          "id": "d",
+          "text": "Oxygen",
+          "why": "Oxygen is the component being diluted.",
+          "whyWrong": "Oxygen is the component being diluted."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Recall the most abundant atmospheric gas.",
+      "explanation": "Nitrogen makes up around 78% of dry air and dilutes the oxygen present.",
+      "trap": "Carbon dioxide accounts for only a small fraction.",
+      "mnemonic": "Air is mostly nitrogen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Air is mostly nitrogen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Carbon dioxide accounts for only a small fraction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-013",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Test for water",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "How does blue anhydrous cobalt(II) chloride change colour when it absorbs water?",
+      "options": [
+        {
+          "id": "a",
+          "text": "White to red",
+          "why": "Anhydrous cobalt(II) chloride is blue.",
+          "whyWrong": "Anhydrous cobalt(II) chloride is blue."
+        },
+        {
+          "id": "b",
+          "text": "Blue to white",
+          "why": "Hydration of this salt produces pink.",
+          "whyWrong": "Hydration of this salt produces pink."
+        },
+        {
+          "id": "c",
+          "text": "Blue to pink",
+          "why": "Anhydrous cobalt(II) chloride is blue. Its hydrated form is pink.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "White to blue",
+          "why": "This reverses the direction of the change and gives the wrong initial colour.",
+          "whyWrong": "This reverses the direction of the change and gives the wrong initial colour."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Distinguish the dry salt from the hydrated solid.",
+      "explanation": "Anhydrous cobalt(II) chloride is blue. Its hydrated form is pink.",
+      "trap": "Anhydrous cobalt(II) chloride is blue.",
+      "mnemonic": "Cobalt chloride is blue when dry and pink when wet.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Cobalt chloride is blue when dry and pink when wet."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Anhydrous cobalt(II) chloride is blue."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-017",
+      "subject": "chemistry",
+      "chapter": "12",
+      "topic": "Environmental Pollution",
+      "concept": "Water pollution",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What commonly happens to oxygen and bacterial abundance when excessive untreated sewage enters a water body?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lower temperature kills aquatic animals",
+          "why": "Oxygen consumption is the main mechanism described here.",
+          "whyWrong": "Oxygen consumption is the main mechanism described here."
+        },
+        {
+          "id": "b",
+          "text": "The number of aquatic animals rises",
+          "why": "Depleted oxygen harms oxygen-dependent animals.",
+          "whyWrong": "Depleted oxygen harms oxygen-dependent animals."
+        },
+        {
+          "id": "c",
+          "text": "Decomposing bacteria increase and dissolved oxygen falls",
+          "why": "Aerobic microbes multiply as they decompose organic matter. Their respiration reduces dissolved oxygen, which can harm aquatic animals.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Bacteria decrease and dissolved oxygen rises",
+          "why": "Fresh organic matter generally increases microbial growth.",
+          "whyWrong": "Fresh organic matter generally increases microbial growth."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Follow the oxygen used by decomposers.",
+      "explanation": "Aerobic microbes multiply as they decompose organic matter. Their respiration reduces dissolved oxygen, which can harm aquatic animals.",
+      "trap": "Oxygen consumption is the main mechanism described here.",
+      "mnemonic": "More sewage can mean more microbes and less oxygen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "More sewage can mean more microbes and less oxygen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Oxygen consumption is the main mechanism described here."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-018",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "Acids and bases",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 2.5 dm^{3} sample of 2.0 mol/dm^{3} hydrochloric acid is diluted with 10.0 dm^{3} of water. What is the final concentration if volumes add?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.4 mol/dm^{3}",
+          "why": "The acid amount is 2.0 × 2.5 = 5.0 mol. The final volume is 12.5 dm^{3}, giving \\frac{5.0}{12.5} = 0.4 mol/dm^{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "8.0 mol/dm^{3}",
+          "why": "Dilution reduces concentration below the starting value.",
+          "whyWrong": "Dilution reduces concentration below the starting value."
+        },
+        {
+          "id": "c",
+          "text": "2.0 mol/dm^{3}",
+          "why": "2.0 ignores the extra solvent.",
+          "whyWrong": "2.0 ignores the extra solvent."
+        },
+        {
+          "id": "d",
+          "text": "0.5 mol/dm^{3}",
+          "why": "0.5 treats the added water volume as the final volume.",
+          "whyWrong": "0.5 treats the added water volume as the final volume."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Keep moles fixed and add the two volumes.",
+      "explanation": "The acid amount is 2.0 × 2.5 = 5.0 mol. The final volume is 12.5 dm^{3}, giving \\frac{5.0}{12.5} = 0.4 mol/dm^{3}.",
+      "trap": "Dilution reduces concentration below the starting value.",
+      "mnemonic": "Dilution changes volume and concentration, not moles.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Dilution changes volume and concentration, not moles."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Dilution reduces concentration below the starting value."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 18,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-020",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "Neutralisation and salt preparation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed compound is an oxide rather than a salt?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aluminium oxide",
+          "why": "Aluminium oxide is an oxide containing aluminium and oxygen. It can react with either suitable acids or bases.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Sodium hydrogen sulfite",
+          "why": "Sodium hydrogen sulfite is an acid salt.",
+          "whyWrong": "Sodium hydrogen sulfite is an acid salt."
+        },
+        {
+          "id": "c",
+          "text": "Sodium carbonate",
+          "why": "Sodium carbonate is a salt containing carbonate ions.",
+          "whyWrong": "Sodium carbonate is a salt containing carbonate ions."
+        },
+        {
+          "id": "d",
+          "text": "Zinc chloride",
+          "why": "Zinc chloride is a chloride salt.",
+          "whyWrong": "Zinc chloride is a chloride salt."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the compound named directly as an oxide.",
+      "explanation": "Aluminium oxide is an oxide containing aluminium and oxygen. It can react with either suitable acids or bases.",
+      "trap": "Sodium hydrogen sulfite is an acid salt.",
+      "mnemonic": "An oxide contains oxygen combined with another element.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "An oxide contains oxygen combined with another element."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Sodium hydrogen sulfite is an acid salt."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 20,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-021",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "Neutralisation and salt preparation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the standard method for preparing an insoluble salt from aqueous reagents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acid reacting with a carbonate",
+          "why": "Acid and carbonate mainly illustrate acid–carbonate neutralization with gas evolution.",
+          "whyWrong": "Acid and carbonate mainly illustrate acid–carbonate neutralization with gas evolution."
+        },
+        {
+          "id": "b",
+          "text": "Double decomposition",
+          "why": "Mix soluble solutions that supply the needed ions. Double decomposition yields the insoluble product as a precipitate.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Dilute acid reacting with an insoluble base",
+          "why": "Acid and an insoluble base are commonly used to prepare a soluble salt.",
+          "whyWrong": "Acid and an insoluble base are commonly used to prepare a soluble salt."
+        },
+        {
+          "id": "d",
+          "text": "Metal reacting with acid",
+          "why": "Metal plus dilute acid is commonly used for a soluble salt and hydrogen.",
+          "whyWrong": "Metal plus dilute acid is commonly used for a soluble salt and hydrogen."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Bring the product’s two ions together in solution.",
+      "explanation": "Mix soluble solutions that supply the needed ions. Double decomposition yields the insoluble product as a precipitate.",
+      "trap": "Acid and carbonate mainly illustrate acid–carbonate neutralization with gas evolution.",
+      "mnemonic": "Insoluble salts precipitate from mixed solutions.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Insoluble salts precipitate from mixed solutions."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Acid and carbonate mainly illustrate acid–carbonate neutralization with gas evolution."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-026",
+      "subject": "chemistry",
+      "chapter": "7",
+      "topic": "Energy Changes",
+      "concept": "Enthalpy changes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "How does an endothermic reaction with a negative entropy change behave at positive absolute temperature?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Indeterminate",
+          "why": "The signs suffice to determine the sign of ΔG.",
+          "whyWrong": "The signs suffice to determine the sign of ΔG."
+        },
+        {
+          "id": "b",
+          "text": "Spontaneous",
+          "why": "A spontaneous forward reaction would have negative ΔG.",
+          "whyWrong": "A spontaneous forward reaction would have negative ΔG."
+        },
+        {
+          "id": "c",
+          "text": "Nonspontaneous",
+          "why": "In ΔG = ΔH − TΔS, positive ΔH and negative ΔS make both contributions to ΔG positive. The forward reaction is nonspontaneous under those conditions.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "At equilibrium",
+          "why": "Equilibrium would require ΔG = 0.",
+          "whyWrong": "Equilibrium would require ΔG = 0."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Check both terms in the Gibbs energy expression.",
+      "explanation": "In ΔG = ΔH − TΔS, positive ΔH and negative ΔS make both contributions to ΔG positive. The forward reaction is nonspontaneous under those conditions.",
+      "trap": "The signs suffice to determine the sign of ΔG.",
+      "mnemonic": "Energy uphill and entropy down give positive ΔG.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Energy uphill and entropy down give positive ΔG."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The signs suffice to determine the sign of ΔG."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-028",
+      "subject": "chemistry",
+      "chapter": "8",
+      "topic": "Rates of Reaction",
+      "concept": "Collision theory",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What name is given to the minimum energy barrier for reaction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lattice energy",
+          "why": "Lattice energy concerns an ionic solid’s formation or separation.",
+          "whyWrong": "Lattice energy concerns an ionic solid’s formation or separation."
+        },
+        {
+          "id": "b",
+          "text": "Ionization energy",
+          "why": "Ionization energy measures electron removal from an atom or ion.",
+          "whyWrong": "Ionization energy measures electron removal from an atom or ion."
+        },
+        {
+          "id": "c",
+          "text": "Activation energy",
+          "why": "Activation energy describes the energy needed to reach the activated state on a reaction pathway.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Kinetic energy",
+          "why": "Kinetic energy is the energy of motion and is not the name of the barrier.",
+          "whyWrong": "Kinetic energy is the energy of motion and is not the name of the barrier."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Find the energy that activates a successful reaction.",
+      "explanation": "Activation energy describes the energy needed to reach the activated state on a reaction pathway.",
+      "trap": "Lattice energy concerns an ionic solid’s formation or separation.",
+      "mnemonic": "Activation energy is the reaction threshold.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Activation energy is the reaction threshold."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Lattice energy concerns an ionic solid’s formation or separation."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-031",
+      "subject": "chemistry",
+      "chapter": "16",
+      "topic": "Non-metals and their Compounds",
+      "concept": "Sulfur and its compounds",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed oxide is neutral rather than acidic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carbon dioxide",
+          "why": "Carbon dioxide forms an acidic solution in water.",
+          "whyWrong": "Carbon dioxide forms an acidic solution in water."
+        },
+        {
+          "id": "b",
+          "text": "Sulfur trioxide",
+          "why": "Sulfur trioxide is the anhydride of sulfuric acid.",
+          "whyWrong": "Sulfur trioxide is the anhydride of sulfuric acid."
+        },
+        {
+          "id": "c",
+          "text": "Sulfur dioxide",
+          "why": "Sulfur dioxide gives an acidic aqueous solution.",
+          "whyWrong": "Sulfur dioxide gives an acidic aqueous solution."
+        },
+        {
+          "id": "d",
+          "text": "Carbon monoxide",
+          "why": "Carbon monoxide is classified as a neutral oxide. It does not behave as an acid anhydride in water.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare CO with the more oxidized CO_{2}.",
+      "explanation": "Carbon monoxide is classified as a neutral oxide. It does not behave as an acid anhydride in water.",
+      "trap": "Carbon dioxide forms an acidic solution in water.",
+      "mnemonic": "CO is neutral. CO_{2} is acidic.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "CO is neutral. CO_{2} is acidic."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Carbon dioxide forms an acidic solution in water."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-043",
+      "subject": "chemistry",
+      "chapter": "20",
+      "topic": "Alkanols, Alkanoic Acids and Esters",
+      "concept": "Alkanoic acids",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed organic compound reacts with sodium hydroxide in a simple neutralization to form salt and water?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C_{6}H_{12}O_{6}",
+          "why": "Glucose lacks a carboxylic acid group.",
+          "whyWrong": "Glucose lacks a carboxylic acid group."
+        },
+        {
+          "id": "b",
+          "text": "(CH_{3})_{3}COH",
+          "why": "A tertiary alcohol is too weak an acid for this ordinary neutralization.",
+          "whyWrong": "A tertiary alcohol is too weak an acid for this ordinary neutralization."
+        },
+        {
+          "id": "c",
+          "text": "CH_{3}CH=CH_{2}",
+          "why": "Propene has a double bond and lacks the required acidic group.",
+          "whyWrong": "Propene has a double bond and lacks the required acidic group."
+        },
+        {
+          "id": "d",
+          "text": "CH_{3}CH_{2}COOH",
+          "why": "Propanoic acid supplies its carboxyl proton to hydroxide, giving sodium propanoate and water.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for the carboxyl group.",
+      "explanation": "Propanoic acid supplies its carboxyl proton to hydroxide, giving sodium propanoate and water.",
+      "trap": "Glucose lacks a carboxylic acid group.",
+      "mnemonic": "COOH plus hydroxide gives carboxylate and water.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "COOH plus hydroxide gives carboxylate and water."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Glucose lacks a carboxylic acid group."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 43,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-048",
+      "subject": "chemistry",
+      "chapter": "18",
+      "topic": "Introduction to Organic Chemistry",
+      "concept": "Functional groups",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the general structural formula of a primary amide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RCOOR",
+          "why": "RCOOR describes an ester.",
+          "whyWrong": "RCOOR describes an ester."
+        },
+        {
+          "id": "b",
+          "text": "RCONH_{2}",
+          "why": "In a primary amide the carbonyl is directly connected to NH_{2}, giving RCONH_{2}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "RCONHR",
+          "why": "RCONHR is a secondary amide.",
+          "whyWrong": "RCONHR is a secondary amide."
+        },
+        {
+          "id": "d",
+          "text": "RCONR_{2}",
+          "why": "RCONR_{2} is a tertiary amide.",
+          "whyWrong": "RCONR_{2} is a tertiary amide."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Inspect how many hydrogens remain on nitrogen.",
+      "explanation": "In a primary amide the carbonyl is directly connected to NH_{2}, giving RCONH_{2}.",
+      "trap": "RCOOR describes an ester.",
+      "mnemonic": "A primary amide has NH_{2}.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A primary amide has NH_{2}."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "RCOOR describes an ester."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 48,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2013-050",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Empirical formula and mass",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A compound is 60.0% C, 13.3% H and 26.7% O by mass. Find its empirical formula using C = 12, H = 1 and O = 16.",
+      "options": [
+        {
+          "id": "a",
+          "text": "C_{5}H_{12}O",
+          "why": "This places too much carbon relative to oxygen.",
+          "whyWrong": "This places too much carbon relative to oxygen."
+        },
+        {
+          "id": "b",
+          "text": "C_{3}H_{8}O",
+          "why": "In 100 g the mole amounts are 5, 13.3 and 1.66875. Dividing by 1.66875 gives approximately 3 to 8 to 1, or C_{3}H_{8}O.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "C_{6}H_{13}O_{2}",
+          "why": "For six carbon atoms this formula would need sixteen hydrogens to match the measured ratio.",
+          "whyWrong": "For six carbon atoms this formula would need sixteen hydrogens to match the measured ratio."
+        },
+        {
+          "id": "d",
+          "text": "C_{4}H_{9}O",
+          "why": "Its C:H:O ratio does not match 3:8:1.",
+          "whyWrong": "Its C:H:O ratio does not match 3:8:1."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Convert mass percentages to moles before simplifying.",
+      "explanation": "In 100 g the mole amounts are 5, 13.3 and 1.66875. Dividing by 1.66875 gives approximately 3 to 8 to 1, or C_{3}H_{8}O.",
+      "trap": "This places too much carbon relative to oxygen.",
+      "mnemonic": "Empirical formulas use the smallest whole-number mole ratio.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Empirical formulas use the smallest whole-number mole ratio."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This places too much carbon relative to oxygen."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 50,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-002",
+      "subject": "chemistry",
+      "chapter": "18",
+      "topic": "Introduction to Organic Chemistry",
+      "concept": "Nomenclature",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What are the names of HCOOCH_{3} and HC≡CH, in that order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Methyl methanoate and ethene",
+          "why": "Ethene has a double bond.",
+          "whyWrong": "Ethene has a double bond."
+        },
+        {
+          "id": "b",
+          "text": "Methanoic acid and ethyne",
+          "why": "The first compound is an ester.",
+          "whyWrong": "The first compound is an ester."
+        },
+        {
+          "id": "c",
+          "text": "Ethyl methanoate and ethyne",
+          "why": "The alcohol-side group in the ester is methyl.",
+          "whyWrong": "The alcohol-side group in the ester is methyl."
+        },
+        {
+          "id": "d",
+          "text": "Methyl methanoate and ethyne",
+          "why": "The ester has a methyl group from methanol and methanoate from methanoic acid. The two-carbon molecule with a triple bond is ethyne.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Read the ester’s alkyl group and count the bonds in the hydrocarbon.",
+      "explanation": "The ester has a methyl group from methanol and methanoate from methanoic acid. The two-carbon molecule with a triple bond is ethyne.",
+      "trap": "Ethene has a double bond.",
+      "mnemonic": "Two carbons plus a triple bond gives ethyne.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Two carbons plus a triple bond gives ethyne."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Ethene has a double bond."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 2,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-006",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Mole concept",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An empty crucible weighs 10.00 g. With CuSO_{4}·5H_{2}O it weighs 14.98 g, and after heating it weighs 13.54 g. How many waters were lost per formula unit? Use Cu = 63.5, S = 32, O = 16 and H = 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "why": "One water per unit would account for roughly 0.36 g.",
+          "whyWrong": "One water per unit would account for roughly 0.36 g."
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "why": "Two would account for roughly 0.72 g.",
+          "whyWrong": "Two would account for roughly 0.72 g."
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "why": "Three would account for roughly 1.08 g.",
+          "whyWrong": "Three would account for roughly 1.08 g."
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "why": "The loss is 1.44 g, which is 0.080 mol water. The starting 4.98 g hydrate is 4.98 ÷ 249.5 ≈ 0.01996 mol. The ratio is about four waters per formula unit.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Find the ratio of water lost to starting hydrate in moles.",
+      "explanation": "The loss is 1.44 g, which is 0.080 mol water. The starting 4.98 g hydrate is 4.98 ÷ 249.5 ≈ 0.01996 mol. The ratio is about four waters per formula unit.",
+      "trap": "One water per unit would account for roughly 0.36 g.",
+      "mnemonic": "Mass loss gives water. Use moles for the ratio.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Mass loss gives water. Use moles for the ratio."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "One water per unit would account for roughly 0.36 g."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 6,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-010",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Isotopes",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An element consists of 90% mass-16 isotope and 10% mass-18 isotope. What is its relative atomic mass?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16.0",
+          "why": "16.0 ignores the heavier isotope.",
+          "whyWrong": "16.0 ignores the heavier isotope."
+        },
+        {
+          "id": "b",
+          "text": "16.2",
+          "why": "The abundance-weighted mean is 0.90 × 16 + 0.10 × 18 = 16.2.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "17.0",
+          "why": "17.0 is the mean for equal abundances.",
+          "whyWrong": "17.0 is the mean for equal abundances."
+        },
+        {
+          "id": "d",
+          "text": "17.8",
+          "why": "17.8 swaps the abundances.",
+          "whyWrong": "17.8 swaps the abundances."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Weight each isotope by its fraction of the sample.",
+      "explanation": "The abundance-weighted mean is 0.90 × 16 + 0.10 × 18 = 16.2.",
+      "trap": "16.0 ignores the heavier isotope.",
+      "mnemonic": "The mean lies nearer the more abundant isotope.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The mean lies nearer the more abundant isotope."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "16.0 ignores the heavier isotope."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 10,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-012",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Electronic configuration",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "How many valence electrons does a neutral phosphorus atom with atomic number 15 have?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "why": "Three counts only the 3p electrons and misses 3s^{2}.",
+          "whyWrong": "Three counts only the 3p electrons and misses 3s^{2}."
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "why": "Its shell population is 2, 8, 5, so five electrons occupy the outer shell.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "why": "Fifteen is the total electron count.",
+          "whyWrong": "Fifteen is the total electron count."
+        },
+        {
+          "id": "d",
+          "text": "31",
+          "why": "Thirty-one is a mass number.",
+          "whyWrong": "Thirty-one is a mass number."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Count the electrons in the highest principal shell.",
+      "explanation": "Its shell population is 2, 8, 5, so five electrons occupy the outer shell.",
+      "trap": "Three counts only the 3p electrons and misses 3s^{2}.",
+      "mnemonic": "Phosphorus has 3s^{2} 3p^{3} in its valence shell.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Phosphorus has 3s^{2} 3p^{3} in its valence shell."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Three counts only the 3p electrons and misses 3s^{2}."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-014",
+      "subject": "chemistry",
+      "chapter": "10",
+      "topic": "Air",
+      "concept": "Composition of air",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which component of air is absorbed by alkaline pyrogallol in a gas analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nitrogen",
+          "why": "Nitrogen largely remains unreacted.",
+          "whyWrong": "Nitrogen largely remains unreacted."
+        },
+        {
+          "id": "b",
+          "text": "Neon",
+          "why": "Neon is a noble gas and remains unreacted.",
+          "whyWrong": "Neon is a noble gas and remains unreacted."
+        },
+        {
+          "id": "c",
+          "text": "Argon",
+          "why": "Argon is a noble gas and remains unreacted.",
+          "whyWrong": "Argon is a noble gas and remains unreacted."
+        },
+        {
+          "id": "d",
+          "text": "Oxygen",
+          "why": "Alkaline pyrogallol removes oxygen as it is oxidized.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Pick the air component that oxidizes the reagent.",
+      "explanation": "Alkaline pyrogallol removes oxygen as it is oxidized.",
+      "trap": "Nitrogen largely remains unreacted.",
+      "mnemonic": "Alkaline pyrogallol removes oxygen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Alkaline pyrogallol removes oxygen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Nitrogen largely remains unreacted."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-019",
+      "subject": "chemistry",
+      "chapter": "5",
+      "topic": "Chemical Bonding",
+      "concept": "Intermolecular forces",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which intermolecular attraction explains why alkanols have relatively high boiling points?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ionic bonding",
+          "why": "Neutral alcohol molecules are not held together by ionic bonds.",
+          "whyWrong": "Neutral alcohol molecules are not held together by ionic bonds."
+        },
+        {
+          "id": "b",
+          "text": "Aromatic character",
+          "why": "Alkanols do not require aromatic rings.",
+          "whyWrong": "Alkanols do not require aromatic rings."
+        },
+        {
+          "id": "c",
+          "text": "Covalent bonding",
+          "why": "Boiling separates molecules without breaking their covalent bonds.",
+          "whyWrong": "Boiling separates molecules without breaking their covalent bonds."
+        },
+        {
+          "id": "d",
+          "text": "Hydrogen bonding",
+          "why": "Alcohol molecules form hydrogen bonds between O–H groups and nearby oxygen lone pairs. Heating must overcome these attractions.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for hydrogen bonded directly to oxygen.",
+      "explanation": "Alcohol molecules form hydrogen bonds between O–H groups and nearby oxygen lone pairs. Heating must overcome these attractions.",
+      "trap": "Neutral alcohol molecules are not held together by ionic bonds.",
+      "mnemonic": "O–H groups can hydrogen-bond.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "O–H groups can hydrogen-bond."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Neutral alcohol molecules are not held together by ionic bonds."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 19,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-021",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "Neutralisation and salt preparation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "How much 0.1 mol/dm^{3} sulfuric acid reacts exactly with 2.86 g of Na_{2}CO_{3}·10H_{2}O? Use Na = 23, C = 12, O = 16 and H = 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 cm^{3}",
+          "why": "20 cm^{3} supplies 0.002 mol acid.",
+          "whyWrong": "20 cm^{3} supplies 0.002 mol acid."
+        },
+        {
+          "id": "b",
+          "text": "40 cm^{3}",
+          "why": "40 cm^{3} supplies 0.004 mol acid.",
+          "whyWrong": "40 cm^{3} supplies 0.004 mol acid."
+        },
+        {
+          "id": "c",
+          "text": "80 cm^{3}",
+          "why": "80 cm^{3} supplies 0.008 mol acid.",
+          "whyWrong": "80 cm^{3} supplies 0.008 mol acid."
+        },
+        {
+          "id": "d",
+          "text": "100 cm^{3}",
+          "why": "The hydrate has molar mass 286 g/mol, so there is 0.010 mol carbonate. It reacts with 0.010 mol sulfuric acid, requiring 0.100 dm^{3} or 100 cm^{3}.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Include the ten waters in the formula mass.",
+      "explanation": "The hydrate has molar mass 286 g/mol, so there is 0.010 mol carbonate. It reacts with 0.010 mol sulfuric acid, requiring 0.100 dm^{3} or 100 cm^{3}.",
+      "trap": "20 cm^{3} supplies 0.002 mol acid.",
+      "mnemonic": "One carbonate consumes one sulfuric acid.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "One carbonate consumes one sulfuric acid."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "20 cm^{3} supplies 0.002 mol acid."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-024",
+      "subject": "chemistry",
+      "chapter": "17",
+      "topic": "Metals and their Compounds",
+      "concept": "Reactivity series",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Metal M displaces zinc from aqueous zinc chloride. What does this show about M?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M is more electronegative than Zinc",
+          "why": "A greater tendency to gain electron density would not explain oxidation of M.",
+          "whyWrong": "A greater tendency to gain electron density would not explain oxidation of M."
+        },
+        {
+          "id": "b",
+          "text": "Zinc is above hydrogen in the series",
+          "why": "The experiment compares M with zinc, without establishing a hydrogen comparison.",
+          "whyWrong": "The experiment compares M with zinc, without establishing a hydrogen comparison."
+        },
+        {
+          "id": "c",
+          "text": "M is more electropositive than zinc",
+          "why": "In this displacement, M oxidizes more readily than zinc and reduces Zn^{2+} to zinc. M is more electropositive.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Electrons flow from zinc to m",
+          "why": "Electrons move from M to zinc ions.",
+          "whyWrong": "Electrons move from M to zinc ions."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify which metal supplies electrons.",
+      "explanation": "In this displacement, M oxidizes more readily than zinc and reduces Zn^{2+} to zinc. M is more electropositive.",
+      "trap": "A greater tendency to gain electron density would not explain oxidation of M.",
+      "mnemonic": "The more reactive metal displaces the less reactive metal.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The more reactive metal displaces the less reactive metal."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A greater tendency to gain electron density would not explain oxidation of M."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 24,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-029",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Solubility and solubility curves",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A crystal of a solute is added to its clear solution at fixed temperature. No net dissolution or crystal growth is observed after equilibration. What is the solution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supersaturated",
+          "why": "A supersaturated solution ordinarily deposits solute when seeded.",
+          "whyWrong": "A supersaturated solution ordinarily deposits solute when seeded."
+        },
+        {
+          "id": "b",
+          "text": "Concentrated",
+          "why": "A concentrated solution may still dissolve more solute.",
+          "whyWrong": "A concentrated solution may still dissolve more solute."
+        },
+        {
+          "id": "c",
+          "text": "Unsaturated",
+          "why": "An unsaturated solution can dissolve more.",
+          "whyWrong": "An unsaturated solution can dissolve more."
+        },
+        {
+          "id": "d",
+          "text": "Saturated",
+          "why": "A saturated solution is at dynamic equilibrium with its solid at that temperature.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare dissolution with crystallization at equilibrium.",
+      "explanation": "A saturated solution is at dynamic equilibrium with its solid at that temperature.",
+      "trap": "A supersaturated solution ordinarily deposits solute when seeded.",
+      "mnemonic": "Saturated means no net change on adding the solid.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Saturated means no net change on adding the solid."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A supersaturated solution ordinarily deposits solute when seeded."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-031",
+      "subject": "chemistry",
+      "chapter": "17",
+      "topic": "Metals and their Compounds",
+      "concept": "Extraction of metals",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which gas is blown into a basic oxygen furnace to help remove impurities from molten pig iron?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oxygen",
+          "why": "Oxygen oxidizes impurities. Carbon leaves mainly as gas, and suitable oxidized impurities can enter slag.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Chlorine",
+          "why": "Chlorine is not the furnace’s principal oxidant.",
+          "whyWrong": "Chlorine is not the furnace’s principal oxidant."
+        },
+        {
+          "id": "c",
+          "text": "Nitrogen",
+          "why": "Nitrogen is largely inert in the intended refining reaction.",
+          "whyWrong": "Nitrogen is largely inert in the intended refining reaction."
+        },
+        {
+          "id": "d",
+          "text": "Hydrogen",
+          "why": "Hydrogen is a reducing gas.",
+          "whyWrong": "Hydrogen is a reducing gas."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Choose the gas that gives the process its name.",
+      "explanation": "Oxygen oxidizes impurities. Carbon leaves mainly as gas, and suitable oxidized impurities can enter slag.",
+      "trap": "Chlorine is not the furnace’s principal oxidant.",
+      "mnemonic": "Basic oxygen refining uses oxygen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Basic oxygen refining uses oxygen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Chlorine is not the furnace’s principal oxidant."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-034",
+      "subject": "chemistry",
+      "chapter": "16",
+      "topic": "Non-metals and their Compounds",
+      "concept": "Halogens and their compounds",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What must be present for chlorine gas to bleach damp coloured material effectively?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hydrogen chloride",
+          "why": "Hydrogen chloride forms alongside the active species but does not explain bleaching.",
+          "whyWrong": "Hydrogen chloride forms alongside the active species but does not explain bleaching."
+        },
+        {
+          "id": "b",
+          "text": "Water",
+          "why": "Water lets dissolved chlorine form hypochlorous acid, which oxidizes many coloured compounds.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Air",
+          "why": "Air is not the necessary reagent for forming hypochlorous acid.",
+          "whyWrong": "Air is not the necessary reagent for forming hypochlorous acid."
+        },
+        {
+          "id": "d",
+          "text": "Oxygen",
+          "why": "Gaseous oxygen is not the necessary addition in this reaction.",
+          "whyWrong": "Gaseous oxygen is not the necessary addition in this reaction."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare dry and damp samples.",
+      "explanation": "Water lets dissolved chlorine form hypochlorous acid, which oxidizes many coloured compounds.",
+      "trap": "Hydrogen chloride forms alongside the active species but does not explain bleaching.",
+      "mnemonic": "Wet chlorine can form an oxidizing bleach.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Wet chlorine can form an oxidizing bleach."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Hydrogen chloride forms alongside the active species but does not explain bleaching."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 34,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-038",
+      "subject": "chemistry",
+      "chapter": "21",
+      "topic": "Polymers and Chemistry in Industry",
+      "concept": "Industrial chemical processes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What process makes ethanol after starch is first converted to fermentable sugars?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cracking",
+          "why": "Cracking breaks larger hydrocarbons into smaller ones.",
+          "whyWrong": "Cracking breaks larger hydrocarbons into smaller ones."
+        },
+        {
+          "id": "b",
+          "text": "Distillation",
+          "why": "Distillation can separate ethanol after it is made.",
+          "whyWrong": "Distillation can separate ethanol after it is made."
+        },
+        {
+          "id": "c",
+          "text": "Fermentation",
+          "why": "Fermentation by yeast converts the sugars into ethanol and carbon dioxide.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Oxidation",
+          "why": "Simple oxidation does not name this biological conversion.",
+          "whyWrong": "Simple oxidation does not name this biological conversion."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify the stage that follows starch hydrolysis.",
+      "explanation": "Fermentation by yeast converts the sugars into ethanol and carbon dioxide.",
+      "trap": "Cracking breaks larger hydrocarbons into smaller ones.",
+      "mnemonic": "Starch to sugars, then fermentation to ethanol.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Starch to sugars, then fermentation to ethanol."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Cracking breaks larger hydrocarbons into smaller ones."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 38,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2015-040",
+      "subject": "chemistry",
+      "chapter": "9",
+      "topic": "Chemical Equilibrium",
+      "concept": "Le Chatelier’s principle",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "For the exothermic equilibrium 2SO_{2}(g) + O_{2}(g) ⇌ 2SO_{3}(g), what happens after temperature decreases and equilibrium is restored?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The reaction rate increases",
+          "why": "Cooling generally slows the reaction rates rather than increasing them.",
+          "whyWrong": "Cooling generally slows the reaction rates rather than increasing them."
+        },
+        {
+          "id": "b",
+          "text": "The concentration of SO_{2} decreases",
+          "why": "The equilibrium consumes more SO_{2}.",
+          "whyWrong": "The equilibrium consumes more SO_{2}."
+        },
+        {
+          "id": "c",
+          "text": "The concentration of SO_{2} increases",
+          "why": "Cooling favours the exothermic forward direction, consuming SO_{2} as the mixture shifts towards SO_{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "SO_{2} becomes unreactive",
+          "why": "Cooling does not make sulfur dioxide chemically inert.",
+          "whyWrong": "Cooling does not make sulfur dioxide chemically inert."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Treat heat as a product in the forward direction.",
+      "explanation": "Cooling favours the exothermic forward direction, consuming SO_{2} as the mixture shifts towards SO_{3}.",
+      "trap": "Cooling generally slows the reaction rates rather than increasing them.",
+      "mnemonic": "Cooling favours the direction that releases heat.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Cooling favours the direction that releases heat."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Cooling generally slows the reaction rates rather than increasing them."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 40,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-008",
+      "subject": "chemistry",
+      "chapter": "3",
+      "topic": "States of Matter, Kinetic Theory and Gas Laws",
+      "concept": "Changes of state",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "At a fixed atmospheric pressure, when does a liquid start to boil throughout?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its vapour pressure is equal to the vapour pressure of its solid at the given temperature",
+          "why": "Equal solid and liquid vapour pressures do not define boiling.",
+          "whyWrong": "Equal solid and liquid vapour pressures do not define boiling."
+        },
+        {
+          "id": "b",
+          "text": "Molecules start escaping its surface",
+          "why": "Surface escape can occur during evaporation below the boiling point.",
+          "whyWrong": "Surface escape can occur during evaporation below the boiling point."
+        },
+        {
+          "id": "c",
+          "text": "Its vapour pressure equals the atmospheric pressure",
+          "why": "Boiling begins when the liquid’s vapour pressure reaches the external pressure so that vapour bubbles can persist within the liquid.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Its volume is slightly increased",
+          "why": "A small increase in volume does not define boiling.",
+          "whyWrong": "A small increase in volume does not define boiling."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Ask when bubbles can survive inside the liquid.",
+      "explanation": "Boiling begins when the liquid’s vapour pressure reaches the external pressure so that vapour bubbles can persist within the liquid.",
+      "trap": "Equal solid and liquid vapour pressures do not define boiling.",
+      "mnemonic": "Boiling starts when vapour pressure meets outside pressure.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Boiling starts when vapour pressure meets outside pressure."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Equal solid and liquid vapour pressures do not define boiling."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-009",
+      "subject": "chemistry",
+      "chapter": "6",
+      "topic": "Periodicity",
+      "concept": "Periodic table",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "W, X, Y and Z have atomic numbers 2, 6, 16 and 20 respectively. Which is a metal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X",
+          "why": "X is carbon, a nonmetal.",
+          "whyWrong": "X is carbon, a nonmetal."
+        },
+        {
+          "id": "b",
+          "text": "W",
+          "why": "W is helium, a noble gas.",
+          "whyWrong": "W is helium, a noble gas."
+        },
+        {
+          "id": "c",
+          "text": "Z",
+          "why": "Z is calcium, atomic number 20. Calcium is an alkaline-earth metal.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Y",
+          "why": "Y is sulfur, a nonmetal.",
+          "whyWrong": "Y is sulfur, a nonmetal."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify the element at atomic number 20.",
+      "explanation": "Z is calcium, atomic number 20. Calcium is an alkaline-earth metal.",
+      "trap": "X is carbon, a nonmetal.",
+      "mnemonic": "Calcium is in Group 2.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Calcium is in Group 2."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "X is carbon, a nonmetal."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-011",
+      "subject": "chemistry",
+      "chapter": "19",
+      "topic": "Hydrocarbons",
+      "concept": "Alkanes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the process of splitting large hydrocarbon molecules into smaller ones at high temperature, often using a catalyst?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disintegration",
+          "why": "Disintegration is a general term and does not name this refining process.",
+          "whyWrong": "Disintegration is a general term and does not name this refining process."
+        },
+        {
+          "id": "b",
+          "text": "Polymerization",
+          "why": "Polymerization joins smaller molecules into larger ones.",
+          "whyWrong": "Polymerization joins smaller molecules into larger ones."
+        },
+        {
+          "id": "c",
+          "text": "Cracking",
+          "why": "Cracking breaks carbon–carbon bonds and produces smaller hydrocarbons, often including alkenes.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Degradation",
+          "why": "Degradation is too general for this refinery operation.",
+          "whyWrong": "Degradation is too general for this refinery operation."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Look for the refining step that reduces chain length.",
+      "explanation": "Cracking breaks carbon–carbon bonds and produces smaller hydrocarbons, often including alkenes.",
+      "trap": "Disintegration is a general term and does not name this refining process.",
+      "mnemonic": "Cracking cuts chains.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Cracking cuts chains."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Disintegration is a general term and does not name this refining process."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 11,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-013",
+      "subject": "chemistry",
+      "chapter": "1",
+      "topic": "Separation of Mixtures and Purification",
+      "concept": "Colloids and aerosols",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What type of dispersion is smoke in the broad classification of aerosols?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Solid particles dispersed in liquid",
+          "why": "Solid particles in liquid form a different type of dispersion.",
+          "whyWrong": "Solid particles in liquid form a different type of dispersion."
+        },
+        {
+          "id": "b",
+          "text": "Solid or liquid particles dispersed in gas",
+          "why": "Smoke is an aerosol in which fine solid particles, often with liquid droplets, are dispersed in gas.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Gas or liquid particles dispersed in liquid",
+          "why": "The continuous phase of smoke is gas.",
+          "whyWrong": "The continuous phase of smoke is gas."
+        },
+        {
+          "id": "d",
+          "text": "Liquid particles dispersed in liquid",
+          "why": "Liquid droplets in another liquid form an emulsion.",
+          "whyWrong": "Liquid droplets in another liquid form an emulsion."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify whether the carrier phase is air or liquid.",
+      "explanation": "Smoke is an aerosol in which fine solid particles, often with liquid droplets, are dispersed in gas.",
+      "trap": "Solid particles in liquid form a different type of dispersion.",
+      "mnemonic": "Aerosols have a gas as the carrier.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Aerosols have a gas as the carrier."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Solid particles in liquid form a different type of dispersion."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-015",
+      "subject": "chemistry",
+      "chapter": "9",
+      "topic": "Chemical Equilibrium",
+      "concept": "Le Chatelier’s principle",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "For the exothermic equilibrium P(g) + Q(g) ⇌ 3R(s) + S(g), which change increases the yield of R?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using a larger closed vessel",
+          "why": "Expanding the vessel favours the side with more moles of gas, which is the reactant side.",
+          "whyWrong": "Expanding the vessel favours the side with more moles of gas, which is the reactant side."
+        },
+        {
+          "id": "b",
+          "text": "Increasing the temperature",
+          "why": "Heating favours the endothermic reverse reaction.",
+          "whyWrong": "Heating favours the endothermic reverse reaction."
+        },
+        {
+          "id": "c",
+          "text": "Removing some S",
+          "why": "Removing gaseous product S shifts the equilibrium towards the products, forming more solid R.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Adding a positive catalyst",
+          "why": "A catalyst changes the rate of reaching equilibrium without changing the equilibrium composition.",
+          "whyWrong": "A catalyst changes the rate of reaching equilibrium without changing the equilibrium composition."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Find a change that removes a product.",
+      "explanation": "Removing gaseous product S shifts the equilibrium towards the products, forming more solid R.",
+      "trap": "Expanding the vessel favours the side with more moles of gas, which is the reactant side.",
+      "mnemonic": "Remove a product to favour its replacement.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Remove a product to favour its replacement."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Expanding the vessel favours the side with more moles of gas, which is the reactant side."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 15,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-028",
+      "subject": "chemistry",
+      "chapter": "3",
+      "topic": "States of Matter, Kinetic Theory and Gas Laws",
+      "concept": "Ideal gas equation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A gas expands from 3.25 dm^{3} to 9.75 dm^{3} at constant pressure. What is the ratio of final to initial absolute temperature?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3:1",
+          "why": "At constant pressure and fixed amount, \\frac{V}{T} is constant. Therefore \\frac{T_{final}}{T_{initial}} = \\frac{9.75}{3.25} = 3.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "5:2",
+          "why": "5:2 is 2.5 rather than 3.",
+          "whyWrong": "5:2 is 2.5 rather than 3."
+        },
+        {
+          "id": "c",
+          "text": "5:4",
+          "why": "5:4 describes much less expansion than observed.",
+          "whyWrong": "5:4 describes much less expansion than observed."
+        },
+        {
+          "id": "d",
+          "text": "8:3",
+          "why": "8:3 is less than 3.",
+          "whyWrong": "8:3 is less than 3."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use absolute temperatures and the volume ratio.",
+      "explanation": "At constant pressure and fixed amount, \\frac{V}{T} is constant. Therefore \\frac{T_{final}}{T_{initial}} = \\frac{9.75}{3.25} = 3.",
+      "trap": "5:2 is 2.5 rather than 3.",
+      "mnemonic": "At constant pressure, volume follows Kelvin temperature.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At constant pressure, volume follows Kelvin temperature."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "5:2 is 2.5 rather than 3."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-029",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Water purification",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed salt is commonly used to coagulate suspended solids in water treatment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aluminium sulfate",
+          "why": "Aluminium sulfate produces flocs that gather fine suspended particles so they can settle or be filtered.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Copper(II) sulfate",
+          "why": "Copper sulfate is used for other water treatment purposes.",
+          "whyWrong": "Copper sulfate is used for other water treatment purposes."
+        },
+        {
+          "id": "c",
+          "text": "Sodium sulfate",
+          "why": "Sodium sulfate does not typically produce the aluminium floc.",
+          "whyWrong": "Sodium sulfate does not typically produce the aluminium floc."
+        },
+        {
+          "id": "d",
+          "text": "Calcium sulfate",
+          "why": "Calcium sulfate is not the standard coagulant in these choices.",
+          "whyWrong": "Calcium sulfate is not the standard coagulant in these choices."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the aluminium salt.",
+      "explanation": "Aluminium sulfate produces flocs that gather fine suspended particles so they can settle or be filtered.",
+      "trap": "Copper sulfate is used for other water treatment purposes.",
+      "mnemonic": "Aluminium salts can gather fine particles into flocs.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Aluminium salts can gather fine particles into flocs."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Copper sulfate is used for other water treatment purposes."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-031",
+      "subject": "chemistry",
+      "chapter": "10",
+      "topic": "Air",
+      "concept": "Composition of air",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Oxygen, carbon dioxide and water vapour are removed from air using alkaline pyrogallol followed by quicklime. Which gases remain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nitrogen and carbon dioxide",
+          "why": "Carbon dioxide is removed by reaction with the alkaline materials.",
+          "whyWrong": "Carbon dioxide is removed by reaction with the alkaline materials."
+        },
+        {
+          "id": "b",
+          "text": "The rare gases",
+          "why": "Nitrogen also remains.",
+          "whyWrong": "Nitrogen also remains."
+        },
+        {
+          "id": "c",
+          "text": "Nitrogen and oxygen",
+          "why": "Oxygen is removed by the pyrogallol.",
+          "whyWrong": "Oxygen is removed by the pyrogallol."
+        },
+        {
+          "id": "d",
+          "text": "Nitrogen and the rare gases",
+          "why": "After these components are removed, nitrogen and the noble gases remain because the reagents do not readily absorb them.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Track which components each reagent removes.",
+      "explanation": "After these components are removed, nitrogen and the noble gases remain because the reagents do not readily absorb them.",
+      "trap": "Carbon dioxide is removed by reaction with the alkaline materials.",
+      "mnemonic": "Remove reactive minor components and oxygen, leaving nitrogen and noble gases.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Remove reactive minor components and oxygen, leaving nitrogen and noble gases."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Carbon dioxide is removed by reaction with the alkaline materials."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-037",
+      "subject": "chemistry",
+      "chapter": "15",
+      "topic": "Electrolysis",
+      "concept": "Electrolytes and electrodes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed substance is an electrolyte because it supplies mobile ions in solution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alcohol",
+          "why": "Alcohol mainly dissolves as neutral molecules.",
+          "whyWrong": "Alcohol mainly dissolves as neutral molecules."
+        },
+        {
+          "id": "b",
+          "text": "Sodium acetate solution",
+          "why": "Sodium acetate dissociates in water into mobile sodium and acetate ions.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Solid potassium hydroxide",
+          "why": "Solid potassium hydroxide lacks mobile ions.",
+          "whyWrong": "Solid potassium hydroxide lacks mobile ions."
+        },
+        {
+          "id": "d",
+          "text": "Mercury",
+          "why": "Mercury conducts via electrons as a metal.",
+          "whyWrong": "Mercury conducts via electrons as a metal."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for a dissolved ionic compound.",
+      "explanation": "Sodium acetate dissociates in water into mobile sodium and acetate ions.",
+      "trap": "Alcohol mainly dissolves as neutral molecules.",
+      "mnemonic": "Electrolytes conduct by mobile ions.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Electrolytes conduct by mobile ions."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Alcohol mainly dissolves as neutral molecules."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 37,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2017-039",
+      "subject": "chemistry",
+      "chapter": "3",
+      "topic": "States of Matter, Kinetic Theory and Gas Laws",
+      "concept": "Diffusion and Graham’s law",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Which substance has the lowest vapour density relative to hydrogen? Use C = 12, H = 1, O = 16 and Cl = 35.5.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ethanoic acid",
+          "why": "Ethanoic acid has molar mass 60 g/mol.",
+          "whyWrong": "Ethanoic acid has molar mass 60 g/mol."
+        },
+        {
+          "id": "b",
+          "text": "Propanol",
+          "why": "Propanol has molar mass 60 g/mol.",
+          "whyWrong": "Propanol has molar mass 60 g/mol."
+        },
+        {
+          "id": "c",
+          "text": "Dichloromethane",
+          "why": "Dichloromethane has molar mass 85 g/mol.",
+          "whyWrong": "Dichloromethane has molar mass 85 g/mol."
+        },
+        {
+          "id": "d",
+          "text": "Ethanal",
+          "why": "Under the usual school-model comparison, vapour density is proportional to molar mass. Ethanal is 44 g/mol, below ethanoic acid and propanol at 60 and dichloromethane at 85.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare molecular masses under the same conditions.",
+      "explanation": "Under the usual school-model comparison, vapour density is proportional to molar mass. Ethanal is 44 g/mol, below ethanoic acid and propanol at 60 and dichloromethane at 85.",
+      "trap": "Ethanoic acid has molar mass 60 g/mol.",
+      "mnemonic": "The lightest equal volume has the lowest vapour density.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The lightest equal volume has the lowest vapour density."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Ethanoic acid has molar mass 60 g/mol."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 39,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    }
+  ]
+}

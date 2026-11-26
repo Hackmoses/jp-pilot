@@ -1,0 +1,3259 @@
+{
+  "version": 1,
+  "subject": "physics",
+  "count": 50,
+  "questions": [
+    {
+      "id": "phys-jamb-2010-023",
+      "subject": "physics",
+      "chapter": "11",
+      "topic": "Heat Transfer",
+      "concept": "Thermal radiation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which quantity does not directly enter the standard law for thermal radiation from a surface?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Density",
+          "why": "Radiated power is εσAT^{4}. Density is not an explicit term.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Temperature",
+          "why": "Temperature enters to the fourth power.",
+          "whyWrong": "Temperature enters to the fourth power."
+        },
+        {
+          "id": "c",
+          "text": "Surface area",
+          "why": "A larger radiating area raises the power.",
+          "whyWrong": "A larger radiating area raises the power."
+        },
+        {
+          "id": "d",
+          "text": "Nature of the surface",
+          "why": "Surface properties affect emissivity.",
+          "whyWrong": "Surface properties affect emissivity."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Write the law for emitted power.",
+      "explanation": "Radiated power is εσAT^{4}. Density is not an explicit term.",
+      "trap": "Temperature enters to the fourth power.",
+      "mnemonic": "Think of area, emissivity and temperature.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Think of area, emissivity and temperature."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Temperature enters to the fourth power."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 23,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2010-026",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Echoes and reverberation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the persistence of thunder due to repeated sound reflections called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refraction of sound",
+          "why": "Refraction is bending as wave speed changes.",
+          "whyWrong": "Refraction is bending as wave speed changes."
+        },
+        {
+          "id": "b",
+          "text": "Reverberation",
+          "why": "Reverberation occurs when reflected sounds arrive close together after the original sound.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Superposition",
+          "why": "Superposition is the general rule for adding waves.",
+          "whyWrong": "Superposition is the general rule for adding waves."
+        },
+        {
+          "id": "d",
+          "text": "Diffraction of sound",
+          "why": "Diffraction is spreading around obstacles.",
+          "whyWrong": "Diffraction is spreading around obstacles."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of many reflected arrivals.",
+      "explanation": "Reverberation occurs when reflected sounds arrive close together after the original sound.",
+      "trap": "Refraction is bending as wave speed changes.",
+      "mnemonic": "Reverberation is lingering reflected sound.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Reverberation is lingering reflected sound."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Refraction is bending as wave speed changes."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2010-039",
+      "subject": "physics",
+      "chapter": "19",
+      "topic": "Electrical Energy and Power",
+      "concept": "Electric power transmission",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Why transmit electric power at high voltage and low current?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase the power supply",
+          "why": "The intended delivered power is held fixed in the comparison.",
+          "whyWrong": "The intended delivered power is held fixed in the comparison."
+        },
+        {
+          "id": "b",
+          "text": "Prevent overheating of the coil",
+          "why": "At fixed power the higher voltage permits a smaller current. This reduces I^{2}R heating of the line.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Make it travel fast",
+          "why": "Propagation speed depends on the line and medium.",
+          "whyWrong": "Propagation speed depends on the line and medium."
+        },
+        {
+          "id": "d",
+          "text": "Make it pass through the transformers",
+          "why": "Transformers help change voltage, while reduced heating is the goal.",
+          "whyWrong": "Transformers help change voltage, while reduced heating is the goal."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare heating for different currents.",
+      "explanation": "At fixed power the higher voltage permits a smaller current. This reduces I^{2}R heating of the line.",
+      "trap": "The intended delivered power is held fixed in the comparison.",
+      "mnemonic": "Lower current means lower I^{2}R loss.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Lower current means lower I^{2}R loss."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The intended delivered power is held fixed in the comparison."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 39,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-008",
+      "subject": "physics",
+      "chapter": "4",
+      "topic": "Circular Motion and Gravitation",
+      "concept": "Newton’s law of gravitation and gravitational potential",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "How does gravitational attraction between two fixed masses change as their separation r decreases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increases as r decreases",
+          "why": "F = \\frac{Gm_{1}m_{2}}{r^{2}}, so the force increases as the denominator decreases.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Increases as G varies",
+          "why": "G is constant.",
+          "whyWrong": "G is constant."
+        },
+        {
+          "id": "c",
+          "text": "Stays constant",
+          "why": "The force changes with distance.",
+          "whyWrong": "The force changes with distance."
+        },
+        {
+          "id": "d",
+          "text": "Increases as r increases",
+          "why": "Increasing r weakens the force.",
+          "whyWrong": "Increasing r weakens the force."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Locate r in the equation.",
+      "explanation": "F = \\frac{Gm_{1}m_{2}}{r^{2}}, so the force increases as the denominator decreases.",
+      "trap": "G is constant.",
+      "mnemonic": "Gravity between point masses follows an inverse-square law.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Gravity between point masses follows an inverse-square law."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "G is constant."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-016",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Archimedes’ principle and flotation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 2 kg object of volume 1 m^{3} is submerged in liquid of density 1 kg m^{-3}. Find its apparent weight for g = 10 N kg^{-1}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 N",
+          "why": "20 N omits buoyancy.",
+          "whyWrong": "20 N omits buoyancy."
+        },
+        {
+          "id": "b",
+          "text": "10 N",
+          "why": "True weight is 20 N and upthrust is 1 × 1 × 10 = 10 N. Apparent weight is 10 N.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "2 N",
+          "why": "2 is the object's mass in kilograms.",
+          "whyWrong": "2 is the object's mass in kilograms."
+        },
+        {
+          "id": "d",
+          "text": "1 N",
+          "why": "1 is the given density in kg m^{-3}.",
+          "whyWrong": "1 is the given density in kg m^{-3}."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the weight of displaced liquid.",
+      "explanation": "True weight is 20 N and upthrust is 1 × 1 × 10 = 10 N. Apparent weight is 10 N.",
+      "trap": "20 N omits buoyancy.",
+      "mnemonic": "Apparent weight equals weight minus upthrust.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Apparent weight equals weight minus upthrust."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "20 N omits buoyancy."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 16,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-017",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Liquid pressure and depth",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "At fixed g, what determines the gauge pressure at a point in a liquid at rest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depth and the density",
+          "why": "Gauge pressure is ρgh, where ρ is liquid density and h is depth.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Mass and the volume",
+          "why": "Total mass and volume do not give the point’s depth.",
+          "whyWrong": "Total mass and volume do not give the point’s depth."
+        },
+        {
+          "id": "c",
+          "text": "Quantity and the surface area",
+          "why": "Surface area does not enter the hydrostatic pressure.",
+          "whyWrong": "Surface area does not enter the hydrostatic pressure."
+        },
+        {
+          "id": "d",
+          "text": "Surface area and the viscosity",
+          "why": "Viscosity affects flow, while this fluid is at rest.",
+          "whyWrong": "Viscosity affects flow, while this fluid is at rest."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Recall the hydrostatic pressure formula.",
+      "explanation": "Gauge pressure is ρgh, where ρ is liquid density and h is depth.",
+      "trap": "Total mass and volume do not give the point’s depth.",
+      "mnemonic": "Depth and density set pressure under fixed gravity.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Depth and density set pressure under fixed gravity."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Total mass and volume do not give the point’s depth."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-022",
+      "subject": "physics",
+      "chapter": "10",
+      "topic": "Heat, Changes of State and Vapours",
+      "concept": "Heat capacity and specific heat capacity",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Find the temperature rise when 500 J warms 100 g of water. Use c = 4200 J kg^{-1} K^{-1}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "12.1°C",
+          "why": "12.1°C is an order of magnitude too high.",
+          "whyWrong": "12.1°C is an order of magnitude too high."
+        },
+        {
+          "id": "b",
+          "text": "2.1°C",
+          "why": "2.1°C would require about 882 J.",
+          "whyWrong": "2.1°C would require about 882 J."
+        },
+        {
+          "id": "c",
+          "text": "1.2°C",
+          "why": "Using Q = mcΔT with 0.100 kg gives ΔT = \\frac{500}{420} ≈ 1.2°C.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "0.1°C",
+          "why": "0.1°C would require only about 42 J.",
+          "whyWrong": "0.1°C would require only about 42 J."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Convert grams to kilograms.",
+      "explanation": "Using Q = mcΔT with 0.100 kg gives ΔT = \\frac{500}{420} ≈ 1.2°C.",
+      "trap": "12.1°C is an order of magnitude too high.",
+      "mnemonic": "Divide heat by mc.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Divide heat by mc."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "12.1°C is an order of magnitude too high."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 22,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-028",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Speed of sound and effects of temperature and pressure",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed change can affect sound speed measured relative to the ground at fixed air temperature?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An increase in the pitch of the sound",
+          "why": "Pitch changes frequency rather than sound speed in air.",
+          "whyWrong": "Pitch changes frequency rather than sound speed in air."
+        },
+        {
+          "id": "b",
+          "text": "An increase in the loudness of the sound",
+          "why": "Loudness changes amplitude.",
+          "whyWrong": "Loudness changes amplitude."
+        },
+        {
+          "id": "c",
+          "text": "Wind travelling in the same direction of the sound",
+          "why": "Wind travelling with sound adds to its ground-relative speed.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "A change in the atmospheric pressure at constant temperature",
+          "why": "At constant temperature the ideal-gas sound speed is independent of static pressure.",
+          "whyWrong": "At constant temperature the ideal-gas sound speed is independent of static pressure."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Account for motion of the air itself.",
+      "explanation": "Wind travelling with sound adds to its ground-relative speed.",
+      "trap": "Pitch changes frequency rather than sound speed in air.",
+      "mnemonic": "Ground-relative speed includes wind.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ground-relative speed includes wind."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Pitch changes frequency rather than sound speed in air."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-029",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Pitch, loudness, intensity and quality",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "At fixed frequency and medium, which property of the vibration determines sound intensity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frequency",
+          "why": "Frequency is held fixed here.",
+          "whyWrong": "Frequency is held fixed here."
+        },
+        {
+          "id": "b",
+          "text": "Overtone",
+          "why": "Overtones help set tone quality.",
+          "whyWrong": "Overtones help set tone quality."
+        },
+        {
+          "id": "c",
+          "text": "Wavelength",
+          "why": "Wavelength identifies a spatial period.",
+          "whyWrong": "Wavelength identifies a spatial period."
+        },
+        {
+          "id": "d",
+          "text": "Amplitude",
+          "why": "Intensity varies with the square of amplitude under those fixed conditions.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think of the size of the vibration.",
+      "explanation": "Intensity varies with the square of amplitude under those fixed conditions.",
+      "trap": "Frequency is held fixed here.",
+      "mnemonic": "Twice the amplitude gives four times the intensity in this model.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Twice the amplitude gives four times the intensity in this model."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Frequency is held fixed here."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-031",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Pinhole camera",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A building is 300 m from a pinhole. Its image on a screen 5 cm behind the pinhole is 2.5 cm tall. How tall is the building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 m",
+          "why": "25 m would give a smaller image.",
+          "whyWrong": "25 m would give a smaller image."
+        },
+        {
+          "id": "b",
+          "text": "50 m",
+          "why": "50 m corresponds to one sixth of the object distance.",
+          "whyWrong": "50 m corresponds to one sixth of the object distance."
+        },
+        {
+          "id": "c",
+          "text": "100 m",
+          "why": "100 m corresponds to one third of the object distance.",
+          "whyWrong": "100 m corresponds to one third of the object distance."
+        },
+        {
+          "id": "d",
+          "text": "150 m",
+          "why": "Similar triangles give a height of \\frac{2.5}{5} × 300 m = 150 m.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Use image height over screen distance.",
+      "explanation": "Similar triangles give a height of \\frac{2.5}{5} × 300 m = 150 m.",
+      "trap": "25 m would give a smaller image.",
+      "mnemonic": "The two height-to-distance ratios are equal.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The two height-to-distance ratios are equal."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "25 m would give a smaller image."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-032",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Laws of reflection and plane mirrors",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What is the linear magnification of a 2 cm object placed 10 cm from a plane mirror?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6.0",
+          "why": "A plane mirror does not enlarge the image.",
+          "whyWrong": "A plane mirror does not enlarge the image."
+        },
+        {
+          "id": "b",
+          "text": "1.0",
+          "why": "A plane mirror forms an upright image of the same height, giving a magnification of +1.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "0.7",
+          "why": "This would make the image smaller than the object.",
+          "whyWrong": "This would make the image smaller than the object."
+        },
+        {
+          "id": "d",
+          "text": "0.6",
+          "why": "This also describes a diminished image.",
+          "whyWrong": "This also describes a diminished image."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare image and object height.",
+      "explanation": "A plane mirror forms an upright image of the same height, giving a magnification of +1.",
+      "trap": "A plane mirror does not enlarge the image.",
+      "mnemonic": "A plane mirror preserves size.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A plane mirror preserves size."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A plane mirror does not enlarge the image."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-033",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Curved mirrors, image formation and magnification",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Where do near-axis rays from the distant Sun converge after reflection from a concave mirror?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At the radius of curvature",
+          "why": "The centre of curvature is twice as far from the mirror as the focus.",
+          "whyWrong": "The centre of curvature is twice as far from the mirror as the focus."
+        },
+        {
+          "id": "b",
+          "text": "At the focus",
+          "why": "The rays are nearly parallel on arrival and meet at the principal focus after reflection.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Beyond the radius of curvature",
+          "why": "The rays meet before reaching the centre of curvature.",
+          "whyWrong": "The rays meet before reaching the centre of curvature."
+        },
+        {
+          "id": "d",
+          "text": "Between the focus and radius of curvature",
+          "why": "The principal focus marks the endpoint of this interval.",
+          "whyWrong": "The principal focus marks the endpoint of this interval."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Treat the Sun as a distant source of parallel rays.",
+      "explanation": "The rays are nearly parallel on arrival and meet at the principal focus after reflection.",
+      "trap": "The centre of curvature is twice as far from the mirror as the focus.",
+      "mnemonic": "Parallel near-axis rays meet at the focus.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Parallel near-axis rays meet at the focus."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The centre of curvature is twice as far from the mirror as the focus."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 33,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-037",
+      "subject": "physics",
+      "chapter": "16",
+      "topic": "Dispersion, Colour and the Electromagnetic Spectrum",
+      "concept": "Dispersion and rainbows",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Dispersion of white light is the ability of white light to",
+      "options": [
+        {
+          "id": "a",
+          "text": "Penetrate air, water and glass",
+          "why": "This is transmission through a medium.",
+          "whyWrong": "This is transmission through a medium."
+        },
+        {
+          "id": "b",
+          "text": "Move in a straight line",
+          "why": "This describes propagation in a uniform medium.",
+          "whyWrong": "This describes propagation in a uniform medium."
+        },
+        {
+          "id": "c",
+          "text": "Move around corners",
+          "why": "This describes diffraction.",
+          "whyWrong": "This describes diffraction."
+        },
+        {
+          "id": "d",
+          "text": "Separate to its component colours",
+          "why": "Dispersion separates white light into its constituent colours through wavelength-dependent refraction.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think of the light pattern after a prism.",
+      "explanation": "Dispersion separates white light into its constituent colours through wavelength-dependent refraction.",
+      "trap": "This is transmission through a medium.",
+      "mnemonic": "Dispersion separates colours.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Dispersion separates colours."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This is transmission through a medium."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 37,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-040",
+      "subject": "physics",
+      "chapter": "19",
+      "topic": "Electrical Energy and Power",
+      "concept": "Household wiring and fuses",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which supply conductor should a fuse disconnect to isolate an appliance from mains voltage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neutral side of an electric supply",
+          "why": "A neutral-only break can leave the appliance connected to live.",
+          "whyWrong": "A neutral-only break can leave the appliance connected to live."
+        },
+        {
+          "id": "b",
+          "text": "Earth side of an electric supply",
+          "why": "The protective earth must remain connected.",
+          "whyWrong": "The protective earth must remain connected."
+        },
+        {
+          "id": "c",
+          "text": "Live side of an electric supply",
+          "why": "A fuse in series with the live conductor disconnects that conductor when excess current melts the fuse.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Terminal side of an electric supply",
+          "why": "A terminal label alone does not identify the right conductor.",
+          "whyWrong": "A terminal label alone does not identify the right conductor."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Choose the connection carrying the supply voltage.",
+      "explanation": "A fuse in series with the live conductor disconnects that conductor when excess current melts the fuse.",
+      "trap": "A neutral-only break can leave the appliance connected to live.",
+      "mnemonic": "Fuse the live conductor.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Fuse the live conductor."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A neutral-only break can leave the appliance connected to live."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 40,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-044",
+      "subject": "physics",
+      "chapter": "21",
+      "topic": "Electromagnetic Induction and AC Circuits",
+      "concept": "Faraday’s and Lenz’s laws",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 1 m conductor moves at 50 m/s, at 30° to a 1.5 T magnetic field. Its length is along the motional force direction. Find the induced emf.",
+      "options": [
+        {
+          "id": "a",
+          "text": "37.5 V",
+          "why": "ε = Bℓv sin 30° = 1.5 × 1 × 50 × 0.5 = 37.5 V.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "50.5 V",
+          "why": "This uses too large a cross-field component.",
+          "whyWrong": "This uses too large a cross-field component."
+        },
+        {
+          "id": "c",
+          "text": "75.0 V",
+          "why": "75 V would require motion perpendicular to the field.",
+          "whyWrong": "75 V would require motion perpendicular to the field."
+        },
+        {
+          "id": "d",
+          "text": "80.5 V",
+          "why": "This exceeds the maximum possible emf for the given speed.",
+          "whyWrong": "This exceeds the maximum possible emf for the given speed."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the velocity perpendicular to the magnetic field.",
+      "explanation": "ε = Bℓv sin 30° = 1.5 × 1 × 50 × 0.5 = 37.5 V.",
+      "trap": "This uses too large a cross-field component.",
+      "mnemonic": "Motional emf uses cross-field speed.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Motional emf uses cross-field speed."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "This uses too large a cross-field component."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 44,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-047",
+      "subject": "physics",
+      "chapter": "24",
+      "topic": "Nuclear Physics",
+      "concept": "Half-life and decay constant",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A sample falls from 1000 undecayed atoms to 125. How much time elapsed if its half-life is 20 s?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 seconds",
+          "why": "This leaves half.",
+          "whyWrong": "This leaves half."
+        },
+        {
+          "id": "b",
+          "text": "40 seconds",
+          "why": "This leaves a quarter.",
+          "whyWrong": "This leaves a quarter."
+        },
+        {
+          "id": "c",
+          "text": "60 seconds",
+          "why": "The ideal decay model gives 1000 → 500 → 250 → 125. Three half-lives take 60 s.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "80 seconds",
+          "why": "This leaves a sixteenth.",
+          "whyWrong": "This leaves a sixteenth."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Count the successive halvings.",
+      "explanation": "The ideal decay model gives 1000 → 500 → 250 → 125. Three half-lives take 60 s.",
+      "trap": "This leaves half.",
+      "mnemonic": "An eighth remains after three half-lives.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "An eighth remains after three half-lives."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This leaves half."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 47,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-002",
+      "subject": "physics",
+      "chapter": "4",
+      "topic": "Circular Motion and Gravitation",
+      "concept": "Mass, weight and variation of g",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "When a brick is taken from the earth’s surface to the moon, its mass",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remains constant",
+          "why": "The brick’s mass stays fixed. Its weight changes because gravity is weaker at the Moon’s surface.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Reduces",
+          "why": "The gravitational force decreases but the mass does not.",
+          "whyWrong": "The gravitational force decreases but the mass does not."
+        },
+        {
+          "id": "c",
+          "text": "Increases",
+          "why": "No material has been added.",
+          "whyWrong": "No material has been added."
+        },
+        {
+          "id": "d",
+          "text": "Becomes zero",
+          "why": "Changing location does not remove its mass.",
+          "whyWrong": "Changing location does not remove its mass."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Separate mass from gravitational force.",
+      "explanation": "The brick’s mass stays fixed. Its weight changes because gravity is weaker at the Moon’s surface.",
+      "trap": "The gravitational force decreases but the mass does not.",
+      "mnemonic": "Mass stays. Weight varies with g.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Mass stays. Weight varies with g."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The gravitational force decreases but the mass does not."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 2,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-004",
+      "subject": "physics",
+      "chapter": "1",
+      "topic": "Measurements, Units and Vectors",
+      "concept": "Scalars and vectors",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which pair contains only scalar quantities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Volume and area",
+          "why": "Volume and ordinary geometric area only require magnitude.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Moment and momentum",
+          "why": "Momentum and moment have directions.",
+          "whyWrong": "Momentum and moment have directions."
+        },
+        {
+          "id": "c",
+          "text": "Length and displacement",
+          "why": "Displacement has both magnitude and direction.",
+          "whyWrong": "Displacement has both magnitude and direction."
+        },
+        {
+          "id": "d",
+          "text": "Impulse and time",
+          "why": "Impulse has both magnitude and direction.",
+          "whyWrong": "Impulse has both magnitude and direction."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Inspect each quantity in the pair.",
+      "explanation": "Volume and ordinary geometric area only require magnitude.",
+      "trap": "Momentum and moment have directions.",
+      "mnemonic": "A scalar has magnitude alone.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A scalar has magnitude alone."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Momentum and moment have directions."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 4,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-005",
+      "subject": "physics",
+      "chapter": "12",
+      "topic": "Oscillations and Waves",
+      "concept": "Simple harmonic motion and its energy",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 0.4 m pendulum has a period of 2 s. At the same place, what is the small-oscillation period of a pendulum 0.8 m long?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 s",
+          "why": "8 s needs a much greater length ratio.",
+          "whyWrong": "8 s needs a much greater length ratio."
+        },
+        {
+          "id": "b",
+          "text": "4 s",
+          "why": "4 s incorrectly assumes period is linear in length.",
+          "whyWrong": "4 s incorrectly assumes period is linear in length."
+        },
+        {
+          "id": "c",
+          "text": "2\\sqrt{2} s",
+          "why": "At fixed g the period scales as \\sqrt{L}. Doubling L gives 2\\sqrt{2} s.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "\\sqrt{2} s",
+          "why": "This would be shorter than the original period.",
+          "whyWrong": "This would be shorter than the original period."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Take the square root of the length ratio.",
+      "explanation": "At fixed g the period scales as \\sqrt{L}. Doubling L gives 2\\sqrt{2} s.",
+      "trap": "8 s needs a much greater length ratio.",
+      "mnemonic": "Pendulum period follows the square root of length.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Pendulum period follows the square root of length."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "8 s needs a much greater length ratio."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 5,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-006",
+      "subject": "physics",
+      "chapter": "2",
+      "topic": "Linear Motion and Projectiles",
+      "concept": "Uniform acceleration",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 20 m/s train decelerates uniformly at 2 m/s^{2}. How long does it take to stop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 s",
+          "why": "Only half the initial speed is lost in 5 s.",
+          "whyWrong": "Only half the initial speed is lost in 5 s."
+        },
+        {
+          "id": "b",
+          "text": "10 s",
+          "why": "The speed decreases by 2 m/s each second. It reaches zero after \\frac{20}{2} = 10 s.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "20 s",
+          "why": "The train is already stopped by 20 s.",
+          "whyWrong": "The train is already stopped by 20 s."
+        },
+        {
+          "id": "d",
+          "text": "40 s",
+          "why": "This duration would apply to a much smaller deceleration.",
+          "whyWrong": "This duration would apply to a much smaller deceleration."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Divide the speed by its rate of decrease.",
+      "explanation": "The speed decreases by 2 m/s each second. It reaches zero after \\frac{20}{2} = 10 s.",
+      "trap": "Only half the initial speed is lost in 5 s.",
+      "mnemonic": "Time to stop equals speed over deceleration.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Time to stop equals speed over deceleration."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Only half the initial speed is lost in 5 s."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 6,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-009",
+      "subject": "physics",
+      "chapter": "5",
+      "topic": "Work, Energy, Power and Simple Machines",
+      "concept": "Kinetic and potential energy",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "At what height does an object have the same potential energy as an equal mass moving at 5 m/s? Use g = 10 m/s^{2}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "25.0 m",
+          "why": "25 is the square of the speed.",
+          "whyWrong": "25 is the square of the speed."
+        },
+        {
+          "id": "b",
+          "text": "20.0 m",
+          "why": "20 is the denominator 2g.",
+          "whyWrong": "20 is the denominator 2g."
+        },
+        {
+          "id": "c",
+          "text": "1.3 m",
+          "why": "Equating mgh and \\frac{mv^{2}}{2} gives h = \\frac{25}{20} = 1.25 m, or 1.3 m to the choice precision.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "1.0 m",
+          "why": "1.0 m is too low.",
+          "whyWrong": "1.0 m is too low."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Cancel the common mass.",
+      "explanation": "Equating mgh and \\frac{mv^{2}}{2} gives h = \\frac{25}{20} = 1.25 m, or 1.3 m to the choice precision.",
+      "trap": "25 is the square of the speed.",
+      "mnemonic": "Equal energies give gh = v^{2}/2.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Equal energies give gh = v^{2}/2."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "25 is the square of the speed."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-012",
+      "subject": "physics",
+      "chapter": "5",
+      "topic": "Work, Energy, Power and Simple Machines",
+      "concept": "Mechanical advantage, velocity ratio and efficiency",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A lever of 90% efficiency lifts 180 N. Its effort arm is twice its load arm. Find the required effort.",
+      "options": [
+        {
+          "id": "a",
+          "text": "80N",
+          "why": "80 N would demand an efficiency above 100%.",
+          "whyWrong": "80 N would demand an efficiency above 100%."
+        },
+        {
+          "id": "b",
+          "text": "90N",
+          "why": "90 N assumes a lossless lever.",
+          "whyWrong": "90 N assumes a lossless lever."
+        },
+        {
+          "id": "c",
+          "text": "100N",
+          "why": "Velocity ratio is 2. Mechanical advantage is 0.9 × 2 = 1.8. Effort is \\frac{180}{1.8} = 100 N.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "120N",
+          "why": "120 N gives only 75% efficiency.",
+          "whyWrong": "120 N gives only 75% efficiency."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Combine velocity ratio with efficiency as a decimal.",
+      "explanation": "Velocity ratio is 2. Mechanical advantage is 0.9 × 2 = 1.8. Effort is \\frac{180}{1.8} = 100 N.",
+      "trap": "80 N would demand an efficiency above 100%.",
+      "mnemonic": "Mechanical advantage equals efficiency times velocity ratio.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Mechanical advantage equals efficiency times velocity ratio."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "80 N would demand an efficiency above 100%."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-016",
+      "subject": "physics",
+      "chapter": "8",
+      "topic": "Temperature and Thermal Expansion",
+      "concept": "Thermometric properties and calibration",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The ice and steam marks of a linear thermometer are 400 mm apart. How far above the ice mark is 20°C?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 mm",
+          "why": "20 is the temperature value, not the mark’s distance.",
+          "whyWrong": "20 is the temperature value, not the mark’s distance."
+        },
+        {
+          "id": "b",
+          "text": "30 mm",
+          "why": "30 mm corresponds to 7.5°C.",
+          "whyWrong": "30 mm corresponds to 7.5°C."
+        },
+        {
+          "id": "c",
+          "text": "60 mm",
+          "why": "60 mm corresponds to 15°C.",
+          "whyWrong": "60 mm corresponds to 15°C."
+        },
+        {
+          "id": "d",
+          "text": "80 mm",
+          "why": "20°C is one fifth of the calibrated interval, so the distance is 400 × \\frac{20}{100} = 80 mm.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Find one fifth of the interval.",
+      "explanation": "20°C is one fifth of the calibrated interval, so the distance is 400 × \\frac{20}{100} = 80 mm.",
+      "trap": "20 is the temperature value, not the mark’s distance.",
+      "mnemonic": "Linear scales preserve the fraction of the interval.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Linear scales preserve the fraction of the interval."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "20 is the temperature value, not the mark’s distance."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 16,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-023",
+      "subject": "physics",
+      "chapter": "9",
+      "topic": "Gas Laws and Kinetic Theory",
+      "concept": "Surface tension, capillarity, adhesion and cohesion",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The rise or fall of liquid in a narrow tube is because of the",
+      "options": [
+        {
+          "id": "a",
+          "text": "Viscosity of the liquid",
+          "why": "Viscosity affects the rate of flow rather than the equilibrium position.",
+          "whyWrong": "Viscosity affects the rate of flow rather than the equilibrium position."
+        },
+        {
+          "id": "b",
+          "text": "Surface tension of the liquid",
+          "why": "Surface tension acting at a curved meniscus provides a vertical force. Wetting determines whether this draws the liquid up or down.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Friction between the walls of the tube and the liquid",
+          "why": "Wall friction cannot account for the equilibrium height difference.",
+          "whyWrong": "Wall friction cannot account for the equilibrium height difference."
+        },
+        {
+          "id": "d",
+          "text": "Osmotic pressure of the liquid",
+          "why": "Osmosis needs a selectively permeable barrier.",
+          "whyWrong": "Osmosis needs a selectively permeable barrier."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the force along the meniscus.",
+      "explanation": "Surface tension acting at a curved meniscus provides a vertical force. Wetting determines whether this draws the liquid up or down.",
+      "trap": "Viscosity affects the rate of flow rather than the equilibrium position.",
+      "mnemonic": "Surface tension drives capillary rise or depression.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Surface tension drives capillary rise or depression."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Viscosity affects the rate of flow rather than the equilibrium position."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 23,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-025",
+      "subject": "physics",
+      "chapter": "12",
+      "topic": "Oscillations and Waves",
+      "concept": "Mechanical and electromagnetic waves",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What type of wave travels along a stretched string?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Electromagnetic wave",
+          "why": "Electromagnetic waves can propagate in vacuum.",
+          "whyWrong": "Electromagnetic waves can propagate in vacuum."
+        },
+        {
+          "id": "b",
+          "text": "Microwave",
+          "why": "Microwaves are electromagnetic waves.",
+          "whyWrong": "Microwaves are electromagnetic waves."
+        },
+        {
+          "id": "c",
+          "text": "Mechanical wave",
+          "why": "The disturbance relies on the material string and its tension, so it is a mechanical wave.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Seismic wave",
+          "why": "Seismic waves travel through Earth materials.",
+          "whyWrong": "Seismic waves travel through Earth materials."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Determine whether a material medium is needed.",
+      "explanation": "The disturbance relies on the material string and its tension, so it is a mechanical wave.",
+      "trap": "Electromagnetic waves can propagate in vacuum.",
+      "mnemonic": "A string wave needs a string.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A string wave needs a string."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Electromagnetic waves can propagate in vacuum."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 25,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-026",
+      "subject": "physics",
+      "chapter": "12",
+      "topic": "Oscillations and Waves",
+      "concept": "Transverse, longitudinal and stationary waves",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A transverse wave and a longitudinal wave travelling in the same direction in a medium differ essentially in their",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frequency",
+          "why": "Either kind of wave can have a range of frequencies.",
+          "whyWrong": "Either kind of wave can have a range of frequencies."
+        },
+        {
+          "id": "b",
+          "text": "Amplitude",
+          "why": "Amplitude specifies the size of oscillation.",
+          "whyWrong": "Amplitude specifies the size of oscillation."
+        },
+        {
+          "id": "c",
+          "text": "Direction of vibration of the particles of the medium",
+          "why": "Transverse motion is perpendicular to propagation, while longitudinal motion is parallel to propagation.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Period of vibration of the particles of the medium",
+          "why": "Period specifies the time of a cycle.",
+          "whyWrong": "Period specifies the time of a cycle."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare the directions of vibration and propagation.",
+      "explanation": "Transverse motion is perpendicular to propagation, while longitudinal motion is parallel to propagation.",
+      "trap": "Either kind of wave can have a range of frequencies.",
+      "mnemonic": "Transverse goes across. Longitudinal goes along.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Transverse goes across. Longitudinal goes along."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Either kind of wave can have a range of frequencies."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-043",
+      "subject": "physics",
+      "chapter": "20",
+      "topic": "Magnetic Fields, Motors and Meters",
+      "concept": "Galvanometers and meter conversion",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which resistor connection converts a galvanometer into a voltmeter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A high resistance in series",
+          "why": "A large series resistor limits current, so the galvanometer can measure a greater potential difference without exceeding full-scale current.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "A high resistance in parallel",
+          "why": "A parallel branch diverts current rather than limiting current through the meter as a series multiplier.",
+          "whyWrong": "A parallel branch diverts current rather than limiting current through the meter as a series multiplier."
+        },
+        {
+          "id": "c",
+          "text": "A low resistance in series",
+          "why": "A small series value gives little increase in voltage range.",
+          "whyWrong": "A small series value gives little increase in voltage range."
+        },
+        {
+          "id": "d",
+          "text": "A low resistance in parallel",
+          "why": "A small parallel shunt converts the galvanometer to an ammeter.",
+          "whyWrong": "A small parallel shunt converts the galvanometer to an ammeter."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the connection that limits current through the whole meter.",
+      "explanation": "A large series resistor limits current, so the galvanometer can measure a greater potential difference without exceeding full-scale current.",
+      "trap": "A parallel branch diverts current rather than limiting current through the meter as a series multiplier.",
+      "mnemonic": "Voltmeter multiplier goes in series.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Voltmeter multiplier goes in series."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A parallel branch diverts current rather than limiting current through the meter as a series multiplier."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 43,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-045",
+      "subject": "physics",
+      "chapter": "22",
+      "topic": "Conduction in Liquids and Gases",
+      "concept": "Faraday’s laws of electrolysis",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 2.5 A current for 3 h deposits 1.8 g. For the same electrolyte, what mass is deposited by 4 A for 4.8 h?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.4 g",
+          "why": "This assumes too small a charge ratio.",
+          "whyWrong": "This assumes too small a charge ratio."
+        },
+        {
+          "id": "b",
+          "text": "3.2 g",
+          "why": "This does not account for both increases.",
+          "whyWrong": "This does not account for both increases."
+        },
+        {
+          "id": "c",
+          "text": "4.6 g",
+          "why": "Mass scales with charge It. The new mass is 1.8 × \\frac{4 × 4.8}{2.5 × 3} = 4.608 g, or 4.6 g.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "4.8 g",
+          "why": "4.8 is the duration in hours.",
+          "whyWrong": "4.8 is the duration in hours."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Scale the mass by current times duration.",
+      "explanation": "Mass scales with charge It. The new mass is 1.8 × \\frac{4 × 4.8}{2.5 × 3} = 4.608 g, or 4.6 g.",
+      "trap": "This assumes too small a charge ratio.",
+      "mnemonic": "Charge controls mass deposited for the same substance.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Charge controls mass deposited for the same substance."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This assumes too small a charge ratio."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 45,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-014",
+      "subject": "physics",
+      "chapter": "18",
+      "topic": "Electric Cells and Direct-Current Circuits",
+      "concept": "Meter bridge and potentiometer",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Why can a potentiometer measure a cell’s open-circuit emf accurately at its balance point?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Internal resistance of a cell is small compared with that of the potentiometer",
+          "why": "A particular resistance ratio is unnecessary at the null point.",
+          "whyWrong": "A particular resistance ratio is unnecessary at the null point."
+        },
+        {
+          "id": "b",
+          "text": "Potentiometer takes no current from the cell",
+          "why": "At the null point, no current is drawn from the cell, so its internal resistance causes no voltage drop.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Potentiometer has a linear scale",
+          "why": "A linear scale does not explain the absence of internal voltage drop.",
+          "whyWrong": "A linear scale does not explain the absence of internal voltage drop."
+        },
+        {
+          "id": "d",
+          "text": "Resistance of the potentiometer is less than that of a voltmeter",
+          "why": "The measurement uses a null, independently of a voltmeter comparison.",
+          "whyWrong": "The measurement uses a null, independently of a voltmeter comparison."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Imagine the galvanometer reading at balance.",
+      "explanation": "At the null point, no current is drawn from the cell, so its internal resistance causes no voltage drop.",
+      "trap": "A particular resistance ratio is unnecessary at the null point.",
+      "mnemonic": "Null current gives zero internal voltage drop.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Null current gives zero internal voltage drop."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A particular resistance ratio is unnecessary at the null point."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-015",
+      "subject": "physics",
+      "chapter": "1",
+      "topic": "Measurements, Units and Vectors",
+      "concept": "Scalars and vectors",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is a vector?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Electric charge",
+          "why": "Charge is a signed scalar.",
+          "whyWrong": "Charge is a signed scalar."
+        },
+        {
+          "id": "b",
+          "text": "Electric potential difference",
+          "why": "A potential difference is a scalar.",
+          "whyWrong": "A potential difference is a scalar."
+        },
+        {
+          "id": "c",
+          "text": "Electric field",
+          "why": "The electric field is the force per unit positive test charge. It has a magnitude and direction.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Electrical capacitance",
+          "why": "Capacitance is a scalar ratio of charge to voltage.",
+          "whyWrong": "Capacitance is a scalar ratio of charge to voltage."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Which quantity tells the direction of the force on positive charge?",
+      "explanation": "The electric field is the force per unit positive test charge. It has a magnitude and direction.",
+      "trap": "Charge is a signed scalar.",
+      "mnemonic": "An electric field points along the force on positive charge.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "An electric field points along the force on positive charge."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Charge is a signed scalar."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 15,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-021",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Sources, propagation, shadows and eclipses",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Total eclipse of the sun occurs when the",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moon is between the sun and the earth",
+          "why": "The Moon lies between the Sun and Earth, and a total solar eclipse is seen from within its umbra.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Sun is between the moon and the earth",
+          "why": "This arrangement would not let the Moon block sunlight on Earth.",
+          "whyWrong": "This arrangement would not let the Moon block sunlight on Earth."
+        },
+        {
+          "id": "c",
+          "text": "The earth is between the moon and the sun",
+          "why": "Putting Earth in the middle gives a lunar eclipse if the alignment is right.",
+          "whyWrong": "Putting Earth in the middle gives a lunar eclipse if the alignment is right."
+        },
+        {
+          "id": "d",
+          "text": "Ozone layer is threatened",
+          "why": "Ozone has no role in causing the eclipse.",
+          "whyWrong": "Ozone has no role in causing the eclipse."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the body casting the shadow on Earth.",
+      "explanation": "The Moon lies between the Sun and Earth, and a total solar eclipse is seen from within its umbra.",
+      "trap": "This arrangement would not let the Moon block sunlight on Earth.",
+      "mnemonic": "Moon in the middle can give a solar eclipse.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Moon in the middle can give a solar eclipse."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "This arrangement would not let the Moon block sunlight on Earth."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-035",
+      "subject": "physics",
+      "chapter": "11",
+      "topic": "Heat Transfer",
+      "concept": "Thermal radiation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A perfect emitter or absorber of radiant energy is a",
+      "options": [
+        {
+          "id": "a",
+          "text": "White body",
+          "why": "A white surface usually reflects much visible light.",
+          "whyWrong": "A white surface usually reflects much visible light."
+        },
+        {
+          "id": "b",
+          "text": "Red body",
+          "why": "A red surface selectively reflects visible light.",
+          "whyWrong": "A red surface selectively reflects visible light."
+        },
+        {
+          "id": "c",
+          "text": "Conductor",
+          "why": "Conductivity refers to a different mechanism of energy transfer.",
+          "whyWrong": "Conductivity refers to a different mechanism of energy transfer."
+        },
+        {
+          "id": "d",
+          "text": "Black body",
+          "why": "A black body is an ideal absorber and has the greatest possible thermal emissivity at a given temperature.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Find the term for emissivity one.",
+      "explanation": "A black body is an ideal absorber and has the greatest possible thermal emissivity at a given temperature.",
+      "trap": "A white surface usually reflects much visible light.",
+      "mnemonic": "Black bodies absorb and emit maximally.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Black bodies absorb and emit maximally."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A white surface usually reflects much visible light."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 35,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-039",
+      "subject": "physics",
+      "chapter": "19",
+      "topic": "Electrical Energy and Power",
+      "concept": "Electrical power, energy and electricity cost",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "How much energy does a 60 W lamp transfer in one hour at rated voltage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.86 × 10^{5} J",
+          "why": "This energy would require more than 60 W for an hour.",
+          "whyWrong": "This energy would require more than 60 W for an hour."
+        },
+        {
+          "id": "b",
+          "text": "2.16 × 10^{5} J",
+          "why": "Energy is Pt = 60 × 3600 = 2.16 × 10^{5} J.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "1.80 × 10^{4} J",
+          "why": "This uses far less than one hour at the stated power.",
+          "whyWrong": "This uses far less than one hour at the stated power."
+        },
+        {
+          "id": "d",
+          "text": "3.56 × 10^{5} J",
+          "why": "This energy exceeds 60 × 3600 J.",
+          "whyWrong": "This energy exceeds 60 × 3600 J."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use watts as joules per second.",
+      "explanation": "Energy is Pt = 60 × 3600 = 2.16 × 10^{5} J.",
+      "trap": "This energy would require more than 60 W for an hour.",
+      "mnemonic": "Convert hours to seconds first.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Convert hours to seconds first."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This energy would require more than 60 W for an hour."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 39,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2016-006",
+      "subject": "physics",
+      "chapter": "22",
+      "topic": "Conduction in Liquids and Gases",
+      "concept": "Electrical discharge through gases",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which condition favours an ordinary low-pressure discharge tube operating as intended?",
+      "options": [
+        {
+          "id": "a",
+          "text": "High pressure and low potential difference",
+          "why": "High pressure shortens the distance between collisions and low voltage supplies less energy.",
+          "whyWrong": "High pressure shortens the distance between collisions and low voltage supplies less energy."
+        },
+        {
+          "id": "b",
+          "text": "Low pressure and high potential difference",
+          "why": "At low pressure charges can accelerate farther between collisions. A high potential difference gives them energy to ionize the gas.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Low pressure and low potential difference",
+          "why": "Low voltage may not accelerate charges enough.",
+          "whyWrong": "Low voltage may not accelerate charges enough."
+        },
+        {
+          "id": "d",
+          "text": "High pressure and high potential difference",
+          "why": "At high pressure breakdown requires different conditions than the ordinary low-pressure tube.",
+          "whyWrong": "At high pressure breakdown requires different conditions than the ordinary low-pressure tube."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of acceleration between collisions.",
+      "explanation": "At low pressure charges can accelerate farther between collisions. A high potential difference gives them energy to ionize the gas.",
+      "trap": "High pressure shortens the distance between collisions and low voltage supplies less energy.",
+      "mnemonic": "Low pressure and sufficient voltage support a discharge.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Low pressure and sufficient voltage support a discharge."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "High pressure shortens the distance between collisions and low voltage supplies less energy."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 6,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2016-023",
+      "subject": "physics",
+      "chapter": "10",
+      "topic": "Heat, Changes of State and Vapours",
+      "concept": "Specific latent heat",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What happens when a certain quantity of pure ice is completely changed to water at 0⁰C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Latent heat is absorbed, the mass decreases and the volume increases",
+          "why": "Mass is conserved and volume falls.",
+          "whyWrong": "Mass is conserved and volume falls."
+        },
+        {
+          "id": "b",
+          "text": "Latent heat is absorbed, the mass remains constant and the volume decreases",
+          "why": "Ice absorbs latent heat as it melts. Mass is conserved and the volume decreases because liquid water is denser.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Latent heat is given out, the mass increases and the volume remains constant",
+          "why": "Melting absorbs heat and does not increase mass.",
+          "whyWrong": "Melting absorbs heat and does not increase mass."
+        },
+        {
+          "id": "d",
+          "text": "Latent heat is given out, the mass remains constant and the volume decreases",
+          "why": "Melting requires heat input.",
+          "whyWrong": "Melting requires heat input."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the densities of ice and water.",
+      "explanation": "Ice absorbs latent heat as it melts. Mass is conserved and the volume decreases because liquid water is denser.",
+      "trap": "Mass is conserved and volume falls.",
+      "mnemonic": "Melting ice takes heat and decreases volume.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Melting ice takes heat and decreases volume."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Mass is conserved and volume falls."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 23,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-002",
+      "subject": "physics",
+      "chapter": "19",
+      "topic": "Electrical Energy and Power",
+      "concept": "Electrical power, energy and electricity cost",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What energy unit is normally used for electricity billing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wh",
+          "why": "A watt-hour is a smaller unit than the standard unit on the bill.",
+          "whyWrong": "A watt-hour is a smaller unit than the standard unit on the bill."
+        },
+        {
+          "id": "b",
+          "text": "kWh",
+          "why": "A kilowatt-hour is the energy used by a one-kilowatt device in an hour. It is the usual billing unit.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "J",
+          "why": "Joules are the SI energy unit but are not the routine billing denomination.",
+          "whyWrong": "Joules are the SI energy unit but are not the routine billing denomination."
+        },
+        {
+          "id": "d",
+          "text": "W",
+          "why": "Watts measure power.",
+          "whyWrong": "Watts measure power."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the unit paired with the tariff.",
+      "explanation": "A kilowatt-hour is the energy used by a one-kilowatt device in an hour. It is the usual billing unit.",
+      "trap": "A watt-hour is a smaller unit than the standard unit on the bill.",
+      "mnemonic": "One billing unit is one kWh.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "One billing unit is one kWh."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A watt-hour is a smaller unit than the standard unit on the bill."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 2,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-012",
+      "subject": "physics",
+      "chapter": "8",
+      "topic": "Temperature and Thermal Expansion",
+      "concept": "Linear, area and volume expansion",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Why can thick drinking glass crack when very hot water is poured in suddenly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Even expansion of glass",
+          "why": "Even expansion would not create the same internal stress.",
+          "whyWrong": "Even expansion would not create the same internal stress."
+        },
+        {
+          "id": "b",
+          "text": "Glass conducting heat well",
+          "why": "Glass’s relatively poor conductivity helps the temperature gradient persist.",
+          "whyWrong": "Glass’s relatively poor conductivity helps the temperature gradient persist."
+        },
+        {
+          "id": "c",
+          "text": "Glass having a crystalline structure",
+          "why": "Ordinary glass is generally amorphous, and the fracture results from thermal stress.",
+          "whyWrong": "Ordinary glass is generally amorphous, and the fracture results from thermal stress."
+        },
+        {
+          "id": "d",
+          "text": "Uneven expansion of glass",
+          "why": "The inside heats and expands before the outside, creating stress from uneven expansion.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare the temperatures on the two sides of the glass.",
+      "explanation": "The inside heats and expands before the outside, creating stress from uneven expansion.",
+      "trap": "Even expansion would not create the same internal stress.",
+      "mnemonic": "Uneven heating can crack glass.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Uneven heating can crack glass."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Even expansion would not create the same internal stress."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-020",
+      "subject": "physics",
+      "chapter": "8",
+      "topic": "Temperature and Thermal Expansion",
+      "concept": "Thermometric properties and calibration",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A linear resistance thermometer reads 3.0 Ω at 0°C, 8.0 Ω at 100°C and 6.0 Ω in the test environment. Find the temperature.",
+      "options": [
+        {
+          "id": "a",
+          "text": "60°C",
+          "why": "The relative rise is \\frac{6.0 − 3.0}{8.0 − 3.0} = 0.6, so the reading is 60°C.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "80°C",
+          "why": "80°C would give 7.0 Ω.",
+          "whyWrong": "80°C would give 7.0 Ω."
+        },
+        {
+          "id": "c",
+          "text": "50°C",
+          "why": "50°C gives 5.5 Ω.",
+          "whyWrong": "50°C gives 5.5 Ω."
+        },
+        {
+          "id": "d",
+          "text": "30°C",
+          "why": "30°C gives 4.5 Ω.",
+          "whyWrong": "30°C gives 4.5 Ω."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Subtract the ice-point value before scaling.",
+      "explanation": "The relative rise is \\frac{6.0 − 3.0}{8.0 − 3.0} = 0.6, so the reading is 60°C.",
+      "trap": "80°C would give 7.0 Ω.",
+      "mnemonic": "Use the fraction of the resistance span.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Use the fraction of the resistance span."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "80°C would give 7.0 Ω."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 20,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-028",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Pitch, loudness, intensity and quality",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An adjacent compression and rarefaction are 17 cm apart in air. The wave speed is 340 m/s. Find the frequency.",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 Hz",
+          "why": "10 Hz would require a 34 m wavelength.",
+          "whyWrong": "10 Hz would require a 34 m wavelength."
+        },
+        {
+          "id": "b",
+          "text": "20 Hz",
+          "why": "20 Hz would require a 17 m wavelength.",
+          "whyWrong": "20 Hz would require a 17 m wavelength."
+        },
+        {
+          "id": "c",
+          "text": "5780 Hz",
+          "why": "This frequency implies a much shorter wavelength.",
+          "whyWrong": "This frequency implies a much shorter wavelength."
+        },
+        {
+          "id": "d",
+          "text": "1000 Hz",
+          "why": "The separation is half a wavelength, so λ = 0.34 m. Then f = \\frac{340}{0.34} = 1000 Hz.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Double the compression-to-rarefaction distance.",
+      "explanation": "The separation is half a wavelength, so λ = 0.34 m. Then f = \\frac{340}{0.34} = 1000 Hz.",
+      "trap": "10 Hz would require a 34 m wavelength.",
+      "mnemonic": "Same-phase points are one wavelength apart.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Same-phase points are one wavelength apart."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "10 Hz would require a 34 m wavelength."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-029",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Harmonics, strings and open and closed pipes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "How does the frequency of a note one octave higher compare with the original note’s frequency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The notes have the same fundamental frequency",
+          "why": "Equal frequencies give the same pitch.",
+          "whyWrong": "Equal frequencies give the same pitch."
+        },
+        {
+          "id": "b",
+          "text": "Its frequency is half of the first note",
+          "why": "Half the frequency is an octave lower.",
+          "whyWrong": "Half the frequency is an octave lower."
+        },
+        {
+          "id": "c",
+          "text": "Its frequency is twice that of the first note",
+          "why": "An octave above has twice the original frequency, giving a 2:1 frequency ratio.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Its periodic time is twice that of the first note",
+          "why": "Twice the period gives half the frequency.",
+          "whyWrong": "Twice the period gives half the frequency."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Check whether the octave is higher or lower.",
+      "explanation": "An octave above has twice the original frequency, giving a 2:1 frequency ratio.",
+      "trap": "Equal frequencies give the same pitch.",
+      "mnemonic": "An octave up doubles frequency.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "An octave up doubles frequency."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Equal frequencies give the same pitch."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-032",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Curved mirrors, image formation and magnification",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which features explain a convex driving mirror’s usefulness? I. Erect images. II. Wide field of view. III. Long focal length.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I and III only",
+          "why": "This omits the wide field of view.",
+          "whyWrong": "This omits the wide field of view."
+        },
+        {
+          "id": "b",
+          "text": "I and II only",
+          "why": "A convex mirror provides an upright image and a wide field of view. A long focal length is not required for either advantage.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "II and III only",
+          "why": "This omits the erect image.",
+          "whyWrong": "This omits the erect image."
+        },
+        {
+          "id": "d",
+          "text": "I, II and III only",
+          "why": "This includes an unnecessary focal-length claim.",
+          "whyWrong": "This includes an unnecessary focal-length claim."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Pick the two benefits the driver sees.",
+      "explanation": "A convex mirror provides an upright image and a wide field of view. A long focal length is not required for either advantage.",
+      "trap": "This omits the wide field of view.",
+      "mnemonic": "Convex mirrors keep a wide view upright.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Convex mirrors keep a wide view upright."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This omits the wide field of view."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-033",
+      "subject": "physics",
+      "chapter": "19",
+      "topic": "Electrical Energy and Power",
+      "concept": "Electrical power, energy and electricity cost",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Five 50 W and four 100 W lamps run for 10 h. How much does the energy cost at 2 kobo per kWh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₦0.13",
+          "why": "Total power is 650 W or 0.65 kW. The energy is 6.5 kWh, costing 13 kobo or ₦0.13.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "₦0.65",
+          "why": "0.65 is the power in kilowatts.",
+          "whyWrong": "0.65 is the power in kilowatts."
+        },
+        {
+          "id": "c",
+          "text": "₦3.90",
+          "why": "₦3.90 is too high for the given tariff.",
+          "whyWrong": "₦3.90 is too high for the given tariff."
+        },
+        {
+          "id": "d",
+          "text": "₦39.00",
+          "why": "₦39.00 applies neither the tariff nor the kobo conversion correctly.",
+          "whyWrong": "₦39.00 applies neither the tariff nor the kobo conversion correctly."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Calculate kWh, then convert kobo to naira.",
+      "explanation": "Total power is 650 W or 0.65 kW. The energy is 6.5 kWh, costing 13 kobo or ₦0.13.",
+      "trap": "0.65 is the power in kilowatts.",
+      "mnemonic": "One naira equals 100 kobo.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "One naira equals 100 kobo."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "0.65 is the power in kilowatts."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 33,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-039",
+      "subject": "physics",
+      "chapter": "21",
+      "topic": "Electromagnetic Induction and AC Circuits",
+      "concept": "Faraday’s and Lenz’s laws",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A magnet is moved through a coil of wire. The e.m.f. produced in the wire depends on",
+      "options": [
+        {
+          "id": "a",
+          "text": "The number of turns in the coil",
+          "why": "Turns matter, and so do the other factors.",
+          "whyWrong": "Turns matter, and so do the other factors."
+        },
+        {
+          "id": "b",
+          "text": "The strength of magnet",
+          "why": "Strength matters, and so do the other factors.",
+          "whyWrong": "Strength matters, and so do the other factors."
+        },
+        {
+          "id": "c",
+          "text": "The speed at which the magnet is moved",
+          "why": "Speed matters, and so do the other factors.",
+          "whyWrong": "Speed matters, and so do the other factors."
+        },
+        {
+          "id": "d",
+          "text": "All of the above",
+          "why": "The emf is the number of turns times the rate of change of flux per turn. Magnet strength and speed can each change that rate.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think of turns, flux and rate of change.",
+      "explanation": "The emf is the number of turns times the rate of change of flux per turn. Magnet strength and speed can each change that rate.",
+      "trap": "Turns matter, and so do the other factors.",
+      "mnemonic": "Faraday’s law depends on flux change per second.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Faraday’s law depends on flux change per second."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Turns matter, and so do the other factors."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [
+        "d"
+      ],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 39,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-001",
+      "subject": "physics",
+      "chapter": "1",
+      "topic": "Measurements, Units and Vectors",
+      "concept": "Vector addition and resolution",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A person walks 1 km east and then 1 km north. What is the resultant displacement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "\\sqrt{2} km N 45° E",
+          "why": "The two perpendicular components give \\sqrt{1^{2} + 1^{2}} = \\sqrt{2} km. Equal components give N 45° E.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "1 km N 30° E",
+          "why": "One kilometre is too short and 30° is not the correct angle.",
+          "whyWrong": "One kilometre is too short and 30° is not the correct angle."
+        },
+        {
+          "id": "c",
+          "text": "1 km N 15° E",
+          "why": "The magnitude and 15° angle are both incorrect.",
+          "whyWrong": "The magnitude and 15° angle are both incorrect."
+        },
+        {
+          "id": "d",
+          "text": "\\sqrt{2} km N 60° E",
+          "why": "The magnitude is right but the direction is not.",
+          "whyWrong": "The magnitude is right but the direction is not."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Draw the two legs of a right triangle.",
+      "explanation": "The two perpendicular components give \\sqrt{1^{2} + 1^{2}} = \\sqrt{2} km. Equal components give N 45° E.",
+      "trap": "One kilometre is too short and 30° is not the correct angle.",
+      "mnemonic": "Equal perpendicular components give a 45° direction.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Equal perpendicular components give a 45° direction."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "One kilometre is too short and 30° is not the correct angle."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 1,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-008",
+      "subject": "physics",
+      "chapter": "23",
+      "topic": "Atomic Physics and Quantum Effects",
+      "concept": "Thermionic and photoelectric emission",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What are cathode rays?",
+      "options": [
+        {
+          "id": "a",
+          "text": "High-energy electromagnetic waves",
+          "why": "Electromagnetic waves are uncharged.",
+          "whyWrong": "Electromagnetic waves are uncharged."
+        },
+        {
+          "id": "b",
+          "text": "Protons",
+          "why": "Protons carry positive charge.",
+          "whyWrong": "Protons carry positive charge."
+        },
+        {
+          "id": "c",
+          "text": "Neutrons",
+          "why": "Neutrons are not deflected by an electric field.",
+          "whyWrong": "Neutrons are not deflected by an electric field."
+        },
+        {
+          "id": "d",
+          "text": "Streams of electrons",
+          "why": "Cathode rays are streams of electrons, accelerated from the cathode in the tube.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify the negatively charged particle.",
+      "explanation": "Cathode rays are streams of electrons, accelerated from the cathode in the tube.",
+      "trap": "Electromagnetic waves are uncharged.",
+      "mnemonic": "Cathode rays are electron beams.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Cathode rays are electron beams."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Electromagnetic waves are uncharged."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-020",
+      "subject": "physics",
+      "chapter": "18",
+      "topic": "Electric Cells and Direct-Current Circuits",
+      "concept": "EMF and internal resistance",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following has the lowest internal resistance when new?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leclanché cell",
+          "why": "A typical Leclanché cell cannot supply as large a current with a similar voltage drop.",
+          "whyWrong": "A typical Leclanché cell cannot supply as large a current with a similar voltage drop."
+        },
+        {
+          "id": "b",
+          "text": "Daniell cell",
+          "why": "A Daniell cell has a larger internal resistance in typical construction.",
+          "whyWrong": "A Daniell cell has a larger internal resistance in typical construction."
+        },
+        {
+          "id": "c",
+          "text": "Torch battery",
+          "why": "A disposable torch battery generally has a higher internal resistance.",
+          "whyWrong": "A disposable torch battery generally has a higher internal resistance."
+        },
+        {
+          "id": "d",
+          "text": "Accumulator",
+          "why": "A fresh lead-acid accumulator is built to deliver large currents with little internal voltage drop.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think of the source capable of starting a vehicle.",
+      "explanation": "A fresh lead-acid accumulator is built to deliver large currents with little internal voltage drop.",
+      "trap": "A typical Leclanché cell cannot supply as large a current with a similar voltage drop.",
+      "mnemonic": "Low internal resistance means a small voltage drop at a given current.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Low internal resistance means a small voltage drop at a given current."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A typical Leclanché cell cannot supply as large a current with a similar voltage drop."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 20,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-026",
+      "subject": "physics",
+      "chapter": "24",
+      "topic": "Nuclear Physics",
+      "concept": "Half-life and decay constant",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A radioactive sample has \\frac{1}{64} undecayed after 120 years. Find its half-life.",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 years",
+          "why": "Since 64 = 2^{6}, there were six half-lives. The half-life is \\frac{120}{6} = 20 years.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "10 years",
+          "why": "10 years would give twelve halvings.",
+          "whyWrong": "10 years would give twelve halvings."
+        },
+        {
+          "id": "c",
+          "text": "2 years",
+          "why": "2 years would give sixty halvings.",
+          "whyWrong": "2 years would give sixty halvings."
+        },
+        {
+          "id": "d",
+          "text": "24 years",
+          "why": "24 years would give five halvings.",
+          "whyWrong": "24 years would give five halvings."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Express the denominator as a power of two.",
+      "explanation": "Since 64 = 2^{6}, there were six half-lives. The half-life is \\frac{120}{6} = 20 years.",
+      "trap": "10 years would give twelve halvings.",
+      "mnemonic": "The exponent counts the halvings.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The exponent counts the halvings."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "10 years would give twelve halvings."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-030",
+      "subject": "physics",
+      "chapter": "19",
+      "topic": "Electrical Energy and Power",
+      "concept": "Household wiring and fuses",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Electrical appliances in homes are normally earthed so that",
+      "options": [
+        {
+          "id": "a",
+          "text": "A person touching the appliances is safe from electric shock",
+          "why": "Earthing provides a low-resistance path for a fault current, helping protection operate and reducing shock risk.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Both the a.c. and d.c. sources can be used",
+          "why": "The safety role is independent of whether a source is AC or DC.",
+          "whyWrong": "The safety role is independent of whether a source is AC or DC."
+        },
+        {
+          "id": "c",
+          "text": "The appliances are maintained at a higher p.d. than the earth",
+          "why": "Protective earthing aims to keep exposed metal near earth potential.",
+          "whyWrong": "Protective earthing aims to keep exposed metal near earth potential."
+        },
+        {
+          "id": "d",
+          "text": "The appliances are maintained at a lower p.d. than the earth",
+          "why": "The case is not held at a deliberately lower potential than earth.",
+          "whyWrong": "The case is not held at a deliberately lower potential than earth."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow current if live wiring touches the metal case.",
+      "explanation": "Earthing provides a low-resistance path for a fault current, helping protection operate and reducing shock risk.",
+      "trap": "The safety role is independent of whether a source is AC or DC.",
+      "mnemonic": "Earth provides a path for fault current.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Earth provides a path for fault current."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The safety role is independent of whether a source is AC or DC."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 30,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-031",
+      "subject": "physics",
+      "chapter": "10",
+      "topic": "Heat, Changes of State and Vapours",
+      "concept": "Melting, boiling and evaporation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the escape of molecules from a liquid surface into vapour below the boiling point called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Regelation",
+          "why": "Regelation is melting under pressure and refreezing when the pressure falls.",
+          "whyWrong": "Regelation is melting under pressure and refreezing when the pressure falls."
+        },
+        {
+          "id": "b",
+          "text": "Evaporation",
+          "why": "Evaporation is the surface process that can take place below the boiling point.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Boiling",
+          "why": "Boiling forms vapour bubbles within the liquid.",
+          "whyWrong": "Boiling forms vapour bubbles within the liquid."
+        },
+        {
+          "id": "d",
+          "text": "Sublimation",
+          "why": "Sublimation is direct solid-to-gas change.",
+          "whyWrong": "Sublimation is direct solid-to-gas change."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the surface process.",
+      "explanation": "Evaporation is the surface process that can take place below the boiling point.",
+      "trap": "Regelation is melting under pressure and refreezing when the pressure falls.",
+      "mnemonic": "Evaporation need not wait for boiling.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Evaporation need not wait for boiling."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Regelation is melting under pressure and refreezing when the pressure falls."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-033",
+      "subject": "physics",
+      "chapter": "9",
+      "topic": "Gas Laws and Kinetic Theory",
+      "concept": "Molecular structure, diffusion and Brownian motion",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The differences observed in solids, liquids and gases may be accounted for by",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their relative masses",
+          "why": "Particle mass does not change when a substance changes state.",
+          "whyWrong": "Particle mass does not change when a substance changes state."
+        },
+        {
+          "id": "b",
+          "text": "Their melting points",
+          "why": "Melting points describe transitions without explaining the molecular structure of all three states.",
+          "whyWrong": "Melting points describe transitions without explaining the molecular structure of all three states."
+        },
+        {
+          "id": "c",
+          "text": "The spacing and forces acting between the molecules",
+          "why": "The states differ in the spacing, motion and interactions of their particles. Molecular identity can stay the same through a phase change.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The different molecules in each of them",
+          "why": "The same particles can be present in all three states.",
+          "whyWrong": "The same particles can be present in all three states."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare the same substance as ice, water and steam.",
+      "explanation": "The states differ in the spacing, motion and interactions of their particles. Molecular identity can stay the same through a phase change.",
+      "trap": "Particle mass does not change when a substance changes state.",
+      "mnemonic": "Phase changes reorganize the same particles.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Phase changes reorganize the same particles."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Particle mass does not change when a substance changes state."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 33,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    }
+  ]
+}
