@@ -20,7 +20,7 @@
         {
           "id": "b",
           "text": "-12",
-          "why": "By the chain rule, dy/dx = 12(2 + 3x)³; at x = −1, 12(−1)³ = −12.",
+          "why": "By the chain rule, \\frac{dy}{dx} = 12(2 + 3x)³; at x = −1, 12(−1)³ = −12.",
           "whyWrong": null
         },
         {
@@ -33,7 +33,7 @@
           "id": "d",
           "text": "-4",
           "why": "−4 forgets to multiply by the derivative of (2 + 3x), which is 3.",
-          "whyWrong": "−4 differentiates the outer power to get 4(2 + 3x)³ = −4 at x = −1, but forgets the chain rule factor d/dx(2 + 3x) = 3. Multiplying −4 by 3 gives −12."
+          "whyWrong": "−4 differentiates the outer power to get 4(2 + 3x)³ = −4 at x = −1, but forgets the chain rule factor \\frac{d}{dx}(2 + 3x) = 3. Multiplying −4 by 3 gives −12."
         }
       ],
       "answerId": "b",
@@ -42,7 +42,7 @@
         "a"
       ],
       "hint": "Use the chain rule: differentiate the power 4, then multiply by the derivative of the inside (2 + 3x).",
-      "explanation": "Using the chain rule on y = (2 + 3x)⁴, dy/dx = 4(2 + 3x)³ × 3 = 12(2 + 3x)³. Substituting x = −1 gives 12(2 − 3)³ = 12(−1)³ = −12.",
+      "explanation": "Using the chain rule on y = (2 + 3x)⁴, \\frac{dy}{dx} = 4(2 + 3x)³ × 3 = 12(2 + 3x)³. Substituting x = −1 gives 12(2 − 3)³ = 12(−1)³ = −12.",
       "trap": "−4 is the classic chain-rule trap: differentiating the outside power 4 and forgetting to multiply by the inside derivative 3.",
       "mnemonic": "Chain rule = Outside derivative × Inside derivative.",
       "askPresets": [
@@ -54,12 +54,12 @@
         {
           "id": "whynot",
           "optionId": "d",
-          "answer": "−4 forgets the chain rule factor from inside the bracket. Since d/dx(2 + 3x) = 3, multiply −4 by 3 to get −12."
+          "answer": "−4 forgets the chain rule factor from inside the bracket. Since \\frac{d}{dx}(2 + 3x) = 3, multiply −4 by 3 to get −12."
         },
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Chain rule for powers: d/dx[(ax + b)ⁿ] = n · a · (ax + b)ⁿ⁻¹."
+          "answer": "Chain rule for powers: \\frac{d}{dx}[(ax + b)ⁿ] = n · a · (ax + b)ⁿ⁻¹."
         },
         {
           "id": "simpler",
@@ -69,7 +69,7 @@
         {
           "id": "similar",
           "label": "Give me a similar question",
-          "answer": "Find dy/dx for y = (1 + 2x)³ at x = −1.",
+          "answer": "Find \\frac{dy}{dx} for y = (1 + 2x)³ at x = −1.",
           "similarAnswer": "6 (since 6(1 − 2)² = 6(−1)² = 6)."
         }
       ],
@@ -94,27 +94,27 @@
       "options": [
         {
           "id": "a",
-          "text": "3/4",
-          "why": "3/4 swaps the numerator and denominator of 4/3.",
-          "whyWrong": "3/4 is the reciprocal of the true maximum value 4/3. Substituting x = −1/3 into 1 − 2x − 3x² gives 1 + 2/3 − 1/3 = 4/3."
+          "text": "\\frac{3}{4}",
+          "why": "\\frac{3}{4} swaps the numerator and denominator of \\frac{4}{3}.",
+          "whyWrong": "\\frac{3}{4} is the reciprocal of the true maximum value \\frac{4}{3}. Substituting x = −\\frac{1}{3} into 1 − 2x − 3x² gives 1 + \\frac{2}{3} − \\frac{1}{3} = \\frac{4}{3}."
         },
         {
           "id": "b",
-          "text": "4/3",
-          "why": "dy/dx = −2 − 6x = 0 gives x = −1/3, and y(−1/3) = 1 + 2/3 − 1/3 = 4/3.",
+          "text": "\\frac{4}{3}",
+          "why": "\\frac{dy}{dx} = −2 − 6x = 0 gives x = −\\frac{1}{3}, and y\\left(−\\frac{1}{3}\\right) = 1 + \\frac{2}{3} − \\frac{1}{3} = \\frac{4}{3}.",
           "whyWrong": null
         },
         {
           "id": "c",
-          "text": "5/3",
-          "why": "5/3 uses the wrong sign on −3x² when substituting x = −1/3.",
-          "whyWrong": "5/3 comes from adding +1/3 instead of subtracting 3(−1/3)² = 1/3. Because (−1/3)² = +1/9, −3(1/9) = −1/3, giving 1 + 2/3 − 1/3 = 4/3."
+          "text": "\\frac{5}{3}",
+          "why": "\\frac{5}{3} uses the wrong sign on −3x² when substituting x = −\\frac{1}{3}.",
+          "whyWrong": "\\frac{5}{3} comes from adding +\\frac{1}{3} instead of subtracting 3\\left(−\\frac{1}{3}\\right)² = \\frac{1}{3}. Because \\left(−\\frac{1}{3}\\right)² = +\\frac{1}{9}, −3\\left(\\frac{1}{9}\\right) = −\\frac{1}{3}, giving 1 + \\frac{2}{3} − \\frac{1}{3} = \\frac{4}{3}."
         },
         {
           "id": "d",
           "text": "2",
-          "why": "2 comes from substituting x = −1/3 incorrectly or using x = 0 with a sign error.",
-          "whyWrong": "At x = 0, y is only 1, and at x = −1/3, y reaches its peak of 4/3 ≈ 1.33, never 2."
+          "why": "2 comes from substituting x = −\\frac{1}{3} incorrectly or using x = 0 with a sign error.",
+          "whyWrong": "At x = 0, y is only 1, and at x = −\\frac{1}{3}, y reaches its peak of \\frac{4}{3} ≈ 1.33, never 2."
         }
       ],
       "answerId": "b",
@@ -122,25 +122,25 @@
         "a",
         "d"
       ],
-      "hint": "Set dy/dx = 0 to find the turning-point x, then plug that x back into y to get the maximum value.",
-      "explanation": "Differentiate y = 1 − 2x − 3x²: dy/dx = −2 − 6x. Setting −2 − 6x = 0 gives x = −1/3 (and d²y/dx² = −6 < 0, confirming a maximum). Substitute x = −1/3 into y: 1 − 2(−1/3) − 3(1/9) = 1 + 2/3 − 1/3 = 4/3.",
-      "trap": "5/3 catches students who turn −3(−1/3)² into +1/3 by cancelling the minus signs instead of squaring −1/3 to +1/9 first.",
-      "mnemonic": "Set dy/dx = 0 for x, plug x back into y for the max value.",
+      "hint": "Set \\frac{dy}{dx} = 0 to find the turning-point x, then plug that x back into y to get the maximum value.",
+      "explanation": "Differentiate y = 1 − 2x − 3x²: \\frac{dy}{dx} = −2 − 6x. Setting −2 − 6x = 0 gives x = −\\frac{1}{3} (and \\frac{d²y}{dx²} = −6 < 0, confirming a maximum). Substitute x = −\\frac{1}{3} into y: 1 − 2\\left(−\\frac{1}{3}\\right) − 3\\left(\\frac{1}{9}\\right) = 1 + \\frac{2}{3} − \\frac{1}{3} = \\frac{4}{3}.",
+      "trap": "\\frac{5}{3} catches students who turn −3\\left(−\\frac{1}{3}\\right)² into +\\frac{1}{3} by cancelling the minus signs instead of squaring −\\frac{1}{3} to +\\frac{1}{9} first.",
+      "mnemonic": "Set \\frac{dy}{dx} = 0 for x, plug x back into y for the max value.",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "At the top of the curve, the slope dy/dx is 0. Solving −2 − 6x = 0 gives x = −1/3. Plugging −1/3 into 1 − 2x − 3x² gives 1 + 2/3 − 1/3 = 4/3."
+          "answer": "At the top of the curve, the slope \\frac{dy}{dx} is 0. Solving −2 − 6x = 0 gives x = −\\frac{1}{3}. Plugging −\\frac{1}{3} into 1 − 2x − 3x² gives 1 + \\frac{2}{3} − \\frac{1}{3} = \\frac{4}{3}."
         },
         {
           "id": "whynot",
           "optionId": "c",
-          "answer": "Remember (−1/3)² = +1/9, so −3(−1/3)² stays negative (−1/3). That gives 1 + 2/3 − 1/3 = 4/3, not 5/3."
+          "answer": "Remember \\left(−\\frac{1}{3}\\right)² = +\\frac{1}{9}, so −3\\left(−\\frac{1}{3}\\right)² stays negative \\left(−\\frac{1}{3}\\right). That gives 1 + \\frac{2}{3} − \\frac{1}{3} = \\frac{4}{3}, not \\frac{5}{3}."
         },
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Stationary (maximum) value: solve dy/dx = 0 for x, then evaluate y(x)."
+          "answer": "Stationary (maximum) value: solve \\frac{dy}{dx} = 0 for x, then evaluate y(x)."
         },
         {
           "id": "simpler",
@@ -177,7 +177,7 @@
           "id": "a",
           "text": "12x + 1",
           "why": "12x + 1 differentiates 2x(3x) but drops the middle 5x term.",
-          "whyWrong": "Expanding (2x + 1)(3x + 1) gives 6x² + 5x + 1, not 6x² + x + 1. Differentiating 5x gives 5, so dy/dx = 12x + 5."
+          "whyWrong": "Expanding (2x + 1)(3x + 1) gives 6x² + 5x + 1, not 6x² + x + 1. Differentiating 5x gives 5, so \\frac{dy}{dx} = 12x + 5."
         },
         {
           "id": "b",
@@ -337,26 +337,26 @@
       "options": [
         {
           "id": "a",
-          "text": "1/3",
-          "why": "1/3 would give log₃((1/3)²) = −2, not −8.",
-          "whyWrong": "If x = 1/3, then x² = 1/9 = 3⁻², so log₃(x²) = −2 rather than −8."
+          "text": "\\frac{1}{3}",
+          "why": "\\frac{1}{3} would give log₃(\\left(\\frac{1}{3}\\right)²) = −2, not −8.",
+          "whyWrong": "If x = \\frac{1}{3}, then x² = \\frac{1}{9} = 3⁻², so log₃(x²) = −2 rather than −8."
         },
         {
           "id": "b",
-          "text": "1/9",
-          "why": "1/9 would give log₃((1/9)²) = −4, not −8.",
-          "whyWrong": "If x = 1/9, then x² = 3⁻⁴, giving log = −4. You need x² = 3⁻⁸, so x = 3⁻⁴ = 1/81."
+          "text": "\\frac{1}{9}",
+          "why": "\\frac{1}{9} would give log₃(\\left(\\frac{1}{9}\\right)²) = −4, not −8.",
+          "whyWrong": "If x = \\frac{1}{9}, then x² = 3⁻⁴, giving log = −4. You need x² = 3⁻⁸, so x = 3⁻⁴ = \\frac{1}{81}."
         },
         {
           "id": "c",
-          "text": "1/27",
-          "why": "1/27 = 3⁻³, whose square is 3⁻⁶ (log = −6, not −8).",
-          "whyWrong": "For x = 1/27, x² = 3⁻⁶, which gives −6 instead of −8."
+          "text": "\\frac{1}{27}",
+          "why": "\\frac{1}{27} = 3⁻³, whose square is 3⁻⁶ (log = −6, not −8).",
+          "whyWrong": "For x = \\frac{1}{27}, x² = 3⁻⁶, which gives −6 instead of −8."
         },
         {
           "id": "d",
-          "text": "1/81",
-          "why": "log₃(x²) = −8 means x² = 3⁻⁸, so x = 3⁻⁴ = 1/81 (positive root).",
+          "text": "\\frac{1}{81}",
+          "why": "log₃(x²) = −8 means x² = 3⁻⁸, so x = 3⁻⁴ = \\frac{1}{81} (positive root).",
           "whyWrong": null
         }
       ],
@@ -366,24 +366,24 @@
         "c"
       ],
       "hint": "Use 2 log₃(x) = −8 first, or rewrite log₃(x²) = −8 in index form as x² = 3⁻⁸.",
-      "explanation": "Rewriting log₃(x²) = −8 in index form gives x² = 3⁻⁸. Taking the square root (or dividing the exponent by 2) gives x = 3⁻⁴ = 1/3⁴ = 1/81 (among the positive options).",
-      "trap": "1/9 traps students who confuse 3⁻² with 3⁻⁴, or compute 3² instead of 3⁴.",
+      "explanation": "Rewriting log₃(x²) = −8 in index form gives x² = 3⁻⁸. Taking the square root (or dividing the exponent by 2) gives x = 3⁻⁴ = \\frac{1}{3⁴} = \\frac{1}{81} (among the positive options).",
+      "trap": "\\frac{1}{9} traps students who confuse 3⁻² with 3⁻⁴, or compute 3² instead of 3⁴.",
       "mnemonic": "Log to Index: base^result = argument; divide power by 2 for x.",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "Pull the 2 in front: 2 log₃(x) = −8, so log₃(x) = −4. That means x = 3⁻⁴ = 1/3⁴ = 1/81."
+          "answer": "Pull the 2 in front: 2 log₃(x) = −8, so log₃(x) = −4. That means x = 3⁻⁴ = \\frac{1}{3⁴} = \\frac{1}{81}."
         },
         {
           "id": "whynot",
           "optionId": "b",
-          "answer": "1/9 is 1/3², which only solves log₃(x) = −2. Half of −8 is −4, and 3⁻⁴ = 1/81."
+          "answer": "\\frac{1}{9} is \\frac{1}{3²}, which only solves log₃(x) = −2. Half of −8 is −4, and 3⁻⁴ = \\frac{1}{81}."
         },
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Logarithm power rule: log_b(xⁿ) = n log_b(x), and b⁻ⁿ = 1/bⁿ."
+          "answer": "Logarithm power rule: log_b(xⁿ) = n log_b(x), and b⁻ⁿ = \\frac{1}{bⁿ}."
         },
         {
           "id": "simpler",
@@ -394,7 +394,7 @@
           "id": "similar",
           "label": "Give me a similar question",
           "answer": "If log₂(x²) = −6 and x > 0, what is x?",
-          "similarAnswer": "1/8 (since log₂(x) = −3 → x = 2⁻³ = 1/8)."
+          "similarAnswer": "\\frac{1}{8} (since log₂(x) = −3 → x = 2⁻³ = \\frac{1}{8})."
         }
       ],
       "animationId": "anim-math-api-0091",
@@ -414,30 +414,30 @@
       "topic": "Indices and logarithms",
       "type": "calculation",
       "difficulty": 1,
-      "stem": "If log10 4 = 0.6021, evaluate log10 4^1/3",
+      "stem": "If log10 4 = 0.6021, evaluate log10 4^{\\frac{1}{3}}",
       "options": [
         {
           "id": "a",
           "text": "0.3011",
           "why": "0.3011 divides by 2 instead of 3.",
-          "whyWrong": "0.3011 is roughly half of 0.6021 (which would be log₁₀ 4^(1/2)). The exponent is 1/3, so divide 0.6021 by 3 to get 0.2007."
+          "whyWrong": "0.3011 is roughly half of 0.6021 (which would be log₁₀ 4^{\\frac{1}{2}}). The exponent is \\frac{1}{3}, so divide 0.6021 by 3 to get 0.2007."
         },
         {
           "id": "b",
           "text": "0.9021",
-          "why": "0.9021 adds 0.3 instead of multiplying by 1/3.",
-          "whyWrong": "Exponent 1/3 inside a logarithm multiplies the log by 1/3, it does not add 0.3. Divide 0.6021 by 3 to get 0.2007."
+          "why": "0.9021 adds 0.3 instead of multiplying by \\frac{1}{3}.",
+          "whyWrong": "Exponent \\frac{1}{3} inside a logarithm multiplies the log by \\frac{1}{3}, it does not add 0.3. Divide 0.6021 by 3 to get 0.2007."
         },
         {
           "id": "c",
           "text": "1.8063",
           "why": "1.8063 multiplies by 3 instead of dividing by 3.",
-          "whyWrong": "1.8063 is 3 × 0.6021, which is log₁₀(4³). For 4^(1/3), bring 1/3 in front and divide by 3: 0.6021 ÷ 3 = 0.2007."
+          "whyWrong": "1.8063 is 3 × 0.6021, which is log₁₀(4³). For 4^{\\frac{1}{3}}, bring \\frac{1}{3} in front and divide by 3: 0.6021 ÷ 3 = 0.2007."
         },
         {
           "id": "d",
           "text": "0.2007",
-          "why": "log₁₀(4^(1/3)) = (1/3) log₁₀ 4 = 0.6021 ÷ 3 = 0.2007.",
+          "why": "log₁₀(4^{\\frac{1}{3}}) = \\left(\\frac{1}{3}\\right) log₁₀ 4 = 0.6021 ÷ 3 = 0.2007.",
           "whyWrong": null
         }
       ],
@@ -446,20 +446,20 @@
         "a",
         "b"
       ],
-      "hint": "Use the log power rule: log(aⁿ) = n log(a), with n = 1/3.",
-      "explanation": "By the power rule for logarithms, log₁₀(4^(1/3)) = (1/3) × log₁₀ 4 = 0.6021 ÷ 3 = 0.2007.",
+      "hint": "Use the log power rule: log(aⁿ) = n log(a), with n = \\frac{1}{3}.",
+      "explanation": "By the power rule for logarithms, log₁₀(4^{\\frac{1}{3}}) = \\left(\\frac{1}{3}\\right) × log₁₀ 4 = 0.6021 ÷ 3 = 0.2007.",
       "trap": "1.8063 traps students who multiply 0.6021 by 3 instead of dividing by 3.",
-      "mnemonic": "Log power drops to the front: 1/3 times log 4.",
+      "mnemonic": "Log power drops to the front: \\frac{1}{3} times log 4.",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "In logarithms, an exponent moves to the front as a multiplier: 1/3 × 0.6021 = 0.6021 ÷ 3 = 0.2007."
+          "answer": "In logarithms, an exponent moves to the front as a multiplier: \\frac{1}{3} × 0.6021 = 0.6021 ÷ 3 = 0.2007."
         },
         {
           "id": "whynot",
           "optionId": "c",
-          "answer": "1.8063 is 3 × 0.6021, which equals log₁₀(4³). Here the power is 1/3, so divide by 3 instead to get 0.2007."
+          "answer": "1.8063 is 3 × 0.6021, which equals log₁₀(4³). Here the power is \\frac{1}{3}, so divide by 3 instead to get 0.2007."
         },
         {
           "id": "simpler",
@@ -469,12 +469,12 @@
         {
           "id": "simpler",
           "label": "How do I remember this?",
-          "answer": "Cube root = power 1/3 = divide the log by 3."
+          "answer": "Cube root = power \\frac{1}{3} = divide the log by 3."
         },
         {
           "id": "similar",
           "label": "Give me a similar question",
-          "answer": "If log₁₀ 9 = 0.9542, evaluate log₁₀(9^(1/2)).",
+          "answer": "If log₁₀ 9 = 0.9542, evaluate log₁₀(9^{\\frac{1}{2}}).",
           "similarAnswer": "0.4771 (0.9542 ÷ 2)."
         }
       ],
@@ -545,7 +545,7 @@
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Logarithm combination laws: a log x + b log y − log z = log(xᵃyᵇ / z)."
+          "answer": "Logarithm combination laws: a log x + b log y − log z = log(\\frac{xᵃyᵇ}{z})."
         },
         {
           "id": "simpler",
@@ -657,31 +657,31 @@
       "topic": "Algebra and equations",
       "type": "calculation",
       "difficulty": 1,
-      "stem": "A number is added to both the numerator and denominator of the fraction 1/5. If the result is 1/2, find the number.",
+      "stem": "A number is added to both the numerator and denominator of the fraction \\frac{1}{5}. If the result is \\frac{1}{2}, find the number.",
       "options": [
         {
           "id": "a",
           "text": "3",
-          "why": "(1 + 3) ÷ (5 + 3) = 4 ÷ 8 = 1/2.",
+          "why": "(1 + 3) ÷ (5 + 3) = 4 ÷ 8 = \\frac{1}{2}.",
           "whyWrong": null
         },
         {
           "id": "b",
           "text": "4",
-          "why": "Adding 4 gives (1 + 4)/(5 + 4) = 5/9 ≠ 1/2.",
-          "whyWrong": "If you add 4 to top and bottom, 1/5 becomes 5/9, which is not 1/2. Adding 3 gives 4/8 = 1/2."
+          "why": "Adding 4 gives \\frac{1 + 4}{5 + 4} = \\frac{5}{9} ≠ \\frac{1}{2}.",
+          "whyWrong": "If you add 4 to top and bottom, \\frac{1}{5} becomes \\frac{5}{9}, which is not \\frac{1}{2}. Adding 3 gives \\frac{4}{8} = \\frac{1}{2}."
         },
         {
           "id": "c",
           "text": "5",
-          "why": "Adding 5 gives (1 + 5)/(5 + 5) = 6/10 = 3/5 ≠ 1/2.",
-          "whyWrong": "Adding 5 turns 1/5 into 6/10 = 3/5, which is larger than 1/2."
+          "why": "Adding 5 gives \\frac{1 + 5}{5 + 5} = \\frac{6}{10} = \\frac{3}{5} ≠ \\frac{1}{2}.",
+          "whyWrong": "Adding 5 turns \\frac{1}{5} into \\frac{6}{10} = \\frac{3}{5}, which is larger than \\frac{1}{2}."
         },
         {
           "id": "d",
           "text": "6",
-          "why": "Adding 6 gives (1 + 6)/(5 + 6) = 7/11 ≠ 1/2.",
-          "whyWrong": "Adding 6 gives 7/11, not 1/2. Solving (1 + n)/(5 + n) = 1/2 gives n = 3."
+          "why": "Adding 6 gives \\frac{1 + 6}{5 + 6} = \\frac{7}{11} ≠ \\frac{1}{2}.",
+          "whyWrong": "Adding 6 gives \\frac{7}{11}, not \\frac{1}{2}. Solving \\frac{1 + n}{5 + n} = \\frac{1}{2} gives n = 3."
         }
       ],
       "answerId": "a",
@@ -689,36 +689,36 @@
         "c",
         "d"
       ],
-      "hint": "Write (1 + x) ÷ (5 + x) = 1/2 and cross-multiply (or test the options directly).",
-      "explanation": "Let the number be x. Then (1 + x) / (5 + x) = 1 / 2. Cross-multiplying gives 2(1 + x) = 5 + x, so 2 + 2x = 5 + x, giving x = 3. Check: (1 + 3) / (5 + 3) = 4 / 8 = 1/2.",
-      "trap": "4 is close to 3/5 vs 1/2, so checking by substitution after solving prevents any slip.",
-      "mnemonic": "Set up (1 + x)/(5 + x) = 1/2 and cross-multiply.",
+      "hint": "Write (1 + x) ÷ (5 + x) = \\frac{1}{2} and cross-multiply (or test the options directly).",
+      "explanation": "Let the number be x. Then \\frac{1 + x}{5 + x} = \\frac{1}{2}. Cross-multiplying gives 2(1 + x) = 5 + x, so 2 + 2x = 5 + x, giving x = 3. Check: \\frac{1 + 3}{5 + 3} = \\frac{4}{8} = \\frac{1}{2}.",
+      "trap": "4 is close to \\frac{3}{5} vs \\frac{1}{2}, so checking by substitution after solving prevents any slip.",
+      "mnemonic": "Set up \\frac{1 + x}{5 + x} = \\frac{1}{2} and cross-multiply.",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "Try adding each option to both 1 and 5: adding 3 gives (1 + 3)/(5 + 3) = 4/8, which simplifies right down to 1/2."
+          "answer": "Try adding each option to both 1 and 5: adding 3 gives \\frac{1 + 3}{5 + 3} = \\frac{4}{8}, which simplifies right down to \\frac{1}{2}."
         },
         {
           "id": "whynot",
           "optionId": "b",
-          "answer": "Adding 4 gives (1 + 4)/(5 + 4) = 5/9, which is a bit more than half (4.5/9). Adding 3 gives 4/8 = 1/2."
+          "answer": "Adding 4 gives \\frac{1 + 4}{5 + 4} = \\frac{5}{9}, which is a bit more than half \\left(\\frac{4.5}{9}\\right). Adding 3 gives \\frac{4}{8} = \\frac{1}{2}."
         },
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Linear fraction equation: (a + x)/(b + x) = c/d solved by cross-multiplying."
+          "answer": "Linear fraction equation: \\frac{a + x}{b + x} = \\frac{c}{d} solved by cross-multiplying."
         },
         {
           "id": "simpler",
           "label": "How do I remember this?",
-          "answer": "With multiple-choice fractions, always check by plugging your answer back into (1+x)/(5+x)."
+          "answer": "With multiple-choice fractions, always check by plugging your answer back into \\frac{1+x}{5+x}."
         },
         {
           "id": "similar",
           "label": "Give me a similar question",
-          "answer": "What number must be added to both numerator and denominator of 2/7 to obtain 1/2?",
-          "similarAnswer": "3 (gives 5/10 = 1/2)."
+          "answer": "What number must be added to both numerator and denominator of \\frac{2}{7} to obtain \\frac{1}{2}?",
+          "similarAnswer": "3 (gives \\frac{5}{10} = \\frac{1}{2})."
         }
       ],
       "animationId": "anim-math-api-0079",
@@ -1057,19 +1057,19 @@
       "topic": "Quadratic equations and inequalities",
       "type": "recall",
       "difficulty": 2,
-      "stem": "Find the quadratic equation whose roots are 1/3 and −1.",
+      "stem": "Find the quadratic equation whose roots are \\frac{1}{3} and −1.",
       "options": [
         {
           "id": "a",
           "text": "3x²+2x−1=0",
-          "why": "(3x − 1)(x + 1) = 3x² + 2x − 1 = 0 has roots 1/3 and −1.",
+          "why": "(3x − 1)(x + 1) = 3x² + 2x − 1 = 0 has roots \\frac{1}{3} and −1.",
           "whyWrong": null
         },
         {
           "id": "b",
           "text": "3x²−x−2=0",
-          "why": "(3x + 2)(x − 1) = 0 has roots −2/3 and 1, not 1/3 and −1.",
-          "whyWrong": "Sum of roots here is 1/3 and product is −2/3, whereas 1/3 and −1 have sum −2/3 and product −1/3."
+          "why": "(3x + 2)(x − 1) = 0 has roots −\\frac{2}{3} and 1, not \\frac{1}{3} and −1.",
+          "whyWrong": "Sum of roots here is \\frac{1}{3} and product is −\\frac{2}{3}, whereas \\frac{1}{3} and −1 have sum −\\frac{2}{3} and product −\\frac{1}{3}."
         },
         {
           "id": "c",
@@ -1089,15 +1089,15 @@
         "c",
         "d"
       ],
-      "hint": "Form the factors (x − 1/3)(x + 1) = 0, or multiply (3x − 1)(x + 1) = 0.",
-      "explanation": "If the roots are 1/3 and −1, then (x − 1/3)(x + 1) = 0. Multiplying the first factor by 3 gives (3x − 1)(x + 1) = 0. Expanding gives 3x² + 3x − x − 1 = 3x² + 2x − 1 = 0.",
+      "hint": "Form the factors (x − \\frac{1}{3})(x + 1) = 0, or multiply (3x − 1)(x + 1) = 0.",
+      "explanation": "If the roots are \\frac{1}{3} and −1, then (x − \\frac{1}{3})(x + 1) = 0. Multiplying the first factor by 3 gives (3x − 1)(x + 1) = 0. Expanding gives 3x² + 3x − x − 1 = 3x² + 2x − 1 = 0.",
       "trap": "3x² − x − 2 = 0 mixes up the coefficients of sum and product of roots.",
       "mnemonic": "x² − (sum of roots)x + (product of roots) = 0.",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "Turn each root into a bracket with the opposite sign: root 1/3 gives (3x − 1) and root −1 gives (x + 1). Multiply them: (3x − 1)(x + 1) = 3x² + 2x − 1 = 0."
+          "answer": "Turn each root into a bracket with the opposite sign: root \\frac{1}{3} gives (3x − 1) and root −1 gives (x + 1). Multiply them: (3x − 1)(x + 1) = 3x² + 2x − 1 = 0."
         },
         {
           "id": "whynot",
@@ -1107,12 +1107,12 @@
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Quadratic from roots α, β: x² − (α + β)x + αβ = 0. Here α + β = −2/3 and αβ = −1/3, times 3 gives 3x² + 2x − 1 = 0."
+          "answer": "Quadratic from roots α, β: x² − (α + β)x + αβ = 0. Here α + β = −\\frac{2}{3} and αβ = −\\frac{1}{3}, times 3 gives 3x² + 2x − 1 = 0."
         },
         {
           "id": "similar",
           "label": "Give me a similar question",
-          "answer": "Find the quadratic equation whose roots are 1/2 and −3.",
+          "answer": "Find the quadratic equation whose roots are \\frac{1}{2} and −3.",
           "similarAnswer": "2x² + 5x − 3 = 0."
         }
       ],
@@ -1452,31 +1452,31 @@
       "topic": "Sequences and series",
       "type": "calculation",
       "difficulty": 2,
-      "stem": "The sum to infinity of a geometric progression is −1/10 and the first term is −1/8 . Find the common ratio of the progression.",
+      "stem": "The sum to infinity of a geometric progression is −\\frac{1}{10} and the first term is −\\frac{1}{8} . Find the common ratio of the progression.",
       "options": [
         {
           "id": "a",
-          "text": "−1/5",
-          "why": "−1/5 does not satisfy a ÷ (1 − r) = −1/10.",
-          "whyWrong": "If r = −1/5 and a = −1/8, then S∞ = (−1/8) ÷ (6/5) = −5/48 ≠ −1/10."
+          "text": "−\\frac{1}{5}",
+          "why": "−\\frac{1}{5} does not satisfy a ÷ (1 − r) = −\\frac{1}{10}.",
+          "whyWrong": "If r = −\\frac{1}{5} and a = −\\frac{1}{8}, then S∞ = \\left(−\\frac{1}{8}\\right) ÷ \\left(\\frac{6}{5}\\right) = −\\frac{5}{48} ≠ −\\frac{1}{10}."
         },
         {
           "id": "b",
-          "text": "−1/4",
-          "why": "S∞ = a ÷ (1 − r) → −1/10 = (−1/8) ÷ (1 − r) → 1 − r = 5/4 → r = −1/4.",
+          "text": "−\\frac{1}{4}",
+          "why": "S∞ = a ÷ (1 − r) → −\\frac{1}{10} = \\left(−\\frac{1}{8}\\right) ÷ (1 − r) → 1 − r = \\frac{5}{4} → r = −\\frac{1}{4}.",
           "whyWrong": null
         },
         {
           "id": "c",
-          "text": "−1/3",
-          "why": "−1/3 gives S∞ = (−1/8) ÷ (4/3) = −3/32 ≠ −1/10.",
-          "whyWrong": "Test r = −1/3: (−1/8) ÷ (1 + 1/3) = −3/32, which is not −1/10."
+          "text": "−\\frac{1}{3}",
+          "why": "−\\frac{1}{3} gives S∞ = \\left(−\\frac{1}{8}\\right) ÷ \\left(\\frac{4}{3}\\right) = −\\frac{3}{32} ≠ −\\frac{1}{10}.",
+          "whyWrong": "Test r = −\\frac{1}{3}: \\left(−\\frac{1}{8}\\right) ÷ (1 + \\frac{1}{3}) = −\\frac{3}{32}, which is not −\\frac{1}{10}."
         },
         {
           "id": "d",
-          "text": "−1/2",
-          "why": "−1/2 gives S∞ = (−1/8) ÷ (3/2) = −1/12 ≠ −1/10.",
-          "whyWrong": "Test r = −1/2: (−1/8) ÷ (1 + 1/2) = −1/12, whereas the given sum is −1/10."
+          "text": "−\\frac{1}{2}",
+          "why": "−\\frac{1}{2} gives S∞ = \\left(−\\frac{1}{8}\\right) ÷ \\left(\\frac{3}{2}\\right) = −\\frac{1}{12} ≠ −\\frac{1}{10}.",
+          "whyWrong": "Test r = −\\frac{1}{2}: \\left(−\\frac{1}{8}\\right) ÷ (1 + \\frac{1}{2}) = −\\frac{1}{12}, whereas the given sum is −\\frac{1}{10}."
         }
       ],
       "answerId": "b",
@@ -1485,19 +1485,19 @@
         "c"
       ],
       "hint": "Use S∞ = a ÷ (1 − r) and solve carefully for r.",
-      "explanation": "For a convergent G.P., S∞ = a ÷ (1 − r). Substituting S∞ = −1/10 and a = −1/8 gives −1/10 = (−1/8) ÷ (1 − r), so 1 − r = (−1/8) ÷ (−1/10) = 10/8 = 5/4. Thus r = 1 − 5/4 = −1/4.",
-      "trap": "Students often slip on the negative fractions when rearranging 1 − r = 5/4, getting +1/4 or picking −1/2.",
+      "explanation": "For a convergent G.P., S∞ = a ÷ (1 − r). Substituting S∞ = −\\frac{1}{10} and a = −\\frac{1}{8} gives −\\frac{1}{10} = \\left(−\\frac{1}{8}\\right) ÷ (1 − r), so 1 − r = \\left(−\\frac{1}{8}\\right) ÷ \\left(−\\frac{1}{10}\\right) = \\frac{10}{8} = \\frac{5}{4}. Thus r = 1 − \\frac{5}{4} = −\\frac{1}{4}.",
+      "trap": "Students often slip on the negative fractions when rearranging 1 − r = \\frac{5}{4}, getting +\\frac{1}{4} or picking −\\frac{1}{2}.",
       "mnemonic": "S∞ = a ÷ (1 − r), so 1 − r = a ÷ S∞.",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "Rearrange S∞ = a ÷ (1 − r) to 1 − r = a ÷ S∞. Divide −1/8 by −1/10 to get +10/8 = 5/4. Since 1 − r = 5/4, r = 1 − 5/4 = −1/4."
+          "answer": "Rearrange S∞ = a ÷ (1 − r) to 1 − r = a ÷ S∞. Divide −\\frac{1}{8} by −\\frac{1}{10} to get +\\frac{10}{8} = \\frac{5}{4}. Since 1 − r = \\frac{5}{4}, r = 1 − \\frac{5}{4} = −\\frac{1}{4}."
         },
         {
           "id": "whynot",
           "optionId": "d",
-          "answer": "If r were −1/2, then 1 − r = 3/2 and S∞ = (−1/8) ÷ (3/2) = −1/12, not −1/10."
+          "answer": "If r were −\\frac{1}{2}, then 1 − r = \\frac{3}{2} and S∞ = \\left(−\\frac{1}{8}\\right) ÷ \\left(\\frac{3}{2}\\right) = −\\frac{1}{12}, not −\\frac{1}{10}."
         },
         {
           "id": "simpler",
@@ -1507,13 +1507,13 @@
         {
           "id": "simpler",
           "label": "How do I remember this?",
-          "answer": "Dividing two negatives (−1/8 ÷ −1/10) makes a positive (+5/4)."
+          "answer": "Dividing two negatives (−\\frac{1}{8} ÷ −\\frac{1}{10}) makes a positive \\left(+\\frac{5}{4}\\right)."
         },
         {
           "id": "similar",
           "label": "Give me a similar question",
           "answer": "The sum to infinity of a G.P. is 12 and its first term is 9. Find the common ratio.",
-          "similarAnswer": "1/4 (1 − r = 9/12 = 3/4 → r = 1/4)."
+          "similarAnswer": "\\frac{1}{4} (1 − r = \\frac{9}{12} = \\frac{3}{4} → r = \\frac{1}{4})."
         }
       ],
       "animationId": "anim-math-api-0093",
@@ -1533,13 +1533,13 @@
       "topic": "Mensuration and geometry",
       "type": "calculation",
       "difficulty": 1,
-      "stem": "Find the curved surface area of a cone of radius 3cm and slant height 7cm. (Take π = 22/7)",
+      "stem": "Find the curved surface area of a cone of radius 3cm and slant height 7cm. (Take π = \\frac{22}{7})",
       "options": [
         {
           "id": "a",
           "text": "22cm2",
           "why": "22 cm² forgets the radius r = 3.",
-          "whyWrong": "22 cm² equals πl = (22/7) × 7 without multiplying by r = 3 cm."
+          "whyWrong": "22 cm² equals πl = \\left(\\frac{22}{7}\\right) × 7 without multiplying by r = 3 cm."
         },
         {
           "id": "b",
@@ -1556,7 +1556,7 @@
         {
           "id": "d",
           "text": "66cm2",
-          "why": "CSA = πrl = (22/7) × 3 × 7 = 22 × 3 = 66 cm².",
+          "why": "CSA = πrl = \\left(\\frac{22}{7}\\right) × 3 × 7 = 22 × 3 = 66 cm².",
           "whyWrong": null
         }
       ],
@@ -1566,14 +1566,14 @@
         "c"
       ],
       "hint": "Use the curved surface area of a cone: πrl, and notice the 7s cancel neatly!",
-      "explanation": "The curved surface area of a cone is πrl. Substituting π = 22/7, r = 3 cm, and l = 7 cm gives (22/7) × 3 × 7 = 22 × 3 = 66 cm².",
+      "explanation": "The curved surface area of a cone is πrl. Substituting π = \\frac{22}{7}, r = 3 cm, and l = 7 cm gives \\left(\\frac{22}{7}\\right) × 3 × 7 = 22 × 3 = 66 cm².",
       "trap": "44 cm² or 22 cm² catches students who mix up πrl with 2πr or forget to multiply by r = 3 after cancelling 7.",
       "mnemonic": "Cone CSA = πrl (only one r, one l).",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "The curved side area of a cone is π × radius × slant height. The 7 in 22/7 cancels the slant height 7, leaving 22 × 3 = 66 cm²."
+          "answer": "The curved side area of a cone is π × radius × slant height. The 7 in \\frac{22}{7} cancels the slant height 7, leaving 22 × 3 = 66 cm²."
         },
         {
           "id": "whynot",
@@ -1593,8 +1593,8 @@
         {
           "id": "similar",
           "label": "Give me a similar question",
-          "answer": "Find the curved surface area of a cone of radius 7 cm and slant height 5 cm. (Take π = 22/7)",
-          "similarAnswer": "110 cm² ((22/7) × 7 × 5)."
+          "answer": "Find the curved surface area of a cone of radius 7 cm and slant height 5 cm. (Take π = \\frac{22}{7})",
+          "similarAnswer": "110 cm² (\\left(\\frac{22}{7}\\right) × 7 × 5)."
         }
       ],
       "animationId": "anim-math-api-0018",
@@ -1620,7 +1620,7 @@
           "id": "a",
           "text": "7",
           "why": "360° ÷ 7 is not a whole number and gives interior angle ~128.6°.",
-          "whyWrong": "A regular 7-sided polygon has exterior angle 360°/7 ≈ 51.4°, giving interior angle ~128.6°, not 140°."
+          "whyWrong": "A regular 7-sided polygon has exterior angle \\frac{360°}{7} ≈ 51.4°, giving interior angle ~128.6°, not 140°."
         },
         {
           "id": "b",
@@ -1669,7 +1669,7 @@
         {
           "id": "simpler",
           "label": "How do I remember this?",
-          "answer": "Never wrestle with (n−2)×180/n when you can go straight to exterior = 180 − interior!"
+          "answer": "Never wrestle with \\frac{(n−2)×180}{n} when you can go straight to exterior = 180 − interior!"
         },
         {
           "id": "similar",
@@ -1695,31 +1695,31 @@
       "topic": "Mensuration and geometry",
       "type": "calculation",
       "difficulty": 1,
-      "stem": "A sector of a circle of radius 21 cm subtends an angle of 120° at the centre. Find the length of the arc of the sector. [Take π = 22/7]",
+      "stem": "A sector of a circle of radius 21 cm subtends an angle of 120° at the centre. Find the length of the arc of the sector. [Take π = \\frac{22}{7}]",
       "options": [
         {
           "id": "a",
           "text": "11 cm",
           "why": "11 cm is a quarter of the arc length.",
-          "whyWrong": "11 cm would correspond to a 30° angle, not 120°. A 120° arc is 1/3 of the circle's circumference: (1/3) × 132 = 44 cm."
+          "whyWrong": "11 cm would correspond to a 30° angle, not 120°. A 120° arc is \\frac{1}{3} of the circle's circumference: \\left(\\frac{1}{3}\\right) × 132 = 44 cm."
         },
         {
           "id": "b",
           "text": "22 cm",
           "why": "22 cm uses πr instead of 2πr (forgetting the factor of 2 in circumference).",
-          "whyWrong": "22 cm computes (120/360) × (22/7) × 21, forgetting the 2 in 2πr! Circumference of a circle is 2πr, giving 44 cm."
+          "whyWrong": "22 cm computes \\left(\\frac{120}{360}\\right) × \\left(\\frac{22}{7}\\right) × 21, forgetting the 2 in 2πr! Circumference of a circle is 2πr, giving 44 cm."
         },
         {
           "id": "c",
           "text": "44 cm",
-          "why": "Arc length = (120/360) × 2 × (22/7) × 21 = (1/3) × 132 = 44 cm.",
+          "why": "Arc length = \\left(\\frac{120}{360}\\right) × 2 × \\left(\\frac{22}{7}\\right) × 21 = \\left(\\frac{1}{3}\\right) × 132 = 44 cm.",
           "whyWrong": null
         },
         {
           "id": "d",
           "text": "66 cm",
           "why": "66 cm uses 180° (half circle) instead of 120° (one third).",
-          "whyWrong": "66 cm is half the circumference (180°), whereas 120° is 120/360 = 1/3 of the circle, giving 132 ÷ 3 = 44 cm."
+          "whyWrong": "66 cm is half the circumference (180°), whereas 120° is \\frac{120}{360} = \\frac{1}{3} of the circle, giving 132 ÷ 3 = 44 cm."
         }
       ],
       "answerId": "c",
@@ -1727,20 +1727,20 @@
         "a",
         "d"
       ],
-      "hint": "Arc length is the fraction (θ/360°) of the full circumference 2πr.",
-      "explanation": "Arc length = (θ / 360°) × 2πr = (120 / 360) × 2 × (22/7) × 21. Since 120/360 = 1/3 and 21/7 = 3, the 3s cancel, leaving 2 × 22 = 44 cm.",
+      "hint": "Arc length is the fraction \\left(\\frac{θ}{360°}\\right) of the full circumference 2πr.",
+      "explanation": "Arc length = \\left(\\frac{θ}{360°}\\right) × 2πr = \\left(\\frac{120}{360}\\right) × 2 × \\left(\\frac{22}{7}\\right) × 21. Since \\frac{120}{360} = \\frac{1}{3} and \\frac{21}{7} = 3, the 3s cancel, leaving 2 × 22 = 44 cm.",
       "trap": "22 cm is the classic trap — using πr instead of 2πr (dropping the 2 in circumference).",
-      "mnemonic": "Arc length = (θ/360) × 2πr; Sector area = (θ/360) × πr².",
+      "mnemonic": "Arc length = \\left(\\frac{θ}{360}\\right) × 2πr; Sector area = \\left(\\frac{θ}{360}\\right) × πr².",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "120° is 1/3 of a full 360° circle. Full circumference = 2 × (22/7) × 21 = 132 cm, and 1/3 of 132 cm is 44 cm."
+          "answer": "120° is \\frac{1}{3} of a full 360° circle. Full circumference = 2 × \\left(\\frac{22}{7}\\right) × 21 = 132 cm, and \\frac{1}{3} of 132 cm is 44 cm."
         },
         {
           "id": "whynot",
           "optionId": "b",
-          "answer": "22 cm drops the 2 from 2πr. Keep the 2 in circumference: (1/3) × 2 × (22/7) × 21 = 44 cm."
+          "answer": "22 cm drops the 2 from 2πr. Keep the 2 in circumference: \\left(\\frac{1}{3}\\right) × 2 × \\left(\\frac{22}{7}\\right) × 21 = 44 cm."
         },
         {
           "id": "simpler",
@@ -1750,13 +1750,13 @@
         {
           "id": "simpler",
           "label": "How do I remember this?",
-          "answer": "Circumference has a 2 (2πr); cancel 7 into 21 (= 3) with 1/3 right away!"
+          "answer": "Circumference has a 2 (2πr); cancel 7 into 21 (= 3) with \\frac{1}{3} right away!"
         },
         {
           "id": "similar",
           "label": "Give me a similar question",
-          "answer": "Find the arc length of a sector of radius 14 cm and angle 90°. (Take π = 22/7)",
-          "similarAnswer": "22 cm ((90/360) × 2 × (22/7) × 14)."
+          "answer": "Find the arc length of a sector of radius 14 cm and angle 90°. (Take π = \\frac{22}{7})",
+          "similarAnswer": "22 cm (\\left(\\frac{90}{360}\\right) × 2 × \\left(\\frac{22}{7}\\right) × 14)."
         }
       ],
       "animationId": "anim-math-api-0110",
@@ -1780,27 +1780,27 @@
       "options": [
         {
           "id": "a",
-          "text": "1/8",
-          "why": "1/8 is the probability of a single sequence like HHT, or 3 heads (HHH).",
-          "whyWrong": "1/8 counts only one arrangement such as HHT. Three different toss orders give two heads: HHT, HTH, and THH, so the probability is 3/8."
+          "text": "\\frac{1}{8}",
+          "why": "\\frac{1}{8} is the probability of a single sequence like HHT, or 3 heads (HHH).",
+          "whyWrong": "\\frac{1}{8} counts only one arrangement such as HHT. Three different toss orders give two heads: HHT, HTH, and THH, so the probability is \\frac{3}{8}."
         },
         {
           "id": "b",
-          "text": "3/8",
-          "why": "Out of 2³ = 8 outcomes, 3 have two heads (HHT, HTH, THH), so P = 3/8.",
+          "text": "\\frac{3}{8}",
+          "why": "Out of 2³ = 8 outcomes, 3 have two heads (HHT, HTH, THH), so P = \\frac{3}{8}.",
           "whyWrong": null
         },
         {
           "id": "c",
-          "text": "1/2",
-          "why": "1/2 is 4/8 (for example, 'at least 2 heads'), not 'exactly 2 heads'.",
-          "whyWrong": "Counting HHH along with HHT, HTH, THH gives 4/8 = 1/2, which is 'at least 2 heads'. 'Exactly 2 heads' excludes HHH, leaving 3/8."
+          "text": "\\frac{1}{2}",
+          "why": "\\frac{1}{2} is \\frac{4}{8} (for example, 'at least 2 heads'), not 'exactly 2 heads'.",
+          "whyWrong": "Counting HHH along with HHT, HTH, THH gives \\frac{4}{8} = \\frac{1}{2}, which is 'at least 2 heads'. 'Exactly 2 heads' excludes HHH, leaving \\frac{3}{8}."
         },
         {
           "id": "d",
-          "text": "3/4",
-          "why": "3/4 equals 6/8, which counts too many outcomes.",
-          "whyWrong": "There are 8 equally likely outcomes when tossing 3 fair coins, and only 3 of them contain exactly two heads, giving 3/8."
+          "text": "\\frac{3}{4}",
+          "why": "\\frac{3}{4} equals \\frac{6}{8}, which counts too many outcomes.",
+          "whyWrong": "There are 8 equally likely outcomes when tossing 3 fair coins, and only 3 of them contain exactly two heads, giving \\frac{3}{8}."
         }
       ],
       "answerId": "b",
@@ -1809,24 +1809,24 @@
         "d"
       ],
       "hint": "List all 8 outcomes of 3 coin tosses (HHH, HHT, ...) and count how many have two Hs and one T.",
-      "explanation": "A fair coin tossed 3 times has 2³ = 8 equally likely outcomes: {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}. Exactly three of these (HHT, HTH, THH) have two heads, so P = 3/8.",
-      "trap": "1/8 catches students who write down HHT and forget that the tail can land in any of the 3 positions.",
-      "mnemonic": "3 coins = 8 outcomes; ways to place 1 Tail among 3 spots = 3 → 3/8.",
+      "explanation": "A fair coin tossed 3 times has 2³ = 8 equally likely outcomes: {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}. Exactly three of these (HHT, HTH, THH) have two heads, so P = \\frac{3}{8}.",
+      "trap": "\\frac{1}{8} catches students who write down HHT and forget that the tail can land in any of the 3 positions.",
+      "mnemonic": "3 coins = 8 outcomes; ways to place 1 Tail among 3 spots = 3 → \\frac{3}{8}.",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "There are 8 total ways 3 coins can land. Two heads and one tail can happen 3 ways (T last: HHT, T middle: HTH, T first: THH), so the chance is 3/8."
+          "answer": "There are 8 total ways 3 coins can land. Two heads and one tail can happen 3 ways (T last: HHT, T middle: HTH, T first: THH), so the chance is \\frac{3}{8}."
         },
         {
           "id": "whynot",
           "optionId": "a",
-          "answer": "1/8 is only one specific order like HHT. Because HHT, HTH, and THH all have two heads, there are 3 winning outcomes out of 8: 3/8."
+          "answer": "\\frac{1}{8} is only one specific order like HHT. Because HHT, HTH, and THH all have two heads, there are 3 winning outcomes out of 8: \\frac{3}{8}."
         },
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Binomial probability: ³C₂ × (1/2)² × (1/2)¹ = 3 × (1/8) = 3/8."
+          "answer": "Binomial probability: ³C₂ × \\left(\\frac{1}{2}\\right)² × \\left(\\frac{1}{2}\\right)¹ = 3 × \\left(\\frac{1}{8}\\right) = \\frac{3}{8}."
         },
         {
           "id": "simpler",
@@ -1837,7 +1837,7 @@
           "id": "similar",
           "label": "Give me a similar question",
           "answer": "A fair coin is tossed three times. What is the probability of getting at least two heads?",
-          "similarAnswer": "1/2 (4/8: HHH, HHT, HTH, THH)."
+          "similarAnswer": "\\frac{1}{2} (\\frac{4}{8}: HHH, HHT, HTH, THH)."
         }
       ],
       "animationId": "anim-math-api-0033",
@@ -1881,7 +1881,7 @@
           "id": "d",
           "text": "50",
           "why": "50 does not match ⁵C₂ × ⁶C₃.",
-          "whyWrong": "Compute each combination carefully: ⁵C₂ = (5×4)/2 = 10 and ⁶C₃ = (6×5×4)/6 = 20, so 10 × 20 = 200."
+          "whyWrong": "Compute each combination carefully: ⁵C₂ = \\frac{5×4}{2} = 10 and ⁶C₃ = \\frac{6×5×4}{6} = 20, so 10 × 20 = 200."
         }
       ],
       "answerId": "b",
@@ -1942,25 +1942,25 @@
       "options": [
         {
           "id": "a",
-          "text": "7!/2!5!",
-          "why": "7!/(2!5!) is the formula for choosing 2 (or 5) girls from 7, not 3.",
-          "whyWrong": "Selecting r items from n gives n!/(r!(n−r)!). With n = 7 and r = 3, the denominator is 3!4!, not 2!5!."
+          "text": "\\frac{7!}{2!5!}",
+          "why": "\\frac{7!}{2!5!} is the formula for choosing 2 (or 5) girls from 7, not 3.",
+          "whyWrong": "Selecting r items from n gives \\frac{n!}{r!(n−r)!}. With n = 7 and r = 3, the denominator is 3!4!, not 2!5!."
         },
         {
           "id": "b",
-          "text": "7!/3!",
-          "why": "7!/3! omits the (7 − 3)! = 4! factor for the 4 unselected girls.",
-          "whyWrong": "7!/3! divides by only 3!, failing to remove the order among the 4 unselected girls."
+          "text": "\\frac{7!}{3!}",
+          "why": "\\frac{7!}{3!} omits the (7 − 3)! = 4! factor for the 4 unselected girls.",
+          "whyWrong": "\\frac{7!}{3!} divides by only 3!, failing to remove the order among the 4 unselected girls."
         },
         {
           "id": "c",
-          "text": "7!/4!",
-          "why": "7!/4! = ⁷P₃ = 210, which counts ordered arrangements (permutations), not unordered teams.",
-          "whyWrong": "7!/4! treats the order of picking the 3 girls as different teams (permutations). For a team (combination), divide by 3! as well."
+          "text": "\\frac{7!}{4!}",
+          "why": "\\frac{7!}{4!} = ⁷P₃ = 210, which counts ordered arrangements (permutations), not unordered teams.",
+          "whyWrong": "\\frac{7!}{4!} treats the order of picking the 3 girls as different teams (permutations). For a team (combination), divide by 3! as well."
         },
         {
           "id": "d",
-          "text": "7!/3!4!",
+          "text": "\\frac{7!}{3!4!}",
           "why": "Choosing 3 from 7 gives ⁷C₃ = 7! ÷ (3!(7 − 3)!) = 7! ÷ (3!4!).",
           "whyWrong": null
         }
@@ -1971,19 +1971,19 @@
         "b"
       ],
       "hint": "Order does not matter in a team, so use the combination formula ⁿCᵣ = n! ÷ [r!(n − r)!].",
-      "explanation": "Selecting a team of 3 girls from 7 without regard to order is a combination: ⁷C₃ = 7! ÷ [3!(7 − 3)!] = 7! / (3!4!).",
-      "trap": "7!/4! is the permutation formula ⁷P₃, catching students who forget to divide by r! = 3! when order does not matter.",
+      "explanation": "Selecting a team of 3 girls from 7 without regard to order is a combination: ⁷C₃ = 7! ÷ [3!(7 − 3)!] = \\frac{7!}{3!4!}.",
+      "trap": "\\frac{7!}{4!} is the permutation formula ⁷P₃, catching students who forget to divide by r! = 3! when order does not matter.",
       "mnemonic": "Combination has BOTH factorials underneath: r! and (n − r)!.",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "In ⁿCᵣ, put n! on top and both r! and (n − r)! on the bottom. With n = 7 and r = 3, 7 − 3 = 4, so you get 7!/(3!4!)."
+          "answer": "In ⁿCᵣ, put n! on top and both r! and (n − r)! on the bottom. With n = 7 and r = 3, 7 − 3 = 4, so you get \\frac{7!}{3!4!}."
         },
         {
           "id": "whynot",
           "optionId": "c",
-          "answer": "7!/4! is ⁷P₃ (permutations), where picking Ada-Bola-Chi counts separately from Chi-Bola-Ada. Teams have no order, so divide by 3! too."
+          "answer": "\\frac{7!}{4!} is ⁷P₃ (permutations), where picking Ada-Bola-Chi counts separately from Chi-Bola-Ada. Teams have no order, so divide by 3! too."
         },
         {
           "id": "simpler",
@@ -1994,7 +1994,7 @@
           "id": "similar",
           "label": "Give me a similar question",
           "answer": "Write the factorial expression for choosing 4 books from 9.",
-          "similarAnswer": "9!/(4!5!)."
+          "similarAnswer": "\\frac{9!}{4!5!}."
         }
       ],
       "animationId": null,
@@ -2360,8 +2360,8 @@
         "a",
         "b"
       ],
-      "hint": "Use the compound amount formula A = P(1 + r/100)ⁿ with A = 121,000, r = 10%, and n = 2.",
-      "explanation": "Compound amount A = P(1 + r/100)ⁿ gives 121,000 = P(1.10)² = 1.21P. Dividing 121,000 by 1.21 gives P = ₦100,000.",
+      "hint": "Use the compound amount formula A = P(1 + \\frac{r}{100})ⁿ with A = 121,000, r = 10%, and n = 2.",
+      "explanation": "Compound amount A = P(1 + \\frac{r}{100})ⁿ gives 121,000 = P(1.10)² = 1.21P. Dividing 121,000 by 1.21 gives P = ₦100,000.",
       "trap": "₦110,000 is the amount after 1 year (121,000 ÷ 1.10), tempting students who only divide by 1.10 once instead of 1.21.",
       "mnemonic": "10% for 2 years = × 1.21; divide amount by 1.21 to go back to P.",
       "askPresets": [
@@ -2378,7 +2378,7 @@
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Compound interest formula: A = P(1 + r/100)ⁿ."
+          "answer": "Compound interest formula: A = P(1 + \\frac{r}{100})ⁿ."
         },
         {
           "id": "simpler",

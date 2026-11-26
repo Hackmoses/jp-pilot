@@ -351,7 +351,7 @@
           "id": "c",
           "text": "4200m",
           "why": "4200 m is close to 4500 m but miscalculates 900 ÷ 0.2.",
-          "whyWrong": "4200 m comes from a division slip. Since 0.2 = 1/5, dividing 900 by 0.2 is the same as 900 × 5 = 4500 m."
+          "whyWrong": "4200 m comes from a division slip. Since 0.2 = \\frac{1}{5}, dividing 900 by 0.2 is the same as 900 × 5 = 4500 m."
         },
         {
           "id": "d",
@@ -447,9 +447,9 @@
         "d"
       ],
       "hint": "Use the centripetal force formula F = mv² ÷ r.",
-      "explanation": "Centripetal force is F = mv² / r. Substituting m = 2 kg, v = 10 m s⁻¹, and r = 4 m gives F = (2 × 10²) ÷ 4 = 200 ÷ 4 = 50 N.",
+      "explanation": "Centripetal force is F = \\frac{mv²}{r}. Substituting m = 2 kg, v = 10 m s⁻¹, and r = 4 m gives F = (2 × 10²) ÷ 4 = 200 ÷ 4 = 50 N.",
       "trap": "25 N is a classic trap because v² ÷ r = 25 is the centripetal acceleration — students forget to multiply by mass m = 2 kg.",
-      "mnemonic": "F = mv²/r — don't forget to square v and multiply by m.",
+      "mnemonic": "F = \\frac{mv²}{r} — don't forget to square v and multiply by m.",
       "askPresets": [
         {
           "id": "simpler",
@@ -469,7 +469,7 @@
         {
           "id": "simpler",
           "label": "How do I remember this?",
-          "answer": "F = ma where circular acceleration a = v²/r."
+          "answer": "F = ma where circular acceleration a = \\frac{v²}{r}."
         },
         {
           "id": "similar",
@@ -528,7 +528,7 @@
         "d"
       ],
       "hint": "Convert km/s to m/s and km to m first, then use a = v² ÷ r.",
-      "explanation": "Convert to SI units: v = 7.0 km/s = 7000 m/s = 7 × 10³ m/s, and r = 8000 km = 8 × 10⁶ m. Centripetal acceleration a = v² / r = (49 × 10⁶) ÷ (8 × 10⁶) = 49 ÷ 8 = 6.125 m/s².",
+      "explanation": "Convert to SI units: v = 7.0 km/s = 7000 m/s = 7 × 10³ m/s, and r = 8000 km = 8 × 10⁶ m. Centripetal acceleration a = \\frac{v²}{r} = (49 × 10⁶) ÷ (8 × 10⁶) = 49 ÷ 8 = 6.125 m/s².",
       "trap": "8.750 m/s² traps students who forget to square the velocity (7 ÷ 8 × 10 instead of 49 ÷ 8).",
       "mnemonic": "Change km to m first, then v² over r.",
       "askPresets": [
@@ -852,9 +852,9 @@
         "d"
       ],
       "hint": "Use Efficiency = (MA ÷ VR) × 100% to find MA first, then Effort = Load ÷ MA.",
-      "explanation": "Efficiency = (MA / VR) × 100%, so 60% = MA / 2, giving MA = 0.60 × 2 = 1.2. Since MA = Load / Effort, Effort = 300 ÷ 1.2 = 250 N.",
+      "explanation": "Efficiency = \\left(\\frac{MA}{VR}\\right) × 100%, so 60% = \\frac{MA}{2}, giving MA = 0.60 × 2 = 1.2. Since MA = \\frac{Load}{Effort}, Effort = 300 ÷ 1.2 = 250 N.",
       "trap": "150 N is the ideal-machine answer (300 ÷ 2), catching students who forget to apply the 60% efficiency.",
-      "mnemonic": "Efficiency = MA / VR; real effort is always bigger than ideal effort.",
+      "mnemonic": "Efficiency = \\frac{MA}{VR}; real effort is always bigger than ideal effort.",
       "askPresets": [
         {
           "id": "simpler",
@@ -1086,7 +1086,7 @@
           "id": "d",
           "text": "82%",
           "why": "82% does not equal 18 ÷ 24 × 100%.",
-          "whyWrong": "82% does not follow from 18 ÷ 24. Simplify 18/24 by dividing top and bottom by 6 to get 3/4, which is 75%."
+          "whyWrong": "82% does not follow from 18 ÷ 24. Simplify \\frac{18}{24} by dividing top and bottom by 6 to get \\frac{3}{4}, which is 75%."
         }
       ],
       "answerId": "c",
@@ -1102,7 +1102,7 @@
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "The air can hold up to 24 mm Hg of water vapour, and it currently holds 18 mm Hg. Since 18/24 = 3/4, the air is 75% full."
+          "answer": "The air can hold up to 24 mm Hg of water vapour, and it currently holds 18 mm Hg. Since \\frac{18}{24} = \\frac{3}{4}, the air is 75% full."
         },
         {
           "id": "whynot",
@@ -1167,7 +1167,7 @@
           "id": "d",
           "text": "0.025 s",
           "why": "0.025 s divides 25 by 1000 instead of computing 1 ÷ 250.",
-          "whyWrong": "0.025 s is 1 ÷ 40, not 1 ÷ 250. Multiply top and bottom of 1/250 by 4 to get 4/1000 = 0.004 s."
+          "whyWrong": "0.025 s is 1 ÷ 40, not 1 ÷ 250. Multiply top and bottom of \\frac{1}{250} by 4 to get \\frac{4}{1000} = 0.004 s."
         }
       ],
       "answerId": "a",
@@ -1178,12 +1178,12 @@
       "hint": "Period T is the time for one complete wave: T = 1 ÷ f.",
       "explanation": "Period and frequency are reciprocals: T = 1 ÷ f = 1 ÷ 250 = 4 ÷ 1000 = 0.004 s.",
       "trap": "0.040 s catches students who do 1 ÷ 25 = 0.04 and forget the extra zero in 250.",
-      "mnemonic": "Make denominator 1000: 1/250 = 4/1000 = 0.004.",
+      "mnemonic": "Make denominator 1000: \\frac{1}{250} = \\frac{4}{1000} = 0.004.",
       "askPresets": [
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "250 waves happen in 1 second, so one wave takes 1 ÷ 250 of a second. Multiply top and bottom by 4 to get 4/1000 = 0.004 s."
+          "answer": "250 waves happen in 1 second, so one wave takes 1 ÷ 250 of a second. Multiply top and bottom by 4 to get \\frac{4}{1000} = 0.004 s."
         },
         {
           "id": "whynot",
@@ -1323,7 +1323,7 @@
           "id": "c",
           "text": "0.30m",
           "why": "0.30 m misplaces the division by 3 or multiplies by 2.",
-          "whyWrong": "0.30 m comes from dividing 0.15 by 0.5 instead of 3. Using v/u = 0.1/3 gives h_i = 1.5 × 0.1 ÷ 3 = 0.05 m."
+          "whyWrong": "0.30 m comes from dividing 0.15 by 0.5 instead of 3. Using \\frac{v}{u} = \\frac{0.1}{3} gives h_i = 1.5 × 0.1 ÷ 3 = 0.05 m."
         },
         {
           "id": "d",
@@ -1338,7 +1338,7 @@
         "d"
       ],
       "hint": "In a pinhole camera, image height ÷ object height = image distance ÷ object distance.",
-      "explanation": "By similar triangles in a pinhole camera, h_i / h_o = v / u. Here h_o = 1.5 m, u = 3 m, and v = 0.1 m, so h_i = (0.1 ÷ 3) × 1.5 = 0.15 ÷ 3 = 0.05 m.",
+      "explanation": "By similar triangles in a pinhole camera, \\frac{h_i}{h_o} = \\frac{v}{u}. Here h_o = 1.5 m, u = 3 m, and v = 0.1 m, so h_i = (0.1 ÷ 3) × 1.5 = 0.15 ÷ 3 = 0.05 m.",
       "trap": "0.15 m catches students who multiply 1.5 × 0.1 and forget to divide by the 3 m object distance.",
       "mnemonic": "Pinhole magnification: Image over Object = v over u.",
       "askPresets": [
@@ -1634,7 +1634,7 @@
         {
           "id": "a",
           "text": "2.50%",
-          "why": "2.50% does not equal any power of (1/2) × 100%.",
+          "why": "2.50% does not equal any power of \\left(\\frac{1}{2}\\right) × 100%.",
           "whyWrong": "Radioactive decay halves the remaining amount every half-life: 100% → 50% → 25% → 12.5% → 6.25%. 2.50% is not part of this halving chain."
         },
         {
@@ -1646,7 +1646,7 @@
         {
           "id": "c",
           "text": "6.25%",
-          "why": "20 years ÷ 5 years = 4 half-lives, so (1/2)⁴ × 100% = 6.25%.",
+          "why": "20 years ÷ 5 years = 4 half-lives, so \\left(\\frac{1}{2}\\right)⁴ × 100% = 6.25%.",
           "whyWrong": null
         },
         {
@@ -1662,7 +1662,7 @@
         "d"
       ],
       "hint": "Find how many 5-year half-lives fit into 20 years, then halve 100% that many times.",
-      "explanation": "Number of half-lives n = 20 ÷ 5 = 4. Remaining percentage = 100% × (1/2)⁴ = 100% ÷ 16 = 6.25% (100 → 50 → 25 → 12.5 → 6.25%).",
+      "explanation": "Number of half-lives n = 20 ÷ 5 = 4. Remaining percentage = 100% × \\left(\\frac{1}{2}\\right)⁴ = 100% ÷ 16 = 6.25% (100 → 50 → 25 → 12.5 → 6.25%).",
       "trap": "5.00% or 10.25% can tempt students who guess instead of halving step by step four times.",
       "mnemonic": "Count half-lives first, then halve: 100 → 50 → 25 → 12.5 → 6.25.",
       "askPresets": [
@@ -1679,7 +1679,7 @@
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Radioactive decay: N = N₀(1/2)ⁿ, where n = total time ÷ half-life."
+          "answer": "Radioactive decay: N = N₀\\left(\\frac{1}{2}\\right)ⁿ, where n = total time ÷ half-life."
         },
         {
           "id": "simpler",
@@ -2095,7 +2095,7 @@
         {
           "id": "a",
           "text": "Short focal length and the eyepiece a long focal length",
-          "why": "That describes neither an astronomical telescope nor standard magnification M = fₒ / fₑ.",
+          "why": "That describes neither an astronomical telescope nor standard magnification M = \\frac{fₒ}{fₑ}.",
           "whyWrong": "In normal adjustment, angular magnification of a telescope is fₒ ÷ fₑ. Having a short objective fₒ and long eyepiece fₑ would shrink distant objects instead of magnifying them."
         },
         {
@@ -2123,9 +2123,9 @@
         "d"
       ],
       "hint": "Telescope magnification in normal adjustment is M = f_objective ÷ f_eyepiece. How do you make M large?",
-      "explanation": "An astronomical refracting telescope forms a magnified image of distant objects when its objective lens has a long focal length (fₒ) and its eyepiece has a short focal length (fₑ), giving angular magnification M = fₒ / fₑ.",
+      "explanation": "An astronomical refracting telescope forms a magnified image of distant objects when its objective lens has a long focal length (fₒ) and its eyepiece has a short focal length (fₑ), giving angular magnification M = \\frac{fₒ}{fₑ}.",
       "trap": "Short focal length for both lenses describes a compound microscope, which students often mix up with an astronomical telescope.",
-      "mnemonic": "Telescope M = fₒ / fₑ → Long Objective on top, Short Eyepiece below.",
+      "mnemonic": "Telescope M = \\frac{fₒ}{fₑ} → Long Objective on top, Short Eyepiece below.",
       "askPresets": [
         {
           "id": "simpler",
@@ -2140,7 +2140,7 @@
         {
           "id": "simpler",
           "label": "Key concept to remember",
-          "answer": "In normal adjustment, telescope length L = fₒ + fₑ and magnification M = fₒ / fₑ."
+          "answer": "In normal adjustment, telescope length L = fₒ + fₑ and magnification M = \\frac{fₒ}{fₑ}."
         },
         {
           "id": "similar",

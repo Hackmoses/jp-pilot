@@ -22,7 +22,7 @@
         {
           "id": "b",
           "text": "0.50 mol dm^{−3}",
-          "why": "The molar mass of NaOH is 40 g mol^{−1}. The solution contains 2/40 = 0.050 mol in 0.100 dm^{3}, giving 0.50 mol dm^{−3}.",
+          "why": "The molar mass of NaOH is 40 g mol^{−1}. The solution contains \\frac{2}{40} = 0.050 mol in 0.100 dm^{3}, giving 0.50 mol dm^{−3}.",
           "whyWrong": null
         },
         {
@@ -44,7 +44,7 @@
         "d"
       ],
       "hint": "Convert grams to moles and cubic centimetres to cubic decimetres.",
-      "explanation": "The molar mass of NaOH is 40 g mol^{−1}. The solution contains 2/40 = 0.050 mol in 0.100 dm^{3}, giving 0.50 mol dm^{−3}.",
+      "explanation": "The molar mass of NaOH is 40 g mol^{−1}. The solution contains \\frac{2}{40} = 0.050 mol in 0.100 dm^{3}, giving 0.50 mol dm^{−3}.",
       "trap": "0.05 is the number of moles, before division by solution volume.",
       "mnemonic": "Molar concentration is moles divided by volume in dm³.",
       "askPresets": [
@@ -613,7 +613,7 @@
         {
           "id": "c",
           "text": "C_{3}H_{6}O_{3}",
-          "why": "The empirical unit CH_{2}O has mass 30. The relative molecular mass is 2 × 45 = 90. Multiply all the subscripts by 90/30 = 3 to get C_{3}H_{6}O_{3}.",
+          "why": "The empirical unit CH_{2}O has mass 30. The relative molecular mass is 2 × 45 = 90. Multiply all the subscripts by \\frac{90}{30} = 3 to get C_{3}H_{6}O_{3}.",
           "whyWrong": null
         },
         {
@@ -629,7 +629,7 @@
         "b"
       ],
       "hint": "Work out the empirical formula mass and double the vapour density.",
-      "explanation": "The empirical unit CH_{2}O has mass 30. The relative molecular mass is 2 × 45 = 90. Multiply all the subscripts by 90/30 = 3 to get C_{3}H_{6}O_{3}.",
+      "explanation": "The empirical unit CH_{2}O has mass 30. The relative molecular mass is 2 × 45 = 90. Multiply all the subscripts by \\frac{90}{30} = 3 to get C_{3}H_{6}O_{3}.",
       "trap": "C_{2}H_{4}O_{2} has the right ratio but a relative molecular mass of 60.",
       "mnemonic": "First find molecular mass, then scale the empirical subscripts together.",
       "askPresets": [
@@ -678,7 +678,7 @@
         {
           "id": "c",
           "text": "1.51 × 10^{23}",
-          "why": "6.0 g of magnesium is 6.0/24 = 0.250 mol. Multiplying by 6.02 × 10^{23} gives 1.505 × 10^{23}, or about 1.51 × 10^{23} atoms.",
+          "why": "6.0 g of magnesium is \\frac{6.0}{24} = 0.250 mol. Multiplying by 6.02 × 10^{23} gives 1.505 × 10^{23}, or about 1.51 × 10^{23} atoms.",
           "whyWrong": null
         },
         {
@@ -694,7 +694,7 @@
         "b"
       ],
       "hint": "Find what fraction of a mole 6.0 g represents.",
-      "explanation": "6.0 g of magnesium is 6.0/24 = 0.250 mol. Multiplying by 6.02 × 10^{23} gives 1.505 × 10^{23}, or about 1.51 × 10^{23} atoms.",
+      "explanation": "6.0 g of magnesium is \\frac{6.0}{24} = 0.250 mol. Multiplying by 6.02 × 10^{23} gives 1.505 × 10^{23}, or about 1.51 × 10^{23} atoms.",
       "trap": "This counts about 0.50 mol, twice the amount present.",
       "mnemonic": "Mass → moles → number of particles.",
       "askPresets": [
@@ -1127,7 +1127,7 @@
         {
           "id": "b",
           "text": "1.87 × 10^{-3} mole",
-          "why": "The charge supplies 360/96500 mol of electrons. Divide by two for Cu^{2+} + 2e^{−} → Cu to obtain 1.87 × 10^{−3} mol of copper.",
+          "why": "The charge supplies \\frac{360}{96500} mol of electrons. Divide by two for Cu^{2+} + 2e^{−} → Cu to obtain 1.87 × 10^{−3} mol of copper.",
           "whyWrong": null
         },
         {
@@ -1149,7 +1149,7 @@
         "c"
       ],
       "hint": "One copper(II) ion needs two electrons to become copper metal.",
-      "explanation": "The charge supplies 360/96500 mol of electrons. Divide by two for Cu^{2+} + 2e^{−} → Cu to obtain 1.87 × 10^{−3} mol of copper.",
+      "explanation": "The charge supplies \\frac{360}{96500} mol of electrons. Divide by two for Cu^{2+} + 2e^{−} → Cu to obtain 1.87 × 10^{−3} mol of copper.",
       "trap": "This is the number of moles of electrons, before applying the two-to-one ratio.",
       "mnemonic": "For Cu²⁺, two faradays deposit one mole of copper.",
       "askPresets": [
@@ -1334,7 +1334,7 @@
         {
           "id": "d",
           "text": "50%",
-          "why": "One mole of SO_{2} contains 32 g of sulfur and 32 g of oxygen. Sulfur therefore contributes 32/64 × 100 = 50%.",
+          "why": "One mole of SO_{2} contains 32 g of sulfur and 32 g of oxygen. Sulfur therefore contributes \\frac{32}{64} × 100 = 50%.",
           "whyWrong": null
         }
       ],
@@ -1344,7 +1344,7 @@
         "c"
       ],
       "hint": "Start with the formula SO₂ and compare the sulfur mass with the total.",
-      "explanation": "One mole of SO_{2} contains 32 g of sulfur and 32 g of oxygen. Sulfur therefore contributes 32/64 × 100 = 50%.",
+      "explanation": "One mole of SO_{2} contains 32 g of sulfur and 32 g of oxygen. Sulfur therefore contributes \\frac{32}{64} × 100 = 50%.",
       "trap": "25% is half the correct mass fraction.",
       "mnemonic": "Percentage by mass is part mass divided by formula mass, times 100.",
       "askPresets": [
@@ -1393,7 +1393,7 @@
         {
           "id": "c",
           "text": "467.11 mmHg",
-          "why": "The combined gas law gives P_{2} = 700 × (200/350) × (348/298) ≈ 467.11 mmHg.",
+          "why": "The combined gas law gives P_{2} = 700 × \\left(\\frac{200}{350}\\right) × \\left(\\frac{348}{298}\\right) ≈ 467.11 mmHg.",
           "whyWrong": null
         },
         {
@@ -1409,13 +1409,13 @@
         "b"
       ],
       "hint": "Use Kelvin temperatures and account for the larger final volume.",
-      "explanation": "The combined gas law gives P_{2} = 700 × (200/350) × (348/298) ≈ 467.11 mmHg.",
+      "explanation": "The combined gas law gives P_{2} = 700 × \\left(\\frac{200}{350}\\right) × \\left(\\frac{348}{298}\\right) ≈ 467.11 mmHg.",
       "trap": "400.00 mmHg accounts for the volume change alone and ignores the heating.",
-      "mnemonic": "For a fixed gas sample, PV/T stays constant.",
+      "mnemonic": "For a fixed gas sample, \\frac{PV}{T} stays constant.",
       "askPresets": [
         {
           "id": "simpler",
-          "answer": "For a fixed gas sample, PV/T stays constant."
+          "answer": "For a fixed gas sample, \\frac{PV}{T} stays constant."
         },
         {
           "id": "whynot",
@@ -1978,7 +1978,7 @@
         {
           "id": "c",
           "text": "21.5",
-          "why": "The weighted mean is (20 × 1 + 22 × 3)/(1 + 3) = 86/4 = 21.5.",
+          "why": "The weighted mean is \\frac{20 × 1 + 22 × 3}{1 + 3} = \\frac{86}{4} = 21.5.",
           "whyWrong": null
         },
         {
@@ -1994,7 +1994,7 @@
         "d"
       ],
       "hint": "Give the isotope of mass 22 three times the weight of the isotope of mass 20.",
-      "explanation": "The weighted mean is (20 × 1 + 22 × 3)/(1 + 3) = 86/4 = 21.5.",
+      "explanation": "The weighted mean is \\frac{20 × 1 + 22 × 3}{1 + 3} = \\frac{86}{4} = 21.5.",
       "trap": "21.0 is the unweighted mean of the two masses.",
       "mnemonic": "Use the abundance ratio as the weights and divide by their sum.",
       "askPresets": [
@@ -2043,7 +2043,7 @@
         {
           "id": "c",
           "text": "14 s",
-          "why": "Oxygen diffuses at 200/50 = 4 cm^{3} s^{−1}. Methane is lighter and diffuses √(32/16) = √2 times as fast. The time is 80/(4√2) ≈ 14 s.",
+          "why": "Oxygen diffuses at \\frac{200}{50} = 4 cm^{3} s^{−1}. Methane is lighter and diffuses \\sqrt{\\frac{32}{16}} = √2 times as fast. The time is \\frac{80}{4\\sqrt{2}} ≈ 14 s.",
           "whyWrong": null
         },
         {
@@ -2059,7 +2059,7 @@
         "d"
       ],
       "hint": "Use Graham’s law for rates, then find the time for 80 cm³.",
-      "explanation": "Oxygen diffuses at 200/50 = 4 cm^{3} s^{−1}. Methane is lighter and diffuses √(32/16) = √2 times as fast. The time is 80/(4√2) ≈ 14 s.",
+      "explanation": "Oxygen diffuses at \\frac{200}{50} = 4 cm^{3} s^{−1}. Methane is lighter and diffuses \\sqrt{\\frac{32}{16}} = √2 times as fast. The time is \\frac{80}{4\\sqrt{2}} ≈ 14 s.",
       "trap": "20 s uses the oxygen rate without adjusting for molecular mass.",
       "mnemonic": "Graham gives a rate ratio. Time equals volume divided by rate.",
       "askPresets": [
@@ -2764,7 +2764,7 @@
         {
           "id": "d",
           "text": "0.3 g",
-          "why": "3.6/108 mol of silver uses the same number of moles of electrons because Ag^{+} needs one each. Each Al^{3+} needs three, so aluminium mass is (3.6/108) × 27/3 = 0.30 g.",
+          "why": "\\frac{3.6}{108} mol of silver uses the same number of moles of electrons because Ag^{+} needs one each. Each Al^{3+} needs three, so aluminium mass is \\left(\\frac{3.6}{108}\\right) × \\frac{27}{3} = 0.30 g.",
           "whyWrong": null
         }
       ],
@@ -2774,7 +2774,7 @@
         "b"
       ],
       "hint": "The same charge supplies the same moles of electrons in both cases.",
-      "explanation": "3.6/108 mol of silver uses the same number of moles of electrons because Ag^{+} needs one each. Each Al^{3+} needs three, so aluminium mass is (3.6/108) × 27/3 = 0.30 g.",
+      "explanation": "\\frac{3.6}{108} mol of silver uses the same number of moles of electrons because Ag^{+} needs one each. Each Al^{3+} needs three, so aluminium mass is \\left(\\frac{3.6}{108}\\right) × \\frac{27}{3} = 0.30 g.",
       "trap": "0.9 g accounts for molar mass but ignores the three electrons needed per aluminium ion.",
       "mnemonic": "Equal charge deposits equal chemical equivalents.",
       "askPresets": [

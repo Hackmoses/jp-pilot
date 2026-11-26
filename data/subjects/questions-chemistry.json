@@ -44,7 +44,7 @@
         "b"
       ],
       "hint": "Use Graham's law of diffusion: the rate is inversely proportional to the square root of relative molecular mass.",
-      "explanation": "By Graham's law, r_X / r_Y = √(M_Y / M_X). Since gas X diffuses twice as fast as Y, 2 = √(M_Y / 28). Squaring both sides gives 4 = M_Y / 28, so M_Y = 4 × 28 = 112.",
+      "explanation": "By Graham's law, \\frac{r_X}{r_Y} = \\sqrt{\\frac{M_Y}{M_X}}. Since gas X diffuses twice as fast as Y, 2 = \\sqrt{\\frac{M_Y}{28}}. Squaring both sides gives 4 = \\frac{M_Y}{28}, so M_Y = 4 × 28 = 112.",
       "trap": "56 is the most tempting mistake because students multiply 28 by 2 and forget to square the ratio from the square root.",
       "mnemonic": "Rate squared flips the mass ratio: double speed means four times lighter.",
       "askPresets": [
@@ -61,7 +61,7 @@
         {
           "id": "simpler",
           "label": "What rule or formula is this?",
-          "answer": "Graham's law of diffusion: r₁ / r₂ = √(M₂ / M₁) at the same temperature and pressure."
+          "answer": "Graham's law of diffusion: \\frac{r₁}{r₂} = \\sqrt{\\frac{M₂}{M₁}} at the same temperature and pressure."
         },
         {
           "id": "simpler",
@@ -201,7 +201,7 @@
           "id": "d",
           "text": "1.4atm",
           "why": "1.4 atm overestimates oxygen's mole fraction.",
-          "whyWrong": "1.4 atm would mean oxygen makes up nearly 78% of the moles in the vessel. In fact, 2.5 mol out of 4.5 mol is 5/9, and 5/9 × 1.8 = 1.0 atm."
+          "whyWrong": "1.4 atm would mean oxygen makes up nearly 78% of the moles in the vessel. In fact, 2.5 mol out of 4.5 mol is \\frac{5}{9}, and \\frac{5}{9} × 1.8 = 1.0 atm."
         }
       ],
       "answerId": "b",
@@ -300,7 +300,7 @@
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "First change 20 °C to 293 K. Then rearrange PV = nRT to n = (8.2 × 2.93) ÷ (0.082 × 293). Notice 8.2 is 100 times 0.082 and 2.93 is 1/100 of 293, so they multiply to 1.00."
+          "answer": "First change 20 °C to 293 K. Then rearrange PV = nRT to n = (8.2 × 2.93) ÷ (0.082 × 293). Notice 8.2 is 100 times 0.082 and 2.93 is \\frac{1}{100} of 293, so they multiply to 1.00."
         },
         {
           "id": "whynot",
@@ -466,7 +466,7 @@
         {
           "id": "simpler",
           "label": "Explain more simply",
-          "answer": "98 g of H₂SO₄ reacts with 80 g of CuO. Here you have 4.9 g of acid, which is 1/20 of 98 g, so you need 1/20 of 80 g, which is 4.0 g."
+          "answer": "98 g of H₂SO₄ reacts with 80 g of CuO. Here you have 4.9 g of acid, which is \\frac{1}{20} of 98 g, so you need \\frac{1}{20} of 80 g, which is 4.0 g."
         },
         {
           "id": "whynot",
@@ -526,8 +526,8 @@
         {
           "id": "c",
           "text": "600 cm³",
-          "why": "600 cm³ multiplies by 6/4 instead of 6/2.",
-          "whyWrong": "600 cm³ uses the wrong mole ratio. From 2C₂H₆ → 6H₂O, every 2 volumes of ethane yield 6 volumes of steam, so multiply 400 by 6/2 = 3 to get 1200 cm³."
+          "why": "600 cm³ multiplies by \\frac{6}{4} instead of \\frac{6}{2}.",
+          "whyWrong": "600 cm³ uses the wrong mole ratio. From 2C₂H₆ → 6H₂O, every 2 volumes of ethane yield 6 volumes of steam, so multiply 400 by \\frac{6}{2} = 3 to get 1200 cm³."
         },
         {
           "id": "d",
@@ -1012,7 +1012,7 @@
         {
           "id": "a",
           "text": "1.8g",
-          "why": "Q = 10 × 1930 = 19,300 C = 0.2 F; Al³⁺ needs 3 F/mol, so 0.2/3 × 27 = 1.8 g.",
+          "why": "Q = 10 × 1930 = 19,300 C = 0.2 F; Al³⁺ needs 3 F/mol, so \\frac{0.2}{3} × 27 = 1.8 g.",
           "whyWrong": null
         },
         {

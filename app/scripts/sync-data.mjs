@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { scanAnimationForSlashFractions, scanQuestionForSlashFractions } from './fraction-check.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.resolve(__dirname, '../..')
@@ -38,11 +39,16 @@ function collectFiles() {
 const { questionFiles, animationFiles } = collectFiles()
 const questionsBySubject = new Map()
 const animationsById = new Map()
+const fractionErrors = []
 
 for (const filePath of questionFiles) {
   const parsed = readJson(filePath)
   const list = Array.isArray(parsed.questions) ? parsed.questions : Array.isArray(parsed) ? parsed : []
+  const rel = path.relative(rootDir, filePath)
   for (const question of list) {
+    for (const issue of scanQuestionForSlashFractions(question)) {
+      fractionErrors.push(`${rel} [${issue.id}] ${issue.field}: ${issue.hits.join(', ')}`)
+    }
     const subject = String(question.subject || parsed.subject || '').trim().toLowerCase()
     if (!subject) continue
     if (!questionsBySubject.has(subject)) questionsBySubject.set(subject, new Map())
@@ -53,9 +59,19 @@ for (const filePath of questionFiles) {
 for (const filePath of animationFiles) {
   const parsed = readJson(filePath)
   const list = Array.isArray(parsed.animations) ? parsed.animations : Array.isArray(parsed) ? parsed : []
+  const rel = path.relative(rootDir, filePath)
   for (const anim of list) {
+    for (const issue of scanAnimationForSlashFractions(anim)) {
+      fractionErrors.push(`${rel} [${issue.id}] ${issue.field}: ${issue.hits.join(', ')}`)
+    }
     animationsById.set(anim.id, anim)
   }
+}
+
+if (fractionErrors.length > 0) {
+  console.error('Slash fractions found (use \\frac{numerator}{denominator} instead of /):')
+  for (const err of fractionErrors) console.error('  ' + err)
+  process.exit(1)
 }
 
 mkdirSync(outDir, { recursive: true })
