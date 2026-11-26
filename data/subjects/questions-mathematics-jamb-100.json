@@ -206,29 +206,29 @@
       "topic": "Matrices and Determinants",
       "type": "calculation",
       "difficulty": 2,
-      "stem": "Given P = \\mat{2,-3;1,1}, find P^{−1}.",
+      "stem": "Given P = \\matrix{2,-3;1,1}, find P^{−1}.",
       "options": [
         {
           "id": "a",
-          "text": "\\mat{\\frac{1}{5},\\frac{3}{5};\\frac{1}{5},\\frac{2}{5}}",
+          "text": "\\matrix{\\frac{1}{5},\\frac{3}{5};\\frac{1}{5},\\frac{2}{5}}",
           "why": "The lower-left entry must change from 1 to −1 before division.",
           "whyWrong": "The lower-left entry must change from 1 to −1 before division."
         },
         {
           "id": "b",
-          "text": "\\mat{\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
+          "text": "\\matrix{\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
           "why": "The determinant is 2 × 1 − (−3) × 1 = 5. Swap the diagonal entries, negate the off-diagonal entries, then divide each entry by 5.",
           "whyWrong": null
         },
         {
           "id": "c",
-          "text": "\\mat{-\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
+          "text": "\\matrix{-\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
           "why": "The top-left entry comes from the original bottom-right entry, which is positive.",
           "whyWrong": "The top-left entry comes from the original bottom-right entry, which is positive."
         },
         {
           "id": "d",
-          "text": "\\mat{-\\frac{1}{5},-\\frac{3}{5};-\\frac{1}{5},-\\frac{2}{5}}",
+          "text": "\\matrix{-\\frac{1}{5},-\\frac{3}{5};-\\frac{1}{5},-\\frac{2}{5}}",
           "why": "The top-right −3 becomes +3, and the diagonal entries stay positive.",
           "whyWrong": "The top-right −3 becomes +3, and the diagonal entries stay positive."
         }
@@ -4659,29 +4659,29 @@
       "topic": "Matrices and Determinants",
       "type": "calculation",
       "difficulty": 2,
-      "stem": "Let P = \\mat{2,1;-3,0} and let I be the 2 × 2 identity matrix. Evaluate P^{2} − 2P + 4I.",
+      "stem": "Let P = \\matrix{2,1;-3,0} and let I be the 2 × 2 identity matrix. Evaluate P^{2} − 2P + 4I.",
       "options": [
         {
           "id": "a",
-          "text": "\\mat{9,4;-12,1}",
+          "text": "\\matrix{9,4;-12,1}",
           "why": "This does not subtract 2P correctly and leaves off-diagonal entries.",
           "whyWrong": "This does not subtract 2P correctly and leaves off-diagonal entries."
         },
         {
           "id": "b",
-          "text": "\\mat{-3,0;0,-3}",
+          "text": "\\matrix{-3,0;0,-3}",
           "why": "This stops before adding 4I.",
           "whyWrong": "This stops before adding 4I."
         },
         {
           "id": "c",
-          "text": "\\mat{1,0;0,1}",
-          "why": "The square is \\mat{1,2;-6,-3}. Subtracting 2P gives \\mat{-3,0;0,-3}. Adding 4I changes each diagonal entry to 1.",
+          "text": "\\matrix{1,0;0,1}",
+          "why": "The square is \\matrix{1,2;-6,-3}. Subtracting 2P gives \\matrix{-3,0;0,-3}. Adding 4I changes each diagonal entry to 1.",
           "whyWrong": null
         },
         {
           "id": "d",
-          "text": "\\mat{1,4;4,1}",
+          "text": "\\matrix{1,4;4,1}",
           "why": "The off-diagonal entries cancel when 2P is subtracted.",
           "whyWrong": "The off-diagonal entries cancel when 2P is subtracted."
         }
@@ -4692,7 +4692,7 @@
         "d"
       ],
       "hint": "Compute P^{2} using matrix multiplication.",
-      "explanation": "The square is \\mat{1,2;-6,-3}. Subtracting 2P gives \\mat{-3,0;0,-3}. Adding 4I changes each diagonal entry to 1.",
+      "explanation": "The square is \\matrix{1,2;-6,-3}. Subtracting 2P gives \\matrix{-3,0;0,-3}. Adding 4I changes each diagonal entry to 1.",
       "trap": "This does not subtract 2P correctly and leaves off-diagonal entries.",
       "mnemonic": "Adding a multiple of I changes only diagonal entries.",
       "askPresets": [
@@ -4984,7 +4984,7 @@
       "topic": "Matrices and Determinants",
       "type": "calculation",
       "difficulty": 2,
-      "stem": "Find the determinant of N = \\mat{3,5,-4;6,-3,-5;-2,2,1}.",
+      "stem": "Find the determinant of N = \\matrix{3,5,-4;6,-3,-5;-2,2,1}.",
       "options": [
         {
           "id": "a",

@@ -13,6 +13,8 @@ function readJson(filePath) {
 }
 
 const questionSchema = readJson(path.join(rootDir, 'schemas/questions.schema.json'))
+// Maths commands lib/mathText.tsx can render. Anything else shows as raw text.
+const MATH_COMMANDS = new Set(['frac', 'sqrt', 'left', 'right', 'matrix', 'det'])
 const animationSchema = readJson(path.join(rootDir, 'schemas/animations.schema.json'))
 const validateQuestions = ajv.compile(questionSchema)
 const validateAnimations = ajv.compile(animationSchema)
@@ -56,6 +58,9 @@ for (const filePath of animationFiles) {
     for (const animation of data.animations) {
       for (const step of [...(animation.steps ?? []), ...(animation.teach ?? [])]) {
         if (typeof step.display === 'string' && step.display.includes('\\\\')) errors.push(`${animation.id}: step ${step.n} display has a doubled backslash`)
+        for (const [, name] of (step.display ?? '').matchAll(/\\([A-Za-z]+)/g)) {
+          if (!MATH_COMMANDS.has(name)) errors.push(`${animation.id}: step ${step.n} uses \\${name}, which the app cannot display`)
+        }
       }
     }
   }
@@ -74,6 +79,9 @@ for (const filePath of questionFiles) {
 }
 
 for (const question of allQuestions) {
+    for (const [, name] of JSON.stringify(question).matchAll(/\\\\([A-Za-z]+)/g)) {
+      if (!MATH_COMMANDS.has(name)) errors.push(`${question.id}: uses \\${name}, which the app cannot display`)
+    }
   const optionIds = new Set(question.options.map((option) => option.id))
   if (!optionIds.has(question.answerId)) {
     errors.push(`${question.id}: answerId ${question.answerId} is missing from options`)
