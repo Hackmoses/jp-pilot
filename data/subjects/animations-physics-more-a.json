@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 10,
+  "count": 20,
   "animations": [
     {
       "id": "anim-phys-jamb-2012-022",
@@ -631,6 +631,666 @@
           "tag": "find the distance",
           "title": "Find the distance",
           "narration": "One fifth of four hundred millimetres is eighty millimetres above the ice mark. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-045",
+      "questionId": "phys-jamb-2013-045",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{m_{2}}{m_{1}} = \\frac{I_{2}t_{2}}{I_{1}t_{1}}",
+          "tag": "write the mass ratio",
+          "title": "Write the mass ratio",
+          "narration": "Deposited mass is proportional to charge passed. For the same electrolyte, the mass deposited per coulomb cancels."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{4 × 4.8}{2.5 × 3} = \\frac{19.2}{7.5} = 2.56",
+          "tag": "find the charge factor",
+          "title": "Find the charge factor",
+          "narration": "The second run passes two point five six times as much charge, so it deposits that many times as much mass."
+        },
+        {
+          "n": 3,
+          "display": "m_{2} = 1.8 × 2.56 = 4.608 g ≈ 4.6 g",
+          "tag": "find the deposited mass",
+          "title": "Find the deposited mass",
+          "narration": "Multiply the original deposit by the charge factor and round to the offered precision. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I_{1} = 2.5 A, t_{1} = 3 h, m_{1} = 1.8 g",
+          "tag": "compare the two runs",
+          "title": "Compare the two runs",
+          "narration": "The first run gives us a known deposit. The second run uses the same electrolyte, so we can compare charges."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{m_{2}}{m_{1}} = \\frac{I_{2}t_{2}}{I_{1}t_{1}}",
+          "tag": "write the mass ratio",
+          "title": "Write the mass ratio",
+          "narration": "Deposited mass is proportional to charge passed. For the same electrolyte, the mass deposited per coulomb cancels."
+        },
+        {
+          "n": 3,
+          "display": "I_{2} = 4 A, t_{2} = 4.8 h",
+          "tag": "read the second current and time",
+          "title": "Read the second current and time",
+          "narration": "Both times are in hours. We can keep hours here because the same seconds-per-hour factor cancels in the ratio."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{4 × 4.8}{2.5 × 3} = \\frac{19.2}{7.5} = 2.56",
+          "tag": "find the charge factor",
+          "title": "Find the charge factor",
+          "narration": "The second run passes two point five six times as much charge, so it deposits that many times as much mass."
+        },
+        {
+          "n": 5,
+          "display": "m_{2} = 1.8 × 2.56 = 4.608 g ≈ 4.6 g",
+          "tag": "find the deposited mass",
+          "title": "Find the deposited mass",
+          "narration": "Multiply the original deposit by the charge factor and round to the offered precision. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2015-039",
+      "questionId": "phys-jamb-2015-039",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E = Pt",
+          "tag": "link energy and power",
+          "title": "Link energy and power",
+          "narration": "Power measures how much energy is transferred each second. Multiplying by time gives the total energy."
+        },
+        {
+          "n": 2,
+          "display": "t = 60 × 60 = 3600 s",
+          "tag": "convert one hour",
+          "title": "Convert one hour",
+          "narration": "Use seconds because one watt means one joule per second."
+        },
+        {
+          "n": 3,
+          "display": "E = 60 × 3600 = 2.16 × 10^{5} J",
+          "tag": "find the energy transferred",
+          "title": "Find the energy transferred",
+          "narration": "At sixty joules each second for one hour, the lamp transfers two hundred and sixteen thousand joules. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 60 W, t = 1 h",
+          "tag": "read the power and time",
+          "title": "Read the power and time",
+          "narration": "The lamp runs at its rated power. Its rated voltage is unnecessary because the question already gives the rate of energy transfer."
+        },
+        {
+          "n": 2,
+          "display": "E = Pt",
+          "tag": "link energy and power",
+          "title": "Link energy and power",
+          "narration": "Power measures how much energy is transferred each second. Multiplying by time gives the total energy."
+        },
+        {
+          "n": 3,
+          "display": "t = 60 × 60 = 3600 s",
+          "tag": "convert one hour",
+          "title": "Convert one hour",
+          "narration": "Use seconds because one watt means one joule per second."
+        },
+        {
+          "n": 4,
+          "display": "E = 60 × 3600 = 2.16 × 10^{5} J",
+          "tag": "find the energy transferred",
+          "title": "Find the energy transferred",
+          "narration": "At sixty joules each second for one hour, the lamp transfers two hundred and sixteen thousand joules. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2017-028",
+      "questionId": "phys-jamb-2017-028",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "λ = 2d = 34 cm = 0.34 m",
+          "tag": "find the full wavelength",
+          "title": "Find the full wavelength",
+          "narration": "A compression and the nearest rarefaction are half a cycle apart. Double the distance and convert to metres to match the speed units."
+        },
+        {
+          "n": 2,
+          "display": "v = fλ ⇒ f = \\frac{v}{λ}",
+          "tag": "relate speed and frequency",
+          "title": "Relate speed and frequency",
+          "narration": "In one cycle the wave advances one wavelength, so the speed is the wavelength multiplied by the number of cycles each second."
+        },
+        {
+          "n": 3,
+          "display": "f = 1000 Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "A wave moving three hundred and forty metres per second with this wavelength completes one thousand cycles per second. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "d = 17 cm, v = 340 m/s",
+          "tag": "read the air wave data",
+          "title": "Read the air wave data",
+          "narration": "The measured distance is between a compression and the next rarefaction. We need the distance for a full wave cycle."
+        },
+        {
+          "n": 2,
+          "display": "λ = 2d = 34 cm = 0.34 m",
+          "tag": "find the full wavelength",
+          "title": "Find the full wavelength",
+          "narration": "A compression and the nearest rarefaction are half a cycle apart. Double the distance and convert to metres to match the speed units."
+        },
+        {
+          "n": 3,
+          "display": "v = fλ ⇒ f = \\frac{v}{λ}",
+          "tag": "relate speed and frequency",
+          "title": "Relate speed and frequency",
+          "narration": "In one cycle the wave advances one wavelength, so the speed is the wavelength multiplied by the number of cycles each second."
+        },
+        {
+          "n": 4,
+          "display": "f = \\frac{340}{0.34}",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Divide the metres travelled each second by the metres in one wave."
+        },
+        {
+          "n": 5,
+          "display": "f = 1000 Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "A wave moving three hundred and forty metres per second with this wavelength completes one thousand cycles per second. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2017-033",
+      "questionId": "phys-jamb-2017-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = 5 × 50 + 4 × 100 = 650 W = 0.65 kW",
+          "tag": "combine and convert power",
+          "title": "Combine and convert power",
+          "narration": "Add the powers for all nine lamps. Convert watts to kilowatts because the price is per kilowatt-hour."
+        },
+        {
+          "n": 2,
+          "display": "E = Pt = 0.65 × 10 = 6.5 kWh",
+          "tag": "find the energy bought",
+          "title": "Find the energy bought",
+          "narration": "Keep the time in hours so the energy is measured in the same unit used by the tariff."
+        },
+        {
+          "n": 3,
+          "display": "Cost = 6.5 × 2 = 13 kobo",
+          "tag": "apply the rate",
+          "title": "Apply the rate",
+          "narration": "Each kilowatt-hour costs two kobo, so multiply the energy used by the price per unit."
+        },
+        {
+          "n": 4,
+          "display": "13 kobo = ₦0.13",
+          "tag": "convert to naira",
+          "title": "Convert to naira",
+          "narration": "One hundred kobo make one naira. Thirteen kobo is zero point one three naira. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "5 lamps at 50 W, 4 lamps at 100 W",
+          "tag": "read the lamp ratings",
+          "title": "Read the lamp ratings",
+          "narration": "The question gives the number of lamps in each group and the power of each lamp. All of them run for ten hours."
+        },
+        {
+          "n": 2,
+          "display": "P = 5 × 50 + 4 × 100 = 650 W = 0.65 kW",
+          "tag": "combine and convert power",
+          "title": "Combine and convert power",
+          "narration": "Add the powers for all nine lamps. Convert watts to kilowatts because the price is per kilowatt-hour."
+        },
+        {
+          "n": 3,
+          "display": "E = Pt = 0.65 × 10 = 6.5 kWh",
+          "tag": "find the energy bought",
+          "title": "Find the energy bought",
+          "narration": "Keep the time in hours so the energy is measured in the same unit used by the tariff."
+        },
+        {
+          "n": 4,
+          "display": "Cost = 6.5 × 2 = 13 kobo",
+          "tag": "apply the rate",
+          "title": "Apply the rate",
+          "narration": "Each kilowatt-hour costs two kobo, so multiply the energy used by the price per unit."
+        },
+        {
+          "n": 5,
+          "display": "13 kobo = ₦0.13",
+          "tag": "convert to naira",
+          "title": "Convert to naira",
+          "narration": "One hundred kobo make one naira. Thirteen kobo is zero point one three naira. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2018-001",
+      "questionId": "phys-jamb-2018-001",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "d = \\sqrt{1^{2} + 1^{2}} = \\sqrt{2} km",
+          "tag": "find the magnitude",
+          "title": "Find the magnitude",
+          "narration": "Use Pythagoras because the two legs meet at a right angle. The displacement is the square root of two kilometres."
+        },
+        {
+          "n": 2,
+          "display": "tan θ = \\frac{1}{1} = 1",
+          "tag": "find the bearing angle",
+          "title": "Find the bearing angle",
+          "narration": "Measure the angle from north towards east. The eastward distance is opposite this angle and the northward distance is adjacent."
+        },
+        {
+          "n": 3,
+          "display": "Displacement = \\sqrt{2} km N 45° E",
+          "tag": "combine distance and direction",
+          "title": "Combine distance and direction",
+          "narration": "A displacement needs both a size and a direction. Here it is root two kilometres, north forty-five degrees east. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "1 km east, then 1 km north",
+          "tag": "read the walk",
+          "title": "Read the walk",
+          "narration": "East and north are perpendicular. The displacement joins the starting point directly to the finishing point, forming the hypotenuse."
+        },
+        {
+          "n": 2,
+          "display": "d = \\sqrt{1^{2} + 1^{2}} = \\sqrt{2} km",
+          "tag": "find the magnitude",
+          "title": "Find the magnitude",
+          "narration": "Use Pythagoras because the two legs meet at a right angle. The displacement is the square root of two kilometres."
+        },
+        {
+          "n": 3,
+          "display": "tan θ = \\frac{1}{1} = 1",
+          "tag": "find the bearing angle",
+          "title": "Find the bearing angle",
+          "narration": "Measure the angle from north towards east. The eastward distance is opposite this angle and the northward distance is adjacent."
+        },
+        {
+          "n": 4,
+          "display": "θ = 45° east of north",
+          "tag": "use equal components",
+          "title": "Use equal components",
+          "narration": "The two component distances are equal, so the direction lies halfway between north and east."
+        },
+        {
+          "n": 5,
+          "display": "Displacement = \\sqrt{2} km N 45° E",
+          "tag": "combine distance and direction",
+          "title": "Combine distance and direction",
+          "narration": "A displacement needs both a size and a direction. Here it is root two kilometres, north forty-five degrees east. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2018-026",
+      "questionId": "phys-jamb-2018-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{N}{N_{0}} = (\\frac{1}{2})^{n}",
+          "tag": "model the repeated halves",
+          "title": "Model the repeated halves",
+          "narration": "The undecayed fraction is halved in each half-life, so the exponent counts the number of half-lives."
+        },
+        {
+          "n": 2,
+          "display": "64 = 2^{6} ⇒ n = 6",
+          "tag": "count the half-lives",
+          "title": "Count the half-lives",
+          "narration": "Six factors of two in the denominator mean the sample has halved six times."
+        },
+        {
+          "n": 3,
+          "display": "t_{half} = \\frac{120}{6} = 20 years",
+          "tag": "calculate one half-life",
+          "title": "Calculate one half-life",
+          "narration": "Six equal intervals fit into one hundred and twenty years, making each interval twenty years. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{N}{N_{0}} = \\frac{1}{64}, t = 120 years",
+          "tag": "read the remaining fraction",
+          "title": "Read the remaining fraction",
+          "narration": "One sixty-fourth of the starting sample remains undecayed after one hundred and twenty years."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{N}{N_{0}} = (\\frac{1}{2})^{n}",
+          "tag": "model the repeated halves",
+          "title": "Model the repeated halves",
+          "narration": "The undecayed fraction is halved in each half-life, so the exponent counts the number of half-lives."
+        },
+        {
+          "n": 3,
+          "display": "64 = 2^{6} ⇒ n = 6",
+          "tag": "count the half-lives",
+          "title": "Count the half-lives",
+          "narration": "Six factors of two in the denominator mean the sample has halved six times."
+        },
+        {
+          "n": 4,
+          "display": "t_{half} = \\frac{t}{n}",
+          "tag": "set up the time division",
+          "title": "Set up the time division",
+          "narration": "All six half-life intervals have the same length. Divide the total time by the interval count."
+        },
+        {
+          "n": 5,
+          "display": "t_{half} = \\frac{120}{6} = 20 years",
+          "tag": "calculate one half-life",
+          "title": "Calculate one half-life",
+          "narration": "Six equal intervals fit into one hundred and twenty years, making each interval twenty years. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2006-020",
+      "questionId": "phys-jamb-2006-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "1 J = 1 N m = 1 kg m^{2} s^{-2}",
+          "tag": "find the energy units",
+          "title": "Find the energy units",
+          "narration": "Work is force times distance. A newton is kilogram metre per second squared, so multiplying by a metre gives the joule."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{kg m^{2} s^{-2}}{m^{3}}",
+          "tag": "divide by cubic metres",
+          "title": "Divide by cubic metres",
+          "narration": "Volume is measured in cubic metres. Put that unit in the denominator to get energy per unit volume."
+        },
+        {
+          "n": 3,
+          "display": "kg m^{-1} s^{-2}",
+          "tag": "simplify the exponent",
+          "title": "Simplify the exponent",
+          "narration": "Subtract three from the metre exponent of two. Kilograms and seconds keep their original powers. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Energy density = \\frac{energy}{volume}",
+          "tag": "identify energy density",
+          "title": "Identify energy density",
+          "narration": "Energy density tells us how much energy there is in each unit of volume, so divide the unit of energy by the unit of volume."
+        },
+        {
+          "n": 2,
+          "display": "1 J = 1 N m = 1 kg m^{2} s^{-2}",
+          "tag": "find the energy units",
+          "title": "Find the energy units",
+          "narration": "Work is force times distance. A newton is kilogram metre per second squared, so multiplying by a metre gives the joule."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{kg m^{2} s^{-2}}{m^{3}}",
+          "tag": "divide by cubic metres",
+          "title": "Divide by cubic metres",
+          "narration": "Volume is measured in cubic metres. Put that unit in the denominator to get energy per unit volume."
+        },
+        {
+          "n": 4,
+          "display": "kg m^{-1} s^{-2}",
+          "tag": "simplify the exponent",
+          "title": "Simplify the exponent",
+          "narration": "Subtract three from the metre exponent of two. Kilograms and seconds keep their original powers. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-001",
+      "questionId": "phys-jamb-2009-001",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "G = \\frac{Fr^{2}}{m_{1}m_{2}}",
+          "tag": "rearrange newton's law",
+          "title": "Rearrange Newton's law",
+          "narration": "Move the square of distance to the numerator and the two masses to the denominator to isolate the constant."
+        },
+        {
+          "n": 2,
+          "display": "[G] = \\frac{(MLT^{-2})(L^{2})}{M^{2}}",
+          "tag": "substitute dimensions",
+          "title": "Substitute dimensions",
+          "narration": "A force is mass times acceleration. Distance contributes two more powers of length, and the product of two masses gives mass squared."
+        },
+        {
+          "n": 3,
+          "display": "x = −1, y = 3, z = −2",
+          "tag": "read the exponents",
+          "title": "Read the exponents",
+          "narration": "Read the powers in the order asked for: mass, length, then time. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "[G] = M^{x} L^{y} T^{z}",
+          "tag": "identify the dimensions sought",
+          "title": "Identify the dimensions sought",
+          "narration": "We want the powers of mass, length and time in the gravitational constant. Numerical values of the masses and distance are unnecessary here."
+        },
+        {
+          "n": 2,
+          "display": "G = \\frac{Fr^{2}}{m_{1}m_{2}}",
+          "tag": "rearrange newton's law",
+          "title": "Rearrange Newton's law",
+          "narration": "Move the square of distance to the numerator and the two masses to the denominator to isolate the constant."
+        },
+        {
+          "n": 3,
+          "display": "[G] = \\frac{(MLT^{-2})(L^{2})}{M^{2}}",
+          "tag": "substitute dimensions",
+          "title": "Substitute dimensions",
+          "narration": "A force is mass times acceleration. Distance contributes two more powers of length, and the product of two masses gives mass squared."
+        },
+        {
+          "n": 4,
+          "display": "[G] = M^{-1}L^{3}T^{-2}",
+          "tag": "simplify the dimensions",
+          "title": "Simplify the dimensions",
+          "narration": "Subtract two from the mass exponent of one and add two to the length exponent of one. The time exponent stays negative two."
+        },
+        {
+          "n": 5,
+          "display": "x = −1, y = 3, z = −2",
+          "tag": "read the exponents",
+          "title": "Read the exponents",
+          "narration": "Read the powers in the order asked for: mass, length, then time. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1997-005",
+      "questionId": "phys-jamb-1997-005",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R = \\frac{u^{2} sin(2θ)}{g}",
+          "tag": "use the horizontal range formula",
+          "title": "Use the horizontal range formula",
+          "narration": "For a projectile that returns to its launch level, the angle affects range through the sine of twice the launch angle."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{R_{X}}{R_{Y}} = \\frac{sin 60°}{sin 120°}",
+          "tag": "cancel the common factors",
+          "title": "Cancel the common factors",
+          "narration": "The launch speed and gravity are the same for both, so only the two sine values remain in the ratio."
+        },
+        {
+          "n": 3,
+          "display": "R_{X} : R_{Y} = 1 : 1",
+          "tag": "give the range ratio",
+          "title": "Give the range ratio",
+          "narration": "The sine values are equal, so the two ranges are the same. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "θ_{X} = 30°, θ_{Y} = 60°",
+          "tag": "compare the launch angles",
+          "title": "Compare the launch angles",
+          "narration": "Both bodies start with the same speed, land on the same horizontal plane and travel without air resistance."
+        },
+        {
+          "n": 2,
+          "display": "R = \\frac{u^{2} sin(2θ)}{g}",
+          "tag": "use the horizontal range formula",
+          "title": "Use the horizontal range formula",
+          "narration": "For a projectile that returns to its launch level, the angle affects range through the sine of twice the launch angle."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{R_{X}}{R_{Y}} = \\frac{sin 60°}{sin 120°}",
+          "tag": "cancel the common factors",
+          "title": "Cancel the common factors",
+          "narration": "The launch speed and gravity are the same for both, so only the two sine values remain in the ratio."
+        },
+        {
+          "n": 4,
+          "display": "sin 120° = sin(180° − 120°) = sin 60°",
+          "tag": "compare the sines",
+          "title": "Compare the sines",
+          "narration": "Angles that add to one hundred and eighty degrees have equal sines."
+        },
+        {
+          "n": 5,
+          "display": "R_{X} : R_{Y} = 1 : 1",
+          "tag": "give the range ratio",
+          "title": "Give the range ratio",
+          "narration": "The sine values are equal, so the two ranges are the same. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1999-007",
+      "questionId": "phys-jamb-1999-007",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = \\frac{Δv}{Δt}",
+          "tag": "use the velocity gradient",
+          "title": "Use the velocity gradient",
+          "narration": "On a velocity-time graph the slope is the change in velocity divided by the time taken. The flat section has zero slope."
+        },
+        {
+          "n": 2,
+          "display": "a = \\frac{80 − 0}{20 − 0} = 4.0 m/s²",
+          "tag": "find the rising slope",
+          "title": "Find the rising slope",
+          "narration": "The vehicle gains eighty metres per second in the first twenty seconds."
+        },
+        {
+          "n": 3,
+          "display": "a = \\frac{0 − 80}{90 − 50} = −2.0 m/s²",
+          "tag": "find the falling slope",
+          "title": "Find the falling slope",
+          "narration": "The vehicle loses eighty metres per second during the final forty seconds. The negative sign means it is slowing down."
+        },
+        {
+          "n": 4,
+          "display": "Acceleration = 4.0 m/s², retardation = 2.0 m/s²",
+          "tag": "report retardation as a magnitude",
+          "title": "Report retardation as a magnitude",
+          "narration": "Retardation is the size of the negative acceleration. The two values in order are four point zero and two point zero metres per second squared. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "(0 s, 0 m/s) → (20 s, 80 m/s) → (50 s, 80 m/s) → (90 s, 0 m/s)",
+          "tag": "read the graph's corners",
+          "title": "Read the graph's corners",
+          "narration": "Read time on the horizontal axis and velocity on the vertical axis. The flat section starts at twenty seconds and ends at fifty seconds, where slowing begins."
+        },
+        {
+          "n": 2,
+          "display": "a = \\frac{Δv}{Δt}",
+          "tag": "use the velocity gradient",
+          "title": "Use the velocity gradient",
+          "narration": "On a velocity-time graph the slope is the change in velocity divided by the time taken. The flat section has zero slope."
+        },
+        {
+          "n": 3,
+          "display": "a = \\frac{80 − 0}{20 − 0} = 4.0 m/s²",
+          "tag": "find the rising slope",
+          "title": "Find the rising slope",
+          "narration": "The vehicle gains eighty metres per second in the first twenty seconds."
+        },
+        {
+          "n": 4,
+          "display": "a = \\frac{0 − 80}{90 − 50} = −2.0 m/s²",
+          "tag": "find the falling slope",
+          "title": "Find the falling slope",
+          "narration": "The vehicle loses eighty metres per second during the final forty seconds. The negative sign means it is slowing down."
+        },
+        {
+          "n": 5,
+          "display": "Acceleration = 4.0 m/s², retardation = 2.0 m/s²",
+          "tag": "report retardation as a magnitude",
+          "title": "Report retardation as a magnitude",
+          "narration": "Retardation is the size of the negative acceleration. The two values in order are four point zero and two point zero metres per second squared. Choose C."
         }
       ]
     }
