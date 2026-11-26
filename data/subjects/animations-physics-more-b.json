@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 10,
+  "count": 20,
   "animations": [
     {
       "id": "anim-phys-jamb-2008-021",
@@ -638,6 +638,645 @@
           "tag": "calculate frequency",
           "title": "Calculate frequency",
           "narration": "Three hundred and sixty divided by one point eight zero equals two hundred point zero hertz. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1994-032",
+      "questionId": "phys-jamb-1994-032",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f ∝ \\frac{\\sqrt{T}}{L}",
+          "tag": "use string proportionality",
+          "title": "Use string proportionality",
+          "narration": "For a stretched string, frequency varies directly with the square root of tension and inversely with length."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{f_{2}}{f_{1}} = \\frac{\\sqrt{4}}{2} = \\frac{2}{2} = 1",
+          "tag": "find the scale factor",
+          "title": "Find the scale factor",
+          "narration": "Four times tension gives a factor of root four, which is two, while doubling length divides by two."
+        },
+        {
+          "n": 3,
+          "display": "f_{2} = 1 × 400 = 400 Hz",
+          "tag": "find the new frequency",
+          "title": "Find the new frequency",
+          "narration": "The two changes cancel out, so the frequency stays four hundred hertz. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f_{1} = 400 Hz, L_{2} = 2L_{1}, T_{2} = 4T_{1}",
+          "tag": "list what changes",
+          "title": "List what changes",
+          "narration": "Start with the original frequency of four hundred hertz, then note that length doubles while tension becomes four times as large."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{1}{2L}\\sqrt{\\frac{T}{μ}}",
+          "tag": "state the string formula",
+          "title": "State the string formula",
+          "narration": "The fundamental frequency of a stretched string depends on length, tension, and the mass per unit length of the string."
+        },
+        {
+          "n": 3,
+          "display": "f ∝ \\frac{\\sqrt{T}}{L}",
+          "tag": "track changing quantities",
+          "title": "Track changing quantities",
+          "narration": "Because it is the same string, its mass per unit length stays constant, so we only compare the square root of tension over length."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{f_{2}}{f_{1}} = \\frac{\\sqrt{4}}{2} = \\frac{2}{2} = 1",
+          "tag": "find the net factor",
+          "title": "Find the net factor",
+          "narration": "The square root of four multiplies frequency by two, while doubling length divides it by two, leaving an overall factor of one."
+        },
+        {
+          "n": 5,
+          "display": "f_{2} = 1 × 400 = 400 Hz",
+          "tag": "find the new frequency",
+          "title": "Find the new frequency",
+          "narration": "Multiplying four hundred hertz by one leaves the note at four hundred hertz. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2011-026",
+      "questionId": "phys-jamb-2011-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{f_{2}}{f_{1}} = \\sqrt{\\frac{T_{2}}{T_{1}}}",
+          "tag": "relate frequency and force",
+          "title": "Relate frequency and force",
+          "narration": "For a fixed length of wire, frequency is proportional to the square root of the stretching force."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{f_{2}}{255} = \\sqrt{\\frac{324}{225}} = \\frac{18}{15} = 1.2",
+          "tag": "take the square root",
+          "title": "Take the square root",
+          "narration": "The square roots of three hundred and twenty-four and two hundred and twenty-five are eighteen and fifteen, giving one point two."
+        },
+        {
+          "n": 3,
+          "display": "f_{2} = 255 × 1.2 = 306 Hz",
+          "tag": "find the new frequency",
+          "title": "Find the new frequency",
+          "narration": "Multiply two hundred and fifty-five by one point two to get three hundred and six hertz. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f_{1} = 255 Hz, T_{1} = 225 N, T_{2} = 324 N",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the original frequency and the two stretching forces applied to the same wire."
+        },
+        {
+          "n": 2,
+          "display": "f ∝ \\sqrt{T} ⇒ \\frac{f_{2}}{f_{1}} = \\sqrt{\\frac{T_{2}}{T_{1}}}",
+          "tag": "use tension proportionality",
+          "title": "Use tension proportionality",
+          "narration": "Because the wire length and linear density stay fixed, frequency grows with the square root of the stretching force."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{f_{2}}{255} = \\sqrt{\\frac{324}{225}} = \\frac{18}{15}",
+          "tag": "substitute and take roots",
+          "title": "Substitute and take roots",
+          "narration": "Put three hundred and twenty-four over two hundred and twenty-five inside the root. Eighteen squared is three hundred and twenty-four and fifteen squared is two hundred and twenty-five."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{18}{15} = \\frac{6}{5} = 1.2",
+          "tag": "simplify the ratio",
+          "title": "Simplify the ratio",
+          "narration": "Divide eighteen and fifteen by three to get six fifths, which equals one point two."
+        },
+        {
+          "n": 5,
+          "display": "f_{2} = 255 × 1.2 = 306 Hz",
+          "tag": "find the new frequency",
+          "title": "Find the new frequency",
+          "narration": "Multiply two hundred and fifty-five hertz by one point two to get three hundred and six hertz. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1990-024",
+      "questionId": "phys-jamb-1990-024",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = \\frac{v}{u} = \\frac{40}{10} = 4",
+          "tag": "find the magnification",
+          "title": "Find the magnification",
+          "narration": "Divide the image distance of forty centimetres by the object distance of ten centimetres to get four."
+        },
+        {
+          "n": 2,
+          "display": "h_{i} = m × h_{o} = 4 × 3",
+          "tag": "multiply by object height",
+          "title": "Multiply by object height",
+          "narration": "Multiply the magnification of four by the object height of three centimetres."
+        },
+        {
+          "n": 3,
+          "display": "h_{i} = 12.00 cm",
+          "tag": "read the image height",
+          "title": "Read the image height",
+          "narration": "Four times three gives twelve point zero zero centimetres. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "h_{o} = 3 cm, u = 10 cm, v = 40 cm",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the object height, how far the object is from the mirror, and how far the image forms."
+        },
+        {
+          "n": 2,
+          "display": "m = \\frac{v}{u} = \\frac{40}{10} = 4",
+          "tag": "find linear magnification",
+          "title": "Find linear magnification",
+          "narration": "Magnification equals image distance divided by object distance. Dividing forty by ten shows the image is four times as tall as the object."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{h_{i}}{h_{o}} ⇒ h_{i} = m × h_{o}",
+          "tag": "link magnification to height",
+          "title": "Link magnification to height",
+          "narration": "Because magnification also equals image height over object height, multiply magnification by object height to find image height."
+        },
+        {
+          "n": 4,
+          "display": "h_{i} = 4 × 3 = 12.00 cm",
+          "tag": "calculate image height",
+          "title": "Calculate image height",
+          "narration": "Multiply four by three centimetres to get twelve point zero zero centimetres. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1992-026",
+      "questionId": "phys-jamb-1992-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f = \\frac{36}{2} = 18 cm",
+          "tag": "find the focal length",
+          "title": "Find the focal length",
+          "narration": "Halve the thirty-six centimetre radius of curvature to get an eighteen centimetre focal length."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{u} + \\frac{1}{3u} = \\frac{1}{18} ⇒ \\frac{4}{3u} = \\frac{1}{18}",
+          "tag": "apply the mirror formula",
+          "title": "Apply the mirror formula",
+          "narration": "A real image three times as large means v equals three u, so combine the left side to four over three u."
+        },
+        {
+          "n": 3,
+          "display": "3u = 72 ⇒ u = 24 cm",
+          "tag": "solve for object distance",
+          "title": "Solve for object distance",
+          "narration": "Cross-multiply to get three u equals seventy-two, then divide by three to get twenty-four centimetres. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "r = 36 cm, m = 3 (real)",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the mirror's radius of curvature is thirty-six centimetres and the real image is three times the object's size."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{r}{2} = \\frac{36}{2} = 18 cm",
+          "tag": "find the focal length",
+          "title": "Find the focal length",
+          "narration": "The focal length of a concave mirror is half its radius of curvature, which gives eighteen centimetres, positive for a converging mirror."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{v}{u} = 3 ⇒ v = 3u",
+          "tag": "express v using u",
+          "title": "Express v using u",
+          "narration": "Because the image is real, image distance is positive and equals three times the object distance."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{u} + \\frac{1}{3u} = \\frac{1}{18} ⇒ \\frac{4}{3u} = \\frac{1}{18}",
+          "tag": "substitute in mirror formula",
+          "title": "Substitute in mirror formula",
+          "narration": "Put v equals three u into the mirror equation and add the fractions using common denominator three u."
+        },
+        {
+          "n": 5,
+          "display": "3u = 4 × 18 = 72 ⇒ u = 24 cm",
+          "tag": "solve for object distance",
+          "title": "Solve for object distance",
+          "narration": "Cross-multiply to get three u equals seventy-two, then divide by three to get twenty-four centimetres. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1987-034",
+      "questionId": "phys-jamb-1987-034",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{1}{v} = \\frac{1}{20.0} − \\frac{1}{60.0} = \\frac{2}{60.0}",
+          "tag": "use the lens formula",
+          "title": "Use the lens formula",
+          "narration": "Subtract one over sixty from one over twenty to find one over the image distance."
+        },
+        {
+          "n": 2,
+          "display": "v = 30.0 cm, m = \\frac{30.0}{60.0} = 0.5",
+          "tag": "find image distance",
+          "title": "Find image distance",
+          "narration": "Inverting gives thirty point zero centimetres, so the magnification is zero point five."
+        },
+        {
+          "n": 3,
+          "display": "h_{i} = 0.5 × 3.0 = 1.5 cm",
+          "tag": "find the image size",
+          "title": "Find the image size",
+          "narration": "Multiply zero point five by the three point zero centimetre object height to get one point five centimetres. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "h_{o} = 3.0 cm, u = 60.0 cm, f = 20.0 cm",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the object height, object distance, and focal length of the converging lens."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{v} = \\frac{1}{f} − \\frac{1}{u} = \\frac{1}{20.0} − \\frac{1}{60.0}",
+          "tag": "rearrange the lens formula",
+          "title": "Rearrange the lens formula",
+          "narration": "Start from one over u plus one over v equals one over f, and move one over u to the right to solve for image distance."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{v} = \\frac{3 − 1}{60.0} = \\frac{1}{30.0} ⇒ v = 30.0 cm",
+          "tag": "find image distance",
+          "title": "Find image distance",
+          "narration": "Use common denominator sixty to subtract, giving one over thirty, so the real image forms thirty point zero centimetres from the lens."
+        },
+        {
+          "n": 4,
+          "display": "m = \\frac{v}{u} = \\frac{30.0}{60.0} = 0.5",
+          "tag": "calculate magnification",
+          "title": "Calculate magnification",
+          "narration": "Divide image distance by object distance. Because sixty is beyond twice the focal length, the image is smaller, with magnification zero point five."
+        },
+        {
+          "n": 5,
+          "display": "h_{i} = 0.5 × 3.0 = 1.5 cm",
+          "tag": "find the image height",
+          "title": "Find the image height",
+          "narration": "Multiply magnification zero point five by three point zero centimetres to get an image size of one point five centimetres. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2007-001",
+      "questionId": "phys-jamb-2007-001",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v = \\frac{3.0 × 10^{8}}{1.50} = 2.0 × 10^{8} m/s",
+          "tag": "find light speed in glass",
+          "title": "Find light speed in glass",
+          "narration": "Divide the speed of light in vacuum by the refractive index one point five zero."
+        },
+        {
+          "n": 2,
+          "display": "d = 0.9 cm = 9 × 10^{-3} m",
+          "tag": "convert thickness to metres",
+          "title": "Convert thickness to metres",
+          "narration": "Change zero point nine centimetres into nine times ten to the minus three metres."
+        },
+        {
+          "n": 3,
+          "display": "t = \\frac{9 × 10^{-3}}{2.0 × 10^{8}} = 4.5 × 10^{-11} s",
+          "tag": "calculate transit time",
+          "title": "Calculate transit time",
+          "narration": "Divide the thickness in metres by the speed in glass to get four point five times ten to the minus eleven seconds. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "d = 0.9 cm, n = 1.50, c = 3.0 × 10^{8} m/s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the plate thickness, the refractive index of the glass, and the speed of light in a vacuum."
+        },
+        {
+          "n": 2,
+          "display": "v = \\frac{c}{n} = \\frac{3.0 × 10^{8}}{1.50} = 2.0 × 10^{8} m/s",
+          "tag": "find speed in glass",
+          "title": "Find speed in glass",
+          "narration": "Light slows down inside glass by a factor equal to the refractive index, so divide three point zero times ten to the eight by one point five zero."
+        },
+        {
+          "n": 3,
+          "display": "d = 0.9 × 10^{-2} m = 9 × 10^{-3} m",
+          "tag": "change centimetres to metres",
+          "title": "Change centimetres to metres",
+          "narration": "Convert zero point nine centimetres to metres so the thickness matches the metres per second unit of speed."
+        },
+        {
+          "n": 4,
+          "display": "t = \\frac{d}{v} = \\frac{9 × 10^{-3}}{2.0 × 10^{8}}",
+          "tag": "divide distance by speed",
+          "title": "Divide distance by speed",
+          "narration": "Time equals distance divided by speed. Put the plate thickness over the speed of light inside glass."
+        },
+        {
+          "n": 5,
+          "display": "t = 4.5 × 10^{-11} s",
+          "tag": "simplify powers of ten",
+          "title": "Simplify powers of ten",
+          "narration": "Nine divided by two gives four point five, and minus three minus eight gives exponent minus eleven seconds. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2001-025",
+      "questionId": "phys-jamb-2001-025",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{1}{C_{eq}} = \\frac{1}{2} + \\frac{1}{6} + \\frac{1}{3} = 1 ⇒ C_{eq} = 1 μF",
+          "tag": "find series capacitance",
+          "title": "Find series capacitance",
+          "narration": "Add the reciprocals of two, six, and three microfarads to get equivalent capacitance one microfarad."
+        },
+        {
+          "n": 2,
+          "display": "Q = C_{eq}V = 1 × 12 = 12 μC",
+          "tag": "find the shared charge",
+          "title": "Find the shared charge",
+          "narration": "Series capacitors share the same charge, so multiply one microfarad by twelve volts to get twelve microcoulombs."
+        },
+        {
+          "n": 3,
+          "display": "V_{1} = 6 V, V_{2} = 2 V, V_{3} = 4 V",
+          "tag": "find each voltage",
+          "title": "Find each voltage",
+          "narration": "Divide twelve microcoulombs by two, six, and three microfarads to get six, two, and four volts. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V = 12 V, C_{1} = 2 μF, C_{2} = 6 μF, C_{3} = 3 μF",
+          "tag": "read the circuit diagram",
+          "title": "Read the circuit diagram",
+          "narration": "From the diagram, a twelve volt battery drives a single series branch containing C one equal to two microfarads, C two equal to six microfarads, and C three equal to three microfarads."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{C_{eq}} = \\frac{1}{2} + \\frac{1}{6} + \\frac{1}{3} = \\frac{6}{6} ⇒ C_{eq} = 1 μF",
+          "tag": "find series capacitance",
+          "title": "Find series capacitance",
+          "narration": "For capacitors in series, reciprocals add. Using common denominator six gives six over six, so the combined capacitance is one microfarad."
+        },
+        {
+          "n": 3,
+          "display": "Q = C_{eq}V = 1 μF × 12 V = 12 μC",
+          "tag": "find the common charge",
+          "title": "Find the common charge",
+          "narration": "Multiply equivalent capacitance by supply voltage. Because the capacitors are in one series line, each holds twelve microcoulombs of charge."
+        },
+        {
+          "n": 4,
+          "display": "V = \\frac{Q}{C} ⇒ V_{1} = \\frac{12}{2} = 6 V",
+          "tag": "find voltage across C1",
+          "title": "Find voltage across C1",
+          "narration": "Potential difference equals charge divided by capacitance, so dividing twelve microcoulombs by two microfarads gives six volts across C one."
+        },
+        {
+          "n": 5,
+          "display": "V_{2} = \\frac{12}{6} = 2 V, V_{3} = \\frac{12}{3} = 4 V",
+          "tag": "find V2 and V3",
+          "title": "Find V2 and V3",
+          "narration": "Divide twelve by six to get two volts across C two, and twelve by three to get four volts across C three. Notice six plus two plus four equals twelve volts. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2006-032",
+      "questionId": "phys-jamb-2006-032",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "C_{0} = 3 μF, C = 6 μF",
+          "tag": "list both capacitances",
+          "title": "List both capacitances",
+          "narration": "Note the capacitance in air is three microfarads and with the dielectric is six microfarads."
+        },
+        {
+          "n": 2,
+          "display": "k = \\frac{C}{C_{0}} = \\frac{6 μF}{3 μF}",
+          "tag": "take the ratio",
+          "title": "Take the ratio",
+          "narration": "Dielectric constant equals capacitance with the dielectric divided by capacitance in air."
+        },
+        {
+          "n": 3,
+          "display": "k = 2",
+          "tag": "find the dielectric constant",
+          "title": "Find the dielectric constant",
+          "narration": "Six divided by three equals two. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "C_{0} = 3 μF, C = 6 μF",
+          "tag": "list the capacitances",
+          "title": "List the capacitances",
+          "narration": "Write down the capacitor's value in air and its larger value when the dielectric material fills the space between the plates."
+        },
+        {
+          "n": 2,
+          "display": "k = \\frac{C}{C_{0}}",
+          "tag": "define dielectric constant",
+          "title": "Define dielectric constant",
+          "narration": "Inserting a dielectric multiplies capacitance by the dielectric constant, so divide the dielectric capacitance by the air capacitance."
+        },
+        {
+          "n": 3,
+          "display": "k = \\frac{6 μF}{3 μF}",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Put six microfarads over three microfarads. Both are in microfarads, so the units cancel directly."
+        },
+        {
+          "n": 4,
+          "display": "k = 2",
+          "tag": "divide for the answer",
+          "title": "Divide for the answer",
+          "narration": "Six divided by three gives a dielectric constant of two. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-036",
+      "questionId": "phys-jamb-2013-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = qE",
+          "tag": "state the force formula",
+          "title": "State the force formula",
+          "narration": "Electric force on a charge equals the charge multiplied by the electric field intensity."
+        },
+        {
+          "n": 2,
+          "display": "F = (1.5 × 10^{-19}) × 10^{5}",
+          "tag": "substitute charge and field",
+          "title": "Substitute charge and field",
+          "narration": "Multiply one point five times ten to the minus nineteen coulombs by ten to the five volts per metre."
+        },
+        {
+          "n": 3,
+          "display": "F = 1.5 × 10^{-14} N",
+          "tag": "combine powers of ten",
+          "title": "Combine powers of ten",
+          "narration": "Adding minus nineteen and five gives minus fourteen, so the force is one point five times ten to the minus fourteen newtons. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "q = 1.5 × 10^{-19} C, E = 10^{5} V m^{-1}",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the charge given in coulombs and the electric field intensity in volts per metre, both already in SI units."
+        },
+        {
+          "n": 2,
+          "display": "F = qE",
+          "tag": "state electric force law",
+          "title": "State electric force law",
+          "narration": "Electric field intensity means force per unit charge, so multiplying the charge by the field gives the force on the electron."
+        },
+        {
+          "n": 3,
+          "display": "F = (1.5 × 10^{-19}) × 10^{5}",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Put the given charge and field strength into the formula."
+        },
+        {
+          "n": 4,
+          "display": "F = 1.5 × 10^{-14} N",
+          "tag": "add the exponents",
+          "title": "Add the exponents",
+          "narration": "Add the exponents of ten: minus nineteen plus five equals minus fourteen. The force is one point five times ten to the minus fourteen newtons, option C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2017-023",
+      "questionId": "phys-jamb-2017-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "C = 8 μF = 8 × 10^{-6} F",
+          "tag": "convert to farads",
+          "title": "Convert to farads",
+          "narration": "Change eight microfarads to eight times ten to the minus six farads."
+        },
+        {
+          "n": 2,
+          "display": "E = \\frac{1}{2}CV^{2} = \\frac{1}{2} × 8 × 10^{-6} × 100^{2}",
+          "tag": "use the energy formula",
+          "title": "Use the energy formula",
+          "narration": "Substitute capacitance in farads and one hundred volts into half C V squared."
+        },
+        {
+          "n": 3,
+          "display": "E = 4 × 10^{-6} × 10^{4} = 4.0 × 10^{-2} J",
+          "tag": "find stored energy",
+          "title": "Find stored energy",
+          "narration": "Four times ten to the minus six times ten to the four equals four point zero times ten to the minus two joules. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "C = 8 μF, V = 100 V",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the capacitance in microfarads and the potential difference across the capacitor."
+        },
+        {
+          "n": 2,
+          "display": "C = 8 × 10^{-6} F",
+          "tag": "convert microfarads to farads",
+          "title": "Convert microfarads to farads",
+          "narration": "Multiply by ten to the minus six to convert microfarads into farads because stored energy in joules requires SI units."
+        },
+        {
+          "n": 3,
+          "display": "E = \\frac{1}{2}CV^{2}",
+          "tag": "state the energy formula",
+          "title": "State the energy formula",
+          "narration": "The energy stored in a capacitor equals half times capacitance times potential difference squared."
+        },
+        {
+          "n": 4,
+          "display": "E = \\frac{1}{2} × (8 × 10^{-6}) × 100^{2}",
+          "tag": "substitute C and V",
+          "title": "Substitute C and V",
+          "narration": "Put eight times ten to the minus six farads and one hundred volts into the equation. Half of eight is four, and one hundred squared is ten to the four."
+        },
+        {
+          "n": 5,
+          "display": "E = 4 × 10^{-6} × 10^{4} = 4.0 × 10^{-2} J",
+          "tag": "simplify powers of ten",
+          "title": "Simplify powers of ten",
+          "narration": "Add the exponents minus six and four to get minus two. The energy stored is four point zero times ten to the minus two joules, option B."
         }
       ]
     }
