@@ -20,6 +20,8 @@ const index = []
 for (const name of (await readdir(bank)).filter((file) => file.endsWith('.json')).sort()) {
   const text = await readFile(new URL(name, bank), 'utf8')
   const topic = JSON.parse(text)
+  // The oral word bank is a pronunciation index, not a lesson topic.
+  if (Array.isArray(topic)) continue
   const lessons = topic.lessons.map(({ id, title, scenes, pastQuestion }) => ({
     id, title, sceneIds: [...scenes, ...pastQuestion?.scenes ?? []].map((scene) => scene.id),
   }))

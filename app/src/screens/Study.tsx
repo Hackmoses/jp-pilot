@@ -1,4 +1,5 @@
 import { useEffect } from 'preact/hooks'
+import { EnglishFoundations, foundationsHref } from '../components/lessons/EnglishFoundations'
 import { LessonList } from '../components/lessons/LessonList'
 import { TryItCard, studyInteractives } from '../components/try-it/TryItCard'
 import cardIndex from '../lib/card-index.json'
@@ -48,6 +49,10 @@ export function Study({ params }: { params: URLSearchParams }) {
     if (tryIt === 'gas-laws') document.getElementById(tryIt)?.scrollIntoView({ block: 'start' })
   }, [subject, chapter, tryIt])
 
+  if (subject === 'english' && params.has('foundations')) {
+    return <EnglishFoundations unit={params.get('unit')} />
+  }
+
   if (chapter && deck) {
     return <EnglishCards deck={deck} back={studyLink(subject, chapter)} open={params.has('cards')} />
   }
@@ -84,6 +89,9 @@ export function Study({ params }: { params: URLSearchParams }) {
 
   return (
     <Panel title={subjectName + ' study'} back="#/subjects?mode=study">
+      {subject === 'english' && <ModeCard href={foundationsHref} title="Spelling and Sounds">
+        10 concept lessons with Try it activities
+      </ModeCard>}
       {total === 0 ? <>
         <p class="jp-mode-lead">Lessons for {subjectName} are coming soon.</p>
         <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref()}>Practise {subjectName} →</a>
