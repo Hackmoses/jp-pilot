@@ -1,6 +1,7 @@
 import { afterEach, expect, it, vi } from 'vitest'
-import { CalculationPlayback, resetSessionPlaybackPreferences } from './CalculationPlayback'
+import { CalculationPlayback, resetSessionPlaybackPreferences, type PlaybackState } from './CalculationPlayback'
 import { bindHandwriting, handwritingFrame } from './handwriting'
+import { swipeDirection } from './SolutionPlayer'
 
 const row = { left: 0, right: 100, top: 0, bottom: 20, atoms: [] }
 
@@ -40,9 +41,10 @@ it('moves the pen with recorded audio, holds on pause, and restores the same pos
   vi.stubGlobal('window', { location: { href: 'http://localhost/' }, setTimeout })
   vi.stubGlobal('fetch', vi.fn(async () => new Response(new Blob(['test']))))
   const tick = testClock()
+  const states: PlaybackState[] = []
   const playback = new CalculationPlayback(
     [{ path: 'audio/test.webm', durationMs: 4300, lineSha256: 'sha', voice: 'test' }],
-    4000, () => {}, () => {},
+    4000, (state) => states.push(state), () => {},
   )
   const pen = () => handwritingFrame([row], 100, playback.progress, 10)
 
@@ -74,6 +76,7 @@ it('moves the pen with recorded audio, holds on pause, and restores the same pos
     audio.ended = true
     tick(2200)
     expect(pen()?.x).toBe(100)
+    expect(states[states.length - 1]).toMatchObject({ index: 1, playing: false })
   } finally {
     playback.dispose()
   }
@@ -131,4 +134,13 @@ it('shows full lines and makes no pen or layout updates with reduced motion', ()
   expect(pen.style.clipPath).toBe('')
   expect(pen.style.transform).toBe('')
   binding.dispose()
+})
+
+it('accepts horizontal drags and flicks in both directions, leaving vertical pans alone', () => {
+  expect(swipeDirection(-41, 10, 600)).toBe(1)
+  expect(swipeDirection(43, -8, 600)).toBe(-1)
+  expect(swipeDirection(-23, 3, 42)).toBe(1)
+  expect(swipeDirection(-23, 3, 200)).toBe(0)
+  expect(swipeDirection(44, 70, 75)).toBe(0)
+  expect(swipeDirection(9, 1, 25)).toBe(0)
 })

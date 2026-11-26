@@ -2,7 +2,7 @@ import { requestClip, type NarrationMode } from './calculationAudio'
 
 type Request = ReturnType<typeof requestClip>
 type Clip = Request['clip']
-type Phase = 'idle' | 'loading' | 'silent' | 'voice' | 'gap' | 'done'
+type Phase = 'idle' | 'loading' | 'silent' | 'voice' | 'done'
 
 export interface PlaybackState {
   index: number
@@ -11,7 +11,6 @@ export interface PlaybackState {
   speed: number
 }
 
-const STEP_PAUSE = 500
 const CLIP_TIMEOUT = 1500
 const SILENT_WRITE = 1800
 // A silent sample lets the speaker gesture authorize this media element on mobile.
@@ -136,7 +135,7 @@ export class CalculationPlayback {
     const position = this.positionMs()
     if (position >= remaining) {
       const offset = position - remaining
-      if (this.phase === 'done' || this.phase === 'gap') {
+      if (this.phase === 'done') {
         this.start(index, this.single, this.state.playing, offset)
       } else {
         this.seekWithin(offset)
@@ -165,7 +164,6 @@ export class CalculationPlayback {
     switch (this.phase) {
       case 'voice': return (this.audio?.currentTime ?? 0) * 1000
       case 'silent': return this.elapsed
-      case 'gap':
       case 'done': return this.stepMs(this.state.index)
       default: return 0
     }
@@ -359,7 +357,7 @@ export class CalculationPlayback {
     if (this.single || this.state.index + 1 === this.clips.length) {
       this.releaseClip()
       this.phase = 'done'
-      this.update({ playing: false })
+      this.update({ playing: false, index: this.single ? this.state.index : this.clips.length })
     } else {
       this.start(this.state.index + 1)
     }
@@ -388,18 +386,13 @@ export class CalculationPlayback {
         this.writeVoice(audio.currentTime * 1000)
         if (audio.ended) {
           this.write(1)
-          this.elapsed = 0
-          this.phase = 'gap'
+          this.advance()
         } else if (audio.currentTime === 0) {
           this.elapsed += delta
           if (this.elapsed >= CLIP_TIMEOUT) this.fallBack()
         }
         break
       }
-      case 'gap':
-        this.elapsed += delta
-        if (this.elapsed >= STEP_PAUSE) this.advance()
-        break
     }
     this.schedule()
   }
