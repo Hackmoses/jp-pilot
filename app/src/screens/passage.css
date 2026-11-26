@@ -1,0 +1,28 @@
+.jp-passage-panel {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg);
+  overflow-wrap: anywhere;
+}
+
+.jp-passage-panel > .jp-btn { width: 100%; }
+.jp-passage-panel [hidden] { display: none; }
+
+.jp-passage-lines {
+  max-height: min(38vh, 24rem);
+  overflow: auto;
+  overscroll-behavior: contain;
+  margin: var(--space-2) 0 0;
+  padding: var(--space-2) var(--space-4) var(--space-2) 2.4em;
+  line-height: 1.55;
+  white-space: pre-line;
+}
+
+.jp-passage-lines li { padding-inline: var(--space-1); }
+.jp-passage-lines li + li { margin-top: var(--space-2); }
+.jp-passage-lines [data-proof="true"] { background: var(--highlight); }
+
+.jp-passage-gap { font-weight: 600; }
+.jp-passage-gap[data-answer="correct"] { color: var(--good); background: var(--good-soft); }
+.jp-passage-gap[data-answer="wrong"] { color: var(--bad); background: var(--bad-soft); }

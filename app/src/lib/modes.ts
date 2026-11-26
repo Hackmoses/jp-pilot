@@ -116,6 +116,7 @@ export type Attempt = {
   flagged: Partial<Record<string, boolean>>
   time: Record<string, number>
   snapshotId?: string
+  passageId?: string
 }
 
 export type TestResult = Attempt & { finishedAt: number }
@@ -275,17 +276,19 @@ function pruneSnapshots() {
 
 export function saveAttempt(attempt: Attempt) {
   state.attempts[attempt.mode] = attempt
-  state.recent = { href: '#/' + attempt.mode + '/run', label: attempt.mode === 'exam' ? 'Exam' : 'Practice' }
+  state.recent = attempt.passageId
+    ? { href: '#/practice/passages?set=' + attempt.passageId, label: 'Reading passages' }
+    : { href: '#/' + attempt.mode + '/run', label: attempt.mode === 'exam' ? 'Exam' : 'Practice' }
   save()
 }
 
-export function startAttempt(mode: TestMode, subjects: string[], queue: { id: string; review?: boolean }[], minutes: number) {
+export function startAttempt(mode: TestMode, subjects: string[], queue: { id: string; review?: boolean }[], minutes: number, passageId?: string) {
   const startedAt = Date.now()
   const attempt: Attempt = {
     id: mode + '-' + startedAt, mode, subjects, ids: queue.map(({ id }) => id),
     reviewIds: queue.filter(({ review }) => review).map(({ id }) => id),
     index: 0, startedAt, deadline: minutes ? startedAt + minutes * 60_000 : null,
-    answers: {}, flagged: {}, time: {},
+    answers: {}, flagged: {}, time: {}, ...(passageId ? { passageId } : {}),
   }
   const questions = attempt.ids.flatMap((id) => getQuestion(id) ?? [])
   if (questions.length === attempt.ids.length) {
