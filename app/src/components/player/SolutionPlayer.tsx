@@ -18,6 +18,7 @@ import {
   setSessionNarrationMode,
   type PlaybackState,
 } from './CalculationPlayback'
+import { bindHandwriting } from './handwriting'
 import './player.css'
 
 export function hasStructuredStepFields(step: AnimationStep): boolean {
@@ -45,7 +46,6 @@ export function renderStaticStepRow(step: AnimationStep, isFinal: boolean) {
       data-final={isFinal ? 'true' : 'false'}
     >
       <span class="jp-step__title">{renderMathText(step.title ?? step.tag)}</span>
-      {step.reason && <span class="jp-step__reason">{renderMathText(step.reason)}</span>}
       {step.working && step.working.length > 0 && (
         <span class="jp-step__working" role="list">
           {step.working.map((line, i) => (
@@ -58,6 +58,7 @@ export function renderStaticStepRow(step: AnimationStep, isFinal: boolean) {
       <span class="jp-step__display-wrap">
         <span class="jp-calc-line-text">{renderMathText(step.display)}</span>
       </span>
+      {step.reason && <span class="jp-step__reason">{renderMathText(step.reason)}</span>}
     </div>
   )
 }
@@ -75,7 +76,6 @@ export function renderAnimatedStepContent(step: AnimationStep) {
   return (
     <>
       <span class="jp-step__title">{renderMathText(step.title ?? step.tag)}</span>
-      {step.reason && <span class="jp-step__reason">{renderMathText(step.reason)}</span>}
       {step.working && step.working.length > 0 && (
         <span class="jp-step__working" role="list">
           {step.working.map((line, i) => (
@@ -88,6 +88,7 @@ export function renderAnimatedStepContent(step: AnimationStep) {
       <span class="jp-step__display-wrap">
         <span class="jp-player__line">{renderMathText(step.display)}</span>
       </span>
+      {step.reason && <span class="jp-step__reason">{renderMathText(step.reason)}</span>}
     </>
   )
 }
@@ -98,6 +99,7 @@ export interface SolutionPlayerProps {
   onToggleOpen?: () => void
   playSignal?: number
   isCorrect?: boolean
+  answerLetter?: string
 }
 
 export function SolutionPlayer({
@@ -106,6 +108,7 @@ export function SolutionPlayer({
   onToggleOpen,
   playSignal = 0,
   isCorrect,
+  answerLetter,
 }: SolutionPlayerProps) {
   const animation = getAnimation(animationId)
   return animation ? (
@@ -116,6 +119,7 @@ export function SolutionPlayer({
       onToggleOpen={onToggleOpen}
       playSignal={playSignal}
       isCorrect={isCorrect}
+      answerLetter={answerLetter}
     />
   ) : null
 }
@@ -126,18 +130,27 @@ function Player({
   onToggleOpen,
   playSignal,
   isCorrect,
+  answerLetter,
 }: {
   animation: Animation
   controlledOpen?: boolean
   onToggleOpen?: () => void
   playSignal: number
   isCorrect?: boolean
+  answerLetter?: string
 }) {
   const { id, questionId, stepSeconds } = animation
   const isConcept = animation.kind === 'concept'
   const hasTeach = !isConcept && Boolean(animation.teach && animation.teach.length > 0)
   const [mode, setMode] = useState<NarrationMode>(() => getInitialNarrationMode(hasTeach, isCorrect))
-  const steps = mode === 'teach' && animation.teach ? animation.teach : animation.steps
+  const trackSteps = mode === 'teach' && animation.teach ? animation.teach : animation.steps
+  // The question can shuffle choices. Keep the written option letter in the student's order.
+  const steps = answerLetter
+    ? trackSteps.map((step) => {
+      const display = step.display.replace(/ \(option [A-D]\)$/, ' (option ' + answerLetter + ')')
+      return display === step.display ? step : { ...step, display }
+    })
+    : trackSteps
   const hasStructuredSteps = steps.some(hasStructuredStepFields)
   const toggleTitle = isConcept ? 'Teach me' : 'See the calculation'
   const toggleSubtitle = isConcept ? `${steps.length} steps, explained simply` : `${steps.length} steps, written out by hand`
@@ -154,7 +167,6 @@ function Player({
     </svg>
   )
   const duration = stepSeconds * 1000
-  const remaining = useRef(duration)
   const bodyId = useId()
   const modalRef = useRef<HTMLDialogElement>(null)
   const expandBtnRef = useRef<HTMLButtonElement>(null)
@@ -163,39 +175,28 @@ function Player({
   const isOpen = controlledOpen ?? internalOpen
   const [expanded, setExpanded] = useState(false)
   const [animatedMode, setAnimatedMode] = useState(false)
-  const [legacyIndex, setIndex] = useState(-1)
-  const [legacyPlaying, setPlaying] = useState(false)
-  const [finished, setFinished] = useState(false)
-  const [replay, setReplay] = useState(0)
-  const [replaying, setReplaying] = useState(false)
   const [speechAvailable, setSpeechAvailable] = useState(false)
   const [activeKey, setActiveKey] = useState<string | null>(getActiveSpeechKey)
   const paperRef = useRef<HTMLDivElement>(null)
+  const penRef = useRef<SVGSVGElement>(null)
+  const handwriting = useRef<ReturnType<typeof bindHandwriting> | null>(null)
   const recorded = calculationAudio(id, mode)
+  const hasRecorded = Boolean(recorded)
+  const boundStep = useRef({ index: -1, mode, paper: null as HTMLDivElement | null })
   const [audioState, setAudioState] = useState<PlaybackState>(() => ({
     index: -1,
     playing: false,
     ...getSessionPlaybackPreferences(),
   }))
-  const [playback] = useState(() => {
-    const initialAudio = calculationAudio(id, getInitialNarrationMode(hasTeach, isCorrect))
-    const initialSteps = getInitialNarrationMode(hasTeach, isCorrect) === 'teach' && animation.teach
-      ? animation.teach
-      : animation.steps
-    return initialAudio && new CalculationPlayback(
-      initialSteps.map((step) => initialAudio.clips.get(step.n)),
-      duration,
-      setAudioState,
-      (progress) => {
-        const el = paperRef.current
-        if (!el) return
-        el.style.setProperty('--jp-pen-cover', `${(1 - progress) * 100}%`)
-        el.style.setProperty('--jp-pen-p', String(progress))
-      },
-    )
-  })
-  const index = playback ? audioState.index : legacyIndex
-  const playing = playback ? audioState.playing : legacyPlaying
+  const [playback] = useState(() => new CalculationPlayback(
+    steps.map((step) => recorded?.clips.get(step.n)),
+    duration * (mode === 'teach' && !recorded ? 1.25 : 1),
+    setAudioState,
+    (progress, step) => {
+      if (step === boundStep.current.index) handwriting.current?.paint(progress)
+    },
+  ))
+  const { index, playing } = audioState
   const speechKey = `player:${id}`
   const speaking = activeKey === speechKey
   const current = steps[index]
@@ -226,8 +227,8 @@ function Player({
     }
   }, [expanded])
 
-  useEffect(() => playback ? undefined : subscribeToSpeechAvailability(setSpeechAvailable), [playback])
-  useEffect(() => playback ? undefined : subscribeToSpeechState(setActiveKey), [playback])
+  useEffect(() => hasRecorded ? undefined : subscribeToSpeechAvailability(setSpeechAvailable), [hasRecorded])
+  useEffect(() => hasRecorded ? undefined : subscribeToSpeechState(setActiveKey), [hasRecorded])
   useEffect(
     () => () => {
       if (getActiveSpeechKey() === speechKey) cancelSpeech()
@@ -235,63 +236,37 @@ function Player({
     [speechKey],
   )
 
-  useEffect(() => () => playback?.dispose(), [playback])
+  useEffect(() => () => playback.dispose(), [playback])
   useLayoutEffect(() => {
-    if (!isOpen && !expanded) playback?.pause()
+    if (!isOpen && !expanded) playback.pause()
   }, [expanded, isOpen, playback])
   useLayoutEffect(() => {
-    if (playback) {
-      paperRef.current?.style.setProperty('--jp-pen-cover', `${(1 - playback.progress) * 100}%`)
-      paperRef.current?.style.setProperty('--jp-pen-p', String(playback.progress))
+    const paper = paperRef.current
+    const pen = penRef.current
+    const line = paper?.querySelector<HTMLElement>('[data-current="true"] .jp-player__line')
+    if (!paper || !pen || !line || (!isOpen && !expanded)) return
+    const previous = boundStep.current
+    const binding = bindHandwriting(paper, line, pen,
+      previous.paper === paper && previous.mode === mode && previous.index + 1 === index,
+    )
+    boundStep.current = { index, mode, paper }
+    handwriting.current = binding
+    binding.paint(playback.progress)
+    return () => {
+      binding.dispose()
+      handwriting.current = null
     }
-  }, [animatedMode, expanded, playback])
+  }, [animatedMode, expanded, index, isOpen, mode, playback])
 
   useEffect(() => {
     if (playSignal <= 0) return
     setAnimatedMode(true)
-    if (playback) {
-      playback.start()
-      logEvent('player_play', { animationId: id, questionId })
-      return
-    }
-    remaining.current = duration
-    setIndex(0)
-    setFinished(false)
-    setReplaying(false)
-    setReplay((prev) => prev + 1)
-    setPlaying(true)
+    playback.start()
     logEvent('player_play', { animationId: id, questionId })
-  }, [playSignal, duration, id, questionId, playback])
-
-  useLayoutEffect(() => {
-    if (playback || !legacyPlaying || legacyIndex < 0) return
-
-    const startedAt = performance.now()
-    let elapsed = false
-    const timer = window.setTimeout(() => {
-      elapsed = true
-      remaining.current = duration
-      if (legacyIndex === steps.length - 1) {
-        setFinished(true)
-        setPlaying(false)
-      } else {
-        setIndex(legacyIndex + 1)
-      }
-    }, remaining.current)
-
-    return () => {
-      window.clearTimeout(timer)
-      if (!elapsed) {
-        remaining.current = Math.max(0, remaining.current - (performance.now() - startedAt))
-      }
-    }
-  }, [playback, legacyPlaying, legacyIndex, duration, steps.length])
+  }, [playSignal, id, questionId, playback])
 
   function handleToggleOpen() {
-    if (isOpen) {
-      playback?.pause()
-      setPlaying(false)
-    }
+    if (isOpen) playback.pause()
     if (onToggleOpen) {
       onToggleOpen()
     } else {
@@ -302,51 +277,19 @@ function Player({
   function startAnimatedFromStepOne() {
     setAnimatedMode(true)
     logEvent('player_play', { animationId: id, questionId })
-    if (playback) {
-      playback.start()
-      return
-    }
-    remaining.current = duration
-    setIndex(0)
-    setFinished(false)
-    setReplaying(false)
-    setReplay((prev) => prev + 1)
-    setPlaying(true)
+    playback.start()
   }
 
   function togglePlay() {
-    if (playback) {
-      if (!playing) logEvent('player_play', { animationId: id, questionId })
-      playback.toggle()
-      return
-    }
-    if (playing) {
-      setPlaying(false)
-      return
-    }
-
-    if (!current || finished) {
-      startAnimatedFromStepOne()
-      return
-    }
-    if (replaying) remaining.current = duration
-    setReplaying(false)
-    setPlaying(true)
-    logEvent('player_play', { animationId: id, questionId })
+    if (!playing) logEvent('player_play', { animationId: id, questionId })
+    playback.toggle()
   }
 
   function replayStep(position: number) {
     const step = steps[position]
     if (!step) return
-
     logEvent('player_replay_step', { animationId: id, questionId, step: step.n })
-    if (playback) {
-      playback.start(position, true)
-      return
-    }
-    setPlaying(false)
-    setReplaying(true)
-    setReplay((prev) => prev + 1)
+    playback.start(position, true)
   }
 
   function readSteps() {
@@ -364,19 +307,13 @@ function Player({
     setMode(nextMode)
     const nextSteps = nextMode === 'teach' && animation.teach ? animation.teach : animation.steps
     const nextAudio = calculationAudio(id, nextMode)
-    if (playback) {
-      setAnimatedMode(true)
-      playback.setClips(nextSteps.map((step) => nextAudio?.clips.get(step.n)), true)
-      logEvent('player_play', { animationId: id, questionId, mode: nextMode })
-      return
-    }
+    if (getActiveSpeechKey() === speechKey) cancelSpeech()
     setAnimatedMode(true)
-    remaining.current = duration
-    setIndex(0)
-    setFinished(false)
-    setReplaying(false)
-    setReplay((prev) => prev + 1)
-    setPlaying(true)
+    playback.setClips(
+      nextSteps.map((step) => nextAudio?.clips.get(step.n)),
+      true,
+      duration * (nextMode === 'teach' && !nextAudio ? 1.25 : 1),
+    )
     logEvent('player_play', { animationId: id, questionId, mode: nextMode })
   }
 
@@ -401,7 +338,7 @@ function Player({
     </div>
   )
 
-  const speaker = playback && (
+  const speaker = hasRecorded && (
     <button
       type="button"
       class="jp-player__speaker"
@@ -419,7 +356,7 @@ function Player({
     </button>
   )
 
-  const speedControl = playback && (
+  const speedControl = (
     <select
       class="jp-player__speed"
       aria-label="Playback speed"
@@ -431,8 +368,6 @@ function Player({
       <option value={1.25}>1.25×</option>
     </select>
   )
-
-  const StepRow = playback ? 'button' : 'div'
 
   const calculationBody = !animatedMode ? (
     <>
@@ -458,7 +393,7 @@ function Player({
         {speaker}
         {speedControl}
         {modeSwitch}
-        {!playback && speechAvailable && (
+        {!hasRecorded && speechAvailable && (
           <button
             type="button"
             class="jp-calc-voice-btn"
@@ -487,8 +422,7 @@ function Player({
           type="button"
           class="jp-player__all-btn"
           onClick={() => {
-            playback?.stop()
-            setPlaying(false)
+            playback.stop()
             setAnimatedMode(false)
           }}
         >
@@ -497,10 +431,8 @@ function Player({
       </div>
 
       <div
-        class={hasStructuredSteps ? 'jp-player__paper jp-player__paper--steps' : 'jp-player__paper'}
+        class={hasStructuredSteps ? 'jp-calc-paper jp-player__paper jp-player__paper--steps' : 'jp-calc-paper jp-player__paper'}
         ref={paperRef}
-        data-timed={playback ? 'true' : undefined}
-        data-running={playing || replaying}
       >
         {!current && (
           <p class="jp-player__prompt">
@@ -513,20 +445,27 @@ function Player({
           const structured = hasStructuredStepFields(step)
           const isFinal = position === steps.length - 1
           return (
-            <StepRow
-              key={position === index ? `${position}-${replay}` : position}
+            <button
+              key={step.n}
               class={structured ? 'jp-player__row jp-player__row--step' : 'jp-player__row'}
               data-current={position === index}
               data-final={isFinal ? 'true' : 'false'}
               aria-hidden={position > index ? true : undefined}
-              type={playback ? 'button' : undefined}
-              aria-label={playback ? `Replay step ${position + 1}: ${structured ? (step.title ?? step.tag) : step.display}` : undefined}
-              onClick={playback ? () => replayStep(position) : undefined}
+              tabIndex={position > index ? -1 : undefined}
+              type="button"
+              aria-label={`Replay step ${position + 1}: ${structured ? (step.title ?? step.tag) : step.display}`}
+              onClick={() => replayStep(position)}
             >
               {renderAnimatedStepContent(step)}
-            </StepRow>
+            </button>
           )
         })}
+        <svg ref={penRef} class="jp-player__pen" viewBox="0 0 24 24" aria-hidden="true"
+          fill="var(--bg)" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m1 23 2-6L16 4l3 3L6 20z" />
+          <path d="M3 17l3 3M13 7l3 3" fill="none" />
+          <path d="M23 14l-4-5a2 2 0 0 0-3 2l1 2-5-3a2 2 0 0 0-2 3l4 3-2-1a2 2 0 0 0-2 3l4 3c2 2 5 2 7 1l2-1" />
+        </svg>
       </div>
 
       <p class="jp-player__caption" aria-live="polite" aria-atomic="true">
@@ -541,15 +480,29 @@ function Player({
               : <path d="M7 4.5v15l13-7.5z" />}
           </svg>
         </button>
-        <button type="button" class="jp-player__replay" onClick={() => (playback ? playback.rewind(3) : replayStep(index))} disabled={!current} aria-label={playback ? 'Back 3 seconds' : 'Replay this step'} title={playback ? 'Back 3 seconds' : 'Replay this step'}>
+        <button type="button" class="jp-player__replay" onClick={() => hasRecorded ? playback.rewind(3) : replayStep(index)} disabled={!current} aria-label={hasRecorded ? 'Back 3 seconds' : 'Replay this step'} title={hasRecorded ? 'Back 3 seconds' : 'Replay this step'}>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5" />
           </svg>
         </button>
+        {[-1, 1].map((direction) => {
+          const target = index + direction
+          const label = direction < 0 ? 'Previous step' : 'Next step'
+          return (
+            <button key={direction} type="button" class="jp-btn jp-player__replay" aria-label={label} title={label}
+              disabled={!current || target < 0 || target >= steps.length}
+              onClick={() => playback.start(target, false, playing)}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d={direction < 0 ? 'm15 5-7 7 7 7' : 'm9 5 7 7-7 7'} />
+              </svg>
+            </button>
+          )
+        })}
         {speaker}
         {speedControl}
         {modeSwitch}
-        {!playback && speechAvailable && (
+        {!hasRecorded && speechAvailable && (
           <button type="button" class="jp-player__voice" aria-pressed={speaking} onClick={readSteps}>
             {speaking ? (
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

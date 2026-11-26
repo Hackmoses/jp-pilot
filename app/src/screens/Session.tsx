@@ -354,6 +354,11 @@ export function Session({ attempt, study, review }: SessionProps) {
   const animationKind = question.animationId ? getAnimation(question.animationId)?.kind : undefined
   const isConceptAnimation = animationKind === 'concept'
   const showRightCol = answered && detailed && isWide && (Boolean(question.animationId) || desktopAskOpen)
+  const letterFor = (optionId: OptionId): string => {
+    const pos = options.findIndex((option) => option.id === optionId)
+    return pos >= 0 ? OPTION_LETTERS[pos] : optionId.toUpperCase()
+  }
+
   const calculationPlayer = question.animationId ? (
     <SolutionPlayer
       animationId={question.animationId}
@@ -361,6 +366,7 @@ export function Session({ attempt, study, review }: SessionProps) {
       onToggleOpen={() => setCalcOpen((prev) => !prev)}
       playSignal={playSignal}
       isCorrect={answered ? pickedId === question.answerId : undefined}
+      answerLetter={letterFor(question.answerId)}
     />
   ) : null
 
@@ -384,11 +390,6 @@ export function Session({ attempt, study, review }: SessionProps) {
   const handleCloseSheet = () => {
     setAskOpen(false)
     requestAnimationFrame(() => askTriggerRef.current?.focus())
-  }
-
-  const letterFor = (optionId: OptionId): string => {
-    const pos = options.findIndex((option) => option.id === optionId)
-    return pos >= 0 ? OPTION_LETTERS[pos] : optionId.toUpperCase()
   }
 
   return (

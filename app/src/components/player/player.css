@@ -245,7 +245,7 @@ body:has(.jp-calc-modal[open]) {
   min-height: 180px;
   box-sizing: border-box;
   padding: 14px 16px 18px;
-  background: repeating-linear-gradient(var(--bg) 0 37px, var(--paper-line) 38px);
+  border-top: 0;
 }
 
 .jp-player__prompt {
@@ -286,6 +286,7 @@ button.jp-player__row:focus-visible,
 }
 
 .jp-player__line {
+  min-width: 0;
   font: 500 1.75rem/1.25 var(--font-handwriting);
 }
 
@@ -305,67 +306,29 @@ button.jp-player__row:focus-visible,
   font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .jp-player__row[data-current="true"] .jp-player__line {
-    animation: jp-player-write 1.8s steps(30, end) both;
-  }
-
-  .jp-player__row[data-current="true"] .jp-player__tag {
-    animation: jp-player-fade 0.4s ease 1.4s both;
-  }
-
-  .jp-player__paper[data-running="false"] .jp-player__row[data-current="true"] > span,
-  .jp-player__paper[data-running="false"] .jp-player__row[data-current="true"] .jp-player__line {
-    animation-play-state: paused;
-  }
-
-  .jp-player__paper[data-timed="true"] .jp-player__row[data-current="true"] .jp-player__line {
-    animation: none;
-    clip-path: inset(0 var(--jp-pen-cover, 100%) 0 0);
-  }
-
-  .jp-player__paper[data-timed="true"] .jp-player__row[data-current="true"] .jp-player__tag {
-    animation: none;
-  }
-
-  .jp-player__row[data-current="true"] .jp-math-bar {
-    transform-origin: left;
-    animation: jp-math-bar-draw 0.4s linear 0.65s both;
-  }
-
-  .jp-player__row[data-current="true"] .jp-math-den {
-    animation: jp-player-write 0.65s steps(20, end) 1.05s both;
-  }
-
-  .jp-player__paper[data-timed="true"] .jp-player__row[data-current="true"] .jp-math-bar {
-    animation: none;
-    transform: scaleX(clamp(0, (var(--jp-pen-p, 1) - 0.38) * 4, 1));
-  }
-
-  .jp-player__paper[data-timed="true"] .jp-player__row[data-current="true"] .jp-math-den {
-    animation: none;
-    clip-path: inset(0 calc(clamp(0, 1 - (var(--jp-pen-p, 1) - 0.60) * 2.8, 1) * 100%) 0 0);
-  }
+.jp-player__pen {
+  position: absolute;
+  inset: 0 auto auto 0;
+  inline-size: var(--space-6);
+  block-size: var(--space-6);
+  color: var(--brand);
+  pointer-events: none;
+  clip-path: inset(100%);
 }
 
-@keyframes jp-math-bar-draw {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+@media (prefers-reduced-motion: reduce) {
+  .jp-player__pen {
+    display: none;
+  }
+
+  .jp-player__line {
+    clip-path: none !important;
+  }
 }
 
 .jp-calc-paper .jp-math-bar,
 .jp-player__line .jp-math-bar {
   height: 1.5px;
-}
-
-@keyframes jp-player-write {
-  from { clip-path: inset(0 100% 0 0); }
-  to { clip-path: inset(0); }
-}
-
-@keyframes jp-player-fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 .jp-player__caption {
@@ -701,7 +664,6 @@ button.jp-player__row:focus-visible,
 /* Structured calculation step cards (used when title/reason/working are present) */
 .jp-calc-paper--steps,
 .jp-player__paper--steps {
-  background: var(--bg);
   padding: 10px 14px;
   gap: 8px;
   font-family: var(--font-system);
@@ -772,6 +734,7 @@ button.jp-player__row:focus-visible,
   display: block;
   text-align: center;
   padding: 4px 6px 2px;
+  border-block-end: 1px solid var(--paper-line);
 }
 
 .jp-calc-line-row--step .jp-calc-line-text,
@@ -806,7 +769,6 @@ button.jp-player__row:focus-visible,
 
 .jp-calc-modal .jp-calc-paper--steps,
 .jp-calc-modal .jp-player__paper--steps {
-  background: var(--bg);
   padding: 20px 24px;
   gap: 12px;
   font-size: inherit;
