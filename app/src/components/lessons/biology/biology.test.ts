@@ -48,28 +48,28 @@ describe('Biology Teach me', () => {
     expect(teachMeButton('biology', 'unknown', false)).toBeUndefined()
   })
 
-  it('keeps each clip in Study and agrees on drawing, timing and quick check', () => {
+  it('keeps the same set of clips in the catalogue and drawing registry', () => {
     expect(new Set(Object.keys(catalogue))).toEqual(new Set(topicsById.keys()))
     expect(drawingIds).toEqual(new Set(topicsById.keys()))
-    for (const { topicId, lessons } of topics) {
-      expect(conceptLessonTopic('biology', topicId!)).toBe('biology-study-' + topicId)
-      for (const { id, scenes, quickCheck } of lessons) {
-        const run = scenes.reduce((ms, scene) => ms + fallbackMs(scene), 0)
-        expect(run, id).toBeGreaterThanOrEqual(40_000)
-        expect(run, id).toBeLessThanOrEqual(60_000)
-        expect(scenes.length, id).toBeLessThanOrEqual(5)
-        expect(quickCheck?.options[quickCheck.answerIndex], id).toBeTruthy()
-        const question = followUpIds(id)[0]
-        expect(teachMeButton('biology', question, false)?.text).toBe('Teach me · ' + Math.round(run / 1000) + ' sec')
-        for (const scene of scenes) {
-          const duration = fallbackMs(scene)
-          let previous = -1
-          for (const time of beatTimes(scene, duration)) {
-            expect(time, scene.id).toBeGreaterThan(previous)
-            expect(time, scene.id).toBeLessThan(duration)
-            previous = time
-          }
-        }
+  })
+
+  const clips = topics.flatMap(({ topicId, lessons }) => lessons.map(lesson => ({ ...lesson, topicId })))
+  it.each(clips)('keeps $id in Study and agrees on timing and quick check', ({ id, topicId, scenes, quickCheck }) => {
+    expect(conceptLessonTopic('biology', topicId!)).toBe('biology-study-' + topicId)
+    const run = scenes.reduce((ms, scene) => ms + fallbackMs(scene), 0)
+    expect(run, id).toBeGreaterThanOrEqual(40_000)
+    expect(run, id).toBeLessThanOrEqual(60_000)
+    expect(scenes.length, id).toBeLessThanOrEqual(5)
+    expect(quickCheck?.options[quickCheck.answerIndex], id).toBeTruthy()
+    const question = followUpIds(id)[0]
+    expect(teachMeButton('biology', question, false)?.text).toBe('Teach me · ' + Math.round(run / 1000) + ' sec')
+    for (const scene of scenes) {
+      const duration = fallbackMs(scene)
+      let previous = -1
+      for (const time of beatTimes(scene, duration)) {
+        expect(time, scene.id).toBeGreaterThan(previous)
+        expect(time, scene.id).toBeLessThan(duration)
+        previous = time
       }
     }
   })

@@ -22,17 +22,22 @@
         {
           "id": "biology-chromosomes-2",
           "show": "",
-          "say": "X-linked alleles lie on the X chromosome. For these genes the Y chromosome does not carry a matching allele. An XY person can express an X-linked recessive trait with one altered allele. If the mother carries colour blindness and the father is affected, half of the children are expected to be affected.",
+          "say": "Here the mother carries one altered X-linked allele. With an unaffected father, half the sons are colour-blind, and half the daughters are unaffected carriers. That makes one affected child in four. In the JAMB cross the father is colour-blind, so one daughter and one son out of four are affected.",
           "visual": "1",
           "beats": [
             {
-              "word": "X-linked",
-              "action": "part-1-0",
+              "word": "mother",
+              "action": "cross-mother",
               "label": ""
             },
             {
-              "word": "An",
-              "action": "part-1-1",
+              "word": "unaffected",
+              "action": "cross-unaffected",
+              "label": ""
+            },
+            {
+              "word": "JAMB",
+              "action": "cross-affected",
               "label": ""
             }
           ]
@@ -63,7 +68,7 @@
             },
             {
               "word": "haemophilia",
-              "action": "part-1-1",
+              "action": "part-1-0",
               "label": ""
             },
             {

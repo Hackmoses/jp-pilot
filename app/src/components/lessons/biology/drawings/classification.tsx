@@ -3,8 +3,8 @@ import { processDrawing } from '../AnatomyBoard'
 export default processDrawing("How biologists classify animals", [
   {
     outline: [
-      ["ink", "M150 44V65M57 65H268M57 65V95M149 65V87M268 65V114M149 120V137M106 138H202M106 138V165M202 138V165"],
-      ["paper", "M111 17H194V45H111ZM96 87H201V121H96Z"],
+      ["ink", "M150 44V65M57 65H268M57 65V77M149 65V138M268 65V114M149 138H106V165"],
+      ["paper", "M111 17H194V45H111Z"],
     ],
     parts: [
       {
@@ -17,7 +17,7 @@ export default processDrawing("How biologists classify animals", [
           ["amber", "M81 169Q88 159 103 165L124 161Q145 164 150 177L138 186L115 176Q105 192 80 188Z"],
         ],
         flows: [
-          ["blue", "M148 116V137H108V162"],
+          ["blue", "M149 100V137H108V162"],
         ],
       },
       {
@@ -31,10 +31,11 @@ export default processDrawing("How biologists classify animals", [
         ],
       },
       {
-        cue: 'part-1-0', label: "Radial|symmetry", at: [17,105], tip: [55,76], align: 'start',
+        cue: 'part-1-0', label: "Radial symmetry", at: [14,143], tip: [55,88], align: 'start',
         strokes: [
           ["red", "M56 64L67 86L90 85L75 103L82 126L57 114L37 127L41 104L22 89L46 88Z"],
           ["ink", "M56 64V115M23 90L78 119M88 87L40 121"],
+          ["lead", "M53 130L56 114"],
         ],
       },
       {
@@ -50,6 +51,7 @@ export default processDrawing("How biologists classify animals", [
         strokes: [
           ["green", "M245 153L263 144L285 149L298 137L285 155L269 168L254 170Z"],
           ["ink", "M257 153l4 5l5-4l5 4l5-6m-9 8l4 3m3-11l4 3"],
+          ["lead", "M301 191L279 165"],
         ],
       },
       {

@@ -27,17 +27,22 @@
         {
           "id": "biology-osmosis-2",
           "show": "",
-          "say": "A plant cell in a concentrated sugar solution loses water. Its membrane pulls away from the rigid cell wall. This is plasmolysis. A red blood cell in distilled water takes water in. It may burst, a process called haemolysis.",
+          "say": "In concentrated sugar solution, a plant cell loses water. The membrane pulls away from its rigid wall. This is plasmolysis. In a dilute solution such as distilled water, a red blood cell takes in water and swells. It can burst. This is haemolysis.",
           "visual": "1",
           "beats": [
             {
-              "word": "A",
+              "word": "concentrated",
               "action": "part-1-0",
               "label": ""
             },
             {
-              "word": "A",
+              "word": "red",
               "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "burst",
+              "action": "part-1-2",
               "label": ""
             }
           ]
@@ -63,7 +68,7 @@
           "beats": [
             {
               "word": "arrows",
-              "action": "part-0-0",
+              "action": "part-1-0",
               "label": ""
             },
             {
@@ -73,7 +78,7 @@
             },
             {
               "word": "burst",
-              "action": "part-1-1",
+              "action": "part-1-2",
               "label": ""
             }
           ]

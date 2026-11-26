@@ -17,10 +17,44 @@ export function timeline({ scene, frame }: DrawingProps, sequence: string[][]) {
 }
 
 export function Diagram({ label, children, point, viewBox = "0 0 380 248" }: { label: string; children: ComponentChildren; point?: Point; viewBox?: string }) {
-  return <svg class="jp-concept-svg jp-biology-svg" viewBox={viewBox} role="img" aria-label={label}>
+  const board = useRef<SVGSVGElement>(null)
+  const hand = useRef<SVGGElement>(null)
+  const [x, y] = point ?? []
+  useLayoutEffect(() => {
+    if (!board.current || !hand.current || x === undefined || y === undefined) return
+    const { width, height } = board.current.viewBox.baseVal
+    const labels = Array.from(board.current.querySelectorAll('text'), (text) => text.getBBox())
+
+    // Rotate around the writing tip, checking the full hand before putting it down.
+    for (const size of [26, 20, 16, 12]) {
+      for (const gap of [3, 9, 17, 25, 35, 45]) {
+        const reach = gap + size
+        const stops = [
+          [x + gap, y - reach, 0],
+          [x + gap, y + gap, 90],
+          [x - reach, y + gap, 180],
+          [x - reach, y - reach, 270],
+        ]
+        const stop = stops.find(([left, top]) =>
+          left >= 0 && left + size <= width && top >= 0 && top + size <= height &&
+          labels.every(({ x, y, width, height }) =>
+            left + size + 2 <= x || left - 2 >= x + width || top + size + 2 <= y || top - 2 >= y + height))
+        if (!stop) continue
+        const [left, top, angle] = stop
+        hand.current.setAttribute('transform',
+          'translate(' + left + ' ' + top + ') scale(' + size / 26 + ') rotate(' + angle + ' 13 13)')
+        hand.current.setAttribute('visibility', 'visible')
+        return
+      }
+    }
+    hand.current.setAttribute('visibility', 'hidden')
+  }, [x, y, viewBox])
+
+  return <svg ref={board} class="jp-concept-svg jp-biology-svg" viewBox={viewBox} role="img" aria-label={label}>
     {children}
-    {point && <WritingHand class="jp-biology-hand" viewBox="0 0 24 24" width="26" height="26"
-      style={{ transform: 'translate(' + (point[0] - 1) + 'px, ' + (point[1] - 25) + 'px)' }} />}
+    {point && <g ref={hand} visibility="hidden">
+      <WritingHand class="jp-biology-hand" width="26" height="26" />
+    </g>}
   </svg>
 }
 

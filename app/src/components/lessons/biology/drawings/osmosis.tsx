@@ -1,6 +1,8 @@
+import type { DrawingProps } from '../../lesson'
 import { processDrawing } from '../AnatomyBoard'
+import { Diagram, Flow, type Point } from '../Diagram'
 
-export default processDrawing("Osmosis in plants and animals", [
+const Overview = processDrawing("Osmosis in plants and animals", [
   {
     outline: [
       ["green", "M50 82Q104 64 211 77Q250 85 267 113L267 189Q258 226 207 230Q119 246 58 215Q38 186 42 131Z"],
@@ -8,7 +10,7 @@ export default processDrawing("Osmosis in plants and animals", [
     ],
     parts: [
       {
-        cue: 'part-0-0', until: 'part-1-0', label: "Water potential", at: [16,33], tip: [92,109], align: 'start',
+        cue: 'part-0-0', label: "Water potential", at: [16,33], tip: [92,109], align: 'start',
         strokes: [
           ["lead", "M101 37L89 88"],
         ],
@@ -17,33 +19,12 @@ export default processDrawing("Osmosis in plants and animals", [
         ],
       },
       {
-        cue: 'part-0-1', until: 'part-1-0', label: "Diffusion", at: [307,57], tip: [208,95], align: 'end',
+        cue: 'part-0-1', label: "Diffusion", at: [307,57], tip: [208,95], align: 'end',
         strokes: [
           ["ink", "M218 66h2m7 1h2m7-5h2m-21-7h2m22 1h2m-9 9h2m-15 19h2"],
         ],
         flows: [
           ["blue", "M228 55L226 92L204 112"],
-        ],
-      },
-      {
-        cue: 'part-1-0', label: "Plasmolysis", at: [14,260], tip: [91,168], align: 'start',
-        flows: [
-          ["blue", "M219 148Q249 145 282 127"],
-          ["blue", "M100 138L58 137L23 130"],
-        ],
-        motion: [
-          ["blue", "M65 94Q128 79 206 93Q246 100 247 135V181Q237 207 196 214Q121 228 70 201Q54 154 65 94Z", "M100 112Q139 95 188 106Q216 114 222 139V169Q211 192 183 195Q131 200 99 185Q85 154 100 112Z"],
-        ],
-      },
-      {
-        cue: 'part-1-1', label: "Red cell|in dilute water", at: [306,253], tip: [278,171], align: 'end',
-        strokes: [
-          ["zoom", "M238 204L273 189M265 188L294 189"],
-          ["red", "M271 170a20 12 0 1 0 40 0a20 12 0 1 0-40 0Z"],
-          ["ink", "M278 171q12 6 25-1"],
-        ],
-        flows: [
-          ["blue", "M277 207L287 180"],
         ],
       },
     ],
@@ -65,3 +46,56 @@ export default processDrawing("Osmosis in plants and animals", [
     ],
   },
 ])
+
+const cellWall = 'M25 71L151 71Q174 74 179 96V178Q176 197 154 200H48Q25 197 23 173V97Q23 82 25 71Z'
+const point: Record<string, Point> = {
+  'part-1-0': [73, 153], 'part-1-1': [253, 134], 'part-1-2': [268, 112],
+}
+
+export default function Osmosis(props: DrawingProps) {
+  const { scene, frame } = props
+  if (scene.visual === '0' || scene.visual === '2') return <Overview {...props} />
+
+  const review = scene.visual === '3'
+  const cues = scene.beats.slice(0, frame.reached).map(({ action }) => action)
+  const active = cues[cues.length - 1]
+  const settled = frame.reduced || review
+  const plant = settled || cues.includes('part-1-0')
+  const red = settled || cues.includes('part-1-1')
+  const burst = settled || cues.includes('part-1-2')
+  const plantProgress = settled || active !== 'part-1-0' ? 1 : Math.min(frame.sinceBeat / 1650, 1)
+  const redProgress = Math.min(frame.sinceBeat / 1650, 1)
+  const inset = plant ? 29 * plantProgress : 0
+
+  return <Diagram label="A plant cell losing water and a red blood cell swelling and bursting" viewBox="0 0 320 274"
+    point={!frame.reduced && active ? point[active] : undefined}>
+    <path class="jp-biology-green-seed" d={cellWall} />
+    <rect class="jp-biology-anatomy" x={28 + inset} y={76 + inset} width={146 - inset * 2} height={119 - inset * 2} rx="13" />
+    <rect class="jp-biology-blue-soft" x={39 + inset} y={88 + inset} width={124 - inset * 2} height={95 - inset * 2} rx="16" />
+    {plant && <>
+      <Flow d="M80 118Q67 100 53 55" tone="jp-biology-blue" seconds={frame.seconds} moving={!frame.reduced && active === 'part-1-0'} />
+      <Flow d="M139 135L189 126" tone="jp-biology-blue" seconds={frame.seconds} moving={!frame.reduced && active === 'part-1-0'} />
+      <path class="jp-biology-leader" d="M61 230L73 168M112 58L121 71" />
+      <text x="111" y="53" text-anchor="middle">Cell wall</text>
+      <text x="19" y="243">Plasmolysis</text>
+    </>}
+    {red && <>
+      {burst ? <>
+        <path class="jp-biology-red-soft" d="M271 109Q250 93 231 111Q211 131 226 154Q240 173 258 161L264 150L273 156Q284 147 284 132L273 134L278 122L267 122Z" />
+        <path class="jp-biology-contour" d="M281 115l11-8m-9 16l16-2m-14 17l11 6" />
+        <g class="jp-biology-red-soft">
+          <circle cx="292" cy="115" r="3" /><circle cx="303" cy="129" r="2.5" /><circle cx="295" cy="146" r="2" />
+        </g>
+        <path class="jp-biology-leader" d="M265 195L266 157" />
+        <text x="303" y="211" text-anchor="end">Haemolysis</text>
+      </> : <>
+        <Flow d="M219 81L233 111" tone="jp-biology-blue" seconds={frame.seconds} moving={!frame.reduced} />
+        <Flow d="M297 90L275 114" tone="jp-biology-blue" seconds={frame.seconds} moving={!frame.reduced} />
+        <ellipse class="jp-biology-red-soft" cx="252" cy="132" rx={24 + 9 * redProgress} ry={10 + 21 * redProgress} />
+        <path class="jp-biology-contour" opacity={1 - redProgress} d="M236 132Q251 140 267 132" />
+        <path class="jp-biology-leader" d="M265 195L257 164" />
+      </>}
+      <text x="303" y="234" text-anchor="end">Red cell in<tspan x="303" dy="15">dilute solution</tspan></text>
+    </>}
+  </Diagram>
+}

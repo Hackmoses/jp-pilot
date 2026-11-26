@@ -387,11 +387,10 @@
 }
 
 .jp-biology-organ[data-zoom="true"] { transform: none; }
-.jp-biology-hand { color: var(--ink); transition: transform 220ms ease-out; }
+.jp-biology-hand { color: var(--ink); }
 
 @media (prefers-reduced-motion: reduce) {
   .jp-biology-organ,
-  .jp-biology-hand,
   .jp-biology-player .jp-concept-btn { transition: none; }
 }
 
