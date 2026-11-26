@@ -1,0 +1,105 @@
+{
+  "subject": "biology",
+  "topicId": "8",
+  "lessons": [
+    {
+      "id": "biology-flowers",
+      "title": "Pollination and fertilisation in flowers",
+      "scenes": [
+        {
+          "id": "biology-flowers-1",
+          "show": "",
+          "say": "A stamen is the pollen-producing organ. Its anther sits on a filament and releases pollen. The stigma is the receptive tip of a carpel. Pollination transfers pollen from an anther onto a stigma.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-flowers-2",
+          "show": "",
+          "say": "Wind-pollinated flowers usually offer little or no nectar. Their pollen is carried through the air instead of being carried by a feeding visitor. A pollen tube grows down from a compatible stigma to an ovule in the ovary, carrying two male gametes.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Wind-pollinated",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-flowers-3",
+          "show": "",
+          "say": "The ovule develops into a seed after fertilisation. Inside it the zygote develops into an embryo. One male gamete fuses with the egg to make a diploid zygote. The other usually joins two polar nuclei to start triploid endosperm.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "One",
+              "action": "part-2-1",
+              "label": ""
+            },
+            {
+              "word": "polar",
+              "action": "part-2-n",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-flowers-4",
+          "show": "",
+          "say": "For JAMB, distinguish pollen transfer from fertilisation, match wind pollination to little or no nectar, and recall both products of double fertilisation. Blue arrows trace pollen or male gametes towards their destinations.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "transfer",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "wind",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "products",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "What develops from the fertilised ovule?",
+        "options": [
+          "Pollen grain",
+          "Petal",
+          "Seed"
+        ],
+        "answerIndex": 2,
+        "feedback": "The ovule becomes a seed, while the ovary usually becomes the fruit."
+      }
+    }
+  ]
+}

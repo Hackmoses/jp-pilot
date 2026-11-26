@@ -1,0 +1,90 @@
+{
+  "subject": "biology",
+  "topicId": "10",
+  "lessons": [
+    {
+      "id": "biology-chromosomes",
+      "title": "DNA, chromosomes and X-linked inheritance",
+      "scenes": [
+        {
+          "id": "biology-chromosomes-1",
+          "show": "",
+          "say": "DNA has two strands. Across the strands, adenine pairs with thymine and guanine pairs with cytosine.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "DNA",
+              "action": "part-0-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-chromosomes-2",
+          "show": "",
+          "say": "X-linked alleles lie on the X chromosome. For these genes the Y chromosome does not carry a matching allele. An XY person can express an X-linked recessive trait with one altered allele. If the mother carries colour blindness and the father is affected, half of the children are expected to be affected.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "X-linked",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "An",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-chromosomes-3",
+          "show": "",
+          "say": "During conjugation, two compatible Paramecium cells temporarily join and exchange micronuclear genetic material. This changes their genetic combinations.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "During",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-chromosomes-4",
+          "show": "",
+          "say": "JAMB asks which DNA bases pair, why X-linked haemophilia can show with one altered allele in an XY person, and which protist conjugates. Blue arrows show exchange of nuclear material between the cells.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "DNA",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "haemophilia",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "protist",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which base in DNA pairs with adenine?",
+        "options": [
+          "Thymine",
+          "Guanine",
+          "Cytosine"
+        ],
+        "answerIndex": 0,
+        "feedback": "Adenine pairs with thymine. Guanine pairs with cytosine."
+      }
+    }
+  ]
+}

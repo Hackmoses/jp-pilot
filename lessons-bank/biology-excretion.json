@@ -1,0 +1,95 @@
+{
+  "subject": "biology",
+  "topicId": "6",
+  "lessons": [
+    {
+      "id": "biology-excretion",
+      "title": "Excretion, water balance and skin glands",
+      "scenes": [
+        {
+          "id": "biology-excretion-1",
+          "show": "",
+          "say": "In freshwater Paramecium, a contractile vacuole inside the cell periodically empties excess water to the outside. In many insects, Malpighian tubules open into the gut and help remove nitrogenous waste as uric acid or urates, saving water.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "In",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "In",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-excretion-2",
+          "show": "",
+          "say": "A sweat gland beneath the skin sends watery sweat, containing salts and a little urea, through a duct to the surface. A sebaceous gland beside a hair follicle secretes oily sebum, which lubricates hair and skin.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-excretion-3",
+          "show": "",
+          "say": "Plants can store tannins in tissues such as bark. Tannins bind proteins and are used to turn hides into leather.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Plants",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-excretion-4",
+          "show": "",
+          "say": "JAMB asks what the contractile vacuole expels, which nitrogenous waste conserves water in many insects, and which skin glands release sebum. Blue arrows trace movement out of a cell, tubule or gland.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "vacuole",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "waste",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "sebum",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which Paramecium structure pumps excess water out?",
+        "options": [
+          "Nucleus",
+          "Contractile vacuole",
+          "Food vacuole"
+        ],
+        "answerIndex": 1,
+        "feedback": "The contractile vacuole gathers and periodically expels excess water."
+      }
+    }
+  ]
+}

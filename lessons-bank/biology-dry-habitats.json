@@ -1,0 +1,95 @@
+{
+  "subject": "biology",
+  "topicId": "9",
+  "lessons": [
+    {
+      "id": "biology-dry-habitats",
+      "title": "Surviving dry conditions",
+      "scenes": [
+        {
+          "id": "biology-dry-habitats-1",
+          "show": "",
+          "say": "The Sahel is the semi-arid belt south of the Sahara. It has a short rainy season and sparse vegetation. A xerophyte lives where water is scarce. Many cacti have spines in place of broad leaves and conserve water.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-dry-habitats-2",
+          "show": "",
+          "say": "Some lungfish burrow into mud and become dormant during dry periods. The drop in activity helps them survive until water returns. Diurnal animals are chiefly active in daylight. That timing describes daily behaviour, whereas aestivation is seasonal dormancy.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Some",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "Diurnal",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-dry-habitats-3",
+          "show": "",
+          "say": "A hygrometer measures humidity. Relative humidity compares the current amount of water vapour with saturation at the same temperature.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-dry-habitats-4",
+          "show": "",
+          "say": "For JAMB, match a xerophyte to water shortage, distinguish diurnal activity from dormancy, and choose a hygrometer for humidity. The blue arrows show water leaving a plant surface and a lungfish entering mud.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "xerophyte",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "dormancy",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "hygrometer",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "What is dormancy during a dry period called?",
+        "options": [
+          "Transpiration",
+          "Aestivation",
+          "Germination"
+        ],
+        "answerIndex": 1,
+        "feedback": "Some lungfish survive seasonal drying in a dormant state called aestivation."
+      }
+    }
+  ]
+}

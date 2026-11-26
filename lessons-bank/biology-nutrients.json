@@ -1,0 +1,100 @@
+{
+  "subject": "biology",
+  "topicId": "3",
+  "lessons": [
+    {
+      "id": "biology-nutrients",
+      "title": "Nutrients, deficiency and food tests",
+      "scenes": [
+        {
+          "id": "biology-nutrients-1",
+          "show": "",
+          "say": "A brick-red precipitate with Benedict’s reagent can indicate a reducing sugar. The exact colour can vary with concentration. Cellulose is a polysaccharide, a chain of glucose units. It forms structural fibres in plant cell walls.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "Cellulose",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-nutrients-2",
+          "show": "",
+          "say": "Copper is a plant micronutrient. Roots take it up in small amounts, and it supports several enzymes and electron transfer. Dietary fibre, or roughage, adds bulk and helps stool move through the gut. Low fibre can contribute to constipation. The thyroid lies at the front of the neck. Too little iodine over time can cause its enlargement, called goitre.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Copper",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "Dietary",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-1-2",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-nutrients-3",
+          "show": "",
+          "say": "In a mycorrhiza, fungal hyphae spread beyond the root and help deliver mineral ions such as phosphate from the soil.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "In",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-nutrients-4",
+          "show": "",
+          "say": "JAMB asks which test detects reducing sugar, which element prevents iodine-deficiency goitre, and how fungi help roots absorb minerals. The blue arrow beside the root traces mineral ions from soil to plant.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "sugar",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "goitre",
+              "action": "part-1-2",
+              "label": ""
+            },
+            {
+              "word": "roots",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "What does a brick-red result with Benedict’s reagent indicate?",
+        "options": [
+          "Protein",
+          "Reducing sugar",
+          "Starch"
+        ],
+        "answerIndex": 1,
+        "feedback": "Benedict’s reagent forms a coloured precipitate with reducing sugars."
+      }
+    }
+  ]
+}

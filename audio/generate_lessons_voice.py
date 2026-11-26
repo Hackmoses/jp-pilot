@@ -507,7 +507,7 @@ def set_seed(seed: int, device_used: str) -> None:
         torch.mps.manual_seed(seed)
 
 
-def load_chatterbox() -> tuple[ChatterboxTTS, str, float]:
+def load_chatterbox(requested: str = "auto") -> tuple[ChatterboxTTS, str, float]:
     orig_load = torch.load
 
     def _load(device_str: str):
@@ -525,7 +525,12 @@ def load_chatterbox() -> tuple[ChatterboxTTS, str, float]:
         finally:
             torch.load = orig_load
 
-    if torch.backends.mps.is_available():
+    if requested == "cuda" or (requested == "auto" and torch.cuda.is_available()):
+        if not torch.cuda.is_available():
+            raise RuntimeError("Requested --device cuda, but CUDA is not available.")
+        model, sec = _load("cuda")
+        return model, "cuda", sec
+    if requested in ("auto", "mps") and torch.backends.mps.is_available():
         try:
             model, sec = _load("mps")
             return model, "mps", sec
@@ -548,6 +553,8 @@ def generate_audio(
     wav = model.generate(text, exaggeration=exaggeration, cfg_weight=cfg_weight)
     if device_used == "mps":
         torch.mps.synchronize()
+    elif device_used == "cuda":
+        torch.cuda.synchronize()
     gen_sec = time.perf_counter() - t0
     arr = wav.squeeze().detach().cpu().numpy().astype(np.float32)
     if not np.isfinite(arr).all() or arr.size == 0 or float(np.max(np.abs(arr))) < 1e-4:
@@ -555,10 +562,10 @@ def generate_audio(
     return arr, gen_sec
 
 
-def load_all_scenes() -> list[dict]:
+def load_all_scenes(lesson_files: list[Path] | None = None) -> list[dict]:
     scenes: list[dict] = []
     seen_ids: set[str] = set()
-    for path in LESSON_FILES:
+    for path in (lesson_files or LESSON_FILES):
         data = json.loads(path.read_text(encoding="utf-8"))
         for lesson in data["lessons"]:
             lesson_scenes = list(lesson["scenes"]) + list((lesson.get("pastQuestion") or {}).get("scenes", []))
@@ -567,7 +574,8 @@ def load_all_scenes() -> list[dict]:
                 assert sid not in seen_ids, f"Duplicate scene id: {sid}"
                 seen_ids.add(sid)
                 scenes.append(sc)
-    assert len(scenes) == 61, f"Expected 61 scenes, found {len(scenes)}"
+    if lesson_files is None:
+        assert len(scenes) == 61, f"Expected 61 scenes, found {len(scenes)}"
     return scenes
 
 
@@ -588,6 +596,11 @@ def build_manifest(
             })
         elif existing_entries and sid in existing_entries:
             entries.append(existing_entries[sid])
+    # Keep scenes from lesson files outside this run (e.g. physics and chemistry
+    # when only Biology Teach me is voiced).
+    if existing_entries:
+        done = {e["sceneId"] for e in entries}
+        entries.extend(e for sid, e in existing_entries.items() if sid not in done)
     return {"scenes": entries}
 
 
@@ -607,6 +620,8 @@ def main() -> int:
     parser.add_argument("--scenes", default="", help="Comma-separated list of scene IDs to process")
     parser.add_argument("--lead-ms", type=int, default=35)
     parser.add_argument("--trail-ms", type=int, default=35)
+    parser.add_argument("--device", choices=("auto", "cuda", "mps", "cpu"), default="auto")
+    parser.add_argument("--lesson-glob", default="", help="Glob under lessons-bank, e.g. 'biology-*.json'; default is the original 10 concept lessons")
     args = parser.parse_args()
 
     ref_wav = Path(args.ref) if Path(args.ref).is_absolute() else ROOT / args.ref
@@ -630,7 +645,10 @@ def main() -> int:
     state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {"scenes": {}}
     scenes_state: dict[str, dict] = state.setdefault("scenes", {})
 
-    all_scenes = load_all_scenes()
+    lesson_files = sorted((ROOT / "lessons-bank").glob(args.lesson_glob)) if args.lesson_glob else None
+    if args.lesson_glob and not lesson_files:
+        raise FileNotFoundError(f"No lesson files match {args.lesson_glob}")
+    all_scenes = load_all_scenes(lesson_files)
     target_scenes = all_scenes
     if args.scene:
         target_scenes = [s for s in all_scenes if s["id"] == args.scene]
@@ -671,11 +689,11 @@ def main() -> int:
 
     batch_start = time.perf_counter()
     if pending:
-        print("Loading Whisper small.en on CPU...", flush=True)
-        whisper_model = whisper.load_model("small.en", device="cpu")
-
         print("Loading ChatterboxTTS...", flush=True)
-        model, device_used, load_sec = load_chatterbox()
+        model, device_used, load_sec = load_chatterbox(args.device)
+        whisper_device = "cuda" if device_used == "cuda" else "cpu"
+        print(f"Loading Whisper small.en on {whisper_device.upper()}...", flush=True)
+        whisper_model = whisper.load_model("small.en", device=whisper_device)
         print(f"Chatterbox loaded on {device_used} in {load_sec:.2f}s (sr={model.sr})", flush=True)
         print(f"Calling prepare_conditionals() ONCE for {ref_wav} (exaggeration={args.exaggeration})...", flush=True)
         model.prepare_conditionals(str(ref_wav), exaggeration=args.exaggeration)

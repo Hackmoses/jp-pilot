@@ -4,17 +4,21 @@ import { completeConceptLesson, startConceptLesson } from '../../../lib/modes'
 import { TopicLessonPlayer, useLessonTopic } from '../LessonList'
 import { biologyMapping } from './mapping'
 
-const seconds: Record<string, number> = {
-  'biology-heart': 46,
-  'biology-nephron': 44,
-  'biology-inheritance': 45,
+import rawCatalogue from '../../../../../data/biology-clip-index.json'
+
+type ClipInfo = { seconds: number; chapter: string }
+const catalogue: Record<string, ClipInfo | undefined> = rawCatalogue
+
+function chapterClips(chapter: string) {
+  return Object.entries(catalogue).filter(([, info]) => info?.chapter === chapter).map(([id]) => id)
 }
 
 export function teachMeButton(subject: string, id: string, correct: boolean | undefined) {
   const entry = subject === 'biology' && correct !== undefined ? biologyMapping[id] : undefined
-  return entry && {
+  const info = entry && catalogue[entry.clipId]
+  return entry && info && {
     ...entry,
-    text: 'Teach me · ' + seconds[entry.clipId] + ' sec',
+    text: 'Teach me · ' + info.seconds + ' sec',
     className: correct ? 'jp-btn' : 'jp-btn jp-btn--primary',
   }
 }
@@ -28,7 +32,7 @@ function OpenClip({ clipId, id }: { clipId: string; id: string }) {
   if (!lesson || !topic.topicId) return <p class="jp-mode-lead" role="status">This clip is unavailable.</p>
   const chapter = topic.topicId
   return <TopicLessonPlayer file={clipId} topic={topic} lesson={lesson} currentId={id} onComplete={() =>
-    completeConceptLesson('biology', chapter, lesson.id, [lesson.id])} />
+    completeConceptLesson('biology', chapter, lesson.id, chapterClips(chapter))} />
 }
 
 export function TeachMe({ id, correct }: { id: string; correct: boolean }) {

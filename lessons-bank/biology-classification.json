@@ -1,0 +1,105 @@
+{
+  "subject": "biology",
+  "topicId": "2",
+  "lessons": [
+    {
+      "id": "biology-classification",
+      "title": "How biologists classify animals",
+      "scenes": [
+        {
+          "id": "biology-classification-1",
+          "show": "",
+          "say": "Animals can be grouped by shared features. A genus contains one or more related species and is narrower than a family. In the biological species concept, members can potentially interbreed and are reproductively isolated from other species. Fossils and asexual organisms need other criteria.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Animals",
+              "action": "part-0-a",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "In",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-classification-2",
+          "show": "",
+          "say": "A radially symmetrical animal can be divided into similar halves along several planes through its central axis. A whale is a mammal. Mammary glands on its underside produce milk for the calf.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-classification-3",
+          "show": "",
+          "say": "Keratinised scales cover a lizard and help protect its body on land. Many birds have scaly legs or feet beneath distinctly feathered bodies.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Keratinised",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "Many",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-classification-4",
+          "show": "",
+          "say": "JAMB asks which category is most specific, how to recognise radial symmetry, and which feature identifies a whale as a mammal. The blue arrow traces narrowing from a genus to one example species.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "specific",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "radial",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "mammal",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which rank is narrower than genus?",
+        "options": [
+          "Species",
+          "Family",
+          "Class"
+        ],
+        "answerIndex": 0,
+        "feedback": "A genus can contain several related species."
+      }
+    }
+  ]
+}

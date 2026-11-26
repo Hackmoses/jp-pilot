@@ -1,0 +1,115 @@
+{
+  "subject": "biology",
+  "topicId": "3",
+  "lessons": [
+    {
+      "id": "biology-photosynthesis",
+      "title": "Where and how photosynthesis happens",
+      "scenes": [
+        {
+          "id": "biology-photosynthesis-1",
+          "show": "",
+          "say": "In a green leaf, carbon dioxide enters through stomata. Water arrives through the xylem. Zoom into a mesophyll cell. Chlorophyll and carotenoids in chloroplast membranes absorb light, and carotenoids also help protect against excess light.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "leaf",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "carbon",
+              "action": "part-0-c",
+              "label": ""
+            },
+            {
+              "word": "xylem",
+              "action": "part-0-w",
+              "label": ""
+            },
+            {
+              "word": "Chlorophyll",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-photosynthesis-2",
+          "show": "",
+          "say": "The Calvin cycle in the chloroplast stroma incorporates carbon dioxide into an organic compound. ATP and NADPH help produce a small sugar phosphate that can build glucose and starch. The light reactions split water and release oxygen.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Calvin",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "sugar",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "oxygen",
+              "action": "part-1-o",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-photosynthesis-3",
+          "show": "",
+          "say": "Rinsing a decolourised leaf in warm water softens it for the starch test. Iodine turns starch-containing areas blue-black.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Rinsing",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "Iodine",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-photosynthesis-4",
+          "show": "",
+          "say": "JAMB asks which pigments absorb light, where carbon fixation happens, and what a blue-black iodine result means. Blue follows water and gases, gold shows light, and green follows sugar production.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "pigments",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "carbon",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "iodine",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which substance is added to detect starch in a prepared leaf?",
+        "options": [
+          "Iodine solution",
+          "Benedict’s solution",
+          "Water"
+        ],
+        "answerIndex": 0,
+        "feedback": "The presence of starch gives a blue-black colour with iodine."
+      }
+    }
+  ]
+}

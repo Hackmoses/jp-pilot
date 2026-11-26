@@ -1,0 +1,90 @@
+{
+  "subject": "biology",
+  "topicId": "4",
+  "lessons": [
+    {
+      "id": "biology-blood",
+      "title": "Blood components and clotting",
+      "scenes": [
+        {
+          "id": "biology-blood-1",
+          "show": "",
+          "say": "Plasma is the liquid portion of blood. It normally makes up a little over half its volume and carries dissolved substances. An erythrocyte, or red blood cell, contains haemoglobin. That protein binds oxygen at the lungs and releases it in tissues.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Plasma",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "An",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-blood-2",
+          "show": "",
+          "say": "Platelets are small cell fragments circulating in the blood. At an injury they stick to the damaged vessel and to each other, forming a plug.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Platelets",
+              "action": "part-1-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-blood-3",
+          "show": "",
+          "say": "Fibrin strands form a mesh at the injury. They reinforce the platelet plug and trap blood cells to produce a more stable clot.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Fibrin",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-blood-4",
+          "show": "",
+          "say": "JAMB asks which component forms most of the volume, which cell carries oxygen, and which fragments initiate a clot. Blue arrows trace oxygen entering a red cell or platelets moving to injury.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "volume",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "oxygen",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "clot",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which blood component first forms a plug in a damaged vessel?",
+        "options": [
+          "Plasma alone",
+          "Platelets",
+          "Erythrocytes"
+        ],
+        "answerIndex": 1,
+        "feedback": "Platelets adhere and aggregate. Fibrin later strengthens the plug."
+      }
+    }
+  ]
+}

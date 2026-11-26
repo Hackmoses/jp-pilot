@@ -1,0 +1,90 @@
+{
+  "subject": "biology",
+  "topicId": "7",
+  "lessons": [
+    {
+      "id": "biology-stimuli",
+      "title": "Sensing light, sound, touch and water",
+      "scenes": [
+        {
+          "id": "biology-stimuli-1",
+          "show": "",
+          "say": "Euglena’s eyespot near its front shades a light receptor. The cell can use changing illumination to orient its swimming.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Euglena’s",
+              "action": "part-0-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-stimuli-2",
+          "show": "",
+          "say": "The cochlea in the inner ear contains hair cells that convert vibrations into signals sent along the auditory nerve. Vibrissae are sensitive whiskers. Bending a whisker stimulates receptors near its root, helping a rat sense nearby surfaces.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "Vibrissae",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-stimuli-3",
+          "show": "",
+          "say": "Hydrotropism is directional growth in response to moisture. A growing root can bend towards wetter soil.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Hydrotropism",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-stimuli-4",
+          "show": "",
+          "say": "JAMB asks how Euglena senses light direction, where hearing receptors are found, and whether growth towards water is hydrotropism. Blue arrows show movement of a stimulus or the direction of growth.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "light",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "receptors",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "hydrotropism",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Where are the hearing receptor hair cells?",
+        "options": [
+          "Cerebellum",
+          "Cochlea",
+          "Pupil"
+        ],
+        "answerIndex": 1,
+        "feedback": "Hearing receptor hair cells are inside the cochlea, in the organ of Corti."
+      }
+    }
+  ]
+}

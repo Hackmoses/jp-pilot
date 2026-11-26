@@ -1,0 +1,95 @@
+{
+  "subject": "biology",
+  "topicId": "1",
+  "lessons": [
+    {
+      "id": "biology-osmosis",
+      "title": "Osmosis in plants and animals",
+      "scenes": [
+        {
+          "id": "biology-osmosis-1",
+          "show": "",
+          "say": "Osmosis is the net movement of water across a selectively permeable membrane, from higher towards lower water potential. In diffusion, particles move down their own concentration gradient, as gases do across plant surfaces.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Osmosis",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "In",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-osmosis-2",
+          "show": "",
+          "say": "A plant cell in a concentrated sugar solution loses water. Its membrane pulls away from the rigid cell wall. This is plasmolysis. A red blood cell in distilled water takes water in. It may burst, a process called haemolysis.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-osmosis-3",
+          "show": "",
+          "say": "Root hairs extend from the epidermis of young roots and increase the area for water and mineral uptake.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Root",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-osmosis-4",
+          "show": "",
+          "say": "JAMB commonly asks which way the blue arrows point in a concentrated solution, what remains fixed when a plant cell plasmolyses, and why a wall-free red cell can burst in distilled water.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "arrows",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "fixed",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "burst",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which way does water move in a plant cell placed in concentrated sugar solution?",
+        "options": [
+          "No net movement",
+          "Out of the cell",
+          "Into the cell"
+        ],
+        "answerIndex": 1,
+        "feedback": "The surrounding solution has lower water potential, so water moves out."
+      }
+    }
+  ]
+}
