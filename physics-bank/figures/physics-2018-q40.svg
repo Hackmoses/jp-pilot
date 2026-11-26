@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" role="img" aria-labelledby="title desc">
+  <title id="title">Five-capacitor circuit</title>
+  <desc id="desc">Three 2 microfarad capacitors connect the upper and lower rails in parallel. The upper rail connects to terminal A through a 2 microfarad capacitor. The lower rail connects to terminal B through a 3 microfarad capacitor.</desc>
+  <rect width="600" height="220" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 95V55H438 M90 111V151H438 M108 95H72 M108 111H72"/>
+    <path d="M200 55V95 M200 111V151 M182 95H218 M182 111H218"/>
+    <path d="M310 55V95 M310 111V151 M292 95H328 M292 111H328"/>
+    <path d="M438 37V73 M454 37V73 M454 55H535 M438 133V169 M454 133V169 M454 151H535"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="17">
+    <text x="50" y="109" text-anchor="end">2 μF</text>
+    <text x="160" y="109" text-anchor="end">2 μF</text>
+    <text x="270" y="109" text-anchor="end">2 μF</text>
+    <text x="446" y="26" text-anchor="middle">2 μF</text>
+    <text x="446" y="195" text-anchor="middle">3 μF</text>
+    <circle cx="535" cy="55" r="4"/>
+    <circle cx="535" cy="151" r="4"/>
+    <text x="551" y="61">A</text>
+    <text x="551" y="157">B</text>
+  </g>
+</svg>

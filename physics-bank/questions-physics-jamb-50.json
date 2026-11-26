@@ -1,0 +1,3263 @@
+{
+  "version": 1,
+  "subject": "physics",
+  "count": 50,
+  "questions": [
+    {
+      "id": "phys-jamb-2011-015",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Archimedes’ principle and flotation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An object gives a scale reading equivalent to 22 kg when immersed in water and 30 kg when weighed in air. What upthrust does the liquid exert? Take g = 10 m s^{−2}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "80 N",
+          "why": "The readings correspond to 300 N in air and 220 N in water. The upthrust is their difference, 80 N.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "50 N",
+          "why": "50 N would correspond to a 5 kg change in the scale reading.",
+          "whyWrong": "50 N would correspond to a 5 kg change in the scale reading."
+        },
+        {
+          "id": "c",
+          "text": "520 N",
+          "why": "520 N is the sum of the readings.",
+          "whyWrong": "520 N is the sum of the readings."
+        },
+        {
+          "id": "d",
+          "text": "220 N",
+          "why": "220 N is the apparent weight in water.",
+          "whyWrong": "220 N is the apparent weight in water."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare the two apparent weights in newtons.",
+      "explanation": "The readings correspond to 300 N in air and 220 N in water. The upthrust is their difference, 80 N.",
+      "trap": "220 N is the apparent weight in water.",
+      "mnemonic": "Upthrust equals the loss of apparent weight.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Upthrust equals the loss of apparent weight."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "220 N is the apparent weight in water."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 15,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2011-041",
+      "subject": "physics",
+      "chapter": "24",
+      "topic": "Nuclear Physics",
+      "concept": "Half-life and decay constant",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A radioactive isotope has a decay constant of 10^{−5} s^{−1}. Calculate its half-life.",
+      "options": [
+        {
+          "id": "a",
+          "text": "6.93 × 10^{4} s",
+          "why": "Use t_{1/2} = ln 2 ÷ λ. With λ = 10^{−5} s^{−1}, t_{1/2} = 6.93 × 10^{4} s.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "6.93 × 10^{−6} s",
+          "why": "Multiplying by λ gives the wrong dimensions and a much shorter time.",
+          "whyWrong": "Multiplying by λ gives the wrong dimensions and a much shorter time."
+        },
+        {
+          "id": "c",
+          "text": "6.93 × 10^{−5} s",
+          "why": "The small decay constant belongs in the denominator.",
+          "whyWrong": "The small decay constant belongs in the denominator."
+        },
+        {
+          "id": "d",
+          "text": "6.93 × 10^{5} s",
+          "why": "This time is ten times the result of dividing 0.693 by λ.",
+          "whyWrong": "This time is ten times the result of dividing 0.693 by λ."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Relate half-life to the decay constant.",
+      "explanation": "Use t_{1/2} = ln 2 ÷ λ. With λ = 10^{−5} s^{−1}, t_{1/2} = 6.93 × 10^{4} s.",
+      "trap": "Multiplying by λ gives the wrong dimensions and a much shorter time.",
+      "mnemonic": "A small decay constant means a long half-life.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A small decay constant means a long half-life."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Multiplying by λ gives the wrong dimensions and a much shorter time."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 41,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-002",
+      "subject": "physics",
+      "chapter": "1",
+      "topic": "Measurements, Units and Vectors",
+      "concept": "Measuring instruments, errors and significant figures",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In order to remove the error of parallax when taking measurements with a metre rule, the eye should be focused",
+      "options": [
+        {
+          "id": "a",
+          "text": "slantingly towards the left on the markings",
+          "why": "A leftward slant shifts the apparent reading.",
+          "whyWrong": "A leftward slant shifts the apparent reading."
+        },
+        {
+          "id": "b",
+          "text": "slantingly towards the right on the markings",
+          "why": "A rightward slant also produces parallax.",
+          "whyWrong": "A rightward slant also produces parallax."
+        },
+        {
+          "id": "c",
+          "text": "vertically downwards on the markings",
+          "why": "Look directly down along the normal to the scale. A sideways viewing angle shifts the apparent alignment of the mark and the object.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "vertically upwards on the markings",
+          "why": "Look down from above the scale rather than up from below it.",
+          "whyWrong": "Look down from above the scale rather than up from below it."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Think about the line from your eye to the scale mark.",
+      "explanation": "Look directly down along the normal to the scale. A sideways viewing angle shifts the apparent alignment of the mark and the object.",
+      "trap": "A leftward slant shifts the apparent reading.",
+      "mnemonic": "Eye straight above the graduation.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Eye straight above the graduation."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A leftward slant shifts the apparent reading."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 2,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-003",
+      "subject": "physics",
+      "chapter": "6",
+      "topic": "Friction and Elasticity",
+      "concept": "Static and kinetic friction",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A rope at 45° to a horizontal floor pulls a load along the floor at uniform speed. If the tension is 1500 N, what is the frictional force on the load?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1524 N",
+          "why": "The horizontal component cannot exceed the total 1500 N pull.",
+          "whyWrong": "The horizontal component cannot exceed the total 1500 N pull."
+        },
+        {
+          "id": "b",
+          "text": "1350 N",
+          "why": "1350 N uses a projection factor of 0.90 rather than cos 45°.",
+          "whyWrong": "1350 N uses a projection factor of 0.90 rather than cos 45°."
+        },
+        {
+          "id": "c",
+          "text": "1260 N",
+          "why": "1260 N uses a projection factor of 0.84 rather than cos 45°.",
+          "whyWrong": "1260 N uses a projection factor of 0.84 rather than cos 45°."
+        },
+        {
+          "id": "d",
+          "text": "1061 N",
+          "why": "The load has no horizontal acceleration. Friction balances the horizontal component of the pull, 1500 cos 45° ≈ 1061 N.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Resolve the pull along the floor.",
+      "explanation": "The load has no horizontal acceleration. Friction balances the horizontal component of the pull, 1500 cos 45° ≈ 1061 N.",
+      "trap": "The horizontal component cannot exceed the total 1500 N pull.",
+      "mnemonic": "Uniform speed on a straight path means the horizontal forces balance.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Uniform speed on a straight path means the horizontal forces balance."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The horizontal component cannot exceed the total 1500 N pull."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 3,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-007",
+      "subject": "physics",
+      "chapter": "2",
+      "topic": "Linear Motion and Projectiles",
+      "concept": "Uniform acceleration",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A car starts from rest and moves with a uniform acceleration of 30 m s^{−2} for 20 s. How far does it travel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 km",
+          "why": "Since u = 0, s = ½at^{2} = ½ × 30 × 20^{2} = 6000 m, or 6 km.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "12 km",
+          "why": "12 km uses the final speed throughout the 20 s.",
+          "whyWrong": "12 km uses the final speed throughout the 20 s."
+        },
+        {
+          "id": "c",
+          "text": "18 km",
+          "why": "18 km is three times the displacement for the given acceleration.",
+          "whyWrong": "18 km is three times the displacement for the given acceleration."
+        },
+        {
+          "id": "d",
+          "text": "24 km",
+          "why": "24 km is four times the displacement for 20 s.",
+          "whyWrong": "24 km is four times the displacement for 20 s."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use the distance formula for motion from rest.",
+      "explanation": "Since u = 0, s = ½at^{2} = ½ × 30 × 20^{2} = 6000 m, or 6 km.",
+      "trap": "12 km uses the final speed throughout the 20 s.",
+      "mnemonic": "From rest under constant acceleration, average speed is half the final speed.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "From rest under constant acceleration, average speed is half the final speed."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "12 km uses the final speed throughout the 20 s."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 7,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-010",
+      "subject": "physics",
+      "chapter": "4",
+      "topic": "Circular Motion and Gravitation",
+      "concept": "Angular motion and centripetal force",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An object moves along a circular path of radius 0.5 m at 1 m s^{−1}. What is its angular velocity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 rad s^{−1}",
+          "why": "8 rad s^{−1} at this radius would give 4 m s^{−1}.",
+          "whyWrong": "8 rad s^{−1} at this radius would give 4 m s^{−1}."
+        },
+        {
+          "id": "b",
+          "text": "4 rad s^{−1}",
+          "why": "4 rad s^{−1} would give 2 m s^{−1}.",
+          "whyWrong": "4 rad s^{−1} would give 2 m s^{−1}."
+        },
+        {
+          "id": "c",
+          "text": "2 rad s^{−1}",
+          "why": "The relation v = rω gives ω = 1 ÷ 0.5 = 2 rad s^{−1}.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "1 rad s^{−1}",
+          "why": "1 rad s^{−1} would give 0.5 m s^{−1}.",
+          "whyWrong": "1 rad s^{−1} would give 0.5 m s^{−1}."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Divide the speed along the circle by its radius.",
+      "explanation": "The relation v = rω gives ω = 1 ÷ 0.5 = 2 rad s^{−1}.",
+      "trap": "1 rad s^{−1} would give 0.5 m s^{−1}.",
+      "mnemonic": "Angular speed is linear speed divided by radius.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Angular speed is linear speed divided by radius."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "1 rad s^{−1} would give 0.5 m s^{−1}."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 10,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-015",
+      "subject": "physics",
+      "chapter": "6",
+      "topic": "Friction and Elasticity",
+      "concept": "Hooke’s law and Young’s modulus",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A mass of 1 kg stretches a cord by 1.2 cm. What is the force constant of the cord? Take g = 10 m s^{−2}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "866 N m^{−1}",
+          "why": "866 N m^{−1} would give about 10.4 N at this extension.",
+          "whyWrong": "866 N m^{−1} would give about 10.4 N at this extension."
+        },
+        {
+          "id": "b",
+          "text": "833 N m^{−1}",
+          "why": "The weight is 1 × 10 = 10 N and the extension is 0.012 m. Hooke’s law gives k = 10 ÷ 0.012 ≈ 833 N m^{−1}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "769 N m^{−1}",
+          "why": "769 N m^{−1} would give about 9.23 N.",
+          "whyWrong": "769 N m^{−1} would give about 9.23 N."
+        },
+        {
+          "id": "d",
+          "text": "667 N m^{−1}",
+          "why": "667 N m^{−1} would give about 8.00 N.",
+          "whyWrong": "667 N m^{−1} would give about 8.00 N."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Convert the extension to metres and the load to newtons.",
+      "explanation": "The weight is 1 × 10 = 10 N and the extension is 0.012 m. Hooke’s law gives k = 10 ÷ 0.012 ≈ 833 N m^{−1}.",
+      "trap": "769 N m^{−1} would give about 9.23 N.",
+      "mnemonic": "For k = F ÷ x, use newtons and metres.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "For k = F ÷ x, use newtons and metres."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "769 N m^{−1} would give about 9.23 N."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 15,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-018",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Archimedes’ principle and flotation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A balloon of volume 300 m^{3} is filled with hydrogen. If the density of air is 1.3 kg m^{−3}, find the upthrust on the balloon. Take g = 10 m s^{−2}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3000 N",
+          "why": "3000 N treats the air density as 1.0 kg m^{−3}.",
+          "whyWrong": "3000 N treats the air density as 1.0 kg m^{−3}."
+        },
+        {
+          "id": "b",
+          "text": "3800 N",
+          "why": "3800 N is below the weight of the displaced air.",
+          "whyWrong": "3800 N is below the weight of the displaced air."
+        },
+        {
+          "id": "c",
+          "text": "3900 N",
+          "why": "The upthrust equals the weight of 300 m^{3} of displaced air, 1.3 × 300 × 10 = 3900 N.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "4200 N",
+          "why": "4200 N would require an air density of 1.4 kg m^{−3}.",
+          "whyWrong": "4200 N would require an air density of 1.4 kg m^{−3}."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Use the density of the displaced air.",
+      "explanation": "The upthrust equals the weight of 300 m^{3} of displaced air, 1.3 × 300 × 10 = 3900 N.",
+      "trap": "3000 N treats the air density as 1.0 kg m^{−3}.",
+      "mnemonic": "Buoyancy depends on the displaced fluid.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Buoyancy depends on the displaced fluid."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "3000 N treats the air density as 1.0 kg m^{−3}."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 18,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-021",
+      "subject": "physics",
+      "chapter": "9",
+      "topic": "Gas Laws and Kinetic Theory",
+      "concept": "Absolute zero and the ideal gas equation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 2000 cm^{3} sample of gas is collected at 27°C and 700 mmHg. What volume will it occupy at standard temperature and pressure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1896.5 cm^{3}",
+          "why": "This value is too high after both cooling and compression.",
+          "whyWrong": "This value is too high after both cooling and compression."
+        },
+        {
+          "id": "b",
+          "text": "1767.3 cm^{3}",
+          "why": "This value does not satisfy P₁V₁/T₁ = P₂V₂/T₂.",
+          "whyWrong": "This value does not satisfy P₁V₁/T₁ = P₂V₂/T₂."
+        },
+        {
+          "id": "c",
+          "text": "1676.3 cm^{3}",
+          "why": "For a fixed amount of gas, PV/T is constant. At 273 K and 760 mmHg, the volume is 2000 × (700/760) × (273/300) ≈ 1676.3 cm^{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "1456.5 cm^{3}",
+          "why": "This value is too low for the given pressure and temperature changes.",
+          "whyWrong": "This value is too low for the given pressure and temperature changes."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Use Kelvin and account for both pressure and temperature.",
+      "explanation": "For a fixed amount of gas, PV/T is constant. At 273 K and 760 mmHg, the volume is 2000 × (700/760) × (273/300) ≈ 1676.3 cm^{3}.",
+      "trap": "This value is too high after both cooling and compression.",
+      "mnemonic": "A closed gas sample keeps PV/T constant.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A closed gas sample keeps PV/T constant."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This value is too high after both cooling and compression."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-025",
+      "subject": "physics",
+      "chapter": "9",
+      "topic": "Gas Laws and Kinetic Theory",
+      "concept": "Molecular structure, diffusion and Brownian motion",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which statements describe Brownian motion? I. Tiny suspended particles move rapidly, continually and irregularly. II. It provides evidence for molecules. III. It occurs only in gases. IV. It provides evidence that molecules are in constant random motion.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I, II and III",
+          "why": "I and II fit, but III incorrectly limits the effect to gases.",
+          "whyWrong": "I and II fit, but III incorrectly limits the effect to gases."
+        },
+        {
+          "id": "b",
+          "text": "II, III and IV only",
+          "why": "II and IV fit, but III is false and I is true.",
+          "whyWrong": "II and IV fit, but III is false and I is true."
+        },
+        {
+          "id": "c",
+          "text": "I, III and IV only",
+          "why": "I and IV fit, but molecules exist in liquids and produce the same effect there.",
+          "whyWrong": "I and IV fit, but molecules exist in liquids and produce the same effect there."
+        },
+        {
+          "id": "d",
+          "text": "I, II and IV only",
+          "why": "Tiny suspended particles are continually hit from different directions by moving molecules. Their irregular motion is evidence for molecules and their random motion. It occurs in liquids and gases, so I, II and IV hold.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Decide whether the effect can also occur in liquids.",
+      "explanation": "Tiny suspended particles are continually hit from different directions by moving molecules. Their irregular motion is evidence for molecules and their random motion. It occurs in liquids and gases, so I, II and IV hold.",
+      "trap": "I and II fit, but III incorrectly limits the effect to gases.",
+      "mnemonic": "Brownian motion is the visible result of random molecular collisions.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Brownian motion is the visible result of random molecular collisions."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "I and II fit, but III incorrectly limits the effect to gases."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 25,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-030",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Curved mirrors, image formation and magnification",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Where should someone place their face to get an enlarged image in a concave shaving mirror?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Between the centre of curvature and the principal focus",
+          "why": "Between F and C the image is enlarged but real and inverted.",
+          "whyWrong": "Between F and C the image is enlarged but real and inverted."
+        },
+        {
+          "id": "b",
+          "text": "At the principal focus",
+          "why": "At F the reflected rays are parallel, with the image at infinity.",
+          "whyWrong": "At F the reflected rays are parallel, with the image at infinity."
+        },
+        {
+          "id": "c",
+          "text": "Between the principal focus and the pole",
+          "why": "A face placed between the pole and the principal focus produces an enlarged, upright virtual image behind the concave mirror.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "At the centre of curvature",
+          "why": "At C the image is real, inverted and the same size.",
+          "whyWrong": "At C the image is real, inverted and the same size."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "A shaving mirror must produce an upright enlarged image.",
+      "explanation": "A face placed between the pole and the principal focus produces an enlarged, upright virtual image behind the concave mirror.",
+      "trap": "Between F and C the image is enlarged but real and inverted.",
+      "mnemonic": "Inside the focus gives the upright magnified view.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Inside the focus gives the upright magnified view."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Between F and C the image is enlarged but real and inverted."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 30,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-041",
+      "subject": "physics",
+      "chapter": "20",
+      "topic": "Magnetic Fields, Motors and Meters",
+      "concept": "Magnetic force on charges and conductors",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A particle carrying a charge of 1.0 × 10^{−8} C moves at 3.0 × 10^{2} m s^{−1} perpendicular to a magnetic field. If the field exerts a force of 1.8 × 10^{−8} N on the particle, what is the field strength?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6.0 × 10^{−1} T",
+          "why": "This is 100 times the computed field.",
+          "whyWrong": "This is 100 times the computed field."
+        },
+        {
+          "id": "b",
+          "text": "6.0 × 10^{−2} T",
+          "why": "This is ten times the computed field.",
+          "whyWrong": "This is ten times the computed field."
+        },
+        {
+          "id": "c",
+          "text": "6.0 × 10^{−3} T",
+          "why": "Use F = qvB, so B = (1.8 × 10^{−8}) ÷ [(1.0 × 10^{−8})(3.0 × 10^{2})] = 6.0 × 10^{−3} T.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "6.0 × 10^{−4} T",
+          "why": "This is a tenth of the computed field.",
+          "whyWrong": "This is a tenth of the computed field."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "At right angles, the sine factor in the magnetic force is one.",
+      "explanation": "Use F = qvB, so B = (1.8 × 10^{−8}) ÷ [(1.0 × 10^{−8})(3.0 × 10^{2})] = 6.0 × 10^{−3} T.",
+      "trap": "This is ten times the computed field.",
+      "mnemonic": "For perpendicular motion, magnetic force is charge times speed times field.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "For perpendicular motion, magnetic force is charge times speed times field."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "This is ten times the computed field."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 41,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2012-043",
+      "subject": "physics",
+      "chapter": "21",
+      "topic": "Electromagnetic Induction and AC Circuits",
+      "concept": "Peak and RMS values",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The current output form of an a.c. source is given as I = 10 sin ωt. The d.c. equivalent of the current is",
+      "options": [
+        {
+          "id": "a",
+          "text": "5.0 A",
+          "why": "The RMS factor is 1/√2 rather than one half.",
+          "whyWrong": "The RMS factor is 1/√2 rather than one half."
+        },
+        {
+          "id": "b",
+          "text": "7.1 A",
+          "why": "The sine coefficient is the peak current of 10 A. The RMS current is 10/√2, about 7.1 A.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "10.0 A",
+          "why": "10 A is the peak value.",
+          "whyWrong": "10 A is the peak value."
+        },
+        {
+          "id": "d",
+          "text": "14.1 A",
+          "why": "14.1 A multiplies the peak by √2 and would exceed the peak.",
+          "whyWrong": "14.1 A multiplies the peak by √2 and would exceed the peak."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Identify the peak, then convert it to the heating-equivalent current.",
+      "explanation": "The sine coefficient is the peak current of 10 A. The RMS current is 10/√2, about 7.1 A.",
+      "trap": "10 A is the peak value.",
+      "mnemonic": "For a sine wave, RMS = peak ÷ √2.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "For a sine wave, RMS = peak ÷ √2."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "10 A is the peak value."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 43,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-003",
+      "subject": "physics",
+      "chapter": "1",
+      "topic": "Measurements, Units and Vectors",
+      "concept": "Vector addition and resolution",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The resultant of two forces is 50 N. If the forces are perpendicular to each other and one of them makes an angle of 30° with the resultant, find its magnitude.",
+      "options": [
+        {
+          "id": "a",
+          "text": "100.0 N",
+          "why": "A perpendicular component is shorter than the 50 N resultant.",
+          "whyWrong": "A perpendicular component is shorter than the 50 N resultant."
+        },
+        {
+          "id": "b",
+          "text": "57.7 N",
+          "why": "Dividing by cos 30° would treat 50 N as the adjacent component.",
+          "whyWrong": "Dividing by cos 30° would treat 50 N as the adjacent component."
+        },
+        {
+          "id": "c",
+          "text": "43.3 N",
+          "why": "The component at 30° to the resultant is adjacent to that angle. Its magnitude is 50 cos 30° ≈ 43.3 N.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "25.0 N",
+          "why": "25 N is the other component, opposite the 30° angle.",
+          "whyWrong": "25 N is the other component, opposite the 30° angle."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Identify the side adjacent to the marked angle.",
+      "explanation": "The component at 30° to the resultant is adjacent to that angle. Its magnitude is 50 cos 30° ≈ 43.3 N.",
+      "trap": "25 N is the other component, opposite the 30° angle.",
+      "mnemonic": "Adjacent components use cosine.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Adjacent components use cosine."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "25 N is the other component, opposite the 30° angle."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 3,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-008",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Archimedes’ principle and flotation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A piece of cork floats in a liquid. What fraction of its volume is immersed? The cork and liquid have densities of 0.25 × 10^{3} kg m^{−3} and 1.25 × 10^{3} kg m^{−3}, respectively.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.8",
+          "why": "0.8 is the fraction above the surface.",
+          "whyWrong": "0.8 is the fraction above the surface."
+        },
+        {
+          "id": "b",
+          "text": "0.5",
+          "why": "Half immersion would require the cork to be half as dense as the liquid.",
+          "whyWrong": "Half immersion would require the cork to be half as dense as the liquid."
+        },
+        {
+          "id": "c",
+          "text": "0.2",
+          "why": "For flotation, ρ_{cork}Vg = ρ_{liquid}V_{sub}g. The immersed fraction is 0.25 ÷ 1.25 = 0.20.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "0.1",
+          "why": "0.1 would require the cork to have one-tenth of the liquid density.",
+          "whyWrong": "0.1 would require the cork to have one-tenth of the liquid density."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Set the weight of the cork equal to the weight of displaced liquid.",
+      "explanation": "For flotation, ρ_{cork}Vg = ρ_{liquid}V_{sub}g. The immersed fraction is 0.25 ÷ 1.25 = 0.20.",
+      "trap": "0.8 is the fraction above the surface.",
+      "mnemonic": "Floating fraction below the surface equals object density divided by liquid density.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Floating fraction below the surface equals object density divided by liquid density."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "0.8 is the fraction above the surface."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-010",
+      "subject": "physics",
+      "chapter": "5",
+      "topic": "Work, Energy, Power and Simple Machines",
+      "concept": "Mechanical power",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A pump lifts 5000 kg of water through a vertical height of 60 m in 15 minutes. What is its useful output power? Take g ≈ 10 m s^{−2}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.5 × 10^{5} W",
+          "why": "This power would supply far too much energy in 900 s.",
+          "whyWrong": "This power would supply far too much energy in 900 s."
+        },
+        {
+          "id": "b",
+          "text": "2.5 × 10^{4} W",
+          "why": "2.5 × 10^{4} W would deliver 2.25 × 10^{7} J in 900 s.",
+          "whyWrong": "2.5 × 10^{4} W would deliver 2.25 × 10^{7} J in 900 s."
+        },
+        {
+          "id": "c",
+          "text": "3.3 × 10^{3} W",
+          "why": "Using g ≈ 10 m s^{−2}, the pump does 5000 × 10 × 60 = 3.0 × 10^{6} J of lifting work in 900 s. Its useful power is about 3.3 × 10^{3} W.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "3.3 × 10^{2} W",
+          "why": "3.3 × 10^{2} W is ten times too small and is close to the result of omitting g.",
+          "whyWrong": "3.3 × 10^{2} W is ten times too small and is close to the result of omitting g."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Calculate the gain in gravitational energy and divide by seconds.",
+      "explanation": "Using g ≈ 10 m s^{−2}, the pump does 5000 × 10 × 60 = 3.0 × 10^{6} J of lifting work in 900 s. Its useful power is about 3.3 × 10^{3} W.",
+      "trap": "3.3 × 10^{2} W is ten times too small and is close to the result of omitting g.",
+      "mnemonic": "Lifting power is mgh divided by time in seconds.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Lifting power is mgh divided by time in seconds."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "3.3 × 10^{2} W is ten times too small and is close to the result of omitting g."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 10,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-011",
+      "subject": "physics",
+      "chapter": "6",
+      "topic": "Friction and Elasticity",
+      "concept": "Static and kinetic friction",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the coefficient of friction between two perfectly smooth surfaces in the ideal model?",
+      "options": [
+        {
+          "id": "a",
+          "text": "infinity",
+          "why": "An infinite coefficient would imply unlimited resistance to sliding.",
+          "whyWrong": "An infinite coefficient would imply unlimited resistance to sliding."
+        },
+        {
+          "id": "b",
+          "text": "one",
+          "why": "A coefficient of one would make limiting friction equal to the normal force.",
+          "whyWrong": "A coefficient of one would make limiting friction equal to the normal force."
+        },
+        {
+          "id": "c",
+          "text": "half",
+          "why": "One half would still imply a nonzero friction force.",
+          "whyWrong": "One half would still imply a nonzero friction force."
+        },
+        {
+          "id": "d",
+          "text": "zero",
+          "why": "Perfectly smooth surfaces are treated as frictionless in this model. The ratio of limiting friction to normal force is therefore zero.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Use the ideal model of perfectly smooth surfaces.",
+      "explanation": "Perfectly smooth surfaces are treated as frictionless in this model. The ratio of limiting friction to normal force is therefore zero.",
+      "trap": "One half would still imply a nonzero friction force.",
+      "mnemonic": "In the ideal school model, perfectly smooth means frictionless.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "In the ideal school model, perfectly smooth means frictionless."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "One half would still imply a nonzero friction force."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 11,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-013",
+      "subject": "physics",
+      "chapter": "6",
+      "topic": "Friction and Elasticity",
+      "concept": "Elastic strain energy",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Calculate the work done when a force of 20 N stretches a spring by 50 mm.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.5 J",
+          "why": "For a Hookean spring, the average stretching force is half the final force. The work is ½ × 20 × 0.050 = 0.5 J.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "1.5 J",
+          "why": "This is three times the triangular area under the force–extension graph.",
+          "whyWrong": "This is three times the triangular area under the force–extension graph."
+        },
+        {
+          "id": "c",
+          "text": "2.0 J",
+          "why": "This would require a much larger average force over 50 mm.",
+          "whyWrong": "This would require a much larger average force over 50 mm."
+        },
+        {
+          "id": "d",
+          "text": "2.5 J",
+          "why": "This exceeds even the work at a constant 20 N over 50 mm.",
+          "whyWrong": "This exceeds even the work at a constant 20 N over 50 mm."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "The force rises from zero as the spring stretches.",
+      "explanation": "For a Hookean spring, the average stretching force is half the final force. The work is ½ × 20 × 0.050 = 0.5 J.",
+      "trap": "This exceeds even the work at a constant 20 N over 50 mm.",
+      "mnemonic": "The area under a linear force–extension graph is a triangle.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The area under a linear force–extension graph is a triangle."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "This exceeds even the work at a constant 20 N over 50 mm."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-017",
+      "subject": "physics",
+      "chapter": "8",
+      "topic": "Temperature and Thermal Expansion",
+      "concept": "Linear, area and volume expansion",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A wire is 100.0 m long at 30°C. Its linear expansivity is 2 × 10^{−5} K^{−1}. What is its length at −10°C?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100.08 m",
+          "why": "This treats a temperature drop as a rise.",
+          "whyWrong": "This treats a temperature drop as a rise."
+        },
+        {
+          "id": "b",
+          "text": "100.04 m",
+          "why": "This gives an expansion and uses too small a temperature change.",
+          "whyWrong": "This gives an expansion and uses too small a temperature change."
+        },
+        {
+          "id": "c",
+          "text": "99.96 m",
+          "why": "A contraction of 0.04 m would correspond to a 20°C drop.",
+          "whyWrong": "A contraction of 0.04 m would correspond to a 20°C drop."
+        },
+        {
+          "id": "d",
+          "text": "99.92 m",
+          "why": "The temperature changes by −40°C. The length change is 100 × (2 × 10^{−5}) × (−40) = −0.08 m, giving 99.92 m.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compute the signed temperature change first.",
+      "explanation": "The temperature changes by −40°C. The length change is 100 × (2 × 10^{−5}) × (−40) = −0.08 m, giving 99.92 m.",
+      "trap": "This treats a temperature drop as a rise.",
+      "mnemonic": "Use final temperature minus initial temperature.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Use final temperature minus initial temperature."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This treats a temperature drop as a rise."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-024",
+      "subject": "physics",
+      "chapter": "11",
+      "topic": "Heat Transfer",
+      "concept": "Conduction, thermal conductivity and heat flux",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The mechanism of heat transfer from one point to another through the vibration of the molecules of the medium is",
+      "options": [
+        {
+          "id": "a",
+          "text": "convection",
+          "why": "Convection transports energy with the bulk motion of a fluid.",
+          "whyWrong": "Convection transports energy with the bulk motion of a fluid."
+        },
+        {
+          "id": "b",
+          "text": "conduction",
+          "why": "In conduction, energy passes between neighbouring particles through interactions, without large-scale motion of the material.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "radiation",
+          "why": "Radiation can transfer energy through a vacuum.",
+          "whyWrong": "Radiation can transfer energy through a vacuum."
+        },
+        {
+          "id": "d",
+          "text": "diffusion",
+          "why": "Diffusion describes the spreading of particles.",
+          "whyWrong": "Diffusion describes the spreading of particles."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Track the energy while the material stays in place.",
+      "explanation": "In conduction, energy passes between neighbouring particles through interactions, without large-scale motion of the material.",
+      "trap": "Convection transports energy with the bulk motion of a fluid.",
+      "mnemonic": "Conduction transfers energy through stationary material.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Conduction transfers energy through stationary material."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Convection transports energy with the bulk motion of a fluid."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 24,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2013-034",
+      "subject": "physics",
+      "chapter": "15",
+      "topic": "Refraction, Lenses and Optical Instruments",
+      "concept": "Microscopes, telescopes and projectors",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "If the linear magnification of the objective and eyepiece convex lenses of a compound microscope are 4 and 7 respectively, calculate the angular magnification of the microscope.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "why": "Dividing the magnifications misses the second stage’s multiplication.",
+          "whyWrong": "Dividing the magnifications misses the second stage’s multiplication."
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "why": "Subtracting the two factors does not give the combined magnification.",
+          "whyWrong": "Subtracting the two factors does not give the combined magnification."
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "why": "Adding 4 and 7 treats successive magnifications as additive.",
+          "whyWrong": "Adding 4 and 7 treats successive magnifications as additive."
+        },
+        {
+          "id": "d",
+          "text": "28",
+          "why": "In the usual school model, the compound microscope’s magnification is the product of the objective and eyepiece magnifications, 4 × 7 = 28.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Apply the two magnifying stages in sequence.",
+      "explanation": "In the usual school model, the compound microscope’s magnification is the product of the objective and eyepiece magnifications, 4 × 7 = 28.",
+      "trap": "Adding 4 and 7 treats successive magnifications as additive.",
+      "mnemonic": "Compound microscope magnification is the product of the two stages.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Compound microscope magnification is the product of the two stages."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Adding 4 and 7 treats successive magnifications as additive."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 34,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-006",
+      "subject": "physics",
+      "chapter": "12",
+      "topic": "Oscillations and Waves",
+      "concept": "Reflection, refraction, diffraction and polarisation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Longitudinal waves do not exhibit",
+      "options": [
+        {
+          "id": "a",
+          "text": "refraction",
+          "why": "Longitudinal waves such as sound can refract.",
+          "whyWrong": "Longitudinal waves such as sound can refract."
+        },
+        {
+          "id": "b",
+          "text": "polarization",
+          "why": "Longitudinal vibrations are parallel to propagation. Polarisation selects a direction of transverse vibration, so a longitudinal wave cannot be polarised.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "diffraction",
+          "why": "Sound can diffract around an obstacle or through an opening.",
+          "whyWrong": "Sound can diffract around an obstacle or through an opening."
+        },
+        {
+          "id": "d",
+          "text": "reflection",
+          "why": "Sound reflects, producing echoes.",
+          "whyWrong": "Sound reflects, producing echoes."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Ask whether the vibration direction can be selected across the wave.",
+      "explanation": "Longitudinal vibrations are parallel to propagation. Polarisation selects a direction of transverse vibration, so a longitudinal wave cannot be polarised.",
+      "trap": "Longitudinal waves such as sound can refract.",
+      "mnemonic": "Polarisation singles out transverse waves.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Polarisation singles out transverse waves."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Longitudinal waves such as sound can refract."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 6,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-011",
+      "subject": "physics",
+      "chapter": "21",
+      "topic": "Electromagnetic Induction and AC Circuits",
+      "concept": "Generators, transformers and induction coils",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What energy conversion does a dynamo perform?",
+      "options": [
+        {
+          "id": "a",
+          "text": "potential energy into kinetic energy",
+          "why": "A dynamo needs mechanical input and delivers electrical energy.",
+          "whyWrong": "A dynamo needs mechanical input and delivers electrical energy."
+        },
+        {
+          "id": "b",
+          "text": "electrical energy into kinetic energy",
+          "why": "Electrical energy driving motion describes a motor.",
+          "whyWrong": "Electrical energy driving motion describes a motor."
+        },
+        {
+          "id": "c",
+          "text": "mechanical energy into electrical energy",
+          "why": "A dynamo uses mechanical rotation to change magnetic flux and induce an electrical output.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "kinetic energy into potential energy",
+          "why": "The turning input generates electricity rather than storing potential energy.",
+          "whyWrong": "The turning input generates electricity rather than storing potential energy."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Identify what turns the dynamo and what comes out.",
+      "explanation": "A dynamo uses mechanical rotation to change magnetic flux and induce an electrical output.",
+      "trap": "Electrical energy driving motion describes a motor.",
+      "mnemonic": "Generator: motion in, electricity out.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Generator: motion in, electricity out."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Electrical energy driving motion describes a motor."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 11,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-016",
+      "subject": "physics",
+      "chapter": "23",
+      "topic": "Atomic Physics and Quantum Effects",
+      "concept": "Thermionic and photoelectric emission",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The photocell works on the principle of the",
+      "options": [
+        {
+          "id": "a",
+          "text": "voltaic cell",
+          "why": "A voltaic cell produces electrical energy from chemical reactions.",
+          "whyWrong": "A voltaic cell produces electrical energy from chemical reactions."
+        },
+        {
+          "id": "b",
+          "text": "photographic plate",
+          "why": "A photographic plate records a chemical change in a light-sensitive coating.",
+          "whyWrong": "A photographic plate records a chemical change in a light-sensitive coating."
+        },
+        {
+          "id": "c",
+          "text": "emission of protons by incident electrons",
+          "why": "The particles emitted here are electrons and the input is light.",
+          "whyWrong": "The particles emitted here are electrons and the input is light."
+        },
+        {
+          "id": "d",
+          "text": "emission of electrons by incident radiation",
+          "why": "A photoelectric cell can use incident radiation to eject electrons from a photosensitive surface. The released charge can then produce a current.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Consider what light can release from a suitable metal surface.",
+      "explanation": "A photoelectric cell can use incident radiation to eject electrons from a photosensitive surface. The released charge can then produce a current.",
+      "trap": "A photographic plate records a chemical change in a light-sensitive coating.",
+      "mnemonic": "Photoemission is light in, electrons out.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Photoemission is light in, electrons out."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A photographic plate records a chemical change in a light-sensitive coating."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 16,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-018",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Echoes and reverberation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following characteristics of a wave is used in the measurement of the depth of the sea?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diffraction",
+          "why": "Diffraction spreads a wave around edges and does not produce the timed echo.",
+          "whyWrong": "Diffraction spreads a wave around edges and does not produce the timed echo."
+        },
+        {
+          "id": "b",
+          "text": "Reflection",
+          "why": "Echo sounding times a sound pulse and its reflection from the seabed. The return time measures a round trip.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Refraction",
+          "why": "Refraction changes direction when wave speed changes.",
+          "whyWrong": "Refraction changes direction when wave speed changes."
+        },
+        {
+          "id": "d",
+          "text": "Interference",
+          "why": "Interference is the combination of overlapping waves.",
+          "whyWrong": "Interference is the combination of overlapping waves."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Think about the pulse returning from the sea floor.",
+      "explanation": "Echo sounding times a sound pulse and its reflection from the seabed. The return time measures a round trip.",
+      "trap": "Refraction changes direction when wave speed changes.",
+      "mnemonic": "Echo depth is sound speed times round-trip time divided by two.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Echo depth is sound speed times round-trip time divided by two."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Refraction changes direction when wave speed changes."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 18,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-022",
+      "subject": "physics",
+      "chapter": "16",
+      "topic": "Dispersion, Colour and the Electromagnetic Spectrum",
+      "concept": "Dispersion and rainbows",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following pairs of colours gives the widest separation in the spectrum of white light?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Green and Yellow",
+          "why": "Green and yellow are adjacent.",
+          "whyWrong": "Green and yellow are adjacent."
+        },
+        {
+          "id": "b",
+          "text": "Red and violet",
+          "why": "Red and violet are the two extremes of the visible spectrum in prism dispersion. Their deviations are therefore furthest apart.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Red and indigo",
+          "why": "Indigo is closer to red than violet is in the spectral order.",
+          "whyWrong": "Indigo is closer to red than violet is in the spectral order."
+        },
+        {
+          "id": "d",
+          "text": "Yellow and violet",
+          "why": "Yellow is closer to violet than red is in the spectral order.",
+          "whyWrong": "Yellow is closer to violet than red is in the spectral order."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Look for the two ends of the visible spectrum.",
+      "explanation": "Red and violet are the two extremes of the visible spectrum in prism dispersion. Their deviations are therefore furthest apart.",
+      "trap": "Indigo is closer to red than violet is in the spectral order.",
+      "mnemonic": "Red deviates least and violet most in a glass prism.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Red deviates least and violet most in a glass prism."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Indigo is closer to red than violet is in the spectral order."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 22,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-030",
+      "subject": "physics",
+      "chapter": "8",
+      "topic": "Temperature and Thermal Expansion",
+      "concept": "Density and volume during melting",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What is the magnitude of the change in volume when 450 kg of ice melts completely? The densities of ice and water are 900 kg m^{−3} and 1000 kg m^{−3}, respectively.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.50 m^{3}",
+          "why": "0.50 m^{3} is the initial volume.",
+          "whyWrong": "0.50 m^{3} is the initial volume."
+        },
+        {
+          "id": "b",
+          "text": "0.45 m^{3}",
+          "why": "0.45 m^{3} is the final volume.",
+          "whyWrong": "0.45 m^{3} is the final volume."
+        },
+        {
+          "id": "c",
+          "text": "4.50 m^{3}",
+          "why": "4.50 m^{3} is larger than either volume.",
+          "whyWrong": "4.50 m^{3} is larger than either volume."
+        },
+        {
+          "id": "d",
+          "text": "0.05 m^{3}",
+          "why": "The ice takes up 450/900 = 0.50 m^{3}. The water takes up 450/1000 = 0.45 m^{3}. The volume decreases by 0.05 m^{3}.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Divide the same mass by each density.",
+      "explanation": "The ice takes up 450/900 = 0.50 m^{3}. The water takes up 450/1000 = 0.45 m^{3}. The volume decreases by 0.05 m^{3}.",
+      "trap": "0.45 m^{3} is the final volume.",
+      "mnemonic": "Mass stays fixed, so compare the two volumes m/ρ.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Mass stays fixed, so compare the two volumes m/ρ."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "0.45 m^{3} is the final volume."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 30,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2015-032",
+      "subject": "physics",
+      "chapter": "23",
+      "topic": "Atomic Physics and Quantum Effects",
+      "concept": "Thermionic and photoelectric emission",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The process through which free electrons leave the hot surface of hot metal is known as",
+      "options": [
+        {
+          "id": "a",
+          "text": "photo emission",
+          "why": "Photoemission is driven by incident light.",
+          "whyWrong": "Photoemission is driven by incident light."
+        },
+        {
+          "id": "b",
+          "text": "thermionic emission",
+          "why": "Heating the metal gives some electrons enough energy to escape its surface. This is thermionic emission.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "photon emission",
+          "why": "Photon emission releases light, rather than free electrons.",
+          "whyWrong": "Photon emission releases light, rather than free electrons."
+        },
+        {
+          "id": "d",
+          "text": "electron emission",
+          "why": "Electron emission is general. Thermionic emission names the heat-driven mechanism.",
+          "whyWrong": "Electron emission is general. Thermionic emission names the heat-driven mechanism."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Identify what supplies the energy that frees the electrons.",
+      "explanation": "Heating the metal gives some electrons enough energy to escape its surface. This is thermionic emission.",
+      "trap": "Electron emission is general. Thermionic emission names the heat-driven mechanism.",
+      "mnemonic": "Thermionic begins with thermal energy.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Thermionic begins with thermal energy."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Electron emission is general. Thermionic emission names the heat-driven mechanism."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2016-012",
+      "subject": "physics",
+      "chapter": "21",
+      "topic": "Electromagnetic Induction and AC Circuits",
+      "concept": "Generators, transformers and induction coils",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the main purpose of the transformer in an AC radio set?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase power to the radio",
+          "why": "A transformer does not create additional power.",
+          "whyWrong": "A transformer does not create additional power."
+        },
+        {
+          "id": "b",
+          "text": "Convert AC to DC",
+          "why": "Conversion to DC requires a rectifier.",
+          "whyWrong": "Conversion to DC requires a rectifier."
+        },
+        {
+          "id": "c",
+          "text": "Step up the voltage",
+          "why": "A step-up transformer increases voltage, whereas the radio’s circuitry generally needs less.",
+          "whyWrong": "A step-up transformer increases voltage, whereas the radio’s circuitry generally needs less."
+        },
+        {
+          "id": "d",
+          "text": "Step down the voltage",
+          "why": "An AC radio set typically needs a lower AC voltage than the mains supply provides. A step-down transformer supplies it before any rectification stage.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Compare the mains supply with what the radio circuit needs.",
+      "explanation": "An AC radio set typically needs a lower AC voltage than the mains supply provides. A step-down transformer supplies it before any rectification stage.",
+      "trap": "Conversion to DC requires a rectifier.",
+      "mnemonic": "Step-down changes the AC voltage. Rectification changes AC to DC.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Step-down changes the AC voltage. Rectification changes AC to DC."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Conversion to DC requires a rectifier."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2016-015",
+      "subject": "physics",
+      "chapter": "20",
+      "topic": "Magnetic Fields, Motors and Meters",
+      "concept": "Magnets, magnetisation and demagnetisation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "To protect a material from the influence of an external magnetic field, the material should be kept in a",
+      "options": [
+        {
+          "id": "a",
+          "text": "soft iron ring",
+          "why": "Soft iron has high magnetic permeability. It can guide much of the external flux through itself and reduce the field in the enclosed space.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "loop of copper wire",
+          "why": "Copper is not a high-permeability shield for a steady magnetic field.",
+          "whyWrong": "Copper is not a high-permeability shield for a steady magnetic field."
+        },
+        {
+          "id": "c",
+          "text": "triangular zinc ring",
+          "why": "Zinc is not a high-permeability shielding material.",
+          "whyWrong": "Zinc is not a high-permeability shielding material."
+        },
+        {
+          "id": "d",
+          "text": "square steel ring",
+          "why": "Steel generally retains magnetisation more readily than soft iron.",
+          "whyWrong": "Steel generally retains magnetisation more readily than soft iron."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Use a material that provides an easy path for magnetic flux.",
+      "explanation": "Soft iron has high magnetic permeability. It can guide much of the external flux through itself and reduce the field in the enclosed space.",
+      "trap": "Steel generally retains magnetisation more readily than soft iron.",
+      "mnemonic": "Soft iron diverts magnetic flux.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Soft iron diverts magnetic flux."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Steel generally retains magnetisation more readily than soft iron."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 15,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2016-022",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Harmonics, strings and open and closed pipes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In a closed organ pipe producing a musical note, an antinode will always be produced at",
+      "options": [
+        {
+          "id": "a",
+          "text": "the closed end",
+          "why": "The rigid closed end prevents displacement of the air.",
+          "whyWrong": "The rigid closed end prevents displacement of the air."
+        },
+        {
+          "id": "b",
+          "text": "the middle",
+          "why": "The midpoint is not always an antinode.",
+          "whyWrong": "The midpoint is not always an antinode."
+        },
+        {
+          "id": "c",
+          "text": "the open end",
+          "why": "At the open end the air can oscillate with a large displacement, so it is a displacement antinode. The closed end is a displacement node.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "all the parts of the pipe",
+          "why": "A standing wave has separate nodes and antinodes.",
+          "whyWrong": "A standing wave has separate nodes and antinodes."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Decide where the air is freest to move.",
+      "explanation": "At the open end the air can oscillate with a large displacement, so it is a displacement antinode. The closed end is a displacement node.",
+      "trap": "The rigid closed end prevents displacement of the air.",
+      "mnemonic": "Open end: displacement antinode. Closed end: displacement node.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Open end: displacement antinode. Closed end: displacement node."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The rigid closed end prevents displacement of the air."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 22,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2016-033",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Atmospheric pressure and barometers",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Mercury is suitable as a barometric fluid because it",
+      "options": [
+        {
+          "id": "a",
+          "text": "expands uniformly",
+          "why": "Uniform expansion can matter in thermometry, but it does not explain the short barometer column.",
+          "whyWrong": "Uniform expansion can matter in thermometry, but it does not explain the short barometer column."
+        },
+        {
+          "id": "b",
+          "text": "is several times denser than water",
+          "why": "For a given pressure, h = P/(ρg). Mercury’s high density lets a barometer balance atmospheric pressure with a comparatively short column.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "is opaque",
+          "why": "Opacity is not what balances the atmospheric pressure.",
+          "whyWrong": "Opacity is not what balances the atmospheric pressure."
+        },
+        {
+          "id": "d",
+          "text": "is a good conductor of heat",
+          "why": "Heat conduction does not determine the equilibrium column height.",
+          "whyWrong": "Heat conduction does not determine the equilibrium column height."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use the pressure equation for a liquid column.",
+      "explanation": "For a given pressure, h = P/(ρg). Mercury’s high density lets a barometer balance atmospheric pressure with a comparatively short column.",
+      "trap": "Uniform expansion can matter in thermometry, but it does not explain the short barometer column.",
+      "mnemonic": "A denser barometer liquid needs a shorter column.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A denser barometer liquid needs a shorter column."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Uniform expansion can matter in thermometry, but it does not explain the short barometer column."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 33,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2016-035",
+      "subject": "physics",
+      "chapter": "3",
+      "topic": "Forces, Momentum and Equilibrium",
+      "concept": "Newton’s laws and types of force",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which option correctly explains the inertia of a body?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reluctance to start moving from rest and to stop moving once in motion",
+          "why": "Inertia is resistance to a change in velocity. It applies both when something is at rest and when it is already moving.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Reluctance to stop moving",
+          "why": "This covers only the case of an object already moving.",
+          "whyWrong": "This covers only the case of an object already moving."
+        },
+        {
+          "id": "c",
+          "text": "Readiness to start moving",
+          "why": "An object at rest resists the change required to start moving.",
+          "whyWrong": "An object at rest resists the change required to start moving."
+        },
+        {
+          "id": "d",
+          "text": "Reluctance to start moving and readiness to stop moving once in motion",
+          "why": "A moving object also resists being brought to rest.",
+          "whyWrong": "A moving object also resists being brought to rest."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Use Newton’s first law for both an object at rest and one in motion.",
+      "explanation": "Inertia is resistance to a change in velocity. It applies both when something is at rest and when it is already moving.",
+      "trap": "A moving object also resists being brought to rest.",
+      "mnemonic": "Inertia resists changes to motion, including changes from rest.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Inertia resists changes to motion, including changes from rest."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "A moving object also resists being brought to rest."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 35,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2016-037",
+      "subject": "physics",
+      "chapter": "6",
+      "topic": "Friction and Elasticity",
+      "concept": "Elastic limit, yield and fracture",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the name of the point beyond which a stretched spring no longer returns to its original length?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Breaking point",
+          "why": "The breaking point is where the spring fractures.",
+          "whyWrong": "The breaking point is where the spring fractures."
+        },
+        {
+          "id": "b",
+          "text": "Spring constant",
+          "why": "The spring constant measures stiffness.",
+          "whyWrong": "The spring constant measures stiffness."
+        },
+        {
+          "id": "c",
+          "text": "Elastic limit",
+          "why": "The elastic limit is the boundary of reversible deformation. Stretching beyond it can leave the spring permanently longer after unloading.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Elasticity point",
+          "why": "Elasticity point is not the term for the end of reversible deformation.",
+          "whyWrong": "Elasticity point is not the term for the end of reversible deformation."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Focus on the first permanent change in length.",
+      "explanation": "The elastic limit is the boundary of reversible deformation. Stretching beyond it can leave the spring permanently longer after unloading.",
+      "trap": "The breaking point is where the spring fractures.",
+      "mnemonic": "Elastic means it returns after unloading.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Elastic means it returns after unloading."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The breaking point is where the spring fractures."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 37,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-009",
+      "subject": "physics",
+      "chapter": "15",
+      "topic": "Refraction, Lenses and Optical Instruments",
+      "concept": "Apparent depth and lateral displacement",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "An object at the bottom of a well full of clear water appears closer to the surface. What causes this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refraction",
+          "why": "Light bends at the water–air boundary. The eye traces the emerging ray backwards and sees the object at a smaller apparent depth.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Reflection",
+          "why": "Reflection sends rays back into the original medium.",
+          "whyWrong": "Reflection sends rays back into the original medium."
+        },
+        {
+          "id": "c",
+          "text": "An inverter",
+          "why": "No device turns the image upside down.",
+          "whyWrong": "No device turns the image upside down."
+        },
+        {
+          "id": "d",
+          "text": "A magnifier",
+          "why": "A magnifier is unnecessary. The water surface itself refracts light.",
+          "whyWrong": "A magnifier is unnecessary. The water surface itself refracts light."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow a ray from the water into the air.",
+      "explanation": "Light bends at the water–air boundary. The eye traces the emerging ray backwards and sees the object at a smaller apparent depth.",
+      "trap": "Reflection sends rays back into the original medium.",
+      "mnemonic": "Refraction makes submerged objects appear shallower.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Refraction makes submerged objects appear shallower."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Reflection sends rays back into the original medium."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-018",
+      "subject": "physics",
+      "chapter": "10",
+      "topic": "Heat, Changes of State and Vapours",
+      "concept": "Melting, boiling and evaporation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A thin weighted wire cuts through a block of ice while the ice remains solid behind it. What is this process called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "fusion",
+          "why": "Fusion describes the melting stage only.",
+          "whyWrong": "Fusion describes the melting stage only."
+        },
+        {
+          "id": "b",
+          "text": "sublimation",
+          "why": "Sublimation is a direct change from solid to gas.",
+          "whyWrong": "Sublimation is a direct change from solid to gas."
+        },
+        {
+          "id": "c",
+          "text": "regelation",
+          "why": "Pressure from the wire lowers the melting point beneath it. The water freezes again when the pressure is removed, a process called regelation.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "condensation",
+          "why": "Condensation changes a gas or vapour into liquid.",
+          "whyWrong": "Condensation changes a gas or vapour into liquid."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Look for both melting ahead of the wire and refreezing behind it.",
+      "explanation": "Pressure from the wire lowers the melting point beneath it. The water freezes again when the pressure is removed, a process called regelation.",
+      "trap": "Fusion describes the melting stage only.",
+      "mnemonic": "Regelation joins pressure melting to refreezing.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Regelation joins pressure melting to refreezing."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Fusion describes the melting stage only."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 18,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-019",
+      "subject": "physics",
+      "chapter": "1",
+      "topic": "Measurements, Units and Vectors",
+      "concept": "Measuring instruments, errors and significant figures",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The inner diameter of a small test tube can be measured accurately using a",
+      "options": [
+        {
+          "id": "a",
+          "text": "micrometer screw gauge",
+          "why": "The standard school micrometer screw gauge measures external thickness.",
+          "whyWrong": "The standard school micrometer screw gauge measures external thickness."
+        },
+        {
+          "id": "b",
+          "text": "pair of Vernier callipers",
+          "why": "The inside jaws of Vernier callipers open against opposite inner walls of the tube and directly measure the internal diameter.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "metre rule",
+          "why": "A metre rule is too coarse for this small internal distance.",
+          "whyWrong": "A metre rule is too coarse for this small internal distance."
+        },
+        {
+          "id": "d",
+          "text": "pair of dividers",
+          "why": "Dividers can transfer a spacing but do not directly provide a precise reading.",
+          "whyWrong": "Dividers can transfer a spacing but do not directly provide a precise reading."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Choose the instrument with inside jaws.",
+      "explanation": "The inside jaws of Vernier callipers open against opposite inner walls of the tube and directly measure the internal diameter.",
+      "trap": "The standard school micrometer screw gauge measures external thickness.",
+      "mnemonic": "Vernier inside jaws measure internal diameters.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Vernier inside jaws measure internal diameters."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The standard school micrometer screw gauge measures external thickness."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 19,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-027",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Harmonics, strings and open and closed pipes",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 100 cm sonometer wire under a tension of 10 N vibrates at 250 Hz. With the length unchanged, the tension is adjusted until the frequency is 350 Hz. What is the new tension?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5.1 N",
+          "why": "This inverts the squared frequency ratio and decreases the tension.",
+          "whyWrong": "This inverts the squared frequency ratio and decreases the tension."
+        },
+        {
+          "id": "b",
+          "text": "19.6 N",
+          "why": "At fixed length and linear density, f ∝ √T. The new tension is 10 × (350/250)^{2} = 19.6 N.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "14.0 N",
+          "why": "14.0 N assumes tension is proportional to frequency itself.",
+          "whyWrong": "14.0 N assumes tension is proportional to frequency itself."
+        },
+        {
+          "id": "d",
+          "text": "7.1 N",
+          "why": "7.1 N inverts the unsquared ratio.",
+          "whyWrong": "7.1 N inverts the unsquared ratio."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "For a fixed wire and length, frequency follows the square root of tension.",
+      "explanation": "At fixed length and linear density, f ∝ √T. The new tension is 10 × (350/250)^{2} = 19.6 N.",
+      "trap": "14.0 N assumes tension is proportional to frequency itself.",
+      "mnemonic": "Square the frequency ratio to find the tension ratio.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Square the frequency ratio to find the tension ratio."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "14.0 N assumes tension is proportional to frequency itself."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 27,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-031",
+      "subject": "physics",
+      "chapter": "3",
+      "topic": "Forces, Momentum and Equilibrium",
+      "concept": "Centre of gravity and stability",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is in a neutral equilibrium?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A heavy weight suspended on a string",
+          "why": "A suspended mass swings back towards its lowest position.",
+          "whyWrong": "A suspended mass swings back towards its lowest position."
+        },
+        {
+          "id": "b",
+          "text": "The beam of a balance in use",
+          "why": "A working balance normally has a restoring tendency about its pivot.",
+          "whyWrong": "A working balance normally has a restoring tendency about its pivot."
+        },
+        {
+          "id": "c",
+          "text": "A heavy-based table lamp",
+          "why": "A heavy-based lamp normally returns upright after a small tilt.",
+          "whyWrong": "A heavy-based lamp normally returns upright after a small tilt."
+        },
+        {
+          "id": "d",
+          "text": "A cone resting on its slant edge",
+          "why": "A cone rolled slightly on its curved side keeps its centre of gravity at the same height and can remain in its new position. This is neutral equilibrium.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Ask whether a small displacement changes the height of the centre of gravity.",
+      "explanation": "A cone rolled slightly on its curved side keeps its centre of gravity at the same height and can remain in its new position. This is neutral equilibrium.",
+      "trap": "A working balance normally has a restoring tendency about its pivot.",
+      "mnemonic": "Neutral equilibrium leaves the centre of gravity at the same height.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Neutral equilibrium leaves the centre of gravity at the same height."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A working balance normally has a restoring tendency about its pivot."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-035",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Archimedes’ principle and flotation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A hydrometer is an instrument for measuring the",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depth of water in a vessel",
+          "why": "A depth gauge measures the depth of water in a vessel.",
+          "whyWrong": "A depth gauge measures the depth of water in a vessel."
+        },
+        {
+          "id": "b",
+          "text": "Relative humidity of the air",
+          "why": "A hygrometer measures relative humidity.",
+          "whyWrong": "A hygrometer measures relative humidity."
+        },
+        {
+          "id": "c",
+          "text": "Relative density of a liquid from apparent loss of weight",
+          "why": "Loss of apparent weight is a different way to compare densities. A hydrometer floats freely.",
+          "whyWrong": "Loss of apparent weight is a different way to compare densities. A hydrometer floats freely."
+        },
+        {
+          "id": "d",
+          "text": "Relative density of a liquid by flotation",
+          "why": "A hydrometer settles where it displaces liquid of a weight equal to its own. Its depth of immersion depends on liquid density, allowing a reading of relative density.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Think of a graduated instrument that floats higher in denser liquids.",
+      "explanation": "A hydrometer settles where it displaces liquid of a weight equal to its own. Its depth of immersion depends on liquid density, allowing a reading of relative density.",
+      "trap": "Loss of apparent weight is a different way to compare densities. A hydrometer floats freely.",
+      "mnemonic": "A hydrometer uses flotation to read liquid density.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A hydrometer uses flotation to read liquid density."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Loss of apparent weight is a different way to compare densities. A hydrometer floats freely."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 35,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2017-040",
+      "subject": "physics",
+      "chapter": "22",
+      "topic": "Conduction in Liquids and Gases",
+      "concept": "Faraday’s laws of electrolysis",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A charge of one coulomb liberated 0.0033 g of copper in an electrolytic process. How long will it take a current of 2 A to liberate 1.98 g of copper in such a process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 minutes",
+          "why": "30 minutes at 2 A delivers 3600 C.",
+          "whyWrong": "30 minutes at 2 A delivers 3600 C."
+        },
+        {
+          "id": "b",
+          "text": "5 minutes",
+          "why": "Faraday’s law gives Q = 1.98/0.0033 = 600 C. At 2 C per second this requires 300 s, or 5 minutes.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "50 minutes",
+          "why": "50 minutes at 2 A delivers 6000 C.",
+          "whyWrong": "50 minutes at 2 A delivers 6000 C."
+        },
+        {
+          "id": "d",
+          "text": "60 minutes",
+          "why": "60 minutes at 2 A delivers 7200 C.",
+          "whyWrong": "60 minutes at 2 A delivers 7200 C."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Calculate the charge needed and then divide it by the current.",
+      "explanation": "Faraday’s law gives Q = 1.98/0.0033 = 600 C. At 2 C per second this requires 300 s, or 5 minutes.",
+      "trap": "30 minutes at 2 A delivers 3600 C.",
+      "mnemonic": "Mass gives charge; charge divided by current gives seconds.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Mass gives charge; charge divided by current gives seconds."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "30 minutes at 2 A delivers 3600 C."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 40,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-002",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Density and relative density",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Before frying, 400 cm^{3} of palm oil had a density of 0.9 g cm^{−3}. After frying it has a density of 0.6 g cm^{−3}. Assuming no loss of oil, what is its new volume?",
+      "options": [
+        {
+          "id": "a",
+          "text": "360 cm^{3}",
+          "why": "360 is the mass in grams.",
+          "whyWrong": "360 is the mass in grams."
+        },
+        {
+          "id": "b",
+          "text": "600 cm^{3}",
+          "why": "The oil has mass 0.9 × 400 = 360 g. At 0.6 g cm^{−3}, its volume is 360/0.6 = 600 cm^{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "240 cm^{3}",
+          "why": "240 cm^{3} is smaller than the original volume even though the density decreased.",
+          "whyWrong": "240 cm^{3} is smaller than the original volume even though the density decreased."
+        },
+        {
+          "id": "d",
+          "text": "800 cm^{3}",
+          "why": "800 cm^{3} would require the final density to be 0.45 g cm^{−3}.",
+          "whyWrong": "800 cm^{3} would require the final density to be 0.45 g cm^{−3}."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "The mass stays constant, so use the density ratio.",
+      "explanation": "The oil has mass 0.9 × 400 = 360 g. At 0.6 g cm^{−3}, its volume is 360/0.6 = 600 cm^{3}.",
+      "trap": "360 is the mass in grams.",
+      "mnemonic": "For fixed mass, volume increases as density decreases.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "For fixed mass, volume increases as density decreases."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "360 is the mass in grams."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 2,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-005",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Laws of reflection and plane mirrors",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following does NOT describe the image formed by a plane mirror?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Erect",
+          "why": "A plane-mirror image is erect.",
+          "whyWrong": "A plane-mirror image is erect."
+        },
+        {
+          "id": "b",
+          "text": "Laterally inverted",
+          "why": "Lateral inversion is a familiar plane-mirror property.",
+          "whyWrong": "Lateral inversion is a familiar plane-mirror property."
+        },
+        {
+          "id": "c",
+          "text": "Same distance from mirror as object",
+          "why": "The image distance behind the mirror equals the object distance in front.",
+          "whyWrong": "The image distance behind the mirror equals the object distance in front."
+        },
+        {
+          "id": "d",
+          "text": "Magnified",
+          "why": "A plane mirror makes an upright, virtual, laterally inverted image at the same distance behind the mirror as the object is in front. Its size is unchanged.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Which characteristic would require a magnification larger than one?",
+      "explanation": "A plane mirror makes an upright, virtual, laterally inverted image at the same distance behind the mirror as the object is in front. Its size is unchanged.",
+      "trap": "The image distance behind the mirror equals the object distance in front.",
+      "mnemonic": "A plane mirror gives equal size and equal distance.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A plane mirror gives equal size and equal distance."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The image distance behind the mirror equals the object distance in front."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 5,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-007",
+      "subject": "physics",
+      "chapter": "5",
+      "topic": "Work, Energy, Power and Simple Machines",
+      "concept": "Energy conservation and transformation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following best describes the energy changes which take place when a steam engine drives a generator which lights a lamp?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heat → Light → Sound → Kinetic",
+          "why": "The generator’s electrical output is missing.",
+          "whyWrong": "The generator’s electrical output is missing."
+        },
+        {
+          "id": "b",
+          "text": "Heat → Kinetic → Electricity → Heat and Light",
+          "why": "The steam engine converts thermal energy into motion. The generator converts that motion into electrical energy, which the lamp converts into light and heat.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Kinetic → Light → Heat →Electricity",
+          "why": "The steam supplies thermal energy first, and the lamp receives electricity before it makes light.",
+          "whyWrong": "The steam supplies thermal energy first, and the lamp receives electricity before it makes light."
+        },
+        {
+          "id": "d",
+          "text": "Electricity →Kinetic→ Heat → Light",
+          "why": "Electricity is produced after the mechanical stage.",
+          "whyWrong": "Electricity is produced after the mechanical stage."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Follow the energy from the steam through each device.",
+      "explanation": "The steam engine converts thermal energy into motion. The generator converts that motion into electrical energy, which the lamp converts into light and heat.",
+      "trap": "Electricity is produced after the mechanical stage.",
+      "mnemonic": "Engine turns, generator supplies, lamp shines.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Engine turns, generator supplies, lamp shines."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Electricity is produced after the mechanical stage."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 7,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-012",
+      "subject": "physics",
+      "chapter": "10",
+      "topic": "Heat, Changes of State and Vapours",
+      "concept": "Heat capacity and specific heat capacity",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the name for the amount of heat needed to raise the temperature of a 10 kg copper sample by 1 K?",
+      "options": [
+        {
+          "id": "a",
+          "text": "specific heat capacity",
+          "why": "Specific heat capacity is for 1 kg of material.",
+          "whyWrong": "Specific heat capacity is for 1 kg of material."
+        },
+        {
+          "id": "b",
+          "text": "latent heat",
+          "why": "Latent heat is transferred during a change of state without a temperature rise.",
+          "whyWrong": "Latent heat is transferred during a change of state without a temperature rise."
+        },
+        {
+          "id": "c",
+          "text": "heat capacity",
+          "why": "Heat capacity is the energy required to raise the temperature of an entire body by 1 K. The 10 kg sample is the body in this question.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "internal energy",
+          "why": "Internal energy is the total microscopic energy, rather than the energy needed for this one-degree increase.",
+          "whyWrong": "Internal energy is the total microscopic energy, rather than the energy needed for this one-degree increase."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Distinguish the whole object from a kilogram of the material.",
+      "explanation": "Heat capacity is the energy required to raise the temperature of an entire body by 1 K. The 10 kg sample is the body in this question.",
+      "trap": "Specific heat capacity is for 1 kg of material.",
+      "mnemonic": "Heat capacity is for the sample. Specific heat capacity is per kilogram.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Heat capacity is for the sample. Specific heat capacity is per kilogram."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Specific heat capacity is for 1 kg of material."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-014",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Sources, propagation, shadows and eclipses",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Shadows and eclipses result from the",
+      "options": [
+        {
+          "id": "a",
+          "text": "refraction of light",
+          "why": "Refraction bends light at a boundary.",
+          "whyWrong": "Refraction bends light at a boundary."
+        },
+        {
+          "id": "b",
+          "text": "reflection of light",
+          "why": "Reflection is the return of light from a surface.",
+          "whyWrong": "Reflection is the return of light from a surface."
+        },
+        {
+          "id": "c",
+          "text": "diffraction of light",
+          "why": "Diffraction spreads light around an edge and can blur a shadow.",
+          "whyWrong": "Diffraction spreads light around an edge and can blur a shadow."
+        },
+        {
+          "id": "d",
+          "text": "rectilinear propagation of light",
+          "why": "In a uniform medium, light follows straight lines. Blocking some of those paths creates a shadow, and the same geometry produces eclipses.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "An opaque object intercepts the straight paths between a source and the screen.",
+      "explanation": "In a uniform medium, light follows straight lines. Blocking some of those paths creates a shadow, and the same geometry produces eclipses.",
+      "trap": "Refraction bends light at a boundary.",
+      "mnemonic": "Straight-line light propagation produces shadows.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Straight-line light propagation produces shadows."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Refraction bends light at a boundary."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-021",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Pitch, loudness, intensity and quality",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The pitch of an acoustic device can be increased by",
+      "options": [
+        {
+          "id": "a",
+          "text": "decreasing the loudness",
+          "why": "Reducing loudness does not change frequency.",
+          "whyWrong": "Reducing loudness does not change frequency."
+        },
+        {
+          "id": "b",
+          "text": "increasing the amplitude",
+          "why": "Increasing amplitude mainly changes loudness.",
+          "whyWrong": "Increasing amplitude mainly changes loudness."
+        },
+        {
+          "id": "c",
+          "text": "increasing the frequency",
+          "why": "Pitch rises with frequency. More vibrations per second produce a higher-pitched note.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "decreasing the intensity",
+          "why": "Intensity affects loudness rather than pitch.",
+          "whyWrong": "Intensity affects loudness rather than pitch."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Distinguish how high a note sounds from how loud it sounds.",
+      "explanation": "Pitch rises with frequency. More vibrations per second produce a higher-pitched note.",
+      "trap": "Increasing amplitude mainly changes loudness.",
+      "mnemonic": "Frequency sets pitch, amplitude mainly sets loudness.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Frequency sets pitch, amplitude mainly sets loudness."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Increasing amplitude mainly changes loudness."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-023",
+      "subject": "physics",
+      "chapter": "8",
+      "topic": "Temperature and Thermal Expansion",
+      "concept": "Linear, area and volume expansion",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The linear expansivity of brass is 2 × 10^{−5} °C^{−1}. If a piece of brass has volume 15.00 cm^{3} at 0°C, what is its volume at 100°C?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16.03 cm^{3}",
+          "why": "This treats the modest thermal expansion as an increase of more than 1 cm^{3}.",
+          "whyWrong": "This treats the modest thermal expansion as an increase of more than 1 cm^{3}."
+        },
+        {
+          "id": "b",
+          "text": "15.09 cm^{3}",
+          "why": "For an isotropic solid, β ≈ 3α. The volume increases by 15.00 × 3 × (2 × 10^{−5}) × 100 = 0.09 cm^{3}, making it 15.09 cm^{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "16.00 cm^{3}",
+          "why": "The given coefficient and temperature rise give a change of 0.09 cm^{3}, not 1.00 cm^{3}.",
+          "whyWrong": "The given coefficient and temperature rise give a change of 0.09 cm^{3}, not 1.00 cm^{3}."
+        },
+        {
+          "id": "d",
+          "text": "15.03 cm^{3}",
+          "why": "This uses the linear coefficient directly for volume expansion.",
+          "whyWrong": "This uses the linear coefficient directly for volume expansion."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Convert the linear expansivity to the approximate volume expansivity.",
+      "explanation": "For an isotropic solid, β ≈ 3α. The volume increases by 15.00 × 3 × (2 × 10^{−5}) × 100 = 0.09 cm^{3}, making it 15.09 cm^{3}.",
+      "trap": "This uses the linear coefficient directly for volume expansion.",
+      "mnemonic": "An isotropic solid’s volume expansivity is about three times its linear expansivity.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "An isotropic solid’s volume expansivity is about three times its linear expansivity."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "This uses the linear coefficient directly for volume expansion."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 23,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-025",
+      "subject": "physics",
+      "chapter": "21",
+      "topic": "Electromagnetic Induction and AC Circuits",
+      "concept": "AC resonance",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "In a series RLC circuit at resonance, the voltages across the resistor and inductor are 20 V and 40 V, respectively. What is the capacitor voltage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 V",
+          "why": "30 V is below the inductor’s voltage magnitude.",
+          "whyWrong": "30 V is below the inductor’s voltage magnitude."
+        },
+        {
+          "id": "b",
+          "text": "70 V",
+          "why": "Adding voltage readings arithmetically does not give the capacitor voltage.",
+          "whyWrong": "Adding voltage readings arithmetically does not give the capacitor voltage."
+        },
+        {
+          "id": "c",
+          "text": "50 V",
+          "why": "The resistor voltage is out of phase with the reactive voltages and does not set their magnitude.",
+          "whyWrong": "The resistor voltage is out of phase with the reactive voltages and does not set their magnitude."
+        },
+        {
+          "id": "d",
+          "text": "40 V",
+          "why": "At resonance X_{L} = X_{C}. The same series current flows through both elements, so their voltage magnitudes are equal. The capacitor voltage is 40 V.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Think about what the two reactances do at resonance.",
+      "explanation": "At resonance X_{L} = X_{C}. The same series current flows through both elements, so their voltage magnitudes are equal. The capacitor voltage is 40 V.",
+      "trap": "The resistor voltage is out of phase with the reactive voltages and does not set their magnitude.",
+      "mnemonic": "At series resonance, the inductor and capacitor voltages cancel as phasors.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At series resonance, the inductor and capacitor voltages cancel as phasors."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "The resistor voltage is out of phase with the reactive voltages and does not set their magnitude."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 25,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-2018-040",
+      "subject": "physics",
+      "chapter": "17",
+      "topic": "Electrostatics and Capacitors",
+      "concept": "Capacitors in series and parallel",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Calculate the effective capacitance between terminals A and B in the circuit shown.",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 μF",
+          "why": "4 μF exceeds the 2 μF series capacitor. A series equivalent is below its smallest member.",
+          "whyWrong": "4 μF exceeds the 2 μF series capacitor. A series equivalent is below its smallest member."
+        },
+        {
+          "id": "b",
+          "text": "3 μF",
+          "why": "3 μF is the lower terminal capacitor by itself.",
+          "whyWrong": "3 μF is the lower terminal capacitor by itself."
+        },
+        {
+          "id": "c",
+          "text": "2 μF",
+          "why": "2 μF is the upper terminal capacitor by itself. The other series elements lower the equivalent further.",
+          "whyWrong": "2 μF is the upper terminal capacitor by itself. The other series elements lower the equivalent further."
+        },
+        {
+          "id": "d",
+          "text": "1 μF",
+          "why": "The three 2 μF capacitors on the left are in parallel, giving 6 μF. This group is in series with the terminal capacitors of 2 μF and 3 μF. The reciprocals add to 1/6 + 1/2 + 1/3 = 1 per μF, so the equivalent is 1 μF.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Find the equivalent of the three capacitors connected to the same two rails, then reduce the series path.",
+      "explanation": "The three 2 μF capacitors on the left are in parallel, giving 6 μF. This group is in series with the terminal capacitors of 2 μF and 3 μF. The reciprocals add to 1/6 + 1/2 + 1/3 = 1 per μF, so the equivalent is 1 μF.",
+      "trap": "2 μF is the upper terminal capacitor by itself. The other series elements lower the equivalent further.",
+      "mnemonic": "Parallel adds capacitances. Series adds reciprocals.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Parallel adds capacitances. Series adds reciprocals."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "2 μF is the upper terminal capacitor by itself. The other series elements lower the equivalent further."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 40,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false,
+      "figure": {
+        "type": "svg",
+        "src": "figures/physics-2018-q40.svg",
+        "alt": "Three 2 μF capacitors share the same top and bottom rails. Terminal A connects to the top rail through a 2 μF capacitor. Terminal B connects to the bottom rail through a 3 μF capacitor.",
+        "caption": "Circuit from Physics 2018, Q40, redrawn with labelled terminals."
+      }
+    }
+  ]
+}
