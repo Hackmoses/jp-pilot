@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 10,
+  "count": 20,
   "animations": [
     {
       "id": "anim-math-jamb-2014-008",
@@ -806,6 +806,778 @@
           "tag": "answer",
           "title": "Final value of x",
           "narration": "Therefore x equals six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-024",
+      "questionId": "math-jamb-2014-024",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Column 1 has 0, 1, 0 with signs +, −, +",
+          "tag": "column 1",
+          "title": "Pick column with zeros",
+          "narration": "Expand down the first column because two of its entries are zero, leaving only the middle term."
+        },
+        {
+          "n": 2,
+          "display": "−1 × \\det{3,2;5,4}",
+          "tag": "minor",
+          "title": "Form the 2 × 2 minor",
+          "narration": "Cross out row two and column one, and keep the negative cofactor sign for position two, one."
+        },
+        {
+          "n": 3,
+          "display": "−(3 × 4 − 2 × 5) = −(12 − 10)",
+          "tag": "compute",
+          "title": "Evaluate minor determinant",
+          "narration": "Multiply three by four to get twelve and subtract two times five, which is ten."
+        },
+        {
+          "n": 4,
+          "display": "−2 (option A)",
+          "tag": "answer",
+          "title": "Determinant value",
+          "narration": "Twelve minus ten is two, and the outer minus sign gives minus two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Col 1 entries: 0, 1, 0; signs: +, −, +",
+          "tag": "strategy",
+          "title": "Expand down column 1",
+          "narration": "Expanding down the first column avoids extra work because multiplying by zero vanishes for rows one and three."
+        },
+        {
+          "n": 2,
+          "display": "+0(…) − 1\\det{3,2;5,4} + 0(…)",
+          "tag": "cofactor",
+          "title": "Write column 1 cofactors",
+          "narration": "Only the middle entry one survives, carrying a minus cofactor sign."
+        },
+        {
+          "n": 3,
+          "display": "−1(3 × 4 − 2 × 5)",
+          "tag": "minor",
+          "title": "Expand 2 × 2 minor",
+          "narration": "Evaluate the two by two determinant as top-left times bottom-right minus top-right times bottom-left."
+        },
+        {
+          "n": 4,
+          "display": "−(12 − 10) = −2",
+          "tag": "subtract",
+          "title": "Subtract and apply minus sign",
+          "narration": "Three times four is twelve minus two times five is ten, leaving minus two."
+        },
+        {
+          "n": 5,
+          "display": "−2 (option A)",
+          "tag": "answer",
+          "title": "Final determinant",
+          "narration": "The value of the determinant is minus two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-033",
+      "questionId": "math-jamb-2014-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = \\frac{y_{2} − y_{1}}{x_{2} − x_{1}}",
+          "tag": "formula",
+          "title": "Gradient formula",
+          "narration": "Use the gradient formula change in y over change in x."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{4 − 2}{x − 1} = \\frac{1}{2}",
+          "tag": "substitute",
+          "title": "Substitute both points",
+          "narration": "Plug in x comma four and one comma two in the same order and equate to one half."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2}{x − 1} = \\frac{1}{2} ⇒ x − 1 = 4",
+          "tag": "cross-multiply",
+          "title": "Cross-multiply",
+          "narration": "Four minus two is two, then cross-multiply to get x minus one equal to four."
+        },
+        {
+          "n": 4,
+          "display": "x = 5 (option B)",
+          "tag": "answer",
+          "title": "Value of x",
+          "narration": "Add one to both sides to find x equals five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = \\frac{y_{2} − y_{1}}{x_{2} − x_{1}}",
+          "tag": "formula",
+          "title": "State gradient formula",
+          "narration": "Write down the two-point gradient formula, making sure both numerator and denominator subtract the points in the same order."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{4 − 2}{x − 1} = \\frac{1}{2}",
+          "tag": "substitute",
+          "title": "Substitute points and m",
+          "narration": "Put four minus two over x minus one and set that equal to the given gradient one half."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2}{x − 1} = \\frac{1}{2}",
+          "tag": "simplify",
+          "title": "Simplify the numerator",
+          "narration": "Subtract two from four in the numerator to get two."
+        },
+        {
+          "n": 4,
+          "display": "x − 1 = 2 × 2 = 4",
+          "tag": "cross-multiply",
+          "title": "Cross-multiply both sides",
+          "narration": "Multiply diagonally so x minus one equals two times two, which is four."
+        },
+        {
+          "n": 5,
+          "display": "x = 4 + 1 = 5",
+          "tag": "add 1",
+          "title": "Add 1 to both sides",
+          "narration": "Add one to both sides to get x on its own."
+        },
+        {
+          "n": 6,
+          "display": "Check: \\frac{4 − 2}{5 − 1} = \\frac{2}{4} = \\frac{1}{2}",
+          "tag": "check",
+          "title": "Check gradient at x = 5",
+          "narration": "Verify: with x equal to five, two over four simplifies to one half."
+        },
+        {
+          "n": 7,
+          "display": "x = 5 (option B)",
+          "tag": "answer",
+          "title": "Final value of x",
+          "narration": "Therefore x equals five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-036",
+      "questionId": "math-jamb-2014-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "3y = −4x + 5 ⇒ m_{1} = −\\frac{4}{3}",
+          "tag": "given slope",
+          "title": "Find given gradient",
+          "narration": "Rearrange the given line into y equals m x plus c form to read its gradient minus four thirds."
+        },
+        {
+          "n": 2,
+          "display": "m_{1} m_{2} = −1 ⇒ m_{2} = \\frac{3}{4}",
+          "tag": "perp slope",
+          "title": "Perpendicular gradient",
+          "narration": "Take the negative reciprocal of minus four thirds to get the perpendicular gradient three quarters."
+        },
+        {
+          "n": 3,
+          "display": "y − 3 = \\frac{3}{4}(x + 2) ⇒ 4y − 12 = 3x + 6",
+          "tag": "point-slope",
+          "title": "Use point (−2, 3)",
+          "narration": "Use point-slope form through minus two comma three and multiply both sides by four."
+        },
+        {
+          "n": 4,
+          "display": "3x − 4y + 18 = 0 (option B)",
+          "tag": "answer",
+          "title": "Equation of line",
+          "narration": "Collect all terms on one side to obtain three x minus four y plus eighteen equals zero."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "4x + 3y − 5 = 0 ⇒ y = −\\frac{4}{3}x + \\frac{5}{3}",
+          "tag": "rearrange",
+          "title": "Find slope of given line",
+          "narration": "Isolate y by moving four x minus five to the right and dividing by three, giving gradient m one equals minus four over three."
+        },
+        {
+          "n": 2,
+          "display": "m_{2} = −\\frac{1}{m_{1}} = \\frac{3}{4}",
+          "tag": "perpendicular",
+          "title": "Take negative reciprocal",
+          "narration": "For perpendicular lines, flip the fraction and change its sign so the two slopes multiply to minus one."
+        },
+        {
+          "n": 3,
+          "display": "y − y_{1} = m(x − x_{1}) ⇒ y − 3 = \\frac{3}{4}(x − (−2))",
+          "tag": "formula",
+          "title": "Apply point-slope formula",
+          "narration": "Substitute gradient three quarters and point minus two comma three into y minus y one equals m times x minus x one."
+        },
+        {
+          "n": 4,
+          "display": "4(y − 3) = 3(x + 2) ⇒ 4y − 12 = 3x + 6",
+          "tag": "clear",
+          "title": "Multiply both sides by 4",
+          "narration": "Multiply both sides by four to clear the fraction, then expand both brackets."
+        },
+        {
+          "n": 5,
+          "display": "3x − 4y + 6 + 12 = 0 ⇒ 3x − 4y + 18 = 0",
+          "tag": "standard form",
+          "title": "Collect onto one side",
+          "narration": "Subtract four y and add twelve to both sides so all terms sit neatly on one side equal to zero."
+        },
+        {
+          "n": 6,
+          "display": "Check (−2, 3): 3(−2) − 4(3) + 18 = −6 − 12 + 18 = 0",
+          "tag": "check",
+          "title": "Check point (−2, 3)",
+          "narration": "Test x equals minus two and y equals three: minus six minus twelve plus eighteen is zero."
+        },
+        {
+          "n": 7,
+          "display": "3x − 4y + 18 = 0 (option B)",
+          "tag": "answer",
+          "title": "Final line equation",
+          "narration": "The equation of the perpendicular line is three x minus four y plus eighteen equals zero."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-039",
+      "questionId": "math-jamb-2014-039",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Let u = 3x, y = cos u",
+          "tag": "setup",
+          "title": "Identify inner function",
+          "narration": "Treat three x as the inner function u and cosine u as the outer function."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{dy}{du} = −sin u, \\frac{du}{dx} = 3",
+          "tag": "differentiate",
+          "title": "Differentiate outer and inner",
+          "narration": "Cosine u differentiates to minus sine u, and three x differentiates to three."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{dy}{dx} = −sin(3x) × 3",
+          "tag": "chain rule",
+          "title": "Apply chain rule",
+          "narration": "Multiply the two derivatives together and replace u with three x."
+        },
+        {
+          "n": 4,
+          "display": "−3 sin 3x (option A)",
+          "tag": "answer",
+          "title": "Derivative of cos 3x",
+          "narration": "Writing the factor three in front gives minus three sine three x."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Let u = 3x so y = cos u",
+          "tag": "substitute",
+          "title": "Choose substitution u = 3x",
+          "narration": "Because the angle is three x rather than x alone, use the chain rule by setting u equal to three x."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{dy}{du} = −sin u",
+          "tag": "outer",
+          "title": "Differentiate cosine",
+          "narration": "Differentiate cosine u with respect to u to get minus sine u."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{du}{dx} = 3",
+          "tag": "inner",
+          "title": "Differentiate angle 3x",
+          "narration": "Differentiate three x with respect to x to get three."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{dy}{dx} = \\frac{dy}{du} × \\frac{du}{dx} = (−sin 3x)(3)",
+          "tag": "multiply",
+          "title": "Multiply by chain rule",
+          "narration": "Multiply the outer derivative by the inner derivative and substitute three x back for u."
+        },
+        {
+          "n": 5,
+          "display": "−3 sin 3x (option A)",
+          "tag": "answer",
+          "title": "Final derivative",
+          "narration": "The derivative of cosine three x with respect to x is minus three sine three x."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-042",
+      "questionId": "math-jamb-2014-042",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "u = 2x + 3 ⇒ du = 2 dx ⇒ dx = \\frac{du}{2}",
+          "tag": "substitute",
+          "title": "Substitute u = 2x + 3",
+          "narration": "Set u equal to two x plus three, so d x equals d u divided by two."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{2} ∫ u^{\\frac{1}{2}} du = \\frac{1}{2} × \\frac{u^{\\frac{3}{2}}}{\\frac{3}{2}} + k",
+          "tag": "power rule",
+          "title": "Integrate u^{\\frac{1}{2}}",
+          "narration": "Raise the power one half by one to three halves and divide by three halves."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{2} × \\frac{2}{3} u^{\\frac{3}{2}} + k = \\frac{1}{3} u^{\\frac{3}{2}} + k",
+          "tag": "simplify",
+          "title": "Cancel factor of 2",
+          "narration": "Multiplying one half by two thirds simplifies cleanly to one third."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{3}(2x + 3)^{\\frac{3}{2}} + k (option D)",
+          "tag": "answer",
+          "title": "Indefinite integral",
+          "narration": "Replace u with two x plus three to get one third open bracket two x plus three close bracket to the three halves plus k."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Let u = 2x + 3 ⇒ \\frac{du}{dx} = 2",
+          "tag": "substitution",
+          "title": "Define linear substitution",
+          "narration": "Let u be the inside expression two x plus three; its derivative with respect to x is two, so d x is d u over two."
+        },
+        {
+          "n": 2,
+          "display": "∫ (2x + 3)^{\\frac{1}{2}} dx = \\frac{1}{2} ∫ u^{\\frac{1}{2}} du",
+          "tag": "rewrite",
+          "title": "Rewrite integral in u",
+          "narration": "Substitute u and d u over two to turn the integral into one half times the integral of u to the power one half."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{2} + 1 = \\frac{3}{2}",
+          "tag": "exponent",
+          "title": "Add 1 to the power",
+          "narration": "By the integration power rule, add one to the exponent one half to get three halves."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{2} × \\frac{2}{3} u^{\\frac{3}{2}} + k = \\frac{1}{3} u^{\\frac{3}{2}} + k",
+          "tag": "divide",
+          "title": "Divide by new exponent",
+          "narration": "Dividing by three halves is multiplying by two thirds; the two cancels with one half, leaving one third."
+        },
+        {
+          "n": 5,
+          "display": "Check: \\frac{d}{dx}[\\frac{1}{3}(2x+3)^{\\frac{3}{2}}] = \\frac{1}{3} × \\frac{3}{2}(2x+3)^{\\frac{1}{2}} × 2",
+          "tag": "check",
+          "title": "Check by differentiating",
+          "narration": "Check by differentiating: one third times three halves times inner derivative two cancels back to one, recovering the original integrand."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{1}{3}(2x + 3)^{\\frac{3}{2}} + k (option D)",
+          "tag": "answer",
+          "title": "Final antiderivative",
+          "narration": "The integral is one third times two x plus three to the power three halves plus constant k."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-045",
+      "questionId": "math-jamb-2014-045",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Mode = value with highest frequency",
+          "tag": "definition",
+          "title": "Definition of mode",
+          "narration": "The mode is the data value that appears most often, not its frequency count."
+        },
+        {
+          "n": 2,
+          "display": "Frequencies: 1, 2, 2, 1, 9 ⇒ highest = 9",
+          "tag": "scan",
+          "title": "Find highest frequency",
+          "narration": "Among the frequencies one, two, two, one, and nine, the largest frequency is nine."
+        },
+        {
+          "n": 3,
+          "display": "Value paired with frequency 9 is 4",
+          "tag": "match",
+          "title": "Match to data value",
+          "narration": "Since the values are zero, one, two, three, and four in order, frequency nine belongs to value four."
+        },
+        {
+          "n": 4,
+          "display": "4 (option A)",
+          "tag": "answer",
+          "title": "Mode of data",
+          "narration": "Therefore the mode is four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Mode = data value with greatest frequency",
+          "tag": "definition",
+          "title": "State definition of mode",
+          "narration": "Recall that the mode is the observation with the highest frequency, so we look for the largest frequency and read its corresponding data value."
+        },
+        {
+          "n": 2,
+          "display": "0→1, 1→2, 2→2, 3→1, 4→9",
+          "tag": "pair up",
+          "title": "Pair values with frequencies",
+          "narration": "Line up each value in order with its frequency: zero occurs once, one twice, two twice, three once, and four nine times."
+        },
+        {
+          "n": 3,
+          "display": "Max frequency = 9 (for value 4)",
+          "tag": "compare",
+          "title": "Identify winning value",
+          "narration": "Nine is clearly the largest frequency, and the value occurring nine times is four."
+        },
+        {
+          "n": 4,
+          "display": "4 (option A)",
+          "tag": "answer",
+          "title": "Final mode",
+          "narration": "Thus the mode of the distribution is four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-046",
+      "questionId": "math-jamb-2014-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "1, 2, 3, 3, 4, 5, 5, 5, 6, 7, 8, 9, 9, 10",
+          "tag": "sort",
+          "title": "Arrange in ascending order",
+          "narration": "Sort all fourteen numbers from smallest to largest before finding the middle."
+        },
+        {
+          "n": 2,
+          "display": "n = 14 ⇒ positions \\frac{14}{2} = 7th and 8th",
+          "tag": "formula",
+          "title": "Locate two middle terms",
+          "narration": "Because fourteen is even, average the seventh and eighth values."
+        },
+        {
+          "n": 3,
+          "display": "7th = 5, 8th = 5 ⇒ \\frac{5 + 5}{2}",
+          "tag": "average",
+          "title": "Average 7th and 8th",
+          "narration": "Both the seventh and eighth values in the ordered list are five."
+        },
+        {
+          "n": 4,
+          "display": "5 (option C)",
+          "tag": "answer",
+          "title": "Median value",
+          "narration": "The median of the list is five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "1, 2, 3, 3, 4, 5, 5, 5, 6, 7, 8, 9, 9, 10",
+          "tag": "sort",
+          "title": "Sort all 14 values",
+          "narration": "A median is only meaningful when data is ordered, so arrange all fourteen observations from least to greatest."
+        },
+        {
+          "n": 2,
+          "display": "n = 14 (even) ⇒ Median = \\frac{T_{\\frac{n}{2}} + T_{\\frac{n}{2} + 1}}{2}",
+          "tag": "formula",
+          "title": "State even-count median formula",
+          "narration": "For an even number n of values, the median is the mean of the n over two term and the next term."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{14}{2} = 7 ⇒ average 7th and 8th",
+          "tag": "positions",
+          "title": "Identify positions 7 and 8",
+          "narration": "Half of fourteen is seven, so count to the seventh and eighth numbers in the sorted list."
+        },
+        {
+          "n": 4,
+          "display": "7th value = 5, 8th value = 5",
+          "tag": "read",
+          "title": "Read middle values",
+          "narration": "Counting through one, two, three, three, four, five shows both position seven and position eight are five."
+        },
+        {
+          "n": 5,
+          "display": "Median = \\frac{5 + 5}{2} = 5",
+          "tag": "average",
+          "title": "Average the two values",
+          "narration": "Add five plus five and divide by two to get five."
+        },
+        {
+          "n": 6,
+          "display": "5 (option C)",
+          "tag": "answer",
+          "title": "Median",
+          "narration": "The median of the fourteen numbers is five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-047",
+      "questionId": "math-jamb-2014-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x̄ = \\frac{5 + 4 + 3 + 2 + 1}{5} = 3",
+          "tag": "mean",
+          "title": "Calculate the mean",
+          "narration": "Add the five numbers to get fifteen and divide by five to get a mean of three."
+        },
+        {
+          "n": 2,
+          "display": "d^{2}: 4, 1, 0, 1, 4 ⇒ Σ d^{2} = 10",
+          "tag": "deviations",
+          "title": "Sum squared deviations",
+          "narration": "Subtract mean three from each number and square the differences to get four, one, zero, one, four, summing to ten."
+        },
+        {
+          "n": 3,
+          "display": "σ^{2} = \\frac{10}{5} = 2",
+          "tag": "variance",
+          "title": "Find population variance",
+          "narration": "Divide the sum of squared deviations ten by N equals five to get variance two."
+        },
+        {
+          "n": 4,
+          "display": "\\sqrt{2} (option B)",
+          "tag": "answer",
+          "title": "Standard deviation",
+          "narration": "Taking the square root of two gives the population standard deviation root two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "σ = \\sqrt{\\frac{Σ (x − x̄)^{2}}{N}}",
+          "tag": "formula",
+          "title": "Standard deviation formula",
+          "narration": "State the population standard deviation formula: the square root of the average squared deviation from the mean."
+        },
+        {
+          "n": 2,
+          "display": "x̄ = \\frac{5 + 4 + 3 + 2 + 1}{5} = \\frac{15}{5} = 3",
+          "tag": "mean",
+          "title": "Find arithmetic mean",
+          "narration": "Sum the five values to get fifteen and divide by five to find the mean is three."
+        },
+        {
+          "n": 3,
+          "display": "x − 3: 2, 1, 0, −1, −2",
+          "tag": "deviate",
+          "title": "Subtract mean from each",
+          "narration": "Subtract three from each observation to get deviations two, one, zero, minus one, and minus two."
+        },
+        {
+          "n": 4,
+          "display": "Σ (x − 3)^{2} = 4 + 1 + 0 + 1 + 4 = 10",
+          "tag": "square",
+          "title": "Square and add deviations",
+          "narration": "Square each deviation so signs become positive, then add four plus one plus zero plus one plus four to get ten."
+        },
+        {
+          "n": 5,
+          "display": "σ^{2} = \\frac{10}{5} = 2 ⇒ σ = \\sqrt{2}",
+          "tag": "root",
+          "title": "Divide by 5 and take root",
+          "narration": "Divide ten by five for variance two, then take the square root to get root two."
+        },
+        {
+          "n": 6,
+          "display": "\\sqrt{2} (option B)",
+          "tag": "answer",
+          "title": "Population standard deviation",
+          "narration": "The population standard deviation is root two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-001",
+      "questionId": "math-jamb-2015-001",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = 1, r = \\frac{x}{1} = x, |x| < 1",
+          "tag": "parameters",
+          "title": "Identify first term and ratio",
+          "narration": "Recognize an infinite geometric series with first term one and common ratio x, where magnitude of x is less than one."
+        },
+        {
+          "n": 2,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "title": "Infinite GP sum formula",
+          "narration": "Use the convergent geometric series sum formula a divided by one minus r."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{1}{1 − x}",
+          "tag": "substitute",
+          "title": "Substitute a and r",
+          "narration": "Put one in place of a and x in place of r."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{1 − x} (option A)",
+          "tag": "answer",
+          "title": "Sum to infinity",
+          "narration": "The infinite sum equals one over one minus x."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "1 + x + x^{2} + … ⇒ a = 1, r = x",
+          "tag": "identify",
+          "title": "Check GP ratio",
+          "narration": "Each term multiplies the previous term by x, so this is a geometric progression with first term a equals one and common ratio r equals x."
+        },
+        {
+          "n": 2,
+          "display": "−1 < x < 1 ⇒ |r| < 1 (converges)",
+          "tag": "condition",
+          "title": "Verify convergence",
+          "narration": "Because x lies strictly between minus one and one, higher powers shrink toward zero and the infinite sum converges."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "title": "State sum to infinity formula",
+          "narration": "State the formula for the sum to infinity of a convergent geometric progression: first term divided by one minus common ratio."
+        },
+        {
+          "n": 4,
+          "display": "S_{∞} = \\frac{1}{1 − x}",
+          "tag": "substitute",
+          "title": "Substitute a = 1 and r = x",
+          "narration": "Replace a with one and r with x in the formula."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{1}{1 − x} (option A)",
+          "tag": "answer",
+          "title": "Infinite series sum",
+          "narration": "For x between minus one and one, the series sums to one divided by one minus x."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-009",
+      "questionId": "math-jamb-2015-009",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Spent in first x days = X × x = Xx",
+          "tag": "spent",
+          "title": "Amount spent so far",
+          "narration": "Spending X cedis per day for x days uses up X x cedis."
+        },
+        {
+          "n": 2,
+          "display": "Money left = Y − Xx",
+          "tag": "remainder",
+          "title": "Find remaining money",
+          "narration": "Subtract the X x cedis spent from the original Y cedis to find what remains."
+        },
+        {
+          "n": 3,
+          "display": "Daily rate = \\frac{Money left}{Days left} = \\frac{Y − Xx}{y − x}",
+          "tag": "divide",
+          "title": "Divide by remaining days",
+          "narration": "Divide the remaining money by the remaining y minus x days."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{Y − Xx}{y − x} (option D)",
+          "tag": "answer",
+          "title": "Daily amount remaining",
+          "narration": "The trader can spend Y minus X x all over y minus x cedis per day."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Total budget = Y, Total days = y",
+          "tag": "given",
+          "title": "Identify total budget",
+          "narration": "The trader begins with a total of Y cedis meant to last y days, paying careful attention to capital and lowercase letters."
+        },
+        {
+          "n": 2,
+          "display": "Amount spent = x days × X cedis = Xx",
+          "tag": "spent",
+          "title": "Calculate spending for x days",
+          "narration": "Multiply X cedis per day by x days to find the total spent in the first part, X x."
+        },
+        {
+          "n": 3,
+          "display": "Remaining money = Y − Xx",
+          "tag": "subtract",
+          "title": "Subtract spent from Y",
+          "narration": "Subtract what was already spent from the initial Y cedis to get Y minus X x left."
+        },
+        {
+          "n": 4,
+          "display": "Daily allowance = \\frac{Y − Xx}{y − x}",
+          "tag": "divide",
+          "title": "Spread evenly over y − x days",
+          "narration": "Divide the leftover money evenly across the remaining y minus x days."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{Y − Xx}{y − x} (option D)",
+          "tag": "answer",
+          "title": "Cedis per remaining day",
+          "narration": "So the trader can spend Y minus X x divided by y minus x cedis per day."
         }
       ]
     }
