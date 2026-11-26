@@ -79,7 +79,7 @@ const biology: { subject: string; sections: SyllabusSection[] } = {
 const syllabi: Record<string, { sections: SyllabusSection[] }> = { chemistry, physics, mathematics, biology }
 
 export function syllabusSections(subject: string, study = false): SyllabusSection[] {
-  if (study && subject === 'english') return english.sections
+  if (subject === 'english') return english.sections
   return syllabi[subject]?.sections ?? []
 }
 
@@ -113,6 +113,9 @@ const topicChapters: Record<string, Record<string, string>> = {
     'Acids, bases and salts': '13', 'Ion tests': '13', 'Tests': '13', 'Electrolysis': '15',
     'Non-metals': '16', 'Metals': '17', 'Transition metals': '17', 'Alloys': '17',
     'Organic chemistry': '18', 'Industrial chemistry': '21',
+  },
+  english: {
+    'Synonyms': '4', 'Antonyms': '5', 'Idioms and figurative usage': '6', 'Concord and grammar': '7',
   },
   biology: {
     'Cell biology': '1', 'Evolution & classification': '2', 'Nutrition': '3', 'Transport': '4',

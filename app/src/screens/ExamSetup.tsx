@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'preact/hooks'
 import { getQuestionsBySubject, loadManifest, loadSubject, manifestCount } from '../lib/data'
 import {
-  EXAM_MINUTES, continueExam, getAttempt, getAttemptQuestions, getExamHistory, getExamSubjects,
+  EXAM_MINUTES, continueExam, examCount, examQueue, getAttempt, getAttemptQuestions, getExamHistory, getExamSubjects,
   saveExamSubjects, scoreAttempt, startAttempt,
 } from '../lib/modes'
 import { SUBJECTS, getSubject } from '../lib/subjects'
@@ -69,12 +69,12 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
 
   if (rules && ready) {
     const minutes = pilot ? EXAM_MINUTES.pilot : EXAM_MINUTES.full
-    const queue = subjects.flatMap((id) => getQuestionsBySubject(id).map(({ id }) => ({ id })))
+    const total = subjects.reduce((sum, id) => sum + examCount(id, getQuestionsBySubject(id).length, !pilot), 0)
     return (
       <Panel title="Exam rules" back="#/exam">
         <section class="jp-card">
           <ul class="jp-revisit-list">
-            <li>{queue.length} questions in {minutes} minutes.</li>
+            <li>{total} questions in {minutes} minutes, drawn at random. Questions and options are in a new order every time.</li>
             <li>Move between questions and flag any you want to revisit.</li>
             <li>The timer keeps running if you leave. At zero, your answers are submitted automatically.</li>
             <li>Scores and explanations appear after submission.</li>
@@ -83,7 +83,7 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
         {modules !== 'ready' && <p class="jp-mode-lead" role="status">{modules === 'loading'
           ? 'Preparing the exam for offline use…' : 'Could not prepare the exam. Reconnect and reload the page.'}</p>}
         <button class="jp-btn jp-btn--primary jp-btn--full" disabled={modules !== 'ready'} onClick={() => {
-          startAttempt('exam', subjects, queue, minutes)
+          startAttempt('exam', subjects, examQueue(subjects, getQuestionsBySubject, !pilot), minutes)
           continueExam()
         }}>Start exam</button>
       </Panel>

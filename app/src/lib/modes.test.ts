@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { isCompleteQuestion } from './data'
-import { chapterName, getChapters, MAX_CUSTOM_MINUTES, mistakeIds, parseCustomWholeNumber, practicePool, practiceQueue, scoreAttempt, type Attempt } from './modes'
+import { chapterName, examQueue, getChapters, MAX_CUSTOM_MINUTES, mistakeIds, parseCustomWholeNumber, practicePool, practiceQueue, scoreAttempt, type Attempt } from './modes'
 import type { Animation, Question } from './types'
 
 const step = { n: 1, display: '', tag: '', narration: '' }
@@ -175,4 +175,19 @@ describe('saved exams', () => {
     const modes = await import('./modes')
     expect(modes.getExamHistory().map(({ finishedAt }) => finishedAt)).toEqual([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])
   })
+})
+
+it('draws a capped random exam with English first', () => {
+  const bank = (prefix: string, n: number) => Array.from({ length: n }, (_, i) => ({ id: prefix + i }))
+  const pools: Record<string, { id: string }[]> = { physics: bank('p', 55), english: bank('e', 92) }
+  let seed = 1
+  const random = () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646
+  const first = examQueue(['physics', 'english'], (s) => pools[s], true, random).map(({ id }) => id)
+  const second = examQueue(['physics', 'english'], (s) => pools[s], true, random).map(({ id }) => id)
+  expect(first).toHaveLength(100)
+  expect(first.slice(0, 60).every((id) => id.startsWith('e'))).toBe(true)
+  expect(first.slice(60).every((id) => id.startsWith('p'))).toBe(true)
+  expect(new Set(first).size).toBe(100)
+  expect(first).not.toEqual(second)
+  expect(examQueue(['physics'], (s) => pools[s], false, random)).toHaveLength(55)
 })

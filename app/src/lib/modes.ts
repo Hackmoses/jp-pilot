@@ -102,6 +102,27 @@ export function practiceQueue(subject: string, questions: readonly Question[], s
 }
 
 export const EXAM_MINUTES = { full: 120, pilot: 15 }
+// JAMB UTME sets 60 English questions and 40 for each other subject.
+export const EXAM_QUESTIONS = { english: 60, other: 40 }
+
+export function examCount(subject: string, available: number, capped: boolean) {
+  return capped ? Math.min(available, subject === 'english' ? EXAM_QUESTIONS.english : EXAM_QUESTIONS.other) : available
+}
+
+// A fresh random draw and order for every exam, so the sequence cannot be memorised.
+// Subjects stay grouped, English first, as on the JAMB CBT screen.
+export function examQueue(subjects: readonly string[], questionsOf: (subject: string) => readonly { id: string }[],
+  capped: boolean, random: () => number = Math.random) {
+  const ordered = [...subjects].sort((a, b) => Number(b === 'english') - Number(a === 'english'))
+  return ordered.flatMap((subject) => {
+    const ids = questionsOf(subject).map(({ id }) => id)
+    for (let i = ids.length - 1; i > 0; i--) {
+      const j = Math.floor(random() * (i + 1))
+      ;[ids[i], ids[j]] = [ids[j], ids[i]]
+    }
+    return ids.slice(0, examCount(subject, ids.length, capped)).map((id) => ({ id }))
+  })
+}
 
 export type Attempt = {
   id: string
