@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jp-pilot-v13'
+const CACHE_NAME = 'jp-pilot-v14'
 const PRECACHE_BUNDLES = []
 const FIGURE_BUNDLES = {}
 const CALCULATION_AUDIO_CACHE = 'jp-calculation-audio-v1'

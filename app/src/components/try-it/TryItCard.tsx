@@ -85,12 +85,14 @@ export function TryItCard({ interactive, subject, chapter }: {
       <div class="jp-try-header">
         <h3 id={id + '-title'} class="jp-mode-card-title">{interactive.title}</h3>
         {completed && <span class="jp-mode-studied">✓ Completed</span>}
-        {open && Demo && <button type="button" class="jp-btn" aria-label={'Restart · ' + interactive.title} onClick={restart}>Restart</button>}
-        <button type="button" class="jp-btn" aria-expanded={open} aria-controls={id}
-          aria-label={(open ? 'Close' : 'Try it') + ' · ' + interactive.title} onClick={() => {
-            setOpen(!open)
-            if (!open && !Demo && status === 'idle') void load()
-          }}>{open ? 'Close' : 'Try it'}</button>
+        <div class="jp-try-header-actions">
+          {open && Demo && <button type="button" class="jp-btn" aria-label={'Restart · ' + interactive.title} onClick={restart}>Restart</button>}
+          <button type="button" class="jp-btn" aria-expanded={open} aria-controls={id}
+            aria-label={(open ? 'Close' : 'Try it') + ' · ' + interactive.title} onClick={() => {
+              setOpen(!open)
+              if (!open && !Demo && status === 'idle') void load()
+            }}>{open ? 'Close' : 'Try it'}</button>
+        </div>
       </div>
       <div id={id} class="jp-try-panel" hidden={!open}>
         {open && Demo && <Demo key={run} onRestart={restart} practiceHref={'#/practice?' + new URLSearchParams({ subject, chapter })}

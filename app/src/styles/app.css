@@ -7,6 +7,223 @@ body {
   overflow-x: clip;
 }
 
+/* Shared primitives used across eager and lazy routes */
+.jp-pills {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.jp-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  line-height: 1.2;
+}
+
+.jp-pill--practice {
+  color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.jp-pill--streak {
+  color: #374151;
+  background: #f3f4f6;
+}
+
+.jp-pill--review {
+  align-self: flex-start;
+}
+
+.jp-progress-track {
+  height: 6px;
+  background: #f3f4f6;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.jp-progress-fill {
+  height: 100%;
+  background: var(--brand);
+  border-radius: var(--radius-pill);
+  transition: width 0.2s ease;
+}
+
+.jp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--option-line);
+  background: var(--bg);
+  color: #1f2937;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.jp-btn:hover:not(:disabled) {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.jp-btn:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.jp-btn:focus-visible,
+.jp-link-btn:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.jp-btn--muted {
+  background: #f9fafb;
+  border-color: var(--line);
+  color: var(--ink-2);
+}
+
+.jp-btn--ask {
+  background: var(--brand-soft);
+  border-color: #bfdbfe;
+  color: #1e40af;
+}
+
+.jp-btn--ask:hover:not(:disabled) {
+  background: #dbeafe;
+  border-color: #93c5fd;
+}
+
+.jp-btn--primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--bg);
+}
+
+.jp-btn--primary:hover:not(:disabled) {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.jp-btn--full {
+  width: 100%;
+  min-height: 38px;
+  padding: 7px 14px;
+  font-size: 14px;
+}
+
+.jp-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.jp-stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--bg);
+}
+
+.jp-stat-value {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.jp-stat-label {
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.jp-summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border-radius: var(--radius-card);
+  background: var(--brand-soft);
+}
+
+.jp-summary-score {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  color: #1e40af;
+  line-height: 1.15;
+}
+
+.jp-summary-sub {
+  margin: 0;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.jp-revisit {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+}
+
+.jp-revisit-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.jp-revisit-list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.jp-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  min-height: 32px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  color: var(--brand);
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.jp-link-btn:hover {
+  background: var(--brand-soft);
+}
+
 .jp-screen--session {
   max-width: none;
   min-height: 100dvh;

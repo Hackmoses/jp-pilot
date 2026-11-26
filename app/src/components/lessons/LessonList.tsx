@@ -28,19 +28,28 @@ export function LessonList({ file, subject, chapter }: { file: string; subject: 
     : <p class="jp-mode-lead" role="status">Loading lessons…</p>
   return <>{topic.lessons.map((lesson) => {
     const duration = lessonScenes(lesson).reduce((total, scene) => total + (topic.clips?.[scene.id]?.durationMs ?? fallbackMs(scene)), 0)
-    return <section class="jp-card jp-try-card" key={lesson.id}>
+    return <section class="jp-card jp-try-card" key={lesson.id} data-open={open === lesson.id ? 'true' : 'false'}>
       <div class="jp-try-header">
-        <h3 class="jp-mode-card-title">{lesson.title}</h3>
-        <span class="jp-summary-sub">{formatTime(duration)}{hasCompletedConceptLesson(lesson.id) ? ' · Completed' : ''}</span>
-        <button type="button" class="jp-btn" aria-label={(open === lesson.id ? 'Close' : 'Open') + ' · ' + lesson.title}
-          aria-expanded={open === lesson.id} onClick={() => setOpen(open === lesson.id ? undefined : lesson.id)}>
-          {open === lesson.id ? 'Close' : 'Open'}
-        </button>
+        <div class="jp-try-header-copy">
+          <h3 class="jp-mode-card-title">{lesson.title}</h3>
+          <span class="jp-summary-sub">
+            {formatTime(duration)}
+            {hasCompletedConceptLesson(lesson.id) && <> · <span class="jp-mode-studied">✓ Completed</span></>}
+          </span>
+        </div>
+        <div class="jp-try-header-actions">
+          <button type="button" class="jp-btn" aria-label={(open === lesson.id ? 'Close' : 'Open') + ' · ' + lesson.title}
+            aria-expanded={open === lesson.id} onClick={() => setOpen(open === lesson.id ? undefined : lesson.id)}>
+            {open === lesson.id ? 'Close' : 'Open'}
+          </button>
+        </div>
       </div>
-      {open === lesson.id && (View ? <View lesson={lesson} file={file} clips={topic.clips} onComplete={() => {
-        completeConceptLesson(subject, chapter, lesson.id, topic.lessons.map(({ id }) => id))
-        update((count) => count + 1)
-      }} /> : <p role="status">{playerFailed ? 'Could not load the player. Reload the page to retry.' : 'Loading player…'}</p>)}
+      {open === lesson.id && <div class="jp-try-panel">
+        {View ? <View lesson={lesson} file={file} clips={topic.clips} onComplete={() => {
+          completeConceptLesson(subject, chapter, lesson.id, topic.lessons.map(({ id }) => id))
+          update((count) => count + 1)
+        }} /> : <p class="jp-mode-lead" role="status">{playerFailed ? 'Could not load the player. Reload the page to retry.' : 'Loading player…'}</p>}
+      </div>}
     </section>
   })}</>
 }

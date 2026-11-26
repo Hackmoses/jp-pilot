@@ -130,7 +130,7 @@
   gap: 10px;
 }
 
-.jp-mode-list > .jp-revisit-title:not(:first-child) {
+.jp-mode-list>.jp-revisit-title:not(:first-child) {
   margin-top: 8px;
 }
 
@@ -267,7 +267,7 @@
   gap: 6px 8px;
 }
 
-.jp-try-formulas > span {
+.jp-try-formulas>span {
   display: inline-flex;
   align-items: center;
   padding: 3px 9px;
@@ -305,8 +305,8 @@
   gap: 10px;
 }
 
-.jp-try-explain > a,
-.jp-try-explain > .jp-btn {
+.jp-try-explain>a,
+.jp-try-explain>.jp-btn {
   justify-self: start;
 }
 
@@ -948,12 +948,12 @@
   font-size: 13px;
 }
 
-.jp-try-card[data-open="true"] > .jp-try-header {
+.jp-try-card[data-open="true"]>.jp-try-header {
   padding-bottom: 12px;
   border-bottom: 1px solid #e2e8f0;
 }
 
-.jp-try-header > .jp-btn {
+.jp-try-header>.jp-btn {
   min-height: var(--btn-h-sm);
   padding: 4px 12px;
   font-size: 13px;
@@ -1100,20 +1100,47 @@
 }
 
 .jp-try-controls:disabled {
-  opacity: 0.52;
+  opacity: 0.56;
   background: #f8fafc;
-  pointer-events: none;
+}
+
+.jp-try-header-copy {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.jp-try-header-actions {
+  margin-inline-start: auto;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.jp-try-header-actions .jp-btn {
+  min-height: var(--btn-h-sm);
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+.jp-card > .jp-summary-sub {
+  margin: 0;
 }
 
 /* Study sections open in place */
 .jp-study-section > summary {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: var(--space-1) var(--space-2);
   cursor: pointer;
   list-style: none;
+}
+
+.jp-study-section > summary > .jp-mode-card-title {
+  margin-right: auto;
 }
 
 .jp-study-section > summary::-webkit-details-marker { display: none; }
@@ -1132,7 +1159,11 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  min-height: 32px;
-  padding: 0 10px;
+  min-height: var(--btn-h-sm);
+  padding: 4px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #1e293b;
+  white-space: nowrap;
   text-decoration: none;
 }
