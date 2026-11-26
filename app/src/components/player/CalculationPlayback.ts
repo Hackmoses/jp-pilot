@@ -2,7 +2,7 @@ import { requestClip, type NarrationMode } from './calculationAudio'
 
 type Request = ReturnType<typeof requestClip>
 type Clip = Request['clip']
-type Phase = 'idle' | 'loading' | 'silent' | 'lead' | 'voice' | 'gap' | 'done'
+type Phase = 'idle' | 'loading' | 'silent' | 'voice' | 'gap' | 'done'
 
 export interface PlaybackState {
   index: number
@@ -11,7 +11,6 @@ export interface PlaybackState {
   speed: number
 }
 
-const PEN_LEAD = 200
 const STEP_PAUSE = 500
 const CLIP_TIMEOUT = 1500
 const SILENT_WRITE = 1800
@@ -57,7 +56,6 @@ export class CalculationPlayback {
   private frame = 0
   private lastFrame?: number
   private elapsed = 0
-  private writtenMs = 0
   private clipMs = 0
   private attempt = 0
   private saveClip?: () => void
@@ -66,12 +64,13 @@ export class CalculationPlayback {
 
   constructor(
     private clips: (Clip | undefined)[],
-    private readonly silentMs: number,
+    private silentMs: number,
     private readonly onState: (state: PlaybackState) => void,
-    private readonly onPen: (progress: number) => void,
+    private readonly onPen: (progress: number, index: number) => void,
   ) {}
 
-  setClips(nextClips: (Clip | undefined)[], restart = false) {
+  setClips(nextClips: (Clip | undefined)[], restart = false, silentMs = this.silentMs) {
+    this.silentMs = silentMs
     this.clips = nextClips
     if (restart) {
       this.start(0, false, true)
@@ -86,8 +85,10 @@ export class CalculationPlayback {
   }
 
   private write(progress: number) {
-    this.progress = Math.min(1, progress)
-    this.onPen(this.progress)
+    const next = Math.max(0, Math.min(1, progress))
+    if (next === this.progress) return
+    this.progress = next
+    this.onPen(next, this.state.index)
   }
 
   private media() {
@@ -107,17 +108,13 @@ export class CalculationPlayback {
     if (!enabled) {
       this.next?.abort()
       this.next = undefined
-      if (this.phase === 'loading' || this.phase === 'lead' || this.phase === 'voice') {
-        const progress = this.progress
-        this.fallBack()
-        this.elapsed = progress * SILENT_WRITE
-        this.write(progress)
-      }
+      if (this.phase === 'loading' || this.phase === 'voice') this.fallBack()
       return
     }
 
-    this.unlock()
-    if (this.phase === 'silent') this.start(this.state.index, this.single, this.state.playing)
+    if (this.phase === 'silent' && this.clips[this.state.index]) {
+      this.start(this.state.index, this.single, this.state.playing)
+    }
   }
 
   // A silent sample played inside a tap authorises this media element on mobile.
@@ -137,8 +134,13 @@ export class CalculationPlayback {
     let remaining = seconds * 1000
     let index = this.state.index
     const position = this.positionMs()
-    if (position >= remaining && this.phase !== 'done' && this.phase !== 'gap') {
-      this.seekWithin(position - remaining)
+    if (position >= remaining) {
+      const offset = position - remaining
+      if (this.phase === 'done' || this.phase === 'gap') {
+        this.start(index, this.single, this.state.playing, offset)
+      } else {
+        this.seekWithin(offset)
+      }
       return
     }
     remaining -= position
@@ -172,13 +174,22 @@ export class CalculationPlayback {
   private seekWithin(ms: number) {
     if (this.phase === 'voice' && this.audio) {
       this.audio.currentTime = ms / 1000
-      this.write((this.writtenMs + ms) / this.clipMs)
+      this.writeVoice(ms)
     } else if (this.phase === 'silent') {
       this.elapsed = ms
-      this.write(ms / SILENT_WRITE)
+      this.write(ms / this.silentWriteMs())
     } else {
       this.start(this.state.index, this.single, this.state.playing)
     }
+  }
+
+  private silentWriteMs() {
+    return Math.max(1, Math.min(SILENT_WRITE, this.silentMs * 0.9))
+  }
+
+  private writeVoice(ms: number) {
+    // Leave the last beat for reading. The audio element owns the time and playback rate.
+    this.write(ms / (this.clipMs - Math.min(100, this.clipMs * 0.1)))
   }
 
   setSpeed(speed: number) {
@@ -192,14 +203,13 @@ export class CalculationPlayback {
 
   start(index = 0, single = false, playing = true, offsetMs = 0) {
     this.seekMs = offsetMs
-    if (playing && this.state.sound) this.unlock()
+    const clip = this.state.sound ? this.clips[index] : undefined
+    if (playing && clip) this.unlock()
     this.releaseClip()
     this.single = single
     this.elapsed = 0
-    this.writtenMs = 0
-    this.write(0)
     this.update({ index, playing })
-    const clip = this.state.sound ? this.clips[index] : undefined
+    this.write(0)
     const preloaded = this.next
     this.next = undefined
     if (preloaded?.clip !== clip) preloaded?.abort()
@@ -208,7 +218,7 @@ export class CalculationPlayback {
       this.phase = 'silent'
       if (offsetMs) {
         this.elapsed = offsetMs
-        this.write(offsetMs / SILENT_WRITE)
+        this.write(offsetMs / this.silentWriteMs())
       }
     }
     this.schedule()
@@ -223,7 +233,9 @@ export class CalculationPlayback {
       this.start()
     } else {
       this.update({ playing: true })
-      if (this.phase === 'voice') this.playVoice()
+      if (this.phase === 'voice') {
+        this.playVoice()
+      }
       this.schedule()
     }
   }
@@ -232,6 +244,7 @@ export class CalculationPlayback {
     if (!this.state.playing) return
     this.attempt++
     this.audio?.pause()
+    if (this.phase === 'voice' && this.audio) this.writeVoice(this.audio.currentTime * 1000)
     this.update({ playing: false })
     this.cancelFrame()
   }
@@ -284,9 +297,10 @@ export class CalculationPlayback {
 
   private fallBack() {
     this.releaseClip()
-    this.elapsed = 0
+    this.elapsed = Math.max(this.seekMs, this.progress * this.silentWriteMs())
+    this.seekMs = 0
     this.phase = 'silent'
-    this.write(0)
+    this.write(this.elapsed / this.silentWriteMs())
     this.preload()
     this.schedule()
   }
@@ -309,19 +323,15 @@ export class CalculationPlayback {
         clearTimeout(this.deadline)
         this.pending = undefined
         this.saveClip = () => request.saveAfterPlay(blob)
-        this.clipMs = request.clip.durationMs
+        this.clipMs = Number.isFinite(audio.duration) && audio.duration > 0
+          ? audio.duration * 1000
+          : request.clip.durationMs
+        if (this.seekMs) audio.currentTime = this.seekMs / 1000
+        this.seekMs = 0
+        this.phase = 'voice'
+        this.writeVoice(audio.currentTime * 1000)
         this.preload()
-        if (this.seekMs > 0) {
-          // Rewound into this step: start the voice part-way through, pen in step.
-          audio.currentTime = this.seekMs / 1000
-          this.seekMs = 0
-          this.writtenMs = 0
-          this.write(audio.currentTime * 1000 / this.clipMs)
-          this.phase = 'voice'
-          if (this.state.playing) this.playVoice()
-        } else {
-          this.phase = 'lead'
-        }
+        if (this.state.playing) this.playVoice()
         this.schedule()
       }
       this.source = URL.createObjectURL(blob)
@@ -369,23 +379,13 @@ export class CalculationPlayback {
     switch (this.phase) {
       case 'silent':
         this.elapsed += delta * speed
-        this.write(this.elapsed / SILENT_WRITE)
+        this.write(this.elapsed / this.silentWriteMs())
         if (this.elapsed >= this.silentMs) this.advance()
-        break
-      case 'lead':
-        this.elapsed += delta
-        this.writtenMs += delta * speed
-        this.write(this.writtenMs / this.clipMs)
-        if (this.elapsed >= PEN_LEAD) {
-          this.elapsed = 0
-          this.phase = 'voice'
-          this.playVoice()
-        }
         break
       case 'voice': {
         const audio = this.media()
-        // After the lead, use the media clock so stalls or speed changes move both together.
-        this.write((this.writtenMs + audio.currentTime * 1000) / this.clipMs)
+        // Using the media clock keeps stalls and speed changes in sync with the pen.
+        this.writeVoice(audio.currentTime * 1000)
         if (audio.ended) {
           this.write(1)
           this.elapsed = 0
