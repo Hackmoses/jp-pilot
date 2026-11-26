@@ -62,6 +62,8 @@ SPELLING_EQUIV = {
     "kilometers": "kilometres",
     "kilometer": "kilometre",
     "sulphur": "sulfur",
+    "sulphate": "sulfate",
+    "sulphates": "sulfates",
     "aluminium": "aluminum",
     "ionizes": "ionises",
     "vapour": "vapor",
