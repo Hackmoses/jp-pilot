@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 20,
+  "count": 30,
   "animations": [
     {
       "id": "anim-phys-jamb-2008-021",
@@ -1277,6 +1277,631 @@
           "tag": "simplify powers of ten",
           "title": "Simplify powers of ten",
           "narration": "Add the exponents minus six and four to get minus two. The energy stored is four point zero times ten to the minus two joules, option B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1997-043",
+      "questionId": "phys-jamb-1997-043",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{2}{3} = \\frac{l}{100 − l}",
+          "tag": "write the balance ratio",
+          "title": "Write the balance ratio",
+          "narration": "In a metre bridge, the left and right resistances match the ratio of the left and right wire lengths."
+        },
+        {
+          "n": 2,
+          "display": "200 − 2l = 3l ⇒ 5l = 200",
+          "tag": "cross-multiply and collect",
+          "title": "Cross-multiply and collect",
+          "narration": "Cross-multiplying gives two hundred minus two l equals three l, so five l equals two hundred."
+        },
+        {
+          "n": 3,
+          "display": "l = 40 cm",
+          "tag": "find the balance point",
+          "title": "Find the balance point",
+          "narration": "Divide two hundred by five to get forty centimetres from the left side. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "R_{L} = 2 Ω, R_{R} = 3 Ω, L = 100 cm",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the two ohm and three ohm resistors in the left and right gaps, and recall that a metre bridge wire is one hundred centimetres long."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{R_{L}}{R_{R}} = \\frac{l}{100 − l}",
+          "tag": "state balance condition",
+          "title": "State balance condition",
+          "narration": "At balance, no current flows through the galvanometer, so the ratio of left to right resistance equals the ratio of left to right wire lengths."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2}{3} = \\frac{l}{100 − l}",
+          "tag": "substitute the resistors",
+          "title": "Substitute the resistors",
+          "narration": "Put two ohms over three ohms on the left, with l as the balance distance from the left end."
+        },
+        {
+          "n": 4,
+          "display": "2(100 − l) = 3l ⇒ 200 = 5l",
+          "tag": "clear the fractions",
+          "title": "Clear the fractions",
+          "narration": "Cross-multiply to get two hundred minus two l equals three l, then add two l to both sides to get five l."
+        },
+        {
+          "n": 5,
+          "display": "l = \\frac{200}{5} = 40 cm",
+          "tag": "solve for l",
+          "title": "Solve for l",
+          "narration": "Divide two hundred by five to find the balance point is forty centimetres from the left side. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2011-034",
+      "questionId": "phys-jamb-2011-034",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V_{12} = 12 V",
+          "tag": "use parallel voltage rule",
+          "title": "Use parallel voltage rule",
+          "narration": "In parallel, every branch gets the full twelve volts of the battery."
+        },
+        {
+          "n": 2,
+          "display": "I_{12} = \\frac{V}{R} = \\frac{12}{12}",
+          "tag": "apply Ohm's law",
+          "title": "Apply Ohm's law",
+          "narration": "Divide the twelve volts across the resistor by its twelve ohm resistance."
+        },
+        {
+          "n": 3,
+          "display": "I_{12} = 1.0 A",
+          "tag": "find branch current",
+          "title": "Find branch current",
+          "narration": "Twelve divided by twelve equals one point zero amperes. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V = 12 V, R = 12 Ω",
+          "tag": "focus on the 12 Ω branch",
+          "title": "Focus on the 12 Ω branch",
+          "narration": "Pick out the twelve volt supply and the twelve ohm resistor. The two ohm and four ohm resistors are extra information we do not need because parallel branches do not change each other's voltage."
+        },
+        {
+          "n": 2,
+          "display": "V_{12} = 12 V",
+          "tag": "recall parallel voltage",
+          "title": "Recall parallel voltage",
+          "narration": "Resistors in parallel are connected across the same two terminals of the battery, so each branch receives the full twelve volts."
+        },
+        {
+          "n": 3,
+          "display": "I_{12} = \\frac{V}{R} = \\frac{12}{12}",
+          "tag": "apply Ohm's law",
+          "title": "Apply Ohm's law",
+          "narration": "Use Ohm's law for that single branch: current equals potential difference divided by resistance."
+        },
+        {
+          "n": 4,
+          "display": "I_{12} = 1.0 A",
+          "tag": "calculate the current",
+          "title": "Calculate the current",
+          "narration": "Twelve divided by twelve gives one point zero amperes through the twelve ohm resistor. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2014-038",
+      "questionId": "phys-jamb-2014-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R_{eq} < 200 Ω ⇒ parallel",
+          "tag": "choose parallel connection",
+          "title": "Choose parallel connection",
+          "narration": "To lower resistance below two hundred ohms, connect another resistor in parallel."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{R} = \\frac{1}{120} − \\frac{1}{200} = \\frac{2}{600}",
+          "tag": "use parallel formula",
+          "title": "Use parallel formula",
+          "narration": "Subtract one over two hundred from one over one hundred and twenty using common denominator six hundred."
+        },
+        {
+          "n": 3,
+          "display": "R = 300 Ω in parallel",
+          "tag": "invert to find R",
+          "title": "Invert to find R",
+          "narration": "Two over six hundred simplifies to one over three hundred, so connect a three hundred ohm resistor in parallel. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "R_{1} = 200 Ω, R_{eq} = 120 Ω",
+          "tag": "choose series or parallel",
+          "title": "Choose series or parallel",
+          "narration": "Adding a resistor in series raises resistance, while adding one in parallel opens another current path and lowers resistance. So we must connect R in parallel."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{R_{eq}} = \\frac{1}{R_{1}} + \\frac{1}{R}",
+          "tag": "state parallel formula",
+          "title": "State parallel formula",
+          "narration": "For two parallel resistors, the reciprocal of total resistance equals the sum of their reciprocals."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{R} = \\frac{1}{120} − \\frac{1}{200}",
+          "tag": "rearrange for R",
+          "title": "Rearrange for R",
+          "narration": "Put in one hundred and twenty ohms and two hundred ohms, then subtract one over two hundred from both sides."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{R} = \\frac{5 − 3}{600} = \\frac{2}{600} = \\frac{1}{300}",
+          "tag": "combine the fractions",
+          "title": "Combine the fractions",
+          "narration": "Use six hundred as the common denominator: five minus three over six hundred simplifies to one over three hundred."
+        },
+        {
+          "n": 5,
+          "display": "R = 300 Ω in parallel",
+          "tag": "invert for resistance",
+          "title": "Invert for resistance",
+          "narration": "Flipping one over three hundred gives three hundred ohms, connected in parallel. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2016-008",
+      "questionId": "phys-jamb-2016-008",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R = \\frac{3 × 6}{3 + 6} = \\frac{18}{9} = 2 Ω",
+          "tag": "find parallel resistance",
+          "title": "Find parallel resistance",
+          "narration": "From the diagram, combine the three ohm and six ohm parallel resistors to get two ohms."
+        },
+        {
+          "n": 2,
+          "display": "E = IR = 4.0 × 2",
+          "tag": "apply Ohm's law",
+          "title": "Apply Ohm's law",
+          "narration": "With negligible internal resistance, multiply the four point zero ampere total current by two ohms."
+        },
+        {
+          "n": 3,
+          "display": "E = 8 V",
+          "tag": "find the e.m.f.",
+          "title": "Find the e.m.f.",
+          "narration": "Four point zero times two gives eight volts. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I = 4.0 A, R_{1} = 3 Ω, R_{2} = 6 Ω",
+          "tag": "read the circuit diagram",
+          "title": "Read the circuit diagram",
+          "narration": "From the diagram, cell E supplies a total current of four point zero amperes shown at the top into three ohm and six ohm resistors wired in parallel."
+        },
+        {
+          "n": 2,
+          "display": "R = \\frac{3 × 6}{3 + 6} = \\frac{18}{9} = 2 Ω",
+          "tag": "combine parallel resistors",
+          "title": "Combine parallel resistors",
+          "narration": "For two resistors in parallel, use product over sum. Three times six over three plus six gives eighteen over nine, or two ohms."
+        },
+        {
+          "n": 3,
+          "display": "E = I(R + r) = IR",
+          "tag": "use the circuit equation",
+          "title": "Use the circuit equation",
+          "narration": "Because internal resistance is negligible, no voltage is lost inside the cell, so the full e.m.f. equals total current times external resistance."
+        },
+        {
+          "n": 4,
+          "display": "E = 4.0 × 2 = 8 V",
+          "tag": "calculate the e.m.f.",
+          "title": "Calculate the e.m.f.",
+          "narration": "Multiply four point zero amperes by two ohms to get an e.m.f. of eight volts. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1993-042",
+      "questionId": "phys-jamb-1993-042",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = \\frac{V^{2}}{R} ⇒ V^{2} = PR",
+          "tag": "rearrange power formula",
+          "title": "Rearrange power formula",
+          "narration": "Use P equals V squared over R and multiply by R to isolate V squared."
+        },
+        {
+          "n": 2,
+          "display": "V^{2} = 40 × 90 = 3600",
+          "tag": "substitute P and R",
+          "title": "Substitute P and R",
+          "narration": "Multiply forty watts by ninety ohms to get three thousand six hundred."
+        },
+        {
+          "n": 3,
+          "display": "V = \\sqrt{3600} = 60 V",
+          "tag": "take the square root",
+          "title": "Take the square root",
+          "narration": "The square root of three thousand six hundred is sixty volts. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 40 W, R = 90 Ω",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the instrument's normal power rating of forty watts and its resistance of ninety ohms."
+        },
+        {
+          "n": 2,
+          "display": "P = \\frac{V^{2}}{R}",
+          "tag": "choose the power formula",
+          "title": "Choose the power formula",
+          "narration": "Choose the power equation written in terms of voltage and resistance because current is not given."
+        },
+        {
+          "n": 3,
+          "display": "V^{2} = PR = 40 × 90",
+          "tag": "rearrange and substitute",
+          "title": "Rearrange and substitute",
+          "narration": "Multiply both sides by resistance to make V squared the subject, then substitute forty watts and ninety ohms."
+        },
+        {
+          "n": 4,
+          "display": "V^{2} = 3600",
+          "tag": "multiply the values",
+          "title": "Multiply the values",
+          "narration": "Forty times ninety equals three thousand six hundred."
+        },
+        {
+          "n": 5,
+          "display": "V = \\sqrt{3600} = 60 V",
+          "tag": "take the square root",
+          "title": "Take the square root",
+          "narration": "Take the square root of three thousand six hundred to undo the square, giving sixty volts. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2001-027",
+      "questionId": "phys-jamb-2001-027",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P_{in} = IV = 1.5 × 250 = 375 W",
+          "tag": "find input power",
+          "title": "Find input power",
+          "narration": "Multiply one point five amperes by two hundred and fifty volts to get three hundred and seventy-five watts."
+        },
+        {
+          "n": 2,
+          "display": "P_{out} = \\frac{80}{100} × 375",
+          "tag": "apply 80% efficiency",
+          "title": "Apply 80% efficiency",
+          "narration": "At eighty percent efficiency, the useful power output is eighty percent of three hundred and seventy-five watts."
+        },
+        {
+          "n": 3,
+          "display": "P_{out} = 300.0 W",
+          "tag": "calculate power output",
+          "title": "Calculate power output",
+          "narration": "Zero point eight zero times three hundred and seventy-five equals three hundred point zero watts. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I = 1.5 A, V = 250 V, η = 80%",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the motor's current, supply potential difference, and efficiency of eighty percent."
+        },
+        {
+          "n": 2,
+          "display": "P_{in} = IV = 1.5 × 250 = 375 W",
+          "tag": "find electrical input power",
+          "title": "Find electrical input power",
+          "narration": "Calculate the electrical power drawn from the supply by multiplying current and voltage, giving three hundred and seventy-five watts."
+        },
+        {
+          "n": 3,
+          "display": "P_{out} = \\frac{80}{100} × P_{in} = 0.80 × 375",
+          "tag": "apply efficiency",
+          "title": "Apply efficiency",
+          "narration": "Only eighty percent of the electrical input becomes useful mechanical output because the rest is lost as heat and friction."
+        },
+        {
+          "n": 4,
+          "display": "P_{out} = 300.0 W",
+          "tag": "compute power output",
+          "title": "Compute power output",
+          "narration": "Four fifths of three hundred and seventy-five gives three hundred point zero watts. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2003-028",
+      "questionId": "phys-jamb-2003-028",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "I_{max}^{2} × 2 = 18 ⇒ I_{max} = 3 A",
+          "tag": "find max safe current",
+          "title": "Find max safe current",
+          "narration": "Each two ohm resistor has an eighteen watt limit, which gives a maximum safe current of three amperes."
+        },
+        {
+          "n": 2,
+          "display": "P_{s} = 18 W, P_{p} = 1.5^{2} × 2 = 4.5 W",
+          "tag": "find power in each resistor",
+          "title": "Find power in each resistor",
+          "narration": "From the diagram, three amperes goes through the series resistor and splits into one point five amperes through each parallel resistor."
+        },
+        {
+          "n": 3,
+          "display": "P_{total} = 18 + 4.5 + 4.5 = 27 W",
+          "tag": "add all three powers",
+          "title": "Add all three powers",
+          "narration": "Add eighteen, four point five, and four point five watts to get twenty-seven watts. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Two 2 Ω parallel + one 2 Ω series",
+          "tag": "read the circuit diagram",
+          "title": "Read the circuit diagram",
+          "narration": "From the diagram, two two ohm resistors sit in parallel and are joined in series with a third two ohm resistor. Each resistor can handle at most eighteen watts."
+        },
+        {
+          "n": 2,
+          "display": "I_{max}^{2} × 2 = 18 ⇒ I_{max} = 3 A",
+          "tag": "find safe current limit",
+          "title": "Find safe current limit",
+          "narration": "Use P equals I squared R to find the maximum current a single two ohm resistor can carry. Eighteen over two is nine, whose square root is three amperes."
+        },
+        {
+          "n": 3,
+          "display": "I_{series} = 3 A ⇒ P_{series} = 18 W",
+          "tag": "check the series resistor",
+          "title": "Check the series resistor",
+          "narration": "All the circuit current flows through the single series resistor, so it sets the limit at three amperes and dissipates its full eighteen watts."
+        },
+        {
+          "n": 4,
+          "display": "I_{branch} = 1.5 A ⇒ P_{each} = 1.5^{2} × 2 = 4.5 W",
+          "tag": "split parallel current",
+          "title": "Split parallel current",
+          "narration": "At the equal parallel pair, three amperes divides evenly into one point five amperes per branch, so each parallel resistor dissipates four point five watts."
+        },
+        {
+          "n": 5,
+          "display": "P_{total} = 18 + 4.5 + 4.5 = 27 W",
+          "tag": "sum the total power",
+          "title": "Sum the total power",
+          "narration": "Add the power in all three resistors together to get a maximum total power of twenty-seven watts. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-041",
+      "questionId": "phys-jamb-2013-041",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = IV ⇒ I = \\frac{P}{V}",
+          "tag": "rearrange power formula",
+          "title": "Rearrange power formula",
+          "narration": "Electrical power equals current times voltage, so divide power by voltage."
+        },
+        {
+          "n": 2,
+          "display": "I = \\frac{2000}{250}",
+          "tag": "substitute the ratings",
+          "title": "Substitute the ratings",
+          "narration": "Put two thousand watts over two hundred and fifty volts."
+        },
+        {
+          "n": 3,
+          "display": "I = 8 A",
+          "tag": "find maximum current",
+          "title": "Find maximum current",
+          "narration": "Two thousand divided by two hundred and fifty gives eight amperes. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 2000 W, V = 250 V",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the power rating of two thousand watts and the voltage rating of two hundred and fifty volts."
+        },
+        {
+          "n": 2,
+          "display": "P = IV ⇒ I = \\frac{P}{V}",
+          "tag": "rearrange P = IV",
+          "title": "Rearrange P = IV",
+          "narration": "Since power is current multiplied by voltage, divide power by voltage to find the maximum current the device draws."
+        },
+        {
+          "n": 3,
+          "display": "I = \\frac{2000}{250} = \\frac{200}{25}",
+          "tag": "substitute and simplify",
+          "title": "Substitute and simplify",
+          "narration": "Put two thousand watts on top and two hundred and fifty volts underneath, then cancel one zero from each."
+        },
+        {
+          "n": 4,
+          "display": "I = 8 A",
+          "tag": "divide for current",
+          "title": "Divide for current",
+          "narration": "Two hundred divided by twenty-five equals eight amperes. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1987-038",
+      "questionId": "phys-jamb-1987-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Magnetic N = 10° east of True N",
+          "tag": "place magnetic north",
+          "title": "Place magnetic north",
+          "narration": "A declination of ten degrees east puts magnetic north ten degrees east of true north."
+        },
+        {
+          "n": 2,
+          "display": "True angle = 10° + 40° = 50°E",
+          "tag": "add the compass angle",
+          "title": "Add the compass angle",
+          "narration": "The compass points forty degrees further east from magnetic north, giving fifty degrees east of true north."
+        },
+        {
+          "n": 3,
+          "display": "N 50°E",
+          "tag": "write true bearing",
+          "title": "Write true bearing",
+          "narration": "The true geographic bearing is North fifty degrees East. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Declination = 10°E, Compass = N 40°E",
+          "tag": "list the given angles",
+          "title": "List the given angles",
+          "narration": "Write down the magnetic declination of ten degrees east and the compass bearing of North forty degrees East."
+        },
+        {
+          "n": 2,
+          "display": "Magnetic N is 10°E of True N",
+          "tag": "locate magnetic north",
+          "title": "Locate magnetic north",
+          "narration": "Declination is the angle between true north and magnetic north. Ten degrees east means the compass needle's north points ten degrees clockwise from true north."
+        },
+        {
+          "n": 3,
+          "display": "10° + 40° = 50° east of True N",
+          "tag": "add both eastward turns",
+          "title": "Add both eastward turns",
+          "narration": "The compass reads forty degrees east starting from magnetic north, so add ten degrees and forty degrees to measure the total angle from true north."
+        },
+        {
+          "n": 4,
+          "display": "True bearing = N 50°E",
+          "tag": "state the true bearing",
+          "title": "State the true bearing",
+          "narration": "Measured from true geographic north, the bearing is North fifty degrees East. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1992-044",
+      "questionId": "phys-jamb-1992-044",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R_{total} = \\frac{100}{0.05} = 2000 Ω",
+          "tag": "find total resistance",
+          "title": "Find total resistance",
+          "narration": "Divide one hundred volts by zero point zero five amperes to get two thousand ohms total."
+        },
+        {
+          "n": 2,
+          "display": "R = 2000 − 10 = 1,990 Ω",
+          "tag": "subtract coil resistance",
+          "title": "Subtract coil resistance",
+          "narration": "Subtract the galvanometer's ten ohm resistance to get one thousand nine hundred and ninety ohms."
+        },
+        {
+          "n": 3,
+          "display": "1,990 Ω in series",
+          "tag": "state the connection",
+          "title": "State the connection",
+          "narration": "Connect this multiplier resistor in series so it limits current at one hundred volts. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "R_{g} = 10 Ω, I_{g} = 0.05 A, V = 100 V",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the galvanometer resistance of ten ohms, its maximum safe current of zero point zero five amperes, and the target reading of one hundred volts."
+        },
+        {
+          "n": 2,
+          "display": "Connect R in series (multiplier)",
+          "tag": "choose series connection",
+          "title": "Choose series connection",
+          "narration": "To convert a galvanometer into a voltmeter, add a high resistance in series so extra voltage drops across R and keeps current within zero point zero five amperes."
+        },
+        {
+          "n": 3,
+          "display": "R_{g} + R = \\frac{V}{I_{g}} = \\frac{100}{0.05}",
+          "tag": "use Ohm's law for total R",
+          "title": "Use Ohm's law for total R",
+          "narration": "By Ohm's law, the combined series resistance equals full-scale voltage divided by maximum permissible current."
+        },
+        {
+          "n": 4,
+          "display": "R_{g} + R = 2000 Ω",
+          "tag": "divide by 0.05",
+          "title": "Divide by 0.05",
+          "narration": "One hundred divided by zero point zero five equals ten thousand divided by five, which is two thousand ohms."
+        },
+        {
+          "n": 5,
+          "display": "R = 2000 − 10 = 1,990 Ω in series",
+          "tag": "subtract internal resistance",
+          "title": "Subtract internal resistance",
+          "narration": "Subtract the ten ohms of the galvanometer coil itself, leaving one thousand nine hundred and ninety ohms connected in series. Choose C."
         }
       ]
     }
