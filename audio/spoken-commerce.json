@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "subject": "commerce",
+  "total": 7,
+  "clean": 7,
+  "needsReview": 0,
+  "clips": [
+    {
+      "clipId": "anim-comm-api-0020/1",
+      "path": "audio/anim-comm-api-0020/1.webm",
+      "animationId": "anim-comm-api-0020",
+      "step": 1,
+      "mode": "quick",
+      "source": "data/subjects/animations-commerce.json",
+      "stepText": "First find the initial value in naira. Multiply 2,000 pounds by 600 naira to get 1,200,000 naira.",
+      "mathToSpeechText": "First find the initial value in naira. Multiply 2,000 pounds by 600 naira to get 1,200,000 naira.",
+      "spokenLine": "First find the initial value in naira. Multiply two thousand pounds by six hundred naira to get one million two hundred thousand naira.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comm-api-0020/2",
+      "path": "audio/anim-comm-api-0020/2.webm",
+      "animationId": "anim-comm-api-0020",
+      "step": 2,
+      "mode": "quick",
+      "source": "data/subjects/animations-commerce.json",
+      "stepText": "Next find the new value at the higher rate. Multiply 2,000 pounds by 620 naira to get 1,240,000 naira.",
+      "mathToSpeechText": "Next find the new value at the higher rate. Multiply 2,000 pounds by 620 naira to get 1,240,000 naira.",
+      "spokenLine": "Next find the new value at the higher rate. Multiply two thousand pounds by six hundred and twenty naira to get one million two hundred and forty thousand naira.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comm-api-0020/3",
+      "path": "audio/anim-comm-api-0020/3.webm",
+      "animationId": "anim-comm-api-0020",
+      "step": 3,
+      "mode": "quick",
+      "source": "data/subjects/animations-commerce.json",
+      "stepText": "Subtract the initial value from the new value. 1,240,000 minus 1,200,000 leaves an increase of 40,000 naira.",
+      "mathToSpeechText": "Subtract the initial value from the new value. 1,240,000 minus 1,200,000 leaves an increase of 40,000 naira.",
+      "spokenLine": "Subtract the initial value from the new value. one million two hundred and forty thousand minus one million two hundred thousand leaves an increase of forty thousand naira.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comm-api-0020/4",
+      "path": "audio/anim-comm-api-0020/4.webm",
+      "animationId": "anim-comm-api-0020",
+      "step": 4,
+      "mode": "quick",
+      "source": "data/subjects/animations-commerce.json",
+      "stepText": "As a quick check, multiply 2,000 pounds by the 20 naira rate rise. That also gives 40,000 naira.",
+      "mathToSpeechText": "As a quick check, multiply 2,000 pounds by the 20 naira rate rise. That also gives 40,000 naira.",
+      "spokenLine": "As a quick check, multiply two thousand pounds by the twenty naira rate rise. That also gives forty thousand naira.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comm-api-0024/1",
+      "path": "audio/anim-comm-api-0024/1.webm",
+      "animationId": "anim-comm-api-0024",
+      "step": 1,
+      "mode": "quick",
+      "source": "data/subjects/animations-commerce.json",
+      "stepText": "First find the total value of the preference shares. Multiply 5,000 shares by 20 naira each to get 100,000 naira.",
+      "mathToSpeechText": "First find the total value of the preference shares. Multiply 5,000 shares by 20 naira each to get 100,000 naira.",
+      "spokenLine": "First find the total value of the preference shares. Multiply five thousand shares by twenty naira each to get one hundred thousand naira.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comm-api-0024/2",
+      "path": "audio/anim-comm-api-0024/2.webm",
+      "animationId": "anim-comm-api-0024",
+      "step": 2,
+      "mode": "quick",
+      "source": "data/subjects/animations-commerce.json",
+      "stepText": "Now take 8 percent of the total share value of 100,000 naira.",
+      "mathToSpeechText": "Now take 8 percent of the total share value of 100,000 naira.",
+      "spokenLine": "Now take eight percent of the total share value of one hundred thousand naira.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comm-api-0024/3",
+      "path": "audio/anim-comm-api-0024/3.webm",
+      "animationId": "anim-comm-api-0024",
+      "step": 3,
+      "mode": "quick",
+      "source": "data/subjects/animations-commerce.json",
+      "stepText": "Eight hundredths of 100,000 is 8,000. So the annual dividend payout is 8,000 naira.",
+      "mathToSpeechText": "Eight hundredths of 100,000 is 8,000. So the annual dividend payout is 8,000 naira.",
+      "spokenLine": "Eight hundredths of one hundred thousand is eight thousand. So the annual dividend payout is eight thousand naira.",
+      "needsReview": false,
+      "issues": []
+    }
+  ]
+}
