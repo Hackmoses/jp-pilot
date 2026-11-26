@@ -154,8 +154,11 @@ function read() {
   }
 }
 
+export type ReturnPoint = { href: string; label: string; pausedAt: number | null }
+
 interface ModeState {
   recent: { href: string; label: string } | null
+  returnTo: ReturnPoint | null
   studied: Record<string, boolean>
   startedConceptLessons: Record<string, boolean>
   completedConceptLessons: Record<string, boolean>
@@ -174,6 +177,7 @@ interface ModeState {
 const saved = read()
 const state: ModeState = {
   recent: saved?.recent ?? null,
+  returnTo: saved?.returnTo ?? null,
   studied: saved?.studied ?? {},
   startedConceptLessons: saved?.startedConceptLessons ?? {},
   completedConceptLessons: saved?.completedConceptLessons ?? {},
@@ -199,6 +203,24 @@ function save() {
 
 export function getRecent() { return state.recent }
 export function remember(href: string, label: string) { state.recent = { href, label }; save() }
+
+// A student who leaves a question to learn its topic can come straight back to it.
+export function getReturnPoint() { return state.returnTo }
+export function setReturnPoint(point: ReturnPoint) { state.returnTo = point; save() }
+export function clearReturnPoint() { state.returnTo = null; save() }
+
+// Called once when the question screen opens. Clears the return point when the student is
+// back where they left, and gives a timed practice back the minutes spent learning.
+export function arriveAtReturnPoint(attempt: Attempt | undefined, hash: string, now = Date.now()) {
+  const point = state.returnTo
+  if (!point || point.href !== hash) return
+  if (attempt && attempt.mode === 'practice' && attempt.deadline !== null && point.pausedAt !== null) {
+    attempt.deadline += Math.max(0, now - point.pausedAt)
+    state.attempts.practice = attempt
+  }
+  state.returnTo = null
+  save()
+}
 function interactiveKey(subject: string, chapter: string, lesson?: string) {
   const key = subject + '/' + chapter
   // Previously saved cards use the chapter key. Additional cards use a separate key.

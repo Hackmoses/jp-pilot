@@ -2,7 +2,7 @@ import type { ComponentChildren } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
 import { Feedback } from '../components/share/Feedback'
 import { isSubjectLoaded, loadSubject } from '../lib/data'
-import { continueExam, getAttempt, getRecent } from '../lib/modes'
+import { continueExam, getAttempt, getRecent, getReturnPoint } from '../lib/modes'
 import '../styles/modes.css'
 
 type ModeAccent = 'study' | 'practice' | 'exam' | 'resume'
@@ -81,7 +81,7 @@ export function ModeCard({ href, title, pill, accent, children }: {
 }
 
 export function ModeHome() {
-  const recent = getRecent()
+  const recent = getReturnPoint() ?? getRecent()
   return (
     <Panel title="How do you want to learn?" subtitle="Choose a study path built for JAMB UTME." back="#/" menu={false}>
       <div class="jp-mode-grid">

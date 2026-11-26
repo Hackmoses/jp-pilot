@@ -425,6 +425,35 @@ body {
   text-decoration: none;
 }
 
+.jp-return-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.jp-return-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.jp-return-bar-link {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.jp-return-bar-dismiss {
+  flex: none;
+}
+
 .jp-session-bar {
   background: var(--bg);
   border-bottom: 1px solid var(--line);

@@ -3,6 +3,7 @@ import { lazyView } from './lib/lazyView'
 import { submitExpiredExam } from './lib/modes'
 import { examRun, results } from './screens/examModules'
 import { Home } from './screens/Home'
+import { ReturnBar } from './screens/ReturnBar'
 import { ModeHome, Panel } from './screens/Modes'
 
 function screenView<Props extends object>(module: ReturnType<typeof lazyView<Props>>, title: string) {
@@ -66,7 +67,7 @@ export function App() {
     case '#/subjects':
       return <Subjects key={route} mode={params.get('mode') === 'study' ? 'study' : 'practice'} />
     case '#/study':
-      return <Study key={route} params={params} />
+      return <><ReturnBar /><Study key={route} params={params} /></>
     case '#/practice':
       return <PracticeSetup key={route} subject={params.get('subject') ?? 'chemistry'} chapter={params.get('chapter')} />
     case '#/exam':

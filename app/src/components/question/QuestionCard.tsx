@@ -22,6 +22,7 @@ export interface QuestionCardProps {
   onFull?: () => void
   learnHref?: string
   learnLabel?: string
+  onLearn?: () => void
   verdictReason?: string
   sourceLabel?: string
 }
@@ -41,6 +42,7 @@ export function QuestionCard({
   onFull,
   learnHref,
   learnLabel,
+  onLearn,
   verdictReason,
   sourceLabel: sourceOverride,
 }: QuestionCardProps) {
@@ -186,7 +188,7 @@ export function QuestionCard({
 
       {compact && answered && <div class="jp-practice-actions">
         <button type="button" class="jp-btn" aria-expanded={full} onClick={onFull}>{full ? 'Hide full solution' : 'Full solution'}</button>
-        {learnHref && <a class={isCorrect ? 'jp-btn' : 'jp-btn jp-btn--primary'} href={learnHref}>{learnLabel ?? 'Learn this topic →'}</a>}
+        {learnHref && <a class={isCorrect ? 'jp-btn' : 'jp-btn jp-btn--primary'} href={learnHref} onClick={onLearn}>{learnLabel ?? 'Learn this topic →'}</a>}
       </div>}
       {answered && !brief && calculationSlot}
       {answered && !brief && !isCorrect && pickedOption?.whyWrong && (

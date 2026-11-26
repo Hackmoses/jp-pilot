@@ -21,7 +21,7 @@ import {
 import { getAnimation, getQuestion, isSubjectLoaded, loadSubject } from '../lib/data'
 import { englishLearnLink } from '../lib/englishLearn'
 import { STUDY_TOPICS } from '../lib/sections'
-import { finishAttempt, getAttemptQuestions, getQuestionChapter, getStudyAnswer, markStudied, remember, saveAttempt, studyLink, type Attempt, type TestResult } from '../lib/modes'
+import { arriveAtReturnPoint, finishAttempt, getAttemptQuestions, setReturnPoint, getQuestionChapter, getStudyAnswer, markStudied, remember, saveAttempt, studyLink, type Attempt, type TestResult } from '../lib/modes'
 import { shuffleOptions } from '../lib/shuffle'
 import { getProgress, logEvent, recordAnswer } from '../lib/store'
 import { getSubject, getSubjectByQuestionId, isSubjectAvailable } from '../lib/subjects'
@@ -88,6 +88,7 @@ export function Session({ attempt, study, review }: SessionProps) {
       )
     },
   )
+  useState(() => arriveAtReturnPoint(attempt, window.location.hash))
   const savedAttempt = useRef(attempt)
   const [index, setIndex] = useState(attempt?.index ?? 0)
   const [picks, setPicks] = useState<Attempt['answers']>(() =>
@@ -468,6 +469,11 @@ export function Session({ attempt, study, review }: SessionProps) {
             onFull={() => setFull((prev) => !prev)}
             learnHref={learnHref}
             learnLabel={englishLearn?.label}
+            onLearn={() => setReturnPoint({
+              href: window.location.hash,
+              label: review ? 'Back to exam review' : attempt ? 'Back to practice · Question ' + (index + 1) + ' of ' + queue.length : 'Back to the question',
+              pausedAt: attempt?.mode === 'practice' && savedAttempt.current?.deadline != null ? Date.now() : null,
+            })}
             calculationSlot={!isWide && !isConceptAnimation ? calculationPlayer : undefined}
             conceptSlot={!isWide && isConceptAnimation ? calculationPlayer : undefined}
           />
