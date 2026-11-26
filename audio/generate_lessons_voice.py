@@ -64,6 +64,13 @@ SPELLING_EQUIV = {
     "ph": "p h",
     "stp": "s t p",
     "jam": "jamb",
+    # Whisper writes US spellings; lessons use British spelling.
+    "color": "colour", "colors": "colours", "fertilization": "fertilisation",
+    "vapor": "vapour", "hemoglobin": "haemoglobin", "hemophilia": "haemophilia",
+    "hemolysis": "haemolysis", "signaling": "signalling", "behavior": "behaviour",
+    "fiber": "fibre", "fibers": "fibres", "center": "centre",
+    "organization": "organisation", "recognize": "recognise", "specialized": "specialised",
+    "keratinized": "keratinised", "decolorized": "decolourised", "estivation": "aestivation",
 }
 
 PROPER_NAME_WORDS = {"avogadro", "danfo", "jamb", "kelvin", "celsius", "hertz"}
@@ -75,8 +82,22 @@ TTS_RESPELL_RULES: list[tuple[re.Pattern[str], str]] = [
     (re.compile(r"\bperiod\b"), "peeriud"),
     (re.compile(r"\bRarefaction\b"), "Rareifaction"),
     (re.compile(r"\brarefaction\b"), "rareifaction"),
-    (re.compile(r"\bJAMB\b"), "Jamb"),
+    (re.compile(r"\bJAMB\b"), "Jam"),
 ]
+
+# Science words Chatterbox misreads. Display text is never changed.
+for _word, _say in [
+    ("mammary", "mammaree"), ("epididymis", "eppee-diddy-miss"), ("glomerulus", "glom-erryoo-luss"),
+    ("ptyalin", "tie-a-lin"), ("ecdysis", "eck-dee-sis"), ("mouthparts", "mouth parts"),
+    ("pupal", "pew-pal"), ("carpel", "car-pel"), ("prothallus", "pro-thallus"), ("calvin", "Kalvin"),
+    ("stroma", "stroh-ma"), ("emigration", "emmy-gration"), ("unequal", "un-equal"),
+    ("operculum", "oh-per-cue-lum"), ("euglena", "you-glee-na"), ("euglena's", "you-glee-na's"),
+    ("vibrissae", "vye-brissy"), ("goitre", "goyter"), ("conserves", "con-serves"),
+]:
+    TTS_RESPELL_RULES.append((
+        re.compile(r"\b" + re.escape(_word) + r"\b", re.IGNORECASE),
+        lambda m, _say=_say: _say[0].upper() + _say[1:] if m.group(0)[0].isupper() else _say,
+    ))
 
 
 def apply_tts_respellings(text: str) -> str:
