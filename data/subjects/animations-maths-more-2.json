@@ -563,7 +563,7 @@
       "steps": [
         {
           "n": 1,
-          "display": "\\tan 30° = \\frac{40}{d}",
+          "display": "tan 30° = \\frac{40}{d}",
           "tag": "ratio",
           "title": "Set up tangent ratio",
           "narration": "In the right-angled triangle, tangent of thirty degrees equals the building height divided by horizontal distance d."
@@ -600,7 +600,7 @@
         },
         {
           "n": 2,
-          "display": "\\tan 30° = \\frac{40}{d}",
+          "display": "tan 30° = \\frac{40}{d}",
           "tag": "ratio",
           "title": "Write tangent formula",
           "narration": "Because we have opposite and adjacent sides, use tangent equals opposite over adjacent."
@@ -643,21 +643,21 @@
       "steps": [
         {
           "n": 1,
-          "display": "u = 3x^{2} − 2x, y = \\cos u",
+          "display": "u = 3x^{2} − 2x, y = cos u",
           "tag": "setup",
           "title": "Split outer and inner",
           "narration": "Identify the inside polynomial as u and the outside function as cosine of u."
         },
         {
           "n": 2,
-          "display": "\\frac{dy}{du} = −\\sin u, \\frac{du}{dx} = 6x − 2",
+          "display": "\\frac{dy}{du} = −sin u, \\frac{du}{dx} = 6x − 2",
           "tag": "derivatives",
           "title": "Differentiate both parts",
           "narration": "Differentiate cosine u to get minus sine u, and differentiate three x squared minus two x to get six x minus two."
         },
         {
           "n": 3,
-          "display": "−(6x − 2) \\sin(3x^{2} − 2x)",
+          "display": "−(6x − 2) sin(3x^{2} − 2x)",
           "tag": "chain rule",
           "title": "Multiply by chain rule",
           "narration": "Multiply the two derivatives together and replace u with three x squared minus two x."
@@ -673,14 +673,14 @@
       "teach": [
         {
           "n": 1,
-          "display": "Let u = 3x^{2} − 2x, y = \\cos u",
+          "display": "Let u = 3x^{2} − 2x, y = cos u",
           "tag": "substitute",
           "title": "Define inner expression",
           "narration": "Because cosine acts on a quadratic expression instead of just x, apply the chain rule by calling the inside expression u."
         },
         {
           "n": 2,
-          "display": "\\frac{dy}{du} = −\\sin u",
+          "display": "\\frac{dy}{du} = −sin u",
           "tag": "outer",
           "title": "Differentiate the outer cosine",
           "narration": "The derivative of cosine u with respect to u is minus sine u, keeping the inner argument untouched."
@@ -701,7 +701,7 @@
         },
         {
           "n": 5,
-          "display": "\\frac{dy}{dx} = −\\sin(3x^{2} − 2x) × (6x − 2)",
+          "display": "\\frac{dy}{dx} = −sin(3x^{2} − 2x) × (6x − 2)",
           "tag": "combine",
           "title": "Substitute u back in",
           "narration": "Put three x squared minus two x back inside sine and write the algebraic factor in front so it is not mixed into the angle."
@@ -730,14 +730,14 @@
         },
         {
           "n": 2,
-          "display": "\\log_{8} 5 = \\log_{8} 10 − \\log_{8} 2",
+          "display": "log_{8} 5 = log_{8} 10 − log_{8} 2",
           "tag": "quotient law",
           "title": "Split the logarithm",
           "narration": "By the quotient law of logarithms, dividing inside becomes subtracting two logarithms."
         },
         {
           "n": 3,
-          "display": "8 = 2^{3} ⇒ \\log_{8} 2 = \\frac{1}{3}",
+          "display": "8 = 2^{3} ⇒ log_{8} 2 = \\frac{1}{3}",
           "tag": "power",
           "title": "Evaluate log base 8 of 2",
           "narration": "Since two is the cube root of eight, log base eight of two equals one third."
@@ -760,14 +760,14 @@
         },
         {
           "n": 2,
-          "display": "\\log_{8}(\\frac{10}{2}) = \\log_{8} 10 − \\log_{8} 2",
+          "display": "log_{8}(\\frac{10}{2}) = log_{8} 10 − log_{8} 2",
           "tag": "quotient law",
           "title": "Apply logarithm quotient law",
           "narration": "The logarithm of a quotient equals the logarithm of the numerator minus the logarithm of the denominator."
         },
         {
           "n": 3,
-          "display": "\\log_{8} 5 = x − \\log_{8} 2",
+          "display": "log_{8} 5 = x − log_{8} 2",
           "tag": "substitute",
           "title": "Substitute x for log 10",
           "narration": "Replace log base eight of ten with x as defined in the question."
@@ -781,7 +781,7 @@
         },
         {
           "n": 5,
-          "display": "\\log_{8} 2 = \\frac{1}{3}",
+          "display": "log_{8} 2 = \\frac{1}{3}",
           "tag": "evaluate",
           "title": "Read off the logarithm",
           "narration": "By the definition of logarithms, log base eight of eight to the one third is simply one third."
@@ -977,21 +977,21 @@
       "steps": [
         {
           "n": 1,
-          "display": "(\\cos q − \\sin q)^{2} = \\cos^{2} q − 2 \\sin q \\cos q + \\sin^{2} q",
+          "display": "(cos q − sin q)^{2} = cos^{2} q − 2 sin q cos q + sin^{2} q",
           "tag": "expand",
           "title": "Expand the square",
           "narration": "Expand the bracket into cosine squared minus two sine cosine plus sine squared."
         },
         {
           "n": 2,
-          "display": "= 1 − \\sin 2q",
+          "display": "= 1 − sin 2q",
           "tag": "identity",
           "title": "Apply trig identities",
           "narration": "Use sine squared plus cosine squared equals one, and two sine q cosine q equals sine two q."
         },
         {
           "n": 3,
-          "display": "\\frac{d}{dq}(1 − \\sin 2q) = −2 \\cos 2q",
+          "display": "\\frac{d}{dq}(1 − sin 2q) = −2 cos 2q",
           "tag": "differentiate",
           "title": "Differentiate with respect to q",
           "narration": "The constant one differentiates to zero, and differentiating minus sine two q gives minus two cosine two q."
@@ -1007,21 +1007,21 @@
       "teach": [
         {
           "n": 1,
-          "display": "y = \\cos^{2} q − 2 \\cos q \\sin q + \\sin^{2} q",
+          "display": "y = cos^{2} q − 2 cos q sin q + sin^{2} q",
           "tag": "expand",
           "title": "Expand the squared bracket",
           "narration": "Expanding the bracket first makes the expression simpler to differentiate using standard trig identities."
         },
         {
           "n": 2,
-          "display": "\\cos^{2} q + \\sin^{2} q = 1",
+          "display": "cos^{2} q + sin^{2} q = 1",
           "tag": "pythagorean",
           "title": "Use Pythagorean identity",
           "narration": "Group cosine squared q plus sine squared q together and replace their sum with one."
         },
         {
           "n": 3,
-          "display": "2 \\sin q \\cos q = \\sin 2q ⇒ y = 1 − \\sin 2q",
+          "display": "2 sin q cos q = sin 2q ⇒ y = 1 − sin 2q",
           "tag": "double angle",
           "title": "Use double-angle formula",
           "narration": "Replace two sine q cosine q with sine two q so the expression becomes one minus sine two q."
@@ -1035,7 +1035,7 @@
         },
         {
           "n": 5,
-          "display": "\\frac{d}{dq}(−\\sin 2q) = −2 \\cos 2q",
+          "display": "\\frac{d}{dq}(−sin 2q) = −2 cos 2q",
           "tag": "chain rule",
           "title": "Differentiate sine 2q",
           "narration": "By the chain rule, sine two q differentiates to cosine two q multiplied by two from the inner angle."
@@ -2299,14 +2299,14 @@
       "steps": [
         {
           "n": 1,
-          "display": "\\log_{3} 27 = 3, \\log_{\\frac{1}{4}} 64 = −3",
+          "display": "log_{3} 27 = 3, log_{\\frac{1}{4}} 64 = −3",
           "tag": "numerator",
           "title": "Evaluate top logarithms",
           "narration": "Three cubed is twenty-seven, and one quarter to the minus three is sixty-four, so the two top logs are three and minus three."
         },
         {
           "n": 2,
-          "display": "\\log_{3}(\\frac{1}{81}) = −4",
+          "display": "log_{3}(\\frac{1}{81}) = −4",
           "tag": "denominator",
           "title": "Evaluate bottom logarithm",
           "narration": "Since one over eighty-one is three to the minus four, the denominator log is minus four."
@@ -2329,21 +2329,21 @@
       "teach": [
         {
           "n": 1,
-          "display": "27 = 3^{3} ⇒ \\log_{3} 27 = 3",
+          "display": "27 = 3^{3} ⇒ log_{3} 27 = 3",
           "tag": "first log",
           "title": "Evaluate log base 3 of 27",
           "narration": "Ask what power of three gives twenty-seven; since three cubed is twenty-seven, the first log equals three."
         },
         {
           "n": 2,
-          "display": "64 = 4^{3} = (\\frac{1}{4})^{−3} ⇒ \\log_{\\frac{1}{4}} 64 = −3",
+          "display": "64 = 4^{3} = (\\frac{1}{4})^{−3} ⇒ log_{\\frac{1}{4}} 64 = −3",
           "tag": "second log",
-          "title": "Evaluate \\log_{\\frac{1}{4}} 64",
+          "title": "Evaluate log_{\\frac{1}{4}} 64",
           "narration": "Because sixty-four is four cubed, flipping one quarter upside down with a negative power gives one quarter to the minus three, so this log is minus three."
         },
         {
           "n": 3,
-          "display": "\\frac{1}{81} = 3^{−4} ⇒ \\log_{3}(\\frac{1}{81}) = −4",
+          "display": "\\frac{1}{81} = 3^{−4} ⇒ log_{3}(\\frac{1}{81}) = −4",
           "tag": "third log",
           "title": "Evaluate bottom log",
           "narration": "Eighty-one is three to the fourth power, so its reciprocal one over eighty-one is three to the minus four, giving minus four."
@@ -3360,14 +3360,14 @@
       "steps": [
         {
           "n": 1,
-          "display": "\\bar{x} = \\frac{7 + 8 + 9 + 10 + 11 + 12 + 13}{7} = 10",
+          "display": "x̄ = \\frac{7 + 8 + 9 + 10 + 11 + 12 + 13}{7} = 10",
           "tag": "mean",
           "title": "Find the mean",
           "narration": "Add all seven evenly spaced numbers to get seventy and divide by seven to get a mean of ten."
         },
         {
           "n": 2,
-          "display": "d^{2}: 9, 4, 1, 0, 1, 4, 9 ⇒ \\sum d^{2} = 28",
+          "display": "d^{2}: 9, 4, 1, 0, 1, 4, 9 ⇒ Σ d^{2} = 28",
           "tag": "deviations",
           "title": "Sum squared deviations",
           "narration": "Square each difference from ten to get nine, four, one, zero, one, four, nine, which add to twenty-eight."
@@ -3390,14 +3390,14 @@
       "teach": [
         {
           "n": 1,
-          "display": "σ = \\sqrt{\\frac{\\sum (x − \\bar{x})^{2}}{N}}",
+          "display": "σ = \\sqrt{\\frac{Σ (x − x̄)^{2}}{N}}",
           "tag": "formula",
           "title": "Population standard deviation",
           "narration": "State the population standard deviation formula: take the square root of the mean of squared deviations from the mean."
         },
         {
           "n": 2,
-          "display": "\\bar{x} = \\frac{7 + 8 + 9 + 10 + 11 + 12 + 13}{7} = \\frac{70}{7} = 10",
+          "display": "x̄ = \\frac{7 + 8 + 9 + 10 + 11 + 12 + 13}{7} = \\frac{70}{7} = 10",
           "tag": "mean",
           "title": "Calculate the mean",
           "narration": "Sum the seven values to get seventy and divide by seven to find the mean is ten."
@@ -3411,7 +3411,7 @@
         },
         {
           "n": 4,
-          "display": "\\sum (x − 10)^{2} = 9 + 4 + 1 + 0 + 1 + 4 + 9 = 28",
+          "display": "Σ (x − 10)^{2} = 9 + 4 + 1 + 0 + 1 + 4 + 9 = 28",
           "tag": "square",
           "title": "Square and sum deviations",
           "narration": "Square each deviation so all terms are positive, then add them to obtain twenty-eight."
