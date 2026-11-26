@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 10,
+  "count": 20,
   "animations": [
     {
       "id": "anim-math-jamb-2010-018",
@@ -687,6 +687,680 @@
           "tag": "keep change flip",
           "title": "Flip and multiply",
           "narration": "Dividing by a fraction means multiplying by its reciprocal. Fifty five divided by eleven is five, and two hundred and seventy divided by twenty seven is ten, giving five times ten equals fifty."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-015",
+      "questionId": "math-jamb-2011-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x + 3y = 0 ⇒ x = −3y",
+          "tag": "isolate x",
+          "title": "Express x in terms of y",
+          "narration": "Subtract three y from both sides of the second equation to get x equals minus three y."
+        },
+        {
+          "n": 2,
+          "display": "−2(−3y) − 5y = 3 ⇒ y = 3",
+          "tag": "substitute",
+          "title": "Substitute into equation one",
+          "narration": "Substitute minus three y for x in the first equation to get six y minus five y equals three, so y equals three."
+        },
+        {
+          "n": 3,
+          "display": "x = −3(3) = −9 ⇒ (−9, 3) (option C)",
+          "tag": "find x",
+          "title": "Find x and write pair",
+          "narration": "Multiply minus three by three to get x equals minus nine, giving the pair minus nine comma three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "−2x − 5y = 3,  x + 3y = 0",
+          "tag": "pair equations",
+          "title": "Write both equations",
+          "narration": "We have two linear equations in x and y. The second equation has x with coefficient one, making substitution easy."
+        },
+        {
+          "n": 2,
+          "display": "x = −3y",
+          "tag": "subtract 3y",
+          "title": "Make x the subject",
+          "narration": "Subtract three y from both sides of x plus three y equals zero so x stands alone as minus three y."
+        },
+        {
+          "n": 3,
+          "display": "−2(−3y) − 5y = 3",
+          "tag": "substitute x",
+          "title": "Substitute into equation 1",
+          "narration": "Replace x with minus three y in the first equation so that only the letter y remains."
+        },
+        {
+          "n": 4,
+          "display": "6y − 5y = 3 ⇒ y = 3",
+          "tag": "solve for y",
+          "title": "Simplify to find y",
+          "narration": "Minus two times minus three y gives positive six y, and six y minus five y leaves y equals three."
+        },
+        {
+          "n": 5,
+          "display": "x = −3(3) = −9",
+          "tag": "find x",
+          "title": "Substitute back for x",
+          "narration": "Put y equals three back into x equals minus three y to get x equals minus nine."
+        },
+        {
+          "n": 6,
+          "display": "Check: −2(−9) − 5(3) = 3 ⇒ (−9, 3) (option C)",
+          "tag": "verify and pair",
+          "title": "Check and state pair",
+          "narration": "Check in the first equation: eighteen minus fifteen equals three, and minus nine plus nine equals zero. Giving x first, the solution is minus nine comma three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-021",
+      "questionId": "math-jamb-2011-021",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = 3, d = 3, n = 18",
+          "tag": "identify AP",
+          "title": "Identify first term and d",
+          "narration": "Read the first term a equals three, common difference d equals three, and number of terms n equals eighteen."
+        },
+        {
+          "n": 2,
+          "display": "S_{n} = \\frac{n}{2}(2a + (n − 1)d)",
+          "tag": "AP sum formula",
+          "title": "State AP sum formula",
+          "narration": "Use the arithmetic progression sum formula, n over two times two a plus n minus one times d."
+        },
+        {
+          "n": 3,
+          "display": "S_{18} = 9(6 + 17 × 3) = 9(57) = 513 (option B)",
+          "tag": "evaluate sum",
+          "title": "Calculate the sum",
+          "narration": "Substitute the values to get nine times fifty seven, which equals five hundred and thirteen."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "3, 6, 9, … ⇒ a = 3, d = 6 − 3 = 3",
+          "tag": "read sequence",
+          "title": "Find a and d",
+          "narration": "The first term a is three, and each term increases by three, so the common difference d is six minus three equals three."
+        },
+        {
+          "n": 2,
+          "display": "S_{n} = \\frac{n}{2}(2a + (n − 1)d)",
+          "tag": "state formula",
+          "title": "State the AP sum formula",
+          "narration": "Use the arithmetic progression sum formula because the terms have a constant difference between them."
+        },
+        {
+          "n": 3,
+          "display": "S_{18} = \\frac{18}{2}(2(3) + (18 − 1)(3))",
+          "tag": "substitute",
+          "title": "Substitute n equals 18",
+          "narration": "Put eighteen for n, three for a, and three for d into the sum formula."
+        },
+        {
+          "n": 4,
+          "display": "S_{18} = 9(6 + 17 × 3) = 9(6 + 51)",
+          "tag": "simplify bracket",
+          "title": "Simplify inside brackets",
+          "narration": "Eighteen over two is nine, two times three is six, and seventeen times three is fifty one."
+        },
+        {
+          "n": 5,
+          "display": "S_{18} = 9 × 57 = 513 (option B)",
+          "tag": "multiply",
+          "title": "Multiply for final sum",
+          "narration": "Add six and fifty one to get fifty seven, then multiply by nine to get five hundred and thirteen."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-026",
+      "questionId": "math-jamb-2011-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\det(N) = (2)(4) − (3)(1) = 5",
+          "tag": "determinant",
+          "title": "Find the determinant",
+          "narration": "Multiply the main diagonal entries and subtract the off-diagonal product to get eight minus three equals five."
+        },
+        {
+          "n": 2,
+          "display": "adj(N) = \\matrix{4,−3;−1,2}",
+          "tag": "adjugate",
+          "title": "Swap and negate entries",
+          "narration": "Swap two and four on the main diagonal, and change the signs of three and one."
+        },
+        {
+          "n": 3,
+          "display": "N^{-1} = \\frac{1}{5}\\matrix{4,−3;−1,2} (option B)",
+          "tag": "inverse matrix",
+          "title": "Divide by determinant",
+          "narration": "Multiply the adjugate matrix by one over five to write the inverse matrix."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "N^{-1} = \\frac{1}{ad − bc}\\matrix{d,−b;−c,a}",
+          "tag": "inverse formula",
+          "title": "State 2×2 inverse rule",
+          "narration": "For a two by two matrix, divide one by the determinant a d minus b c, swap the main diagonal a and d, and negate b and c."
+        },
+        {
+          "n": 2,
+          "display": "\\det(N) = 2 × 4 − 3 × 1 = 8 − 3 = 5",
+          "tag": "determinant",
+          "title": "Find the determinant",
+          "narration": "Multiply two by four to get eight, subtract three times one, and get a determinant of five. Since five is not zero, the inverse exists."
+        },
+        {
+          "n": 3,
+          "display": "Swap 2, 4 and negate 3, 1 ⇒ \\matrix{4,−3;−1,2}",
+          "tag": "form adjugate",
+          "title": "Build the adjugate matrix",
+          "narration": "Swap the top-left two and bottom-right four, then put minus signs on three and one."
+        },
+        {
+          "n": 4,
+          "display": "N^{-1} = \\frac{1}{5}\\matrix{4,−3;−1,2}",
+          "tag": "divide by 5",
+          "title": "Multiply by one fifth",
+          "narration": "Place one over the determinant five in front of the adjugate matrix."
+        },
+        {
+          "n": 5,
+          "display": "Check: \\frac{1}{5}(2×4 + 3×(−1)) = 1 (option B)",
+          "tag": "verify entry",
+          "title": "Check top-left product",
+          "narration": "Quick check on the top-left product: two times four plus three times minus one is five, and one fifth of five is one. So N inverse is one fifth of the matrix with rows four, minus three and minus one, two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-034",
+      "questionId": "math-jamb-2011-034",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "tan θ = \\frac{3}{4} ⇒ opp = 3, adj = 4",
+          "tag": "SOHCAHTOA",
+          "title": "Label opposite and adjacent",
+          "narration": "From tangent equals opposite over adjacent, take opposite as three and adjacent as four."
+        },
+        {
+          "n": 2,
+          "display": "hyp = \\sqrt{3^{2} + 4^{2}} = \\sqrt{25} = 5",
+          "tag": "Pythagoras",
+          "title": "Find the hypotenuse",
+          "narration": "Use Pythagoras theorem on three and four to get a hypotenuse of five."
+        },
+        {
+          "n": 3,
+          "display": "cos θ − sin θ = \\frac{4}{5} − \\frac{3}{5} = \\frac{1}{5} (option C)",
+          "tag": "subtract ratios",
+          "title": "Subtract sine from cosine",
+          "narration": "Subtract sine theta three fifths from cosine theta four fifths to get one fifth."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "tan θ = \\frac{opp}{adj} = \\frac{3}{4}",
+          "tag": "read tangent",
+          "title": "Use the tangent ratio",
+          "narration": "Since theta is an acute angle in a right triangle, tangent equals opposite over adjacent, so set opposite to three and adjacent to four."
+        },
+        {
+          "n": 2,
+          "display": "hyp^{2} = 3^{2} + 4^{2} = 9 + 16 = 25",
+          "tag": "Pythagoras",
+          "title": "Apply Pythagoras' theorem",
+          "narration": "To find cosine and sine we need the hypotenuse. By Pythagoras theorem, square three and four and add them to get twenty five."
+        },
+        {
+          "n": 3,
+          "display": "hyp = \\sqrt{25} = 5",
+          "tag": "take root",
+          "title": "Find the hypotenuse",
+          "narration": "Take the positive square root of twenty five to get a hypotenuse of five."
+        },
+        {
+          "n": 4,
+          "display": "cos θ = \\frac{4}{5},  sin θ = \\frac{3}{5}",
+          "tag": "sine and cosine",
+          "title": "Write cosine and sine",
+          "narration": "Cosine is adjacent over hypotenuse, which is four fifths, and sine is opposite over hypotenuse, which is three fifths."
+        },
+        {
+          "n": 5,
+          "display": "cos θ − sin θ = \\frac{4}{5} − \\frac{3}{5} = \\frac{1}{5} (option C)",
+          "tag": "subtract",
+          "title": "Evaluate the difference",
+          "narration": "Both fractions already share denominator five, so subtract three from four to get one fifth."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-043",
+      "questionId": "math-jamb-2011-043",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "n + (n + 1) + (n + 2) + (n + 3) = 34",
+          "tag": "set up sum",
+          "title": "Write the sum equation",
+          "narration": "Let the smallest integer be n, so the next three consecutive integers are n plus one, n plus two, and n plus three."
+        },
+        {
+          "n": 2,
+          "display": "4n + 6 = 34 ⇒ 4n = 28",
+          "tag": "collect and subtract",
+          "title": "Simplify and subtract 6",
+          "narration": "Combine like terms to get four n plus six equals thirty four, then subtract six from both sides to get four n equals twenty eight."
+        },
+        {
+          "n": 3,
+          "display": "n = \\frac{28}{4} = 7 (option A)",
+          "tag": "divide by 4",
+          "title": "Divide to find n",
+          "narration": "Divide both sides by four to find the least integer is seven."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Integers: n, n + 1, n + 2, n + 3",
+          "tag": "define variable",
+          "title": "Name the four integers",
+          "narration": "Consecutive integers go up by one each time. Calling the least integer n lets us write all four using one variable."
+        },
+        {
+          "n": 2,
+          "display": "n + (n + 1) + (n + 2) + (n + 3) = 34",
+          "tag": "form equation",
+          "title": "Set the sum equal to 34",
+          "narration": "Add the four consecutive integers together and set their total equal to thirty four."
+        },
+        {
+          "n": 3,
+          "display": "4n + 6 = 34",
+          "tag": "combine terms",
+          "title": "Collect like terms",
+          "narration": "Four copies of n give four n, and one plus two plus three gives six."
+        },
+        {
+          "n": 4,
+          "display": "4n = 34 − 6 = 28",
+          "tag": "subtract 6",
+          "title": "Subtract 6 from both sides",
+          "narration": "Subtract six from both sides so the n term stays on its own, leaving four n equals twenty eight."
+        },
+        {
+          "n": 5,
+          "display": "n = \\frac{28}{4} = 7",
+          "tag": "divide by 4",
+          "title": "Divide both sides by 4",
+          "narration": "Divide both sides by four to solve for n, giving n equals seven."
+        },
+        {
+          "n": 6,
+          "display": "Check: 7 + 8 + 9 + 10 = 34 (option A)",
+          "tag": "verify sum",
+          "title": "Check the four integers",
+          "narration": "Check the sum: seven plus eight plus nine plus ten equals thirty four. So the least integer is seven."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-004",
+      "questionId": "math-jamb-2012-004",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{21}{9} = \\frac{7}{3}",
+          "tag": "reduce fraction",
+          "title": "Reduce by dividing by 3",
+          "narration": "Divide numerator and denominator by three to simplify twenty one over nine to seven over three."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{7}{3} = 2.333…",
+          "tag": "divide",
+          "title": "Convert to decimal",
+          "narration": "Divide seven by three to get the recurring decimal two point three three three."
+        },
+        {
+          "n": 3,
+          "display": "2.333… ≈ 2.33 (3 s.f.) (option D)",
+          "tag": "round to 3 s.f.",
+          "title": "Round to 3 sig. figures",
+          "narration": "Keep the first three digits, two, three, and three, and round down because the fourth digit is three, giving two point three three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{21}{9} = \\frac{21 ÷ 3}{9 ÷ 3} = \\frac{7}{3}",
+          "tag": "simplify first",
+          "title": "Reduce the fraction",
+          "narration": "Divide both twenty one and nine by their common factor three to make the division simpler: seven over three."
+        },
+        {
+          "n": 2,
+          "display": "7 ÷ 3 = 2.3333…",
+          "tag": "long division",
+          "title": "Write as a decimal",
+          "narration": "Three goes into seven twice with remainder one, and one over three repeats as point three three three forever."
+        },
+        {
+          "n": 3,
+          "display": "First 3 s.f.: 2, 3, 3 | next digit: 3",
+          "tag": "count sig. figs",
+          "title": "Identify the 3rd sig. figure",
+          "narration": "Count from the first non-zero digit: two is first, the first three is second, and the second three is third. Look at the next digit, which is three."
+        },
+        {
+          "n": 4,
+          "display": "2.33 (option D)",
+          "tag": "round down",
+          "title": "Round to 3 sig. figures",
+          "narration": "Since the fourth digit three is less than five, we do not round up. The value to three significant figures is two point three three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-010",
+      "questionId": "math-jamb-2012-010",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "n(F ∪ V) = n(F) + n(V) − n(F ∩ V)",
+          "tag": "union formula",
+          "title": "State two-set formula",
+          "narration": "Use the union formula so the three students playing both sports are not counted twice."
+        },
+        {
+          "n": 2,
+          "display": "n(F ∪ V) = 22 + 26 − 3 = 45",
+          "tag": "at least one",
+          "title": "Find who plays at least one",
+          "narration": "Add twenty two and twenty six, then subtract the overlap three to get forty five students."
+        },
+        {
+          "n": 3,
+          "display": "Neither = 46 − 45 = 1 (option A)",
+          "tag": "subtract from total",
+          "title": "Subtract from 46 students",
+          "narration": "Subtract forty five from the forty six students in total to leave one student playing neither sport."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "n(U) = 46, n(F) = 22, n(V) = 26, n(F ∩ V) = 3",
+          "tag": "list set sizes",
+          "title": "Record the set sizes",
+          "narration": "Read each number from the question: forty six students in total, twenty two in football, twenty six in volleyball, and three in both."
+        },
+        {
+          "n": 2,
+          "display": "n(F ∪ V) = n(F) + n(V) − n(F ∩ V)",
+          "tag": "inclusion-exclusion",
+          "title": "Use the union formula",
+          "narration": "When you add twenty two and twenty six, the three students who play both sports get counted twice, so we must subtract three once."
+        },
+        {
+          "n": 3,
+          "display": "n(F ∪ V) = 22 + 26 − 3 = 45",
+          "tag": "find union",
+          "title": "Calculate the union",
+          "narration": "Twenty two plus twenty six is forty eight, and forty eight minus three gives forty five students who play at least one sport."
+        },
+        {
+          "n": 4,
+          "display": "n(F ∪ V)' = 46 − 45 = 1 (option A)",
+          "tag": "neither sport",
+          "title": "Subtract from the class total",
+          "narration": "Take those forty five students away from the forty six students in the class. That leaves one student who plays neither sport."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-011",
+      "questionId": "math-jamb-2012-011",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "w(1 − cn) = v(2 + cn)",
+          "tag": "clear fraction",
+          "title": "Multiply both sides by 1 − cn",
+          "narration": "Multiply both sides by one minus c n to clear the denominator."
+        },
+        {
+          "n": 2,
+          "display": "w − wcn = 2v + vcn",
+          "tag": "expand brackets",
+          "title": "Expand both sides",
+          "narration": "Expand both brackets to expose the n terms."
+        },
+        {
+          "n": 3,
+          "display": "w − 2v = cn(v + w)",
+          "tag": "collect n terms",
+          "title": "Group and factorise n",
+          "narration": "Collect the n terms on the right and factor out c n to get c n times v plus w."
+        },
+        {
+          "n": 4,
+          "display": "n = \\frac{w − 2v}{c(v + w)} (option A)",
+          "tag": "isolate n",
+          "title": "Divide to isolate n",
+          "narration": "Divide both sides by c times v plus w to get n equals w minus two v over c times v plus w."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "w = \\frac{v(2 + cn)}{1 − cn}",
+          "tag": "starting equation",
+          "title": "Start with the given formula",
+          "narration": "The letter n appears in both the numerator and the denominator, so first remove the fraction."
+        },
+        {
+          "n": 2,
+          "display": "w(1 − cn) = v(2 + cn)",
+          "tag": "multiply by 1 − cn",
+          "title": "Multiply both sides by 1 − cn",
+          "narration": "Multiply both sides by one minus c n so there is no denominator left."
+        },
+        {
+          "n": 3,
+          "display": "w − wcn = 2v + vcn",
+          "tag": "expand",
+          "title": "Expand both brackets",
+          "narration": "Multiply w through the left bracket and v through the right bracket."
+        },
+        {
+          "n": 4,
+          "display": "w − 2v = vcn + wcn",
+          "tag": "group n terms",
+          "title": "Move n terms to one side",
+          "narration": "Add w c n to both sides and subtract two v from both sides so all terms containing n sit together on the right."
+        },
+        {
+          "n": 5,
+          "display": "w − 2v = cn(v + w)",
+          "tag": "factor out cn",
+          "title": "Factor out c n",
+          "narration": "Factor out the common c n on the right side so n appears only once."
+        },
+        {
+          "n": 6,
+          "display": "n = \\frac{w − 2v}{c(v + w)} (option A)",
+          "tag": "divide both sides",
+          "title": "Divide by c(v + w)",
+          "narration": "Divide both sides by c times v plus w to leave n on its own as w minus two v over c times v plus w."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-012",
+      "questionId": "math-jamb-2012-012",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x + 3 = 0 ⇒ x = −3",
+          "tag": "remainder theorem",
+          "title": "Find root of divisor",
+          "narration": "Set the divisor x plus three equal to zero to get x equals minus three."
+        },
+        {
+          "n": 2,
+          "display": "f(−3) = 2(−3)^{3} − 11(−3)^{2} + 8(−3) − 1",
+          "tag": "substitute −3",
+          "title": "Substitute x equals −3",
+          "narration": "Substitute minus three for x into the polynomial using the remainder theorem."
+        },
+        {
+          "n": 3,
+          "display": "= −54 − 99 − 24 − 1 = −178 (option D)",
+          "tag": "evaluate",
+          "title": "Add the terms",
+          "narration": "Evaluate each term to get minus fifty four minus ninety nine minus twenty four minus one, which equals minus one hundred and seventy eight."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x + 3 = 0 ⇒ x = −3",
+          "tag": "remainder theorem",
+          "title": "Apply remainder theorem",
+          "narration": "By the remainder theorem, dividing a polynomial f of x by x minus a leaves remainder f of a. Since x plus three is x minus negative three, test x equals minus three."
+        },
+        {
+          "n": 2,
+          "display": "f(−3) = 2(−3)^{3} − 11(−3)^{2} + 8(−3) − 1",
+          "tag": "substitute",
+          "title": "Substitute minus three",
+          "narration": "Replace every x in the polynomial with minus three inside brackets so signs stay accurate."
+        },
+        {
+          "n": 3,
+          "display": "(−3)^{3} = −27,  (−3)^{2} = 9",
+          "tag": "evaluate powers",
+          "title": "Evaluate powers first",
+          "narration": "Cube minus three to get minus twenty seven, and square minus three to get positive nine."
+        },
+        {
+          "n": 4,
+          "display": "f(−3) = −54 − 99 − 24 − 1",
+          "tag": "multiply terms",
+          "title": "Multiply each term",
+          "narration": "Two times minus twenty seven is minus fifty four, minus eleven times nine is minus ninety nine, and eight times minus three is minus twenty four."
+        },
+        {
+          "n": 5,
+          "display": "f(−3) = −178 (option D)",
+          "tag": "sum terms",
+          "title": "Combine the negative terms",
+          "narration": "Add the magnitudes fifty four, ninety nine, twenty four, and one to get one hundred and seventy eight, keeping the minus sign for minus one hundred and seventy eight."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-015",
+      "questionId": "math-jamb-2012-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "U = \\frac{k}{V^{3}} ⇒ k = UV^{3}",
+          "tag": "variation law",
+          "title": "Write the variation law",
+          "narration": "Because U varies inversely as V cubed, U times V cubed equals a constant k."
+        },
+        {
+          "n": 2,
+          "display": "k = 81 × 2^{3} = 81 × 8 = 648",
+          "tag": "find constant",
+          "title": "Find the constant k",
+          "narration": "Substitute U equals eighty one and V equals two to get k equals eighty one times eight, which is six hundred and forty eight."
+        },
+        {
+          "n": 3,
+          "display": "U = \\frac{648}{3^{3}} = \\frac{648}{27} = 24 (option A)",
+          "tag": "find U",
+          "title": "Find U when V is 3",
+          "narration": "Divide six hundred and forty eight by three cubed, twenty seven, to get U equals twenty four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "U ∝ \\frac{1}{V^{3}} ⇒ U = \\frac{k}{V^{3}}",
+          "tag": "set up law",
+          "title": "Set up inverse cube law",
+          "narration": "Inversely proportional to the cube of V means U equals a constant k divided by V cubed."
+        },
+        {
+          "n": 2,
+          "display": "k = UV^{3} = 81 × 2^{3}",
+          "tag": "substitute pair 1",
+          "title": "Find the constant k",
+          "narration": "Multiply both sides by V cubed so k equals U times V cubed, then put in U equals eighty one and V equals two."
+        },
+        {
+          "n": 3,
+          "display": "k = 81 × 8 = 648",
+          "tag": "evaluate k",
+          "title": "Calculate k",
+          "narration": "Two cubed is eight, and eighty one times eight gives k equals six hundred and forty eight."
+        },
+        {
+          "n": 4,
+          "display": "U = \\frac{648}{3^{3}} = \\frac{648}{27}",
+          "tag": "substitute V = 3",
+          "title": "Substitute V equals 3",
+          "narration": "Now set V equals three in U equals six hundred and forty eight over V cubed. Three cubed is twenty seven."
+        },
+        {
+          "n": 5,
+          "display": "U = \\frac{81 × 8}{27} = 3 × 8 = 24 (option A)",
+          "tag": "simplify",
+          "title": "Divide by 27",
+          "narration": "Notice eighty one divided by twenty seven is three, and three times eight gives U equals twenty four."
         }
       ]
     }
