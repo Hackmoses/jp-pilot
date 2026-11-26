@@ -3,13 +3,14 @@ import { Diagram, Flow, timeline, type Point } from './Diagram'
 
 const stages = [
   ['outline', 'ra', 'la', 'rv', 'lv'],
-  ['blue', 'cava', 'ra', 'tri', 'rv', 'pv', 'pa', 'lungs'],
+  ['blue', 'svc', 'ivc', 'ra'],
+  ['tri', 'rv', 'pv', 'pa', 'lungs'],
   ['red', 'veins', 'la', 'mit', 'lv', 'av', 'aorta', 'body'],
   ['wall'],
 ]
 
 const targets: Record<string, Point> = {
-  outline: [180, 74], blue: [28, 114], cava: [32, 98], ra: [141, 115], tri: [142, 131], rv: [139, 172],
+  outline: [180, 74], blue: [28, 114], svc: [32, 64], ivc: [25, 166], ra: [141, 115], tri: [142, 131], rv: [139, 172],
   pv: [108, 164], pa: [75, 56], lungs: [176, 39], red: [291, 45], veins: [285, 102], la: [224, 114],
   mit: [229, 139], lv: [223, 180], av: [256, 169], aorta: [346, 175], body: [211, 228], wall: [231, 204],
 }
@@ -31,36 +32,40 @@ export default function Heart(props: DrawingProps) {
     {shown('rv') && <text x="145" y="151" text-anchor="middle"><tspan x="145">Right</tspan><tspan x="145" dy="14">ventricle</tspan></text>}
     {shown('lv') && <text x="222" y="153" text-anchor="middle"><tspan x="222">Left</tspan><tspan x="222" dy="14">ventricle</tspan></text>}
 
-    {shown('cava') && <>
-      {flow('M141 228H30V114H119', 'jp-biology-blue', 1, 'cava')}
-      <text x="8" y="89">Venae</text><text x="8" y="103">cavae</text>
+    {shown('svc') && <>
+      {flow('M17 55H48V92Q49 108 120 108', 'jp-biology-blue', 1, 'svc')}
+      <text x="9" y="19">Superior<tspan x="9" dy="14">vena cava</tspan></text>
+    </>}
+    {shown('ivc') && <>
+      {flow('M141 228H25V122H119', 'jp-biology-blue', 1, 'ivc')}
+      <text x="6" y="152">Inferior<tspan x="6" dy="14">vena cava</tspan></text>
     </>}
     {shown('tri') && <>
-      {flow('M142 110V141', 'jp-biology-blue', 1, 'tri')}
+      {flow('M142 110V141', 'jp-biology-blue', 2, 'tri')}
       <path class="jp-biology-leader" d="M91 128H129l13 6 13-6" />
       <text x="7" y="131">Tricuspid valve</text>
     </>}
-    {shown('pa') && flow('M141 173Q78 178 78 145V36H156', 'jp-biology-blue', 1, 'pa')}
+    {shown('pa') && flow('M141 173Q78 178 78 145V39H156', 'jp-biology-blue', 2, 'pa')}
     {shown('pv') && <>
       <path class="jp-biology-leader" d="M109 163l-4 9 6 7M108 173L96 193H61" />
       <text x="12" y="208">Pulmonary valve</text>
     </>}
-    {shown('pa') && <text x="20" y="60">Pulmonary<tspan x="20" dy="14">artery</tspan></text>}
+    {shown('pa') && <text x="77" y="19">Pulmonary<tspan x="77" dy="14">artery</tspan></text>}
     {shown('lungs') && <g>
       <path class="jp-biology-anatomy" d="M187 28Q176 15 164 33Q149 55 164 57Q177 56 187 48ZM193 28Q204 15 216 33Q231 55 216 57Q203 56 193 48Z" />
       <text x="190" y="16" text-anchor="middle">Lungs</text>
     </g>}
     {shown('veins') && <>
-      {flow('M221 36H285V113H245', 'jp-biology-red', 2, 'veins')}
+      {flow('M221 36H285V113H245', 'jp-biology-red', 3, 'veins')}
       <text x="294" y="57">Pulmonary<tspan x="294" dy="14">veins</tspan></text>
     </>}
     {shown('mit') && <>
-      {flow('M223 110V141', 'jp-biology-red', 2, 'mit')}
+      {flow('M223 110V141', 'jp-biology-red', 3, 'mit')}
       <path class="jp-biology-leader" d="M211 129l12 6 13-6h37" />
       <text x="277" y="132">Mitral valve</text>
     </>}
     {shown('aorta') && <>
-      {flow('M221 177Q260 177 272 158H346V228H239', 'jp-biology-red', 2, 'aorta')}
+      {flow('M221 177Q260 177 272 158H346V228H239', 'jp-biology-red', 3, 'aorta')}
       <text x="324" y="150">Aorta</text>
     </>}
     {shown('av') && <>

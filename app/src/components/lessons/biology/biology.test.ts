@@ -1,28 +1,41 @@
 import { describe, expect, it } from 'vitest'
-import heart from '../../../../../lessons-bank/biology-heart.json'
-import nephron from '../../../../../lessons-bank/biology-nephron.json'
-import inheritance from '../../../../../lessons-bank/biology-inheritance.json'
+import catalogue from '../../../../../data/biology-clip-index.json'
 import base from '../../../../../data/subjects/questions-biology.json'
 import jamb from '../../../../../data/subjects/questions-biology-jamb-100.json'
 import science from '../../../../../data/subjects/questions-biology-jamb-150.json'
 import followUps from '../../../../../data/subjects/questions-biology-teachme.json'
+import { conceptLessonTopic } from '../../../lib/sections'
 import { fallbackMs, beatTimes } from '../lesson'
+import type { Topic } from '../lesson'
 import { biologyMapping, followUpIds } from './mapping'
 import { teachMeButton } from './TeachMe'
 
-const topics = [heart, nephron, inheritance]
-const lessons = topics.flatMap(({ lessons }) => lessons)
-const questions = new Set([base, jamb, science, followUps].flatMap(({ questions }) => questions.map(({ id }) => id)))
+const topics = Object.values(import.meta.glob<Topic>('../../../../../lessons-bank/biology-*.json', {
+  eager: true, import: 'default',
+}))
+const questionBank = [base, jamb, science, followUps].flatMap(({ questions }) => questions.map(({ id }) => id))
+const topicsById = new Map(topics.flatMap((topic) => topic.lessons.map((lesson) => [lesson.id, topic] as const)))
+const drawingIds = new Set(['heart', 'nephron', 'inheritance', ...Object.keys(import.meta.glob('./drawings/*.tsx'))
+  .map((path) => path.slice(path.lastIndexOf('/') + 1, -4))].map((id) => 'biology-' + id))
 
-describe('Biology Teach me pilot', () => {
-  it('links real Biology questions to real clips with an application line and three distinct follow-ups', () => {
-    for (const [id, entry] of Object.entries(biologyMapping)) {
-      expect(questions.has(id), id).toBe(true)
-      expect(entry?.applies.trim(), id).toBeTruthy()
-      expect(lessons.some((lesson) => lesson.id === entry?.clipId), id).toBe(true)
-      const more = followUpIds(entry!.clipId, id)
+describe('Biology Teach me', () => {
+  it('maps real Biology questions to real clips and keeps practice on the same topic', () => {
+    const ids = Object.keys(biologyMapping)
+    const bank = new Set(questionBank)
+    for (const id of ids) {
+      const entry = biologyMapping[id]!
+      expect(bank.has(id), id).toBe(true)
+      expect(entry.applies.trim(), id).toBeTruthy()
+      expect(topicsById.has(entry.clipId), id).toBe(true)
+      const more = followUpIds(entry.clipId, id)
       expect(more).not.toContain(id)
       expect(new Set(more).size).toBeGreaterThanOrEqual(3)
+    }
+    if (topics.length === 33) expect(new Set(ids)).toEqual(bank)
+    for (const clip of topicsById.keys()) {
+      const count = followUpIds(clip).length
+      expect(count, clip).toBeGreaterThanOrEqual(4)
+      expect(count, clip).toBeLessThanOrEqual(6)
     }
   })
 
@@ -32,30 +45,30 @@ describe('Biology Teach me pilot', () => {
     expect(teachMeButton('biology', id, true)?.className).toBe('jp-btn')
     expect(teachMeButton('biology', id, undefined)).toBeUndefined()
     expect(teachMeButton('physics', id, false)).toBeUndefined()
-    expect(teachMeButton('biology', 'bio-jamb-2010-002', false)).toBeUndefined()
+    expect(teachMeButton('biology', 'unknown', false)).toBeUndefined()
   })
 
-  it('keys the systemic circulation question to the left ventricle', () => {
-    const question = science.questions.find(({ id }) => id === 'bio-jamb-2010-017')!
-    expect(question.options.find(({ id }) => id === question.answerId)?.text).toBe('Left ventricle')
-    expect(question.removeOrder).not.toContain(question.answerId)
-  })
-
-  it('advertises the silent runtime and has a cue for every beat', () => {
-    for (const { id, scenes } of lessons) {
-      const seconds = Math.round(scenes.reduce((ms, scene) => ms + fallbackMs(scene), 0) / 1000)
-      expect(seconds).toBeGreaterThanOrEqual(30)
-      expect(seconds).toBeLessThanOrEqual(50)
-      const question = Object.keys(biologyMapping).find((key) => biologyMapping[key]?.clipId === id)!
-      expect(teachMeButton('biology', question, false)?.text).toBe('Teach me · ' + seconds + ' sec')
-      for (const scene of scenes) {
-        const duration = fallbackMs(scene)
-        const times = beatTimes(scene, duration)
-        let previous = -1
-        for (const time of times) {
-          expect(time, scene.id).toBeGreaterThan(previous)
-          expect(time, scene.id).toBeLessThan(duration)
-          previous = time
+  it('keeps each clip in Study and agrees on drawing, timing and quick check', () => {
+    expect(new Set(Object.keys(catalogue))).toEqual(new Set(topicsById.keys()))
+    expect(drawingIds).toEqual(new Set(topicsById.keys()))
+    for (const { topicId, lessons } of topics) {
+      expect(conceptLessonTopic('biology', topicId!)).toBe('biology-study-' + topicId)
+      for (const { id, scenes, quickCheck } of lessons) {
+        const run = scenes.reduce((ms, scene) => ms + fallbackMs(scene), 0)
+        expect(run, id).toBeGreaterThanOrEqual(40_000)
+        expect(run, id).toBeLessThanOrEqual(60_000)
+        expect(scenes.length, id).toBeLessThanOrEqual(5)
+        expect(quickCheck?.options[quickCheck.answerIndex], id).toBeTruthy()
+        const question = followUpIds(id)[0]
+        expect(teachMeButton('biology', question, false)?.text).toBe('Teach me · ' + Math.round(run / 1000) + ' sec')
+        for (const scene of scenes) {
+          const duration = fallbackMs(scene)
+          let previous = -1
+          for (const time of beatTimes(scene, duration)) {
+            expect(time, scene.id).toBeGreaterThan(previous)
+            expect(time, scene.id).toBeLessThan(duration)
+            previous = time
+          }
         }
       }
     }

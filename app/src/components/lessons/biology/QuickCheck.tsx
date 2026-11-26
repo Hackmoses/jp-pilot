@@ -14,8 +14,8 @@ export function QuickCheck({ check, clipId, currentId }: {
     setLaunch('loading')
     try {
       await loadSubject('biology')
-      const ids = followUpIds(clipId, currentId).filter((id) => getQuestion(id)?.subject === 'biology').slice(0, 3)
-      if (ids.length === 3) {
+      const ids = followUpIds(clipId, currentId).filter((id) => getQuestion(id)?.subject === 'biology')
+      if (ids.length > 0) {
         startAttempt('practice', ['biology'], ids.map((id) => ({ id })), 0)
         window.location.hash = '#/practice/run?run=' + getAttempt('practice')!.id
         return
@@ -37,7 +37,7 @@ export function QuickCheck({ check, clipId, currentId }: {
     <p class="jp-biology-feedback" role="status">{picked !== undefined &&
       (picked === check.answerIndex ? 'Correct. ' : 'Try again. ') + check.feedback}</p>
     <button type="button" class="jp-btn jp-btn--primary" disabled={launch === 'loading'}
-      onClick={() => void practise()}>{launch === 'loading' ? 'Loading practice…' : 'Practise 3 more on this topic'}</button>
+      onClick={() => void practise()}>{launch === 'loading' ? 'Loading practice…' : 'Practise more on this topic'}</button>
     {launch === 'failed' && <p role="status">Could not load practice. Tap to try again.</p>}
   </section>
 }

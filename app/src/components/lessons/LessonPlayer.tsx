@@ -1,3 +1,4 @@
+import type { ComponentType } from 'preact'
 import { useEffect, useRef, useState } from 'preact/hooks'
 import { lazyView } from '../../lib/lazyView'
 import { interpolate } from '../try-it/motion'
@@ -10,6 +11,11 @@ import './lessons.css'
 
 const Waves = lazyView(() => import('./waves').then((module) => module.default))
 const Mole = lazyView(() => import('./mole').then((module) => module.default))
+const processFiles = import.meta.glob<{ default: ComponentType<import('./lesson').DrawingProps> }>('./biology/drawings/*.tsx')
+const processDrawings = Object.fromEntries(Object.entries(processFiles).map(([path, load]) => [
+  'biology-' + path.slice(path.lastIndexOf('/') + 1, -4),
+  lazyView(() => load().then((module) => module.default)),
+]))
 const biology: Record<string, typeof Waves> = {
   'biology-heart': lazyView(() => import('./biology/heart').then((module) => module.default)),
   'biology-nephron': lazyView(() => import('./biology/nephron').then((module) => module.default)),
@@ -41,7 +47,7 @@ export function LessonPlayer({ lesson, file, clips, pronunciations, onComplete, 
   lesson: Lesson; file: string; clips?: Record<string, Clip>; pronunciations?: WordBank; onComplete: () => void; currentId?: string
 }) {
   const unit = file === 'english-foundations' ? foundations[Number(lesson.id.split('-')[2]) - 1] : undefined
-  const { View, failed } = (unit ?? biology[file] ?? (file === 'physics-12-waves' ? Waves : Mole)).useView()
+  const { View, failed } = (unit ?? biology[lesson.id] ?? processDrawings[lesson.id] ?? (file === 'physics-12-waves' ? Waves : Mole)).useView()
   const scenes = lessonScenes(lesson)
   const [index, setIndex] = useState(0)
   const [replay, setReplay] = useState(0)

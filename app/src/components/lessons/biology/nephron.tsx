@@ -9,7 +9,7 @@ const stages = [
 ]
 const targets: Record<string, Point> = {
   kidney: [73, 124], cortex: [189, 85], zoom: [106, 111], in: [173, 51], tuft: [189, 77],
-  filter: [207, 94], capsule: [205, 112], prox: [246, 95], reabs: [238, 108], blood: [220, 124],
+  filter: [207, 94], capsule: [205, 112], prox: [246, 95], reabs: [243, 117], blood: [220, 124],
   down: [242, 163], loop: [264, 211], duct: [329, 145], out: [329, 230], ureter: [113, 177],
 }
 const organ = 'M92 68C55 67 31 104 40 145C49 190 104 190 111 160Q114 147 96 139Q78 126 98 113Q122 97 112 80Q104 68 92 68Z'
@@ -49,7 +49,7 @@ export default function Nephron(props: DrawingProps) {
       {flow('M216 107Q224 95 231 105T243 100T254 98','jp-biology-blue','prox',2)}
       <text x="261" y="88">Proximal<tspan x="261" dy="14">tubule</tspan></text>
     </>}
-    {shown('reabs') && <>
+    {shown('reabs') && shown('prox') && <>
       <path class="jp-biology-tuft" d="M223 48Q231 52 224 78L212 120Q208 144 213 178" />
       {flow('M244 107L218 116','jp-biology-good','reabs',2)}
       <text x="159" y="164">Glucose</text>
@@ -64,7 +64,7 @@ export default function Nephron(props: DrawingProps) {
       <path class="jp-biology-tubule" d="M273 122Q280 108 291 117T308 113T329 122M329 106V215" />
       {flow('M329 158H307','jp-biology-blue','duct',2)}
       <text x="307" y="146" text-anchor="middle">Water</text>
-      <text x="351" y="192" text-anchor="middle"><tspan x="351">Collecting</tspan><tspan x="351" dy="14">duct</tspan></text>
+      <text x="342" y="200" text-anchor="middle"><tspan x="342">Collecting</tspan><tspan x="342" dy="14">duct</tspan></text>
     </>}
     {shown('out') && <>
       {flow('M329 202V232','jp-biology-waste','out',3)}

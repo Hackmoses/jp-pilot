@@ -9,7 +9,7 @@
         {
           "id": "biology-inheritance-1",
           "show": "",
-          "say": "This cross follows one trait: pea seed colour. Both parent plants are heterozygous and grew from yellow seeds. Each carries one dominant yellow allele and one recessive green allele.",
+          "say": "This cross follows one trait, pea seed colour. Both parents grew from yellow seeds. Each is heterozygous, carrying one dominant yellow allele and one recessive green allele.",
           "visual": "0",
           "beats": [
             {
@@ -18,7 +18,7 @@
               "label": ""
             },
             {
-              "word": "parent",
+              "word": "parents",
               "action": "parents",
               "label": ""
             },
@@ -42,7 +42,7 @@
         {
           "id": "biology-inheritance-2",
           "show": "",
-          "say": "The alleles separate when gametes form. Each parent can pass on either allele. Put one parent's gametes across the top and the other's down the side.",
+          "say": "The two alleles separate when gametes form. Each gamete, or sex cell, gets one allele. Put one parent's gametes across the top and the other's down the side.",
           "visual": "1",
           "beats": [
             {
@@ -56,7 +56,7 @@
               "label": ""
             },
             {
-              "word": "either",
+              "word": "cell",
               "action": "pair",
               "label": ""
             },
@@ -75,7 +75,7 @@
         {
           "id": "biology-inheritance-3",
           "show": "",
-          "say": "Combine one allele from each parent in each box. Three combinations give yellow seeds. Only the pair with two recessive alleles gives green seeds.",
+          "say": "Combine one allele from each parent in each box. Three of the combinations give yellow seeds. Only the pair with two recessive alleles gives green seeds.",
           "visual": "2",
           "beats": [
             {
@@ -112,8 +112,8 @@
         },
         {
           "id": "biology-inheritance-4",
-          "show": "One dominant allele is enough.",
-          "say": "Remember the expected ratio: three yellow to one green. One dominant allele is enough for yellow.",
+          "show": "One dominant allele is enough for yellow.",
+          "say": "The expected ratio is three yellow to one green. One dominant allele is enough for yellow. In ABO blood groups there are three common alleles. A and B are both expressed together in group AB.",
           "visual": "3",
           "beats": [
             {
@@ -130,13 +130,23 @@
               "word": "dominant",
               "action": "pair",
               "label": ""
+            },
+            {
+              "word": "ABO",
+              "action": "abo",
+              "label": ""
+            },
+            {
+              "word": "AB",
+              "action": "ab",
+              "label": ""
             }
           ]
         },
         {
           "id": "biology-inheritance-5",
           "show": "",
-          "say": "JAMB asks which allele is dominant, which genotypes are heterozygous, and the chance of the recessive trait.",
+          "say": "JAMB asks which seed colour is dominant, how often recessive offspring are expected and how many common ABO alleles are in the population.",
           "visual": "4",
           "beats": [
             {
@@ -145,13 +155,13 @@
               "label": ""
             },
             {
-              "word": "heterozygous",
-              "action": "hetero",
+              "word": "recessive",
+              "action": "green",
               "label": ""
             },
             {
-              "word": "chance",
-              "action": "green",
+              "word": "ABO",
+              "action": "abo",
               "label": ""
             }
           ]

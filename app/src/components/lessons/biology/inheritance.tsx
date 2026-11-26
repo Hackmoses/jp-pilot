@@ -5,12 +5,12 @@ const stages = [
   ['outline', 'parents', 'pair', 'yellow', 'green'],
   ['split', 'gametes', 'pair', 'top', 'side'],
   ['grid', 'fill', 'upper', 'lower', 'recessive', 'green'],
-  ['ratio'],
+  ['ratio', 'abo', 'ab'],
 ]
 const targets: Record<string, Point> = {
   outline: [168, 32], parents: [207, 40], pair: [223, 55], yellow: [219, 139], green: [282, 197],
   split: [176, 70], gametes: [150, 86], top: [220, 116], side: [188, 185],
-  grid: [213, 125], fill: [219, 151], upper: [275, 151], lower: [219, 193], recessive: [282, 197], ratio: [179, 226], hetero: [274, 139],
+  grid: [213, 125], fill: [219, 151], upper: [275, 151], lower: [219, 193], recessive: [282, 197], ratio: [179, 226], abo: [91, 184], ab: [120, 211], hetero: [274, 139],
 }
 
 function Pea({ x, y, green = false }: { x: number; y: number; green?: boolean }) {
@@ -66,6 +66,17 @@ export default function Inheritance(props: DrawingProps) {
       {shown('upper') && cell(275, 143, 'Yy')}
       {shown('lower') && cell(219, 185, 'Yy')}
       {shown('recessive') && cell(275, 185, 'yy')}
+      {shown('abo') && <g>
+        <circle class="jp-biology-anatomy" cx="62" cy="169" r="9" />
+        <circle class="jp-biology-anatomy" cx="101" cy="169" r="9" />
+        <circle class="jp-biology-anatomy" cx="141" cy="169" r="9" />
+        <text x="62" y="174">Iᴬ</text><text x="101" y="174">Iᴮ</text><text x="141" y="174">i</text>
+      </g>}
+      {shown('ab') && <g>
+        <Flow d="M65 181L96 198" tone="jp-biology-good" seconds={props.frame.seconds} moving={!reduced && active === 'ab'} />
+        <Flow d="M101 181V197" tone="jp-biology-good" seconds={props.frame.seconds} moving={!reduced && active === 'ab'} />
+        <text x="104" y="214">Group AB</text>
+      </g>}
       {shown('ratio') && <>
         <Pea x={130} y={225} /><Pea x={150} y={225} /><Pea x={170} y={225} />
         <Pea x={247} y={225} green />

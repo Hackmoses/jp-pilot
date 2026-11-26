@@ -16,8 +16,8 @@ export function timeline({ scene, frame }: DrawingProps, sequence: string[][]) {
   }
 }
 
-export function Diagram({ label, children, point }: { label: string; children: ComponentChildren; point?: Point }) {
-  return <svg class="jp-concept-svg jp-biology-svg" viewBox="0 0 380 248" role="img" aria-label={label}>
+export function Diagram({ label, children, point, viewBox = "0 0 380 248" }: { label: string; children: ComponentChildren; point?: Point; viewBox?: string }) {
+  return <svg class="jp-concept-svg jp-biology-svg" viewBox={viewBox} role="img" aria-label={label}>
     {children}
     {point && <WritingHand class="jp-biology-hand" viewBox="0 0 24 24" width="26" height="26"
       style={{ transform: 'translate(' + (point[0] - 1) + 'px, ' + (point[1] - 25) + 'px)' }} />}

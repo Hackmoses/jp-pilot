@@ -1,0 +1,100 @@
+{
+  "subject": "biology",
+  "topicId": "1",
+  "lessons": [
+    {
+      "id": "biology-levels",
+      "title": "Cells, tissues and living organisms",
+      "scenes": [
+        {
+          "id": "biology-levels-1",
+          "show": "",
+          "say": "A cell, here one plant cell, is the smallest living unit and carries out the basic activities of life. Related cells form tissues, such as the epidermis covering the outside of a leaf. Tissues working together form an organ like a leaf, which captures light and exchanges gases. Organs form a system, such as the above-ground shoot system with stems and leaves.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "Related",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "Tissues",
+              "action": "part-0-2",
+              "label": ""
+            },
+            {
+              "word": "Organs",
+              "action": "part-0-3",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-levels-2",
+          "show": "",
+          "say": "An onion bulb is a modified shoot, with storage leaves arranged around a shortened stem.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "An",
+              "action": "part-1-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-levels-3",
+          "show": "",
+          "say": "Irritability means sensitivity and response to a stimulus. A young shoot may grow towards the light.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Irritability",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-levels-4",
+          "show": "",
+          "say": "JAMB often gives the four levels in a mixed order or asks whether an onion bulb counts as an organ. The blue arrows in the upper row follow increasing levels of organisation. At the bottom the arrow traces bending towards light.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "order",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "onion",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "bending",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which is the smallest living unit?",
+        "options": [
+          "Tissue",
+          "Organ",
+          "Cell"
+        ],
+        "answerIndex": 2,
+        "feedback": "A cell is the smallest unit that carries out the functions of life."
+      }
+    }
+  ]
+}
