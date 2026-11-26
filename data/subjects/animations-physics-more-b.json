@@ -1,0 +1,2600 @@
+{
+  "version": 1,
+  "count": 41,
+  "animations": [
+    {
+      "id": "anim-phys-jamb-2008-021",
+      "questionId": "phys-jamb-2008-021",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 300 K, T_{2} = 308 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Add two hundred and seventy-three to each Celsius temperature to get three hundred kelvin and three hundred and eight kelvin."
+        },
+        {
+          "n": 2,
+          "display": "V_{2} = 600 × \\frac{308}{300}",
+          "tag": "apply Charles's law",
+          "title": "Apply Charles's law",
+          "narration": "At constant pressure, volume is proportional to kelvin temperature, so multiply six hundred by three hundred and eight over three hundred."
+        },
+        {
+          "n": 3,
+          "display": "V_{2} = 616 cm^{3}",
+          "tag": "calculate the volume",
+          "title": "Calculate the volume",
+          "narration": "Six hundred divided by three hundred is two, and two times three hundred and eight gives six hundred and sixteen cubic centimetres. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{1} = 600 cm^{3}, T_{1} = 27°C, T_{2} = 35°C",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the initial volume and the two temperatures. Because pressure stays constant, Charles's law links the volume and temperature."
+        },
+        {
+          "n": 2,
+          "display": "27 + 273 = 300 K, 35 + 273 = 308 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Change both temperatures from degrees Celsius to kelvin by adding two hundred and seventy-three, because gas law ratios only work on the absolute kelvin scale."
+        },
+        {
+          "n": 3,
+          "display": "V_{2} = V_{1} × \\frac{T_{2}}{T_{1}}",
+          "tag": "state Charles's law",
+          "title": "State Charles's law",
+          "narration": "At constant pressure, volume divided by kelvin temperature stays constant. Rearrange the relation to solve for the new volume."
+        },
+        {
+          "n": 4,
+          "display": "V_{2} = 600 × \\frac{308}{300} = 2 × 308",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Substitute six hundred cubic centimetres, three hundred and eight kelvin, and three hundred kelvin. Six hundred over three hundred simplifies to two."
+        },
+        {
+          "n": 5,
+          "display": "V_{2} = 616 cm^{3}",
+          "tag": "find the new volume",
+          "title": "Find the new volume",
+          "narration": "Multiply two by three hundred and eight to get six hundred and sixteen cubic centimetres. The air expands slightly as it warms up. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2010-022",
+      "questionId": "phys-jamb-2010-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T = 27 + 273 = 300 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Add two hundred and seventy-three to twenty-seven degrees Celsius to get three hundred kelvin."
+        },
+        {
+          "n": 2,
+          "display": "P = \\frac{1 × 8.3 × 300}{10^{-2}}",
+          "tag": "use the ideal gas law",
+          "title": "Use the ideal gas law",
+          "narration": "Rearrange P V equals n R T for pressure and substitute one mole, eight point three, three hundred kelvin, and ten to the minus two cubic metres."
+        },
+        {
+          "n": 3,
+          "display": "P = 2.49 × 10^{5} N/m²",
+          "tag": "simplify to standard form",
+          "title": "Simplify to standard form",
+          "narration": "Eight point three times three hundred gives two thousand four hundred and ninety, and dividing by ten to the minus two multiplies by one hundred. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "n = 1, V = 10^{-2} m^{3}, T = 27°C",
+          "tag": "list the given values",
+          "title": "List the given values",
+          "narration": "Write down one mole, the volume in cubic metres, and the temperature. The molar gas constant R is eight point three joules per mole kelvin."
+        },
+        {
+          "n": 2,
+          "display": "T = 27 + 273 = 300 K",
+          "tag": "convert temperature to kelvin",
+          "title": "Convert temperature to kelvin",
+          "narration": "Change twenty-seven degrees Celsius to kelvin by adding two hundred and seventy-three, because the gas constant R uses kelvin."
+        },
+        {
+          "n": 3,
+          "display": "PV = nRT ⇒ P = \\frac{nRT}{V}",
+          "tag": "rearrange the ideal gas law",
+          "title": "Rearrange the ideal gas law",
+          "narration": "Use the ideal gas equation because pressure, volume, moles, and temperature appear together. Divide both sides by volume to isolate pressure."
+        },
+        {
+          "n": 4,
+          "display": "P = \\frac{1 × 8.3 × 300}{10^{-2}} = \\frac{2490}{10^{-2}}",
+          "tag": "substitute and multiply",
+          "title": "Substitute and multiply",
+          "narration": "Multiply one by eight point three by three hundred on top to get two thousand four hundred and ninety."
+        },
+        {
+          "n": 5,
+          "display": "P = 2490 × 10^{2} = 2.49 × 10^{5} N/m²",
+          "tag": "write in standard form",
+          "title": "Write in standard form",
+          "narration": "Dividing by ten to the minus two is the same as multiplying by one hundred. Shifting the decimal point gives two point four nine times ten to the five newtons per square metre, option C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2003-014",
+      "questionId": "phys-jamb-2003-014",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "VP = 10 mm Hg, SVP = 17.50 mm Hg",
+          "tag": "identify the pressures",
+          "title": "Identify the pressures",
+          "narration": "Read the actual vapour pressure of ten millimetres of mercury and the saturated vapour pressure of seventeen point five zero."
+        },
+        {
+          "n": 2,
+          "display": "RH = \\frac{10}{17.50} × 100%",
+          "tag": "apply humidity formula",
+          "title": "Apply humidity formula",
+          "narration": "Divide actual vapour pressure by saturated vapour pressure and multiply by one hundred percent."
+        },
+        {
+          "n": 3,
+          "display": "RH = 57.1% ≈ 57%",
+          "tag": "round the result",
+          "title": "Round the result",
+          "narration": "Ten divided by seventeen point five zero times one hundred is fifty-seven point one percent, which rounds to fifty-seven percent. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "VP = 10 mm Hg, SVP = 17.50 mm Hg",
+          "tag": "pick out the pressures",
+          "title": "Pick out the pressures",
+          "narration": "Note both vapour pressures. The twenty degrees Celsius only confirms they are measured at the same temperature and is not needed in the calculation."
+        },
+        {
+          "n": 2,
+          "display": "RH = \\frac{VP}{SVP} × 100%",
+          "tag": "state the humidity formula",
+          "title": "State the humidity formula",
+          "narration": "Relative humidity compares the water vapour actually present in the air with the maximum it can hold at that temperature, expressed as a percentage."
+        },
+        {
+          "n": 3,
+          "display": "RH = \\frac{10}{17.50} × 100% = \\frac{1000}{17.5}%",
+          "tag": "substitute the pressures",
+          "title": "Substitute the pressures",
+          "narration": "Put ten on top and seventeen point five zero below, then multiply by one hundred so the fraction becomes a percentage."
+        },
+        {
+          "n": 4,
+          "display": "RH = 57.1% ≈ 57%",
+          "tag": "divide and round",
+          "title": "Divide and round",
+          "narration": "One thousand divided by seventeen point five gives about fifty-seven point one percent, which matches fifty-seven percent. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2007-040",
+      "questionId": "phys-jamb-2007-040",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "t = 2 × 60 = 120 s",
+          "tag": "convert time to seconds",
+          "title": "Convert time to seconds",
+          "narration": "Change two minutes into one hundred and twenty seconds so the time is in SI units."
+        },
+        {
+          "n": 2,
+          "display": "IVt = 3.5 × 200 × 120 = 84,000 J",
+          "tag": "find electrical heat",
+          "title": "Find electrical heat",
+          "narration": "Multiply current, voltage, and time to get eighty-four thousand joules of heat energy."
+        },
+        {
+          "n": 3,
+          "display": "ΔT = \\frac{84,000}{2 × 4200} = 10°C",
+          "tag": "find temperature rise",
+          "title": "Find temperature rise",
+          "narration": "Divide eighty-four thousand joules by mass times specific heat capacity to get ten degrees Celsius. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 2 kg, I = 3.5 A, V = 200 V, t = 2 min",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the mass of water, the current, the mains voltage, the heating time, and the specific heat capacity of four thousand two hundred joules per kilogram kelvin."
+        },
+        {
+          "n": 2,
+          "display": "t = 2 × 60 = 120 s",
+          "tag": "change minutes to seconds",
+          "title": "Change minutes to seconds",
+          "narration": "Multiply two minutes by sixty to get one hundred and twenty seconds, because electrical energy in joules requires time in seconds."
+        },
+        {
+          "n": 3,
+          "display": "Q = IVt = 3.5 × 200 × 120 = 84,000 J",
+          "tag": "calculate heat supplied",
+          "title": "Calculate heat supplied",
+          "narration": "Multiply current, voltage, and time to find the electrical heat produced by the coil, which warms the water."
+        },
+        {
+          "n": 4,
+          "display": "mcΔT = IVt ⇒ ΔT = \\frac{IVt}{mc}",
+          "tag": "equate heat to temperature rise",
+          "title": "Equate heat to temperature rise",
+          "narration": "Set the heat gained by the water equal to the electrical energy supplied, then divide by mass and specific heat capacity to isolate the temperature rise."
+        },
+        {
+          "n": 5,
+          "display": "ΔT = \\frac{84,000}{2 × 4200} = 10°C",
+          "tag": "divide for the rise",
+          "title": "Divide for the rise",
+          "narration": "Two times four thousand two hundred is eight thousand four hundred. Eighty-four thousand divided by eight thousand four hundred equals ten degrees Celsius. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-021",
+      "questionId": "phys-jamb-2009-021",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E = Pt = 1000 × 300 = 300,000 J",
+          "tag": "find the heat energy",
+          "title": "Find the heat energy",
+          "narration": "Multiply one thousand watts by three hundred seconds to get three hundred thousand joules."
+        },
+        {
+          "n": 2,
+          "display": "ΔT = 100 − 30 = 70°C",
+          "tag": "find temperature rise",
+          "title": "Find temperature rise",
+          "narration": "Subtract thirty degrees Celsius from one hundred degrees Celsius to get a seventy degree rise."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{300,000}{4200 × 70} ≈ 1.02 kg",
+          "tag": "solve for mass",
+          "title": "Solve for mass",
+          "narration": "Divide three hundred thousand by four thousand two hundred times seventy to get one point zero two kilograms. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 1000 W, t = 300 s, c = 4200 J/kg·K",
+          "tag": "note the needed values",
+          "title": "Note the needed values",
+          "narration": "Record the power, heating time, and specific heat capacity. The two hundred and twenty volt rating is extra information we do not need because power in watts is already given."
+        },
+        {
+          "n": 2,
+          "display": "ΔT = 100 − 30 = 70 K",
+          "tag": "find the temperature change",
+          "title": "Find the temperature change",
+          "narration": "Subtract thirty degrees Celsius from one hundred degrees Celsius. A temperature rise of seventy Celsius degrees equals a rise of seventy kelvin."
+        },
+        {
+          "n": 3,
+          "display": "E = Pt = 1000 × 300 = 300,000 J",
+          "tag": "compute energy supplied",
+          "title": "Compute energy supplied",
+          "narration": "Multiply power in watts by time in seconds to find the total electrical energy transferred as heat into the water."
+        },
+        {
+          "n": 4,
+          "display": "mcΔT = Pt ⇒ m = \\frac{Pt}{cΔT}",
+          "tag": "rearrange for mass",
+          "title": "Rearrange for mass",
+          "narration": "Equate the heat gained by the water to the heater energy, then divide by specific heat capacity and temperature rise to isolate mass."
+        },
+        {
+          "n": 5,
+          "display": "m = \\frac{300,000}{294,000} ≈ 1.02 kg",
+          "tag": "divide to find the mass",
+          "title": "Divide to find the mass",
+          "narration": "Four thousand two hundred times seventy is two hundred and ninety-four thousand. Dividing three hundred thousand by two hundred and ninety-four thousand gives about one point zero two kilograms, option C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1995-026",
+      "questionId": "phys-jamb-1995-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ΔT = 100 − 40 = 60°C",
+          "tag": "find total temperature drop",
+          "title": "Find total temperature drop",
+          "narration": "Subtract forty degrees Celsius from one hundred degrees Celsius across the whole bar."
+        },
+        {
+          "n": 2,
+          "display": "drop = \\frac{60}{100} × 60 = 36°C",
+          "tag": "scale to 60 cm",
+          "title": "Scale to 60 cm",
+          "narration": "A well-lagged bar cools steadily along its length, so sixty centimetres gives a thirty-six degree drop."
+        },
+        {
+          "n": 3,
+          "display": "T = 100 − 36 = 64°C",
+          "tag": "subtract from hot end",
+          "title": "Subtract from hot end",
+          "narration": "Subtract thirty-six degrees Celsius from the hotter end at one hundred to get sixty-four degrees Celsius. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L = 100 cm, T_{hot} = 100°C, T_{cold} = 40°C",
+          "tag": "list the bar temperatures",
+          "title": "List the bar temperatures",
+          "narration": "The bar is one hundred centimetres long, kept at one hundred degrees Celsius at one end and forty degrees Celsius at the other."
+        },
+        {
+          "n": 2,
+          "display": "gradient = \\frac{100 − 40}{100} = 0.6°C per cm",
+          "tag": "find temperature gradient",
+          "title": "Find temperature gradient",
+          "narration": "Because the bar is well-lagged, no heat leaks out the sides and temperature drops uniformly at zero point six degrees Celsius per centimetre."
+        },
+        {
+          "n": 3,
+          "display": "drop = 0.6 × 60 = 36°C",
+          "tag": "find the drop at 60 cm",
+          "title": "Find the drop at 60 cm",
+          "narration": "Multiply the gradient by sixty centimetres because the question measures sixty centimetres from the hotter end."
+        },
+        {
+          "n": 4,
+          "display": "T = 100 − 36",
+          "tag": "subtract from the hotter end",
+          "title": "Subtract from the hotter end",
+          "narration": "Start from one hundred degrees Celsius at the hotter end and subtract the thirty-six degree drop as we move toward the cooler end."
+        },
+        {
+          "n": 5,
+          "display": "T = 64°C",
+          "tag": "read the temperature",
+          "title": "Read the temperature",
+          "narration": "The temperature sixty centimetres from the hot end is sixty-four degrees Celsius. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1981-022",
+      "questionId": "phys-jamb-1981-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T = 0.2 s",
+          "tag": "read period from graph",
+          "title": "Read period from graph",
+          "narration": "From the diagram, one full crest and trough ends at zero point two seconds."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{1}{T} = \\frac{1}{0.2}",
+          "tag": "use frequency formula",
+          "title": "Use frequency formula",
+          "narration": "Frequency is the reciprocal of the period, so divide one by zero point two seconds."
+        },
+        {
+          "n": 3,
+          "display": "f = 5 Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "One divided by zero point two gives five hertz. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "T = 0.2 s, A = 0.01 cm",
+          "tag": "read the wave graph",
+          "title": "Read the wave graph",
+          "narration": "Read the horizontal time axis on the diagram. One full cycle, one crest plus one trough, runs from zero to zero point two seconds, giving period T equals zero point two seconds. The zero point zero one centimetre amplitude marked on the vertical axis is extra information not needed for frequency."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{1}{T}",
+          "tag": "relate frequency and period",
+          "title": "Relate frequency and period",
+          "narration": "Frequency is the number of complete waves in one second, which is the reciprocal of the time for one wave."
+        },
+        {
+          "n": 3,
+          "display": "f = \\frac{1}{0.2} = \\frac{10}{2}",
+          "tag": "substitute the period",
+          "title": "Substitute the period",
+          "narration": "Put zero point two seconds into the denominator. Multiplying top and bottom by ten turns one over zero point two into ten over two."
+        },
+        {
+          "n": 4,
+          "display": "f = 5 Hz",
+          "tag": "calculate the frequency",
+          "title": "Calculate the frequency",
+          "narration": "Ten divided by two equals five cycles per second, or five hertz. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-026",
+      "questionId": "phys-jamb-2008-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = A sin(ωt − \\frac{2π}{λ}x)",
+          "tag": "compare wave equation",
+          "title": "Compare wave equation",
+          "narration": "Match the given equation against the standard progressive wave equation."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{2π}{λ} = 0.4",
+          "tag": "match the x coefficient",
+          "title": "Match the x coefficient",
+          "narration": "The number multiplying x is zero point four, so set two pi over wavelength equal to zero point four."
+        },
+        {
+          "n": 3,
+          "display": "λ = \\frac{2 × 3.142}{0.4} ≈ 15.7 m",
+          "tag": "solve for wavelength",
+          "title": "Solve for wavelength",
+          "narration": "Divide two pi by zero point four to get fifteen point seven metres. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "y = 5 sin(2000πt − 0.4x)",
+          "tag": "inspect the wave equation",
+          "title": "Inspect the wave equation",
+          "narration": "Look at the term multiplying x inside the bracket, which is zero point four. The amplitude five and the two thousand pi term in front of t are extra information not needed to find the wavelength."
+        },
+        {
+          "n": 2,
+          "display": "y = A sin(ωt − \\frac{2π}{λ}x)",
+          "tag": "recall standard wave form",
+          "title": "Recall standard wave form",
+          "narration": "In the standard progressive wave formula, the coefficient of x equals two pi divided by the wavelength because a shift of one wavelength changes the angle by two pi radians."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2π}{λ} = 0.4",
+          "tag": "equate x coefficients",
+          "title": "Equate x coefficients",
+          "narration": "Match the x coefficients in both equations by setting two pi over wavelength equal to zero point four."
+        },
+        {
+          "n": 4,
+          "display": "λ = \\frac{2π}{0.4} = \\frac{6.284}{0.4}",
+          "tag": "rearrange for wavelength",
+          "title": "Rearrange for wavelength",
+          "narration": "Swap wavelength and zero point four, then use pi equals three point one four two so two pi is six point two eight four."
+        },
+        {
+          "n": 5,
+          "display": "λ ≈ 15.7 m",
+          "tag": "divide for wavelength",
+          "title": "Divide for wavelength",
+          "narration": "Six point two eight four divided by zero point four is fifteen point seven one, which matches fifteen point seven metres. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1994-029",
+      "questionId": "phys-jamb-1994-029",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "d = \\frac{vt}{2}",
+          "tag": "use the echo formula",
+          "title": "Use the echo formula",
+          "narration": "Sound goes down to the seabed and back again, so divide speed times time by two."
+        },
+        {
+          "n": 2,
+          "display": "d = \\frac{1500 × 4}{2}",
+          "tag": "substitute speed and time",
+          "title": "Substitute speed and time",
+          "narration": "Multiply one thousand five hundred metres per second by four seconds and divide by two."
+        },
+        {
+          "n": 3,
+          "display": "d = 3000 m",
+          "tag": "find the sea depth",
+          "title": "Find the sea depth",
+          "narration": "Six thousand divided by two gives three thousand metres. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "v = 1500 m/s, t = 4 s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the speed of sound in seawater and the four seconds taken for the echo to return."
+        },
+        {
+          "n": 2,
+          "display": "2d = vt ⇒ d = \\frac{vt}{2}",
+          "tag": "account for the round trip",
+          "title": "Account for the round trip",
+          "narration": "An echo travels down to the bottom of the sea and back up to the source, covering twice the sea depth. Divide the round-trip distance by two to find the depth."
+        },
+        {
+          "n": 3,
+          "display": "d = \\frac{1500 × 4}{2} = \\frac{6000}{2}",
+          "tag": "substitute and multiply",
+          "title": "Substitute and multiply",
+          "narration": "Multiply one thousand five hundred metres per second by four seconds to get six thousand metres for the total path there and back."
+        },
+        {
+          "n": 4,
+          "display": "d = 3000 m",
+          "tag": "halve for the depth",
+          "title": "Halve for the depth",
+          "narration": "Half of six thousand metres is three thousand metres. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1994-031",
+      "questionId": "phys-jamb-1994-031",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "L = 45 cm = 0.45 m",
+          "tag": "convert length to metres",
+          "title": "Convert length to metres",
+          "narration": "Divide forty-five centimetres by one hundred to get zero point four five metres."
+        },
+        {
+          "n": 2,
+          "display": "λ = 4L = 4 × 0.45 = 1.80 m",
+          "tag": "find fundamental wavelength",
+          "title": "Find fundamental wavelength",
+          "narration": "For a closed pipe, the fundamental wavelength is four times the pipe length."
+        },
+        {
+          "n": 3,
+          "display": "f_{0} = \\frac{360}{1.80} = 200.0 Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "Divide three hundred and sixty metres per second by one point eight zero metres to get two hundred point zero hertz. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L = 45 cm, v = 360 m/s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the pipe length, the speed of sound in air, and that the pipe is closed at one end."
+        },
+        {
+          "n": 2,
+          "display": "L = \\frac{45}{100} = 0.45 m",
+          "tag": "change centimetres to metres",
+          "title": "Change centimetres to metres",
+          "narration": "Convert forty-five centimetres to metres because the sound velocity is in metres per second and formulas need matching SI units."
+        },
+        {
+          "n": 3,
+          "display": "λ = 4L = 4 × 0.45 = 1.80 m",
+          "tag": "find closed-pipe wavelength",
+          "title": "Find closed-pipe wavelength",
+          "narration": "In the fundamental note of a closed pipe, one quarter of a wave fits between the closed node and open antinode, so one full wavelength is four times the pipe length."
+        },
+        {
+          "n": 4,
+          "display": "f_{0} = \\frac{v}{λ} = \\frac{360}{1.80}",
+          "tag": "apply wave speed formula",
+          "title": "Apply wave speed formula",
+          "narration": "Frequency equals wave speed divided by wavelength. Substitute three hundred and sixty metres per second and one point eight zero metres."
+        },
+        {
+          "n": 5,
+          "display": "f_{0} = 200.0 Hz",
+          "tag": "calculate frequency",
+          "title": "Calculate frequency",
+          "narration": "Three hundred and sixty divided by one point eight zero equals two hundred point zero hertz. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1994-032",
+      "questionId": "phys-jamb-1994-032",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f ∝ \\frac{\\sqrt{T}}{L}",
+          "tag": "use string proportionality",
+          "title": "Use string proportionality",
+          "narration": "For a stretched string, frequency varies directly with the square root of tension and inversely with length."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{f_{2}}{f_{1}} = \\frac{\\sqrt{4}}{2} = \\frac{2}{2} = 1",
+          "tag": "find the scale factor",
+          "title": "Find the scale factor",
+          "narration": "Four times tension gives a factor of root four, which is two, while doubling length divides by two."
+        },
+        {
+          "n": 3,
+          "display": "f_{2} = 1 × 400 = 400 Hz",
+          "tag": "find the new frequency",
+          "title": "Find the new frequency",
+          "narration": "The two changes cancel out, so the frequency stays four hundred hertz. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f_{1} = 400 Hz, L_{2} = 2L_{1}, T_{2} = 4T_{1}",
+          "tag": "list what changes",
+          "title": "List what changes",
+          "narration": "Start with the original frequency of four hundred hertz, then note that length doubles while tension becomes four times as large."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{1}{2L}\\sqrt{\\frac{T}{μ}}",
+          "tag": "state the string formula",
+          "title": "State the string formula",
+          "narration": "The fundamental frequency of a stretched string depends on length, tension, and the mass per unit length of the string."
+        },
+        {
+          "n": 3,
+          "display": "f ∝ \\frac{\\sqrt{T}}{L}",
+          "tag": "track changing quantities",
+          "title": "Track changing quantities",
+          "narration": "Because it is the same string, its mass per unit length stays constant, so we only compare the square root of tension over length."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{f_{2}}{f_{1}} = \\frac{\\sqrt{4}}{2} = \\frac{2}{2} = 1",
+          "tag": "find the net factor",
+          "title": "Find the net factor",
+          "narration": "The square root of four multiplies frequency by two, while doubling length divides it by two, leaving an overall factor of one."
+        },
+        {
+          "n": 5,
+          "display": "f_{2} = 1 × 400 = 400 Hz",
+          "tag": "find the new frequency",
+          "title": "Find the new frequency",
+          "narration": "Multiplying four hundred hertz by one leaves the note at four hundred hertz. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2011-026",
+      "questionId": "phys-jamb-2011-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{f_{2}}{f_{1}} = \\sqrt{\\frac{T_{2}}{T_{1}}}",
+          "tag": "relate frequency and force",
+          "title": "Relate frequency and force",
+          "narration": "For a fixed length of wire, frequency is proportional to the square root of the stretching force."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{f_{2}}{255} = \\sqrt{\\frac{324}{225}} = \\frac{18}{15} = 1.2",
+          "tag": "take the square root",
+          "title": "Take the square root",
+          "narration": "The square roots of three hundred and twenty-four and two hundred and twenty-five are eighteen and fifteen, giving one point two."
+        },
+        {
+          "n": 3,
+          "display": "f_{2} = 255 × 1.2 = 306 Hz",
+          "tag": "find the new frequency",
+          "title": "Find the new frequency",
+          "narration": "Multiply two hundred and fifty-five by one point two to get three hundred and six hertz. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f_{1} = 255 Hz, T_{1} = 225 N, T_{2} = 324 N",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the original frequency and the two stretching forces applied to the same wire."
+        },
+        {
+          "n": 2,
+          "display": "f ∝ \\sqrt{T} ⇒ \\frac{f_{2}}{f_{1}} = \\sqrt{\\frac{T_{2}}{T_{1}}}",
+          "tag": "use tension proportionality",
+          "title": "Use tension proportionality",
+          "narration": "Because the wire length and linear density stay fixed, frequency grows with the square root of the stretching force."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{f_{2}}{255} = \\sqrt{\\frac{324}{225}} = \\frac{18}{15}",
+          "tag": "substitute and take roots",
+          "title": "Substitute and take roots",
+          "narration": "Put three hundred and twenty-four over two hundred and twenty-five inside the root. Eighteen squared is three hundred and twenty-four and fifteen squared is two hundred and twenty-five."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{18}{15} = \\frac{6}{5} = 1.2",
+          "tag": "simplify the ratio",
+          "title": "Simplify the ratio",
+          "narration": "Divide eighteen and fifteen by three to get six fifths, which equals one point two."
+        },
+        {
+          "n": 5,
+          "display": "f_{2} = 255 × 1.2 = 306 Hz",
+          "tag": "find the new frequency",
+          "title": "Find the new frequency",
+          "narration": "Multiply two hundred and fifty-five hertz by one point two to get three hundred and six hertz. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1990-024",
+      "questionId": "phys-jamb-1990-024",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = \\frac{v}{u} = \\frac{40}{10} = 4",
+          "tag": "find the magnification",
+          "title": "Find the magnification",
+          "narration": "Divide the image distance of forty centimetres by the object distance of ten centimetres to get four."
+        },
+        {
+          "n": 2,
+          "display": "h_{i} = m × h_{o} = 4 × 3",
+          "tag": "multiply by object height",
+          "title": "Multiply by object height",
+          "narration": "Multiply the magnification of four by the object height of three centimetres."
+        },
+        {
+          "n": 3,
+          "display": "h_{i} = 12.00 cm",
+          "tag": "read the image height",
+          "title": "Read the image height",
+          "narration": "Four times three gives twelve point zero zero centimetres. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "h_{o} = 3 cm, u = 10 cm, v = 40 cm",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the object height, how far the object is from the mirror, and how far the image forms."
+        },
+        {
+          "n": 2,
+          "display": "m = \\frac{v}{u} = \\frac{40}{10} = 4",
+          "tag": "find linear magnification",
+          "title": "Find linear magnification",
+          "narration": "Magnification equals image distance divided by object distance. Dividing forty by ten shows the image is four times as tall as the object."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{h_{i}}{h_{o}} ⇒ h_{i} = m × h_{o}",
+          "tag": "link magnification to height",
+          "title": "Link magnification to height",
+          "narration": "Because magnification also equals image height over object height, multiply magnification by object height to find image height."
+        },
+        {
+          "n": 4,
+          "display": "h_{i} = 4 × 3 = 12.00 cm",
+          "tag": "calculate image height",
+          "title": "Calculate image height",
+          "narration": "Multiply four by three centimetres to get twelve point zero zero centimetres. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1992-026",
+      "questionId": "phys-jamb-1992-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f = \\frac{36}{2} = 18 cm",
+          "tag": "find the focal length",
+          "title": "Find the focal length",
+          "narration": "Halve the thirty-six centimetre radius of curvature to get an eighteen centimetre focal length."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{u} + \\frac{1}{3u} = \\frac{1}{18} ⇒ \\frac{4}{3u} = \\frac{1}{18}",
+          "tag": "apply the mirror formula",
+          "title": "Apply the mirror formula",
+          "narration": "A real image three times as large means v equals three u, so combine the left side to four over three u."
+        },
+        {
+          "n": 3,
+          "display": "3u = 72 ⇒ u = 24 cm",
+          "tag": "solve for object distance",
+          "title": "Solve for object distance",
+          "narration": "Cross-multiply to get three u equals seventy-two, then divide by three to get twenty-four centimetres. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "r = 36 cm, m = 3 (real)",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the mirror's radius of curvature is thirty-six centimetres and the real image is three times the object's size."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{r}{2} = \\frac{36}{2} = 18 cm",
+          "tag": "find the focal length",
+          "title": "Find the focal length",
+          "narration": "The focal length of a concave mirror is half its radius of curvature, which gives eighteen centimetres, positive for a converging mirror."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{v}{u} = 3 ⇒ v = 3u",
+          "tag": "express v using u",
+          "title": "Express v using u",
+          "narration": "Because the image is real, image distance is positive and equals three times the object distance."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{u} + \\frac{1}{3u} = \\frac{1}{18} ⇒ \\frac{4}{3u} = \\frac{1}{18}",
+          "tag": "substitute in mirror formula",
+          "title": "Substitute in mirror formula",
+          "narration": "Put v equals three u into the mirror equation and add the fractions using common denominator three u."
+        },
+        {
+          "n": 5,
+          "display": "3u = 4 × 18 = 72 ⇒ u = 24 cm",
+          "tag": "solve for object distance",
+          "title": "Solve for object distance",
+          "narration": "Cross-multiply to get three u equals seventy-two, then divide by three to get twenty-four centimetres. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1987-034",
+      "questionId": "phys-jamb-1987-034",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{1}{v} = \\frac{1}{20.0} − \\frac{1}{60.0} = \\frac{2}{60.0}",
+          "tag": "use the lens formula",
+          "title": "Use the lens formula",
+          "narration": "Subtract one over sixty from one over twenty to find one over the image distance."
+        },
+        {
+          "n": 2,
+          "display": "v = 30.0 cm, m = \\frac{30.0}{60.0} = 0.5",
+          "tag": "find image distance",
+          "title": "Find image distance",
+          "narration": "Inverting gives thirty point zero centimetres, so the magnification is zero point five."
+        },
+        {
+          "n": 3,
+          "display": "h_{i} = 0.5 × 3.0 = 1.5 cm",
+          "tag": "find the image size",
+          "title": "Find the image size",
+          "narration": "Multiply zero point five by the three point zero centimetre object height to get one point five centimetres. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "h_{o} = 3.0 cm, u = 60.0 cm, f = 20.0 cm",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the object height, object distance, and focal length of the converging lens."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{v} = \\frac{1}{f} − \\frac{1}{u} = \\frac{1}{20.0} − \\frac{1}{60.0}",
+          "tag": "rearrange the lens formula",
+          "title": "Rearrange the lens formula",
+          "narration": "Start from one over u plus one over v equals one over f, and move one over u to the right to solve for image distance."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{v} = \\frac{3 − 1}{60.0} = \\frac{1}{30.0} ⇒ v = 30.0 cm",
+          "tag": "find image distance",
+          "title": "Find image distance",
+          "narration": "Use common denominator sixty to subtract, giving one over thirty, so the real image forms thirty point zero centimetres from the lens."
+        },
+        {
+          "n": 4,
+          "display": "m = \\frac{v}{u} = \\frac{30.0}{60.0} = 0.5",
+          "tag": "calculate magnification",
+          "title": "Calculate magnification",
+          "narration": "Divide image distance by object distance. Because sixty is beyond twice the focal length, the image is smaller, with magnification zero point five."
+        },
+        {
+          "n": 5,
+          "display": "h_{i} = 0.5 × 3.0 = 1.5 cm",
+          "tag": "find the image height",
+          "title": "Find the image height",
+          "narration": "Multiply magnification zero point five by three point zero centimetres to get an image size of one point five centimetres. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2007-001",
+      "questionId": "phys-jamb-2007-001",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v = \\frac{3.0 × 10^{8}}{1.50} = 2.0 × 10^{8} m/s",
+          "tag": "find light speed in glass",
+          "title": "Find light speed in glass",
+          "narration": "Divide the speed of light in vacuum by the refractive index one point five zero."
+        },
+        {
+          "n": 2,
+          "display": "d = 0.9 cm = 9 × 10^{-3} m",
+          "tag": "convert thickness to metres",
+          "title": "Convert thickness to metres",
+          "narration": "Change zero point nine centimetres into nine times ten to the minus three metres."
+        },
+        {
+          "n": 3,
+          "display": "t = \\frac{9 × 10^{-3}}{2.0 × 10^{8}} = 4.5 × 10^{-11} s",
+          "tag": "calculate transit time",
+          "title": "Calculate transit time",
+          "narration": "Divide the thickness in metres by the speed in glass to get four point five times ten to the minus eleven seconds. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "d = 0.9 cm, n = 1.50, c = 3.0 × 10^{8} m/s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the plate thickness, the refractive index of the glass, and the speed of light in a vacuum."
+        },
+        {
+          "n": 2,
+          "display": "v = \\frac{c}{n} = \\frac{3.0 × 10^{8}}{1.50} = 2.0 × 10^{8} m/s",
+          "tag": "find speed in glass",
+          "title": "Find speed in glass",
+          "narration": "Light slows down inside glass by a factor equal to the refractive index, so divide three point zero times ten to the eight by one point five zero."
+        },
+        {
+          "n": 3,
+          "display": "d = 0.9 × 10^{-2} m = 9 × 10^{-3} m",
+          "tag": "change centimetres to metres",
+          "title": "Change centimetres to metres",
+          "narration": "Convert zero point nine centimetres to metres so the thickness matches the metres per second unit of speed."
+        },
+        {
+          "n": 4,
+          "display": "t = \\frac{d}{v} = \\frac{9 × 10^{-3}}{2.0 × 10^{8}}",
+          "tag": "divide distance by speed",
+          "title": "Divide distance by speed",
+          "narration": "Time equals distance divided by speed. Put the plate thickness over the speed of light inside glass."
+        },
+        {
+          "n": 5,
+          "display": "t = 4.5 × 10^{-11} s",
+          "tag": "simplify powers of ten",
+          "title": "Simplify powers of ten",
+          "narration": "Nine divided by two gives four point five, and minus three minus eight gives exponent minus eleven seconds. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2001-025",
+      "questionId": "phys-jamb-2001-025",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{1}{C_{eq}} = \\frac{1}{2} + \\frac{1}{6} + \\frac{1}{3} = 1 ⇒ C_{eq} = 1 μF",
+          "tag": "find series capacitance",
+          "title": "Find series capacitance",
+          "narration": "Add the reciprocals of two, six, and three microfarads to get equivalent capacitance one microfarad."
+        },
+        {
+          "n": 2,
+          "display": "Q = C_{eq}V = 1 × 12 = 12 μC",
+          "tag": "find the shared charge",
+          "title": "Find the shared charge",
+          "narration": "Series capacitors share the same charge, so multiply one microfarad by twelve volts to get twelve microcoulombs."
+        },
+        {
+          "n": 3,
+          "display": "V_{1} = 6 V, V_{2} = 2 V, V_{3} = 4 V",
+          "tag": "find each voltage",
+          "title": "Find each voltage",
+          "narration": "Divide twelve microcoulombs by two, six, and three microfarads to get six, two, and four volts. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V = 12 V, C_{1} = 2 μF, C_{2} = 6 μF, C_{3} = 3 μF",
+          "tag": "read the circuit diagram",
+          "title": "Read the circuit diagram",
+          "narration": "From the diagram, a twelve volt battery drives a single series branch containing C one equal to two microfarads, C two equal to six microfarads, and C three equal to three microfarads."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{C_{eq}} = \\frac{1}{2} + \\frac{1}{6} + \\frac{1}{3} = \\frac{6}{6} ⇒ C_{eq} = 1 μF",
+          "tag": "find series capacitance",
+          "title": "Find series capacitance",
+          "narration": "For capacitors in series, reciprocals add. Using common denominator six gives six over six, so the combined capacitance is one microfarad."
+        },
+        {
+          "n": 3,
+          "display": "Q = C_{eq}V = 1 μF × 12 V = 12 μC",
+          "tag": "find the common charge",
+          "title": "Find the common charge",
+          "narration": "Multiply equivalent capacitance by supply voltage. Because the capacitors are in one series line, each holds twelve microcoulombs of charge."
+        },
+        {
+          "n": 4,
+          "display": "V = \\frac{Q}{C} ⇒ V_{1} = \\frac{12}{2} = 6 V",
+          "tag": "find voltage across C1",
+          "title": "Find voltage across C1",
+          "narration": "Potential difference equals charge divided by capacitance, so dividing twelve microcoulombs by two microfarads gives six volts across C one."
+        },
+        {
+          "n": 5,
+          "display": "V_{2} = \\frac{12}{6} = 2 V, V_{3} = \\frac{12}{3} = 4 V",
+          "tag": "find V2 and V3",
+          "title": "Find V2 and V3",
+          "narration": "Divide twelve by six to get two volts across C two, and twelve by three to get four volts across C three. Notice six plus two plus four equals twelve volts. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2006-032",
+      "questionId": "phys-jamb-2006-032",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "C_{0} = 3 μF, C = 6 μF",
+          "tag": "list both capacitances",
+          "title": "List both capacitances",
+          "narration": "Note the capacitance in air is three microfarads and with the dielectric is six microfarads."
+        },
+        {
+          "n": 2,
+          "display": "k = \\frac{C}{C_{0}} = \\frac{6 μF}{3 μF}",
+          "tag": "take the ratio",
+          "title": "Take the ratio",
+          "narration": "Dielectric constant equals capacitance with the dielectric divided by capacitance in air."
+        },
+        {
+          "n": 3,
+          "display": "k = 2",
+          "tag": "find the dielectric constant",
+          "title": "Find the dielectric constant",
+          "narration": "Six divided by three equals two. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "C_{0} = 3 μF, C = 6 μF",
+          "tag": "list the capacitances",
+          "title": "List the capacitances",
+          "narration": "Write down the capacitor's value in air and its larger value when the dielectric material fills the space between the plates."
+        },
+        {
+          "n": 2,
+          "display": "k = \\frac{C}{C_{0}}",
+          "tag": "define dielectric constant",
+          "title": "Define dielectric constant",
+          "narration": "Inserting a dielectric multiplies capacitance by the dielectric constant, so divide the dielectric capacitance by the air capacitance."
+        },
+        {
+          "n": 3,
+          "display": "k = \\frac{6 μF}{3 μF}",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Put six microfarads over three microfarads. Both are in microfarads, so the units cancel directly."
+        },
+        {
+          "n": 4,
+          "display": "k = 2",
+          "tag": "divide for the answer",
+          "title": "Divide for the answer",
+          "narration": "Six divided by three gives a dielectric constant of two. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-036",
+      "questionId": "phys-jamb-2013-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = qE",
+          "tag": "state the force formula",
+          "title": "State the force formula",
+          "narration": "Electric force on a charge equals the charge multiplied by the electric field intensity."
+        },
+        {
+          "n": 2,
+          "display": "F = (1.5 × 10^{-19}) × 10^{5}",
+          "tag": "substitute charge and field",
+          "title": "Substitute charge and field",
+          "narration": "Multiply one point five times ten to the minus nineteen coulombs by ten to the five volts per metre."
+        },
+        {
+          "n": 3,
+          "display": "F = 1.5 × 10^{-14} N",
+          "tag": "combine powers of ten",
+          "title": "Combine powers of ten",
+          "narration": "Adding minus nineteen and five gives minus fourteen, so the force is one point five times ten to the minus fourteen newtons. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "q = 1.5 × 10^{-19} C, E = 10^{5} V m^{-1}",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the charge given in coulombs and the electric field intensity in volts per metre, both already in SI units."
+        },
+        {
+          "n": 2,
+          "display": "F = qE",
+          "tag": "state electric force law",
+          "title": "State electric force law",
+          "narration": "Electric field intensity means force per unit charge, so multiplying the charge by the field gives the force on the electron."
+        },
+        {
+          "n": 3,
+          "display": "F = (1.5 × 10^{-19}) × 10^{5}",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Put the given charge and field strength into the formula."
+        },
+        {
+          "n": 4,
+          "display": "F = 1.5 × 10^{-14} N",
+          "tag": "add the exponents",
+          "title": "Add the exponents",
+          "narration": "Add the exponents of ten: minus nineteen plus five equals minus fourteen. The force is one point five times ten to the minus fourteen newtons, option C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2017-023",
+      "questionId": "phys-jamb-2017-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "C = 8 μF = 8 × 10^{-6} F",
+          "tag": "convert to farads",
+          "title": "Convert to farads",
+          "narration": "Change eight microfarads to eight times ten to the minus six farads."
+        },
+        {
+          "n": 2,
+          "display": "E = \\frac{1}{2}CV^{2} = \\frac{1}{2} × 8 × 10^{-6} × 100^{2}",
+          "tag": "use the energy formula",
+          "title": "Use the energy formula",
+          "narration": "Substitute capacitance in farads and one hundred volts into half C V squared."
+        },
+        {
+          "n": 3,
+          "display": "E = 4 × 10^{-6} × 10^{4} = 4.0 × 10^{-2} J",
+          "tag": "find stored energy",
+          "title": "Find stored energy",
+          "narration": "Four times ten to the minus six times ten to the four equals four point zero times ten to the minus two joules. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "C = 8 μF, V = 100 V",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the capacitance in microfarads and the potential difference across the capacitor."
+        },
+        {
+          "n": 2,
+          "display": "C = 8 × 10^{-6} F",
+          "tag": "convert microfarads to farads",
+          "title": "Convert microfarads to farads",
+          "narration": "Multiply by ten to the minus six to convert microfarads into farads because stored energy in joules requires SI units."
+        },
+        {
+          "n": 3,
+          "display": "E = \\frac{1}{2}CV^{2}",
+          "tag": "state the energy formula",
+          "title": "State the energy formula",
+          "narration": "The energy stored in a capacitor equals half times capacitance times potential difference squared."
+        },
+        {
+          "n": 4,
+          "display": "E = \\frac{1}{2} × (8 × 10^{-6}) × 100^{2}",
+          "tag": "substitute C and V",
+          "title": "Substitute C and V",
+          "narration": "Put eight times ten to the minus six farads and one hundred volts into the equation. Half of eight is four, and one hundred squared is ten to the four."
+        },
+        {
+          "n": 5,
+          "display": "E = 4 × 10^{-6} × 10^{4} = 4.0 × 10^{-2} J",
+          "tag": "simplify powers of ten",
+          "title": "Simplify powers of ten",
+          "narration": "Add the exponents minus six and four to get minus two. The energy stored is four point zero times ten to the minus two joules, option B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1997-043",
+      "questionId": "phys-jamb-1997-043",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{2}{3} = \\frac{l}{100 − l}",
+          "tag": "write the balance ratio",
+          "title": "Write the balance ratio",
+          "narration": "In a metre bridge, the left and right resistances match the ratio of the left and right wire lengths."
+        },
+        {
+          "n": 2,
+          "display": "200 − 2l = 3l ⇒ 5l = 200",
+          "tag": "cross-multiply and collect",
+          "title": "Cross-multiply and collect",
+          "narration": "Cross-multiplying gives two hundred minus two l equals three l, so five l equals two hundred."
+        },
+        {
+          "n": 3,
+          "display": "l = 40 cm",
+          "tag": "find the balance point",
+          "title": "Find the balance point",
+          "narration": "Divide two hundred by five to get forty centimetres from the left side. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "R_{L} = 2 Ω, R_{R} = 3 Ω, L = 100 cm",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the two ohm and three ohm resistors in the left and right gaps, and recall that a metre bridge wire is one hundred centimetres long."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{R_{L}}{R_{R}} = \\frac{l}{100 − l}",
+          "tag": "state balance condition",
+          "title": "State balance condition",
+          "narration": "At balance, no current flows through the galvanometer, so the ratio of left to right resistance equals the ratio of left to right wire lengths."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2}{3} = \\frac{l}{100 − l}",
+          "tag": "substitute the resistors",
+          "title": "Substitute the resistors",
+          "narration": "Put two ohms over three ohms on the left, with l as the balance distance from the left end."
+        },
+        {
+          "n": 4,
+          "display": "2(100 − l) = 3l ⇒ 200 = 5l",
+          "tag": "clear the fractions",
+          "title": "Clear the fractions",
+          "narration": "Cross-multiply to get two hundred minus two l equals three l, then add two l to both sides to get five l."
+        },
+        {
+          "n": 5,
+          "display": "l = \\frac{200}{5} = 40 cm",
+          "tag": "solve for l",
+          "title": "Solve for l",
+          "narration": "Divide two hundred by five to find the balance point is forty centimetres from the left side. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2011-034",
+      "questionId": "phys-jamb-2011-034",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V_{12} = 12 V",
+          "tag": "use parallel voltage rule",
+          "title": "Use parallel voltage rule",
+          "narration": "In parallel, every branch gets the full twelve volts of the battery."
+        },
+        {
+          "n": 2,
+          "display": "I_{12} = \\frac{V}{R} = \\frac{12}{12}",
+          "tag": "apply Ohm's law",
+          "title": "Apply Ohm's law",
+          "narration": "Divide the twelve volts across the resistor by its twelve ohm resistance."
+        },
+        {
+          "n": 3,
+          "display": "I_{12} = 1.0 A",
+          "tag": "find branch current",
+          "title": "Find branch current",
+          "narration": "Twelve divided by twelve equals one point zero amperes. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V = 12 V, R = 12 Ω",
+          "tag": "focus on the 12 Ω branch",
+          "title": "Focus on the 12 Ω branch",
+          "narration": "Pick out the twelve volt supply and the twelve ohm resistor. The two ohm and four ohm resistors are extra information we do not need because parallel branches do not change each other's voltage."
+        },
+        {
+          "n": 2,
+          "display": "V_{12} = 12 V",
+          "tag": "recall parallel voltage",
+          "title": "Recall parallel voltage",
+          "narration": "Resistors in parallel are connected across the same two terminals of the battery, so each branch receives the full twelve volts."
+        },
+        {
+          "n": 3,
+          "display": "I_{12} = \\frac{V}{R} = \\frac{12}{12}",
+          "tag": "apply Ohm's law",
+          "title": "Apply Ohm's law",
+          "narration": "Use Ohm's law for that single branch: current equals potential difference divided by resistance."
+        },
+        {
+          "n": 4,
+          "display": "I_{12} = 1.0 A",
+          "tag": "calculate the current",
+          "title": "Calculate the current",
+          "narration": "Twelve divided by twelve gives one point zero amperes through the twelve ohm resistor. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2014-038",
+      "questionId": "phys-jamb-2014-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R_{eq} < 200 Ω ⇒ parallel",
+          "tag": "choose parallel connection",
+          "title": "Choose parallel connection",
+          "narration": "To lower resistance below two hundred ohms, connect another resistor in parallel."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{R} = \\frac{1}{120} − \\frac{1}{200} = \\frac{2}{600}",
+          "tag": "use parallel formula",
+          "title": "Use parallel formula",
+          "narration": "Subtract one over two hundred from one over one hundred and twenty using common denominator six hundred."
+        },
+        {
+          "n": 3,
+          "display": "R = 300 Ω in parallel",
+          "tag": "invert to find R",
+          "title": "Invert to find R",
+          "narration": "Two over six hundred simplifies to one over three hundred, so connect a three hundred ohm resistor in parallel. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "R_{1} = 200 Ω, R_{eq} = 120 Ω",
+          "tag": "choose series or parallel",
+          "title": "Choose series or parallel",
+          "narration": "Adding a resistor in series raises resistance, while adding one in parallel opens another current path and lowers resistance. So we must connect R in parallel."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{R_{eq}} = \\frac{1}{R_{1}} + \\frac{1}{R}",
+          "tag": "state parallel formula",
+          "title": "State parallel formula",
+          "narration": "For two parallel resistors, the reciprocal of total resistance equals the sum of their reciprocals."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{R} = \\frac{1}{120} − \\frac{1}{200}",
+          "tag": "rearrange for R",
+          "title": "Rearrange for R",
+          "narration": "Put in one hundred and twenty ohms and two hundred ohms, then subtract one over two hundred from both sides."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{R} = \\frac{5 − 3}{600} = \\frac{2}{600} = \\frac{1}{300}",
+          "tag": "combine the fractions",
+          "title": "Combine the fractions",
+          "narration": "Use six hundred as the common denominator: five minus three over six hundred simplifies to one over three hundred."
+        },
+        {
+          "n": 5,
+          "display": "R = 300 Ω in parallel",
+          "tag": "invert for resistance",
+          "title": "Invert for resistance",
+          "narration": "Flipping one over three hundred gives three hundred ohms, connected in parallel. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2016-008",
+      "questionId": "phys-jamb-2016-008",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R = \\frac{3 × 6}{3 + 6} = \\frac{18}{9} = 2 Ω",
+          "tag": "find parallel resistance",
+          "title": "Find parallel resistance",
+          "narration": "From the diagram, combine the three ohm and six ohm parallel resistors to get two ohms."
+        },
+        {
+          "n": 2,
+          "display": "E = IR = 4.0 × 2",
+          "tag": "apply Ohm's law",
+          "title": "Apply Ohm's law",
+          "narration": "With negligible internal resistance, multiply the four point zero ampere total current by two ohms."
+        },
+        {
+          "n": 3,
+          "display": "E = 8 V",
+          "tag": "find the e.m.f.",
+          "title": "Find the e.m.f.",
+          "narration": "Four point zero times two gives eight volts. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I = 4.0 A, R_{1} = 3 Ω, R_{2} = 6 Ω",
+          "tag": "read the circuit diagram",
+          "title": "Read the circuit diagram",
+          "narration": "From the diagram, cell E supplies a total current of four point zero amperes shown at the top into three ohm and six ohm resistors wired in parallel."
+        },
+        {
+          "n": 2,
+          "display": "R = \\frac{3 × 6}{3 + 6} = \\frac{18}{9} = 2 Ω",
+          "tag": "combine parallel resistors",
+          "title": "Combine parallel resistors",
+          "narration": "For two resistors in parallel, use product over sum. Three times six over three plus six gives eighteen over nine, or two ohms."
+        },
+        {
+          "n": 3,
+          "display": "E = I(R + r) = IR",
+          "tag": "use the circuit equation",
+          "title": "Use the circuit equation",
+          "narration": "Because internal resistance is negligible, no voltage is lost inside the cell, so the full e.m.f. equals total current times external resistance."
+        },
+        {
+          "n": 4,
+          "display": "E = 4.0 × 2 = 8 V",
+          "tag": "calculate the e.m.f.",
+          "title": "Calculate the e.m.f.",
+          "narration": "Multiply four point zero amperes by two ohms to get an e.m.f. of eight volts. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1993-042",
+      "questionId": "phys-jamb-1993-042",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = \\frac{V^{2}}{R} ⇒ V^{2} = PR",
+          "tag": "rearrange power formula",
+          "title": "Rearrange power formula",
+          "narration": "Use P equals V squared over R and multiply by R to isolate V squared."
+        },
+        {
+          "n": 2,
+          "display": "V^{2} = 40 × 90 = 3600",
+          "tag": "substitute P and R",
+          "title": "Substitute P and R",
+          "narration": "Multiply forty watts by ninety ohms to get three thousand six hundred."
+        },
+        {
+          "n": 3,
+          "display": "V = \\sqrt{3600} = 60 V",
+          "tag": "take the square root",
+          "title": "Take the square root",
+          "narration": "The square root of three thousand six hundred is sixty volts. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 40 W, R = 90 Ω",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the instrument's normal power rating of forty watts and its resistance of ninety ohms."
+        },
+        {
+          "n": 2,
+          "display": "P = \\frac{V^{2}}{R}",
+          "tag": "choose the power formula",
+          "title": "Choose the power formula",
+          "narration": "Choose the power equation written in terms of voltage and resistance because current is not given."
+        },
+        {
+          "n": 3,
+          "display": "V^{2} = PR = 40 × 90",
+          "tag": "rearrange and substitute",
+          "title": "Rearrange and substitute",
+          "narration": "Multiply both sides by resistance to make V squared the subject, then substitute forty watts and ninety ohms."
+        },
+        {
+          "n": 4,
+          "display": "V^{2} = 3600",
+          "tag": "multiply the values",
+          "title": "Multiply the values",
+          "narration": "Forty times ninety equals three thousand six hundred."
+        },
+        {
+          "n": 5,
+          "display": "V = \\sqrt{3600} = 60 V",
+          "tag": "take the square root",
+          "title": "Take the square root",
+          "narration": "Take the square root of three thousand six hundred to undo the square, giving sixty volts. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2001-027",
+      "questionId": "phys-jamb-2001-027",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P_{in} = IV = 1.5 × 250 = 375 W",
+          "tag": "find input power",
+          "title": "Find input power",
+          "narration": "Multiply one point five amperes by two hundred and fifty volts to get three hundred and seventy-five watts."
+        },
+        {
+          "n": 2,
+          "display": "P_{out} = \\frac{80}{100} × 375",
+          "tag": "apply 80% efficiency",
+          "title": "Apply 80% efficiency",
+          "narration": "At eighty percent efficiency, the useful power output is eighty percent of three hundred and seventy-five watts."
+        },
+        {
+          "n": 3,
+          "display": "P_{out} = 300.0 W",
+          "tag": "calculate power output",
+          "title": "Calculate power output",
+          "narration": "Zero point eight zero times three hundred and seventy-five equals three hundred point zero watts. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I = 1.5 A, V = 250 V, η = 80%",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the motor's current, supply potential difference, and efficiency of eighty percent."
+        },
+        {
+          "n": 2,
+          "display": "P_{in} = IV = 1.5 × 250 = 375 W",
+          "tag": "find electrical input power",
+          "title": "Find electrical input power",
+          "narration": "Calculate the electrical power drawn from the supply by multiplying current and voltage, giving three hundred and seventy-five watts."
+        },
+        {
+          "n": 3,
+          "display": "P_{out} = \\frac{80}{100} × P_{in} = 0.80 × 375",
+          "tag": "apply efficiency",
+          "title": "Apply efficiency",
+          "narration": "Only eighty percent of the electrical input becomes useful mechanical output because the rest is lost as heat and friction."
+        },
+        {
+          "n": 4,
+          "display": "P_{out} = 300.0 W",
+          "tag": "compute power output",
+          "title": "Compute power output",
+          "narration": "Four fifths of three hundred and seventy-five gives three hundred point zero watts. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2003-028",
+      "questionId": "phys-jamb-2003-028",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "I_{max}^{2} × 2 = 18 ⇒ I_{max} = 3 A",
+          "tag": "find max safe current",
+          "title": "Find max safe current",
+          "narration": "Each two ohm resistor has an eighteen watt limit, which gives a maximum safe current of three amperes."
+        },
+        {
+          "n": 2,
+          "display": "P_{s} = 18 W, P_{p} = 1.5^{2} × 2 = 4.5 W",
+          "tag": "find power in each resistor",
+          "title": "Find power in each resistor",
+          "narration": "From the diagram, three amperes goes through the series resistor and splits into one point five amperes through each parallel resistor."
+        },
+        {
+          "n": 3,
+          "display": "P_{total} = 18 + 4.5 + 4.5 = 27 W",
+          "tag": "add all three powers",
+          "title": "Add all three powers",
+          "narration": "Add eighteen, four point five, and four point five watts to get twenty-seven watts. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Two 2 Ω parallel + one 2 Ω series",
+          "tag": "read the circuit diagram",
+          "title": "Read the circuit diagram",
+          "narration": "From the diagram, two two ohm resistors sit in parallel and are joined in series with a third two ohm resistor. Each resistor can handle at most eighteen watts."
+        },
+        {
+          "n": 2,
+          "display": "I_{max}^{2} × 2 = 18 ⇒ I_{max} = 3 A",
+          "tag": "find safe current limit",
+          "title": "Find safe current limit",
+          "narration": "Use P equals I squared R to find the maximum current a single two ohm resistor can carry. Eighteen over two is nine, whose square root is three amperes."
+        },
+        {
+          "n": 3,
+          "display": "I_{series} = 3 A ⇒ P_{series} = 18 W",
+          "tag": "check the series resistor",
+          "title": "Check the series resistor",
+          "narration": "All the circuit current flows through the single series resistor, so it sets the limit at three amperes and dissipates its full eighteen watts."
+        },
+        {
+          "n": 4,
+          "display": "I_{branch} = 1.5 A ⇒ P_{each} = 1.5^{2} × 2 = 4.5 W",
+          "tag": "split parallel current",
+          "title": "Split parallel current",
+          "narration": "At the equal parallel pair, three amperes divides evenly into one point five amperes per branch, so each parallel resistor dissipates four point five watts."
+        },
+        {
+          "n": 5,
+          "display": "P_{total} = 18 + 4.5 + 4.5 = 27 W",
+          "tag": "sum the total power",
+          "title": "Sum the total power",
+          "narration": "Add the power in all three resistors together to get a maximum total power of twenty-seven watts. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-041",
+      "questionId": "phys-jamb-2013-041",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = IV ⇒ I = \\frac{P}{V}",
+          "tag": "rearrange power formula",
+          "title": "Rearrange power formula",
+          "narration": "Electrical power equals current times voltage, so divide power by voltage."
+        },
+        {
+          "n": 2,
+          "display": "I = \\frac{2000}{250}",
+          "tag": "substitute the ratings",
+          "title": "Substitute the ratings",
+          "narration": "Put two thousand watts over two hundred and fifty volts."
+        },
+        {
+          "n": 3,
+          "display": "I = 8 A",
+          "tag": "find maximum current",
+          "title": "Find maximum current",
+          "narration": "Two thousand divided by two hundred and fifty gives eight amperes. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 2000 W, V = 250 V",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the power rating of two thousand watts and the voltage rating of two hundred and fifty volts."
+        },
+        {
+          "n": 2,
+          "display": "P = IV ⇒ I = \\frac{P}{V}",
+          "tag": "rearrange P = IV",
+          "title": "Rearrange P = IV",
+          "narration": "Since power is current multiplied by voltage, divide power by voltage to find the maximum current the device draws."
+        },
+        {
+          "n": 3,
+          "display": "I = \\frac{2000}{250} = \\frac{200}{25}",
+          "tag": "substitute and simplify",
+          "title": "Substitute and simplify",
+          "narration": "Put two thousand watts on top and two hundred and fifty volts underneath, then cancel one zero from each."
+        },
+        {
+          "n": 4,
+          "display": "I = 8 A",
+          "tag": "divide for current",
+          "title": "Divide for current",
+          "narration": "Two hundred divided by twenty-five equals eight amperes. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1987-038",
+      "questionId": "phys-jamb-1987-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Magnetic N = 10° east of True N",
+          "tag": "place magnetic north",
+          "title": "Place magnetic north",
+          "narration": "A declination of ten degrees east puts magnetic north ten degrees east of true north."
+        },
+        {
+          "n": 2,
+          "display": "True angle = 10° + 40° = 50°E",
+          "tag": "add the compass angle",
+          "title": "Add the compass angle",
+          "narration": "The compass points forty degrees further east from magnetic north, giving fifty degrees east of true north."
+        },
+        {
+          "n": 3,
+          "display": "N 50°E",
+          "tag": "write true bearing",
+          "title": "Write true bearing",
+          "narration": "The true geographic bearing is North fifty degrees East. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Declination = 10°E, Compass = N 40°E",
+          "tag": "list the given angles",
+          "title": "List the given angles",
+          "narration": "Write down the magnetic declination of ten degrees east and the compass bearing of North forty degrees East."
+        },
+        {
+          "n": 2,
+          "display": "Magnetic N is 10°E of True N",
+          "tag": "locate magnetic north",
+          "title": "Locate magnetic north",
+          "narration": "Declination is the angle between true north and magnetic north. Ten degrees east means the compass needle's north points ten degrees clockwise from true north."
+        },
+        {
+          "n": 3,
+          "display": "10° + 40° = 50° east of True N",
+          "tag": "add both eastward turns",
+          "title": "Add both eastward turns",
+          "narration": "The compass reads forty degrees east starting from magnetic north, so add ten degrees and forty degrees to measure the total angle from true north."
+        },
+        {
+          "n": 4,
+          "display": "True bearing = N 50°E",
+          "tag": "state the true bearing",
+          "title": "State the true bearing",
+          "narration": "Measured from true geographic north, the bearing is North fifty degrees East. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1992-044",
+      "questionId": "phys-jamb-1992-044",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R_{total} = \\frac{100}{0.05} = 2000 Ω",
+          "tag": "find total resistance",
+          "title": "Find total resistance",
+          "narration": "Divide one hundred volts by zero point zero five amperes to get two thousand ohms total."
+        },
+        {
+          "n": 2,
+          "display": "R = 2000 − 10 = 1,990 Ω",
+          "tag": "subtract coil resistance",
+          "title": "Subtract coil resistance",
+          "narration": "Subtract the galvanometer's ten ohm resistance to get one thousand nine hundred and ninety ohms."
+        },
+        {
+          "n": 3,
+          "display": "1,990 Ω in series",
+          "tag": "state the connection",
+          "title": "State the connection",
+          "narration": "Connect this multiplier resistor in series so it limits current at one hundred volts. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "R_{g} = 10 Ω, I_{g} = 0.05 A, V = 100 V",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the galvanometer resistance of ten ohms, its maximum safe current of zero point zero five amperes, and the target reading of one hundred volts."
+        },
+        {
+          "n": 2,
+          "display": "Connect R in series (multiplier)",
+          "tag": "choose series connection",
+          "title": "Choose series connection",
+          "narration": "To convert a galvanometer into a voltmeter, add a high resistance in series so extra voltage drops across R and keeps current within zero point zero five amperes."
+        },
+        {
+          "n": 3,
+          "display": "R_{g} + R = \\frac{V}{I_{g}} = \\frac{100}{0.05}",
+          "tag": "use Ohm's law for total R",
+          "title": "Use Ohm's law for total R",
+          "narration": "By Ohm's law, the combined series resistance equals full-scale voltage divided by maximum permissible current."
+        },
+        {
+          "n": 4,
+          "display": "R_{g} + R = 2000 Ω",
+          "tag": "divide by 0.05",
+          "title": "Divide by 0.05",
+          "narration": "One hundred divided by zero point zero five equals ten thousand divided by five, which is two thousand ohms."
+        },
+        {
+          "n": 5,
+          "display": "R = 2000 − 10 = 1,990 Ω in series",
+          "tag": "subtract internal resistance",
+          "title": "Subtract internal resistance",
+          "narration": "Subtract the ten ohms of the galvanometer coil itself, leaving one thousand nine hundred and ninety ohms connected in series. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2004-029",
+      "questionId": "phys-jamb-2004-029",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "X = 16 − 10 = 6 Ω",
+          "tag": "find net reactance",
+          "title": "Find net reactance",
+          "narration": "Subtract the ten ohm capacitive reactance from the sixteen ohm inductive reactance to get six ohms."
+        },
+        {
+          "n": 2,
+          "display": "Z = \\sqrt{8^{2} + 6^{2}} = 10 Ω",
+          "tag": "calculate impedance",
+          "title": "Calculate impedance",
+          "narration": "Combine the eight ohm resistance and six ohm net reactance by Pythagoras to get ten ohms."
+        },
+        {
+          "n": 3,
+          "display": "I = \\frac{12}{10} = 1.2 A",
+          "tag": "find the current",
+          "title": "Find the current",
+          "narration": "Divide the twelve volt e.m.f. by the ten ohm impedance to get one point two amperes. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "E = 12 V, R = 8 Ω, X_{L} = 16 Ω, X_{C} = 10 Ω",
+          "tag": "list the circuit values",
+          "title": "List the circuit values",
+          "narration": "Write down the e.m.f., the resistance, and both reactances in the series alternating current circuit."
+        },
+        {
+          "n": 2,
+          "display": "X = 16 − 10 = 6 Ω",
+          "tag": "find net reactance",
+          "title": "Find net reactance",
+          "narration": "Inductive and capacitive reactances oppose each other, so subtract ten ohms from sixteen ohms to get a net reactance of six ohms."
+        },
+        {
+          "n": 3,
+          "display": "Z = \\sqrt{R^{2} + (X_{L} − X_{C})^{2}}",
+          "tag": "state impedance formula",
+          "title": "State impedance formula",
+          "narration": "Because resistance and net reactance are ninety degrees out of phase, combine them using Pythagoras' theorem to find impedance."
+        },
+        {
+          "n": 4,
+          "display": "Z = \\sqrt{8^{2} + 6^{2}} = \\sqrt{100} = 10 Ω",
+          "tag": "compute the impedance",
+          "title": "Compute the impedance",
+          "narration": "Eight squared plus six squared equals sixty-four plus thirty-six, or one hundred, whose square root is ten ohms."
+        },
+        {
+          "n": 5,
+          "display": "I = \\frac{E}{Z} = \\frac{12}{10} = 1.2 A",
+          "tag": "find circuit current",
+          "title": "Find circuit current",
+          "narration": "Divide the twelve volt e.m.f. by the ten ohm impedance to get one point two amperes. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-043",
+      "questionId": "phys-jamb-2008-043",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P_{in} = \\frac{50}{0.80} = 62.5 W",
+          "tag": "find primary input power",
+          "title": "Find primary input power",
+          "narration": "Divide the fifty watt output power by zero point eight zero efficiency to get sixty-two point five watts input."
+        },
+        {
+          "n": 2,
+          "display": "I_{p} = \\frac{P_{in}}{V_{p}} = \\frac{62.5}{200}",
+          "tag": "divide by primary voltage",
+          "title": "Divide by primary voltage",
+          "narration": "Divide sixty-two point five watts by the two hundred volt mains voltage."
+        },
+        {
+          "n": 3,
+          "display": "I_{p} = 0.3125 A ≈ 0.31 A",
+          "tag": "round primary current",
+          "title": "Round primary current",
+          "narration": "Sixty-two point five over two hundred gives zero point three one two five, or zero point three one amperes. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P_{out} = 50 W, η = 80%, V_{p} = 200 V",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the output power, the eighty percent efficiency, and the two hundred volt mains voltage on the primary side."
+        },
+        {
+          "n": 2,
+          "display": "η = \\frac{P_{out}}{P_{in}} ⇒ P_{in} = \\frac{P_{out}}{0.80}",
+          "tag": "link efficiency to input",
+          "title": "Link efficiency to input",
+          "narration": "Because the transformer is only eighty percent efficient, the primary coil draws more power than the fifty watts delivered out."
+        },
+        {
+          "n": 3,
+          "display": "P_{in} = \\frac{50}{0.80} = 62.5 W",
+          "tag": "calculate input power",
+          "title": "Calculate input power",
+          "narration": "Fifty divided by zero point eight zero equals five hundred divided by eight, which is sixty-two point five watts."
+        },
+        {
+          "n": 4,
+          "display": "P_{in} = I_{p}V_{p} ⇒ I_{p} = \\frac{62.5}{200}",
+          "tag": "use primary power formula",
+          "title": "Use primary power formula",
+          "narration": "Primary power equals primary current times primary voltage, so divide sixty-two point five watts by two hundred volts."
+        },
+        {
+          "n": 5,
+          "display": "I_{p} = 0.3125 A ≈ 0.31 A",
+          "tag": "divide and round",
+          "title": "Divide and round",
+          "narration": "Sixty-two point five divided by two hundred is zero point three one two five amperes, which rounds to zero point three one amperes. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1998-047",
+      "questionId": "phys-jamb-1998-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = zQ",
+          "tag": "state Faraday's first law",
+          "title": "State Faraday's first law",
+          "narration": "The mass deposited equals the electrochemical equivalent multiplied by the electric charge."
+        },
+        {
+          "n": 2,
+          "display": "m = (1.3 × 10^{-7}) × (2.0 × 10^{4})",
+          "tag": "substitute z and Q",
+          "title": "Substitute z and Q",
+          "narration": "Multiply one point three times ten to the minus seven by two point zero times ten to the four."
+        },
+        {
+          "n": 3,
+          "display": "m = 2.6 × 10^{-3} kg",
+          "tag": "simplify the answer",
+          "title": "Simplify the answer",
+          "narration": "One point three times two is two point six, and minus seven plus four gives ten to the minus three kilograms. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "z = 1.3 × 10^{-7} kg C^{-1}, Q = 2.0 × 10^{4} C",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the electrochemical equivalent in kilograms per coulomb and the charge in coulombs, both already in SI units."
+        },
+        {
+          "n": 2,
+          "display": "m = zQ",
+          "tag": "state Faraday's formula",
+          "title": "State Faraday's formula",
+          "narration": "By Faraday's first law of electrolysis, mass deposited is proportional to total charge passed, with z as the proportionality constant."
+        },
+        {
+          "n": 3,
+          "display": "m = (1.3 × 10^{-7}) × (2.0 × 10^{4})",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Multiply the given electrochemical equivalent by the charge in coulombs."
+        },
+        {
+          "n": 4,
+          "display": "m = 2.6 × 10^{-3} kg",
+          "tag": "multiply and add exponents",
+          "title": "Multiply and add exponents",
+          "narration": "Multiply one point three by two point zero to get two point six, and add exponents minus seven and four to get minus three kilograms. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2002-040",
+      "questionId": "phys-jamb-2002-040",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Q_{1} = 0.5 × 3 = 1.5 A h",
+          "tag": "find first charge",
+          "title": "Find first charge",
+          "narration": "Multiply zero point five amperes by three hours to get one point five ampere-hours."
+        },
+        {
+          "n": 2,
+          "display": "Q_{2} = 1.5 × 1 = 1.5 A h",
+          "tag": "find second charge",
+          "title": "Find second charge",
+          "narration": "Multiply one point five amperes by one hour to get one point five ampere-hours as well."
+        },
+        {
+          "n": 3,
+          "display": "Q_{2} = Q_{1} ⇒ m_{2} = 2 g",
+          "tag": "compare the charges",
+          "title": "Compare the charges",
+          "narration": "Because the same charge passes through the same metal, the mass deposited stays two grams. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I_{1} = 0.5 A, t_{1} = 3 h ⇒ m_{1} = 2 g",
+          "tag": "note the first case",
+          "title": "Note the first case",
+          "narration": "Record the first current and time that deposit two grams. Since both times are in hours, we can compare current times time directly without converting to seconds."
+        },
+        {
+          "n": 2,
+          "display": "m ∝ Q = It",
+          "tag": "state Faraday's first law",
+          "title": "State Faraday's first law",
+          "narration": "Faraday's first law states that mass deposited of the same metal depends only on total charge Q equals I t."
+        },
+        {
+          "n": 3,
+          "display": "Q_{1} = 0.5 × 3 = 1.5, Q_{2} = 1.5 × 1 = 1.5",
+          "tag": "compare both charges",
+          "title": "Compare both charges",
+          "narration": "Zero point five times three is one point five, and one point five times one is also one point five."
+        },
+        {
+          "n": 4,
+          "display": "m_{2} = m_{1} = 2 g",
+          "tag": "read deposited mass",
+          "title": "Read deposited mass",
+          "narration": "The current tripled while the time fell to a third, so the total charge is identical and two grams is deposited again. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2003-042",
+      "questionId": "phys-jamb-2003-042",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Δx Δp ≥ h ⇒ Δp = \\frac{h}{Δx}",
+          "tag": "use uncertainty principle",
+          "title": "Use uncertainty principle",
+          "narration": "Use Heisenberg's relation delta x times delta p equals h and divide by delta x."
+        },
+        {
+          "n": 2,
+          "display": "Δp = \\frac{6.6 × 10^{-34}}{5 × 10^{-10}}",
+          "tag": "substitute h and Δx",
+          "title": "Substitute h and Δx",
+          "narration": "Divide Planck's constant six point six times ten to the minus thirty-four by five times ten to the minus ten."
+        },
+        {
+          "n": 3,
+          "display": "Δp = 1.32 × 10^{-24} N s",
+          "tag": "find momentum uncertainty",
+          "title": "Find momentum uncertainty",
+          "narration": "Six point six over five is one point three two, and subtracting minus ten from minus thirty-four gives minus twenty-four. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Δx = 5 × 10^{-10} m, h = 6.6 × 10^{-34} J s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the position uncertainty in metres and Planck's constant in joule seconds."
+        },
+        {
+          "n": 2,
+          "display": "Δx Δp ≥ h ⇒ Δp = \\frac{h}{Δx}",
+          "tag": "state uncertainty relation",
+          "title": "State uncertainty relation",
+          "narration": "Heisenberg's uncertainty principle links position and momentum uncertainties through Planck's constant. Divide h by delta x to find the momentum uncertainty."
+        },
+        {
+          "n": 3,
+          "display": "Δp = \\frac{6.6 × 10^{-34}}{5 × 10^{-10}}",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Put six point six times ten to the minus thirty-four on top and five times ten to the minus ten below."
+        },
+        {
+          "n": 4,
+          "display": "Δp = 1.32 × 10^{-24} N s",
+          "tag": "divide and simplify powers",
+          "title": "Divide and simplify powers",
+          "narration": "Six point six divided by five equals one point three two, and minus thirty-four minus minus ten equals minus twenty-four newton seconds. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2006-008",
+      "questionId": "phys-jamb-2006-008",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E = 3.3 × 1.6 × 10^{-19} = 5.28 × 10^{-19} J",
+          "tag": "convert energy to joules",
+          "title": "Convert energy to joules",
+          "narration": "Multiply three point three electronvolts by one point six times ten to the minus nineteen to convert to joules."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{E}{h} = \\frac{5.28 × 10^{-19}}{6.6 × 10^{-34}}",
+          "tag": "use Planck's equation",
+          "title": "Use Planck's equation",
+          "narration": "Divide the energy in joules by Planck's constant."
+        },
+        {
+          "n": 3,
+          "display": "f = 8.0 × 10^{14} Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "Five point two eight over six point six is zero point eight, giving eight point zero times ten to the fourteen hertz. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "E = 3.3 eV, e = 1.6 × 10^{-19} C",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the photon energy in electronvolts, the electronic charge, and Planck's constant six point six times ten to the minus thirty-four joule seconds."
+        },
+        {
+          "n": 2,
+          "display": "E = 3.3 × 1.6 × 10^{-19} = 5.28 × 10^{-19} J",
+          "tag": "convert eV to joules",
+          "title": "Convert eV to joules",
+          "narration": "Multiply electronvolts by the electron charge to get joules because Planck's constant uses SI units of joule seconds."
+        },
+        {
+          "n": 3,
+          "display": "E = hf ⇒ f = \\frac{E}{h}",
+          "tag": "rearrange Planck's formula",
+          "title": "Rearrange Planck's formula",
+          "narration": "Photon energy equals Planck's constant times frequency, so divide energy by h to isolate frequency."
+        },
+        {
+          "n": 4,
+          "display": "f = \\frac{5.28 × 10^{-19}}{6.6 × 10^{-34}} = 0.8 × 10^{15}",
+          "tag": "substitute and divide",
+          "title": "Substitute and divide",
+          "narration": "Five point two eight divided by six point six is zero point eight, and subtracting minus thirty-four from minus nineteen gives ten to the fifteen."
+        },
+        {
+          "n": 5,
+          "display": "f = 8.0 × 10^{14} Hz",
+          "tag": "write in standard form",
+          "title": "Write in standard form",
+          "narration": "Rewrite zero point eight times ten to the fifteen as eight point zero times ten to the fourteen hertz. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-047",
+      "questionId": "phys-jamb-2008-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "hf = 6.6 × 10^{-34} × 6.7 × 10^{14}",
+          "tag": "find photon energy",
+          "title": "Find photon energy",
+          "narration": "Multiply Planck's constant by the light frequency to find each photon's energy."
+        },
+        {
+          "n": 2,
+          "display": "hf = 4.422 × 10^{-19} J",
+          "tag": "write in standard form",
+          "title": "Write in standard form",
+          "narration": "Six point six times six point seven is forty-four point two two, or four point four two two times ten to the minus nineteen joules."
+        },
+        {
+          "n": 3,
+          "display": "K_{max} = 4.422 × 10^{-19} − 3 × 10^{-19} ≈ 1.42 × 10^{-19} J",
+          "tag": "subtract work function",
+          "title": "Subtract work function",
+          "narration": "Subtract the three times ten to the minus nineteen joule work function to get one point four two times ten to the minus nineteen joules. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Φ = 3 × 10^{-19} J, f = 6.7 × 10^{14} Hz",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the work function of caesium, the frequency of light, and Planck's constant."
+        },
+        {
+          "n": 2,
+          "display": "hf = 6.6 × 10^{-34} × 6.7 × 10^{14}",
+          "tag": "compute photon energy",
+          "title": "Compute photon energy",
+          "narration": "Find the energy delivered by one photon by multiplying six point six times ten to the minus thirty-four by six point seven times ten to the fourteen."
+        },
+        {
+          "n": 3,
+          "display": "hf = 44.22 × 10^{-20} = 4.422 × 10^{-19} J",
+          "tag": "match the power of ten",
+          "title": "Match the power of ten",
+          "narration": "Express the photon energy using ten to the minus nineteen so it matches the work function's power of ten before subtracting."
+        },
+        {
+          "n": 4,
+          "display": "K_{max} = hf − Φ",
+          "tag": "state Einstein's equation",
+          "title": "State Einstein's equation",
+          "narration": "By Einstein's photoelectric equation, the work function frees the electron and the remaining photon energy becomes maximum kinetic energy."
+        },
+        {
+          "n": 5,
+          "display": "K_{max} = (4.422 − 3) × 10^{-19} ≈ 1.42 × 10^{-19} J",
+          "tag": "subtract work function",
+          "title": "Subtract work function",
+          "narration": "Subtract three from four point four two two to get one point four two times ten to the minus nineteen joules. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-046",
+      "questionId": "phys-jamb-2013-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E_{n} = \\frac{E_{1}}{n^{2}}",
+          "tag": "use energy level formula",
+          "title": "Use energy level formula",
+          "narration": "The energy of level n equals the ground state energy divided by n squared."
+        },
+        {
+          "n": 2,
+          "display": "E_{3} = \\frac{−24.8}{3^{2}} = \\frac{−24.8}{9}",
+          "tag": "substitute n = 3",
+          "title": "Substitute n = 3",
+          "narration": "For the third level, divide minus twenty-four point eight electronvolts by three squared, which is nine."
+        },
+        {
+          "n": 3,
+          "display": "E_{3} = −2.76 eV ≈ −2.75 eV",
+          "tag": "divide and match option",
+          "title": "Divide and match option",
+          "narration": "Minus twenty-four point eight over nine is minus two point seven six electronvolts, matching minus two point seven five electronvolts. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "E_{1} = −24.8 eV, n = 3",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the ground state energy at n equals one is minus twenty-four point eight electronvolts, and we need the third level where n equals three."
+        },
+        {
+          "n": 2,
+          "display": "E_{n} = \\frac{E_{1}}{n^{2}}",
+          "tag": "state Bohr level formula",
+          "title": "State Bohr level formula",
+          "narration": "In an atom's energy levels, energy scales inversely with the square of the level number n."
+        },
+        {
+          "n": 3,
+          "display": "E_{3} = \\frac{−24.8}{3^{2}} = \\frac{−24.8}{9}",
+          "tag": "substitute n = 3",
+          "title": "Substitute n = 3",
+          "narration": "Put minus twenty-four point eight on top and three squared, equal to nine, underneath."
+        },
+        {
+          "n": 4,
+          "display": "E_{3} = −2.755... eV ≈ −2.75 eV",
+          "tag": "divide and match option",
+          "title": "Divide and match option",
+          "narration": "Dividing minus twenty-four point eight by nine gives minus two point seven five five recurring electronvolts, which matches the keyed option minus two point seven five electronvolts. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2003-046",
+      "questionId": "phys-jamb-2003-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = 1.0 g = 1.0 × 10^{-3} kg",
+          "tag": "convert mass to kilograms",
+          "title": "Convert mass to kilograms",
+          "narration": "Change one point zero grams to one point zero times ten to the minus three kilograms."
+        },
+        {
+          "n": 2,
+          "display": "Δm = \\frac{0.01}{100} × 10^{-3} = 1.0 × 10^{-7} kg",
+          "tag": "find the mass defect",
+          "title": "Find the mass defect",
+          "narration": "Zero point zero one percent of the mass gives one point zero times ten to the minus seven kilograms converted to energy."
+        },
+        {
+          "n": 3,
+          "display": "E = Δmc^{2} = 9.0 × 10^{9} J",
+          "tag": "apply E = mc squared",
+          "title": "Apply E = mc squared",
+          "narration": "Multiply ten to the minus seven by three point zero times ten to the eight squared to get nine point zero times ten to the nine joules. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 1.0 g, loss = 0.01%, c = 3.0 × 10^{8} m/s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the one point zero gram sample, the zero point zero one percent mass decrease, and the speed of light."
+        },
+        {
+          "n": 2,
+          "display": "m = 1.0 × 10^{-3} kg",
+          "tag": "change grams to kilograms",
+          "title": "Change grams to kilograms",
+          "narration": "Divide one point zero grams by one thousand to convert to kilograms because energy in joules requires SI mass units."
+        },
+        {
+          "n": 3,
+          "display": "Δm = \\frac{0.01}{100} × 1.0 × 10^{-3} = 1.0 × 10^{-7} kg",
+          "tag": "calculate mass lost",
+          "title": "Calculate mass lost",
+          "narration": "Zero point zero one percent is ten to the minus four, so multiply ten to the minus four by ten to the minus three to get ten to the minus seven kilograms."
+        },
+        {
+          "n": 4,
+          "display": "E = Δmc^{2} = (1.0 × 10^{-7}) × (3.0 × 10^{8})^{2}",
+          "tag": "use Einstein's formula",
+          "title": "Use Einstein's formula",
+          "narration": "Substitute the lost mass and speed of light into E equals delta m c squared. Squaring three point zero times ten to the eight gives nine point zero times ten to the sixteen."
+        },
+        {
+          "n": 5,
+          "display": "E = 9.0 × 10^{9} J",
+          "tag": "simplify powers of ten",
+          "title": "Simplify powers of ten",
+          "narration": "Add the exponents minus seven and sixteen to get nine. The fission energy is nine point zero times ten to the nine joules, option A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2007-010",
+      "questionId": "phys-jamb-2007-010",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "n = \\frac{80}{20} = 4",
+          "tag": "count the half-lives",
+          "title": "Count the half-lives",
+          "narration": "Divide eighty days by the twenty-day half-life to get four half-lives."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{N}{N_{0}} = (\\frac{1}{2})^{4}",
+          "tag": "apply half-life decay",
+          "title": "Apply half-life decay",
+          "narration": "Each half-life halves the sample, so raise one half to the fourth power."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{N}{N_{0}} = \\frac{1}{16}",
+          "tag": "find remaining fraction",
+          "title": "Find remaining fraction",
+          "narration": "Two to the power of four is sixteen, so one sixteenth remains. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "t_{1/2} = 20 days, t = 80 days",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the half-life of twenty days and the total decay time of eighty days."
+        },
+        {
+          "n": 2,
+          "display": "n = \\frac{t}{t_{1/2}} = \\frac{80}{20} = 4",
+          "tag": "find number of half-lives",
+          "title": "Find number of half-lives",
+          "narration": "Divide total time by the half-life to see how many halving periods occur, which gives four half-lives."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{N}{N_{0}} = (\\frac{1}{2})^{4}",
+          "tag": "halve four times",
+          "title": "Halve four times",
+          "narration": "Each half-life leaves half of the remaining radioactive nuclei, so multiply by one half four times."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{N}{N_{0}} = \\frac{1}{16}",
+          "tag": "evaluate the power",
+          "title": "Evaluate the power",
+          "narration": "Raise one half to the fourth power to get one sixteenth of the original nuclei remaining. Choose A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2010-046",
+      "questionId": "phys-jamb-2010-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "A = 235 − 2(4) − 3(0) − 0 = 227",
+          "tag": "find new mass number",
+          "title": "Find new mass number",
+          "narration": "Two alpha particles subtract eight from mass number two hundred and thirty-five, leaving two hundred and twenty-seven."
+        },
+        {
+          "n": 2,
+          "display": "Z = 92 − 2(2) + 3(1) + 0 = 91",
+          "tag": "find new atomic number",
+          "title": "Find new atomic number",
+          "narration": "Two alphas subtract four and three betas add three to atomic number ninety-two, giving ninety-one."
+        },
+        {
+          "n": 3,
+          "display": "227 and 91",
+          "tag": "read both numbers",
+          "title": "Read both numbers",
+          "narration": "The daughter nucleus has mass number two hundred and twenty-seven and atomic number ninety-one. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2α (^{4}_{2}He), 3β (^{0}_{−1}e), 1γ (^{0}_{0}γ)",
+          "tag": "identify the emissions",
+          "title": "Identify the emissions",
+          "narration": "An alpha particle carries mass four and charge two, a beta particle carries mass zero and charge minus one, and the gamma ray carries zero mass and zero charge so it does not change either number."
+        },
+        {
+          "n": 2,
+          "display": "A = 235 − 2(4) − 3(0) − 0",
+          "tag": "balance the mass number",
+          "title": "Balance the mass number",
+          "narration": "Total mass number is conserved across the decay. Only the two alpha particles lower the mass number, each by four."
+        },
+        {
+          "n": 3,
+          "display": "A = 235 − 8 = 227",
+          "tag": "find daughter mass number",
+          "title": "Find daughter mass number",
+          "narration": "Subtract eight from two hundred and thirty-five to get a daughter mass number of two hundred and twenty-seven."
+        },
+        {
+          "n": 4,
+          "display": "Z = 92 − 2(2) − 3(−1) − 0",
+          "tag": "balance the atomic number",
+          "title": "Balance the atomic number",
+          "narration": "Total charge is conserved. Two alpha decays remove four protons, while three beta-minus decays increase the atomic number by three."
+        },
+        {
+          "n": 5,
+          "display": "Z = 92 − 4 + 3 = 91 ⇒ 227 and 91",
+          "tag": "read both numbers",
+          "title": "Read both numbers",
+          "narration": "Ninety-two minus four plus three equals ninety-one. So the mass and atomic numbers are two hundred and twenty-seven and ninety-one, option A."
+        }
+      ]
+    }
+  ]
+}
