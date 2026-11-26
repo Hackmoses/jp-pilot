@@ -1,0 +1,3257 @@
+{
+  "version": 1,
+  "subject": "chemistry",
+  "count": 50,
+  "questions": [
+    {
+      "id": "chem-jamb-2011-002",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Mole concept",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What is the concentration of a solution containing 2 g of NaOH in 100 cm^{3} of solution? Take Na = 23, O = 16 and H = 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.40 mol dm^{−3}",
+          "why": "0.40 mol dm^{−3} would require 0.040 mol in this volume.",
+          "whyWrong": "0.40 mol dm^{−3} would require 0.040 mol in this volume."
+        },
+        {
+          "id": "b",
+          "text": "0.50 mol dm^{−3}",
+          "why": "The molar mass of NaOH is 40 g mol^{−1}. The solution contains 2/40 = 0.050 mol in 0.100 dm^{3}, giving 0.50 mol dm^{−3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "0.05 mol dm^{−3}",
+          "why": "0.05 is the number of moles, before division by solution volume.",
+          "whyWrong": "0.05 is the number of moles, before division by solution volume."
+        },
+        {
+          "id": "d",
+          "text": "0.30 mol dm^{−3}",
+          "why": "0.30 mol dm^{−3} would require 0.030 mol in 0.100 dm^{3}.",
+          "whyWrong": "0.30 mol dm^{−3} would require 0.030 mol in 0.100 dm^{3}."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Convert grams to moles and cubic centimetres to cubic decimetres.",
+      "explanation": "The molar mass of NaOH is 40 g mol^{−1}. The solution contains 2/40 = 0.050 mol in 0.100 dm^{3}, giving 0.50 mol dm^{−3}.",
+      "trap": "0.05 is the number of moles, before division by solution volume.",
+      "mnemonic": "Molar concentration is moles divided by volume in dm³.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Molar concentration is moles divided by volume in dm³."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "0.05 is the number of moles, before division by solution volume."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 2,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2011-004",
+      "subject": "chemistry",
+      "chapter": "1",
+      "topic": "Separation of Mixtures and Purification",
+      "concept": "Chromatography",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The principle of column chromatography is based on the ability of the constituents to",
+      "options": [
+        {
+          "id": "a",
+          "text": "move at different speeds in the column",
+          "why": "Components spend different fractions of their time on the stationary phase. The mobile phase therefore carries them through the column at different average speeds.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "dissolve in each other in the column",
+          "why": "Components need not dissolve in one another to separate.",
+          "whyWrong": "Components need not dissolve in one another to separate."
+        },
+        {
+          "id": "c",
+          "text": "react with the solvent in the column",
+          "why": "A reaction with the solvent would change the substance. The separation relies on differing interactions with the phases.",
+          "whyWrong": "A reaction with the solvent would change the substance. The separation relies on differing interactions with the phases."
+        },
+        {
+          "id": "d",
+          "text": "react with each other in the column",
+          "why": "The components need not react with one another.",
+          "whyWrong": "The components need not react with one another."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare how strongly each component interacts with the column packing.",
+      "explanation": "Components spend different fractions of their time on the stationary phase. The mobile phase therefore carries them through the column at different average speeds.",
+      "trap": "A reaction with the solvent would change the substance. The separation relies on differing interactions with the phases.",
+      "mnemonic": "A greater affinity for the stationary phase gives a slower journey.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A greater affinity for the stationary phase gives a slower journey."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "A reaction with the solvent would change the substance. The separation relies on differing interactions with the phases."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 4,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2011-009",
+      "subject": "chemistry",
+      "chapter": "5",
+      "topic": "Chemical Bonding",
+      "concept": "Intermolecular forces",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The molecular lattice of iodine is held together by",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dative bond",
+          "why": "A coordinate bond involves a donated electron pair. The question asks what holds distinct molecules together.",
+          "whyWrong": "A coordinate bond involves a donated electron pair. The question asks what holds distinct molecules together."
+        },
+        {
+          "id": "b",
+          "text": "Metallic bond",
+          "why": "Metallic bonding requires delocalised electrons in a metal lattice.",
+          "whyWrong": "Metallic bonding requires delocalised electrons in a metal lattice."
+        },
+        {
+          "id": "c",
+          "text": "Hydrogen bond",
+          "why": "I_{2} contains no hydrogen and does not form hydrogen bonds.",
+          "whyWrong": "I_{2} contains no hydrogen and does not form hydrogen bonds."
+        },
+        {
+          "id": "d",
+          "text": "Van der Waals forces",
+          "why": "Iodine forms discrete I_{2} molecules. Its molecular crystal is held together by London dispersion forces, a type of van der Waals attraction.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Distinguish the attraction between iodine molecules from the bond within one.",
+      "explanation": "Iodine forms discrete I_{2} molecules. Its molecular crystal is held together by London dispersion forces, a type of van der Waals attraction.",
+      "trap": "I_{2} contains no hydrogen and does not form hydrogen bonds.",
+      "mnemonic": "Iodine has covalent bonds within molecules and dispersion forces between them.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Iodine has covalent bonds within molecules and dispersion forces between them."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "I_{2} contains no hydrogen and does not form hydrogen bonds."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2011-013",
+      "subject": "chemistry",
+      "chapter": "5",
+      "topic": "Chemical Bonding",
+      "concept": "Ionic bonding",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What type of bond forms between element X of atomic number 12 and element Y of atomic number 17?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Electrovalent",
+          "why": "Element 12 is magnesium and element 17 is chlorine. Magnesium forms Mg^{2+} by losing two electrons, and two chlorine atoms form Cl^{−} ions. The attraction is ionic, also called electrovalent.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Metallic",
+          "why": "Metallic bonding describes a lattice of metal ions with delocalised electrons.",
+          "whyWrong": "Metallic bonding describes a lattice of metal ions with delocalised electrons."
+        },
+        {
+          "id": "c",
+          "text": "Covalent",
+          "why": "In the school bonding model for magnesium chloride, electron transfer gives an ionic compound.",
+          "whyWrong": "In the school bonding model for magnesium chloride, electron transfer gives an ionic compound."
+        },
+        {
+          "id": "d",
+          "text": "Dative",
+          "why": "A dative bond is a shared electron pair donated by one atom.",
+          "whyWrong": "A dative bond is a shared electron pair donated by one atom."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify elements 12 and 17 and consider how they reach stable outer shells.",
+      "explanation": "Element 12 is magnesium and element 17 is chlorine. Magnesium forms Mg^{2+} by losing two electrons, and two chlorine atoms form Cl^{−} ions. The attraction is ionic, also called electrovalent.",
+      "trap": "In the school bonding model for magnesium chloride, electron transfer gives an ionic compound.",
+      "mnemonic": "Electrovalent is another name for ionic.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Electrovalent is another name for ionic."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "In the school bonding model for magnesium chloride, electron transfer gives an ionic compound."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2011-016",
+      "subject": "chemistry",
+      "chapter": "10",
+      "topic": "Air",
+      "concept": "Composition of air",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following noble gases is commonly found in the atmosphere?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Xenon",
+          "why": "Xenon is present only in trace amounts.",
+          "whyWrong": "Xenon is present only in trace amounts."
+        },
+        {
+          "id": "b",
+          "text": "Neon",
+          "why": "Neon is present at much lower concentration than argon.",
+          "whyWrong": "Neon is present at much lower concentration than argon."
+        },
+        {
+          "id": "c",
+          "text": "Helium",
+          "why": "Helium occurs in air at trace concentration.",
+          "whyWrong": "Helium occurs in air at trace concentration."
+        },
+        {
+          "id": "d",
+          "text": "Argon",
+          "why": "Argon makes up about 0.93% of dry air and is the most abundant atmospheric noble gas.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Which noble gas makes up close to one percent of dry air?",
+      "explanation": "Argon makes up about 0.93% of dry air and is the most abundant atmospheric noble gas.",
+      "trap": "Neon is present at much lower concentration than argon.",
+      "mnemonic": "Argon is the third most abundant gas in dry air, after nitrogen and oxygen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Argon is the third most abundant gas in dry air, after nitrogen and oxygen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Neon is present at much lower concentration than argon."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 16,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2011-017",
+      "subject": "chemistry",
+      "chapter": "9",
+      "topic": "Chemical Equilibrium",
+      "concept": "Le Chatelier’s principle",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "For N_{2}O_{4}(g) ⇌ 2NO_{2}(g), the forward reaction has ΔH > 0. What effect does an increase in temperature have?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increases the equilibrium constant",
+          "why": "The forward dissociation absorbs heat. Warming favours NO_{2} production and increases the equilibrium constant for the forward reaction.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Decreases the equilibrium constant",
+          "why": "For an endothermic forward reaction, warming increases the equilibrium constant.",
+          "whyWrong": "For an endothermic forward reaction, warming increases the equilibrium constant."
+        },
+        {
+          "id": "c",
+          "text": "Increases the production of the reactant",
+          "why": "More N_{2}O_{4} would mean a shift in the exothermic reverse direction.",
+          "whyWrong": "More N_{2}O_{4} would mean a shift in the exothermic reverse direction."
+        },
+        {
+          "id": "d",
+          "text": "Shifts the equilibrium to the left",
+          "why": "The right-hand direction absorbs added heat and is favoured.",
+          "whyWrong": "The right-hand direction absorbs added heat and is favoured."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Treat heat as a reactant in the forward direction.",
+      "explanation": "The forward dissociation absorbs heat. Warming favours NO_{2} production and increases the equilibrium constant for the forward reaction.",
+      "trap": "For an endothermic forward reaction, warming increases the equilibrium constant.",
+      "mnemonic": "Heat favours the endothermic direction.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Heat favours the endothermic direction."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "For an endothermic forward reaction, warming increases the equilibrium constant."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2011-021",
+      "subject": "chemistry",
+      "chapter": "12",
+      "topic": "Environmental Pollution",
+      "concept": "Thermal pollution and dissolved oxygen",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "An effect of thermal pollution on water bodies is that the",
+      "options": [
+        {
+          "id": "a",
+          "text": "volume of water reduces",
+          "why": "Some evaporation can occur, but lower dissolved oxygen is the direct effect tested here.",
+          "whyWrong": "Some evaporation can occur, but lower dissolved oxygen is the direct effect tested here."
+        },
+        {
+          "id": "b",
+          "text": "volume of chemical waste increase",
+          "why": "Adding heat need not introduce chemical waste.",
+          "whyWrong": "Adding heat need not introduce chemical waste."
+        },
+        {
+          "id": "c",
+          "text": "level of oxides of nitrogen increase",
+          "why": "Heating water does not necessarily add nitrogen oxides to it.",
+          "whyWrong": "Heating water does not necessarily add nitrogen oxides to it."
+        },
+        {
+          "id": "d",
+          "text": "level of oxygen reduces",
+          "why": "Heating generally lowers the solubility of oxygen in water. Thermal pollution can therefore reduce dissolved oxygen available to aquatic organisms.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think about how much gas warm water can hold.",
+      "explanation": "Heating generally lowers the solubility of oxygen in water. Thermal pollution can therefore reduce dissolved oxygen available to aquatic organisms.",
+      "trap": "Some evaporation can occur, but lower dissolved oxygen is the direct effect tested here.",
+      "mnemonic": "Warm water generally holds less dissolved oxygen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Warm water generally holds less dissolved oxygen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Some evaporation can occur, but lower dissolved oxygen is the direct effect tested here."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2011-022",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Hydrated salts and atmospheric moisture",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is a deliquescent compound?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Na_{2}CO_{3}",
+          "why": "Sodium carbonate is not the usual deliquescent salt in this list.",
+          "whyWrong": "Sodium carbonate is not the usual deliquescent salt in this list."
+        },
+        {
+          "id": "b",
+          "text": "CaCl_{2}",
+          "why": "Calcium chloride absorbs water vapour from the air and can dissolve in the absorbed water. This behaviour is deliquescence.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "CuO",
+          "why": "Copper(II) oxide does not absorb moisture and dissolve in it under these conditions.",
+          "whyWrong": "Copper(II) oxide does not absorb moisture and dissolve in it under these conditions."
+        },
+        {
+          "id": "d",
+          "text": "Na_{2}CO_{3}·10H_{2}O",
+          "why": "Washing soda can lose water of crystallisation on exposure. That is efflorescence.",
+          "whyWrong": "Washing soda can lose water of crystallisation on exposure. That is efflorescence."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Look for a compound that absorbs enough moisture to form a solution.",
+      "explanation": "Calcium chloride absorbs water vapour from the air and can dissolve in the absorbed water. This behaviour is deliquescence.",
+      "trap": "Washing soda can lose water of crystallisation on exposure. That is efflorescence.",
+      "mnemonic": "Deliquescence means taking up water until a solution forms.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Deliquescence means taking up water until a solution forms."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Washing soda can lose water of crystallisation on exposure. That is efflorescence."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 22,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2011-040",
+      "subject": "chemistry",
+      "chapter": "18",
+      "topic": "Introduction to Organic Chemistry",
+      "concept": "Carbon catenation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The ability of carbon to form long chains is referred to as",
+      "options": [
+        {
+          "id": "a",
+          "text": "alkylation",
+          "why": "Alkylation introduces an alkyl group.",
+          "whyWrong": "Alkylation introduces an alkyl group."
+        },
+        {
+          "id": "b",
+          "text": "acylation",
+          "why": "Acylation introduces an acyl group.",
+          "whyWrong": "Acylation introduces an acyl group."
+        },
+        {
+          "id": "c",
+          "text": "catenation",
+          "why": "Carbon forms strong C–C bonds, allowing long chains and rings. This self-linking is catenation.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "carbonation",
+          "why": "Carbonation introduces or dissolves carbon dioxide in familiar examples.",
+          "whyWrong": "Carbonation introduces or dissolves carbon dioxide in familiar examples."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Name the ability of atoms of one element to link to each other.",
+      "explanation": "Carbon forms strong C–C bonds, allowing long chains and rings. This self-linking is catenation.",
+      "trap": "Alkylation introduces an alkyl group.",
+      "mnemonic": "Catenation means self-linking into chains.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Catenation means self-linking into chains."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Alkylation introduces an alkyl group."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 40,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2011-043",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Empirical formula and mass",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An organic compound has empirical formula CH_{2}O and vapour density 45. What is its molecular formula? Take C = 12, H = 1 and O = 16.",
+      "options": [
+        {
+          "id": "a",
+          "text": "C_{3}H_{7}OH",
+          "why": "C_{3}H_{7}OH has relative molecular mass 60 and a different atom ratio.",
+          "whyWrong": "C_{3}H_{7}OH has relative molecular mass 60 and a different atom ratio."
+        },
+        {
+          "id": "b",
+          "text": "C_{2}H_{5}OH",
+          "why": "C_{2}H_{5}OH has relative molecular mass 46 and a different atom ratio.",
+          "whyWrong": "C_{2}H_{5}OH has relative molecular mass 46 and a different atom ratio."
+        },
+        {
+          "id": "c",
+          "text": "C_{3}H_{6}O_{3}",
+          "why": "The empirical unit CH_{2}O has mass 30. The relative molecular mass is 2 × 45 = 90. Multiply all the subscripts by 90/30 = 3 to get C_{3}H_{6}O_{3}.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "C_{2}H_{4}O_{2}",
+          "why": "C_{2}H_{4}O_{2} has the right ratio but a relative molecular mass of 60.",
+          "whyWrong": "C_{2}H_{4}O_{2} has the right ratio but a relative molecular mass of 60."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Work out the empirical formula mass and double the vapour density.",
+      "explanation": "The empirical unit CH_{2}O has mass 30. The relative molecular mass is 2 × 45 = 90. Multiply all the subscripts by 90/30 = 3 to get C_{3}H_{6}O_{3}.",
+      "trap": "C_{2}H_{4}O_{2} has the right ratio but a relative molecular mass of 60.",
+      "mnemonic": "First find molecular mass, then scale the empirical subscripts together.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "First find molecular mass, then scale the empirical subscripts together."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "C_{2}H_{4}O_{2} has the right ratio but a relative molecular mass of 60."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 43,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-003",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Mole concept",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "How many atoms are present in 6.0 g of magnesium? Take Mg = 24 and N_{A} = 6.02 × 10^{23} mol^{−1}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.20 × 10^{22}",
+          "why": "This is about 0.020 mol of atoms.",
+          "whyWrong": "This is about 0.020 mol of atoms."
+        },
+        {
+          "id": "b",
+          "text": "2.41 × 10^{22}",
+          "why": "This is about 0.040 mol of atoms.",
+          "whyWrong": "This is about 0.040 mol of atoms."
+        },
+        {
+          "id": "c",
+          "text": "1.51 × 10^{23}",
+          "why": "6.0 g of magnesium is 6.0/24 = 0.250 mol. Multiplying by 6.02 × 10^{23} gives 1.505 × 10^{23}, or about 1.51 × 10^{23} atoms.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "3.02 × 10^{23}",
+          "why": "This counts about 0.50 mol, twice the amount present.",
+          "whyWrong": "This counts about 0.50 mol, twice the amount present."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Find what fraction of a mole 6.0 g represents.",
+      "explanation": "6.0 g of magnesium is 6.0/24 = 0.250 mol. Multiplying by 6.02 × 10^{23} gives 1.505 × 10^{23}, or about 1.51 × 10^{23} atoms.",
+      "trap": "This counts about 0.50 mol, twice the amount present.",
+      "mnemonic": "Mass → moles → number of particles.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Mass → moles → number of particles."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "This counts about 0.50 mol, twice the amount present."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 3,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-006",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Limiting reagent",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "For 2H_{2}(g) + O_{2}(g) → 2H_{2}O(g), what volume of hydrogen remains after 300 cm^{3} of oxygen reacts with 1000 cm^{3} of hydrogen? Compare gas volumes at the same temperature and pressure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 cm^{3}",
+          "why": "200 cm^{3} would mean 800 cm^{3} reacted, which would need 400 cm^{3} of oxygen.",
+          "whyWrong": "200 cm^{3} would mean 800 cm^{3} reacted, which would need 400 cm^{3} of oxygen."
+        },
+        {
+          "id": "b",
+          "text": "400 cm^{3}",
+          "why": "At the same temperature and pressure, 300 cm^{3} of O_{2} consumes 600 cm^{3} of H_{2}. From 1000 cm^{3} of hydrogen, 400 cm^{3} remains.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "600 cm^{3}",
+          "why": "600 cm^{3} reacts. The question asks what is left.",
+          "whyWrong": "600 cm^{3} reacts. The question asks what is left."
+        },
+        {
+          "id": "d",
+          "text": "700 cm^{3}",
+          "why": "700 cm^{3} would assume equal volumes of hydrogen and oxygen react.",
+          "whyWrong": "700 cm^{3} would assume equal volumes of hydrogen and oxygen react."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Use the two-to-one ratio of hydrogen to oxygen gas volumes.",
+      "explanation": "At the same temperature and pressure, 300 cm^{3} of O_{2} consumes 600 cm^{3} of H_{2}. From 1000 cm^{3} of hydrogen, 400 cm^{3} remains.",
+      "trap": "600 cm^{3} reacts. The question asks what is left.",
+      "mnemonic": "Apply the equation’s volume ratio before subtracting the reacted amount.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Apply the equation’s volume ratio before subtracting the reacted amount."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "600 cm^{3} reacts. The question asks what is left."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 6,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-010",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Electronic configuration",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the electronic configuration of Mg^{2+}?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{2}",
+          "why": "This configuration has 14 electrons, two more than neutral magnesium.",
+          "whyWrong": "This configuration has 14 electrons, two more than neutral magnesium."
+        },
+        {
+          "id": "b",
+          "text": "1s^{2} 2s^{2} 2p^{6} 3s^{2}",
+          "why": "This still has the two 3s electrons of the neutral atom.",
+          "whyWrong": "This still has the two 3s electrons of the neutral atom."
+        },
+        {
+          "id": "c",
+          "text": "1s^{2} 2s^{2} 2p^{6}",
+          "why": "Neutral magnesium has configuration 1s^{2} 2s^{2} 2p^{6} 3s^{2}. Loss of the two 3s electrons gives Mg^{2+} with ten electrons.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "1s^{2} 2s^{2} 2p^{4}",
+          "why": "This has eight electrons and would remove two extra electrons from 2p.",
+          "whyWrong": "This has eight electrons and would remove two extra electrons from 2p."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Remove two electrons from the outermost occupied subshell of magnesium.",
+      "explanation": "Neutral magnesium has configuration 1s^{2} 2s^{2} 2p^{6} 3s^{2}. Loss of the two 3s electrons gives Mg^{2+} with ten electrons.",
+      "trap": "This still has the two 3s electrons of the neutral atom.",
+      "mnemonic": "Form Mg²⁺ by removing the two outer 3s electrons.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Form Mg²⁺ by removing the two outer 3s electrons."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "This still has the two 3s electrons of the neutral atom."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 10,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-011",
+      "subject": "chemistry",
+      "chapter": "16",
+      "topic": "Non-metals and their Compounds",
+      "concept": "Halogens and their compounds",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Group VII elements are",
+      "options": [
+        {
+          "id": "a",
+          "text": "monoatomic",
+          "why": "Elemental halogens such as chlorine are diatomic.",
+          "whyWrong": "Elemental halogens such as chlorine are diatomic."
+        },
+        {
+          "id": "b",
+          "text": "good oxidizing agents",
+          "why": "The halogens readily accept electrons and can oxidise other substances while being reduced to halide ions.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "highly electropositive",
+          "why": "Halogens are electronegative non-metals.",
+          "whyWrong": "Halogens are electronegative non-metals."
+        },
+        {
+          "id": "d",
+          "text": "electron donors",
+          "why": "A halogen acts as an electron acceptor when it oxidises another substance.",
+          "whyWrong": "A halogen acts as an electron acceptor when it oxidises another substance."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Think about what halogen atoms tend to do to complete their valence shell.",
+      "explanation": "The halogens readily accept electrons and can oxidise other substances while being reduced to halide ions.",
+      "trap": "A halogen acts as an electron acceptor when it oxidises another substance.",
+      "mnemonic": "Oxidising agents gain electrons.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Oxidising agents gain electrons."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "A halogen acts as an electron acceptor when it oxidises another substance."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 11,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-015",
+      "subject": "chemistry",
+      "chapter": "12",
+      "topic": "Environmental Pollution",
+      "concept": "Water treatment and disinfection",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Chlorination of water for town supply is carried out to",
+      "options": [
+        {
+          "id": "a",
+          "text": "make the water colourless",
+          "why": "Colour removal is usually handled by other treatment stages.",
+          "whyWrong": "Colour removal is usually handled by other treatment stages."
+        },
+        {
+          "id": "b",
+          "text": "remove germs from the water",
+          "why": "Chlorination disinfects a water supply by killing or inactivating many disease-causing microorganisms.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "make the water tasteful",
+          "why": "Improved taste is not the purpose of chlorination.",
+          "whyWrong": "Improved taste is not the purpose of chlorination."
+        },
+        {
+          "id": "d",
+          "text": "remove odour from the water",
+          "why": "Odour removal is not the main purpose of adding chlorine.",
+          "whyWrong": "Odour removal is not the main purpose of adding chlorine."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "What public health problem does adding chlorine address?",
+      "explanation": "Chlorination disinfects a water supply by killing or inactivating many disease-causing microorganisms.",
+      "trap": "Odour removal is not the main purpose of adding chlorine.",
+      "mnemonic": "Chlorination is the disinfection step.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Chlorination is the disinfection step."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Odour removal is not the main purpose of adding chlorine."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 15,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-016",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Solubility and solubility curves",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The solubilities of different solutes in a given solvent can be compared by",
+      "options": [
+        {
+          "id": "a",
+          "text": "plotting their solubility curves on separate axes",
+          "why": "Separate axes make a like-for-like comparison less direct.",
+          "whyWrong": "Separate axes make a like-for-like comparison less direct."
+        },
+        {
+          "id": "b",
+          "text": "plotting their solubility curves on the same axes",
+          "why": "Plot the curves on the same axes with common units and scales. At any temperature, their heights show the different solubilities directly.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "plotting some of the solubility curves on the x-axis and others on the y-axis",
+          "why": "Every curve needs both a temperature and a solubility coordinate.",
+          "whyWrong": "Every curve needs both a temperature and a solubility coordinate."
+        },
+        {
+          "id": "d",
+          "text": "plotting their solubility curves on the x-axis only",
+          "why": "The x-axis alone can show temperature but cannot display solubility values.",
+          "whyWrong": "The x-axis alone can show temperature but cannot display solubility values."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Make sure the curves can be compared at the same temperature.",
+      "explanation": "Plot the curves on the same axes with common units and scales. At any temperature, their heights show the different solubilities directly.",
+      "trap": "Separate axes make a like-for-like comparison less direct.",
+      "mnemonic": "Common axes give common conditions for comparison.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Common axes give common conditions for comparison."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Separate axes make a like-for-like comparison less direct."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 16,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-023",
+      "subject": "chemistry",
+      "chapter": "14",
+      "topic": "Oxidation and Reduction",
+      "concept": "Oxidation numbers",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What is the oxidation number of boron in NaBH_{4}?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3",
+          "why": "With B at −3 the oxidation numbers would total −6.",
+          "whyWrong": "With B at −3 the oxidation numbers would total −6."
+        },
+        {
+          "id": "b",
+          "text": "−1",
+          "why": "−1 is the charge of the whole borohydride ion, rather than the oxidation number of B.",
+          "whyWrong": "−1 is the charge of the whole borohydride ion, rather than the oxidation number of B."
+        },
+        {
+          "id": "c",
+          "text": "+1",
+          "why": "With B at +1 the total in the neutral compound would be −2.",
+          "whyWrong": "With B at +1 the total in the neutral compound would be −2."
+        },
+        {
+          "id": "d",
+          "text": "+3",
+          "why": "Na is +1, and the four hydride hydrogens contribute −4. Charge balance in neutral NaBH_{4} gives +1 + x − 4 = 0, so boron is +3.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Use −1 for hydrogen in the borohydride ion.",
+      "explanation": "Na is +1, and the four hydride hydrogens contribute −4. Charge balance in neutral NaBH_{4} gives +1 + x − 4 = 0, so boron is +3.",
+      "trap": "−1 is the charge of the whole borohydride ion, rather than the oxidation number of B.",
+      "mnemonic": "In BH₄⁻, assign H as hydride and make the total −1.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "In BH₄⁻, assign H as hydride and make the total −1."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "−1 is the charge of the whole borohydride ion, rather than the oxidation number of B."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 23,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-025",
+      "subject": "chemistry",
+      "chapter": "15",
+      "topic": "Electrolysis",
+      "concept": "Faraday’s laws",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "How many moles of copper are deposited from Cu^{2+} ions by 360 C of electricity? Take F = 96,500 C mol^{−1}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "5.36 × 10^{-4} mole",
+          "why": "This gives far less copper than the charge can deposit.",
+          "whyWrong": "This gives far less copper than the charge can deposit."
+        },
+        {
+          "id": "b",
+          "text": "1.87 × 10^{-3} mole",
+          "why": "The charge supplies 360/96500 mol of electrons. Divide by two for Cu^{2+} + 2e^{−} → Cu to obtain 1.87 × 10^{−3} mol of copper.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "9.35 × 10^{-4} mole",
+          "why": "This is half the amount calculated using two electrons per copper ion.",
+          "whyWrong": "This is half the amount calculated using two electrons per copper ion."
+        },
+        {
+          "id": "d",
+          "text": "3.73 × 10^{-3} mole",
+          "why": "This is the number of moles of electrons, before applying the two-to-one ratio.",
+          "whyWrong": "This is the number of moles of electrons, before applying the two-to-one ratio."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "One copper(II) ion needs two electrons to become copper metal.",
+      "explanation": "The charge supplies 360/96500 mol of electrons. Divide by two for Cu^{2+} + 2e^{−} → Cu to obtain 1.87 × 10^{−3} mol of copper.",
+      "trap": "This is the number of moles of electrons, before applying the two-to-one ratio.",
+      "mnemonic": "For Cu²⁺, two faradays deposit one mole of copper.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "For Cu²⁺, two faradays deposit one mole of copper."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "This is the number of moles of electrons, before applying the two-to-one ratio."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 25,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-029",
+      "subject": "chemistry",
+      "chapter": "8",
+      "topic": "Rates of Reaction",
+      "concept": "Factors affecting reaction rate",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which combination gives the highest rate of carbon dioxide production?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.05 mol dm^{−3} HCl and 5 g powdered CaCO_{3}",
+          "why": "This uses powder but a weaker acid concentration.",
+          "whyWrong": "This uses powder but a weaker acid concentration."
+        },
+        {
+          "id": "b",
+          "text": "0.05 mol dm^{−3} HCl and a 5 g lump of CaCO_{3}",
+          "why": "This uses both a lower concentration and a lump with less exposed surface.",
+          "whyWrong": "This uses both a lower concentration and a lump with less exposed surface."
+        },
+        {
+          "id": "c",
+          "text": "0.10 mol dm^{−3} HCl and 5 g powdered CaCO_{3}",
+          "why": "Powder exposes more calcium carbonate surface, and the 0.10 mol dm^{−3} acid has the highest concentration. Together these give the highest collision rate and fastest carbon dioxide production.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "0.025 mol dm^{−3} HCl and 5 g powdered CaCO_{3}",
+          "why": "This uses powder with the lowest acid concentration listed.",
+          "whyWrong": "This uses powder with the lowest acid concentration listed."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare both acid concentration and the exposed area of the solid.",
+      "explanation": "Powder exposes more calcium carbonate surface, and the 0.10 mol dm^{−3} acid has the highest concentration. Together these give the highest collision rate and fastest carbon dioxide production.",
+      "trap": "This uses powder but a weaker acid concentration.",
+      "mnemonic": "Finer solid and more concentrated solution increase collision frequency.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Finer solid and more concentrated solution increase collision frequency."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This uses powder but a weaker acid concentration."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2012-040",
+      "subject": "chemistry",
+      "chapter": "18",
+      "topic": "Introduction to Organic Chemistry",
+      "concept": "Isomerism",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Geometric isomerism can exist in",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hex-3-ene",
+          "why": "Each carbon of the double bond in hex-3-ene carries a hydrogen and an ethyl group. Restricted rotation therefore allows distinct geometric isomers.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Hexane",
+          "why": "Hexane has no double bond to restrict rotation.",
+          "whyWrong": "Hexane has no double bond to restrict rotation."
+        },
+        {
+          "id": "c",
+          "text": "Prop-1-ene",
+          "why": "Prop-1-ene has two hydrogens on the terminal alkene carbon.",
+          "whyWrong": "Prop-1-ene has two hydrogens on the terminal alkene carbon."
+        },
+        {
+          "id": "d",
+          "text": "3-Methylbut-1-ene",
+          "why": "3-Methylbut-1-ene also has two hydrogens on its terminal alkene carbon.",
+          "whyWrong": "3-Methylbut-1-ene also has two hydrogens on its terminal alkene carbon."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Check for a double bond and different substituents on both of its carbons.",
+      "explanation": "Each carbon of the double bond in hex-3-ene carries a hydrogen and an ethyl group. Restricted rotation therefore allows distinct geometric isomers.",
+      "trap": "Prop-1-ene has two hydrogens on the terminal alkene carbon.",
+      "mnemonic": "Each double-bond carbon must have two different groups.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Each double-bond carbon must have two different groups."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Prop-1-ene has two hydrogens on the terminal alkene carbon."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 40,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-003",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Percentage composition",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What is the percentage of sulphur in sulphur (IV) oxide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "66%",
+          "why": "66% would make sulfur about two-thirds of the mass. Both elements contribute equal masses here.",
+          "whyWrong": "66% would make sulfur about two-thirds of the mass. Both elements contribute equal masses here."
+        },
+        {
+          "id": "b",
+          "text": "25%",
+          "why": "25% is half the correct mass fraction.",
+          "whyWrong": "25% is half the correct mass fraction."
+        },
+        {
+          "id": "c",
+          "text": "40%",
+          "why": "40% would assign more mass to oxygen than the two oxygen atoms contribute.",
+          "whyWrong": "40% would assign more mass to oxygen than the two oxygen atoms contribute."
+        },
+        {
+          "id": "d",
+          "text": "50%",
+          "why": "One mole of SO_{2} contains 32 g of sulfur and 32 g of oxygen. Sulfur therefore contributes 32/64 × 100 = 50%.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Start with the formula SO₂ and compare the sulfur mass with the total.",
+      "explanation": "One mole of SO_{2} contains 32 g of sulfur and 32 g of oxygen. Sulfur therefore contributes 32/64 × 100 = 50%.",
+      "trap": "25% is half the correct mass fraction.",
+      "mnemonic": "Percentage by mass is part mass divided by formula mass, times 100.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Percentage by mass is part mass divided by formula mass, times 100."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "25% is half the correct mass fraction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 3,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-005",
+      "subject": "chemistry",
+      "chapter": "3",
+      "topic": "States of Matter, Kinetic Theory and Gas Laws",
+      "concept": "Ideal gas equation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A 200 cm^{3} gas sample at 25°C exerts a pressure of 700 mmHg. What is its pressure at a volume of 350 cm^{3} and a temperature of 75°C?",
+      "options": [
+        {
+          "id": "a",
+          "text": "342.53 mmHg",
+          "why": "This uses the temperature ratio in the wrong direction.",
+          "whyWrong": "This uses the temperature ratio in the wrong direction."
+        },
+        {
+          "id": "b",
+          "text": "1430.54 mmHg",
+          "why": "This treats the expansion as a compression in the pressure calculation.",
+          "whyWrong": "This treats the expansion as a compression in the pressure calculation."
+        },
+        {
+          "id": "c",
+          "text": "467.11 mmHg",
+          "why": "The combined gas law gives P_{2} = 700 × (200/350) × (348/298) ≈ 467.11 mmHg.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "400.00 mmHg",
+          "why": "400.00 mmHg accounts for the volume change alone and ignores the heating.",
+          "whyWrong": "400.00 mmHg accounts for the volume change alone and ignores the heating."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Use Kelvin temperatures and account for the larger final volume.",
+      "explanation": "The combined gas law gives P_{2} = 700 × (200/350) × (348/298) ≈ 467.11 mmHg.",
+      "trap": "400.00 mmHg accounts for the volume change alone and ignores the heating.",
+      "mnemonic": "For a fixed gas sample, PV/T stays constant.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "For a fixed gas sample, PV/T stays constant."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "400.00 mmHg accounts for the volume change alone and ignores the heating."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 5,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-009",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Subatomic particles",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "How many protons, neutrons and electrons, respectively, are present in a neutral cobalt-60 atom of atomic number 27?",
+      "options": [
+        {
+          "id": "a",
+          "text": "27, 33 and 33",
+          "why": "The electron count equals the proton count for a neutral atom.",
+          "whyWrong": "The electron count equals the proton count for a neutral atom."
+        },
+        {
+          "id": "b",
+          "text": "33, 27 and 27",
+          "why": "This swaps the proton and neutron counts.",
+          "whyWrong": "This swaps the proton and neutron counts."
+        },
+        {
+          "id": "c",
+          "text": "27, 33, and 27",
+          "why": "Cobalt has atomic number 27 and mass number 60 in this isotope. It has 27 protons, 33 neutrons and, as a neutral atom, 27 electrons.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "60, 33 and 60",
+          "why": "60 is the nucleon total, rather than the number of protons or electrons.",
+          "whyWrong": "60 is the nucleon total, rather than the number of protons or electrons."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Use the atomic number for protons and subtract it from the mass number for neutrons.",
+      "explanation": "Cobalt has atomic number 27 and mass number 60 in this isotope. It has 27 protons, 33 neutrons and, as a neutral atom, 27 electrons.",
+      "trap": "The electron count equals the proton count for a neutral atom.",
+      "mnemonic": "Atomic number gives protons. Mass number minus atomic number gives neutrons.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Atomic number gives protons. Mass number minus atomic number gives neutrons."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The electron count equals the proton count for a neutral atom."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-013",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Water hardness",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Water is said to be temporarily hard when it contains",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ca(HCO_{3})_{2} and Mg(HCO_{3})_{2}",
+          "why": "Dissolved calcium and magnesium hydrogencarbonates give temporary hardness. Heating decomposes the hydrogencarbonates and helps remove the hardness ions as precipitates.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Ca(HCO_{3})_{2} and CaCO_{3}",
+          "why": "Calcium carbonate is sparingly soluble and is produced when calcium hydrogencarbonate is heated.",
+          "whyWrong": "Calcium carbonate is sparingly soluble and is produced when calcium hydrogencarbonate is heated."
+        },
+        {
+          "id": "c",
+          "text": "Mg(HCO_{3})_{2} and CaSO_{4}",
+          "why": "Calcium sulfate contributes permanent hardness.",
+          "whyWrong": "Calcium sulfate contributes permanent hardness."
+        },
+        {
+          "id": "d",
+          "text": "CaSO_{4} and Ca(HCO_{3})_{2}",
+          "why": "Calcium sulfate is not removed by the boiling treatment for temporary hardness.",
+          "whyWrong": "Calcium sulfate is not removed by the boiling treatment for temporary hardness."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify the dissolved salts whose hardness can be removed by boiling.",
+      "explanation": "Dissolved calcium and magnesium hydrogencarbonates give temporary hardness. Heating decomposes the hydrogencarbonates and helps remove the hardness ions as precipitates.",
+      "trap": "Calcium sulfate contributes permanent hardness.",
+      "mnemonic": "Hydrogencarbonates give temporary hardness; sulfates generally give permanent hardness.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Hydrogencarbonates give temporary hardness; sulfates generally give permanent hardness."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Calcium sulfate contributes permanent hardness."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 13,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-014",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Hydrated salts and atmospheric moisture",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "On exposure to the atmosphere, a hydrated salt loses its water of crystallization to become anhydrous. This phenomenon is referred to as",
+      "options": [
+        {
+          "id": "a",
+          "text": "efflorescence",
+          "why": "Efflorescence occurs when a hydrated crystal loses some or all of its water of crystallisation to the air.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "deliquescence",
+          "why": "Deliquescence takes in enough moisture to dissolve the solid.",
+          "whyWrong": "Deliquescence takes in enough moisture to dissolve the solid."
+        },
+        {
+          "id": "c",
+          "text": "hygroscopy",
+          "why": "Hygroscopy refers to taking up moisture from the air.",
+          "whyWrong": "Hygroscopy refers to taking up moisture from the air."
+        },
+        {
+          "id": "d",
+          "text": "hydrolysis",
+          "why": "Hydrolysis is a reaction with water.",
+          "whyWrong": "Hydrolysis is a reaction with water."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Is the salt taking up water or losing its crystal water?",
+      "explanation": "Efflorescence occurs when a hydrated crystal loses some or all of its water of crystallisation to the air.",
+      "trap": "Deliquescence takes in enough moisture to dissolve the solid.",
+      "mnemonic": "Efflorescence lets crystal water escape.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Efflorescence lets crystal water escape."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Deliquescence takes in enough moisture to dissolve the solid."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-018",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "Acids and bases",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the basicity of CH_{3}COOH?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4",
+          "why": "Counting all four hydrogens includes three non-acidic methyl hydrogens.",
+          "whyWrong": "Counting all four hydrogens includes three non-acidic methyl hydrogens."
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "why": "Ethanoic acid has one carboxyl group and can donate one proton per molecule. The three hydrogens on the methyl carbon are not counted in its basicity.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "why": "One COOH group supplies one acidic proton.",
+          "whyWrong": "One COOH group supplies one acidic proton."
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "why": "Counting the methyl hydrogens would leave out the acidic carboxyl proton.",
+          "whyWrong": "Counting the methyl hydrogens would leave out the acidic carboxyl proton."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Count the hydrogens that can be released as acidic protons.",
+      "explanation": "Ethanoic acid has one carboxyl group and can donate one proton per molecule. The three hydrogens on the methyl carbon are not counted in its basicity.",
+      "trap": "Counting all four hydrogens includes three non-acidic methyl hydrogens.",
+      "mnemonic": "For a carboxylic acid, count acidic COOH protons.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "For a carboxylic acid, count acidic COOH protons."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Counting all four hydrogens includes three non-acidic methyl hydrogens."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 18,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-022",
+      "subject": "chemistry",
+      "chapter": "14",
+      "topic": "Oxidation and Reduction",
+      "concept": "Oxidising and reducing agents",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "In Zn(s) + CuSO_{4}(aq) → ZnSO_{4}(aq) + Cu(s), how does the oxidation number of the reducing agent change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 to +4",
+          "why": "The product contains Zn^{2+}, rather than Zn^{4+}.",
+          "whyWrong": "The product contains Zn^{2+}, rather than Zn^{4+}."
+        },
+        {
+          "id": "b",
+          "text": "0 to +2",
+          "why": "Zinc metal supplies two electrons to Cu^{2+} and becomes Zn^{2+}. Its oxidation number moves from 0 to +2.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "+1 to +2",
+          "why": "Elemental zinc begins at oxidation number zero.",
+          "whyWrong": "Elemental zinc begins at oxidation number zero."
+        },
+        {
+          "id": "d",
+          "text": "+1 to +3",
+          "why": "Neither +1 nor +3 is the zinc oxidation number at either end of the reaction.",
+          "whyWrong": "Neither +1 nor +3 is the zinc oxidation number at either end of the reaction."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Identify the reactant that loses electrons.",
+      "explanation": "Zinc metal supplies two electrons to Cu^{2+} and becomes Zn^{2+}. Its oxidation number moves from 0 to +2.",
+      "trap": "Elemental zinc begins at oxidation number zero.",
+      "mnemonic": "The reducing agent itself is oxidised.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The reducing agent itself is oxidised."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Elemental zinc begins at oxidation number zero."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 22,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-027",
+      "subject": "chemistry",
+      "chapter": "7",
+      "topic": "Energy Changes",
+      "concept": "Enthalpy changes",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "At 25°C, a system has a free energy change of −899 J mol^{−1} and an entropy change of 10 J mol^{−1} K^{−1}. Calculate the enthalpy change.",
+      "options": [
+        {
+          "id": "a",
+          "text": "+2081 J mol^{−1}",
+          "why": "At 25°C, T ≈ 298 K. Thus ΔH = ΔG + TΔS = −899 + 298 × 10 = +2081 J mol^{−1}.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "−2081 J mol^{−1}",
+          "why": "The positive TΔS term is greater than 899, making the result positive.",
+          "whyWrong": "The positive TΔS term is greater than 899, making the result positive."
+        },
+        {
+          "id": "c",
+          "text": "−649 J mol^{−1}",
+          "why": "This is what you obtain if you use 25 instead of 298 K.",
+          "whyWrong": "This is what you obtain if you use 25 instead of 298 K."
+        },
+        {
+          "id": "d",
+          "text": "+649 J mol^{−1}",
+          "why": "Using Celsius also gives the wrong magnitude for TΔS.",
+          "whyWrong": "Using Celsius also gives the wrong magnitude for TΔS."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Rearrange ΔG = ΔH − TΔS and convert the temperature to Kelvin.",
+      "explanation": "At 25°C, T ≈ 298 K. Thus ΔH = ΔG + TΔS = −899 + 298 × 10 = +2081 J mol^{−1}.",
+      "trap": "This is what you obtain if you use 25 instead of 298 K.",
+      "mnemonic": "Add TΔS to ΔG to recover ΔH, using Kelvin.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Add TΔS to ΔG to recover ΔH, using Kelvin."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "This is what you obtain if you use 25 instead of 298 K."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 27,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-039",
+      "subject": "chemistry",
+      "chapter": "18",
+      "topic": "Introduction to Organic Chemistry",
+      "concept": "Functional groups",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the general formula of a monohaloalkane, where X represents the halogen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C_{n}H_{2n−1}X",
+          "why": "This has two hydrogens fewer than the mono-haloalkane formula.",
+          "whyWrong": "This has two hydrogens fewer than the mono-haloalkane formula."
+        },
+        {
+          "id": "b",
+          "text": "C_{n}H_{2n}X",
+          "why": "This has one hydrogen too few.",
+          "whyWrong": "This has one hydrogen too few."
+        },
+        {
+          "id": "c",
+          "text": "C_{n}H_{2n+2}X",
+          "why": "Adding X without removing H would exceed the substitution formula.",
+          "whyWrong": "Adding X without removing H would exceed the substitution formula."
+        },
+        {
+          "id": "d",
+          "text": "C_{n}H_{2n+1}X",
+          "why": "A saturated acyclic alkane has formula C_{n}H_{2n+2}. Replacing one hydrogen with a halogen gives C_{n}H_{2n+1}X.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Start with the formula of an alkane and replace one hydrogen by X.",
+      "explanation": "A saturated acyclic alkane has formula C_{n}H_{2n+2}. Replacing one hydrogen with a halogen gives C_{n}H_{2n+1}X.",
+      "trap": "Adding X without removing H would exceed the substitution formula.",
+      "mnemonic": "One halogen takes the place of one hydrogen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "One halogen takes the place of one hydrogen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Adding X without removing H would exceed the substitution formula."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 39,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2014-049",
+      "subject": "chemistry",
+      "chapter": "21",
+      "topic": "Polymers and Chemistry in Industry",
+      "concept": "Petrochemicals",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The process of converting linear alkanes to branched chain and cyclic hydrocarbons by heating in the presence of a catalyst to improve the quality of petrol is referred to as",
+      "options": [
+        {
+          "id": "a",
+          "text": "refining",
+          "why": "Refining is the general processing of crude oil, rather than this particular conversion.",
+          "whyWrong": "Refining is the general processing of crude oil, rather than this particular conversion."
+        },
+        {
+          "id": "b",
+          "text": "cracking",
+          "why": "Cracking mainly breaks larger molecules into smaller ones.",
+          "whyWrong": "Cracking mainly breaks larger molecules into smaller ones."
+        },
+        {
+          "id": "c",
+          "text": "reforming",
+          "why": "Reforming rearranges straight-chain hydrocarbons into branched and cyclic compounds to improve petrol quality and raise octane rating.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "blending",
+          "why": "Blending mixes streams and does not rearrange their molecules.",
+          "whyWrong": "Blending mixes streams and does not rearrange their molecules."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Distinguish changing molecular structure from separating a mixture.",
+      "explanation": "Reforming rearranges straight-chain hydrocarbons into branched and cyclic compounds to improve petrol quality and raise octane rating.",
+      "trap": "Cracking mainly breaks larger molecules into smaller ones.",
+      "mnemonic": "Reforming reshapes hydrocarbons. Cracking breaks them apart.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Reforming reshapes hydrocarbons. Cracking breaks them apart."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Cracking mainly breaks larger molecules into smaller ones."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 49,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-001",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Isotopes",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "Element X has two isotopes with mass numbers 20 and 22, present in the ratio 1:3. What is the relative atomic mass of X?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20.5",
+          "why": "This weights the mass-20 isotope more heavily.",
+          "whyWrong": "This weights the mass-20 isotope more heavily."
+        },
+        {
+          "id": "b",
+          "text": "21.0",
+          "why": "21.0 is the unweighted mean of the two masses.",
+          "whyWrong": "21.0 is the unweighted mean of the two masses."
+        },
+        {
+          "id": "c",
+          "text": "21.5",
+          "why": "The weighted mean is (20 × 1 + 22 × 3)/(1 + 3) = 86/4 = 21.5.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "22.0",
+          "why": "22.0 would mean the lighter isotope is absent.",
+          "whyWrong": "22.0 would mean the lighter isotope is absent."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Give the isotope of mass 22 three times the weight of the isotope of mass 20.",
+      "explanation": "The weighted mean is (20 × 1 + 22 × 3)/(1 + 3) = 86/4 = 21.5.",
+      "trap": "21.0 is the unweighted mean of the two masses.",
+      "mnemonic": "Use the abundance ratio as the weights and divide by their sum.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Use the abundance ratio as the weights and divide by their sum."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "21.0 is the unweighted mean of the two masses."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 1,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-002",
+      "subject": "chemistry",
+      "chapter": "3",
+      "topic": "States of Matter, Kinetic Theory and Gas Laws",
+      "concept": "Diffusion and Graham’s law",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A volume of 200 cm^{3} of oxygen diffuses through a porous plug in 50 s. How long will 80 cm^{3} of methane, CH_{4}, take under the same conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 s",
+          "why": "This gives methane a lower rate than oxygen.",
+          "whyWrong": "This gives methane a lower rate than oxygen."
+        },
+        {
+          "id": "b",
+          "text": "20 s",
+          "why": "20 s uses the oxygen rate without adjusting for molecular mass.",
+          "whyWrong": "20 s uses the oxygen rate without adjusting for molecular mass."
+        },
+        {
+          "id": "c",
+          "text": "14 s",
+          "why": "Oxygen diffuses at 200/50 = 4 cm^{3} s^{−1}. Methane is lighter and diffuses √(32/16) = √2 times as fast. The time is 80/(4√2) ≈ 14 s.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "7 s",
+          "why": "7 s assumes roughly twice the actual methane rate.",
+          "whyWrong": "7 s assumes roughly twice the actual methane rate."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Use Graham’s law for rates, then find the time for 80 cm³.",
+      "explanation": "Oxygen diffuses at 200/50 = 4 cm^{3} s^{−1}. Methane is lighter and diffuses √(32/16) = √2 times as fast. The time is 80/(4√2) ≈ 14 s.",
+      "trap": "20 s uses the oxygen rate without adjusting for molecular mass.",
+      "mnemonic": "Graham gives a rate ratio. Time equals volume divided by rate.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Graham gives a rate ratio. Time equals volume divided by rate."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "20 s uses the oxygen rate without adjusting for molecular mass."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 2,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-009",
+      "subject": "chemistry",
+      "chapter": "14",
+      "topic": "Oxidation and Reduction",
+      "concept": "Oxidation numbers",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "What is the oxidation state of chromium in K_{2}Cr_{2}O_{7}?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+7",
+          "why": "+7 would make the sum +2 rather than zero.",
+          "whyWrong": "+7 would make the sum +2 rather than zero."
+        },
+        {
+          "id": "b",
+          "text": "+6",
+          "why": "For K_{2}Cr_{2}O_{7}, 2(+1) + 2x + 7(−2) = 0. This gives 2x = 12 and x = +6.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "+5",
+          "why": "+5 would make the sum −2.",
+          "whyWrong": "+5 would make the sum −2."
+        },
+        {
+          "id": "d",
+          "text": "+4",
+          "why": "+4 would make the sum −4.",
+          "whyWrong": "+4 would make the sum −4."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use +1 for potassium and −2 for oxygen.",
+      "explanation": "For K_{2}Cr_{2}O_{7}, 2(+1) + 2x + 7(−2) = 0. This gives 2x = 12 and x = +6.",
+      "trap": "+7 would make the sum +2 rather than zero.",
+      "mnemonic": "Set the sum to zero for a neutral formula.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Set the sum to zero for a neutral formula."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "+7 would make the sum +2 rather than zero."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-016",
+      "subject": "chemistry",
+      "chapter": "17",
+      "topic": "Metals and their Compounds",
+      "concept": "Extraction of metals",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The iron (iii) oxide impurity in bauxite can be removed by",
+      "options": [
+        {
+          "id": "a",
+          "text": "fractional crystallization in acid solution",
+          "why": "Acid does not provide the selective alkaline dissolution used here.",
+          "whyWrong": "Acid does not provide the selective alkaline dissolution used here."
+        },
+        {
+          "id": "b",
+          "text": "dissolution in sodium hydroxide and filtration",
+          "why": "In the Bayer process, the aluminium oxide component of bauxite dissolves in sodium hydroxide as aluminate. The insoluble iron-rich residue is then separated by filtration.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "extraction with concentrated ammonia and reprecipitation",
+          "why": "Concentrated ammonia is not the reagent used to separate the alumina from the iron-rich residue.",
+          "whyWrong": "Concentrated ammonia is not the reagent used to separate the alumina from the iron-rich residue."
+        },
+        {
+          "id": "d",
+          "text": "electrolysis of molten mixture",
+          "why": "Electrolysis extracts aluminium after purification, rather than removing this impurity first.",
+          "whyWrong": "Electrolysis extracts aluminium after purification, rather than removing this impurity first."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Look for a process that dissolves the aluminium compound and leaves the iron oxide behind.",
+      "explanation": "In the Bayer process, the aluminium oxide component of bauxite dissolves in sodium hydroxide as aluminate. The insoluble iron-rich residue is then separated by filtration.",
+      "trap": "Electrolysis extracts aluminium after purification, rather than removing this impurity first.",
+      "mnemonic": "Purify the bauxite first. Electrolyse the purified alumina later.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Purify the bauxite first. Electrolyse the purified alumina later."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Electrolysis extracts aluminium after purification, rather than removing this impurity first."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 16,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-017",
+      "subject": "chemistry",
+      "chapter": "17",
+      "topic": "Metals and their Compounds",
+      "concept": "Extraction of metals",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Aluminium is extracted commercially from its ore by",
+      "options": [
+        {
+          "id": "a",
+          "text": "heating aluminium oxide with coke in a furnace",
+          "why": "Coke reduction in a furnace is the familiar route for iron, rather than aluminium.",
+          "whyWrong": "Coke reduction in a furnace is the familiar route for iron, rather than aluminium."
+        },
+        {
+          "id": "b",
+          "text": "the electrolysis of fused aluminium oxide in cryolite",
+          "why": "Commercial production uses electrolysis of alumina dissolved in molten cryolite. The cryolite lets the mixture operate at a lower temperature than pure molten alumina.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "treating cryolite with sodium hydroxide solution under pressure",
+          "why": "Alkaline treatment is associated with ore purification, rather than the reduction to metal.",
+          "whyWrong": "Alkaline treatment is associated with ore purification, rather than the reduction to metal."
+        },
+        {
+          "id": "d",
+          "text": "heating sodium aluminium silicate to a high temperature",
+          "why": "Heating an aluminium silicate does not reduce the aluminium ions to metal.",
+          "whyWrong": "Heating an aluminium silicate does not reduce the aluminium ions to metal."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Aluminium is too reactive for ordinary carbon reduction.",
+      "explanation": "Commercial production uses electrolysis of alumina dissolved in molten cryolite. The cryolite lets the mixture operate at a lower temperature than pure molten alumina.",
+      "trap": "Coke reduction in a furnace is the familiar route for iron, rather than aluminium.",
+      "mnemonic": "Aluminium production uses molten cryolite and electrolysis.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Aluminium production uses molten cryolite and electrolysis."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Coke reduction in a furnace is the familiar route for iron, rather than aluminium."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-020",
+      "subject": "chemistry",
+      "chapter": "5",
+      "topic": "Chemical Bonding",
+      "concept": "Ionic bonding",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following chlorides would exhibit the least ionic character?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MgCl_{2}",
+          "why": "Mg^{2+} polarises chloride less strongly than Al^{3+}.",
+          "whyWrong": "Mg^{2+} polarises chloride less strongly than Al^{3+}."
+        },
+        {
+          "id": "b",
+          "text": "CaCl_{2}",
+          "why": "Ca^{2+} is larger and less polarising than Al^{3+}.",
+          "whyWrong": "Ca^{2+} is larger and less polarising than Al^{3+}."
+        },
+        {
+          "id": "c",
+          "text": "LiCl",
+          "why": "Li^{+} is small, but its single charge gives it less polarising power here.",
+          "whyWrong": "Li^{+} is small, but its single charge gives it less polarising power here."
+        },
+        {
+          "id": "d",
+          "text": "AlCl_{3}",
+          "why": "Al^{3+} has high charge density and strongly polarises chloride. This gives aluminium chloride more covalent character than the other chlorides listed.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "A small, highly charged cation distorts a chloride ion’s electron cloud more strongly.",
+      "explanation": "Al^{3+} has high charge density and strongly polarises chloride. This gives aluminium chloride more covalent character than the other chlorides listed.",
+      "trap": "Li^{+} is small, but its single charge gives it less polarising power here.",
+      "mnemonic": "Greater cation charge density means more covalent character.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Greater cation charge density means more covalent character."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Li^{+} is small, but its single charge gives it less polarising power here."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 20,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-026",
+      "subject": "chemistry",
+      "chapter": "21",
+      "topic": "Polymers and Chemistry in Industry",
+      "concept": "Industrial chemical processes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The substance often used for vulcanization of rubber is",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chlorine",
+          "why": "Chlorine is not the usual cross-linking agent in conventional sulfur vulcanisation.",
+          "whyWrong": "Chlorine is not the usual cross-linking agent in conventional sulfur vulcanisation."
+        },
+        {
+          "id": "b",
+          "text": "hydrogen peroxide",
+          "why": "Hydrogen peroxide is not the standard agent in this question.",
+          "whyWrong": "Hydrogen peroxide is not the standard agent in this question."
+        },
+        {
+          "id": "c",
+          "text": "Sulphur",
+          "why": "Sulfur forms cross-links between chains during conventional rubber vulcanisation. This improves the rubber’s mechanical properties.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "tetraoxosulphate (vi) acid",
+          "why": "Sulfuric acid is a compound of sulfur and is not the conventional vulcanising agent.",
+          "whyWrong": "Sulfuric acid is a compound of sulfur and is not the conventional vulcanising agent."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Recall the element that can make cross-links between rubber chains.",
+      "explanation": "Sulfur forms cross-links between chains during conventional rubber vulcanisation. This improves the rubber’s mechanical properties.",
+      "trap": "Sulfuric acid is a compound of sulfur and is not the conventional vulcanising agent.",
+      "mnemonic": "Vulcanised rubber has sulfur cross-links.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Vulcanised rubber has sulfur cross-links."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Sulfuric acid is a compound of sulfur and is not the conventional vulcanising agent."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-028",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Subatomic particles",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A particle that contains 11 protons, 12 neutrons and 10 electrons is probably a",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neutral non-metal",
+          "why": "Ten electrons cannot balance eleven protons, and sodium is a metal.",
+          "whyWrong": "Ten electrons cannot balance eleven protons, and sodium is a metal."
+        },
+        {
+          "id": "b",
+          "text": "metallic ion",
+          "why": "Eleven protons identify sodium. With only ten electrons the particle has a net charge of +1, so it is a metallic ion.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "non-metallic ion",
+          "why": "The proton count identifies sodium, rather than a non-metal.",
+          "whyWrong": "The proton count identifies sodium, rather than a non-metal."
+        },
+        {
+          "id": "d",
+          "text": "neutral metal",
+          "why": "A neutral sodium atom would have eleven electrons.",
+          "whyWrong": "A neutral sodium atom would have eleven electrons."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Use the number of protons to identify the element and compare it with the electron count.",
+      "explanation": "Eleven protons identify sodium. With only ten electrons the particle has a net charge of +1, so it is a metallic ion.",
+      "trap": "A neutral sodium atom would have eleven electrons.",
+      "mnemonic": "Protons identify the element. Protons minus electrons gives the charge.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Protons identify the element. Protons minus electrons gives the charge."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "A neutral sodium atom would have eleven electrons."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-029",
+      "subject": "chemistry",
+      "chapter": "8",
+      "topic": "Rates of Reaction",
+      "concept": "Catalysis",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A catalyst increases the rate of a chemical reaction by providing a path that",
+      "options": [
+        {
+          "id": "a",
+          "text": "raises the activation energy",
+          "why": "Raising the barrier would generally slow the reaction.",
+          "whyWrong": "Raising the barrier would generally slow the reaction."
+        },
+        {
+          "id": "b",
+          "text": "increases the temperature",
+          "why": "A catalyst can act at the same temperature.",
+          "whyWrong": "A catalyst can act at the same temperature."
+        },
+        {
+          "id": "c",
+          "text": "lowers the activation energy",
+          "why": "A catalyst supplies an alternative pathway with lower activation energy. At the same temperature more collisions can lead to reaction.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "increases the concentration",
+          "why": "The catalyst does not need to increase reactant concentration.",
+          "whyWrong": "The catalyst does not need to increase reactant concentration."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Imagine a lower hill on the reaction energy diagram.",
+      "explanation": "A catalyst supplies an alternative pathway with lower activation energy. At the same temperature more collisions can lead to reaction.",
+      "trap": "Raising the barrier would generally slow the reaction.",
+      "mnemonic": "A catalyst lowers the activation barrier.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A catalyst lowers the activation barrier."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Raising the barrier would generally slow the reaction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2016-032",
+      "subject": "chemistry",
+      "chapter": "18",
+      "topic": "Introduction to Organic Chemistry",
+      "concept": "Nomenclature",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What are the respective IUPAC names of CH_{3}COOH and CH_{2}=CH_{2}?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acetic acid and ethane",
+          "why": "The second structure has a double bond, so it cannot be ethane.",
+          "whyWrong": "The second structure has a double bond, so it cannot be ethane."
+        },
+        {
+          "id": "b",
+          "text": "Ethanoic acid and ethene",
+          "why": "CH_{3}COOH is ethanoic acid. CH_{2}=CH_{2} has two carbons joined by a double bond, so it is ethene.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Methanoic acid and ethylene",
+          "why": "Methanoic acid has one carbon, rather than two.",
+          "whyWrong": "Methanoic acid has one carbon, rather than two."
+        },
+        {
+          "id": "d",
+          "text": "Ethanol and ethene",
+          "why": "Ethanol has an alcohol group. The first structure has a carboxyl group.",
+          "whyWrong": "Ethanol has an alcohol group. The first structure has a carboxyl group."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the two-carbon carboxylic acid and the two-carbon alkene.",
+      "explanation": "CH_{3}COOH is ethanoic acid. CH_{2}=CH_{2} has two carbons joined by a double bond, so it is ethene.",
+      "trap": "The second structure has a double bond, so it cannot be ethane.",
+      "mnemonic": "Eth- means two carbons. -oic acid and -ene identify the two groups.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Eth- means two carbons. -oic acid and -ene identify the two groups."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The second structure has a double bond, so it cannot be ethane."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-001",
+      "subject": "chemistry",
+      "chapter": "6",
+      "topic": "Periodicity",
+      "concept": "Periodic table",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The periodic classification of the elements is an arrangement of the elements in order of their",
+      "options": [
+        {
+          "id": "a",
+          "text": "atomic weights",
+          "why": "Atomic weight was used in earlier periodic arrangements and can differ in its ordering.",
+          "whyWrong": "Atomic weight was used in earlier periodic arrangements and can differ in its ordering."
+        },
+        {
+          "id": "b",
+          "text": "isotopic weights",
+          "why": "Isotopes of one element share a position even though their masses differ.",
+          "whyWrong": "Isotopes of one element share a position even though their masses differ."
+        },
+        {
+          "id": "c",
+          "text": "molecular weights",
+          "why": "Molecular weight is not the ordering quantity for elements.",
+          "whyWrong": "Molecular weight is not the ordering quantity for elements."
+        },
+        {
+          "id": "d",
+          "text": "atomic numbers",
+          "why": "The modern periodic table lists elements in increasing atomic number. Atomic number is the number of protons.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Which quantity is fixed by the number of protons in the nucleus?",
+      "explanation": "The modern periodic table lists elements in increasing atomic number. Atomic number is the number of protons.",
+      "trap": "Atomic weight was used in earlier periodic arrangements and can differ in its ordering.",
+      "mnemonic": "The modern table counts protons.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The modern table counts protons."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Atomic weight was used in earlier periodic arrangements and can differ in its ordering."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 1,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-008",
+      "subject": "chemistry",
+      "chapter": "20",
+      "topic": "Alkanols, Alkanoic Acids and Esters",
+      "concept": "Saponification",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The boiling of fat and aqueous caustic soda is referred to as",
+      "options": [
+        {
+          "id": "a",
+          "text": "hydrolysis",
+          "why": "Hydrolysis is the broader class. Saponification names this particular alkaline reaction.",
+          "whyWrong": "Hydrolysis is the broader class. Saponification names this particular alkaline reaction."
+        },
+        {
+          "id": "b",
+          "text": "esterification",
+          "why": "Esterification forms an ester, whereas this reaction breaks ester bonds.",
+          "whyWrong": "Esterification forms an ester, whereas this reaction breaks ester bonds."
+        },
+        {
+          "id": "c",
+          "text": "acidification",
+          "why": "The reactant is treated with alkali, rather than acid.",
+          "whyWrong": "The reactant is treated with alkali, rather than acid."
+        },
+        {
+          "id": "d",
+          "text": "saponification",
+          "why": "Heating a fat with aqueous sodium hydroxide breaks its ester bonds and gives glycerol and sodium salts of fatty acids. Soap formation by this process is saponification.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify the special name for alkaline hydrolysis of fats.",
+      "explanation": "Heating a fat with aqueous sodium hydroxide breaks its ester bonds and gives glycerol and sodium salts of fatty acids. Soap formation by this process is saponification.",
+      "trap": "Hydrolysis is the broader class. Saponification names this particular alkaline reaction.",
+      "mnemonic": "Fat plus alkali gives soap and glycerol.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Fat plus alkali gives soap and glycerol."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Hydrolysis is the broader class. Saponification names this particular alkaline reaction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 8,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-012",
+      "subject": "chemistry",
+      "chapter": "15",
+      "topic": "Electrolysis",
+      "concept": "Faraday’s laws",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "A quantity of electricity liberates 3.6 g of silver from its salt. What mass of aluminium would the same quantity of electricity liberate from its salt? Take Al = 27 and Ag = 108.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.7 g",
+          "why": "2.7 g is nine times the mass from the shared electron amount.",
+          "whyWrong": "2.7 g is nine times the mass from the shared electron amount."
+        },
+        {
+          "id": "b",
+          "text": "1.2 g",
+          "why": "1.2 g comes from dividing the silver mass by three while ignoring the different molar masses.",
+          "whyWrong": "1.2 g comes from dividing the silver mass by three while ignoring the different molar masses."
+        },
+        {
+          "id": "c",
+          "text": "0.9 g",
+          "why": "0.9 g accounts for molar mass but ignores the three electrons needed per aluminium ion.",
+          "whyWrong": "0.9 g accounts for molar mass but ignores the three electrons needed per aluminium ion."
+        },
+        {
+          "id": "d",
+          "text": "0.3 g",
+          "why": "3.6/108 mol of silver uses the same number of moles of electrons because Ag^{+} needs one each. Each Al^{3+} needs three, so aluminium mass is (3.6/108) × 27/3 = 0.30 g.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "The same charge supplies the same moles of electrons in both cases.",
+      "explanation": "3.6/108 mol of silver uses the same number of moles of electrons because Ag^{+} needs one each. Each Al^{3+} needs three, so aluminium mass is (3.6/108) × 27/3 = 0.30 g.",
+      "trap": "0.9 g accounts for molar mass but ignores the three electrons needed per aluminium ion.",
+      "mnemonic": "Equal charge deposits equal chemical equivalents.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Equal charge deposits equal chemical equivalents."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "0.9 g accounts for molar mass but ignores the three electrons needed per aluminium ion."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 12,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-014",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Electronic configuration",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "The number of electrons in the valence shell of an element of atomic number 14 is",
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "why": "One outer electron would give a total of 11 using the full inner shells.",
+          "whyWrong": "One outer electron would give a total of 11 using the full inner shells."
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "why": "Two outer electrons would give a total of 12.",
+          "whyWrong": "Two outer electrons would give a total of 12."
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "why": "Three outer electrons would give a total of 13.",
+          "whyWrong": "Three outer electrons would give a total of 13."
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "why": "Atomic number 14 identifies silicon. Its shell arrangement is 2, 8, 4, so it has four valence electrons.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Write the shell arrangement of a neutral atom with fourteen electrons.",
+      "explanation": "Atomic number 14 identifies silicon. Its shell arrangement is 2, 8, 4, so it has four valence electrons.",
+      "trap": "Three outer electrons would give a total of 13.",
+      "mnemonic": "Fill 2 and 8 first, then count what is left in silicon’s outer shell.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Fill 2 and 8 first, then count what is left in silicon’s outer shell."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "Three outer electrons would give a total of 13."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-026",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Solubility and solubility curves",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The refreshing and characteristic taste of soda water and other soft drinks is as a result of the presence in them of",
+      "options": [
+        {
+          "id": "a",
+          "text": "carbon (IV) oxide",
+          "why": "Carbon dioxide dissolves under pressure. A small fraction reacts with water to form carbonic acid, which contributes to the characteristic taste.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "carbon (II) oxide",
+          "why": "Carbon monoxide is not used to carbonate drinks.",
+          "whyWrong": "Carbon monoxide is not used to carbonate drinks."
+        },
+        {
+          "id": "c",
+          "text": "soda",
+          "why": "Carbonation depends on dissolved carbon dioxide.",
+          "whyWrong": "Carbonation depends on dissolved carbon dioxide."
+        },
+        {
+          "id": "d",
+          "text": "glucose",
+          "why": "Glucose can sweeten drinks but does not give plain soda water its carbonation.",
+          "whyWrong": "Glucose can sweeten drinks but does not give plain soda water its carbonation."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify the dissolved gas responsible for carbonation.",
+      "explanation": "Carbon dioxide dissolves under pressure. A small fraction reacts with water to form carbonic acid, which contributes to the characteristic taste.",
+      "trap": "Glucose can sweeten drinks but does not give plain soda water its carbonation.",
+      "mnemonic": "Carbonated water contains dissolved CO₂.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Carbonated water contains dissolved CO₂."
+        },
+        {
+          "id": "whynot",
+          "optionId": "d",
+          "answer": "Glucose can sweeten drinks but does not give plain soda water its carbonation."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-028",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Laws of chemical combination",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A balanced chemical equation obeys the law of",
+      "options": [
+        {
+          "id": "a",
+          "text": "conservation of mass",
+          "why": "Balancing keeps the number of atoms of each element equal on both sides. This is how the equation represents conservation of mass.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "definite proportions",
+          "why": "Definite proportions concern the fixed composition of a compound.",
+          "whyWrong": "Definite proportions concern the fixed composition of a compound."
+        },
+        {
+          "id": "c",
+          "text": "multiple proportions",
+          "why": "Multiple proportions compare masses in different compounds of the same elements.",
+          "whyWrong": "Multiple proportions compare masses in different compounds of the same elements."
+        },
+        {
+          "id": "d",
+          "text": "conservation of energy",
+          "why": "The coefficients directly balance atoms, rather than the energy transfers.",
+          "whyWrong": "The coefficients directly balance atoms, rather than the energy transfers."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Count the atoms on either side of a balanced equation.",
+      "explanation": "Balancing keeps the number of atoms of each element equal on both sides. This is how the equation represents conservation of mass.",
+      "trap": "Definite proportions concern the fixed composition of a compound.",
+      "mnemonic": "Balance atoms to conserve mass.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Balance atoms to conserve mass."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Definite proportions concern the fixed composition of a compound."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-031",
+      "subject": "chemistry",
+      "chapter": "19",
+      "topic": "Hydrocarbons",
+      "concept": "Alkenes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A substance that is used as a ripening agent for fruits is",
+      "options": [
+        {
+          "id": "a",
+          "text": "ethene",
+          "why": "Ethene, also called ethylene, is produced by ripening fruits and is used commercially to coordinate ripening.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "propane",
+          "why": "Propane is a saturated hydrocarbon and lacks the relevant ripening role.",
+          "whyWrong": "Propane is a saturated hydrocarbon and lacks the relevant ripening role."
+        },
+        {
+          "id": "c",
+          "text": "methane",
+          "why": "Methane is the simplest alkane and is not the plant ripening hormone.",
+          "whyWrong": "Methane is the simplest alkane and is not the plant ripening hormone."
+        },
+        {
+          "id": "d",
+          "text": "butane",
+          "why": "Butane is commonly used as a fuel, rather than as this plant hormone.",
+          "whyWrong": "Butane is commonly used as a fuel, rather than as this plant hormone."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Which listed gas is also a plant hormone that triggers ripening?",
+      "explanation": "Ethene, also called ethylene, is produced by ripening fruits and is used commercially to coordinate ripening.",
+      "trap": "Propane is a saturated hydrocarbon and lacks the relevant ripening role.",
+      "mnemonic": "Ethene is the fruit-ripening hormone.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ethene is the fruit-ripening hormone."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Propane is a saturated hydrocarbon and lacks the relevant ripening role."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-035",
+      "subject": "chemistry",
+      "chapter": "14",
+      "topic": "Oxidation and Reduction",
+      "concept": "Redox",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which of the following is an example of a chemical change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "dissolution of salt in water",
+          "why": "Dissolved salt can be recovered by evaporating the water.",
+          "whyWrong": "Dissolved salt can be recovered by evaporating the water."
+        },
+        {
+          "id": "b",
+          "text": "rusting of iron",
+          "why": "During rusting, iron reacts with oxygen and moisture to form hydrated iron oxides and related compounds. The formation of new substances makes it a chemical change.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "melting of ice",
+          "why": "Melting changes the physical state of water and leaves its composition intact.",
+          "whyWrong": "Melting changes the physical state of water and leaves its composition intact."
+        },
+        {
+          "id": "d",
+          "text": "separating a mixture by distillation",
+          "why": "Distillation separates the constituents using their different volatilities.",
+          "whyWrong": "Distillation separates the constituents using their different volatilities."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the process that makes a new substance.",
+      "explanation": "During rusting, iron reacts with oxygen and moisture to form hydrated iron oxides and related compounds. The formation of new substances makes it a chemical change.",
+      "trap": "Dissolved salt can be recovered by evaporating the water.",
+      "mnemonic": "A chemical change makes new substances.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A chemical change makes new substances."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Dissolved salt can be recovered by evaporating the water."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 35,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-036",
+      "subject": "chemistry",
+      "chapter": "3",
+      "topic": "States of Matter, Kinetic Theory and Gas Laws",
+      "concept": "Ideal gas equation",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "To what temperature must a gas at 273 K be heated to double both its volume and pressure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "298 K",
+          "why": "298 K is only a small change from the initial temperature.",
+          "whyWrong": "298 K is only a small change from the initial temperature."
+        },
+        {
+          "id": "b",
+          "text": "546 K",
+          "why": "546 K accounts for one doubling only.",
+          "whyWrong": "546 K accounts for one doubling only."
+        },
+        {
+          "id": "c",
+          "text": "819 K",
+          "why": "819 K triples the temperature rather than quadrupling it.",
+          "whyWrong": "819 K triples the temperature rather than quadrupling it."
+        },
+        {
+          "id": "d",
+          "text": "1092 K",
+          "why": "At fixed amount of gas, T is proportional to PV on the Kelvin scale. Doubling pressure and volume makes T four times as large, so 273 × 4 = 1092 K.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Apply both factor-of-two changes to the product PV.",
+      "explanation": "At fixed amount of gas, T is proportional to PV on the Kelvin scale. Doubling pressure and volume makes T four times as large, so 273 × 4 = 1092 K.",
+      "trap": "546 K accounts for one doubling only.",
+      "mnemonic": "Two independent factors of two multiply to four.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Two independent factors of two multiply to four."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "546 K accounts for one doubling only."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 36,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-2018-040",
+      "subject": "chemistry",
+      "chapter": "19",
+      "topic": "Hydrocarbons",
+      "concept": "Alkanes",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Consecutive members of an alkane homologous series differ by",
+      "options": [
+        {
+          "id": "a",
+          "text": "CH",
+          "why": "CH adds too few hydrogen atoms.",
+          "whyWrong": "CH adds too few hydrogen atoms."
+        },
+        {
+          "id": "b",
+          "text": "CH_{2}",
+          "why": "An alkane has general formula C_{n}H_{2n+2}. Increasing n by one adds one carbon and two hydrogens, giving a difference of CH_{2}.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "CH_{3}",
+          "why": "CH_{3} is a methyl group and adds one hydrogen too many.",
+          "whyWrong": "CH_{3} is a methyl group and adds one hydrogen too many."
+        },
+        {
+          "id": "d",
+          "text": "C_{n}H_{n}",
+          "why": "C_{n}H_{n} is not a fixed increment between neighbouring members.",
+          "whyWrong": "C_{n}H_{n} is not a fixed increment between neighbouring members."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "d"
+      ],
+      "hint": "Compare the formulas for successive numbers of carbon atoms.",
+      "explanation": "An alkane has general formula C_{n}H_{2n+2}. Increasing n by one adds one carbon and two hydrogens, giving a difference of CH_{2}.",
+      "trap": "CH_{3} is a methyl group and adds one hydrogen too many.",
+      "mnemonic": "From one alkane to the next, add CH₂.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "From one alkane to the next, add CH₂."
+        },
+        {
+          "id": "whynot",
+          "optionId": "c",
+          "answer": "CH_{3} is a methyl group and adds one hydrogen too many."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 40,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    }
+  ]
+}
