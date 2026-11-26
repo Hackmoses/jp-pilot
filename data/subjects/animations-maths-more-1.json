@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 10,
+  "count": 20,
   "animations": [
     {
       "id": "anim-math-jamb-2010-022",
@@ -225,21 +225,21 @@
       "steps": [
         {
           "n": 1,
-          "display": "\\det P = 2(1) − (−3)(1)",
+          "display": "det P = 2(1) − (−3)(1)",
           "tag": "determinant",
           "title": "Subtract the diagonal products",
           "narration": "For a two by two matrix, multiply down the main diagonal and subtract the product on the other diagonal."
         },
         {
           "n": 2,
-          "display": "\\operatorname{adj} P = \\mat{1,3;-1,2}",
+          "display": "adj P = \\matrix{1,3;-1,2}",
           "tag": "adjugate",
           "title": "Swap and change signs",
           "narration": "Swap two and one on the main diagonal. Change negative three to positive three and the other one to negative one."
         },
         {
           "n": 3,
-          "display": "P^{−1} = \\mat{\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
+          "display": "P^{−1} = \\matrix{\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
           "tag": "answer",
           "title": "Write the inverse matrix",
           "narration": "The top row is one fifth and three fifths. The bottom row is negative one fifth and two fifths."
@@ -248,42 +248,42 @@
       "teach": [
         {
           "n": 1,
-          "display": "P = \\mat{2,-3;1,1}",
+          "display": "P = \\matrix{2,-3;1,1}",
           "tag": "given",
           "title": "Read the matrix entries",
           "narration": "The top row is two and negative three. The bottom row is one and one."
         },
         {
           "n": 2,
-          "display": "\\det P = 2(1) − (−3)(1)",
+          "display": "det P = 2(1) − (−3)(1)",
           "tag": "determinant",
           "title": "Subtract the diagonal products",
           "narration": "For a two by two matrix, multiply down the main diagonal and subtract the product on the other diagonal."
         },
         {
           "n": 3,
-          "display": "\\det P = 5",
+          "display": "det P = 5",
           "tag": "nonzero",
           "title": "Check that the inverse exists",
           "narration": "Two minus negative three equals five. The determinant is nonzero, so the matrix has an inverse."
         },
         {
           "n": 4,
-          "display": "\\operatorname{adj} P = \\mat{1,3;-1,2}",
+          "display": "adj P = \\matrix{1,3;-1,2}",
           "tag": "adjugate",
           "title": "Swap and change signs",
           "narration": "Swap two and one on the main diagonal. Change negative three to positive three and the other one to negative one."
         },
         {
           "n": 5,
-          "display": "P^{−1} = \\frac{1}{5}\\mat{1,3;-1,2}",
+          "display": "P^{−1} = \\frac{1}{5}\\matrix{1,3;-1,2}",
           "tag": "scale",
           "title": "Multiply by the reciprocal",
           "narration": "The inverse formula divides every entry in the adjugate by the determinant, which is five."
         },
         {
           "n": 6,
-          "display": "P^{−1} = \\mat{\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
+          "display": "P^{−1} = \\matrix{\\frac{1}{5},\\frac{3}{5};-\\frac{1}{5},\\frac{2}{5}}",
           "tag": "answer",
           "title": "Write the inverse matrix",
           "narration": "The top row is one fifth and three fifths. The bottom row is negative one fifth and two fifths."
@@ -733,6 +733,747 @@
           "tag": "answer",
           "title": "Find the probability of three heads",
           "narration": "The numerator is one and the denominator is eight, so the probability is one eighth."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-002",
+      "questionId": "math-jamb-2011-002",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "2q3_{5} = 2(25) + 5q + 3",
+          "tag": "base five",
+          "title": "Expand the left side",
+          "narration": "The places are twenty-fives, fives and ones. The unknown digit q sits in the fives place."
+        },
+        {
+          "n": 2,
+          "display": "77_{8} = 7(8) + 7 = 63",
+          "tag": "base eight",
+          "title": "Expand the right side",
+          "narration": "The first seven is worth fifty-six and the second is worth seven, giving sixty-three."
+        },
+        {
+          "n": 3,
+          "display": "5q = 10",
+          "tag": "subtract",
+          "title": "Subtract fifty-three from both sides",
+          "narration": "Take fifty-three away from each side to isolate five times q."
+        },
+        {
+          "n": 4,
+          "display": "q = 2",
+          "tag": "answer",
+          "title": "Divide both sides by five",
+          "narration": "Ten divided by five is two. Two is a valid base-five digit and makes the left side sixty-three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2q3_{5} = 77_{8}",
+          "tag": "given",
+          "title": "Compare in the same base",
+          "narration": "Convert both sides to base ten so their place values can be compared directly."
+        },
+        {
+          "n": 2,
+          "display": "2q3_{5} = 2(25) + 5q + 3",
+          "tag": "base five",
+          "title": "Expand the left side",
+          "narration": "The places are twenty-fives, fives and ones. The unknown digit q sits in the fives place."
+        },
+        {
+          "n": 3,
+          "display": "77_{8} = 7(8) + 7 = 63",
+          "tag": "base eight",
+          "title": "Expand the right side",
+          "narration": "The first seven is worth fifty-six and the second is worth seven, giving sixty-three."
+        },
+        {
+          "n": 4,
+          "display": "53 + 5q = 63",
+          "tag": "equate",
+          "title": "Put the base-ten values equal",
+          "narration": "Two twenty-fives plus three ones gives fifty-three, leaving five q as the unknown part."
+        },
+        {
+          "n": 5,
+          "display": "5q = 10",
+          "tag": "subtract",
+          "title": "Subtract fifty-three from both sides",
+          "narration": "Take fifty-three away from each side to isolate five times q."
+        },
+        {
+          "n": 6,
+          "display": "q = 2",
+          "tag": "answer",
+          "title": "Divide both sides by five",
+          "narration": "Ten divided by five is two. Two is a valid base-five digit and makes the left side sixty-three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-005",
+      "questionId": "math-jamb-2011-005",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "M = 5k, N = 4k, Q = 3k",
+          "tag": "ratio",
+          "title": "Write each share using k",
+          "narration": "The ratio says the quantities have five, four and three equal parts. Let k be the size of one part."
+        },
+        {
+          "n": 2,
+          "display": "2N − Q = 5k",
+          "tag": "simplify",
+          "title": "Count the remaining parts",
+          "narration": "Eight parts minus three parts leaves five parts, which is also the value of M."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2N − Q}{M} = 1",
+          "tag": "answer",
+          "title": "Read the ratio",
+          "narration": "The numerator equals the denominator, so the quotient is one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "M = 5k, N = 4k, Q = 3k",
+          "tag": "ratio",
+          "title": "Write each share using k",
+          "narration": "The ratio says the quantities have five, four and three equal parts. Let k be the size of one part."
+        },
+        {
+          "n": 2,
+          "display": "2N − Q = 2(4k) − 3k",
+          "tag": "numerator",
+          "title": "Substitute the values of N and Q",
+          "narration": "Twice N gives eight parts. Subtract the three parts for Q."
+        },
+        {
+          "n": 3,
+          "display": "2N − Q = 5k",
+          "tag": "simplify",
+          "title": "Count the remaining parts",
+          "narration": "Eight parts minus three parts leaves five parts, which is also the value of M."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{2N − Q}{M} = \\frac{5k}{5k}",
+          "tag": "divide",
+          "title": "Use M as the denominator",
+          "narration": "Both numerator and denominator have five of the same nonzero parts, so the common factor cancels."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{2N − Q}{M} = 1",
+          "tag": "answer",
+          "title": "Read the ratio",
+          "narration": "The numerator equals the denominator, so the quotient is one."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-009",
+      "questionId": "math-jamb-2011-009",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "(a + b)(a − b) = a^{2} − b^{2}",
+          "tag": "identity",
+          "title": "Use the difference of two squares",
+          "narration": "When the same two terms are added in one bracket and subtracted in the other, the cross terms cancel."
+        },
+        {
+          "n": 2,
+          "display": "(\\sqrt{2})^{2} − (\\frac{1}{\\sqrt{3}})^{2}",
+          "tag": "square",
+          "title": "Square both terms",
+          "narration": "Squaring a square root returns its radicand. In the second term, square both the numerator and the denominator."
+        },
+        {
+          "n": 3,
+          "display": "2 − \\frac{1}{3} = \\frac{6}{3} − \\frac{1}{3}",
+          "tag": "denominator",
+          "title": "Write two in thirds",
+          "narration": "Use a common denominator of three so that we can subtract the numerators."
+        },
+        {
+          "n": 4,
+          "display": "= \\frac{5}{3}",
+          "tag": "answer",
+          "title": "Subtract the numerators",
+          "narration": "Six thirds minus one third leaves five thirds."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "(a + b)(a − b) = a^{2} − b^{2}",
+          "tag": "identity",
+          "title": "Use the difference of two squares",
+          "narration": "When the same two terms are added in one bracket and subtracted in the other, the cross terms cancel."
+        },
+        {
+          "n": 2,
+          "display": "a = \\sqrt{2}, b = \\frac{1}{\\sqrt{3}}",
+          "tag": "identify",
+          "title": "Pick out the two terms",
+          "narration": "The square root of two is the term shared by both brackets. The reciprocal of the square root of three changes sign."
+        },
+        {
+          "n": 3,
+          "display": "(\\sqrt{2})^{2} − (\\frac{1}{\\sqrt{3}})^{2}",
+          "tag": "square",
+          "title": "Square both terms",
+          "narration": "Squaring a square root returns its radicand. In the second term, square both the numerator and the denominator."
+        },
+        {
+          "n": 4,
+          "display": "2 − \\frac{1}{3} = \\frac{6}{3} − \\frac{1}{3}",
+          "tag": "denominator",
+          "title": "Write two in thirds",
+          "narration": "Use a common denominator of three so that we can subtract the numerators."
+        },
+        {
+          "n": 5,
+          "display": "= \\frac{5}{3}",
+          "tag": "answer",
+          "title": "Subtract the numerators",
+          "narration": "Six thirds minus one third leaves five thirds."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-010",
+      "questionId": "math-jamb-2011-010",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "U = {a, b, c, d, e}",
+          "tag": "universe",
+          "title": "Read the universal set",
+          "narration": "Every letter inside the large rectangle belongs to the universe, including letters outside the two circles."
+        },
+        {
+          "n": 2,
+          "display": "P ∩ Q = {c}",
+          "tag": "overlap",
+          "title": "Find what the circles share",
+          "narration": "An intersection keeps only letters in both sets. Only c is in the overlapping region."
+        },
+        {
+          "n": 3,
+          "display": "(P ∩ Q)′ = {a, b, d, e}",
+          "tag": "answer",
+          "title": "List the remaining letters",
+          "narration": "The letters left in the universe are a, b, d and e."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "U = {a, b, c, d, e}",
+          "tag": "universe",
+          "title": "Read the universal set",
+          "narration": "Every letter inside the large rectangle belongs to the universe, including letters outside the two circles."
+        },
+        {
+          "n": 2,
+          "display": "P = {b, c}, Q = {c, d}",
+          "tag": "circles",
+          "title": "Read the two circles",
+          "narration": "The first circle contains b and c. The second contains c and d. The overlap is counted in both circles."
+        },
+        {
+          "n": 3,
+          "display": "P ∩ Q = {c}",
+          "tag": "overlap",
+          "title": "Find what the circles share",
+          "narration": "An intersection keeps only letters in both sets. Only c is in the overlapping region."
+        },
+        {
+          "n": 4,
+          "display": "U ∖ {c}",
+          "tag": "complement",
+          "title": "Remove the overlap from the universe",
+          "narration": "The prime asks for the complement relative to the rectangle. Remove c and retain every other letter."
+        },
+        {
+          "n": 5,
+          "display": "(P ∩ Q)′ = {a, b, d, e}",
+          "tag": "answer",
+          "title": "List the remaining letters",
+          "narration": "The letters left in the universe are a, b, d and e."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-014",
+      "questionId": "math-jamb-2011-014",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "9y^{2} − 16x^{2}",
+          "tag": "recognise",
+          "title": "Read the two square terms",
+          "narration": "Both terms are perfect squares and the operation between them is subtraction, so the difference of squares applies."
+        },
+        {
+          "n": 2,
+          "display": "(3y)^{2} − (4x)^{2}",
+          "tag": "rewrite",
+          "title": "Show the two squares",
+          "narration": "Three y squared gives nine y squared, and four x squared gives sixteen x squared."
+        },
+        {
+          "n": 3,
+          "display": "(3y − 4x)(3y + 4x)",
+          "tag": "answer",
+          "title": "Write the complete factorisation",
+          "narration": "The factors are three y minus four x and three y plus four x."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "9y^{2} − 16x^{2}",
+          "tag": "recognise",
+          "title": "Read the two square terms",
+          "narration": "Both terms are perfect squares and the operation between them is subtraction, so the difference of squares applies."
+        },
+        {
+          "n": 2,
+          "display": "(3y)^{2} − (4x)^{2}",
+          "tag": "rewrite",
+          "title": "Show the two squares",
+          "narration": "Three y squared gives nine y squared, and four x squared gives sixteen x squared."
+        },
+        {
+          "n": 3,
+          "display": "a^{2} − b^{2} = (a − b)(a + b)",
+          "tag": "identity",
+          "title": "Use the difference of two squares",
+          "narration": "The factors use the same two terms, once with a minus and once with a plus."
+        },
+        {
+          "n": 4,
+          "display": "(3y − 4x)(3y + 4x) → 9y^{2} − 16x^{2}",
+          "tag": "check",
+          "title": "Check by multiplying back",
+          "narration": "The two cross products are negative and positive twelve x y, so they cancel. The remaining terms match the original expression."
+        },
+        {
+          "n": 5,
+          "display": "(3y − 4x)(3y + 4x)",
+          "tag": "answer",
+          "title": "Write the complete factorisation",
+          "narration": "The factors are three y minus four x and three y plus four x."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-016",
+      "questionId": "math-jamb-2011-016",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x = k\\sqrt{y}",
+          "tag": "model",
+          "title": "Write the direct variation",
+          "narration": "Direct variation means x is a constant multiple of the square root of y. Call the constant k."
+        },
+        {
+          "n": 2,
+          "display": "81 = 3k",
+          "tag": "simplify",
+          "title": "Take the square root of nine",
+          "narration": "The square root of nine is three, so eighty-one equals three copies of k."
+        },
+        {
+          "n": 3,
+          "display": "y = 1\\frac{7}{9} = \\frac{16}{9}",
+          "tag": "convert",
+          "title": "Write the mixed number as a fraction",
+          "narration": "One whole is nine ninths. Add seven ninths to get sixteen ninths."
+        },
+        {
+          "n": 4,
+          "display": "x = 36",
+          "tag": "answer",
+          "title": "Find x for the new value of y",
+          "narration": "Twenty-seven divided by three is nine, and nine times four is thirty-six."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x = k\\sqrt{y}",
+          "tag": "model",
+          "title": "Write the direct variation",
+          "narration": "Direct variation means x is a constant multiple of the square root of y. Call the constant k."
+        },
+        {
+          "n": 2,
+          "display": "81 = k\\sqrt{9}",
+          "tag": "given pair",
+          "title": "Substitute the known values",
+          "narration": "Use the known pair to find the constant, since the same k works for both values of y."
+        },
+        {
+          "n": 3,
+          "display": "81 = 3k",
+          "tag": "simplify",
+          "title": "Take the square root of nine",
+          "narration": "The square root of nine is three, so eighty-one equals three copies of k."
+        },
+        {
+          "n": 4,
+          "display": "k = \\frac{81}{3} = 27",
+          "tag": "constant",
+          "title": "Divide both sides by three",
+          "narration": "Divide both sides by three to find the multiplier, twenty-seven."
+        },
+        {
+          "n": 5,
+          "display": "y = 1\\frac{7}{9} = \\frac{16}{9}",
+          "tag": "convert",
+          "title": "Write the mixed number as a fraction",
+          "narration": "One whole is nine ninths. Add seven ninths to get sixteen ninths."
+        },
+        {
+          "n": 6,
+          "display": "x = 27\\sqrt{\\frac{16}{9}} = 27 × \\frac{4}{3}",
+          "tag": "substitute",
+          "title": "Take the square root of the fraction",
+          "narration": "Take the square root of sixteen and of nine separately, then multiply four thirds by twenty-seven."
+        },
+        {
+          "n": 7,
+          "display": "x = 36",
+          "tag": "answer",
+          "title": "Find x for the new value of y",
+          "narration": "Twenty-seven divided by three is nine, and nine times four is thirty-six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-025",
+      "questionId": "math-jamb-2011-025",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "D = \\det{4,2,-1;2,3,-1;-1,1,3}",
+          "tag": "given",
+          "title": "Read the determinant",
+          "narration": "We will expand along the first row, using four, two and negative one as the three multipliers."
+        },
+        {
+          "n": 2,
+          "display": "M_{11} = 3(3) − (−1)(1) = 10",
+          "tag": "first minor",
+          "title": "Find the minor of four",
+          "narration": "Cross out the first row and first column. The two diagonal products are nine and negative one."
+        },
+        {
+          "n": 3,
+          "display": "D = 40 − 10 − 5",
+          "tag": "evaluate",
+          "title": "Multiply the three terms",
+          "narration": "Four times ten is forty. The second term takes away ten and the last takes away five."
+        },
+        {
+          "n": 4,
+          "display": "D = 25",
+          "tag": "answer",
+          "title": "Find the determinant",
+          "narration": "Forty minus ten leaves thirty. Take away another five to get twenty-five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "D = \\det{4,2,-1;2,3,-1;-1,1,3}",
+          "tag": "given",
+          "title": "Read the determinant",
+          "narration": "We will expand along the first row, using four, two and negative one as the three multipliers."
+        },
+        {
+          "n": 2,
+          "display": "D = 4M_{11} − 2M_{12} + (−1)M_{13}",
+          "tag": "signs",
+          "title": "Use plus, minus, plus",
+          "narration": "The cofactor signs across the first row are plus, minus and plus. Each minor omits the first row and the chosen column."
+        },
+        {
+          "n": 3,
+          "display": "M_{11} = 3(3) − (−1)(1) = 10",
+          "tag": "first minor",
+          "title": "Find the minor of four",
+          "narration": "Cross out the first row and first column. The two diagonal products are nine and negative one."
+        },
+        {
+          "n": 4,
+          "display": "M_{12} = 2(3) − (−1)(−1) = 5",
+          "tag": "second minor",
+          "title": "Find the minor of two",
+          "narration": "Cross out the first row and second column. The two diagonal products are six and one."
+        },
+        {
+          "n": 5,
+          "display": "M_{13} = 2(1) − 3(−1) = 5",
+          "tag": "third minor",
+          "title": "Find the minor of negative one",
+          "narration": "Cross out the first row and third column. The two diagonal products are two and negative three."
+        },
+        {
+          "n": 6,
+          "display": "D = 4(10) − 2(5) + (−1)(5)",
+          "tag": "substitute",
+          "title": "Put the minors into the expansion",
+          "narration": "Use the cofactor signs as well as the signs of the entries themselves."
+        },
+        {
+          "n": 7,
+          "display": "D = 40 − 10 − 5",
+          "tag": "evaluate",
+          "title": "Multiply the three terms",
+          "narration": "Four times ten is forty. The second term takes away ten and the last takes away five."
+        },
+        {
+          "n": 8,
+          "display": "D = 25",
+          "tag": "answer",
+          "title": "Find the determinant",
+          "narration": "Forty minus ten leaves thirty. Take away another five to get twenty-five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-028",
+      "questionId": "math-jamb-2011-028",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = 28 cm",
+          "tag": "given",
+          "title": "Read the wire length",
+          "narration": "Reshaping the wire keeps its length, so the square has a perimeter of twenty-eight centimetres."
+        },
+        {
+          "n": 2,
+          "display": "s = \\frac{28}{4} = 7 cm",
+          "tag": "side",
+          "title": "Divide both sides by four",
+          "narration": "Divide the perimeter by four to find one side, seven centimetres."
+        },
+        {
+          "n": 3,
+          "display": "A = 49 cm^{2}",
+          "tag": "answer",
+          "title": "Find the square's area",
+          "narration": "Seven times seven is forty-nine, and multiplying centimetres by centimetres gives square centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 28 cm",
+          "tag": "given",
+          "title": "Read the wire length",
+          "narration": "Reshaping the wire keeps its length, so the square has a perimeter of twenty-eight centimetres."
+        },
+        {
+          "n": 2,
+          "display": "P = 4s",
+          "tag": "perimeter",
+          "title": "Use four equal sides",
+          "narration": "All four sides of a square are equal. If one side is s, the perimeter is four times s."
+        },
+        {
+          "n": 3,
+          "display": "s = \\frac{28}{4} = 7 cm",
+          "tag": "side",
+          "title": "Divide both sides by four",
+          "narration": "Divide the perimeter by four to find one side, seven centimetres."
+        },
+        {
+          "n": 4,
+          "display": "A = s^{2} = 7^{2}",
+          "tag": "area",
+          "title": "Square the side length",
+          "narration": "The area is length times width. Both dimensions are seven centimetres in this square."
+        },
+        {
+          "n": 5,
+          "display": "A = 49 cm^{2}",
+          "tag": "answer",
+          "title": "Find the square's area",
+          "narration": "Seven times seven is forty-nine, and multiplying centimetres by centimetres gives square centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-033",
+      "questionId": "math-jamb-2011-033",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = \\frac{5}{2}x + 2",
+          "tag": "divide",
+          "title": "Divide both sides by two",
+          "narration": "Dividing every term by two leaves y on its own and shows the slope is five halves."
+        },
+        {
+          "n": 2,
+          "display": "m = −\\frac{2}{5}",
+          "tag": "perpendicular",
+          "title": "Take the negative reciprocal",
+          "narration": "Perpendicular slopes multiply to negative one, so flip five halves and change its sign."
+        },
+        {
+          "n": 3,
+          "display": "y − 2 = −\\frac{2}{5}(x − 4)",
+          "tag": "point and slope",
+          "title": "Use the point four, two",
+          "narration": "The point-slope form subtracts the point's y-coordinate on the left and its x-coordinate inside the brackets."
+        },
+        {
+          "n": 4,
+          "display": "5y + 2x − 18 = 0",
+          "tag": "answer",
+          "title": "Collect all terms on the left",
+          "narration": "Add two x to both sides, then subtract eight from both sides. The left side is five y plus two x minus eighteen."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2y = 5x + 4",
+          "tag": "given",
+          "title": "Start from the original line",
+          "narration": "Put the line in the form where the coefficient of x is its slope."
+        },
+        {
+          "n": 2,
+          "display": "y = \\frac{5}{2}x + 2",
+          "tag": "divide",
+          "title": "Divide both sides by two",
+          "narration": "Dividing every term by two leaves y on its own and shows the slope is five halves."
+        },
+        {
+          "n": 3,
+          "display": "m = −\\frac{2}{5}",
+          "tag": "perpendicular",
+          "title": "Take the negative reciprocal",
+          "narration": "Perpendicular slopes multiply to negative one, so flip five halves and change its sign."
+        },
+        {
+          "n": 4,
+          "display": "y − 2 = −\\frac{2}{5}(x − 4)",
+          "tag": "point and slope",
+          "title": "Use the point four, two",
+          "narration": "The point-slope form subtracts the point's y-coordinate on the left and its x-coordinate inside the brackets."
+        },
+        {
+          "n": 5,
+          "display": "5y − 10 = −2x + 8",
+          "tag": "clear fraction",
+          "title": "Multiply both sides by five",
+          "narration": "Multiplication by five clears the denominator. Then distribute negative two across x minus four."
+        },
+        {
+          "n": 6,
+          "display": "5(2) + 2(4) − 18 = 0",
+          "tag": "check",
+          "title": "Check that the point lies on the line",
+          "narration": "In the rearranged form, ten plus eight cancels the constant eighteen, so the line passes through four, two."
+        },
+        {
+          "n": 7,
+          "display": "5y + 2x − 18 = 0",
+          "tag": "answer",
+          "title": "Collect all terms on the left",
+          "narration": "Add two x to both sides, then subtract eight from both sides. The left side is five y plus two x minus eighteen."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2011-042",
+      "questionId": "math-jamb-2011-042",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "N_{total} = N_{I} + N_{II} + N_{III} + N_{IV}",
+          "tag": "rule",
+          "title": "Add the four class counts",
+          "narration": "Each bar represents a different class, so add all four frequencies to find the total."
+        },
+        {
+          "n": 2,
+          "display": "N_{total} = 45 + 60 + 30 + 45",
+          "tag": "read remaining bars",
+          "title": "Include classes three and four",
+          "narration": "The third and fourth bars give thirty and forty-five. Include both of them in the sum."
+        },
+        {
+          "n": 3,
+          "display": "N_{total} = 180",
+          "tag": "answer",
+          "title": "Add the two subtotals",
+          "narration": "One hundred and five plus seventy-five gives one hundred and eighty students."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "N_{total} = N_{I} + N_{II} + N_{III} + N_{IV}",
+          "tag": "rule",
+          "title": "Add the four class counts",
+          "narration": "Each bar represents a different class, so add all four frequencies to find the total."
+        },
+        {
+          "n": 2,
+          "display": "N_{I} = 45, N_{II} = 60",
+          "tag": "read first bars",
+          "title": "Read classes one and two",
+          "narration": "Read the heights against the scale. The first bar is forty-five and the second is sixty."
+        },
+        {
+          "n": 3,
+          "display": "N_{total} = 45 + 60 + 30 + 45",
+          "tag": "read remaining bars",
+          "title": "Include classes three and four",
+          "narration": "The third and fourth bars give thirty and forty-five. Include both of them in the sum."
+        },
+        {
+          "n": 4,
+          "display": "N_{total} = 105 + 75",
+          "tag": "subtotal",
+          "title": "Group the counts in pairs",
+          "narration": "The first two classes give one hundred and five. The last two give seventy-five."
+        },
+        {
+          "n": 5,
+          "display": "N_{total} = 180",
+          "tag": "answer",
+          "title": "Add the two subtotals",
+          "narration": "One hundred and five plus seventy-five gives one hundred and eighty students."
         }
       ]
     }
