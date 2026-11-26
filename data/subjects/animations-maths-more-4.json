@@ -1,0 +1,3999 @@
+{
+  "version": 1,
+  "count": 50,
+  "animations": [
+    {
+      "id": "anim-math-jamb-2014-008",
+      "questionId": "math-jamb-2014-008",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{2\\sqrt{2} − \\sqrt{3}}{\\sqrt{3} + \\sqrt{2}} × \\frac{\\sqrt{3} − \\sqrt{2}}{\\sqrt{3} − \\sqrt{2}}",
+          "tag": "conjugate",
+          "title": "Multiply by conjugate",
+          "narration": "Multiply numerator and denominator by root three minus root two to rationalise the denominator."
+        },
+        {
+          "n": 2,
+          "display": "Denominator: (\\sqrt{3})^{2} − (\\sqrt{2})^{2} = 3 − 2 = 1",
+          "tag": "bottom",
+          "title": "Simplify denominator",
+          "narration": "Difference of squares turns the denominator into three minus two, which equals one."
+        },
+        {
+          "n": 3,
+          "display": "Numerator: 2\\sqrt{6} − 4 − 3 + \\sqrt{6} = 3\\sqrt{6} − 7",
+          "tag": "top",
+          "title": "Expand and collect numerator",
+          "narration": "Expand the top product and combine like surds and whole numbers to get three root six minus seven."
+        },
+        {
+          "n": 4,
+          "display": "3\\sqrt{6} − 7 (option B)",
+          "tag": "answer",
+          "title": "Simplified surd",
+          "narration": "Dividing by one leaves the simplified answer, three root six minus seven."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Conjugate of \\sqrt{3} + \\sqrt{2} is \\sqrt{3} − \\sqrt{2}",
+          "tag": "conjugate",
+          "title": "Choose the conjugate",
+          "narration": "Rewrite the sum in the denominator as root three plus root two so its conjugate root three minus root two gives a positive difference of squares."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{(2\\sqrt{2} − \\sqrt{3})(\\sqrt{3} − \\sqrt{2})}{(\\sqrt{3} + \\sqrt{2})(\\sqrt{3} − \\sqrt{2})}",
+          "tag": "multiply",
+          "title": "Multiply top and bottom",
+          "narration": "Multiply both top and bottom by the conjugate so the value of the fraction stays unchanged."
+        },
+        {
+          "n": 3,
+          "display": "Denominator: (\\sqrt{3})^{2} − (\\sqrt{2})^{2} = 3 − 2 = 1",
+          "tag": "denominator",
+          "title": "Clear roots in denominator",
+          "narration": "Using a plus b times a minus b equals a squared minus b squared reduces the denominator to three minus two, or one."
+        },
+        {
+          "n": 4,
+          "display": "Numerator: 2\\sqrt{2}(\\sqrt{3} − \\sqrt{2}) − \\sqrt{3}(\\sqrt{3} − \\sqrt{2})",
+          "tag": "distribute",
+          "title": "Expand numerator brackets",
+          "narration": "Multiply each term of two root two minus root three by root three minus root two."
+        },
+        {
+          "n": 5,
+          "display": "2\\sqrt{6} − 4 − 3 + \\sqrt{6} = 3\\sqrt{6} − 7",
+          "tag": "collect",
+          "title": "Collect like terms",
+          "narration": "Combine two root six plus root six into three root six, and subtract three from minus four to get minus seven."
+        },
+        {
+          "n": 6,
+          "display": "3\\sqrt{6} − 7 (option B)",
+          "tag": "answer",
+          "title": "Final expression",
+          "narration": "Because the denominator is one, the simplified expression is three root six minus seven."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-009",
+      "questionId": "math-jamb-2014-009",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "8 = 2^{3}, 16 = 2^{4}, 4 = 2^{2}",
+          "tag": "powers",
+          "title": "Write as powers of 2",
+          "narration": "Express eight, sixteen, and four as powers of the common base two."
+        },
+        {
+          "n": 2,
+          "display": "log_{2} 8 = 3, log_{2} 16 = 4, log_{2} 4 = 2",
+          "tag": "evaluate",
+          "title": "Read each logarithm",
+          "narration": "Because log base two of two to the k equals k, the three logs are three, four, and two."
+        },
+        {
+          "n": 3,
+          "display": "3 + 4 − 2 = 5",
+          "tag": "arithmetic",
+          "title": "Add and subtract values",
+          "narration": "Add three and four to get seven, then subtract two."
+        },
+        {
+          "n": 4,
+          "display": "5 (option D)",
+          "tag": "answer",
+          "title": "Final value",
+          "narration": "The value of the expression is five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "8 = 2^{3} ⇒ log_{2} 8 = 3",
+          "tag": "first log",
+          "title": "Evaluate log base 2 of 8",
+          "narration": "Write eight as two cubed so log base two of eight simplifies directly to three."
+        },
+        {
+          "n": 2,
+          "display": "16 = 2^{4} ⇒ log_{2} 16 = 4",
+          "tag": "second log",
+          "title": "Evaluate log base 2 of 16",
+          "narration": "Write sixteen as two to the fourth power, giving log base two of sixteen equal to four."
+        },
+        {
+          "n": 3,
+          "display": "4 = 2^{2} ⇒ log_{2} 4 = 2",
+          "tag": "third log",
+          "title": "Evaluate log base 2 of 4",
+          "narration": "Write four as two squared so log base two of four equals two."
+        },
+        {
+          "n": 4,
+          "display": "3 + 4 − 2 = 5",
+          "tag": "combine",
+          "title": "Substitute and simplify",
+          "narration": "Substitute the three numbers back in: three plus four minus two equals five."
+        },
+        {
+          "n": 5,
+          "display": "Check: log_{2}(\\frac{8 × 16}{4}) = log_{2} 32 = 5",
+          "tag": "check",
+          "title": "Check with log laws",
+          "narration": "Check using product and quotient laws: eight times sixteen divided by four is thirty-two, and two to the fifth is thirty-two."
+        },
+        {
+          "n": 6,
+          "display": "5 (option D)",
+          "tag": "answer",
+          "title": "Final result",
+          "narration": "Therefore the expression evaluates to five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-012",
+      "questionId": "math-jamb-2014-012",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "gt^{2} − k − w = 0",
+          "tag": "given",
+          "title": "Start with equation",
+          "narration": "We want to isolate g on one side of the equation."
+        },
+        {
+          "n": 2,
+          "display": "gt^{2} = k + w",
+          "tag": "add",
+          "title": "Add k and w to both sides",
+          "narration": "Add k and w to both sides so the term containing g stands alone."
+        },
+        {
+          "n": 3,
+          "display": "g = \\frac{k + w}{t^{2}}",
+          "tag": "divide",
+          "title": "Divide both sides by t^{2}",
+          "narration": "Since t is nonzero, divide both sides by t squared to leave g by itself."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{k + w}{t^{2}} (option B)",
+          "tag": "answer",
+          "title": "Subject of formula",
+          "narration": "Making g the subject gives k plus w all over t squared."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "gt^{2} − k − w = 0",
+          "tag": "given",
+          "title": "Write the given formula",
+          "narration": "Identify g inside the first term g t squared, with minus k and minus w subtracted from it."
+        },
+        {
+          "n": 2,
+          "display": "gt^{2} − k − w + k + w = k + w",
+          "tag": "add",
+          "title": "Add k and w to both sides",
+          "narration": "Add both k and w to each side to cancel the minus k and minus w on the left."
+        },
+        {
+          "n": 3,
+          "display": "gt^{2} = k + w",
+          "tag": "simplify",
+          "title": "Isolate the g term",
+          "narration": "This leaves g t squared equal to k plus w."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{gt^{2}}{t^{2}} = \\frac{k + w}{t^{2}}",
+          "tag": "divide",
+          "title": "Divide both sides by t^{2}",
+          "narration": "Divide both sides by t squared to undo multiplying g by t squared; this is valid because t is not zero."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{k + w}{t^{2}} (option B)",
+          "tag": "answer",
+          "title": "g in terms of k, w, t",
+          "narration": "So g equals k plus w divided by t squared."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-014",
+      "questionId": "math-jamb-2014-014",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y − 1 = 0 ⇒ y = 1",
+          "tag": "factor theorem",
+          "title": "Apply factor theorem",
+          "narration": "Because y minus one is a factor, substituting y equals one into the polynomial must give zero."
+        },
+        {
+          "n": 2,
+          "display": "1^{3} + 4(1)^{2} + k(1) − 6 = 0",
+          "tag": "substitute",
+          "title": "Evaluate at y = 1",
+          "narration": "Replace every y in the polynomial with one and equate to zero."
+        },
+        {
+          "n": 3,
+          "display": "1 + 4 + k − 6 = 0 ⇒ k − 1 = 0",
+          "tag": "simplify",
+          "title": "Collect constants",
+          "narration": "Combine one plus four minus six to get minus one, leaving k minus one equals zero."
+        },
+        {
+          "n": 4,
+          "display": "k = 1 (option D)",
+          "tag": "answer",
+          "title": "Value of k",
+          "narration": "Add one to both sides to get k equals one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f(y) = y^{3} + 4y^{2} + ky − 6, f(1) = 0",
+          "tag": "theorem",
+          "title": "State factor theorem",
+          "narration": "By the factor theorem, y minus one is a factor of f of y only if f of one equals zero."
+        },
+        {
+          "n": 2,
+          "display": "f(1) = (1)^{3} + 4(1)^{2} + k(1) − 6 = 0",
+          "tag": "substitute",
+          "title": "Substitute y = 1",
+          "narration": "Plug y equals one into each term and set the result equal to zero."
+        },
+        {
+          "n": 3,
+          "display": "1 + 4 + k − 6 = 0",
+          "tag": "evaluate",
+          "title": "Evaluate powers of 1",
+          "narration": "One cubed is one and four times one squared is four, leaving one plus four plus k minus six equals zero."
+        },
+        {
+          "n": 4,
+          "display": "k − 1 = 0 ⇒ k = 1",
+          "tag": "solve",
+          "title": "Add 1 to both sides",
+          "narration": "Five minus six is minus one; add one to both sides so k stands alone as one."
+        },
+        {
+          "n": 5,
+          "display": "Check: 1 + 4 + 1 − 6 = 0",
+          "tag": "check",
+          "title": "Check with k = 1",
+          "narration": "Check: substituting k equals one gives one plus four plus one minus six, which is zero."
+        },
+        {
+          "n": 6,
+          "display": "k = 1 (option D)",
+          "tag": "answer",
+          "title": "Final value of k",
+          "narration": "Therefore the value of k is one."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-016",
+      "questionId": "math-jamb-2014-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = \\frac{kQ}{R}",
+          "tag": "model",
+          "title": "Set up variation law",
+          "narration": "Put direct variable Q in the numerator and inverse variable R in the denominator with constant k."
+        },
+        {
+          "n": 2,
+          "display": "27 = \\frac{k(36)}{16}",
+          "tag": "substitute",
+          "title": "Plug in given values",
+          "narration": "Substitute P equals twenty-seven, Q equals thirty-six, and R equals sixteen."
+        },
+        {
+          "n": 3,
+          "display": "k = \\frac{27 × 16}{36} = 12",
+          "tag": "solve k",
+          "title": "Find constant k",
+          "narration": "Multiply both sides by sixteen and divide by thirty-six to obtain k equals twelve."
+        },
+        {
+          "n": 4,
+          "display": "P = \\frac{12Q}{R} (option C)",
+          "tag": "answer",
+          "title": "Formula connecting P, Q, R",
+          "narration": "Replacing k with twelve gives P equals twelve Q over R."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P ∝ \\frac{Q}{R} ⇒ P = \\frac{kQ}{R}",
+          "tag": "variation",
+          "title": "Write variation equation",
+          "narration": "Direct variation puts Q on top, inverse variation puts R underneath, and k is the constant of proportionality."
+        },
+        {
+          "n": 2,
+          "display": "27 = \\frac{36k}{16}",
+          "tag": "substitute",
+          "title": "Substitute P, Q, and R",
+          "narration": "Substitute the known triple twenty-seven, thirty-six, and sixteen into the equation."
+        },
+        {
+          "n": 3,
+          "display": "k = \\frac{27 × 16}{36}",
+          "tag": "rearrange",
+          "title": "Isolate constant k",
+          "narration": "Multiply both sides by sixteen and divide both sides by thirty-six to get k on its own."
+        },
+        {
+          "n": 4,
+          "display": "k = \\frac{3 × 16}{4} = 3 × 4 = 12",
+          "tag": "reduce",
+          "title": "Cancel common factors",
+          "narration": "Divide twenty-seven and thirty-six by nine to leave three and four, then divide sixteen by four to get three times four, or twelve."
+        },
+        {
+          "n": 5,
+          "display": "Check: P = \\frac{12 × 36}{16} = \\frac{12 × 9}{4} = 27",
+          "tag": "check",
+          "title": "Check with given values",
+          "narration": "Substitute thirty-six and sixteen back into twelve Q over R to confirm P equals twenty-seven."
+        },
+        {
+          "n": 6,
+          "display": "P = \\frac{12Q}{R} (option C)",
+          "tag": "answer",
+          "title": "Final formula",
+          "narration": "The formula relating the variables is P equals twelve Q over R."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-018",
+      "questionId": "math-jamb-2014-018",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "12(\\frac{x}{2} + \\frac{3}{4}) ≤ 12(\\frac{5x}{6} − \\frac{7}{12})",
+          "tag": "clear",
+          "title": "Multiply through by 12",
+          "narration": "Multiply both sides by the common denominator twelve; since twelve is positive, the inequality sign keeps its direction."
+        },
+        {
+          "n": 2,
+          "display": "6x + 9 ≤ 10x − 7",
+          "tag": "expand",
+          "title": "Clear all fractions",
+          "narration": "Simplify each fraction to obtain six x plus nine is less than or equal to ten x minus seven."
+        },
+        {
+          "n": 3,
+          "display": "16 ≤ 4x ⇒ 4 ≤ x",
+          "tag": "solve",
+          "title": "Collect x and constants",
+          "narration": "Add seven and subtract six x on both sides to get sixteen less than or equal to four x, then divide by four."
+        },
+        {
+          "n": 4,
+          "display": "x ≥ 4 (option B)",
+          "tag": "answer",
+          "title": "Solution inequality",
+          "narration": "Four less than or equal to x reads from x as x greater than or equal to four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "LCM(2, 4, 6, 12) = 12",
+          "tag": "lcm",
+          "title": "Find common denominator",
+          "narration": "Look at denominators two, four, six, and twelve; their least common multiple is twelve."
+        },
+        {
+          "n": 2,
+          "display": "6x + 9 ≤ 10x − 7",
+          "tag": "clear",
+          "title": "Multiply both sides by 12",
+          "narration": "Multiply every term on both sides by positive twelve so all fractions disappear without flipping the inequality."
+        },
+        {
+          "n": 3,
+          "display": "9 + 7 ≤ 10x − 6x",
+          "tag": "group",
+          "title": "Group constants and x terms",
+          "narration": "Add seven to both sides and subtract six x from both sides to put constants on the left and x terms on the right."
+        },
+        {
+          "n": 4,
+          "display": "16 ≤ 4x",
+          "tag": "simplify",
+          "title": "Simplify both sides",
+          "narration": "Combine nine plus seven into sixteen and ten x minus six x into four x."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{16}{4} ≤ \\frac{4x}{4} ⇒ x ≥ 4",
+          "tag": "divide",
+          "title": "Divide both sides by 4",
+          "narration": "Divide both sides by positive four to get four is less than or equal to x, which is x greater than or equal to four."
+        },
+        {
+          "n": 6,
+          "display": "Check x = 4: \\frac{4}{2} + \\frac{3}{4} = \\frac{11}{4}, \\frac{20}{6} − \\frac{7}{12} = \\frac{11}{4}",
+          "tag": "check",
+          "title": "Check boundary x = 4",
+          "narration": "Check at x equals four: both sides evaluate to eleven quarters, confirming four is the exact boundary."
+        },
+        {
+          "n": 7,
+          "display": "x ≥ 4 (option B)",
+          "tag": "answer",
+          "title": "Final solution set",
+          "narration": "The solution of the inequality is x greater than or equal to four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-019",
+      "questionId": "math-jamb-2014-019",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{10} − T_{4} = 6d = 31 − 13 = 18",
+          "tag": "difference",
+          "title": "Find common difference",
+          "narration": "From the fourth term to the tenth term is six equal steps totalling eighteen, so each step d is three."
+        },
+        {
+          "n": 2,
+          "display": "d = \\frac{18}{6} = 3",
+          "tag": "solve d",
+          "title": "Divide by 6 steps",
+          "narration": "Divide eighteen by six on both sides to get common difference three."
+        },
+        {
+          "n": 3,
+          "display": "T_{24} = T_{4} + 20d = 13 + 20(3)",
+          "tag": "step forward",
+          "title": "Step 20 terms past T_{4}",
+          "narration": "The twenty-fourth term is twenty steps ahead of the fourth term, so add twenty times three to thirteen."
+        },
+        {
+          "n": 4,
+          "display": "73 (option D)",
+          "tag": "answer",
+          "title": "Twenty-fourth term",
+          "narration": "Thirteen plus sixty gives seventy-three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "T_{n} = a + (n − 1)d",
+          "tag": "formula",
+          "title": "AP nth term formula",
+          "narration": "Recall the arithmetic progression formula T n equals first term a plus n minus one times common difference d."
+        },
+        {
+          "n": 2,
+          "display": "a + 9d = 31, a + 3d = 13",
+          "tag": "equations",
+          "title": "Write both given terms",
+          "narration": "Write equations for the tenth term with nine d and the fourth term with three d."
+        },
+        {
+          "n": 3,
+          "display": "6d = 31 − 13 = 18 ⇒ d = 3",
+          "tag": "eliminate a",
+          "title": "Subtract to find d",
+          "narration": "Subtract the first equation from the second to eliminate a, leaving six d equals eighteen, so d equals three."
+        },
+        {
+          "n": 4,
+          "display": "a + 3(3) = 13 ⇒ a = 13 − 9 = 4",
+          "tag": "find a",
+          "title": "Find first term a",
+          "narration": "Substitute d equals three into the fourth term equation and subtract nine from both sides to get a equals four."
+        },
+        {
+          "n": 5,
+          "display": "T_{24} = 4 + 23(3) = 4 + 69",
+          "tag": "substitute",
+          "title": "Compute 24th term",
+          "narration": "Put a equals four, n equals twenty-four, and d equals three into the nth term formula."
+        },
+        {
+          "n": 6,
+          "display": "73 (option D)",
+          "tag": "answer",
+          "title": "Final term",
+          "narration": "Four plus sixty-nine equals seventy-three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-020",
+      "questionId": "math-jamb-2014-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "r = \\frac{T_{2}}{T_{1}} = \\frac{\\sqrt{10} + 2\\sqrt{5}}{\\sqrt{10} + \\sqrt{5}}",
+          "tag": "ratio",
+          "title": "Write common ratio",
+          "narration": "In a geometric progression, the common ratio equals the second term divided by the first term."
+        },
+        {
+          "n": 2,
+          "display": "2\\sqrt{5} = \\sqrt{2} × \\sqrt{10}, \\sqrt{10} = \\sqrt{2} × \\sqrt{5}",
+          "tag": "factor",
+          "title": "Spot common factor \\sqrt{2}",
+          "narration": "Notice that root two times root ten gives two root five, and root two times root five gives root ten."
+        },
+        {
+          "n": 3,
+          "display": "r = \\frac{\\sqrt{2}(\\sqrt{10} + \\sqrt{5})}{\\sqrt{10} + \\sqrt{5}}",
+          "tag": "cancel",
+          "title": "Factor out \\sqrt{2} and cancel",
+          "narration": "Factor root two out of the numerator and cancel the shared bracket from top and bottom."
+        },
+        {
+          "n": 4,
+          "display": "\\sqrt{2} (option B)",
+          "tag": "answer",
+          "title": "Common ratio",
+          "narration": "Cancelling the matching factor leaves the common ratio as root two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "r = \\frac{T_{2}}{T_{1}} = \\frac{\\sqrt{10} + 2\\sqrt{5}}{\\sqrt{10} + \\sqrt{5}}",
+          "tag": "formula",
+          "title": "State GP ratio formula",
+          "narration": "The common ratio of any geometric progression is the second term divided by the first term."
+        },
+        {
+          "n": 2,
+          "display": "2\\sqrt{5} = \\sqrt{4 × 5} = \\sqrt{20} = \\sqrt{2} × \\sqrt{10}",
+          "tag": "rewrite 1",
+          "title": "Rewrite 2\\sqrt{5} under one root",
+          "narration": "Bring two inside the square root as four to see two root five equals root twenty, which splits into root two times root ten."
+        },
+        {
+          "n": 3,
+          "display": "\\sqrt{10} = \\sqrt{2} × \\sqrt{5}",
+          "tag": "rewrite 2",
+          "title": "Split \\sqrt{10}",
+          "narration": "Likewise, split root ten into root two times root five."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = \\sqrt{2}(\\sqrt{5} + \\sqrt{10}) = \\sqrt{2} T_{1}",
+          "tag": "factor",
+          "title": "Factor \\sqrt{2} from T_{2}",
+          "narration": "Taking out the common factor root two reveals that the second term is simply root two times the first term."
+        },
+        {
+          "n": 5,
+          "display": "r = \\frac{\\sqrt{2} T_{1}}{T_{1}} = \\sqrt{2}",
+          "tag": "cancel",
+          "title": "Divide and cancel T_{1}",
+          "narration": "Cancel the identical first-term expression from numerator and denominator."
+        },
+        {
+          "n": 6,
+          "display": "\\sqrt{2} (option B)",
+          "tag": "answer",
+          "title": "Final common ratio",
+          "narration": "Therefore the common ratio is root two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-022",
+      "questionId": "math-jamb-2014-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "5x − 6y = 7, 2x − 7y = −11",
+          "tag": "equations",
+          "title": "Expand matrix rows",
+          "narration": "Multiply each matrix row by column vector x, y to write two linear equations."
+        },
+        {
+          "n": 2,
+          "display": "10x − 12y = 14, 10x − 35y = −55",
+          "tag": "scale",
+          "title": "Match x coefficients",
+          "narration": "Multiply the first equation by two and the second by five so both start with ten x."
+        },
+        {
+          "n": 3,
+          "display": "(−12y + 35y) = 14 + 55 ⇒ 23y = 69",
+          "tag": "subtract",
+          "title": "Subtract equations",
+          "narration": "Subtract the second scaled equation from the first to eliminate x and get twenty-three y equals sixty-nine."
+        },
+        {
+          "n": 4,
+          "display": "y = \\frac{69}{23} = 3 (option D)",
+          "tag": "answer",
+          "title": "Value of y",
+          "narration": "Divide both sides by twenty-three to find y equals three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\matrix{5,−6;2,−7}, (x, y) → (7, −11)",
+          "tag": "matrix",
+          "title": "Set up matrix product",
+          "narration": "Write the mapping as multiplying the two by two matrix by the column vector x, y."
+        },
+        {
+          "n": 2,
+          "display": "5x − 6y = 7 and 2x − 7y = −11",
+          "tag": "rows",
+          "title": "Read two equations",
+          "narration": "Each row gives one linear equation: five x minus six y equals seven, and two x minus seven y equals minus eleven."
+        },
+        {
+          "n": 3,
+          "display": "2×: 10x − 12y = 14; 5×: 10x − 35y = −55",
+          "tag": "eliminate",
+          "title": "Equalise x coefficients",
+          "narration": "Since we want y, multiply the first equation by two and the second by five so the x terms both become ten x."
+        },
+        {
+          "n": 4,
+          "display": "(10x − 12y) − (10x − 35y) = 14 − (−55)",
+          "tag": "subtract",
+          "title": "Subtract second from first",
+          "narration": "Subtract the second equation from the first carefully, watching the double minus signs on minus thirty-five y and minus fifty-five."
+        },
+        {
+          "n": 5,
+          "display": "23y = 69 ⇒ y = \\frac{69}{23} = 3",
+          "tag": "divide",
+          "title": "Divide both sides by 23",
+          "narration": "Subtracting leaves twenty-three y equals sixty-nine; divide both sides by twenty-three to get y equals three."
+        },
+        {
+          "n": 6,
+          "display": "Check: x = 5 ⇒ 2(5) − 7(3) = −11",
+          "tag": "check",
+          "title": "Verify in both rows",
+          "narration": "Putting y equals three into the first row gives x equals five, and two times five minus seven times three equals minus eleven."
+        },
+        {
+          "n": 7,
+          "display": "y = 3 (option D)",
+          "tag": "answer",
+          "title": "Final value of y",
+          "narration": "Therefore y equals three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-023",
+      "questionId": "math-jamb-2014-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\det{a,b;c,d} = ad − bc",
+          "tag": "formula",
+          "title": "Determinant formula",
+          "narration": "For a two by two matrix, subtract the off-diagonal product from the main diagonal product."
+        },
+        {
+          "n": 2,
+          "display": "(−x)(4) − (12)(−1) = −12",
+          "tag": "substitute",
+          "title": "Expand determinant",
+          "narration": "Multiply minus x by four and subtract twelve times minus one, setting it equal to minus twelve."
+        },
+        {
+          "n": 3,
+          "display": "−4x + 12 = −12 ⇒ −4x = −24",
+          "tag": "isolate",
+          "title": "Subtract 12 from both sides",
+          "narration": "Minus twelve times minus one becomes plus twelve; subtract twelve from both sides to get minus four x equals minus twenty-four."
+        },
+        {
+          "n": 4,
+          "display": "x = 6 (option A)",
+          "tag": "answer",
+          "title": "Value of x",
+          "narration": "Divide both sides by minus four to get x equals six."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\det{−x,12;−1,4} = (−x)(4) − (12)(−1)",
+          "tag": "expand",
+          "title": "Compute determinant products",
+          "narration": "Multiply down the main diagonal minus x times four, then subtract the reverse diagonal twelve times minus one."
+        },
+        {
+          "n": 2,
+          "display": "−4x + 12 = −12",
+          "tag": "equate",
+          "title": "Watch the double negative",
+          "narration": "Subtracting minus twelve adds twelve, so set minus four x plus twelve equal to minus twelve."
+        },
+        {
+          "n": 3,
+          "display": "−4x = −12 − 12 = −24",
+          "tag": "subtract",
+          "title": "Subtract 12 from both sides",
+          "narration": "Subtract twelve from both sides to get the x term on its own."
+        },
+        {
+          "n": 4,
+          "display": "x = \\frac{−24}{−4} = 6",
+          "tag": "divide",
+          "title": "Divide both sides by −4",
+          "narration": "Divide minus twenty-four by minus four; a negative divided by a negative gives positive six."
+        },
+        {
+          "n": 5,
+          "display": "Check: (−6)(4) − (−12) = −24 + 12 = −12",
+          "tag": "check",
+          "title": "Check determinant value",
+          "narration": "Check: replacing x with six gives minus twenty-four plus twelve, which equals minus twelve."
+        },
+        {
+          "n": 6,
+          "display": "x = 6 (option A)",
+          "tag": "answer",
+          "title": "Final value of x",
+          "narration": "Therefore x equals six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-024",
+      "questionId": "math-jamb-2014-024",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Column 1 has 0, 1, 0 with signs +, −, +",
+          "tag": "column 1",
+          "title": "Pick column with zeros",
+          "narration": "Expand down the first column because two of its entries are zero, leaving only the middle term."
+        },
+        {
+          "n": 2,
+          "display": "−1 × \\det{3,2;5,4}",
+          "tag": "minor",
+          "title": "Form the 2 × 2 minor",
+          "narration": "Cross out row two and column one, and keep the negative cofactor sign for position two, one."
+        },
+        {
+          "n": 3,
+          "display": "−(3 × 4 − 2 × 5) = −(12 − 10)",
+          "tag": "compute",
+          "title": "Evaluate minor determinant",
+          "narration": "Multiply three by four to get twelve and subtract two times five, which is ten."
+        },
+        {
+          "n": 4,
+          "display": "−2 (option A)",
+          "tag": "answer",
+          "title": "Determinant value",
+          "narration": "Twelve minus ten is two, and the outer minus sign gives minus two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Col 1 entries: 0, 1, 0; signs: +, −, +",
+          "tag": "strategy",
+          "title": "Expand down column 1",
+          "narration": "Expanding down the first column avoids extra work because multiplying by zero vanishes for rows one and three."
+        },
+        {
+          "n": 2,
+          "display": "+0(…) − 1\\det{3,2;5,4} + 0(…)",
+          "tag": "cofactor",
+          "title": "Write column 1 cofactors",
+          "narration": "Only the middle entry one survives, carrying a minus cofactor sign."
+        },
+        {
+          "n": 3,
+          "display": "−1(3 × 4 − 2 × 5)",
+          "tag": "minor",
+          "title": "Expand 2 × 2 minor",
+          "narration": "Evaluate the two by two determinant as top-left times bottom-right minus top-right times bottom-left."
+        },
+        {
+          "n": 4,
+          "display": "−(12 − 10) = −2",
+          "tag": "subtract",
+          "title": "Subtract and apply minus sign",
+          "narration": "Three times four is twelve minus two times five is ten, leaving minus two."
+        },
+        {
+          "n": 5,
+          "display": "−2 (option A)",
+          "tag": "answer",
+          "title": "Final determinant",
+          "narration": "The value of the determinant is minus two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-033",
+      "questionId": "math-jamb-2014-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = \\frac{y_{2} − y_{1}}{x_{2} − x_{1}}",
+          "tag": "formula",
+          "title": "Gradient formula",
+          "narration": "Use the gradient formula change in y over change in x."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{4 − 2}{x − 1} = \\frac{1}{2}",
+          "tag": "substitute",
+          "title": "Substitute both points",
+          "narration": "Plug in x comma four and one comma two in the same order and equate to one half."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2}{x − 1} = \\frac{1}{2} ⇒ x − 1 = 4",
+          "tag": "cross-multiply",
+          "title": "Cross-multiply",
+          "narration": "Four minus two is two, then cross-multiply to get x minus one equal to four."
+        },
+        {
+          "n": 4,
+          "display": "x = 5 (option B)",
+          "tag": "answer",
+          "title": "Value of x",
+          "narration": "Add one to both sides to find x equals five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = \\frac{y_{2} − y_{1}}{x_{2} − x_{1}}",
+          "tag": "formula",
+          "title": "State gradient formula",
+          "narration": "Write down the two-point gradient formula, making sure both numerator and denominator subtract the points in the same order."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{4 − 2}{x − 1} = \\frac{1}{2}",
+          "tag": "substitute",
+          "title": "Substitute points and m",
+          "narration": "Put four minus two over x minus one and set that equal to the given gradient one half."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2}{x − 1} = \\frac{1}{2}",
+          "tag": "simplify",
+          "title": "Simplify the numerator",
+          "narration": "Subtract two from four in the numerator to get two."
+        },
+        {
+          "n": 4,
+          "display": "x − 1 = 2 × 2 = 4",
+          "tag": "cross-multiply",
+          "title": "Cross-multiply both sides",
+          "narration": "Multiply diagonally so x minus one equals two times two, which is four."
+        },
+        {
+          "n": 5,
+          "display": "x = 4 + 1 = 5",
+          "tag": "add 1",
+          "title": "Add 1 to both sides",
+          "narration": "Add one to both sides to get x on its own."
+        },
+        {
+          "n": 6,
+          "display": "Check: \\frac{4 − 2}{5 − 1} = \\frac{2}{4} = \\frac{1}{2}",
+          "tag": "check",
+          "title": "Check gradient at x = 5",
+          "narration": "Verify: with x equal to five, two over four simplifies to one half."
+        },
+        {
+          "n": 7,
+          "display": "x = 5 (option B)",
+          "tag": "answer",
+          "title": "Final value of x",
+          "narration": "Therefore x equals five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-036",
+      "questionId": "math-jamb-2014-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "3y = −4x + 5 ⇒ m_{1} = −\\frac{4}{3}",
+          "tag": "given slope",
+          "title": "Find given gradient",
+          "narration": "Rearrange the given line into y equals m x plus c form to read its gradient minus four thirds."
+        },
+        {
+          "n": 2,
+          "display": "m_{1} m_{2} = −1 ⇒ m_{2} = \\frac{3}{4}",
+          "tag": "perp slope",
+          "title": "Perpendicular gradient",
+          "narration": "Take the negative reciprocal of minus four thirds to get the perpendicular gradient three quarters."
+        },
+        {
+          "n": 3,
+          "display": "y − 3 = \\frac{3}{4}(x + 2) ⇒ 4y − 12 = 3x + 6",
+          "tag": "point-slope",
+          "title": "Use point (−2, 3)",
+          "narration": "Use point-slope form through minus two comma three and multiply both sides by four."
+        },
+        {
+          "n": 4,
+          "display": "3x − 4y + 18 = 0 (option B)",
+          "tag": "answer",
+          "title": "Equation of line",
+          "narration": "Collect all terms on one side to obtain three x minus four y plus eighteen equals zero."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "4x + 3y − 5 = 0 ⇒ y = −\\frac{4}{3}x + \\frac{5}{3}",
+          "tag": "rearrange",
+          "title": "Find slope of given line",
+          "narration": "Isolate y by moving four x minus five to the right and dividing by three, giving gradient m one equals minus four over three."
+        },
+        {
+          "n": 2,
+          "display": "m_{2} = −\\frac{1}{m_{1}} = \\frac{3}{4}",
+          "tag": "perpendicular",
+          "title": "Take negative reciprocal",
+          "narration": "For perpendicular lines, flip the fraction and change its sign so the two slopes multiply to minus one."
+        },
+        {
+          "n": 3,
+          "display": "y − y_{1} = m(x − x_{1}) ⇒ y − 3 = \\frac{3}{4}(x − (−2))",
+          "tag": "formula",
+          "title": "Apply point-slope formula",
+          "narration": "Substitute gradient three quarters and point minus two comma three into y minus y one equals m times x minus x one."
+        },
+        {
+          "n": 4,
+          "display": "4(y − 3) = 3(x + 2) ⇒ 4y − 12 = 3x + 6",
+          "tag": "clear",
+          "title": "Multiply both sides by 4",
+          "narration": "Multiply both sides by four to clear the fraction, then expand both brackets."
+        },
+        {
+          "n": 5,
+          "display": "3x − 4y + 6 + 12 = 0 ⇒ 3x − 4y + 18 = 0",
+          "tag": "standard form",
+          "title": "Collect onto one side",
+          "narration": "Subtract four y and add twelve to both sides so all terms sit neatly on one side equal to zero."
+        },
+        {
+          "n": 6,
+          "display": "Check (−2, 3): 3(−2) − 4(3) + 18 = −6 − 12 + 18 = 0",
+          "tag": "check",
+          "title": "Check point (−2, 3)",
+          "narration": "Test x equals minus two and y equals three: minus six minus twelve plus eighteen is zero."
+        },
+        {
+          "n": 7,
+          "display": "3x − 4y + 18 = 0 (option B)",
+          "tag": "answer",
+          "title": "Final line equation",
+          "narration": "The equation of the perpendicular line is three x minus four y plus eighteen equals zero."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-039",
+      "questionId": "math-jamb-2014-039",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Let u = 3x, y = cos u",
+          "tag": "setup",
+          "title": "Identify inner function",
+          "narration": "Treat three x as the inner function u and cosine u as the outer function."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{dy}{du} = −sin u, \\frac{du}{dx} = 3",
+          "tag": "differentiate",
+          "title": "Differentiate outer and inner",
+          "narration": "Cosine u differentiates to minus sine u, and three x differentiates to three."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{dy}{dx} = −sin(3x) × 3",
+          "tag": "chain rule",
+          "title": "Apply chain rule",
+          "narration": "Multiply the two derivatives together and replace u with three x."
+        },
+        {
+          "n": 4,
+          "display": "−3 sin 3x (option A)",
+          "tag": "answer",
+          "title": "Derivative of cos 3x",
+          "narration": "Writing the factor three in front gives minus three sine three x."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Let u = 3x so y = cos u",
+          "tag": "substitute",
+          "title": "Choose substitution u = 3x",
+          "narration": "Because the angle is three x rather than x alone, use the chain rule by setting u equal to three x."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{dy}{du} = −sin u",
+          "tag": "outer",
+          "title": "Differentiate cosine",
+          "narration": "Differentiate cosine u with respect to u to get minus sine u."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{du}{dx} = 3",
+          "tag": "inner",
+          "title": "Differentiate angle 3x",
+          "narration": "Differentiate three x with respect to x to get three."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{dy}{dx} = \\frac{dy}{du} × \\frac{du}{dx} = (−sin 3x)(3)",
+          "tag": "multiply",
+          "title": "Multiply by chain rule",
+          "narration": "Multiply the outer derivative by the inner derivative and substitute three x back for u."
+        },
+        {
+          "n": 5,
+          "display": "−3 sin 3x (option A)",
+          "tag": "answer",
+          "title": "Final derivative",
+          "narration": "The derivative of cosine three x with respect to x is minus three sine three x."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-042",
+      "questionId": "math-jamb-2014-042",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "u = 2x + 3 ⇒ du = 2 dx ⇒ dx = \\frac{du}{2}",
+          "tag": "substitute",
+          "title": "Substitute u = 2x + 3",
+          "narration": "Set u equal to two x plus three, so d x equals d u divided by two."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{2} ∫ u^{\\frac{1}{2}} du = \\frac{1}{2} × \\frac{u^{\\frac{3}{2}}}{\\frac{3}{2}} + k",
+          "tag": "power rule",
+          "title": "Integrate u^{\\frac{1}{2}}",
+          "narration": "Raise the power one half by one to three halves and divide by three halves."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{2} × \\frac{2}{3} u^{\\frac{3}{2}} + k = \\frac{1}{3} u^{\\frac{3}{2}} + k",
+          "tag": "simplify",
+          "title": "Cancel factor of 2",
+          "narration": "Multiplying one half by two thirds simplifies cleanly to one third."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{3}(2x + 3)^{\\frac{3}{2}} + k (option D)",
+          "tag": "answer",
+          "title": "Indefinite integral",
+          "narration": "Replace u with two x plus three to get one third open bracket two x plus three close bracket to the three halves plus k."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Let u = 2x + 3 ⇒ \\frac{du}{dx} = 2",
+          "tag": "substitution",
+          "title": "Define linear substitution",
+          "narration": "Let u be the inside expression two x plus three; its derivative with respect to x is two, so d x is d u over two."
+        },
+        {
+          "n": 2,
+          "display": "∫ (2x + 3)^{\\frac{1}{2}} dx = \\frac{1}{2} ∫ u^{\\frac{1}{2}} du",
+          "tag": "rewrite",
+          "title": "Rewrite integral in u",
+          "narration": "Substitute u and d u over two to turn the integral into one half times the integral of u to the power one half."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{2} + 1 = \\frac{3}{2}",
+          "tag": "exponent",
+          "title": "Add 1 to the power",
+          "narration": "By the integration power rule, add one to the exponent one half to get three halves."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{2} × \\frac{2}{3} u^{\\frac{3}{2}} + k = \\frac{1}{3} u^{\\frac{3}{2}} + k",
+          "tag": "divide",
+          "title": "Divide by new exponent",
+          "narration": "Dividing by three halves is multiplying by two thirds; the two cancels with one half, leaving one third."
+        },
+        {
+          "n": 5,
+          "display": "Check: \\frac{d}{dx}[\\frac{1}{3}(2x+3)^{\\frac{3}{2}}] = \\frac{1}{3} × \\frac{3}{2}(2x+3)^{\\frac{1}{2}} × 2",
+          "tag": "check",
+          "title": "Check by differentiating",
+          "narration": "Check by differentiating: one third times three halves times inner derivative two cancels back to one, recovering the original integrand."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{1}{3}(2x + 3)^{\\frac{3}{2}} + k (option D)",
+          "tag": "answer",
+          "title": "Final antiderivative",
+          "narration": "The integral is one third times two x plus three to the power three halves plus constant k."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-045",
+      "questionId": "math-jamb-2014-045",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Mode = value with highest frequency",
+          "tag": "definition",
+          "title": "Definition of mode",
+          "narration": "The mode is the data value that appears most often, not its frequency count."
+        },
+        {
+          "n": 2,
+          "display": "Frequencies: 1, 2, 2, 1, 9 ⇒ highest = 9",
+          "tag": "scan",
+          "title": "Find highest frequency",
+          "narration": "Among the frequencies one, two, two, one, and nine, the largest frequency is nine."
+        },
+        {
+          "n": 3,
+          "display": "Value paired with frequency 9 is 4",
+          "tag": "match",
+          "title": "Match to data value",
+          "narration": "Since the values are zero, one, two, three, and four in order, frequency nine belongs to value four."
+        },
+        {
+          "n": 4,
+          "display": "4 (option A)",
+          "tag": "answer",
+          "title": "Mode of data",
+          "narration": "Therefore the mode is four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Mode = data value with greatest frequency",
+          "tag": "definition",
+          "title": "State definition of mode",
+          "narration": "Recall that the mode is the observation with the highest frequency, so we look for the largest frequency and read its corresponding data value."
+        },
+        {
+          "n": 2,
+          "display": "0→1, 1→2, 2→2, 3→1, 4→9",
+          "tag": "pair up",
+          "title": "Pair values with frequencies",
+          "narration": "Line up each value in order with its frequency: zero occurs once, one twice, two twice, three once, and four nine times."
+        },
+        {
+          "n": 3,
+          "display": "Max frequency = 9 (for value 4)",
+          "tag": "compare",
+          "title": "Identify winning value",
+          "narration": "Nine is clearly the largest frequency, and the value occurring nine times is four."
+        },
+        {
+          "n": 4,
+          "display": "4 (option A)",
+          "tag": "answer",
+          "title": "Final mode",
+          "narration": "Thus the mode of the distribution is four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-046",
+      "questionId": "math-jamb-2014-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "1, 2, 3, 3, 4, 5, 5, 5, 6, 7, 8, 9, 9, 10",
+          "tag": "sort",
+          "title": "Arrange in ascending order",
+          "narration": "Sort all fourteen numbers from smallest to largest before finding the middle."
+        },
+        {
+          "n": 2,
+          "display": "n = 14 ⇒ positions \\frac{14}{2} = 7th and 8th",
+          "tag": "formula",
+          "title": "Locate two middle terms",
+          "narration": "Because fourteen is even, average the seventh and eighth values."
+        },
+        {
+          "n": 3,
+          "display": "7th = 5, 8th = 5 ⇒ \\frac{5 + 5}{2}",
+          "tag": "average",
+          "title": "Average 7th and 8th",
+          "narration": "Both the seventh and eighth values in the ordered list are five."
+        },
+        {
+          "n": 4,
+          "display": "5 (option C)",
+          "tag": "answer",
+          "title": "Median value",
+          "narration": "The median of the list is five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "1, 2, 3, 3, 4, 5, 5, 5, 6, 7, 8, 9, 9, 10",
+          "tag": "sort",
+          "title": "Sort all 14 values",
+          "narration": "A median is only meaningful when data is ordered, so arrange all fourteen observations from least to greatest."
+        },
+        {
+          "n": 2,
+          "display": "n = 14 (even) ⇒ Median = \\frac{T_{\\frac{n}{2}} + T_{\\frac{n}{2} + 1}}{2}",
+          "tag": "formula",
+          "title": "State even-count median formula",
+          "narration": "For an even number n of values, the median is the mean of the n over two term and the next term."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{14}{2} = 7 ⇒ average 7th and 8th",
+          "tag": "positions",
+          "title": "Identify positions 7 and 8",
+          "narration": "Half of fourteen is seven, so count to the seventh and eighth numbers in the sorted list."
+        },
+        {
+          "n": 4,
+          "display": "7th value = 5, 8th value = 5",
+          "tag": "read",
+          "title": "Read middle values",
+          "narration": "Counting through one, two, three, three, four, five shows both position seven and position eight are five."
+        },
+        {
+          "n": 5,
+          "display": "Median = \\frac{5 + 5}{2} = 5",
+          "tag": "average",
+          "title": "Average the two values",
+          "narration": "Add five plus five and divide by two to get five."
+        },
+        {
+          "n": 6,
+          "display": "5 (option C)",
+          "tag": "answer",
+          "title": "Median",
+          "narration": "The median of the fourteen numbers is five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2014-047",
+      "questionId": "math-jamb-2014-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x̄ = \\frac{5 + 4 + 3 + 2 + 1}{5} = 3",
+          "tag": "mean",
+          "title": "Calculate the mean",
+          "narration": "Add the five numbers to get fifteen and divide by five to get a mean of three."
+        },
+        {
+          "n": 2,
+          "display": "d^{2}: 4, 1, 0, 1, 4 ⇒ Σ d^{2} = 10",
+          "tag": "deviations",
+          "title": "Sum squared deviations",
+          "narration": "Subtract mean three from each number and square the differences to get four, one, zero, one, four, summing to ten."
+        },
+        {
+          "n": 3,
+          "display": "σ^{2} = \\frac{10}{5} = 2",
+          "tag": "variance",
+          "title": "Find population variance",
+          "narration": "Divide the sum of squared deviations ten by N equals five to get variance two."
+        },
+        {
+          "n": 4,
+          "display": "\\sqrt{2} (option B)",
+          "tag": "answer",
+          "title": "Standard deviation",
+          "narration": "Taking the square root of two gives the population standard deviation root two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "σ = \\sqrt{\\frac{Σ (x − x̄)^{2}}{N}}",
+          "tag": "formula",
+          "title": "Standard deviation formula",
+          "narration": "State the population standard deviation formula: the square root of the average squared deviation from the mean."
+        },
+        {
+          "n": 2,
+          "display": "x̄ = \\frac{5 + 4 + 3 + 2 + 1}{5} = \\frac{15}{5} = 3",
+          "tag": "mean",
+          "title": "Find arithmetic mean",
+          "narration": "Sum the five values to get fifteen and divide by five to find the mean is three."
+        },
+        {
+          "n": 3,
+          "display": "x − 3: 2, 1, 0, −1, −2",
+          "tag": "deviate",
+          "title": "Subtract mean from each",
+          "narration": "Subtract three from each observation to get deviations two, one, zero, minus one, and minus two."
+        },
+        {
+          "n": 4,
+          "display": "Σ (x − 3)^{2} = 4 + 1 + 0 + 1 + 4 = 10",
+          "tag": "square",
+          "title": "Square and add deviations",
+          "narration": "Square each deviation so signs become positive, then add four plus one plus zero plus one plus four to get ten."
+        },
+        {
+          "n": 5,
+          "display": "σ^{2} = \\frac{10}{5} = 2 ⇒ σ = \\sqrt{2}",
+          "tag": "root",
+          "title": "Divide by 5 and take root",
+          "narration": "Divide ten by five for variance two, then take the square root to get root two."
+        },
+        {
+          "n": 6,
+          "display": "\\sqrt{2} (option B)",
+          "tag": "answer",
+          "title": "Population standard deviation",
+          "narration": "The population standard deviation is root two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-001",
+      "questionId": "math-jamb-2015-001",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = 1, r = \\frac{x}{1} = x, |x| < 1",
+          "tag": "parameters",
+          "title": "Identify first term and ratio",
+          "narration": "Recognize an infinite geometric series with first term one and common ratio x, where magnitude of x is less than one."
+        },
+        {
+          "n": 2,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "title": "Infinite GP sum formula",
+          "narration": "Use the convergent geometric series sum formula a divided by one minus r."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{1}{1 − x}",
+          "tag": "substitute",
+          "title": "Substitute a and r",
+          "narration": "Put one in place of a and x in place of r."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{1 − x} (option A)",
+          "tag": "answer",
+          "title": "Sum to infinity",
+          "narration": "The infinite sum equals one over one minus x."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "1 + x + x^{2} + … ⇒ a = 1, r = x",
+          "tag": "identify",
+          "title": "Check GP ratio",
+          "narration": "Each term multiplies the previous term by x, so this is a geometric progression with first term a equals one and common ratio r equals x."
+        },
+        {
+          "n": 2,
+          "display": "−1 < x < 1 ⇒ |r| < 1 (converges)",
+          "tag": "condition",
+          "title": "Verify convergence",
+          "narration": "Because x lies strictly between minus one and one, higher powers shrink toward zero and the infinite sum converges."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "title": "State sum to infinity formula",
+          "narration": "State the formula for the sum to infinity of a convergent geometric progression: first term divided by one minus common ratio."
+        },
+        {
+          "n": 4,
+          "display": "S_{∞} = \\frac{1}{1 − x}",
+          "tag": "substitute",
+          "title": "Substitute a = 1 and r = x",
+          "narration": "Replace a with one and r with x in the formula."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{1}{1 − x} (option A)",
+          "tag": "answer",
+          "title": "Infinite series sum",
+          "narration": "For x between minus one and one, the series sums to one divided by one minus x."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-009",
+      "questionId": "math-jamb-2015-009",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Spent in first x days = X × x = Xx",
+          "tag": "spent",
+          "title": "Amount spent so far",
+          "narration": "Spending X cedis per day for x days uses up X x cedis."
+        },
+        {
+          "n": 2,
+          "display": "Money left = Y − Xx",
+          "tag": "remainder",
+          "title": "Find remaining money",
+          "narration": "Subtract the X x cedis spent from the original Y cedis to find what remains."
+        },
+        {
+          "n": 3,
+          "display": "Daily rate = \\frac{Money left}{Days left} = \\frac{Y − Xx}{y − x}",
+          "tag": "divide",
+          "title": "Divide by remaining days",
+          "narration": "Divide the remaining money by the remaining y minus x days."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{Y − Xx}{y − x} (option D)",
+          "tag": "answer",
+          "title": "Daily amount remaining",
+          "narration": "The trader can spend Y minus X x all over y minus x cedis per day."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Total budget = Y, Total days = y",
+          "tag": "given",
+          "title": "Identify total budget",
+          "narration": "The trader begins with a total of Y cedis meant to last y days, paying careful attention to capital and lowercase letters."
+        },
+        {
+          "n": 2,
+          "display": "Amount spent = x days × X cedis = Xx",
+          "tag": "spent",
+          "title": "Calculate spending for x days",
+          "narration": "Multiply X cedis per day by x days to find the total spent in the first part, X x."
+        },
+        {
+          "n": 3,
+          "display": "Remaining money = Y − Xx",
+          "tag": "subtract",
+          "title": "Subtract spent from Y",
+          "narration": "Subtract what was already spent from the initial Y cedis to get Y minus X x left."
+        },
+        {
+          "n": 4,
+          "display": "Daily allowance = \\frac{Y − Xx}{y − x}",
+          "tag": "divide",
+          "title": "Spread evenly over y − x days",
+          "narration": "Divide the leftover money evenly across the remaining y minus x days."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{Y − Xx}{y − x} (option D)",
+          "tag": "answer",
+          "title": "Cedis per remaining day",
+          "narration": "So the trader can spend Y minus X x divided by y minus x cedis per day."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-013",
+      "questionId": "math-jamb-2015-013",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "−\\frac{2}{2}, +\\frac{2}{3}, −\\frac{2}{4}, +\\frac{2}{5}, …",
+          "tag": "pattern",
+          "title": "Rewrite with numerator 2",
+          "narration": "Write minus one as minus two halves and minus one half as minus two quarters so every numerator is two."
+        },
+        {
+          "n": 2,
+          "display": "Magnitude = \\frac{2}{n + 1}",
+          "tag": "denominator",
+          "title": "Match denominator to n",
+          "narration": "For n equals one, two, three, four, the denominators are two, three, four, five, which is always n plus one."
+        },
+        {
+          "n": 3,
+          "display": "Signs: −, +, −, + ⇒ (−1)^{n}",
+          "tag": "sign",
+          "title": "Match alternating signs",
+          "narration": "Odd terms are negative and even terms are positive, matching the factor minus one to the power n."
+        },
+        {
+          "n": 4,
+          "display": "(−1)^{n}\\frac{2}{n + 1} (option C)",
+          "tag": "answer",
+          "title": "General nth term",
+          "narration": "Combining sign and magnitude gives minus one to the n times two over n plus one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "−1 = −\\frac{2}{2}, −\\frac{1}{2} = −\\frac{2}{4}",
+          "tag": "unify",
+          "title": "Reveal common numerator 2",
+          "narration": "Notice the second and fourth terms already have numerator two, so rewrite minus one and minus one half with numerator two as well."
+        },
+        {
+          "n": 2,
+          "display": "n = 1, 2, 3, 4 → denominators 2, 3, 4, 5 = n + 1",
+          "tag": "magnitude",
+          "title": "Express denominator via n",
+          "narration": "Each denominator is one more than the term position n, giving fraction magnitude two over n plus one."
+        },
+        {
+          "n": 3,
+          "display": "n = 1: (−1)^{1} = −1; n = 2: (−1)^{2} = +1",
+          "tag": "alternating",
+          "title": "Capture alternating sign",
+          "narration": "Because the sequence starts negative at n equals one and flips every term, multiply by minus one to the power n."
+        },
+        {
+          "n": 4,
+          "display": "T_{n} = (−1)^{n} \\frac{2}{n + 1}",
+          "tag": "combine",
+          "title": "Form nth term formula",
+          "narration": "Combine the sign factor with the fraction magnitude to write the general term."
+        },
+        {
+          "n": 5,
+          "display": "Check n = 3: (−1)^{3} \\frac{2}{3 + 1} = −\\frac{2}{4} = −\\frac{1}{2}",
+          "tag": "check",
+          "title": "Check term 3",
+          "narration": "Check at n equals three: minus one cubed times two quarters gives minus one half, matching the list."
+        },
+        {
+          "n": 6,
+          "display": "(−1)^{n}\\frac{2}{n + 1} (option C)",
+          "tag": "answer",
+          "title": "Sequence formula",
+          "narration": "Therefore the nth term formula is minus one to the n times two over n plus one."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-016",
+      "questionId": "math-jamb-2015-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Area(QRST) = 4 × 7 = 28 cm^{2}",
+          "tag": "parallelogram",
+          "title": "Find parallelogram area",
+          "narration": "Parallelogram Q R S T has base S R equals four centimetres and perpendicular height P S equals seven centimetres, giving twenty-eight."
+        },
+        {
+          "n": 2,
+          "display": "Area(△PST) = \\frac{1}{2} × 7 × 7 = \\frac{49}{2} cm^{2}",
+          "tag": "triangle",
+          "title": "Find triangle area",
+          "narration": "Right triangle P S T has legs seven centimetres and seven centimetres, so its area is forty-nine halves."
+        },
+        {
+          "n": 3,
+          "display": "Area(PQRS) = 28 + \\frac{49}{2} = \\frac{105}{2} cm^{2}",
+          "tag": "trapezium",
+          "title": "Add areas for trapezium",
+          "narration": "Add the parallelogram and triangle areas to find trapezium P Q R S is one hundred and five halves square centimetres."
+        },
+        {
+          "n": 4,
+          "display": "28 : \\frac{105}{2} = 56 : 105 (option B)",
+          "tag": "answer",
+          "title": "Clear fraction in ratio",
+          "narration": "Multiply both sides of the ratio by two to get fifty-six to one hundred and five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "PS = PT = 7 cm, SR = 4 cm, PS ⊥ PQ",
+          "tag": "given",
+          "title": "Read lengths and parallel lines",
+          "narration": "Read the properties given: P Q is parallel to S R, S T is parallel to R Q, P S is perpendicular to both bases at seven centimetres, P T is seven, and S R is four."
+        },
+        {
+          "n": 2,
+          "display": "Area(QRST) = SR × PS = 4 × 7 = 28 cm^{2}",
+          "tag": "parallelogram",
+          "title": "Area of parallelogram QRST",
+          "narration": "Because both pairs of opposite sides are parallel, Q R S T is a parallelogram; multiply base four by perpendicular height seven to get twenty-eight."
+        },
+        {
+          "n": 3,
+          "display": "Area(△PST) = \\frac{1}{2} × PT × PS = \\frac{1}{2}(7)(7) = \\frac{49}{2}",
+          "tag": "triangle",
+          "title": "Area of right triangle PST",
+          "narration": "Because P S meets P Q at a right angle, triangle P S T has base seven and height seven, giving forty-nine over two square centimetres."
+        },
+        {
+          "n": 4,
+          "display": "Area(PQRS) = 28 + \\frac{49}{2} = \\frac{56 + 49}{2} = \\frac{105}{2}",
+          "tag": "combine",
+          "title": "Find total trapezium area",
+          "narration": "Combine the two non-overlapping pieces over denominator two: fifty-six plus forty-nine equals one hundred and five halves."
+        },
+        {
+          "n": 5,
+          "display": "Ratio = 28 : \\frac{105}{2} = 56 : 105",
+          "tag": "ratio",
+          "title": "Multiply ratio by 2",
+          "narration": "Double both numbers in twenty-eight to one hundred and five halves to write the ratio in whole numbers as fifty-six to one hundred and five."
+        },
+        {
+          "n": 6,
+          "display": "56 : 105 (option B)",
+          "tag": "answer",
+          "title": "Required area ratio",
+          "narration": "The ratio of area Q R S T to area P Q R S is fifty-six to one hundred and five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-019",
+      "questionId": "math-jamb-2015-019",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{XW}{WZ} = \\frac{XY}{YZ} = \\frac{3}{7}",
+          "tag": "theorem",
+          "title": "Angle bisector theorem",
+          "narration": "By the angle bisector theorem, the bisector of angle Y divides opposite side X Z in the ratio of sides X Y to Y Z, which is three to seven."
+        },
+        {
+          "n": 2,
+          "display": "Total parts = 3 + 7 = 10",
+          "tag": "parts",
+          "title": "Find XW fraction of XZ",
+          "narration": "Add three and seven to see X W occupies three tenths of side X Z."
+        },
+        {
+          "n": 3,
+          "display": "XW = \\frac{3}{10} × 5 = 1.5",
+          "tag": "multiply",
+          "title": "Multiply by XZ = 5 cm",
+          "narration": "Multiply three tenths by the five-centimetre length X Z."
+        },
+        {
+          "n": 4,
+          "display": "1.5 cm (option A)",
+          "tag": "answer",
+          "title": "Length of XW",
+          "narration": "The segment X W measures one point five centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "XY = 3 cm, YZ = 7 cm, XZ = 5 cm",
+          "tag": "given",
+          "title": "List side lengths",
+          "narration": "Write down the sides adjacent to angle Y, three and seven centimetres, and the opposite side X Z, five centimetres."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{XW}{WZ} = \\frac{XY}{YZ} = \\frac{3}{7}",
+          "tag": "theorem",
+          "title": "Apply angle bisector theorem",
+          "narration": "By the interior angle bisector theorem, segment X W over segment W Z equals adjacent side X Y over adjacent side Y Z."
+        },
+        {
+          "n": 3,
+          "display": "XW : WZ = 3 : 7 ⇒ XW = \\frac{3}{3 + 7} XZ",
+          "tag": "share",
+          "title": "Express XW as share of XZ",
+          "narration": "Out of three plus seven equals ten total ratio parts along X Z, segment X W gets three parts."
+        },
+        {
+          "n": 4,
+          "display": "XW = \\frac{3}{10} × 5 = \\frac{15}{10} = 1.5 cm",
+          "tag": "compute",
+          "title": "Calculate XW",
+          "narration": "Multiply three tenths by five centimetres to get fifteen tenths, which equals one point five centimetres."
+        },
+        {
+          "n": 5,
+          "display": "Check: WZ = 3.5 ⇒ \\frac{1.5}{3.5} = \\frac{3}{7}",
+          "tag": "check",
+          "title": "Check ratio XW : WZ",
+          "narration": "Check: W Z is three point five, and one point five over three point five reduces cleanly to three sevenths."
+        },
+        {
+          "n": 6,
+          "display": "1.5 cm (option A)",
+          "tag": "answer",
+          "title": "Final length of XW",
+          "narration": "Therefore X W is one point five centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-020",
+      "questionId": "math-jamb-2015-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Mean = \\frac{Σ x}{N}",
+          "tag": "formula",
+          "title": "Arithmetic mean formula",
+          "narration": "Recall that the arithmetic mean equals the sum of all numbers divided by how many numbers there are."
+        },
+        {
+          "n": 2,
+          "display": "Σ x = 100",
+          "tag": "sum",
+          "title": "Add all 20 values",
+          "narration": "Adding all twenty numbers carefully gives a total of one hundred."
+        },
+        {
+          "n": 3,
+          "display": "N = 20 ⇒ \\frac{100}{20} = 5",
+          "tag": "divide",
+          "title": "Divide total by 20",
+          "narration": "Include both zeros in the count of twenty values, then divide one hundred by twenty."
+        },
+        {
+          "n": 4,
+          "display": "5 (option B)",
+          "tag": "answer",
+          "title": "Arithmetic mean",
+          "narration": "The arithmetic mean is five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Mean = \\frac{Sum of values}{Number of values}",
+          "tag": "formula",
+          "title": "State arithmetic mean formula",
+          "narration": "State the formula first: divide the sum of every observation by the total number of observations."
+        },
+        {
+          "n": 2,
+          "display": "(5+3+6+9+4)+(7+8+6+2+7) = 27 + 30 = 57",
+          "tag": "sum part 1",
+          "title": "Sum first 10 values",
+          "narration": "Group and add the first ten marks five at a time to get twenty-seven plus thirty, which is fifty-seven."
+        },
+        {
+          "n": 3,
+          "display": "(8+4+5+2+1)+(0+6+9+0+8) = 20 + 23 = 43",
+          "tag": "sum part 2",
+          "title": "Sum remaining 10 values",
+          "narration": "Add the last ten marks five at a time to get twenty plus twenty-three, which is forty-three."
+        },
+        {
+          "n": 4,
+          "display": "Total = 57 + 43 = 100, N = 20",
+          "tag": "total",
+          "title": "Combine sum and count",
+          "narration": "Combine fifty-seven and forty-three to get one hundred, and count all twenty marks including both zeros."
+        },
+        {
+          "n": 5,
+          "display": "Mean = \\frac{100}{20} = 5",
+          "tag": "divide",
+          "title": "Divide 100 by 20",
+          "narration": "Divide one hundred by twenty to obtain five."
+        },
+        {
+          "n": 6,
+          "display": "5 (option B)",
+          "tag": "answer",
+          "title": "Final mean",
+          "narration": "The arithmetic mean of the twenty marks is five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-025",
+      "questionId": "math-jamb-2015-025",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Angle = \\frac{Asia}{Total} × 360°",
+          "tag": "formula",
+          "title": "Pie chart sector angle",
+          "narration": "Multiply Asia's fraction of all participants by three hundred and sixty degrees."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{150}{800} × 360°",
+          "tag": "substitute",
+          "title": "Substitute counts",
+          "narration": "Put one hundred and fifty over eight hundred and multiply by three hundred and sixty degrees."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{3}{16} × 360° = \\frac{135°}{2} = 67.5°",
+          "tag": "simplify",
+          "title": "Reduce fraction and multiply",
+          "narration": "Simplify one hundred and fifty over eight hundred to three sixteenths, then multiply by three hundred and sixty."
+        },
+        {
+          "n": 4,
+          "display": "67.5° (option B)",
+          "tag": "answer",
+          "title": "Angle for Asia",
+          "narration": "The angle representing Asia on the pie chart is sixty-seven point five degrees."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Asia = 150, Total = 800",
+          "tag": "given",
+          "title": "List given numbers",
+          "narration": "Identify the part for Asia as one hundred and fifty out of eight hundred total participants."
+        },
+        {
+          "n": 2,
+          "display": "Angle = \\frac{part}{total} × 360°",
+          "tag": "formula",
+          "title": "State pie chart formula",
+          "narration": "A full pie chart covers three hundred and sixty degrees, so multiply the category share by three hundred and sixty."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{150}{800} = \\frac{15}{80} = \\frac{3}{16}",
+          "tag": "reduce",
+          "title": "Simplify the fraction",
+          "narration": "Cancel a zero and divide both fifteen and eighty by five to simplify the fraction to three sixteenths."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{3}{16} × 360° = \\frac{3 × 45°}{2} = \\frac{135°}{2}",
+          "tag": "divide",
+          "title": "Divide 360 and 16 by 8",
+          "narration": "Divide both three hundred and sixty and sixteen by eight to leave three times forty-five over two, or one hundred and thirty-five halves."
+        },
+        {
+          "n": 5,
+          "display": "135° ÷ 2 = 67.5°",
+          "tag": "halve",
+          "title": "Divide by 2",
+          "narration": "Half of one hundred and thirty-five degrees gives sixty-seven point five degrees."
+        },
+        {
+          "n": 6,
+          "display": "67.5° (option B)",
+          "tag": "answer",
+          "title": "Final central angle",
+          "narration": "Asia is represented by sixty-seven point five degrees."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-026",
+      "questionId": "math-jamb-2015-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = 1, r = \\frac{9}{10}",
+          "tag": "parameters",
+          "title": "Find first term and ratio",
+          "narration": "Identify first term one and common ratio nine tenths, whose magnitude is less than one."
+        },
+        {
+          "n": 2,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "title": "Sum to infinity formula",
+          "narration": "Use the convergent infinite geometric series formula a divided by one minus r."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{1}{1 − \\frac{9}{10}} = \\frac{1}{\\frac{1}{10}}",
+          "tag": "substitute",
+          "title": "Subtract denominator",
+          "narration": "One minus nine tenths leaves one tenth in the denominator."
+        },
+        {
+          "n": 4,
+          "display": "10 (option D)",
+          "tag": "answer",
+          "title": "Infinite sum",
+          "narration": "One divided by one tenth gives ten."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "a = 1, r = \\frac{9}{10} (|r| < 1)",
+          "tag": "identify",
+          "title": "Identify GP parameters",
+          "narration": "Read first term a equals one and notice each term multiplies by nine tenths; since nine tenths is less than one, the infinite sum exists."
+        },
+        {
+          "n": 2,
+          "display": "S_{∞} = \\frac{a}{1 − r}",
+          "tag": "formula",
+          "title": "State infinite sum formula",
+          "narration": "Recall the sum to infinity formula: first term a divided by one minus common ratio r."
+        },
+        {
+          "n": 3,
+          "display": "S_{∞} = \\frac{1}{1 − \\frac{9}{10}}",
+          "tag": "substitute",
+          "title": "Substitute a and r",
+          "narration": "Substitute one for a and nine tenths for r into the formula."
+        },
+        {
+          "n": 4,
+          "display": "1 − \\frac{9}{10} = \\frac{10}{10} − \\frac{9}{10} = \\frac{1}{10}",
+          "tag": "subtract",
+          "title": "Evaluate 1 − r",
+          "narration": "Write one as ten tenths and subtract nine tenths to leave one tenth in the denominator."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{1}{\\frac{1}{10}} = 1 × 10 = 10",
+          "tag": "invert",
+          "title": "Invert and multiply",
+          "narration": "Dividing one by one tenth multiplies one by ten to give ten."
+        },
+        {
+          "n": 6,
+          "display": "10 (option D)",
+          "tag": "answer",
+          "title": "Sum to infinity",
+          "narration": "The sum to infinity of the series is ten."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-029",
+      "questionId": "math-jamb-2015-029",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x + 1 = 0 ⇒ x = −1",
+          "tag": "factor theorem",
+          "title": "Find root of factor",
+          "narration": "Set the factor x plus one equal to zero to get x equals minus one."
+        },
+        {
+          "n": 2,
+          "display": "(−1)^{3} + 2(−1)^{2} + q(−1) − 6 = 0",
+          "tag": "substitute",
+          "title": "Evaluate at x = −1",
+          "narration": "By the factor theorem, substituting x equals minus one gives zero."
+        },
+        {
+          "n": 3,
+          "display": "−1 + 2 − q − 6 = 0 ⇒ −5 − q = 0",
+          "tag": "simplify",
+          "title": "Combine constants",
+          "narration": "Simplify minus one plus two minus six to get minus five minus q equals zero."
+        },
+        {
+          "n": 4,
+          "display": "q = −5 (option A)",
+          "tag": "answer",
+          "title": "Value of q",
+          "narration": "Add q to both sides to find q equals minus five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f(x) = x^{3} + 2x^{2} + qx − 6",
+          "tag": "define",
+          "title": "Name the polynomial",
+          "narration": "Call the cubic polynomial f of x; because x plus one is a factor, f of minus one must be zero."
+        },
+        {
+          "n": 2,
+          "display": "x + 1 = 0 ⇒ x = −1",
+          "tag": "root",
+          "title": "Solve factor = 0",
+          "narration": "Subtract one from both sides of x plus one equals zero to see we evaluate at x equals minus one."
+        },
+        {
+          "n": 3,
+          "display": "(−1)^{3} + 2(−1)^{2} + q(−1) − 6 = 0",
+          "tag": "substitute",
+          "title": "Substitute x = −1",
+          "narration": "Replace every x with minus one and equate the sum to zero."
+        },
+        {
+          "n": 4,
+          "display": "−1 + 2 − q − 6 = 0 ⇒ −5 − q = 0",
+          "tag": "collect",
+          "title": "Watch negative powers",
+          "narration": "Minus one cubed stays minus one, minus one squared becomes plus one times two is two, and minus one plus two minus six totals minus five."
+        },
+        {
+          "n": 5,
+          "display": "q = −5",
+          "tag": "solve q",
+          "title": "Add q to both sides",
+          "narration": "Add q to both sides to move q out of the negative sign, leaving q equal to minus five."
+        },
+        {
+          "n": 6,
+          "display": "Check: −1 + 2 − (−5) − 6 = 1 + 5 − 6 = 0",
+          "tag": "check",
+          "title": "Verify with q = −5",
+          "narration": "Check: replacing q with minus five gives one plus five minus six, which equals zero."
+        },
+        {
+          "n": 7,
+          "display": "q = −5 (option A)",
+          "tag": "answer",
+          "title": "Final value of q",
+          "narration": "Therefore q equals minus five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-031",
+      "questionId": "math-jamb-2015-031",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "A = \\frac{θ}{360°} × πr^{2}",
+          "tag": "formula",
+          "title": "Sector area formula",
+          "narration": "A sector's area is its central angle fraction of three hundred and sixty degrees times circle area pi r squared."
+        },
+        {
+          "n": 2,
+          "display": "A = \\frac{70°}{360°} × \\frac{22}{7} × 6^{2}",
+          "tag": "substitute",
+          "title": "Plug in 70°, 6 cm, and π",
+          "narration": "Substitute angle seventy degrees, radius six centimetres, and twenty-two sevenths for pi."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{7}{36} × \\frac{22}{7} × 36",
+          "tag": "cancel",
+          "title": "Cancel 7 and 36",
+          "narration": "Seventy over three hundred and sixty reduces to seven over thirty-six, cancelling both seven and thirty-six cleanly."
+        },
+        {
+          "n": 4,
+          "display": "22 cm^{2} (option A)",
+          "tag": "answer",
+          "title": "Area of sector",
+          "narration": "Cancelling leaves twenty-two square centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "θ = 70°, r = 6 cm, π ≈ \\frac{22}{7}",
+          "tag": "given",
+          "title": "List given values",
+          "narration": "Write down the central angle seventy degrees, radius six centimetres, and approximation twenty-two over seven for pi."
+        },
+        {
+          "n": 2,
+          "display": "A = \\frac{θ}{360°} × πr^{2}",
+          "tag": "formula",
+          "title": "State sector area formula",
+          "narration": "Multiply the circle's area pi r squared by the sector's angle divided by three hundred and sixty degrees."
+        },
+        {
+          "n": 3,
+          "display": "A = \\frac{70°}{360°} × \\frac{22}{7} × 6^{2}",
+          "tag": "substitute",
+          "title": "Substitute values into formula",
+          "narration": "Substitute the three given values into the sector area formula."
+        },
+        {
+          "n": 4,
+          "display": "A = \\frac{7}{36} × \\frac{22}{7} × 36",
+          "tag": "simplify",
+          "title": "Simplify angle fraction and 6^{2}",
+          "narration": "Cancel the trailing zeros in seventy over three hundred and sixty to get seven over thirty-six, and square six to get thirty-six."
+        },
+        {
+          "n": 5,
+          "display": "A = 22",
+          "tag": "cancel",
+          "title": "Cancel 7 with 7 and 36 with 36",
+          "narration": "Seven cancels seven and thirty-six cancels thirty-six, leaving only twenty-two."
+        },
+        {
+          "n": 6,
+          "display": "22 cm^{2} (option A)",
+          "tag": "answer",
+          "title": "Final sector area",
+          "narration": "The area of the sector is approximately twenty-two square centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-033",
+      "questionId": "math-jamb-2015-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "∫ \\frac{1}{x} dx + ∫ cos x dx",
+          "tag": "split",
+          "title": "Integrate term by term",
+          "narration": "Split the integral of the sum into the sum of two standard integrals."
+        },
+        {
+          "n": 2,
+          "display": "∫ \\frac{1}{x} dx = ln x (x > 0)",
+          "tag": "log term",
+          "title": "Integrate reciprocal x",
+          "narration": "For positive x, the antiderivative of one over x is natural logarithm ln x."
+        },
+        {
+          "n": 3,
+          "display": "∫ cos x dx = sin x",
+          "tag": "trig term",
+          "title": "Integrate cos x",
+          "narration": "The antiderivative of cosine x is sine x because sine x differentiates to cosine x."
+        },
+        {
+          "n": 4,
+          "display": "ln x + sin x + k (option B)",
+          "tag": "answer",
+          "title": "Add constant k",
+          "narration": "Adding the constant of integration k gives ln x plus sine x plus k."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "∫ (\\frac{1}{x} + cos x) dx = ∫ \\frac{1}{x} dx + ∫ cos x dx",
+          "tag": "linearity",
+          "title": "Separate the two terms",
+          "narration": "By linearity of integration, integrate one over x and cosine x separately."
+        },
+        {
+          "n": 2,
+          "display": "x > 0 ⇒ ∫ \\frac{1}{x} dx = ln x",
+          "tag": "reciprocal",
+          "title": "Antiderivative of reciprocal x",
+          "narration": "Remember the power rule fails for x to the minus one; instead, one over x integrates to ln x, and x greater than zero avoids an absolute value sign."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{d}{dx}(sin x) = cos x ⇒ ∫ cos x dx = sin x",
+          "tag": "cosine",
+          "title": "Antiderivative of cos x",
+          "narration": "Because the derivative of sine x is cosine x with no negative sign, cosine x integrates to positive sine x."
+        },
+        {
+          "n": 4,
+          "display": "Check: \\frac{d}{dx}(ln x + sin x + k) = \\frac{1}{x} + cos x",
+          "tag": "check",
+          "title": "Verify by differentiating",
+          "narration": "Differentiate ln x plus sine x plus k to confirm we recover one over x plus cosine x."
+        },
+        {
+          "n": 5,
+          "display": "ln x + sin x + k (option B)",
+          "tag": "answer",
+          "title": "Final integral",
+          "narration": "Including constant k gives ln x plus sine x plus k."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2015-036",
+      "questionId": "math-jamb-2015-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{0.0023}{0.00345} = \\frac{230}{345} = \\frac{2}{3}",
+          "tag": "pair 1",
+          "title": "Simplify first ratio",
+          "narration": "Shift the decimal point five places right to get two hundred and thirty over three hundred and forty-five, which divides by one hundred and fifteen to give two thirds."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{750}{1.25} = \\frac{75000}{125} = 600",
+          "tag": "pair 2",
+          "title": "Simplify second ratio",
+          "narration": "Divide seven hundred and fifty by one point two five to get six hundred."
+        },
+        {
+          "n": 3,
+          "display": "\\sqrt{\\frac{2}{3} × 600} = \\sqrt{400}",
+          "tag": "multiply",
+          "title": "Multiply inside root",
+          "narration": "Two thirds of six hundred equals four hundred inside the square root."
+        },
+        {
+          "n": 4,
+          "display": "20 (option B)",
+          "tag": "answer",
+          "title": "Square root",
+          "narration": "The square root of four hundred is twenty."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{0.0023}{0.00345} × \\frac{750}{1.25}",
+          "tag": "pair",
+          "title": "Pair matching decimals",
+          "narration": "Split the fraction inside the square root into two easier divisions so decimals cancel cleanly."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{0.0023}{0.00345} = \\frac{230}{345} = \\frac{2 × 115}{3 × 115} = \\frac{2}{3}",
+          "tag": "reduce 1",
+          "title": "Reduce first decimal ratio",
+          "narration": "Multiply top and bottom by one hundred thousand to clear decimals; both two hundred thirty and three hundred forty-five divide by one hundred fifteen, giving two thirds."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{750}{1.25} = \\frac{75000}{125} = 600",
+          "tag": "reduce 2",
+          "title": "Divide 750 by 1.25",
+          "narration": "Shift decimals two places right: since one hundred twenty-five times six is seven hundred fifty, dividing gives six hundred."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{2}{3} × 600 = 2 × 200 = 400",
+          "tag": "radicand",
+          "title": "Evaluate under the root",
+          "narration": "Multiply two thirds by six hundred to get four hundred inside the square root."
+        },
+        {
+          "n": 5,
+          "display": "\\sqrt{400} = 20",
+          "tag": "root",
+          "title": "Take square root",
+          "narration": "Twenty squared is four hundred, so the square root of four hundred is twenty."
+        },
+        {
+          "n": 6,
+          "display": "20 (option B)",
+          "tag": "answer",
+          "title": "Final simplified value",
+          "narration": "The simplified value is twenty."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-005",
+      "questionId": "math-jamb-2016-005",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{10}{3} − \\frac{5}{4} × \\frac{2}{3} + \\frac{7}{5}",
+          "tag": "convert",
+          "title": "Change to improper fractions",
+          "narration": "Convert all mixed numbers into improper fractions before performing any operations."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{5}{4} × \\frac{2}{3} = \\frac{10}{12} = \\frac{5}{6}",
+          "tag": "multiply",
+          "title": "Multiply before adding",
+          "narration": "By order of operations, evaluate the multiplication five quarters times two thirds first to get five sixths."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{10}{3} − \\frac{5}{6} + \\frac{7}{5} = \\frac{100 − 25 + 42}{30}",
+          "tag": "combine",
+          "title": "Use common denominator 30",
+          "narration": "Rewrite the three fractions over their lowest common denominator thirty and combine the numerators."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{117}{30} = \\frac{39}{10} = 3 \\frac{9}{10} (option B)",
+          "tag": "answer",
+          "title": "Reduce to mixed number",
+          "narration": "Dividing top and bottom by three gives thirty-nine tenths, which equals three and nine tenths."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "3 \\frac{1}{3} = \\frac{10}{3}, 1 \\frac{1}{4} = \\frac{5}{4}, 1 \\frac{2}{5} = \\frac{7}{5}",
+          "tag": "improper",
+          "title": "Convert mixed numbers",
+          "narration": "Turn each mixed number into an improper fraction so multiplication and common denominators are straightforward."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{5}{4} × \\frac{2}{3} = \\frac{5}{2 × 3} = \\frac{5}{6}",
+          "tag": "bodmas",
+          "title": "Do multiplication first",
+          "narration": "Multiplication takes priority over addition and subtraction; cancel two between top and bottom to get five sixths."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{10}{3} − \\frac{5}{6} + \\frac{7}{5}",
+          "tag": "rewrite",
+          "title": "Substitute product back",
+          "narration": "Replace the middle product with five sixths."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{100}{30} − \\frac{25}{30} + \\frac{42}{30} = \\frac{117}{30}",
+          "tag": "lcm 30",
+          "title": "Combine over LCM 30",
+          "narration": "The least common multiple of three, six, and five is thirty; scale each fraction and compute one hundred minus twenty-five plus forty-two equals one hundred and seventeen."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{117 ÷ 3}{30 ÷ 3} = \\frac{39}{10} = 3 \\frac{9}{10}",
+          "tag": "reduce",
+          "title": "Reduce and write mixed form",
+          "narration": "Divide both one hundred and seventeen and thirty by three to get thirty-nine tenths, or three and nine tenths."
+        },
+        {
+          "n": 6,
+          "display": "3 \\frac{9}{10} (option B)",
+          "tag": "answer",
+          "title": "Final simplified value",
+          "narration": "The simplified result is three and nine tenths."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-006",
+      "questionId": "math-jamb-2016-006",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "1^{2} − (a − b)^{2}",
+          "tag": "pattern",
+          "title": "Spot difference of squares",
+          "narration": "Notice one equals one squared, so this is a difference of two squares with terms one and a minus b."
+        },
+        {
+          "n": 2,
+          "display": "[1 − (a − b)][1 + (a − b)]",
+          "tag": "factorise",
+          "title": "Apply difference of squares",
+          "narration": "Factorise using x squared minus y squared equals x minus y times x plus y."
+        },
+        {
+          "n": 3,
+          "display": "1 − (a − b) = 1 − a + b",
+          "tag": "signs",
+          "title": "Distribute minus sign",
+          "narration": "In the first bracket, subtracting minus b flips its sign to plus b."
+        },
+        {
+          "n": 4,
+          "display": "(1 − a + b)(1 + a − b) (option B)",
+          "tag": "answer",
+          "title": "Factored expression",
+          "narration": "Clearing both inner parentheses gives one minus a plus b times one plus a minus b."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Let x = 1, y = (a − b) ⇒ x^{2} − y^{2}",
+          "tag": "group",
+          "title": "Treat (a − b) as one term",
+          "narration": "Think of a minus b as a single letter y so one minus y squared clearly matches the difference of squares identity."
+        },
+        {
+          "n": 2,
+          "display": "x^{2} − y^{2} = (x − y)(x + y)",
+          "tag": "identity",
+          "title": "State difference of squares",
+          "narration": "Any difference of two squares factors into the difference of the bases times their sum."
+        },
+        {
+          "n": 3,
+          "display": "[1 − (a − b)][1 + (a − b)]",
+          "tag": "substitute",
+          "title": "Substitute back x and y",
+          "narration": "Put one for x and open bracket a minus b close bracket for y, keeping the brackets around a minus b."
+        },
+        {
+          "n": 4,
+          "display": "(1 − a + b)(1 + a − b)",
+          "tag": "remove brackets",
+          "title": "Clear inner brackets carefully",
+          "narration": "Distribute the minus sign across a minus b in the first factor to turn minus b into plus b, while the second factor keeps plus a minus b."
+        },
+        {
+          "n": 5,
+          "display": "(1 − a + b)(1 + a − b) (option B)",
+          "tag": "answer",
+          "title": "Complete factorisation",
+          "narration": "The factored form is one minus a plus b times one plus a minus b."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-007",
+      "questionId": "math-jamb-2016-007",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "12(\\frac{x}{2} + \\frac{x}{3} + \\frac{x}{4}) < 12(1)",
+          "tag": "clear",
+          "title": "Multiply both sides by 12",
+          "narration": "Multiply both sides by twelve, the common denominator of two, three, and four, keeping the less-than sign."
+        },
+        {
+          "n": 2,
+          "display": "6x + 4x + 3x < 12",
+          "tag": "expand",
+          "title": "Simplify left side",
+          "narration": "Multiply each term by twelve to get six x plus four x plus three x less than twelve."
+        },
+        {
+          "n": 3,
+          "display": "13x < 12",
+          "tag": "collect",
+          "title": "Combine like terms",
+          "narration": "Add six plus four plus three to get thirteen x less than twelve."
+        },
+        {
+          "n": 4,
+          "display": "x < \\frac{12}{13} (option A)",
+          "tag": "answer",
+          "title": "Divide both sides by 13",
+          "narration": "Divide both sides by positive thirteen to isolate x, giving x less than twelve over thirteen."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "LCM(2, 3, 4) = 12",
+          "tag": "lcm",
+          "title": "Find common denominator",
+          "narration": "Find the least common multiple of denominators two, three, and four, which is twelve."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{6x + 4x + 3x}{12} < 1",
+          "tag": "add",
+          "title": "Combine left fractions",
+          "narration": "Convert each term on the left to denominator twelve: six x, four x, and three x over twelve."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{13x}{12} < 1",
+          "tag": "combine",
+          "title": "Sum the numerators",
+          "narration": "Add six, four, and three to get thirteen x over twelve is less than one."
+        },
+        {
+          "n": 4,
+          "display": "13x < 12",
+          "tag": "multiply",
+          "title": "Multiply both sides by 12",
+          "narration": "Multiply both sides by positive twelve so the inequality direction stays unchanged."
+        },
+        {
+          "n": 5,
+          "display": "x < \\frac{12}{13}",
+          "tag": "divide",
+          "title": "Divide both sides by 13",
+          "narration": "Divide both sides by positive thirteen to get x on its own."
+        },
+        {
+          "n": 6,
+          "display": "x < \\frac{12}{13} (option A)",
+          "tag": "answer",
+          "title": "Final inequality",
+          "narration": "The solution is x strictly less than twelve thirteenths."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-017",
+      "questionId": "math-jamb-2016-017",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f(x) = 4x − x^{2}",
+          "tag": "expand",
+          "title": "Expand expression",
+          "narration": "Multiply x across four minus x to write four x minus x squared."
+        },
+        {
+          "n": 2,
+          "display": "f(x) = 4 − (x − 2)^{2}",
+          "tag": "complete square",
+          "title": "Complete the square",
+          "narration": "Rewrite four x minus x squared as four minus open bracket x minus two close bracket squared."
+        },
+        {
+          "n": 3,
+          "display": "(x − 2)^{2} = 0 ⇒ x − 2 = 0",
+          "tag": "vertex",
+          "title": "Minimum subtracted square",
+          "narration": "Since a square is always zero or positive, four minus the square is largest when x minus two squared equals zero."
+        },
+        {
+          "n": 4,
+          "display": "x = 2 (option C)",
+          "tag": "answer",
+          "title": "x at maximum",
+          "narration": "Solving x minus two equals zero gives x equals two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f(x) = 4x − x^{2} = −(x^{2} − 4x)",
+          "tag": "expand",
+          "title": "Expand and group",
+          "narration": "Expand the product to four x minus x squared and factor out minus one before completing the square."
+        },
+        {
+          "n": 2,
+          "display": "−[(x − 2)^{2} − 4] = 4 − (x − 2)^{2}",
+          "tag": "square",
+          "title": "Complete the square",
+          "narration": "Halve the coefficient minus four to get minus two, writing x squared minus four x as x minus two squared minus four."
+        },
+        {
+          "n": 3,
+          "display": "(x − 2)^{2} ≥ 0 for all x",
+          "tag": "property",
+          "title": "Maximize 4 minus square",
+          "narration": "Because subtracting any positive amount makes four smaller, f of x reaches its highest value when the squared term equals zero."
+        },
+        {
+          "n": 4,
+          "display": "x − 2 = 0 ⇒ x = 2",
+          "tag": "solve",
+          "title": "Add 2 to both sides",
+          "narration": "Set x minus two equal to zero and add two to both sides to get x equals two."
+        },
+        {
+          "n": 5,
+          "display": "Check by derivative: f'(x) = 4 − 2x = 0 ⇒ x = 2",
+          "tag": "check",
+          "title": "Confirm with calculus",
+          "narration": "Check: setting the derivative four minus two x to zero also gives x equals two, with maximum value four."
+        },
+        {
+          "n": 6,
+          "display": "x = 2 (option C)",
+          "tag": "answer",
+          "title": "Maximum at x = 2",
+          "narration": "The function reaches its maximum when x equals two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-027",
+      "questionId": "math-jamb-2016-027",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f(1) = p + q + 1 = 2 ⇒ p + q = 1",
+          "tag": "eq 1",
+          "title": "Remainder from (m − 1)",
+          "narration": "By the remainder theorem, plugging m equals one gives remainder two, so p plus q equals one."
+        },
+        {
+          "n": 2,
+          "display": "f(−1) = p − q + 1 = 4 ⇒ p − q = 3",
+          "tag": "eq 2",
+          "title": "Remainder from (m + 1)",
+          "narration": "Plugging m equals minus one gives remainder four, so p minus q equals three."
+        },
+        {
+          "n": 3,
+          "display": "(p + q) + (p − q) = 1 + 3 ⇒ 2p = 4 ⇒ p = 2",
+          "tag": "add",
+          "title": "Add equations to find p",
+          "narration": "Add the two equations so q cancels out, giving two p equals four and p equals two."
+        },
+        {
+          "n": 4,
+          "display": "(2, −1) (option A)",
+          "tag": "answer",
+          "title": "Values of p and q",
+          "narration": "Substituting p equals two back gives q equals minus one, so the ordered pair is two, minus one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f(m) = pm^{2} + qm + 1",
+          "tag": "theorem",
+          "title": "Set up remainder theorem",
+          "narration": "Dividing f of m by m minus r leaves remainder f of r, so we evaluate at m equals one and m equals minus one."
+        },
+        {
+          "n": 2,
+          "display": "f(1) = p(1)^{2} + q(1) + 1 = 2 ⇒ p + q = 1",
+          "tag": "first eq",
+          "title": "Use divisor (m − 1)",
+          "narration": "Set m equals one equal to remainder two, then subtract one from both sides to get p plus q equals one."
+        },
+        {
+          "n": 3,
+          "display": "f(−1) = p(−1)^{2} + q(−1) + 1 = 4 ⇒ p − q = 3",
+          "tag": "second eq",
+          "title": "Use divisor (m + 1)",
+          "narration": "Set m equals minus one equal to remainder four, then subtract one from both sides to get p minus q equals three."
+        },
+        {
+          "n": 4,
+          "display": "2p = 1 + 3 = 4 ⇒ p = 2",
+          "tag": "solve p",
+          "title": "Add both equations",
+          "narration": "Add the two equations together: plus q and minus q cancel, leaving two p equals four, so divide by two to get p equals two."
+        },
+        {
+          "n": 5,
+          "display": "2 + q = 1 ⇒ q = 1 − 2 = −1",
+          "tag": "solve q",
+          "title": "Find q from first equation",
+          "narration": "Substitute two for p into p plus q equals one and subtract two from both sides to find q equals minus one."
+        },
+        {
+          "n": 6,
+          "display": "Check m = −1: 2(1) − (−1) + 1 = 4",
+          "tag": "check",
+          "title": "Verify second remainder",
+          "narration": "Check at m equals minus one: two plus one plus one equals four."
+        },
+        {
+          "n": 7,
+          "display": "(2, −1) (option A)",
+          "tag": "answer",
+          "title": "p and q in order",
+          "narration": "Therefore p equals two and q equals minus one."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-028",
+      "questionId": "math-jamb-2016-028",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{2x^{3}}{2x} = x^{2} ⇒ rem: 10x^{2} + 17x + 6",
+          "tag": "term 1",
+          "title": "Divide leading term by 2x",
+          "narration": "Divide two x cubed by two x to get x squared, then subtract x squared times two x plus one to leave ten x squared plus seventeen x plus six."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{10x^{2}}{2x} = 5x ⇒ rem: 12x + 6",
+          "tag": "term 2",
+          "title": "Find the x term",
+          "narration": "Divide ten x squared by two x to get plus five x, then subtract five x times two x plus one to leave twelve x plus six."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{12x}{2x} = 6 ⇒ rem: 0",
+          "tag": "term 3",
+          "title": "Find constant term",
+          "narration": "Divide twelve x by two x to get plus six; subtracting six times two x plus one leaves zero remainder."
+        },
+        {
+          "n": 4,
+          "display": "x^{2} + 5x + 6 (option A)",
+          "tag": "answer",
+          "title": "Quotient polynomial",
+          "narration": "The quotient is x squared plus five x plus six."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{2x^{3}}{2x} = x^{2}",
+          "tag": "first term",
+          "title": "Divide first leading term",
+          "narration": "Start polynomial long division by dividing the highest term two x cubed by two x to obtain x squared."
+        },
+        {
+          "n": 2,
+          "display": "(2x^{3} + 11x^{2}) − x^{2}(2x + 1) = 10x^{2}",
+          "tag": "sub 1",
+          "title": "Multiply and subtract x^{2}(2x+1)",
+          "narration": "Subtract two x cubed plus x squared from the top terms to bring down ten x squared plus seventeen x."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{10x^{2}}{2x} = 5x",
+          "tag": "second term",
+          "title": "Divide new leading term",
+          "narration": "Divide ten x squared by two x to get the next quotient term, plus five x."
+        },
+        {
+          "n": 4,
+          "display": "(10x^{2} + 17x) − 5x(2x + 1) = 12x",
+          "tag": "sub 2",
+          "title": "Subtract 5x(2x+1)",
+          "narration": "Subtract ten x squared plus five x to leave twelve x, then bring down plus six."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{12x}{2x} = 6; (12x + 6) − 6(2x + 1) = 0",
+          "tag": "final term",
+          "title": "Divide 12x and finish",
+          "narration": "Divide twelve x by two x to get plus six, and six times two x plus one cancels twelve x plus six with zero remainder."
+        },
+        {
+          "n": 6,
+          "display": "Check: (2x + 1)(x^{2} + 5x + 6) = 2x^{3} + 11x^{2} + 17x + 6",
+          "tag": "check",
+          "title": "Multiply back to check",
+          "narration": "Expanding two x plus one times x squared plus five x plus six recovers every term of the cubic."
+        },
+        {
+          "n": 7,
+          "display": "x^{2} + 5x + 6 (option A)",
+          "tag": "answer",
+          "title": "Exact quotient",
+          "narration": "Therefore dividing gives x squared plus five x plus six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-033",
+      "questionId": "math-jamb-2016-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{1.432 × 10^{−4}}{1.94 × 10^{6}}",
+          "tag": "standard form",
+          "title": "Write in standard form",
+          "narration": "Express the numerator as one point four three two times ten to the minus four and the denominator as one point nine four times ten to the sixth."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1.432}{1.94} × 10^{−4 − 6} ≈ 0.73814 × 10^{−10}",
+          "tag": "divide",
+          "title": "Divide numbers, subtract powers",
+          "narration": "Divide one point four three two by one point nine four and subtract exponent six from minus four."
+        },
+        {
+          "n": 3,
+          "display": "7.3814 × 10^{−11}",
+          "tag": "normalise",
+          "title": "Shift k into [1, 10)",
+          "narration": "Move the decimal one place right to make k between one and ten, decreasing the exponent from minus ten to minus eleven."
+        },
+        {
+          "n": 4,
+          "display": "7.381 and −11 (option A)",
+          "tag": "answer",
+          "title": "Round k to 3 d.p.",
+          "narration": "Rounding seven point three eight one four to three decimal places gives seven point three eight one and n equals minus eleven."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "0.0001432 = 1.432 × 10^{−4}, 1940000 = 1.94 × 10^{6}",
+          "tag": "convert",
+          "title": "Convert both to standard form",
+          "narration": "Count four places right for the small numerator and six places left for the large denominator."
+        },
+        {
+          "n": 2,
+          "display": "10^{−4} ÷ 10^{6} = 10^{−4 − 6} = 10^{−10}",
+          "tag": "exponents",
+          "title": "Subtract powers of ten",
+          "narration": "When dividing powers of ten, subtract the bottom exponent six from minus four to get ten to the minus ten."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1.432}{1.94} ≈ 0.738144",
+          "tag": "mantissa",
+          "title": "Divide the decimal parts",
+          "narration": "Divide one point four three two by one point nine four, keeping extra digits until rounding at the very end."
+        },
+        {
+          "n": 4,
+          "display": "0.738144 × 10^{−10} = 7.38144 × 10^{−11}",
+          "tag": "normalise",
+          "title": "Normalise k to [1, 10)",
+          "narration": "Rewrite zero point seven three eight one four as seven point three eight one four times ten to the minus one, which brings the overall power of ten to minus eleven."
+        },
+        {
+          "n": 5,
+          "display": "7.381|44 → 7.381",
+          "tag": "round",
+          "title": "Round k to 3 decimal places",
+          "narration": "The fourth decimal digit is four, which is less than five, so round down to seven point three eight one."
+        },
+        {
+          "n": 6,
+          "display": "7.381 and −11 (option A)",
+          "tag": "answer",
+          "title": "Values of k and n",
+          "narration": "Thus k is seven point three eight one and n is minus eleven."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-034",
+      "questionId": "math-jamb-2016-034",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Boys total = 30 × 6 = 180",
+          "tag": "boys",
+          "title": "Find boys' total score",
+          "narration": "Multiply thirty boys by their mean score of six to get a boys total of one hundred and eighty."
+        },
+        {
+          "n": 2,
+          "display": "Girls total = 468 − 180 = 288",
+          "tag": "girls",
+          "title": "Find girls' total score",
+          "narration": "Subtract the boys total one hundred and eighty from the combined total four hundred and sixty-eight."
+        },
+        {
+          "n": 3,
+          "display": "x = \\frac{288}{8} = 36",
+          "tag": "divide",
+          "title": "Divide by girls' mean 8",
+          "narration": "Divide the girls total two hundred and eighty-eight by the girls mean score eight."
+        },
+        {
+          "n": 4,
+          "display": "36 (option C)",
+          "tag": "answer",
+          "title": "Number of girls",
+          "narration": "There were thirty-six girls who sat the test."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Total score = count × mean",
+          "tag": "formula",
+          "title": "Link total to mean",
+          "narration": "Recall that any group's total score equals the number of students times that group's mean score."
+        },
+        {
+          "n": 2,
+          "display": "Boys total = 30 × 6 = 180",
+          "tag": "boys total",
+          "title": "Compute boys' total",
+          "narration": "Multiply thirty boys by six to find the boys scored one hundred and eighty points combined."
+        },
+        {
+          "n": 3,
+          "display": "180 + Girls total = 468 ⇒ Girls total = 288",
+          "tag": "subtract",
+          "title": "Subtract from combined total",
+          "narration": "Subtract one hundred and eighty from both sides to find the girls contributed two hundred and eighty-eight points."
+        },
+        {
+          "n": 4,
+          "display": "8x = 288 ⇒ x = \\frac{288}{8} = 36",
+          "tag": "solve x",
+          "title": "Divide both sides by 8",
+          "narration": "Each of the x girls averaged eight points, so divide two hundred and eighty-eight by eight to find x equals thirty-six."
+        },
+        {
+          "n": 5,
+          "display": "Check: 30(6) + 36(8) = 180 + 288 = 468",
+          "tag": "check",
+          "title": "Check combined total",
+          "narration": "Check: one hundred and eighty plus two hundred and eighty-eight equals four hundred and sixty-eight."
+        },
+        {
+          "n": 6,
+          "display": "36 (option C)",
+          "tag": "answer",
+          "title": "Number of girls x",
+          "narration": "Therefore x equals thirty-six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-035",
+      "questionId": "math-jamb-2016-035",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "5\\sqrt{7} − 7\\sqrt{5} = \\sqrt{35}(\\sqrt{5} − \\sqrt{7})",
+          "tag": "factor",
+          "title": "Factor out \\sqrt{35}",
+          "narration": "Since five is root five squared and seven is root seven squared, factor root thirty-five out of the numerator."
+        },
+        {
+          "n": 2,
+          "display": "= −\\sqrt{35}(\\sqrt{7} − \\sqrt{5})",
+          "tag": "sign flip",
+          "title": "Reverse order with minus",
+          "narration": "Reverse root five minus root seven into minus open bracket root seven minus root five close bracket to match the denominator."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{−\\sqrt{35}(\\sqrt{7} − \\sqrt{5})}{\\sqrt{7} − \\sqrt{5}}",
+          "tag": "cancel",
+          "title": "Cancel common bracket",
+          "narration": "Cancel root seven minus root five from numerator and denominator."
+        },
+        {
+          "n": 4,
+          "display": "−\\sqrt{35} (option C)",
+          "tag": "answer",
+          "title": "Simplified surd",
+          "narration": "The rationalised value is minus root thirty-five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "5\\sqrt{7} = \\sqrt{5} × \\sqrt{5}\\sqrt{7} = \\sqrt{35}\\sqrt{5}",
+          "tag": "rewrite 1",
+          "title": "Factor 5 as \\sqrt{5}\\sqrt{5}",
+          "narration": "Write five as root five times root five, then pair one root five with root seven to form root thirty-five times root five."
+        },
+        {
+          "n": 2,
+          "display": "7\\sqrt{5} = \\sqrt{7} × \\sqrt{7}\\sqrt{5} = \\sqrt{35}\\sqrt{7}",
+          "tag": "rewrite 2",
+          "title": "Factor 7 as \\sqrt{7}\\sqrt{7}",
+          "narration": "Similarly write seven root five as root thirty-five times root seven."
+        },
+        {
+          "n": 3,
+          "display": "Numerator = \\sqrt{35}(\\sqrt{5} − \\sqrt{7}) = −\\sqrt{35}(\\sqrt{7} − \\sqrt{5})",
+          "tag": "factor",
+          "title": "Take out −\\sqrt{35}",
+          "narration": "Factor out root thirty-five, then pull out a negative sign so the bracket order matches the denominator."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{−\\sqrt{35}(\\sqrt{7} − \\sqrt{5})}{\\sqrt{7} − \\sqrt{5}} = −\\sqrt{35}",
+          "tag": "cancel",
+          "title": "Cancel (\\sqrt{7} − \\sqrt{5})",
+          "narration": "Cancel the identical non-zero factor root seven minus root five from top and bottom."
+        },
+        {
+          "n": 5,
+          "display": "−\\sqrt{35} (option C)",
+          "tag": "answer",
+          "title": "Final simplified value",
+          "narration": "The expression simplifies to minus root thirty-five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-036",
+      "questionId": "math-jamb-2016-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x − 2y = 11 ⇒ x = 11 + 2y",
+          "tag": "rearrange",
+          "title": "Make x the subject",
+          "narration": "Add two y to both sides of the second equation to express x in terms of y."
+        },
+        {
+          "n": 2,
+          "display": "2(11 + 2y) + 3y = 1 ⇒ 22 + 7y = 1",
+          "tag": "substitute",
+          "title": "Substitute into first equation",
+          "narration": "Replace x in the first equation and simplify to twenty-two plus seven y equals one."
+        },
+        {
+          "n": 3,
+          "display": "7y = −21 ⇒ y = −3; x = 11 + 2(−3) = 5",
+          "tag": "solve",
+          "title": "Find y and x",
+          "narration": "Subtract twenty-two and divide by seven to find y equals minus three, then substitute back to get x equals five."
+        },
+        {
+          "n": 4,
+          "display": "x + y = 5 + (−3) = 2 (option D)",
+          "tag": "answer",
+          "title": "Sum x + y",
+          "narration": "Adding five and minus three gives two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x − 2y = 11 ⇒ x = 11 + 2y",
+          "tag": "isolate x",
+          "title": "Express x from equation 2",
+          "narration": "Start with the second equation because x has coefficient one; add two y to both sides to get x equals eleven plus two y."
+        },
+        {
+          "n": 2,
+          "display": "2(11 + 2y) + 3y = 1",
+          "tag": "substitute",
+          "title": "Substitute into equation 1",
+          "narration": "Substitute eleven plus two y for x in two x plus three y equals one."
+        },
+        {
+          "n": 3,
+          "display": "22 + 4y + 3y = 1 ⇒ 22 + 7y = 1",
+          "tag": "expand",
+          "title": "Expand and collect y",
+          "narration": "Expand two times eleven plus two y to twenty-two plus four y, then add three y to get seven y."
+        },
+        {
+          "n": 4,
+          "display": "7y = 1 − 22 = −21 ⇒ y = −3",
+          "tag": "solve y",
+          "title": "Subtract 22 and divide by 7",
+          "narration": "Subtract twenty-two from both sides to get minus twenty-one, then divide by seven to find y equals minus three."
+        },
+        {
+          "n": 5,
+          "display": "x = 11 + 2(−3) = 11 − 6 = 5",
+          "tag": "find x",
+          "title": "Substitute y back for x",
+          "narration": "Put y equals minus three back into eleven plus two y to find x equals five."
+        },
+        {
+          "n": 6,
+          "display": "x + y = 5 + (−3) = 2",
+          "tag": "add",
+          "title": "Compute x + y",
+          "narration": "Remember the question asks for x plus y, so add five and minus three to get two."
+        },
+        {
+          "n": 7,
+          "display": "2 (option D)",
+          "tag": "answer",
+          "title": "Value of x + y",
+          "narration": "The sum of x and y is two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-040",
+      "questionId": "math-jamb-2016-040",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Interior + Exterior = 180° ⇒ 2e + e = 180°",
+          "tag": "straight line",
+          "title": "Relate interior and exterior",
+          "narration": "At any polygon vertex, the interior angle and exterior angle lie on a straight line adding to one hundred and eighty degrees."
+        },
+        {
+          "n": 2,
+          "display": "3e = 180° ⇒ e = 60°",
+          "tag": "solve e",
+          "title": "Find each exterior angle",
+          "narration": "Divide one hundred and eighty by three to get an exterior angle of sixty degrees."
+        },
+        {
+          "n": 3,
+          "display": "n = \\frac{360°}{e} = \\frac{360°}{60°}",
+          "tag": "formula",
+          "title": "Exterior angle sum rule",
+          "narration": "Divide three hundred and sixty degrees by each exterior angle sixty degrees to count the sides."
+        },
+        {
+          "n": 4,
+          "display": "6 (option C)",
+          "tag": "answer",
+          "title": "Number of sides",
+          "narration": "Three hundred and sixty divided by sixty gives six sides."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Let exterior = e ⇒ interior = 2e",
+          "tag": "setup",
+          "title": "Name the exterior angle",
+          "narration": "Let e be each exterior angle of the regular polygon, so each interior angle is twice as large, two e."
+        },
+        {
+          "n": 2,
+          "display": "2e + e = 180° ⇒ 3e = 180°",
+          "tag": "line",
+          "title": "Use straight-line angle sum",
+          "narration": "An interior angle and its adjacent exterior angle form a straight line totalling one hundred and eighty degrees."
+        },
+        {
+          "n": 3,
+          "display": "e = \\frac{180°}{3} = 60°",
+          "tag": "divide",
+          "title": "Divide both sides by 3",
+          "narration": "Divide both sides by three to find each exterior angle is sixty degrees."
+        },
+        {
+          "n": 4,
+          "display": "n × e = 360° ⇒ n = \\frac{360°}{60°} = 6",
+          "tag": "sides",
+          "title": "Divide 360° by exterior angle",
+          "narration": "Because the exterior angles around any convex polygon total three hundred and sixty degrees, divide three hundred and sixty by sixty."
+        },
+        {
+          "n": 5,
+          "display": "Check: hexagon has interior 120° = 2 × 60°",
+          "tag": "check",
+          "title": "Verify with regular hexagon",
+          "narration": "Check: a regular hexagon has interior angle one hundred and twenty degrees, which is indeed double sixty degrees."
+        },
+        {
+          "n": 6,
+          "display": "6 (option C)",
+          "tag": "answer",
+          "title": "Number of sides",
+          "narration": "The regular polygon has six sides."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-010",
+      "questionId": "math-jamb-2017-010",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Units: 3 + 5 − 4 = 4 (borrow 1 from 5s: 4 → 3)",
+          "tag": "units",
+          "title": "Borrow in units column",
+          "narration": "Borrow one five into the units place so eight minus four equals four, reducing the fives digit from four to three."
+        },
+        {
+          "n": 2,
+          "display": "Fives: (3 + 5) − x = 4 ⇒ 8 − x = 4 ⇒ x = 4",
+          "tag": "fives",
+          "title": "Borrow to solve for x",
+          "narration": "Borrow one from the twenty-fives place into the fives column so eight minus x equals four, giving x equals four."
+        },
+        {
+          "n": 3,
+          "display": "25s: (1 + 5) − 3 = 3; 125s: 3 − 1 = y = 2",
+          "tag": "leftmost",
+          "title": "Borrow from leftmost column",
+          "narration": "In the twenty-fives column, borrow one from four so six minus three is three, leaving three minus one equals two for y."
+        },
+        {
+          "n": 4,
+          "display": "(4, 2) (option C)",
+          "tag": "answer",
+          "title": "Digits x and y",
+          "narration": "In order, digit x is four and digit y is two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Base 5 borrowing adds 5 to the column",
+          "tag": "rule",
+          "title": "State base-5 borrowing rule",
+          "narration": "Whenever we borrow one unit from the column on the left in base five, we add five to the current column."
+        },
+        {
+          "n": 2,
+          "display": "Units: 3 < 4 ⇒ (3 + 5) − 4 = 4",
+          "tag": "units",
+          "title": "Subtract units column",
+          "narration": "Three is smaller than four, so borrow one five from four in the fives column; eight minus four gives four, leaving three in the fives column."
+        },
+        {
+          "n": 3,
+          "display": "Fives: 3 − x = 4 (borrow 5 from 2 → 1)",
+          "tag": "borrow x",
+          "title": "Borrow for fives column",
+          "narration": "Top digit three minus x cannot give four without borrowing, so borrow five from the two in the next column, reducing two to one."
+        },
+        {
+          "n": 4,
+          "display": "8 − x = 4 ⇒ x = 4",
+          "tag": "solve x",
+          "title": "Find digit x",
+          "narration": "Now three plus five is eight, and eight minus x equals four gives x equals four."
+        },
+        {
+          "n": 5,
+          "display": "25s: 1 < 3 ⇒ (1 + 5) − 3 = 3 (4 → 3)",
+          "tag": "25s",
+          "title": "Check third column",
+          "narration": "One is smaller than three, so borrow from the leftmost four leaving three; six minus three matches digit three."
+        },
+        {
+          "n": 6,
+          "display": "125s: 3 − 1 = 2 ⇒ y = 2",
+          "tag": "solve y",
+          "title": "Subtract leftmost column",
+          "narration": "Subtract one from the remaining three in the leftmost column to get y equals two."
+        },
+        {
+          "n": 7,
+          "display": "Check in base 10: 573 − 224 = 349",
+          "tag": "check",
+          "title": "Check values in base 10",
+          "narration": "Check: four two four three base five is five hundred seventy-three, minus two hundred twenty-four is three hundred forty-nine, which equals two three four four base five."
+        },
+        {
+          "n": 8,
+          "display": "(4, 2) (option C)",
+          "tag": "answer",
+          "title": "Digits x and y",
+          "narration": "So x equals four and y equals two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-015",
+      "questionId": "math-jamb-2017-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P(event) = \\frac{favourable}{total}",
+          "tag": "formula",
+          "title": "Probability formula",
+          "narration": "Probability is the number of favourable medals divided by the total number of medals."
+        },
+        {
+          "n": 2,
+          "display": "Total = 30 + 22 + 18 = 70",
+          "tag": "total",
+          "title": "Count all medals",
+          "narration": "Add thirty gold, twenty-two silver, and eighteen bronze to get seventy medals in total."
+        },
+        {
+          "n": 3,
+          "display": "Not gold = 22 + 18 = 40 ⇒ P = \\frac{40}{70}",
+          "tag": "favourable",
+          "title": "Count non-gold medals",
+          "narration": "Twenty-two silver plus eighteen bronze gives forty medals that are not gold."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{4}{7} (option A)",
+          "tag": "answer",
+          "title": "Probability not gold",
+          "narration": "Cancelling ten from forty over seventy leaves four sevenths."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P(not gold) = \\frac{number not gold}{total medals}",
+          "tag": "formula",
+          "title": "State probability formula",
+          "narration": "Because one medal is picked uniformly at random, divide the count of non-gold medals by the total medal count."
+        },
+        {
+          "n": 2,
+          "display": "Total = 30 + 22 + 18 = 70",
+          "tag": "total",
+          "title": "Find total medals",
+          "narration": "Add thirty, twenty-two, and eighteen to get seventy medals in the container."
+        },
+        {
+          "n": 3,
+          "display": "Not gold = silver + bronze = 22 + 18 = 40",
+          "tag": "complement",
+          "title": "Add silver and bronze counts",
+          "narration": "A medal is not gold whenever it is silver or bronze, giving forty medals."
+        },
+        {
+          "n": 4,
+          "display": "P = \\frac{40}{70} = \\frac{4}{7}",
+          "tag": "reduce",
+          "title": "Simplify the fraction",
+          "narration": "Divide both numerator and denominator by ten to reduce the fraction to lowest terms."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{4}{7} (option A)",
+          "tag": "answer",
+          "title": "Final probability",
+          "narration": "The probability of picking a medal that is not gold is four sevenths."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-022",
+      "questionId": "math-jamb-2017-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{0.21}{1.68} × \\frac{0.072}{0.006} × \\frac{0.00054}{0.063}",
+          "tag": "pair",
+          "title": "Pair compatible factors",
+          "narration": "Reorder the multiplications to pair factors whose decimals divide cleanly."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{8} × 12 × \\frac{3}{350}",
+          "tag": "simplify",
+          "title": "Reduce each pair",
+          "narration": "Evaluate each fraction pair to one eighth, twelve, and three over three hundred and fifty."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{3}{2} × \\frac{3}{350} = \\frac{9}{700} = 0.012857…",
+          "tag": "divide",
+          "title": "Multiply and convert to decimal",
+          "narration": "Multiply to get nine over seven hundred, which equals zero point zero one two eight five seven recurring."
+        },
+        {
+          "n": 4,
+          "display": "0.01286 (option A)",
+          "tag": "answer",
+          "title": "Round to 5 decimal places",
+          "narration": "Rounding at the fifth decimal place uses the sixth digit seven to round up to zero point zero one two eight six."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{0.21}{1.68} = \\frac{21}{168} = \\frac{1}{8}",
+          "tag": "pair 1",
+          "title": "Reduce first ratio",
+          "narration": "Notice one hundred sixty-eight is eight times twenty-one, so zero point two one over one point six eight simplifies to one eighth."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{0.072}{0.006} = \\frac{72}{6} = 12",
+          "tag": "pair 2",
+          "title": "Reduce second ratio",
+          "narration": "Shift both decimal points three places right to get seventy-two divided by six, which equals twelve."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{0.00054}{0.063} = \\frac{54}{6300} = \\frac{6}{700} = \\frac{3}{350}",
+          "tag": "pair 3",
+          "title": "Reduce third ratio",
+          "narration": "Clear decimals to get fifty-four over six thousand three hundred, then divide top and bottom by eighteen to get three over three hundred and fifty."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{8} × 12 × \\frac{3}{350} = \\frac{36}{2800} = \\frac{9}{700}",
+          "tag": "multiply",
+          "title": "Multiply reduced fractions",
+          "narration": "Cancel four between twelve and eight to get three halves times three over three hundred and fifty, equal to nine over seven hundred."
+        },
+        {
+          "n": 5,
+          "display": "9 ÷ 700 = 0.0128571…",
+          "tag": "decimal",
+          "title": "Divide 9 by 700",
+          "narration": "Divide nine by seven hundred to get zero point zero one two eight five seven one, carrying past the fifth decimal place."
+        },
+        {
+          "n": 6,
+          "display": "0.01285|71… → 0.01286",
+          "tag": "round",
+          "title": "Round to 5 decimal places",
+          "narration": "Because the sixth decimal digit is seven, round the fifth digit five up to six."
+        },
+        {
+          "n": 7,
+          "display": "0.01286 (option A)",
+          "tag": "answer",
+          "title": "Final rounded value",
+          "narration": "To five decimal places, the expression equals zero point zero one two eight six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-032",
+      "questionId": "math-jamb-2017-032",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = tan 30° = \\frac{1}{\\sqrt{3}}",
+          "tag": "gradient",
+          "title": "Find gradient from angle",
+          "narration": "The gradient of a line is the tangent of its angle with the positive x-axis, so tan thirty degrees equals one over root three."
+        },
+        {
+          "n": 2,
+          "display": "y = mx + c ⇒ y = \\frac{1}{\\sqrt{3}}x + 5",
+          "tag": "equation",
+          "title": "Write slope-intercept form",
+          "narration": "Substitute gradient one over root three and y-intercept five into y equals m x plus c."
+        },
+        {
+          "n": 3,
+          "display": "\\sqrt{3} × y = \\sqrt{3}(\\frac{x}{\\sqrt{3}} + 5)",
+          "tag": "clear root",
+          "title": "Multiply both sides by \\sqrt{3}",
+          "narration": "Multiply every term on both sides by root three to clear the denominator."
+        },
+        {
+          "n": 4,
+          "display": "\\sqrt{3}y = x + 5\\sqrt{3} (option A)",
+          "tag": "answer",
+          "title": "Line equation",
+          "narration": "This simplifies to root three y equals x plus five root three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "θ = 30°, y-intercept c = 5",
+          "tag": "given",
+          "title": "Read angle and intercept",
+          "narration": "Note the inclination angle with the positive x-axis is thirty degrees and the line cuts the y-axis at y equals five."
+        },
+        {
+          "n": 2,
+          "display": "m = tan θ = tan 30° = \\frac{1}{\\sqrt{3}}",
+          "tag": "gradient",
+          "title": "Find gradient via tangent",
+          "narration": "Gradient equals tangent of the inclination angle, and from special triangles tangent of thirty degrees is one over root three."
+        },
+        {
+          "n": 3,
+          "display": "y = \\frac{x}{\\sqrt{3}} + 5",
+          "tag": "substitute",
+          "title": "Put into y = mx + c",
+          "narration": "Substitute the slope m and intercept c equals five into the slope-intercept formula."
+        },
+        {
+          "n": 4,
+          "display": "\\sqrt{3}y = x + 5\\sqrt{3}",
+          "tag": "multiply",
+          "title": "Multiply through by \\sqrt{3}",
+          "narration": "Multiply all three terms by root three to eliminate the fraction."
+        },
+        {
+          "n": 5,
+          "display": "\\sqrt{3}y = x + 5\\sqrt{3} (option A)",
+          "tag": "answer",
+          "title": "Final equation",
+          "narration": "The equation of the line is root three y equals x plus five root three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-033",
+      "questionId": "math-jamb-2017-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "4 − x^{2} = 2x + 1 ⇒ (x + 3)(x − 1) = 0",
+          "tag": "limits",
+          "title": "Find points of intersection",
+          "narration": "Equate the two equations and factorise to find they cross at x equals minus three and x equals one."
+        },
+        {
+          "n": 2,
+          "display": "(4 − x^{2}) − (2x + 1) = 3 − 2x − x^{2}",
+          "tag": "integrand",
+          "title": "Subtract lower from upper",
+          "narration": "Between minus three and one, four minus x squared lies above two x plus one, leaving three minus two x minus x squared."
+        },
+        {
+          "n": 3,
+          "display": "[3x − x^{2} − \\frac{x^{3}}{3}]_{−3}^{1} = \\frac{5}{3} − (−9)",
+          "tag": "integrate",
+          "title": "Integrate from −3 to 1",
+          "narration": "Integrate term by term and evaluate from minus three to one to get five thirds minus negative nine."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{32}{3} = 10 \\frac{2}{3} square units (option B)",
+          "tag": "answer",
+          "title": "Bounded area",
+          "narration": "Five thirds plus nine gives thirty-two thirds, or ten and two thirds square units."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "4 − x^{2} = 2x + 1 ⇒ x^{2} + 2x − 3 = 0",
+          "tag": "equate",
+          "title": "Find intersection limits",
+          "narration": "Equate y values and move everything onto the right side to get a standard quadratic equation."
+        },
+        {
+          "n": 2,
+          "display": "(x + 3)(x − 1) = 0 ⇒ x = −3, x = 1",
+          "tag": "factorise",
+          "title": "Solve for limits",
+          "narration": "Factorise to find the region runs from lower limit minus three to upper limit one."
+        },
+        {
+          "n": 3,
+          "display": "At x = 0: 4 > 1 ⇒ (4 − x^{2}) − (2x + 1) = 3 − 2x − x^{2}",
+          "tag": "difference",
+          "title": "Subtract line from parabola",
+          "narration": "At x equals zero, the parabola gives four while the line gives one, so integrate parabola minus line."
+        },
+        {
+          "n": 4,
+          "display": "∫_{−3}^{1} (3 − 2x − x^{2}) dx = [3x − x^{2} − \\frac{x^{3}}{3}]_{−3}^{1}",
+          "tag": "antiderivative",
+          "title": "Integrate term by term",
+          "narration": "Integrate three, minus two x, and minus x squared to get three x minus x squared minus x cubed over three."
+        },
+        {
+          "n": 5,
+          "display": "Upper (x=1): 3 − 1 − \\frac{1}{3} = \\frac{5}{3}",
+          "tag": "upper",
+          "title": "Evaluate at x = 1",
+          "narration": "Plug x equals one into the antiderivative to get two minus one third, or five thirds."
+        },
+        {
+          "n": 6,
+          "display": "Lower (x=−3): −9 − 9 + 9 = −9",
+          "tag": "lower",
+          "title": "Evaluate at x = −3",
+          "narration": "Plug x equals minus three in carefully: minus nine minus nine plus nine equals minus nine."
+        },
+        {
+          "n": 7,
+          "display": "\\frac{5}{3} − (−9) = \\frac{32}{3} = 10 \\frac{2}{3}",
+          "tag": "subtract",
+          "title": "Subtract lower from upper",
+          "narration": "Subtracting minus nine adds nine, giving thirty-two over three, which converts to ten and two thirds."
+        },
+        {
+          "n": 8,
+          "display": "10 \\frac{2}{3} square units (option B)",
+          "tag": "answer",
+          "title": "Area between curves",
+          "narration": "The enclosed area is ten and two thirds square units."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-013",
+      "questionId": "math-jamb-2018-013",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x^{2} − 9 = (x − 3)(x + 3), x^{2} − 49 = (x − 7)(x + 7)",
+          "tag": "denominators",
+          "title": "Factor both denominators",
+          "narration": "Use difference of two squares to factorise both x squared minus nine and x squared minus forty-nine."
+        },
+        {
+          "n": 2,
+          "display": "x^{2} − 3x = x(x − 3)",
+          "tag": "numerator",
+          "title": "Factor second numerator",
+          "narration": "Take common factor x out of x squared minus three x."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{x − 7}{(x − 3)(x + 3)} × \\frac{x(x − 3)}{(x − 7)(x + 7)}",
+          "tag": "cancel",
+          "title": "Cancel (x − 7) and (x − 3)",
+          "narration": "Because x is not equal to three or seven, cancel common factors x minus seven and x minus three across top and bottom."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{x}{(x + 3)(x + 7)} (option D)",
+          "tag": "answer",
+          "title": "Simplified fraction",
+          "narration": "What remains is x over open bracket x plus three close bracket times open bracket x plus seven close bracket."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x^{2} − 9 = (x − 3)(x + 3)",
+          "tag": "factor 1",
+          "title": "Factor first denominator",
+          "narration": "Recognise x squared minus nine as a difference of squares: x minus three times x plus three."
+        },
+        {
+          "n": 2,
+          "display": "x^{2} − 3x = x(x − 3)",
+          "tag": "factor 2",
+          "title": "Factor second numerator",
+          "narration": "Factor the common x out of x squared minus three x to reveal an x minus three bracket."
+        },
+        {
+          "n": 3,
+          "display": "x^{2} − 49 = (x − 7)(x + 7)",
+          "tag": "factor 3",
+          "title": "Factor second denominator",
+          "narration": "Write x squared minus forty-nine as x minus seven times x plus seven."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{x − 7}{(x − 3)(x + 3)} × \\frac{x(x − 3)}{(x − 7)(x + 7)}",
+          "tag": "rewrite",
+          "title": "Rewrite full product factored",
+          "narration": "Substitute all three factorisations back into the fraction multiplication."
+        },
+        {
+          "n": 5,
+          "display": "Cancel (x − 7) and (x − 3)",
+          "tag": "cancel",
+          "title": "Cancel matching brackets",
+          "narration": "Only entire multiplied brackets can cancel; cross out matching factors x minus seven and x minus three."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{x}{(x + 3)(x + 7)} (option D)",
+          "tag": "answer",
+          "title": "Final rational expression",
+          "narration": "This leaves x divided by x plus three times x plus seven."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-023",
+      "questionId": "math-jamb-2018-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Z − x^{2} = \\frac{1}{y^{3}}",
+          "tag": "subtract",
+          "title": "Subtract x^{2} from both sides",
+          "narration": "Subtract x squared from both sides so the fraction containing y stands on its own."
+        },
+        {
+          "n": 2,
+          "display": "y^{3} = \\frac{1}{Z − x^{2}}",
+          "tag": "invert",
+          "title": "Take reciprocals of both sides",
+          "narration": "Invert both sides because Z does not equal x squared, putting y cubed in the numerator."
+        },
+        {
+          "n": 3,
+          "display": "y = (\\frac{1}{Z − x^{2}})^{\\frac{1}{3}}",
+          "tag": "cube root",
+          "title": "Take the cube root",
+          "narration": "Raise both sides to the one third power to undo cubing y."
+        },
+        {
+          "n": 4,
+          "display": "y = \\frac{1}{(Z − x^{2})^{\\frac{1}{3}}} (option C)",
+          "tag": "answer",
+          "title": "y as subject",
+          "narration": "Since the cube root of one is one, y equals one over open bracket Z minus x squared close bracket to the one third."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Z − x^{2} = \\frac{1}{y^{3}}",
+          "tag": "subtract",
+          "title": "Subtract x^{2} from both sides",
+          "narration": "Isolate one over y cubed first by subtracting x squared from both sides of the equation."
+        },
+        {
+          "n": 2,
+          "display": "y^{3} = \\frac{1}{Z − x^{2}}",
+          "tag": "reciprocal",
+          "title": "Invert both sides",
+          "narration": "Since Z minus x squared is nonzero, take the reciprocal of both sides to move y cubed out of the denominator."
+        },
+        {
+          "n": 3,
+          "display": "y = \\frac{1^{\\frac{1}{3}}}{(Z − x^{2})^{\\frac{1}{3}}}",
+          "tag": "cube root",
+          "title": "Raise both sides to power \\frac{1}{3}",
+          "narration": "Undo the cube on y by raising both numerator and denominator to the power one third."
+        },
+        {
+          "n": 4,
+          "display": "y = \\frac{1}{(Z − x^{2})^{\\frac{1}{3}}}",
+          "tag": "simplify",
+          "title": "Simplify 1^{\\frac{1}{3}} = 1",
+          "narration": "One to the power one third is simply one."
+        },
+        {
+          "n": 5,
+          "display": "y = \\frac{1}{(Z − x^{2})^{\\frac{1}{3}}} (option C)",
+          "tag": "answer",
+          "title": "Subject of formula",
+          "narration": "Therefore y equals one over Z minus x squared all to the power one third."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-030",
+      "questionId": "math-jamb-2018-030",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "I = \\frac{P × R × T}{100}",
+          "tag": "formula",
+          "title": "Simple interest formula",
+          "narration": "Use simple interest equals principal times annual rate times time in years, divided by one hundred."
+        },
+        {
+          "n": 2,
+          "display": "I = \\frac{1,500 × 5 × 8}{100}",
+          "tag": "substitute",
+          "title": "Substitute given values",
+          "narration": "Put one thousand five hundred naira for principal, five for rate, and eight for years."
+        },
+        {
+          "n": 3,
+          "display": "15 × 40 = 600",
+          "tag": "multiply",
+          "title": "Cancel 100 and multiply",
+          "narration": "Cancel two zeros from one thousand five hundred and one hundred, then multiply fifteen by forty."
+        },
+        {
+          "n": 4,
+          "display": "₦600 (option B)",
+          "tag": "answer",
+          "title": "Simple interest",
+          "narration": "The simple interest earned over eight years is six hundred naira."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = ₦1,500, R = 5%, T = 8 years",
+          "tag": "given",
+          "title": "List principal, rate, time",
+          "narration": "Identify principal P at one thousand five hundred naira, rate R at five percent per year, and time T at eight years."
+        },
+        {
+          "n": 2,
+          "display": "I = \\frac{P × R × T}{100}",
+          "tag": "formula",
+          "title": "State simple interest formula",
+          "narration": "Write the standard simple interest formula principal times rate times time over one hundred."
+        },
+        {
+          "n": 3,
+          "display": "I = \\frac{1,500 × 5 × 8}{100}",
+          "tag": "substitute",
+          "title": "Substitute P, R, and T",
+          "narration": "Plug all three numbers directly into the formula."
+        },
+        {
+          "n": 4,
+          "display": "15 × 5 × 8 = 15 × 40 = 600",
+          "tag": "compute",
+          "title": "Cancel zeros and multiply",
+          "narration": "Divide one thousand five hundred by one hundred to get fifteen, multiply five by eight to get forty, and fifteen times forty equals six hundred."
+        },
+        {
+          "n": 5,
+          "display": "Check: 5% of 1,500 = ₦75 per year; 8 × 75 = ₦600",
+          "tag": "check",
+          "title": "Check year by year",
+          "narration": "Check: one year's interest is five percent of one thousand five hundred, which is seventy-five naira, and eight years at seventy-five is six hundred naira."
+        },
+        {
+          "n": 6,
+          "display": "₦600 (option B)",
+          "tag": "answer",
+          "title": "Total simple interest",
+          "narration": "The simple interest is six hundred naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2018-035",
+      "questionId": "math-jamb-2018-035",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = \\frac{4}{3}x − \\frac{1}{3} ⇒ m_{1} = \\frac{4}{3}",
+          "tag": "line 1",
+          "title": "Gradient of first line",
+          "narration": "Divide three y equals four x minus one by three to read gradient four thirds."
+        },
+        {
+          "n": 2,
+          "display": "y = \\frac{1}{q}x + \\frac{3}{q} ⇒ m_{2} = \\frac{1}{q}",
+          "tag": "line 2",
+          "title": "Gradient of second line",
+          "narration": "Divide q y equals x plus three by q to see its gradient is one over q."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{q} = \\frac{4}{3}",
+          "tag": "parallel",
+          "title": "Equate parallel gradients",
+          "narration": "Parallel lines have identical gradients, so set one over q equal to four thirds."
+        },
+        {
+          "n": 4,
+          "display": "q = \\frac{3}{4} (option D)",
+          "tag": "answer",
+          "title": "Value of q",
+          "narration": "Taking reciprocals on both sides gives q equals three quarters."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "3y = 4x − 1 ⇒ y = \\frac{4}{3}x − \\frac{1}{3}",
+          "tag": "slope 1",
+          "title": "Put line 1 in y = mx + c",
+          "narration": "Divide both sides of the first equation by three so the coefficient of x reveals slope m one equals four thirds."
+        },
+        {
+          "n": 2,
+          "display": "qy = x + 3 ⇒ y = \\frac{1}{q}x + \\frac{3}{q}",
+          "tag": "slope 2",
+          "title": "Put line 2 in y = mx + c",
+          "narration": "Divide both sides of the second equation by q to read its slope m two equals one over q."
+        },
+        {
+          "n": 3,
+          "display": "Parallel ⇒ m_{1} = m_{2} ⇒ \\frac{1}{q} = \\frac{4}{3}",
+          "tag": "parallel",
+          "title": "Equate the two slopes",
+          "narration": "Two parallel lines share the same slope, so equate one over q to four over three."
+        },
+        {
+          "n": 4,
+          "display": "4q = 3 ⇒ q = \\frac{3}{4}",
+          "tag": "solve q",
+          "title": "Cross-multiply and divide by 4",
+          "narration": "Cross-multiply to get four q equals three, then divide both sides by four."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{3}{4} (option D)",
+          "tag": "answer",
+          "title": "Final value of q",
+          "narration": "Therefore q equals three quarters."
+        }
+      ]
+    }
+  ]
+}
