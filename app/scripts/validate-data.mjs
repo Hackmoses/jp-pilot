@@ -41,6 +41,7 @@ scanDir(dataDir)
 const allQuestions = []
 const allAnimations = []
 const errors = []
+const pending = []
 
 for (const filePath of animationFiles) {
   const rel = path.relative(rootDir, filePath)
@@ -94,15 +95,19 @@ for (const question of allQuestions) {
       errors.push(`${question.id}: askPresets.whynot must point to an option retained after removals`)
     }
   }
-  if (
-    question.type === 'calculation' &&
-    !allAnimations.some(
-      (animation) => animation.id === question.animationId && animation.questionId === question.id,
-    )
-  ) {
-    errors.push(`${question.id}: calculation question lacks a matching animation`)
+  // A named animation must exist. A calculation with no animation yet shows its written
+  // explanation, so it is listed as pending instead of blocking the deploy (owner decision).
+  const matched = allAnimations.some(
+    (animation) => animation.id === question.animationId && animation.questionId === question.id,
+  )
+  if (question.animationId && !matched) {
+    errors.push(`${question.id}: animationId ${question.animationId} has no matching animation`)
+  } else if (question.type === 'calculation' && !matched) {
+    pending.push(question.id)
   }
 }
+
+if (pending.length) console.log(`${pending.length} calculation question(s) have no worked-step animation yet: ${pending.join(', ')}`)
 
 for (const error of errors) console.error(error)
 
