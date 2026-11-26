@@ -18,7 +18,7 @@ export default processDrawing({
           "shape": "M-24 13Q-15 -24 23 -15Q24 19 -24 13ZM-25 19L17 -10M-9 8l-3 -12M5 0l14 3"
         },
         {
-          "label": "Organ system",
+          "label": "Organ|system",
           "shape": "M0 -24V24M0 -7q-20 4 -22 -11q16 -4 22 11M0 4q17 2 23 -11q-15 -3 -23 11"
         }
       ],

@@ -31,7 +31,7 @@ describe('Biology Teach me', () => {
       expect(more).not.toContain(id)
       expect(new Set(more).size).toBeGreaterThanOrEqual(3)
     }
-    if (topics.length === 33) expect(new Set(ids)).toEqual(bank)
+    expect(new Set(ids)).toEqual(bank)
     for (const clip of topicsById.keys()) {
       const count = followUpIds(clip).length
       expect(count, clip).toBeGreaterThanOrEqual(4)

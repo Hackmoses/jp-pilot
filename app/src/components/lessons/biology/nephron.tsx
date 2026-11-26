@@ -10,7 +10,7 @@ const stages = [
 const targets: Record<string, Point> = {
   kidney: [73, 124], cortex: [189, 85], zoom: [106, 111], in: [173, 51], tuft: [189, 77],
   filter: [207, 94], capsule: [205, 112], prox: [246, 95], reabs: [243, 117], blood: [220, 124],
-  down: [242, 163], loop: [264, 211], duct: [329, 145], out: [329, 230], ureter: [113, 177],
+  down: [242, 163], loop: [264, 211], duct: [336, 159], out: [329, 230], ureter: [113, 177],
 }
 const organ = 'M92 68C55 67 31 104 40 145C49 190 104 190 111 160Q114 147 96 139Q78 126 98 113Q122 97 112 80Q104 68 92 68Z'
 

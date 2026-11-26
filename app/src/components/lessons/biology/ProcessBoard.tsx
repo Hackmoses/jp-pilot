@@ -31,7 +31,7 @@ export function processDrawing(board: Board) {
           if (!shown(part)) return null
           const x = xs[column]
           const isActive = !reduced && part === active
-          if (isActive) point = [x + 23, y + 16]
+          if (isActive) point = [Math.min(x + 23, 293), y + 16]
           const direction = links?.[column - 1]
           const from = direction === -1 ? x - 29 : xs[column - 1] + 29
           const to = direction === -1 ? xs[column - 1] + 29 : x - 29
