@@ -1,8 +1,8 @@
 import physics from '../../../../lessons-bank/physics-12-waves.json'
 import chemistry from '../../../../lessons-bank/chemistry-2-mole.json'
 import { describe, expect, it } from 'vitest'
-import { AudioSceneClock, beatTimes, fallbackMs, lessonScenes, sceneFrame, words } from './lesson'
-import type { Clip, Topic } from './lesson'
+import { AudioSceneClock, beatTimes, fallbackMs, lessonScenes, sceneFrame, wordCues, words } from './lesson'
+import type { Clip, Scene, Topic } from './lesson'
 import { conceptLessonTopic, STUDY_TOPICS } from '../../lib/sections'
 import { completeConceptLesson, hasStudied, markInteractiveCompleted } from '../../lib/modes'
 
@@ -99,4 +99,14 @@ describe('concept lessons', () => {
     clock.seek() // replay
     expect(draw()).toMatchObject({ progress: 0, reached: 0 })
   })
+})
+
+it('starts each spoken word at its recorded insert time', () => {
+  const scene = { id: 's', say: 'Listen to {{word:bird}} and {{word:bed}}. Now {{word:bird}} again.', beats: [] } as unknown as Scene
+  const clip = { sceneId: 's', durationMs: 9000, beats: [], inserts: [
+    { wordId: 'bird', atMs: 740 }, { wordId: 'bed', atMs: 1675 }, { wordId: 'bird', atMs: 5200 },
+  ] }
+  expect(wordCues(scene, 9000, clip)).toEqual([
+    { id: 'bird', atMs: 740 }, { id: 'bed', atMs: 1675 }, { id: 'bird', atMs: 5200 },
+  ])
 })

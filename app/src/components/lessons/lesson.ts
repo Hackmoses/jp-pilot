@@ -33,6 +33,8 @@ export type Clip = {
   sceneId: string
   durationMs: number
   beats: { word: string; atMs: number }[]
+  // Where each spoken word clip starts, when the narration left a gap for it.
+  inserts?: { wordId: string; atMs: number }[]
 }
 export type ExplainQuestion = { prompt: string; options: string[]; answerIndex: number; feedback: string }
 export type Pronunciation = { word: string; ipa: string; stress: number; audio?: boolean }
@@ -45,9 +47,12 @@ export function spokenToken(token: string) {
 export function wordCues(scene: Scene, duration: number, clip?: Clip) {
   const tokens = words(scene.say)
   const timings = [...clip?.beats ?? []]
+  const inserts = [...clip?.inserts ?? []]
   return tokens.flatMap((token, index) => {
     const id = Array.from(token.matchAll(wordMarker))[0]?.[1]
     if (!id) return []
+    const inserted = inserts.findIndex(({ wordId }) => wordId === id)
+    if (inserted >= 0) return [{ id, atMs: inserts.splice(inserted, 1)[0].atMs }]
     const timed = timings.findIndex(({ word }) => spokenToken(word) === '{{word:' + id + '}}')
     const exact = timed < 0 ? undefined : timings.splice(timed, 1)[0]
     return [{ id, atMs: exact?.atMs ?? index * duration / tokens.length }]
