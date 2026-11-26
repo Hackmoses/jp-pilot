@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 20,
+  "count": 30,
   "animations": [
     {
       "id": "anim-math-jamb-2010-018",
@@ -1361,6 +1361,645 @@
           "tag": "simplify",
           "title": "Divide by 27",
           "narration": "Notice eighty one divided by twenty seven is three, and three times eight gives U equals twenty four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-016",
+      "questionId": "math-jamb-2012-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "2y + 2 < 5y + 4",
+          "tag": "multiply by 10",
+          "title": "Multiply both sides by 10",
+          "narration": "Multiply every term on both sides by ten to clear denominators five and two."
+        },
+        {
+          "n": 2,
+          "display": "−2 < 3y",
+          "tag": "collect terms",
+          "title": "Collect y and constants",
+          "narration": "Subtract two y and four from both sides to leave minus two is less than three y."
+        },
+        {
+          "n": 3,
+          "display": "y > −\\frac{2}{3} (option C)",
+          "tag": "divide by 3",
+          "title": "Divide both sides by 3",
+          "narration": "Divide both sides by positive three and flip how we read it to get y is greater than minus two thirds."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{1}{5}y + \\frac{1}{5} < \\frac{1}{2}y + \\frac{2}{5}",
+          "tag": "clear fractions",
+          "title": "Find the LCM of 5 and 2",
+          "narration": "To clear the fractions cleanly, multiply every term on both sides by ten, the lowest common multiple of five and two."
+        },
+        {
+          "n": 2,
+          "display": "2y + 2 < 5y + 4",
+          "tag": "multiply by 10",
+          "title": "Multiply both sides by 10",
+          "narration": "Ten divided by five is two and ten divided by two is five, turning the inequality into whole numbers."
+        },
+        {
+          "n": 3,
+          "display": "2 − 4 < 5y − 2y ⇒ −2 < 3y",
+          "tag": "rearrange terms",
+          "title": "Collect y on the right",
+          "narration": "Subtract two y from both sides and subtract four from both sides so the y term stays positive on the right."
+        },
+        {
+          "n": 4,
+          "display": "−\\frac{2}{3} < y ⇒ y > −\\frac{2}{3}",
+          "tag": "divide by 3",
+          "title": "Divide both sides by 3",
+          "narration": "Divide both sides by positive three, which keeps the inequality sign the same, then read from y to get y is greater than minus two thirds."
+        },
+        {
+          "n": 5,
+          "display": "Check y = 0: \\frac{1}{5} < \\frac{2}{5} (option C)",
+          "tag": "verify at y = 0",
+          "title": "Check with y equals 0",
+          "narration": "Test zero, which is greater than minus two thirds: the left side is one fifth and the right side is two fifths, which is true. So y is greater than minus two thirds."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-021",
+      "questionId": "math-jamb-2012-021",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "3 ★ 4 = 3(4) + 3 − 4 = 11",
+          "tag": "inner bracket",
+          "title": "Evaluate 3 ★ 4 first",
+          "narration": "Work inside the brackets first using p equals three and q equals four, giving twelve plus three minus four equals eleven."
+        },
+        {
+          "n": 2,
+          "display": "2 ★ 11 = 2(11) + 2 − 11",
+          "tag": "outer operation",
+          "title": "Evaluate 2 ★ 11",
+          "narration": "Apply the rule again with p equals two and q equals eleven."
+        },
+        {
+          "n": 3,
+          "display": "= 22 + 2 − 11 = 13 (option B)",
+          "tag": "simplify",
+          "title": "Finish the arithmetic",
+          "narration": "Add twenty two and two to get twenty four, then subtract eleven to get thirteen."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "p ★ q = pq + p − q",
+          "tag": "read rule",
+          "title": "Understand the star rule",
+          "narration": "The symbol star means multiply the two numbers, add the first, and subtract the second. Always evaluate brackets first."
+        },
+        {
+          "n": 2,
+          "display": "3 ★ 4 = (3 × 4) + 3 − 4",
+          "tag": "substitute 3, 4",
+          "title": "Substitute 3 and 4",
+          "narration": "For the inner bracket three star four, put three for p and four for q."
+        },
+        {
+          "n": 3,
+          "display": "3 ★ 4 = 12 + 3 − 4 = 11",
+          "tag": "inner result",
+          "title": "Find the inner result",
+          "narration": "Three times four is twelve, twelve plus three is fifteen, and fifteen minus four gives eleven."
+        },
+        {
+          "n": 4,
+          "display": "2 ★ 11 = (2 × 11) + 2 − 11",
+          "tag": "substitute 2, 11",
+          "title": "Apply rule to 2 and 11",
+          "narration": "Now replace the bracket with eleven and apply the rule once more with p equals two and q equals eleven."
+        },
+        {
+          "n": 5,
+          "display": "2 ★ 11 = 22 + 2 − 11 = 13 (option B)",
+          "tag": "final value",
+          "title": "Compute the final value",
+          "narration": "Two times eleven is twenty two, add two to get twenty four, and subtract eleven to get thirteen."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-023",
+      "questionId": "math-jamb-2012-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\det{5,3;x,2} = 5(2) − 3x = 10 − 3x",
+          "tag": "left determinant",
+          "title": "Expand left determinant",
+          "narration": "Subtract the cross product three x from five times two to get ten minus three x."
+        },
+        {
+          "n": 2,
+          "display": "\\det{3,5;4,5} = 3(5) − 5(4) = −5",
+          "tag": "right determinant",
+          "title": "Expand right determinant",
+          "narration": "Compute three times five minus five times four to get fifteen minus twenty, which is minus five."
+        },
+        {
+          "n": 3,
+          "display": "10 − 3x = −5 ⇒ 3x = 15 ⇒ x = 5 (option C)",
+          "tag": "solve for x",
+          "title": "Equate and solve for x",
+          "narration": "Equate both determinants, rearrange to three x equals fifteen, and divide by three to get x equals five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\det{a,b;c,d} = ad − bc",
+          "tag": "determinant rule",
+          "title": "Recall 2×2 determinant",
+          "narration": "For any two by two matrix, the determinant is top-left times bottom-right minus top-right times bottom-left."
+        },
+        {
+          "n": 2,
+          "display": "Left = 5(2) − 3(x) = 10 − 3x",
+          "tag": "left side",
+          "title": "Evaluate left determinant",
+          "narration": "Multiply five by two to get ten, and subtract three times x."
+        },
+        {
+          "n": 3,
+          "display": "Right = 3(5) − 5(4) = 15 − 20 = −5",
+          "tag": "right side",
+          "title": "Evaluate right determinant",
+          "narration": "On the right, three times five is fifteen and five times four is twenty, leaving minus five."
+        },
+        {
+          "n": 4,
+          "display": "10 − 3x = −5 ⇒ −3x = −15",
+          "tag": "subtract 10",
+          "title": "Subtract 10 from both sides",
+          "narration": "Set both determinants equal, then subtract ten from both sides to isolate the x term, giving minus three x equals minus fifteen."
+        },
+        {
+          "n": 5,
+          "display": "x = \\frac{−15}{−3} = 5 (option C)",
+          "tag": "divide and check",
+          "title": "Divide and check x equals 5",
+          "narration": "Divide both sides by minus three to get x equals five. Checking back, ten minus three times five equals minus five, which matches."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-026",
+      "questionId": "math-jamb-2012-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Sum = (5 − 2) × 180° = 540°",
+          "tag": "pentagon angles",
+          "title": "Find interior angle sum",
+          "narration": "A polygon with five angles is a pentagon, whose interior angles add up to five hundred and forty degrees."
+        },
+        {
+          "n": 2,
+          "display": "x + 2x + 3x + 4x + 5x = 15x",
+          "tag": "sum the x terms",
+          "title": "Add the given angles",
+          "narration": "Add the five angles in terms of x to get fifteen x."
+        },
+        {
+          "n": 3,
+          "display": "15x = 540° ⇒ x = \\frac{540°}{15} = 36° (option D)",
+          "tag": "solve for x",
+          "title": "Divide by 15",
+          "narration": "Divide five hundred and forty degrees by fifteen to find x equals thirty six degrees."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "n = 5 sides (pentagon)",
+          "tag": "count sides",
+          "title": "Identify the polygon",
+          "narration": "The question lists five interior angles, so the polygon has five sides and is a pentagon."
+        },
+        {
+          "n": 2,
+          "display": "Sum = (n − 2) × 180° = (5 − 2) × 180°",
+          "tag": "angle sum formula",
+          "title": "Use the interior angle sum",
+          "narration": "Use the formula n minus two times one hundred and eighty degrees for the total interior angle of an n-sided polygon."
+        },
+        {
+          "n": 3,
+          "display": "Sum = 3 × 180° = 540°",
+          "tag": "total degrees",
+          "title": "Calculate 540 degrees",
+          "narration": "Three times one hundred and eighty gives five hundred and forty degrees."
+        },
+        {
+          "n": 4,
+          "display": "x + 2x + 3x + 4x + 5x = 15x = 540°",
+          "tag": "equate sums",
+          "title": "Add the angles and equate",
+          "narration": "Add one, two, three, four, and five x to get fifteen x, and set it equal to five hundred and forty degrees."
+        },
+        {
+          "n": 5,
+          "display": "x = \\frac{540°}{15} = 36° (option D)",
+          "tag": "divide by 15",
+          "title": "Divide both sides by 15",
+          "narration": "Divide both sides by fifteen. Fifteen times thirty is four hundred and fifty, and fifteen times six is ninety, so x equals thirty six degrees."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-027",
+      "questionId": "math-jamb-2012-027",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "∠PQR = 90°",
+          "tag": "semicircle angle",
+          "title": "Angle in a semicircle",
+          "narration": "Since P R is a diameter, angle P Q R on the circumference is ninety degrees."
+        },
+        {
+          "n": 2,
+          "display": "x° + 90° + ∠QRP = 180°",
+          "tag": "triangle sum",
+          "title": "Sum angles in △PQR",
+          "narration": "The three angles of triangle P Q R sum to one hundred and eighty degrees."
+        },
+        {
+          "n": 3,
+          "display": "∠QRP = 180° − 90° − x° = (90 − x)° (option B)",
+          "tag": "solve for QRP",
+          "title": "Subtract 90° and x°",
+          "narration": "Subtract ninety degrees and x degrees from one hundred and eighty degrees to get ninety minus x degrees."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "PR is diameter, ∠QPR = x°",
+          "tag": "read givens",
+          "title": "List what is given",
+          "narration": "Read from the question that P R is a diameter, Q lies on the circle, and angle Q P R is x degrees."
+        },
+        {
+          "n": 2,
+          "display": "∠PQR = 90°",
+          "tag": "angle in semicircle",
+          "title": "Use angle in a semicircle",
+          "narration": "By the angle in a semicircle theorem, any triangle formed with a diameter as one side and its third vertex on the circle has a right angle at that vertex, so angle P Q R is ninety degrees."
+        },
+        {
+          "n": 3,
+          "display": "∠QPR + ∠PQR + ∠QRP = 180°",
+          "tag": "triangle angle sum",
+          "title": "Sum angles of triangle PQR",
+          "narration": "Angles in a triangle always add up to one hundred and eighty degrees."
+        },
+        {
+          "n": 4,
+          "display": "x° + 90° + ∠QRP = 180°",
+          "tag": "substitute angles",
+          "title": "Substitute known angles",
+          "narration": "Put x degrees for angle Q P R and ninety degrees for angle P Q R."
+        },
+        {
+          "n": 5,
+          "display": "∠QRP = (90 − x)° (option B)",
+          "tag": "subtract from 180°",
+          "title": "Isolate angle QRP",
+          "narration": "Subtract ninety degrees and x degrees from both sides. One hundred and eighty minus ninety leaves ninety, so angle Q R P is ninety minus x degrees."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-028",
+      "questionId": "math-jamb-2012-028",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Area = \\frac{1}{2}(a + b)h",
+          "tag": "trapezium formula",
+          "title": "State trapezium formula",
+          "narration": "The area of a trapezium is half the sum of its parallel sides times the perpendicular height."
+        },
+        {
+          "n": 2,
+          "display": "Area = \\frac{1}{2}(7 + 13) × 6",
+          "tag": "substitute",
+          "title": "Substitute lengths and height",
+          "narration": "Put seven and thirteen centimetres for the parallel sides and six centimetres for the height."
+        },
+        {
+          "n": 3,
+          "display": "= \\frac{1}{2}(20) × 6 = 60 cm^{2} (option C)",
+          "tag": "calculate area",
+          "title": "Multiply for area",
+          "narration": "Half of twenty is ten, and ten times six gives sixty square centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "a = 7 cm, b = 13 cm, h = 6 cm",
+          "tag": "read givens",
+          "title": "Read parallel sides and height",
+          "narration": "Read the two parallel sides, seven centimetres and thirteen centimetres, and the perpendicular height between them, six centimetres."
+        },
+        {
+          "n": 2,
+          "display": "Area = \\frac{1}{2}(a + b) × h",
+          "tag": "trapezium formula",
+          "title": "Write trapezium area formula",
+          "narration": "A trapezium's area equals the average of the two parallel sides multiplied by the perpendicular distance between them."
+        },
+        {
+          "n": 3,
+          "display": "Area = \\frac{1}{2}(7 + 13) × 6",
+          "tag": "substitute",
+          "title": "Substitute the measurements",
+          "narration": "Substitute seven for a, thirteen for b, and six for h."
+        },
+        {
+          "n": 4,
+          "display": "Area = 10 × 6 = 60 cm^{2} (option C)",
+          "tag": "simplify",
+          "title": "Add then multiply",
+          "narration": "Seven plus thirteen is twenty, half of twenty is ten, and ten times six gives sixty square centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-030",
+      "questionId": "math-jamb-2012-030",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V = l × b × h",
+          "tag": "volume formula",
+          "title": "State cuboid volume formula",
+          "narration": "The volume of a cuboid is length times breadth times height."
+        },
+        {
+          "n": 2,
+          "display": "V = 0.76 × 2.6 × 0.82",
+          "tag": "substitute",
+          "title": "Multiply dimensions",
+          "narration": "Multiply zero point seven six by two point six by zero point eight two."
+        },
+        {
+          "n": 3,
+          "display": "V = 1.62032 ≈ 1.62 cm^{3} (option D)",
+          "tag": "round to 2 d.p.",
+          "title": "Round to 2 decimal places",
+          "narration": "The product is one point six two zero three two, which rounds to one point six two cubic centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V = l × b × h",
+          "tag": "volume formula",
+          "title": "State cuboid volume formula",
+          "narration": "Find the volume of a cuboid by multiplying its three perpendicular dimensions together."
+        },
+        {
+          "n": 2,
+          "display": "0.76 × 2.6 = 1.976",
+          "tag": "first two",
+          "title": "Multiply first two edges",
+          "narration": "Start by multiplying zero point seven six by two point six. Seventy six times twenty six is one thousand nine hundred and seventy six, and with three decimal places that is one point nine seven six."
+        },
+        {
+          "n": 3,
+          "display": "1.976 × 0.82 = 1.62032 cm^{3}",
+          "tag": "multiply third",
+          "title": "Multiply by the third edge",
+          "narration": "Now multiply one point nine seven six by zero point eight two to get one point six two zero three two cubic centimetres."
+        },
+        {
+          "n": 4,
+          "display": "1.62032 ≈ 1.62 cm^{3} (option D)",
+          "tag": "round to 2 d.p.",
+          "title": "Round to 2 decimal places",
+          "narration": "Look at the third decimal digit, which is zero. Since zero is less than five, round down to one point six two cubic centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-034",
+      "questionId": "math-jamb-2012-034",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = \\frac{4 − 1}{−\\frac{1}{2} − (−2)} = \\frac{3}{\\frac{3}{2}} = 2",
+          "tag": "find gradient",
+          "title": "Calculate the gradient",
+          "narration": "Divide the change in y, three, by the change in x, three over two, to get gradient m equals two."
+        },
+        {
+          "n": 2,
+          "display": "1 = 2(−2) + c ⇒ c = 5",
+          "tag": "find intercept",
+          "title": "Substitute (−2, 1) for c",
+          "narration": "Substitute minus two comma one into y equals two x plus c to get one equals minus four plus c, so c equals five."
+        },
+        {
+          "n": 3,
+          "display": "y = 2x + 5 (option B)",
+          "tag": "line equation",
+          "title": "Write the line equation",
+          "narration": "Put m equals two and c equals five into y equals m x plus c to get y equals two x plus five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = \\frac{y_{2} − y_{1}}{x_{2} − x_{1}}",
+          "tag": "gradient formula",
+          "title": "State the gradient formula",
+          "narration": "First find the slope between the two points using rise over run, y two minus y one over x two minus x one."
+        },
+        {
+          "n": 2,
+          "display": "m = \\frac{4 − 1}{−\\frac{1}{2} + 2} = \\frac{3}{\\frac{3}{2}} = 2",
+          "tag": "calculate m",
+          "title": "Find gradient m equals 2",
+          "narration": "Four minus one is three, and minus one half plus two is three halves. Three divided by three halves equals two."
+        },
+        {
+          "n": 3,
+          "display": "y = 2x + c at (−2, 1)",
+          "tag": "substitute point",
+          "title": "Use point (−2, 1)",
+          "narration": "Write y equals two x plus c and substitute the point minus two comma one to find the y-intercept c."
+        },
+        {
+          "n": 4,
+          "display": "1 = −4 + c ⇒ c = 5",
+          "tag": "add 4 both sides",
+          "title": "Solve for c",
+          "narration": "Two times minus two is minus four. Add four to both sides so c equals five."
+        },
+        {
+          "n": 5,
+          "display": "Check (−\\frac{1}{2}, 4): 2(−\\frac{1}{2}) + 5 = 4",
+          "tag": "verify point 2",
+          "title": "Check with second point",
+          "narration": "Test the second point in y equals two x plus five: two times minus one half is minus one, plus five is four, which matches."
+        },
+        {
+          "n": 6,
+          "display": "y = 2x + 5 (option B)",
+          "tag": "answer",
+          "title": "State the equation",
+          "narration": "So the equation of the line is y equals two x plus five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-037",
+      "questionId": "math-jamb-2012-037",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = x^{2} − x^{-1}",
+          "tag": "negative power",
+          "title": "Rewrite using negative power",
+          "narration": "Write one over x as x to the power of minus one so the power rule applies cleanly."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{dy}{dx} = 2x − (−1)x^{-2}",
+          "tag": "power rule",
+          "title": "Apply the power rule",
+          "narration": "Differentiate x squared to two x, and differentiate x to the minus one to minus one times x to the minus two."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{dy}{dx} = 2x + \\frac{1}{x^{2}} (option D)",
+          "tag": "simplify signs",
+          "title": "Simplify sign and power",
+          "narration": "Two minus signs make a plus, and x to the minus two moves back downstairs to give two x plus one over x squared."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{1}{x} = x^{-1} ⇒ y = x^{2} − x^{-1}",
+          "tag": "index form",
+          "title": "Rewrite in index form",
+          "narration": "Before differentiating a fraction with x in the denominator, rewrite one over x as x to the power of minus one."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{d}{dx}(x^{n}) = nx^{n − 1}",
+          "tag": "power rule",
+          "title": "Recall the power rule",
+          "narration": "Bring the exponent down to multiply in front, then reduce the exponent by one."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{dy}{dx} = 2x^{1} − (−1)x^{−1 − 1}",
+          "tag": "differentiate terms",
+          "title": "Differentiate each term",
+          "narration": "The derivative of x squared is two x, and for minus x to the minus one, bring down minus one and lower the power from minus one to minus two."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{dy}{dx} = 2x + x^{-2} = 2x + \\frac{1}{x^{2}} (option D)",
+          "tag": "positive power",
+          "title": "Write with positive power",
+          "narration": "Subtracting negative one becomes plus one, and writing x to the minus two as one over x squared gives two x plus one over x squared."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2012-038",
+      "questionId": "math-jamb-2012-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = cos x",
+          "tag": "trig function",
+          "title": "Identify the function",
+          "narration": "We need the derivative of cosine x with respect to x."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{d}{dx}(cos x) = −sin x",
+          "tag": "standard derivative",
+          "title": "Apply cosine derivative",
+          "narration": "By the standard trigonometric rule, the derivative of cosine x is minus sine x."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{dy}{dx} = −sin x (option B)",
+          "tag": "result",
+          "title": "State the derivative",
+          "narration": "So d y d x equals minus sine x."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "y = cos x",
+          "tag": "standard rule",
+          "title": "Identify the trig rule",
+          "narration": "Cosine x has a standard derivative in calculus, and watching the sign is the key part."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{d}{dx}(cos x) = −sin x",
+          "tag": "differentiate",
+          "title": "Differentiate cosine x",
+          "narration": "Differentiating sine x gives positive cosine x, while differentiating cosine x gives negative sine x."
+        },
+        {
+          "n": 3,
+          "display": "At x > 0 small: cos x decreases",
+          "tag": "sign check",
+          "title": "Check the negative sign",
+          "narration": "Just past x equals zero, cosine x drops down from one toward zero, so its slope must be negative. Since sine x is positive there, minus sine x matches that negative slope."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{dy}{dx} = −sin x (option B)",
+          "tag": "answer",
+          "title": "Confirm the derivative",
+          "narration": "Therefore d y d x is minus sine x."
         }
       ]
     }
