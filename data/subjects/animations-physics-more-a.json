@@ -1,0 +1,2566 @@
+{
+  "version": 1,
+  "count": 39,
+  "animations": [
+    {
+      "id": "anim-phys-jamb-2012-022",
+      "questionId": "phys-jamb-2012-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Q = mcΔT",
+          "tag": "relate heat to temperature rise",
+          "title": "Relate heat to temperature rise",
+          "narration": "A larger mass or a larger specific heat needs more energy for the same rise in temperature."
+        },
+        {
+          "n": 2,
+          "display": "100 g = 0.100 kg",
+          "tag": "convert the mass",
+          "title": "Convert the mass",
+          "narration": "Convert grams to kilograms because the given specific heat is measured per kilogram. Multiply zero point one kilograms by four thousand two hundred to get four hundred and twenty joules per kelvin."
+        },
+        {
+          "n": 3,
+          "display": "ΔT = \\frac{500}{420} ≈ 1.2°C (option C)",
+          "tag": "find the temperature rise",
+          "title": "Find the temperature rise",
+          "narration": "Divide five hundred joules by four hundred and twenty joules per kelvin. The rise is about one point two kelvin, which is the same change in Celsius degrees."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Q = 500 J, m = 100 g",
+          "tag": "read the heat and mass",
+          "title": "Read the heat and mass",
+          "narration": "The water gains five hundred joules. Its mass and specific heat tell us how much its temperature rises."
+        },
+        {
+          "n": 2,
+          "display": "Q = mcΔT",
+          "tag": "relate heat to temperature rise",
+          "title": "Relate heat to temperature rise",
+          "narration": "A larger mass or a larger specific heat needs more energy for the same rise in temperature."
+        },
+        {
+          "n": 3,
+          "display": "100 g = 0.100 kg",
+          "tag": "convert the mass",
+          "title": "Convert the mass",
+          "narration": "Convert grams to kilograms because the given specific heat is measured per kilogram. Multiply zero point one kilograms by four thousand two hundred to get four hundred and twenty joules per kelvin."
+        },
+        {
+          "n": 4,
+          "display": "ΔT = \\frac{500}{420} ≈ 1.2°C (option C)",
+          "tag": "find the temperature rise",
+          "title": "Find the temperature rise",
+          "narration": "Divide five hundred joules by four hundred and twenty joules per kelvin. The rise is about one point two kelvin, which is the same change in Celsius degrees."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-031",
+      "questionId": "phys-jamb-2012-031",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{h_{o}}{d_{o}} = \\frac{h_{i}}{d_{i}}",
+          "tag": "use similar triangles",
+          "title": "Use similar triangles",
+          "narration": "The straight ray through the pinhole makes the same angle on both sides, so height divided by distance is the same for both triangles."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{h_{i}}{d_{i}} = \\frac{2.5}{5} = \\frac{1}{2}",
+          "tag": "compare the image measurements",
+          "title": "Compare the image measurements",
+          "narration": "The image height and distance are both in centimetres, so their units cancel. This gives the scale of the triangle."
+        },
+        {
+          "n": 3,
+          "display": "h_{o} = 300 × \\frac{1}{2} = 150 m (option D)",
+          "tag": "find the building's height",
+          "title": "Find the building's height",
+          "narration": "The building's height is half its distance from the pinhole. That gives one hundred and fifty metres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "d_{o} = 300 m, d_{i} = 5 cm, h_{i} = 2.5 cm",
+          "tag": "locate the object and image",
+          "title": "Locate the object and image",
+          "narration": "The building and its image lie on opposite sides of the pinhole. We need the building's height."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{h_{o}}{d_{o}} = \\frac{h_{i}}{d_{i}}",
+          "tag": "use similar triangles",
+          "title": "Use similar triangles",
+          "narration": "The straight ray through the pinhole makes the same angle on both sides, so height divided by distance is the same for both triangles."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{h_{i}}{d_{i}} = \\frac{2.5}{5} = \\frac{1}{2}",
+          "tag": "compare the image measurements",
+          "title": "Compare the image measurements",
+          "narration": "The image height and distance are both in centimetres, so their units cancel. This gives the scale of the triangle."
+        },
+        {
+          "n": 4,
+          "display": "h_{o} = 300 × \\frac{1}{2} = 150 m (option D)",
+          "tag": "find the building's height",
+          "title": "Find the building's height",
+          "narration": "The building's height is half its distance from the pinhole. That gives one hundred and fifty metres."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-032",
+      "questionId": "phys-jamb-2012-032",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "h_{i} = h_{o} = 2 cm",
+          "tag": "find the image height",
+          "title": "Find the image height",
+          "narration": "A plane mirror gives an upright image the same size as the object, so the image height is also two centimetres."
+        },
+        {
+          "n": 2,
+          "display": "m = \\frac{h_{i}}{h_{o}}",
+          "tag": "write the size ratio",
+          "title": "Write the size ratio",
+          "narration": "Linear magnification compares image height with object height. The units cancel because both heights are measured in centimetres."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{2}{2} = 1.0 (option B)",
+          "tag": "calculate magnification",
+          "title": "Calculate magnification",
+          "narration": "The two heights are equal, so the magnification is one point zero."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "h_{o} = 2 cm, d_{o} = 10 cm",
+          "tag": "read the mirror setup",
+          "title": "Read the mirror setup",
+          "narration": "The object is two centimetres tall. Its ten-centimetre distance tells us where the image forms but does not change its size in a plane mirror."
+        },
+        {
+          "n": 2,
+          "display": "h_{i} = h_{o} = 2 cm",
+          "tag": "find the image height",
+          "title": "Find the image height",
+          "narration": "A plane mirror gives an upright image the same size as the object, so the image height is also two centimetres."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{h_{i}}{h_{o}}",
+          "tag": "write the size ratio",
+          "title": "Write the size ratio",
+          "narration": "Linear magnification compares image height with object height. The units cancel because both heights are measured in centimetres."
+        },
+        {
+          "n": 4,
+          "display": "m = \\frac{2}{2} = 1.0 (option B)",
+          "tag": "calculate magnification",
+          "title": "Calculate magnification",
+          "narration": "The two heights are equal, so the magnification is one point zero."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-044",
+      "questionId": "phys-jamb-2012-044",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ε = Bℓv sin θ",
+          "tag": "use the perpendicular speed",
+          "title": "Use the perpendicular speed",
+          "narration": "Only motion across the field lines produces the voltage. The sine gives the component of velocity across the field."
+        },
+        {
+          "n": 2,
+          "display": "v sin 30° = 50 × 0.5 = 25 m/s",
+          "tag": "evaluate the sine",
+          "title": "Evaluate the sine",
+          "narration": "At thirty degrees the perpendicular component is half the given speed."
+        },
+        {
+          "n": 3,
+          "display": "ε = 1.5 × 1 × 25 = 37.5 V (option A)",
+          "tag": "find the induced voltage",
+          "title": "Find the induced voltage",
+          "narration": "Multiply field strength, length and perpendicular speed to get thirty-seven point five volts."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "ℓ = 1 m, v = 50 m/s, B = 1.5 T, θ = 30°",
+          "tag": "identify the motion and field",
+          "title": "Identify the motion and field",
+          "narration": "The conductor moves at thirty degrees to the magnetic field. Its length is along the magnetic force direction, so we can use the full length."
+        },
+        {
+          "n": 2,
+          "display": "ε = Bℓv sin θ",
+          "tag": "use the perpendicular speed",
+          "title": "Use the perpendicular speed",
+          "narration": "Only motion across the field lines produces the voltage. The sine gives the component of velocity across the field."
+        },
+        {
+          "n": 3,
+          "display": "v sin 30° = 50 × 0.5 = 25 m/s",
+          "tag": "evaluate the sine",
+          "title": "Evaluate the sine",
+          "narration": "At thirty degrees the perpendicular component is half the given speed."
+        },
+        {
+          "n": 4,
+          "display": "ε = 1.5 × 1 × 25 = 37.5 V (option A)",
+          "tag": "find the induced voltage",
+          "title": "Find the induced voltage",
+          "narration": "Multiply field strength, length and perpendicular speed to get thirty-seven point five volts."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-047",
+      "questionId": "phys-jamb-2012-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "N = N_{0} × (\\frac{1}{2})^{n}",
+          "tag": "set up repeated halving",
+          "title": "Set up repeated halving",
+          "narration": "Raise one half to the number of half-lives because each interval halves whatever remains at that time."
+        },
+        {
+          "n": 2,
+          "display": "1000 → 500 → 250 → 125",
+          "tag": "count the halvings",
+          "title": "Count the halvings",
+          "narration": "It takes three halvings to reach one hundred and twenty-five atoms."
+        },
+        {
+          "n": 3,
+          "display": "t = 3 × 20 = 60 s (option C)",
+          "tag": "find the elapsed time",
+          "title": "Find the elapsed time",
+          "narration": "Each of the three intervals lasts twenty seconds, so sixty seconds have passed."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "N_{0} = 1000, N = 125, t_{half} = 20 s",
+          "tag": "read the count and half-life",
+          "title": "Read the count and half-life",
+          "narration": "The numbers count atoms still undecayed. Each twenty-second half-life halves that remaining count."
+        },
+        {
+          "n": 2,
+          "display": "N = N_{0} × (\\frac{1}{2})^{n}",
+          "tag": "set up repeated halving",
+          "title": "Set up repeated halving",
+          "narration": "Raise one half to the number of half-lives because each interval halves whatever remains at that time."
+        },
+        {
+          "n": 3,
+          "display": "1000 → 500 → 250 → 125",
+          "tag": "count the halvings",
+          "title": "Count the halvings",
+          "narration": "It takes three halvings to reach one hundred and twenty-five atoms."
+        },
+        {
+          "n": 4,
+          "display": "t = 3 × 20 = 60 s (option C)",
+          "tag": "find the elapsed time",
+          "title": "Find the elapsed time",
+          "narration": "Each of the three intervals lasts twenty seconds, so sixty seconds have passed."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-005",
+      "questionId": "phys-jamb-2013-005",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T = 2π\\sqrt{\\frac{L}{g}}",
+          "tag": "connect period and length",
+          "title": "Connect period and length",
+          "narration": "The period grows with the square root of length. We can compare periods without knowing the numerical value of gravity."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{T_{2}}{T_{1}} = \\sqrt{\\frac{L_{2}}{L_{1}}}",
+          "tag": "take the period ratio",
+          "title": "Take the period ratio",
+          "narration": "The common factor involving gravity and two pi cancels when we divide the periods."
+        },
+        {
+          "n": 3,
+          "display": "\\sqrt{\\frac{0.8}{0.4}} = \\sqrt{2}",
+          "tag": "find the scale factor",
+          "title": "Find the scale factor",
+          "narration": "The new length is double, so the new period is the old period times the square root of two."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = 2\\sqrt{2} s (option C)",
+          "tag": "find the new period",
+          "title": "Find the new period",
+          "narration": "Multiply the original two seconds by the square root of two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L_{1} = 0.4 m, T_{1} = 2 s, L_{2} = 0.8 m",
+          "tag": "compare the two pendulums",
+          "title": "Compare the two pendulums",
+          "narration": "Both pendulums swing through small angles at the same place, so they experience the same gravitational acceleration."
+        },
+        {
+          "n": 2,
+          "display": "T = 2π\\sqrt{\\frac{L}{g}}",
+          "tag": "connect period and length",
+          "title": "Connect period and length",
+          "narration": "The period grows with the square root of length. We can compare periods without knowing the numerical value of gravity."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{T_{2}}{T_{1}} = \\sqrt{\\frac{L_{2}}{L_{1}}}",
+          "tag": "take the period ratio",
+          "title": "Take the period ratio",
+          "narration": "The common factor involving gravity and two pi cancels when we divide the periods."
+        },
+        {
+          "n": 4,
+          "display": "\\sqrt{\\frac{0.8}{0.4}} = \\sqrt{2}",
+          "tag": "find the scale factor",
+          "title": "Find the scale factor",
+          "narration": "The new length is double, so the new period is the old period times the square root of two."
+        },
+        {
+          "n": 5,
+          "display": "T_{2} = 2\\sqrt{2} s (option C)",
+          "tag": "find the new period",
+          "title": "Find the new period",
+          "narration": "Multiply the original two seconds by the square root of two."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-006",
+      "questionId": "phys-jamb-2013-006",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v = u + at",
+          "tag": "use constant acceleration",
+          "title": "Use constant acceleration",
+          "narration": "Uniform deceleration means the velocity changes by the same amount every second."
+        },
+        {
+          "n": 2,
+          "display": "0 = 20 − 2t",
+          "tag": "substitute the speeds",
+          "title": "Substitute the speeds",
+          "narration": "The train loses two metres per second of speed each second until its speed reaches zero."
+        },
+        {
+          "n": 3,
+          "display": "t = \\frac{20}{2} = 10 s (option B)",
+          "tag": "find the stopping time",
+          "title": "Find the stopping time",
+          "narration": "Divide the total speed lost by the amount lost each second. The train takes ten seconds."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "u = 20 m/s, v = 0, a = −2 m/s^{2}",
+          "tag": "read the speed change",
+          "title": "Read the speed change",
+          "narration": "Take the train's direction as positive. The train is slowing down, so its acceleration is negative and its final speed is zero."
+        },
+        {
+          "n": 2,
+          "display": "v = u + at",
+          "tag": "use constant acceleration",
+          "title": "Use constant acceleration",
+          "narration": "Uniform deceleration means the velocity changes by the same amount every second."
+        },
+        {
+          "n": 3,
+          "display": "0 = 20 − 2t",
+          "tag": "substitute the speeds",
+          "title": "Substitute the speeds",
+          "narration": "The train loses two metres per second of speed each second until its speed reaches zero."
+        },
+        {
+          "n": 4,
+          "display": "t = \\frac{20}{2} = 10 s (option B)",
+          "tag": "find the stopping time",
+          "title": "Find the stopping time",
+          "narration": "Divide the total speed lost by the amount lost each second. The train takes ten seconds."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-009",
+      "questionId": "phys-jamb-2013-009",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "mgh = \\frac{1}{2}mv^{2}",
+          "tag": "equate the energies",
+          "title": "Equate the energies",
+          "narration": "The two expressions describe stored energy from height and energy from motion, respectively."
+        },
+        {
+          "n": 2,
+          "display": "h = \\frac{v^{2}}{2g}",
+          "tag": "cancel the common mass",
+          "title": "Cancel the common mass",
+          "narration": "Both energies are proportional to the same mass, so we can divide it out before solving for height."
+        },
+        {
+          "n": 3,
+          "display": "h = \\frac{5^{2}}{2 × 10} = 1.25 m",
+          "tag": "use the given speed and gravity",
+          "title": "Use the given speed and gravity",
+          "narration": "Square the speed before dividing by twice the acceleration due to gravity."
+        },
+        {
+          "n": 4,
+          "display": "h ≈ 1.3 m (option C)",
+          "tag": "match the offered precision",
+          "title": "Match the offered precision",
+          "narration": "One point two five metres rounds to one point three metres to the nearest tenth."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "v = 5 m/s, g = 10 m/s^{2}",
+          "tag": "identify what is equal",
+          "title": "Identify what is equal",
+          "narration": "The masses are equal. We are looking for the height at which gravitational potential energy matches the moving object's kinetic energy."
+        },
+        {
+          "n": 2,
+          "display": "mgh = \\frac{1}{2}mv^{2}",
+          "tag": "equate the energies",
+          "title": "Equate the energies",
+          "narration": "The two expressions describe stored energy from height and energy from motion, respectively."
+        },
+        {
+          "n": 3,
+          "display": "h = \\frac{v^{2}}{2g}",
+          "tag": "cancel the common mass",
+          "title": "Cancel the common mass",
+          "narration": "Both energies are proportional to the same mass, so we can divide it out before solving for height."
+        },
+        {
+          "n": 4,
+          "display": "h = \\frac{5^{2}}{2 × 10} = 1.25 m",
+          "tag": "use the given speed and gravity",
+          "title": "Use the given speed and gravity",
+          "narration": "Square the speed before dividing by twice the acceleration due to gravity."
+        },
+        {
+          "n": 5,
+          "display": "h ≈ 1.3 m (option C)",
+          "tag": "match the offered precision",
+          "title": "Match the offered precision",
+          "narration": "One point two five metres rounds to one point three metres to the nearest tenth."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-012",
+      "questionId": "phys-jamb-2013-012",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "VR = \\frac{effort arm}{load arm} = 2",
+          "tag": "find the velocity ratio",
+          "title": "Find the velocity ratio",
+          "narration": "Both ends turn through the same angle, so the longer arm moves twice as far as the shorter arm."
+        },
+        {
+          "n": 2,
+          "display": "MA = η × VR = 0.90 × 2 = 1.8",
+          "tag": "find mechanical advantage",
+          "title": "Find mechanical advantage",
+          "narration": "Mechanical advantage is the actual force gain. Efficiency makes it smaller than the ideal velocity ratio."
+        },
+        {
+          "n": 3,
+          "display": "MA = \\frac{L}{E}",
+          "tag": "relate load and effort",
+          "title": "Relate load and effort",
+          "narration": "Mechanical advantage compares the load lifted with the effort applied, so the effort is the load divided by that gain."
+        },
+        {
+          "n": 4,
+          "display": "E = \\frac{180}{1.8} = 100 N (option C)",
+          "tag": "calculate the effort",
+          "title": "Calculate the effort",
+          "narration": "Divide one hundred and eighty newtons by one point eight to get one hundred newtons."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L = 180 N, η = 90% = 0.90",
+          "tag": "read the lever data",
+          "title": "Read the lever data",
+          "narration": "The lever lifts one hundred and eighty newtons. Its efficiency is nine tenths as a fraction."
+        },
+        {
+          "n": 2,
+          "display": "VR = \\frac{effort arm}{load arm} = 2",
+          "tag": "find the velocity ratio",
+          "title": "Find the velocity ratio",
+          "narration": "Both ends turn through the same angle, so the longer arm moves twice as far as the shorter arm."
+        },
+        {
+          "n": 3,
+          "display": "MA = η × VR = 0.90 × 2 = 1.8",
+          "tag": "find mechanical advantage",
+          "title": "Find mechanical advantage",
+          "narration": "Mechanical advantage is the actual force gain. Efficiency makes it smaller than the ideal velocity ratio."
+        },
+        {
+          "n": 4,
+          "display": "MA = \\frac{L}{E}",
+          "tag": "relate load and effort",
+          "title": "Relate load and effort",
+          "narration": "Mechanical advantage compares the load lifted with the effort applied, so the effort is the load divided by that gain."
+        },
+        {
+          "n": 5,
+          "display": "E = \\frac{180}{1.8} = 100 N (option C)",
+          "tag": "calculate the effort",
+          "title": "Calculate the effort",
+          "narration": "Divide one hundred and eighty newtons by one point eight to get one hundred newtons."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-016",
+      "questionId": "phys-jamb-2013-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{x}{400} = \\frac{20}{100}",
+          "tag": "set up the proportion",
+          "title": "Set up the proportion",
+          "narration": "The fraction of the length above the ice mark equals the fraction of the temperature range above zero degrees."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{20}{100} = \\frac{1}{5}",
+          "tag": "simplify the fraction",
+          "title": "Simplify the fraction",
+          "narration": "Twenty degrees is one fifth of the full Celsius range between these two marks."
+        },
+        {
+          "n": 3,
+          "display": "x = 400 × \\frac{1}{5} = 80 mm (option D)",
+          "tag": "find the distance",
+          "title": "Find the distance",
+          "narration": "One fifth of four hundred millimetres is eighty millimetres above the ice mark."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "0°C to 100°C spans 400 mm",
+          "tag": "read the fixed points",
+          "title": "Read the fixed points",
+          "narration": "The ice and steam marks set the full scale. On a linear thermometer, equal temperature rises take equal lengths."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{x}{400} = \\frac{20}{100}",
+          "tag": "set up the proportion",
+          "title": "Set up the proportion",
+          "narration": "The fraction of the length above the ice mark equals the fraction of the temperature range above zero degrees."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{20}{100} = \\frac{1}{5}",
+          "tag": "simplify the fraction",
+          "title": "Simplify the fraction",
+          "narration": "Twenty degrees is one fifth of the full Celsius range between these two marks."
+        },
+        {
+          "n": 4,
+          "display": "x = 400 × \\frac{1}{5} = 80 mm (option D)",
+          "tag": "find the distance",
+          "title": "Find the distance",
+          "narration": "One fifth of four hundred millimetres is eighty millimetres above the ice mark."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-045",
+      "questionId": "phys-jamb-2013-045",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{m_{2}}{m_{1}} = \\frac{I_{2}t_{2}}{I_{1}t_{1}}",
+          "tag": "write the mass ratio",
+          "title": "Write the mass ratio",
+          "narration": "Deposited mass is proportional to charge passed. For the same electrolyte, the mass deposited per coulomb cancels."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{4 × 4.8}{2.5 × 3} = \\frac{19.2}{7.5} = 2.56",
+          "tag": "find the charge factor",
+          "title": "Find the charge factor",
+          "narration": "The second run passes two point five six times as much charge, so it deposits that many times as much mass."
+        },
+        {
+          "n": 3,
+          "display": "m_{2} = 1.8 × 2.56 = 4.608 g ≈ 4.6 g (option C)",
+          "tag": "find the deposited mass",
+          "title": "Find the deposited mass",
+          "narration": "Multiply the original deposit by the charge factor and round to the offered precision."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I_{1} = 2.5 A, t_{1} = 3 h, m_{1} = 1.8 g",
+          "tag": "compare the two runs",
+          "title": "Compare the two runs",
+          "narration": "The first run gives us a known deposit. The second run uses the same electrolyte, so we can compare charges."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{m_{2}}{m_{1}} = \\frac{I_{2}t_{2}}{I_{1}t_{1}}",
+          "tag": "write the mass ratio",
+          "title": "Write the mass ratio",
+          "narration": "Deposited mass is proportional to charge passed. For the same electrolyte, the mass deposited per coulomb cancels."
+        },
+        {
+          "n": 3,
+          "display": "I_{2} = 4 A, t_{2} = 4.8 h",
+          "tag": "read the second current and time",
+          "title": "Read the second current and time",
+          "narration": "Both times are in hours. We can keep hours here because the same seconds-per-hour factor cancels in the ratio."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{4 × 4.8}{2.5 × 3} = \\frac{19.2}{7.5} = 2.56",
+          "tag": "find the charge factor",
+          "title": "Find the charge factor",
+          "narration": "The second run passes two point five six times as much charge, so it deposits that many times as much mass."
+        },
+        {
+          "n": 5,
+          "display": "m_{2} = 1.8 × 2.56 = 4.608 g ≈ 4.6 g (option C)",
+          "tag": "find the deposited mass",
+          "title": "Find the deposited mass",
+          "narration": "Multiply the original deposit by the charge factor and round to the offered precision."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2015-039",
+      "questionId": "phys-jamb-2015-039",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E = Pt",
+          "tag": "link energy and power",
+          "title": "Link energy and power",
+          "narration": "Power measures how much energy is transferred each second. Multiplying by time gives the total energy."
+        },
+        {
+          "n": 2,
+          "display": "t = 60 × 60 = 3600 s",
+          "tag": "convert one hour",
+          "title": "Convert one hour",
+          "narration": "Use seconds because one watt means one joule per second."
+        },
+        {
+          "n": 3,
+          "display": "E = 60 × 3600 = 2.16 × 10^{5} J (option B)",
+          "tag": "find the energy transferred",
+          "title": "Find the energy transferred",
+          "narration": "At sixty joules each second for one hour, the lamp transfers two hundred and sixteen thousand joules."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 60 W, t = 1 h",
+          "tag": "read the power and time",
+          "title": "Read the power and time",
+          "narration": "The lamp runs at its rated power. Its rated voltage is unnecessary because the question already gives the rate of energy transfer."
+        },
+        {
+          "n": 2,
+          "display": "E = Pt",
+          "tag": "link energy and power",
+          "title": "Link energy and power",
+          "narration": "Power measures how much energy is transferred each second. Multiplying by time gives the total energy."
+        },
+        {
+          "n": 3,
+          "display": "t = 60 × 60 = 3600 s",
+          "tag": "convert one hour",
+          "title": "Convert one hour",
+          "narration": "Use seconds because one watt means one joule per second."
+        },
+        {
+          "n": 4,
+          "display": "E = 60 × 3600 = 2.16 × 10^{5} J (option B)",
+          "tag": "find the energy transferred",
+          "title": "Find the energy transferred",
+          "narration": "At sixty joules each second for one hour, the lamp transfers two hundred and sixteen thousand joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2017-028",
+      "questionId": "phys-jamb-2017-028",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "λ = 2d = 34 cm = 0.34 m",
+          "tag": "find the full wavelength",
+          "title": "Find the full wavelength",
+          "narration": "A compression and the nearest rarefaction are half a cycle apart. Double the distance and convert to metres to match the speed units."
+        },
+        {
+          "n": 2,
+          "display": "v = fλ ⇒ f = \\frac{v}{λ}",
+          "tag": "relate speed and frequency",
+          "title": "Relate speed and frequency",
+          "narration": "In one cycle the wave advances one wavelength, so the speed is the wavelength multiplied by the number of cycles each second."
+        },
+        {
+          "n": 3,
+          "display": "f = 1000 Hz (option D)",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "A wave moving three hundred and forty metres per second with this wavelength completes one thousand cycles per second."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "d = 17 cm, v = 340 m/s",
+          "tag": "read the air wave data",
+          "title": "Read the air wave data",
+          "narration": "The measured distance is between a compression and the next rarefaction. We need the distance for a full wave cycle."
+        },
+        {
+          "n": 2,
+          "display": "λ = 2d = 34 cm = 0.34 m",
+          "tag": "find the full wavelength",
+          "title": "Find the full wavelength",
+          "narration": "A compression and the nearest rarefaction are half a cycle apart. Double the distance and convert to metres to match the speed units."
+        },
+        {
+          "n": 3,
+          "display": "v = fλ ⇒ f = \\frac{v}{λ}",
+          "tag": "relate speed and frequency",
+          "title": "Relate speed and frequency",
+          "narration": "In one cycle the wave advances one wavelength, so the speed is the wavelength multiplied by the number of cycles each second."
+        },
+        {
+          "n": 4,
+          "display": "f = \\frac{340}{0.34}",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Divide the metres travelled each second by the metres in one wave."
+        },
+        {
+          "n": 5,
+          "display": "f = 1000 Hz (option D)",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "A wave moving three hundred and forty metres per second with this wavelength completes one thousand cycles per second."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2017-033",
+      "questionId": "phys-jamb-2017-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P = 650 W = 0.65 kW",
+          "tag": "combine and convert power",
+          "title": "Combine and convert power",
+          "narration": "Five times fifty plus four times one hundred gives six hundred and fifty watts. Convert to kilowatts because the price is per kilowatt-hour."
+        },
+        {
+          "n": 2,
+          "display": "E = 0.65 × 10 = 6.5 kWh",
+          "tag": "find the energy bought",
+          "title": "Find the energy bought",
+          "narration": "Keep the time in hours so the energy is measured in the same unit used by the tariff."
+        },
+        {
+          "n": 3,
+          "display": "Cost = 6.5 × 2 = 13 kobo",
+          "tag": "apply the rate",
+          "title": "Apply the rate",
+          "narration": "Each kilowatt-hour costs two kobo, so multiply the energy used by the price per unit."
+        },
+        {
+          "n": 4,
+          "display": "13 kobo = ₦0.13 (option A)",
+          "tag": "convert to naira",
+          "title": "Convert to naira",
+          "narration": "One hundred kobo make one naira. Thirteen kobo is zero point one three naira."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "5 × 50 W, 4 × 100 W",
+          "tag": "read the lamp ratings",
+          "title": "Read the lamp ratings",
+          "narration": "The question gives the number of lamps in each group and the power of each lamp. All of them run for ten hours."
+        },
+        {
+          "n": 2,
+          "display": "P = 650 W = 0.65 kW",
+          "tag": "combine and convert power",
+          "title": "Combine and convert power",
+          "narration": "Five times fifty plus four times one hundred gives six hundred and fifty watts. Convert to kilowatts because the price is per kilowatt-hour."
+        },
+        {
+          "n": 3,
+          "display": "E = 0.65 × 10 = 6.5 kWh",
+          "tag": "find the energy bought",
+          "title": "Find the energy bought",
+          "narration": "Keep the time in hours so the energy is measured in the same unit used by the tariff."
+        },
+        {
+          "n": 4,
+          "display": "Cost = 6.5 × 2 = 13 kobo",
+          "tag": "apply the rate",
+          "title": "Apply the rate",
+          "narration": "Each kilowatt-hour costs two kobo, so multiply the energy used by the price per unit."
+        },
+        {
+          "n": 5,
+          "display": "13 kobo = ₦0.13 (option A)",
+          "tag": "convert to naira",
+          "title": "Convert to naira",
+          "narration": "One hundred kobo make one naira. Thirteen kobo is zero point one three naira."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2018-001",
+      "questionId": "phys-jamb-2018-001",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "d = \\sqrt{1^{2} + 1^{2}} = \\sqrt{2} km",
+          "tag": "find the magnitude",
+          "title": "Find the magnitude",
+          "narration": "Use Pythagoras because the two legs meet at a right angle. The displacement is the square root of two kilometres."
+        },
+        {
+          "n": 2,
+          "display": "tan θ = \\frac{1}{1} = 1",
+          "tag": "find the bearing angle",
+          "title": "Find the bearing angle",
+          "narration": "Measure the angle from north towards east. The eastward distance is opposite this angle and the northward distance is adjacent."
+        },
+        {
+          "n": 3,
+          "display": "Displacement = \\sqrt{2} km N 45° E (option A)",
+          "tag": "combine distance and direction",
+          "title": "Combine distance and direction",
+          "narration": "A displacement needs both a size and a direction. Here it is root two kilometres, north forty-five degrees east."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "1 km east, then 1 km north",
+          "tag": "read the walk",
+          "title": "Read the walk",
+          "narration": "East and north are perpendicular. The displacement joins the starting point directly to the finishing point, forming the hypotenuse."
+        },
+        {
+          "n": 2,
+          "display": "d = \\sqrt{1^{2} + 1^{2}} = \\sqrt{2} km",
+          "tag": "find the magnitude",
+          "title": "Find the magnitude",
+          "narration": "Use Pythagoras because the two legs meet at a right angle. The displacement is the square root of two kilometres."
+        },
+        {
+          "n": 3,
+          "display": "tan θ = \\frac{1}{1} = 1",
+          "tag": "find the bearing angle",
+          "title": "Find the bearing angle",
+          "narration": "Measure the angle from north towards east. The eastward distance is opposite this angle and the northward distance is adjacent."
+        },
+        {
+          "n": 4,
+          "display": "θ = 45° east of north",
+          "tag": "use equal components",
+          "title": "Use equal components",
+          "narration": "The two component distances are equal, so the direction lies halfway between north and east."
+        },
+        {
+          "n": 5,
+          "display": "Displacement = \\sqrt{2} km N 45° E (option A)",
+          "tag": "combine distance and direction",
+          "title": "Combine distance and direction",
+          "narration": "A displacement needs both a size and a direction. Here it is root two kilometres, north forty-five degrees east."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2018-026",
+      "questionId": "phys-jamb-2018-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{N}{N_{0}} = (\\frac{1}{2})^{n}",
+          "tag": "model the repeated halves",
+          "title": "Model the repeated halves",
+          "narration": "The undecayed fraction is halved in each half-life, so the exponent counts the number of half-lives."
+        },
+        {
+          "n": 2,
+          "display": "64 = 2^{6} ⇒ n = 6",
+          "tag": "count the half-lives",
+          "title": "Count the half-lives",
+          "narration": "Six factors of two in the denominator mean the sample has halved six times."
+        },
+        {
+          "n": 3,
+          "display": "t_{half} = \\frac{120}{6} = 20 years (option A)",
+          "tag": "calculate one half-life",
+          "title": "Calculate one half-life",
+          "narration": "Six equal intervals fit into one hundred and twenty years, making each interval twenty years."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{N}{N_{0}} = \\frac{1}{64}, t = 120 years",
+          "tag": "read the remaining fraction",
+          "title": "Read the remaining fraction",
+          "narration": "One sixty-fourth of the starting sample remains undecayed after one hundred and twenty years."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{N}{N_{0}} = (\\frac{1}{2})^{n}",
+          "tag": "model the repeated halves",
+          "title": "Model the repeated halves",
+          "narration": "The undecayed fraction is halved in each half-life, so the exponent counts the number of half-lives."
+        },
+        {
+          "n": 3,
+          "display": "64 = 2^{6} ⇒ n = 6",
+          "tag": "count the half-lives",
+          "title": "Count the half-lives",
+          "narration": "Six factors of two in the denominator mean the sample has halved six times."
+        },
+        {
+          "n": 4,
+          "display": "t_{half} = \\frac{t}{n}",
+          "tag": "set up the time division",
+          "title": "Set up the time division",
+          "narration": "All six half-life intervals have the same length. Divide the total time by the interval count."
+        },
+        {
+          "n": 5,
+          "display": "t_{half} = \\frac{120}{6} = 20 years (option A)",
+          "tag": "calculate one half-life",
+          "title": "Calculate one half-life",
+          "narration": "Six equal intervals fit into one hundred and twenty years, making each interval twenty years."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2006-020",
+      "questionId": "phys-jamb-2006-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "1 J = 1 N m = 1 kg m^{2} s^{-2}",
+          "tag": "find the energy units",
+          "title": "Find the energy units",
+          "narration": "Work is force times distance. A newton is kilogram metre per second squared, so multiplying by a metre gives the joule."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{kg m^{2} s^{-2}}{m^{3}}",
+          "tag": "divide by cubic metres",
+          "title": "Divide by cubic metres",
+          "narration": "Volume is measured in cubic metres. Put that unit in the denominator to get energy per unit volume."
+        },
+        {
+          "n": 3,
+          "display": "kg m^{-1} s^{-2} (option B)",
+          "tag": "simplify the exponent",
+          "title": "Simplify the exponent",
+          "narration": "Subtract three from the metre exponent of two. Kilograms and seconds keep their original powers."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Energy density = \\frac{energy}{volume}",
+          "tag": "identify energy density",
+          "title": "Identify energy density",
+          "narration": "Energy density tells us how much energy there is in each unit of volume, so divide the unit of energy by the unit of volume."
+        },
+        {
+          "n": 2,
+          "display": "1 J = 1 N m = 1 kg m^{2} s^{-2}",
+          "tag": "find the energy units",
+          "title": "Find the energy units",
+          "narration": "Work is force times distance. A newton is kilogram metre per second squared, so multiplying by a metre gives the joule."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{kg m^{2} s^{-2}}{m^{3}}",
+          "tag": "divide by cubic metres",
+          "title": "Divide by cubic metres",
+          "narration": "Volume is measured in cubic metres. Put that unit in the denominator to get energy per unit volume."
+        },
+        {
+          "n": 4,
+          "display": "kg m^{-1} s^{-2} (option B)",
+          "tag": "simplify the exponent",
+          "title": "Simplify the exponent",
+          "narration": "Subtract three from the metre exponent of two. Kilograms and seconds keep their original powers."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-001",
+      "questionId": "phys-jamb-2009-001",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "G = \\frac{Fr^{2}}{m_{1}m_{2}}",
+          "tag": "rearrange newton's law",
+          "title": "Rearrange Newton's law",
+          "narration": "Move the square of distance to the numerator and the two masses to the denominator to isolate the constant."
+        },
+        {
+          "n": 2,
+          "display": "[G] = \\frac{(MLT^{-2})(L^{2})}{M^{2}}",
+          "tag": "substitute dimensions",
+          "title": "Substitute dimensions",
+          "narration": "A force is mass times acceleration. Distance contributes two more powers of length, and the product of two masses gives mass squared."
+        },
+        {
+          "n": 3,
+          "display": "x = −1, y = 3, z = −2 (option B)",
+          "tag": "read the exponents",
+          "title": "Read the exponents",
+          "narration": "Read the powers in the order asked for: mass, length, then time."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "[G] = M^{x} L^{y} T^{z}",
+          "tag": "identify the dimensions sought",
+          "title": "Identify the dimensions sought",
+          "narration": "We want the powers of mass, length and time in the gravitational constant. Numerical values of the masses and distance are unnecessary here."
+        },
+        {
+          "n": 2,
+          "display": "G = \\frac{Fr^{2}}{m_{1}m_{2}}",
+          "tag": "rearrange newton's law",
+          "title": "Rearrange Newton's law",
+          "narration": "Move the square of distance to the numerator and the two masses to the denominator to isolate the constant."
+        },
+        {
+          "n": 3,
+          "display": "[G] = \\frac{(MLT^{-2})(L^{2})}{M^{2}}",
+          "tag": "substitute dimensions",
+          "title": "Substitute dimensions",
+          "narration": "A force is mass times acceleration. Distance contributes two more powers of length, and the product of two masses gives mass squared."
+        },
+        {
+          "n": 4,
+          "display": "[G] = M^{-1}L^{3}T^{-2}",
+          "tag": "simplify the dimensions",
+          "title": "Simplify the dimensions",
+          "narration": "Subtract two from the mass exponent of one and add two to the length exponent of one. The time exponent stays negative two."
+        },
+        {
+          "n": 5,
+          "display": "x = −1, y = 3, z = −2 (option B)",
+          "tag": "read the exponents",
+          "title": "Read the exponents",
+          "narration": "Read the powers in the order asked for: mass, length, then time."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1997-005",
+      "questionId": "phys-jamb-1997-005",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "R = \\frac{u^{2} sin(2θ)}{g}",
+          "tag": "use the horizontal range formula",
+          "title": "Use the horizontal range formula",
+          "narration": "For a projectile that returns to its launch level, the angle affects range through the sine of twice the launch angle."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{R_{X}}{R_{Y}} = \\frac{sin 60°}{sin 120°}",
+          "tag": "cancel the common factors",
+          "title": "Cancel the common factors",
+          "narration": "The launch speed and gravity are the same for both, so only the two sine values remain in the ratio."
+        },
+        {
+          "n": 3,
+          "display": "R_{X} : R_{Y} = 1 : 1 (option A)",
+          "tag": "give the range ratio",
+          "title": "Give the range ratio",
+          "narration": "The sine values are equal, so the two ranges are the same."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "θ_{X} = 30°, θ_{Y} = 60°",
+          "tag": "compare the launch angles",
+          "title": "Compare the launch angles",
+          "narration": "Both bodies start with the same speed, land on the same horizontal plane and travel without air resistance."
+        },
+        {
+          "n": 2,
+          "display": "R = \\frac{u^{2} sin(2θ)}{g}",
+          "tag": "use the horizontal range formula",
+          "title": "Use the horizontal range formula",
+          "narration": "For a projectile that returns to its launch level, the angle affects range through the sine of twice the launch angle."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{R_{X}}{R_{Y}} = \\frac{sin 60°}{sin 120°}",
+          "tag": "cancel the common factors",
+          "title": "Cancel the common factors",
+          "narration": "The launch speed and gravity are the same for both, so only the two sine values remain in the ratio."
+        },
+        {
+          "n": 4,
+          "display": "sin 120° = sin(180° − 120°) = sin 60°",
+          "tag": "compare the sines",
+          "title": "Compare the sines",
+          "narration": "Angles that add to one hundred and eighty degrees have equal sines."
+        },
+        {
+          "n": 5,
+          "display": "R_{X} : R_{Y} = 1 : 1 (option A)",
+          "tag": "give the range ratio",
+          "title": "Give the range ratio",
+          "narration": "The sine values are equal, so the two ranges are the same."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1999-007",
+      "questionId": "phys-jamb-1999-007",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = \\frac{Δv}{Δt}",
+          "tag": "use the velocity gradient",
+          "title": "Use the velocity gradient",
+          "narration": "On a velocity-time graph the slope is the change in velocity divided by the time taken. The flat section has zero slope."
+        },
+        {
+          "n": 2,
+          "display": "a = \\frac{80}{20} = 4.0 m/s²",
+          "tag": "find the rising slope",
+          "title": "Find the rising slope",
+          "narration": "The vehicle gains eighty metres per second in the first twenty seconds."
+        },
+        {
+          "n": 3,
+          "display": "a = \\frac{−80}{40} = −2.0 m/s²",
+          "tag": "find the falling slope",
+          "title": "Find the falling slope",
+          "narration": "The vehicle loses eighty metres per second during the final forty seconds. The negative sign means it is slowing down."
+        },
+        {
+          "n": 4,
+          "display": "Acceleration = 4.0 m/s², retardation = 2.0 m/s² (option C)",
+          "tag": "report retardation as a magnitude",
+          "title": "Report retardation as a magnitude",
+          "narration": "Retardation is the size of the negative acceleration. The two values in order are four point zero and two point zero metres per second squared."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "0–20 s, 50–90 s",
+          "tag": "read the graph's corners",
+          "title": "Read the graph's corners",
+          "narration": "Read times along the bottom and speeds up the side. The vehicle rises from zero to eighty metres per second by twenty seconds, stays there until fifty seconds, then slows to zero at ninety seconds."
+        },
+        {
+          "n": 2,
+          "display": "a = \\frac{Δv}{Δt}",
+          "tag": "use the velocity gradient",
+          "title": "Use the velocity gradient",
+          "narration": "On a velocity-time graph the slope is the change in velocity divided by the time taken. The flat section has zero slope."
+        },
+        {
+          "n": 3,
+          "display": "a = \\frac{80}{20} = 4.0 m/s²",
+          "tag": "find the rising slope",
+          "title": "Find the rising slope",
+          "narration": "The vehicle gains eighty metres per second in the first twenty seconds."
+        },
+        {
+          "n": 4,
+          "display": "a = \\frac{−80}{40} = −2.0 m/s²",
+          "tag": "find the falling slope",
+          "title": "Find the falling slope",
+          "narration": "The vehicle loses eighty metres per second during the final forty seconds. The negative sign means it is slowing down."
+        },
+        {
+          "n": 5,
+          "display": "Acceleration = 4.0 m/s², retardation = 2.0 m/s² (option C)",
+          "tag": "report retardation as a magnitude",
+          "title": "Report retardation as a magnitude",
+          "narration": "Retardation is the size of the negative acceleration. The two values in order are four point zero and two point zero metres per second squared."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-004",
+      "questionId": "phys-jamb-2009-004",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "a = \\frac{v_{2} − v_{1}}{t_{2} − t_{1}}",
+          "tag": "write the slope formula",
+          "title": "Write the slope formula",
+          "narration": "Acceleration is the change in velocity per second. Subtract earlier from later in both parts to keep the signs consistent."
+        },
+        {
+          "n": 2,
+          "display": "Δv = 35 − 15 = 20 m/s, Δt = 20 − 10 = 10 s",
+          "tag": "find the two changes",
+          "title": "Find the two changes",
+          "narration": "The second point is at twenty seconds and thirty-five metres per second, so the velocity rose by twenty metres per second in ten seconds."
+        },
+        {
+          "n": 3,
+          "display": "a = \\frac{20}{10} = 2.00 m/s² (option D)",
+          "tag": "calculate the acceleration",
+          "title": "Calculate the acceleration",
+          "narration": "Divide the velocity change by the elapsed time to get two metres per second squared."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "t_{1} = 10 s, v_{1} = 15 m/s",
+          "tag": "read both points",
+          "title": "Read both points",
+          "narration": "The first coordinate in each pair gives time and the second gives velocity. We need the slope between the two points."
+        },
+        {
+          "n": 2,
+          "display": "a = \\frac{v_{2} − v_{1}}{t_{2} − t_{1}}",
+          "tag": "write the slope formula",
+          "title": "Write the slope formula",
+          "narration": "Acceleration is the change in velocity per second. Subtract earlier from later in both parts to keep the signs consistent."
+        },
+        {
+          "n": 3,
+          "display": "Δv = 35 − 15 = 20 m/s, Δt = 20 − 10 = 10 s",
+          "tag": "find the two changes",
+          "title": "Find the two changes",
+          "narration": "The second point is at twenty seconds and thirty-five metres per second, so the velocity rose by twenty metres per second in ten seconds."
+        },
+        {
+          "n": 4,
+          "display": "a = \\frac{20}{10} = 2.00 m/s² (option D)",
+          "tag": "calculate the acceleration",
+          "title": "Calculate the acceleration",
+          "narration": "Divide the velocity change by the elapsed time to get two metres per second squared."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2003-011",
+      "questionId": "phys-jamb-2003-011",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "d_{L} = 45 − 15 = 30 cm, d_{F} = 90 − 45 = 45 cm",
+          "tag": "find the two lever arms",
+          "title": "Find the two lever arms",
+          "narration": "A lever arm is measured from the pivot. The effort is applied at the far end, forty-five centimetres from the fulcrum."
+        },
+        {
+          "n": 2,
+          "display": "F × 45 = 30 × 30",
+          "tag": "balance the moments",
+          "title": "Balance the moments",
+          "narration": "A horizontal lever in equilibrium has equal clockwise and anticlockwise moments. Each moment is force times perpendicular distance from the pivot."
+        },
+        {
+          "n": 3,
+          "display": "F = \\frac{900}{45} = 20 N (option B)",
+          "tag": "find the effort",
+          "title": "Find the effort",
+          "narration": "Divide the load moment by the effort arm to get twenty newtons. Both arm lengths were in centimetres, so no conversion was needed."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Fulcrum at 45 cm, load at 15 cm",
+          "tag": "place the pivot and load",
+          "title": "Place the pivot and load",
+          "narration": "The fulcrum is midway along the uniform ninety-centimetre lever. The load is fifteen centimetres from the reference end. The lever's own weight acts at the pivot and makes no moment."
+        },
+        {
+          "n": 2,
+          "display": "d_{L} = 45 − 15 = 30 cm, d_{F} = 90 − 45 = 45 cm",
+          "tag": "find the two lever arms",
+          "title": "Find the two lever arms",
+          "narration": "A lever arm is measured from the pivot. The effort is applied at the far end, forty-five centimetres from the fulcrum."
+        },
+        {
+          "n": 3,
+          "display": "F × 45 = 30 × 30",
+          "tag": "balance the moments",
+          "title": "Balance the moments",
+          "narration": "A horizontal lever in equilibrium has equal clockwise and anticlockwise moments. Each moment is force times perpendicular distance from the pivot."
+        },
+        {
+          "n": 4,
+          "display": "30 × 30 = 900 N cm",
+          "tag": "compute the load moment",
+          "title": "Compute the load moment",
+          "narration": "The thirty-newton load is thirty centimetres from the pivot, giving nine hundred newton centimetres."
+        },
+        {
+          "n": 5,
+          "display": "F = \\frac{900}{45} = 20 N (option B)",
+          "tag": "find the effort",
+          "title": "Find the effort",
+          "narration": "Divide the load moment by the effort arm to get twenty newtons. Both arm lengths were in centimetres, so no conversion was needed."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2018-024",
+      "questionId": "phys-jamb-2018-024",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m_{b}u_{b} = (m_{b} + m_{block})v",
+          "tag": "conserve momentum",
+          "title": "Conserve momentum",
+          "narration": "The block is free to move, so the horizontal momentum is conserved during impact. Kinetic energy need not be conserved when the bullet sticks."
+        },
+        {
+          "n": 2,
+          "display": "v = \\frac{10}{1.0} = 10 m/s",
+          "tag": "find their common speed",
+          "title": "Find their common speed",
+          "narration": "Divide the conserved momentum by the combined mass to find the speed after impact."
+        },
+        {
+          "n": 3,
+          "display": "K = \\frac{1}{2} × 1.0 × 10^{2} = 50 J (option C)",
+          "tag": "find the final kinetic energy",
+          "title": "Find the final kinetic energy",
+          "narration": "Use the combined mass and square the speed after impact. The kinetic energy is fifty joules."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m_{b} = 0.05 kg, u_{b} = 200 m/s, m_{block} = 0.95 kg",
+          "tag": "read the collision data",
+          "title": "Read the collision data",
+          "narration": "Take the block as initially at rest and the bullet as lodged in it after impact. The two then move together."
+        },
+        {
+          "n": 2,
+          "display": "m_{b}u_{b} = (m_{b} + m_{block})v",
+          "tag": "conserve momentum",
+          "title": "Conserve momentum",
+          "narration": "The block is free to move, so the horizontal momentum is conserved during impact. Kinetic energy need not be conserved when the bullet sticks."
+        },
+        {
+          "n": 3,
+          "display": "m_{total} = 1.0 kg, p = 0.05 × 200 = 10 kg m/s",
+          "tag": "find the combined mass and momentum",
+          "title": "Find the combined mass and momentum",
+          "narration": "Add the masses because they now move together. Only the bullet contributes to the initial momentum."
+        },
+        {
+          "n": 4,
+          "display": "v = \\frac{10}{1.0} = 10 m/s",
+          "tag": "find their common speed",
+          "title": "Find their common speed",
+          "narration": "Divide the conserved momentum by the combined mass to find the speed after impact."
+        },
+        {
+          "n": 5,
+          "display": "K = \\frac{1}{2} × 1.0 × 10^{2} = 50 J (option C)",
+          "tag": "find the final kinetic energy",
+          "title": "Find the final kinetic energy",
+          "narration": "Use the combined mass and square the speed after impact. The kinetic energy is fifty joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2005-032",
+      "questionId": "phys-jamb-2005-032",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = \\frac{Gm_{1}m_{2}}{d^{2}}",
+          "tag": "use the inverse-square law",
+          "title": "Use the inverse-square law",
+          "narration": "With fixed masses, the force varies inversely with the square of their separation."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{F_{2}}{F_{1}} = (\\frac{d_{1}}{d_{2}})^{2}",
+          "tag": "compare the forces",
+          "title": "Compare the forces",
+          "narration": "The mass factors and gravitational constant cancel. The old distance goes on top because force increases as distance decreases."
+        },
+        {
+          "n": 3,
+          "display": "F_{2} = 200 × 4 = 800 N (option C)",
+          "tag": "find the new force",
+          "title": "Find the new force",
+          "narration": "Multiply the original two hundred newtons by four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "F_{1} = 200 N, d_{2} = \\frac{d_{1}}{2}",
+          "tag": "read what changes",
+          "title": "Read what changes",
+          "narration": "Treat the force between the two objects as their mutual gravitational attraction, as in this topic. The masses stay the same and only their separation changes."
+        },
+        {
+          "n": 2,
+          "display": "F = \\frac{Gm_{1}m_{2}}{d^{2}}",
+          "tag": "use the inverse-square law",
+          "title": "Use the inverse-square law",
+          "narration": "With fixed masses, the force varies inversely with the square of their separation."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{F_{2}}{F_{1}} = (\\frac{d_{1}}{d_{2}})^{2}",
+          "tag": "compare the forces",
+          "title": "Compare the forces",
+          "narration": "The mass factors and gravitational constant cancel. The old distance goes on top because force increases as distance decreases."
+        },
+        {
+          "n": 4,
+          "display": "(\\frac{d_{1}}{d_{2}})^{2} = 2^{2} = 4",
+          "tag": "find the multiplication factor",
+          "title": "Find the multiplication factor",
+          "narration": "The old distance was twice the new one, so the new force is four times as great."
+        },
+        {
+          "n": 5,
+          "display": "F_{2} = 200 × 4 = 800 N (option C)",
+          "tag": "find the new force",
+          "title": "Find the new force",
+          "narration": "Multiply the original two hundred newtons by four."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2007-043",
+      "questionId": "phys-jamb-2007-043",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = \\frac{Gm_{1}m_{2}}{r^{2}}",
+          "tag": "write newton's law",
+          "title": "Write Newton's law",
+          "narration": "The attraction grows with the product of the masses and decreases with the square of their separation."
+        },
+        {
+          "n": 2,
+          "display": "F = \\frac{6.67 × 10^{-11} × 5.0 × 10.0}{(0.3)^{2}}",
+          "tag": "substitute the given values",
+          "title": "Substitute the given values",
+          "narration": "Use the given gravitational constant. Remember to square only the distance in the denominator."
+        },
+        {
+          "n": 3,
+          "display": "F = \\frac{3.335 × 10^{-9}}{0.09}",
+          "tag": "simplify numerator and denominator",
+          "title": "Simplify numerator and denominator",
+          "narration": "Multiplying the constant by both masses gives the numerator. Squaring zero point three gives zero point zero nine."
+        },
+        {
+          "n": 4,
+          "display": "F ≈ 3.71 × 10^{-8} N (option A)",
+          "tag": "find the attractive force",
+          "title": "Find the attractive force",
+          "narration": "Divide and match the answer written in scientific notation."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m_{1} = 5.0 kg, m_{2} = 10.0 kg, r = 0.3 m",
+          "tag": "read the gravitational data",
+          "title": "Read the gravitational data",
+          "narration": "Use the given separation as the distance between the centres of the spheres. The masses and distance are in SI units already."
+        },
+        {
+          "n": 2,
+          "display": "F = \\frac{Gm_{1}m_{2}}{r^{2}}",
+          "tag": "write newton's law",
+          "title": "Write Newton's law",
+          "narration": "The attraction grows with the product of the masses and decreases with the square of their separation."
+        },
+        {
+          "n": 3,
+          "display": "F = \\frac{6.67 × 10^{-11} × 5.0 × 10.0}{(0.3)^{2}}",
+          "tag": "substitute the given values",
+          "title": "Substitute the given values",
+          "narration": "Use the given gravitational constant. Remember to square only the distance in the denominator."
+        },
+        {
+          "n": 4,
+          "display": "F = \\frac{3.335 × 10^{-9}}{0.09}",
+          "tag": "simplify numerator and denominator",
+          "title": "Simplify numerator and denominator",
+          "narration": "Multiplying the constant by both masses gives the numerator. Squaring zero point three gives zero point zero nine."
+        },
+        {
+          "n": 5,
+          "display": "F ≈ 3.71 × 10^{-8} N (option A)",
+          "tag": "find the attractive force",
+          "title": "Find the attractive force",
+          "narration": "Divide and match the answer written in scientific notation."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2005-030",
+      "questionId": "phys-jamb-2005-030",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "W = Fs cos θ",
+          "tag": "use the work formula",
+          "title": "Use the work formula",
+          "narration": "Only the component of the force along the displacement does work. Use cosine because the angle is measured from the horizontal."
+        },
+        {
+          "n": 2,
+          "display": "F_{horizontal} = 100 cos 60° = 50 N",
+          "tag": "find the horizontal force",
+          "title": "Find the horizontal force",
+          "narration": "The cosine of sixty degrees is one half, so fifty newtons act along the displacement."
+        },
+        {
+          "n": 3,
+          "display": "W = 50 × 8 = 400 J (option C)",
+          "tag": "calculate the work",
+          "title": "Calculate the work",
+          "narration": "Multiply the force along the motion by eight metres to get four hundred joules."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "F = 100 N, θ = 60°, s = 8 m",
+          "tag": "read the force and movement",
+          "title": "Read the force and movement",
+          "narration": "The displacement is horizontal, while the force is angled sixty degrees above that direction."
+        },
+        {
+          "n": 2,
+          "display": "W = Fs cos θ",
+          "tag": "use the work formula",
+          "title": "Use the work formula",
+          "narration": "Only the component of the force along the displacement does work. Use cosine because the angle is measured from the horizontal."
+        },
+        {
+          "n": 3,
+          "display": "F_{horizontal} = 100 cos 60° = 50 N",
+          "tag": "find the horizontal force",
+          "title": "Find the horizontal force",
+          "narration": "The cosine of sixty degrees is one half, so fifty newtons act along the displacement."
+        },
+        {
+          "n": 4,
+          "display": "W = 50 × 8 = 400 J (option C)",
+          "tag": "calculate the work",
+          "title": "Calculate the work",
+          "narration": "Multiply the force along the motion by eight metres to get four hundred joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-014",
+      "questionId": "phys-jamb-2008-014",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "VR = 4",
+          "tag": "find the velocity ratio",
+          "title": "Find the velocity ratio",
+          "narration": "For the intended four-strand block and tackle, the effort rope travels four times as far as the moving block rises."
+        },
+        {
+          "n": 2,
+          "display": "MA = η × VR = 0.80 × 4 = 3.2",
+          "tag": "find the actual force gain",
+          "title": "Find the actual force gain",
+          "narration": "Convert eighty percent to zero point eight. The efficiency reduces the actual mechanical advantage below the ideal value of four."
+        },
+        {
+          "n": 3,
+          "display": "E = \\frac{L}{MA}",
+          "tag": "write the effort equation",
+          "title": "Write the effort equation",
+          "narration": "Mechanical advantage is load divided by effort. Rearrange it to find the effort."
+        },
+        {
+          "n": 4,
+          "display": "E = \\frac{1200}{3.2} = 375 N (option C)",
+          "tag": "calculate the effort",
+          "title": "Calculate the effort",
+          "narration": "Divide the load by the actual force gain to get three hundred and seventy-five newtons."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2 upper pulleys, 2 lower pulleys, L = 1200 N",
+          "tag": "read the pulley diagram",
+          "title": "Read the pulley diagram",
+          "narration": "The load label under the lower block reads one thousand two hundred newtons. The arrow marked E is where the effort is applied, and the stem gives eighty percent efficiency."
+        },
+        {
+          "n": 2,
+          "display": "VR = 4",
+          "tag": "find the velocity ratio",
+          "title": "Find the velocity ratio",
+          "narration": "For the intended four-strand block and tackle, the effort rope travels four times as far as the moving block rises."
+        },
+        {
+          "n": 3,
+          "display": "MA = η × VR = 0.80 × 4 = 3.2",
+          "tag": "find the actual force gain",
+          "title": "Find the actual force gain",
+          "narration": "Convert eighty percent to zero point eight. The efficiency reduces the actual mechanical advantage below the ideal value of four."
+        },
+        {
+          "n": 4,
+          "display": "E = \\frac{L}{MA}",
+          "tag": "write the effort equation",
+          "title": "Write the effort equation",
+          "narration": "Mechanical advantage is load divided by effort. Rearrange it to find the effort."
+        },
+        {
+          "n": 5,
+          "display": "E = \\frac{1200}{3.2} = 375 N (option C)",
+          "tag": "calculate the effort",
+          "title": "Calculate the effort",
+          "narration": "Divide the load by the actual force gain to get three hundred and seventy-five newtons."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-010",
+      "questionId": "phys-jamb-2009-010",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "W = mgh = 750 × 10 × 90 = 675000 J",
+          "tag": "find the work against gravity",
+          "title": "Find the work against gravity",
+          "narration": "Multiply the weight by the vertical rise. This gives the gain in gravitational potential energy."
+        },
+        {
+          "n": 2,
+          "display": "t = 1 min = 60 s",
+          "tag": "convert the time",
+          "title": "Convert the time",
+          "narration": "Use seconds in the power calculation because one watt is one joule per second."
+        },
+        {
+          "n": 3,
+          "display": "P = \\frac{11250}{1000} = 11.25 kW (option C)",
+          "tag": "convert to kilowatts",
+          "title": "Convert to kilowatts",
+          "narration": "Divide watts by one thousand to match the units of the choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 750 kg, h = 90 m, t = 1 min",
+          "tag": "read the lift data",
+          "title": "Read the lift data",
+          "narration": "The mass rises ninety metres. The power is the energy gained against gravity divided by the lifting time."
+        },
+        {
+          "n": 2,
+          "display": "W = mgh = 750 × 10 × 90 = 675000 J",
+          "tag": "find the work against gravity",
+          "title": "Find the work against gravity",
+          "narration": "Multiply the weight by the vertical rise. This gives the gain in gravitational potential energy."
+        },
+        {
+          "n": 3,
+          "display": "t = 1 min = 60 s",
+          "tag": "convert the time",
+          "title": "Convert the time",
+          "narration": "Use seconds in the power calculation because one watt is one joule per second."
+        },
+        {
+          "n": 4,
+          "display": "P = \\frac{W}{t} = \\frac{675000}{60} = 11250 W",
+          "tag": "divide work by time",
+          "title": "Divide work by time",
+          "narration": "Spreading the work over sixty seconds gives eleven thousand two hundred and fifty joules each second."
+        },
+        {
+          "n": 5,
+          "display": "P = \\frac{11250}{1000} = 11.25 kW (option C)",
+          "tag": "convert to kilowatts",
+          "title": "Convert to kilowatts",
+          "narration": "Divide watts by one thousand to match the units of the choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2004-016",
+      "questionId": "phys-jamb-2004-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F_{friction} = F_{push} = 500 N",
+          "tag": "find the friction force",
+          "title": "Find the friction force",
+          "narration": "For a horizontal push on a level road, friction must cancel the push to keep the speed and direction constant."
+        },
+        {
+          "n": 2,
+          "display": "F_{friction} = μR",
+          "tag": "relate friction to reaction",
+          "title": "Relate friction to reaction",
+          "narration": "The coefficient of kinetic friction is the friction force per unit of normal reaction."
+        },
+        {
+          "n": 3,
+          "display": "μ = \\frac{500}{1000} = 0.5 (option A)",
+          "tag": "calculate the coefficient",
+          "title": "Calculate the coefficient",
+          "narration": "Divide the friction force by the normal reaction. The newton units cancel."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 100 kg, F_{push} = 500 N, g = 10 m/s²",
+          "tag": "read the forces and motion",
+          "title": "Read the forces and motion",
+          "narration": "The box moves at uniform velocity. Its acceleration is zero, so the forces balance in both directions."
+        },
+        {
+          "n": 2,
+          "display": "F_{friction} = F_{push} = 500 N",
+          "tag": "find the friction force",
+          "title": "Find the friction force",
+          "narration": "For a horizontal push on a level road, friction must cancel the push to keep the speed and direction constant."
+        },
+        {
+          "n": 3,
+          "display": "R = mg = 100 × 10 = 1000 N",
+          "tag": "find the normal reaction",
+          "title": "Find the normal reaction",
+          "narration": "The road supports the box vertically. With no vertical push, the normal reaction balances its weight."
+        },
+        {
+          "n": 4,
+          "display": "F_{friction} = μR",
+          "tag": "relate friction to reaction",
+          "title": "Relate friction to reaction",
+          "narration": "The coefficient of kinetic friction is the friction force per unit of normal reaction."
+        },
+        {
+          "n": 5,
+          "display": "μ = \\frac{500}{1000} = 0.5 (option A)",
+          "tag": "calculate the coefficient",
+          "title": "Calculate the coefficient",
+          "narration": "Divide the friction force by the normal reaction. The newton units cancel."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-015",
+      "questionId": "phys-jamb-2008-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x = \\frac{5}{100} = 0.05 m",
+          "tag": "convert the compression",
+          "title": "Convert the compression",
+          "narration": "Use metres because the spring constant is measured in newtons per metre."
+        },
+        {
+          "n": 2,
+          "display": "E = \\frac{1}{2}kx^{2}",
+          "tag": "use the elastic energy formula",
+          "title": "Use the elastic energy formula",
+          "narration": "The force increases from zero as the spring compresses. The work done is the area of the triangle under the force-compression graph."
+        },
+        {
+          "n": 3,
+          "display": "E = \\frac{1}{2} × 500 × 0.0025 = 0.625 J (option A)",
+          "tag": "calculate the stored energy",
+          "title": "Calculate the stored energy",
+          "narration": "Multiply half the spring constant by the squared compression. The spring stores zero point six two five joules."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "k = 500 N/m, x = 5 cm",
+          "tag": "read the spring data",
+          "title": "Read the spring data",
+          "narration": "The five centimetres is how far the spring is compressed from its natural length. That change in length determines the elastic energy."
+        },
+        {
+          "n": 2,
+          "display": "x = \\frac{5}{100} = 0.05 m",
+          "tag": "convert the compression",
+          "title": "Convert the compression",
+          "narration": "Use metres because the spring constant is measured in newtons per metre."
+        },
+        {
+          "n": 3,
+          "display": "E = \\frac{1}{2}kx^{2}",
+          "tag": "use the elastic energy formula",
+          "title": "Use the elastic energy formula",
+          "narration": "The force increases from zero as the spring compresses. The work done is the area of the triangle under the force-compression graph."
+        },
+        {
+          "n": 4,
+          "display": "x^{2} = (0.05)^{2} = 0.0025 m^{2}",
+          "tag": "square the compression",
+          "title": "Square the compression",
+          "narration": "Square the compression in metres before multiplying by the spring constant."
+        },
+        {
+          "n": 5,
+          "display": "E = \\frac{1}{2} × 500 × 0.0025 = 0.625 J (option A)",
+          "tag": "calculate the stored energy",
+          "title": "Calculate the stored energy",
+          "narration": "Multiply half the spring constant by the squared compression. The spring stores zero point six two five joules."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-015",
+      "questionId": "phys-jamb-2009-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = kx ⇒ k = \\frac{ΔF}{Δx}",
+          "tag": "link the slope to hooke's law",
+          "title": "Link the slope to Hooke's law",
+          "narration": "The force is proportional to extension on the straight part of the graph, so the gradient is the spring constant."
+        },
+        {
+          "n": 2,
+          "display": "ΔF = 120 N, Δx = 6 m",
+          "tag": "find rise and run",
+          "title": "Find rise and run",
+          "narration": "Subtract the first reading from the second on each axis. We can use the two marked points without needing the intermediate readings."
+        },
+        {
+          "n": 3,
+          "display": "k = \\frac{120}{6} = 20 N/m (option A)",
+          "tag": "calculate the spring constant",
+          "title": "Calculate the spring constant",
+          "narration": "The force increases by twenty newtons for each metre of extension."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "(0, 0) and (6, 120)",
+          "tag": "read two points from the graph",
+          "title": "Read two points from the graph",
+          "narration": "The origin sits where both axes read zero. The rightmost marked point lines up with six metres on the extension axis and one hundred and twenty newtons on the force axis."
+        },
+        {
+          "n": 2,
+          "display": "F = kx ⇒ k = \\frac{ΔF}{Δx}",
+          "tag": "link the slope to hooke's law",
+          "title": "Link the slope to Hooke's law",
+          "narration": "The force is proportional to extension on the straight part of the graph, so the gradient is the spring constant."
+        },
+        {
+          "n": 3,
+          "display": "ΔF = 120 N, Δx = 6 m",
+          "tag": "find rise and run",
+          "title": "Find rise and run",
+          "narration": "Subtract the first reading from the second on each axis. We can use the two marked points without needing the intermediate readings."
+        },
+        {
+          "n": 4,
+          "display": "k = \\frac{120}{6} = 20 N/m (option A)",
+          "tag": "calculate the spring constant",
+          "title": "Calculate the spring constant",
+          "narration": "The force increases by twenty newtons for each metre of extension."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2005-046",
+      "questionId": "phys-jamb-2005-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = ρV",
+          "tag": "convert density to mass",
+          "title": "Convert density to mass",
+          "narration": "Density is mass per unit volume. Multiplying by volume gives the mass of each sample."
+        },
+        {
+          "n": 2,
+          "display": "m_{total} = 200 × 3 + 150 × 7 = 1650 kg",
+          "tag": "find and add the masses",
+          "title": "Find and add the masses",
+          "narration": "Liquid W contributes six hundred kilograms, and liquid L contributes one thousand and fifty kilograms."
+        },
+        {
+          "n": 3,
+          "display": "ρ = \\frac{1650}{10} = 165 kg/m³ (option B)",
+          "tag": "calculate mixture density",
+          "title": "Calculate mixture density",
+          "narration": "Divide total mass by total volume. This gives one hundred and sixty-five kilograms per cubic metre."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{W} = 3 m^{3}, V_{L} = 7 m^{3}",
+          "tag": "read both liquid samples",
+          "title": "Read both liquid samples",
+          "narration": "The liquids occupy different volumes and have different densities. Find each mass before adding them."
+        },
+        {
+          "n": 2,
+          "display": "m = ρV",
+          "tag": "convert density to mass",
+          "title": "Convert density to mass",
+          "narration": "Density is mass per unit volume. Multiplying by volume gives the mass of each sample."
+        },
+        {
+          "n": 3,
+          "display": "m_{total} = 200 × 3 + 150 × 7 = 1650 kg",
+          "tag": "find and add the masses",
+          "title": "Find and add the masses",
+          "narration": "Liquid W contributes six hundred kilograms, and liquid L contributes one thousand and fifty kilograms."
+        },
+        {
+          "n": 4,
+          "display": "V_{total} = 3 + 7 = 10 m^{3}",
+          "tag": "find the total volume",
+          "title": "Find the total volume",
+          "narration": "Use the usual question assumption that the volumes add when the liquids are mixed."
+        },
+        {
+          "n": 5,
+          "display": "ρ = \\frac{1650}{10} = 165 kg/m³ (option B)",
+          "tag": "calculate mixture density",
+          "title": "Calculate mixture density",
+          "narration": "Divide total mass by total volume. This gives one hundred and sixty-five kilograms per cubic metre."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-017",
+      "questionId": "phys-jamb-2009-017",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "1000 × 0.50Vg = ρ_{g} × 0.40Vg",
+          "tag": "equate the upthrusts",
+          "title": "Equate the upthrusts",
+          "narration": "In each liquid, the upthrust equals the sphere's unchanged weight. Use the weight of the displaced liquid for each upthrust."
+        },
+        {
+          "n": 2,
+          "display": "1000 × 0.50 = ρ_{g} × 0.40",
+          "tag": "cancel the common factors",
+          "title": "Cancel the common factors",
+          "narration": "Both expressions contain the total sphere volume and the same acceleration due to gravity, so neither value has to be known."
+        },
+        {
+          "n": 3,
+          "display": "ρ_{g} = \\frac{500}{0.40} = 1250 kg/m³ (option B)",
+          "tag": "find the density",
+          "title": "Find the density",
+          "narration": "Five hundred divided by zero point four gives one thousand two hundred and fifty kilograms per cubic metre."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Water: 50%, glycerine: 40%",
+          "tag": "read the submerged fractions",
+          "title": "Read the submerged fractions",
+          "narration": "The same sphere floats in both liquids. It displaces half its volume in water and four tenths of its volume in glycerine."
+        },
+        {
+          "n": 2,
+          "display": "1000 × 0.50Vg = ρ_{g} × 0.40Vg",
+          "tag": "equate the upthrusts",
+          "title": "Equate the upthrusts",
+          "narration": "In each liquid, the upthrust equals the sphere's unchanged weight. Use the weight of the displaced liquid for each upthrust."
+        },
+        {
+          "n": 3,
+          "display": "1000 × 0.50 = ρ_{g} × 0.40",
+          "tag": "cancel the common factors",
+          "title": "Cancel the common factors",
+          "narration": "Both expressions contain the total sphere volume and the same acceleration due to gravity, so neither value has to be known."
+        },
+        {
+          "n": 4,
+          "display": "ρ_{g} = \\frac{1000 × 0.50}{0.40}",
+          "tag": "isolate glycerine density",
+          "title": "Isolate glycerine density",
+          "narration": "Divide by the submerged fraction in glycerine. It must be denser because a smaller volume supports the same weight."
+        },
+        {
+          "n": 5,
+          "display": "ρ_{g} = \\frac{500}{0.40} = 1250 kg/m³ (option B)",
+          "tag": "find the density",
+          "title": "Find the density",
+          "narration": "Five hundred divided by zero point four gives one thousand two hundred and fifty kilograms per cubic metre."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-015",
+      "questionId": "phys-jamb-2013-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ρ_{a}V_{a} = ρ_{p}V_{p}",
+          "tag": "equate the masses",
+          "title": "Equate the masses",
+          "narration": "For each liquid, density times volume gives mass. Equal masses let us set the two products equal."
+        },
+        {
+          "n": 2,
+          "display": "V_{a} = \\frac{ρ_{p}}{ρ_{a}}V_{p}",
+          "tag": "rearrange for alcohol volume",
+          "title": "Rearrange for alcohol volume",
+          "narration": "Alcohol is denser than petrol, so we expect the same mass to occupy a smaller volume of alcohol."
+        },
+        {
+          "n": 3,
+          "display": "V_{a} = \\frac{7.2}{8.4} × 4.2",
+          "tag": "substitute the densities",
+          "title": "Substitute the densities",
+          "narration": "Both densities are expressed in kilograms per cubic metre and have the same factor of ten squared. That factor cancels in the ratio."
+        },
+        {
+          "n": 4,
+          "display": "V_{a} = 3.6 m^{3} (option C)",
+          "tag": "calculate the volume",
+          "title": "Calculate the volume",
+          "narration": "Four point two is half of eight point four, leaving half of seven point two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{p} = 4.2 m^{3}",
+          "tag": "identify the known volume",
+          "title": "Identify the known volume",
+          "narration": "The given volume is petrol. We need a volume of alcohol with the same mass."
+        },
+        {
+          "n": 2,
+          "display": "ρ_{a}V_{a} = ρ_{p}V_{p}",
+          "tag": "equate the masses",
+          "title": "Equate the masses",
+          "narration": "For each liquid, density times volume gives mass. Equal masses let us set the two products equal."
+        },
+        {
+          "n": 3,
+          "display": "V_{a} = \\frac{ρ_{p}}{ρ_{a}}V_{p}",
+          "tag": "rearrange for alcohol volume",
+          "title": "Rearrange for alcohol volume",
+          "narration": "Alcohol is denser than petrol, so we expect the same mass to occupy a smaller volume of alcohol."
+        },
+        {
+          "n": 4,
+          "display": "V_{a} = \\frac{7.2}{8.4} × 4.2",
+          "tag": "substitute the densities",
+          "title": "Substitute the densities",
+          "narration": "Both densities are expressed in kilograms per cubic metre and have the same factor of ten squared. That factor cancels in the ratio."
+        },
+        {
+          "n": 5,
+          "display": "V_{a} = 3.6 m^{3} (option C)",
+          "tag": "calculate the volume",
+          "title": "Calculate the volume",
+          "narration": "Four point two is half of eight point four, leaving half of seven point two."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1991-015",
+      "questionId": "phys-jamb-1991-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{C − 0}{100 − 0} = \\frac{60 − (−30)}{90 − (−30)}",
+          "tag": "write the calibration ratio",
+          "title": "Write the calibration ratio",
+          "narration": "Subtract the ice point from each reading and divide by the full span. Zero degrees on the S scale is not the ice point."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{90}{120} = 0.75",
+          "tag": "find the fraction",
+          "title": "Find the fraction",
+          "narration": "The reading sits ninety scale degrees above the ice point in a span of one hundred and twenty."
+        },
+        {
+          "n": 3,
+          "display": "C = 75.0°C (option D)",
+          "tag": "read the celsius result",
+          "title": "Read the Celsius result",
+          "narration": "Three quarters of the Celsius span above zero is seventy-five degrees Celsius."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "S_{ice} = −30°S, S_{steam} = 90°S, S = 60°S",
+          "tag": "read the thermometer marks",
+          "title": "Read the thermometer marks",
+          "narration": "The scale has equal divisions, so a reading takes up the same fraction of the ice-to-steam interval on both scales."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{C − 0}{100 − 0} = \\frac{60 − (−30)}{90 − (−30)}",
+          "tag": "write the calibration ratio",
+          "title": "Write the calibration ratio",
+          "narration": "Subtract the ice point from each reading and divide by the full span. Zero degrees on the S scale is not the ice point."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{90}{120} = 0.75",
+          "tag": "find the fraction",
+          "title": "Find the fraction",
+          "narration": "The reading sits ninety scale degrees above the ice point in a span of one hundred and twenty."
+        },
+        {
+          "n": 4,
+          "display": "C = 0.75 × 100",
+          "tag": "apply the same fraction in celsius",
+          "title": "Apply the same fraction in Celsius",
+          "narration": "The Celsius span runs from zero to one hundred degrees, so multiply the fraction by one hundred."
+        },
+        {
+          "n": 5,
+          "display": "C = 75.0°C (option D)",
+          "tag": "read the celsius result",
+          "title": "Read the Celsius result",
+          "narration": "Three quarters of the Celsius span above zero is seventy-five degrees Celsius."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1995-023",
+      "questionId": "phys-jamb-1995-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{x − 40}{200 − 40} = \\frac{60}{100}",
+          "tag": "set up the calibration ratio",
+          "title": "Set up the calibration ratio",
+          "narration": "Sixty degrees Celsius is six tenths of the way from ice to steam. Take the same fraction of the length between the two fixed points."
+        },
+        {
+          "n": 2,
+          "display": "x − 40 = 0.60 × 160 = 96 mm",
+          "tag": "find the rise above the lower point",
+          "title": "Find the rise above the lower point",
+          "narration": "The full span is one hundred and sixty millimetres, so the reading is ninety-six millimetres above the lower point."
+        },
+        {
+          "n": 3,
+          "display": "x = 136.0 mm (option D)",
+          "tag": "report the scale reading",
+          "title": "Report the scale reading",
+          "narration": "Forty plus ninety-six gives one hundred and thirty-six millimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x_{ice} = 40 mm, x_{steam} = 200 mm",
+          "tag": "read both fixed points",
+          "title": "Read both fixed points",
+          "narration": "The lower fixed point is forty millimetres, and the upper is two hundred millimetres. The reading we want corresponds to sixty degrees Celsius."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{x − 40}{200 − 40} = \\frac{60}{100}",
+          "tag": "set up the calibration ratio",
+          "title": "Set up the calibration ratio",
+          "narration": "Sixty degrees Celsius is six tenths of the way from ice to steam. Take the same fraction of the length between the two fixed points."
+        },
+        {
+          "n": 3,
+          "display": "x − 40 = 0.60 × 160 = 96 mm",
+          "tag": "find the rise above the lower point",
+          "title": "Find the rise above the lower point",
+          "narration": "The full span is one hundred and sixty millimetres, so the reading is ninety-six millimetres above the lower point."
+        },
+        {
+          "n": 4,
+          "display": "x = 40 + 96",
+          "tag": "add the lower point back",
+          "title": "Add the lower point back",
+          "narration": "We found a distance from the lower point. Add its forty-millimetre reading to get the reading on the scale itself."
+        },
+        {
+          "n": 5,
+          "display": "x = 136.0 mm (option D)",
+          "tag": "report the scale reading",
+          "title": "Report the scale reading",
+          "narration": "Forty plus ninety-six gives one hundred and thirty-six millimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2014-020",
+      "questionId": "phys-jamb-2014-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "γ ≈ 3α = 3 × 9 × 10^{-6} K^{-1}",
+          "tag": "convert to volume expansivity",
+          "title": "Convert to volume expansivity",
+          "narration": "Glass expands in three directions. For a small uniform expansion, volume expansivity is approximately three times the linear value."
+        },
+        {
+          "n": 2,
+          "display": "ΔV = V_{0}γΔT",
+          "tag": "use the volume expansion formula",
+          "title": "Use the volume expansion formula",
+          "narration": "The expansion depends on the original volume, the fractional expansion per kelvin and the rise in temperature."
+        },
+        {
+          "n": 3,
+          "display": "ΔV = 20000 × 2.7 × 10^{-5} × 30 = 16.2 cm^{3}",
+          "tag": "calculate the increase",
+          "title": "Calculate the increase",
+          "narration": "The bottle gains sixteen point two cubic centimetres, a small increase compared with its initial volume."
+        },
+        {
+          "n": 4,
+          "display": "V = 20000 + 16.2 = 20016.2 cm^{3} (option D)",
+          "tag": "find the final volume",
+          "title": "Find the final volume",
+          "narration": "Add the increase to the initial volume because the question asks for the final volume."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{0} = 2 × 10^{4} cm^{3}, ΔT = 50 − 20 = 30 K",
+          "tag": "read the bottle data",
+          "title": "Read the bottle data",
+          "narration": "The temperature rises by thirty Celsius degrees, the same interval as thirty kelvin. The volume calculation can stay in cubic centimetres."
+        },
+        {
+          "n": 2,
+          "display": "γ ≈ 3α = 3 × 9 × 10^{-6} K^{-1}",
+          "tag": "convert to volume expansivity",
+          "title": "Convert to volume expansivity",
+          "narration": "Glass expands in three directions. For a small uniform expansion, volume expansivity is approximately three times the linear value."
+        },
+        {
+          "n": 3,
+          "display": "ΔV = V_{0}γΔT",
+          "tag": "use the volume expansion formula",
+          "title": "Use the volume expansion formula",
+          "narration": "The expansion depends on the original volume, the fractional expansion per kelvin and the rise in temperature."
+        },
+        {
+          "n": 4,
+          "display": "ΔV = 20000 × 2.7 × 10^{-5} × 30 = 16.2 cm^{3}",
+          "tag": "calculate the increase",
+          "title": "Calculate the increase",
+          "narration": "The bottle gains sixteen point two cubic centimetres, a small increase compared with its initial volume."
+        },
+        {
+          "n": 5,
+          "display": "V = 20000 + 16.2 = 20016.2 cm^{3} (option D)",
+          "tag": "find the final volume",
+          "title": "Find the final volume",
+          "narration": "Add the increase to the initial volume because the question asks for the final volume."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1998-019",
+      "questionId": "phys-jamb-1998-019",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 27 + 273 = 300 K",
+          "tag": "convert the starting temperature",
+          "title": "Convert the starting temperature",
+          "narration": "Use kelvin in a gas-law ratio because direct proportionality starts at absolute zero."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{V_{1}}{T_{1}} = \\frac{V_{2}}{T_{2}}",
+          "tag": "use charles's law",
+          "title": "Use Charles's law",
+          "narration": "At constant pressure, the volume of a fixed amount of gas is proportional to its absolute temperature."
+        },
+        {
+          "n": 3,
+          "display": "T_{2} = 300 × \\frac{120}{100} = 360 K",
+          "tag": "find the new absolute temperature",
+          "title": "Find the new absolute temperature",
+          "narration": "The final volume is one point two times the original, so the absolute temperature increases by that same factor."
+        },
+        {
+          "n": 4,
+          "display": "T = 360 − 273 = 87°C (option C)",
+          "tag": "convert the result to celsius",
+          "title": "Convert the result to Celsius",
+          "narration": "Subtract two hundred and seventy-three to express the final reading in the units of the options."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{1} = 100 cm^{3}, V_{2} = 120 cm^{3}",
+          "tag": "read the gas data",
+          "title": "Read the gas data",
+          "narration": "The gas expands at constant pressure. We can compare the two volumes directly because they use the same units."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = 27 + 273 = 300 K",
+          "tag": "convert the starting temperature",
+          "title": "Convert the starting temperature",
+          "narration": "Use kelvin in a gas-law ratio because direct proportionality starts at absolute zero."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{V_{1}}{T_{1}} = \\frac{V_{2}}{T_{2}}",
+          "tag": "use charles's law",
+          "title": "Use Charles's law",
+          "narration": "At constant pressure, the volume of a fixed amount of gas is proportional to its absolute temperature."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = 300 × \\frac{120}{100} = 360 K",
+          "tag": "find the new absolute temperature",
+          "title": "Find the new absolute temperature",
+          "narration": "The final volume is one point two times the original, so the absolute temperature increases by that same factor."
+        },
+        {
+          "n": 5,
+          "display": "T = 360 − 273 = 87°C (option C)",
+          "tag": "convert the result to celsius",
+          "title": "Convert the result to Celsius",
+          "narration": "Subtract two hundred and seventy-three to express the final reading in the units of the options."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2001-016",
+      "questionId": "phys-jamb-2001-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 400 K, T_{2} = 200 K",
+          "tag": "convert both temperatures",
+          "title": "Convert both temperatures",
+          "narration": "Add two hundred and seventy-three to one hundred and twenty-seven and to minus seventy-three. Gas laws use absolute temperatures."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{P_{1}}{P_{2}} × \\frac{T_{2}}{T_{1}}",
+          "tag": "rearrange the combined gas law",
+          "title": "Rearrange the combined gas law",
+          "narration": "For a fixed amount of gas, pressure times volume divided by absolute temperature stays constant. Lower pressure increases volume and lower temperature decreases it."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{5}{2} × \\frac{1}{2} = \\frac{5}{4} (option B)",
+          "tag": "give the final-to-initial ratio",
+          "title": "Give the final-to-initial ratio",
+          "narration": "The final volume is five quarters of the starting volume. The ratio in the order asked is five to four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P_{1} = 300 N/m², P_{2} = 120 N/m²",
+          "tag": "read the two states",
+          "title": "Read the two states",
+          "narration": "The gas pressure and temperature both change. We want the final volume compared with the starting volume."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = 400 K, T_{2} = 200 K",
+          "tag": "convert both temperatures",
+          "title": "Convert both temperatures",
+          "narration": "Add two hundred and seventy-three to one hundred and twenty-seven and to minus seventy-three. Gas laws use absolute temperatures."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{P_{1}}{P_{2}} × \\frac{T_{2}}{T_{1}}",
+          "tag": "rearrange the combined gas law",
+          "title": "Rearrange the combined gas law",
+          "narration": "For a fixed amount of gas, pressure times volume divided by absolute temperature stays constant. Lower pressure increases volume and lower temperature decreases it."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{300}{120} × \\frac{200}{400}",
+          "tag": "substitute the two ratios",
+          "title": "Substitute the two ratios",
+          "narration": "The new pressure is lower, making the first factor larger than one. The new temperature is half the old value."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{V_{2}}{V_{1}} = \\frac{5}{2} × \\frac{1}{2} = \\frac{5}{4} (option B)",
+          "tag": "give the final-to-initial ratio",
+          "title": "Give the final-to-initial ratio",
+          "narration": "The final volume is five quarters of the starting volume. The ratio in the order asked is five to four."
+        }
+      ]
+    }
+  ]
+}
