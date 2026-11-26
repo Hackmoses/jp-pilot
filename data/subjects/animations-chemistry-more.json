@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 10,
+  "count": 20,
   "animations": [
     {
       "id": "anim-chem-jamb-2010-005",
@@ -666,6 +666,708 @@
           "tag": "calculate charge",
           "title": "Calculate charge",
           "narration": "Multiply zero point three one two five moles of electrons by ninety-six thousand five hundred coulombs per mole to get thirty thousand one hundred and fifty-six point three coulombs."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2014-047",
+      "questionId": "chem-jamb-2014-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "M_{r} = 2 × 39 = 78",
+          "tag": "find molecular mass",
+          "title": "Find molecular mass",
+          "narration": "Double the vapour density of thirty-nine to get a molecular mass of seventy-eight."
+        },
+        {
+          "n": 2,
+          "display": "CH = 12 + 1 = 13",
+          "tag": "find empirical mass",
+          "title": "Find empirical mass",
+          "narration": "Add twelve and one to get thirteen for one CH empirical unit."
+        },
+        {
+          "n": 3,
+          "display": "n = \\\\frac{78}{13} = 6 → C_{6}H_{6}",
+          "tag": "scale to molecular formula",
+          "title": "Scale to molecular formula",
+          "narration": "Divide seventy-eight by thirteen to get six, giving C6H6."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "EF = CH, VD = 39",
+          "tag": "list given values",
+          "title": "List given values",
+          "narration": "Write down the empirical formula CH and the vapour density of thirty-nine relative to hydrogen."
+        },
+        {
+          "n": 2,
+          "display": "M_{r} = 2 × VD = 2 × 39 = 78",
+          "tag": "find molecular mass",
+          "title": "Find molecular mass",
+          "narration": "Relative molecular mass is twice vapour density because a hydrogen molecule contains two atoms and has molar mass two."
+        },
+        {
+          "n": 3,
+          "display": "Mass(CH) = 12 + 1 = 13",
+          "tag": "find empirical mass",
+          "title": "Find empirical mass",
+          "narration": "Add carbon at twelve and hydrogen at one to find the mass of one CH empirical unit."
+        },
+        {
+          "n": 4,
+          "display": "n = \\\\frac{78}{13} = 6",
+          "tag": "find unit multiplier",
+          "title": "Find unit multiplier",
+          "narration": "Divide the molecular mass seventy-eight by thirteen to find how many CH units make one molecule."
+        },
+        {
+          "n": 5,
+          "display": "(CH)_{6} = C_{6}H_{6}",
+          "tag": "write molecular formula",
+          "title": "Write molecular formula",
+          "narration": "Multiply both subscripts in CH by six to get the molecular formula, C6H6."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2015-011",
+      "questionId": "chem-jamb-2015-011",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Cl^{−} → −1",
+          "tag": "read chloride charge",
+          "title": "Read chloride charge",
+          "narration": "Chloride is a single ion with charge minus one."
+        },
+        {
+          "n": 2,
+          "display": "ClO_{4}^{−}: x + 4(−2) = −1",
+          "tag": "sum oxidation numbers",
+          "title": "Sum oxidation numbers",
+          "narration": "In perchlorate, chlorine plus four oxygens at minus two equals minus one."
+        },
+        {
+          "n": 3,
+          "display": "x = +7 → −1 and +7",
+          "tag": "solve for chlorine",
+          "title": "Solve for chlorine",
+          "narration": "Solving gives plus seven, so the oxidation numbers are minus one and plus seven."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Cl^{−} and ClO_{4}^{−}",
+          "tag": "write ion formulas",
+          "title": "Write ion formulas",
+          "narration": "Write the formulas of chloride ion and perchlorate ion so we can inspect their charges and oxygen count."
+        },
+        {
+          "n": 2,
+          "display": "Cl^{−}: oxidation number = −1",
+          "tag": "find chloride state",
+          "title": "Find chloride state",
+          "narration": "For a single-atom ion, the oxidation number equals its charge, so chlorine in chloride is minus one."
+        },
+        {
+          "n": 3,
+          "display": "ClO_{4}^{−}: x + 4(−2) = −1",
+          "tag": "set up perchlorate sum",
+          "title": "Set up perchlorate sum",
+          "narration": "In a polyatomic ion, all oxidation numbers add up to the ion charge of minus one, and each oxygen takes minus two."
+        },
+        {
+          "n": 4,
+          "display": "x − 8 = −1 → x = +7",
+          "tag": "solve for chlorine",
+          "title": "Solve for chlorine",
+          "narration": "Four oxygens contribute minus eight, so add eight to minus one to get plus seven for chlorine."
+        },
+        {
+          "n": 5,
+          "display": "−1 and +7",
+          "tag": "state both values",
+          "title": "State both values",
+          "narration": "In order, the oxidation numbers of chlorine in chloride and perchlorate are minus one and plus seven."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2015-020",
+      "questionId": "chem-jamb-2015-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "H_{2}SO_{4} + 2NaOH → Na_{2}SO_{4} + 2H_{2}O",
+          "tag": "balance equation",
+          "title": "Balance equation",
+          "narration": "One mole of sulfuric acid neutralizes two moles of sodium hydroxide."
+        },
+        {
+          "n": 2,
+          "display": "\\\\frac{C_{A}V_{A}}{C_{B}V_{B}} = \\\\frac{1}{2}",
+          "tag": "apply mole ratio",
+          "title": "Apply mole ratio",
+          "narration": "Use the acid-to-base mole ratio of one to two."
+        },
+        {
+          "n": 3,
+          "display": "C_{A} = \\\\frac{0.125 × 25.00}{2 × 15.00}",
+          "tag": "substitute values",
+          "title": "Substitute values",
+          "narration": "Multiply zero point one two five by twenty-five and divide by two times fifteen."
+        },
+        {
+          "n": 4,
+          "display": "C_{A} ≈ 0.104 mol/dm^{3}",
+          "tag": "calculate molarity",
+          "title": "Calculate molarity",
+          "narration": "Three point one two five divided by thirty gives zero point one zero four moles per cubic decimetre."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{A} = 15.00 cm^{3}, V_{B} = 25.00 cm^{3}, C_{B} = 0.125 mol/dm^{3}",
+          "tag": "list given values",
+          "title": "List given values",
+          "narration": "Write down the acid volume and the base volume and concentration. Both volumes are in cubic centimetres, so their units cancel in a ratio."
+        },
+        {
+          "n": 2,
+          "display": "H_{2}SO_{4} + 2NaOH → Na_{2}SO_{4} + 2H_{2}O",
+          "tag": "balance neutralization",
+          "title": "Balance neutralization",
+          "narration": "Write the balanced equation first because each tetraoxosulfate six acid molecule supplies two hydrogen ions and needs two sodium hydroxide units."
+        },
+        {
+          "n": 3,
+          "display": "\\\\frac{C_{A}V_{A}}{C_{B}V_{B}} = \\\\frac{1}{2}",
+          "tag": "state titration formula",
+          "title": "State titration formula",
+          "narration": "Use the titration relation linking concentration, volume, and the balanced one-to-two mole ratio."
+        },
+        {
+          "n": 4,
+          "display": "C_{A} = \\\\frac{0.125 × 25.00}{2 × 15.00}",
+          "tag": "rearrange and substitute",
+          "title": "Rearrange and substitute",
+          "narration": "Solve for acid concentration and put in zero point one two five, twenty-five point zero zero, and fifteen point zero zero."
+        },
+        {
+          "n": 5,
+          "display": "C_{A} = \\\\frac{3.125}{30.00}",
+          "tag": "simplify numerator",
+          "title": "Simplify numerator",
+          "narration": "Multiply zero point one two five by twenty-five to get three point one two five, and two by fifteen to get thirty."
+        },
+        {
+          "n": 6,
+          "display": "C_{A} ≈ 0.104 mol/dm^{3}",
+          "tag": "calculate concentration",
+          "title": "Calculate concentration",
+          "narration": "Divide three point one two five by thirty to get zero point one zero four moles per cubic decimetre."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2016-023",
+      "questionId": "chem-jamb-2016-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "n(Mg) = \\\\frac{24}{24} = 1 mol",
+          "tag": "find moles of Mg",
+          "title": "Find moles of Mg",
+          "narration": "Twenty-four grams of magnesium is one mole of atoms."
+        },
+        {
+          "n": 2,
+          "display": "M(O_{2}) = 2 × 16 = 32 g/mol",
+          "tag": "find molar mass",
+          "title": "Find molar mass",
+          "narration": "One mole of oxygen molecules has a mass of thirty-two grams."
+        },
+        {
+          "n": 3,
+          "display": "n(O_{2}) = \\\\frac{32}{32} = 1 mol → 32 g of O_{2}",
+          "tag": "match one mole",
+          "title": "Match one mole",
+          "narration": "Equal moles contain equal particle counts, so thirty-two grams of oxygen matches."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "n(Mg) = \\\\frac{24}{24} = 1 mol",
+          "tag": "find magnesium moles",
+          "title": "Find magnesium moles",
+          "narration": "Divide twenty-four grams of magnesium by its atomic mass of twenty-four because equal moles contain equal numbers of particles."
+        },
+        {
+          "n": 2,
+          "display": "1 mol = 6.02 × 10^{23} particles",
+          "tag": "link moles to count",
+          "title": "Link moles to count",
+          "narration": "We need a sample with one full mole of molecules so its particle count equals one mole of magnesium atoms."
+        },
+        {
+          "n": 3,
+          "display": "M(H_{2}) = 2, M(O_{2}) = 32, M(Cl_{2}) = 71",
+          "tag": "find gas molar masses",
+          "title": "Find gas molar masses",
+          "narration": "Hydrogen, oxygen, and chlorine exist as two-atom molecules, so double each atomic mass to get the molecular molar mass."
+        },
+        {
+          "n": 4,
+          "display": "1 g H_{2}, 16 g O_{2}, 35.5 g Cl_{2} = 0.5 mol",
+          "tag": "check half-mole samples",
+          "title": "Check half-mole samples",
+          "narration": "One gram of hydrogen, sixteen grams of oxygen, and thirty-five point five grams of chlorine each give only half a mole."
+        },
+        {
+          "n": 5,
+          "display": "n(O_{2}) = \\\\frac{32}{32} = 1 mol → 32 g of O_{2}",
+          "tag": "confirm one mole",
+          "title": "Confirm one mole",
+          "narration": "Thirty-two grams of oxygen divided by thirty-two grams per mole equals one mole, so thirty-two grams of oxygen has the same particle count."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2016-038",
+      "questionId": "chem-jamb-2016-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 291 K, T_{2} = 273 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Add two hundred and seventy-three to eighteen and zero to get two hundred and ninety-one kelvin and two hundred and seventy-three kelvin."
+        },
+        {
+          "n": 2,
+          "display": "V_{2} = V_{1} × \\\\frac{P_{1}}{P_{2}} × \\\\frac{T_{2}}{T_{1}}",
+          "tag": "use combined gas law",
+          "title": "Use combined gas law",
+          "narration": "Rearrange the combined gas law to solve for the new volume."
+        },
+        {
+          "n": 3,
+          "display": "V_{2} = 146 × \\\\frac{0.971}{1} × \\\\frac{273}{291}",
+          "tag": "substitute values",
+          "title": "Substitute values",
+          "narration": "Put in one hundred and forty-six, the pressures, and the kelvin temperatures."
+        },
+        {
+          "n": 4,
+          "display": "V_{2} ≈ 133 cm^{3}",
+          "tag": "calculate new volume",
+          "title": "Calculate new volume",
+          "narration": "Evaluating gives one hundred and thirty-three cubic centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{1} = 146 cm^{3}, P_{1} = 0.971 atm, P_{2} = 1 atm",
+          "tag": "list given values",
+          "title": "List given values",
+          "narration": "Write down the starting volume and pressures. Both cooling the gas and raising the pressure will reduce its volume."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = 18 + 273 = 291 K, T_{2} = 273 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Add two hundred and seventy-three to each Celsius temperature because gas law ratios only work on the absolute kelvin scale."
+        },
+        {
+          "n": 3,
+          "display": "V_{2} = V_{1} × \\\\frac{P_{1}}{P_{2}} × \\\\frac{T_{2}}{T_{1}}",
+          "tag": "state combined gas law",
+          "title": "State combined gas law",
+          "narration": "Use the combined gas law because volume, pressure, and temperature all change together for a fixed sample of gas."
+        },
+        {
+          "n": 4,
+          "display": "V_{2} = 146 × \\\\frac{0.971}{1} × \\\\frac{273}{291}",
+          "tag": "substitute into equation",
+          "title": "Substitute into equation",
+          "narration": "Substitute one hundred and forty-six cubic centimetres, the pressures in atmospheres, and the two kelvin temperatures."
+        },
+        {
+          "n": 5,
+          "display": "V_{2} ≈ 133 cm^{3}",
+          "tag": "calculate new volume",
+          "title": "Calculate new volume",
+          "narration": "Compute the product to get one hundred and thirty-three cubic centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2016-039",
+      "questionId": "chem-jamb-2016-039",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V(O_{2}) = \\\\frac{20}{100} × 150 = 30 cm^{3}",
+          "tag": "find available oxygen",
+          "title": "Find available oxygen",
+          "narration": "Twenty percent of one hundred and fifty cubic centimetres of air gives thirty cubic centimetres of oxygen."
+        },
+        {
+          "n": 2,
+          "display": "2CO + O_{2} → 2CO_{2}",
+          "tag": "balance the equation",
+          "title": "Balance the equation",
+          "narration": "Two volumes of carbon monoxide react with one volume of oxygen."
+        },
+        {
+          "n": 3,
+          "display": "50 cm^{3} CO needs 25 cm^{3} O_{2}",
+          "tag": "find oxygen needed",
+          "title": "Find oxygen needed",
+          "narration": "Fifty cubic centimetres of carbon monoxide needs twenty-five cubic centimetres of oxygen."
+        },
+        {
+          "n": 4,
+          "display": "30 > 25 → Oxygen",
+          "tag": "identify excess reactant",
+          "title": "Identify excess reactant",
+          "narration": "Thirty is more than twenty-five, so oxygen is in excess."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V(CO) = 50 cm^{3}, V(air) = 150 cm^{3}",
+          "tag": "list given volumes",
+          "title": "List given volumes",
+          "narration": "Write down fifty cubic centimetres of carbon monoxide and one hundred and fifty cubic centimetres of air containing twenty percent oxygen."
+        },
+        {
+          "n": 2,
+          "display": "V(O_{2}) = \\\\frac{20}{100} × 150 = 30 cm^{3}",
+          "tag": "find available oxygen",
+          "title": "Find available oxygen",
+          "narration": "Find the oxygen volume first. The remaining eighty percent of air is mostly unreactive nitrogen, which takes no part in the reaction."
+        },
+        {
+          "n": 3,
+          "display": "2CO + O_{2} → 2CO_{2}",
+          "tag": "write balanced equation",
+          "title": "Write balanced equation",
+          "narration": "By Gay-Lussac law, gas volume ratios match the balanced mole coefficients. Notice carbon dioxide is a product, not a starting reactant."
+        },
+        {
+          "n": 4,
+          "display": "V(O_{2} needed) = \\\\frac{50}{2} = 25 cm^{3}",
+          "tag": "find oxygen required",
+          "title": "Find oxygen required",
+          "narration": "Divide the carbon monoxide volume by two to see that twenty-five cubic centimetres of oxygen will consume all fifty of carbon monoxide."
+        },
+        {
+          "n": 5,
+          "display": "30 − 25 = 5 cm^{3} O_{2} left",
+          "tag": "compare available vs needed",
+          "title": "Compare available vs needed",
+          "narration": "Subtract twenty-five from thirty to find five cubic centimetres of oxygen left unused."
+        },
+        {
+          "n": 6,
+          "display": "Excess reactant = Oxygen",
+          "tag": "state excess reactant",
+          "title": "State excess reactant",
+          "narration": "Because oxygen still has five cubic centimetres remaining after reaction, oxygen is in excess."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2016-040",
+      "questionId": "chem-jamb-2016-040",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Ethanoic acid = C_{2}H_{4}O_{2}",
+          "tag": "write molecular formula",
+          "title": "Write molecular formula",
+          "narration": "One molecule of ethanoic acid contains two carbons, four hydrogens, and two oxygens."
+        },
+        {
+          "n": 2,
+          "display": "2 : 4 : 2 → 1 : 2 : 1",
+          "tag": "simplify atom ratio",
+          "title": "Simplify atom ratio",
+          "narration": "Divide all subscripts by two to get the simplest whole-number ratio."
+        },
+        {
+          "n": 3,
+          "display": "CH_{2}O = Empirical formula",
+          "tag": "identify formula type",
+          "title": "Identify formula type",
+          "narration": "CH2O shows the simplest ratio, so it is the empirical formula."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "CH_{3}COOH = C_{2}H_{4}O_{2}",
+          "tag": "count total atoms",
+          "title": "Count total atoms",
+          "narration": "Combine the atoms in ethanoic acid to write its molecular formula, C2H4O2, which shows the true number of atoms per molecule."
+        },
+        {
+          "n": 2,
+          "display": "\\\\frac{2}{2} : \\\\frac{4}{2} : \\\\frac{2}{2} = 1 : 2 : 1",
+          "tag": "divide by common factor",
+          "title": "Divide by common factor",
+          "narration": "Divide two, four, and two by their greatest common factor of two to reduce the atom counts to the smallest whole numbers."
+        },
+        {
+          "n": 3,
+          "display": "Simplest ratio = CH_{2}O",
+          "tag": "write simplest formula",
+          "title": "Write simplest formula",
+          "narration": "This reduced formula, CH2O, shows only the simplest whole-number ratio of elements, not the actual molecular size."
+        },
+        {
+          "n": 4,
+          "display": "Empirical formula",
+          "tag": "name the formula type",
+          "title": "Name the formula type",
+          "narration": "By definition, the formula showing the simplest whole-number ratio of atoms in a compound is its empirical formula."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2017-004",
+      "questionId": "chem-jamb-2017-004",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Sample 1: \\\\frac{0.36}{0.20} = 1.80",
+          "tag": "find first ratio",
+          "title": "Find first ratio",
+          "narration": "Divide zero point three six by zero point two zero to get one point eight zero."
+        },
+        {
+          "n": 2,
+          "display": "Sample 2: \\\\frac{0.71}{0.40} ≈ 1.8",
+          "tag": "find second ratio",
+          "title": "Find second ratio",
+          "narration": "Divide zero point seven one by zero point four zero to get about one point eight."
+        },
+        {
+          "n": 3,
+          "display": "Same ratio → Constant composition",
+          "tag": "identify the law",
+          "title": "Identify the law",
+          "narration": "Equal mass ratios in different samples show the law of constant composition."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Sample 1: 0.36 g Cl, 0.20 g metal",
+          "tag": "check first sample",
+          "title": "Check first sample",
+          "narration": "Start by dividing chlorine mass by metal mass in the first sample to see its fixed proportion."
+        },
+        {
+          "n": 2,
+          "display": "Ratio 1 = \\\\frac{0.36}{0.20} = 1.80",
+          "tag": "compute first ratio",
+          "title": "Compute first ratio",
+          "narration": "Zero point three six divided by zero point two zero equals one point eight zero grams of chlorine per gram of metal."
+        },
+        {
+          "n": 3,
+          "display": "Ratio 2 = \\\\frac{0.71}{0.40} = 1.775 ≈ 1.8",
+          "tag": "compute second ratio",
+          "title": "Compute second ratio",
+          "narration": "In the second sample, zero point seven one divided by zero point four zero is one point seven seven five, which rounds to one point eight."
+        },
+        {
+          "n": 4,
+          "display": "Constant composition",
+          "tag": "name the law",
+          "title": "Name the law",
+          "narration": "Because both samples have the same element mass ratio to two significant figures, they obey the law of constant composition."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2017-016",
+      "questionId": "chem-jamb-2017-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Q = 10 × 4,830 = 48,300 C",
+          "tag": "find total charge",
+          "title": "Find total charge",
+          "narration": "Multiply ten amperes by four thousand eight hundred and thirty seconds."
+        },
+        {
+          "n": 2,
+          "display": "n(e^{−}) = \\\\frac{48,300}{96,500} ≈ 0.50 mol",
+          "tag": "find electron moles",
+          "title": "Find electron moles",
+          "narration": "Divide by ninety-six thousand five hundred to get about half a mole of electrons."
+        },
+        {
+          "n": 3,
+          "display": "Ag^{+} + e^{−} → Ag",
+          "tag": "check silver ratio",
+          "title": "Check silver ratio",
+          "narration": "One mole of electrons deposits one mole of silver."
+        },
+        {
+          "n": 4,
+          "display": "m ≈ 108 × 0.50 = 54.0 g",
+          "tag": "calculate silver mass",
+          "title": "Calculate silver mass",
+          "narration": "Multiply one hundred and eight by zero point five zero to get fifty-four point zero grams."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I = 10 A, t = 4,830 s, Ag = 108",
+          "tag": "list given values",
+          "title": "List given values",
+          "narration": "Write down the current, the time in seconds, and silver atomic mass of one hundred and eight."
+        },
+        {
+          "n": 2,
+          "display": "Q = It = 10 × 4,830 = 48,300 C",
+          "tag": "calculate charge",
+          "title": "Calculate charge",
+          "narration": "Multiply current by time because electric charge equals amperes times seconds, giving forty-eight thousand three hundred coulombs."
+        },
+        {
+          "n": 3,
+          "display": "Ag^{+} + e^{−} → Ag",
+          "tag": "write cathode equation",
+          "title": "Write cathode equation",
+          "narration": "A silver one ion has a plus one charge, so each silver atom deposited needs only one electron."
+        },
+        {
+          "n": 4,
+          "display": "m = \\\\frac{48,300}{96,500} × 108",
+          "tag": "use Faraday formula",
+          "title": "Use Faraday formula",
+          "narration": "Divide charge by ninety-six thousand five hundred to get moles of silver, then multiply by silver molar mass."
+        },
+        {
+          "n": 5,
+          "display": "\\\\frac{48,300}{96,500} ≈ 0.5005",
+          "tag": "estimate the fraction",
+          "title": "Estimate the fraction",
+          "narration": "Forty-eight thousand three hundred is almost exact half of ninety-six thousand five hundred, giving about zero point five zero zero five moles."
+        },
+        {
+          "n": 6,
+          "display": "m ≈ 54.1 g ≈ 54.0 g",
+          "tag": "find closest mass",
+          "title": "Find closest mass",
+          "narration": "Multiplying gives fifty-four point one grams, so the closest answer is fifty-four point zero grams."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2017-023",
+      "questionId": "chem-jamb-2017-023",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Cu^{2+} + 2e^{−} → Cu",
+          "tag": "check electron ratio",
+          "title": "Check electron ratio",
+          "narration": "Each copper two plus ion gains two electrons to become copper metal."
+        },
+        {
+          "n": 2,
+          "display": "2 mol e^{−} per 1 mol Cu",
+          "tag": "find electron moles",
+          "title": "Find electron moles",
+          "narration": "One mole of copper requires two moles of electrons."
+        },
+        {
+          "n": 3,
+          "display": "N = 2 × 6.02 × 10^{23}",
+          "tag": "multiply by Avogadro",
+          "title": "Multiply by Avogadro",
+          "narration": "Multiply two by Avogadro constant, six point zero two times ten to the twenty-three."
+        },
+        {
+          "n": 4,
+          "display": "N ≈ 1.2 × 10^{24}",
+          "tag": "write standard form",
+          "title": "Write standard form",
+          "narration": "Two times six point zero two times ten to the twenty-three rounds to one point two times ten to the twenty-four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "CuO → Cu (+2 to 0)",
+          "tag": "track copper state",
+          "title": "Track copper state",
+          "narration": "In copper two oxide, oxygen is minus two so copper starts at plus two, and ends at zero in metallic copper."
+        },
+        {
+          "n": 2,
+          "display": "Cu^{2+} + 2e^{−} → Cu",
+          "tag": "find electrons per copper",
+          "title": "Find electrons per copper",
+          "narration": "Each copper ion gains two electrons. Notice the coefficient three in the full equation means six moles of electrons for three moles of copper, which still simplifies to two per mole of copper."
+        },
+        {
+          "n": 3,
+          "display": "n(e^{−}) = 2 mol per mol Cu",
+          "tag": "state electron moles",
+          "title": "State electron moles",
+          "narration": "Therefore forming one mole of copper transfers two moles of electrons."
+        },
+        {
+          "n": 4,
+          "display": "N = 2 × 6.02 × 10^{23} = 12.04 × 10^{23}",
+          "tag": "convert to particles",
+          "title": "Convert to particles",
+          "narration": "Multiply two moles by Avogadro constant because each mole contains six point zero two times ten to the twenty-three electrons."
+        },
+        {
+          "n": 5,
+          "display": "N ≈ 1.2 × 10^{24}",
+          "tag": "write standard form",
+          "title": "Write standard form",
+          "narration": "Move the decimal point one place left and increase the exponent to twenty-four to get one point two times ten to the twenty-four."
         }
       ]
     }
