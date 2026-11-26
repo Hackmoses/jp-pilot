@@ -70,6 +70,22 @@ PROPER_NAME_WORDS = {"avogadro", "danfo", "jamb", "kelvin", "celsius", "hertz"}
 ROMAN_ELEMENTS = {"iron", "copper", "lead", "tin", "manganese", "chromium", "mercury", "cobalt", "nickel"}
 ROMAN_MAP = {"i": "one", "ii": "two", "iii": "three", "iv": "four", "v": "five", "vi": "six"}
 
+TTS_RESPELL_RULES: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(r"\bPeriod\b"), "Peeriud"),
+    (re.compile(r"\bperiod\b"), "peeriud"),
+    (re.compile(r"\bRarefaction\b"), "Rareifaction"),
+    (re.compile(r"\brarefaction\b"), "rareifaction"),
+    (re.compile(r"\bJAMB\b"), "Jamb"),
+]
+
+
+def apply_tts_respellings(text: str) -> str:
+    """Respell known TTS trouble words for Chatterbox input without altering displayed lesson text."""
+    out = text
+    for pattern, replacement in TTS_RESPELL_RULES:
+        out = pattern.sub(replacement, out)
+    return out
+
 
 def int_to_words(n: int) -> list[str]:
     if n < 0:
@@ -372,8 +388,8 @@ def trim_silence(
     arr: np.ndarray,
     sr: int,
     threshold_db: float = -38.0,
-    lead_ms: int = 50,
-    trail_ms: int = 80,
+    lead_ms: int = 35,
+    trail_ms: int = 35,
 ) -> np.ndarray:
     if arr.size == 0:
         return arr
@@ -464,6 +480,18 @@ def encode_opus_webm(wav_path: Path, webm_path: Path) -> None:
     subprocess.run(cmd, check=True, capture_output=True, text=True)
 
 
+def unique_failed_path(failed_dir: Path, name: str) -> Path:
+    cand = failed_dir / name
+    if not cand.exists():
+        return cand
+    stem = cand.stem
+    suffix = cand.suffix
+    idx = 2
+    while (failed_dir / f"{stem}-v{idx}{suffix}").exists():
+        idx += 1
+    return failed_dir / f"{stem}-v{idx}{suffix}"
+
+
 def atomic_write_json(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -543,18 +571,23 @@ def load_all_scenes() -> list[dict]:
     return scenes
 
 
-def build_manifest(all_scenes: list[dict], scenes_state: dict[str, dict]) -> dict:
+def build_manifest(
+    all_scenes: list[dict],
+    scenes_state: dict[str, dict],
+    existing_entries: dict[str, dict] | None = None,
+) -> dict:
     entries: list[dict] = []
     for sc in all_scenes:
         sid = sc["id"]
         st = scenes_state.get(sid)
-        if not st or not st.get("done"):
-            continue
-        entries.append({
-            "sceneId": sid,
-            "durationMs": st["durationMs"],
-            "beats": st["beats"],
-        })
+        if st and st.get("done"):
+            entries.append({
+                "sceneId": sid,
+                "durationMs": st["durationMs"],
+                "beats": st["beats"],
+            })
+        elif existing_entries and sid in existing_entries:
+            entries.append(existing_entries[sid])
     return {"scenes": entries}
 
 
@@ -565,11 +598,15 @@ def main() -> int:
     parser.add_argument("--cfg-weight", type=float, default=0.4)
     parser.add_argument("--base-seed", type=int, default=42)
     parser.add_argument("--retry-seed", type=int, default=1337)
+    parser.add_argument("--extra-seeds", default="", help="Comma-separated additional fallback seeds if retry-seed fails")
     parser.add_argument("--state-dir", default="/tmp/jp-lessons-voice")
     parser.add_argument("--out-dir", default=str(DEFAULT_OUT_DIR))
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--scene", default="", help="Only process one scene ID")
+    parser.add_argument("--scenes", default="", help="Comma-separated list of scene IDs to process")
+    parser.add_argument("--lead-ms", type=int, default=35)
+    parser.add_argument("--trail-ms", type=int, default=35)
     args = parser.parse_args()
 
     ref_wav = Path(args.ref) if Path(args.ref).is_absolute() else ROOT / args.ref
@@ -579,9 +616,16 @@ def main() -> int:
     out_dir = Path(args.out_dir) if Path(args.out_dir).is_absolute() else ROOT / args.out_dir
     out_dir.mkdir(parents=True, exist_ok=True)
     manifest_path = out_dir / "manifest.json"
+    existing_manifest_entries: dict[str, dict] = {}
+    if manifest_path.exists():
+        existing_data = json.loads(manifest_path.read_text(encoding="utf-8"))
+        for entry in existing_data.get("scenes", []):
+            existing_manifest_entries[entry["sceneId"]] = entry
 
     state_dir = Path(args.state_dir)
     state_dir.mkdir(parents=True, exist_ok=True)
+    failed_dir = state_dir / "failed"
+    failed_dir.mkdir(parents=True, exist_ok=True)
     state_path = state_dir / "state.json"
     state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {"scenes": {}}
     scenes_state: dict[str, dict] = state.setdefault("scenes", {})
@@ -592,6 +636,13 @@ def main() -> int:
         target_scenes = [s for s in all_scenes if s["id"] == args.scene]
         if not target_scenes:
             raise ValueError(f"Unknown scene id: {args.scene}")
+    elif args.scenes:
+        wanted = [s.strip() for s in args.scenes.split(",") if s.strip()]
+        by_id = {s["id"]: s for s in all_scenes}
+        unknown = [sid for sid in wanted if sid not in by_id]
+        if unknown:
+            raise ValueError(f"Unknown scene ids: {unknown}")
+        target_scenes = [by_id[sid] for sid in wanted]
     if args.limit > 0:
         target_scenes = target_scenes[: args.limit]
 
@@ -600,12 +651,14 @@ def main() -> int:
         sid = sc["id"]
         st = scenes_state.get(sid, {})
         webm_path = out_dir / f"{sid}.webm"
+        tts_text = apply_tts_respellings(sc["say"])
         already_done = (
             not args.no_resume
             and st.get("done") is True
             and webm_path.exists()
             and webm_path.stat().st_size > 0
             and st.get("say") == sc["say"]
+            and st.get("ttsText", sc["say"]) == tts_text
         )
         if not already_done:
             pending.append(sc)
@@ -632,45 +685,85 @@ def main() -> int:
         for pos, sc in enumerate(pending, 1):
             sid = sc["id"]
             text = sc["say"]
+            tts_text = apply_tts_respellings(text)
             out_path = out_dir / f"{sid}.webm"
 
-            # Attempt 1
-            arr1, gen_sec1 = generate_audio(
-                model, device_used, text, args.exaggeration, args.cfg_weight, args.base_seed
-            )
-            trimmed1 = trim_silence(arr1, model.sr)
-            sf.write(str(gen_wav), trimmed1, model.sr)
-            encode_opus_webm(gen_wav, tmp_webm_1)
-            w1_res = whisper_model.transcribe(str(tmp_webm_1), fp16=False, language="en", word_timestamps=True)
-            w1_text = w1_res["text"].strip()
-            cmp1 = compare_transcript(text, w1_text)
-
-            chosen_webm = tmp_webm_1
-            chosen_w_res = w1_res
-            chosen_w_text = w1_text
-            chosen_cmp = cmp1
-            chosen_gen_sec = gen_sec1
+            # Attempt 1 + retries across candidate seeds
+            candidate_seeds = [args.base_seed, args.retry_seed] + [
+                int(s.strip()) for s in args.extra_seeds.split(",") if s.strip()
+            ]
+            chosen_webm: Path | None = None
+            chosen_w_res: dict = {}
+            chosen_w_text = ""
+            chosen_cmp: dict = {}
+            chosen_gen_sec = 0.0
             chosen_seed = args.base_seed
             retried = False
+            failed_attempts: list[dict] = list(scenes_state.get(sid, {}).get("failedAttempts", []))
 
-            if not cmp1["match"]:
-                retried = True
-                arr2, gen_sec2 = generate_audio(
-                    model, device_used, text, args.exaggeration, args.cfg_weight, args.retry_seed
+            for attempt_num, cand_seed in enumerate(candidate_seeds, 1):
+                if attempt_num > 1:
+                    retried = True
+                arr, gen_sec = generate_audio(
+                    model, device_used, tts_text, args.exaggeration, args.cfg_weight, cand_seed
                 )
-                trimmed2 = trim_silence(arr2, model.sr)
-                sf.write(str(gen_wav), trimmed2, model.sr)
-                encode_opus_webm(gen_wav, tmp_webm_2)
-                w2_res = whisper_model.transcribe(str(tmp_webm_2), fp16=False, language="en", word_timestamps=True)
-                w2_text = w2_res["text"].strip()
-                cmp2 = compare_transcript(text, w2_text)
-                if cmp2["match"] or cmp2["ratio"] > cmp1["ratio"]:
-                    chosen_webm = tmp_webm_2
-                    chosen_w_res = w2_res
-                    chosen_w_text = w2_text
-                    chosen_cmp = cmp2
-                    chosen_seed = args.retry_seed
-                chosen_gen_sec = gen_sec1 + gen_sec2
+                trimmed = trim_silence(arr, model.sr, lead_ms=args.lead_ms, trail_ms=args.trail_ms)
+                sf.write(str(gen_wav), trimmed, model.sr)
+                cand_webm = state_dir / f"attempt{attempt_num}.webm"
+                encode_opus_webm(gen_wav, cand_webm)
+                w_res = whisper_model.transcribe(str(cand_webm), fp16=False, language="en", word_timestamps=True)
+                w_text = w_res["text"].strip()
+                cmp_res = compare_transcript(text, w_text)
+                chosen_gen_sec += gen_sec
+
+                if chosen_webm is None:
+                    chosen_webm = cand_webm
+                    chosen_w_res = w_res
+                    chosen_w_text = w_text
+                    chosen_cmp = cmp_res
+                    chosen_seed = cand_seed
+                elif cmp_res["match"] or (not chosen_cmp["match"] and cmp_res["ratio"] > chosen_cmp["ratio"]):
+                    fail_copy = unique_failed_path(failed_dir, f"{sid}-attempt{attempt_num - 1}-seed{chosen_seed}.webm")
+                    os.replace(chosen_webm, fail_copy)
+                    failed_attempts.append({
+                        "attempt": attempt_num - 1,
+                        "seed": chosen_seed,
+                        "path": str(fail_copy),
+                        "whisperText": chosen_w_text,
+                        "diff": chosen_cmp["diff"],
+                    })
+                    chosen_webm = cand_webm
+                    chosen_w_res = w_res
+                    chosen_w_text = w_text
+                    chosen_cmp = cmp_res
+                    chosen_seed = cand_seed
+                else:
+                    fail_copy = unique_failed_path(failed_dir, f"{sid}-attempt{attempt_num}-seed{cand_seed}.webm")
+                    os.replace(cand_webm, fail_copy)
+                    failed_attempts.append({
+                        "attempt": attempt_num,
+                        "seed": cand_seed,
+                        "path": str(fail_copy),
+                        "whisperText": w_text,
+                        "diff": cmp_res["diff"],
+                    })
+
+                if chosen_cmp["match"]:
+                    break
+
+            assert chosen_webm is not None
+
+            if not chosen_cmp["match"]:
+                # Keep a copy of the final chosen clip in failed_dir as well if it still failed Whisper
+                fail_copy = unique_failed_path(failed_dir, f"{sid}-chosen-seed{chosen_seed}.webm")
+                fail_copy.write_bytes(chosen_webm.read_bytes())
+                failed_attempts.append({
+                    "attempt": "chosen",
+                    "seed": chosen_seed,
+                    "path": str(fail_copy),
+                    "whisperText": chosen_w_text,
+                    "diff": chosen_cmp["diff"],
+                })
 
             os.replace(chosen_webm, out_path)
             dur_ms = ffprobe_duration_ms(out_path)
@@ -683,6 +776,7 @@ def main() -> int:
             scenes_state[sid] = {
                 "done": True,
                 "say": text,
+                "ttsText": tts_text,
                 "seed": chosen_seed,
                 "durationMs": dur_ms,
                 "bytes": size_bytes,
@@ -695,12 +789,13 @@ def main() -> int:
                 "whisperDiff": chosen_cmp["diff"],
                 "spellingDiffs": chosen_cmp["spellingDiffs"],
                 "retried": retried,
+                "failedAttempts": failed_attempts,
                 "beats": beats_out,
                 "missingBeats": missing_beats,
             }
 
             atomic_write_json(state_path, state)
-            atomic_write_json(manifest_path, build_manifest(all_scenes, scenes_state))
+            atomic_write_json(manifest_path, build_manifest(all_scenes, scenes_state, existing_manifest_entries))
 
             status = "OK" if chosen_cmp["match"] else "FAIL"
             retry_tag = " [RETRIED]" if retried else ""
@@ -711,16 +806,17 @@ def main() -> int:
                 f"sil=({lead_ms:.0f}ms,{trail_ms:.0f}ms)",
                 flush=True,
             )
+            print(f"    ttsText : {tts_text!r}", flush=True)
+            print(f"    whisper : {chosen_w_text!r}", flush=True)
             if chosen_cmp["spellingDiffs"]:
                 print(f"    spelling-diffs: {chosen_cmp['spellingDiffs']}", flush=True)
             if not chosen_cmp["match"]:
-                print(f"    expected: {text!r}", flush=True)
-                print(f"    whisper : {chosen_w_text!r} ({chosen_cmp['diff']})", flush=True)
+                print(f"    diff    : {chosen_cmp['diff']}", flush=True)
             if missing_beats:
                 print(f"    missing beats: {missing_beats}", flush=True)
 
     # Always ensure manifest is up to date from state
-    manifest_payload = build_manifest(all_scenes, scenes_state)
+    manifest_payload = build_manifest(all_scenes, scenes_state, existing_manifest_entries)
     atomic_write_json(manifest_path, manifest_payload)
 
     wall_sec = time.perf_counter() - batch_start
@@ -742,7 +838,7 @@ def main() -> int:
         (s["id"], scenes_state[s["id"]]["leadSilenceMs"], scenes_state[s["id"]]["trailSilenceMs"])
         for s in target_scenes
         if scenes_state.get(s["id"], {}).get("done")
-        and (scenes_state[s["id"]]["leadSilenceMs"] >= 150.0 or scenes_state[s["id"]]["trailSilenceMs"] >= 150.0)
+        and (scenes_state[s["id"]]["leadSilenceMs"] >= 60.0 or scenes_state[s["id"]]["trailSilenceMs"] >= 60.0)
     ]
 
     print("\n=== SUMMARY ===", flush=True)
@@ -763,7 +859,7 @@ def main() -> int:
     print(f"Missing beat words (word-position estimated): {len(all_missing)}", flush=True)
     for m in all_missing:
         print(f"  MISSING {m['sceneId']}: word={m['word']!r} est_atMs={m['estimatedAtMs']}", flush=True)
-    print(f"Silence >= 150ms warnings: {len(silence_over)} {silence_over}", flush=True)
+    print(f"Silence >= 60ms warnings: {len(silence_over)} {silence_over}", flush=True)
 
     return 0
 
