@@ -70,6 +70,11 @@ SPELLING_EQUIV = {
     "farady": "faraday",
     "mol": "moles",
     "mole": "moles",
+    "mm": "millimetres",
+    "g": "grams",
+    "cm": "centimetres",
+    "dm": "decimetres",
+    "tetraoxosulphate": "tetraoxosulfate",
     "poh": "poh",
     "ph": "ph",
 }
@@ -98,7 +103,7 @@ UNIT_CANON = {
 CHEM_TERMS = {
     "iron", "oxide", "calcium", "carbonate", "ammonium", "nitrate",
     "copper", "hydrochloric", "acid", "hydrogen", "chloride", "oxygen",
-    "nitrogen", "sulfur", "ethane", "steam", "tetraoxosulfate",
+    "nitrogen", "sulfur", "ethane", "steam", "tetraoxosulfate", "trioxonitrate",
     "potassium", "hydroxide", "nickel", "chromium", "dichromate",
     "aluminum", "ammonia", "chlorine", "sodium", "ph", "poh",
 }
@@ -119,6 +124,7 @@ def tokenize_basic(text: str, keep_punct: bool = False) -> list[str]:
     s = text.lower().replace("’", "'").replace("‘", "'")
     s = s.replace("%", " percent ")
     s = s.replace("°c", " degrees celsius ").replace("°", " degrees ")
+    s = s.replace("cm³", " cubic centimetres ").replace("dm³", " cubic decimetres ")
     s = s.replace("²", " squared ").replace("³", " cubed ")
     s = s.replace("ch2o", " c h 2 o ")
     s = re.sub(r"(\d+)\s*-\s*(\d+)", r"\1 \2", s)
@@ -137,7 +143,7 @@ def tokenize_basic(text: str, keep_punct: bool = False) -> list[str]:
             out.append(tok)
             continue
         out.append(SPELLING_EQUIV.get(tok, tok))
-    # Collapse "p h" -> "ph", "p o h" -> "poh", "tetra oxo sulfate" -> "tetraoxosulfate"
+    # Collapse multi-token chemical/Whisper variants
     merged: list[str] = []
     i = 0
     while i < len(out):
@@ -147,9 +153,36 @@ def tokenize_basic(text: str, keep_punct: bool = False) -> list[str]:
         elif i + 1 < len(out) and out[i] == "p" and out[i + 1] == "h":
             merged.append("ph")
             i += 2
-        elif i + 2 < len(out) and out[i] == "tetra" and out[i + 1] == "oxo" and out[i + 2] == "sulfate":
+        elif i + 1 < len(out) and out[i] == "tetra" and out[i + 1] in {"oxosulfate", "oxosulphate"}:
+            merged.append("tetraoxosulfate")
+            i += 2
+        elif i + 2 < len(out) and out[i] == "tetra" and out[i + 1] == "oxo" and out[i + 2] in {"sulfate", "sulphate"}:
             merged.append("tetraoxosulfate")
             i += 3
+        elif i + 1 < len(out) and out[i] == "tri" and out[i + 1] == "oxonitrate":
+            merged.append("trioxonitrate")
+            i += 2
+        elif i + 1 < len(out) and out[i] == "trioxo" and out[i + 1] == "nitrate":
+            merged.append("trioxonitrate")
+            i += 2
+        elif i + 2 < len(out) and out[i] == "tri" and out[i + 1] == "oxo" and out[i + 2] == "nitrate":
+            merged.append("trioxonitrate")
+            i += 3
+        elif i + 2 < len(out) and out[i] == "gas" and out[i + 1] == "." and out[i + 2] == "why":
+            merged.extend(["gas", "y"])
+            i += 3
+        elif i + 1 < len(out) and out[i] == "gas" and out[i + 1] == "why":
+            merged.extend(["gas", "y"])
+            i += 2
+        elif i + 1 < len(out) and out[i] in {"centimetres", "decimetres"} and out[i + 1] == "cubed":
+            merged.extend(["cubic", out[i]])
+            i += 2
+        elif out[i] == "tf":
+            merged.extend(["t", "f"])
+            i += 1
+        elif out[i] == "kf":
+            merged.extend(["k", "f"])
+            i += 1
         else:
             merged.append(out[i])
             i += 1
@@ -304,6 +337,8 @@ def strict_verify(spoken_line: str, step_text: str, heard_text: str) -> dict:
     missing_c = sorted(exp_chem - heard_chem)
     if missing_c:
         reasons.append(f"formula_or_term_missing: {missing_c}")
+    if ratio < 0.78:
+        reasons.append(f"word_mismatch_low_ratio: {ratio:.2f}")
 
     word_diff = ""
     if exp_words != heard_words:
@@ -639,6 +674,18 @@ def main() -> int:
                     flush=True,
                 )
             else:
+                failed_dir = state_dir / "failed_attempts"
+                failed_dir.mkdir(parents=True, exist_ok=True)
+                slug = rel_path.replace("/", "__").removesuffix(".webm")
+                saved_attempts: list[str] = []
+                if tmp_webm_1.exists():
+                    dest1 = failed_dir / f"{slug}_attempt1.webm"
+                    shutil.copy2(tmp_webm_1, dest1)
+                    saved_attempts.append(str(dest1))
+                if retried and tmp_webm_2.exists():
+                    dest2 = failed_dir / f"{slug}_attempt2.webm"
+                    shutil.copy2(tmp_webm_2, dest2)
+                    saved_attempts.append(str(dest2))
                 after_bytes = restore_from_origin_main(rel_path, orig_entry, cur_entry)
                 st.update({
                     "status": "rejected_whisper_mismatch",
@@ -647,6 +694,9 @@ def main() -> int:
                     "stepText": step_text,
                     "spokenLine": spoken_line,
                     "whisperText": chosen_w,
+                    "attempt1Whisper": w1,
+                    "attempt2Whisper": w2 if retried else None,
+                    "failedAttempts": saved_attempts,
                     "wordDiff": chosen_v["wordDiff"],
                     "reasons": chosen_v["reasons"],
                     "afterBytes": after_bytes,
