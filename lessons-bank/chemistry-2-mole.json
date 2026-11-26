@@ -289,7 +289,7 @@
             {
               "word": "divided",
               "action": "Move from the mass box to the moles box.",
-              "label": "n = m/M"
+              "label": "n = \\frac{m}{M}"
             }
           ]
         },
@@ -589,12 +589,12 @@
             {
               "word": "conditions",
               "action": "Mark the volume for the s.t.p. route.",
-              "label": "At s.t.p. · n = V/Vₘ"
+              "label": "At s.t.p. · n = \\frac{V}{Vₘ}"
             },
             {
               "word": "ideal",
               "action": "Show the gas-law route.",
-              "label": "At other conditions · n = PV/(RT)"
+              "label": "At other conditions · n = \\frac{PV}{RT}"
             }
           ]
         },

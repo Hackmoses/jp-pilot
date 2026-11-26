@@ -1,6 +1,6 @@
 import type { ComponentChildren } from 'preact'
 import { useEffect, useId, useLayoutEffect, useRef, useState } from 'preact/hooks'
-import { renderMathText, mathToSpeech } from '../../lib/mathText'
+import { hasMathNotation, renderMathText, mathToSpeech } from '../../lib/mathText'
 import { cancelSpeech, getActiveSpeechKey, speak, subscribeToSpeechAvailability, subscribeToSpeechState } from '../../lib/speech'
 import { mountMotion, pulse } from './motion'
 import './motion.css'
@@ -312,6 +312,13 @@ export function Trace({ x, y, series = '', labels }: {
 export function Select({ label, value, options, onChange, info }: {
   label: string; value: string; options: readonly (readonly [string, string])[]; onChange: (value: string) => void; info?: string
 }) {
+  // A native dropdown cannot draw stacked fractions, so math choices become buttons.
+  if (options.some(([, text]) => hasMathNotation(text))) return <div class="jp-try-select" role="radiogroup" aria-label={label}>
+    <span class="jp-try-label-row">{label}{info && <Tip label={label} text={info} />}</span>
+    <div class="jp-pills">{options.map(([key, text]) => <button key={key} type="button" role="radio" aria-checked={value === key}
+      aria-label={mathToSpeech(text)} class={`jp-btn ${value === key ? 'jp-btn--primary' : ''}`} onClick={() => onChange(key)}>
+      {renderMathText(text)}</button>)}</div>
+  </div>
   return <label class="jp-try-select"><span class="jp-try-label-row">{label}{info && <Tip label={label} text={info} />}</span>
     <select class="jp-btn" value={value} onChange={(event) => onChange(event.currentTarget.value)}>
       {options.map(([key, text]) => <option key={key} value={key}>{text}</option>)}

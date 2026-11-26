@@ -4,6 +4,7 @@ import { interpolate } from '../try-it/motion'
 import { AudioSceneClock, beatTimes, fallbackMs, lessonScenes, sceneFrame, wordCues } from './lesson'
 import type { Clip, Frame, Lesson, WordBank } from './lesson'
 import { Caption, PrintedPrompt } from './LessonText'
+import { renderMathText } from '../../lib/mathText'
 import './lessons.css'
 
 const Waves = lazyView(() => import('./waves').then((module) => module.default))
@@ -273,10 +274,10 @@ export function LessonPlayer({ lesson, file, clips, pronunciations, onComplete }
           return step.beats.slice(0, visible).map(({ label }, i) => {
             const amount = step.id === scene.id && i === reached - 1 && !reduce
               ? interpolate('0', '100')(Math.min(1, (frame?.sinceBeat ?? 0) / 650)) : '100'
-            return <li key={step.id + i} class="jp-concept-step" style={{ clipPath: 'inset(0 ' + (100 - Number(amount)) + '% 0 0)' }}>{label}</li>
+            return <li key={step.id + i} class="jp-concept-step" style={{ clipPath: 'inset(0 ' + (100 - Number(amount)) + '% 0 0)' }}>{renderMathText(label)}</li>
           })
         })}
-      </ol> : <div class="jp-concept-beat" aria-hidden="true">{scene.beats[reached - 1]?.label}</div>}
+      </ol> : <div class="jp-concept-beat" aria-hidden="true">{renderMathText(scene.beats[reached - 1]?.label ?? '')}</div>}
     </div>}
     {captions && <p class="jp-concept-caption" aria-live="polite">{pronunciations
       ? <Caption line={scene.say} pronunciations={pronunciations} onPlay={(id) => playback.current?.preview(id)} />
