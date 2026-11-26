@@ -9,10 +9,11 @@ export function rateCard(previous: Review | undefined, knew: boolean, now: numbe
   return { box, due: now + intervals[box - 1] }
 }
 
-export function selectCards<Card extends { id: string }>(cards: readonly Card[], reviews: Reviews, now: number): Card[] {
-  const due = cards.filter(({ id }) => reviews[id]?.due <= now)
+export function selectCards<Card extends { id: string; check?: boolean }>(cards: readonly Card[], reviews: Reviews, now: number): Card[] {
+  const available = cards.filter(({ check }) => check !== true)
+  const due = available.filter(({ id }) => reviews[id]?.due <= now)
     .sort((a, b) => reviews[a.id].due - reviews[b.id].due)
-  return due.concat(cards.filter(({ id }) => !reviews[id])).slice(0, 20)
+  return due.concat(available.filter(({ id }) => !reviews[id])).slice(0, 20)
 }
 
 const currentReviews = new Map<string, Reviews>()

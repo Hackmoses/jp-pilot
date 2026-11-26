@@ -5,6 +5,7 @@ import './card-viewer.css'
 
 type Card = {
   id: string; front: string; meaning: string; example: string
+  check?: boolean
   synonym?: string; antonym?: string; trap?: string
   rule?: { text: string; right: string; wrong: string }
   jamb?: { year: number; number: number }
@@ -81,11 +82,16 @@ export function CardViewer({ deck, title, back }: { deck: string; title: string;
       <button class="jp-btn" onClick={() => { setFailed(false); setAttempt(attempt + 1) }}>Try again</button>
     </div> : !cards ? <p class="jp-mode-lead" role="status">Loading cards…</p> : card ? (
       <div class="jp-mode-list">
-        <p class="jp-summary-sub" role="status">Card {position + 1} of {session.length}</p>
-        <div class="jp-progress-track" aria-hidden="true">
-          <div class="jp-progress-fill" style={{ width: position * 100 / session.length + '%' }} />
+        <div class="jp-word-progress">
+          <div class="jp-word-progress-row">
+            <p class="jp-summary-sub jp-word-counter" role="status">Card {position + 1} of {session.length}</p>
+            <span class="jp-word-hint">{flipped ? 'Rate how well you knew it' : 'Space or tap to flip'}</span>
+          </div>
+          <div class="jp-progress-track" aria-hidden="true">
+            <div class="jp-progress-fill" style={{ width: position * 100 / session.length + '%' }} />
+          </div>
         </div>
-        <button ref={button} type="button" class="jp-card jp-word-card" aria-expanded={flipped}
+        <button ref={button} type="button" class="jp-card jp-word-card" data-flipped={flipped ? 'true' : 'false'} aria-expanded={flipped}
           onClick={() => setFlipped(!flipped)}
           onTouchStart={(event) => {
             const finger = event.touches[0]
@@ -107,33 +113,56 @@ export function CardViewer({ deck, title, back }: { deck: string; title: string;
               setFlipped(!flipped)
             }
           }}>
-          <span class="jp-word-card-face" key={card.id + flipped}>
-            <strong class="jp-mode-card-title">{card.front}</strong>
-            {flipped ? <>
-              <span>{card.meaning}</span>
-              {card.synonym && <span>Synonym · {card.synonym}</span>}
-              {card.antonym && <span>Antonym · {card.antonym}</span>}
-              <span>{card.example}</span>
-              {card.jamb && <span class="jp-summary-sub">JAMB {card.jamb.year} · Question {card.jamb.number}</span>}
-              {card.trap && <span><strong>Common mistake</strong> · {card.trap}</span>}
-              {card.rule && <>
-                <span>{card.rule.text}</span>
-                <span>Right · {card.rule.right}</span>
-                <span>Wrong · {card.rule.wrong}</span>
-              </>}
-            </> : <span class="jp-summary-sub">Tap or press Space to flip</span>}
-          </span>
+          {!flipped ? (
+            <span class="jp-word-card-face jp-word-card-front" key={card.id + 'front'}>
+              <span class="jp-try-kicker">{title}</span>
+              <strong class="jp-word-front-term">{card.front}</strong>
+              <span class="jp-word-flip-cue">Tap or press Space to flip</span>
+            </span>
+          ) : (
+            <span class="jp-word-card-face jp-word-card-back" key={card.id + 'back'}>
+              <span class="jp-word-card-head">
+                <strong class="jp-word-back-term">{card.front}</strong>
+                {card.jamb && <span class="jp-word-jamb">JAMB {card.jamb.year} · Q{card.jamb.number}</span>}
+              </span>
+              <span class="jp-word-meaning">{card.meaning}</span>
+              {(card.synonym || card.antonym) && (
+                <span class="jp-word-relations">
+                  {card.synonym && <span class="jp-word-rel jp-word-rel--syn"><strong>Synonym</strong> {card.synonym}</span>}
+                  {card.antonym && <span class="jp-word-rel jp-word-rel--ant"><strong>Antonym</strong> {card.antonym}</span>}
+                </span>
+              )}
+              <span class="jp-word-example">{card.example}</span>
+              {card.rule && (
+                <span class="jp-word-rule">
+                  <span class="jp-word-rule-text">{card.rule.text}</span>
+                  <span class="jp-word-compare">
+                    <span class="jp-word-right"><strong>✓ Right</strong> {card.rule.right}</span>
+                    <span class="jp-word-wrong"><strong>✕ Wrong</strong> {card.rule.wrong}</span>
+                  </span>
+                </span>
+              )}
+              {card.trap && <span class="jp-word-trap"><strong>Common mistake</strong> {card.trap}</span>}
+            </span>
+          )}
         </button>
-        {flipped && <div class="jp-pills">
-          <button class="jp-btn" type="button" onClick={() => rate(false)}>Again</button>
-          <button class="jp-btn jp-btn--primary" type="button" onClick={() => rate(true)}>I knew it</button>
+        {flipped && <div class="jp-word-actions">
+          <button class="jp-btn jp-word-btn-again" type="button" onClick={() => rate(false)}>
+            <span>Again</span><kbd class="jp-word-kbd">1</kbd>
+          </button>
+          <button class="jp-btn jp-btn--primary jp-word-btn-knew" type="button" onClick={() => rate(true)}>
+            <span>I knew it</span><kbd class="jp-word-kbd jp-word-kbd--primary">2</kbd>
+          </button>
         </div>}
       </div>
-    ) : <div class="jp-mode-list">
+    ) : <section class="jp-card jp-word-done">
+      <h2 class="jp-mode-card-title">{session.length ? 'Session complete' : 'All caught up'}</h2>
       <p class="jp-mode-lead" role="status">{session.length ? 'Session complete.' : 'You’re caught up. Come back when cards are due.'}</p>
-      {session.length > 0 && selectCards(cards, cardReviews(deck), Date.now()).length > 0 &&
-        <button class="jp-btn jp-btn--primary" onClick={() => start(cards)}>Start another session</button>}
-      <a class="jp-btn" href={back}>Back to topic</a>
-    </div>}
+      <div class="jp-pills">
+        {session.length > 0 && selectCards(cards, cardReviews(deck), Date.now()).length > 0 &&
+          <button class="jp-btn jp-btn--primary" type="button" onClick={() => start(cards)}>Start another session</button>}
+        <a class="jp-btn" href={back}>Back to topic</a>
+      </div>
+    </section>}
   </Panel>
 }

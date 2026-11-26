@@ -1,23 +1,260 @@
+.jp-word-progress {
+  display: grid;
+  gap: 6px;
+}
+
+.jp-word-progress-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 12px;
+}
+
+.jp-word-counter {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  font-variant-numeric: tabular-nums;
+}
+
+.jp-word-hint {
+  font-size: 12px;
+  color: #64748b;
+}
+
 .jp-word-card {
+  width: 100%;
+  min-height: 220px;
+  padding: 24px 20px;
   font-family: var(--font-system);
   font-size: inherit;
-  color: var(--ink);
+  color: #0f172a;
   text-align: start;
   overflow-wrap: anywhere;
   touch-action: pan-y;
   cursor: pointer;
   perspective: 60rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.jp-word-card[data-flipped="false"] {
+  justify-content: center;
+}
+
+.jp-word-card:hover {
+  border-color: #94a3b8;
+  box-shadow: 0 4px 12px -6px rgb(15 23 42 / 0.12);
 }
 
 .jp-word-card-face {
-  display: grid;
-  gap: var(--space-3);
   animation: jp-card-flip 160ms ease-out;
+}
+
+.jp-word-card-front {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.jp-word-front-term {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: #0f172a;
+}
+
+.jp-word-flip-cue {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.jp-word-card-back {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+}
+
+.jp-word-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.jp-word-back-term {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0f172a;
+}
+
+.jp-word-jamb {
+  padding: 2px 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-pill);
+  background: #f1f5f9;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.jp-word-meaning {
+  font-size: 15.5px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #0f172a;
+}
+
+.jp-word-relations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.jp-word-rel {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.jp-word-rel--syn {
+  background: var(--brand-soft);
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+}
+
+.jp-word-rel--ant {
+  background: var(--memo-soft);
+  border: 1px solid #ddd6fe;
+  color: var(--memo);
+}
+
+.jp-word-example {
+  padding: 10px 12px;
+  border-left: 3px solid #cbd5e1;
+  border-radius: 0 8px 8px 0;
+  background: #f8fafc;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.jp-word-rule {
+  display: grid;
+  gap: 8px;
+}
+
+.jp-word-rule-text {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: #1e293b;
+}
+
+.jp-word-compare {
+  display: grid;
+  gap: 6px;
+}
+
+.jp-word-right,
+.jp-word-wrong {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.jp-word-right {
+  border: 1px solid #86efac;
+  background: var(--good-soft);
+  color: #166534;
+}
+
+.jp-word-wrong {
+  border: 1px solid #fecaca;
+  background: var(--bad-soft);
+  color: #991b1b;
+}
+
+.jp-word-trap {
+  display: grid;
+  gap: 2px;
+  padding: 9px 12px;
+  border: 1px solid #fdba74;
+  border-left: 3px solid var(--trap);
+  border-radius: 8px;
+  background: var(--trap-soft);
+  color: var(--trap);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.jp-word-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.jp-mode-page .jp-word-actions .jp-btn {
+  min-height: 40px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.jp-mode-page .jp-word-actions .jp-word-btn-again {
+  border-color: #fdba74;
+  background: var(--trap-soft);
+  color: var(--trap);
+}
+
+.jp-mode-page .jp-word-actions .jp-word-btn-again:hover:not(:disabled) {
+  background: #ffedd5;
+  border-color: #fb923c;
+}
+
+.jp-word-kbd {
+  padding: 1px 6px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  font: 600 11px/1.4 var(--font-system);
+  opacity: 0.72;
+}
+
+.jp-word-done {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
 }
 
 @keyframes jp-card-flip {
   from { transform: rotateY(-40deg); }
   to { transform: rotateY(0); }
+}
+
+@media (max-width: 480px) {
+  .jp-word-card {
+    min-height: 196px;
+    padding: 18px 16px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
