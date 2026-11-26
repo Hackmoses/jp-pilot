@@ -1,0 +1,177 @@
+#!/usr/bin/env node
+import { readFileSync, writeFileSync } from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { transformSync } from '../app/node_modules/esbuild/lib/main.js'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const rootDir = path.resolve(__dirname, '..')
+
+function loadMathToSpeech() {
+  const tsx = readFileSync(path.join(rootDir, 'app/src/lib/mathText.tsx'), 'utf8')
+  const { code } = transformSync(tsx, { loader: 'tsx', format: 'cjs', jsx: 'transform', jsxFactory: 'h' })
+  const mod = { exports: {} }
+  new Function('exports', 'require', 'module', 'h', code)(mod.exports, () => ({}), mod, () => null)
+  return mod.exports.mathToSpeech
+}
+
+const ONES = [
+  'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
+  'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',
+]
+const TENS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
+const PLURAL_DIGITS = ['zeros', 'ones', 'twos', 'threes', 'fours', 'fives', 'sixes', 'sevens', 'eights', 'nines']
+
+function intToWords(n) {
+  if (n < 20) return ONES[n]
+  if (n < 100) {
+    const t = Math.floor(n / 10)
+    const r = n % 10
+    return r ? `${TENS[t]}-${ONES[r]}` : TENS[t]
+  }
+  if (n < 1000) {
+    const h = Math.floor(n / 100)
+    const r = n % 100
+    return r ? `${ONES[h]} hundred and ${intToWords(r)}` : `${ONES[h]} hundred`
+  }
+  if (n < 1_000_000) {
+    const k = Math.floor(n / 1000)
+    const r = n % 1000
+    if (!r) return `${intToWords(k)} thousand`
+    const joiner = r < 100 ? ' and ' : ' '
+    return `${intToWords(k)} thousand${joiner}${intToWords(r)}`
+  }
+  if (n < 1_000_000_000) {
+    const m = Math.floor(n / 1_000_000)
+    const r = n % 1_000_000
+    if (!r) return `${intToWords(m)} million`
+    const joiner = r < 100 ? ' and ' : ' '
+    return `${intToWords(m)} million${joiner}${intToWords(r)}`
+  }
+  return String(n)
+}
+
+function expandNumbersAndSymbols(text) {
+  let out = text
+    // Binary literals like "1101 in base 2" -> spoken digit by digit
+    .replace(/\b([01]{3,})\s+(in\s+base\s+2)\b/gi, (_, bits, rest) => {
+      const spokenBits = [...bits].map((d) => ONES[Number(d)]).join(' ')
+      return `${spokenBits} ${rest}`
+    })
+    // Plural single digits like "7s", "3s"
+    .replace(/\b([0-9])s\b/g, (_, d) => PLURAL_DIGITS[Number(d)])
+    // Common letter clusters in probability/hex
+    .replace(/\bHHT\b/g, 'H H T')
+    .replace(/\bHTH\b/g, 'H T H')
+    .replace(/\bTHH\b/g, 'T H H')
+    .replace(/\bFF\b/g, 'F F')
+    // Unit abbreviations (just in case any appear)
+    .replace(/(\d+(?:,\d{3})*(?:\.\d+)?)\s*cm³/g, '$1 cubic centimetres')
+    .replace(/(\d+(?:,\d{3})*(?:\.\d+)?)\s*dm³/g, '$1 cubic decimetres')
+    .replace(/(\d+(?:,\d{3})*(?:\.\d+)?)\s*m\/s\b/g, '$1 metres per second')
+    .replace(/(\d+(?:,\d{3})*(?:\.\d+)?)%/g, '$1 percent')
+    .replace(/\+(\d+(?:,\d{3})*(?:\.\d+)?)/g, 'plus $1')
+    .replace(/\b\d+(?:,\d{3})*(?:\.\d+)?\b/g, (raw) => {
+      const clean = raw.replace(/,/g, '')
+      if (clean.includes('.')) {
+        const [leftStr, rightStr] = clean.split('.')
+        const leftWords = intToWords(Number(leftStr))
+        const rightWords = [...rightStr].map((d) => ONES[Number(d)]).join(' ')
+        return `${leftWords} point ${rightWords}`
+      }
+      return intToWords(Number(clean))
+    })
+  return out
+}
+
+function detectIssues(rawText, convertedText, spokenLine) {
+  const issues = []
+  if (!rawText || !rawText.trim()) {
+    issues.push('missing_step_text')
+    return issues
+  }
+  const normalizedPunct = convertedText.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, '-')
+  const nonAscii = [...new Set(normalizedPunct.match(/[^\x20-\x7E]/g) ?? [])]
+  if (nonAscii.length) {
+    issues.push(`leftover_non_ascii:${nonAscii.join('')}`)
+  }
+  if (/[()[\]\\{}^_]/.test(normalizedPunct)) {
+    issues.push('leftover_brackets_or_markup')
+  }
+  if (/\d/.test(spokenLine)) {
+    issues.push('leftover_digits')
+  }
+  if (/\b(?:HHT|HTH|THH|FF)\b/.test(rawText) || /\b[01]{3,}\s+in\s+base\s+2\b/i.test(rawText)) {
+    issues.push('spelled_code_or_outcome')
+  }
+  return issues
+}
+
+const SUBJECTS = [
+  { subject: 'physics', files: ['data/subjects/animations-physics.json', 'data/subjects/animations-physics-jamb.json'] },
+  { subject: 'biology', files: ['data/subjects/animations-biology.json'] },
+  { subject: 'mathematics', files: ['data/subjects/animations-mathematics.json', 'data/subjects/animations-maths-jamb.json'] },
+  { subject: 'accounting', files: ['data/subjects/animations-accounting.json'] },
+  { subject: 'economics', files: ['data/subjects/animations-economics.json'] },
+  { subject: 'commerce', files: ['data/subjects/animations-commerce.json'] },
+  { subject: 'computer', files: ['data/subjects/animations-computer.json'] },
+  { subject: 'geography', files: ['data/subjects/animations-geography.json'] },
+]
+
+const mathToSpeech = loadMathToSpeech()
+const manifest = JSON.parse(readFileSync(path.join(rootDir, 'audio/manifest.json'), 'utf8'))
+
+for (const { subject, files } of SUBJECTS) {
+  const animMap = new Map()
+  for (const file of files) {
+    const doc = JSON.parse(readFileSync(path.join(rootDir, file), 'utf8'))
+    for (const a of doc.animations) {
+      animMap.set(a.id, { file, anim: a })
+    }
+  }
+
+  const clipsOut = []
+  for (const entry of manifest.clips) {
+    if (!animMap.has(entry.animationId)) continue
+    const { file, anim } = animMap.get(entry.animationId)
+    const isTeach = entry.path.startsWith('audio/teach/')
+    const mode = isTeach ? 'teach' : 'quick'
+    const clipId = isTeach ? `teach/${entry.animationId}/${entry.step}` : `${entry.animationId}/${entry.step}`
+
+    const list = isTeach ? (anim.teach ?? []) : (anim.steps ?? [])
+    const st = list.find((s) => s.n === entry.step)
+    const stepText = st?.narration ?? ''
+    const mathToSpeechText = mathToSpeech(stepText)
+    const spokenLine = expandNumbersAndSymbols(mathToSpeechText.replace(/[’‘]/g, "'"))
+    const issues = detectIssues(stepText, mathToSpeechText, spokenLine)
+    const needsReview = issues.length > 0
+
+    clipsOut.push({
+      clipId,
+      path: entry.path,
+      animationId: entry.animationId,
+      step: entry.step,
+      mode,
+      source: file,
+      stepText,
+      mathToSpeechText,
+      spokenLine,
+      needsReview,
+      issues,
+    })
+  }
+
+  const cleanCount = clipsOut.filter((c) => !c.needsReview).length
+  const reviewCount = clipsOut.filter((c) => c.needsReview).length
+  const payload = {
+    version: 1,
+    subject,
+    total: clipsOut.length,
+    clean: cleanCount,
+    needsReview: reviewCount,
+    clips: clipsOut,
+  }
+  const outPath = path.join(rootDir, `audio/spoken-${subject}.json`)
+  writeFileSync(outPath, JSON.stringify(payload, null, 2) + '\n', 'utf8')
+  console.log(`Wrote ${outPath}: total=${clipsOut.length}, clean=${cleanCount}, needsReview=${reviewCount}`)
+}

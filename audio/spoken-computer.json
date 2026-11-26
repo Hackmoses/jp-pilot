@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "subject": "computer",
+  "total": 8,
+  "clean": 6,
+  "needsReview": 2,
+  "clips": [
+    {
+      "clipId": "anim-comp-api-0017/1",
+      "path": "audio/anim-comp-api-0017/1.webm",
+      "animationId": "anim-comp-api-0017",
+      "step": 1,
+      "mode": "quick",
+      "source": "data/subjects/animations-computer.json",
+      "stepText": "Divide 13 by 2. You get 6 with a remainder of 1.",
+      "mathToSpeechText": "Divide 13 by 2. You get 6 with a remainder of 1.",
+      "spokenLine": "Divide thirteen by two. You get six with a remainder of one.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comp-api-0017/2",
+      "path": "audio/anim-comp-api-0017/2.webm",
+      "animationId": "anim-comp-api-0017",
+      "step": 2,
+      "mode": "quick",
+      "source": "data/subjects/animations-computer.json",
+      "stepText": "Divide 6 by 2. You get 3 with a remainder of 0.",
+      "mathToSpeechText": "Divide 6 by 2. You get 3 with a remainder of 0.",
+      "spokenLine": "Divide six by two. You get three with a remainder of zero.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comp-api-0017/3",
+      "path": "audio/anim-comp-api-0017/3.webm",
+      "animationId": "anim-comp-api-0017",
+      "step": 3,
+      "mode": "quick",
+      "source": "data/subjects/animations-computer.json",
+      "stepText": "Divide 3 by 2 to get 1 remainder 1, then divide 1 by 2 to get 0 remainder 1.",
+      "mathToSpeechText": "Divide 3 by 2 to get 1 remainder 1, then divide 1 by 2 to get 0 remainder 1.",
+      "spokenLine": "Divide three by two to get one remainder one, then divide one by two to get zero remainder one.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comp-api-0017/4",
+      "path": "audio/anim-comp-api-0017/4.webm",
+      "animationId": "anim-comp-api-0017",
+      "step": 4,
+      "mode": "quick",
+      "source": "data/subjects/animations-computer.json",
+      "stepText": "Read the remainders from bottom to top to get 1101 in base 2.",
+      "mathToSpeechText": "Read the remainders from bottom to top to get 1101 in base 2.",
+      "spokenLine": "Read the remainders from bottom to top to get one one zero one in base two.",
+      "needsReview": true,
+      "issues": [
+        "spelled_code_or_outcome"
+      ]
+    },
+    {
+      "clipId": "anim-comp-api-0048/1",
+      "path": "audio/anim-comp-api-0048/1.webm",
+      "animationId": "anim-comp-api-0048",
+      "step": 1,
+      "mode": "quick",
+      "source": "data/subjects/animations-computer.json",
+      "stepText": "Hexadecimal uses base 16, where digits run from 0 to 9 and A to F.",
+      "mathToSpeechText": "Hexadecimal uses base 16, where digits run from 0 to 9 and A to F.",
+      "spokenLine": "Hexadecimal uses base sixteen, where digits run from zero to nine and A to F.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comp-api-0048/2",
+      "path": "audio/anim-comp-api-0048/2.webm",
+      "animationId": "anim-comp-api-0048",
+      "step": 2,
+      "mode": "quick",
+      "source": "data/subjects/animations-computer.json",
+      "stepText": "Divide 255 by 16. The quotient is 15 and the remainder is 15.",
+      "mathToSpeechText": "Divide 255 by 16. The quotient is 15 and the remainder is 15.",
+      "spokenLine": "Divide two hundred and fifty-five by sixteen. The quotient is fifteen and the remainder is fifteen.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comp-api-0048/3",
+      "path": "audio/anim-comp-api-0048/3.webm",
+      "animationId": "anim-comp-api-0048",
+      "step": 3,
+      "mode": "quick",
+      "source": "data/subjects/animations-computer.json",
+      "stepText": "In hexadecimal, 10 is A up to 15, which is F.",
+      "mathToSpeechText": "In hexadecimal, 10 is A up to 15, which is F.",
+      "spokenLine": "In hexadecimal, ten is A up to fifteen, which is F.",
+      "needsReview": false,
+      "issues": []
+    },
+    {
+      "clipId": "anim-comp-api-0048/4",
+      "path": "audio/anim-comp-api-0048/4.webm",
+      "animationId": "anim-comp-api-0048",
+      "step": 4,
+      "mode": "quick",
+      "source": "data/subjects/animations-computer.json",
+      "stepText": "Put the quotient and remainder together as F followed by F, giving FF.",
+      "mathToSpeechText": "Put the quotient and remainder together as F followed by F, giving FF.",
+      "spokenLine": "Put the quotient and remainder together as F followed by F, giving F F.",
+      "needsReview": true,
+      "issues": [
+        "spelled_code_or_outcome"
+      ]
+    }
+  ]
+}
