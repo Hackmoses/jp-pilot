@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 20,
+  "count": 30,
   "animations": [
     {
       "id": "anim-math-jamb-2015-002",
@@ -1627,6 +1627,827 @@
           "tag": "answer",
           "title": "Curve equation",
           "narration": "The equation of the curve is y equals three x squared minus five x plus three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-002",
+      "questionId": "math-jamb-2017-002",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P^{2} = \\matrix{2,1;-3,0}\\matrix{2,1;-3,0} = \\matrix{1,2;-6,-3}",
+          "tag": "square",
+          "title": "Compute P squared",
+          "narration": "Multiply matrix P by itself row by column to get first row one, two, and second row minus six, minus three."
+        },
+        {
+          "n": 2,
+          "display": "P^{2} − 2P = \\matrix{1,2;-6,-3} − \\matrix{4,2;-6,0} = \\matrix{-3,0;0,-3}",
+          "tag": "subtract",
+          "title": "Subtract 2P",
+          "narration": "Multiply P by two and subtract each entry from P squared to leave minus three down the main diagonal and zeros elsewhere."
+        },
+        {
+          "n": 3,
+          "display": "\\matrix{-3,0;0,-3} + \\matrix{4,0;0,4} = \\matrix{1,0;0,1}",
+          "tag": "add",
+          "title": "Add 4I",
+          "narration": "Add four times the identity matrix so each diagonal entry goes from minus three to one."
+        },
+        {
+          "n": 4,
+          "display": "\\matrix{1,0;0,1} (option C)",
+          "tag": "answer",
+          "title": "Resulting matrix",
+          "narration": "The value of P squared minus two P plus four I is the two by two identity matrix, first row one, zero, second row zero, one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P^{2} = \\matrix{2,1;-3,0}\\matrix{2,1;-3,0}",
+          "tag": "setup",
+          "title": "Set up matrix square",
+          "narration": "Write P squared as matrix P multiplied by itself; do not just square each entry individually."
+        },
+        {
+          "n": 2,
+          "display": "P^{2} = \\matrix{4−3,2+0;-6+0,-3+0} = \\matrix{1,2;-6,-3}",
+          "tag": "multiply",
+          "title": "Multiply rows by columns",
+          "narration": "Compute each entry by pairing a row from the first matrix with a column from the second matrix."
+        },
+        {
+          "n": 3,
+          "display": "2P = \\matrix{4,2;-6,0}",
+          "tag": "scale P",
+          "title": "Find 2P",
+          "narration": "Multiply every entry of P by two to form two P."
+        },
+        {
+          "n": 4,
+          "display": "P^{2} − 2P = \\matrix{1−4,2−2;-6−(−6),-3−0} = \\matrix{-3,0;0,-3}",
+          "tag": "subtract",
+          "title": "Subtract entry by entry",
+          "narration": "Subtract two P from P squared; notice both off-diagonal entries become zero."
+        },
+        {
+          "n": 5,
+          "display": "4I = \\matrix{4,0;0,4}",
+          "tag": "identity",
+          "title": "Write 4I",
+          "narration": "Multiply the two by two identity matrix by four, placing four on the main diagonal."
+        },
+        {
+          "n": 6,
+          "display": "\\matrix{-3+4,0+0;0+0,-3+4} = \\matrix{1,0;0,1}",
+          "tag": "add",
+          "title": "Add 4I",
+          "narration": "Add four to minus three on each diagonal entry, giving ones on the diagonal."
+        },
+        {
+          "n": 7,
+          "display": "\\matrix{1,0;0,1} (option C)",
+          "tag": "answer",
+          "title": "Final matrix",
+          "narration": "The result is the two by two identity matrix with ones on the main diagonal and zeros elsewhere."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-003",
+      "questionId": "math-jamb-2017-003",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = \\frac{a}{2}x − 2, y = −\\frac{1}{4}x + 1",
+          "tag": "gradients",
+          "title": "Find both slopes",
+          "narration": "Rearrange both equations into y equals m x plus c form so we can read off their slopes."
+        },
+        {
+          "n": 2,
+          "display": "m_{1} × m_{2} = −1",
+          "tag": "rule",
+          "title": "Perpendicular slope rule",
+          "narration": "Because the lines are perpendicular, the product of their slopes must equal minus one."
+        },
+        {
+          "n": 3,
+          "display": "(\\frac{a}{2})(−\\frac{1}{4}) = −1 ⇒ −\\frac{a}{8} = −1",
+          "tag": "solve",
+          "title": "Solve for a",
+          "narration": "Multiply the two slopes and set their product equal to minus one."
+        },
+        {
+          "n": 4,
+          "display": "a = 8 (option C)",
+          "tag": "answer",
+          "title": "Value of a",
+          "narration": "Multiplying both sides by minus eight gives a equals eight."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "2y − ax + 4 = 0 ⇒ y = \\frac{a}{2}x − 2",
+          "tag": "line 1",
+          "title": "Make y subject of line 1",
+          "narration": "Move minus a x and plus four to the right side, then divide both sides by two so the coefficient of x gives the first slope a over two."
+        },
+        {
+          "n": 2,
+          "display": "y + \\frac{x}{4} − 1 = 0 ⇒ y = −\\frac{1}{4}x + 1",
+          "tag": "line 2",
+          "title": "Make y subject of line 2",
+          "narration": "Rearrange the second equation to y equals minus one quarter x plus one, so its slope is minus one quarter."
+        },
+        {
+          "n": 3,
+          "display": "m_{1} × m_{2} = −1",
+          "tag": "perpendicular",
+          "title": "Condition for perpendicularity",
+          "narration": "Two non-vertical lines are perpendicular when multiplying their slopes gives minus one."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{a}{2} × (−\\frac{1}{4}) = −1 ⇒ −\\frac{a}{8} = −1",
+          "tag": "multiply",
+          "title": "Multiply the slopes",
+          "narration": "Multiply the numerators and denominators to get minus a over eight equal to minus one."
+        },
+        {
+          "n": 5,
+          "display": "a = 8",
+          "tag": "isolate",
+          "title": "Multiply both sides by −8",
+          "narration": "Multiply both sides by minus eight so a stands alone on the left."
+        },
+        {
+          "n": 6,
+          "display": "Check: \\frac{8}{2} × (−\\frac{1}{4}) = 4 × (−\\frac{1}{4}) = −1",
+          "tag": "check",
+          "title": "Verify slope product",
+          "narration": "Checking a equals eight gives slope four, and four times minus one quarter equals minus one."
+        },
+        {
+          "n": 7,
+          "display": "a = 8 (option C)",
+          "tag": "answer",
+          "title": "Final value of a",
+          "narration": "The value of a is eight."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-016",
+      "questionId": "math-jamb-2017-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "(x + 2)(x + 1)(x − 3)",
+          "tag": "factors",
+          "title": "Write linear factors",
+          "narration": "For each zero r, form the linear factor x minus r, giving x plus two, x plus one, and x minus three."
+        },
+        {
+          "n": 2,
+          "display": "(x^{2} + 3x + 2)(x − 3)",
+          "tag": "first two",
+          "title": "Multiply first pair",
+          "narration": "Multiply x plus two by x plus one to get x squared plus three x plus two."
+        },
+        {
+          "n": 3,
+          "display": "x^{3} − 3x^{2} + 3x^{2} − 9x + 2x − 6",
+          "tag": "expand",
+          "title": "Multiply by (x − 3)",
+          "narration": "Distribute x and minus three across the quadratic bracket."
+        },
+        {
+          "n": 4,
+          "display": "x^{3} − 7x − 6 (option D)",
+          "tag": "answer",
+          "title": "Simplified cubic",
+          "narration": "The x squared terms cancel out, leaving x cubed minus seven x minus six."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "(x − (−2))(x − (−1))(x − 3) = (x + 2)(x + 1)(x − 3)",
+          "tag": "factor theorem",
+          "title": "Form factors from zeros",
+          "narration": "By the factor theorem, if r is a zero then x minus r is a factor, so subtracting minus two and minus one flips their signs to plus."
+        },
+        {
+          "n": 2,
+          "display": "(x + 2)(x + 1) = x^{2} + x + 2x + 2 = x^{2} + 3x + 2",
+          "tag": "multiply pair",
+          "title": "Expand the first two factors",
+          "narration": "Multiply the first two brackets first and combine x and two x into three x."
+        },
+        {
+          "n": 3,
+          "display": "(x^{2} + 3x + 2)(x − 3)",
+          "tag": "setup",
+          "title": "Multiply by the third factor",
+          "narration": "Now multiply this quadratic expression by the third factor x minus three."
+        },
+        {
+          "n": 4,
+          "display": "x(x^{2} + 3x + 2) − 3(x^{2} + 3x + 2)",
+          "tag": "distribute",
+          "title": "Distribute each term",
+          "narration": "Multiply every term inside by x, then multiply every term inside by minus three."
+        },
+        {
+          "n": 5,
+          "display": "x^{3} + 3x^{2} + 2x − 3x^{2} − 9x − 6 = x^{3} − 7x − 6",
+          "tag": "collect",
+          "title": "Collect like terms",
+          "narration": "Plus three x squared and minus three x squared cancel, while two x minus nine x gives minus seven x."
+        },
+        {
+          "n": 6,
+          "display": "Check x = 3: 3^{3} − 7(3) − 6 = 27 − 21 − 6 = 0",
+          "tag": "check",
+          "title": "Test a zero",
+          "narration": "Substitute x equals three: twenty-seven minus twenty-one minus six equals zero as required."
+        },
+        {
+          "n": 7,
+          "display": "x^{3} − 7x − 6 (option D)",
+          "tag": "answer",
+          "title": "Cubic polynomial",
+          "narration": "The polynomial with those three zeros is x cubed minus seven x minus six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-020",
+      "questionId": "math-jamb-2017-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "LCM(2, 3) = 6",
+          "tag": "lcm",
+          "title": "Combine both divisors",
+          "narration": "An integer divisible by both two and three must be divisible by their least common multiple, six."
+        },
+        {
+          "n": 2,
+          "display": "Multiples of 6 in 1 to 20: 6, 12, 18",
+          "tag": "list",
+          "title": "List favourable integers",
+          "narration": "From one through twenty, there are three multiples of six: six, twelve, and eighteen."
+        },
+        {
+          "n": 3,
+          "display": "P = \\frac{favourable}{total} = \\frac{3}{20}",
+          "tag": "formula",
+          "title": "Apply probability formula",
+          "narration": "Divide three favourable integers by the twenty integers in total."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{3}{20} (option C)",
+          "tag": "answer",
+          "title": "Required probability",
+          "narration": "The probability that the selected integer is divisible by both two and three is three over twenty."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P(event) = \\frac{favourable outcomes}{total outcomes}",
+          "tag": "formula",
+          "title": "State probability formula",
+          "narration": "Because every integer from one to twenty has an equal chance, probability is the count of favourable integers over the total count."
+        },
+        {
+          "n": 2,
+          "display": "Total integers from 1 to 20 = 20",
+          "tag": "total",
+          "title": "Count total integers",
+          "narration": "There are twenty possible integers in the sample space from one through twenty."
+        },
+        {
+          "n": 3,
+          "display": "LCM(2, 3) = 6",
+          "tag": "lcm",
+          "title": "Find least common multiple",
+          "narration": "To be divisible by both two and three at once, a number must be a multiple of six."
+        },
+        {
+          "n": 4,
+          "display": "Multiples of 6: 6, 12, 18 (3 numbers)",
+          "tag": "favourable",
+          "title": "List qualifying integers",
+          "narration": "The multiples of six up to twenty are six, twelve, and eighteen; twenty-four is too large, so only three integers qualify."
+        },
+        {
+          "n": 5,
+          "display": "P = \\frac{3}{20}",
+          "tag": "divide",
+          "title": "Compute probability",
+          "narration": "Place the three qualifying integers over the twenty total integers."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{3}{20} (option C)",
+          "tag": "answer",
+          "title": "Final probability",
+          "narration": "Since three and twenty share no common factor other than one, the probability is three twentieths."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-021",
+      "questionId": "math-jamb-2017-021",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Selling price per goat = 75% × 4,000 = ₦3,000",
+          "tag": "unit price",
+          "title": "Find sale price each",
+          "narration": "A twenty-five percent loss means each goat sells for seventy-five percent of four thousand naira, which is three thousand naira."
+        },
+        {
+          "n": 2,
+          "display": "Number of goats = \\frac{180,000}{3,000}",
+          "tag": "divide",
+          "title": "Divide total proceeds",
+          "narration": "Divide the total sales of one hundred and eighty thousand naira by three thousand naira per goat."
+        },
+        {
+          "n": 3,
+          "display": "60 (option A)",
+          "tag": "answer",
+          "title": "Number of goats",
+          "narration": "The trader bought sixty goats."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "100% − 25% = 75%",
+          "tag": "percent",
+          "title": "Remaining percentage",
+          "narration": "Selling at a twenty-five percent loss means the trader receives seventy-five percent of the cost price."
+        },
+        {
+          "n": 2,
+          "display": "SP per goat = \\frac{75}{100} × 4,000 = ₦3,000",
+          "tag": "unit sp",
+          "title": "Sale price per goat",
+          "narration": "Take three quarters of four thousand naira to find that each goat sold for three thousand naira."
+        },
+        {
+          "n": 3,
+          "display": "Count = \\frac{Total selling price}{SP per goat}",
+          "tag": "formula",
+          "title": "Set up division",
+          "narration": "Divide the total money received from all goats by the selling price of one goat."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{180,000}{3,000} = 60",
+          "tag": "divide",
+          "title": "Cancel zeros and divide",
+          "narration": "Cancel three zeros from top and bottom, then divide one hundred and eighty by three to get sixty."
+        },
+        {
+          "n": 5,
+          "display": "Check: 60 × 4,000 = 240,000; 75% = 180,000",
+          "tag": "check",
+          "title": "Check total loss",
+          "narration": "Check: sixty goats cost two hundred and forty thousand naira, and subtracting a twenty-five percent loss of sixty thousand leaves one hundred and eighty thousand."
+        },
+        {
+          "n": 6,
+          "display": "60 (option A)",
+          "tag": "answer",
+          "title": "Total goats bought",
+          "narration": "The trader bought sixty goats."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-025",
+      "questionId": "math-jamb-2017-025",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "3\\det{-3,-5;2,1} − 5\\det{6,-5;-2,1} + (−4)\\det{6,-3;-2,2}",
+          "tag": "cofactors",
+          "title": "Expand along row 1",
+          "narration": "Expand across the top row with alternating plus, minus, plus signs."
+        },
+        {
+          "n": 2,
+          "display": "3(−3 + 10) − 5(6 − 10) − 4(12 − 6)",
+          "tag": "minors",
+          "title": "Evaluate 2 × 2 minors",
+          "narration": "Evaluate each two by two determinant using main diagonal minus other diagonal."
+        },
+        {
+          "n": 3,
+          "display": "3(7) − 5(−4) − 4(6) = 21 + 20 − 24",
+          "tag": "multiply",
+          "title": "Multiply terms out",
+          "narration": "Multiply each entry by its minor; note minus five times minus four gives plus twenty."
+        },
+        {
+          "n": 4,
+          "display": "17 (option A)",
+          "tag": "answer",
+          "title": "Determinant of N",
+          "narration": "Adding twenty-one and twenty gives forty-one, and subtracting twenty-four gives seventeen."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Signs: +, −, + along row 1",
+          "tag": "signs",
+          "title": "Set cofactor signs",
+          "narration": "When expanding a three by three determinant across the first row, the three terms carry signs plus, minus, and plus."
+        },
+        {
+          "n": 2,
+          "display": "3\\det{-3,-5;2,1} − 5\\det{6,-5;-2,1} − 4\\det{6,-3;-2,2}",
+          "tag": "minors",
+          "title": "Write the three minors",
+          "narration": "For each first-row number, cross out its row and column to form the remaining two by two determinant."
+        },
+        {
+          "n": 3,
+          "display": "Minor 1: (−3)(1) − (−5)(2) = −3 + 10 = 7",
+          "tag": "first",
+          "title": "Evaluate first minor",
+          "narration": "In the first minor, minus three times one is minus three, and subtracting minus ten adds ten to give seven."
+        },
+        {
+          "n": 4,
+          "display": "Minor 2: (6)(1) − (−5)(−2) = 6 − 10 = −4",
+          "tag": "second",
+          "title": "Evaluate second minor",
+          "narration": "In the second minor, six times one is six, and minus five times minus two is positive ten, so six minus ten is minus four."
+        },
+        {
+          "n": 5,
+          "display": "Minor 3: (6)(2) − (−3)(−2) = 12 − 6 = 6",
+          "tag": "third",
+          "title": "Evaluate third minor",
+          "narration": "In the third minor, six times two is twelve, and minus three times minus two is six, leaving twelve minus six equal to six."
+        },
+        {
+          "n": 6,
+          "display": "3(7) − 5(−4) − 4(6) = 21 + 20 − 24 = 17",
+          "tag": "combine",
+          "title": "Combine the three terms",
+          "narration": "Watch the double minus sign on minus five times minus four, which makes plus twenty; twenty-one plus twenty minus twenty-four gives seventeen."
+        },
+        {
+          "n": 7,
+          "display": "17 (option A)",
+          "tag": "answer",
+          "title": "Final determinant",
+          "narration": "The determinant of matrix N is seventeen."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-027",
+      "questionId": "math-jamb-2017-027",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{2 − \\sqrt{5}}{3 − \\sqrt{5}} × \\frac{3 + \\sqrt{5}}{3 + \\sqrt{5}}",
+          "tag": "conjugate",
+          "title": "Multiply by conjugate",
+          "narration": "Multiply numerator and denominator by three plus root five, the conjugate of the denominator."
+        },
+        {
+          "n": 2,
+          "display": "Denominator: 3^{2} − (\\sqrt{5})^{2} = 9 − 5 = 4",
+          "tag": "bottom",
+          "title": "Simplify denominator",
+          "narration": "Difference of squares clears the root in the denominator to give nine minus five equals four."
+        },
+        {
+          "n": 3,
+          "display": "Numerator: 6 + 2\\sqrt{5} − 3\\sqrt{5} − 5 = 1 − \\sqrt{5}",
+          "tag": "top",
+          "title": "Expand numerator",
+          "narration": "Expand the top brackets and combine six minus five to one, and two root five minus three root five to minus root five."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1 − \\sqrt{5}}{4} (option B)",
+          "tag": "answer",
+          "title": "Rationalised fraction",
+          "narration": "The rationalised expression is one minus root five all over four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Conjugate of 3 − \\sqrt{5} is 3 + \\sqrt{5}",
+          "tag": "conjugate",
+          "title": "Identify the conjugate",
+          "narration": "To remove the surd from three minus root five, flip the middle sign to get its conjugate, three plus root five."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{(2 − \\sqrt{5})(3 + \\sqrt{5})}{(3 − \\sqrt{5})(3 + \\sqrt{5})}",
+          "tag": "multiply",
+          "title": "Multiply top and bottom",
+          "narration": "Multiply both top and bottom by three plus root five so the overall value of the fraction stays unchanged."
+        },
+        {
+          "n": 3,
+          "display": "(3 − \\sqrt{5})(3 + \\sqrt{5}) = 3^{2} − (\\sqrt{5})^{2} = 9 − 5 = 4",
+          "tag": "denominator",
+          "title": "Difference of squares",
+          "narration": "The denominator is a difference of two squares, so it simplifies cleanly to nine minus five, which is four."
+        },
+        {
+          "n": 4,
+          "display": "Numerator: 2(3 + \\sqrt{5}) − \\sqrt{5}(3 + \\sqrt{5})",
+          "tag": "expand top",
+          "title": "Expand the numerator",
+          "narration": "Multiply each term of the first bracket by three plus root five."
+        },
+        {
+          "n": 5,
+          "display": "6 + 2\\sqrt{5} − 3\\sqrt{5} − 5 = 1 − \\sqrt{5}",
+          "tag": "collect",
+          "title": "Collect like terms",
+          "narration": "Combine the whole numbers six minus five to get one, and combine two root five minus three root five to get minus root five."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{1 − \\sqrt{5}}{4} (option B)",
+          "tag": "answer",
+          "title": "Final rationalised form",
+          "narration": "Put the numerator over the denominator four to get one minus root five over four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-031",
+      "questionId": "math-jamb-2017-031",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = 2(2)^{2} − 1 = 8 − 1 = 7",
+          "tag": "intersection",
+          "title": "Find y at x = 2",
+          "narration": "Plug x equals two into the second graph to find the y value where the two curves meet."
+        },
+        {
+          "n": 2,
+          "display": "4p + q = 7",
+          "tag": "equate",
+          "title": "Substitute into first curve",
+          "narration": "Substitute x equals two and y equals seven into y equals p x squared plus q."
+        },
+        {
+          "n": 3,
+          "display": "4p = 7 − q",
+          "tag": "isolate",
+          "title": "Make p the subject",
+          "narration": "Subtract q from both sides, then divide both sides by four."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{7 − q}{4} (option D)",
+          "tag": "answer",
+          "title": "p in terms of q",
+          "narration": "Therefore p equals seven minus q all over four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "At x = 2: y = 2(2)^{2} − 1 = 7",
+          "tag": "y value",
+          "title": "Find y from second graph",
+          "narration": "Because both graphs pass through the same point at x equals two, first evaluate the known curve at x equals two to get y equals seven."
+        },
+        {
+          "n": 2,
+          "display": "7 = p(2)^{2} + q",
+          "tag": "substitute",
+          "title": "Plug (2, 7) into first curve",
+          "narration": "The point two comma seven also lies on the first curve, so substitute x equals two and y equals seven."
+        },
+        {
+          "n": 3,
+          "display": "4p + q = 7",
+          "tag": "simplify",
+          "title": "Simplify two squared",
+          "narration": "Two squared is four, giving four p plus q equals seven."
+        },
+        {
+          "n": 4,
+          "display": "4p = 7 − q",
+          "tag": "subtract q",
+          "title": "Subtract q from both sides",
+          "narration": "Subtract q from both sides so the term containing p is on its own."
+        },
+        {
+          "n": 5,
+          "display": "p = \\frac{7 − q}{4}",
+          "tag": "divide",
+          "title": "Divide both sides by 4",
+          "narration": "Divide both sides by four to express p in terms of q."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{7 − q}{4} (option D)",
+          "tag": "answer",
+          "title": "Final expression for p",
+          "narration": "So p in terms of q is seven minus q over four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-035",
+      "questionId": "math-jamb-2017-035",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\log_{3} 27 = 3, \\log_{\\frac{1}{4}} 64 = −3",
+          "tag": "numerator",
+          "title": "Evaluate top logarithms",
+          "narration": "Three cubed is twenty-seven, and one quarter to the minus three is sixty-four, so the two top logs are three and minus three."
+        },
+        {
+          "n": 2,
+          "display": "\\log_{3}(\\frac{1}{81}) = −4",
+          "tag": "denominator",
+          "title": "Evaluate bottom logarithm",
+          "narration": "Since one over eighty-one is three to the minus four, the denominator log is minus four."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{3 − (−3)}{−4} = \\frac{6}{−4}",
+          "tag": "substitute",
+          "title": "Combine into fraction",
+          "narration": "Three minus negative three adds to six, divided by minus four."
+        },
+        {
+          "n": 4,
+          "display": "−\\frac{3}{2} (option C)",
+          "tag": "answer",
+          "title": "Simplified value",
+          "narration": "Dividing top and bottom by two simplifies the answer to minus three halves."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "27 = 3^{3} ⇒ \\log_{3} 27 = 3",
+          "tag": "first log",
+          "title": "Evaluate log base 3 of 27",
+          "narration": "Ask what power of three gives twenty-seven; since three cubed is twenty-seven, the first log equals three."
+        },
+        {
+          "n": 2,
+          "display": "64 = 4^{3} = (\\frac{1}{4})^{−3} ⇒ \\log_{\\frac{1}{4}} 64 = −3",
+          "tag": "second log",
+          "title": "Evaluate \\log_{\\frac{1}{4}} 64",
+          "narration": "Because sixty-four is four cubed, flipping one quarter upside down with a negative power gives one quarter to the minus three, so this log is minus three."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{81} = 3^{−4} ⇒ \\log_{3}(\\frac{1}{81}) = −4",
+          "tag": "third log",
+          "title": "Evaluate bottom log",
+          "narration": "Eighty-one is three to the fourth power, so its reciprocal one over eighty-one is three to the minus four, giving minus four."
+        },
+        {
+          "n": 4,
+          "display": "Numerator: 3 − (−3) = 3 + 3 = 6",
+          "tag": "numerator",
+          "title": "Subtract negative number carefully",
+          "narration": "Watch the double minus sign in the numerator: three minus negative three becomes three plus three, which is six."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{6}{−4} = −\\frac{3}{2}",
+          "tag": "reduce",
+          "title": "Divide and simplify",
+          "narration": "Divide six by minus four and cancel two from top and bottom to get minus three over two."
+        },
+        {
+          "n": 6,
+          "display": "−\\frac{3}{2} (option C)",
+          "tag": "answer",
+          "title": "Final value",
+          "narration": "The value of the expression is minus three over two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2017-038",
+      "questionId": "math-jamb-2017-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "RS = 5 cm, RT = 4 cm, OR = 8 cm, ∠RTS = 90°",
+          "tag": "given",
+          "title": "Read prism dimensions",
+          "narration": "From the diagram, hypotenuse R S is five centimetres, base leg R T is four centimetres, and prism length O R is eight centimetres."
+        },
+        {
+          "n": 2,
+          "display": "ST = \\sqrt{5^{2} − 4^{2}} = \\sqrt{9} = 3 cm",
+          "tag": "pythagoras",
+          "title": "Find missing leg ST",
+          "narration": "Use Pythagoras' theorem in right triangle R S T to find that the vertical leg S T is three centimetres."
+        },
+        {
+          "n": 3,
+          "display": "Area = \\frac{1}{2} × 4 × 3 = 6 cm^{2}",
+          "tag": "base area",
+          "title": "Area of triangular end",
+          "narration": "Calculate the triangular cross-sectional area using half times four times three to get six square centimetres."
+        },
+        {
+          "n": 4,
+          "display": "V = 6 × 8 = 48 cm^{3} (option B)",
+          "tag": "answer",
+          "title": "Volume of prism",
+          "narration": "Multiply the cross-sectional area six by the length eight to get forty-eight cubic centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "RS = OP = 5 cm, RT = 4 cm, OR = 8 cm",
+          "tag": "given",
+          "title": "Read diagram labels",
+          "narration": "Read the congruent right-triangular ends: hypotenuse R S equals O P at five centimetres, leg R T is four centimetres, and prism length O R is eight centimetres."
+        },
+        {
+          "n": 2,
+          "display": "RT^{2} + ST^{2} = RS^{2}",
+          "tag": "pythagoras",
+          "title": "Apply Pythagoras' theorem",
+          "narration": "Because angle R T S is ninety degrees, use Pythagoras' theorem on triangle R T S to find the missing leg S T."
+        },
+        {
+          "n": 3,
+          "display": "ST^{2} = 5^{2} − 4^{2} = 25 − 16 = 9 ⇒ ST = 3 cm",
+          "tag": "solve leg",
+          "title": "Calculate height ST",
+          "narration": "Subtract sixteen from twenty-five to get nine, then take the positive square root to get three centimetres."
+        },
+        {
+          "n": 4,
+          "display": "Area = \\frac{1}{2} × 4 × 3 = 6 cm^{2}",
+          "tag": "triangle",
+          "title": "Find end area",
+          "narration": "The area of the right-angled triangular end is half base times height: half of four times three equals six square centimetres."
+        },
+        {
+          "n": 5,
+          "display": "Volume = Area × length = 6 × 8 = 48",
+          "tag": "prism",
+          "title": "Multiply area by length",
+          "narration": "For any prism, multiply the uniform cross-sectional area by its length eight centimetres."
+        },
+        {
+          "n": 6,
+          "display": "48 cm^{3} (option B)",
+          "tag": "answer",
+          "title": "Volume of prism",
+          "narration": "The volume of the triangular prism is forty-eight cubic centimetres."
         }
       ]
     }
