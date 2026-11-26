@@ -14,14 +14,9 @@ const sources = [
   'src/screens/Summary.tsx',
 ]
 const visited = new Set()
-const studySubjects = ['chemistry', 'physics', 'biology', 'mathematics']
-const files = new Set([
-  './data/manifest.json',
-  ...studySubjects.flatMap((subject) => [
-    './data/questions-' + subject + '.json',
-    './data/animations-' + subject + '.json',
-  ]),
-])
+// Subject questions and solutions are not precached. The worker saves each subject's data
+// the first time it is opened, so a student only downloads the subjects they use.
+const files = new Set(['./data/manifest.json'])
 function collect(key) {
   if (visited.has(key)) return
   const chunk = manifest[key]
