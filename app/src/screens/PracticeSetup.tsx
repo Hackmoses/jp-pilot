@@ -59,7 +59,7 @@ export function PracticeSetup({ subject, chapter }: { subject: string; chapter: 
     window.location.hash = '#/practice/run'
   }
   return (
-    <Panel title={(getSubject(subject)?.name ?? subject) + ' practice'} back="#/subjects?mode=practice">
+    <Panel title={(getSubject(subject)?.name ?? subject) + ' practice'} back="#/subjects?mode=practice" backLabel="Subjects">
       {subject === 'english' && <a class="jp-btn jp-btn--full" href="#/practice/passages">Reading passages</a>}
       {status !== 'ready' || !questions.length ? <p class="jp-mode-lead">
         {status === 'loading' ? 'Loading questions…' : status === 'error' ? 'Could not load questions.' : 'No practice questions are available yet.'}

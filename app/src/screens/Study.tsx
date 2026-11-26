@@ -20,7 +20,7 @@ function EnglishCards({ deck, back, open }: { deck: string; back: string; open: 
   const known = Math.min(count, Object.values(cardReviews(deck)).filter(({ box }) => box > 1).length)
 
   if (open && View) return <View deck={deck} title={title} back={back} />
-  return <Panel title={title} subtitle="English Language" back={open ? back : '#/study?subject=english'}>
+  return <Panel title={title} subtitle="English Language" back={open ? back : '#/study?subject=english'} backLabel={open ? title : 'English Language study'}>
     {open ? <p class="jp-mode-lead" role="status">
       {failed ? 'Could not open word cards. Reload the page to try again.' : 'Loading…'}
     </p> : <ModeCard href={back + '&cards=1'} title={`Word cards · ${count} cards`}>
@@ -51,7 +51,7 @@ export function Study({ params }: { params: URLSearchParams }) {
     }
   }, [subject, chapter])
 
-  if (foundation) return <Panel title={foundation.title} subtitle={foundationSection.title} back={subjectHref}>
+  if (foundation) return <Panel title={foundation.title} subtitle={foundationSection.title} back={subjectHref} backLabel={subjectName + ' study'}>
     {Foundation ? <Foundation chapter={foundation.id} title={foundation.title} />
       : <p class="jp-mode-lead" role="status">{foundationFailed ? 'Could not open this topic. Reload to try again.' : 'Loading topic…'}</p>}
   </Panel>
@@ -60,7 +60,7 @@ export function Study({ params }: { params: URLSearchParams }) {
     return <EnglishCards deck={deck} back={studyLink(subject, chapter)} open={params.has('cards')} />
   }
 
-  if (chapter && (subject !== 'english' || conceptLessonTopic(subject, chapter))) return <Panel title={sectionsForSubject.flatMap(({ chapters }) => chapters).find(({ id }) => id === chapter)?.title ?? chapterName(subject, chapter)} subtitle={subjectName} back={subjectHref}>
+  if (chapter && (subject !== 'english' || conceptLessonTopic(subject, chapter))) return <Panel title={sectionsForSubject.flatMap(({ chapters }) => chapters).find(({ id }) => id === chapter)?.title ?? chapterName(subject, chapter)} subtitle={subjectName} back={subjectHref} backLabel={subjectName + ' study'}>
     {Chapter ? <Chapter subject={subject} chapter={chapter} tryIt={tryIt} />
       : <p class="jp-mode-lead" role="status">{chapterFailed ? 'Could not open this topic. Reload to try again.' : 'Loading topic…'}</p>}
   </Panel>
@@ -99,7 +99,7 @@ export function Study({ params }: { params: URLSearchParams }) {
     sum + section.chapters.filter((entry) => studiedTopic(entry.id)).length, 0)
 
   return (
-    <Panel title={subjectName + ' study'} back="#/subjects?mode=study">
+    <Panel title={subjectName + ' study'} back="#/subjects?mode=study" backLabel="Subjects">
       {total === 0 ? <>
         <p class="jp-mode-lead">Lessons for {subjectName} are coming soon.</p>
         <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref}>Practise {subjectName} →</a>
@@ -113,7 +113,7 @@ export function Study({ params }: { params: URLSearchParams }) {
         {sections.map((section) => {
           const done = section.chapters.filter((entry) => studiedTopic(entry.id)).length
           const going = section.chapters.filter((entry) => progressOf(entry.id) === 'progress').length
-          return <details class="jp-card jp-study-section" key={section.id} open={subject === 'english' ? true : undefined}>
+          return <details class="jp-card jp-study-section" key={section.id}>
             <summary>
               <span class="jp-mode-card-title">{section.title}</span>
               <span class="jp-summary-sub">{section.chapters.length} {section.chapters.length === 1 ? 'topic' : 'topics'}{done ? ` · ${done} completed` : ''}{going ? ` · ${going} in progress` : ''}</span>

@@ -1181,3 +1181,11 @@
   white-space: nowrap;
   text-decoration: none;
 }
+
+/* One step back, named for where it goes. */
+.jp-mode-hero .jp-mode-crumb {
+  align-self: flex-start;
+  margin-left: -10px;
+  font-size: 14px;
+  font-weight: 600;
+}

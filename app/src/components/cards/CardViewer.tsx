@@ -313,7 +313,7 @@ export function CardViewer({ deck, title, back }: { deck: string; title: string;
         : 'Space or tap to flip'
 
   return (
-    <Panel title={title} subtitle={hasQuestion ? 'Past question' : 'Word cards'} back={back}>
+    <Panel title={title} subtitle={hasQuestion ? 'Past question' : 'Word cards'} back={back} backLabel={title}>
       {failed ? (
         <div class="jp-mode-list">
           <p class="jp-mode-lead" role="status">Could not load this deck.</p>

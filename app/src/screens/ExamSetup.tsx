@@ -64,14 +64,14 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
   }
 
   if (rules && ready && !loaded) {
-    return <Panel title="Exam rules" back="#/exam"><p class="jp-mode-lead" role="status">Loading questions…</p></Panel>
+    return <Panel title="Exam rules" back="#/exam" backLabel="Exam setup"><p class="jp-mode-lead" role="status">Loading questions…</p></Panel>
   }
 
   if (rules && ready) {
     const minutes = pilot ? EXAM_MINUTES.pilot : EXAM_MINUTES.full
     const total = subjects.reduce((sum, id) => sum + examCount(id, getQuestionsBySubject(id).length, !pilot), 0)
     return (
-      <Panel title="Exam rules" back="#/exam">
+      <Panel title="Exam rules" back="#/exam" backLabel="Exam setup">
         <section class="jp-card">
           <ul class="jp-revisit-list">
             <li>{total} questions in {minutes} minutes, drawn at random. Questions and options are in a new order every time.</li>

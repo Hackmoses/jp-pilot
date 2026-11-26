@@ -165,12 +165,12 @@ export function ReadingPassages({ setId, retry }: { setId: string | null; retry:
   }, [setId, known, retry])
 
   if (run) return <PassageRun set={run.set} questions={run.questions} initial={run.attempt} />
-  if (setId) return <Panel title="Reading passages" back={list}>
+  if (setId) return <Panel title="Reading passages" back={list} backLabel="Reading passages">
     <p class="jp-mode-lead" role="status">{failed || !known ? 'Could not open this passage.' : 'Loading passage…'}</p>
   </Panel>
 
   const current = getAttempt('practice')?.passageId
-  return <Panel title="Reading passages" back={setup}>
+  return <Panel title="Reading passages" back={setup} backLabel="English practice">
     <div class="jp-mode-list">{metadata.map(({ id, type, year, count }) =>
       <ModeCard key={id} href={list + '?set=' + id} title={passageNames[type]} pill={'JAMB ' + year}>
         {count} questions{current === id ? ' · Resume' : ''}
