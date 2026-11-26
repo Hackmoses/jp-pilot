@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 30,
+  "count": 40,
   "animations": [
     {
       "id": "anim-math-jamb-2014-008",
@@ -2378,6 +2378,813 @@
           "tag": "answer",
           "title": "Final simplified value",
           "narration": "The simplified value is twenty."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-005",
+      "questionId": "math-jamb-2016-005",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{10}{3} − \\frac{5}{4} × \\frac{2}{3} + \\frac{7}{5}",
+          "tag": "convert",
+          "title": "Change to improper fractions",
+          "narration": "Convert all mixed numbers into improper fractions before performing any operations."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{5}{4} × \\frac{2}{3} = \\frac{10}{12} = \\frac{5}{6}",
+          "tag": "multiply",
+          "title": "Multiply before adding",
+          "narration": "By order of operations, evaluate the multiplication five quarters times two thirds first to get five sixths."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{10}{3} − \\frac{5}{6} + \\frac{7}{5} = \\frac{100 − 25 + 42}{30}",
+          "tag": "combine",
+          "title": "Use common denominator 30",
+          "narration": "Rewrite the three fractions over their lowest common denominator thirty and combine the numerators."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{117}{30} = \\frac{39}{10} = 3 \\frac{9}{10} (option B)",
+          "tag": "answer",
+          "title": "Reduce to mixed number",
+          "narration": "Dividing top and bottom by three gives thirty-nine tenths, which equals three and nine tenths."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "3 \\frac{1}{3} = \\frac{10}{3}, 1 \\frac{1}{4} = \\frac{5}{4}, 1 \\frac{2}{5} = \\frac{7}{5}",
+          "tag": "improper",
+          "title": "Convert mixed numbers",
+          "narration": "Turn each mixed number into an improper fraction so multiplication and common denominators are straightforward."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{5}{4} × \\frac{2}{3} = \\frac{5}{2 × 3} = \\frac{5}{6}",
+          "tag": "bodmas",
+          "title": "Do multiplication first",
+          "narration": "Multiplication takes priority over addition and subtraction; cancel two between top and bottom to get five sixths."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{10}{3} − \\frac{5}{6} + \\frac{7}{5}",
+          "tag": "rewrite",
+          "title": "Substitute product back",
+          "narration": "Replace the middle product with five sixths."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{100}{30} − \\frac{25}{30} + \\frac{42}{30} = \\frac{117}{30}",
+          "tag": "lcm 30",
+          "title": "Combine over LCM 30",
+          "narration": "The least common multiple of three, six, and five is thirty; scale each fraction and compute one hundred minus twenty-five plus forty-two equals one hundred and seventeen."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{117 ÷ 3}{30 ÷ 3} = \\frac{39}{10} = 3 \\frac{9}{10}",
+          "tag": "reduce",
+          "title": "Reduce and write mixed form",
+          "narration": "Divide both one hundred and seventeen and thirty by three to get thirty-nine tenths, or three and nine tenths."
+        },
+        {
+          "n": 6,
+          "display": "3 \\frac{9}{10} (option B)",
+          "tag": "answer",
+          "title": "Final simplified value",
+          "narration": "The simplified result is three and nine tenths."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-006",
+      "questionId": "math-jamb-2016-006",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "1^{2} − (a − b)^{2}",
+          "tag": "pattern",
+          "title": "Spot difference of squares",
+          "narration": "Notice one equals one squared, so this is a difference of two squares with terms one and a minus b."
+        },
+        {
+          "n": 2,
+          "display": "[1 − (a − b)][1 + (a − b)]",
+          "tag": "factorise",
+          "title": "Apply difference of squares",
+          "narration": "Factorise using x squared minus y squared equals x minus y times x plus y."
+        },
+        {
+          "n": 3,
+          "display": "1 − (a − b) = 1 − a + b",
+          "tag": "signs",
+          "title": "Distribute minus sign",
+          "narration": "In the first bracket, subtracting minus b flips its sign to plus b."
+        },
+        {
+          "n": 4,
+          "display": "(1 − a + b)(1 + a − b) (option B)",
+          "tag": "answer",
+          "title": "Factored expression",
+          "narration": "Clearing both inner parentheses gives one minus a plus b times one plus a minus b."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Let x = 1, y = (a − b) ⇒ x^{2} − y^{2}",
+          "tag": "group",
+          "title": "Treat (a − b) as one term",
+          "narration": "Think of a minus b as a single letter y so one minus y squared clearly matches the difference of squares identity."
+        },
+        {
+          "n": 2,
+          "display": "x^{2} − y^{2} = (x − y)(x + y)",
+          "tag": "identity",
+          "title": "State difference of squares",
+          "narration": "Any difference of two squares factors into the difference of the bases times their sum."
+        },
+        {
+          "n": 3,
+          "display": "[1 − (a − b)][1 + (a − b)]",
+          "tag": "substitute",
+          "title": "Substitute back x and y",
+          "narration": "Put one for x and open bracket a minus b close bracket for y, keeping the brackets around a minus b."
+        },
+        {
+          "n": 4,
+          "display": "(1 − a + b)(1 + a − b)",
+          "tag": "remove brackets",
+          "title": "Clear inner brackets carefully",
+          "narration": "Distribute the minus sign across a minus b in the first factor to turn minus b into plus b, while the second factor keeps plus a minus b."
+        },
+        {
+          "n": 5,
+          "display": "(1 − a + b)(1 + a − b) (option B)",
+          "tag": "answer",
+          "title": "Complete factorisation",
+          "narration": "The factored form is one minus a plus b times one plus a minus b."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-007",
+      "questionId": "math-jamb-2016-007",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "12(\\frac{x}{2} + \\frac{x}{3} + \\frac{x}{4}) < 12(1)",
+          "tag": "clear",
+          "title": "Multiply both sides by 12",
+          "narration": "Multiply both sides by twelve, the common denominator of two, three, and four, keeping the less-than sign."
+        },
+        {
+          "n": 2,
+          "display": "6x + 4x + 3x < 12",
+          "tag": "expand",
+          "title": "Simplify left side",
+          "narration": "Multiply each term by twelve to get six x plus four x plus three x less than twelve."
+        },
+        {
+          "n": 3,
+          "display": "13x < 12",
+          "tag": "collect",
+          "title": "Combine like terms",
+          "narration": "Add six plus four plus three to get thirteen x less than twelve."
+        },
+        {
+          "n": 4,
+          "display": "x < \\frac{12}{13} (option A)",
+          "tag": "answer",
+          "title": "Divide both sides by 13",
+          "narration": "Divide both sides by positive thirteen to isolate x, giving x less than twelve over thirteen."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "LCM(2, 3, 4) = 12",
+          "tag": "lcm",
+          "title": "Find common denominator",
+          "narration": "Find the least common multiple of denominators two, three, and four, which is twelve."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{6x + 4x + 3x}{12} < 1",
+          "tag": "add",
+          "title": "Combine left fractions",
+          "narration": "Convert each term on the left to denominator twelve: six x, four x, and three x over twelve."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{13x}{12} < 1",
+          "tag": "combine",
+          "title": "Sum the numerators",
+          "narration": "Add six, four, and three to get thirteen x over twelve is less than one."
+        },
+        {
+          "n": 4,
+          "display": "13x < 12",
+          "tag": "multiply",
+          "title": "Multiply both sides by 12",
+          "narration": "Multiply both sides by positive twelve so the inequality direction stays unchanged."
+        },
+        {
+          "n": 5,
+          "display": "x < \\frac{12}{13}",
+          "tag": "divide",
+          "title": "Divide both sides by 13",
+          "narration": "Divide both sides by positive thirteen to get x on its own."
+        },
+        {
+          "n": 6,
+          "display": "x < \\frac{12}{13} (option A)",
+          "tag": "answer",
+          "title": "Final inequality",
+          "narration": "The solution is x strictly less than twelve thirteenths."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-017",
+      "questionId": "math-jamb-2016-017",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f(x) = 4x − x^{2}",
+          "tag": "expand",
+          "title": "Expand expression",
+          "narration": "Multiply x across four minus x to write four x minus x squared."
+        },
+        {
+          "n": 2,
+          "display": "f(x) = 4 − (x − 2)^{2}",
+          "tag": "complete square",
+          "title": "Complete the square",
+          "narration": "Rewrite four x minus x squared as four minus open bracket x minus two close bracket squared."
+        },
+        {
+          "n": 3,
+          "display": "(x − 2)^{2} = 0 ⇒ x − 2 = 0",
+          "tag": "vertex",
+          "title": "Minimum subtracted square",
+          "narration": "Since a square is always zero or positive, four minus the square is largest when x minus two squared equals zero."
+        },
+        {
+          "n": 4,
+          "display": "x = 2 (option C)",
+          "tag": "answer",
+          "title": "x at maximum",
+          "narration": "Solving x minus two equals zero gives x equals two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f(x) = 4x − x^{2} = −(x^{2} − 4x)",
+          "tag": "expand",
+          "title": "Expand and group",
+          "narration": "Expand the product to four x minus x squared and factor out minus one before completing the square."
+        },
+        {
+          "n": 2,
+          "display": "−[(x − 2)^{2} − 4] = 4 − (x − 2)^{2}",
+          "tag": "square",
+          "title": "Complete the square",
+          "narration": "Halve the coefficient minus four to get minus two, writing x squared minus four x as x minus two squared minus four."
+        },
+        {
+          "n": 3,
+          "display": "(x − 2)^{2} ≥ 0 for all x",
+          "tag": "property",
+          "title": "Maximize 4 minus square",
+          "narration": "Because subtracting any positive amount makes four smaller, f of x reaches its highest value when the squared term equals zero."
+        },
+        {
+          "n": 4,
+          "display": "x − 2 = 0 ⇒ x = 2",
+          "tag": "solve",
+          "title": "Add 2 to both sides",
+          "narration": "Set x minus two equal to zero and add two to both sides to get x equals two."
+        },
+        {
+          "n": 5,
+          "display": "Check by derivative: f'(x) = 4 − 2x = 0 ⇒ x = 2",
+          "tag": "check",
+          "title": "Confirm with calculus",
+          "narration": "Check: setting the derivative four minus two x to zero also gives x equals two, with maximum value four."
+        },
+        {
+          "n": 6,
+          "display": "x = 2 (option C)",
+          "tag": "answer",
+          "title": "Maximum at x = 2",
+          "narration": "The function reaches its maximum when x equals two."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-027",
+      "questionId": "math-jamb-2016-027",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f(1) = p + q + 1 = 2 ⇒ p + q = 1",
+          "tag": "eq 1",
+          "title": "Remainder from (m − 1)",
+          "narration": "By the remainder theorem, plugging m equals one gives remainder two, so p plus q equals one."
+        },
+        {
+          "n": 2,
+          "display": "f(−1) = p − q + 1 = 4 ⇒ p − q = 3",
+          "tag": "eq 2",
+          "title": "Remainder from (m + 1)",
+          "narration": "Plugging m equals minus one gives remainder four, so p minus q equals three."
+        },
+        {
+          "n": 3,
+          "display": "(p + q) + (p − q) = 1 + 3 ⇒ 2p = 4 ⇒ p = 2",
+          "tag": "add",
+          "title": "Add equations to find p",
+          "narration": "Add the two equations so q cancels out, giving two p equals four and p equals two."
+        },
+        {
+          "n": 4,
+          "display": "(2, −1) (option A)",
+          "tag": "answer",
+          "title": "Values of p and q",
+          "narration": "Substituting p equals two back gives q equals minus one, so the ordered pair is two, minus one."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f(m) = pm^{2} + qm + 1",
+          "tag": "theorem",
+          "title": "Set up remainder theorem",
+          "narration": "Dividing f of m by m minus r leaves remainder f of r, so we evaluate at m equals one and m equals minus one."
+        },
+        {
+          "n": 2,
+          "display": "f(1) = p(1)^{2} + q(1) + 1 = 2 ⇒ p + q = 1",
+          "tag": "first eq",
+          "title": "Use divisor (m − 1)",
+          "narration": "Set m equals one equal to remainder two, then subtract one from both sides to get p plus q equals one."
+        },
+        {
+          "n": 3,
+          "display": "f(−1) = p(−1)^{2} + q(−1) + 1 = 4 ⇒ p − q = 3",
+          "tag": "second eq",
+          "title": "Use divisor (m + 1)",
+          "narration": "Set m equals minus one equal to remainder four, then subtract one from both sides to get p minus q equals three."
+        },
+        {
+          "n": 4,
+          "display": "2p = 1 + 3 = 4 ⇒ p = 2",
+          "tag": "solve p",
+          "title": "Add both equations",
+          "narration": "Add the two equations together: plus q and minus q cancel, leaving two p equals four, so divide by two to get p equals two."
+        },
+        {
+          "n": 5,
+          "display": "2 + q = 1 ⇒ q = 1 − 2 = −1",
+          "tag": "solve q",
+          "title": "Find q from first equation",
+          "narration": "Substitute two for p into p plus q equals one and subtract two from both sides to find q equals minus one."
+        },
+        {
+          "n": 6,
+          "display": "Check m = −1: 2(1) − (−1) + 1 = 4",
+          "tag": "check",
+          "title": "Verify second remainder",
+          "narration": "Check at m equals minus one: two plus one plus one equals four."
+        },
+        {
+          "n": 7,
+          "display": "(2, −1) (option A)",
+          "tag": "answer",
+          "title": "p and q in order",
+          "narration": "Therefore p equals two and q equals minus one."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-028",
+      "questionId": "math-jamb-2016-028",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{2x^{3}}{2x} = x^{2} ⇒ rem: 10x^{2} + 17x + 6",
+          "tag": "term 1",
+          "title": "Divide leading term by 2x",
+          "narration": "Divide two x cubed by two x to get x squared, then subtract x squared times two x plus one to leave ten x squared plus seventeen x plus six."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{10x^{2}}{2x} = 5x ⇒ rem: 12x + 6",
+          "tag": "term 2",
+          "title": "Find the x term",
+          "narration": "Divide ten x squared by two x to get plus five x, then subtract five x times two x plus one to leave twelve x plus six."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{12x}{2x} = 6 ⇒ rem: 0",
+          "tag": "term 3",
+          "title": "Find constant term",
+          "narration": "Divide twelve x by two x to get plus six; subtracting six times two x plus one leaves zero remainder."
+        },
+        {
+          "n": 4,
+          "display": "x^{2} + 5x + 6 (option A)",
+          "tag": "answer",
+          "title": "Quotient polynomial",
+          "narration": "The quotient is x squared plus five x plus six."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "\\frac{2x^{3}}{2x} = x^{2}",
+          "tag": "first term",
+          "title": "Divide first leading term",
+          "narration": "Start polynomial long division by dividing the highest term two x cubed by two x to obtain x squared."
+        },
+        {
+          "n": 2,
+          "display": "(2x^{3} + 11x^{2}) − x^{2}(2x + 1) = 10x^{2}",
+          "tag": "sub 1",
+          "title": "Multiply and subtract x^{2}(2x+1)",
+          "narration": "Subtract two x cubed plus x squared from the top terms to bring down ten x squared plus seventeen x."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{10x^{2}}{2x} = 5x",
+          "tag": "second term",
+          "title": "Divide new leading term",
+          "narration": "Divide ten x squared by two x to get the next quotient term, plus five x."
+        },
+        {
+          "n": 4,
+          "display": "(10x^{2} + 17x) − 5x(2x + 1) = 12x",
+          "tag": "sub 2",
+          "title": "Subtract 5x(2x+1)",
+          "narration": "Subtract ten x squared plus five x to leave twelve x, then bring down plus six."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{12x}{2x} = 6; (12x + 6) − 6(2x + 1) = 0",
+          "tag": "final term",
+          "title": "Divide 12x and finish",
+          "narration": "Divide twelve x by two x to get plus six, and six times two x plus one cancels twelve x plus six with zero remainder."
+        },
+        {
+          "n": 6,
+          "display": "Check: (2x + 1)(x^{2} + 5x + 6) = 2x^{3} + 11x^{2} + 17x + 6",
+          "tag": "check",
+          "title": "Multiply back to check",
+          "narration": "Expanding two x plus one times x squared plus five x plus six recovers every term of the cubic."
+        },
+        {
+          "n": 7,
+          "display": "x^{2} + 5x + 6 (option A)",
+          "tag": "answer",
+          "title": "Exact quotient",
+          "narration": "Therefore dividing gives x squared plus five x plus six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-033",
+      "questionId": "math-jamb-2016-033",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{1.432 × 10^{−4}}{1.94 × 10^{6}}",
+          "tag": "standard form",
+          "title": "Write in standard form",
+          "narration": "Express the numerator as one point four three two times ten to the minus four and the denominator as one point nine four times ten to the sixth."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1.432}{1.94} × 10^{−4 − 6} ≈ 0.73814 × 10^{−10}",
+          "tag": "divide",
+          "title": "Divide numbers, subtract powers",
+          "narration": "Divide one point four three two by one point nine four and subtract exponent six from minus four."
+        },
+        {
+          "n": 3,
+          "display": "7.3814 × 10^{−11}",
+          "tag": "normalise",
+          "title": "Shift k into [1, 10)",
+          "narration": "Move the decimal one place right to make k between one and ten, decreasing the exponent from minus ten to minus eleven."
+        },
+        {
+          "n": 4,
+          "display": "7.381 and −11 (option A)",
+          "tag": "answer",
+          "title": "Round k to 3 d.p.",
+          "narration": "Rounding seven point three eight one four to three decimal places gives seven point three eight one and n equals minus eleven."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "0.0001432 = 1.432 × 10^{−4}, 1940000 = 1.94 × 10^{6}",
+          "tag": "convert",
+          "title": "Convert both to standard form",
+          "narration": "Count four places right for the small numerator and six places left for the large denominator."
+        },
+        {
+          "n": 2,
+          "display": "10^{−4} ÷ 10^{6} = 10^{−4 − 6} = 10^{−10}",
+          "tag": "exponents",
+          "title": "Subtract powers of ten",
+          "narration": "When dividing powers of ten, subtract the bottom exponent six from minus four to get ten to the minus ten."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1.432}{1.94} ≈ 0.738144",
+          "tag": "mantissa",
+          "title": "Divide the decimal parts",
+          "narration": "Divide one point four three two by one point nine four, keeping extra digits until rounding at the very end."
+        },
+        {
+          "n": 4,
+          "display": "0.738144 × 10^{−10} = 7.38144 × 10^{−11}",
+          "tag": "normalise",
+          "title": "Normalise k to [1, 10)",
+          "narration": "Rewrite zero point seven three eight one four as seven point three eight one four times ten to the minus one, which brings the overall power of ten to minus eleven."
+        },
+        {
+          "n": 5,
+          "display": "7.381|44 → 7.381",
+          "tag": "round",
+          "title": "Round k to 3 decimal places",
+          "narration": "The fourth decimal digit is four, which is less than five, so round down to seven point three eight one."
+        },
+        {
+          "n": 6,
+          "display": "7.381 and −11 (option A)",
+          "tag": "answer",
+          "title": "Values of k and n",
+          "narration": "Thus k is seven point three eight one and n is minus eleven."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-034",
+      "questionId": "math-jamb-2016-034",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Boys total = 30 × 6 = 180",
+          "tag": "boys",
+          "title": "Find boys' total score",
+          "narration": "Multiply thirty boys by their mean score of six to get a boys total of one hundred and eighty."
+        },
+        {
+          "n": 2,
+          "display": "Girls total = 468 − 180 = 288",
+          "tag": "girls",
+          "title": "Find girls' total score",
+          "narration": "Subtract the boys total one hundred and eighty from the combined total four hundred and sixty-eight."
+        },
+        {
+          "n": 3,
+          "display": "x = \\frac{288}{8} = 36",
+          "tag": "divide",
+          "title": "Divide by girls' mean 8",
+          "narration": "Divide the girls total two hundred and eighty-eight by the girls mean score eight."
+        },
+        {
+          "n": 4,
+          "display": "36 (option C)",
+          "tag": "answer",
+          "title": "Number of girls",
+          "narration": "There were thirty-six girls who sat the test."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Total score = count × mean",
+          "tag": "formula",
+          "title": "Link total to mean",
+          "narration": "Recall that any group's total score equals the number of students times that group's mean score."
+        },
+        {
+          "n": 2,
+          "display": "Boys total = 30 × 6 = 180",
+          "tag": "boys total",
+          "title": "Compute boys' total",
+          "narration": "Multiply thirty boys by six to find the boys scored one hundred and eighty points combined."
+        },
+        {
+          "n": 3,
+          "display": "180 + Girls total = 468 ⇒ Girls total = 288",
+          "tag": "subtract",
+          "title": "Subtract from combined total",
+          "narration": "Subtract one hundred and eighty from both sides to find the girls contributed two hundred and eighty-eight points."
+        },
+        {
+          "n": 4,
+          "display": "8x = 288 ⇒ x = \\frac{288}{8} = 36",
+          "tag": "solve x",
+          "title": "Divide both sides by 8",
+          "narration": "Each of the x girls averaged eight points, so divide two hundred and eighty-eight by eight to find x equals thirty-six."
+        },
+        {
+          "n": 5,
+          "display": "Check: 30(6) + 36(8) = 180 + 288 = 468",
+          "tag": "check",
+          "title": "Check combined total",
+          "narration": "Check: one hundred and eighty plus two hundred and eighty-eight equals four hundred and sixty-eight."
+        },
+        {
+          "n": 6,
+          "display": "36 (option C)",
+          "tag": "answer",
+          "title": "Number of girls x",
+          "narration": "Therefore x equals thirty-six."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-035",
+      "questionId": "math-jamb-2016-035",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "5\\sqrt{7} − 7\\sqrt{5} = \\sqrt{35}(\\sqrt{5} − \\sqrt{7})",
+          "tag": "factor",
+          "title": "Factor out \\sqrt{35}",
+          "narration": "Since five is root five squared and seven is root seven squared, factor root thirty-five out of the numerator."
+        },
+        {
+          "n": 2,
+          "display": "= −\\sqrt{35}(\\sqrt{7} − \\sqrt{5})",
+          "tag": "sign flip",
+          "title": "Reverse order with minus",
+          "narration": "Reverse root five minus root seven into minus open bracket root seven minus root five close bracket to match the denominator."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{−\\sqrt{35}(\\sqrt{7} − \\sqrt{5})}{\\sqrt{7} − \\sqrt{5}}",
+          "tag": "cancel",
+          "title": "Cancel common bracket",
+          "narration": "Cancel root seven minus root five from numerator and denominator."
+        },
+        {
+          "n": 4,
+          "display": "−\\sqrt{35} (option C)",
+          "tag": "answer",
+          "title": "Simplified surd",
+          "narration": "The rationalised value is minus root thirty-five."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "5\\sqrt{7} = \\sqrt{5} × \\sqrt{5}\\sqrt{7} = \\sqrt{35}\\sqrt{5}",
+          "tag": "rewrite 1",
+          "title": "Factor 5 as \\sqrt{5}\\sqrt{5}",
+          "narration": "Write five as root five times root five, then pair one root five with root seven to form root thirty-five times root five."
+        },
+        {
+          "n": 2,
+          "display": "7\\sqrt{5} = \\sqrt{7} × \\sqrt{7}\\sqrt{5} = \\sqrt{35}\\sqrt{7}",
+          "tag": "rewrite 2",
+          "title": "Factor 7 as \\sqrt{7}\\sqrt{7}",
+          "narration": "Similarly write seven root five as root thirty-five times root seven."
+        },
+        {
+          "n": 3,
+          "display": "Numerator = \\sqrt{35}(\\sqrt{5} − \\sqrt{7}) = −\\sqrt{35}(\\sqrt{7} − \\sqrt{5})",
+          "tag": "factor",
+          "title": "Take out −\\sqrt{35}",
+          "narration": "Factor out root thirty-five, then pull out a negative sign so the bracket order matches the denominator."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{−\\sqrt{35}(\\sqrt{7} − \\sqrt{5})}{\\sqrt{7} − \\sqrt{5}} = −\\sqrt{35}",
+          "tag": "cancel",
+          "title": "Cancel (\\sqrt{7} − \\sqrt{5})",
+          "narration": "Cancel the identical non-zero factor root seven minus root five from top and bottom."
+        },
+        {
+          "n": 5,
+          "display": "−\\sqrt{35} (option C)",
+          "tag": "answer",
+          "title": "Final simplified value",
+          "narration": "The expression simplifies to minus root thirty-five."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2016-036",
+      "questionId": "math-jamb-2016-036",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "x − 2y = 11 ⇒ x = 11 + 2y",
+          "tag": "rearrange",
+          "title": "Make x the subject",
+          "narration": "Add two y to both sides of the second equation to express x in terms of y."
+        },
+        {
+          "n": 2,
+          "display": "2(11 + 2y) + 3y = 1 ⇒ 22 + 7y = 1",
+          "tag": "substitute",
+          "title": "Substitute into first equation",
+          "narration": "Replace x in the first equation and simplify to twenty-two plus seven y equals one."
+        },
+        {
+          "n": 3,
+          "display": "7y = −21 ⇒ y = −3; x = 11 + 2(−3) = 5",
+          "tag": "solve",
+          "title": "Find y and x",
+          "narration": "Subtract twenty-two and divide by seven to find y equals minus three, then substitute back to get x equals five."
+        },
+        {
+          "n": 4,
+          "display": "x + y = 5 + (−3) = 2 (option D)",
+          "tag": "answer",
+          "title": "Sum x + y",
+          "narration": "Adding five and minus three gives two."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x − 2y = 11 ⇒ x = 11 + 2y",
+          "tag": "isolate x",
+          "title": "Express x from equation 2",
+          "narration": "Start with the second equation because x has coefficient one; add two y to both sides to get x equals eleven plus two y."
+        },
+        {
+          "n": 2,
+          "display": "2(11 + 2y) + 3y = 1",
+          "tag": "substitute",
+          "title": "Substitute into equation 1",
+          "narration": "Substitute eleven plus two y for x in two x plus three y equals one."
+        },
+        {
+          "n": 3,
+          "display": "22 + 4y + 3y = 1 ⇒ 22 + 7y = 1",
+          "tag": "expand",
+          "title": "Expand and collect y",
+          "narration": "Expand two times eleven plus two y to twenty-two plus four y, then add three y to get seven y."
+        },
+        {
+          "n": 4,
+          "display": "7y = 1 − 22 = −21 ⇒ y = −3",
+          "tag": "solve y",
+          "title": "Subtract 22 and divide by 7",
+          "narration": "Subtract twenty-two from both sides to get minus twenty-one, then divide by seven to find y equals minus three."
+        },
+        {
+          "n": 5,
+          "display": "x = 11 + 2(−3) = 11 − 6 = 5",
+          "tag": "find x",
+          "title": "Substitute y back for x",
+          "narration": "Put y equals minus three back into eleven plus two y to find x equals five."
+        },
+        {
+          "n": 6,
+          "display": "x + y = 5 + (−3) = 2",
+          "tag": "add",
+          "title": "Compute x + y",
+          "narration": "Remember the question asks for x plus y, so add five and minus three to get two."
+        },
+        {
+          "n": 7,
+          "display": "2 (option D)",
+          "tag": "answer",
+          "title": "Value of x + y",
+          "narration": "The sum of x and y is two."
         }
       ]
     }
