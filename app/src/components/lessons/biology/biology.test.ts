@@ -4,6 +4,7 @@ import base from '../../../../../data/subjects/questions-biology.json'
 import jamb from '../../../../../data/subjects/questions-biology-jamb-100.json'
 import science from '../../../../../data/subjects/questions-biology-jamb-150.json'
 import followUps from '../../../../../data/subjects/questions-biology-teachme.json'
+import batch3 from '../../../../../data/subjects/questions-biology-jamb-50-batch-3.json'
 import { conceptLessonTopic } from '../../../lib/sections'
 import { fallbackMs, beatTimes } from '../lesson'
 import type { Topic } from '../lesson'
@@ -13,7 +14,9 @@ import { teachMeButton } from './TeachMe'
 const topics = Object.values(import.meta.glob<Topic>('../../../../../lessons-bank/biology-*.json', {
   eager: true, import: 'default',
 }))
-const questionBank = [base, jamb, science, followUps].flatMap(({ questions }) => questions.map(({ id }) => id))
+// Every question in the original banks has a clip. Later batches map only where a clip truly teaches the idea.
+const coreBank = [base, jamb, science, followUps].flatMap(({ questions }) => questions.map(({ id }) => id))
+const questionBank = [...coreBank, ...batch3.questions.map(({ id }) => id)]
 const topicsById = new Map(topics.flatMap((topic) => topic.lessons.map((lesson) => [lesson.id, topic] as const)))
 const drawingIds = new Set(['heart', 'nephron', 'inheritance', ...Object.keys(import.meta.glob('./drawings/*.tsx'))
   .map((path) => path.slice(path.lastIndexOf('/') + 1, -4))].map((id) => 'biology-' + id))
@@ -31,11 +34,11 @@ describe('Biology Teach me', () => {
       expect(more).not.toContain(id)
       expect(new Set(more).size).toBeGreaterThanOrEqual(3)
     }
-    expect(new Set(ids)).toEqual(bank)
+    for (const id of coreBank) expect(ids, id).toContain(id)
     for (const clip of topicsById.keys()) {
       const count = followUpIds(clip).length
       expect(count, clip).toBeGreaterThanOrEqual(4)
-      expect(count, clip).toBeLessThanOrEqual(6)
+      expect(count, clip).toBeLessThanOrEqual(10)
     }
   })
 

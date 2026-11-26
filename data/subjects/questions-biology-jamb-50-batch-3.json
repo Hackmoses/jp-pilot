@@ -1,0 +1,3257 @@
+{
+  "version": 1,
+  "subject": "biology",
+  "count": 50,
+  "questions": [
+    {
+      "id": "bio-jamb-2010-009",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Feather functions",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the main role of the short body feathers around a bird’s belly, as distinct from its long flight feathers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prevent ectoparasite attack",
+          "why": "Feathers can shelter ectoparasites, and protection from their attack is not the main function in this location.",
+          "whyWrong": "Feathers can shelter ectoparasites, and protection from their attack is not the main function in this location."
+        },
+        {
+          "id": "b",
+          "text": "Generate heat",
+          "why": "Metabolism generates heat. Feathers mainly slow its loss.",
+          "whyWrong": "Metabolism generates heat. Feathers mainly slow its loss."
+        },
+        {
+          "id": "c",
+          "text": "Supply power for flight",
+          "why": "Flight muscles supply power, and longer flight feathers help generate aerodynamic forces.",
+          "whyWrong": "Flight muscles supply power, and longer flight feathers help generate aerodynamic forces."
+        },
+        {
+          "id": "d",
+          "text": "Insulate the body",
+          "why": "Body plumage traps a layer of air. This reduces heat loss and helps maintain body temperature.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think about the layer of still air between feathers and skin.",
+      "explanation": "Body plumage traps a layer of air. This reduces heat loss and helps maintain body temperature.",
+      "trap": "Feathers can shelter ectoparasites, and protection from their attack is not the main function in this location.",
+      "mnemonic": "Feathers conserve heat through insulation.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Feathers conserve heat through insulation."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Feathers can shelter ectoparasites, and protection from their attack is not the main function in this location."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2010-027",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Cell biology",
+      "concept": "Contractile vacuoles",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which structure is correctly matched with a group in which it commonly occurs? I. Stomata and Spirogyra. II. Alveoli and earthworms. III. Malpighian tubules and mammals. IV. Contractile vacuoles and freshwater protozoans.",
+      "options": [
+        {
+          "id": "a",
+          "text": "III",
+          "why": "Mammals use kidneys rather than insect-type Malpighian tubules.",
+          "whyWrong": "Mammals use kidneys rather than insect-type Malpighian tubules."
+        },
+        {
+          "id": "b",
+          "text": "II",
+          "why": "Earthworms exchange gases across their moist skin.",
+          "whyWrong": "Earthworms exchange gases across their moist skin."
+        },
+        {
+          "id": "c",
+          "text": "I",
+          "why": "Spirogyra does not have the stomata characteristic of aerial plant organs.",
+          "whyWrong": "Spirogyra does not have the stomata characteristic of aerial plant organs."
+        },
+        {
+          "id": "d",
+          "text": "IV",
+          "why": "Many freshwater protozoans use a contractile vacuole to collect and expel excess water entering by osmosis.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Check which organism needs to pump out excess water from a single cell.",
+      "explanation": "Many freshwater protozoans use a contractile vacuole to collect and expel excess water entering by osmosis.",
+      "trap": "Mammals use kidneys rather than insect-type Malpighian tubules.",
+      "mnemonic": "A contractile vacuole expels excess water.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A contractile vacuole expels excess water."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Mammals use kidneys rather than insect-type Malpighian tubules."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 27,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2010-046",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Genetics & heredity",
+      "concept": "Meiosis",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "How does the chromosome-set number change from a diploid parent cell to each product of normal meiosis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2n → 2n",
+          "why": "The number of chromosome sets would remain diploid in ordinary mitosis.",
+          "whyWrong": "The number of chromosome sets would remain diploid in ordinary mitosis."
+        },
+        {
+          "id": "b",
+          "text": "n → n",
+          "why": "The question begins with a diploid cell, which has two sets.",
+          "whyWrong": "The question begins with a diploid cell, which has two sets."
+        },
+        {
+          "id": "c",
+          "text": "n → 2n",
+          "why": "Joining haploid complements at fertilization can restore 2n.",
+          "whyWrong": "Joining haploid complements at fertilization can restore 2n."
+        },
+        {
+          "id": "d",
+          "text": "2n → n",
+          "why": "Meiosis separates homologous chromosomes and reduces the number of chromosome sets from two to one. Each final product is haploid.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Track chromosome sets rather than the total number of cells.",
+      "explanation": "Meiosis separates homologous chromosomes and reduces the number of chromosome sets from two to one. Each final product is haploid.",
+      "trap": "The number of chromosome sets would remain diploid in ordinary mitosis.",
+      "mnemonic": "Meiosis halves the number of chromosome sets.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Meiosis halves the number of chromosome sets."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The number of chromosome sets would remain diploid in ordinary mitosis."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 46,
+        "yearLabel": "2010"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2011-011",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Respiration",
+      "concept": "Yeast respiration",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A closed apparatus contains yeast with sucrose solution and sends the gas produced into limewater. Which biological process is this school experiment designed to demonstrate once oxygen is limited?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diffusion",
+          "why": "Diffusion can move a gas but does not explain its production by yeast.",
+          "whyWrong": "Diffusion can move a gas but does not explain its production by yeast."
+        },
+        {
+          "id": "b",
+          "text": "Photosynthesis",
+          "why": "Yeast does not carry out photosynthesis.",
+          "whyWrong": "Yeast does not carry out photosynthesis."
+        },
+        {
+          "id": "c",
+          "text": "Fermentation",
+          "why": "Yeast ferments sugars when oxygen is limited, releasing carbon dioxide. This can turn limewater cloudy by forming calcium carbonate.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Plasmolysis",
+          "why": "Plasmolysis is the shrinkage of a plant cell’s protoplast after water loss.",
+          "whyWrong": "Plasmolysis is the shrinkage of a plant cell’s protoplast after water loss."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Separate the process making the gas from the way the gas is detected.",
+      "explanation": "Yeast ferments sugars when oxygen is limited, releasing carbon dioxide. This can turn limewater cloudy by forming calcium carbonate.",
+      "trap": "Diffusion can move a gas but does not explain its production by yeast.",
+      "mnemonic": "Yeast fermentation can release carbon dioxide.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Yeast fermentation can release carbon dioxide."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Diffusion can move a gas but does not explain its production by yeast."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 11,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2011-019",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Nutrition",
+      "concept": "Carbohydrate digestion",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Tube I contains sucrose and water. Tube II contains sucrose treated with dilute acid. Tube III contains sucrose treated with sucrase. In which tubes is glucose released under conditions suitable for the stated treatment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I and II only",
+          "why": "This includes the untreated tube and omits the tube with sucrase.",
+          "whyWrong": "This includes the untreated tube and omits the tube with sucrase."
+        },
+        {
+          "id": "b",
+          "text": "II and III only",
+          "why": "Acid hydrolysis and sucrase each split sucrose into glucose and fructose. Tube I contains water alone without the acid or enzyme treatment.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "I only",
+          "why": "Water alone under the stated experimental comparison does not account for hydrolysis.",
+          "whyWrong": "Water alone under the stated experimental comparison does not account for hydrolysis."
+        },
+        {
+          "id": "d",
+          "text": "I, II and III",
+          "why": "Only the acid-treated and enzyme-treated tubes have the means for the stated hydrolysis.",
+          "whyWrong": "Only the acid-treated and enzyme-treated tubes have the means for the stated hydrolysis."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the two tubes with a way to split the disaccharide.",
+      "explanation": "Acid hydrolysis and sucrase each split sucrose into glucose and fructose. Tube I contains water alone without the acid or enzyme treatment.",
+      "trap": "This includes the untreated tube and omits the tube with sucrase.",
+      "mnemonic": "Sucrose hydrolysis releases glucose and fructose.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Sucrose hydrolysis releases glucose and fructose."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This includes the untreated tube and omits the tube with sucrase."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 19,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2011-027",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Asexual reproduction",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed form of asexual reproduction is typical of Paramecium and is also common among other unicellular protists?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Budding",
+          "why": "Budding produces an outgrowth from a parent and is not the ordinary division pattern in Paramecium.",
+          "whyWrong": "Budding produces an outgrowth from a parent and is not the ordinary division pattern in Paramecium."
+        },
+        {
+          "id": "b",
+          "text": "Sporulation",
+          "why": "Spore production is not the usual asexual mechanism in Paramecium.",
+          "whyWrong": "Spore production is not the usual asexual mechanism in Paramecium."
+        },
+        {
+          "id": "c",
+          "text": "Fragmentation",
+          "why": "Fragmentation involves pieces of a parent growing separately.",
+          "whyWrong": "Fragmentation involves pieces of a parent growing separately."
+        },
+        {
+          "id": "d",
+          "text": "Fission",
+          "why": "Paramecium normally multiplies asexually by binary fission. One cell divides into two daughter cells.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Picture one cell splitting into two comparable daughter cells.",
+      "explanation": "Paramecium normally multiplies asexually by binary fission. One cell divides into two daughter cells.",
+      "trap": "Budding produces an outgrowth from a parent and is not the ordinary division pattern in Paramecium.",
+      "mnemonic": "Binary fission divides one parent cell into two.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Binary fission divides one parent cell into two."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Budding produces an outgrowth from a parent and is not the ordinary division pattern in Paramecium."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 27,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2011-029",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Soil organic matter",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An empty basin weighs 80.5 g, the basin plus fresh soil weighs 101.5 g, and the basin plus oven-dried soil weighs 99.0 g. The basin plus residue after ignition weighs 95.5 g. If the mass lost on ignition estimates humus, what percentage of the original fresh soil mass was humus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16.7%",
+          "why": "The sample initially weighed 21.0 g without the basin. Ignition removed 99.0 − 95.5 = 3.5 g from the dry soil. The wet-basis estimate is \\frac{3.5}{21.0} × 100 ≈ 16.7%.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "17.6%",
+          "why": "This percentage would imply an ignition loss above the measured 3.5 g.",
+          "whyWrong": "This percentage would imply an ignition loss above the measured 3.5 g."
+        },
+        {
+          "id": "c",
+          "text": "26.7%",
+          "why": "This greatly overstates the proportion lost on ignition.",
+          "whyWrong": "This greatly overstates the proportion lost on ignition."
+        },
+        {
+          "id": "d",
+          "text": "16.2%",
+          "why": "This percentage is below the result obtained using the fresh soil mass.",
+          "whyWrong": "This percentage is below the result obtained using the fresh soil mass."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the ignition loss after drying and use the original sample mass as the denominator.",
+      "explanation": "The sample initially weighed 21.0 g without the basin. Ignition removed 99.0 − 95.5 = 3.5 g from the dry soil. The wet-basis estimate is \\frac{3.5}{21.0} × 100 ≈ 16.7%.",
+      "trap": "This percentage would imply an ignition loss above the measured 3.5 g.",
+      "mnemonic": "Use the stated reference mass when computing a percentage.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Use the stated reference mass when computing a percentage."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "This percentage would imply an ignition loss above the measured 3.5 g."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 29,
+        "yearLabel": "2011"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-007",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Fungi and plants",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed feature distinguishes fungi from green plants in their ability to capture light for photosynthesis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They have spores",
+          "why": "Spores also occur in plants such as mosses and ferns.",
+          "whyWrong": "Spores also occur in plants such as mosses and ferns."
+        },
+        {
+          "id": "b",
+          "text": "They lack chlorophyll",
+          "why": "Fungi lack chlorophyll and do not carry out chlorophyll-based photosynthesis. They obtain organic compounds from other sources.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "They make many fruiting bodies",
+          "why": "Fruiting bodies are reproductive structures and do not explain the inability to photosynthesize.",
+          "whyWrong": "Fruiting bodies are reproductive structures and do not explain the inability to photosynthesize."
+        },
+        {
+          "id": "d",
+          "text": "They reproduce both sexually and asexually",
+          "why": "Both modes of reproduction occur in other groups as well.",
+          "whyWrong": "Both modes of reproduction occur in other groups as well."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the pigment green plants use to absorb light.",
+      "explanation": "Fungi lack chlorophyll and do not carry out chlorophyll-based photosynthesis. They obtain organic compounds from other sources.",
+      "trap": "Spores also occur in plants such as mosses and ferns.",
+      "mnemonic": "Fungi obtain organic food and lack chlorophyll.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Fungi obtain organic food and lack chlorophyll."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Spores also occur in plants such as mosses and ferns."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 7,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-026",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Coordination",
+      "concept": "Plant hormones",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which plant hormone is best known for stimulating stem elongation and bolting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gibberellin",
+          "why": "Gibberellins stimulate cell elongation in many stems and can promote bolting, the rapid elongation of a flowering stalk.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Kinin",
+          "why": "Cytokinins are typically associated with cell division and shoot formation in this comparison.",
+          "whyWrong": "Cytokinins are typically associated with cell division and shoot formation in this comparison."
+        },
+        {
+          "id": "c",
+          "text": "Abscisic acid",
+          "why": "Abscisic acid participates in dormancy and responses to water stress.",
+          "whyWrong": "Abscisic acid participates in dormancy and responses to water stress."
+        },
+        {
+          "id": "d",
+          "text": "Ethylene",
+          "why": "Ethylene is best known at this level for fruit ripening and senescence.",
+          "whyWrong": "Ethylene is best known at this level for fruit ripening and senescence."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of a hormone that can help make a compact plant shoot taller.",
+      "explanation": "Gibberellins stimulate cell elongation in many stems and can promote bolting, the rapid elongation of a flowering stalk.",
+      "trap": "Cytokinins are typically associated with cell division and shoot formation in this comparison.",
+      "mnemonic": "Gibberellins help stems elongate.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Gibberellins help stems elongate."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Cytokinins are typically associated with cell division and shoot formation in this comparison."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-032",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Desert adaptations",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which broad group includes animals adapted to obtain sufficient water from food and metabolism without regular drinking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forest canopy dwellers",
+          "why": "Living in a forest canopy does not ordinarily require this combination of desert water-conservation adaptations.",
+          "whyWrong": "Living in a forest canopy does not ordinarily require this combination of desert water-conservation adaptations."
+        },
+        {
+          "id": "b",
+          "text": "Desert dwellers",
+          "why": "Some desert animals can meet their needs for water through food and water generated during metabolism. They also conserve water efficiently.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Forest-floor dwellers",
+          "why": "Living on a forest floor does not by itself imply dependence on metabolic water.",
+          "whyWrong": "Living on a forest floor does not by itself imply dependence on metabolic water."
+        },
+        {
+          "id": "d",
+          "text": "Rainforest dwellers",
+          "why": "Rainforests are generally moist environments and do not select for this desert pattern as strongly.",
+          "whyWrong": "Rainforests are generally moist environments and do not select for this desert pattern as strongly."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for a habitat where standing water may be scarce.",
+      "explanation": "Some desert animals can meet their needs for water through food and water generated during metabolism. They also conserve water efficiently.",
+      "trap": "Living in a forest canopy does not ordinarily require this combination of desert water-conservation adaptations.",
+      "mnemonic": "Food water and metabolic water can support some desert animals.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Food water and metabolic water can support some desert animals."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Living in a forest canopy does not ordinarily require this combination of desert water-conservation adaptations."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-040",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Genetics & heredity",
+      "concept": "ABO red-cell compatibility",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Considering only the ABO system and red-cell donation, which statement is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group AB red cells can be donated to group AB recipients only",
+          "why": "Group AB red cells carry both A and B antigens. Among ABO groups, an AB recipient is the one without the usual anti-A and anti-B antibodies.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Groups A and B can donate red cells to each other",
+          "why": "Each group produces antibodies against the other group’s red-cell antigen.",
+          "whyWrong": "Each group produces antibodies against the other group’s red-cell antigen."
+        },
+        {
+          "id": "c",
+          "text": "Group AB can receive red cells only from A or B",
+          "why": "Considering ABO only, an AB recipient can receive red cells from all four groups.",
+          "whyWrong": "Considering ABO only, an AB recipient can receive red cells from all four groups."
+        },
+        {
+          "id": "d",
+          "text": "Group O can donate red cells only to O",
+          "why": "Group O red cells carry neither A nor B antigen and can go to other ABO groups in this simplified model.",
+          "whyWrong": "Group O red cells carry neither A nor B antigen and can go to other ABO groups in this simplified model."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Track the donor’s red-cell antigens and the recipient’s antibodies.",
+      "explanation": "Group AB red cells carry both A and B antigens. Among ABO groups, an AB recipient is the one without the usual anti-A and anti-B antibodies.",
+      "trap": "Each group produces antibodies against the other group’s red-cell antigen.",
+      "mnemonic": "AB red cells carry both antigens.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "AB red cells carry both antigens."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Each group produces antibodies against the other group’s red-cell antigen."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 40,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2012-044",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Interactions between species",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Two different species of Paramecium grow in the same culture and draw on the same limiting food supply. One increases while the other declines. Which interaction does this represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interspecific competition",
+          "why": "The organisms compete for a shared resource. Because they belong to different species, it is interspecific competition.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Intraspecific competition",
+          "why": "Intraspecific competition takes place among members of one species.",
+          "whyWrong": "Intraspecific competition takes place among members of one species."
+        },
+        {
+          "id": "c",
+          "text": "Mutualism",
+          "why": "Mutualism benefits both participants rather than describing competition for scarce food.",
+          "whyWrong": "Mutualism benefits both participants rather than describing competition for scarce food."
+        },
+        {
+          "id": "d",
+          "text": "Cooperation",
+          "why": "Cooperation means joint activity, not contesting for the same limited resource.",
+          "whyWrong": "Cooperation means joint activity, not contesting for the same limited resource."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "The organisms are in the same genus but belong to different species.",
+      "explanation": "The organisms compete for a shared resource. Because they belong to different species, it is interspecific competition.",
+      "trap": "Intraspecific competition takes place among members of one species.",
+      "mnemonic": "Inter means between species. Intra means within one species.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Inter means between species. Intra means within one species."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Intraspecific competition takes place among members of one species."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 44,
+        "yearLabel": "2012"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-006",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Earthworm anatomy",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the thickened band around the body of a mature earthworm that helps form the reproductive cocoon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spermathecal pore",
+          "why": "A spermathecal pore is an opening, not an external glandular band.",
+          "whyWrong": "A spermathecal pore is an opening, not an external glandular band."
+        },
+        {
+          "id": "b",
+          "text": "Cocoon",
+          "why": "The cocoon is produced by the earthworm and is not the band on its body.",
+          "whyWrong": "The cocoon is produced by the earthworm and is not the band on its body."
+        },
+        {
+          "id": "c",
+          "text": "Clitellum",
+          "why": "The clitellum is a swollen band of glandular segments. It produces material that forms the cocoon.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Chaetae",
+          "why": "Chaetae are small bristles used chiefly for traction.",
+          "whyWrong": "Chaetae are small bristles used chiefly for traction."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Distinguish the band on the worm from the structure it makes.",
+      "explanation": "The clitellum is a swollen band of glandular segments. It produces material that forms the cocoon.",
+      "trap": "A spermathecal pore is an opening, not an external glandular band.",
+      "mnemonic": "The clitellum forms the cocoon.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The clitellum forms the cocoon."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A spermathecal pore is an opening, not an external glandular band."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 6,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-017",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Translocation in plants",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the term for the long-distance movement of assimilates such as sugars from sources to sinks in a plant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Osmosis",
+          "why": "Osmosis specifically concerns movement of water across a selectively permeable membrane.",
+          "whyWrong": "Osmosis specifically concerns movement of water across a selectively permeable membrane."
+        },
+        {
+          "id": "b",
+          "text": "Translocation",
+          "why": "Translocation is transport of assimilates in the phloem from sources, such as mature leaves, to sinks, such as growing tissues or storage organs.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Transpiration",
+          "why": "Transpiration is water loss from aerial parts, chiefly through stomata.",
+          "whyWrong": "Transpiration is water loss from aerial parts, chiefly through stomata."
+        },
+        {
+          "id": "d",
+          "text": "Diffusion",
+          "why": "Diffusion is local net spread down a concentration gradient and is not the name for bulk flow of assimilates in phloem.",
+          "whyWrong": "Diffusion is local net spread down a concentration gradient and is not the name for bulk flow of assimilates in phloem."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow sugar from a mature leaf to a growing root.",
+      "explanation": "Translocation is transport of assimilates in the phloem from sources, such as mature leaves, to sinks, such as growing tissues or storage organs.",
+      "trap": "Osmosis specifically concerns movement of water across a selectively permeable membrane.",
+      "mnemonic": "Phloem translocation moves assimilates from source to sink.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Phloem translocation moves assimilates from source to sink."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Osmosis specifically concerns movement of water across a selectively permeable membrane."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 17,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-020",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Respiration",
+      "concept": "Cellular respiration",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which process transfers energy from organic cellular fuels into ATP in plant cells?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Autotrophic nutrition",
+          "why": "Autotrophic nutrition describes making organic compounds from inorganic starting materials.",
+          "whyWrong": "Autotrophic nutrition describes making organic compounds from inorganic starting materials."
+        },
+        {
+          "id": "b",
+          "text": "Photosynthesis",
+          "why": "Photosynthesis uses light energy to build carbohydrates. The question asks about releasing energy from existing organic fuel.",
+          "whyWrong": "Photosynthesis uses light energy to build carbohydrates. The question asks about releasing energy from existing organic fuel."
+        },
+        {
+          "id": "c",
+          "text": "Photolysis",
+          "why": "Photolysis means splitting a substance with light and is not the overall ATP-generating oxidation of cellular fuels.",
+          "whyWrong": "Photolysis means splitting a substance with light and is not the overall ATP-generating oxidation of cellular fuels."
+        },
+        {
+          "id": "d",
+          "text": "Cellular respiration",
+          "why": "Cellular respiration breaks down organic fuel and transfers part of the released energy to ATP. Plant cells respire as well as photosynthesize.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Follow energy from existing sugars into ATP.",
+      "explanation": "Cellular respiration breaks down organic fuel and transfers part of the released energy to ATP. Plant cells respire as well as photosynthesize.",
+      "trap": "Autotrophic nutrition describes making organic compounds from inorganic starting materials.",
+      "mnemonic": "Plant cells make fuel by photosynthesis and use fuel in respiration.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Plant cells make fuel by photosynthesis and use fuel in respiration."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Autotrophic nutrition describes making organic compounds from inorganic starting materials."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 20,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-031",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Arthropod exoskeletons",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which addition to the chitin-based exoskeleton is especially important for hardening the shells of crustaceans such as crabs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lipids",
+          "why": "Lipids can contribute to surface properties but do not account for this mineral hardening.",
+          "whyWrong": "Lipids can contribute to surface properties but do not account for this mineral hardening."
+        },
+        {
+          "id": "b",
+          "text": "Proteins",
+          "why": "Proteins help form the framework but are not the calcium-based mineral reinforcement in this comparison.",
+          "whyWrong": "Proteins help form the framework but are not the calcium-based mineral reinforcement in this comparison."
+        },
+        {
+          "id": "c",
+          "text": "Calcium compounds",
+          "why": "Crustacean shells are reinforced by mineral deposits, often largely calcium carbonate, within the chitin-containing framework.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Organic salts",
+          "why": "The characteristic reinforcing material in this example is inorganic mineral.",
+          "whyWrong": "The characteristic reinforcing material in this example is inorganic mineral."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Think of the mineral that gives many animal shells their hardness.",
+      "explanation": "Crustacean shells are reinforced by mineral deposits, often largely calcium carbonate, within the chitin-containing framework.",
+      "trap": "Lipids can contribute to surface properties but do not account for this mineral hardening.",
+      "mnemonic": "Crustacean shells often contain calcium carbonate.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Crustacean shells often contain calcium carbonate."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Lipids can contribute to surface properties but do not account for this mineral hardening."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-034",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Coordination",
+      "concept": "Endocrine glands",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which endocrine gland lies directly below the hypothalamus and connects to it by a stalk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parathyroid",
+          "why": "The parathyroids are usually located near the back of the thyroid.",
+          "whyWrong": "The parathyroids are usually located near the back of the thyroid."
+        },
+        {
+          "id": "b",
+          "text": "Adrenal",
+          "why": "The adrenal glands sit on top of the kidneys.",
+          "whyWrong": "The adrenal glands sit on top of the kidneys."
+        },
+        {
+          "id": "c",
+          "text": "Pituitary",
+          "why": "The pituitary gland sits below the hypothalamus and connects to it by the pituitary stalk.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Thyroid",
+          "why": "The thyroid is in the neck, not at the base of the brain.",
+          "whyWrong": "The thyroid is in the neck, not at the base of the brain."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Locate the small gland at the base of the brain.",
+      "explanation": "The pituitary gland sits below the hypothalamus and connects to it by the pituitary stalk.",
+      "trap": "The parathyroids are usually located near the back of the thyroid.",
+      "mnemonic": "The hypothalamus connects to the pituitary.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The hypothalamus connects to the pituitary."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The parathyroids are usually located near the back of the thyroid."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 34,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-038",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Reproductive hormones",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which organ is the principal source of circulating oestrogen during the typical ovarian cycle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ovaries",
+          "why": "Developing ovarian follicles secrete oestrogen, especially estradiol, during the typical ovarian cycle.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Testes",
+          "why": "Testes are not the principal source in the ovarian cycle.",
+          "whyWrong": "Testes are not the principal source in the ovarian cycle."
+        },
+        {
+          "id": "c",
+          "text": "Anterior pituitary",
+          "why": "The anterior pituitary secretes hormones such as FSH and LH that help regulate the ovaries.",
+          "whyWrong": "The anterior pituitary secretes hormones such as FSH and LH that help regulate the ovaries."
+        },
+        {
+          "id": "d",
+          "text": "Adrenal cortex",
+          "why": "The adrenal cortex makes steroid hormones and precursors, but the cycle’s principal estradiol source is ovarian.",
+          "whyWrong": "The adrenal cortex makes steroid hormones and precursors, but the cycle’s principal estradiol source is ovarian."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify where follicles develop.",
+      "explanation": "Developing ovarian follicles secrete oestrogen, especially estradiol, during the typical ovarian cycle.",
+      "trap": "Testes are not the principal source in the ovarian cycle.",
+      "mnemonic": "Ovarian follicles secrete oestrogen.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ovarian follicles secrete oestrogen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Testes are not the principal source in the ovarian cycle."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 38,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2013-045",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Agglutination",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the term for the visible clumping of red blood cells caused by antibodies binding their antigens?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agglutination",
+          "why": "Agglutination occurs when antibodies cross-link antigens on different red cells, forming clumps.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Fusion",
+          "why": "Fusion joins cells or membranes into a single structure.",
+          "whyWrong": "Fusion joins cells or membranes into a single structure."
+        },
+        {
+          "id": "c",
+          "text": "Transfusion",
+          "why": "Transfusion is transfer of blood or blood components.",
+          "whyWrong": "Transfusion is transfer of blood or blood components."
+        },
+        {
+          "id": "d",
+          "text": "Compatibility",
+          "why": "Compatibility describes whether the relevant immune reaction is avoided, rather than the reaction itself.",
+          "whyWrong": "Compatibility describes whether the relevant immune reaction is avoided, rather than the reaction itself."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of antibodies linking separate cells into a clump.",
+      "explanation": "Agglutination occurs when antibodies cross-link antigens on different red cells, forming clumps.",
+      "trap": "Fusion joins cells or membranes into a single structure.",
+      "mnemonic": "Agglutination means cell clumping.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Agglutination means cell clumping."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Fusion joins cells or membranes into a single structure."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 45,
+        "yearLabel": "2013"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-010",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Seed plant adaptations",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which listed feature most directly helps seed plants establish offspring away from the parent plant on land?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Motile gametes",
+          "why": "Motile gametes concern fertilization rather than carrying offspring to a new location.",
+          "whyWrong": "Motile gametes concern fertilization rather than carrying offspring to a new location."
+        },
+        {
+          "id": "b",
+          "text": "Ability to photosynthesize",
+          "why": "Photosynthesis provides food but does not transport seeds.",
+          "whyWrong": "Photosynthesis provides food but does not transport seeds."
+        },
+        {
+          "id": "c",
+          "text": "Efficient seed dispersal",
+          "why": "Dispersal carries seeds away from the parent, allowing offspring to colonize new sites and reducing competition nearby.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Availability of water",
+          "why": "Water availability can affect growth without being a mechanism of seed movement.",
+          "whyWrong": "Water availability can affect growth without being a mechanism of seed movement."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Focus on the movement of young plants before germination.",
+      "explanation": "Dispersal carries seeds away from the parent, allowing offspring to colonize new sites and reducing competition nearby.",
+      "trap": "Motile gametes concern fertilization rather than carrying offspring to a new location.",
+      "mnemonic": "Dispersal takes seeds away from the parent.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Dispersal takes seeds away from the parent."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Motile gametes concern fertilization rather than carrying offspring to a new location."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 10,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-014",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Nutrition",
+      "concept": "Dentition and diet",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which diet is best indicated by a mammal with dental formula I \\frac{2}{1}, C \\frac{0}{0}, PM \\frac{3}{2}, M \\frac{3}{3}, with many grinding teeth and no canines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Omnivore",
+          "why": "A typical omnivorous pattern blends adaptations for several food types. The strong grinding pattern here points most directly to herbivory.",
+          "whyWrong": "A typical omnivorous pattern blends adaptations for several food types. The strong grinding pattern here points most directly to herbivory."
+        },
+        {
+          "id": "b",
+          "text": "Detritus feeder",
+          "why": "The formula describes mammalian teeth and does not specifically indicate feeding on decaying organic matter.",
+          "whyWrong": "The formula describes mammalian teeth and does not specifically indicate feeding on decaying organic matter."
+        },
+        {
+          "id": "c",
+          "text": "Carnivore",
+          "why": "Many carnivorous mammals have prominent canines and shearing teeth.",
+          "whyWrong": "Many carnivorous mammals have prominent canines and shearing teeth."
+        },
+        {
+          "id": "d",
+          "text": "Herbivore",
+          "why": "The lack of canines and the large number of premolars and molars fit the dentition of a plant-eating mammal that grinds fibrous food.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Notice the missing canines and the many teeth suited to grinding.",
+      "explanation": "The lack of canines and the large number of premolars and molars fit the dentition of a plant-eating mammal that grinds fibrous food.",
+      "trap": "A typical omnivorous pattern blends adaptations for several food types. The strong grinding pattern here points most directly to herbivory.",
+      "mnemonic": "Grinding teeth help break up fibrous plant food.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Grinding teeth help break up fibrous plant food."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A typical omnivorous pattern blends adaptations for several food types. The strong grinding pattern here points most directly to herbivory."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-015",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Diffusion and transport",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Why can a small Amoeba exchange materials without a circulatory system, unlike a mammal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It lives in freshwater",
+          "why": "Freshwater habitat alone does not remove the need for circulation in larger animals.",
+          "whyWrong": "Freshwater habitat alone does not remove the need for circulation in larger animals."
+        },
+        {
+          "id": "b",
+          "text": "Diffusion over short distances is sufficient",
+          "why": "A small unicellular organism has short transport distances and a large surface area relative to its volume, allowing diffusion to supply materials across the cell surface.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It lacks haemoglobin",
+          "why": "Lack of haemoglobin does not explain why diffusion can reach the interior rapidly.",
+          "whyWrong": "Lack of haemoglobin does not explain why diffusion can reach the interior rapidly."
+        },
+        {
+          "id": "d",
+          "text": "It respires anaerobically",
+          "why": "Amoeba does not dispense with circulation because of an inherently anaerobic metabolism.",
+          "whyWrong": "Amoeba does not dispense with circulation because of an inherently anaerobic metabolism."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the distance materials must travel in a single cell and in a large body.",
+      "explanation": "A small unicellular organism has short transport distances and a large surface area relative to its volume, allowing diffusion to supply materials across the cell surface.",
+      "trap": "Freshwater habitat alone does not remove the need for circulation in larger animals.",
+      "mnemonic": "Diffusion is effective over short distances.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Diffusion is effective over short distances."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Freshwater habitat alone does not remove the need for circulation in larger animals."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 15,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-022",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Plant growth",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which statements describe the typical growth pattern of many plants with active shoot and root meristems? I. New length growth is mainly apical. II. Growth always ends at a fixed size and shape. III. Growth can continue throughout life.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I, II and III only",
+          "why": "Statement II is incorrect for plants with indeterminate growth.",
+          "whyWrong": "Statement II is incorrect for plants with indeterminate growth."
+        },
+        {
+          "id": "b",
+          "text": "II and III only",
+          "why": "It omits apical growth and includes the fixed-size claim.",
+          "whyWrong": "It omits apical growth and includes the fixed-size claim."
+        },
+        {
+          "id": "c",
+          "text": "I and II only",
+          "why": "It omits continuing growth and includes the fixed-size claim.",
+          "whyWrong": "It omits continuing growth and includes the fixed-size claim."
+        },
+        {
+          "id": "d",
+          "text": "I and III only",
+          "why": "Root and shoot apical meristems allow primary growth at the tips. Active meristems can allow further growth throughout life, so a fixed final shape is not universal.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Link growth at the tips with cells that keep dividing.",
+      "explanation": "Root and shoot apical meristems allow primary growth at the tips. Active meristems can allow further growth throughout life, so a fixed final shape is not universal.",
+      "trap": "Statement II is incorrect for plants with indeterminate growth.",
+      "mnemonic": "Apical meristems add length. Active meristems allow continuing growth.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Apical meristems add length. Active meristems allow continuing growth."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Statement II is incorrect for plants with indeterminate growth."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 22,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-026",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Ecological instruments",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which instrument measures atmospheric pressure during a field study?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hydrometer",
+          "why": "A hydrometer measures the relative density of a liquid.",
+          "whyWrong": "A hydrometer measures the relative density of a liquid."
+        },
+        {
+          "id": "b",
+          "text": "Hygrometer",
+          "why": "A hygrometer measures humidity.",
+          "whyWrong": "A hygrometer measures humidity."
+        },
+        {
+          "id": "c",
+          "text": "Thermometer",
+          "why": "A thermometer measures temperature.",
+          "whyWrong": "A thermometer measures temperature."
+        },
+        {
+          "id": "d",
+          "text": "Barometer",
+          "why": "A barometer measures the pressure exerted by the atmosphere.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Separate the instruments for pressure and humidity.",
+      "explanation": "A barometer measures the pressure exerted by the atmosphere.",
+      "trap": "A hydrometer measures the relative density of a liquid.",
+      "mnemonic": "A barometer measures air pressure.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A barometer measures air pressure."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A hydrometer measures the relative density of a liquid."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 26,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2014-043",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Genetics & heredity",
+      "concept": "Sex determination",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In the standard human sex-determination model, a couple has daughters in ten consecutive pregnancies. Which explanation describes the sex chromosome contributed by the sperm in each case?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An X-bearing sperm fertilized the egg each time",
+          "why": "The egg normally supplies X. Fertilization by an X-bearing sperm gives XX, the standard chromosome pattern for daughters. A run of daughters does not show that sons are impossible.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The father had a low sperm count",
+          "why": "Sperm count does not specify which sex chromosome fertilized an egg.",
+          "whyWrong": "Sperm count does not specify which sex chromosome fertilized an egg."
+        },
+        {
+          "id": "c",
+          "text": "The mother could not produce sons",
+          "why": "The sequence does not establish that a different outcome could not occur.",
+          "whyWrong": "The sequence does not establish that a different outcome could not occur."
+        },
+        {
+          "id": "d",
+          "text": "A Y-bearing sperm fertilized the egg each time",
+          "why": "A Y-bearing sperm with an X-bearing egg gives XY in the usual model.",
+          "whyWrong": "A Y-bearing sperm with an X-bearing egg gives XY in the usual model."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "The egg typically supplies X. Find what makes the pair XX.",
+      "explanation": "The egg normally supplies X. Fertilization by an X-bearing sperm gives XX, the standard chromosome pattern for daughters. A run of daughters does not show that sons are impossible.",
+      "trap": "Sperm count does not specify which sex chromosome fertilized an egg.",
+      "mnemonic": "X from egg plus X from sperm gives XX.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "X from egg plus X from sperm gives XX."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Sperm count does not specify which sex chromosome fertilized an egg."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 43,
+        "yearLabel": "2014"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-004",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Historical theories of evolution",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Whose historical theory would predict that muscles enlarged by an athlete’s training could be inherited by their children?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mendel",
+          "why": "Mendel described how hereditary factors are transmitted in crosses.",
+          "whyWrong": "Mendel described how hereditary factors are transmitted in crosses."
+        },
+        {
+          "id": "b",
+          "text": "Darwin",
+          "why": "Darwin’s theory of natural selection focuses on differential survival and reproduction involving heritable variation.",
+          "whyWrong": "Darwin’s theory of natural selection focuses on differential survival and reproduction involving heritable variation."
+        },
+        {
+          "id": "c",
+          "text": "Lamarck",
+          "why": "Lamarck’s theory proposed that characteristics acquired through use or disuse could be passed on. Training-induced muscle size itself is not inherited through that proposed mechanism.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Pasteur",
+          "why": "Pasteur is associated with work on microorganisms and germ theory.",
+          "whyWrong": "Pasteur is associated with work on microorganisms and germ theory."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Look for the historical theory of inheritance of acquired characteristics.",
+      "explanation": "Lamarck’s theory proposed that characteristics acquired through use or disuse could be passed on. Training-induced muscle size itself is not inherited through that proposed mechanism.",
+      "trap": "Mendel described how hereditary factors are transmitted in crosses.",
+      "mnemonic": "Lamarck proposed inheritance of acquired traits.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Lamarck proposed inheritance of acquired traits."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Mendel described how hereditary factors are transmitted in crosses."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 4,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-021",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Soil moisture",
+      "type": "calculation",
+      "difficulty": 2,
+      "stem": "An empty crucible weighs 5 g, the crucible with fresh soil weighs 10 g and the crucible with the dried soil weighs 8 g. What fraction of the fresh soil mass was water?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.8",
+          "why": "This would mean 4 g of the original 5 g was water.",
+          "whyWrong": "This would mean 4 g of the original 5 g was water."
+        },
+        {
+          "id": "b",
+          "text": "0.2",
+          "why": "This is the result of comparing the lost mass with the crucible and fresh soil together.",
+          "whyWrong": "This is the result of comparing the lost mass with the crucible and fresh soil together."
+        },
+        {
+          "id": "c",
+          "text": "0.4",
+          "why": "The fresh soil mass was 5 g and drying removed 2 g. The fraction that was water is \\frac{2}{5} = 0.4, or 40%.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "0.6",
+          "why": "This is the dry-soil fraction, because 3 g of the 5 g remained after drying.",
+          "whyWrong": "This is the dry-soil fraction, because 3 g of the 5 g remained after drying."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Subtract the empty crucible before using the starting mass.",
+      "explanation": "The fresh soil mass was 5 g and drying removed 2 g. The fraction that was water is \\frac{2}{5} = 0.4, or 40%.",
+      "trap": "This would mean 4 g of the original 5 g was water.",
+      "mnemonic": "Soil water fraction is mass lost on drying over fresh soil mass.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Soil water fraction is mass lost on drying over fresh soil mass."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This would mean 4 g of the original 5 g was water."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 21,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-031",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Competition",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which change can intensify competition for water among organisms that share a habitat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Emigration",
+          "why": "Emigration usually reduces the number remaining to share the resource.",
+          "whyWrong": "Emigration usually reduces the number remaining to share the resource."
+        },
+        {
+          "id": "b",
+          "text": "Drought",
+          "why": "Drought reduces the water supply. Individuals using the same limited water sources can then compete more intensely.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Mortality",
+          "why": "Mortality reduces the number of survivors competing for water.",
+          "whyWrong": "Mortality reduces the number of survivors competing for water."
+        },
+        {
+          "id": "d",
+          "text": "Dispersion",
+          "why": "Dispersion can spread individuals apart and does not necessarily reduce the water supply.",
+          "whyWrong": "Dispersion can spread individuals apart and does not necessarily reduce the water supply."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Find the change that makes the shared resource scarcer.",
+      "explanation": "Drought reduces the water supply. Individuals using the same limited water sources can then compete more intensely.",
+      "trap": "Emigration usually reduces the number remaining to share the resource.",
+      "mnemonic": "Scarcer resources can increase competition.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Scarcer resources can increase competition."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Emigration usually reduces the number remaining to share the resource."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 31,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-033",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Respiration",
+      "concept": "Mitochondria",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In a typical animal cell, which organelle is the main site of ATP production by aerobic respiration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nucleus",
+          "why": "The nucleus houses most of the cell’s DNA.",
+          "whyWrong": "The nucleus houses most of the cell’s DNA."
+        },
+        {
+          "id": "b",
+          "text": "Nucleolus",
+          "why": "The nucleolus is primarily involved in making ribosomal components.",
+          "whyWrong": "The nucleolus is primarily involved in making ribosomal components."
+        },
+        {
+          "id": "c",
+          "text": "Endoplasmic reticulum",
+          "why": "The endoplasmic reticulum makes and processes proteins and lipids.",
+          "whyWrong": "The endoplasmic reticulum makes and processes proteins and lipids."
+        },
+        {
+          "id": "d",
+          "text": "Mitochondrion",
+          "why": "The mitochondrial inner membrane holds the electron transport chain and ATP synthase, which produce most ATP during aerobic respiration.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify the organelle with an inner membrane specialized for ATP synthesis.",
+      "explanation": "The mitochondrial inner membrane holds the electron transport chain and ATP synthase, which produce most ATP during aerobic respiration.",
+      "trap": "The nucleus houses most of the cell’s DNA.",
+      "mnemonic": "Most aerobic ATP is produced in mitochondria.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Most aerobic ATP is produced in mitochondria."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The nucleus houses most of the cell’s DNA."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 33,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-036",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Fungal reproduction",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the thick-walled sexual resting structure formed after fusion of compatible reproductive structures in Rhizopus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zygospore",
+          "why": "In the usual school description, fusion of compatible gametangia leads to a thick-walled resting zygospore in a zygosporangium.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Conidiophore",
+          "why": "A conidiophore supports asexual conidia in fungi that form them.",
+          "whyWrong": "A conidiophore supports asexual conidia in fungi that form them."
+        },
+        {
+          "id": "c",
+          "text": "Sporangium",
+          "why": "A typical asexual sporangium contains spores and is not the resting product of gametangial fusion.",
+          "whyWrong": "A typical asexual sporangium contains spores and is not the resting product of gametangial fusion."
+        },
+        {
+          "id": "d",
+          "text": "Hypha",
+          "why": "A hypha is a fungal filament, not the named sexual resting structure.",
+          "whyWrong": "A hypha is a fungal filament, not the named sexual resting structure."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the name associated with fusion and a resistant resting wall.",
+      "explanation": "In the usual school description, fusion of compatible gametangia leads to a thick-walled resting zygospore in a zygosporangium.",
+      "trap": "A conidiophore supports asexual conidia in fungi that form them.",
+      "mnemonic": "The zygospore follows fusion.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The zygospore follows fusion."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A conidiophore supports asexual conidia in fungi that form them."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 36,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-037",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Paramecium nuclei",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which structure of Paramecium provides the genetic material exchanged during conjugation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contractile vacuole",
+          "why": "A contractile vacuole removes excess water.",
+          "whyWrong": "A contractile vacuole removes excess water."
+        },
+        {
+          "id": "b",
+          "text": "Food vacuole",
+          "why": "A food vacuole contains material for digestion.",
+          "whyWrong": "A food vacuole contains material for digestion."
+        },
+        {
+          "id": "c",
+          "text": "Macronucleus",
+          "why": "The macronucleus supports everyday cell functions. It is not the source of the transferred pronucleus.",
+          "whyWrong": "The macronucleus supports everyday cell functions. It is not the source of the transferred pronucleus."
+        },
+        {
+          "id": "d",
+          "text": "Micronucleus",
+          "why": "The micronucleus is the germline nucleus. During conjugation, micronuclear divisions and exchange allow the partners to combine genetic material.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Distinguish the germline nucleus from the nucleus that controls ordinary activity.",
+      "explanation": "The micronucleus is the germline nucleus. During conjugation, micronuclear divisions and exchange allow the partners to combine genetic material.",
+      "trap": "A contractile vacuole removes excess water.",
+      "mnemonic": "Micronucleus for inheritance, macronucleus for daily cell functions.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Micronucleus for inheritance, macronucleus for daily cell functions."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A contractile vacuole removes excess water."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 37,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-039",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Pulmonary circulation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which major vessel carries blood from the right ventricle toward the lungs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pulmonary artery",
+          "why": "The pulmonary artery carries blood away from the right ventricle and branches toward the lungs.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Bicuspid valve",
+          "why": "The bicuspid, or mitral, valve lies between the left atrium and left ventricle.",
+          "whyWrong": "The bicuspid, or mitral, valve lies between the left atrium and left ventricle."
+        },
+        {
+          "id": "c",
+          "text": "Aorta",
+          "why": "The aorta carries blood from the left ventricle into the systemic circuit.",
+          "whyWrong": "The aorta carries blood from the left ventricle into the systemic circuit."
+        },
+        {
+          "id": "d",
+          "text": "Vena cava",
+          "why": "The vena cava returns blood from the body to the right atrium.",
+          "whyWrong": "The vena cava returns blood from the body to the right atrium."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Trace blood leaving the right ventricle.",
+      "explanation": "The pulmonary artery carries blood away from the right ventricle and branches toward the lungs.",
+      "trap": "The bicuspid, or mitral, valve lies between the left atrium and left ventricle.",
+      "mnemonic": "The pulmonary artery takes blood from heart to lungs.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The pulmonary artery takes blood from heart to lungs."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The bicuspid, or mitral, valve lies between the left atrium and left ventricle."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 39,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2015-044",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Reproduction",
+      "concept": "Oviparity",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A diagram shows a pair of frogs releasing eggs into water, where development continues outside the mother. How are these frogs classified in terms of how they produce young?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Viviparous",
+          "why": "Viviparous animals give birth to live young after internal development.",
+          "whyWrong": "Viviparous animals give birth to live young after internal development."
+        },
+        {
+          "id": "b",
+          "text": "Hermaphroditic",
+          "why": "Hermaphroditism describes reproductive anatomy rather than where the eggs develop.",
+          "whyWrong": "Hermaphroditism describes reproductive anatomy rather than where the eggs develop."
+        },
+        {
+          "id": "c",
+          "text": "Ovoviviparous",
+          "why": "In ovoviviparity, eggs are retained within the parent until they hatch or nearly hatch.",
+          "whyWrong": "In ovoviviparity, eggs are retained within the parent until they hatch or nearly hatch."
+        },
+        {
+          "id": "d",
+          "text": "Oviparous",
+          "why": "Animals are oviparous when they lay eggs and development proceeds outside the mother. The frogs shown release eggs into water.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Locate where the eggs develop after being laid.",
+      "explanation": "Animals are oviparous when they lay eggs and development proceeds outside the mother. The frogs shown release eggs into water.",
+      "trap": "Viviparous animals give birth to live young after internal development.",
+      "mnemonic": "Oviparous animals lay eggs.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Oviparous animals lay eggs."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Viviparous animals give birth to live young after internal development."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 44,
+        "yearLabel": "2015"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2016-005",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Cell biology",
+      "concept": "Levels of organisation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "At what level of biological organisation is a whole leaf classified?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organ",
+          "why": "A leaf contains different tissues, including epidermis, mesophyll and vascular tissue, that work together. That makes it an organ.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Tissue",
+          "why": "A tissue is one organised group of cells within the leaf, not the whole structure.",
+          "whyWrong": "A tissue is one organised group of cells within the leaf, not the whole structure."
+        },
+        {
+          "id": "c",
+          "text": "Cell",
+          "why": "A whole leaf contains many cells.",
+          "whyWrong": "A whole leaf contains many cells."
+        },
+        {
+          "id": "d",
+          "text": "Organ system",
+          "why": "Leaves are organs that form part of the plant’s shoot system.",
+          "whyWrong": "Leaves are organs that form part of the plant’s shoot system."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Ask whether the structure contains more than one kind of tissue.",
+      "explanation": "A leaf contains different tissues, including epidermis, mesophyll and vascular tissue, that work together. That makes it an organ.",
+      "trap": "A tissue is one organised group of cells within the leaf, not the whole structure.",
+      "mnemonic": "Several tissues working together form an organ.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Several tissues working together form an organ."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A tissue is one organised group of cells within the leaf, not the whole structure."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 5,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2016-030",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Nigerian vegetation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which region of Nigeria is noted for extensive coastal mangrove swamps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chad Basin",
+          "why": "The Chad Basin lies inland and is not a coastal tidal region.",
+          "whyWrong": "The Chad Basin lies inland and is not a coastal tidal region."
+        },
+        {
+          "id": "b",
+          "text": "Benue Valley",
+          "why": "The Benue Valley is an inland river valley.",
+          "whyWrong": "The Benue Valley is an inland river valley."
+        },
+        {
+          "id": "c",
+          "text": "Mambilla Plateau",
+          "why": "The Mambilla Plateau is a highland area.",
+          "whyWrong": "The Mambilla Plateau is a highland area."
+        },
+        {
+          "id": "d",
+          "text": "Niger Delta",
+          "why": "Mangroves thrive in the brackish tidal creeks and estuaries of the Niger Delta.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Find the region where rivers meet tidal seawater.",
+      "explanation": "Mangroves thrive in the brackish tidal creeks and estuaries of the Niger Delta.",
+      "trap": "The Chad Basin lies inland and is not a coastal tidal region.",
+      "mnemonic": "Niger Delta mangroves occupy tidal coastal waters.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Niger Delta mangroves occupy tidal coastal waters."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The Chad Basin lies inland and is not a coastal tidal region."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 30,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2016-047",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Vertebral anatomy",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the name of the opening in a vertebra that forms part of the passage for the spinal cord?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centrum",
+          "why": "The centrum is the main weight-bearing body of the vertebra.",
+          "whyWrong": "The centrum is the main weight-bearing body of the vertebra."
+        },
+        {
+          "id": "b",
+          "text": "Neural canal",
+          "why": "The openings enclosed by the vertebral arches line up to form the neural canal, which houses and protects the spinal cord.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Neural spine",
+          "why": "The neural spine is a projection for attachment of muscles or ligaments.",
+          "whyWrong": "The neural spine is a projection for attachment of muscles or ligaments."
+        },
+        {
+          "id": "d",
+          "text": "Transverse process",
+          "why": "A transverse process projects to the side of a vertebra.",
+          "whyWrong": "A transverse process projects to the side of a vertebra."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Choose the passage rather than a bony projection.",
+      "explanation": "The openings enclosed by the vertebral arches line up to form the neural canal, which houses and protects the spinal cord.",
+      "trap": "The centrum is the main weight-bearing body of the vertebra.",
+      "mnemonic": "The neural canal contains the spinal cord.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The neural canal contains the spinal cord."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The centrum is the main weight-bearing body of the vertebra."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 47,
+        "yearLabel": "2016"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-009",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Vegetation and climate",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "At similar temperatures and with other conditions roughly comparable, which listed climatic factor best explains a shift from moist forest to dry grassland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Light",
+          "why": "Light can affect growth, but it does not explain this comparison in water availability.",
+          "whyWrong": "Light can affect growth, but it does not explain this comparison in water availability."
+        },
+        {
+          "id": "b",
+          "text": "Wind",
+          "why": "Wind affects moisture loss and plant shape, but rainfall is the most direct determinant among the choices here.",
+          "whyWrong": "Wind affects moisture loss and plant shape, but rainfall is the most direct determinant among the choices here."
+        },
+        {
+          "id": "c",
+          "text": "Temperature",
+          "why": "Temperatures are held roughly comparable in the stated comparison.",
+          "whyWrong": "Temperatures are held roughly comparable in the stated comparison."
+        },
+        {
+          "id": "d",
+          "text": "Rainfall",
+          "why": "Rainfall controls water availability. A decrease in available moisture can favour grasses and drought-tolerant plants over the trees of a moist forest.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Follow the gradient from moist to dry conditions.",
+      "explanation": "Rainfall controls water availability. A decrease in available moisture can favour grasses and drought-tolerant plants over the trees of a moist forest.",
+      "trap": "Light can affect growth, but it does not explain this comparison in water availability.",
+      "mnemonic": "Rainfall helps determine which vegetation can grow.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Rainfall helps determine which vegetation can grow."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Light can affect growth, but it does not explain this comparison in water availability."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 9,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-028",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Camouflage",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A grasshopper matches green vegetation in one season and dark ground after a fire. What direct advantage does this matching coloration provide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Helps it obtain food directly",
+          "why": "Matching the ground does not itself provide food.",
+          "whyWrong": "Matching the ground does not itself provide food."
+        },
+        {
+          "id": "b",
+          "text": "Makes it conspicuous to predators",
+          "why": "It reduces rather than increases visual contrast for predators.",
+          "whyWrong": "It reduces rather than increases visual contrast for predators."
+        },
+        {
+          "id": "c",
+          "text": "Secures mates",
+          "why": "The pattern tracks the background, so concealment is the advantage illustrated rather than mate attraction.",
+          "whyWrong": "The pattern tracks the background, so concealment is the advantage illustrated rather than mate attraction."
+        },
+        {
+          "id": "d",
+          "text": "Helps it escape detection",
+          "why": "Matching the background reduces the contrast between the animal and its surroundings, making it harder to see.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare the insect’s colour with the background on which it rests.",
+      "explanation": "Matching the background reduces the contrast between the animal and its surroundings, making it harder to see.",
+      "trap": "Matching the ground does not itself provide food.",
+      "mnemonic": "Camouflage reduces detection.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Camouflage reduces detection."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Matching the ground does not itself provide food."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 28,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-032",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Respiration",
+      "concept": "Fish gills",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the chief role of the fine gill filaments projecting from a fish’s gill arch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provide a water outlet",
+          "why": "Water leaves through openings past the gills. The filaments are exchange structures.",
+          "whyWrong": "Water leaves through openings past the gills. The filaments are exchange structures."
+        },
+        {
+          "id": "b",
+          "text": "Strain food",
+          "why": "Gill rakers, rather than filaments, can help strain particles or food.",
+          "whyWrong": "Gill rakers, rather than filaments, can help strain particles or food."
+        },
+        {
+          "id": "c",
+          "text": "Provide a gas-exchange surface",
+          "why": "Gill filaments bear thin lamellae that provide a large surface for oxygen and carbon dioxide to diffuse between water and blood.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Act as a blood vessel",
+          "why": "Blood vessels run through the filaments, but their chief function as structures is exchange.",
+          "whyWrong": "Blood vessels run through the filaments, but their chief function as structures is exchange."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Distinguish the delicate filaments from the upstream rakers.",
+      "explanation": "Gill filaments bear thin lamellae that provide a large surface for oxygen and carbon dioxide to diffuse between water and blood.",
+      "trap": "Water leaves through openings past the gills. The filaments are exchange structures.",
+      "mnemonic": "Filaments and lamellae provide surface area for gas exchange.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Filaments and lamellae provide surface area for gas exchange."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Water leaves through openings past the gills. The filaments are exchange structures."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 32,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-033",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Population movement",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which response can reduce local population crowding when some individuals leave to find space or resources elsewhere?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Immigration",
+          "why": "Immigration brings additional individuals into the population.",
+          "whyWrong": "Immigration brings additional individuals into the population."
+        },
+        {
+          "id": "b",
+          "text": "Reduced competition without movement",
+          "why": "Reduced competition may be a consequence of departures, but it does not name the movement.",
+          "whyWrong": "Reduced competition may be a consequence of departures, but it does not name the movement."
+        },
+        {
+          "id": "c",
+          "text": "Emigration",
+          "why": "Emigration is movement out of a population. Departures can relieve local crowding and competition for resources.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Reduced mortality",
+          "why": "Lower mortality means more individuals survive and does not describe departure.",
+          "whyWrong": "Lower mortality means more individuals survive and does not describe departure."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Look for the term that means leaving the population.",
+      "explanation": "Emigration is movement out of a population. Departures can relieve local crowding and competition for resources.",
+      "trap": "Immigration brings additional individuals into the population.",
+      "mnemonic": "Emigration exits. Immigration enters.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Emigration exits. Immigration enters."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Immigration brings additional individuals into the population."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 33,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-034",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Cervical vertebrae",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which pair of vertebrae is involved in the joints that let the head nod and turn?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Axis and cervical vertebrae generally",
+          "why": "The axis is itself cervical, and the option does not identify the atlas as the other member of the pair.",
+          "whyWrong": "The axis is itself cervical, and the option does not identify the atlas as the other member of the pair."
+        },
+        {
+          "id": "b",
+          "text": "Atlas and thoracic vertebrae",
+          "why": "Thoracic vertebrae do not form these joints with the skull.",
+          "whyWrong": "Thoracic vertebrae do not form these joints with the skull."
+        },
+        {
+          "id": "c",
+          "text": "Axis and atlas",
+          "why": "The atlas supports the skull and permits nodding at the atlanto-occipital joint. The axis provides the pivot for rotation relative to the atlas.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Atlas and cervical vertebrae generally",
+          "why": "The atlas is cervical, but the options require the named pivot vertebra, the axis.",
+          "whyWrong": "The atlas is cervical, but the options require the named pivot vertebra, the axis."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Name the first two cervical vertebrae.",
+      "explanation": "The atlas supports the skull and permits nodding at the atlanto-occipital joint. The axis provides the pivot for rotation relative to the atlas.",
+      "trap": "The axis is itself cervical, and the option does not identify the atlas as the other member of the pair.",
+      "mnemonic": "Atlas supports the skull. Axis provides the pivot.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Atlas supports the skull. Axis provides the pivot."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The axis is itself cervical, and the option does not identify the atlas as the other member of the pair."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 34,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-038",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Evolution & classification",
+      "concept": "Structural adaptations",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "The hinged leaves of a Venus flytrap have a shape that helps them catch insects. What kind of adaptation is represented by the modified leaf structure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adaptive coloration",
+          "why": "Adaptive coloration concerns colour and does not classify the hinged leaf structure.",
+          "whyWrong": "Adaptive coloration concerns colour and does not classify the hinged leaf structure."
+        },
+        {
+          "id": "b",
+          "text": "Structural adaptation",
+          "why": "A change in the physical form of an organ is structural. Here the hinged trap is a modified leaf.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Environmental adaptation",
+          "why": "The environment favours traits, but the question asks what kind of feature the physical trap is.",
+          "whyWrong": "The environment favours traits, but the question asks what kind of feature the physical trap is."
+        },
+        {
+          "id": "d",
+          "text": "Behavioural adaptation",
+          "why": "Closing is a response. The hinged anatomy used to close is the structure being classified.",
+          "whyWrong": "Closing is a response. The hinged anatomy used to close is the structure being classified."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Focus on the form of the leaf, not the act of closing.",
+      "explanation": "A change in the physical form of an organ is structural. Here the hinged trap is a modified leaf.",
+      "trap": "Adaptive coloration concerns colour and does not classify the hinged leaf structure.",
+      "mnemonic": "A physical feature is a structural adaptation.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A physical feature is a structural adaptation."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Adaptive coloration concerns colour and does not classify the hinged leaf structure."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 38,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2017-039",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Genetics & heredity",
+      "concept": "Morphological variation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which set contains only observable physical differences in body form or appearance among people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Height, skin colour and tongue rolling",
+          "why": "Tongue rolling describes an ability rather than a physical form.",
+          "whyWrong": "Tongue rolling describes an ability rather than a physical form."
+        },
+        {
+          "id": "b",
+          "text": "Weight, fingerprints and body shape",
+          "why": "Weight, fingerprint patterns and body shape are measurable physical differences. The other sets include a functional trait or a blood-group classification.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Height, weight and blood group",
+          "why": "Blood group is classified by red-cell antigens, not visible body shape or appearance.",
+          "whyWrong": "Blood group is classified by red-cell antigens, not visible body shape or appearance."
+        },
+        {
+          "id": "d",
+          "text": "Skin colour, blood group and height",
+          "why": "The blood-group trait keeps this from being an exclusively morphological set.",
+          "whyWrong": "The blood-group trait keeps this from being an exclusively morphological set."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Check that every trait in a listed set describes physical appearance or form.",
+      "explanation": "Weight, fingerprint patterns and body shape are measurable physical differences. The other sets include a functional trait or a blood-group classification.",
+      "trap": "Tongue rolling describes an ability rather than a physical form.",
+      "mnemonic": "Morphological variation concerns observable form.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Morphological variation concerns observable form."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Tongue rolling describes an ability rather than a physical form."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 39,
+        "yearLabel": "2017"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-004",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Cell biology",
+      "concept": "Osmosis apparatus",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A thistle funnel containing sugar solution is sealed with a membrane that lets water through but retains sugar. The sealed bowl is immersed in distilled water, and the initial liquid levels are equal. What happens to the level in the funnel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rises",
+          "why": "Water enters the sugar solution by osmosis from the surrounding distilled water. This raises the liquid in the funnel until the resulting pressure difference balances the osmotic tendency.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Falls",
+          "why": "A fall would require net movement out of the funnel, contrary to the initial gradient.",
+          "whyWrong": "A fall would require net movement out of the funnel, contrary to the initial gradient."
+        },
+        {
+          "id": "c",
+          "text": "Stays the same",
+          "why": "There is an initial water potential difference, so equal starting levels do not prevent movement.",
+          "whyWrong": "There is an initial water potential difference, so equal starting levels do not prevent movement."
+        },
+        {
+          "id": "d",
+          "text": "Necessarily doubles",
+          "why": "The direction can be inferred, but an exact doubling cannot be deduced from the information given.",
+          "whyWrong": "The direction can be inferred, but an exact doubling cannot be deduced from the information given."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare water potential inside and outside the membrane.",
+      "explanation": "Water enters the sugar solution by osmosis from the surrounding distilled water. This raises the liquid in the funnel until the resulting pressure difference balances the osmotic tendency.",
+      "trap": "A fall would require net movement out of the funnel, contrary to the initial gradient.",
+      "mnemonic": "Water moves into the more concentrated solution through a selectively permeable membrane.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Water moves into the more concentrated solution through a selectively permeable membrane."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A fall would require net movement out of the funnel, contrary to the initial gradient."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 4,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-014",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Transport",
+      "concept": "Blood vessels",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which feature is not characteristic of an adult artery along its length?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Valves at intervals along its length",
+          "why": "Arteries carry blood away from the heart under relatively high pressure and do not normally have repeated valves along their lengths. Valves at intervals are more typical of certain veins.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "A thick, elastic muscular wall in a large artery",
+          "why": "Elastic and muscular walls are characteristic of large arteries.",
+          "whyWrong": "Elastic and muscular walls are characteristic of large arteries."
+        },
+        {
+          "id": "c",
+          "text": "Carries blood away from the heart",
+          "why": "Direction away from the heart defines an artery.",
+          "whyWrong": "Direction away from the heart defines an artery."
+        },
+        {
+          "id": "d",
+          "text": "Usually carries oxygenated blood in the adult systemic circuit",
+          "why": "Systemic arteries in an adult normally carry oxygenated blood. The pulmonary arteries are outside this comparison.",
+          "whyWrong": "Systemic arteries in an adult normally carry oxygenated blood. The pulmonary arteries are outside this comparison."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify which vessel often has valves to prevent backflow at low pressure.",
+      "explanation": "Arteries carry blood away from the heart under relatively high pressure and do not normally have repeated valves along their lengths. Valves at intervals are more typical of certain veins.",
+      "trap": "Elastic and muscular walls are characteristic of large arteries.",
+      "mnemonic": "Arteries carry blood away. Many veins use valves.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Arteries carry blood away. Many veins use valves."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Elastic and muscular walls are characteristic of large arteries."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 14,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-016",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Coordination",
+      "concept": "Body-temperature variation",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A lizard’s body temperature changes substantially when the temperature of its surroundings changes. What term describes this pattern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Homeostasis",
+          "why": "Homeostasis is the broad maintenance of internal conditions, not the term for this temperature pattern.",
+          "whyWrong": "Homeostasis is the broad maintenance of internal conditions, not the term for this temperature pattern."
+        },
+        {
+          "id": "b",
+          "text": "Homeothermy",
+          "why": "Homeothermy describes keeping body temperature relatively stable.",
+          "whyWrong": "Homeothermy describes keeping body temperature relatively stable."
+        },
+        {
+          "id": "c",
+          "text": "Poikilothermy",
+          "why": "Poikilothermy describes a variable body temperature. In the example, the lizard’s body temperature varies as external conditions change.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Osmoregulation",
+          "why": "Osmoregulation concerns water and solute balance.",
+          "whyWrong": "Osmoregulation concerns water and solute balance."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Focus on whether the measured body temperature stays nearly constant or varies.",
+      "explanation": "Poikilothermy describes a variable body temperature. In the example, the lizard’s body temperature varies as external conditions change.",
+      "trap": "Homeostasis is the broad maintenance of internal conditions, not the term for this temperature pattern.",
+      "mnemonic": "Poikilothermy means variable body temperature.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Poikilothermy means variable body temperature."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Homeostasis is the broad maintenance of internal conditions, not the term for this temperature pattern."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 16,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-022",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Water cycle",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which natural cycle includes both precipitation and transpiration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Water cycle",
+          "why": "Precipitation returns atmospheric water to Earth. Transpiration transfers water vapour from plants to the atmosphere. Both are parts of the water cycle.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Carbon cycle",
+          "why": "The carbon cycle concerns transfers of carbon among organisms, rocks, water and the atmosphere.",
+          "whyWrong": "The carbon cycle concerns transfers of carbon among organisms, rocks, water and the atmosphere."
+        },
+        {
+          "id": "c",
+          "text": "Nitrogen cycle",
+          "why": "The nitrogen cycle involves nitrogen compounds and atmospheric nitrogen.",
+          "whyWrong": "The nitrogen cycle involves nitrogen compounds and atmospheric nitrogen."
+        },
+        {
+          "id": "d",
+          "text": "Oxygen cycle",
+          "why": "The oxygen cycle tracks oxygen among reservoirs, not water movement through these processes.",
+          "whyWrong": "The oxygen cycle tracks oxygen among reservoirs, not water movement through these processes."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Name the substance moved by both processes.",
+      "explanation": "Precipitation returns atmospheric water to Earth. Transpiration transfers water vapour from plants to the atmosphere. Both are parts of the water cycle.",
+      "trap": "The carbon cycle concerns transfers of carbon among organisms, rocks, water and the atmosphere.",
+      "mnemonic": "Rain returns water. Plants return water vapour.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Rain returns water. Plants return water vapour."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The carbon cycle concerns transfers of carbon among organisms, rocks, water and the atmosphere."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 22,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-023",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Aquatic productivity",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What primarily prevents photosynthetic plants from growing below the photic zone in water?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nutrient availability",
+          "why": "Nutrients can limit growth in illuminated water, but this zone is defined by lack of usable light.",
+          "whyWrong": "Nutrients can limit growth in illuminated water, but this zone is defined by lack of usable light."
+        },
+        {
+          "id": "b",
+          "text": "Water availability",
+          "why": "Water is present in the habitat.",
+          "whyWrong": "Water is present in the habitat."
+        },
+        {
+          "id": "c",
+          "text": "Light intensity",
+          "why": "Below the photic zone, too little light penetrates for sustained photosynthesis. Nutrients and carbon dioxide cannot compensate for absent usable light.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Carbon dioxide concentration",
+          "why": "Carbon dioxide is needed for photosynthesis, but the defining limitation below the photic zone is light.",
+          "whyWrong": "Carbon dioxide is needed for photosynthesis, but the defining limitation below the photic zone is light."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Think about what the prefix photic refers to.",
+      "explanation": "Below the photic zone, too little light penetrates for sustained photosynthesis. Nutrients and carbon dioxide cannot compensate for absent usable light.",
+      "trap": "Nutrients can limit growth in illuminated water, but this zone is defined by lack of usable light.",
+      "mnemonic": "Photic means light. Deep dark water limits photosynthesis.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Photic means light. Deep dark water limits photosynthesis."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Nutrients can limit growth in illuminated water, but this zone is defined by lack of usable light."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 23,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-025",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Soil properties",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which physical property typically describes sandy soil compared with clay-rich soil?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Limited air spaces",
+          "why": "Coarse particles leave relatively large pore spaces.",
+          "whyWrong": "Coarse particles leave relatively large pore spaces."
+        },
+        {
+          "id": "b",
+          "text": "Light and easy to dig",
+          "why": "Sand has relatively big particles and tends to form loose, well-drained soil that is often easy to dig.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Slow drainage",
+          "why": "Water generally drains more quickly through sandy soil.",
+          "whyWrong": "Water generally drains more quickly through sandy soil."
+        },
+        {
+          "id": "d",
+          "text": "Heavy and poorly aerated",
+          "why": "Heavy and poorly aerated conditions are more typical of compact clay-rich soils.",
+          "whyWrong": "Heavy and poorly aerated conditions are more typical of compact clay-rich soils."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about loose grains and the spaces between them.",
+      "explanation": "Sand has relatively big particles and tends to form loose, well-drained soil that is often easy to dig.",
+      "trap": "Coarse particles leave relatively large pore spaces.",
+      "mnemonic": "Sandy soil is loose and generally drains quickly.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Sandy soil is loose and generally drains quickly."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Coarse particles leave relatively large pore spaces."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 25,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-2018-027",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Ecology",
+      "concept": "Energy in food chains",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "In a grazing food chain P → Q → R → S → T, P is a green producer. What supplies the energy P captures to make its organic food?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sunlight",
+          "why": "A green producer captures light energy during photosynthesis and stores some of it as chemical energy in organic compounds.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Carbohydrates already made by other organisms",
+          "why": "The producer makes its own carbohydrates as part of photosynthesis.",
+          "whyWrong": "The producer makes its own carbohydrates as part of photosynthesis."
+        },
+        {
+          "id": "c",
+          "text": "Other green plants",
+          "why": "Feeding directly on green plants would make the organism a primary consumer.",
+          "whyWrong": "Feeding directly on green plants would make the organism a primary consumer."
+        },
+        {
+          "id": "d",
+          "text": "Mineral salts",
+          "why": "Mineral salts supply matter and nutrients, not the input energy to photosynthesis.",
+          "whyWrong": "Mineral salts supply matter and nutrients, not the input energy to photosynthesis."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the energy input to a green producer.",
+      "explanation": "A green producer captures light energy during photosynthesis and stores some of it as chemical energy in organic compounds.",
+      "trap": "The producer makes its own carbohydrates as part of photosynthesis.",
+      "mnemonic": "Sunlight enters a grazing chain through producers.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Sunlight enters a grazing chain through producers."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The producer makes its own carbohydrates as part of photosynthesis."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": {
+        "provider": "jamb-past-paper",
+        "id": 27,
+        "yearLabel": "2018"
+      },
+      "yearVerified": true,
+      "reviewed": false
+    }
+  ]
+}
