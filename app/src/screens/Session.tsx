@@ -157,7 +157,9 @@ export function Session({ attempt, study, review }: SessionProps) {
   }, [question, startedAt])
 
   const answered = pickedId !== null || Boolean(review)
-  const showTeachMe = question?.subject === 'biology' && pickedId !== null && !study && !review && attempt?.mode !== 'exam'
+  // Biology teaches through illustrated Teach me clips instead of the handwritten player.
+  const solutionId = question?.subject === 'biology' ? undefined : question?.animationId
+  const showTeachMe = question?.subject === 'biology' && answered && !study && (Boolean(review) || attempt?.mode !== 'exam')
   const { View: TeachMe } = teachMe.useView(showTeachMe)
   const back = study ? studyLink(study.subject, study.chapter, study.concept) : review?.href
 
@@ -287,7 +289,7 @@ export function Session({ attempt, study, review }: SessionProps) {
       if (event.key === 'Enter') {
         event.preventDefault()
         advance()
-      } else if ((event.code === 'Space' || event.key === ' ') && question.animationId) {
+      } else if ((event.code === 'Space' || event.key === ' ') && solutionId) {
         event.preventDefault()
         setCalcOpen(true)
         setPlaySignal((prev) => prev + 1)
@@ -356,17 +358,17 @@ export function Session({ attempt, study, review }: SessionProps) {
   const sessionAnswered = Object.keys(picks).length
   const sessionCorrect = queue.filter(({ question }) => picks[question.id] === question.answerId).length
   const progressPercent = Math.round(((index + 1) / queue.length) * 100)
-  const animationKind = question.animationId ? getAnimation(question.animationId)?.kind : undefined
+  const animationKind = solutionId ? getAnimation(solutionId)?.kind : undefined
   const isConceptAnimation = animationKind === 'concept'
-  const showRightCol = answered && detailed && isWide && (Boolean(question.animationId) || desktopAskOpen)
+  const showRightCol = answered && detailed && isWide && (Boolean(solutionId) || desktopAskOpen)
   const letterFor = (optionId: OptionId): string => {
     const pos = options.findIndex((option) => option.id === optionId)
     return pos >= 0 ? OPTION_LETTERS[pos] : optionId.toUpperCase()
   }
 
-  const calculationPlayer = question.animationId ? (
+  const calculationPlayer = solutionId ? (
     <SolutionPlayer
-      animationId={question.animationId}
+      animationId={solutionId}
       open={calcOpen}
       onToggleOpen={() => setCalcOpen((prev) => !prev)}
       playSignal={playSignal}
@@ -516,7 +518,7 @@ export function Session({ attempt, study, review }: SessionProps) {
               <ReportButton questionId={question.id} />
               <div class="jp-footer-right">
                 <span class="jp-kbd-hints jp-hide-sm">
-                  {!back ? 'Shortcuts · A–D choose · N next · P previous' : question.animationId
+                  {!back ? 'Shortcuts · A–D choose · N next · P previous' : solutionId
                     ? 'Enter next · Space play'
                     : 'Enter next'}
                 </span>
