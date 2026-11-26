@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { transformSync } from '../app/node_modules/esbuild/lib/main.js'
@@ -52,20 +52,20 @@ function intToWords(n) {
 }
 
 function expandNumbersAndSymbols(text) {
-  let out = text
-    // Binary literals like "1101 in base 2" -> spoken digit by digit
+  return text
     .replace(/\b([01]{3,})\s+(in\s+base\s+2)\b/gi, (_, bits, rest) => {
       const spokenBits = [...bits].map((d) => ONES[Number(d)]).join(' ')
       return `${spokenBits} ${rest}`
     })
-    // Plural single digits like "7s", "3s"
     .replace(/\b([0-9])s\b/g, (_, d) => PLURAL_DIGITS[Number(d)])
-    // Common letter clusters in probability/hex
     .replace(/\bHHT\b/g, 'H H T')
     .replace(/\bHTH\b/g, 'H T H')
     .replace(/\bTHH\b/g, 'T H H')
     .replace(/\bFF\b/g, 'F F')
-    // Unit abbreviations (just in case any appear)
+    .replace(/\bRMS\b/g, 'R M S')
+    .replace(/\bNaOH\b/g, 'Sodium hydroxide')
+    .replace(/\bA or a\b/g, 'capital A or small a')
+    .replace(/\baa\b/g, 'double a')
     .replace(/(\d+(?:,\d{3})*(?:\.\d+)?)\s*cm³/g, '$1 cubic centimetres')
     .replace(/(\d+(?:,\d{3})*(?:\.\d+)?)\s*dm³/g, '$1 cubic decimetres')
     .replace(/(\d+(?:,\d{3})*(?:\.\d+)?)\s*m\/s\b/g, '$1 metres per second')
@@ -81,7 +81,6 @@ function expandNumbersAndSymbols(text) {
       }
       return intToWords(Number(clean))
     })
-  return out
 }
 
 function detectIssues(rawText, convertedText, spokenLine) {
@@ -101,7 +100,7 @@ function detectIssues(rawText, convertedText, spokenLine) {
   if (/\d/.test(spokenLine)) {
     issues.push('leftover_digits')
   }
-  if (/\b(?:HHT|HTH|THH|FF)\b/.test(rawText) || /\b[01]{3,}\s+in\s+base\s+2\b/i.test(rawText)) {
+  if (/\b(?:HHT|HTH|THH|FF|NaOH|aa)\b/.test(rawText) || /\bA or a\b/.test(rawText) || /\b[01]{3,}\s+in\s+base\s+2\b/i.test(rawText)) {
     issues.push('spelled_code_or_outcome')
   }
   return issues
@@ -110,6 +109,7 @@ function detectIssues(rawText, convertedText, spokenLine) {
 const SUBJECTS = [
   { subject: 'physics', files: ['data/subjects/animations-physics.json', 'data/subjects/animations-physics-jamb.json'] },
   { subject: 'biology', files: ['data/subjects/animations-biology.json'] },
+  { subject: 'chemistry', files: ['data/animations.json', 'data/subjects/animations-chemistry.json'] },
   { subject: 'mathematics', files: ['data/subjects/animations-mathematics.json', 'data/subjects/animations-maths-jamb.json'] },
   { subject: 'accounting', files: ['data/subjects/animations-accounting.json'] },
   { subject: 'economics', files: ['data/subjects/animations-economics.json'] },
@@ -120,45 +120,59 @@ const SUBJECTS = [
 
 const mathToSpeech = loadMathToSpeech()
 const manifest = JSON.parse(readFileSync(path.join(rootDir, 'audio/manifest.json'), 'utf8'))
+const manifestByAnim = new Map()
+for (const entry of manifest.clips) {
+  if (!manifestByAnim.has(entry.animationId)) manifestByAnim.set(entry.animationId, [])
+  manifestByAnim.get(entry.animationId).push(entry)
+}
 
 for (const { subject, files } of SUBJECTS) {
-  const animMap = new Map()
-  for (const file of files) {
-    const doc = JSON.parse(readFileSync(path.join(rootDir, file), 'utf8'))
-    for (const a of doc.animations) {
-      animMap.set(a.id, { file, anim: a })
-    }
-  }
+  const outPath = path.join(rootDir, `audio/spoken-${subject}.json`)
+  const existingDoc = existsSync(outPath) ? JSON.parse(readFileSync(outPath, 'utf8')) : { clips: [] }
+  const existingByPath = new Map((existingDoc.clips || []).map((c) => [c.path, c]))
 
   const clipsOut = []
-  for (const entry of manifest.clips) {
-    if (!animMap.has(entry.animationId)) continue
-    const { file, anim } = animMap.get(entry.animationId)
-    const isTeach = entry.path.startsWith('audio/teach/')
-    const mode = isTeach ? 'teach' : 'quick'
-    const clipId = isTeach ? `teach/${entry.animationId}/${entry.step}` : `${entry.animationId}/${entry.step}`
+  const seenPaths = new Set()
 
-    const list = isTeach ? (anim.teach ?? []) : (anim.steps ?? [])
-    const st = list.find((s) => s.n === entry.step)
-    const stepText = st?.narration ?? ''
-    const mathToSpeechText = mathToSpeech(stepText)
-    const spokenLine = expandNumbersAndSymbols(mathToSpeechText.replace(/[’‘]/g, "'"))
-    const issues = detectIssues(stepText, mathToSpeechText, spokenLine)
-    const needsReview = issues.length > 0
+  // Keep existing entries in order first
+  for (const prev of existingDoc.clips || []) {
+    clipsOut.push(prev)
+    seenPaths.add(prev.path)
+  }
 
-    clipsOut.push({
-      clipId,
-      path: entry.path,
-      animationId: entry.animationId,
-      step: entry.step,
-      mode,
-      source: file,
-      stepText,
-      mathToSpeechText,
-      spokenLine,
-      needsReview,
-      issues,
-    })
+  // Append any animations/steps from data files that are not yet in spoken-<subject>.json
+  for (const file of files) {
+    const doc = JSON.parse(readFileSync(path.join(rootDir, file), 'utf8'))
+    for (const anim of doc.animations) {
+      for (const [mode, list] of [['quick', anim.steps ?? []], ['teach', anim.teach ?? []]]) {
+        const isTeach = mode === 'teach'
+        for (const st of list) {
+          const relPath = `audio/${isTeach ? 'teach/' : ''}${anim.id}/${st.n}.webm`
+          if (seenPaths.has(relPath) || existingByPath.has(relPath)) continue
+          seenPaths.add(relPath)
+          const clipId = isTeach ? `teach/${anim.id}/${st.n}` : `${anim.id}/${st.n}`
+          const stepText = st.narration ?? ''
+          const mathToSpeechText = mathToSpeech(stepText)
+          const spokenLine = expandNumbersAndSymbols(mathToSpeechText.replace(/[’‘]/g, "'"))
+          const issues = detectIssues(stepText, mathToSpeechText, spokenLine)
+          const needsReview = issues.length > 0
+
+          clipsOut.push({
+            clipId,
+            path: relPath,
+            animationId: anim.id,
+            step: st.n,
+            mode,
+            source: file,
+            stepText,
+            mathToSpeechText,
+            spokenLine,
+            needsReview,
+            issues,
+          })
+        }
+      }
+    }
   }
 
   const cleanCount = clipsOut.filter((c) => !c.needsReview).length
@@ -171,7 +185,6 @@ for (const { subject, files } of SUBJECTS) {
     needsReview: reviewCount,
     clips: clipsOut,
   }
-  const outPath = path.join(rootDir, `audio/spoken-${subject}.json`)
   writeFileSync(outPath, JSON.stringify(payload, null, 2) + '\n', 'utf8')
   console.log(`Wrote ${outPath}: total=${clipsOut.length}, clean=${cleanCount}, needsReview=${reviewCount}`)
 }

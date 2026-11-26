@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import difflib
+import hashlib
 import json
 import os
 import random
@@ -92,9 +93,35 @@ SPELLING_EQUIV = {
     "amp": "ampere",
     "milliamps": "milliamperes",
     "milliamp": "milliampere",
+    "milliampers": "milliamperes",
+    "milliamper": "milliampere",
+    "cobo": "kobo",
+    "cobu": "kobo",
+    "thirds": "third",
+    "fourths": "fourth",
+    "fifths": "fifth",
+    "sixths": "sixth",
+    "sevenths": "seventh",
+    "eighths": "eighth",
+    "eights": "eighth",
+    "ninths": "ninth",
+    "tenths": "tenth",
+    "fifteenths": "fifteenth",
     "tetraoxosulphate": "tetraoxosulfate",
     "poh": "poh",
     "ph": "ph",
+}
+
+ORDINAL_WORDS = {
+    1: "first", 2: "second", 3: "third", 4: "fourth", 5: "fifth",
+    6: "sixth", 7: "seventh", 8: "eighth", 9: "ninth", 10: "tenth",
+    11: "eleventh", 12: "twelfth", 13: "thirteenth", 14: "fourteenth", 15: "fifteenth",
+    16: "sixteenth", 17: "seventeenth", 18: "eighteenth", 19: "nineteenth", 20: "twentieth",
+}
+ORDINAL_TO_CARDINAL = {v: str(k) for k, v in ORDINAL_WORDS.items()}
+PLURAL_DIGIT_WORDS = {
+    "0": "zeros", "1": "ones", "2": "twos", "3": "threes", "4": "fours",
+    "5": "fives", "6": "sixes", "7": "sevens", "8": "eights", "9": "nines",
 }
 
 UNIT_CANON = {
@@ -110,7 +137,7 @@ UNIT_CANON = {
     "kelvin": "kelvin", "kelvins": "kelvin",
     "coulomb": "coulomb", "coulombs": "coulomb",
     "amp": "amp", "amps": "amp", "ampere": "amp", "amperes": "amp",
-    "milliampere": "milliampere", "milliamperes": "milliampere", "milliamp": "milliampere", "milliamps": "milliampere",
+    "milliampere": "milliampere", "milliamperes": "milliampere", "milliamp": "milliampere", "milliamps": "milliampere", "ma": "milliampere",
     "joule": "joule", "joules": "joule",
     "newton": "newton", "newtons": "newton",
     "watt": "watt", "watts": "watt",
@@ -127,6 +154,7 @@ UNIT_CANON = {
     "year": "year", "years": "year",
     "degree": "degree", "degrees": "degree",
     "naira": "naira",
+    "kobo": "kobo",
     "pound": "pound", "pounds": "pound",
     "faraday": "faraday", "faradays": "faraday", "faradies": "faraday", "faraday's": "faraday",
     "percent": "percent",
@@ -164,8 +192,9 @@ def tokenize_basic(text: str, keep_punct: bool = False) -> list[str]:
     s = s.replace("cm³", " cubic centimetres ").replace("dm³", " cubic decimetres ")
     s = s.replace("²", " squared ").replace("³", " cubed ")
     s = s.replace("ch2o", " c h 2 o ")
-    s = re.sub(r"\b7'?s\b", " sevens ", s)
-    s = re.sub(r"\b3'?s\b", " threes ", s)
+    s = re.sub(r"\b(\d+)(?:st|nd|rd|th)s?\b", lambda m: f" {ORDINAL_WORDS[int(m.group(1))]} " if int(m.group(1)) in ORDINAL_WORDS else f" {m.group(1)} ", s)
+    s = re.sub(r"\b([0-9])'?s\b", lambda m: f" {PLURAL_DIGIT_WORDS[m.group(1)]} ", s)
+    s = re.sub(r"\b(1[0-9]|20)'?s\b", lambda m: f" {ORDINAL_WORDS[int(m.group(1))]} ", s)
     s = re.sub(r"\bs\.i\.?\b", " s i ", s)
     s = re.sub(r"\be\.m\.f\.?\b", " e m f ", s)
     s = re.sub(r"(\d+)\s*-\s*(\d+)", r"\1 \2", s)
@@ -245,6 +274,12 @@ def tokenize_basic(text: str, keep_punct: bool = False) -> list[str]:
         elif out[i] == "ff":
             merged.extend(["f", "f"])
             i += 1
+        elif out[i] == "kwh":
+            merged.extend(["kilowatt", "hours"])
+            i += 1
+        elif out[i] == "rms":
+            merged.extend(["r", "m", "s"])
+            i += 1
         else:
             merged.append(out[i])
             i += 1
@@ -280,7 +315,14 @@ def parse_number_words_at(tokens: list[str], idx: int) -> tuple[str, int] | None
         w = tokens[j]
         if w in {".", ",", ";", ":"}:
             break
-        if w == "and" and saw_word and (current % 100 == 0) and j + 1 < n and (tokens[j + 1] in ONES or tokens[j + 1] in TENS):
+        if (
+            w == "and"
+            and saw_word
+            and (current % 100 == 0)
+            and j + 1 < n
+            and (tokens[j + 1] in ONES or tokens[j + 1] in TENS)
+            and not (j + 2 < n and tokens[j + 2] == "hundred" and (current >= 100 or total > 0))
+        ):
             j += 1
             continue
         if w in ONES:
@@ -301,8 +343,8 @@ def parse_number_words_at(tokens: list[str], idx: int) -> tuple[str, int] | None
             current += TENS[w]
             saw_word = True
             j += 1
-        elif w == "hundred" and saw_word:
-            current = (current or 1) * 100
+        elif w == "hundred" and saw_word and 1 <= current <= 9:
+            current = current * 100
             j += 1
         elif w in {"thousand", "million"} and saw_word:
             total += (current or 1) * SCALE[w]
@@ -429,22 +471,135 @@ def _normalize_binary_nums(exp_nums: list[str], heard_nums: list[str], step_text
     return out
 
 
-def strict_verify(spoken_line: str, step_text: str, heard_text: str) -> dict:
-    exp_nums = extract_numbers(spoken_line)
-    step_nums = extract_numbers(step_text)
-    heard_nums = _normalize_binary_nums(exp_nums, extract_numbers(heard_text), step_text)
+def _apply_whisper_habits(tokens: list[str], exp_units: Counter, exp_vocab: set[str], exp_words_raw: list[str]) -> list[str]:
+    """Normalize specific known Whisper transcription habits ONLY when the target unit/word is expected."""
+    out: list[str] = []
+    n = len(tokens)
+    exp_ords = {w for w in exp_words_raw if w in ORDINAL_TO_CARDINAL}
+    exp_cardinal_for_ord = {ORDINAL_TO_CARDINAL[w]: w for w in exp_ords}
 
+    def is_num_tok(t: str) -> bool:
+        return bool(re.fullmatch(r"\d+(?:,\d{3})*(?:\.\d+)?", t)) or t in ONES or t in TENS
+
+    for i, t in enumerate(tokens):
+        prev_is_num = i > 0 and is_num_tok(tokens[i - 1])
+        if t in {"jewel", "jewels", "jew", "jews"} and ("joule" in exp_units or "joule" in exp_vocab or "joules" in exp_vocab):
+            out.append("joules")
+        elif t in {"nailah", "neither"} and ("naira" in exp_units or "naira" in exp_vocab):
+            out.append("naira")
+        elif t == "n" and prev_is_num and ("naira" in exp_units or "naira" in exp_vocab):
+            out.append("naira")
+        elif t == "a" and prev_is_num and "amp" in exp_units:
+            out.append("amperes")
+        elif t == "v" and prev_is_num and "volt" in exp_units:
+            out.append("volts")
+        elif t == "w" and prev_is_num and "watt" in exp_units:
+            out.append("watts")
+        elif t == "m" and prev_is_num and "metre" in exp_units:
+            out.append("metres")
+        elif t in exp_cardinal_for_ord and prev_is_num:
+            # e.g., "1 8" when expected has "eighth" -> "1 eighth"
+            out.append(exp_cardinal_for_ord[t])
+        else:
+            out.append(t)
+    return out
+
+
+def _align_heard_nums_with_exp(exp_nums: list[str], heard_tokens: list[str]) -> list[str]:
+    """Merge split decimal digits like ['7.1', '4'] -> ['7.14'] when matching exp_nums."""
+    exp_set = set(exp_nums)
+    merged: list[str] = []
+    i = 0
+    while i < len(heard_tokens):
+        t = heard_tokens[i]
+        if (
+            i + 1 < len(heard_tokens)
+            and re.fullmatch(r"\d+\.\d+", t)
+            and re.fullmatch(r"\d+", heard_tokens[i + 1])
+        ):
+            cand = canon_decimal(t + heard_tokens[i + 1])
+            if cand in exp_set and (t not in exp_set or re.fullmatch(r"0+", heard_tokens[i + 1])):
+                merged.append(cand)
+                i += 2
+                continue
+        merged.append(t)
+        i += 1
+    return merged
+
+
+def _expand_grouped_digits(exp_nums: list[str], heard_nums: list[str]) -> list[str]:
+    """Expand multi-digit integer like '511' or '1101' into ['5','1','1'] when exp_nums has that exact single-digit run."""
+    out: list[str] = []
+    ei = 0
+    for tok in heard_nums:
+        if re.fullmatch(r"\d{2,}", tok):
+            digits = list(tok)
+            if ei + len(digits) <= len(exp_nums) and exp_nums[ei : ei + len(digits)] == digits:
+                out.extend(digits)
+                ei += len(digits)
+                continue
+            # Also check anywhere in remaining exp_nums in case an earlier mismatch shifted index
+            found_idx = next(
+                (k for k in range(len(exp_nums) - len(digits) + 1) if exp_nums[k : k + len(digits)] == digits),
+                None,
+            )
+            if found_idx is not None:
+                out.extend(digits)
+                ei = found_idx + len(digits)
+                continue
+        out.append(tok)
+        if ei < len(exp_nums) and exp_nums[ei] == tok:
+            ei += 1
+    return out
+
+
+def strict_verify(spoken_line: str, step_text: str, heard_text: str) -> dict:
     exp_vocab = set(tokenize_basic(spoken_line))
     heard_vocab = set(tokenize_basic(heard_text))
 
     exp_units = extract_units(spoken_line, heard_vocab)
-    heard_units = extract_units(heard_text, exp_vocab)
+    exp_words_base = normalize_words_for_diff(spoken_line, heard_vocab)
+
+    raw_heard_tokens = tokenize_basic(heard_text, keep_punct=True)
+    raw_heard_tokens = merge_split_tokens(raw_heard_tokens, exp_vocab)
+    raw_heard_tokens = _apply_whisper_habits(raw_heard_tokens, exp_units, exp_vocab, exp_words_base)
+
+    exp_nums = extract_numbers(spoken_line)
+    step_nums = extract_numbers(step_text)
+
+    # Extract numbers from normalized heard tokens (and fix split decimals like 7.1 4)
+    raw_heard_tokens = _align_heard_nums_with_exp(exp_nums, raw_heard_tokens)
+    heard_nums: list[str] = []
+    heard_words: list[str] = []
+    i = 0
+    while i < len(raw_heard_tokens):
+        if raw_heard_tokens[i] in {".", ",", ";", ":"}:
+            i += 1
+            continue
+        parsed = parse_number_words_at(raw_heard_tokens, i)
+        if parsed:
+            heard_nums.append(parsed[0])
+            heard_words.append(parsed[0])
+            i = parsed[1]
+        elif raw_heard_tokens[i] == "and" and i > 0 and raw_heard_tokens[i - 1] in {"hundred", "thousand", "million"}:
+            i += 1
+        else:
+            heard_words.append(raw_heard_tokens[i])
+            i += 1
+
+    heard_nums = _normalize_binary_nums(exp_nums, heard_nums, step_text)
+    heard_nums = _expand_grouped_digits(exp_nums, heard_nums)
+    heard_words = _expand_grouped_digits(exp_nums, heard_words)
+
+    heard_units = Counter()
+    for t in raw_heard_tokens:
+        if t in UNIT_CANON:
+            heard_units[UNIT_CANON[t]] += 1
 
     exp_chem = extract_chem_terms(spoken_line)
     heard_chem = extract_chem_terms(heard_text)
 
-    exp_words = normalize_words_for_diff(spoken_line, heard_vocab)
-    heard_words = normalize_words_for_diff(heard_text, exp_vocab)
+    exp_words = exp_words_base
     ratio = difflib.SequenceMatcher(None, exp_words, heard_words).ratio()
 
     reasons = []
@@ -608,6 +763,7 @@ def main() -> int:
     parser.add_argument("--checkpoint-copy-dir", default="")
     parser.add_argument("--checkpoint-every", type=int, default=20)
     parser.add_argument("--skip-needs-review", action="store_true")
+    parser.add_argument("--force", action="store_true")
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args()
@@ -641,30 +797,76 @@ def main() -> int:
     state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {"clips": {}}
     clips_state: dict[str, dict] = state.setdefault("clips", {})
 
-    # Restore origin/main lineSha256 and record beforeBytes
+    def ensure_manifest_entry(item: dict) -> dict:
+        rel_path = item["path"]
+        if rel_path in manifest_by_path:
+            return manifest_by_path[rel_path]
+        line_sha = hashlib.sha256(item["stepText"].encode("utf-8")).hexdigest()
+        entry = {
+            "animationId": item["animationId"],
+            "step": item["step"],
+            "path": rel_path,
+            "durationMs": 0,
+            "lineSha256": line_sha,
+            "voice": "pending",
+        }
+        manifest["clips"].append(entry)
+        manifest_by_path[rel_path] = entry
+        return entry
+
+    # Record beforeBytes and sync lineSha256 from origin/main (or compute for new clips)
     skipped_review = []
     clean_items = []
+    already_charon_count = 0
     for item in spoken_clips:
         rel_path = item["path"]
-        orig_entry = orig_by_path[rel_path]
-        cur_entry = manifest_by_path[rel_path]
-        cur_entry["lineSha256"] = orig_entry["lineSha256"]
+        orig_entry = orig_by_path.get(rel_path)
+        cur_entry = manifest_by_path.get(rel_path)
+        if orig_entry is not None and cur_entry is not None:
+            cur_entry["lineSha256"] = orig_entry["lineSha256"]
 
         st = clips_state.setdefault(rel_path, {})
         if "beforeBytes" not in st:
-            raw_orig = git_show_bytes(f"origin/main:app/public/{rel_path}")
+            raw_orig = git_show_bytes(f"origin/main:app/public/{rel_path}") if orig_entry is not None else None
             st["beforeBytes"] = len(raw_orig) if raw_orig is not None else 0
         st["needsReview"] = bool(item.get("needsReview"))
         st["issues"] = item.get("issues", [])
 
+        out_path = PUBLIC_DIR / rel_path
+        if (
+            not args.force
+            and orig_entry is not None
+            and orig_entry.get("voice") == args.voice_name
+            and cur_entry is not None
+            and cur_entry.get("voice") == args.voice_name
+            and out_path.exists()
+            and out_path.stat().st_size > 0
+            and st.get("status") in {None, "already_charon"}
+        ):
+            st.update({
+                "status": "already_charon",
+                "stepText": item["stepText"],
+                "spokenLine": item["spokenLine"],
+                "afterBytes": out_path.stat().st_size,
+                "durationMs": cur_entry["durationMs"],
+                "genSec": 0.0,
+            })
+            already_charon_count += 1
+            continue
+
         if args.skip_needs_review and item.get("needsReview"):
-            after_b = restore_from_origin_main(rel_path, orig_entry, cur_entry)
+            if orig_entry is not None and cur_entry is not None:
+                after_b = restore_from_origin_main(rel_path, orig_entry, cur_entry)
+                dur_ms = orig_entry["durationMs"]
+            else:
+                after_b = 0
+                dur_ms = 0
             st.update({
                 "status": "skipped_text_needs_review",
                 "stepText": item["stepText"],
                 "issues": item.get("issues", []),
                 "afterBytes": after_b,
-                "durationMs": orig_entry["durationMs"],
+                "durationMs": dur_ms,
                 "genSec": 0.0,
             })
             skipped_review.append(item)
@@ -674,8 +876,8 @@ def main() -> int:
     atomic_write_json(MANIFEST_PATH, manifest)
     atomic_write_json(state_path, state)
     print(
-        f"Subject '{subject}': total={len(spoken_clips)}, to_voice={len(clean_items)}, "
-        f"needs_review_flagged={sum(1 for i in spoken_clips if i.get('needsReview'))}, "
+        f"Subject '{subject}': total={len(spoken_clips)}, already_charon={already_charon_count}, "
+        f"to_voice={len(clean_items)}, needs_review_flagged={sum(1 for i in spoken_clips if i.get('needsReview'))}, "
         f"skipped_needs_review={len(skipped_review)}",
         flush=True,
     )
@@ -688,21 +890,20 @@ def main() -> int:
     for item in clean_items:
         rel_path = item["path"]
         st = clips_state[rel_path]
-        cur_entry = manifest_by_path[rel_path]
+        cur_entry = manifest_by_path.get(rel_path)
         out_path = PUBLIC_DIR / rel_path
         already_accepted = (
             not args.no_resume
             and st.get("status") in {"passed", "passed_retry"}
             and out_path.exists()
             and out_path.stat().st_size > 0
+            and cur_entry is not None
             and cur_entry.get("voice") == args.voice_name
         )
         already_rejected = (
             not args.no_resume
             and st.get("status") == "rejected_whisper_mismatch"
-            and out_path.exists()
-            and out_path.stat().st_size > 0
-            and cur_entry.get("voice") != args.voice_name
+            and ((orig_by_path.get(rel_path) is not None and out_path.exists() and (cur_entry is None or cur_entry.get("voice") != args.voice_name)) or (orig_by_path.get(rel_path) is None))
         )
         if already_accepted:
             verified_cache.setdefault(item["spokenLine"], out_path)
@@ -733,8 +934,8 @@ def main() -> int:
             rel_path = item["path"]
             step_text = item["stepText"]
             spoken_line = item["spokenLine"]
-            orig_entry = orig_by_path[rel_path]
-            cur_entry = manifest_by_path[rel_path]
+            orig_entry = orig_by_path.get(rel_path)
+            cur_entry = ensure_manifest_entry(item)
             st = clips_state[rel_path]
             out_path = PUBLIC_DIR / rel_path
             out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -838,7 +1039,18 @@ def main() -> int:
                     dest2 = failed_dir / f"{slug}_attempt2.webm"
                     shutil.copy2(tmp_webm_2, dest2)
                     saved_attempts.append(str(dest2))
-                after_bytes = restore_from_origin_main(rel_path, orig_entry, cur_entry)
+                if orig_entry is not None:
+                    after_bytes = restore_from_origin_main(rel_path, orig_entry, cur_entry)
+                    dur_ms = orig_entry["durationMs"]
+                    rej_status = "REJECTED_RESTORED_AF_HEART"
+                else:
+                    if out_path.exists():
+                        out_path.unlink()
+                    manifest["clips"] = [c for c in manifest["clips"] if c["path"] != rel_path]
+                    manifest_by_path.pop(rel_path, None)
+                    after_bytes = 0
+                    dur_ms = 0
+                    rej_status = "REJECTED_NEW_NO_FALLBACK"
                 st.update({
                     "status": "rejected_whisper_mismatch",
                     "deduped": False,
@@ -852,11 +1064,11 @@ def main() -> int:
                     "wordDiff": chosen_v["wordDiff"],
                     "reasons": chosen_v["reasons"],
                     "afterBytes": after_bytes,
-                    "durationMs": orig_entry["durationMs"],
+                    "durationMs": dur_ms,
                     "genSec": round(total_gen_sec, 3),
                 })
                 print(
-                    f"[{pos}/{len(pending)}] {rel_path} REJECTED_RESTORED_AF_HEART "
+                    f"[{pos}/{len(pending)}] {rel_path} {rej_status} "
                     f"reasons={chosen_v['reasons']} | step={step_text!r} | heard={chosen_w!r}",
                     flush=True,
                 )
@@ -893,8 +1105,9 @@ def main() -> int:
     print(f"Passed & accepted (chatterbox-charon): {len(passed)}", flush=True)
     print(f"Skipped (step text needs review): {len(skipped_review)}", flush=True)
     print(f"Rejected & restored to af_heart (Whisper number/unit/formula fail): {len(rejected)}", flush=True)
+    pct_str = f"{after_total / before_total * 100:.1f}%" if before_total else "n/a (new clips)"
     print(f"Before total bytes: {before_total:,} ({before_total / (1024*1024):.2f} MB)", flush=True)
-    print(f"After  total bytes: {after_total:,} ({after_total / (1024*1024):.2f} MB) ({after_total / before_total * 100:.1f}%)", flush=True)
+    print(f"After  total bytes: {after_total:,} ({after_total / (1024*1024):.2f} MB) ({pct_str})", flush=True)
     print(f"Wall time: {wall_sec:.1f}s ({wall_sec/60:.2f} min) | Sum genSec: {total_gen:.1f}s", flush=True)
     if rejected:
         print("\nRejected clips (restored to af_heart):", flush=True)
