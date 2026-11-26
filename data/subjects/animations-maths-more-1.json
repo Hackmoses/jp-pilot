@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 30,
+  "count": 40,
   "animations": [
     {
       "id": "anim-math-jamb-2010-022",
@@ -2187,6 +2187,754 @@
           "tag": "answer",
           "title": "Find the distinct arrangements",
           "narration": "Dividing forty thousand three hundred and twenty by six gives six thousand seven hundred and twenty distinct arrangements."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-002",
+      "questionId": "math-jamb-2013-002",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "27 = 3^{3}",
+          "tag": "place value",
+          "title": "Find the highest power of three",
+          "narration": "Twenty-seven is exactly three cubed, so the leftmost nonzero digit belongs in the twenty-sevens place."
+        },
+        {
+          "n": 2,
+          "display": "27 = 1(3^{3}) + 0(3^{2}) + 0(3) + 0",
+          "tag": "digits",
+          "title": "Fill the remaining places with zeros",
+          "narration": "There are no nines, threes or ones left. Write zero in each of those places."
+        },
+        {
+          "n": 3,
+          "display": "27_{10} = 1000_{3}",
+          "tag": "answer",
+          "title": "Write the digits in base three",
+          "narration": "Read the digits from biggest place to smallest. The result is one zero zero zero in base three."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "27 = 3^{3}",
+          "tag": "place value",
+          "title": "Find the highest power of three",
+          "narration": "Twenty-seven is exactly three cubed, so the leftmost nonzero digit belongs in the twenty-sevens place."
+        },
+        {
+          "n": 2,
+          "display": "27 = 1(27) + 0",
+          "tag": "remainder",
+          "title": "Take one group of twenty-seven",
+          "narration": "One twenty-seven uses the whole number, leaving zero for the smaller places."
+        },
+        {
+          "n": 3,
+          "display": "27 = 1(3^{3}) + 0(3^{2}) + 0(3) + 0",
+          "tag": "digits",
+          "title": "Fill the remaining places with zeros",
+          "narration": "There are no nines, threes or ones left. Write zero in each of those places."
+        },
+        {
+          "n": 4,
+          "display": "1(27) + 0(9) + 0(3) + 0(1) = 27",
+          "tag": "check",
+          "title": "Convert back to base ten",
+          "narration": "Multiplying the four digits by their place values returns twenty-seven, so the digits are correct."
+        },
+        {
+          "n": 5,
+          "display": "27_{10} = 1000_{3}",
+          "tag": "answer",
+          "title": "Write the digits in base three",
+          "narration": "Read the digits from biggest place to smallest. The result is one zero zero zero in base three."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-003",
+      "questionId": "math-jamb-2013-003",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "5 parts = 40 apples",
+          "tag": "largest share",
+          "title": "Match forty to the largest ratio",
+          "narration": "Five is the largest of the ratio numbers, so the forty apples represent five equal parts."
+        },
+        {
+          "n": 2,
+          "display": "1 part = 8 apples",
+          "tag": "unit value",
+          "title": "Find the size of one part",
+          "narration": "Forty shared equally into five parts gives eight apples per part."
+        },
+        {
+          "n": 3,
+          "display": "Smallest share = 16 apples",
+          "tag": "answer",
+          "title": "Find the smallest share",
+          "narration": "Two groups of eight give sixteen apples."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "5 parts = 40 apples",
+          "tag": "largest share",
+          "title": "Match forty to the largest ratio",
+          "narration": "Five is the largest of the ratio numbers, so the forty apples represent five equal parts."
+        },
+        {
+          "n": 2,
+          "display": "1 part = \\frac{40}{5}",
+          "tag": "divide",
+          "title": "Divide both quantities by five",
+          "narration": "Divide the apples and the number of parts by five to find how many apples make up one part."
+        },
+        {
+          "n": 3,
+          "display": "1 part = 8 apples",
+          "tag": "unit value",
+          "title": "Find the size of one part",
+          "narration": "Forty shared equally into five parts gives eight apples per part."
+        },
+        {
+          "n": 4,
+          "display": "2 parts = 2 × 8 apples",
+          "tag": "smallest share",
+          "title": "Use two equal parts",
+          "narration": "Two is the smallest ratio number, so the smallest share contains two groups of eight apples."
+        },
+        {
+          "n": 5,
+          "display": "Smallest share = 16 apples",
+          "tag": "answer",
+          "title": "Find the smallest share",
+          "narration": "Two groups of eight give sixteen apples."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-005",
+      "questionId": "math-jamb-2013-005",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "I = \\frac{PRT}{100}",
+          "tag": "formula",
+          "title": "Use the simple interest formula",
+          "narration": "Simple interest is calculated on the original principal. Multiply principal, annual percentage rate and years, then divide by one hundred."
+        },
+        {
+          "n": 2,
+          "display": "600 = \\frac{3000 × 8 × T}{100}",
+          "tag": "substitute",
+          "title": "Put the values into the formula",
+          "narration": "Use eight for the percentage rate because the formula already divides by one hundred."
+        },
+        {
+          "n": 3,
+          "display": "T = \\frac{600}{240} = \\frac{5}{2}",
+          "tag": "divide",
+          "title": "Divide both sides by two hundred and forty",
+          "narration": "The yearly interest is the coefficient of T. Divide both sides by that amount to find the time."
+        },
+        {
+          "n": 4,
+          "display": "T = 2\\frac{1}{2} years",
+          "tag": "answer",
+          "title": "State the time in years",
+          "narration": "Five halves makes two whole years and half a year, so the time is two and a half years."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I = \\frac{PRT}{100}",
+          "tag": "formula",
+          "title": "Use the simple interest formula",
+          "narration": "Simple interest is calculated on the original principal. Multiply principal, annual percentage rate and years, then divide by one hundred."
+        },
+        {
+          "n": 2,
+          "display": "P = ₦3,000, R = 8%, I = ₦600",
+          "tag": "given",
+          "title": "Read the three known values",
+          "narration": "The interest sought is six hundred naira, the principal is three thousand naira, and the yearly rate is eight percent."
+        },
+        {
+          "n": 3,
+          "display": "600 = \\frac{3000 × 8 × T}{100}",
+          "tag": "substitute",
+          "title": "Put the values into the formula",
+          "narration": "Use eight for the percentage rate because the formula already divides by one hundred."
+        },
+        {
+          "n": 4,
+          "display": "600 = 240T",
+          "tag": "simplify",
+          "title": "Find the interest earned in one year",
+          "narration": "Three thousand times eight divided by one hundred is two hundred and forty naira per year."
+        },
+        {
+          "n": 5,
+          "display": "T = \\frac{600}{240} = \\frac{5}{2}",
+          "tag": "divide",
+          "title": "Divide both sides by two hundred and forty",
+          "narration": "The yearly interest is the coefficient of T. Divide both sides by that amount to find the time."
+        },
+        {
+          "n": 6,
+          "display": "240 × \\frac{5}{2} = 600",
+          "tag": "check",
+          "title": "Check the total interest",
+          "narration": "Two and a half years at two hundred and forty naira per year earns exactly six hundred naira."
+        },
+        {
+          "n": 7,
+          "display": "T = 2\\frac{1}{2} years",
+          "tag": "answer",
+          "title": "State the time in years",
+          "narration": "Five halves makes two whole years and half a year, so the time is two and a half years."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-014",
+      "questionId": "math-jamb-2013-014",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "p = \\frac{kmu}{q}",
+          "tag": "model",
+          "title": "Write the variation equation",
+          "narration": "Joint variation puts both m and u in the numerator. Inverse variation puts q in the denominator. The same constant k applies each time."
+        },
+        {
+          "n": 2,
+          "display": "k = \\frac{2}{3}",
+          "tag": "constant",
+          "title": "Reduce the constant",
+          "narration": "Four and six share a factor of two. Cancelling it gives two thirds."
+        },
+        {
+          "n": 3,
+          "display": "p = \\frac{2}{3} × 6 × 4 ÷ \\frac{8}{5}",
+          "tag": "new values",
+          "title": "Substitute the second set of values",
+          "narration": "Use the same constant with six and four in the numerator and eight fifths as the divisor."
+        },
+        {
+          "n": 4,
+          "display": "p = 10",
+          "tag": "answer",
+          "title": "Evaluate the new value of p",
+          "narration": "Sixteen divided by eight is two. Multiply by five to get ten."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "p = \\frac{kmu}{q}",
+          "tag": "model",
+          "title": "Write the variation equation",
+          "narration": "Joint variation puts both m and u in the numerator. Inverse variation puts q in the denominator. The same constant k applies each time."
+        },
+        {
+          "n": 2,
+          "display": "4 = \\frac{k × 3 × 2}{1}",
+          "tag": "first values",
+          "title": "Use the known value of p",
+          "narration": "Substitute three, two and one for m, u and q, then set the result equal to four."
+        },
+        {
+          "n": 3,
+          "display": "4 = 6k",
+          "tag": "simplify",
+          "title": "Multiply the known factors",
+          "narration": "The numerator contains three times two, which is six. Dividing by one leaves six times k."
+        },
+        {
+          "n": 4,
+          "display": "k = \\frac{4}{6}",
+          "tag": "divide",
+          "title": "Divide both sides by six",
+          "narration": "Divide both sides by six to leave the constant k on its own."
+        },
+        {
+          "n": 5,
+          "display": "k = \\frac{2}{3}",
+          "tag": "constant",
+          "title": "Reduce the constant",
+          "narration": "Four and six share a factor of two. Cancelling it gives two thirds."
+        },
+        {
+          "n": 6,
+          "display": "p = \\frac{2}{3} × 6 × 4 ÷ \\frac{8}{5}",
+          "tag": "new values",
+          "title": "Substitute the second set of values",
+          "narration": "Use the same constant with six and four in the numerator and eight fifths as the divisor."
+        },
+        {
+          "n": 7,
+          "display": "p = 16 × \\frac{5}{8}",
+          "tag": "reciprocal",
+          "title": "Multiply by the reciprocal",
+          "narration": "Two thirds of six is four, and four times four is sixteen. Dividing by eight fifths means multiplying by five eighths."
+        },
+        {
+          "n": 8,
+          "display": "p = 10",
+          "tag": "answer",
+          "title": "Evaluate the new value of p",
+          "narration": "Sixteen divided by eight is two. Multiply by five to get ten."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-021",
+      "questionId": "math-jamb-2013-021",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "3 ∗ 4 = 3 + 2(4)",
+          "tag": "inside",
+          "title": "Use the rule on three and four",
+          "narration": "Three is the first input and four is the second, so double four before adding three."
+        },
+        {
+          "n": 2,
+          "display": "2 ∗ 11 = 2 + 2(11)",
+          "tag": "outside",
+          "title": "Use eleven as the second input",
+          "narration": "Replace the brackets with eleven. Now double eleven and add the first input, two."
+        },
+        {
+          "n": 3,
+          "display": "2 ∗ (3 ∗ 4) = 24",
+          "tag": "answer",
+          "title": "Evaluate the outer operation",
+          "narration": "Twice eleven is twenty-two, and adding two gives twenty-four."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "x ∗ y = x + 2y",
+          "tag": "rule",
+          "title": "Read the star operation",
+          "narration": "The operation takes the first number and adds twice the second. Start with the brackets to find the second input for the outer star."
+        },
+        {
+          "n": 2,
+          "display": "3 ∗ 4 = 3 + 2(4)",
+          "tag": "inside",
+          "title": "Use the rule on three and four",
+          "narration": "Three is the first input and four is the second, so double four before adding three."
+        },
+        {
+          "n": 3,
+          "display": "3 ∗ 4 = 11",
+          "tag": "simplify",
+          "title": "Evaluate the brackets",
+          "narration": "Twice four is eight. Add three to get eleven for the expression in brackets."
+        },
+        {
+          "n": 4,
+          "display": "2 ∗ 11 = 2 + 2(11)",
+          "tag": "outside",
+          "title": "Use eleven as the second input",
+          "narration": "Replace the brackets with eleven. Now double eleven and add the first input, two."
+        },
+        {
+          "n": 5,
+          "display": "2 ∗ (3 ∗ 4) = 24",
+          "tag": "answer",
+          "title": "Evaluate the outer operation",
+          "narration": "Twice eleven is twenty-two, and adding two gives twenty-four."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-027",
+      "questionId": "math-jamb-2013-027",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "30 cm = 0.30 m",
+          "tag": "units",
+          "title": "Use metres for all lengths",
+          "narration": "There are one hundred centimetres in a metre, so the side of each square tile is zero point three metres."
+        },
+        {
+          "n": 2,
+          "display": "N_{length} = \\frac{7.2}{0.30} = 24",
+          "tag": "length",
+          "title": "Count the tiles along the length",
+          "narration": "Divide seven point two metres by the side of one tile to get twenty-four tiles in each row."
+        },
+        {
+          "n": 3,
+          "display": "N_{width} = \\frac{4.2}{0.30} = 14",
+          "tag": "width",
+          "title": "Count the rows along the width",
+          "narration": "Divide four point two metres by the same tile side to get fourteen rows."
+        },
+        {
+          "n": 4,
+          "display": "N = 24 × 14 = 336",
+          "tag": "answer",
+          "title": "Count all the tiles",
+          "narration": "Fourteen rows with twenty-four tiles in each give three hundred and thirty-six tiles."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "30 cm = 0.30 m",
+          "tag": "units",
+          "title": "Use metres for all lengths",
+          "narration": "There are one hundred centimetres in a metre, so the side of each square tile is zero point three metres."
+        },
+        {
+          "n": 2,
+          "display": "N = N_{length} × N_{width}",
+          "tag": "counting rule",
+          "title": "Count tiles in rows and columns",
+          "narration": "Because whole tiles fit along both sides, multiply the number along a row by the number of rows."
+        },
+        {
+          "n": 3,
+          "display": "N_{length} = \\frac{7.2}{0.30} = 24",
+          "tag": "length",
+          "title": "Count the tiles along the length",
+          "narration": "Divide seven point two metres by the side of one tile to get twenty-four tiles in each row."
+        },
+        {
+          "n": 4,
+          "display": "N_{width} = \\frac{4.2}{0.30} = 14",
+          "tag": "width",
+          "title": "Count the rows along the width",
+          "narration": "Divide four point two metres by the same tile side to get fourteen rows."
+        },
+        {
+          "n": 5,
+          "display": "N = 24 × 14 = 336",
+          "tag": "answer",
+          "title": "Count all the tiles",
+          "narration": "Fourteen rows with twenty-four tiles in each give three hundred and thirty-six tiles."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-028",
+      "questionId": "math-jamb-2013-028",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "OA = OB = 8 cm, ∠AOB = 90°",
+          "tag": "given",
+          "title": "Mark the two radii and central angle",
+          "narration": "Let A and B be the ends of the chord and O the centre. The two radii are eight centimetres and meet at ninety degrees."
+        },
+        {
+          "n": 2,
+          "display": "AB^{2} = OA^{2} + OB^{2}",
+          "tag": "theorem",
+          "title": "Apply Pythagoras' theorem",
+          "narration": "The chord is opposite the right angle, so its square equals the sum of the squares of the two radii."
+        },
+        {
+          "n": 3,
+          "display": "AB = \\sqrt{64 × 2} cm",
+          "tag": "root",
+          "title": "Take the positive root",
+          "narration": "A chord length is positive. Factor one hundred and twenty-eight as sixty-four times two so the perfect square can come out."
+        },
+        {
+          "n": 4,
+          "display": "AB = 8\\sqrt{2} cm",
+          "tag": "answer",
+          "title": "Simplify the chord length",
+          "narration": "The square root of sixty-four is eight, leaving eight times the square root of two centimetres."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "OA = OB = 8 cm, ∠AOB = 90°",
+          "tag": "given",
+          "title": "Mark the two radii and central angle",
+          "narration": "Let A and B be the ends of the chord and O the centre. The two radii are eight centimetres and meet at ninety degrees."
+        },
+        {
+          "n": 2,
+          "display": "AB^{2} = OA^{2} + OB^{2}",
+          "tag": "theorem",
+          "title": "Apply Pythagoras' theorem",
+          "narration": "The chord is opposite the right angle, so its square equals the sum of the squares of the two radii."
+        },
+        {
+          "n": 3,
+          "display": "AB^{2} = 8^{2} + 8^{2}",
+          "tag": "substitute",
+          "title": "Use both radius lengths",
+          "narration": "The two sides touching the right angle are both radii. Put eight into both squared terms."
+        },
+        {
+          "n": 4,
+          "display": "AB^{2} = 128 cm^{2}",
+          "tag": "add",
+          "title": "Add the squares",
+          "narration": "Each radius squared gives sixty-four square centimetres. Together the squares give one hundred and twenty-eight."
+        },
+        {
+          "n": 5,
+          "display": "AB = \\sqrt{64 × 2} cm",
+          "tag": "root",
+          "title": "Take the positive root",
+          "narration": "A chord length is positive. Factor one hundred and twenty-eight as sixty-four times two so the perfect square can come out."
+        },
+        {
+          "n": 6,
+          "display": "AB = 8\\sqrt{2} cm",
+          "tag": "answer",
+          "title": "Simplify the chord length",
+          "narration": "The square root of sixty-four is eight, leaving eight times the square root of two centimetres."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-037",
+      "questionId": "math-jamb-2013-037",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "\\frac{dA}{dr} = 2πr",
+          "tag": "differentiate",
+          "title": "Differentiate area with respect to radius",
+          "narration": "By the power rule, bring down the two and lower the exponent by one. This gives the change in area per unit change in radius."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{dA}{dt} = 2π × 7 × 0.02",
+          "tag": "substitute",
+          "title": "Use the radius and its given rate",
+          "narration": "Evaluate at seven centimetres and use zero point zero two centimetres per second for the radius growth."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{dA}{dt} = 0.28π cm^{2} s^{−1}",
+          "tag": "exact rate",
+          "title": "Multiply the numbers first",
+          "narration": "Two times seven times zero point zero two equals zero point two eight. The units are square centimetres per second."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{dA}{dt} ≈ 0.88 cm^{2} s^{−1}",
+          "tag": "answer",
+          "title": "Round the rate to two decimal places",
+          "narration": "Zero point two eight times pi rounds to zero point eight eight square centimetres per second."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "A = πr^{2}",
+          "tag": "area formula",
+          "title": "Write the area in terms of the radius",
+          "narration": "The area changes because the radius changes. Start with the circle area formula to connect the two quantities."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{dA}{dr} = 2πr",
+          "tag": "differentiate",
+          "title": "Differentiate area with respect to radius",
+          "narration": "By the power rule, bring down the two and lower the exponent by one. This gives the change in area per unit change in radius."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{dA}{dt} = \\frac{dA}{dr} × \\frac{dr}{dt}",
+          "tag": "chain rule",
+          "title": "Connect the two rates",
+          "narration": "The chain rule multiplies the area change per centimetre by the radius change per second to get the area change per second."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{dA}{dt} = 2π × 7 × 0.02",
+          "tag": "substitute",
+          "title": "Use the radius and its given rate",
+          "narration": "Evaluate at seven centimetres and use zero point zero two centimetres per second for the radius growth."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{dA}{dt} = 0.28π cm^{2} s^{−1}",
+          "tag": "exact rate",
+          "title": "Multiply the numbers first",
+          "narration": "Two times seven times zero point zero two equals zero point two eight. The units are square centimetres per second."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{dA}{dt} ≈ 0.88 cm^{2} s^{−1}",
+          "tag": "answer",
+          "title": "Round the rate to two decimal places",
+          "narration": "Zero point two eight times pi rounds to zero point eight eight square centimetres per second."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-042",
+      "questionId": "math-jamb-2013-042",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Mean = \\frac{sum}{number of values}",
+          "tag": "formula",
+          "title": "Use the arithmetic mean formula",
+          "narration": "Add the values and divide by how many values were added. Here there are four values."
+        },
+        {
+          "n": 2,
+          "display": "S = (t + 2) + (2t − 4) + (3t + 2) + 2t",
+          "tag": "sum",
+          "title": "Write out all four terms",
+          "narration": "Keep the sign of each term when putting the four expressions into the sum."
+        },
+        {
+          "n": 3,
+          "display": "S = 8t",
+          "tag": "simplify",
+          "title": "Add the two groups",
+          "narration": "The coefficients of t add to eight. Two minus four plus two is zero, so the constants cancel."
+        },
+        {
+          "n": 4,
+          "display": "Mean = 2t",
+          "tag": "answer",
+          "title": "Simplify the mean",
+          "narration": "Eight divided by four gives two. The mean is two t."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Mean = \\frac{sum}{number of values}",
+          "tag": "formula",
+          "title": "Use the arithmetic mean formula",
+          "narration": "Add the values and divide by how many values were added. Here there are four values."
+        },
+        {
+          "n": 2,
+          "display": "S = (t + 2) + (2t − 4) + (3t + 2) + 2t",
+          "tag": "sum",
+          "title": "Write out all four terms",
+          "narration": "Keep the sign of each term when putting the four expressions into the sum."
+        },
+        {
+          "n": 3,
+          "display": "S = (t + 2t + 3t + 2t) + (2 − 4 + 2)",
+          "tag": "collect",
+          "title": "Group the like terms",
+          "narration": "Group all terms containing t together and group the constants separately so each group can be added."
+        },
+        {
+          "n": 4,
+          "display": "S = 8t",
+          "tag": "simplify",
+          "title": "Add the two groups",
+          "narration": "The coefficients of t add to eight. Two minus four plus two is zero, so the constants cancel."
+        },
+        {
+          "n": 5,
+          "display": "Mean = \\frac{8t}{4}",
+          "tag": "divide",
+          "title": "Divide by the number of values",
+          "narration": "The sum is eight t and it comes from four numbers, so divide eight t by four."
+        },
+        {
+          "n": 6,
+          "display": "Mean = 2t",
+          "tag": "answer",
+          "title": "Simplify the mean",
+          "narration": "Eight divided by four gives two. The mean is two t."
+        }
+      ]
+    },
+    {
+      "id": "anim-math-jamb-2013-048",
+      "questionId": "math-jamb-2013-048",
+      "stepSeconds": 5,
+      "steps": [
+        {
+          "n": 1,
+          "display": "N = choice_{1} × choice_{2} × choice_{3}",
+          "tag": "rule",
+          "title": "Use the multiplication principle",
+          "narration": "Seats are distinct, so count the available choices at each seat and multiply the counts."
+        },
+        {
+          "n": 2,
+          "display": "N = 5 × 4 × 3",
+          "tag": "third seat",
+          "title": "Include the third seat",
+          "narration": "After filling two seats, three people are still available. Multiply the five, four and three choices to count all orders."
+        },
+        {
+          "n": 3,
+          "display": "N = 60",
+          "tag": "answer",
+          "title": "Count the seating arrangements",
+          "narration": "Five times four is twenty, and twenty times three is sixty. There are sixty seating arrangements."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "N = choice_{1} × choice_{2} × choice_{3}",
+          "tag": "rule",
+          "title": "Use the multiplication principle",
+          "narration": "Seats are distinct, so count the available choices at each seat and multiply the counts."
+        },
+        {
+          "n": 2,
+          "display": "choice_{1} = 5",
+          "tag": "first seat",
+          "title": "Choose someone for the first seat",
+          "narration": "No one has been seated yet, so any of the five people can fill the first seat."
+        },
+        {
+          "n": 3,
+          "display": "choice_{2} = 4",
+          "tag": "second seat",
+          "title": "Choose from the four people left",
+          "narration": "The person in the first seat cannot sit in the second seat. That leaves four choices."
+        },
+        {
+          "n": 4,
+          "display": "N = 5 × 4 × 3",
+          "tag": "third seat",
+          "title": "Include the third seat",
+          "narration": "After filling two seats, three people are still available. Multiply the five, four and three choices to count all orders."
+        },
+        {
+          "n": 5,
+          "display": "N = 60",
+          "tag": "answer",
+          "title": "Count the seating arrangements",
+          "narration": "Five times four is twenty, and twenty times three is sixty. There are sixty seating arrangements."
         }
       ]
     }
