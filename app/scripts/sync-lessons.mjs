@@ -20,6 +20,10 @@ const index = []
 for (const name of (await readdir(bank)).filter((file) => file.endsWith('.json')).sort()) {
   const text = await readFile(new URL(name, bank), 'utf8')
   const topic = JSON.parse(text)
+  if (!Array.isArray(topic?.lessons)) {
+    console.log('Skipping non-lesson JSON:', name)
+    continue
+  }
   const lessons = topic.lessons.map(({ id, title, scenes, pastQuestion }) => ({
     id, title, sceneIds: [...scenes, ...pastQuestion?.scenes ?? []].map((scene) => scene.id),
   }))
