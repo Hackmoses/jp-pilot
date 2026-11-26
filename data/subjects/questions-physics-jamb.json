@@ -1040,7 +1040,7 @@
         {
           "id": "d",
           "text": "400 m s⁻¹",
-          "why": "v ∝ √T (kelvin): 340 × √(400 ÷ 289) = 340 × 20/17 = 400 m s⁻¹. Pressure has no effect.",
+          "why": "v ∝ √T (kelvin): 340 × √(400 ÷ 289) = 340 × \\frac{20}{17} = 400 m s⁻¹. Pressure has no effect.",
           "whyWrong": null
         }
       ],
@@ -1149,7 +1149,7 @@
           "id": "a",
           "text": "3 cm",
           "why": "This does not follow from the mirror formula.",
-          "whyWrong": "3 cm does not follow. 1/v = 1/5 − 1/15, so v = 7.5 cm, magnification = 7.5 ÷ 15 = 0.5, image = 2 cm."
+          "whyWrong": "3 cm does not follow. \\frac{1}{v} = \\frac{1}{5} − \\frac{1}{15}, so v = 7.5 cm, magnification = 7.5 ÷ 15 = 0.5, image = 2 cm."
         },
         {
           "id": "b",
@@ -1166,7 +1166,7 @@
         {
           "id": "d",
           "text": "2 cm",
-          "why": "1/v = 1/5 − 1/15 gives v = 7.5 cm; m = 7.5 ÷ 15 = 0.5; image = 4 × 0.5 = 2 cm.",
+          "why": "\\frac{1}{v} = \\frac{1}{5} − \\frac{1}{15} gives v = 7.5 cm; m = 7.5 ÷ 15 = 0.5; image = 4 × 0.5 = 2 cm.",
           "whyWrong": null
         }
       ],
@@ -1176,7 +1176,7 @@
         "b"
       ],
       "hint": "Find the image distance first, then the magnification.",
-      "explanation": "Mirror formula: 1/f = 1/u + 1/v, so 1/v = 1/5 − 1/15 = 2/15 and v = 7.5 cm. Magnification m = v ÷ u = 7.5 ÷ 15 = 0.5. Image height = 0.5 × 4 = 2 cm.",
+      "explanation": "Mirror formula: \\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}, so \\frac{1}{v} = \\frac{1}{5} − \\frac{1}{15} = \\frac{2}{15} and v = 7.5 cm. Magnification m = v ÷ u = 7.5 ÷ 15 = 0.5. Image height = 0.5 × 4 = 2 cm.",
       "trap": "4 cm catches students who assume mirror images are always the same size as the object.",
       "mnemonic": "m = v over u, then multiply by the object height.",
       "askPresets": [
@@ -1526,7 +1526,7 @@
         {
           "id": "a",
           "text": "12 A",
-          "why": "Parallel: R = 4 ÷ 3 Ω; I = 16 ÷ (4/3) = 12 A.",
+          "why": "Parallel: R = 4 ÷ 3 Ω; I = 16 ÷ \\left(\\frac{4}{3}\\right) = 12 A.",
           "whyWrong": null
         },
         {
@@ -1539,7 +1539,7 @@
           "id": "c",
           "text": "10 A",
           "why": "This does not follow from V ÷ R.",
-          "whyWrong": "10 A does not follow. The combined resistance is 4/3 Ω, so I = 16 ÷ (4/3) = 12 A."
+          "whyWrong": "10 A does not follow. The combined resistance is \\frac{4}{3} Ω, so I = 16 ÷ \\left(\\frac{4}{3}\\right) = 12 A."
         },
         {
           "id": "d",
@@ -1554,7 +1554,7 @@
         "d"
       ],
       "hint": "Each branch has the full 16 V across it.",
-      "explanation": "Three equal 4 Ω resistors in parallel give R = 4 ÷ 3 Ω. Total current I = V ÷ R = 16 ÷ (4/3) = 12 A. Check: each branch carries 16 ÷ 4 = 4 A, and 3 × 4 = 12 A.",
+      "explanation": "Three equal 4 Ω resistors in parallel give R = 4 ÷ 3 Ω. Total current I = V ÷ R = 16 ÷ \\left(\\frac{4}{3}\\right) = 12 A. Check: each branch carries 16 ÷ 4 = 4 A, and 3 × 4 = 12 A.",
       "trap": "8 A is a guess for students who are unsure how parallel resistors combine. Work out each branch: 4 A each.",
       "mnemonic": "Parallel branches each get the full voltage.",
       "askPresets": [

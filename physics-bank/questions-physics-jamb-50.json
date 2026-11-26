@@ -542,13 +542,13 @@
         {
           "id": "b",
           "text": "1767.3 cm^{3}",
-          "why": "This value does not satisfy P₁V₁/T₁ = P₂V₂/T₂.",
-          "whyWrong": "This value does not satisfy P₁V₁/T₁ = P₂V₂/T₂."
+          "why": "This value does not satisfy \\frac{P₁V₁}{T₁} = \\frac{P₂V₂}{T₂}.",
+          "whyWrong": "This value does not satisfy \\frac{P₁V₁}{T₁} = \\frac{P₂V₂}{T₂}."
         },
         {
           "id": "c",
           "text": "1676.3 cm^{3}",
-          "why": "For a fixed amount of gas, PV/T is constant. At 273 K and 760 mmHg, the volume is 2000 × (700/760) × (273/300) ≈ 1676.3 cm^{3}.",
+          "why": "For a fixed amount of gas, \\frac{PV}{T} is constant. At 273 K and 760 mmHg, the volume is 2000 × \\left(\\frac{700}{760}\\right) × \\left(\\frac{273}{300}\\right) ≈ 1676.3 cm^{3}.",
           "whyWrong": null
         },
         {
@@ -564,13 +564,13 @@
         "d"
       ],
       "hint": "Use Kelvin and account for both pressure and temperature.",
-      "explanation": "For a fixed amount of gas, PV/T is constant. At 273 K and 760 mmHg, the volume is 2000 × (700/760) × (273/300) ≈ 1676.3 cm^{3}.",
+      "explanation": "For a fixed amount of gas, \\frac{PV}{T} is constant. At 273 K and 760 mmHg, the volume is 2000 × \\left(\\frac{700}{760}\\right) × \\left(\\frac{273}{300}\\right) ≈ 1676.3 cm^{3}.",
       "trap": "This value is too high after both cooling and compression.",
-      "mnemonic": "A closed gas sample keeps PV/T constant.",
+      "mnemonic": "A closed gas sample keeps \\frac{PV}{T} constant.",
       "askPresets": [
         {
           "id": "simpler",
-          "answer": "A closed gas sample keeps PV/T constant."
+          "answer": "A closed gas sample keeps \\frac{PV}{T} constant."
         },
         {
           "id": "whynot",
@@ -796,13 +796,13 @@
         {
           "id": "a",
           "text": "5.0 A",
-          "why": "The RMS factor is 1/√2 rather than one half.",
-          "whyWrong": "The RMS factor is 1/√2 rather than one half."
+          "why": "The RMS factor is \\frac{1}{\\sqrt{2}} rather than one half.",
+          "whyWrong": "The RMS factor is \\frac{1}{\\sqrt{2}} rather than one half."
         },
         {
           "id": "b",
           "text": "7.1 A",
-          "why": "The sine coefficient is the peak current of 10 A. The RMS current is 10/√2, about 7.1 A.",
+          "why": "The sine coefficient is the peak current of 10 A. The RMS current is \\frac{10}{\\sqrt{2}}, about 7.1 A.",
           "whyWrong": null
         },
         {
@@ -824,7 +824,7 @@
         "d"
       ],
       "hint": "Identify the peak, then convert it to the heating-equivalent current.",
-      "explanation": "The sine coefficient is the peak current of 10 A. The RMS current is 10/√2, about 7.1 A.",
+      "explanation": "The sine coefficient is the peak current of 10 A. The RMS current is \\frac{10}{\\sqrt{2}}, about 7.1 A.",
       "trap": "10 A is the peak value.",
       "mnemonic": "For a sine wave, RMS = peak ÷ √2.",
       "askPresets": [
@@ -1724,7 +1724,7 @@
         {
           "id": "d",
           "text": "0.05 m^{3}",
-          "why": "The ice takes up 450/900 = 0.50 m^{3}. The water takes up 450/1000 = 0.45 m^{3}. The volume decreases by 0.05 m^{3}.",
+          "why": "The ice takes up \\frac{450}{900} = 0.50 m^{3}. The water takes up \\frac{450}{1000} = 0.45 m^{3}. The volume decreases by 0.05 m^{3}.",
           "whyWrong": null
         }
       ],
@@ -1734,13 +1734,13 @@
         "c"
       ],
       "hint": "Divide the same mass by each density.",
-      "explanation": "The ice takes up 450/900 = 0.50 m^{3}. The water takes up 450/1000 = 0.45 m^{3}. The volume decreases by 0.05 m^{3}.",
+      "explanation": "The ice takes up \\frac{450}{900} = 0.50 m^{3}. The water takes up \\frac{450}{1000} = 0.45 m^{3}. The volume decreases by 0.05 m^{3}.",
       "trap": "0.45 m^{3} is the final volume.",
-      "mnemonic": "Mass stays fixed, so compare the two volumes m/ρ.",
+      "mnemonic": "Mass stays fixed, so compare the two volumes \\frac{m}{ρ}.",
       "askPresets": [
         {
           "id": "simpler",
-          "answer": "Mass stays fixed, so compare the two volumes m/ρ."
+          "answer": "Mass stays fixed, so compare the two volumes \\frac{m}{ρ}."
         },
         {
           "id": "whynot",
@@ -2037,7 +2037,7 @@
         {
           "id": "b",
           "text": "is several times denser than water",
-          "why": "For a given pressure, h = P/(ρg). Mercury’s high density lets a barometer balance atmospheric pressure with a comparatively short column.",
+          "why": "For a given pressure, h = \\frac{P}{ρg}. Mercury’s high density lets a barometer balance atmospheric pressure with a comparatively short column.",
           "whyWrong": null
         },
         {
@@ -2059,7 +2059,7 @@
         "d"
       ],
       "hint": "Use the pressure equation for a liquid column.",
-      "explanation": "For a given pressure, h = P/(ρg). Mercury’s high density lets a barometer balance atmospheric pressure with a comparatively short column.",
+      "explanation": "For a given pressure, h = \\frac{P}{ρg}. Mercury’s high density lets a barometer balance atmospheric pressure with a comparatively short column.",
       "trap": "Uniform expansion can matter in thermometry, but it does not explain the short barometer column.",
       "mnemonic": "A denser barometer liquid needs a shorter column.",
       "askPresets": [
@@ -2427,7 +2427,7 @@
         {
           "id": "b",
           "text": "19.6 N",
-          "why": "At fixed length and linear density, f ∝ √T. The new tension is 10 × (350/250)^{2} = 19.6 N.",
+          "why": "At fixed length and linear density, f ∝ √T. The new tension is 10 × \\left(\\frac{350}{250}\\right)^{2} = 19.6 N.",
           "whyWrong": null
         },
         {
@@ -2449,7 +2449,7 @@
         "d"
       ],
       "hint": "For a fixed wire and length, frequency follows the square root of tension.",
-      "explanation": "At fixed length and linear density, f ∝ √T. The new tension is 10 × (350/250)^{2} = 19.6 N.",
+      "explanation": "At fixed length and linear density, f ∝ √T. The new tension is 10 × \\left(\\frac{350}{250}\\right)^{2} = 19.6 N.",
       "trap": "14.0 N assumes tension is proportional to frequency itself.",
       "mnemonic": "Square the frequency ratio to find the tension ratio.",
       "askPresets": [
@@ -2622,7 +2622,7 @@
         {
           "id": "b",
           "text": "5 minutes",
-          "why": "Faraday’s law gives Q = 1.98/0.0033 = 600 C. At 2 C per second this requires 300 s, or 5 minutes.",
+          "why": "Faraday’s law gives Q = \\frac{1.98}{0.0033} = 600 C. At 2 C per second this requires 300 s, or 5 minutes.",
           "whyWrong": null
         },
         {
@@ -2644,7 +2644,7 @@
         "d"
       ],
       "hint": "Calculate the charge needed and then divide it by the current.",
-      "explanation": "Faraday’s law gives Q = 1.98/0.0033 = 600 C. At 2 C per second this requires 300 s, or 5 minutes.",
+      "explanation": "Faraday’s law gives Q = \\frac{1.98}{0.0033} = 600 C. At 2 C per second this requires 300 s, or 5 minutes.",
       "trap": "30 minutes at 2 A delivers 3600 C.",
       "mnemonic": "Mass gives charge; charge divided by current gives seconds.",
       "askPresets": [
@@ -2687,7 +2687,7 @@
         {
           "id": "b",
           "text": "600 cm^{3}",
-          "why": "The oil has mass 0.9 × 400 = 360 g. At 0.6 g cm^{−3}, its volume is 360/0.6 = 600 cm^{3}.",
+          "why": "The oil has mass 0.9 × 400 = 360 g. At 0.6 g cm^{−3}, its volume is \\frac{360}{0.6} = 600 cm^{3}.",
           "whyWrong": null
         },
         {
@@ -2709,7 +2709,7 @@
         "d"
       ],
       "hint": "The mass stays constant, so use the density ratio.",
-      "explanation": "The oil has mass 0.9 × 400 = 360 g. At 0.6 g cm^{−3}, its volume is 360/0.6 = 600 cm^{3}.",
+      "explanation": "The oil has mass 0.9 × 400 = 360 g. At 0.6 g cm^{−3}, its volume is \\frac{360}{0.6} = 600 cm^{3}.",
       "trap": "360 is the mass in grams.",
       "mnemonic": "For fixed mass, volume increases as density decreases.",
       "askPresets": [
@@ -3219,7 +3219,7 @@
         {
           "id": "d",
           "text": "1 μF",
-          "why": "The three 2 μF capacitors on the left are in parallel, giving 6 μF. This group is in series with the terminal capacitors of 2 μF and 3 μF. The reciprocals add to 1/6 + 1/2 + 1/3 = 1 per μF, so the equivalent is 1 μF.",
+          "why": "The three 2 μF capacitors on the left are in parallel, giving 6 μF. This group is in series with the terminal capacitors of 2 μF and 3 μF. The reciprocals add to \\frac{1}{6} + \\frac{1}{2} + \\frac{1}{3} = 1 per μF, so the equivalent is 1 μF.",
           "whyWrong": null
         }
       ],
@@ -3229,7 +3229,7 @@
         "b"
       ],
       "hint": "Find the equivalent of the three capacitors connected to the same two rails, then reduce the series path.",
-      "explanation": "The three 2 μF capacitors on the left are in parallel, giving 6 μF. This group is in series with the terminal capacitors of 2 μF and 3 μF. The reciprocals add to 1/6 + 1/2 + 1/3 = 1 per μF, so the equivalent is 1 μF.",
+      "explanation": "The three 2 μF capacitors on the left are in parallel, giving 6 μF. This group is in series with the terminal capacitors of 2 μF and 3 μF. The reciprocals add to \\frac{1}{6} + \\frac{1}{2} + \\frac{1}{3} = 1 per μF, so the equivalent is 1 μF.",
       "trap": "2 μF is the upper terminal capacitor by itself. The other series elements lower the equivalent further.",
       "mnemonic": "Parallel adds capacitances. Series adds reciprocals.",
       "askPresets": [

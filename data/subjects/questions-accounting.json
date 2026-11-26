@@ -470,26 +470,26 @@
         {
           "id": "a",
           "text": "₦20,000",
-          "why": "₦20,000 is Partner B's share (2/5), not Partner A's.",
-          "whyWrong": "₦20,000 is 2/5 of ₦50,000, which belongs to Partner B. Because the ratio 3:2 lists Partner A first, Partner A gets the larger 3/5 share (₦30,000)."
+          "why": "₦20,000 is Partner B's share \\left(\\frac{2}{5}\\right), not Partner A's.",
+          "whyWrong": "₦20,000 is \\frac{2}{5} of ₦50,000, which belongs to Partner B. Because the ratio 3:2 lists Partner A first, Partner A gets the larger \\frac{3}{5} share (₦30,000)."
         },
         {
           "id": "b",
           "text": "₦30,000",
-          "why": "Total ratio parts = 3 + 2 = 5, so Partner A receives (3/5) × ₦50,000 = ₦30,000.",
+          "why": "Total ratio parts = 3 + 2 = 5, so Partner A receives \\left(\\frac{3}{5}\\right) × ₦50,000 = ₦30,000.",
           "whyWrong": null
         },
         {
           "id": "c",
           "text": "₦40,000",
-          "why": "3/5 of ₦50,000 is ₦30,000, not ₦40,000.",
-          "whyWrong": "₦40,000 would be 4/5 of the profit, leaving only ₦10,000 for Partner B, which is a 4:1 ratio rather than 3:2."
+          "why": "\\frac{3}{5} of ₦50,000 is ₦30,000, not ₦40,000.",
+          "whyWrong": "₦40,000 would be \\frac{4}{5} of the profit, leaving only ₦10,000 for Partner B, which is a 4:1 ratio rather than 3:2."
         },
         {
           "id": "d",
           "text": "₦15,000",
           "why": "This divides ₦50,000 into 10 parts instead of 5 parts.",
-          "whyWrong": "₦15,000 is 3/10 of ₦50,000, which would leave ₦35,000 unallocated or miscalculated. The ratio 3:2 sums to 5 parts, giving ₦10,000 per part."
+          "whyWrong": "₦15,000 is \\frac{3}{10} of ₦50,000, which would leave ₦35,000 unallocated or miscalculated. The ratio 3:2 sums to 5 parts, giving ₦10,000 per part."
         }
       ],
       "answerId": "b",
@@ -510,7 +510,7 @@
         {
           "id": "whynot",
           "optionId": "a",
-          "answer": "₦20,000 is 2/5 of ₦50,000, which is Partner B's share. Partner A is named first in 3:2, so A receives 3/5 (₦30,000)."
+          "answer": "₦20,000 is \\frac{2}{5} of ₦50,000, which is Partner B's share. Partner A is named first in 3:2, so A receives \\frac{3}{5} (₦30,000)."
         },
         {
           "id": "simpler",
