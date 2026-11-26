@@ -1,0 +1,645 @@
+{
+  "version": 1,
+  "count": 10,
+  "animations": [
+    {
+      "id": "anim-phys-jamb-2008-021",
+      "questionId": "phys-jamb-2008-021",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 300 K, T_{2} = 308 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Add two hundred and seventy-three to each Celsius temperature to get three hundred kelvin and three hundred and eight kelvin."
+        },
+        {
+          "n": 2,
+          "display": "V_{2} = 600 × \\frac{308}{300}",
+          "tag": "apply Charles's law",
+          "title": "Apply Charles's law",
+          "narration": "At constant pressure, volume is proportional to kelvin temperature, so multiply six hundred by three hundred and eight over three hundred."
+        },
+        {
+          "n": 3,
+          "display": "V_{2} = 616 cm^{3}",
+          "tag": "calculate the volume",
+          "title": "Calculate the volume",
+          "narration": "Six hundred divided by three hundred is two, and two times three hundred and eight gives six hundred and sixteen cubic centimetres. Choose D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{1} = 600 cm^{3}, T_{1} = 27°C, T_{2} = 35°C",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the initial volume and the two temperatures. Because pressure stays constant, Charles's law links the volume and temperature."
+        },
+        {
+          "n": 2,
+          "display": "27 + 273 = 300 K, 35 + 273 = 308 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Change both temperatures from degrees Celsius to kelvin by adding two hundred and seventy-three, because gas law ratios only work on the absolute kelvin scale."
+        },
+        {
+          "n": 3,
+          "display": "V_{2} = V_{1} × \\frac{T_{2}}{T_{1}}",
+          "tag": "state Charles's law",
+          "title": "State Charles's law",
+          "narration": "At constant pressure, volume divided by kelvin temperature stays constant. Rearrange the relation to solve for the new volume."
+        },
+        {
+          "n": 4,
+          "display": "V_{2} = 600 × \\frac{308}{300} = 2 × 308",
+          "tag": "substitute the values",
+          "title": "Substitute the values",
+          "narration": "Substitute six hundred cubic centimetres, three hundred and eight kelvin, and three hundred kelvin. Six hundred over three hundred simplifies to two."
+        },
+        {
+          "n": 5,
+          "display": "V_{2} = 616 cm^{3}",
+          "tag": "find the new volume",
+          "title": "Find the new volume",
+          "narration": "Multiply two by three hundred and eight to get six hundred and sixteen cubic centimetres. The air expands slightly as it warms up. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2010-022",
+      "questionId": "phys-jamb-2010-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T = 27 + 273 = 300 K",
+          "tag": "convert to kelvin",
+          "title": "Convert to kelvin",
+          "narration": "Add two hundred and seventy-three to twenty-seven degrees Celsius to get three hundred kelvin."
+        },
+        {
+          "n": 2,
+          "display": "P = \\frac{1 × 8.3 × 300}{10^{-2}}",
+          "tag": "use the ideal gas law",
+          "title": "Use the ideal gas law",
+          "narration": "Rearrange P V equals n R T for pressure and substitute one mole, eight point three, three hundred kelvin, and ten to the minus two cubic metres."
+        },
+        {
+          "n": 3,
+          "display": "P = 2.49 × 10^{5} N/m²",
+          "tag": "simplify to standard form",
+          "title": "Simplify to standard form",
+          "narration": "Eight point three times three hundred gives two thousand four hundred and ninety, and dividing by ten to the minus two multiplies by one hundred. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "n = 1, V = 10^{-2} m^{3}, T = 27°C",
+          "tag": "list the given values",
+          "title": "List the given values",
+          "narration": "Write down one mole, the volume in cubic metres, and the temperature. The molar gas constant R is eight point three joules per mole kelvin."
+        },
+        {
+          "n": 2,
+          "display": "T = 27 + 273 = 300 K",
+          "tag": "convert temperature to kelvin",
+          "title": "Convert temperature to kelvin",
+          "narration": "Change twenty-seven degrees Celsius to kelvin by adding two hundred and seventy-three, because the gas constant R uses kelvin."
+        },
+        {
+          "n": 3,
+          "display": "PV = nRT ⇒ P = \\frac{nRT}{V}",
+          "tag": "rearrange the ideal gas law",
+          "title": "Rearrange the ideal gas law",
+          "narration": "Use the ideal gas equation because pressure, volume, moles, and temperature appear together. Divide both sides by volume to isolate pressure."
+        },
+        {
+          "n": 4,
+          "display": "P = \\frac{1 × 8.3 × 300}{10^{-2}} = \\frac{2490}{10^{-2}}",
+          "tag": "substitute and multiply",
+          "title": "Substitute and multiply",
+          "narration": "Multiply one by eight point three by three hundred on top to get two thousand four hundred and ninety."
+        },
+        {
+          "n": 5,
+          "display": "P = 2490 × 10^{2} = 2.49 × 10^{5} N/m²",
+          "tag": "write in standard form",
+          "title": "Write in standard form",
+          "narration": "Dividing by ten to the minus two is the same as multiplying by one hundred. Shifting the decimal point gives two point four nine times ten to the five newtons per square metre, option C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2003-014",
+      "questionId": "phys-jamb-2003-014",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "VP = 10 mm Hg, SVP = 17.50 mm Hg",
+          "tag": "identify the pressures",
+          "title": "Identify the pressures",
+          "narration": "Read the actual vapour pressure of ten millimetres of mercury and the saturated vapour pressure of seventeen point five zero."
+        },
+        {
+          "n": 2,
+          "display": "RH = \\frac{10}{17.50} × 100%",
+          "tag": "apply humidity formula",
+          "title": "Apply humidity formula",
+          "narration": "Divide actual vapour pressure by saturated vapour pressure and multiply by one hundred percent."
+        },
+        {
+          "n": 3,
+          "display": "RH = 57.1% ≈ 57%",
+          "tag": "round the result",
+          "title": "Round the result",
+          "narration": "Ten divided by seventeen point five zero times one hundred is fifty-seven point one percent, which rounds to fifty-seven percent. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "VP = 10 mm Hg, SVP = 17.50 mm Hg",
+          "tag": "pick out the pressures",
+          "title": "Pick out the pressures",
+          "narration": "Note both vapour pressures. The twenty degrees Celsius only confirms they are measured at the same temperature and is not needed in the calculation."
+        },
+        {
+          "n": 2,
+          "display": "RH = \\frac{VP}{SVP} × 100%",
+          "tag": "state the humidity formula",
+          "title": "State the humidity formula",
+          "narration": "Relative humidity compares the water vapour actually present in the air with the maximum it can hold at that temperature, expressed as a percentage."
+        },
+        {
+          "n": 3,
+          "display": "RH = \\frac{10}{17.50} × 100% = \\frac{1000}{17.5}%",
+          "tag": "substitute the pressures",
+          "title": "Substitute the pressures",
+          "narration": "Put ten on top and seventeen point five zero below, then multiply by one hundred so the fraction becomes a percentage."
+        },
+        {
+          "n": 4,
+          "display": "RH = 57.1% ≈ 57%",
+          "tag": "divide and round",
+          "title": "Divide and round",
+          "narration": "One thousand divided by seventeen point five gives about fifty-seven point one percent, which matches fifty-seven percent. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2007-040",
+      "questionId": "phys-jamb-2007-040",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "t = 2 × 60 = 120 s",
+          "tag": "convert time to seconds",
+          "title": "Convert time to seconds",
+          "narration": "Change two minutes into one hundred and twenty seconds so the time is in SI units."
+        },
+        {
+          "n": 2,
+          "display": "IVt = 3.5 × 200 × 120 = 84,000 J",
+          "tag": "find electrical heat",
+          "title": "Find electrical heat",
+          "narration": "Multiply current, voltage, and time to get eighty-four thousand joules of heat energy."
+        },
+        {
+          "n": 3,
+          "display": "ΔT = \\frac{84,000}{2 × 4200} = 10°C",
+          "tag": "find temperature rise",
+          "title": "Find temperature rise",
+          "narration": "Divide eighty-four thousand joules by mass times specific heat capacity to get ten degrees Celsius. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 2 kg, I = 3.5 A, V = 200 V, t = 2 min",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the mass of water, the current, the mains voltage, the heating time, and the specific heat capacity of four thousand two hundred joules per kilogram kelvin."
+        },
+        {
+          "n": 2,
+          "display": "t = 2 × 60 = 120 s",
+          "tag": "change minutes to seconds",
+          "title": "Change minutes to seconds",
+          "narration": "Multiply two minutes by sixty to get one hundred and twenty seconds, because electrical energy in joules requires time in seconds."
+        },
+        {
+          "n": 3,
+          "display": "Q = IVt = 3.5 × 200 × 120 = 84,000 J",
+          "tag": "calculate heat supplied",
+          "title": "Calculate heat supplied",
+          "narration": "Multiply current, voltage, and time to find the electrical heat produced by the coil, which warms the water."
+        },
+        {
+          "n": 4,
+          "display": "mcΔT = IVt ⇒ ΔT = \\frac{IVt}{mc}",
+          "tag": "equate heat to temperature rise",
+          "title": "Equate heat to temperature rise",
+          "narration": "Set the heat gained by the water equal to the electrical energy supplied, then divide by mass and specific heat capacity to isolate the temperature rise."
+        },
+        {
+          "n": 5,
+          "display": "ΔT = \\frac{84,000}{2 × 4200} = 10°C",
+          "tag": "divide for the rise",
+          "title": "Divide for the rise",
+          "narration": "Two times four thousand two hundred is eight thousand four hundred. Eighty-four thousand divided by eight thousand four hundred equals ten degrees Celsius. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2009-021",
+      "questionId": "phys-jamb-2009-021",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "E = Pt = 1000 × 300 = 300,000 J",
+          "tag": "find the heat energy",
+          "title": "Find the heat energy",
+          "narration": "Multiply one thousand watts by three hundred seconds to get three hundred thousand joules."
+        },
+        {
+          "n": 2,
+          "display": "ΔT = 100 − 30 = 70°C",
+          "tag": "find temperature rise",
+          "title": "Find temperature rise",
+          "narration": "Subtract thirty degrees Celsius from one hundred degrees Celsius to get a seventy degree rise."
+        },
+        {
+          "n": 3,
+          "display": "m = \\frac{300,000}{4200 × 70} ≈ 1.02 kg",
+          "tag": "solve for mass",
+          "title": "Solve for mass",
+          "narration": "Divide three hundred thousand by four thousand two hundred times seventy to get one point zero two kilograms. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P = 1000 W, t = 300 s, c = 4200 J/kg·K",
+          "tag": "note the needed values",
+          "title": "Note the needed values",
+          "narration": "Record the power, heating time, and specific heat capacity. The two hundred and twenty volt rating is extra information we do not need because power in watts is already given."
+        },
+        {
+          "n": 2,
+          "display": "ΔT = 100 − 30 = 70 K",
+          "tag": "find the temperature change",
+          "title": "Find the temperature change",
+          "narration": "Subtract thirty degrees Celsius from one hundred degrees Celsius. A temperature rise of seventy Celsius degrees equals a rise of seventy kelvin."
+        },
+        {
+          "n": 3,
+          "display": "E = Pt = 1000 × 300 = 300,000 J",
+          "tag": "compute energy supplied",
+          "title": "Compute energy supplied",
+          "narration": "Multiply power in watts by time in seconds to find the total electrical energy transferred as heat into the water."
+        },
+        {
+          "n": 4,
+          "display": "mcΔT = Pt ⇒ m = \\frac{Pt}{cΔT}",
+          "tag": "rearrange for mass",
+          "title": "Rearrange for mass",
+          "narration": "Equate the heat gained by the water to the heater energy, then divide by specific heat capacity and temperature rise to isolate mass."
+        },
+        {
+          "n": 5,
+          "display": "m = \\frac{300,000}{294,000} ≈ 1.02 kg",
+          "tag": "divide to find the mass",
+          "title": "Divide to find the mass",
+          "narration": "Four thousand two hundred times seventy is two hundred and ninety-four thousand. Dividing three hundred thousand by two hundred and ninety-four thousand gives about one point zero two kilograms, option C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1995-026",
+      "questionId": "phys-jamb-1995-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ΔT = 100 − 40 = 60°C",
+          "tag": "find total temperature drop",
+          "title": "Find total temperature drop",
+          "narration": "Subtract forty degrees Celsius from one hundred degrees Celsius across the whole bar."
+        },
+        {
+          "n": 2,
+          "display": "drop = \\frac{60}{100} × 60 = 36°C",
+          "tag": "scale to 60 cm",
+          "title": "Scale to 60 cm",
+          "narration": "A well-lagged bar cools steadily along its length, so sixty centimetres gives a thirty-six degree drop."
+        },
+        {
+          "n": 3,
+          "display": "T = 100 − 36 = 64°C",
+          "tag": "subtract from hot end",
+          "title": "Subtract from hot end",
+          "narration": "Subtract thirty-six degrees Celsius from the hotter end at one hundred to get sixty-four degrees Celsius. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L = 100 cm, T_{hot} = 100°C, T_{cold} = 40°C",
+          "tag": "list the bar temperatures",
+          "title": "List the bar temperatures",
+          "narration": "The bar is one hundred centimetres long, kept at one hundred degrees Celsius at one end and forty degrees Celsius at the other."
+        },
+        {
+          "n": 2,
+          "display": "gradient = \\frac{100 − 40}{100} = 0.6°C per cm",
+          "tag": "find temperature gradient",
+          "title": "Find temperature gradient",
+          "narration": "Because the bar is well-lagged, no heat leaks out the sides and temperature drops uniformly at zero point six degrees Celsius per centimetre."
+        },
+        {
+          "n": 3,
+          "display": "drop = 0.6 × 60 = 36°C",
+          "tag": "find the drop at 60 cm",
+          "title": "Find the drop at 60 cm",
+          "narration": "Multiply the gradient by sixty centimetres because the question measures sixty centimetres from the hotter end."
+        },
+        {
+          "n": 4,
+          "display": "T = 100 − 36",
+          "tag": "subtract from the hotter end",
+          "title": "Subtract from the hotter end",
+          "narration": "Start from one hundred degrees Celsius at the hotter end and subtract the thirty-six degree drop as we move toward the cooler end."
+        },
+        {
+          "n": 5,
+          "display": "T = 64°C",
+          "tag": "read the temperature",
+          "title": "Read the temperature",
+          "narration": "The temperature sixty centimetres from the hot end is sixty-four degrees Celsius. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1981-022",
+      "questionId": "phys-jamb-1981-022",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T = 0.2 s",
+          "tag": "read period from graph",
+          "title": "Read period from graph",
+          "narration": "From the diagram, one full crest and trough ends at zero point two seconds."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{1}{T} = \\frac{1}{0.2}",
+          "tag": "use frequency formula",
+          "title": "Use frequency formula",
+          "narration": "Frequency is the reciprocal of the period, so divide one by zero point two seconds."
+        },
+        {
+          "n": 3,
+          "display": "f = 5 Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "One divided by zero point two gives five hertz. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "T = 0.2 s, A = 0.01 cm",
+          "tag": "read the wave graph",
+          "title": "Read the wave graph",
+          "narration": "Read the horizontal time axis on the diagram. One full cycle, one crest plus one trough, runs from zero to zero point two seconds, giving period T equals zero point two seconds. The zero point zero one centimetre amplitude marked on the vertical axis is extra information not needed for frequency."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{1}{T}",
+          "tag": "relate frequency and period",
+          "title": "Relate frequency and period",
+          "narration": "Frequency is the number of complete waves in one second, which is the reciprocal of the time for one wave."
+        },
+        {
+          "n": 3,
+          "display": "f = \\frac{1}{0.2} = \\frac{10}{2}",
+          "tag": "substitute the period",
+          "title": "Substitute the period",
+          "narration": "Put zero point two seconds into the denominator. Multiplying top and bottom by ten turns one over zero point two into ten over two."
+        },
+        {
+          "n": 4,
+          "display": "f = 5 Hz",
+          "tag": "calculate the frequency",
+          "title": "Calculate the frequency",
+          "narration": "Ten divided by two equals five cycles per second, or five hertz. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-026",
+      "questionId": "phys-jamb-2008-026",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "y = A sin(ωt − \\frac{2π}{λ}x)",
+          "tag": "compare wave equation",
+          "title": "Compare wave equation",
+          "narration": "Match the given equation against the standard progressive wave equation."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{2π}{λ} = 0.4",
+          "tag": "match the x coefficient",
+          "title": "Match the x coefficient",
+          "narration": "The number multiplying x is zero point four, so set two pi over wavelength equal to zero point four."
+        },
+        {
+          "n": 3,
+          "display": "λ = \\frac{2 × 3.142}{0.4} ≈ 15.7 m",
+          "tag": "solve for wavelength",
+          "title": "Solve for wavelength",
+          "narration": "Divide two pi by zero point four to get fifteen point seven metres. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "y = 5 sin(2000πt − 0.4x)",
+          "tag": "inspect the wave equation",
+          "title": "Inspect the wave equation",
+          "narration": "Look at the term multiplying x inside the bracket, which is zero point four. The amplitude five and the two thousand pi term in front of t are extra information not needed to find the wavelength."
+        },
+        {
+          "n": 2,
+          "display": "y = A sin(ωt − \\frac{2π}{λ}x)",
+          "tag": "recall standard wave form",
+          "title": "Recall standard wave form",
+          "narration": "In the standard progressive wave formula, the coefficient of x equals two pi divided by the wavelength because a shift of one wavelength changes the angle by two pi radians."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{2π}{λ} = 0.4",
+          "tag": "equate x coefficients",
+          "title": "Equate x coefficients",
+          "narration": "Match the x coefficients in both equations by setting two pi over wavelength equal to zero point four."
+        },
+        {
+          "n": 4,
+          "display": "λ = \\frac{2π}{0.4} = \\frac{6.284}{0.4}",
+          "tag": "rearrange for wavelength",
+          "title": "Rearrange for wavelength",
+          "narration": "Swap wavelength and zero point four, then use pi equals three point one four two so two pi is six point two eight four."
+        },
+        {
+          "n": 5,
+          "display": "λ ≈ 15.7 m",
+          "tag": "divide for wavelength",
+          "title": "Divide for wavelength",
+          "narration": "Six point two eight four divided by zero point four is fifteen point seven one, which matches fifteen point seven metres. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1994-029",
+      "questionId": "phys-jamb-1994-029",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "d = \\frac{vt}{2}",
+          "tag": "use the echo formula",
+          "title": "Use the echo formula",
+          "narration": "Sound goes down to the seabed and back again, so divide speed times time by two."
+        },
+        {
+          "n": 2,
+          "display": "d = \\frac{1500 × 4}{2}",
+          "tag": "substitute speed and time",
+          "title": "Substitute speed and time",
+          "narration": "Multiply one thousand five hundred metres per second by four seconds and divide by two."
+        },
+        {
+          "n": 3,
+          "display": "d = 3000 m",
+          "tag": "find the sea depth",
+          "title": "Find the sea depth",
+          "narration": "Six thousand divided by two gives three thousand metres. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "v = 1500 m/s, t = 4 s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Write down the speed of sound in seawater and the four seconds taken for the echo to return."
+        },
+        {
+          "n": 2,
+          "display": "2d = vt ⇒ d = \\frac{vt}{2}",
+          "tag": "account for the round trip",
+          "title": "Account for the round trip",
+          "narration": "An echo travels down to the bottom of the sea and back up to the source, covering twice the sea depth. Divide the round-trip distance by two to find the depth."
+        },
+        {
+          "n": 3,
+          "display": "d = \\frac{1500 × 4}{2} = \\frac{6000}{2}",
+          "tag": "substitute and multiply",
+          "title": "Substitute and multiply",
+          "narration": "Multiply one thousand five hundred metres per second by four seconds to get six thousand metres for the total path there and back."
+        },
+        {
+          "n": 4,
+          "display": "d = 3000 m",
+          "tag": "halve for the depth",
+          "title": "Halve for the depth",
+          "narration": "Half of six thousand metres is three thousand metres. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1994-031",
+      "questionId": "phys-jamb-1994-031",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "L = 45 cm = 0.45 m",
+          "tag": "convert length to metres",
+          "title": "Convert length to metres",
+          "narration": "Divide forty-five centimetres by one hundred to get zero point four five metres."
+        },
+        {
+          "n": 2,
+          "display": "λ = 4L = 4 × 0.45 = 1.80 m",
+          "tag": "find fundamental wavelength",
+          "title": "Find fundamental wavelength",
+          "narration": "For a closed pipe, the fundamental wavelength is four times the pipe length."
+        },
+        {
+          "n": 3,
+          "display": "f_{0} = \\frac{360}{1.80} = 200.0 Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "Divide three hundred and sixty metres per second by one point eight zero metres to get two hundred point zero hertz. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L = 45 cm, v = 360 m/s",
+          "tag": "list what is given",
+          "title": "List what is given",
+          "narration": "Note the pipe length, the speed of sound in air, and that the pipe is closed at one end."
+        },
+        {
+          "n": 2,
+          "display": "L = \\frac{45}{100} = 0.45 m",
+          "tag": "change centimetres to metres",
+          "title": "Change centimetres to metres",
+          "narration": "Convert forty-five centimetres to metres because the sound velocity is in metres per second and formulas need matching SI units."
+        },
+        {
+          "n": 3,
+          "display": "λ = 4L = 4 × 0.45 = 1.80 m",
+          "tag": "find closed-pipe wavelength",
+          "title": "Find closed-pipe wavelength",
+          "narration": "In the fundamental note of a closed pipe, one quarter of a wave fits between the closed node and open antinode, so one full wavelength is four times the pipe length."
+        },
+        {
+          "n": 4,
+          "display": "f_{0} = \\frac{v}{λ} = \\frac{360}{1.80}",
+          "tag": "apply wave speed formula",
+          "title": "Apply wave speed formula",
+          "narration": "Frequency equals wave speed divided by wavelength. Substitute three hundred and sixty metres per second and one point eight zero metres."
+        },
+        {
+          "n": 5,
+          "display": "f_{0} = 200.0 Hz",
+          "tag": "calculate frequency",
+          "title": "Calculate frequency",
+          "narration": "Three hundred and sixty divided by one point eight zero equals two hundred point zero hertz. Choose C."
+        }
+      ]
+    }
+  ]
+}
