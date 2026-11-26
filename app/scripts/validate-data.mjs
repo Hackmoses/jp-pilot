@@ -52,6 +52,12 @@ for (const filePath of animationFiles) {
     }
   } else {
     allAnimations.push(...data.animations)
+    // A doubled backslash shows as a stray "\\" on screen before \frac or \sqrt.
+    for (const animation of data.animations) {
+      for (const step of [...(animation.steps ?? []), ...(animation.teach ?? [])]) {
+        if (typeof step.display === 'string' && step.display.includes('\\\\')) errors.push(`${animation.id}: step ${step.n} display has a doubled backslash`)
+      }
+    }
   }
 }
 
