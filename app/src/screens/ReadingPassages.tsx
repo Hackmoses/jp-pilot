@@ -99,15 +99,19 @@ function PassageRun({ set, questions, initial }: { set: PassageSet; questions: Q
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
         </a>
         <a class="jp-logo" href="#/modes" aria-label="JP modes">JP</a>
-        <span class="jp-topic jp-hide-sm">English · {passageNames[set.type]}</span>
+        <span class="jp-topic">English<span class="jp-hide-sm"> · {passageNames[set.type]}</span></span>
       </div>
-      <div class="jp-progress-group"><span class="jp-counter">{attempt.index + 1} of {questions.length}</span>
-        <div class="jp-progress-track" aria-hidden="true"><div class="jp-progress-fill" style={{ width: (attempt.index + 1) * 100 / questions.length + '%' }} /></div>
+      <div class="jp-topbar-status">
+        <div class="jp-progress-group"><span class="jp-counter">{attempt.index + 1} of {questions.length}</span>
+          <div class="jp-progress-track" aria-hidden="true"><div class="jp-progress-fill" style={{ width: (attempt.index + 1) * 100 / questions.length + '%' }} /></div>
+        </div>
       </div>
-      <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" /></svg>
-        <span>Menu</span>
-      </a>
+      <div class="jp-topbar-actions">
+        <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" /></svg>
+          <span>Menu</span>
+        </a>
+      </div>
     </div></header>
     <div class="jp-session-layout"><div class="jp-left-col">
     <section ref={panel} class="jp-card jp-passage-panel" aria-label={set.title}>

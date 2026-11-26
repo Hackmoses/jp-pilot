@@ -404,33 +404,37 @@ export function Session({ attempt, study, review }: SessionProps) {
               </svg>
             </a>
             <a class="jp-logo" href="#/modes" aria-label="Main menu">JP</a>
-            <span class="jp-topic jp-hide-sm">{subjectName} · {question.topic}</span>
+            <span class="jp-topic">{subjectName}<span class="jp-hide-sm"> · {question.topic}</span></span>
           </div>
-          <div class="jp-progress-group">
-            <span class="jp-counter">
-              {index + 1} of {queue.length}
-            </span>
-            <div class="jp-progress-track" aria-hidden="true">
-              <div class="jp-progress-fill" style={{ width: `${progressPercent}%` }} />
+          <div class="jp-topbar-status">
+            <div class="jp-progress-group">
+              <span class="jp-counter">
+                {index + 1} of {queue.length}
+              </span>
+              <div class="jp-progress-track" aria-hidden="true">
+                <div class="jp-progress-fill" style={{ width: `${progressPercent}%` }} />
+              </div>
             </div>
+            <span class="jp-pill jp-pill--practice jp-hide-sm">{study ? 'Study' : review ? 'Exam review' : 'Practice'}</span>
+            {!study && !review && <span class="jp-pill jp-pill--score" aria-live="polite">
+              Score {sessionCorrect}/{sessionAnswered}
+            </span>}
+            {!attempt?.deadline && !study && !review && progress.streakDays > 0 && (
+              <span class="jp-pill jp-pill--streak">
+                {progress.streakDays}-day streak
+              </span>
+            )}
           </div>
-          <span class="jp-pill jp-pill--practice jp-hide-sm">{study ? 'Study' : review ? 'Exam review' : 'Practice'}</span>
-          {deadline !== null && pausedAt === null && <Countdown deadline={deadline}
-            onExpire={() => finishAttempt(savedAttempt.current!, Date.now())} />}
-          <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" /></svg>
-            <span>Menu</span>
-          </a>
-          {canPause && pausedAt === null && <button type="button" class="jp-btn" onClick={pause}>Pause</button>}
-          {!study && !review && <span class="jp-pill jp-pill--score" aria-live="polite">
-            Score {sessionCorrect}/{sessionAnswered}
-          </span>}
-          {!attempt?.deadline && !study && !review && progress.streakDays > 0 && (
-            <span class="jp-pill jp-pill--streak">
-              {progress.streakDays}-day streak
-            </span>
-          )}
+          <div class="jp-topbar-actions">
+            {deadline !== null && pausedAt === null && <Countdown deadline={deadline}
+              onExpire={() => finishAttempt(savedAttempt.current!, Date.now())} />}
+            {canPause && pausedAt === null && <button type="button" class="jp-btn" onClick={pause}>Pause</button>}
+            <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" /></svg>
+              <span>Menu</span>
+            </a>
+          </div>
         </div>
       </header>
 
