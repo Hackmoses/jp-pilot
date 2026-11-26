@@ -1,44 +1,76 @@
-import { processDrawing } from '../ProcessBoard'
+import { processDrawing } from '../AnatomyBoard'
 
-export default processDrawing({
-  "label": "Nutrients, deficiency and food tests",
-  "rows": [
-    {
-      "parts": [
-        {
-          "label": "Reducing sugar",
-          "shape": "M-15 -20H15M-10 -20V13Q0 23 10 13V-20M-10 8H10M-5 13h3m4 -2h3m-4 5h3"
-        },
-        {
-          "label": "Cellulose",
-          "shape": "M-26 -2l8 -7l8 7l-8 7ZM-8 -2l8 -7l8 7l-8 7ZM10 -2l8 -7l8 7l-8 7ZM-10 -2h2M8 -2h2"
-        }
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Plant copper",
-          "shape": "M0 -23V18M0 -12q-12 -11 -21 -5q4 12 21 10m0 7q13 -15 24 -8q-6 12 -24 15"
-        },
-        {
-          "label": "Dietary fibre",
-          "shape": "M-25 3Q-11 -21 13 -12Q29 -6 24 11Q14 23 -13 18ZM-11 -7l1 0m7 -3h1m12 5h1m9 7h1m-27 7h1m8 2h1"
-        },
-        {
-          "label": "Thyroid",
-          "shape": "M-6 -22V17M6 -22V17M-6 -1Q-19 -17 -22 -4Q-24 14 -14 13L-6 5H6Q16 20 22 10Q25 -12 13 -12L6 -1Z"
-        }
-      ]
-    },
-    {
-      "parts": [
-        {
-          "label": "Mycorrhiza",
-          "shape": "M-5 -23V4L-17 21M-5 4L9 23M-12 14l-14 -6m34 11l14 -9M-19 -15Q-30 -1 -20 15M11 -12Q29 -3 21 16",
-          "motion": "M27 1L1 7"
-        }
-      ]
-    }
-  ]
-})
+export default processDrawing("Nutrients, deficiency and food tests", [
+  {
+    outline: [
+      ["amber", "M17 192Q92 176 154 194Q237 208 301 192V255H17Z"],
+      ["green", "M103 197Q112 148 109 105L102 88Q84 97 62 84Q47 77 48 65Q76 59 103 77Q104 56 94 39Q94 21 114 22Q130 43 122 65Q145 42 175 52Q169 77 125 92L121 134L119 194Q126 213 146 221L138 233L117 219L110 246L98 241L103 218L81 233L71 227Z"],
+      ["lead", "M223 39Q245 21 268 40Q286 57 278 80L269 95Q293 109 299 136L306 184M221 42Q207 51 205 64L196 76L209 80Q213 96 235 94L234 103Q206 110 191 142L178 180"],
+      ["paper", "M210 77Q224 72 238 78Q241 89 241 103L243 127H235L234 104Q234 89 223 82L209 83Z"],
+      ["red", "M235 128Q251 121 267 132Q279 150 264 164Q251 173 239 164Q234 160 231 168L224 165Q232 151 236 146Q242 140 235 128Z"],
+      ["green", "M216 178Q218 162 234 164H269Q280 170 273 181L227 182Q222 187 232 189H271Q279 192 271 202H240Q230 202 231 213L220 213Q219 194 224 192Q212 190 216 178Z"],
+    ],
+    parts: [
+      {
+        cue: 'part-1-0', label: "Copper uptake", at: [12,168], tip: [103,207], align: 'start',
+        flows: [
+          ["blue", "M57 211Q86 218 108 208L114 164"],
+        ],
+      },
+      {
+        cue: 'part-1-1', label: "Dietary fibre", at: [310,135], tip: [232,178], align: 'end',
+        strokes: [
+          ["lead", "M278 137L264 171"],
+        ],
+        flows: [
+          ["blue", "M225 78Q237 91 238 106L239 134Q253 143 264 149Q265 165 246 165L227 170Q216 181 232 183H267"],
+        ],
+      },
+      {
+        cue: 'part-1-2', label: "Thyroid", at: [303,29], tip: [235,100], align: 'end',
+        strokes: [
+          ["amber", "M232 94Q219 85 220 102Q222 115 232 108H238Q247 119 251 104Q252 89 240 94Z"],
+          ["lead", "M263 32L240 93"],
+        ],
+      },
+      {
+        cue: 'part-2-0', label: "Mycorrhiza", at: [17,264], tip: [114,225], align: 'start',
+        strokes: [
+          ["ink", "M84 221Q64 221 47 241L29 238M66 224L55 206M132 218Q164 207 178 221L186 240M158 217l-2-16m12 16l15-4"],
+        ],
+        flows: [
+          ["blue", "M166 221L137 218L116 208"],
+        ],
+      },
+    ],
+  },
+  {
+    scenes: [0],
+    outline: [
+      ["ink", "M22 215H300"],
+      ["paper", "M48 149H129L120 211H58ZM48 149L43 127H133L129 149"],
+      ["blue", "M59 173H118L114 204H62Z"],
+    ],
+    parts: [
+      {
+        cue: 'part-0-0', label: "Benedict’s test", at: [20,55], tip: [99,189], align: 'start',
+        strokes: [
+          ["ink", "M86 84H109M90 84V191Q98 204 106 191V84"],
+          ["red", "M91 177H105V191Q99 200 92 191Z"],
+        ],
+        flows: [
+          ["blue", "M98 100V184"],
+        ],
+      },
+      {
+        cue: 'part-0-1', label: "Cellulose in|plant walls", at: [306,58], tip: [217,144], align: 'end',
+        strokes: [
+          ["green", "M172 136Q201 87 285 94Q272 153 207 183L166 193Z"],
+          ["ink", "M165 190L273 103M182 170L171 149M196 158L197 129M214 144L240 150M234 128L238 112"],
+          ["zoom", "M207 144L282 170M225 155L281 198"],
+          ["paper", "M281 167H309V201H281ZM295 167V201M281 183H309"],
+        ],
+      },
+    ],
+  },
+])
