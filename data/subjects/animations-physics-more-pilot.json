@@ -1,0 +1,631 @@
+{
+  "version": 1,
+  "count": 10,
+  "animations": [
+    {
+      "id": "anim-phys-jamb-2006-038",
+      "questionId": "phys-jamb-2006-038",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Δd = 80 − 60 = 20 m",
+          "tag": "find the real change",
+          "title": "Find the real change",
+          "narration": "The submarine rises twenty metres, so its real depth decreases by twenty metres."
+        },
+        {
+          "n": 2,
+          "display": "Δd_{app} = \\frac{20}{\\frac{4}{3}} = 20 × \\frac{3}{4}",
+          "tag": "scale the change",
+          "title": "Scale the change",
+          "narration": "Apparent depth is real depth divided by the refractive index. Divide the change by four thirds."
+        },
+        {
+          "n": 3,
+          "display": "Δd_{app} = 15 m",
+          "tag": "read the result",
+          "title": "Read the result",
+          "narration": "The apparent depth decreases by fifteen metres. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "n = \\frac{d_{real}}{d_{app}}",
+          "tag": "relate the two depths",
+          "title": "Relate the two depths",
+          "narration": "For an observer looking nearly straight down from air into water, the submarine appears shallower than it really is."
+        },
+        {
+          "n": 2,
+          "display": "d_{app,1} = 80 × \\frac{3}{4} = 60 m",
+          "tag": "find the first apparent depth",
+          "title": "Find the first apparent depth",
+          "narration": "At eighty metres of real depth, multiply by three quarters to get an apparent depth of sixty metres."
+        },
+        {
+          "n": 3,
+          "display": "d_{app,2} = 60 × \\frac{3}{4} = 45 m",
+          "tag": "find the second apparent depth",
+          "title": "Find the second apparent depth",
+          "narration": "At sixty metres of real depth, the same factor gives forty-five metres."
+        },
+        {
+          "n": 4,
+          "display": "60 − 45 = 15 m",
+          "tag": "compare the readings",
+          "title": "Compare the readings",
+          "narration": "Subtract the second apparent depth from the first. The decrease is fifteen metres, which is option B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1988-015",
+      "questionId": "phys-jamb-1988-015",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "h = 3.5 cm, open side higher",
+          "tag": "read the mercury levels",
+          "title": "Read the mercury levels",
+          "narration": "The mercury stands three point five centimetres higher in the arm open to the air."
+        },
+        {
+          "n": 2,
+          "display": "P_{gas} = P_{atm} + 3.5 cm Hg",
+          "tag": "choose the pressure difference",
+          "title": "Choose the pressure difference",
+          "narration": "The gas pushes the mercury down on its own side, so its pressure is higher than atmospheric pressure."
+        },
+        {
+          "n": 3,
+          "display": "P_{gas} = 76.0 + 3.5 = 79.5 cm Hg",
+          "tag": "find the gas pressure",
+          "title": "Find the gas pressure",
+          "narration": "Add three point five to seventy-six point zero to get seventy-nine point five centimetres of mercury. Choose C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Compare at the gas-side mercury level",
+          "tag": "compare at the same height",
+          "title": "Compare at the same height",
+          "narration": "Imagine a horizontal line across both arms at the lower mercury surface. The pressures in the connected mercury match at that height."
+        },
+        {
+          "n": 2,
+          "display": "P = P_{atm} + 3.5 cm Hg",
+          "tag": "trace down from the open surface",
+          "title": "Trace down from the open surface",
+          "narration": "The open surface is under atmospheric pressure. At the comparison line, the extra column of mercury adds three point five centimetres of mercury to that pressure."
+        },
+        {
+          "n": 3,
+          "display": "P_{gas} = P",
+          "tag": "match the gas pressure",
+          "title": "Match the gas pressure",
+          "narration": "At the lower surface on the gas side, the pressure is the pressure of the gas touching it."
+        },
+        {
+          "n": 4,
+          "display": "P_{gas} = 76.0 + 3.5 = 79.5 cm Hg",
+          "tag": "add the readings",
+          "title": "Add the readings",
+          "narration": "The gas pressure is seventy-nine point five centimetres of mercury. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-1998-045",
+      "questionId": "phys-jamb-1998-045",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "L = 8 × 10^{-3} H, C = 5 × 10^{-6} F",
+          "tag": "convert to base units",
+          "title": "Convert to base units",
+          "narration": "Convert eight millihenries and five microfarads to henries and farads."
+        },
+        {
+          "n": 2,
+          "display": "LC = 4 × 10^{-8} s^{2}, \\sqrt{LC} = 2 × 10^{-4} s",
+          "tag": "find the square root",
+          "title": "Find the square root",
+          "narration": "Multiply the inductance and capacitance, then take the square root."
+        },
+        {
+          "n": 3,
+          "display": "f_{0} = \\frac{1}{2π × 2 × 10^{-4}} = \\frac{2500}{π} Hz",
+          "tag": "calculate resonance",
+          "title": "Calculate resonance",
+          "narration": "Divide one by two pi times the square root. The frequency is two thousand five hundred over pi hertz, option D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "X_{L} = X_{C}",
+          "tag": "identify resonance",
+          "title": "Identify resonance",
+          "narration": "At resonance the inductor and capacitor have equal reactance. The resistance in the circuit does not enter this condition."
+        },
+        {
+          "n": 2,
+          "display": "f_{0} = \\frac{1}{2π\\sqrt{LC}}",
+          "tag": "set up the formula",
+          "title": "Set up the formula",
+          "narration": "Equating the two reactances gives one over two pi times the square root of inductance times capacitance."
+        },
+        {
+          "n": 3,
+          "display": "LC = (8 × 10^{-3})(5 × 10^{-6}) = 4 × 10^{-8} s^{2}",
+          "tag": "convert and multiply",
+          "title": "Convert and multiply",
+          "narration": "Milli means a thousandth and micro means a millionth. After conversion the product is four times ten to the minus eight seconds squared."
+        },
+        {
+          "n": 4,
+          "display": "\\sqrt{LC} = 2 × 10^{-4} s",
+          "tag": "take the square root",
+          "title": "Take the square root",
+          "narration": "The square root of four is two, and the exponent of ten halves from minus eight to minus four."
+        },
+        {
+          "n": 5,
+          "display": "f_{0} = \\frac{10^{4}}{4π} = \\frac{2500}{π} Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "Substitute into the resonance formula and keep two pi in the denominator. Choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2007-047",
+      "questionId": "phys-jamb-2007-047",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "200 N: 10 cm, W: 10 cm, 40 N: 30 cm",
+          "tag": "find the lever arms",
+          "title": "Find the lever arms",
+          "narration": "Measure each distance from the fulcrum at fifteen centimetres. The rod's weight acts at the twenty-five centimetre mark."
+        },
+        {
+          "n": 2,
+          "display": "200 × 10 = 10W + 40 × 30",
+          "tag": "balance the moments",
+          "title": "Balance the moments",
+          "narration": "The two clockwise moments balance the anticlockwise moment."
+        },
+        {
+          "n": 3,
+          "display": "W = \\frac{2000 − 1200}{10} = 80 N",
+          "tag": "solve for the weight",
+          "title": "Solve for the weight",
+          "narration": "Subtract twelve hundred from two thousand and divide by ten. The weight is eighty newtons, option D."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Centre of gravity at 25 cm",
+          "tag": "locate the rod's weight",
+          "title": "Locate the rod's weight",
+          "narration": "Treat the rod as uniform, so its weight acts at the midpoint of its fifty-centimetre length."
+        },
+        {
+          "n": 2,
+          "display": "200 × (15 − 5) = 2000 N cm",
+          "tag": "find the anticlockwise moment",
+          "title": "Find the anticlockwise moment",
+          "narration": "The two hundred newton force is ten centimetres left of the fulcrum. Its downward pull turns the rod anticlockwise."
+        },
+        {
+          "n": 3,
+          "display": "W(25 − 15) + 40(45 − 15) = 10W + 1200",
+          "tag": "find the clockwise moments",
+          "title": "Find the clockwise moments",
+          "narration": "The rod's weight is ten centimetres right of the fulcrum and the forty newton force is thirty centimetres right. Both produce clockwise moments."
+        },
+        {
+          "n": 4,
+          "display": "10W + 1200 = 2000",
+          "tag": "balance about the fulcrum",
+          "title": "Balance about the fulcrum",
+          "narration": "The rod stays horizontal in equilibrium. The fulcrum's own force has zero lever arm, so the clockwise and anticlockwise moments must balance."
+        },
+        {
+          "n": 5,
+          "display": "10W = 800 ⇒ W = 80 N",
+          "tag": "isolate the weight",
+          "title": "Isolate the weight",
+          "narration": "Subtract twelve hundred and divide by ten centimetres. The weight is eighty newtons, so choose D."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2002-012",
+      "questionId": "phys-jamb-2002-012",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "f = \\frac{30}{6} = 5 Hz",
+          "tag": "find the frequency",
+          "title": "Find the frequency",
+          "narration": "Thirty cycles in six seconds gives five cycles per second."
+        },
+        {
+          "n": 2,
+          "display": "ω = 2πf",
+          "tag": "convert cycles to radians",
+          "title": "Convert cycles to radians",
+          "narration": "Each full cycle covers two pi radians around the circle."
+        },
+        {
+          "n": 3,
+          "display": "ω = 2π × 5 = 10π rad s^{-1}",
+          "tag": "find the angular velocity",
+          "title": "Find the angular velocity",
+          "narration": "Five cycles each second gives ten pi radians per second. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "f = \\frac{N}{t}",
+          "tag": "count cycles per second",
+          "title": "Count cycles per second",
+          "narration": "Frequency tells us how many complete cycles happen each second. Divide the cycle count by the time for those cycles."
+        },
+        {
+          "n": 2,
+          "display": "f = \\frac{30}{6} = 5 Hz",
+          "tag": "use the given count and time",
+          "title": "Use the given count and time",
+          "narration": "The particle completes thirty cycles in six seconds, so it completes five cycles per second."
+        },
+        {
+          "n": 3,
+          "display": "1 revolution = 2π rad",
+          "tag": "convert one cycle",
+          "title": "Convert one cycle",
+          "narration": "Angular velocity measures angle swept per second. One trip around the circle sweeps two pi radians."
+        },
+        {
+          "n": 4,
+          "display": "ω = 5 × 2π = 10π rad s^{-1}",
+          "tag": "combine the two rates",
+          "title": "Combine the two rates",
+          "narration": "Multiply five cycles per second by two pi radians per cycle. The result is ten pi radians per second, option A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2008-034",
+      "questionId": "phys-jamb-2008-034",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v = 4u",
+          "tag": "use the magnification",
+          "title": "Use the magnification",
+          "narration": "Using positive distances for the real object and real image, the image distance is four times the object distance."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{u} + \\frac{1}{4u} = \\frac{1}{12}",
+          "tag": "substitute into the lens equation",
+          "title": "Substitute into the lens equation",
+          "narration": "Put four times the object distance in place of the image distance. The focal length is twelve centimetres."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{5}{4u} = \\frac{1}{12} ⇒ u = 15 cm",
+          "tag": "solve for the distance",
+          "title": "Solve for the distance",
+          "narration": "Combine the fractions and cross multiply. Four times the object distance is sixty centimetres, so the object is fifteen centimetres away. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = \\frac{v}{u} = 4",
+          "tag": "link image size and distance",
+          "title": "Link image size and distance",
+          "narration": "Take magnification as a size ratio. With both distances measured as positive lengths, the real image is four times as far from the lens as the object."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}",
+          "tag": "write the thin lens equation",
+          "title": "Write the thin lens equation",
+          "narration": "The reciprocals of the object distance and image distance add up to the reciprocal of the focal length."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{1}{u} + \\frac{1}{4u} = \\frac{4 + 1}{4u} = \\frac{1}{12}",
+          "tag": "combine the fractions",
+          "title": "Combine the fractions",
+          "narration": "Replace the image distance with four times the object distance. Rewrite both fractions on the left with a common denominator."
+        },
+        {
+          "n": 4,
+          "display": "4u = 5 × 12 = 60 cm ⇒ u = 15 cm",
+          "tag": "find the object distance",
+          "title": "Find the object distance",
+          "narration": "Cross multiply and divide by four. Place the object fifteen centimetres from the lens."
+        },
+        {
+          "n": 5,
+          "display": "12 cm < 15 cm < 24 cm",
+          "tag": "check the placement",
+          "title": "Check the placement",
+          "narration": "Fifteen centimetres is between one and two focal lengths, which gives the real, enlarged image. Choose B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2014-046",
+      "questionId": "phys-jamb-2014-046",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "t = 2 × 3600 = 7200 s",
+          "tag": "convert the time",
+          "title": "Convert the time",
+          "narration": "Two hours is seven thousand two hundred seconds."
+        },
+        {
+          "n": 2,
+          "display": "Q = It = 4 × 7200 = 28800 C",
+          "tag": "find the charge",
+          "title": "Find the charge",
+          "narration": "Multiply the current by the time in seconds for the total charge."
+        },
+        {
+          "n": 3,
+          "display": "m = zQ = 9.504 × 10^{-3} kg ≈ 9.5 × 10^{-3} kg",
+          "tag": "calculate the deposit",
+          "title": "Calculate the deposit",
+          "narration": "Multiply by the mass deposited per coulomb. Rounded to two significant figures this is nine point five times ten to the minus three kilograms, option C."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "z = 3.3 × 10^{-7} kg C^{-1}",
+          "tag": "read the electrochemical equivalent",
+          "title": "Read the electrochemical equivalent",
+          "narration": "The electrochemical equivalent tells you how many kilograms of copper are deposited by one coulomb of charge."
+        },
+        {
+          "n": 2,
+          "display": "t = 2 × 60 × 60 = 7200 s",
+          "tag": "convert hours to seconds",
+          "title": "Convert hours to seconds",
+          "narration": "An ampere is one coulomb per second, so convert the two hours to seconds before finding the charge."
+        },
+        {
+          "n": 3,
+          "display": "Q = It = 4 × 7200 = 28800 C",
+          "tag": "find the charge passed",
+          "title": "Find the charge passed",
+          "narration": "Four coulombs pass every second. Over seven thousand two hundred seconds, that gives twenty-eight thousand eight hundred coulombs."
+        },
+        {
+          "n": 4,
+          "display": "m = (3.3 × 10^{-7}) × 28800 = 9.504 × 10^{-3} kg",
+          "tag": "calculate copper mass",
+          "title": "Calculate copper mass",
+          "narration": "Multiply the charge by the copper deposited per coulomb. The coulomb units cancel and leave kilograms."
+        },
+        {
+          "n": 5,
+          "display": "m ≈ 9.5 × 10^{-3} kg",
+          "tag": "match the option",
+          "title": "Match the option",
+          "narration": "Round the result to match the precision of the given electrochemical equivalent. Choose C."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-016",
+      "questionId": "phys-jamb-2012-016",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "W = mg = 2 × 10 = 20 N",
+          "tag": "find the true weight",
+          "title": "Find the true weight",
+          "narration": "Multiply the object's two kilograms by ten newtons per kilogram."
+        },
+        {
+          "n": 2,
+          "display": "F_{b} = ρVg = 1 × 1 × 10 = 10 N",
+          "tag": "find the upthrust",
+          "title": "Find the upthrust",
+          "narration": "The upthrust equals the weight of the displaced liquid, which is ten newtons."
+        },
+        {
+          "n": 3,
+          "display": "W_{app} = 20 − 10 = 10 N",
+          "tag": "find the apparent weight",
+          "title": "Find the apparent weight",
+          "narration": "Subtract the upward buoyant force from the downward weight. Choose B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{liquid} = V_{object} = 1 m^{3}",
+          "tag": "find the displaced volume",
+          "title": "Find the displaced volume",
+          "narration": "The object is fully submerged, so it displaces one cubic metre of liquid."
+        },
+        {
+          "n": 2,
+          "display": "m_{liquid} = ρV = 1 × 1 = 1 kg",
+          "tag": "find the displaced mass",
+          "title": "Find the displaced mass",
+          "narration": "Multiply the liquid density by the volume displaced. That amount of liquid has a mass of one kilogram."
+        },
+        {
+          "n": 3,
+          "display": "F_{b} = m_{liquid}g = 1 × 10 = 10 N",
+          "tag": "find the upward force",
+          "title": "Find the upward force",
+          "narration": "Archimedes' principle says the upward force equals the displaced liquid's weight, which is ten newtons."
+        },
+        {
+          "n": 4,
+          "display": "W = 2 × 10 = 20 N",
+          "tag": "compare with the true weight",
+          "title": "Compare with the true weight",
+          "narration": "The object's own mass is two kilograms, so gravity pulls it downward with twenty newtons."
+        },
+        {
+          "n": 5,
+          "display": "W_{app} = W − F_{b} = 10 N",
+          "tag": "subtract the two forces",
+          "title": "Subtract the two forces",
+          "narration": "Ten newtons of upward force offsets part of the twenty newton weight. The apparent weight is ten newtons, option B."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2017-020",
+      "questionId": "phys-jamb-2017-020",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "6.0 − 3.0 = 3.0 Ω",
+          "tag": "find the resistance rise",
+          "title": "Find the resistance rise",
+          "narration": "The resistance has risen by three ohms from the zero degree reading."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{6.0 − 3.0}{8.0 − 3.0} = \\frac{3.0}{5.0} = 0.6",
+          "tag": "find the fraction of the span",
+          "title": "Find the fraction of the span",
+          "narration": "The full span is five ohms, so the reading is six tenths of the way across it."
+        },
+        {
+          "n": 3,
+          "display": "T = 0.6 × 100 = 60°C",
+          "tag": "scale to degrees",
+          "title": "Scale to degrees",
+          "narration": "The thermometer is linear, so six tenths of a hundred Celsius degrees is sixty degrees Celsius. Choose A."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "R_{0} = 3.0 Ω",
+          "tag": "use the ice point as zero",
+          "title": "Use the ice point as zero",
+          "narration": "This thermometer has a resistance of three ohms at zero degrees Celsius. Measure the rise from that reading."
+        },
+        {
+          "n": 2,
+          "display": "R_{100} − R_{0} = 8.0 − 3.0 = 5.0 Ω",
+          "tag": "find the full calibration span",
+          "title": "Find the full calibration span",
+          "narration": "A rise of five ohms corresponds to the full one hundred degree interval."
+        },
+        {
+          "n": 3,
+          "display": "R − R_{0} = 6.0 − 3.0 = 3.0 Ω",
+          "tag": "find the rise at the test point",
+          "title": "Find the rise at the test point",
+          "narration": "The test reading is three ohms above the ice-point reading."
+        },
+        {
+          "n": 4,
+          "display": "T = \\frac{3.0}{5.0} × 100°C = 60°C",
+          "tag": "interpolate on the linear scale",
+          "title": "Interpolate on the linear scale",
+          "narration": "Three fifths of the resistance span corresponds to three fifths of the temperature span. The temperature is sixty degrees Celsius, option A."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2004-017",
+      "questionId": "phys-jamb-2004-017",
+      "kind": "calculation",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "g = \\frac{GM}{r^{2}} ⇒ M = \\frac{gr^{2}}{G}",
+          "tag": "express mass using surface gravity",
+          "title": "Express mass using surface gravity",
+          "narration": "Rearrange the surface gravity equation to express mass in terms of surface gravity and radius."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{M_{m}}{M_{e}} = \\frac{1}{80} × (\\frac{1}{4})^{2}",
+          "tag": "insert the moon-to-earth ratios",
+          "title": "Insert the Moon-to-Earth ratios",
+          "narration": "Using the numbers in the question, lunar gravity is one eightieth of Earth's and the Moon's radius is one quarter of Earth's."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{M_{m}}{M_{e}} = \\frac{1}{80 × 16} = \\frac{1}{1280}",
+          "tag": "simplify the mass ratio",
+          "title": "Simplify the mass ratio",
+          "narration": "Squaring one quarter gives one sixteenth. The Moon-to-Earth mass ratio is one to one thousand two hundred and eighty, option B."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "g = \\frac{GM}{r^{2}}",
+          "tag": "use the surface gravity formula",
+          "title": "Use the surface gravity formula",
+          "narration": "Surface gravity increases with mass and decreases with the square of the radius."
+        },
+        {
+          "n": 2,
+          "display": "\\frac{M_{m}}{M_{e}} = \\frac{g_{m}}{g_{e}} × (\\frac{r_{m}}{r_{e}})^{2}",
+          "tag": "write a ratio of masses",
+          "title": "Write a ratio of masses",
+          "narration": "Rearrange for mass and divide lunar mass by Earth's mass. The same gravitational constant appears in both formulas and cancels."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{g_{m}}{g_{e}} = \\frac{1}{80}, \\frac{r_{m}}{r_{e}} = \\frac{1}{4}",
+          "tag": "put the moon first",
+          "title": "Put the Moon first",
+          "narration": "Use the values stated in the question and take size as radius. Put the smaller quantity first in each ratio."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{1}{80} × \\frac{1}{16} = \\frac{1}{1280}",
+          "tag": "square and multiply",
+          "title": "Square and multiply",
+          "narration": "Square the radius ratio before multiplying by the surface gravity ratio. The mass ratio is one to one thousand two hundred and eighty. Choose B."
+        }
+      ]
+    }
+  ]
+}
