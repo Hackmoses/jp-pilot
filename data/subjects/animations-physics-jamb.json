@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 30,
+  "count": 52,
   "animations": [
     {
       "id": "anim-phys-jamb-0001",
@@ -1496,6 +1496,2598 @@
           "display": "Pure semiconductor element → Silicon",
           "tag": "this question",
           "narration": "Among the choices, silicon is a pure intrinsic semiconductor element, whereas phosphorus is merely a dopant added into silicon."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2011-015",
+      "questionId": "phys-jamb-2011-015",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Air: 30 kg, water: 22 kg",
+          "tag": "Read the apparent masses",
+          "reason": "The scale reads a smaller apparent weight in water.",
+          "narration": "Read the apparent masses."
+        },
+        {
+          "n": 2,
+          "display": "W = mg",
+          "tag": "Use the weight formula",
+          "reason": "Multiplying the mass reading by gravity gives the force on the scale.",
+          "narration": "Use the weight formula."
+        },
+        {
+          "n": 3,
+          "display": "W_{air} = 30 × 10 N",
+          "tag": "Convert the air reading",
+          "reason": "The air reading gives the weight before the water supports it.",
+          "narration": "Convert the air reading."
+        },
+        {
+          "n": 4,
+          "display": "W_{air} = 300 N",
+          "tag": "Calculate the air reading",
+          "reason": "Each kilogram of reading corresponds to ten newtons here.",
+          "narration": "Calculate the air reading."
+        },
+        {
+          "n": 5,
+          "display": "W_{water} = 22 × 10 N",
+          "tag": "Convert the water reading",
+          "reason": "Convert the submerged reading with the same factor.",
+          "narration": "Convert the water reading."
+        },
+        {
+          "n": 6,
+          "display": "W_{water} = 220 N",
+          "tag": "Calculate the water reading",
+          "reason": "The apparent weight includes the effect of the upward force.",
+          "narration": "Calculate the water reading."
+        },
+        {
+          "n": 7,
+          "display": "U = (300 − 220) N",
+          "tag": "Substitute the scale forces",
+          "reason": "Upthrust is the part of the weight carried by the water.",
+          "narration": "Substitute the scale forces."
+        },
+        {
+          "n": 8,
+          "display": "U = 80 N",
+          "tag": "Calculate upthrust",
+          "reason": "Take the difference of the two force readings.",
+          "narration": "Calculate upthrust."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 80 N (option A)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Air: 30 kg, water: 22 kg",
+          "tag": "Read the apparent masses",
+          "reason": "The scale reads a smaller apparent weight in water.",
+          "narration": "Read the apparent masses."
+        },
+        {
+          "n": 2,
+          "display": "W = mg",
+          "tag": "Use the weight formula",
+          "reason": "Multiplying the mass reading by gravity gives the force on the scale.",
+          "narration": "Use the weight formula."
+        },
+        {
+          "n": 3,
+          "display": "W_{air} = 30 × 10 N",
+          "tag": "Convert the air reading",
+          "reason": "The air reading gives the weight before the water supports it.",
+          "narration": "Convert the air reading."
+        },
+        {
+          "n": 4,
+          "display": "W_{air} = 300 N",
+          "tag": "Calculate the air reading",
+          "reason": "Keep the scale's force and mass units distinct.",
+          "narration": "Calculate the air reading. Each kilogram of reading corresponds to ten newtons here."
+        },
+        {
+          "n": 5,
+          "display": "W_{water} = 22 × 10 N",
+          "tag": "Convert the water reading",
+          "reason": "Convert the submerged reading with the same factor.",
+          "narration": "Convert the water reading."
+        },
+        {
+          "n": 6,
+          "display": "W_{water} = 220 N",
+          "tag": "Calculate the water reading",
+          "reason": "It is the force the scale still supports.",
+          "narration": "Calculate the water reading. The apparent weight includes the effect of the upward force."
+        },
+        {
+          "n": 7,
+          "display": "U = (300 − 220) N",
+          "tag": "Substitute the scale forces",
+          "reason": "Adding the readings would count the remaining scale force as buoyancy.",
+          "narration": "Substitute the scale forces. Upthrust is the part of the weight carried by the water."
+        },
+        {
+          "n": 8,
+          "display": "U = 80 N",
+          "tag": "Calculate upthrust",
+          "reason": "The force acts upwards.",
+          "narration": "Calculate upthrust. Take the difference of the two force readings."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 80 N (option A)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2011-041",
+      "questionId": "phys-jamb-2011-041",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "λ = 10^{−5} s^{−1}",
+          "tag": "Read the decay constant",
+          "reason": "The decay constant sets the rate of exponential decay.",
+          "narration": "Read the decay constant."
+        },
+        {
+          "n": 2,
+          "display": "t_{half} = \\frac{ln 2}{λ}",
+          "tag": "Use the half-life formula",
+          "reason": "The number remaining halves when the decay exponent reaches the natural logarithm of two.",
+          "narration": "Use the half-life formula."
+        },
+        {
+          "n": 3,
+          "display": "t_{half} = \\frac{ln 2}{10^{−5}} s",
+          "tag": "Substitute the decay constant",
+          "reason": "Inverting inverse seconds gives seconds.",
+          "narration": "Substitute the decay constant."
+        },
+        {
+          "n": 4,
+          "display": "t_{half} ≈ 6.93 × 10^{4} s",
+          "tag": "Calculate the half-life",
+          "reason": "The natural logarithm of two is about 0.693.",
+          "narration": "Calculate the half-life."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is 6.93 × 10^{4} s (option A)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "λ = 10^{−5} s^{−1}",
+          "tag": "Read the decay constant",
+          "reason": "The decay constant sets the rate of exponential decay.",
+          "narration": "Read the decay constant."
+        },
+        {
+          "n": 2,
+          "display": "t_{half} = \\frac{ln 2}{λ}",
+          "tag": "Use the half-life formula",
+          "reason": "In exponential decay, each equal time interval removes the same fraction of what remains.",
+          "narration": "Use the half-life formula. The number remaining halves when the decay exponent reaches the natural logarithm of two."
+        },
+        {
+          "n": 3,
+          "display": "t_{half} = \\frac{ln 2}{10^{−5}} s",
+          "tag": "Substitute the decay constant",
+          "reason": "Multiplying by the tiny decay constant would give a very short time for a slow decay.",
+          "narration": "Substitute the decay constant. Inverting inverse seconds gives seconds."
+        },
+        {
+          "n": 4,
+          "display": "t_{half} ≈ 6.93 × 10^{4} s",
+          "tag": "Calculate the half-life",
+          "reason": "Use the natural logarithm because the decay formula uses the natural exponential.",
+          "narration": "Calculate the half-life. The natural logarithm of two is about 0.693."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is 6.93 × 10^{4} s (option A)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-003",
+      "questionId": "phys-jamb-2012-003",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T = 1500 N, θ = 45°",
+          "tag": "Read the rope pull",
+          "reason": "The rope pulls at an angle measured from the floor.",
+          "narration": "Read the rope pull."
+        },
+        {
+          "n": 2,
+          "display": "Net horizontal force = 0 N",
+          "tag": "Use uniform speed",
+          "reason": "Constant speed along the floor means zero horizontal acceleration.",
+          "narration": "Use uniform speed."
+        },
+        {
+          "n": 3,
+          "display": "F_{horizontal} = T cos θ",
+          "tag": "Find the horizontal component",
+          "reason": "The horizontal leg lies next to the angle measured from the floor.",
+          "narration": "Find the horizontal component."
+        },
+        {
+          "n": 4,
+          "display": "F_{friction} = F_{horizontal}",
+          "tag": "Balance the horizontal forces",
+          "reason": "Friction acts opposite the horizontal pull.",
+          "narration": "Balance the horizontal forces."
+        },
+        {
+          "n": 5,
+          "display": "F_{friction} = 1500 cos 45° N",
+          "tag": "Substitute the tension and angle",
+          "reason": "Use the horizontal part of the given rope pull.",
+          "narration": "Substitute the tension and angle."
+        },
+        {
+          "n": 6,
+          "display": "F_{friction} ≈ 1061 N",
+          "tag": "Evaluate the component",
+          "reason": "Round the product to the nearest newton.",
+          "narration": "Evaluate the component."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 1061 N (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "T = 1500 N, θ = 45°",
+          "tag": "Read the rope pull",
+          "reason": "The rope pulls at an angle measured from the floor.",
+          "narration": "Read the rope pull."
+        },
+        {
+          "n": 2,
+          "display": "Net horizontal force = 0 N",
+          "tag": "Use uniform speed",
+          "reason": "Constant speed along the floor means zero horizontal acceleration.",
+          "narration": "Use uniform speed."
+        },
+        {
+          "n": 3,
+          "display": "F_{horizontal} = T cos θ",
+          "tag": "Find the horizontal component",
+          "reason": "The full tension includes a vertical component that does not balance friction.",
+          "narration": "Find the horizontal component. The horizontal leg lies next to the angle measured from the floor."
+        },
+        {
+          "n": 4,
+          "display": "F_{friction} = F_{horizontal}",
+          "tag": "Balance the horizontal forces",
+          "reason": "Friction acts opposite the horizontal pull.",
+          "narration": "Balance the horizontal forces."
+        },
+        {
+          "n": 5,
+          "display": "F_{friction} = 1500 cos 45° N",
+          "tag": "Substitute the tension and angle",
+          "reason": "Use the horizontal part of the given rope pull.",
+          "narration": "Substitute the tension and angle."
+        },
+        {
+          "n": 6,
+          "display": "F_{friction} ≈ 1061 N",
+          "tag": "Evaluate the component",
+          "reason": "Its magnitude is less than the full rope tension.",
+          "narration": "Evaluate the component. Round the product to the nearest newton."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 1061 N (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-007",
+      "questionId": "phys-jamb-2012-007",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "u = 0, a = 30 m/s^{2}, t = 20 s",
+          "tag": "Read the motion data",
+          "reason": "Starting from rest makes the initial speed zero.",
+          "narration": "Read the motion data."
+        },
+        {
+          "n": 2,
+          "display": "s = ut + \\frac{1}{2}at^{2}",
+          "tag": "Use the distance formula",
+          "reason": "With constant acceleration, distance includes the effect of the growing speed.",
+          "narration": "Use the distance formula."
+        },
+        {
+          "n": 3,
+          "display": "s = \\frac{1}{2}at^{2}",
+          "tag": "Drop the zero term",
+          "reason": "The starting speed contributes no distance.",
+          "narration": "Drop the zero term."
+        },
+        {
+          "n": 4,
+          "display": "s = \\frac{1}{2} × 30 × 20^{2} m",
+          "tag": "Substitute acceleration and time",
+          "reason": "Square the time before multiplying.",
+          "narration": "Substitute acceleration and time."
+        },
+        {
+          "n": 5,
+          "display": "s = 6000 m",
+          "tag": "Evaluate distance in metres",
+          "reason": "Multiply the acceleration by half the time squared.",
+          "narration": "Evaluate distance in metres."
+        },
+        {
+          "n": 6,
+          "display": "s = \\frac{6000}{1000} km",
+          "tag": "Convert to kilometres",
+          "reason": "One kilometre is one thousand metres.",
+          "narration": "Convert to kilometres."
+        },
+        {
+          "n": 7,
+          "display": "s = 6 km",
+          "tag": "Evaluate the conversion",
+          "reason": "Divide the metre result by one thousand.",
+          "narration": "Evaluate the conversion."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 6 km (option A)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "u = 0, a = 30 m/s^{2}, t = 20 s",
+          "tag": "Read the motion data",
+          "reason": "Starting from rest makes the initial speed zero.",
+          "narration": "Read the motion data."
+        },
+        {
+          "n": 2,
+          "display": "s = ut + \\frac{1}{2}at^{2}",
+          "tag": "Use the distance formula",
+          "reason": "The distance is the area under a speed-time graph, which is a triangle when starting from rest.",
+          "narration": "Use the distance formula. With constant acceleration, distance includes the effect of the growing speed."
+        },
+        {
+          "n": 3,
+          "display": "s = \\frac{1}{2}at^{2}",
+          "tag": "Drop the zero term",
+          "reason": "Using the final speed for all twenty seconds would give twice the distance.",
+          "narration": "Drop the zero term. The starting speed contributes no distance."
+        },
+        {
+          "n": 4,
+          "display": "s = \\frac{1}{2} × 30 × 20^{2} m",
+          "tag": "Substitute acceleration and time",
+          "reason": "Square the time before multiplying.",
+          "narration": "Substitute acceleration and time."
+        },
+        {
+          "n": 5,
+          "display": "s = 6000 m",
+          "tag": "Evaluate distance in metres",
+          "reason": "The squared seconds cancel the seconds squared in the acceleration unit.",
+          "narration": "Evaluate distance in metres. Multiply the acceleration by half the time squared."
+        },
+        {
+          "n": 6,
+          "display": "s = \\frac{6000}{1000} km",
+          "tag": "Convert to kilometres",
+          "reason": "One kilometre is one thousand metres.",
+          "narration": "Convert to kilometres."
+        },
+        {
+          "n": 7,
+          "display": "s = 6 km",
+          "tag": "Evaluate the conversion",
+          "reason": "The options use kilometres.",
+          "narration": "Evaluate the conversion. Divide the metre result by one thousand."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 6 km (option A)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-010",
+      "questionId": "phys-jamb-2012-010",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "v = 1 m/s, r = 0.5 m",
+          "tag": "Read speed and radius",
+          "reason": "These describe the speed along the circular path and its size.",
+          "narration": "Read speed and radius."
+        },
+        {
+          "n": 2,
+          "display": "v = rω",
+          "tag": "Use the circular-motion formula",
+          "reason": "At one radian per second, the path length covered per second equals one radius.",
+          "narration": "Use the circular-motion formula."
+        },
+        {
+          "n": 3,
+          "display": "ω = \\frac{v}{r}",
+          "tag": "Isolate angular speed",
+          "reason": "Divide both sides by the radius.",
+          "narration": "Isolate angular speed."
+        },
+        {
+          "n": 4,
+          "display": "ω = \\frac{1}{0.5} rad/s",
+          "tag": "Substitute the values",
+          "reason": "Use the radius in metres to match the speed units.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 5,
+          "display": "ω = 2 rad/s",
+          "tag": "Calculate angular speed",
+          "reason": "One metre per second covers two half-metre arcs each second.",
+          "narration": "Calculate angular speed."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 2 rad s^{−1} (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "v = 1 m/s, r = 0.5 m",
+          "tag": "Read speed and radius",
+          "reason": "These describe the speed along the circular path and its size.",
+          "narration": "Read speed and radius."
+        },
+        {
+          "n": 2,
+          "display": "v = rω",
+          "tag": "Use the circular-motion formula",
+          "reason": "At one radian per second, the path length covered per second equals one radius.",
+          "narration": "Use the circular-motion formula."
+        },
+        {
+          "n": 3,
+          "display": "ω = \\frac{v}{r}",
+          "tag": "Isolate angular speed",
+          "reason": "Multiplying by the radius would reverse how radius affects angular speed for a given linear speed.",
+          "narration": "Isolate angular speed. Divide both sides by the radius."
+        },
+        {
+          "n": 4,
+          "display": "ω = \\frac{1}{0.5} rad/s",
+          "tag": "Substitute the values",
+          "reason": "Use the radius in metres to match the speed units.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 5,
+          "display": "ω = 2 rad/s",
+          "tag": "Calculate angular speed",
+          "reason": "Each half-metre arc subtends one radian at this radius.",
+          "narration": "Calculate angular speed. One metre per second covers two half-metre arcs each second."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 2 rad s^{−1} (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-015",
+      "questionId": "phys-jamb-2012-015",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = 1 kg, x = 1.2 cm",
+          "tag": "Read the load and extension",
+          "reason": "The suspended mass supplies the stretching force.",
+          "narration": "Read the load and extension."
+        },
+        {
+          "n": 2,
+          "display": "F = mg = 1 × 10 N",
+          "tag": "Find the weight",
+          "reason": "Multiply mass by gravitational field strength.",
+          "narration": "Find the weight."
+        },
+        {
+          "n": 3,
+          "display": "F = 10 N",
+          "tag": "Evaluate the force",
+          "reason": "The cord supports the weight of the hanging mass.",
+          "narration": "Evaluate the force."
+        },
+        {
+          "n": 4,
+          "display": "x = \\frac{1.2}{100} m",
+          "tag": "Convert the extension",
+          "reason": "Divide centimetres by one hundred to get metres.",
+          "narration": "Convert the extension."
+        },
+        {
+          "n": 5,
+          "display": "x = 0.012 m",
+          "tag": "Evaluate the extension",
+          "reason": "The spring constant is requested per metre.",
+          "narration": "Evaluate the extension."
+        },
+        {
+          "n": 6,
+          "display": "k = \\frac{F}{x}",
+          "tag": "Use Hooke's law",
+          "reason": "The force constant is the force needed per unit extension in the linear range.",
+          "narration": "Use Hooke's law."
+        },
+        {
+          "n": 7,
+          "display": "k = \\frac{10}{0.012} N/m",
+          "tag": "Substitute force and extension",
+          "reason": "Use the force in newtons and extension in metres.",
+          "narration": "Substitute force and extension."
+        },
+        {
+          "n": 8,
+          "display": "k ≈ 833 N/m",
+          "tag": "Calculate the force constant",
+          "reason": "Round the quotient to the nearest newton per metre.",
+          "narration": "Calculate the force constant."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 833 N m^{−1} (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 1 kg, x = 1.2 cm",
+          "tag": "Read the load and extension",
+          "reason": "The suspended mass supplies the stretching force.",
+          "narration": "Read the load and extension."
+        },
+        {
+          "n": 2,
+          "display": "F = mg = 1 × 10 N",
+          "tag": "Find the weight",
+          "reason": "Multiply mass by gravitational field strength.",
+          "narration": "Find the weight."
+        },
+        {
+          "n": 3,
+          "display": "F = 10 N",
+          "tag": "Evaluate the force",
+          "reason": "Using one as the force would mix kilograms and newtons.",
+          "narration": "Evaluate the force. The cord supports the weight of the hanging mass."
+        },
+        {
+          "n": 4,
+          "display": "x = \\frac{1.2}{100} m",
+          "tag": "Convert the extension",
+          "reason": "Divide centimetres by one hundred to get metres.",
+          "narration": "Convert the extension."
+        },
+        {
+          "n": 5,
+          "display": "x = 0.012 m",
+          "tag": "Evaluate the extension",
+          "reason": "A centimetre is one hundredth of a metre.",
+          "narration": "Evaluate the extension. The spring constant is requested per metre."
+        },
+        {
+          "n": 6,
+          "display": "k = \\frac{F}{x}",
+          "tag": "Use Hooke's law",
+          "reason": "The force constant is the force needed per unit extension in the linear range.",
+          "narration": "Use Hooke's law."
+        },
+        {
+          "n": 7,
+          "display": "k = \\frac{10}{0.012} N/m",
+          "tag": "Substitute force and extension",
+          "reason": "Use the force in newtons and extension in metres.",
+          "narration": "Substitute force and extension."
+        },
+        {
+          "n": 8,
+          "display": "k ≈ 833 N/m",
+          "tag": "Calculate the force constant",
+          "reason": "The large value matches the small extension under a ten-newton load.",
+          "narration": "Calculate the force constant. Round the quotient to the nearest newton per metre."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 833 N m^{−1} (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-018",
+      "questionId": "phys-jamb-2012-018",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V = 300 m^{3}, ρ_{air} = 1.3 kg m^{−3}",
+          "tag": "Read the displaced volume",
+          "reason": "The balloon pushes aside its own volume of air.",
+          "narration": "Read the displaced volume."
+        },
+        {
+          "n": 2,
+          "display": "m_{air} = ρ_{air}V",
+          "tag": "Find the displaced mass",
+          "reason": "Density gives mass per cubic metre.",
+          "narration": "Find the displaced mass."
+        },
+        {
+          "n": 3,
+          "display": "m_{air} = 1.3 × 300 kg",
+          "tag": "Substitute the air data",
+          "reason": "Use the density of the displaced air.",
+          "narration": "Substitute the air data."
+        },
+        {
+          "n": 4,
+          "display": "m_{air} = 390 kg",
+          "tag": "Calculate the displaced mass",
+          "reason": "Multiply the mass per cubic metre by the volume.",
+          "narration": "Calculate the displaced mass."
+        },
+        {
+          "n": 5,
+          "display": "U = m_{air}g",
+          "tag": "Use Archimedes' principle",
+          "reason": "Upthrust equals the weight of the fluid displaced.",
+          "narration": "Use Archimedes' principle."
+        },
+        {
+          "n": 6,
+          "display": "U = 390 × 10 N",
+          "tag": "Substitute mass and gravity",
+          "reason": "Turn displaced air mass into weight.",
+          "narration": "Substitute mass and gravity."
+        },
+        {
+          "n": 7,
+          "display": "U = 3900 N",
+          "tag": "Calculate the upthrust",
+          "reason": "Multiply by ten newtons per kilogram.",
+          "narration": "Calculate the upthrust."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 3900 N (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V = 300 m^{3}, ρ_{air} = 1.3 kg m^{−3}",
+          "tag": "Read the displaced volume",
+          "reason": "The balloon pushes aside its own volume of air.",
+          "narration": "Read the displaced volume."
+        },
+        {
+          "n": 2,
+          "display": "m_{air} = ρ_{air}V",
+          "tag": "Find the displaced mass",
+          "reason": "Density gives mass per cubic metre.",
+          "narration": "Find the displaced mass."
+        },
+        {
+          "n": 3,
+          "display": "m_{air} = 1.3 × 300 kg",
+          "tag": "Substitute the air data",
+          "reason": "Hydrogen density would matter for net lift, while upthrust depends on the surrounding air.",
+          "narration": "Substitute the air data. Use the density of the displaced air."
+        },
+        {
+          "n": 4,
+          "display": "m_{air} = 390 kg",
+          "tag": "Calculate the displaced mass",
+          "reason": "This is the air that would fill the balloon's space.",
+          "narration": "Calculate the displaced mass. Multiply the mass per cubic metre by the volume."
+        },
+        {
+          "n": 5,
+          "display": "U = m_{air}g",
+          "tag": "Use Archimedes' principle",
+          "reason": "Upthrust equals the weight of the fluid displaced.",
+          "narration": "Use Archimedes' principle."
+        },
+        {
+          "n": 6,
+          "display": "U = 390 × 10 N",
+          "tag": "Substitute mass and gravity",
+          "reason": "Turn displaced air mass into weight.",
+          "narration": "Substitute mass and gravity."
+        },
+        {
+          "n": 7,
+          "display": "U = 3900 N",
+          "tag": "Calculate the upthrust",
+          "reason": "The displaced weight determines the upward force.",
+          "narration": "Calculate the upthrust. Multiply by ten newtons per kilogram."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 3900 N (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-021",
+      "questionId": "phys-jamb-2012-021",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V_{1} = 2000 cm^{3}, P_{1} = 700 mmHg",
+          "tag": "Read the initial state",
+          "reason": "These are the starting volume and pressure.",
+          "narration": "Read the initial state."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = (27 + 273) K",
+          "tag": "Convert the initial temperature",
+          "reason": "Use Kelvin because volume scales with absolute temperature.",
+          "narration": "Convert the initial temperature."
+        },
+        {
+          "n": 3,
+          "display": "T_{1} = 300 K",
+          "tag": "Evaluate the Kelvin temperature",
+          "reason": "Add the school approximation of 273.",
+          "narration": "Evaluate the Kelvin temperature."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = 273 K, P_{2} = 760 mmHg",
+          "tag": "Set the standard conditions",
+          "reason": "These are the standard conditions used in this question.",
+          "narration": "Set the standard conditions."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{P_{1}V_{1}}{T_{1}} = \\frac{P_{2}V_{2}}{T_{2}}",
+          "tag": "Use the combined gas law",
+          "reason": "The amount of gas stays fixed.",
+          "narration": "Use the combined gas law."
+        },
+        {
+          "n": 6,
+          "display": "V_{2} = V_{1} × \\frac{P_{1}}{P_{2}} × \\frac{T_{2}}{T_{1}}",
+          "tag": "Isolate the final volume",
+          "reason": "Higher pressure and lower temperature each reduce the volume.",
+          "narration": "Isolate the final volume."
+        },
+        {
+          "n": 7,
+          "display": "V_{2} = 2000 × \\frac{700}{760} × \\frac{273}{300} cm^{3}",
+          "tag": "Substitute the measurements",
+          "reason": "Both ratios are below one, a check on their direction.",
+          "narration": "Substitute the measurements."
+        },
+        {
+          "n": 8,
+          "display": "V_{2} ≈ 1676.3 cm^{3}",
+          "tag": "Evaluate the final volume",
+          "reason": "Multiply and round to one decimal place.",
+          "narration": "Evaluate the final volume."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 1676.3 cm^{3} (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{1} = 2000 cm^{3}, P_{1} = 700 mmHg",
+          "tag": "Read the initial state",
+          "reason": "These are the starting volume and pressure.",
+          "narration": "Read the initial state."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = (27 + 273) K",
+          "tag": "Convert the initial temperature",
+          "reason": "The ratio would be invalid if the starting temperature stayed in Celsius.",
+          "narration": "Convert the initial temperature. Use Kelvin because volume scales with absolute temperature."
+        },
+        {
+          "n": 3,
+          "display": "T_{1} = 300 K",
+          "tag": "Evaluate the Kelvin temperature",
+          "reason": "Use that same convention for the standard temperature.",
+          "narration": "Evaluate the Kelvin temperature. Add the school approximation of 273."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = 273 K, P_{2} = 760 mmHg",
+          "tag": "Set the standard conditions",
+          "reason": "These are the standard conditions used in this question.",
+          "narration": "Set the standard conditions."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{P_{1}V_{1}}{T_{1}} = \\frac{P_{2}V_{2}}{T_{2}}",
+          "tag": "Use the combined gas law",
+          "reason": "The amount of gas stays fixed.",
+          "narration": "Use the combined gas law."
+        },
+        {
+          "n": 6,
+          "display": "V_{2} = V_{1} × \\frac{P_{1}}{P_{2}} × \\frac{T_{2}}{T_{1}}",
+          "tag": "Isolate the final volume",
+          "reason": "Higher pressure and lower temperature each reduce the volume.",
+          "narration": "Isolate the final volume."
+        },
+        {
+          "n": 7,
+          "display": "V_{2} = 2000 × \\frac{700}{760} × \\frac{273}{300} cm^{3}",
+          "tag": "Substitute the measurements",
+          "reason": "Both ratios are below one, a check on their direction.",
+          "narration": "Substitute the measurements."
+        },
+        {
+          "n": 8,
+          "display": "V_{2} ≈ 1676.3 cm^{3}",
+          "tag": "Evaluate the final volume",
+          "reason": "Reversing either ratio would make the volume too large.",
+          "narration": "Evaluate the final volume. Multiply and round to one decimal place."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 1676.3 cm^{3} (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-041",
+      "questionId": "phys-jamb-2012-041",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = 1.8 × 10^{−8} N, q = 1.0 × 10^{−8} C",
+          "tag": "Read the force and charge data",
+          "reason": "Use the magnitudes because the question asks for field strength.",
+          "narration": "Read the force and charge data."
+        },
+        {
+          "n": 2,
+          "display": "v = 3.0 × 10^{2} m/s, θ = 90°",
+          "tag": "Read the speed and direction",
+          "reason": "The motion is perpendicular to the field.",
+          "narration": "Read the speed and direction."
+        },
+        {
+          "n": 3,
+          "display": "F = qvB",
+          "tag": "Use the magnetic force law",
+          "reason": "The sine of ninety degrees is one.",
+          "narration": "Use the magnetic force law."
+        },
+        {
+          "n": 4,
+          "display": "B = \\frac{F}{qv}",
+          "tag": "Isolate field strength",
+          "reason": "Divide by the charge times speed.",
+          "narration": "Isolate field strength."
+        },
+        {
+          "n": 5,
+          "display": "B = \\frac{1.8 × 10^{−8}}{(1.0 × 10^{−8})(3.0 × 10^{2})} T",
+          "tag": "Substitute the given values",
+          "reason": "Put the charge and speed together in the denominator.",
+          "narration": "Substitute the given values."
+        },
+        {
+          "n": 6,
+          "display": "B = \\frac{1.8}{3.0 × 10^{2}} T",
+          "tag": "Simplify the common power",
+          "reason": "Cancel the same power of ten above and below.",
+          "narration": "Simplify the common power."
+        },
+        {
+          "n": 7,
+          "display": "B = 6.0 × 10^{−3} T",
+          "tag": "Evaluate field strength",
+          "reason": "Divide the remaining numbers and write the result in scientific notation.",
+          "narration": "Evaluate field strength."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 6.0 × 10^{−3} T (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "F = 1.8 × 10^{−8} N, q = 1.0 × 10^{−8} C",
+          "tag": "Read the force and charge data",
+          "reason": "Use the magnitudes because the question asks for field strength.",
+          "narration": "Read the force and charge data."
+        },
+        {
+          "n": 2,
+          "display": "v = 3.0 × 10^{2} m/s, θ = 90°",
+          "tag": "Read the speed and direction",
+          "reason": "The motion is perpendicular to the field.",
+          "narration": "Read the speed and direction."
+        },
+        {
+          "n": 3,
+          "display": "F = qvB",
+          "tag": "Use the magnetic force law",
+          "reason": "This force is largest when motion crosses the field at right angles.",
+          "narration": "Use the magnetic force law. The sine of ninety degrees is one."
+        },
+        {
+          "n": 4,
+          "display": "B = \\frac{F}{qv}",
+          "tag": "Isolate field strength",
+          "reason": "Divide by the charge times speed.",
+          "narration": "Isolate field strength."
+        },
+        {
+          "n": 5,
+          "display": "B = \\frac{1.8 × 10^{−8}}{(1.0 × 10^{−8})(3.0 × 10^{2})} T",
+          "tag": "Substitute the given values",
+          "reason": "Leaving speed out would give the wrong unit and value.",
+          "narration": "Substitute the given values. Put the charge and speed together in the denominator."
+        },
+        {
+          "n": 6,
+          "display": "B = \\frac{1.8}{3.0 × 10^{2}} T",
+          "tag": "Simplify the common power",
+          "reason": "Cancel the same power of ten above and below.",
+          "narration": "Simplify the common power."
+        },
+        {
+          "n": 7,
+          "display": "B = 6.0 × 10^{−3} T",
+          "tag": "Evaluate field strength",
+          "reason": "Tesla is the unit of magnetic field strength.",
+          "narration": "Evaluate field strength. Divide the remaining numbers and write the result in scientific notation."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 6.0 × 10^{−3} T (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2012-043",
+      "questionId": "phys-jamb-2012-043",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "I = 10 sin ωt A",
+          "tag": "Read the current equation",
+          "reason": "The sine ranges from minus one to one, so ten amperes is the peak.",
+          "narration": "Read the current equation."
+        },
+        {
+          "n": 2,
+          "display": "I_{rms} = \\frac{I_{peak}}{\\sqrt{2}}",
+          "tag": "Use the RMS relation",
+          "reason": "For a sine wave this gives the direct current with the same heating effect.",
+          "narration": "Use the RMS relation."
+        },
+        {
+          "n": 3,
+          "display": "I_{rms} = \\frac{10}{\\sqrt{2}} A",
+          "tag": "Substitute the peak",
+          "reason": "Use the amplitude of the sine wave as the numerator.",
+          "narration": "Substitute the peak."
+        },
+        {
+          "n": 4,
+          "display": "I_{rms} ≈ 7.1 A",
+          "tag": "Evaluate the current",
+          "reason": "Round to one decimal place.",
+          "narration": "Evaluate the current."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is 7.1 A (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "I = 10 sin ωt A",
+          "tag": "Read the current equation",
+          "reason": "The sine ranges from minus one to one, so ten amperes is the peak.",
+          "narration": "Read the current equation."
+        },
+        {
+          "n": 2,
+          "display": "I_{rms} = \\frac{I_{peak}}{\\sqrt{2}}",
+          "tag": "Use the RMS relation",
+          "reason": "The ordinary average over a cycle is zero, but both current directions still heat the resistor.",
+          "narration": "Use the RMS relation. For a sine wave this gives the direct current with the same heating effect."
+        },
+        {
+          "n": 3,
+          "display": "I_{rms} = \\frac{10}{\\sqrt{2}} A",
+          "tag": "Substitute the peak",
+          "reason": "Ten amperes is an instantaneous maximum, a common distractor.",
+          "narration": "Substitute the peak. Use the amplitude of the sine wave as the numerator."
+        },
+        {
+          "n": 4,
+          "display": "I_{rms} ≈ 7.1 A",
+          "tag": "Evaluate the current",
+          "reason": "The effective current is below the peak.",
+          "narration": "Evaluate the current. Round to one decimal place."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is 7.1 A (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-003",
+      "questionId": "phys-jamb-2013-003",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Resultant = 50 N, angle = 30°",
+          "tag": "Describe the right triangle",
+          "reason": "The perpendicular forces form the two short sides and the resultant is the hypotenuse.",
+          "narration": "Describe the right triangle."
+        },
+        {
+          "n": 2,
+          "display": "cos 30° = \\frac{F}{50 N}",
+          "tag": "Use the cosine ratio",
+          "reason": "The requested force lies against the given angle.",
+          "narration": "Use the cosine ratio."
+        },
+        {
+          "n": 3,
+          "display": "F = resultant × cos θ",
+          "tag": "Isolate the force",
+          "reason": "Multiply the cosine ratio by the hypotenuse.",
+          "narration": "Isolate the force."
+        },
+        {
+          "n": 4,
+          "display": "F = 50 cos 30° N",
+          "tag": "Substitute the measurements",
+          "reason": "Use the resultant and the angle from the question.",
+          "narration": "Substitute the measurements."
+        },
+        {
+          "n": 5,
+          "display": "F ≈ 43.3 N",
+          "tag": "Evaluate the magnitude",
+          "reason": "Multiply by the cosine of thirty degrees.",
+          "narration": "Evaluate the magnitude."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 43.3 N (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Resultant = 50 N, angle = 30°",
+          "tag": "Describe the right triangle",
+          "reason": "The perpendicular forces form the two short sides and the resultant is the hypotenuse.",
+          "narration": "Describe the right triangle."
+        },
+        {
+          "n": 2,
+          "display": "cos 30° = \\frac{F}{50 N}",
+          "tag": "Use the cosine ratio",
+          "reason": "Sine would pick the other short side, opposite the angle.",
+          "narration": "Use the cosine ratio. The requested force lies against the given angle."
+        },
+        {
+          "n": 3,
+          "display": "F = resultant × cos θ",
+          "tag": "Isolate the force",
+          "reason": "Multiply the cosine ratio by the hypotenuse.",
+          "narration": "Isolate the force."
+        },
+        {
+          "n": 4,
+          "display": "F = 50 cos 30° N",
+          "tag": "Substitute the measurements",
+          "reason": "Use the resultant and the angle from the question.",
+          "narration": "Substitute the measurements."
+        },
+        {
+          "n": 5,
+          "display": "F ≈ 43.3 N",
+          "tag": "Evaluate the magnitude",
+          "reason": "A component must be smaller than the resultant here.",
+          "narration": "Evaluate the magnitude. Multiply by the cosine of thirty degrees."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 43.3 N (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-008",
+      "questionId": "phys-jamb-2013-008",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ρ_{cork} = 0.25 × 10^{3}, ρ_{liquid} = 1.25 × 10^{3} kg m^{−3}",
+          "tag": "Read the densities",
+          "reason": "Both densities use the same units.",
+          "narration": "Read the densities."
+        },
+        {
+          "n": 2,
+          "display": "ρ_{cork}Vg = ρ_{liquid}V_{sub}g",
+          "tag": "Balance the forces",
+          "reason": "A floating object displaces liquid whose weight matches its own.",
+          "narration": "Balance the forces."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{V_{sub}}{V} = \\frac{ρ_{cork}}{ρ_{liquid}}",
+          "tag": "Isolate the immersed fraction",
+          "reason": "Cancel gravity and divide by the full volume and liquid density.",
+          "narration": "Isolate the immersed fraction."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{V_{sub}}{V} = \\frac{0.25 × 10^{3}}{1.25 × 10^{3}}",
+          "tag": "Substitute the densities",
+          "reason": "Match cork density with the numerator.",
+          "narration": "Substitute the densities."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{V_{sub}}{V} = \\frac{0.25}{1.25}",
+          "tag": "Cancel the common factor",
+          "reason": "The common power of ten cancels.",
+          "narration": "Cancel the common factor."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{V_{sub}}{V} = \\frac{1}{5} = 0.20",
+          "tag": "Evaluate the fraction",
+          "reason": "One fifth of the cork is under the surface.",
+          "narration": "Evaluate the fraction."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is \\frac{1}{5} of the volume (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "ρ_{cork} = 0.25 × 10^{3}, ρ_{liquid} = 1.25 × 10^{3} kg m^{−3}",
+          "tag": "Read the densities",
+          "reason": "Both densities use the same units.",
+          "narration": "Read the densities."
+        },
+        {
+          "n": 2,
+          "display": "ρ_{cork}Vg = ρ_{liquid}V_{sub}g",
+          "tag": "Balance the forces",
+          "reason": "The liquid fills only the volume below the surface, so use the submerged volume for its weight.",
+          "narration": "Balance the forces. A floating object displaces liquid whose weight matches its own."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{V_{sub}}{V} = \\frac{ρ_{cork}}{ρ_{liquid}}",
+          "tag": "Isolate the immersed fraction",
+          "reason": "Reversing the density ratio would give a fraction above one.",
+          "narration": "Isolate the immersed fraction. Cancel gravity and divide by the full volume and liquid density."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{V_{sub}}{V} = \\frac{0.25 × 10^{3}}{1.25 × 10^{3}}",
+          "tag": "Substitute the densities",
+          "reason": "Match cork density with the numerator.",
+          "narration": "Substitute the densities."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{V_{sub}}{V} = \\frac{0.25}{1.25}",
+          "tag": "Cancel the common factor",
+          "reason": "The common power of ten cancels.",
+          "narration": "Cancel the common factor."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{V_{sub}}{V} = \\frac{1}{5} = 0.20",
+          "tag": "Evaluate the fraction",
+          "reason": "This ratio has no physical unit.",
+          "narration": "Evaluate the fraction. One fifth of the cork is under the surface."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is \\frac{1}{5} of the volume (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-010",
+      "questionId": "phys-jamb-2013-010",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = 5000 kg, h = 60 m, t = 15 min",
+          "tag": "Read the lifting data",
+          "reason": "We need the work done and the time taken.",
+          "narration": "Read the lifting data."
+        },
+        {
+          "n": 2,
+          "display": "W = mgh",
+          "tag": "Use the lifting-work formula",
+          "reason": "The work raises the water's gravitational potential energy.",
+          "narration": "Use the lifting-work formula."
+        },
+        {
+          "n": 3,
+          "display": "W = 5000 × 10 × 60 J",
+          "tag": "Substitute the mass and height",
+          "reason": "Weight times vertical height gives energy in joules.",
+          "narration": "Substitute the mass and height."
+        },
+        {
+          "n": 4,
+          "display": "W = 3.0 × 10^{6} J",
+          "tag": "Evaluate the work",
+          "reason": "This is the total useful energy delivered.",
+          "narration": "Evaluate the work."
+        },
+        {
+          "n": 5,
+          "display": "t = 15 × 60 s",
+          "tag": "Convert the time",
+          "reason": "Power in watts means joules per second.",
+          "narration": "Convert the time."
+        },
+        {
+          "n": 6,
+          "display": "t = 900 s",
+          "tag": "Evaluate the time",
+          "reason": "There are sixty seconds in each minute.",
+          "narration": "Evaluate the time."
+        },
+        {
+          "n": 7,
+          "display": "P = \\frac{W}{t}",
+          "tag": "Use the power formula",
+          "reason": "Divide the useful work by the elapsed time.",
+          "narration": "Use the power formula."
+        },
+        {
+          "n": 8,
+          "display": "P = \\frac{3.0 × 10^{6}}{900} W",
+          "tag": "Substitute work and time",
+          "reason": "Use the work in joules and time in seconds.",
+          "narration": "Substitute work and time."
+        },
+        {
+          "n": 9,
+          "display": "P ≈ 3.3 × 10^{3} W",
+          "tag": "Calculate useful power",
+          "reason": "Round the quotient to two significant figures.",
+          "narration": "Calculate useful power."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 3.3 × 10^{3} W (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 5000 kg, h = 60 m, t = 15 min",
+          "tag": "Read the lifting data",
+          "reason": "We need the work done and the time taken.",
+          "narration": "Read the lifting data."
+        },
+        {
+          "n": 2,
+          "display": "W = mgh",
+          "tag": "Use the lifting-work formula",
+          "reason": "The work raises the water's gravitational potential energy.",
+          "narration": "Use the lifting-work formula."
+        },
+        {
+          "n": 3,
+          "display": "W = 5000 × 10 × 60 J",
+          "tag": "Substitute the mass and height",
+          "reason": "Weight times vertical height gives energy in joules.",
+          "narration": "Substitute the mass and height."
+        },
+        {
+          "n": 4,
+          "display": "W = 3.0 × 10^{6} J",
+          "tag": "Evaluate the work",
+          "reason": "Joules measure the work, while watts measure how quickly it is done.",
+          "narration": "Evaluate the work. This is the total useful energy delivered."
+        },
+        {
+          "n": 5,
+          "display": "t = 15 × 60 s",
+          "tag": "Convert the time",
+          "reason": "Power in watts means joules per second.",
+          "narration": "Convert the time."
+        },
+        {
+          "n": 6,
+          "display": "t = 900 s",
+          "tag": "Evaluate the time",
+          "reason": "Dividing by fifteen would give energy per minute.",
+          "narration": "Evaluate the time. There are sixty seconds in each minute."
+        },
+        {
+          "n": 7,
+          "display": "P = \\frac{W}{t}",
+          "tag": "Use the power formula",
+          "reason": "Divide the useful work by the elapsed time.",
+          "narration": "Use the power formula."
+        },
+        {
+          "n": 8,
+          "display": "P = \\frac{3.0 × 10^{6}}{900} W",
+          "tag": "Substitute work and time",
+          "reason": "Use the work in joules and time in seconds.",
+          "narration": "Substitute work and time."
+        },
+        {
+          "n": 9,
+          "display": "P ≈ 3.3 × 10^{3} W",
+          "tag": "Calculate useful power",
+          "reason": "This is output power delivered to the water.",
+          "narration": "Calculate useful power. Round the quotient to two significant figures."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 3.3 × 10^{3} W (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-013",
+      "questionId": "phys-jamb-2013-013",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "F = 20 N, x = 50 mm",
+          "tag": "Read the final force and stretch",
+          "reason": "The twenty-newton force is reached at the end of the stretch.",
+          "narration": "Read the final force and stretch."
+        },
+        {
+          "n": 2,
+          "display": "x = \\frac{50}{1000} m",
+          "tag": "Convert the stretch",
+          "reason": "There are one thousand millimetres in a metre.",
+          "narration": "Convert the stretch."
+        },
+        {
+          "n": 3,
+          "display": "x = 0.050 m",
+          "tag": "Evaluate the conversion",
+          "reason": "Use metres so the energy comes out in joules.",
+          "narration": "Evaluate the conversion."
+        },
+        {
+          "n": 4,
+          "display": "W = \\frac{1}{2}Fx",
+          "tag": "Use the spring-work formula",
+          "reason": "In a linear spring the force rises uniformly from zero.",
+          "narration": "Use the spring-work formula."
+        },
+        {
+          "n": 5,
+          "display": "W = \\frac{1}{2} × 20 × 0.050 J",
+          "tag": "Substitute force and extension",
+          "reason": "Use the final force in the formula that already includes the half.",
+          "narration": "Substitute force and extension."
+        },
+        {
+          "n": 6,
+          "display": "W = 0.5 J",
+          "tag": "Calculate the work",
+          "reason": "Evaluate the product in newton metres, which are joules.",
+          "narration": "Calculate the work."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 0.5 J (option A)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "F = 20 N, x = 50 mm",
+          "tag": "Read the final force and stretch",
+          "reason": "The twenty-newton force is reached at the end of the stretch.",
+          "narration": "Read the final force and stretch."
+        },
+        {
+          "n": 2,
+          "display": "x = \\frac{50}{1000} m",
+          "tag": "Convert the stretch",
+          "reason": "There are one thousand millimetres in a metre.",
+          "narration": "Convert the stretch."
+        },
+        {
+          "n": 3,
+          "display": "x = 0.050 m",
+          "tag": "Evaluate the conversion",
+          "reason": "Millimetres used as metres would make the work a thousand times too large.",
+          "narration": "Evaluate the conversion. Use metres so the energy comes out in joules."
+        },
+        {
+          "n": 4,
+          "display": "W = \\frac{1}{2}Fx",
+          "tag": "Use the spring-work formula",
+          "reason": "The area under the force-extension graph is a triangle, so use half the final force on average.",
+          "narration": "Use the spring-work formula. In a linear spring the force rises uniformly from zero."
+        },
+        {
+          "n": 5,
+          "display": "W = \\frac{1}{2} × 20 × 0.050 J",
+          "tag": "Substitute force and extension",
+          "reason": "Using the full final force throughout would double the work.",
+          "narration": "Substitute force and extension. Use the final force in the formula that already includes the half."
+        },
+        {
+          "n": 6,
+          "display": "W = 0.5 J",
+          "tag": "Calculate the work",
+          "reason": "This is the energy stored in the ideal spring.",
+          "narration": "Calculate the work. Evaluate the product in newton metres, which are joules."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 0.5 J (option A)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2013-017",
+      "questionId": "phys-jamb-2013-017",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "L_{1} = 100.0 m, α = 2 × 10^{−5} K^{−1}",
+          "tag": "Read the initial length",
+          "reason": "The expansivity measures fractional length change per degree.",
+          "narration": "Read the initial length."
+        },
+        {
+          "n": 2,
+          "display": "ΔT = (−10 − 30) K",
+          "tag": "Find the temperature change",
+          "reason": "Subtract the starting temperature from the final one.",
+          "narration": "Find the temperature change."
+        },
+        {
+          "n": 3,
+          "display": "ΔT = −40 K",
+          "tag": "Evaluate the change",
+          "reason": "The temperature falls by forty degrees.",
+          "narration": "Evaluate the change."
+        },
+        {
+          "n": 4,
+          "display": "ΔL = L_{1}αΔT",
+          "tag": "Use linear expansion",
+          "reason": "The change scales with the initial length and signed temperature change.",
+          "narration": "Use linear expansion."
+        },
+        {
+          "n": 5,
+          "display": "ΔL = 100 × (2 × 10^{−5}) × (−40) m",
+          "tag": "Substitute the values",
+          "reason": "Keep the negative sign because cooling shortens the wire.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 6,
+          "display": "ΔL = −0.08 m",
+          "tag": "Evaluate the length change",
+          "reason": "The wire contracts by eight centimetres.",
+          "narration": "Evaluate the length change."
+        },
+        {
+          "n": 7,
+          "display": "L_{2} = (100.0 − 0.08) m",
+          "tag": "Put the change into the final length",
+          "reason": "Apply the signed change to the starting length.",
+          "narration": "Put the change into the final length."
+        },
+        {
+          "n": 8,
+          "display": "L_{2} = 99.92 m",
+          "tag": "Calculate the final length",
+          "reason": "Subtract the contraction from one hundred metres.",
+          "narration": "Calculate the final length."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 99.92 m (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "L_{1} = 100.0 m, α = 2 × 10^{−5} K^{−1}",
+          "tag": "Read the initial length",
+          "reason": "The expansivity measures fractional length change per degree.",
+          "narration": "Read the initial length."
+        },
+        {
+          "n": 2,
+          "display": "ΔT = (−10 − 30) K",
+          "tag": "Find the temperature change",
+          "reason": "Subtract the starting temperature from the final one.",
+          "narration": "Find the temperature change."
+        },
+        {
+          "n": 3,
+          "display": "ΔT = −40 K",
+          "tag": "Evaluate the change",
+          "reason": "Celsius and kelvin have the same size degree for a difference.",
+          "narration": "Evaluate the change. The temperature falls by forty degrees."
+        },
+        {
+          "n": 4,
+          "display": "ΔL = L_{1}αΔT",
+          "tag": "Use linear expansion",
+          "reason": "The change scales with the initial length and signed temperature change.",
+          "narration": "Use linear expansion."
+        },
+        {
+          "n": 5,
+          "display": "ΔL = 100 × (2 × 10^{−5}) × (−40) m",
+          "tag": "Substitute the values",
+          "reason": "Keep the negative sign because cooling shortens the wire.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 6,
+          "display": "ΔL = −0.08 m",
+          "tag": "Evaluate the length change",
+          "reason": "A positive length change would describe heating instead.",
+          "narration": "Evaluate the length change. The wire contracts by eight centimetres."
+        },
+        {
+          "n": 7,
+          "display": "L_{2} = (100.0 − 0.08) m",
+          "tag": "Put the change into the final length",
+          "reason": "Apply the signed change to the starting length.",
+          "narration": "Put the change into the final length."
+        },
+        {
+          "n": 8,
+          "display": "L_{2} = 99.92 m",
+          "tag": "Calculate the final length",
+          "reason": "The answer is the final length rather than the size of the change.",
+          "narration": "Calculate the final length. Subtract the contraction from one hundred metres."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 99.92 m (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2015-030",
+      "questionId": "phys-jamb-2015-030",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = 450 kg, ρ_{ice} = 900, ρ_{water} = 1000 kg m^{−3}",
+          "tag": "Read the mass and densities",
+          "reason": "Melting changes density but keeps the same mass.",
+          "narration": "Read the mass and densities."
+        },
+        {
+          "n": 2,
+          "display": "V = \\frac{m}{ρ}",
+          "tag": "Use the density relation",
+          "reason": "Mass divided by mass per volume gives volume.",
+          "narration": "Use the density relation."
+        },
+        {
+          "n": 3,
+          "display": "V_{ice} = \\frac{450}{900} m^{3}",
+          "tag": "Substitute for the ice",
+          "reason": "Use the density before melting.",
+          "narration": "Substitute for the ice."
+        },
+        {
+          "n": 4,
+          "display": "V_{ice} = 0.50 m^{3}",
+          "tag": "Evaluate the ice volume",
+          "reason": "Divide the mass by the ice density.",
+          "narration": "Evaluate the ice volume."
+        },
+        {
+          "n": 5,
+          "display": "V_{water} = \\frac{450}{1000} m^{3}",
+          "tag": "Substitute for the water",
+          "reason": "Only the density changes after melting.",
+          "narration": "Substitute for the water."
+        },
+        {
+          "n": 6,
+          "display": "V_{water} = 0.45 m^{3}",
+          "tag": "Evaluate the water volume",
+          "reason": "Divide the same mass by the water density.",
+          "narration": "Evaluate the water volume."
+        },
+        {
+          "n": 7,
+          "display": "Magnitude = (0.50 − 0.45) m^{3}",
+          "tag": "Substitute for the difference",
+          "reason": "Subtract the smaller volume from the larger to get the magnitude.",
+          "narration": "Substitute for the difference."
+        },
+        {
+          "n": 8,
+          "display": "Magnitude = 0.05 m^{3}",
+          "tag": "Evaluate the difference",
+          "reason": "The water takes up five hundredths of a cubic metre less.",
+          "narration": "Evaluate the difference."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 0.05 m^{3} (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 450 kg, ρ_{ice} = 900, ρ_{water} = 1000 kg m^{−3}",
+          "tag": "Read the mass and densities",
+          "reason": "Melting changes density but keeps the same mass.",
+          "narration": "Read the mass and densities."
+        },
+        {
+          "n": 2,
+          "display": "V = \\frac{m}{ρ}",
+          "tag": "Use the density relation",
+          "reason": "Mass divided by mass per volume gives volume.",
+          "narration": "Use the density relation."
+        },
+        {
+          "n": 3,
+          "display": "V_{ice} = \\frac{450}{900} m^{3}",
+          "tag": "Substitute for the ice",
+          "reason": "Use the density before melting.",
+          "narration": "Substitute for the ice."
+        },
+        {
+          "n": 4,
+          "display": "V_{ice} = 0.50 m^{3}",
+          "tag": "Evaluate the ice volume",
+          "reason": "At lower density the same mass takes up more space.",
+          "narration": "Evaluate the ice volume. Divide the mass by the ice density."
+        },
+        {
+          "n": 5,
+          "display": "V_{water} = \\frac{450}{1000} m^{3}",
+          "tag": "Substitute for the water",
+          "reason": "Only the density changes after melting.",
+          "narration": "Substitute for the water."
+        },
+        {
+          "n": 6,
+          "display": "V_{water} = 0.45 m^{3}",
+          "tag": "Evaluate the water volume",
+          "reason": "This smaller volume is one of the distractors.",
+          "narration": "Evaluate the water volume. Divide the same mass by the water density."
+        },
+        {
+          "n": 7,
+          "display": "Magnitude = (0.50 − 0.45) m^{3}",
+          "tag": "Substitute for the difference",
+          "reason": "Subtract the smaller volume from the larger to get the magnitude.",
+          "narration": "Substitute for the difference."
+        },
+        {
+          "n": 8,
+          "display": "Magnitude = 0.05 m^{3}",
+          "tag": "Evaluate the difference",
+          "reason": "Report the positive size of the decrease.",
+          "narration": "Evaluate the difference. The water takes up five hundredths of a cubic metre less."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 0.05 m^{3} (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2017-027",
+      "questionId": "phys-jamb-2017-027",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 10 N, f_{1} = 250 Hz, f_{2} = 350 Hz",
+          "tag": "Read the settings",
+          "reason": "The same wire vibrates at the same length.",
+          "narration": "Read the settings."
+        },
+        {
+          "n": 2,
+          "display": "f ∝ \\sqrt{T}",
+          "tag": "Use the string relation",
+          "reason": "For the same wire and length, the frequency scales as the square root of tension.",
+          "narration": "Use the string relation."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{f_{2}}{f_{1}} = \\sqrt{\\frac{T_{2}}{T_{1}}}",
+          "tag": "Compare the two settings",
+          "reason": "The fixed factors from the wire cancel.",
+          "narration": "Compare the two settings."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = T_{1} × \\left(\\frac{f_{2}}{f_{1}}\\right)^{2}",
+          "tag": "Isolate the new tension",
+          "reason": "Square the frequency ratio to undo the square root.",
+          "narration": "Isolate the new tension."
+        },
+        {
+          "n": 5,
+          "display": "T_{2} = 10 × \\left(\\frac{350}{250}\\right)^{2} N",
+          "tag": "Substitute tension and frequencies",
+          "reason": "Use the new frequency above the original frequency.",
+          "narration": "Substitute tension and frequencies."
+        },
+        {
+          "n": 6,
+          "display": "T_{2} = 19.6 N",
+          "tag": "Evaluate the tension",
+          "reason": "Square the ratio before multiplying by ten.",
+          "narration": "Evaluate the tension."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 19.6 N (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "T_{1} = 10 N, f_{1} = 250 Hz, f_{2} = 350 Hz",
+          "tag": "Read the settings",
+          "reason": "The same wire vibrates at the same length.",
+          "narration": "Read the settings."
+        },
+        {
+          "n": 2,
+          "display": "f ∝ \\sqrt{T}",
+          "tag": "Use the string relation",
+          "reason": "A tighter wire has faster waves, which make a fixed-length standing wave oscillate faster.",
+          "narration": "Use the string relation. For the same wire and length, the frequency scales as the square root of tension."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{f_{2}}{f_{1}} = \\sqrt{\\frac{T_{2}}{T_{1}}}",
+          "tag": "Compare the two settings",
+          "reason": "The fixed factors from the wire cancel.",
+          "narration": "Compare the two settings."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = T_{1} × \\left(\\frac{f_{2}}{f_{1}}\\right)^{2}",
+          "tag": "Isolate the new tension",
+          "reason": "Multiplying by the frequency ratio alone gives the fourteen-newton distractor.",
+          "narration": "Isolate the new tension. Square the frequency ratio to undo the square root."
+        },
+        {
+          "n": 5,
+          "display": "T_{2} = 10 × \\left(\\frac{350}{250}\\right)^{2} N",
+          "tag": "Substitute tension and frequencies",
+          "reason": "Use the new frequency above the original frequency.",
+          "narration": "Substitute tension and frequencies."
+        },
+        {
+          "n": 6,
+          "display": "T_{2} = 19.6 N",
+          "tag": "Evaluate the tension",
+          "reason": "The higher frequency requires a higher tension.",
+          "narration": "Evaluate the tension. Square the ratio before multiplying by ten."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 19.6 N (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2017-040",
+      "questionId": "phys-jamb-2017-040",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = 1.98 g, z = 0.0033 g C^{−1}, I = 2 A",
+          "tag": "Read the deposition data",
+          "reason": "The given process deposits a fixed mass per coulomb.",
+          "narration": "Read the deposition data."
+        },
+        {
+          "n": 2,
+          "display": "Q = \\frac{m}{z}",
+          "tag": "Find charge from mass",
+          "reason": "Divide the desired mass by grams deposited per coulomb.",
+          "narration": "Find charge from mass."
+        },
+        {
+          "n": 3,
+          "display": "Q = \\frac{1.98}{0.0033} C",
+          "tag": "Substitute the mass and rate",
+          "reason": "The gram units cancel, leaving coulombs.",
+          "narration": "Substitute the mass and rate."
+        },
+        {
+          "n": 4,
+          "display": "Q = 600 C",
+          "tag": "Calculate the charge",
+          "reason": "The desired mass requires six hundred coulombs.",
+          "narration": "Calculate the charge."
+        },
+        {
+          "n": 5,
+          "display": "t = \\frac{Q}{I}",
+          "tag": "Find time from current",
+          "reason": "An ampere delivers one coulomb per second.",
+          "narration": "Find time from current."
+        },
+        {
+          "n": 6,
+          "display": "t = \\frac{600}{2} s",
+          "tag": "Substitute charge and current",
+          "reason": "The current delivers two coulombs every second.",
+          "narration": "Substitute charge and current."
+        },
+        {
+          "n": 7,
+          "display": "t = 300 s",
+          "tag": "Evaluate the time in seconds",
+          "reason": "Divide the total charge by the charge delivered each second.",
+          "narration": "Evaluate the time in seconds."
+        },
+        {
+          "n": 8,
+          "display": "t = \\frac{300}{60} min",
+          "tag": "Convert to minutes",
+          "reason": "Divide by sixty to match the options.",
+          "narration": "Convert to minutes."
+        },
+        {
+          "n": 9,
+          "display": "t = 5 min",
+          "tag": "Evaluate the conversion",
+          "reason": "Five groups of sixty seconds make three hundred seconds.",
+          "narration": "Evaluate the conversion."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 5 minutes (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 1.98 g, z = 0.0033 g C^{−1}, I = 2 A",
+          "tag": "Read the deposition data",
+          "reason": "The given process deposits a fixed mass per coulomb.",
+          "narration": "Read the deposition data."
+        },
+        {
+          "n": 2,
+          "display": "Q = \\frac{m}{z}",
+          "tag": "Find charge from mass",
+          "reason": "Divide the desired mass by grams deposited per coulomb.",
+          "narration": "Find charge from mass."
+        },
+        {
+          "n": 3,
+          "display": "Q = \\frac{1.98}{0.0033} C",
+          "tag": "Substitute the mass and rate",
+          "reason": "The gram units cancel, leaving coulombs.",
+          "narration": "Substitute the mass and rate."
+        },
+        {
+          "n": 4,
+          "display": "Q = 600 C",
+          "tag": "Calculate the charge",
+          "reason": "Six hundred is a charge, a different quantity from elapsed time.",
+          "narration": "Calculate the charge. The desired mass requires six hundred coulombs."
+        },
+        {
+          "n": 5,
+          "display": "t = \\frac{Q}{I}",
+          "tag": "Find time from current",
+          "reason": "An ampere delivers one coulomb per second.",
+          "narration": "Find time from current."
+        },
+        {
+          "n": 6,
+          "display": "t = \\frac{600}{2} s",
+          "tag": "Substitute charge and current",
+          "reason": "The current delivers two coulombs every second.",
+          "narration": "Substitute charge and current."
+        },
+        {
+          "n": 7,
+          "display": "t = 300 s",
+          "tag": "Evaluate the time in seconds",
+          "reason": "This is still in seconds.",
+          "narration": "Evaluate the time in seconds. Divide the total charge by the charge delivered each second."
+        },
+        {
+          "n": 8,
+          "display": "t = \\frac{300}{60} min",
+          "tag": "Convert to minutes",
+          "reason": "Divide by sixty to match the options.",
+          "narration": "Convert to minutes."
+        },
+        {
+          "n": 9,
+          "display": "t = 5 min",
+          "tag": "Evaluate the conversion",
+          "reason": "The answer is the elapsed time at constant current.",
+          "narration": "Evaluate the conversion. Five groups of sixty seconds make three hundred seconds."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 5 minutes (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2018-002",
+      "questionId": "phys-jamb-2018-002",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V_{1} = 400 cm^{3}, ρ_{1} = 0.9, ρ_{2} = 0.6 g cm^{−3}",
+          "tag": "Read the oil data",
+          "reason": "The oil keeps the same mass before and after frying.",
+          "narration": "Read the oil data."
+        },
+        {
+          "n": 2,
+          "display": "m = ρ_{1}V_{1}",
+          "tag": "Use the mass formula",
+          "reason": "Density times volume gives the mass of the original oil.",
+          "narration": "Use the mass formula."
+        },
+        {
+          "n": 3,
+          "display": "m = 0.9 × 400 g",
+          "tag": "Substitute the initial data",
+          "reason": "Use initial density with initial volume.",
+          "narration": "Substitute the initial data."
+        },
+        {
+          "n": 4,
+          "display": "m = 360 g",
+          "tag": "Evaluate the mass",
+          "reason": "This is the conserved mass.",
+          "narration": "Evaluate the mass."
+        },
+        {
+          "n": 5,
+          "display": "V_{2} = \\frac{m}{ρ_{2}}",
+          "tag": "Use the final density",
+          "reason": "Divide the conserved mass by the new mass per cubic centimetre.",
+          "narration": "Use the final density."
+        },
+        {
+          "n": 6,
+          "display": "V_{2} = \\frac{360}{0.6} cm^{3}",
+          "tag": "Substitute the final data",
+          "reason": "Use the lower density because it describes the fried oil.",
+          "narration": "Substitute the final data."
+        },
+        {
+          "n": 7,
+          "display": "V_{2} = 600 cm^{3}",
+          "tag": "Calculate the volume",
+          "reason": "The same mass takes up more space at lower density.",
+          "narration": "Calculate the volume."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 600 cm^{3} (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{1} = 400 cm^{3}, ρ_{1} = 0.9, ρ_{2} = 0.6 g cm^{−3}",
+          "tag": "Read the oil data",
+          "reason": "The oil keeps the same mass before and after frying.",
+          "narration": "Read the oil data."
+        },
+        {
+          "n": 2,
+          "display": "m = ρ_{1}V_{1}",
+          "tag": "Use the mass formula",
+          "reason": "Density times volume gives the mass of the original oil.",
+          "narration": "Use the mass formula."
+        },
+        {
+          "n": 3,
+          "display": "m = 0.9 × 400 g",
+          "tag": "Substitute the initial data",
+          "reason": "Use initial density with initial volume.",
+          "narration": "Substitute the initial data."
+        },
+        {
+          "n": 4,
+          "display": "m = 360 g",
+          "tag": "Evaluate the mass",
+          "reason": "Three hundred and sixty belongs to grams and is a distractor when labelled as volume.",
+          "narration": "Evaluate the mass. This is the conserved mass."
+        },
+        {
+          "n": 5,
+          "display": "V_{2} = \\frac{m}{ρ_{2}}",
+          "tag": "Use the final density",
+          "reason": "Divide the conserved mass by the new mass per cubic centimetre.",
+          "narration": "Use the final density."
+        },
+        {
+          "n": 6,
+          "display": "V_{2} = \\frac{360}{0.6} cm^{3}",
+          "tag": "Substitute the final data",
+          "reason": "Use the lower density because it describes the fried oil.",
+          "narration": "Substitute the final data."
+        },
+        {
+          "n": 7,
+          "display": "V_{2} = 600 cm^{3}",
+          "tag": "Calculate the volume",
+          "reason": "The increased volume checks the direction of the result.",
+          "narration": "Calculate the volume. The same mass takes up more space at lower density."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 600 cm^{3} (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2018-023",
+      "questionId": "phys-jamb-2018-023",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V_{1} = 15.00 cm^{3}, α = 2 × 10^{−5} °C^{−1}",
+          "tag": "Read the brass data",
+          "reason": "The given coefficient describes the change in each length.",
+          "narration": "Read the brass data."
+        },
+        {
+          "n": 2,
+          "display": "ΔT = 100 − 0 = 100°C",
+          "tag": "Find the temperature rise",
+          "reason": "Expansion depends on the temperature difference.",
+          "narration": "Find the temperature rise."
+        },
+        {
+          "n": 3,
+          "display": "β ≈ 3α",
+          "tag": "Find the volume coefficient",
+          "reason": "An isotropic solid expands along three perpendicular directions.",
+          "narration": "Find the volume coefficient."
+        },
+        {
+          "n": 4,
+          "display": "β ≈ 3 × (2 × 10^{−5}) °C^{−1}",
+          "tag": "Substitute the coefficient",
+          "reason": "Multiply the linear coefficient by three for this small expansion.",
+          "narration": "Substitute the coefficient."
+        },
+        {
+          "n": 5,
+          "display": "ΔV = V_{1}βΔT",
+          "tag": "Use the volume expansion formula",
+          "reason": "Multiply the original volume by the fractional expansion.",
+          "narration": "Use the volume expansion formula."
+        },
+        {
+          "n": 6,
+          "display": "ΔV ≈ 15.00 × 3 × (2 × 10^{−5}) × 100 cm^{3}",
+          "tag": "Substitute the measurements",
+          "reason": "Use the volume coefficient and the full temperature rise.",
+          "narration": "Substitute the measurements."
+        },
+        {
+          "n": 7,
+          "display": "ΔV ≈ 0.09 cm^{3}",
+          "tag": "Evaluate the increase",
+          "reason": "This is the volume added by heating.",
+          "narration": "Evaluate the increase."
+        },
+        {
+          "n": 8,
+          "display": "V_{2} ≈ (15.00 + 0.09) cm^{3}",
+          "tag": "Add the increase",
+          "reason": "Heating makes the piece larger.",
+          "narration": "Add the increase."
+        },
+        {
+          "n": 9,
+          "display": "V_{2} ≈ 15.09 cm^{3}",
+          "tag": "Calculate the new volume",
+          "reason": "Add the small increase to the original volume.",
+          "narration": "Calculate the new volume."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 15.09 cm^{3} (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{1} = 15.00 cm^{3}, α = 2 × 10^{−5} °C^{−1}",
+          "tag": "Read the brass data",
+          "reason": "The given coefficient describes the change in each length.",
+          "narration": "Read the brass data."
+        },
+        {
+          "n": 2,
+          "display": "ΔT = 100 − 0 = 100°C",
+          "tag": "Find the temperature rise",
+          "reason": "A difference of one degree Celsius is also a difference of one kelvin.",
+          "narration": "Find the temperature rise. Expansion depends on the temperature difference."
+        },
+        {
+          "n": 3,
+          "display": "β ≈ 3α",
+          "tag": "Find the volume coefficient",
+          "reason": "Using the linear coefficient alone would predict only one third of the volume change.",
+          "narration": "Find the volume coefficient. An isotropic solid expands along three perpendicular directions."
+        },
+        {
+          "n": 4,
+          "display": "β ≈ 3 × (2 × 10^{−5}) °C^{−1}",
+          "tag": "Substitute the coefficient",
+          "reason": "Multiply the linear coefficient by three for this small expansion.",
+          "narration": "Substitute the coefficient."
+        },
+        {
+          "n": 5,
+          "display": "ΔV = V_{1}βΔT",
+          "tag": "Use the volume expansion formula",
+          "reason": "Multiply the original volume by the fractional expansion.",
+          "narration": "Use the volume expansion formula."
+        },
+        {
+          "n": 6,
+          "display": "ΔV ≈ 15.00 × 3 × (2 × 10^{−5}) × 100 cm^{3}",
+          "tag": "Substitute the measurements",
+          "reason": "Use the volume coefficient and the full temperature rise.",
+          "narration": "Substitute the measurements."
+        },
+        {
+          "n": 7,
+          "display": "ΔV ≈ 0.09 cm^{3}",
+          "tag": "Evaluate the increase",
+          "reason": "The next step turns the change into the final volume.",
+          "narration": "Evaluate the increase. This is the volume added by heating."
+        },
+        {
+          "n": 8,
+          "display": "V_{2} ≈ (15.00 + 0.09) cm^{3}",
+          "tag": "Add the increase",
+          "reason": "Heating makes the piece larger.",
+          "narration": "Add the increase."
+        },
+        {
+          "n": 9,
+          "display": "V_{2} ≈ 15.09 cm^{3}",
+          "tag": "Calculate the new volume",
+          "reason": "The result uses the small-expansion approximation.",
+          "narration": "Calculate the new volume. Add the small increase to the original volume."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 15.09 cm^{3} (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2018-025",
+      "questionId": "phys-jamb-2018-025",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "V_{R} = 20 V, V_{L} = 40 V",
+          "tag": "Read the circuit values",
+          "reason": "The resistor, inductor and capacitor share the same current in series.",
+          "narration": "Read the circuit values."
+        },
+        {
+          "n": 2,
+          "display": "X_{L} = X_{C}",
+          "tag": "Use resonance",
+          "reason": "The inductor and capacitor oppose changes in current equally at resonance.",
+          "narration": "Use resonance."
+        },
+        {
+          "n": 3,
+          "display": "V_{L} = IX_{L}, V_{C} = IX_{C}",
+          "tag": "Compare voltage magnitudes",
+          "reason": "Multiplying equal reactances by the same current gives equal voltages.",
+          "narration": "Compare voltage magnitudes."
+        },
+        {
+          "n": 4,
+          "display": "V_{C} = V_{L} = 40 V",
+          "tag": "Substitute the inductor voltage",
+          "reason": "The capacitor has the same voltage magnitude as the inductor.",
+          "narration": "Substitute the inductor voltage."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is 40 V (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "V_{R} = 20 V, V_{L} = 40 V",
+          "tag": "Read the circuit values",
+          "reason": "The resistor, inductor and capacitor share the same current in series.",
+          "narration": "Read the circuit values."
+        },
+        {
+          "n": 2,
+          "display": "X_{L} = X_{C}",
+          "tag": "Use resonance",
+          "reason": "Their voltage phasors point in opposite directions even though their magnitudes match.",
+          "narration": "Use resonance. The inductor and capacitor oppose changes in current equally at resonance."
+        },
+        {
+          "n": 3,
+          "display": "V_{L} = IX_{L}, V_{C} = IX_{C}",
+          "tag": "Compare voltage magnitudes",
+          "reason": "The resistor voltage is a distraction because it does not set the capacitor voltage.",
+          "narration": "Compare voltage magnitudes. Multiplying equal reactances by the same current gives equal voltages."
+        },
+        {
+          "n": 4,
+          "display": "V_{C} = V_{L} = 40 V",
+          "tag": "Substitute the inductor voltage",
+          "reason": "Its voltage still oscillates with a different phase.",
+          "narration": "Substitute the inductor voltage. The capacitor has the same voltage magnitude as the inductor."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is 40 V (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-phys-jamb-2018-040",
+      "questionId": "phys-jamb-2018-040",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Parallel: 2 μF, 2 μF, 2 μF",
+          "tag": "Read the circuit branches",
+          "reason": "These three capacitors share the same two rails.",
+          "narration": "Read the circuit branches."
+        },
+        {
+          "n": 2,
+          "display": "C_{p} = (2 + 2 + 2) μF",
+          "tag": "Add the parallel capacitances",
+          "reason": "Each holds additional charge at the same voltage, so capacitances add.",
+          "narration": "Add the parallel capacitances."
+        },
+        {
+          "n": 3,
+          "display": "C_{p} = 6 μF",
+          "tag": "Evaluate the parallel group",
+          "reason": "Replace the three branches with a single six-microfarad capacitor.",
+          "narration": "Evaluate the parallel group."
+        },
+        {
+          "n": 4,
+          "display": "A → 2 μF → 6 μF → 3 μF → B",
+          "tag": "Identify the series groups",
+          "reason": "The replacement now sits between the terminal capacitors in series.",
+          "narration": "Identify the series groups."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{1}{C_{AB}} = \\frac{1}{C_{A}} + \\frac{1}{C_{p}} + \\frac{1}{C_{B}}",
+          "tag": "Use the series formula",
+          "reason": "The same charge appears on each series capacitor while their voltages add.",
+          "narration": "Use the series formula."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{1}{C_{AB}} = \\left(\\frac{1}{2} + \\frac{1}{6} + \\frac{1}{3}\\right) μF^{−1}",
+          "tag": "Substitute the three capacitances",
+          "reason": "Add the reciprocals because the capacitors are in series.",
+          "narration": "Substitute the three capacitances."
+        },
+        {
+          "n": 7,
+          "display": "\\frac{1}{C_{AB}} = 1 μF^{−1}",
+          "tag": "Evaluate the reciprocal sum",
+          "reason": "With a common denominator of six, the numerators add to six.",
+          "narration": "Evaluate the reciprocal sum."
+        },
+        {
+          "n": 8,
+          "display": "C_{AB} = 1 μF",
+          "tag": "Invert the reciprocal",
+          "reason": "Take the reciprocal to return to capacitance.",
+          "narration": "Invert the reciprocal."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 1 μF (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Parallel: 2 μF, 2 μF, 2 μF",
+          "tag": "Read the circuit branches",
+          "reason": "These three capacitors share the same two rails.",
+          "narration": "Read the circuit branches."
+        },
+        {
+          "n": 2,
+          "display": "C_{p} = (2 + 2 + 2) μF",
+          "tag": "Add the parallel capacitances",
+          "reason": "Each holds additional charge at the same voltage, so capacitances add.",
+          "narration": "Add the parallel capacitances."
+        },
+        {
+          "n": 3,
+          "display": "C_{p} = 6 μF",
+          "tag": "Evaluate the parallel group",
+          "reason": "Combining them first leaves one path from A to B.",
+          "narration": "Evaluate the parallel group. Replace the three branches with a single six-microfarad capacitor."
+        },
+        {
+          "n": 4,
+          "display": "A → 2 μF → 6 μF → 3 μF → B",
+          "tag": "Identify the series groups",
+          "reason": "Applying the parallel rule to all five capacitors ignores how the terminals connect.",
+          "narration": "Identify the series groups. The replacement now sits between the terminal capacitors in series."
+        },
+        {
+          "n": 5,
+          "display": "\\frac{1}{C_{AB}} = \\frac{1}{C_{A}} + \\frac{1}{C_{p}} + \\frac{1}{C_{B}}",
+          "tag": "Use the series formula",
+          "reason": "The same charge appears on each series capacitor while their voltages add.",
+          "narration": "Use the series formula."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{1}{C_{AB}} = \\left(\\frac{1}{2} + \\frac{1}{6} + \\frac{1}{3}\\right) μF^{−1}",
+          "tag": "Substitute the three capacitances",
+          "reason": "Add the reciprocals because the capacitors are in series.",
+          "narration": "Substitute the three capacitances."
+        },
+        {
+          "n": 7,
+          "display": "\\frac{1}{C_{AB}} = 1 μF^{−1}",
+          "tag": "Evaluate the reciprocal sum",
+          "reason": "The resulting quantity still has inverse capacitance units.",
+          "narration": "Evaluate the reciprocal sum. With a common denominator of six, the numerators add to six."
+        },
+        {
+          "n": 8,
+          "display": "C_{AB} = 1 μF",
+          "tag": "Invert the reciprocal",
+          "reason": "The answer is smaller than the smallest capacitor in the series path.",
+          "narration": "Invert the reciprocal. Take the reciprocal to return to capacitance."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is 1 μF (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
         }
       ]
     }

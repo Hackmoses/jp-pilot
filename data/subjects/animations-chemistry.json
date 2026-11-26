@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 16,
+  "count": 33,
   "animations": [
     {
       "id": "anim-chem-api-0007",
@@ -983,6 +983,2077 @@
           "display": "N = −3",
           "tag": "answer",
           "narration": "Nitrogen has oxidation state −3 in NH₃."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2011-002",
+      "questionId": "chem-jamb-2011-002",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = 2 g, V = 100 cm^{3}",
+          "tag": "List what is given",
+          "reason": "We need both the solute mass and the total solution volume.",
+          "narration": "List what is given."
+        },
+        {
+          "n": 2,
+          "display": "M = (23 + 16 + 1) g/mol",
+          "tag": "Add the atomic masses",
+          "reason": "NaOH has one atom of each element.",
+          "narration": "Add the atomic masses."
+        },
+        {
+          "n": 3,
+          "display": "M = 40 g/mol",
+          "tag": "Find the molar mass",
+          "reason": "Add the three mass contributions.",
+          "narration": "Find the molar mass."
+        },
+        {
+          "n": 4,
+          "display": "n = \\frac{2 g}{40 g/mol}",
+          "tag": "Convert the mass to moles",
+          "reason": "Divide the sample mass by the mass per mole.",
+          "narration": "Convert the mass to moles."
+        },
+        {
+          "n": 5,
+          "display": "n = 0.050 mol",
+          "tag": "Evaluate the mole calculation",
+          "reason": "Divide two by forty.",
+          "narration": "Evaluate the mole calculation."
+        },
+        {
+          "n": 6,
+          "display": "V = \\frac{100}{1000} dm^{3}",
+          "tag": "Convert the volume",
+          "reason": "One cubic decimetre is a thousand cubic centimetres.",
+          "narration": "Convert the volume."
+        },
+        {
+          "n": 7,
+          "display": "V = 0.100 dm^{3}",
+          "tag": "Evaluate the volume",
+          "reason": "Divide one hundred by one thousand.",
+          "narration": "Evaluate the volume."
+        },
+        {
+          "n": 8,
+          "display": "c = \\frac{n}{V}",
+          "tag": "Use the concentration formula",
+          "reason": "Concentration tells us how many moles are in one cubic decimetre.",
+          "narration": "Use the concentration formula."
+        },
+        {
+          "n": 9,
+          "display": "c = \\frac{0.050 mol}{0.100 dm^{3}}",
+          "tag": "Substitute the values",
+          "reason": "Use the converted volume to get the requested unit.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 10,
+          "display": "c = 0.50 mol dm^{−3}",
+          "tag": "Calculate concentration",
+          "reason": "Divide the amount by the volume.",
+          "narration": "Calculate concentration."
+        },
+        {
+          "n": 11,
+          "display": "So the answer is 0.50 mol dm^{−3} (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 2 g, V = 100 cm^{3}",
+          "tag": "List what is given",
+          "reason": "We need both the solute mass and the total solution volume.",
+          "narration": "List what is given."
+        },
+        {
+          "n": 2,
+          "display": "M = (23 + 16 + 1) g/mol",
+          "tag": "Add the atomic masses",
+          "reason": "Formula subscripts tell you how many times to count each atomic mass.",
+          "narration": "Add the atomic masses. NaOH has one atom of each element."
+        },
+        {
+          "n": 3,
+          "display": "M = 40 g/mol",
+          "tag": "Find the molar mass",
+          "reason": "One mole of sodium hydroxide weighs forty grams.",
+          "narration": "Find the molar mass. Add the three mass contributions."
+        },
+        {
+          "n": 4,
+          "display": "n = \\frac{2 g}{40 g/mol}",
+          "tag": "Convert the mass to moles",
+          "reason": "Moles count a fixed number of particles, and molar mass converts grams into that count.",
+          "narration": "Convert the mass to moles. Divide the sample mass by the mass per mole."
+        },
+        {
+          "n": 5,
+          "display": "n = 0.050 mol",
+          "tag": "Evaluate the mole calculation",
+          "reason": "The gram units cancel.",
+          "narration": "Evaluate the mole calculation. Divide two by forty."
+        },
+        {
+          "n": 6,
+          "display": "V = \\frac{100}{1000} dm^{3}",
+          "tag": "Convert the volume",
+          "reason": "Using cubic centimetres directly would make the concentration a thousand times too small.",
+          "narration": "Convert the volume. One cubic decimetre is a thousand cubic centimetres."
+        },
+        {
+          "n": 7,
+          "display": "V = 0.100 dm^{3}",
+          "tag": "Evaluate the volume",
+          "reason": "This is one tenth of a cubic decimetre.",
+          "narration": "Evaluate the volume. Divide one hundred by one thousand."
+        },
+        {
+          "n": 8,
+          "display": "c = \\frac{n}{V}",
+          "tag": "Use the concentration formula",
+          "reason": "Concentration tells us how many moles are in one cubic decimetre.",
+          "narration": "Use the concentration formula."
+        },
+        {
+          "n": 9,
+          "display": "c = \\frac{0.050 mol}{0.100 dm^{3}}",
+          "tag": "Substitute the values",
+          "reason": "Use the converted volume to get the requested unit.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 10,
+          "display": "c = 0.50 mol dm^{−3}",
+          "tag": "Calculate concentration",
+          "reason": "There is half a mole per cubic decimetre at this concentration.",
+          "narration": "Calculate concentration. Divide the amount by the volume."
+        },
+        {
+          "n": 11,
+          "display": "So the answer is 0.50 mol dm^{−3} (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2011-043",
+      "questionId": "chem-jamb-2011-043",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Empirical formula CH_{2}O, vapour density 45",
+          "tag": "Read the givens",
+          "reason": "The empirical formula gives the smallest whole-number ratio.",
+          "narration": "Read the givens."
+        },
+        {
+          "n": 2,
+          "display": "M_{unit} = 12 + 2 × 1 + 16",
+          "tag": "Write the unit mass",
+          "reason": "Count one carbon, two hydrogens and one oxygen.",
+          "narration": "Write the unit mass."
+        },
+        {
+          "n": 3,
+          "display": "M_{unit} = 30",
+          "tag": "Add the masses",
+          "reason": "Add the relative atomic masses in one unit.",
+          "narration": "Add the masses."
+        },
+        {
+          "n": 4,
+          "display": "M_{r} = 2 × 45",
+          "tag": "Find the molecular mass",
+          "reason": "Vapour density here compares the gas with hydrogen molecules.",
+          "narration": "Find the molecular mass."
+        },
+        {
+          "n": 5,
+          "display": "M_{r} = 90",
+          "tag": "Evaluate the molecular mass",
+          "reason": "Double the given vapour density.",
+          "narration": "Evaluate the molecular mass."
+        },
+        {
+          "n": 6,
+          "display": "k = \\frac{90}{30}",
+          "tag": "Find the multiplier",
+          "reason": "Divide the whole molecule's relative mass by one empirical unit's relative mass.",
+          "narration": "Find the multiplier."
+        },
+        {
+          "n": 7,
+          "display": "k = 3",
+          "tag": "Evaluate the multiplier",
+          "reason": "Three empirical units make one molecule.",
+          "narration": "Evaluate the multiplier."
+        },
+        {
+          "n": 8,
+          "display": "C_{1×3}H_{2×3}O_{1×3}",
+          "tag": "Scale each subscript",
+          "reason": "Multiply each atom count by three.",
+          "narration": "Scale each subscript."
+        },
+        {
+          "n": 9,
+          "display": "C_{3}H_{6}O_{3}",
+          "tag": "Write the molecular formula",
+          "reason": "Read off the new atom counts.",
+          "narration": "Write the molecular formula."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is C_{3}H_{6}O_{3} (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Empirical formula CH_{2}O, vapour density 45",
+          "tag": "Read the givens",
+          "reason": "A molecule can contain several copies of that ratio.",
+          "narration": "Read the givens. The empirical formula gives the smallest whole-number ratio."
+        },
+        {
+          "n": 2,
+          "display": "M_{unit} = 12 + 2 × 1 + 16",
+          "tag": "Write the unit mass",
+          "reason": "Count one carbon, two hydrogens and one oxygen.",
+          "narration": "Write the unit mass."
+        },
+        {
+          "n": 3,
+          "display": "M_{unit} = 30",
+          "tag": "Add the masses",
+          "reason": "Relative masses are numbers on a comparison scale and have no unit.",
+          "narration": "Add the masses. Add the relative atomic masses in one unit."
+        },
+        {
+          "n": 4,
+          "display": "M_{r} = 2 × 45",
+          "tag": "Find the molecular mass",
+          "reason": "Hydrogen gas has relative molecular mass two, so vapour density alone gives only half the relative mass.",
+          "narration": "Find the molecular mass. Vapour density here compares the gas with hydrogen molecules."
+        },
+        {
+          "n": 5,
+          "display": "M_{r} = 90",
+          "tag": "Evaluate the molecular mass",
+          "reason": "The whole molecule is heavier than one empirical unit.",
+          "narration": "Evaluate the molecular mass. Double the given vapour density."
+        },
+        {
+          "n": 6,
+          "display": "k = \\frac{90}{30}",
+          "tag": "Find the multiplier",
+          "reason": "Divide the whole molecule's relative mass by one empirical unit's relative mass.",
+          "narration": "Find the multiplier."
+        },
+        {
+          "n": 7,
+          "display": "k = 3",
+          "tag": "Evaluate the multiplier",
+          "reason": "The same multiplier applies to every element.",
+          "narration": "Evaluate the multiplier. Three empirical units make one molecule."
+        },
+        {
+          "n": 8,
+          "display": "C_{1×3}H_{2×3}O_{1×3}",
+          "tag": "Scale each subscript",
+          "reason": "Carbon and oxygen each have an implied one in the empirical formula.",
+          "narration": "Scale each subscript. Multiply each atom count by three."
+        },
+        {
+          "n": 9,
+          "display": "C_{3}H_{6}O_{3}",
+          "tag": "Write the molecular formula",
+          "reason": "They still reduce to the original one-to-two-to-one ratio.",
+          "narration": "Write the molecular formula. Read off the new atom counts."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is C_{3}H_{6}O_{3} (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2012-003",
+      "questionId": "chem-jamb-2012-003",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m = 6.0 g, M = 24 g/mol",
+          "tag": "List the sample values",
+          "reason": "The mass is given in grams and the molar mass tells us grams per mole.",
+          "narration": "List the sample values."
+        },
+        {
+          "n": 2,
+          "display": "n = \\frac{m}{M}",
+          "tag": "Use molar mass",
+          "reason": "Divide grams by grams per mole to find moles.",
+          "narration": "Use molar mass."
+        },
+        {
+          "n": 3,
+          "display": "n = \\frac{6.0 g}{24 g/mol}",
+          "tag": "Substitute the masses",
+          "reason": "Use the values for the magnesium sample.",
+          "narration": "Substitute the masses."
+        },
+        {
+          "n": 4,
+          "display": "n = 0.250 mol",
+          "tag": "Find the amount",
+          "reason": "Six grams is one quarter of a mole.",
+          "narration": "Find the amount."
+        },
+        {
+          "n": 5,
+          "display": "N = n × N_{A}",
+          "tag": "Use Avogadro's constant",
+          "reason": "Each mole contains Avogadro's number of atoms.",
+          "narration": "Use Avogadro's constant."
+        },
+        {
+          "n": 6,
+          "display": "N = 0.250 × (6.02 × 10^{23})",
+          "tag": "Substitute the amount",
+          "reason": "Multiply atoms per mole by the number of moles.",
+          "narration": "Substitute the amount."
+        },
+        {
+          "n": 7,
+          "display": "N ≈ 1.51 × 10^{23} atoms",
+          "tag": "Count the atoms",
+          "reason": "Round the product to the precision used in the options.",
+          "narration": "Count the atoms."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 1.51 × 10^{23} atoms (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m = 6.0 g, M = 24 g/mol",
+          "tag": "List the sample values",
+          "reason": "The mass is given in grams and the molar mass tells us grams per mole.",
+          "narration": "List the sample values."
+        },
+        {
+          "n": 2,
+          "display": "n = \\frac{m}{M}",
+          "tag": "Use molar mass",
+          "reason": "Divide grams by grams per mole to find moles.",
+          "narration": "Use molar mass."
+        },
+        {
+          "n": 3,
+          "display": "n = \\frac{6.0 g}{24 g/mol}",
+          "tag": "Substitute the masses",
+          "reason": "Use the values for the magnesium sample.",
+          "narration": "Substitute the masses."
+        },
+        {
+          "n": 4,
+          "display": "n = 0.250 mol",
+          "tag": "Find the amount",
+          "reason": "This amount is the same fraction of a mole's worth of atoms.",
+          "narration": "Find the amount. Six grams is one quarter of a mole."
+        },
+        {
+          "n": 5,
+          "display": "N = n × N_{A}",
+          "tag": "Use Avogadro's constant",
+          "reason": "Stopping at a quarter mole gives an amount in moles, while the question asks for individual atoms.",
+          "narration": "Use Avogadro's constant. Each mole contains Avogadro's number of atoms."
+        },
+        {
+          "n": 6,
+          "display": "N = 0.250 × (6.02 × 10^{23})",
+          "tag": "Substitute the amount",
+          "reason": "Multiply atoms per mole by the number of moles.",
+          "narration": "Substitute the amount."
+        },
+        {
+          "n": 7,
+          "display": "N ≈ 1.51 × 10^{23} atoms",
+          "tag": "Count the atoms",
+          "reason": "The unrounded coefficient is 1.505.",
+          "narration": "Count the atoms. Round the product to the precision used in the options."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 1.51 × 10^{23} atoms (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2012-006",
+      "questionId": "chem-jamb-2012-006",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "H_{2}: 1000 cm^{3}, O_{2}: 300 cm^{3}",
+          "tag": "Read the volumes",
+          "reason": "The volumes are compared at the same temperature and pressure.",
+          "narration": "Read the volumes."
+        },
+        {
+          "n": 2,
+          "display": "2H_{2} + O_{2} → 2H_{2}O",
+          "tag": "Use the balanced equation",
+          "reason": "Two volumes of hydrogen react with one volume of oxygen.",
+          "narration": "Use the balanced equation."
+        },
+        {
+          "n": 3,
+          "display": "V_{used} = 2 × 300 cm^{3}",
+          "tag": "Find the hydrogen used",
+          "reason": "Use twice the oxygen volume because its coefficient is half hydrogen's.",
+          "narration": "Find the hydrogen used."
+        },
+        {
+          "n": 4,
+          "display": "V_{used} = 600 cm^{3}",
+          "tag": "Calculate the volume used",
+          "reason": "There is enough hydrogen for all the oxygen to react.",
+          "narration": "Calculate the volume used."
+        },
+        {
+          "n": 5,
+          "display": "V_{left} = (1000 − 600) cm^{3}",
+          "tag": "Find the surplus",
+          "reason": "Subtract the hydrogen that reacts from the hydrogen you started with.",
+          "narration": "Find the surplus."
+        },
+        {
+          "n": 6,
+          "display": "V_{left} = 400 cm^{3}",
+          "tag": "Calculate the remainder",
+          "reason": "The unreacted hydrogen is the difference.",
+          "narration": "Calculate the remainder."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 400 cm^{3} (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "H_{2}: 1000 cm^{3}, O_{2}: 300 cm^{3}",
+          "tag": "Read the volumes",
+          "reason": "The volumes are compared at the same temperature and pressure.",
+          "narration": "Read the volumes."
+        },
+        {
+          "n": 2,
+          "display": "2H_{2} + O_{2} → 2H_{2}O",
+          "tag": "Use the balanced equation",
+          "reason": "Equal volumes of gases at the same temperature and pressure contain equal numbers of molecules.",
+          "narration": "Use the balanced equation. Two volumes of hydrogen react with one volume of oxygen."
+        },
+        {
+          "n": 3,
+          "display": "V_{used} = 2 × 300 cm^{3}",
+          "tag": "Find the hydrogen used",
+          "reason": "Use twice the oxygen volume because its coefficient is half hydrogen's.",
+          "narration": "Find the hydrogen used."
+        },
+        {
+          "n": 4,
+          "display": "V_{used} = 600 cm^{3}",
+          "tag": "Calculate the volume used",
+          "reason": "Compare six hundred with the starting thousand before treating oxygen as the limiting gas.",
+          "narration": "Calculate the volume used. There is enough hydrogen for all the oxygen to react."
+        },
+        {
+          "n": 5,
+          "display": "V_{left} = (1000 − 600) cm^{3}",
+          "tag": "Find the surplus",
+          "reason": "Six hundred is the volume consumed, a common mix-up with the volume left.",
+          "narration": "Find the surplus. Subtract the hydrogen that reacts from the hydrogen you started with."
+        },
+        {
+          "n": 6,
+          "display": "V_{left} = 400 cm^{3}",
+          "tag": "Calculate the remainder",
+          "reason": "The answer describes only the leftover hydrogen gas.",
+          "narration": "Calculate the remainder. The unreacted hydrogen is the difference."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 400 cm^{3} (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2012-023",
+      "questionId": "chem-jamb-2012-023",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "NaBH_{4}: 1 Na, 1 B, 4 H",
+          "tag": "Identify the atoms",
+          "reason": "The formula supplies the count of each kind of atom.",
+          "narration": "Identify the atoms."
+        },
+        {
+          "n": 2,
+          "display": "Na = +1, H = −1 here",
+          "tag": "Assign known numbers",
+          "reason": "These hydrogens are hydrides, and sodium contributes plus one.",
+          "narration": "Assign known numbers."
+        },
+        {
+          "n": 3,
+          "display": "(+1) + x + 4(−1) = 0",
+          "tag": "Balance the compound",
+          "reason": "Oxidation numbers add to zero in a neutral formula unit.",
+          "narration": "Balance the compound."
+        },
+        {
+          "n": 4,
+          "display": "x − 3 = 0",
+          "tag": "Combine known terms",
+          "reason": "The known contributions add to minus three.",
+          "narration": "Combine known terms."
+        },
+        {
+          "n": 5,
+          "display": "x = +3",
+          "tag": "Solve for boron",
+          "reason": "Add three to both sides.",
+          "narration": "Solve for boron."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is +3 (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "NaBH_{4}: 1 Na, 1 B, 4 H",
+          "tag": "Identify the atoms",
+          "reason": "The formula supplies the count of each kind of atom.",
+          "narration": "Identify the atoms."
+        },
+        {
+          "n": 2,
+          "display": "Na = +1, H = −1 here",
+          "tag": "Assign known numbers",
+          "reason": "Hydrogen is often plus one, but in this borohydride the bonded hydrogen is assigned minus one.",
+          "narration": "Assign known numbers. These hydrogens are hydrides, and sodium contributes plus one."
+        },
+        {
+          "n": 3,
+          "display": "(+1) + x + 4(−1) = 0",
+          "tag": "Balance the compound",
+          "reason": "Oxidation numbers add to zero in a neutral formula unit.",
+          "narration": "Balance the compound."
+        },
+        {
+          "n": 4,
+          "display": "x − 3 = 0",
+          "tag": "Combine known terms",
+          "reason": "The one boron atom must offset that total.",
+          "narration": "Combine known terms. The known contributions add to minus three."
+        },
+        {
+          "n": 5,
+          "display": "x = +3",
+          "tag": "Solve for boron",
+          "reason": "An oxidation number has no unit.",
+          "narration": "Solve for boron. Add three to both sides."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is +3 (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2012-025",
+      "questionId": "chem-jamb-2012-025",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Q = 360 C, F = 96500 C/mol",
+          "tag": "List the charge data",
+          "reason": "The Faraday constant is charge per mole of electrons.",
+          "narration": "List the charge data."
+        },
+        {
+          "n": 2,
+          "display": "n_{e} = \\frac{Q}{F}",
+          "tag": "Find electron amount",
+          "reason": "Dividing charge by charge per mole gives moles of electrons.",
+          "narration": "Find electron amount."
+        },
+        {
+          "n": 3,
+          "display": "n_{e} = \\frac{360}{96500} mol",
+          "tag": "Substitute the charge",
+          "reason": "Use the given charge and Faraday constant.",
+          "narration": "Substitute the charge."
+        },
+        {
+          "n": 4,
+          "display": "n_{e} ≈ 3.73 × 10^{−3} mol",
+          "tag": "Evaluate the electron amount",
+          "reason": "Keep the unrounded quotient for the next calculation.",
+          "narration": "Evaluate the electron amount."
+        },
+        {
+          "n": 5,
+          "display": "Cu^{2+} + 2e^{−} → Cu",
+          "tag": "Count electrons per ion",
+          "reason": "Each copper ion gains two electrons to become neutral.",
+          "narration": "Count electrons per ion."
+        },
+        {
+          "n": 6,
+          "display": "n_{Cu} = \\frac{360}{96500 × 2} mol",
+          "tag": "Write the copper calculation",
+          "reason": "Divide the exact electron amount by two.",
+          "narration": "Write the copper calculation."
+        },
+        {
+          "n": 7,
+          "display": "n_{Cu} ≈ 1.87 × 10^{−3} mol",
+          "tag": "Evaluate the copper amount",
+          "reason": "Round only after dividing by two.",
+          "narration": "Evaluate the copper amount."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 1.87 × 10^{−3} mol (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Q = 360 C, F = 96500 C/mol",
+          "tag": "List the charge data",
+          "reason": "The Faraday constant is charge per mole of electrons.",
+          "narration": "List the charge data."
+        },
+        {
+          "n": 2,
+          "display": "n_{e} = \\frac{Q}{F}",
+          "tag": "Find electron amount",
+          "reason": "Dividing charge by charge per mole gives moles of electrons.",
+          "narration": "Find electron amount."
+        },
+        {
+          "n": 3,
+          "display": "n_{e} = \\frac{360}{96500} mol",
+          "tag": "Substitute the charge",
+          "reason": "Use the given charge and Faraday constant.",
+          "narration": "Substitute the charge."
+        },
+        {
+          "n": 4,
+          "display": "n_{e} ≈ 3.73 × 10^{−3} mol",
+          "tag": "Evaluate the electron amount",
+          "reason": "This counts electrons transferred, a different quantity from the copper deposited.",
+          "narration": "Evaluate the electron amount. Keep the unrounded quotient for the next calculation."
+        },
+        {
+          "n": 5,
+          "display": "Cu^{2+} + 2e^{−} → Cu",
+          "tag": "Count electrons per ion",
+          "reason": "Using one electron per ion would double the amount of copper.",
+          "narration": "Count electrons per ion. Each copper ion gains two electrons to become neutral."
+        },
+        {
+          "n": 6,
+          "display": "n_{Cu} = \\frac{360}{96500 × 2} mol",
+          "tag": "Write the copper calculation",
+          "reason": "Divide the exact electron amount by two.",
+          "narration": "Write the copper calculation."
+        },
+        {
+          "n": 7,
+          "display": "n_{Cu} ≈ 1.87 × 10^{−3} mol",
+          "tag": "Evaluate the copper amount",
+          "reason": "The result is in moles of copper.",
+          "narration": "Evaluate the copper amount. Round only after dividing by two."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 1.87 × 10^{−3} mol (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2014-003",
+      "questionId": "chem-jamb-2014-003",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "SO_{2}",
+          "tag": "Write the oxide formula",
+          "reason": "Sulphur dioxide contains one sulphur and two oxygen atoms.",
+          "narration": "Write the oxide formula."
+        },
+        {
+          "n": 2,
+          "display": "M_{O} = 2 × 16 g/mol",
+          "tag": "Account for the oxygen",
+          "reason": "The two oxygen atoms both contribute to the molar mass.",
+          "narration": "Account for the oxygen."
+        },
+        {
+          "n": 3,
+          "display": "M = (32 + 2 × 16) g/mol",
+          "tag": "Add the mass contributions",
+          "reason": "Include sulphur and both oxygen atoms.",
+          "narration": "Add the mass contributions."
+        },
+        {
+          "n": 4,
+          "display": "M = 64 g/mol",
+          "tag": "Calculate the total mass",
+          "reason": "The mole of compound has a total mass of sixty-four grams.",
+          "narration": "Calculate the total mass."
+        },
+        {
+          "n": 5,
+          "display": "% S = \\frac{M_{S}}{M} × 100%",
+          "tag": "Use the mass fraction",
+          "reason": "Compare the sulphur contribution with the mass of the entire compound.",
+          "narration": "Use the mass fraction."
+        },
+        {
+          "n": 6,
+          "display": "% S = \\frac{32}{64} × 100%",
+          "tag": "Substitute the masses",
+          "reason": "One mole of the oxide contains thirty-two grams of sulphur.",
+          "narration": "Substitute the masses."
+        },
+        {
+          "n": 7,
+          "display": "% S = 50%",
+          "tag": "Calculate the percentage",
+          "reason": "Half of the total mass is sulphur.",
+          "narration": "Calculate the percentage."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 50% (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "SO_{2}",
+          "tag": "Write the oxide formula",
+          "reason": "Sulphur dioxide contains one sulphur and two oxygen atoms.",
+          "narration": "Write the oxide formula."
+        },
+        {
+          "n": 2,
+          "display": "M_{O} = 2 × 16 g/mol",
+          "tag": "Account for the oxygen",
+          "reason": "The two oxygen atoms both contribute to the molar mass.",
+          "narration": "Account for the oxygen."
+        },
+        {
+          "n": 3,
+          "display": "M = (32 + 2 × 16) g/mol",
+          "tag": "Add the mass contributions",
+          "reason": "Counting atoms alone would miss that a sulphur atom is about twice as heavy as an oxygen atom.",
+          "narration": "Add the mass contributions. Include sulphur and both oxygen atoms."
+        },
+        {
+          "n": 4,
+          "display": "M = 64 g/mol",
+          "tag": "Calculate the total mass",
+          "reason": "Half that mass comes from the one sulphur atom per formula unit.",
+          "narration": "Calculate the total mass. The mole of compound has a total mass of sixty-four grams."
+        },
+        {
+          "n": 5,
+          "display": "% S = \\frac{M_{S}}{M} × 100%",
+          "tag": "Use the mass fraction",
+          "reason": "Compare the sulphur contribution with the mass of the entire compound.",
+          "narration": "Use the mass fraction."
+        },
+        {
+          "n": 6,
+          "display": "% S = \\frac{32}{64} × 100%",
+          "tag": "Substitute the masses",
+          "reason": "One mole of the oxide contains thirty-two grams of sulphur.",
+          "narration": "Substitute the masses."
+        },
+        {
+          "n": 7,
+          "display": "% S = 50%",
+          "tag": "Calculate the percentage",
+          "reason": "The percentage is by mass.",
+          "narration": "Calculate the percentage. Half of the total mass is sulphur."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 50% (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2014-005",
+      "questionId": "chem-jamb-2014-005",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "P_{1} = 700 mmHg, V_{1} = 200 cm^{3}",
+          "tag": "List the initial state",
+          "reason": "These measurements describe the gas before it changes.",
+          "narration": "List the initial state."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = (25 + 273) K",
+          "tag": "Convert the first temperature",
+          "reason": "Gas laws use absolute temperature.",
+          "narration": "Convert the first temperature."
+        },
+        {
+          "n": 3,
+          "display": "T_{1} = 298 K",
+          "tag": "Find the first Kelvin value",
+          "reason": "Add the school approximation of 273 to twenty-five.",
+          "narration": "Find the first Kelvin value."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = (75 + 273) K",
+          "tag": "Convert the second temperature",
+          "reason": "Switch the final temperature to the same absolute scale.",
+          "narration": "Convert the second temperature."
+        },
+        {
+          "n": 5,
+          "display": "T_{2} = 348 K",
+          "tag": "Find the second Kelvin value",
+          "reason": "Add 273 to seventy-five.",
+          "narration": "Find the second Kelvin value."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{P_{1}V_{1}}{T_{1}} = \\frac{P_{2}V_{2}}{T_{2}}",
+          "tag": "Use the combined gas law",
+          "reason": "The pressure-volume product per kelvin stays fixed for this sample.",
+          "narration": "Use the combined gas law."
+        },
+        {
+          "n": 7,
+          "display": "P_{2} = P_{1} × \\frac{V_{1}}{V_{2}} × \\frac{T_{2}}{T_{1}}",
+          "tag": "Isolate the pressure",
+          "reason": "The larger volume lowers pressure while the higher temperature raises it.",
+          "narration": "Isolate the pressure."
+        },
+        {
+          "n": 8,
+          "display": "P_{2} = 700 × \\frac{200}{350} × \\frac{348}{298} mmHg",
+          "tag": "Substitute the values",
+          "reason": "Both volume units cancel and both temperature units cancel.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 9,
+          "display": "P_{2} ≈ 467.11 mmHg",
+          "tag": "Calculate the pressure",
+          "reason": "Evaluate the product and round to two decimal places.",
+          "narration": "Calculate the pressure."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 467.11 mmHg (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "P_{1} = 700 mmHg, V_{1} = 200 cm^{3}",
+          "tag": "List the initial state",
+          "reason": "These measurements describe the gas before it changes.",
+          "narration": "List the initial state."
+        },
+        {
+          "n": 2,
+          "display": "T_{1} = (25 + 273) K",
+          "tag": "Convert the first temperature",
+          "reason": "Using degrees Celsius in a ratio gives the wrong thermal scaling.",
+          "narration": "Convert the first temperature. Gas laws use absolute temperature."
+        },
+        {
+          "n": 3,
+          "display": "T_{1} = 298 K",
+          "tag": "Find the first Kelvin value",
+          "reason": "Keep the same conversion convention for both temperatures.",
+          "narration": "Find the first Kelvin value. Add the school approximation of 273 to twenty-five."
+        },
+        {
+          "n": 4,
+          "display": "T_{2} = (75 + 273) K",
+          "tag": "Convert the second temperature",
+          "reason": "Switch the final temperature to the same absolute scale.",
+          "narration": "Convert the second temperature."
+        },
+        {
+          "n": 5,
+          "display": "T_{2} = 348 K",
+          "tag": "Find the second Kelvin value",
+          "reason": "Preserve both Kelvin readings for the ratio.",
+          "narration": "Find the second Kelvin value. Add 273 to seventy-five."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{P_{1}V_{1}}{T_{1}} = \\frac{P_{2}V_{2}}{T_{2}}",
+          "tag": "Use the combined gas law",
+          "reason": "The pressure-volume product per kelvin stays fixed for this sample.",
+          "narration": "Use the combined gas law."
+        },
+        {
+          "n": 7,
+          "display": "P_{2} = P_{1} × \\frac{V_{1}}{V_{2}} × \\frac{T_{2}}{T_{1}}",
+          "tag": "Isolate the pressure",
+          "reason": "The larger volume lowers pressure while the higher temperature raises it.",
+          "narration": "Isolate the pressure."
+        },
+        {
+          "n": 8,
+          "display": "P_{2} = 700 × \\frac{200}{350} × \\frac{348}{298} mmHg",
+          "tag": "Substitute the values",
+          "reason": "Both volume units cancel and both temperature units cancel.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 9,
+          "display": "P_{2} ≈ 467.11 mmHg",
+          "tag": "Calculate the pressure",
+          "reason": "The net pressure falls because the volume grows by the larger factor.",
+          "narration": "Calculate the pressure. Evaluate the product and round to two decimal places."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 467.11 mmHg (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2014-009",
+      "questionId": "chem-jamb-2014-009",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "A = 60, Z = 27",
+          "tag": "Read the isotope",
+          "reason": "The mass number counts nucleons and the atomic number counts protons.",
+          "narration": "Read the isotope."
+        },
+        {
+          "n": 2,
+          "display": "p = Z = 27",
+          "tag": "Count protons",
+          "reason": "Atomic number identifies the element by its proton count.",
+          "narration": "Count protons."
+        },
+        {
+          "n": 3,
+          "display": "n = A − Z",
+          "tag": "Find the neutron formula",
+          "reason": "Neutrons are the nucleons left after the protons are counted.",
+          "narration": "Find the neutron formula."
+        },
+        {
+          "n": 4,
+          "display": "n = 60 − 27",
+          "tag": "Substitute the two numbers",
+          "reason": "Use the isotope's total nucleons and proton count.",
+          "narration": "Substitute the two numbers."
+        },
+        {
+          "n": 5,
+          "display": "n = 33",
+          "tag": "Count neutrons",
+          "reason": "Thirty-three neutrons and twenty-seven protons make sixty nucleons.",
+          "narration": "Count neutrons."
+        },
+        {
+          "n": 6,
+          "display": "e = p = 27",
+          "tag": "Count electrons",
+          "reason": "A neutral atom has equal counts of positively charged protons and negatively charged electrons.",
+          "narration": "Count electrons."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 27 protons, 33 neutrons and 27 electrons (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "A = 60, Z = 27",
+          "tag": "Read the isotope",
+          "reason": "The mass number counts nucleons and the atomic number counts protons.",
+          "narration": "Read the isotope."
+        },
+        {
+          "n": 2,
+          "display": "p = Z = 27",
+          "tag": "Count protons",
+          "reason": "Atomic number identifies the element by its proton count.",
+          "narration": "Count protons."
+        },
+        {
+          "n": 3,
+          "display": "n = A − Z",
+          "tag": "Find the neutron formula",
+          "reason": "Using sixty as the neutron count would count the protons twice.",
+          "narration": "Find the neutron formula. Neutrons are the nucleons left after the protons are counted."
+        },
+        {
+          "n": 4,
+          "display": "n = 60 − 27",
+          "tag": "Substitute the two numbers",
+          "reason": "Use the isotope's total nucleons and proton count.",
+          "narration": "Substitute the two numbers."
+        },
+        {
+          "n": 5,
+          "display": "n = 33",
+          "tag": "Count neutrons",
+          "reason": "Electrons are outside the nucleus and do not count as nucleons.",
+          "narration": "Count neutrons. Thirty-three neutrons and twenty-seven protons make sixty nucleons."
+        },
+        {
+          "n": 6,
+          "display": "e = p = 27",
+          "tag": "Count electrons",
+          "reason": "A neutral atom has equal counts of positively charged protons and negatively charged electrons.",
+          "narration": "Count electrons."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is 27 protons, 33 neutrons and 27 electrons (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2014-022",
+      "questionId": "chem-jamb-2014-022",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Zn + CuSO_{4} → ZnSO_{4} + Cu",
+          "tag": "Compare the reactants and products",
+          "reason": "Zinc goes from a free metal into a compound while copper becomes a free metal.",
+          "narration": "Compare the reactants and products."
+        },
+        {
+          "n": 2,
+          "display": "Zn(s): 0",
+          "tag": "Give zinc its initial number",
+          "reason": "Free elements have oxidation number zero.",
+          "narration": "Give zinc its initial number."
+        },
+        {
+          "n": 3,
+          "display": "x + (−2) = 0",
+          "tag": "Balance zinc sulphate",
+          "reason": "Sulphate has charge minus two and the compound is neutral.",
+          "narration": "Balance zinc sulphate."
+        },
+        {
+          "n": 4,
+          "display": "x = +2",
+          "tag": "Find zinc's final number",
+          "reason": "Zinc must offset sulphate with plus two.",
+          "narration": "Find zinc's final number."
+        },
+        {
+          "n": 5,
+          "display": "Zn → Zn^{2+} + 2e^{−}",
+          "tag": "Identify the reducing agent",
+          "reason": "Zinc donates two electrons to reduce copper ions.",
+          "narration": "Identify the reducing agent."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 0 to +2 (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Zn + CuSO_{4} → ZnSO_{4} + Cu",
+          "tag": "Compare the reactants and products",
+          "reason": "Zinc goes from a free metal into a compound while copper becomes a free metal.",
+          "narration": "Compare the reactants and products."
+        },
+        {
+          "n": 2,
+          "display": "Zn(s): 0",
+          "tag": "Give zinc its initial number",
+          "reason": "This rule applies to the zinc metal and the copper metal in the equation.",
+          "narration": "Give zinc its initial number. Free elements have oxidation number zero."
+        },
+        {
+          "n": 3,
+          "display": "x + (−2) = 0",
+          "tag": "Balance zinc sulphate",
+          "reason": "Sulphate has charge minus two and the compound is neutral.",
+          "narration": "Balance zinc sulphate."
+        },
+        {
+          "n": 4,
+          "display": "x = +2",
+          "tag": "Find zinc's final number",
+          "reason": "Its oxidation number rises because it gives up electrons.",
+          "narration": "Find zinc's final number. Zinc must offset sulphate with plus two."
+        },
+        {
+          "n": 5,
+          "display": "Zn → Zn^{2+} + 2e^{−}",
+          "tag": "Identify the reducing agent",
+          "reason": "The reducing agent itself is oxidised, so follow zinc instead of copper.",
+          "narration": "Identify the reducing agent. Zinc donates two electrons to reduce copper ions."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 0 to +2 (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2014-027",
+      "questionId": "chem-jamb-2014-027",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "ΔG = −899 J/mol, ΔS = 10 J mol^{−1} K^{−1}",
+          "tag": "List the values",
+          "reason": "Keep the sign of the free energy and the units of entropy.",
+          "narration": "List the values."
+        },
+        {
+          "n": 2,
+          "display": "T = (25 + 273) K",
+          "tag": "Convert temperature",
+          "reason": "This energy relation uses the absolute temperature.",
+          "narration": "Convert temperature."
+        },
+        {
+          "n": 3,
+          "display": "T = 298 K",
+          "tag": "Evaluate the temperature",
+          "reason": "Add 273 to the Celsius reading.",
+          "narration": "Evaluate the temperature."
+        },
+        {
+          "n": 4,
+          "display": "ΔG = ΔH − TΔS",
+          "tag": "Use the free energy formula",
+          "reason": "Free energy is enthalpy with the temperature-weighted entropy term subtracted.",
+          "narration": "Use the free energy formula."
+        },
+        {
+          "n": 5,
+          "display": "ΔH = ΔG + TΔS",
+          "tag": "Isolate enthalpy",
+          "reason": "Add the temperature-weighted entropy to both sides.",
+          "narration": "Isolate enthalpy."
+        },
+        {
+          "n": 6,
+          "display": "ΔH = (−899 + 298 × 10) J/mol",
+          "tag": "Substitute the values",
+          "reason": "Keep the negative sign on the given free energy.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 7,
+          "display": "ΔH = (−899 + 2980) J/mol",
+          "tag": "Multiply first",
+          "reason": "Work out the temperature times entropy before adding.",
+          "narration": "Multiply first."
+        },
+        {
+          "n": 8,
+          "display": "ΔH = +2081 J/mol",
+          "tag": "Calculate the sum",
+          "reason": "The positive term is larger than the negative one.",
+          "narration": "Calculate the sum."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is +2081 J mol^{−1} (option A)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "ΔG = −899 J/mol, ΔS = 10 J mol^{−1} K^{−1}",
+          "tag": "List the values",
+          "reason": "Keep the sign of the free energy and the units of entropy.",
+          "narration": "List the values."
+        },
+        {
+          "n": 2,
+          "display": "T = (25 + 273) K",
+          "tag": "Convert temperature",
+          "reason": "Multiplying entropy by twenty-five would incorrectly use Celsius.",
+          "narration": "Convert temperature. This energy relation uses the absolute temperature."
+        },
+        {
+          "n": 3,
+          "display": "T = 298 K",
+          "tag": "Evaluate the temperature",
+          "reason": "When temperature multiplies entropy, kelvin cancels.",
+          "narration": "Evaluate the temperature. Add 273 to the Celsius reading."
+        },
+        {
+          "n": 4,
+          "display": "ΔG = ΔH − TΔS",
+          "tag": "Use the free energy formula",
+          "reason": "Free energy is enthalpy with the temperature-weighted entropy term subtracted.",
+          "narration": "Use the free energy formula."
+        },
+        {
+          "n": 5,
+          "display": "ΔH = ΔG + TΔS",
+          "tag": "Isolate enthalpy",
+          "reason": "Add the temperature-weighted entropy to both sides.",
+          "narration": "Isolate enthalpy."
+        },
+        {
+          "n": 6,
+          "display": "ΔH = (−899 + 298 × 10) J/mol",
+          "tag": "Substitute the values",
+          "reason": "Keep the negative sign on the given free energy.",
+          "narration": "Substitute the values."
+        },
+        {
+          "n": 7,
+          "display": "ΔH = (−899 + 2980) J/mol",
+          "tag": "Multiply first",
+          "reason": "Both terms now have units of energy per mole.",
+          "narration": "Multiply first. Work out the temperature times entropy before adding."
+        },
+        {
+          "n": 8,
+          "display": "ΔH = +2081 J/mol",
+          "tag": "Calculate the sum",
+          "reason": "A positive enthalpy change means heat is absorbed at constant pressure.",
+          "narration": "Calculate the sum. The positive term is larger than the negative one."
+        },
+        {
+          "n": 9,
+          "display": "So the answer is +2081 J mol^{−1} (option A)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2016-001",
+      "questionId": "chem-jamb-2016-001",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Masses 20 and 22, counts 1 and 3",
+          "tag": "Read the isotope ratio",
+          "reason": "The heavier isotope occurs three times as often.",
+          "narration": "Read the isotope ratio."
+        },
+        {
+          "n": 2,
+          "display": "Mean mass = \\frac{total relative mass}{total atoms}",
+          "tag": "Use a weighted mean",
+          "reason": "Give each atom one share of the average.",
+          "narration": "Use a weighted mean."
+        },
+        {
+          "n": 3,
+          "display": "Mean mass = \\frac{1 × 20 + 3 × 22}{1 + 3}",
+          "tag": "Substitute the ratio",
+          "reason": "Model a group of one lighter atom and three heavier atoms.",
+          "narration": "Substitute the ratio."
+        },
+        {
+          "n": 4,
+          "display": "Mean mass = \\frac{86}{4}",
+          "tag": "Simplify the counts and mass",
+          "reason": "The representative group has total relative mass eighty-six across four atoms.",
+          "narration": "Simplify the counts and mass."
+        },
+        {
+          "n": 5,
+          "display": "Mean mass = 21.5",
+          "tag": "Calculate the mean",
+          "reason": "Divide the weighted total by the total number of atoms.",
+          "narration": "Calculate the mean."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 21.5 (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Masses 20 and 22, counts 1 and 3",
+          "tag": "Read the isotope ratio",
+          "reason": "The heavier isotope occurs three times as often.",
+          "narration": "Read the isotope ratio."
+        },
+        {
+          "n": 2,
+          "display": "Mean mass = \\frac{total relative mass}{total atoms}",
+          "tag": "Use a weighted mean",
+          "reason": "Averaging twenty and twenty-two equally would ignore the abundance ratio.",
+          "narration": "Use a weighted mean. Give each atom one share of the average."
+        },
+        {
+          "n": 3,
+          "display": "Mean mass = \\frac{1 × 20 + 3 × 22}{1 + 3}",
+          "tag": "Substitute the ratio",
+          "reason": "Model a group of one lighter atom and three heavier atoms.",
+          "narration": "Substitute the ratio."
+        },
+        {
+          "n": 4,
+          "display": "Mean mass = \\frac{86}{4}",
+          "tag": "Simplify the counts and mass",
+          "reason": "The total mass includes three copies of the heavier isotope.",
+          "narration": "Simplify the counts and mass. The representative group has total relative mass eighty-six across four atoms."
+        },
+        {
+          "n": 5,
+          "display": "Mean mass = 21.5",
+          "tag": "Calculate the mean",
+          "reason": "A relative atomic mass is unitless and is closer to the more common isotope.",
+          "narration": "Calculate the mean. Divide the weighted total by the total number of atoms."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 21.5 (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2016-002",
+      "questionId": "chem-jamb-2016-002",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "O_{2}: 200 cm^{3} in 50 s, CH_{4}: 80 cm^{3}",
+          "tag": "List the diffusion data",
+          "reason": "The experiment uses different volumes for the two gases.",
+          "narration": "List the diffusion data."
+        },
+        {
+          "n": 2,
+          "display": "r_{O} = \\frac{200 cm^{3}}{50 s}",
+          "tag": "Find the oxygen rate",
+          "reason": "A diffusion rate is volume passing per second.",
+          "narration": "Find the oxygen rate."
+        },
+        {
+          "n": 3,
+          "display": "r_{O} = 4 cm^{3}/s",
+          "tag": "Evaluate the oxygen rate",
+          "reason": "Four cubic centimetres of oxygen pass per second.",
+          "narration": "Evaluate the oxygen rate."
+        },
+        {
+          "n": 4,
+          "display": "M_{O₂} = 2 × 16, M_{CH₄} = 12 + 4 × 1",
+          "tag": "Find the gas molar masses",
+          "reason": "Use the atom counts of the gas molecules.",
+          "narration": "Find the gas molar masses."
+        },
+        {
+          "n": 5,
+          "display": "M_{O₂} = 32 g/mol, M_{CH₄} = 16 g/mol",
+          "tag": "Evaluate the molar masses",
+          "reason": "Methane has half the molar mass of oxygen.",
+          "narration": "Evaluate the molar masses."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{r_{CH₄}}{r_{O₂}} = \\sqrt{\\frac{M_{O₂}}{M_{CH₄}}}",
+          "tag": "Use Graham's law",
+          "reason": "The lighter gas diffuses faster by the square root of the reversed mass ratio.",
+          "narration": "Use Graham's law."
+        },
+        {
+          "n": 7,
+          "display": "r_{CH₄} = 4 × \\sqrt{\\frac{32}{16}} cm^{3}/s",
+          "tag": "Substitute the molar masses",
+          "reason": "Multiply the oxygen rate by the speed-up factor.",
+          "narration": "Substitute the molar masses."
+        },
+        {
+          "n": 8,
+          "display": "r_{CH₄} = 4\\sqrt{2} cm^{3}/s",
+          "tag": "Simplify the ratio",
+          "reason": "The oxygen-to-methane mass ratio is two.",
+          "narration": "Simplify the ratio."
+        },
+        {
+          "n": 9,
+          "display": "t = \\frac{80}{4\\sqrt{2}} s",
+          "tag": "Find the methane time",
+          "reason": "Divide the requested methane volume by its own rate.",
+          "narration": "Find the methane time."
+        },
+        {
+          "n": 10,
+          "display": "t ≈ 14 s",
+          "tag": "Calculate the time",
+          "reason": "Round the quotient to the nearest second.",
+          "narration": "Calculate the time."
+        },
+        {
+          "n": 11,
+          "display": "So the answer is 14 s (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "O_{2}: 200 cm^{3} in 50 s, CH_{4}: 80 cm^{3}",
+          "tag": "List the diffusion data",
+          "reason": "The experiment uses different volumes for the two gases.",
+          "narration": "List the diffusion data."
+        },
+        {
+          "n": 2,
+          "display": "r_{O} = \\frac{200 cm^{3}}{50 s}",
+          "tag": "Find the oxygen rate",
+          "reason": "Comparing the two times directly would treat the different volumes as equal.",
+          "narration": "Find the oxygen rate. A diffusion rate is volume passing per second."
+        },
+        {
+          "n": 3,
+          "display": "r_{O} = 4 cm^{3}/s",
+          "tag": "Evaluate the oxygen rate",
+          "reason": "This gives a common per-second basis.",
+          "narration": "Evaluate the oxygen rate. Four cubic centimetres of oxygen pass per second."
+        },
+        {
+          "n": 4,
+          "display": "M_{O₂} = 2 × 16, M_{CH₄} = 12 + 4 × 1",
+          "tag": "Find the gas molar masses",
+          "reason": "Use the atom counts of the gas molecules.",
+          "narration": "Find the gas molar masses."
+        },
+        {
+          "n": 5,
+          "display": "M_{O₂} = 32 g/mol, M_{CH₄} = 16 g/mol",
+          "tag": "Evaluate the molar masses",
+          "reason": "Oxygen gas is a molecule with two oxygen atoms.",
+          "narration": "Evaluate the molar masses. Methane has half the molar mass of oxygen."
+        },
+        {
+          "n": 6,
+          "display": "\\frac{r_{CH₄}}{r_{O₂}} = \\sqrt{\\frac{M_{O₂}}{M_{CH₄}}}",
+          "tag": "Use Graham's law",
+          "reason": "The lighter gas diffuses faster by the square root of the reversed mass ratio.",
+          "narration": "Use Graham's law."
+        },
+        {
+          "n": 7,
+          "display": "r_{CH₄} = 4 × \\sqrt{\\frac{32}{16}} cm^{3}/s",
+          "tag": "Substitute the molar masses",
+          "reason": "Multiply the oxygen rate by the speed-up factor.",
+          "narration": "Substitute the molar masses."
+        },
+        {
+          "n": 8,
+          "display": "r_{CH₄} = 4\\sqrt{2} cm^{3}/s",
+          "tag": "Simplify the ratio",
+          "reason": "Keep the square root until the final calculation for better precision.",
+          "narration": "Simplify the ratio. The oxygen-to-methane mass ratio is two."
+        },
+        {
+          "n": 9,
+          "display": "t = \\frac{80}{4\\sqrt{2}} s",
+          "tag": "Find the methane time",
+          "reason": "Divide the requested methane volume by its own rate.",
+          "narration": "Find the methane time."
+        },
+        {
+          "n": 10,
+          "display": "t ≈ 14 s",
+          "tag": "Calculate the time",
+          "reason": "The smaller sample and faster gas both shorten the time.",
+          "narration": "Calculate the time. Round the quotient to the nearest second."
+        },
+        {
+          "n": 11,
+          "display": "So the answer is 14 s (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2016-009",
+      "questionId": "chem-jamb-2016-009",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "K_{2}Cr_{2}O_{7}: 2 K, 2 Cr, 7 O",
+          "tag": "Count the atoms",
+          "reason": "Every atom contributes to the total oxidation number.",
+          "narration": "Count the atoms."
+        },
+        {
+          "n": 2,
+          "display": "K = +1, O = −2",
+          "tag": "Assign the known values",
+          "reason": "Potassium and oxygen have their usual values in this compound.",
+          "narration": "Assign the known values."
+        },
+        {
+          "n": 3,
+          "display": "2(+1) + 2x + 7(−2) = 0",
+          "tag": "Balance the formula",
+          "reason": "The oxidation numbers must add to zero in a neutral formula unit.",
+          "narration": "Balance the formula."
+        },
+        {
+          "n": 4,
+          "display": "2x − 12 = 0",
+          "tag": "Combine known contributions",
+          "reason": "Potassium and oxygen together contribute minus twelve.",
+          "narration": "Combine known contributions."
+        },
+        {
+          "n": 5,
+          "display": "2x = 12",
+          "tag": "Isolate both chromium atoms",
+          "reason": "Add twelve to both sides.",
+          "narration": "Isolate both chromium atoms."
+        },
+        {
+          "n": 6,
+          "display": "x = +6",
+          "tag": "Solve for one chromium",
+          "reason": "Divide the combined chromium contribution by two.",
+          "narration": "Solve for one chromium."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is +6 (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "K_{2}Cr_{2}O_{7}: 2 K, 2 Cr, 7 O",
+          "tag": "Count the atoms",
+          "reason": "Every atom contributes to the total oxidation number.",
+          "narration": "Count the atoms."
+        },
+        {
+          "n": 2,
+          "display": "K = +1, O = −2",
+          "tag": "Assign the known values",
+          "reason": "Potassium and oxygen have their usual values in this compound.",
+          "narration": "Assign the known values."
+        },
+        {
+          "n": 3,
+          "display": "2(+1) + 2x + 7(−2) = 0",
+          "tag": "Balance the formula",
+          "reason": "The oxidation numbers must add to zero in a neutral formula unit.",
+          "narration": "Balance the formula."
+        },
+        {
+          "n": 4,
+          "display": "2x − 12 = 0",
+          "tag": "Combine known contributions",
+          "reason": "The total from chromium must balance both contributions.",
+          "narration": "Combine known contributions. Potassium and oxygen together contribute minus twelve."
+        },
+        {
+          "n": 5,
+          "display": "2x = 12",
+          "tag": "Isolate both chromium atoms",
+          "reason": "Twelve belongs to two chromium atoms and is the common trap.",
+          "narration": "Isolate both chromium atoms. Add twelve to both sides."
+        },
+        {
+          "n": 6,
+          "display": "x = +6",
+          "tag": "Solve for one chromium",
+          "reason": "Oxidation state is assigned to an individual atom here.",
+          "narration": "Solve for one chromium. Divide the combined chromium contribution by two."
+        },
+        {
+          "n": 7,
+          "display": "So the answer is +6 (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2018-012",
+      "questionId": "chem-jamb-2018-012",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "m_{Ag} = 3.6 g, M_{Ag} = 108 g/mol, M_{Al} = 27 g/mol",
+          "tag": "List the mass data",
+          "reason": "The same charge passes in both cases.",
+          "narration": "List the mass data."
+        },
+        {
+          "n": 2,
+          "display": "n_{Ag} = \\frac{3.6}{108} mol",
+          "tag": "Find the silver amount",
+          "reason": "Divide silver's mass by its molar mass.",
+          "narration": "Find the silver amount."
+        },
+        {
+          "n": 3,
+          "display": "n_{Ag} = \\frac{1}{30} mol",
+          "tag": "Simplify the silver amount",
+          "reason": "Keep the exact amount for the remaining steps.",
+          "narration": "Simplify the silver amount."
+        },
+        {
+          "n": 4,
+          "display": "Ag^{+} + e^{−} → Ag",
+          "tag": "Count electrons for silver",
+          "reason": "The charge supplies one mole of electrons per mole of silver.",
+          "narration": "Count electrons for silver."
+        },
+        {
+          "n": 5,
+          "display": "Al^{3+} + 3e^{−} → Al",
+          "tag": "Count electrons for aluminium",
+          "reason": "Aluminium needs three electrons for each atom deposited.",
+          "narration": "Count electrons for aluminium."
+        },
+        {
+          "n": 6,
+          "display": "n_{Al} = \\frac{1}{30 × 3} mol",
+          "tag": "Substitute for aluminium moles",
+          "reason": "Divide the shared electron amount by three.",
+          "narration": "Substitute for aluminium moles."
+        },
+        {
+          "n": 7,
+          "display": "n_{Al} = \\frac{1}{90} mol",
+          "tag": "Evaluate aluminium moles",
+          "reason": "Each three moles of electrons deposit one mole of aluminium.",
+          "narration": "Evaluate aluminium moles."
+        },
+        {
+          "n": 8,
+          "display": "m_{Al} = \\frac{27}{90} g",
+          "tag": "Convert to mass",
+          "reason": "Multiply the amount in moles by twenty-seven grams per mole.",
+          "narration": "Convert to mass."
+        },
+        {
+          "n": 9,
+          "display": "m_{Al} = 0.30 g",
+          "tag": "Calculate the mass",
+          "reason": "Divide twenty-seven by ninety.",
+          "narration": "Calculate the mass."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 0.3 g (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "m_{Ag} = 3.6 g, M_{Ag} = 108 g/mol, M_{Al} = 27 g/mol",
+          "tag": "List the mass data",
+          "reason": "The same charge passes in both cases.",
+          "narration": "List the mass data."
+        },
+        {
+          "n": 2,
+          "display": "n_{Ag} = \\frac{3.6}{108} mol",
+          "tag": "Find the silver amount",
+          "reason": "Divide silver's mass by its molar mass.",
+          "narration": "Find the silver amount."
+        },
+        {
+          "n": 3,
+          "display": "n_{Ag} = \\frac{1}{30} mol",
+          "tag": "Simplify the silver amount",
+          "reason": "Keeping a fraction avoids a rounding error.",
+          "narration": "Simplify the silver amount. Keep the exact amount for the remaining steps."
+        },
+        {
+          "n": 4,
+          "display": "Ag^{+} + e^{−} → Ag",
+          "tag": "Count electrons for silver",
+          "reason": "The same electrical charge transfers the same number of electrons in either cell.",
+          "narration": "Count electrons for silver. The charge supplies one mole of electrons per mole of silver."
+        },
+        {
+          "n": 5,
+          "display": "Al^{3+} + 3e^{−} → Al",
+          "tag": "Count electrons for aluminium",
+          "reason": "Equal charge does not deposit equal moles when the ions have different charges.",
+          "narration": "Count electrons for aluminium. Aluminium needs three electrons for each atom deposited."
+        },
+        {
+          "n": 6,
+          "display": "n_{Al} = \\frac{1}{30 × 3} mol",
+          "tag": "Substitute for aluminium moles",
+          "reason": "Divide the shared electron amount by three.",
+          "narration": "Substitute for aluminium moles."
+        },
+        {
+          "n": 7,
+          "display": "n_{Al} = \\frac{1}{90} mol",
+          "tag": "Evaluate aluminium moles",
+          "reason": "This is the amount of metal deposited, so convert it to grams next.",
+          "narration": "Evaluate aluminium moles. Each three moles of electrons deposit one mole of aluminium."
+        },
+        {
+          "n": 8,
+          "display": "m_{Al} = \\frac{27}{90} g",
+          "tag": "Convert to mass",
+          "reason": "Multiply the amount in moles by twenty-seven grams per mole.",
+          "narration": "Convert to mass."
+        },
+        {
+          "n": 9,
+          "display": "m_{Al} = 0.30 g",
+          "tag": "Calculate the mass",
+          "reason": "The answer is the mass of aluminium alone.",
+          "narration": "Calculate the mass. Divide twenty-seven by ninety."
+        },
+        {
+          "n": 10,
+          "display": "So the answer is 0.3 g (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2018-014",
+      "questionId": "chem-jamb-2018-014",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Z = 14",
+          "tag": "Read the atomic number",
+          "reason": "A neutral atom has fourteen electrons because it has fourteen protons.",
+          "narration": "Read the atomic number."
+        },
+        {
+          "n": 2,
+          "display": "First shell: 2, second shell: 8",
+          "tag": "Fill the inner shells",
+          "reason": "For this atom the two inner shells fill before the outer shell.",
+          "narration": "Fill the inner shells."
+        },
+        {
+          "n": 3,
+          "display": "n_{outer} = 14 − 2 − 8",
+          "tag": "Find the outer shell count",
+          "reason": "Subtract the inner electrons from the total.",
+          "narration": "Find the outer shell count."
+        },
+        {
+          "n": 4,
+          "display": "n_{outer} = 4 electrons",
+          "tag": "Evaluate the remainder",
+          "reason": "The shell arrangement is two, eight, four.",
+          "narration": "Evaluate the remainder."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is 4 valence electrons (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Z = 14",
+          "tag": "Read the atomic number",
+          "reason": "A neutral atom has fourteen electrons because it has fourteen protons.",
+          "narration": "Read the atomic number."
+        },
+        {
+          "n": 2,
+          "display": "First shell: 2, second shell: 8",
+          "tag": "Fill the inner shells",
+          "reason": "Valence electrons are the electrons in the highest occupied shell.",
+          "narration": "Fill the inner shells. For this atom the two inner shells fill before the outer shell."
+        },
+        {
+          "n": 3,
+          "display": "n_{outer} = 14 − 2 − 8",
+          "tag": "Find the outer shell count",
+          "reason": "Counting all fourteen would include electrons in the filled inner shells.",
+          "narration": "Find the outer shell count. Subtract the inner electrons from the total."
+        },
+        {
+          "n": 4,
+          "display": "n_{outer} = 4 electrons",
+          "tag": "Evaluate the remainder",
+          "reason": "The last number gives the valence electron count.",
+          "narration": "Evaluate the remainder. The shell arrangement is two, eight, four."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is 4 valence electrons (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-chem-jamb-2018-036",
+      "questionId": "chem-jamb-2018-036",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "T_{1} = 273 K, P_{2} = 2P_{1}, V_{2} = 2V_{1}",
+          "tag": "List the changes",
+          "reason": "Pressure and volume both double for the same sample.",
+          "narration": "List the changes."
+        },
+        {
+          "n": 2,
+          "display": "T = \\frac{PV}{nR}",
+          "tag": "Use the gas law",
+          "reason": "For fixed gas amount, temperature scales with the pressure times the volume.",
+          "narration": "Use the gas law."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{T_{2}}{T_{1}} = \\frac{P_{2}V_{2}}{P_{1}V_{1}}",
+          "tag": "Compare the two states",
+          "reason": "The gas amount and gas constant cancel in the ratio.",
+          "narration": "Compare the two states."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{T_{2}}{T_{1}} = 2 × 2",
+          "tag": "Substitute the factors",
+          "reason": "Both doubling factors enter the product.",
+          "narration": "Substitute the factors."
+        },
+        {
+          "n": 5,
+          "display": "T_{2} = 4T_{1}",
+          "tag": "Evaluate the factor",
+          "reason": "Two times two makes four.",
+          "narration": "Evaluate the factor."
+        },
+        {
+          "n": 6,
+          "display": "T_{2} = 4 × 273 K",
+          "tag": "Substitute the temperature",
+          "reason": "Multiply the initial Kelvin temperature by the factor.",
+          "narration": "Substitute the temperature."
+        },
+        {
+          "n": 7,
+          "display": "T_{2} = 1092 K",
+          "tag": "Calculate the temperature",
+          "reason": "The final temperature is four times the initial value.",
+          "narration": "Calculate the temperature."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 1092 K (option D)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "T_{1} = 273 K, P_{2} = 2P_{1}, V_{2} = 2V_{1}",
+          "tag": "List the changes",
+          "reason": "Pressure and volume both double for the same sample.",
+          "narration": "List the changes."
+        },
+        {
+          "n": 2,
+          "display": "T = \\frac{PV}{nR}",
+          "tag": "Use the gas law",
+          "reason": "For fixed gas amount, temperature scales with the pressure times the volume.",
+          "narration": "Use the gas law."
+        },
+        {
+          "n": 3,
+          "display": "\\frac{T_{2}}{T_{1}} = \\frac{P_{2}V_{2}}{P_{1}V_{1}}",
+          "tag": "Compare the two states",
+          "reason": "The gas amount and gas constant cancel in the ratio.",
+          "narration": "Compare the two states."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{T_{2}}{T_{1}} = 2 × 2",
+          "tag": "Substitute the factors",
+          "reason": "Applying only one factor would predict a temperature of 546 kelvin.",
+          "narration": "Substitute the factors. Both doubling factors enter the product."
+        },
+        {
+          "n": 5,
+          "display": "T_{2} = 4T_{1}",
+          "tag": "Evaluate the factor",
+          "reason": "The multiplier applies to absolute temperature in kelvin.",
+          "narration": "Evaluate the factor. Two times two makes four."
+        },
+        {
+          "n": 6,
+          "display": "T_{2} = 4 × 273 K",
+          "tag": "Substitute the temperature",
+          "reason": "Multiply the initial Kelvin temperature by the factor.",
+          "narration": "Substitute the temperature."
+        },
+        {
+          "n": 7,
+          "display": "T_{2} = 1092 K",
+          "tag": "Calculate the temperature",
+          "reason": "This temperature gives both requested changes together.",
+          "narration": "Calculate the temperature. The final temperature is four times the initial value."
+        },
+        {
+          "n": 8,
+          "display": "So the answer is 1092 K (option D)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 10,
+  "count": 12,
   "animations": [
     {
       "id": "anim-biol-api-0167",
@@ -379,6 +379,178 @@
           "display": "Unrelated whale + fish flippers → Convergent evolution",
           "tag": "this question",
           "narration": "Because mammals and fish came from separate branches and grew alike to swim, convergent evolution fits, not divergent."
+        }
+      ]
+    },
+    {
+      "id": "anim-bio-jamb-2010-047",
+      "questionId": "bio-jamb-2010-047",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "Aa × Aa",
+          "tag": "Set up the cross",
+          "reason": "Each parent can pass on A or a.",
+          "narration": "Set up the cross."
+        },
+        {
+          "n": 2,
+          "display": "AA, Aa, aA, aa",
+          "tag": "List the combinations",
+          "reason": "Pair each version from one parent with each version from the other.",
+          "narration": "List the combinations."
+        },
+        {
+          "n": 3,
+          "display": "1 recessive out of 4",
+          "tag": "Count recessive outcomes",
+          "reason": "Only aa shows the recessive trait.",
+          "narration": "Count recessive outcomes."
+        },
+        {
+          "n": 4,
+          "display": "Probability = \\frac{1}{4}",
+          "tag": "Find the fraction",
+          "reason": "Divide the matching outcomes by the total.",
+          "narration": "Find the fraction."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is \\frac{1}{4} (option C)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "Aa × Aa",
+          "tag": "Set up the cross",
+          "reason": "A heterozygote carries two different versions of the gene and passes on one at random.",
+          "narration": "Set up the cross. Each parent can pass on A or a."
+        },
+        {
+          "n": 2,
+          "display": "AA, Aa, aA, aa",
+          "tag": "List the combinations",
+          "reason": "The four pairings have equal chances, even though Aa and aA give the same genotype.",
+          "narration": "List the combinations. Pair each version from one parent with each version from the other."
+        },
+        {
+          "n": 3,
+          "display": "1 recessive out of 4",
+          "tag": "Count recessive outcomes",
+          "reason": "A single dominant A masks a, so counting every child with an a overcounts.",
+          "narration": "Count recessive outcomes. Only aa shows the recessive trait."
+        },
+        {
+          "n": 4,
+          "display": "Probability = \\frac{1}{4}",
+          "tag": "Find the fraction",
+          "reason": "The fraction measures the chance for each child.",
+          "narration": "Find the fraction. Divide the matching outcomes by the total."
+        },
+        {
+          "n": 5,
+          "display": "So the answer is \\frac{1}{4} (option C)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
+        }
+      ]
+    },
+    {
+      "id": "anim-bio-jamb-2012-042",
+      "questionId": "bio-jamb-2012-042",
+      "stepSeconds": 4,
+      "steps": [
+        {
+          "n": 1,
+          "display": "XᴺXᶜ × XᶜY",
+          "tag": "Set up the cross",
+          "reason": "The mother carries one affected X and the father has one affected X.",
+          "narration": "Set up the cross."
+        },
+        {
+          "n": 2,
+          "display": "XᴺXᶜ, XᶜXᶜ, XᴺY, XᶜY",
+          "tag": "List the combinations",
+          "reason": "Pair each maternal X with each paternal chromosome.",
+          "narration": "List the combinations."
+        },
+        {
+          "n": 3,
+          "display": "XᶜXᶜ and XᶜY",
+          "tag": "Count affected children",
+          "reason": "Only these two pairings express colour blindness.",
+          "narration": "Count affected children."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{2}{4} × 100%",
+          "tag": "Write the percent calculation",
+          "reason": "Divide two affected outcomes by all four possible births.",
+          "narration": "Write the percent calculation."
+        },
+        {
+          "n": 5,
+          "display": "50%",
+          "tag": "Calculate the percentage",
+          "reason": "Two of the four equally likely outcomes make up half.",
+          "narration": "Calculate the percentage."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 50% (option B)",
+          "tag": "Match the option",
+          "reason": "Choose the option with the same result.",
+          "narration": "Match this result to the answer choices."
+        }
+      ],
+      "teach": [
+        {
+          "n": 1,
+          "display": "XᴺXᶜ × XᶜY",
+          "tag": "Set up the cross",
+          "reason": "The mother gives an X to every child, while the father gives either his X or his Y.",
+          "narration": "Set up the cross. The mother carries one affected X and the father has one affected X."
+        },
+        {
+          "n": 2,
+          "display": "XᴺXᶜ, XᶜXᶜ, XᴺY, XᶜY",
+          "tag": "List the combinations",
+          "reason": "Each of the four pairings is equally likely under the usual inheritance model.",
+          "narration": "List the combinations. Pair each maternal X with each paternal chromosome."
+        },
+        {
+          "n": 3,
+          "display": "XᶜXᶜ and XᶜY",
+          "tag": "Count affected children",
+          "reason": "A son with Xᶜ has no second X to mask it, while a carrier daughter can see normally.",
+          "narration": "Count affected children. Only these two pairings express colour blindness."
+        },
+        {
+          "n": 4,
+          "display": "\\frac{2}{4} × 100%",
+          "tag": "Write the percent calculation",
+          "reason": "Count both sexes because the question asks about all children.",
+          "narration": "Write the percent calculation. Divide two affected outcomes by all four possible births."
+        },
+        {
+          "n": 5,
+          "display": "50%",
+          "tag": "Calculate the percentage",
+          "reason": "The percentage describes a probability for each birth.",
+          "narration": "Calculate the percentage. Two of the four equally likely outcomes make up half."
+        },
+        {
+          "n": 6,
+          "display": "So the answer is 50% (option B)",
+          "tag": "Match the option",
+          "reason": "Check the option against the result, including any unit or sign.",
+          "narration": "Match this result to the answer choices."
         }
       ]
     }
