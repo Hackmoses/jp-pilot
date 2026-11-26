@@ -47,7 +47,7 @@ export default function Nephron(props: DrawingProps) {
     {shown('prox') && <>
       <path class="jp-biology-tubule" d="M214 110Q223 92 230 103T242 99T254 98L242 121" />
       {flow('M216 107Q224 95 231 105T243 100T254 98','jp-biology-blue','prox',2)}
-      <text x="261" y="88">Proximal<tspan x="261" dy="14">tubule</tspan></text>
+      <text x="260" y="82">Proximal<tspan x="260" dy="15">convoluted</tspan><tspan x="260" dy="15">tubule</tspan></text>
     </>}
     {shown('reabs') && shown('prox') && <>
       <path class="jp-biology-tuft" d="M223 48Q231 52 224 78L212 120Q208 144 213 178" />
@@ -64,7 +64,7 @@ export default function Nephron(props: DrawingProps) {
       <path class="jp-biology-tubule" d="M273 122Q280 108 291 117T308 113T329 122M329 106V215" />
       {flow('M329 158H307','jp-biology-blue','duct',2)}
       <text x="307" y="146" text-anchor="middle">Water</text>
-      <text x="342" y="200" text-anchor="middle"><tspan x="342">Collecting</tspan><tspan x="342" dy="14">duct</tspan></text>
+      <text x="335" y="200" text-anchor="middle"><tspan x="335">Collecting</tspan><tspan x="335" dy="15">duct</tspan></text>
     </>}
     {shown('out') && <>
       {flow('M329 202V232','jp-biology-waste','out',3)}

@@ -10,7 +10,7 @@ const stages = [
 ]
 
 const targets: Record<string, Point> = {
-  outline: [180, 74], blue: [28, 114], svc: [32, 64], ivc: [25, 166], ra: [141, 115], tri: [142, 131], rv: [139, 172],
+  outline: [180, 74], blue: [28, 114], svc: [32, 64], ivc: [25, 193], ra: [141, 115], tri: [142, 131], rv: [139, 172],
   pv: [108, 164], pa: [75, 56], lungs: [176, 39], red: [291, 45], veins: [285, 102], la: [224, 114],
   mit: [229, 139], lv: [223, 180], av: [256, 169], aorta: [346, 175], body: [211, 228], wall: [231, 204],
 }
@@ -27,8 +27,8 @@ export default function Heart(props: DrawingProps) {
     {shown('rv') && <path class="jp-biology-blue-soft" d="M118 134H175L182 200Q133 175 118 134Z" />}
     {shown('lv') && <path class="jp-biology-red-soft" d="M190 135H247Q243 200 207 204Q189 197 190 135Z" />}
     {shown('wall') && <path class="jp-biology-wall" d="M252 144Q251 200 213 213Q200 218 188 206" />}
-    {shown('ra') && <text x="140" y="103" text-anchor="middle">Right atrium</text>}
-    {shown('la') && <text x="223" y="103" text-anchor="middle">Left atrium</text>}
+    {shown('ra') && <text x="135" y="103" text-anchor="middle">Right atrium</text>}
+    {shown('la') && <text x="227" y="103" text-anchor="middle">Left atrium</text>}
     {shown('rv') && <text x="145" y="151" text-anchor="middle"><tspan x="145">Right</tspan><tspan x="145" dy="14">ventricle</tspan></text>}
     {shown('lv') && <text x="222" y="153" text-anchor="middle"><tspan x="222">Left</tspan><tspan x="222" dy="14">ventricle</tspan></text>}
 
@@ -50,7 +50,7 @@ export default function Heart(props: DrawingProps) {
       <path class="jp-biology-leader" d="M109 163l-4 9 6 7M108 173L96 193H61" />
       <text x="12" y="208">Pulmonary valve</text>
     </>}
-    {shown('pa') && <text x="77" y="19">Pulmonary<tspan x="77" dy="14">artery</tspan></text>}
+    {shown('pa') && <text x="89" y="19">Pulmonary<tspan x="89" dy="14">artery</tspan></text>}
     {shown('lungs') && <g>
       <path class="jp-biology-anatomy" d="M187 28Q176 15 164 33Q149 55 164 57Q177 56 187 48ZM193 28Q204 15 216 33Q231 55 216 57Q203 56 193 48Z" />
       <text x="190" y="16" text-anchor="middle">Lungs</text>

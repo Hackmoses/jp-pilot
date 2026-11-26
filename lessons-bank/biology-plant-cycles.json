@@ -1,0 +1,100 @@
+{
+  "subject": "biology",
+  "topicId": "8",
+  "lessons": [
+    {
+      "id": "biology-plant-cycles",
+      "title": "Spores, seeds and plant life cycles",
+      "scenes": [
+        {
+          "id": "biology-plant-cycles-1",
+          "show": "",
+          "say": "In mosses, the visible green gametophyte is the haploid generation. It bears the organs that make eggs and sperm. The large fern is a diploid sporophyte. Many ferns produce spores in sporangia grouped on the undersides of fronds.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "In",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "The",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-plant-cycles-2",
+          "show": "",
+          "say": "A fern spore can grow into a small gametophyte, called a prothallus, which makes the sex cells. Fern sperm swim in a film of water to an egg held in an archegonium on the gametophyte.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "Fern",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-plant-cycles-3",
+          "show": "",
+          "say": "Maize retains starch-rich endosperm inside its mature grain. The embryo uses those reserves as it germinates. A bean pod is a fruit from one carpel. The pod wall protects developing seeds inside.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Maize",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "A",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-plant-cycles-4",
+          "show": "",
+          "say": "JAMB may ask whether moss or fern has the dominant gametophyte, why ferns need moisture for fertilisation, and what provides stored food in maize. The blue arrow shows sperm moving through water.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "gametophyte",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "ferns",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "maize",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which generation is the large leafy fern?",
+        "options": [
+          "Sporophyte",
+          "Gametophyte",
+          "Pollen grain"
+        ],
+        "answerIndex": 0,
+        "feedback": "The leafy fern produces spores and is the diploid sporophyte."
+      }
+    }
+  ]
+}

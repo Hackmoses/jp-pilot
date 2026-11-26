@@ -1,0 +1,95 @@
+{
+  "subject": "biology",
+  "topicId": "7",
+  "lessons": [
+    {
+      "id": "biology-coordination",
+      "title": "Nerves, hormones and control",
+      "scenes": [
+        {
+          "id": "biology-coordination-1",
+          "show": "",
+          "say": "A nerve impulse is an electrical change that travels along a neuron’s axon to its terminals, where signalling can pass to the next cell. An endocrine gland releases hormones into the blood. Each hormone acts on target cells that have the right receptors.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "A",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "An",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-coordination-2",
+          "show": "",
+          "say": "The cerebellum sits at the back of the brain. It helps coordinate movement, posture and balance. Autonomic nerves adjust internal activities such as heart rate without conscious control. The heart also has its own pacemaker.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "The",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "Autonomic",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-coordination-3",
+          "show": "",
+          "say": "An adrenal gland sits above each kidney. Its inner medulla can release adrenaline into the blood.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "An",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-coordination-4",
+          "show": "",
+          "say": "JAMB may ask which two systems coordinate the body, what the cerebellum does and which gland sits above a kidney. The blue arrows trace impulses along nerves or hormones leaving glands into blood.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "systems",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "cerebellum",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "gland",
+              "action": "part-2-0",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which brain region helps coordinate balance and precise movement?",
+        "options": [
+          "Cerebellum",
+          "Pituitary",
+          "Spinal nerve"
+        ],
+        "answerIndex": 0,
+        "feedback": "The cerebellum at the rear of the brain coordinates timing and balance."
+      }
+    }
+  ]
+}
