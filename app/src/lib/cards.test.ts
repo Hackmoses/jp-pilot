@@ -43,7 +43,7 @@ const decks = Object.fromEntries(Object.entries(deckFiles).map(([name, contents]
 it('has a complete pilot of distinct cards with valid citations and Study topics', () => {
   expect(Object.keys(decks).sort()).toEqual(Object.keys(pilotCounts).sort())
   expect(Object.values(ENGLISH_CARD_TOPICS).sort()).toEqual(Object.keys(decks).sort())
-  expect(STUDY_TOPICS.english).toEqual(Object.keys(ENGLISH_CARD_TOPICS))
+  expect(STUDY_TOPICS.english).toEqual(expect.arrayContaining(Object.keys(ENGLISH_CARD_TOPICS)))
   const chapters = syllabusSections('english', true).flatMap(({ chapters }) => chapters.map(({ id }) => id))
   expect(chapters).toEqual(expect.arrayContaining(STUDY_TOPICS.english))
   const ids = new Set()

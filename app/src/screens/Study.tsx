@@ -37,7 +37,7 @@ export function Study({ params }: { params: URLSearchParams }) {
   const deck = subject === 'english' && chapter ? ENGLISH_CARD_TOPICS[chapter] : undefined
   const foundation = subject === 'english' ? foundationSection.chapters.find(({ id }) => id === chapter) : undefined
   const { View: Foundation, failed: foundationFailed } = foundationTopic.useView(Boolean(foundation))
-  const { View: Chapter, failed: chapterFailed } = chapterStudy.useView(Boolean(chapter && subject !== 'english'))
+  const { View: Chapter, failed: chapterFailed } = chapterStudy.useView(Boolean(chapter && (subject !== 'english' || conceptLessonTopic(subject, chapter))))
   const sectionsForSubject = syllabusSections(subject, true)
   const subjectName = getSubject(subject)?.name ?? subject
   const topics = new Set(STUDY_TOPICS[subject] ?? [])
@@ -60,7 +60,7 @@ export function Study({ params }: { params: URLSearchParams }) {
     return <EnglishCards deck={deck} back={studyLink(subject, chapter)} open={params.has('cards')} />
   }
 
-  if (chapter && subject !== 'english') return <Panel title={chapterName(subject, chapter)} subtitle={subjectName} back={subjectHref}>
+  if (chapter && (subject !== 'english' || conceptLessonTopic(subject, chapter))) return <Panel title={sectionsForSubject.flatMap(({ chapters }) => chapters).find(({ id }) => id === chapter)?.title ?? chapterName(subject, chapter)} subtitle={subjectName} back={subjectHref}>
     {Chapter ? <Chapter subject={subject} chapter={chapter} tryIt={tryIt} />
       : <p class="jp-mode-lead" role="status">{chapterFailed ? 'Could not open this topic. Reload to try again.' : 'Loading topic…'}</p>}
   </Panel>
@@ -78,7 +78,7 @@ export function Study({ params }: { params: URLSearchParams }) {
       if (lesson && tryIt) return 'done'
       return lesson || tryIt || hasStartedConceptLesson(id) ? 'progress' : 'none'
     }
-    if (subject === 'english') {
+    if (subject === 'english' && ENGLISH_CARD_TOPICS[id]) {
       const deck = ENGLISH_CARD_TOPICS[id]
       const reviews = Object.values(cardReviews(deck))
       if (!reviews.length) return 'none'

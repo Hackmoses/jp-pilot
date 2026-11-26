@@ -40,6 +40,12 @@ const english = fromRows([
   ]],
 ])
 
+// Oral Forms chapters and the lessons in lessons-bank/english-oral.json that teach them.
+// Rhymes (14) has no lesson yet, so it stays out of Study.
+export const ENGLISH_ORAL_LESSONS: Record<string, string[]> = {
+  12: ['english-oral-1', 'english-oral-2'], 13: ['english-oral-3'], 15: ['english-oral-4'], 16: ['english-oral-5'],
+}
+
 export const ENGLISH_CARD_TOPICS: Record<string, string> = {
   4: 'synonyms', 5: 'antonyms', 6: 'idioms', 7: 'grammar-rules',
   9: 'phrasal-verbs-prepositions', 11: 'confusable-words', 18: 'spelling',
@@ -131,12 +137,18 @@ export const STUDY_TOPICS: Record<string, string[]> = {
   physics: ['2', '5', '17', '14', '18', '12'],
   biology: ['1', '10'],
   mathematics: ['1', '3'],
-  english: Object.keys(ENGLISH_CARD_TOPICS),
+  english: [...Object.keys(ENGLISH_CARD_TOPICS), ...Object.keys(ENGLISH_ORAL_LESSONS)],
 }
 
 export function conceptLessonTopic(subject: string, chapter: string) {
   if (subject === 'physics' && chapter === '12') return 'physics-12-waves'
   if (subject === 'chemistry' && chapter === '2') return 'chemistry-2-mole'
+  if (subject === 'english' && ENGLISH_ORAL_LESSONS[chapter]) return 'english-oral'
+}
+
+// Lessons to show for a chapter when its file covers more than one chapter.
+export function conceptLessonIds(subject: string, chapter: string): string[] | undefined {
+  if (subject === 'english') return ENGLISH_ORAL_LESSONS[chapter]
 }
 
 // Try it ids per topic (null is the first card, saved under the topic key). Kept in step with

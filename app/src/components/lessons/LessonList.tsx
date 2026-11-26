@@ -7,8 +7,8 @@ import type { Lesson, Topic } from './lesson'
 
 const Player = lazyView(() => import('./LessonPlayer').then(({ LessonPlayer }) => LessonPlayer))
 const loadedTopics = new Map<string, Topic>()
-export function LessonList({ file, subject, chapter, only, tryItAnchor, after }: {
-  file: string; subject: string; chapter: string; only?: string; tryItAnchor?: string
+export function LessonList({ file, subject, chapter, only, lessonIds, tryItAnchor, after }: {
+  file: string; subject: string; chapter: string; only?: string; lessonIds?: string[]; tryItAnchor?: string
   after?: (lesson: Lesson, topic: Topic) => ComponentChildren
 }) {
   const [topic, setTopic] = useState<Topic | undefined>(() => loadedTopics.get(file))
@@ -36,7 +36,8 @@ export function LessonList({ file, subject, chapter, only, tryItAnchor, after }:
   if (!topic) return failed
     ? <button type="button" class="jp-btn" onClick={() => setRetry(retry + 1)}>Retry loading lessons</button>
     : <p class="jp-mode-lead" role="status">Loading lessons…</p>
-  const selected = only ? topic.lessons.filter(({ id }) => id === only) : topic.lessons
+  const selected = only ? topic.lessons.filter(({ id }) => id === only)
+    : lessonIds ? topic.lessons.filter(({ id }) => lessonIds.includes(id)) : topic.lessons
   const cards = selected.flatMap((lesson) => lesson.supplement
     ? [lesson, { ...lesson.supplement, id: lesson.id + '-supplement' }]
     : [lesson])

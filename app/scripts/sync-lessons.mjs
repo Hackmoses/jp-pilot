@@ -29,6 +29,7 @@ for (const name of (await readdir(bank)).filter((file) => file.endsWith('.json')
   // Word banks and other non-lesson files have no lessons array.
   if (!Array.isArray(topic?.lessons)) continue
   const foundations = name === 'english-foundations.json'
+  const spokenWords = foundations || name === 'english-oral.json'
   const lessonScenes = (lesson) => [
     ...sceneList(lesson),
     ...lesson.supplement ? sceneList(lesson.supplement) : [],
@@ -40,14 +41,14 @@ for (const name of (await readdir(bank)).filter((file) => file.endsWith('.json')
   // Include only this topic's audio timings. The topic remains the only data request.
   const data = { ...topic }
   if (entries.length) data.clips = Object.fromEntries(entries)
-  if (foundations) {
+  if (spokenWords) {
     const pronunciations = new Set(topic.lessons.flatMap(lessonScenes).flatMap(({ say }) =>
       Array.from(say.matchAll(/\{\{word:([\w-]+)\}\}/g), ([, id]) => id)))
     data.words = Object.fromEntries(wordBank.filter(({ id }) => pronunciations.has(id)).map(({ id, word, ipa, stress }) =>
       [id, { word, ipa, stress, ...(audioWords.has(id + '.webm') ? { audio: true } : {}) }]))
-    if (Object.keys(data.words).length !== pronunciations.size) throw new Error('Foundations references a missing pronunciation')
+    if (Object.keys(data.words).length !== pronunciations.size) throw new Error(name + ' references a missing pronunciation')
   }
-  await writeFile(new URL(name, output), foundations || entries.length ? JSON.stringify(data) : text)
+  await writeFile(new URL(name, output), spokenWords || entries.length ? JSON.stringify(data) : text)
   index.push({ subject: topic.subject, topicId: topic.topicId, file: name, lessons })
 }
 await writeFile(new URL('index.json', output), JSON.stringify(index, null, 2) + '\n')
