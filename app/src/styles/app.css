@@ -343,8 +343,11 @@ body {
   color: #374151;
 }
 
-.jp-screen--session {
+/* Two classes so the lazily loaded question.css (.jp-screen max-width 480px)
+   cannot squeeze Practice into a phone column on desktop. */
+.jp-screen.jp-screen--session {
   max-width: none;
+  margin-inline: 0;
   min-height: 100dvh;
   background: #f8fafc;
   color: #0f172a;
