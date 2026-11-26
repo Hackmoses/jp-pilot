@@ -261,3 +261,136 @@
 .jp-concept-done {
   margin: 0;
 }
+
+.jp-biology-teach {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-3);
+  margin-block-start: var(--space-3);
+}
+
+.jp-biology-teach > .jp-concept-player,
+.jp-biology-teach > .jp-mode-lead {
+  width: 100%;
+}
+
+.jp-biology-teach > p { margin: 0; }
+.jp-biology-teach > .jp-btn { min-height: var(--tap-min); }
+
+.jp-biology-player .jp-concept-paper {
+  position: relative;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: var(--space-2);
+  block-size: 316px;
+  padding: var(--space-3);
+  background: var(--bg);
+}
+
+.jp-biology-player .jp-concept-status { min-block-size: 316px; }
+
+.jp-biology-player .jp-biology-svg {
+  width: 100%;
+  height: 100%;
+  max-width: 490px;
+  color: var(--ink);
+}
+
+.jp-biology-svg text {
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+}
+
+.jp-biology-key {
+  margin: 0;
+  min-block-size: 1.5em;
+  color: var(--ink-2);
+  text-align: center;
+}
+
+.jp-biology-player .jp-biology-caption {
+  position: absolute;
+  inset: auto var(--space-3) var(--space-3);
+  z-index: 1;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.jp-biology-check {
+  grid-row: 1 / -1;
+  align-self: center;
+  min-width: 0;
+  max-height: 100%;
+  overflow: auto;
+  display: grid;
+  justify-items: start;
+  gap: var(--space-1);
+  color: var(--ink);
+}
+
+.jp-biology-check h3,
+.jp-biology-check p { margin: 0; }
+.jp-biology-check h3 { font-size: 1em; }
+.jp-biology-check .jp-btn { min-height: var(--tap-min); }
+
+.jp-biology-options {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.jp-biology-options .jp-btn {
+  padding: var(--space-1) var(--space-2);
+  white-space: normal;
+  line-height: 1.2;
+}
+
+.jp-biology-options [data-result="correct"] {
+  border-color: var(--good);
+  background: var(--good-soft);
+  color: var(--good);
+}
+
+.jp-biology-options [data-result="incorrect"] {
+  border-color: var(--bad);
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+.jp-biology-feedback { min-height: 3em; color: var(--ink-2); }
+
+.jp-biology-anatomy { fill: var(--brand-soft); stroke: var(--ink-2); stroke-width: 1.65; }
+.jp-biology-blue-soft { fill: var(--brand-soft); stroke: var(--brand); }
+.jp-biology-red-soft { fill: var(--bad-soft); stroke: var(--bad); }
+.jp-biology-blue { color: var(--brand); }
+.jp-biology-red { color: var(--bad); }
+.jp-biology-good { color: var(--good); }
+.jp-biology-waste { color: var(--hint); }
+.jp-biology-leader { fill: none; stroke: var(--ink-2); stroke-width: 1.25; }
+.jp-biology-wall { fill: none; stroke: var(--bad); stroke-width: 7; stroke-linecap: round; }
+.jp-biology-tubule { fill: none; stroke: var(--brand); stroke-width: 3.5; stroke-linecap: round; }
+.jp-biology-tuft { fill: none; stroke: var(--bad); stroke-width: 2.1; stroke-linecap: round; }
+.jp-biology-zoom { fill: none; stroke: var(--brand); stroke-dasharray: 3 3; }
+.jp-biology-green-seed { fill: var(--good-soft); stroke: var(--good); stroke-width: 1.5; }
+.jp-biology-yellow-seed { fill: var(--highlight); stroke: var(--hint); stroke-width: 1.5; }
+
+.jp-biology-organ {
+  transform-origin: 76px 126px;
+  transform: translate(88px) scale(1.25);
+  transition: transform 420ms ease-out;
+}
+
+.jp-biology-organ[data-zoom="true"] { transform: none; }
+.jp-biology-hand { color: var(--ink); transition: transform 220ms ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .jp-biology-organ,
+  .jp-biology-hand,
+  .jp-biology-player .jp-concept-btn { transition: none; }
+}

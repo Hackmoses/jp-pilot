@@ -1,0 +1,174 @@
+{
+  "subject": "biology",
+  "topicId": "10",
+  "lessons": [
+    {
+      "id": "biology-inheritance",
+      "title": "Monohybrid inheritance",
+      "scenes": [
+        {
+          "id": "biology-inheritance-1",
+          "show": "",
+          "say": "This cross follows one trait: pea seed colour. Both parent plants are heterozygous and grew from yellow seeds. Each carries one dominant yellow allele and one recessive green allele.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "trait",
+              "action": "outline",
+              "label": ""
+            },
+            {
+              "word": "parent",
+              "action": "parents",
+              "label": ""
+            },
+            {
+              "word": "heterozygous",
+              "action": "pair",
+              "label": ""
+            },
+            {
+              "word": "dominant",
+              "action": "yellow",
+              "label": ""
+            },
+            {
+              "word": "recessive",
+              "action": "green",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-inheritance-2",
+          "show": "",
+          "say": "The alleles separate when gametes form. Each parent can pass on either allele. Put one parent's gametes across the top and the other's down the side.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "separate",
+              "action": "split",
+              "label": ""
+            },
+            {
+              "word": "gametes",
+              "action": "gametes",
+              "label": ""
+            },
+            {
+              "word": "either",
+              "action": "pair",
+              "label": ""
+            },
+            {
+              "word": "top",
+              "action": "top",
+              "label": ""
+            },
+            {
+              "word": "side",
+              "action": "side",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-inheritance-3",
+          "show": "",
+          "say": "Combine one allele from each parent in each box. Three combinations give yellow seeds. Only the pair with two recessive alleles gives green seeds.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Combine",
+              "action": "grid",
+              "label": ""
+            },
+            {
+              "word": "each",
+              "action": "fill",
+              "label": ""
+            },
+            {
+              "word": "box",
+              "action": "upper",
+              "label": ""
+            },
+            {
+              "word": "Three",
+              "action": "lower",
+              "label": ""
+            },
+            {
+              "word": "Only",
+              "action": "recessive",
+              "label": ""
+            },
+            {
+              "word": "green",
+              "action": "green",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-inheritance-4",
+          "show": "One dominant allele is enough.",
+          "say": "Remember the expected ratio: three yellow to one green. One dominant allele is enough for yellow.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "ratio",
+              "action": "ratio",
+              "label": ""
+            },
+            {
+              "word": "yellow",
+              "action": "yellow",
+              "label": ""
+            },
+            {
+              "word": "dominant",
+              "action": "pair",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-inheritance-5",
+          "show": "",
+          "say": "JAMB asks which allele is dominant, which genotypes are heterozygous, and the chance of the recessive trait.",
+          "visual": "4",
+          "beats": [
+            {
+              "word": "dominant",
+              "action": "yellow",
+              "label": ""
+            },
+            {
+              "word": "heterozygous",
+              "action": "hetero",
+              "label": ""
+            },
+            {
+              "word": "chance",
+              "action": "green",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "In a Yy × Yy cross, what proportion of pea seeds are expected to be green?",
+        "options": [
+          "None",
+          "One quarter",
+          "One half",
+          "Three quarters"
+        ],
+        "answerIndex": 1,
+        "feedback": "Only yy gives green. One of the four equally likely combinations is yy."
+      }
+    }
+  ]
+}

@@ -26,6 +26,9 @@ import { getProgress, logEvent, recordAnswer } from '../lib/store'
 import { getSubject, getSubjectByQuestionId, isSubjectAvailable } from '../lib/subjects'
 import type { OptionId } from '../lib/types'
 import { Countdown } from './Countdown'
+import { lazyView } from '../lib/lazyView'
+
+const teachMe = lazyView(() => import('../components/lessons/biology/TeachMe').then(({ TeachMe }) => TeachMe))
 
 interface SessionProps {
   attempt?: Attempt
@@ -154,6 +157,8 @@ export function Session({ attempt, study, review }: SessionProps) {
   }, [question, startedAt])
 
   const answered = pickedId !== null || Boolean(review)
+  const showTeachMe = question?.subject === 'biology' && pickedId !== null && !study && !review && attempt?.mode !== 'exam'
+  const { View: TeachMe } = teachMe.useView(showTeachMe)
   const back = study ? studyLink(study.subject, study.chapter, study.concept) : review?.href
 
   useEffect(() => {
@@ -460,6 +465,7 @@ export function Session({ attempt, study, review }: SessionProps) {
             calculationSlot={!isWide && !isConceptAnimation ? calculationPlayer : undefined}
             conceptSlot={!isWide && isConceptAnimation ? calculationPlayer : undefined}
           />
+          {showTeachMe && TeachMe && <TeachMe key={question.id} id={question.id} correct={pickedId === question.answerId} />}
         </div>
 
         {showRightCol && (

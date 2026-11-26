@@ -7,16 +7,10 @@ import type { Lesson, Topic } from './lesson'
 
 const Player = lazyView(() => import('./LessonPlayer').then(({ LessonPlayer }) => LessonPlayer))
 const loadedTopics = new Map<string, Topic>()
-export function LessonList({ file, subject, chapter, only, lessonIds, tryItAnchor, after }: {
-  file: string; subject: string; chapter: string; only?: string; lessonIds?: string[]; tryItAnchor?: string
-  after?: (lesson: Lesson, topic: Topic) => ComponentChildren
-}) {
+export function useLessonTopic(file: string) {
   const [topic, setTopic] = useState<Topic | undefined>(() => loadedTopics.get(file))
   const [retry, setRetry] = useState(0)
   const [failed, setFailed] = useState(false)
-  const [open, setOpen] = useState<string>()
-  const { View, failed: playerFailed } = Player.useView(Boolean(open))
-  const [, update] = useState(0)
   useEffect(() => {
     if (loadedTopics.has(file)) return
     const request = new AbortController()
@@ -33,8 +27,27 @@ export function LessonList({ file, subject, chapter, only, lessonIds, tryItAncho
       .catch(() => { if (!request.signal.aborted) setFailed(true) })
     return () => request.abort()
   }, [file, retry])
+  return { topic, failed, retry: () => setRetry(retry + 1) }
+}
+
+export function TopicLessonPlayer({ file, topic, lesson, currentId, onComplete }: {
+  file: string; topic: Topic; lesson: Lesson; currentId?: string; onComplete: () => void
+}) {
+  const { View, failed } = Player.useView()
+  if (!View) return <p class="jp-mode-lead" role="status">{failed ? 'Could not load the player. Reload the page to retry.' : 'Loading player…'}</p>
+  return <View lesson={lesson} file={file} clips={topic.clips} pronunciations={topic.words}
+    currentId={currentId} onComplete={onComplete} />
+}
+
+export function LessonList({ file, subject, chapter, only, lessonIds, tryItAnchor, after }: {
+  file: string; subject: string; chapter: string; only?: string; lessonIds?: string[]; tryItAnchor?: string
+  after?: (lesson: Lesson, topic: Topic) => ComponentChildren
+}) {
+  const { topic, failed, retry } = useLessonTopic(file)
+  const [open, setOpen] = useState<string>()
+  const [, update] = useState(0)
   if (!topic) return failed
-    ? <button type="button" class="jp-btn" onClick={() => setRetry(retry + 1)}>Retry loading lessons</button>
+    ? <button type="button" class="jp-btn" onClick={retry}>Retry loading lessons</button>
     : <p class="jp-mode-lead" role="status">Loading lessons…</p>
   const selected = only ? topic.lessons.filter(({ id }) => id === only)
     : lessonIds ? topic.lessons.filter(({ id }) => lessonIds.includes(id)) : topic.lessons
@@ -55,7 +68,7 @@ export function LessonList({ file, subject, chapter, only, lessonIds, tryItAncho
         <div class="jp-try-header-actions">
           <button type="button" class="jp-btn" aria-label={(open === lesson.id ? 'Close' : 'Open') + ' · ' + lesson.title}
             aria-expanded={open === lesson.id} onClick={() => {
-              if (only && lesson.id === only) startConceptLesson(only)
+              if (only === lesson.id || lesson.quickCheck && open !== lesson.id) startConceptLesson(lesson.id)
               setOpen(open === lesson.id ? undefined : lesson.id)
             }}>
             {open === lesson.id ? 'Close' : 'Open'}
@@ -63,11 +76,11 @@ export function LessonList({ file, subject, chapter, only, lessonIds, tryItAncho
         </div>
       </div>
       {open === lesson.id && <div class="jp-try-panel">
-        {View ? <View key={lesson.id} lesson={tryItAnchor ? { ...lesson, tryIt: tryItAnchor } : lesson} file={file} clips={topic.clips} pronunciations={topic.words} onComplete={() => {
+        <TopicLessonPlayer key={lesson.id} topic={topic} lesson={tryItAnchor ? { ...lesson, tryIt: tryItAnchor } : lesson} file={file} onComplete={() => {
           if (only && lesson.id !== only) return
           completeConceptLesson(subject, chapter, lesson.id, selected.map(({ id }) => id))
           update((count) => count + 1)
-        }} /> : <p class="jp-mode-lead" role="status">{playerFailed ? 'Could not load the player. Reload the page to retry.' : 'Loading player…'}</p>}
+        }} />
       </div>}
     </section>
   })}{after && selected.map((lesson) => after(lesson, topic))}</>

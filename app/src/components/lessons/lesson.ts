@@ -25,6 +25,7 @@ export type Lesson = {
   title: string
   scenes: Scene[]
   pastQuestion: Question | null
+  quickCheck?: ExplainQuestion
   tryIt?: string | ExplainQuestion | null
   roots?: string[][]
   supplement?: Pick<Lesson, 'title' | 'scenes' | 'pastQuestion'>
@@ -39,7 +40,7 @@ export type Clip = {
 export type ExplainQuestion = { prompt: string; options: string[]; answerIndex: number; feedback: string }
 export type Pronunciation = { word: string; ipa: string; stress: number; audio?: boolean }
 export type WordBank = Record<string, Pronunciation>
-export type Topic = { lessons: Lesson[]; clips?: Record<string, Clip>; words?: WordBank }
+export type Topic = { topicId?: string; lessons: Lesson[]; clips?: Record<string, Clip>; words?: WordBank }
 export const wordMarker = /\{\{word:([\w-]+)\}\}/g
 export function spokenToken(token: string) {
   return token.toLowerCase().replace(/^["“‘(]+|[.,!?;:”’")]+$/g, '')

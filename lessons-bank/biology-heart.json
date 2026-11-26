@@ -1,0 +1,199 @@
+{
+  "subject": "biology",
+  "topicId": "4",
+  "lessons": [
+    {
+      "id": "biology-heart",
+      "title": "The heart and its chambers",
+      "scenes": [
+        {
+          "id": "biology-heart-1",
+          "show": "",
+          "say": "The heart has four chambers. The right atrium and left atrium receive blood. The right ventricle and left ventricle pump it.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "heart",
+              "action": "outline",
+              "label": ""
+            },
+            {
+              "word": "right",
+              "action": "ra",
+              "label": ""
+            },
+            {
+              "word": "left",
+              "action": "la",
+              "label": ""
+            },
+            {
+              "word": "right",
+              "action": "rv",
+              "label": ""
+            },
+            {
+              "word": "left",
+              "action": "lv",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-heart-2",
+          "show": "",
+          "say": "Deoxygenated blood enters through the venae cavae. From the right atrium it crosses the tricuspid valve, then leaves the right ventricle through the pulmonary valve and artery for the lungs.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Deoxygenated",
+              "action": "blue",
+              "label": ""
+            },
+            {
+              "word": "cavae",
+              "action": "cava",
+              "label": ""
+            },
+            {
+              "word": "atrium",
+              "action": "ra",
+              "label": ""
+            },
+            {
+              "word": "tricuspid",
+              "action": "tri",
+              "label": ""
+            },
+            {
+              "word": "ventricle",
+              "action": "rv",
+              "label": ""
+            },
+            {
+              "word": "valve",
+              "action": "pv",
+              "label": ""
+            },
+            {
+              "word": "artery",
+              "action": "pa",
+              "label": ""
+            },
+            {
+              "word": "lungs",
+              "action": "lungs",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-heart-3",
+          "show": "",
+          "say": "Oxygenated blood returns in pulmonary veins. From the left atrium it crosses the mitral valve, then leaves the left ventricle through the aortic valve and aorta to capillaries in the body.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Oxygenated",
+              "action": "red",
+              "label": ""
+            },
+            {
+              "word": "veins",
+              "action": "veins",
+              "label": ""
+            },
+            {
+              "word": "atrium",
+              "action": "la",
+              "label": ""
+            },
+            {
+              "word": "mitral",
+              "action": "mit",
+              "label": ""
+            },
+            {
+              "word": "ventricle",
+              "action": "lv",
+              "label": ""
+            },
+            {
+              "word": "valve",
+              "action": "av",
+              "label": ""
+            },
+            {
+              "word": "aorta",
+              "action": "aorta",
+              "label": ""
+            },
+            {
+              "word": "body",
+              "action": "body",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-heart-4",
+          "show": "The left ventricle pumps at higher pressure.",
+          "say": "The left ventricle has a thicker wall to generate higher pressure for systemic circulation.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "left",
+              "action": "lv",
+              "label": ""
+            },
+            {
+              "word": "thicker",
+              "action": "wall",
+              "label": ""
+            },
+            {
+              "word": "systemic",
+              "action": "body",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-heart-5",
+          "show": "",
+          "say": "JAMB asks which chamber pumps to the body, which vessels carry oxygenated blood, and how valves prevent backflow.",
+          "visual": "4",
+          "beats": [
+            {
+              "word": "chamber",
+              "action": "lv",
+              "label": ""
+            },
+            {
+              "word": "vessels",
+              "action": "veins",
+              "label": ""
+            },
+            {
+              "word": "valves",
+              "action": "mit",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which chamber pumps blood into the aorta?",
+        "options": [
+          "Right atrium",
+          "Right ventricle",
+          "Left atrium",
+          "Left ventricle"
+        ],
+        "answerIndex": 3,
+        "feedback": "The left ventricle pushes oxygenated blood through the aortic valve into the aorta."
+      }
+    }
+  ]
+}

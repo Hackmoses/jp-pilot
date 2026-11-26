@@ -5,10 +5,16 @@ import { AudioSceneClock, beatTimes, fallbackMs, lessonScenes, sceneFrame, wordC
 import type { Clip, Frame, Lesson, WordBank } from './lesson'
 import { Caption, PrintedPrompt } from './LessonText'
 import { renderMathText } from '../../lib/mathText'
+import { QuickCheck } from './biology/QuickCheck'
 import './lessons.css'
 
 const Waves = lazyView(() => import('./waves').then((module) => module.default))
 const Mole = lazyView(() => import('./mole').then((module) => module.default))
+const biology: Record<string, typeof Waves> = {
+  'biology-heart': lazyView(() => import('./biology/heart').then((module) => module.default)),
+  'biology-nephron': lazyView(() => import('./biology/nephron').then((module) => module.default)),
+  'biology-inheritance': lazyView(() => import('./biology/inheritance').then((module) => module.default)),
+}
 const foundations = [
   lazyView(() => import('./english/letters-drawing').then((module) => module.default)),
   lazyView(() => import('./english/syllables-drawing').then((module) => module.default)),
@@ -31,15 +37,15 @@ function release(audio?: HTMLAudioElement) {
   audio.load()
 }
 
-export function LessonPlayer({ lesson, file, clips, pronunciations, onComplete }: {
-  lesson: Lesson; file: string; clips?: Record<string, Clip>; pronunciations?: WordBank; onComplete: () => void
+export function LessonPlayer({ lesson, file, clips, pronunciations, onComplete, currentId }: {
+  lesson: Lesson; file: string; clips?: Record<string, Clip>; pronunciations?: WordBank; onComplete: () => void; currentId?: string
 }) {
   const unit = file === 'english-foundations' ? foundations[Number(lesson.id.split('-')[2]) - 1] : undefined
-  const { View, failed } = (unit ?? (file === 'physics-12-waves' ? Waves : Mole)).useView()
+  const { View, failed } = (unit ?? biology[file] ?? (file === 'physics-12-waves' ? Waves : Mole)).useView()
   const scenes = lessonScenes(lesson)
   const [index, setIndex] = useState(0)
   const [replay, setReplay] = useState(0)
-  const [captions, setCaptions] = useState(true)
+  const [captions, setCaptions] = useState(!lesson.quickCheck)
   const [playing, setPlaying] = useState(false)
   const [done, setDone] = useState(false)
   const [unavailable, setUnavailable] = useState(false)
@@ -249,7 +255,8 @@ export function LessonPlayer({ lesson, file, clips, pronunciations, onComplete }
   const drawing = frame && { ...frame, seconds: reduce ? 0 : frame.seconds, reduced: reduce }
   const tryIt = typeof lesson.tryIt === 'string' ? lesson.tryIt : undefined
 
-  return <div class="jp-concept-player">
+  const check = done ? lesson.quickCheck : undefined
+  return <div class={lesson.quickCheck ? "jp-concept-player jp-biology-player" : "jp-concept-player"}>
     <div class="jp-concept-header">
       <span>Scene {index + 1} of {scenes.length}</span>
       {(!clip || unavailable) && <span class="jp-concept-badge">Voice coming soon</span>}
@@ -257,29 +264,32 @@ export function LessonPlayer({ lesson, file, clips, pronunciations, onComplete }
     {failed && <p class="jp-mode-lead jp-concept-status" role="status">Could not load the animation. Close the lesson and reload the page to retry.</p>}
     {!View && !failed && <p class="jp-mode-lead jp-concept-status" role="status">Loading animation…</p>}
     {View && <div class="jp-concept-paper">
-      {question && <div class="jp-concept-question">
-        <span class="jp-jamb-badge">JAMB {question.year} · Question {question.number}</span>
-        {question.instructions && <p>{question.instructions}</p>}
-        {question.prompt && <p><PrintedPrompt question={question} /></p>}
-        <ol type="A" class={question.optionLabels ? 'jp-concept-printed-options' : undefined}>{question.options.map((option, i) =>
-          <li key={optionIds[i]} data-answer={(answerShown || Boolean(unit && index === scenes.length - 1 && frame?.progress === 1)) && question.answer === optionIds[i]}>
-            {question.optionLabels && <span>{question.optionLabels[i]} </span>}{option}</li>,
-        )}</ol>
-        {question.afterOptions && <p>{question.afterOptions}</p>}
-      </div>}
-      {drawing && <View scene={scene} frame={drawing} pronunciations={pronunciations} />}
-      {question ? <ol class="jp-concept-steps">
-        {visibleScenes.map((step) => {
-          const visible = step.id === scene.id ? reached : step.beats.length
-          return step.beats.slice(0, visible).map(({ label }, i) => {
-            const amount = step.id === scene.id && i === reached - 1 && !reduce
-              ? interpolate('0', '100')(Math.min(1, (frame?.sinceBeat ?? 0) / 650)) : '100'
-            return <li key={step.id + i} class="jp-concept-step" style={{ clipPath: 'inset(0 ' + (100 - Number(amount)) + '% 0 0)' }}>{renderMathText(label)}</li>
-          })
-        })}
-      </ol> : <div class="jp-concept-beat" aria-hidden="true">{renderMathText(scene.beats[reached - 1]?.label ?? '')}</div>}
+      {check ? <QuickCheck check={check} clipId={lesson.id} currentId={currentId} /> : <>
+        {question && <div class="jp-concept-question">
+          <span class="jp-jamb-badge">JAMB {question.year} · Question {question.number}</span>
+          {question.instructions && <p>{question.instructions}</p>}
+          {question.prompt && <p><PrintedPrompt question={question} /></p>}
+          <ol type="A" class={question.optionLabels ? 'jp-concept-printed-options' : undefined}>{question.options.map((option, i) =>
+            <li key={optionIds[i]} data-answer={(answerShown || Boolean(unit && index === scenes.length - 1 && frame?.progress === 1)) && question.answer === optionIds[i]}>
+              {question.optionLabels && <span>{question.optionLabels[i]} </span>}{option}</li>,
+          )}</ol>
+          {question.afterOptions && <p>{question.afterOptions}</p>}
+        </div>}
+        {drawing && <View scene={scene} frame={drawing} pronunciations={pronunciations} />}
+        {question ? <ol class="jp-concept-steps">
+          {visibleScenes.map((step) => {
+            const visible = step.id === scene.id ? reached : step.beats.length
+            return step.beats.slice(0, visible).map(({ label }, i) => {
+              const amount = step.id === scene.id && i === reached - 1 && !reduce
+                ? interpolate('0', '100')(Math.min(1, (frame?.sinceBeat ?? 0) / 650)) : '100'
+              return <li key={step.id + i} class="jp-concept-step" style={{ clipPath: 'inset(0 ' + (100 - Number(amount)) + '% 0 0)' }}>{renderMathText(label)}</li>
+            })
+          })}
+        </ol> : lesson.quickCheck ? <p class="jp-biology-key">{scene.show}</p> : <div class="jp-concept-beat" aria-hidden="true">{renderMathText(scene.beats[reached - 1]?.label ?? '')}</div>}
+      </>}
+      {lesson.quickCheck && captions && !check && <p class="jp-concept-caption jp-biology-caption" aria-live="polite">{scene.say}</p>}
     </div>}
-    {captions && <p class="jp-concept-caption" aria-live="polite">{pronunciations
+    {!lesson.quickCheck && captions && <p class="jp-concept-caption" aria-live="polite">{pronunciations
       ? <Caption line={scene.say} pronunciations={pronunciations} onPlay={(id) => playback.current?.preview(id)} />
       : scene.say}</p>}
     <div class="jp-concept-controls" role="group" aria-label="Lesson playback controls">
@@ -289,7 +299,7 @@ export function LessonPlayer({ lesson, file, clips, pronunciations, onComplete }
       <button type="button" aria-label={playing ? 'Pause' : 'Play'} class="jp-concept-btn jp-concept-play" disabled={!View}
         onClick={() => {
           if (playing) playback.current?.pause()
-          else if (done) { wantsPlay.current = true; select(index) }
+          else if (done) { wantsPlay.current = true; select(lesson.quickCheck ? 0 : index) }
           else playback.current?.start()
         }}>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -311,7 +321,7 @@ export function LessonPlayer({ lesson, file, clips, pronunciations, onComplete }
     <div class="jp-concept-progress-wrap">
       <progress class="jp-concept-progress" aria-label="Scene progress" max={1} value={frame?.progress ?? 0} />
     </div>
-    {(done || tryIt) && <div class="jp-concept-footer">
+    {((done && !lesson.quickCheck) || tryIt) && <div class="jp-concept-footer">
       {done && <p role="status" class={played.current.size === scenes.length ? 'jp-mode-studied jp-concept-done' : 'jp-summary-sub jp-concept-done'}>
         {played.current.size === scenes.length ? '✓ Lesson complete' : 'Play each scene to complete this lesson.'}
       </p>}

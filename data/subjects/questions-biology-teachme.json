@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "subject": "biology",
+  "count": 2,
+  "questions": [
+    {
+      "id": "bio-pilot-001",
+      "subject": "biology",
+      "topic": "Genetics & heredity",
+      "chapter": "10",
+      "concept": "Monohybrid inheritance",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which offspring genotype is heterozygous in a cross between two Yy pea plants?",
+      "options": [
+        {
+          "id": "a",
+          "text": "YY",
+          "why": "YY has two copies of the same dominant allele.",
+          "whyWrong": "YY has two copies of the same dominant allele."
+        },
+        {
+          "id": "b",
+          "text": "Yy",
+          "why": "Yy has one dominant and one recessive allele, so it is heterozygous.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "yy",
+          "why": "yy has two copies of the same recessive allele.",
+          "whyWrong": "yy has two copies of the same recessive allele."
+        },
+        {
+          "id": "d",
+          "text": "Y",
+          "why": "Y represents one allele and does not show an offspring’s allele pair.",
+          "whyWrong": "Y represents one allele and does not show an offspring’s allele pair."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "a",
+        "c"
+      ],
+      "hint": "Look for two different alleles.",
+      "explanation": "Yy has one dominant and one recessive allele, so it is heterozygous.",
+      "trap": "YY has two copies of the same dominant allele.",
+      "mnemonic": "Look for two different alleles.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Yy has one dominant and one recessive allele, so it is heterozygous."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original practice · OpenStax Biology 2e §12.3",
+      "reviewed": true,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "bio-pilot-002",
+      "subject": "biology",
+      "topic": "Genetics & heredity",
+      "chapter": "10",
+      "concept": "Monohybrid inheritance",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which alleles can a Yy pea plant pass on for seed colour in a single gamete?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both Y and y",
+          "why": "The two alleles separate into different gametes.",
+          "whyWrong": "The two alleles separate into different gametes."
+        },
+        {
+          "id": "b",
+          "text": "Y only",
+          "why": "The recessive allele can also be passed on.",
+          "whyWrong": "The recessive allele can also be passed on."
+        },
+        {
+          "id": "c",
+          "text": "Either Y or y",
+          "why": "The allele pair separates during gamete formation, so a gamete carries one of the two alleles.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "y only",
+          "why": "The dominant allele can also be passed on.",
+          "whyWrong": "The dominant allele can also be passed on."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "An allele pair separates when gametes form.",
+      "explanation": "The allele pair separates during gamete formation, so a gamete carries one of the two alleles.",
+      "trap": "The two alleles separate into different gametes.",
+      "mnemonic": "An allele pair separates when gametes form.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The allele pair separates during gamete formation, so a gamete carries one of the two alleles."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original practice · OpenStax Biology 2e §12.3",
+      "reviewed": true,
+      "label": "JAMB-style practice"
+    }
+  ]
+}

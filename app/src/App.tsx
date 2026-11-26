@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'preact/hooks'
-import { LogPage } from './components/share/LogPage'
 import { lazyView } from './lib/lazyView'
 import { submitExpiredExam } from './lib/modes'
 import { examRun, results } from './screens/examModules'
@@ -24,6 +23,7 @@ const ExamSetup = screenView(lazyView(() => import('./screens/ExamSetup').then((
 const ExamRun = screenView(examRun, 'Exam')
 const Results = screenView(results, 'Results')
 const Session = screenView(lazyView(() => import('./screens/Session').then(({ Session }) => Session)), 'Questions')
+const LogPage = screenView(lazyView(() => import('./components/share/LogPage').then(({ LogPage }) => LogPage)), 'Activity log')
 const Summary = screenView(lazyView(() => import('./screens/Summary').then(({ Summary }) => Summary)), 'Progress summary')
 
 const FiguresDemo = import.meta.env.DEV

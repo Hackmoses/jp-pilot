@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { STUDY_TOPICS, STUDY_TRY_IDS } from '../../lib/sections'
+import { conceptLessonTopic, STUDY_TOPICS, STUDY_TRY_IDS } from '../../lib/sections'
 import { studyChapterIds, studyInteractives } from './TryItCard'
 import { deposition, faradayConstant } from './try-it-electrolysis'
 import { boylePressure, charlesVolume, molecularSpeedRatio } from './try-it-gas'
@@ -86,7 +86,11 @@ it('pins lessons to syllabus topics, in step with the Study topic list', () => {
   expect(titles('mathematics', '1')).toEqual(['Number base converter'])
   expect(titles('mathematics', '3')).toEqual(['Indices explorer'])
   for (const subject of ['chemistry', 'physics', 'biology', 'mathematics']) {
-    expect([...studyChapterIds(subject)].sort()).toEqual([...STUDY_TOPICS[subject]].sort())
+    const available = new Set(studyChapterIds(subject))
+    for (const chapter of STUDY_TOPICS[subject]) {
+      if (conceptLessonTopic(subject, chapter)) available.add(chapter)
+    }
+    expect([...available].sort()).toEqual([...STUDY_TOPICS[subject]].sort())
   }
 })
 
