@@ -1,0 +1,11 @@
+# Python dependencies for audio/regenerate_voice.py on NVIDIA GPU machines.
+# If CUDA PyTorch is not pre-installed, install it first for your CUDA version, e.g.:
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu124
+# System requirement: ffmpeg and ffprobe (with libopus) on PATH.
+setuptools<81
+torch
+torchaudio
+numpy
+soundfile
+openai-whisper
+chatterbox-tts
