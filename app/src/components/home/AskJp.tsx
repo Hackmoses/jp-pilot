@@ -32,9 +32,9 @@ function linkLabel(entry: SearchEntry) {
 
 function AskGoogle({ query, quiet }: { query: string; quiet?: boolean }) {
   if (!query.trim() || !navigator.onLine) return null
-  return <a class={quiet ? 'home-link home-google-link' : 'home-btn home-google'} href={googleUrl(query)}
+  return <a class={quiet ? 'home-link home-google-link' : 'home-btn home-btn--small home-google'} href={googleUrl(query)}
     target="_blank" rel="noopener noreferrer">
-    {quiet ? 'Not what you need? Search Google ↗' : `Search Google for “${query.trim()}” ↗`}
+    {quiet ? 'Not what you need? Search Google ↗' : 'Search Google ↗'}
   </a>
 }
 
