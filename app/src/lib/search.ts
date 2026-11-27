@@ -1,6 +1,6 @@
 // Ask JP searches JP's own lessons, practice topics and approved glossary entries on the device.
 export type SearchEntry = {
-  kind: 'term' | 'clip' | 'study' | 'practice' | 'cards'
+  kind: 'term' | 'lesson' | 'clip' | 'study' | 'practice' | 'cards'
   title: string
   subject: string
   href: string
@@ -44,7 +44,7 @@ function wordScore(word: string, tokens: string[]) {
   return 0
 }
 
-const kindWeight: Record<SearchEntry['kind'], number> = { term: 1.3, clip: 1.2, study: 1.1, cards: 1, practice: 1 }
+const kindWeight: Record<SearchEntry['kind'], number> = { term: 1.3, lesson: 1.25, clip: 1.2, study: 1.1, cards: 1, practice: 1 }
 
 export function search(index: SearchIndex, query: string, limit = 4) {
   const words = queryWords(query)

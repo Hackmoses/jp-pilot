@@ -1,0 +1,97 @@
+.jp-lesson-parts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 4px;
+  padding: 0;
+  list-style: none;
+  counter-reset: part;
+}
+
+.jp-lesson-parts li {
+  counter-increment: part;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.jp-lesson-parts li::before { content: counter(part) " · "; }
+
+.jp-lesson-check {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.jp-lesson-check-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 16px;
+}
+
+.jp-lesson-check-stem { margin: 0; font-weight: 500; line-height: 1.5; }
+
+.jp-lesson-check-options { display: grid; gap: var(--space-2); }
+
+.jp-lesson-check-option button {
+  width: 100%;
+  min-height: var(--tap-min);
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.jp-lesson-check-option button b { color: var(--brand); margin-right: 6px; }
+.jp-lesson-check-option button:disabled { cursor: default; }
+.jp-lesson-check-option[data-state='correct'] button { border-color: var(--good); background: var(--good-soft); }
+.jp-lesson-check-option[data-state='wrong'] button { border-color: var(--bad); background: var(--bad-soft); }
+.jp-lesson-check-option[data-state='dim'] button { opacity: 0.7; }
+
+.jp-lesson-check-option p {
+  margin: 4px 2px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.jp-lesson-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--bg);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.jp-lesson-card:hover { border-color: var(--brand); }
+
+.jp-lesson-card strong { display: block; font-size: 15px; }
+.jp-lesson-card span span { font-size: 12.5px; color: var(--ink-2); }
+
+.jp-lesson-card-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.jp-lesson-list { display: grid; gap: var(--space-2); }
+
+@media (min-width: 720px) {
+  .jp-lesson-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

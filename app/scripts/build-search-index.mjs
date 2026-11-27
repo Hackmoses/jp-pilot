@@ -94,6 +94,15 @@ function clipChapter(lessonFile) {
   return chapter ? '#/study?' + params('biology', chapter) : ''
 }
 
+for (const file of readdirSync(path.join(rootDir, 'data')).filter((f) => f.endsWith('-lessons.json'))) {
+  const doc = read(path.join(rootDir, 'data', file))
+  for (const lesson of doc.lessons ?? []) {
+    entries.push({ kind: 'lesson', title: lesson.title, subject: doc.subject, href: '#/lesson?id=' + encodeURIComponent(lesson.id),
+      words: clean([...(lesson.keywords ?? []), ...lesson.steps.map((step) => step.title ?? '')]),
+      detail: `Concept lesson · about ${lesson.minutes ?? 3} minutes` })
+  }
+}
+
 const glossaryFile = path.join(rootDir, 'data', 'glossary.json')
 let approved = 0
 if (existsSync(glossaryFile)) {

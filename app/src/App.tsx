@@ -26,6 +26,7 @@ const Results = screenView(results, 'Results')
 const Session = screenView(lazyView(() => import('./screens/Session').then(({ Session }) => Session)), 'Questions')
 const LogPage = screenView(lazyView(() => import('./components/share/LogPage').then(({ LogPage }) => LogPage)), 'Activity log')
 const InfoPages = screenView(lazyView(() => import('./screens/InfoPages').then(({ InfoPages }) => InfoPages)), 'JP')
+const ConceptLesson = screenView(lazyView(() => import('./screens/ConceptLesson').then(({ ConceptLesson }) => ConceptLesson)), 'Lesson')
 const Summary = screenView(lazyView(() => import('./screens/Summary').then(({ Summary }) => Summary)), 'Progress summary')
 
 const FiguresDemo = import.meta.env.DEV
@@ -88,6 +89,8 @@ export function App() {
       return <Session key={route} />
     case '#/done':
       return <Summary />
+    case '#/lesson':
+      return <><ReturnBar /><ConceptLesson key={route} id={params.get('id') ?? ''} /></>
     case '#/log':
       return <LogPage />
     case '#/about':

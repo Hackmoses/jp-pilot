@@ -21,6 +21,7 @@ function loadIndex() {
 }
 
 function linkLabel(entry: SearchEntry) {
+  if (entry.kind === 'lesson') return { title: 'Lesson · ' + entry.title, detail: entry.detail }
   if (entry.kind === 'clip') return { title: 'Teach me · ' + entry.title, detail: entry.detail }
   if (entry.kind === 'study') return { title: 'Study · ' + entry.title, detail: entry.detail }
   if (entry.kind === 'cards') return { title: entry.title + ' cards', detail: entry.detail }

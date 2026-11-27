@@ -29,6 +29,8 @@ import type { OptionId } from '../lib/types'
 import { Countdown } from './Countdown'
 import { calculator as calculatorModule } from './examModules'
 import { mayAnswer, recordVisitorAnswer } from '../lib/access'
+import { lessonFor } from '../lib/conceptLessons'
+import { useLessonIndex } from '../lib/lessonIndex'
 import { ACCOUNTS_ENABLED, FREE_QUESTIONS } from '../lib/config'
 import { lazyView } from '../lib/lazyView'
 
@@ -164,6 +166,7 @@ export function Session({ attempt, study, review }: SessionProps) {
   const answered = pickedId !== null || Boolean(review)
   // Biology teaches through illustrated Teach me clips instead of the handwritten player.
   const solutionId = question?.subject === 'biology' ? undefined : question?.animationId
+  const lessonIndex = useLessonIndex()
   const calculatorDialog = useRef<HTMLDialogElement>(null)
   const [calculatorUsed, setCalculatorUsed] = useState(false)
   const { View: CalculatorView, failed: calculatorFailed } = calculatorModule.useView(calculatorUsed)
@@ -352,7 +355,9 @@ export function Session({ attempt, study, review }: SessionProps) {
   const detailed = !compact || full
   const chapterId = getQuestionChapter(question)
   const englishLearn = compact && question.subject === 'english' ? englishLearnLink(chapterId) : undefined
+  const conceptLesson = lessonIndex && question ? lessonFor(question, chapterId, lessonIndex) : undefined
   const learnHref = englishLearn?.href
+    ?? (conceptLesson ? '#/lesson?id=' + encodeURIComponent(conceptLesson.id) : undefined)
     ?? (compact && STUDY_TOPICS[question.subject]?.includes(chapterId) ? studyLink(question.subject, chapterId) : undefined)
   const exitHref = back ?? (attempt ? (attempt.mode === 'exam' ? '#/exam'
     : '#/practice?subject=' + encodeURIComponent(question.subject)) : '#/')
@@ -485,7 +490,7 @@ export function Session({ attempt, study, review }: SessionProps) {
             full={full}
             onFull={() => setFull((prev) => !prev)}
             learnHref={learnHref}
-            learnLabel={englishLearn?.label}
+            learnLabel={englishLearn?.label ?? (conceptLesson ? `Watch: ${conceptLesson.title} in ${conceptLesson.minutes} minutes →` : undefined)}
             onLearn={() => setReturnPoint({
               href: window.location.hash,
               label: review ? 'Back to exam review' : attempt ? 'Back to practice · Question ' + (index + 1) + ' of ' + queue.length : 'Back to the question',
