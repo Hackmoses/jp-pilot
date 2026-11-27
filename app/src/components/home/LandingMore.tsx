@@ -35,10 +35,11 @@ function Phone({ tab, solution, openSolution, closeSolution }: { tab: number; so
           <span class="ld-muted ld-small">Physics · Question 4 of 20</span>
           <div class="ld-track"><span style={{ width: '20%' }} /></div>
           <b>A car starts from rest and accelerates at 30 m/s² for 20 s. How far does it travel?</b>
-          <span class="ld-opt">600 m</span>
-          <span class="ld-opt" data-state="correct">6 km <b>Correct</b></span>
-          <span class="ld-opt">12 km</span>
-          <button type="button" class="ld-btn ld-btn--primary ld-push" onClick={openSolution}>Watch the solution</button>
+          <span class="ld-opt"><i>A</i>600 m</span>
+          <span class="ld-opt" data-state="correct"><i>B</i>6 km <b>Correct</b></span>
+          <span class="ld-opt"><i>C</i>12 km</span>
+          <span class="ld-opt"><i>D</i>1.2 km</span>
+          <button type="button" class="ld-btn ld-btn--small ld-btn--primary ld-push" onClick={openSolution}>Watch the solution</button>
         </div>}
         {tab === 0 && solution && <div class="ld-screen" key="s">
           <div class="ld-row"><button type="button" class="ld-btn ld-btn--small" aria-label="Back to the question" onClick={closeSolution}>←</button><b>Worked solution</b></div>
@@ -50,7 +51,7 @@ function Phone({ tab, solution, openSolution, closeSolution }: { tab: number; so
           </div>
           <span class="ld-opt ld-small">“It starts from rest, so the starting speed is zero. Square the time first.”</span>
           <span class="ld-muted ld-small">Step 3 of 4 · 0.75× · CC on</span>
-          <a class="ld-btn ld-btn--soft ld-push" href="#/lesson?id=phys-motion">Watch: Equations of motion</a>
+          <a class="ld-btn ld-btn--small ld-btn--soft ld-push" href="#/lesson?id=phys-motion">Watch: Equations of motion</a>
         </div>}
         {tab === 1 && <div class="ld-screen" key="l">
           <span class="ld-muted ld-small">Key concept · Physics</span>
@@ -59,16 +60,18 @@ function Phone({ tab, solution, openSolution, closeSolution }: { tab: number; so
           <span class="ld-opt"><b>Rule card</b><br /><span class="ld-muted">v = u + at · s = ut + ½at²</span></span>
           <span class="ld-dots"><i class="on" /><i class="on" /><i /><i /></span>
           <span class="ld-muted ld-small">Two examples, the traps, then a quick check.</span>
-          <a class="ld-btn ld-push" href="#/lesson?id=phys-motion">Open the lesson</a>
+          <a class="ld-btn ld-btn--small ld-push" href="#/lesson?id=phys-motion">Open the lesson</a>
         </div>}
         {tab === 2 && <div class="ld-screen" key="e">
           <div class="ld-row ld-between"><b>Mock UTME</b><span class="ld-chip ld-chip--warm">1:58:12</span></div>
           <span class="ld-row"><span class="ld-chip ld-chip--on">English</span><span class="ld-chip">Maths</span><span class="ld-chip">Physics</span></span>
           <span class="ld-muted ld-small">Question 23 of 180</span>
           <b>Choose the option nearest in meaning to the word in italics.</b>
-          <span class="ld-opt">A. careless</span>
-          <span class="ld-opt" data-state="picked">B. thorough</span>
-          <span class="ld-row ld-push"><span class="ld-btn">Calculator</span><a class="ld-btn ld-btn--primary" href="#/exam">Try a mock</a></span>
+          <span class="ld-opt"><i>A</i>careless</span>
+          <span class="ld-opt" data-state="picked"><i>B</i>thorough</span>
+          <span class="ld-opt"><i>C</i>hasty</span>
+          <span class="ld-opt"><i>D</i>timid</span>
+          <span class="ld-row ld-push"><span class="ld-btn ld-btn--small">Calculator</span><a class="ld-btn ld-btn--small ld-btn--primary" href="#/exam">Try a mock</a></span>
         </div>}
       </div>
     </div>
@@ -154,10 +157,13 @@ function Story() {
   )
 }
 
-const TRUST = [
-  ['Real papers', 'Past questions show the JAMB year they came from. Practice questions are labelled as practice.'],
-  ['Textbook checked', 'Every worked answer and lesson is checked against the standard textbooks listed in References.'],
-  ['Independent expert reviewers', 'Subject experts outside JP review questions and answers before they go live.'],
+const TRUST: [string, string, preact.JSX.Element][] = [
+  ['Real JAMB papers', 'Every past question shows the year it came from. Practice questions are clearly labelled as practice.',
+    <><path d="M7 3h7l5 5v13H7z" /><path d="M14 3v5h5M10 13h6M10 17h6" /></>],
+  ['Checked against textbooks', 'Worked answers and lessons are checked against the standard textbooks listed in References.',
+    <><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z" /><path d="M4 19V5M9 8l2 2 4-4" /></>],
+  ['Independent expert reviewers', 'Subject experts outside JP review questions and answers before they go live.',
+    <><path d="M12 3l7 3v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z" /><path d="M9 12l2 2 4-4" /></>],
 ]
 
 export function LandingMore({ stats }: { stats: HomeStats | null }) {
@@ -167,12 +173,20 @@ export function LandingMore({ stats }: { stats: HomeStats | null }) {
     <ThreeWays />
     <Story />
 
-    <section class="ld-section ld-section--tight ld-defer" aria-labelledby="ld-trust-title">
+    <section class="ld-trust ld-defer" aria-labelledby="ld-trust-title">
       <div class="ld-wrap">
-        <h2 id="ld-trust-title" class="ld-h2">Every answer is checked before you see it.</h2>
-        <div class="ld-grid3">
-          {TRUST.map(([title, text]) => <div key={title} class="ld-card"><b class="ld-brand">{title}</b><p class="ld-muted">{text}</p></div>)}
+        <div class="ld-center">
+          <h2 id="ld-trust-title" class="ld-h2">Every answer is checked before you see it.</h2>
+          <p class="ld-lead">Three checks stand between a question and your screen.</p>
         </div>
+        <ol class="ld-trust-grid">
+          {TRUST.map(([title, text, icon]) => <li key={title} class="ld-trust-card">
+            <span class="ld-trust-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{icon}</svg></span>
+            <b>{title}</b>
+            <p>{text}</p>
+          </li>)}
+        </ol>
+        <p class="ld-center ld-small ld-muted ld-trust-foot">Spotted a mistake? <a href="#/contact">Report it</a> and we fix it.</p>
       </div>
     </section>
 

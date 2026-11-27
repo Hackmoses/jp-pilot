@@ -15,6 +15,7 @@
 .ld-btn:hover { background: color-mix(in srgb, var(--line) 35%, var(--bg)); }
 .ld-btn:active { transform: scale(.98); }
 .ld-btn:focus-visible, .ld-tab:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.ld .ld-btn--primary, .ld .ld-btn--primary:visited, .ld .ld-btn--primary:hover { color: var(--bg); }
 .ld-btn--primary, .ld-btn--primary:visited { background: var(--brand); border-color: var(--brand); color: var(--bg); }
 .ld-btn--primary:hover { background: color-mix(in srgb, var(--brand) 85%, var(--ink)); border-color: color-mix(in srgb, var(--brand) 85%, var(--ink)); }
 .ld-btn--ghost { border-color: transparent; background: transparent; }
@@ -63,7 +64,9 @@
 .ld-brand { color: var(--brand); font-size: 15px; }
 .ld-link { display: inline-block; margin-top: 10px; font-weight: 600; text-decoration: none; }
 .ld-card { display: block; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 12px 14px; color: var(--ink); text-decoration: none; }
-.ld-card p { margin: 6px 0 0; }
+.ld-card p { margin: 8px 0 12px; line-height: 1.5; }
+.ld-steps .ld-card { padding: 16px 18px; }
+.ld-card > .ld-opt + .ld-opt { margin-top: 8px; }
 a.ld-card { transition: border-color .15s ease; }
 a.ld-card:hover { border-color: color-mix(in srgb, var(--brand) 40%, var(--bg)); }
 .ld-row { display: flex; gap: 8px; align-items: center; }
@@ -72,8 +75,11 @@ a.ld-card:hover { border-color: color-mix(in srgb, var(--brand) 40%, var(--bg));
 .ld-chip--brand { background: var(--brand-soft); color: var(--brand); }
 .ld-chip--on { background: var(--brand); color: var(--bg); }
 .ld-chip--warm { background: var(--hint-soft); color: var(--hint); }
-.ld-opt { display: block; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--option-line); background: var(--bg); }
+.ld-opt { display: block; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--option-line); background: var(--bg); }
 .ld-opt b { float: right; font-size: 12px; }
+.ld-opt i { font-style: normal; font-weight: 700; margin-right: 8px; color: var(--ink-2); }
+.ld-phone .ld-opt { padding: 6px 10px; }
+.ld-phone .ld-screen { gap: 6px; }
 .ld-opt[data-state="correct"] { background: var(--good-soft); border-color: color-mix(in srgb, var(--good) 40%, var(--bg)); }
 .ld-opt[data-state="correct"] b { color: var(--good); }
 .ld-opt[data-state="wrong"] { background: var(--bad-soft); border-color: color-mix(in srgb, var(--bad) 40%, var(--bg)); }
@@ -130,6 +136,17 @@ a.ld-card:hover { border-color: color-mix(in srgb, var(--brand) 40%, var(--bg));
 .ld-step-text span { color: color-mix(in srgb, var(--ink-2) 85%, var(--bg)); }
 .ld-lesson { display: flex; gap: 10px; align-items: center; }
 .ld-play { width: 32px; height: 32px; border-radius: 8px; background: var(--brand-soft); color: var(--brand); display: grid; place-items: center; flex: none; }
+
+/* Trust */
+.ld-trust { padding-block: 48px; background: var(--bg); border-block: 1px solid var(--line); }
+@media (min-width: 720px) { .ld-trust { padding-block: 64px; } }
+.ld-trust-grid { list-style: none; margin: 28px auto 0; padding: 0; max-width: 1000px; display: grid; gap: 12px; }
+@media (min-width: 720px) { .ld-trust-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; } }
+.ld-trust-card { display: grid; gap: 6px; align-content: start; padding: 20px; border-radius: var(--radius-card); background: color-mix(in srgb, var(--line) 32%, var(--bg)); border: 1px solid var(--line); }
+.ld-trust-card b { font-size: 15px; }
+.ld-trust-card p { margin: 0; color: var(--ink-2); line-height: 1.55; }
+.ld-trust-icon { width: 40px; height: 40px; margin-bottom: 8px; border-radius: 10px; display: grid; place-items: center; background: var(--brand-soft); color: var(--brand); }
+.ld-trust-foot { margin: 24px 0 0; }
 
 /* Dark lessons band, subjects, closing call to action */
 .ld-dark { background: var(--ink); color: var(--bg); padding-block: 40px; }

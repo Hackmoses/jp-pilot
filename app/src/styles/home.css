@@ -580,24 +580,32 @@
 .home-ask-links {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--bg);
+  overflow: hidden;
 }
 
 .home-ask-link {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-small);
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 0;
+  transition: background-color 0.15s ease;
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
   overflow-wrap: anywhere;
 }
 
+.home-ask-link + .home-ask-link {
+  border-top: 1px solid var(--line);
+}
+
 .home-ask-link:hover {
-  border-color: var(--brand);
+  background: var(--brand-soft);
 }
 
 .home-ask-link small {
@@ -827,14 +835,6 @@
     border-radius: 14px;
   }
 
-  .home-ask-results {
-    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-    align-items: start;
-  }
-
-  .home-ask-results> :only-child {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (min-width: 760px) {

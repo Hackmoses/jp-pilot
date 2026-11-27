@@ -34,7 +34,7 @@ function AskGoogle({ query, quiet }: { query: string; quiet?: boolean }) {
   if (!query.trim() || !navigator.onLine) return null
   return <a class={quiet ? 'home-link home-google-link' : 'home-btn home-google'} href={googleUrl(query)}
     target="_blank" rel="noopener noreferrer">
-    {quiet ? 'Not what you need? Ask Google ↗' : 'Ask Google ↗'}
+    {quiet ? 'Not what you need? Search Google ↗' : `Search Google for “${query.trim()}” ↗`}
   </a>
 }
 
@@ -73,7 +73,12 @@ export function AskJp() {
   return (
     <section id="ask-jp" class="home-card home-ask" aria-labelledby="home-ask-label">
       <label id="home-ask-label" for="home-ask-input" class="home-eyebrow">Ask JP</label>
-      <form class="home-ask-field" role="search" onSubmit={(event) => { event.preventDefault(); void run(query) }}>
+      <form class="home-ask-field" role="search" onSubmit={(event) => {
+        event.preventDefault()
+        // Pressing Enter when JP has nothing for the words sends the student straight to Google.
+        if (state === 'done' && results.length === 0 && query.trim() && navigator.onLine) window.open(googleUrl(query), '_blank', 'noopener')
+        else void run(query)
+      }}>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
           <circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" />
         </svg>
@@ -92,7 +97,7 @@ export function AskJp() {
           </div>
         </div>}
         {state === 'done' && results.length === 0 && <div class="home-ask-empty">
-          <p class="home-note">Nothing in JP yet for “{query.trim()}”. Try a shorter word, or ask Google.</p>
+          <p class="home-note">Nothing in JP yet for “{query.trim()}”. Press Enter or tap below to search Google.</p>
           <div class="home-ask-actions"><AskGoogle query={query} /></div>
         </div>}
         {state === 'done' && results.length > 0 && <div class="home-ask-results">
@@ -113,7 +118,7 @@ export function AskJp() {
               </a>
             })}
           </div>}
-          {!term && <AskGoogle query={query} quiet />}
+          <AskGoogle query={query} quiet />
         </div>}
       </div>
       {(state === 'idle' || (state === 'done' && results.length === 0)) && <div class="home-ask-examples">

@@ -84,11 +84,10 @@ function Header({ name }: { name: string | null }) {
               <circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" />
             </svg>
           </button>
-          {name ? <span class="home-avatar" aria-label={'Signed in as ' + name}>{name[0]}</span>
-            : ACCOUNTS_ENABLED ? <>
-              <a class="ld-btn ld-btn--ghost ld-hide-sm" href="#/signup">Sign in</a>
-              <a class="ld-btn ld-btn--primary" href="#/signup">Create free account</a>
-            </> : null}
+          {name ? <span class="home-avatar" aria-label={'Signed in as ' + name}>{name[0]}</span> : <>
+            <a class="ld-btn ld-btn--ghost ld-hide-sm" href="#/signup">Sign in</a>
+            <a class="ld-btn ld-btn--primary" href="#/signup">Create free account</a>
+          </>}
         </div>
       </div>
     </header>
