@@ -490,7 +490,7 @@ export function Session({ attempt, study, review }: SessionProps) {
             full={full}
             onFull={() => setFull((prev) => !prev)}
             learnHref={learnHref}
-            learnLabel={englishLearn?.label ?? (conceptLesson ? `Watch: ${conceptLesson.title} in ${conceptLesson.minutes} minutes →` : undefined)}
+            learnLabel={englishLearn?.label ?? (conceptLesson ? `Watch: ${conceptLesson.title} · ${conceptLesson.minutes} min` : undefined)}
             onLearn={() => setReturnPoint({
               href: window.location.hash,
               label: review ? 'Back to exam review' : attempt ? 'Back to practice · Question ' + (index + 1) + ' of ' + queue.length : 'Back to the question',

@@ -128,9 +128,9 @@ body {
 
 .jp-btn--full {
   width: 100%;
-  min-height: 38px;
-  padding: 7px 14px;
-  font-size: 14px;
+  min-height: 34px;
+  padding: 5px 12px;
+  font-size: 13.5px;
 }
 
 .jp-stats {
@@ -436,15 +436,18 @@ body {
 .jp-return-bar-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8px 16px;
+  padding: 6px 12px;
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
 .jp-return-bar-link {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   min-width: 0;
+  min-height: 30px;
+  padding: 4px 10px;
+  font-size: 13px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1301,7 +1304,7 @@ body {
 
 .jp-summary .jp-share-control>.jp-wsd-button {
   width: 100%;
-  min-height: 36px;
+  min-height: 32px;
   padding: 6px 12px;
   font-size: 13.5px;
 }
