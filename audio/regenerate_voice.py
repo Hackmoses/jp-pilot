@@ -1059,23 +1059,28 @@ def main() -> int:
             total_gen_sec = gen_sec1
             retried = False
 
-            if not v1["exactWordsOk"]:
+            # Up to three more takes with different seeds when the first is not word-perfect.
+            w2 = None
+            for extra, seed in enumerate((args.retry_seed, args.retry_seed + 101, args.retry_seed + 202)):
+                if chosen_v["exactWordsOk"]:
+                    break
                 retried = True
                 arr2, gen_sec2 = generate_audio(
-                    model, device_used, spoken_line, args.exaggeration, args.cfg_weight, args.retry_seed
+                    model, device_used, spoken_line, args.exaggeration, args.cfg_weight, seed
                 )
                 sf.write(str(gen_wav), arr2, model.sr)
-                encode_opus_webm(gen_wav, tmp_webm_2)
-                w2 = whisper_model.transcribe(str(tmp_webm_2), fp16=False, language="en")["text"].strip()
-                v2 = strict_verify(spoken_line, step_text, w2)
+                take = tmp_webm_2.with_name(f"{tmp_webm_2.stem}_{extra}.webm")
+                encode_opus_webm(gen_wav, take)
+                w_try = whisper_model.transcribe(str(take), fp16=False, language="en")["text"].strip()
+                v_try = strict_verify(spoken_line, step_text, w_try)
                 total_gen_sec += gen_sec2
-
-                if v2["exactWordsOk"] or (v2["strictOk"] and not v1["strictOk"]) or (
-                    v2["strictOk"] == v1["strictOk"] and v2["ratio"] > v1["ratio"]
+                w2 = w_try
+                if v_try["exactWordsOk"] or (v_try["strictOk"] and not chosen_v["strictOk"]) or (
+                    v_try["strictOk"] == chosen_v["strictOk"] and v_try["ratio"] > chosen_v["ratio"]
                 ):
-                    chosen_w = w2
-                    chosen_v = v2
-                    chosen_webm = tmp_webm_2
+                    chosen_w = w_try
+                    chosen_v = v_try
+                    chosen_webm = take
 
             if chosen_v["strictOk"]:
                 os.replace(chosen_webm, out_path)
@@ -1117,18 +1122,18 @@ def main() -> int:
                     dest2 = failed_dir / f"{slug}_attempt2.webm"
                     shutil.copy2(tmp_webm_2, dest2)
                     saved_attempts.append(str(dest2))
-                if orig_entry is not None:
-                    after_bytes = restore_from_origin_main(rel_path, orig_entry, cur_entry)
-                    dur_ms = orig_entry["durationMs"]
-                    rej_status = "REJECTED_RESTORED_AF_HEART"
-                else:
-                    if out_path.exists():
-                        out_path.unlink()
-                    manifest["clips"] = [c for c in manifest["clips"] if c["path"] != rel_path]
-                    manifest_by_path.pop(rel_path, None)
-                    after_bytes = 0
-                    dur_ms = 0
-                    rej_status = "REJECTED_NEW_NO_FALLBACK"
+                # Keep the closest take in this voice so a solution never mixes voices, and list it
+                # for a person to listen to. Many rejections are the transcriber's spelling (mmHg, dm3).
+                if chosen_webm != out_path:
+                    shutil.copy2(chosen_webm, out_path)
+                dur_ms = ffprobe_duration_ms(out_path)
+                after_bytes = out_path.stat().st_size
+                cur_entry["voice"] = args.voice_name
+                cur_entry["durationMs"] = dur_ms
+                rej_status = "KEPT_FOR_REVIEW"
+                review_file = ROOT / "audio" / f"review-voice-{subject}.txt"
+                with review_file.open("a", encoding="utf-8") as fh:
+                    fh.write(f"{rel_path}\t{chosen_v['reasons']}\tstep={step_text!r}\theard={chosen_w!r}\n")
                 st.update({
                     "status": "rejected_whisper_mismatch",
                     "deduped": False,
@@ -1180,15 +1185,15 @@ def main() -> int:
 
     print("\n=== SUMMARY ===", flush=True)
     print(f"Subject: {subject} | Total: {len(spoken_clips)}", flush=True)
-    print(f"Passed & accepted (chatterbox-charon): {len(passed)}", flush=True)
+    print(f"Passed & accepted ({args.voice_name}): {len(passed)}", flush=True)
     print(f"Skipped (step text needs review): {len(skipped_review)}", flush=True)
-    print(f"Rejected & restored to af_heart (Whisper number/unit/formula fail): {len(rejected)}", flush=True)
+    print(f"Kept for review in {args.voice_name} (Whisper number/unit/formula fail, see audio/review-voice-{subject}.txt): {len(rejected)}", flush=True)
     pct_str = f"{after_total / before_total * 100:.1f}%" if before_total else "n/a (new clips)"
     print(f"Before total bytes: {before_total:,} ({before_total / (1024*1024):.2f} MB)", flush=True)
     print(f"After  total bytes: {after_total:,} ({after_total / (1024*1024):.2f} MB) ({pct_str})", flush=True)
     print(f"Wall time: {wall_sec:.1f}s ({wall_sec/60:.2f} min) | Sum genSec: {total_gen:.1f}s", flush=True)
     if rejected:
-        print("\nRejected clips (restored to af_heart):", flush=True)
+        print("\nClips to listen to (kept in this voice):", flush=True)
         for p, s_txt, w_txt, rsn in rejected:
             print(f"  {p} | {rsn} | step={s_txt!r} | heard={w_txt!r}", flush=True)
     if passed_minor:

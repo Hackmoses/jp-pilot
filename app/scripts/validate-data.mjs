@@ -154,6 +154,13 @@ const MIXED_VOICE_QUEUE = new Set([
   'audio/anim-phys-api-0097', 'audio/anim-phys-jamb-2012-041', 'audio/teach/anim-chem-api-0031',
   'audio/teach/anim-chem-api-0154', 'audio/teach/anim-chem-jamb-2011-002', 'audio/teach/anim-chem-jamb-2014-022',
   'audio/teach/anim-phys-jamb-2012-041', 'audio/teach/anim-phys-jamb-2013-013',
+  'audio/anim-chem-jamb-2017-023',
+  'audio/teach/anim-chem-jamb-2011-019',
+  'audio/teach/anim-chem-jamb-2012-004',
+  'audio/teach/anim-chem-jamb-2012-021',
+  'audio/teach/anim-chem-jamb-2013-050',
+  'audio/teach/anim-chem-jamb-2015-006',
+  'audio/teach/anim-chem-jamb-2017-016',
 ])
 const audioManifestFile = path.join(rootDir, 'audio', 'manifest.json')
 if (existsSync(audioManifestFile)) {
