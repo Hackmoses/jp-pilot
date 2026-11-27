@@ -99,7 +99,8 @@ for (const [subject, qMap] of questionsBySubject.entries()) {
     writeFileSync(path.join(outDir, `animations-${subject}.json`), JSON.stringify(aOut))
   }
 
-  const completeCount = questions.filter((q) => {
+  const active = questions.filter((q) => !q.retired)
+  const completeCount = active.filter((q) => {
     const anim = q.animationId ? animationsById.get(q.animationId) : undefined
     if (!q.animationId || !anim || anim.id !== q.animationId || anim.questionId !== q.id) return false
     if (anim.kind === 'concept') return (anim.steps?.length ?? 0) > 0 || (anim.teach?.length ?? 0) > 0
@@ -107,7 +108,7 @@ for (const [subject, qMap] of questionsBySubject.entries()) {
   }).length
 
   manifestSubjects[subject] = {
-    count: questions.length,
+    count: active.length,
     completeCount,
     hasAnimations: subjectAnims.length > 0,
   }

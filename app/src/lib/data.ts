@@ -44,7 +44,7 @@ export function registerSubjectData(
 ): void {
   const normalized = subject.trim().toLowerCase()
   for (const question of subjectQuestions) {
-    if (!questionsById.has(question.id)) {
+    if (!questionsById.has(question.id) && !question.retired) {
       questions.push(question)
     }
     questionsById.set(question.id, question)

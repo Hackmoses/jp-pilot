@@ -16,6 +16,7 @@ const DAYS = 400
 const plain = (text) => typeof text === 'string' && !text.includes('\\') && !text.includes('$')
 
 export function isEligible(question) {
+  if (question.retired) return false
   const source = question.source
   if (typeof source !== 'object' || source === null || source.provider !== 'jamb-past-paper') return false
   if (question.yearVerified !== true || !source.yearLabel?.trim()) return false

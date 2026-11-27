@@ -22,7 +22,7 @@ const entries = []
 const clean = (words) => [...new Set(words.filter(Boolean).join(' ').toLowerCase().split(/[^a-z0-9]+/))].filter((w) => w.length > 1).join(' ')
 
 for (const subject of subjects) {
-  const questions = read(path.join(dataDir, `questions-${subject}.json`)).questions
+  const questions = read(path.join(dataDir, `questions-${subject}.json`)).questions.filter((q) => !q.retired)
   const chapterOf = (q) => q.chapter?.trim() || chapterForTopic(subject, q.topic) || q.topic
   const chapters = syllabusSections(subject).flatMap((section) => section.chapters)
   const titleOf = new Map(chapters.map((c) => [c.id, c]))

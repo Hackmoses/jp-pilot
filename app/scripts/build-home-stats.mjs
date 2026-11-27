@@ -17,7 +17,7 @@ const questions = Object.values(subjects).reduce((sum, count) => sum + count, 0)
 let pastQuestions = 0
 for (const file of readdirSync(dataDir).filter((f) => f.startsWith('questions-') && f.endsWith('.json'))) {
   for (const q of read(path.join(dataDir, file)).questions ?? []) {
-    if (q.source && typeof q.source === 'object' && q.source.provider === 'jamb-past-paper') pastQuestions++
+    if (!q.retired && q.source && typeof q.source === 'object' && q.source.provider === 'jamb-past-paper') pastQuestions++
   }
 }
 

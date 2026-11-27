@@ -18,7 +18,7 @@ for (const file of readdirSync(dataDir).filter((f) => f.endsWith('-lessons.json'
   const subject = doc.subject
   writeFileSync(path.join(outDir, `lessons-${subject}.json`), JSON.stringify(doc))
   const questionsFile = path.join(outDir, `questions-${subject}.json`)
-  const questions = existsSync(questionsFile) ? read(questionsFile).questions : []
+  const questions = (existsSync(questionsFile) ? read(questionsFile).questions : []).filter((q) => !q.retired)
   const chapterOf = (q) => q.chapter?.trim() || chapterForTopic(subject, q.topic) || q.topic
   for (const lesson of doc.lessons) {
     const practiceChapter = lesson.chapters[0]

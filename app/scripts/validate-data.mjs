@@ -116,7 +116,7 @@ for (const question of allQuestions) {
   )
   if (question.animationId && !matched) {
     errors.push(`${question.id}: animationId ${question.animationId} has no matching animation`)
-  } else if (question.type === 'calculation' && !matched) {
+  } else if (question.type === 'calculation' && !matched && !question.retired) {
     pending.push(question.id)
   }
 }

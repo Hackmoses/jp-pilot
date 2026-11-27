@@ -59,8 +59,8 @@ describe('practice setup', () => {
     expect(getChapters('mathematics', [qMath])).toEqual([{ id: '3', title: 'Indices, Logarithms and Surds' }])
     expect(chapterName('mathematics', '3')).toBe('Indices, Logarithms and Surds')
     // Subjects without a syllabus still fall back to the topic.
-    const qGov = { ...qMath, id: 'qg', subject: 'government', topic: 'Federalism' } as Question
-    expect(getChapters('government', [qGov])).toEqual([{ id: 'Federalism', title: 'Federalism' }])
+    const qGeo = { ...qMath, id: 'qg', subject: 'geography', topic: 'Climate' } as Question
+    expect(getChapters('geography', [qGeo])).toEqual([{ id: 'Climate', title: 'Climate' }])
   })
 
   it('validates custom question counts and timer limits cleanly', () => {

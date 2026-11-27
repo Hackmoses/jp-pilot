@@ -48,6 +48,8 @@ export interface Question {
   reviewed: boolean
   label?: 'JAMB-style practice'
   yearVerified?: boolean
+  // A retired question leaves Practice, the CBT and counts, but old attempts and reports still find it.
+  retired?: boolean
 }
 
 export interface QuestionsFile {

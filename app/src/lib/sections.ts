@@ -62,6 +62,24 @@ const economics = fromRows([
   ['F', 'International Economics', [['International Trade', 21], ['International Economic Organizations', 22]]],
 ])
 
+// JAMB UTME Government syllabus (Government.zip). Chapter ids are part.topic, as the question banks use.
+function govPart(part: number, id: string, title: string, topics: string[]): SyllabusSection {
+  return { id, title, chapters: topics.map((name, i) => ({ id: `${part}.${i + 1}`, number: i + 1, title: name, concepts: [] })) }
+}
+const government = { sections: [
+  govPart(1, 'I', 'Elements of Government', ['Definition and Scope of Government', 'Basic Concepts of Government', 'Forms of Government',
+    'Arms of Government', 'Structures of Governance', 'Systems of Governance', 'Political Ideologies', 'Constitution',
+    'Principles of Democratic Government', 'Processes of Legislation', 'Citizenship', 'The Electoral Process',
+    'Political Parties and Party Systems', 'Pressure Groups', 'Public Opinion', 'The Civil Service']),
+  govPart(2, 'II', 'Political Development in Nigeria', ['Pre-colonial Polities', 'Imperialist Penetration', 'Process of Decolonization',
+    'Constitutional Development in Nigeria', 'Post-Independence Constitutions', 'Institutions of Government after Independence',
+    'Public Commissions', 'Political Parties and Party Politics', 'Nigerian Federalism', 'Public Corporations and Parastatals',
+    'Local Government', 'The Military in Nigerian Politics']),
+  govPart(3, 'III', 'Foreign Policy and International Relations', ['Foreign Policy', "Nigeria's Foreign Policy",
+    "Nigeria's Relations with African Countries", 'Nigeria in International Organizations']),
+  govPart(4, 'IV', 'International Organizations', ['International Organizations']),
+] }
+
 // Biology has no syllabus file yet, so its JAMB sections live here.
 const biology: { subject: string; sections: SyllabusSection[] } = {
   subject: 'biology',
@@ -87,7 +105,7 @@ const biology: { subject: string; sections: SyllabusSection[] } = {
   ],
 }
 
-const syllabi: Record<string, { sections: SyllabusSection[] }> = { chemistry, physics, mathematics, biology, economics }
+const syllabi: Record<string, { sections: SyllabusSection[] }> = { chemistry, physics, mathematics, biology, economics, government }
 
 export function syllabusSections(subject: string, study = false): SyllabusSection[] {
   if (subject === 'english') return english.sections
@@ -127,6 +145,12 @@ const topicChapters: Record<string, Record<string, string>> = {
   },
   english: {
     'Synonyms': '4', 'Antonyms': '5', 'Idioms and figurative usage': '6', 'Concord and grammar': '7',
+  },
+  government: {
+    'Basic concepts of government': '1.2', 'Systems of government': '1.6', 'Constitutions and constitutionalism': '1.8',
+    'Electoral systems and political parties': '1.12', 'Public administration and civil service': '1.16',
+    'Colonial administration': '2.2', 'Nigerian constitutional development': '2.4', 'Federalism and revenue allocation': '2.9',
+    'Foreign policy and international organizations': '3.1',
   },
   economics: {
     'Basic economic concepts': '1', 'Elasticity': '4', 'Consumer behaviour': '5', 'Demand and supply': '7',
