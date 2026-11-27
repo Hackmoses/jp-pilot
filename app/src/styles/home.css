@@ -1195,3 +1195,30 @@
   .home-top > .home-ask { grid-area: ask; align-self: start; }
   .home-top .home-ask-results { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Phones: more breathing room so each block reads on its own. */
+@media (max-width: 719px) {
+  .home-header-inner,
+  .home-main,
+  .home-footer-inner { padding-inline: 20px; }
+  .home-main { gap: 32px; padding-block: 28px 36px; }
+  .home-top { gap: 28px; }
+  .home-intro { gap: 14px; }
+  .home-intro h1 { font-size: 28px; line-height: 1.2; }
+  .home-pitch { font-size: 16px; line-height: 1.65; }
+  .home-actions { margin-top: 6px; }
+  .home-card { padding: 18px; gap: 14px; }
+  .home-section { gap: 14px; }
+  .home-qotd-options { gap: 10px; }
+  .home-subjects, .home-ways { gap: 12px; }
+}
+
+/* What's inside in JP blue and white, to match the rest of the page. */
+.home-inside {
+  background: var(--brand);
+  border-color: var(--brand);
+  border-top-color: var(--brand);
+}
+.home-inside-kicker { color: color-mix(in srgb, var(--bg) 85%, var(--brand)); }
+.home-inside-sub { color: color-mix(in srgb, var(--bg) 80%, transparent); }
+.home-inside-item span { color: color-mix(in srgb, var(--bg) 88%, transparent); }
