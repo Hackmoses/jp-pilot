@@ -24,6 +24,7 @@ function collect(key) {
   visited.add(key)
   files.add('./' + chunk.file)
   for (const sheet of chunk.css ?? []) files.add('./' + sheet)
+  for (const asset of chunk.assets ?? []) if (asset.endsWith('.woff2')) files.add('./' + asset)
   for (const imported of chunk.imports ?? []) collect(imported)
 }
 for (const key of sources) collect(key)
