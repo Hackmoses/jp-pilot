@@ -15,12 +15,19 @@ export function shortcutKey(event: KeyboardEvent) {
   return event.key.toLowerCase()
 }
 
+// Questions written for a Teach me clip from a textbook, not taken from a JAMB paper.
+export function isOriginalPractice(question: Question): boolean {
+  return typeof question.source === 'string' && question.source.startsWith('Original practice')
+}
+
 export function getQuestionSourceLabel(question: Question): string | null {
   const { source } = question
   if (question.label === 'JAMB-style practice' || question.id.includes('-api-') ||
     /^SdashAPI/i.test(typeof source === 'string' ? source : source.provider)) {
     return 'JAMB-style practice'
   }
+
+  if (isOriginalPractice(question)) return 'Practice question'
 
   const year = typeof source === 'string' ? null : source.yearLabel?.trim()
   return question.yearVerified === true && year ? `JAMB ${year}` : null

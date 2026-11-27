@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'preact/hooks'
+import { isOriginalPractice } from '../components/question/logic'
 import { getQuestionsBySubject, loadManifest, loadSubject, manifestCount } from '../lib/data'
 import {
   EXAM_MINUTES, continueExam, examCount, examQueue, getAttempt, getAttemptQuestions, getExamHistory, getExamSubjects,
@@ -83,7 +84,7 @@ export function ExamSetup({ rules = false }: { rules?: boolean }) {
         {modules !== 'ready' && <p class="jp-mode-lead" role="status">{modules === 'loading'
           ? 'Preparing the exam for offline use…' : 'Could not prepare the exam. Reconnect and reload the page.'}</p>}
         <button class="jp-btn jp-btn--primary jp-btn--full" disabled={modules !== 'ready'} onClick={() => {
-          startAttempt('exam', subjects, examQueue(subjects, getQuestionsBySubject, !pilot), minutes)
+          startAttempt('exam', subjects, examQueue(subjects, (subject) => getQuestionsBySubject(subject).filter((question) => !isOriginalPractice(question)), !pilot), minutes)
           continueExam()
         }}>Start exam</button>
       </Panel>
