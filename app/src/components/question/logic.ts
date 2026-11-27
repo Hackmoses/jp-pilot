@@ -16,7 +16,7 @@ export function shortcutKey(event: KeyboardEvent) {
 }
 
 // Questions written or adapted for JP (Teach me, JAMB-style concept practice, adaptations of past-paper
-// concepts), not taken word for word from a JAMB paper. They are labelled as practice and kept out of the timed CBT exam.
+// concepts), not taken word for word from a JAMB paper. They are labelled as practice and appear in Practice and the CBT alike.
 export function isOriginalPractice(question: Question): boolean {
   return typeof question.source === 'string' && /^Original\b/.test(question.source)
 }
