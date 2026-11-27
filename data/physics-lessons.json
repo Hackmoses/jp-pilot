@@ -2092,9 +2092,9 @@
           "display": "Mix 1 kg of water at 20 °C with 3 kg at 40 °C. Find the final temperature with no heat loss.",
           "working": [
             "m_{cold} = 1 kg; m_{hot} = 3 kg; T_{cold} = 20 °C; T_{hot} = 40 °C",
-            "g = 10 m s^{−2}; same c; container heat negligible."
+            "same c; container heat negligible."
           ],
-          "narration": "The larger portion can give more heat for each degree it cools. That tells you the answer should be closer to forty. Take gravity as ten metres per second squared for our setup. Gravity does not enter this heat balance."
+          "narration": "Let's try one. Before calculating, make a guess. There is three times as much hot water as cold water. So the hot water has more heat to give. The final temperature should land closer to forty than to twenty. Keep that guess, and we will check it at the end."
         },
         {
           "n": 9,
@@ -2571,9 +2571,9 @@
           "title": "Write the echo time and speed",
           "display": "A shout returns from a wall in 2 s. Sound travels at 340 m s^{−1}. Find the distance to the wall.",
           "working": [
-            "t_{round} = 2 s; v = 340 m s^{−1}; g = 10 m s^{−2}"
+            "t_{round} = 2 s; v = 340 m s^{−1}"
           ],
-          "narration": "The question wants a one way distance, so notice what the stopwatch actually times. It starts at the shout and stops at the return. We take gravity as ten metres per second squared in the setup. The echo calculation uses sound speed instead."
+          "narration": "The question wants a one way distance, so notice what the stopwatch actually times. It starts at the shout and stops when the echo returns. So the sound has travelled to the wall and back again. Keep that in mind, because we will need to halve at the end."
         },
         {
           "n": 9,
@@ -3027,9 +3027,9 @@
           "title": "Write the object and focal distances",
           "display": "A convex lens has focal length 0.10 m. An object is 0.20 m away. Find the image distance and magnification.",
           "working": [
-            "u = +0.20 m; f = +0.10 m; g = 10 m s^{−2}"
+            "u = +0.20 m; f = +0.10 m"
           ],
-          "narration": "We need the image position and its size compared with the object. Mark the lens as converging and the object as real. Take gravity as ten metres per second squared in this setup. It does not enter the ray calculation."
+          "narration": "We need the image position and its size compared with the object. First, mark the lens as converging, so its focal length is positive. The object is real, so its distance is positive too. Write both in metres before you put them into the lens formula."
         },
         {
           "n": 9,
@@ -3474,9 +3474,9 @@
           "title": "Write the cell and resistor values",
           "display": "A 6 V cell has internal resistance 1 Ω and supplies a 2 Ω resistor. Find terminal voltage.",
           "working": [
-            "ℰ = 6 V; r = 1 Ω; R = 2 Ω; g = 10 m s^{−2}"
+            "ℰ = 6 V; r = 1 Ω; R = 2 Ω"
           ],
-          "narration": "We need the voltage that reaches the outside resistor. Some of the cell's push is used inside it whenever current flows. Write down both resistances first. Take gravity as ten metres per second squared for this setup, though it plays no part in the circuit."
+          "narration": "We need the voltage that reaches the outside resistor. But some of the cell's push is used up inside the cell whenever current flows. So write down both resistances first. One ohm is inside the cell, and two ohms is outside it."
         },
         {
           "n": 9,
@@ -3874,9 +3874,9 @@
           "title": "Write the appliance rating and time",
           "display": "An 80 W lamp runs for 5 s. Find the energy transferred.",
           "working": [
-            "P = 80 W; t = 5 s; g = 10 m s^{−2}"
+            "P = 80 W; t = 5 s"
           ],
-          "narration": "You need the whole amount of energy, so start with how fast it transfers and how long it runs. Take gravity as ten metres per second squared for this setup. It is the lamp's rating and running time that matter here."
+          "narration": "You need the whole amount of energy, so start with how fast it transfers and how long it runs. Power tells you the joules used each second. Eighty watts means eighty joules every second. So we just need to count the seconds."
         },
         {
           "n": 8,
@@ -4286,9 +4286,9 @@
           "title": "Write the half-life and time",
           "display": "A sample starts at 80 Bq. Its half-life is 2 h. Find its activity after 6 h.",
           "working": [
-            "A_{0} = 80 Bq; T_{1/2} = 7200 s; t = 21 600 s; g = 10 m s^{−2}"
+            "A_{0} = 80 Bq; T_{1/2} = 7200 s; t = 21 600 s"
           ],
-          "narration": "The question asks for the rate that remains, so we can count how many times it halves. Both times use hours already. Take gravity as ten metres per second squared in the setup. Radioactive decay here depends on the given half life."
+          "narration": "The question asks for the activity that remains, so we can count how many times it halves. Both times are given in hours, so they compare directly. Every two hours, the activity is cut in half. Now count how many two hour blocks fit into six hours."
         },
         {
           "n": 8,
@@ -4342,9 +4342,9 @@
           "part": "watch-out",
           "tag": "Trap 1",
           "title": "Check how many times you must halve",
-          "display": "Wrong  20 s; Right  1000 → 500 → 250 → 125 in 60 s.",
+          "display": "Wrong  t = 20 s; Right  1000 → 500 → 250 → 125, so t = 3 × 20 s = 60 s",
           "working": [],
-          "narration": "One half life only gets you halfway down the first step. Look at the starting one thousand and stop when you reach one hundred and twenty five. It takes three cuts in half, and each takes twenty seconds.",
+          "narration": "The trap is stopping after one half life. Twenty seconds only takes one thousand down to five hundred. Keep halving until you reach one hundred and twenty five. That takes three halvings. Three times twenty seconds gives sixty seconds.",
           "sources": [
             {
               "book": "New School Physics (M. W. Anyakoha)",
