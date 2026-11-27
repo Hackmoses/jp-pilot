@@ -1,0 +1,4251 @@
+{
+  "version": 1,
+  "subject": "mathematics",
+  "lessons": [
+    {
+      "id": "maths-indices",
+      "title": "Indices",
+      "minutes": 3,
+      "chapters": [
+        "3"
+      ],
+      "keywords": [
+        "indices",
+        "index",
+        "exponent",
+        "powers",
+        "standard form"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "Same number, repeated",
+          "working": [],
+          "narration": "One bag has three packs. Each pack has three boxes. Each box has three sweets. Three keeps multiplying itself as you count through the layers.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§2.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/2-1-use-the-language-of-algebra"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-2-use-multiplication-properties-of-exponents"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Combine powers with the same base",
+          "display": "a^{m} × a^{n} = a^{m+n}",
+          "working": [
+            "a^{m} ÷ a^{n} = a^{m−n} (a ≠ 0)",
+            "2^{3} × 2^{4} = 2^{7} = 128",
+            "3^{5} ÷ 3^{2} = 3^{3} = 27"
+          ],
+          "narration": "Keep the base and add the powers when you multiply. When you divide powers with the same nonzero base, subtract the bottom exponent from the top.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-2-use-multiplication-properties-of-exponents"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-2-exponents-and-scientific-notation"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Apply an outer power",
+          "display": "(a^{m})^{n} = a^{mn}",
+          "working": [
+            "(ab)^{n} = a^{n}b^{n}",
+            "(\\frac{a}{b})^{n} = \\frac{a^{n}}{b^{n}} (b ≠ 0)",
+            "(2^{3})^{2} = 2^{6} = 64"
+          ],
+          "narration": "Multiply the exponents when you raise a power to another power. An outer power also applies to each factor of a product and each part of a quotient.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-2-use-multiplication-properties-of-exponents"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-2-exponents-and-scientific-notation"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Use zero and negative powers",
+          "display": "a^{0} = 1; a^{−n} = \\frac{1}{a^{n}} (a ≠ 0)",
+          "working": [
+            "5^{3} ÷ 5^{3} = 5^{0} = 1",
+            "2^{−3} = \\frac{1}{8}"
+          ],
+          "narration": "Any nonzero base to the power zero gives one. A negative exponent takes the reciprocal. You can see why when you divide equal powers and get one.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-2-exponents-and-scientific-notation"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Read a fractional exponent as a root",
+          "display": "a^{\\frac{m}{n}} = (a^{\\frac{1}{n}})^{m} (a > 0, n ≥ 1)",
+          "working": [
+            "n is a positive integer",
+            "a^{\\frac{1}{2}} = \\sqrt{a}",
+            "27^{\\frac{2}{3}} = (27^{\\frac{1}{3}})^{2} = 3^{2} = 9"
+          ],
+          "narration": "For a positive base, the denominator gives the root and the numerator gives the power. Take the root first if that makes the numbers easier to handle.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.8",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-8-rational-exponents"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Match the bases before solving",
+          "display": "a^{u} = a^{v} ⇒ u = v (a > 0, a ≠ 1)",
+          "working": [
+            "4^{x} = 8 ⇒ 2^{2x} = 2^{3} ⇒ x = \\frac{3}{2}"
+          ],
+          "narration": "If you can rewrite both sides as powers of the same positive base other than one, equate their exponents. This turns many index equations into simple algebra.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.6",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-6-exponential-and-logarithmic-equations"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-2-graphs-of-exponential-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Normalise standard form",
+          "display": "N = c × 10^{n}; 1 ≤ |c| < 10",
+          "working": [
+            "0.004 = 4 × 10^{−3}",
+            "(4 × 10^{3})(3 × 10^{2}) = 12 × 10^{5} = 1.2 × 10^{6}",
+            "2 × 10^{3} + 4 × 10^{2} = (2 + 0.4) × 10^{3} = 2.4 × 10^{3}"
+          ],
+          "narration": "Give a nonzero number an integer power of ten and a coefficient with magnitude from one up to ten. For products or quotients, handle the coefficients and powers separately. For sums or differences, match the powers first. Then normalise.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-2-exponents-and-scientific-notation"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§2.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/2-2-evaluate-simplify-and-translate-expressions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Spot the fraction in the power",
+          "display": "Simplify 16^{−\\frac{3}{4}}.",
+          "working": [
+            "2^{4} = 16 ⇒ 16^{\\frac{1}{4}} = 2"
+          ],
+          "narration": "The denominator of the exponent is four, so start by finding the fourth root of sixteen."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Use the numerator as a power",
+          "display": "16^{\\frac{3}{4}} = 2^{3} = 8",
+          "working": [],
+          "narration": "The numerator is three, so cube the root you just found. Two cubed gives eight."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Take the reciprocal",
+          "display": "16^{−\\frac{3}{4}} = \\frac{1}{8}",
+          "working": [],
+          "narration": "The exponent was negative, so take the reciprocal of eight to get one eighth."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Rewrite using base three",
+          "display": "If 27^{x+2} ÷ 9^{x+1} = 3^{2x}, find x.",
+          "working": [
+            "27 = 3^{3}; 9 = 3^{2}"
+          ],
+          "narration": "The right side already uses base three. Twenty-seven is three cubed and nine is three squared, so use base three on the left as well."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Multiply the inner and outer powers",
+          "display": "\\frac{3^{3(x+2)}}{3^{2(x+1)}} = 3^{2x}",
+          "working": [],
+          "narration": "Both powers on the left have an outer exponent. Multiply the inner exponent by the entire expression in its bracket."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Subtract the whole denominator exponent",
+          "display": "3^{3(x+2)−2(x+1)} = 3^{2x}",
+          "working": [
+            "3x + 6 − 2x − 2 = x + 4"
+          ],
+          "narration": "Division subtracts the denominator exponent. Keep the brackets until you have subtracted both terms in that exponent."
+        },
+        {
+          "n": 14,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Compare the exponents",
+          "display": "x + 4 = 2x ⇒ x = 4",
+          "working": [
+            "4 + 4 = 2 × 4 = 8"
+          ],
+          "narration": "With base three on both sides, the exponents must agree. Subtract x from both sides, then check that both exponents become eight."
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Check both exponents",
+          "display": "Wrong  x = 3     |     Right  x = 4",
+          "working": [
+            "x = 3 ⇒ x + 4 = 7; 2x = 6"
+          ],
+          "narration": "A value that looks close must still make both exponents equal. Three gives seven on one side and six on the other.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.6",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-6-exponential-and-logarithmic-equations"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§2.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/2-2-evaluate-simplify-and-translate-expressions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Check the sign in standard form",
+          "display": "Wrong  0.86 = 8.6 × 10     |     Right  0.86 = 8.6 × 10^{−1}",
+          "working": [
+            "0.00043 × 2000 = 0.86"
+          ],
+          "narration": "After multiplying the two decimals, check the size of your answer. Eight point six must be divided by ten to give zero point eight six.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-2-exponents-and-scientific-notation"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "Same base, track the power",
+          "working": [],
+          "narration": "Keep track of what happens to the base and its exponent before you do the arithmetic.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-2-use-multiplication-properties-of-exponents"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-2-exponents-and-scientific-notation"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(a–c)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2012-006",
+      "trapSources": [
+        "math-jamb-2012-006",
+        "math-jamb-2014-004"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2016-033",
+        "written": false,
+        "stem": "Write \\frac{0.0001432}{1940000} as k × 10^{n}, where 1 ≤ k < 10 and n is an integer. Give k to three decimal places.",
+        "options": [
+          {
+            "id": "a",
+            "text": "7.381 and −11",
+            "why": "The coefficient rounds to 7.381 after normalising the quotient, and the power of ten is −11."
+          },
+          {
+            "id": "b",
+            "text": "2.34 and 10",
+            "why": "Dividing the powers gives 10^{-10} before normalising, so a positive exponent has the wrong scale."
+          },
+          {
+            "id": "c",
+            "text": "3.871 and 2",
+            "why": "A power of 2 would make the quotient much larger than 1, although the numerator is smaller than the denominator."
+          },
+          {
+            "id": "d",
+            "text": "7.831 and −11",
+            "why": "The exponent is right, but 1.432 ÷ 1.94 ≈ 0.738144, which normalises to a coefficient of 7.381."
+          }
+        ],
+        "answerId": "a"
+      }
+    },
+    {
+      "id": "maths-logarithms",
+      "title": "Logarithms",
+      "minutes": 3,
+      "chapters": [
+        "3"
+      ],
+      "keywords": [
+        "log",
+        "logarithm",
+        "logarithms",
+        "change of base",
+        "log equations"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "How many doublings?",
+          "working": [],
+          "narration": "You start with one sweet and double your pile each round. When you reach eight sweets, a logarithm tells you how many doublings it took.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-3-logarithmic-functions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-2-graphs-of-exponential-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(d–g)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Read a logarithm as an exponent",
+          "display": "log_{b} A = x ⇔ b^{x} = A",
+          "working": [
+            "log_{2} 8 = 3 because 2^{3} = 8",
+            "log_{b} 1 = 0; log_{b} b = 1",
+            "log A = log_{10} A in common logarithm notation; ln A = log_{e} A"
+          ],
+          "narration": "A logarithm asks what power of the base gives the argument. The base must be positive and different from one, and the argument must be positive.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-3-logarithmic-functions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-4-graphs-of-logarithmic-functions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.6",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-6-exponential-and-logarithmic-equations"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-2-graphs-of-exponential-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(d–g)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Combine logs with the same base",
+          "display": "log_{b} A + log_{b} B = log_{b}(AB)",
+          "working": [
+            "log_{b} A − log_{b} B = log_{b}(\\frac{A}{B})",
+            "log_{2} 8 − log_{2} 2 = log_{2} 4 = 2"
+          ],
+          "narration": "Add logs of the same base by multiplying the positive arguments. Subtract logs of the same base by dividing the first argument by the second.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-5-logarithmic-properties"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-3-logarithmic-functions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.6",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-6-exponential-and-logarithmic-equations"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(d–g)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Move a multiplier into the power",
+          "display": "k log_{b} A = log_{b}(A^{k})",
+          "working": [
+            "2 log_{3} 3 = log_{3}(3^{2}) = 2",
+            "\\frac{1}{2} log_{2} 16 = log_{2} \\sqrt{16} = 2"
+          ],
+          "narration": "A number multiplying a logarithm can move inside as an exponent on the positive argument. This works for fractional and negative multipliers as well.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-5-logarithmic-properties"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(d–g)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Change to a convenient base",
+          "display": "log_{b} A = \\frac{log_{c} A}{log_{c} b}",
+          "working": [
+            "log_{4} 64 = \\frac{log_{2} 64}{log_{2} 4} = \\frac{6}{2} = 3"
+          ],
+          "narration": "Choose a valid new base and use it in both logarithms. Put the original argument on top and the original base underneath.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-5-logarithmic-properties"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-3-logarithmic-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(d–g)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Solve within the original domain",
+          "display": "log_{b} u = log_{b} v ⇒ u = v (u > 0, v > 0)",
+          "working": [
+            "log_{3}(x − 1) = 2 ⇒ x − 1 = 3^{2} ⇒ x = 10"
+          ],
+          "narration": "Combine same-base logs, then equate positive arguments or rewrite a single log as an exponential equation. Test each candidate in the original equation, where every argument must be positive.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.6",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-6-exponential-and-logarithmic-equations"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-4-graphs-of-logarithmic-functions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-3-logarithmic-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(d–g)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Start with the allowed values",
+          "display": "Solve log_{2} x + log_{2}(x − 2) = 3.",
+          "working": [
+            "x > 0 and x − 2 > 0 ⇒ x > 2"
+          ],
+          "narration": "Both arguments must be positive. The stricter condition is that x must be greater than two."
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Combine and undo the logarithm",
+          "display": "log_{2}(x(x − 2)) = 3",
+          "working": [
+            "x(x − 2) = 2^{3} = 8"
+          ],
+          "narration": "Addition combines the arguments into a product. Now use the meaning of a log to lift two to the third power."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Factor and test the candidates",
+          "display": "(x − 4)(x + 2) = 0",
+          "working": [
+            "x^{2} − 2x − 8 = 0",
+            "log_{2} 4 + log_{2} 2 = 2 + 1 = 3"
+          ],
+          "narration": "The quadratic gives four and minus two. Only four is greater than two, and it makes the original logs add up to three."
+        },
+        {
+          "n": 10,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Start with the first log",
+          "display": "Evaluate \\frac{log_{3} 27 − log_{\\frac{1}{4}} 64}{log_{3}(\\frac{1}{81})}.",
+          "working": [
+            "3^{3} = 27 ⇒ log_{3} 27 = 3"
+          ],
+          "narration": "The bases differ, so find each exponent on its own. Three to the third power gives twenty-seven."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Find the power of a fractional base",
+          "display": "(\\frac{1}{4})^{−3} = 4^{3} = 64",
+          "working": [
+            "log_{\\frac{1}{4}} 64 = −3"
+          ],
+          "narration": "The base is one quarter. A negative exponent flips it to four, and the third power gives sixty-four."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Find the denominator",
+          "display": "3^{−4} = \\frac{1}{81}",
+          "working": [
+            "log_{3}(\\frac{1}{81}) = −4"
+          ],
+          "narration": "Eighty-one is three to the fourth power. Its reciprocal takes a negative exponent, so the denominator is minus four."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Keep both negative signs",
+          "display": "\\frac{3 − (−3)}{−4} = \\frac{6}{−4} = −\\frac{3}{2}",
+          "working": [],
+          "narration": "Subtracting minus three makes the numerator six. The denominator is negative, so the simplified quotient is minus three halves."
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Halve the argument using division inside the log",
+          "display": "x = log_{8} 10",
+          "working": [
+            "Wrong  log_{8} 5 = \\frac{x}{2}",
+            "Right  log_{8} 5 = x − log_{8} 2 = x − \\frac{1}{3}"
+          ],
+          "narration": "Halving the logarithm would take the square root of ten inside it. To halve ten itself, subtract the logarithm of two instead.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-5-logarithmic-properties"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(d–g)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Check the sign of a reciprocal power",
+          "display": "Wrong  log_{3}(\\frac{1}{81}) = 4     |     Right  log_{3}(\\frac{1}{81}) = −4",
+          "working": [],
+          "narration": "Check which power actually makes the argument. Three to the fourth gives eighty-one, and the negative fourth power gives its reciprocal.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-3-logarithmic-functions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-2-exponents-and-scientific-notation"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(d–g)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "A log gives a power",
+          "working": [],
+          "narration": "Read every logarithm as a question about a power, and keep its base and argument in view.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§6.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/6-3-logarithmic-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(d–g)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2017-035",
+      "trapSources": [
+        "math-jamb-2015-035",
+        "math-jamb-2017-035"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2014-009",
+        "written": false,
+        "stem": "Evaluate log_{2} 8 + log_{2} 16 − log_{2} 4.",
+        "options": [
+          {
+            "id": "a",
+            "text": "6",
+            "why": "The three powers are 3, 4 and 2 exactly. Their signed sum is 5, so there is no rounding to 6."
+          },
+          {
+            "id": "b",
+            "text": "3",
+            "why": "The two positive terms add to 7. Subtracting 2 gives 5."
+          },
+          {
+            "id": "c",
+            "text": "4",
+            "why": "Four is the middle logarithm alone. The other terms contribute 3 − 2 = 1."
+          },
+          {
+            "id": "d",
+            "text": "5",
+            "why": "Since 2^{3} = 8, 2^{4} = 16 and 2^{2} = 4, the value is 3 + 4 − 2 = 5."
+          }
+        ],
+        "answerId": "d"
+      }
+    },
+    {
+      "id": "maths-surds",
+      "title": "Surds",
+      "minutes": 3,
+      "chapters": [
+        "3"
+      ],
+      "keywords": [
+        "surds",
+        "surd",
+        "rationalisation",
+        "rationalise",
+        "conjugate",
+        "square root"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "Untie the bundles",
+          "working": [],
+          "narration": "Imagine bundles of sticks tied in pairs. Pull out the complete pairs first, then see which loose bundles have the same label and can go together.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.2",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-2-simplify-square-roots"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(h), objectives v–vi",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Take perfect squares out of roots",
+          "display": "\\sqrt{k^{2}a} = |k|\\sqrt{a} (a ≥ 0)",
+          "working": [
+            "\\sqrt{72} = \\sqrt{36 × 2} = 6\\sqrt{2}"
+          ],
+          "narration": "Find a perfect-square factor under the root and bring its nonnegative square root outside. A square root that stays irrational, like root two, is a surd.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§5.7",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/5-7-simplify-and-use-square-roots"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.2",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-2-simplify-square-roots"
+            },
+            {
+              "book": "Cambridge Advanced General Mathematics",
+              "where": "Chapter 3, quadratic surds",
+              "url": "https://www.cambridge.edu.au/downloads/education/extra/209/PageProofs/Advanced%20General%20Maths/Ch%203.pdf"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(h), objectives v–vi",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Add and subtract like surds",
+          "display": "p\\sqrt{a} ± q\\sqrt{a} = (p ± q)\\sqrt{a}",
+          "working": [
+            "\\sqrt{18} + \\sqrt{8} = 3\\sqrt{2} + 2\\sqrt{2} = 5\\sqrt{2}"
+          ],
+          "narration": "Simplify each root first. When the numbers under the roots agree, add or subtract the coefficients and keep the shared root.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.3",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-3-add-and-subtract-square-roots"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(h), objectives v–vi",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Multiply and divide under the root",
+          "display": "\\sqrt{a}\\sqrt{b} = \\sqrt{ab} (a, b ≥ 0)",
+          "working": [
+            "\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}} (a ≥ 0, b > 0)",
+            "2\\sqrt{3} × 3\\sqrt{6} = 6\\sqrt{18} = 18\\sqrt{2}"
+          ],
+          "narration": "Multiply the outside numbers together and the numbers under the roots together. For division, you can combine nonnegative roots under one root when the bottom root is positive.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.4",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-4-multiply-square-roots"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.5",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-5-divide-square-roots"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(h), objectives v–vi",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Clear a single root from the denominator",
+          "display": "\\frac{p}{\\sqrt{a}} = \\frac{p\\sqrt{a}}{a} (a > 0)",
+          "working": [
+            "\\frac{3}{\\sqrt{2}} = \\frac{3\\sqrt{2}}{2}"
+          ],
+          "narration": "Multiply the top and bottom by the same root. That keeps the fraction equal and leaves an ordinary number underneath.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.5",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-5-divide-square-roots"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(h), objectives v–vi",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Clear a two-term denominator with its conjugate",
+          "display": "(u + v)(u − v) = u^{2} − v^{2}",
+          "working": [
+            "\\frac{1}{3 + \\sqrt{2}} = \\frac{3 − \\sqrt{2}}{9 − 2} = \\frac{3 − \\sqrt{2}}{7}"
+          ],
+          "narration": "For two terms in a denominator, reverse the sign between them and multiply the top and bottom by that conjugate. The middle terms cancel.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.5",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-5-divide-square-roots"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-5-factoring-polynomials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(h), objectives v–vi",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Look for square factors",
+          "display": "Simplify \\frac{\\sqrt{45} − \\sqrt{20}}{\\sqrt{5}}.",
+          "working": [
+            "\\sqrt{45} = 3\\sqrt{5}; \\sqrt{20} = 2\\sqrt{5}"
+          ],
+          "narration": "Both roots on top contain a perfect square times five. Split them up so that the shared root is visible."
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Subtract the coefficients",
+          "display": "3\\sqrt{5} − 2\\sqrt{5} = \\sqrt{5}",
+          "working": [],
+          "narration": "The roots now match, so subtract two from three and keep the root of five."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Cancel the remaining root",
+          "display": "\\frac{\\sqrt{5}}{\\sqrt{5}} = 1",
+          "working": [],
+          "narration": "The top and bottom are the same nonzero number. That means the whole fraction equals one."
+        },
+        {
+          "n": 10,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Choose a conjugate",
+          "display": "Simplify \\frac{2\\sqrt{2} − \\sqrt{3}}{\\sqrt{2} + \\sqrt{3}}.",
+          "working": [
+            "(\\sqrt{3} + \\sqrt{2})(\\sqrt{3} − \\sqrt{2}) = 3 − 2 = 1"
+          ],
+          "narration": "The bottom has two roots joined by addition. Choose root three minus root two so the squared terms will leave a positive one."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Multiply both parts of the fraction",
+          "display": "\\frac{(2\\sqrt{2} − \\sqrt{3})(\\sqrt{3} − \\sqrt{2})}{1}",
+          "working": [],
+          "narration": "Use the same factor on top and bottom to keep the fraction equal. Now distribute each term on top across the second bracket."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Collect the like terms",
+          "display": "2\\sqrt{6} − 4 − 3 + \\sqrt{6} = 3\\sqrt{6} − 7",
+          "working": [
+            "(2\\sqrt{2})(−\\sqrt{2}) = −4; (−\\sqrt{3})(\\sqrt{3}) = −3"
+          ],
+          "narration": "Two root six plus root six gives three root six. The ordinary numbers add to minus seven, and division by one leaves the result."
+        },
+        {
+          "n": 13,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Simplify before subtracting",
+          "display": "Wrong  \\sqrt{147} − \\sqrt{12} = \\sqrt{135}",
+          "working": [
+            "Right  7\\sqrt{3} − 2\\sqrt{3} = 5\\sqrt{3}"
+          ],
+          "narration": "A difference of two roots cannot be taken by subtracting inside the root. Expose the common root of three and subtract the outside numbers.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.3",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-3-add-and-subtract-square-roots"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(h), objectives v–vi",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Keep the signs when expanding",
+          "display": "(2\\sqrt{2} − \\sqrt{3})(\\sqrt{3} − \\sqrt{2})",
+          "working": [
+            "Wrong  −4 + 3 = −1",
+            "Right  −4 − 3 = −7"
+          ],
+          "narration": "Check the plain numbers separately from the roots. Both plain products are negative here, so they give minus seven.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-4-polynomials"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.3",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-3-multiply-polynomials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(h), objectives v–vi",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "Simplify the roots first",
+          "working": [],
+          "narration": "Pull out square factors first so you can see which roots combine and how to clear the denominator.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-3-radicals-and-rational-exponents"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§9.2",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/9-2-simplify-square-roots"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.3(h), objectives v–vi",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2014-008",
+      "trapSources": [
+        "math-jamb-2013-008",
+        "math-jamb-2014-008"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2017-027",
+        "written": false,
+        "stem": "Rationalise \\frac{2−\\sqrt{5}}{3−\\sqrt{5}}.",
+        "options": [
+          {
+            "id": "a",
+            "text": "\\frac{1−\\sqrt{5}}{2}",
+            "why": "The conjugate gives 3^{2} − 5 = 4 in the denominator, so 2 is too small."
+          },
+          {
+            "id": "b",
+            "text": "\\frac{1−\\sqrt{5}}{4}",
+            "why": "Multiplying by 3 + \\sqrt{5} above and below gives (1 − \\sqrt{5}) divided by 4."
+          },
+          {
+            "id": "c",
+            "text": "\\frac{\\sqrt{5}−1}{2}",
+            "why": "The original numerator is negative and its denominator is positive, so a positive result cannot match."
+          },
+          {
+            "id": "d",
+            "text": "\\frac{1+\\sqrt{5}}{4}",
+            "why": "The root terms in the numerator are 2\\sqrt{5} − 3\\sqrt{5}, giving −\\sqrt{5}."
+          }
+        ],
+        "answerId": "b"
+      }
+    },
+    {
+      "id": "maths-factorisation",
+      "title": "Factorisation and quadratic equations",
+      "minutes": 4,
+      "chapters": [
+        "5"
+      ],
+      "keywords": [
+        "factorisation",
+        "factorise",
+        "quadratic",
+        "roots",
+        "discriminant",
+        "remainder theorem",
+        "factor theorem",
+        "cubics"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "Find the equal groups",
+          "working": [],
+          "narration": "You have six oranges and nine mangoes. Make three identical bags with two oranges and three mangoes each. Factoring spots what every bag has in common.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.6",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-6-introduction-to-factoring-polynomials"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-5-factoring-polynomials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Take out a common factor by grouping",
+          "display": "ab + ac = a(b + c)",
+          "working": [
+            "6x^{2} + 9x = 3x(2x + 3)",
+            "2x^{2} + 6x + x + 3 = 2x(x + 3) + (x + 3)",
+            "2x(x + 3) + (x + 3) = (2x + 1)(x + 3)"
+          ],
+          "narration": "Take out what every term shares. If no factor appears in every term, try grouping terms until the groups share a whole bracket.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.6",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-6-introduction-to-factoring-polynomials"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-5-factoring-polynomials"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-5-quadratic-equations"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Recognise special factors",
+          "display": "u^{2} − v^{2} = (u − v)(u + v)",
+          "working": [
+            "9x^{2} − 25 = (3x − 5)(3x + 5)",
+            "u^{2} ± 2uv + v^{2} = (u ± v)^{2}",
+            "u^{3} + v^{3} = (u + v)(u^{2} − uv + v^{2})",
+            "u^{3} − v^{3} = (u − v)(u^{2} + uv + v^{2})"
+          ],
+          "narration": "When one square is subtracted from another, put their square roots in brackets with opposite signs. A perfect-square trinomial gives a repeated bracket. For cubes, keep the sign in the first factor and flip it in the middle term of the second.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-5-factoring-polynomials"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-5-quadratic-equations"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.3",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-3-multiply-polynomials"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-4-polynomials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Split the middle term and solve",
+          "display": "ax^{2} + bx + c = ax^{2} + mx + nx + c",
+          "working": [
+            "m + n = b; mn = ac",
+            "2x^{2} + 7x + 3 = 2x^{2} + 6x + x + 3",
+            "(2x + 1)(x + 3) = 0 ⇒ x = −\\frac{1}{2} or −3"
+          ],
+          "narration": "Choose two numbers that multiply to the leading coefficient times the constant and add to the middle coefficient. Group the four terms, then set each factor to zero if the product equals zero.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-5-factoring-polynomials"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-5-quadratic-equations"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Use the quadratic formula and discriminant",
+          "display": "x = \\frac{−b ± \\sqrt{b^{2} − 4ac}}{2a} (a ≠ 0)",
+          "working": [
+            "x^{2} − 4x + 4 = 0 ⇒ D = (−4)^{2} − 4 × 1 × 4 = 0",
+            "x = \\frac{4}{2} = 2"
+          ],
+          "narration": "For a quadratic set equal to zero, use its signed coefficients. The expression under the root is the discriminant. Positive gives two distinct real roots, zero gives a repeated root, and negative gives no real roots.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-5-quadratic-equations"
+            },
+            {
+              "book": "AMSI Quadratic Equations",
+              "where": "The quadratic formula and the discriminant",
+              "url": "https://www.amsi.org.au/teacher_modules/pdfs/Quadratic_Equations.pdf"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Link the roots to the coefficients",
+          "display": "α + β = −\\frac{b}{a}; αβ = \\frac{c}{a}",
+          "working": [
+            "ax^{2} + bx + c = a(x − α)(x − β)",
+            "x^{2} − 5x + 6 = (x − 2)(x − 3)",
+            "2 + 3 = 5; 2 × 3 = 6"
+          ],
+          "narration": "If the two roots are alpha and beta, their sum is minus the middle coefficient over the leading coefficient. Their product is the constant over the leading coefficient.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-5-quadratic-equations"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§5.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/5-5-zeros-of-polynomial-functions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-4-polynomials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Get the remainder by substitution",
+          "display": "P(x) = (x − r)Q(x) + P(r)",
+          "working": [
+            "P(x) = x^{2} + 3x + 2 ⇒ P(−1) = 1 − 3 + 2 = 0",
+            "x + 1 is a factor of P(x)",
+            "P(x) = (dx − e)Q(x) + P(\\frac{e}{d}) (d ≠ 0)"
+          ],
+          "narration": "When you divide by x minus a number, substitute that number to get the remainder. A zero remainder means the divisor is a factor, so the other roots come from the quotient.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§5.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/5-4-dividing-polynomials"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§5.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/5-5-zeros-of-polynomial-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Put zero on one side",
+          "display": "Solve 2x^{2} = x + 6.",
+          "working": [
+            "2x^{2} − x − 6 = 0"
+          ],
+          "narration": "Bring all the terms to one side so the other side is zero. That lets you use the zero product rule after factorising."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Find two numbers to split the middle",
+          "display": "3 × (−4) = −12; 3 + (−4) = −1",
+          "working": [
+            "2x^{2} + 3x − 4x − 6 = 0"
+          ],
+          "narration": "The leading coefficient times the constant gives minus twelve. The middle coefficient is minus one, so split it into three and minus four."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Group and read off the roots",
+          "display": "x(2x + 3) − 2(2x + 3) = 0",
+          "working": [
+            "(x − 2)(2x + 3) = 0",
+            "x = 2 or x = −\\frac{3}{2}"
+          ],
+          "narration": "Both groups contain the same bracket. Take it out, then set each of the two factors equal to zero to find the roots."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Turn the known root into a factor",
+          "display": "One root of x^{3} − 2x^{2} − 5x + 6 = 0 is 1. Find the other roots.",
+          "working": [
+            "1 − 2 − 5 + 6 = 0"
+          ],
+          "narration": "A root of one makes the polynomial zero, so x minus one is a factor. Taking it out will leave a quadratic."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Remove the known factor by grouping",
+          "display": "x^{2}(x − 1) − x(x − 1) − 6(x − 1) = 0",
+          "working": [
+            "x^{3} − x^{2} − x^{2} + x − 6x + 6 = 0",
+            "(x − 1)(x^{2} − x − 6) = 0"
+          ],
+          "narration": "Split the middle terms so you can group the cubic into pieces that all contain x minus one. Take that common factor out."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Factor the remaining quadratic",
+          "display": "x^{2} − x − 6 = (x − 3)(x + 2)",
+          "working": [],
+          "narration": "Minus three and two multiply to minus six and add to minus one, so they give the constants in these brackets."
+        },
+        {
+          "n": 14,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Set the remaining factors to zero",
+          "display": "x − 3 = 0 or x + 2 = 0 ⇒ x = 3 or −2",
+          "working": [],
+          "narration": "Set each remaining bracket equal to zero. Either factor can make the product zero, giving three and minus two as the other roots."
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Keep the entire second square in brackets",
+          "display": "1 − (a − b)^{2} = (1 − (a − b))(1 + (a − b))",
+          "working": [
+            "Wrong  (1 − a − b)(1 − a + b)",
+            "Right  (1 − a + b)(1 + a − b)"
+          ],
+          "narration": "A minus before a bracket changes both signs inside it. The first bracket therefore has minus a and plus b.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-5-factoring-polynomials"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.3",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-3-multiply-polynomials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Substitute the root, with its correct sign",
+          "display": "x − 4 = 0 ⇒ x = 4",
+          "working": [
+            "P(x) = x^{2} − x − k",
+            "Wrong  P(−4) = 0 ⇒ k = 20",
+            "Right  P(4) = 0 ⇒ k = 12"
+          ],
+          "narration": "Set the factor equal to zero before substituting. Four makes x minus four zero, so use four in the polynomial.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§5.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/5-5-zeros-of-polynomial-functions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§5.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/5-4-dividing-polynomials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "Use the product to find the roots",
+          "working": [],
+          "narration": "Factor into simpler pieces, then set each factor equal to zero when the product is zero.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-5-quadratic-equations"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§5.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/5-5-zeros-of-polynomial-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(c–e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2018-011",
+      "trapSources": [
+        "math-jamb-2016-006",
+        "math-jamb-2013-012"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2016-002",
+        "written": false,
+        "stem": "For which p does x^{2} − (p−2)x + 2p + 1 = 0 have equal roots?",
+        "options": [
+          {
+            "id": "a",
+            "text": "(0, 12)",
+            "why": "The discriminant is (p − 2)^{2} − 4(2p + 1) = p(p − 12), so it vanishes at 0 and 12."
+          },
+          {
+            "id": "b",
+            "text": "(1, 2)",
+            "why": "Neither 1 nor 2 makes p(p − 12) equal to zero."
+          },
+          {
+            "id": "c",
+            "text": "(21, 0)",
+            "why": "Zero works, but 21 leaves a nonzero discriminant and gives two distinct roots."
+          },
+          {
+            "id": "d",
+            "text": "(4, 5)",
+            "why": "Both 4 and 5 make p(p − 12) negative, so neither gives equal real roots."
+          }
+        ],
+        "answerId": "a"
+      }
+    },
+    {
+      "id": "maths-algebra",
+      "title": "Simplifying algebraic expressions",
+      "minutes": 3,
+      "chapters": [
+        "5"
+      ],
+      "keywords": [
+        "algebraic expressions",
+        "algebraic fractions",
+        "expanding",
+        "change of subject",
+        "simultaneous equations",
+        "elimination",
+        "substitution"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "Unpack and sort",
+          "working": [],
+          "narration": "Two bags each hold an orange and a mango. Open both bags and put oranges with oranges and mangoes with mangoes. Algebra sorts terms that way too.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§2.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/2-2-evaluate-simplify-and-translate-expressions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-1-real-numbers-algebra-essentials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Expand, then collect matching terms",
+          "display": "a(b + c) = ab + ac",
+          "working": [
+            "(x + 2)(x − 3) = x^{2} − 3x + 2x − 6 = x^{2} − x − 6"
+          ],
+          "narration": "Multiply each term by every term in the other bracket, keeping its sign. Collect terms only when their letters and powers match.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§10.3",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/10-3-multiply-polynomials"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-4-polynomials"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§2.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/2-2-evaluate-simplify-and-translate-expressions"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-1-real-numbers-algebra-essentials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Cancel common factors and keep restrictions",
+          "display": "\\frac{ab}{ac} = \\frac{b}{c} (a ≠ 0, c ≠ 0)",
+          "working": [
+            "\\frac{x^{2} − 4}{x − 2} = x + 2 (x ≠ 2)"
+          ],
+          "narration": "First exclude every value that makes an original denominator zero. Factor the top and bottom, then cancel a shared nonzero factor from the whole numerator and denominator.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.6",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-6-rational-expressions"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§8.1",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/8-1-simplify-rational-expressions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Use the appropriate fraction operation",
+          "display": "\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}",
+          "working": [
+            "\\frac{a}{b} − \\frac{c}{d} = \\frac{ad − bc}{bd}",
+            "\\frac{a}{b} × \\frac{c}{d} = \\frac{ac}{bd}",
+            "\\frac{a}{b} ÷ \\frac{c}{d} = \\frac{ad}{bc}",
+            "Original denominators and any divisor must be nonzero."
+          ],
+          "narration": "Use a common denominator to add or subtract. For multiplication, multiply top by top and bottom by bottom. For division, multiply by the reciprocal of the nonzero divisor.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.6",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-6-rational-expressions"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§8.4",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/8-4-add-and-subtract-rational-expressions-with-unlike-denominators"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§8.2",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/8-2-multiply-and-divide-rational-expressions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Undo operations to change the subject",
+          "display": "y = ax + b ⇒ x = \\frac{y − b}{a} (a ≠ 0)",
+          "working": [
+            "y = ax + bx + c ⇒ x = \\frac{y − c}{a + b} (a + b ≠ 0)"
+          ],
+          "narration": "Use the same inverse operation on both sides. If the new subject appears more than once, collect its terms on one side, factor it out, then divide by its nonzero coefficient.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.7",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-7-solve-a-formula-for-a-specific-variable"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-2-linear-equations-in-one-variable"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-5-factoring-polynomials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Solve two equations together",
+          "display": "x + y = 7; x − y = 1",
+          "working": [
+            "(x + y) + (x − y) = 8 ⇒ x = 4",
+            "y = 7 − x = 3",
+            "4 + 3 = 7; 4 − 3 = 1"
+          ],
+          "narration": "For elimination, match the coefficients of one variable and add or subtract to remove it. For substitution, isolate one variable and replace it in the other equation. Check the pair in both equations.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§11.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/11-1-systems-of-linear-equations-two-variables"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§5.3",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/5-3-solve-systems-of-equations-by-elimination"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/5-2-solving-systems-of-equations-by-substitution"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Substitute in a linear and quadratic system",
+          "display": "y = 2x; x^{2} + y = 3 ⇒ x^{2} + 2x − 3 = 0",
+          "narration": "Use the linear equation to replace one variable in the quadratic. Solve the resulting equation, then find the matching second coordinate for every root and check both equations.",
+          "working": [
+            "(x + 3)(x − 1) = 0 ⇒ x = −3 or 1",
+            "y = 2x ⇒ (x, y) = (−3, −6) or (1, 2)"
+          ],
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§11.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/11-3-systems-of-nonlinear-equations-and-inequalities-two-variables"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.5",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-5-quadratic-equations"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§11.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/11-1-systems-of-linear-equations-two-variables"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Look for a variable to eliminate",
+          "display": "Solve 2x + y = 8 and x − y = 1.",
+          "working": [
+            "(2x + y) + (x − y) = 8 + 1"
+          ],
+          "narration": "The y terms have equal size and opposite signs. Add the two equations so those terms cancel."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Find the first unknown",
+          "display": "3x = 9 ⇒ x = 3",
+          "working": [],
+          "narration": "Only x remains after adding. Divide both sides by three to find the value of x."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Substitute and check the pair",
+          "display": "3 − y = 1 ⇒ y = 2",
+          "working": [
+            "2 × 3 + 2 = 8; 3 − 2 = 1"
+          ],
+          "narration": "Put three into the simpler equation to find y. Check the pair in the first equation as well, since it must satisfy both."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Keep the original restrictions",
+          "display": "Simplify \\frac{x − 7}{x^{2} − 9} × \\frac{x^{2} − 3x}{x^{2} − 49} for x ≠ −7, −3, 3, 7.",
+          "working": [],
+          "narration": "Keep the four excluded values in view throughout. They make an original denominator zero, even if some factors later disappear."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Factor each expression",
+          "display": "\\frac{x − 7}{(x − 3)(x + 3)} × \\frac{x(x − 3)}{(x − 7)(x + 7)}",
+          "working": [],
+          "narration": "Both denominators are differences of squares. The second numerator has a common factor of x, so factor it as well."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Cancel matching factors",
+          "display": "\\frac{x}{(x + 3)(x + 7)}; x ≠ −7, −3, 3, 7",
+          "working": [],
+          "narration": "Cancel x minus three and x minus seven, because each is a whole factor above and below. The original restrictions still apply."
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Cancel the same bracket",
+          "display": "Wrong  \\frac{x}{(x − 3)(x + 7)}     |     Right  \\frac{x}{(x + 3)(x + 7)}",
+          "working": [],
+          "narration": "The numerator contains x minus three, so cancel the matching minus bracket underneath. The plus bracket is a different factor.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.6",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-6-rational-expressions"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§8.1",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/8-1-simplify-rational-expressions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Collect terms with their signs",
+          "display": "w − wcn = 2v + vcn",
+          "working": [
+            "Wrong  w − 2v = cn(v − w)",
+            "Right  w − 2v = cn(v + w)"
+          ],
+          "narration": "Moving the negative term from the left adds it on the right. Both terms on the right containing the subject then contribute a plus sign.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.7",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-7-solve-a-formula-for-a-specific-variable"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-2-linear-equations-in-one-variable"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Trap 3",
+          "title": "Answer what the question asks for",
+          "display": "x = 5; y = −3",
+          "working": [
+            "Wrong  x + y = 5",
+            "Right  x + y = 5 + (−3) = 2"
+          ],
+          "narration": "If a question asks for x plus y, finding x is only part of the work. Substitute both values into the requested expression.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-1-use-a-problem-solving-strategy"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§11.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/11-1-systems-of-linear-equations-two-variables"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "Preserve equality at every move",
+          "working": [],
+          "narration": "Keep each expression equivalent and use the same operation on both sides of an equation.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§2.3",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/2-3-solving-equations-using-the-subtraction-and-addition-properties-of-equality"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-2-linear-equations-in-one-variable"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.1(a–f)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2018-013",
+      "trapSources": [
+        "math-jamb-2018-013",
+        "math-jamb-2012-011",
+        "math-jamb-2016-036"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2014-012",
+        "written": false,
+        "stem": "Make g the subject of gt^{2} − k − w = 0, with t ≠ 0.",
+        "options": [
+          {
+            "id": "a",
+            "text": "\\frac{k − w}{t}",
+            "why": "Both k and w are added to the other side, and the coefficient of g is t^{2}."
+          },
+          {
+            "id": "b",
+            "text": "\\frac{k + w}{t^{2}}",
+            "why": "Adding k and w and dividing by the nonzero coefficient t^{2} isolates g."
+          },
+          {
+            "id": "c",
+            "text": "\\frac{k − w}{t^{2}}",
+            "why": "The denominator is right, but moving −w requires adding w to both sides."
+          },
+          {
+            "id": "d",
+            "text": "\\frac{k + w}{t}",
+            "why": "The coefficient multiplying g is t^{2}, so dividing by t alone leaves another factor of t."
+          }
+        ],
+        "answerId": "b"
+      }
+    },
+    {
+      "id": "maths-differentiation",
+      "title": "Differentiation",
+      "minutes": 3,
+      "chapters": [
+        "16",
+        "17"
+      ],
+      "keywords": [
+        "differentiation",
+        "derivative",
+        "power rule",
+        "product rule",
+        "quotient rule",
+        "chain rule",
+        "gradient",
+        "maxima and minima",
+        "rate of change"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "How steep is the hill here?",
+          "working": [],
+          "narration": "Imagine cycling up a hill that gets steeper and then flattens out. Differentiation tells you how steep the road is just where your front wheel sits.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.1",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.4",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Find the slope from first principles",
+          "display": "f′(x) = lim_{h→0} \\frac{f(x+h) − f(x)}{h}",
+          "working": [
+            "f(x) = x^{2} ⇒ \\frac{(x+h)^{2} − x^{2}}{h} = 2x + h (h ≠ 0)",
+            "lim_{h→0}(2x + h) = 2x"
+          ],
+          "narration": "The derivative is the gradient of the tangent and the instantaneous rate of change. To find it from first principles, take the limit of the gradient between two nearby points as their separation approaches zero.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.1",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.2",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.4",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Differentiate powers term by term",
+          "display": "\\frac{d}{dx}x^{n} = nx^{n−1}",
+          "working": [
+            "\\frac{d}{dx}(af + bg) = af′ + bg′ (a, b constant)",
+            "\\frac{d}{dx}(3x^{4} − 2x + 5) = 12x^{3} − 2",
+            "y′(x_{0}) is the tangent gradient at x_{0}"
+          ],
+          "narration": "Bring the exponent down as a multiplier and reduce it by one wherever the power is differentiable. Keep constant multipliers, differentiate sums and differences term by term, and replace any standalone constant by zero.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.3",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.2",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.10",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.4",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Use the product rule",
+          "display": "(uv)′ = u′v + uv′",
+          "working": [
+            "(x(x^{2} + 1))′ = 1(x^{2} + 1) + x(2x) = 3x^{2} + 1"
+          ],
+          "narration": "When two functions are multiplied, differentiate the first while keeping the second, then keep the first and differentiate the second. Add the two results.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.3",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Use the quotient rule",
+          "display": "(\\frac{u}{v})′ = \\frac{u′v − uv′}{v^{2}} (v ≠ 0)",
+          "working": [
+            "(\\frac{x}{x+1})′ = \\frac{(x+1) − x}{(x+1)^{2}} = \\frac{1}{(x+1)^{2}}"
+          ],
+          "narration": "Keep the order in the numerator. Multiply the derivative of the top by the bottom, subtract the top times the derivative of the bottom, and square the bottom.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.3",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.5",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-5-derivatives-of-trigonometric-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Use the chain rule for a function inside a function",
+          "display": "\\frac{dy}{dx} = \\frac{dy}{du} × \\frac{du}{dx}",
+          "working": [
+            "(sin x)′ = cos x; (cos x)′ = −sin x; (tan x)′ = sec^{2} x",
+            "(2x + 1)^{3} ⇒ y′ = 3(2x + 1)^{2} × 2",
+            "(cos(3x))′ = −3sin(3x)",
+            "\\frac{dA}{dt} = \\frac{dA}{dr} × \\frac{dr}{dt} for A = πr^{2} ⇒ \\frac{dA}{dt} = 2πr\\frac{dr}{dt}"
+          ],
+          "narration": "Differentiate the outside while leaving the inside in place, then multiply by the derivative of the inside. In radians, sine gives cosine, cosine gives minus sine, and tangent gives secant squared.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.6",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.1",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-1-related-rates"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.5",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-5-derivatives-of-trigonometric-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Find and classify stationary points",
+          "display": "f′(c) = 0; f′′(c) < 0 gives a local maximum",
+          "working": [
+            "f′′(c) > 0 gives a local minimum",
+            "f′ changes from + to − for a maximum, and from − to + for a minimum",
+            "Interior critical points have a zero or undefined derivative",
+            "f(x) = x^{2} ⇒ f′(0) = 0; f′′(0) = 2 > 0"
+          ],
+          "narration": "A negative second derivative at a stationary point gives a local maximum and a positive one gives a local minimum. If it is zero, check for a change in slope sign. On a closed interval, compare endpoints and interior critical points.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.5",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-5-derivatives-and-the-shape-of-a-graph"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.3",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.7",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-7-applied-optimization-problems"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Find the gradient function",
+          "display": "Find the gradient of y = 2x^{3} − 5x + 1 at x = 2.",
+          "working": [
+            "y′ = 6x^{2} − 5"
+          ],
+          "narration": "The question asks for the slope at a particular point. Find the derivative first so it can give the slope for any x."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Use the specified point",
+          "display": "y′(2) = 6(2^{2}) − 5",
+          "working": [],
+          "narration": "Put two into the derivative. The square is worked out before multiplying by six."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Read the slope",
+          "display": "6 × 4 − 5 = 19",
+          "working": [],
+          "narration": "The gradient is positive nineteen, so the tangent slopes upwards as you move to the right."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Expand the quadratic",
+          "display": "At what x does f(x) = x(4 − x) reach its maximum?",
+          "working": [
+            "f(x) = 4x − x^{2}"
+          ],
+          "narration": "This product expands into a simple quadratic. Expanding makes it easy to differentiate each term separately."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Find the horizontal tangent",
+          "display": "f′(x) = 4 − 2x",
+          "working": [
+            "4 − 2x = 0 ⇒ x = 2"
+          ],
+          "narration": "At the top of this smooth curve the gradient is zero. Set four minus two x equal to zero to find where that happens."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Check that it is the maximum",
+          "display": "f′′(x) = −2 < 0; x = 2",
+          "working": [],
+          "narration": "The second derivative is negative throughout, so the slope decreases through zero and the parabola reaches its maximum at two."
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Keep the inner derivative",
+          "display": "Wrong  3(2x + 1)^{2}     |     Right  6(2x + 1)^{2}",
+          "working": [],
+          "narration": "After differentiating the outer cube, keep going. The inside has derivative two, so the whole result must be multiplied by two.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.6",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.1",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-1-related-rates"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Track both minus signs",
+          "display": "y = x^{2} − x^{−1}",
+          "working": [
+            "Wrong  y′ = 2x − \\frac{1}{x^{2}}",
+            "Right  y′ = 2x − (−1)x^{−2} = 2x + \\frac{1}{x^{2}}"
+          ],
+          "narration": "The minus in front of the reciprocal stays in place, and the negative exponent supplies another minus. Together they make the reciprocal term positive in the derivative.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.3",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-2-exponents-and-scientific-notation"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "The derivative gives the slope",
+          "working": [],
+          "narration": "Differentiate for the gradient, then use the point or the slope condition the question gives you.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.1",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.4",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.1–2",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2016-017",
+      "trapSources": [
+        "math-jamb-2010-040",
+        "math-jamb-2012-037"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2014-038",
+        "written": false,
+        "stem": "For y = 4x^{3} − 2x^{2} + x, find \\frac{dy}{dx}.",
+        "options": [
+          {
+            "id": "a",
+            "text": "12x^{2} − 4x + 1",
+            "why": "Multiplying by the old powers gives 12x^{2} and −4x, and differentiating x gives 1."
+          },
+          {
+            "id": "b",
+            "text": "8x^{2} − 2x + 1",
+            "why": "The cubic needs a multiplier of 3, and the quadratic needs a multiplier of 2."
+          },
+          {
+            "id": "c",
+            "text": "8x^{2} − 4x + 1",
+            "why": "The cubic contributes 4 × 3, so the first coefficient is 12."
+          },
+          {
+            "id": "d",
+            "text": "12x^{2} − 2x + 1",
+            "why": "The term −2x^{2} contributes −2 × 2 × x, so its derivative is −4x."
+          }
+        ],
+        "answerId": "a"
+      }
+    },
+    {
+      "id": "maths-integration",
+      "title": "Integration",
+      "minutes": 3,
+      "chapters": [
+        "18"
+      ],
+      "keywords": [
+        "integration",
+        "integral",
+        "antiderivative",
+        "area under a curve",
+        "area between curves",
+        "constant of integration"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "Build the whole from thin strips",
+          "working": [],
+          "narration": "Imagine covering a curved patch of ground with strips of paper. Thinner strips fit the edge better. An integral gives the exact total as the strips get thinner.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.1",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-1-approximating-areas"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.3",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Reverse differentiation",
+          "display": "F′(x) = f(x) ⇒ ∫ f(x) dx = F(x) + C on an interval",
+          "working": [
+            "∫ 6x dx = 3x^{2} + C",
+            "y(2) = 15 ⇒ 12 + C = 15 ⇒ C = 3"
+          ],
+          "narration": "Integration finds a function whose derivative gives the original expression. Add a constant for an indefinite integral, because differentiating any constant gives zero. Use a given point to find it.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.10",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.4",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.3",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.3",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Add one to the power, then divide",
+          "display": "∫ x^{n} dx = \\frac{x^{n+1}}{n+1} + C (n ≠ −1)",
+          "working": [
+            "∫ (6x^{2} − 4) dx = 2x^{3} − 4x + C",
+            "∫ \\frac{1}{x} dx = ln|x| + C (x ≠ 0)"
+          ],
+          "narration": "Raise the exponent by one, then divide by that new exponent. Integrate each term separately and keep any constant multiplier. The reciprocal power uses a logarithm.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.10",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.4",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.6",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-6-integrals-involving-exponential-and-logarithmic-functions"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.9",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-9-derivatives-of-exponential-and-logarithmic-functions"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.3",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Check simple substitutions by differentiating",
+          "display": "∫ f(ax+b) dx = \\frac{F(ax+b)}{a} + C (F′ = f, a ≠ 0)",
+          "working": [
+            "∫ sin x dx = −cos x + C; ∫ cos x dx = sin x + C; ∫ sec^{2} x dx = tan x + C",
+            "∫ cos(2x) dx = \\frac{1}{2}sin(2x) + C"
+          ],
+          "narration": "When the inside is linear, divide by its slope after integrating the outside. Differentiate your result as a check. The chain rule should multiply that slope back in.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.5",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-5-substitution"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.6",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.10",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.5",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-5-derivatives-of-trigonometric-functions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.3",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Use upper value minus lower value",
+          "display": "∫_{a}^{b} f(x) dx = F(b) − F(a)",
+          "working": [
+            "∫_{1}^{3} 2x dx = 3^{2} − 1^{2} = 8"
+          ],
+          "narration": "For a continuous function, use an antiderivative and subtract its value at the lower limit from its value at the upper limit. The constant cancels.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.3",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.10",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.3",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Use nonnegative heights for area",
+          "display": "A = ∫_{a}^{b} |f(x)| dx",
+          "working": [
+            "A = ∫_{a}^{b} (upper − lower) dx when their order stays fixed",
+            "A between y = x and the axis on [−1, 1] is \\frac{1}{2} + \\frac{1}{2} = 1"
+          ],
+          "narration": "Below the horizontal axis a definite integral counts negatively, so split at any sign change and add the positive areas. Between two curves, split where they cross and integrate upper minus lower on each interval.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§6.1",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/6-1-areas-between-curves"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.3",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Find an antiderivative",
+          "display": "A curve has gradient 4x − 3 and passes through (1, 2). Find its equation.",
+          "working": [
+            "y = ∫ (4x − 3) dx = 2x^{2} − 3x + C"
+          ],
+          "narration": "The gradient is the derivative of the curve, so integrate it to recover the equation up to a constant."
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Use the point to find the constant",
+          "display": "2 = 2(1^{2}) − 3(1) + C",
+          "working": [
+            "2 = −1 + C ⇒ C = 3"
+          ],
+          "narration": "The point tells you which curve you need. At x equal to one, y is two, so use those values to solve for the constant."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Write and check the curve",
+          "display": "y = 2x^{2} − 3x + 3",
+          "working": [
+            "y′ = 4x − 3; y(1) = 2 − 3 + 3 = 2"
+          ],
+          "narration": "Differentiate the equation to get the given gradient, and put one in place of x to check the point."
+        },
+        {
+          "n": 10,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Find where the curves meet",
+          "display": "Find the area bounded by y = 4 − x^{2} and y = 2x + 1.",
+          "working": [
+            "4 − x^{2} = 2x + 1 ⇒ x^{2} + 2x − 3 = 0",
+            "(x + 3)(x − 1) = 0 ⇒ x = −3 or 1"
+          ],
+          "narration": "The region starts and ends where the curves meet. Equate their y values and factor the resulting quadratic to get the limits."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Find the upper curve",
+          "display": "x = 0 ⇒ 4 − x^{2} = 4; 2x + 1 = 1",
+          "working": [
+            "height = (4 − x^{2}) − (2x + 1) = 3 − 2x − x^{2}"
+          ],
+          "narration": "Zero lies between the crossings. At zero, the parabola is higher, and the order stays the same between those two crossings."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Integrate the height",
+          "display": "A = ∫_{−3}^{1} (3 − 2x − x^{2}) dx",
+          "working": [
+            "F(x) = 3x − x^{2} − \\frac{x^{3}}{3}"
+          ],
+          "narration": "Add up the heights over the interval by integrating. Treat each term separately and keep its sign."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Subtract the lower value",
+          "display": "A = F(1) − F(−3) = \\frac{5}{3} − (−9) = \\frac{32}{3}",
+          "working": [
+            "F(1) = 3 − 1 − \\frac{1}{3} = \\frac{5}{3}",
+            "F(−3) = −9 − 9 + 9 = −9"
+          ],
+          "narration": "Substitute both limits with care. Subtracting the negative lower value adds nine, giving ten and two thirds square units."
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Keep the sign of a definite integral",
+          "display": "∫_{1}^{2} (x^{2} − 4x) dx",
+          "working": [
+            "Wrong  F(1) − F(2) = \\frac{11}{3}",
+            "Right  F(2) − F(1) = −\\frac{11}{3}"
+          ],
+          "narration": "The expression is negative throughout this interval. The definite integral keeps that sign, so upper value minus lower value gives minus eleven thirds.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.3",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.3",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Divide by the inner slope",
+          "display": "∫ (2x + 3)^{\\frac{1}{2}} dx",
+          "working": [
+            "Wrong  \\frac{2}{3}(2x + 3)^{\\frac{3}{2}} + C",
+            "Right  \\frac{1}{3}(2x + 3)^{\\frac{3}{2}} + C"
+          ],
+          "narration": "The usual power step gives a factor of two thirds. The inside has slope two, so divide by two as well.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.5",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-5-substitution"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§3.6",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.3",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "Reverse the derivative and use the given information",
+          "working": [],
+          "narration": "Find an antiderivative, then use the limits for a definite integral or a given point to fix the constant.",
+          "sources": [
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§5.3",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.10",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "IV.3",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2017-033",
+      "trapSources": [
+        "math-jamb-2012-039",
+        "math-jamb-2014-042"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2016-032",
+        "written": false,
+        "stem": "A curve has gradient 6x − 5 at every point and passes through (2, 5). Find its equation.",
+        "options": [
+          {
+            "id": "a",
+            "text": "y = 6x^{2} − 5x",
+            "why": "Its derivative is 12x − 5, so the coefficient of x squared is too large."
+          },
+          {
+            "id": "b",
+            "text": "y = 6x^{2} + 5x + 5",
+            "why": "Its derivative is 12x + 5, so both derivative terms differ from the given gradient."
+          },
+          {
+            "id": "c",
+            "text": "y = 3x^{2} − 5x − 5",
+            "why": "The derivative is right, but substituting x = 2 gives −3 instead of 5."
+          },
+          {
+            "id": "d",
+            "text": "y = 3x^{2} − 5x + 3",
+            "why": "Its derivative is 6x − 5 and substituting x = 2 gives 12 − 10 + 3 = 5."
+          }
+        ],
+        "answerId": "d"
+      }
+    },
+    {
+      "id": "maths-mensuration",
+      "title": "Mensuration",
+      "minutes": 3,
+      "chapters": [
+        "12"
+      ],
+      "keywords": [
+        "mensuration",
+        "perimeter",
+        "areas",
+        "volumes",
+        "arc",
+        "sector",
+        "surface area",
+        "prism",
+        "cone",
+        "cylinder",
+        "sphere"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "Walk it, cover it, fill it",
+          "working": [],
+          "narration": "Walk round a garden to measure its edge, lay mats to cover the ground, or fill a bucket with water. Each job measures something different.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.6",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-6-solve-geometry-applications-volume-and-surface-area"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Add lengths for the distance round",
+          "display": "P_{rectangle} = 2(l + w); C_{circle} = 2πr = πd",
+          "working": [
+            "P_{square} = 4s",
+            "P_{rectangle} = 2(5 + 3) = 16 cm"
+          ],
+          "narration": "Perimeter measures the full boundary in length units. Add each outside edge once. For a circle, multiply twice the radius by pi.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-5-solve-geometry-applications-circles-and-irregular-figures"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§7.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/7-1-angles"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Measure flat area with the correct height",
+          "display": "A_{triangle} = \\frac{1}{2}bh; A_{parallelogram} = bh",
+          "working": [
+            "A_{rectangle} = lw; A_{square} = s^{2}; A_{rhombus} = \\frac{1}{2}d_{1}d_{2}",
+            "A_{trapezium} = \\frac{1}{2}(a+b)h",
+            "A_{circle} = πr^{2}",
+            "A_{triangle} = \\frac{1}{2} × 8 × 3 = 12 cm^{2}"
+          ],
+          "narration": "Area measures a flat region in square units. Use perpendicular height with the base. For a trapezium, use the average of the parallel side lengths times their perpendicular distance.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids"
+            },
+            {
+              "book": "OpenStax Contemporary Mathematics",
+              "where": "§10.6",
+              "url": "https://openstax.org/books/contemporary-mathematics/pages/10-6-area"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-5-solve-geometry-applications-circles-and-irregular-figures"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§7.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/7-1-angles"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Take the right fraction of a circle",
+          "display": "L_{arc} = \\frac{θ}{360°} × 2πr",
+          "working": [
+            "A_{sector} = \\frac{θ}{360°} × πr^{2} = \\frac{1}{2}rL_{arc}",
+            "P_{sector} = L_{arc} + 2r",
+            "θ = 90° ⇒ L_{arc} = \\frac{πr}{2}; A_{sector} = \\frac{πr^{2}}{4}"
+          ],
+          "narration": "Divide the central angle in degrees by three hundred and sixty to get the fraction of a full turn. Apply that fraction to the circumference for arc length and to the circle area for sector area.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§7.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/7-1-angles"
+            },
+            {
+              "book": "AMSI Spherical Geometry",
+              "where": "Calculation Notes, Sectors and Areas of segments",
+              "url": "https://www.amsi.org.au/ESA_Senior_Years/PDF/PDFvcaa/spherical8b.pdf"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Find the area and boundary of a segment",
+          "display": "A_{minor segment} = A_{sector} − A_{triangle}",
+          "narration": "The smaller segment is what remains after taking the triangle out of the sector. Its boundary is the arc and chord. Bisect the central angle to find half the chord, then double it.",
+          "working": [
+            "A_{triangle} = \\frac{1}{2}r^{2} sin θ for 0° < θ ≤ 180°",
+            "L_{chord} = 2r sin(\\frac{θ}{2}); P_{minor segment} = L_{arc} + L_{chord}",
+            "A_{major segment} = πr^{2} − A_{minor segment}",
+            "θ = 60° ⇒ L_{chord} = 2r × \\frac{1}{2} = r"
+          ],
+          "sources": [
+            {
+              "book": "AMSI Spherical Geometry",
+              "where": "Calculation Notes, Sectors and Areas of segments",
+              "url": "https://www.amsi.org.au/ESA_Senior_Years/PDF/PDFvcaa/spherical8b.pdf"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§7.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/7-1-angles"
+            },
+            {
+              "book": "AMSI Introductory Trigonometry",
+              "where": "p. 19, Trigonometry in history",
+              "url": "https://amsi.org.au/teacher_modules/pdfs/Introductory_trigonometry.pdf"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§7.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/7-2-right-triangle-trigonometry"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Use the base area for volume",
+          "display": "V_{prism} = Bh; V_{pyramid} = \\frac{1}{3}Bh",
+          "working": [
+            "V_{cuboid} = lwh; V_{cylinder} = πr^{2}h",
+            "V_{cone} = \\frac{1}{3}πr^{2}h",
+            "V_{sphere} = \\frac{4}{3}πr^{3}; V_{hemisphere} = \\frac{2}{3}πr^{3}",
+            "B = 6 cm^{2}, h = 8 cm ⇒ V_{prism} = 48 cm^{3}"
+          ],
+          "narration": "Multiply the base area by the perpendicular height for a prism or cylinder. A pyramid or cone takes a third of that product. A hemisphere takes half the volume of the matching sphere.",
+          "sources": [
+            {
+              "book": "OpenStax Contemporary Mathematics",
+              "where": "§10.7",
+              "url": "https://openstax.org/books/contemporary-mathematics/pages/10-7-volume-and-surface-area"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§6.2",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/6-2-determining-volumes-by-slicing"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.6",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-6-solve-geometry-applications-volume-and-surface-area"
+            },
+            {
+              "book": "AMSI Cones, Pyramids and Spheres",
+              "where": "Surface area of a right pyramid, Surface area of a cone, and The sphere",
+              "url": "https://www.amsi.org.au/teacher_modules/Cones_Pyramids_and_Spheres.html"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Add the exposed surfaces",
+          "display": "S_{cylinder} = 2πrh + 2πr^{2}; S_{cone} = πrℓ + πr^{2}",
+          "working": [
+            "S_{cuboid} = 2(lw + lh + wh); S_{prism} = 2B + P_{base}h for a right prism",
+            "S_{sphere} = 4πr^{2}; S_{hemisphere} = 3πr^{2}",
+            "ℓ = \\sqrt{r^{2} + h^{2}} for a right cone",
+            "S_{regular pyramid} = B + \\frac{1}{2}P_{base}ℓ"
+          ],
+          "narration": "For total surface area, add the curved surfaces and any exposed flat faces. The cone uses slant height for its curved area. For a solid hemisphere, include the flat circular base.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.6",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-6-solve-geometry-applications-volume-and-surface-area"
+            },
+            {
+              "book": "OpenStax Contemporary Mathematics",
+              "where": "§10.7",
+              "url": "https://openstax.org/books/contemporary-mathematics/pages/10-7-volume-and-surface-area"
+            },
+            {
+              "book": "OpenStax Calculus Volume 2",
+              "where": "§2.4",
+              "url": "https://openstax.org/books/calculus-volume-2/pages/2-4-arc-length-of-a-curve-and-surface-area"
+            },
+            {
+              "book": "AMSI Cones, Pyramids and Spheres",
+              "where": "Surface area of a right pyramid, Surface area of a cone, and The sphere",
+              "url": "https://www.amsi.org.au/teacher_modules/Cones_Pyramids_and_Spheres.html"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.3",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-5-solve-geometry-applications-circles-and-irregular-figures"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Use the triangle at the end",
+          "display": "A right triangular prism is 5 cm long. Its right-angled end has perpendicular sides 3 cm and 4 cm. Find its volume.",
+          "working": [
+            "B = \\frac{1}{2} × 3 × 4 = 6 cm^{2}"
+          ],
+          "narration": "Look at the triangular end first. Its perpendicular sides give a base and height for the triangle area."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Extend that area through the prism",
+          "display": "V = B × 5 = 6 × 5",
+          "working": [],
+          "narration": "A prism has the same end area all the way along its length, so multiply that area by five."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Give the volume in cubic units",
+          "display": "V = 30 cm^{3}",
+          "working": [],
+          "narration": "The area has square centimetres and the length has centimetres. Their product gives thirty cubic centimetres for the volume."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Find the fraction of a full turn",
+          "display": "A 45° sector of a circle has radius 8 cm. What is its perimeter?",
+          "working": [
+            "\\frac{45}{360} = \\frac{1}{8}"
+          ],
+          "narration": "Forty-five degrees is one eighth of a full turn, so the arc is one eighth of the full circumference."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Find the curved edge",
+          "display": "L_{arc} = \\frac{1}{8} × 2π × 8 = 2π cm",
+          "working": [],
+          "narration": "The circumference is sixteen pi centimetres. Take one eighth of it because that is the part around the curved edge."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Include the straight edges",
+          "display": "P = 2π + 8 + 8 = (16 + 2π) cm",
+          "working": [],
+          "narration": "Walk the entire boundary of the sector in your mind. It has the curved edge and two straight radii, each eight centimetres long."
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Count the whole sector boundary",
+          "display": "Wrong  P = 2π cm     |     Right  P = (16 + 2π) cm",
+          "working": [],
+          "narration": "The arc measures only the curved part. Add both straight radii whenever the question asks for the perimeter of the sector.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§7.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/7-1-angles"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Use the area of the actual prism end",
+          "display": "Right triangular end with perpendicular sides 3 cm and 4 cm",
+          "working": [
+            "Wrong  V = 3 × 4 × 8 = 96 cm^{3}",
+            "Right  V = \\frac{1}{2} × 3 × 4 × 8 = 48 cm^{3}"
+          ],
+          "narration": "A triangular end takes half the product of its perpendicular sides. Use that area times the prism length to avoid treating the end as a rectangle.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids"
+            },
+            {
+              "book": "OpenStax Contemporary Mathematics",
+              "where": "§10.7",
+              "url": "https://openstax.org/books/contemporary-mathematics/pages/10-7-volume-and-surface-area"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "Match the formula to what is measured",
+          "working": [],
+          "narration": "Trace the boundary for perimeter, cover the surface for area, and fill the space for volume.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§9.6",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/9-6-solve-geometry-applications-volume-and-surface-area"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "III.2(a–d)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2019-018",
+      "trapSources": [
+        "math-jamb-2019-018",
+        "math-jamb-2017-038"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2015-031",
+        "written": false,
+        "stem": "Find the area of a sector with centre angle 70° and radius 6 cm. Use π ≈ \\frac{22}{7}.",
+        "options": [
+          {
+            "id": "a",
+            "text": "22 cm^{2}",
+            "why": "The specified fraction of the circle area is (70 ÷ 360) × (22 ÷ 7) × 36, which is 22 cm^{2}."
+          },
+          {
+            "id": "b",
+            "text": "44 cm^{2}",
+            "why": "This is twice the sector area. The sector takes only 70 out of the full 360 degrees."
+          },
+          {
+            "id": "c",
+            "text": "66 cm^{2}",
+            "why": "This is three times the sector area. The angle fraction must be 70 divided by 360."
+          },
+          {
+            "id": "d",
+            "text": "88 cm^{2}",
+            "why": "This is four times the sector area. Multiplying the circle area by 70 divided by 360 gives 22."
+          }
+        ],
+        "answerId": "a"
+      }
+    },
+    {
+      "id": "maths-progressions",
+      "title": "Progressions",
+      "minutes": 3,
+      "chapters": [
+        "8"
+      ],
+      "keywords": [
+        "progression",
+        "progressions",
+        "arithmetic progression",
+        "geometric progression",
+        "nth term",
+        "common difference",
+        "common ratio",
+        "sum to infinity"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "Two ways to grow a pile",
+          "working": [],
+          "narration": "Start with a pile of sweets. In one game you add two each round. In another you double the pile. Both patterns are predictable.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-2-arithmetic-sequences"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-3-geometric-sequences"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.4, objectives i–iii",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Recognise an arithmetic progression by its difference",
+          "display": "d = a_{n+1} − a_{n}; a_{n} = a + (n − 1)d",
+          "working": [
+            "3, 7, 11, … ⇒ d = 4; a_{5} = 3 + 4 × 4 = 19"
+          ],
+          "narration": "An arithmetic progression adds the same difference each time. The first term is a, so there are one fewer jumps than the position of the term.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-2-arithmetic-sequences"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-1-sequences-and-their-notations"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.4, objectives i–iii",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Sum an arithmetic progression by pairing ends",
+          "display": "S_{n} = \\frac{n}{2}(a + a_{n}) = \\frac{n}{2}(2a + (n − 1)d)",
+          "working": [
+            "3 + 7 + 11 + 15 = \\frac{4}{2}(3 + 15) = 36"
+          ],
+          "narration": "An arithmetic progression has evenly spaced terms. Its average is halfway between the first and last terms, so multiply that average by the number of terms.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-4-series-and-their-notations"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-2-arithmetic-sequences"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.4, objectives i–iii",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Recognise a geometric progression by its ratio",
+          "display": "r = \\frac{a_{n+1}}{a_{n}} (a_{n} ≠ 0); a_{n} = ar^{n−1}",
+          "working": [
+            "4, 12, 36, … ⇒ r = 3; a_{4} = 4 × 3^{3} = 108"
+          ],
+          "narration": "A geometric progression multiplies by the same ratio each time. Divide a term by the nonzero term just before it to find the ratio, then count the multiplications from the start.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-3-geometric-sequences"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-1-sequences-and-their-notations"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.4, objectives i–iii",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Sum a finite geometric progression",
+          "display": "S_{n} = \\frac{a(1 − r^{n})}{1 − r} (r ≠ 1)",
+          "working": [
+            "(1 − r)S_{n} = a − ar^{n}",
+            "2 + 6 + 18 = \\frac{2(1 − 3^{3})}{1 − 3} = 26",
+            "r = 1 ⇒ S_{n} = na"
+          ],
+          "narration": "To see the formula, multiply the whole sum by the ratio, then subtract to cancel the overlapping terms. For a ratio of one, each term is the same, so multiply the first term by the number of terms.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-4-series-and-their-notations"
+            },
+            {
+              "book": "OpenStax Calculus Volume 2",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-3-geometric-sequences"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.4, objectives i–iii",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Sum an infinite geometric progression when it converges",
+          "display": "S_{∞} = \\frac{a}{1 − r} (|r| < 1)",
+          "working": [
+            "6 + 3 + 1.5 + … = \\frac{6}{1 − \\frac{1}{2}} = 12"
+          ],
+          "narration": "For a nonzero first term, an infinite geometric sum converges only when the magnitude of the ratio is less than one. Then the powers of the ratio approach zero and leave this formula.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-4-series-and-their-notations"
+            },
+            {
+              "book": "OpenStax Calculus Volume 2",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.4, objectives i–iii",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Check how the terms change",
+          "display": "Find the sum of the first four terms of 3, 6, 12, … .",
+          "working": [
+            "r = 6 ÷ 3 = 12 ÷ 6 = 2"
+          ],
+          "narration": "The differences are three then six, but both consecutive divisions give two. That makes this a geometric progression."
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Use the finite sum rule",
+          "display": "S_{4} = \\frac{3(1 − 2^{4})}{1 − 2}",
+          "working": [],
+          "narration": "The question asks for four terms, so use four in the finite sum formula. Put three in as the first term and two as the ratio."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Simplify and check by listing",
+          "display": "S_{4} = \\frac{3(−15)}{−1} = 45",
+          "working": [
+            "3 + 6 + 12 + 24 = 45"
+          ],
+          "narration": "The two minus signs cancel. You can check this short sum by adding three, six, twelve and twenty-four."
+        },
+        {
+          "n": 10,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Count the jumps between the terms",
+          "display": "The fourth term of an arithmetic progression is 13 and the tenth is 31. Find the twenty-fourth term.",
+          "working": [
+            "10 − 4 = 6; 31 − 13 = 18"
+          ],
+          "narration": "From position four to position ten there are six jumps, all of the same size. The values increase by eighteen across those jumps."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Work out the common difference",
+          "display": "d = \\frac{31 − 13}{10 − 4} = 3",
+          "working": [],
+          "narration": "Divide the total increase by the number of jumps. The progression goes up by three at each step."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Jump from the known fourth term",
+          "display": "a_{24} = 13 + (24 − 4) × 3 = 73",
+          "working": [],
+          "narration": "Start at the known fourth term and make twenty more jumps. Add sixty to thirteen to get the twenty-fourth term."
+        },
+        {
+          "n": 13,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Count multiplications from the first term",
+          "display": "4, 8, 16, …; r = 2",
+          "working": [
+            "Wrong  a_{11} = 4 × 2^{11} = 2^{13}",
+            "Right  a_{11} = 4 × 2^{10} = 2^{12}"
+          ],
+          "narration": "The first term is already there before any multiplying. The eleventh term therefore takes ten multiplications by two.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-3-geometric-sequences"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-1-sequences-and-their-notations"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.4, objectives i–iii",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Divide by one minus the ratio",
+          "display": "1 + \\frac{9}{10} + (\\frac{9}{10})^{2} + …",
+          "working": [
+            "Wrong  S_{∞} = 1 − \\frac{9}{10} = \\frac{1}{10}",
+            "Right  S_{∞} = \\frac{1}{1 − \\frac{9}{10}} = 10"
+          ],
+          "narration": "One minus the ratio is the denominator of the infinite sum. Here divide the first term by one tenth to get ten.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.4",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-4-series-and-their-notations"
+            },
+            {
+              "book": "OpenStax Calculus Volume 2",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.4, objectives i–iii",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "Check the change from term to term",
+          "working": [],
+          "narration": "A fixed difference points to an arithmetic progression, and a fixed multiplier points to a geometric progression.",
+          "sources": [
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-2-arithmetic-sequences"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§13.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-3-geometric-sequences"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "II.4, objectives i–iii",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2014-019",
+      "trapSources": [
+        "math-jamb-2018-025",
+        "math-jamb-2015-026"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2015-026",
+        "written": false,
+        "stem": "Find the sum to infinity of 1 + \\frac{9}{10} + (\\frac{9}{10})^{2} + (\\frac{9}{10})^{3} + … .",
+        "options": [
+          {
+            "id": "a",
+            "text": "\\frac{1}{10}",
+            "why": "One tenth is the denominator in the sum formula, so the sum is 1 divided by one tenth."
+          },
+          {
+            "id": "b",
+            "text": "\\frac{9}{10}",
+            "why": "Nine tenths is the common ratio. The sum already exceeds 1 after adding its first two terms."
+          },
+          {
+            "id": "c",
+            "text": "\\frac{10}{9}",
+            "why": "This divides the first term by the ratio instead of by 1 minus the ratio."
+          },
+          {
+            "id": "d",
+            "text": "10",
+            "why": "The ratio is nine tenths, so the infinite sum is 1 ÷ (1 − 0.9) = 10."
+          }
+        ],
+        "answerId": "d"
+      }
+    },
+    {
+      "id": "maths-fractions-percentages",
+      "title": "Fractions, decimals and percentages",
+      "minutes": 4,
+      "chapters": [
+        "2"
+      ],
+      "keywords": [
+        "fractions",
+        "decimals",
+        "approximations",
+        "significant figures",
+        "percentages",
+        "percentage error",
+        "profit and loss",
+        "simple interest"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Picture",
+          "title": "Picture it",
+          "display": "Parts of the same tray",
+          "working": [],
+          "narration": "Imagine a tray with a hundred pieces of chin-chin. Take twenty-five. That is twenty-five per cent, a quarter of the tray, or zero point two five of it.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§6.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/6-1-understand-percent"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§5.3",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/5-3-decimals-and-fractions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Add or subtract equal-sized parts",
+          "display": "\\frac{a}{b} ± \\frac{c}{d} = \\frac{ad ± bc}{bd} (b, d ≠ 0)",
+          "working": [
+            "1 \\frac{1}{4} = \\frac{1 × 4 + 1}{4} = \\frac{5}{4}",
+            "\\frac{1}{2} + \\frac{1}{3} = \\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}"
+          ],
+          "narration": "Turn mixed numbers into improper fractions when it helps. For addition or subtraction, use a common denominator so that all the pieces are the same size.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§4.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§4.6",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/4-6-add-and-subtract-mixed-numbers"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§4.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/4-4-add-and-subtract-fractions-with-common-denominators"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§4.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Multiply fractions and divide by the reciprocal",
+          "display": "\\frac{a}{b} × \\frac{c}{d} = \\frac{ac}{bd} (b, d ≠ 0)",
+          "working": [
+            "\\frac{a}{b} ÷ \\frac{c}{d} = \\frac{a}{b} × \\frac{d}{c} (b, c, d ≠ 0)",
+            "\\frac{2}{3} ÷ \\frac{4}{5} = \\frac{2}{3} × \\frac{5}{4} = \\frac{5}{6}"
+          ],
+          "narration": "Multiply tops together and bottoms together. To divide by a nonzero fraction, turn that divisor upside down and multiply. With mixed operations, do multiplication and division before addition or subtraction, after any brackets and powers.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§4.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/4-2-multiply-and-divide-fractions"
+            },
+            {
+              "book": "OpenStax Elementary Algebra 2e",
+              "where": "§8.2",
+              "url": "https://openstax.org/books/elementary-algebra-2e/pages/8-2-multiply-and-divide-rational-expressions"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§2.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/2-1-use-the-language-of-algebra"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-1-real-numbers-algebra-essentials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Use place value for decimals",
+          "display": "0.25 = \\frac{25}{100} = \\frac{1}{4}",
+          "working": [
+            "0.3 + 0.04 = 0.34; 0.3 − 0.04 = 0.26",
+            "0.3 × 0.04 = 0.012",
+            "0.3 ÷ 0.04 = 30 ÷ 4 = 7.5"
+          ],
+          "narration": "Align decimal points for addition and subtraction. When multiplying, count the total decimal places of the factors. When dividing, shift both decimal points equally until the divisor is a whole number. Divide the numerator by the denominator to convert a fraction.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§5.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/5-1-decimals"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§5.3",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/5-3-decimals-and-fractions"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§5.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/5-2-decimal-operations"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-1-real-numbers-algebra-essentials"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-2-exponents-and-scientific-notation"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§4.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Round at the requested place",
+          "display": "0.007846 ≈ 0.00785 (3 significant figures)",
+          "working": [
+            "0.007846 ≈ 0.008 (3 decimal places)",
+            "0.007843 ≈ 0.00784 (3 significant figures)"
+          ],
+          "narration": "For significant figures, count from the first nonzero digit. For decimal places, count from the decimal point. If the next digit is five or more, round up. Otherwise keep the last digit.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§5.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/5-1-decimals"
+            },
+            {
+              "book": "Cambridge Excellence in Mathematics Senior Secondary 2 Student’s Book",
+              "where": "Topic 1, Numbers and numeration, Approximation",
+              "url": "https://assets.cambridge.org/97813166/08746/excerpt/9781316608746_excerpt.pdf"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Use the original amount as the percent base",
+          "display": "percentage change = \\frac{new − original}{original} × 100% (original > 0)",
+          "working": [
+            "p% = \\frac{p}{100}; \\frac{1}{4} = 0.25 = 25%",
+            "new = original × (1 ± \\frac{p}{100})",
+            "200 × 1.15 = 230; 230 ÷ 1.15 = 200",
+            "percentage error = \\frac{|measured − true|}{|true|} × 100% (true ≠ 0)"
+          ],
+          "narration": "Per cent means out of a hundred. Multiply by the decimal multiplier to find the new amount, and divide by it to recover the original. For profit or loss use the cost, and for percentage error use the true value.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§6.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/6-1-understand-percent"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§5.3",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/5-3-decimals-and-fractions"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§6.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/6-2-solve-general-applications-of-percent"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§5.8",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/5-8-modeling-using-variation"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-2-linear-equations-in-one-variable"
+            },
+            {
+              "book": "OpenStax Calculus Volume 1",
+              "where": "§4.2",
+              "url": "https://openstax.org/books/calculus-volume-1/pages/4-2-linear-approximations-and-differentials"
+            },
+            {
+              "book": "OpenStax Contemporary Mathematics",
+              "where": "§6.1, Exercise 24",
+              "url": "https://openstax.org/books/contemporary-mathematics/pages/6-1-understanding-percent"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Use the original principal for simple interest",
+          "display": "I = Prt; A = P + I",
+          "working": [
+            "P = ₦2,000; r = 0.06; t = 2",
+            "I = ₦2,000 × 0.06 × 2 = ₦240; A = ₦2,240"
+          ],
+          "narration": "Multiply the starting principal by the rate as a decimal and by the time in matching units. For an annual rate use years, then add the interest to the principal if asked for the total.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§6.4",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/6-4-solve-simple-interest-applications"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§6.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/6-1-understand-percent"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.3",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-3-models-and-applications"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Find the multiplier for an increase",
+          "display": "A bag costs ₦2,400 after a 20% increase. Find the original price.",
+          "working": [
+            "1 + \\frac{20}{100} = 1.2"
+          ],
+          "narration": "The new price includes all of the old price plus one fifth of it. That makes the new price one point two times the old price."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Undo the multiplication",
+          "display": "original = ₦2,400 ÷ 1.2 = ₦2,000",
+          "working": [],
+          "narration": "Divide the new price by the multiplier. This takes you back to the amount the increase was based on."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Check using the original price",
+          "display": "20% × ₦2,000 = ₦400; ₦2,000 + ₦400 = ₦2,400",
+          "working": [],
+          "narration": "Twenty per cent of two thousand is four hundred. Add it to the original price to check that you get the stated new price."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Convert the mixed numbers",
+          "display": "Simplify 3 \\frac{1}{3} − 1 \\frac{1}{4} × \\frac{2}{3} + 1 \\frac{2}{5}.",
+          "working": [
+            "3 \\frac{1}{3} = \\frac{10}{3}; 1 \\frac{1}{4} = \\frac{5}{4}; 1 \\frac{2}{5} = \\frac{7}{5}"
+          ],
+          "narration": "Convert the mixed numbers so each term is written as one fraction. Multiply each whole number by its denominator before adding its numerator."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Do the multiplication first",
+          "display": "\\frac{5}{4} × \\frac{2}{3} = \\frac{10}{12} = \\frac{5}{6}",
+          "working": [],
+          "narration": "The middle two fractions are joined by multiplication. Work out that product before subtracting it from the first fraction."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Use a common denominator",
+          "display": "\\frac{10}{3} − \\frac{5}{6} + \\frac{7}{5} = \\frac{100 − 25 + 42}{30}",
+          "working": [
+            "\\frac{100 − 25 + 42}{30} = \\frac{117}{30}"
+          ],
+          "narration": "Thirty is divisible by three, six and five. Rewrite each fraction in thirtieths so the pieces have equal size."
+        },
+        {
+          "n": 14,
+          "part": "example-2",
+          "tag": "JAMB example",
+          "title": "Reduce the result",
+          "display": "\\frac{117}{30} = \\frac{39}{10} = 3 \\frac{9}{10}",
+          "working": [],
+          "narration": "Divide the top and bottom by three. Thirty-nine tenths is three whole ones and nine tenths."
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Trap 1",
+          "title": "Multiply before subtracting",
+          "display": "\\frac{10}{3} − \\frac{5}{4} × \\frac{2}{3} + \\frac{7}{5}",
+          "working": [
+            "Wrong  (\\frac{10}{3} − \\frac{5}{4}) × \\frac{2}{3} + \\frac{7}{5}",
+            "Right  \\frac{10}{3} − (\\frac{5}{4} × \\frac{2}{3}) + \\frac{7}{5}"
+          ],
+          "narration": "Subtraction has to wait until the product is ready. Group the multiplication first, then use a common denominator for the remaining work.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§2.1",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/2-1-use-the-language-of-algebra"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§1.1",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/1-1-real-numbers-algebra-essentials"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Trap 2",
+          "title": "Recover the original percentage base",
+          "display": "₦345 is the salary after a 15% rise",
+          "working": [
+            "Wrong  ₦345 × 0.85 = ₦293.25",
+            "Right  ₦345 ÷ 1.15 = ₦300"
+          ],
+          "narration": "The raise was fifteen per cent of the old salary. Dividing by one point one five reverses the increase and brings you back to the old salary.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§6.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/6-2-solve-general-applications-of-percent"
+            },
+            {
+              "book": "OpenStax Algebra and Trigonometry 2e",
+              "where": "§2.2",
+              "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-2-linear-equations-in-one-variable"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Remember this",
+          "display": "Track what counts as one whole",
+          "working": [],
+          "narration": "Make the parts comparable, and always ask which amount the fraction or percentage is based on.",
+          "sources": [
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§4.5",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators"
+            },
+            {
+              "book": "OpenStax Prealgebra 2e",
+              "where": "§6.2",
+              "url": "https://openstax.org/books/prealgebra-2e/pages/6-2-solve-general-applications-of-percent"
+            },
+            {
+              "book": "JAMB UTME Mathematics syllabus",
+              "where": "I.2(a–f) and II.2(e)",
+              "url": "https://ibass.jamb.gov.ng/static/media/Mathematics.c0621f4b8b674e75fd05.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "math-jamb-2016-005",
+      "trapSources": [
+        "math-jamb-2016-005",
+        "math-jamb-2015-008"
+      ],
+      "quickCheck": {
+        "questionId": "math-jamb-2018-030",
+        "written": false,
+        "stem": "Calculate the simple interest on ₦1,500 for 8 years at 5% per year.",
+        "options": [
+          {
+            "id": "a",
+            "text": "₦5,000",
+            "why": "₦5,000 would exceed the original principal several times. The stated rate gives 0.05 × ₦1,500 = ₦75 a year, or ₦600 in eight years."
+          },
+          {
+            "id": "b",
+            "text": "₦600",
+            "why": "The annual interest is ₦75, so eight years gives 8 × ₦75 = ₦600."
+          },
+          {
+            "id": "c",
+            "text": "₦500",
+            "why": "₦500 falls short of the total because eight yearly payments of ₦75 add up to ₦600."
+          },
+          {
+            "id": "d",
+            "text": "₦150",
+            "why": "₦150 is only two years of interest at ₦75 per year."
+          }
+        ],
+        "answerId": "b"
+      }
+    }
+  ]
+}
