@@ -15,6 +15,9 @@ describe('original practice questions', () => {
     expect(isOriginalPractice(item)).toBe(true)
     expect(getQuestionSourceLabel(item)).toBe('JAMB-style practice')
   })
+  it('include adaptations of past-paper concepts', () => {
+    expect(isOriginalPractice(q('Original adaptation of the concept assessed in JAMB Biology 2010, Q3'))).toBe(true)
+  })
   it('leave JAMB past questions alone', () => {
     const item = q({ provider: 'jamb-past-paper', id: 30, yearLabel: '2016' } as Question['source'], { yearVerified: true })
     expect(isOriginalPractice(item)).toBe(false)

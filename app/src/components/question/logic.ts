@@ -15,10 +15,10 @@ export function shortcutKey(event: KeyboardEvent) {
   return event.key.toLowerCase()
 }
 
-// Questions written for JP (for a Teach me clip, or as JAMB-style concept practice), not taken from a
-// JAMB paper. They are labelled as practice and kept out of the timed CBT exam.
+// Questions written or adapted for JP (Teach me, JAMB-style concept practice, adaptations of past-paper
+// concepts), not taken word for word from a JAMB paper. They are labelled as practice and kept out of the timed CBT exam.
 export function isOriginalPractice(question: Question): boolean {
-  return typeof question.source === 'string' && /^Original (practice|JAMB-style practice)/.test(question.source)
+  return typeof question.source === 'string' && /^Original\b/.test(question.source)
 }
 
 export function getQuestionSourceLabel(question: Question): string | null {
