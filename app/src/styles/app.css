@@ -1495,3 +1495,29 @@ body {
   font-weight: 600;
   white-space: nowrap;
 }
+
+/* "‹ Back" at the top of page content, under the header. */
+.jp-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  align-self: flex-start;
+  min-height: 32px;
+  margin: 0 0 4px -6px;
+  padding: 0 8px 0 6px;
+  border-radius: var(--radius-small);
+  color: var(--ink-2);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.jp-back-link:hover {
+  color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.jp-back-link:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}

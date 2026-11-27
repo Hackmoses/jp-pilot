@@ -1,4 +1,4 @@
-import { goBack } from '../lib/navigation'
+import { BackLink } from '../components/share/BackLink'
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { getManifestSync, loadSubject } from '../lib/data'
 import { STUDY_TOPICS } from '../lib/sections'
@@ -77,15 +77,8 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
       <header class="jp-subjects-header">
         <div class="jp-subjects-header-inner">
           <div class="jp-subjects-brand">
-            <a class="jp-subjects-back" href="#/modes" aria-label="Back" onClick={(event) => { event.preventDefault(); goBack('#/modes') }}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="m15 18-6-6 6-6" />
-              </svg>
-            </a>
             <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
             <a class="jp-subjects-wordmark" href="#/">JAMB Practice</a>
-            <span class="jp-subjects-pill">15 UTME subjects</span>
           </div>
           <button
             type="button"
@@ -98,6 +91,7 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
       </header>
 
       <main class="jp-subjects-main">
+        <BackLink fallback="#/" />
         <div class="jp-subjects-head">
           <div class="jp-subjects-title-wrap">
             <h1>Choose a subject</h1>
