@@ -1,54 +1,48 @@
 import { useState } from 'preact/hooks'
+import { initialCalc, isOperator, keyFromKeyboard, pressKey, type CalcKey } from '../lib/calculator'
 
-const keys = ['7', '8', '9', '÷', '4', '5', '6', '×', '1', '2', '3', '−', '0', '.', '=', '+', 'Clear', '%', '√']
-const names: Record<string, string> = { '÷': 'Divide', '×': 'Multiply', '−': 'Subtract', '+': 'Add', '.': 'Decimal point', '=': 'Equals', '%': 'Percent', '√': 'Square root' }
-const operations: Record<string, (a: number, b: number) => number> = {
-  '+': (a, b) => a + b, '−': (a, b) => a - b, '×': (a, b) => a * b, '÷': (a, b) => a / b,
+const keys: CalcKey[] = [
+  'MC', 'MR', 'M+', 'M−',
+  'C', 'CE', '√', 'x²',
+  '7', '8', '9', '÷',
+  '4', '5', '6', '×',
+  '1', '2', '3', '−',
+  '0', '.', '±', '+',
+  '%', '=',
+]
+const names: Partial<Record<CalcKey, string>> = {
+  '÷': 'Divide', '×': 'Multiply', '−': 'Subtract', '+': 'Add', '.': 'Decimal point', '=': 'Equals',
+  '%': 'Percent', '√': 'Square root', 'x²': 'Square', '±': 'Change sign', C: 'Clear all', CE: 'Clear entry',
+  MC: 'Memory clear', MR: 'Memory recall', 'M+': 'Memory add', 'M−': 'Memory subtract',
 }
-const operatorKeys = new Set(['÷', '×', '−', '+', 'Clear', '%', '√'])
-const display = (n: number) => Number.isFinite(n) ? String(Number(n.toPrecision(12))) : 'Error'
 
 export function Calculator({ close }: { close: () => void }) {
-  const [value, setValue] = useState('0')
-  const [pending, setPending] = useState<{ value: number; operator: string }>()
-  const [replace, setReplace] = useState(true)
+  const [state, setState] = useState(initialCalc)
+  const press = (key: CalcKey) => setState((s) => pressKey(s, key))
 
-  const press = (key: string) => {
-    const current = Number(value)
-    if (key === 'Clear') {
-      setValue('0')
-      setPending(undefined)
-      setReplace(true)
-    } else if (key === '%' || key === '√') {
-      setValue(display(key === '%' ? current / 100 : Math.sqrt(current)))
-      setReplace(false)
-    } else if (key === '=' || operations[key]) {
-      const result = pending && !replace ? operations[pending.operator](pending.value, current) : current
-      setValue(display(result))
-      setPending(key === '=' || !Number.isFinite(result) ? undefined : { value: result, operator: key })
-      setReplace(true)
-    } else {
-      const digits = replace || value === 'Error' ? '0' : value
-      if ((key === '.' && digits.includes('.')) || digits.length >= 14) return
-      setValue(digits === '0' && key !== '.' ? key : digits + key)
-      setReplace(false)
-    }
+  const onKeyDown = (event: KeyboardEvent) => {
+    if (event.ctrlKey || event.metaKey || event.altKey) return
+    const key = keyFromKeyboard(event.key)
+    if (!key) return
+    if (event.target instanceof HTMLButtonElement && (event.key === 'Enter' || event.key === ' ')) return
+    event.preventDefault()
+    press(key)
   }
 
-  return <>
-    <output class="jp-calc-display" aria-label="Calculator display" aria-live="polite">{value}</output>
+  return <div class="jp-calc" onKeyDown={onKeyDown}>
+    <output class="jp-calc-display" aria-label="Calculator display" aria-live="polite">
+      {state.memory !== 0 && <span class="jp-calc-memory" aria-label="Memory in use">M</span>}
+      {state.value}
+    </output>
     <div class="jp-calc-pad" role="group" aria-label="Calculator keys">
       {keys.map((key) => {
-        const variant = key === '=' ? 'jp-calc-key--eq' : operatorKeys.has(key) ? 'jp-calc-key--op' : ''
-        const wide = key === 'Clear' ? 'jp-calc-key--wide' : ''
+        const memory = key.startsWith('M')
+        const variant = key === '=' ? 'jp-calc-key--eq' : isOperator(key) || memory || key === 'C' || key === 'CE' ||
+          key === '√' || key === 'x²' || key === '%' || key === '±' ? 'jp-calc-key--op' : ''
+        const wide = key === '=' ? 'jp-calc-key--wide jp-calc-key--triple' : ''
         return (
-          <button
-            key={key}
-            type="button"
-            class={`jp-btn jp-calc-key ${variant} ${wide}`.trim()}
-            aria-label={names[key]}
-            onClick={() => press(key)}
-          >
+          <button key={key} type="button" class={`jp-btn jp-calc-key ${variant} ${wide}`.trim()}
+            aria-label={names[key]} onClick={() => press(key)}>
             {key}
           </button>
         )
@@ -57,5 +51,5 @@ export function Calculator({ close }: { close: () => void }) {
     <div class="jp-dialog-actions">
       <button type="button" class="jp-btn" onClick={close}>Close</button>
     </div>
-  </>
+  </div>
 }
