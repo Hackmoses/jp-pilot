@@ -145,6 +145,35 @@ if (existsSync(glossaryFile)) {
   }
 }
 
+// Every solution must speak in one voice, and never in the old fallback voice.
+// The tracks listed here mixed voices before this check existed and are queued in audio/revoice-paths.txt.
+// Remove each one from this list once it has been voiced again.
+const MIXED_VOICE_QUEUE = new Set([
+  'audio/anim-020', 'audio/anim-acct-api-0012', 'audio/anim-chem-api-0031', 'audio/anim-chem-api-0154',
+  'audio/anim-comm-api-0020', 'audio/anim-comp-api-0048', 'audio/anim-econ-api-0008', 'audio/anim-phys-api-0018',
+  'audio/anim-phys-api-0097', 'audio/anim-phys-jamb-2012-041', 'audio/teach/anim-chem-api-0031',
+  'audio/teach/anim-chem-api-0154', 'audio/teach/anim-chem-jamb-2011-002', 'audio/teach/anim-chem-jamb-2014-022',
+  'audio/teach/anim-phys-jamb-2012-041', 'audio/teach/anim-phys-jamb-2013-013',
+])
+const audioManifestFile = path.join(rootDir, 'audio', 'manifest.json')
+if (existsSync(audioManifestFile)) {
+  const voicesByTrack = new Map()
+  for (const clip of readJson(audioManifestFile).clips ?? []) {
+    const parts = clip.path.split('/')
+    const track = parts[1] === 'teach' ? parts.slice(0, 3).join('/') : parts.slice(0, 2).join('/')
+    if (!voicesByTrack.has(track)) voicesByTrack.set(track, new Set())
+    voicesByTrack.get(track).add(clip.voice)
+  }
+  let queued = 0
+  for (const [track, voices] of voicesByTrack) {
+    const bad = voices.size > 1 || [...voices].some((voice) => String(voice).startsWith('kokoro'))
+    if (!bad) continue
+    if (MIXED_VOICE_QUEUE.has(track)) { queued++; continue }
+    errors.push(`${track}: mixes voices (${[...voices].join(', ')}). Voice the whole solution in one voice.`)
+  }
+  if (queued) console.log(`${queued} solution(s) with mixed voices are queued to be voiced again (audio/revoice-paths.txt).`)
+}
+
 if (pending.length) console.log(`${pending.length} calculation question(s) have no worked-step animation yet: ${pending.join(', ')}`)
 
 for (const error of errors) console.error(error)

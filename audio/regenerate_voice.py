@@ -797,6 +797,7 @@ def main() -> int:
     parser.add_argument("--skip-needs-review", action="store_true")
     parser.add_argument("--only-new", action="store_true", help="Voice only clips with no audio yet (and Kokoro fallbacks); keep everything else")
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--paths-file", default="", help="Voice only the clip paths listed in this file (one per line), replacing what is there")
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument(
@@ -814,6 +815,11 @@ def main() -> int:
 
     spoken_doc = json.loads((ROOT / args.spoken_file).read_text(encoding="utf-8"))
     spoken_clips = spoken_doc["clips"]
+    only_paths: set[str] | None = None
+    if args.paths_file:
+        only_paths = {line.strip() for line in (ROOT / args.paths_file).read_text(encoding="utf-8").splitlines()
+                      if line.strip() and not line.startswith("#")}
+        spoken_clips = [c for c in spoken_clips if c["path"] in only_paths]
     if args.limit > 0:
         spoken_clips = spoken_clips[: args.limit]
 
@@ -853,6 +859,21 @@ def main() -> int:
         manifest_by_path[rel_path] = entry
         return entry
 
+    # One solution must never mix voices. With --only-new, if any clip of a track (a solution's
+    # quick steps, or its Teach me steps) needs voicing, the whole track is voiced again in this voice.
+    def track_of(path: str) -> str:
+        parts = path.split("/")
+        return "/".join(parts[:3]) if len(parts) > 2 and parts[1] == "teach" else "/".join(parts[:2])
+
+    tracks_to_redo: set[str] = set()
+    if args.only_new:
+        for c in spoken_clips:
+            e = manifest_by_path.get(c["path"])
+            op = PUBLIC_DIR / c["path"]
+            if e is None or str(e.get("voice", "")).startswith("kokoro") or not op.exists() or op.stat().st_size == 0:
+                tracks_to_redo.add(track_of(c["path"]))
+        print(f"[only-new] tracks to voice in full: {len(tracks_to_redo)}", flush=True)
+
     # Record beforeBytes and sync lineSha256 from origin/main (or compute for new clips)
     skipped_review = []
     clean_items = []
@@ -874,6 +895,7 @@ def main() -> int:
         out_path = PUBLIC_DIR / rel_path
         if (
             not args.force
+            and only_paths is None
             and orig_entry is not None
             and orig_entry.get("voice") == args.voice_name
             and cur_entry is not None
@@ -897,6 +919,8 @@ def main() -> int:
         # clips with no audio yet, plus old Kokoro fallbacks.
         if (
             args.only_new
+            and only_paths is None
+            and track_of(rel_path) not in tracks_to_redo
             and cur_entry is not None
             and not str(cur_entry.get("voice", "")).startswith("kokoro")
             and out_path.exists()
