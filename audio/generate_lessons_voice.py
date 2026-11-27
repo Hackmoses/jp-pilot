@@ -93,6 +93,9 @@ for _word, _say in [
     ("stroma", "stroh-ma"), ("emigration", "emmy-gration"), ("unequal", "un-equal"),
     ("operculum", "oh-per-cue-lum"), ("euglena", "you-glee-na"), ("euglena's", "you-glee-na's"),
     ("vibrissae", "vye-brissy"), ("goitre", "goyter"), ("conserves", "con-serves"),
+    ("carnassials", "car-nassy-als"), ("poikilotherms", "poy-killo-therms"), ("poikilothermy", "poy-killo-thermy"),
+    ("homoiotherms", "ho-moy-o-therms"), ("secchi", "Secky"), ("quadrat", "quad-rat"), ("auxin", "awk-sin"),
+    ("abscisic", "ab-sissic"), ("zygospore", "zye-go-spore"), ("clitellum", "kly-tell-um"),
 ]:
     TTS_RESPELL_RULES.append((
         re.compile(r"\b" + re.escape(_word) + r"\b", re.IGNORECASE),
