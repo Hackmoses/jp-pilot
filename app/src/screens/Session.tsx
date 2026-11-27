@@ -423,7 +423,7 @@ export function Session({ attempt, study, review }: SessionProps) {
                 <path d="m15 18-6-6 6-6" />
               </svg>
             </a>
-            <a class="jp-logo" href="#/modes" aria-label="Main menu">JP</a>
+            <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
           </div>
           {!study && !review && <span class="jp-pill jp-pill--score" aria-live="polite">
             Score {sessionCorrect}/{sessionAnswered}

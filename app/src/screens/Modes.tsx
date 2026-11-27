@@ -3,6 +3,7 @@ import { useEffect, useState } from 'preact/hooks'
 import { Feedback } from '../components/share/Feedback'
 import { isSubjectLoaded, loadSubject } from '../lib/data'
 import { continueExam, getAttempt, getRecent, getReturnPoint } from '../lib/modes'
+import { goBack } from '../lib/navigation'
 import '../styles/modes.css'
 
 type ModeAccent = 'study' | 'practice' | 'exam' | 'resume'
@@ -33,13 +34,13 @@ export function Panel({ title, subtitle, back = '#/modes', backLabel, menu = tru
       <header class="jp-mode-header">
         <div class="jp-mode-header-inner">
           <div class="jp-mode-brand">
-            <a class="jp-mode-back" href={back} aria-label="Back">
+            <a class="jp-mode-back" href={back} aria-label="Back" onClick={(event) => { event.preventDefault(); goBack(back) }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="m15 18-6-6 6-6" />
               </svg>
             </a>
-            <a class="jp-logo" href="#/modes" aria-label="JP modes">JP</a>
+            <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
             <a class="jp-mode-wordmark" href="#/">JAMB Practice</a>
           </div>
           {menu && <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">

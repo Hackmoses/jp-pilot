@@ -99,7 +99,7 @@ function Exam({ attempt }: { attempt: Attempt }) {
       <header class="jp-topbar jp-exam-topbar">
         <div class="jp-topbar-inner">
           <div class="jp-brand-group">
-            <a class="jp-logo" href="#/modes" aria-label="JP modes">JP</a>
+            <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
             <span class="jp-counter">{getSubject(question.subject)?.name} · {attempt.index + 1} of {attempt.ids.length}</span>
           </div>
           <div class="jp-exam-topbar-right">

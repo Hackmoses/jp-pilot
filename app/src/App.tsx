@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'preact/hooks'
 import { lazyView } from './lib/lazyView'
 import { submitExpiredExam } from './lib/modes'
+import { recordVisit } from './lib/navigation'
 import { examRun, results } from './screens/examModules'
 import { Home } from './screens/Home'
 import { ReturnBar } from './screens/ReturnBar'
@@ -40,7 +41,9 @@ export function App() {
   const [route, setRoute] = useState(readRoute)
 
   useEffect(() => {
+    recordVisit(window.location.hash)
     const onHashChange = () => {
+      recordVisit(window.location.hash)
       setRoute(readRoute())
       window.scrollTo({ top: 0 })
     }

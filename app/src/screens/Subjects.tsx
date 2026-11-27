@@ -1,3 +1,4 @@
+import { goBack } from '../lib/navigation'
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { getManifestSync, loadSubject } from '../lib/data'
 import { STUDY_TOPICS } from '../lib/sections'
@@ -76,7 +77,7 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
       <header class="jp-subjects-header">
         <div class="jp-subjects-header-inner">
           <div class="jp-subjects-brand">
-            <a class="jp-subjects-back" href="#/modes" aria-label="Back to modes">
+            <a class="jp-subjects-back" href="#/modes" aria-label="Back" onClick={(event) => { event.preventDefault(); goBack('#/modes') }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="m15 18-6-6 6-6" />
