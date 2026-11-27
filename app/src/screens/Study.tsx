@@ -7,6 +7,7 @@ import { conceptLessonTopic, ENGLISH_CARD_TOPICS, STUDY_TOPICS, STUDY_TRY_IDS, s
 import { chapterName, hasCompletedConceptLesson, hasCompletedInteractive, hasStartedConceptLesson, hasStartedConceptTopic, hasStudied, remember, studyLink } from '../lib/modes'
 import { getSubject } from '../lib/subjects'
 import { ConceptLessonList } from '../components/lessons/ConceptLessonList'
+import { useLessonIndex } from '../lib/lessonIndex'
 import { ModeCard, Panel } from './Modes'
 
 const foundationTopic = lazyView(() => import('../components/lessons/FoundationTopic').then(({ FoundationTopic }) => FoundationTopic))
@@ -44,6 +45,9 @@ export function Study({ params }: { params: URLSearchParams }) {
   const topics = new Set(STUDY_TOPICS[subject] ?? [])
   const subjectHref = '#/study?subject=' + encodeURIComponent(subject)
   const practiceHref = '#/practice?' + new URLSearchParams({ subject })
+
+  // Subjects with key concept lessons lead with them; the syllabus topic lessons follow under Other lessons.
+  const hasKeyConcepts = useLessonIndex()?.some((lesson) => lesson.subject === subject) ?? false
 
   useEffect(() => {
     if (chapter && topics.has(chapter)) {
@@ -106,6 +110,10 @@ export function Study({ params }: { params: URLSearchParams }) {
         <p class="jp-mode-lead">Lessons for {subjectName} are coming soon.</p>
         <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref}>Practise {subjectName} →</a>
       </> : <>
+        {hasKeyConcepts && <div class="jp-study-others">
+          <h2 class="jp-mode-card-title">Other lessons</h2>
+          <p class="jp-mode-lead">More topic lessons and Try it activities from the syllabus. Open any of them when you want extra practice.</p>
+        </div>}
         <section class="jp-card" aria-label="Study progress">
           <p class="jp-summary-sub">{studied} of {total} topics completed</p>
           <div class="jp-progress-track" aria-hidden="true" style={{ marginTop: '8px' }}>

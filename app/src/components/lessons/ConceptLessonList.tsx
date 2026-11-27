@@ -7,8 +7,8 @@ export function ConceptLessonList({ subject }: { subject: string }) {
   if (!lessons.length) return null
   return (
     <section class="jp-lesson-list-wrap" aria-labelledby="jp-concept-lessons-title">
-      <h2 id="jp-concept-lessons-title" class="jp-mode-card-title">Key concept lessons</h2>
-      <p class="jp-mode-lead">Short voiced lessons: the idea simply, the rules, two worked examples and the traps.</p>
+      <h2 id="jp-concept-lessons-title" class="jp-mode-card-title">Key concepts</h2>
+      <p class="jp-mode-lead">Start here. Each short voiced lesson gives the idea simply, the rules, two worked examples and the traps to avoid.</p>
       <div class="jp-lesson-list">
         {lessons.map((lesson) => <LessonCard key={lesson.id} id={lesson.id} title={lesson.title} minutes={lesson.minutes} />)}
       </div>
