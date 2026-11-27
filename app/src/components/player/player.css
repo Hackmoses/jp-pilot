@@ -852,3 +852,33 @@ body:has(.jp-calc-modal[open]) {
     gap: 8px;
   }
 }
+
+/* CC turns the written explanation under the handwriting on and off. */
+.jp-player__cc {
+  display: inline-grid;
+  place-items: center;
+  inline-size: 34px;
+  min-inline-size: 34px;
+  block-size: 34px;
+  padding: 0;
+  border: 1px solid var(--option-line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.jp-player__cc[aria-pressed="true"] {
+  border-color: var(--paper-line);
+  color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.jp-player[data-captions="off"] .jp-player__caption,
+.jp-player[data-captions="off"] .jp-step__reason {
+  display: none;
+}

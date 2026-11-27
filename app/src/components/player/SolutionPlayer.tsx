@@ -23,6 +23,15 @@ import { ensureHandwritingFont } from '../../lib/fonts'
 import { WritingHand } from './WritingHand'
 import './player.css'
 
+// Captions under the handwriting can be turned off. The choice is kept on the device for every solution.
+const captionsKey = 'jp.player.captions'
+function readCaptions() {
+  try { return localStorage.getItem(captionsKey) !== 'off' } catch { return true }
+}
+function saveCaptions(on: boolean) {
+  try { localStorage.setItem(captionsKey, on ? 'on' : 'off') } catch { /* Storage can be off. */ }
+}
+
 export function hasStructuredStepFields(step: AnimationStep): boolean {
   return Boolean(step.title || step.reason || (step.working && step.working.length > 0))
 }
@@ -381,6 +390,13 @@ function Player({
     </button>
   )
 
+  const [captions, setCaptions] = useState(readCaptions)
+  const captionButton = (
+    <button type="button" class="jp-player__cc" aria-label="Captions" aria-pressed={captions}
+      title={captions ? 'Hide captions' : 'Show captions'}
+      onClick={() => { saveCaptions(!captions); setCaptions(!captions) }}>CC</button>
+  )
+
   const speedControl = (
     <select
       class="jp-player__speed"
@@ -396,7 +412,7 @@ function Player({
   )
 
   const calculationBody = (
-    <div class="jp-player" onKeyDown={(event) => {
+    <div class="jp-player" data-captions={captions ? 'on' : 'off'} onKeyDown={(event) => {
       if (event.target instanceof HTMLSelectElement || event.altKey || event.ctrlKey || event.metaKey) return
       const direction = event.key === 'ArrowLeft' ? -1 : event.key === 'ArrowRight' ? 1 : 0
       if (!direction) return
@@ -512,6 +528,7 @@ function Player({
           )
         })}
         {speaker}
+        {captionButton}
         {speedControl}
         {modeSwitch}
         {!hasRecorded && speechAvailable && (
