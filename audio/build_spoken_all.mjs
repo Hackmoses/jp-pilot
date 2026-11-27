@@ -116,6 +116,7 @@ const SUBJECTS = [
   { subject: 'commerce', files: ['data/subjects/animations-commerce.json'] },
   { subject: 'computer', files: ['data/subjects/animations-computer.json'] },
   { subject: 'geography', files: ['data/subjects/animations-geography.json'] },
+  { subject: 'crs', files: ['data/crs-lessons.json'] },
 ]
 
 const mathToSpeech = loadMathToSpeech()
