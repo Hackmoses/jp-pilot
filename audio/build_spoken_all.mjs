@@ -126,9 +126,13 @@ for (const entry of manifest.clips) {
   manifestByAnim.get(entry.animationId).push(entry)
 }
 
+const voicedPaths = new Set((manifest.clips ?? []).map((c) => c.path))
+
 for (const { subject, files } of SUBJECTS) {
   const outPath = path.join(rootDir, `audio/spoken-${subject}.json`)
   const existingDoc = existsSync(outPath) ? JSON.parse(readFileSync(outPath, 'utf8')) : { clips: [] }
+  // Concept lesson scripts change while they wait for voicing. Drop unvoiced lesson clips so they are rebuilt from the current script.
+  existingDoc.clips = (existingDoc.clips || []).filter((c) => !(String(c.source).endsWith('-lessons.json') && !voicedPaths.has(c.path)))
   const existingByPath = new Map((existingDoc.clips || []).map((c) => [c.path, c]))
 
   const clipsOut = []
