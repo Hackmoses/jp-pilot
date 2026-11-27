@@ -93,7 +93,8 @@ export function App() {
     case '#/privacy':
     case '#/contact':
     case '#/signup':
-      return <InfoPages key={route} page={screen.slice(2) as 'about' | 'privacy' | 'contact' | 'signup'} />
+    case '#/references':
+      return <InfoPages key={route} page={screen.slice(2) as 'about' | 'privacy' | 'contact' | 'signup' | 'references'} />
     default:
       return <Home />
   }

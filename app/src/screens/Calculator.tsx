@@ -32,7 +32,8 @@ export function Calculator({ close }: { close: () => void }) {
   return <div class="jp-calc" onKeyDown={onKeyDown}>
     <output class="jp-calc-display" aria-label="Calculator display" aria-live="polite">
       {state.memory !== 0 && <span class="jp-calc-memory" aria-label="Memory in use">M</span>}
-      {state.value}
+      <span class="jp-calc-expr">{state.expr || '\u00a0'}</span>
+      <span class="jp-calc-value">{state.value}</span>
     </output>
     <div class="jp-calc-pad" role="group" aria-label="Calculator keys">
       {keys.map((key) => {

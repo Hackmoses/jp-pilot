@@ -4,6 +4,9 @@ export type CalcState = {
   pending: { value: number; operator: Operator } | null
   replace: boolean
   memory: number
+  // The sum so far, shown above the number, such as "3 × 9 =", so the student sees what they pressed.
+  expr: string
+  done: boolean
 }
 export type Operator = '+' | '−' | '×' | '÷'
 export type CalcKey = Operator | '=' | '.' | '%' | '√' | 'x²' | '±' | 'C' | 'CE' | 'MC' | 'MR' | 'M+' | 'M−'
@@ -13,7 +16,7 @@ const operations: Record<Operator, (a: number, b: number) => number> = {
   '+': (a, b) => a + b, '−': (a, b) => a - b, '×': (a, b) => a * b, '÷': (a, b) => a / b,
 }
 
-export const initialCalc: CalcState = { value: '0', pending: null, replace: true, memory: 0 }
+export const initialCalc: CalcState = { value: '0', pending: null, replace: true, memory: 0, expr: '', done: false }
 
 export function formatNumber(n: number) {
   return Number.isFinite(n) ? String(Number(n.toPrecision(12))) : 'Error'
@@ -27,7 +30,7 @@ export function isOperator(key: string): key is Operator {
   return key in operations
 }
 
-export function pressKey(state: CalcState, key: CalcKey): CalcState {
+function step(state: CalcState, key: CalcKey): CalcState {
   if (key === 'C') return { ...initialCalc, memory: state.memory }
   if (key === 'CE') return { ...state, value: '0', replace: true }
   if (key === 'MC') return { ...state, memory: 0 }
@@ -64,4 +67,23 @@ const keyboard: Record<string, CalcKey> = {
 export function keyFromKeyboard(key: string): CalcKey | null {
   if (/^[0-9]$/.test(key)) return key as CalcKey
   return keyboard[key] ?? null
+}
+
+export function pressKey(state: CalcState, key: CalcKey): CalcState {
+  const next = step(state, key)
+  if (key === 'C') return { ...next, expr: '', done: false }
+  if (key === '=') {
+    const expr = state.pending && !state.replace ? `${state.expr} ${state.value} =`
+      : state.pending ? `${state.expr} =` : `${state.value} =`
+    return { ...next, expr: state.done ? state.expr : expr, done: true }
+  }
+  if (isOperator(key)) {
+    if (next.value === 'Error') return { ...next, expr: state.expr, done: false }
+    const expr = state.done ? `${state.value} ${key}`
+      : state.pending && state.replace ? state.expr.replace(/\S+$/, key)
+      : `${state.expr ? state.expr + ' ' : ''}${state.value} ${key}`
+    return { ...next, expr, done: false }
+  }
+  if (/^[0-9.]$/.test(key) && state.done) return { ...next, expr: '', done: false }
+  return { ...next, expr: state.expr, done: key === 'MR' || key.startsWith('M') ? state.done : false }
 }

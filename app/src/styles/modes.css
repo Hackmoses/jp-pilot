@@ -1418,3 +1418,32 @@
     overflow-y: auto;
   }
 }
+
+/* The sum so far sits above the number, so "3 × 9 =" stays visible with its answer. */
+.jp-calc-expr {
+  display: block;
+  min-height: 1.2em;
+  font-family: var(--font-system);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow-x: auto;
+  text-align: right;
+}
+
+.jp-calc-value {
+  display: block;
+}
+
+.jp-references ul {
+  margin: 6px 0 14px;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.jp-references cite { font-style: italic; }
+.jp-references a { color: var(--brand); }
+.jp-references span { color: var(--ink-2); }

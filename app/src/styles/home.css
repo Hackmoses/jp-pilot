@@ -771,3 +771,16 @@
 }
 
 .home-google-link { font-size: 13px; }
+
+/* Wide screens: Ask JP sits under the heading on the left and the Question of the day fills the right,
+   so the two columns stay close in height. Phones keep the single column: intro, question, Ask JP. */
+@media (min-width: 960px), (min-width: 720px) and (orientation: landscape) {
+  .home-top {
+    grid-template-areas: "intro qotd" "ask qotd";
+    grid-template-rows: auto 1fr;
+  }
+  .home-top > .home-intro { grid-area: intro; }
+  .home-top > .home-qotd { grid-area: qotd; }
+  .home-top > .home-ask { grid-area: ask; align-self: start; }
+  .home-top .home-ask-results { grid-template-columns: minmax(0, 1fr); }
+}

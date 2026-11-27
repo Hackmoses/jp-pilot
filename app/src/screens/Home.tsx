@@ -22,7 +22,7 @@ export function HomeFooter() {
         <div class="home-footer-row">
           <span><strong>JP</strong> · Free JAMB practice</span>
           <nav class="home-footer-links" aria-label="About JP">
-            <a href="#/about">About</a><a href="#/privacy">Privacy</a><a href="#/contact">Contact</a>
+            <a href="#/about">About</a><a href="#/references">References</a><a href="#/privacy">Privacy</a><a href="#/contact">Contact</a>
           </nav>
           <span>© {new Date().getFullYear()} JP</span>
         </div>
@@ -86,9 +86,8 @@ export function Home() {
             </>}
           </section>
           <QuestionOfDay />
+          <AskJp />
         </div>
-
-        <AskJp />
 
         <nav class="home-ways" aria-label="Ways to learn">
           {ways.map((way) => (

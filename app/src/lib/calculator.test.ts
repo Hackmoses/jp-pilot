@@ -35,4 +35,17 @@ describe('calculator', () => {
   it('CE clears the entry but keeps the pending sum', () => {
     expect(run(['8', '+', '5', 'CE', '2', '=']).value).toBe('10')
   })
+  it('shows the sum being typed and the result after equals', () => {
+    let state = run(['3', '×'])
+    expect(state.expr).toBe('3 ×')
+    state = run(['9'], state)
+    expect([state.expr, state.value]).toEqual(['3 ×', '9'])
+    state = pressKey(state, '=')
+    expect([state.expr, state.value]).toEqual(['3 × 9 =', '27'])
+    expect(pressKey(state, '4').expr).toBe('')
+    expect(pressKey(state, '+').expr).toBe('27 +')
+    expect(run(['2', '+', '3', '×', '4', '=']).expr).toBe('2 + 3 × 4 =')
+    expect(run(['9', '+', '−']).expr).toBe('9 −')
+    expect(pressKey(run(['5', '+']), 'C').expr).toBe('')
+  })
 })
