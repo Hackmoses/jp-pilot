@@ -388,6 +388,7 @@ function Player({
       value={audioState.speed}
       onChange={(event) => playback.setSpeed(Number(event.currentTarget.value))}
     >
+      <option value={0.5}>0.5×</option>
       <option value={0.75}>0.75×</option>
       <option value={1}>1×</option>
       <option value={1.25}>1.25×</option>

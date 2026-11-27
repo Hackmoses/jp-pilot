@@ -1,5 +1,5 @@
 import { afterEach, expect, it, vi } from 'vitest'
-import { CalculationPlayback, resetSessionPlaybackPreferences, type PlaybackState } from './CalculationPlayback'
+import { CalculationPlayback, getSessionPlaybackPreferences, resetSessionPlaybackPreferences, type PlaybackState } from './CalculationPlayback'
 import { bindHandwriting, handwritingFrame } from './handwriting'
 import { swipeDirection } from './SolutionPlayer'
 
@@ -85,6 +85,7 @@ it('moves the pen with recorded audio, holds on pause, and restores the same pos
 it('uses the silent step clock and resets the reveal for navigation and replay', () => {
   const tick = testClock()
   const playback = new CalculationPlayback([undefined, undefined], 4000, () => {}, () => {})
+  playback.setSpeed(1) // The default is 0.75×; this test checks the clock at normal speed.
   playback.start()
   tick(0)
   tick(900)
@@ -143,4 +144,8 @@ it('accepts horizontal drags and flicks in both directions, leaving vertical pan
   expect(swipeDirection(-23, 3, 200)).toBe(0)
   expect(swipeDirection(44, 70, 75)).toBe(0)
   expect(swipeDirection(9, 1, 25)).toBe(0)
+})
+
+it('starts narration at 0.75× by default', () => {
+  expect(getSessionPlaybackPreferences().speed).toBe(0.75)
 })
