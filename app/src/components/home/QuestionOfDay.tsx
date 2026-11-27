@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks'
 import { ACCOUNTS_ENABLED } from '../../lib/config'
-import { addDays, lagosDate, saveAnswer, savedAnswer, streak, type QotdFile, type QotdOption } from '../../lib/qotd'
+import { addDays, lagosDate, saveAnswer, streak, type QotdFile, type QotdOption } from '../../lib/qotd'
 import { getSubject } from '../../lib/subjects'
 
 // Shows x^{2} and H_{2}O as superscripts and subscripts without loading the full maths renderer.
@@ -69,7 +69,7 @@ export function QuestionOfDay({ showStreak = false }: { showStreak?: boolean }) 
       if (controller.signal.aborted) return
       if (today && today.date === date) {
         setLoad({ state: 'today', day: today })
-        setPicked(savedAnswer(date, today.id))
+        setPicked(null) // A reload gives a fresh try. The first answer today still counts for the streak.
         prefetchWeek(date)
         return
       }
