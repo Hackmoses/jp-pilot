@@ -146,22 +146,8 @@ if (existsSync(glossaryFile)) {
 }
 
 // Every solution must speak in one voice, and never in the old fallback voice.
-// The tracks listed here mixed voices before this check existed and are queued in audio/revoice-paths.txt.
-// Remove each one from this list once it has been voiced again.
-const MIXED_VOICE_QUEUE = new Set([
-  'audio/anim-020', 'audio/anim-acct-api-0012', 'audio/anim-chem-api-0031', 'audio/anim-chem-api-0154',
-  'audio/anim-comm-api-0020', 'audio/anim-comp-api-0048', 'audio/anim-econ-api-0008', 'audio/anim-phys-api-0018',
-  'audio/anim-phys-api-0097', 'audio/anim-phys-jamb-2012-041', 'audio/teach/anim-chem-api-0031',
-  'audio/teach/anim-chem-api-0154', 'audio/teach/anim-chem-jamb-2011-002', 'audio/teach/anim-chem-jamb-2014-022',
-  'audio/teach/anim-phys-jamb-2012-041', 'audio/teach/anim-phys-jamb-2013-013',
-  'audio/anim-chem-jamb-2017-023',
-  'audio/teach/anim-chem-jamb-2011-019',
-  'audio/teach/anim-chem-jamb-2012-004',
-  'audio/teach/anim-chem-jamb-2012-021',
-  'audio/teach/anim-chem-jamb-2013-050',
-  'audio/teach/anim-chem-jamb-2015-006',
-  'audio/teach/anim-chem-jamb-2017-016',
-])
+// Add a track here only while it is queued in audio/revoice-paths.txt to be voiced again.
+const MIXED_VOICE_QUEUE = new Set([])
 const audioManifestFile = path.join(rootDir, 'audio', 'manifest.json')
 if (existsSync(audioManifestFile)) {
   const voicesByTrack = new Map()
