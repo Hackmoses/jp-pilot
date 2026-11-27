@@ -27,6 +27,9 @@ import { getProgress, logEvent, recordAnswer } from '../lib/store'
 import { getSubject, getSubjectByQuestionId, isSubjectAvailable } from '../lib/subjects'
 import type { OptionId } from '../lib/types'
 import { Countdown } from './Countdown'
+import { calculator as calculatorModule } from './examModules'
+import { mayAnswer, recordVisitorAnswer } from '../lib/access'
+import { ACCOUNTS_ENABLED, FREE_QUESTIONS } from '../lib/config'
 import { lazyView } from '../lib/lazyView'
 
 const teachMe = lazyView(() => import('../components/lessons/biology/TeachMe').then(({ TeachMe }) => TeachMe))
@@ -161,6 +164,10 @@ export function Session({ attempt, study, review }: SessionProps) {
   const answered = pickedId !== null || Boolean(review)
   // Biology teaches through illustrated Teach me clips instead of the handwritten player.
   const solutionId = question?.subject === 'biology' ? undefined : question?.animationId
+  const calculatorDialog = useRef<HTMLDialogElement>(null)
+  const [calculatorUsed, setCalculatorUsed] = useState(false)
+  const { View: CalculatorView, failed: calculatorFailed } = calculatorModule.useView(calculatorUsed)
+  const showCalculator = question?.type === 'calculation' && !review
   const showTeachMe = question?.subject === 'biology' && answered && !study && (Boolean(review) || attempt?.mode !== 'exam')
   const { View: TeachMe } = teachMe.useView(showTeachMe)
   const back = study ? studyLink(study.subject, study.chapter, study.concept) : review?.href
@@ -190,6 +197,7 @@ export function Session({ attempt, study, review }: SessionProps) {
       if (study) markStudied(study.subject, study.chapter, question.id, optionId)
 
       setPicks(nextPicks)
+      if (ACCOUNTS_ENABLED && !review) recordVisitorAnswer(question.id)
       recordAnswer({
         questionId: question.id,
         pickedId: optionId,
@@ -421,6 +429,10 @@ export function Session({ attempt, study, review }: SessionProps) {
             Score {sessionCorrect}/{sessionAnswered}
           </span>}
           <div class="jp-topbar-actions">
+            {showCalculator && <button type="button" class="jp-btn jp-calc-open" aria-haspopup="dialog" onClick={() => {
+              setCalculatorUsed(true)
+              calculatorDialog.current?.showModal()
+            }}>Calc</button>}
             {deadline !== null && pausedAt === null && <Countdown deadline={deadline}
               onExpire={() => finishAttempt(savedAttempt.current!, Date.now())} />}
             {canPause && pausedAt === null && <button type="button" class="jp-btn" onClick={pause}>Pause</button>}
@@ -457,7 +469,12 @@ export function Session({ attempt, study, review }: SessionProps) {
       <div class="jp-session-layout">
         <div class="jp-left-col">
           {review && pickedId === null && <p class="jp-summary-sub">Unanswered</p>}
-          <QuestionCard
+          {!answered && !review && !mayAnswer(question.id) ? <section class="jp-card jp-gate" aria-labelledby="jp-gate-title">
+            <h2 id="jp-gate-title" class="jp-mode-card-title">You have used your {FREE_QUESTIONS} free questions</h2>
+            <p class="jp-mode-lead">Create a free account with your email to keep practising. Your progress stays on this phone.</p>
+            <a class="jp-btn jp-btn--primary jp-btn--full" href="#/signup">Start free with your email →</a>
+            <a class="jp-link-btn" href="#/">Back to home</a>
+          </section> : <QuestionCard
             question={question}
             review={entry.review}
             options={options}
@@ -476,7 +493,7 @@ export function Session({ attempt, study, review }: SessionProps) {
             })}
             calculationSlot={!isWide && !isConceptAnimation ? calculationPlayer : undefined}
             conceptSlot={!isWide && isConceptAnimation ? calculationPlayer : undefined}
-          />
+          />}
           {showTeachMe && TeachMe && <TeachMe key={question.id} id={question.id} correct={pickedId === question.answerId} />}
         </div>
 
@@ -555,6 +572,16 @@ export function Session({ attempt, study, review }: SessionProps) {
           <a class="jp-link-btn" href={exitHref}>Leave practice</a>
         </section>
       </div>}
+
+      <dialog class="jp-dialog jp-calc-dialog" ref={calculatorDialog} aria-labelledby="jp-practice-calculator-title">
+        <h2 id="jp-practice-calculator-title">Calculator</h2>
+        {calculatorUsed && (CalculatorView ? <CalculatorView close={() => calculatorDialog.current?.close()} /> : <>
+          <p class="jp-mode-lead" role="status">{calculatorFailed ? 'Could not open the calculator.' : 'Loading…'}</p>
+          <div class="jp-dialog-actions">
+            <button type="button" class="jp-btn" onClick={() => calculatorDialog.current?.close()}>Close</button>
+          </div>
+        </>)}
+      </dialog>
 
       {askOpen && (!isWide || !answered) && (
         <AskSheet

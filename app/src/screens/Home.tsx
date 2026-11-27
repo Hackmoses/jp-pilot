@@ -1,109 +1,109 @@
-import { useEffect, useRef, useState } from 'preact/hooks'
-import { FeatureCarousel } from '../components/landing/FeatureCarousel'
-import { Feedback } from '../components/share/Feedback'
-import { continueExam, getAttempt } from '../lib/modes'
-import '../styles/landing.css'
+import { AskJp } from '../components/home/AskJp'
+import { ContinueCard, unfinishedAttempt } from '../components/home/ContinueCard'
+import { QuestionOfDay } from '../components/home/QuestionOfDay'
+import { accountName } from '../lib/access'
+import { ACCOUNTS_ENABLED, FREE_QUESTIONS } from '../lib/config'
+import { greetingFor } from '../lib/greeting'
+import '../styles/home.css'
+
+const ways = [
+  { href: '#/subjects?mode=study', title: 'Study', text: 'Learn it chapter by chapter', tone: 'brand',
+    icon: <path d="M4 5h11a3 3 0 013 3v11H7a3 3 0 01-3-3z" /> },
+  { href: '#/subjects?mode=practice', title: 'Practice', text: 'Drill questions your way', tone: 'good',
+    icon: <><rect x="4" y="4" width="16" height="16" rx="3" /><path d="M8.5 12l2.5 2.5 4.5-5" /></> },
+  { href: '#/exam', title: 'Exam', text: 'Sit a timed JAMB-style test', tone: 'memo',
+    icon: <><circle cx="12" cy="13" r="7" /><path d="M12 9v4l2 2M10 3h4" /></> },
+]
+
+export function HomeFooter() {
+  return (
+    <footer class="home-footer">
+      <div class="home-footer-inner">
+        <div class="home-footer-row">
+          <span><strong>JP</strong> · Free JAMB practice</span>
+          <nav class="home-footer-links" aria-label="About JP">
+            <a href="#/about">About</a><a href="#/privacy">Privacy</a><a href="#/contact">Contact</a>
+          </nav>
+          <span>© {new Date().getFullYear()} JP</span>
+        </div>
+        <p class="home-disclaimer">JP is an independent practice app and is not affiliated with JAMB (Joint Admissions and Matriculation Board).</p>
+      </div>
+    </footer>
+  )
+}
 
 export function Home() {
-  const notice = useRef<HTMLDialogElement>(null)
-  const [activeNotice, setActiveNotice] = useState<'email' | 'copyright' | null>(null)
-  const copyright = `© ${new Date().getFullYear()} JP`
-
-  useEffect(() => {
-    if (!activeNotice) return
-    const dialog = notice.current
-    dialog?.showModal()
-    return () => dialog?.close()
-  }, [activeNotice])
+  const name = accountName()
+  const attempt = unfinishedAttempt()
+  const focusAsk = () => {
+    document.getElementById('ask-jp')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    document.getElementById('home-ask-input')?.focus({ preventScroll: true })
+  }
 
   return (
-    <div class="landing">
-      <header class="landing-header">
-        <div class="landing-header-inner">
-          <div class="landing-brand">
-            <a class="landing-logo" href="#/" aria-label="JP home">JP</a>
-            <a class="landing-brand-name" href="#/">JAMB Practice</a>
-            <span class="landing-pilot">15 UTME subjects</span>
-          </div>
-          <nav class="landing-nav" aria-label="Primary">
-            <a class="landing-nav-link" href="#/modes">Practice</a>
-            <a class="landing-nav-link" href="#/done">Progress</a>
-            <button type="button" class="landing-nav-link" onClick={() => setActiveNotice('copyright')}>
-              About
-            </button>
+    <div class="home">
+      <header class="home-header">
+        <div class="home-header-inner">
+          <a class="home-brand" href="#/" aria-label="JP home">
+            <span class="home-logo" aria-hidden="true">JP</span>
+            <span class="home-brand-name">JAMB Practice</span>
+          </a>
+          <nav class="home-nav" aria-label="Primary">
+            {ways.map((way) => <a key={way.href} href={way.href}>{way.title}</a>)}
           </nav>
-          <div class="landing-header-actions">
-            <button type="button" class="landing-action landing-sign-in" onClick={() => setActiveNotice('email')}>
-              Sign in
+          <div class="home-header-actions">
+            <button type="button" class="home-icon-btn" aria-label="Search with Ask JP" onClick={focusAsk}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" />
+              </svg>
             </button>
-            <a class="landing-action landing-primary landing-header-cta" href="#/modes">Try free</a>
+            {name
+              ? <span class="home-avatar" aria-label={'Signed in as ' + name}>{name[0]}</span>
+              : <a class="home-btn home-btn--small" href="#/signup">Sign in</a>}
           </div>
         </div>
       </header>
 
-      <main class="landing-main">
-        <div class="landing-intro">
-          <div class="landing-eyebrow">For UTME candidates</div>
-          <h1>Don’t just cram JAMB — understand every step.</h1>
-          <p class="landing-pitch">
-            Every JAMB past question explained step by step — open it from a WhatsApp link and learn why every option is right or wrong.
-          </p>
-          <div class="landing-actions">
-            <button type="button" class="landing-action landing-primary" onClick={() => setActiveNotice('email')}>
-              Start free with your email
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M5 12h14m-6-6 6 6-6 6" />
-              </svg>
-            </button>
-            <a class="landing-action" href="#/modes">Try free without an account</a>
-            {getAttempt('exam') && <button type="button" class="landing-action" onClick={continueExam}>
-              Continue your exam
-            </button>}
-          </div>
-          <p class="landing-details">No download · Email-only sign-up · Works on one bar of signal · 10 free questions a day</p>
+      <main class="home-main">
+        <div class="home-top">
+          <section class="home-intro">
+            <p class="home-greeting">{greetingFor()}{name ? ', ' + name : ''}</p>
+            <h1>What do you want to learn today?</h1>
+            {attempt ? <ContinueCard attempt={attempt} /> : <>
+              <p class="home-pitch">Real JAMB past questions, a clear reason under every answer, and step-by-step solutions you can watch. Works on one bar of signal.</p>
+              {ACCOUNTS_ENABLED ? <>
+                <div class="home-actions">
+                  <a class="home-btn home-btn--primary" href="#/signup">Start free with your email →</a>
+                  <a class="home-btn" href="#/subjects?mode=practice">Try {FREE_QUESTIONS} free questions first</a>
+                </div>
+                <p class="home-note">No download · Email-only sign-up · Create a free account to keep going after {FREE_QUESTIONS} questions</p>
+              </> : <>
+                <div class="home-actions">
+                  <a class="home-btn home-btn--primary" href="#/subjects?mode=practice">Start practising free →</a>
+                </div>
+                <p class="home-note">No download · No sign-up needed · Works offline once opened</p>
+              </>}
+            </>}
+          </section>
+          <QuestionOfDay />
         </div>
 
-        <FeatureCarousel paused={activeNotice !== null} />
+        <AskJp />
+
+        <nav class="home-ways" aria-label="Ways to learn">
+          {ways.map((way) => (
+            <a key={way.href} class="home-way" href={way.href}>
+              <span class="home-way-icon" data-tone={way.tone}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{way.icon}</svg>
+              </span>
+              <span><span class="home-way-title">{way.title}</span><span class="home-way-text">{way.text}</span></span>
+            </a>
+          ))}
+        </nav>
       </main>
 
-      <footer class="landing-footer">
-        <div class="landing-footer-inner">
-          <span class="landing-footer-brand">
-            <strong>JP</strong> <span aria-hidden="true">·</span> 15 UTME subjects
-          </span>
-          <span class="landing-footer-meta">
-            Works offline · Zero install · Free daily practice
-          </span>
-          <div class="landing-footer-links">
-            <a class="landing-footer-link" href="#/modes">Practice</a>
-            <a class="landing-footer-link" href="#/done">Progress</a>
-            <Feedback screen="Home" className="landing-footer-link" />
-            <button type="button" class="landing-copyright" aria-haspopup="dialog"
-              onClick={() => setActiveNotice('copyright')}>
-              {copyright}
-            </button>
-          </div>
-        </div>
-      </footer>
-
-      <dialog class="landing-notice" ref={notice} onClose={() => setActiveNotice(null)}
-        aria-labelledby="landing-notice-title" aria-describedby="landing-notice-description">
-        <h2 id="landing-notice-title">{activeNotice === 'copyright' ? 'Copyright' : 'Email sign-in is coming soon.'}</h2>
-        <p id="landing-notice-description">
-          {activeNotice === 'copyright' ? `${copyright}. JAMB UTME Practice — 15 UTME subjects.` : 'You can practise free right now.'}
-        </p>
-        <div class="landing-actions">
-          {activeNotice === 'email' && (
-            <a class="landing-action landing-primary" href="#/modes" onClick={() => notice.current?.close()}>
-              Try free without an account
-            </a>
-          )}
-          <form method="dialog">
-            <button type="submit" class="landing-action">{activeNotice === 'copyright' ? 'Close' : 'Back'}</button>
-          </form>
-        </div>
-      </dialog>
+      <HomeFooter />
     </div>
   )
 }

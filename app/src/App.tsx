@@ -25,6 +25,7 @@ const ExamRun = screenView(examRun, 'Exam')
 const Results = screenView(results, 'Results')
 const Session = screenView(lazyView(() => import('./screens/Session').then(({ Session }) => Session)), 'Questions')
 const LogPage = screenView(lazyView(() => import('./components/share/LogPage').then(({ LogPage }) => LogPage)), 'Activity log')
+const InfoPages = screenView(lazyView(() => import('./screens/InfoPages').then(({ InfoPages }) => InfoPages)), 'JP')
 const Summary = screenView(lazyView(() => import('./screens/Summary').then(({ Summary }) => Summary)), 'Progress summary')
 
 const FiguresDemo = import.meta.env.DEV
@@ -88,6 +89,11 @@ export function App() {
       return <Summary />
     case '#/log':
       return <LogPage />
+    case '#/about':
+    case '#/privacy':
+    case '#/contact':
+    case '#/signup':
+      return <InfoPages key={route} page={screen.slice(2) as 'about' | 'privacy' | 'contact' | 'signup'} />
     default:
       return <Home />
   }
