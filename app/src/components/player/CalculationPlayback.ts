@@ -18,8 +18,8 @@ const SILENCE = 'data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+A
 
 // Narration is on by default; the student's mute, speed, and mode choices last for the session.
 let soundPreference = true
-// Many students prefer to hear the working slowly, so narration starts at 0.75× and can go faster.
-export const DEFAULT_SPEED = 0.75
+// Narration starts at normal speed (1×). Students can slow it down or speed it up.
+export const DEFAULT_SPEED = 1
 let speedPreference = DEFAULT_SPEED
 let modePreference: NarrationMode | null = null
 

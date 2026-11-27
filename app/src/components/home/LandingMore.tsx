@@ -50,7 +50,7 @@ function Phone({ tab, solution, openSolution, closeSolution }: { tab: number; so
             <span class="ld-ink ld-ink--answer" style={{ animationDelay: '3.6s' }}>s = 6000 m = 6 km</span>
           </div>
           <span class="ld-opt ld-small">“It starts from rest, so the starting speed is zero. Square the time first.”</span>
-          <span class="ld-muted ld-small">Step 3 of 4 · 0.75× · CC on</span>
+          <span class="ld-muted ld-small">Step 3 of 4 · 1× · CC on</span>
           <a class="ld-btn ld-btn--small ld-btn--soft ld-push" href="#/lesson?id=phys-motion">Watch: Equations of motion</a>
         </div>}
         {tab === 1 && <div class="ld-screen" key="l">
