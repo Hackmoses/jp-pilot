@@ -396,7 +396,11 @@ body:has(.jp-calc-modal[open]) {
 .jp-player__caption {
   margin: 0;
   color: var(--ink-2);
-  font: inherit;
+  font: 400 13px/1.45 var(--font-system);
+  /* Long lesson narration scrolls inside three lines so it never pushes the writing out of view. */
+  max-height: calc(3 * 1.45em);
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .jp-player__controls {
