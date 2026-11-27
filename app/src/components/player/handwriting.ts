@@ -126,11 +126,21 @@ export function bindHandwriting(paper: HTMLElement, line: HTMLElement, pen: SVGS
     }
   }
 
+  // When a font finishes loading the letters change width but the line box often does not,
+  // so the resize observer stays quiet. Measure again so the reveal follows the real letters.
+  const fonts = typeof document !== 'undefined' ? document.fonts : undefined
+  let disposed = false
+  const remeasure = () => { if (!disposed && !preference.matches) measure() }
+  fonts?.addEventListener?.('loadingdone', remeasure)
+  void fonts?.ready?.then(remeasure)
+
   preference.addEventListener('change', syncMotion)
   syncMotion()
   return {
     paint,
     dispose() {
+      disposed = true
+      fonts?.removeEventListener?.('loadingdone', remeasure)
       preference.removeEventListener('change', syncMotion)
       observer.disconnect()
       clear()

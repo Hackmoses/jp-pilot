@@ -1,3 +1,13 @@
+/* Caveat (SIL Open Font License, see src/assets/fonts/Caveat-OFL.txt), English letters only.
+   Stored with JP so solutions keep their handwriting offline. */
+@font-face {
+  font-family: "JP Caveat";
+  src: url("../../assets/fonts/caveat-jp.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: block;
+}
+
 body:has(.jp-calc-modal[open]) {
   overflow: hidden;
 }

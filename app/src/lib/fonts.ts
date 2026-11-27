@@ -1,12 +1,10 @@
-// The handwriting font is only needed inside the solution player, so it loads there and nowhere else.
-// Everything else uses the phone's own font, which costs nothing to download.
+// The handwriting font is only needed inside the solution player. It is stored with JP (see
+// components/player/player.css) and this starts its download as soon as a player appears, so it is
+// usually ready before the first line is written.
 let requested = false
 
 export function ensureHandwritingFont() {
-  if (requested || typeof document === 'undefined') return
+  if (requested || typeof document === 'undefined' || !document.fonts) return
   requested = true
-  const link = document.createElement('link')
-  link.rel = 'stylesheet'
-  link.href = 'https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap'
-  document.head.appendChild(link)
+  void document.fonts.load('500 26px "JP Caveat"').catch(() => {})
 }
