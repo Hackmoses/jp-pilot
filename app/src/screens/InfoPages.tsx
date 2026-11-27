@@ -21,8 +21,5 @@ export function InfoPages({ page }: { page: InfoPage }) {
     <a class="jp-btn jp-btn--primary jp-btn--full" href="#/subjects?mode=practice">Start practising free →</a>
   </>
   const title = { about: 'About JP', privacy: 'Privacy', contact: 'Contact', signup: 'Sign in' }[page]
-  return <>
-    <Panel title={title} back="#/" menu={false}>{body}</Panel>
-    <HomeFooter />
-  </>
+  return <Panel title={title} back="#/" menu={false} footer={<HomeFooter />}>{body}</Panel>
 }

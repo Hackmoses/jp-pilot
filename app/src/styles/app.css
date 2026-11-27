@@ -396,7 +396,7 @@ body {
   min-width: 0;
 }
 
-.jp-topbar-inner > .jp-pill--score {
+.jp-topbar-inner>.jp-pill--score {
   margin-inline: auto;
 }
 
@@ -407,7 +407,7 @@ body {
   flex: none;
 }
 
-.jp-brand-group + .jp-topbar-actions {
+.jp-brand-group+.jp-topbar-actions {
   margin-left: auto;
 }
 
@@ -659,6 +659,15 @@ body {
 
 .jp-question-card {
   gap: 12px;
+}
+
+.jp-gate {
+  gap: 10px;
+}
+
+.jp-gate h2,
+.jp-gate p {
+  margin: 0;
 }
 
 .jp-screen--session .jp-stem {
@@ -1145,12 +1154,42 @@ body {
   }
 
   .jp-topbar-inner {
-    padding: 8px 12px;
-    gap: 8px;
+    padding: 8px 10px;
+    gap: 6px;
   }
 
   .jp-brand-group {
-    gap: 8px;
+    gap: 6px;
+  }
+
+  .jp-topbar-actions {
+    gap: 5px;
+  }
+
+  .jp-topbar-actions .jp-btn,
+  .jp-menu-btn {
+    min-height: 28px;
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
+  .jp-session-layout {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .jp-left-col,
+  .jp-right-col {
+    gap: 12px;
+  }
+
+  .jp-card {
+    padding: 12px;
+  }
+
+  .jp-footer-inner {
+    padding: 8px 12px;
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
   }
 
   .jp-session-bar-inner {
@@ -1192,6 +1231,39 @@ body {
     height: 34px;
     min-height: 34px;
     padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .jp-topbar-actions .jp-menu-btn span {
+    display: none;
+  }
+
+  .jp-topbar-actions .jp-menu-btn {
+    width: 30px;
+    min-height: 30px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .jp-topbar-inner {
+    padding: 6px 8px;
+    gap: 4px;
+  }
+
+  .jp-topbar-actions {
+    gap: 4px;
+  }
+
+  .jp-topbar-actions .jp-btn:not(.jp-menu-btn) {
+    padding: 3px 6px;
+    font-size: 11.5px;
+  }
+
+  .jp-session-layout {
+    padding: 10px;
+    gap: 10px;
   }
 }
 
@@ -1332,6 +1404,7 @@ body {
 }
 
 @media (max-width: 400px) {
+
   .jp-wrong-title,
   .jp-explain-title-btn {
     gap: 6px;
@@ -1387,11 +1460,18 @@ body {
   border-block: .095em solid currentColor;
 }
 
-.jp-math-matrix::before { border-left: .095em solid currentColor; }
-.jp-math-matrix::after { border-right: .095em solid currentColor; }
+.jp-math-matrix::before {
+  border-left: .095em solid currentColor;
+}
+
+.jp-math-matrix::after {
+  border-right: .095em solid currentColor;
+}
 
 .jp-math-matrix--det::before,
-.jp-math-matrix--det::after { border-block: 0; }
+.jp-math-matrix--det::after {
+  border-block: 0;
+}
 
 .jp-math-matrix-grid {
   display: inline-grid;

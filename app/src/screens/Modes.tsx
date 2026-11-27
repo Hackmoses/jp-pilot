@@ -25,8 +25,8 @@ function ModeIcon({ accent }: { accent: ModeAccent }) {
   )
 }
 
-export function Panel({ title, subtitle, back = '#/modes', backLabel, menu = true, children }: {
-  title: string; subtitle?: string; back?: string; backLabel?: string; menu?: boolean; children?: ComponentChildren
+export function Panel({ title, subtitle, back = '#/modes', backLabel, menu = true, footer, children }: {
+  title: string; subtitle?: string; back?: string; backLabel?: string; menu?: boolean; footer?: ComponentChildren; children?: ComponentChildren
 }) {
   return (
     <div class="jp-mode-page">
@@ -57,6 +57,7 @@ export function Panel({ title, subtitle, back = '#/modes', backLabel, menu = tru
         </div>
         {children}
       </main>
+      {footer}
     </div>
   )
 }
