@@ -1,0 +1,2691 @@
+{
+  "version": 1,
+  "subject": "biology",
+  "count": 44,
+  "questions": [
+    {
+      "id": "bio-jamb-concept-051",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Plasmodesmata",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can small dissolved substances move directly from the cytoplasm of one living plant cell to that of its neighbour?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The cells are linked by plasmodesmata.",
+          "why": "Cytoplasmic channels cross the cell walls.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The cells share a nucleus.",
+          "why": "Each cell retains its own nucleus.",
+          "whyWrong": "Each cell retains its own nucleus."
+        },
+        {
+          "id": "c",
+          "text": "The cell walls are made of phospholipids.",
+          "why": "Phospholipids form membranes. Cellulose forms much of the primary plant cell wall.",
+          "whyWrong": "Phospholipids form membranes. Cellulose forms much of the primary plant cell wall."
+        },
+        {
+          "id": "d",
+          "text": "The two cells are joined by a xylem vessel.",
+          "why": "Xylem carries water over distances. The question asks about direct contact between adjacent cytoplasms.",
+          "whyWrong": "Xylem carries water over distances. The question asks about direct contact between adjacent cytoplasms."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for channels crossing a cell wall.",
+      "explanation": "Cytoplasmic channels cross the cell walls.",
+      "trap": "Each cell retains its own nucleus.",
+      "mnemonic": "Look for channels crossing a cell wall.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Cytoplasmic channels cross the cell walls."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Each cell retains its own nucleus."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/4-6-connections-between-cells-and-cellular-activities.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-052",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Phospholipid bilayer",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which substance makes up most of the structural framework of a cell membrane?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Phospholipids",
+          "why": "Phospholipids form the bilayer.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Cellulose",
+          "why": "Cellulose is a structural polysaccharide in plant cell walls.",
+          "whyWrong": "Cellulose is a structural polysaccharide in plant cell walls."
+        },
+        {
+          "id": "c",
+          "text": "Glycogen",
+          "why": "Glycogen stores carbohydrate in many organisms.",
+          "whyWrong": "Glycogen stores carbohydrate in many organisms."
+        },
+        {
+          "id": "d",
+          "text": "DNA",
+          "why": "DNA stores hereditary information.",
+          "whyWrong": "DNA stores hereditary information."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of molecules with water-attracting heads and water-repelling tails.",
+      "explanation": "Phospholipids form the bilayer.",
+      "trap": "Cellulose is a structural polysaccharide in plant cell walls.",
+      "mnemonic": "Think of molecules with water-attracting heads and water-repelling tails.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Phospholipids form the bilayer."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Cellulose is a structural polysaccharide in plant cell walls."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-053",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Amyloplasts",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which plastids store starch in a cassava storage root?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chloroplasts",
+          "why": "Chloroplasts carry out photosynthesis. They are not the main starch-storage plastids in cassava roots.",
+          "whyWrong": "Chloroplasts carry out photosynthesis. They are not the main starch-storage plastids in cassava roots."
+        },
+        {
+          "id": "b",
+          "text": "Chromoplasts",
+          "why": "Chromoplasts accumulate pigments.",
+          "whyWrong": "Chromoplasts accumulate pigments."
+        },
+        {
+          "id": "c",
+          "text": "Amyloplasts",
+          "why": "Amyloplasts specialise in starch storage.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Ribosomes",
+          "why": "Ribosomes make proteins and are not plastids.",
+          "whyWrong": "Ribosomes make proteins and are not plastids."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "The prefix refers to starch.",
+      "explanation": "Amyloplasts specialise in starch storage.",
+      "trap": "Chloroplasts carry out photosynthesis. They are not the main starch-storage plastids in cassava roots.",
+      "mnemonic": "The prefix refers to starch.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Amyloplasts specialise in starch storage."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Chloroplasts carry out photosynthesis. They are not the main starch-storage plastids in cassava roots."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/23-key-terms.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-054",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Tonoplast",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the name of the membrane surrounding a plant cell’s central vacuole?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Middle lamella",
+          "why": "The middle lamella helps cement adjacent plant cells together.",
+          "whyWrong": "The middle lamella helps cement adjacent plant cells together."
+        },
+        {
+          "id": "b",
+          "text": "Nuclear envelope",
+          "why": "The nuclear envelope surrounds the nucleus.",
+          "whyWrong": "The nuclear envelope surrounds the nucleus."
+        },
+        {
+          "id": "c",
+          "text": "Cell wall",
+          "why": "The cell wall surrounds the cell, outside the plasma membrane.",
+          "whyWrong": "The cell wall surrounds the cell, outside the plasma membrane."
+        },
+        {
+          "id": "d",
+          "text": "Tonoplast",
+          "why": "The tonoplast separates vacuolar contents from the cytoplasm.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Distinguish an internal membrane from the cell boundary.",
+      "explanation": "The tonoplast separates vacuolar contents from the cytoplasm.",
+      "trap": "The middle lamella helps cement adjacent plant cells together.",
+      "mnemonic": "Distinguish an internal membrane from the cell boundary.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The tonoplast separates vacuolar contents from the cytoplasm."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The middle lamella helps cement adjacent plant cells together."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-055",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Endocytosis",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "How does a cell take in a large particle by endocytosis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The particle passes through a channel protein.",
+          "why": "Channel proteins pass selected ions or small molecules.",
+          "whyWrong": "Channel proteins pass selected ions or small molecules."
+        },
+        {
+          "id": "b",
+          "text": "The particle dissolves directly in the lipid bilayer.",
+          "why": "Large particles cannot dissolve into the bilayer as small non-polar molecules can.",
+          "whyWrong": "Large particles cannot dissolve into the bilayer as small non-polar molecules can."
+        },
+        {
+          "id": "c",
+          "text": "The surface membrane encloses it in a vesicle.",
+          "why": "The cell membrane surrounds the particle and buds inward.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The particle enters through a nuclear pore.",
+          "why": "Nuclear pores regulate exchange with the nucleus.",
+          "whyWrong": "Nuclear pores regulate exchange with the nucleus."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Follow what the plasma membrane does around the particle.",
+      "explanation": "The cell membrane surrounds the particle and buds inward.",
+      "trap": "Channel proteins pass selected ions or small molecules.",
+      "mnemonic": "Follow what the plasma membrane does around the particle.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The cell membrane surrounds the particle and buds inward."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Channel proteins pass selected ions or small molecules."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/5-4-bulk-transport.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-056",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Classification and Evolution",
+      "concept": "Mitochondrial origins",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which feature of mitochondria supports the idea that their ancestors were free-living cells?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mitochondria contain their own DNA.",
+          "why": "Their own DNA is among the lines of evidence for endosymbiosis.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Mitochondria contain cellulose walls.",
+          "why": "Mitochondria have membranes rather than cellulose walls.",
+          "whyWrong": "Mitochondria have membranes rather than cellulose walls."
+        },
+        {
+          "id": "c",
+          "text": "Mitochondria are found only in plants.",
+          "why": "Mitochondria occur in animal cells and many other eukaryotes as well.",
+          "whyWrong": "Mitochondria occur in animal cells and many other eukaryotes as well."
+        },
+        {
+          "id": "d",
+          "text": "Mitochondria store all of the cell’s chromosomes.",
+          "why": "Most chromosomes of a eukaryotic cell are in its nucleus.",
+          "whyWrong": "Most chromosomes of a eukaryotic cell are in its nucleus."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for a feature that reflects a formerly separate genome.",
+      "explanation": "Their own DNA is among the lines of evidence for endosymbiosis.",
+      "trap": "Mitochondria have membranes rather than cellulose walls.",
+      "mnemonic": "Look for a feature that reflects a formerly separate genome.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Their own DNA is among the lines of evidence for endosymbiosis."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Mitochondria have membranes rather than cellulose walls."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-057",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Classification and Evolution",
+      "concept": "Echinoderm water vascular system",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which feature identifies a sea star as an echinoderm rather than a mollusc?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A water vascular system with tube feet",
+          "why": "Tube feet are operated by the echinoderm water vascular system.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "A mantle that secretes a shell",
+          "why": "A mantle is characteristic of molluscs.",
+          "whyWrong": "A mantle is characteristic of molluscs."
+        },
+        {
+          "id": "c",
+          "text": "A muscular foot used for burrowing",
+          "why": "A muscular foot is a molluscan feature.",
+          "whyWrong": "A muscular foot is a molluscan feature."
+        },
+        {
+          "id": "d",
+          "text": "A toothed radula used to scrape food",
+          "why": "A radula is found in many molluscs.",
+          "whyWrong": "A radula is found in many molluscs."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of fluid-operated structures used in movement.",
+      "explanation": "Tube feet are operated by the echinoderm water vascular system.",
+      "trap": "A mantle is characteristic of molluscs.",
+      "mnemonic": "Think of fluid-operated structures used in movement.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Tube feet are operated by the echinoderm water vascular system."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A mantle is characteristic of molluscs."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/28-5-superphylum-deuterostomia.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-059",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Classification and Evolution",
+      "concept": "Population bottleneck",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A flood leaves a small, chance sample of a large lizard population alive. Which process can explain a resulting change in allele frequencies even if the alleles did not affect survival?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Genetic drift",
+          "why": "A population bottleneck can change allele frequencies by chance.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Natural selection",
+          "why": "Natural selection requires survival or reproduction to differ in a way associated with a heritable trait.",
+          "whyWrong": "Natural selection requires survival or reproduction to differ in a way associated with a heritable trait."
+        },
+        {
+          "id": "c",
+          "text": "Gene flow",
+          "why": "Gene flow transfers alleles between populations through migration and reproduction.",
+          "whyWrong": "Gene flow transfers alleles between populations through migration and reproduction."
+        },
+        {
+          "id": "d",
+          "text": "Artificial selection",
+          "why": "Artificial selection involves human choice of which organisms reproduce.",
+          "whyWrong": "Artificial selection involves human choice of which organisms reproduce."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Focus on what survives by chance.",
+      "explanation": "A population bottleneck can change allele frequencies by chance.",
+      "trap": "Natural selection requires survival or reproduction to differ in a way associated with a heritable trait.",
+      "mnemonic": "Focus on what survives by chance.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A population bottleneck can change allele frequencies by chance."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Natural selection requires survival or reproduction to differ in a way associated with a heritable trait."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/19-1-population-evolution.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-060",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Classification and Evolution",
+      "concept": "Binomial naming",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which scientific name is written with a capitalised genus and a lowercase specific epithet, as required in print?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quercus robur",
+          "why": "The genus begins with a capital, the specific epithet with lowercase, and both are italicised.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "homo Sapiens",
+          "why": "The genus should begin with a capital and the specific epithet with lowercase.",
+          "whyWrong": "The genus should begin with a capital and the specific epithet with lowercase."
+        },
+        {
+          "id": "c",
+          "text": "Zea Mays",
+          "why": "The specific epithet should begin with lowercase.",
+          "whyWrong": "The specific epithet should begin with lowercase."
+        },
+        {
+          "id": "d",
+          "text": "oryza sativa",
+          "why": "The genus should begin with a capital.",
+          "whyWrong": "The genus should begin with a capital."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Check the initial letter of each word separately.",
+      "explanation": "The genus begins with a capital, the specific epithet with lowercase, and both are italicised.",
+      "trap": "The genus should begin with a capital and the specific epithet with lowercase.",
+      "mnemonic": "Check the initial letter of each word separately.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The genus begins with a capital, the specific epithet with lowercase, and both are italicised."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The genus should begin with a capital and the specific epithet with lowercase."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/20-1-organizing-life-on-earth.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-061",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Nutrition",
+      "concept": "Mechanical digestion",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does chewing cooked yam into smaller pieces help enzymes digest it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It turns the starch directly into amino acids.",
+          "why": "Starch digestion yields sugars rather than amino acids.",
+          "whyWrong": "Starch digestion yields sugars rather than amino acids."
+        },
+        {
+          "id": "b",
+          "text": "It increases the surface exposed to enzymes.",
+          "why": "Smaller pieces expose more surface to the digestive juices.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It raises the yam to the enzymes’ optimum temperature.",
+          "why": "Breaking food apart does not help mainly by changing its temperature.",
+          "whyWrong": "Breaking food apart does not help mainly by changing its temperature."
+        },
+        {
+          "id": "d",
+          "text": "It removes all the fibre from the yam.",
+          "why": "Fibre is not removed by chewing.",
+          "whyWrong": "Fibre is not removed by chewing."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Imagine what happens to the exposed surfaces when one lump becomes many pieces.",
+      "explanation": "Smaller pieces expose more surface to the digestive juices.",
+      "trap": "Starch digestion yields sugars rather than amino acids.",
+      "mnemonic": "Imagine what happens to the exposed surfaces when one lump becomes many pieces.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Smaller pieces expose more surface to the digestive juices."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Starch digestion yields sugars rather than amino acids."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/34-3-digestive-system-processes.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-062",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Nutrition",
+      "concept": "Dietary energy and vitamin C",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can a person become deficient in vitamin C despite getting enough energy from food?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The body manufactures vitamin C only during fasting.",
+          "why": "Humans do not manufacture vitamin C in appreciable quantities.",
+          "whyWrong": "Humans do not manufacture vitamin C in appreciable quantities."
+        },
+        {
+          "id": "b",
+          "text": "Vitamin C is used up in direct proportion to the amount of water drunk.",
+          "why": "Water intake is not the process described in this question.",
+          "whyWrong": "Water intake is not the process described in this question."
+        },
+        {
+          "id": "c",
+          "text": "Vitamin C supplies no energy, so it must come from foods such as fresh fruit and vegetables.",
+          "why": "Food energy and vitamin C are separate needs. Humans cannot make enough vitamin C, so a diet of energy-rich staples with little fresh fruit or vegetables can still lack it.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Sufficient dietary energy prevents the absorption of vitamin C.",
+          "why": "Getting enough energy does not prevent the intestine from absorbing vitamin C.",
+          "whyWrong": "Getting enough energy does not prevent the intestine from absorbing vitamin C."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Calories and vitamins are different things.",
+      "explanation": "Food energy and vitamin C are separate needs. Humans cannot make enough vitamin C, so a diet of energy-rich staples with little fresh fruit or vegetables can still lack it.",
+      "trap": "Humans do not manufacture vitamin C in appreciable quantities.",
+      "mnemonic": "Calories and vitamins are different things.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Food energy and vitamin C are separate needs. Humans cannot make enough vitamin C, so a diet of energy-rich staples with little fresh fruit or vegetables can still lack it."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Humans do not manufacture vitamin C in appreciable quantities."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-063",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Nutrition",
+      "concept": "Magnesium in chlorophyll",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which mineral is needed because it is the central atom in a chlorophyll molecule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Potassium",
+          "why": "Potassium supports processes such as osmotic regulation but is not the central atom in chlorophyll.",
+          "whyWrong": "Potassium supports processes such as osmotic regulation but is not the central atom in chlorophyll."
+        },
+        {
+          "id": "b",
+          "text": "Magnesium",
+          "why": "Magnesium sits at the centre of the chlorophyll molecule.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Calcium",
+          "why": "Calcium supports roles such as cell-wall structure and signalling.",
+          "whyWrong": "Calcium supports roles such as cell-wall structure and signalling."
+        },
+        {
+          "id": "d",
+          "text": "Sodium",
+          "why": "Sodium is not the central metal in chlorophyll.",
+          "whyWrong": "Sodium is not the central metal in chlorophyll."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about the atom held at the centre of the pigment.",
+      "explanation": "Magnesium sits at the centre of the chlorophyll molecule.",
+      "trap": "Potassium supports processes such as osmotic regulation but is not the central atom in chlorophyll.",
+      "mnemonic": "Think about the atom held at the centre of the pigment.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Magnesium sits at the centre of the chlorophyll molecule."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Potassium supports processes such as osmotic regulation but is not the central atom in chlorophyll."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/31-1-nutritional-requirements-of-plants.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-064",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Nutrition",
+      "concept": "Tapeworm nutrition",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "How does a tapeworm obtain nutrients without a digestive tract?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It makes sugars by photosynthesis.",
+          "why": "Tapeworms do not have photosynthetic structures.",
+          "whyWrong": "Tapeworms do not have photosynthetic structures."
+        },
+        {
+          "id": "b",
+          "text": "It absorbs already digested nutrients through its body surface.",
+          "why": "It absorbs dissolved nutrients across its specialised outer covering.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It scrapes food into an internal stomach.",
+          "why": "A tapeworm lacks a digestive tract, including a stomach.",
+          "whyWrong": "A tapeworm lacks a digestive tract, including a stomach."
+        },
+        {
+          "id": "d",
+          "text": "It takes mineral salts from soil through root hairs.",
+          "why": "Tapeworms are animals and have no root hairs.",
+          "whyWrong": "Tapeworms are animals and have no root hairs."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about nutrients already available in a host’s intestine.",
+      "explanation": "It absorbs dissolved nutrients across its specialised outer covering.",
+      "trap": "Tapeworms do not have photosynthetic structures.",
+      "mnemonic": "Think about nutrients already available in a host’s intestine.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "It absorbs dissolved nutrients across its specialised outer covering."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Tapeworms do not have photosynthetic structures."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/28-3-superphylum-lophotrochozoa-flatworms-rotifers-and-nemerteans.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-066",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "Ring-barking and translocation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does removing a complete ring of bark and phloem from a woody stem cause sugars to accumulate just above the cut?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It increases upward transport of glucose in the xylem.",
+          "why": "Xylem mainly transports water and dissolved mineral ions.",
+          "whyWrong": "Xylem mainly transports water and dissolved mineral ions."
+        },
+        {
+          "id": "b",
+          "text": "It stops the leaves from absorbing carbon dioxide.",
+          "why": "The cut in the stem does not directly prevent gas entry into the leaves.",
+          "whyWrong": "The cut in the stem does not directly prevent gas entry into the leaves."
+        },
+        {
+          "id": "c",
+          "text": "It makes the exposed wood produce starch by photosynthesis.",
+          "why": "The build-up reflects sugar transport being interrupted.",
+          "whyWrong": "The build-up reflects sugar transport being interrupted."
+        },
+        {
+          "id": "d",
+          "text": "It interrupts downward transport in the phloem.",
+          "why": "The cut interrupts phloem transport from leaves to tissues below it.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify which transport tissue is interrupted by removing the bark and phloem.",
+      "explanation": "The cut interrupts phloem transport from leaves to tissues below it.",
+      "trap": "Xylem mainly transports water and dissolved mineral ions.",
+      "mnemonic": "Identify which transport tissue is interrupted by removing the bark and phloem.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The cut interrupts phloem transport from leaves to tissues below it."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Xylem mainly transports water and dissolved mineral ions."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-067",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "Casparian strip",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What makes the Casparian strip in a root important for mineral uptake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It forces water and dissolved ions to cross a cell membrane before reaching the vascular tissue.",
+          "why": "The strip blocks the route through cell walls at the endodermis.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "It produces new root hairs at the root tip.",
+          "why": "Root hairs develop from epidermal cells.",
+          "whyWrong": "Root hairs develop from epidermal cells."
+        },
+        {
+          "id": "c",
+          "text": "It pumps mineral ions from leaves back into the soil.",
+          "why": "The strip forms a barrier within the root through which apoplastic flow cannot continue.",
+          "whyWrong": "The strip forms a barrier within the root through which apoplastic flow cannot continue."
+        },
+        {
+          "id": "d",
+          "text": "It gives xylem vessels their hollow centres.",
+          "why": "The hollow centres of xylem vessels form as vessel elements mature.",
+          "whyWrong": "The hollow centres of xylem vessels form as vessel elements mature."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow water at the endodermis.",
+      "explanation": "The strip blocks the route through cell walls at the endodermis.",
+      "trap": "Root hairs develop from epidermal cells.",
+      "mnemonic": "Follow water at the endodermis.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The strip blocks the route through cell walls at the endodermis."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Root hairs develop from epidermal cells."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/30-3-roots.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-068",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "Coronary circulation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the main role of the coronary arteries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To carry blood from the lungs into the left atrium",
+          "why": "Pulmonary veins bring blood from the lungs to the left atrium.",
+          "whyWrong": "Pulmonary veins bring blood from the lungs to the left atrium."
+        },
+        {
+          "id": "b",
+          "text": "To return blood from the legs to the right atrium",
+          "why": "The inferior vena cava returns blood from the lower body.",
+          "whyWrong": "The inferior vena cava returns blood from the lower body."
+        },
+        {
+          "id": "c",
+          "text": "To carry blood from the right ventricle to the lungs",
+          "why": "The pulmonary trunk and arteries carry blood to the lungs.",
+          "whyWrong": "The pulmonary trunk and arteries carry blood to the lungs."
+        },
+        {
+          "id": "d",
+          "text": "To supply the heart muscle with oxygenated blood",
+          "why": "Coronary arteries supply the myocardium.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Distinguish the heart’s own supply from the blood it pumps.",
+      "explanation": "Coronary arteries supply the myocardium.",
+      "trap": "Pulmonary veins bring blood from the lungs to the left atrium.",
+      "mnemonic": "Distinguish the heart’s own supply from the blood it pumps.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Coronary arteries supply the myocardium."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Pulmonary veins bring blood from the lungs to the left atrium."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/40-3-mammalian-heart-and-blood-vessels.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-069",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "Intestinal lacteals",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Fat-soluble vitamins are absorbed with dietary fats. How are they first carried away from an intestinal villus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In lymph within its lacteal",
+          "why": "Fat-soluble vitamins travel with absorbed fats in particles that enter the lacteals.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "In bile within its bile duct",
+          "why": "Bile enters the intestine through bile ducts to help with fat digestion.",
+          "whyWrong": "Bile enters the intestine through bile ducts to help with fat digestion."
+        },
+        {
+          "id": "c",
+          "text": "In urine within a renal tubule",
+          "why": "Renal tubules are part of the kidney.",
+          "whyWrong": "Renal tubules are part of the kidney."
+        },
+        {
+          "id": "d",
+          "text": "In air within a tracheal tube",
+          "why": "Tracheal tubes carry air rather than absorbed nutrients.",
+          "whyWrong": "Tracheal tubes carry air rather than absorbed nutrients."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of which vessel takes up particles containing absorbed long-chain lipids.",
+      "explanation": "Fat-soluble vitamins travel with absorbed fats in particles that enter the lacteals.",
+      "trap": "Bile enters the intestine through bile ducts to help with fat digestion.",
+      "mnemonic": "Think of which vessel takes up particles containing absorbed long-chain lipids.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Fat-soluble vitamins travel with absorbed fats in particles that enter the lacteals."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Bile enters the intestine through bile ducts to help with fat digestion."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/34-3-digestive-system-processes.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-070",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "Arterial recoil",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What feature helps an artery maintain blood flow between heartbeats?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its muscle cells act like valves inside the lumen.",
+          "why": "Elastic arteries do not rely on valves in their walls to sustain flow.",
+          "whyWrong": "Elastic arteries do not rely on valves in their walls to sustain flow."
+        },
+        {
+          "id": "b",
+          "text": "Its elastic wall recoils after being stretched.",
+          "why": "Elastic recoil sustains pressure as the heart relaxes.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Its wall stores red blood cells for release between beats.",
+          "why": "Red cells are carried in the blood flowing through the lumen.",
+          "whyWrong": "Red cells are carried in the blood flowing through the lumen."
+        },
+        {
+          "id": "d",
+          "text": "Its wall contracts before receiving blood from the heart.",
+          "why": "Recoil follows the stretching caused by an incoming pulse of blood.",
+          "whyWrong": "Recoil follows the stretching caused by an incoming pulse of blood."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about a wall returning to its original shape after stretching.",
+      "explanation": "Elastic recoil sustains pressure as the heart relaxes.",
+      "trap": "Elastic arteries do not rely on valves in their walls to sustain flow.",
+      "mnemonic": "Think about a wall returning to its original shape after stretching.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Elastic recoil sustains pressure as the heart relaxes."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Elastic arteries do not rely on valves in their walls to sustain flow."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/40-4-blood-flow-and-blood-pressure-regulation.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-071",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "External intercostals",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "During a deep inhalation, how do the external intercostal muscles help draw air into the lungs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They contract and pull the ribs downwards and inwards.",
+          "why": "Lowering the ribs decreases chest volume.",
+          "whyWrong": "Lowering the ribs decreases chest volume."
+        },
+        {
+          "id": "b",
+          "text": "They relax and flatten the diaphragm.",
+          "why": "The diaphragm flattens when it contracts. That is separate from the action of the intercostals.",
+          "whyWrong": "The diaphragm flattens when it contracts. That is separate from the action of the intercostals."
+        },
+        {
+          "id": "c",
+          "text": "They relax and narrow the trachea.",
+          "why": "Narrowing the trachea would restrict airflow.",
+          "whyWrong": "Narrowing the trachea would restrict airflow."
+        },
+        {
+          "id": "d",
+          "text": "They contract and lift the ribs upwards and outwards.",
+          "why": "Lifting the ribs increases chest volume.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Ask how the ribs move as the chest enlarges.",
+      "explanation": "Lifting the ribs increases chest volume.",
+      "trap": "Lowering the ribs decreases chest volume.",
+      "mnemonic": "Ask how the ribs move as the chest enlarges.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Lifting the ribs increases chest volume."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Lowering the ribs decreases chest volume."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/39-3-breathing.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-072",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "Pulmonary surfactant",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does pulmonary surfactant help keep lung air sacs open?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It increases the thickness of the membrane for diffusion.",
+          "why": "A thicker diffusion barrier would hinder gas exchange.",
+          "whyWrong": "A thicker diffusion barrier would hinder gas exchange."
+        },
+        {
+          "id": "b",
+          "text": "It digests airborne dust in the trachea.",
+          "why": "Surfactant is not a digestive substance in the trachea.",
+          "whyWrong": "Surfactant is not a digestive substance in the trachea."
+        },
+        {
+          "id": "c",
+          "text": "It increases surface tension so the air sacs contract.",
+          "why": "Higher surface tension would favour collapse.",
+          "whyWrong": "Higher surface tension would favour collapse."
+        },
+        {
+          "id": "d",
+          "text": "It lowers surface tension in the liquid lining them.",
+          "why": "Lower surface tension reduces the tendency of alveoli to collapse.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think about the force tending to shrink a wet air sac.",
+      "explanation": "Lower surface tension reduces the tendency of alveoli to collapse.",
+      "trap": "A thicker diffusion barrier would hinder gas exchange.",
+      "mnemonic": "Think about the force tending to shrink a wet air sac.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Lower surface tension reduces the tendency of alveoli to collapse."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A thicker diffusion barrier would hinder gas exchange."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/39-3-breathing.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-073",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "Opercular ventilation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why do the gill covers of a bony fish keep moving when the fish is stationary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The movement keeps water away from the gills.",
+          "why": "Water must reach the gills for gas exchange.",
+          "whyWrong": "Water must reach the gills for gas exchange."
+        },
+        {
+          "id": "b",
+          "text": "The movement sends more air to the swim bladder.",
+          "why": "Gill covers ventilate the gills rather than filling the swim bladder.",
+          "whyWrong": "Gill covers ventilate the gills rather than filling the swim bladder."
+        },
+        {
+          "id": "c",
+          "text": "The movement helps maintain a flow of water over the gills.",
+          "why": "Movements of the mouth and gill covers can ventilate the gills.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The movement forces blood directly out of the gills.",
+          "why": "Gill blood stays within the circulatory system.",
+          "whyWrong": "Gill blood stays within the circulatory system."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Follow the water passing over the gills.",
+      "explanation": "Movements of the mouth and gill covers can ventilate the gills.",
+      "trap": "Water must reach the gills for gas exchange.",
+      "mnemonic": "Follow the water passing over the gills.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Movements of the mouth and gill covers can ventilate the gills."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Water must reach the gills for gas exchange."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/39-1-systems-of-gas-exchange.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-074",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "Cristae and ATP production",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why are cristae useful to an actively respiring cell?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They give the outside of the cell more space for gas exchange.",
+          "why": "Cristae are internal folds within mitochondria.",
+          "whyWrong": "Cristae are internal folds within mitochondria."
+        },
+        {
+          "id": "b",
+          "text": "They supply the chloroplast with light.",
+          "why": "Chloroplasts capture light independently of mitochondrial folds.",
+          "whyWrong": "Chloroplasts capture light independently of mitochondrial folds."
+        },
+        {
+          "id": "c",
+          "text": "They provide more inner mitochondrial membrane for ATP-producing reactions.",
+          "why": "Cristae are folds bearing components involved in oxidative phosphorylation.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "They increase the size of the nucleus for protein storage.",
+          "why": "Cristae do not enlarge the nucleus.",
+          "whyWrong": "Cristae do not enlarge the nucleus."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify what the inner mitochondrial folds add.",
+      "explanation": "Cristae are folds bearing components involved in oxidative phosphorylation.",
+      "trap": "Cristae are internal folds within mitochondria.",
+      "mnemonic": "Identify what the inner mitochondrial folds add.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Cristae are folds bearing components involved in oxidative phosphorylation."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Cristae are internal folds within mitochondria."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-075",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "Oxygen limitation and respiration",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What can happen to the rate of aerobic respiration in the tissues of an active animal when their oxygen supply becomes inadequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It must rise because oxygen is a waste product of respiration.",
+          "why": "Oxygen is consumed in aerobic respiration.",
+          "whyWrong": "Oxygen is consumed in aerobic respiration."
+        },
+        {
+          "id": "b",
+          "text": "It remains fixed because only carbon dioxide affects respiration.",
+          "why": "Both oxygen supply and carbon dioxide removal can be relevant to an active tissue.",
+          "whyWrong": "Both oxygen supply and carbon dioxide removal can be relevant to an active tissue."
+        },
+        {
+          "id": "c",
+          "text": "It can fall because mitochondria cannot sustain the same rate of oxygen-dependent reactions.",
+          "why": "Oxygen is the final electron acceptor in aerobic respiration.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It becomes independent of oxygen once cells begin to use fat.",
+          "why": "Oxidising fat aerobically still requires oxygen.",
+          "whyWrong": "Oxidising fat aerobically still requires oxygen."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Ask what the aerobic pathway requires at the end of electron transport.",
+      "explanation": "Oxygen is the final electron acceptor in aerobic respiration.",
+      "trap": "Oxygen is consumed in aerobic respiration.",
+      "mnemonic": "Ask what the aerobic pathway requires at the end of electron transport.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Oxygen is the final electron acceptor in aerobic respiration."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Oxygen is consumed in aerobic respiration."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-076",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Excretion",
+      "concept": "Flatworm flame cells",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which structures use beating cilia to move excess water through a freshwater flatworm’s excretory tubules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Root hairs",
+          "why": "Root hairs absorb water and ions in plants.",
+          "whyWrong": "Root hairs absorb water and ions in plants."
+        },
+        {
+          "id": "b",
+          "text": "Flame cells",
+          "why": "Flame cells use cilia to draw fluid through the flatworm’s excretory system.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Malpighian tubules",
+          "why": "Malpighian tubules are found in insects and some other arthropods.",
+          "whyWrong": "Malpighian tubules are found in insects and some other arthropods."
+        },
+        {
+          "id": "d",
+          "text": "Guard cells",
+          "why": "Guard cells control a plant stoma.",
+          "whyWrong": "Guard cells control a plant stoma."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for cilia in a flatworm’s excretory system.",
+      "explanation": "Flame cells use cilia to draw fluid through the flatworm’s excretory system.",
+      "trap": "Root hairs absorb water and ions in plants.",
+      "mnemonic": "Look for cilia in a flatworm’s excretory system.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Flame cells use cilia to draw fluid through the flatworm’s excretory system."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Root hairs absorb water and ions in plants."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/41-3-excretion-systems.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-078",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Excretion",
+      "concept": "Recovery of filtered amino acids",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What normally prevents useful amino acids in early kidney filtrate from being lost in large amounts in urine?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are changed into red blood cells in the bladder.",
+          "why": "Amino acids are recovered as solutes. The bladder stores urine.",
+          "whyWrong": "Amino acids are recovered as solutes. The bladder stores urine."
+        },
+        {
+          "id": "b",
+          "text": "They never pass through the glomerular filter.",
+          "why": "Free amino acids are small enough to enter the filtrate.",
+          "whyWrong": "Free amino acids are small enough to enter the filtrate."
+        },
+        {
+          "id": "c",
+          "text": "They are stored in the ureters until the body needs them.",
+          "why": "Ureters carry urine rather than storing useful solutes.",
+          "whyWrong": "Ureters carry urine rather than storing useful solutes."
+        },
+        {
+          "id": "d",
+          "text": "They are selectively reabsorbed into the bloodstream.",
+          "why": "Kidney tubules recover most filtered amino acids.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Track the useful solutes after filtration.",
+      "explanation": "Kidney tubules recover most filtered amino acids.",
+      "trap": "Amino acids are recovered as solutes. The bladder stores urine.",
+      "mnemonic": "Track the useful solutes after filtration.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Kidney tubules recover most filtered amino acids."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Amino acids are recovered as solutes. The bladder stores urine."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/41-2-the-kidneys-and-osmoregulatory-organs.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-079",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Excretion",
+      "concept": "Aldosterone and sodium",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the main effect of aldosterone on sodium handling in the kidney?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It blocks sodium reabsorption.",
+          "why": "Aldosterone increases sodium recovery in its target segments.",
+          "whyWrong": "Aldosterone increases sodium recovery in its target segments."
+        },
+        {
+          "id": "b",
+          "text": "It increases sodium reabsorption.",
+          "why": "Aldosterone promotes sodium recovery in the distal nephron.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It prevents sodium from passing through the glomerulus.",
+          "why": "Its principal action here is on the tubules rather than the glomerular filter.",
+          "whyWrong": "Its principal action here is on the tubules rather than the glomerular filter."
+        },
+        {
+          "id": "d",
+          "text": "It converts sodium ions into urea.",
+          "why": "Sodium remains an ion and is not converted into urea.",
+          "whyWrong": "Sodium remains an ion and is not converted into urea."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of sodium being recovered from the fluid in the tubule.",
+      "explanation": "Aldosterone promotes sodium recovery in the distal nephron.",
+      "trap": "Aldosterone increases sodium recovery in its target segments.",
+      "mnemonic": "Think of sodium being recovered from the fluid in the tubule.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Aldosterone promotes sodium recovery in the distal nephron."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Aldosterone increases sodium recovery in its target segments."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/41-5-hormonal-control-of-osmoregulatory-functions.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-080",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Excretion",
+      "concept": "Loop of Henle",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which feature allows the loop of Henle to help establish a concentration gradient in the kidney medulla?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both limbs are impermeable to water and salts.",
+          "why": "Different permeabilities are essential to establishing the gradient.",
+          "whyWrong": "Different permeabilities are essential to establishing the gradient."
+        },
+        {
+          "id": "b",
+          "text": "The ascending limb loses water but cannot move salts.",
+          "why": "Water readily leaves the descending rather than ascending limb.",
+          "whyWrong": "Water readily leaves the descending rather than ascending limb."
+        },
+        {
+          "id": "c",
+          "text": "The descending limb readily loses water, while the ascending limb moves salts out and is much less permeable to water.",
+          "why": "The two limbs have different permeabilities and transport properties.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Both limbs secrete proteins into the filtrate.",
+          "why": "Protein secretion is not the basis of this gradient.",
+          "whyWrong": "Protein secretion is not the basis of this gradient."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare which limb readily loses water and which moves out salt.",
+      "explanation": "The two limbs have different permeabilities and transport properties.",
+      "trap": "Different permeabilities are essential to establishing the gradient.",
+      "mnemonic": "Compare which limb readily loses water and which moves out salt.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The two limbs have different permeabilities and transport properties."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Different permeabilities are essential to establishing the gradient."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/41-2-the-kidneys-and-osmoregulatory-organs.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-081",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Coordination",
+      "concept": "Synaptic transmission",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which part of the sending neurone releases chemical messengers into a synaptic cleft?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A myelin sheath",
+          "why": "Myelin insulates axons and helps rapid conduction.",
+          "whyWrong": "Myelin insulates axons and helps rapid conduction."
+        },
+        {
+          "id": "b",
+          "text": "A tendon",
+          "why": "A tendon attaches muscle to bone.",
+          "whyWrong": "A tendon attaches muscle to bone."
+        },
+        {
+          "id": "c",
+          "text": "A sensory hair",
+          "why": "A sensory hair detects a stimulus and is not a neurone’s axon ending.",
+          "whyWrong": "A sensory hair detects a stimulus and is not a neurone’s axon ending."
+        },
+        {
+          "id": "d",
+          "text": "An axon terminal",
+          "why": "The presynaptic terminal releases neurotransmitters.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look at the end of the sending neurone.",
+      "explanation": "The presynaptic terminal releases neurotransmitters.",
+      "trap": "Myelin insulates axons and helps rapid conduction.",
+      "mnemonic": "Look at the end of the sending neurone.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The presynaptic terminal releases neurotransmitters."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Myelin insulates axons and helps rapid conduction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/35-2-how-neurons-communicate.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-084",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Coordination",
+      "concept": "Skin blood flow in the cold",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What slows heat loss from warm skin when the body is exposed to cold?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dilation of blood vessels near the skin surface",
+          "why": "Dilation sends more warm blood towards the surface.",
+          "whyWrong": "Dilation sends more warm blood towards the surface."
+        },
+        {
+          "id": "b",
+          "text": "An increase in sweat evaporation",
+          "why": "Evaporation removes heat.",
+          "whyWrong": "Evaporation removes heat."
+        },
+        {
+          "id": "c",
+          "text": "Constriction of blood vessels near the skin surface",
+          "why": "Reduced surface blood flow limits heat transfer to the surroundings.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "An increase in blood flow to the skin",
+          "why": "More surface blood flow tends to increase heat transfer.",
+          "whyWrong": "More surface blood flow tends to increase heat transfer."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Would sending warm blood closer to the skin reduce or increase heat loss?",
+      "explanation": "Reduced surface blood flow limits heat transfer to the surroundings.",
+      "trap": "Dilation sends more warm blood towards the surface.",
+      "mnemonic": "Would sending warm blood closer to the skin reduce or increase heat loss?",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Reduced surface blood flow limits heat transfer to the surroundings."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Dilation sends more warm blood towards the surface."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/33-3-homeostasis.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-085",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Coordination",
+      "concept": "Hypothalamic temperature control",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is one function of the hypothalamus in temperature regulation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It prevents sweat from evaporating at any temperature.",
+          "why": "Sweat can evaporate when the surrounding conditions allow it.",
+          "whyWrong": "Sweat can evaporate when the surrounding conditions allow it."
+        },
+        {
+          "id": "b",
+          "text": "It detects temperature only when the skin is burned.",
+          "why": "Temperature receptors respond to changes well before burning occurs.",
+          "whyWrong": "Temperature receptors respond to changes well before burning occurs."
+        },
+        {
+          "id": "c",
+          "text": "It coordinates responses when body temperature departs from its normal range.",
+          "why": "The hypothalamus integrates temperature signals and helps control responses such as sweating and shivering.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It raises body temperature by digesting carbohydrates in the blood.",
+          "why": "When extra heat is needed, responses such as shivering can increase heat production.",
+          "whyWrong": "When extra heat is needed, responses such as shivering can increase heat production."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify the control centre that coordinates several responses.",
+      "explanation": "The hypothalamus integrates temperature signals and helps control responses such as sweating and shivering.",
+      "trap": "Sweat can evaporate when the surrounding conditions allow it.",
+      "mnemonic": "Identify the control centre that coordinates several responses.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The hypothalamus integrates temperature signals and helps control responses such as sweating and shivering."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Sweat can evaporate when the surrounding conditions allow it."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/33-3-homeostasis.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-086",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Reproduction",
+      "concept": "Plant embryo suspensor",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What is the role of the suspensor in the early development of a flowering plant embryo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It becomes the pollen grain’s outer wall.",
+          "why": "The pollen wall forms much earlier and has a different origin.",
+          "whyWrong": "The pollen wall forms much earlier and has a different origin."
+        },
+        {
+          "id": "b",
+          "text": "It helps position the embryo and can aid nutrient transfer to it.",
+          "why": "The suspensor supports early development and can help supply nutrients.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It encloses the mature seed as its coat.",
+          "why": "The seed coat develops from ovule integuments.",
+          "whyWrong": "The seed coat develops from ovule integuments."
+        },
+        {
+          "id": "d",
+          "text": "It stores the egg cell before pollination.",
+          "why": "The egg cell is present in the embryo sac before fertilisation.",
+          "whyWrong": "The egg cell is present in the embryo sac before fertilisation."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Focus on the support of the embryo at an early stage.",
+      "explanation": "The suspensor supports early development and can help supply nutrients.",
+      "trap": "The pollen wall forms much earlier and has a different origin.",
+      "mnemonic": "Focus on the support of the embryo at an early stage.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The suspensor supports early development and can help supply nutrients."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The pollen wall forms much earlier and has a different origin."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-088",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Reproduction",
+      "concept": "Maize coleoptile",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which structure brings a maize seedling’s first shoot safely through the soil?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The radicle",
+          "why": "The radicle forms the primary root.",
+          "whyWrong": "The radicle forms the primary root."
+        },
+        {
+          "id": "b",
+          "text": "The testa",
+          "why": "The testa is the seed coat.",
+          "whyWrong": "The testa is the seed coat."
+        },
+        {
+          "id": "c",
+          "text": "The stamen",
+          "why": "A stamen is a pollen-producing flower part.",
+          "whyWrong": "A stamen is a pollen-producing flower part."
+        },
+        {
+          "id": "d",
+          "text": "The coleoptile",
+          "why": "The coleoptile is a protective sheath around the emerging shoot.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for a sheath around the developing shoot.",
+      "explanation": "The coleoptile is a protective sheath around the emerging shoot.",
+      "trap": "The radicle forms the primary root.",
+      "mnemonic": "Look for a sheath around the developing shoot.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The coleoptile is a protective sheath around the emerging shoot."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The radicle forms the primary root."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-089",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Reproduction",
+      "concept": "External animal dispersal",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which feature of a burr most directly aids its dispersal by animals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A sweet, watery pulp",
+          "why": "Sweet pulp often promotes dispersal after fruit is eaten.",
+          "whyWrong": "Sweet pulp often promotes dispersal after fruit is eaten."
+        },
+        {
+          "id": "b",
+          "text": "Flat wings that slow its fall",
+          "why": "Wings help wind dispersal.",
+          "whyWrong": "Wings help wind dispersal."
+        },
+        {
+          "id": "c",
+          "text": "Hooks that attach to fur",
+          "why": "The hooks let animals carry the fruit externally.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "An air-filled cavity that keeps it afloat",
+          "why": "Buoyancy helps water dispersal.",
+          "whyWrong": "Buoyancy helps water dispersal."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Picture the fruit catching on an animal as it passes.",
+      "explanation": "The hooks let animals carry the fruit externally.",
+      "trap": "Sweet pulp often promotes dispersal after fruit is eaten.",
+      "mnemonic": "Picture the fruit catching on an animal as it passes.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The hooks let animals carry the fruit externally."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Sweet pulp often promotes dispersal after fruit is eaten."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-090",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Reproduction",
+      "concept": "Shedding of the uterine lining",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What normally happens to the uterine lining as progesterone levels fall at the end of a cycle without pregnancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It starts secreting sperm cells.",
+          "why": "Sperm are produced in the testes.",
+          "whyWrong": "Sperm are produced in the testes."
+        },
+        {
+          "id": "b",
+          "text": "It breaks down and part of it is shed.",
+          "why": "Falling progesterone contributes to the onset of menstruation.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It develops into the placenta.",
+          "why": "The placenta develops in pregnancy with contributions from embryonic and maternal tissues.",
+          "whyWrong": "The placenta develops in pregnancy with contributions from embryonic and maternal tissues."
+        },
+        {
+          "id": "d",
+          "text": "It moves into the oviducts.",
+          "why": "Material shed during menstruation leaves through the cervix and vagina.",
+          "whyWrong": "Material shed during menstruation leaves through the cervix and vagina."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Consider what happens when hormonal support for the lining falls.",
+      "explanation": "Falling progesterone contributes to the onset of menstruation.",
+      "trap": "Sperm are produced in the testes.",
+      "mnemonic": "Consider what happens when hormonal support for the lining falls.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Falling progesterone contributes to the onset of menstruation."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Sperm are produced in the testes."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/43-4-hormonal-control-of-human-reproduction.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-091",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Temperature refuge",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "On a hot afternoon, some pond invertebrates move from the warm surface layer into cooler water below. What does this behaviour give them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cooler refuge within the same habitat",
+          "why": "Moving into cooler water can reduce exposure to heat.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Greater exposure to sunlight",
+          "why": "Light generally decreases with depth.",
+          "whyWrong": "Light generally decreases with depth."
+        },
+        {
+          "id": "c",
+          "text": "A guarantee of higher dissolved oxygen",
+          "why": "The stem provides no guarantee about dissolved oxygen.",
+          "whyWrong": "The stem provides no guarantee about dissolved oxygen."
+        },
+        {
+          "id": "d",
+          "text": "A route into a different pond",
+          "why": "The animals are moving within the same pond.",
+          "whyWrong": "The animals are moving within the same pond."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use the observed difference between the two water layers.",
+      "explanation": "Moving into cooler water can reduce exposure to heat.",
+      "trap": "Light generally decreases with depth.",
+      "mnemonic": "Use the observed difference between the two water layers.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Moving into cooler water can reduce exposure to heat."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Light generally decreases with depth."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/44-4-aquatic-biomes.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-092",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Algal bloom and oxygen depletion",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can a large algal bloom contribute to low dissolved oxygen after the algae die?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dead algae release nitrogen gas that turns oxygen into water.",
+          "why": "Nitrogen gas does not directly convert pond oxygen into water in this process.",
+          "whyWrong": "Nitrogen gas does not directly convert pond oxygen into water in this process."
+        },
+        {
+          "id": "b",
+          "text": "The dead algae carry all the oxygen out of the pond.",
+          "why": "Dead cells do not physically carry all dissolved oxygen away.",
+          "whyWrong": "Dead cells do not physically carry all dissolved oxygen away."
+        },
+        {
+          "id": "c",
+          "text": "Light reaching the water increases oxygen consumption by all plants.",
+          "why": "Microbial decomposition of the dead algae drives the oxygen loss described.",
+          "whyWrong": "Microbial decomposition of the dead algae drives the oxygen loss described."
+        },
+        {
+          "id": "d",
+          "text": "Decomposers use oxygen as they break down dead algae.",
+          "why": "Decomposition can consume oxygen faster than it is replenished.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think about the organisms breaking down dead material.",
+      "explanation": "Decomposition can consume oxygen faster than it is replenished.",
+      "trap": "Nitrogen gas does not directly convert pond oxygen into water in this process.",
+      "mnemonic": "Think about the organisms breaking down dead material.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Decomposition can consume oxygen faster than it is replenished."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Nitrogen gas does not directly convert pond oxygen into water in this process."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/44-4-aquatic-biomes.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-093",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Isolation and recolonisation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why may a small pond population disappear even though individuals can live in nearby ponds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Individuals in separate ponds share resources through the air.",
+          "why": "Airborne sharing of resources does not replace individuals.",
+          "whyWrong": "Airborne sharing of resources does not replace individuals."
+        },
+        {
+          "id": "b",
+          "text": "Small populations are immune to chance events.",
+          "why": "Small populations can be particularly vulnerable to chance events.",
+          "whyWrong": "Small populations can be particularly vulnerable to chance events."
+        },
+        {
+          "id": "c",
+          "text": "Every suitable patch must always contain the species.",
+          "why": "Habitat suitability alone does not ensure there are individuals present.",
+          "whyWrong": "Habitat suitability alone does not ensure there are individuals present."
+        },
+        {
+          "id": "d",
+          "text": "Barriers can prevent new individuals from arriving after deaths reduce the population.",
+          "why": "Limited dispersal prevents replenishment or recolonisation.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think about whether individuals can move between patches.",
+      "explanation": "Limited dispersal prevents replenishment or recolonisation.",
+      "trap": "Airborne sharing of resources does not replace individuals.",
+      "mnemonic": "Think about whether individuals can move between patches.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Limited dispersal prevents replenishment or recolonisation."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Airborne sharing of resources does not replace individuals."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/47-4-preserving-biodiversity.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-094",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Age structure and population growth",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What does an age structure with far more young individuals than old individuals often suggest if survival remains typical?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The population must shrink because older individuals are scarce.",
+          "why": "Few older individuals do not establish that the population will shrink.",
+          "whyWrong": "Few older individuals do not establish that the population will shrink."
+        },
+        {
+          "id": "b",
+          "text": "The population has potential to grow as more young individuals reach reproductive age.",
+          "why": "Many individuals entering reproductive age can raise future birth numbers.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The population has already reached zero growth.",
+          "why": "A count by age alone does not demonstrate zero growth.",
+          "whyWrong": "A count by age alone does not demonstrate zero growth."
+        },
+        {
+          "id": "d",
+          "text": "The population is made up of several different species.",
+          "why": "Age classes can all belong to one species.",
+          "whyWrong": "Age classes can all belong to one species."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about how many individuals may soon enter reproductive age.",
+      "explanation": "Many individuals entering reproductive age can raise future birth numbers.",
+      "trap": "Few older individuals do not establish that the population will shrink.",
+      "mnemonic": "Think about how many individuals may soon enter reproductive age.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Many individuals entering reproductive age can raise future birth numbers."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Few older individuals do not establish that the population will shrink."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-095",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Biomagnification",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can a small amount of a persistent contaminant in water threaten fish-eating birds at the top of a food chain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The contaminant can build up through repeated feeding at successive trophic levels.",
+          "why": "Persistent contaminants can biomagnify through the food chain.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The contaminant always breaks down completely in each animal.",
+          "why": "A persistent contaminant can remain in tissues.",
+          "whyWrong": "A persistent contaminant can remain in tissues."
+        },
+        {
+          "id": "c",
+          "text": "The birds remove the contaminant by breathing faster.",
+          "why": "Faster breathing does not remove persistent contaminants from prey consumed by birds.",
+          "whyWrong": "Faster breathing does not remove persistent contaminants from prey consumed by birds."
+        },
+        {
+          "id": "d",
+          "text": "The water transfers the same dose to every animal regardless of its food.",
+          "why": "Dose varies with diet and position in the food chain.",
+          "whyWrong": "Dose varies with diet and position in the food chain."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow a persistent contaminant from prey to predator.",
+      "explanation": "Persistent contaminants can biomagnify through the food chain.",
+      "trap": "A persistent contaminant can remain in tissues.",
+      "mnemonic": "Follow a persistent contaminant from prey to predator.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Persistent contaminants can biomagnify through the food chain."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A persistent contaminant can remain in tissues."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-096",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "First meiotic division",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "During meiosis I, what moves to opposite poles when the homologous chromosomes of a pair separate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two sister chromatids from every chromosome.",
+          "why": "Sister chromatids normally separate in the second meiotic division.",
+          "whyWrong": "Sister chromatids normally separate in the second meiotic division."
+        },
+        {
+          "id": "b",
+          "text": "Two complete diploid sets of chromosomes.",
+          "why": "The first division reduces the chromosome sets per cell.",
+          "whyWrong": "The first division reduces the chromosome sets per cell."
+        },
+        {
+          "id": "c",
+          "text": "The two DNA strands of each chromatid.",
+          "why": "Individual DNA strands are not pulled apart in this division.",
+          "whyWrong": "Individual DNA strands are not pulled apart in this division."
+        },
+        {
+          "id": "d",
+          "text": "One homologue to each pole, with its sister chromatids still joined.",
+          "why": "Homologues separate at meiosis I and sister chromatids normally separate at meiosis II.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Distinguish homologues from sister chromatids.",
+      "explanation": "Homologues separate at meiosis I and sister chromatids normally separate at meiosis II.",
+      "trap": "Sister chromatids normally separate in the second meiotic division.",
+      "mnemonic": "Distinguish homologues from sister chromatids.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Homologues separate at meiosis I and sister chromatids normally separate at meiosis II."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Sister chromatids normally separate in the second meiotic division."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-097",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "Synonymous base substitution",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What can happen when one DNA base is replaced but the altered codon still specifies the same amino acid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ribosome always stops at that codon.",
+          "why": "The stem says that the new codon still specifies an amino acid.",
+          "whyWrong": "The stem says that the new codon still specifies an amino acid."
+        },
+        {
+          "id": "b",
+          "text": "The protein’s amino acid sequence stays the same.",
+          "why": "Different codons can specify the same amino acid.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Every amino acid after that codon changes.",
+          "why": "A substitution does not shift the reading frame in the way an insertion or deletion can.",
+          "whyWrong": "A substitution does not shift the reading frame in the way an insertion or deletion can."
+        },
+        {
+          "id": "d",
+          "text": "The chromosome immediately doubles in number.",
+          "why": "Changing one base does not double the chromosome count.",
+          "whyWrong": "Changing one base does not double the chromosome count."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Use the fact that the new codon specifies the same amino acid.",
+      "explanation": "Different codons can specify the same amino acid.",
+      "trap": "The stem says that the new codon still specifies an amino acid.",
+      "mnemonic": "Use the fact that the new codon specifies the same amino acid.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Different codons can specify the same amino acid."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The stem says that the new codon still specifies an amino acid."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/15-1-the-genetic-code.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-098",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "Allele expression and frequency",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "How is a dominant allele different from a common allele?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A dominant allele must be the most frequent allele in every population.",
+          "why": "Dominance does not determine frequency.",
+          "whyWrong": "Dominance does not determine frequency."
+        },
+        {
+          "id": "b",
+          "text": "A dominant allele can be expressed in a heterozygote even when it is rare in the population.",
+          "why": "Dominance describes expression in a heterozygote. Frequency describes how often an allele occurs.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "A common allele can occur only in homozygotes.",
+          "why": "Common alleles can occur in both homozygotes and heterozygotes.",
+          "whyWrong": "Common alleles can occur in both homozygotes and heterozygotes."
+        },
+        {
+          "id": "d",
+          "text": "A rare allele must always be recessive.",
+          "why": "Rarity does not imply recessiveness.",
+          "whyWrong": "Rarity does not imply recessiveness."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Separate expression within an individual from frequency across a population.",
+      "explanation": "Dominance describes expression in a heterozygote. Frequency describes how often an allele occurs.",
+      "trap": "Dominance does not determine frequency.",
+      "mnemonic": "Separate expression within an individual from frequency across a population.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Dominance describes expression in a heterozygote. Frequency describes how often an allele occurs."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Dominance does not determine frequency."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-099",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "Maternal mitochondrial inheritance",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which organelle’s genes are ordinarily passed to a human child through the egg’s cytoplasm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The mitochondrion",
+          "why": "Human mitochondrial DNA is ordinarily inherited from the mother.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The Golgi apparatus",
+          "why": "The Golgi apparatus has no separate genome.",
+          "whyWrong": "The Golgi apparatus has no separate genome."
+        },
+        {
+          "id": "c",
+          "text": "The lysosome",
+          "why": "Lysosomes contain digestive enzymes but no separate genome.",
+          "whyWrong": "Lysosomes contain digestive enzymes but no separate genome."
+        },
+        {
+          "id": "d",
+          "text": "The centriole",
+          "why": "Centrioles are structures made of proteins and have no separate genome.",
+          "whyWrong": "Centrioles are structures made of proteins and have no separate genome."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about an organelle with its own genome that is present in the egg.",
+      "explanation": "Human mitochondrial DNA is ordinarily inherited from the mother.",
+      "trap": "The Golgi apparatus has no separate genome.",
+      "mnemonic": "Think about an organelle with its own genome that is present in the egg.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Human mitochondrial DNA is ordinarily inherited from the mother."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The Golgi apparatus has no separate genome."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/29-7-the-evolution-of-primates.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-100",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "X inactivation and coat pattern",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can a female cat heterozygous for two X-linked coat-colour alleles have patches of different colours?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every hair follicle changes its DNA each time a hair grows.",
+          "why": "The alleles need not change for different patches to express different colours.",
+          "whyWrong": "The alleles need not change for different patches to express different colours."
+        },
+        {
+          "id": "b",
+          "text": "Different X chromosomes are inactive in different groups of skin cells.",
+          "why": "Descendants of each cell generally retain the same inactive X chromosome.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Each skin cell produces an extra copy of the Y chromosome.",
+          "why": "A typical female cat with two X chromosomes does not produce copies of a Y chromosome in skin cells.",
+          "whyWrong": "A typical female cat with two X chromosomes does not produce copies of a Y chromosome in skin cells."
+        },
+        {
+          "id": "d",
+          "text": "Both alleles are always switched off in all skin cells.",
+          "why": "Inactivation normally leaves one X active in each cell.",
+          "whyWrong": "Inactivation normally leaves one X active in each cell."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Consider which X remains active in each patch.",
+      "explanation": "Descendants of each cell generally retain the same inactive X chromosome.",
+      "trap": "The alleles need not change for different patches to express different colours.",
+      "mnemonic": "Consider which X remains active in each patch.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Descendants of each cell generally retain the same inactive X chromosome."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The alleles need not change for different patches to express different colours."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/13-2-chromosomal-basis-of-inherited-disorders.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    }
+  ]
+}
