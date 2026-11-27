@@ -30,6 +30,7 @@ const mathematics = fromRows([
 
 // Slim list from english-bank/syllabus-english.json. The grammar deck covers chapters 7, 8 and 10.
 const english = fromRows([
+  ['A', 'Comprehension and Summary', [['Comprehension', 1], ['Cloze Passages', 2], ['Summary', 3]]],
   ['B', 'Lexis and Structure', [
     ['Synonyms', 4], ['Antonyms', 5], ['Idioms and Sentence Interpretation', 6],
     ['Grammar Rules', 7], ['Tenses and Reported Speech', 8], ['Prepositions and Phrasal Verbs', 9],
