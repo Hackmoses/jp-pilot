@@ -1,0 +1,115 @@
+{
+  "subject": "biology",
+  "topicId": "8",
+  "lessons": [
+    {
+      "id": "biology-simple-reproduction",
+      "title": "Reproduction in simpler organisms",
+      "scenes": [
+        {
+          "id": "biology-simple-reproduction-1",
+          "show": "",
+          "say": "Unicellular protists such as Paramecium usually reproduce asexually by binary fission. First the nucleus divides, then a groove pinches across the cytoplasm until one parent cell splits into two equal daughter cells.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Paramecium",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "binary",
+              "action": "part-0-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-simple-reproduction-2",
+          "show": "",
+          "say": "In bread mould, Rhizopus, two compatible hyphae grow toward each other and fuse at their tips. The fused cell forms a thick-walled sexual resting zygospore that survives harsh conditions.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "hyphae",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "zygospore",
+              "action": "part-1-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-simple-reproduction-3",
+          "show": "",
+          "say": "An earthworm has a swollen glandular band called the clitellum that secretes the cocoon for eggs. Frogs are oviparous: they release eggs into water for external fertilisation and development outside the mother, unlike viviparous mammals.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "clitellum",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "cocoon",
+              "action": "part-2-1",
+              "label": ""
+            },
+            {
+              "word": "oviparous",
+              "action": "part-2-2",
+              "label": ""
+            },
+            {
+              "word": "viviparous",
+              "action": "part-2-3",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-simple-reproduction-4",
+          "show": "",
+          "say": "For JAMB, match Paramecium asexual division to binary fission, Rhizopus resting fusion to the zygospore, earthworm cocoon formation to the clitellum, and external egg development to oviparous animals.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "fission",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "zygospore",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "clitellum",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "oviparous",
+              "action": "part-2-2",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which thickened glandular band secretes an earthworm’s cocoon?",
+        "options": [
+          "Spermathecal pore",
+          "Clitellum",
+          "Pyrenoid"
+        ],
+        "answerIndex": 1,
+        "feedback": "The clitellum is the swollen band of glandular segments that forms the cocoon around the eggs."
+      }
+    }
+  ]
+}
