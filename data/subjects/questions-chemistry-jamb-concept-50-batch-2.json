@@ -1,0 +1,3057 @@
+{
+  "version": 1,
+  "subject": "chemistry",
+  "count": 50,
+  "questions": [
+    {
+      "id": "chem-jamb-concept-101",
+      "subject": "chemistry",
+      "chapter": "1",
+      "topic": "Separation of Mixtures and Purification",
+      "concept": "Washing a precipitate",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is an insoluble precipitate often rinsed with a little distilled water while it is on the filter paper?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To wash away soluble impurities left on the solid",
+          "why": "A small rinse removes mother liquor and dissolved contaminants stuck to the solid.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "To make the precipitate pass through the filter",
+          "why": "The precipitate is insoluble and is intended to remain on the paper.",
+          "whyWrong": "The precipitate is insoluble and is intended to remain on the paper."
+        },
+        {
+          "id": "c",
+          "text": "To introduce more dissolved impurities",
+          "why": "Distilled water contains very little dissolved material.",
+          "whyWrong": "Distilled water contains very little dissolved material."
+        },
+        {
+          "id": "d",
+          "text": "To change the precipitate into a gas",
+          "why": "Rinsing does not require a gas-producing reaction.",
+          "whyWrong": "Rinsing does not require a gas-producing reaction."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Decide which materials can dissolve and leave with the rinse.",
+      "explanation": "A small rinse removes mother liquor and dissolved contaminants stuck to the solid.",
+      "trap": "The precipitate is insoluble and is intended to remain on the paper.",
+      "mnemonic": "Decide which materials can dissolve and leave with the rinse.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A small rinse removes mother liquor and dissolved contaminants stuck to the solid."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The precipitate is insoluble and is intended to remain on the paper."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-102",
+      "subject": "chemistry",
+      "chapter": "1",
+      "topic": "Separation of Mixtures and Purification",
+      "concept": "Centrifugation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is a centrifuge useful when fine chalk particles remain suspended in water and settle only slowly under gravity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes chalk into a dissolved salt",
+          "why": "Centrifugation is a physical separation and does not dissolve the chalk.",
+          "whyWrong": "Centrifugation is a physical separation and does not dissolve the chalk."
+        },
+        {
+          "id": "b",
+          "text": "It separates the elements within each chalk particle",
+          "why": "It separates particles from the liquid, not atoms within a compound.",
+          "whyWrong": "It separates particles from the liquid, not atoms within a compound."
+        },
+        {
+          "id": "c",
+          "text": "It makes the suspended particles collect more quickly at the bottom or outer end of the tube",
+          "why": "Rapid rotation speeds separation of suspended particles from the liquid in which they are dispersed.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It evaporates all the water by ordinary spinning",
+          "why": "The water remains as the clearer liquid above the collected solid.",
+          "whyWrong": "The water remains as the clearer liquid above the collected solid."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "The step speeds up settling rather than changing the substance.",
+      "explanation": "Rapid rotation speeds separation of suspended particles from the liquid in which they are dispersed.",
+      "trap": "Centrifugation is a physical separation and does not dissolve the chalk.",
+      "mnemonic": "The step speeds up settling rather than changing the substance.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Rapid rotation speeds separation of suspended particles from the liquid in which they are dispersed."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Centrifugation is a physical separation and does not dissolve the chalk."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-103",
+      "subject": "chemistry",
+      "chapter": "1",
+      "topic": "Separation of Mixtures and Purification",
+      "concept": "Chromatography reference spot",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A pupil runs an unknown dye next to a known dye on the same paper, using the same solvent. What does it suggest if the main spots travel the same distance and have the same colour?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They must be completely different dyes",
+          "why": "Matching position and colour support a possible match.",
+          "whyWrong": "Matching position and colour support a possible match."
+        },
+        {
+          "id": "b",
+          "text": "They may be the same dye, but the match is not conclusive",
+          "why": "Matching spots are evidence for a shared identity, but a second solvent or test can strengthen the identification.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The unknown is certainly pure even if it makes other spots",
+          "why": "Additional spots can show other components.",
+          "whyWrong": "Additional spots can show other components."
+        },
+        {
+          "id": "d",
+          "text": "The dyes are certainly identical under all conditions",
+          "why": "Different substances can sometimes give similar results in one solvent.",
+          "whyWrong": "Different substances can sometimes give similar results in one solvent."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Separate evidence of a possible match from proof.",
+      "explanation": "Matching spots are evidence for a shared identity, but a second solvent or test can strengthen the identification.",
+      "trap": "Matching position and colour support a possible match.",
+      "mnemonic": "Separate evidence of a possible match from proof.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Matching spots are evidence for a shared identity, but a second solvent or test can strengthen the identification."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Matching position and colour support a possible match."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-104",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Coefficients and chemical identity",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why should a pupil change coefficients, rather than subscripts, to balance a chemical equation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coefficients change the kinds of atoms in each molecule",
+          "why": "Coefficients change amounts of the same species.",
+          "whyWrong": "Coefficients change amounts of the same species."
+        },
+        {
+          "id": "b",
+          "text": "Subscripts specify only how much of a sample was weighed",
+          "why": "They show the composition of a molecule or formula unit.",
+          "whyWrong": "They show the composition of a molecule or formula unit."
+        },
+        {
+          "id": "c",
+          "text": "Subscripts are part of the formulas and changing them can change the substances",
+          "why": "A balanced equation uses coefficients to adjust amounts. Formulas remain those of the substances actually involved.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Balancing requires one element to become another",
+          "why": "Atoms of each element must be accounted for without changing their identities.",
+          "whyWrong": "Atoms of each element must be accounted for without changing their identities."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Keep the identity of each reactant and product fixed.",
+      "explanation": "A balanced equation uses coefficients to adjust amounts. Formulas remain those of the substances actually involved.",
+      "trap": "Coefficients change amounts of the same species.",
+      "mnemonic": "Keep the identity of each reactant and product fixed.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A balanced equation uses coefficients to adjust amounts. Formulas remain those of the substances actually involved."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Coefficients change amounts of the same species."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-105",
+      "subject": "chemistry",
+      "chapter": "2",
+      "topic": "Chemical Combination and Stoichiometry",
+      "concept": "Recovering less product than expected",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A reaction produces the expected compound, but the isolated yield is lower because some dissolved product remains in the discarded liquid. What accounts for the shortfall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An excess of product in the dried solid",
+          "why": "Extra product would increase the isolated amount.",
+          "whyWrong": "Extra product would increase the isolated amount."
+        },
+        {
+          "id": "b",
+          "text": "Violation of conservation of mass",
+          "why": "The discarded liquid still contains the missing material.",
+          "whyWrong": "The discarded liquid still contains the missing material."
+        },
+        {
+          "id": "c",
+          "text": "Loss during isolation of the product",
+          "why": "Some product formed but was not recovered. An isolated yield can fall below the amount actually produced.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "A change of the product's empirical formula solely because it was separated",
+          "why": "Amount recovered and composition are separate properties.",
+          "whyWrong": "Amount recovered and composition are separate properties."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Follow where the dissolved material went.",
+      "explanation": "Some product formed but was not recovered. An isolated yield can fall below the amount actually produced.",
+      "trap": "Extra product would increase the isolated amount.",
+      "mnemonic": "Follow where the dissolved material went.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Some product formed but was not recovered. An isolated yield can fall below the amount actually produced."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Extra product would increase the isolated amount."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-106",
+      "subject": "chemistry",
+      "chapter": "3",
+      "topic": "States of Matter, Kinetic Theory and Gas Laws",
+      "concept": "Effusion and diffusion",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A gas escapes from a container through a very tiny opening into a vacuum. What term describes this process most precisely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Effusion",
+          "why": "Gas particles passing one at a time through an opening smaller than their typical collision spacing are effusing.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Condensation",
+          "why": "Condensation is conversion of gas to liquid.",
+          "whyWrong": "Condensation is conversion of gas to liquid."
+        },
+        {
+          "id": "c",
+          "text": "Sedimentation",
+          "why": "Sedimentation involves particles settling from a fluid.",
+          "whyWrong": "Sedimentation involves particles settling from a fluid."
+        },
+        {
+          "id": "d",
+          "text": "Crystallisation",
+          "why": "Crystallisation produces an ordered solid.",
+          "whyWrong": "Crystallisation produces an ordered solid."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish escape through a tiny opening from ordinary mixing in a container.",
+      "explanation": "Gas particles passing one at a time through an opening smaller than their typical collision spacing are effusing.",
+      "trap": "Condensation is conversion of gas to liquid.",
+      "mnemonic": "Distinguish escape through a tiny opening from ordinary mixing in a container.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Gas particles passing one at a time through an opening smaller than their typical collision spacing are effusing."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Condensation is conversion of gas to liquid."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-107",
+      "subject": "chemistry",
+      "chapter": "3",
+      "topic": "States of Matter, Kinetic Theory and Gas Laws",
+      "concept": "Selective evaporation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does the remaining liquid in an open beaker tend to cool when it evaporates and receives little heat from outside?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Molecules with relatively high kinetic energy preferentially escape",
+          "why": "The fastest molecules are more likely to escape the surface. This can lower the average kinetic energy of those left behind.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The slowest molecules escape first",
+          "why": "Escape requires a molecule to overcome attractions at the surface.",
+          "whyWrong": "Escape requires a molecule to overcome attractions at the surface."
+        },
+        {
+          "id": "c",
+          "text": "The remaining molecules all stop moving",
+          "why": "Molecules in a liquid continue moving at ordinary temperatures.",
+          "whyWrong": "Molecules in a liquid continue moving at ordinary temperatures."
+        },
+        {
+          "id": "d",
+          "text": "Liquid molecules gain energy because the vapour is lost",
+          "why": "The remaining liquid's average kinetic energy tends to fall.",
+          "whyWrong": "The remaining liquid's average kinetic energy tends to fall."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about which molecules can most readily overcome attraction at the surface.",
+      "explanation": "The fastest molecules are more likely to escape the surface. This can lower the average kinetic energy of those left behind.",
+      "trap": "Escape requires a molecule to overcome attractions at the surface.",
+      "mnemonic": "Think about which molecules can most readily overcome attraction at the surface.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The fastest molecules are more likely to escape the surface. This can lower the average kinetic energy of those left behind."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Escape requires a molecule to overcome attractions at the surface."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-108",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Mass number",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which change would alter the mass number of an atom without changing the element it represents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Changing the number of protons in its nucleus",
+          "why": "The proton number defines the element.",
+          "whyWrong": "The proton number defines the element."
+        },
+        {
+          "id": "b",
+          "text": "Removing a valence electron",
+          "why": "An electron loss changes ion charge, not the mass number.",
+          "whyWrong": "An electron loss changes ion charge, not the mass number."
+        },
+        {
+          "id": "c",
+          "text": "Changing the number of neutrons in its nucleus",
+          "why": "Mass number counts protons and neutrons. Changing only the neutron count gives a different isotope of the same element.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Exciting an electron to a higher energy level",
+          "why": "This does not change the number of nucleons.",
+          "whyWrong": "This does not change the number of nucleons."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Keep the atomic number fixed.",
+      "explanation": "Mass number counts protons and neutrons. Changing only the neutron count gives a different isotope of the same element.",
+      "trap": "The proton number defines the element.",
+      "mnemonic": "Keep the atomic number fixed.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Mass number counts protons and neutrons. Changing only the neutron count gives a different isotope of the same element."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The proton number defines the element."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-109",
+      "subject": "chemistry",
+      "chapter": "4",
+      "topic": "Atomic Structure",
+      "concept": "Emission and electron transitions",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What can happen when an excited electron in an isolated atom drops to a lower allowed energy level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A proton is always ejected from the nucleus",
+          "why": "An electronic transition does not require a nuclear change.",
+          "whyWrong": "An electronic transition does not require a nuclear change."
+        },
+        {
+          "id": "b",
+          "text": "The electron necessarily becomes a neutron",
+          "why": "An electron remains an electron when its energy decreases.",
+          "whyWrong": "An electron remains an electron when its energy decreases."
+        },
+        {
+          "id": "c",
+          "text": "A photon can be emitted",
+          "why": "The decrease in the electron's energy can be released as a photon of a characteristic frequency.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The atom must absorb a photon in making this downward transition",
+          "why": "Absorption supplies energy for an upward transition.",
+          "whyWrong": "Absorption supplies energy for an upward transition."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Decide whether the atom gains or loses energy.",
+      "explanation": "The decrease in the electron's energy can be released as a photon of a characteristic frequency.",
+      "trap": "An electronic transition does not require a nuclear change.",
+      "mnemonic": "Decide whether the atom gains or loses energy.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The decrease in the electron's energy can be released as a photon of a characteristic frequency."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "An electronic transition does not require a nuclear change."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-110",
+      "subject": "chemistry",
+      "chapter": "5",
+      "topic": "Chemical Bonding",
+      "concept": "Molecular bond polarity",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does a bond between hydrogen and chlorine have ends with different partial charges?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The molecule contains separate sodium ions",
+          "why": "Only hydrogen and chlorine are present.",
+          "whyWrong": "Only hydrogen and chlorine are present."
+        },
+        {
+          "id": "b",
+          "text": "Chlorine attracts the shared electron pair more strongly",
+          "why": "The unequal attraction for the bonding electrons shifts electron density towards chlorine, leaving opposite partial charges.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The bond electrons are shared exactly equally",
+          "why": "Equal sharing would not produce this bond polarity.",
+          "whyWrong": "Equal sharing would not produce this bond polarity."
+        },
+        {
+          "id": "d",
+          "text": "Hydrogen gains a full extra proton from chlorine",
+          "why": "Covalent bond polarity does not involve transfer of protons.",
+          "whyWrong": "Covalent bond polarity does not involve transfer of protons."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the atoms' attraction for the shared electrons.",
+      "explanation": "The unequal attraction for the bonding electrons shifts electron density towards chlorine, leaving opposite partial charges.",
+      "trap": "Only hydrogen and chlorine are present.",
+      "mnemonic": "Compare the atoms' attraction for the shared electrons.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The unequal attraction for the bonding electrons shifts electron density towards chlorine, leaving opposite partial charges."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Only hydrogen and chlorine are present."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-111",
+      "subject": "chemistry",
+      "chapter": "5",
+      "topic": "Chemical Bonding",
+      "concept": "Shape and molecular polarity",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Carbon dioxide has polar carbon–oxygen bonds. Why is the whole molecule non-polar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The two equal bond dipoles point in opposite directions and cancel",
+          "why": "The linear symmetric shape makes the two bond dipoles cancel, so there is no permanent molecular dipole.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Its carbon–oxygen bonds are all ionic",
+          "why": "Each carbon–oxygen bond in the molecule is covalent.",
+          "whyWrong": "Each carbon–oxygen bond in the molecule is covalent."
+        },
+        {
+          "id": "c",
+          "text": "The molecule has a bent shape that adds the bond dipoles",
+          "why": "Carbon dioxide is linear when considered as an isolated molecule.",
+          "whyWrong": "Carbon dioxide is linear when considered as an isolated molecule."
+        },
+        {
+          "id": "d",
+          "text": "Electrons stop moving around the oxygen atoms",
+          "why": "Molecular polarity is determined by the distribution of charge.",
+          "whyWrong": "Molecular polarity is determined by the distribution of charge."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the directions of the two bond dipoles.",
+      "explanation": "The linear symmetric shape makes the two bond dipoles cancel, so there is no permanent molecular dipole.",
+      "trap": "Each carbon–oxygen bond in the molecule is covalent.",
+      "mnemonic": "Compare the directions of the two bond dipoles.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The linear symmetric shape makes the two bond dipoles cancel, so there is no permanent molecular dipole."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Each carbon–oxygen bond in the molecule is covalent."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-112",
+      "subject": "chemistry",
+      "chapter": "5",
+      "topic": "Chemical Bonding",
+      "concept": "Simple molecular solids",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can a simple molecular solid melt without breaking most bonds inside its molecules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The nuclei of all its atoms fuse",
+          "why": "Melting is a change of state, not a nuclear reaction.",
+          "whyWrong": "Melting is a change of state, not a nuclear reaction."
+        },
+        {
+          "id": "b",
+          "text": "Melting mainly loosens attractions between molecules",
+          "why": "For an ordinary molecular solid, melting lets molecules move past one another without breaking the strong covalent bonds joining the atoms within each molecule.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Every shared electron pair becomes a separate atom",
+          "why": "Most molecules keep their identity during ordinary melting.",
+          "whyWrong": "Most molecules keep their identity during ordinary melting."
+        },
+        {
+          "id": "d",
+          "text": "Each molecule gains or loses a full electron",
+          "why": "Forming ions is not required for melting.",
+          "whyWrong": "Forming ions is not required for melting."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish attractions between molecules from bonds within a molecule.",
+      "explanation": "For an ordinary molecular solid, melting lets molecules move past one another without breaking the strong covalent bonds joining the atoms within each molecule.",
+      "trap": "Melting is a change of state, not a nuclear reaction.",
+      "mnemonic": "Distinguish attractions between molecules from bonds within a molecule.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "For an ordinary molecular solid, melting lets molecules move past one another without breaking the strong covalent bonds joining the atoms within each molecule."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Melting is a change of state, not a nuclear reaction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-113",
+      "subject": "chemistry",
+      "chapter": "6",
+      "topic": "Periodicity",
+      "concept": "Halogen physical states",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is iodine a solid at room temperature while chlorine is a gas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "There are stronger attractions between iodine molecules",
+          "why": "The larger electron clouds of iodine molecules are more easily distorted, giving stronger London dispersion forces between molecules.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Iodine molecules are held together by ionic bonds",
+          "why": "Iodine is a molecular solid made of neutral molecules.",
+          "whyWrong": "Iodine is a molecular solid made of neutral molecules."
+        },
+        {
+          "id": "c",
+          "text": "Chlorine has no electrons to produce attractions",
+          "why": "Chlorine molecules have electrons and experience dispersion forces.",
+          "whyWrong": "Chlorine molecules have electrons and experience dispersion forces."
+        },
+        {
+          "id": "d",
+          "text": "The bonds inside iodine molecules must break when iodine melts",
+          "why": "Melting mostly overcomes attractions between molecules.",
+          "whyWrong": "Melting mostly overcomes attractions between molecules."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the attractions between molecules.",
+      "explanation": "The larger electron clouds of iodine molecules are more easily distorted, giving stronger London dispersion forces between molecules.",
+      "trap": "Iodine is a molecular solid made of neutral molecules.",
+      "mnemonic": "Compare the attractions between molecules.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The larger electron clouds of iodine molecules are more easily distorted, giving stronger London dispersion forces between molecules."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Iodine is a molecular solid made of neutral molecules."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-114",
+      "subject": "chemistry",
+      "chapter": "6",
+      "topic": "Periodicity",
+      "concept": "Successive ionisation and group",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "An element's first and second electrons can be removed relatively easily, but there is a large jump in energy for the third. What does this suggest for a main-group atom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It has one valence electron",
+          "why": "The large jump would then be expected after removing the first.",
+          "whyWrong": "The large jump would then be expected after removing the first."
+        },
+        {
+          "id": "b",
+          "text": "It has three valence electrons",
+          "why": "The third would still be removed from the valence shell.",
+          "whyWrong": "The third would still be removed from the valence shell."
+        },
+        {
+          "id": "c",
+          "text": "The atom has two valence electrons",
+          "why": "A sharp jump occurs when removal begins from a more tightly held inner shell. Here that happens after two valence electrons are lost.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It has no electrons in an outer shell",
+          "why": "An atom has occupied outermost electron levels.",
+          "whyWrong": "An atom has occupied outermost electron levels."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Find where removal switches from outer to inner electrons.",
+      "explanation": "A sharp jump occurs when removal begins from a more tightly held inner shell. Here that happens after two valence electrons are lost.",
+      "trap": "The large jump would then be expected after removing the first.",
+      "mnemonic": "Find where removal switches from outer to inner electrons.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A sharp jump occurs when removal begins from a more tightly held inner shell. Here that happens after two valence electrons are lost."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The large jump would then be expected after removing the first."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-115",
+      "subject": "chemistry",
+      "chapter": "7",
+      "topic": "Energy Changes",
+      "concept": "Reverse reactions and enthalpy",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A reaction releases heat at constant pressure. How does the enthalpy change for the exact reverse reaction compare under the same conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It has the same sign because the same substances are used",
+          "why": "Reversing the endpoints reverses the change in enthalpy.",
+          "whyWrong": "Reversing the endpoints reverses the change in enthalpy."
+        },
+        {
+          "id": "b",
+          "text": "It is always zero because the reaction was reversed",
+          "why": "Reversing a nonzero change does not make it vanish.",
+          "whyWrong": "Reversing a nonzero change does not make it vanish."
+        },
+        {
+          "id": "c",
+          "text": "It is necessarily larger in magnitude in the reverse direction",
+          "why": "The same two states define the same size of difference.",
+          "whyWrong": "The same two states define the same size of difference."
+        },
+        {
+          "id": "d",
+          "text": "It has the same magnitude and the opposite sign",
+          "why": "The reverse process takes the product back to the original state. If the forward reaction releases heat, the reverse one absorbs the corresponding amount.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Exchange the initial and final states.",
+      "explanation": "The reverse process takes the product back to the original state. If the forward reaction releases heat, the reverse one absorbs the corresponding amount.",
+      "trap": "Reversing the endpoints reverses the change in enthalpy.",
+      "mnemonic": "Exchange the initial and final states.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The reverse process takes the product back to the original state. If the forward reaction releases heat, the reverse one absorbs the corresponding amount."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Reversing the endpoints reverses the change in enthalpy."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-116",
+      "subject": "chemistry",
+      "chapter": "7",
+      "topic": "Energy Changes",
+      "concept": "Energy and insulation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does ordinary insulation around a calorimeter improve the estimation of a reaction's heat change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It turns an exothermic reaction into an endothermic one",
+          "why": "Insulation changes heat loss, not the chemical reaction's enthalpy sign.",
+          "whyWrong": "Insulation changes heat loss, not the chemical reaction's enthalpy sign."
+        },
+        {
+          "id": "b",
+          "text": "It raises the concentration of every reagent",
+          "why": "An insulating layer does not change the starting concentrations.",
+          "whyWrong": "An insulating layer does not change the starting concentrations."
+        },
+        {
+          "id": "c",
+          "text": "It reduces unwanted heat transfer between the apparatus and its surroundings",
+          "why": "The measured temperature change represents the reaction more closely when less heat is exchanged with the surroundings.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It increases the thermometer's freezing point",
+          "why": "Insulation does not alter the calibration by itself.",
+          "whyWrong": "Insulation does not alter the calibration by itself."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Think about where heat might go other than into the measured contents.",
+      "explanation": "The measured temperature change represents the reaction more closely when less heat is exchanged with the surroundings.",
+      "trap": "Insulation changes heat loss, not the chemical reaction's enthalpy sign.",
+      "mnemonic": "Think about where heat might go other than into the measured contents.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The measured temperature change represents the reaction more closely when less heat is exchanged with the surroundings."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Insulation changes heat loss, not the chemical reaction's enthalpy sign."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-117",
+      "subject": "chemistry",
+      "chapter": "8",
+      "topic": "Rates of Reaction",
+      "concept": "Temperature and effective collisions",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does heating commonly raise the rate of a reaction between the same reactants at the same concentrations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The reaction's activation energy automatically becomes zero",
+          "why": "The energy barrier still exists without a change in mechanism.",
+          "whyWrong": "The energy barrier still exists without a change in mechanism."
+        },
+        {
+          "id": "b",
+          "text": "A greater fraction of collisions have enough energy to react",
+          "why": "At higher temperature, more particles have enough energy to overcome the activation barrier, so the rate rises.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The molecules lose all motion as the sample warms",
+          "why": "Their average kinetic energy increases.",
+          "whyWrong": "Their average kinetic energy increases."
+        },
+        {
+          "id": "d",
+          "text": "Every molecular collision gives products regardless of orientation",
+          "why": "Suitable orientation can still matter.",
+          "whyWrong": "Suitable orientation can still matter."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the distribution of collision energies with the barrier.",
+      "explanation": "At higher temperature, more particles have enough energy to overcome the activation barrier, so the rate rises.",
+      "trap": "The energy barrier still exists without a change in mechanism.",
+      "mnemonic": "Compare the distribution of collision energies with the barrier.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At higher temperature, more particles have enough energy to overcome the activation barrier, so the rate rises."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The energy barrier still exists without a change in mechanism."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-118",
+      "subject": "chemistry",
+      "chapter": "8",
+      "topic": "Rates of Reaction",
+      "concept": "Heating and a food enzyme",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A food enzyme works at room temperature. After boiling and cooling, the same enzyme no longer works. What is the most likely reason?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boiling changed the shape of its active site",
+          "why": "High heat can denature an enzyme so its active site no longer binds the substrate properly, even after cooling.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The reaction has permanently run out of substrate",
+          "why": "The question concerns enzyme activity after heating, with substrate available for testing.",
+          "whyWrong": "The question concerns enzyme activity after heating, with substrate available for testing."
+        },
+        {
+          "id": "c",
+          "text": "The enzyme has become a fuel",
+          "why": "Heating did not change its function into an energy source for the reaction.",
+          "whyWrong": "Heating did not change its function into an energy source for the reaction."
+        },
+        {
+          "id": "d",
+          "text": "Cooling permanently removed all motion of the molecules",
+          "why": "Molecules still move at room temperature.",
+          "whyWrong": "Molecules still move at room temperature."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Consider what high heat can do to protein shape.",
+      "explanation": "High heat can denature an enzyme so its active site no longer binds the substrate properly, even after cooling.",
+      "trap": "The question concerns enzyme activity after heating, with substrate available for testing.",
+      "mnemonic": "Consider what high heat can do to protein shape.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "High heat can denature an enzyme so its active site no longer binds the substrate properly, even after cooling."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The question concerns enzyme activity after heating, with substrate available for testing."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-119",
+      "subject": "chemistry",
+      "chapter": "9",
+      "topic": "Chemical Equilibrium",
+      "concept": "Adding a pure solid at equilibrium",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A gas is in equilibrium with its pure solid in a sealed vessel. At constant temperature and fixed gas volume, more of the same solid is added. What happens to the equilibrium pressure of the gas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It stays the same",
+          "why": "At a fixed temperature, the equilibrium gas pressure is fixed while the pure solid phase is present.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "It doubles regardless of the amount of solid",
+          "why": "The equilibrium pressure does not scale with the amount of solid.",
+          "whyWrong": "The equilibrium pressure does not scale with the amount of solid."
+        },
+        {
+          "id": "c",
+          "text": "It falls to zero",
+          "why": "Gas remains present in equilibrium with the solid.",
+          "whyWrong": "Gas remains present in equilibrium with the solid."
+        },
+        {
+          "id": "d",
+          "text": "It increases until all the solid becomes gas",
+          "why": "Adding solid does not require that the original solid phase disappear.",
+          "whyWrong": "Adding solid does not require that the original solid phase disappear."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Ask whether adding more of the pure solid changes the equilibrium expression.",
+      "explanation": "At a fixed temperature, the equilibrium gas pressure is fixed while the pure solid phase is present.",
+      "trap": "The equilibrium pressure does not scale with the amount of solid.",
+      "mnemonic": "Ask whether adding more of the pure solid changes the equilibrium expression.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At a fixed temperature, the equilibrium gas pressure is fixed while the pure solid phase is present."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The equilibrium pressure does not scale with the amount of solid."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-120",
+      "subject": "chemistry",
+      "chapter": "9",
+      "topic": "Chemical Equilibrium",
+      "concept": "Dilution and solubility equilibrium",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Solid salt remains in contact with its saturated aqueous solution. A little pure water is added at the same temperature, and there is still solid present after equilibrium is restored. What happens?",
+      "options": [
+        {
+          "id": "a",
+          "text": "More solid must accumulate",
+          "why": "Dilution initially makes the solution less than saturated.",
+          "whyWrong": "Dilution initially makes the solution less than saturated."
+        },
+        {
+          "id": "b",
+          "text": "Every particle of the solid must disappear",
+          "why": "The question states that some solid remains.",
+          "whyWrong": "The question states that some solid remains."
+        },
+        {
+          "id": "c",
+          "text": "The solvent stops interacting with the solute",
+          "why": "Water still dissolves some of the solute.",
+          "whyWrong": "Water still dissolves some of the solute."
+        },
+        {
+          "id": "d",
+          "text": "Some of the solid dissolves",
+          "why": "Adding water lowers the dissolved concentration. Some solid dissolves until saturation is reached again at the same temperature.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Ask whether the solution is saturated immediately after dilution.",
+      "explanation": "Adding water lowers the dissolved concentration. Some solid dissolves until saturation is reached again at the same temperature.",
+      "trap": "Dilution initially makes the solution less than saturated.",
+      "mnemonic": "Ask whether the solution is saturated immediately after dilution.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Adding water lowers the dissolved concentration. Some solid dissolves until saturation is reached again at the same temperature."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Dilution initially makes the solution less than saturated."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-121",
+      "subject": "chemistry",
+      "chapter": "10",
+      "topic": "Air",
+      "concept": "Oxygen in lower-pressure air",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The percentage of oxygen in two air samples is the same. One sample is at lower total pressure. Why does it contain fewer oxygen molecules in the same volume at the same temperature?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The lower-pressure sample contains fewer molecules altogether",
+          "why": "When temperature and volume are fixed, gas at lower pressure has fewer particles, so the same oxygen fraction represents fewer oxygen molecules.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The lower-pressure sample has a larger percentage of oxygen",
+          "why": "The percentages are stated to be the same.",
+          "whyWrong": "The percentages are stated to be the same."
+        },
+        {
+          "id": "c",
+          "text": "Lower pressure changes oxygen into nitrogen",
+          "why": "Pressure does not change the chemical identity of the molecules.",
+          "whyWrong": "Pressure does not change the chemical identity of the molecules."
+        },
+        {
+          "id": "d",
+          "text": "The oxygen molecules shrink as pressure falls",
+          "why": "The molecules keep their identity and their size is not the cause.",
+          "whyWrong": "The molecules keep their identity and their size is not the cause."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Keep percentage and total number separate.",
+      "explanation": "When temperature and volume are fixed, gas at lower pressure has fewer particles, so the same oxygen fraction represents fewer oxygen molecules.",
+      "trap": "The percentages are stated to be the same.",
+      "mnemonic": "Keep percentage and total number separate.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "When temperature and volume are fixed, gas at lower pressure has fewer particles, so the same oxygen fraction represents fewer oxygen molecules."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The percentages are stated to be the same."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-122",
+      "subject": "chemistry",
+      "chapter": "10",
+      "topic": "Air",
+      "concept": "Argon around a hot filament",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In a filament lamp designed with a gas filling, why is argon suitable for surrounding the hot tungsten filament?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It supplies oxygen to keep the filament burning",
+          "why": "Oxidation would damage the tungsten filament.",
+          "whyWrong": "Oxidation would damage the tungsten filament."
+        },
+        {
+          "id": "b",
+          "text": "It readily reacts to form a tungsten coating",
+          "why": "Argon is a noble gas and is very unreactive.",
+          "whyWrong": "Argon is a noble gas and is very unreactive."
+        },
+        {
+          "id": "c",
+          "text": "It makes tungsten glow by consuming it",
+          "why": "Electrical heating makes the filament glow.",
+          "whyWrong": "Electrical heating makes the filament glow."
+        },
+        {
+          "id": "d",
+          "text": "It is unreactive and helps keep oxygen away from the filament",
+          "why": "Argon provides an inert atmosphere around the filament, reducing oxidation by air.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Consider which gas can sit beside hot metal without reacting appreciably.",
+      "explanation": "Argon provides an inert atmosphere around the filament, reducing oxidation by air.",
+      "trap": "Oxidation would damage the tungsten filament.",
+      "mnemonic": "Consider which gas can sit beside hot metal without reacting appreciably.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Argon provides an inert atmosphere around the filament, reducing oxidation by air."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Oxidation would damage the tungsten filament."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-123",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Reading saturation from a curve",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A point for a stable, clear salt solution lies below the salt's solubility curve at the stated temperature. What does this mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The solution can dissolve more of the salt at that temperature",
+          "why": "The curve shows the saturation limit at that temperature. A lower concentration is unsaturated.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The solution must be saturated",
+          "why": "A saturated point lies on the curve.",
+          "whyWrong": "A saturated point lies on the curve."
+        },
+        {
+          "id": "c",
+          "text": "The solution contains more dissolved salt than its equilibrium limit",
+          "why": "That would place the point above the curve.",
+          "whyWrong": "That would place the point above the curve."
+        },
+        {
+          "id": "d",
+          "text": "The solvent is necessarily pure water with no dissolved salt",
+          "why": "A below-curve point can still represent dissolved solute.",
+          "whyWrong": "A below-curve point can still represent dissolved solute."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Read the curve as a boundary for how much solute can remain dissolved.",
+      "explanation": "The curve shows the saturation limit at that temperature. A lower concentration is unsaturated.",
+      "trap": "A saturated point lies on the curve.",
+      "mnemonic": "Read the curve as a boundary for how much solute can remain dissolved.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The curve shows the saturation limit at that temperature. A lower concentration is unsaturated."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A saturated point lies on the curve."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-124",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Water of crystallisation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Some blue copper(II) sulfate crystals lose their colour when gently heated and turn blue again when water is added. What does this show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heating removes all the copper from the solid",
+          "why": "Adding water cannot replace copper that was removed.",
+          "whyWrong": "Adding water cannot replace copper that was removed."
+        },
+        {
+          "id": "b",
+          "text": "The solid was originally a mixture of blue paint and water",
+          "why": "The change is the reversible dehydration and hydration of the salt.",
+          "whyWrong": "The change is the reversible dehydration and hydration of the salt."
+        },
+        {
+          "id": "c",
+          "text": "The blue crystalline form contains water associated with its structure",
+          "why": "Heating a hydrated salt drives off water of crystallisation; adding water can restore the hydrated form and colour.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Water permanently destroys copper(II) sulfate",
+          "why": "Adding water restores the characteristic blue hydrated form.",
+          "whyWrong": "Adding water restores the characteristic blue hydrated form."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Link the reversible colour change with gain or loss of water.",
+      "explanation": "Heating a hydrated salt drives off water of crystallisation; adding water can restore the hydrated form and colour.",
+      "trap": "Adding water cannot replace copper that was removed.",
+      "mnemonic": "Link the reversible colour change with gain or loss of water.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Heating a hydrated salt drives off water of crystallisation; adding water can restore the hydrated form and colour."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Adding water cannot replace copper that was removed."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-125",
+      "subject": "chemistry",
+      "chapter": "11",
+      "topic": "Water and Solubility",
+      "concept": "Solubility of gases",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does a warm fizzy drink tend to lose its fizz more quickly after opening than the same drink kept cold?",
+      "options": [
+        {
+          "id": "a",
+          "text": "More carbon dioxide must dissolve when the liquid warms",
+          "why": "The solubility of this gas generally decreases as temperature rises.",
+          "whyWrong": "The solubility of this gas generally decreases as temperature rises."
+        },
+        {
+          "id": "b",
+          "text": "The syrup turns all the gas into a solid",
+          "why": "The fizz comes from bubbles of gas leaving the liquid.",
+          "whyWrong": "The fizz comes from bubbles of gas leaving the liquid."
+        },
+        {
+          "id": "c",
+          "text": "Carbon dioxide is generally less soluble in the warmer liquid",
+          "why": "At the same external pressure the warmer drink can hold less dissolved carbon dioxide, which can leave as bubbles.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The warmer drink has no molecules moving at its surface",
+          "why": "Molecular motion is greater, not absent, in the warmer drink.",
+          "whyWrong": "Molecular motion is greater, not absent, in the warmer drink."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare how readily the liquid retains its dissolved gas.",
+      "explanation": "At the same external pressure the warmer drink can hold less dissolved carbon dioxide, which can leave as bubbles.",
+      "trap": "The solubility of this gas generally decreases as temperature rises.",
+      "mnemonic": "Compare how readily the liquid retains its dissolved gas.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At the same external pressure the warmer drink can hold less dissolved carbon dioxide, which can leave as bubbles."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The solubility of this gas generally decreases as temperature rises."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-126",
+      "subject": "chemistry",
+      "chapter": "12",
+      "topic": "Environmental Pollution",
+      "concept": "Particulate removal and dissolved impurities",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A filter removes visible silt from water containing dissolved sodium chloride. Why can the clear filtrate still contain the salt?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The filter converts all silt directly into sodium chloride",
+          "why": "Filtration does not create a new salt.",
+          "whyWrong": "Filtration does not create a new salt."
+        },
+        {
+          "id": "b",
+          "text": "Clear water cannot contain dissolved ions",
+          "why": "Dissolved substances can be present in transparent solutions.",
+          "whyWrong": "Dissolved substances can be present in transparent solutions."
+        },
+        {
+          "id": "c",
+          "text": "Dissolved sodium and chloride ions pass through an ordinary particle filter",
+          "why": "Ordinary filtration traps suspended particles. It does not separate dissolved ions from water.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Sodium chloride can leave only if every water molecule leaves first",
+          "why": "Water and dissolved ions can pass through the same filter.",
+          "whyWrong": "Water and dissolved ions can pass through the same filter."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Distinguish the size and form of suspended particles from dissolved ions.",
+      "explanation": "Ordinary filtration traps suspended particles. It does not separate dissolved ions from water.",
+      "trap": "Filtration does not create a new salt.",
+      "mnemonic": "Distinguish the size and form of suspended particles from dissolved ions.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ordinary filtration traps suspended particles. It does not separate dissolved ions from water."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Filtration does not create a new salt."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-127",
+      "subject": "chemistry",
+      "chapter": "12",
+      "topic": "Environmental Pollution",
+      "concept": "Controlling carbon monoxide emissions",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What happens to much of the carbon monoxide passing through a working automotive catalytic converter designed to oxidise it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes into nitrogen without a reaction partner",
+          "why": "Oxidation cannot turn carbon atoms into nitrogen atoms.",
+          "whyWrong": "Oxidation cannot turn carbon atoms into nitrogen atoms."
+        },
+        {
+          "id": "b",
+          "text": "It becomes more carbon monoxide by gaining oxygen",
+          "why": "Gaining oxygen forms a more oxidised carbon oxide.",
+          "whyWrong": "Gaining oxygen forms a more oxidised carbon oxide."
+        },
+        {
+          "id": "c",
+          "text": "It is broken into uncombined carbon and oxygen as the main oxidation process",
+          "why": "Oxidation adds oxygen to carbon monoxide rather than splitting it.",
+          "whyWrong": "Oxidation adds oxygen to carbon monoxide rather than splitting it."
+        },
+        {
+          "id": "d",
+          "text": "It is converted to carbon dioxide",
+          "why": "Oxidising carbon monoxide adds oxygen to give carbon dioxide and reduces the amount of carbon monoxide emitted.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify the carbon oxide with more oxygen per carbon.",
+      "explanation": "Oxidising carbon monoxide adds oxygen to give carbon dioxide and reduces the amount of carbon monoxide emitted.",
+      "trap": "Oxidation cannot turn carbon atoms into nitrogen atoms.",
+      "mnemonic": "Identify the carbon oxide with more oxygen per carbon.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Oxidising carbon monoxide adds oxygen to give carbon dioxide and reduces the amount of carbon monoxide emitted."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Oxidation cannot turn carbon atoms into nitrogen atoms."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-128",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "Ammonium salts in water",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can an aqueous solution of ammonium chloride be acidic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ammonium ions donate protons to water",
+          "why": "Ammonium is the conjugate acid of ammonia. It transfers a proton to water, forming some hydronium.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Chloride ions release hydroxide ions in large amounts",
+          "why": "Chloride is a very weak base in water.",
+          "whyWrong": "Chloride is a very weak base in water."
+        },
+        {
+          "id": "c",
+          "text": "Ammonium ions keep all the water from ionising",
+          "why": "The ammonium ion reacts with water rather than preventing all ionisation.",
+          "whyWrong": "The ammonium ion reacts with water rather than preventing all ionisation."
+        },
+        {
+          "id": "d",
+          "text": "Solid ammonium chloride produces pure chlorine before dissolving",
+          "why": "The salt dissociates into ammonium and chloride ions.",
+          "whyWrong": "The salt dissociates into ammonium and chloride ions."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the dissolved ion that can act as a proton donor.",
+      "explanation": "Ammonium is the conjugate acid of ammonia. It transfers a proton to water, forming some hydronium.",
+      "trap": "Chloride is a very weak base in water.",
+      "mnemonic": "Identify the dissolved ion that can act as a proton donor.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ammonium is the conjugate acid of ammonia. It transfers a proton to water, forming some hydronium."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Chloride is a very weak base in water."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-129",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "Weak acid and strong base at equivalence",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can the solution be alkaline at the equivalence point when a weak monoprotic acid is titrated with a strong base?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Excess strong base is required by the definition of equivalence",
+          "why": "Equivalence means the stoichiometric amounts have reacted.",
+          "whyWrong": "Equivalence means the stoichiometric amounts have reacted."
+        },
+        {
+          "id": "b",
+          "text": "Every acid–base equivalence point must have neutral pH",
+          "why": "The salt ions can influence the pH.",
+          "whyWrong": "The salt ions can influence the pH."
+        },
+        {
+          "id": "c",
+          "text": "The weak acid becomes a strong acid as it is neutralised",
+          "why": "Its conjugate base is the species that helps establish the alkaline pH.",
+          "whyWrong": "Its conjugate base is the species that helps establish the alkaline pH."
+        },
+        {
+          "id": "d",
+          "text": "The acid's conjugate base reacts with water to form some hydroxide ions",
+          "why": "The conjugate base left after neutralisation can accept a proton from water, producing hydroxide ions.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Consider what is left in solution after the stoichiometric reaction.",
+      "explanation": "The conjugate base left after neutralisation can accept a proton from water, producing hydroxide ions.",
+      "trap": "Equivalence means the stoichiometric amounts have reacted.",
+      "mnemonic": "Consider what is left in solution after the stoichiometric reaction.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The conjugate base left after neutralisation can accept a proton from water, producing hydroxide ions."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Equivalence means the stoichiometric amounts have reacted."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-130",
+      "subject": "chemistry",
+      "chapter": "13",
+      "topic": "Acids, Bases and Salts",
+      "concept": "Strong acid dilution",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A dilute strong acid is made more dilute by adding pure water. What directly explains the rise in its pH?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The acid must become a weak acid",
+          "why": "Dilution changes concentration, not the identity of the acid.",
+          "whyWrong": "Dilution changes concentration, not the identity of the acid."
+        },
+        {
+          "id": "b",
+          "text": "Hydronium ions are spread through a larger volume, reducing their concentration",
+          "why": "When hydronium concentration falls upon dilution, the pH rises towards that of the solvent.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The water necessarily adds more acid ions than were present before",
+          "why": "The net hydronium concentration falls.",
+          "whyWrong": "The net hydronium concentration falls."
+        },
+        {
+          "id": "d",
+          "text": "Dilution removes all hydrogen from the solution",
+          "why": "The solution still contains hydrogen atoms and solvated ions.",
+          "whyWrong": "The solution still contains hydrogen atoms and solvated ions."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish the strength of an acid from the concentration of its solution.",
+      "explanation": "When hydronium concentration falls upon dilution, the pH rises towards that of the solvent.",
+      "trap": "Dilution changes concentration, not the identity of the acid.",
+      "mnemonic": "Distinguish the strength of an acid from the concentration of its solution.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "When hydronium concentration falls upon dilution, the pH rises towards that of the solvent."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Dilution changes concentration, not the identity of the acid."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-131",
+      "subject": "chemistry",
+      "chapter": "14",
+      "topic": "Oxidation and Reduction",
+      "concept": "Oxidation and mass",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A strip of copper is heated in air and develops a layer of copper oxide. Why can the strip and its coating together have a greater mass than the original strip?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oxygen from the air has combined with the copper",
+          "why": "The coating contains copper and oxygen. The extra mass came from oxygen taken in from the surrounding air.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Copper atoms have gained extra protons from the flame",
+          "why": "Ordinary oxidation does not change the copper nuclei.",
+          "whyWrong": "Ordinary oxidation does not change the copper nuclei."
+        },
+        {
+          "id": "c",
+          "text": "The scale measures only the original copper atoms",
+          "why": "The coating adds oxygen atoms to the mass being measured.",
+          "whyWrong": "The coating adds oxygen atoms to the mass being measured."
+        },
+        {
+          "id": "d",
+          "text": "The copper has become denser without taking up any new matter",
+          "why": "Density changes alone cannot increase the mass of retained material.",
+          "whyWrong": "Density changes alone cannot increase the mass of retained material."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Include material that joined the copper from outside.",
+      "explanation": "The coating contains copper and oxygen. The extra mass came from oxygen taken in from the surrounding air.",
+      "trap": "Ordinary oxidation does not change the copper nuclei.",
+      "mnemonic": "Include material that joined the copper from outside.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The coating contains copper and oxygen. The extra mass came from oxygen taken in from the surrounding air."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Ordinary oxidation does not change the copper nuclei."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-132",
+      "subject": "chemistry",
+      "chapter": "14",
+      "topic": "Oxidation and Reduction",
+      "concept": "Recognising a non-redox reaction",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which change takes place without a change in oxidation state of the named elements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iron combining with oxygen to form an oxide",
+          "why": "Iron is oxidised, and oxygen is reduced.",
+          "whyWrong": "Iron is oxidised, and oxygen is reduced."
+        },
+        {
+          "id": "b",
+          "text": "Silver ions gaining electrons to produce silver metal",
+          "why": "Silver is reduced as it gains electrons.",
+          "whyWrong": "Silver is reduced as it gains electrons."
+        },
+        {
+          "id": "c",
+          "text": "Copper losing electrons to form copper ions",
+          "why": "Electron loss is oxidation.",
+          "whyWrong": "Electron loss is oxidation."
+        },
+        {
+          "id": "d",
+          "text": "Hydrochloric acid neutralising sodium hydroxide",
+          "why": "Ordinary acid–base neutralisation transfers protons without changing the oxidation states of the elements involved.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Check whether electrons are gained or lost in forming the products.",
+      "explanation": "Ordinary acid–base neutralisation transfers protons without changing the oxidation states of the elements involved.",
+      "trap": "Iron is oxidised, and oxygen is reduced.",
+      "mnemonic": "Check whether electrons are gained or lost in forming the products.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ordinary acid–base neutralisation transfers protons without changing the oxidation states of the elements involved."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Iron is oxidised, and oxygen is reduced."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-133",
+      "subject": "chemistry",
+      "chapter": "15",
+      "topic": "Electrolysis",
+      "concept": "Aqueous versus molten electrolyte",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can the products of electrolysis differ for an aqueous salt solution and the same salt when molten?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Molten salts contain no ions",
+          "why": "Their ions become mobile when the lattice melts.",
+          "whyWrong": "Their ions become mobile when the lattice melts."
+        },
+        {
+          "id": "b",
+          "text": "Electrodes can contact only solids in the aqueous cell",
+          "why": "The electrodes are in contact with the solution.",
+          "whyWrong": "The electrodes are in contact with the solution."
+        },
+        {
+          "id": "c",
+          "text": "Every dissolved salt is turned into neutral atoms before electrolysis starts",
+          "why": "Dissolved salts can supply mobile ions as soon as they dissolve.",
+          "whyWrong": "Dissolved salts can supply mobile ions as soon as they dissolve."
+        },
+        {
+          "id": "d",
+          "text": "Water in the solution can participate in electrode reactions",
+          "why": "In an aqueous cell, water and its acid–base species may compete with salt ions at the electrodes. Molten salts contain no water.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Check what is available in the solution besides the dissolved salt.",
+      "explanation": "In an aqueous cell, water and its acid–base species may compete with salt ions at the electrodes. Molten salts contain no water.",
+      "trap": "Their ions become mobile when the lattice melts.",
+      "mnemonic": "Check what is available in the solution besides the dissolved salt.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "In an aqueous cell, water and its acid–base species may compete with salt ions at the electrodes. Molten salts contain no water."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Their ions become mobile when the lattice melts."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-134",
+      "subject": "chemistry",
+      "chapter": "15",
+      "topic": "Electrolysis",
+      "concept": "Metal deposition and electron transfer",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A clean inert cathode becomes heavier while a dissolved metal is plated onto it. What happened to the dissolved metal cations that deposited?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They lost electrons at the cathode",
+          "why": "The cathode is the site of reduction.",
+          "whyWrong": "The cathode is the site of reduction."
+        },
+        {
+          "id": "b",
+          "text": "They remained dissolved as ions while adding mass to the dry cathode",
+          "why": "A retained metal coating is solid material on the surface.",
+          "whyWrong": "A retained metal coating is solid material on the surface."
+        },
+        {
+          "id": "c",
+          "text": "They became chloride ions without changing the electrode reaction",
+          "why": "The identity of the metal element does not change.",
+          "whyWrong": "The identity of the metal element does not change."
+        },
+        {
+          "id": "d",
+          "text": "They gained electrons and became neutral metal atoms",
+          "why": "Electrons from the external circuit reduce the metal cations. The resulting metal remains on the cathode as a coating.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Follow where the electrons supply the new coating.",
+      "explanation": "Electrons from the external circuit reduce the metal cations. The resulting metal remains on the cathode as a coating.",
+      "trap": "The cathode is the site of reduction.",
+      "mnemonic": "Follow where the electrons supply the new coating.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Electrons from the external circuit reduce the metal cations. The resulting metal remains on the cathode as a coating."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The cathode is the site of reduction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-135",
+      "subject": "chemistry",
+      "chapter": "16",
+      "topic": "Non-metals and their Compounds",
+      "concept": "Activated carbon and adsorption",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can activated carbon remove some coloured impurities from water?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The porous carbon provides a large surface on which the impurities can adsorb",
+          "why": "Activated carbon has many pores, giving it a large surface where some dissolved molecules can attach.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The carbon necessarily dissolves all the impurities to give colourless gases",
+          "why": "Removal can occur by retention at the surface, without making gases.",
+          "whyWrong": "Removal can occur by retention at the surface, without making gases."
+        },
+        {
+          "id": "c",
+          "text": "The water turns the carbon into an acid that destroys every dye",
+          "why": "The effect does not require universal reaction with an acid.",
+          "whyWrong": "The effect does not require universal reaction with an acid."
+        },
+        {
+          "id": "d",
+          "text": "The carbon repels all impurity molecules away from its surface",
+          "why": "Purification requires some of the impurity molecules to adhere to its surface.",
+          "whyWrong": "Purification requires some of the impurity molecules to adhere to its surface."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish adsorption at a surface from absorption into the bulk.",
+      "explanation": "Activated carbon has many pores, giving it a large surface where some dissolved molecules can attach.",
+      "trap": "Removal can occur by retention at the surface, without making gases.",
+      "mnemonic": "Distinguish adsorption at a surface from absorption into the bulk.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Activated carbon has many pores, giving it a large surface where some dissolved molecules can attach."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Removal can occur by retention at the surface, without making gases."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-136",
+      "subject": "chemistry",
+      "chapter": "16",
+      "topic": "Non-metals and their Compounds",
+      "concept": "Solubility of ammonia",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is ammonia much more soluble in water than nitrogen gas under comparable conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nitrogen reacts completely with water to form ammonia",
+          "why": "Ordinary dissolution of nitrogen does not make ammonia.",
+          "whyWrong": "Ordinary dissolution of nitrogen does not make ammonia."
+        },
+        {
+          "id": "b",
+          "text": "Ammonia interacts strongly with water and some of it reacts as a base",
+          "why": "Ammonia can hydrogen-bond with water and establish an equilibrium involving ammonium and hydroxide ions. Nitrogen lacks these interactions.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Ammonia cannot interact with polar molecules",
+          "why": "Ammonia is polar and can hydrogen-bond with water.",
+          "whyWrong": "Ammonia is polar and can hydrogen-bond with water."
+        },
+        {
+          "id": "d",
+          "text": "Both are identical molecules once they enter water",
+          "why": "They retain their different compositions and interactions.",
+          "whyWrong": "They retain their different compositions and interactions."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare how the two gases interact with polar water.",
+      "explanation": "Ammonia can hydrogen-bond with water and establish an equilibrium involving ammonium and hydroxide ions. Nitrogen lacks these interactions.",
+      "trap": "Ordinary dissolution of nitrogen does not make ammonia.",
+      "mnemonic": "Compare how the two gases interact with polar water.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ammonia can hydrogen-bond with water and establish an equilibrium involving ammonium and hydroxide ions. Nitrogen lacks these interactions."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Ordinary dissolution of nitrogen does not make ammonia."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-137",
+      "subject": "chemistry",
+      "chapter": "16",
+      "topic": "Non-metals and their Compounds",
+      "concept": "Reactivity of nitrogen molecules",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does nitrogen gas usually require more severe conditions to react than oxygen gas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Breaking the very strong triple bond in N₂ requires a great deal of energy",
+          "why": "Molecular nitrogen is relatively unreactive because the triple bond between its two atoms is very strong.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Nitrogen gas consists of individual atoms with no bonds",
+          "why": "The gas is made mostly of N₂ molecules.",
+          "whyWrong": "The gas is made mostly of N₂ molecules."
+        },
+        {
+          "id": "c",
+          "text": "Nitrogen has no outer-shell electrons",
+          "why": "Nitrogen atoms have valence electrons.",
+          "whyWrong": "Nitrogen atoms have valence electrons."
+        },
+        {
+          "id": "d",
+          "text": "Nitrogen molecules weigh much more than oxygen molecules",
+          "why": "N₂ has a lower molar mass than O₂.",
+          "whyWrong": "N₂ has a lower molar mass than O₂."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the strength of the bonds that must be disrupted.",
+      "explanation": "Molecular nitrogen is relatively unreactive because the triple bond between its two atoms is very strong.",
+      "trap": "The gas is made mostly of N₂ molecules.",
+      "mnemonic": "Compare the strength of the bonds that must be disrupted.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Molecular nitrogen is relatively unreactive because the triple bond between its two atoms is very strong."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The gas is made mostly of N₂ molecules."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-138",
+      "subject": "chemistry",
+      "chapter": "17",
+      "topic": "Metals and their Compounds",
+      "concept": "Protection at a scratch",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can a zinc coating still protect steel near a small scratch that exposes the iron in a damp environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iron always oxidises first because it is less reactive than zinc",
+          "why": "Under these conditions the more reactive zinc can be consumed in preference to iron.",
+          "whyWrong": "Under these conditions the more reactive zinc can be consumed in preference to iron."
+        },
+        {
+          "id": "b",
+          "text": "Zinc can oxidise preferentially and act as a sacrificial metal",
+          "why": "Zinc supplies electrons as it oxidises, reducing the tendency of nearby exposed iron to oxidise.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The exposed metal becomes pure zinc merely by getting wet",
+          "why": "The exposed steel stays iron-rich.",
+          "whyWrong": "The exposed steel stays iron-rich."
+        },
+        {
+          "id": "d",
+          "text": "Zinc provides protection only when it repels every water molecule",
+          "why": "Electrical contact and an electrolyte can allow sacrificial protection near a scratch.",
+          "whyWrong": "Electrical contact and an electrolyte can allow sacrificial protection near a scratch."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish protection by a barrier from protection by preferential oxidation.",
+      "explanation": "Zinc supplies electrons as it oxidises, reducing the tendency of nearby exposed iron to oxidise.",
+      "trap": "Under these conditions the more reactive zinc can be consumed in preference to iron.",
+      "mnemonic": "Distinguish protection by a barrier from protection by preferential oxidation.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Zinc supplies electrons as it oxidises, reducing the tendency of nearby exposed iron to oxidise."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Under these conditions the more reactive zinc can be consumed in preference to iron."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-139",
+      "subject": "chemistry",
+      "chapter": "17",
+      "topic": "Metals and their Compounds",
+      "concept": "Flame-test interference",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In a flame test, why can a small sodium impurity make it hard to see a potassium flame colour?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sodium converts all the potassium atoms into sodium atoms",
+          "why": "Flame tests involve electronic changes, not transmutation.",
+          "whyWrong": "Flame tests involve electronic changes, not transmutation."
+        },
+        {
+          "id": "b",
+          "text": "Potassium cannot emit light if any other ion is present",
+          "why": "Its emission can still occur but be hard to see.",
+          "whyWrong": "Its emission can still occur but be hard to see."
+        },
+        {
+          "id": "c",
+          "text": "Sodium always gives a blue emission that cancels violet light",
+          "why": "Sodium's characteristic visible flame emission is yellow.",
+          "whyWrong": "Sodium's characteristic visible flame emission is yellow."
+        },
+        {
+          "id": "d",
+          "text": "The bright yellow sodium emission can mask the weaker lilac potassium colour",
+          "why": "A strong yellow signal can dominate what the eye sees when potassium is also present.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think about one colour being much more prominent than another.",
+      "explanation": "A strong yellow signal can dominate what the eye sees when potassium is also present.",
+      "trap": "Flame tests involve electronic changes, not transmutation.",
+      "mnemonic": "Think about one colour being much more prominent than another.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A strong yellow signal can dominate what the eye sees when potassium is also present."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Flame tests involve electronic changes, not transmutation."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-140",
+      "subject": "chemistry",
+      "chapter": "17",
+      "topic": "Metals and their Compounds",
+      "concept": "Visible colour of coordination solutions",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A clear coordination compound solution looks blue when white light passes through it. What accounts for the observed blue colour?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The solution converts every incoming wavelength to blue",
+          "why": "Selective absorption can account for the colour without converting light.",
+          "whyWrong": "Selective absorption can account for the colour without converting light."
+        },
+        {
+          "id": "b",
+          "text": "The solution absorbs more of some other visible wavelengths than it absorbs of blue light",
+          "why": "The solution absorbs parts of the incident light selectively. The light that reaches the eye has a stronger blue component.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The solution blocks all visible light",
+          "why": "A solution transmitting no visible light would look dark.",
+          "whyWrong": "A solution transmitting no visible light would look dark."
+        },
+        {
+          "id": "d",
+          "text": "The solution absorbs only blue light",
+          "why": "Removing blue would reduce the blue component of the transmitted light.",
+          "whyWrong": "Removing blue would reduce the blue component of the transmitted light."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about which visible wavelengths still reach the eye.",
+      "explanation": "The solution absorbs parts of the incident light selectively. The light that reaches the eye has a stronger blue component.",
+      "trap": "Selective absorption can account for the colour without converting light.",
+      "mnemonic": "Think about which visible wavelengths still reach the eye.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The solution absorbs parts of the incident light selectively. The light that reaches the eye has a stronger blue component."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Selective absorption can account for the colour without converting light."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, Spectroscopic and Magnetic Properties of Coordination Compounds, https://openstax.org/books/chemistry-2e/pages/19-3-spectroscopic-and-magnetic-properties-of-coordination-compounds.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-141",
+      "subject": "chemistry",
+      "chapter": "18",
+      "topic": "Introduction to Organic Chemistry",
+      "concept": "Restricted rotation in an alkene",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can suitable carbon–carbon double bonds show geometric isomerism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The carbon atoms have different atomic numbers",
+          "why": "Both atoms are carbon.",
+          "whyWrong": "Both atoms are carbon."
+        },
+        {
+          "id": "b",
+          "text": "Every alkene bond rotates completely freely without energy input",
+          "why": "Twisting disrupts the overlap that forms the second part of the double bond.",
+          "whyWrong": "Twisting disrupts the overlap that forms the second part of the double bond."
+        },
+        {
+          "id": "c",
+          "text": "Rotation about the double bond is restricted",
+          "why": "Restricted rotation allows substituents to remain in different arrangements. Each double-bond carbon must have two different substituents for this type of isomerism.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Double bonds always make the two atoms separate completely",
+          "why": "The double bond remains intact in both geometric isomers.",
+          "whyWrong": "The double bond remains intact in both geometric isomers."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare free rotation around many single bonds with rotation around a double bond.",
+      "explanation": "Restricted rotation allows substituents to remain in different arrangements. Each double-bond carbon must have two different substituents for this type of isomerism.",
+      "trap": "Both atoms are carbon.",
+      "mnemonic": "Compare free rotation around many single bonds with rotation around a double bond.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Restricted rotation allows substituents to remain in different arrangements. Each double-bond carbon must have two different substituents for this type of isomerism."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Both atoms are carbon."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-142",
+      "subject": "chemistry",
+      "chapter": "18",
+      "topic": "Introduction to Organic Chemistry",
+      "concept": "More than one functional group",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What functional groups are present in HOCH_{2}COOH, where the hydroxyl written at the left is separate from the COOH group?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An ester group and an amine group",
+          "why": "The formula shows neither the ester linkage nor a nitrogen atom.",
+          "whyWrong": "The formula shows neither the ester linkage nor a nitrogen atom."
+        },
+        {
+          "id": "b",
+          "text": "A ketone group and an ether group",
+          "why": "The carbonyl belongs to a carboxyl group, and the hydroxyl is not an ether bridge.",
+          "whyWrong": "The carbonyl belongs to a carboxyl group, and the hydroxyl is not an ether bridge."
+        },
+        {
+          "id": "c",
+          "text": "Two aldehyde groups",
+          "why": "Neither end is an aldehyde group.",
+          "whyWrong": "Neither end is an aldehyde group."
+        },
+        {
+          "id": "d",
+          "text": "An alcohol hydroxyl group and a carboxyl group",
+          "why": "The left-hand hydroxyl is attached to a saturated carbon, and the right-hand COOH is a carboxyl group.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Mark the separate oxygen-containing groups before naming them.",
+      "explanation": "The left-hand hydroxyl is attached to a saturated carbon, and the right-hand COOH is a carboxyl group.",
+      "trap": "The formula shows neither the ester linkage nor a nitrogen atom.",
+      "mnemonic": "Mark the separate oxygen-containing groups before naming them.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The left-hand hydroxyl is attached to a saturated carbon, and the right-hand COOH is a carboxyl group."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The formula shows neither the ester linkage nor a nitrogen atom."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-143",
+      "subject": "chemistry",
+      "chapter": "19",
+      "topic": "Hydrocarbons",
+      "concept": "Fractionation versus cracking",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What distinguishes fractional distillation of petroleum from cracking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both processes always turn all the oil into one compound",
+          "why": "Fractionating produces several fractions, and cracking commonly gives several products.",
+          "whyWrong": "Fractionating produces several fractions, and cracking commonly gives several products."
+        },
+        {
+          "id": "b",
+          "text": "Fractional distillation requires breaking carbon–carbon bonds to separate fractions",
+          "why": "The fractions are separated by different boiling ranges.",
+          "whyWrong": "The fractions are separated by different boiling ranges."
+        },
+        {
+          "id": "c",
+          "text": "Fractional distillation separates molecules already present; cracking changes their molecules",
+          "why": "Fractional distillation is a physical separation. Cracking is a chemical process that makes smaller hydrocarbon molecules from larger ones.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Cracking sorts unchanged molecules by boiling point alone",
+          "why": "Cracking involves chemical bond changes.",
+          "whyWrong": "Cracking involves chemical bond changes."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Ask whether the molecules retain their original structures.",
+      "explanation": "Fractional distillation is a physical separation. Cracking is a chemical process that makes smaller hydrocarbon molecules from larger ones.",
+      "trap": "Fractionating produces several fractions, and cracking commonly gives several products.",
+      "mnemonic": "Ask whether the molecules retain their original structures.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Fractional distillation is a physical separation. Cracking is a chemical process that makes smaller hydrocarbon molecules from larger ones."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Fractionating produces several fractions, and cracking commonly gives several products."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-144",
+      "subject": "chemistry",
+      "chapter": "19",
+      "topic": "Hydrocarbons",
+      "concept": "Hydrogenation of an alkene",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What structural change occurs when propene is completely hydrogenated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A carbon atom is removed from the chain",
+          "why": "Hydrogenation keeps the carbon skeleton in this example.",
+          "whyWrong": "Hydrogenation keeps the carbon skeleton in this example."
+        },
+        {
+          "id": "b",
+          "text": "Its carbon–carbon double bond becomes a single bond as hydrogen adds",
+          "why": "Hydrogen adds across the carbon–carbon double bond to form saturated propane.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Its carbon–carbon double bond becomes a triple bond",
+          "why": "Adding hydrogen reduces unsaturation.",
+          "whyWrong": "Adding hydrogen reduces unsaturation."
+        },
+        {
+          "id": "d",
+          "text": "It gains a carbon–oxygen double bond",
+          "why": "Hydrogenation does not supply oxygen.",
+          "whyWrong": "Hydrogenation does not supply oxygen."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow the atoms added to the two carbons of the original double bond.",
+      "explanation": "Hydrogen adds across the carbon–carbon double bond to form saturated propane.",
+      "trap": "Hydrogenation keeps the carbon skeleton in this example.",
+      "mnemonic": "Follow the atoms added to the two carbons of the original double bond.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Hydrogen adds across the carbon–carbon double bond to form saturated propane."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Hydrogenation keeps the carbon skeleton in this example."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-145",
+      "subject": "chemistry",
+      "chapter": "20",
+      "topic": "Alkanols, Alkanoic Acids and Esters",
+      "concept": "Alcohol chain length and water",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is pentan-1-ol much less soluble in water than ethanol under similar conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It lacks an OH group",
+          "why": "Both compounds are alcohols and contain an OH group.",
+          "whyWrong": "Both compounds are alcohols and contain an OH group."
+        },
+        {
+          "id": "b",
+          "text": "It consists of mobile sodium and chloride ions",
+          "why": "Both are molecular compounds, not ionic salts.",
+          "whyWrong": "Both are molecular compounds, not ionic salts."
+        },
+        {
+          "id": "c",
+          "text": "Ethanol cannot form hydrogen bonds with water",
+          "why": "Its OH group can interact strongly with water.",
+          "whyWrong": "Its OH group can interact strongly with water."
+        },
+        {
+          "id": "d",
+          "text": "Its larger non-polar carbon chain makes mixing with water less favourable",
+          "why": "Both alcohols can hydrogen-bond with water, but the longer hydrocarbon part of pentan-1-ol reduces overall water compatibility.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare what is the same in the two molecules with the part that grows.",
+      "explanation": "Both alcohols can hydrogen-bond with water, but the longer hydrocarbon part of pentan-1-ol reduces overall water compatibility.",
+      "trap": "Both compounds are alcohols and contain an OH group.",
+      "mnemonic": "Compare what is the same in the two molecules with the part that grows.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Both alcohols can hydrogen-bond with water, but the longer hydrocarbon part of pentan-1-ol reduces overall water compatibility."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Both compounds are alcohols and contain an OH group."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-146",
+      "subject": "chemistry",
+      "chapter": "20",
+      "topic": "Alkanols, Alkanoic Acids and Esters",
+      "concept": "Removing water during esterification",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "For a reversible esterification that produces an ester and water, why can selectively removing some water favour ester formation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It speeds only the reverse reaction permanently",
+          "why": "Removing a product tends to favour its replacement.",
+          "whyWrong": "Removing a product tends to favour its replacement."
+        },
+        {
+          "id": "b",
+          "text": "It shifts the equilibrium towards replacing the removed product",
+          "why": "Water is one of the products. Its removal can shift the equilibrium towards further formation of ester and water.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It changes the identities of the acid and alcohol before they react",
+          "why": "The starting molecules remain the acid and alcohol.",
+          "whyWrong": "The starting molecules remain the acid and alcohol."
+        },
+        {
+          "id": "d",
+          "text": "It makes it impossible for any ester molecules to exist",
+          "why": "Removing water can favour the ester-containing side.",
+          "whyWrong": "Removing water can favour the ester-containing side."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Treat water as a product being removed from an equilibrium.",
+      "explanation": "Water is one of the products. Its removal can shift the equilibrium towards further formation of ester and water.",
+      "trap": "Removing a product tends to favour its replacement.",
+      "mnemonic": "Treat water as a product being removed from an equilibrium.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Water is one of the products. Its removal can shift the equilibrium towards further formation of ester and water."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Removing a product tends to favour its replacement."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-147",
+      "subject": "chemistry",
+      "chapter": "20",
+      "topic": "Alkanols, Alkanoic Acids and Esters",
+      "concept": "How soap lifts grease",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can soap help remove a greasy stain when it is rinsed with water?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its ionic heads hide inside the grease while the tails face water",
+          "why": "The non-polar tails preferentially associate with grease.",
+          "whyWrong": "The non-polar tails preferentially associate with grease."
+        },
+        {
+          "id": "b",
+          "text": "Both ends of a soap ion prefer only grease and cannot interact with water",
+          "why": "The charged head interacts favourably with water.",
+          "whyWrong": "The charged head interacts favourably with water."
+        },
+        {
+          "id": "c",
+          "text": "Soap always changes every grease molecule into oxygen gas",
+          "why": "Dispersing grease into water does not require making oxygen.",
+          "whyWrong": "Dispersing grease into water does not require making oxygen."
+        },
+        {
+          "id": "d",
+          "text": "Its non-polar tails associate with grease while its ionic heads face water",
+          "why": "Soap molecules can surround grease with their tails inward and heads outward, helping keep it dispersed during washing.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Think about which end is compatible with oil and which with water.",
+      "explanation": "Soap molecules can surround grease with their tails inward and heads outward, helping keep it dispersed during washing.",
+      "trap": "The non-polar tails preferentially associate with grease.",
+      "mnemonic": "Think about which end is compatible with oil and which with water.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Soap molecules can surround grease with their tails inward and heads outward, helping keep it dispersed during washing."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The non-polar tails preferentially associate with grease."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-148",
+      "subject": "chemistry",
+      "chapter": "21",
+      "topic": "Polymers and Chemistry in Industry",
+      "concept": "Repeat units in polypropene",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What group remains as a side group on alternating backbone carbons in ordinary polypropene?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A carboxyl group",
+          "why": "Propene contains no oxygen and does not supply a carboxyl group.",
+          "whyWrong": "Propene contains no oxygen and does not supply a carboxyl group."
+        },
+        {
+          "id": "b",
+          "text": "A methyl group",
+          "why": "Addition polymerisation opens the double bonds, forming the backbone while retaining the methyl substituent from each propene unit.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "A chloride group",
+          "why": "The monomer contains no chlorine.",
+          "whyWrong": "The monomer contains no chlorine."
+        },
+        {
+          "id": "d",
+          "text": "An amino group",
+          "why": "The monomer contains no nitrogen.",
+          "whyWrong": "The monomer contains no nitrogen."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the group attached to, rather than part of, the starting double bond.",
+      "explanation": "Addition polymerisation opens the double bonds, forming the backbone while retaining the methyl substituent from each propene unit.",
+      "trap": "Propene contains no oxygen and does not supply a carboxyl group.",
+      "mnemonic": "Identify the group attached to, rather than part of, the starting double bond.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Addition polymerisation opens the double bonds, forming the backbone while retaining the methyl substituent from each propene unit."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Propene contains no oxygen and does not supply a carboxyl group."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-149",
+      "subject": "chemistry",
+      "chapter": "21",
+      "topic": "Polymers and Chemistry in Industry",
+      "concept": "Sorting polymers for recycling",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why are different kinds of thermoplastic commonly sorted before they are melted and remoulded?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All thermoplastics become exactly the same substance when heated",
+          "why": "Heating for remoulding does not erase their polymer identities.",
+          "whyWrong": "Heating for remoulding does not erase their polymer identities."
+        },
+        {
+          "id": "b",
+          "text": "They can differ in melting behaviour and may mix poorly",
+          "why": "Different polymers soften over different temperature ranges and can form incompatible mixtures, so sorting helps keep the recycled material consistent.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Mixed plastics always form one stronger and uniform material",
+          "why": "Uncontrolled mixtures can be incompatible and give uneven properties.",
+          "whyWrong": "Uncontrolled mixtures can be incompatible and give uneven properties."
+        },
+        {
+          "id": "d",
+          "text": "Every mixed batch becomes pure metal after melting",
+          "why": "Melting polymers does not convert their elements into metal.",
+          "whyWrong": "Melting polymers does not convert their elements into metal."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare what can happen when different chains are heated together.",
+      "explanation": "Different polymers soften over different temperature ranges and can form incompatible mixtures, so sorting helps keep the recycled material consistent.",
+      "trap": "Heating for remoulding does not erase their polymer identities.",
+      "mnemonic": "Compare what can happen when different chains are heated together.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Different polymers soften over different temperature ranges and can form incompatible mixtures, so sorting helps keep the recycled material consistent."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Heating for remoulding does not erase their polymer identities."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "chem-jamb-concept-150",
+      "subject": "chemistry",
+      "chapter": "21",
+      "topic": "Polymers and Chemistry in Industry",
+      "concept": "Recycling unreacted feed",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In a continuous chemical plant, the product is separated and unreacted starting materials are returned to the reactor. Why does the recycle help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It makes a catalyst unnecessary for every process",
+          "why": "Recycling and catalysis serve different purposes.",
+          "whyWrong": "Recycling and catalysis serve different purposes."
+        },
+        {
+          "id": "b",
+          "text": "It gives unused reactants another chance to form product",
+          "why": "Recycling reduces waste of feed when one pass does not consume all the reactants.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It means the amount of product can exceed all material ever fed in",
+          "why": "Material is conserved even when it passes through the reactor more than once.",
+          "whyWrong": "Material is conserved even when it passes through the reactor more than once."
+        },
+        {
+          "id": "d",
+          "text": "It sends the finished product back so it cannot be collected",
+          "why": "The process separates product from the stream being recycled.",
+          "whyWrong": "The process separates product from the stream being recycled."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow the unreacted material after the product has been removed.",
+      "explanation": "Recycling reduces waste of feed when one pass does not consume all the reactants.",
+      "trap": "Recycling and catalysis serve different purposes.",
+      "mnemonic": "Follow the unreacted material after the product has been removed.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Recycling reduces waste of feed when one pass does not consume all the reactants."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Recycling and catalysis serve different purposes."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Chemistry 2e, https://openstax.org/books/chemistry-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    }
+  ]
+}

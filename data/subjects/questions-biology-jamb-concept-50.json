@@ -1,0 +1,3057 @@
+{
+  "version": 1,
+  "subject": "biology",
+  "count": 50,
+  "questions": [
+    {
+      "id": "bio-jamb-concept-001",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Rough endoplasmic reticulum",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which structure makes many of the proteins destined for secretion from a eukaryotic cell?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The smooth endoplasmic reticulum with no attached ribosomes",
+          "why": "It has roles in lipid production and other processes, while attached ribosomes synthesise secreted proteins.",
+          "whyWrong": "It has roles in lipid production and other processes, while attached ribosomes synthesise secreted proteins."
+        },
+        {
+          "id": "b",
+          "text": "Ribosomes attached to the rough endoplasmic reticulum",
+          "why": "Ribosomes on the rough endoplasmic reticulum make proteins that enter the secretory pathway.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The inside of a mature lysosome",
+          "why": "A lysosome mainly contains digestive enzymes and breaks down materials.",
+          "whyWrong": "A lysosome mainly contains digestive enzymes and breaks down materials."
+        },
+        {
+          "id": "d",
+          "text": "The centromere of a chromosome",
+          "why": "A centromere is a region involved in chromosome movement during division.",
+          "whyWrong": "A centromere is a region involved in chromosome movement during division."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow the protein from the ribosome where it is built.",
+      "explanation": "Ribosomes on the rough endoplasmic reticulum make proteins that enter the secretory pathway.",
+      "trap": "It has roles in lipid production and other processes, while attached ribosomes synthesise secreted proteins.",
+      "mnemonic": "Follow the protein from the ribosome where it is built.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ribosomes on the rough endoplasmic reticulum make proteins that enter the secretory pathway."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "It has roles in lipid production and other processes, while attached ribosomes synthesise secreted proteins."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-002",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Golgi and protein sorting",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which organelle modifies and sorts many proteins before packing them into vesicles for different destinations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nucleolus",
+          "why": "The nucleolus helps make ribosomal subunits rather than sorting exported proteins.",
+          "whyWrong": "The nucleolus helps make ribosomal subunits rather than sorting exported proteins."
+        },
+        {
+          "id": "b",
+          "text": "Golgi apparatus",
+          "why": "Proteins from the endoplasmic reticulum can move through the Golgi, where many are modified and sorted into outgoing vesicles.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Cell wall",
+          "why": "The wall provides support and is not a protein sorting organelle.",
+          "whyWrong": "The wall provides support and is not a protein sorting organelle."
+        },
+        {
+          "id": "d",
+          "text": "Centriole",
+          "why": "Centrioles are associated with the organisation of microtubules.",
+          "whyWrong": "Centrioles are associated with the organisation of microtubules."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the cell compartment that receives material from the endoplasmic reticulum.",
+      "explanation": "Proteins from the endoplasmic reticulum can move through the Golgi, where many are modified and sorted into outgoing vesicles.",
+      "trap": "The nucleolus helps make ribosomal subunits rather than sorting exported proteins.",
+      "mnemonic": "Look for the cell compartment that receives material from the endoplasmic reticulum.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Proteins from the endoplasmic reticulum can move through the Golgi, where many are modified and sorted into outgoing vesicles."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The nucleolus helps make ribosomal subunits rather than sorting exported proteins."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-003",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Lysosomal digestion",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which compartment helps an animal cell digest and recycle some of its worn-out components?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nucleolus",
+          "why": "The nucleolus assembles ribosomal subunits.",
+          "whyWrong": "The nucleolus assembles ribosomal subunits."
+        },
+        {
+          "id": "b",
+          "text": "Lysosome",
+          "why": "Lysosomes contain enzymes that break down material delivered to them, allowing parts of it to be reused.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Golgi apparatus",
+          "why": "The Golgi mainly modifies and sorts cellular products.",
+          "whyWrong": "The Golgi mainly modifies and sorts cellular products."
+        },
+        {
+          "id": "d",
+          "text": "Centromere",
+          "why": "The centromere is a chromosome region involved in division.",
+          "whyWrong": "The centromere is a chromosome region involved in division."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for a compartment containing digestive enzymes.",
+      "explanation": "Lysosomes contain enzymes that break down material delivered to them, allowing parts of it to be reused.",
+      "trap": "The nucleolus assembles ribosomal subunits.",
+      "mnemonic": "Look for a compartment containing digestive enzymes.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Lysosomes contain enzymes that break down material delivered to them, allowing parts of it to be reused."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The nucleolus assembles ribosomal subunits."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-004",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Energy for active transport",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A root cell continues to take up a mineral ion when the ion concentration is already greater inside than outside. Which explanation fits this movement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ions move by simple diffusion from lower to higher concentration",
+          "why": "Simple diffusion has a net direction from higher to lower concentration.",
+          "whyWrong": "Simple diffusion has a net direction from higher to lower concentration."
+        },
+        {
+          "id": "b",
+          "text": "Transport proteins use an energy source to move ions against their concentration gradient",
+          "why": "Active transport can move ions against a gradient, either by using ATP directly or by coupling movement to another gradient.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Water moves by osmosis, so every mineral ion also crosses in the same way",
+          "why": "Osmosis describes net water movement, not the uphill movement of a mineral ion.",
+          "whyWrong": "Osmosis describes net water movement, not the uphill movement of a mineral ion."
+        },
+        {
+          "id": "d",
+          "text": "The pigment in the cell wall pulls the ions in without involving the membrane",
+          "why": "The stated movement requires a membrane transport process.",
+          "whyWrong": "The stated movement requires a membrane transport process."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the direction of movement with the direction expected for diffusion.",
+      "explanation": "Active transport can move ions against a gradient, either by using ATP directly or by coupling movement to another gradient.",
+      "trap": "Simple diffusion has a net direction from higher to lower concentration.",
+      "mnemonic": "Compare the direction of movement with the direction expected for diffusion.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Active transport can move ions against a gradient, either by using ATP directly or by coupling movement to another gradient."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Simple diffusion has a net direction from higher to lower concentration."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-005",
+      "subject": "biology",
+      "chapter": "1",
+      "topic": "Living Organisms and the Cell",
+      "concept": "Magnification versus resolution",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Two points in a microscope view look like one blurred spot. Enlarging the image makes the spot bigger but still does not show two points. Which property is limiting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total magnification",
+          "why": "The image can be enlarged and still lack the detail needed to show both points.",
+          "whyWrong": "The image can be enlarged and still lack the detail needed to show both points."
+        },
+        {
+          "id": "b",
+          "text": "Resolution",
+          "why": "Resolution is the ability to distinguish close points as separate. Extra magnification cannot recover detail that was never resolved.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The horizontal width of the stage",
+          "why": "Stage width does not determine whether close points are distinguished.",
+          "whyWrong": "Stage width does not determine whether close points are distinguished."
+        },
+        {
+          "id": "d",
+          "text": "The number of slides stored by the microscope",
+          "why": "Storage does not affect the detail in the optical image.",
+          "whyWrong": "Storage does not affect the detail in the optical image."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish image size from visible detail.",
+      "explanation": "Resolution is the ability to distinguish close points as separate. Extra magnification cannot recover detail that was never resolved.",
+      "trap": "The image can be enlarged and still lack the detail needed to show both points.",
+      "mnemonic": "Distinguish image size from visible detail.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Resolution is the ability to distinguish close points as separate. Extra magnification cannot recover detail that was never resolved."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The image can be enlarged and still lack the detail needed to show both points."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-006",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Classification and Evolution",
+      "concept": "Molluscan mantle",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In a typical snail, which tissue produces the shell?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mantle",
+          "why": "The mantle secretes material that forms and extends the shell.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Radula",
+          "why": "The radula is a feeding structure.",
+          "whyWrong": "The radula is a feeding structure."
+        },
+        {
+          "id": "c",
+          "text": "Foot",
+          "why": "The muscular foot mainly helps the snail move.",
+          "whyWrong": "The muscular foot mainly helps the snail move."
+        },
+        {
+          "id": "d",
+          "text": "Tentacle",
+          "why": "Tentacles mainly serve sensory functions.",
+          "whyWrong": "Tentacles mainly serve sensory functions."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Separate the shell-producing tissue from the structures used in feeding and movement.",
+      "explanation": "The mantle secretes material that forms and extends the shell.",
+      "trap": "The radula is a feeding structure.",
+      "mnemonic": "Separate the shell-producing tissue from the structures used in feeding and movement.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The mantle secretes material that forms and extends the shell."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The radula is a feeding structure."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-007",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Classification and Evolution",
+      "concept": "Segmentation in annelids",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which feature is shown by an earthworm but not by a typical roundworm such as Ascaris?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A long body with a digestive tube",
+          "why": "Both animals have elongated bodies and digestive tubes.",
+          "whyWrong": "Both animals have elongated bodies and digestive tubes."
+        },
+        {
+          "id": "b",
+          "text": "Movement produced by muscles",
+          "why": "Both use muscles to move.",
+          "whyWrong": "Both use muscles to move."
+        },
+        {
+          "id": "c",
+          "text": "A body with bilateral symmetry",
+          "why": "Both animals have left and right sides that correspond.",
+          "whyWrong": "Both animals have left and right sides that correspond."
+        },
+        {
+          "id": "d",
+          "text": "A body divided into a series of true segments",
+          "why": "Earthworms are segmented annelids. A typical roundworm has an unsegmented body even if surface markings are visible.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for repeated body units, not just the overall shape.",
+      "explanation": "Earthworms are segmented annelids. A typical roundworm has an unsegmented body even if surface markings are visible.",
+      "trap": "Both animals have elongated bodies and digestive tubes.",
+      "mnemonic": "Look for repeated body units, not just the overall shape.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Earthworms are segmented annelids. A typical roundworm has an unsegmented body even if surface markings are visible."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Both animals have elongated bodies and digestive tubes."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-008",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Classification and Evolution",
+      "concept": "Cnidarian feeding structures",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A Hydra captures a small animal against one of its tentacles. Which specialised cells help it capture prey?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guard cells",
+          "why": "Guard cells regulate pores in plants.",
+          "whyWrong": "Guard cells regulate pores in plants."
+        },
+        {
+          "id": "b",
+          "text": "Cnidocytes",
+          "why": "Hydra is a cnidarian. Its tentacles bear specialised stinging cells called cnidocytes that help capture prey.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Red blood cells",
+          "why": "Hydra does not have vertebrate red blood cells.",
+          "whyWrong": "Hydra does not have vertebrate red blood cells."
+        },
+        {
+          "id": "d",
+          "text": "Companion cells",
+          "why": "Companion cells support phloem transport in flowering plants.",
+          "whyWrong": "Companion cells support phloem transport in flowering plants."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the cells characteristic of the animal group to which Hydra belongs.",
+      "explanation": "Hydra is a cnidarian. Its tentacles bear specialised stinging cells called cnidocytes that help capture prey.",
+      "trap": "Guard cells regulate pores in plants.",
+      "mnemonic": "Identify the cells characteristic of the animal group to which Hydra belongs.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Hydra is a cnidarian. Its tentacles bear specialised stinging cells called cnidocytes that help capture prey."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Guard cells regulate pores in plants."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-009",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Classification and Evolution",
+      "concept": "Enclosed seeds",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which feature distinguishes a typical flowering plant from a pine tree?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It makes reproductive cells",
+          "why": "Both plant groups reproduce using gametes.",
+          "whyWrong": "Both plant groups reproduce using gametes."
+        },
+        {
+          "id": "b",
+          "text": "It has conducting tissues",
+          "why": "Both groups are vascular plants.",
+          "whyWrong": "Both groups are vascular plants."
+        },
+        {
+          "id": "c",
+          "text": "Its ovules are enclosed in an ovary that can develop into a fruit",
+          "why": "In flowering plants the ovules are enclosed within an ovary. Pine ovules are borne exposed on cone scales rather than enclosed in a flower's ovary.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It can form seeds after fertilisation",
+          "why": "Both are seed plants.",
+          "whyWrong": "Both are seed plants."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Look at where the ovules are held before seeds form.",
+      "explanation": "In flowering plants the ovules are enclosed within an ovary. Pine ovules are borne exposed on cone scales rather than enclosed in a flower's ovary.",
+      "trap": "Both plant groups reproduce using gametes.",
+      "mnemonic": "Look at where the ovules are held before seeds form.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "In flowering plants the ovules are enclosed within an ovary. Pine ovules are borne exposed on cone scales rather than enclosed in a flower's ovary."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Both plant groups reproduce using gametes."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-010",
+      "subject": "biology",
+      "chapter": "2",
+      "topic": "Classification and Evolution",
+      "concept": "Reading a branching diagram",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In an evolutionary tree, species X and Y share a more recent branch point with each other than either shares with Z. What does the tree show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X and Y share a more recent common ancestor with each other",
+          "why": "A branch point represents a common ancestor. A later shared branch point indicates a closer relationship in the tree.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "X evolved directly from the living species Y",
+          "why": "A shared branch point denotes an ancestor, not one living species becoming the other.",
+          "whyWrong": "A shared branch point denotes an ancestor, not one living species becoming the other."
+        },
+        {
+          "id": "c",
+          "text": "Z must have evolved more slowly than both X and Y",
+          "why": "This branching pattern alone does not give evolutionary rates.",
+          "whyWrong": "This branching pattern alone does not give evolutionary rates."
+        },
+        {
+          "id": "d",
+          "text": "X and Y must have the same habitat today",
+          "why": "Shared ancestry does not require identical current habitats.",
+          "whyWrong": "Shared ancestry does not require identical current habitats."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the common branch points rather than the positions of the names.",
+      "explanation": "A branch point represents a common ancestor. A later shared branch point indicates a closer relationship in the tree.",
+      "trap": "A shared branch point denotes an ancestor, not one living species becoming the other.",
+      "mnemonic": "Compare the common branch points rather than the positions of the names.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A branch point represents a common ancestor. A later shared branch point indicates a closer relationship in the tree."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A shared branch point denotes an ancestor, not one living species becoming the other."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-011",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Nutrition",
+      "concept": "Bile and emulsification",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "How does bile help the digestion of fats in the small intestine?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It digests fat by acting as lipase itself",
+          "why": "Bile emulsifies fats; lipase carries out hydrolysis.",
+          "whyWrong": "Bile emulsifies fats; lipase carries out hydrolysis."
+        },
+        {
+          "id": "b",
+          "text": "It turns fats directly into amino acids",
+          "why": "Amino acids are units of proteins.",
+          "whyWrong": "Amino acids are units of proteins."
+        },
+        {
+          "id": "c",
+          "text": "It forms starch around each droplet",
+          "why": "Starch formation is not how bile assists digestion.",
+          "whyWrong": "Starch formation is not how bile assists digestion."
+        },
+        {
+          "id": "d",
+          "text": "It breaks large fat droplets into smaller droplets, increasing the area exposed to lipase",
+          "why": "Bile salts help disperse fat into small droplets. Lipase can then act on more of the fat surface.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Distinguish physical dispersal from enzyme action.",
+      "explanation": "Bile salts help disperse fat into small droplets. Lipase can then act on more of the fat surface.",
+      "trap": "Bile emulsifies fats; lipase carries out hydrolysis.",
+      "mnemonic": "Distinguish physical dispersal from enzyme action.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Bile salts help disperse fat into small droplets. Lipase can then act on more of the fat surface."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Bile emulsifies fats; lipase carries out hydrolysis."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-012",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Nutrition",
+      "concept": "Intestinal microvilli",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why do the absorptive cells of the small intestine have many microvilli on the surface facing the gut contents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They increase the surface available for absorption",
+          "why": "Many tiny projections provide a larger cell membrane area through which digested materials can enter.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "They seal off the cell from all digested nutrients",
+          "why": "The structures increase contact with gut contents.",
+          "whyWrong": "The structures increase contact with gut contents."
+        },
+        {
+          "id": "c",
+          "text": "They make the blood run through the lumen of the intestine",
+          "why": "Blood reaches the tissue through vessels, not through the gut contents.",
+          "whyWrong": "Blood reaches the tissue through vessels, not through the gut contents."
+        },
+        {
+          "id": "d",
+          "text": "They replace digestive enzymes by moving food along the gut",
+          "why": "Microvilli mainly enlarge the absorptive surface in this context.",
+          "whyWrong": "Microvilli mainly enlarge the absorptive surface in this context."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about how folding or projecting a surface changes its area.",
+      "explanation": "Many tiny projections provide a larger cell membrane area through which digested materials can enter.",
+      "trap": "The structures increase contact with gut contents.",
+      "mnemonic": "Think about how folding or projecting a surface changes its area.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Many tiny projections provide a larger cell membrane area through which digested materials can enter."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The structures increase contact with gut contents."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-013",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Nutrition",
+      "concept": "Final products of protein digestion",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which molecules can be obtained when dietary proteins are digested completely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fatty acids",
+          "why": "These are products from the digestion of fats.",
+          "whyWrong": "These are products from the digestion of fats."
+        },
+        {
+          "id": "b",
+          "text": "Glucose molecules only",
+          "why": "Glucose is a product of digesting some carbohydrates.",
+          "whyWrong": "Glucose is a product of digesting some carbohydrates."
+        },
+        {
+          "id": "c",
+          "text": "Glycerol and nothing else",
+          "why": "Glycerol is associated with the breakdown of fats.",
+          "whyWrong": "Glycerol is associated with the breakdown of fats."
+        },
+        {
+          "id": "d",
+          "text": "Amino acids",
+          "why": "Digestive enzymes hydrolyse peptide bonds, ultimately freeing the amino acids linked in a protein.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Recall the small building blocks joined in a protein.",
+      "explanation": "Digestive enzymes hydrolyse peptide bonds, ultimately freeing the amino acids linked in a protein.",
+      "trap": "These are products from the digestion of fats.",
+      "mnemonic": "Recall the small building blocks joined in a protein.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Digestive enzymes hydrolyse peptide bonds, ultimately freeing the amino acids linked in a protein."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "These are products from the digestion of fats."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-014",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Nutrition",
+      "concept": "Chlorophyll and leaf colour",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does a leaf rich in chlorophyll look green in white light?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It reflects or transmits more green light than red or blue light",
+          "why": "Chlorophyll absorbs red and blue regions strongly. More green light remains to be reflected or transmitted to the observer.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "It absorbs green light completely and reflects only red light",
+          "why": "That would not make it look green.",
+          "whyWrong": "That would not make it look green."
+        },
+        {
+          "id": "c",
+          "text": "Its chlorophyll gives out only ultraviolet radiation",
+          "why": "The observed colour comes mainly from the visible light reaching the eyes.",
+          "whyWrong": "The observed colour comes mainly from the visible light reaching the eyes."
+        },
+        {
+          "id": "d",
+          "text": "Its cells contain no pigments that absorb visible light",
+          "why": "Chlorophyll absorbs certain colours strongly.",
+          "whyWrong": "Chlorophyll absorbs certain colours strongly."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Consider which colour reaches the observer.",
+      "explanation": "Chlorophyll absorbs red and blue regions strongly. More green light remains to be reflected or transmitted to the observer.",
+      "trap": "That would not make it look green.",
+      "mnemonic": "Consider which colour reaches the observer.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Chlorophyll absorbs red and blue regions strongly. More green light remains to be reflected or transmitted to the observer."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "That would not make it look green."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-015",
+      "subject": "biology",
+      "chapter": "3",
+      "topic": "Nutrition",
+      "concept": "Using a destarched leaf",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is a green plant kept in the dark before a school experiment testing whether light allows a leaf to make starch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To provide the light needed for more photosynthesis",
+          "why": "Darkness prevents ordinary photosynthesis from adding new starch.",
+          "whyWrong": "Darkness prevents ordinary photosynthesis from adding new starch."
+        },
+        {
+          "id": "b",
+          "text": "To let the plant use much of the starch already stored in its leaves",
+          "why": "During a sufficiently long dark period, the plant uses stored carbohydrate. This reduces the contribution of old starch to the test result.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "To make iodine react with every kind of carbohydrate",
+          "why": "Dark treatment does not change iodine's use in the starch test.",
+          "whyWrong": "Dark treatment does not change iodine's use in the starch test."
+        },
+        {
+          "id": "d",
+          "text": "To destroy all functioning leaf cells before testing them",
+          "why": "Living cells are needed during the subsequent light treatment.",
+          "whyWrong": "Living cells are needed during the subsequent light treatment."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Ask how the experiment separates old starch from starch formed later.",
+      "explanation": "During a sufficiently long dark period, the plant uses stored carbohydrate. This reduces the contribution of old starch to the test result.",
+      "trap": "Darkness prevents ordinary photosynthesis from adding new starch.",
+      "mnemonic": "Ask how the experiment separates old starch from starch formed later.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "During a sufficiently long dark period, the plant uses stored carbohydrate. This reduces the contribution of old starch to the test result."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Darkness prevents ordinary photosynthesis from adding new starch."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-016",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "Potometer readings",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is a bubble potometer reading an estimate rather than a direct measurement of transpiration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It measures only dissolved sugar in the xylem",
+          "why": "The bubble shows movement of water in the tube.",
+          "whyWrong": "The bubble shows movement of water in the tube."
+        },
+        {
+          "id": "b",
+          "text": "It measures water uptake, and some absorbed water may be retained or used by the shoot",
+          "why": "The movement of the bubble indicates how fast the shoot takes up water. Uptake often reflects water loss, but the two are not strictly identical.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It directly counts every vapour molecule leaving each leaf",
+          "why": "It measures uptake at the cut shoot, not the vapour leaving the leaves.",
+          "whyWrong": "It measures uptake at the cut shoot, not the vapour leaving the leaves."
+        },
+        {
+          "id": "d",
+          "text": "It measures the thickness of the leaf cuticle",
+          "why": "The instrument tracks a change in the water-filled tube.",
+          "whyWrong": "The instrument tracks a change in the water-filled tube."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish water entering the shoot from water vapour leaving its surface.",
+      "explanation": "The movement of the bubble indicates how fast the shoot takes up water. Uptake often reflects water loss, but the two are not strictly identical.",
+      "trap": "The bubble shows movement of water in the tube.",
+      "mnemonic": "Distinguish water entering the shoot from water vapour leaving its surface.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The movement of the bubble indicates how fast the shoot takes up water. Uptake often reflects water loss, but the two are not strictly identical."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The bubble shows movement of water in the tube."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-017",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "Valves in leg veins",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "How do valves in the leg veins help blood return to the heart while a person is walking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They pump blood by contracting like the heart",
+          "why": "Venous valves open and close in response to pressure differences.",
+          "whyWrong": "Venous valves open and close in response to pressure differences."
+        },
+        {
+          "id": "b",
+          "text": "They limit backflow when surrounding muscles relax",
+          "why": "Muscle contractions squeeze veins. The valves promote one-way movement and limit backward flow between contractions.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "They keep blood moving away from the heart",
+          "why": "Leg veins return blood towards the heart.",
+          "whyWrong": "Leg veins return blood towards the heart."
+        },
+        {
+          "id": "d",
+          "text": "They take oxygen out of the blood",
+          "why": "Their role concerns the direction of flow.",
+          "whyWrong": "Their role concerns the direction of flow."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow the blood when the squeezing force on a vein is released.",
+      "explanation": "Muscle contractions squeeze veins. The valves promote one-way movement and limit backward flow between contractions.",
+      "trap": "Venous valves open and close in response to pressure differences.",
+      "mnemonic": "Follow the blood when the squeezing force on a vein is released.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Muscle contractions squeeze veins. The valves promote one-way movement and limit backward flow between contractions."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Venous valves open and close in response to pressure differences."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-018",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "Valves during ventricular contraction",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which valves close as ventricular pressure rises above atrial pressure at the start of ventricular contraction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aortic and pulmonary semilunar valves only",
+          "why": "These open later when ventricular pressure exceeds the pressure in the outgoing arteries.",
+          "whyWrong": "These open later when ventricular pressure exceeds the pressure in the outgoing arteries."
+        },
+        {
+          "id": "b",
+          "text": "Valves in the veins of the leg",
+          "why": "The pressure comparison is between chambers of the heart.",
+          "whyWrong": "The pressure comparison is between chambers of the heart."
+        },
+        {
+          "id": "c",
+          "text": "Atrioventricular valves",
+          "why": "The atrioventricular valves close as pressure rises in the ventricles, helping prevent blood returning to the atria.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "There are no valves between the atria and ventricles",
+          "why": "The tricuspid and mitral valves are located between those chambers.",
+          "whyWrong": "The tricuspid and mitral valves are located between those chambers."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify which openings would otherwise let blood return to the atria.",
+      "explanation": "The atrioventricular valves close as pressure rises in the ventricles, helping prevent blood returning to the atria.",
+      "trap": "These open later when ventricular pressure exceeds the pressure in the outgoing arteries.",
+      "mnemonic": "Identify which openings would otherwise let blood return to the atria.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The atrioventricular valves close as pressure rises in the ventricles, helping prevent blood returning to the atria."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "These open later when ventricular pressure exceeds the pressure in the outgoing arteries."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-019",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "Guttation versus dew",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why are droplets repeatedly appearing at the edges of a well-watered plant's leaves on a humid night sometimes attributed to guttation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Water vapour from the air liquefies evenly on all nearby surfaces",
+          "why": "That would indicate dew rather than liquid released through the leaves.",
+          "whyWrong": "That would indicate dew rather than liquid released through the leaves."
+        },
+        {
+          "id": "b",
+          "text": "The leaf pumps out solid mineral crystals instead of liquid",
+          "why": "The observation is droplets of liquid.",
+          "whyWrong": "The observation is droplets of liquid."
+        },
+        {
+          "id": "c",
+          "text": "Each droplet must be rain caught by the leaf",
+          "why": "The pattern can occur without rainfall.",
+          "whyWrong": "The pattern can occur without rainfall."
+        },
+        {
+          "id": "d",
+          "text": "Root pressure can force liquid out through pores near the leaf margins",
+          "why": "Guttation releases liquid xylem sap through hydathodes when root pressure is sufficient and transpiration is low.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for a source of the liquid inside the plant.",
+      "explanation": "Guttation releases liquid xylem sap through hydathodes when root pressure is sufficient and transpiration is low.",
+      "trap": "That would indicate dew rather than liquid released through the leaves.",
+      "mnemonic": "Look for a source of the liquid inside the plant.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Guttation releases liquid xylem sap through hydathodes when root pressure is sufficient and transpiration is low."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "That would indicate dew rather than liquid released through the leaves."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-020",
+      "subject": "biology",
+      "chapter": "4",
+      "topic": "Transport",
+      "concept": "A seasonal change of phloem role",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "At the start of growth, a stored-food organ supplies sugars to a developing shoot. What is the organ's phloem role at that time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a sink because all storage organs always act as sinks",
+          "why": "A storage organ can act as a source when it exports reserves.",
+          "whyWrong": "A storage organ can act as a source when it exports reserves."
+        },
+        {
+          "id": "b",
+          "text": "It is a stomatal pore",
+          "why": "A storage organ and a leaf opening are different structures.",
+          "whyWrong": "A storage organ and a leaf opening are different structures."
+        },
+        {
+          "id": "c",
+          "text": "It is a source",
+          "why": "A source exports sugars and a sink receives them. A storage organ can change from receiving sugars to exporting them in another season.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It is a xylem vessel carrying only air",
+          "why": "The question concerns export of soluble organic material by phloem.",
+          "whyWrong": "The question concerns export of soluble organic material by phloem."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Follow the direction in which the sugars move.",
+      "explanation": "A source exports sugars and a sink receives them. A storage organ can change from receiving sugars to exporting them in another season.",
+      "trap": "A storage organ can act as a source when it exports reserves.",
+      "mnemonic": "Follow the direction in which the sugars move.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A source exports sugars and a sink receives them. A storage organ can change from receiving sugars to exporting them in another season."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A storage organ can act as a source when it exports reserves."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-021",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "Lactate and muscle respiration",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "When a muscle breaks down glucose faster than oxygen can support aerobic energy production, which product can accumulate in the muscle cells?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ethanol as the main product",
+          "why": "Alcoholic fermentation is typical of organisms such as yeast, rather than human muscle.",
+          "whyWrong": "Alcoholic fermentation is typical of organisms such as yeast, rather than human muscle."
+        },
+        {
+          "id": "b",
+          "text": "Lactate",
+          "why": "Muscle cells can convert pyruvate to lactate to regenerate a cofactor needed for glycolysis when aerobic supply is limited.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Starch as the main product",
+          "why": "The cells are breaking down glucose to supply energy.",
+          "whyWrong": "The cells are breaking down glucose to supply energy."
+        },
+        {
+          "id": "d",
+          "text": "Extra oxygen released from glucose",
+          "why": "This pathway does not release oxygen gas.",
+          "whyWrong": "This pathway does not release oxygen gas."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Recall the product of the oxygen-limited pathway in muscle, rather than in yeast.",
+      "explanation": "Muscle cells can convert pyruvate to lactate to regenerate a cofactor needed for glycolysis when aerobic supply is limited.",
+      "trap": "Alcoholic fermentation is typical of organisms such as yeast, rather than human muscle.",
+      "mnemonic": "Recall the product of the oxygen-limited pathway in muscle, rather than in yeast.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Muscle cells can convert pyruvate to lactate to regenerate a cofactor needed for glycolysis when aerobic supply is limited."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Alcoholic fermentation is typical of organisms such as yeast, rather than human muscle."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-022",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "Tracheae and insect gas supply",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can oxygen reach many insect tissues without first being carried there by the blood?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Air passes into branching tracheal tubes that reach close to the cells",
+          "why": "The insect tracheal system brings air close to the tissues, leaving a short distance for diffusion into cells.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Insects have mammalian lungs beside every tissue",
+          "why": "An insect's tracheal system is different from lungs.",
+          "whyWrong": "An insect's tracheal system is different from lungs."
+        },
+        {
+          "id": "c",
+          "text": "The insect's tissues do not need oxygen",
+          "why": "Active tissues still require oxygen for aerobic respiration.",
+          "whyWrong": "Active tissues still require oxygen for aerobic respiration."
+        },
+        {
+          "id": "d",
+          "text": "Oxygen is manufactured by all insect tissues in the dark",
+          "why": "Animal tissues need an external oxygen supply for this process.",
+          "whyWrong": "Animal tissues need an external oxygen supply for this process."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow air inward from the surface openings.",
+      "explanation": "The insect tracheal system brings air close to the tissues, leaving a short distance for diffusion into cells.",
+      "trap": "An insect's tracheal system is different from lungs.",
+      "mnemonic": "Follow air inward from the surface openings.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The insect tracheal system brings air close to the tissues, leaving a short distance for diffusion into cells."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "An insect's tracheal system is different from lungs."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-023",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "Residual air in lungs",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What does residual lung volume describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Air taken in during one normal resting breath",
+          "why": "That describes tidal volume.",
+          "whyWrong": "That describes tidal volume."
+        },
+        {
+          "id": "b",
+          "text": "Air breathed in only through the nose and never reaching the lungs",
+          "why": "Residual volume is already inside the lungs.",
+          "whyWrong": "Residual volume is already inside the lungs."
+        },
+        {
+          "id": "c",
+          "text": "Air that remains in the lungs after a maximal exhalation",
+          "why": "Even a forced exhalation does not empty the lungs completely. The air still present is the residual volume.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "All air expelled during the hardest possible exhalation",
+          "why": "Residual air is the part that remains afterwards.",
+          "whyWrong": "Residual air is the part that remains afterwards."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Ask what is left after the strongest outward breath.",
+      "explanation": "Even a forced exhalation does not empty the lungs completely. The air still present is the residual volume.",
+      "trap": "That describes tidal volume.",
+      "mnemonic": "Ask what is left after the strongest outward breath.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Even a forced exhalation does not empty the lungs completely. The air still present is the residual volume."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "That describes tidal volume."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-024",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "Mucus and cilia",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "How do mucus and cilia work together in much of the human air passage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cilia make mucus flow into every alveolus to fill them",
+          "why": "Cilia along conducting passages help clear mucus away from the deeper lungs.",
+          "whyWrong": "Cilia along conducting passages help clear mucus away from the deeper lungs."
+        },
+        {
+          "id": "b",
+          "text": "Mucus traps particles and cilia move it towards the throat",
+          "why": "Trapped particles can be cleared as beating cilia move the mucus up towards the throat.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Mucus digests all inhaled oxygen before it reaches the lungs",
+          "why": "Oxygen still passes through the conducting airways.",
+          "whyWrong": "Oxygen still passes through the conducting airways."
+        },
+        {
+          "id": "d",
+          "text": "Cilia carry blood from the air passages to the heart",
+          "why": "Cilia move material along the lining, not blood through vessels.",
+          "whyWrong": "Cilia move material along the lining, not blood through vessels."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Give one role to the mucus and another to the moving cilia.",
+      "explanation": "Trapped particles can be cleared as beating cilia move the mucus up towards the throat.",
+      "trap": "Cilia along conducting passages help clear mucus away from the deeper lungs.",
+      "mnemonic": "Give one role to the mucus and another to the moving cilia.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Trapped particles can be cleared as beating cilia move the mucus up towards the throat."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Cilia along conducting passages help clear mucus away from the deeper lungs."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-025",
+      "subject": "biology",
+      "chapter": "5",
+      "topic": "Respiration",
+      "concept": "Respiration and heat release",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why can an insulated flask of well-aerated, germinating seeds become warmer than a matching flask of boiled seeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boiled seeds make more ATP after their cells die",
+          "why": "Boiling kills the cells and stops normal cellular respiration.",
+          "whyWrong": "Boiling kills the cells and stops normal cellular respiration."
+        },
+        {
+          "id": "b",
+          "text": "Germination requires light to heat the flask directly",
+          "why": "The heat may be generated by respiration even without light.",
+          "whyWrong": "The heat may be generated by respiration even without light."
+        },
+        {
+          "id": "c",
+          "text": "Each living seed has a higher temperature before the comparison begins by definition",
+          "why": "A fair comparison starts at similar temperatures.",
+          "whyWrong": "A fair comparison starts at similar temperatures."
+        },
+        {
+          "id": "d",
+          "text": "Living seeds release some heat during respiration",
+          "why": "Germinating seeds break down reserves to obtain usable energy, and some of that energy is released as heat.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare living metabolism with the dead control.",
+      "explanation": "Germinating seeds break down reserves to obtain usable energy, and some of that energy is released as heat.",
+      "trap": "Boiling kills the cells and stops normal cellular respiration.",
+      "mnemonic": "Compare living metabolism with the dead control.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Germinating seeds break down reserves to obtain usable energy, and some of that energy is released as heat."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Boiling kills the cells and stops normal cellular respiration."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-026",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Excretion",
+      "concept": "Urea formation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which organ makes most of the urea later removed from the blood by the kidneys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The urinary bladder",
+          "why": "The bladder stores urine.",
+          "whyWrong": "The bladder stores urine."
+        },
+        {
+          "id": "b",
+          "text": "The liver",
+          "why": "The liver converts nitrogen from amino acid breakdown into urea.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The lungs",
+          "why": "The lungs remove carbon dioxide.",
+          "whyWrong": "The lungs remove carbon dioxide."
+        },
+        {
+          "id": "d",
+          "text": "The ureters",
+          "why": "The ureters carry urine from the kidneys.",
+          "whyWrong": "The ureters carry urine from the kidneys."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Separate where the waste is made from where it is removed.",
+      "explanation": "The liver converts nitrogen from amino acid breakdown into urea.",
+      "trap": "The bladder stores urine.",
+      "mnemonic": "Separate where the waste is made from where it is removed.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The liver converts nitrogen from amino acid breakdown into urea."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The bladder stores urine."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-027",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Excretion",
+      "concept": "Proteins and filtration",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why do most large plasma proteins stay in the blood when fluid is filtered into Bowman's capsule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ureter sends proteins back",
+          "why": "The ureter carries urine away.",
+          "whyWrong": "The ureter carries urine away."
+        },
+        {
+          "id": "b",
+          "text": "The proteins evaporate before filtration",
+          "why": "Proteins do not evaporate under these conditions.",
+          "whyWrong": "Proteins do not evaporate under these conditions."
+        },
+        {
+          "id": "c",
+          "text": "The bladder digests arriving proteins",
+          "why": "The bladder stores urine.",
+          "whyWrong": "The bladder stores urine."
+        },
+        {
+          "id": "d",
+          "text": "The filtration barrier normally excludes large proteins",
+          "why": "The glomerular barrier lets water and small solutes through while retaining most large proteins.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare protein size with the openings in the filter.",
+      "explanation": "The glomerular barrier lets water and small solutes through while retaining most large proteins.",
+      "trap": "The ureter carries urine away.",
+      "mnemonic": "Compare protein size with the openings in the filter.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The glomerular barrier lets water and small solutes through while retaining most large proteins."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The ureter carries urine away."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-028",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Excretion",
+      "concept": "Glucose recovery",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Glucose has passed into the early filtrate of a healthy kidney. Where does most of it return from the filtrate to the blood?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The proximal convoluted tubule",
+          "why": "Cells lining the proximal tubule reabsorb nearly all filtered glucose in a healthy kidney.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The renal pelvis",
+          "why": "This collects urine leaving the kidney.",
+          "whyWrong": "This collects urine leaving the kidney."
+        },
+        {
+          "id": "c",
+          "text": "The urethra",
+          "why": "This carries urine out of the body.",
+          "whyWrong": "This carries urine out of the body."
+        },
+        {
+          "id": "d",
+          "text": "Bowman's capsule",
+          "why": "This receives the initial filtrate.",
+          "whyWrong": "This receives the initial filtrate."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Trace the filtrate forward from the capsule.",
+      "explanation": "Cells lining the proximal tubule reabsorb nearly all filtered glucose in a healthy kidney.",
+      "trap": "This collects urine leaving the kidney.",
+      "mnemonic": "Trace the filtrate forward from the capsule.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Cells lining the proximal tubule reabsorb nearly all filtered glucose in a healthy kidney."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "This collects urine leaving the kidney."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-029",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Excretion",
+      "concept": "Temporary urine storage",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which structure expands as urine accumulates before urination?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The renal artery",
+          "why": "It carries blood to the kidney.",
+          "whyWrong": "It carries blood to the kidney."
+        },
+        {
+          "id": "b",
+          "text": "The ureter",
+          "why": "It transports urine to the storage organ.",
+          "whyWrong": "It transports urine to the storage organ."
+        },
+        {
+          "id": "c",
+          "text": "The renal vein",
+          "why": "It drains blood from the kidney.",
+          "whyWrong": "It drains blood from the kidney."
+        },
+        {
+          "id": "d",
+          "text": "The urinary bladder",
+          "why": "The elastic bladder stores urine until it is released through the urethra.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for a reservoir rather than a tube.",
+      "explanation": "The elastic bladder stores urine until it is released through the urethra.",
+      "trap": "It carries blood to the kidney.",
+      "mnemonic": "Look for a reservoir rather than a tube.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The elastic bladder stores urine until it is released through the urethra."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "It carries blood to the kidney."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-030",
+      "subject": "biology",
+      "chapter": "6",
+      "topic": "Excretion",
+      "concept": "Water balance in freshwater fish",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does a typical freshwater bony fish produce a large volume of dilute urine?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Water tends to enter its body by osmosis",
+          "why": "Water enters across permeable surfaces because the surroundings are more dilute, and the kidneys remove the excess.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Salts collect faster than water",
+          "why": "Freshwater is dilute relative to the fish's body fluids.",
+          "whyWrong": "Freshwater is dilute relative to the fish's body fluids."
+        },
+        {
+          "id": "c",
+          "text": "The fish prevents all water entry",
+          "why": "Water still crosses surfaces such as the gills.",
+          "whyWrong": "Water still crosses surfaces such as the gills."
+        },
+        {
+          "id": "d",
+          "text": "The urine helps it retain extra water",
+          "why": "Its dilute urine disposes of excess water.",
+          "whyWrong": "Its dilute urine disposes of excess water."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the concentration outside the fish with that of its body fluids.",
+      "explanation": "Water enters across permeable surfaces because the surroundings are more dilute, and the kidneys remove the excess.",
+      "trap": "Freshwater is dilute relative to the fish's body fluids.",
+      "mnemonic": "Compare the concentration outside the fish with that of its body fluids.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Water enters across permeable surfaces because the surroundings are more dilute, and the kidneys remove the excess."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Freshwater is dilute relative to the fish's body fluids."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-031",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Coordination",
+      "concept": "Blood sugar regulation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which hormone helps bring a raised blood glucose level down after a meal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insulin",
+          "why": "Insulin promotes glucose uptake in several tissues and encourages storage of glucose as glycogen.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Glucagon",
+          "why": "It helps raise blood glucose when needed.",
+          "whyWrong": "It helps raise blood glucose when needed."
+        },
+        {
+          "id": "c",
+          "text": "Adrenaline",
+          "why": "It helps mobilise fuel during a stress response.",
+          "whyWrong": "It helps mobilise fuel during a stress response."
+        },
+        {
+          "id": "d",
+          "text": "Thyroxine",
+          "why": "It regulates metabolic activity more broadly.",
+          "whyWrong": "It regulates metabolic activity more broadly."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify the pancreatic hormone that favours glucose storage.",
+      "explanation": "Insulin promotes glucose uptake in several tissues and encourages storage of glucose as glycogen.",
+      "trap": "It helps raise blood glucose when needed.",
+      "mnemonic": "Identify the pancreatic hormone that favours glucose storage.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Insulin promotes glucose uptake in several tissues and encourages storage of glucose as glycogen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "It helps raise blood glucose when needed."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-032",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Coordination",
+      "concept": "Root gravitropism",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A germinating seed is turned onto its side. What usually causes its primary root to curve downwards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Negative gravitropism",
+          "why": "That would be growth away from gravity.",
+          "whyWrong": "That would be growth away from gravity."
+        },
+        {
+          "id": "b",
+          "text": "Positive phototropism",
+          "why": "That is growth towards a light source.",
+          "whyWrong": "That is growth towards a light source."
+        },
+        {
+          "id": "c",
+          "text": "Chemotropism",
+          "why": "That is directional growth in response to a chemical gradient.",
+          "whyWrong": "That is directional growth in response to a chemical gradient."
+        },
+        {
+          "id": "d",
+          "text": "Positive gravitropism",
+          "why": "A primary root normally grows in the direction of gravity.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify the stimulus that still acts in darkness.",
+      "explanation": "A primary root normally grows in the direction of gravity.",
+      "trap": "That would be growth away from gravity.",
+      "mnemonic": "Identify the stimulus that still acts in darkness.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A primary root normally grows in the direction of gravity."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "That would be growth away from gravity."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-033",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Coordination",
+      "concept": "Touch response in Mimosa",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A Mimosa leaf folds the same way when touched from different directions. What kind of response is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A positive tropism",
+          "why": "Growth towards a stimulus depends on its direction.",
+          "whyWrong": "Growth towards a stimulus depends on its direction."
+        },
+        {
+          "id": "b",
+          "text": "A negative tropism",
+          "why": "Growth away from a stimulus depends on its direction.",
+          "whyWrong": "Growth away from a stimulus depends on its direction."
+        },
+        {
+          "id": "c",
+          "text": "A nastic response",
+          "why": "The folding direction follows the structure of the leaf. It does not depend on the direction of the touch.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "A taxis",
+          "why": "Taxis moves a whole organism or cell directionally.",
+          "whyWrong": "Taxis moves a whole organism or cell directionally."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Consider whether the direction of the stimulus determines the response.",
+      "explanation": "The folding direction follows the structure of the leaf. It does not depend on the direction of the touch.",
+      "trap": "Growth towards a stimulus depends on its direction.",
+      "mnemonic": "Consider whether the direction of the stimulus determines the response.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The folding direction follows the structure of the leaf. It does not depend on the direction of the touch."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Growth towards a stimulus depends on its direction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-034",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Coordination",
+      "concept": "Antagonistic muscles",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "When the forearm is raised towards the shoulder in an ordinary elbow bend, how do the biceps and triceps act?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both muscles shorten equally",
+          "why": "Their opposite actions would resist movement.",
+          "whyWrong": "Their opposite actions would resist movement."
+        },
+        {
+          "id": "b",
+          "text": "The biceps contracts and the triceps relaxes",
+          "why": "The biceps pulls to flex the elbow while the opposing triceps can lengthen.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The triceps contracts and the biceps relaxes",
+          "why": "This favours extension at the elbow.",
+          "whyWrong": "This favours extension at the elbow."
+        },
+        {
+          "id": "d",
+          "text": "Both muscles remain relaxed",
+          "why": "This supplies no active force for the bend.",
+          "whyWrong": "This supplies no active force for the bend."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Decide which of the two muscles flexes the elbow.",
+      "explanation": "The biceps pulls to flex the elbow while the opposing triceps can lengthen.",
+      "trap": "Their opposite actions would resist movement.",
+      "mnemonic": "Decide which of the two muscles flexes the elbow.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The biceps pulls to flex the elbow while the opposing triceps can lengthen."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Their opposite actions would resist movement."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-035",
+      "subject": "biology",
+      "chapter": "7",
+      "topic": "Coordination",
+      "concept": "Colour receptors",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which sensory cells let the eye distinguish a green object from a red one in bright daylight?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rod cells",
+          "why": "They are especially sensitive in dim light but do not enable ordinary colour discrimination.",
+          "whyWrong": "They are especially sensitive in dim light but do not enable ordinary colour discrimination."
+        },
+        {
+          "id": "b",
+          "text": "Lens cells",
+          "why": "The lens focuses light.",
+          "whyWrong": "The lens focuses light."
+        },
+        {
+          "id": "c",
+          "text": "Cells of the iris",
+          "why": "The iris regulates how much light enters.",
+          "whyWrong": "The iris regulates how much light enters."
+        },
+        {
+          "id": "d",
+          "text": "Cone cells",
+          "why": "Different kinds of cones respond most strongly to different parts of the visible spectrum.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Look for the light-sensitive cells used especially for colour vision.",
+      "explanation": "Different kinds of cones respond most strongly to different parts of the visible spectrum.",
+      "trap": "They are especially sensitive in dim light but do not enable ordinary colour discrimination.",
+      "mnemonic": "Look for the light-sensitive cells used especially for colour vision.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Different kinds of cones respond most strongly to different parts of the visible spectrum."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "They are especially sensitive in dim light but do not enable ordinary colour discrimination."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-036",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Reproduction",
+      "concept": "Germination and oxygen",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why do soaked bean seeds usually fail to germinate normally when completely deprived of oxygen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aerobic respiration cannot supply the energy needed for growth",
+          "why": "A germinating seed uses oxygen for aerobic respiration, releasing energy from its food reserves.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The seed coat needs oxygen to absorb water",
+          "why": "Imbibition can occur without oxygen.",
+          "whyWrong": "Imbibition can occur without oxygen."
+        },
+        {
+          "id": "c",
+          "text": "The seeds must photosynthesise before sprouting",
+          "why": "Seeds can use stored food before they develop green leaves.",
+          "whyWrong": "Seeds can use stored food before they develop green leaves."
+        },
+        {
+          "id": "d",
+          "text": "Lack of oxygen immediately removes all stored food",
+          "why": "Stored reserves remain present but cannot be used as efficiently.",
+          "whyWrong": "Stored reserves remain present but cannot be used as efficiently."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the energy demand before green leaves appear.",
+      "explanation": "A germinating seed uses oxygen for aerobic respiration, releasing energy from its food reserves.",
+      "trap": "Imbibition can occur without oxygen.",
+      "mnemonic": "Think of the energy demand before green leaves appear.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A germinating seed uses oxygen for aerobic respiration, releasing energy from its food reserves."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Imbibition can occur without oxygen."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-037",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Reproduction",
+      "concept": "Pollen tube",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which structure grows through the style and carries the male gametes towards an ovule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The stigma",
+          "why": "This receives pollen at the top of the carpel.",
+          "whyWrong": "This receives pollen at the top of the carpel."
+        },
+        {
+          "id": "b",
+          "text": "The filament",
+          "why": "This supports the anther.",
+          "whyWrong": "This supports the anther."
+        },
+        {
+          "id": "c",
+          "text": "The seed coat",
+          "why": "This develops from the ovule's integuments after fertilisation.",
+          "whyWrong": "This develops from the ovule's integuments after fertilisation."
+        },
+        {
+          "id": "d",
+          "text": "The pollen tube",
+          "why": "After pollen germinates on the stigma, a pollen tube provides a route to the ovule.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Follow the route after pollen has landed.",
+      "explanation": "After pollen germinates on the stigma, a pollen tube provides a route to the ovule.",
+      "trap": "This receives pollen at the top of the carpel.",
+      "mnemonic": "Follow the route after pollen has landed.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "After pollen germinates on the stigma, a pollen tube provides a route to the ovule."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "This receives pollen at the top of the carpel."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-038",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Reproduction",
+      "concept": "Separate sexes in plants",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Male flowers and female flowers of a species grow on separate plants. Why is self-pollination impossible for this species?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its pollen cannot travel through the air",
+          "why": "The method of transport does not determine whether a plant can pollinate itself.",
+          "whyWrong": "The method of transport does not determine whether a plant can pollinate itself."
+        },
+        {
+          "id": "b",
+          "text": "Its flowers never form ovules",
+          "why": "Female flowers can form ovules.",
+          "whyWrong": "Female flowers can form ovules."
+        },
+        {
+          "id": "c",
+          "text": "No individual bears flowers that can both produce and receive pollen",
+          "why": "Pollen must travel from a male plant to a different plant bearing female flowers.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Its male flowers are already fertilised",
+          "why": "Male flowers supply pollen and are not the sites of fertilisation.",
+          "whyWrong": "Male flowers supply pollen and are not the sites of fertilisation."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Check what a single individual can supply.",
+      "explanation": "Pollen must travel from a male plant to a different plant bearing female flowers.",
+      "trap": "The method of transport does not determine whether a plant can pollinate itself.",
+      "mnemonic": "Check what a single individual can supply.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Pollen must travel from a male plant to a different plant bearing female flowers."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The method of transport does not determine whether a plant can pollinate itself."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-039",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Reproduction",
+      "concept": "Evidence of a stem tuber",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The eyes on a potato can each produce a shoot. What does this show about the potato tuber?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a fruit containing seeds",
+          "why": "The eyes are buds in the tuber rather than seeds inside a fruit.",
+          "whyWrong": "The eyes are buds in the tuber rather than seeds inside a fruit."
+        },
+        {
+          "id": "b",
+          "text": "It is a swollen root with root hairs",
+          "why": "Root hairs do not develop into shoots this way.",
+          "whyWrong": "Root hairs do not develop into shoots this way."
+        },
+        {
+          "id": "c",
+          "text": "It is a modified stem with buds",
+          "why": "The eyes are buds at nodes on a swollen underground stem.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It is a thickened leaf blade",
+          "why": "The tuber has stem nodes bearing buds.",
+          "whyWrong": "The tuber has stem nodes bearing buds."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Look for an identifying feature of a stem.",
+      "explanation": "The eyes are buds at nodes on a swollen underground stem.",
+      "trap": "The eyes are buds in the tuber rather than seeds inside a fruit.",
+      "mnemonic": "Look for an identifying feature of a stem.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The eyes are buds at nodes on a swollen underground stem."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The eyes are buds in the tuber rather than seeds inside a fruit."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-040",
+      "subject": "biology",
+      "chapter": "8",
+      "topic": "Reproduction",
+      "concept": "Site of fertilisation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In a typical human reproductive tract, where do sperm normally meet and fertilise the egg?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An oviduct",
+          "why": "Fertilisation usually occurs in an oviduct before the early embryo reaches the uterus.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The uterus",
+          "why": "The embryo usually implants there later.",
+          "whyWrong": "The embryo usually implants there later."
+        },
+        {
+          "id": "c",
+          "text": "An ovary",
+          "why": "The ovary releases the egg at ovulation.",
+          "whyWrong": "The ovary releases the egg at ovulation."
+        },
+        {
+          "id": "d",
+          "text": "The cervix",
+          "why": "This is the lower opening of the uterus.",
+          "whyWrong": "This is the lower opening of the uterus."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow the egg immediately after ovulation.",
+      "explanation": "Fertilisation usually occurs in an oviduct before the early embryo reaches the uterus.",
+      "trap": "The embryo usually implants there later.",
+      "mnemonic": "Follow the egg immediately after ovulation.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Fertilisation usually occurs in an oviduct before the early embryo reaches the uterus."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The embryo usually implants there later."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-041",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Energy transfer losses",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is less usable food energy available to a hawk than was present in the plants supporting its food chain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All energy accumulates in the predator",
+          "why": "Energy is dissipated at each feeding level.",
+          "whyWrong": "Energy is dissipated at each feeding level."
+        },
+        {
+          "id": "b",
+          "text": "Consumers destroy energy when they digest food",
+          "why": "Energy is transformed and transferred.",
+          "whyWrong": "Energy is transformed and transferred."
+        },
+        {
+          "id": "c",
+          "text": "Plants obtain energy from the hawk",
+          "why": "The initial energy enters through producers.",
+          "whyWrong": "The initial energy enters through producers."
+        },
+        {
+          "id": "d",
+          "text": "Organisms use energy in respiration and lose some of it as heat",
+          "why": "At every feeding level organisms use some energy for life processes, and much of it leaves as heat.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Track how energy is used before another organism feeds.",
+      "explanation": "At every feeding level organisms use some energy for life processes, and much of it leaves as heat.",
+      "trap": "Energy is dissipated at each feeding level.",
+      "mnemonic": "Track how energy is used before another organism feeds.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At every feeding level organisms use some energy for life processes, and much of it leaves as heat."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Energy is dissipated at each feeding level."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-042",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Succession on exposed soil",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A fire removes most plants from a field, but the soil and some dormant seeds remain. Which process best describes the gradual return of vegetation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Primary succession",
+          "why": "Primary succession begins on a surface lacking developed soil.",
+          "whyWrong": "Primary succession begins on a surface lacking developed soil."
+        },
+        {
+          "id": "b",
+          "text": "Genetic drift",
+          "why": "Genetic drift describes random changes in allele frequencies.",
+          "whyWrong": "Genetic drift describes random changes in allele frequencies."
+        },
+        {
+          "id": "c",
+          "text": "Secondary succession",
+          "why": "Secondary succession occurs after disturbance where soil persists, allowing vegetation to re-establish.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Eutrophication",
+          "why": "Eutrophication is nutrient enrichment of a body of water.",
+          "whyWrong": "Eutrophication is nutrient enrichment of a body of water."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Check what was left behind after the fire.",
+      "explanation": "Secondary succession occurs after disturbance where soil persists, allowing vegetation to re-establish.",
+      "trap": "Primary succession begins on a surface lacking developed soil.",
+      "mnemonic": "Check what was left behind after the fire.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Secondary succession occurs after disturbance where soil persists, allowing vegetation to re-establish."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Primary succession begins on a surface lacking developed soil."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-043",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Phosphorus cycling",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which nutrient cycle has no major gaseous stage under ordinary conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The carbon cycle",
+          "why": "Carbon dioxide provides a major gaseous stage.",
+          "whyWrong": "Carbon dioxide provides a major gaseous stage."
+        },
+        {
+          "id": "b",
+          "text": "The nitrogen cycle",
+          "why": "Molecular nitrogen makes up most of the atmosphere.",
+          "whyWrong": "Molecular nitrogen makes up most of the atmosphere."
+        },
+        {
+          "id": "c",
+          "text": "The water cycle",
+          "why": "Water vapour is an important gaseous stage.",
+          "whyWrong": "Water vapour is an important gaseous stage."
+        },
+        {
+          "id": "d",
+          "text": "The phosphorus cycle",
+          "why": "Phosphorus typically moves through rocks, soil, water and organisms, largely as phosphate.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Which of the nutrients mainly moves as dissolved or solid minerals?",
+      "explanation": "Phosphorus typically moves through rocks, soil, water and organisms, largely as phosphate.",
+      "trap": "Carbon dioxide provides a major gaseous stage.",
+      "mnemonic": "Which of the nutrients mainly moves as dissolved or solid minerals?",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Phosphorus typically moves through rocks, soil, water and organisms, largely as phosphate."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Carbon dioxide provides a major gaseous stage."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-044",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Unbiased field sampling",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why should quadrat positions be chosen at random when estimating the abundance of a meadow plant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce bias from selecting convenient or visibly rich patches",
+          "why": "Random placement helps make the sample representative by preventing investigators from deliberately favouring certain spots.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "To ensure every quadrat contains the species",
+          "why": "An empty quadrat contains useful abundance information.",
+          "whyWrong": "An empty quadrat contains useful abundance information."
+        },
+        {
+          "id": "c",
+          "text": "To make every plant equally tall",
+          "why": "The method does not alter plant growth.",
+          "whyWrong": "The method does not alter plant growth."
+        },
+        {
+          "id": "d",
+          "text": "To prevent the plants from reproducing",
+          "why": "Sampling does not control reproduction.",
+          "whyWrong": "Sampling does not control reproduction."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about how choosing the lushest patches would change the estimate.",
+      "explanation": "Random placement helps make the sample representative by preventing investigators from deliberately favouring certain spots.",
+      "trap": "An empty quadrat contains useful abundance information.",
+      "mnemonic": "Think about how choosing the lushest patches would change the estimate.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Random placement helps make the sample representative by preventing investigators from deliberately favouring certain spots."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "An empty quadrat contains useful abundance information."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-045",
+      "subject": "biology",
+      "chapter": "9",
+      "topic": "Ecology",
+      "concept": "Competition after introduction",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "An introduced shade-tolerant shrub forms a dense layer above local seedlings. Which resource are the local seedlings most directly losing under that layer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Atmospheric nitrogen",
+          "why": "The canopy chiefly limits sunlight at seedling height.",
+          "whyWrong": "The canopy chiefly limits sunlight at seedling height."
+        },
+        {
+          "id": "b",
+          "text": "Oxygen dissolved in a pond",
+          "why": "The seedlings are beneath a shrub layer on land.",
+          "whyWrong": "The seedlings are beneath a shrub layer on land."
+        },
+        {
+          "id": "c",
+          "text": "Light",
+          "why": "The dense layer intercepts sunlight before it reaches the seedlings and reduces their ability to photosynthesise.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Pollen from the shrub",
+          "why": "The seedlings already germinated and need light to grow.",
+          "whyWrong": "The seedlings already germinated and need light to grow."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify what the shrub's canopy blocks from above.",
+      "explanation": "The dense layer intercepts sunlight before it reaches the seedlings and reduces their ability to photosynthesise.",
+      "trap": "The canopy chiefly limits sunlight at seedling height.",
+      "mnemonic": "Identify what the shrub's canopy blocks from above.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The dense layer intercepts sunlight before it reaches the seedlings and reduces their ability to photosynthesise."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The canopy chiefly limits sunlight at seedling height."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-046",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "Codominant coat colour",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A roan cow has individual red hairs and individual white hairs mixed throughout its coat. What pattern does this illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Complete dominance",
+          "why": "One allele would mask the effect of the other in a heterozygote.",
+          "whyWrong": "One allele would mask the effect of the other in a heterozygote."
+        },
+        {
+          "id": "b",
+          "text": "Incomplete dominance",
+          "why": "The hairs would show an intermediate colour if they blended this way.",
+          "whyWrong": "The hairs would show an intermediate colour if they blended this way."
+        },
+        {
+          "id": "c",
+          "text": "Codominance",
+          "why": "Both alleles are visibly expressed in the heterozygote, giving red and white hairs.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Environmental mutation",
+          "why": "The question describes simultaneous expression of inherited coat colours.",
+          "whyWrong": "The question describes simultaneous expression of inherited coat colours."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Decide whether both traits show separately or blend.",
+      "explanation": "Both alleles are visibly expressed in the heterozygote, giving red and white hairs.",
+      "trap": "One allele would mask the effect of the other in a heterozygote.",
+      "mnemonic": "Decide whether both traits show separately or blend.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Both alleles are visibly expressed in the heterozygote, giving red and white hairs."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "One allele would mask the effect of the other in a heterozygote."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-047",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "Genetic linkage",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Two genes very close together on the same chromosome often pass to the same gamete because they are what?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Linked",
+          "why": "Genes close together on a chromosome tend to be inherited together because crossing over seldom separates them.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Identical alleles",
+          "why": "They are separate genes at different loci.",
+          "whyWrong": "They are separate genes at different loci."
+        },
+        {
+          "id": "c",
+          "text": "Dominant to one another",
+          "why": "Dominance describes relationships between alleles at a locus.",
+          "whyWrong": "Dominance describes relationships between alleles at a locus."
+        },
+        {
+          "id": "d",
+          "text": "On separate chromosomes",
+          "why": "Genes on different chromosomes normally assort independently.",
+          "whyWrong": "Genes on different chromosomes normally assort independently."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Focus on the physical positions of the two genes.",
+      "explanation": "Genes close together on a chromosome tend to be inherited together because crossing over seldom separates them.",
+      "trap": "They are separate genes at different loci.",
+      "mnemonic": "Focus on the physical positions of the two genes.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Genes close together on a chromosome tend to be inherited together because crossing over seldom separates them."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "They are separate genes at different loci."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-048",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "Crossing over",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which event can produce a chromosome carrying a mixture of maternal and paternal DNA segments during meiosis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exchange between non-sister chromatids of paired homologous chromosomes",
+          "why": "Crossing over between homologous chromosomes exchanges corresponding DNA segments.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Separation of unpaired chromosome sets at fertilisation",
+          "why": "Fertilisation combines gametes and is not the segment exchange.",
+          "whyWrong": "Fertilisation combines gametes and is not the segment exchange."
+        },
+        {
+          "id": "c",
+          "text": "Copying each chromosome before meiosis",
+          "why": "Copying produces sister chromatids without exchanging a segment between homologues.",
+          "whyWrong": "Copying produces sister chromatids without exchanging a segment between homologues."
+        },
+        {
+          "id": "d",
+          "text": "Alignment of one mitotic chromosome at the equator",
+          "why": "Alignment does not itself swap segments.",
+          "whyWrong": "Alignment does not itself swap segments."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for a physical exchange of chromosome segments.",
+      "explanation": "Crossing over between homologous chromosomes exchanges corresponding DNA segments.",
+      "trap": "Fertilisation combines gametes and is not the segment exchange.",
+      "mnemonic": "Look for a physical exchange of chromosome segments.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Crossing over between homologous chromosomes exchanges corresponding DNA segments."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Fertilisation combines gametes and is not the segment exchange."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-049",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "Recessive inheritance",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "For a single autosomal trait with complete dominance, two unaffected parents have a child who expresses the recessive trait. What must each parent have contributed for that trait?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A dominant allele",
+          "why": "A dominant allele would mask the recessive phenotype under these conditions.",
+          "whyWrong": "A dominant allele would mask the recessive phenotype under these conditions."
+        },
+        {
+          "id": "b",
+          "text": "A pair of identical alleles",
+          "why": "Each gamete contributes one allele at the locus.",
+          "whyWrong": "Each gamete contributes one allele at the locus."
+        },
+        {
+          "id": "c",
+          "text": "A recessive allele",
+          "why": "The child must have two recessive copies, one from each unaffected carrier parent.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "No allele at all",
+          "why": "The child inherits an allele at the locus from each parent.",
+          "whyWrong": "The child inherits an allele at the locus from each parent."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Ask what two copies a child needs to show a recessive trait.",
+      "explanation": "The child must have two recessive copies, one from each unaffected carrier parent.",
+      "trap": "A dominant allele would mask the recessive phenotype under these conditions.",
+      "mnemonic": "Ask what two copies a child needs to show a recessive trait.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The child must have two recessive copies, one from each unaffected carrier parent."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A dominant allele would mask the recessive phenotype under these conditions."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "bio-jamb-concept-050",
+      "subject": "biology",
+      "chapter": "10",
+      "topic": "Genetics and Heredity",
+      "concept": "Environmental effects on phenotype",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Genetically identical seedlings grow to different sizes under different amounts of light. What does the result show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every seedling necessarily developed a different genotype",
+          "why": "Different growth can occur with the same genotype.",
+          "whyWrong": "Different growth can occur with the same genotype."
+        },
+        {
+          "id": "b",
+          "text": "Only inherited factors can affect plant height",
+          "why": "The light difference can affect growth.",
+          "whyWrong": "The light difference can affect growth."
+        },
+        {
+          "id": "c",
+          "text": "Growing conditions can affect phenotype",
+          "why": "The seedlings share a genotype, so the differing light conditions can account for their different growth.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Plant height cannot vary within a genotype",
+          "why": "Variation is possible with different growing conditions.",
+          "whyWrong": "Variation is possible with different growing conditions."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Separate the inherited information from the observed size.",
+      "explanation": "The seedlings share a genotype, so the differing light conditions can account for their different growth.",
+      "trap": "Different growth can occur with the same genotype.",
+      "mnemonic": "Separate the inherited information from the observed size.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The seedlings share a genotype, so the differing light conditions can account for their different growth."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Different growth can occur with the same genotype."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Biology 2e, https://openstax.org/books/biology-2e/pages/index.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    }
+  ]
+}

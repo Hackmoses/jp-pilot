@@ -1,0 +1,3057 @@
+{
+  "version": 1,
+  "subject": "physics",
+  "count": 50,
+  "questions": [
+    {
+      "id": "phys-jamb-concept-101",
+      "subject": "physics",
+      "chapter": "1",
+      "topic": "Measurements, Units and Vectors",
+      "concept": "Accuracy and precision",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Repeated measurements of a calibration block are close to one another but all well above its certified value. How should they be described?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accurate but imprecise",
+          "why": "The readings agree with one another rather than scattering widely.",
+          "whyWrong": "The readings agree with one another rather than scattering widely."
+        },
+        {
+          "id": "b",
+          "text": "Precise but inaccurate",
+          "why": "Precision concerns agreement between readings. Accuracy concerns closeness to a reference value.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Both accurate and precise",
+          "why": "Their agreement does not bring them close to the certified value.",
+          "whyWrong": "Their agreement does not bring them close to the certified value."
+        },
+        {
+          "id": "d",
+          "text": "Neither accurate nor precise",
+          "why": "The small spread still shows good precision.",
+          "whyWrong": "The small spread still shows good precision."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the spread of the readings with their distance from the reference.",
+      "explanation": "Precision concerns agreement between readings. Accuracy concerns closeness to a reference value.",
+      "trap": "The readings agree with one another rather than scattering widely.",
+      "mnemonic": "Compare the spread of the readings with their distance from the reference.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Precision concerns agreement between readings. Accuracy concerns closeness to a reference value."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The readings agree with one another rather than scattering widely."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-102",
+      "subject": "physics",
+      "chapter": "1",
+      "topic": "Measurements, Units and Vectors",
+      "concept": "Horizontal and vertical components",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A boy pulls a sled forward with a rope sloping upward. Which component of the tension directly tends to lift the sled?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The vertical component",
+          "why": "Resolving the tension separates its upward effect from its forward effect.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The horizontal component",
+          "why": "It acts along the ground.",
+          "whyWrong": "It acts along the ground."
+        },
+        {
+          "id": "c",
+          "text": "The component opposite the rope tension",
+          "why": "That is not a component of the upward-forward pull.",
+          "whyWrong": "That is not a component of the upward-forward pull."
+        },
+        {
+          "id": "d",
+          "text": "Neither component",
+          "why": "The upward slope gives the tension an upward component.",
+          "whyWrong": "The upward slope gives the tension an upward component."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify which component points away from the floor.",
+      "explanation": "Resolving the tension separates its upward effect from its forward effect.",
+      "trap": "It acts along the ground.",
+      "mnemonic": "Identify which component points away from the floor.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Resolving the tension separates its upward effect from its forward effect."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "It acts along the ground."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-103",
+      "subject": "physics",
+      "chapter": "2",
+      "topic": "Linear Motion and Projectiles",
+      "concept": "Changing direction on a graph",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A car's velocity–time graph crosses from positive velocity to negative velocity. What happens at the crossing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The car always starts speeding up in its original direction",
+          "why": "The sign changes, so the direction after the crossing is different.",
+          "whyWrong": "The sign changes, so the direction after the crossing is different."
+        },
+        {
+          "id": "b",
+          "text": "Its acceleration must be zero",
+          "why": "Acceleration depends on the graph's gradient, not its height.",
+          "whyWrong": "Acceleration depends on the graph's gradient, not its height."
+        },
+        {
+          "id": "c",
+          "text": "The total distance travelled returns to zero",
+          "why": "Distance accumulated in either direction stays positive.",
+          "whyWrong": "Distance accumulated in either direction stays positive."
+        },
+        {
+          "id": "d",
+          "text": "The car reverses its direction of motion",
+          "why": "The sign of velocity gives the direction along the chosen axis. Crossing zero and changing sign indicates a reversal.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Read direction from the sign of the velocity.",
+      "explanation": "The sign of velocity gives the direction along the chosen axis. Crossing zero and changing sign indicates a reversal.",
+      "trap": "The sign changes, so the direction after the crossing is different.",
+      "mnemonic": "Read direction from the sign of the velocity.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The sign of velocity gives the direction along the chosen axis. Crossing zero and changing sign indicates a reversal."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The sign changes, so the direction after the crossing is different."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-104",
+      "subject": "physics",
+      "chapter": "2",
+      "topic": "Linear Motion and Projectiles",
+      "concept": "Vertical symmetry of projectile motion",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A ball is thrown upward and caught at its launch height. Neglecting air resistance, how does the catch speed compare with the launch speed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is smaller because it slowed on ascent",
+          "why": "It gains speed again while descending.",
+          "whyWrong": "It gains speed again while descending."
+        },
+        {
+          "id": "b",
+          "text": "It is greater because gravity acts throughout",
+          "why": "The ball loses on ascent what it gains on descent.",
+          "whyWrong": "The ball loses on ascent what it gains on descent."
+        },
+        {
+          "id": "c",
+          "text": "It is zero because the ball stops at the top",
+          "why": "It accelerates downward after the turning point.",
+          "whyWrong": "It accelerates downward after the turning point."
+        },
+        {
+          "id": "d",
+          "text": "It is the same",
+          "why": "At the same height the ball has the same gravitational potential energy. Conservation of mechanical energy then gives the same speed.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare the speed at two points with the same height.",
+      "explanation": "At the same height the ball has the same gravitational potential energy. Conservation of mechanical energy then gives the same speed.",
+      "trap": "It gains speed again while descending.",
+      "mnemonic": "Compare the speed at two points with the same height.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At the same height the ball has the same gravitational potential energy. Conservation of mechanical energy then gives the same speed."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "It gains speed again while descending."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-105",
+      "subject": "physics",
+      "chapter": "3",
+      "topic": "Forces, Momentum and Equilibrium",
+      "concept": "Momentum exchange",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Two skaters initially at rest push away from one another on level ice. External horizontal forces are negligible. Which statement is correct just after the push?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They must have equal speeds even if their masses differ",
+          "why": "Equal momentum magnitudes need not give equal speeds.",
+          "whyWrong": "Equal momentum magnitudes need not give equal speeds."
+        },
+        {
+          "id": "b",
+          "text": "Their momenta point in the same direction",
+          "why": "That would not give the initial zero total momentum.",
+          "whyWrong": "That would not give the initial zero total momentum."
+        },
+        {
+          "id": "c",
+          "text": "Their horizontal momenta are equal in magnitude and opposite in direction",
+          "why": "Internal forces redistribute momentum. The total remains zero, so the skaters' momenta cancel.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The heavier skater necessarily gains more momentum",
+          "why": "Each receives an equal and opposite impulse.",
+          "whyWrong": "Each receives an equal and opposite impulse."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Treat the two skaters as one system.",
+      "explanation": "Internal forces redistribute momentum. The total remains zero, so the skaters' momenta cancel.",
+      "trap": "Equal momentum magnitudes need not give equal speeds.",
+      "mnemonic": "Treat the two skaters as one system.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Internal forces redistribute momentum. The total remains zero, so the skaters' momenta cancel."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Equal momentum magnitudes need not give equal speeds."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-106",
+      "subject": "physics",
+      "chapter": "3",
+      "topic": "Forces, Momentum and Equilibrium",
+      "concept": "Apparent weight in a lift",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A rider stands on a scale as a lift starts accelerating upward. What happens to the scale reading compared with its reading when the lift is at rest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It decreases",
+          "why": "That can occur when the acceleration is downward.",
+          "whyWrong": "That can occur when the acceleration is downward."
+        },
+        {
+          "id": "b",
+          "text": "It stays fixed because the rider's mass is unchanged",
+          "why": "The scale measures the supporting force, which can change with acceleration.",
+          "whyWrong": "The scale measures the supporting force, which can change with acceleration."
+        },
+        {
+          "id": "c",
+          "text": "It becomes zero",
+          "why": "A zero reading would mean no supporting force.",
+          "whyWrong": "A zero reading would mean no supporting force."
+        },
+        {
+          "id": "d",
+          "text": "It increases",
+          "why": "To accelerate the rider upward, the scale must push upward harder than the rider's weight.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Which force must exceed the rider's weight to accelerate them upward?",
+      "explanation": "To accelerate the rider upward, the scale must push upward harder than the rider's weight.",
+      "trap": "That can occur when the acceleration is downward.",
+      "mnemonic": "Which force must exceed the rider's weight to accelerate them upward?",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "To accelerate the rider upward, the scale must push upward harder than the rider's weight."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "That can occur when the acceleration is downward."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-107",
+      "subject": "physics",
+      "chapter": "4",
+      "topic": "Circular Motion and Gravitation",
+      "concept": "Work by a centripetal force",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A ball moves at constant speed in a circle. Why does the inward net force do no work on the ball?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The force changes the mass but not the speed",
+          "why": "The ball's mass is unchanged.",
+          "whyWrong": "The ball's mass is unchanged."
+        },
+        {
+          "id": "b",
+          "text": "The force points along the displacement",
+          "why": "The displacement is along the tangent rather than towards the centre.",
+          "whyWrong": "The displacement is along the tangent rather than towards the centre."
+        },
+        {
+          "id": "c",
+          "text": "No inward force acts if the speed is constant",
+          "why": "A changing velocity direction still needs a net force.",
+          "whyWrong": "A changing velocity direction still needs a net force."
+        },
+        {
+          "id": "d",
+          "text": "The force is perpendicular to the instantaneous displacement",
+          "why": "Work requires a force component along the displacement. The radial force only changes the direction of motion.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare the radius with the tangent at the same point.",
+      "explanation": "Work requires a force component along the displacement. The radial force only changes the direction of motion.",
+      "trap": "The ball's mass is unchanged.",
+      "mnemonic": "Compare the radius with the tangent at the same point.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Work requires a force component along the displacement. The radial force only changes the direction of motion."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The ball's mass is unchanged."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-108",
+      "subject": "physics",
+      "chapter": "4",
+      "topic": "Circular Motion and Gravitation",
+      "concept": "Geostationary orbit direction",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A satellite is meant to stay above one point on Earth's equator. Which orbital condition is necessary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It travels east to west against Earth's rotation",
+          "why": "Its position would drift relative to the surface.",
+          "whyWrong": "Its position would drift relative to the surface."
+        },
+        {
+          "id": "b",
+          "text": "It moves in Earth's rotation direction with the same angular speed",
+          "why": "A geostationary satellite moves with Earth's rotation in an equatorial orbit, so its position appears fixed from the ground.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It passes over both poles once a day",
+          "why": "A polar orbit cannot stay over one equatorial point.",
+          "whyWrong": "A polar orbit cannot stay over one equatorial point."
+        },
+        {
+          "id": "d",
+          "text": "It remains stationary in space while Earth turns below it",
+          "why": "The point on Earth would rotate away from it.",
+          "whyWrong": "The point on Earth would rotate away from it."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "The point on Earth's surface is itself moving.",
+      "explanation": "A geostationary satellite moves with Earth's rotation in an equatorial orbit, so its position appears fixed from the ground.",
+      "trap": "Its position would drift relative to the surface.",
+      "mnemonic": "The point on Earth's surface is itself moving.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A geostationary satellite moves with Earth's rotation in an equatorial orbit, so its position appears fixed from the ground."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Its position would drift relative to the surface."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-109",
+      "subject": "physics",
+      "chapter": "5",
+      "topic": "Work, Energy, Power and Simple Machines",
+      "concept": "Work along an ideal ramp",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "An object is lifted directly or pushed slowly up a frictionless ramp to the same final height. How does the work against gravity compare?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is less on the ramp because the force is smaller",
+          "why": "The smaller force acts through a longer distance.",
+          "whyWrong": "The smaller force acts through a longer distance."
+        },
+        {
+          "id": "b",
+          "text": "It is greater on the ramp because the path is longer",
+          "why": "The needed force along the ramp is smaller.",
+          "whyWrong": "The needed force along the ramp is smaller."
+        },
+        {
+          "id": "c",
+          "text": "It is the same by either route",
+          "why": "Gravitational potential energy depends on the change in height, not the length of the path.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It is zero on the ramp",
+          "why": "The object still gains gravitational potential energy.",
+          "whyWrong": "The object still gains gravitational potential energy."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare the initial and final heights.",
+      "explanation": "Gravitational potential energy depends on the change in height, not the length of the path.",
+      "trap": "The smaller force acts through a longer distance.",
+      "mnemonic": "Compare the initial and final heights.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Gravitational potential energy depends on the change in height, not the length of the path."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The smaller force acts through a longer distance."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-110",
+      "subject": "physics",
+      "chapter": "5",
+      "topic": "Work, Energy, Power and Simple Machines",
+      "concept": "Energy accounting in machines",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "An old hoist is oiled and then lifts the same load through the same height at the same steady speed. Why can its energy input fall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Less energy is dissipated as frictional heating",
+          "why": "Reducing friction increases efficiency while holding the useful work fixed.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "The load gains less gravitational potential energy",
+          "why": "Its weight and change in height are unchanged.",
+          "whyWrong": "Its weight and change in height are unchanged."
+        },
+        {
+          "id": "c",
+          "text": "The hoist makes the load lighter",
+          "why": "Lubrication does not change the load's weight.",
+          "whyWrong": "Lubrication does not change the load's weight."
+        },
+        {
+          "id": "d",
+          "text": "The hoist produces additional energy from the oil",
+          "why": "The oil reduces losses, rather than acting as the source of lift energy.",
+          "whyWrong": "The oil reduces losses, rather than acting as the source of lift energy."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish useful work from energy dissipated in the machine.",
+      "explanation": "Reducing friction increases efficiency while holding the useful work fixed.",
+      "trap": "Its weight and change in height are unchanged.",
+      "mnemonic": "Distinguish useful work from energy dissipated in the machine.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Reducing friction increases efficiency while holding the useful work fixed."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Its weight and change in height are unchanged."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-111",
+      "subject": "physics",
+      "chapter": "6",
+      "topic": "Friction and Elasticity",
+      "concept": "Lubrication and wear",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "How does a suitable lubricant slow wear between two moving machine parts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It roughens the surfaces so they grip harder",
+          "why": "Greater gripping and abrasion would increase wear.",
+          "whyWrong": "Greater gripping and abrasion would increase wear."
+        },
+        {
+          "id": "b",
+          "text": "It reduces direct contact between irregularities on the surfaces",
+          "why": "A lubricating film can separate the rubbing surfaces and reduce abrasion.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It prevents all relative movement",
+          "why": "Lubrication is used so the surfaces can move.",
+          "whyWrong": "Lubrication is used so the surfaces can move."
+        },
+        {
+          "id": "d",
+          "text": "It increases the weight of both parts substantially",
+          "why": "A change in weight is not the mechanism that reduces wear.",
+          "whyWrong": "A change in weight is not the mechanism that reduces wear."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Consider how a thin film changes what actually touches.",
+      "explanation": "A lubricating film can separate the rubbing surfaces and reduce abrasion.",
+      "trap": "Greater gripping and abrasion would increase wear.",
+      "mnemonic": "Consider how a thin film changes what actually touches.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A lubricating film can separate the rubbing surfaces and reduce abrasion."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Greater gripping and abrasion would increase wear."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-112",
+      "subject": "physics",
+      "chapter": "6",
+      "topic": "Friction and Elasticity",
+      "concept": "Proportional and elastic limits",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A spring no longer shows force proportional to extension, yet returns to its original length when unloaded. What can be concluded?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It has been permanently deformed",
+          "why": "It returned to its original length.",
+          "whyWrong": "It returned to its original length."
+        },
+        {
+          "id": "b",
+          "text": "It still obeys Hooke's law over the whole range used",
+          "why": "The force and extension have stopped being proportional.",
+          "whyWrong": "The force and extension have stopped being proportional."
+        },
+        {
+          "id": "c",
+          "text": "It has passed its proportional limit without passing its elastic limit",
+          "why": "A material can recover its shape after leaving the proportional range. Recovery is what distinguishes elastic from permanent deformation.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It must have fractured internally",
+          "why": "Nonlinear recovery does not by itself establish fracture.",
+          "whyWrong": "Nonlinear recovery does not by itself establish fracture."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Treat proportionality and recovery as separate tests.",
+      "explanation": "A material can recover its shape after leaving the proportional range. Recovery is what distinguishes elastic from permanent deformation.",
+      "trap": "It returned to its original length.",
+      "mnemonic": "Treat proportionality and recovery as separate tests.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A material can recover its shape after leaving the proportional range. Recovery is what distinguishes elastic from permanent deformation."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "It returned to its original length."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-113",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Pressure on a dam wall",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is a dam retaining deep water commonly made thicker near its base?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The water near the surface has the greatest gauge pressure",
+          "why": "The free surface is where gauge pressure is smallest.",
+          "whyWrong": "The free surface is where gauge pressure is smallest."
+        },
+        {
+          "id": "b",
+          "text": "The water exerts greater pressure at greater depth",
+          "why": "At greater depth the weight of the overlying water gives a larger gauge pressure and a greater load on the wall.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Water pushes only on the top of the wall",
+          "why": "Liquid pressure acts against the submerged wall at every depth.",
+          "whyWrong": "Liquid pressure acts against the submerged wall at every depth."
+        },
+        {
+          "id": "d",
+          "text": "The gravitational force on water is greatest at the bottom of the wall",
+          "why": "The pressure increase comes from the extra column of water above, not a major change in gravity.",
+          "whyWrong": "The pressure increase comes from the extra column of water above, not a major change in gravity."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the water above a high point with that above a low point.",
+      "explanation": "At greater depth the weight of the overlying water gives a larger gauge pressure and a greater load on the wall.",
+      "trap": "The free surface is where gauge pressure is smallest.",
+      "mnemonic": "Compare the water above a high point with that above a low point.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At greater depth the weight of the overlying water gives a larger gauge pressure and a greater load on the wall."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The free surface is where gauge pressure is smallest."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-114",
+      "subject": "physics",
+      "chapter": "7",
+      "topic": "Pressure and Fluids at Rest",
+      "concept": "Pressure on rising bubbles",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A trapped air bubble rises through a lake. If the water temperature stays nearly constant, why does the bubble tend to expand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The pressure increases as the bubble rises",
+          "why": "Moving to a shallower depth reduces the surrounding pressure.",
+          "whyWrong": "Moving to a shallower depth reduces the surrounding pressure."
+        },
+        {
+          "id": "b",
+          "text": "Oxygen in the bubble changes into a solid",
+          "why": "That does not explain expansion of the trapped gas.",
+          "whyWrong": "That does not explain expansion of the trapped gas."
+        },
+        {
+          "id": "c",
+          "text": "The surrounding water pressure decreases towards the surface",
+          "why": "At shallower depth the external pressure is lower, so a trapped gas bubble can occupy more space.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The bubble gains mass solely because it moves upward",
+          "why": "The change can occur even when the gas amount remains fixed.",
+          "whyWrong": "The change can occur even when the gas amount remains fixed."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Follow the depth and the pressure as the bubble rises.",
+      "explanation": "At shallower depth the external pressure is lower, so a trapped gas bubble can occupy more space.",
+      "trap": "Moving to a shallower depth reduces the surrounding pressure.",
+      "mnemonic": "Follow the depth and the pressure as the bubble rises.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At shallower depth the external pressure is lower, so a trapped gas bubble can occupy more space."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Moving to a shallower depth reduces the surrounding pressure."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-115",
+      "subject": "physics",
+      "chapter": "8",
+      "topic": "Temperature and Thermal Expansion",
+      "concept": "Bimetal strip",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A strip made of two bonded metals bends when heated freely. Why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both metals always expand by exactly the same amount",
+          "why": "Equal expansion would not explain the bending.",
+          "whyWrong": "Equal expansion would not explain the bending."
+        },
+        {
+          "id": "b",
+          "text": "One metal tends to expand more than the other",
+          "why": "Bonding forces the two metals to stay together. Bending lets the more expansive metal occupy the longer outer arc.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The metals lose different amounts of mass on warming",
+          "why": "The bending is caused by expansion, not ordinary mass loss.",
+          "whyWrong": "The bending is caused by expansion, not ordinary mass loss."
+        },
+        {
+          "id": "d",
+          "text": "Only one side of every warm object can expand",
+          "why": "Both metals can expand but by different amounts.",
+          "whyWrong": "Both metals can expand but by different amounts."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Imagine the metals heated while separated.",
+      "explanation": "Bonding forces the two metals to stay together. Bending lets the more expansive metal occupy the longer outer arc.",
+      "trap": "Equal expansion would not explain the bending.",
+      "mnemonic": "Imagine the metals heated while separated.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Bonding forces the two metals to stay together. Bending lets the more expansive metal occupy the longer outer arc."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Equal expansion would not explain the bending."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-116",
+      "subject": "physics",
+      "chapter": "8",
+      "topic": "Temperature and Thermal Expansion",
+      "concept": "Calibrating the ice point",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What should surround a thermometer bulb when marking the ice point on a Celsius scale under normal atmospheric pressure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dry ice cooling in air",
+          "why": "Solid carbon dioxide is far colder and is a different substance.",
+          "whyWrong": "Solid carbon dioxide is far colder and is a different substance."
+        },
+        {
+          "id": "b",
+          "text": "A block of ice just removed from a freezer",
+          "why": "It may be below the melting point.",
+          "whyWrong": "It may be below the melting point."
+        },
+        {
+          "id": "c",
+          "text": "Pure water that was only just put in a refrigerator",
+          "why": "Its temperature is not fixed by a phase change.",
+          "whyWrong": "Its temperature is not fixed by a phase change."
+        },
+        {
+          "id": "d",
+          "text": "A mixture of pure melting ice and liquid water",
+          "why": "Melting ice in contact with liquid water gives a reproducible fixed point once thermal equilibrium is reached.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Choose the setup that keeps solid and liquid water in equilibrium.",
+      "explanation": "Melting ice in contact with liquid water gives a reproducible fixed point once thermal equilibrium is reached.",
+      "trap": "Solid carbon dioxide is far colder and is a different substance.",
+      "mnemonic": "Choose the setup that keeps solid and liquid water in equilibrium.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Melting ice in contact with liquid water gives a reproducible fixed point once thermal equilibrium is reached."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Solid carbon dioxide is far colder and is a different substance."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-117",
+      "subject": "physics",
+      "chapter": "9",
+      "topic": "Gas Laws and Kinetic Theory",
+      "concept": "Surface tension and detergents",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A drop of detergent makes water spread more readily over a clean surface. Which change helps explain this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The detergent makes water acquire a rigid surface skin",
+          "why": "A rigid surface would resist spreading.",
+          "whyWrong": "A rigid surface would resist spreading."
+        },
+        {
+          "id": "b",
+          "text": "The detergent lowers the water's surface tension",
+          "why": "Detergent is a surfactant. It reduces surface tension and helps water wet the surface.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "The detergent changes liquid water directly into vapour",
+          "why": "The observed spreading is still that of a liquid.",
+          "whyWrong": "The observed spreading is still that of a liquid."
+        },
+        {
+          "id": "d",
+          "text": "The detergent makes gravity act more strongly on the drop",
+          "why": "The change comes from interactions at the liquid surface.",
+          "whyWrong": "The change comes from interactions at the liquid surface."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Consider what makes an untreated drop hold a rounded shape.",
+      "explanation": "Detergent is a surfactant. It reduces surface tension and helps water wet the surface.",
+      "trap": "A rigid surface would resist spreading.",
+      "mnemonic": "Consider what makes an untreated drop hold a rounded shape.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Detergent is a surfactant. It reduces surface tension and helps water wet the surface."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A rigid surface would resist spreading."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-118",
+      "subject": "physics",
+      "chapter": "9",
+      "topic": "Gas Laws and Kinetic Theory",
+      "concept": "Capillary depression",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why is the free surface of mercury in a clean narrow glass tube depressed below that in a wide reservoir?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mercury wets glass strongly and climbs the tube",
+          "why": "That would describe capillary rise, not depression.",
+          "whyWrong": "That would describe capillary rise, not depression."
+        },
+        {
+          "id": "b",
+          "text": "Mercury has no surface tension",
+          "why": "Surface tension contributes to the observed meniscus.",
+          "whyWrong": "Surface tension contributes to the observed meniscus."
+        },
+        {
+          "id": "c",
+          "text": "The glass pulls the mercury up by a greater force than the same depth of water",
+          "why": "An upward pull would not account for the depressed level.",
+          "whyWrong": "An upward pull would not account for the depressed level."
+        },
+        {
+          "id": "d",
+          "text": "Mercury does not wet glass and forms a convex meniscus",
+          "why": "The adhesion of mercury to clean glass is relatively weak. The resulting contact angle and convex surface give capillary depression.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Read the direction in which the meniscus curves.",
+      "explanation": "The adhesion of mercury to clean glass is relatively weak. The resulting contact angle and convex surface give capillary depression.",
+      "trap": "That would describe capillary rise, not depression.",
+      "mnemonic": "Read the direction in which the meniscus curves.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The adhesion of mercury to clean glass is relatively weak. The resulting contact angle and convex surface give capillary depression."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "That would describe capillary rise, not depression."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-119",
+      "subject": "physics",
+      "chapter": "10",
+      "topic": "Heat, Changes of State and Vapours",
+      "concept": "Humidity and evaporation",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Two identical wet shirts are hung at the same temperature and airflow. Which one tends to dry faster?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The one in nearly saturated air",
+          "why": "Humid air takes up less additional moisture, other conditions being equal.",
+          "whyWrong": "Humid air takes up less additional moisture, other conditions being equal."
+        },
+        {
+          "id": "b",
+          "text": "The one in less humid air",
+          "why": "Drier air gives a stronger driving difference for water to evaporate from the cloth into the surrounding air.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "They must dry at the same rate because the temperature is equal",
+          "why": "Humidity also affects the net evaporation rate.",
+          "whyWrong": "Humidity also affects the net evaporation rate."
+        },
+        {
+          "id": "d",
+          "text": "The one exposed to air whose water vapour pressure is already higher",
+          "why": "A smaller vapour-pressure difference generally slows net evaporation.",
+          "whyWrong": "A smaller vapour-pressure difference generally slows net evaporation."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare how much more water vapour each air sample can readily take up.",
+      "explanation": "Drier air gives a stronger driving difference for water to evaporate from the cloth into the surrounding air.",
+      "trap": "Humid air takes up less additional moisture, other conditions being equal.",
+      "mnemonic": "Compare how much more water vapour each air sample can readily take up.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Drier air gives a stronger driving difference for water to evaporate from the cloth into the surrounding air."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Humid air takes up less additional moisture, other conditions being equal."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-120",
+      "subject": "physics",
+      "chapter": "10",
+      "topic": "Heat, Changes of State and Vapours",
+      "concept": "Supercooling",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A clean water sample stays liquid slightly below its normal freezing point. A tiny ice crystal is introduced and freezing begins. What did the ice crystal supply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enough dissolved salt to lower the freezing point sharply",
+          "why": "The added crystal is ice, and the observed change is freezing.",
+          "whyWrong": "The added crystal is ice, and the observed change is freezing."
+        },
+        {
+          "id": "b",
+          "text": "A heat source that raises the water far above freezing",
+          "why": "It promotes the solid phase rather than heating the water far above the freezing point.",
+          "whyWrong": "It promotes the solid phase rather than heating the water far above the freezing point."
+        },
+        {
+          "id": "c",
+          "text": "A means of making the water boil under pressure",
+          "why": "The observation is solidification, not boiling.",
+          "whyWrong": "The observation is solidification, not boiling."
+        },
+        {
+          "id": "d",
+          "text": "A starting surface for crystal growth",
+          "why": "A supercooled liquid can lack a site for crystals to start. A small ice crystal provides a suitable nucleus.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Ask what was missing before the first stable ice began to grow.",
+      "explanation": "A supercooled liquid can lack a site for crystals to start. A small ice crystal provides a suitable nucleus.",
+      "trap": "The added crystal is ice, and the observed change is freezing.",
+      "mnemonic": "Ask what was missing before the first stable ice began to grow.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A supercooled liquid can lack a site for crystals to start. A small ice crystal provides a suitable nucleus."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The added crystal is ice, and the observed change is freezing."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-121",
+      "subject": "physics",
+      "chapter": "11",
+      "topic": "Heat Transfer",
+      "concept": "Land breeze",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "On a clear night, land beside a coast cools faster than the sea. What surface wind can result in the simple land-breeze model?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Air flows from the sea towards the land",
+          "why": "That is the usual daytime sea-breeze direction.",
+          "whyWrong": "That is the usual daytime sea-breeze direction."
+        },
+        {
+          "id": "b",
+          "text": "Air moves upward from the colder land everywhere",
+          "why": "Cooler dense air tends to sink over the land in the model.",
+          "whyWrong": "Cooler dense air tends to sink over the land in the model."
+        },
+        {
+          "id": "c",
+          "text": "No movement occurs because both regions are dark",
+          "why": "The temperature contrast can drive circulation after sunset.",
+          "whyWrong": "The temperature contrast can drive circulation after sunset."
+        },
+        {
+          "id": "d",
+          "text": "Air flows from land towards the sea",
+          "why": "Warmer air tends to rise over the sea, while cooler air near the ground moves from land to sea.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Find where the air remains warmer after sunset.",
+      "explanation": "Warmer air tends to rise over the sea, while cooler air near the ground moves from land to sea.",
+      "trap": "That is the usual daytime sea-breeze direction.",
+      "mnemonic": "Find where the air remains warmer after sunset.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Warmer air tends to rise over the sea, while cooler air near the ground moves from land to sea."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "That is the usual daytime sea-breeze direction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-122",
+      "subject": "physics",
+      "chapter": "11",
+      "topic": "Heat Transfer",
+      "concept": "Steady heat conduction",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "The ends of a metal rod are held at different temperatures for a long time. Its temperature at each marked point stops changing. Why can heat still flow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A temperature gradient remains from the hot end to the cold end",
+          "why": "Steady state means local temperatures stay constant. Heat entering a region can balance heat leaving it.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Every point is now at the same temperature",
+          "why": "The ends are held at different temperatures.",
+          "whyWrong": "The ends are held at different temperatures."
+        },
+        {
+          "id": "c",
+          "text": "Heat flows only while the rod gains energy overall",
+          "why": "In steady conduction, energy can enter and leave at equal rates.",
+          "whyWrong": "In steady conduction, energy can enter and leave at equal rates."
+        },
+        {
+          "id": "d",
+          "text": "The rod becomes a perfect insulator once steady",
+          "why": "A steady profile does not make the material nonconducting.",
+          "whyWrong": "A steady profile does not make the material nonconducting."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish a constant temperature at one point from equal temperatures at all points.",
+      "explanation": "Steady state means local temperatures stay constant. Heat entering a region can balance heat leaving it.",
+      "trap": "The ends are held at different temperatures.",
+      "mnemonic": "Distinguish a constant temperature at one point from equal temperatures at all points.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Steady state means local temperatures stay constant. Heat entering a region can balance heat leaving it."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The ends are held at different temperatures."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-123",
+      "subject": "physics",
+      "chapter": "12",
+      "topic": "Oscillations and Waves",
+      "concept": "Diffraction and gap size",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Water waves pass through a gap in a barrier. When is spreading beyond the gap most pronounced?",
+      "options": [
+        {
+          "id": "a",
+          "text": "When the gap is comparable in size to the wavelength",
+          "why": "Diffraction is more marked when the opening is similar in size to the wavelength than when it is much wider.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "When the gap is many times wider than the wavelength",
+          "why": "Most of the wavefront then continues roughly straight.",
+          "whyWrong": "Most of the wavefront then continues roughly straight."
+        },
+        {
+          "id": "c",
+          "text": "When a solid wall completely closes the gap",
+          "why": "The gap must allow a transmitted wave.",
+          "whyWrong": "The gap must allow a transmitted wave."
+        },
+        {
+          "id": "d",
+          "text": "When only the wave amplitude is increased",
+          "why": "Wavelength relative to gap size controls the spreading pattern.",
+          "whyWrong": "Wavelength relative to gap size controls the spreading pattern."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the opening with the distance between successive crests.",
+      "explanation": "Diffraction is more marked when the opening is similar in size to the wavelength than when it is much wider.",
+      "trap": "Most of the wavefront then continues roughly straight.",
+      "mnemonic": "Compare the opening with the distance between successive crests.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Diffraction is more marked when the opening is similar in size to the wavelength than when it is much wider."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "Most of the wavefront then continues roughly straight."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-124",
+      "subject": "physics",
+      "chapter": "12",
+      "topic": "Oscillations and Waves",
+      "concept": "Wave and particle motion",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A cork on calm water bobs as small ripples pass, but shows little overall drift in the ideal model. What does this illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The wave transfers energy while the local water mainly oscillates",
+          "why": "The travelling pattern carries energy. Local fluid motion does not have to carry the medium along with the pattern.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Most of the same water travels outward with the crest",
+          "why": "The cork's small net movement shows that the medium need not travel with the pattern.",
+          "whyWrong": "The cork's small net movement shows that the medium need not travel with the pattern."
+        },
+        {
+          "id": "c",
+          "text": "The wave cannot cross the point occupied by the cork",
+          "why": "The bouncing cork demonstrates that the disturbance reaches it.",
+          "whyWrong": "The bouncing cork demonstrates that the disturbance reaches it."
+        },
+        {
+          "id": "d",
+          "text": "No energy can move unless all the water moves with the crest",
+          "why": "Energy can pass from one region to the next through a wave.",
+          "whyWrong": "Energy can pass from one region to the next through a wave."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish motion of a crest from motion of a particle.",
+      "explanation": "The travelling pattern carries energy. Local fluid motion does not have to carry the medium along with the pattern.",
+      "trap": "The cork's small net movement shows that the medium need not travel with the pattern.",
+      "mnemonic": "Distinguish motion of a crest from motion of a particle.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The travelling pattern carries energy. Local fluid motion does not have to carry the medium along with the pattern."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The cork's small net movement shows that the medium need not travel with the pattern."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-125",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Beats",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Two tuning forks with slightly different frequencies are sounded together. Why does the combined sound grow louder and softer repeatedly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each fork stops vibrating every time the sound becomes softer",
+          "why": "The changing combination can occur while both forks keep vibrating.",
+          "whyWrong": "The changing combination can occur while both forks keep vibrating."
+        },
+        {
+          "id": "b",
+          "text": "Their waves alternately reinforce and partly cancel one another",
+          "why": "The relative phase changes because the frequencies differ. The waves repeatedly pass through stronger and weaker combinations.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "One fork makes the speed of sound periodically drop to zero",
+          "why": "Changing interference does not require the sound speed to vanish.",
+          "whyWrong": "Changing interference does not require the sound speed to vanish."
+        },
+        {
+          "id": "d",
+          "text": "Their frequencies become exactly the same as soon as they are sounded",
+          "why": "Slightly different frequencies are what make the relative phase change.",
+          "whyWrong": "Slightly different frequencies are what make the relative phase change."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Consider whether the two wave peaks arrive together all the time.",
+      "explanation": "The relative phase changes because the frequencies differ. The waves repeatedly pass through stronger and weaker combinations.",
+      "trap": "The changing combination can occur while both forks keep vibrating.",
+      "mnemonic": "Consider whether the two wave peaks arrive together all the time.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The relative phase changes because the frequencies differ. The waves repeatedly pass through stronger and weaker combinations."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The changing combination can occur while both forks keep vibrating."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-126",
+      "subject": "physics",
+      "chapter": "13",
+      "topic": "Sound",
+      "concept": "Light and sound travel times",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A distant flash and its thunder are produced at nearly the same time. Why is the flash seen before the thunder is heard?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Light travels through air much faster than sound",
+          "why": "Over the same large distance, sound takes much longer to arrive than light.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Sound travels farther only because it moves upward",
+          "why": "A difference in direction is not required to explain the delay.",
+          "whyWrong": "A difference in direction is not required to explain the delay."
+        },
+        {
+          "id": "c",
+          "text": "The flash begins travelling only after the sound reaches the observer",
+          "why": "That would make the flash arrive later.",
+          "whyWrong": "That would make the flash arrive later."
+        },
+        {
+          "id": "d",
+          "text": "Sound moves faster than light in ordinary air",
+          "why": "That would reverse the observed order.",
+          "whyWrong": "That would reverse the observed order."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare how long the two signals need to travel from the same event.",
+      "explanation": "Over the same large distance, sound takes much longer to arrive than light.",
+      "trap": "A difference in direction is not required to explain the delay.",
+      "mnemonic": "Compare how long the two signals need to travel from the same event.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Over the same large distance, sound takes much longer to arrive than light."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "A difference in direction is not required to explain the delay."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-127",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Reversibility of light rays",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Ada can see Bisi's eye in a plane mirror. If neither person nor the mirror moves and nothing blocks the path, what can Bisi see?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the mirror surface, because the reflected path is one-way",
+          "why": "A light ray can traverse the reflected path in reverse.",
+          "whyWrong": "A light ray can traverse the reflected path in reverse."
+        },
+        {
+          "id": "b",
+          "text": "Ada only after the mirror is turned",
+          "why": "The existing mirror orientation allows the reverse path.",
+          "whyWrong": "The existing mirror orientation allows the reverse path."
+        },
+        {
+          "id": "c",
+          "text": "Ada only if both are the same distance from the mirror",
+          "why": "Equal distances are unnecessary for ray reversibility.",
+          "whyWrong": "Equal distances are unnecessary for ray reversibility."
+        },
+        {
+          "id": "d",
+          "text": "Ada's eye in the same mirror",
+          "why": "Light can follow the same geometric path in reverse. If a ray reaches Ada from Bisi's eye, one can also reach Bisi from Ada's eye.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Reverse the path of the reflected ray.",
+      "explanation": "Light can follow the same geometric path in reverse. If a ray reaches Ada from Bisi's eye, one can also reach Bisi from Ada's eye.",
+      "trap": "A light ray can traverse the reflected path in reverse.",
+      "mnemonic": "Reverse the path of the reflected ray.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Light can follow the same geometric path in reverse. If a ray reaches Ada from Bisi's eye, one can also reach Bisi from Ada's eye."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "A light ray can traverse the reflected path in reverse."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-128",
+      "subject": "physics",
+      "chapter": "14",
+      "topic": "Light, Reflection and Mirrors",
+      "concept": "Plane-mirror periscope",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What makes a simple two-mirror periscope useful for looking over a barrier?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each mirror makes light travel through the solid barrier",
+          "why": "The periscope directs light around the obstruction.",
+          "whyWrong": "The periscope directs light around the obstruction."
+        },
+        {
+          "id": "b",
+          "text": "The lower mirror creates light that travels up towards the object",
+          "why": "The light comes from the scene, not from the mirror.",
+          "whyWrong": "The light comes from the scene, not from the mirror."
+        },
+        {
+          "id": "c",
+          "text": "Two reflections redirect light from above the barrier down into the observer's eye",
+          "why": "The upper mirror deflects light down the tube. The lower mirror deflects it again towards the viewer.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The mirrors magnify the image by acting as a convex lens",
+          "why": "Plane mirrors change ray direction without lens refraction.",
+          "whyWrong": "Plane mirrors change ray direction without lens refraction."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Follow the ray from the distant scene to the eye.",
+      "explanation": "The upper mirror deflects light down the tube. The lower mirror deflects it again towards the viewer.",
+      "trap": "The periscope directs light around the obstruction.",
+      "mnemonic": "Follow the ray from the distant scene to the eye.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The upper mirror deflects light down the tube. The lower mirror deflects it again towards the viewer."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The periscope directs light around the obstruction."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-129",
+      "subject": "physics",
+      "chapter": "15",
+      "topic": "Refraction, Lenses and Optical Instruments",
+      "concept": "Diverging lens image",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A real object is viewed through a thin diverging lens. What kind of image does it form on its own?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inverted, enlarged and real",
+          "why": "The rays from a real object diverge after passing through this lens.",
+          "whyWrong": "The rays from a real object diverge after passing through this lens."
+        },
+        {
+          "id": "b",
+          "text": "Upright, diminished and virtual",
+          "why": "The emerging rays diverge but appear to come from a smaller upright image on the object's side.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Upright, enlarged and real",
+          "why": "The backward extensions give a virtual image, smaller than the object.",
+          "whyWrong": "The backward extensions give a virtual image, smaller than the object."
+        },
+        {
+          "id": "d",
+          "text": "Inverted, same size and virtual",
+          "why": "The virtual image of a real object in a diverging lens is upright.",
+          "whyWrong": "The virtual image of a real object in a diverging lens is upright."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Trace the emerging rays backwards.",
+      "explanation": "The emerging rays diverge but appear to come from a smaller upright image on the object's side.",
+      "trap": "The rays from a real object diverge after passing through this lens.",
+      "mnemonic": "Trace the emerging rays backwards.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The emerging rays diverge but appear to come from a smaller upright image on the object's side."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The rays from a real object diverge after passing through this lens."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-130",
+      "subject": "physics",
+      "chapter": "15",
+      "topic": "Refraction, Lenses and Optical Instruments",
+      "concept": "Parallel-sided glass slab",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A light ray enters a parallel-sided glass slab obliquely and emerges into air. Why is the emerging ray parallel to the incident ray in the usual ray model?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ray is never refracted inside the glass",
+          "why": "Oblique incidence and changed speed produce refraction at both surfaces.",
+          "whyWrong": "Oblique incidence and changed speed produce refraction at both surfaces."
+        },
+        {
+          "id": "b",
+          "text": "The second face increases the first deviation in the same direction",
+          "why": "On leaving glass for air, the direction changes in the opposite sense.",
+          "whyWrong": "On leaving glass for air, the direction changes in the opposite sense."
+        },
+        {
+          "id": "c",
+          "text": "The angular deviation at the second face reverses the deviation at the first",
+          "why": "The two parallel interfaces have parallel normals. Entering and leaving reverse the angular change, though the ray can be shifted sideways.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The glass makes light travel at zero speed at both faces",
+          "why": "The ray travels through the glass at a finite speed.",
+          "whyWrong": "The ray travels through the glass at a finite speed."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare the normals at the two faces.",
+      "explanation": "The two parallel interfaces have parallel normals. Entering and leaving reverse the angular change, though the ray can be shifted sideways.",
+      "trap": "Oblique incidence and changed speed produce refraction at both surfaces.",
+      "mnemonic": "Compare the normals at the two faces.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The two parallel interfaces have parallel normals. Entering and leaving reverse the angular change, though the ray can be shifted sideways."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Oblique incidence and changed speed produce refraction at both surfaces."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-131",
+      "subject": "physics",
+      "chapter": "16",
+      "topic": "Dispersion, Colour and the Electromagnetic Spectrum",
+      "concept": "Microwave dish",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What does a correctly aligned parabolic dish do to weak incoming microwaves from a distant transmitter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It changes the microwaves into sound before reflecting them",
+          "why": "The dish focuses an electromagnetic signal.",
+          "whyWrong": "The dish focuses an electromagnetic signal."
+        },
+        {
+          "id": "b",
+          "text": "It reflects the incoming waves towards a receiver near its focus",
+          "why": "The curved reflecting surface brings nearly parallel incoming rays together where the receiver can collect more of the signal.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "It increases their frequency by reflecting them",
+          "why": "Reflection from a stationary dish does not make that frequency shift.",
+          "whyWrong": "Reflection from a stationary dish does not make that frequency shift."
+        },
+        {
+          "id": "d",
+          "text": "It blocks the waves so the receiver sees only thermal radiation",
+          "why": "Receiving the signal relies on redirecting it towards the feed.",
+          "whyWrong": "Receiving the signal relies on redirecting it towards the feed."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Compare the dish with a concave reflector.",
+      "explanation": "The curved reflecting surface brings nearly parallel incoming rays together where the receiver can collect more of the signal.",
+      "trap": "The dish focuses an electromagnetic signal.",
+      "mnemonic": "Compare the dish with a concave reflector.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The curved reflecting surface brings nearly parallel incoming rays together where the receiver can collect more of the signal."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The dish focuses an electromagnetic signal."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-132",
+      "subject": "physics",
+      "chapter": "16",
+      "topic": "Dispersion, Colour and the Electromagnetic Spectrum",
+      "concept": "Transmission through colour filters",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A red filter and a blue filter are placed one after the other in white light. In the ideal model, with no overlap between their passbands, what emerges?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Magenta light made by adding red and blue",
+          "why": "The filters remove parts of one beam in sequence. They do not add two separate beams.",
+          "whyWrong": "The filters remove parts of one beam in sequence. They do not add two separate beams."
+        },
+        {
+          "id": "b",
+          "text": "Bright purple light because all colours remain",
+          "why": "Each filter blocks the wavelengths passed by the other.",
+          "whyWrong": "Each filter blocks the wavelengths passed by the other."
+        },
+        {
+          "id": "c",
+          "text": "White light restored by the second filter",
+          "why": "The second filter cannot restore light already absorbed.",
+          "whyWrong": "The second filter cannot restore light already absorbed."
+        },
+        {
+          "id": "d",
+          "text": "Very little or no visible light",
+          "why": "When the passbands do not overlap, wavelengths transmitted by one filter are blocked by the other.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Work out which wavelengths can pass through both filters.",
+      "explanation": "When the passbands do not overlap, wavelengths transmitted by one filter are blocked by the other.",
+      "trap": "The filters remove parts of one beam in sequence. They do not add two separate beams.",
+      "mnemonic": "Work out which wavelengths can pass through both filters.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "When the passbands do not overlap, wavelengths transmitted by one filter are blocked by the other."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The filters remove parts of one beam in sequence. They do not add two separate beams."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-133",
+      "subject": "physics",
+      "chapter": "17",
+      "topic": "Electrostatics and Capacitors",
+      "concept": "Leaving an induced charge",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A negative rod is held near an isolated conducting sphere. The sphere is briefly earthed while the rod stays in place. The earth connection is removed before the rod is taken away. What charge remains on the sphere?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Negative",
+          "why": "Electrons were repelled from the sphere into Earth during earthing.",
+          "whyWrong": "Electrons were repelled from the sphere into Earth during earthing."
+        },
+        {
+          "id": "b",
+          "text": "Positive",
+          "why": "The negative rod drives some electrons to Earth. Removing the earth connection first prevents those electrons from returning.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Neutral",
+          "why": "Disconnecting the earth first leaves the sphere with an electron deficit.",
+          "whyWrong": "Disconnecting the earth first leaves the sphere with an electron deficit."
+        },
+        {
+          "id": "d",
+          "text": "Alternating positive and negative",
+          "why": "The final isolated conductor has one net charge.",
+          "whyWrong": "The final isolated conductor has one net charge."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Follow the electrons while the earth connection is still present.",
+      "explanation": "The negative rod drives some electrons to Earth. Removing the earth connection first prevents those electrons from returning.",
+      "trap": "Electrons were repelled from the sphere into Earth during earthing.",
+      "mnemonic": "Follow the electrons while the earth connection is still present.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The negative rod drives some electrons to Earth. Removing the earth connection first prevents those electrons from returning."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Electrons were repelled from the sphere into Earth during earthing."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-134",
+      "subject": "physics",
+      "chapter": "17",
+      "topic": "Electrostatics and Capacitors",
+      "concept": "A capacitor at steady direct voltage",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "An ideal capacitor is connected through a resistor to a constant direct supply. What happens to the current after the capacitor is fully charged?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It falls to zero",
+          "why": "Once the capacitor voltage equals the supply voltage, there is no voltage across the series resistor to sustain a current.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "It remains as large as at the instant of connection",
+          "why": "The voltage available to drive current through the resistor drops during charging.",
+          "whyWrong": "The voltage available to drive current through the resistor drops during charging."
+        },
+        {
+          "id": "c",
+          "text": "It reverses steadily forever",
+          "why": "There is no alternating driving voltage in this circuit.",
+          "whyWrong": "There is no alternating driving voltage in this circuit."
+        },
+        {
+          "id": "d",
+          "text": "It crosses the capacitor's insulating gap at a constant rate",
+          "why": "An ideal dielectric does not conduct steady current.",
+          "whyWrong": "An ideal dielectric does not conduct steady current."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Distinguish the brief charging stage from the steady state.",
+      "explanation": "Once the capacitor voltage equals the supply voltage, there is no voltage across the series resistor to sustain a current.",
+      "trap": "The voltage available to drive current through the resistor drops during charging.",
+      "mnemonic": "Distinguish the brief charging stage from the steady state.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Once the capacitor voltage equals the supply voltage, there is no voltage across the series resistor to sustain a current."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The voltage available to drive current through the resistor drops during charging."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-135",
+      "subject": "physics",
+      "chapter": "18",
+      "topic": "Electric Cells and Direct-Current Circuits",
+      "concept": "Voltmeter loading",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why should a real voltmeter draw very little current from the circuit it measures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Otherwise it can change the voltage being measured",
+          "why": "A high-resistance voltmeter draws little current in parallel, reducing its effect on the circuit voltage.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "It needs to carry the circuit's full current",
+          "why": "That is the role of a series ammeter, not a voltmeter.",
+          "whyWrong": "That is the role of a series ammeter, not a voltmeter."
+        },
+        {
+          "id": "c",
+          "text": "A larger meter current always makes the reading exact",
+          "why": "A meter that draws current can disturb the circuit.",
+          "whyWrong": "A meter that draws current can disturb the circuit."
+        },
+        {
+          "id": "d",
+          "text": "The voltage must vanish whenever an instrument is attached",
+          "why": "A high-resistance voltmeter can measure without appreciably changing it.",
+          "whyWrong": "A high-resistance voltmeter can measure without appreciably changing it."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think about how adding a conducting branch can alter an existing circuit.",
+      "explanation": "A high-resistance voltmeter draws little current in parallel, reducing its effect on the circuit voltage.",
+      "trap": "That is the role of a series ammeter, not a voltmeter.",
+      "mnemonic": "Think about how adding a conducting branch can alter an existing circuit.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A high-resistance voltmeter draws little current in parallel, reducing its effect on the circuit voltage."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "That is the role of a series ammeter, not a voltmeter."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-136",
+      "subject": "physics",
+      "chapter": "18",
+      "topic": "Electric Cells and Direct-Current Circuits",
+      "concept": "Opposing cells",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Two identical ideal cells are connected in series with one of them reversed so that their emfs oppose. What is their combined emf?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zero",
+          "why": "Equal emfs acting in opposite senses cancel algebraically.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Larger than that of either cell",
+          "why": "The emfs add only when the cells aid one another.",
+          "whyWrong": "The emfs add only when the cells aid one another."
+        },
+        {
+          "id": "c",
+          "text": "The same as that of one cell",
+          "why": "The second identical emf acts in the opposite direction.",
+          "whyWrong": "The second identical emf acts in the opposite direction."
+        },
+        {
+          "id": "d",
+          "text": "Alternating with each passage around the circuit",
+          "why": "The orientation gives opposing steady emfs, not an alternating source.",
+          "whyWrong": "The orientation gives opposing steady emfs, not an alternating source."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Trace the direction of the potential rise across each cell.",
+      "explanation": "Equal emfs acting in opposite senses cancel algebraically.",
+      "trap": "The emfs add only when the cells aid one another.",
+      "mnemonic": "Trace the direction of the potential rise across each cell.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Equal emfs acting in opposite senses cancel algebraically."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The emfs add only when the cells aid one another."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-137",
+      "subject": "physics",
+      "chapter": "19",
+      "topic": "Electrical Energy and Power",
+      "concept": "Local electrical heating",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A circuit joint has deteriorated and becomes noticeably hotter than the adjacent wire while carrying the same current. What best explains the local heating?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It converts more current into extra charge at the joint",
+          "why": "Charge is conserved and current remains the same through the series path.",
+          "whyWrong": "Charge is conserved and current remains the same through the series path."
+        },
+        {
+          "id": "b",
+          "text": "It carries no current because resistance causes heat without current",
+          "why": "Resistive heating in this setting requires current.",
+          "whyWrong": "Resistive heating in this setting requires current."
+        },
+        {
+          "id": "c",
+          "text": "It is heated only by the insulating outer cover",
+          "why": "The electrical energy is dissipated mainly at the high-resistance joint.",
+          "whyWrong": "The electrical energy is dissipated mainly at the high-resistance joint."
+        },
+        {
+          "id": "d",
+          "text": "Its contact resistance is higher than that of the nearby wire",
+          "why": "At the same current, a greater resistance dissipates more energy per second as heat.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Compare resistance locally while keeping current fixed.",
+      "explanation": "At the same current, a greater resistance dissipates more energy per second as heat.",
+      "trap": "Charge is conserved and current remains the same through the series path.",
+      "mnemonic": "Compare resistance locally while keeping current fixed.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At the same current, a greater resistance dissipates more energy per second as heat."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Charge is conserved and current remains the same through the series path."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-138",
+      "subject": "physics",
+      "chapter": "19",
+      "topic": "Electrical Energy and Power",
+      "concept": "Recognising a short circuit",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What happens when a metal strand forms a very low-resistance path across the two terminals of a cell?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It acts as a large resistance and stops the current",
+          "why": "The strand is specified to offer very little resistance.",
+          "whyWrong": "The strand is specified to offer very little resistance."
+        },
+        {
+          "id": "b",
+          "text": "It necessarily raises the cell's emf",
+          "why": "Changing the external path does not raise the cell's intrinsic emf.",
+          "whyWrong": "Changing the external path does not raise the cell's intrinsic emf."
+        },
+        {
+          "id": "c",
+          "text": "It can allow a current much larger than the intended load current",
+          "why": "A short circuit bypasses the intended load with a low-resistance path. Internal and connection resistances then limit the current.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It guarantees the cell stays cool at every current",
+          "why": "High current can cause heating in the cell or connecting material.",
+          "whyWrong": "High current can cause heating in the cell or connecting material."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Identify the part of the circuit the strand bypasses.",
+      "explanation": "A short circuit bypasses the intended load with a low-resistance path. Internal and connection resistances then limit the current.",
+      "trap": "The strand is specified to offer very little resistance.",
+      "mnemonic": "Identify the part of the circuit the strand bypasses.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A short circuit bypasses the intended load with a low-resistance path. Internal and connection resistances then limit the current."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The strand is specified to offer very little resistance."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-139",
+      "subject": "physics",
+      "chapter": "20",
+      "topic": "Magnetic Fields, Motors and Meters",
+      "concept": "Neutral points in a magnetic field",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A small compass at one point near a magnet shows no preferred horizontal direction, although both the magnet and Earth's field are present. What can cause this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The two horizontal magnetic fields cancel at that point",
+          "why": "At a neutral point the horizontal components can be equal and opposite, leaving no net horizontal field to align the compass.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "A compass cannot respond to two fields at once",
+          "why": "It responds to their vector sum.",
+          "whyWrong": "It responds to their vector sum."
+        },
+        {
+          "id": "c",
+          "text": "Earth's magnetic field stops existing locally",
+          "why": "The fields can remain present while their net effect vanishes.",
+          "whyWrong": "The fields can remain present while their net effect vanishes."
+        },
+        {
+          "id": "d",
+          "text": "Both horizontal fields point the same way and add",
+          "why": "That would give a stronger horizontal direction.",
+          "whyWrong": "That would give a stronger horizontal direction."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Combine the two fields as vectors.",
+      "explanation": "At a neutral point the horizontal components can be equal and opposite, leaving no net horizontal field to align the compass.",
+      "trap": "It responds to their vector sum.",
+      "mnemonic": "Combine the two fields as vectors.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "At a neutral point the horizontal components can be equal and opposite, leaving no net horizontal field to align the compass."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "It responds to their vector sum."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-140",
+      "subject": "physics",
+      "chapter": "20",
+      "topic": "Magnetic Fields, Motors and Meters",
+      "concept": "Drawing magnetic field lines",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why are two magnetic field lines never drawn crossing at an ordinary point where the field is nonzero?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crossing would make the field infinitely strong at all other points",
+          "why": "The issue is conflicting directions at the crossing.",
+          "whyWrong": "The issue is conflicting directions at the crossing."
+        },
+        {
+          "id": "b",
+          "text": "The field has a single direction at that point",
+          "why": "Each field line is tangent to the local field. A crossing would give two directions for the same nonzero field vector.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Field lines are solid wires that cannot touch",
+          "why": "Lines are a representation of the field, not material objects.",
+          "whyWrong": "Lines are a representation of the field, not material objects."
+        },
+        {
+          "id": "d",
+          "text": "The field direction can change only at a pole",
+          "why": "It can vary continuously throughout space.",
+          "whyWrong": "It can vary continuously throughout space."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Ask what the tangent to a field line represents.",
+      "explanation": "Each field line is tangent to the local field. A crossing would give two directions for the same nonzero field vector.",
+      "trap": "The issue is conflicting directions at the crossing.",
+      "mnemonic": "Ask what the tangent to a field line represents.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Each field line is tangent to the local field. A crossing would give two directions for the same nonzero field vector."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The issue is conflicting directions at the crossing."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-141",
+      "subject": "physics",
+      "chapter": "21",
+      "topic": "Electromagnetic Induction and AC Circuits",
+      "concept": "Alternating generator output",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Why does the output emf of a simple rotating-coil generator reverse every half-turn with slip rings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The slip rings act as a split-ring commutator",
+          "why": "Slip rings maintain continuous separate connections to the ends of the coil.",
+          "whyWrong": "Slip rings maintain continuous separate connections to the ends of the coil."
+        },
+        {
+          "id": "b",
+          "text": "The field magnets exchange their north and south poles",
+          "why": "The coil turns in a magnetic field whose poles remain fixed.",
+          "whyWrong": "The coil turns in a magnetic field whose poles remain fixed."
+        },
+        {
+          "id": "c",
+          "text": "The magnetic flux through the coil changes in the opposite sense",
+          "why": "The direction of induced emf depends on the sign of the rate of change of flux. That sign reverses during successive half-turns.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The circuit changes from a conductor to an insulator every half-turn",
+          "why": "Induction changes sign while the conductive path remains available.",
+          "whyWrong": "Induction changes sign while the conductive path remains available."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Track the direction of flux change, not a change of the magnet itself.",
+      "explanation": "The direction of induced emf depends on the sign of the rate of change of flux. That sign reverses during successive half-turns.",
+      "trap": "Slip rings maintain continuous separate connections to the ends of the coil.",
+      "mnemonic": "Track the direction of flux change, not a change of the magnet itself.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The direction of induced emf depends on the sign of the rate of change of flux. That sign reverses during successive half-turns."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Slip rings maintain continuous separate connections to the ends of the coil."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-142",
+      "subject": "physics",
+      "chapter": "21",
+      "topic": "Electromagnetic Induction and AC Circuits",
+      "concept": "AC phase in a resistor",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A sinusoidal voltage is applied to an ideal resistor. How does the current vary relative to the voltage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It always leads the voltage by a quarter cycle",
+          "why": "That phase relation is associated with an ideal capacitor.",
+          "whyWrong": "That phase relation is associated with an ideal capacitor."
+        },
+        {
+          "id": "b",
+          "text": "It always lags the voltage by a quarter cycle",
+          "why": "That phase relation is associated with an ideal inductor.",
+          "whyWrong": "That phase relation is associated with an ideal inductor."
+        },
+        {
+          "id": "c",
+          "text": "It reaches its peaks and zero crossings at the same times",
+          "why": "For an ideal resistor, instantaneous current is directly proportional to instantaneous voltage, with no phase shift.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "It remains constant while the voltage changes",
+          "why": "The current follows the changing voltage through the fixed resistance.",
+          "whyWrong": "The current follows the changing voltage through the fixed resistance."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Look for any energy-storage effect that would make the current lag or lead.",
+      "explanation": "For an ideal resistor, instantaneous current is directly proportional to instantaneous voltage, with no phase shift.",
+      "trap": "That phase relation is associated with an ideal capacitor.",
+      "mnemonic": "Look for any energy-storage effect that would make the current lag or lead.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "For an ideal resistor, instantaneous current is directly proportional to instantaneous voltage, with no phase shift."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "That phase relation is associated with an ideal capacitor."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-143",
+      "subject": "physics",
+      "chapter": "22",
+      "topic": "Conduction in Liquids and Gases",
+      "concept": "Carriers inside and outside an electrolyte",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "During steady electrolysis, what carries charge through a metallic wire and through the liquid electrolyte respectively?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Electrons in the wire and mobile ions in the liquid",
+          "why": "Electrons move through the metal; cations and anions drift within the electrolyte.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Ions in both the wire and liquid",
+          "why": "The mobile charge carriers in an ordinary metallic wire are electrons.",
+          "whyWrong": "The mobile charge carriers in an ordinary metallic wire are electrons."
+        },
+        {
+          "id": "c",
+          "text": "Electrons in both the wire and liquid",
+          "why": "In the bulk electrolyte, ions carry the current.",
+          "whyWrong": "In the bulk electrolyte, ions carry the current."
+        },
+        {
+          "id": "d",
+          "text": "Neutral atoms in the wire and neutral molecules in the liquid",
+          "why": "A net current requires mobile charged particles.",
+          "whyWrong": "A net current requires mobile charged particles."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Identify which charged particles can move freely in each material.",
+      "explanation": "Electrons move through the metal; cations and anions drift within the electrolyte.",
+      "trap": "The mobile charge carriers in an ordinary metallic wire are electrons.",
+      "mnemonic": "Identify which charged particles can move freely in each material.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Electrons move through the metal; cations and anions drift within the electrolyte."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "The mobile charge carriers in an ordinary metallic wire are electrons."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-144",
+      "subject": "physics",
+      "chapter": "22",
+      "topic": "Conduction in Liquids and Gases",
+      "concept": "Stopping gas conduction",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A weakly ionised gas conducts while a source continuously creates charge carriers. What can happen after that source is removed and no new ions are formed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The current increases forever because every ion remains in the gas",
+          "why": "The supply of mobile charged particles is no longer replenished.",
+          "whyWrong": "The supply of mobile charged particles is no longer replenished."
+        },
+        {
+          "id": "b",
+          "text": "The neutral gas becomes a steady metallic conductor",
+          "why": "Neutral gas lacks the abundance of mobile electrons found in metal.",
+          "whyWrong": "Neutral gas lacks the abundance of mobile electrons found in metal."
+        },
+        {
+          "id": "c",
+          "text": "The current falls as electrons and ions recombine or reach the electrodes",
+          "why": "Without continued ionisation, existing mobile charge carriers are lost by recombination or collection, so conduction weakens.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "All positive ions reverse their charges immediately",
+          "why": "Removing the source does not change the sign of an ion.",
+          "whyWrong": "Removing the source does not change the sign of an ion."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Follow what happens to the existing carriers when new ones stop forming.",
+      "explanation": "Without continued ionisation, existing mobile charge carriers are lost by recombination or collection, so conduction weakens.",
+      "trap": "The supply of mobile charged particles is no longer replenished.",
+      "mnemonic": "Follow what happens to the existing carriers when new ones stop forming.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Without continued ionisation, existing mobile charge carriers are lost by recombination or collection, so conduction weakens."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The supply of mobile charged particles is no longer replenished."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-145",
+      "subject": "physics",
+      "chapter": "23",
+      "topic": "Atomic Physics and Quantum Effects",
+      "concept": "Identifying an absorption spectrum",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "How does an absorption spectrum arise when white light passes through a cooler gas and reaches a spectroscope?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The gas removes every wavelength by the same amount to make separate lines",
+          "why": "Equal removal would dim the spectrum without producing distinct lines.",
+          "whyWrong": "Equal removal would dim the spectrum without producing distinct lines."
+        },
+        {
+          "id": "b",
+          "text": "Atoms remove light at particular wavelengths, leaving dark lines",
+          "why": "Atoms absorb photons that match allowed energy changes. The intensity is reduced at those characteristic wavelengths.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Atoms in the gas emit only a perfectly smooth range of wavelengths into the beam",
+          "why": "That would not account for dark lines at particular wavelengths.",
+          "whyWrong": "That would not account for dark lines at particular wavelengths."
+        },
+        {
+          "id": "d",
+          "text": "The spectroscope creates new dark wavelengths regardless of the gas",
+          "why": "The missing light comes from selective absorption by the gas.",
+          "whyWrong": "The missing light comes from selective absorption by the gas."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Dark lines mark places where light is missing.",
+      "explanation": "Atoms absorb photons that match allowed energy changes. The intensity is reduced at those characteristic wavelengths.",
+      "trap": "Equal removal would dim the spectrum without producing distinct lines.",
+      "mnemonic": "Dark lines mark places where light is missing.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Atoms absorb photons that match allowed energy changes. The intensity is reduced at those characteristic wavelengths."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Equal removal would dim the spectrum without producing distinct lines."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-146",
+      "subject": "physics",
+      "chapter": "23",
+      "topic": "Atomic Physics and Quantum Effects",
+      "concept": "Wave behaviour of electrons",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Which observation supports the idea that moving electrons can behave like waves?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A beam of electrons forms a diffraction pattern after passing through a thin crystal",
+          "why": "The repeating arrangement of a crystal produces interference in an electron beam, giving a diffraction pattern.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "An electron is attracted to a positively charged plate",
+          "why": "That shows its negative charge rather than wave behaviour.",
+          "whyWrong": "That shows its negative charge rather than wave behaviour."
+        },
+        {
+          "id": "c",
+          "text": "A stationary electron has a fixed rest mass",
+          "why": "Rest mass alone is not evidence of diffraction.",
+          "whyWrong": "Rest mass alone is not evidence of diffraction."
+        },
+        {
+          "id": "d",
+          "text": "Electrons can carry charge through a conductor",
+          "why": "Conduction does not by itself distinguish particle and wave descriptions.",
+          "whyWrong": "Conduction does not by itself distinguish particle and wave descriptions."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for an observation also associated with waves such as light.",
+      "explanation": "The repeating arrangement of a crystal produces interference in an electron beam, giving a diffraction pattern.",
+      "trap": "That shows its negative charge rather than wave behaviour.",
+      "mnemonic": "Look for an observation also associated with waves such as light.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "The repeating arrangement of a crystal produces interference in an electron beam, giving a diffraction pattern."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "That shows its negative charge rather than wave behaviour."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-147",
+      "subject": "physics",
+      "chapter": "24",
+      "topic": "Nuclear Physics",
+      "concept": "Beta-minus nuclear change",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "In beta-minus decay, which change occurs inside the nucleus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A proton changes into a neutron",
+          "why": "That is associated with beta-plus decay or electron capture, not beta minus.",
+          "whyWrong": "That is associated with beta-plus decay or electron capture, not beta minus."
+        },
+        {
+          "id": "b",
+          "text": "Two protons combine to make an alpha particle",
+          "why": "Beta-minus decay does not emit a helium nucleus.",
+          "whyWrong": "Beta-minus decay does not emit a helium nucleus."
+        },
+        {
+          "id": "c",
+          "text": "The nucleus loses whole orbital electrons without any internal change",
+          "why": "Losing an orbital electron alone is ionisation.",
+          "whyWrong": "Losing an orbital electron alone is ionisation."
+        },
+        {
+          "id": "d",
+          "text": "A neutron changes into a proton",
+          "why": "In beta-minus decay a neutron becomes a proton and an electron is emitted. The atomic number increases while the mass number stays the same.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Identify the change that increases the number of protons by one.",
+      "explanation": "In beta-minus decay a neutron becomes a proton and an electron is emitted. The atomic number increases while the mass number stays the same.",
+      "trap": "That is associated with beta-plus decay or electron capture, not beta minus.",
+      "mnemonic": "Identify the change that increases the number of protons by one.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "In beta-minus decay a neutron becomes a proton and an electron is emitted. The atomic number increases while the mass number stays the same."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "That is associated with beta-plus decay or electron capture, not beta minus."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-148",
+      "subject": "physics",
+      "chapter": "24",
+      "topic": "Nuclear Physics",
+      "concept": "Activity and amount",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "Two fresh samples contain the same pure radioactive isotope. One sample has more undecayed nuclei. What differs at that moment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The larger sample has a longer half-life",
+          "why": "Half-life is a property of that isotope and decay mode.",
+          "whyWrong": "Half-life is a property of that isotope and decay mode."
+        },
+        {
+          "id": "b",
+          "text": "The smaller sample always has greater activity",
+          "why": "Fewer identical unstable nuclei give fewer expected decays per unit time.",
+          "whyWrong": "Fewer identical unstable nuclei give fewer expected decays per unit time."
+        },
+        {
+          "id": "c",
+          "text": "The larger sample has greater activity but the same half-life",
+          "why": "Activity depends on how many unstable nuclei are present. Half-life describes the probability of decay for the isotope.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "The activity and half-life must both be identical",
+          "why": "The decay probability is the same for each nucleus, but the nuclei counts differ.",
+          "whyWrong": "The decay probability is the same for each nucleus, but the nuclei counts differ."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Distinguish the total rate from the rate associated with one nucleus.",
+      "explanation": "Activity depends on how many unstable nuclei are present. Half-life describes the probability of decay for the isotope.",
+      "trap": "Half-life is a property of that isotope and decay mode.",
+      "mnemonic": "Distinguish the total rate from the rate associated with one nucleus.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Activity depends on how many unstable nuclei are present. Half-life describes the probability of decay for the isotope."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "Half-life is a property of that isotope and decay mode."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-149",
+      "subject": "physics",
+      "chapter": "25",
+      "topic": "Semiconductors and Electronics",
+      "concept": "Light-emitting diode",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "What directly produces light in a forward-biased light-emitting diode?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Electrons and holes recombine and release energy as photons",
+          "why": "Recombination in a suitable semiconductor releases energy that can be emitted as visible light.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "A metal filament glows because it melts",
+          "why": "An LED emits by semiconductor recombination without a hot filament.",
+          "whyWrong": "An LED emits by semiconductor recombination without a hot filament."
+        },
+        {
+          "id": "c",
+          "text": "The electric current removes the semiconductor's atoms one by one",
+          "why": "The solid remains in place during ordinary operation.",
+          "whyWrong": "The solid remains in place during ordinary operation."
+        },
+        {
+          "id": "d",
+          "text": "The junction stores incident light and releases it when disconnected",
+          "why": "The emission occurs when the junction is driven electrically.",
+          "whyWrong": "The emission occurs when the junction is driven electrically."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Connect light emission with the behaviour of charge carriers at the junction.",
+      "explanation": "Recombination in a suitable semiconductor releases energy that can be emitted as visible light.",
+      "trap": "An LED emits by semiconductor recombination without a hot filament.",
+      "mnemonic": "Connect light emission with the behaviour of charge carriers at the junction.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Recombination in a suitable semiconductor releases energy that can be emitted as visible light."
+        },
+        {
+          "id": "whynot",
+          "optionId": "b",
+          "answer": "An LED emits by semiconductor recombination without a hot filament."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    },
+    {
+      "id": "phys-jamb-concept-150",
+      "subject": "physics",
+      "chapter": "25",
+      "topic": "Semiconductors and Electronics",
+      "concept": "Inverter logic",
+      "type": "recall",
+      "difficulty": 2,
+      "stem": "A single-input logic device gives a high output only when its input is low. Which device is it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An AND gate",
+          "why": "The ordinary AND function requires all of its inputs to be high for a high output.",
+          "whyWrong": "The ordinary AND function requires all of its inputs to be high for a high output."
+        },
+        {
+          "id": "b",
+          "text": "An OR gate",
+          "why": "The OR function gives a high output if at least one input is high.",
+          "whyWrong": "The OR function gives a high output if at least one input is high."
+        },
+        {
+          "id": "c",
+          "text": "A NOT gate",
+          "why": "A NOT gate inverts a binary input. Low becomes high, and high becomes low.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "A buffer",
+          "why": "A buffer reproduces the input state instead of reversing it.",
+          "whyWrong": "A buffer reproduces the input state instead of reversing it."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "b",
+        "d"
+      ],
+      "hint": "Compare each output state with the input state that produces it.",
+      "explanation": "A NOT gate inverts a binary input. Low becomes high, and high becomes low.",
+      "trap": "The ordinary AND function requires all of its inputs to be high for a high output.",
+      "mnemonic": "Compare each output state with the input state that produces it.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "A NOT gate inverts a binary input. Low becomes high, and high becomes low."
+        },
+        {
+          "id": "whynot",
+          "optionId": "a",
+          "answer": "The ordinary AND function requires all of its inputs to be high for a high output."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original JAMB-style practice. Answer reference: OpenStax Physics, https://openstax.org/details/books/physics.",
+      "label": "JAMB-style practice",
+      "reviewed": false
+    }
+  ]
+}
