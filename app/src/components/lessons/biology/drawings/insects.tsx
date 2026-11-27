@@ -85,4 +85,30 @@ export default processDrawing("Insect growth and feeding", [
       },
     ],
   },
+  {
+    scenes: [4],
+    outline: [
+      ["ink", "M160 44V226"],
+    ],
+    parts: [
+      {
+        cue: 'part-4-0', label: "Insect:|chitin cuticle", at: [16,42], tip: [86,138], align: 'start',
+        strokes: [
+          ["amber", "M60 118Q84 88 108 118V170Q84 186 60 170Z"],
+          ["ink", "M84 96V178M60 124l-18-10m18 28l-20 4m20 18l-16 14m64-54l18-10m-18 28l20 4m-20 18l16 14"],
+        ],
+      },
+      {
+        cue: 'part-4-1', label: "Crustacean:|chitin + calcium", at: [304,42], tip: [234,138], align: 'end',
+        strokes: [
+          ["paper", "M196 128Q234 94 272 128Q278 164 234 176Q190 164 196 128Z"],
+          ["shade", "M206 132Q234 106 262 132Q262 158 234 166Q206 158 206 132Z"],
+          ["ink", "M202 120l-14-18l12-6m64 24l14-18l-12-6m-66 44l-18 10m18 8l-16 14m84-24l18 10m-18 8l16 14"],
+        ],
+        flows: [
+          ["amber", "M234 92V124"],
+        ],
+      },
+    ],
+  },
 ])

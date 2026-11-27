@@ -1,0 +1,130 @@
+{
+  "subject": "biology",
+  "topicId": "9",
+  "lessons": [
+    {
+      "id": "biology-temperature-instruments",
+      "title": "Body temperature and field instruments",
+      "scenes": [
+        {
+          "id": "biology-temperature-instruments-1",
+          "show": "",
+          "say": "Poikilotherms such as lizards and frogs have body temperatures that change with their surroundings, so a lizard basks in sunshine to warm up. Homoiotherms such as birds and mammals keep steady body temperature.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "Poikilotherms",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "basks",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "Homoiotherms",
+              "action": "part-0-2",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-temperature-instruments-2",
+          "show": "",
+          "say": "In field studies, each instrument measures one condition. A thermometer measures temperature, a barometer measures atmospheric pressure, a hygrometer measures relative humidity, and a rain gauge measures rainfall.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "thermometer",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "barometer",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "hygrometer",
+              "action": "part-1-2",
+              "label": ""
+            },
+            {
+              "word": "rain",
+              "action": "part-1-3",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-temperature-instruments-3",
+          "show": "",
+          "say": "A wind vane shows wind direction, while spinning cups on an anemometer measure wind speed. In water, a Secchi disc measures turbidity, and on land a quadrat samples small plants.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "vane",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "anemometer",
+              "action": "part-2-1",
+              "label": ""
+            },
+            {
+              "word": "Secchi",
+              "action": "part-2-2",
+              "label": ""
+            },
+            {
+              "word": "quadrat",
+              "action": "part-2-3",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-temperature-instruments-4",
+          "show": "",
+          "say": "For JAMB, match changing body temperature to poikilothermy, atmospheric pressure to a barometer, relative humidity to a hygrometer, wind speed to an anemometer, turbidity to a Secchi disc, and plant sampling to a quadrat.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "poikilothermy",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "barometer",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "hygrometer",
+              "action": "part-1-2",
+              "label": ""
+            },
+            {
+              "word": "quadrat",
+              "action": "part-2-3",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which ecological instrument measures atmospheric pressure during fieldwork?",
+        "options": [
+          "Hygrometer",
+          "Barometer",
+          "Anemometer"
+        ],
+        "answerIndex": 1,
+        "feedback": "A barometer measures atmospheric pressure, a hygrometer measures relative humidity, and an anemometer measures wind speed."
+      }
+    }
+  ]
+}

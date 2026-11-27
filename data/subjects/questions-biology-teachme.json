@@ -1,7 +1,7 @@
 {
   "version": 1,
   "subject": "biology",
-  "count": 2,
+  "count": 7,
   "questions": [
     {
       "id": "bio-pilot-001",
@@ -112,6 +112,286 @@
       "animationId": null,
       "lockedOptions": [],
       "source": "Original practice · OpenStax Biology 2e §12.3",
+      "reviewed": true,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "bio-pilot-003",
+      "subject": "biology",
+      "topic": "Coordination",
+      "chapter": "7",
+      "concept": "Plant hormones",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which plant hormone is made at shoot tips, stimulates cell elongation and causes a stem to bend toward light?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abscisic acid",
+          "why": "Abscisic acid promotes seed dormancy and closes stomata during water stress rather than bending stems toward light.",
+          "whyWrong": "Abscisic acid promotes seed dormancy and closes stomata during water stress rather than bending stems toward light."
+        },
+        {
+          "id": "b",
+          "text": "Auxin",
+          "why": "Auxin is produced at apical tips, stimulates cell elongation and collects on the shaded side so a shoot bends toward light.",
+          "whyWrong": null
+        },
+        {
+          "id": "c",
+          "text": "Ethylene",
+          "why": "Ethylene is a gas hormone associated chiefly with fruit ripening and leaf fall.",
+          "whyWrong": "Ethylene is a gas hormone associated chiefly with fruit ripening and leaf fall."
+        },
+        {
+          "id": "d",
+          "text": "Cytokinin",
+          "why": "Cytokinins stimulate cell division and lateral bud growth rather than phototropic stem bending.",
+          "whyWrong": "Cytokinins stimulate cell division and lateral bud growth rather than phototropic stem bending."
+        }
+      ],
+      "answerId": "b",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Think of the hormone made at the shoot tip that elongates shaded cells.",
+      "explanation": "Auxin is produced at apical tips, stimulates cell elongation and collects on the shaded side so a shoot bends toward light.",
+      "trap": "Abscisic acid promotes seed dormancy and closes stomata during water stress rather than bending stems toward light.",
+      "mnemonic": "Auxin elongates shaded cells to bend stems toward light.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Auxin elongates cells more on the shaded side, bending the shoot toward light."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original practice · OpenStax Biology 2e §30.6",
+      "reviewed": true,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "bio-pilot-004",
+      "subject": "biology",
+      "topic": "Coordination",
+      "chapter": "7",
+      "concept": "Plant hormones",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which gaseous plant hormone speeds up fruit ripening and promotes leaf fall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ethylene",
+          "why": "Ethylene is a gaseous hormone that accelerates fruit ripening and promotes abscission of leaves.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Gibberellin",
+          "why": "Gibberellins promote stem elongation, bolting and seed germination rather than acting as the fruit-ripening gas.",
+          "whyWrong": "Gibberellins promote stem elongation, bolting and seed germination rather than acting as the fruit-ripening gas."
+        },
+        {
+          "id": "c",
+          "text": "Cytokinin",
+          "why": "Cytokinins stimulate cell division and lateral bud growth rather than ripening.",
+          "whyWrong": "Cytokinins stimulate cell division and lateral bud growth rather than ripening."
+        },
+        {
+          "id": "d",
+          "text": "Auxin",
+          "why": "Auxin promotes cell elongation at tips and inhibits side buds.",
+          "whyWrong": "Auxin promotes cell elongation at tips and inhibits side buds."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Look for the only gas among the major plant hormones.",
+      "explanation": "Ethylene is a gaseous hormone that accelerates fruit ripening and promotes abscission of leaves.",
+      "trap": "Gibberellins promote stem elongation, bolting and seed germination rather than acting as the fruit-ripening gas.",
+      "mnemonic": "Ethylene is the gas hormone that ripens fruit.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Ethylene is a gas hormone that speeds fruit ripening and leaf fall."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original practice · OpenStax Biology 2e §30.6",
+      "reviewed": true,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "bio-pilot-005",
+      "subject": "biology",
+      "topic": "Nutrition",
+      "chapter": "3",
+      "concept": "Tooth types and function",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "Which type of mammalian tooth sits at the front of the jaw and is chisel-shaped for biting and cutting food?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Molar",
+          "why": "Molars are broad back teeth adapted for crushing and grinding food.",
+          "whyWrong": "Molars are broad back teeth adapted for crushing and grinding food."
+        },
+        {
+          "id": "b",
+          "text": "Premolar",
+          "why": "Premolars sit behind the canines and help crush and grind food.",
+          "whyWrong": "Premolars sit behind the canines and help crush and grind food."
+        },
+        {
+          "id": "c",
+          "text": "Incisor",
+          "why": "Incisors are sharp front teeth shaped for biting and cutting food.",
+          "whyWrong": null
+        },
+        {
+          "id": "d",
+          "text": "Canine",
+          "why": "Canines are pointed teeth adapted for piercing and tearing food rather than cutting.",
+          "whyWrong": "Canines are pointed teeth adapted for piercing and tearing food rather than cutting."
+        }
+      ],
+      "answerId": "c",
+      "removeOrder": [
+        "a",
+        "b"
+      ],
+      "hint": "Think of the sharp front teeth used to take a bite from food.",
+      "explanation": "Incisors are sharp front teeth shaped for biting and cutting food.",
+      "trap": "Canines are pointed teeth adapted for piercing and tearing food rather than cutting.",
+      "mnemonic": "Incisors make the initial cut at the front.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Incisors sit at the front and cut food."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original practice · OpenStax Anatomy and Physiology 2e §23.3",
+      "reviewed": true,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "bio-pilot-006",
+      "subject": "biology",
+      "topic": "Nutrition",
+      "chapter": "3",
+      "concept": "Herbivore dentition",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "What is the toothless gap between the incisors and premolars in a mammalian herbivore jaw called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carnassial",
+          "why": "Carnassials are sharp shearing cheek teeth in carnivores, not a gap in herbivores.",
+          "whyWrong": "Carnassials are sharp shearing cheek teeth in carnivores, not a gap in herbivores."
+        },
+        {
+          "id": "b",
+          "text": "Clitellum",
+          "why": "The clitellum is a glandular reproductive band on an earthworm.",
+          "whyWrong": "The clitellum is a glandular reproductive band on an earthworm."
+        },
+        {
+          "id": "c",
+          "text": "Pulp cavity",
+          "why": "The pulp cavity is the soft inner chamber containing nerves and blood vessels inside a tooth.",
+          "whyWrong": "The pulp cavity is the soft inner chamber containing nerves and blood vessels inside a tooth."
+        },
+        {
+          "id": "d",
+          "text": "Diastema",
+          "why": "Where canines are absent in herbivores, a toothless gap called the diastema lies between incisors and premolars.",
+          "whyWrong": null
+        }
+      ],
+      "answerId": "d",
+      "removeOrder": [
+        "b",
+        "c"
+      ],
+      "hint": "Recall the space left when canines are missing in grazing mammals.",
+      "explanation": "Where canines are absent in herbivores, a toothless gap called the diastema lies between incisors and premolars.",
+      "trap": "Carnassials are sharp shearing cheek teeth in carnivores, not a gap in herbivores.",
+      "mnemonic": "Diastema is the herbivore gap without canines.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Herbivores lack canines, leaving a gap called the diastema."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original practice · OpenStax Biology 2e §29.6",
+      "reviewed": true,
+      "label": "JAMB-style practice"
+    },
+    {
+      "id": "bio-pilot-007",
+      "subject": "biology",
+      "topic": "Nutrition",
+      "chapter": "3",
+      "concept": "Carnivore dentition",
+      "type": "recall",
+      "difficulty": 1,
+      "stem": "A mammal has dental formula I \\frac{3}{3}, C \\frac{1}{1}, PM \\frac{4}{4}, M \\frac{2}{3}, with long curved canines and sharp shearing carnassial teeth. Which diet fits these teeth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carnivore",
+          "why": "Large pointed canines tear flesh and sharp carnassial teeth shear meat cleanly, matching a carnivore.",
+          "whyWrong": null
+        },
+        {
+          "id": "b",
+          "text": "Herbivore",
+          "why": "Typical herbivores lack canines and have a diastema with flat ridged grinding teeth instead of carnassials.",
+          "whyWrong": "Typical herbivores lack canines and have a diastema with flat ridged grinding teeth instead of carnassials."
+        },
+        {
+          "id": "c",
+          "text": "Saprophyte",
+          "why": "Saprophytes such as fungi digest dead organic matter externally rather than chewing with teeth.",
+          "whyWrong": "Saprophytes such as fungi digest dead organic matter externally rather than chewing with teeth."
+        },
+        {
+          "id": "d",
+          "text": "Filter feeder",
+          "why": "Filter feeders strain tiny food particles from water without pointed tearing canines or carnassials.",
+          "whyWrong": "Filter feeders strain tiny food particles from water without pointed tearing canines or carnassials."
+        }
+      ],
+      "answerId": "a",
+      "removeOrder": [
+        "c",
+        "d"
+      ],
+      "hint": "Focus on the pointed canines and slicing carnassial cheek teeth.",
+      "explanation": "Large pointed canines tear flesh and sharp carnassial teeth shear meat cleanly, matching a carnivore.",
+      "trap": "Typical herbivores lack canines and have a diastema with flat ridged grinding teeth instead of carnassials.",
+      "mnemonic": "Canines and carnassials shear flesh in carnivores.",
+      "askPresets": [
+        {
+          "id": "simpler",
+          "answer": "Large canines tear meat and carnassials slice it in carnivores."
+        }
+      ],
+      "animationId": null,
+      "lockedOptions": [],
+      "source": "Original practice · OpenStax Biology 2e §29.6",
       "reviewed": true,
       "label": "JAMB-style practice"
     }

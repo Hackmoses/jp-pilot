@@ -1,0 +1,120 @@
+{
+  "subject": "biology",
+  "topicId": "3",
+  "lessons": [
+    {
+      "id": "biology-teeth-diet",
+      "title": "Teeth and diet",
+      "scenes": [
+        {
+          "id": "biology-teeth-diet-1",
+          "show": "",
+          "say": "Mammals have four kinds of teeth shaped for different tasks. Sharp incisors at the front cut food, pointed canines pierce and tear flesh, while broad premolars and molars crush and grind food.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "incisors",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "canines",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "molars",
+              "action": "part-0-2",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-teeth-diet-2",
+          "show": "",
+          "say": "A dental formula counts the teeth on one side of the jaw, putting upper teeth above lower teeth. Double each pair to count the whole mouth, and check whether canines are absent.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "upper",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "lower",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "Double",
+              "action": "part-1-2",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-teeth-diet-3",
+          "show": "",
+          "say": "Plant-eating herbivores lack canines, leaving a toothless gap called a diastema, and have broad premolars and molars for grinding tough plants. Meat-eating carnivores have large pointed canines and sharp carnassial teeth for shearing flesh.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "diastema",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "grinding",
+              "action": "part-2-1",
+              "label": ""
+            },
+            {
+              "word": "canines",
+              "action": "part-2-2",
+              "label": ""
+            },
+            {
+              "word": "carnassial",
+              "action": "part-2-3",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-teeth-diet-4",
+          "show": "",
+          "say": "For JAMB, read a dental formula with zero canines and many grinding premolars and molars as a herbivore, and link large canines and carnassials to carnivores.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "molars",
+              "action": "part-2-1",
+              "label": ""
+            },
+            {
+              "word": "herbivore",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "carnivores",
+              "action": "part-2-3",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "What toothless gap sits between the incisors and premolars in a herbivore?",
+        "options": [
+          "Carnassial",
+          "Diastema",
+          "Pulp cavity"
+        ],
+        "answerIndex": 1,
+        "feedback": "Herbivores lack canines, leaving a diastema where food can be rolled between the tongue and cheek before grinding."
+      }
+    }
+  ]
+}

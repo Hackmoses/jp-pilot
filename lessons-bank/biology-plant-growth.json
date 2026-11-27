@@ -1,0 +1,110 @@
+{
+  "subject": "biology",
+  "topicId": "7",
+  "lessons": [
+    {
+      "id": "biology-plant-growth",
+      "title": "Plant growth and hormones",
+      "scenes": [
+        {
+          "id": "biology-plant-growth-1",
+          "show": "",
+          "say": "Plants lengthen at shoot and root apical meristems, where cells divide actively by mitosis. Because meristems can remain active as the plant matures, many plants continue growing throughout life.",
+          "visual": "0",
+          "beats": [
+            {
+              "word": "shoot",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "root",
+              "action": "part-0-1",
+              "label": ""
+            },
+            {
+              "word": "throughout",
+              "action": "part-0-2",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-plant-growth-2",
+          "show": "",
+          "say": "Auxin made at the shoot tip stimulates cell elongation and bends stems toward light while inhibiting side buds. Gibberellin promotes rapid stem elongation and bolting, while cytokinin, or kinin, stimulates cell division and bud growth.",
+          "visual": "1",
+          "beats": [
+            {
+              "word": "Auxin",
+              "action": "part-1-0",
+              "label": ""
+            },
+            {
+              "word": "Gibberellin",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "cytokinin",
+              "action": "part-1-2",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-plant-growth-3",
+          "show": "",
+          "say": "Abscisic acid helps plants cope with drought by promoting seed dormancy and closing stomata. Ethylene is a gas hormone that speeds up fruit ripening and promotes leaf fall.",
+          "visual": "2",
+          "beats": [
+            {
+              "word": "Abscisic",
+              "action": "part-2-0",
+              "label": ""
+            },
+            {
+              "word": "Ethylene",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "biology-plant-growth-4",
+          "show": "",
+          "say": "For JAMB, link tip elongation and growth throughout life to active apical meristems, bolting to gibberellin, directional stem bending to auxin, and fruit ripening to ethylene.",
+          "visual": "3",
+          "beats": [
+            {
+              "word": "apical",
+              "action": "part-0-0",
+              "label": ""
+            },
+            {
+              "word": "bolting",
+              "action": "part-1-1",
+              "label": ""
+            },
+            {
+              "word": "ripening",
+              "action": "part-2-1",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "pastQuestion": null,
+      "quickCheck": {
+        "prompt": "Which plant hormone stimulates rapid stem elongation and bolting?",
+        "options": [
+          "Gibberellin",
+          "Abscisic acid",
+          "Ethylene"
+        ],
+        "answerIndex": 0,
+        "feedback": "Gibberellins promote stem elongation and bolting, whereas abscisic acid slows growth and ethylene speeds ripening."
+      }
+    }
+  ]
+}
