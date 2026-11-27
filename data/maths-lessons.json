@@ -54,7 +54,7 @@
             "2^{3} × 2^{4} = 2^{7} = 128",
             "3^{5} ÷ 3^{2} = 3^{3} = 27"
           ],
-          "narration": "Keep the base and add the powers when you multiply. When you divide powers with the same nonzero base, subtract the bottom exponent from the top.",
+          "narration": "A power is just a short way of writing repeated multiplication. Two cubed means three twos multiplied together. So if you multiply two cubed by two to the four, how many twos do you have? Three plus four, seven twos. That is why you add the powers. Dividing cancels some twos, so you subtract. This only works when the bases are the same.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -89,7 +89,7 @@
             "(\\frac{a}{b})^{n} = \\frac{a^{n}}{b^{n}} (b ≠ 0)",
             "(2^{3})^{2} = 2^{6} = 64"
           ],
-          "narration": "Multiply the exponents when you raise a power to another power. An outer power also applies to each factor of a product and each part of a quotient.",
+          "narration": "What happens when you raise a power to another power? Two cubed, squared, means two cubed written twice. That is three twos, then three more. Six twos in total. So you multiply the powers. And when the bracket holds a product or a fraction, the outer power goes to every part inside.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -123,7 +123,7 @@
             "5^{3} ÷ 5^{3} = 5^{0} = 1",
             "2^{−3} = \\frac{1}{8}"
           ],
-          "narration": "Any nonzero base to the power zero gives one. A negative exponent takes the reciprocal. You can see why when you divide equal powers and get one.",
+          "narration": "Where does power zero come from? Divide five cubed by five cubed. You get one, because anything divided by itself is one. But the power rule says three minus three, which is zero. So five to the zero must be one. A negative power means flip it. Two to the minus three is one over eight.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -153,7 +153,7 @@
             "a^{\\frac{1}{2}} = \\sqrt{a}",
             "27^{\\frac{2}{3}} = (27^{\\frac{1}{3}})^{2} = 3^{2} = 9"
           ],
-          "narration": "For a positive base, the denominator gives the root and the numerator gives the power. Take the root first if that makes the numbers easier to handle.",
+          "narration": "A fraction in the power is a root and a power together. The bottom number is the root. The top number is the power. For twenty seven to the two thirds, the bottom is three, so take the cube root first. That gives three. Then the top is two, so square it. Three squared is nine. Root first keeps the numbers small.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -181,7 +181,7 @@
           "working": [
             "4^{x} = 8 ⇒ 2^{2x} = 2^{3} ⇒ x = \\frac{3}{2}"
           ],
-          "narration": "If you can rewrite both sides as powers of the same positive base other than one, equate their exponents. This turns many index equations into simple algebra.",
+          "narration": "If two powers of the same base are equal, their powers must be equal too. So the trick is to make the bases match. Four to the x equals eight looks hard. But four is two squared, and eight is two cubed. Now both sides are powers of two, so two x equals three. That gives one and a half.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -211,7 +211,7 @@
             "(4 × 10^{3})(3 × 10^{2}) = 12 × 10^{5} = 1.2 × 10^{6}",
             "2 × 10^{3} + 4 × 10^{2} = (2 + 0.4) × 10^{3} = 2.4 × 10^{3}"
           ],
-          "narration": "Give a nonzero number an integer power of ten and a coefficient with magnitude from one up to ten. For products or quotients, handle the coefficients and powers separately. For sums or differences, match the powers first. Then normalise.",
+          "narration": "Standard form is a short way to write very big or very small numbers. Look at the front number. It must be at least one but less than ten. So twelve times ten to the five is not finished, because twelve is too big. Make it one point two, and give the ten one more power. Now it is one point two times ten to the six.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -244,7 +244,7 @@
           "working": [
             "2^{4} = 16 ⇒ 16^{\\frac{1}{4}} = 2"
           ],
-          "narration": "The denominator of the exponent is four, so start by finding the fourth root of sixteen."
+          "narration": "Let's try one. Three things are hiding in this power. A minus sign, a bottom number four, and a top number three. Take them one at a time, starting with the bottom. The bottom number means the fourth root. What number times itself four times gives sixteen? Two. So the fourth root of sixteen is two."
         },
         {
           "n": 9,
@@ -253,7 +253,7 @@
           "title": "Use the numerator as a power",
           "display": "16^{\\frac{3}{4}} = 2^{3} = 8",
           "working": [],
-          "narration": "The numerator is three, so cube the root you just found. Two cubed gives eight."
+          "narration": "Now the top number, three. It means we cube our answer. Two cubed is eight. So sixteen to the three quarters is eight. We have used the bottom and the top. Only the minus sign is left."
         },
         {
           "n": 10,
@@ -262,7 +262,7 @@
           "title": "Take the reciprocal",
           "display": "16^{−\\frac{3}{4}} = \\frac{1}{8}",
           "working": [],
-          "narration": "The exponent was negative, so take the reciprocal of eight to get one eighth."
+          "narration": "A minus sign in the power means flip it over. So eight becomes one over eight. That is the answer. Notice the order we used. Root, then power, then flip. It keeps the numbers small, so you never have to work with big ones."
         },
         {
           "n": 11,
@@ -273,7 +273,7 @@
           "working": [
             "27 = 3^{3}; 9 = 3^{2}"
           ],
-          "narration": "The right side already uses base three. Twenty-seven is three cubed and nine is three squared, so use base three on the left as well."
+          "narration": "Now a real JAMB question. The bases are different, twenty seven, nine and three. We can't compare them like that. But all three come from three. Twenty seven is three cubed. Nine is three squared. So let's write everything with base three."
         },
         {
           "n": 12,
@@ -282,7 +282,7 @@
           "title": "Multiply the inner and outer powers",
           "display": "\\frac{3^{3(x+2)}}{3^{2(x+1)}} = 3^{2x}",
           "working": [],
-          "narration": "Both powers on the left have an outer exponent. Multiply the inner exponent by the entire expression in its bracket."
+          "narration": "Twenty seven to the x plus two becomes three cubed, to the x plus two. A power of a power, so multiply. That is three to the three times x plus two. Do the same for nine. It becomes three to the two times x plus one. Keep the brackets for now."
         },
         {
           "n": 13,
@@ -293,7 +293,7 @@
           "working": [
             "3x + 6 − 2x − 2 = x + 4"
           ],
-          "narration": "Division subtracts the denominator exponent. Keep the brackets until you have subtracted both terms in that exponent."
+          "narration": "Dividing powers with the same base means subtract the powers. Here is the trap. You must subtract the whole bottom power, not just part of it. Three x plus six, minus two x, minus two. That leaves x plus four. The brackets protect you from a sign mistake."
         },
         {
           "n": 14,
@@ -304,7 +304,7 @@
           "working": [
             "4 + 4 = 2 × 4 = 8"
           ],
-          "narration": "With base three on both sides, the exponents must agree. Subtract x from both sides, then check that both exponents become eight."
+          "narration": "Now both sides are three to some power. So the powers must be equal. X plus four equals two x. Take x from both sides, and x is four. Check it. Four plus four is eight, and two times four is eight. Both match, so we are right."
         },
         {
           "n": 15,
@@ -315,7 +315,7 @@
           "working": [
             "x = 3 ⇒ x + 4 = 7; 2x = 6"
           ],
-          "narration": "A value that looks close must still make both exponents equal. Three gives seven on one side and six on the other.",
+          "narration": "JAMB likes to offer an answer that looks close. If you try three, the left power becomes seven but the right becomes six. Not equal, so three is wrong. Always put your answer back in and check both powers. It takes ten seconds and saves the mark.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -343,7 +343,7 @@
           "working": [
             "0.00043 × 2000 = 0.86"
           ],
-          "narration": "After multiplying the two decimals, check the size of your answer. Eight point six must be divided by ten to give zero point eight six.",
+          "narration": "In standard form, a number smaller than one needs a negative power of ten. Zero point eight six is less than one. So it is eight point six times ten to the minus one, not ten to the one. Ask yourself, is my number big or small? Then check the sign.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -369,7 +369,7 @@
           "title": "Remember this",
           "display": "Same base, track the power",
           "working": [],
-          "narration": "Keep track of what happens to the base and its exponent before you do the arithmetic.",
+          "narration": "So here is the one habit for indices. Make the bases the same, then follow what happens to the powers. Multiplying adds them. Dividing subtracts them. A bracket multiplies them. Keep track of the power, and indices become simple.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -480,7 +480,7 @@
             "log_{b} 1 = 0; log_{b} b = 1",
             "log A = log_{10} A in common logarithm notation; ln A = log_{e} A"
           ],
-          "narration": "A logarithm asks what power of the base gives the argument. The base must be positive and different from one, and the argument must be positive.",
+          "narration": "A logarithm is a question. Log base two of eight asks, what power of two gives eight? Two times two times two is eight. Three twos, so the answer is three. Every log is really a power in disguise. Log of one is always zero, and log of the base itself is always one. A log with no base written means base ten.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -519,7 +519,7 @@
             "log_{b} A − log_{b} B = log_{b}(\\frac{A}{B})",
             "log_{2} 8 − log_{2} 2 = log_{2} 4 = 2"
           ],
-          "narration": "Add logs of the same base by multiplying the positive arguments. Subtract logs of the same base by dividing the first argument by the second.",
+          "narration": "Logs turn multiplying into adding. Why? Because a log is a power, and multiplying powers adds them. So log of A plus log of B is log of A times B. Taking away logs means dividing inside. Log two of eight minus log two of two is log two of four. That is two.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -553,7 +553,7 @@
             "2 log_{3} 3 = log_{3}(3^{2}) = 2",
             "\\frac{1}{2} log_{2} 16 = log_{2} \\sqrt{16} = 2"
           ],
-          "narration": "A number multiplying a logarithm can move inside as an exponent on the positive argument. This works for fractional and negative multipliers as well.",
+          "narration": "A number in front of a log can climb up into the power. Two times log of three becomes log of three squared. It works the other way too. Half of log sixteen becomes log of root sixteen. This is useful for combining logs. Move every front number into the power first, then combine.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -581,7 +581,7 @@
           "working": [
             "log_{4} 64 = \\frac{log_{2} 64}{log_{2} 4} = \\frac{6}{2} = 3"
           ],
-          "narration": "Choose a valid new base and use it in both logarithms. Put the original argument on top and the original base underneath.",
+          "narration": "Sometimes the base is awkward. Change it to one you like. Log base four of sixty four looks hard. But four and sixty four are both powers of two. So write it as log two of sixty four over log two of four. That is six over two, which is three. Choose a base that makes both numbers easy.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -609,7 +609,7 @@
           "working": [
             "log_{3}(x − 1) = 2 ⇒ x − 1 = 3^{2} ⇒ x = 10"
           ],
-          "narration": "Combine same-base logs, then equate positive arguments or rewrite a single log as an exponential equation. Test each candidate in the original equation, where every argument must be positive.",
+          "narration": "When you solve a log equation, you must remember one rule. You can only take the log of a positive number. So write down what x is allowed to be before you start. Then undo the log by writing it as a power. Log base three of x minus one equals two means x minus one is nine.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -642,7 +642,7 @@
           "working": [
             "x > 0 and x − 2 > 0 ⇒ x > 2"
           ],
-          "narration": "Both arguments must be positive. The stricter condition is that x must be greater than two."
+          "narration": "Let's try one. Before any working, ask which values of x are allowed. Log of x needs x bigger than zero. Log of x minus two needs x bigger than two. So x must be bigger than two. Keep that rule, because we will need it at the end."
         },
         {
           "n": 8,
@@ -653,7 +653,7 @@
           "working": [
             "x(x − 2) = 2^{3} = 8"
           ],
-          "narration": "Addition combines the arguments into a product. Now use the meaning of a log to lift two to the third power."
+          "narration": "Two logs added with the same base. Adding logs means multiplying inside. So we get log two of x times x minus two, equals three. Now undo the log. What does it mean? Two to the power three gives x times x minus two. So x times x minus two equals eight."
         },
         {
           "n": 9,
@@ -665,7 +665,7 @@
             "x^{2} − 2x − 8 = 0",
             "log_{2} 4 + log_{2} 2 = 2 + 1 = 3"
           ],
-          "narration": "The quadratic gives four and minus two. Only four is greater than two, and it makes the original logs add up to three."
+          "narration": "Expand and you get a quadratic. Move the eight across and factorise. You get x minus four, times x plus two. So x could be four or minus two. Now remember our rule. X must be bigger than two. Minus two breaks the rule, so throw it away. The answer is four. Check it, and it works."
         },
         {
           "n": 10,
@@ -676,7 +676,7 @@
           "working": [
             "3^{3} = 27 ⇒ log_{3} 27 = 3"
           ],
-          "narration": "The bases differ, so find each exponent on its own. Three to the third power gives twenty-seven."
+          "narration": "Now a real JAMB question. It looks scary, with three logs and a fraction for a base. But we just take each log alone. Start with log three of twenty seven. What power of three gives twenty seven? Three times three times three. So it is three."
         },
         {
           "n": 11,
@@ -687,7 +687,7 @@
           "working": [
             "log_{\\frac{1}{4}} 64 = −3"
           ],
-          "narration": "The base is one quarter. A negative exponent flips it to four, and the third power gives sixty-four."
+          "narration": "Now the hard one, log base one quarter of sixty four. What power of a quarter gives sixty four? A quarter makes things smaller, but sixty four is big. So the power must be negative. A negative power flips the quarter to four. Four cubed is sixty four. So the answer is minus three."
         },
         {
           "n": 12,
@@ -698,7 +698,7 @@
           "working": [
             "log_{3}(\\frac{1}{81}) = −4"
           ],
-          "narration": "Eighty-one is three to the fourth power. Its reciprocal takes a negative exponent, so the denominator is minus four."
+          "narration": "Now the bottom, log three of one over eighty one. Three to the four is eighty one. But we want one over eighty one, which is a flip. Flipping means a negative power. So the answer is minus four."
         },
         {
           "n": 13,
@@ -707,7 +707,7 @@
           "title": "Keep both negative signs",
           "display": "\\frac{3 − (−3)}{−4} = \\frac{6}{−4} = −\\frac{3}{2}",
           "working": [],
-          "narration": "Subtracting minus three makes the numerator six. The denominator is negative, so the simplified quotient is minus three halves."
+          "narration": "Now put it together, and watch the signs. On top, three minus minus three. Two minuses make a plus, so that is six. On the bottom, minus four. Six over minus four simplifies to minus three over two. Most wrong answers come from losing one of these minus signs."
         },
         {
           "n": 14,
@@ -719,7 +719,7 @@
             "Wrong  log_{8} 5 = \\frac{x}{2}",
             "Right  log_{8} 5 = x − log_{8} 2 = x − \\frac{1}{3}"
           ],
-          "narration": "Halving the logarithm would take the square root of ten inside it. To halve ten itself, subtract the logarithm of two instead.",
+          "narration": "Here is a trap. Log of five is not half of log of ten. Halving the number inside does not halve the log. Instead, think of five as ten divided by two. That gives log of ten minus log of two. Log base eight of two is one third, because the cube root of eight is two.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -745,7 +745,7 @@
           "title": "Check the sign of a reciprocal power",
           "display": "Wrong  log_{3}(\\frac{1}{81}) = 4     |     Right  log_{3}(\\frac{1}{81}) = −4",
           "working": [],
-          "narration": "Check which power actually makes the argument. Three to the fourth gives eighty-one, and the negative fourth power gives its reciprocal.",
+          "narration": "Be careful with fractions inside a log. One over eighty one is smaller than one. To get a small number from three, you need a negative power. So log three of one over eighty one is minus four, not four. Ask yourself, is the answer bigger or smaller than one? That tells you the sign.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -771,7 +771,7 @@
           "title": "Remember this",
           "display": "A log gives a power",
           "working": [],
-          "narration": "Read every logarithm as a question about a power, and keep its base and argument in view.",
+          "narration": "So remember the main idea. A log gives you a power. Whenever a log feels hard, ask what power of the base gives this number. Use the rules to combine logs, check the allowed values, and watch your signs. Logs then become simple power questions.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -871,7 +871,7 @@
           "working": [
             "\\sqrt{72} = \\sqrt{36 × 2} = 6\\sqrt{2}"
           ],
-          "narration": "Find a perfect-square factor under the root and bring its nonnegative square root outside. A square root that stays irrational, like root two, is a surd.",
+          "narration": "A surd is a root that won't come out as a whole number, like root two. To simplify one, look for a perfect square hiding inside. Seventy two is thirty six times two. Thirty six is a perfect square, and its root is six. So root seventy two becomes six root two. The six comes out, and the two stays inside.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -909,7 +909,7 @@
           "working": [
             "\\sqrt{18} + \\sqrt{8} = 3\\sqrt{2} + 2\\sqrt{2} = 5\\sqrt{2}"
           ],
-          "narration": "Simplify each root first. When the numbers under the roots agree, add or subtract the coefficients and keep the shared root.",
+          "narration": "You can only add surds that are the same kind. Think of them like oranges. Three oranges plus two oranges is five oranges. So three root two plus two root two is five root two. But root two and root three are different fruits. Sometimes they only look different, so simplify first. Root eighteen and root eight are both secretly root two.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -938,7 +938,7 @@
             "\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}} (a ≥ 0, b > 0)",
             "2\\sqrt{3} × 3\\sqrt{6} = 6\\sqrt{18} = 18\\sqrt{2}"
           ],
-          "narration": "Multiply the outside numbers together and the numbers under the roots together. For division, you can combine nonnegative roots under one root when the bottom root is positive.",
+          "narration": "For multiplying, roots can join under one roof. Root two times root three is root six. Multiply the outside numbers together, and the inside numbers together. Two root three times three root six gives six root eighteen. Then simplify. Root eighteen is three root two, so the answer is eighteen root two.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -971,7 +971,7 @@
           "working": [
             "\\frac{3}{\\sqrt{2}} = \\frac{3\\sqrt{2}}{2}"
           ],
-          "narration": "Multiply the top and bottom by the same root. That keeps the fraction equal and leaves an ordinary number underneath.",
+          "narration": "JAMB likes answers without a root on the bottom. How do we remove it? Multiply the top and the bottom by the same root. Root two times root two is just two. So three over root two becomes three root two over two. The value hasn't changed, because we multiplied by one in disguise.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -999,7 +999,7 @@
           "working": [
             "\\frac{1}{3 + \\sqrt{2}} = \\frac{3 − \\sqrt{2}}{9 − 2} = \\frac{3 − \\sqrt{2}}{7}"
           ],
-          "narration": "For two terms in a denominator, reverse the sign between them and multiply the top and bottom by that conjugate. The middle terms cancel.",
+          "narration": "When the bottom has two terms, like three plus root two, one root won't fix it. Use the conjugate. Just flip the sign in the middle. Three plus root two becomes three minus root two. Multiply them, and the roots cancel out. You get nine minus two, which is seven. No root left on the bottom.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1032,7 +1032,7 @@
           "working": [
             "\\sqrt{45} = 3\\sqrt{5}; \\sqrt{20} = 2\\sqrt{5}"
           ],
-          "narration": "Both roots on top contain a perfect square times five. Split them up so that the shared root is visible."
+          "narration": "Let's try one. Before doing anything, look for perfect squares inside each root. Forty five is nine times five, so root forty five is three root five. Twenty is four times five, so root twenty is two root five. Now they are both root fives. Same fruit."
         },
         {
           "n": 8,
@@ -1041,7 +1041,7 @@
           "title": "Subtract the coefficients",
           "display": "3\\sqrt{5} − 2\\sqrt{5} = \\sqrt{5}",
           "working": [],
-          "narration": "The roots now match, so subtract two from three and keep the root of five."
+          "narration": "Now the top is easy. Three root five minus two root five is just one root five. Like three oranges minus two oranges leaves one orange. So the whole top becomes root five."
         },
         {
           "n": 9,
@@ -1050,7 +1050,7 @@
           "title": "Cancel the remaining root",
           "display": "\\frac{\\sqrt{5}}{\\sqrt{5}} = 1",
           "working": [],
-          "narration": "The top and bottom are the same nonzero number. That means the whole fraction equals one."
+          "narration": "Root five over root five. Anything divided by itself is one. So the answer is simply one. See how simplifying first made this easy? Without it, you would be stuck with three different roots."
         },
         {
           "n": 10,
@@ -1061,7 +1061,7 @@
           "working": [
             "(\\sqrt{3} + \\sqrt{2})(\\sqrt{3} − \\sqrt{2}) = 3 − 2 = 1"
           ],
-          "narration": "The bottom has two roots joined by addition. Choose root three minus root two so the squared terms will leave a positive one."
+          "narration": "Now a real JAMB question. The bottom has two terms, root two plus root three. So we need a conjugate. Flip the middle sign. Here is a nice choice. Use root three minus root two. Multiplying gives three minus two, which is just one. A bottom of one is the best we can get."
         },
         {
           "n": 11,
@@ -1070,7 +1070,7 @@
           "title": "Multiply both parts of the fraction",
           "display": "\\frac{(2\\sqrt{2} − \\sqrt{3})(\\sqrt{3} − \\sqrt{2})}{1}",
           "working": [],
-          "narration": "Use the same factor on top and bottom to keep the fraction equal. Now distribute each term on top across the second bracket."
+          "narration": "Multiply both the top and the bottom by root three minus root two. The bottom becomes one, so the fraction disappears. Now we only need to expand the top. Take it slowly. Each term in the first bracket multiplies each term in the second."
         },
         {
           "n": 12,
@@ -1081,7 +1081,7 @@
           "working": [
             "(2\\sqrt{2})(−\\sqrt{2}) = −4; (−\\sqrt{3})(\\sqrt{3}) = −3"
           ],
-          "narration": "Two root six plus root six gives three root six. The ordinary numbers add to minus seven, and division by one leaves the result."
+          "narration": "Expand carefully. Two root two times root three is two root six. Two root two times minus root two is minus four. Minus root three times root three is minus three. Minus root three times minus root two is plus root six. Now collect. Two root six plus root six is three root six. Minus four minus three is minus seven."
         },
         {
           "n": 13,
@@ -1092,7 +1092,7 @@
           "working": [
             "Right  7\\sqrt{3} − 2\\sqrt{3} = 5\\sqrt{3}"
           ],
-          "narration": "A difference of two roots cannot be taken by subtracting inside the root. Expose the common root of three and subtract the outside numbers.",
+          "narration": "Never subtract the numbers inside roots directly. Root one hundred and forty seven minus root twelve is not root one hundred and thirty five. Simplify each one first. One hundred and forty seven is forty nine times three, giving seven root three. Twelve gives two root three. Now subtract. Five root three.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1121,7 +1121,7 @@
             "Wrong  −4 + 3 = −1",
             "Right  −4 − 3 = −7"
           ],
-          "narration": "Check the plain numbers separately from the roots. Both plain products are negative here, so they give minus seven.",
+          "narration": "When expanding brackets, the signs are where marks are lost. Minus root three times root three is minus three, not plus three. Minus times plus is minus. Say each sign out loud as you go. So it is minus four minus three, which is minus seven, not minus one.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1147,7 +1147,7 @@
           "title": "Remember this",
           "display": "Simplify the roots first",
           "working": [],
-          "narration": "Pull out square factors first so you can see which roots combine and how to clear the denominator.",
+          "narration": "So here is the surd habit. Simplify every root first by pulling out perfect squares. Then you can see which ones are the same kind. Add or take away only matching roots. And use the conjugate to clear a two term bottom. Simplify first, and surds behave.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1256,7 +1256,7 @@
             "2x^{2} + 6x + x + 3 = 2x(x + 3) + (x + 3)",
             "2x(x + 3) + (x + 3) = (2x + 1)(x + 3)"
           ],
-          "narration": "Take out what every term shares. If no factor appears in every term, try grouping terms until the groups share a whole bracket.",
+          "narration": "Factorising is multiplying backwards. Look for something every term shares, and take it out front. Six x squared plus nine x both share three x. Take it out, and three x times two x plus three is left. With four terms, group them in pairs. Each pair gives the same bracket, and that bracket comes out too.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -1292,7 +1292,7 @@
             "u^{3} + v^{3} = (u + v)(u^{2} − uv + v^{2})",
             "u^{3} − v^{3} = (u − v)(u^{2} + uv + v^{2})"
           ],
-          "narration": "When one square is subtracted from another, put their square roots in brackets with opposite signs. A perfect-square trinomial gives a repeated bracket. For cubes, keep the sign in the first factor and flip it in the middle term of the second.",
+          "narration": "Some shapes are worth memorising, because JAMB loves them. Anything squared minus anything squared splits into a minus bracket and a plus bracket. Nine x squared minus twenty five is three x squared minus five squared. So it becomes three x minus five, times three x plus five. Spot the squares, and the answer writes itself.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1332,7 +1332,7 @@
             "2x^{2} + 7x + 3 = 2x^{2} + 6x + x + 3",
             "(2x + 1)(x + 3) = 0 ⇒ x = −\\frac{1}{2} or −3"
           ],
-          "narration": "Choose two numbers that multiply to the leading coefficient times the constant and add to the middle coefficient. Group the four terms, then set each factor to zero if the product equals zero.",
+          "narration": "For a quadratic, split the middle term into two pieces. Multiply the first and last numbers. For two x squared plus seven x plus three, that is six. Now find two numbers that multiply to six and add to seven. Six and one. Split the seven x into six x and x, then group in pairs.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1361,7 +1361,7 @@
             "x^{2} − 4x + 4 = 0 ⇒ D = (−4)^{2} − 4 × 1 × 4 = 0",
             "x = \\frac{4}{2} = 2"
           ],
-          "narration": "For a quadratic set equal to zero, use its signed coefficients. The expression under the root is the discriminant. Positive gives two distinct real roots, zero gives a repeated root, and negative gives no real roots.",
+          "narration": "When the numbers won't split nicely, use the formula. It always works. The part under the root is called the discriminant, and it tells you a lot. If it is positive, there are two roots. If it is zero, there is just one. If it is negative, there are no real roots at all.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1391,7 +1391,7 @@
             "x^{2} − 5x + 6 = (x − 2)(x − 3)",
             "2 + 3 = 5; 2 × 3 = 6"
           ],
-          "narration": "If the two roots are alpha and beta, their sum is minus the middle coefficient over the leading coefficient. Their product is the constant over the leading coefficient.",
+          "narration": "The roots hide inside the numbers of the quadratic. Add the two roots, and you get minus b over a. Multiply them, and you get c over a. Take x squared minus five x plus six. Its roots are two and three. Two plus three is five, and two times three is six. You can check roots in seconds this way.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1426,7 +1426,7 @@
             "x + 1 is a factor of P(x)",
             "P(x) = (dx − e)Q(x) + P(\\frac{e}{d}) (d ≠ 0)"
           ],
-          "narration": "When you divide by x minus a number, substitute that number to get the remainder. A zero remainder means the divisor is a factor, so the other roots come from the quotient.",
+          "narration": "Want the remainder without long division? Just substitute. To divide by x plus one, put x equals minus one into the expression. Whatever comes out is the remainder. If you get zero, there is no remainder, so x plus one is a factor. This is the remainder theorem, and it saves a lot of time.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1454,7 +1454,7 @@
           "working": [
             "2x^{2} − x − 6 = 0"
           ],
-          "narration": "Bring all the terms to one side so the other side is zero. That lets you use the zero product rule after factorising."
+          "narration": "Let's try one. To solve a quadratic, everything must be on one side, with zero on the other. Why? Because if two things multiply to zero, one of them must be zero. So move the x and the six across. We get two x squared minus x minus six equals zero."
         },
         {
           "n": 9,
@@ -1465,7 +1465,7 @@
           "working": [
             "2x^{2} + 3x − 4x − 6 = 0"
           ],
-          "narration": "The leading coefficient times the constant gives minus twelve. The middle coefficient is minus one, so split it into three and minus four."
+          "narration": "Multiply the first and last numbers. Two times minus six is minus twelve. Now find two numbers that multiply to minus twelve and add to minus one. Try three and minus four. Three times minus four is minus twelve, and they add to minus one. So split the middle into three x and minus four x."
         },
         {
           "n": 10,
@@ -1477,7 +1477,7 @@
             "(x − 2)(2x + 3) = 0",
             "x = 2 or x = −\\frac{3}{2}"
           ],
-          "narration": "Both groups contain the same bracket. Take it out, then set each of the two factors equal to zero to find the roots."
+          "narration": "Group in pairs. The first pair gives x times two x plus three. The second pair gives minus two times two x plus three. Both have the same bracket, so take it out. Now one of the brackets must be zero. So x is two, or x is minus three over two."
         },
         {
           "n": 11,
@@ -1488,7 +1488,7 @@
           "working": [
             "1 − 2 − 5 + 6 = 0"
           ],
-          "narration": "A root of one makes the polynomial zero, so x minus one is a factor. Taking it out will leave a quadratic."
+          "narration": "Now a JAMB question with a cubic. We are told one root is one. Check it. One minus two minus five plus six is zero. It works. And if one is a root, then x minus one must be a factor. That is the key that unlocks the rest."
         },
         {
           "n": 12,
@@ -1500,7 +1500,7 @@
             "x^{3} − x^{2} − x^{2} + x − 6x + 6 = 0",
             "(x − 1)(x^{2} − x − 6) = 0"
           ],
-          "narration": "Split the middle terms so you can group the cubic into pieces that all contain x minus one. Take that common factor out."
+          "narration": "Now pull x minus one out of the cubic. Split each term so x minus one appears every time. Group the terms, and x minus one comes out of each group. What is left is a simple quadratic, x squared minus x minus six. The hard cubic has become an easy quadratic."
         },
         {
           "n": 13,
@@ -1509,7 +1509,7 @@
           "title": "Factor the remaining quadratic",
           "display": "x^{2} − x − 6 = (x − 3)(x + 2)",
           "working": [],
-          "narration": "Minus three and two multiply to minus six and add to minus one, so they give the constants in these brackets."
+          "narration": "Now factorise x squared minus x minus six. We need two numbers that multiply to minus six and add to minus one. Minus three and two. So it becomes x minus three, times x plus two."
         },
         {
           "n": 14,
@@ -1518,7 +1518,7 @@
           "title": "Set the remaining factors to zero",
           "display": "x − 3 = 0 or x + 2 = 0 ⇒ x = 3 or −2",
           "working": [],
-          "narration": "Set each remaining bracket equal to zero. Either factor can make the product zero, giving three and minus two as the other roots."
+          "narration": "Each bracket can be zero. So x is three, or x is minus two. With the root we were given, the three roots are one, three and minus two. Always check one of them in the original. Put in three, and twenty seven minus eighteen minus fifteen plus six gives zero."
         },
         {
           "n": 15,
@@ -1530,7 +1530,7 @@
             "Wrong  (1 − a − b)(1 − a + b)",
             "Right  (1 − a + b)(1 + a − b)"
           ],
-          "narration": "A minus before a bracket changes both signs inside it. The first bracket therefore has minus a and plus b.",
+          "narration": "This trap is about brackets. One minus a minus b, all squared, is a difference of two squares. But the second square is the whole of a minus b. Keep it in a bracket. When you open it, the minus sign changes every sign inside. Students who drop the bracket get the signs wrong.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1560,7 +1560,7 @@
             "Wrong  P(−4) = 0 ⇒ k = 20",
             "Right  P(4) = 0 ⇒ k = 12"
           ],
-          "narration": "Set the factor equal to zero before substituting. Four makes x minus four zero, so use four in the polynomial.",
+          "narration": "If x minus four is a factor, which number do you put in? Four, not minus four. Set the bracket to zero. X minus four equals zero gives x equals four. Many students put in minus four and get the wrong value of k. Always solve the bracket first, then substitute.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1586,7 +1586,7 @@
           "title": "Remember this",
           "display": "Use the product to find the roots",
           "working": [],
-          "narration": "Factor into simpler pieces, then set each factor equal to zero when the product is zero.",
+          "narration": "So here is the factorising habit. Get zero on one side first. Then break the expression into brackets that multiply together. If the product is zero, one bracket must be zero. Each bracket gives you a root. Check one root in the original, and you are done.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1692,7 +1692,7 @@
           "working": [
             "(x + 2)(x − 3) = x^{2} − 3x + 2x − 6 = x^{2} − x − 6"
           ],
-          "narration": "Multiply each term by every term in the other bracket, keeping its sign. Collect terms only when their letters and powers match.",
+          "narration": "Expanding means every term in the first bracket meets every term in the second. Nobody gets left out. For x plus two, times x minus three, x meets x and minus three. Then two meets x and minus three. Now collect the like terms. Minus three x plus two x leaves minus x.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -1730,7 +1730,7 @@
           "working": [
             "\\frac{x^{2} − 4}{x − 2} = x + 2 (x ≠ 2)"
           ],
-          "narration": "First exclude every value that makes an original denominator zero. Factor the top and bottom, then cancel a shared nonzero factor from the whole numerator and denominator.",
+          "narration": "You can only cancel things that multiply the whole top and the whole bottom. So factorise first. X squared minus four becomes x minus two, times x plus two. Now x minus two is on top and bottom, so it cancels. But remember, x can never be two, because the bottom would be zero.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1761,7 +1761,7 @@
             "\\frac{a}{b} ÷ \\frac{c}{d} = \\frac{ad}{bc}",
             "Original denominators and any divisor must be nonzero."
           ],
-          "narration": "Use a common denominator to add or subtract. For multiplication, multiply top by top and bottom by bottom. For division, multiply by the reciprocal of the nonzero divisor.",
+          "narration": "Fractions in algebra follow the same rules as fractions with numbers. To add or take away, make the bottoms the same first. To multiply, go straight across, top times top and bottom times bottom. To divide, flip the second fraction and multiply. And the bottom is never allowed to be zero.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1794,7 +1794,7 @@
           "working": [
             "y = ax + bx + c ⇒ x = \\frac{y − c}{a + b} (a + b ≠ 0)"
           ],
-          "narration": "Use the same inverse operation on both sides. If the new subject appears more than once, collect its terms on one side, factor it out, then divide by its nonzero coefficient.",
+          "narration": "Changing the subject is like unwrapping a parcel. Undo the last thing that was done first. If y equals a x plus b, the b was added last. So take away b first. Then x was multiplied by a, so divide by a. If x appears twice, gather the x terms together and factor x out.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -1829,7 +1829,7 @@
             "y = 7 − x = 3",
             "4 + 3 = 7; 4 − 3 = 1"
           ],
-          "narration": "For elimination, match the coefficients of one variable and add or subtract to remove it. For substitution, isolate one variable and replace it in the other equation. Check the pair in both equations.",
+          "narration": "Two equations, two unknowns. The trick is to get rid of one unknown. Look at x plus y and x minus y. If you add them, the y's cancel out. Two x equals eight, so x is four. Then put four back in to find y, which is three. Always check both equations at the end.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1859,7 +1859,7 @@
           "tag": "Rule 6",
           "title": "Substitute in a linear and quadratic system",
           "display": "y = 2x; x^{2} + y = 3 ⇒ x^{2} + 2x − 3 = 0",
-          "narration": "Use the linear equation to replace one variable in the quadratic. Solve the resulting equation, then find the matching second coordinate for every root and check both equations.",
+          "narration": "When one equation is a quadratic, substitute. The first equation tells us y is two x. So replace y in the second equation with two x. Now there is only x, and it is a quadratic. Solve it to get two values of x. Then find y for each one. Each x gives its own y.",
           "working": [
             "(x + 3)(x − 1) = 0 ⇒ x = −3 or 1",
             "y = 2x ⇒ (x, y) = (−3, −6) or (1, 2)"
@@ -1896,7 +1896,7 @@
           "working": [
             "(2x + y) + (x − y) = 8 + 1"
           ],
-          "narration": "The y terms have equal size and opposite signs. Add the two equations so those terms cancel."
+          "narration": "Let's try one. Before working, look for an easy way to remove one unknown. In the first equation, y has a plus. In the second, y has a minus. So adding the two equations will cancel y completely."
         },
         {
           "n": 9,
@@ -1905,7 +1905,7 @@
           "title": "Find the first unknown",
           "display": "3x = 9 ⇒ x = 3",
           "working": [],
-          "narration": "Only x remains after adding. Divide both sides by three to find the value of x."
+          "narration": "Add them. Two x plus x is three x. Plus y minus y is nothing. And eight plus one is nine. So three x equals nine, and x is three. One unknown found."
         },
         {
           "n": 10,
@@ -1916,7 +1916,7 @@
           "working": [
             "2 × 3 + 2 = 8; 3 − 2 = 1"
           ],
-          "narration": "Put three into the simpler equation to find y. Check the pair in the first equation as well, since it must satisfy both."
+          "narration": "Now put three into the easier equation. Three minus y equals one, so y is two. Check both. Two times three plus two gives eight. Three minus two gives one. Both work, so the pair is right."
         },
         {
           "n": 11,
@@ -1925,7 +1925,7 @@
           "title": "Keep the original restrictions",
           "display": "Simplify \\frac{x − 7}{x^{2} − 9} × \\frac{x^{2} − 3x}{x^{2} − 49} for x ≠ −7, −3, 3, 7.",
           "working": [],
-          "narration": "Keep the four excluded values in view throughout. They make an original denominator zero, even if some factors later disappear."
+          "narration": "Now a JAMB question. It looks like a mess of x squareds. But the plan is simple. Factorise everything, then cancel matching brackets. And notice the question gives the values x can't be. Those values make a bottom zero."
         },
         {
           "n": 12,
@@ -1934,7 +1934,7 @@
           "title": "Factor each expression",
           "display": "\\frac{x − 7}{(x − 3)(x + 3)} × \\frac{x(x − 3)}{(x − 7)(x + 7)}",
           "working": [],
-          "narration": "Both denominators are differences of squares. The second numerator has a common factor of x, so factor it as well."
+          "narration": "Factorise each part. X squared minus nine is a difference of squares. That gives x minus three, times x plus three. X squared minus three x has x in common, so it is x times x minus three. X squared minus forty nine gives x minus seven, times x plus seven."
         },
         {
           "n": 13,
@@ -1943,7 +1943,7 @@
           "title": "Cancel matching factors",
           "display": "\\frac{x}{(x + 3)(x + 7)}; x ≠ −7, −3, 3, 7",
           "working": [],
-          "narration": "Cancel x minus three and x minus seven, because each is a whole factor above and below. The original restrictions still apply."
+          "narration": "Now cancel brackets that appear on top and bottom. X minus seven is on top in the first fraction and on the bottom in the second. Cancel it. X minus three appears on top and bottom too. Cancel it. What is left is x, over x plus three, times x plus seven."
         },
         {
           "n": 14,
@@ -1952,7 +1952,7 @@
           "title": "Cancel the same bracket",
           "display": "Wrong  \\frac{x}{(x − 3)(x + 7)}     |     Right  \\frac{x}{(x + 3)(x + 7)}",
           "working": [],
-          "narration": "The numerator contains x minus three, so cancel the matching minus bracket underneath. The plus bracket is a different factor.",
+          "narration": "Be careful which bracket you cancel. X minus three and x plus three look alike, but they are not the same. You can only cancel a bracket against an identical one. So the x plus three stays on the bottom. Check each cancel with your finger.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -1981,7 +1981,7 @@
             "Wrong  w − 2v = cn(v − w)",
             "Right  w − 2v = cn(v + w)"
           ],
-          "narration": "Moving the negative term from the left adds it on the right. Both terms on the right containing the subject then contribute a plus sign.",
+          "narration": "When you move terms across, each one carries its sign with it. Moving minus w c n to the other side makes it plus. Moving v c n across makes it minus. Then factor out c n. Getting one sign wrong flips the whole answer.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -2010,7 +2010,7 @@
             "Wrong  x + y = 5",
             "Right  x + y = 5 + (−3) = 2"
           ],
-          "narration": "If a question asks for x plus y, finding x is only part of the work. Substitute both values into the requested expression.",
+          "narration": "Read the question again before you choose. Sometimes it does not want x or y. It wants something made from them, like x plus y. If x is five and y is minus three, then x plus y is two. JAMB often puts five in the options to catch you.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -2036,7 +2036,7 @@
           "title": "Remember this",
           "display": "Preserve equality at every move",
           "working": [],
-          "narration": "Keep each expression equivalent and use the same operation on both sides of an equation.",
+          "narration": "So remember the golden rule of algebra. An equation is a balance. Whatever you do to one side, do to the other. Keep the signs with their terms. Factorise before you cancel. And always check your answer in the original equation.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -2147,7 +2147,7 @@
             "f(x) = x^{2} ⇒ \\frac{(x+h)^{2} − x^{2}}{h} = 2x + h (h ≠ 0)",
             "lim_{h→0}(2x + h) = 2x"
           ],
-          "narration": "The derivative is the gradient of the tangent and the instantaneous rate of change. To find it from first principles, take the limit of the gradient between two nearby points as their separation approaches zero.",
+          "narration": "Differentiation measures steepness at a single point. But one point alone can't give a slope. So take two points very close together and find the slope between them. Then let the gap shrink to zero. For x squared, the slope between the points is two x plus h. As h shrinks away, it becomes two x.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2182,7 +2182,7 @@
             "\\frac{d}{dx}(3x^{4} − 2x + 5) = 12x^{3} − 2",
             "y′(x_{0}) is the tangent gradient at x_{0}"
           ],
-          "narration": "Bring the exponent down as a multiplier and reduce it by one wherever the power is differentiable. Keep constant multipliers, differentiate sums and differences term by term, and replace any standalone constant by zero.",
+          "narration": "There is a quick rule for powers. Bring the power down to the front, then reduce the power by one. X cubed becomes three x squared. Do this to each term separately. A number on its own, like five, has no slope, so it disappears. The result tells you the steepness anywhere on the curve.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2220,7 +2220,7 @@
           "working": [
             "(x(x^{2} + 1))′ = 1(x^{2} + 1) + x(2x) = 3x^{2} + 1"
           ],
-          "narration": "When two functions are multiplied, differentiate the first while keeping the second, then keep the first and differentiate the second. Add the two results.",
+          "narration": "When two expressions multiply, use the product rule. Differentiate the first and keep the second. Then keep the first and differentiate the second. Add the two. For x times x squared plus one, that gives one times x squared plus one, plus x times two x. Altogether, three x squared plus one.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2243,7 +2243,7 @@
           "working": [
             "(\\frac{x}{x+1})′ = \\frac{(x+1) − x}{(x+1)^{2}} = \\frac{1}{(x+1)^{2}}"
           ],
-          "narration": "Keep the order in the numerator. Multiply the derivative of the top by the bottom, subtract the top times the derivative of the bottom, and square the bottom.",
+          "narration": "For one expression divided by another, use the quotient rule. Bottom times the top's slope, minus top times the bottom's slope, all over the bottom squared. Many students say low d high minus high d low, over low squared. The minus sign makes the order important.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2274,7 +2274,7 @@
             "(cos(3x))′ = −3sin(3x)",
             "\\frac{dA}{dt} = \\frac{dA}{dr} × \\frac{dr}{dt} for A = πr^{2} ⇒ \\frac{dA}{dt} = 2πr\\frac{dr}{dt}"
           ],
-          "narration": "Differentiate the outside while leaving the inside in place, then multiply by the derivative of the inside. In radians, sine gives cosine, cosine gives minus sine, and tangent gives secant squared.",
+          "narration": "When something is inside a bracket, use the chain rule. Differentiate the outside first, leaving the inside alone. Then multiply by the slope of the inside. For two x plus one, cubed, the outside gives three times the bracket squared. The inside, two x plus one, has slope two. Multiply them together.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2310,7 +2310,7 @@
             "Interior critical points have a zero or undefined derivative",
             "f(x) = x^{2} ⇒ f′(0) = 0; f′′(0) = 2 > 0"
           ],
-          "narration": "A negative second derivative at a stationary point gives a local maximum and a positive one gives a local minimum. If it is zero, check for a change in slope sign. On a closed interval, compare endpoints and interior critical points.",
+          "narration": "At the top of a hill or the bottom of a valley, the ground is flat for a moment. So the slope is zero there. To find these points, set the derivative to zero and solve. Then check which one it is. Differentiate again. If the answer is negative, it is a top. If it is positive, it is a bottom.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2343,7 +2343,7 @@
           "working": [
             "y′ = 6x^{2} − 5"
           ],
-          "narration": "The question asks for the slope at a particular point. Find the derivative first so it can give the slope for any x."
+          "narration": "Let's try one. We want the steepness at x equals two. First, find the steepness everywhere. Two x cubed becomes six x squared. Minus five x becomes minus five. The plus one disappears. So the slope is six x squared minus five."
         },
         {
           "n": 9,
@@ -2352,7 +2352,7 @@
           "title": "Use the specified point",
           "display": "y′(2) = 6(2^{2}) − 5",
           "working": [],
-          "narration": "Put two into the derivative. The square is worked out before multiplying by six."
+          "narration": "Now put in x equals two. Be careful with the order here. Square the two first, then multiply by six. Two squared is four, so we need six times four, minus five. Doing the multiplying first avoids a common slip."
         },
         {
           "n": 10,
@@ -2361,7 +2361,7 @@
           "title": "Read the slope",
           "display": "6 × 4 − 5 = 19",
           "working": [],
-          "narration": "The gradient is positive nineteen, so the tangent slopes upwards as you move to the right."
+          "narration": "Six times four is twenty four. Take away five, and we get nineteen. So at x equals two, the curve rises nineteen units for every one unit across. That is a very steep part of the curve, and nineteen is our answer."
         },
         {
           "n": 11,
@@ -2372,7 +2372,7 @@
           "working": [
             "f(x) = 4x − x^{2}"
           ],
-          "narration": "This product expands into a simple quadratic. Expanding makes it easy to differentiate each term separately."
+          "narration": "Now a JAMB question. We want the highest point of x times four minus x. A bracket like this is hard to differentiate. So expand it first. X times four is four x. X times minus x is minus x squared."
         },
         {
           "n": 12,
@@ -2383,7 +2383,7 @@
           "working": [
             "4 − 2x = 0 ⇒ x = 2"
           ],
-          "narration": "At the top of this smooth curve the gradient is zero. Set four minus two x equal to zero to find where that happens."
+          "narration": "At the highest point, the curve is flat, so the slope is zero. Differentiate four x minus x squared. You get four minus two x. Set it to zero. Four minus two x equals zero, so x is two."
         },
         {
           "n": 13,
@@ -2392,7 +2392,7 @@
           "title": "Check that it is the maximum",
           "display": "f′′(x) = −2 < 0; x = 2",
           "working": [],
-          "narration": "The second derivative is negative throughout, so the slope decreases through zero and the parabola reaches its maximum at two."
+          "narration": "Is it really the highest point, or the lowest? Differentiate again. Four minus two x becomes minus two. Negative means the curve bends downwards, like a hill. So x equals two gives the maximum."
         },
         {
           "n": 14,
@@ -2401,7 +2401,7 @@
           "title": "Keep the inner derivative",
           "display": "Wrong  3(2x + 1)^{2}     |     Right  6(2x + 1)^{2}",
           "working": [],
-          "narration": "After differentiating the outer cube, keep going. The inside has derivative two, so the whole result must be multiplied by two.",
+          "narration": "The chain rule trap. Students differentiate the outside and forget the inside. For two x plus one, cubed, three times the bracket squared is only half the job. You must multiply by the slope of the inside, which is two. So the answer is six times the bracket squared.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2430,7 +2430,7 @@
             "Wrong  y′ = 2x − \\frac{1}{x^{2}}",
             "Right  y′ = 2x − (−1)x^{−2} = 2x + \\frac{1}{x^{2}}"
           ],
-          "narration": "The minus in front of the reciprocal stays in place, and the negative exponent supplies another minus. Together they make the reciprocal term positive in the derivative.",
+          "narration": "Negative powers have two minus signs to watch. X to the minus one becomes minus one times x to the minus two. But there was already a minus in front of it. Minus times minus is plus. So the term becomes plus one over x squared. Say each sign as you write it.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2456,7 +2456,7 @@
           "title": "Remember this",
           "display": "The derivative gives the slope",
           "working": [],
-          "narration": "Differentiate for the gradient, then use the point or the slope condition the question gives you.",
+          "narration": "Remember the big idea. The derivative is the slope. It tells you how steep the curve is at any point. Where it is zero, the curve is flat, and that is a maximum or minimum. Learn the power rule well, and most of differentiation follows.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2562,7 +2562,7 @@
             "∫ 6x dx = 3x^{2} + C",
             "y(2) = 15 ⇒ 12 + C = 15 ⇒ C = 3"
           ],
-          "narration": "Integration finds a function whose derivative gives the original expression. Add a constant for an indefinite integral, because differentiating any constant gives zero. Use a given point to find it.",
+          "narration": "Integration is differentiation backwards. Differentiation takes a curve and gives its slope. Integration takes the slope and finds the curve. But there is a catch. Constants disappear when you differentiate, so we don't know what was there. That is why we always add plus C. If the question gives a point, use it to find C.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2596,7 +2596,7 @@
             "∫ (6x^{2} − 4) dx = 2x^{3} − 4x + C",
             "∫ \\frac{1}{x} dx = ln|x| + C (x ≠ 0)"
           ],
-          "narration": "Raise the exponent by one, then divide by that new exponent. Integrate each term separately and keep any constant multiplier. The reciprocal power uses a logarithm.",
+          "narration": "Here is the reverse of the power rule. Make the power one bigger, then divide by that new power. X squared becomes x cubed over three. So six x squared becomes two x cubed. A plain number like four becomes four x. One power breaks this rule. One over x integrates to the natural log of x.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2640,7 +2640,7 @@
             "∫ sin x dx = −cos x + C; ∫ cos x dx = sin x + C; ∫ sec^{2} x dx = tan x + C",
             "∫ cos(2x) dx = \\frac{1}{2}sin(2x) + C"
           ],
-          "narration": "When the inside is linear, divide by its slope after integrating the outside. Differentiate your result as a check. The chain rule should multiply that slope back in.",
+          "narration": "When there is a bracket like two x inside, integrate as normal. Then divide by the number in front of x. Why divide? Because differentiating would multiply by it, so integrating must undo that. Cos of two x becomes half sin of two x. You can always check by differentiating your answer.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2678,7 +2678,7 @@
           "working": [
             "∫_{1}^{3} 2x dx = 3^{2} − 1^{2} = 8"
           ],
-          "narration": "For a continuous function, use an antiderivative and subtract its value at the lower limit from its value at the upper limit. The constant cancels.",
+          "narration": "A definite integral has numbers at the top and bottom. Integrate first, then put in the top number, then the bottom number. Always top minus bottom. For two x from one to three, the integral is x squared. Three squared is nine, one squared is one. Nine minus one gives eight.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2712,7 +2712,7 @@
             "A = ∫_{a}^{b} (upper − lower) dx when their order stays fixed",
             "A between y = x and the axis on [−1, 1] is \\frac{1}{2} + \\frac{1}{2} = 1"
           ],
-          "narration": "Below the horizontal axis a definite integral counts negatively, so split at any sign change and add the positive areas. Between two curves, split where they cross and integrate upper minus lower on each interval.",
+          "narration": "Area is always positive, but an integral can be negative. Below the x axis, the integral comes out negative. So split the region where the curve crosses the axis, and count each part as positive. Between two curves, take the upper curve minus the lower curve, then integrate that height.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2740,7 +2740,7 @@
           "working": [
             "y = ∫ (4x − 3) dx = 2x^{2} − 3x + C"
           ],
-          "narration": "The gradient is the derivative of the curve, so integrate it to recover the equation up to a constant."
+          "narration": "Let's try one. We are given the gradient, and we want the curve. That is integration. Integrate each term. Four x becomes two x squared. Minus three becomes minus three x. And never forget plus C, because we don't know the constant yet."
         },
         {
           "n": 8,
@@ -2751,7 +2751,7 @@
           "working": [
             "2 = −1 + C ⇒ C = 3"
           ],
-          "narration": "The point tells you which curve you need. At x equal to one, y is two, so use those values to solve for the constant."
+          "narration": "Now use the point. The curve passes through one, two. So when x is one, y is two. Put those in. Two times one, minus three, plus C, equals two. That is minus one plus C equals two. So C is three."
         },
         {
           "n": 9,
@@ -2762,7 +2762,7 @@
           "working": [
             "y′ = 4x − 3; y(1) = 2 − 3 + 3 = 2"
           ],
-          "narration": "Differentiate the equation to get the given gradient, and put one in place of x to check the point."
+          "narration": "So the curve is y equals two x squared minus three x plus three. Let's check both facts. Differentiate it, and you get four x minus three. That matches the gradient. Put in x equals one, and you get two. That matches the point. Both checks pass."
         },
         {
           "n": 10,
@@ -2774,7 +2774,7 @@
             "4 − x^{2} = 2x + 1 ⇒ x^{2} + 2x − 3 = 0",
             "(x + 3)(x − 1) = 0 ⇒ x = −3 or 1"
           ],
-          "narration": "The region starts and ends where the curves meet. Equate their y values and factor the resulting quadratic to get the limits."
+          "narration": "Now a JAMB question about area between two curves. First, where do the curves meet? Set them equal. Four minus x squared equals two x plus one. Move everything to one side and factorise. They meet at x equals minus three and x equals one. Those are our limits."
         },
         {
           "n": 11,
@@ -2785,7 +2785,7 @@
           "working": [
             "height = (4 − x^{2}) − (2x + 1) = 3 − 2x − x^{2}"
           ],
-          "narration": "Zero lies between the crossings. At zero, the parabola is higher, and the order stays the same between those two crossings."
+          "narration": "Which curve is on top? Test a number between the limits. Zero is easy. The first curve gives four, and the line gives one. So the curve is on top. The height of the region is the curve minus the line. That simplifies to three minus two x minus x squared."
         },
         {
           "n": 12,
@@ -2796,7 +2796,7 @@
           "working": [
             "F(x) = 3x − x^{2} − \\frac{x^{3}}{3}"
           ],
-          "narration": "Add up the heights over the interval by integrating. Treat each term separately and keep its sign."
+          "narration": "Now integrate the height. Three becomes three x. Minus two x becomes minus x squared. Minus x squared becomes minus x cubed over three. We will put in the limits next, top first."
         },
         {
           "n": 13,
@@ -2808,7 +2808,7 @@
             "F(1) = 3 − 1 − \\frac{1}{3} = \\frac{5}{3}",
             "F(−3) = −9 − 9 + 9 = −9"
           ],
-          "narration": "Substitute both limits with care. Subtracting the negative lower value adds nine, giving ten and two thirds square units."
+          "narration": "Put in the top limit, one. Three minus one minus a third gives five thirds. Put in the bottom limit, minus three. That gives minus nine. Now top minus bottom. Five thirds minus minus nine. Two minuses make a plus, so the area is thirty two over three."
         },
         {
           "n": 14,
@@ -2820,7 +2820,7 @@
             "Wrong  F(1) − F(2) = \\frac{11}{3}",
             "Right  F(2) − F(1) = −\\frac{11}{3}"
           ],
-          "narration": "The expression is negative throughout this interval. The definite integral keeps that sign, so upper value minus lower value gives minus eleven thirds.",
+          "narration": "Always put the top number in first. Top minus bottom, never bottom minus top. If you swap them, the sign flips, and JAMB will have that wrong answer waiting. For this one, the correct value is minus eleven thirds. The minus sign is part of the answer.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2849,7 +2849,7 @@
             "Wrong  \\frac{2}{3}(2x + 3)^{\\frac{3}{2}} + C",
             "Right  \\frac{1}{3}(2x + 3)^{\\frac{3}{2}} + C"
           ],
-          "narration": "The usual power step gives a factor of two thirds. The inside has slope two, so divide by two as well.",
+          "narration": "With a bracket like two x plus three, integrate as normal, then divide by two. Students often forget this last step. The power goes up to three over two, and you divide by three over two. Then divide by two again for the inside. That gives one third, not two thirds.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2875,7 +2875,7 @@
           "title": "Remember this",
           "display": "Reverse the derivative and use the given information",
           "working": [],
-          "narration": "Find an antiderivative, then use the limits for a definite integral or a given point to fix the constant.",
+          "narration": "So remember this. Integration reverses differentiation. Add one to the power and divide by it. Always add plus C, and use any given point to find it. For areas, use top minus bottom, and the upper curve minus the lower one. Check by differentiating whenever you can.",
           "sources": [
             {
               "book": "OpenStax Calculus Volume 1",
@@ -2986,7 +2986,7 @@
             "P_{square} = 4s",
             "P_{rectangle} = 2(5 + 3) = 16 cm"
           ],
-          "narration": "Perimeter measures the full boundary in length units. Add each outside edge once. For a circle, multiply twice the radius by pi.",
+          "narration": "Perimeter is the distance around the edge, like walking round a field. Just add up every side. A rectangle has two lengths and two widths. So a five by three rectangle has perimeter sixteen. For a circle, the distance round is called the circumference. It is two pi times the radius.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3022,7 +3022,7 @@
             "A_{circle} = πr^{2}",
             "A_{triangle} = \\frac{1}{2} × 8 × 3 = 12 cm^{2}"
           ],
-          "narration": "Area measures a flat region in square units. Use perpendicular height with the base. For a trapezium, use the average of the parallel side lengths times their perpendicular distance.",
+          "narration": "Area is how much flat space a shape covers, like tiles on a floor. The key is using the right height. The height must stand straight up from the base, at a right angle. A slanted side is not the height. A triangle is half of a rectangle. So with base eight and height three, the area is twelve.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3062,7 +3062,7 @@
             "P_{sector} = L_{arc} + 2r",
             "θ = 90° ⇒ L_{arc} = \\frac{πr}{2}; A_{sector} = \\frac{πr^{2}}{4}"
           ],
-          "narration": "Divide the central angle in degrees by three hundred and sixty to get the fraction of a full turn. Apply that fraction to the circumference for arc length and to the circle area for sector area.",
+          "narration": "A sector is a slice of a circle, like a slice of pizza. What fraction of the whole circle is it? Divide its angle by three hundred and sixty. Then take that fraction of the full circumference for the curved edge. Take that fraction of the full area for the area. A ninety degree slice is one quarter.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3092,7 +3092,7 @@
           "tag": "Rule 4",
           "title": "Find the area and boundary of a segment",
           "display": "A_{minor segment} = A_{sector} − A_{triangle}",
-          "narration": "The smaller segment is what remains after taking the triangle out of the sector. Its boundary is the arc and chord. Bisect the central angle to find half the chord, then double it.",
+          "narration": "A segment is the part between a chord and the curved edge. Think of it as the slice with the triangle cut away. So find the sector area, then take away the triangle. The triangle's area is half r squared times sine of the angle. For the perimeter, add the curved edge and the straight chord.",
           "working": [
             "A_{triangle} = \\frac{1}{2}r^{2} sin θ for 0° < θ ≤ 180°",
             "L_{chord} = 2r sin(\\frac{θ}{2}); P_{minor segment} = L_{arc} + L_{chord}",
@@ -3139,7 +3139,7 @@
             "V_{sphere} = \\frac{4}{3}πr^{3}; V_{hemisphere} = \\frac{2}{3}πr^{3}",
             "B = 6 cm^{2}, h = 8 cm ⇒ V_{prism} = 48 cm^{3}"
           ],
-          "narration": "Multiply the base area by the perpendicular height for a prism or cylinder. A pyramid or cone takes a third of that product. A hemisphere takes half the volume of the matching sphere.",
+          "narration": "Volume is how much a solid can hold. For any prism or cylinder, find the area of the end. Then multiply by the length. It is like stacking many thin slices. A pointed solid, like a cone or pyramid, holds exactly one third of that. So remember to divide by three for pointed shapes.",
           "sources": [
             {
               "book": "OpenStax Contemporary Mathematics",
@@ -3180,7 +3180,7 @@
             "ℓ = \\sqrt{r^{2} + h^{2}} for a right cone",
             "S_{regular pyramid} = B + \\frac{1}{2}P_{base}ℓ"
           ],
-          "narration": "For total surface area, add the curved surfaces and any exposed flat faces. The cone uses slant height for its curved area. For a solid hemisphere, include the flat circular base.",
+          "narration": "Surface area is the total area of every face you could paint. Add up all the outside surfaces. A closed cylinder has a curved side plus two circles. A cone has a curved side plus one circle at the bottom. Read the question carefully. An open container has no top, so leave that face out.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3233,7 +3233,7 @@
           "working": [
             "B = \\frac{1}{2} × 3 × 4 = 6 cm^{2}"
           ],
-          "narration": "Look at the triangular end first. Its perpendicular sides give a base and height for the triangle area."
+          "narration": "Let's try one. A prism is the same shape all the way through. So first find the area of its end. Here the end is a right angled triangle. The two short sides are three and four, and they meet at a right angle. So they act as base and height. Half of three times four gives six."
         },
         {
           "n": 9,
@@ -3242,7 +3242,7 @@
           "title": "Extend that area through the prism",
           "display": "V = B × 5 = 6 × 5",
           "working": [],
-          "narration": "A prism has the same end area all the way along its length, so multiply that area by five."
+          "narration": "Now stretch that end through the whole length of the prism. Every slice has an area of six. The prism is five long. So the volume is six times five."
         },
         {
           "n": 10,
@@ -3251,7 +3251,7 @@
           "title": "Give the volume in cubic units",
           "display": "V = 30 cm^{3}",
           "working": [],
-          "narration": "The area has square centimetres and the length has centimetres. Their product gives thirty cubic centimetres for the volume."
+          "narration": "Six times five is thirty. Since we multiplied an area by a length, the unit is cubic centimetres. So the volume is thirty cubic centimetres. Check the unit in the options, because JAMB sometimes swaps square and cubic units."
         },
         {
           "n": 11,
@@ -3262,7 +3262,7 @@
           "working": [
             "\\frac{45}{360} = \\frac{1}{8}"
           ],
-          "narration": "Forty-five degrees is one eighth of a full turn, so the arc is one eighth of the full circumference."
+          "narration": "Now a JAMB question about a sector. Its angle is forty five degrees. What fraction of a full turn is that? Forty five out of three hundred and sixty. Simplify, and it is one eighth. So this slice is one eighth of the circle."
         },
         {
           "n": 12,
@@ -3271,7 +3271,7 @@
           "title": "Find the curved edge",
           "display": "L_{arc} = \\frac{1}{8} × 2π × 8 = 2π cm",
           "working": [],
-          "narration": "The circumference is sixteen pi centimetres. Take one eighth of it because that is the part around the curved edge."
+          "narration": "The curved edge is one eighth of the full distance round. The full circumference is two pi times eight, which is sixteen pi. One eighth of sixteen pi is two pi. So the curved edge is two pi centimetres."
         },
         {
           "n": 13,
@@ -3280,7 +3280,7 @@
           "title": "Include the straight edges",
           "display": "P = 2π + 8 + 8 = (16 + 2π) cm",
           "working": [],
-          "narration": "Walk the entire boundary of the sector in your mind. It has the curved edge and two straight radii, each eight centimetres long."
+          "narration": "But a slice of pizza has more than a curved edge. It also has two straight edges, going to the centre. Each straight edge is the radius, eight. So the perimeter is two pi plus eight plus eight. That makes sixteen plus two pi centimetres."
         },
         {
           "n": 14,
@@ -3289,7 +3289,7 @@
           "title": "Count the whole sector boundary",
           "display": "Wrong  P = 2π cm     |     Right  P = (16 + 2π) cm",
           "working": [],
-          "narration": "The arc measures only the curved part. Add both straight radii whenever the question asks for the perimeter of the sector.",
+          "narration": "This is the most common sector mistake. Students find the curved edge and stop. But the perimeter goes all the way round the slice. That includes the two straight radii. Imagine walking round the edge of the pizza slice. You walk the curve, then both straight sides.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3318,7 +3318,7 @@
             "Wrong  V = 3 × 4 × 8 = 96 cm^{3}",
             "Right  V = \\frac{1}{2} × 3 × 4 × 8 = 48 cm^{3}"
           ],
-          "narration": "A triangular end takes half the product of its perpendicular sides. Use that area times the prism length to avoid treating the end as a rectangle.",
+          "narration": "If the end of a prism is a triangle, use the triangle's area. Do not multiply all three lengths as if it were a box. A right triangle with sides three and four has area six, not twelve. Then times eight gives forty eight. A box formula would give ninety six, which is double.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3344,7 +3344,7 @@
           "title": "Remember this",
           "display": "Match the formula to what is measured",
           "working": [],
-          "narration": "Trace the boundary for perimeter, cover the surface for area, and fill the space for volume.",
+          "narration": "So here is the main idea. First ask what is being measured. Distance round is perimeter, in plain units. Flat space is area, in square units. Space inside is volume, in cubic units. Choose the formula that matches, and check the unit in your answer.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3451,7 +3451,7 @@
           "working": [
             "3, 7, 11, … ⇒ d = 4; a_{5} = 3 + 4 × 4 = 19"
           ],
-          "narration": "An arithmetic progression adds the same difference each time. The first term is a, so there are one fewer jumps than the position of the term.",
+          "narration": "In an arithmetic progression, you add the same number each time. That number is the common difference. Three, seven, eleven goes up by four each time. To get the fifth term, start at three and add four, four times. That gives nineteen. Why four times and not five? The first term already counts as one.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3479,7 +3479,7 @@
           "working": [
             "3 + 7 + 11 + 15 = \\frac{4}{2}(3 + 15) = 36"
           ],
-          "narration": "An arithmetic progression has evenly spaced terms. Its average is halfway between the first and last terms, so multiply that average by the number of terms.",
+          "narration": "Here is a lovely trick for adding an arithmetic progression. Pair the first term with the last. Then pair the second with the second last. Every pair adds to the same total. So count the pairs, and multiply. For three, seven, eleven, fifteen, each pair makes eighteen. Two pairs make thirty six.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3507,7 +3507,7 @@
           "working": [
             "4, 12, 36, … ⇒ r = 3; a_{4} = 4 × 3^{3} = 108"
           ],
-          "narration": "A geometric progression multiplies by the same ratio each time. Divide a term by the nonzero term just before it to find the ratio, then count the multiplications from the start.",
+          "narration": "In a geometric progression, you multiply by the same number each time. That number is the common ratio. Four, twelve, thirty six multiplies by three each time. To get the fourth term, start at four and multiply by three, three times. That gives one hundred and eight. Again, one fewer than the term number.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3537,7 +3537,7 @@
             "2 + 6 + 18 = \\frac{2(1 − 3^{3})}{1 − 3} = 26",
             "r = 1 ⇒ S_{n} = na"
           ],
-          "narration": "To see the formula, multiply the whole sum by the ratio, then subtract to cancel the overlapping terms. For a ratio of one, each term is the same, so multiply the first term by the number of terms.",
+          "narration": "To add a geometric progression, use the sum formula. It comes from a neat trick of multiplying the whole sum by r and subtracting. For two, six, eighteen, the ratio is three. Three cubed is twenty seven. So the sum is two times one minus twenty seven, over one minus three. That gives twenty six.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3570,7 +3570,7 @@
           "working": [
             "6 + 3 + 1.5 + … = \\frac{6}{1 − \\frac{1}{2}} = 12"
           ],
-          "narration": "For a nonzero first term, an infinite geometric sum converges only when the magnitude of the ratio is less than one. Then the powers of the ratio approach zero and leave this formula.",
+          "narration": "Some progressions go on forever but still have a total. This only happens when each term gets smaller, so the ratio is between minus one and one. Six, three, one and a half keeps halving. The terms get tiny, and the total settles at twelve. The formula is the first term over one minus the ratio.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3598,7 +3598,7 @@
           "working": [
             "r = 6 ÷ 3 = 12 ÷ 6 = 2"
           ],
-          "narration": "The differences are three then six, but both consecutive divisions give two. That makes this a geometric progression."
+          "narration": "Let's try one. Before choosing a formula, find out what kind of progression it is. Is it adding or multiplying? Six divided by three is two. Twelve divided by six is two. The same ratio each time, so it is geometric, with ratio two."
         },
         {
           "n": 8,
@@ -3607,7 +3607,7 @@
           "title": "Use the finite sum rule",
           "display": "S_{4} = \\frac{3(1 − 2^{4})}{1 − 2}",
           "working": [],
-          "narration": "The question asks for four terms, so use four in the finite sum formula. Put three in as the first term and two as the ratio."
+          "narration": "Now use the geometric sum formula. The first term is three, the ratio is two, and we want four terms. So it is three times one minus two to the four, over one minus two. Keep the brackets so the signs stay safe."
         },
         {
           "n": 9,
@@ -3618,7 +3618,7 @@
           "working": [
             "3 + 6 + 12 + 24 = 45"
           ],
-          "narration": "The two minus signs cancel. You can check this short sum by adding three, six, twelve and twenty-four."
+          "narration": "Two to the four is sixteen, and one minus sixteen is minus fifteen. On the bottom, one minus two is minus one. Three times minus fifteen over minus one gives forty five. Check by listing the terms. Three, six, twelve, twenty four. They add to forty five."
         },
         {
           "n": 10,
@@ -3629,7 +3629,7 @@
           "working": [
             "10 − 4 = 6; 31 − 13 = 18"
           ],
-          "narration": "From position four to position ten there are six jumps, all of the same size. The values increase by eighteen across those jumps."
+          "narration": "Now a JAMB question. We know the fourth term and the tenth term. How many jumps are between them? Ten minus four gives six jumps. And the value grew from thirteen to thirty one. That is eighteen. So six jumps added eighteen."
         },
         {
           "n": 11,
@@ -3638,7 +3638,7 @@
           "title": "Work out the common difference",
           "display": "d = \\frac{31 − 13}{10 − 4} = 3",
           "working": [],
-          "narration": "Divide the total increase by the number of jumps. The progression goes up by three at each step."
+          "narration": "If six jumps added eighteen, then each jump adds eighteen divided by six. That is three. So the common difference is three. We found it without needing the first term at all."
         },
         {
           "n": 12,
@@ -3647,7 +3647,7 @@
           "title": "Jump from the known fourth term",
           "display": "a_{24} = 13 + (24 − 4) × 3 = 73",
           "working": [],
-          "narration": "Start at the known fourth term and make twenty more jumps. Add sixty to thirteen to get the twenty-fourth term."
+          "narration": "Now jump from the fourth term to the twenty fourth. That is twenty jumps. Each jump adds three, so twenty jumps add sixty. Thirteen plus sixty gives seventy three. That is the twenty fourth term."
         },
         {
           "n": 13,
@@ -3659,7 +3659,7 @@
             "Wrong  a_{11} = 4 × 2^{11} = 2^{13}",
             "Right  a_{11} = 4 × 2^{10} = 2^{12}"
           ],
-          "narration": "The first term is already there before any multiplying. The eleventh term therefore takes ten multiplications by two.",
+          "narration": "Count the multiplications carefully. To reach the eleventh term, you start at the first and multiply ten times, not eleven. The first term needs no multiplying at all. So it is four times two to the ten. Using two to the eleven gives an answer twice too big.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3688,7 +3688,7 @@
             "Wrong  S_{∞} = 1 − \\frac{9}{10} = \\frac{1}{10}",
             "Right  S_{∞} = \\frac{1}{1 − \\frac{9}{10}} = 10"
           ],
-          "narration": "One minus the ratio is the denominator of the infinite sum. Here divide the first term by one tenth to get ten.",
+          "narration": "For an infinite sum, you divide. You don't take away. One plus nine tenths plus more terms, forever. First work out one minus nine tenths, which is one tenth. Then divide the first term by it. One divided by one tenth is ten. So the sum is ten, not one tenth.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3714,7 +3714,7 @@
           "title": "Remember this",
           "display": "Check the change from term to term",
           "working": [],
-          "narration": "A fixed difference points to an arithmetic progression, and a fixed multiplier points to a geometric progression.",
+          "narration": "So for every progression question, start with one check. Look at how each term changes into the next. If you add the same amount, it is arithmetic. If you multiply by the same amount, it is geometric. Then choose the matching formula, and count the jumps carefully.",
           "sources": [
             {
               "book": "OpenStax Algebra and Trigonometry 2e",
@@ -3793,7 +3793,7 @@
           "title": "Picture it",
           "display": "Parts of the same tray",
           "working": [],
-          "narration": "Imagine a tray with a hundred pieces of chin-chin. Take twenty-five. That is twenty-five per cent, a quarter of the tray, or zero point two five of it.",
+          "narration": "A tray holds a hundred pieces of chin-chin. Take twenty five. That is twenty five percent. It is also a quarter, or zero point two five.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3822,7 +3822,7 @@
             "1 \\frac{1}{4} = \\frac{1 × 4 + 1}{4} = \\frac{5}{4}",
             "\\frac{1}{2} + \\frac{1}{3} = \\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}"
           ],
-          "narration": "Turn mixed numbers into improper fractions when it helps. For addition or subtraction, use a common denominator so that all the pieces are the same size.",
+          "narration": "You can only add fractions when the pieces are the same size. A half and a third are different sizes. So cut them into sixths. A half becomes three sixths, and a third becomes two sixths. Now add the pieces. Five sixths. With mixed numbers, turn them into top heavy fractions first.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3861,7 +3861,7 @@
             "\\frac{a}{b} ÷ \\frac{c}{d} = \\frac{a}{b} × \\frac{d}{c} (b, c, d ≠ 0)",
             "\\frac{2}{3} ÷ \\frac{4}{5} = \\frac{2}{3} × \\frac{5}{4} = \\frac{5}{6}"
           ],
-          "narration": "Multiply tops together and bottoms together. To divide by a nonzero fraction, turn that divisor upside down and multiply. With mixed operations, do multiplication and division before addition or subtraction, after any brackets and powers.",
+          "narration": "Multiplying fractions is the easy one. Top times top, bottom times bottom. Dividing has one extra step. Flip the second fraction, then multiply. Why flip? Dividing by a quarter means asking how many quarters fit, and that is the same as times four. So two thirds divided by four fifths is two thirds times five quarters.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3901,7 +3901,7 @@
             "0.3 × 0.04 = 0.012",
             "0.3 ÷ 0.04 = 30 ÷ 4 = 7.5"
           ],
-          "narration": "Align decimal points for addition and subtraction. When multiplying, count the total decimal places of the factors. When dividing, shift both decimal points equally until the divisor is a whole number. Divide the numerator by the denominator to convert a fraction.",
+          "narration": "Decimals are fractions with bottoms of ten, hundred or thousand. Zero point two five is twenty five hundredths, which is a quarter. When multiplying decimals, count the decimal places. Zero point three times zero point zero four has three decimal places, so zero point zero one two. When dividing, move both points until you divide by a whole number.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3950,7 +3950,7 @@
             "0.007846 ≈ 0.008 (3 decimal places)",
             "0.007843 ≈ 0.00784 (3 significant figures)"
           ],
-          "narration": "For significant figures, count from the first nonzero digit. For decimal places, count from the decimal point. If the next digit is five or more, round up. Otherwise keep the last digit.",
+          "narration": "Read the rounding instruction carefully. Significant figures start counting from the first digit that is not zero. Decimal places count from the decimal point. So the same number rounds differently. Zero point zero zero seven eight four six becomes zero point zero zero seven eight five to three significant figures. To three decimal places, it is zero point zero zero eight.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -3981,7 +3981,7 @@
             "200 × 1.15 = 230; 230 ÷ 1.15 = 200",
             "percentage error = \\frac{|measured − true|}{|true|} × 100% (true ≠ 0)"
           ],
-          "narration": "Per cent means out of a hundred. Multiply by the decimal multiplier to find the new amount, and divide by it to recover the original. For profit or loss use the cost, and for percentage error use the true value.",
+          "narration": "Percentage change always compares with the original amount, the starting value. Find the change, divide by the original, then times one hundred. For an increase of fifteen percent, multiply by one point one five. To go backwards and find the original, divide by one point one five instead. Never take fifteen percent off the new amount.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -4035,7 +4035,7 @@
             "P = ₦2,000; r = 0.06; t = 2",
             "I = ₦2,000 × 0.06 × 2 = ₦240; A = ₦2,240"
           ],
-          "narration": "Multiply the starting principal by the rate as a decimal and by the time in matching units. For an annual rate use years, then add the interest to the principal if asked for the total.",
+          "narration": "Simple interest is paid only on the money you first put in. It does not grow on itself. Multiply the principal by the rate and the time. Two thousand naira at six percent for two years gives two hundred and forty naira. Add it to the principal for the total amount.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -4068,7 +4068,7 @@
           "working": [
             "1 + \\frac{20}{100} = 1.2"
           ],
-          "narration": "The new price includes all of the old price plus one fifth of it. That makes the new price one point two times the old price."
+          "narration": "Let's try one. The bag costs two thousand four hundred after a twenty percent rise. That price is not the original. It is the original times something. A twenty percent rise means the original times one point two."
         },
         {
           "n": 9,
@@ -4077,7 +4077,7 @@
           "title": "Undo the multiplication",
           "display": "original = ₦2,400 ÷ 1.2 = ₦2,000",
           "working": [],
-          "narration": "Divide the new price by the multiplier. This takes you back to the amount the increase was based on."
+          "narration": "So to go back to the original, undo the multiplication. Divide by one point two. Two thousand four hundred divided by one point two gives two thousand naira. That is the original price."
         },
         {
           "n": 10,
@@ -4086,7 +4086,7 @@
           "title": "Check using the original price",
           "display": "20% × ₦2,000 = ₦400; ₦2,000 + ₦400 = ₦2,400",
           "working": [],
-          "narration": "Twenty per cent of two thousand is four hundred. Add it to the original price to check that you get the stated new price."
+          "narration": "Let's check it. Twenty percent of two thousand is four hundred. Two thousand plus four hundred gives two thousand four hundred. That matches the new price, so our answer is right. Always check by going forwards again."
         },
         {
           "n": 11,
@@ -4097,7 +4097,7 @@
           "working": [
             "3 \\frac{1}{3} = \\frac{10}{3}; 1 \\frac{1}{4} = \\frac{5}{4}; 1 \\frac{2}{5} = \\frac{7}{5}"
           ],
-          "narration": "Convert the mixed numbers so each term is written as one fraction. Multiply each whole number by its denominator before adding its numerator."
+          "narration": "Now a JAMB question. There are three mixed numbers and three operations. Mixed numbers are hard to multiply. So change each one into a top heavy fraction first. Three and a third becomes ten thirds. One and a quarter becomes five quarters. One and two fifths becomes seven fifths."
         },
         {
           "n": 12,
@@ -4106,7 +4106,7 @@
           "title": "Do the multiplication first",
           "display": "\\frac{5}{4} × \\frac{2}{3} = \\frac{10}{12} = \\frac{5}{6}",
           "working": [],
-          "narration": "The middle two fractions are joined by multiplication. Work out that product before subtracting it from the first fraction."
+          "narration": "Which operation comes first? Not left to right. Multiplication comes before adding and taking away. So do five quarters times two thirds first. That gives ten twelfths, which simplifies to five sixths."
         },
         {
           "n": 13,
@@ -4117,7 +4117,7 @@
           "working": [
             "\\frac{100 − 25 + 42}{30} = \\frac{117}{30}"
           ],
-          "narration": "Thirty is divisible by three, six and five. Rewrite each fraction in thirtieths so the pieces have equal size."
+          "narration": "Now we have ten thirds, minus five sixths, plus seven fifths. Different bottoms, so find a common one. Thirty works for three, six and five. Ten thirds becomes one hundred thirtieths. Five sixths becomes twenty five thirtieths. Seven fifths becomes forty two thirtieths. That gives one hundred and seventeen thirtieths."
         },
         {
           "n": 14,
@@ -4126,7 +4126,7 @@
           "title": "Reduce the result",
           "display": "\\frac{117}{30} = \\frac{39}{10} = 3 \\frac{9}{10}",
           "working": [],
-          "narration": "Divide the top and bottom by three. Thirty-nine tenths is three whole ones and nine tenths."
+          "narration": "Now simplify. One hundred and seventeen and thirty both divide by three. That gives thirty nine tenths. As a mixed number, that is three and nine tenths. Check which form the options use before you choose."
         },
         {
           "n": 15,
@@ -4138,7 +4138,7 @@
             "Wrong  (\\frac{10}{3} − \\frac{5}{4}) × \\frac{2}{3} + \\frac{7}{5}",
             "Right  \\frac{10}{3} − (\\frac{5}{4} × \\frac{2}{3}) + \\frac{7}{5}"
           ],
-          "narration": "Subtraction has to wait until the product is ready. Group the multiplication first, then use a common denominator for the remaining work.",
+          "narration": "The big trap here is doing it left to right. If you take away first, you get the wrong answer. Multiplication must come before taking away. So work out five quarters times two thirds on its own first. Then do the rest. Put brackets round the multiplication if it helps you remember.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -4167,7 +4167,7 @@
             "Wrong  ₦345 × 0.85 = ₦293.25",
             "Right  ₦345 ÷ 1.15 = ₦300"
           ],
-          "narration": "The raise was fifteen per cent of the old salary. Dividing by one point one five reverses the increase and brings you back to the old salary.",
+          "narration": "Three hundred and forty five naira is the salary after a fifteen percent rise. To find the old salary, do not take fifteen percent off. That uses the wrong starting amount. Instead, divide by one point one five. That gives three hundred naira. Check it, and fifteen percent of three hundred is forty five.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
@@ -4193,7 +4193,7 @@
           "title": "Remember this",
           "display": "Track what counts as one whole",
           "working": [],
-          "narration": "Make the parts comparable, and always ask which amount the fraction or percentage is based on.",
+          "narration": "So for fractions and percentages, always ask one question. What counts as the whole? For fractions, make the pieces the same size before adding. For percentages, always measure from the original amount. Get the whole right, and the rest is simple arithmetic.",
           "sources": [
             {
               "book": "OpenStax Prealgebra 2e",
