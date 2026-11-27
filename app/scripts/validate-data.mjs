@@ -121,6 +121,30 @@ for (const question of allQuestions) {
   }
 }
 
+// Every glossary definition must be copied from the source it cites, so Ask JP never shows invented text.
+const glossaryFile = path.join(dataDir, 'glossary.json')
+if (existsSync(glossaryFile)) {
+  const glossary = readJson(glossaryFile)
+  for (const entry of glossary.entries ?? []) {
+    const label = `glossary ${entry.term}`
+    if (!entry.term || !entry.subject || !entry.definition || !entry.source?.file || !entry.source?.id) { errors.push(`${label}: missing a field`); continue }
+    if (!['draft', 'approved'].includes(entry.status)) errors.push(`${label}: status must be draft or approved`)
+    let text = null
+    if (entry.source.file.startsWith('questions-')) {
+      const question = allQuestions.find((q) => q.id === entry.source.id)
+      if (question) text = [question.explanation, ...question.options.map((o) => o.why)].join(' ')
+    } else {
+      const lessonFile = path.join(rootDir, entry.source.file + '.json')
+      if (existsSync(lessonFile)) {
+        const scene = (readJson(lessonFile).lessons ?? []).flatMap((l) => l.scenes ?? []).find((sc) => sc.id === entry.source.id)
+        if (scene) text = scene.say ?? ''
+      }
+    }
+    if (text === null) errors.push(`${label}: source ${entry.source.file} ${entry.source.id} not found`)
+    else if (!text.includes(entry.definition)) errors.push(`${label}: definition is not in its source`)
+  }
+}
+
 if (pending.length) console.log(`${pending.length} calculation question(s) have no worked-step animation yet: ${pending.join(', ')}`)
 
 for (const error of errors) console.error(error)
