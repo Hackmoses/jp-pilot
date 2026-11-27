@@ -167,6 +167,28 @@ if (existsSync(audioManifestFile)) {
   if (queued) console.log(`${queued} solution(s) with mixed voices are queued to be voiced again (audio/revoice-paths.txt).`)
 }
 
+// Concept lessons: the voice teaches, it does not read the screen
+const words = (text) => String(text).replace(/\\[a-zA-Z]+/g, ' ').toLowerCase().match(/[a-z0-9']+/g) ?? []
+for (const name of readdirSync(dataDir).filter((f) => f.endsWith('-lessons.json'))) {
+  const lessons = readJson(path.join(dataDir, name)).lessons ?? []
+  for (const lesson of lessons) {
+    for (const step of lesson.steps ?? []) {
+      if (!step.part) continue
+      const label = `${lesson.id}: step ${step.n}`
+      const said = words(step.narration)
+      const limit = step.part === 'like-five' ? [8, 30] : [30, 70]
+      if (said.length < limit[0] || said.length > limit[1]) errors.push(`${label} narration has ${said.length} words (want ${limit[0]} to ${limit[1]})`)
+      const sentences = String(step.narration).split(/[.!?]+/).filter((x) => x.trim())
+      if (sentences.length && said.length / sentences.length > 14) errors.push(`${label} narration averages ${Math.round(said.length / sentences.length)} words a sentence (want 14 or fewer)`)
+      const screen = ` ${words([step.title, step.display, ...(step.working ?? [])].join(' ')).join(' ')} `
+      for (let i = 0; i + 6 <= said.length; i++) {
+        const run = said.slice(i, i + 6).join(' ')
+        if (screen.includes(` ${run} `)) { errors.push(`${label} narration reads the screen ("${run}")`); break }
+      }
+    }
+  }
+}
+
 if (pending.length) console.log(`${pending.length} calculation question(s) have no worked-step animation yet: ${pending.join(', ')}`)
 
 for (const error of errors) console.error(error)
