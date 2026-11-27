@@ -55,9 +55,9 @@ export function StartButtons({ center = false }: { center?: boolean }) {
   return <>
     <div class={'ld-actions' + (center ? ' ld-actions--center' : '')}>
       {ACCOUNTS_ENABLED ? <>
-        <a class="ld-btn ld-btn--primary" href="#/subjects?mode=practice">Try {FREE_QUESTIONS} questions now</a>
+        <a class="ld-btn ld-btn--primary" href="#/start">Try {FREE_QUESTIONS} questions now</a>
         <a class="ld-btn" href="#/signup">Create free account</a>
-      </> : <a class="ld-btn ld-btn--primary" href="#/subjects?mode=practice">Start practising free</a>}
+      </> : <a class="ld-btn ld-btn--primary" href="#/start">Start practising free</a>}
     </div>
     <p class="ld-note">{ACCOUNTS_ENABLED ? `No sign-up for your first ${FREE_QUESTIONS} questions.` : 'Free. Nothing to download.'}</p>
   </>

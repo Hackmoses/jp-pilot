@@ -3,6 +3,7 @@ import { lazyView } from './lib/lazyView'
 import { submitExpiredExam } from './lib/modes'
 import { examRun, results } from './screens/examModules'
 import { Home } from './screens/Home'
+import { BottomBar } from './components/BottomBar'
 import { ReturnBar } from './screens/ReturnBar'
 import { Panel } from './screens/Modes'
 
@@ -27,6 +28,7 @@ const Session = screenView(lazyView(() => import('./screens/Session').then(({ Se
 const LogPage = screenView(lazyView(() => import('./components/share/LogPage').then(({ LogPage }) => LogPage)), 'Activity log')
 const InfoPages = screenView(lazyView(() => import('./screens/InfoPages').then(({ InfoPages }) => InfoPages)), 'JP')
 const ConceptLesson = screenView(lazyView(() => import('./screens/ConceptLesson').then(({ ConceptLesson }) => ConceptLesson)), 'Lesson')
+const Start = screenView(lazyView(() => import('./screens/Start').then(({ Start }) => Start)), 'Start')
 const Summary = screenView(lazyView(() => import('./screens/Summary').then(({ Summary }) => Summary)), 'Progress summary')
 
 const FiguresDemo = import.meta.env.DEV
@@ -36,6 +38,9 @@ const FiguresDemo = import.meta.env.DEV
 function readRoute() {
   return window.location.hash
 }
+
+// Browsing screens get the phone bottom bar. Question, exam and lesson screens stay distraction-free.
+const WITH_BAR = new Set(['', '#', '#/', '#/start', '#/subjects', '#/study', '#/practice', '#/exam', '#/exam/rules', '#/done', '#/practice/results', '#/exam/results', '#/about', '#/privacy', '#/contact', '#/signup', '#/references'])
 
 export function App() {
   const [route, setRoute] = useState(readRoute)
@@ -61,7 +66,11 @@ export function App() {
   }, [route])
 
   const [screen, query] = route.split('?')
-  const params = new URLSearchParams(query)
+  const page = renderScreen(screen, route, new URLSearchParams(query))
+  return WITH_BAR.has(screen) ? <>{page}<BottomBar route={route} /></> : page
+}
+
+function renderScreen(screen: string, route: string, params: URLSearchParams) {
   if (import.meta.env.DEV && screen === '#/figures-demo' && FiguresDemo) return <FiguresDemo />
   switch (screen) {
     case '#/modes':
@@ -89,6 +98,8 @@ export function App() {
       return <Session key={route} />
     case '#/done':
       return <Summary />
+    case '#/start':
+      return <Start />
     case '#/lesson':
       return <><ReturnBar /><ConceptLesson key={route} id={params.get('id') ?? ''} /></>
     case '#/log':

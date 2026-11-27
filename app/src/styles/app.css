@@ -1524,3 +1524,21 @@ body {
   outline: 2px solid var(--brand);
   outline-offset: 2px;
 }
+
+/* Bottom bar: phones only, on browsing screens. Never on question, exam or lesson screens. */
+.jp-bottom-bar, .jp-bottom-space { display: none; }
+@media (max-width: 759px) {
+  .jp-bottom-space { display: block; height: calc(56px + env(safe-area-inset-bottom)); }
+  .jp-bottom-bar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding-bottom: env(safe-area-inset-bottom);
+    background: var(--bg); border-top: 1px solid var(--line);
+  }
+  .jp-bottom-bar a {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+    height: 54px; font-size: 11px; font-weight: 600; color: var(--ink-2); text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  .jp-bottom-bar a[aria-current="page"] { color: var(--brand); }
+}
