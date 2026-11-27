@@ -52,6 +52,16 @@ export const ENGLISH_CARD_TOPICS: Record<string, string> = {
   9: 'phrasal-verbs-prepositions', 11: 'confusable-words', 18: 'spelling',
 }
 
+// JAMB UTME Economics syllabus topics 1 to 23 (Economic/Economics.pdf). The groups only cut scrolling.
+const economics = fromRows([
+  ['A', 'Basic Concepts and Tools', [['Economics as a Science', 1], ['Economic Systems', 2], ['Methods and Tools of Economic Analysis', 3]]],
+  ['B', 'Demand, Supply and Prices', [['The Theory of Demand', 4], ['The Theory of Consumer Behaviour', 5], ['The Theory of Supply', 6], ['The Theory of Price Determination', 7]]],
+  ['C', 'Production, Costs and Markets', [['The Theory of Production', 8], ['Theory of Costs and Revenue', 9], ['Market Structures', 10], ['Factors of Production and their Theories', 23]]],
+  ['D', 'Money and the National Economy', [['National Income', 11], ['Money and Inflation', 12], ['Financial Institutions', 13], ['Public Finance', 14], ['Economic Growth and Development', 15]]],
+  ['E', 'The Nigerian Economy', [['Agriculture in Nigeria', 16], ['Industry and Industrialization', 17], ['Natural Resources and the Nigerian Economy', 18], ['Business Organizations', 19], ['Population', 20]]],
+  ['F', 'International Economics', [['International Trade', 21], ['International Economic Organizations', 22]]],
+])
+
 // Biology has no syllabus file yet, so its JAMB sections live here.
 const biology: { subject: string; sections: SyllabusSection[] } = {
   subject: 'biology',
@@ -77,7 +87,7 @@ const biology: { subject: string; sections: SyllabusSection[] } = {
   ],
 }
 
-const syllabi: Record<string, { sections: SyllabusSection[] }> = { chemistry, physics, mathematics, biology }
+const syllabi: Record<string, { sections: SyllabusSection[] }> = { chemistry, physics, mathematics, biology, economics }
 
 export function syllabusSections(subject: string, study = false): SyllabusSection[] {
   if (subject === 'english') return english.sections
@@ -117,6 +127,11 @@ const topicChapters: Record<string, Record<string, string>> = {
   },
   english: {
     'Synonyms': '4', 'Antonyms': '5', 'Idioms and figurative usage': '6', 'Concord and grammar': '7',
+  },
+  economics: {
+    'Basic economic concepts': '1', 'Elasticity': '4', 'Consumer behaviour': '5', 'Demand and supply': '7',
+    'Production and costs': '9', 'Market structures': '10', 'Money and banking': '13', 'Public finance': '14',
+    'Population and labour': '20', 'International trade': '21',
   },
   biology: {
     'Cell biology': '1', 'Evolution & classification': '2', 'Nutrition': '3', 'Transport': '4',

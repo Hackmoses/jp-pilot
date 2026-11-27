@@ -112,7 +112,7 @@ const SUBJECTS = [
   { subject: 'chemistry', files: ['data/animations.json', 'data/subjects/animations-chemistry.json', 'data/subjects/animations-chemistry-more.json', 'data/chemistry-lessons.json'] },
   { subject: 'mathematics', files: ['data/subjects/animations-mathematics.json', 'data/subjects/animations-maths-jamb.json', 'data/subjects/animations-maths-more-1.json', 'data/subjects/animations-maths-more-2.json', 'data/subjects/animations-maths-more-3.json', 'data/subjects/animations-maths-more-4.json', 'data/maths-lessons.json'] },
   { subject: 'accounting', files: ['data/subjects/animations-accounting.json'] },
-  { subject: 'economics', files: ['data/subjects/animations-economics.json'] },
+  { subject: 'economics', files: ['data/subjects/animations-economics.json', 'data/economics-lessons.json'] },
   { subject: 'commerce', files: ['data/subjects/animations-commerce.json'] },
   { subject: 'computer', files: ['data/subjects/animations-computer.json'] },
   { subject: 'geography', files: ['data/subjects/animations-geography.json'] },
