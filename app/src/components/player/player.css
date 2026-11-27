@@ -754,6 +754,12 @@ body:has(.jp-calc-modal[open]) {
   border-color: var(--line);
 }
 
+/* Every step shares the height of the tallest one. Centre the shorter steps, with the caption
+   right under the writing, so there is no empty floor below them, with or without captions. */
+.jp-player__row--step {
+  justify-content: center;
+}
+
 .jp-step__title {
   display: block;
   font: 700 13px/1.35 var(--font-system);
