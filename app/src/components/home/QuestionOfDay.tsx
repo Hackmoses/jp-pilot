@@ -37,7 +37,22 @@ function prefetchWeek(date: string) {
   else setTimeout(run, 4000)
 }
 
-type Load = { state: 'loading' } | { state: 'today'; day: QotdFile } | { state: 'backup'; day: QotdFile } | { state: 'failed' }
+type Load = { state: 'loading' } | { state: 'today'; day: QotdFile } | { state: 'backup'; day: QotdFile }
+
+// Built into the page, so even a first visit with no network still gets a question to answer.
+const EMBEDDED: QotdFile = {
+  date: 'backup', subject: 'physics', id: 'phys-jamb-2006-045', year: '2006',
+  stem: 'A drop of petrol makes a finger colder than a drop of water would because',
+  options: [
+    { id: 'a', text: 'petrol takes its latent heat of fusion from the finger' },
+    { id: 'b', text: 'petrol takes its latent heat of vaporization from the finger' },
+    { id: 'c', text: 'water has higher surface tension' },
+    { id: 'd', text: 'water is more viscous than petrol' },
+  ],
+  answerId: 'b',
+  explanation: 'Petrol evaporates much faster than water. Evaporating takes latent heat of vaporization, and the petrol takes that heat from the finger, so the finger feels colder.',
+  hasSolution: false,
+} as QotdFile
 
 export function QuestionOfDay({ showStreak = false }: { showStreak?: boolean }) {
   const date = lagosDate()
@@ -64,12 +79,11 @@ export function QuestionOfDay({ showStreak = false }: { showStreak?: boolean }) 
         const pick = backup[Math.abs(Math.floor(Date.parse(date) / 86_400_000)) % backup.length]
         setLoad({ state: 'backup', day: pick })
         setPicked(null)
-      } else setLoad({ state: 'failed' })
+      } else setLoad({ state: 'backup', day: EMBEDDED })
     })()
     return () => controller.abort()
   }, [date, attempt])
 
-  if (load.state === 'failed') return null
   if (load.state === 'loading') return (
     <section class="home-card home-qotd home-qotd--loading" aria-busy="true" aria-label="Question of the day is loading">
       <p class="home-eyebrow home-eyebrow--hint">Question of the day</p>
