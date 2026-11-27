@@ -85,10 +85,10 @@ function SubjectTiles({ stats }: { stats: HomeStats | null }) {
 
 function Inside({ stats }: { stats: HomeStats }) {
   const items = [
-    [overLabel(stats.questions), 'JAMB past questions'],
+    [overLabel(stats.questions), 'practice questions'],
+    [overLabel(stats.pastQuestions), 'from real JAMB past papers'],
     [overLabel(stats.solutions), 'worked solutions you can watch'],
     [overLabel(stats.lessons), 'illustrated lessons'],
-    [String(stats.subjectCount), 'UTME subjects'],
   ]
   return (
     <section class="home-inside" aria-label="What's inside JP">

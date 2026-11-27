@@ -1,6 +1,7 @@
 export type HomeStats = {
   subjects: Record<string, number>
   questions: number
+  pastQuestions: number
   solutions: number
   lessons: number
   subjectCount: number
