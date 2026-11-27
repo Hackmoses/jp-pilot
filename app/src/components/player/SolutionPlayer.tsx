@@ -19,6 +19,7 @@ import {
   type PlaybackState,
 } from './CalculationPlayback'
 import { bindHandwriting } from './handwriting'
+import { ensureHandwritingFont } from '../../lib/fonts'
 import { WritingHand } from './WritingHand'
 import './player.css'
 
@@ -220,6 +221,7 @@ function Player({
   const speechKey = `player:${id}`
   const speaking = activeKey === speechKey
 
+  useEffect(ensureHandwritingFont, [])
   useEffect(() => {
     if (
       !(isOpen || expanded) ||

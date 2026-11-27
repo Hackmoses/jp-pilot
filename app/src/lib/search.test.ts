@@ -26,3 +26,11 @@ describe('Ask JP search', () => {
     expect(search(index, 'zebra crossing')).toEqual([])
   })
 })
+
+describe('Ask Google link', () => {
+  it('asks for a definition of a single word and passes phrases as typed', async () => {
+    const { googleUrl } = await import('./search')
+    expect(googleUrl(' obstreperous ')).toBe('https://www.google.com/search?q=define%20obstreperous')
+    expect(googleUrl('antonym of laudable')).toBe('https://www.google.com/search?q=antonym%20of%20laudable')
+  })
+})

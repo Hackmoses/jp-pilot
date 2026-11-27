@@ -70,3 +70,11 @@ export function search(index: SearchIndex, query: string, limit = 4) {
     return true
   }).slice(0, limit)
 }
+
+// When JP has no answer, the student can ask Google. One word becomes "define <word>"
+// so Google shows a dictionary card first.
+export function googleUrl(query: string) {
+  const text = query.trim().replace(/\s+/g, ' ')
+  const q = /^[a-z'’-]+$/i.test(text) ? 'define ' + text : text
+  return 'https://www.google.com/search?q=' + encodeURIComponent(q)
+}

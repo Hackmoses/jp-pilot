@@ -66,4 +66,14 @@ for (let i = -1; i < DAYS; i++) {
     answerId: q.answerId, explanation: q.explanation, hasSolution: solved || subject === 'biology',
   }))
 }
+// A few questions kept on the phone for when today's file cannot load. Taken from the far end of
+// each subject's list, so they are not days that students will see soon.
+const toFile = (subject, id) => {
+  const { q, solved } = bySubject[subject].get(id)
+  return { date: 'backup', subject, id, year: q.source.yearLabel.trim(), stem: q.stem,
+    options: q.options.map(({ id, text }) => ({ id, text })), answerId: q.answerId, explanation: q.explanation,
+    hasSolution: solved || subject === 'biology' }
+}
+const backup = QOTD_SUBJECTS.flatMap((subject) => order[subject].slice(-2).map((id) => toFile(subject, id)))
+writeFileSync(path.join(outDir, 'backup.json'), JSON.stringify(backup))
 console.log('[build-qotd] eligible per subject', JSON.stringify(counts), 'days', DAYS)

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks'
 import { ACCOUNTS_ENABLED } from '../../lib/config'
-import { lagosDate, saveAnswer, savedAnswer, streak, type QotdFile, type QotdOption } from '../../lib/qotd'
+import { addDays, lagosDate, saveAnswer, savedAnswer, streak, type QotdFile, type QotdOption } from '../../lib/qotd'
 import { getSubject } from '../../lib/subjects'
 
 // Shows x^{2} and H_{2}O as superscripts and subscripts without loading the full maths renderer.
@@ -11,39 +11,90 @@ export function SimpleText({ text }: { text: string }) {
     : part.startsWith('^') ? <sup key={i}>{part.slice(1)}</sup> : part)}</>
 }
 
+const base = import.meta.env.BASE_URL + 'data/qotd/'
+
+async function fetchJson<T>(url: string, ms: number, signal: AbortSignal): Promise<T | null> {
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), ms)
+  signal.addEventListener('abort', () => controller.abort())
+  try {
+    const res = await fetch(url, { signal: controller.signal })
+    return res.ok ? await res.json() as T : null
+  } catch { return null } finally { clearTimeout(timer) }
+}
+
+function lightConnection() {
+  const connection = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection
+  return Boolean(connection?.saveData || connection?.effectiveType?.includes('2g'))
+}
+
+// Fetch the next week's files when the page is quiet. The offline worker keeps them, so the
+// question still works on days without signal.
+function prefetchWeek(date: string) {
+  if (lightConnection()) return
+  const run = () => { for (let i = 1; i <= 7; i++) void fetch(base + addDays(date, i) + '.json').catch(() => {}) }
+  if ('requestIdleCallback' in window) window.requestIdleCallback(run, { timeout: 8000 })
+  else setTimeout(run, 4000)
+}
+
+type Load = { state: 'loading' } | { state: 'today'; day: QotdFile } | { state: 'backup'; day: QotdFile } | { state: 'failed' }
+
 export function QuestionOfDay() {
   const date = lagosDate()
-  const [day, setDay] = useState<QotdFile | null>(null)
+  const [load, setLoad] = useState<Load>({ state: 'loading' })
+  const [attempt, setAttempt] = useState(0)
   const [picked, setPicked] = useState<QotdOption['id'] | null>(null)
   const [count, setCount] = useState(() => streak(date))
 
   useEffect(() => {
     const controller = new AbortController()
-    fetch(`${import.meta.env.BASE_URL}data/qotd/${date}.json`, { signal: controller.signal })
-      .then((res) => res.ok ? res.json() as Promise<QotdFile> : null)
-      .then((file) => {
-        if (!file || file.date !== date) return
-        setDay(file)
-        setPicked(savedAnswer(date, file.id))
-      })
-      .catch(() => { /* Offline and not cached. The card stays hidden. */ })
+    setLoad({ state: 'loading' })
+    void (async () => {
+      const today = await fetchJson<QotdFile>(base + date + '.json', 6000, controller.signal)
+      if (controller.signal.aborted) return
+      if (today && today.date === date) {
+        setLoad({ state: 'today', day: today })
+        setPicked(savedAnswer(date, today.id))
+        prefetchWeek(date)
+        return
+      }
+      const backup = await fetchJson<QotdFile[]>(base + 'backup.json', 4000, controller.signal)
+      if (controller.signal.aborted) return
+      if (backup?.length) {
+        const pick = backup[Math.abs(Math.floor(Date.parse(date) / 86_400_000)) % backup.length]
+        setLoad({ state: 'backup', day: pick })
+        setPicked(null)
+      } else setLoad({ state: 'failed' })
+    })()
     return () => controller.abort()
-  }, [date])
+  }, [date, attempt])
 
-  if (!day) return null
+  if (load.state === 'failed') return null
+  if (load.state === 'loading') return (
+    <section class="home-card home-qotd home-qotd--loading" aria-busy="true" aria-label="Question of the day is loading">
+      <p class="home-eyebrow home-eyebrow--hint">Question of the day</p>
+      <span class="home-skeleton home-skeleton--short" />
+      <span class="home-skeleton" />
+      <span class="home-skeleton" />
+      <div class="home-qotd-options">{[0, 1, 2, 3].map((i) => <span key={i} class="home-skeleton home-skeleton--option" />)}</div>
+    </section>
+  )
+
+  const { day } = load
+  const offline = load.state === 'backup'
   const answered = picked !== null
   const correct = picked === day.answerId
   const pick = (id: QotdOption['id']) => {
     if (answered) return
     setPicked(id)
-    setCount(saveAnswer(date, day.id, id))
+    if (!offline) setCount(saveAnswer(date, day.id, id))
   }
 
   return (
     <section class="home-card home-qotd" aria-labelledby="home-qotd-title">
       <div class="home-qotd-head">
-        <h2 id="home-qotd-title" class="home-eyebrow home-eyebrow--hint">Question of the day</h2>
-        {count > 0 && <span class="home-streak">{count}-day streak</span>}
+        <h2 id="home-qotd-title" class="home-eyebrow home-eyebrow--hint">{offline ? 'Offline question' : 'Question of the day'}</h2>
+        {!offline && count > 0 && <span class="home-streak">{count}-day streak</span>}
       </div>
       <p class="home-qotd-source">{getSubject(day.subject)?.name ?? day.subject} · JAMB {day.year}</p>
       <p class="home-qotd-stem"><SimpleText text={day.stem} /></p>
@@ -56,15 +107,18 @@ export function QuestionOfDay() {
           </button>
         })}
       </div>
-      {answered ? <div class="home-qotd-result" role="status">
+      {answered && <div class="home-qotd-result" role="status">
         <p class="home-qotd-verdict" data-correct={correct}>{correct ? 'Correct.' : 'Not quite.'}</p>
         <p class="home-qotd-why"><SimpleText text={day.explanation} /></p>
         <a class="home-link" href={'#/q?id=' + encodeURIComponent(day.id)}>
           {day.hasSolution ? 'Watch it explained →' : 'Open the full question →'}
         </a>
-      </div> : <p class="home-note">{ACCOUNTS_ENABLED
-        ? 'Free for everyone · doesn’t count toward your 4 free questions · new one at midnight'
-        : 'Same question for every student today · new one at midnight'}</p>}
+      </div>}
+      {offline
+        ? <p class="home-note">Today’s question could not load, so here is one saved on your phone. It doesn’t count toward your streak. <button type="button" class="home-text-btn" onClick={() => setAttempt((n) => n + 1)}>Try again</button></p>
+        : !answered && <p class="home-note">{ACCOUNTS_ENABLED
+          ? 'Free for everyone · doesn’t count toward your 4 free questions · new one at midnight'
+          : 'Same question for every student today · new one at midnight'}</p>}
     </section>
   )
 }

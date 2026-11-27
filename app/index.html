@@ -4,20 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="data:," />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-      />
-    </noscript>
     <title>JP · JAMB UTME Practice</title>
     <style>
       body {
@@ -26,37 +12,46 @@
         color: var(--ink);
         font: 1rem/1.5 var(--font-system);
       }
-
-      .placeholder {
-        max-width: 36rem;
-        margin-inline: auto;
-        padding: var(--space-6);
-      }
-
-      .placeholder p {
-        color: var(--ink-2);
-      }
-
-      .placeholder a {
-        display: inline-flex;
-        align-items: center;
-        min-height: var(--tap-min);
-        padding-inline: var(--space-4);
-        border-radius: var(--radius-small);
-        background: var(--brand);
-        color: var(--bg);
-        font-weight: 600;
-        text-decoration: none;
-      }
-
-      .placeholder a:focus-visible {
-        outline: 2px solid var(--brand);
-        outline-offset: 3px;
-      }
     </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- Shown at once, before the app code arrives. The app replaces it when it starts. -->
+      <div class="home" id="jp-shell">
+        <header class="home-header">
+          <div class="home-header-inner">
+            <a class="home-brand" href="#/" aria-label="JP home"><span class="home-logo" aria-hidden="true">JP</span><span class="home-brand-name">JAMB Practice</span></a>
+          </div>
+        </header>
+        <main class="home-main" id="jp-shell-main">
+          <section class="home-intro">
+            <p class="home-greeting" id="jp-shell-greeting">Welcome</p>
+            <h1>What do you want to learn today?</h1>
+            <p class="home-pitch">Real JAMB past questions, a clear reason under every answer, and step-by-step solutions you can watch. Works on one bar of signal.</p>
+            <div class="home-actions"><a class="home-btn home-btn--primary" href="#/subjects?mode=practice">Start practising free →</a></div>
+            <p class="home-note" id="jp-shell-status" role="status"></p>
+          </section>
+        </main>
+        <footer class="home-footer"><div class="home-footer-inner"><p class="home-disclaimer">JP is an independent practice app and is not affiliated with JAMB (Joint Admissions and Matriculation Board).</p></div></footer>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var h = new Date().getHours()
+        var greet = document.getElementById('jp-shell-greeting')
+        if (greet) greet.textContent = h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening'
+        var status = document.getElementById('jp-shell-status')
+        var say = function (text) { if (status && document.getElementById('jp-shell')) status.textContent = text }
+        if (location.hash && location.hash !== '#/') {
+          var main = document.getElementById('jp-shell-main')
+          if (main) main.innerHTML = '<p class="home-note" role="status">Loading…</p>'
+          status = main && main.firstChild
+        }
+        if (!navigator.onLine) say('You are offline. Connect once to load JP. After that it works offline.')
+        window.addEventListener('offline', function () { say('You are offline. Connect once to load JP. After that it works offline.') })
+        setTimeout(function () { say('Still loading. Your connection looks slow. Keep this page open, or reload when you have better signal.') }, 8000)
+      })()
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

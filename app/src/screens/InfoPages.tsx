@@ -10,7 +10,7 @@ export function InfoPages({ page }: { page: InfoPage }) {
     <p class="jp-mode-lead">You can study chapter by chapter, practise questions your way, or sit a timed JAMB-style exam. JP runs in the browser, needs no download and keeps working offline once a subject has been opened.</p>
   </> : page === 'privacy' ? <>
     <p class="jp-mode-lead">JP has no accounts yet. Your answers, progress, streak and settings are saved in this browser on this device. Clearing your browser data removes them.</p>
-    <p class="jp-mode-lead">Ask JP on the home page searches content stored in the app and sends nothing about you.</p>
+    <p class="jp-mode-lead">Ask JP on the home page searches content stored in the app and sends nothing about you. If you tap Ask Google, the words you typed open in Google Search, under Google’s own privacy terms.</p>
     <p class="jp-mode-lead">When you type a question to the JP Tutor under a question, or rate or report its reply, that text is sent to JP’s server with a random device ID used to apply the daily limit. The ID is not linked to your name or email.</p>
     <p class="jp-mode-lead">Sharing to WhatsApp opens WhatsApp with a message you can edit before sending.</p>
   </> : page === 'contact' ? <>

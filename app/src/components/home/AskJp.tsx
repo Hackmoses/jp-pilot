@@ -1,14 +1,22 @@
-import { useRef, useState } from 'preact/hooks'
-import { search, type SearchEntry, type SearchIndex } from '../../lib/search'
+import { useEffect, useRef, useState } from 'preact/hooks'
+import { googleUrl, search, type SearchEntry, type SearchIndex } from '../../lib/search'
 import { getSubject } from '../../lib/subjects'
 
 export const ASK_EXAMPLES = ['what is a mole', 'antonym of laudable', 'photosynthesis']
 let indexPromise: Promise<SearchIndex | null> | null = null
 
 function loadIndex() {
-  indexPromise ??= fetch(`${import.meta.env.BASE_URL}data/search-index.json`)
-    .then((res) => res.ok ? res.json() as Promise<SearchIndex> : null)
-    .catch(() => { indexPromise = null; return null })
+  indexPromise ??= (async () => {
+    const controller = new AbortController()
+    const timer = setTimeout(() => controller.abort(), 10000)
+    try {
+      const res = await fetch(`${import.meta.env.BASE_URL}data/search-index.json`, { signal: controller.signal })
+      return res.ok ? await res.json() as SearchIndex : null
+    } catch { return null } finally { clearTimeout(timer) }
+  })().then((index) => {
+    if (!index) indexPromise = null // Let Try again fetch it afresh.
+    return index
+  })
   return indexPromise
 }
 
@@ -21,8 +29,29 @@ function linkLabel(entry: SearchEntry) {
     detail: (getSubject(entry.subject)?.name ?? entry.subject) + (entry.detail && entry.detail !== getSubject(entry.subject)?.name ? ' · ' + entry.detail : '') }
 }
 
+function AskGoogle({ query, quiet }: { query: string; quiet?: boolean }) {
+  if (!query.trim() || !navigator.onLine) return null
+  return <a class={quiet ? 'home-link home-google-link' : 'home-btn home-google'} href={googleUrl(query)}
+    target="_blank" rel="noopener noreferrer">
+    {quiet ? 'Not what you need? Ask Google ↗' : 'Ask Google ↗'}
+  </a>
+}
+
+// Fetch the search data early only on a good connection, once the page has gone quiet.
+function prefetchWhenIdle() {
+  const connection = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection
+  if (connection?.saveData || (connection?.effectiveType && connection.effectiveType !== '4g')) return
+  const run = () => void loadIndex()
+  if ('requestIdleCallback' in window) window.requestIdleCallback(run, { timeout: 10000 })
+  else setTimeout(run, 5000)
+}
+
 export function AskJp() {
   const input = useRef<HTMLInputElement>(null)
+  useEffect(() => {
+    const timer = setTimeout(prefetchWhenIdle, 3000)
+    return () => clearTimeout(timer)
+  }, [])
   const [query, setQuery] = useState('')
   const [state, setState] = useState<'idle' | 'loading' | 'offline' | 'done'>('idle')
   const [results, setResults] = useState<SearchEntry[]>([])
@@ -53,8 +82,18 @@ export function AskJp() {
         {query && <button type="button" class="home-ask-clear" aria-label="Clear" onClick={() => { void run(''); input.current?.focus() }}>×</button>}
       </form>
       <div aria-live="polite">
-        {state === 'offline' && <p class="home-note">Ask JP could not load. Check your connection and try again.</p>}
-        {state === 'done' && results.length === 0 && <p class="home-note">Nothing in JP yet for that. Try a shorter word.</p>}
+        {state === 'loading' && <p class="home-note">Loading…</p>}
+        {state === 'offline' && <div class="home-ask-empty">
+          <p class="home-note">Couldn’t load search. Check your connection.</p>
+          <div class="home-ask-actions">
+            <button type="button" class="home-btn" onClick={() => void run(query)}>Try again</button>
+            <AskGoogle query={query} />
+          </div>
+        </div>}
+        {state === 'done' && results.length === 0 && <div class="home-ask-empty">
+          <p class="home-note">Nothing in JP yet for “{query.trim()}”. Try a shorter word, or ask Google.</p>
+          <div class="home-ask-actions"><AskGoogle query={query} /></div>
+        </div>}
         {state === 'done' && results.length > 0 && <div class="home-ask-results">
           {term && <article class="home-ask-term">
             <div class="home-ask-term-head">
@@ -73,6 +112,7 @@ export function AskJp() {
               </a>
             })}
           </div>}
+          {!term && <AskGoogle query={query} quiet />}
         </div>}
       </div>
       {(state === 'idle' || (state === 'done' && results.length === 0)) && <div class="home-ask-examples">
