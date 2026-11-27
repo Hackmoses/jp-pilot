@@ -1,0 +1,4050 @@
+{
+  "version": 1,
+  "subject": "chemistry",
+  "lessons": [
+    {
+      "id": "chem-mole",
+      "title": "The mole and stoichiometry",
+      "minutes": 3,
+      "chapters": [
+        "2"
+      ],
+      "keywords": [
+        "mole",
+        "Avogadro constant",
+        "molar mass",
+        "molar gas volume",
+        "s.t.p.",
+        "stoichiometry",
+        "percentage composition",
+        "empirical formula",
+        "molecular formula",
+        "vapour density",
+        "balancing equations",
+        "conservation of mass",
+        "state symbols",
+        "reacting masses",
+        "reacting volumes",
+        "limiting reagent",
+        "excess reactant"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Big picture",
+          "title": "Counting eggs by the crate",
+          "display": "1 crate = 30 eggs  |  1 mole = 6.02 × 10^{23} particles",
+          "working": [
+            "Market seller counts crates, not single eggs.",
+            "Chemist counts moles, not single atoms or molecules."
+          ],
+          "narration": "At a Nigerian market, sellers pack eggs into crates instead of counting them one by one. Chemists pack tiny particles into moles the same way."
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Moles from mass, s.t.p. volume, and particles",
+          "display": "n = \\frac{m}{M} = \\frac{V_{s.t.p.}}{22.4 dm^{3} mol^{−1}} = \\frac{N}{N_{A}}  |  N_{A} = 6.02 × 10^{23} mol^{−1}",
+          "working": [
+            "11 g of CO_{2} (M = 12 + 2 × 16 = 44 g mol^{−1}):",
+            "n = \\frac{11}{44} = 0.25 mol",
+            "V_{s.t.p.} = 0.25 × 22.4 = 5.6 dm^{3}",
+            "N = 0.25 × 6.02 × 10^{23} = 1.505 × 10^{23} molecules"
+          ],
+          "narration": "One mole holds the Avogadro constant, six point zero two times ten to the twenty three particles. Divide mass by molar mass, standard gas volume by twenty two point four, or particle count by the Avogadro constant.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 63, 65–66, 94"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 88–89"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§3.1, §9.2"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Percentage composition by mass",
+          "display": "% element = \\frac{mass of element in 1 mol}{molar mass of compound} × 100%",
+          "working": [
+            "Calcium trioxonitrate(V) (calcium nitrate), Ca(NO_{3})_{2}:",
+            "M = 40 + 2(14 + 3 × 16) = 40 + 28 + 96 = 164 g mol^{−1}",
+            "% N = \\frac{28}{164} × 100% ≈ 17.1%"
+          ],
+          "narration": "To find percentage composition, add every atom inside brackets to get the molar mass. Divide the total mass of the target element in one mole by the compound molar mass, then multiply by one hundred.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 55–56"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 95"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§3.2"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Empirical and molecular formula",
+          "display": "MF = (EF)_{n}  |  n = \\frac{M}{m_{EF}}  |  M = 2 × vapour density",
+          "working": [
+            "80% C, 20% H, M = 30 g mol^{−1}:",
+            "Moles → C: \\frac{80}{12} = 6.67, H: \\frac{20}{1} = 20  |  Divide by 6.67 → 1 : 3 → CH_{3}",
+            "m_{EF} = 12 + 3 = 15  |  n = \\frac{30}{15} = 2 → MF = C_{2}H_{6}"
+          ],
+          "narration": "For an empirical formula, divide each element mass or percentage by its relative atomic mass, then divide by the smallest mole value to get whole numbers. For the molecular formula, divide molar mass, or twice vapour density, by the empirical mass.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 56–58, 95"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 91–94"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§3.2"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Balancing equations and conservation of mass",
+          "display": "Adjust coefficients only (never subscripts)  |  (s), (l), (g), (aq)",
+          "working": [
+            "Unbalanced: H_{2}(g) + O_{2}(g) → H_{2}O(l)",
+            "Balanced: 2H_{2}(g) + O_{2}(g) → 2H_{2}O(l)",
+            "4 H atoms and 2 O atoms on each side (mass conserved)"
+          ],
+          "narration": "A balanced chemical equation obeys the law of conservation of mass because atom counts stay equal on both sides. Change coefficients in front of formulae, never subscripts inside them, and write state symbols where aqueous means dissolved in water.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 69, 76"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 101"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Reacting masses and gas volumes",
+          "display": "n_{unknown} = n_{known} × \\frac{coeff_{unknown}}{coeff_{known}}",
+          "working": [
+            "CaCO_{3}(s) → CaO(s) + CO_{2}(g)  (1 : 1 : 1)",
+            "25 g CaCO_{3} (M = 100) → n = 0.25 mol",
+            "m(CaO) = 0.25 × 56 = 14 g  |  V_{s.t.p.}(CO_{2}) = 0.25 × 22.4 = 5.6 dm^{3}"
+          ],
+          "narration": "Never compare grams directly across a reaction. First convert the known mass or volume into moles, multiply by the balanced equation mole ratio, then convert the unknown moles into grams or standard gas volume.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 78–80"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 104–105"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§4.3"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Limiting reagent and excess reactant",
+          "display": "Compare \\frac{n_{available}}{coeff} → smallest value is the limiting reagent",
+          "working": [
+            "2H_{2}(g) + O_{2}(g) → 2H_{2}O(l)",
+            "Mix 3 mol H_{2} with 2 mol O_{2}:",
+            "H_{2}: \\frac{3}{2} = 1.5  |  O_{2}: \\frac{2}{1} = 2.0",
+            "H_{2} limits product (3 mol H_{2}O formed; 0.5 mol O_{2} left)"
+          ],
+          "narration": "When two reactants are mixed, the one that runs out first is the limiting reagent and controls how much product forms. Divide each available mole or gas volume by its coefficient; the smaller ratio limits the reaction.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 81"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 105–106"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§4.4"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1 · Step 1",
+          "title": "Read the reaction and convert given mass to moles",
+          "display": "4.8 g Mg + 0.30 mol HCl: Mg(s) + 2HCl(aq) → MgCl_{2}(aq) + H_{2}(g). Find V_{s.t.p.}(H_{2}).",
+          "working": [
+            "M(Mg) = 24 g mol^{−1}",
+            "n(Mg) = \\frac{4.8}{24} = 0.20 mol",
+            "n(HCl) = 0.30 mol (given)"
+          ],
+          "narration": "Here is our practice problem with magnesium and hydrochloric acid. First convert four point eight grams of magnesium to moles by dividing by twenty four, giving zero point two zero moles of magnesium alongside zero point three zero moles of acid."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1 · Step 2",
+          "title": "Identify the limiting reagent",
+          "display": "1 mol Mg requires 2 mol HCl",
+          "working": [
+            "0.20 mol Mg needs 2 × 0.20 = 0.40 mol HCl",
+            "Available HCl = 0.30 mol < 0.40 mol",
+            "HCl is the limiting reagent (Mg is in excess)"
+          ],
+          "narration": "From the balanced equation, one mole of magnesium needs two moles of acid, so zero point two zero moles need zero point four zero moles. Because only zero point three zero moles of acid are present, acid is the limiting reagent."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1 · Step 3",
+          "title": "Use the limiting reagent to find moles and volume of hydrogen",
+          "display": "2HCl → H_{2}  |  V_{s.t.p.}(H_{2}) = n(H_{2}) × 22.4 dm^{3} mol^{−1}",
+          "working": [
+            "n(H_{2}) = \\frac{1}{2} × n(HCl) = \\frac{1}{2} × 0.30 = 0.15 mol",
+            "V_{s.t.p.}(H_{2}) = 0.15 × 22.4 = 3.36 dm^{3}"
+          ],
+          "narration": "Always calculate product from the limiting reagent. Two moles of hydrochloric acid yield one mole of hydrogen gas, so zero point three zero moles yield zero point one five moles. Multiplying by twenty two point four gives three point three six cubic decimetres."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "Example 2 · Step 1",
+          "title": "Restate the JAMB past question",
+          "display": "A compound contains 40.0% carbon, 6.7% hydrogen and 53.3% oxygen by mass. Its relative molecular mass is 180. Find its molecular formula. (C = 12, H = 1, O = 16)",
+          "working": [
+            "Assume 100 g sample → 40.0 g C, 6.7 g H, 53.3 g O",
+            "Target: molecular formula (M_{r} = 180)"
+          ],
+          "narration": "Let us solve this twenty twelve JAMB question step by step. Because percentage composition does not depend on sample size, imagine one hundred grams of the compound so each percentage turns straight into grams of carbon, hydrogen, and oxygen."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "Example 2 · Step 2",
+          "title": "Divide masses by relative atomic masses",
+          "display": "n_{element} = \\frac{mass}{A_{r}}",
+          "working": [
+            "C: \\frac{40.0}{12} = 3.33 mol",
+            "H: \\frac{6.7}{1} = 6.7 mol",
+            "O: \\frac{53.3}{16} = 3.33 mol"
+          ],
+          "narration": "Convert each mass into moles of atoms. Divide forty by twelve for carbon, six point seven by one for hydrogen, and fifty three point three by sixteen for oxygen, giving three point three three, six point seven, and three point three three."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "Example 2 · Step 3",
+          "title": "Divide by the smallest mole value to get the empirical formula",
+          "display": "Smallest mole amount = 3.33  →  Empirical formula = CH_{2}O",
+          "working": [
+            "C: \\frac{3.33}{3.33} = 1",
+            "H: \\frac{6.7}{3.33} = 2.01 ≈ 2",
+            "O: \\frac{3.33}{3.33} = 1  →  EF = CH_{2}O"
+          ],
+          "narration": "Now divide all three mole numbers by the smallest one, three point three three. You get a clean one to two to one whole number ratio, so the empirical formula is C H two O."
+        },
+        {
+          "n": 14,
+          "part": "example-2",
+          "tag": "Example 2 · Step 4",
+          "title": "Scale the empirical formula to the relative molecular mass",
+          "display": "n = \\frac{M_{r}}{m_{EF}} = \\frac{180}{30} = 6  →  C_{6}H_{12}O_{6}",
+          "working": [
+            "m_{EF}(CH_{2}O) = 12 + 2(1) + 16 = 30",
+            "n = \\frac{180}{30} = 6",
+            "Molecular formula = (CH_{2}O)_{6} = C_{6}H_{12}O_{6}"
+          ],
+          "narration": "Do not stop at the empirical formula! C H two O has mass thirty, whereas the molecular mass is one hundred and eighty. Dividing one hundred and eighty by thirty gives six, making the molecular formula C six H twelve O six."
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Watch out 1",
+          "title": "Diatomic molecules and bracket subscripts",
+          "display": "Wrong: M(O_{2}) = 16, N in Ca(NO_{3})_{2} = 14  |  Right: M(O_{2}) = 32, N in Ca(NO_{3})_{2} = 28",
+          "working": [
+            "H_{2}, N_{2}, O_{2}, F_{2}, Cl_{2}, Br_{2}, I_{2} are diatomic gases.",
+            "Ca(NO_{3})_{2} has 1 Ca, 2 N, and 6 O atoms (M = 164)."
+          ],
+          "narration": "Many JAMB candidates mistakenly use sixteen grams per mole for oxygen gas or thirty five point five for chlorine gas, forgetting they are diatomic molecules. Also remember a subscript outside brackets multiplies every atom inside the bracket.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 53, 55, 67"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 89–90"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Watch out 2",
+          "title": "Empirical formula versus molecular formula and vapour density",
+          "display": "Wrong: stopping at EF or using M = VD  |  Right: M = 2 × VD, then MF = (EF)_{n}",
+          "working": [
+            "CH_{2}O has mass 30, not 180 (C_{6}H_{12}O_{6}).",
+            "If VD = 45, M = 2 × 45 = 90, so n = \\frac{90}{30} = 3 → C_{3}H_{6}O_{3}."
+          ],
+          "narration": "A frequent exam trap offers the empirical formula as a distractor when the molecular formula is asked, or vice versa. Always check whether you need the simplest ratio or the true molecule, and always double vapour density to get relative molecular mass.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 57–58, 95"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 94"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "watch-out",
+          "tag": "Watch out 3",
+          "title": "Equation ratios and excess left over",
+          "display": "Wrong: 1000 cm^{3} H_{2} + 300 cm^{3} O_{2} → 700 cm^{3} left  |  Right: 600 cm^{3} used, 400 cm^{3} left",
+          "working": [
+            "2H_{2}(g) + O_{2}(g) → 2H_{2}O(g) uses a 2 : 1 ratio.",
+            "300 cm^{3} O_{2} consumes 600 cm^{3} H_{2} → 1000 − 600 = 400 cm^{3} H_{2} left."
+          ],
+          "narration": "Do not subtract reactant volumes one to one or stop at the volume that reacted! Use the balanced equation ratio first, then check whether JAMB asks for the product formed, the volume consumed, or the excess reactant remaining.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 81, 93–94"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 105–106"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "part": "conclusion",
+          "tag": "Takeaway",
+          "title": "Moles are the bridge for every chemical calculation",
+          "display": "Given (mass, volume, particles) → Moles → Balanced mole ratio → Target",
+          "working": [
+            "Check subscripts, balance the equation, find the limiting reagent, then solve."
+          ],
+          "narration": "Convert whatever you are given into moles first, follow the balanced equation ratio through the limiting reagent, and then convert cleanly into the mass, volume, or particle count requested."
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2012-044",
+      "trapSources": [
+        "chem-jamb-2016-023",
+        "chem-api-0028",
+        "chem-api-0165",
+        "chem-jamb-2012-044",
+        "chem-api-0155",
+        "chem-jamb-2011-043",
+        "chem-jamb-2012-006",
+        "chem-api-0034",
+        "chem-jamb-2016-039"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2016-023",
+        "written": false,
+        "stem": "Which sample contains the same number of constituent molecules as the number of atoms in 24 g of magnesium? Use Mg = 24, H = 1, O = 16 and Cl = 35.5.",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 g of H_{2}",
+            "why": "M(H_{2}) = 2 g mol^{−1}, so 1 g of H_{2} is only 0.5 mol of molecules, half of 1 mol."
+          },
+          {
+            "id": "b",
+            "text": "16 g of O_{2}",
+            "why": "Oxygen gas is diatomic with M(O_{2}) = 32 g mol^{−1}, so 16 g is only 0.5 mol of molecules."
+          },
+          {
+            "id": "c",
+            "text": "32 g of O_{2}",
+            "why": "24 g of Mg is \\frac{24}{24} = 1 mol of atoms, and 32 g of O_{2} is \\frac{32}{32} = 1 mol of molecules, so both contain N_{A} particles."
+          },
+          {
+            "id": "d",
+            "text": "35.5 g of Cl_{2}",
+            "why": "Chlorine gas is diatomic with M(Cl_{2}) = 71 g mol^{−1}, so 35.5 g is only 0.5 mol of molecules."
+          }
+        ],
+        "answerId": "c"
+      }
+    },
+    {
+      "id": "chem-gas-laws",
+      "title": "Gas laws",
+      "minutes": 3,
+      "chapters": [
+        "3"
+      ],
+      "alsoLinks": [
+        {
+          "subject": "physics",
+          "chapter": "9"
+        }
+      ],
+      "keywords": [
+        "gas laws",
+        "Boyle's law",
+        "Charles's law",
+        "pressure law",
+        "general gas equation",
+        "ideal gas equation",
+        "Dalton's law of partial pressures",
+        "Graham's law of diffusion",
+        "Gay-Lussac's law",
+        "Avogadro's law",
+        "kelvin conversion",
+        "absolute zero",
+        "s.t.p.",
+        "water vapour pressure",
+        "mole fraction"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Big picture",
+          "title": "Hot sun on a car tyre",
+          "display": "Heat up trapped air → faster molecules → more wall hits → higher pressure",
+          "working": [
+            "Pump air into a tyre, press harder to shrink it, or warm it in afternoon sun."
+          ],
+          "narration": "Leave an inflated car tyre in hot Nigerian afternoon sun and the trapped air molecules speed up, hammering the rubber harder so the pressure rises."
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Kelvin conversion and standard conditions (s.t.p.)",
+          "display": "T(K) = t(°C) + 273  |  s.t.p.: T = 273 K (0 °C), P = 1 atm = 760 mmHg",
+          "working": [
+            "27 °C = 27 + 273 = 300 K",
+            "Absolute zero = 0 K (−273 °C)",
+            "1 mol ideal gas at s.t.p. = 22.4 dm^{3} (1 dm^{3} = 1000 cm^{3})"
+          ],
+          "narration": "Every gas law temperature must be in kelvin, never Celsius. Add two hundred and seventy three to convert Celsius to kelvin, so standard conditions mean two hundred and seventy three kelvin and one atmosphere, or seven hundred and sixty millimetres of mercury.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 84, 87, 94"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 121"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§9.2"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Boyle's law, Charles's law, and the pressure law",
+          "display": "Boyle (const T): P_{1}V_{1} = P_{2}V_{2}  |  Charles (const P): \\frac{V_{1}}{T_{1}} = \\frac{V_{2}}{T_{2}}  |  Pressure (const V): \\frac{P_{1}}{T_{1}} = \\frac{P_{2}}{T_{2}}",
+          "working": [
+            "Boyle: P doubled → V halved (P_{1} = 2 atm, V_{1} = 6 dm^{3} → P_{2} = 3 atm, V_{2} = 4 dm^{3})",
+            "Charles: V_{1} = 200 cm^{3} at 300 K → at 450 K, V_{2} = 300 cm^{3}",
+            "Pressure law: P_{1} = 1.0 atm at 300 K → at 600 K, P_{2} = 2.0 atm"
+          ],
+          "narration": "For a fixed mass of gas, Boyle's law says pressure and volume vary inversely at constant temperature. Charles's law links volume directly to kelvin temperature at constant pressure, while the pressure law links pressure directly to kelvin temperature at constant volume.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 85, 87–89"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 121–122, 124"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§9.2"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "General gas equation and ideal gas equation",
+          "display": "\\frac{P_{1}V_{1}}{T_{1}} = \\frac{P_{2}V_{2}}{T_{2}}  |  PV = nRT",
+          "working": [
+            "Combined law handles changing P, V, and T for fixed n.",
+            "PV = nRT uses R = 0.082 atm dm^{3} K^{−1} mol^{−1} (P in atm, V in dm^{3})",
+            "Or R = 8.31 J K^{−1} mol^{−1} (P in Nm^{−2}, V in m^{3}; or kNm^{−2}, dm^{3})"
+          ],
+          "narration": "Combine Boyle's and Charles's laws into the general gas equation when pressure, volume, and temperature all change together. When moles are given or wanted, use P V equals n R T and match the gas constant R to your pressure and volume units.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 89, 95–96"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 123–124"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§9.2"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Dalton's law of partial pressures",
+          "display": "P_{total} = P_{1} + P_{2} + ...  |  P_{i} = \\frac{n_{i}}{n_{total}} P_{total}  |  P_{dry} = P_{total} − P_{water}",
+          "working": [
+            "Mixture: 1 mol A + 3 mol B at P_{total} = 2.0 atm → P_{A} = \\frac{1}{4} × 2.0 = 0.50 atm",
+            "Over water at 760 mmHg if P_{water} = 20 mmHg → P_{dry} = 760 − 20 = 740 mmHg"
+          ],
+          "narration": "For non-reacting gases in one container, total pressure equals the sum of all partial pressures. Each gas's partial pressure equals its mole fraction times total pressure, and for a gas collected over water, always subtract saturated water vapour pressure first.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 90–91, 98"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 124–125"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§9.3"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Gay-Lussac's law and Avogadro's law",
+          "display": "Gay-Lussac: reacting gas volumes bear simple whole-number ratios  |  Avogadro: V ∝ n (const T, P)",
+          "working": [
+            "2CO(g) + O_{2}(g) → 2CO_{2}(g)  (2 vol : 1 vol : 2 vol)",
+            "40 cm^{3} CO + 20 cm^{3} O_{2} → 40 cm^{3} CO_{2} (same T, P)",
+            "Equal gas volumes at the same T and P hold equal numbers of molecules."
+          ],
+          "narration": "Gay-Lussac's law says reacting gases and gaseous products combine in simple whole-number volume ratios at constant temperature and pressure. Avogadro's law explains why equal volumes of any gases under identical temperature and pressure hold equal numbers of molecules.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 92"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 122–123, 125"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§9.2"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Graham's law of diffusion",
+          "display": "\\frac{r_{1}}{r_{2}} = \\sqrt{\\frac{M_{2}}{M_{1}}} = \\sqrt{\\frac{d_{2}}{d_{1}}}  |  r = \\frac{V}{t}",
+          "working": [
+            "Compare H_{2} (M = 2) and O_{2} (M = 32):",
+            "\\frac{r(H_{2})}{r(O_{2})} = \\sqrt{\\frac{32}{2}} = \\sqrt{16} = 4  →  H_{2} diffuses 4 times faster"
+          ],
+          "narration": "At constant temperature and pressure, a gas's rate of diffusion is inversely proportional to the square root of its molar mass or vapour density. Lighter molecules move faster, and rate equals volume diffused divided by time taken.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 98–99"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 126–127"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§9.4"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1 · Step 1",
+          "title": "List variables and convert Celsius to kelvin",
+          "display": "A gas occupies 300 cm^{3} at 27 °C and 760 mmHg. Find its volume at 127 °C and 380 mmHg.",
+          "working": [
+            "P_{1} = 760 mmHg, V_{1} = 300 cm^{3}, T_{1} = 27 + 273 = 300 K",
+            "P_{2} = 380 mmHg, V_{2} = ? cm^{3}, T_{2} = 127 + 273 = 400 K"
+          ],
+          "narration": "Look at what changes in this practice question, pressure, volume, and temperature all change while mass stays fixed. First convert both temperatures to kelvin by adding two hundred and seventy three, giving three hundred kelvin and four hundred kelvin."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1 · Step 2",
+          "title": "Rearrange the general gas equation for the final volume",
+          "display": "\\frac{P_{1}V_{1}}{T_{1}} = \\frac{P_{2}V_{2}}{T_{2}}  →  V_{2} = \\frac{P_{1}V_{1}T_{2}}{T_{1}P_{2}}",
+          "working": [
+            "Check units: P_{1} and P_{2} are both mmHg; V_{1} is cm^{3}, so V_{2} is cm^{3}."
+          ],
+          "narration": "Because pressure, volume, and temperature all vary, choose the general gas equation. Rearrange cleanly to make the final volume V two the subject, and confirm both pressures use millimetres of mercury so units cancel."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1 · Step 3",
+          "title": "Substitute values and check physical sense",
+          "display": "V_{2} = \\frac{760 × 300 × 400}{300 × 380} = 800 cm^{3}",
+          "working": [
+            "\\frac{760}{380} = 2  and  \\frac{300}{300} = 1",
+            "V_{2} = 2 × 400 = 800 cm^{3}"
+          ],
+          "narration": "Substitute the numbers and notice how neatly three hundred cancels three hundred, while seven hundred and sixty divided by three hundred and eighty equals two. That gives eight hundred cubic centimetres, which makes sense because halving pressure and heating both expand the gas."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "Example 2 · Step 1",
+          "title": "Restate the JAMB past question",
+          "display": "A volume of 200 cm^{3} of oxygen diffuses through a porous plug in 50 s. How long will 80 cm^{3} of methane, CH_{4}, take under the same conditions? (O = 16, C = 12, H = 1)",
+          "working": [
+            "O_{2}: V = 200 cm^{3}, t = 50 s, M(O_{2}) = 2 × 16 = 32 g mol^{−1}",
+            "CH_{4}: V = 80 cm^{3}, t = ? s, M(CH_{4}) = 12 + 4(1) = 16 g mol^{−1}"
+          ],
+          "narration": "Here is a twenty sixteen JAMB question on Graham's law where the two gases have different volumes. Always compute oxygen's diffusion rate first and work out the molar masses of oxygen gas and methane."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "Example 2 · Step 2",
+          "title": "Find oxygen's diffusion rate and the Graham's law ratio",
+          "display": "r(O_{2}) = \\frac{200}{50} = 4 cm^{3} s^{−1}  |  \\frac{r(CH_{4})}{r(O_{2})} = \\sqrt{\\frac{M(O_{2})}{M(CH_{4})}}",
+          "working": [
+            "\\frac{r(CH_{4})}{r(O_{2})} = \\sqrt{\\frac{32}{16}} = \\sqrt{2}",
+            "r(CH_{4}) = 4\\sqrt{2} cm^{3} s^{−1}"
+          ],
+          "narration": "Oxygen diffuses two hundred cubic centimetres in fifty seconds, which is four cubic centimetres per second. By Graham's law, methane is lighter so its speed relative to oxygen is the square root of thirty two over sixteen, which is root two."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "Example 2 · Step 3",
+          "title": "Divide methane's volume by methane's rate to find time",
+          "display": "t(CH_{4}) = \\frac{V}{r(CH_{4})} = \\frac{80}{4\\sqrt{2}} ≈ 14 s",
+          "working": [
+            "\\frac{80}{4\\sqrt{2}} = \\frac{20}{\\sqrt{2}} = 10\\sqrt{2}",
+            "10 × 1.414 = 14.14 s ≈ 14 s"
+          ],
+          "narration": "Now divide methane's eighty cubic centimetres by four root two cubic centimetres per second. Eighty over four gives twenty, and twenty divided by root two is ten root two, which is roughly fourteen seconds."
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Watch out 1",
+          "title": "Never plug degrees Celsius into a gas law",
+          "display": "Wrong: T = 20 °C in PV = nRT or Charles's law  |  Right: T = 20 + 273 = 293 K",
+          "working": [
+            "Doubling both P and V quadruples T in Kelvin (273 K → 1092 K).",
+            "At 20 °C, n = \\frac{8.2 × 2.93}{0.082 × 293} = 1.00 mol (using 20 gives a huge error)."
+          ],
+          "narration": "Gas volume and pressure are proportional to kelvin temperature, never Celsius. Using Celsius directly in Charles's law, the combined equation, or P V equals n R T ruins the ratio every time, so add two hundred and seventy three first.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 84, 87–88"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 121–122"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Watch out 2",
+          "title": "Subtract water vapour pressure and check which gas is asked",
+          "display": "Wrong: P_{dry} = 765 mmHg (wet) or picking P(N_{2}) for P(O_{2})  |  Right: P_{dry} = 765 − 5 = 760 mmHg",
+          "working": [
+            "Gas over water: P_{dry} = P_{total} − P_{water vapour}.",
+            "80 g O_{2} (2.5 mol) + 56 g N_{2} (2.0 mol) at 1.8 atm → P(O_{2}) = \\frac{2.5}{4.5} × 1.8 = 1.0 atm (not 0.8 atm)."
+          ],
+          "narration": "When gas is collected over water, always subtract water vapour pressure before using the gas laws. And in mole-fraction problems, always calculate from the given moles or pressures instead of guessing from memory, and match the right gas.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 90–91, 98"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 124–125"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Watch out 3",
+          "title": "Remember the square root in Graham's law",
+          "display": "Wrong: \\frac{r_{X}}{r_{Y}} = \\frac{M_{Y}}{M_{X}} → 2 × 28 = 56  |  Right: \\left(\\frac{r_{X}}{r_{Y}}\\right)^{2} = \\frac{M_{Y}}{M_{X}} → 4 × 28 = 112",
+          "working": [
+            "If X (M = 28) diffuses twice as fast as Y, 2 = \\sqrt{\\frac{M_{Y}}{28}}.",
+            "Square both sides: 4 = \\frac{M_{Y}}{28} → M_{Y} = 112."
+          ],
+          "narration": "Students often forget the square root in Graham's law and double the molar mass instead of quadrupling it when a gas diffuses twice as fast. Square the rate ratio before solving for molar mass, and compare rates when volumes differ.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 99"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 126–127"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "conclusion",
+          "tag": "Takeaway",
+          "title": "Kelvin first, dry pressure second, right law third",
+          "display": "T → Kelvin  |  Gas over water → P_{total} − P_{water}  |  Match P, V, T, n, or \\sqrt{M}",
+          "working": [
+            "Convert to kelvin, strip out water vapour if wet, and pick the matching gas law."
+          ],
+          "narration": "Convert every temperature to kelvin first, subtract water vapour pressure when a gas is collected over water, and choose the gas law that matches the changing variables."
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2016-002",
+      "trapSources": [
+        "chem-jamb-2014-005",
+        "chem-jamb-2018-036",
+        "chem-api-0124",
+        "chem-jamb-2012-004",
+        "chem-api-0031",
+        "chem-api-0110",
+        "chem-api-0007",
+        "chem-jamb-2016-002"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2012-004",
+        "written": false,
+        "stem": "A 50 cm^{3} gas sample is collected over water at 10 °C and 765 mmHg. Water vapour pressure is 5 mmHg. What volume would the dry gas occupy at 0 °C and 760 mmHg?",
+        "options": [
+          {
+            "id": "a",
+            "text": "49.19 cm^{3}",
+            "why": "49.19 cm^{3} uses too small a kelvin temperature ratio."
+          },
+          {
+            "id": "b",
+            "text": "48.87 cm^{3}",
+            "why": "48.87 cm^{3} does not match the 273 K to 283 K cooling ratio."
+          },
+          {
+            "id": "c",
+            "text": "48.55 cm^{3}",
+            "why": "48.55 cm^{3} uses the wet total pressure of 765 mmHg instead of subtracting 5 mmHg."
+          },
+          {
+            "id": "d",
+            "text": "48.23 cm^{3}",
+            "why": "P_{dry} = 765 − 5 = 760 mmHg, T_{1} = 283 K, T_{2} = 273 K, so V_{2} = 50 × \\frac{273}{283} ≈ 48.23 cm^{3}."
+          }
+        ],
+        "answerId": "d"
+      }
+    },
+    {
+      "id": "chem-acids-bases",
+      "title": "Acids, bases and salts",
+      "minutes": 3,
+      "chapters": [
+        "13"
+      ],
+      "keywords": [
+        "acid",
+        "base",
+        "alkali",
+        "salt",
+        "pH",
+        "pOH",
+        "strong acid",
+        "weak acid",
+        "ionisation",
+        "basicity",
+        "neutralisation",
+        "titration",
+        "molar concentration",
+        "mass concentration",
+        "mol/dm³",
+        "g/dm³",
+        "indicator",
+        "methyl orange",
+        "phenolphthalein",
+        "normal salt",
+        "acid salt",
+        "basic salt",
+        "double salt",
+        "salt hydrolysis"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "The big picture",
+          "title": "Lime juice meets wood ash water",
+          "display": "Sour lime (acid) + wood-ash water (alkali) → milder salt + water",
+          "working": [
+            "Sharp sourness vs slippery bitterness",
+            "Mix the right amounts → they cancel out"
+          ],
+          "narration": "Fresh lime tastes sharply sour while wood ash water feels soapy. Mix the exact right amounts together and they cancel out into milder salt and water.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 179–180"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Strong vs weak and basicity",
+          "display": "Strong: complete ionisation (→)   |   Weak: partial ionisation (⇌)",
+          "working": [
+            "HCl + H_{2}O → H_{3}O^{+} + Cl^{-}  (strong, high conductivity)",
+            "CH_{3}COOH + H_{2}O ⇌ H_{3}O^{+} + CH_{3}COO^{-}  (weak, basicity = 1)",
+            "H_{2}SO_{4} → 2H^{+} + SO_{4}^{2-}  (dibasic, basicity = 2)"
+          ],
+          "narration": "Strong acids and bases ionise almost completely in water, giving many mobile ions and high conductivity. Weak ones ionise only slightly. Basicity counts only ionisable hydrogen ions per acid molecule, so ethanoic acid is monobasic.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 178"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§14.3"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "The pH and pOH scales",
+          "display": "pH = -log_{10}[H_{3}O^{+}],   pOH = -log_{10}[OH^{-}],   pH + pOH = 14 (25 °C)",
+          "working": [
+            "Acidic: pH < 7 ([H_{3}O^{+}] > [OH^{-}])",
+            "Neutral: pH = 7 ([H_{3}O^{+}] = [OH^{-}])",
+            "Alkaline: pH > 7 ([OH^{-}] > [H_{3}O^{+}])",
+            "10^{-3} mol/dm^{3} HCl → pH = 3;   10^{-3} mol/dm^{3} NaOH → pOH = 3, pH = 11"
+          ],
+          "narration": "At twenty five degrees Celsius, p H equals minus log base ten of hydroxonium concentration, p O H equals minus log base ten of hydroxide concentration, and p H plus p O H equals fourteen. Lower p H means stronger acidity.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 137–138"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 165–166"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§14.2"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Neutralisation and indicators",
+          "display": "H_{3}O^{+} + OH^{-} → 2H_{2}O   (or   H^{+} + OH^{-} → H_{2}O)",
+          "working": [
+            "Strong acid + strong base → any indicator (pH jump 4 to 10)",
+            "Strong acid + weak base (e.g. Na_{2}CO_{3}) → methyl orange (red acid, yellow alkali)",
+            "Weak acid + strong base → phenolphthalein (colourless acid, pink alkali)"
+          ],
+          "narration": "Neutralisation combines hydrogen ions from an acid with hydroxide ions from a base to form water and a salt. Pick an indicator whose colour change matches the equivalence p H, methyl orange for weak bases and phenolphthalein for weak acids.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 180, 185–186"
+            },
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 157–158"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Concentration and titration ratio",
+          "display": "\\frac{C_{A} V_{A}}{C_{B} V_{B}} = \\frac{n_{A}}{n_{B}}     and     Conc (g/dm^{3}) = Conc (mol/dm^{3}) × Molar mass",
+          "working": [
+            "C = n ÷ V (in dm^{3}),   1 dm^{3} = 1000 cm^{3}",
+            "Dilution: C_{1} V_{1} = C_{2} V_{2}  (moles stay constant)",
+            "H_{2}SO_{4} + 2NaOH → Na_{2}SO_{4} + 2H_{2}O  gives  n_{A} = 1, n_{B} = 2"
+          ],
+          "narration": "Molar concentration is moles per decimetre cubed, while mass concentration in grams per decimetre cubed equals molar concentration times molar mass. In titration, always write the balanced equation first so your mole ratio matches the stoichiometry.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 135, 155–158"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 373–375"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Types of salts and hydrolysis",
+          "display": "Salts: normal (NaCl), acid (NaHSO_{4}), basic (Zn(OH)Cl), double (KAl(SO_{4})_{2}·12H_{2}O)",
+          "working": [
+            "Strong acid + strong base (NaCl) → neutral (pH = 7)",
+            "Strong acid + weak base (NH_{4}Cl) → acidic (NH_{4}^{+} + H_{2}O ⇌ NH_{3} + H_{3}O^{+})",
+            "Weak acid + strong base (Na_{2}CO_{3}) → alkaline (CO_{3}^{2-} + H_{2}O ⇌ HCO_{3}^{-} + OH^{-})",
+            "Insoluble salts (AgCl, BaSO_{4}) → prepared by double decomposition"
+          ],
+          "narration": "Normal salts replace all acidic hydrogens, acid salts keep replaceable hydrogen, basic salts keep hydroxide, and double salts combine two simple salts. In water, salts of weak bases hydrolyse to acidic solutions, while salts of weak acids hydrolyse to alkaline solutions.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 142–143, 148, 150"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 168, 181–182"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§14.4"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Read the mass, volume, and goal",
+          "display": "Find the pH at 25 °C of 0.80 g NaOH in 200 cm^{3} solution. (Na = 23, O = 16, H = 1)",
+          "working": [
+            "Mass m = 0.80 g,   V = 200 cm^{3}",
+            "Goal: find pH via concentration and pOH"
+          ],
+          "narration": "Let us connect mass concentration, molar concentration, and p H in one clean problem. We have zero point eight zero grams of sodium hydroxide in two hundred centimetres cubed of solution at twenty five degrees Celsius.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 135, 138"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Convert units",
+          "title": "Find g/dm^{3} and mol/dm^{3}",
+          "display": "V = \\frac{200}{1000} = 0.200 dm^{3}   →   Mass conc = \\frac{0.80}{0.200} = 4.0 g/dm^{3}",
+          "working": [
+            "Molar mass of NaOH = 23 + 16 + 1 = 40 g/mol",
+            "Molar conc = \\frac{4.0}{40} = 0.10 mol/dm^{3} = 10^{-1} mol/dm^{3}"
+          ],
+          "narration": "First convert two hundred centimetres cubed to zero point two zero zero decimetres cubed, giving four point zero grams per decimetre cubed. Divide by forty grams per mole to get zero point one zero moles per decimetre cubed.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 373"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Find pOH",
+          "title": "Use strong-base dissociation",
+          "display": "NaOH(aq) → Na^{+}(aq) + OH^{-}(aq)   ⇒   [OH^{-}] = 10^{-1} mol/dm^{3}",
+          "working": [
+            "pOH = -log_{10}[OH^{-}] = -log_{10}(10^{-1}) = 1"
+          ],
+          "narration": "Sodium hydroxide is a strong alkali that dissociates completely, so hydroxide ion concentration equals ten to the power minus one moles per decimetre cubed. Taking minus log base ten gives p O H equal to one.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 165–166"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Subtract from 14",
+          "title": "Convert pOH to pH",
+          "display": "pH = 14 - pOH = 14 - 1 = 13",
+          "working": [
+            "Check: pH 13 > 7, strongly alkaline as expected for NaOH"
+          ],
+          "narration": "Since p H plus p O H equals fourteen at twenty five degrees Celsius, subtract one from fourteen to obtain p H thirteen. That strongly alkaline value makes full sense for sodium hydroxide.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 138"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB 2015",
+          "title": "Read the titration question",
+          "display": "A 15.00 cm^{3} sample of H_{2}SO_{4} neutralizes 25.00 cm^{3} of 0.125 mol/dm^{3} NaOH. Find [H_{2}SO_{4}].",
+          "working": [
+            "V_{A} = 15.00 cm^{3},   C_{A} = ?",
+            "V_{B} = 25.00 cm^{3},   C_{B} = 0.125 mol/dm^{3}"
+          ],
+          "narration": "Here is a real JAMB titration question. Fifteen point zero zero centimetres cubed of tetraoxosulphate(VI) acid, sulfuric acid, neutralises twenty five point zero zero centimetres cubed of zero point one two five moles per decimetre cubed sodium hydroxide.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 157–158"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "Mole ratio",
+          "title": "Balance the equation first",
+          "display": "H_{2}SO_{4}(aq) + 2NaOH(aq) → Na_{2}SO_{4}(aq) + 2H_{2}O(l)",
+          "working": [
+            "n_{A} = 1 mol H_{2}SO_{4},   n_{B} = 2 mol NaOH",
+            "Acid-to-base mole ratio = 1 : 2"
+          ],
+          "narration": "Always write the balanced equation before substituting numbers. One mole of dibasic tetraoxosulphate(VI) acid, sulfuric acid, neutralises two moles of sodium hydroxide, so the acid to base mole ratio is one to two.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 158"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 375"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "Substitute",
+          "title": "Apply the titration formula",
+          "display": "\\frac{C_{A} V_{A}}{C_{B} V_{B}} = \\frac{n_{A}}{n_{B}}   →   \\frac{C_{A} × 15.00}{0.125 × 25.00} = \\frac{1}{2}",
+          "working": [
+            "Volumes V_{A} and V_{B} are both in cm^{3}, so units cancel"
+          ],
+          "narration": "Substitute into the titration formula with both volumes in centimetres cubed. Acid concentration times fifteen point zero zero, divided by zero point one two five times twenty five point zero zero, equals one over two.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 375"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "part": "example-2",
+          "tag": "Solve",
+          "title": "Calculate the acid concentration",
+          "display": "C_{A} = \\frac{0.125 × 25.00}{2 × 15.00} = \\frac{3.125}{30.00} ≈ 0.104 mol/dm^{3}",
+          "working": [
+            "Moles NaOH = 0.125 × 0.02500 = 0.003125 mol",
+            "Moles H_{2}SO_{4} = 0.003125 ÷ 2 = 0.0015625 mol",
+            "C_{A} = 0.0015625 ÷ 0.01500 = 0.104 mol/dm^{3}"
+          ],
+          "narration": "Multiplying zero point one two five by twenty five gives three point one two five, and dividing by thirty gives zero point one zero four moles per decimetre cubed. Checking with actual moles confirms the exact same answer.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 158"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Watch out 1",
+          "title": "Do not assume a 1 : 1 ratio or count all H atoms",
+          "display": "Wrong: \\frac{C_{A} V_{A}}{C_{B} V_{B}} = \\frac{1}{1} for H_{2}SO_{4}   |   Right: \\frac{n_{A}}{n_{B}} = \\frac{1}{2}",
+          "working": [
+            "H_{2}SO_{4} is dibasic (n_{A} = 1 reacts with 2 NaOH)",
+            "CH_{3}COOH has 4 H atoms, but only 1 ionisable H^{+} (basicity = 1)"
+          ],
+          "narration": "Many JAMB traps assume one to one stoichiometry for dibasic acids or count non-acidic methyl hydrogens in ethanoic acid. Always check the balanced neutralisation equation and count only ionisable protons.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 178, 188"
+            },
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 158"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Watch out 2",
+          "title": "Do not report pOH as the pH of an alkali",
+          "display": "0.001 mol/dm^{3} NaOH:   Wrong: pH = 3   |   Right: pOH = 3 → pH = 14 - 3 = 11",
+          "working": [
+            "NaOH and KOH furnish OH^{-}, not H_{3}O^{+}",
+            "Always subtract pOH from 14 for alkalis at 25 °C"
+          ],
+          "narration": "When given sodium or potassium hydroxide at zero point zero zero one moles per decimetre cubed, minus log gives three, which is p O H, not p H. Subtract from fourteen to get p H eleven.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 138"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 166"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "watch-out",
+          "tag": "Watch out 3",
+          "title": "Do not assume every salt is neutral",
+          "display": "Wrong: all salts have pH = 7   |   Right: check hydrolysis and acid salts",
+          "working": [
+            "Na_{2}CO_{3}(aq): alkaline (CO_{3}^{2-} + H_{2}O ⇌ HCO_{3}^{-} + OH^{-})",
+            "NH_{4}Cl(aq): acidic (NH_{4}^{+} + H_{2}O ⇌ NH_{3} + H_{3}O^{+})",
+            "KHSO_{4}(aq): acidic (acid salt donates H^{+})"
+          ],
+          "narration": "Not every salt forms a neutral solution. Sodium trioxocarbonate(IV) hydrolyses to give an alkaline solution, ammonium chloride hydrolyses to give an acidic solution, and potassium hydrogentetraoxosulphate(VI) is an acid salt that turns litmus red.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 143, 150"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 168"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§14.4"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "One rule to carry into the exam",
+          "display": "Count real ions: H_{3}O^{+} vs OH^{-}, balanced mole ratios, and salt hydrolysis.",
+          "working": [
+            "pH + pOH = 14   |   \\frac{C_{A} V_{A}}{C_{B} V_{B}} = \\frac{n_{A}}{n_{B}}   |   Check weak-ion hydrolysis"
+          ],
+          "narration": "Track the ions actually in water, use p H plus p O H equals fourteen for alkalis, balance every titration ratio first, and check salt hydrolysis before predicting litmus colour.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 138, 150, 158"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 165, 168, 375"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2015-020",
+      "trapSources": [
+        "chem-jamb-2010-019",
+        "chem-jamb-2014-018",
+        "chem-jamb-2018-033",
+        "chem-api-0153",
+        "chem-jamb-2014-021",
+        "chem-jamb-concept-065"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2018-033",
+        "written": false,
+        "stem": "What is the pH of 0.001 mol/dm^{3} NaOH at 25°C, assuming complete dissociation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "14",
+            "why": "A pH of 14 corresponds in this model to 1 mol/dm^{3} OH^{-}."
+          },
+          {
+            "id": "b",
+            "text": "13",
+            "why": "A pH of 13 corresponds to 0.1 mol/dm^{3} OH^{-}."
+          },
+          {
+            "id": "c",
+            "text": "12",
+            "why": "A pH of 12 corresponds to 0.01 mol/dm^{3} OH^{-}."
+          },
+          {
+            "id": "d",
+            "text": "11",
+            "why": "The OH^{-} concentration is 10^{-3} mol/dm^{3}, so pOH = 3. At 25°C, pH = 14 − 3 = 11."
+          }
+        ],
+        "answerId": "d"
+      }
+    },
+    {
+      "id": "chem-redox",
+      "title": "Oxidation numbers and redox",
+      "minutes": 3,
+      "chapters": [
+        "14"
+      ],
+      "keywords": [
+        "oxidation number",
+        "oxidation state",
+        "redox",
+        "oxidation",
+        "reduction",
+        "electron transfer",
+        "oxidising agent",
+        "reducing agent",
+        "half-equation",
+        "ion-electron method",
+        "balancing redox",
+        "tetraoxomanganate(VII)",
+        "heptaoxodichromate(VI)",
+        "peroxide",
+        "hydride",
+        "disproportionation"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "The big picture",
+          "title": "A hand-to-hand money swap",
+          "display": "Giver loses cash (oxidised)  →  Receiver gains cash (reduced)",
+          "working": [
+            "No one can gain unless another gives",
+            "Oxidation and reduction always happen together"
+          ],
+          "narration": "When you hand cash to a friend at the market, your wallet drops while theirs rises. In redox reactions, electrons move the same way, so loss and gain happen together.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 238"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Rules for assigning oxidation numbers",
+          "display": "Free element = 0   |   Monatomic ion = charge   |   Sum = 0 (molecule) or ion charge",
+          "working": [
+            "Oxygen = -2 (except peroxides like H_{2}O_{2}: -1; OF_{2}: +2)",
+            "Hydrogen = +1 (except metal hydrides like NaH, NaBH_{4}: -1)",
+            "Group I metals = +1,  Group II = +2,  Group III = +3",
+            "K_{2}Cr_{2}O_{7}:  2(+1) + 2x + 7(-2) = 0  ⇒  x = +6"
+          ],
+          "narration": "Free elements have oxidation number zero, and monatomic ions equal their charge. Oxygen is usually minus two except minus one in peroxides, while hydrogen is plus one except minus one in metal hydrides. All oxidation numbers sum to the total charge.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 58–59"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§4.2"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Oxidation vs reduction",
+          "display": "Oxidation: e^{-} loss (O.N. ↑)     |     Reduction: e^{-} gain (O.N. ↓)",
+          "working": [
+            "Zn(s) → Zn^{2+}(aq) + 2e^{-}   (O.N. 0 → +2, oxidation)",
+            "Cu^{2+}(aq) + 2e^{-} → Cu(s)   (O.N. +2 → 0, reduction)",
+            "Also classically: +O or -H is oxidation; -O or +H is reduction"
+          ],
+          "narration": "Remember oil rig. Oxidation is loss of electrons, which makes oxidation number go up. Reduction is gain of electrons, which makes oxidation number go down. Adding oxygen or removing hydrogen also corresponds to oxidation.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 238"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 100"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§17.1"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Oxidising and reducing agents",
+          "display": "Oxidising agent accepts e^{-} (is reduced)   |   Reducing agent donates e^{-} (is oxidised)",
+          "working": [
+            "Acidified KMnO_{4} (purple MnO_{4}^{-}) → colourless Mn^{2+} (test for reducing agent)",
+            "Acidified K_{2}Cr_{2}O_{7} (orange Cr_{2}O_{7}^{2-}) → green Cr^{3+} (test for reducing agent)",
+            "Common reductants: Fe^{2+}, I^{-}, H_{2}S, C, CO, NaBH_{4}",
+            "Disproportionation: same species both oxidised and reduced (e.g. KClO_{3})"
+          ],
+          "narration": "An oxidising agent takes electrons and gets reduced itself, while a reducing agent gives electrons and gets oxidised. Purple acidified potassium tetraoxomanganate(VII), potassium permanganate, turns colourless, and orange acidified dichromate turns green when mixed with a reducing agent.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 238–239"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 100–101"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Balancing simple redox equations",
+          "display": "Balance atoms (O with H_{2}O, H with H^{+}), balance charge with e^{-}, equalise e^{-}",
+          "working": [
+            "1. Split into oxidation and reduction half-equations",
+            "2. Balance non-H/O atoms, then O using H_{2}O, then H using H^{+} (acid)",
+            "3. Add e^{-} to balance charge on each half",
+            "4. Multiply halves so e^{-} lost = e^{-} gained, add and cancel"
+          ],
+          "narration": "To balance a redox equation in acidic solution, split it into oxidation and reduction halves. Balance other atoms first, add water for oxygen, add hydrogen ions for hydrogen, add electrons for charge, then multiply so electrons cancel cleanly.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 240, 249–250"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 102–103"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§17.1"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "example-1",
+          "tag": "Example 1",
+          "title": "Assign oxidation numbers to each half",
+          "display": "Balance in acid:   Fe^{2+} + MnO_{4}^{-} → Fe^{3+} + Mn^{2+}",
+          "working": [
+            "Oxidation half: Fe^{2+} (+2) → Fe^{3+} (+3)",
+            "Reduction half: Mn in MnO_{4}^{-} is +7 (x + 4(-2) = -1) → Mn^{2+} (+2)"
+          ],
+          "narration": "Let us balance iron two plus plus tetraoxomanganate(VII), permanganate, in acidic medium. Iron rises from plus two to plus three, which is oxidation, while manganese drops from plus seven to plus two, which is reduction.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 250"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Reduction half",
+          "title": "Balance O, H, and charge for permanganate",
+          "display": "MnO_{4}^{-} + 8H^{+} + 5e^{-} → Mn^{2+} + 4H_{2}O",
+          "working": [
+            "Balance O with 4H_{2}O on right; balance H with 8H^{+} on left",
+            "Left charge before e^{-}: -1 + 8(+1) = +7; right = +2 → add 5e^{-} on left"
+          ],
+          "narration": "Four oxygens on the left need four water molecules on the right, and eight hydrogens need eight hydrogen ions on the left. Adding five electrons to the left balances the charge at plus two on both sides.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 249"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 102"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Match electrons",
+          "title": "Scale the iron half-equation",
+          "display": "5 × (Fe^{2+} → Fe^{3+} + e^{-})   ⇒   5Fe^{2+} → 5Fe^{3+} + 5e^{-}",
+          "working": [
+            "Each Fe^{2+} loses 1e^{-}; MnO_{4}^{-} gains 5e^{-}",
+            "Multiply the iron half by 5 so electrons lost = 5"
+          ],
+          "narration": "Each iron two plus ion loses only one electron, whereas each tetraoxomanganate(VII) ion gains five. Multiply the entire iron half equation by five so both halves exchange five electrons.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 102"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Combine and check",
+          "title": "Add halves and verify atoms and charge",
+          "display": "5Fe^{2+} + MnO_{4}^{-} + 8H^{+} → 5Fe^{3+} + Mn^{2+} + 4H_{2}O",
+          "working": [
+            "Atoms: 5 Fe, 1 Mn, 4 O, 8 H on both sides",
+            "Charge: 5(+2) + (-1) + 8(+1) = +17   |   5(+3) + (+2) = +17"
+          ],
+          "narration": "Add the two half equations and cancel the five electrons. Every element matches, and total charge is plus seventeen on both the left and right sides.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 250"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 102"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "part": "example-2",
+          "tag": "JAMB 2014",
+          "title": "Read the past question",
+          "display": "In H_{2}O(g) + C(s) → H_{2}(g) + CO(g), which reactant acts as the oxidizing agent?",
+          "working": [
+            "Options: CO(g), C(s), H_{2}O(g), H_{2}(g)",
+            "Note: an oxidising agent must be a reactant, not a product"
+          ],
+          "narration": "Here is a real JAMB question. When steam reacts with solid carbon to form hydrogen gas and carbon monoxide, we want the reactant that acts as the oxidising agent.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 238"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "Assign O.N.",
+          "title": "Find the oxidation number of every atom",
+          "display": "H_{2}O (+1, -2) + C (0) → H_{2} (0) + CO (+2, -2)",
+          "working": [
+            "Reactants: H = +1, O = -2 in H_{2}O;  C = 0 (free element)",
+            "Products: H = 0 in H_{2};  C = +2, O = -2 in CO"
+          ],
+          "narration": "Assign oxidation numbers to every atom. In steam, hydrogen is plus one and oxygen is minus two, while free carbon is zero. On the right, hydrogen gas is zero and carbon in carbon monoxide is plus two.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 58–59"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "Track change",
+          "title": "Identify which species is reduced",
+          "display": "C: 0 → +2 (oxidised)     |     H in H_{2}O: +1 → 0 (reduced)",
+          "working": [
+            "C increases 0 → +2, so C(s) is oxidised (reducing agent)",
+            "H in H_{2}O decreases +1 → 0, so H_{2}O(g) is reduced"
+          ],
+          "narration": "Carbon rises from zero to plus two, meaning carbon is oxidised and serves as the reducing agent. Hydrogen in steam drops from plus one to zero, meaning steam itself is reduced.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 100"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "Conclude",
+          "title": "Pick the oxidising agent",
+          "display": "Oxidising agent = H_{2}O(g)  (the reactant that gets reduced)",
+          "working": [
+            "CO(g) and H_{2}(g) are products, not reactants",
+            "C(s) is oxidised (reductant); H_{2}O(g) is reduced (oxidant)"
+          ],
+          "narration": "Because the oxidising agent is the reactant that undergoes reduction, steam is the oxidising agent. Carbon monoxide and hydrogen gas are products, while solid carbon is the reducing agent.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 238"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 100"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Watch out 1",
+          "title": "Do not treat hydride H as +1 or flip the sign",
+          "display": "NaBH_{4}:   Wrong: H = +1, B = -5   |   Right: Na = +1, H = -1 → +1 + B + 4(-1) = 0 ⇒ B = +3",
+          "working": [
+            "In metal hydrides (NaH, NaBH_{4}), H is -1 (more electronegative than metal/B)",
+            "In NH_{3}: x + 3(+1) = 0 ⇒ N = -3 (do not forget to flip sign from +3)"
+          ],
+          "narration": "In metal hydrides like sodium borohydride, hydrogen takes minus one, giving boron plus three, not minus one which is the whole ion charge. Also in ammonia, solve x plus three equals zero carefully so nitrogen is minus three, not plus three.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 59"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§4.2"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Watch out 2",
+          "title": "Do not pick a product or reverse oxidant vs reductant",
+          "display": "Wrong: oxidising agent = species oxidised (or a product)   |   Right: reactant that is reduced",
+          "working": [
+            "Fe^{3+} + I^{-} → Fe^{2+} + \\frac{1}{2}I_{2}:  I^{-} is oxidised → reducing agent",
+            "I_{2} and Fe^{2+} are products, never agents in the forward reaction"
+          ],
+          "narration": "Students often call the oxidised species the oxidising agent, or pick a product like iodine or iron two plus. Remember the agents are always reactants, and the oxidising agent is the one that gets reduced.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 238"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 100"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Watch out 3",
+          "title": "Do not confuse dichromate(VI) with permanganate(VII) or ion charge",
+          "display": "Cr_{2}O_{7}^{2-}:   Wrong: Cr = +7 or -2   |   Right: 2x + 7(-2) = -2 ⇒ x = +6",
+          "working": [
+            "Cr_{2}O_{7}^{2-} (heptaoxodichromate(VI)): two Cr atoms share +12 → +6 each",
+            "MnO_{4}^{-} (tetraoxomanganate(VII)): x + 4(-2) = -1 → Mn = +7"
+          ],
+          "narration": "Do not confuse orange dichromate with purple tetraoxomanganate(VII), and never report the minus two ion charge as chromium's state. Divide by the subscript two in dichromate to find chromium is plus six, while manganese in permanganate is plus seven.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 59, 250"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§4.2"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "One rule to carry into the exam",
+          "display": "O.N. ↑ = oxidation (reducing agent)  |  O.N. ↓ = reduction (oxidising agent)",
+          "working": [
+            "Assign every oxidation number first, then balance atoms, electrons, and charge"
+          ],
+          "narration": "Assign every oxidation number carefully with the peroxide and hydride exceptions, match rising numbers to the reducing agent and falling numbers to the oxidising agent, and balance electrons and charge.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 58–59, 238, 240"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 100, 102–103"
+            }
+          ]
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2014-023",
+      "trapSources": [
+        "chem-jamb-2012-023",
+        "chem-api-0123",
+        "chem-jamb-concept-067",
+        "chem-api-0054"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2016-009",
+        "written": false,
+        "stem": "What is the oxidation state of chromium in K_{2}Cr_{2}O_{7}?",
+        "options": [
+          {
+            "id": "a",
+            "text": "+7",
+            "why": "+7 would make the sum +2 rather than zero."
+          },
+          {
+            "id": "b",
+            "text": "+6",
+            "why": "For K_{2}Cr_{2}O_{7}, 2(+1) + 2x + 7(−2) = 0. This gives 2x = 12 and x = +6."
+          },
+          {
+            "id": "c",
+            "text": "+5",
+            "why": "+5 would make the sum −2."
+          },
+          {
+            "id": "d",
+            "text": "+4",
+            "why": "+4 would make the sum −4."
+          }
+        ],
+        "answerId": "b"
+      }
+    },
+    {
+      "id": "chem-electrolysis",
+      "title": "Electrolysis and Faraday's laws",
+      "minutes": 3,
+      "chapters": [
+        "15"
+      ],
+      "keywords": [
+        "electrolysis",
+        "electrolyte",
+        "non-electrolyte",
+        "electrode",
+        "anode",
+        "cathode",
+        "preferential discharge",
+        "electrochemical series",
+        "Faraday's first law",
+        "Faraday's second law",
+        "Faraday constant",
+        "electroplating",
+        "copper refining"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Everyday Picture",
+          "title": "Plating a Spoon with Silver",
+          "display": "DC power → mobile ions move → new substance forms",
+          "working": [
+            "Battery pushes electrons into the cathode (−)",
+            "Dissolved silver ions coat the spoon evenly"
+          ],
+          "narration": "Think of plating a brass spoon with silver. A battery pushes dissolved metal ions through liquid onto the spoon, driving a non-spontaneous chemical change."
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Electrolytes and Electrodes",
+          "display": "Anode (+): oxidation | Cathode (−): reduction",
+          "working": [
+            "Electrolytes: mobile ions (molten or aqueous)",
+            "Non-electrolytes: neutral molecules only (sugar, ethanol)",
+            "Cations (+) → Cathode (−) (gain e^{-})",
+            "Anions (−) → Anode (+) (lose e^{-})"
+          ],
+          "narration": "Electrolytes conduct electricity via mobile ions when molten or dissolved, while non-electrolytes like ethanol do not. Remember CRAO, cathode reduction and anode oxidation. Positive cations gain electrons at the cathode, while negative anions lose electrons at the anode.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 221–224"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 196, 198"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Preferential Discharge of Ions",
+          "display": "Lower ion in series discharges first (unless high halide concentration or active anode)",
+          "working": [
+            "1. Series: K^{+} ... H^{+} > Cu^{2+} > Ag^{+} | SO_{4}^{2-} > Cl^{-} > OH^{-}",
+            "2. Concentration effect favours halide anions (Cl^{-}, Br^{-}, I^{-})",
+            "3. Active anode (Cu, Ag) dissolves instead of discharging anions",
+            "4. Mercury cathode discharges Na^{+} preferentially over H^{+}"
+          ],
+          "narration": "In aqueous solutions, water supplies hydrogen and hydroxide ions alongside salt ions. Three factors decide which ion discharges first, position in the electrochemical series, high concentration for halide anions only, and whether the electrode itself is inert or active.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 225–226"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 198–199"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§17.7"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Products at Each Electrode",
+          "display": "Molten: 2 ions only | Aqueous: compare H^{+}/OH^{-} and electrode",
+          "working": [
+            "Molten PbBr_{2}: Pb at cathode, Br_{2} at anode",
+            "Dilute H_{2}SO_{4} (Pt): 2 vol H_{2} (cathode), 1 vol O_{2} (anode)",
+            "Brine, conc. NaCl (C): H_{2} (cathode), Cl_{2} (anode), NaOH left",
+            "CuSO_{4}(aq): Cu (cathode); O_{2} (Pt anode) or Cu^{2+} (Cu anode)"
+          ],
+          "narration": "Molten lead two bromide yields lead and bromine directly. With inert electrodes, dilute tetraoxosulphate six acid, sulphuric acid, gives hydrogen and oxygen, while brine gives hydrogen, chlorine and alkaline sodium hydroxide. A copper anode dissolves to refine or electroplate copper.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 225–229, Table 22.1"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 199–201"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§17.7"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Faraday's First Law and Q = It",
+          "display": "Q = It,   n(e^{-}) = \\frac{Q}{F},   m = \\frac{ItM}{cF}",
+          "working": [
+            "Q in C, I in A, t in s (1 F = 96,500 C/mol e^{-})",
+            "M^{c+} + ce^{-} → M needs c moles of e^{-} per mole M",
+            "n(M) = \\frac{n(e^{-})}{c} = \\frac{It}{cF}",
+            "STP gas volume = n(gas) × 22.4 dm^{3}/mol"
+          ],
+          "narration": "Faraday's first law states that mass deposited is proportional to charge passed, where charge equals current times time in seconds. Divide charge by ninety six thousand five hundred coulombs per mole to get electron moles, then divide by the ion charge.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 229–230, 233"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 201"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§17.4, §17.7"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Faraday's Second Law (Cells in Series)",
+          "display": "n_{1}c_{1} = n_{2}c_{2}   or   \\left(\\frac{m}{M}\\right)_{1}c_{1} = \\left(\\frac{m}{M}\\right)_{2}c_{2}",
+          "working": [
+            "Same Q in series → same moles of electrons",
+            "Moles deposited n ∝ \\frac{1}{c} (inverse of ion charge)",
+            "1 F deposits 1 mol Ag^{+}, \\frac{1}{2} mol Cu^{2+}, \\frac{1}{3} mol Al^{3+}"
+          ],
+          "narration": "Faraday's second law states that for electrolytes in series carrying the same charge, moles deposited vary inversely with ion charge. One faraday deposits one mole of silver, half a mole of copper two plus, or one third mole of aluminium.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 232, 235"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 201"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Step 1",
+          "title": "Convert Time and Find Charge Q",
+          "display": "I = 2.0 A, t = 16 min 5 s → Q = It",
+          "working": [
+            "t = (16 × 60) + 5 = 965 s",
+            "Q = 2.0 A × 965 s = 1,930 C"
+          ],
+          "narration": "First convert time completely to seconds because amperes times seconds gives coulombs. Sixteen minutes times sixty plus five gives nine hundred and sixty five seconds. Multiplying by two amperes gives one thousand nine hundred and thirty coulombs."
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Step 2",
+          "title": "Convert Charge to Moles of Electrons",
+          "display": "n(e^{-}) = \\frac{Q}{F} = \\frac{1,930}{96,500}",
+          "working": [
+            "1 F = 96,500 C/mol e^{-}",
+            "n(e^{-}) = \\frac{1,930}{96,500} = 0.020 mol e^{-}"
+          ],
+          "narration": "Next divide the total charge in coulombs by the Faraday constant, ninety six thousand five hundred coulombs per mole. That gives zero point zero two zero moles of electrons flowing through the cell."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Step 3",
+          "title": "Use Half-Equation to Find Mass of Copper",
+          "display": "Cu^{2+}(aq) + 2e^{-} → Cu(s)  →  m = 0.64 g",
+          "working": [
+            "2 mol e^{-} deposit 1 mol Cu",
+            "n(Cu) = \\frac{0.020}{2} = 0.010 mol",
+            "m(Cu) = 0.010 mol × 64 g/mol = 0.64 g"
+          ],
+          "narration": "Each copper two plus ion takes two electrons at the cathode, so divide electron moles by two to get zero point zero one mole of copper. Multiply by sixty four grams per mole to obtain zero point six four grams."
+        },
+        {
+          "n": 10,
+          "part": "example-2",
+          "tag": "JAMB 2013",
+          "title": "Read the Past Question and Find Charge",
+          "display": "A current of 5 A flows for 193 s through acidified water. What volume of oxygen forms at STP? Use 96,500 C/mol of electrons and 22.4 dm^{3} per mole of gas.",
+          "working": [
+            "Time is already in seconds: t = 193 s",
+            "Q = I × t = 5 A × 193 s = 965 C"
+          ],
+          "narration": "In this JAMB twenty thirteen question, time is already in seconds, so multiply five amperes by one hundred and ninety three seconds. That gives nine hundred and sixty five coulombs of electricity passing through the acidified water."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "Step 2",
+          "title": "Find Moles of Electrons",
+          "display": "n(e^{-}) = \\frac{Q}{F} = \\frac{965}{96,500} = 0.010 mol e^{-}",
+          "working": [
+            "1 mol e^{-} carries 96,500 C",
+            "n(e^{-}) = \\frac{965}{96,500} = 0.010 mol"
+          ],
+          "narration": "Divide nine hundred and sixty five coulombs by ninety six thousand five hundred coulombs per mole. Notice how cleanly those numbers cancel to give zero point zero one zero mole of electrons."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "Step 3",
+          "title": "Apply the Anode Half-Equation for Oxygen",
+          "display": "4OH^{-}(aq) → 2H_{2}O(l) + O_{2}(g) + 4e^{-}",
+          "working": [
+            "4 mol e^{-} liberate 1 mol O_{2}",
+            "n(O_{2}) = \\frac{0.010}{4} = 0.0025 mol O_{2}"
+          ],
+          "narration": "At the inert anode, hydroxide ions discharge preferentially over tetraoxosulphate six ions. Four electrons are released for every one oxygen molecule formed. Therefore divide zero point zero one zero mole of electrons by four to get zero point zero zero two five mole of oxygen."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "Step 4",
+          "title": "Convert Moles of Oxygen to Volume at STP",
+          "display": "V(O_{2}) = 0.0025 × 22.4 = 0.056 dm^{3}",
+          "working": [
+            "At STP, 1 mol gas occupies 22.4 dm^{3}",
+            "V = 0.0025 mol × 22.4 dm^{3}/mol = 0.056 dm^{3}"
+          ],
+          "narration": "Multiply zero point zero zero two five mole by twenty two point four cubic decimetres per mole. That gives zero point zero five six cubic decimetres, matching the correct answer rather than fifty six cubic centimetres mislabelled in cubic decimetres."
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Watch Out 1",
+          "title": "Forgetting Ion Charge or Electron Count",
+          "display": "Wrong: n(metal) = n(e^{-})  |  Right: n = \\frac{n(e^{-})}{c}",
+          "working": [
+            "Al^{3+} + 3e^{-} → Al: divide by 3, not 1",
+            "4OH^{-} → 2H_{2}O + O_{2} + 4e^{-}: divide by 4"
+          ],
+          "narration": "Students often multiply electron moles straight by molar mass and forget ion charge. Aluminium three plus needs three electrons per atom, and one oxygen molecule needs four electrons. Always write the balanced half-equation first so you divide by the exact electron count.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 230, 232–233"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 201"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Watch Out 2",
+          "title": "Ignoring Preferential Discharge or Electrode Role",
+          "display": "Wrong: Na deposits from NaCl(aq)  |  Right: H_{2} forms at cathode",
+          "working": [
+            "In water, H^{+} discharges before Na^{+}; OH^{-} beats SO_{4}^{2-}",
+            "Electroplating: object is cathode (−), plating metal is anode (+)"
+          ],
+          "narration": "Never assume dissolved sodium or potassium salts deposit metal at an inert cathode in water, because hydrogen ions discharge first. Also remember in electroplating, connect the object to be coated as the negative cathode where reduction occurs, never the anode.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 225–226, 229"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 199–200"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Watch Out 3",
+          "title": "Time and Volume Unit Slips",
+          "display": "Wrong: t in min, or cm^{3} as dm^{3}  |  Right: t in s, 1 dm^{3} = 1,000 cm^{3}",
+          "working": [
+            "16 min → 16 × 60 = 960 s before Q = It",
+            "56 cm^{3} ÷ 1,000 = 0.056 dm^{3}"
+          ],
+          "narration": "Two classic unit traps catch candidates in JAMB calculations. Never plug minutes or hours directly into Q equals I t, always convert time into seconds first. Also check whether gas volume options are in cubic centimetres or cubic decimetres before selecting.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 229, 234"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 201"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "conclusion",
+          "tag": "Big Takeaway",
+          "title": "One Sentence to Remember",
+          "display": "Pick the winning ions at each electrode, then link charge Q = It through moles of electrons and ion charge c.",
+          "working": [
+            "Cathode = reduction, Anode = oxidation, n(product) = \\frac{It}{cF}"
+          ],
+          "narration": "Pick the preferentially discharged ions at cathode and anode, then divide total charge by Faraday's constant and the half-equation electron count."
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2013-025",
+      "trapSources": [
+        "chem-jamb-2013-025",
+        "chem-api-0154",
+        "chem-jamb-2016-014",
+        "chem-jamb-concept-072",
+        "chem-jamb-concept-075"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2018-012",
+        "written": false,
+        "stem": "A quantity of electricity liberates 3.6 g of silver from its salt. What mass of aluminium would the same quantity of electricity liberate from its salt? Take Al = 27 and Ag = 108.",
+        "options": [
+          {
+            "id": "a",
+            "text": "2.7 g",
+            "why": "2.7 g is nine times the mass from the shared electron amount."
+          },
+          {
+            "id": "b",
+            "text": "1.2 g",
+            "why": "1.2 g comes from dividing the silver mass by three while ignoring the different molar masses."
+          },
+          {
+            "id": "c",
+            "text": "0.9 g",
+            "why": "0.9 g accounts for molar mass but ignores the three electrons needed per aluminium ion."
+          },
+          {
+            "id": "d",
+            "text": "0.3 g",
+            "why": "\\frac{3.6}{108} mol of silver uses the same number of moles of electrons because Ag^{+} needs one each. Each Al^{3+} needs three, so aluminium mass is \\left(\\frac{3.6}{108}\\right) × \\frac{27}{3} = 0.30 g."
+          }
+        ],
+        "answerId": "d"
+      }
+    },
+    {
+      "id": "chem-atomic-structure",
+      "title": "Atomic structure and the periodic table",
+      "minutes": 3,
+      "chapters": [
+        "4",
+        "6"
+      ],
+      "keywords": [
+        "proton",
+        "neutron",
+        "electron",
+        "atomic number",
+        "mass number",
+        "isotopes",
+        "relative atomic mass",
+        "electronic configuration",
+        "Aufbau principle",
+        "Pauli exclusion principle",
+        "Hund's rule",
+        "periodic table",
+        "group and period",
+        "periodic trends",
+        "atomic radius",
+        "ionisation energy",
+        "electronegativity"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Everyday Picture",
+          "title": "A Marble on a Football Pitch",
+          "display": "Tiny heavy nucleus (p^{+} + n^{0})  |  Wide electron shells (e^{-})",
+          "working": [
+            "Centre marble = protons + neutrons (almost all mass)",
+            "Stands around pitch = fast electrons driving chemistry"
+          ],
+          "narration": "Picture a football pitch with a marble on the centre spot. That marble holds almost all the mass, while fast electrons fill the stands and run every chemical reaction."
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Protons, Neutrons, Electrons, Z and A",
+          "display": "^{A}_{Z}X:   Z = p^{+},   A = p^{+} + n^{0},   n^{0} = A - Z",
+          "working": [
+            "Proton (+1, mass 1) and Neutron (0, mass 1) in nucleus",
+            "Electron (-1, mass \\frac{1}{1840}) in shells outside nucleus",
+            "Neutral atom: e^{-} = p^{+}; Cation M^{q+}: e^{-} = Z - q",
+            "Anion X^{q-}: e^{-} = Z + q"
+          ],
+          "narration": "Protons and neutrons sit inside the tiny nucleus and form the mass number A, while tiny negative electrons occupy outer shells. Atomic number Z equals the proton count and defines the element. Neutral atoms have equal protons and electrons, whereas ions gain or lose electrons.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 26"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 23–24"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§2.3"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Isotopes and Relative Atomic Mass",
+          "display": "A_{r} = \\frac{(m_{1} × a_{1}) + (m_{2} × a_{2}) + ...}{a_{1} + a_{2} + ...}",
+          "working": [
+            "Isotopes: same Z (protons, chemistry), different A (neutrons, mass)",
+            "Example: ^{35}_{17}Cl (75%) and ^{37}_{17}Cl (25%)",
+            "A_{r}(Cl) = \\frac{(35 × 75) + (37 × 25)}{100} = 35.5"
+          ],
+          "narration": "Isotopes are atoms of the same element with the same proton number and electron arrangement, so identical chemistry, but different neutron numbers and masses. Relative atomic mass is the weighted mean of all natural isotope masses using their percentage or ratio abundances.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 27–28"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 26–27"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§2.3"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Shells and s, p, d Electron Configuration",
+          "display": "1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p",
+          "working": [
+            "Max per shell = 2n^{2}: K(2), L(8), M(18), N(32)",
+            "Subshell capacity: s(2), p(6), d(10), f(14); 2 e^{-} per orbital (Pauli)",
+            "Hund: fill degenerate orbitals singly before pairing",
+            "Exceptions: Cr = [Ar] 3d^{5}4s^{1}, Cu = [Ar] 3d^{10}4s^{1}"
+          ],
+          "narration": "Electrons fill subshells from lowest energy up, with four s before three d. Pauli's principle limits each orbital to two opposite-spin electrons, and Hund's rule fills equal orbitals singly before pairing. Chromium and copper stabilise half-filled or filled three d subshells.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 30–33, 261"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 23–25"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "How Configuration Sets Group, Period and Block",
+          "display": "Period = highest n  |  Main Group = valence e^{-} (ns + np)",
+          "working": [
+            "Modern table orders by increasing atomic number Z",
+            "Mg (3s^{2}): n = 3 (Period 3), 2 valence e^{-} (Group II / 2, s-block)",
+            "Cl (3s^{2} 3p^{5}): 7 valence e^{-} (Group VII / 17, halogen, p-block)",
+            "He (1s^{2}), Ne, Ar: full outer shell (Group 0 / 18, noble gases)"
+          ],
+          "narration": "Elements sit in order of atomic number. Highest occupied shell gives the period, while outer s plus p electrons set the main group, Roman one to seven and zero or IUPAC one to eighteen. Partly filled d subshells mark transition metals.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 36–38"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 33–34"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§6.5"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Periodic Trends Across Periods and Down Groups",
+          "display": "Across Period (→): radius ↓, IE ↑, EA ↑, EN ↑",
+          "working": [
+            "Down Group (↓): more shells, shielding ↑, radius ↑, IE ↓, EN ↓",
+            "Metallic character: decreases across period (→), increases down group (↓)",
+            "Group I reactivity ↑ down group (easier valence e^{-} loss)",
+            "Group VII reactivity ↓ down group (harder e^{-} gain)"
+          ],
+          "narration": "Across a period, rising nuclear charge pulls the same outer shell tighter, so atomic radius shrinks while ionisation energy, electron affinity and electronegativity rise. Down a group, extra shells increase shielding and radius, making alkali metals more reactive but halogens less reactive.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 38–40, 265"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 34–35"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§6.5"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Step 1",
+          "title": "Count Protons, Neutrons and Electrons in ^{31}_{15}P",
+          "display": "^{31}_{15}P:  Z = 15,  A = 31",
+          "working": [
+            "Protons = Z = 15",
+            "Electrons (neutral atom) = 15",
+            "Neutrons = A - Z = 31 - 15 = 16"
+          ],
+          "narration": "Take a neutral phosphorus atom with atomic number fifteen and mass number thirty one. Its proton count is fifteen, and because it is neutral, its electron count is also fifteen. Subtract fifteen from thirty one to get sixteen neutrons."
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Step 2",
+          "title": "Write the s, p, d Configuration and Check Hund's Rule",
+          "display": "_{15}P:  1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{3}",
+          "working": [
+            "1s(2) + 2s(2) + 2p(6) + 3s(2) = 12 electrons",
+            "Remaining 3 electrons: 3p_{x}^{1} 3p_{y}^{1} 3p_{z}^{1}",
+            "3 unpaired electrons (Hund's rule)"
+          ],
+          "narration": "Fill subshells in energy order until all fifteen electrons are placed. Twelve electrons fill up to three s two, leaving three electrons for the three p orbitals. By Hund's rule, those three electrons occupy separate p orbitals singly, giving three unpaired electrons."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Step 3",
+          "title": "Deduce Period, Block and Group",
+          "display": "3s^{2} 3p^{3}  →  Period 3, p-block, Group V (15)",
+          "working": [
+            "Highest occupied shell n = 3 → Period 3",
+            "Valence electrons = 2 + 3 = 5 → Group V (IUPAC 15)",
+            "Outer electron enters 3p → p-block non-metal"
+          ],
+          "narration": "Look at the outermost third shell. The highest shell number three places phosphorus in Period three, while adding the two three s and three three p electrons gives five valence electrons, placing it in Group five, or fifteen, in the p block."
+        },
+        {
+          "n": 10,
+          "part": "example-2",
+          "tag": "JAMB 2016",
+          "title": "Read the Isotope Ratio Question",
+          "display": "Element X has two isotopes with mass numbers 20 and 22, present in the ratio 1:3. What is the relative atomic mass of X?",
+          "working": [
+            "Mass numbers: A_{1} = 20,  A_{2} = 22",
+            "Ratio parts: R_{1} = 1,  R_{2} = 3"
+          ],
+          "narration": "In this JAMB twenty sixteen question, element X has two isotopes of mass numbers twenty and twenty two in the ratio one to three. That means out of every four atoms, one has mass twenty and three have mass twenty two."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "Step 2",
+          "title": "Sum the Weighted Contributions",
+          "display": "(20 × 1) + (22 × 3) = 20 + 66 = 86",
+          "working": [
+            "Lighter isotope contribution: 20 × 1 = 20",
+            "Heavier isotope contribution: 22 × 3 = 66",
+            "Total ratio parts: 1 + 3 = 4"
+          ],
+          "narration": "Multiply each isotopic mass by its ratio share. One times twenty gives twenty, and three times twenty two gives sixty six, making eighty six in total across one plus three equals four parts."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "Step 3",
+          "title": "Divide by Total Parts to Get A_{r}",
+          "display": "A_{r} = \\frac{86}{4} = 21.5",
+          "working": [
+            "A_{r} = \\frac{(20 × 1) + (22 × 3)}{1 + 3} = 21.5",
+            "Closer to 22 than 20 because ratio favours 22"
+          ],
+          "narration": "Divide eighty six by four to get twenty one point five. Always check that your answer leans towards the more abundant isotope. Here seventy five percent is mass twenty two, so twenty one point five makes complete sense rather than the plain average twenty one."
+        },
+        {
+          "n": 13,
+          "part": "watch-out",
+          "tag": "Watch Out 1",
+          "title": "Counting Only p Electrons as Valence Electrons",
+          "display": "Wrong: 3s^{2} 3p^{5} has 5 valence e^{-}  |  Right: 2 + 5 = 7 valence e^{-}",
+          "working": [
+            "Valence shell = ALL electrons in highest n (both ns and np)",
+            "1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{5}: 7 outer electrons → Group VII (17)"
+          ],
+          "narration": "Many candidates read the last subshell alone and think three s two three p five has five valence electrons. You must add all electrons in the highest shell, both three s and three p, giving seven valence electrons and placing it with the halogens.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 36–37"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 26"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "part": "watch-out",
+          "tag": "Watch Out 2",
+          "title": "Mixing Up Nucleons, Mass Number and Electrons",
+          "display": "Wrong: n^{0} = A, or e^{-} in nucleus  |  Right: n^{0} = A - Z",
+          "working": [
+            "Nucleus contains ONLY protons and neutrons (nucleons)",
+            "Tritium ^{3}_{1}H: 1 proton, 3 - 1 = 2 neutrons (no e^{-} inside)"
+          ],
+          "narration": "Do not confuse mass number with neutron count, and never place electrons inside the nucleus. Only protons and neutrons live in the nucleus. For tritium, subtract atomic number one from mass number three to get two neutrons alongside one proton.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 26–27"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 23–24"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§2.3"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Watch Out 3",
+          "title": "Unweighted Isotope Averages and Period Radius Traps",
+          "display": "Wrong: \\frac{20+22}{2} = 21.0; radius ↑ across period",
+          "working": [
+            "Right: weight each isotope by its abundance or ratio",
+            "Right: across a period (→), higher nuclear charge shrinks atomic radius"
+          ],
+          "narration": "Two frequent JAMB traps appear in isotopes and trends. Never average isotope masses without weighting by abundance or ratio. Also remember that moving left to right across a period adds protons to the same shell, pulling electrons closer so atomic radius decreases.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 28, 38"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 26, 34"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§2.3, §6.5"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "conclusion",
+          "tag": "Big Takeaway",
+          "title": "One Sentence to Remember",
+          "display": "Protons fix identity and isotopes give weighted mass, while outer s and p electrons govern group, period and periodic trends.",
+          "working": [
+            "Z = p^{+}, A_{r} = weighted mean, Period = max n, Group = valence e^{-}"
+          ],
+          "narration": "Proton number defines the element, weighted isotopes give relative atomic mass, and outer electron configuration explains every periodic group, period and trend."
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2016-001",
+      "trapSources": [
+        "chem-jamb-2014-006",
+        "chem-jamb-2015-012",
+        "chem-jamb-2010-007",
+        "chem-jamb-2011-008",
+        "chem-api-0051",
+        "chem-jamb-2016-001",
+        "chem-jamb-2016-037"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2014-006",
+        "written": false,
+        "stem": "Which statement is true of an atom with configuration 1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{5}?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Its outer p subshell is full",
+            "why": "The outer 3p subshell can hold six electrons and has only five."
+          },
+          {
+            "id": "b",
+            "text": "It has five electrons in its outer shell",
+            "why": "The outer shell contains two 3s electrons as well as five 3p electrons."
+          },
+          {
+            "id": "c",
+            "text": "It belongs to Group 2",
+            "why": "Group 2 atoms normally have two valence electrons."
+          },
+          {
+            "id": "d",
+            "text": "It is a halogen",
+            "why": "The valence configuration 3s^{2} 3p^{5} has seven electrons, characteristic of Group 17. This atom is chlorine, a halogen."
+          }
+        ],
+        "answerId": "d"
+      }
+    },
+    {
+      "id": "chem-bonding",
+      "title": "Chemical bonding",
+      "minutes": 3,
+      "chapters": [
+        "5"
+      ],
+      "keywords": [
+        "ionic bonding",
+        "electrovalent bonding",
+        "covalent bonding",
+        "dative bonding",
+        "coordinate covalent bond",
+        "metallic bonding",
+        "hydrogen bonding",
+        "van der Waals forces",
+        "dipole-dipole attraction",
+        "VSEPR",
+        "molecular shape",
+        "tetrahedral",
+        "trigonal pyramidal",
+        "linear",
+        "electronegativity",
+        "polarity",
+        "conductivity",
+        "brittleness",
+        "malleability",
+        "graphite"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Everyday Picture",
+          "title": "Handing Over, Sharing, or Pooling Together",
+          "display": "Transfer (ionic)  |  Equal share (covalent)  |  One gives both (dative)  |  Shared sea (metallic)",
+          "working": [
+            "Ionic: one hands over, one receives",
+            "Covalent: both contribute equally to share",
+            "Dative: one friend pays for both"
+          ],
+          "narration": "Think of sharing suya with a friend. Either you split the bill, one person pays for both, or one hands over cash completely. Atoms bond in similar ways."
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Ionic (Electrovalent) Bonding",
+          "display": "Metal (low IE) + Non-metal (high EA)  →  M^{m+} + X^{x-}  →  M_{x}X_{m}",
+          "working": [
+            "Na (2,8,1) - e^{-} → Na^{+} (2,8);  Cl (2,8,7) + e^{-} → Cl^{-} (2,8,8)",
+            "Mg (2,8,2) + O (2,6) → Mg^{2+} + O^{2-} → MgO",
+            "Large electronegativity difference favours electron transfer",
+            "Non-directional electrostatic attraction builds a giant crystal lattice"
+          ],
+          "narration": "Ionic or electrovalent bonding happens when atoms with widely different electronegativities transfer valence electrons, usually a metal losing electrons to a non-metal. Opposite ions attract in every direction to build a crystal lattice. Ions combine in the inverse ratio of their charges.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 42–44"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 42–43"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§7.1"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Covalent and Dative (Coordinate) Bonding",
+          "display": "Covalent: A· + ·B → A:B   |   Dative: A: + B → A→B",
+          "working": [
+            "Single (H-H), double (O=O), triple (N≡N) shared electron pairs",
+            "Non-polar (H_{2}, Cl_{2}: equal EN) vs polar (H-Cl, H_{2}O: unequal EN)",
+            "Dative: donor lone pair + acceptor empty orbital (NH_{3} + H^{+} → NH_{4}^{+})",
+            "Once formed, a dative bond behaves identically to a covalent bond"
+          ],
+          "narration": "In ordinary covalent bonding, two non-metals each contribute one electron to share a pair, forming discrete molecules with single, double or triple bonds. In dative or coordinate bonding, one donor atom supplies both electrons of the shared pair into an empty orbital.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 45–50"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 43–45"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§7.2"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Metallic Bonding",
+          "display": "Positive metal ions  ↔  mobile sea of delocalised valence e^{-}",
+          "working": [
+            "Metals have low ionisation energies and vacant valence orbitals",
+            "Mobile electrons carry electric current and thermal energy",
+            "Non-directional bonding allows ion layers to slip without shattering",
+            "Explains lustre, malleability, ductility and high melting points"
+          ],
+          "narration": "Metallic bonding holds positive metal ions inside a mobile sea of delocalised valence electrons. Because electrons move freely throughout the lattice, metals conduct electricity and heat well. Because the attraction is non-directional, hammered layers can slip past each other without snapping.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 50–51, 275"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 45"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§10.5"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Van der Waals Forces and Hydrogen Bonds",
+          "display": "Dispersion (weakest) < Dipole-dipole < Hydrogen bond (F, O, N) << Covalent",
+          "working": [
+            "Van der Waals dispersion: acts between all molecules (holds I_{2}, Ar, CH_{4})",
+            "Dipole-dipole: aligns permanent dipoles in polar molecules (HCl)",
+            "Hydrogen bond: H bonded to F, O or N attracts lone pair on nearby F, O or N",
+            "H-bonding raises b.p. of H_{2}O, HF, NH_{3}, alkanols; makes ice open and less dense"
+          ],
+          "narration": "Weak intermolecular forces act between separate molecules. Van der Waals dispersion forces increase with molar mass and hold non-polar molecules like iodine together. Hydrogen bonds form when hydrogen joins fluorine, oxygen or nitrogen, raising water's boiling point and giving ice an open lattice.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 51–52, 275–276"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 45–46"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§10.1"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Shapes of Simple Molecules (VSEPR)",
+          "display": "Electron pairs repel → maximum separation around central atom",
+          "working": [
+            "2 BP, 0 LP → linear, 180° (CO_{2}, BeCl_{2}, C_{2}H_{2}); 3 BP, 0 LP → trigonal planar, 120° (BF_{3})",
+            "4 BP, 0 LP → tetrahedral, 109.5° (CH_{4}, NH_{4}^{+})",
+            "3 BP, 1 LP → trigonal pyramidal, 107° (NH_{3}); 2 BP, 2 LP → bent or V-shape, 105° (H_{2}O)",
+            "Symmetrical shapes (CO_{2}, CH_{4}, CCl_{4}) cancel bond dipoles → non-polar molecule"
+          ],
+          "narration": "By electron-pair repulsion, bond pairs and lone pairs arrange as far apart as possible, with lone pairs repelling more strongly and shrinking bond angles. Two pairs give linear shapes, three trigonal planar, four tetrahedral, ammonia pyramidal, and water bent. Symmetrical shapes cancel dipoles.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 273, 277"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 44, 47"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§7.6"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Properties That Follow from Bonding",
+          "display": "Structure + Bond Type  →  Melting point, Solubility, Conductivity, Hardness",
+          "working": [
+            "Ionic crystals: high m.p., brittle, soluble in water, conduct when molten or aqueous",
+            "Simple molecular: low m.p./b.p., soft, non-conductors (unless ionised in water)",
+            "Giant covalent: diamond (3D, non-conductor) vs graphite (2D layers, conducts)",
+            "Polar water dissolves ions (ion-dipole) and H-bonding molecules (like dissolves like)"
+          ],
+          "narration": "Bonding governs bulk behaviour. Ionic solids melt high, shatter when shifted, and conduct only when molten or dissolved so ions can move. Simple molecular solids melt low and never conduct. Giant networks melt very high, while graphite conducts along layers via delocalised electrons.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 45, 48, 275–276"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 43–44"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§§7.1–7.2, 10.5"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1 · Step 1",
+          "title": "Classify Potassium Chloride and Water",
+          "display": "Compare KCl (_{19}K + _{17}Cl) and H_{2}O (_{1}H + _{8}O)",
+          "working": [
+            "_{19}K (2,8,8,1): Group I metal;  _{17}Cl (2,8,7): Group VII non-metal",
+            "_{1}H (1) and _{8}O (2,6): both non-metals"
+          ],
+          "narration": "First inspect the elements in potassium chloride and water. Potassium is a reactive metal and chlorine is a non-metal, whereas hydrogen and oxygen are both non-metals. That contrast immediately separates electron transfer from electron sharing."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1 · Step 2",
+          "title": "Assign Bond Types and Shape",
+          "display": "KCl: K^{+}Cl^{-} (ionic)   |   H_{2}O: bent (105°), polar + H-bonds",
+          "working": [
+            "K loses 1 e^{-} → K^{+}; Cl gains 1 e^{-} → Cl^{-} (electrostatic lattice)",
+            "O shares 2 pairs with H (2 BP, 2 LP) → V-shape (105°), polar molecule",
+            "O-H groups form intermolecular hydrogen bonds between H_{2}O molecules"
+          ],
+          "narration": "Potassium transfers one valence electron to chlorine, building an ionic crystal of potassium and chloride ions. Oxygen shares two electron pairs with hydrogen while keeping two lone pairs, giving water a bent shape and strong intermolecular hydrogen bonds."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1 · Step 3",
+          "title": "Predict Melting, Solubility and Conductivity",
+          "display": "KCl: high-m.p. solid, conducts molten/aq   |   H_{2}O: liquid, dissolves KCl",
+          "working": [
+            "KCl solid: ions locked in lattice → non-conductor; molten/aq: mobile ions → conducts",
+            "H_{2}O: liquid at room temp (H-bonds); polar molecules hydrate K^{+} and Cl^{-}"
+          ],
+          "narration": "Potassium chloride is a high-melting brittle solid that conducts electricity only when melted or dissolved, because mobile ions carry charge. Water stays liquid at room temperature due to hydrogen bonding, and its polar molecules hydrate and dissolve potassium chloride."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB 2015",
+          "title": "Read the Ammonium Chloride Bonding Question",
+          "display": "Which bond types are needed in the textbook account of crystalline NH_{4}Cl, including how NH_{4}^{+} forms from NH_{3} and H^{+}?",
+          "working": [
+            "Choices: (a) Ionic and covalent   (b) Ionic and coordinate",
+            "(c) Ionic, covalent and coordinate   (d) Covalent, coordinate and metallic"
+          ],
+          "narration": "In this JAMB twenty fifteen question, we must identify every bond type present in solid ammonium chloride, N H four C l, including how ammonia combines with a hydrogen ion to form the ammonium ion."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "Step 2",
+          "title": "Check the Bonds Inside Ammonia (NH_{3})",
+          "display": "N (2,5) + 3 H (1)  →  3 ordinary covalent N-H bonds + 1 lone pair",
+          "working": [
+            "Each H contributes 1 e^{-}; N contributes 1 e^{-} per bond (3 shared pairs)",
+            "Rule out any choice missing ordinary covalent bonds"
+          ],
+          "narration": "Start inside the ammonia molecule, N H three. Nitrogen shares one electron with each of three hydrogen atoms to form three ordinary covalent bonds, leaving one unshared lone pair on nitrogen. Any answer that leaves out ordinary covalent bonding is incomplete."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "Step 3",
+          "title": "Trace Formation of Ammonium Ion (NH_{4}^{+})",
+          "display": "H_{3}N: + H^{+}  →  [NH_{4}]^{+}   (dative / coordinate covalent bond)",
+          "working": [
+            "H^{+} has an empty 1s orbital and brings zero electrons",
+            "N donates both electrons of its lone pair → coordinate bond",
+            "Rule out any choice missing coordinate bonding"
+          ],
+          "narration": "Next add the hydrogen ion, H plus, which has an empty orbital. Nitrogen donates its entire lone pair to share with H plus, forming a dative or coordinate covalent bond. That eliminates any choice that omits coordinate bonding."
+        },
+        {
+          "n": 14,
+          "part": "example-2",
+          "tag": "Step 4",
+          "title": "Check Crystal Packing and Rule Out Metallic Bonding",
+          "display": "NH_{4}^{+} + Cl^{-}  →  NH_{4}^{+}Cl^{-} (ionic lattice, no metal)",
+          "working": [
+            "Oppositely charged NH_{4}^{+} and Cl^{-} ions attract electrostatically (ionic)",
+            "No metal atoms or delocalised electron sea → eliminate metallic"
+          ],
+          "narration": "Finally pack the positive ammonium ions with negative chloride ions to build the salt crystal. Opposite ions attract via ionic bonding, and there are no metal atoms or electron seas, which rules out metallic bonding and leaves ionic, covalent and coordinate."
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Watch Out 1",
+          "title": "Boiling Overcomes Intermolecular Forces, Not Covalent Bonds",
+          "display": "Wrong: boiling H_{2}O or I_{2} breaks covalent bonds (or H-bonds in I_{2})",
+          "working": [
+            "Right: boiling H_{2}O/alkanols breaks intermolecular H-bonds; O-H bonds stay intact",
+            "Right: I_{2} has no H atom → molecular lattice held by van der Waals forces",
+            "Right: ice floats because H-bonds hold H_{2}O molecules in an open lattice"
+          ],
+          "narration": "Do not confuse strong covalent bonds inside molecules with weak attractions between them. Boiling water or an alkanol breaks intermolecular hydrogen bonds, never internal covalent bonds. Iodine contains no hydrogen, so its lattice is held purely by van der Waals forces.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 51–52, 276"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 45–46"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§10.1"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Watch Out 2",
+          "title": "Why Ionic Crystals Shatter While Metals Bend",
+          "display": "Wrong: shifting salt layers bends it; solid NaCl conducts current",
+          "working": [
+            "Right: shifting ionic layers aligns like charges (+ near +) → repulsion → fracture",
+            "Right: ionic compounds conduct only when molten or aqueous (mobile ions)",
+            "Right: metal layers slip inside non-directional electron sea → malleable"
+          ],
+          "narration": "Both salts and metals form lattices, yet behave oppositely under a hammer. Shifting an ionic crystal brings like charges beside each other so repulsion shatters it, and ions stay locked when solid. Metal layers slip freely within their delocalised electron sea.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 45, 51, 275"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 43, 45"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§§7.1, 10.5"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "watch-out",
+          "tag": "Watch Out 3",
+          "title": "Flat Paper Drawings Hide 3D Shapes and Dipole Cancellation",
+          "display": "Wrong: CH_{4} is flat 90°; CO_{2} is polar because C=O is polar",
+          "working": [
+            "Right: CH_{4} has 4 equal C-H bond pairs → 3D tetrahedral (109.5°)",
+            "Right: CO_{2} is linear (180°) → equal opposite C=O dipoles cancel (non-polar)"
+          ],
+          "narration": "Drawing methane flat on paper can trick you into thinking its bond angles are ninety degrees or trigonal planar. Four electron pairs repel into a three-dimensional tetrahedron. Likewise, linear carbon dioxide cancels its two opposite bond dipoles, making the whole molecule non-polar.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "pp. 48, 273, 277"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "pp. 44, 47"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§7.6"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "part": "conclusion",
+          "tag": "Big Takeaway",
+          "title": "One Sentence to Remember",
+          "display": "Electron transfer, sharing or pooling builds the bond; 3D electron repulsion sets shape; lattice or intermolecular forces explain properties.",
+          "working": [
+            "Intramolecular (ionic, covalent, dative, metallic) vs intermolecular (van der Waals, H-bond)"
+          ],
+          "narration": "How valence electrons are transferred, shared or pooled sets the primary bond, electron-pair repulsion sets molecular shape, and the forces between particles explain melting point, solubility and conductivity."
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2015-005",
+      "trapSources": [
+        "chem-jamb-2015-019",
+        "chem-jamb-2011-009",
+        "chem-jamb-concept-024",
+        "chem-jamb-concept-021",
+        "chem-jamb-concept-023",
+        "chem-jamb-2013-009",
+        "chem-api-0066"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2011-009",
+        "written": false,
+        "stem": "The molecular lattice of iodine is held together by",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dative bond",
+            "why": "A coordinate bond involves a donated electron pair. The question asks what holds distinct molecules together."
+          },
+          {
+            "id": "b",
+            "text": "Metallic bond",
+            "why": "Metallic bonding requires delocalised electrons in a metal lattice."
+          },
+          {
+            "id": "c",
+            "text": "Hydrogen bond",
+            "why": "I_{2} contains no hydrogen and does not form hydrogen bonds."
+          },
+          {
+            "id": "d",
+            "text": "Van der Waals forces",
+            "why": "Iodine forms discrete I_{2} molecules. Its molecular crystal is held together by London dispersion forces, a type of van der Waals attraction."
+          }
+        ],
+        "answerId": "d"
+      }
+    },
+    {
+      "id": "chem-organic-naming",
+      "title": "Naming organic compounds",
+      "minutes": 3,
+      "chapters": [
+        "18",
+        "19",
+        "20"
+      ],
+      "keywords": [
+        "homologous series",
+        "functional group",
+        "IUPAC nomenclature",
+        "alkanes",
+        "alkenes",
+        "alkynes",
+        "alkanols",
+        "alkanoic acids",
+        "esters",
+        "alkanoates",
+        "structural isomerism",
+        "chain isomerism",
+        "position isomerism",
+        "functional group isomerism",
+        "geometric isomerism",
+        "cis-trans",
+        "alkyl group",
+        "catenation",
+        "esterification"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Everyday Picture",
+          "title": "Giving a Molecule a Clear Street Address",
+          "display": "Longest carbon road (root) + closest landmark (number) + family surname (suffix)",
+          "working": [
+            "Main road = longest continuous carbon chain",
+            "House number = position closest to the functional group",
+            "Surname = family suffix (-ane, -ene, -yne, -ol, -oic acid, -oate)"
+          ],
+          "narration": "Naming a carbon molecule is like giving a clear street address. Find the longest main road, number from the closest landmark, and end with the family surname."
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Homologous Series and Carbon Root Names",
+          "display": "Consecutive homologues differ by -CH_{2}- (mass 14)   |   Root = longest chain",
+          "working": [
+            "Shared general formula & functional group → similar chemical reactions",
+            "Physical properties (b.p., density) rise steadily as chain length grows",
+            "Roots: C1 meth-, C2 eth-, C3 prop-, C4 but-, C5 pent-, C6 hex-",
+            "C7 hept-, C8 oct-, C9 non-, C10 dec-; branches use -yl (CH_{3}- = methyl)"
+          ],
+          "narration": "A homologous series is a family sharing a general formula and functional group, where each member adds one C H two unit of mass fourteen. Physical properties change gradually down the series, while the longest continuous carbon chain sets the root name.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 227, 259–260"
+            },
+            {
+              "book": "New School Chemistry",
+              "where": "pp. 506–507, 511"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§20.1"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Functional Groups Set the Family and Suffix",
+          "display": "-ane (C-C)  |  -ene (C=C)  |  -yne (C≡C)  |  -ol (-OH)  |  -oic acid (-COOH)  |  -oate (-COO-)",
+          "working": [
+            "Alkanes (C_{n}H_{2n+2}): single bonds only (saturated); suffix -ane",
+            "Alkenes (C_{n}H_{2n}): C=C double bond (unsaturated); suffix -ene",
+            "Alkynes (C_{n}H_{2n-2}): C≡C triple bond (unsaturated); suffix -yne",
+            "Alkanols (-OH, -ol), alkanoic acids (-COOH, -oic acid), esters (-COO-, -oate)"
+          ],
+          "narration": "A functional group is the atom, bond or group that controls chemical reactions and gives the IUPAC suffix. Saturated alkanes end in ane, unsaturated alkenes and alkynes end in ene and yne, alkanols end in ol, acids in oic acid, and esters in oate.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 227–228, 260, 262"
+            },
+            {
+              "book": "New School Chemistry",
+              "where": "pp. 507–508"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§§20.1–20.3"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Naming Alkanes, Alkenes and Alkynes",
+          "display": "Longest chain (with C=C or C≡C) → lowest locant → alphabetical prefixes",
+          "working": [
+            "Alkanes: number from end nearest first branch (CH_{3}CH(CH_{3})CH_{2}CH_{3} = 2-methylbutane)",
+            "Alkenes/alkynes: number from end nearest multiple bond (but-1-ene, but-2-yne)",
+            "Use di-, tri-, tetra- for repeated groups; commas between numbers, hyphens before letters",
+            "Alphabetise distinct substituents ignoring di-/tri- (bromo before chloro before methyl)"
+          ],
+          "narration": "Pick the longest continuous chain containing any double or triple bond. Number from the end giving the multiple bond, or first alkane branch, the lowest number, placing that number just before ene or yne. List different substituents alphabetically with hyphens and commas.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 259–261, 275"
+            },
+            {
+              "book": "New School Chemistry",
+              "where": "pp. 508, 511"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§20.1"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Naming Alkanols and Alkanoic Acids",
+          "display": "Alkanol: alkane - e + -ol (propan-1-ol)   |   Acid: alkane - e + -oic acid",
+          "working": [
+            "Alkanols (R-OH): number chain to give -OH carbon the lowest number",
+            "Primary (RCH_{2}OH), secondary (R_{2}CHOH), tertiary (R_{3}COH, e.g. 2-methylpropan-2-ol)",
+            "Alkanoic acids (R-COOH): -COOH carbon is ALWAYS C1 (included in chain count)",
+            "HCOOH = methanoic (formic) acid; CH_{3}COOH = ethanoic (acetic) acid"
+          ],
+          "narration": "For alkanols, replace final e with ol and number from the end nearest the hydroxyl group, classifying the carbon holding it as primary, secondary or tertiary. For alkanoic acids, the carboxyl carbon is always carbon one, giving methanoic acid and ethanoic acid.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 262, 303, 313"
+            },
+            {
+              "book": "New School Chemistry",
+              "where": "pp. 508, 511"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§§20.2–20.3"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Naming Esters (Alkanoates, RCOOR')",
+          "display": "RCOOH (acid) + R'OH (alkanol)  ⇌  RCOOR' (alkyl alkanoate) + H_{2}O",
+          "working": [
+            "Two-word name: alkyl group R' (from alcohol) + acid root with -oate",
+            "R' attaches to the single-bonded oxygen (-O-R'); acid chain includes C=O carbon",
+            "HCOOCH_{3} → methyl (from CH_{3}OH) + methanoate (from HCOOH)",
+            "CH_{3}COOC_{2}H_{5} → ethyl ethanoate (familiar name: ethyl acetate)"
+          ],
+          "narration": "Esters form when an alkanoic acid reacts with an alkanol, and carry a two-word IUPAC name. Name the alkyl group attached to the single-bonded oxygen first, then name the carbonyl-containing acid part by changing oic acid to oate, like ethyl ethanoate, ethyl acetate.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 262, 315–316"
+            },
+            {
+              "book": "New School Chemistry",
+              "where": "pp. 508, 540"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§20.3"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "rules",
+          "tag": "Rule 6",
+          "title": "Structural and Geometric Isomerism",
+          "display": "Same molecular formula, different connectivity (structural) or spatial layout (cis/trans)",
+          "working": [
+            "Chain isomers: butane vs 2-methylpropane (both C_{4}H_{10})",
+            "Position isomers: propan-1-ol vs propan-2-ol (both C_{3}H_{8}O)",
+            "Functional group isomers: ethanol (CH_{3}CH_{2}OH) vs methoxymethane (CH_{3}OCH_{3})",
+            "Geometric (cis-trans): restricted C=C rotation + two different groups on EACH C=C carbon"
+          ],
+          "narration": "Isomers share the same molecular formula but differ in structure or space. Structural isomers vary by chain branching, group position, or functional group, such as ethanol and methoxymethane. Geometric cis-trans isomers need a double bond where both carbons hold two different groups.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 235, 238, 261"
+            },
+            {
+              "book": "New School Chemistry",
+              "where": "pp. 511–513"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§20.1"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Example 1 · Step 1",
+          "title": "Find Chain and Functional Group in CH_{3}CH(OH)CH_{2}CH_{3}",
+          "display": "Name CH_{3}CH(OH)CH_{2}CH_{3}   and   CH_{3}CH_{2}COOCH_{3}",
+          "working": [
+            "First compound: 4 carbons in continuous chain → root but-",
+            "Functional group is -OH → alkanol, suffix -ol"
+          ],
+          "narration": "Start with the first structure. Count four carbon atoms in the continuous chain, giving the root but, and spot the hydroxyl group, which places the molecule in the alkanol family ending in ol."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Example 1 · Step 2",
+          "title": "Number Closest to -OH",
+          "display": "CH_{3}-CH(OH)-CH_{2}-CH_{3}  →  1-2-3-4 gives -OH at C2 → butan-2-ol",
+          "working": [
+            "Left to right puts -OH on carbon 2; right to left puts -OH on carbon 3",
+            "Lowest locant is 2 → butan-2-ol (a secondary alkanol)"
+          ],
+          "narration": "Number from left to right so the hydroxyl group sits on carbon two rather than three. Combine root, position number and suffix to name it butan-two-ol, a secondary alkanol."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Example 1 · Step 3",
+          "title": "Split the Ester CH_{3}CH_{2}COOCH_{3}",
+          "display": "CH_{3}CH_{2}COO-  (3-carbon acid part)   |   -CH_{3} (1-carbon alcohol part)",
+          "working": [
+            "Alkyl group on single-bonded oxygen: -CH_{3} → methyl",
+            "Acid part including carbonyl carbon: CH_{3}CH_{2}COO- (3 carbons) → propanoate"
+          ],
+          "narration": "Now split the second compound at its ester linkage. The single-bonded oxygen holds a one-carbon methyl group from methanol, while the carbonyl side holds three carbons in total, giving the propanoate portion."
+        },
+        {
+          "n": 11,
+          "part": "example-1",
+          "tag": "Example 1 · Step 4",
+          "title": "Assemble the Two-Word Ester Name",
+          "display": "CH_{3}CH_{2}COOCH_{3}  →  methyl propanoate",
+          "working": [
+            "Alkyl part first (methyl) + acid -oate part second (propanoate)",
+            "Answers: butan-2-ol and methyl propanoate"
+          ],
+          "narration": "Place the alkyl group before the alkanoate name to get methyl propanoate. Together, our two compounds are butan-two-ol and methyl propanoate."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "JAMB 2015",
+          "title": "Read the Ester and Alkyne Naming Question",
+          "display": "What are the names of HCOOCH_{3} and HC≡CH, in that order?",
+          "working": [
+            "Choices: (a) Methyl methanoate and ethene   (b) Methanoic acid and ethyne",
+            "(c) Ethyl methanoate and ethyne   (d) Methyl methanoate and ethyne"
+          ],
+          "narration": "In this JAMB twenty fifteen question, we must name H C O O C H three and H C triple bond C H in that exact order by matching each functional group."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "Step 2",
+          "title": "Identify HCOOCH_{3} as an Ester, Not an Acid",
+          "display": "HCOOCH_{3} has -COO- bonded to -CH_{3} (ester), not -COOH (acid)",
+          "working": [
+            "Methanoic acid would be HCOOH (ends in H, not CH_{3})",
+            "Eliminate the choice calling HCOOCH_{3} methanoic acid"
+          ],
+          "narration": "Look closely at the first formula. Because the carboxylate oxygen connects to a methyl group instead of a hydrogen atom, it is an ester rather than methanoic acid. That removes the choice naming an acid."
+        },
+        {
+          "n": 14,
+          "part": "example-2",
+          "tag": "Step 3",
+          "title": "Name the Alcohol and Acid Halves of HCOOCH_{3}",
+          "display": "HCOO- (1 C: methanoate) + -CH_{3} (1 C: methyl)  →  methyl methanoate",
+          "working": [
+            "Alcohol alkyl group is -CH_{3} (methyl), NOT -C_{2}H_{5} (ethyl)",
+            "Acid part HCOO- has 1 carbon → methanoate",
+            "Eliminate the choice giving ethyl methanoate"
+          ],
+          "narration": "Now split the ester. The group on the single-bonded oxygen has one carbon, so it is methyl rather than ethyl, while the one-carbon carbonyl side gives methanoate. That gives methyl methanoate and rules out ethyl methanoate."
+        },
+        {
+          "n": 15,
+          "part": "example-2",
+          "tag": "Step 4",
+          "title": "Name HC≡CH and Confirm the Order",
+          "display": "HC≡CH (2 C, triple bond)  →  ethyne (acetylene), not ethene (C=C)",
+          "working": [
+            "2 carbons → eth-; triple bond (≡) → -yne → ethyne",
+            "Ethene has a double bond (CH_{2}=CH_{2}); eliminate the choice with ethene",
+            "Correct order: methyl methanoate and ethyne"
+          ],
+          "narration": "Finally check the second formula. Two carbons joined by a triple bond belong to the alkyne family, giving ethyne, acetylene, rather than ethene which has a double bond. In order, the names are methyl methanoate and ethyne."
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Watch Out 1",
+          "title": "Reversing the Two Halves of an Ester",
+          "display": "Wrong: CH_{3}CH_{2}COOCH_{3} is ethyl propanoate  |  Right: methyl propanoate",
+          "working": [
+            "Alcohol alkyl group (-O-R') comes FIRST; carbonyl chain (R-COO-) gives -oate",
+            "HCOOCH_{3}: -CH_{3} (methyl) + HCOO- (methanoate), NOT ethyl or acid"
+          ],
+          "narration": "Students often swap the two sides of an ester or overlook the carbonyl carbon when counting chain length. Always read the group attached to single-bonded oxygen as the first alkyl word, and include the carbonyl carbon inside the alkanoate chain.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 262, 315"
+            },
+            {
+              "book": "New School Chemistry",
+              "where": "pp. 508, 540"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§20.3"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "watch-out",
+          "tag": "Watch Out 2",
+          "title": "Counting Bent Chains or Different Formulas as Isomers",
+          "display": "Wrong: C_{4}H_{10} has 3 or 4 isomers; C_{2}H_{6}O and C_{3}H_{6}O are isomers",
+          "working": [
+            "Right: isomers MUST have the exact same molecular formula",
+            "Right: bending an unbranched chain does NOT make a new isomer",
+            "C_{4}H_{10} has only 2 isomers: butane and 2-methylpropane"
+          ],
+          "narration": "Drawing a four-carbon chain bent at a right angle does not create a third isomer of butane, because the connectivity stays unbranched. Always verify that both molecules share the exact same molecular formula before calling them isomers.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 235, 275"
+            },
+            {
+              "book": "New School Chemistry",
+              "where": "pp. 511–512"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§20.1"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "part": "watch-out",
+          "tag": "Watch Out 3",
+          "title": "Expecting Cis-Trans Isomerism on Terminal Alkenes",
+          "display": "Wrong: prop-1-ene (CH_{3}CH=CH_{2}) has cis-trans isomers",
+          "working": [
+            "Right: EACH C=C carbon must carry two different groups (a ≠ b and e ≠ f)",
+            "Terminal =CH_{2} has two identical H atoms → NO cis-trans isomerism",
+            "Internal alkenes like hex-3-ene or but-2-ene DO show geometric isomerism"
+          ],
+          "narration": "A double bond alone is not enough for geometric isomerism. Both carbons of the double bond must carry two different groups. Terminal alkenes ending in C H two have two identical hydrogens on one carbon, so only internal alkenes like hex-three-ene qualify.",
+          "sources": [
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "pp. 238, 261"
+            },
+            {
+              "book": "New School Chemistry",
+              "where": "p. 513"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§20.1"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "part": "conclusion",
+          "tag": "Big Takeaway",
+          "title": "One Sentence to Remember",
+          "display": "Longest chain gives the root, functional group gives the suffix, lowest numbering places branches and multiple bonds, and same formula with different layout gives isomers.",
+          "working": [
+            "Root (chain) + lowest locants + suffix (family)  |  Check formula first for isomers"
+          ],
+          "narration": "Find the longest chain for the root, use the main functional group for the suffix, number for the lowest locants, and check both formula and connectivity to spot isomers."
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2015-002",
+      "trapSources": [
+        "chem-jamb-2015-002",
+        "chem-jamb-2013-040",
+        "chem-jamb-2011-045",
+        "chem-api-0125",
+        "chem-jamb-2012-040"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2012-040",
+        "written": false,
+        "stem": "Geometric isomerism can exist in",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hex-3-ene",
+            "why": "Each carbon of the double bond in hex-3-ene carries a hydrogen and an ethyl group. Restricted rotation therefore allows distinct geometric isomers."
+          },
+          {
+            "id": "b",
+            "text": "Hexane",
+            "why": "Hexane has no double bond to restrict rotation."
+          },
+          {
+            "id": "c",
+            "text": "Prop-1-ene",
+            "why": "Prop-1-ene has two hydrogens on the terminal alkene carbon."
+          },
+          {
+            "id": "d",
+            "text": "3-Methylbut-1-ene",
+            "why": "3-Methylbut-1-ene also has two hydrogens on its terminal alkene carbon."
+          }
+        ],
+        "answerId": "a"
+      }
+    },
+    {
+      "id": "chem-rates-equilibrium",
+      "title": "Rates and equilibrium",
+      "minutes": 3,
+      "chapters": [
+        "8",
+        "9"
+      ],
+      "keywords": [
+        "reaction rate",
+        "collision theory",
+        "activation energy",
+        "orientation",
+        "surface area",
+        "concentration",
+        "temperature",
+        "catalyst",
+        "enzyme",
+        "reversible reaction",
+        "dynamic equilibrium",
+        "equilibrium constant",
+        "Le Chatelier's principle",
+        "pressure",
+        "Haber process",
+        "Contact process"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Like I'm 5",
+          "title": "Diced yam and balanced crowds",
+          "display": "Smaller pieces cook faster (reaction rate)\nEqual people entering and leaving a hall (equilibrium)",
+          "narration": "Diced yam boils faster than a whole tuber because more surface meets hot water. Equilibrium is like a busy market where people enter and leave at equal speeds."
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Reaction rate and collision theory",
+          "display": "Rate = \\frac{Δ(concentration or volume)}{Δt}\nEffective collision: E ≥ E_{a} AND proper orientation",
+          "working": [
+            "Steepest upward slope on a volume–time curve = fastest rate",
+            "Horizontal flat part of the curve = reaction has stopped (rate = 0)",
+            "Activation energy (E_{a}) = minimum energy barrier for reaction"
+          ],
+          "narration": "Reaction rate measures how fast reactant or product amount changes per unit time. By collision theory, particles react only when they collide with at least the activation energy and with proper orientation.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 195, 198"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 148–149"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§12.5 Collision Theory"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Factors affecting reaction rate",
+          "display": "Higher T, concentration, gas pressure, or surface area → faster rate",
+          "working": [
+            "Concentration or gas pressure ↑ → more particles per volume → more collisions",
+            "Powder > chips > lump → larger solid surface area → shorter reaction time",
+            "Temperature ↑ → faster motion and more particles with E ≥ E_{a}",
+            "Nature of reactants: aqueous ionic reactions are faster than covalent ones; light aids photolysis"
+          ],
+          "narration": "Increasing temperature, concentration, gas pressure, or solid surface area raises the frequency of effective collisions. Ionic reactions in solution are usually faster than covalent ones, and sunlight drives photochemical reactions.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 198–203"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 150–152"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Catalysts and enzymes",
+          "display": "Catalyst lowers E_{a} via an alternative path (regenerated unchanged)",
+          "working": [
+            "Lowers forward and reverse E_{a} equally → equilibrium reached faster",
+            "Does NOT change ΔH, total product yield, or equilibrium composition",
+            "Enzymes are biological catalysts (e.g. zymase; dehydrogenase in redox)"
+          ],
+          "narration": "A positive catalyst provides an alternative pathway with lower activation energy and is regenerated unchanged. It speeds up forward and reverse reactions equally without changing total yield or equilibrium position.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 202, 214"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 152–153"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§12.7 Catalysis"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Reversible reactions and dynamic equilibrium",
+          "display": "aA + bB ⇌ cC + dD  |  Rate_{forward} = Rate_{reverse} ≠ 0",
+          "working": [
+            "Requires a closed system so gases or vapour cannot escape",
+            "Concentrations remain constant (not necessarily equal)",
+            "K_{c} = \\frac{[C]^{c}[D]^{d}}{[A]^{a}[B]^{b}}  (exclude pure solids and liquids)"
+          ],
+          "narration": "In a closed reversible reaction, dynamic equilibrium occurs when forward and reverse reactions proceed at equal rates. Concentrations stay steady even though both reactions continue, and pure solids are omitted from K c.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 207, 210"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 161–162"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Le Chatelier's principle (concentration, pressure, temperature)",
+          "display": "Stress applied → equilibrium shifts to oppose the stress",
+          "working": [
+            "Concentration: add reactant or remove product → shifts right; add common ion → shifts away",
+            "Pressure ↑ (gases): shifts toward FEWER gas moles (if equal gas moles, no shift)",
+            "Temperature ↑: favours endothermic direction (ΔH > 0); ONLY temperature changes K_{c}",
+            "Inert gas added at constant volume: no shift in equilibrium position"
+          ],
+          "narration": "Le Chatelier's principle states that an equilibrium shifts to counteract any change in concentration, gas pressure, or temperature. Only temperature alters the equilibrium constant, while adding an inert gas at constant volume gives no shift.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 211–214"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 163"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 164"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§13.3 Le Châtelier’s Principle"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Step 1",
+          "title": "Write the equilibrium constant K_{c}",
+          "display": "2SO_{2}(g) + O_{2}(g) ⇌ 2SO_{3}(g)\nK_{c} = \\frac{[SO_{3}]^{2}}{[SO_{2}]^{2}[O_{2}]}",
+          "working": [
+            "Given at equilibrium: [SO_{2}] = 0.2, [O_{2}] = 0.5, [SO_{3}] = 0.4 mol dm^{−3}",
+            "Put products on top and reactants below, each raised to its coefficient"
+          ],
+          "narration": "Write the equilibrium constant K c for sulphur four oxide, sulfur dioxide, reacting with oxygen to form sulphur six oxide, sulfur trioxide. Place product concentrations over reactants, raised to their coefficients."
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Step 2",
+          "title": "Substitute equilibrium concentrations",
+          "display": "K_{c} = \\frac{(0.4)^{2}}{(0.2)^{2} × 0.5} = \\frac{0.16}{0.04 × 0.5}",
+          "working": [
+            "0.4^{2} = 0.16",
+            "0.2^{2} = 0.04, and 0.04 × 0.5 = 0.02"
+          ],
+          "narration": "Substitute the equilibrium concentrations into the expression. Zero point four squared gives zero point one six on top, while zero point two squared times zero point five gives zero point zero two below."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Step 3",
+          "title": "Compute K_{c} and check units",
+          "display": "K_{c} = \\frac{0.16}{0.02} = 8 mol^{−1} dm^{3}",
+          "working": [
+            "Units: \\frac{(mol dm^{−3})^{2}}{(mol dm^{−3})^{3}} = mol^{−1} dm^{3}"
+          ],
+          "narration": "Divide zero point one six by zero point zero two to obtain eight. Because there are two concentration powers above and three below, the unit is per mole cubic decimetre."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Step 4",
+          "title": "Predict pressure shift at constant T",
+          "display": "Reactants: 2 + 1 = 3 mol gas  |  Product: 2 mol gas\nHigher P → shifts right; K_{c} stays 8",
+          "working": [
+            "Compression favours the side with fewer gas moles (2 < 3)",
+            "Constant temperature keeps K_{c} unchanged at 8 mol^{−1} dm^{3}"
+          ],
+          "narration": "Count gas moles on both sides. Three moles of reactant gas form two moles of product gas, so increasing pressure shifts equilibrium right, while K c stays eight at constant temperature."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB 2017",
+          "title": "Read the JAMB question",
+          "display": "For the exothermic equilibrium P(g) + Q(g) ⇌ 3R(s) + S(g),\nwhich change increases the yield of R?",
+          "working": [
+            "States matter: P, Q, S are gases (g), while R is a solid (s)",
+            "Gas moles: 2 mol on left (P + Q) vs 1 mol on right (S only)"
+          ],
+          "narration": "In this JAMB question, gases P and Q react exothermically to form solid R and gas S. Check vessel size, temperature, removing S, and a catalyst to see which increases R."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "Step 2",
+          "title": "Test using a larger closed vessel",
+          "display": "Larger vessel → lower pressure → favours more gas moles",
+          "working": [
+            "Left has 2 mol gas; right has 1 mol gas (ignore solid R)",
+            "Equilibrium shifts left → yield of R decreases"
+          ],
+          "narration": "Using a larger closed vessel lowers the pressure, which favours the side with more gas molecules. Ignoring solid R leaves two gas moles on the left against one on the right, shifting left."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "Step 3",
+          "title": "Test increasing the temperature",
+          "display": "Forward is exothermic (ΔH < 0) → reverse is endothermic",
+          "working": [
+            "Heating favours the endothermic reverse direction",
+            "Equilibrium shifts left → yield of R decreases"
+          ],
+          "narration": "Because the forward reaction is exothermic, the reverse reaction absorbs heat. Increasing the temperature therefore favours the endothermic reverse direction, shifting left and reducing the yield of R."
+        },
+        {
+          "n": 14,
+          "part": "example-2",
+          "tag": "Step 4",
+          "title": "Test catalyst and removing S",
+          "display": "Positive catalyst: no change in equilibrium yield\nRemoving S(g): equilibrium shifts right → more R(s)",
+          "working": [
+            "A positive catalyst speeds forward and reverse rates equally",
+            "Removing gaseous S pulls equilibrium right to replace S, forming more R"
+          ],
+          "narration": "Adding a positive catalyst speeds up both directions equally without changing the equilibrium yield. Removing gaseous S disturbs the balance and shifts equilibrium right to replace it, producing more solid R."
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Watch out 1",
+          "title": "Catalysts never increase total yield or shift equilibrium",
+          "display": "Wrong: Catalyst makes more total product or shifts equilibrium right\nRight: Catalyst only lowers E_{a}, reaching the same yield sooner",
+          "working": [
+            "Equal H_{2}O_{2} samples give equal total O_{2} with or without MnO_{2}",
+            "Forward and reverse activation energies drop equally, so K_{c} is unchanged"
+          ],
+          "narration": "Do not assume a catalyst creates extra product or favours the forward side. A catalyst lowers activation energy equally in both directions, so equilibrium arrives sooner with the exact same yield.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 214"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 153"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§13.3 Le Châtelier’s Principle"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Watch out 2",
+          "title": "Count only gases for pressure, and watch equal gas moles",
+          "display": "Wrong: Pressure always shifts equilibrium, or solids count as gas volume\nRight: Count only (g) moles; equal gas moles (Δn = 0) → no shift",
+          "working": [
+            "A(g) ⇌ B(g) or H_{2}(g) + I_{2}(g) ⇌ 2HI(g): equal gas moles → no shift",
+            "2CO(g) + O_{2}(g) ⇌ 2CO_{2}(g): 3 mol gas → 2 mol gas → compression shifts right"
+          ],
+          "narration": "Never assume compression always favours products or counts solids. Count only gaseous coefficients on each side, and remember that equal gas moles on both sides give no shift under pressure.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 212"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 164"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "watch-out",
+          "tag": "Watch out 3",
+          "title": "Equilibrium is dynamic, and temperature changes K_{c}",
+          "display": "Wrong: Reactions stop at equilibrium, or K_{c} never changes\nRight: Forward and reverse rates stay equal; heating changes K_{c}",
+          "working": [
+            "Exothermic forward (ΔH < 0): heating shifts left → K_{c} decreases",
+            "Endothermic forward (ΔH > 0): heating shifts right → K_{c} increases"
+          ],
+          "narration": "At equilibrium, opposing reactions have not stopped and concentrations need not be equal; only their rates match. Also remember that changing temperature alters the equilibrium constant, decreasing it for exothermic reactions.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 207, 213"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 161–162"
+            },
+            {
+              "book": "Lamlad Chemistry 2",
+              "where": "p. 164"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Collisions set speed; opposition sets shift",
+          "display": "Rate ↑ with effective collisions per second\nEquilibrium opposes stress; only temperature alters K_{c}",
+          "narration": "Reaction rate grows when more collisions clear the activation energy with proper orientation, while a closed equilibrium always shifts to oppose stress without a catalyst changing the final yield."
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2017-015",
+      "trapSources": [
+        "chem-jamb-concept-038",
+        "chem-jamb-concept-042",
+        "chem-jamb-2017-015",
+        "chem-jamb-concept-044",
+        "chem-jamb-2012-031",
+        "chem-api-0128",
+        "chem-jamb-concept-041",
+        "chem-jamb-2010-030",
+        "chem-jamb-2011-017"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2012-029",
+        "written": false,
+        "stem": "Which combination gives the highest rate of carbon dioxide production?",
+        "options": [
+          {
+            "id": "a",
+            "text": "0.05 mol dm^{−3} HCl and 5 g powdered CaCO_{3}",
+            "why": "This uses powder but a weaker acid concentration."
+          },
+          {
+            "id": "b",
+            "text": "0.05 mol dm^{−3} HCl and a 5 g lump of CaCO_{3}",
+            "why": "This uses both a lower concentration and a lump with less exposed surface."
+          },
+          {
+            "id": "c",
+            "text": "0.10 mol dm^{−3} HCl and 5 g powdered CaCO_{3}",
+            "why": "Powder exposes more calcium carbonate surface, and the 0.10 mol dm^{−3} acid has the highest concentration. Together these give the highest collision rate and fastest carbon dioxide production."
+          },
+          {
+            "id": "d",
+            "text": "0.025 mol dm^{−3} HCl and 5 g powdered CaCO_{3}",
+            "why": "This uses powder with the lowest acid concentration listed."
+          }
+        ],
+        "answerId": "c"
+      }
+    },
+    {
+      "id": "chem-energy",
+      "title": "Energy changes",
+      "minutes": 3,
+      "chapters": [
+        "7"
+      ],
+      "keywords": [
+        "exothermic",
+        "endothermic",
+        "enthalpy change",
+        "delta H",
+        "heat of reaction",
+        "heat of combustion",
+        "heat of neutralisation",
+        "heat of solution",
+        "heat of formation",
+        "Hess's law",
+        "bond energy",
+        "lattice energy",
+        "hydration energy",
+        "energy profile diagram",
+        "activation energy",
+        "calorimetry",
+        "entropy",
+        "Gibbs free energy"
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "part": "like-five",
+          "tag": "Like I'm 5",
+          "title": "Cooking firewood and instant cold packs",
+          "display": "Burning firewood → heat flows out (warms the pot)\nCold pack salt dissolving → heat flows in (chills your hand)",
+          "narration": "Burning firewood pushes heat out into your cooking pot and kitchen air. Dissolving an instant cold pack pulls heat from your hand, making the pack feel chilly."
+        },
+        {
+          "n": 2,
+          "part": "rules",
+          "tag": "Rule 1",
+          "title": "Exothermic, endothermic and sign of ΔH",
+          "display": "ΔH = ΣH_{products} − ΣH_{reactants}\nExothermic: ΔH < 0  |  Endothermic: ΔH > 0",
+          "working": [
+            "Exothermic: heat released to surroundings → temperature rises (ΔH is −)",
+            "Endothermic: heat absorbed from surroundings → temperature falls (ΔH is +)",
+            "Carbon(IV) oxide (carbon dioxide): C(s) + O_{2}(g) → CO_{2}(g), ΔH° = −393 kJ mol^{−1}"
+          ],
+          "narration": "Exothermic reactions release heat to the surroundings, so products hold less enthalpy and delta H is negative. Endothermic reactions absorb heat from the surroundings, so delta H is positive.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 180–182"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 135"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§5.3 Enthalpy"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "part": "rules",
+          "tag": "Rule 2",
+          "title": "Energy profile diagrams",
+          "display": "Exothermic: E_{products} < E_{reactants} (step down)\nEndothermic: E_{products} > E_{reactants} (step up)",
+          "working": [
+            "Top of the curve = transition state (activated complex)",
+            "Activation energy: E_{a} = E_{peak} − E_{reactants} (always positive)",
+            "Enthalpy arrow: from reactant level to product level (ΔH = E_{products} − E_{reactants})"
+          ],
+          "narration": "On an energy profile diagram, reactants climb over an activation energy barrier to reach products. Exothermic products end lower than reactants, whereas endothermic products end higher than reactants.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 181, 198"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 136"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "part": "rules",
+          "tag": "Rule 3",
+          "title": "Heats of reaction, combustion and neutralisation",
+          "display": "q = m c ΔT  |  ΔH = ± \\frac{q}{n}",
+          "working": [
+            "Combustion (ΔH_{c}°): 1 mol burns completely in excess O_{2} (always −)",
+            "Neutralisation (ΔH_{n}°): 1 mol H_{2}O formed; strong acid + strong base = −57.3 kJ mol^{−1}",
+            "Weak acid or base gives |ΔH_{n}°| < 57.3 kJ mol^{−1} (ionisation absorbs heat)",
+            "Water c = 4.2 or 4.18 J g^{−1} K^{−1} (use the value given in the question)"
+          ],
+          "narration": "Standard heat of combustion burns one mole completely in excess oxygen and is always exothermic. Standard neutralisation forms one mole of water, releasing fifty-seven point three kilojoules per mole for strong acids and strong bases.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 182–185"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 137, 139"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "part": "rules",
+          "tag": "Rule 4",
+          "title": "Heat of solution and Hess's law",
+          "display": "ΔH_{soln} = ΔH_{lattice dissociation} + ΔH_{hyd}",
+          "working": [
+            "Breaking the crystal lattice absorbs energy (+); hydrating ions releases energy (−)",
+            "Hydration energy > lattice separation energy → exothermic (ΔH_{soln} < 0)",
+            "Hess's law: total ΔH depends only on initial and final states, not the route"
+          ],
+          "narration": "Dissolving an ionic salt absorbs energy to separate the lattice and releases hydration energy when water surrounds the ions. By Hess's law, overall enthalpy change depends only on initial and final states.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 188, 191"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 136, 138"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§5.3, §11.1"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "part": "rules",
+          "tag": "Rule 5",
+          "title": "Bond energies and spontaneity",
+          "display": "ΔH = ΣE(bonds broken) − ΣE(bonds formed)",
+          "working": [
+            "Breaking reactant bonds absorbs energy (endothermic, +)",
+            "Forming product bonds releases energy (exothermic, −)",
+            "Spontaneity check: ΔG = ΔH − TΔS (ΔG < 0 spontaneous; T in K = °C + 273)"
+          ],
+          "narration": "Breaking chemical bonds always absorbs energy, while forming new bonds always releases energy. Subtract the energy released forming product bonds from the energy absorbed breaking reactant bonds to estimate delta H.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 190, 194"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 140–141"
+            },
+            {
+              "book": "OpenStax Chemistry 2e",
+              "where": "§7.5 Bond Strengths"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "part": "example-1",
+          "tag": "Step 1",
+          "title": "Count bonds broken and formed",
+          "display": "H_{2}(g) + Cl_{2}(g) → 2HCl(g)\nE(H−H) = 436, E(Cl−Cl) = 242, E(H−Cl) = 431 kJ mol^{−1}",
+          "working": [
+            "Bonds broken in reactants: 1 H−H bond and 1 Cl−Cl bond",
+            "Bonds formed in products: 2 H−Cl bonds"
+          ],
+          "narration": "Estimate delta H when hydrogen gas and chlorine gas form hydrogen chloride. Count one hydrogen-hydrogen bond and one chlorine-chlorine bond broken in the reactants, and two hydrogen-chlorine bonds formed in the products."
+        },
+        {
+          "n": 8,
+          "part": "example-1",
+          "tag": "Step 2",
+          "title": "Sum energy absorbed breaking bonds",
+          "display": "ΣE(bonds broken) = 436 + 242 = 678 kJ",
+          "working": [
+            "Bond breaking is endothermic (+)"
+          ],
+          "narration": "Add the bond energies of the reactants to find the energy absorbed. Four hundred and thirty-six plus two hundred and forty-two gives six hundred and seventy-eight kilojoules."
+        },
+        {
+          "n": 9,
+          "part": "example-1",
+          "tag": "Step 3",
+          "title": "Sum energy released forming bonds",
+          "display": "ΣE(bonds formed) = 2 × 431 = 862 kJ",
+          "working": [
+            "Two moles of H−Cl form, so multiply 431 by 2"
+          ],
+          "narration": "Multiply the hydrogen-chlorine bond energy by two because two moles of hydrogen chloride form. Two times four hundred and thirty-one equals eight hundred and sixty-two kilojoules released."
+        },
+        {
+          "n": 10,
+          "part": "example-1",
+          "tag": "Step 4",
+          "title": "Subtract formed from broken",
+          "display": "ΔH = 678 − 862 = −184 kJ",
+          "working": [
+            "862 kJ released > 678 kJ absorbed → net exothermic"
+          ],
+          "narration": "Subtract energy released from energy absorbed. Six hundred and seventy-eight minus eight hundred and sixty-two gives minus one hundred and eighty-four kilojoules, showing an exothermic reaction."
+        },
+        {
+          "n": 11,
+          "part": "example-2",
+          "tag": "JAMB 2014",
+          "title": "Read the JAMB question",
+          "display": "At 25°C, a system has a free energy change of −899 J mol^{−1} and an entropy change of 10 J mol^{−1} K^{−1}.\nCalculate the enthalpy change.",
+          "working": [
+            "Given: t = 25 °C, ΔG = −899 J mol^{−1}, ΔS = 10 J mol^{−1} K^{−1}",
+            "Required: ΔH in J mol^{−1}"
+          ],
+          "narration": "This JAMB question gives free energy change as minus eight hundred and ninety-nine joules per mole and entropy change as ten joules per mole per kelvin at twenty-five degrees Celsius."
+        },
+        {
+          "n": 12,
+          "part": "example-2",
+          "tag": "Step 2",
+          "title": "Convert Celsius to Kelvin",
+          "display": "T = 25 + 273 = 298 K",
+          "working": [
+            "JAMB convention uses T(K) = t(°C) + 273",
+            "Both ΔG and ΔS are already in joules, so no kJ conversion is needed"
+          ],
+          "narration": "Convert temperature to kelvin first by adding two hundred and seventy-three. Twenty-five plus two hundred and seventy-three equals two hundred and ninety-eight kelvin, and the joule units already match."
+        },
+        {
+          "n": 13,
+          "part": "example-2",
+          "tag": "Step 3",
+          "title": "Rearrange the free energy equation",
+          "display": "ΔG = ΔH − TΔS  ⇒  ΔH = ΔG + TΔS",
+          "working": [
+            "TΔS = 298 × 10 = 2980 J mol^{−1}"
+          ],
+          "narration": "Rearrange the Gibbs free energy formula so delta H equals delta G plus T delta S. Multiply two hundred and ninety-eight by ten to get two thousand nine hundred and eighty joules per mole."
+        },
+        {
+          "n": 14,
+          "part": "example-2",
+          "tag": "Step 4",
+          "title": "Substitute and find ΔH",
+          "display": "ΔH = −899 + 2980 = +2081 J mol^{−1}",
+          "working": [
+            "+2980 exceeds −899, giving a positive (endothermic) ΔH"
+          ],
+          "narration": "Add minus eight hundred and ninety-nine and two thousand nine hundred and eighty. That gives plus two thousand and eighty-one joules per mole, matching the positive value."
+        },
+        {
+          "n": 15,
+          "part": "watch-out",
+          "tag": "Watch out 1",
+          "title": "Never reverse bond-energy or profile signs",
+          "display": "Wrong: ΔH = ΣE(formed) − ΣE(broken), or exothermic products higher\nRight: ΔH = ΣE(broken) − ΣE(formed); exothermic products sit lower",
+          "working": [
+            "Breaking a bond always absorbs energy (+)",
+            "Forming a bond always releases energy (−)"
+          ],
+          "narration": "Do not flip the bond energy formula or profile heights. Breaking bonds always takes in energy and forming bonds always releases it, while exothermic products always sit below reactants.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 181, 190"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 136, 140"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "part": "watch-out",
+          "tag": "Watch out 2",
+          "title": "Convert °C to Kelvin and match energy units",
+          "display": "Wrong: T = 25 in TΔS, or mixing kJ with J\nRight: T = 25 + 273 = 298 K; keep ΔH and TΔS in matching units",
+          "working": [
+            "Using 25 instead of 298 K gives −649 J mol^{−1} (a classic trap)",
+            "If ΔH is in kJ and ΔS is in J K^{−1}, divide ΔS by 1000"
+          ],
+          "narration": "Always convert degrees Celsius to kelvin before multiplying by delta S, because using twenty-five instead of two hundred and ninety-eight leads straight to a trap value. Also match joules with joules.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 185, 194"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 141"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "part": "watch-out",
+          "tag": "Watch out 3",
+          "title": "Cold surroundings mean endothermic, not exothermic",
+          "display": "Wrong: Solution turns cold → heat left system (ΔH < 0)\nRight: Solution turns cold → system absorbed heat (ΔH > 0); check ΔG for spontaneity",
+          "working": [
+            "Cold pack cools water and hand because dissolving absorbs heat (ΔH > 0)",
+            "Exothermic ΔH < 0 alone does not guarantee spontaneity; ΔG = ΔH − TΔS decides"
+          ],
+          "narration": "When a beaker feels cold, the reacting particles pulled heat from the water and surroundings, so delta H is positive. Also remember exothermic enthalpy alone never decides spontaneity without checking delta G.",
+          "sources": [
+            {
+              "book": "Understanding Chemistry",
+              "where": "p. 180, 191, 194"
+            },
+            {
+              "book": "Lamlad Chemistry 1",
+              "where": "p. 135, 141"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "part": "conclusion",
+          "tag": "Remember",
+          "title": "Follow the heat flow",
+          "display": "Heat released → ΔH < 0 (exothermic)\nHeat absorbed → ΔH > 0 (endothermic)\nΔH = ΣE_{broken} − ΣE_{formed}",
+          "narration": "Always track whether heat enters or leaves the reacting system. Heat leaving gives negative delta H and lower product energy, while heat absorbed gives positive delta H and higher product energy."
+        }
+      ],
+      "sourceQuestionId": "chem-jamb-2014-027",
+      "trapSources": [
+        "chem-jamb-concept-032",
+        "chem-jamb-concept-031",
+        "chem-jamb-2014-027",
+        "chem-jamb-2013-026",
+        "chem-jamb-concept-035",
+        "chem-jamb-2015-039",
+        "chem-jamb-2011-023"
+      ],
+      "quickCheck": {
+        "questionId": "chem-jamb-2011-023",
+        "written": false,
+        "stem": "What describes dissolution of an ionic solid when the energy released by hydration exceeds the energy required to separate the lattice?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Spontaneous",
+            "why": "Spontaneity also depends on the entropy change."
+          },
+          {
+            "id": "b",
+            "text": "Endothermic",
+            "why": "An endothermic process has a positive enthalpy change."
+          },
+          {
+            "id": "c",
+            "text": "Exothermic",
+            "why": "The solution enthalpy is the positive lattice separation energy plus the negative hydration enthalpy. The net enthalpy change is negative."
+          },
+          {
+            "id": "d",
+            "text": "Reversible",
+            "why": "Reversibility cannot be determined from the two energy magnitudes alone."
+          }
+        ],
+        "answerId": "c"
+      }
+    }
+  ]
+}
