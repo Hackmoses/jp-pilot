@@ -167,6 +167,10 @@ const TRUST: [string, string, preact.JSX.Element][] = [
     <><path d="M12 3l7 3v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z" /><path d="M9 12l2 2 4-4" /></>],
 ]
 
+function listNames(names: string[]) {
+  return names.length > 1 ? names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1] : names[0] ?? ''
+}
+
 export function LandingMore({ stats }: { stats: HomeStats | null }) {
   const lessons = useLessonIndex() ?? []
   const picks = ['chem-mole', 'maths-logarithms', 'phys-motion'].map((id) => lessons.find((lesson) => lesson.id === id)).filter(Boolean)
@@ -194,7 +198,7 @@ export function LandingMore({ stats }: { stats: HomeStats | null }) {
     {lessons.length > 0 && <section id="lessons" class="ld-dark ld-defer" aria-labelledby="ld-lessons-title">
       <div class="ld-wrap">
         <h2 id="ld-lessons-title" class="ld-h2">Key concepts, explained like a teacher would.</h2>
-        <p class="ld-lead">{lessons.length} voiced lessons in Maths, Physics and Chemistry. More subjects coming.</p>
+        <p class="ld-lead">{lessons.length} short lessons in {listNames([...new Set(lessons.map((lesson) => getSubject(lesson.subject)?.name ?? lesson.subject))])}.</p>
         <div class="ld-grid3">
           {picks.map((lesson) => lesson && <a key={lesson.id} class="ld-dark-card" href={'#/lesson?id=' + encodeURIComponent(lesson.id)}>
             <b>{lesson.title}</b><span>{getSubject(lesson.subject)?.name ?? lesson.subject} · about {lesson.minutes} min</span>

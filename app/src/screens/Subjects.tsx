@@ -1,3 +1,4 @@
+import { useLessonIndex } from '../lib/lessonIndex'
 import { BackLink } from '../components/share/BackLink'
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import { getManifestSync, loadSubject } from '../lib/data'
@@ -40,6 +41,8 @@ function SubjectIcon({ name }: { name: SubjectIconName }) {
 
 export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
   const [query, setQuery] = useState('')
+  // Subjects with key concept lessons open in Study even before they have syllabus topics.
+  const lessonIndex = useLessonIndex()
   const [, setManifestReady] = useState(false)
   const [dialogState, setDialogState] = useState<{ kind: 'email' } | { kind: 'subject'; subject: SubjectInfo } | null>(null)
   const dialogRef = useRef<HTMLDialogElement>(null)
@@ -135,8 +138,10 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
           <div class="jp-subjects-grid" role="list">
             {filteredSubjects.map((subject) => {
               const studyTopics = STUDY_TOPICS[subject.id]?.length ?? 0
-              if (mode === 'study' ? studyTopics > 0 : isSubjectAvailable(subject.id)) {
-                const count = mode === 'study' ? studyTopics : getSubjectQuestionCount(subject.id)
+              const keyLessons = lessonIndex?.filter((lesson) => lesson.subject === subject.id).length ?? 0
+              if (mode === 'study' ? studyTopics > 0 || keyLessons > 0 : isSubjectAvailable(subject.id)) {
+                const count = mode === 'study' ? studyTopics || keyLessons : getSubjectQuestionCount(subject.id)
+                const unit = mode === 'study' ? (studyTopics ? 'topic' : 'lesson') : ''
                 return (
                   <a
                     key={subject.id}
@@ -152,7 +157,7 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
                       <strong class="jp-subject-name">{subject.name}</strong>
                       <span class="jp-subject-meta jp-subject-meta--open">
                         {(mode === 'study' || getManifestSync()) &&
-                          <><span>{count} {mode === 'study' ? (count === 1 ? 'topic' : 'topics') : 'questions'}</span><span aria-hidden="true">·</span></>}
+                          <><span>{count} {mode === 'study' ? (count === 1 ? unit : unit + 's') : 'questions'}</span><span aria-hidden="true">·</span></>}
                         <span class="jp-subject-start">Start →</span>
                       </span>
                     </span>

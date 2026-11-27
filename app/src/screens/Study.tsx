@@ -107,7 +107,7 @@ export function Study({ params }: { params: URLSearchParams }) {
     <Panel title={subjectName + ' study'} back="#/subjects?mode=study" backLabel="Subjects">
       <ConceptLessonList subject={subject} />
       {total === 0 ? <>
-        <p class="jp-mode-lead">Lessons for {subjectName} are coming soon.</p>
+        {!hasKeyConcepts && <p class="jp-mode-lead">Lessons for {subjectName} are coming soon.</p>}
         <a class="jp-btn jp-btn--primary jp-btn--full" href={practiceHref}>Practise {subjectName} →</a>
       </> : <>
         {hasKeyConcepts && <div class="jp-study-others">
