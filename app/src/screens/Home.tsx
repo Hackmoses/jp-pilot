@@ -4,6 +4,9 @@ import { QuestionOfDay } from '../components/home/QuestionOfDay'
 import { accountName } from '../lib/access'
 import { ACCOUNTS_ENABLED, FREE_QUESTIONS } from '../lib/config'
 import { greetingFor } from '../lib/greeting'
+import { overLabel, type HomeStats } from '../lib/stats'
+import { getSubject } from '../lib/subjects'
+import { useEffect, useState } from 'preact/hooks'
 import '../styles/home.css'
 
 const ways = [
@@ -14,6 +17,86 @@ const ways = [
   { href: '#/exam', title: 'Exam', text: 'Sit a timed JAMB-style test', tone: 'memo',
     icon: <><circle cx="12" cy="13" r="7" /><path d="M12 9v4l2 2M10 3h4" /></> },
 ]
+
+const MAIN_SUBJECTS = ['physics', 'chemistry', 'biology', 'mathematics', 'english']
+
+const HOW = [
+  ['Pick a subject', 'Physics, Chemistry, Biology, Maths, English and more UTME subjects.'],
+  ['Answer real JAMB questions', 'Past questions from JAMB papers, with a clear reason under every option.'],
+  ['Watch the working', 'Calculations are written out step by step with a voice, and illustrated lessons explain the ideas.'],
+]
+
+// Counts come from JP's own content at build time (scripts/build-home-stats.mjs), so they grow with it.
+function useHomeStats() {
+  const [stats, setStats] = useState<HomeStats | null>(null)
+  useEffect(() => {
+    const controller = new AbortController()
+    fetch(import.meta.env.BASE_URL + 'data/home-stats.json', { signal: controller.signal })
+      .then((res) => res.ok ? res.json() as Promise<HomeStats> : null)
+      .then((data) => { if (data) setStats(data) })
+      .catch(() => { /* Offline: the tiles show without counts. */ })
+    return () => controller.abort()
+  }, [])
+  return stats
+}
+
+function HowItWorks() {
+  return (
+    <section class="home-section" aria-labelledby="home-how-title">
+      <h2 id="home-how-title" class="home-section-title">How JP works</h2>
+      <ol class="home-how">
+        {HOW.map(([title, text], i) => <li key={title} class="home-how-step">
+          <span class="home-how-number" aria-hidden="true">{i + 1}</span>
+          <span><strong>{title}</strong><span>{text}</span></span>
+        </li>)}
+      </ol>
+    </section>
+  )
+}
+
+function SubjectTiles({ stats }: { stats: HomeStats | null }) {
+  const others = stats ? stats.subjectCount - MAIN_SUBJECTS.length : 0
+  return (
+    <section class="home-section" aria-labelledby="home-subjects-title">
+      <div class="home-section-head">
+        <h2 id="home-subjects-title" class="home-section-title">Pick a subject to start</h2>
+        <a class="home-link" href="#/subjects?mode=practice">All subjects →</a>
+      </div>
+      <div class="home-subjects">
+        {MAIN_SUBJECTS.map((id) => {
+          const subject = getSubject(id)
+          const count = stats?.subjects[id]
+          return <a key={id} class="home-subject" href={'#/practice?subject=' + id}
+            style={{ '--tone': subject?.color, '--tone-soft': subject?.soft }}>
+            <span class="home-subject-name"><span class="home-subject-badge" aria-hidden="true">{(subject?.name ?? id).slice(0, 2)}</span>{subject?.name ?? id}</span>
+            {count !== undefined && <span class="home-subject-count">{overLabel(count)} questions</span>}
+            <span class="home-subject-start">Start →</span>
+          </a>
+        })}
+        <a class="home-subject home-subject--more" href="#/subjects?mode=practice">
+          <span class="home-subject-name">{others > 0 ? `+ ${others} more subjects` : 'More subjects'}</span>
+          <span class="home-subject-count">Economics, Government, Literature…</span>
+          <span class="home-subject-start">See all →</span>
+        </a>
+      </div>
+    </section>
+  )
+}
+
+function Inside({ stats }: { stats: HomeStats }) {
+  const items = [
+    [overLabel(stats.questions), 'JAMB past questions'],
+    [overLabel(stats.solutions), 'worked solutions you can watch'],
+    [overLabel(stats.lessons), 'illustrated lessons'],
+    [String(stats.subjectCount), 'UTME subjects'],
+  ]
+  return (
+    <section class="home-inside" aria-label="What's inside JP">
+      <div class="home-inside-label"><span class="home-eyebrow">What’s inside</span><span class="home-note">And growing</span></div>
+      {items.map(([value, label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}
+    </section>
+  )
+}
 
 export function HomeFooter() {
   return (
@@ -34,7 +117,9 @@ export function HomeFooter() {
 
 export function Home() {
   const name = accountName()
-  const attempt = unfinishedAttempt()
+  const signedIn = name !== null
+  const attempt = signedIn ? unfinishedAttempt() : null
+  const stats = useHomeStats()
   const focusAsk = () => {
     document.getElementById('ask-jp')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     document.getElementById('home-ask-input')?.focus({ preventScroll: true })
@@ -67,9 +152,10 @@ export function Home() {
       <main class="home-main">
         <div class="home-top">
           <section class="home-intro">
-            <p class="home-greeting">{greetingFor()}{name ? ', ' + name : ''}</p>
+            {/* Only signed-in students get a personal page. Everyone else always sees the same landing page. */}
+            {signedIn ? <p class="home-greeting">{greetingFor()}, {name}</p> : <p class="home-greeting">For JAMB UTME candidates</p>}
             <h1>What do you want to learn today?</h1>
-            {attempt ? <ContinueCard attempt={attempt} /> : <>
+            {signedIn && attempt ? <ContinueCard attempt={attempt} /> : <>
               <p class="home-pitch">Real JAMB past questions, a clear reason under every answer, and step-by-step solutions you can watch. Works on one bar of signal.</p>
               {ACCOUNTS_ENABLED ? <>
                 <div class="home-actions">
@@ -81,13 +167,17 @@ export function Home() {
                 <div class="home-actions">
                   <a class="home-btn home-btn--primary" href="#/subjects?mode=practice">Start practising free →</a>
                 </div>
-                <p class="home-note">No download · No sign-up needed · Works offline once opened</p>
+                <p class="home-note">No download · Works offline once opened</p>
               </>}
             </>}
           </section>
-          <QuestionOfDay />
+          <QuestionOfDay showStreak={signedIn} />
           <AskJp />
         </div>
+
+        {!signedIn && <HowItWorks />}
+        <SubjectTiles stats={stats} />
+        {stats && <Inside stats={stats} />}
 
         <nav class="home-ways" aria-label="Ways to learn">
           {ways.map((way) => (

@@ -39,7 +39,7 @@ function prefetchWeek(date: string) {
 
 type Load = { state: 'loading' } | { state: 'today'; day: QotdFile } | { state: 'backup'; day: QotdFile } | { state: 'failed' }
 
-export function QuestionOfDay() {
+export function QuestionOfDay({ showStreak = false }: { showStreak?: boolean }) {
   const date = lagosDate()
   const [load, setLoad] = useState<Load>({ state: 'loading' })
   const [attempt, setAttempt] = useState(0)
@@ -94,7 +94,7 @@ export function QuestionOfDay() {
     <section class="home-card home-qotd" aria-labelledby="home-qotd-title">
       <div class="home-qotd-head">
         <h2 id="home-qotd-title" class="home-eyebrow home-eyebrow--hint">{offline ? 'Offline question' : 'Question of the day'}</h2>
-        {!offline && count > 0 && <span class="home-streak">{count}-day streak</span>}
+        {showStreak && !offline && count > 0 && <span class="home-streak">{count}-day streak</span>}
       </div>
       <p class="home-qotd-source">{getSubject(day.subject)?.name ?? day.subject} · JAMB {day.year}</p>
       <p class="home-qotd-stem"><SimpleText text={day.stem} /></p>

@@ -16,7 +16,7 @@ const sources = [
 const visited = new Set()
 // Subject questions and solutions are not precached. The worker saves each subject's data
 // the first time it is opened, so a student only downloads the subjects they use.
-const files = new Set(['./data/manifest.json', './data/qotd/backup.json'])
+const files = new Set(['./data/manifest.json', './data/qotd/backup.json', './data/home-stats.json'])
 function collect(key) {
   if (visited.has(key)) return
   const chunk = manifest[key]

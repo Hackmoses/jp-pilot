@@ -784,3 +784,170 @@
   .home-top > .home-ask { grid-area: ask; align-self: start; }
   .home-top .home-ask-results { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Landing sections: How JP works, subject tiles and What's inside. Text only, no images. */
+.home-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.home-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.home-section-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.home-how {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-how-step {
+  display: flex;
+  gap: var(--space-3);
+  padding: 14px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.home-how-step strong {
+  display: block;
+  font-size: 15px;
+}
+
+.home-how-step span span {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.home-how-number {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-pill);
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-weight: 700;
+}
+
+/* Phones swipe the subject tiles sideways; wide screens show them in one row. */
+.home-subjects {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(150px, 46%);
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 4px;
+}
+
+.home-subject {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 118px;
+  padding: 14px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  text-decoration: none;
+  scroll-snap-align: start;
+}
+
+.home-subject:hover { border-color: var(--tone, var(--brand)); }
+
+.home-subject-name {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.home-subject-badge {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--tone-soft, var(--brand-soft));
+  color: var(--tone, var(--brand));
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.home-subject-count {
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.home-subject-start {
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+.home-subject--more {
+  background: color-mix(in srgb, var(--brand-soft) 50%, var(--bg));
+  border-style: dashed;
+  border-color: var(--option-line);
+}
+
+.home-subject--more .home-subject-name { color: var(--brand); }
+
+.home-inside {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 16px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.home-inside-label {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.home-inside strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 20px;
+}
+
+.home-inside span:not(.home-eyebrow):not(.home-note) {
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+@media (min-width: 720px) {
+  .home-how { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .home-subjects { grid-auto-flow: row; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; }
+  .home-inside { grid-template-columns: auto repeat(4, minmax(0, 1fr)); align-items: center; padding: 16px 20px; }
+  .home-inside-label { grid-column: auto; flex-direction: column; gap: 2px; }
+}
+
+@media (min-width: 960px) {
+  .home-subjects { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+}

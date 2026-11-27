@@ -25,7 +25,7 @@
         </header>
         <main class="home-main" id="jp-shell-main">
           <section class="home-intro">
-            <p class="home-greeting" id="jp-shell-greeting">Welcome</p>
+            <p class="home-greeting">For JAMB UTME candidates</p>
             <h1>What do you want to learn today?</h1>
             <p class="home-pitch">Real JAMB past questions, a clear reason under every answer, and step-by-step solutions you can watch. Works on one bar of signal.</p>
             <div class="home-actions"><a class="home-btn home-btn--primary" href="#/subjects?mode=practice">Start practising free →</a></div>
@@ -37,9 +37,6 @@
     </div>
     <script>
       (function () {
-        var h = new Date().getHours()
-        var greet = document.getElementById('jp-shell-greeting')
-        if (greet) greet.textContent = h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening'
         var status = document.getElementById('jp-shell-status')
         var say = function (text) { if (status && document.getElementById('jp-shell')) status.textContent = text }
         if (location.hash && location.hash !== '#/') {
