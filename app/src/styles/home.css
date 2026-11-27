@@ -150,14 +150,14 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: 36px;
-  padding: 6px 14px;
-  border-radius: var(--radius-small);
+  min-height: 32px;
+  padding: 4px 12px;
+  border-radius: 8px;
   border: 1px solid var(--option-line);
   background: var(--bg);
   color: var(--ink);
   font-family: inherit;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 1.25;
   white-space: nowrap;
@@ -188,9 +188,9 @@
 }
 
 .home-btn--small {
-  min-height: 32px;
-  padding: 4px 10px;
-  border-radius: 8px;
+  min-height: 28px;
+  padding: 3px 10px;
+  border-radius: 7px;
   font-size: 12.5px;
   font-weight: 600;
   border-color: var(--option-line);
