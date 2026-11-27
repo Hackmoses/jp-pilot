@@ -170,3 +170,29 @@ a.ld-card:hover { border-color: color-mix(in srgb, var(--brand) 40%, var(--bg));
 @media (prefers-reduced-motion: reduce) {
   .ld *, .ld *::before { animation: none !important; transition: none !important; }
 }
+
+/* Phones: a centred hero, compact Ada, and the three ways as one row of pills over the phone. */
+.ld-tab-short, .ld-tab-desc { display: none; }
+@media (max-width: 899px) {
+  .ld-hero-copy { text-align: center; }
+  .ld-hero-copy .ld-lead { margin-inline: auto; }
+  .ld-hero-copy .ld-actions { justify-content: center; }
+  .ld-hero-copy .ld-ask { margin-inline: auto; text-align: left; }
+  .ld-hero-copy .ld-stats { justify-content: center; }
+}
+@media (max-width: 859px) {
+  .ld-split-copy { text-align: center; }
+  .ld-split-copy .ld-lead { margin-inline: auto; }
+  .ld-tabs { display: flex; justify-content: center; gap: 6px; margin-top: 16px; }
+  .ld-tab { width: auto; padding: 5px 10px; border-radius: var(--radius-pill); border-color: var(--line); background: var(--bg); white-space: nowrap; }
+  .ld-tab-head { gap: 6px; font-size: 12.5px; }
+  .ld-tab-n { width: 18px; height: 18px; font-size: 10.5px; }
+  .ld-tab-long, .ld-tab-body { display: none; }
+  .ld-tab-short { display: inline; }
+  .ld-tab-desc { display: block; margin: 12px auto 0; max-width: 32em; color: var(--ink-2); min-height: 3em; animation: ld-in .25s ease both; }
+  .ld-ada-card { min-height: 0; max-width: 360px; margin-inline: auto; padding: 10px 14px; grid-template-columns: 40px minmax(0, 1fr); column-gap: 12px; align-items: center; border-radius: var(--radius-card); background: var(--bg); color: var(--ink); border: 1px solid var(--line); }
+  .ld-ada-face { grid-row: span 2; width: 40px; height: 40px; font-size: 16px; margin: 0; background: var(--brand); color: var(--bg); }
+  .ld-ada-card b { font-size: 15px; }
+  .ld-ada-card span:last-child { font-size: 12.5px; color: var(--ink-2); }
+  .ld-story { gap: 28px; }
+}

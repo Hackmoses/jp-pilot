@@ -6,9 +6,9 @@ import { getSubject } from '../../lib/subjects'
 import { StartButtons } from '../../screens/Home'
 
 const WAYS = [
-  { title: 'Practise', body: 'Questions by subject and topic. Get one wrong and watch the worked solution.', href: '#/subjects?mode=practice' },
-  { title: 'Learn the key concepts', body: 'Short voiced lessons on the ideas JAMB keeps testing, with the traps and a quick check.', href: '#/subjects?mode=study' },
-  { title: 'Sit a timed exam, like the real CBT', body: 'Four subjects, the real time limit, and the calculator always there.', href: '#/exam' },
+  { title: 'Practise', short: 'Practise', body: 'Questions by subject and topic. Get one wrong and watch the worked solution.', href: '#/subjects?mode=practice' },
+  { title: 'Learn the key concepts', short: 'Key concepts', body: 'Short voiced lessons on the ideas JAMB keeps testing, with the traps and a quick check.', href: '#/subjects?mode=study' },
+  { title: 'Sit a timed exam, like the real CBT', short: 'Timed exam', body: 'Four subjects, the real time limit, and the calculator always there.', href: '#/exam' },
 ]
 
 const MAIN_SUBJECTS = ['english', 'mathematics', 'physics', 'chemistry', 'biology'] as const
@@ -97,11 +97,12 @@ function ThreeWays() {
           <ol class="ld-tabs">
             {WAYS.map((way, i) => <li key={way.title}>
               <button type="button" class="ld-tab" aria-pressed={tab === i} onClick={() => { setTab(i); setSolution(false); setHeld(true) }}>
-                <span class="ld-tab-head"><span class="ld-tab-n">{i + 1}</span>{way.title}</span>
+                <span class="ld-tab-head"><span class="ld-tab-n">{i + 1}</span><span class="ld-tab-long">{way.title}</span><span class="ld-tab-short">{way.short}</span></span>
                 {tab === i && <span class="ld-tab-body">{way.body}</span>}
               </button>
             </li>)}
           </ol>
+          <p class="ld-tab-desc" aria-live="polite">{WAYS[tab].body}</p>
         </div>
         <Phone tab={tab} solution={solution} openSolution={() => { setSolution(true); setHeld(true) }} closeSolution={() => setSolution(false)} />
       </div>
