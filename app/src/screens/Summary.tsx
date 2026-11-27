@@ -24,7 +24,7 @@ export function Summary() {
   }
 
   return (
-    <Panel title={summary ? 'Session complete' : 'Progress summary'} back="#/modes">
+    <Panel title={summary ? 'Session complete' : 'Progress summary'} back="#/">
       <div class="jp-pills">
         <span class="jp-pill jp-pill--practice">{summary ? 'Session complete' : 'Overall progress'}</span>
         {progress.streakDays > 0 && (

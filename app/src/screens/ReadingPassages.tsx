@@ -101,7 +101,7 @@ function PassageRun({ set, questions, initial }: { set: PassageSet; questions: Q
         <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
       </div>
       <div class="jp-topbar-actions">
-        <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
+        <a class="jp-btn jp-menu-btn" href="#/" aria-label="Home">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" /></svg>
           <span>Menu</span>
         </a>

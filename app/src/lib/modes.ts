@@ -370,7 +370,9 @@ export function finishAttempt(attempt: Attempt, now: number) {
   pruneSnapshots()
   const href = '#/' + attempt.mode + '/results?id=' + result.id
   remember(href, attempt.mode === 'exam' ? 'Exam results' : 'Practice summary')
-  window.location.hash = href
+  // Replace the questions with the results, so Back from results never lands on a question again.
+  if (typeof window.location.replace === 'function') window.location.replace(href)
+  else window.location.hash = href
 }
 
 export function scoreAttempt(questions: readonly Question[], answers: Attempt['answers']) {

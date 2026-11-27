@@ -91,7 +91,7 @@ export function Subjects({ mode }: { mode: 'study' | 'practice' }) {
       </header>
 
       <main class="jp-subjects-main">
-        <BackLink fallback="#/" />
+        <BackLink fallback="#/" label="Home" />
         <div class="jp-subjects-head">
           <div class="jp-subjects-title-wrap">
             <h1>Choose a subject</h1>

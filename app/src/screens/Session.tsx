@@ -355,7 +355,7 @@ export function Session({ attempt, study, review }: SessionProps) {
   const learnHref = englishLearn?.href
     ?? (compact && STUDY_TOPICS[question.subject]?.includes(chapterId) ? studyLink(question.subject, chapterId) : undefined)
   const exitHref = back ?? (attempt ? (attempt.mode === 'exam' ? '#/exam'
-    : '#/practice?subject=' + encodeURIComponent(question.subject)) : '#/modes')
+    : '#/practice?subject=' + encodeURIComponent(question.subject)) : '#/')
   const canPause = attempt?.mode === 'practice' && deadline !== null
   const pause = () => setPausedAt(Date.now())
   const resume = () => {
@@ -436,7 +436,7 @@ export function Session({ attempt, study, review }: SessionProps) {
             {deadline !== null && pausedAt === null && <Countdown deadline={deadline}
               onExpire={() => finishAttempt(savedAttempt.current!, Date.now())} />}
             {canPause && pausedAt === null && <button type="button" class="jp-btn" onClick={pause}>Pause</button>}
-            <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
+            <a class="jp-btn jp-menu-btn" href="#/" aria-label="Home">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" /></svg>
               <span>Menu</span>

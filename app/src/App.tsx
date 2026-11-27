@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'preact/hooks'
 import { lazyView } from './lib/lazyView'
 import { submitExpiredExam } from './lib/modes'
-import { recordVisit } from './lib/navigation'
 import { examRun, results } from './screens/examModules'
 import { Home } from './screens/Home'
 import { ReturnBar } from './screens/ReturnBar'
-import { ModeHome, Panel } from './screens/Modes'
+import { Panel } from './screens/Modes'
 
 function screenView<Props extends object>(module: ReturnType<typeof lazyView<Props>>, title: string) {
   return function Screen(props: Props) {
@@ -41,9 +40,7 @@ export function App() {
   const [route, setRoute] = useState(readRoute)
 
   useEffect(() => {
-    recordVisit(window.location.hash)
     const onHashChange = () => {
-      recordVisit(window.location.hash)
       setRoute(readRoute())
       window.scrollTo({ top: 0 })
     }
@@ -67,7 +64,8 @@ export function App() {
   if (import.meta.env.DEV && screen === '#/figures-demo' && FiguresDemo) return <FiguresDemo />
   switch (screen) {
     case '#/modes':
-      return <ModeHome />
+      window.location.replace('#/') // The old mode menu is retired: Home has Study, Practice and Exam.
+      return null
     case '#/subjects':
       return <Subjects key={route} mode={params.get('mode') === 'study' ? 'study' : 'practice'} />
     case '#/study':

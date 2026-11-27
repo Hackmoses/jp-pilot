@@ -26,7 +26,7 @@ function ModeIcon({ accent }: { accent: ModeAccent }) {
   )
 }
 
-export function Panel({ title, subtitle, back = '#/modes', backLabel, menu = true, footer, children }: {
+export function Panel({ title, subtitle, back = '#/', backLabel, menu = true, footer, children }: {
   title: string; subtitle?: string; back?: string; backLabel?: string; menu?: boolean; footer?: ComponentChildren; children?: ComponentChildren
 }) {
   return (
@@ -37,7 +37,7 @@ export function Panel({ title, subtitle, back = '#/modes', backLabel, menu = tru
             <a class="jp-logo" href="#/" aria-label="JP home">JP</a>
             <a class="jp-mode-wordmark" href="#/">JAMB Practice</a>
           </div>
-          {menu && <a class="jp-btn jp-menu-btn" href="#/modes" aria-label="Main menu">
+          {menu && <a class="jp-btn jp-menu-btn" href="#/" aria-label="Home">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" /></svg>
               <span>Menu</span>
@@ -46,7 +46,7 @@ export function Panel({ title, subtitle, back = '#/modes', backLabel, menu = tru
       </header>
       <main class="jp-mode-main">
         <div class="jp-mode-hero">
-          <BackLink fallback={back} label={backLabel ?? 'Back'} />
+          <BackLink fallback={back} label={backLabel} />
           <h1 class="jp-mode-title">{title}</h1>
           {subtitle && <p class="jp-mode-lead">{subtitle}</p>}
         </div>
