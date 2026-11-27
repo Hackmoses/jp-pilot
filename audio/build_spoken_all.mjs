@@ -108,7 +108,7 @@ function detectIssues(rawText, convertedText, spokenLine) {
 
 const SUBJECTS = [
   { subject: 'physics', files: ['data/subjects/animations-physics.json', 'data/subjects/animations-physics-jamb.json', 'data/subjects/animations-physics-more-pilot.json', 'data/subjects/animations-physics-more-a.json', 'data/subjects/animations-physics-more-b.json', 'data/physics-lessons.json'] },
-  { subject: 'biology', files: ['data/subjects/animations-biology.json'] },
+  { subject: 'biology', files: ['data/subjects/animations-biology.json', 'data/biology-lessons.json'] },
   { subject: 'chemistry', files: ['data/animations.json', 'data/subjects/animations-chemistry.json', 'data/subjects/animations-chemistry-more.json', 'data/chemistry-lessons.json'] },
   { subject: 'mathematics', files: ['data/subjects/animations-mathematics.json', 'data/subjects/animations-maths-jamb.json', 'data/subjects/animations-maths-more-1.json', 'data/subjects/animations-maths-more-2.json', 'data/subjects/animations-maths-more-3.json', 'data/subjects/animations-maths-more-4.json', 'data/maths-lessons.json'] },
   { subject: 'accounting', files: ['data/subjects/animations-accounting.json'] },
