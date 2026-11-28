@@ -50,7 +50,7 @@ export type LessonIndexEntry = {
 }
 
 export const PART_LABELS: Record<LessonPart, string> = {
-  'like-five': 'Like you’re five',
+  'like-five': 'Concept',
   rules: 'The rules',
   'example-1': 'Example 1',
   'example-2': 'Example 2',

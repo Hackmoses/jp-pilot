@@ -56,7 +56,7 @@ function Phone({ tab, solution, openSolution, closeSolution }: { tab: number; so
         {tab === 1 && <div class="ld-screen" key="l">
           <span class="ld-muted ld-small">Key concept · Physics</span>
           <b>Equations of motion</b>
-          <span class="ld-five"><small>LIKE YOU'RE FIVE</small>You watch a danfo pull away. It covers a little road at first, then more each second.</span>
+          <span class="ld-five"><small>CONCEPT</small>You watch a danfo pull away. It covers a little road at first, then more each second.</span>
           <span class="ld-opt"><b>Rule card</b><br /><span class="ld-muted">v = u + at · s = ut + ½at²</span></span>
           <span class="ld-dots"><i class="on" /><i class="on" /><i /><i /></span>
           <span class="ld-muted ld-small">Two examples, the traps, then a quick check.</span>
