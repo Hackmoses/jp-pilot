@@ -3,6 +3,10 @@
 
 export type LessonPart = 'like-five' | 'rules' | 'example-1' | 'example-2' | 'watch-out' | 'conclusion'
 
+// A hand-drawn diagram for a step. Each beat draws one part of the drawing in when the voice
+// reaches its word. Parts numbered below \`chapter\` (part-<n>-x with n < chapter) are already drawn.
+export type StepFigure = { drawing: string; chapter: number; beats: { word: string; cue: string }[] }
+
 export type LessonStep = {
   n: number
   part: LessonPart
@@ -11,6 +15,7 @@ export type LessonStep = {
   display: string
   working?: string[]
   narration: string
+  figure?: StepFigure
 }
 
 export type QuickCheck = {

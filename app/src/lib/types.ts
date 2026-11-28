@@ -67,6 +67,7 @@ export interface AnimationStep {
   reason?: string
   working?: string[]
   narration: string
+  figure?: { drawing: string; chapter: number; beats: { word: string; cue: string }[] }
 }
 
 export type AnimationKind = 'calculation' | 'concept'

@@ -22,6 +22,11 @@ import { bindHandwriting } from './handwriting'
 import { ensureHandwritingFont } from '../../lib/fonts'
 import { WritingHand } from './WritingHand'
 import './player.css'
+import { lazyView } from '../../lib/lazyView'
+import type { ComponentChildren } from 'preact'
+
+// Hand-drawn diagrams for concept lesson steps, loaded only when a step has one.
+const stepFigure = lazyView(() => import('./StepFigure').then((module) => module.default))
 
 // Captions under the handwriting can be turned off. The choice is kept on the device for every solution.
 const captionsKey = 'jp.player.captions'
@@ -74,7 +79,7 @@ export function renderStaticStepRow(step: AnimationStep, isFinal: boolean) {
   )
 }
 
-export function renderAnimatedStepContent(step: AnimationStep) {
+export function renderAnimatedStepContent(step: AnimationStep, figure?: ComponentChildren) {
   if (!hasStructuredStepFields(step)) {
     return (
       <>
@@ -87,7 +92,8 @@ export function renderAnimatedStepContent(step: AnimationStep) {
   return (
     <>
       <span class="jp-step__title">{renderMathText(step.title ?? step.tag)}</span>
-      {step.working && step.working.length > 0 && (
+      {figure}
+      {!figure && step.working && step.working.length > 0 && (
         <span class="jp-step__working" role="list">
           {step.working.map((line, i) => (
             <span key={i} class="jp-step__work-item" role="listitem">
@@ -202,6 +208,13 @@ function Player({
   const handwriting = useRef<ReturnType<typeof bindHandwriting> | null>(null)
   const hasRecorded = Boolean(recorded)
   const boundStep = useRef(-1)
+  // Diagrams on concept lesson steps follow the same progress as the handwriting and the voice.
+  const penListeners = useRef(new Set<(progress: number, step: number) => void>())
+  const [listen] = useState(() => (fn: (progress: number, step: number) => void) => {
+    penListeners.current.add(fn)
+    return () => { penListeners.current.delete(fn) }
+  })
+  const { View: Figure } = stepFigure.useView(steps.some((step) => step.figure))
   const [audioState, setAudioState] = useState<PlaybackState & { from: number; slidePaused: boolean }>(() => ({
     from: -1,
     slidePaused: false,
@@ -217,6 +230,7 @@ function Player({
       : { ...state, from: Math.max(0, previous.index), slidePaused: false }),
     (progress, step) => {
       if (step === boundStep.current) handwriting.current?.paint(progress)
+      penListeners.current.forEach((fn) => fn(progress, step))
     },
   ))
   const { index, playing, from, slidePaused } = audioState
@@ -459,7 +473,8 @@ function Player({
               inert={!active}
             >
               <span class="jp-player__context">{stepIndex > 0 && renderMathText(track.steps[stepIndex - 1].display)}</span>
-              {renderAnimatedStepContent(step)}
+              {renderAnimatedStepContent(step, step.figure && Figure
+                ? <Figure step={step} index={stepIndex} listen={listen} /> : undefined)}
               {!step.reason && <p class="jp-player__caption">{track.recorded?.captions?.[stepIndex] ?? step.narration}</p>}
               {active && index >= 0 && (
                 <WritingHand penRef={penRef} class="jp-player__pen" />

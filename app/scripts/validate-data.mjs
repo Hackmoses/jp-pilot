@@ -169,12 +169,40 @@ if (existsSync(audioManifestFile)) {
 
 // Concept lessons: the voice teaches, it does not read the screen
 const words = (text) => String(text).replace(/\\[a-zA-Z]+/g, ' ').toLowerCase().match(/[a-z0-9']+/g) ?? []
+// Voiced lesson clips are locked to the narration they were made from (audio/spoken-<subject>.json).
+const voicedLessonPaths = new Set((readJson(path.join(rootDir, 'audio', 'manifest.json')).clips ?? []).map((clip) => clip.path))
+const drawingsDir = path.join(rootDir, 'app', 'src', 'components', 'lessons', 'biology', 'drawings')
+const plainWord = (word) => String(word).toLowerCase().replace(/[^a-z0-9]/g, '')
 for (const name of readdirSync(dataDir).filter((f) => f.endsWith('-lessons.json'))) {
-  const lessons = readJson(path.join(dataDir, name)).lessons ?? []
+  const doc = readJson(path.join(dataDir, name))
+  const lessons = doc.lessons ?? []
+  const spokenFile = path.join(rootDir, 'audio', `spoken-${doc.subject}.json`)
+  const spokenByPath = new Map(existsSync(spokenFile)
+    ? (readJson(spokenFile).clips ?? []).map((clip) => [clip.path, clip]) : [])
   for (const lesson of lessons) {
     for (const step of lesson.steps ?? []) {
       if (!step.part) continue
       const label = `${lesson.id}: step ${step.n}`
+      const clipPath = `audio/${lesson.id}/${step.n}.webm`
+      const spoken = spokenByPath.get(clipPath)
+      if (spoken && voicedLessonPaths.has(clipPath) && spoken.stepText !== step.narration) {
+        errors.push(`${label} narration no longer matches its voiced clip. Keep the narration and step order as voiced.`)
+      }
+      if (step.figure) {
+        const file = path.join(drawingsDir, `${step.figure.drawing}.tsx`)
+        if (!existsSync(file)) errors.push(`${label} figure drawing ${step.figure.drawing} does not exist`)
+        else {
+          const drawing = readFileSync(file, 'utf8')
+          const said = String(step.narration).trim().split(/\s+/).map(plainWord)
+          let previous = -1
+          for (const { word, cue } of step.figure.beats ?? []) {
+            if (!drawing.includes(`cue: '${cue}'`)) errors.push(`${label} figure cue ${cue} is not in ${step.figure.drawing}`)
+            const at = said.findIndex((token, i) => i > previous && token === plainWord(word))
+            if (at < 0) errors.push(`${label} figure word "${word}" is not in the narration (after the previous cue word)`)
+            else previous = at
+          }
+        }
+      }
       const said = words(step.narration)
       const limit = step.part === 'like-five' ? [8, 30] : [30, 70]
       if (said.length < limit[0] || said.length > limit[1]) errors.push(`${label} narration has ${said.length} words (want ${limit[0]} to ${limit[1]})`)

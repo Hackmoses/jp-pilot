@@ -21,6 +21,7 @@ function toAnimation(lesson: Lesson): Animation {
     title: step.title && !/^(picture it|remember this)$/i.test(step.title) ? `${PART_LABELS[step.part]} · ${step.title}` : PART_LABELS[step.part],
     working: step.working,
     narration: step.narration,
+    figure: step.figure,
   }))
   return { id: lesson.id, questionId: lesson.id, kind: 'concept', stepSeconds: 6, steps: steps as Animation['steps'] }
 }

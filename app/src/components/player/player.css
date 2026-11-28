@@ -892,3 +892,17 @@ body:has(.jp-calc-modal[open]) {
 .jp-player[data-captions="off"] .jp-step__reason {
   display: none;
 }
+
+/* A hand-drawn diagram on a concept lesson step, sized to the paper. */
+.jp-step__figure {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin: 2px auto 0;
+}
+
+.jp-step__figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
