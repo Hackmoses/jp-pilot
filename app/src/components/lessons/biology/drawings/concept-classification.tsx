@@ -1,3 +1,4 @@
+// Whale and calf view drawn for the lesson's own example (step 5); mammals feed young on milk from mammary glands (OpenStax Biology 2e 29.6).
 // OpenStax Biology 2e, Figs. 20.5–20.6, 4.5, 29.41 and 23.8c.
 // See §29.6 for mammary glands. The five kingdoms follow the JAMB syllabus.
 import { processDrawing } from '../AnatomyBoard'
@@ -55,22 +56,31 @@ export default processDrawing("Classification and identifying features", [
   {
     scenes: [6,14],
     outline: [
-      ["paper","M77 152Q78 125 101 116Q98 101 114 96Q127 92 135 109Q163 99 186 109Q195 92 207 96Q222 99 220 117Q243 131 243 153Q254 160 267 183Q269 194 251 196L218 193Q205 181 195 180Q159 204 123 180Q105 187 84 194L55 194Q44 192 50 181Q62 165 77 152Z"],
-      ["shade","M86 149Q92 131 116 123Q135 109 161 113Q187 109 210 125Q225 137 232 153Q218 170 193 171Q187 184 163 181Q139 183 128 171Q101 170 86 149Z"],
-      ["paper","M128 162Q147 147 164 152Q181 149 194 161Q187 178 165 182Q144 181 128 162Z"],
-      ["ink","M108 107q6-4 12 3m83-4q8-3 11 7m-80 32l6 2m43-2l6-3m-34 21q8-5 14 0q-5 7-14 0m7 7v7m-8 0h17m-98 8l9-4m152 1l10 4"],
-      ["paper","M128 132q4-4 8 0q-4 4-8 0Zm58 0q4-4 8 0q-4 4-8 0Z"],
+      ["blue","M40 130Q34 94 84 90Q160 86 222 108Q248 117 262 122Q232 156 150 160Q70 164 40 130Z"],
+      ["ink","M44 134Q78 142 112 136"],
+      ["blue","M258 120Q280 106 302 110Q290 122 302 134Q280 138 258 128Z"],
+      ["ink","M96 86q-6-10-12-14m12 14v-16m0 16q6-10 12-14"],
+      ["ink","M60 132Q120 156 200 150"],
+      ["ink","M66 114q3-3 6 0t-6 0"],
+      ["blue","M120 150Q110 178 132 182Q138 166 140 156Z"],
+      ["paper","M150 204Q146 184 172 182Q212 182 246 198Q222 216 190 216Q160 216 150 204Z"],
+      ["paper","M244 196Q258 188 272 190Q264 198 272 206Q258 208 244 202Z"],
+      ["ink","M160 196q3-3 6 0t-6 0"],
     ],
     parts: [
       {
-        cue: 'part-6-0', label: "Tasmanian devil", at: [13,55], tip: [115,120],
+        cue: 'part-6-0', label: "Whale and calf", at: [13,55], tip: [72,100],
         strokes: [
-          ["lead","M86 58L109 96"],
+          ["lead","M58 60L72 98"],
         ],
       },
       {
-        cue: 'part-7-0', label: "Mammary glands|produce milk", at: [160,236], tip: [219,156],
+        cue: 'part-7-0', label: "Mammary glands|produce milk", at: [160,240], tip: [176,190],
         strokes: [
+          ["lead","M164 228L174 194"],
+        ],
+        flows: [
+          ["amber","M200 160Q192 174 176 188"],
         ],
       },
     ],
