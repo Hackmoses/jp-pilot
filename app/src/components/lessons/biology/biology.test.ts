@@ -18,8 +18,9 @@ const topics = Object.values(import.meta.glob<Topic>('../../../../../lessons-ban
 const coreBank = [base, jamb, science, followUps].flatMap(({ questions }) => questions.map(({ id }) => id))
 const questionBank = [...coreBank, ...batch3.questions.map(({ id }) => id)]
 const topicsById = new Map(topics.flatMap((topic) => topic.lessons.map((lesson) => [lesson.id, topic] as const)))
+// Teach me drawings only. concept-*.tsx files in the same folder belong to the key concept lessons.
 const drawingIds = new Set(['heart', 'nephron', 'inheritance', ...Object.keys(import.meta.glob('./drawings/*.tsx'))
-  .map((path) => path.slice(path.lastIndexOf('/') + 1, -4))].map((id) => 'biology-' + id))
+  .map((path) => path.slice(path.lastIndexOf('/') + 1, -4)).filter((id) => !id.startsWith('concept-'))].map((id) => 'biology-' + id))
 
 describe('Biology Teach me', () => {
   it('maps real Biology questions to real clips and keeps practice on the same topic', () => {
