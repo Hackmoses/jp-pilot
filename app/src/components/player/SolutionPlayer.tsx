@@ -474,7 +474,7 @@ function Player({
             >
               <span class="jp-player__context">{stepIndex > 0 && renderMathText(track.steps[stepIndex - 1].display)}</span>
               {renderAnimatedStepContent(step, step.figure && Figure
-                ? <Figure step={step} index={stepIndex} listen={listen} /> : undefined)}
+                ? <Figure step={step} index={stepIndex} active={active} listen={listen} /> : undefined)}
               {!step.reason && <p class="jp-player__caption">{track.recorded?.captions?.[stepIndex] ?? step.narration}</p>}
               {active && index >= 0 && (
                 <WritingHand penRef={penRef} class="jp-player__pen" />

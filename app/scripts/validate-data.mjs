@@ -171,7 +171,9 @@ if (existsSync(audioManifestFile)) {
 const words = (text) => String(text).replace(/\\[a-zA-Z]+/g, ' ').toLowerCase().match(/[a-z0-9']+/g) ?? []
 // Voiced lesson clips are locked to the narration they were made from (audio/spoken-<subject>.json).
 const voicedLessonPaths = new Set((readJson(path.join(rootDir, 'audio', 'manifest.json')).clips ?? []).map((clip) => clip.path))
-const drawingsDir = path.join(rootDir, 'app', 'src', 'components', 'lessons', 'biology', 'drawings')
+const lessonsDir = path.join(rootDir, 'app', 'src', 'components', 'lessons')
+const drawingFile = (name) => readdirSync(lessonsDir, { withFileTypes: true }).filter((d) => d.isDirectory())
+  .map((d) => path.join(lessonsDir, d.name, 'drawings', `${name}.tsx`)).find((file) => existsSync(file))
 const plainWord = (word) => String(word).toLowerCase().replace(/[^a-z0-9]/g, '')
 for (const name of readdirSync(dataDir).filter((f) => f.endsWith('-lessons.json'))) {
   const doc = readJson(path.join(dataDir, name))
@@ -189,8 +191,8 @@ for (const name of readdirSync(dataDir).filter((f) => f.endsWith('-lessons.json'
         errors.push(`${label} narration no longer matches its voiced clip. Keep the narration and step order as voiced.`)
       }
       if (step.figure) {
-        const file = path.join(drawingsDir, `${step.figure.drawing}.tsx`)
-        if (!existsSync(file)) errors.push(`${label} figure drawing ${step.figure.drawing} does not exist`)
+        const file = drawingFile(step.figure.drawing)
+        if (!file) errors.push(`${label} figure drawing ${step.figure.drawing} does not exist`)
         else {
           const drawing = readFileSync(file, 'utf8')
           const said = String(step.narration).trim().split(/\s+/).map(plainWord)

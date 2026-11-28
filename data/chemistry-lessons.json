@@ -1714,7 +1714,29 @@
             "Battery pushes electrons into the cathode (−)",
             "Dissolved silver ions coat the spoon evenly"
           ],
-          "narration": "Want a silver spoon? Dip it in a silver solution and connect a battery. The electricity pulls silver out of the liquid and coats the spoon."
+          "narration": "Want a silver spoon? Dip it in a silver solution and connect a battery. The electricity pulls silver out of the liquid and coats the spoon.",
+          "figure": {
+            "drawing": "concept-electrolysis",
+            "chapter": 1,
+            "beats": [
+              {
+                "word": "solution",
+                "cue": "part-1-0"
+              },
+              {
+                "word": "battery",
+                "cue": "part-1-1"
+              },
+              {
+                "word": "silver",
+                "cue": "part-2-2"
+              },
+              {
+                "word": "spoon",
+                "cue": "part-2-0"
+              }
+            ]
+          }
         },
         {
           "n": 2,
@@ -1738,7 +1760,29 @@
               "book": "Lamlad Chemistry 2",
               "where": "pp. 196, 198"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-electrolysis",
+            "chapter": 2,
+            "beats": [
+              {
+                "word": "Positive",
+                "cue": "part-2-2"
+              },
+              {
+                "word": "cathode",
+                "cue": "part-2-0"
+              },
+              {
+                "word": "Negative",
+                "cue": "part-2-3"
+              },
+              {
+                "word": "anode",
+                "cue": "part-2-1"
+              }
+            ]
+          }
         },
         {
           "n": 3,
@@ -1766,7 +1810,21 @@
               "book": "OpenStax Chemistry 2e",
               "where": "§17.7"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-electrolysis",
+            "chapter": 3,
+            "beats": [
+              {
+                "word": "Hydrogen",
+                "cue": "part-4-0"
+              },
+              {
+                "word": "Hydroxide",
+                "cue": "part-4-1"
+              }
+            ]
+          }
         },
         {
           "n": 4,
@@ -1794,7 +1852,25 @@
               "book": "OpenStax Chemistry 2e",
               "where": "§17.7"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-electrolysis",
+            "chapter": 4,
+            "beats": [
+              {
+                "word": "hydrogen",
+                "cue": "part-4-0"
+              },
+              {
+                "word": "oxygen",
+                "cue": "part-4-1"
+              },
+              {
+                "word": "cathode",
+                "cue": "part-2-0"
+              }
+            ]
+          }
         },
         {
           "n": 5,
@@ -1822,7 +1898,17 @@
               "book": "OpenStax Chemistry 2e",
               "where": "§17.4, §17.7"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-electrolysis",
+            "chapter": 5,
+            "beats": [
+              {
+                "word": "electrons",
+                "cue": "part-2-4"
+              }
+            ]
+          }
         },
         {
           "n": 6,
@@ -1974,7 +2060,25 @@
               "book": "Lamlad Chemistry 2",
               "where": "pp. 199–200"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-electrolysis",
+            "chapter": 5,
+            "beats": [
+              {
+                "word": "hydrogen",
+                "cue": "part-4-0"
+              },
+              {
+                "word": "cathode",
+                "cue": "part-2-0"
+              },
+              {
+                "word": "anode",
+                "cue": "part-2-1"
+              }
+            ]
+          }
         },
         {
           "n": 16,
@@ -2007,7 +2111,21 @@
           "working": [
             "Cathode = reduction, Anode = oxidation, n(product) = \\frac{It}{cF}"
           ],
-          "narration": "So here is the full picture. First decide which ion wins at each electrode. Then count the electrons. Current times time gives charge. Charge over Faraday gives moles of electrons. Divide by the ion charge, and you have your product."
+          "narration": "So here is the full picture. First decide which ion wins at each electrode. Then count the electrons. Current times time gives charge. Charge over Faraday gives moles of electrons. Divide by the ion charge, and you have your product.",
+          "figure": {
+            "drawing": "concept-electrolysis",
+            "chapter": 5,
+            "beats": [
+              {
+                "word": "ion",
+                "cue": "part-2-2"
+              },
+              {
+                "word": "electrons",
+                "cue": "part-2-4"
+              }
+            ]
+          }
         }
       ],
       "sourceQuestionId": "chem-jamb-2013-025",

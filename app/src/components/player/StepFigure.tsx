@@ -4,13 +4,14 @@ import type { DrawingProps } from '../lessons/lesson'
 import type { AnimationStep } from '../../lib/types'
 import '../lessons/lessons.css'
 
-// Hand-drawn diagrams for concept lesson steps. They reuse the Biology Teach me drawings
-// (components/lessons/biology/drawings) and load only when a lesson step has a figure.
+// Hand-drawn diagrams for concept lesson steps, drawn with processDrawing. Drawings live in
+// components/lessons/<subject>/drawings and load only when a lesson step has a figure.
 type Figure = NonNullable<AnimationStep['figure']>
 type Drawing = ComponentType<DrawingProps>
 type Listen = (progress: number, step: number) => void
 
-const files = import.meta.glob<{ default: Drawing }>('../lessons/biology/drawings/*.tsx')
+const files = import.meta.glob<{ default: Drawing }>('../lessons/*/drawings/*.tsx')
+const fileFor = (name: string) => Object.entries(files).find(([path]) => path.endsWith(`/drawings/${name}.tsx`))?.[1]
 const loaded = new Map<string, Drawing>()
 
 const plain = (word: string) => word.toLowerCase().replace(/[^a-z0-9]/g, '')
@@ -34,19 +35,32 @@ export function reachedAt(shares: readonly number[], progress: number) {
 
 const reduce = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches
 
-export default function StepFigure({ step, index, listen }: {
+export default function StepFigure({ step, index, active, listen }: {
   step: AnimationStep
   index: number
+  active: boolean
   listen: (fn: Listen) => () => void
 }) {
   const figure = step.figure as Figure
   const [View, setView] = useState<Drawing | undefined>(() => loaded.get(figure.drawing))
   const shares = useMemo(() => cueShares(step.narration, figure.beats), [step.narration, figure])
   const [reached, setReached] = useState(0)
+  const [seconds, setSeconds] = useState(0)
+  const still = reduce()
+
+  // Flows (ions, electrons, blood) keep moving while this step is on screen.
+  useEffect(() => {
+    if (!active || still) return
+    let frame = 0
+    const start = performance.now()
+    const tick = (now: number) => { setSeconds((now - start) / 1000); frame = requestAnimationFrame(tick) }
+    frame = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(frame)
+  }, [active, still])
 
   useEffect(() => {
     if (View) return
-    const load = files[`../lessons/biology/drawings/${figure.drawing}.tsx`]
+    const load = fileFor(figure.drawing)
     if (!load) return
     let active = true
     void load().then(({ default: drawing }) => {
@@ -68,6 +82,6 @@ export default function StepFigure({ step, index, listen }: {
     beats: figure.beats.map(({ word, cue }) => ({ word, action: cue, label: '' })),
   }
   return <span class="jp-step__figure">
-    <View scene={scene} frame={{ progress: 0, seconds: 0, reached, sinceBeat: 0, reduced: reduce() }} />
+    <View scene={scene} frame={{ progress: 0, seconds, reached, sinceBeat: 0, reduced: still }} />
   </span>
 }
