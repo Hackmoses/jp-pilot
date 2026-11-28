@@ -3263,7 +3263,29 @@
               "where": "Topics 30–31, Electric Cells and Current Electricity",
               "url": "https://ibass.jamb.gov.ng/static/media/Physics.16527a294cb7e7a87a35.pdf"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 1,
+            "beats": [
+              {
+                "word": "junction",
+                "cue": "part-1-0"
+              },
+              {
+                "word": "roads",
+                "cue": "part-1-1"
+              },
+              {
+                "word": "split",
+                "cue": "part-1-2"
+              },
+              {
+                "word": "circuit",
+                "cue": "part-1-5"
+              }
+            ]
+          }
         },
         {
           "n": 2,
@@ -3300,7 +3322,25 @@
               "where": "Topics 30–31, Electric Cells and Current Electricity",
               "url": "https://ibass.jamb.gov.ng/static/media/Physics.16527a294cb7e7a87a35.pdf"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 2,
+            "beats": [
+              {
+                "word": "coulombs",
+                "cue": "part-2-1"
+              },
+              {
+                "word": "amps",
+                "cue": "part-2-2"
+              },
+              {
+                "word": "volts",
+                "cue": "part-2-3"
+              }
+            ]
+          }
         },
         {
           "n": 3,
@@ -3334,7 +3374,25 @@
               "where": "Topics 30–31, Electric Cells and Current Electricity",
               "url": "https://ibass.jamb.gov.ng/static/media/Physics.16527a294cb7e7a87a35.pdf"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 3,
+            "beats": [
+              {
+                "word": "resists",
+                "cue": "part-3-0"
+              },
+              {
+                "word": "volts",
+                "cue": "part-2-3"
+              },
+              {
+                "word": "amps",
+                "cue": "part-2-2"
+              }
+            ]
+          }
         },
         {
           "n": 4,
@@ -3366,7 +3424,21 @@
               "where": "Topics 30–31, Electric Cells and Current Electricity",
               "url": "https://ibass.jamb.gov.ng/static/media/Physics.16527a294cb7e7a87a35.pdf"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 4,
+            "beats": [
+              {
+                "word": "series",
+                "cue": "part-4-0"
+              },
+              {
+                "word": "current",
+                "cue": "part-2-1"
+              }
+            ]
+          }
         },
         {
           "n": 5,
@@ -3399,7 +3471,29 @@
               "where": "Topics 30–31, Electric Cells and Current Electricity",
               "url": "https://ibass.jamb.gov.ng/static/media/Physics.16527a294cb7e7a87a35.pdf"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 5,
+            "beats": [
+              {
+                "word": "branch",
+                "cue": "part-1-2"
+              },
+              {
+                "word": "current",
+                "cue": "part-1-1"
+              },
+              {
+                "word": "branches",
+                "cue": "part-5-0"
+              },
+              {
+                "word": "ohms",
+                "cue": "part-5-1"
+              }
+            ]
+          }
         },
         {
           "n": 6,
@@ -3432,7 +3526,25 @@
               "where": "Topics 30–31, Electric Cells and Current Electricity",
               "url": "https://ibass.jamb.gov.ng/static/media/Physics.16527a294cb7e7a87a35.pdf"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 6,
+            "beats": [
+              {
+                "word": "inside",
+                "cue": "part-6-0"
+              },
+              {
+                "word": "volts",
+                "cue": "part-6-1"
+              },
+              {
+                "word": "outside",
+                "cue": "part-6-2"
+              }
+            ]
+          }
         },
         {
           "n": 7,
@@ -3476,7 +3588,21 @@
           "working": [
             "ℰ = 6 V; r = 1 Ω; R = 2 Ω"
           ],
-          "narration": "We need the voltage that reaches the outside resistor. But some of the cell's push is used up inside the cell whenever current flows. So write down both resistances first. One ohm is inside the cell, and two ohms is outside it."
+          "narration": "We need the voltage that reaches the outside resistor. But some of the cell's push is used up inside the cell whenever current flows. So write down both resistances first. One ohm is inside the cell, and two ohms is outside it.",
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 8,
+            "beats": [
+              {
+                "word": "outside",
+                "cue": "part-6-2"
+              },
+              {
+                "word": "inside",
+                "cue": "part-6-0"
+              }
+            ]
+          }
         },
         {
           "n": 9,
@@ -3485,7 +3611,25 @@
           "title": "Use the whole loop to get current",
           "display": "I = \\frac{6 V}{1 Ω + 2 Ω} = 2 A",
           "working": [],
-          "narration": "The current must pass through the cell's internal resistance and the external resistor in the same loop. Add them before dividing. Six volts across that three ohm path drives two amps through both parts."
+          "narration": "The current must pass through the cell's internal resistance and the external resistor in the same loop. Add them before dividing. Six volts across that three ohm path drives two amps through both parts.",
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 9,
+            "beats": [
+              {
+                "word": "current",
+                "cue": "part-2-1"
+              },
+              {
+                "word": "internal",
+                "cue": "part-6-0"
+              },
+              {
+                "word": "external",
+                "cue": "part-6-2"
+              }
+            ]
+          }
         },
         {
           "n": 10,
@@ -3496,7 +3640,25 @@
           "working": [
             "ℰ − Ir = 6 − 2 × 1 = 4 V"
           ],
-          "narration": "The terminals are on either side of the outside resistor, so work out its share of the voltage. That gives four volts. The other two volts are lost inside the cell, which checks the full six."
+          "narration": "The terminals are on either side of the outside resistor, so work out its share of the voltage. That gives four volts. The other two volts are lost inside the cell, which checks the full six.",
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 10,
+            "beats": [
+              {
+                "word": "terminals",
+                "cue": "part-6-1"
+              },
+              {
+                "word": "outside",
+                "cue": "part-6-2"
+              },
+              {
+                "word": "inside",
+                "cue": "part-6-0"
+              }
+            ]
+          }
         },
         {
           "n": 11,
@@ -3619,7 +3781,21 @@
               "where": "Topics 30–31, Electric Cells and Current Electricity",
               "url": "https://ibass.jamb.gov.ng/static/media/Physics.16527a294cb7e7a87a35.pdf"
             }
-          ]
+          ],
+          "figure": {
+            "drawing": "concept-circuits",
+            "chapter": 16,
+            "beats": [
+              {
+                "word": "wires",
+                "cue": "part-1-0"
+              },
+              {
+                "word": "branches",
+                "cue": "part-1-2"
+              }
+            ]
+          }
         }
       ],
       "sourceQuestionId": "phys-jamb-2014-038",
